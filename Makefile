@@ -50,6 +50,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 html:
+	cd ..; git submodule update --init; cd docs
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
