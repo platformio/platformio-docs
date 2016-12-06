@@ -78,6 +78,16 @@ If you have some problems with unresolved includes, defines, etc., then
     ``PlatformIO: Rebuild C/C++ Project Index`` target and right click on the
     project and ``Project > Refresh`` (F5).
 
+.. warning::
+    The ``C/C++ GCC Cross Compiler Support`` package must be installed
+    in Eclipse, otherwise the ``CDT Cross GCC Built-in Compiler Settings``
+    provider will not be available (check the ``Providers`` tab in
+    ``Project > Properties > C/C++ General > Preprocessor Include Paths, Macros etc.``
+    for a marked entry named ``CDT Cross GCC Built-in Compiler Settings``).
+        
+    If this provider is not available, toolchain related includes cannot be
+    resolved.
+
 Live Integration
 ----------------
 
