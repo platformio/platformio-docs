@@ -225,6 +225,8 @@ that folder is located in the root of project.
 This option can be overridden by global environment variable
 :envvar:`PLATFORMIO_LIBDEPS_DIR`.
 
+.. _projectconf_global_lib_extra_dirs:
+
 ``lib_extra_dirs``
 ^^^^^^^^^^^^^^^^^^
 
@@ -822,7 +824,8 @@ look for dependencies. Multiple paths are allowed. *Please separate them
 using comma+space ", "*.
 
 This option can be set by global environment variable
-:envvar:`PLATFORMIO_LIB_EXTRA_DIRS`.
+:envvar:`PLATFORMIO_LIB_EXTRA_DIRS` or using global ``[platformio]`` section
+and :ref:`projectconf_global_lib_extra_dirs` option.
 
 .. warning::
   This is a not direct path to library with source code. It should be the path
