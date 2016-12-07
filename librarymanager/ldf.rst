@@ -75,7 +75,7 @@ project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
         manifests (:ref:`library_config`, ``module.json``) or using
         :ref:`projectconf_lib_deps` option.
 
-    * - ``chain``
+    * - ``chain`` (**default**)
       - Parses ALL C/C++ source code of the project and follows
         only by nested includes (``#include ...``, chain...) from the libraries.
         Does not evaluates :ref:`ldf_c_cond_syntax`.
@@ -85,7 +85,7 @@ project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
         source code of the each found dependency (recursively).
         Does not process :ref:`ldf_c_cond_syntax`.
 
-    * - ``chain+`` (**default**)
+    * - ``chain+``
       - The same behavior as for the ``chain`` but evaluates :ref:`ldf_c_cond_syntax`.
 
     * - ``deep+``
