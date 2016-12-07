@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio run [OPTIONS]
+    pio run [OPTIONS]
 
 
 Description

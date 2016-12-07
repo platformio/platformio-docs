@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio lib [STORAGE_OPTIONS] uninstall [LIBRARY...]
+    pio lib [STORAGE_OPTIONS] uninstall [LIBRARY...]
 
     # uninstall project dependent library
     # (run it from a project root where is located "platformio.ini")

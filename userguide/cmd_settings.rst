@@ -27,6 +27,7 @@ Usage
 .. code-block:: bash
 
     platformio settings get [NAME]
+    pio settings get [NAME]
 
 
 Description

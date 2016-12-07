@@ -22,7 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio account forgot [OPTIONS]
-
+    pio account forgot [OPTIONS]
 
 Description
 -----------

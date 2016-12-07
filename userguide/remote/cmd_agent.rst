@@ -36,6 +36,7 @@ Usage
 .. code::
 
     platformio remote agent list
+    pio remote agent list
 
 
 Description
@@ -71,6 +72,7 @@ Usage
 .. code-block:: bash
 
     platformio remote agent start [OPTIONS]
+    pio remote agent start [OPTIONS]
 
 
 Description
@@ -118,10 +120,10 @@ Usage
 .. code::
 
     platformio remote agent reload
+    pio remote agent reload
 
     # reload specified PIO Remote Agents
     platformio remote --agent NAME reload
-
 
 Description
 ~~~~~~~~~~~

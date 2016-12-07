@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio lib [STORAGE_OPTIONS] list [OPTIONS]
+    pio lib [STORAGE_OPTIONS] list [OPTIONS]
 
     # list project dependent libraries
     # (run it from a project root where is located "platformio.ini")

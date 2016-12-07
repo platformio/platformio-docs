@@ -22,7 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio lib search [OPTIONS] [QUERY]
-
+    pio lib search [OPTIONS] [QUERY]
 
 Description
 -----------

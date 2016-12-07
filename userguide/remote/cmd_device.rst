@@ -29,6 +29,7 @@ Usage
 .. code-block:: bash
 
     platformio remote device list [OPTIONS]
+    pio remote device list [OPTIONS]
 
     # List devices from the specified agents. Multiple agents are allowed.
     platformio remote --agent NAME device list [OPTIONS]
@@ -114,6 +115,7 @@ Usage
 .. code-block:: bash
 
     platformio remote device monitor [OPTIONS]
+    pio remote device monitor [OPTIONS]
 
     # Connect to a specified agent
     platformio remote --agent NAME device monitor [OPTIONS]

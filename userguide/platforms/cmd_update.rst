@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio platform update [OPTIONS] [PLATFORM...]
+    pio platform update [OPTIONS] [PLATFORM...]
 
     # update specific platform version using Semantic Versioning
     platformio platform update PLATFORM@X.Y.Z

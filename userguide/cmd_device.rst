@@ -27,6 +27,7 @@ Usage
 .. code-block:: bash
 
     platformio device list [OPTIONS]
+    pio device list [OPTIONS]
 
 
 Description

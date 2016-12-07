@@ -22,7 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio account logout
-
+    pio account logout
 
 Description
 -----------

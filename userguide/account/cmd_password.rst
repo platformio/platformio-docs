@@ -22,7 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio account password
-
+    pio account password
 
 Description
 -----------

@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio remote update [OPTIONS]
+    pio remote update [OPTIONS]
 
     # start update process on the specified agents/machines
     platformio remote --agent NAME update [OPTIONS]

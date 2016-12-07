@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio init [OPTIONS]
+    pio init [OPTIONS]
 
 
 Description

@@ -24,6 +24,7 @@ Usage
 .. code-block:: bash
 
     platformio remote test [OPTIONS]
+    pio remote test [OPTIONS]
 
     # run tests on specified PIO Remote Agent
     platformio remote --agent NAME test [OPTIONS]

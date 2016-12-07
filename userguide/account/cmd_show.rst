@@ -22,7 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio account show
-
+    pio account show
 
 Description
 -----------

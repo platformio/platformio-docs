@@ -24,10 +24,10 @@ Usage
 .. code-block:: bash
 
     platformio remote run [OPTIONS]
+    pio remote run [OPTIONS]
 
     # process environments using specified PIO Remote Agent
     platformio remote --agent NAME run [OPTIONS]
-
 
 Description
 -----------

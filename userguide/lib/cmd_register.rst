@@ -22,7 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio lib register [MANIFEST_URL]
-
+    pio lib register [MANIFEST_URL]
 
 Description
 -----------

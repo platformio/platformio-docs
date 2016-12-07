@@ -22,7 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio account register [OPTIONS]
-
+    pio account register [OPTIONS]
 
 Description
 -----------

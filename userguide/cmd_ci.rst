@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio ci [OPTIONS] [SRC]
+    pio ci [OPTIONS] [SRC]
 
 
 Description

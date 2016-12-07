@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio platform uninstall [PLATFORM...]
+    pio platform uninstall [PLATFORM...]
 
     # uninstall specific platform version using Semantic Versioning
     platformio platform uninstall PLATFORM@X.Y.Z

@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio upgrade
+    pio upgrade
 
 
 Description

@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio platform show PLATFORM
+    pio platform show PLATFORM
 
 
 Description

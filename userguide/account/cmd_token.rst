@@ -22,7 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio account token
-
+    pio account token
 
 Description
 -----------

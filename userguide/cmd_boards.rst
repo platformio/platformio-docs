@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio boards [OPTIONS] [FILTER]
+    pio boards [OPTIONS] [FILTER]
 
 Description
 -----------

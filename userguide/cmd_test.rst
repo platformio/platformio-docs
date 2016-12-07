@@ -24,6 +24,7 @@ Usage
 .. code-block:: bash
 
     platformio test [OPTIONS]
+    pio test [OPTIONS]
 
 Description
 -----------

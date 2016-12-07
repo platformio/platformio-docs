@@ -22,6 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio platform install [OPTIONS] [PLATFORM...]
+    pio platform install [OPTIONS] [PLATFORM...]
 
     # [PLATFORM...] forms
     platformio platform install <name>

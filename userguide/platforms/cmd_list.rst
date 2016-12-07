@@ -22,7 +22,7 @@ Usage
 .. code-block:: bash
 
     platformio platform list [OPTIONS]
-
+    pio platform list [OPTIONS]
 
 Description
 -----------
