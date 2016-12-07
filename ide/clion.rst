@@ -60,6 +60,7 @@ the screenshot below):
 * ``PLATFORMIO_BUILD`` - Build project without auto-uploading
 * ``PLATFORMIO_UPLOAD`` - Build and upload (if no errors)
 * ``PLATFORMIO_CLEAN`` - Clean compiled objects
+* ``PLATFORMIO_TEST`` - :ref:`unit_testing`
 * ``PLATFORMIO_PROGRAM`` - Build and upload using external programmer
   (if no errors), see :ref:`atmelavr_upload_via_programmer`
 * ``PLATFORMIO_UPLOADFS`` - Upload files to file system SPIFFS,
@@ -68,9 +69,15 @@ the screenshot below):
 * ``PLATFORMIO_REBUILD_PROJECT_INDEX`` - Rebuild C/C++ Index for the Project.
   Allows to fix code completion and code linting issues.
 
+
+PlatformIO Project Generator created "File Watchers" configuration to monitor
+changes in ``platformio.ini`` and automatically rebuild C/C++ Project Index.
+**You need to install extra plugin** named ``File Watchers`` via
+"Clion: Preferences > Plugins" to enable this feature.
+
 .. warning::
     The libraries which are added, installed or used in the project
-    after generating process wont be reflected in IDE. To fix it please run
+    after generating process will not be reflected in IDE. To fix it please run
     ``PLATFORMIO_REBUILD_PROJECT_INDEX`` target.
 
 Known issues
