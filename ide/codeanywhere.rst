@@ -28,7 +28,7 @@ development more productive and fun.
 
     1. Please make sure to read :ref:`pio_remote` guide first.
     2. You need :ref:`cmd_account` if you don't have it. Registration is FREE.
-    3. You should have a run :ref:`cmd_remote_agent` on a host machine
+    3. You should have a running :ref:`cmd_remote_agent` on a host machine
        where hardware devices are connected or visible for remote operations.
 
 Demo
@@ -54,7 +54,7 @@ Integration
 
 .. image:: ../_static/ide/codeanywhere/ide-codeanywhere-connection-wizard.png
 
-3.  Open **SSH-Terminal** tab (right click on
+4.  Open **SSH-Terminal** tab (right click on
     ``Container (PlatformIO) > SSH Terminal``) and install :ref:`core` using
     a next command
 
@@ -64,7 +64,7 @@ Integration
 
 .. image:: ../_static/ide/codeanywhere/ide-codeanywhere-install-pio-cli.png
 
-4.  Log in to :ref:`cmd_account` using :ref:`cmd_account_login` command.
+5.  Log in to :ref:`cmd_account` using :ref:`cmd_account_login` command.
 
 
 Quick Start

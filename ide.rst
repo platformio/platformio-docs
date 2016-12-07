@@ -24,6 +24,7 @@ Cloud IDE
 
     ide/cloud9
     ide/codeanywhere
+    ide/eclipseche
 
 .. _ide_standalone:
 
