@@ -56,6 +56,7 @@ Then:
 
    + ``PlatformIO: Build`` - Build project without auto-uploading
    + ``PlatformIO: Clean`` - Clean compiled objects.
+   + ``PlatformIO: Test`` - :ref:`unit_testing`
    + ``PlatformIO: Upload`` - Build and upload (if no errors)
    + ``PlatformIO: Upload using Programmer`` see :ref:`atmelavr_upload_via_programmer`
    + ``PlatformIO: Upload SPIFFS image`` see :ref:`platform_espressif_uploadfs`
@@ -84,7 +85,7 @@ If you have some problems with unresolved includes, defines, etc., then
     provider will not be available (check the ``Providers`` tab in
     ``Project > Properties > C/C++ General > Preprocessor Include Paths, Macros etc.``
     for a marked entry named ``CDT Cross GCC Built-in Compiler Settings``).
-        
+
     If this provider is not available, toolchain related includes cannot be
     resolved.
 

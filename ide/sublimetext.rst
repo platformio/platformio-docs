@@ -65,6 +65,7 @@ Also, you can access to all pre-configured targets via
 
 + ``PlatformIO - Build`` - Build project without auto-uploading
 + ``PlatformIO - Clean`` - Clean compiled objects.
++ ``PlatformIO - Test`` - :ref:`unit_testing`
 + ``PlatformIO - Upload`` - Build and upload (if no errors)
 + ``PlatformIO - Upload using Programmer`` see :ref:`atmelavr_upload_via_programmer`
 + ``PlatformIO - Upload SPIFFS image`` see :ref:`platform_espressif_uploadfs`
