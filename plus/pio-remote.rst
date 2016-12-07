@@ -52,6 +52,8 @@ Features
 Technology
 ----------
 
+.. image:: ../_static/pio-remote-architecture.png
+
 |PIORemote| is an own `PlatformIO Plus <https://pioplus.com/>`__ technology for
 **Over-The-Air (OTA)** remote operations without external dependencies to
 operation system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
