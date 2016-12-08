@@ -60,7 +60,7 @@ Integration
 
 .. code-block:: bash
 
-    sudo python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
+    sudo python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
 
 .. image:: ../_static/ide/codeanywhere/ide-codeanywhere-install-pio-cli.png
 
