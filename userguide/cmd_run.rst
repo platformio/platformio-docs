@@ -82,6 +82,11 @@ Specify the path to project directory. By default, ``--project-dir`` is equal
 to current working directory (``CWD``).
 
 .. option::
+    -s, --silent
+
+Suppress progress reporting
+
+.. option::
     -v, --verbose
 
 Shows detailed information when processing environments.
