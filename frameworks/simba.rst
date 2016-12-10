@@ -33,6 +33,9 @@ Platforms
     * - :ref:`platform_atmelsam`
       - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
+    * - :ref:`platform_espressif32`
+      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
     * - :ref:`platform_espressif8266`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
@@ -138,6 +141,26 @@ Espressif
       - 80 MHz
       - 4096 Kb
       - 80 Kb
+
+MakerAsia
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nano32``
+      - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 NodeMCU
 ~~~~~~~

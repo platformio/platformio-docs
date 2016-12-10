@@ -284,7 +284,7 @@ Examples
 --------
 
 All project examples are located in PlatformIO repository
-`Examples for Espressif platform <https://github.com/platformio/platformio-examples/tree/develop/espressif>`_.
+`Examples for Espressif 8266 platform <https://github.com/platformio/platformio-examples/tree/develop/espressif>`_.
 
 * `Native SDK <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp8266-native>`_
 * `WebServer <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp8266-webserver>`_
