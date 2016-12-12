@@ -23,6 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2016
 ^^^^
 
+* Dec 08, 2016 - **Cuong Tran Viet** - `PlatformIO is a solution <http://cuongtv.com/project/PlatformIO-is-the-solution-!!!/>`_
 * Nov 10, 2016 - **PiGreek** - `PlatformIO the new Arduino IDE ?! <https://pigreekblog.wordpress.com/2016/11/10/platformio-the-new-arduino-ide/>`_
 * Oct 31, 2016 - **Ricardo Quesada** - `Retro Challenge: announcing Commodore Home <https://retro.moe/2016/10/31/retro-challenge-commodore-home/>`_
 * Oct 3, 2016 - **Xose Pérez** - `Using the new Bean Loader CLI from PlatformIO <http://tinkerman.cat/using-new-bean-loader-cli-platformio/>`_
