@@ -195,15 +195,15 @@ Examples
 
 .. code::
 
-    > platformio lib -g install Json@5.4.0
+    > platformio lib -g install ArduinoJson@5.6.7
 
     Library Storage: /storage/dir/...
-    Looking for Json library in registry
-    Found: http://platformio.org/lib/show/64/Json
-    LibraryManager: Installing id=64 @ 5.4.0
+    Looking for ArduinoJson library in registry
+    Found: http://platformio.org/lib/show/64/ArduinoJson
+    LibraryManager: Installing id=64 @ 5.6.7
     Downloading  [####################################]  100%
     Unpacking  [####################################]  100%
-    Json @ 5.4.0 has been successfully installed!
+    ArduinoJson @ 5.6.7 has been successfully installed!
 
 
 3. Install library with dependencies to custom storage
