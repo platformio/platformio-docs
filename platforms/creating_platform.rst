@@ -382,5 +382,3 @@ Examples
 
 Please take a look at the source code of
 `PlatformIO Development Platforms <https://github.com/platformio?query=platform->`_.
-code of
-`PlatformIO Development Platforms <https://github.com/platformio?query=platform->`_.
