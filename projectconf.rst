@@ -658,9 +658,12 @@ Upload options
 This option is used by "uploader" tool when sending firmware to board via
 ``upload_port``. For example,
 
-* ``/dev/ttyUSB0`` - Unix-based OS
-* ``COM3`` - Windows OS
+* ``/dev/ttyUSB0`` - Serial port (Unix-based OS)
+* ``COM3`` - Serial port (Windows OS)
 * ``192.168.0.13`` - IP address when using OTA
+* ``/media/disk`` - physical path to media disk/flash drive
+  (:ref:`framework_mbed` enabled boards)
+* ``D:`` - physical path to media disk/flash drive (Windows OS).
 
 If ``upload_port`` isn't specified, then *PlatformIO* will try to detect it
 automatically.
