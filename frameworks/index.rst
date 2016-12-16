@@ -18,6 +18,7 @@ Frameworks
     :maxdepth: 2
 
     arduino
+    artik-sdk
     cmsis
     energia
     espidf
