@@ -83,6 +83,9 @@ Packages
     * - ``framework-arduinoteensy``
       - `Arduino Wiring-based Framework <http://arduino.cc/en/Reference/HomePage>`_
 
+    * - ``framework-artik-sdk``
+      - `ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms <http://www.artik.io>`_
+
     * - ``framework-cmsis``
       - `Vendor-independent hardware abstraction layer for the Cortex-M processor series <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php>`_
 

@@ -28,6 +28,9 @@ Packages
     * - Name
       - Contents
 
+    * - ``framework-artik-sdk``
+      - `ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms <http://www.artik.io>`_
+
     * - ``framework-wiringpi``
       - `GPIO Interface library for the Raspberry Pi <http://wiringpi.com>`_
 
@@ -41,6 +44,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_artik-sdk`
+      - ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms. It exposes a set of APIs to ease up development of applications. These APIs cover hardware buses such as GPIO, SPI, I2C, UART, connectivity links like Wi-Fi, Bluetooth, Zigbee, and network protocols such as HTTP, Websockets, MQTT, and others.
 
     * - :ref:`framework_wiringpi`
       - WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino "wiring" system.
@@ -87,3 +93,37 @@ Raspberry Pi
       - 1000 MHz
       - 524288 Kb
       - 524288 Kb
+
+Samsung
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``artik_1020``
+      - `Samsung ARTIK 1020 <https://www.artik.io>`_
+      - EXYNOS5422
+      - 1500 MHz
+      - 2097152 Kb
+      - 2097152 Kb
+
+    * - ``artik_520``
+      - `Samsung ARTIK 520 <https://www.artik.io>`_
+      - EXYNOS3250
+      - 1000 MHz
+      - 524288 Kb
+      - 524288 Kb
+
+    * - ``artik_710``
+      - `Samsung ARTIK 710 <https://www.artik.io>`_
+      - S5P6818
+      - 1400 MHz
+      - 1048576 Kb
+      - 1048576 Kb
