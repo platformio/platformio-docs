@@ -149,7 +149,7 @@ Adafruit
       - 2 Kb
 
     * - ``protrinket5ftdi``
-      - `Adafruit Pro Trinket 5V/16MHz (USB) <http://www.adafruit.com/products/2000>`_
+      - `Adafruit Pro Trinket 5V/16MHz (FTDI) <http://www.adafruit.com/products/2000>`_
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -593,6 +593,13 @@ Atmel
     * - ``samd21_xpro``
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/>`_
       - ATSAMD21J18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``samd21g18a``
+      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/>`_
+      - ATSAMD21G18A
       - 48 MHz
       - 256 Kb
       - 32 Kb
@@ -1064,6 +1071,26 @@ Engduino
       - 8 MHz
       - 32 Kb
       - 2.5 Kb
+
+Espotel
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``elmo_f411re``
+      - `Espotel LoRa Module <https://developer.mbed.org/platforms/Espotel-ELMO/>`_
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
 
 Espressif
 ~~~~~~~~~
@@ -1761,6 +1788,13 @@ Micromint
       - 8192 Kb
       - 264 Kb
 
+    * - ``lpc4337``
+      - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/>`_
+      - LPC4337
+      - 204 MHz
+      - 1024 Kb
+      - 136 Kb
+
 MikroElektronika
 ~~~~~~~~~~~~~~~~
 
@@ -1801,6 +1835,13 @@ MultiTech
       - Flash
       - RAM
 
+    * - ``mts_dragonfly_f411re``
+      - `MTS Dragonfly <https://developer.mbed.org/platforms/MTS-Dragonfly/>`_
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``mts_mdot_f405rg``
       - `MultiTech mDot <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
       - STM32F411RET6
@@ -1814,6 +1855,13 @@ MultiTech
       - 100 MHz
       - 512 Kb
       - 128 Kb
+
+    * - ``xdot_l151cc``
+      - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
+      - STM32L151CCU6
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 NGX Technologies
 ~~~~~~~~~~~~~~~~
@@ -2627,6 +2675,13 @@ ST
       - 512 Kb
       - 64 Kb
 
+    * - ``nucleo_f303ze``
+      - `ST Nucleo F303ZE <https://developer.mbed.org/platforms/ST-Nucleo-F303ZE/>`_
+      - STM32F303ZET6
+      - 72 MHz
+      - 512 Kb
+      - 64 Kb
+
     * - ``nucleo_f334r8``
       - `ST Nucleo F334R8 <https://developer.mbed.org/platforms/ST-Nucleo-F334R8/>`_
       - STM32F334R8T6
@@ -2923,6 +2978,26 @@ SeeedStudio
       - 48 MHz
       - 64 Kb
       - 10 Kb
+
+Semtech
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mote_l152rc``
+      - `NAMote72 <https://developer.mbed.org/platforms/NAMote-72/>`_
+      - STM32L152RC
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 Silicon Labs
 ~~~~~~~~~~~~
@@ -3584,6 +3659,13 @@ u-blox
       - Flash
       - RAM
 
+    * - ``ublox_evk_odin_w2``
+      - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_
+      - STM32F439ZIY6
+      - 168 MHz
+      - 2048 Kb
+      - 256 Kb
+
     * - ``ubloxc027``
       - `u-blox C027 <https://developer.mbed.org/platforms/u-blox-C027/>`_
       - LPC1768
@@ -3623,6 +3705,13 @@ y5 design
       - Frequency
       - Flash
       - RAM
+
+    * - ``lpc11u35_y5_mbug``
+      - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/>`_
+      - LPC11U35
+      - 48 MHz
+      - 64 Kb
+      - 10 Kb
 
     * - ``nrf51822_y5_mbug``
       - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/>`_

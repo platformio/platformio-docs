@@ -155,6 +155,26 @@ Armstrap
       - 512 Kb
       - 192 Kb
 
+Espotel
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``elmo_f411re``
+      - `Espotel LoRa Module <https://developer.mbed.org/platforms/Espotel-ELMO/>`_
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
 Generic
 ~~~~~~~
 
@@ -264,6 +284,13 @@ MultiTech
       - Flash
       - RAM
 
+    * - ``mts_dragonfly_f411re``
+      - `MTS Dragonfly <https://developer.mbed.org/platforms/MTS-Dragonfly/>`_
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``mts_mdot_f405rg``
       - `MultiTech mDot <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
       - STM32F411RET6
@@ -277,6 +304,13 @@ MultiTech
       - 100 MHz
       - 512 Kb
       - 128 Kb
+
+    * - ``xdot_l151cc``
+      - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
+      - STM32L151CCU6
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 ST
 ~~
@@ -459,6 +493,13 @@ ST
       - 512 Kb
       - 64 Kb
 
+    * - ``nucleo_f303ze``
+      - `ST Nucleo F303ZE <https://developer.mbed.org/platforms/ST-Nucleo-F303ZE/>`_
+      - STM32F303ZET6
+      - 72 MHz
+      - 512 Kb
+      - 64 Kb
+
     * - ``nucleo_f334r8``
       - `ST Nucleo F334R8 <https://developer.mbed.org/platforms/ST-Nucleo-F334R8/>`_
       - STM32F334R8T6
@@ -590,5 +631,45 @@ SeeedStudio
       - 168 MHz
       - 512 Kb
       - 192 Kb
+
+Semtech
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mote_l152rc``
+      - `NAMote72 <https://developer.mbed.org/platforms/NAMote-72/>`_
+      - STM32L152RC
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
+u-blox
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``ublox_evk_odin_w2``
+      - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_
+      - STM32F439ZIY6
+      - 168 MHz
+      - 2048 Kb
+      - 256 Kb
 
 .. include:: ststm32_extra.rst

@@ -208,6 +208,13 @@ Atmel
       - 256 Kb
       - 32 Kb
 
+    * - ``samd21g18a``
+      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/>`_
+      - ATSAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
     * - ``saml21_xpro_b``
       - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/>`_
       - ATSAML21J18B
