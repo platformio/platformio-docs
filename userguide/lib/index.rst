@@ -64,5 +64,6 @@ Commands
     cmd_register
     cmd_search
     cmd_show
+    cmd_stats
     cmd_uninstall
     cmd_update
