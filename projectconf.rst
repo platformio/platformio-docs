@@ -957,6 +957,37 @@ Take a look at the multiple snippets/answers for the user questions:
   - `#351 Specific reset method for ESP8266 <https://github.com/platformio/platformio-core/issues/351#issuecomment-161789165>`_
   - `#247 Specific options for avrdude <https://github.com/platformio/platformio-core/issues/247#issuecomment-118169728>`_.
 
+Extra Linker Flags without ``-Wl,`` prefix
+''''''''''''''''''''''''''''''''''''''''''
+
+Sometimes you need to pass extra flags to GCC linker without ``Wl,``. You could
+use :ref:`projectconf_build_flags` option but it will not work. PlatformIO
+will not parse these flags to ``LINKFLAGS`` scope. In this case, simple
+extra script will help:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:env_extra_link_flags]
+    platform = windows_x86
+    extra_script = extra_script.py
+    custom_option = hello
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    Import('env')
+
+    env.Append(
+      LINKFLAGS=[
+          "-static",
+          "-static-libgcc",
+          "-static-libstdc++"
+      ]
+    )
+
 Custom Uploader
 '''''''''''''''
 
