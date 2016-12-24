@@ -104,6 +104,9 @@ Packages
     * - ``framework-mbed``
       - `mbed Framework <http://mbed.org>`_
 
+    * - ``framework-pumbaa``
+      - `Pumbaa Framework <https://github.com/eerimoq/pumbaa>`_
+
     * - ``framework-simba``
       - `Simba Framework <https://github.com/eerimoq/simba>`_
 

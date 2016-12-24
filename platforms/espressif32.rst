@@ -34,6 +34,9 @@ Packages
     * - ``framework-espidf``
       - `Espressif IoT Development Framework <https://github.com/espressif/esp-idf>`_
 
+    * - ``framework-pumbaa``
+      - `Pumbaa Framework <https://github.com/eerimoq/pumbaa>`_
+
     * - ``framework-simba``
       - `Simba Framework <https://github.com/eerimoq/simba>`_
 
@@ -73,6 +76,9 @@ Frameworks
 
     * - :ref:`framework_espidf`
       - Espressif IoT Development Framework. Official development framework for ESP32.
+
+    * - :ref:`framework_pumbaa`
+      - Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.

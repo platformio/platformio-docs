@@ -24,6 +24,7 @@ Frameworks
     espidf
     libopencm3
     mbed
+    pumbaa
     simba
     spl
     wiringpi
