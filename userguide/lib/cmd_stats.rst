@@ -42,6 +42,16 @@ This information is the same that is shown on this page:
 
 * http://platformio.org/lib
 
+Options
+-------
+
+.. program:: platformio lib show
+
+.. option::
+    --json-output
+
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
+
 Examples
 --------
 

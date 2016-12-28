@@ -36,6 +36,16 @@ The possible values for ``[LIBRARY]``:
 * Library ID from Registry (preferred)
 * Library Name
 
+Options
+-------
+
+.. program:: platformio lib show
+
+.. option::
+    --json-output
+
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
+
 Examples
 --------
 
