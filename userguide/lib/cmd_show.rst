@@ -53,61 +53,61 @@ Examples
 
     > platformio lib show OneWire
 
-    OneWire
-    =======
-    Control 1-Wire protocol (DS18S20, DS18B20, DS2408 and etc)
+    PubSubClient
+    ============
+    #ID: 89
+    A client library for MQTT messaging. MQTT is a lightweight messaging protocol ideal for small devices. This library allows you to send and receive MQTT messages. It supports the latest MQTT 3.1.1 protocol and can be configured to use the older MQTT 3.1...
 
-    Version: 2.3.2, released 3 months ago
-    Registry ID: 1
-    Manifest: https://raw.githubusercontent.com/PaulStoffregen/OneWire/master/library.json
-    Homepage: https://www.pjrc.com/teensy/td_libs_OneWire.html
-    Repository: https://github.com/PaulStoffregen/OneWire
+    Version: 2.6, released 10 months ago
+    Manifest: https://raw.githubusercontent.com/ivankravets/pubsubclient/patch-2/library.json
+    Homepage: http://pubsubclient.knolleary.net
+    Repository: https://github.com/knolleary/pubsubclient.git
 
     Authors
     -------
-    Paul Stoffregen <paul@pjrc.com> http://www.pjrc.com (maintainer)
-    Tom Pollard <pollard@alum.mit.edu>
-    Derek Yerger
-    Jim Studt
-    Jason Dangel <dangel.jason@gmail.com>
-    Robin James
-    Ken Butcher
-    Guillermo Lovato
-    Scott Roberts
-    Bertrik Sikken
-    Mark Tillotson
-    Glenn Trewitt
-    Josh Larios
+    Nick O'Leary https://github.com/knolleary
 
     Keywords
     --------
-    onewire
-    temperature
-    bus
-    1-wire
-    ibutton
-    sensor
+    ethernet
+    mqtt
+    iot
+    m2m
 
-    Compatible Frameworks
+    Compatible frameworks
     ---------------------
-    arduino
+    Arduino
+
+    Compatible platforms
+    --------------------
+    Atmel AVR
+    Atmel SAM
+    Espressif 8266
+    Intel ARC32
+    Microchip PIC32
+    Nordic nRF51
+    Teensy
+    TI MSP430
 
     Headers
     -------
-    OneWire.h
+    PubSubClient.h
 
     Examples
     --------
-    http://dl.platformio.org/libraries/examples/0/1/DS18x20_Temperature.pde
-    http://dl.platformio.org/libraries/examples/0/1/DS2408_Switch.pde
-    http://dl.platformio.org/libraries/examples/0/1/DS250x_PROM.pde
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_auth.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_basic.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_esp8266.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_publish_in_callback.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_reconnect_nonblocking.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_stream.ino
 
     Versions
     --------
-    2.3.2, released 3 months ago
+    2.6, released 10 months ago
 
     Unique Downloads
     ----------------
-    Today: 5
-    Week: 87
-    Month: 341
+    Today: 25
+    Week: 120
+    Month: 462
