@@ -21,65 +21,83 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib [STORAGE_OPTIONS] show [LIBRARY]
-
-    # show info about project dependent library
-    # (run it from a project root where is located "platformio.ini")
     platformio lib show [LIBRARY]
+    pio lib show [LIBRARY]
 
-    # show info about library from global storage
-    platformio lib --global show [LIBRARY]
-    platformio lib -g show [LIBRARY]
-
-    # show info about library from custom storage
-    platformio lib --storage-dir /path/to/dir show [LIBRARY]
-    platformio lib -d /path/to/dir show [LIBRARY]
-
-    # [LIBRARY] forms
-    platformio lib [STORAGE_OPTIONS] show <id>
-    platformio lib [STORAGE_OPTIONS] show <id>
-    platformio lib [STORAGE_OPTIONS] show <id>@<version>
-    platformio lib [STORAGE_OPTIONS] show <id>@<version range>
-    platformio lib [STORAGE_OPTIONS] show <name>
-    platformio lib [STORAGE_OPTIONS] show <name>@<version>
-    platformio lib [STORAGE_OPTIONS] show <name>@<version range>
 
 Description
 -----------
 
-Show details about the installed library.
+Show detailed info about a library using
+`PlatformIO Library Registry <http://platformio.org/lib>`_.
 
-The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
-``<major>.<minor>.<patch>``) and can take any of the following forms:
+The possible values for ``[LIBRARY]``:
 
-* ``0.1.2`` - an exact version number. Use only this exact version
-* ``^0.1.2`` - any compatible version (exact version for ``0.x.x`` versions
-* ``~0.1.2`` - any version with the same major and minor versions, and an
-  equal or greater patch version
-* ``>0.1.2`` - any version greater than ``0.1.2``. ``>=``, ``<``, and ``<=``
-  are also possible
-* ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
-  ``0.2.0`` and less than ``0.3.0``
-
-Storage Options
----------------
-
-See base options for :ref:`cmd_lib`.
+* Library ID from Registry (preferred)
+* Library Name
 
 Examples
 --------
 
 .. code::
 
-    platformio lib -g show Json
+    > platformio lib show OneWire
 
-    Library Storage: /storage/dir/...
-    Json
-    ====
-    An elegant and efficient JSON library for embedded systems
+    OneWire
+    =======
+    Control 1-Wire protocol (DS18S20, DS18B20, DS2408 and etc)
 
-    Authors: Benoit Blanchon http://blog.benoitblanchon.fr
-    Keywords: json, rest, http, web
-    Frameworks: arduino
-    Platforms: atmelavr, atmelsam, timsp430, titiva, teensy, freescalekinetis, ststm32, nordicnrf51, nxplpc, espressif8266, siliconlabsefm32, linux_arm, native, intel_arc32
-    Version: 5.4.0
+    Version: 2.3.2, released 3 months ago
+    Registry ID: 1
+    Manifest: https://raw.githubusercontent.com/PaulStoffregen/OneWire/master/library.json
+    Homepage: https://www.pjrc.com/teensy/td_libs_OneWire.html
+    Repository: https://github.com/PaulStoffregen/OneWire
+
+    Authors
+    -------
+    Paul Stoffregen <paul@pjrc.com> http://www.pjrc.com (maintainer)
+    Tom Pollard <pollard@alum.mit.edu>
+    Derek Yerger
+    Jim Studt
+    Jason Dangel <dangel.jason@gmail.com>
+    Robin James
+    Ken Butcher
+    Guillermo Lovato
+    Scott Roberts
+    Bertrik Sikken
+    Mark Tillotson
+    Glenn Trewitt
+    Josh Larios
+
+    Keywords
+    --------
+    onewire
+    temperature
+    bus
+    1-wire
+    ibutton
+    sensor
+
+    Compatible Frameworks
+    ---------------------
+    arduino
+
+    Headers
+    -------
+    OneWire.h
+
+    Examples
+    --------
+    http://dl.platformio.org/libraries/examples/0/1/DS18x20_Temperature.pde
+    http://dl.platformio.org/libraries/examples/0/1/DS2408_Switch.pde
+    http://dl.platformio.org/libraries/examples/0/1/DS250x_PROM.pde
+
+    Versions
+    --------
+    2.3.2, released 3 months ago
+
+    Unique Downloads
+    ----------------
+    Today: 5
+    Week: 87
+    Month: 341

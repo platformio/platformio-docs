@@ -51,21 +51,21 @@ Examples
     ****************
     Name                     Date                    Url
     --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    PacketIO                 2016-12-23 17:10:04     http://platformio.org/lib/show/1377/PacketIO
-    PJON                     2016-12-23 15:45:21     http://platformio.org/lib/show/245/PJON
-    GobbitLineCommand        2016-12-23 10:00:14     http://platformio.org/lib/show/1320/GobbitLineCommand
-    TaskScheduler            2016-12-22 23:45:09     http://platformio.org/lib/show/721/TaskScheduler
-    Nokia5110                2016-12-22 11:12:35     http://platformio.org/lib/show/1376/Nokia5110
+    GroveEncoder             12 hours ago            http://platformio.org/lib/show/1382/GroveEncoder
+    RF24G                    12 hours ago            http://platformio.org/lib/show/1381/RF24G
+    Sim800L Library Revised  12 hours ago            http://platformio.org/lib/show/1380/Sim800L%20Library%20Revised
+    ArduinoSTL               12 hours ago            http://platformio.org/lib/show/750/ArduinoSTL
+    hd44780                  13 hours ago            http://platformio.org/lib/show/738/hd44780
 
     RECENTLY ADDED
     **************
     Name                     Date                    Url
     --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    PacketIO                 2016-12-23 17:10:04     http://platformio.org/lib/show/1377/PacketIO
-    Nokia5110                2016-12-22 11:12:35     http://platformio.org/lib/show/1376/Nokia5110
-    AnalogKeypad by Makuna   2016-12-22 11:12:31     http://platformio.org/lib/show/1375/AnalogKeypad%20by%20Makuna
-    unittest-cpp             2016-12-20 22:00:04     http://platformio.org/lib/show/1374/unittest-cpp
-    ROKduino                 2016-12-20 11:20:08     http://platformio.org/lib/show/1373/ROKduino
+    GroveEncoder             12 hours ago            http://platformio.org/lib/show/1382/GroveEncoder
+    RF24G                    12 hours ago            http://platformio.org/lib/show/1381/RF24G
+    Sim800L Library Revised  12 hours ago            http://platformio.org/lib/show/1380/Sim800L%20Library%20Revised
+    DS3231                   a day ago               http://platformio.org/lib/show/1379/DS3231
+    ArduboyPlaytune          4 days ago              http://platformio.org/lib/show/1378/ArduboyPlaytune
 
     RECENT KEYWORDS
     ***************
