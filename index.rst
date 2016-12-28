@@ -124,6 +124,7 @@ Contents
     :maxdepth: 2
 
     Quickstart <librarymanager/index>
+    User Guide <userguide/lib/index>
     librarymanager/ldf
     librarymanager/config
     librarymanager/creating
