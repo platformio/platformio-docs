@@ -1075,6 +1075,9 @@ when :option:`platformio run --target` is called with ``upload`` value.
     env.AddPreAction("$BUILD_DIR/firmware.elf", [callback1, callback2,...])
     env.AddPostAction("$BUILD_DIR/firmware.hex", callback...)
 
+    # custom action before building SPIFFS image. For example, compress HTML, etc.
+    env.AddPreAction("$BUILD_DIR/spiffs.bin", callback...)
+
     # custom action for project's main.cpp
     env.AddPostAction("$BUILD_DIR/src/main.cpp.o", callback...)
 
