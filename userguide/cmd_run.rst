@@ -58,6 +58,7 @@ Built-in targets:
     + ``upload`` firmware "auto-uploading" for embedded platforms
     + ``program`` firmware "auto-uploading" for embedded platforms using external
       programmer (available only for :ref:`platform_atmelavr`)
+    + ``fuses`` set fuse bits (available only for :ref:`platform_atmelavr`)
     + ``buildfs`` :ref:`platform_espressif_uploadfs`
     + ``uploadfs`` :ref:`platform_espressif_uploadfs`
     + ``size`` print the size of the sections in a firmware/program
