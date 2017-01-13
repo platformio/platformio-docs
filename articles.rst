@@ -20,6 +20,11 @@ Articles about us
 
 Here are recent articles/reviews about PlatformIO:
 
+2017
+^^^^
+
+* Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
+
 2016
 ^^^^
 
