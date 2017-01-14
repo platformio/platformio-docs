@@ -64,11 +64,13 @@ Examples
     > platformio lib -g list
 
     Library Storage: /storage/dir/...
+
     Adafruit Unified Sensor
     =======================
     #ID: 31
     Required for all Adafruit Unified Sensor based libraries.
 
+    Version: 1.0.2
     Keywords: sensors
     Compatible frameworks: arduino
     Compatible platforms: atmelavr, atmelsam, espressif8266, intel_arc32, microchippic32, nordicnrf51, teensy, timsp430
@@ -79,124 +81,104 @@ Examples
     #ID: 64
     An elegant and efficient JSON library for embedded systems
 
+    Version: 5.8.0
     Keywords: web, json, http, rest
     Compatible frameworks: arduino
     Compatible platforms: atmelavr, atmelsam, espressif8266, intel_arc32, microchippic32, nordicnrf51, teensy, timsp430
     Authors: Benoit Blanchon
+
+    ArduinoJson
+    ===========
+    #ID: 64
+    An elegant and efficient JSON library for embedded systems
+
+    Version: 5.6.7
+    Keywords: web, json, http, rest
+    Compatible frameworks: arduino
+    Compatible platforms: atmelavr, atmelsam, espressif8266, intel_arc32, microchippic32, nordicnrf51, teensy, timsp430
+    Authors: Benoit Blanchon
+
+    ArduinoJson
+    ===========
+    #ID: 64
+    An elegant and efficient JSON library for embedded systems
+
+    Version: 5.7.2
+    Keywords: web, json, http, rest
+    Compatible frameworks: arduino
+    Compatible platforms: atmelavr, atmelsam, espressif8266, intel_arc32, microchippic32, nordicnrf51, teensy, timsp430
+    Authors: Benoit Blanchon
+
+    Blynk
+    =====
+    #ID: 415
+    Build a smartphone app for your project in minutes. Blynk allows creating IoT solutions easily. It supports  WiFi, BLE, Bluetooth, Ethernet, GSM, USB, Serial. Works with many boards like ESP8266, ESP32, Arduino UNO, Nano, Due, Mega, Zero, MKR100, Yun, Raspberry Pi, Particle, Energia, ARM mbed, Intel Edison/Galileo/Joule, BBC micro:bit, DFRobot, RedBearLab, Microduino, LinkIt ONE ...
+
+    Version: 0.4.3
+    Homepage: http://blynk.cc
+    Keywords: control, gprs, protocol, communication, app, bluetooth, serial, cloud, web, usb, m2m, ble, 3g, smartphone, http, iot, device, sensors, data, esp8266, mobile, wifi, ethernet, gsm
+    Compatible frameworks: energia, wiringpi, arduino
+    Compatible platforms: atmelavr, atmelsam, espressif8266, intel_arc32, linux_arm, microchippic32, nordicnrf51, teensy, timsp430, titiva
+    Authors: Volodymyr Shymanskyy
 
     Bounce2
     =======
     #ID: 1106
     Debouncing library for Arduino or Wiring
 
+    Version: 2.1
     Keywords: input, signal, ouput, bounce
     Compatible frameworks: arduino
     Compatible platforms: atmelavr, atmelsam, espressif8266, intel_arc32, microchippic32, nordicnrf51, teensy, timsp430
     Authors: Thomas O Fredericks
-
-    DCF77
-    =====
-    #ID: 169
-    Read and decode the atomic time broadcasted by the DCF77 radiostation.
-
-    Keywords: dcf77, time
-    Compatible frameworks: arduino
-    Compatible platforms:
-    Authors: Thijs Elenbaas
-
-    DHT sensor library
-    ==================
-    #ID: 19
-    Arduino library for DHT11, DHT22, etc Temp & Humidity Sensors
-
-    Keywords: unified, dht, sensor, temperature, humidity
-    Compatible frameworks: arduino
-    Compatible platforms: atmelavr
-    Authors: Adafruit Industries
 
     Homie
     =====
     #ID: 555
     ESP8266 framework for Homie, a lightweight MQTT convention for the IoT
 
+    Version: 1.5.0
     Keywords: home, mqtt, iot, esp8266, automation
     Compatible frameworks: arduino
     Compatible platforms: espressif8266
     Authors: Marvin Roger
+
+    JustWifi
+    ========
+    #ID: 1282
+    Wifi Manager for ESP8266 that supports multiple wifi networks and scan for strongest signal
+
+    Version: 1.1.1
+    License: GPL-3.0
+    Keywords: manager, wifi, scan
+    Compatible frameworks: arduino
+    Compatible platforms: espressif8266
+    Authors: Xose Perez
 
     LiquidCrystal
     =============
     #ID: 136
     LiquidCrystal Library is faster and extensable, compatible with the original LiquidCrystal library
 
+    Version: 1.3.4
     Keywords: lcd, hd44780
     Compatible frameworks: arduino
     Compatible platforms: atmelavr
     Authors: F Malpartida
 
-    MFRC522
-    =======
-    #ID: 63
-    Read a card using a MFRC522 reader on your SPI interface
-
-    Keywords: spi, rfid
-    Compatible frameworks: arduino
-    Compatible platforms: atmelavr, ststm32, teensy, espressif8266
-    Authors: Miki Balboa
-
-    OneWire
-    =======
-    #ID: 1
-    Control 1-Wire protocol (DS18S20, DS18B20, DS2408 and etc)
-
-    Homepage: https://www.pjrc.com/teensy/td_libs_OneWire.html
-    Keywords: onewire, temperature, bus, 1-wire, ibutton, sensor
-    Compatible frameworks: arduino
-    Compatible platforms:
-    Authors: Paul Stoffregen, Jim Studt, Tom Pollard, Derek Yerger, Josh Larios, Robin James, Glenn Trewitt, Jason Dangel, Guillermo Lovato, Ken Butcher, Mark Tillotson, Bertrik Sikken, Scott Roberts
-
-    PID
-    ===
-    #ID: 2
-    A PID controller seeks to keep some input variable close to a desired setpoint by adjusting an output. The way in which it does this can be 'tuned' by adjusting three parameters (P,I,D).
-
-    Homepage: http://playground.arduino.cc/Code/PIDLibrary
-    Keywords: controller, pid, signal
-    Compatible frameworks: arduino
-    Compatible platforms: atmelavr
-    Authors: Brett Beauregard
-
-    PubSubClient
-    ============
-    #ID: 89
-    A client library for MQTT messaging. MQTT is a lightweight messaging protocol ideal for small devices. This library allows you to send and receive MQTT messages. It supports the latest MQTT 3.1.1 protocol and can be configured to use the older MQTT 3.1 if needed. It supports all Arduino Ethernet Client compatible hardware, including the Intel Galileo/Edison, ESP8266 and TI CC3000.
-
-    Homepage: http://pubsubclient.knolleary.net
-    Keywords: ethernet, mqtt, iot, m2m
-    Compatible frameworks: arduino
-    Compatible platforms: atmelavr, atmelsam, espressif8266, intel_arc32, microchippic32, nordicnrf51, teensy, timsp430
-    Authors: Nick O'Leary
-
-    SPI4Teensy3
-    ===========
-    #ID: 417
-    Faster SPI library optimized for the Teensy 3.0
-
-    Keywords: spi
-    Compatible frameworks: arduino
-    Compatible platforms: teensy
-    Authors: Andrew Kroll
-
     TextLCD
     =======
     hg+https://developer.mbed.org/users/simon/code/TextLCD/
 
+    Version: 308d188a2d3a
+    Keywords: uncategorized
 
     Time
     ====
     #ID: 44
     Time keeping library
 
+    Version: 1.5
     Homepage: http://playground.arduino.cc/Code/Time
     Keywords: week, rtc, hour, year, month, second, time, date, day, minute
     Compatible frameworks: arduino
@@ -208,16 +190,30 @@ Examples
     #ID: 76
     Arduino library to facilitate time zone conversions and automatic daylight saving (summer) time adjustments
 
+    Version: 510ae2f6b6
     Keywords: zone, time
     Compatible frameworks: arduino
     Compatible platforms: atmelavr
     Authors: Jack Christensen
+
+    U8g2
+    ====
+    #ID: 942
+    Monochrome LCD, OLED and eInk Library. Display controller: SSD1305, SSD1306, SSD1322, SSD1325, SSD1327, SSD1606, SH1106, T6963, RA8835, LC7981, PCD8544, PCF8812, UC1604, UC1608, UC1610, UC1611, UC1701, ST7565, ST7567, NT7534, ST7920, LD7032, KS0108. Interfaces: I2C, SPI, Parallel.
+
+    Version: 2.11.4
+    Homepage: https://github.com/olikraus/u8g2
+    Keywords: display
+    Compatible frameworks: arduino
+    Compatible platforms: atmelavr, atmelsam, espressif8266, intel_arc32, microchippic32, nordicnrf51, teensy, timsp430
+    Authors: oliver
 
     USB-Host-Shield-20
     ==================
     #ID: 59
     Revision 2.0 of MAX3421E-based USB Host Shield Library
 
+    Version: 1.2.1
     License: GPL-2.0
     Keywords: usb, spp, mass storage, pl2303, acm, ftdi, xbox, host, hid, wii, buzz, ps3, bluetooth, adk, ps4
     Compatible frameworks: spl, arduino
