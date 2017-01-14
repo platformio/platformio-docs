@@ -47,7 +47,7 @@ Storage Options
 See base options for :ref:`cmd_lib`.
 
 Options
-~~~~~~~
+-------
 
 .. program:: platformio lib list
 

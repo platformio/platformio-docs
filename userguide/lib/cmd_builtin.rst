@@ -32,7 +32,7 @@ List built-in libraries based on installed :ref:`platforms` and their
 frameworks, SDKs, etc.
 
 Options
-~~~~~~~
+-------
 
 .. program:: platformio lib builtin
 
