@@ -107,6 +107,13 @@ Skip building stage.
 Skip uploading stage
 
 .. option::
+    --no-reset
+
+Do not reset board automatically when gathering test results. In this case,
+need to press "reset" button manually.
+
+
+.. option::
     -v, --verbose
 
 Shows detailed information when processing environments.
