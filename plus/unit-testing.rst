@@ -530,7 +530,7 @@ Examples
 
 * `Embedded: Wiring Blink <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/wiring-blink>`_
 * `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_
-* `Labmet Weather Station <https://github.com/lab804/labmet-weatherstation/tree/unittesting>`_
+* `Labmet Weather Station <https://github.com/lab804/labmet-weatherstation>`_
 * `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`__
 
 For the other examples and source code please follow to
