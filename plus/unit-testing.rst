@@ -25,6 +25,10 @@ of one or more MCU program modules together with associated control data,
 usage procedures, and operating procedures, are tested to determine whether
 they are fit for use. Unit testing finds problems early in the development cycle.
 
+.. tip::
+  `QUESTIONS? Chat with us! <https://pioplus.com>`_
+  (chat button is located in the bottom right corner)
+
 .. contents::
 
 Demo

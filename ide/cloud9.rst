@@ -20,6 +20,10 @@ Workspaces are powered by Docker Ubuntu containers that give you full freedom
 over your environment, including sudo rights. Do a git push, compile SASS, see
 server output, and Run apps easily with the built-in Terminal and Runners.
 
+.. tip::
+  `QUESTIONS? Chat with us! <https://pioplus.com>`_
+  (chat button is located in the bottom right corner)
+
 .. contents::
 
 .. note::

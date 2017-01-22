@@ -21,6 +21,10 @@ workspace server comes with a RESTful webservice and provides high flexibility.
 It also contains a SDK which can be used to create plug-ins for languages,
 frameworks or tools.
 
+.. tip::
+  `QUESTIONS? Chat with us! <https://pioplus.com>`_
+  (chat button is located in the bottom right corner)
+
 .. contents::
 
 .. note::

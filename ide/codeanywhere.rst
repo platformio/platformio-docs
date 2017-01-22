@@ -22,6 +22,10 @@ will let you focus on building great applications quicker. All the features
 you will need for any coding task are built into Codeanywhere, making
 development more productive and fun.
 
+.. tip::
+  `QUESTIONS? Chat with us! <https://pioplus.com>`_
+  (chat button is located in the bottom right corner)
+
 .. contents::
 
 .. note::
