@@ -192,6 +192,20 @@ Workflow
 5. Write test using :ref:`unit_testing_api`. The each test is a small
    independent program with own ``main()`` or ``setup()/loop()`` methods. Also,
    test should start from ``UNITY_BEGIN()`` and finish with ``UNITY_END()``.
+
+   .. warning::
+     If board does not support software reset via ``Serial.DTR/RTS``,
+     you should add >2 seconds delay before ``UNITY_BEGIN()`.
+     We need that time to establish a ``Serial`` communication between host
+     machine and target device.
+
+     .. code-block:: c
+
+         delay(2000); // for Arduino framework
+         wait(2);     // for ARM mbed framework
+         UNITY_BEGIN();
+
+
 6. Place test to ``test`` directory. If you have more than one test, split them
    into sub-folders. For example, ``test/test_1/*.[c,cpp,h]``,
    ``test_N/*.[c,cpp,h]``, etc. If no such directory in ``test`` folder, then
@@ -419,6 +433,10 @@ Source files
       }
 
       void setup() {
+          // NOTE!!! Wait for >2 secs
+          // if board doesn't support software reset via Serial.DTR/RTS
+          delay(2000);
+
           UNITY_BEGIN();    // IMPORTANT LINE!
           RUN_TEST(test_led_builtin_pin_number);
 
