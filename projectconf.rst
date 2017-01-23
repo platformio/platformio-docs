@@ -972,7 +972,6 @@ extra script will help:
     [env:env_extra_link_flags]
     platform = windows_x86
     extra_script = extra_script.py
-    custom_option = hello
 
 ``extra_script.py`` (place it near ``platformio.ini``):
 
