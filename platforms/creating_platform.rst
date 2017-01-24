@@ -277,6 +277,11 @@ Manifest File ``platform.json``
           "type": "framework",
           "optional": true,
           "version": "~1.117.0"
+        },
+        "tool-direct-vcs-url": {
+          "type": "framework",
+          "optional": true,
+          "version": "https://github.com/user/repo.git"
         }
       }
     }
