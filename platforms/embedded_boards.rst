@@ -78,6 +78,13 @@ Adafruit
       - Flash
       - RAM
 
+    * - ``adafruit_circuitplayground_m0``
+      - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000>`_
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
     * - ``adafruit_feather_m0_usb``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
       - SAMD21G18A
@@ -314,14 +321,14 @@ Arduino
 
     * - ``due``
       - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
-      - SAM3X8E
+      - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
       - 32 Kb
 
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
-      - SAM3X8E
+      - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
       - 32 Kb
@@ -419,6 +426,13 @@ Arduino
 
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000>`_
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``mkrzero``
+      - `Arduino MKRZero <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero>`_
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -1051,26 +1065,32 @@ Engduino
       - Flash
       - RAM
 
-    * - ``engduinov1``
-      - `Engduino 1 <http://www.engduino.org>`_
-      - ATMEGA32U4
-      - 8 MHz
-      - 32 Kb
-      - 2.5 Kb
-
-    * - ``engduinov2``
-      - `Engduino 2 <http://www.engduino.org>`_
-      - ATMEGA32U4
-      - 8 MHz
-      - 32 Kb
-      - 2.5 Kb
-
     * - ``engduinov3``
       - `Engduino 3 <http://www.engduino.org>`_
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
       - 2.5 Kb
+
+EnviroDIY
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mayfly``
+      - `EnviroDIY Mayfly <http://envirodiy.org/forums/>`_
+      - ATMEGA1284P
+      - 8 MHz
+      - 128 Kb
+      - 16 Kb
 
 Espotel
 ~~~~~~~
@@ -1138,7 +1158,7 @@ Espressif
       - ESP32
       - 240 MHz
       - 1024 Kb
-      - 112 Kb
+      - 288 Kb
 
     * - ``esp8285``
       - `Generic ESP8285 Module <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
@@ -1448,6 +1468,33 @@ Generic ATTiny
       - 8 MHz
       - 8 Kb
       - 0.5 Kb
+
+Hornbill
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``hornbill32dev``
+      - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``hornbill32minima``
+      - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 Intel
 ~~~~~

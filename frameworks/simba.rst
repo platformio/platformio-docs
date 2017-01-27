@@ -82,7 +82,14 @@ Arduino
 
     * - ``due``
       - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
-      - SAM3X8E
+      - AT91SAM3X8E
+      - 84 MHz
+      - 512 Kb
+      - 32 Kb
+
+    * - ``dueUSB``
+      - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
       - 32 Kb

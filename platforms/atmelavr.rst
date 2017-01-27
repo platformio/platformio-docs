@@ -538,26 +538,32 @@ Engduino
       - Flash
       - RAM
 
-    * - ``engduinov1``
-      - `Engduino 1 <http://www.engduino.org>`_
-      - ATMEGA32U4
-      - 8 MHz
-      - 32 Kb
-      - 2.5 Kb
-
-    * - ``engduinov2``
-      - `Engduino 2 <http://www.engduino.org>`_
-      - ATMEGA32U4
-      - 8 MHz
-      - 32 Kb
-      - 2.5 Kb
-
     * - ``engduinov3``
       - `Engduino 3 <http://www.engduino.org>`_
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
       - 2.5 Kb
+
+EnviroDIY
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mayfly``
+      - `EnviroDIY Mayfly <http://envirodiy.org/forums/>`_
+      - ATMEGA1284P
+      - 8 MHz
+      - 128 Kb
+      - 16 Kb
 
 Generic ATTiny
 ~~~~~~~~~~~~~~
