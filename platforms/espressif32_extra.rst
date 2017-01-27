@@ -9,6 +9,44 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Using Arduino Framework with Staging version
+--------------------------------------------
+
+PlatformIO will install the latest Arduino Core for ESP32 from
+https://github.com/espressif/arduino-esp32. The `Git <https://git-scm.com>`_
+should be installed in a system. To update Arduino Core to the latest revision,
+please use :ref:`cmd_platform_update` command.
+
+1.	Install the latest :ref:`installation_develop` of PIO Core
+2. 	Install Espressif 32 (Stage) development platform
+
+    .. code::
+
+        platformio platform install https://github.com/platformio/platform-espressif32.git#feature/stage
+
+3.  Set :ref:`projectconf_env_platform` to ``espressif32_stage`` in
+    :ref:`projectconf`. For example,
+
+    .. code-block:: ini
+
+        [env:esp32dev]
+        platform = espressif32_stage
+        board = esp32dev
+        framework = arduino
+
+4.  Try to build project
+5.  If you see build errors, then try to build this project using the same
+    ``stage`` with Arduino IDE
+6.  If it works with Arduino IDE but doesn't work with PlatformIO, then please
+    `file new issue <https://github.com/platformio/platform-espressif32/issuess>`_
+    with attached information:
+
+    - test project/files
+    - detailed log of build process from Arduino IDE (please copy it from
+      console to http://pastebin.com)
+    - detailed log of build process from PlatformIO Build System (
+      please copy it from console to http://pastebin.com)
+
 Examples
 --------
 

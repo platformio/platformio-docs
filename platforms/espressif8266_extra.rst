@@ -230,6 +230,11 @@ Demo
 Using Arduino Framework with Staging version
 --------------------------------------------
 
+PlatformIO will install the latest Arduino Core for ESP8266 from
+https://github.com/esp8266/Arduino. The `Git <https://git-scm.com>`_
+should be installed in a system. To update Arduino Core to the latest revision,
+please use :ref:`cmd_platform_update` command.
+
 1.  Install Espressif 8266 (Stage) development platform
 
     .. code::
@@ -248,10 +253,10 @@ Using Arduino Framework with Staging version
 
 3.  Try to build project
 4.  If you see build errors, then try to build this project using the same
-    ``stage`` on Arduino IDE
-5.  If it works with Arduino IDE but doesn't work with PlatformIO, then please
-    `open new issue <https://github.com/platformio/platformio-core/issues>`_ with
-    attached information:
+    ``stage`` with Arduino IDE
+5.  If it works with Arduino IDE but doesn't work with PlatformIO, please
+    `file new issue <https://github.com/platformio/platform-espressif8266/issues>`_
+    with attached information:
 
     - test project/files
     - detailed log of build process from Arduino IDE (please copy it from
