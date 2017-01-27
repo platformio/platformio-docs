@@ -180,10 +180,15 @@ Copy the next source code to the just created file ``main.cpp``:
 
     /**
      * Blink
+     *
      * Turns on an LED on for one second,
      * then off for one second, repeatedly.
      */
     #include "Arduino.h"
+
+    #ifndef LED_BUILTIN
+    #define LED_BUILTIN 13
+    #endif
 
     void setup()
     {
@@ -195,10 +200,13 @@ Copy the next source code to the just created file ``main.cpp``:
     {
       // turn the LED on (HIGH is the voltage level)
       digitalWrite(LED_BUILTIN, HIGH);
+
       // wait for a second
       delay(1000);
+
       // turn the LED off by making the voltage LOW
       digitalWrite(LED_BUILTIN, LOW);
+
        // wait for a second
       delay(1000);
     }
