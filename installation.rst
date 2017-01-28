@@ -117,14 +117,14 @@ To install or upgrade *PlatformIO* paste that at a *Terminal* prompt
 
 .. code-block:: bash
 
-    python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
+    python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/devlop/scripts/get-platformio.py)"
 
 
 Local Download (Mac / Linux / Windows)
 ''''''''''''''''''''''''''''''''''''''
 
 To install or upgrade *PlatformIO*, download (save as...)
-`get-platformio.py <https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py>`_
+`get-platformio.py <https://raw.githubusercontent.com/platformio/platformio/devlop/scripts/get-platformio.py>`_
 script. Then run the following (**MAY require** administrator access ``sudo``):
 
 .. code-block:: bash
