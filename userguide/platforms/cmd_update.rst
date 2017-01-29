@@ -49,6 +49,11 @@ build scripts, board configs and etc.
 
 Do not update, only check for new version
 
+.. option::
+    --json-output
+
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
+
 Examples
 --------
 
