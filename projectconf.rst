@@ -806,6 +806,10 @@ folder name). In the most cases, library name is pre-defined in manifest file
 (:ref:`library_config`, ``library.properties``, ``module.json``). The multiple
 library names are allowed, *split them with comma+space ", "*.
 
+There is ability to ignore built-in :ref:`framework_mbed` libraries: mbed-rtos,
+mbed-events, mbed-fs, mbed-net, mbed-rpc, mbed-dsp, mbed-USBHost, mbed-USBDevice.
+See full list `here <https://github.com/platformio/builder-framework-mbed/blob/develop/mbed.py#L323>`__.
+
 Example:
 
 .. code-block:: ini
