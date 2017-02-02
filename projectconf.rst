@@ -815,7 +815,7 @@ Example:
 .. code-block:: ini
 
     [env:ignore_some_libs]
-    lib_ignore = SPI, Ethernet
+    lib_ignore = SPI, Ethernet, mbed-fs
 
 .. _projectconf_lib_extra_dirs:
 
