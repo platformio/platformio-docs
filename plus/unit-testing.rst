@@ -61,8 +61,8 @@ Embedded
 PlatformIO wraps the test and main firmware (from :ref:`projectconf_pio_src_dir`)
 with their own |PIOUTF|. It then builds special firmware for the target device
 and uploads it. After uploading, PlatformIO connects to the embedded device
-(board) using :ref:`projectconf_test_port` , starts tests, collects results and
-shows the test results on the host machine.
+(board) using the configured :ref:`projectconf_test_port` . Tests are then started
+and the results are collected for display on the host machine.
 
 Currently, |PIOUTE| supports these embedded frameworks:
 
