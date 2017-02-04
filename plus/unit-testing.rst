@@ -45,7 +45,7 @@ Test Types
 Desktop
 ~~~~~~~
 
-PlatformIO wraps the test and main programs (from :ref:`projectconf_pio_src_dir`)
+PlatformIO wraps the test and main program (from :ref:`projectconf_pio_src_dir`)
 with their own |PIOUTF|. It then builds the final program using
 :ref:`platform_native` and runs tests on the host machine (desktop).
 
