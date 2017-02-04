@@ -60,9 +60,18 @@ Example:
 
 .. code-block:: ini
 
+    [platformio]
+    ; Unix
+    lib_extra_dirs = ${env.HOME}/Documents/Arduino/libraries
+    ; Windows
+    lib_extra_dirs = ${env.HOMEDRIVE}${env.HOMEPATH}\Documents\Arduino\libraries
+
+
     [common]
     build_flags = -D VERSION=1.2.3 -D DEBUG=1
-    lib_deps_builtin = SPI, Wire
+    lib_deps_builtin =
+      SPI
+      Wire
     lib_deps_external = ArduinoJson@>5.6.0
 
     [env:uno]
@@ -71,7 +80,6 @@ Example:
     board = uno
     build_flags = ${common.build_flags}
     lib_deps = ${common.lib_deps_builtin}, ${common.lib_deps_external}
-    lib_extra_dirs = ${env.HOME}/arduino/libs
 
     [env:nodemcuv2]
     platform = espressif8266
