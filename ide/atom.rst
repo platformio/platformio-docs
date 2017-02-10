@@ -493,6 +493,51 @@ Code Formatting
 You need to install `atom-beautify <https://atom.io/packages/atom-beautify>`_
 package and `C/C++ Uncrustify Code Beautifier <http://sourceforge.net/projects/uncrustify/>`_.
 
+Uninstall Atom with PlatformIO IDE
+----------------------------------
+
+Here's how to uninstall the PlatformIO IDE for multiple OS.
+
+Windows
+~~~~~~~
+
+1. Uninstall Atom using "Start > Control Panel > Programs and Features > Uninstall"
+2. Remove ``C:\Users\<user name>\.atom`` folder (settings, packages, etc...)
+3. Remove ``C:\Users\<user name>\AppData\Local\atom`` folder (application itself)
+4. Remove ``C:\Users\<user name>\AppData\Roaming\Atom`` folder (cache, etc.)
+
+macOS
+~~~~~
+
+Run these commands in system Terminal
+
+.. code::
+
+    rm -rf ~/.atom
+    rm /usr/local/bin/atom
+    rm /usr/local/bin/apm
+    rm -rf /Applications/Atom.app
+    rm ~/Library/Preferences/com.github.atom.plist
+    rm "~/Library/Application Support/com.github.atom.ShipIt"
+    rm -rf "~/Library/Application Support/Atom"
+    rm -rf "~/Library/Saved Application State/com.github.atom.savedState"
+    rm -rf ~/Library/Caches/com.github.atom
+    rm -rf ~/Library/Caches/Atom
+
+Linux
+~~~~~
+
+Run these commands in system Terminal
+
+.. code::
+
+    rm /usr/local/bin/atom
+    rm /usr/local/bin/apm
+    rm -rf ~/atom
+    rm -rf ~/.atom
+    rm -rf ~/.config/Atom-Shell
+    rm -rf /usr/local/share/atom/
+
 Articles / Manuals
 ------------------
 
