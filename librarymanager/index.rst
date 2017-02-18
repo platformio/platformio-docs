@@ -50,7 +50,7 @@ You can use library ID, Name or even repository URL. For example,
     13
     PubSubClient
     ArduinoJson@~5.6,!=5.4
-    https://github.com/gioblu/PJON.git@v2.0
+    https://github.com/gioblu/PJON.git#v2.0
     https://github.com/me-no-dev/ESPAsyncTCP.git
     https://github.com/adafruit/DHT-sensor-library/archive/master.zip
 
