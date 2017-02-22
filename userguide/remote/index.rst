@@ -15,11 +15,11 @@ PIO Remote™ CLI
 ===============
 
 :ref:`pio_remote` allows you to work remotely with devices from
-*Anywhere In The World*. No matter where are you now! Run small and
-cross-platform :ref:`cmd_remote_agent` on a host machine and you will be able to
-list active devices (wireless + wired), to upload firmware **Over-The-Air (OTA)**,
-to process remote unit tests, or to start remote debugging session via OTA
-Serial Port Monitor.
+*Anywhere In The World*. No matter where are you now! Run a small and
+cross-platform :ref:`cmd_remote_agent` on a remote machine and you are able to
+list active devices (wireless + wired), to upload firmware (program),
+to process remote unit tests, or to start remote debugging session via
+**Remote Serial Port Monitor**.
 
 Using :ref:`pio_remote` you can share your devices with friends or team. In
 combination with Cloud IDE, you can create awesome things at any time when

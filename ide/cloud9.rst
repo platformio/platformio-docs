@@ -30,8 +30,8 @@ server output, and Run apps easily with the built-in Terminal and Runners.
 
     1. Please make sure to read :ref:`pio_remote` guide first.
     2. You need :ref:`cmd_account` if you don't have it. Registration is FREE.
-    3. You should have a running :ref:`cmd_remote_agent` on a host machine
-       where hardware devices are connected or visible for remote operations.
+    3. You should have a running :ref:`cmd_remote_agent` on a remote machine
+       where hardware devices are connected or accessible for remote operations.
 
 Demo
 ----
@@ -110,11 +110,11 @@ Let's create our first PlatformIO-based Cloud9 Project
 3.  If you prefer to work with :ref:`core` CLI, then you can process project
     using Cloud IDE Terminal and the next commands:
 
-    * :ref:`cmd_run` - build project
+    * :ref:`cmd_run` - build project locally (using Cloud IDE's virtual machine)
     * :ref:`pio run -t clean <cmd_run>` - clean project
-    * :ref:`pio remote run -t upload <cmd_remote_run>` - upload firmware Over-The-Air
-    * :ref:`cmd_remote_device_list` - list available devices (OTA Device Manager)
-    * :ref:`cmd_remote_device_monitor` - OTA Serial Port Monitor
+    * :ref:`pio remote run -t upload <cmd_remote_run>` - upload firmware (program) to a remote device
+    * :ref:`cmd_remote_device_list` - list available remote devices
+    * :ref:`cmd_remote_device_monitor` - Remote Serial Port Monitor
 
     If you are interested in better integration with Cloud9 and GUI, please
     read guide below where we will explain how to create custom Build System
@@ -141,14 +141,14 @@ and replace all content with the next:
 Save new Build System and give a name ``PIOBuilder``. Now, you can select it
 as default Build System using ``Menu: Run > Build System > PIOBuilder``.
 
-OTA Device Manager
-------------------
+Remote Device Manager
+---------------------
 
-Over-The-Air (OTA) Device Manager works in pair with :ref:`pio_remote`.
+Remote Device Manager works in pair with :ref:`pio_remote`.
 You can list remote devices that are connected to host machine where
 :ref:`cmd_remote_agent` is started or are visible for it.
 
-Let's create New Run Configuration (shortcut) that will be used for OTA Manager.
+Let's create New Run Configuration (shortcut) that will be used for Remote Device Manager.
 Please click on ``Menu: Run > Run Configurations > Manage...``, then
 "Add New Config" and specify the next values:
 
@@ -160,13 +160,13 @@ Please click on ``Menu: Run > Run Configurations > Manage...``, then
 
 .. _ide_cloud9_ota_updates:
 
-OTA Firmware Uploading
-----------------------
+Remote Firmware Uploading
+-------------------------
 
-Over-The-Air (OTA) Firmware Uploading works in pair with :ref:`pio_remote`.
-You can deploy firmware to any devices which are visible for :ref:`cmd_remote_agent`.
+Remote Firmware Uploading works in pair with :ref:`pio_remote`.
+You can deploy firmware (program) to any devices which are visible for :ref:`cmd_remote_agent`.
 
-Let's create New Run Configuration (shortcut) that will be used for OTA Uploads.
+Let's create New Run Configuration (shortcut) that will be used for Remote Firmware Uploading.
 Please click on ``Menu: Run > Run Configurations > Manage...``, then
 "Add New Config" and specify the next values:
 
@@ -176,15 +176,15 @@ Please click on ``Menu: Run > Run Configurations > Manage...``, then
 
 .. image:: ../_static/ide/cloud9/ide-cloud9-runner-ota-uploading.png
 
-OTA Serial Port Monitor
------------------------
+Remote Serial Port Monitor
+--------------------------
 
-Over-The-Air (OTA) Serial Port Monitor works in pair with :ref:`pio_remote`.
+Remote Serial Port Monitor works in pair with :ref:`pio_remote`.
 You can read or send data to any device that is connected to host machine
 where :ref:`cmd_remote_agent` is started.
 To list active agents please use this command :ref:`cmd_remote_agent_list`.
 
-Let's create New Run Configuration (shortcut) that will be used for OTA Serial Port Monitor.
+Let's create New Run Configuration (shortcut) that will be used for Remote Serial Port Monitor.
 Please click on ``Menu: Run > Run Configurations > Manage...``, then
 "Add New Config" and specify the next values:
 

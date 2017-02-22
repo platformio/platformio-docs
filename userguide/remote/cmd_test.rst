@@ -103,7 +103,7 @@ to current working directory (``CWD``).
     -r, --force-remote
 
 By default, :ref:`pio_remote` processes project on a host machine and deploy
-final testing firmware Over-The-Air (OTA) to remote device (embedded board).
+final testing firmware (program) to remote device (embedded board).
 
 If you need to process project on remote machine, please use
 :option:`platformio remote test --force-remote` option. In this case,

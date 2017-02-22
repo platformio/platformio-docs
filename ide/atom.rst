@@ -73,13 +73,13 @@ on the "Customize" stage, otherwise ``python`` command will not be available.
 
 .. _ide_atom_installation_clang:
 
-2. Clang for Intelligent Code Autocompletion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2. Clang for Intelligent Code Completion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO IDE uses `clang <http://clang.llvm.org>`_ for the Intelligent Code
-Autocompletion. To check that ``clang`` is available in your system, please
+PlatformIO IDE uses `Clang <http://clang.llvm.org>`_ for the Intelligent Code
+Completion. To check that ``clang`` is available in your system, please
 open Terminal and run ``clang --version``. If ``clang`` is not installed,
-then install it and restart Atom:
+then **install it and restart Atom**:
 
 - **Mac OS X**: `Install the latest Xcode <https://developer.apple.com/xcode/download/>`_
   along with the latest Command Line Tools
@@ -326,10 +326,10 @@ Building / Uploading / Targets
 
 More options ``Menu: PlatformIO > Settings > Build``.
 
-Intelligent Code Autocompletion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Intelligent Code Completion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO IDE uses `clang <http://clang.llvm.org>`_ for the Intelligent Code Autocompletion.
+PlatformIO IDE uses `clang <http://clang.llvm.org>`_ for the Intelligent Code Completion.
 To install it or check if it is already installed, please follow to step
 :ref:`ide_atom_installation_clang` from Installation guide.
 

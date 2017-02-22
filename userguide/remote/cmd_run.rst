@@ -14,7 +14,7 @@
 platformio remote run
 =====================
 
-**Over-The-Air (OTA) Firmware Updates**
+**Remote Firmware Updates**
 
 .. contents::
 
@@ -34,9 +34,9 @@ Description
 
 Process remotely environments which are defined in :ref:`projectconf` file.
 By default, :ref:`pio_remote` builds project on a host machine and deploy
-final firmware Over-The-Air (OTA) to remote device (embedded board).
+final firmware (program) to a remote device (embedded board).
 
-If you need to process project on remote machine, please use
+If you need to process project on a remote machine, please use
 :option:`platformio remote run --force-remote` option. In this case,
 :ref:`pio_remote` will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.
@@ -104,7 +104,7 @@ or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
     -r, --force-remote
 
 By default, :ref:`pio_remote` builds project on a host machine and deploy
-final firmware Over-The-Air (OTA) to remote device (embedded board).
+final firmware (program) to remote device (embedded board).
 
 If you need to process project on remote machine, please use
 :option:`platformio remote run --force-remote` option. In this case,
