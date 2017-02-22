@@ -27,21 +27,21 @@ Installation
 **PlatformIO Core** is written in `Python <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
 computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
-`BeagleBone <http://beagleboard.org>`_,
-`CubieBoard <http://cubieboard.org>`_).
+`BeagleBone <http://beagleboard.org>`_, `CubieBoard <http://cubieboard.org>`_,
+`Samsung ARTIK <https://www.artik.io>`_, etc.).
 
 .. contents::
 
 System requirements
 -------------------
 
-:Operating System: Mac OS X, Linux (+ARM) or Windows
+:Operating System: macOS, Linux (+ARM) or Windows
 :Python Interpreter:
 
     Python 2.7 is required. PlatformIO **does not** support Python 3.
 
     .. attention::
-        **Windows Users**: Please `Download the latest Python 2.7.x
+        **Windows Users**: Please `Download the latest Python 2.7
         <https://www.python.org/downloads/>`_ and install it.
         **DON'T FORGET** to select ``Add python.exe to Path`` feature on the
         "Customize" stage, otherwise Python Package Manager ``pip`` command
@@ -53,7 +53,7 @@ System requirements
 
     All commands below should be executed in
     `Command-line <http://en.wikipedia.org/wiki/Command-line_interface>`_
-    application (Terminal). For Mac OS X and Linux OS - *Terminal* application,
+    application (Terminal). For macOS and Linux OS - *Terminal* application,
     for Windows OS – ``cmd.exe`` application.
 
 
@@ -147,11 +147,11 @@ On *Windows OS* it may look like:
     C:\Python27\python.exe get-platformio.py
 
 
-Mac OS X Homebrew
-~~~~~~~~~~~~~~~~~
+macOS Homebrew
+~~~~~~~~~~~~~~
 
 The latest stable version of PlatformIO may be installed or upgraded via
-Mac OS X Homebrew Packages Manager (`brew <http://brew.sh/>`_) as follows:
+macOS Homebrew Packages Manager (`brew <http://brew.sh/>`_) as follows:
 
 .. code-block:: bash
 

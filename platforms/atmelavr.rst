@@ -1132,7 +1132,7 @@ SparkFun
     * - ``sparkfun_digitalsandbox``
       - `SparkFun Digital Sandbox <https://www.sparkfun.com/products/12651>`_
       - ATMEGA328P
-      - 16 MHz
+      - 8 MHz
       - 32 Kb
       - 2 Kb
 
@@ -1185,10 +1185,31 @@ SparkFun
       - 32 Kb
       - 2.5 Kb
 
+    * - ``sparkfun_qduinomini``
+      - `SparkFun Qduino Mini <https://www.sparkfun.com/products/13614>`_
+      - ATMEGA32U4
+      - 8 MHz
+      - 32 Kb
+      - 2.5 Kb
+
     * - ``sparkfun_redboard``
       - `SparkFun RedBoard <https://www.sparkfun.com/products/12757>`_
       - ATMEGA328P
       - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+    * - ``sparkfun_satmega128rfa1``
+      - `SparkFun ATmega128RFA1 Dev Board <https://www.sparkfun.com/products/11197>`_
+      - ATMEGA128RFA1
+      - 16 MHz
+      - 16 Kb
+      - 124 Kb
+
+    * - ``sparkfun_serial7seg``
+      - `SparkFun Serial 7-Segment Display <https://www.sparkfun.com/products/11441>`_
+      - ATMEGA328P
+      - 8 MHz
       - 32 Kb
       - 2 Kb
 
@@ -1198,6 +1219,26 @@ SparkFun
       - 16 MHz
       - 32 Kb
       - 2 Kb
+
+The Things Network
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``the_things_uno``
+      - `The Things Uno <https://shop.thethingsnetwork.com/index.php/product/the-things-uno/>`_
+      - ATMEGA32U4
+      - 16 MHz
+      - 32 Kb
+      - 2.5 Kb
 
 TinyCircuits
 ~~~~~~~~~~~~

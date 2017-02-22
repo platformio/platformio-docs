@@ -23,14 +23,15 @@ PlatformIO Core
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * Integration components (:ref:`ide` and :ref:`ci`).
 
-**PlatformIO Core** is written in `Python <https://www.python.org/downloads/>`_
+**PlatformIO Core** is written in `Python 2.7 <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
 computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `BeagleBone <http://beagleboard.org>`_,
-`CubieBoard <http://cubieboard.org>`_).
+`CubieBoard <http://cubieboard.org>`_,
+`Samsung ARTIK <https://www.artik.io>`_, etc.).
 
 
-**PlatformIO Core** provides rich and documented Command Line Interface (CLI).
+**PlatformIO Core** provides a rich and documented Command Line Interface (CLI).
 The other PlatformIO-based software and IDEs are based on
 **PlatformIO Core CLI**, such as :ref:`ide_atom`. In other words, they wrap
 **PlatformIO Core** with own GUI.

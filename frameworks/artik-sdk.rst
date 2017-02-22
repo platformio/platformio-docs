@@ -55,19 +55,26 @@ Samsung
       - `Samsung ARTIK 1020 <https://www.artik.io>`_
       - EXYNOS5422
       - 1500 MHz
-      - 2097152 Kb
+      - 16777216 Kb
       - 2097152 Kb
 
     * - ``artik_520``
       - `Samsung ARTIK 520 <https://www.artik.io>`_
       - EXYNOS3250
       - 1000 MHz
+      - 4194304 Kb
       - 524288 Kb
+
+    * - ``artik_530``
+      - `Samsung ARTIK 530 <https://www.artik.io>`_
+      - S5P4418
+      - 1200 MHz
+      - 4194304 Kb
       - 524288 Kb
 
     * - ``artik_710``
       - `Samsung ARTIK 710 <https://www.artik.io>`_
       - S5P6818
       - 1400 MHz
-      - 1048576 Kb
+      - 4194304 Kb
       - 1048576 Kb
