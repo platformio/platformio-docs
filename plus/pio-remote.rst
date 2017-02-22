@@ -85,7 +85,7 @@ Installation
 |PIORemote| is built into :ref:`ide_atom`. Please open PlatformIO IDE Terminal
 and run ``pio remote --help`` command for usage (see :ref:`cmd_remote`).
 
-If you do not have :ref:`ide_atom`, or use :ref:`ide_cloud or a card-sized PC
+If you do not have :ref:`ide_atom`, or use :ref:`ide_cloud` or a card-sized PC
 (Raspberry Pi, BeagleBoard, etc.), please install :ref:`core`.
 
 Quick Start
