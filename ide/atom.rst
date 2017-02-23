@@ -518,9 +518,9 @@ Run these commands in system Terminal
     rm /usr/local/bin/apm
     rm -rf /Applications/Atom.app
     rm ~/Library/Preferences/com.github.atom.plist
-    rm "~/Library/Application Support/com.github.atom.ShipIt"
-    rm -rf "~/Library/Application Support/Atom"
-    rm -rf "~/Library/Saved Application State/com.github.atom.savedState"
+    rm ~/Library/Application\ Support/com.github.atom.ShipIt
+    rm -rf ~/Library/Application\ Support/Atom
+    rm -rf ~/Library/Saved\ Application\ State/com.github.atom.savedState
     rm -rf ~/Library/Caches/com.github.atom
     rm -rf ~/Library/Caches/Atom
 
