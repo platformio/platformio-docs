@@ -23,6 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2017
 ^^^^
 
+* Feb 23, 2017 - **Bastiaan Visee** - `Using PlatformIO for your Arduino projects <http://lichtsignaal.nl/2017/02/23/using-platformio-for-your-arduino-projects/>`_
 * Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
 
 2016
