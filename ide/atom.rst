@@ -107,18 +107,12 @@ then **install it and restart Atom**:
 3. IDE Installation
 ~~~~~~~~~~~~~~~~~~~
 
-.. note::
-    If you don't have Atom installed yet, we propose to download
-    `PlatformIO IDE for Atom bundle <http://platformio.org/platformio-ide>`_
-    with built-in auto installer (optional).
+- `Download <https://atom.io>`_ and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it
+- **Open** Atom Package Manager and **Install** ``platformio-ide`` package (auto installer)
 
-- Download and install the `latest official Atom text editor <https://atom.io>`_.
-- Open Atom Package Manager and install `platformio-ide <https://atom.io/packages/platformio-ide>`_
-   Atom package (be patient and let the installation complete)
-
-    - **Mac OS X**: ``Menu: Atom > Preferences > Install``
-    - **Windows**: ``Menu: File > Settings > Install``
-    - **Linux**: ``Menu: Edit > Preferences > Install``
+  - **Mac OS X**, ``Menu: Atom > Preferences > Install``
+  - **Windows**, ``Menu: File > Settings > Install``
+  - **Linux**, ``Menu: Edit > Preferences > Install``
 
 .. image:: ../_static/ide-atom-platformio-install.png
 
