@@ -88,6 +88,8 @@ and run ``pio remote --help`` command for usage (see :ref:`cmd_remote`).
 If you do not have :ref:`ide_atom`, or use :ref:`ide_cloud` or a card-sized PC
 (Raspberry Pi, BeagleBoard, etc.), please install :ref:`core`.
 
+.. _pio_remote_quickstart:
+
 Quick Start
 -----------
 
@@ -114,8 +116,14 @@ Quick Start
     instead of using :ref:`cmd_account_login` command.
 
 .. note::
+    In case with :ref:`ide_cloud`, your browser with Cloud IDE's VM is a
+    "host machine". The machine where devices are connected physically (your
+    real PC) is called "remote machine" in this case. You should run
+    |PIORemote| Agent here (not in Cloud IDE's Terminal).
+
+.. note::
     Please use local IP as "upload port" when device is not connected directly
-    to remote machine where |PIORemote| Agent is started but supports natively
+    to a remote machine where |PIORemote| Agent is started but supports natively
     Over-the-Air (OTA) updates. For example, :ref:`platform_espressif8266` and
     :ref:`platform_espressif_ota`. In this case, the final command for remote
     OTA update will look as ``platformio remote run -t upload --upload-port 192.168.0.255``
