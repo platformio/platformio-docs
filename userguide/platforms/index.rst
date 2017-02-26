@@ -26,6 +26,7 @@ To print all available commands and options use:
 .. toctree::
     :maxdepth: 2
 
+    cmd_frameworks
     cmd_install
     cmd_list
     cmd_search
