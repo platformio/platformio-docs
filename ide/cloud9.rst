@@ -55,7 +55,7 @@ Integration
 
 .. code-block:: bash
 
-    sudo python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
+    sudo python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
 
 .. image:: ../_static/ide/cloud9/ide-cloud9-install-pio-cli.png
 
