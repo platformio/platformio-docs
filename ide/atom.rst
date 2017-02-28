@@ -350,8 +350,8 @@ automatically created and preconfigured when you initialize project using
 
 
 .. error::
-    If you have error like ``linter-gcc: Executable not found`` and
-    ``"***/.platformio/packages/toolchain-atmelavr/bin/avr-g++" not found``
+    If you have an error like ``linter-gcc: Executable not found`` and
+    ``"***/.platformio/packages/toolchain-atmelavr/bin/avr-g++" not found``,
     please ``Menu: PlatformIO > Initialize new PlatformIO Project or update existing...``.
 
 Install Shell Commands
@@ -445,6 +445,12 @@ To force Smart Code Linter to use Arduino files as C++ please
 
 2. Perform all steps from :ref:`ide_atom_knownissues_sclarduino_manually`
    (without renaming to ``.cpp``).
+
+.. warning::
+  Please do not modify other flags here. They will be removed on a next
+  "Project Rebuild C/C++ Index" stage.
+  Please use :ref:`projectconf_build_flags` for :ref:`projectconf` instead.
+
 
 Arch Linux: PlatformIO IDE Terminal issue
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
