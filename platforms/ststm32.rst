@@ -26,31 +26,31 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinoststm32``
-      - `Arduino Wiring-based Framework (STM32 Core) <https://github.com/rogerclarkmelbourne/Arduino_STM32>`_
+    * - `framework-arduinoststm32 <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
+      - Arduino Wiring-based Framework (STM32 Core)
 
-    * - ``framework-cmsis``
-      - `Vendor-independent hardware abstraction layer for the Cortex-M processor series <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php>`_
+    * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php>`__
+      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
-    * - ``framework-libopencm3``
-      - `libOpenCM3 Framework <http://www.libopencm3.org/>`_
+    * - `framework-libopencm3 <http://www.libopencm3.org/>`__
+      - libOpenCM3 Framework
 
-    * - ``framework-mbed``
-      - `mbed Framework <http://mbed.org>`_
+    * - `framework-mbed <http://mbed.org>`__
+      - mbed Framework
 
-    * - ``framework-spl``
-      - `Standard Peripheral Library for STM32 MCUs <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890>`_
+    * - `framework-spl <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890>`__
+      - Standard Peripheral Library for STM32 MCUs
 
-    * - ``tool-stlink``
-      - `ST-Link <https://github.com/texane/stlink>`_
+    * - `tool-stlink <https://github.com/texane/stlink>`__
+      - ST-Link
 
-    * - ``tool-stm32duino``
-      - `STM32Duino Tools <https://github.com/rogerclarkmelbourne/Arduino_STM32>`_
+    * - `tool-stm32duino <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
+      - STM32Duino Tools
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:

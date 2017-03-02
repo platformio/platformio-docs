@@ -26,28 +26,28 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinoespressif8266``
-      - `Arduino Wiring-based Framework (ESP8266 Core) <https://github.com/esp8266/Arduino>`_
+    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino>`__
+      - Arduino Wiring-based Framework (ESP8266 Core)
 
-    * - ``framework-simba``
-      - `Simba Framework <https://github.com/eerimoq/simba>`_
+    * - `framework-simba <https://github.com/eerimoq/simba>`__
+      - Simba Framework
 
-    * - ``sdk-esp8266``
-      - `ESP8266 SDK <http://bbs.espressif.com>`_
+    * - `sdk-esp8266 <http://bbs.espressif.com>`__
+      - ESP8266 SDK
 
-    * - ``tool-espotapy``
-      - `ESP8266 OTA utility <https://github.com/esp8266/Arduino/blob/master/tools/espota.py>`_
+    * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py>`__
+      - ESP8266 OTA utility
 
-    * - ``tool-esptool``
-      - `esptool-ck <https://github.com/igrr/esptool-ck>`_
+    * - `tool-esptool <https://github.com/igrr/esptool-ck>`__
+      - esptool-ck
 
-    * - ``tool-mkspiffs``
-      - `Tool to build and unpack SPIFFS images <https://github.com/igrr/mkspiffs>`_
+    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs>`__
+      - Tool to build and unpack SPIFFS images
 
-    * - ``toolchain-xtensa``
-      - `xtensa-gcc <https://github.com/jcmvbkbc/gcc-xtensa>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa>`__
+      - xtensa-gcc
 
 .. warning::
     **Linux Users**:

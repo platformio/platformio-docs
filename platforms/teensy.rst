@@ -26,22 +26,22 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinoteensy``
-      - `Arduino Wiring-based Framework <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinoteensy <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework
 
-    * - ``framework-mbed``
-      - `mbed Framework <http://mbed.org>`_
+    * - `framework-mbed <http://mbed.org>`__
+      - mbed Framework
 
-    * - ``tool-teensy``
-      - `Teensy Loader <https://www.pjrc.com/teensy/loader.html>`_
+    * - `tool-teensy <https://www.pjrc.com/teensy/loader.html>`__
+      - Teensy Loader
 
-    * - ``toolchain-atmelavr``
-      - `avr-gcc <https://gcc.gnu.org/wiki/avr-gcc>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc>`__
+      - avr-gcc
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:

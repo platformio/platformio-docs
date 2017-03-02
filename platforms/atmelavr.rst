@@ -26,22 +26,22 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinoavr``
-      - `Arduino Wiring-based Framework (AVR Core, 1.6) <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinoavr <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework (AVR Core, 1.6)
 
-    * - ``framework-simba``
-      - `Simba Framework <https://github.com/eerimoq/simba>`_
+    * - `framework-simba <https://github.com/eerimoq/simba>`__
+      - Simba Framework
 
-    * - ``tool-avrdude``
-      - `AVRDUDE <http://www.nongnu.org/avrdude/>`_
+    * - `tool-avrdude <http://www.nongnu.org/avrdude/>`__
+      - AVRDUDE
 
-    * - ``tool-micronucleus``
-      - `Micronucleus <https://github.com/micronucleus/micronucleus>`_
+    * - `tool-micronucleus <https://github.com/micronucleus/micronucleus>`__
+      - Micronucleus
 
-    * - ``toolchain-atmelavr``
-      - `avr-gcc <https://gcc.gnu.org/wiki/avr-gcc>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc>`__
+      - avr-gcc
 
 .. warning::
     **Linux Users**:

@@ -26,16 +26,16 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinointel``
-      - `Arduino Wiring-based Framework (Intel ARC Core) <https://github.com/01org/corelibs-arduino101>`_
+    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101>`__
+      - Arduino Wiring-based Framework (Intel ARC Core)
 
-    * - ``tool-arduino101load``
-      - `Genuino101 uploader <https://github.com/01org/intel-arduino-tools>`_
+    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools>`__
+      - Genuino101 uploader
 
-    * - ``toolchain-intelarc32``
-      - `GCC for Intel ARC <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain>`_
+    * - `toolchain-intelarc32 <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain>`__
+      - GCC for Intel ARC
 
 .. warning::
     **Linux Users**:

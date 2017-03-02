@@ -26,19 +26,19 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinomsp430``
-      - `Arduino Wiring-based Framework (MSP430 Core) <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinomsp430 <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework (MSP430 Core)
 
-    * - ``framework-energiamsp430``
-      - `Energia Wiring-based Framework (MSP430 Core) <http://energia.nu/reference/>`_
+    * - `framework-energiamsp430 <http://energia.nu/reference/>`__
+      - Energia Wiring-based Framework (MSP430 Core)
 
-    * - ``tool-mspdebug``
-      - `MSPDebug <http://mspdebug.sourceforge.net/>`_
+    * - `tool-mspdebug <http://mspdebug.sourceforge.net/>`__
+      - MSPDebug
 
-    * - ``toolchain-timsp430``
-      - `msp-gcc <http://sourceforge.net/projects/mspgcc/>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-timsp430 <http://sourceforge.net/projects/mspgcc/>`__
+      - msp-gcc
 
 .. warning::
     **Linux Users**:

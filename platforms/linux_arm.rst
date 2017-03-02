@@ -26,16 +26,16 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-artik-sdk``
-      - `ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms <http://www.artik.io>`_
+    * - `framework-artik-sdk <http://www.artik.io>`__
+      - ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms
 
-    * - ``framework-wiringpi``
-      - `GPIO Interface library for the Raspberry Pi <http://wiringpi.com>`_
+    * - `framework-wiringpi <http://wiringpi.com>`__
+      - GPIO Interface library for the Raspberry Pi
 
-    * - ``toolchain-gccarmlinuxgnueabi``
-      - `GCC for Linux ARM GNU EABI <https://gcc.gnu.org>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmlinuxgnueabi <https://gcc.gnu.org>`__
+      - GCC for Linux ARM GNU EABI
 
 Frameworks
 ----------

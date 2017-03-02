@@ -26,28 +26,28 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinosam``
-      - `Arduino Wiring-based Framework (SAM Core, 1.6) <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinosam <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework (SAM Core, 1.6)
 
-    * - ``framework-mbed``
-      - `mbed Framework <http://mbed.org>`_
+    * - `framework-mbed <http://mbed.org>`__
+      - mbed Framework
 
-    * - ``framework-simba``
-      - `Simba Framework <https://github.com/eerimoq/simba>`_
+    * - `framework-simba <https://github.com/eerimoq/simba>`__
+      - Simba Framework
 
-    * - ``tool-avrdude``
-      - `AVRDUDE <http://www.nongnu.org/avrdude/>`_
+    * - `tool-avrdude <http://www.nongnu.org/avrdude/>`__
+      - AVRDUDE
 
-    * - ``tool-bossac``
-      - `BOSSA CLI <https://sourceforge.net/projects/b-o-s-s-a/>`_
+    * - `tool-bossac <https://sourceforge.net/projects/b-o-s-s-a/>`__
+      - BOSSA CLI
 
-    * - ``tool-openocd``
-      - `OpenOCD <http://openocd.org>`_
+    * - `tool-openocd <http://openocd.org>`__
+      - OpenOCD
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:

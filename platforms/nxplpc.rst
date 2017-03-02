@@ -26,13 +26,13 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-mbed``
-      - `mbed Framework <http://mbed.org>`_
+    * - `framework-mbed <http://mbed.org>`__
+      - mbed Framework
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:

@@ -26,25 +26,25 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinoespressif32``
-      - `Arduino Wiring-based Framework (ESP32 Core) <https://github.com/espressif/arduino-esp32>`_
+    * - `framework-arduinoespressif32 <https://github.com/espressif/arduino-esp32>`__
+      - Arduino Wiring-based Framework (ESP32 Core)
 
-    * - ``framework-espidf``
-      - `Espressif IoT Development Framework <https://github.com/espressif/esp-idf>`_
+    * - `framework-espidf <https://github.com/espressif/esp-idf>`__
+      - Espressif IoT Development Framework
 
-    * - ``framework-pumbaa``
-      - `Pumbaa Framework <https://github.com/eerimoq/pumbaa>`_
+    * - `framework-pumbaa <https://github.com/eerimoq/pumbaa>`__
+      - Pumbaa Framework
 
-    * - ``framework-simba``
-      - `Simba Framework <https://github.com/eerimoq/simba>`_
+    * - `framework-simba <https://github.com/eerimoq/simba>`__
+      - Simba Framework
 
-    * - ``tool-esptoolpy``
-      - `Espressif ROM Bootloader utility <https://github.com/espressif/esptool>`_
+    * - `tool-esptoolpy <https://github.com/espressif/esptool>`__
+      - Espressif ROM Bootloader utility
 
-    * - ``toolchain-xtensa32``
-      - `xtensa32-gcc <https://github.com/espressif/esp-idf>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf>`__
+      - xtensa32-gcc
 
 .. warning::
     **Linux Users**:
