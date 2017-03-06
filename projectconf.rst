@@ -1005,6 +1005,22 @@ Advanced options
 ``extra_script``
 ^^^^^^^^^^^^^^^^
 
+.. warning::
+
+  This option is recommended for Advanced Users and requires Python language knowledges.
+
+  We highly recommended to take a look at :ref:`projectconf_dynamic_build_flags`
+  option where you can use any programming language. Also, this option is very
+  good if you need to apply changes to the project before building/uploading
+  process:
+
+  * Macro with the latest VCS revision/tag "on-the-fly"
+  * Generate dynamic headers (``*.h``)
+  * Process media content before generating SPIFFS image
+  * Make some changes to source code or related libraries
+
+  More details :ref:`projectconf_dynamic_build_flags`.
+
 .. contents::
     :local:
 
