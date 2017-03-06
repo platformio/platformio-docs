@@ -543,9 +543,9 @@ processes:
 This option can be set by global environment variable
 :envvar:`PLATFORMIO_BUILD_FLAGS`.
 
-Example:
+Examples:
 
-.. code-block::   ini
+.. code-block:: ini
 
     [env:specific_defines]
     build_flags = -DFOO -DBAR=1 -DFLOAT_VALUE=1.23457e+07
@@ -560,8 +560,29 @@ Example:
     build_flags = -Wl,-T/path/to/ld_script.ld
 
     [env:exec_command]
-    ; get VCS revision "on-the-fly"
+    build_flags = !cmd_or_path_to_script
+
+    ; Get VCS revision "on-the-fly"
+    [env:git_revision_macro]
+    ;
+    ; Unix
+    ;
     build_flags = !echo "-DPIO_SRC_REV="$(git rev-parse HEAD)
+
+    ;
+    ; Windows
+    ;
+
+    ; Note! You need to create a separate file named "print_git_rev.bat" and
+    ; place it near "platformio.ini".
+    ;
+    ; The content of "print_git_rev.bat" (2 lines, please remove ";" before each line):
+    ;
+    ; @echo off
+    ; FOR /F "tokens=1 delims=" %%A in ('git rev-parse HEAD') do echo -DPIO_SRC_REV=%%A
+
+
+    build_flags = !print_git_rev.bat
 
 
 For more detailed information about available flags/options go to:
