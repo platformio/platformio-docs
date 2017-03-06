@@ -543,7 +543,7 @@ processes:
 This option can be set by global environment variable
 :envvar:`PLATFORMIO_BUILD_FLAGS`.
 
-Examples:
+Example:
 
 .. code-block:: ini
 
@@ -559,31 +559,64 @@ Examples:
     [env:specific_ld_script]
     build_flags = -Wl,-T/path/to/ld_script.ld
 
-    [env:exec_command]
+
+.. _projectconf_dynamic_build_flags:
+
+Dynamic build flags
+'''''''''''''''''''
+
+PlatformIO Core allows to run external command/script which outputs build flags.
+PIO will automatically parse the output and append flags to a build environment.
+**You can use any shell or programming language.**
+
+This external command will be called on each :ref:`cmd_run` command before
+building/uploading process.
+
+Use Cases:
+
+ * Macro with the latest VCS revision/tag "on-the-fly"
+ * Generate dynamic headers (``*.h``)
+ * Process media content before generating SPIFFS image
+ * Make some changes to source code or related libraries
+
+Example:
+
+.. code-block:: ini
+
+    [env:generate_flags_with_external_command]
     build_flags = !cmd_or_path_to_script
 
-    ; Get VCS revision "on-the-fly"
+
+**Use Case: Get the latest GIT revision "on-the-fly"**
+
+*Unix*
+
+.. code-block:: ini
+
     [env:git_revision_macro]
-    ;
-    ; Unix
-    ;
     build_flags = !echo "-DPIO_SRC_REV="$(git rev-parse HEAD)
 
-    ;
-    ; Windows
-    ;
+*Windows*
 
-    ; Note! You need to create a separate file named "print_git_rev.bat" and
-    ; place it near "platformio.ini".
-    ;
-    ; The content of "print_git_rev.bat" (2 lines, please remove ";" before each line):
-    ;
-    ; @echo off
-    ; FOR /F "tokens=1 delims=" %%A in ('git rev-parse HEAD') do echo -DPIO_SRC_REV=%%A
+You need to create a separate file named ``print_git_rev.bat`` and place it
+near ``platformio.ini``.
 
+``platformio.ini``:
 
+.. code-block:: ini
+
+    [env:git_revision_macro]
     build_flags = !print_git_rev.bat
 
+``print_git_rev.bat``:
+
+.. code-block:: bat
+
+    @echo off
+    FOR /F "tokens=1 delims=" %%A in ('git rev-parse HEAD') do echo -DPIO_SRC_REV=%%A
+
+
+--------------
 
 For more detailed information about available flags/options go to:
 
