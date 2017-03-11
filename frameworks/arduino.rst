@@ -1108,6 +1108,13 @@ Generic ATTiny
       - 1 Kb
       - 0.0625 Kb
 
+    * - ``attiny2313``
+      - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313>`_
+      - ATTINY2313
+      - 8 MHz
+      - 2 Kb
+      - 0.125 Kb
+
     * - ``attiny24``
       - `Generic ATTiny24 <http://www.atmel.com/devices/ATTINY24.aspx>`_
       - ATTINY24
@@ -1121,6 +1128,13 @@ Generic ATTiny
       - 8 MHz
       - 2 Kb
       - 0.125 Kb
+
+    * - ``attiny4313``
+      - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313>`_
+      - ATTINY4313
+      - 8 MHz
+      - 4 Kb
+      - 0.25 Kb
 
     * - ``attiny44``
       - `Generic ATTiny44 <http://www.atmel.com/devices/ATTINY44.aspx>`_
