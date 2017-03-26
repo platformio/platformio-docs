@@ -43,3 +43,4 @@ Standalone IDE
     ide/sublimetext
     ide/vim
     ide/visualstudio
+    ide/vscode
