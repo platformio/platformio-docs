@@ -24,7 +24,7 @@ Installation
     (``pio``, ``platformio``) globally to your system via
     ``Menu: PlatformIO > Install Shell Commands``.
 
-**PlatformIO Core** is written in `Python <https://www.python.org/downloads/>`_
+**PlatformIO Core** is written in `Python 2.7 <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
 computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `BeagleBone <http://beagleboard.org>`_, `CubieBoard <http://cubieboard.org>`_,
@@ -35,7 +35,7 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 System requirements
 -------------------
 
-:Operating System: macOS, Linux (+ARM) or Windows
+:Operating System: Windows, macOS, Linux, FreeBSD, Linux ARMv6+
 :Python Interpreter:
 
     Python 2.7 is required. PlatformIO **does not** support Python 3.
@@ -117,14 +117,14 @@ To install or upgrade *PlatformIO* paste that at a *Terminal* prompt
 
 .. code-block:: bash
 
-    python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
+    python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
 
 
 Local Download (Mac / Linux / Windows)
 ''''''''''''''''''''''''''''''''''''''
 
 To install or upgrade *PlatformIO*, download (save as...)
-`get-platformio.py <https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py>`_
+`get-platformio.py <https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py>`_
 script. Then run the following (**MAY require** administrator access ``sudo``):
 
 .. code-block:: bash
