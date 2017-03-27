@@ -58,18 +58,18 @@ If you have already Atom installed, please install `PlatformIO IDE for Atom pack
     (``pio``, ``platformio``) globally to your system via
     ``Menu: PlatformIO > Install Shell Commands``.
 
-1. Python Interpreter
-~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO IDE is based on :ref:`core` which is written in
-`Python <https://www.python.org/downloads/>`_. Python is installed by default
-on the all popular OS except Windows.
+1. Atom package (auto-installer)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Windows Users**, please `Download the latest Python 2.7.x <https://www.python.org/downloads/>`_
-and install it. **DON'T FORGET** to select ``Add python.exe to Path`` feature
-on the "Customize" stage, otherwise ``python`` command will not be available.
+- `Download <https://atom.io>`_ and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it
+- **Open** Atom Package Manager and **Install** ``platformio-ide`` package (auto installer)
 
-.. image:: ../_static/python-installer-add-path.png
+  - **Mac OS X**, ``Menu: Atom > Preferences > Install``
+  - **Windows**, ``Menu: File > Settings > Install``
+  - **Linux**, ``Menu: Edit > Preferences > Install``
+
+.. image:: ../_static/ide-atom-platformio-install.png
 
 .. _ide_atom_installation_clang:
 
@@ -104,17 +104,6 @@ then **install it and restart Atom**:
     Code Linting does not work properly, please perform  ``Menu: PlatformIO >
     Rebuild C/C++ Project Index (Autocomplete, Linter)``
 
-3. IDE Installation
-~~~~~~~~~~~~~~~~~~~
-
-- `Download <https://atom.io>`_ and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it
-- **Open** Atom Package Manager and **Install** ``platformio-ide`` package (auto installer)
-
-  - **Mac OS X**, ``Menu: Atom > Preferences > Install``
-  - **Windows**, ``Menu: File > Settings > Install``
-  - **Linux**, ``Menu: Edit > Preferences > Install``
-
-.. image:: ../_static/ide-atom-platformio-install.png
 
 .. _atom_ide_quickstart:
 
