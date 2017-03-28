@@ -494,6 +494,11 @@ Windows
 2. Remove ``C:\Users\<user name>\.atom`` folder (settings, packages, etc...)
 3. Remove ``C:\Users\<user name>\AppData\Local\atom`` folder (application itself)
 4. Remove ``C:\Users\<user name>\AppData\Roaming\Atom`` folder (cache, etc.)
+5. Remove registry records using ``regedit``:
+
+   * HKEY_CLASSES_ROOT\\Directory\\Background\\shell
+   * HKEY_CLASSES_ROOT\\Directory\\shell
+   * HKEY_CLASSES_ROOT*\\shell
 
 macOS
 ~~~~~
