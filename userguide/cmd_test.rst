@@ -107,6 +107,30 @@ Skip building stage.
 Skip uploading stage
 
 .. option::
+    --no-reset
+
+Disable software reset via ``Serial.DTR/RST`` before test running. In this case,
+need to press "reset" button manually after firmware uploading.
+
+.. warning::
+  If board does not support software reset via ``Serial.DTR/RTS`` you
+  should add >2 seconds delay before ``UNITY_BEGIN()`.
+  We need that time to establish a ``Serial`` communication between host
+  machine and target device. See :ref:`unit_testing`.
+
+.. option::
+    --monitor-rts
+
+Set initial ``RTS`` line state for Serial Monitor (``0`` or ``1``),
+default ``1``. We use it to gather test results via Serial connection.
+
+.. option::
+    --monitor-dtr
+
+Set initial ``DTR`` line state for Serial Monitor (``0`` or ``1``),
+default ``1``. We use it to gather test results via Serial connection.
+
+.. option::
     -v, --verbose
 
 Shows detailed information when processing environments.

@@ -20,9 +20,17 @@ Articles about us
 
 Here are recent articles/reviews about PlatformIO:
 
+2017
+^^^^
+
+* Feb 23, 2017 - **Bastiaan Visee** - `Using PlatformIO for your Arduino projects <http://lichtsignaal.nl/2017/02/23/using-platformio-for-your-arduino-projects/>`_
+* Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
+
 2016
 ^^^^
 
+* Dec 13, 2016 - **Dr. Patrick Mineault** - `Multi-Arduino projects with PlatformIO <https://xcorr.net/2016/12/13/multi-arduino-projects-with-platformio/>`_
+* Dec 08, 2016 - **Cuong Tran Viet** - `PlatformIO is a solution <http://cuongtv.com/project/PlatformIO-is-the-solution-!!!/>`_
 * Nov 10, 2016 - **PiGreek** - `PlatformIO the new Arduino IDE ?! <https://pigreekblog.wordpress.com/2016/11/10/platformio-the-new-arduino-ide/>`_
 * Oct 31, 2016 - **Ricardo Quesada** - `Retro Challenge: announcing Commodore Home <https://retro.moe/2016/10/31/retro-challenge-commodore-home/>`_
 * Oct 3, 2016 - **Xose Pérez** - `Using the new Bean Loader CLI from PlatformIO <http://tinkerman.cat/using-new-bean-loader-cli-platformio/>`_

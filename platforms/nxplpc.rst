@@ -26,13 +26,13 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-mbed``
-      - `mbed Framework <http://mbed.org>`_
+    * - `framework-mbed <http://mbed.org>`__
+      - mbed Framework
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:
@@ -184,6 +184,13 @@ Micromint
       - 204 MHz
       - 8192 Kb
       - 264 Kb
+
+    * - ``lpc4337``
+      - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/>`_
+      - LPC4337
+      - 204 MHz
+      - 1024 Kb
+      - 136 Kb
 
 NGX Technologies
 ~~~~~~~~~~~~~~~~
@@ -456,3 +463,23 @@ u-blox
       - 96 MHz
       - 512 Kb
       - 64 Kb
+
+y5 design
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``lpc11u35_y5_mbug``
+      - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/>`_
+      - LPC11U35
+      - 48 MHz
+      - 64 Kb
+      - 10 Kb

@@ -26,22 +26,22 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinoavr``
-      - `Arduino Wiring-based Framework (AVR Core, 1.6) <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinoavr <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework (AVR Core, 1.6)
 
-    * - ``framework-simba``
-      - `Simba Framework <https://github.com/eerimoq/simba>`_
+    * - `framework-simba <https://github.com/eerimoq/simba>`__
+      - Simba Framework
 
-    * - ``tool-avrdude``
-      - `AVRDUDE <http://www.nongnu.org/avrdude/>`_
+    * - `tool-avrdude <http://www.nongnu.org/avrdude/>`__
+      - AVRDUDE
 
-    * - ``tool-micronucleus``
-      - `Micronucleus <https://github.com/micronucleus/micronucleus>`_
+    * - `tool-micronucleus <https://github.com/micronucleus/micronucleus>`__
+      - Micronucleus
 
-    * - ``toolchain-atmelavr``
-      - `avr-gcc <https://gcc.gnu.org/wiki/avr-gcc>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc>`__
+      - avr-gcc
 
 .. warning::
     **Linux Users**:
@@ -153,7 +153,7 @@ Adafruit
       - 2 Kb
 
     * - ``protrinket5ftdi``
-      - `Adafruit Pro Trinket 5V/16MHz (USB) <http://www.adafruit.com/products/2000>`_
+      - `Adafruit Pro Trinket 5V/16MHz (FTDI) <http://www.adafruit.com/products/2000>`_
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -538,26 +538,32 @@ Engduino
       - Flash
       - RAM
 
-    * - ``engduinov1``
-      - `Engduino 1 <http://www.engduino.org>`_
-      - ATMEGA32U4
-      - 8 MHz
-      - 32 Kb
-      - 2.5 Kb
-
-    * - ``engduinov2``
-      - `Engduino 2 <http://www.engduino.org>`_
-      - ATMEGA32U4
-      - 8 MHz
-      - 32 Kb
-      - 2.5 Kb
-
     * - ``engduinov3``
       - `Engduino 3 <http://www.engduino.org>`_
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
       - 2.5 Kb
+
+EnviroDIY
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mayfly``
+      - `EnviroDIY Mayfly <http://envirodiy.org/forums/>`_
+      - ATMEGA1284P
+      - 8 MHz
+      - 128 Kb
+      - 16 Kb
 
 Generic ATTiny
 ~~~~~~~~~~~~~~
@@ -579,6 +585,13 @@ Generic ATTiny
       - 1 Kb
       - 0.0625 Kb
 
+    * - ``attiny2313``
+      - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313>`_
+      - ATTINY2313
+      - 8 MHz
+      - 2 Kb
+      - 0.125 Kb
+
     * - ``attiny24``
       - `Generic ATTiny24 <http://www.atmel.com/devices/ATTINY24.aspx>`_
       - ATTINY24
@@ -592,6 +605,13 @@ Generic ATTiny
       - 8 MHz
       - 2 Kb
       - 0.125 Kb
+
+    * - ``attiny4313``
+      - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313>`_
+      - ATTINY4313
+      - 8 MHz
+      - 4 Kb
+      - 0.25 Kb
 
     * - ``attiny44``
       - `Generic ATTiny44 <http://www.atmel.com/devices/ATTINY44.aspx>`_
@@ -1126,7 +1146,7 @@ SparkFun
     * - ``sparkfun_digitalsandbox``
       - `SparkFun Digital Sandbox <https://www.sparkfun.com/products/12651>`_
       - ATMEGA328P
-      - 16 MHz
+      - 8 MHz
       - 32 Kb
       - 2 Kb
 
@@ -1179,10 +1199,31 @@ SparkFun
       - 32 Kb
       - 2.5 Kb
 
+    * - ``sparkfun_qduinomini``
+      - `SparkFun Qduino Mini <https://www.sparkfun.com/products/13614>`_
+      - ATMEGA32U4
+      - 8 MHz
+      - 32 Kb
+      - 2.5 Kb
+
     * - ``sparkfun_redboard``
       - `SparkFun RedBoard <https://www.sparkfun.com/products/12757>`_
       - ATMEGA328P
       - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+    * - ``sparkfun_satmega128rfa1``
+      - `SparkFun ATmega128RFA1 Dev Board <https://www.sparkfun.com/products/11197>`_
+      - ATMEGA128RFA1
+      - 16 MHz
+      - 16 Kb
+      - 124 Kb
+
+    * - ``sparkfun_serial7seg``
+      - `SparkFun Serial 7-Segment Display <https://www.sparkfun.com/products/11441>`_
+      - ATMEGA328P
+      - 8 MHz
       - 32 Kb
       - 2 Kb
 
@@ -1192,6 +1233,26 @@ SparkFun
       - 16 MHz
       - 32 Kb
       - 2 Kb
+
+The Things Network
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``the_things_uno``
+      - `The Things Uno <https://shop.thethingsnetwork.com/index.php/product/the-things-uno/>`_
+      - ATMEGA32U4
+      - 16 MHz
+      - 32 Kb
+      - 2.5 Kb
 
 TinyCircuits
 ~~~~~~~~~~~~

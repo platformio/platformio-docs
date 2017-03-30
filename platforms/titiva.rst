@@ -26,19 +26,19 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-energiativa``
-      - `Energia Wiring-based Framework (LM4F Core) <http://energia.nu/reference/>`_
+    * - `framework-energiativa <http://energia.nu/reference/>`__
+      - Energia Wiring-based Framework (LM4F Core)
 
-    * - ``framework-libopencm3``
-      - `libOpenCM3 Framework <http://www.libopencm3.org/>`_
+    * - `framework-libopencm3 <http://www.libopencm3.org/>`__
+      - libOpenCM3 Framework
 
-    * - ``tool-lm4flash``
-      - `Flash Programmer <http://www.ti.com/tool/lmflashprogrammer>`_
+    * - `tool-lm4flash <http://www.ti.com/tool/lmflashprogrammer>`__
+      - Flash Programmer
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:

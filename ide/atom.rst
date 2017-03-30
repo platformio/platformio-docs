@@ -18,8 +18,8 @@ PlatformIO IDE is the next-generation integrated development environment for IoT
 
 * Cross-platform build system without external dependencies to the OS software:
 
-    - 300+ embedded boards
-    - 15+ development platforms
+    - 350+ embedded boards
+    - 20+ development platforms
     - 10+ frameworks
 
 * C/C++ Intelligent Code Completion
@@ -58,28 +58,28 @@ If you have already Atom installed, please install `PlatformIO IDE for Atom pack
     (``pio``, ``platformio``) globally to your system via
     ``Menu: PlatformIO > Install Shell Commands``.
 
-1. Python Interpreter
-~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO IDE is based on :ref:`core` which is written in
-`Python <https://www.python.org/downloads/>`_. Python is installed by default
-on the all popular OS except Windows.
+1. Atom package (auto-installer)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Windows Users**, please `Download the latest Python 2.7.x <https://www.python.org/downloads/>`_
-and install it. **DON'T FORGET** to select ``Add python.exe to Path`` feature
-on the "Customize" stage, otherwise ``python`` command will not be available.
+- `Download <https://atom.io>`_ and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it
+- **Open** Atom Package Manager and **Install** ``platformio-ide`` package (auto installer)
 
-.. image:: ../_static/python-installer-add-path.png
+  - **Mac OS X**, ``Menu: Atom > Preferences > Install``
+  - **Windows**, ``Menu: File > Settings > Install``
+  - **Linux**, ``Menu: Edit > Preferences > Install``
+
+.. image:: ../_static/ide-atom-platformio-install.png
 
 .. _ide_atom_installation_clang:
 
-2. Clang for Intelligent Code Autocompletion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2. Clang for Intelligent Code Completion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO IDE uses `clang <http://clang.llvm.org>`_ for the Intelligent Code
-Autocompletion. To check that ``clang`` is available in your system, please
+PlatformIO IDE uses `Clang <http://clang.llvm.org>`_ for the Intelligent Code
+Completion. To check that ``clang`` is available in your system, please
 open Terminal and run ``clang --version``. If ``clang`` is not installed,
-then install it and restart Atom:
+then **install it and restart Atom**:
 
 - **Mac OS X**: `Install the latest Xcode <https://developer.apple.com/xcode/download/>`_
   along with the latest Command Line Tools
@@ -104,23 +104,6 @@ then install it and restart Atom:
     Code Linting does not work properly, please perform  ``Menu: PlatformIO >
     Rebuild C/C++ Project Index (Autocomplete, Linter)``
 
-3. IDE Installation
-~~~~~~~~~~~~~~~~~~~
-
-.. note::
-    If you don't have Atom installed yet, we propose to download
-    `PlatformIO IDE for Atom bundle <http://platformio.org/platformio-ide>`_
-    with built-in auto installer (optional).
-
-- Download and install the `latest official Atom text editor <https://atom.io>`_.
-- Open Atom Package Manager and install `platformio-ide <https://atom.io/packages/platformio-ide>`_
-   Atom package (be patient and let the installation complete)
-
-    - **Mac OS X**: ``Menu: Atom > Preferences > Install``
-    - **Windows**: ``Menu: File > Settings > Install``
-    - **Linux**: ``Menu: Edit > Preferences > Install``
-
-.. image:: ../_static/ide-atom-platformio-install.png
 
 .. _atom_ide_quickstart:
 
@@ -180,10 +163,15 @@ Copy the next source code to the just created file ``main.cpp``:
 
     /**
      * Blink
+     *
      * Turns on an LED on for one second,
      * then off for one second, repeatedly.
      */
     #include "Arduino.h"
+
+    #ifndef LED_BUILTIN
+    #define LED_BUILTIN 13
+    #endif
 
     void setup()
     {
@@ -195,10 +183,13 @@ Copy the next source code to the just created file ``main.cpp``:
     {
       // turn the LED on (HIGH is the voltage level)
       digitalWrite(LED_BUILTIN, HIGH);
+
       // wait for a second
       delay(1000);
+
       // turn the LED off by making the voltage LOW
       digitalWrite(LED_BUILTIN, LOW);
+
        // wait for a second
       delay(1000);
     }
@@ -318,10 +309,10 @@ Building / Uploading / Targets
 
 More options ``Menu: PlatformIO > Settings > Build``.
 
-Intelligent Code Autocompletion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Intelligent Code Completion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO IDE uses `clang <http://clang.llvm.org>`_ for the Intelligent Code Autocompletion.
+PlatformIO IDE uses `clang <http://clang.llvm.org>`_ for the Intelligent Code Completion.
 To install it or check if it is already installed, please follow to step
 :ref:`ide_atom_installation_clang` from Installation guide.
 
@@ -348,8 +339,8 @@ automatically created and preconfigured when you initialize project using
 
 
 .. error::
-    If you have error like ``linter-gcc: Executable not found`` and
-    ``"***/.platformio/packages/toolchain-atmelavr/bin/avr-g++" not found``
+    If you have an error like ``linter-gcc: Executable not found`` and
+    ``"***/.platformio/packages/toolchain-atmelavr/bin/avr-g++" not found``,
     please ``Menu: PlatformIO > Initialize new PlatformIO Project or update existing...``.
 
 Install Shell Commands
@@ -444,6 +435,12 @@ To force Smart Code Linter to use Arduino files as C++ please
 2. Perform all steps from :ref:`ide_atom_knownissues_sclarduino_manually`
    (without renaming to ``.cpp``).
 
+.. warning::
+  Please do not modify other flags here. They will be removed on a next
+  "Project Rebuild C/C++ Index" stage.
+  Please use :ref:`projectconf_build_flags` for :ref:`projectconf` instead.
+
+
 Arch Linux: PlatformIO IDE Terminal issue
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -485,9 +482,61 @@ Code Formatting
 You need to install `atom-beautify <https://atom.io/packages/atom-beautify>`_
 package and `C/C++ Uncrustify Code Beautifier <http://sourceforge.net/projects/uncrustify/>`_.
 
+Uninstall Atom with PlatformIO IDE
+----------------------------------
+
+Here's how to uninstall the PlatformIO IDE for multiple OS.
+
+Windows
+~~~~~~~
+
+1. Uninstall Atom using "Start > Control Panel > Programs and Features > Uninstall"
+2. Remove ``C:\Users\<user name>\.atom`` folder (settings, packages, etc...)
+3. Remove ``C:\Users\<user name>\AppData\Local\atom`` folder (application itself)
+4. Remove ``C:\Users\<user name>\AppData\Roaming\Atom`` folder (cache, etc.)
+5. Remove registry records using ``regedit``:
+
+   * HKEY_CLASSES_ROOT\\Directory\\Background\\shell
+   * HKEY_CLASSES_ROOT\\Directory\\shell
+   * HKEY_CLASSES_ROOT*\\shell
+
+macOS
+~~~~~
+
+Run these commands in system Terminal
+
+.. code::
+
+    rm -rf ~/.atom
+    rm /usr/local/bin/atom
+    rm /usr/local/bin/apm
+    rm -rf /Applications/Atom.app
+    rm ~/Library/Preferences/com.github.atom.plist
+    rm ~/Library/Application\ Support/com.github.atom.ShipIt
+    rm -rf ~/Library/Application\ Support/Atom
+    rm -rf ~/Library/Saved\ Application\ State/com.github.atom.savedState
+    rm -rf ~/Library/Caches/com.github.atom
+    rm -rf ~/Library/Caches/Atom
+
+Linux
+~~~~~
+
+Run these commands in system Terminal
+
+.. code::
+
+    rm /usr/local/bin/atom
+    rm /usr/local/bin/apm
+    rm -rf ~/atom
+    rm -rf ~/.atom
+    rm -rf ~/.config/Atom-Shell
+    rm -rf /usr/local/share/atom/
+
 Articles / Manuals
 ------------------
 
+* Dec 13, 2016 - **Dr. Patrick Mineault** - `Multi-Arduino projects with PlatformIO <https://xcorr.net/2016/12/13/multi-arduino-projects-with-platformio/>`_
+* Nov 10, 2016 - **PiGreek** - `PlatformIO the new Arduino IDE ?! <https://pigreekblog.wordpress.com/2016/11/10/platformio-the-new-arduino-ide/>`_
 * Aug 18, 2016 - **Primal Cortex** - `Installing PlatformIO on Arch Linux <https://primalcortex.wordpress.com/2016/08/18/platformio/>`_
 * Jul 26, 2016 - **Embedded Systems Laboratory** - `แนะนำการใช้งาน PlatformIO IDE สำหรับบอร์ด Arduino และ ESP8266 (Get started with PlatformIO IDE for Arduino board and ESP8266, Thai) <http://cpre.kmutnb.ac.th/esl/learning/index.php?article=intro_platformio-ide>`_
 * May 30, 2016 - **Ron Moerman** - `IoT Development with PlatformIO <https://electronicsworkbench.io/blog/platformio>`_

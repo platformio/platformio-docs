@@ -14,7 +14,7 @@
 platformio remote device
 ========================
 
-**Over-The-Air (OTA) Device Manager. Monitor remote device or list existing.**
+**Remote Device: monitor remote device or list existing.**
 
 .. contents::
 
@@ -107,7 +107,7 @@ Example
 platformio remote device monitor
 --------------------------------
 
-**Over-The-Air (OTA) Serial Port Monitor**
+**Remote Serial Port Monitor**
 
 Usage
 ~~~~~
@@ -125,8 +125,8 @@ Usage
 Description
 ~~~~~~~~~~~
 
-Connect to Serial Port of remote device Over-The-Air (OTA) and receive or
-send data in real time. :ref:`cmd_remote_agent` should be started before.
+Connect to Serial Port of remote device and receive or send data in real time.
+:ref:`cmd_remote_agent` should be started before on a remote machine.
 
 To control *monitor* please use these "hot keys":
 

@@ -28,7 +28,7 @@ Usage
 Description
 -----------
 
-Show details about the installed :ref:`platforms`
+Show details about :ref:`platforms`
 
 
 Examples

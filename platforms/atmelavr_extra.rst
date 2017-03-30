@@ -102,6 +102,39 @@ To upload EEPROM data (from EEMEM directive) you need to use ``uploadeep``
 target instead ``upload`` for :option:`platformio run --target` command.
 For example, ``platformio run -t uploadeep``.
 
+Fuses
+-----
+
+PlatformIO has built-in target named ``fuses`` for setting fuse bits. The
+default fuse bits are predefined in board manifest file in ``fuses`` section.
+For example, `Arduino Uno Fuses <https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json#L31>`_.
+
+To set fuse bits you need to use  target ``fuses`` for
+:option:`platformio run --target` command.
+
+Custom Fuses
+~~~~~~~~~~~~
+
+You can specify custom fuse bits. Please create custom
+:ref:`projectconf_extra_script` and override default "fuses" command:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:custom_fuses]
+    platform = atmelavr
+    extra_script = extra_script.py
+
+
+``extra_script.py``:
+
+.. code-block:: py
+
+    Import('env')
+    env.Replace(FUSESCMD="avrdude $UPLOADERFLAGS -e -Ulock:w:0x3F:m -Uhfuse:w:0xDE:m -Uefuse:w:0x05:m -Ulfuse:w:0xFF:m")
+
+
 Articles
 --------
 

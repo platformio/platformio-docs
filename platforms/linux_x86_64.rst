@@ -26,7 +26,7 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``toolchain-gcclinux64``
-      - `GCC for Linux x86_64 <https://gcc.gnu.org>`_
+    * - `toolchain-gcclinux64 <https://gcc.gnu.org>`__
+      - GCC for Linux x86_64

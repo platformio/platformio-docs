@@ -146,12 +146,12 @@ Enable software flow control, default ``Off``
 .. option::
     --rts
 
-Set initial ``RTS`` line state, default ``0``
+Set initial ``RTS`` line state (``0`` or ``1``), default ``1``
 
 .. option::
     --dtr
 
-Set initial ``DTR`` line state, default ``0``
+Set initial ``DTR`` line state (``0`` or ``1``), default ``1``
 
 .. option::
     --echo

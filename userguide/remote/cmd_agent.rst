@@ -21,7 +21,7 @@ opening incoming network ports.
 :ref:`pio_remote` supports wired and wireless devices. Wired devices should be
 connected physically to host machine where :ref:`cmd_remote_agent` is started,
 where wireless devices should be visible for :ref:`cmd_remote_agent` to provide
-network operations Over-The-Air.
+network operations Over-The-Air (OTA).
 
 .. contents::
 

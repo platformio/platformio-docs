@@ -22,14 +22,19 @@ will let you focus on building great applications quicker. All the features
 you will need for any coding task are built into Codeanywhere, making
 development more productive and fun.
 
+.. tip::
+  `QUESTIONS? Chat with us! <https://pioplus.com>`_
+  (chat button is located in the bottom right corner)
+
 .. contents::
 
 .. note::
 
     1. Please make sure to read :ref:`pio_remote` guide first.
     2. You need :ref:`cmd_account` if you don't have it. Registration is FREE.
-    3. You should have a running :ref:`cmd_remote_agent` on a host machine
-       where hardware devices are connected or visible for remote operations.
+    3. You should have a running :ref:`cmd_remote_agent` on a remote machine
+       where hardware devices are connected physically or accessible for the
+       remote operations. See **PIO Remote** :ref:`pio_remote_quickstart` for details.
 
 Demo
 ----
@@ -119,11 +124,11 @@ Let's create our first PlatformIO-based Codeanywhere Project
 3.  If you prefer to work with :ref:`core` CLI, then you can process project
     using Cloud IDE SSH Terminal and the next commands:
 
-    * :ref:`cmd_run` - build project
+    * :ref:`cmd_run` - build project locally (using Cloud IDE's virtual machine)
     * :ref:`pio run -t clean <cmd_run>` - clean project
-    * :ref:`pio remote run -t upload <cmd_remote_run>` - upload firmware Over-The-Air
-    * :ref:`cmd_remote_device_list` - list available devices (OTA Device Manager)
-    * :ref:`cmd_remote_device_monitor` - OTA Serial Port Monitor
+    * :ref:`pio remote run -t upload <cmd_remote_run>` - upload firmware (program) to a remote device
+    * :ref:`cmd_remote_device_list` - list available remote devices
+    * :ref:`cmd_remote_device_monitor` - Remote Serial Port Monitor
 
 4.  We recommend to hide "Hidden Files". You can do that via
     ``Cloud IDE Menu: View > Show Hidden Files``.
@@ -150,10 +155,10 @@ command to this button.
 
 .. image:: ../_static/ide/codeanywhere/ide-codeanywhere-project-config.png
 
-OTA Device Manager
-------------------
+Remote Device Manager
+---------------------
 
-Over-The-Air (OTA) Device Manager works in pair with :ref:`pio_remote`.
+Remote Device Manager works in pair with :ref:`pio_remote`.
 You can list remote devices that are connected to host machine where
 :ref:`cmd_remote_agent` is started or are visible for it.
 
@@ -166,10 +171,10 @@ You can list remote devices that are connected to host machine where
 
 .. image:: ../_static/ide/codeanywhere/ide-codeanywhere-ota-devices.png
 
-OTA Firmware Uploading
-----------------------
+Remote Firmware Uploading
+-------------------------
 
-Over-The-Air (OTA) Firmware Uploading works in pair with :ref:`pio_remote`.
+Remote Firmware Uploading works in pair with :ref:`pio_remote`.
 You can deploy firmware to any devices which are visible for :ref:`cmd_remote_agent`.
 
 1. Open Cloud IDE SSH Terminal
@@ -181,10 +186,10 @@ You can deploy firmware to any devices which are visible for :ref:`cmd_remote_ag
 
 .. image:: ../_static/ide/codeanywhere/ide-codeanywhere-ota-uploading.png
 
-OTA Serial Port Monitor
------------------------
+Remote Serial Port Monitor
+--------------------------
 
-Over-The-Air (OTA) Serial Port Monitor works in pair with :ref:`pio_remote`.
+Remote Serial Port Monitor works in pair with :ref:`pio_remote`.
 You can read or send data to any device that is connected to host machine
 where :ref:`cmd_remote_agent` is started.
 To list active agents please use this command :ref:`cmd_remote_agent_list`.
@@ -224,9 +229,9 @@ In this case, you need to use ``-d, --project-dir`` option for :ref:`cmd_run`
 or :ref:`cmd_remote_run` commands:
 
 * ``pio remote run --project-dir project-A -t upload`` build Project-A
-* ``pio remote run --project-dir project-A -t upload`` upload OTA Firmware
+* ``pio remote run --project-dir project-A -t upload`` remote firmware uploading
     using Project-A
-* ``pio remote run -d project-B -t upload`` upload OTA Firmware
+* ``pio remote run -d project-B -t upload`` remote firmware (program) uploading
     using Project-B
 
 See documentation for :option:`platformio remote run --project-dir` option.

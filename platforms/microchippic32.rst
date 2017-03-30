@@ -26,16 +26,16 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinomicrochippic32``
-      - `Arduino Wiring-based Framework (PIC32 Core) <https://github.com/chipKIT32/chipKIT-core>`_
+    * - `framework-arduinomicrochippic32 <https://github.com/chipKIT32/chipKIT-core>`__
+      - Arduino Wiring-based Framework (PIC32 Core)
 
-    * - ``tool-pic32prog``
-      - `pic32prog <https://github.com/sergev/pic32prog>`_
+    * - `tool-pic32prog <https://github.com/sergev/pic32prog>`__
+      - pic32prog
 
-    * - ``toolchain-microchippic32``
-      - `GCC for Microchip PIC32 <https://github.com/chipKIT32/chipKIT-cxx>`_
+    * - `toolchain-microchippic32 <https://github.com/chipKIT32/chipKIT-cxx>`__
+      - GCC for Microchip PIC32
 
 .. warning::
     **Linux Users**:

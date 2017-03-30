@@ -63,6 +63,19 @@ To enable ``zsh`` completion please run these commands:
     For permanent command completion you need to place commands above to
     ``~/.bashrc`` or ``~/.zshrc`` file.
 
+Install Python Interpreter
+--------------------------
+
+:ref:`core` is written in `Python <https://www.python.org/downloads/>`_ that
+is installed by default on the all popular OS except Windows.
+
+**Windows Users**, please `Download the latest Python 2.7.x <https://www.python.org/downloads/>`_
+and install it. **DON'T FORGET** to select ``Add python.exe to Path`` feature
+on the "Customize" stage, otherwise ``python`` command will not be available.
+
+.. image:: _static/python-installer-add-path.png
+
+
 PlatformIO IDE
 --------------
 

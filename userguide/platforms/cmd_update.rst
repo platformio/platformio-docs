@@ -41,13 +41,18 @@ Options
 .. option::
     -p, --only-packages
 
-Update only platform related packages. Do not update development platform
+Update only the platform related packages. Do not update development platform
 build scripts, board configs and etc.
 
 .. option::
     -c, --only-check
 
-Do not update, only check for new version
+Do not update, only check for a new version
+
+.. option::
+    --json-output
+
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
 
 Examples
 --------

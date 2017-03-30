@@ -26,13 +26,13 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``toolchain-icestorm``
-      - `Tools for analyzing and creating bitstream files for FPGA IceStorm <http://www.clifford.at/icestorm/>`_
+    * - `toolchain-icestorm <http://www.clifford.at/icestorm/>`__
+      - Tools for analyzing and creating bitstream files for FPGA IceStorm
 
-    * - ``toolchain-iverilog``
-      - `Verilog simulation and synthesis tool <http://iverilog.icarus.com>`_
+    * - `toolchain-iverilog <http://iverilog.icarus.com>`__
+      - Verilog simulation and synthesis tool
 
 .. warning::
     **Linux Users**:

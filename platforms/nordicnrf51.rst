@@ -26,22 +26,22 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinonordicnrf51``
-      - `Arduino Wiring-based Framework (RFduino Core) <https://github.com/RFduino/RFduino>`_
+    * - `framework-arduinonordicnrf51 <https://github.com/RFduino/RFduino>`__
+      - Arduino Wiring-based Framework (RFduino Core)
 
-    * - ``framework-mbed``
-      - `mbed Framework <http://mbed.org>`_
+    * - `framework-mbed <http://mbed.org>`__
+      - mbed Framework
 
-    * - ``tool-rfdloader``
-      - `rfdloader <https://github.com/RFduino/RFduino>`_
+    * - `tool-rfdloader <https://github.com/RFduino/RFduino>`__
+      - rfdloader
 
-    * - ``tool-sreccat``
-      - `Merging tool <https://github.com/marcows/SRecord>`_
+    * - `tool-sreccat <https://github.com/marcows/SRecord>`__
+      - Merging tool
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:

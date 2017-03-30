@@ -78,6 +78,13 @@ Adafruit
       - Flash
       - RAM
 
+    * - ``adafruit_circuitplayground_m0``
+      - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000>`_
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
     * - ``adafruit_feather_m0_usb``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
       - SAMD21G18A
@@ -149,7 +156,7 @@ Adafruit
       - 2 Kb
 
     * - ``protrinket5ftdi``
-      - `Adafruit Pro Trinket 5V/16MHz (USB) <http://www.adafruit.com/products/2000>`_
+      - `Adafruit Pro Trinket 5V/16MHz (FTDI) <http://www.adafruit.com/products/2000>`_
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -169,6 +176,26 @@ Adafruit
       - 8 Kb
       - 0.5 Kb
 
+Aiyarafun
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``node32s``
+      - `Node32s <http://www.ayarafun.com>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 112 Kb
+
 April Brother
 ~~~~~~~~~~~~~
 
@@ -185,7 +212,7 @@ April Brother
     * - ``espea32``
       - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -294,14 +321,14 @@ Arduino
 
     * - ``due``
       - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
-      - SAM3X8E
+      - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
       - 32 Kb
 
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
-      - SAM3X8E
+      - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
       - 32 Kb
@@ -399,6 +426,13 @@ Arduino
 
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000>`_
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``mkrzero``
+      - `Arduino MKRZero <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero>`_
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -573,6 +607,13 @@ Atmel
     * - ``samd21_xpro``
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/>`_
       - ATSAMD21J18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``samd21g18a``
+      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/>`_
+      - ATSAMD21G18A
       - 48 MHz
       - 256 Kb
       - 32 Kb
@@ -953,7 +994,7 @@ Electronic SweetPeas
     * - ``esp320``
       - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -1024,26 +1065,52 @@ Engduino
       - Flash
       - RAM
 
-    * - ``engduinov1``
-      - `Engduino 1 <http://www.engduino.org>`_
-      - ATMEGA32U4
-      - 8 MHz
-      - 32 Kb
-      - 2.5 Kb
-
-    * - ``engduinov2``
-      - `Engduino 2 <http://www.engduino.org>`_
-      - ATMEGA32U4
-      - 8 MHz
-      - 32 Kb
-      - 2.5 Kb
-
     * - ``engduinov3``
       - `Engduino 3 <http://www.engduino.org>`_
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
       - 2.5 Kb
+
+EnviroDIY
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mayfly``
+      - `EnviroDIY Mayfly <http://envirodiy.org/forums/>`_
+      - ATMEGA1284P
+      - 8 MHz
+      - 128 Kb
+      - 16 Kb
+
+Espotel
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``elmo_f411re``
+      - `Espotel LoRa Module <https://developer.mbed.org/platforms/Espotel-ELMO/>`_
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
 
 Espressif
 ~~~~~~~~~
@@ -1089,9 +1156,9 @@ Espressif
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
-      - 112 Kb
+      - 288 Kb
 
     * - ``esp8285``
       - `Generic ESP8285 Module <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
@@ -1360,6 +1427,13 @@ Generic ATTiny
       - 1 Kb
       - 0.0625 Kb
 
+    * - ``attiny2313``
+      - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313>`_
+      - ATTINY2313
+      - 8 MHz
+      - 2 Kb
+      - 0.125 Kb
+
     * - ``attiny24``
       - `Generic ATTiny24 <http://www.atmel.com/devices/ATTINY24.aspx>`_
       - ATTINY24
@@ -1373,6 +1447,13 @@ Generic ATTiny
       - 8 MHz
       - 2 Kb
       - 0.125 Kb
+
+    * - ``attiny4313``
+      - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313>`_
+      - ATTINY4313
+      - 8 MHz
+      - 4 Kb
+      - 0.25 Kb
 
     * - ``attiny44``
       - `Generic ATTiny44 <http://www.atmel.com/devices/ATTINY44.aspx>`_
@@ -1401,6 +1482,33 @@ Generic ATTiny
       - 8 MHz
       - 8 Kb
       - 0.5 Kb
+
+Hornbill
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``hornbill32dev``
+      - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``hornbill32minima``
+      - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 Intel
 ~~~~~
@@ -1579,7 +1687,7 @@ MakerAsia
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -1741,6 +1849,13 @@ Micromint
       - 8192 Kb
       - 264 Kb
 
+    * - ``lpc4337``
+      - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/>`_
+      - LPC4337
+      - 204 MHz
+      - 1024 Kb
+      - 136 Kb
+
 MikroElektronika
 ~~~~~~~~~~~~~~~~
 
@@ -1781,6 +1896,13 @@ MultiTech
       - Flash
       - RAM
 
+    * - ``mts_dragonfly_f411re``
+      - `MTS Dragonfly <https://developer.mbed.org/platforms/MTS-Dragonfly/>`_
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``mts_mdot_f405rg``
       - `MultiTech mDot <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
       - STM32F411RET6
@@ -1794,6 +1916,13 @@ MultiTech
       - 100 MHz
       - 512 Kb
       - 128 Kb
+
+    * - ``xdot_l151cc``
+      - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
+      - STM32L151CCU6
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 NGX Technologies
 ~~~~~~~~~~~~~~~~
@@ -1962,7 +2091,7 @@ Noduino
     * - ``quantum``
       - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -2607,6 +2736,13 @@ ST
       - 512 Kb
       - 64 Kb
 
+    * - ``nucleo_f303ze``
+      - `ST Nucleo F303ZE <https://developer.mbed.org/platforms/ST-Nucleo-F303ZE/>`_
+      - STM32F303ZET6
+      - 72 MHz
+      - 512 Kb
+      - 64 Kb
+
     * - ``nucleo_f334r8``
       - `ST Nucleo F334R8 <https://developer.mbed.org/platforms/ST-Nucleo-F334R8/>`_
       - STM32F334R8T6
@@ -2746,6 +2882,47 @@ SainSmart
       - 512 Kb
       - 32 Kb
 
+Samsung
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``artik_1020``
+      - `Samsung ARTIK 1020 <https://www.artik.io>`_
+      - EXYNOS5422
+      - 1500 MHz
+      - 16777216 Kb
+      - 2097152 Kb
+
+    * - ``artik_520``
+      - `Samsung ARTIK 520 <https://www.artik.io>`_
+      - EXYNOS3250
+      - 1000 MHz
+      - 4194304 Kb
+      - 524288 Kb
+
+    * - ``artik_530``
+      - `Samsung ARTIK 530 <https://www.artik.io>`_
+      - S5P4418
+      - 1200 MHz
+      - 4194304 Kb
+      - 524288 Kb
+
+    * - ``artik_710``
+      - `Samsung ARTIK 710 <https://www.artik.io>`_
+      - S5P6818
+      - 1400 MHz
+      - 4194304 Kb
+      - 1048576 Kb
+
 Sanguino
 ~~~~~~~~
 
@@ -2869,6 +3046,26 @@ SeeedStudio
       - 48 MHz
       - 64 Kb
       - 10 Kb
+
+Semtech
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mote_l152rc``
+      - `NAMote72 <https://developer.mbed.org/platforms/NAMote-72/>`_
+      - STM32L152RC
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 Silicon Labs
 ~~~~~~~~~~~~
@@ -2995,7 +3192,7 @@ SparkFun
     * - ``sparkfun_digitalsandbox``
       - `SparkFun Digital Sandbox <https://www.sparkfun.com/products/12651>`_
       - ATMEGA328P
-      - 16 MHz
+      - 8 MHz
       - 32 Kb
       - 2 Kb
 
@@ -3048,6 +3245,13 @@ SparkFun
       - 32 Kb
       - 2.5 Kb
 
+    * - ``sparkfun_qduinomini``
+      - `SparkFun Qduino Mini <https://www.sparkfun.com/products/13614>`_
+      - ATMEGA32U4
+      - 8 MHz
+      - 32 Kb
+      - 2.5 Kb
+
     * - ``sparkfun_redboard``
       - `SparkFun RedBoard <https://www.sparkfun.com/products/12757>`_
       - ATMEGA328P
@@ -3068,6 +3272,20 @@ SparkFun
       - 48 MHz
       - 256 Kb
       - 32 Kb
+
+    * - ``sparkfun_satmega128rfa1``
+      - `SparkFun ATmega128RFA1 Dev Board <https://www.sparkfun.com/products/11197>`_
+      - ATMEGA128RFA1
+      - 16 MHz
+      - 16 Kb
+      - 124 Kb
+
+    * - ``sparkfun_serial7seg``
+      - `SparkFun Serial 7-Segment Display <https://www.sparkfun.com/products/11441>`_
+      - ATMEGA328P
+      - 8 MHz
+      - 32 Kb
+      - 2 Kb
 
     * - ``thing``
       - `SparkFun ESP8266 Thing <https://www.sparkfun.com/products/13231>`_
@@ -3106,7 +3324,7 @@ SparkFun Electronics
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 112 Kb
 
@@ -3329,6 +3547,26 @@ ThaiEasyElec
       - 4096 Kb
       - 80 Kb
 
+The Things Network
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``the_things_uno``
+      - `The Things Uno <https://shop.thethingsnetwork.com/index.php/product/the-things-uno/>`_
+      - ATMEGA32U4
+      - 16 MHz
+      - 32 Kb
+      - 2.5 Kb
+
 TinyCircuits
 ~~~~~~~~~~~~
 
@@ -3399,7 +3637,7 @@ WEMOS
     * - ``lolin32``
       - `WEMOS LoLin32 <https://wemos.cc>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -3530,6 +3768,13 @@ u-blox
       - Flash
       - RAM
 
+    * - ``ublox_evk_odin_w2``
+      - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_
+      - STM32F439ZIY6
+      - 168 MHz
+      - 2048 Kb
+      - 256 Kb
+
     * - ``ubloxc027``
       - `u-blox C027 <https://developer.mbed.org/platforms/u-blox-C027/>`_
       - LPC1768
@@ -3569,6 +3814,13 @@ y5 design
       - Frequency
       - Flash
       - RAM
+
+    * - ``lpc11u35_y5_mbug``
+      - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/>`_
+      - LPC11U35
+      - 48 MHz
+      - 64 Kb
+      - 10 Kb
 
     * - ``nrf51822_y5_mbug``
       - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/>`_

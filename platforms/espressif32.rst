@@ -26,19 +26,25 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinoespressif32``
-      - `Arduino Wiring-based Framework (ESP32 Core) <https://github.com/espressif/arduino-esp32>`_
+    * - `framework-arduinoespressif32 <https://github.com/espressif/arduino-esp32>`__
+      - Arduino Wiring-based Framework (ESP32 Core)
 
-    * - ``framework-espidf``
-      - `Espressif IoT Development Framework <https://github.com/espressif/esp-idf>`_
+    * - `framework-espidf <https://github.com/espressif/esp-idf>`__
+      - Espressif IoT Development Framework
 
-    * - ``tool-esptoolpy``
-      - `Espressif ROM Bootloader utility <https://github.com/espressif/esptool>`_
+    * - `framework-pumbaa <https://github.com/eerimoq/pumbaa>`__
+      - Pumbaa Framework
 
-    * - ``toolchain-xtensa32``
-      - `xtensa32-gcc <https://github.com/espressif/esp-idf>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `framework-simba <https://github.com/eerimoq/simba>`__
+      - Simba Framework
+
+    * - `tool-esptoolpy <https://github.com/espressif/esptool>`__
+      - Espressif ROM Bootloader utility
+
+    * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf>`__
+      - xtensa32-gcc
 
 .. warning::
     **Linux Users**:
@@ -71,6 +77,12 @@ Frameworks
     * - :ref:`framework_espidf`
       - Espressif IoT Development Framework. Official development framework for ESP32.
 
+    * - :ref:`framework_pumbaa`
+      - Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
+
+    * - :ref:`framework_simba`
+      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+
 Boards
 ------
 
@@ -79,6 +91,26 @@ Boards
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
+
+Aiyarafun
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``node32s``
+      - `Node32s <http://www.ayarafun.com>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 112 Kb
 
 April Brother
 ~~~~~~~~~~~~~
@@ -96,7 +128,7 @@ April Brother
     * - ``espea32``
       - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -116,7 +148,7 @@ Electronic SweetPeas
     * - ``esp320``
       - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -136,9 +168,36 @@ Espressif
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
-      - 112 Kb
+      - 288 Kb
+
+Hornbill
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``hornbill32dev``
+      - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``hornbill32minima``
+      - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 MakerAsia
 ~~~~~~~~~
@@ -156,7 +215,7 @@ MakerAsia
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -176,7 +235,7 @@ Noduino
     * - ``quantum``
       - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -196,7 +255,7 @@ SparkFun Electronics
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 112 Kb
 
@@ -216,6 +275,8 @@ WEMOS
     * - ``lolin32``
       - `WEMOS LoLin32 <https://wemos.cc>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
+
+.. include:: espressif32_extra.rst

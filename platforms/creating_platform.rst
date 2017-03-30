@@ -51,163 +51,169 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinoavr``
-      - `Arduino Wiring-based Framework (AVR Core, 1.6) <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinoavr <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework (AVR Core, 1.6)
 
-    * - ``framework-arduinoespressif32``
-      - `Arduino Wiring-based Framework (ESP32 Core) <https://github.com/espressif/arduino-esp32>`_
+    * - `framework-arduinoespressif32 <https://github.com/espressif/arduino-esp32>`__
+      - Arduino Wiring-based Framework (ESP32 Core)
 
-    * - ``framework-arduinoespressif8266``
-      - `Arduino Wiring-based Framework (ESP8266 Core) <https://github.com/esp8266/Arduino>`_
+    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino>`__
+      - Arduino Wiring-based Framework (ESP8266 Core)
 
-    * - ``framework-arduinointel``
-      - `Arduino Wiring-based Framework (Intel ARC Core) <https://github.com/01org/corelibs-arduino101>`_
+    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101>`__
+      - Arduino Wiring-based Framework (Intel ARC Core)
 
-    * - ``framework-arduinomicrochippic32``
-      - `Arduino Wiring-based Framework (PIC32 Core) <https://github.com/chipKIT32/chipKIT-core>`_
+    * - `framework-arduinomicrochippic32 <https://github.com/chipKIT32/chipKIT-core>`__
+      - Arduino Wiring-based Framework (PIC32 Core)
 
-    * - ``framework-arduinomsp430``
-      - `Arduino Wiring-based Framework (MSP430 Core) <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinomsp430 <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework (MSP430 Core)
 
-    * - ``framework-arduinonordicnrf51``
-      - `Arduino Wiring-based Framework (RFduino Core) <https://github.com/RFduino/RFduino>`_
+    * - `framework-arduinonordicnrf51 <https://github.com/RFduino/RFduino>`__
+      - Arduino Wiring-based Framework (RFduino Core)
 
-    * - ``framework-arduinosam``
-      - `Arduino Wiring-based Framework (SAM Core, 1.6) <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinosam <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework (SAM Core, 1.6)
 
-    * - ``framework-arduinoststm32``
-      - `Arduino Wiring-based Framework (STM32 Core) <https://github.com/rogerclarkmelbourne/Arduino_STM32>`_
+    * - `framework-arduinoststm32 <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
+      - Arduino Wiring-based Framework (STM32 Core)
 
-    * - ``framework-arduinoteensy``
-      - `Arduino Wiring-based Framework <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinoteensy <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework
 
-    * - ``framework-cmsis``
-      - `Vendor-independent hardware abstraction layer for the Cortex-M processor series <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php>`_
+    * - `framework-artik-sdk <http://www.artik.io>`__
+      - ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms
 
-    * - ``framework-energiamsp430``
-      - `Energia Wiring-based Framework (MSP430 Core) <http://energia.nu/reference/>`_
+    * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php>`__
+      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
-    * - ``framework-energiativa``
-      - `Energia Wiring-based Framework (LM4F Core) <http://energia.nu/reference/>`_
+    * - `framework-energiamsp430 <http://energia.nu/reference/>`__
+      - Energia Wiring-based Framework (MSP430 Core)
 
-    * - ``framework-espidf``
-      - `Espressif IoT Development Framework <https://github.com/espressif/esp-idf>`_
+    * - `framework-energiativa <http://energia.nu/reference/>`__
+      - Energia Wiring-based Framework (LM4F Core)
 
-    * - ``framework-libopencm3``
-      - `libOpenCM3 Framework <http://www.libopencm3.org/>`_
+    * - `framework-espidf <https://github.com/espressif/esp-idf>`__
+      - Espressif IoT Development Framework
 
-    * - ``framework-mbed``
-      - `mbed Framework <http://mbed.org>`_
+    * - `framework-libopencm3 <http://www.libopencm3.org/>`__
+      - libOpenCM3 Framework
 
-    * - ``framework-simba``
-      - `Simba Framework <https://github.com/eerimoq/simba>`_
+    * - `framework-mbed <http://mbed.org>`__
+      - mbed Framework
 
-    * - ``framework-spl``
-      - `Standard Peripheral Library for STM32 MCUs <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890>`_
+    * - `framework-pumbaa <https://github.com/eerimoq/pumbaa>`__
+      - Pumbaa Framework
 
-    * - ``framework-wiringpi``
-      - `GPIO Interface library for the Raspberry Pi <http://wiringpi.com>`_
+    * - `framework-simba <https://github.com/eerimoq/simba>`__
+      - Simba Framework
 
-    * - ``ldscripts``
-      - `Linker Scripts <https://sourceware.org/binutils/docs/ld/Scripts.html>`_
+    * - `framework-spl <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890>`__
+      - Standard Peripheral Library for STM32 MCUs
 
-    * - ``sdk-esp8266``
-      - `ESP8266 SDK <http://bbs.espressif.com>`_
+    * - `framework-wiringpi <http://wiringpi.com>`__
+      - GPIO Interface library for the Raspberry Pi
 
-    * - ``tool-arduino101load``
-      - `Genuino101 uploader <https://github.com/01org/intel-arduino-tools>`_
+    * - `ldscripts <https://sourceware.org/binutils/docs/ld/Scripts.html>`__
+      - Linker Scripts
 
-    * - ``tool-avrdude``
-      - `AVRDUDE <http://www.nongnu.org/avrdude/>`_
+    * - `sdk-esp8266 <http://bbs.espressif.com>`__
+      - ESP8266 SDK
 
-    * - ``tool-bossac``
-      - `BOSSA CLI <https://sourceforge.net/projects/b-o-s-s-a/>`_
+    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools>`__
+      - Genuino101 uploader
 
-    * - ``tool-espotapy``
-      - `ESP8266 OTA utility <https://github.com/esp8266/Arduino/blob/master/tools/espota.py>`_
+    * - `tool-avrdude <http://www.nongnu.org/avrdude/>`__
+      - AVRDUDE
 
-    * - ``tool-esptool``
-      - `esptool-ck <https://github.com/igrr/esptool-ck>`_
+    * - `tool-bossac <https://sourceforge.net/projects/b-o-s-s-a/>`__
+      - BOSSA CLI
 
-    * - ``tool-esptoolpy``
-      - `Espressif ROM Bootloader utility <https://github.com/espressif/esptool>`_
+    * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py>`__
+      - ESP8266 OTA utility
 
-    * - ``tool-lm4flash``
-      - `Flash Programmer <http://www.ti.com/tool/lmflashprogrammer>`_
+    * - `tool-esptool <https://github.com/igrr/esptool-ck>`__
+      - esptool-ck
 
-    * - ``tool-micronucleus``
-      - `Micronucleus <https://github.com/micronucleus/micronucleus>`_
+    * - `tool-esptoolpy <https://github.com/espressif/esptool>`__
+      - Espressif ROM Bootloader utility
 
-    * - ``tool-mkspiffs``
-      - `Tool to build and unpack SPIFFS images <https://github.com/igrr/mkspiffs>`_
+    * - `tool-lm4flash <http://www.ti.com/tool/lmflashprogrammer>`__
+      - Flash Programmer
 
-    * - ``tool-mspdebug``
-      - `MSPDebug <http://mspdebug.sourceforge.net/>`_
+    * - `tool-micronucleus <https://github.com/micronucleus/micronucleus>`__
+      - Micronucleus
 
-    * - ``tool-openocd``
-      - `OpenOCD <http://openocd.org>`_
+    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs>`__
+      - Tool to build and unpack SPIFFS images
 
-    * - ``tool-pic32prog``
-      - `pic32prog <https://github.com/sergev/pic32prog>`_
+    * - `tool-mspdebug <http://mspdebug.sourceforge.net/>`__
+      - MSPDebug
 
-    * - ``tool-rfdloader``
-      - `rfdloader <https://github.com/RFduino/RFduino>`_
+    * - `tool-openocd <http://openocd.org>`__
+      - OpenOCD
 
-    * - ``tool-scons``
-      - `SCons software construction tool <http://www.scons.org>`_
+    * - `tool-pic32prog <https://github.com/sergev/pic32prog>`__
+      - pic32prog
 
-    * - ``tool-sreccat``
-      - `Merging tool <https://github.com/marcows/SRecord>`_
+    * - `tool-rfdloader <https://github.com/RFduino/RFduino>`__
+      - rfdloader
 
-    * - ``tool-stlink``
-      - `ST-Link <https://github.com/texane/stlink>`_
+    * - `tool-scons <http://www.scons.org>`__
+      - SCons software construction tool
 
-    * - ``tool-stm32duino``
-      - `STM32Duino Tools <https://github.com/rogerclarkmelbourne/Arduino_STM32>`_
+    * - `tool-sreccat <https://github.com/marcows/SRecord>`__
+      - Merging tool
 
-    * - ``tool-teensy``
-      - `Teensy Loader <https://www.pjrc.com/teensy/loader.html>`_
+    * - `tool-stlink <https://github.com/texane/stlink>`__
+      - ST-Link
 
-    * - ``toolchain-atmelavr``
-      - `avr-gcc <https://gcc.gnu.org/wiki/avr-gcc>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `tool-stm32duino <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
+      - STM32Duino Tools
 
-    * - ``toolchain-gccarmlinuxgnueabi``
-      - `GCC for Linux ARM GNU EABI <https://gcc.gnu.org>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `tool-teensy <https://www.pjrc.com/teensy/loader.html>`__
+      - Teensy Loader
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc>`__
+      - avr-gcc
 
-    * - ``toolchain-gcclinux32``
-      - `GCC for Linux i686 <https://gcc.gnu.org>`_
+    * - `toolchain-gccarmlinuxgnueabi <https://gcc.gnu.org>`__
+      - GCC for Linux ARM GNU EABI
 
-    * - ``toolchain-gcclinux64``
-      - `GCC for Linux x86_64 <https://gcc.gnu.org>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
-    * - ``toolchain-gccmingw32``
-      - `MinGW <http://www.mingw.org>`_
+    * - `toolchain-gcclinux32 <https://gcc.gnu.org>`__
+      - GCC for Linux i686
 
-    * - ``toolchain-icestorm``
-      - `Tools for analyzing and creating bitstream files for FPGA IceStorm <http://www.clifford.at/icestorm/>`_
+    * - `toolchain-gcclinux64 <https://gcc.gnu.org>`__
+      - GCC for Linux x86_64
 
-    * - ``toolchain-intelarc32``
-      - `GCC for Intel ARC <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain>`_
+    * - `toolchain-gccmingw32 <http://www.mingw.org>`__
+      - MinGW
 
-    * - ``toolchain-iverilog``
-      - `Verilog simulation and synthesis tool <http://iverilog.icarus.com>`_
+    * - `toolchain-icestorm <http://www.clifford.at/icestorm/>`__
+      - Tools for analyzing and creating bitstream files for FPGA IceStorm
 
-    * - ``toolchain-microchippic32``
-      - `GCC for Microchip PIC32 <https://github.com/chipKIT32/chipKIT-cxx>`_
+    * - `toolchain-intelarc32 <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain>`__
+      - GCC for Intel ARC
 
-    * - ``toolchain-timsp430``
-      - `msp-gcc <http://sourceforge.net/projects/mspgcc/>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-iverilog <http://iverilog.icarus.com>`__
+      - Verilog simulation and synthesis tool
 
-    * - ``toolchain-xtensa``
-      - `xtensa-gcc <https://github.com/jcmvbkbc/gcc-xtensa>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-microchippic32 <https://github.com/chipKIT32/chipKIT-cxx>`__
+      - GCC for Microchip PIC32
 
-    * - ``toolchain-xtensa32``
-      - `xtensa32-gcc <https://github.com/espressif/esp-idf>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-timsp430 <http://sourceforge.net/projects/mspgcc/>`__
+      - msp-gcc
+
+    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa>`__
+      - xtensa-gcc
+
+    * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf>`__
+      - xtensa32-gcc
 
 .. _platform_creating_manifest_file:
 
@@ -271,6 +277,11 @@ Manifest File ``platform.json``
           "type": "framework",
           "optional": true,
           "version": "~1.117.0"
+        },
+        "tool-direct-vcs-url": {
+          "type": "framework",
+          "optional": true,
+          "version": "https://github.com/user/repo.git"
         }
       }
     }
@@ -381,6 +392,4 @@ Examples
 --------
 
 Please take a look at the source code of
-`PlatformIO Development Platforms <https://github.com/platformio?query=platform->`_.
-code of
 `PlatformIO Development Platforms <https://github.com/platformio?query=platform->`_.

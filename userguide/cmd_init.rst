@@ -86,7 +86,10 @@ An environment prefix which will be used with pair in board type.
 For example, the default environment name for ``teensy_31`` board will
 be ``[env:teensy_31]``.
 
+.. option::
+    -s, --silent
 
+Suppress progress reporting
 
 Examples
 --------

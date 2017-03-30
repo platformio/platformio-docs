@@ -21,65 +21,93 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib [STORAGE_OPTIONS] show [LIBRARY]
-
-    # show info about project dependent library
-    # (run it from a project root where is located "platformio.ini")
     platformio lib show [LIBRARY]
+    pio lib show [LIBRARY]
 
-    # show info about library from global storage
-    platformio lib --global show [LIBRARY]
-    platformio lib -g show [LIBRARY]
-
-    # show info about library from custom storage
-    platformio lib --storage-dir /path/to/dir show [LIBRARY]
-    platformio lib -d /path/to/dir show [LIBRARY]
-
-    # [LIBRARY] forms
-    platformio lib [STORAGE_OPTIONS] show <id>
-    platformio lib [STORAGE_OPTIONS] show <id>
-    platformio lib [STORAGE_OPTIONS] show <id>@<version>
-    platformio lib [STORAGE_OPTIONS] show <id>@<version range>
-    platformio lib [STORAGE_OPTIONS] show <name>
-    platformio lib [STORAGE_OPTIONS] show <name>@<version>
-    platformio lib [STORAGE_OPTIONS] show <name>@<version range>
 
 Description
 -----------
 
-Show details about the installed library.
+Show detailed info about a library using
+`PlatformIO Library Registry <http://platformio.org/lib>`_.
 
-The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
-``<major>.<minor>.<patch>``) and can take any of the following forms:
+The possible values for ``[LIBRARY]``:
 
-* ``0.1.2`` - an exact version number. Use only this exact version
-* ``^0.1.2`` - any compatible version (exact version for ``0.x.x`` versions
-* ``~0.1.2`` - any version with the same major and minor versions, and an
-  equal or greater patch version
-* ``>0.1.2`` - any version greater than ``0.1.2``. ``>=``, ``<``, and ``<=``
-  are also possible
-* ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
-  ``0.2.0`` and less than ``0.3.0``
+* Library ID from Registry (preferred)
+* Library Name
 
-Storage Options
----------------
+Options
+-------
 
-See base options for :ref:`cmd_lib`.
+.. program:: platformio lib show
+
+.. option::
+    --json-output
+
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
 
 Examples
 --------
 
 .. code::
 
-    platformio lib -g show Json
+    > platformio lib show OneWire
 
-    Library Storage: /storage/dir/...
-    Json
-    ====
-    An elegant and efficient JSON library for embedded systems
+    PubSubClient
+    ============
+    #ID: 89
+    A client library for MQTT messaging. MQTT is a lightweight messaging protocol ideal for small devices. This library allows you to send and receive MQTT messages. It supports the latest MQTT 3.1.1 protocol and can be configured to use the older MQTT 3.1...
 
-    Authors: Benoit Blanchon http://blog.benoitblanchon.fr
-    Keywords: json, rest, http, web
-    Frameworks: arduino
-    Platforms: atmelavr, atmelsam, timsp430, titiva, teensy, freescalekinetis, ststm32, nordicnrf51, nxplpc, espressif8266, siliconlabsefm32, linux_arm, native, intel_arc32
-    Version: 5.4.0
+    Version: 2.6, released 10 months ago
+    Manifest: https://raw.githubusercontent.com/ivankravets/pubsubclient/patch-2/library.json
+    Homepage: http://pubsubclient.knolleary.net
+    Repository: https://github.com/knolleary/pubsubclient.git
+
+    Authors
+    -------
+    Nick O'Leary https://github.com/knolleary
+
+    Keywords
+    --------
+    ethernet
+    mqtt
+    iot
+    m2m
+
+    Compatible frameworks
+    ---------------------
+    Arduino
+
+    Compatible platforms
+    --------------------
+    Atmel AVR
+    Atmel SAM
+    Espressif 8266
+    Intel ARC32
+    Microchip PIC32
+    Nordic nRF51
+    Teensy
+    TI MSP430
+
+    Headers
+    -------
+    PubSubClient.h
+
+    Examples
+    --------
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_auth.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_basic.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_esp8266.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_publish_in_callback.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_reconnect_nonblocking.ino
+    http://dl.platformio.org/libraries/examples/0/89/mqtt_stream.ino
+
+    Versions
+    --------
+    2.6, released 10 months ago
+
+    Unique Downloads
+    ----------------
+    Today: 25
+    Week: 120
+    Month: 462

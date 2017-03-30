@@ -51,9 +51,10 @@ order:
 
 1. :ref:`projectconf_lib_extra_dirs` - extra storages per build environment
 2. :ref:`projectconf_pio_lib_dir` - own/private library storage per project
-3. :ref:`projectconf_pio_libdeps_dir` - project dependencies storage used by
+3. :ref:`projectconf_pio_libdeps_dir` - project dependency storage used by
    :ref:`librarymanager`
 4. ":ref:`projectconf_pio_home_dir`/lib" - global storage per all projects.
+5. Library storages built into frameworks, SDKs.
 
 .. _ldf_mode:
 

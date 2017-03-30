@@ -26,28 +26,28 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinosam``
-      - `Arduino Wiring-based Framework (SAM Core, 1.6) <http://arduino.cc/en/Reference/HomePage>`_
+    * - `framework-arduinosam <http://arduino.cc/en/Reference/HomePage>`__
+      - Arduino Wiring-based Framework (SAM Core, 1.6)
 
-    * - ``framework-mbed``
-      - `mbed Framework <http://mbed.org>`_
+    * - `framework-mbed <http://mbed.org>`__
+      - mbed Framework
 
-    * - ``framework-simba``
-      - `Simba Framework <https://github.com/eerimoq/simba>`_
+    * - `framework-simba <https://github.com/eerimoq/simba>`__
+      - Simba Framework
 
-    * - ``tool-avrdude``
-      - `AVRDUDE <http://www.nongnu.org/avrdude/>`_
+    * - `tool-avrdude <http://www.nongnu.org/avrdude/>`__
+      - AVRDUDE
 
-    * - ``tool-bossac``
-      - `BOSSA CLI <https://sourceforge.net/projects/b-o-s-s-a/>`_
+    * - `tool-bossac <https://sourceforge.net/projects/b-o-s-s-a/>`__
+      - BOSSA CLI
 
-    * - ``tool-openocd``
-      - `OpenOCD <http://openocd.org>`_
+    * - `tool-openocd <http://openocd.org>`__
+      - OpenOCD
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:
@@ -105,6 +105,13 @@ Adafruit
       - Flash
       - RAM
 
+    * - ``adafruit_circuitplayground_m0``
+      - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000>`_
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
     * - ``adafruit_feather_m0_usb``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
       - SAMD21G18A
@@ -127,20 +134,27 @@ Arduino
 
     * - ``due``
       - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
-      - SAM3X8E
+      - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
       - 32 Kb
 
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
-      - SAM3X8E
+      - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
       - 32 Kb
 
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000>`_
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``mkrzero``
+      - `Arduino MKRZero <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero>`_
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -204,6 +218,13 @@ Atmel
     * - ``samd21_xpro``
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/>`_
       - ATSAMD21J18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``samd21g18a``
+      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/>`_
+      - ATSAMD21G18A
       - 48 MHz
       - 256 Kb
       - 32 Kb

@@ -26,7 +26,7 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``toolchain-gcclinux32``
-      - `GCC for Linux i686 <https://gcc.gnu.org>`_
+    * - `toolchain-gcclinux32 <https://gcc.gnu.org>`__
+      - GCC for Linux i686

@@ -128,18 +128,48 @@ Examples
 
     Found N libraries:
 
-    [ ID  ] Name             Compatibility         "Authors": Description
-    -------------------------------------------------------------------------------------
-    [ 14  ] Adafruit-9DOF-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for the Adafruit 9DOF Breakout (L3GD20 / LSM303)
-    [ 13  ] Adafruit-GFX     arduino, atmelavr     "Adafruit Industries": A core graphics library for all our displays, providing a common set of graphics primitives (points, lines, circles, etc.)
-    [ 23  ] Adafruit-L3GD20-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for the L3GD20 Gyroscope
-    [ 26  ] Adafruit-LSM303DLHC-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for Adafruit's LSM303 Breakout (Accelerometer + Magnetometer)
-    [ 12  ] Adafruit-ST7735  arduino, atmelavr     "Adafruit Industries": A library for the Adafruit 1.8" SPI display
-    [ 31  ] Adafruit-Unified-Sensor arduino, atmelavr     "Adafruit Industries": Adafruit Unified Sensor Driver
-    [  4  ] IRremote         arduino, atmelavr     "Ken Shirriff": Send and receive infrared signals with multiple protocols
-    [  1  ] OneWire          arduino, atmelavr     "Paul Stoffregen": Control devices (from Dallas Semiconductor) that use the One Wire protocol (DS18S20, DS18B20, DS2408 and etc)
-    [  6  ] XBee             arduino, atmelavr     "Andrew Rapp": Arduino library for communicating with XBees in API mode
-    [ 15  ] Adafruit-ADXL345-Unified arduino, atmelavr     "Adafruit Industries": Unified driver for the ADXL345 Accelerometer
+    ArduinoJson
+    ===========
+    #ID: 64
+    An elegant and efficient JSON library for embedded systems
+
+    Keywords: web, json, http, rest
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 8266, Intel ARC32, Microchip PIC32, Nordic nRF51, Teensy, TI MSP430
+    Authors: Benoit Blanchon
+
+    DHT sensor library
+    ==================
+    #ID: 19
+    Arduino library for DHT11, DHT22, etc Temp & Humidity Sensors
+
+    Keywords: unified, dht, sensor, temperature, humidity
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Adafruit Industries
+
+    PubSubClient
+    ============
+    #ID: 89
+    A client library for MQTT messaging. MQTT is a lightweight messaging protocol ideal for small devices. This library allows you to send and receive MQTT messages. It supports the latest MQTT 3.1.1 protocol and can be configured to use the older MQTT 3.1...
+
+    Keywords: ethernet, mqtt, iot, m2m
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 8266, Intel ARC32, Microchip PIC32, Nordic nRF51, Teensy, TI MSP430
+    Authors: Nick O'Leary
+
+    ...
+
+    ESPAsyncWebServer
+    =================
+    #ID: 306
+    Asynchronous HTTP and WebSocket Server Library for ESP8266 and ESP32
+
+    Keywords: async, websocket, http, webserver
+    Compatible frameworks: Arduino
+    Compatible platforms: Espressif 8266
+    Authors: Hristo Gochkov
+
     Show next libraries? [y/N]:
     ...
 
@@ -151,9 +181,27 @@ Examples
 
     Found N libraries:
 
-    [ ID  ] Name             Compatibility         "Authors": Description
-    -------------------------------------------------------------------------------------
-    [  1  ] OneWire          arduino, atmelavr     "Paul Stoffregen": Control devices (from Dallas Semiconductor) that use the One Wire protocol (DS18S20, DS18B20, DS2408 and etc)
+    DS1820
+    ======
+    #ID: 196
+    Dallas / Maxim DS1820 1-Wire library. For communication with multiple DS1820 on a single 1-Wire bus. Also supports DS18S20 and DS18B20.
+
+    Keywords: ds18s20, 1-wire, ds1820, ds18b20
+    Compatible frameworks: mbed
+    Compatible platforms: Freescale Kinetis, Nordic nRF51, NXP LPC, ST STM32, Teensy
+    Authors: Michael Hagberg
+
+    OneWire
+    =======
+    #ID: 1
+    Control 1-Wire protocol (DS18S20, DS18B20, DS2408 and etc)
+
+    Keywords: onewire, temperature, bus, 1-wire, ibutton, sensor
+    Compatible frameworks: Arduino
+    Compatible platforms:
+    Authors: Paul Stoffregen, Jim Studt, Tom Pollard, Derek Yerger, Josh Larios, Robin James, Glenn Trewitt, Jason Dangel, Guillermo Lovato, Ken Butcher, Mark Tillotson, Bertrik Sikken, Scott Roberts
+
+    Show next libraries? [y/N]:
     ...
 
 3. Search for `Arduino-based "I2C" libraries <http://platformio.org/lib/search?query=framework%253Aarduino%2520i2c>`_
@@ -164,12 +212,37 @@ Examples
 
     Found N libraries:
 
-    [ ID  ] Name             Compatibility         "Authors": Description
-    -------------------------------------------------------------------------------------
-    [ 11  ] I2Cdevlib-Core   arduino, atmelavr     "Jeff Rowberg": The I2C Device Library (I2Cdevlib) is a collection of uniform and well-documented classes to provide simple and intuitive interfaces to I2C devices.
-    [ 24  ] Adafruit-L3GD20  arduino, atmelavr     "Adafruit Industries": Driver for Adafruit's L3GD20 I2C Gyroscope Breakout
-    [ 10  ] I2Cdevlib-AK8975 arduino, atmelavr     "Jeff Rowberg": AK8975 is 3-axis electronic compass IC with high sensitive Hall sensor technology
-    [ 14  ] Adafruit-9DOF-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for the Adafruit 9DOF Breakout (L3GD20 / LSM303)
+    I2Cdevlib-AK8975
+    ================
+    #ID: 10
+    AK8975 is 3-axis electronic compass IC with high sensitive Hall sensor technology
+
+    Keywords: i2c, i2cdevlib, sensor, compass
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Jeff Rowberg
+
+    I2Cdevlib-Core
+    ==============
+    #ID: 11
+    The I2C Device Library (I2Cdevlib) is a collection of uniform and well-documented classes to provide simple and intuitive interfaces to I2C devices.
+
+    Keywords: i2cdevlib, i2c
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Jeff Rowberg
+
+    Adafruit 9DOF Library
+    =====================
+    #ID: 14
+    Unified sensor driver for the Adafruit 9DOF Breakout (L3GD20 / LSM303)
+
+    Keywords: magnetometer, unified, accelerometer, spi, compass, i2c, sensor, gyroscope
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Adafruit Industries
+
+    Show next libraries? [y/N]:
     ...
 
 4. Search for `libraries by "web" and "http" keywords <http://platformio.org/lib/search?query=keyword%253A%2522web%2522%2520keyword%253A%2522http%2522>`_.
@@ -180,10 +253,47 @@ Examples
 
     Found N libraries:
 
-    [ ID  ] Name             Compatibility         "Authors": Description
-    -------------------------------------------------------------------------------------
-    [  5  ] Webduino         arduino, atmelavr     "Ben Combee": An extensible web server library (for use with the Arduino WizNet Ethernet Shield)
-    [ 17  ] Adafruit-CC3000  arduino, atmelavr     "Adafruit Industries": Library code for Adafruit's CC3000 Wi-Fi/WiFi breakouts
+    ArduinoJson
+    ===========
+    #ID: 64
+    An elegant and efficient JSON library for embedded systems
+
+    Keywords: web, json, http, rest
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 8266, Intel ARC32, Microchip PIC32, Nordic nRF51, Teensy, TI MSP430
+    Authors: Benoit Blanchon
+
+    ESPAsyncWebServer
+    =================
+    #ID: 306
+    Asynchronous HTTP and WebSocket Server Library for ESP8266 and ESP32
+
+    Keywords: async, websocket, http, webserver
+    Compatible frameworks: Arduino
+    Compatible platforms: Espressif 8266
+    Authors: Hristo Gochkov
+
+    ESP8266wifi
+    ===========
+    #ID: 1101
+    ESP8266 Arduino library with built in reconnect functionality
+
+    Keywords: web, http, wifi, server, client, wi-fi
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Jonas Ekstrand
+
+    Blynk
+    =====
+    #ID: 415
+    Build a smartphone app for your project in minutes. Blynk allows creating IoT solutions easily. It supports  WiFi, BLE, Bluetooth, Ethernet, GSM, USB, Serial. Works with many boards like ESP8266, ESP32, Arduino UNO, Nano, Due, Mega, Zero, MKR100, Yun,...
+
+    Keywords: control, gprs, protocol, communication, app, bluetooth, serial, cloud, web, usb, m2m, ble, 3g, smartphone, http, iot, device, sensors, data, esp8266, mobile, wifi, ethernet, gsm
+    Compatible frameworks: Arduino, Energia, WiringPi
+    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 8266, Intel ARC32, Linux ARM, Microchip PIC32, Nordic nRF51, Teensy, TI MSP430, TI Tiva
+    Authors: Volodymyr Shymanskyy
+
+    Show next libraries? [y/N]:
     ...
 
 5. Search for `libraries by "Adafruit Industries" author <http://platformio.org/lib/search?query=author%253A%2522Adafruit%20Industries%2522>`_
@@ -194,12 +304,27 @@ Examples
 
     Found N libraries:
 
-    [ ID  ] Name             Compatibility         "Authors": Description
-    -------------------------------------------------------------------------------------
-    [ 14  ] Adafruit-9DOF-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for the Adafruit 9DOF Breakout (L3GD20 / LSM303)
-    [ 13  ] Adafruit-GFX     arduino, atmelavr     "Adafruit Industries": A core graphics library for all our displays, providing a common set of graphics primitives (points, lines, circles, etc.)
-    [ 23  ] Adafruit-L3GD20-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for the L3GD20 Gyroscope
-    [ 26  ] Adafruit-LSM303DLHC-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for Adafruit's LSM303 Breakout (Accelerometer + Magnetometer)
+    DHT sensor library
+    ==================
+    #ID: 19
+    Arduino library for DHT11, DHT22, etc Temp & Humidity Sensors
+
+    Keywords: unified, dht, sensor, temperature, humidity
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Adafruit Industries
+
+    Adafruit DHT Unified
+    ====================
+    #ID: 18
+    Unified sensor library for DHT (DHT11, DHT22 and etc) temperature and humidity sensors
+
+    Keywords: unified, dht, sensor, temperature, humidity
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Adafruit Industries
+
+    Show next libraries? [y/N]:
     ...
 
 6. Search for `libraries which are compatible with Dallas temperature sensors <http://platformio.org/lib/search?query=DS*>`_
@@ -211,9 +336,27 @@ Examples
 
     Found N libraries:
 
-    [ ID  ] Name             Compatibility         "Authors": Description
-    -------------------------------------------------------------------------------------
-    [  1  ] OneWire          arduino, atmelavr     "Paul Stoffregen": Control devices (from Dallas Semiconductor) that use the One Wire protocol (DS18S20, DS18B20, DS2408 and etc)
+    DS1820
+    ======
+    #ID: 196
+    Dallas / Maxim DS1820 1-Wire library. For communication with multiple DS1820 on a single 1-Wire bus. Also supports DS18S20 and DS18B20.
+
+    Keywords: ds18s20, 1-wire, ds1820, ds18b20
+    Compatible frameworks: mbed
+    Compatible platforms: Freescale Kinetis, Nordic nRF51, NXP LPC, ST STM32, Teensy
+    Authors: Michael Hagberg
+
+    I2Cdevlib-DS1307
+    ================
+    #ID: 99
+    The DS1307 serial real-time clock (RTC) is a low-power, full binary-coded decimal (BCD) clock/calendar plus 56 bytes of NV SRAM
+
+    Keywords: i2cdevlib, clock, i2c, rtc, time
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Jeff Rowberg
+
+    Show next libraries? [y/N]:
     ...
 
 7. Search for `Energia-based *nRF24* or *HttpClient* libraries <http://platformio.org/lib/search?query=framework%253Aenergia%2520%252B(nRF24%2520HttpClient)>`_.
@@ -224,12 +367,40 @@ Examples
 
     > platformio lib search "+(nRF24 HttpClient)" --framework="energia"
 
-    Found 2 libraries:
+    Found N libraries:
 
-    [ ID  ] Name             Compatibility         "Authors": Description
-    -------------------------------------------------------------------------------------
-    [ 46  ] HttpClient       energia, timsp430, titiva "Zack Lalanne": HttpClient is a library to make it easier to interact with web servers
-    [ 43  ] nRF24            energia, timsp430     "Eric": The nRF24L01 is a low-cost 2.4GHz ISM transceiver module. It supports a number of channel frequencies in the 2.4GHz band and a range of data rates.
+    nRF24
+    =====
+    #ID: 43
+    The nRF24L01 is a low-cost 2.4GHz ISM transceiver module. It supports a number of channel frequencies in the 2.4GHz band and a range of data rates.
+
+    Keywords: wireless, spi, rf, radio
+    Compatible frameworks: Energia
+    Compatible platforms: TI MSP430
+    Authors: Eric
+
+    HttpClient
+    ==========
+    #ID: 46
+    HttpClient is a library to make it easier to interact with web servers
+
+    Keywords: web, client, http, ethernet
+    Compatible frameworks: Energia
+    Compatible platforms: TI MSP430, TI Tiva
+    Authors: Zack Lalanne
+
+    RadioHead
+    =========
+    #ID: 124
+    The RadioHead Packet Radio library which provides a complete object-oriented library for sending and receiving packetized messages via RF22/24/26/27/69, Si4460/4461/4463/4464, nRF24/nRF905, SX1276/77/78, RFM95/96/97/98 and etc.
+
+    Keywords: wireless, rf, radio
+    Compatible frameworks: Arduino, Energia
+    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 8266, Intel ARC32, Microchip PIC32, Nordic nRF51, Teensy, TI MSP430, TI Tiva
+    Authors: Mike McCauley
+
+    Show next libraries? [y/N]:
+    ...
 
 
 8. Search for the `all sensor libraries excluding temperature <http://platformio.org/lib/search?query=sensor%2520-temperature>`_.
@@ -240,16 +411,35 @@ Examples
 
     Found N libraries:
 
-    [ ID  ] Name             Compatibility         "Authors": Description
-    -------------------------------------------------------------------------------------
-    [ 31  ] Adafruit-Unified-Sensor arduino, atmelavr     "Adafruit Industries": Adafruit Unified Sensor Driver
-    [ 10  ] I2Cdevlib-AK8975 arduino, atmelavr     "Jeff Rowberg": AK8975 is 3-axis electronic compass IC with high sensitive Hall sensor technology
-    [ 14  ] Adafruit-9DOF-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for the Adafruit 9DOF Breakout (L3GD20 / LSM303)
-    [ 23  ] Adafruit-L3GD20-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for the L3GD20 Gyroscope
-    [ 26  ] Adafruit-LSM303DLHC-Unified arduino, atmelavr     "Adafruit Industries": Unified sensor driver for Adafruit's LSM303 Breakout (Accelerometer + Magnetometer)
-    [ 33  ] Adafruit-TMP006  arduino, atmelavr     "Adafruit Industries": A library for the Adafruit TMP006 Infrared Thermopile Sensor
-    [ 34  ] Adafruit-TSL2561-Unified arduino, atmelavr     "Adafruit Industries": Unified light sensor driver for Adafruit's TSL2561 breakouts
-    [ 97  ] I2Cdevlib-BMA150 arduino, atmelavr     "Jeff Rowberg": The BMA150 is a triaxial, low-g acceleration sensor IC with digital output for consumer market applications
-    [ 106 ] I2Cdevlib-MPR121 arduino, atmelavr     "Jeff Rowberg": The MPR121 is a 12-bit proximity capacitive touch sensor
-    [ 111 ] I2Cdevlib-AK8975 energia, timsp430     "Jeff Rowberg": AK8975 is 3-axis electronic compass IC with high sensitive Hall sensor technology
+    SparkFun VL6180 Sensor
+    ======================
+    #ID: 407
+    The VL6180 combines an IR emitter, a range sensor, and an ambient light sensor together for you to easily use and communicate with via an I2C interface.
+
+    Keywords: sensors
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 8266, Intel ARC32, Microchip PIC32, Nordic nRF51, Teensy, TI MSP430
+    Authors: Casey Kuhns@SparkFun, SparkFun Electronics
+
+    I2Cdevlib-AK8975
+    ================
+    #ID: 10
+    AK8975 is 3-axis electronic compass IC with high sensitive Hall sensor technology
+
+    Keywords: i2c, i2cdevlib, sensor, compass
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Jeff Rowberg
+
+    Adafruit 9DOF Library
+    =====================
+    #ID: 14
+    Unified sensor driver for the Adafruit 9DOF Breakout (L3GD20 / LSM303)
+
+    Keywords: magnetometer, unified, accelerometer, spi, compass, i2c, sensor, gyroscope
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR
+    Authors: Adafruit Industries
+
     Show next libraries? [y/N]:
+    ...

@@ -21,14 +21,19 @@ workspace server comes with a RESTful webservice and provides high flexibility.
 It also contains a SDK which can be used to create plug-ins for languages,
 frameworks or tools.
 
+.. tip::
+  `QUESTIONS? Chat with us! <https://pioplus.com>`_
+  (chat button is located in the bottom right corner)
+
 .. contents::
 
 .. note::
 
     1. Please make sure to read :ref:`pio_remote` guide first.
     2. You need :ref:`cmd_account` if you don't have it. Registration is FREE.
-    3. You should have a running :ref:`cmd_remote_agent` on a host machine
-       where hardware devices are connected or visible for remote operations.
+    3. You should have a running :ref:`cmd_remote_agent` on a remote machine
+       where hardware devices are connected physically or accessible for the
+       remote operations. See **PIO Remote** :ref:`pio_remote_quickstart` for details.
 
 Demo
 ----
@@ -75,11 +80,11 @@ Let's create our first PlatformIO-based Codenvy Project
 3.  If you prefer to work with :ref:`core` CLI, then you can process project
     using Cloud IDE Terminal and the next commands:
 
-    * :ref:`cmd_run` - build project
+    * :ref:`cmd_run` - build project locally (using Cloud IDE's virtual machine)
     * :ref:`pio run -t clean <cmd_run>` - clean project
-    * :ref:`pio remote run -t upload <cmd_remote_run>` - upload firmware Over-The-Air
-    * :ref:`cmd_remote_device_list` - list available devices (OTA Device Manager)
-    * :ref:`cmd_remote_device_monitor` - OTA Serial Port Monitor
+    * :ref:`pio remote run -t upload <cmd_remote_run>` - upload firmware (program) to a remote device
+    * :ref:`cmd_remote_device_list` - list available remote devices
+    * :ref:`cmd_remote_device_monitor` - Remote Serial Port Monitor
 
 
 Multi-Project workspace
@@ -108,9 +113,9 @@ In this case, you need to use ``-d, --project-dir`` option for :ref:`cmd_run`
 or :ref:`cmd_remote_run` commands:
 
 * ``pio remote run --project-dir project-A -t upload`` build Project-A
-* ``pio remote run --project-dir project-A -t upload`` upload OTA Firmware
+* ``pio remote run --project-dir project-A -t upload`` remote firmware uploading
     using Project-A
-* ``pio remote run -d project-B -t upload`` upload OTA Firmware
+* ``pio remote run -d project-B -t upload`` remote firmware (program) uploading
     using Project-B
 
 See documentation for :option:`platformio remote run --project-dir` option.

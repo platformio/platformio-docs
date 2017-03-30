@@ -26,7 +26,7 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``toolchain-gccmingw32``
-      - `MinGW <http://www.mingw.org>`_
+    * - `toolchain-gccmingw32 <http://www.mingw.org>`__
+      - MinGW

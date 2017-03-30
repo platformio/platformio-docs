@@ -59,10 +59,12 @@ Commands
 .. toctree::
     :maxdepth: 2
 
+    cmd_builtin
     cmd_install
     cmd_list
     cmd_register
     cmd_search
     cmd_show
+    cmd_stats
     cmd_uninstall
     cmd_update

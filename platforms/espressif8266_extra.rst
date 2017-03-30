@@ -230,6 +230,11 @@ Demo
 Using Arduino Framework with Staging version
 --------------------------------------------
 
+PlatformIO will install the latest Arduino Core for ESP8266 from
+https://github.com/esp8266/Arduino. The `Git <https://git-scm.com>`_
+should be installed in a system. To update Arduino Core to the latest revision,
+please use :ref:`cmd_platform_update` command.
+
 1.  Install Espressif 8266 (Stage) development platform
 
     .. code::
@@ -248,10 +253,10 @@ Using Arduino Framework with Staging version
 
 3.  Try to build project
 4.  If you see build errors, then try to build this project using the same
-    ``stage`` on Arduino IDE
-5.  If it works with Arduino IDE but doesn't work with PlatformIO, then please
-    `open new issue <https://github.com/platformio/platformio-core/issues>`_ with
-    attached information:
+    ``stage`` with Arduino IDE
+5.  If it works with Arduino IDE but doesn't work with PlatformIO, please
+    `file new issue <https://github.com/platformio/platform-espressif8266/issues>`_
+    with attached information:
 
     - test project/files
     - detailed log of build process from Arduino IDE (please copy it from
@@ -262,6 +267,7 @@ Using Arduino Framework with Staging version
 Articles
 --------
 
+* Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
 * Sep 12, 2016 - **Pedro Minatel** - `OTA – Como programar o ESP8266 pelo WiFi no platformIO (OTA programming for ESP8266 via Wi-Fi using PlatformIO, Portuguese) <http://pedrominatel.com.br/esp8266/ota-como-programar-o-esp8266-pelo-wifi-no-platformio/>`_
 * Sep 2, 2016 - **Tinkerman** `Optimizing files for SPIFFS with Gulp <http://tinkerman.cat/optimizing-files-for-spiffs-with-gulp/>`_
 * Jul 15, 2016 - **Jaime** - `ESP8266 Mobile Rick Roll Captive Portal <https://hackaday.io/project/12709-esp8266-mobile-rick-roll-captive-portal>`_
@@ -284,7 +290,7 @@ Examples
 --------
 
 All project examples are located in PlatformIO repository
-`Examples for Espressif platform <https://github.com/platformio/platformio-examples/tree/develop/espressif>`_.
+`Examples for Espressif 8266 platform <https://github.com/platformio/platformio-examples/tree/develop/espressif>`_.
 
 * `Native SDK <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp8266-native>`_
 * `WebServer <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp8266-webserver>`_

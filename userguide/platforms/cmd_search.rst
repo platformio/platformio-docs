@@ -54,24 +54,32 @@ Examples
     Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
     Home: http://platformio.org/platforms/atmelavr
-    Packages: toolchain-atmelavr, framework-simba
-    Version: 0.0.0
+    Packages: toolchain-atmelavr, framework-arduinoavr, framework-simba, tool-avrdude, tool-micronucleus
 
     atmelsam ~ Atmel SAM
     ====================
     Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
     Home: http://platformio.org/platforms/atmelsam
-    Packages: framework-arduinosam, framework-mbed, framework-simba, toolchain-gccarmnoneeabi, tool-bossac
-    Version: 0.0.0
+    Packages: toolchain-gccarmnoneeabi, framework-arduinosam, framework-simba, tool-openocd, framework-mbed, tool-avrdude, tool-bossac
+
+    espressif32 ~ Espressif 32
+    ==========================
+    Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
+    Home: http://platformio.org/platforms/espressif32
+    Packages: toolchain-xtensa32, framework-simba, framework-arduinoespressif32, framework-pumbaa, framework-espidf, tool-esptoolpy
 
     espressif8266 ~ Espressif 8266
     ==============================
     Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-    Home: http://platformio.org/platforms/espressif
-    Packages: framework-simba, tool-esptool, framework-arduinoespressif8266, sdk-esp8266, toolchain-xtensa
-    Version: 0.0.0
+    Home: http://platformio.org/platforms/espressif8266
+    Packages: toolchain-xtensa, framework-simba, tool-esptool, tool-mkspiffs, tool-espotapy, framework-arduinoespressif8266, sdk-esp8266
+
+    freescalekinetis ~ Freescale Kinetis
+    ====================================
+    Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
     ...
 
 2. Search for TI development platforms

@@ -26,31 +26,31 @@ Packages
     :header-rows:  1
 
     * - Name
-      - Contents
+      - Description
 
-    * - ``framework-arduinoststm32``
-      - `Arduino Wiring-based Framework (STM32 Core) <https://github.com/rogerclarkmelbourne/Arduino_STM32>`_
+    * - `framework-arduinoststm32 <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
+      - Arduino Wiring-based Framework (STM32 Core)
 
-    * - ``framework-cmsis``
-      - `Vendor-independent hardware abstraction layer for the Cortex-M processor series <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php>`_
+    * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php>`__
+      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
-    * - ``framework-libopencm3``
-      - `libOpenCM3 Framework <http://www.libopencm3.org/>`_
+    * - `framework-libopencm3 <http://www.libopencm3.org/>`__
+      - libOpenCM3 Framework
 
-    * - ``framework-mbed``
-      - `mbed Framework <http://mbed.org>`_
+    * - `framework-mbed <http://mbed.org>`__
+      - mbed Framework
 
-    * - ``framework-spl``
-      - `Standard Peripheral Library for STM32 MCUs <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890>`_
+    * - `framework-spl <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890>`__
+      - Standard Peripheral Library for STM32 MCUs
 
-    * - ``tool-stlink``
-      - `ST-Link <https://github.com/texane/stlink>`_
+    * - `tool-stlink <https://github.com/texane/stlink>`__
+      - ST-Link
 
-    * - ``tool-stm32duino``
-      - `STM32Duino Tools <https://github.com/rogerclarkmelbourne/Arduino_STM32>`_
+    * - `tool-stm32duino <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
+      - STM32Duino Tools
 
-    * - ``toolchain-gccarmnoneeabi``
-      - `gcc-arm-embedded <https://launchpad.net/gcc-arm-embedded>`_, `GDB <http://www.gnu.org/software/gdb/>`_
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+      - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:
@@ -154,6 +154,26 @@ Armstrap
       - 168 MHz
       - 512 Kb
       - 192 Kb
+
+Espotel
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``elmo_f411re``
+      - `Espotel LoRa Module <https://developer.mbed.org/platforms/Espotel-ELMO/>`_
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
 
 Generic
 ~~~~~~~
@@ -264,6 +284,13 @@ MultiTech
       - Flash
       - RAM
 
+    * - ``mts_dragonfly_f411re``
+      - `MTS Dragonfly <https://developer.mbed.org/platforms/MTS-Dragonfly/>`_
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``mts_mdot_f405rg``
       - `MultiTech mDot <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
       - STM32F411RET6
@@ -277,6 +304,13 @@ MultiTech
       - 100 MHz
       - 512 Kb
       - 128 Kb
+
+    * - ``xdot_l151cc``
+      - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
+      - STM32L151CCU6
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 ST
 ~~
@@ -459,6 +493,13 @@ ST
       - 512 Kb
       - 64 Kb
 
+    * - ``nucleo_f303ze``
+      - `ST Nucleo F303ZE <https://developer.mbed.org/platforms/ST-Nucleo-F303ZE/>`_
+      - STM32F303ZET6
+      - 72 MHz
+      - 512 Kb
+      - 64 Kb
+
     * - ``nucleo_f334r8``
       - `ST Nucleo F334R8 <https://developer.mbed.org/platforms/ST-Nucleo-F334R8/>`_
       - STM32F334R8T6
@@ -590,5 +631,45 @@ SeeedStudio
       - 168 MHz
       - 512 Kb
       - 192 Kb
+
+Semtech
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mote_l152rc``
+      - `NAMote72 <https://developer.mbed.org/platforms/NAMote-72/>`_
+      - STM32L152RC
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
+u-blox
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``ublox_evk_odin_w2``
+      - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_
+      - STM32F439ZIY6
+      - 168 MHz
+      - 2048 Kb
+      - 256 Kb
 
 .. include:: ststm32_extra.rst

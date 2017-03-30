@@ -60,9 +60,18 @@ Example:
 
 .. code-block:: ini
 
+    [platformio]
+    ; Unix
+    lib_extra_dirs = ${env.HOME}/Documents/Arduino/libraries
+    ; Windows
+    lib_extra_dirs = ${env.HOMEDRIVE}${env.HOMEPATH}\Documents\Arduino\libraries
+
+
     [common]
     build_flags = -D VERSION=1.2.3 -D DEBUG=1
-    lib_deps_builtin = SPI, Wire
+    lib_deps_builtin =
+      SPI
+      Wire
     lib_deps_external = ArduinoJson@>5.6.0
 
     [env:uno]
@@ -71,7 +80,6 @@ Example:
     board = uno
     build_flags = ${common.build_flags}
     lib_deps = ${common.lib_deps_builtin}, ${common.lib_deps_external}
-    lib_extra_dirs = ${env.HOME}/arduino/libs
 
     [env:nodemcuv2]
     platform = espressif8266
@@ -537,7 +545,7 @@ This option can be set by global environment variable
 
 Example:
 
-.. code-block::   ini
+.. code-block:: ini
 
     [env:specific_defines]
     build_flags = -DFOO -DBAR=1 -DFLOAT_VALUE=1.23457e+07
@@ -551,10 +559,64 @@ Example:
     [env:specific_ld_script]
     build_flags = -Wl,-T/path/to/ld_script.ld
 
-    [env:exec_command]
-    ; get VCS revision "on-the-fly"
+
+.. _projectconf_dynamic_build_flags:
+
+Dynamic build flags
+'''''''''''''''''''
+
+PlatformIO Core allows to run external command/script which outputs build flags.
+PIO will automatically parse the output and append flags to a build environment.
+**You can use any shell or programming language.**
+
+This external command will be called on each :ref:`cmd_run` command before
+building/uploading process.
+
+Use Cases:
+
+ * Macro with the latest VCS revision/tag "on-the-fly"
+ * Generate dynamic headers (``*.h``)
+ * Process media content before generating SPIFFS image
+ * Make some changes to source code or related libraries
+
+Example:
+
+.. code-block:: ini
+
+    [env:generate_flags_with_external_command]
+    build_flags = !cmd_or_path_to_script
+
+
+**Use Case: Get the latest GIT revision "on-the-fly"**
+
+*Unix*
+
+.. code-block:: ini
+
+    [env:git_revision_macro]
     build_flags = !echo "-DPIO_SRC_REV="$(git rev-parse HEAD)
 
+*Windows*
+
+You need to create a separate file named ``print_git_rev.bat`` and place it
+near ``platformio.ini``.
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:git_revision_macro]
+    build_flags = !print_git_rev.bat
+
+``print_git_rev.bat``:
+
+.. code-block:: bat
+
+    @echo off
+    FOR /F "tokens=1 delims=" %%A in ('git rev-parse HEAD') do echo -DPIO_SRC_REV=%%A
+
+
+--------------
 
 For more detailed information about available flags/options go to:
 
@@ -658,9 +720,12 @@ Upload options
 This option is used by "uploader" tool when sending firmware to board via
 ``upload_port``. For example,
 
-* ``/dev/ttyUSB0`` - Unix-based OS
-* ``COM3`` - Windows OS
+* ``/dev/ttyUSB0`` - Serial port (Unix-based OS)
+* ``COM3`` - Serial port (Windows OS)
 * ``192.168.0.13`` - IP address when using OTA
+* ``/media/disk`` - physical path to media disk/flash drive
+  (:ref:`framework_mbed` enabled boards)
+* ``D:`` - physical path to media disk/flash drive (Windows OS).
 
 If ``upload_port`` isn't specified, then *PlatformIO* will try to detect it
 automatically.
@@ -785,7 +850,7 @@ Example:
     13
     PubSubClient
     Json@~5.6,!=5.4
-    https://github.com/gioblu/PJON.git@v2.0
+    https://github.com/gioblu/PJON.git#v2.0
     https://github.com/me-no-dev/ESPAsyncTCP.git
 
 .. _projectconf_lib_ignore:
@@ -803,12 +868,16 @@ folder name). In the most cases, library name is pre-defined in manifest file
 (:ref:`library_config`, ``library.properties``, ``module.json``). The multiple
 library names are allowed, *split them with comma+space ", "*.
 
+There is ability to ignore built-in :ref:`framework_mbed` libraries: mbed-rtos,
+mbed-events, mbed-fs, mbed-net, mbed-rpc, mbed-dsp, mbed-USBHost, mbed-USBDevice.
+See full list `here <https://github.com/platformio/builder-framework-mbed/blob/develop/mbed.py#L323>`__.
+
 Example:
 
 .. code-block:: ini
 
     [env:ignore_some_libs]
-    lib_ignore = SPI, Ethernet
+    lib_ignore = SPI, Ethernet, mbed-fs
 
 .. _projectconf_lib_extra_dirs:
 
@@ -936,6 +1005,22 @@ Advanced options
 ``extra_script``
 ^^^^^^^^^^^^^^^^
 
+.. warning::
+
+  This option is recommended for Advanced Users and requires Python language knowledges.
+
+  We highly recommended to take a look at :ref:`projectconf_dynamic_build_flags`
+  option where you can use any programming language. Also, this option is very
+  good if you need to apply changes to the project before building/uploading
+  process:
+
+  * Macro with the latest VCS revision/tag "on-the-fly"
+  * Generate dynamic headers (``*.h``)
+  * Process media content before generating SPIFFS image
+  * Make some changes to source code or related libraries
+
+  More details :ref:`projectconf_dynamic_build_flags`.
+
 .. contents::
     :local:
 
@@ -953,6 +1038,36 @@ Take a look at the multiple snippets/answers for the user questions:
   - `#365 Extra configuration for ESP8266 uploader <https://github.com/platformio/platformio-core/issues/365#issuecomment-163695011>`_
   - `#351 Specific reset method for ESP8266 <https://github.com/platformio/platformio-core/issues/351#issuecomment-161789165>`_
   - `#247 Specific options for avrdude <https://github.com/platformio/platformio-core/issues/247#issuecomment-118169728>`_.
+
+Extra Linker Flags without ``-Wl,`` prefix
+''''''''''''''''''''''''''''''''''''''''''
+
+Sometimes you need to pass extra flags to GCC linker without ``Wl,``. You could
+use :ref:`projectconf_build_flags` option but it will not work. PlatformIO
+will not parse these flags to ``LINKFLAGS`` scope. In this case, simple
+extra script will help:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:env_extra_link_flags]
+    platform = windows_x86
+    extra_script = extra_script.py
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    Import('env')
+
+    env.Append(
+      LINKFLAGS=[
+          "-static",
+          "-static-libgcc",
+          "-static-libstdc++"
+      ]
+    )
 
 Custom Uploader
 '''''''''''''''
@@ -1040,6 +1155,9 @@ when :option:`platformio run --target` is called with ``upload`` value.
 
     env.AddPreAction("$BUILD_DIR/firmware.elf", [callback1, callback2,...])
     env.AddPostAction("$BUILD_DIR/firmware.hex", callback...)
+
+    # custom action before building SPIFFS image. For example, compress HTML, etc.
+    env.AddPreAction("$BUILD_DIR/spiffs.bin", callback...)
 
     # custom action for project's main.cpp
     env.AddPostAction("$BUILD_DIR/src/main.cpp.o", callback...)

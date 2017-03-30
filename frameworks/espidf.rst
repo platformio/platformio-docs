@@ -38,6 +38,26 @@ Boards
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
+Aiyarafun
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``node32s``
+      - `Node32s <http://www.ayarafun.com>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 112 Kb
+
 April Brother
 ~~~~~~~~~~~~~
 
@@ -54,7 +74,7 @@ April Brother
     * - ``espea32``
       - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -74,7 +94,7 @@ Electronic SweetPeas
     * - ``esp320``
       - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -94,9 +114,36 @@ Espressif
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
-      - 112 Kb
+      - 288 Kb
+
+Hornbill
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``hornbill32dev``
+      - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``hornbill32minima``
+      - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 MakerAsia
 ~~~~~~~~~
@@ -114,7 +161,7 @@ MakerAsia
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -134,7 +181,7 @@ Noduino
     * - ``quantum``
       - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
 
@@ -154,7 +201,7 @@ SparkFun Electronics
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 112 Kb
 
@@ -174,6 +221,6 @@ WEMOS
     * - ``lolin32``
       - `WEMOS LoLin32 <https://wemos.cc>`_
       - ESP32
-      - 160 MHz
+      - 240 MHz
       - 1024 Kb
       - 288 Kb
