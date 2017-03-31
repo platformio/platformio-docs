@@ -535,6 +535,7 @@ Run these commands in system Terminal
 Articles / Manuals
 ------------------
 
+* Mar, 31, 2017 - **Robin Reiter** - `A little guide to PlatformIO. As an Arduino developer, you may want to check that out! (video review) <https://www.youtube.com/watch?v=EIkGTwLOD7o>`_
 * Dec 13, 2016 - **Dr. Patrick Mineault** - `Multi-Arduino projects with PlatformIO <https://xcorr.net/2016/12/13/multi-arduino-projects-with-platformio/>`_
 * Nov 10, 2016 - **PiGreek** - `PlatformIO the new Arduino IDE ?! <https://pigreekblog.wordpress.com/2016/11/10/platformio-the-new-arduino-ide/>`_
 * Aug 18, 2016 - **Primal Cortex** - `Installing PlatformIO on Arch Linux <https://primalcortex.wordpress.com/2016/08/18/platformio/>`_
