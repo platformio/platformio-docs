@@ -14,7 +14,7 @@
 Debugging
 =========
 
-**It's Just Work. Easier than ever before!**
+**It Just Works. Easier than ever before!**
 
 .. versionadded:: 3.4 (`PlatformIO Plus <https://pioplus.com>`__)
 
