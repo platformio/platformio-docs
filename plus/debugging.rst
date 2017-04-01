@@ -18,6 +18,13 @@ Debugging
 
 .. versionadded:: 3.4 (`PlatformIO Plus <https://pioplus.com>`__)
 
+.. note::
+
+  `PLEASE READ: Actual news/progress of PlatformIO Debugging (supported boards, platforms, etc). <https://community.platformio.org/t/platformio-debugging/1704>`_
+
+
+----------
+
 [TODO] Description
 
 You should have :ref:`cmd_account` to work with debugging feature.
