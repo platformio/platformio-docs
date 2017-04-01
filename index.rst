@@ -117,6 +117,7 @@ Contents
     :maxdepth: 3
 
     plus/pio-remote
+    plus/debugging
     plus/unit-testing
 
 .. toctree::
