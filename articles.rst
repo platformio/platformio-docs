@@ -23,6 +23,8 @@ Here are recent articles/reviews about PlatformIO:
 2017
 ^^^^
 
+* Apr 12, 2017 - **Jane Elizabeth** - `Let's talk IoT: PlatformIO puts developers back in the driver's seat <https://jaxenter.com/open-source-iot-platformio-133282.html>`_
+* Mar 13, 2017 - **Ryan Mulligan** - `Continuous testing for Arduino libraries using PlatformIO and Travis CI <https://www.pololu.com/blog/654/continuous-testing-for-arduino-libraries-using-platformio-and-travis-ci>`_
 * Feb 23, 2017 - **Bastiaan Visee** - `Using PlatformIO for your Arduino projects <http://lichtsignaal.nl/2017/02/23/using-platformio-for-your-arduino-projects/>`_
 * Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
 
