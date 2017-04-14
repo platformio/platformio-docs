@@ -321,7 +321,7 @@ Example:
     }
 
 
-Pattern	Meaning
+Pattern Meaning
 
 .. list-table::
     :header-rows:  1
@@ -517,6 +517,9 @@ details :ref:`projectconf_build_unflags`.
 Specify which source files should be included/excluded from build process.
 More details :ref:`projectconf_src_filter`.
 
+Please note that you can generate source filter "on-the-fly" using
+``extraScript`` (see below)
+
 ``extraScript``
 ~~~~~~~~~~~~~~~
 
@@ -524,6 +527,71 @@ More details :ref:`projectconf_src_filter`.
 
 Launch extra script before build process.
 More details :ref:`projectconf_extra_script`.
+
+**Example** (HAL-based library)
+
+This example demonstrates how to build HAL-dependent source files and
+exclude other source files from a build process.
+
+Project structure
+
+.. code::
+
+    ├── lib
+    │   ├── readme.txt
+    │   └── SomeLib
+    │       ├── extra_script.py
+    │       ├── hal
+    │       │   ├── bar
+    │       │   │   ├── hal.c
+    │       │   │   └── hal.h
+    │       │   ├── foo
+    │       │       ├── hal.c
+    │       │       └── hal.h
+    │       ├── library.json
+    │       ├── SomeLib.c
+    │       └── SomeLib.h
+    ├── platformio.ini
+    └── src
+        └── test.c
+
+``platformio.ini``
+
+.. code-block:: ini
+
+    [env:foo]
+    platform = native
+    build_flags = -DHAL=foo
+
+    [env:bar]
+    platform = native
+    build_flags = -DHAL=bar
+
+``library.json``
+
+.. code-block:: ini
+
+    {
+        "name": "SomeLib",
+        "version": "0.0.0",
+        "build": {
+            "extraScript": "extra_script.py"
+        }
+    }
+
+``extra_script.py``
+
+.. code-block:: py
+
+    Import('env')
+    from os.path import join, realpath
+
+
+    for item in env.get("CPPDEFINES", []):
+        if isinstance(item, tuple) and item[0] == "HAL":
+            env.Append(CPPPATH=[realpath(join("hal", item[1]))])
+            env.Replace(SRC_FILTER=["+<*>", "-<hal>", "+<%s>" % join("hal", item[1])])
+            break
 
 ``libArchive``
 ~~~~~~~~~~~~~~
