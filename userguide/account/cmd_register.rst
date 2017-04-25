@@ -27,7 +27,7 @@ Usage
 Description
 -----------
 
-Log in to :ref:`cmd_account`.
+Create a new :ref:`cmd_account`. A registration is FREE.
 
 Options
 ~~~~~~~
