@@ -1010,6 +1010,7 @@ Debugging options
 ^^^^^^^^^^^^^^
 
 A debugging port of a remote target. Could be a serial device or network address.
+PlatformIO detects it automatically if is not specified.
 
 For example:
 
@@ -1023,8 +1024,12 @@ For example:
 ``debug_init_cmds``
 ^^^^^^^^^^^^^^^^^^^
 
-Initial commands that will be passed to back-end debugger. For example,
-the initial commands for GDB:
+Initial commands that will be passed to back-end debugger.
+
+PlatformIO dynamically configures back-end debugger depending on a debug environment.
+**Highly recommended to DO NOT override this option.**
+
+For example, the custom initial commands for GDB:
 
 .. code-block:: ini
 
