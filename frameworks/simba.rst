@@ -36,6 +36,9 @@ Platforms
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
+    * - :ref:`platform_espressif32_stage`
+      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
     * - :ref:`platform_espressif8266`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
@@ -55,6 +58,7 @@ Adafruit
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -62,6 +66,7 @@ Adafruit
 
     * - ``huzzah``
       - `Adafruit HUZZAH ESP8266 <https://www.adafruit.com/products/2471>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -75,6 +80,7 @@ Arduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -82,6 +88,7 @@ Arduino
 
     * - ``due``
       - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -89,6 +96,7 @@ Arduino
 
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -96,6 +104,7 @@ Arduino
 
     * - ``megaatmega2560``
       - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 16 MHz
       - 256 Kb
@@ -103,6 +112,7 @@ Arduino
 
     * - ``nanoatmega328``
       - `Arduino Nano ATmega328 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -110,6 +120,7 @@ Arduino
 
     * - ``uno``
       - `Arduino Uno <http://www.arduino.org/products/boards/4-arduino-boards/arduino-uno>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -123,6 +134,7 @@ Espressif
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -130,6 +142,7 @@ Espressif
 
     * - ``esp01``
       - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 512 Kb
@@ -137,6 +150,7 @@ Espressif
 
     * - ``esp01_1m``
       - `Espressif Generic ESP8266 ESP-01 1M <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 1024 Kb
@@ -144,6 +158,7 @@ Espressif
 
     * - ``esp12e``
       - `Espressif ESP8266 ESP-12E <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -157,6 +172,7 @@ MakerAsia
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -164,6 +180,15 @@ MakerAsia
 
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``nano32``
+      - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -177,6 +202,7 @@ NodeMCU
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -184,6 +210,7 @@ NodeMCU
 
     * - ``nodemcu``
       - `NodeMCU 0.9 (ESP-12 Module) <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -191,6 +218,7 @@ NodeMCU
 
     * - ``nodemcuv2``
       - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb

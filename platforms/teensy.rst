@@ -94,6 +94,7 @@ Teensy
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -101,6 +102,7 @@ Teensy
 
     * - ``teensy20``
       - `Teensy 2.0 <https://www.pjrc.com/store/teensy.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -108,6 +110,7 @@ Teensy
 
     * - ``teensy20pp``
       - `Teensy++ 2.0 <https://www.pjrc.com/store/teensypp.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - AT90USB1286
       - 16 MHz
       - 128 Kb
@@ -115,6 +118,7 @@ Teensy
 
     * - ``teensy30``
       - `Teensy 3.0 <https://www.pjrc.com/store/teensy3.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MK20DX128
       - 48 MHz
       - 128 Kb
@@ -122,6 +126,7 @@ Teensy
 
     * - ``teensy31``
       - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MK20DX256
       - 72 MHz
       - 256 Kb
@@ -129,6 +134,7 @@ Teensy
 
     * - ``teensy35``
       - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MK64FX512
       - 120 MHz
       - 512 Kb
@@ -136,6 +142,7 @@ Teensy
 
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MK66FX1M0
       - 180 MHz
       - 1024 Kb
@@ -143,6 +150,7 @@ Teensy
 
     * - ``teensylc``
       - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MKL26Z64
       - 48 MHz
       - 64 Kb

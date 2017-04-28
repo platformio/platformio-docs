@@ -49,6 +49,7 @@ TI
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -56,6 +57,7 @@ TI
 
     * - ``lplm4f120h5qr``
       - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl>`_
+      - :ref:`TI TIVA <platform_titiva>`
       - LPLM4F120H5QR
       - 80 MHz
       - 256 Kb
@@ -63,6 +65,7 @@ TI
 
     * - ``lpmsp430f5529``
       - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430F5529
       - 16 MHz
       - 128 Kb
@@ -70,6 +73,7 @@ TI
 
     * - ``lpmsp430fr4133``
       - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR4133
       - 8 MHz
       - 16 Kb
@@ -77,6 +81,7 @@ TI
 
     * - ``lpmsp430fr5739``
       - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR5739
       - 16 MHz
       - 16 Kb
@@ -84,6 +89,7 @@ TI
 
     * - ``lpmsp430fr5969``
       - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR5969
       - 8 MHz
       - 64 Kb
@@ -91,6 +97,7 @@ TI
 
     * - ``lpmsp430fr6989``
       - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR6989
       - 8 MHz
       - 128 Kb
@@ -98,6 +105,7 @@ TI
 
     * - ``lpmsp430g2553``
       - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430G2553
       - 16 MHz
       - 16 Kb
@@ -105,6 +113,7 @@ TI
 
     * - ``lptm4c1230c3pm``
       - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html>`_
+      - :ref:`TI TIVA <platform_titiva>`
       - LPTM4C1230C3PM
       - 80 MHz
       - 256 Kb
@@ -112,6 +121,7 @@ TI
 
     * - ``lptm4c1294ncpdt``
       - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html>`_
+      - :ref:`TI TIVA <platform_titiva>`
       - LPTM4C1294NCPDT
       - 120 MHz
       - 1024 Kb

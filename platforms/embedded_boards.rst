@@ -33,6 +33,7 @@ popular embedded boards and IDE.
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -40,6 +41,7 @@ popular embedded boards and IDE.
 
     * - ``picadillo_35t``
       - `4DSystems PICadillo 35T <http://www.4dsystems.com.au/product/Picadillo_35T/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -53,6 +55,7 @@ popular embedded boards and IDE.
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -60,6 +63,7 @@ popular embedded boards and IDE.
 
     * - ``b96b_f446ve``
       - `96Boards B96B-F446VE <https://developer.mbed.org/platforms/ST-B96B-F446VE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F446VET6
       - 168 MHz
       - 512 Kb
@@ -73,6 +77,7 @@ Adafruit
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -80,6 +85,7 @@ Adafruit
 
     * - ``adafruit_circuitplayground_m0``
       - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -87,6 +93,7 @@ Adafruit
 
     * - ``adafruit_feather_m0_usb``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -94,6 +101,7 @@ Adafruit
 
     * - ``bluefruitmicro``
       - `Adafruit Bluefruit Micro <https://www.adafruit.com/products/2661>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -101,6 +109,7 @@ Adafruit
 
     * - ``feather32u4``
       - `Adafruit Feather <https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -108,6 +117,7 @@ Adafruit
 
     * - ``flora8``
       - `Adafruit Flora <http://www.adafruit.com/product/659>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -115,6 +125,7 @@ Adafruit
 
     * - ``gemma``
       - `Adafruit Gemma <http://www.adafruit.com/products/1222>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 8 MHz
       - 8 Kb
@@ -122,6 +133,7 @@ Adafruit
 
     * - ``huzzah``
       - `Adafruit HUZZAH ESP8266 <https://www.adafruit.com/products/2471>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -129,6 +141,7 @@ Adafruit
 
     * - ``metro``
       - `Adafruit Metro <https://www.adafruit.com/products/2466>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -136,6 +149,7 @@ Adafruit
 
     * - ``protrinket3``
       - `Adafruit Pro Trinket 3V/12MHz (USB) <http://www.adafruit.com/products/2010>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 12 MHz
       - 32 Kb
@@ -143,6 +157,7 @@ Adafruit
 
     * - ``protrinket3ftdi``
       - `Adafruit Pro Trinket 3V/12MHz (FTDI) <http://www.adafruit.com/products/2010>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 12 MHz
       - 32 Kb
@@ -150,6 +165,7 @@ Adafruit
 
     * - ``protrinket5``
       - `Adafruit Pro Trinket 5V/16MHz (USB) <http://www.adafruit.com/products/2000>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -157,6 +173,7 @@ Adafruit
 
     * - ``protrinket5ftdi``
       - `Adafruit Pro Trinket 5V/16MHz (FTDI) <http://www.adafruit.com/products/2000>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -164,6 +181,7 @@ Adafruit
 
     * - ``trinket3``
       - `Adafruit Trinket 3V/8MHz <http://www.adafruit.com/products/1500>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 8 MHz
       - 8 Kb
@@ -171,6 +189,7 @@ Adafruit
 
     * - ``trinket5``
       - `Adafruit Trinket 5V/16MHz <http://www.adafruit.com/products/1501>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 16 MHz
       - 8 Kb
@@ -184,6 +203,7 @@ Aiyarafun
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -191,6 +211,15 @@ Aiyarafun
 
     * - ``node32s``
       - `Node32s <http://www.ayarafun.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 112 Kb
+
+    * - ``node32s``
+      - `Node32s <http://www.ayarafun.com>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -204,6 +233,7 @@ April Brother
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -211,6 +241,15 @@ April Brother
 
     * - ``espea32``
       - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``espea32``
+      - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -224,6 +263,7 @@ Arduboy
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -231,6 +271,7 @@ Arduboy
 
     * - ``arduboy``
       - `Arduboy <https://www.arduboy.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -238,6 +279,7 @@ Arduboy
 
     * - ``arduboy_devkit``
       - `Arduboy DevKit <https://www.arduboy.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -251,6 +293,7 @@ Arduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -258,6 +301,7 @@ Arduino
 
     * - ``LilyPadUSB``
       - `Arduino LilyPad USB <http://arduino.cc/en/Main/ArduinoBoardLilyPadUSB>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -265,6 +309,7 @@ Arduino
 
     * - ``atmega328pb``
       - `Atmel ATmega328PB <http://www.atmel.com/devices/ATMEGA328PB.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328PB
       - 16 MHz
       - 32 Kb
@@ -272,6 +317,7 @@ Arduino
 
     * - ``atmegangatmega168``
       - `Arduino NG or older ATmega168 <http://arduino.cc/en/main/boards>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -279,6 +325,7 @@ Arduino
 
     * - ``atmegangatmega8``
       - `Arduino NG or older ATmega8 <http://arduino.cc/en/main/boards>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA8
       - 16 MHz
       - 8 Kb
@@ -286,6 +333,7 @@ Arduino
 
     * - ``btatmega168``
       - `Arduino BT ATmega168 <http://arduino.cc/en/main/boards>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -293,6 +341,7 @@ Arduino
 
     * - ``btatmega328``
       - `Arduino BT ATmega328 <http://arduino.cc/en/main/boards>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -300,6 +349,7 @@ Arduino
 
     * - ``chiwawa``
       - `Arduino Industrial 101 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-industrial-101>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -307,6 +357,7 @@ Arduino
 
     * - ``diecimilaatmega168``
       - `Arduino Duemilanove or Diecimila ATmega168 <http://arduino.cc/en/Main/ArduinoBoardDiecimila>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -314,6 +365,7 @@ Arduino
 
     * - ``diecimilaatmega328``
       - `Arduino Duemilanove or Diecimila ATmega328 <http://arduino.cc/en/Main/ArduinoBoardDiecimila>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -321,6 +373,7 @@ Arduino
 
     * - ``due``
       - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -328,6 +381,7 @@ Arduino
 
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -335,6 +389,7 @@ Arduino
 
     * - ``esplora``
       - `Arduino Esplora <http://www.arduino.org/products/boards/4-arduino-boards/arduino-esplora>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -342,6 +397,7 @@ Arduino
 
     * - ``ethernet``
       - `Arduino Ethernet <http://www.arduino.org/products/boards/4-arduino-boards/arduino-ethernet>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -349,6 +405,7 @@ Arduino
 
     * - ``fio``
       - `Arduino Fio <http://arduino.cc/en/Main/ArduinoBoardFio>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -356,6 +413,7 @@ Arduino
 
     * - ``leonardo``
       - `Arduino Leonardo <http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -363,6 +421,7 @@ Arduino
 
     * - ``leonardoeth``
       - `Arduino Leonardo ETH <http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo-eth>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -370,6 +429,7 @@ Arduino
 
     * - ``lilypadatmega168``
       - `Arduino LilyPad ATmega168 <http://arduino.cc/en/Main/ArduinoBoardLilyPad>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 8 MHz
       - 16 Kb
@@ -377,6 +437,7 @@ Arduino
 
     * - ``lilypadatmega328``
       - `Arduino LilyPad ATmega328 <http://arduino.cc/en/Main/ArduinoBoardLilyPad>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -384,6 +445,7 @@ Arduino
 
     * - ``megaADK``
       - `Arduino Mega ADK <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-adk>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 16 MHz
       - 256 Kb
@@ -391,6 +453,7 @@ Arduino
 
     * - ``megaatmega1280``
       - `Arduino Mega or Mega 2560 ATmega1280 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1280
       - 16 MHz
       - 128 Kb
@@ -398,6 +461,7 @@ Arduino
 
     * - ``megaatmega2560``
       - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 16 MHz
       - 256 Kb
@@ -405,6 +469,7 @@ Arduino
 
     * - ``micro``
       - `Arduino Micro <http://www.arduino.org/products/boards/4-arduino-boards/arduino-micro>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -412,6 +477,7 @@ Arduino
 
     * - ``miniatmega168``
       - `Arduino Mini ATmega168 <http://arduino.cc/en/Main/ArduinoBoardMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -419,6 +485,7 @@ Arduino
 
     * - ``miniatmega328``
       - `Arduino Mini ATmega328 <http://arduino.cc/en/Main/ArduinoBoardMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -426,6 +493,15 @@ Arduino
 
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``mkrfox1200``
+      - `Arduino MKRFox1200 <https://www.arduino.cc/en/Main.ArduinoBoardMKRFox1200>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -433,6 +509,7 @@ Arduino
 
     * - ``mkrzero``
       - `Arduino MKRZero <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -440,13 +517,15 @@ Arduino
 
     * - ``mzeroUSB``
       - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
       - 32 Kb
 
     * - ``mzeropro``
-      - `Arduino M0 Pro (Programming Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - `Arduino M0 Pro (Programming/Debug Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -454,6 +533,7 @@ Arduino
 
     * - ``mzeroproUSB``
       - `Arduino M0 Pro (Native USB Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -461,6 +541,7 @@ Arduino
 
     * - ``nanoatmega168``
       - `Arduino Nano ATmega168 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -468,6 +549,7 @@ Arduino
 
     * - ``nanoatmega328``
       - `Arduino Nano ATmega328 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -475,6 +557,7 @@ Arduino
 
     * - ``pro16MHzatmega168``
       - `Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -482,6 +565,7 @@ Arduino
 
     * - ``pro16MHzatmega328``
       - `Arduino Pro or Pro Mini ATmega328 (5V, 16 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -489,6 +573,7 @@ Arduino
 
     * - ``pro8MHzatmega168``
       - `Arduino Pro or Pro Mini ATmega168 (3.3V, 8 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 8 MHz
       - 16 Kb
@@ -496,6 +581,7 @@ Arduino
 
     * - ``pro8MHzatmega328``
       - `Arduino Pro or Pro Mini ATmega328 (3.3V, 8 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -503,6 +589,7 @@ Arduino
 
     * - ``robotControl``
       - `Arduino Robot Control <http://www.arduino.org/products/boards/4-arduino-boards/arduino-robot>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -510,6 +597,7 @@ Arduino
 
     * - ``robotMotor``
       - `Arduino Robot Motor <http://www.arduino.org/products/boards/4-arduino-boards/arduino-robot>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -517,6 +605,7 @@ Arduino
 
     * - ``tian``
       - `Arduino Tian <http://www.arduino.org/products/boards/arduino-tian>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -524,6 +613,7 @@ Arduino
 
     * - ``uno``
       - `Arduino Uno <http://www.arduino.org/products/boards/4-arduino-boards/arduino-uno>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -531,6 +621,7 @@ Arduino
 
     * - ``yun``
       - `Arduino Yun <http://www.arduino.org/products/boards/4-arduino-boards/arduino-yun>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -538,13 +629,15 @@ Arduino
 
     * - ``yunmini``
       - `Arduino Yun Mini <http://www.arduino.org/products/boards/4-arduino-boards/arduino-yun-mini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
       - 2.5 Kb
 
     * - ``zero``
-      - `Arduino Zero (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero>`_
+      - `Arduino Zero (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -552,6 +645,7 @@ Arduino
 
     * - ``zeroUSB``
       - `Arduino Zero (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -565,6 +659,7 @@ Armstrap
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -572,6 +667,7 @@ Armstrap
 
     * - ``armstrap_eagle1024``
       - `Armstrap Eagle 1024 <http://docs.armstrap.org/en/latest/hardware-overview.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F417VGT6
       - 168 MHz
       - 1024 Kb
@@ -579,6 +675,7 @@ Armstrap
 
     * - ``armstrap_eagle2048``
       - `Armstrap Eagle 2048 <http://docs.armstrap.org/en/latest/hardware-overview.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F427VIT6
       - 168 MHz
       - 2048 Kb
@@ -586,6 +683,7 @@ Armstrap
 
     * - ``armstrap_eagle512``
       - `Armstrap Eagle 512 <http://docs.armstrap.org/en/latest/hardware-overview.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F407VET6
       - 168 MHz
       - 512 Kb
@@ -599,6 +697,7 @@ Atmel
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -606,6 +705,7 @@ Atmel
 
     * - ``samd21_xpro``
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - ATSAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -613,6 +713,7 @@ Atmel
 
     * - ``samd21g18a``
       - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - ATSAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -620,6 +721,7 @@ Atmel
 
     * - ``saml21_xpro_b``
       - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - ATSAML21J18B
       - 48 MHz
       - 256 Kb
@@ -627,6 +729,7 @@ Atmel
 
     * - ``samr21_xpro``
       - `Atmel ATSAMR21-XPRO <https://developer.mbed.org/platforms/SAMR21-XPRO/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - ATSAMR21G18A
       - 48 MHz
       - 256 Kb
@@ -640,6 +743,7 @@ BBC
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -647,6 +751,7 @@ BBC
 
     * - ``bbcmicrobit``
       - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -654,6 +759,7 @@ BBC
 
     * - ``bbcmicrobit_b``
       - `BBC micro:bit B(S130) <https://developer.mbed.org/platforms/Microbit/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -667,6 +773,7 @@ BQ
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -674,6 +781,7 @@ BQ
 
     * - ``zumbt328``
       - `BQ ZUM BT-328 <http://www.bq.com/gb/products/zum.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -687,6 +795,7 @@ BitWizard
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -694,6 +803,7 @@ BitWizard
 
     * - ``raspduino``
       - `BitWizard Raspduino <http://www.bitwizard.nl/wiki/index.php/Raspduino>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -707,6 +817,7 @@ CQ Publishing
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -714,10 +825,33 @@ CQ Publishing
 
     * - ``lpc11u35_501``
       - `CQ Publishing TG-LPC11U35-501 <https://developer.mbed.org/platforms/TG-LPC11U35-501/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U35
       - 48 MHz
       - 64 Kb
       - 10 Kb
+
+DFRobot
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``firebeetle32``
+      - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 Delta
 ~~~~~
@@ -727,6 +861,7 @@ Delta
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -734,6 +869,7 @@ Delta
 
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 32 MHz
       - 256 Kb
@@ -747,6 +883,7 @@ Digilent
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -754,6 +891,7 @@ Digilent
 
     * - ``cerebot32mx4``
       - `Digilent Cerebot 32MX4 <http://store.digilentinc.com/cerebot-32mx4-limited-time-see-chipkit-pro-mx4/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX460F512L
       - 80 MHz
       - 512 Kb
@@ -761,6 +899,7 @@ Digilent
 
     * - ``cerebot32mx7``
       - `Digilent Cerebot 32MX7 <http://www.microchip.com/Developmenttools/ProductDetails.aspx?PartNO=TDGL004>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -768,6 +907,7 @@ Digilent
 
     * - ``chipkit_cmod``
       - `Digilent chipKIT Cmod <http://store.digilentinc.com/chipkit-cmod-breadboardable-mz-microcontroller-board/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX150F128D
       - 40 MHz
       - 128 Kb
@@ -775,6 +915,7 @@ Digilent
 
     * - ``chipkit_dp32``
       - `Digilent chipKIT DP32 <http://store.digilentinc.com/chipkit-dp32-dip-package-prototyping-microcontroller-board/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX250F128B
       - 40 MHz
       - 128 Kb
@@ -782,6 +923,7 @@ Digilent
 
     * - ``chipkit_mx3``
       - `Digilent chipKIT MX3 <http://store.digilentinc.com/chipkit-mx3-microcontroller-board-with-pmod-headers/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX320F128H
       - 80 MHz
       - 128 Kb
@@ -789,6 +931,7 @@ Digilent
 
     * - ``chipkit_pro_mx4``
       - `Digilent chipKIT Pro MX4 <http://store.digilentinc.com/chipkit-pro-mx4-embedded-systems-trainer-board/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX460F512L
       - 80 MHz
       - 512 Kb
@@ -796,6 +939,7 @@ Digilent
 
     * - ``chipkit_pro_mx7``
       - `Digilent chipKIT Pro MX7 <http://store.digilentinc.com/chipkit-pro-mx7-advanced-peripherals-embedded-systems-trainer-board/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -803,6 +947,7 @@ Digilent
 
     * - ``chipkit_uc32``
       - `Digilent chipKIT uC32 <http://store.digilentinc.com/chipkit-uc32-basic-microcontroller-board-with-uno-r3-headers/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX340F512H
       - 80 MHz
       - 512 Kb
@@ -810,6 +955,7 @@ Digilent
 
     * - ``chipkit_wf32``
       - `Digilent chipKIT WF32 <http://store.digilentinc.com/chipkit-wf32-wifi-enabled-microntroller-board-with-uno-r3-headers/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX695F512L
       - 80 MHz
       - 512 Kb
@@ -817,6 +963,7 @@ Digilent
 
     * - ``chipkit_wifire``
       - `Digilent chipKIT WiFire <http://store.digilentinc.com/chipkit-wi-fire-wifi-enabled-mz-microcontroller-board/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MZ2048ECG100
       - 200 MHz
       - 2048 Kb
@@ -824,6 +971,7 @@ Digilent
 
     * - ``mega_pic32``
       - `Digilent chipKIT MAX32 <http://store.digilentinc.com/chipkit-max32-microcontroller-board-with-mega-r3-headers/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -831,6 +979,7 @@ Digilent
 
     * - ``openscope``
       - `Digilent OpenScope <http://store.digilentinc.com/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MZ2048EFG124
       - 200 MHz
       - 2048 Kb
@@ -838,6 +987,7 @@ Digilent
 
     * - ``uno_pic32``
       - `Digilent chipKIT UNO32 <http://store.digilentinc.com/chipkit-uno32-basic-microcontroller-board-retired-see-chipkit-uc32/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX320F128H
       - 80 MHz
       - 128 Kb
@@ -851,6 +1001,7 @@ Digistump
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -858,6 +1009,7 @@ Digistump
 
     * - ``digispark-pro``
       - `Digistump Digispark Pro (Default 16 MHz) <http://digistump.com/products/109>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY167
       - 16 MHz
       - 16 Kb
@@ -865,6 +1017,7 @@ Digistump
 
     * - ``digispark-pro32``
       - `Digistump Digispark Pro (16 MHz) (32 byte buffer) <http://digistump.com/products/109>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY167
       - 16 MHz
       - 16 Kb
@@ -872,6 +1025,7 @@ Digistump
 
     * - ``digispark-pro64``
       - `Digistump Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY167
       - 16 MHz
       - 16 Kb
@@ -879,6 +1033,7 @@ Digistump
 
     * - ``digispark-tiny``
       - `Digistump Digispark (Default - 16 MHz) <http://digistump.com/products/1>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 16 MHz
       - 8 Kb
@@ -886,6 +1041,7 @@ Digistump
 
     * - ``digix``
       - `Digistump DigiX <http://digistump.com/products/50>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -899,6 +1055,7 @@ Doit
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -906,10 +1063,33 @@ Doit
 
     * - ``espduino``
       - `ESPDuino (ESP-13 Module) <https://www.tindie.com/products/doit/espduinowifi-uno-r3/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
       - 80 Kb
+
+Dwengo
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``dwenguino``
+      - `Dwenguino <http://www.dwengo.org/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - AT90USB646
+      - 16 MHz
+      - 64 Kb
+      - 2 Kb
 
 DycodeX
 ~~~~~~~
@@ -919,6 +1099,7 @@ DycodeX
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -926,6 +1107,7 @@ DycodeX
 
     * - ``espectro``
       - `ESPrectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -939,6 +1121,7 @@ ESPert
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -946,6 +1129,7 @@ ESPert
 
     * - ``espresso_lite_v1``
       - `ESPresso Lite 1.0 <http://www.espert.co>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -953,6 +1137,7 @@ ESPert
 
     * - ``espresso_lite_v2``
       - `ESPresso Lite 2.0 <http://www.espert.co>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -966,6 +1151,7 @@ ESPino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -973,6 +1159,7 @@ ESPino
 
     * - ``espino``
       - `ESPino <http://www.espino.io>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -986,6 +1173,7 @@ Electronic SweetPeas
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -993,6 +1181,15 @@ Electronic SweetPeas
 
     * - ``esp320``
       - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``esp320``
+      - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -1006,6 +1203,7 @@ Elektor Labs
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1013,6 +1211,7 @@ Elektor Labs
 
     * - ``elektor_cocorico``
       - `CoCo-ri-Co! <https://developer.mbed.org/platforms/CoCo-ri-Co/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC812
       - 30 MHz
       - 16 Kb
@@ -1026,6 +1225,7 @@ Embedded Artists
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1033,6 +1233,7 @@ Embedded Artists
 
     * - ``lpc11u35``
       - `EA LPC11U35 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC11U35/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U35
       - 48 MHz
       - 64 Kb
@@ -1040,6 +1241,7 @@ Embedded Artists
 
     * - ``lpc4088``
       - `Embedded Artists LPC4088 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC4088/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC4088
       - 120 MHz
       - 512 Kb
@@ -1047,6 +1249,7 @@ Embedded Artists
 
     * - ``lpc4088_dm``
       - `Embedded Artists LPC4088 Display Module <https://developer.mbed.org/platforms/EA-LPC4088-Display-Module/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC4088
       - 120 MHz
       - 512 Kb
@@ -1060,6 +1263,7 @@ Engduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1067,6 +1271,7 @@ Engduino
 
     * - ``engduinov3``
       - `Engduino 3 <http://www.engduino.org>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -1080,6 +1285,7 @@ EnviroDIY
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1087,6 +1293,7 @@ EnviroDIY
 
     * - ``mayfly``
       - `EnviroDIY Mayfly <http://envirodiy.org/forums/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -1100,6 +1307,7 @@ Espotel
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1107,6 +1315,7 @@ Espotel
 
     * - ``elmo_f411re``
       - `Espotel LoRa Module <https://developer.mbed.org/platforms/Espotel-ELMO/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F411RET6
       - 100 MHz
       - 512 Kb
@@ -1120,6 +1329,7 @@ Espressif
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1127,6 +1337,7 @@ Espressif
 
     * - ``esp01``
       - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 512 Kb
@@ -1134,6 +1345,7 @@ Espressif
 
     * - ``esp01_1m``
       - `Espressif Generic ESP8266 ESP-01 1M <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 1024 Kb
@@ -1141,6 +1353,7 @@ Espressif
 
     * - ``esp07``
       - `Espressif Generic ESP8266 ESP-07 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family#esp-07>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -1148,6 +1361,7 @@ Espressif
 
     * - ``esp12e``
       - `Espressif ESP8266 ESP-12E <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -1155,6 +1369,15 @@ Espressif
 
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``esp32dev``
+      - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -1162,6 +1385,7 @@ Espressif
 
     * - ``esp8285``
       - `Generic ESP8285 Module <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 448 Kb
@@ -1169,6 +1393,7 @@ Espressif
 
     * - ``esp_wroom_02``
       - `ESP-WROOM-02 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -1176,6 +1401,7 @@ Espressif
 
     * - ``phoenix_v1``
       - `Phoenix 1.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 1024 Kb
@@ -1183,6 +1409,7 @@ Espressif
 
     * - ``phoenix_v2``
       - `Phoenix 2.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 1024 Kb
@@ -1190,6 +1417,7 @@ Espressif
 
     * - ``wifinfo``
       - `WifInfo <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 448 Kb
@@ -1203,6 +1431,7 @@ FPGAwars
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1210,6 +1439,7 @@ FPGAwars
 
     * - ``icezum``
       - `IceZUM Alhambra FPGA <https://github.com/FPGAwars/icezum/wiki>`_
+      - :ref:`Lattice iCE40 <platform_lattice_ice40>`
       - ICE40-HX1K-TQ144
       - 12 MHz
       - 32 Kb
@@ -1223,6 +1453,7 @@ Freescale
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1230,6 +1461,7 @@ Freescale
 
     * - ``IBMEthernetKit``
       - `Ethernet IoT Starter Kit <http://developer.mbed.org/platforms/IBMEthernetKit/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MK64FN1M0VLL12
       - 120 MHz
       - 1024 Kb
@@ -1237,6 +1469,7 @@ Freescale
 
     * - ``frdm_k20d50m``
       - `Freescale Kinetis FRDM-K20D50M <https://developer.mbed.org/platforms/FRDM-K20D50M/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MK20DX128VLH5
       - 48 MHz
       - 128 Kb
@@ -1244,6 +1477,7 @@ Freescale
 
     * - ``frdm_k22f``
       - `Freescale Kinetis FRDM-K22F <https://developer.mbed.org/platforms/FRDM-K22F/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MK22FN512VLH12
       - 120 MHz
       - 512 Kb
@@ -1251,6 +1485,7 @@ Freescale
 
     * - ``frdm_k64f``
       - `Freescale Kinetis FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MK64FN1M0VLL12
       - 120 MHz
       - 1024 Kb
@@ -1258,6 +1493,7 @@ Freescale
 
     * - ``frdm_kl05z``
       - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MKL05Z32VFM4
       - 48 MHz
       - 32 Kb
@@ -1265,6 +1501,7 @@ Freescale
 
     * - ``frdm_kl25z``
       - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MKL25Z128VLK4
       - 48 MHz
       - 128 Kb
@@ -1272,6 +1509,7 @@ Freescale
 
     * - ``frdm_kl26z``
       - `Freescale Kinetis FRDM-KL26Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MKL26Z128VLH4
       - 48 MHz
       - 128 Kb
@@ -1279,6 +1517,7 @@ Freescale
 
     * - ``frdm_kl27z``
       - `Freescale Kinetis FRDM-KL27Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl17-and-kl27-mcus:FRDM-KL27Z>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MKL27Z64VLH4
       - 48 MHz
       - 64 Kb
@@ -1286,6 +1525,7 @@ Freescale
 
     * - ``frdm_kl43z``
       - `Freescale Kinetis FRDM-KL43Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl43-kl33-kl27-kl17-and-kl13-mcus:FRDM-KL43Z>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MKL43Z256VLH4
       - 48 MHz
       - 256 Kb
@@ -1293,6 +1533,7 @@ Freescale
 
     * - ``frdm_kl46z``
       - `Freescale Kinetis FRDM-KL46Z <https://developer.mbed.org/platforms/FRDM-KL46Z/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MKL46Z256VLL4
       - 48 MHz
       - 256 Kb
@@ -1306,6 +1547,7 @@ Fubarino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1313,6 +1555,7 @@ Fubarino
 
     * - ``fubarino_mini``
       - `Fubarino Mini <http://fubarino.org/mini/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX250F128D
       - 48 MHz
       - 128 Kb
@@ -1320,6 +1563,7 @@ Fubarino
 
     * - ``fubarino_sd``
       - `Fubarino SD (1.5) <http://fubarino.org/sd/index.html>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX795F512H
       - 80 MHz
       - 512 Kb
@@ -1333,6 +1577,7 @@ GHI Electronics
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1340,6 +1585,7 @@ GHI Electronics
 
     * - ``oc_mbuino``
       - `mBuino <https://developer.mbed.org/platforms/mBuino/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U24
       - 50 MHz
       - 32 Kb
@@ -1353,6 +1599,7 @@ Generic
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1360,6 +1607,7 @@ Generic
 
     * - ``bluepill_f103c8``
       - `BluePill F103C8 <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103C8T6
       - 72 MHz
       - 64 Kb
@@ -1367,6 +1615,7 @@ Generic
 
     * - ``genericSTM32F103C8``
       - `STM32F103C8 (20k RAM. 64k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103C8
       - 72 MHz
       - 64 Kb
@@ -1374,6 +1623,7 @@ Generic
 
     * - ``genericSTM32F103CB``
       - `STM32F103CB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103cb.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103CB
       - 72 MHz
       - 128 Kb
@@ -1381,6 +1631,7 @@ Generic
 
     * - ``genericSTM32F103R8``
       - `STM32F103R8 (20k RAM. 64 Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103r8.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103R8
       - 72 MHz
       - 64 Kb
@@ -1388,6 +1639,7 @@ Generic
 
     * - ``genericSTM32F103RB``
       - `STM32F103RB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rb.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103RB
       - 72 MHz
       - 128 Kb
@@ -1395,6 +1647,7 @@ Generic
 
     * - ``genericSTM32F103RC``
       - `STM32F103RC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rc.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103RC
       - 72 MHz
       - 256 Kb
@@ -1402,6 +1655,7 @@ Generic
 
     * - ``genericSTM32F103RE``
       - `STM32F103RE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103re.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103RE
       - 72 MHz
       - 512 Kb
@@ -1415,6 +1669,7 @@ Generic ATTiny
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1422,6 +1677,7 @@ Generic ATTiny
 
     * - ``attiny13``
       - `Generic ATTiny13 <http://www.atmel.com/devices/ATTINY13.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY13
       - 9 MHz
       - 1 Kb
@@ -1429,6 +1685,7 @@ Generic ATTiny
 
     * - ``attiny2313``
       - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY2313
       - 8 MHz
       - 2 Kb
@@ -1436,6 +1693,7 @@ Generic ATTiny
 
     * - ``attiny24``
       - `Generic ATTiny24 <http://www.atmel.com/devices/ATTINY24.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY24
       - 8 MHz
       - 2 Kb
@@ -1443,6 +1701,7 @@ Generic ATTiny
 
     * - ``attiny25``
       - `Generic ATTiny25 <http://www.atmel.com/devices/ATTINY25.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY25
       - 8 MHz
       - 2 Kb
@@ -1450,6 +1709,7 @@ Generic ATTiny
 
     * - ``attiny4313``
       - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY4313
       - 8 MHz
       - 4 Kb
@@ -1457,6 +1717,7 @@ Generic ATTiny
 
     * - ``attiny44``
       - `Generic ATTiny44 <http://www.atmel.com/devices/ATTINY44.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY44
       - 8 MHz
       - 4 Kb
@@ -1464,6 +1725,7 @@ Generic ATTiny
 
     * - ``attiny45``
       - `Generic ATTiny45 <http://www.atmel.com/devices/ATTINY45.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY45
       - 8 MHz
       - 4 Kb
@@ -1471,6 +1733,7 @@ Generic ATTiny
 
     * - ``attiny84``
       - `Generic ATTiny84 <http://www.atmel.com/devices/ATTINY84.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY84
       - 8 MHz
       - 8 Kb
@@ -1478,6 +1741,7 @@ Generic ATTiny
 
     * - ``attiny85``
       - `Generic ATTiny85 <http://www.atmel.com/devices/ATTINY85.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 8 MHz
       - 8 Kb
@@ -1491,6 +1755,7 @@ Hornbill
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1498,6 +1763,15 @@ Hornbill
 
     * - ``hornbill32dev``
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``hornbill32dev``
+      - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -1505,6 +1779,15 @@ Hornbill
 
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``hornbill32minima``
+      - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -1518,6 +1801,7 @@ Intel
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1525,10 +1809,33 @@ Intel
 
     * - ``genuino101``
       - `Arduino/Genuino 101 <https://www.arduino.cc/en/Main/ArduinoBoard101>`_
+      - :ref:`Intel ARC32 <platform_intel_arc32>`
       - ARCV2EM
       - 32 MHz
       - 192 Kb
       - 80 Kb
+
+IntoRobot
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``intorobot``
+      - `IntoRobot Fig <http://docs.intorobot.com/zh/hardware/fig/hardware/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 JKSoft
 ~~~~~~
@@ -1538,6 +1845,7 @@ JKSoft
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1545,6 +1853,7 @@ JKSoft
 
     * - ``wallbot_ble``
       - `JKSoft Wallbot BLE <https://developer.mbed.org/platforms/JKSoft-Wallbot-BLE/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -1558,6 +1867,7 @@ Lattice
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1565,6 +1875,7 @@ Lattice
 
     * - ``icestick``
       - `Lattice iCEstick FPGA Evaluation Kit <http://www.latticesemi.com/icestick>`_
+      - :ref:`Lattice iCE40 <platform_lattice_ice40>`
       - ICE40-HX1K-TQ144
       - 12 MHz
       - 32 Kb
@@ -1578,6 +1889,7 @@ LeafLabs
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1585,6 +1897,7 @@ LeafLabs
 
     * - ``maple``
       - `Maple <http://www.leaflabs.com/maple/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103RB
       - 72 MHz
       - 128 Kb
@@ -1592,6 +1905,7 @@ LeafLabs
 
     * - ``maple_mini_b20``
       - `Maple Mini Bootloader 2.0 <http://www.leaflabs.com/maple/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103CB
       - 72 MHz
       - 128 Kb
@@ -1599,6 +1913,7 @@ LeafLabs
 
     * - ``maple_mini_origin``
       - `Maple Mini Original <http://www.leaflabs.com/maple/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103CB
       - 72 MHz
       - 128 Kb
@@ -1612,6 +1927,7 @@ LightUp
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1619,6 +1935,7 @@ LightUp
 
     * - ``lightup``
       - `LightUp <https://www.lightup.io/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -1632,6 +1949,7 @@ Linino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1639,6 +1957,7 @@ Linino
 
     * - ``one``
       - `Linino One <http://www.linino.org/portfolio/linino-one/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -1652,6 +1971,7 @@ LowPowerLab
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1659,6 +1979,7 @@ LowPowerLab
 
     * - ``moteino``
       - `LowPowerLab Moteino <https://lowpowerlab.com/shop/moteino-r4>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -1666,6 +1987,7 @@ LowPowerLab
 
     * - ``moteinomega``
       - `LowPowerLab MoteinoMEGA <http://lowpowerlab.com/blog/2014/08/09/moteinomega-available-now/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -1679,6 +2001,7 @@ MakerAsia
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1686,6 +2009,15 @@ MakerAsia
 
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``nano32``
+      - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -1699,6 +2031,7 @@ Mcudude
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1706,6 +2039,7 @@ Mcudude
 
     * - ``mightycore1284``
       - `MightyCore ATmega1284 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -1713,6 +2047,7 @@ Mcudude
 
     * - ``mightycore16``
       - `MightyCore ATmega16 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA16
       - 16 MHz
       - 16 Kb
@@ -1720,6 +2055,7 @@ Mcudude
 
     * - ``mightycore164``
       - `MightyCore ATmega164 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA164P
       - 16 MHz
       - 16 Kb
@@ -1727,6 +2063,7 @@ Mcudude
 
     * - ``mightycore32``
       - `MightyCore ATmega32 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32
       - 16 MHz
       - 32 Kb
@@ -1734,6 +2071,7 @@ Mcudude
 
     * - ``mightycore324``
       - `MightyCore ATmega324 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA324P
       - 16 MHz
       - 32 Kb
@@ -1741,6 +2079,7 @@ Mcudude
 
     * - ``mightycore644``
       - `MightyCore ATmega644 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 16 MHz
       - 64 Kb
@@ -1748,6 +2087,7 @@ Mcudude
 
     * - ``mightycore8535``
       - `MightyCore ATmega8535 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA16
       - 16 MHz
       - 8 Kb
@@ -1761,6 +2101,7 @@ Microduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1768,6 +2109,7 @@ Microduino
 
     * - ``1284p16m``
       - `Microduino Core+ (ATmega1284P@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -1775,6 +2117,7 @@ Microduino
 
     * - ``1284p8m``
       - `Microduino Core+ (ATmega1284P@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -1782,6 +2125,7 @@ Microduino
 
     * - ``168pa16m``
       - `Microduino Core (Atmega168PA@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168P
       - 16 MHz
       - 16 Kb
@@ -1789,6 +2133,7 @@ Microduino
 
     * - ``168pa8m``
       - `Microduino Core (Atmega168PA@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168P
       - 8 MHz
       - 16 Kb
@@ -1796,6 +2141,7 @@ Microduino
 
     * - ``328p16m``
       - `Microduino Core (Atmega328P@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -1803,6 +2149,7 @@ Microduino
 
     * - ``328p8m``
       - `Microduino Core (Atmega328P@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -1810,6 +2157,7 @@ Microduino
 
     * - ``32u416m``
       - `Microduino Core USB (ATmega32U4@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-CoreUSB>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -1817,6 +2165,7 @@ Microduino
 
     * - ``644pa16m``
       - `Microduino Core+ (Atmega644PA@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 16 MHz
       - 64 Kb
@@ -1824,6 +2173,7 @@ Microduino
 
     * - ``644pa8m``
       - `Microduino Core+ (Atmega644PA@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 8 MHz
       - 64 Kb
@@ -1837,6 +2187,7 @@ Micromint
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1844,6 +2195,7 @@ Micromint
 
     * - ``lpc4330_m4``
       - `Bambino-210E <https://developer.mbed.org/platforms/Micromint-Bambino-210E/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC4330
       - 204 MHz
       - 8192 Kb
@@ -1851,6 +2203,7 @@ Micromint
 
     * - ``lpc4337``
       - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC4337
       - 204 MHz
       - 1024 Kb
@@ -1864,6 +2217,7 @@ MikroElektronika
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1871,6 +2225,7 @@ MikroElektronika
 
     * - ``clicker2``
       - `MikroElektronika Clicker 2 <http://www.mikroe.com/pic/clicker/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX460F512L
       - 80 MHz
       - 512 Kb
@@ -1878,6 +2233,7 @@ MikroElektronika
 
     * - ``hexiwear``
       - `Hexiwear <https://developer.mbed.org/platforms/Hexiwear/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - MK64FN1M0VDC12
       - 120 MHz
       - 1024 Kb
@@ -1891,6 +2247,7 @@ MultiTech
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1898,6 +2255,7 @@ MultiTech
 
     * - ``mts_dragonfly_f411re``
       - `MTS Dragonfly <https://developer.mbed.org/platforms/MTS-Dragonfly/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F411RET6
       - 100 MHz
       - 512 Kb
@@ -1905,6 +2263,7 @@ MultiTech
 
     * - ``mts_mdot_f405rg``
       - `MultiTech mDot <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F411RET6
       - 100 MHz
       - 512 Kb
@@ -1912,6 +2271,7 @@ MultiTech
 
     * - ``mts_mdot_f411re``
       - `MultiTech mDot F411 <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F411RET6
       - 100 MHz
       - 512 Kb
@@ -1919,6 +2279,7 @@ MultiTech
 
     * - ``xdot_l151cc``
       - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L151CCU6
       - 32 MHz
       - 256 Kb
@@ -1932,6 +2293,7 @@ NGX Technologies
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1939,6 +2301,7 @@ NGX Technologies
 
     * - ``blueboard_lpc11u24``
       - `NGX Technologies BlueBoard-LPC11U24 <https://developer.mbed.org/platforms/BlueBoard-LPC11U24/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -1952,6 +2315,7 @@ NXP
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1959,6 +2323,7 @@ NXP
 
     * - ``lpc11c24``
       - `NXP LPC11C24 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/scalable-entry-level-32-bit-microcontroller-mcu-based-on-arm-cortex-m0-plus-m0-cores:LPC11C24FBD48>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11C24
       - 48 MHz
       - 32 Kb
@@ -1966,6 +2331,7 @@ NXP
 
     * - ``lpc11u24``
       - `NXP mbed LPC11U24 <https://developer.mbed.org/platforms/mbed-LPC11U24/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -1973,6 +2339,7 @@ NXP
 
     * - ``lpc11u24_301``
       - `ARM mbed LPC11U24 (+CAN) <https://developer.mbed.org/handbook/mbed-NXP-LPC11U24>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -1980,6 +2347,7 @@ NXP
 
     * - ``lpc11u34_421``
       - `NXP LPC11U34 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/40kb-flash-8kb-sram-lqfp48-package:LPC11U34FBD48?lang_cd=en>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U34
       - 48 MHz
       - 64 Kb
@@ -1987,6 +2355,7 @@ NXP
 
     * - ``lpc11u37_501``
       - `NXP LPC11U37 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/128kb-flash-10kb-sram-lqfp48-package:LPC11U37FBD48?lang_cd=en>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U37
       - 48 MHz
       - 128 Kb
@@ -1994,6 +2363,7 @@ NXP
 
     * - ``lpc11u68``
       - `LPCXpresso11U68 <https://developer.mbed.org/platforms/LPCXpresso11U68/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U68
       - 50 MHz
       - 256 Kb
@@ -2001,6 +2371,7 @@ NXP
 
     * - ``lpc1549``
       - `NXP LPCXpresso1549 <https://developer.mbed.org/platforms/LPCXpresso1549/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC1549
       - 72 MHz
       - 256 Kb
@@ -2008,6 +2379,7 @@ NXP
 
     * - ``lpc1768``
       - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC1768
       - 96 MHz
       - 512 Kb
@@ -2015,6 +2387,7 @@ NXP
 
     * - ``lpc2368``
       - `NXP LPC2368 <https://developer.mbed.org/platforms/mbed-LPC2368/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC2368
       - 72 MHz
       - 512 Kb
@@ -2022,6 +2395,7 @@ NXP
 
     * - ``lpc2460``
       - `NXP LPC2460 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-arm7-arm9-mcus/lpc-arm7-mcus/lpc2100-200-300-400/flashless-16-bit-32-bit-microcontroller-ethernet-can-isp-iap-usb-2.0-device-host-otg-external-memory-interface:LPC2460FBD208>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC2460
       - 72 MHz
       - 64 Kb
@@ -2029,6 +2403,7 @@ NXP
 
     * - ``lpc812``
       - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC812
       - 30 MHz
       - 16 Kb
@@ -2036,6 +2411,7 @@ NXP
 
     * - ``lpc824``
       - `LPCXpresso824-MAX <https://developer.mbed.org/platforms/LPCXpresso824-MAX/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC824
       - 30 MHz
       - 32 Kb
@@ -2043,6 +2419,7 @@ NXP
 
     * - ``micronfcboard``
       - `MicroNFCBoard <https://developer.mbed.org/platforms/MicroNFCBoard/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U34
       - 48 MHz
       - 64 Kb
@@ -2056,6 +2433,7 @@ NodeMCU
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2063,6 +2441,7 @@ NodeMCU
 
     * - ``nodemcu``
       - `NodeMCU 0.9 (ESP-12 Module) <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -2070,6 +2449,7 @@ NodeMCU
 
     * - ``nodemcuv2``
       - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -2083,6 +2463,7 @@ Noduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2090,6 +2471,15 @@ Noduino
 
     * - ``quantum``
       - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``quantum``
+      - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -2103,6 +2493,7 @@ Nordic
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2110,6 +2501,7 @@ Nordic
 
     * - ``nrf51_dk``
       - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 32 MHz
       - 256 Kb
@@ -2117,6 +2509,7 @@ Nordic
 
     * - ``nrf51_dongle``
       - `Nordic nRF51-Dongle <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 32 MHz
       - 256 Kb
@@ -2124,6 +2517,7 @@ Nordic
 
     * - ``nrf51_mkit``
       - `Nordic nRF51822-mKIT <http://developer.mbed.org/platforms/Nordic-nRF51822/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -2137,6 +2531,7 @@ Olimex
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2144,6 +2539,7 @@ Olimex
 
     * - ``modwifi``
       - `Olimex MOD-WIFI-ESP8266(-DEV) <https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 2048 Kb
@@ -2151,6 +2547,7 @@ Olimex
 
     * - ``pinguino32``
       - `Olimex PIC32-PINGUINO <https://www.olimex.com/Products/Duino/PIC32/PIC32-PINGUINO/open-source-hardware>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX440F256H
       - 80 MHz
       - 256 Kb
@@ -2164,6 +2561,7 @@ OpenBCI
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2171,6 +2569,7 @@ OpenBCI
 
     * - ``openbci``
       - `OpenBCI 32bit <http://shop.openbci.com/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX250F128B
       - 40 MHz
       - 128 Kb
@@ -2184,6 +2583,7 @@ OpenEnergyMonitor
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2191,6 +2591,7 @@ OpenEnergyMonitor
 
     * - ``emonpi``
       - `OpenEnergyMonitor emonPi <https://github.com/openenergymonitor/emonpi>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -2204,6 +2605,7 @@ Outrageous Circuits
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2211,6 +2613,7 @@ Outrageous Circuits
 
     * - ``mbuino``
       - `Outrageous Circuits mBuino <https://developer.mbed.org/platforms/Outrageous-Circuits-mBuino/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -2224,6 +2627,7 @@ PONTECH
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2231,6 +2635,7 @@ PONTECH
 
     * - ``quick240_usb``
       - `PONTECH quicK240 <http://quick240.com/quicki/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -2238,6 +2643,7 @@ PONTECH
 
     * - ``usbono_pic32``
       - `PONTECH UAV100 <http://www.pontech.com/productdisplay/uav100>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX440F512H
       - 80 MHz
       - 512 Kb
@@ -2251,6 +2657,7 @@ PanStamp
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2258,6 +2665,7 @@ PanStamp
 
     * - ``panStampAVR``
       - `PanStamp AVR <http://www.panstamp.com/product/panstamp-avr/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -2265,6 +2673,7 @@ PanStamp
 
     * - ``panStampNRG``
       - `PanStamp NRG 1.1 <http://www.panstamp.com/product/197/>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - CC430F5137
       - 12 MHz
       - 32 Kb
@@ -2278,6 +2687,7 @@ Pinoccio
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2285,6 +2695,7 @@ Pinoccio
 
     * - ``pinoccio``
       - `Pinoccio Scout <https://www.crowdsupply.com/pinoccio/mesh-sensor-network>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA256RFR2
       - 16 MHz
       - 256 Kb
@@ -2298,6 +2709,7 @@ Pololu Corporation
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2305,6 +2717,7 @@ Pololu Corporation
 
     * - ``a-star32U4``
       - `Pololu A-Star 32U4 <https://www.pololu.com/category/149/a-star-programmable-controllers>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -2318,6 +2731,7 @@ Punch Through
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2325,6 +2739,7 @@ Punch Through
 
     * - ``lightblue-bean``
       - `LightBlue Bean <https://punchthrough.com/bean>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -2332,6 +2747,7 @@ Punch Through
 
     * - ``lightblue-beanplus``
       - `LightBlue Bean+ <https://punchthrough.com/bean>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -2345,6 +2761,7 @@ Quirkbot
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2352,6 +2769,7 @@ Quirkbot
 
     * - ``quirkbot``
       - `Quirkbot <http://quirkbot.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -2365,6 +2783,7 @@ RFduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2372,6 +2791,7 @@ RFduino
 
     * - ``rfduino``
       - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -2385,6 +2805,7 @@ Raspberry Pi
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2392,6 +2813,7 @@ Raspberry Pi
 
     * - ``raspberrypi_1b``
       - `Raspberry Pi 1 Model B <https://www.raspberrypi.org>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - BCM2835
       - 700 MHz
       - 524288 Kb
@@ -2399,6 +2821,7 @@ Raspberry Pi
 
     * - ``raspberrypi_2b``
       - `Raspberry Pi 2 Model B <https://www.raspberrypi.org>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - BCM2836
       - 900 MHz
       - 1048576 Kb
@@ -2406,6 +2829,7 @@ Raspberry Pi
 
     * - ``raspberrypi_zero``
       - `Raspberry Pi Zero <https://www.raspberrypi.org>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - BCM2835
       - 1000 MHz
       - 524288 Kb
@@ -2419,6 +2843,7 @@ RedBearLab
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2426,6 +2851,7 @@ RedBearLab
 
     * - ``blend``
       - `RedBearLab Blend <http://redbearlab.com/blend/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -2433,6 +2859,7 @@ RedBearLab
 
     * - ``blendmicro16``
       - `RedBearLab Blend Micro 3.3V/16MHz (overclock) <http://redbearlab.com/blendmicro/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -2440,6 +2867,7 @@ RedBearLab
 
     * - ``blendmicro8``
       - `RedBearLab Blend Micro 3.3V/8MHz <http://redbearlab.com/blendmicro/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -2447,6 +2875,7 @@ RedBearLab
 
     * - ``redBearLab``
       - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -2454,6 +2883,7 @@ RedBearLab
 
     * - ``redBearLabBLENano``
       - `RedBearLab BLE Nano <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -2467,6 +2897,7 @@ RepRap
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2474,6 +2905,7 @@ RepRap
 
     * - ``reprap_rambo``
       - `RepRap RAMBo <http://reprap.org/wiki/Rambo>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 16 MHz
       - 256 Kb
@@ -2487,6 +2919,7 @@ SODAQ
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2494,6 +2927,7 @@ SODAQ
 
     * - ``sodaq_autonomo``
       - `SODAQ Autonomo <http://support.sodaq.com/sodaq-one/autonomo/getting-started-autonomo/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -2501,6 +2935,7 @@ SODAQ
 
     * - ``sodaq_explorer``
       - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -2508,6 +2943,7 @@ SODAQ
 
     * - ``sodaq_galora``
       - `SODAQ GaLoRa <http://support.sodaq.com/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -2515,6 +2951,7 @@ SODAQ
 
     * - ``sodaq_mbili``
       - `SODAQ Mbili <http://support.sodaq.com/sodaq-one/sodaq-mbili-1284p/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -2522,6 +2959,7 @@ SODAQ
 
     * - ``sodaq_moja``
       - `SODAQ Moja <http://support.sodaq.com/sodaq-one/moja/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -2529,6 +2967,7 @@ SODAQ
 
     * - ``sodaq_ndogo``
       - `SODAQ Ndogo <http://support.sodaq.com/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -2536,6 +2975,7 @@ SODAQ
 
     * - ``sodaq_one``
       - `SODAQ ONE <http://support.sodaq.com/sodaq-one/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -2543,6 +2983,7 @@ SODAQ
 
     * - ``sodaq_tatu``
       - `SODAQ Tatu <http://support.sodaq.com/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -2550,6 +2991,7 @@ SODAQ
 
     * - ``sodaq_wdt``
       - `SODAQ WDT <http://support.sodaq.com/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -2563,13 +3005,23 @@ ST
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
       - RAM
 
+    * - ``disco_f030r8``
+      - `ST STM32F0308DISCOVERY <http://www.st.com/en/evaluation-tools/32f0308discovery.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - STM32F030R8T6
+      - 48 MHz
+      - 64 Kb
+      - 8 Kb
+
     * - ``disco_f051r8``
       - `ST STM32F0DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF253215>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F051R8T6
       - 48 MHz
       - 64 Kb
@@ -2577,6 +3029,7 @@ ST
 
     * - ``disco_f100rb``
       - `ST STM32VLDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF250863>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F100RBT6
       - 24 MHz
       - 128 Kb
@@ -2584,6 +3037,7 @@ ST
 
     * - ``disco_f303vc``
       - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F303VCT6
       - 72 MHz
       - 256 Kb
@@ -2591,6 +3045,7 @@ ST
 
     * - ``disco_f334c8``
       - `ST 32F3348DISCOVERY <http://www.st.com/web/en/catalog/tools/PF260318>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F334C8T6
       - 72 MHz
       - 64 Kb
@@ -2598,6 +3053,7 @@ ST
 
     * - ``disco_f401vc``
       - `ST 32F401CDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259098>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F401VCT6
       - 84 MHz
       - 256 Kb
@@ -2605,6 +3061,7 @@ ST
 
     * - ``disco_f407vg``
       - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F407VGT6
       - 168 MHz
       - 1024 Kb
@@ -2612,6 +3069,7 @@ ST
 
     * - ``disco_f429zi``
       - `ST 32F429IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259090>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F429ZIT6
       - 180 MHz
       - 2048 Kb
@@ -2619,6 +3077,7 @@ ST
 
     * - ``disco_f469ni``
       - `ST 32F469IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF262395>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F469NIH6
       - 180 MHz
       - 1024 Kb
@@ -2626,6 +3085,7 @@ ST
 
     * - ``disco_f746ng``
       - `ST 32F746GDISCOVERY <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/32f746gdiscovery.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F746NGH6
       - 216 MHz
       - 1024 Kb
@@ -2633,6 +3093,7 @@ ST
 
     * - ``disco_f769ni``
       - `ST 32F769IDISCOVERY <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/32f769idiscovery.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F769NIH6
       - 80 MHz
       - 1024 Kb
@@ -2640,6 +3101,7 @@ ST
 
     * - ``disco_l053c8``
       - `ST 32L0538DISCOVERY <http://www.st.com/web/en/catalog/tools/PF260319>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L053C8T6
       - 32 MHz
       - 64 Kb
@@ -2647,6 +3109,7 @@ ST
 
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L152RBT6
       - 32 MHz
       - 128 Kb
@@ -2654,6 +3117,7 @@ ST
 
     * - ``disco_l476vg``
       - `ST 32L476GDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF261635>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L476VGT6
       - 80 MHz
       - 1024 Kb
@@ -2661,6 +3125,7 @@ ST
 
     * - ``nucleo_f030r8``
       - `ST Nucleo F030R8 <https://developer.mbed.org/platforms/ST-Nucleo-F030R8/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F030R8T6
       - 48 MHz
       - 64 Kb
@@ -2668,6 +3133,7 @@ ST
 
     * - ``nucleo_f031k6``
       - `ST Nucleo F031K6 <https://developer.mbed.org/platforms/ST-Nucleo-F031K6/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F031K6T6
       - 48 MHz
       - 32 Kb
@@ -2675,6 +3141,7 @@ ST
 
     * - ``nucleo_f042k6``
       - `ST Nucleo F042K6 <https://developer.mbed.org/platforms/ST-Nucleo-F042K6/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F042K6T6
       - 48 MHz
       - 32 Kb
@@ -2682,6 +3149,7 @@ ST
 
     * - ``nucleo_f070rb``
       - `ST Nucleo F070RB <https://developer.mbed.org/platforms/ST-Nucleo-F070RB/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F070RBT6
       - 48 MHz
       - 128 Kb
@@ -2689,6 +3157,7 @@ ST
 
     * - ``nucleo_f072rb``
       - `ST Nucleo F072RB <https://developer.mbed.org/platforms/ST-Nucleo-F072RB/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F072RBT6
       - 48 MHz
       - 128 Kb
@@ -2696,6 +3165,7 @@ ST
 
     * - ``nucleo_f091rc``
       - `ST Nucleo F091RC <https://developer.mbed.org/platforms/ST-Nucleo-F091RC/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F091RCT6
       - 48 MHz
       - 256 Kb
@@ -2703,6 +3173,7 @@ ST
 
     * - ``nucleo_f103rb``
       - `ST Nucleo F103RB <https://developer.mbed.org/platforms/ST-Nucleo-F103RB/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F103RBT6
       - 72 MHz
       - 128 Kb
@@ -2710,6 +3181,7 @@ ST
 
     * - ``nucleo_f207zg``
       - `ST Nucleo F207ZG <https://developer.mbed.org/platforms/ST-Nucleo-F207ZG/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F207ZGT6
       - 120 MHz
       - 1024 Kb
@@ -2717,6 +3189,7 @@ ST
 
     * - ``nucleo_f302r8``
       - `ST Nucleo F302R8 <https://developer.mbed.org/platforms/ST-Nucleo-F302R8/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F302R8T6
       - 72 MHz
       - 64 Kb
@@ -2724,6 +3197,7 @@ ST
 
     * - ``nucleo_f303k8``
       - `ST Nucleo F303K8 <https://developer.mbed.org/platforms/ST-Nucleo-F303K8/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F303K8T6
       - 72 MHz
       - 64 Kb
@@ -2731,6 +3205,7 @@ ST
 
     * - ``nucleo_f303re``
       - `ST Nucleo F303RE <http://developer.mbed.org/platforms/ST-Nucleo-F303RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F303RET6
       - 72 MHz
       - 512 Kb
@@ -2738,6 +3213,7 @@ ST
 
     * - ``nucleo_f303ze``
       - `ST Nucleo F303ZE <https://developer.mbed.org/platforms/ST-Nucleo-F303ZE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F303ZET6
       - 72 MHz
       - 512 Kb
@@ -2745,6 +3221,7 @@ ST
 
     * - ``nucleo_f334r8``
       - `ST Nucleo F334R8 <https://developer.mbed.org/platforms/ST-Nucleo-F334R8/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F334R8T6
       - 72 MHz
       - 64 Kb
@@ -2752,6 +3229,7 @@ ST
 
     * - ``nucleo_f401re``
       - `ST Nucleo F401RE <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F401RET6
       - 84 MHz
       - 512 Kb
@@ -2759,6 +3237,7 @@ ST
 
     * - ``nucleo_f410rb``
       - `ST Nucleo F410RB <https://developer.mbed.org/platforms/ST-Nucleo-F410RB/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F410RBT6
       - 100 MHz
       - 128 Kb
@@ -2766,6 +3245,7 @@ ST
 
     * - ``nucleo_f411re``
       - `ST Nucleo F411RE <https://developer.mbed.org/platforms/ST-Nucleo-F411RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F411RET6
       - 100 MHz
       - 512 Kb
@@ -2773,6 +3253,7 @@ ST
 
     * - ``nucleo_f429zi``
       - `ST Nucleo F429ZI <https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F429ZIT6
       - 180 MHz
       - 2048 Kb
@@ -2780,6 +3261,7 @@ ST
 
     * - ``nucleo_f446re``
       - `ST Nucleo F446RE <https://developer.mbed.org/platforms/ST-Nucleo-F446RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F446RET6
       - 180 MHz
       - 512 Kb
@@ -2787,6 +3269,7 @@ ST
 
     * - ``nucleo_f446ze``
       - `ST Nucleo F446ZE <https://developer.mbed.org/platforms/ST-Nucleo-F446ZE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F446ZET6
       - 180 MHz
       - 512 Kb
@@ -2794,6 +3277,7 @@ ST
 
     * - ``nucleo_f746zg``
       - `ST Nucleo F746ZG <https://developer.mbed.org/platforms/ST-Nucleo-F446ZE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F746ZGT6
       - 216 MHz
       - 1024 Kb
@@ -2801,6 +3285,7 @@ ST
 
     * - ``nucleo_f767zi``
       - `ST Nucleo F767ZI <https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F746ZGT6
       - 216 MHz
       - 2048 Kb
@@ -2808,6 +3293,7 @@ ST
 
     * - ``nucleo_l011k4``
       - `ST Nucleo L011K4 <https://developer.mbed.org/platforms/ST-Nucleo-L011K4/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L011K4T6
       - 32 MHz
       - 16 Kb
@@ -2815,6 +3301,7 @@ ST
 
     * - ``nucleo_l031k6``
       - `ST Nucleo L031K6 <https://developer.mbed.org/platforms/ST-Nucleo-L031K6/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L031K6T6
       - 32 MHz
       - 32 Kb
@@ -2822,6 +3309,7 @@ ST
 
     * - ``nucleo_l053r8``
       - `ST Nucleo L053R8 <https://developer.mbed.org/platforms/ST-Nucleo-L053R8/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L053R8T6
       - 48 MHz
       - 64 Kb
@@ -2829,6 +3317,7 @@ ST
 
     * - ``nucleo_l073rz``
       - `ST Nucleo L073RZ <https://developer.mbed.org/platforms/ST-Nucleo-L073RZ/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L073RZ
       - 32 MHz
       - 192 Kb
@@ -2836,6 +3325,7 @@ ST
 
     * - ``nucleo_l152re``
       - `ST Nucleo L152RE <https://developer.mbed.org/platforms/ST-Nucleo-L152RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L152RET6
       - 32 MHz
       - 512 Kb
@@ -2843,6 +3333,7 @@ ST
 
     * - ``nucleo_l432kc``
       - `ST Nucleo L432KC <https://developer.mbed.org/platforms/ST-Nucleo-L432KC/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L432KCU6
       - 80 MHz
       - 256 Kb
@@ -2850,6 +3341,7 @@ ST
 
     * - ``nucleo_l476rg``
       - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L476RGT6
       - 80 MHz
       - 1024 Kb
@@ -2863,6 +3355,7 @@ SainSmart
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2870,6 +3363,7 @@ SainSmart
 
     * - ``sainSmartDue``
       - `SainSmart Due (Programming Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -2877,6 +3371,7 @@ SainSmart
 
     * - ``sainSmartDueUSB``
       - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -2890,6 +3385,7 @@ Samsung
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2897,6 +3393,7 @@ Samsung
 
     * - ``artik_1020``
       - `Samsung ARTIK 1020 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - EXYNOS5422
       - 1500 MHz
       - 16777216 Kb
@@ -2904,6 +3401,7 @@ Samsung
 
     * - ``artik_520``
       - `Samsung ARTIK 520 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - EXYNOS3250
       - 1000 MHz
       - 4194304 Kb
@@ -2911,6 +3409,7 @@ Samsung
 
     * - ``artik_530``
       - `Samsung ARTIK 530 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - S5P4418
       - 1200 MHz
       - 4194304 Kb
@@ -2918,6 +3417,7 @@ Samsung
 
     * - ``artik_710``
       - `Samsung ARTIK 710 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - S5P6818
       - 1400 MHz
       - 4194304 Kb
@@ -2931,6 +3431,7 @@ Sanguino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2938,6 +3439,7 @@ Sanguino
 
     * - ``sanguino_atmega1284_8m``
       - `Sanguino ATmega1284p (8MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -2945,6 +3447,7 @@ Sanguino
 
     * - ``sanguino_atmega1284p``
       - `Sanguino ATmega1284p (16MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -2952,6 +3455,7 @@ Sanguino
 
     * - ``sanguino_atmega644``
       - `Sanguino ATmega644 or ATmega644A (16 MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644
       - 16 MHz
       - 64 Kb
@@ -2959,6 +3463,7 @@ Sanguino
 
     * - ``sanguino_atmega644_8m``
       - `Sanguino ATmega644 or ATmega644A (8 MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644
       - 8 MHz
       - 64 Kb
@@ -2966,6 +3471,7 @@ Sanguino
 
     * - ``sanguino_atmega644p``
       - `Sanguino ATmega644P or ATmega644PA (16 MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 16 MHz
       - 64 Kb
@@ -2973,6 +3479,7 @@ Sanguino
 
     * - ``sanguino_atmega644p_8m``
       - `Sanguino ATmega644P or ATmega644PA (8 MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 8 MHz
       - 64 Kb
@@ -2986,6 +3493,7 @@ SeeedStudio
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -2993,6 +3501,7 @@ SeeedStudio
 
     * - ``cui32stem``
       - `SeeedStudio CUI32stem <http://www.seeedstudio.com/wiki/CUI32Stem>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX795F512H
       - 80 MHz
       - 512 Kb
@@ -3000,6 +3509,7 @@ SeeedStudio
 
     * - ``seeedArchBLE``
       - `Seeed Arch BLE <https://developer.mbed.org/platforms/Seeed-Arch-BLE/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -3007,6 +3517,7 @@ SeeedStudio
 
     * - ``seeedArchGPRS``
       - `Seeed Arch GPRS V2 <https://www.seeedstudio.com/Arch-GPRS-V2-p-2026.html>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U37
       - 48 MHz
       - 128 Kb
@@ -3014,6 +3525,7 @@ SeeedStudio
 
     * - ``seeedArchLink``
       - `Seeed Arch Link <https://developer.mbed.org/platforms/Seeed-Arch-Link/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -3021,6 +3533,7 @@ SeeedStudio
 
     * - ``seeedArchMax``
       - `Seeed Arch Max <https://developer.mbed.org/platforms/Seeed-Arch-Max/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F407VET6
       - 168 MHz
       - 512 Kb
@@ -3028,6 +3541,7 @@ SeeedStudio
 
     * - ``seeedArchPro``
       - `Seeed Arch Pro <https://developer.mbed.org/platforms/Seeeduino-Arch-Pro/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC1768
       - 96 MHz
       - 512 Kb
@@ -3035,6 +3549,7 @@ SeeedStudio
 
     * - ``seeedTinyBLE``
       - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -3042,6 +3557,7 @@ SeeedStudio
 
     * - ``xadow_m0``
       - `Seeed Xadow M0 <https://developer.mbed.org/platforms/Seeed-Xadow-M0/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U35
       - 48 MHz
       - 64 Kb
@@ -3055,6 +3571,7 @@ Semtech
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3062,6 +3579,7 @@ Semtech
 
     * - ``mote_l152rc``
       - `NAMote72 <https://developer.mbed.org/platforms/NAMote-72/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L152RC
       - 32 MHz
       - 256 Kb
@@ -3075,6 +3593,7 @@ Silicon Labs
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3082,6 +3601,7 @@ Silicon Labs
 
     * - ``efm32gg_stk3700``
       - `Silicon Labs EFM32GG-STK3700 (Giant Gecko) <https://developer.mbed.org/platforms/EFM32-Giant-Gecko/>`_
+      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - EFM32GG990F1024
       - 48 MHz
       - 1024 Kb
@@ -3089,6 +3609,7 @@ Silicon Labs
 
     * - ``efm32hg_stk3400``
       - `Silicon Labs SLSTK3400A USB-enabled (Happy Gecko) <https://developer.mbed.org/platforms/EFM32-Happy-Gecko/>`_
+      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - EFM32HG322F64
       - 24 MHz
       - 64 Kb
@@ -3096,6 +3617,7 @@ Silicon Labs
 
     * - ``efm32lg_stk3600``
       - `Silicon Labs EFM32LG-STK3600 (Leopard Gecko) <https://developer.mbed.org/platforms/EFM32-Leopard-Gecko/>`_
+      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - EFM32LG990F256
       - 48 MHz
       - 256 Kb
@@ -3103,6 +3625,7 @@ Silicon Labs
 
     * - ``efm32pg_stk3401``
       - `Silicon Labs SLSTK3401A (Pearl Gecko) <https://developer.mbed.org/platforms/EFM32-Pearl-Gecko/>`_
+      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - EFM32PG1B200F256
       - 40 MHz
       - 256 Kb
@@ -3110,6 +3633,7 @@ Silicon Labs
 
     * - ``efm32wg_stk3800``
       - `Silicon Labs EFM32WG-STK3800 (Wonder Gecko) <https://developer.mbed.org/platforms/EFM32-Wonder-Gecko/>`_
+      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - EFM32WG990F256
       - 48 MHz
       - 256 Kb
@@ -3117,6 +3641,7 @@ Silicon Labs
 
     * - ``efm32zg_stk3200``
       - `Silicon Labs EFM32ZG-STK3200 (Zero Gecko) <https://developer.mbed.org/platforms/EFM32-Zero-Gecko/>`_
+      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - EFM2ZG222F32
       - 24 MHz
       - 32 Kb
@@ -3130,6 +3655,7 @@ Smeshlink
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3137,6 +3663,7 @@ Smeshlink
 
     * - ``xbed_lpc1768``
       - `Smeshlink xbed LPC1768 <https://developer.mbed.org/platforms/xbed-LPC1768/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC1768
       - 96 MHz
       - 512 Kb
@@ -3150,6 +3677,7 @@ Solder Splash Labs
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3157,6 +3685,7 @@ Solder Splash Labs
 
     * - ``dipcortexm0``
       - `Solder Splash Labs DipCortex M0 <https://developer.mbed.org/platforms/DipCortex-M0/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U24
       - 50 MHz
       - 32 Kb
@@ -3164,6 +3693,7 @@ Solder Splash Labs
 
     * - ``lpc1347``
       - `DipCortex M3 <https://developer.mbed.org/platforms/DipCortex-M3/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC1347
       - 72 MHz
       - 64 Kb
@@ -3177,6 +3707,7 @@ SparkFun
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3184,6 +3715,7 @@ SparkFun
 
     * - ``sparkfunBlynk``
       - `SparkFun Blynk Board <https://www.sparkfun.com/products/13794>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -3191,6 +3723,7 @@ SparkFun
 
     * - ``sparkfun_digitalsandbox``
       - `SparkFun Digital Sandbox <https://www.sparkfun.com/products/12651>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -3198,6 +3731,7 @@ SparkFun
 
     * - ``sparkfun_fiov3``
       - `SparkFun Fio V3 3.3V/8MHz <https://www.sparkfun.com/products/11520>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -3205,6 +3739,7 @@ SparkFun
 
     * - ``sparkfun_makeymakey``
       - `SparkFun Makey Makey <https://www.sparkfun.com/products/11511>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -3212,6 +3747,7 @@ SparkFun
 
     * - ``sparkfun_megamini``
       - `SparkFun Mega Pro Mini 3.3V <https://www.sparkfun.com/products/10743>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 8 MHz
       - 256 Kb
@@ -3219,6 +3755,7 @@ SparkFun
 
     * - ``sparkfun_megapro16MHz``
       - `SparkFun Mega Pro 5V/16MHz <https://www.sparkfun.com/products/11007>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 16 MHz
       - 256 Kb
@@ -3226,6 +3763,7 @@ SparkFun
 
     * - ``sparkfun_megapro8MHz``
       - `SparkFun Mega Pro 3.3V/8MHz <https://www.sparkfun.com/products/10744>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 8 MHz
       - 256 Kb
@@ -3233,6 +3771,7 @@ SparkFun
 
     * - ``sparkfun_promicro16``
       - `SparkFun Pro Micro 5V/16MHz <https://www.sparkfun.com/products/12640>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -3240,6 +3779,7 @@ SparkFun
 
     * - ``sparkfun_promicro8``
       - `SparkFun Pro Micro 3.3V/8MHz <https://www.sparkfun.com/products/12587>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -3247,6 +3787,7 @@ SparkFun
 
     * - ``sparkfun_qduinomini``
       - `SparkFun Qduino Mini <https://www.sparkfun.com/products/13614>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -3254,6 +3795,7 @@ SparkFun
 
     * - ``sparkfun_redboard``
       - `SparkFun RedBoard <https://www.sparkfun.com/products/12757>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -3261,6 +3803,7 @@ SparkFun
 
     * - ``sparkfun_samd21_dev_usb``
       - `SparkFun SAMD21 Dev Breakout <https://www.sparkfun.com/products/13672>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -3268,6 +3811,7 @@ SparkFun
 
     * - ``sparkfun_samd21_mini_usb``
       - `SparkFun SAMD21 Mini Breakout <https://www.sparkfun.com/products/13664>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -3275,6 +3819,7 @@ SparkFun
 
     * - ``sparkfun_satmega128rfa1``
       - `SparkFun ATmega128RFA1 Dev Board <https://www.sparkfun.com/products/11197>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA128RFA1
       - 16 MHz
       - 16 Kb
@@ -3282,6 +3827,7 @@ SparkFun
 
     * - ``sparkfun_serial7seg``
       - `SparkFun Serial 7-Segment Display <https://www.sparkfun.com/products/11441>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -3289,6 +3835,7 @@ SparkFun
 
     * - ``thing``
       - `SparkFun ESP8266 Thing <https://www.sparkfun.com/products/13231>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 512 Kb
@@ -3296,6 +3843,7 @@ SparkFun
 
     * - ``thingdev``
       - `SparkFun ESP8266 Thing Dev <https://www.sparkfun.com/products/13231>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 512 Kb
@@ -3303,6 +3851,7 @@ SparkFun
 
     * - ``uview``
       - `SparkFun MicroView <https://www.sparkfun.com/products/12923>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -3316,6 +3865,7 @@ SparkFun Electronics
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3323,6 +3873,15 @@ SparkFun Electronics
 
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 112 Kb
+
+    * - ``esp32thing``
+      - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -3336,6 +3895,7 @@ SweetPea
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3343,6 +3903,7 @@ SweetPea
 
     * - ``esp210``
       - `SweetPea ESP-210 <http://wiki.sweetpeas.se/index.php?title=ESP-210>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -3356,6 +3917,7 @@ Switch Science
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3363,6 +3925,7 @@ Switch Science
 
     * - ``hrm1017``
       - `Switch Science mbed HRM1017 <https://developer.mbed.org/platforms/mbed-HRM1017/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -3370,6 +3933,7 @@ Switch Science
 
     * - ``lpc1114fn28``
       - `Switch Science mbed LPC1114FN28 <https://developer.mbed.org/platforms/LPC1114FN28/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC1114FN28
       - 48 MHz
       - 32 Kb
@@ -3377,6 +3941,7 @@ Switch Science
 
     * - ``ssci824``
       - `Switch Science mbed LPC824 <https://developer.mbed.org/platforms/Switch-Science-mbed-LPC824/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC824
       - 30 MHz
       - 32 Kb
@@ -3384,6 +3949,7 @@ Switch Science
 
     * - ``ty51822r3``
       - `Switch Science mbed TY51822r3 <https://developer.mbed.org/platforms/Switch-Science-mbed-TY51822r3/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 32 MHz
       - 256 Kb
@@ -3397,6 +3963,7 @@ TI
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3404,6 +3971,7 @@ TI
 
     * - ``lplm4f120h5qr``
       - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl>`_
+      - :ref:`TI TIVA <platform_titiva>`
       - LPLM4F120H5QR
       - 80 MHz
       - 256 Kb
@@ -3411,6 +3979,7 @@ TI
 
     * - ``lpmsp430f5529``
       - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430F5529
       - 16 MHz
       - 128 Kb
@@ -3418,6 +3987,7 @@ TI
 
     * - ``lpmsp430fr4133``
       - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR4133
       - 8 MHz
       - 16 Kb
@@ -3425,6 +3995,7 @@ TI
 
     * - ``lpmsp430fr5739``
       - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR5739
       - 16 MHz
       - 16 Kb
@@ -3432,6 +4003,7 @@ TI
 
     * - ``lpmsp430fr5969``
       - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR5969
       - 8 MHz
       - 64 Kb
@@ -3439,6 +4011,7 @@ TI
 
     * - ``lpmsp430fr6989``
       - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR6989
       - 8 MHz
       - 128 Kb
@@ -3446,6 +4019,7 @@ TI
 
     * - ``lpmsp430g2553``
       - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430G2553
       - 16 MHz
       - 16 Kb
@@ -3453,6 +4027,7 @@ TI
 
     * - ``lptm4c1230c3pm``
       - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html>`_
+      - :ref:`TI TIVA <platform_titiva>`
       - LPTM4C1230C3PM
       - 80 MHz
       - 256 Kb
@@ -3460,6 +4035,7 @@ TI
 
     * - ``lptm4c1294ncpdt``
       - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html>`_
+      - :ref:`TI TIVA <platform_titiva>`
       - LPTM4C1294NCPDT
       - 120 MHz
       - 1024 Kb
@@ -3473,6 +4049,7 @@ Teensy
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3480,6 +4057,7 @@ Teensy
 
     * - ``teensy20``
       - `Teensy 2.0 <https://www.pjrc.com/store/teensy.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -3487,6 +4065,7 @@ Teensy
 
     * - ``teensy20pp``
       - `Teensy++ 2.0 <https://www.pjrc.com/store/teensypp.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - AT90USB1286
       - 16 MHz
       - 128 Kb
@@ -3494,6 +4073,7 @@ Teensy
 
     * - ``teensy30``
       - `Teensy 3.0 <https://www.pjrc.com/store/teensy3.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MK20DX128
       - 48 MHz
       - 128 Kb
@@ -3501,6 +4081,7 @@ Teensy
 
     * - ``teensy31``
       - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MK20DX256
       - 72 MHz
       - 256 Kb
@@ -3508,6 +4089,7 @@ Teensy
 
     * - ``teensy35``
       - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MK64FX512
       - 120 MHz
       - 512 Kb
@@ -3515,6 +4097,7 @@ Teensy
 
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MK66FX1M0
       - 180 MHz
       - 1024 Kb
@@ -3522,6 +4105,7 @@ Teensy
 
     * - ``teensylc``
       - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html>`_
+      - :ref:`Teensy <platform_teensy>`
       - MKL26Z64
       - 48 MHz
       - 64 Kb
@@ -3535,6 +4119,7 @@ ThaiEasyElec
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3542,6 +4127,7 @@ ThaiEasyElec
 
     * - ``espinotee``
       - `ThaiEasyElec ESPino <http://www.thaieasyelec.com/products/wireless-modules/wifi-modules/espino-wifi-development-board-detail.html>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -3555,6 +4141,7 @@ The Things Network
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3562,6 +4149,7 @@ The Things Network
 
     * - ``the_things_uno``
       - `The Things Uno <https://shop.thethingsnetwork.com/index.php/product/the-things-uno/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -3575,6 +4163,7 @@ TinyCircuits
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3582,6 +4171,7 @@ TinyCircuits
 
     * - ``tinyduino``
       - `TinyCircuits TinyDuino Processor Board <https://tiny-circuits.com/tinyduino-processor-board.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -3589,6 +4179,7 @@ TinyCircuits
 
     * - ``tinylily``
       - `TinyCircuits TinyLily Mini Processor <https://tiny-circuits.com/tiny-lily-mini-processor.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -3602,6 +4193,7 @@ UBW32
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3609,6 +4201,7 @@ UBW32
 
     * - ``ubw32_mx460``
       - `UBW32 MX460 <http://www.schmalzhaus.com/UBW32/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX460F512L
       - 80 MHz
       - 512 Kb
@@ -3616,6 +4209,7 @@ UBW32
 
     * - ``ubw32_mx795``
       - `UBW32 MX795 <http://www.schmalzhaus.com/UBW32/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -3629,6 +4223,7 @@ WEMOS
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3636,6 +4231,15 @@ WEMOS
 
     * - ``lolin32``
       - `WEMOS LoLin32 <https://wemos.cc>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``lolin32``
+      - `WEMOS LoLin32 <https://wemos.cc>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -3649,6 +4253,7 @@ WeMos
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3656,6 +4261,7 @@ WeMos
 
     * - ``d1``
       - `WeMos D1(Retired) <http://www.wemos.cc/wiki/doku.php?id=en:d1>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -3663,6 +4269,7 @@ WeMos
 
     * - ``d1_mini``
       - `WeMos D1 R2 & mini <http://www.wemos.cc/wiki/doku.php?id=en:d1_mini>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -3676,6 +4283,7 @@ Wicked Device
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3683,6 +4291,7 @@ Wicked Device
 
     * - ``wildfirev2``
       - `Wicked Device WildFire V2 <http://shop.wickeddevice.com/resources/wildfire/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -3690,6 +4299,7 @@ Wicked Device
 
     * - ``wildfirev3``
       - `Wicked Device WildFire V3 <http://shop.wickeddevice.com/resources/wildfire/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -3703,6 +4313,7 @@ chipKIT
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3710,6 +4321,7 @@ chipKIT
 
     * - ``lenny``
       - `chipKIT Lenny <http://chipkit.net/tag/lenny/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX270F256D
       - 40 MHz
       - 128 Kb
@@ -3723,6 +4335,7 @@ element14
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3730,6 +4343,7 @@ element14
 
     * - ``chipkit_pi``
       - `Element14 chipKIT Pi <http://www.element14.com/community/community/knode/dev_platforms_kits/element14_dev_kits/microchip-chipkit/chipkit_pi>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
       - 32MX250F128B
       - 40 MHz
       - 128 Kb
@@ -3743,6 +4357,7 @@ makerlab.mx
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3750,10 +4365,73 @@ makerlab.mx
 
     * - ``altair``
       - `Altair <http://www.aquila.io/en>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA256RFR2
       - 16 MHz
       - 256 Kb
       - 32 Kb
+
+nicai-systems
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``bob3``
+      - `nicai-systems BOB3 coding bot <http://www.nicai-systems.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA88
+      - 8 MHz
+      - 8 Kb
+      - 1 Kb
+
+    * - ``nibo2``
+      - `nicai-systems NIBO 2 robot <http://www.nicai-systems.com/en/nibo2>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA128
+      - 16 MHz
+      - 128 Kb
+      - 4 Kb
+
+    * - ``nibobee``
+      - `nicai-systems NIBObee robot <http://www.nicai-systems.com/en/nibobee>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA16
+      - 15 MHz
+      - 16 Kb
+      - 1 Kb
+
+    * - ``nibobee_1284``
+      - `nicai-systems NIBObee robot with Tuning Kit <http://www.nicai-systems.com/en/nibobee>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA1284P
+      - 20 MHz
+      - 128 Kb
+      - 16 Kb
+
+    * - ``niboburger``
+      - `nicai-systems NIBO burger robot <http://www.nicai-systems.com/en/nibo-burger>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA16
+      - 15 MHz
+      - 16 Kb
+      - 1 Kb
+
+    * - ``niboburger_1284``
+      - `nicai-systems NIBO burger robot with Tuning Kit <http://www.nicai-systems.com/en/nibo-burger>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA1284P
+      - 20 MHz
+      - 128 Kb
+      - 16 Kb
 
 u-blox
 ~~~~~~
@@ -3763,6 +4441,7 @@ u-blox
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3770,6 +4449,7 @@ u-blox
 
     * - ``ublox_evk_odin_w2``
       - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F439ZIY6
       - 168 MHz
       - 2048 Kb
@@ -3777,6 +4457,7 @@ u-blox
 
     * - ``ubloxc027``
       - `u-blox C027 <https://developer.mbed.org/platforms/u-blox-C027/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC1768
       - 96 MHz
       - 512 Kb
@@ -3790,6 +4471,7 @@ ubIQio
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3797,6 +4479,7 @@ ubIQio
 
     * - ``ardhat``
       - `ubIQio Ardhat <http://ardhat.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -3810,6 +4493,7 @@ y5 design
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -3817,6 +4501,7 @@ y5 design
 
     * - ``lpc11u35_y5_mbug``
       - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
       - LPC11U35
       - 48 MHz
       - 64 Kb
@@ -3824,6 +4509,7 @@ y5 design
 
     * - ``nrf51822_y5_mbug``
       - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - NRF51822
       - 16 MHz
       - 256 Kb

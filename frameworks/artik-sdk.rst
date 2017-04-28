@@ -46,6 +46,7 @@ Samsung
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -53,6 +54,7 @@ Samsung
 
     * - ``artik_1020``
       - `Samsung ARTIK 1020 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - EXYNOS5422
       - 1500 MHz
       - 16777216 Kb
@@ -60,6 +62,7 @@ Samsung
 
     * - ``artik_520``
       - `Samsung ARTIK 520 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - EXYNOS3250
       - 1000 MHz
       - 4194304 Kb
@@ -67,6 +70,7 @@ Samsung
 
     * - ``artik_530``
       - `Samsung ARTIK 530 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - S5P4418
       - 1200 MHz
       - 4194304 Kb
@@ -74,6 +78,7 @@ Samsung
 
     * - ``artik_710``
       - `Samsung ARTIK 710 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
       - S5P6818
       - 1400 MHz
       - 4194304 Kb

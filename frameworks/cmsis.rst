@@ -46,6 +46,7 @@ Armstrap
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -53,6 +54,7 @@ Armstrap
 
     * - ``armstrap_eagle1024``
       - `Armstrap Eagle 1024 <http://docs.armstrap.org/en/latest/hardware-overview.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F417VGT6
       - 168 MHz
       - 1024 Kb
@@ -60,6 +62,7 @@ Armstrap
 
     * - ``armstrap_eagle2048``
       - `Armstrap Eagle 2048 <http://docs.armstrap.org/en/latest/hardware-overview.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F427VIT6
       - 168 MHz
       - 2048 Kb
@@ -67,6 +70,7 @@ Armstrap
 
     * - ``armstrap_eagle512``
       - `Armstrap Eagle 512 <http://docs.armstrap.org/en/latest/hardware-overview.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F407VET6
       - 168 MHz
       - 512 Kb
@@ -80,6 +84,7 @@ ST
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -87,6 +92,7 @@ ST
 
     * - ``disco_f303vc``
       - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F303VCT6
       - 72 MHz
       - 256 Kb
@@ -94,6 +100,7 @@ ST
 
     * - ``disco_f407vg``
       - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F407VGT6
       - 168 MHz
       - 1024 Kb
@@ -101,6 +108,7 @@ ST
 
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32L152RBT6
       - 32 MHz
       - 128 Kb
@@ -108,6 +116,7 @@ ST
 
     * - ``nucleo_f401re``
       - `ST Nucleo F401RE <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
       - STM32F401RET6
       - 84 MHz
       - 512 Kb

@@ -30,6 +30,9 @@ Platforms
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
+    * - :ref:`platform_espressif32_stage`
+      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
 Boards
 ------
 
@@ -46,6 +49,7 @@ Aiyarafun
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -53,6 +57,15 @@ Aiyarafun
 
     * - ``node32s``
       - `Node32s <http://www.ayarafun.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 112 Kb
+
+    * - ``node32s``
+      - `Node32s <http://www.ayarafun.com>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -66,6 +79,7 @@ April Brother
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -73,6 +87,37 @@ April Brother
 
     * - ``espea32``
       - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``espea32``
+      - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+DFRobot
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``firebeetle32``
+      - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -86,6 +131,7 @@ Electronic SweetPeas
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -93,6 +139,15 @@ Electronic SweetPeas
 
     * - ``esp320``
       - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``esp320``
+      - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -106,6 +161,7 @@ Espressif
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -113,6 +169,15 @@ Espressif
 
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``esp32dev``
+      - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -126,6 +191,7 @@ Hornbill
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -133,6 +199,15 @@ Hornbill
 
     * - ``hornbill32dev``
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``hornbill32dev``
+      - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -140,6 +215,37 @@ Hornbill
 
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``hornbill32minima``
+      - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+IntoRobot
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``intorobot``
+      - `IntoRobot Fig <http://docs.intorobot.com/zh/hardware/fig/hardware/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -153,6 +259,7 @@ MakerAsia
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -160,6 +267,15 @@ MakerAsia
 
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``nano32``
+      - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -173,6 +289,7 @@ Noduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -180,6 +297,15 @@ Noduino
 
     * - ``quantum``
       - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``quantum``
+      - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -193,6 +319,7 @@ SparkFun Electronics
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -200,6 +327,15 @@ SparkFun Electronics
 
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 112 Kb
+
+    * - ``esp32thing``
+      - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -213,6 +349,7 @@ WEMOS
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -220,6 +357,15 @@ WEMOS
 
     * - ``lolin32``
       - `WEMOS LoLin32 <https://wemos.cc>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+    * - ``lolin32``
+      - `WEMOS LoLin32 <https://wemos.cc>`_
+      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb

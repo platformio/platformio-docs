@@ -91,6 +91,7 @@ Adafruit
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -98,6 +99,7 @@ Adafruit
 
     * - ``bluefruitmicro``
       - `Adafruit Bluefruit Micro <https://www.adafruit.com/products/2661>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -105,6 +107,7 @@ Adafruit
 
     * - ``feather32u4``
       - `Adafruit Feather <https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -112,6 +115,7 @@ Adafruit
 
     * - ``flora8``
       - `Adafruit Flora <http://www.adafruit.com/product/659>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -119,6 +123,7 @@ Adafruit
 
     * - ``gemma``
       - `Adafruit Gemma <http://www.adafruit.com/products/1222>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 8 MHz
       - 8 Kb
@@ -126,6 +131,7 @@ Adafruit
 
     * - ``metro``
       - `Adafruit Metro <https://www.adafruit.com/products/2466>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -133,6 +139,7 @@ Adafruit
 
     * - ``protrinket3``
       - `Adafruit Pro Trinket 3V/12MHz (USB) <http://www.adafruit.com/products/2010>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 12 MHz
       - 32 Kb
@@ -140,6 +147,7 @@ Adafruit
 
     * - ``protrinket3ftdi``
       - `Adafruit Pro Trinket 3V/12MHz (FTDI) <http://www.adafruit.com/products/2010>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 12 MHz
       - 32 Kb
@@ -147,6 +155,7 @@ Adafruit
 
     * - ``protrinket5``
       - `Adafruit Pro Trinket 5V/16MHz (USB) <http://www.adafruit.com/products/2000>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -154,6 +163,7 @@ Adafruit
 
     * - ``protrinket5ftdi``
       - `Adafruit Pro Trinket 5V/16MHz (FTDI) <http://www.adafruit.com/products/2000>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -161,6 +171,7 @@ Adafruit
 
     * - ``trinket3``
       - `Adafruit Trinket 3V/8MHz <http://www.adafruit.com/products/1500>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 8 MHz
       - 8 Kb
@@ -168,6 +179,7 @@ Adafruit
 
     * - ``trinket5``
       - `Adafruit Trinket 5V/16MHz <http://www.adafruit.com/products/1501>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 16 MHz
       - 8 Kb
@@ -181,6 +193,7 @@ Arduboy
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -188,6 +201,7 @@ Arduboy
 
     * - ``arduboy``
       - `Arduboy <https://www.arduboy.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -195,6 +209,7 @@ Arduboy
 
     * - ``arduboy_devkit``
       - `Arduboy DevKit <https://www.arduboy.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -208,6 +223,7 @@ Arduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -215,6 +231,7 @@ Arduino
 
     * - ``LilyPadUSB``
       - `Arduino LilyPad USB <http://arduino.cc/en/Main/ArduinoBoardLilyPadUSB>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -222,6 +239,7 @@ Arduino
 
     * - ``atmega328pb``
       - `Atmel ATmega328PB <http://www.atmel.com/devices/ATMEGA328PB.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328PB
       - 16 MHz
       - 32 Kb
@@ -229,6 +247,7 @@ Arduino
 
     * - ``atmegangatmega168``
       - `Arduino NG or older ATmega168 <http://arduino.cc/en/main/boards>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -236,6 +255,7 @@ Arduino
 
     * - ``atmegangatmega8``
       - `Arduino NG or older ATmega8 <http://arduino.cc/en/main/boards>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA8
       - 16 MHz
       - 8 Kb
@@ -243,6 +263,7 @@ Arduino
 
     * - ``btatmega168``
       - `Arduino BT ATmega168 <http://arduino.cc/en/main/boards>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -250,6 +271,7 @@ Arduino
 
     * - ``btatmega328``
       - `Arduino BT ATmega328 <http://arduino.cc/en/main/boards>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -257,6 +279,7 @@ Arduino
 
     * - ``chiwawa``
       - `Arduino Industrial 101 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-industrial-101>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -264,6 +287,7 @@ Arduino
 
     * - ``diecimilaatmega168``
       - `Arduino Duemilanove or Diecimila ATmega168 <http://arduino.cc/en/Main/ArduinoBoardDiecimila>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -271,6 +295,7 @@ Arduino
 
     * - ``diecimilaatmega328``
       - `Arduino Duemilanove or Diecimila ATmega328 <http://arduino.cc/en/Main/ArduinoBoardDiecimila>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -278,6 +303,7 @@ Arduino
 
     * - ``esplora``
       - `Arduino Esplora <http://www.arduino.org/products/boards/4-arduino-boards/arduino-esplora>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -285,6 +311,7 @@ Arduino
 
     * - ``ethernet``
       - `Arduino Ethernet <http://www.arduino.org/products/boards/4-arduino-boards/arduino-ethernet>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -292,6 +319,7 @@ Arduino
 
     * - ``fio``
       - `Arduino Fio <http://arduino.cc/en/Main/ArduinoBoardFio>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -299,6 +327,7 @@ Arduino
 
     * - ``leonardo``
       - `Arduino Leonardo <http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -306,6 +335,7 @@ Arduino
 
     * - ``leonardoeth``
       - `Arduino Leonardo ETH <http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo-eth>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -313,6 +343,7 @@ Arduino
 
     * - ``lilypadatmega168``
       - `Arduino LilyPad ATmega168 <http://arduino.cc/en/Main/ArduinoBoardLilyPad>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 8 MHz
       - 16 Kb
@@ -320,6 +351,7 @@ Arduino
 
     * - ``lilypadatmega328``
       - `Arduino LilyPad ATmega328 <http://arduino.cc/en/Main/ArduinoBoardLilyPad>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -327,6 +359,7 @@ Arduino
 
     * - ``megaADK``
       - `Arduino Mega ADK <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-adk>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 16 MHz
       - 256 Kb
@@ -334,6 +367,7 @@ Arduino
 
     * - ``megaatmega1280``
       - `Arduino Mega or Mega 2560 ATmega1280 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1280
       - 16 MHz
       - 128 Kb
@@ -341,6 +375,7 @@ Arduino
 
     * - ``megaatmega2560``
       - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 16 MHz
       - 256 Kb
@@ -348,6 +383,7 @@ Arduino
 
     * - ``micro``
       - `Arduino Micro <http://www.arduino.org/products/boards/4-arduino-boards/arduino-micro>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -355,6 +391,7 @@ Arduino
 
     * - ``miniatmega168``
       - `Arduino Mini ATmega168 <http://arduino.cc/en/Main/ArduinoBoardMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -362,6 +399,7 @@ Arduino
 
     * - ``miniatmega328``
       - `Arduino Mini ATmega328 <http://arduino.cc/en/Main/ArduinoBoardMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -369,6 +407,7 @@ Arduino
 
     * - ``nanoatmega168``
       - `Arduino Nano ATmega168 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -376,6 +415,7 @@ Arduino
 
     * - ``nanoatmega328``
       - `Arduino Nano ATmega328 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -383,6 +423,7 @@ Arduino
 
     * - ``pro16MHzatmega168``
       - `Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 16 MHz
       - 16 Kb
@@ -390,6 +431,7 @@ Arduino
 
     * - ``pro16MHzatmega328``
       - `Arduino Pro or Pro Mini ATmega328 (5V, 16 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -397,6 +439,7 @@ Arduino
 
     * - ``pro8MHzatmega168``
       - `Arduino Pro or Pro Mini ATmega168 (3.3V, 8 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168
       - 8 MHz
       - 16 Kb
@@ -404,6 +447,7 @@ Arduino
 
     * - ``pro8MHzatmega328``
       - `Arduino Pro or Pro Mini ATmega328 (3.3V, 8 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -411,6 +455,7 @@ Arduino
 
     * - ``robotControl``
       - `Arduino Robot Control <http://www.arduino.org/products/boards/4-arduino-boards/arduino-robot>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -418,6 +463,7 @@ Arduino
 
     * - ``robotMotor``
       - `Arduino Robot Motor <http://www.arduino.org/products/boards/4-arduino-boards/arduino-robot>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -425,6 +471,7 @@ Arduino
 
     * - ``uno``
       - `Arduino Uno <http://www.arduino.org/products/boards/4-arduino-boards/arduino-uno>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -432,6 +479,7 @@ Arduino
 
     * - ``yun``
       - `Arduino Yun <http://www.arduino.org/products/boards/4-arduino-boards/arduino-yun>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -439,6 +487,7 @@ Arduino
 
     * - ``yunmini``
       - `Arduino Yun Mini <http://www.arduino.org/products/boards/4-arduino-boards/arduino-yun-mini>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -452,6 +501,7 @@ BQ
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -459,6 +509,7 @@ BQ
 
     * - ``zumbt328``
       - `BQ ZUM BT-328 <http://www.bq.com/gb/products/zum.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -472,6 +523,7 @@ BitWizard
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -479,6 +531,7 @@ BitWizard
 
     * - ``raspduino``
       - `BitWizard Raspduino <http://www.bitwizard.nl/wiki/index.php/Raspduino>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -492,6 +545,7 @@ Digistump
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -499,6 +553,7 @@ Digistump
 
     * - ``digispark-pro``
       - `Digistump Digispark Pro (Default 16 MHz) <http://digistump.com/products/109>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY167
       - 16 MHz
       - 16 Kb
@@ -506,6 +561,7 @@ Digistump
 
     * - ``digispark-pro32``
       - `Digistump Digispark Pro (16 MHz) (32 byte buffer) <http://digistump.com/products/109>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY167
       - 16 MHz
       - 16 Kb
@@ -513,6 +569,7 @@ Digistump
 
     * - ``digispark-pro64``
       - `Digistump Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY167
       - 16 MHz
       - 16 Kb
@@ -520,10 +577,33 @@ Digistump
 
     * - ``digispark-tiny``
       - `Digistump Digispark (Default - 16 MHz) <http://digistump.com/products/1>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 16 MHz
       - 8 Kb
       - 0.5 Kb
+
+Dwengo
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``dwenguino``
+      - `Dwenguino <http://www.dwengo.org/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - AT90USB646
+      - 16 MHz
+      - 64 Kb
+      - 2 Kb
 
 Engduino
 ~~~~~~~~
@@ -533,6 +613,7 @@ Engduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -540,6 +621,7 @@ Engduino
 
     * - ``engduinov3``
       - `Engduino 3 <http://www.engduino.org>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -553,6 +635,7 @@ EnviroDIY
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -560,6 +643,7 @@ EnviroDIY
 
     * - ``mayfly``
       - `EnviroDIY Mayfly <http://envirodiy.org/forums/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -573,6 +657,7 @@ Generic ATTiny
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -580,6 +665,7 @@ Generic ATTiny
 
     * - ``attiny13``
       - `Generic ATTiny13 <http://www.atmel.com/devices/ATTINY13.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY13
       - 9 MHz
       - 1 Kb
@@ -587,6 +673,7 @@ Generic ATTiny
 
     * - ``attiny2313``
       - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY2313
       - 8 MHz
       - 2 Kb
@@ -594,6 +681,7 @@ Generic ATTiny
 
     * - ``attiny24``
       - `Generic ATTiny24 <http://www.atmel.com/devices/ATTINY24.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY24
       - 8 MHz
       - 2 Kb
@@ -601,6 +689,7 @@ Generic ATTiny
 
     * - ``attiny25``
       - `Generic ATTiny25 <http://www.atmel.com/devices/ATTINY25.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY25
       - 8 MHz
       - 2 Kb
@@ -608,6 +697,7 @@ Generic ATTiny
 
     * - ``attiny4313``
       - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY4313
       - 8 MHz
       - 4 Kb
@@ -615,6 +705,7 @@ Generic ATTiny
 
     * - ``attiny44``
       - `Generic ATTiny44 <http://www.atmel.com/devices/ATTINY44.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY44
       - 8 MHz
       - 4 Kb
@@ -622,6 +713,7 @@ Generic ATTiny
 
     * - ``attiny45``
       - `Generic ATTiny45 <http://www.atmel.com/devices/ATTINY45.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY45
       - 8 MHz
       - 4 Kb
@@ -629,6 +721,7 @@ Generic ATTiny
 
     * - ``attiny84``
       - `Generic ATTiny84 <http://www.atmel.com/devices/ATTINY84.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY84
       - 8 MHz
       - 8 Kb
@@ -636,6 +729,7 @@ Generic ATTiny
 
     * - ``attiny85``
       - `Generic ATTiny85 <http://www.atmel.com/devices/ATTINY85.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATTINY85
       - 8 MHz
       - 8 Kb
@@ -649,6 +743,7 @@ LightUp
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -656,6 +751,7 @@ LightUp
 
     * - ``lightup``
       - `LightUp <https://www.lightup.io/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -669,6 +765,7 @@ Linino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -676,6 +773,7 @@ Linino
 
     * - ``one``
       - `Linino One <http://www.linino.org/portfolio/linino-one/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -689,6 +787,7 @@ LowPowerLab
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -696,6 +795,7 @@ LowPowerLab
 
     * - ``moteino``
       - `LowPowerLab Moteino <https://lowpowerlab.com/shop/moteino-r4>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -703,6 +803,7 @@ LowPowerLab
 
     * - ``moteinomega``
       - `LowPowerLab MoteinoMEGA <http://lowpowerlab.com/blog/2014/08/09/moteinomega-available-now/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -716,6 +817,7 @@ Mcudude
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -723,6 +825,7 @@ Mcudude
 
     * - ``mightycore1284``
       - `MightyCore ATmega1284 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -730,6 +833,7 @@ Mcudude
 
     * - ``mightycore16``
       - `MightyCore ATmega16 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA16
       - 16 MHz
       - 16 Kb
@@ -737,6 +841,7 @@ Mcudude
 
     * - ``mightycore164``
       - `MightyCore ATmega164 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA164P
       - 16 MHz
       - 16 Kb
@@ -744,6 +849,7 @@ Mcudude
 
     * - ``mightycore32``
       - `MightyCore ATmega32 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32
       - 16 MHz
       - 32 Kb
@@ -751,6 +857,7 @@ Mcudude
 
     * - ``mightycore324``
       - `MightyCore ATmega324 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA324P
       - 16 MHz
       - 32 Kb
@@ -758,6 +865,7 @@ Mcudude
 
     * - ``mightycore644``
       - `MightyCore ATmega644 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 16 MHz
       - 64 Kb
@@ -765,6 +873,7 @@ Mcudude
 
     * - ``mightycore8535``
       - `MightyCore ATmega8535 <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA16
       - 16 MHz
       - 8 Kb
@@ -778,6 +887,7 @@ Microduino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -785,6 +895,7 @@ Microduino
 
     * - ``1284p16m``
       - `Microduino Core+ (ATmega1284P@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -792,6 +903,7 @@ Microduino
 
     * - ``1284p8m``
       - `Microduino Core+ (ATmega1284P@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -799,6 +911,7 @@ Microduino
 
     * - ``168pa16m``
       - `Microduino Core (Atmega168PA@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168P
       - 16 MHz
       - 16 Kb
@@ -806,6 +919,7 @@ Microduino
 
     * - ``168pa8m``
       - `Microduino Core (Atmega168PA@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA168P
       - 8 MHz
       - 16 Kb
@@ -813,6 +927,7 @@ Microduino
 
     * - ``328p16m``
       - `Microduino Core (Atmega328P@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -820,6 +935,7 @@ Microduino
 
     * - ``328p8m``
       - `Microduino Core (Atmega328P@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -827,6 +943,7 @@ Microduino
 
     * - ``32u416m``
       - `Microduino Core USB (ATmega32U4@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-CoreUSB>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -834,6 +951,7 @@ Microduino
 
     * - ``644pa16m``
       - `Microduino Core+ (Atmega644PA@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 16 MHz
       - 64 Kb
@@ -841,6 +959,7 @@ Microduino
 
     * - ``644pa8m``
       - `Microduino Core+ (Atmega644PA@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 8 MHz
       - 64 Kb
@@ -854,6 +973,7 @@ OpenEnergyMonitor
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -861,6 +981,7 @@ OpenEnergyMonitor
 
     * - ``emonpi``
       - `OpenEnergyMonitor emonPi <https://github.com/openenergymonitor/emonpi>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -874,6 +995,7 @@ PanStamp
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -881,6 +1003,7 @@ PanStamp
 
     * - ``panStampAVR``
       - `PanStamp AVR <http://www.panstamp.com/product/panstamp-avr/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -894,6 +1017,7 @@ Pinoccio
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -901,6 +1025,7 @@ Pinoccio
 
     * - ``pinoccio``
       - `Pinoccio Scout <https://www.crowdsupply.com/pinoccio/mesh-sensor-network>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA256RFR2
       - 16 MHz
       - 256 Kb
@@ -914,6 +1039,7 @@ Pololu Corporation
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -921,6 +1047,7 @@ Pololu Corporation
 
     * - ``a-star32U4``
       - `Pololu A-Star 32U4 <https://www.pololu.com/category/149/a-star-programmable-controllers>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -934,6 +1061,7 @@ Punch Through
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -941,6 +1069,7 @@ Punch Through
 
     * - ``lightblue-bean``
       - `LightBlue Bean <https://punchthrough.com/bean>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -948,6 +1077,7 @@ Punch Through
 
     * - ``lightblue-beanplus``
       - `LightBlue Bean+ <https://punchthrough.com/bean>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -961,6 +1091,7 @@ Quirkbot
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -968,6 +1099,7 @@ Quirkbot
 
     * - ``quirkbot``
       - `Quirkbot <http://quirkbot.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -981,6 +1113,7 @@ RedBearLab
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -988,6 +1121,7 @@ RedBearLab
 
     * - ``blend``
       - `RedBearLab Blend <http://redbearlab.com/blend/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -995,6 +1129,7 @@ RedBearLab
 
     * - ``blendmicro16``
       - `RedBearLab Blend Micro 3.3V/16MHz (overclock) <http://redbearlab.com/blendmicro/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -1002,6 +1137,7 @@ RedBearLab
 
     * - ``blendmicro8``
       - `RedBearLab Blend Micro 3.3V/8MHz <http://redbearlab.com/blendmicro/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -1015,6 +1151,7 @@ RepRap
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1022,6 +1159,7 @@ RepRap
 
     * - ``reprap_rambo``
       - `RepRap RAMBo <http://reprap.org/wiki/Rambo>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 16 MHz
       - 256 Kb
@@ -1035,6 +1173,7 @@ SODAQ
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1042,6 +1181,7 @@ SODAQ
 
     * - ``sodaq_galora``
       - `SODAQ GaLoRa <http://support.sodaq.com/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -1049,6 +1189,7 @@ SODAQ
 
     * - ``sodaq_mbili``
       - `SODAQ Mbili <http://support.sodaq.com/sodaq-one/sodaq-mbili-1284p/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -1056,6 +1197,7 @@ SODAQ
 
     * - ``sodaq_moja``
       - `SODAQ Moja <http://support.sodaq.com/sodaq-one/moja/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -1063,6 +1205,7 @@ SODAQ
 
     * - ``sodaq_ndogo``
       - `SODAQ Ndogo <http://support.sodaq.com/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -1070,6 +1213,7 @@ SODAQ
 
     * - ``sodaq_tatu``
       - `SODAQ Tatu <http://support.sodaq.com/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -1083,6 +1227,7 @@ Sanguino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1090,6 +1235,7 @@ Sanguino
 
     * - ``sanguino_atmega1284_8m``
       - `Sanguino ATmega1284p (8MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 8 MHz
       - 128 Kb
@@ -1097,6 +1243,7 @@ Sanguino
 
     * - ``sanguino_atmega1284p``
       - `Sanguino ATmega1284p (16MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -1104,6 +1251,7 @@ Sanguino
 
     * - ``sanguino_atmega644``
       - `Sanguino ATmega644 or ATmega644A (16 MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644
       - 16 MHz
       - 64 Kb
@@ -1111,6 +1259,7 @@ Sanguino
 
     * - ``sanguino_atmega644_8m``
       - `Sanguino ATmega644 or ATmega644A (8 MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644
       - 8 MHz
       - 64 Kb
@@ -1118,6 +1267,7 @@ Sanguino
 
     * - ``sanguino_atmega644p``
       - `Sanguino ATmega644P or ATmega644PA (16 MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 16 MHz
       - 64 Kb
@@ -1125,6 +1275,7 @@ Sanguino
 
     * - ``sanguino_atmega644p_8m``
       - `Sanguino ATmega644P or ATmega644PA (8 MHz) <https://code.google.com/p/sanguino/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA644P
       - 8 MHz
       - 64 Kb
@@ -1138,6 +1289,7 @@ SparkFun
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1145,6 +1297,7 @@ SparkFun
 
     * - ``sparkfun_digitalsandbox``
       - `SparkFun Digital Sandbox <https://www.sparkfun.com/products/12651>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -1152,6 +1305,7 @@ SparkFun
 
     * - ``sparkfun_fiov3``
       - `SparkFun Fio V3 3.3V/8MHz <https://www.sparkfun.com/products/11520>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -1159,6 +1313,7 @@ SparkFun
 
     * - ``sparkfun_makeymakey``
       - `SparkFun Makey Makey <https://www.sparkfun.com/products/11511>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -1166,6 +1321,7 @@ SparkFun
 
     * - ``sparkfun_megamini``
       - `SparkFun Mega Pro Mini 3.3V <https://www.sparkfun.com/products/10743>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 8 MHz
       - 256 Kb
@@ -1173,6 +1329,7 @@ SparkFun
 
     * - ``sparkfun_megapro16MHz``
       - `SparkFun Mega Pro 5V/16MHz <https://www.sparkfun.com/products/11007>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 16 MHz
       - 256 Kb
@@ -1180,6 +1337,7 @@ SparkFun
 
     * - ``sparkfun_megapro8MHz``
       - `SparkFun Mega Pro 3.3V/8MHz <https://www.sparkfun.com/products/10744>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA2560
       - 8 MHz
       - 256 Kb
@@ -1187,6 +1345,7 @@ SparkFun
 
     * - ``sparkfun_promicro16``
       - `SparkFun Pro Micro 5V/16MHz <https://www.sparkfun.com/products/12640>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -1194,6 +1353,7 @@ SparkFun
 
     * - ``sparkfun_promicro8``
       - `SparkFun Pro Micro 3.3V/8MHz <https://www.sparkfun.com/products/12587>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -1201,6 +1361,7 @@ SparkFun
 
     * - ``sparkfun_qduinomini``
       - `SparkFun Qduino Mini <https://www.sparkfun.com/products/13614>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 8 MHz
       - 32 Kb
@@ -1208,6 +1369,7 @@ SparkFun
 
     * - ``sparkfun_redboard``
       - `SparkFun RedBoard <https://www.sparkfun.com/products/12757>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -1215,6 +1377,7 @@ SparkFun
 
     * - ``sparkfun_satmega128rfa1``
       - `SparkFun ATmega128RFA1 Dev Board <https://www.sparkfun.com/products/11197>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA128RFA1
       - 16 MHz
       - 16 Kb
@@ -1222,6 +1385,7 @@ SparkFun
 
     * - ``sparkfun_serial7seg``
       - `SparkFun Serial 7-Segment Display <https://www.sparkfun.com/products/11441>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -1229,6 +1393,7 @@ SparkFun
 
     * - ``uview``
       - `SparkFun MicroView <https://www.sparkfun.com/products/12923>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb
@@ -1242,6 +1407,7 @@ The Things Network
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1249,6 +1415,7 @@ The Things Network
 
     * - ``the_things_uno``
       - `The Things Uno <https://shop.thethingsnetwork.com/index.php/product/the-things-uno/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -1262,6 +1429,7 @@ TinyCircuits
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1269,6 +1437,7 @@ TinyCircuits
 
     * - ``tinyduino``
       - `TinyCircuits TinyDuino Processor Board <https://tiny-circuits.com/tinyduino-processor-board.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -1276,6 +1445,7 @@ TinyCircuits
 
     * - ``tinylily``
       - `TinyCircuits TinyLily Mini Processor <https://tiny-circuits.com/tiny-lily-mini-processor.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 8 MHz
       - 32 Kb
@@ -1289,6 +1459,7 @@ Wicked Device
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1296,6 +1467,7 @@ Wicked Device
 
     * - ``wildfirev2``
       - `Wicked Device WildFire V2 <http://shop.wickeddevice.com/resources/wildfire/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -1303,6 +1475,7 @@ Wicked Device
 
     * - ``wildfirev3``
       - `Wicked Device WildFire V3 <http://shop.wickeddevice.com/resources/wildfire/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA1284P
       - 16 MHz
       - 128 Kb
@@ -1316,6 +1489,7 @@ makerlab.mx
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1323,10 +1497,73 @@ makerlab.mx
 
     * - ``altair``
       - `Altair <http://www.aquila.io/en>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA256RFR2
       - 16 MHz
       - 256 Kb
       - 32 Kb
+
+nicai-systems
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``bob3``
+      - `nicai-systems BOB3 coding bot <http://www.nicai-systems.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA88
+      - 8 MHz
+      - 8 Kb
+      - 1 Kb
+
+    * - ``nibo2``
+      - `nicai-systems NIBO 2 robot <http://www.nicai-systems.com/en/nibo2>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA128
+      - 16 MHz
+      - 128 Kb
+      - 4 Kb
+
+    * - ``nibobee``
+      - `nicai-systems NIBObee robot <http://www.nicai-systems.com/en/nibobee>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA16
+      - 15 MHz
+      - 16 Kb
+      - 1 Kb
+
+    * - ``nibobee_1284``
+      - `nicai-systems NIBObee robot with Tuning Kit <http://www.nicai-systems.com/en/nibobee>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA1284P
+      - 20 MHz
+      - 128 Kb
+      - 16 Kb
+
+    * - ``niboburger``
+      - `nicai-systems NIBO burger robot <http://www.nicai-systems.com/en/nibo-burger>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA16
+      - 15 MHz
+      - 16 Kb
+      - 1 Kb
+
+    * - ``niboburger_1284``
+      - `nicai-systems NIBO burger robot with Tuning Kit <http://www.nicai-systems.com/en/nibo-burger>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - ATMEGA1284P
+      - 20 MHz
+      - 128 Kb
+      - 16 Kb
 
 ubIQio
 ~~~~~~
@@ -1336,6 +1573,7 @@ ubIQio
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -1343,6 +1581,7 @@ ubIQio
 
     * - ``ardhat``
       - `ubIQio Ardhat <http://ardhat.com>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
       - ATMEGA328P
       - 16 MHz
       - 32 Kb

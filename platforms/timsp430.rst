@@ -88,6 +88,7 @@ PanStamp
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -95,6 +96,7 @@ PanStamp
 
     * - ``panStampNRG``
       - `PanStamp NRG 1.1 <http://www.panstamp.com/product/197/>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - CC430F5137
       - 12 MHz
       - 32 Kb
@@ -108,6 +110,7 @@ TI
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -115,6 +118,7 @@ TI
 
     * - ``lpmsp430f5529``
       - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430F5529
       - 16 MHz
       - 128 Kb
@@ -122,6 +126,7 @@ TI
 
     * - ``lpmsp430fr4133``
       - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR4133
       - 8 MHz
       - 16 Kb
@@ -129,6 +134,7 @@ TI
 
     * - ``lpmsp430fr5739``
       - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR5739
       - 16 MHz
       - 16 Kb
@@ -136,6 +142,7 @@ TI
 
     * - ``lpmsp430fr5969``
       - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR5969
       - 8 MHz
       - 64 Kb
@@ -143,6 +150,7 @@ TI
 
     * - ``lpmsp430fr6989``
       - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430FR6989
       - 8 MHz
       - 128 Kb
@@ -150,6 +158,7 @@ TI
 
     * - ``lpmsp430g2553``
       - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
       - MSP430G2553
       - 16 MHz
       - 16 Kb

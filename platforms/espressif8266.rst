@@ -97,6 +97,7 @@ Adafruit
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -104,6 +105,7 @@ Adafruit
 
     * - ``huzzah``
       - `Adafruit HUZZAH ESP8266 <https://www.adafruit.com/products/2471>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -117,6 +119,7 @@ Doit
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -124,6 +127,7 @@ Doit
 
     * - ``espduino``
       - `ESPDuino (ESP-13 Module) <https://www.tindie.com/products/doit/espduinowifi-uno-r3/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -137,6 +141,7 @@ DycodeX
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -144,6 +149,7 @@ DycodeX
 
     * - ``espectro``
       - `ESPrectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -157,6 +163,7 @@ ESPert
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -164,6 +171,7 @@ ESPert
 
     * - ``espresso_lite_v1``
       - `ESPresso Lite 1.0 <http://www.espert.co>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -171,6 +179,7 @@ ESPert
 
     * - ``espresso_lite_v2``
       - `ESPresso Lite 2.0 <http://www.espert.co>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -184,6 +193,7 @@ ESPino
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -191,6 +201,7 @@ ESPino
 
     * - ``espino``
       - `ESPino <http://www.espino.io>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -204,6 +215,7 @@ Espressif
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -211,6 +223,7 @@ Espressif
 
     * - ``esp01``
       - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 512 Kb
@@ -218,6 +231,7 @@ Espressif
 
     * - ``esp01_1m``
       - `Espressif Generic ESP8266 ESP-01 1M <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 1024 Kb
@@ -225,6 +239,7 @@ Espressif
 
     * - ``esp07``
       - `Espressif Generic ESP8266 ESP-07 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family#esp-07>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -232,6 +247,7 @@ Espressif
 
     * - ``esp12e``
       - `Espressif ESP8266 ESP-12E <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -239,6 +255,7 @@ Espressif
 
     * - ``esp8285``
       - `Generic ESP8285 Module <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 448 Kb
@@ -246,6 +263,7 @@ Espressif
 
     * - ``esp_wroom_02``
       - `ESP-WROOM-02 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -253,6 +271,7 @@ Espressif
 
     * - ``phoenix_v1``
       - `Phoenix 1.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 1024 Kb
@@ -260,6 +279,7 @@ Espressif
 
     * - ``phoenix_v2``
       - `Phoenix 2.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 1024 Kb
@@ -267,6 +287,7 @@ Espressif
 
     * - ``wifinfo``
       - `WifInfo <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 448 Kb
@@ -280,6 +301,7 @@ NodeMCU
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -287,6 +309,7 @@ NodeMCU
 
     * - ``nodemcu``
       - `NodeMCU 0.9 (ESP-12 Module) <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -294,6 +317,7 @@ NodeMCU
 
     * - ``nodemcuv2``
       - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -307,6 +331,7 @@ Olimex
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -314,6 +339,7 @@ Olimex
 
     * - ``modwifi``
       - `Olimex MOD-WIFI-ESP8266(-DEV) <https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 2048 Kb
@@ -327,6 +353,7 @@ SparkFun
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -334,6 +361,7 @@ SparkFun
 
     * - ``sparkfunBlynk``
       - `SparkFun Blynk Board <https://www.sparkfun.com/products/13794>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -341,6 +369,7 @@ SparkFun
 
     * - ``thing``
       - `SparkFun ESP8266 Thing <https://www.sparkfun.com/products/13231>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 512 Kb
@@ -348,6 +377,7 @@ SparkFun
 
     * - ``thingdev``
       - `SparkFun ESP8266 Thing Dev <https://www.sparkfun.com/products/13231>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 512 Kb
@@ -361,6 +391,7 @@ SweetPea
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -368,6 +399,7 @@ SweetPea
 
     * - ``esp210``
       - `SweetPea ESP-210 <http://wiki.sweetpeas.se/index.php?title=ESP-210>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -381,6 +413,7 @@ ThaiEasyElec
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -388,6 +421,7 @@ ThaiEasyElec
 
     * - ``espinotee``
       - `ThaiEasyElec ESPino <http://www.thaieasyelec.com/products/wireless-modules/wifi-modules/espino-wifi-development-board-detail.html>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -401,6 +435,7 @@ WeMos
 
     * - ID
       - Name
+      - Platform
       - Microcontroller
       - Frequency
       - Flash
@@ -408,6 +443,7 @@ WeMos
 
     * - ``d1``
       - `WeMos D1(Retired) <http://www.wemos.cc/wiki/doku.php?id=en:d1>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
@@ -415,6 +451,7 @@ WeMos
 
     * - ``d1_mini``
       - `WeMos D1 R2 & mini <http://www.wemos.cc/wiki/doku.php?id=en:d1_mini>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
       - ESP8266
       - 80 MHz
       - 4096 Kb
