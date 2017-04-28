@@ -30,9 +30,6 @@ Platforms
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-    * - :ref:`platform_espressif32_stage`
-      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
-
 Boards
 ------
 
@@ -58,14 +55,6 @@ MakerAsia
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - ESP32
-      - 240 MHz
-      - 1024 Kb
-      - 288 Kb
-
-    * - ``nano32``
-      - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
-      - :ref:`Espressif 32 (Stage) <platform_espressif32_stage>`
       - ESP32
       - 240 MHz
       - 1024 Kb

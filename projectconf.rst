@@ -997,6 +997,66 @@ automatically.
 To print all available serial ports use :ref:`cmd_device_list` command.
 
 
+Debugging options
+~~~~~~~~~~~~~~~~~
+
+.. versionadded:: 3.4
+.. seealso::
+    Please make sure to read :ref:`debugging` guide first.
+
+.. _projectconf_debug_port:
+
+``debug_port``
+^^^^^^^^^^^^^^
+
+A debugging port of a remote target. Could be a serial device or network address.
+
+For example:
+
+* ``/dev/ttyUSB0`` - Unix-based OS
+* ``COM3`` - Windows OS
+* ``localhost:3333``
+
+
+.. _projectconf_debug_init_cmds:
+
+``debug_init_cmds``
+^^^^^^^^^^^^^^^^^^^
+
+Initial commands that will be passed to back-end debugger. For example,
+the initial commands for GDB:
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ...
+    board = ...
+    debug_init_cmds =
+      target remote $DEBUG_PORT
+      file $PROG_PATH
+      load $PROG_PATH
+      monitor init
+      monitor reset halt
+      tb main
+
+.. _projectconf_debug_extra_cmds:
+
+``debug_extra_cmds``
+^^^^^^^^^^^^^^^^^^^^
+
+Extra commands that will be passed to back-end debugger after initialization.
+For example, add custom breakpoint and load ``.gdbinit`` from a project directory
+for GDB:
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ...
+    board = ...
+    debug_extra_cmds =
+      b main.cpp:13
+      source .gdbinit
+
 Advanced options
 ~~~~~~~~~~~~~~~~
 

@@ -9,6 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. |PIODebug| replace:: **PIO Unified Debugger**
+
 .. _debugging:
 
 PIO Unified Debugger
@@ -20,7 +22,7 @@ PIO Unified Debugger
 
 .. note::
 
-  `PLEASE READ: Actual news/progress of PlatformIO Debugging (supported boards, platforms, etc). <https://community.platformio.org/t/pio-unified-debugger/1704>`_
+  `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/pio-unified-debugger/1704>`_
 
 
 * 100+ boards
@@ -29,13 +31,23 @@ PIO Unified Debugger
 * Compatibility with the popular IDEs: Eclipse, Atom, VSCode, Sublime Text, etc
 * Windows, MacOS, Linux (+ARMv6-8)
 
-You should have :ref:`cmd_account` to work with **PIO Unified Debugger**.
+You should have :ref:`cmd_account` to work with |PIODebug|.
 A registration is **FREE**.
 
 .. tip::
   `QUESTIONS? Chat with us! <https://pioplus.com>`_
   (chat button is located in the bottom right corner)
 
+.. image:: ../_static/pioplus-debugger-demo.png
+
+Configuration
+-------------
+
+|PIODebug| can be configured from :ref:`projectconf`
+
+* :ref:`projectconf_debug_port`
+* :ref:`projectconf_debug_init_cmds`
+* :ref:`projectconf_debug_extra_cmds`
 
 .. _debugging_platforms:
 
