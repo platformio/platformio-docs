@@ -1004,6 +1004,25 @@ Debugging options
 .. seealso::
     Please make sure to read :ref:`debugging` guide first.
 
+.. _projectconf_debug_tool:
+
+``debug_tool``
+^^^^^^^^^^^^^^
+
+A name of debugging tool. This option is useful when board support more than
+one debugger tool/adapter.
+
+See available tools per board in :ref:`debugging`.
+
+Example
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ...
+    board = ...
+    debug_tool = j-link
+
 .. _projectconf_debug_port:
 
 ``debug_port``

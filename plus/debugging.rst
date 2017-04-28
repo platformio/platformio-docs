@@ -40,11 +40,14 @@ A registration is **FREE**.
 
 .. image:: ../_static/pioplus-debugger-demo.png
 
+.. contents::
+
 Configuration
 -------------
 
 |PIODebug| can be configured from :ref:`projectconf`
 
+* :ref:`projectconf_debug_tool`
 * :ref:`projectconf_debug_port`
 * :ref:`projectconf_debug_init_cmds`
 * :ref:`projectconf_debug_extra_cmds`
