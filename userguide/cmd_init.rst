@@ -48,7 +48,7 @@ Options
 .. option::
     -d, --project-dir
 
-A path to the directory where *PlatformIO* will initialize new project.
+A path to a directory where *PlatformIO* will initialize new project.
 
 .. option::
     -b, --board

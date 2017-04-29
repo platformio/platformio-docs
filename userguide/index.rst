@@ -61,6 +61,7 @@ Commands
     platformio account <account/index>
     cmd_boards
     cmd_ci
+    cmd_debug
     cmd_device
     cmd_init
     platformio lib <lib/index>

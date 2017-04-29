@@ -52,10 +52,18 @@ Configuration
 * :ref:`projectconf_debug_init_cmds`
 * :ref:`projectconf_debug_extra_cmds`
 
+User Guide (CLI)
+----------------
+
+.. toctree::
+    :maxdepth: 3
+
+    platformio debug <../userguide/cmd_debug>
+
 Tools
 -----
 
-You can change debugging tool via ref:`projectconf_debug_tool` option.
+You can change debugging tool via :ref:`projectconf_debug_tool` option.
 
 .. _debugging_tool_blackmagic:
 
