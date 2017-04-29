@@ -50,6 +50,7 @@ ST
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -58,6 +59,7 @@ ST
     * - ``disco_f303vc``
       - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044>`_
       - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <debugging>`
       - STM32F303VCT6
       - 72 MHz
       - 256 Kb
@@ -66,6 +68,7 @@ ST
     * - ``disco_f407vg``
       - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419>`_
       - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <debugging>`
       - STM32F407VGT6
       - 168 MHz
       - 1024 Kb
@@ -74,6 +77,7 @@ ST
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515>`_
       - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <debugging>`
       - STM32L152RBT6
       - 32 MHz
       - 128 Kb
@@ -82,6 +86,7 @@ ST
     * - ``nucleo_f103rb``
       - `ST Nucleo F103RB <https://developer.mbed.org/platforms/ST-Nucleo-F103RB/>`_
       - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <debugging>`
       - STM32F103RBT6
       - 72 MHz
       - 128 Kb
@@ -96,6 +101,7 @@ TI
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -104,6 +110,7 @@ TI
     * - ``lplm4f120h5qr``
       - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl>`_
       - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`Yes <debugging>`
       - LPLM4F120H5QR
       - 80 MHz
       - 256 Kb
@@ -112,6 +119,7 @@ TI
     * - ``lptm4c1230c3pm``
       - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html>`_
       - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`Yes <debugging>`
       - LPTM4C1230C3PM
       - 80 MHz
       - 256 Kb
@@ -120,6 +128,7 @@ TI
     * - ``lptm4c1294ncpdt``
       - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html>`_
       - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`Yes <debugging>`
       - LPTM4C1294NCPDT
       - 120 MHz
       - 1024 Kb

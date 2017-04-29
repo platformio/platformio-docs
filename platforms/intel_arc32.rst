@@ -83,6 +83,7 @@ Intel
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -91,6 +92,7 @@ Intel
     * - ``genuino101``
       - `Arduino/Genuino 101 <https://www.arduino.cc/en/Main/ArduinoBoard101>`_
       - :ref:`Intel ARC32 <platform_intel_arc32>`
+      - 
       - ARCV2EM
       - 32 MHz
       - 192 Kb

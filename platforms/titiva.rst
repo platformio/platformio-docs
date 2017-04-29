@@ -92,6 +92,7 @@ TI
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -100,6 +101,7 @@ TI
     * - ``lplm4f120h5qr``
       - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl>`_
       - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`Yes <debugging>`
       - LPLM4F120H5QR
       - 80 MHz
       - 256 Kb
@@ -108,6 +110,7 @@ TI
     * - ``lptm4c1230c3pm``
       - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html>`_
       - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`Yes <debugging>`
       - LPTM4C1230C3PM
       - 80 MHz
       - 256 Kb
@@ -116,6 +119,7 @@ TI
     * - ``lptm4c1294ncpdt``
       - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html>`_
       - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`Yes <debugging>`
       - LPTM4C1294NCPDT
       - 120 MHz
       - 1024 Kb

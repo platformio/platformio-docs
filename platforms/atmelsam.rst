@@ -101,6 +101,7 @@ Adafruit
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -109,6 +110,7 @@ Adafruit
     * - ``adafruit_circuitplayground_m0``
       - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -117,6 +119,7 @@ Adafruit
     * - ``adafruit_feather_m0_usb``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -131,6 +134,7 @@ Arduino
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -139,6 +143,7 @@ Arduino
     * - ``due``
       - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -147,6 +152,7 @@ Arduino
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -155,6 +161,7 @@ Arduino
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -163,6 +170,7 @@ Arduino
     * - ``mkrfox1200``
       - `Arduino MKRFox1200 <https://www.arduino.cc/en/Main.ArduinoBoardMKRFox1200>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -171,6 +179,7 @@ Arduino
     * - ``mkrzero``
       - `Arduino MKRZero <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -179,6 +188,7 @@ Arduino
     * - ``mzeroUSB``
       - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -187,6 +197,7 @@ Arduino
     * - ``mzeropro``
       - `Arduino M0 Pro (Programming/Debug Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -195,6 +206,7 @@ Arduino
     * - ``mzeroproUSB``
       - `Arduino M0 Pro (Native USB Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -203,6 +215,7 @@ Arduino
     * - ``tian``
       - `Arduino Tian <http://www.arduino.org/products/boards/arduino-tian>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -211,6 +224,7 @@ Arduino
     * - ``zero``
       - `Arduino Zero (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -219,6 +233,7 @@ Arduino
     * - ``zeroUSB``
       - `Arduino Zero (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -233,6 +248,7 @@ Atmel
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -241,6 +257,7 @@ Atmel
     * - ``samd21_xpro``
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <debugging>`
       - ATSAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -249,6 +266,7 @@ Atmel
     * - ``samd21g18a``
       - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <debugging>`
       - ATSAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -257,6 +275,7 @@ Atmel
     * - ``saml21_xpro_b``
       - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <debugging>`
       - ATSAML21J18B
       - 48 MHz
       - 256 Kb
@@ -265,6 +284,7 @@ Atmel
     * - ``samr21_xpro``
       - `Atmel ATSAMR21-XPRO <https://developer.mbed.org/platforms/SAMR21-XPRO/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <debugging>`
       - ATSAMR21G18A
       - 48 MHz
       - 256 Kb
@@ -279,6 +299,7 @@ Digistump
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -287,6 +308,7 @@ Digistump
     * - ``digix``
       - `Digistump DigiX <http://digistump.com/products/50>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -301,6 +323,7 @@ SODAQ
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -309,6 +332,7 @@ SODAQ
     * - ``sodaq_autonomo``
       - `SODAQ Autonomo <http://support.sodaq.com/sodaq-one/autonomo/getting-started-autonomo/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -317,6 +341,7 @@ SODAQ
     * - ``sodaq_explorer``
       - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -325,6 +350,7 @@ SODAQ
     * - ``sodaq_one``
       - `SODAQ ONE <http://support.sodaq.com/sodaq-one/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -333,6 +359,7 @@ SODAQ
     * - ``sodaq_wdt``
       - `SODAQ WDT <http://support.sodaq.com/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -347,6 +374,7 @@ SainSmart
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -355,6 +383,7 @@ SainSmart
     * - ``sainSmartDue``
       - `SainSmart Due (Programming Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -363,6 +392,7 @@ SainSmart
     * - ``sainSmartDueUSB``
       - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -377,6 +407,7 @@ SparkFun
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -385,6 +416,7 @@ SparkFun
     * - ``sparkfun_samd21_dev_usb``
       - `SparkFun SAMD21 Dev Breakout <https://www.sparkfun.com/products/13672>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -393,6 +425,7 @@ SparkFun
     * - ``sparkfun_samd21_mini_usb``
       - `SparkFun SAMD21 Mini Breakout <https://www.sparkfun.com/products/13664>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
       - SAMD21G18A
       - 48 MHz
       - 256 Kb

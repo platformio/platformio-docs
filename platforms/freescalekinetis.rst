@@ -80,6 +80,7 @@ Freescale
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -88,6 +89,7 @@ Freescale
     * - ``IBMEthernetKit``
       - `Ethernet IoT Starter Kit <http://developer.mbed.org/platforms/IBMEthernetKit/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MK64FN1M0VLL12
       - 120 MHz
       - 1024 Kb
@@ -96,6 +98,7 @@ Freescale
     * - ``frdm_k20d50m``
       - `Freescale Kinetis FRDM-K20D50M <https://developer.mbed.org/platforms/FRDM-K20D50M/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MK20DX128VLH5
       - 48 MHz
       - 128 Kb
@@ -104,6 +107,7 @@ Freescale
     * - ``frdm_k22f``
       - `Freescale Kinetis FRDM-K22F <https://developer.mbed.org/platforms/FRDM-K22F/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MK22FN512VLH12
       - 120 MHz
       - 512 Kb
@@ -112,6 +116,7 @@ Freescale
     * - ``frdm_k64f``
       - `Freescale Kinetis FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MK64FN1M0VLL12
       - 120 MHz
       - 1024 Kb
@@ -120,6 +125,7 @@ Freescale
     * - ``frdm_kl05z``
       - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MKL05Z32VFM4
       - 48 MHz
       - 32 Kb
@@ -128,6 +134,7 @@ Freescale
     * - ``frdm_kl25z``
       - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MKL25Z128VLK4
       - 48 MHz
       - 128 Kb
@@ -136,6 +143,7 @@ Freescale
     * - ``frdm_kl26z``
       - `Freescale Kinetis FRDM-KL26Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MKL26Z128VLH4
       - 48 MHz
       - 128 Kb
@@ -144,6 +152,7 @@ Freescale
     * - ``frdm_kl27z``
       - `Freescale Kinetis FRDM-KL27Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl17-and-kl27-mcus:FRDM-KL27Z>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MKL27Z64VLH4
       - 48 MHz
       - 64 Kb
@@ -152,6 +161,7 @@ Freescale
     * - ``frdm_kl43z``
       - `Freescale Kinetis FRDM-KL43Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl43-kl33-kl27-kl17-and-kl13-mcus:FRDM-KL43Z>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MKL43Z256VLH4
       - 48 MHz
       - 256 Kb
@@ -160,6 +170,7 @@ Freescale
     * - ``frdm_kl46z``
       - `Freescale Kinetis FRDM-KL46Z <https://developer.mbed.org/platforms/FRDM-KL46Z/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MKL46Z256VLL4
       - 48 MHz
       - 256 Kb
@@ -174,6 +185,7 @@ MikroElektronika
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -182,6 +194,7 @@ MikroElektronika
     * - ``hexiwear``
       - `Hexiwear <https://developer.mbed.org/platforms/Hexiwear/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <debugging>`
       - MK64FN1M0VDC12
       - 120 MHz
       - 1024 Kb

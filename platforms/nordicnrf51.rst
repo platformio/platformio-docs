@@ -92,6 +92,7 @@ BBC
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -100,6 +101,7 @@ BBC
     * - ``bbcmicrobit``
       - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - 
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -108,6 +110,7 @@ BBC
     * - ``bbcmicrobit_b``
       - `BBC micro:bit B(S130) <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - 
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -122,6 +125,7 @@ Delta
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -130,6 +134,7 @@ Delta
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 32 MHz
       - 256 Kb
@@ -144,6 +149,7 @@ JKSoft
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -152,6 +158,7 @@ JKSoft
     * - ``wallbot_ble``
       - `JKSoft Wallbot BLE <https://developer.mbed.org/platforms/JKSoft-Wallbot-BLE/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -166,6 +173,7 @@ Nordic
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -174,6 +182,7 @@ Nordic
     * - ``nrf51_dk``
       - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 32 MHz
       - 256 Kb
@@ -182,6 +191,7 @@ Nordic
     * - ``nrf51_dongle``
       - `Nordic nRF51-Dongle <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 32 MHz
       - 256 Kb
@@ -190,6 +200,7 @@ Nordic
     * - ``nrf51_mkit``
       - `Nordic nRF51822-mKIT <http://developer.mbed.org/platforms/Nordic-nRF51822/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -204,6 +215,7 @@ RFduino
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -212,6 +224,7 @@ RFduino
     * - ``rfduino``
       - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - 
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -226,6 +239,7 @@ RedBearLab
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -234,6 +248,7 @@ RedBearLab
     * - ``redBearLab``
       - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -242,6 +257,7 @@ RedBearLab
     * - ``redBearLabBLENano``
       - `RedBearLab BLE Nano <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -256,6 +272,7 @@ SeeedStudio
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -264,6 +281,7 @@ SeeedStudio
     * - ``seeedArchBLE``
       - `Seeed Arch BLE <https://developer.mbed.org/platforms/Seeed-Arch-BLE/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -272,6 +290,7 @@ SeeedStudio
     * - ``seeedArchLink``
       - `Seeed Arch Link <https://developer.mbed.org/platforms/Seeed-Arch-Link/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -280,6 +299,7 @@ SeeedStudio
     * - ``seeedTinyBLE``
       - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -294,6 +314,7 @@ Switch Science
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -302,6 +323,7 @@ Switch Science
     * - ``hrm1017``
       - `Switch Science mbed HRM1017 <https://developer.mbed.org/platforms/mbed-HRM1017/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -310,6 +332,7 @@ Switch Science
     * - ``ty51822r3``
       - `Switch Science mbed TY51822r3 <https://developer.mbed.org/platforms/Switch-Science-mbed-TY51822r3/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 32 MHz
       - 256 Kb
@@ -324,6 +347,7 @@ y5 design
     * - ID
       - Name
       - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -332,6 +356,7 @@ y5 design
     * - ``nrf51822_y5_mbug``
       - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <debugging>`
       - NRF51822
       - 16 MHz
       - 256 Kb

@@ -1021,7 +1021,7 @@ Example
     [env:debug]
     platform = ...
     board = ...
-    debug_tool = j-link
+    debug_tool = jlink
 
 .. _projectconf_debug_port:
 
