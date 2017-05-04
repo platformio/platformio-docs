@@ -191,7 +191,7 @@ For the full list with available options please run
 
 .. code-block:: bash
 
-    ~/.platformio/packages/framework-arduinoespressif8266/tools/espota.py -h
+    ~/.platformio/packages/tool-espotapy/espota.py -h
 
     Usage: espota.py [options]
 
