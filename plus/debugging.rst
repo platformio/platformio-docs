@@ -50,7 +50,8 @@ Configuration
 * :ref:`projectconf_debug_tool`
 * :ref:`projectconf_debug_port`
 * :ref:`projectconf_debug_init_cmds`
-* :ref:`projectconf_debug_extra_cmds`
+* :ref:`projectconf_debug_extra_cmds` (set initial project breakpoints, extra
+  configuration, etc.)
 
 User Guide (CLI)
 ----------------
