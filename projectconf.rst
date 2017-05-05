@@ -1057,8 +1057,8 @@ For example, the custom initial commands for GDB:
     board = ...
     debug_init_cmds =
       target remote $DEBUG_PORT
-      file $PROG_PATH
-      load $PROG_PATH
+      file "$PROG_PATH"
+      load "$PROG_PATH"
       monitor init
       monitor reset halt
       tb main
@@ -1078,8 +1078,20 @@ for GDB:
     platform = ...
     board = ...
     debug_extra_cmds =
-      b main.cpp:13
+      break main.cpp:13
+      break foo.cpp:100
       source .gdbinit
+
+.. note::
+
+  **Initial Project Breakpoints**: Use ``break path/to/file:LINE_NUMBER`` to
+  define initial breakpoints for debug environment. Multiple breakpoints are
+  allowed.
+
+  To save session breakpoints, please use ``save breakpoints [filename]``
+  command in Debug Console. For example, ``save breakpoints .gdbinit``. Later,
+  this file could be loaded via ``source [filename]`` command. See above.
+
 
 Advanced options
 ~~~~~~~~~~~~~~~~
