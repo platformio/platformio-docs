@@ -22,6 +22,7 @@ PlatformIO IDE is the next-generation integrated development environment for IoT
     - 20+ development platforms
     - 10+ frameworks
 
+* :ref:`debugging`
 * C/C++ Intelligent Code Completion
 * C/C++ Smart Code Linter for rapid professional development
 * Library Manager for the hundreds popular libraries
