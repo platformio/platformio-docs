@@ -219,6 +219,7 @@ Custom debugging configuration:
     framework = mbed
     board = nucleo_f446re
     debug_port = :2331
+    debug_tool = custom
     debug_server =
       JLinkGDBServer
       -device
@@ -234,6 +235,7 @@ Custom debugging configuration:
     platform = ststm32
     framework = mbed
     board = ...
+    debug_tool = custom
     debug_port = :4242
     debug_server = $PLATFORMIO_HOME_DIR/packages/tool-stlink/st-util
 
@@ -245,6 +247,7 @@ Custom debugging configuration:
     platform = ststm32
     framework = mbed
     board = ...
+    debug_tool = custom
     debug_server =
       $PLATFORMIO_HOME_DIR/packages/tool-openocd/bin/openocd
       -f
