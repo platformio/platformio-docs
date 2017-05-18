@@ -31,6 +31,15 @@ page for more detailed information.
 Integration
 -----------
 
+Integration process consists of these steps:
+
+1. Open system Terminal and install :ref:`core`
+2. Create new folder for your project and change directory (``cd``) to it
+3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+4. Import project in IDE.
+
+------------
+
 Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <http://platformio.org/boards>`_
 command and generate project via :option:`platformio init --ide` command:
 
@@ -43,7 +52,8 @@ command and generate project via :option:`platformio init --ide` command:
 
 Then:
 
-1. Place source files (``*.c, *.cpp, *.h, *.hpp``) to ``src`` directory
+1. Place source files (``*.c, *.cpp, *.h, *.hpp``) to ``src`` directory and
+   repeat :option:`platformio init --ide` command above (to refresh source files list)
 2. Import this project via ``Menu: File > Import Project``
    and specify root directory where is located :ref:`projectconf`
 3. Open source file from ``src`` directory
@@ -95,49 +105,7 @@ not valid C/C++ based source files:
 1. Missing includes such as ``#include <Arduino.h>``
 2. Function declarations are omitted.
 
-Convert Arduino file to C++ manually
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For example, we have the next ``Demo.ino`` file:
-
-.. code-block:: cpp
-
-    void function setup () {
-        someFunction(13);
-    }
-
-    void function loop() {
-        delay(1000);
-    }
-
-    void someFunction(int num) {
-    }
-
-Let's convert it to  ``Demo.cpp``:
-
-1. Add ``#include <Arduino.h>`` at the top of the source file
-2. Declare each custom function (excluding built-in, such as ``setup`` and ``loop``)
-   before it will be called.
-
-The final ``Demo.cpp``:
-
-.. code-block:: cpp
-
-    #include <Arduino.h>
-
-    void someFunction(int num);
-
-    void function setup () {
-        someFunction(13);
-    }
-
-    void function loop() {
-        delay(1000);
-    }
-
-    void someFunction(int num) {
-    }
-
+See how to :ref:`faq_convert_ino_to_cpp`.
 
 Articles / Manuals
 ------------------

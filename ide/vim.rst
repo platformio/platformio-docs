@@ -25,11 +25,12 @@ standalone application in a graphical user interface.
 Integration
 -----------
 
-.. note::
-    Please verify that folder where is located ``platformio`` program is added
-    to `PATH (wiki) <https://en.wikipedia.org/wiki/PATH_(variable)>`_ environment
-    variable. See FAQ: :ref:`faq_troubleshooting_pionotfoundinpath`.
+Integration process consists of these steps:
 
+1. Open system Terminal and install :ref:`core`
+2. Create new folder for your project and change directory (``cd``) to it
+3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+4. Import project in IDE.
 
 "Neomake-PlatformIO" Plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -373,45 +373,7 @@ There are two solutions:
 Convert Arduino file to C++ manually
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For example, we have the next ``Demo.ino`` file:
-
-.. code-block:: cpp
-
-    void setup () {
-        someFunction(13);
-    }
-
-    void loop() {
-        delay(1000);
-    }
-
-    void someFunction(int num) {
-    }
-
-Let's convert it to  ``Demo.cpp``:
-
-1. Add ``#include <Arduino.h>`` at the top of the source file
-2. Declare each custom function (excluding built-in, such as ``setup`` and ``loop``)
-   before it will be called.
-
-The final ``Demo.cpp``:
-
-.. code-block:: cpp
-
-    #include <Arduino.h>
-
-    void someFunction(int num);
-
-    void setup () {
-        someFunction(13);
-    }
-
-    void loop() {
-        delay(1000);
-    }
-
-    void someFunction(int num) {
-    }
+Recommended! See :ref:`faq_convert_ino_to_cpp`.
 
 Force Arduino file as C++
 ^^^^^^^^^^^^^^^^^^^^^^^^^
