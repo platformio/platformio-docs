@@ -1009,34 +1009,56 @@ Debugging options
 ``debug_tool``
 ^^^^^^^^^^^^^^
 
-A name of debugging tool. This option is useful when board support more than
-one debugger tool/adapter.
+A name of debugging tool. This option is useful when board supports more than
+one debugging tool (adapter, probe) or you want to create :ref:`debugging_tool_custom`
+debugging configuration.
 
-See available tools per board in :ref:`debugging`.
+See available tools in :ref:`debugging_tools`.
 
-Example
+**Example**
 
 .. code-block:: ini
 
     [env:debug]
     platform = ...
     board = ...
-    debug_tool = jlink
+    debug_tool = custom
 
-.. _projectconf_debug_port:
+.. _projectconf_debug_init_break:
 
-``debug_port``
-^^^^^^^^^^^^^^
+``debug_init_break``
+^^^^^^^^^^^^^^^^^^^^
 
-A debugging port of a remote target. Could be a serial device or network address.
-PlatformIO detects it automatically if is not specified.
+An initial breakpoint that makes your program stop whenever a certain point in
+the program is reached. **Default** value is ``tbreak main`` that means to create
+a temporary breakpoint at ``int main(...)`` function and automatically delete
+it after the first time a program stops there.
 
-For example:
+* `GDB Setting Breakpoints <https://sourceware.org/gdb/onlinedocs/gdb/Set-Breaks.html#Set-Breaks>`_
+* `GDB Breakpoint Locations <https://sourceware.org/gdb/onlinedocs/gdb/Specify-Location.html#Specify-Location>`_
 
-* ``/dev/ttyUSB0`` - Unix-based OS
-* ``COM3`` - Windows OS
-* ``localhost:3333``
+.. note::
+  Please note that each debugging tool (adapter, probe) has limited number of
+  hardware breakpoints.
 
+  If you need more **Project Initial Breakpoints**, please place them in :ref:`projectconf_debug_extra_cmds`.
+
+**Examples**
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ...
+    board = ...
+
+    ; Examples 1: disable initial breakpoint
+    debug_init_break =
+
+    ; Examples 2: temporary stop at ``void loop()`` function
+    debug_init_break = tb loop
+
+    ; Examples 3: stop in main.cpp at line 13
+    debug_init_break = break main.cpp:13
 
 .. _projectconf_debug_init_cmds:
 
@@ -1061,7 +1083,7 @@ For example, the custom initial commands for GDB:
       load "$PROG_PATH"
       monitor init
       monitor reset halt
-      tb main
+      $INIT_BREAK
 
 .. _projectconf_debug_extra_cmds:
 
@@ -1092,6 +1114,48 @@ for GDB:
   command in Debug Console. For example, ``save breakpoints .gdbinit``. Later,
   this file could be loaded via ``source [filename]`` command. See above.
 
+.. _projectconf_debug_server:
+
+``debug_server``
+^^^^^^^^^^^^^^^^
+
+Allows to setup a custom debugging server. By default, boards are pre-configured
+with a debugging server that is compatible with "on-board" debugging tool
+(adapter, probe). Also, this option is useful for a
+:ref:`debugging_tool_custom` debugging tool.
+
+**Option format (multi-line)**:
+
+* First line is an executable path of debugging server
+* 2-nd and the next lines are arguments for executable file
+
+**Example:**
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ...
+    board = ...
+    debug_server =
+      /path/to/debugging/server
+      arg1
+      arg2
+      ...
+      argN
+
+.. _projectconf_debug_port:
+
+``debug_port``
+^^^^^^^^^^^^^^
+
+A debugging port of a remote target. Could be a serial device or network address.
+PlatformIO detects it automatically if is not specified.
+
+For example:
+
+* ``/dev/ttyUSB0`` - Unix-based OS
+* ``COM3`` - Windows OS
+* ``localhost:3333``
 
 Advanced options
 ~~~~~~~~~~~~~~~~

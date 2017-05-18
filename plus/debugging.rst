@@ -28,7 +28,7 @@ PIO Unified Debugger
 * 100+ boards
 * Multiple architectures and development platforms
 * Zero Configuration
-* Compatibility with the popular IDEs: Eclipse, Atom, VSCode, Sublime Text, etc
+* Compatibility with the popular IDEs: :ref:`ide_atom`, Eclipse, VSCode, Sublime Text, etc
 * Windows, MacOS, Linux (+ARMv6-8)
 
 You should have :ref:`cmd_account` to work with |PIODebug|.
@@ -48,10 +48,12 @@ Configuration
 |PIODebug| can be configured from :ref:`projectconf`
 
 * :ref:`projectconf_debug_tool`
-* :ref:`projectconf_debug_port`
+* :ref:`projectconf_debug_init_break` (setup initial breakpoint)
 * :ref:`projectconf_debug_init_cmds`
-* :ref:`projectconf_debug_extra_cmds` (set initial project breakpoints, extra
+* :ref:`projectconf_debug_extra_cmds` (conditional project breakpoints, extra
   configuration, etc.)
+* :ref:`projectconf_debug_server` (custom debugging server)
+* :ref:`projectconf_debug_port`
 
 User Guide (CLI)
 ----------------
@@ -60,6 +62,9 @@ User Guide (CLI)
     :maxdepth: 3
 
     platformio debug <../userguide/cmd_debug>
+
+
+.. _debugging_tools:
 
 Tools
 -----
@@ -71,7 +76,7 @@ You can change debugging tool via :ref:`projectconf_debug_tool` option.
 Black Magic Probe
 ~~~~~~~~~~~~~~~~~
 
-Name: ``blackmagic``
+:ref:`projectconf_debug_tool` = ``blackmagic``
 
 The Black Magic Probe is a modern, in-application debugging tool for embedded
 microprocessors. It is able to control and examine the state of the target
@@ -86,7 +91,7 @@ computer using a standard USB interface.
 CMSIS-DAP
 ~~~~~~~~~
 
-Name: ``cmsis-dap``
+:ref:`projectconf_debug_tool` = ``cmsis-dap``
 
 CMSIS-DAP is generally implemented as an on-board interface chip, providing
 direct USB connection from a development board to a debugger running on a host
@@ -100,13 +105,15 @@ computer on one side, and over JTAG (Joint Test Action Group) or SWD
 J-LINK
 ~~~~~~
 
-Name: ``jlink``
+:ref:`projectconf_debug_tool` = ``jlink``
 
 SEGGER J-Links are the most widely used line of debug probes available today.
 They've proven their value for more than 10 years with over 400,000 units sold,
 including OEM versions and on-board solutions. This popularity stems from the
 unparalleled performance, extensive feature set, large number of supported
 CPUs, and compatibility with all popular development environments.
+
+Also, see :ref:`debugging_tool_custom` debugging configuration.
 
 `More details <https://www.segger.com/jlink-debug-probes.html>`__
 
@@ -115,7 +122,7 @@ CPUs, and compatibility with all popular development environments.
 MSP Debug
 ~~~~~~~~~
 
-Name: ``mspdebug``
+:ref:`projectconf_debug_tool` = ``mspdebug``
 
 The MSP debug stack (MSPDS) for all MSP430™ microcontrollers (MCUs) and
 SimpleLink™ MSP432™ devices consists of a static library on the host system
@@ -132,7 +139,7 @@ break points
 TI-ICDI
 ~~~~~~~
 
-Name: ``ti-icdi``
+:ref:`projectconf_debug_tool` = ``ti-icdi``
 
 Tiva™ C Series evaluation and reference design kits provide an integrated
 In-Circuit Debug Interface (ICDI) which allows programming and debugging of
@@ -145,7 +152,7 @@ the onboard C Series microcontroller
 ST-LINK
 ~~~~~~~
 
-Name: ``stlink``
+:ref:`projectconf_debug_tool` = ``stlink``
 
 The ST-LINK is an in-circuit debugger and programmer for the STM8 and STM32
 microcontroller families. The single wire interface module (SWIM) and
@@ -159,7 +166,7 @@ STM8 or STM32 microcontroller located on an application board.
 ST-LINK/V1
 ~~~~~~~~~~
 
-Name: ``stlink-v1``
+:ref:`projectconf_debug_tool` = ``stlink-v1``
 
 ST-LINK/V1 in-circuit debugger/programmer for STM8 and STM32.
 Details :ref:`debugging_tool_stlink`.
@@ -169,7 +176,7 @@ Details :ref:`debugging_tool_stlink`.
 ST-LINK/V2
 ~~~~~~~~~~
 
-Name: ``stlink-v2``
+:ref:`projectconf_debug_tool` = ``stlink-v2``
 
 ST-LINK/V2 in-circuit debugger/programmer for STM8 and STM32.
 Details :ref:`debugging_tool_stlink`.
@@ -179,10 +186,69 @@ Details :ref:`debugging_tool_stlink`.
 ST-LINK/V2-1
 ~~~~~~~~~~~~
 
-Name: ``stlink-v2-1``
+:ref:`projectconf_debug_tool` = ``stlink-v2-1``
 
 ST-LINK/V2-1 in-circuit debugger/programmer for STM8 and STM32.
 Details :ref:`debugging_tool_stlink`.
+
+.. _debugging_tool_custom:
+
+Custom
+~~~~~~
+
+:ref:`projectconf_debug_tool` = ``custom``
+
+Custom debugging configuration:
+
+* :ref:`projectconf_debug_init_break` (setup initial breakpoint)
+* :ref:`projectconf_debug_init_cmds`
+* :ref:`projectconf_debug_extra_cmds` (conditional project breakpoints, extra
+  configuration, etc.)
+* :ref:`projectconf_debug_server` (custom debugging server)
+* :ref:`projectconf_debug_port`
+
+
+**Examples**
+
+1. `Segger J-Link <https://www.segger.com/jlink-st-link.html>`_ probe and ST Nucleo F446RE board in pair with `J-Link GDB Server <https://www.segger.com/jlink-gdb-server.html>`_:
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ststm32
+    framework = mbed
+    board = nucleo_f446re
+    debug_port = :2331
+    debug_server =
+      JLinkGDBServer
+      -device
+      STM32F446RE
+      -if
+      SWD
+
+2. On-board ST-Link V2/V2-1 in pair with `ST-Util GDB Server <https://github.com/texane/stlink>`_:
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ststm32
+    framework = mbed
+    board = ...
+    debug_port = :4242
+    debug_server = $PLATFORMIO_HOME_DIR/packages/tool-stlink/st-util
+
+3. On-board ST-Link V2/V2-1 in pair with `OpenOCD GDB Server <http://openocd.org>`_:
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ststm32
+    framework = mbed
+    board = ...
+    debug_server =
+      $PLATFORMIO_HOME_DIR/packages/tool-openocd/bin/openocd
+      -f
+      $PLATFORMIO_HOME_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg
 
 .. _debugging_platforms:
 
