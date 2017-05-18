@@ -1167,9 +1167,9 @@ Advanced options
 
 .. warning::
 
-  This option is recommended for Advanced Users and requires Python language knowledges.
+  This option is recommended for Advanced Users and requires Python language knowledge.
 
-  We highly recommended to take a look at :ref:`projectconf_dynamic_build_flags`
+  We highly recommend to take a look at :ref:`projectconf_dynamic_build_flags`
   option where you can use any programming language. Also, this option is very
   good if you need to apply changes to the project before building/uploading
   process:
