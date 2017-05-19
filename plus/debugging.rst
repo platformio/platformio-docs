@@ -214,18 +214,25 @@ Custom debugging configuration:
 
 .. code-block:: ini
 
-    [env:debug]
+    [env:debug_jlink]
     platform = ststm32
     framework = mbed
     board = nucleo_f446re
     debug_port = :2331
     debug_tool = custom
+    debug_init_cmds =
+      target remote $DEBUG_PORT
+      file "$PROG_PATH"
+      load
+      tb main
+      mon reset
+      mon halt
     debug_server =
-      JLinkGDBServer
+      C:/Program Files (x86)/SEGGER/JLink_V612e/JLinkGDBServerCL.exe
+      -select
+      USB
       -device
       STM32F446RE
-      -if
-      SWD
 
 2. On-board ST-Link V2/V2-1 in pair with `ST-Util GDB Server <https://github.com/texane/stlink>`_:
 
