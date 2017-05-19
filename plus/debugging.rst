@@ -48,12 +48,13 @@ Configuration
 |PIODebug| can be configured from :ref:`projectconf`
 
 * :ref:`projectconf_debug_tool`
-* :ref:`projectconf_debug_init_break` (setup initial breakpoint)
+* :ref:`projectconf_debug_init_break`
 * :ref:`projectconf_debug_init_cmds`
 * :ref:`projectconf_debug_extra_cmds` (conditional project breakpoints, extra
   configuration, etc.)
-* :ref:`projectconf_debug_server` (custom debugging server)
+* :ref:`projectconf_debug_server`
 * :ref:`projectconf_debug_port`
+* :ref:`projectconf_debug_preload`
 
 User Guide (CLI)
 ----------------

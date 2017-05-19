@@ -1157,6 +1157,24 @@ For example:
 * ``COM3`` - Windows OS
 * ``localhost:3333``
 
+.. _projectconf_debug_preload:
+
+``debug_preload``
+^^^^^^^^^^^^^^^^^
+
+Prepare project for debugging and upload firmware to a target before debugging
+session. This is option is useful for a target where Flash Memory is locked
+(some Freescale Kinetis and NXP LPC boards).
+
+For example:
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ...
+    board = ...
+    debug_preload = true
+
 Advanced options
 ~~~~~~~~~~~~~~~~
 
