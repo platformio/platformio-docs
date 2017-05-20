@@ -34,6 +34,9 @@ Packages
     * - `framework-mbed <http://mbed.org>`__
       - mbed Framework
 
+    * - `tool-openocd <http://openocd.org>`__
+      - OpenOCD
+
     * - `tool-rfdloader <https://github.com/RFduino/RFduino>`__
       - rfdloader
 

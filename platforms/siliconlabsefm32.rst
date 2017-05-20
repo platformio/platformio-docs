@@ -31,6 +31,9 @@ Packages
     * - `framework-mbed <http://mbed.org>`__
       - mbed Framework
 
+    * - `tool-openocd <http://openocd.org>`__
+      - OpenOCD
+
     * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
       - gcc-arm-embedded
 

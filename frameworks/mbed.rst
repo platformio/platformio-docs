@@ -230,7 +230,7 @@ Elektor Labs
     * - ``elektor_cocorico``
       - `CoCo-ri-Co! <https://developer.mbed.org/platforms/CoCo-ri-Co/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC812
       - 30 MHz
       - 16 Kb
@@ -638,7 +638,7 @@ NXP
     * - ``lpc11u24``
       - `NXP mbed LPC11U24 <https://developer.mbed.org/platforms/mbed-LPC11U24/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -647,7 +647,7 @@ NXP
     * - ``lpc11u24_301``
       - `ARM mbed LPC11U24 (+CAN) <https://developer.mbed.org/handbook/mbed-NXP-LPC11U24>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -674,7 +674,7 @@ NXP
     * - ``lpc11u68``
       - `LPCXpresso11U68 <https://developer.mbed.org/platforms/LPCXpresso11U68/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC11U68
       - 50 MHz
       - 256 Kb
@@ -692,7 +692,7 @@ NXP
     * - ``lpc1768``
       - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC1768
       - 96 MHz
       - 512 Kb
@@ -710,7 +710,7 @@ NXP
     * - ``lpc2460``
       - `NXP LPC2460 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-arm7-arm9-mcus/lpc-arm7-mcus/lpc2100-200-300-400/flashless-16-bit-32-bit-microcontroller-ethernet-can-isp-iap-usb-2.0-device-host-otg-external-memory-interface:LPC2460FBD208>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC2460
       - 72 MHz
       - 64 Kb
@@ -719,7 +719,7 @@ NXP
     * - ``lpc812``
       - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC812
       - 30 MHz
       - 16 Kb
@@ -728,7 +728,7 @@ NXP
     * - ``lpc824``
       - `LPCXpresso824-MAX <https://developer.mbed.org/platforms/LPCXpresso824-MAX/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC824
       - 30 MHz
       - 32 Kb
@@ -1481,7 +1481,7 @@ Switch Science
     * - ``lpc1114fn28``
       - `Switch Science mbed LPC1114FN28 <https://developer.mbed.org/platforms/LPC1114FN28/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC1114FN28
       - 48 MHz
       - 32 Kb

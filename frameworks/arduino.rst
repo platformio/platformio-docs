@@ -140,6 +140,15 @@ Adafruit
       - 32 Kb
       - 2.5 Kb
 
+    * - ``featheresp32``
+      - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
     * - ``flora8``
       - `Adafruit Flora <http://www.adafruit.com/product/659>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1427,6 +1436,24 @@ Generic ATTiny
       - 1 Kb
       - 0.0625 Kb
 
+    * - ``attiny1634``
+      - `Generic ATTiny1634 <http://www.atmel.com/devices/ATTINY1634.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY1634
+      - 8 MHz
+      - 16 Kb
+      - 1 Kb
+
+    * - ``attiny167``
+      - `Generic ATTiny167 <http://www.atmel.com/devices/ATTINY167.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY167
+      - 8 MHz
+      - 16 Kb
+      - 0.5 Kb
+
     * - ``attiny2313``
       - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1454,6 +1481,15 @@ Generic ATTiny
       - 2 Kb
       - 0.125 Kb
 
+    * - ``attiny261``
+      - `Generic ATTiny261 <http://www.atmel.com/devices/ATTINY261.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY261
+      - 8 MHz
+      - 2 Kb
+      - 0.125 Kb
+
     * - ``attiny4313``
       - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1472,11 +1508,38 @@ Generic ATTiny
       - 4 Kb
       - 0.25 Kb
 
+    * - ``attiny441``
+      - `Generic ATTiny441 <http://www.atmel.com/devices/ATTINY441.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY441
+      - 8 MHz
+      - 4 Kb
+      - 0.25 Kb
+
     * - ``attiny45``
       - `Generic ATTiny45 <http://www.atmel.com/devices/ATTINY45.aspx>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY45
+      - 8 MHz
+      - 4 Kb
+      - 0.25 Kb
+
+    * - ``attiny461``
+      - `Generic ATTiny461 <http://www.atmel.com/devices/ATTINY461.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY461
+      - 8 MHz
+      - 4 Kb
+      - 0.25 Kb
+
+    * - ``attiny48``
+      - `Generic ATTiny48 <http://www.atmel.com/devices/ATTINY48.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY48
       - 8 MHz
       - 4 Kb
       - 0.25 Kb
@@ -1490,11 +1553,47 @@ Generic ATTiny
       - 8 Kb
       - 0.5 Kb
 
+    * - ``attiny841``
+      - `Generic ATTiny841 <http://www.atmel.com/devices/ATTINY841.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY841
+      - 8 MHz
+      - 8 Kb
+      - 0.5 Kb
+
     * - ``attiny85``
       - `Generic ATTiny85 <http://www.atmel.com/devices/ATTINY85.aspx>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY85
+      - 8 MHz
+      - 8 Kb
+      - 0.5 Kb
+
+    * - ``attiny861``
+      - `Generic ATTiny861 <http://www.atmel.com/devices/ATTINY861.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY861
+      - 8 MHz
+      - 8 Kb
+      - 0.5 Kb
+
+    * - ``attiny87``
+      - `Generic ATTiny87 <http://www.atmel.com/devices/ATTINY87.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY87
+      - 8 MHz
+      - 8 Kb
+      - 0.5 Kb
+
+    * - ``attiny88``
+      - `Generic ATTiny88 <http://www.atmel.com/devices/ATTINY88.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY88
       - 8 MHz
       - 8 Kb
       - 0.5 Kb
@@ -1949,6 +2048,15 @@ NodeMCU
       - 4096 Kb
       - 80 Kb
 
+    * - ``nodemcu-32s``
+      - `NodeMCU-32S <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
     * - ``nodemcuv2``
       - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -2014,6 +2122,30 @@ Olimex
       - 80 MHz
       - 256 Kb
       - 32 Kb
+
+Onehorse
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``onehorse32dev``
+      - `Onehorse ESP32 Dev Module <https://www.tindie.com/products/onehorse/esp32-development-board/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 OpenBCI
 ~~~~~~~
@@ -2745,7 +2877,7 @@ SparkFun Electronics
       - ESP32
       - 240 MHz
       - 1024 Kb
-      - 112 Kb
+      - 288 Kb
 
 SweetPea
 ~~~~~~~~
@@ -2979,7 +3111,7 @@ WEMOS
       - RAM
 
     * - ``lolin32``
-      - `WEMOS LoLin32 <https://wemos.cc>`_
+      - `WEMOS LOLIN32 <https://wemos.cc>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32
@@ -3052,6 +3184,30 @@ Wicked Device
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+Widora
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``widora-air``
+      - `Widora AIR <http://widora.io>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 chipKIT
 ~~~~~~~

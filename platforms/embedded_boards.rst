@@ -124,6 +124,15 @@ Adafruit
       - 32 Kb
       - 2.5 Kb
 
+    * - ``featheresp32``
+      - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
     * - ``flora8``
       - `Adafruit Flora <http://www.adafruit.com/product/659>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1315,7 +1324,7 @@ Elektor Labs
     * - ``elektor_cocorico``
       - `CoCo-ri-Co! <https://developer.mbed.org/platforms/CoCo-ri-Co/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC812
       - 30 MHz
       - 16 Kb
@@ -1828,6 +1837,24 @@ Generic ATTiny
       - 1 Kb
       - 0.0625 Kb
 
+    * - ``attiny1634``
+      - `Generic ATTiny1634 <http://www.atmel.com/devices/ATTINY1634.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY1634
+      - 8 MHz
+      - 16 Kb
+      - 1 Kb
+
+    * - ``attiny167``
+      - `Generic ATTiny167 <http://www.atmel.com/devices/ATTINY167.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY167
+      - 8 MHz
+      - 16 Kb
+      - 0.5 Kb
+
     * - ``attiny2313``
       - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1855,6 +1882,15 @@ Generic ATTiny
       - 2 Kb
       - 0.125 Kb
 
+    * - ``attiny261``
+      - `Generic ATTiny261 <http://www.atmel.com/devices/ATTINY261.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY261
+      - 8 MHz
+      - 2 Kb
+      - 0.125 Kb
+
     * - ``attiny4313``
       - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1873,11 +1909,38 @@ Generic ATTiny
       - 4 Kb
       - 0.25 Kb
 
+    * - ``attiny441``
+      - `Generic ATTiny441 <http://www.atmel.com/devices/ATTINY441.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY441
+      - 8 MHz
+      - 4 Kb
+      - 0.25 Kb
+
     * - ``attiny45``
       - `Generic ATTiny45 <http://www.atmel.com/devices/ATTINY45.aspx>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY45
+      - 8 MHz
+      - 4 Kb
+      - 0.25 Kb
+
+    * - ``attiny461``
+      - `Generic ATTiny461 <http://www.atmel.com/devices/ATTINY461.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY461
+      - 8 MHz
+      - 4 Kb
+      - 0.25 Kb
+
+    * - ``attiny48``
+      - `Generic ATTiny48 <http://www.atmel.com/devices/ATTINY48.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY48
       - 8 MHz
       - 4 Kb
       - 0.25 Kb
@@ -1891,11 +1954,47 @@ Generic ATTiny
       - 8 Kb
       - 0.5 Kb
 
+    * - ``attiny841``
+      - `Generic ATTiny841 <http://www.atmel.com/devices/ATTINY841.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY841
+      - 8 MHz
+      - 8 Kb
+      - 0.5 Kb
+
     * - ``attiny85``
       - `Generic ATTiny85 <http://www.atmel.com/devices/ATTINY85.aspx>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY85
+      - 8 MHz
+      - 8 Kb
+      - 0.5 Kb
+
+    * - ``attiny861``
+      - `Generic ATTiny861 <http://www.atmel.com/devices/ATTINY861.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY861
+      - 8 MHz
+      - 8 Kb
+      - 0.5 Kb
+
+    * - ``attiny87``
+      - `Generic ATTiny87 <http://www.atmel.com/devices/ATTINY87.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY87
+      - 8 MHz
+      - 8 Kb
+      - 0.5 Kb
+
+    * - ``attiny88``
+      - `Generic ATTiny88 <http://www.atmel.com/devices/ATTINY88.aspx>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATTINY88
       - 8 MHz
       - 8 Kb
       - 0.5 Kb
@@ -2518,7 +2617,7 @@ NXP
     * - ``lpc11u24``
       - `NXP mbed LPC11U24 <https://developer.mbed.org/platforms/mbed-LPC11U24/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -2527,7 +2626,7 @@ NXP
     * - ``lpc11u24_301``
       - `ARM mbed LPC11U24 (+CAN) <https://developer.mbed.org/handbook/mbed-NXP-LPC11U24>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -2554,7 +2653,7 @@ NXP
     * - ``lpc11u68``
       - `LPCXpresso11U68 <https://developer.mbed.org/platforms/LPCXpresso11U68/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC11U68
       - 50 MHz
       - 256 Kb
@@ -2572,7 +2671,7 @@ NXP
     * - ``lpc1768``
       - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC1768
       - 96 MHz
       - 512 Kb
@@ -2590,7 +2689,7 @@ NXP
     * - ``lpc2460``
       - `NXP LPC2460 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-arm7-arm9-mcus/lpc-arm7-mcus/lpc2100-200-300-400/flashless-16-bit-32-bit-microcontroller-ethernet-can-isp-iap-usb-2.0-device-host-otg-external-memory-interface:LPC2460FBD208>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC2460
       - 72 MHz
       - 64 Kb
@@ -2599,7 +2698,7 @@ NXP
     * - ``lpc812``
       - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC812
       - 30 MHz
       - 16 Kb
@@ -2608,7 +2707,7 @@ NXP
     * - ``lpc824``
       - `LPCXpresso824-MAX <https://developer.mbed.org/platforms/LPCXpresso824-MAX/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC824
       - 30 MHz
       - 32 Kb
@@ -2646,6 +2745,15 @@ NodeMCU
       - 80 MHz
       - 4096 Kb
       - 80 Kb
+
+    * - ``nodemcu-32s``
+      - `NodeMCU-32S <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
     * - ``nodemcuv2``
       - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/>`_
@@ -2754,6 +2862,30 @@ Olimex
       - 80 MHz
       - 256 Kb
       - 32 Kb
+
+Onehorse
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``onehorse32dev``
+      - `Onehorse ESP32 Dev Module <https://www.tindie.com/products/onehorse/esp32-development-board/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 OpenBCI
 ~~~~~~~
@@ -4226,7 +4358,7 @@ SparkFun Electronics
       - ESP32
       - 240 MHz
       - 1024 Kb
-      - 112 Kb
+      - 288 Kb
 
 SweetPea
 ~~~~~~~~
@@ -4279,7 +4411,7 @@ Switch Science
     * - ``lpc1114fn28``
       - `Switch Science mbed LPC1114FN28 <https://developer.mbed.org/platforms/LPC1114FN28/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - :ref:`Yes <debugging>`
       - LPC1114FN28
       - 48 MHz
       - 32 Kb
@@ -4607,7 +4739,7 @@ WEMOS
       - RAM
 
     * - ``lolin32``
-      - `WEMOS LoLin32 <https://wemos.cc>`_
+      - `WEMOS LOLIN32 <https://wemos.cc>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32
@@ -4680,6 +4812,30 @@ Wicked Device
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+Widora
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``widora-air``
+      - `Widora AIR <http://widora.io>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 chipKIT
 ~~~~~~~

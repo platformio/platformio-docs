@@ -40,6 +40,9 @@ Packages
     * - `framework-simba <https://github.com/eerimoq/simba>`__
       - Simba Framework
 
+    * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py>`__
+      - ESP8266 OTA utility
+
     * - `tool-esptoolpy <https://github.com/espressif/esptool>`__
       - Espressif ROM Bootloader utility
 
@@ -91,6 +94,30 @@ Boards
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
+
+Adafruit
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``featheresp32``
+      - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
 
 Aiyarafun
 ~~~~~~~~~
@@ -293,6 +320,30 @@ MakerAsia
       - 1024 Kb
       - 288 Kb
 
+NodeMCU
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nodemcu-32s``
+      - `NodeMCU-32S <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
 Noduino
 ~~~~~~~
 
@@ -310,6 +361,30 @@ Noduino
 
     * - ``quantum``
       - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+Onehorse
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``onehorse32dev``
+      - `Onehorse ESP32 Dev Module <https://www.tindie.com/products/onehorse/esp32-development-board/>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32
@@ -339,7 +414,7 @@ SparkFun Electronics
       - ESP32
       - 240 MHz
       - 1024 Kb
-      - 112 Kb
+      - 288 Kb
 
 WEMOS
 ~~~~~
@@ -357,7 +432,31 @@ WEMOS
       - RAM
 
     * - ``lolin32``
-      - `WEMOS LoLin32 <https://wemos.cc>`_
+      - `WEMOS LOLIN32 <https://wemos.cc>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
+Widora
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``widora-air``
+      - `Widora AIR <http://widora.io>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32
