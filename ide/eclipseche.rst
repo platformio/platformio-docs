@@ -14,7 +14,7 @@
 Eclipse Che
 ===========
 
-`Codeanywhere <https://www.eclipse.org/che/>`_ is an open-source Java based
+`Eclipse Che <https://www.eclipse.org/che/>`_ is an open-source Java based
 developer workspace server and cloud integrated development environment (IDE)
 which provides a remote development platform for multi-user purpose. The
 workspace server comes with a RESTful webservice and provides high flexibility.
