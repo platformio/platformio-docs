@@ -38,8 +38,15 @@ Integration process consists of these steps:
 Please visit `neomake-platformio <https://github.com/coddingtonbear/neomake-platformio>`_
 for the further installation steps and documentation.
 
-Manual
-~~~~~~
+Project Generator
+^^^^^^^^^^^^^^^^^
+
+Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <http://platformio.org/boards>`_
+command and generate project via :option:`platformio init --ide` command:
+
+.. code-block:: shell
+
+    platformio init --ide vim --board <ID>
 
 Recommended bundles:
 
