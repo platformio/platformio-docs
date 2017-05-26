@@ -1114,6 +1114,25 @@ for GDB:
   command in Debug Console. For example, ``save breakpoints .gdbinit``. Later,
   this file could be loaded via ``source [filename]`` command. See above.
 
+.. _projectconf_debug_load_cmd:
+
+``debug_load_cmd``
+^^^^^^^^^^^^^^^^^^
+
+Specify a command which will be used to load program/firmware to a target
+device. Possible options:
+
+* ``debug_load_cmd = command`` - pass any debugging client command (GDB, etc.)
+* ``debug_load_cmd = load`` - is setup by **default**
+* ``debug_load_cmd = load address`` - load program at specified address, where
+  "address" should be a valid number
+* ``debug_load_cmd = preload`` - some embedded devices have locked Flash
+  Memory (a few Freescale Kinetis and NXP LPC boards). In this case, firmware
+  loading using debugging client is disabled. ``preload`` command instructs
+  :ref:`core` to load program/firmware using development platform "upload"
+  method (via bootloader, media disk, etc)
+* ``debug_load_cmd =`` - (empty value), disables program loading at all.
+
 .. _projectconf_debug_server:
 
 ``debug_server``
@@ -1156,24 +1175,6 @@ For example:
 * ``/dev/ttyUSB0`` - Unix-based OS
 * ``COM3`` - Windows OS
 * ``localhost:3333``
-
-.. _projectconf_debug_preload:
-
-``debug_preload``
-^^^^^^^^^^^^^^^^^
-
-Prepare project for debugging and upload firmware to a target before debugging
-session. This is option is useful for a target where Flash Memory is locked
-(some Freescale Kinetis and NXP LPC boards).
-
-For example:
-
-.. code-block:: ini
-
-    [env:debug]
-    platform = ...
-    board = ...
-    debug_preload = true
 
 Advanced options
 ~~~~~~~~~~~~~~~~
