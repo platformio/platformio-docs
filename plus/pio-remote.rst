@@ -36,8 +36,7 @@ You should have :ref:`cmd_account` to work with |PIORemote|.
 A registration is **FREE**.
 
 .. tip::
-  `QUESTIONS? Chat with us! <https://pioplus.com>`_
-  (chat button is located in the bottom right corner)
+  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
 .. contents::
 

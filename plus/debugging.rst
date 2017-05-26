@@ -35,8 +35,7 @@ You should have :ref:`cmd_account` to work with |PIODebug|.
 A registration is **FREE**.
 
 .. tip::
-  `QUESTIONS? Chat with us! <https://pioplus.com>`_
-  (chat button is located in the bottom right corner)
+  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
 .. image:: ../_static/pioplus-debugger-demo.png
 

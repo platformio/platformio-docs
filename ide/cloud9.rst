@@ -21,8 +21,7 @@ over your environment, including sudo rights. Do a git push, compile SASS, see
 server output, and Run apps easily with the built-in Terminal and Runners.
 
 .. tip::
-  `QUESTIONS? Chat with us! <https://pioplus.com>`_
-  (chat button is located in the bottom right corner)
+  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
 .. contents::
 
