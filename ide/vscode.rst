@@ -23,7 +23,7 @@ languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unit
 Refer to the `VSCode Documentation <https://code.visualstudio.com/docs>`_
 page for more detailed information.
 
-.. image:: ../_static/ide-vscode.gif
+.. image:: ../_static/ide/vscode/platformio-ide-vscode.png
     :target: https://marketplace.visualstudio.com/items?itemName=formulahendry.platformio
 
 .. contents::
