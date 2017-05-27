@@ -26,6 +26,7 @@ popular IDEs and text editors.
     :maxdepth: 2
 
     Atom <ide/atom>
+    VSCode <ide/vscode>
 
 .. _ide_cloud:
 
@@ -55,4 +56,3 @@ Other IDE
     ide/sublimetext
     ide/vim
     ide/visualstudio
-    ide/vscode
