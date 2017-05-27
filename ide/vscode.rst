@@ -31,4 +31,24 @@ page for more detailed information.
 Integration
 -----------
 
-Please install `VSCode extension for PlatformIO <https://marketplace.visualstudio.com/items?itemName=formulahendry.platformio>`_.
+.. note::
+    Please verify that folder where is located ``platformio`` program is added
+    to `PATH (wiki) <https://en.wikipedia.org/wiki/PATH_(variable)>`_ environment
+    variable. See FAQ: :ref:`faq_troubleshooting_pionotfoundinpath`.
+
+Project Generator
+^^^^^^^^^^^^^^^^^
+
+Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <http://platformio.org/boards>`_
+command and generate project via :option:`platformio init --ide` command:
+
+.. code-block:: shell
+
+    platformio init --ide vscode --board <ID>
+
+    # For example, generate project for Arduino UNO
+    platformio init --ide vscode --board uno
+
+Then:
+
+Open the folder in Visual Studio Code and install the suggested extensions.
