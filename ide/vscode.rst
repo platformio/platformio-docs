@@ -48,7 +48,7 @@ Installation
 .. note::
 
     Please note that you do not need to install :ref:`core` if you
-    are going to use :ref:`ide_atom`. :ref:`core` is built into
+    are going to use :ref:`ide_vscode`. :ref:`core` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
 - `Download <https://code.visualstudio.com>`_ and install official Microsoft
