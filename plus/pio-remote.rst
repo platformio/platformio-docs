@@ -81,10 +81,10 @@ listing of local and remote devices will look like :ref:`cmd_device_list` and
 Installation
 ------------
 
-|PIORemote| is built into :ref:`ide_atom`. Please open PlatformIO IDE Terminal
+|PIORemote| is built into :ref:`pioide`. Please open PlatformIO IDE Terminal
 and run ``pio remote --help`` command for usage (see :ref:`cmd_remote`).
 
-If you do not have :ref:`ide_atom`, or use :ref:`ide_cloud` or a card-sized PC
+If you do not have :ref:`pioide`, or use :ref:`ide_cloud` or a card-sized PC
 (Raspberry Pi, BeagleBoard, etc.), please install :ref:`core`.
 
 .. _pio_remote_quickstart:

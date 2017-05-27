@@ -14,6 +14,19 @@
 Cloud & Standalone IDE
 ======================
 
+PlatformIO IDE
+--------------
+
+**PlatformIO IDE is the next-generation integrated development environment for IoT.**
+
+We provide official open-source packages (plugins, extensions) for the most
+popular IDEs and text editors.
+
+.. toctree::
+    :maxdepth: 2
+
+    Atom <ide/atom>
+
 .. _ide_cloud:
 
 Cloud IDE
@@ -26,10 +39,9 @@ Cloud IDE
     ide/codeanywhere
     ide/eclipseche
 
-.. _ide_standalone:
 
-Standalone IDE
---------------
+Other IDE
+---------
 
 .. toctree::
     :maxdepth: 2

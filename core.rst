@@ -32,14 +32,13 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 
 
 **PlatformIO Core** provides a rich and documented Command Line Interface (CLI).
-The other PlatformIO-based software and IDEs are based on
-**PlatformIO Core CLI**, such as :ref:`ide_atom`. In other words, they wrap
-**PlatformIO Core** with own GUI.
+The other PlatformIO-based software and IDEs are based on **PlatformIO Core CLI**,
+such as :ref:`pioide`. In other words, they wrap **PlatformIO Core** with own GUI.
 
 .. note::
 
     Please note that you do not need to install **PlatformIO Core** if you
-    are going to use :ref:`ide_atom`. **PlatformIO Core** is built into
+    are going to use :ref:`pioide`. **PlatformIO Core** is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
     Also, PlatformIO IDE allows to install :ref:`core` Shell Commands

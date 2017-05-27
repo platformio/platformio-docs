@@ -28,7 +28,7 @@ PIO Unified Debugger
 * 100+ boards
 * Multiple architectures and development platforms
 * Zero Configuration
-* Compatibility with the popular IDEs: :ref:`ide_atom`, Eclipse, VSCode, Sublime Text, etc
+* Compatibility with the popular IDEs: :ref:`pioide`, Eclipse, VSCode, Sublime Text, etc
 * Windows, MacOS, Linux (+ARMv6-8)
 
 You should have :ref:`cmd_account` to work with |PIODebug|.

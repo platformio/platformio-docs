@@ -31,11 +31,9 @@ PlatformIO IDE is the next-generation integrated development environment for IoT
 * Serial Port Monitor
 * Built-in Terminal with :ref:`core` and CLI tool (``pio``, ``platformio``)
 
-
-PlatformIO IDE is based on GitHub's `Atom <https://atom.io>`_ source
-code editor that's modern, approachable, yet hackable to the core; a tool you
-can customize to do anything but also use productively without ever touching a
-config file.
+`Atom <https://atom.io>`_ is a text editor that's modern, approachable,
+yet hackable to the core—a tool you can customize to do anything but also use
+productively without ever touching a config file.
 
 .. image:: ../_static/ide-atom-platformio.png
     :target: ../_images/ide-atom-platformio.png
@@ -44,10 +42,6 @@ config file.
 
 Installation
 ------------
-
-PlatformIO IDE is the next-generation integrated development environment for IoT.
-It's built on top of `GitHub's Atom "hackable" text editor <https://atom.io>`_.
-If you have already Atom installed, please install `PlatformIO IDE for Atom package <https://atom.io/packages/platformio-ide>`_.
 
 .. note::
 

@@ -12,10 +12,9 @@
 PlatformIO is an open source ecosystem for IoT development
 ==========================================================
 
-**Cross-platform build system and library manager. Continuous and IDE
-integration. Arduino, ESP8266 and ARM mbed compatible.**
+**Cross-platform IDE and unified debugger. Remote unit testing and firmware updates.**
 
-* :ref:`PlatformIO IDE <ide_atom>` - The next-generation integrated development environment for IoT.
+* :ref:`pioide` - The next-generation integrated development environment for IoT.
   C/C++ Intelligent Code Completion and Smart Code Linter for the super-fast coding.
   Multi-projects workflow with Multiple Panes. Themes Support with dark and light colors.
   Built-in Terminal with :ref:`core` and support for the powerful Serial Port Monitor.
@@ -37,7 +36,7 @@ libOpenCM3, etc.*
 
 * `Home Page <http://platformio.org>`_
 * `PlatformIO Plus and professional solutions <https://pioplus.com>`_
-* :ref:`ide_atom`
+* :ref:`pioide`
 * `Library Search and Registry <http://platformio.org/lib>`_ |
   `Embedded Boards Explorer <http://platformio.org/boards>`_
 * `Project Examples <https://github.com/platformio/platformio-examples/tree/develop>`_
@@ -93,7 +92,7 @@ Contents
     :caption: Getting Started
     :maxdepth: 2
 
-    PlatformIO IDE <ide/atom>
+    ide/pioide
     core
 
 .. toctree::
