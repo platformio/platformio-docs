@@ -86,12 +86,18 @@ then **install it and restart Atom**:
   along with the latest Command Line Tools
   (they are installed automatically when you run ``clang`` in Terminal for the
   first time, or manually by running ``xcode-select --install``
-- **Windows**: Download the latest `Clang for Windows <http://llvm.org/releases/download.html>`_.
+- **Windows**: Download `Clang 3.9.1 for Windows <http://llvm.org/releases/download.html>`_.
   Please select "Add LLVM to the system PATH" option on the installation step.
+
+  * `Clang 3.9.1 for Windows (32-bit) <http://releases.llvm.org/3.9.1/LLVM-3.9.1-win32.exe>`__
+  * `Clang 3.9.1 for Windows (64-bit) <http://releases.llvm.org/3.9.1/LLVM-3.9.1-win64.exe>`__
 
   .. image:: ../_static/clang-installer-add-path.png
 
   .. warning::
+
+      PLEASE DO NOT INSTALL CLANG 4.0. TEMPORARY, WE SUPPORT ONLY CLANG 3.9.
+
       If you see ``Failed to find MSBuild toolsets directory`` error in
       the installation console, please ignore it and press any key to close
       this window. PlatformIO IDE uses only Clang completion engine that
