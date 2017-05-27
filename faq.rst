@@ -133,7 +133,7 @@ The final ``Demo.cpp``:
 PlatformIO IDE
 --------------
 
-Please refer to :ref:`PlatformIO IDE Frequently Asked Questions <ide_atom_faq>`.
+Please refer to :ref:`PlatformIO IDE Frequently Asked Questions <pioide>`.
 
 Before/Pre and After/Post build actions
 ---------------------------------------
@@ -149,6 +149,24 @@ Troubleshooting
 
 Installation
 ~~~~~~~~~~~~
+
+Multiple PIO Cores in a system
+''''''''''''''''''''''''''''''
+
+Multiple :ref:`core` in a system could lead to a different issues. We highly
+recommend to keep one instance of PIO Core or use built-in PIO Core in :ref:`pioide`:
+
+* :ref:`ide_atom` - ``Menu PlatformIO: Settings > PlatformIO IDE > Use built-in PlatformIO Core``
+
+Finally, if you have a global :ref:`core` in a system, please open system
+Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
+
+.. code-block:: bash
+
+    pip uninstall platformio
+
+    # if you used MacOS "brew"
+    brew uninstall platformio
 
 [Errno 1] Operation not permitted
 '''''''''''''''''''''''''''''''''
