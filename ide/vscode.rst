@@ -55,7 +55,8 @@ Installation
 
 - `Download <https://code.visualstudio.com>`_ and install official Microsoft
   Visual Studio Code, PlatformIO IDE is built on top of it
-- Launch VS Code Quick Open (Ctr+Shift+P or Cmd+Shift+P), paste the following
+- Install `PlatformIO IDE for VSCode extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_.
+  Launch VS Code Quick Open (Ctr+Shift+P or Cmd+Shift+P), paste the following
   command ``ext install platformio-ide``, and press enter
 - Create empty directory and open it as a new project
 - Please be patient and let the installation complete (only the first time, see progress in status bar).
