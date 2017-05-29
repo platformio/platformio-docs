@@ -24,11 +24,13 @@ Features
 
 * Cross-platform build system without external dependencies to the OS software:
 
-    - 350+ embedded boards
+    - 400+ embedded boards
     - 20+ development platforms
     - 10+ frameworks
 
 * :ref:`debugging`
+* :ref:`pio_remote`
+* :ref:`unit_testing`
 * C/C++ Intelligent Code Completion
 * C/C++ Smart Code Linter for rapid professional development
 * Library Manager for the hundreds popular libraries

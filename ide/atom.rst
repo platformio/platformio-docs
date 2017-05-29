@@ -18,11 +18,13 @@ PlatformIO IDE is the next-generation integrated development environment for IoT
 
 * Cross-platform build system without external dependencies to the OS software:
 
-    - 350+ embedded boards
+    - 400+ embedded boards
     - 20+ development platforms
     - 10+ frameworks
 
 * :ref:`debugging`
+* :ref:`pio_remote`
+* :ref:`unit_testing`
 * C/C++ Intelligent Code Completion
 * C/C++ Smart Code Linter for rapid professional development
 * Library Manager for the hundreds popular libraries
@@ -119,7 +121,7 @@ Launch
 ~~~~~~
 
 After installation, you launch PlatformIO IDE by opening Atom. Once Atom is
-open, PlatformIO IDE auto installer will continue to install dependent packages
+opened, PlatformIO IDE auto installer will continue to install dependent packages
 and :ref:`core`. Please be patient and let the installation complete. In the
 final result PlatformIO IDE will ask you to reload Atom window to apply
 installed components. Please click on ``Reload Now``. After it PlatformIO IDE is
@@ -273,7 +275,7 @@ new menu item named ``Menu: PlatformIO`` (after ``Menu: Help`` item).
 PlatformIO Toolbar
 ~~~~~~~~~~~~~~~~~~
 
-PlatformIO IDE Toolbar contains the quick access button to the popular commands.
+PlatformIO IDE Toolbar contains quick access buttons for the popular commands.
 Each button contains hint (delay mouse on it).
 
 .. image:: ../_static/ide-atom-platformio-toolbar.png
