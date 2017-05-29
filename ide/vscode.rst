@@ -67,8 +67,11 @@ Quick Start
 - Happy coding with PlatformIO!
 
 
+User Guide
+----------
+
 Building / Uploading / Tasks
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * ``cmd-shift-b`` / ``ctrl-shift-b`` builds project without auto-uploading.
 * ``cmd-shift-p`` / ``ctrl-shift-p`` type ``run`` and select "Tasks: Run Task"
