@@ -14,8 +14,8 @@
 
 .. _unit_testing:
 
-Unit Testing
-============
+PIO Unit Testing
+================
 
 .. versionadded:: 3.0 (`PlatformIO Plus <https://pioplus.com>`_)
 

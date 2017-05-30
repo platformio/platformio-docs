@@ -22,12 +22,24 @@ Having **PIO Account** allows you to use extra professional features from
 * :ref:`unit_testing`
 * :ref:`ide_cloud`
 
-A registration is **FREE**.
+A registration is **FREE**. Please open :ref:`pioide` Terminal and type:
+
+.. code::
+
+    # Create PIO Account
+    pio account register
+
+    # Login with credentials (will be sent to your e-mail)
+    pio account login
+
+    # Change temporary password (from e-mail) to permanent
+    pio account password
 
 To print all available commands and options use:
 
 .. code-block:: bash
 
+    pio account --help
     platformio account --help
     platformio account COMMAND --help
 
