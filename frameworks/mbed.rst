@@ -33,8 +33,14 @@ Platforms
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
+    * - :ref:`platform_maxim32`
+      - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
+
     * - :ref:`platform_nordicnrf51`
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
+
+    * - :ref:`platform_nordicnrf52`
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
@@ -202,6 +208,15 @@ Delta
       - Frequency
       - Flash
       - RAM
+
+    * - ``delta_dfbm_nq620``
+      - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <debugging>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
@@ -478,6 +493,57 @@ JKSoft
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+Maxim
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``max32600mbed``
+      - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32600
+      - 24 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``max32620hsp``
+      - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32620
+      - 96 MHz
+      - 2048 Kb
+      - 256 Kb
+
+    * - ``max32630fthr``
+      - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32630
+      - 96 MHz
+      - 2048 Kb
+      - 512 Kb
+
+    * - ``maxwsnenv``
+      - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32610
+      - 24 MHz
+      - 256 Kb
+      - 32 Kb
 
 Micromint
 ~~~~~~~~~
@@ -784,6 +850,15 @@ Nordic
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+    * - ``nrf52_dk``
+      - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <debugging>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
 Outrageous Circuits
 ~~~~~~~~~~~~~~~~~~~

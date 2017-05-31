@@ -110,7 +110,7 @@ Adafruit
     * - ``adafruit_circuitplayground_m0``
       - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -119,7 +119,7 @@ Adafruit
     * - ``adafruit_feather_m0_usb``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -161,7 +161,7 @@ Arduino
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -188,7 +188,7 @@ Arduino
     * - ``mzeroUSB``
       - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -416,7 +416,7 @@ SparkFun
     * - ``sparkfun_samd21_dev_usb``
       - `SparkFun SAMD21 Dev Breakout <https://www.sparkfun.com/products/13672>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -425,7 +425,7 @@ SparkFun
     * - ``sparkfun_samd21_mini_usb``
       - `SparkFun SAMD21 Mini Breakout <https://www.sparkfun.com/products/13664>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb

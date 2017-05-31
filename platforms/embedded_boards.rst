@@ -91,7 +91,7 @@ Adafruit
     * - ``adafruit_circuitplayground_m0``
       - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -100,7 +100,7 @@ Adafruit
     * - ``adafruit_feather_m0_usb``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -538,7 +538,7 @@ Arduino
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -565,7 +565,7 @@ Arduino
     * - ``mzeroUSB``
       - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -951,6 +951,15 @@ Delta
       - Frequency
       - Flash
       - RAM
+
+    * - ``delta_dfbm_nq620``
+      - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <debugging>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
@@ -2275,6 +2284,57 @@ MakerAsia
       - 1024 Kb
       - 288 Kb
 
+Maxim
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``max32600mbed``
+      - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32600
+      - 24 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``max32620hsp``
+      - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32620
+      - 96 MHz
+      - 2048 Kb
+      - 256 Kb
+
+    * - ``max32630fthr``
+      - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32630
+      - 96 MHz
+      - 2048 Kb
+      - 512 Kb
+
+    * - ``maxwsnenv``
+      - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32610
+      - 24 MHz
+      - 256 Kb
+      - 32 Kb
+
 Mcudude
 ~~~~~~~
 
@@ -2829,6 +2889,15 @@ Nordic
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+    * - ``nrf52_dk``
+      - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <debugging>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
 Olimex
 ~~~~~~
@@ -4276,7 +4345,7 @@ SparkFun
     * - ``sparkfun_samd21_dev_usb``
       - `SparkFun SAMD21 Dev Breakout <https://www.sparkfun.com/products/13672>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -4285,7 +4354,7 @@ SparkFun
     * - ``sparkfun_samd21_mini_usb``
       - `SparkFun SAMD21 Mini Breakout <https://www.sparkfun.com/products/13664>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <debugging>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb

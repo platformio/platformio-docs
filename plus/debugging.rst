@@ -280,6 +280,9 @@ Platforms
     * - :ref:`platform_nordicnrf51`
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
+    * - :ref:`platform_nordicnrf52`
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
@@ -351,6 +354,39 @@ Boards
       - 512 Kb
       - 128 Kb
 
+Adafruit
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``adafruit_circuitplayground_m0``
+      - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_cmsis-dap`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_feather_m0_usb``
+      - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_cmsis-dap`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
 Arduino
 ~~~~~~~
 
@@ -365,6 +401,24 @@ Arduino
       - Frequency
       - Flash
       - RAM
+
+    * - ``mkr1000USB``
+      - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_cmsis-dap`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``mzeroUSB``
+      - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_cmsis-dap`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
 
     * - ``mzeropro``
       - `Arduino M0 Pro (Programming/Debug Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
@@ -491,6 +545,15 @@ Delta
       - Frequency
       - Flash
       - RAM
+
+    * - ``delta_dfbm_nq620``
+      - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
@@ -998,6 +1061,15 @@ Nordic
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+    * - ``nrf52_dk``
+      - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
 RedBearLab
 ~~~~~~~~~~
@@ -1577,6 +1649,39 @@ Silicon Labs
       - 24 MHz
       - 32 Kb
       - 4 Kb
+
+SparkFun
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``sparkfun_samd21_dev_usb``
+      - `SparkFun SAMD21 Dev Breakout <https://www.sparkfun.com/products/13672>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_cmsis-dap`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``sparkfun_samd21_mini_usb``
+      - `SparkFun SAMD21 Mini Breakout <https://www.sparkfun.com/products/13664>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_cmsis-dap`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
 
 Switch Science
 ~~~~~~~~~~~~~~
