@@ -24,12 +24,12 @@ PIO Unified Debugger
 
   `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/pio-unified-debugger/1704>`_
 
-
-* 100+ boards
+* "1-click" solution, zero configuration
+* Support for 100+ embedded boards (see below)
 * Multiple architectures and development platforms
-* Zero Configuration
-* Compatibility with the popular IDEs: :ref:`pioide`, Eclipse, VSCode, Sublime Text, etc
 * Windows, MacOS, Linux (+ARMv6-8)
+* Built-in into :ref:`ide_atom` and :ref:`ide_vscode`
+* Integration with Eclipse & Sublime Text (soon)
 
 You should have :ref:`cmd_account` to work with |PIODebug|.
 A registration is **FREE**.
