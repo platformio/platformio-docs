@@ -30,9 +30,9 @@ PlatformIO is an open source ecosystem for IoT development
   platforms and frameworks; learn via examples; be up-to-date with the latest
   version
 
-*Atmel AVR & SAM, Espressif, Freescale Kinetis, Nordic nRF51, NXP LPC,
-Silicon Labs EFM32, ST STM32, TI MSP430 & Tiva, Teensy, Arduino, mbed,
-libOpenCM3, etc.*
+*Atmel AVR & SAM, Espressif, Freescale Kinetis, Maxim Integrated,
+Nordic nRF51 & nRF51, NXP LPC, Silicon Labs EFM32, ST STM32, TI MSP430 & Tiva,
+Teensy, Arduino, mbed, libOpenCM3, etc.*
 
 * `Home Page <http://platformio.org>`_
 * `PlatformIO Plus and professional solutions <https://pioplus.com>`_

@@ -35,8 +35,10 @@ Embedded
     freescalekinetis
     intel_arc32
     lattice_ice40
+    maxim32
     microchippic32
     nordicnrf51
+    nordicnrf52
     nxplpc
     siliconlabsefm32
     ststm32
