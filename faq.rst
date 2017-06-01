@@ -189,11 +189,6 @@ Windows AttributeError: 'module' object has no attribute 'packages'
 
 Answered in `issue #252 <https://github.com/platformio/platformio-core/issues/252#issuecomment-127072039>`_.
 
-Windows UnicodeDecodeError: 'ascii' codec can't decode byte
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Answered in `issue #143 <https://github.com/platformio/platformio-core/issues/143#issuecomment-88060906>`_.
-
 PlatformIO: command not found || An error "pkg_resources.DistributionNotFound"
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
@@ -208,16 +203,28 @@ Please upgrade *SetupTools* package:
     [sudo] pip uninstall platformio
     [sudo] pip install platformio
 
-Miscellaneous
-~~~~~~~~~~~~~
-
-Serial does not work with panStampAVR board
-'''''''''''''''''''''''''''''''''''''''''''
-
-Answered in `issue #144 <https://github.com/platformio/platformio-core/issues/144#issuecomment-87388038>`_.
-
 Building
 ~~~~~~~~
+
+UnicodeDecodeError: Non-ASCII characters found in build environment
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+**KNOWN ISSUE**. :ref:`piocore` currently does not support projects which
+contain non-ASCII characters (codes) in a full path or depend on the
+libraries which use non-ASCII characters in their names.
+
+**TEMPORARY SOLUTION**
+
+1. Use :ref:`pioide`, it will automatically install :ref:`piocore` in a root
+   of system disk (``%DISK%/.platformio``) and avoid an issue when system
+   User contains non-ASCII characters
+2. Do not use non-ASCII characters in project folder name or its parent folders.
+
+Also, if you want to place :ref:`piocore` in own location, see:
+
+* Set :envvar:`PLATFORMIO_HOME_DIR` environment variable with own path
+* Configure custom location per project using :ref:`projectconf_pio_home_dir`
+  option in :ref:`projectconf`.
 
 ARM toolchain: cc1plus: error while loading shared libraries
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
