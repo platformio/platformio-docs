@@ -176,7 +176,7 @@ If you use :ref:`pioide`, please check in PlatformIO IDE Settings that
 
 If you modify system environment variable ``PATH`` in your Bash/Fish/ZSH
 profile, please do not override global ``PATH``. This line
-``export PATH=/my/custom/path`` is incorrect. Use ``export PATH=/my/custom/path:$PATH``
+``export PATH="/my/custom/path"`` is incorrect. Use ``export PATH="/my/custom/path":$PATH``
 instead.
 
 [Errno 1] Operation not permitted
