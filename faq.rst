@@ -168,6 +168,17 @@ Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
     # if you used MacOS "brew"
     brew uninstall platformio
 
+'platformio' is not recognized as an internal or external command
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+If you use :ref:`pioide`, please check in PlatformIO IDE Settings that
+"Use built-in PIO Core" is enabled.
+
+If you modify system environment variable ``PATH`` in your Bash/Fish/ZSH
+profile, please do not override global ``PATH``. This line
+``export PATH=/my/custom/path`` is incorrect. Use ``export PATH=/my/custom/path:$PATH``
+instead.
+
 [Errno 1] Operation not permitted
 '''''''''''''''''''''''''''''''''
 
@@ -177,30 +188,6 @@ Windows AttributeError: 'module' object has no attribute 'packages'
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Answered in `issue #252 <https://github.com/platformio/platformio-core/issues/252#issuecomment-127072039>`_.
-
-.. _faq_troubleshooting_pionotfoundinpath:
-
-Program "platformio" not found in PATH
-''''''''''''''''''''''''''''''''''''''
-
-Where is ``platformio`` binary installed? Run this command in Terminal
-
-.. code-block:: bash
-
-    # for Unix
-    which platformio
-    echo $PATH
- Windows OS
-    where platformio
-    echo %PATH%
-
-For example, ``which platformio`` is equal to ``/usr/local/bin/platformio``,
-then `PATH (wiki) <https://en.wikipedia.org/wiki/PATH_(variable)>`_
-should contain ``/usr/local/bin`` directory.
-
-**Unix Users**: You can make "symlinks" from ``platformio`` program to the
-``bin`` directory which is included in ``$PATH``. For example,
-see `issue #272 <https://github.com/platformio/platformio-core/issues/272#issuecomment-133626112>`_.
 
 Windows UnicodeDecodeError: 'ascii' codec can't decode byte
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
