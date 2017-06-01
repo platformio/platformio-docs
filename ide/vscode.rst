@@ -31,7 +31,7 @@ PlatformIO IDE is the next-generation integrated development environment for IoT
 * Multi-projects workflow with multiple panes
 * Themes support with dark and light colors
 * Serial Port Monitor
-* Built-in Terminal with :ref:`core` and CLI tool (``pio``, ``platformio``)
+* Built-in Terminal with :ref:`piocore` and CLI tool (``pio``, ``platformio``)
 
 `Visual Studio Code <https://code.visualstudio.com>`_ is a lightweight but
 powerful source code editor which runs on your desktop and is available for
@@ -49,8 +49,8 @@ Installation
 
 .. note::
 
-    Please note that you do not need to install :ref:`core` if you
-    are going to use :ref:`ide_vscode`. :ref:`core` is built into
+    Please note that you do not need to install :ref:`piocore` if you
+    are going to use :ref:`ide_vscode`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
 - `Download <https://code.visualstudio.com>`_ and install official Microsoft
@@ -73,7 +73,7 @@ Launch
 
 After installation, you launch PlatformIO IDE by opening VSCode. Once VSCode is
 opened, PlatformIO IDE auto installer will continue to install dependent packages
-and :ref:`core`. Please be patient and let the installation complete. In the
+and :ref:`piocore`. Please be patient and let the installation complete. In the
 final result PlatformIO IDE will ask you to reload VSCode window to apply
 installed components. Please click on ``Reload Now``. After it PlatformIO IDE is
 ready for using. Happy coding!

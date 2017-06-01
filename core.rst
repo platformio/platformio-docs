@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _core:
+.. _piocore:
 
 PlatformIO Core
 ===============
@@ -41,7 +41,7 @@ such as :ref:`pioide`. In other words, they wrap **PlatformIO Core** with own GU
     are going to use :ref:`pioide`. **PlatformIO Core** is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    Also, PlatformIO IDE allows to install :ref:`core` Shell Commands
+    Also, PlatformIO IDE allows to install :ref:`piocore` Shell Commands
     (``pio``, ``platformio``) globally to your system via
     ``Menu: PlatformIO > Install Shell Commands``.
 

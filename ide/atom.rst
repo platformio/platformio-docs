@@ -31,7 +31,7 @@ PlatformIO IDE is the next-generation integrated development environment for IoT
 * Multi-projects workflow with multiple panes
 * Themes support with dark and light colors
 * Serial Port Monitor
-* Built-in Terminal with :ref:`core` and CLI tool (``pio``, ``platformio``)
+* Built-in Terminal with :ref:`piocore` and CLI tool (``pio``, ``platformio``)
 
 `Atom <https://atom.io>`_ is a text editor that's modern, approachable,
 yet hackable to the core—a tool you can customize to do anything but also use
@@ -47,11 +47,11 @@ Installation
 
 .. note::
 
-    Please note that you do not need to install :ref:`core` if you
-    are going to use :ref:`ide_atom`. :ref:`core` is built into
+    Please note that you do not need to install :ref:`piocore` if you
+    are going to use :ref:`ide_atom`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    Also, PlatformIO IDE allows to install :ref:`core` Shell Commands
+    Also, PlatformIO IDE allows to install :ref:`piocore` Shell Commands
     (``pio``, ``platformio``) globally to your system via
     ``Menu: PlatformIO > Install Shell Commands``.
 
@@ -122,7 +122,7 @@ Launch
 
 After installation, you launch PlatformIO IDE by opening Atom. Once Atom is
 opened, PlatformIO IDE auto installer will continue to install dependent packages
-and :ref:`core`. Please be patient and let the installation complete. In the
+and :ref:`piocore`. Please be patient and let the installation complete. In the
 final result PlatformIO IDE will ask you to reload Atom window to apply
 installed components. Please click on ``Reload Now``. After it PlatformIO IDE is
 ready for using. Happy coding!
@@ -235,7 +235,7 @@ And select desired target:
 .. image:: ../_static/ide-atom-platformio-quick-start-10.png
     :target: ../_images/ide-atom-platformio-quick-start-10.png
 
-It provides you fast access to all set of powerful :ref:`core` CLI commands:
+It provides you fast access to all set of powerful :ref:`piocore` CLI commands:
 
 .. image:: ../_static/ide-atom-platformio-quick-start-11.png
     :target: ../_images/ide-atom-platformio-quick-start-11.png
@@ -450,6 +450,9 @@ Uninstall Atom with PlatformIO IDE
 ----------------------------------
 
 Here's how to uninstall the PlatformIO IDE for multiple OS.
+
+:ref:`piocore` and all dependent packages are located in ``~/.platformio``
+folder (in user's HOME directory).
 
 Windows
 ~~~~~~~

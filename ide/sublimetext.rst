@@ -32,7 +32,7 @@ Deviot Plugin
 
 We are glad to inform you about awesome Sublime Text plugin for IoT development
 named `Deviot <https://github.com/gepd/Deviot>`_. It is based on
-:ref:`core` and will automatically install it for you. Please visit `official
+:ref:`piocore` and will automatically install it for you. Please visit `official
 Deviot page <https://github.com/gepd/Deviot>`_ for the further installation
 steps and documentation.
 
@@ -44,7 +44,7 @@ Project Generator
 
 Integration process consists of these steps:
 
-1. Open system Terminal and install :ref:`core`
+1. Open system Terminal and install :ref:`piocore`
 2. Create new folder for your project and change directory (``cd``) to it
 3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
 4. Import project in IDE.

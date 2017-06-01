@@ -17,7 +17,7 @@ PlatformIO is an open source ecosystem for IoT development
 * :ref:`pioide` - The next-generation integrated development environment for IoT.
   C/C++ Intelligent Code Completion and Smart Code Linter for the super-fast coding.
   Multi-projects workflow with Multiple Panes. Themes Support with dark and light colors.
-  Built-in Terminal with :ref:`core` and support for the powerful Serial Port Monitor.
+  Built-in Terminal with :ref:`piocore` and support for the powerful Serial Port Monitor.
   All advanced instruments without leaving your favorite development environment.
 * **Development Platforms** - Embedded and Desktop development platforms with
   pre-built toolchains, debuggers, uploaders and frameworks which work under

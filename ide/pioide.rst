@@ -37,7 +37,7 @@ Features
 * Multi-projects workflow with multiple panes
 * Themes support with dark and light colors
 * Serial Port Monitor
-* Built-in Terminal with :ref:`core` and CLI tool (``pio``, ``platformio``)
+* Built-in Terminal with :ref:`piocore` and CLI tool (``pio``, ``platformio``)
 
 Integration
 -----------

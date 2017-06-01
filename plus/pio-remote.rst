@@ -85,7 +85,7 @@ Installation
 and run ``pio remote --help`` command for usage (see :ref:`cmd_remote`).
 
 If you do not have :ref:`pioide`, or use :ref:`ide_cloud` or a card-sized PC
-(Raspberry Pi, BeagleBoard, etc.), please install :ref:`core`.
+(Raspberry Pi, BeagleBoard, etc.), please install :ref:`piocore`.
 
 .. _pio_remote_quickstart:
 

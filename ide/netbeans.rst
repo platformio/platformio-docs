@@ -35,7 +35,7 @@ Integration
 
 Integration process consists of these steps:
 
-1. Open system Terminal and install :ref:`core`
+1. Open system Terminal and install :ref:`piocore`
 2. Create new folder for your project and change directory (``cd``) to it
 3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
 4. Import project in IDE.

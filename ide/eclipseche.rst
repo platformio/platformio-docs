@@ -76,7 +76,7 @@ Let's create our first PlatformIO-based Codenvy Project
 .. image:: ../_static/ide/eclipseche/ide-eclipseche-run-project.png
 
 
-3.  If you prefer to work with :ref:`core` CLI, then you can process project
+3.  If you prefer to work with :ref:`piocore` CLI, then you can process project
     using Cloud IDE Terminal and the next commands:
 
     * :ref:`cmd_run` - build project locally (using Cloud IDE's virtual machine)

@@ -1129,7 +1129,7 @@ device. Possible options:
 * ``debug_load_cmd = preload`` - some embedded devices have locked Flash
   Memory (a few Freescale Kinetis and NXP LPC boards). In this case, firmware
   loading using debugging client is disabled. ``preload`` command instructs
-  :ref:`core` to load program/firmware using development platform "upload"
+  :ref:`piocore` to load program/firmware using development platform "upload"
   method (via bootloader, media disk, etc)
 * ``debug_load_cmd =`` - (empty value), disables program loading at all.
 
