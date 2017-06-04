@@ -47,8 +47,8 @@ Installation
 
 .. note::
 
-    Please note that you do not need to install :ref:`piocore` if you
-    are going to use :ref:`ide_atom`. :ref:`piocore` is built into
+    Please note that you do not need to install :ref:`piocore` separately
+    if you are going to use :ref:`ide_atom`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
     Also, PlatformIO IDE allows to install :ref:`piocore` Shell Commands
