@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -56,7 +56,7 @@ Adafruit
     * - ``featheresp32``
       - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -80,7 +80,7 @@ Aiyarafun
     * - ``node32s``
       - `Node32s <http://www.ayarafun.com>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -104,7 +104,7 @@ April Brother
     * - ``espea32``
       - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -128,7 +128,7 @@ DFRobot
     * - ``firebeetle32``
       - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -152,7 +152,7 @@ Electronic SweetPeas
     * - ``esp320``
       - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -176,7 +176,7 @@ Espressif
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -200,7 +200,7 @@ Hornbill
     * - ``hornbill32dev``
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -209,7 +209,7 @@ Hornbill
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -233,7 +233,7 @@ IntoRobot
     * - ``intorobot``
       - `IntoRobot Fig <http://docs.intorobot.com/zh/hardware/fig/hardware/>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -257,7 +257,7 @@ MakerAsia
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -281,7 +281,7 @@ NodeMCU
     * - ``nodemcu-32s``
       - `NodeMCU-32S <http://www.nodemcu.com/>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -305,7 +305,7 @@ Noduino
     * - ``quantum``
       - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -329,7 +329,7 @@ Onehorse
     * - ``onehorse32dev``
       - `Onehorse ESP32 Dev Module <https://www.tindie.com/products/onehorse/esp32-development-board/>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -353,7 +353,7 @@ SparkFun Electronics
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -377,7 +377,7 @@ WEMOS
     * - ``lolin32``
       - `WEMOS LOLIN32 <https://wemos.cc>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -401,7 +401,7 @@ Widora
     * - ``widora-air``
       - `Widora AIR <http://widora.io>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      -
       - ESP32
       - 240 MHz
       - 1024 Kb

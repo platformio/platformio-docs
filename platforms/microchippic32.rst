@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -92,7 +92,7 @@ Boards
     * - ``picadillo_35t``
       - `4DSystems PICadillo 35T <http://www.4dsystems.com.au/product/Picadillo_35T/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -116,7 +116,7 @@ Digilent
     * - ``cerebot32mx4``
       - `Digilent Cerebot 32MX4 <http://store.digilentinc.com/cerebot-32mx4-limited-time-see-chipkit-pro-mx4/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX460F512L
       - 80 MHz
       - 512 Kb
@@ -125,7 +125,7 @@ Digilent
     * - ``cerebot32mx7``
       - `Digilent Cerebot 32MX7 <http://www.microchip.com/Developmenttools/ProductDetails.aspx?PartNO=TDGL004>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -134,7 +134,7 @@ Digilent
     * - ``chipkit_cmod``
       - `Digilent chipKIT Cmod <http://store.digilentinc.com/chipkit-cmod-breadboardable-mz-microcontroller-board/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX150F128D
       - 40 MHz
       - 128 Kb
@@ -143,7 +143,7 @@ Digilent
     * - ``chipkit_dp32``
       - `Digilent chipKIT DP32 <http://store.digilentinc.com/chipkit-dp32-dip-package-prototyping-microcontroller-board/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX250F128B
       - 40 MHz
       - 128 Kb
@@ -152,7 +152,7 @@ Digilent
     * - ``chipkit_mx3``
       - `Digilent chipKIT MX3 <http://store.digilentinc.com/chipkit-mx3-microcontroller-board-with-pmod-headers/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX320F128H
       - 80 MHz
       - 128 Kb
@@ -161,7 +161,7 @@ Digilent
     * - ``chipkit_pro_mx4``
       - `Digilent chipKIT Pro MX4 <http://store.digilentinc.com/chipkit-pro-mx4-embedded-systems-trainer-board/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX460F512L
       - 80 MHz
       - 512 Kb
@@ -170,7 +170,7 @@ Digilent
     * - ``chipkit_pro_mx7``
       - `Digilent chipKIT Pro MX7 <http://store.digilentinc.com/chipkit-pro-mx7-advanced-peripherals-embedded-systems-trainer-board/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -179,7 +179,7 @@ Digilent
     * - ``chipkit_uc32``
       - `Digilent chipKIT uC32 <http://store.digilentinc.com/chipkit-uc32-basic-microcontroller-board-with-uno-r3-headers/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX340F512H
       - 80 MHz
       - 512 Kb
@@ -188,7 +188,7 @@ Digilent
     * - ``chipkit_wf32``
       - `Digilent chipKIT WF32 <http://store.digilentinc.com/chipkit-wf32-wifi-enabled-microntroller-board-with-uno-r3-headers/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX695F512L
       - 80 MHz
       - 512 Kb
@@ -197,7 +197,7 @@ Digilent
     * - ``chipkit_wifire``
       - `Digilent chipKIT WiFire <http://store.digilentinc.com/chipkit-wi-fire-wifi-enabled-mz-microcontroller-board/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MZ2048ECG100
       - 200 MHz
       - 2048 Kb
@@ -206,7 +206,7 @@ Digilent
     * - ``mega_pic32``
       - `Digilent chipKIT MAX32 <http://store.digilentinc.com/chipkit-max32-microcontroller-board-with-mega-r3-headers/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -215,7 +215,7 @@ Digilent
     * - ``openscope``
       - `Digilent OpenScope <http://store.digilentinc.com/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MZ2048EFG124
       - 200 MHz
       - 2048 Kb
@@ -224,7 +224,7 @@ Digilent
     * - ``uno_pic32``
       - `Digilent chipKIT UNO32 <http://store.digilentinc.com/chipkit-uno32-basic-microcontroller-board-retired-see-chipkit-uc32/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX320F128H
       - 80 MHz
       - 128 Kb
@@ -248,7 +248,7 @@ Fubarino
     * - ``fubarino_mini``
       - `Fubarino Mini <http://fubarino.org/mini/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX250F128D
       - 48 MHz
       - 128 Kb
@@ -257,7 +257,7 @@ Fubarino
     * - ``fubarino_sd``
       - `Fubarino SD (1.5) <http://fubarino.org/sd/index.html>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX795F512H
       - 80 MHz
       - 512 Kb
@@ -281,7 +281,7 @@ MikroElektronika
     * - ``clicker2``
       - `MikroElektronika Clicker 2 <http://www.mikroe.com/pic/clicker/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX460F512L
       - 80 MHz
       - 512 Kb
@@ -305,7 +305,7 @@ Olimex
     * - ``pinguino32``
       - `Olimex PIC32-PINGUINO <https://www.olimex.com/Products/Duino/PIC32/PIC32-PINGUINO/open-source-hardware>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX440F256H
       - 80 MHz
       - 256 Kb
@@ -329,7 +329,7 @@ OpenBCI
     * - ``openbci``
       - `OpenBCI 32bit <http://shop.openbci.com/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX250F128B
       - 40 MHz
       - 128 Kb
@@ -353,7 +353,7 @@ PONTECH
     * - ``quick240_usb``
       - `PONTECH quicK240 <http://quick240.com/quicki/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -362,7 +362,7 @@ PONTECH
     * - ``usbono_pic32``
       - `PONTECH UAV100 <http://www.pontech.com/productdisplay/uav100>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX440F512H
       - 80 MHz
       - 512 Kb
@@ -386,7 +386,7 @@ SeeedStudio
     * - ``cui32stem``
       - `SeeedStudio CUI32stem <http://www.seeedstudio.com/wiki/CUI32Stem>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX795F512H
       - 80 MHz
       - 512 Kb
@@ -410,7 +410,7 @@ UBW32
     * - ``ubw32_mx460``
       - `UBW32 MX460 <http://www.schmalzhaus.com/UBW32/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX460F512L
       - 80 MHz
       - 512 Kb
@@ -419,7 +419,7 @@ UBW32
     * - ``ubw32_mx795``
       - `UBW32 MX795 <http://www.schmalzhaus.com/UBW32/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX795F512L
       - 80 MHz
       - 512 Kb
@@ -443,7 +443,7 @@ chipKIT
     * - ``lenny``
       - `chipKIT Lenny <http://chipkit.net/tag/lenny/>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX270F256D
       - 40 MHz
       - 128 Kb
@@ -467,7 +467,7 @@ element14
     * - ``chipkit_pi``
       - `Element14 chipKIT Pi <http://www.element14.com/community/community/knode/dev_platforms_kits/element14_dev_kits/microchip-chipkit/chipkit_pi>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
+      -
       - 32MX250F128B
       - 40 MHz
       - 128 Kb

@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -290,7 +290,7 @@ LeafLabs
     * - ``maple``
       - `Maple <http://www.leaflabs.com/maple/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      -
       - STM32F103RB
       - 72 MHz
       - 128 Kb
@@ -299,7 +299,7 @@ LeafLabs
     * - ``maple_mini_b20``
       - `Maple Mini Bootloader 2.0 <http://www.leaflabs.com/maple/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      -
       - STM32F103CB
       - 72 MHz
       - 128 Kb
@@ -308,7 +308,7 @@ LeafLabs
     * - ``maple_mini_origin``
       - `Maple Mini Original <http://www.leaflabs.com/maple/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      -
       - STM32F103CB
       - 72 MHz
       - 128 Kb
@@ -359,7 +359,7 @@ MultiTech
     * - ``xdot_l151cc``
       - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      -
       - STM32L151CCU6
       - 32 MHz
       - 256 Kb

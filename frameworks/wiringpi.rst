@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -56,7 +56,7 @@ Raspberry Pi
     * - ``raspberrypi_1b``
       - `Raspberry Pi 1 Model B <https://www.raspberrypi.org>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      -
       - BCM2835
       - 700 MHz
       - 524288 Kb
@@ -65,7 +65,7 @@ Raspberry Pi
     * - ``raspberrypi_2b``
       - `Raspberry Pi 2 Model B <https://www.raspberrypi.org>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      -
       - BCM2836
       - 900 MHz
       - 1048576 Kb
@@ -74,7 +74,7 @@ Raspberry Pi
     * - ``raspberrypi_zero``
       - `Raspberry Pi Zero <https://www.raspberrypi.org>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      -
       - BCM2835
       - 1000 MHz
       - 524288 Kb

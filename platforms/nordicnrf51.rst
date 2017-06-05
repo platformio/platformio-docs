@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -104,7 +104,7 @@ BBC
     * - ``bbcmicrobit``
       - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      -
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -113,7 +113,7 @@ BBC
     * - ``bbcmicrobit_b``
       - `BBC micro:bit B(S130) <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      -
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -227,7 +227,7 @@ RFduino
     * - ``rfduino``
       - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      -
       - NRF51822
       - 16 MHz
       - 128 Kb

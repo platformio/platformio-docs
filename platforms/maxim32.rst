@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -92,7 +92,7 @@ Maxim
     * - ``max32600mbed``
       - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      -
       - MAX32600
       - 24 MHz
       - 256 Kb
@@ -101,7 +101,7 @@ Maxim
     * - ``max32620hsp``
       - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      -
       - MAX32620
       - 96 MHz
       - 2048 Kb
@@ -110,7 +110,7 @@ Maxim
     * - ``max32630fthr``
       - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      -
       - MAX32630
       - 96 MHz
       - 2048 Kb
@@ -119,7 +119,7 @@ Maxim
     * - ``maxwsnenv``
       - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      -
       - MAX32610
       - 24 MHz
       - 256 Kb

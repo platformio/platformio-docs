@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -78,7 +78,7 @@ FPGAwars
     * - ``icezum``
       - `IceZUM Alhambra FPGA <https://github.com/FPGAwars/icezum/wiki>`_
       - :ref:`Lattice iCE40 <platform_lattice_ice40>`
-      - 
+      -
       - ICE40-HX1K-TQ144
       - 12 MHz
       - 32 Kb
@@ -102,7 +102,7 @@ Lattice
     * - ``icestick``
       - `Lattice iCEstick FPGA Evaluation Kit <http://www.latticesemi.com/icestick>`_
       - :ref:`Lattice iCE40 <platform_lattice_ice40>`
-      - 
+      -
       - ICE40-HX1K-TQ144
       - 12 MHz
       - 32 Kb

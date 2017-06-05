@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -92,7 +92,7 @@ CQ Publishing
     * - ``lpc11u35_501``
       - `CQ Publishing TG-LPC11U35-501 <https://developer.mbed.org/platforms/TG-LPC11U35-501/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U35
       - 48 MHz
       - 64 Kb
@@ -140,7 +140,7 @@ Embedded Artists
     * - ``lpc11u35``
       - `EA LPC11U35 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC11U35/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U35
       - 48 MHz
       - 64 Kb
@@ -182,7 +182,7 @@ GHI Electronics
     * - ``oc_mbuino``
       - `mBuino <https://developer.mbed.org/platforms/mBuino/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U24
       - 50 MHz
       - 32 Kb
@@ -215,7 +215,7 @@ Micromint
     * - ``lpc4337``
       - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC4337
       - 204 MHz
       - 1024 Kb
@@ -239,7 +239,7 @@ NGX Technologies
     * - ``blueboard_lpc11u24``
       - `NGX Technologies BlueBoard-LPC11U24 <https://developer.mbed.org/platforms/BlueBoard-LPC11U24/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -263,7 +263,7 @@ NXP
     * - ``lpc11c24``
       - `NXP LPC11C24 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/scalable-entry-level-32-bit-microcontroller-mcu-based-on-arm-cortex-m0-plus-m0-cores:LPC11C24FBD48>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11C24
       - 48 MHz
       - 32 Kb
@@ -290,7 +290,7 @@ NXP
     * - ``lpc11u34_421``
       - `NXP LPC11U34 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/40kb-flash-8kb-sram-lqfp48-package:LPC11U34FBD48?lang_cd=en>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U34
       - 48 MHz
       - 64 Kb
@@ -299,7 +299,7 @@ NXP
     * - ``lpc11u37_501``
       - `NXP LPC11U37 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/128kb-flash-10kb-sram-lqfp48-package:LPC11U37FBD48?lang_cd=en>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U37
       - 48 MHz
       - 128 Kb
@@ -317,7 +317,7 @@ NXP
     * - ``lpc1549``
       - `NXP LPCXpresso1549 <https://developer.mbed.org/platforms/LPCXpresso1549/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC1549
       - 72 MHz
       - 256 Kb
@@ -335,7 +335,7 @@ NXP
     * - ``lpc2368``
       - `NXP LPC2368 <https://developer.mbed.org/platforms/mbed-LPC2368/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC2368
       - 72 MHz
       - 512 Kb
@@ -371,7 +371,7 @@ NXP
     * - ``micronfcboard``
       - `MicroNFCBoard <https://developer.mbed.org/platforms/MicroNFCBoard/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U34
       - 48 MHz
       - 64 Kb
@@ -395,7 +395,7 @@ Outrageous Circuits
     * - ``mbuino``
       - `Outrageous Circuits mBuino <https://developer.mbed.org/platforms/Outrageous-Circuits-mBuino/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -419,7 +419,7 @@ SeeedStudio
     * - ``seeedArchGPRS``
       - `Seeed Arch GPRS V2 <https://www.seeedstudio.com/Arch-GPRS-V2-p-2026.html>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U37
       - 48 MHz
       - 128 Kb
@@ -437,7 +437,7 @@ SeeedStudio
     * - ``xadow_m0``
       - `Seeed Xadow M0 <https://developer.mbed.org/platforms/Seeed-Xadow-M0/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U35
       - 48 MHz
       - 64 Kb
@@ -461,7 +461,7 @@ Smeshlink
     * - ``xbed_lpc1768``
       - `Smeshlink xbed LPC1768 <https://developer.mbed.org/platforms/xbed-LPC1768/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC1768
       - 96 MHz
       - 512 Kb
@@ -485,7 +485,7 @@ Solder Splash Labs
     * - ``dipcortexm0``
       - `Solder Splash Labs DipCortex M0 <https://developer.mbed.org/platforms/DipCortex-M0/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U24
       - 50 MHz
       - 32 Kb
@@ -494,7 +494,7 @@ Solder Splash Labs
     * - ``lpc1347``
       - `DipCortex M3 <https://developer.mbed.org/platforms/DipCortex-M3/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC1347
       - 72 MHz
       - 64 Kb
@@ -575,7 +575,7 @@ y5 design
     * - ``lpc11u35_y5_mbug``
       - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U35
       - 48 MHz
       - 64 Kb

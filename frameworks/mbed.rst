@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -40,7 +40,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
@@ -155,7 +155,7 @@ BBC
     * - ``bbcmicrobit``
       - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      -
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -164,7 +164,7 @@ BBC
     * - ``bbcmicrobit_b``
       - `BBC micro:bit B(S130) <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      -
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -188,7 +188,7 @@ CQ Publishing
     * - ``lpc11u35_501``
       - `CQ Publishing TG-LPC11U35-501 <https://developer.mbed.org/platforms/TG-LPC11U35-501/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U35
       - 48 MHz
       - 64 Kb
@@ -269,7 +269,7 @@ Embedded Artists
     * - ``lpc11u35``
       - `EA LPC11U35 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC11U35/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U35
       - 48 MHz
       - 64 Kb
@@ -440,7 +440,7 @@ GHI Electronics
     * - ``oc_mbuino``
       - `mBuino <https://developer.mbed.org/platforms/mBuino/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U24
       - 50 MHz
       - 32 Kb
@@ -512,7 +512,7 @@ Maxim
     * - ``max32600mbed``
       - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      -
       - MAX32600
       - 24 MHz
       - 256 Kb
@@ -521,7 +521,7 @@ Maxim
     * - ``max32620hsp``
       - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      -
       - MAX32620
       - 96 MHz
       - 2048 Kb
@@ -530,7 +530,7 @@ Maxim
     * - ``max32630fthr``
       - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      -
       - MAX32630
       - 96 MHz
       - 2048 Kb
@@ -539,7 +539,7 @@ Maxim
     * - ``maxwsnenv``
       - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      -
       - MAX32610
       - 24 MHz
       - 256 Kb
@@ -572,7 +572,7 @@ Micromint
     * - ``lpc4337``
       - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC4337
       - 204 MHz
       - 1024 Kb
@@ -647,7 +647,7 @@ MultiTech
     * - ``xdot_l151cc``
       - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      -
       - STM32L151CCU6
       - 32 MHz
       - 256 Kb
@@ -671,7 +671,7 @@ NGX Technologies
     * - ``blueboard_lpc11u24``
       - `NGX Technologies BlueBoard-LPC11U24 <https://developer.mbed.org/platforms/BlueBoard-LPC11U24/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -695,7 +695,7 @@ NXP
     * - ``lpc11c24``
       - `NXP LPC11C24 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/scalable-entry-level-32-bit-microcontroller-mcu-based-on-arm-cortex-m0-plus-m0-cores:LPC11C24FBD48>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11C24
       - 48 MHz
       - 32 Kb
@@ -722,7 +722,7 @@ NXP
     * - ``lpc11u34_421``
       - `NXP LPC11U34 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/40kb-flash-8kb-sram-lqfp48-package:LPC11U34FBD48?lang_cd=en>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U34
       - 48 MHz
       - 64 Kb
@@ -731,7 +731,7 @@ NXP
     * - ``lpc11u37_501``
       - `NXP LPC11U37 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/128kb-flash-10kb-sram-lqfp48-package:LPC11U37FBD48?lang_cd=en>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U37
       - 48 MHz
       - 128 Kb
@@ -749,7 +749,7 @@ NXP
     * - ``lpc1549``
       - `NXP LPCXpresso1549 <https://developer.mbed.org/platforms/LPCXpresso1549/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC1549
       - 72 MHz
       - 256 Kb
@@ -767,7 +767,7 @@ NXP
     * - ``lpc2368``
       - `NXP LPC2368 <https://developer.mbed.org/platforms/mbed-LPC2368/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC2368
       - 72 MHz
       - 512 Kb
@@ -803,7 +803,7 @@ NXP
     * - ``micronfcboard``
       - `MicroNFCBoard <https://developer.mbed.org/platforms/MicroNFCBoard/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U34
       - 48 MHz
       - 64 Kb
@@ -878,7 +878,7 @@ Outrageous Circuits
     * - ``mbuino``
       - `Outrageous Circuits mBuino <https://developer.mbed.org/platforms/Outrageous-Circuits-mBuino/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U24
       - 48 MHz
       - 32 Kb
@@ -1328,7 +1328,7 @@ SeeedStudio
     * - ``seeedArchGPRS``
       - `Seeed Arch GPRS V2 <https://www.seeedstudio.com/Arch-GPRS-V2-p-2026.html>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U37
       - 48 MHz
       - 128 Kb
@@ -1373,7 +1373,7 @@ SeeedStudio
     * - ``xadow_m0``
       - `Seeed Xadow M0 <https://developer.mbed.org/platforms/Seeed-Xadow-M0/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U35
       - 48 MHz
       - 64 Kb
@@ -1490,7 +1490,7 @@ Smeshlink
     * - ``xbed_lpc1768``
       - `Smeshlink xbed LPC1768 <https://developer.mbed.org/platforms/xbed-LPC1768/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC1768
       - 96 MHz
       - 512 Kb
@@ -1514,7 +1514,7 @@ Solder Splash Labs
     * - ``dipcortexm0``
       - `Solder Splash Labs DipCortex M0 <https://developer.mbed.org/platforms/DipCortex-M0/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U24
       - 50 MHz
       - 32 Kb
@@ -1523,7 +1523,7 @@ Solder Splash Labs
     * - ``lpc1347``
       - `DipCortex M3 <https://developer.mbed.org/platforms/DipCortex-M3/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC1347
       - 72 MHz
       - 64 Kb
@@ -1598,7 +1598,7 @@ Teensy
     * - ``teensy31``
       - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html>`_
       - :ref:`Teensy <platform_teensy>`
-      - 
+      -
       - MK20DX256
       - 72 MHz
       - 256 Kb
@@ -1655,7 +1655,7 @@ y5 design
     * - ``lpc11u35_y5_mbug``
       - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      -
       - LPC11U35
       - 48 MHz
       - 64 Kb

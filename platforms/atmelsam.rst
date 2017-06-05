@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -143,7 +143,7 @@ Arduino
     * - ``due``
       - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -152,7 +152,7 @@ Arduino
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -170,7 +170,7 @@ Arduino
     * - ``mkrfox1200``
       - `Arduino MKRFox1200 <https://www.arduino.cc/en/Main.ArduinoBoardMKRFox1200>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -179,7 +179,7 @@ Arduino
     * - ``mkrzero``
       - `Arduino MKRZero <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -206,7 +206,7 @@ Arduino
     * - ``mzeroproUSB``
       - `Arduino M0 Pro (Native USB Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -215,7 +215,7 @@ Arduino
     * - ``tian``
       - `Arduino Tian <http://www.arduino.org/products/boards/arduino-tian>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -233,7 +233,7 @@ Arduino
     * - ``zeroUSB``
       - `Arduino Zero (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -308,7 +308,7 @@ Digistump
     * - ``digix``
       - `Digistump DigiX <http://digistump.com/products/50>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -332,7 +332,7 @@ SODAQ
     * - ``sodaq_autonomo``
       - `SODAQ Autonomo <http://support.sodaq.com/sodaq-one/autonomo/getting-started-autonomo/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -341,7 +341,7 @@ SODAQ
     * - ``sodaq_explorer``
       - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -350,7 +350,7 @@ SODAQ
     * - ``sodaq_one``
       - `SODAQ ONE <http://support.sodaq.com/sodaq-one/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -359,7 +359,7 @@ SODAQ
     * - ``sodaq_wdt``
       - `SODAQ WDT <http://support.sodaq.com/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -383,7 +383,7 @@ SainSmart
     * - ``sainSmartDue``
       - `SainSmart Due (Programming Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
@@ -392,7 +392,7 @@ SainSmart
     * - ``sainSmartDueUSB``
       - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      -
       - AT91SAM3X8E
       - 84 MHz
       - 512 Kb
