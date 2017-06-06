@@ -153,12 +153,13 @@ Installation
 Multiple PIO Cores in a system
 ''''''''''''''''''''''''''''''
 
-Multiple :ref:`piocore` in a system could lead to a different issues. We highly
-recommend to keep one instance of PIO Core or use built-in PIO Core in :ref:`pioide`:
+Multiple standalone :ref:`piocore` in a system could lead to a different
+issues. We highly recommend to keep one instance of PIO Core or use built-in
+PIO Core in :ref:`pioide`:
 
 * :ref:`ide_atom` - ``Menu PlatformIO: Settings > PlatformIO IDE > Use built-in PlatformIO Core``
 
-Finally, if you have a global :ref:`piocore` in a system, please open system
+Finally, if you have a standalone :ref:`piocore` in a system, please open system
 Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
 
 .. code-block:: bash
