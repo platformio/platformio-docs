@@ -217,6 +217,27 @@ Custom PATH for ``platformio`` command. Paste here the result of ``echo $PATH``
 if you prefer to use custom version of :ref:`piocore`, default configuration
 is ``null``.
 
+Serial Port Monitor
+~~~~~~~~~~~~~~~~~~~
+
+You can customize Serial Port Monitor using :ref:`projectconf_monitor` in
+:ref:`projectconf`:
+
+* :ref:`projectconf_monitor_port`
+* :ref:`projectconf_monitor_baud`
+* :ref:`projectconf_monitor_rts`
+* :ref:`projectconf_monitor_dtr`
+
+Example:
+
+.. code-block:: ini
+
+    [env:esp32dev]
+    platform = espressif32
+    framework = arduino
+    board = esp32dev
+    monitor_baud = 115200
+
 PIO Account
 ~~~~~~~~~~~
 

@@ -800,6 +800,64 @@ This option can be set by global environment variable
 Specify reset method for "uploader" tool. This option isn't available for all
 development platforms. The only :ref:`platform_espressif8266` supports it.
 
+.. _projectconf_monitor:
+
+Monitor options
+~~~~~~~~~~~~~~~
+
+.. contents::
+    :local:
+
+Custom options for :ref:`cmd_device_monitor` command.
+
+.. _projectconf_monitor_port:
+
+``monitor_port``
+^^^^^^^^^^^^^^^^
+
+Port, a number or a device name. See :option:`platformio device monitor --port`.
+
+Example:
+
+.. code-block:: ini
+
+    [env:custom_monitor_port]
+    ...
+    ; Unix
+    monitor_port = /dev/ttyUSB1
+
+    ; Windows
+    monitor_port = COM3
+
+.. _projectconf_monitor_baud:
+
+``monitor_baud``
+^^^^^^^^^^^^^^^^
+
+A monitor baud rate (speed). See :option:`platformio device monitor --baud`.
+
+Example:
+
+.. code-block:: ini
+
+    [env:custom_monitor_baudrate]
+    ...
+    monitor_baud = 115200
+
+.. _projectconf_monitor_rts:
+
+``monitor_rts``
+^^^^^^^^^^^^^^^
+
+A monitor initial ``RTS`` line state. See :option:`platformio device monitor --rts`.
+
+.. _projectconf_monitor_dtr:
+
+``monitor_dtr``
+^^^^^^^^^^^^^^^
+
+A monitor initial ``DTR`` line state. See :option:`platformio device monitor --dtr`.
+
 Library options
 ~~~~~~~~~~~~~~~
 
