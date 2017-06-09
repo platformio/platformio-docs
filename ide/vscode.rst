@@ -236,6 +236,11 @@ Example:
     platform = espressif32
     framework = arduino
     board = esp32dev
+
+    ; Custom Serial Monitor port
+    monitor_port = /dev/ttyUSB1
+
+    ; Custom Serial Monitor baud rate
     monitor_baud = 115200
 
 PIO Account
