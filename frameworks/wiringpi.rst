@@ -56,7 +56,7 @@ Raspberry Pi
     * - ``raspberrypi_1b``
       - `Raspberry Pi 1 Model B <https://www.raspberrypi.org>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      -
+      - 
       - BCM2835
       - 700 MHz
       - 524288 Kb
@@ -65,16 +65,25 @@ Raspberry Pi
     * - ``raspberrypi_2b``
       - `Raspberry Pi 2 Model B <https://www.raspberrypi.org>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      -
+      - 
       - BCM2836
       - 900 MHz
+      - 1048576 Kb
+      - 1048576 Kb
+
+    * - ``raspberrypi_3b``
+      - `Raspberry Pi 3 Model B <https://www.raspberrypi.org>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
+      - BCM2837
+      - 1200 MHz
       - 1048576 Kb
       - 1048576 Kb
 
     * - ``raspberrypi_zero``
       - `Raspberry Pi Zero <https://www.raspberrypi.org>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      -
+      - 
       - BCM2835
       - 1000 MHz
       - 524288 Kb

@@ -22,7 +22,7 @@ PlatformIO IDE is the next-generation integrated development environment for IoT
     - 20+ development platforms
     - 10+ frameworks
 
-* :ref:`debugging`
+* :ref:`piodebug`
 * :ref:`pio_remote`
 * :ref:`unit_testing`
 * C/C++ Intelligent Code Completion
@@ -53,15 +53,12 @@ Installation
     you are going to use :ref:`ide_vscode`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-- `Download <https://code.visualstudio.com>`_ and install official Microsoft
-  Visual Studio Code, PlatformIO IDE is built on top of it
-- Install `PlatformIO IDE for VSCode extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_:
+0. `Download <https://code.visualstudio.com>`_ and install official Microsoft Visual Studio Code. PlatformIO IDE is built on top of it
+1. **Open** VSCode Package Manager
+2. **Search** for official ``platformio-ide`` package
+3. **Install** PlatformIO IDE.
 
-    * Launch VS Code Quick Open (``Ctr+P`` or ``Cmd+P``)
-    * Paste the following command ``ext install platformio-ide``, press enter
-    * Install an official ``PlatformIO IDE`` extension
-
-- Reload VSCode.
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-pkg-installer.png
 
 Quick Start
 -----------
@@ -91,7 +88,7 @@ Setting Up the Project
 
 4. Create FREE :ref:`cmd_account` which opens access to extra features, such as:
 
-    * :ref:`debugging`
+    * :ref:`piodebug`
     * :ref:`unit_testing`
     * :ref:`pio_remote`
 
@@ -248,7 +245,7 @@ PIO Account
 
 Create FREE :ref:`cmd_account` which opens access to extra features, such as:
 
-  * :ref:`debugging`
+  * :ref:`piodebug`
   * :ref:`unit_testing`
   * :ref:`pio_remote`
 

@@ -28,7 +28,7 @@ Features
     - 20+ development platforms
     - 10+ frameworks
 
-* :ref:`debugging`
+* :ref:`piodebug`
 * :ref:`pio_remote`
 * :ref:`unit_testing`
 * C/C++ Intelligent Code Completion

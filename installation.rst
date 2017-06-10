@@ -217,6 +217,23 @@ To revert to the latest stable version
     pip uninstall platformio
     pip install -U platformio
 
+.. _piocore_uninstall:
+
+Uninstall PIO Core and dependent packages
+-----------------------------------------
+
+* Uninstall PIO Core tool
+
+    .. code-block:: bash
+
+        # uninstall standalone PIO Core installed via `pip`
+        pip uninstall platformio
+
+        # uninstall Homebrew's PIO Core (only macOS users if you installed it via Homebrew before)
+        brew uninstall platformio
+
+* Dependent packages, global libraries are installed to ``$HOME/.platformio``
+  folder (in user's HOME directory). Just remove it.
 
 Troubleshooting
 ---------------

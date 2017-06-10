@@ -56,7 +56,7 @@ MakerAsia
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      -
+      - 
       - ESP32
       - 240 MHz
       - 1024 Kb

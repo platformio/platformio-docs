@@ -14,7 +14,7 @@
 platformio debug
 ================
 
-Helper command for :ref:`debugging`.
+Helper command for :ref:`piodebug`.
 
 .. contents::
 

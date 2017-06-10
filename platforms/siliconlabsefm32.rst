@@ -92,7 +92,7 @@ Silicon Labs
     * - ``efm32gg_stk3700``
       - `Silicon Labs EFM32GG-STK3700 (Giant Gecko) <https://developer.mbed.org/platforms/EFM32-Giant-Gecko/>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`Yes <debugging>`
+      - :ref:`Yes <piodebug>`
       - EFM32GG990F1024
       - 48 MHz
       - 1024 Kb
@@ -101,7 +101,7 @@ Silicon Labs
     * - ``efm32hg_stk3400``
       - `Silicon Labs SLSTK3400A USB-enabled (Happy Gecko) <https://developer.mbed.org/platforms/EFM32-Happy-Gecko/>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`Yes <debugging>`
+      - :ref:`Yes <piodebug>`
       - EFM32HG322F64
       - 24 MHz
       - 64 Kb
@@ -110,7 +110,7 @@ Silicon Labs
     * - ``efm32lg_stk3600``
       - `Silicon Labs EFM32LG-STK3600 (Leopard Gecko) <https://developer.mbed.org/platforms/EFM32-Leopard-Gecko/>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`Yes <debugging>`
+      - :ref:`Yes <piodebug>`
       - EFM32LG990F256
       - 48 MHz
       - 256 Kb
@@ -119,7 +119,7 @@ Silicon Labs
     * - ``efm32pg_stk3401``
       - `Silicon Labs SLSTK3401A (Pearl Gecko) <https://developer.mbed.org/platforms/EFM32-Pearl-Gecko/>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`Yes <debugging>`
+      - :ref:`Yes <piodebug>`
       - EFM32PG1B200F256
       - 40 MHz
       - 256 Kb
@@ -128,7 +128,7 @@ Silicon Labs
     * - ``efm32wg_stk3800``
       - `Silicon Labs EFM32WG-STK3800 (Wonder Gecko) <https://developer.mbed.org/platforms/EFM32-Wonder-Gecko/>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`Yes <debugging>`
+      - :ref:`Yes <piodebug>`
       - EFM32WG990F256
       - 48 MHz
       - 256 Kb
@@ -137,7 +137,7 @@ Silicon Labs
     * - ``efm32zg_stk3200``
       - `Silicon Labs EFM32ZG-STK3200 (Zero Gecko) <https://developer.mbed.org/platforms/EFM32-Zero-Gecko/>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`Yes <debugging>`
+      - :ref:`Yes <piodebug>`
       - EFM2ZG222F32
       - 24 MHz
       - 32 Kb

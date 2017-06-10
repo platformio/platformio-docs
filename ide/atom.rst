@@ -22,7 +22,7 @@ PlatformIO IDE is the next-generation integrated development environment for IoT
     - 20+ development platforms
     - 10+ frameworks
 
-* :ref:`debugging`
+* :ref:`piodebug`
 * :ref:`pio_remote`
 * :ref:`unit_testing`
 * C/C++ Intelligent Code Completion
@@ -56,22 +56,26 @@ Installation
     ``Menu: PlatformIO > Install Shell Commands``.
 
 
-1. Atom package (auto-installer)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I. Atom
+~~~~~~~
 
-- `Download <https://atom.io>`_ and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it
-- **Open** Atom Package Manager and **Install** ``platformio-ide`` package (auto installer)
+0. `Download <https://atom.io>`_ and install official GitHub's Atom text editor. PlatformIO IDE is built on top of it
 
-  - **Mac OS X**, ``Menu: Atom > Preferences > Install``
-  - **Windows**, ``Menu: File > Settings > Install``
-  - **Linux**, ``Menu: Edit > Preferences > Install``
+1. **Open** Atom Package Manager
 
-.. image:: ../_static/ide-atom-platformio-install.png
+  + *Mac OS X*, ``Menu: Atom > Preferences > Install``
+  + *Windows*, ``Menu: File > Settings > Install``
+  + *Linux*, ``Menu: Edit > Preferences > Install``
+
+2. **Search** for official ``platformio-ide`` package
+3. **Install** PlatformIO IDE.
+
+.. image:: ../_static/ide/atom/ide-atom-pkg-installer.png
 
 .. _ide_atom_installation_clang:
 
-2. Clang for Intelligent Code Completion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+II. Clang for Intelligent Code Completion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PlatformIO IDE uses `Clang <http://clang.llvm.org>`_ for the Intelligent Code
 Completion. To check that ``clang`` is available in your system, please
@@ -134,33 +138,38 @@ Setting Up the Project
    ``Menu: PlatformIO > Initialize new Project or update existing`` or press
    the corresponding icon in the PlatformIO toolbar as shown in the image below:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-1.png
-    :target: ../_images/ide-atom-platformio-quick-start-1.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-1.png
+    :target: ../_images/ide-atom-quick-start-1.png
 
 2. In the "New Project Menu" choose desired boards (more than one board is
    allowed) and select a project directory. Then press "Initialize" button:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-2.png
-    :target: ../_images/ide-atom-platformio-quick-start-2.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-2.png
+    :target: ../_images/ide-atom-quick-start-2.png
 
 3. If everything is fine, you should see the success message and project tree
    in the left panel:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-3.png
-    :target: ../_images/ide-atom-platformio-quick-start-3.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-3.png
+    :target: ../_images/ide-atom-quick-start-3.png
 
 4. Now, let's create the first project source file: right-click on the folder
    ``src`` and choose ``New File``:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-4.png
-    :target: ../_images/ide-atom-platformio-quick-start-4.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-4.png
+    :target: ../_images/ide-atom-quick-start-4.png
 
 Enter filename ``main.cpp``:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-5.png
-    :target: ../_images/ide-atom-platformio-quick-start-5.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-5.png
+    :target: ../_images/ide-atom-quick-start-5.png
 
-Copy the next source code to the just created file ``main.cpp``:
+Copy the next source code to the just created file ``main.cpp``
+
+.. warning::
+
+    The code below works only in pair with Arduino-based boards. Please
+    follow to `PlatformIO Project Examples <https://github.com/platformio/platformio-examples>`_ repository for other pre-configured projects.
 
 .. code-block:: cpp
 
@@ -206,14 +215,14 @@ upload firmware, run other targets) using:
     - :ref:`atom_ide_platformio_menu`
     - :ref:`ide_atom_building_targets` and hotkeys
 
-.. image:: ../_static/ide-atom-platformio-quick-start-6.png
-    :target: ../_images/ide-atom-platformio-quick-start-6.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-6.png
+    :target: ../_images/ide-atom-quick-start-6.png
 
 5. Run ``Build`` and you should see green "success" result in the building
    panel:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-7.png
-    :target: ../_images/ide-atom-platformio-quick-start-7.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-7.png
+    :target: ../_images/ide-atom-quick-start-7.png
 
 To upload firmware to the board run ``Upload``.
 
@@ -221,40 +230,40 @@ To upload firmware to the board run ``Upload``.
    using ``Menu: PlatformIO > Run other target...``
    or call targets list from the status bar (bottom, left corner):
 
-.. image:: ../_static/ide-atom-platformio-quick-start-8.png
-    :target: ../_images/ide-atom-platformio-quick-start-8.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-8.png
+    :target: ../_images/ide-atom-quick-start-8.png
 
 And select desired target:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-9.png
-    :target: ../_images/ide-atom-platformio-quick-start-9.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-9.png
+    :target: ../_images/ide-atom-quick-start-9.png
 
 7. To run built-in terminal interface choose ``Menu: PlatformIO > Terminal`` or
    press the corresponding icon in the PlatformIO toolbar:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-10.png
-    :target: ../_images/ide-atom-platformio-quick-start-10.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-10.png
+    :target: ../_images/ide-atom-quick-start-10.png
 
 It provides you fast access to all set of powerful :ref:`piocore` CLI commands:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-11.png
-    :target: ../_images/ide-atom-platformio-quick-start-11.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-11.png
+    :target: ../_images/ide-atom-quick-start-11.png
 
 8. To run built-in "Serial Monitor" choose ``Menu: PlatformIO > Serial Monitor``
    or press the corresponding icon in the PlatformIO toolbar:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-12.png
-    :target: ../_images/ide-atom-platformio-quick-start-12.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-12.png
+    :target: ../_images/ide-atom-quick-start-12.png
 
 It has several settings to adjust your connection:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-13.png
-    :target: ../_images/ide-atom-platformio-quick-start-13.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-13.png
+    :target: ../_images/ide-atom-quick-start-13.png
 
 And allows you to communicate with your board in an easy way:
 
-.. image:: ../_static/ide-atom-platformio-quick-start-14.png
-    :target: ../_images/ide-atom-platformio-quick-start-14.png
+.. image:: ../_static/ide/atom/ide-atom-quick-start-14.png
+    :target: ../_images/ide-atom-quick-start-14.png
 
 
 User Guide
@@ -268,7 +277,7 @@ Menu item ``PlatformIO``
 `platformio-ide <https://atom.io/packages/platformio-ide>`_ package adds to Atom
 new menu item named ``Menu: PlatformIO`` (after ``Menu: Help`` item).
 
-.. image:: ../_static/ide-atom-platformio-menu-item.png
+.. image:: ../_static/ide/atom/ide-atom-menu-item.png
 
 .. _atom_ide_platformio_toolbar:
 
@@ -278,22 +287,24 @@ PlatformIO Toolbar
 PlatformIO IDE Toolbar contains quick access buttons for the popular commands.
 Each button contains hint (delay mouse on it).
 
-.. image:: ../_static/ide-atom-platformio-toolbar.png
+.. image:: ../_static/ide/atom/ide-atom-toolbar.png
 
+* PlatformIO: Home (PIO Account, Library Manager, Board Explorer, Development Platform Manager)
 * PlatformIO: Build
 * PlatformIO: Upload
 * PlatformIO: Clean
+* :ref:`piodebug`
+* Run other target (Build environments, :ref:`unit_testing`)
+* Toggle build panel
 * ||
 * Initialize new PlatformIO Project or update existing...
 * Add/Open Project Folder...
 * Find in Project...
 * ||
-* Terminal
-* Library Manager
+* PIO Terminal
 * Serial Monitor
 * ||
-* Settings
-* PlatformIO Documentation
+* Atom Settings
 
 .. _ide_atom_building_targets:
 
@@ -451,8 +462,7 @@ Uninstall Atom with PlatformIO IDE
 
 Here's how to uninstall the PlatformIO IDE for multiple OS.
 
-:ref:`piocore` and all dependent packages are located in ``~/.platformio``
-folder (in user's HOME directory).
+See :ref:`piocore_uninstall`, if you do not need it in a system.
 
 Windows
 ~~~~~~~

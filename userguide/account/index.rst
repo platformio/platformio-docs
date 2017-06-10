@@ -18,7 +18,7 @@ Having **PIO Account** allows you to use extra professional features from
 `PlatformIO Plus <https://pioplus.com/>`__:
 
 * :ref:`pio_remote`
-* :ref:`debugging`
+* :ref:`piodebug`
 * :ref:`unit_testing`
 * :ref:`ide_cloud`
 

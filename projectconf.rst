@@ -1060,7 +1060,7 @@ Debugging options
 
 .. versionadded:: 3.4
 .. seealso::
-    Please make sure to read :ref:`debugging` guide first.
+    Please make sure to read :ref:`piodebug` guide first.
 
 .. _projectconf_debug_tool:
 
