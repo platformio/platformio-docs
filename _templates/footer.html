@@ -1,7 +1,7 @@
 {% extends "!footer.html" %}
 
 {% block extrafooter %}
-<link rel="stylesheet" href="{{ pathto('_static/extra.css', 1) }}" type="text/css" />
+<link rel="stylesheet" href="{{ pathto('_static/css/extra.css', 1) }}" type="text/css" />
 <header id="pionav" class="navbar navbar-inverse navbar-fixed-top">
   <a href="https://github.com/platformio" target="_blank" class="github-corner">
     <svg viewBox="0 0 250 250">
@@ -17,13 +17,52 @@
 
     <nav role="navigation">
       <div>
-        <ul class="nav navbar-nav">
-          <li><a href="http://platformio.org/get-started"><i class="fa fa-rocket fa-lg"></i>Get Started</a></li>
-          <li><a href="http://platformio.org/platformio-ide"><i class="fa fa-cube fa-lg"></i>IDE</a></li>
-          <li><a href="http://platformio.org/platforms"><i class="fa fa-wrench fa-lg"></i>Development</a></li>
-          <li><a href="http://platformio.org/lib"><i class="fa fa-code fa-lg"></i>Libraries</a></li>
-          <li><a href="http://platformio.org/pricing"><i class="fa fa-shopping-cart fa-lg"></i>Pricing</a></li>
-        </ul>
+
+      <ul class="nav navbar-nav">
+        <li><a href="http://platformio.org/get-started"><i class="fa fa-rocket fa-lg"></i>Get Started</a></li>
+        <li class="dropdown">
+          <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>
+            Products <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="http://platformio.org/platformio-ide"><i class="fa fa-cube fa-lg"></i> PlatformIO IDE</a></li>
+            <li role="menuitem"><a href="http://docs.platformio.org/page/core.html"><i class="fa fa-wrench fa-lg"></i> PlatformIO Core</a></li>
+            <li role="separator" class="divider"></li>
+            <li role="menuitem"><a href="http://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe fa-lg"></i> PIO Remote&trade;</a></li>
+            <li role="menuitem"><a href="http://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug fa-lg"></i> PIO Unified Debugger</a></li>
+            <li role="menuitem"><a href="http://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-gears fa-lg"></i> PIO Unit Testing</a></li>
+            <li role="separator" class="divider"></li>
+            <li role="menuitem"><a href="http://platformio.org/pricing#solution-pio-delivery"><i class="fa fa-download fa-lg"></i> PIO Delivery&trade;</a></li>
+            <li role="menuitem"><a href="http://platformio.org/pricing#solution-cloud-builder"><i class="fa fa-cloud fa-lg"></i> Cloud Builder</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a role="button" data-target="#" href="http://docs.platformio.org/page/librarymanager/index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>
+            Solutions <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="http://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code fa-lg"></i> Library Management</a></li>
+            <li role="separator" class="divider"></li>
+            <li role="menuitem"><a href="http://platformio.org/pricing#solution-cloud-ide"><i class="fa fa-cube"></i> Cloud IDEs Integration</a></li>
+            <li role="menuitem"><a href="http://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i> Continuous Integration</a></li>
+            <li role="separator" class="divider"></li>
+            <li role="menuitem"><a href="http://platformio.org/pricing#solution-static-project-analysis"><i class="fa fa-bug fa-lg"></i> Static Project Analysis</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a role="button" data-target="#" href="http://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>
+            Registry <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="http://platformio.org/lib"><i class="fa fa-code fa-lg"></i> Libraries</a></li>
+            <li role="separator" class="divider"></li>
+            <li role="menuitem"><a href="http://platformio.org/platforms"><i class="fa fa-laptop fa-lg"></i> Platforms</a></li>
+            <li role="menuitem"><a href="http://platformio.org/frameworks"><i class="fa fa-cogs fa-lg"></i> Frameworks</a></li>
+            <li role="menuitem"><a href="http://platformio.org/boards"><i class="fa fa-microchip fa-lg"></i> Boards / MCUs</a></li>
+          </ul>
+        </li>
+        <li ng-class="{active: vm.isRouteActive('/pricing')}"><a href="http://platformio.org/pricing"><i class="fa fa-shopping-cart fa-lg"></i>Pricing</a></li>
+      </ul>
 
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="http://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>
@@ -35,30 +74,21 @@
     </nav>
   </div>
 </header>
-<script>
-(function() {
-  var runMyCode = function($) {
-    $(window).ready(function() {
-        if ($('#pionav').css('display') !== 'block') {
-            return;
-        }
-        function fixScroll() {
-            $(window).scrollTop($(window).scrollTop() - 50);
-        }
-        window.setTimeout(fixScroll, 50);
-        $(window).on('hashchange', function(e){fixScroll();});
-    });
-  };
 
-  var timer = function() {
-    if (window.jQuery) {
-      runMyCode(window.jQuery);
-    } else {
-      window.setTimeout(timer, 50);
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="{{ pathto('_static/js/bootstrap-dropdown.js', 1) }}"></script>
+
+<script>
+  $(window).ready(function() {
+    if ($('#pionav').css('display') !== 'block') {
+      return;
     }
-  };
-  timer();
-})();
+    function fixScroll() {
+      $(window).scrollTop($(window).scrollTop() - 50);
+    }
+    window.setTimeout(fixScroll, 50);
+    $(window).on('hashchange', function(e){fixScroll();});
+  });
 </script>
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="3fff855f-9bf8-46df-bc1a-06e1be08cb2f";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 {{ super() }}
