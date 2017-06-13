@@ -10,8 +10,6 @@
 +function ($) {
   'use strict';
 
-  console.log('Ivan', $);
-
   // DROPDOWN CLASS DEFINITION
   // =========================
 
