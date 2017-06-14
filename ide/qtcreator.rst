@@ -188,11 +188,3 @@ Conclusion
 ~~~~~~~~~~
 
 Taking everything into account, we can build project with shortcut ``Ctrl+Shift+B`` or using ``Menu: Build > Build All``.
-
-Examples
---------
-
-"Blink" Project
-^^^^^^^^^^^^^^^
-
-Source code of `Qt Creator "Blink" Project <https://github.com/platformio/platformio-examples/tree/develop/ide/qtcreator>`_.

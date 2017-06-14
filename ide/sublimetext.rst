@@ -194,11 +194,3 @@ Conclusion
 ~~~~~~~~~~
 
 Taking everything into account, we can open project directory in Sublime Text using ``Menu: File > Open Folder`` and build it with shortcut ``Ctrl+B`` (Windows/Linux) or ``Cmd+B`` (Mac), clean project with shortcut ``F11`` and upload firmware to target with shortcut ``F12``.
-
-Examples
---------
-
-"Blink" Project
-^^^^^^^^^^^^^^^
-
-Source code of `Sublime Text "Blink" Project <https://github.com/platformio/platformio-examples/tree/develop/ide/sublimetext>`_.

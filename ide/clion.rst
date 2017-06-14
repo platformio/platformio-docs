@@ -115,11 +115,3 @@ Articles / Manuals
 * Nov 09, 2015 - **ÁLvaro García Gómez** - `Programar con Arduino "The good way" (Programming with Arduino "The good way", Spanish) <http://congdegnu.es/2015/11/09/programar-con-arduino-the-good-way/>`_
 
 See more :ref:`articles`.
-
-Examples
---------
-
-"Blink" Project
-~~~~~~~~~~~~~~~
-
-Source code of `CLion "Blink" Project <https://github.com/platformio/platformio-examples/tree/develop/ide/clion>`_.

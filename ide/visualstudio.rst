@@ -150,14 +150,6 @@ Conclusion
 
 Taking everything into account, we can build project with shortcut ``Ctrl+Shift+B`` or using ``Menu: Build > Build Solution``.
 
-Examples
---------
-
-"Blink" Project
-^^^^^^^^^^^^^^^
-
-Source code of `Visual Studio "Blink" Project <https://github.com/platformio/platformio-examples/tree/develop/ide/visualstudio>`_.
-
 Known issues
 ------------
 

@@ -115,11 +115,3 @@ Articles / Manuals
 * June 20, 2014 - **Ivan Kravets, Ph.D.** - `Building and debugging Atmel AVR (Arduino-based) project using Eclipse IDE+PlatformIO <http://www.ikravets.com/computer-life/programming/2014/06/20/building-and-debugging-atmel-avr-arduino-based-project-using-eclipse-ideplatformio>`_
 
 See a full list with :ref:`articles`.
-
-Examples
---------
-
-"Blink" Project
-^^^^^^^^^^^^^^^
-
-Source code of `Eclipse "Blink" Project <https://github.com/platformio/platformio-examples/tree/develop/ide/eclipse>`_.
