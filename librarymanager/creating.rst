@@ -23,7 +23,8 @@ location where |PIOAPICR| will have *HTTP* access.
 Updates to existing libraries are done every 24 hours. In case a more urgent
 update is required, you can post a request on PlatformIO `community <https://community.platformio.org/>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Source Code Location
 --------------------

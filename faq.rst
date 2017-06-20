@@ -18,7 +18,8 @@ Frequently Asked Questions
    We have a big database with `Frequently Asked Questions in our Community Forums <https://community.platformio.org/c/faq>`_.
    Please have a look at it.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 General
 -------

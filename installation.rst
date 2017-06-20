@@ -31,6 +31,7 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `Samsung ARTIK <https://www.artik.io>`_, etc.).
 
 .. contents::
+    :local:
 
 System requirements
 -------------------

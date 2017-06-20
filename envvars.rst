@@ -34,7 +34,8 @@ How to set environment variable?
     # Unix (fish)
     set -x VARIABLE_NAME VALUE
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 General
 -------

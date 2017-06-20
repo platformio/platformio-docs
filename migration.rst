@@ -22,7 +22,8 @@ general guide to upgrading from v2.x to v3.0. For a broader overview, see
 `what is new <https://community.platformio.org/c/announcements>`_ in the v3.0
 release announcement.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Major PlatformIO CLI changes
 ----------------------------

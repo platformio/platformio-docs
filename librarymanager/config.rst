@@ -34,7 +34,8 @@ in `JSON-style <http://en.wikipedia.org/wiki/JSON>`_ via
 (name/value pairs). An order doesn't matter. The allowable fields
 (names from pairs) are described below.
 
-.. contents::
+.. contents:: Fields
+    :local:
 
 .. _libjson_name:
 

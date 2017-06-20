@@ -14,7 +14,8 @@
 What is PlatformIO?
 ===================
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Press about PlatformIO
 ----------------------

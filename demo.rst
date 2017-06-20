@@ -14,7 +14,8 @@
 Demo & Projects
 ===============
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Project Examples
 ----------------
