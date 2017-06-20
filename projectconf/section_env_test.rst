@@ -60,7 +60,7 @@ Also, you can ignore some tests using :option:`platformio test --ignore` command
 ``test_port``
 ^^^^^^^^^^^^^
 
-This option is used as communication interface (Serial/UART) between PlatformIO
+This option specifies communication interface (Serial/UART) between PlatformIO
 :ref:`unit_testing` Engine and target device. For example,
 
 * ``/dev/ttyUSB0`` - Unix-based OS
@@ -98,6 +98,7 @@ You can also define ``custom`` transport and implement its interface:
 .. code-block:: ini
 
   [env:mycustomtransport]
+  platform = native
   test_transport = custom
 
 2. Create ``unittest_transport.h`` file in ``project/test`` directory and

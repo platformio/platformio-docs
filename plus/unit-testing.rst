@@ -9,8 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIOUTE| replace:: **PlatformIO Unit Testing Engine**
-.. |PIOUTF| replace:: *PlatformIO Unit Testing Framework*
+.. |PIOUTE| replace:: **PIO Unit Testing Engine**
+.. |PIOUTF| replace:: *PIO Unit Testing Framework*
 
 .. _unit_testing:
 
@@ -44,9 +44,10 @@ Test Types
 Desktop
 ~~~~~~~
 
-PlatformIO wraps the test and main program (from :ref:`projectconf_pio_src_dir`)
-with their own |PIOUTF|. It then builds the final program using
-:ref:`platform_native` and runs tests on the host machine (desktop).
+PlatformIO wraps a test and a main program (from :ref:`projectconf_pio_src_dir`)
+with |PIOUTF| and builds the final program using :ref:`platform_native`
+development platform. Finally, PlatformIO runs tests on the host machine
+(desktop or :ref:`ci` VM instance).
 
 .. note::
     PlatformIO does not install any toolchains automatically for
@@ -57,29 +58,30 @@ with their own |PIOUTF|. It then builds the final program using
 Embedded
 ~~~~~~~~
 
-PlatformIO wraps the test and main firmware (from :ref:`projectconf_pio_src_dir`)
-with their own |PIOUTF|. It then builds special firmware for the target device
-and uploads it. After uploading, PlatformIO connects to the embedded device
-(board) using the configured :ref:`projectconf_test_port` . Tests are then started
-and the results are collected for display on the host machine.
-
-Currently, |PIOUTE| supports these embedded frameworks:
-
-* :ref:`framework_arduino`
-* :ref:`framework_energia`
-* :ref:`framework_mbed`
+PlatformIO wraps a test and main firmware (from :ref:`projectconf_pio_src_dir`)
+with |PIOUTF| and builds special firmware for a target device and deploy it.
+Then, PlatformIO connects to the embedded device (board) using configured
+Serial :ref:`projectconf_test_port` and communicate via
+:ref:`projectconf_test_transport`. Finally, it runs tests on embedded side,
+collects results, analyzes them and provides a summary on host machine side
+(desktop).
 
 .. note::
-    Please note that the |PIOUTF| uses Serial/UART as a communication interface
-    between the PlatformIO Unit Test Engine and target device. If you use
+
+    Please note that the |PIOUTF| uses the first available ``Serial/UART``
+    implementation (depending on a :ref:`projectconf_env_framework`) as a
+    communication interface between the |PIOUTE| and target device. If you use
     ``Serial`` in your project, please wrap/hide Serial-based blocks with
     ``#ifndef UNIT_TEST`` macro.
+
+    Also, you can create custom :ref:`projectconf_test_transport` and implement
+    base interface.
 
 Test Runner
 -----------
 
 Test Runner allows you to process specific environments or ignore tests using
-"Glob patterns". You can also ignore tests for specific environments using the
+"Glob patterns". You can also ignore tests for specific environments using a
 :ref:`projectconf_test_ignore` option from :ref:`projectconf`.
 
 Local
