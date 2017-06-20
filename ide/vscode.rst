@@ -217,8 +217,8 @@ is ``null``.
 Serial Port Monitor
 ~~~~~~~~~~~~~~~~~~~
 
-You can customize Serial Port Monitor using :ref:`projectconf_monitor` in
-:ref:`projectconf`:
+You can customize Serial Port Monitor using
+:ref:`projectconf_section_env_monitor` in :ref:`projectconf`:
 
 * :ref:`projectconf_monitor_port`
 * :ref:`projectconf_monitor_baud`
