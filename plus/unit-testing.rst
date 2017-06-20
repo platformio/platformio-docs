@@ -38,6 +38,15 @@ Demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-
 .. image:: ../_static/pioplus-unit-testing-demo.png
     :target: https://youtu.be/bo3VVRZVKhA
 
+Configuration
+-------------
+
+|PIOUTE| can be configured from :ref:`projectconf`
+
+* :ref:`projectconf_test_ignore`
+* :ref:`projectconf_test_port`
+* :ref:`projectconf_test_transport`
+
 Test Types
 ----------
 
