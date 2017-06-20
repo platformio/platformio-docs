@@ -14,13 +14,19 @@
 Development Platforms
 =====================
 
-*PlatformIO* has pre-built different development platforms for popular OS
-(*Mac OS X, Linux (+ARM) and Windows*). Each of them include compiler,
-debugger, uploader (for embedded) and many other useful tools.
+PlatformIO ecosystem has decentralized architecture. Build scripts, toolchains,
+the pre-built tools for the popular OS (*Mac OS X, Linux (+ARM) and Windows*)
+are organized into the multiple development platforms.
 
-Also it has pre-configured settings for most popular **Embedded Platform
-Boards**. You have no need to specify in :ref:`projectconf` type or frequency of
-MCU, upload protocol or etc. Please use ``board`` option.
+Each development platform contains:
+
+- **PlatformIO Build System** based build scripts for the supported frameworks
+  and SDKs
+- Pre-configured presets for embedded boards
+- Pre-compiled toolchains and relative tools for multiple architectures.
+
+A platform name or its specific version could could be specified using
+:ref:`projectconf_env_platform` option in :ref:`projectconf`.
 
 Embedded
 --------

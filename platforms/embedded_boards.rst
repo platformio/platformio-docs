@@ -18,13 +18,15 @@ Rapid Embedded Development, Continuous and IDE integration in a few
 steps with PlatformIO thanks to built-in project generator for the most
 popular embedded boards and IDE.
 
-* You can list pre-configured boards using :ref:`cmd_boards` command or
-  `PlatformIO Boards Explorer <http://platformio.org/boards>`_
-* For more detailed ``board`` information please scroll tables below by
-  horizontal.
+.. note::
+    * You can list pre-configured boards by :ref:`cmd_boards` command or
+      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+    * For more detailed ``board`` information please scroll tables below by horizontal.
 
-.. contents::
 
+.. contents:: Vendors
+    :local:
+    
 4DSystems
 ~~~~~~~~~
 
@@ -3779,7 +3781,7 @@ ST
       - `ST Nucleo F767ZI <https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
-      - STM32F746ZGT6
+      - STM32F767ZIT6
       - 216 MHz
       - 2048 Kb
       - 512 Kb

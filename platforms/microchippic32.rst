@@ -11,13 +11,16 @@
 
 .. _platform_microchippic32:
 
-Platform ``microchippic32``
-===========================
+Microchip PIC32
+===============
+:ref:`projectconf_env_platform` = ``microchippic32``
+
 Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
 
 For more detailed information please visit `vendor site <http://www.microchip.com/design-centers/32-bit>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------

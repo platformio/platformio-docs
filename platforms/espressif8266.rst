@@ -11,13 +11,16 @@
 
 .. _platform_espressif8266:
 
-Platform ``espressif8266``
-==========================
+Espressif 8266
+==============
+:ref:`projectconf_env_platform` = ``espressif8266``
+
 Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
 For more detailed information please visit `vendor site <https://espressif.com/>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------
@@ -30,6 +33,9 @@ Packages
 
     * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino>`__
       - Arduino Wiring-based Framework (ESP8266 Core)
+
+    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK>`__
+      - ESP8266 SDK based on FreeRTOS
 
     * - `framework-simba <https://github.com/eerimoq/simba>`__
       - Simba Framework

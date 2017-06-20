@@ -11,13 +11,17 @@
 
 .. _framework_energia:
 
-Framework ``energia``
-=====================
+Energia
+=======
+:ref:`projectconf_env_framework` = ``energia``
+
 Energia Wiring-based framework enables pretty much anyone to start easily creating microcontroller-based projects and applications. Its easy-to-use libraries and functions provide developers of all experience levels to start blinking LEDs, buzzing buzzers and sensing sensors more quickly than ever before.
 
 For more detailed information please visit `vendor site <http://energia.nu/reference/>`_.
 
-.. contents::
+
+.. contents:: Contents
+    :local:
 
 Platforms
 ---------

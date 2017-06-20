@@ -95,6 +95,9 @@ Packages
     * - `framework-energiativa <http://energia.nu/reference/>`__
       - Energia Wiring-based Framework (LM4F Core)
 
+    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK>`__
+      - ESP8266 SDK based on FreeRTOS
+
     * - `framework-espidf <https://github.com/espressif/esp-idf>`__
       - Espressif IoT Development Framework
 
@@ -112,6 +115,9 @@ Packages
 
     * - `framework-spl <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890>`__
       - Standard Peripheral Library for STM32 MCUs
+
+    * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897>`__
+      - STM32Cube embedded software libraries
 
     * - `framework-wiringpi <http://wiringpi.com>`__
       - GPIO Interface library for the Raspberry Pi

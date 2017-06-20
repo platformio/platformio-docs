@@ -11,13 +11,17 @@
 
 .. _framework_espidf:
 
-Framework ``espidf``
-====================
+ESP-IDF
+=======
+:ref:`projectconf_env_framework` = ``espidf``
+
 Espressif IoT Development Framework. Official development framework for ESP32.
 
 For more detailed information please visit `vendor site <https://github.com/espressif/esp-idf>`_.
 
-.. contents::
+
+.. contents:: Contents
+    :local:
 
 Platforms
 ---------

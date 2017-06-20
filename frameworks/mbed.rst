@@ -11,13 +11,17 @@
 
 .. _framework_mbed:
 
-Framework ``mbed``
-==================
+mbed
+====
+:ref:`projectconf_env_framework` = ``mbed``
+
 The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
 
 For more detailed information please visit `vendor site <http://mbed.org/>`_.
 
-.. contents::
+
+.. contents:: Contents
+    :local:
 
 Platforms
 ---------
@@ -1233,7 +1237,7 @@ ST
       - `ST Nucleo F767ZI <https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
-      - STM32F746ZGT6
+      - STM32F767ZIT6
       - 216 MHz
       - 2048 Kb
       - 512 Kb

@@ -11,13 +11,17 @@
 
 .. _framework_simba:
 
-Framework ``simba``
-===================
+Simba
+=====
+:ref:`projectconf_env_framework` = ``simba``
+
 Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
 
 For more detailed information please visit `vendor site <http://simba-os.readthedocs.org>`_.
 
-.. contents::
+
+.. contents:: Contents
+    :local:
 
 Platforms
 ---------
@@ -166,6 +170,15 @@ Espressif
 
     * - ``esp12e``
       - `Espressif ESP8266 ESP-12E <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
+      - 80 Kb
+
+    * - ``esp_wroom_02``
+      - `ESP-WROOM-02 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 
       - ESP8266

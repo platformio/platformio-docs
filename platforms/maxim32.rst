@@ -11,13 +11,16 @@
 
 .. _platform_maxim32:
 
-Platform ``maxim32``
-====================
+Maxim 32
+========
+:ref:`projectconf_env_platform` = ``maxim32``
+
 Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
 For more detailed information please visit `vendor site <https://www.maximintegrated.com/en/products/digital/microcontrollers.html>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------

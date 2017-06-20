@@ -11,13 +11,16 @@
 
 .. _platform_espressif32:
 
-Platform ``espressif32``
-========================
+Espressif 32
+============
+:ref:`projectconf_env_platform` = ``espressif32``
+
 Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
 For more detailed information please visit `vendor site <https://espressif.com/>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------

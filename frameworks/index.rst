@@ -27,4 +27,5 @@ Frameworks
     pumbaa
     simba
     spl
+    stm32cube
     wiringpi

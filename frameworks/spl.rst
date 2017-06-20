@@ -11,13 +11,17 @@
 
 .. _framework_spl:
 
-Framework ``spl``
-=================
+SPL
+===
+:ref:`projectconf_env_framework` = ``spl``
+
 The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
 
 For more detailed information please visit `vendor site <http://www.st.com/web/en/catalog/tools/FM147/CL1794/SC961/SS1743?sc=stm32embeddedsoftware>`_.
 
-.. contents::
+
+.. contents:: Contents
+    :local:
 
 Platforms
 ---------

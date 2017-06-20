@@ -11,13 +11,16 @@
 
 .. _platform_atmelsam:
 
-Platform ``atmelsam``
-=====================
+Atmel SAM
+=========
+:ref:`projectconf_env_platform` = ``atmelsam``
+
 Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
 For more detailed information please visit `vendor site <http://www.atmel.com/products/microcontrollers/arm/default.aspx>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------

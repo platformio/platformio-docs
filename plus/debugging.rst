@@ -324,6 +324,9 @@ Frameworks
     * - :ref:`framework_spl`
       - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
 
+    * - :ref:`framework_stm32cube`
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+
 Boards
 ------
 
@@ -1429,7 +1432,7 @@ ST
       - `ST Nucleo F767ZI <https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_stlink-v2-1` (on-board)
-      - STM32F746ZGT6
+      - STM32F767ZIT6
       - 216 MHz
       - 2048 Kb
       - 512 Kb

@@ -11,13 +11,16 @@
 
 .. _platform_intel_arc32:
 
-Platform ``intel_arc32``
-========================
+Intel ARC32
+===========
+:ref:`projectconf_env_platform` = ``intel_arc32``
+
 ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
 For more detailed information please visit `vendor site <http://www.intel.com/content/www/us/en/wearables/wearable-soc.html>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------

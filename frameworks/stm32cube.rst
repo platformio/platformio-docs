@@ -9,100 +9,30 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _platform_ststm32:
+.. _framework_stm32cube:
 
-ST STM32
-========
-:ref:`projectconf_env_platform` = ``ststm32``
+STM32Cube
+=========
+:ref:`projectconf_env_framework` = ``stm32cube``
 
-The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
 
-For more detailed information please visit `vendor site <http://www.st.com/web/en/catalog/mmc/FM141/SC1169?sc=stm32>`_.
+For more detailed information please visit `vendor site <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897>`_.
+
 
 .. contents:: Contents
     :local:
 
-Packages
---------
-
+Platforms
+---------
 .. list-table::
     :header-rows:  1
 
     * - Name
       - Description
 
-    * - `framework-arduinoststm32 <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
-      - Arduino Wiring-based Framework (STM32 Core)
-
-    * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php>`__
-      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
-
-    * - `framework-libopencm3 <http://www.libopencm3.org/>`__
-      - libOpenCM3 Framework
-
-    * - `framework-mbed <http://mbed.org>`__
-      - mbed Framework
-
-    * - `framework-spl <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890>`__
-      - Standard Peripheral Library for STM32 MCUs
-
-    * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897>`__
-      - STM32Cube embedded software libraries
-
-    * - `tool-openocd <http://openocd.org>`__
-      - OpenOCD
-
-    * - `tool-stlink <https://github.com/texane/stlink>`__
-      - ST-Link
-
-    * - `tool-stm32duino <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
-      - STM32Duino Tools
-
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
-      - gcc-arm-embedded
-
-.. warning::
-    **Linux Users**:
-
-    * Ubuntu/Debian users may need to add own "username" to the "dialout"
-      group if they are not "root", doing this issuing a
-      ``sudo usermod -a -G dialout yourusername``.
-    * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-      (an instruction is located in the file).
-    * Raspberry Pi users, please read this article
-      `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
-
-
-    **Windows Users:** Please check that you have correctly installed USB
-    driver from board manufacturer
-
-
-
-Frameworks
-----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_cmsis`
-      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
-
-    * - :ref:`framework_libopencm3`
-      - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
-
-    * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
-
-    * - :ref:`framework_spl`
-      - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
-
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+    * - :ref:`platform_ststm32`
+      - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 Boards
 ------
@@ -110,8 +40,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll tables below by horizontal.
 
 96Boards
 ~~~~~~~~
@@ -227,102 +156,6 @@ Generic
       - 64 Kb
       - 20 Kb
 
-    * - ``genericSTM32F103C8``
-      - `STM32F103C8 (20k RAM. 64k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103C8
-      - 72 MHz
-      - 64 Kb
-      - 20 Kb
-
-    * - ``genericSTM32F103CB``
-      - `STM32F103CB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103cb.html>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103CB
-      - 72 MHz
-      - 128 Kb
-      - 20 Kb
-
-    * - ``genericSTM32F103R8``
-      - `STM32F103R8 (20k RAM. 64 Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103r8.html>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103R8
-      - 72 MHz
-      - 64 Kb
-      - 20 Kb
-
-    * - ``genericSTM32F103RB``
-      - `STM32F103RB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rb.html>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103RB
-      - 72 MHz
-      - 128 Kb
-      - 20 Kb
-
-    * - ``genericSTM32F103RC``
-      - `STM32F103RC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rc.html>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103RC
-      - 72 MHz
-      - 256 Kb
-      - 48 Kb
-
-    * - ``genericSTM32F103RE``
-      - `STM32F103RE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103re.html>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103RE
-      - 72 MHz
-      - 512 Kb
-      - 64 Kb
-
-LeafLabs
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - ID
-      - Name
-      - Platform
-      - Debug
-      - Microcontroller
-      - Frequency
-      - Flash
-      - RAM
-
-    * - ``maple``
-      - `Maple <http://www.leaflabs.com/maple/>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - 
-      - STM32F103RB
-      - 72 MHz
-      - 128 Kb
-      - 17 Kb
-
-    * - ``maple_mini_b20``
-      - `Maple Mini Bootloader 2.0 <http://www.leaflabs.com/maple/>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - 
-      - STM32F103CB
-      - 72 MHz
-      - 128 Kb
-      - 20 Kb
-
-    * - ``maple_mini_origin``
-      - `Maple Mini Original <http://www.leaflabs.com/maple/>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - 
-      - STM32F103CB
-      - 72 MHz
-      - 128 Kb
-      - 17 Kb
-
 MultiTech
 ~~~~~~~~~
 
@@ -337,33 +170,6 @@ MultiTech
       - Frequency
       - Flash
       - RAM
-
-    * - ``mts_dragonfly_f411re``
-      - `MTS Dragonfly <https://developer.mbed.org/platforms/MTS-Dragonfly/>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F411RET6
-      - 100 MHz
-      - 512 Kb
-      - 128 Kb
-
-    * - ``mts_mdot_f405rg``
-      - `MultiTech mDot <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F411RET6
-      - 100 MHz
-      - 512 Kb
-      - 128 Kb
-
-    * - ``mts_mdot_f411re``
-      - `MultiTech mDot F411 <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F411RET6
-      - 100 MHz
-      - 512 Kb
-      - 128 Kb
 
     * - ``xdot_l151cc``
       - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
@@ -704,15 +510,6 @@ ST
       - 2048 Kb
       - 512 Kb
 
-    * - ``nucleo_l011k4``
-      - `ST Nucleo L011K4 <https://developer.mbed.org/platforms/ST-Nucleo-L011K4/>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32L011K4T6
-      - 32 MHz
-      - 16 Kb
-      - 2 Kb
-
     * - ``nucleo_l031k6``
       - `ST Nucleo L031K6 <https://developer.mbed.org/platforms/ST-Nucleo-L031K6/>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -814,29 +611,3 @@ Semtech
       - 32 MHz
       - 256 Kb
       - 32 Kb
-
-u-blox
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - ID
-      - Name
-      - Platform
-      - Debug
-      - Microcontroller
-      - Frequency
-      - Flash
-      - RAM
-
-    * - ``ublox_evk_odin_w2``
-      - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F439ZIY6
-      - 168 MHz
-      - 2048 Kb
-      - 256 Kb
-
-.. include:: ststm32_extra.rst
