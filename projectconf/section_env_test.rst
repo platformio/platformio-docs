@@ -70,3 +70,64 @@ If ``test_port`` isn't specified, then *PlatformIO* will try to detect it
 automatically.
 
 To print all available serial ports use :ref:`cmd_device_list` command.
+
+.. _projectconf_test_transport:
+
+``test_transport``
+^^^^^^^^^^^^^^^^^^
+
+:ref:`unit_testing` engine uses different transports to communicate with a
+target device. By default, it uses ``Serial/UART`` transport provided
+by a :ref:`projectconf_env_framework`. For example, when
+":ref:`projectconf_env_framework` = ``arduino``", the first available
+``Serial`` will be used.
+
+Baud rate should be set to ``9600``.
+
+You can also define ``custom`` transport and implement its interface:
+
+* ``unittest_uart_begin();``
+* ``unittest_uart_putchar(char c);``
+* ``unittest_uart_flush();``
+* ``unittest_uart_end();``
+
+**Example** with ``custom`` transport for :ref:`platform_native` platform
+
+1. Set ``test_transport = custom`` in :ref:`projectconf`
+
+.. code-block:: ini
+
+  [env:mycustomtransport]
+  test_transport = custom
+
+2. Create ``unittest_transport.h`` file in ``project/test`` directory and
+   implement prototypes above
+
+.. code-block:: c
+
+  #ifndef UNITTEST_TRANSPORT_H
+  #define UNITTEST_TRANSPORT_H
+
+  #include <stdio.h>
+
+  void unittest_uart_begin() {
+
+  }
+
+  void unittest_uart_putchar(char c) {
+    putchar(c);
+  }
+
+  void unittest_uart_flush() {
+    fflush(stdout);
+  }
+
+  void unittest_uart_end() {
+
+  }
+
+  #endif
+
+
+
+
