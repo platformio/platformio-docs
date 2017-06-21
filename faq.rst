@@ -76,6 +76,41 @@ on the "Customize" stage, otherwise ``python`` command will not be available.
 
 .. image:: _static/python-installer-add-path.png
 
+
+.. _faq_install_shell_commands:
+
+Install PIO Core Shell Commands
+-------------------------------
+
+:ref:`piocore` consists of 2 standalone tools in a system:
+
+* ``platformio`` or ``pio`` (short alias) - :ref:`userguide`
+* ``piodebuggdb`` - alias of :ref:`cmd_debug`
+
+If you have :ref:`pioide` already installed, you do not need to install
+:ref:`piocore` separately. Just link these tools with your shell:
+
+Unix
+~~~~
+
+Please open system *Terminal* paste these commands
+(**MAY require** administrator access ``sudo``)
+
+.. code-block:: shell
+
+    ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
+    ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
+    ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
+
+Windows
+~~~~~~~
+
+Please read one of these instructions `How do I set or change the PATH system variable? <https://www.google.com.ua/search?q=how+do+i+set+or+change+the+path+system+variable>`_
+
+You need to edit system environment variable called ``Path`` and append
+``C:\Users\{username}\.platformio\penv\Scripts;`` path in the beginning of a
+list (please replace ``{username}`` with your account name).
+
 .. _faq_convert_ino_to_cpp:
 
 Convert Arduino file to C++ manually

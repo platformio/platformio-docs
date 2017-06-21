@@ -14,24 +14,9 @@
 PlatformIO IDE for VScode
 =========================
 
-PlatformIO IDE is the next-generation integrated development environment for IoT:
+.. include:: pioide_summary.rst
 
-* Cross-platform build system without external dependencies to the OS software:
-
-    - 400+ embedded boards
-    - 20+ development platforms
-    - 10+ frameworks
-
-* :ref:`piodebug`
-* :ref:`pio_remote`
-* :ref:`unit_testing`
-* C/C++ Intelligent Code Completion
-* C/C++ Smart Code Linter for rapid professional development
-* Library Manager for the hundreds popular libraries
-* Multi-projects workflow with multiple panes
-* Themes support with dark and light colors
-* Serial Port Monitor
-* Built-in Terminal with :ref:`piocore` and CLI tool (``pio``, ``platformio``)
+---------
 
 `Visual Studio Code <https://code.visualstudio.com>`_ is a lightweight but
 powerful source code editor which runs on your desktop and is available for
@@ -239,6 +224,11 @@ Example:
 
     ; Custom Serial Monitor baud rate
     monitor_baud = 115200
+
+Install Shell Commands
+~~~~~~~~~~~~~~~~~~~~~~
+
+Please navigate to FAQ :ref:`faq_install_shell_commands`.
 
 PIO Account
 ~~~~~~~~~~~

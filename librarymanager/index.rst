@@ -20,7 +20,7 @@ Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
 up-to-date. PlatformIO Library Manager supports
 `Semantic Versioning <http://semver.org>`_ and its rules.
 
-There are 2 options how to find library:
+There are 2 options how to find a library:
 
 * `Web Library Search <http://platformio.org/lib>`__
 * :ref:`Command Line Interface <cmd_lib_search>`
@@ -58,8 +58,13 @@ Please follow to :ref:`cmd_lib_install` for detailed documentation about
 possible values.
 
 .. warning::
-  If some libraries are not visible in :ref:`ide_atom` and Code Completion or
-  Code Linting does not work properly, please perform  ``Menu: PlatformIO >
-  Rebuild C/C++ Project Index (Autocomplete, Linter)``
+
+  If some libraries are not visible in :ref:`pioide` and Code Completion or
+  Code Linting does not work properly, please perform
+
+  * **Atom**: "Menu: PlatformIO > Rebuild C/C++ Project Index (Autocomplete,
+    Linter)"
+  * **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++
+    Project Index"
 
 .. image:: ../_static/platformio-demo-lib.gif

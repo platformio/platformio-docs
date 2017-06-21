@@ -9,50 +9,24 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _ide:
-
-Cloud & Standalone IDE
-======================
-
-PlatformIO IDE
---------------
-
 **PlatformIO IDE is the next-generation integrated development environment for IoT.**
 
-We provide official open-source packages (plugins, extensions) for the most
-popular IDEs and text editors.
+Features
+--------
 
-.. toctree::
-    :maxdepth: 1
+* Cross-platform build system without external dependencies to the OS software:
 
-    Atom <ide/atom>
-    VSCode <ide/vscode>
+    - 400+ embedded boards
+    - 20+ development platforms
+    - 10+ frameworks
 
-.. _ide_cloud:
-
-Cloud IDE
----------
-
-.. toctree::
-    :maxdepth: 1
-
-    ide/cloud9
-    ide/codeanywhere
-    ide/eclipseche
-
-
-Other IDE
----------
-
-.. toctree::
-    :maxdepth: 1
-
-    ide/clion
-    ide/codeblocks
-    ide/eclipse
-    ide/emacs
-    ide/netbeans
-    ide/qtcreator
-    ide/sublimetext
-    ide/vim
-    ide/visualstudio
+* :ref:`piodebug`
+* :ref:`pio_remote`
+* :ref:`unit_testing`
+* C/C++ Intelligent Code Completion
+* C/C++ Smart Code Linter for rapid professional development
+* Library Manager for the hundreds popular libraries
+* Multi-projects workflow with multiple panes
+* Themes support with dark and light colors
+* Serial Port Monitor
+* Built-in Terminal with :ref:`piocore` and CLI tool (``pio``, ``platformio``)

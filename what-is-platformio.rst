@@ -71,7 +71,8 @@ but also on the servers without X Window System. While PlatformIO itself is a
 console application, it can be used in combination with one's favorite
 :ref:`ide` or text editor such as :ref:`ide_atom`, :ref:`ide_clion`,
 :ref:`ide_eclipse`, :ref:`ide_emacs`, :ref:`ide_netbeans`, :ref:`ide_qtcreator`,
-:ref:`ide_sublimetext`, :ref:`ide_vim`, :ref:`ide_visualstudio`, etc.
+:ref:`ide_sublimetext`, :ref:`ide_vim`, :ref:`ide_visualstudio`,
+:ref:`ide_vscode`, etc.
 
 Alright, so PlatformIO can run on different operating systems. But more
 importantly, from development perspective at least, is a list of supported

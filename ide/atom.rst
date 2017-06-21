@@ -14,24 +14,9 @@
 PlatformIO IDE for Atom
 =======================
 
-PlatformIO IDE is the next-generation integrated development environment for IoT:
+.. include:: pioide_features.rst
 
-* Cross-platform build system without external dependencies to the OS software:
-
-    - 400+ embedded boards
-    - 20+ development platforms
-    - 10+ frameworks
-
-* :ref:`piodebug`
-* :ref:`pio_remote`
-* :ref:`unit_testing`
-* C/C++ Intelligent Code Completion
-* C/C++ Smart Code Linter for rapid professional development
-* Library Manager for the hundreds popular libraries
-* Multi-projects workflow with multiple panes
-* Themes support with dark and light colors
-* Serial Port Monitor
-* Built-in Terminal with :ref:`piocore` and CLI tool (``pio``, ``platformio``)
+-------------
 
 `Atom <https://atom.io>`_ is a text editor that's modern, approachable,
 yet hackable to the core—a tool you can customize to do anything but also use
