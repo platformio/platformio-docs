@@ -38,6 +38,11 @@ Demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-
 .. image:: ../_static/pioplus-unit-testing-demo.png
     :target: https://youtu.be/bo3VVRZVKhA
 
+Tutorials
+---------
+
+* :ref:`tutorial_stm32cube_debugging_unit_testing`
+
 Configuration
 -------------
 

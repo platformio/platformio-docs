@@ -12,7 +12,7 @@
 .. _projectconf_section_env_test:
 
 Test options
-~~~~~~~~~~~~
+============
 
 .. contents::
     :local:
@@ -20,7 +20,7 @@ Test options
 .. _projectconf_test_ignore:
 
 ``test_ignore``
-^^^^^^^^^^^^^^^
+---------------
 
 .. versionadded:: 3.0
 .. seealso::
@@ -58,7 +58,7 @@ Also, you can ignore some tests using :option:`platformio test --ignore` command
 .. _projectconf_test_port:
 
 ``test_port``
-^^^^^^^^^^^^^
+-------------
 
 This option specifies communication interface (Serial/UART) between PlatformIO
 :ref:`unit_testing` Engine and target device. For example,
@@ -74,7 +74,7 @@ To print all available serial ports use :ref:`cmd_device_list` command.
 .. _projectconf_test_transport:
 
 ``test_transport``
-^^^^^^^^^^^^^^^^^^
+------------------
 
 :ref:`unit_testing` engine uses different transports to communicate with a
 target device. By default, it uses ``Serial/UART`` transport provided
@@ -91,44 +91,45 @@ You can also define ``custom`` transport and implement its interface:
 * ``unittest_uart_flush();``
 * ``unittest_uart_end();``
 
-**Example** with ``custom`` transport for :ref:`platform_native` platform
+Examples
+~~~~~~~~
 
-1. Set ``test_transport = custom`` in :ref:`projectconf`
+1. Custom transport for :ref:`platform_native` platform
 
-.. code-block:: ini
+  * Set ``test_transport = custom`` in :ref:`projectconf`
 
-  [env:mycustomtransport]
-  platform = native
-  test_transport = custom
+  .. code-block:: ini
 
-2. Create ``unittest_transport.h`` file in ``project/test`` directory and
-   implement prototypes above
+    [env:mycustomtransport]
+    platform = native
+    test_transport = custom
 
-.. code-block:: c
+  * Create ``unittest_transport.h`` file in ``project/test`` directory and
+    implement prototypes above
 
-  #ifndef UNITTEST_TRANSPORT_H
-  #define UNITTEST_TRANSPORT_H
+  .. code-block:: c
 
-  #include <stdio.h>
+    #ifndef UNITTEST_TRANSPORT_H
+    #define UNITTEST_TRANSPORT_H
 
-  void unittest_uart_begin() {
+    #include <stdio.h>
 
-  }
+    void unittest_uart_begin() {
 
-  void unittest_uart_putchar(char c) {
-    putchar(c);
-  }
+    }
 
-  void unittest_uart_flush() {
-    fflush(stdout);
-  }
+    void unittest_uart_putchar(char c) {
+      putchar(c);
+    }
 
-  void unittest_uart_end() {
+    void unittest_uart_flush() {
+      fflush(stdout);
+    }
 
-  }
+    void unittest_uart_end() {
 
-  #endif
+    }
 
+    #endif
 
-
-
+2. :ref:`tutorial_stm32cube_debugging_unit_testing`

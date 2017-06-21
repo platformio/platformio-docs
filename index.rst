@@ -94,6 +94,7 @@ Contents
 
     ide/pioide
     core
+    tutorials/index
 
 .. toctree::
     :caption: Configuration

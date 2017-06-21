@@ -14,7 +14,7 @@
 PlatformIO IDE for VScode
 =========================
 
-.. include:: pioide_summary.rst
+.. include:: pioide_features.rst
 
 ---------
 
