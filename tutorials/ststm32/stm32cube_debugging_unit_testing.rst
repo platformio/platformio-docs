@@ -24,7 +24,8 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_at
     - `Nucleo-F401RE <http://www.st.com/en/evaluation-tools/nucleo-f401re.html>`_ development board
 
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Setting Up the Project
 ~~~~~~~~~~~~~~~~~~~~~~

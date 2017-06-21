@@ -28,7 +28,8 @@ they are fit for use. Unit testing finds problems early in the development cycle
 .. tip::
   **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Demo
 ----

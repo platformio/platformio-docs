@@ -39,7 +39,8 @@ A registration is **FREE**.
 
 .. image:: ../_static/pioplus-debugger-demo.png
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Tutorials
 ---------
