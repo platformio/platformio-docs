@@ -11,9 +11,6 @@
 
 **PlatformIO IDE is the next-generation integrated development environment for IoT.**
 
-Features
---------
-
 * Cross-platform build system without external dependencies to the OS software:
 
     - 400+ embedded boards

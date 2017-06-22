@@ -16,14 +16,13 @@ PlatformIO IDE
 
 .. include:: pioide_features.rst
 
-Integration
------------
+-------------
 
 We provide official packages (plugins, extensions) for the most popular IDEs
 and text editors.
 
 Atom
-~~~~
+----
 
 **Atom** is a text editor that's modern, approachable, yet hackable to the
 core—a tool you can customize to do anything but also use productively without
@@ -35,7 +34,7 @@ ever touching a config file.
     :target: atom.html
 
 VSCode
-~~~~~~
+------
 
 **Visual Studio Code** is a lightweight but powerful source code editor which
 runs on your desktop and is available for Windows, macOS and Linux. It comes

@@ -12,7 +12,7 @@
 .. _tutorial_stm32cube_debugging_unit_testing:
 
 Get started with STM32Cube HAL, debugging and unit testing
-----------------------------------------------------------
+==========================================================
 
 The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_atom` to develop, run and debug a basic blink project with :ref:`framework_stm32cube` framework for ``STM32 Nucleo-F401RE`` board.
 
@@ -28,7 +28,7 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_at
     :local:
 
 Setting Up the Project
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 There are two ways how to create a new project in PlatformIO IDE: using "New Project" button menu on Home Page or
 using ``Menu: PlatformIO > Initialize or Update PlatformIO Project``:
@@ -55,7 +55,7 @@ The default framework used with ``ST Nucleo-F401RE`` board is :ref:`framework_mb
 After these steps, we have a fully configured project that is ready for developing code with :ref:`framework_stm32cube` framework.
 
 Adding Code to the Generated Project
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------
 
 Let's add some actual code to the project. Firstly, we create two main files ``main.c`` and ``main.h`` in the :ref:`projectconf_pio_src_dir` folder. Right click on the ``src`` in the project window:
 
@@ -114,7 +114,7 @@ Add this code to ``main.c``:
 After this step, we created a basic blink project that is ready for compiling and uploading.
 
 Compiling and Uploading the Firmware
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------
 
 Now we can build the project. To compile firmware we can use three options:
 Using Build button on :ref:`atom_ide_platformio_toolbar`, using ``Menu: PlatformIO > Build`` option from top menu, using targets list in bottom left corner or via hotkeys ``cmd-alt-b / ctrl-alt-b / f9``:
@@ -133,7 +133,7 @@ Using Build button on :ref:`atom_ide_platformio_toolbar`, using ``Menu: Platform
 After successful uploading, the green LED2 should start blinking.
 
 Debugging the Firmware
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 :ref:`piodebug` offers the easiest way to debug your board. Just click Debug button on :ref:`atom_ide_platformio_toolbar` or use ``Menu: PlatformIO > Debug > Start new debug session``:
 
@@ -148,7 +148,7 @@ We can walk through the code using control buttons, set breakpoints, add variabl
 .. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-10.png
 
 Writing Unit Tests
-~~~~~~~~~~~~~~~~~~
+------------------
 
 Now let’s write some tests using :ref:`unit_testing` feature that can help us test code directly on the target board. :ref:`unit_testing` engine by default supports only three frameworks: :ref:`framework_arduino`, :ref:`framework_energia` and :ref:`framework_mbed`. Since we decided to use :ref:`framework_stm32cube` we need to implement a custom :ref:`projectconf_test_transport` to print testing results and specify that condition in :ref:`projectconf`:
 
@@ -363,6 +363,11 @@ After processing we should see a detailed report about testing results:
 Congratulations! As we can see from the report, all our tests went successfully!
 
 Conclusion
-~~~~~~~~~~
+----------
 
 Now we have a decent template that we can improve for our next more complex projects.
+
+Project Source Code
+-------------------
+
+The source code of this tutorial is available at https://github.com/platformio/platformio-examples/tree/develop/unit-testing/stm32cube

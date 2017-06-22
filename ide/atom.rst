@@ -25,7 +25,9 @@ productively without ever touching a config file.
 .. image:: ../_static/ide-atom-platformio.png
     :target: ../_images/ide-atom-platformio.png
 
-.. contents::
+
+.. contents:: Contents
+    :local:
 
 Installation
 ------------

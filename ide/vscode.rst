@@ -27,7 +27,8 @@ languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unit
 .. image:: ../_static/ide/vscode/platformio-ide-vscode.png
     :target: https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Installation
 ------------
