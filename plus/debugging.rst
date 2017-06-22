@@ -267,6 +267,21 @@ Custom debugging configuration:
       -f
       $PLATFORMIO_HOME_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg
 
+4. Using pyOCD for CMSIS-DAP based boards
+
+Firstly, please install `pyOCD <https://github.com/mbedmicro/pyOCD>`__ and
+check that ``pyocd-gdbserver --version`` command works.
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ...
+    board = ...
+    framework = mbed
+    debug_tool = custom
+    debug_port = :3333
+    debug_server = pyocd-gdbserver
+
 .. _debugging_platforms:
 
 Platforms
