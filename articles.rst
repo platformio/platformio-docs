@@ -23,6 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2017
 ^^^^
 
+* Jun 23, 2017 - **Naresh Krish** - `Home Automation Using Wiscore, OpenHab and PlatformIO <https://www.hackster.io/naresh-krish/home-automation-using-wiscore-and-openhab-1ec6e4>`_
 * Apr 12, 2017 - **Jane Elizabeth** - `Let's talk IoT: PlatformIO puts developers back in the driver's seat <https://jaxenter.com/open-source-iot-platformio-133282.html>`_
 * Mar 13, 2017 - **Ryan Mulligan** - `Continuous testing for Arduino libraries using PlatformIO and Travis CI <https://www.pololu.com/blog/654/continuous-testing-for-arduino-libraries-using-platformio-and-travis-ci>`_
 * Feb 23, 2017 - **Bastiaan Visee** - `Using PlatformIO for your Arduino projects <http://lichtsignaal.nl/2017/02/23/using-platformio-for-your-arduino-projects/>`_
