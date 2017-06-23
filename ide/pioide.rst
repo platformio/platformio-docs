@@ -30,7 +30,7 @@ ever touching a config file.
 
 :ref:`Install PlatformIO IDE for Atom <ide_atom>`
 
-.. image:: ../_static/ide-atom-platformio.png
+.. image:: ../_static/ide/atom/ide-atom-platformio.png
     :target: atom.html
 
 VSCode

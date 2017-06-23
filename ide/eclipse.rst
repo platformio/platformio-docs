@@ -27,7 +27,7 @@ registers, and disassembly viewers.
 Refer to the `CDT Documentation <https://eclipse.org/cdt/documentation.php>`_
 page for more detailed information.
 
-.. image:: ../_static/ide-platformio-eclipse.png
+.. image:: ../_static/ide/eclipse/ide-platformio-eclipse.png
     :target: ../_images/ide-platformio-eclipse.png
 
 .. contents:: Contents

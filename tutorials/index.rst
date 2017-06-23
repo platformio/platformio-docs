@@ -14,14 +14,6 @@
 Tutorials
 =========
 
-Level
------
-
-Intermediate
-~~~~~~~~~~~~
-
-* :ref:`tutorial_stm32cube_debugging_unit_testing`
-
 Platforms
 ---------
 
@@ -49,6 +41,6 @@ All
 Project Examples
 ----------------
 
-Pre-configured projects with source code are located in PlatformIO GitHub repository
-
-* `https://github.com/platformio/platformio-examples <https://github.com/platformio/platformio-examples>`_
+Pre-configured projects with source code are located in
+`PlatformIO Examples <https://github.com/platformio/platformio-examples>`_
+repository.

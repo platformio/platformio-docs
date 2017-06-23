@@ -26,7 +26,8 @@ page for more detailed information.
 .. image:: ../_static/ide-platformio-clion.png
     :target: ../_images/ide-platformio-clion.png
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Integration
 -----------

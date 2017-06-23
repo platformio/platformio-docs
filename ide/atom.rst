@@ -22,7 +22,7 @@ PlatformIO IDE for Atom
 yet hackable to the core—a tool you can customize to do anything but also use
 productively without ever touching a config file.
 
-.. image:: ../_static/ide-atom-platformio.png
+.. image:: ../_static/ide/atom/ide-atom-platformio.png
     :target: ../_images/ide-atom-platformio.png
 
 
