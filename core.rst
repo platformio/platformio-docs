@@ -48,6 +48,8 @@ such as :ref:`pioide`. In other words, they wrap **PlatformIO Core** with own GU
 .. toctree::
     :maxdepth: 2
 
+
+    userguide/demo
     installation
     quickstart
     userguide/index

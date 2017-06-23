@@ -14,8 +14,41 @@
 Tutorials
 =========
 
+Level
+-----
+
+Intermediate
+~~~~~~~~~~~~
+
+* :ref:`tutorial_stm32cube_debugging_unit_testing`
+
+Platforms
+---------
+
+ST STM32
+~~~~~~~~
+
+* :ref:`tutorial_stm32cube_debugging_unit_testing`
+
+Frameworks
+----------
+
+STM32Cube
+~~~~~~~~~
+
+* :ref:`tutorial_stm32cube_debugging_unit_testing`
+
+All
+----
+
 .. toctree::
     :maxdepth: 1
-    :caption: ST STM32
 
     ststm32/stm32cube_debugging_unit_testing
+
+Project Examples
+----------------
+
+Pre-configured projects with source code are located in PlatformIO GitHub repository
+
+* `https://github.com/platformio/platformio-examples <https://github.com/platformio/platformio-examples>`_

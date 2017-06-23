@@ -86,7 +86,6 @@ Contents
     :maxdepth: 2
 
     what-is-platformio
-    demo
 
 .. toctree::
     :caption: Getting Started

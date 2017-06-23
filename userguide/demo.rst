@@ -9,24 +9,18 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _demo:
+.. _piocore_demo:
 
-Demo & Projects
-===============
+Demo
+====
 
 .. contents:: Contents
     :local:
 
-Project Examples
-----------------
-
-Pre-configured demo projects are located in PlatformIO GitHub repository
-`https://github.com/platformio/platformio-examples <https://github.com/platformio/platformio-examples>`_.
-
 "Blink Project"
 ---------------
 
-.. image:: _static/platformio-demo-wiring.gif
+.. image:: ../_static/platformio-demo-wiring.gif
 
 Used in demo
 ~~~~~~~~~~~~
@@ -38,7 +32,7 @@ Used in demo
 Platform Manager
 ----------------
 
-.. image:: _static/platformio-demo-platforms.gif
+.. image:: ../_static/platformio-demo-platforms.gif
 
 Used in demo
 ~~~~~~~~~~~~
@@ -52,7 +46,7 @@ Used in demo
 Library Manager
 ---------------
 
-.. image:: _static/platformio-demo-lib.gif
+.. image:: ../_static/platformio-demo-lib.gif
 
 Used in demo
 ~~~~~~~~~~~~
@@ -70,7 +64,7 @@ Used in demo
 Over-the-Air update for ESP8266
 -------------------------------
 
-.. image:: _static/platformio-demo-ota-esp8266.jpg
+.. image:: ../_static/platformio-demo-ota-esp8266.jpg
     :target: https://www.youtube.com/watch?v=lXchL3hpDO4
 
 Used in demo
