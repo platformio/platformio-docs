@@ -28,9 +28,10 @@ Refer to the `CDT Documentation <https://eclipse.org/cdt/documentation.php>`_
 page for more detailed information.
 
 .. image:: ../_static/ide-platformio-eclipse.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-eclipse.png
+    :target: ../_images/ide-platformio-eclipse.png
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Integration
 -----------
@@ -103,8 +104,20 @@ Live Integration
 
 Eclipse Virtual IoT Meetup: `PlatformIO: a cross-platform IoT solution to build them all! <http://www.meetup.com/Virtual-IoT/events/229964142/>`_
 
-.. image:: ../_static/ide-eclipse-virtualiot.jpg
+.. image:: ../_static/ide/eclipse/ide-eclipse-virtualiot.jpg
     :target: https://www.youtube.com/watch?v=6t7UbX812Yw
+
+Debugging
+---------
+
+A debugging feature is provided by :ref:`piodebug` and new debug configuration
+named "PlatformIO Debugger" is created. No need to do extra configuration steps!
+
+1. Build a project first time or after "Clean" operation using
+   ``PlatformIO: Build`` target
+2. Launch debugger via "Menu: Debug" or "Bug Icon" button on Tool Bar.
+3. Wait for a while, PlatformIO will prepare project for debugging and
+   session will be started soon.
 
 Articles / Manuals
 ------------------
