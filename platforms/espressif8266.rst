@@ -497,7 +497,7 @@ WEMOS
       - 
       - ESP8266
       - 80 MHz
-      - 1024 Kb
+      - 4096 Kb
       - 80 Kb
 
     * - ``d1_mini_lite``
