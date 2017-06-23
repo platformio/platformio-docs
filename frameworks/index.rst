@@ -15,7 +15,7 @@ Frameworks
 ==========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     arduino
     artik-sdk
