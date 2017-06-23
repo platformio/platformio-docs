@@ -11,8 +11,8 @@
 
 .. _tutorial_stm32cube_debugging_unit_testing:
 
-Get started with STM32Cube HAL, debugging and unit testing
-==========================================================
+Get started with STM32Cube HAL and Nucleo-F401RE: debugging and unit testing
+============================================================================
 
 The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_atom` to develop, run and debug a basic blink project with :ref:`framework_stm32cube` framework for ``STM32 Nucleo-F401RE`` board.
 
