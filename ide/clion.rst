@@ -57,15 +57,21 @@ Then:
 2. Import this project via ``Menu: File > Import Project``
    and specify root directory where is located :ref:`projectconf`
 3. Open source file from ``src`` directory
-4. Build project (*DO NOT RUN*): ``Menu: Run > Build``.
+4. Build project (*DO NOT* use "Run" button, see marks on the screenshot above):
+   ``Menu: Run > Build``.
 
 .. warning::
 
-    See know issue: :ref:`ide_clion_knownissues_inopde_not_supported` and how
+    1. :ref:`piocore` **DOES NOT** depend on ``Cmake``, it has own cross-platform
+       Build System. All data related to build flags and source code filtering
+       should be specified using :ref:`projectconf_section_env_build` in
+       :ref:`projectconf`.
+
+    2. See know issue: :ref:`ide_clion_knownissues_inopde_not_supported` and how
     to resolve it.
 
 There are 6 predefined targets for building (*NOT FOR RUNNING*, see marks on
-the screenshot below):
+the screenshot above):
 
 * ``PLATFORMIO_BUILD`` - Build project without auto-uploading
 * ``PLATFORMIO_UPLOAD`` - Build and upload (if no errors)
