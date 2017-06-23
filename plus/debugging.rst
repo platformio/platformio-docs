@@ -302,10 +302,13 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
+
+    * - :ref:`platform_wiznet7500`
+      - The IOP (Internet Offload Processor) W7500  is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -1206,6 +1209,15 @@ ST
       - 1024 Kb
       - 128 Kb
 
+    * - ``disco_f411ve``
+      - `ST 32F411EDISCOVERY <http://www.st.com/en/evaluation-tools/32f411ediscovery.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - STM32F411VET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``disco_f429zi``
       - `ST 32F429IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259090>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -1250,6 +1262,15 @@ ST
       - 32 MHz
       - 64 Kb
       - 8 Kb
+
+    * - ``disco_l072cz_lrwan1``
+      - `ST DISCO-L072CZ-LRWAN1 <https://developer.mbed.org/platforms/ST-Discovery-LRWAN1/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - STM32L072CZ
+      - 32 MHz
+      - 192 Kb
+      - 20 Kb
 
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515>`_
@@ -1412,6 +1433,15 @@ ST
       - 100 MHz
       - 512 Kb
       - 128 Kb
+
+    * - ``nucleo_f412zg``
+      - `ST Nucleo F412ZG <https://developer.mbed.org/platforms/ST-Nucleo-F411RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``nucleo_f429zi``
       - `ST Nucleo F429ZI <https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/>`_
@@ -1853,6 +1883,48 @@ TI
       - 120 MHz
       - 1024 Kb
       - 256 Kb
+
+WIZNet
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``wizwiki_w7500``
+      - `WIZNet WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/>`_
+      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - WIZNET7500
+      - 48 MHz
+      - 128 Kb
+      - 48 Kb
+
+    * - ``wizwiki_w7500eco``
+      - `WIZNet WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/>`_
+      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - WIZNET7500ECO
+      - 48 MHz
+      - 128 Kb
+      - 48 Kb
+
+    * - ``wizwiki_w7500p``
+      - `WIZNet WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/>`_
+      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - WIZNET7500P
+      - 48 MHz
+      - 128 Kb
+      - 48 Kb
 
 u-blox
 ~~~~~~

@@ -32,7 +32,7 @@ Embedded
 --------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     atmelavr
     atmelsam
@@ -51,12 +51,13 @@ Embedded
     teensy
     timsp430
     titiva
+    wiznet7500
 
 Desktop
 -------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     native
     linux_arm

@@ -49,6 +49,9 @@ Platforms
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
+    * - :ref:`platform_wiznet7500`
+      - The IOP (Internet Offload Processor) W7500  is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
+
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
 
@@ -1044,6 +1047,15 @@ ST
       - 64 Kb
       - 8 Kb
 
+    * - ``disco_l072cz_lrwan1``
+      - `ST DISCO-L072CZ-LRWAN1 <https://developer.mbed.org/platforms/ST-Discovery-LRWAN1/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L072CZ
+      - 32 MHz
+      - 192 Kb
+      - 20 Kb
+
     * - ``disco_l476vg``
       - `ST 32L476GDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF261635>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -1196,6 +1208,15 @@ ST
       - 100 MHz
       - 512 Kb
       - 128 Kb
+
+    * - ``nucleo_f412zg``
+      - `ST Nucleo F412ZG <https://developer.mbed.org/platforms/ST-Nucleo-F411RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``nucleo_f429zi``
       - `ST Nucleo F429ZI <https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/>`_
@@ -1607,6 +1628,48 @@ Teensy
       - 72 MHz
       - 256 Kb
       - 64 Kb
+
+WIZNet
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``wizwiki_w7500``
+      - `WIZNet WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/>`_
+      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - :ref:`Yes <piodebug>`
+      - WIZNET7500
+      - 48 MHz
+      - 128 Kb
+      - 48 Kb
+
+    * - ``wizwiki_w7500eco``
+      - `WIZNet WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/>`_
+      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - :ref:`Yes <piodebug>`
+      - WIZNET7500ECO
+      - 48 MHz
+      - 128 Kb
+      - 48 Kb
+
+    * - ``wizwiki_w7500p``
+      - `WIZNet WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/>`_
+      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - :ref:`Yes <piodebug>`
+      - WIZNET7500P
+      - 48 MHz
+      - 128 Kb
+      - 48 Kb
 
 u-blox
 ~~~~~~

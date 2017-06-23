@@ -174,7 +174,7 @@ MultiTech
     * - ``xdot_l151cc``
       - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      -
+      - 
       - STM32L151CCU6
       - 32 MHz
       - 256 Kb
@@ -258,6 +258,15 @@ ST
       - 1024 Kb
       - 128 Kb
 
+    * - ``disco_f411ve``
+      - `ST 32F411EDISCOVERY <http://www.st.com/en/evaluation-tools/32f411ediscovery.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F411VET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``disco_f429zi``
       - `ST 32F429IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259090>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -302,6 +311,15 @@ ST
       - 32 MHz
       - 64 Kb
       - 8 Kb
+
+    * - ``disco_l072cz_lrwan1``
+      - `ST DISCO-L072CZ-LRWAN1 <https://developer.mbed.org/platforms/ST-Discovery-LRWAN1/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L072CZ
+      - 32 MHz
+      - 192 Kb
+      - 20 Kb
 
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515>`_
@@ -464,6 +482,15 @@ ST
       - 100 MHz
       - 512 Kb
       - 128 Kb
+
+    * - ``nucleo_f412zg``
+      - `ST Nucleo F412ZG <https://developer.mbed.org/platforms/ST-Nucleo-F411RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``nucleo_f429zi``
       - `ST Nucleo F429ZI <https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/>`_

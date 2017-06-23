@@ -132,7 +132,7 @@ Adafruit
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
     * - ``flora8``
@@ -246,8 +246,8 @@ Aiyarafun
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
-      - 112 Kb
+      - 1280 Kb
+      - 288 Kb
 
 April Brother
 ~~~~~~~~~~~~~
@@ -270,7 +270,7 @@ April Brother
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Arduboy
@@ -936,7 +936,31 @@ DFRobot
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
+      - 288 Kb
+
+DOIT
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``esp32doit-devkit-v1``
+      - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
       - 288 Kb
 
 Delta
@@ -1236,6 +1260,30 @@ DycodeX
       - 4096 Kb
       - 80 Kb
 
+ESP32vn
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``esp32vn-iot-uno``
+      - `ESP32vn IoT Uno <https://esp32.vn/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1024 Kb
+      - 288 Kb
+
 ESPert
 ~~~~~~
 
@@ -1314,7 +1362,7 @@ Electronic SweetPeas
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Elektor Labs
@@ -1512,7 +1560,7 @@ Espressif
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
     * - ``esp8285``
@@ -2031,7 +2079,7 @@ Hornbill
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
     * - ``hornbill32minima``
@@ -2040,7 +2088,7 @@ Hornbill
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Intel
@@ -2088,7 +2136,7 @@ IntoRobot
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 JKSoft
@@ -2283,7 +2331,7 @@ MakerAsia
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Maxim
@@ -2814,7 +2862,7 @@ NodeMCU
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
     * - ``nodemcuv2``
@@ -2847,7 +2895,7 @@ Noduino
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Nordic
@@ -2955,7 +3003,7 @@ Onehorse
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 OpenBCI
@@ -3534,6 +3582,15 @@ ST
       - 1024 Kb
       - 128 Kb
 
+    * - ``disco_f411ve``
+      - `ST 32F411EDISCOVERY <http://www.st.com/en/evaluation-tools/32f411ediscovery.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F411VET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``disco_f429zi``
       - `ST 32F429IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259090>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -3578,6 +3635,15 @@ ST
       - 32 MHz
       - 64 Kb
       - 8 Kb
+
+    * - ``disco_l072cz_lrwan1``
+      - `ST DISCO-L072CZ-LRWAN1 <https://developer.mbed.org/platforms/ST-Discovery-LRWAN1/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L072CZ
+      - 32 MHz
+      - 192 Kb
+      - 20 Kb
 
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515>`_
@@ -3740,6 +3806,15 @@ ST
       - 100 MHz
       - 512 Kb
       - 128 Kb
+
+    * - ``nucleo_f412zg``
+      - `ST Nucleo F412ZG <https://developer.mbed.org/platforms/ST-Nucleo-F411RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``nucleo_f429zi``
       - `ST Nucleo F429ZI <https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/>`_
@@ -4437,7 +4512,7 @@ SparkFun Electronics
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 SweetPea
@@ -4851,8 +4926,50 @@ WEMOS
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
+
+WIZNet
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``wizwiki_w7500``
+      - `WIZNet WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/>`_
+      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - :ref:`Yes <piodebug>`
+      - WIZNET7500
+      - 48 MHz
+      - 128 Kb
+      - 48 Kb
+
+    * - ``wizwiki_w7500eco``
+      - `WIZNet WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/>`_
+      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - :ref:`Yes <piodebug>`
+      - WIZNET7500ECO
+      - 48 MHz
+      - 128 Kb
+      - 48 Kb
+
+    * - ``wizwiki_w7500p``
+      - `WIZNet WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/>`_
+      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - :ref:`Yes <piodebug>`
+      - WIZNET7500P
+      - 48 MHz
+      - 128 Kb
+      - 48 Kb
 
 Wicked Device
 ~~~~~~~~~~~~~
@@ -4908,7 +5025,7 @@ Widora
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 chipKIT

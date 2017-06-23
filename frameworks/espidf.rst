@@ -63,7 +63,7 @@ Adafruit
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Aiyarafun
@@ -87,8 +87,8 @@ Aiyarafun
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
-      - 112 Kb
+      - 1280 Kb
+      - 288 Kb
 
 April Brother
 ~~~~~~~~~~~~~
@@ -111,7 +111,7 @@ April Brother
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 DFRobot
@@ -131,6 +131,54 @@ DFRobot
 
     * - ``firebeetle32``
       - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+DOIT
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``esp32doit-devkit-v1``
+      - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+ESP32vn
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``esp32vn-iot-uno``
+      - `ESP32vn IoT Uno <https://esp32.vn/>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32
@@ -159,7 +207,7 @@ Electronic SweetPeas
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Espressif
@@ -183,7 +231,7 @@ Espressif
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Hornbill
@@ -207,7 +255,7 @@ Hornbill
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
     * - ``hornbill32minima``
@@ -216,7 +264,7 @@ Hornbill
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 IntoRobot
@@ -240,7 +288,7 @@ IntoRobot
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 MakerAsia
@@ -264,7 +312,7 @@ MakerAsia
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 NodeMCU
@@ -288,7 +336,7 @@ NodeMCU
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Noduino
@@ -312,7 +360,7 @@ Noduino
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Onehorse
@@ -336,7 +384,7 @@ Onehorse
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 SparkFun Electronics
@@ -360,7 +408,7 @@ SparkFun Electronics
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 WEMOS
@@ -384,7 +432,7 @@ WEMOS
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Widora
@@ -408,5 +456,5 @@ Widora
       - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
