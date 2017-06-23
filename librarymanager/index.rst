@@ -20,51 +20,11 @@ Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
 up-to-date. PlatformIO Library Manager supports
 `Semantic Versioning <http://semver.org>`_ and its rules.
 
-There are 2 options how to find a library:
+.. toctree::
+    :maxdepth: 2
 
-* `Web Library Search <http://platformio.org/lib>`__
-* :ref:`Command Line Interface <cmd_lib_search>`
-
-You can manage different library storages using
-:option:`platformio lib --global` or  :option:`platformio lib --storage-dir`
-options. If you change current working directory in terminal to project folder,
-then :ref:`platformio lib <cmd_lib>` command will manage automatically dependency
-storage in :ref:`projectconf_pio_libdeps_dir`.
-
-Project dependencies
---------------------
-
-*PlatformIO Library Manager* allows to specify project dependencies
-(:ref:`projectconf_lib_deps`) that will be installed automatically per project
-before environment processing. You do not need to install libraries manually.
-The only one simple step is to define dependencies in :ref:`projectconf`.
-You can use library ID, Name or even repository URL. For example,
-
-.. code-block:: ini
-
-  [env:myenv]
-  platform = ...
-  framework = ...
-  board = ...
-  lib_deps =
-    13
-    PubSubClient
-    ArduinoJson@~5.6,!=5.4
-    https://github.com/gioblu/PJON.git#v2.0
-    https://github.com/me-no-dev/ESPAsyncTCP.git
-    https://github.com/adafruit/DHT-sensor-library/archive/master.zip
-
-Please follow to :ref:`cmd_lib_install` for detailed documentation about
-possible values.
-
-.. warning::
-
-  If some libraries are not visible in :ref:`pioide` and Code Completion or
-  Code Linting does not work properly, please perform
-
-  * **Atom**: "Menu: PlatformIO > Rebuild C/C++ Project Index (Autocomplete,
-    Linter)"
-  * **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++
-    Project Index"
-
-.. image:: ../_static/platformio-demo-lib.gif
+    quickstart
+    User Guide <../userguide/lib/index>
+    ldf
+    config
+    creating

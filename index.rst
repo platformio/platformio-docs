@@ -107,9 +107,10 @@ Contents
     :caption: Instruments
     :maxdepth: 3
 
+    librarymanager/index
     platforms/index
-    platforms/embedded_boards
     frameworks/index
+    platforms/embedded_boards
     platforms/custom_platform_and_board
 
 .. toctree::
@@ -119,16 +120,6 @@ Contents
     plus/pio-remote
     plus/debugging
     plus/unit-testing
-
-.. toctree::
-    :caption: Library Manager
-    :maxdepth: 2
-
-    Quickstart <librarymanager/index>
-    User Guide <userguide/lib/index>
-    librarymanager/ldf
-    librarymanager/config
-    librarymanager/creating
 
 .. toctree::
     :caption: Integration
