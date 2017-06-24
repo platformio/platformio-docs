@@ -16,7 +16,7 @@
 PIO Unified Debugger
 ====================
 
-**It Just Works. Easier than ever before!**
+**It Simply Works. Easier than ever before!**
 
 .. versionadded:: 3.4 (`PlatformIO Plus <https://pioplus.com>`__)
 
@@ -119,7 +119,11 @@ including OEM versions and on-board solutions. This popularity stems from the
 unparalleled performance, extensive feature set, large number of supported
 CPUs, and compatibility with all popular development environments.
 
-Also, see :ref:`debugging_tool_custom` debugging configuration.
+* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/>`_
+* `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php>`__
+
+Also, see :ref:`debugging_tool_custom` debugging configuration with
+J-Link GDB Server.
 
 `More details <https://www.segger.com/jlink-debug-probes.html>`__
 
@@ -217,74 +221,84 @@ Custom debugging configuration:
 
 **Examples**
 
-1. `Segger J-Link <https://www.segger.com/jlink-st-link.html>`_ probe and ST Nucleo F446RE board in pair with `J-Link GDB Server <https://www.segger.com/jlink-gdb-server.html>`_:
+1. Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
 
-.. code-block:: ini
+  * Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/>`_
+  * `Convert ST-LINK On-Board Into a J-Link <https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/>`_
 
-    [env:debug_jlink]
-    platform = ststm32
-    framework = mbed
-    board = nucleo_f446re
-    debug_port = 2331
-    debug_tool = custom
-    debug_init_cmds =
-      target remote :$DEBUG_PORT
-      file "$PROG_PATH"
-      load
-      $INIT_BREAK
-      mon reset
-      mon halt
-    debug_server =
-      /set/path/to/JLinkGDBServerCL
-      -singlerun
-      -select
-      USB
-      -device
-      STM32F446RE
-      -port
-      $DEBUG_PORT
+  .. note::
 
+    You can use configuration below in pair with other boards, not only with ST
+    Nucleo F446RE. In this case, please replace ``STM32F446RE`` with
+    your own device name in ``debug_server`` option.
+
+    See full list with `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php>`__.
+
+
+  .. code-block:: ini
+
+      [env:debug_jlink]
+      platform = ststm32
+      framework = mbed
+      board = nucleo_f446re
+      debug_port = 2331
+      debug_tool = custom
+      debug_init_cmds =
+        target remote :$DEBUG_PORT
+        file "$PROG_PATH"
+        load
+        $INIT_BREAK
+        mon reset
+        mon halt
+      debug_server =
+        /set/path/to/JLinkGDBServerCL
+        -singlerun
+        -select
+        USB
+        -device
+        STM32F446RE
+        -port
+        $DEBUG_PORT
 
 2. On-board ST-Link V2/V2-1 in pair with `ST-Util GDB Server <https://github.com/texane/stlink>`_:
 
-.. code-block:: ini
+  .. code-block:: ini
 
-    [env:debug]
-    platform = ststm32
-    framework = mbed
-    board = ...
-    debug_tool = custom
-    debug_port = :4242
-    debug_server = $PLATFORMIO_HOME_DIR/packages/tool-stlink/st-util
+      [env:debug]
+      platform = ststm32
+      framework = mbed
+      board = ...
+      debug_tool = custom
+      debug_port = :4242
+      debug_server = $PLATFORMIO_HOME_DIR/packages/tool-stlink/st-util
 
 3. On-board ST-Link V2/V2-1 in pair with `OpenOCD GDB Server <http://openocd.org>`_:
 
-.. code-block:: ini
+  .. code-block:: ini
 
-    [env:debug]
-    platform = ststm32
-    framework = mbed
-    board = ...
-    debug_tool = custom
-    debug_server =
-      $PLATFORMIO_HOME_DIR/packages/tool-openocd/bin/openocd
-      -f
-      $PLATFORMIO_HOME_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg
+      [env:debug]
+      platform = ststm32
+      framework = mbed
+      board = ...
+      debug_tool = custom
+      debug_server =
+        $PLATFORMIO_HOME_DIR/packages/tool-openocd/bin/openocd
+        -f
+        $PLATFORMIO_HOME_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg
 
 4. Using pyOCD for CMSIS-DAP based boards
 
-Firstly, please install `pyOCD <https://github.com/mbedmicro/pyOCD>`__ and
-check that ``pyocd-gdbserver --version`` command works.
+  Firstly, please install `pyOCD <https://github.com/mbedmicro/pyOCD>`__ and
+  check that ``pyocd-gdbserver --version`` command works.
 
-.. code-block:: ini
+  .. code-block:: ini
 
-    [env:debug]
-    platform = ...
-    board = ...
-    framework = mbed
-    debug_tool = custom
-    debug_port = :3333
-    debug_server = pyocd-gdbserver
+      [env:debug]
+      platform = ...
+      board = ...
+      framework = mbed
+      debug_tool = custom
+      debug_server = pyocd-gdbserver
 
 .. _debugging_platforms:
 
