@@ -14,6 +14,10 @@
 Library options
 ~~~~~~~~~~~~~~~
 
+.. versionadded:: 3.0
+.. seealso::
+    Please make sure to read :ref:`ldf` guide first.
+
 .. contents::
     :local:
 
@@ -22,7 +26,6 @@ Library options
 ``lib_deps``
 ^^^^^^^^^^^^
 
-.. versionadded:: 3.0
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
@@ -95,7 +98,6 @@ Example:
 ``lib_extra_dirs``
 ^^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 3.0
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
@@ -136,7 +138,6 @@ dependencies (``#include`` directives). See :ref:`ldf_mode` for details.
 ``lib_compat_mode``
 ^^^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 3.0
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
