@@ -46,10 +46,38 @@ Options
 Process specified environments. More details :option:`platformio run --environment`
 
 .. option::
+    -f, --filter
+
+Process only the tests where the name matches specified patterns. More than one
+pattern is allowed. If you need to filter some tests for a specific
+environment, please take a look at :ref:`projectconf_test_filter` option from
+:ref:`projectconf`.
+
+.. list-table::
+    :header-rows:  1
+
+    * - Pattern
+      - Meaning
+
+    * - ``*``
+      - matches everything
+
+    * - ``?``
+      - matches any single character
+
+    * - ``[seq]``
+      - matches any character in seq
+
+    * - ``[!seq]``
+      - matches any character not in seq
+
+For example, ``platformio test --filter "mytest*" -i "test[13]"``
+
+.. option::
     -i, --ignore
 
 Ignore tests where the name matches specified patterns. More than one
-pattern is allowed. If you need to ignore some tests for the specific
+pattern is allowed. If you need to ignore some tests for a specific
 environment, please take a look at :ref:`projectconf_test_ignore` option from
 :ref:`projectconf`.
 

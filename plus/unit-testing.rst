@@ -49,6 +49,7 @@ Configuration
 
 |PIOUTE| can be configured from :ref:`projectconf`
 
+* :ref:`projectconf_test_filter`
 * :ref:`projectconf_test_ignore`
 * :ref:`projectconf_test_port`
 * :ref:`projectconf_test_transport`

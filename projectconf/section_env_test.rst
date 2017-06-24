@@ -14,20 +14,56 @@
 Test options
 ============
 
+.. versionadded:: 3.0
+.. seealso::
+    Please make sure to read :ref:`unit_testing` guide first.
+
 .. contents::
     :local:
+
+.. _projectconf_test_filter:
+
+``test_filter``
+---------------
+
+Process only the :ref:`unit_testing` tests where the name matches specified
+patterns. Multiple names are allowed. *Please separate them using comma+space ", "*.
+
+Also, you can filter some tests using :option:`platformio test --filter` command.
+
+.. list-table::
+    :header-rows:  1
+
+    * - Pattern
+      - Meaning
+
+    * - ``*``
+      - matches everything
+
+    * - ``?``
+      - matches any single character
+
+    * - ``[seq]``
+      - matches any character in seq
+
+    * - ``[!seq]``
+      - matches any character not in seq
+
+**Example**
+
+.. code-block:: ini
+
+  [env:myenv]
+  test_filter = footest, bartest_*, test[13]
 
 .. _projectconf_test_ignore:
 
 ``test_ignore``
 ---------------
 
-.. versionadded:: 3.0
-.. seealso::
-    Please make sure to read :ref:`unit_testing` guide first.
-
 Ignore :ref:`unit_testing` tests where the name matches specified patterns.
 Multiple names are allowed. *Please separate them using comma+space ", "*.
+
 Also, you can ignore some tests using :option:`platformio test --ignore` command.
 
 .. list-table::
