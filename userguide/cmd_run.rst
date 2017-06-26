@@ -50,6 +50,10 @@ You can also specify which environments should be processed by default using
 
 Process specified targets.
 
+.. note::
+    You can configure default targets per project environment using
+    :ref:`projectconf_targets` option in :ref:`projectconf`.
+
 Built-in targets:
 
 * Processing
@@ -62,6 +66,12 @@ Built-in targets:
     + ``buildfs`` :ref:`platform_espressif_uploadfs`
     + ``uploadfs`` :ref:`platform_espressif_uploadfs`
     + ``size`` print the size of the sections in a firmware/program
+
+* Device
+
+    + ``monitor`` automatically start :ref:`cmd_device_monitor` after success
+      build operation. You can configure monitor using
+      :ref:`projectconf_section_env_monitor`.
 
 * Service
 

@@ -71,3 +71,35 @@ pre-fill options described above with appropriate values.
 
 You can find the ``board`` type in *Boards* section of each :ref:`platforms` or
 using `PlatformIO Embedded Boards Explorer <http://platformio.org/boards>`_.
+
+.. _projectconf_targets:
+
+``targets``
+^^^^^^^^^^^
+
+A list with targets which will be processed by :ref:`cmd_run` command by
+default. You can enter more than one target, please split them with
+comma+space **", "**.
+
+The list with available targets is located in :option:`platformio run --target`.
+
+**Example**: build a project, upload firmware and start :ref:`Serial Monitor <cmd_device_monitor>` automatically.
+
+.. code-block:: ini
+
+   [env:upload_and_monitor]
+   targets = upload, monitor
+
+
+**Tip!** You can use these targets like an option to
+:option:`platformio run --target` command. For example:
+
+.. code-block:: bash
+
+    # clean project
+    platformio run -t clean
+
+    # dump current build environment
+    platformio run --target envdump
+
+When no targets are defined, *PlatformIO* will build only sources by default.

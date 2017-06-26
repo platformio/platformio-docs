@@ -220,26 +220,3 @@ exclude ``.git`` and ``svn`` repository folders, ``example`` ... folder.
 
 This option can be set by global environment variable
 :envvar:`PLATFORMIO_SRC_FILTER`.
-
-.. _projectconf_targets:
-
-``targets``
-^^^^^^^^^^^
-
-A list with targets which will be processed by :ref:`cmd_run` command by
-default. You can enter more than one target separated with "space".
-
-The list with available targets is located in :option:`platformio run --target`.
-
-**Tip!** You can use these targets like an option to
-:option:`platformio run --target` command. For example:
-
-.. code-block:: bash
-
-    # clean project
-    platformio run -t clean
-
-    # dump current build environment
-    platformio run --target envdump
-
-When no targets are defined, *PlatformIO* will build only sources by default.

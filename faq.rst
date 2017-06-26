@@ -205,6 +205,9 @@ Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
     # if you used MacOS "brew"
     brew uninstall platformio
 
+If you need to have :ref:`piocore` globally in a system, please
+:ref:`faq_install_shell_commands`.
+
 'platformio' is not recognized as an internal or external command
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
