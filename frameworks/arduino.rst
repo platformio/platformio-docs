@@ -117,8 +117,26 @@ Adafruit
       - 256 Kb
       - 32 Kb
 
-    * - ``adafruit_feather_m0_usb``
+    * - ``adafruit_feather_m0``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_feather_m0_express``
+      - `Adafruit Feather M0 Express <https://www.adafruit.com/product/3403>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_metro_m0``
+      - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
@@ -2594,15 +2612,6 @@ SODAQ
       - 8 MHz
       - 128 Kb
       - 16 Kb
-
-    * - ``sodaq_wdt``
-      - `SODAQ WDT <http://support.sodaq.com/>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
-      - SAMD21J18A
-      - 48 MHz
-      - 256 Kb
-      - 32 Kb
 
 SainSmart
 ~~~~~~~~~
