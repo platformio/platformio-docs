@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -18,7 +18,8 @@ Frequently Asked Questions
    We have a big database with `Frequently Asked Questions in our Community Forums <https://community.platformio.org/c/faq>`_.
    Please have a look at it.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 General
 -------
@@ -66,7 +67,7 @@ To enable ``zsh`` completion please run these commands:
 Install Python Interpreter
 --------------------------
 
-:ref:`core` is written in `Python <https://www.python.org/downloads/>`_ that
+:ref:`piocore` is written in `Python <https://www.python.org/downloads/>`_ that
 is installed by default on the all popular OS except Windows.
 
 **Windows Users**, please `Download the latest Python 2.7.x <https://www.python.org/downloads/>`_
@@ -76,10 +77,99 @@ on the "Customize" stage, otherwise ``python`` command will not be available.
 .. image:: _static/python-installer-add-path.png
 
 
+.. _faq_install_shell_commands:
+
+Install PIO Core Shell Commands
+-------------------------------
+
+:ref:`piocore` consists of 2 standalone tools in a system:
+
+* ``platformio`` or ``pio`` (short alias) - :ref:`userguide`
+* ``piodebuggdb`` - alias of :ref:`cmd_debug`
+
+If you have :ref:`pioide` already installed, you do not need to install
+:ref:`piocore` separately. Just link these tools with your shell:
+
+Unix
+~~~~
+
+Please open system *Terminal* paste these commands
+(**MAY require** administrator access ``sudo``)
+
+.. code-block:: shell
+
+    ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
+    ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
+    ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
+
+Windows
+~~~~~~~
+
+Please read one of these instructions `How do I set or change the PATH system variable? <https://www.google.com.ua/search?q=how+do+i+set+or+change+the+path+system+variable>`_
+
+You need to edit system environment variable called ``Path`` and append
+``C:\Users\{username}\.platformio\penv\Scripts;`` path in the beginning of a
+list (please replace ``{username}`` with your account name).
+
+.. _faq_convert_ino_to_cpp:
+
+Convert Arduino file to C++ manually
+------------------------------------
+
+Some :ref:`ide` doesn't support Arduino files (``*.ino`` and ``.pde``) because
+they are not valid C/C++ based source files:
+
+1. Missing includes such as ``#include <Arduino.h>``
+2. Function declarations are omitted.
+
+In this case, code completion and code linting does not work properly or
+disabled. To avoid this issue you can manually convert your INO files to CPP.
+
+For example, we have the next ``Demo.ino`` file:
+
+.. code-block:: cpp
+
+    void setup () {
+        someFunction(13);
+    }
+
+    void loop() {
+        delay(1000);
+    }
+
+    void someFunction(int num) {
+    }
+
+Let's convert it to  ``Demo.cpp``:
+
+1. Add ``#include <Arduino.h>`` at the top of the source file
+2. Declare each custom function (excluding built-in, such as ``setup`` and ``loop``)
+   before it will be called.
+
+The final ``Demo.cpp``:
+
+.. code-block:: cpp
+
+    #include <Arduino.h>
+
+    void someFunction(int num);
+
+    void setup () {
+        someFunction(13);
+    }
+
+    void loop() {
+        delay(1000);
+    }
+
+    void someFunction(int num) {
+    }
+
+
 PlatformIO IDE
 --------------
 
-Please refer to :ref:`PlatformIO IDE Frequently Asked Questions <ide_atom_faq>`.
+Please refer to :ref:`PlatformIO IDE Frequently Asked Questions <pioide>`.
 
 Before/Pre and After/Post build actions
 ---------------------------------------
@@ -96,6 +186,39 @@ Troubleshooting
 Installation
 ~~~~~~~~~~~~
 
+Multiple PIO Cores in a system
+''''''''''''''''''''''''''''''
+
+Multiple standalone :ref:`piocore` in a system could lead to a different
+issues. We highly recommend to keep one instance of PIO Core or use built-in
+PIO Core in :ref:`pioide`:
+
+* :ref:`ide_atom` - ``Menu PlatformIO: Settings > PlatformIO IDE > Use built-in PlatformIO Core``
+
+Finally, if you have a standalone :ref:`piocore` in a system, please open system
+Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
+
+.. code-block:: bash
+
+    pip uninstall platformio
+
+    # if you used MacOS "brew"
+    brew uninstall platformio
+
+If you need to have :ref:`piocore` globally in a system, please
+:ref:`faq_install_shell_commands`.
+
+'platformio' is not recognized as an internal or external command
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+If you use :ref:`pioide`, please check in PlatformIO IDE Settings that
+"Use built-in PIO Core" is enabled.
+
+If you modify system environment variable ``PATH`` in your Bash/Fish/ZSH
+profile, please do not override global ``PATH``. This line
+``export PATH="/my/custom/path"`` is incorrect. Use ``export PATH="/my/custom/path":$PATH``
+instead.
+
 [Errno 1] Operation not permitted
 '''''''''''''''''''''''''''''''''
 
@@ -105,35 +228,6 @@ Windows AttributeError: 'module' object has no attribute 'packages'
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Answered in `issue #252 <https://github.com/platformio/platformio-core/issues/252#issuecomment-127072039>`_.
-
-.. _faq_troubleshooting_pionotfoundinpath:
-
-Program "platformio" not found in PATH
-''''''''''''''''''''''''''''''''''''''
-
-Where is ``platformio`` binary installed? Run this command in Terminal
-
-.. code-block:: bash
-
-    # for Unix
-    which platformio
-    echo $PATH
- Windows OS
-    where platformio
-    echo %PATH%
-
-For example, ``which platformio`` is equal to ``/usr/local/bin/platformio``,
-then `PATH (wiki) <https://en.wikipedia.org/wiki/PATH_(variable)>`_
-should contain ``/usr/local/bin`` directory.
-
-**Unix Users**: You can make "symlinks" from ``platformio`` program to the
-``bin`` directory which is included in ``$PATH``. For example,
-see `issue #272 <https://github.com/platformio/platformio-core/issues/272#issuecomment-133626112>`_.
-
-Windows UnicodeDecodeError: 'ascii' codec can't decode byte
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Answered in `issue #143 <https://github.com/platformio/platformio-core/issues/143#issuecomment-88060906>`_.
 
 PlatformIO: command not found || An error "pkg_resources.DistributionNotFound"
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -149,16 +243,28 @@ Please upgrade *SetupTools* package:
     [sudo] pip uninstall platformio
     [sudo] pip install platformio
 
-Miscellaneous
-~~~~~~~~~~~~~
-
-Serial does not work with panStampAVR board
-'''''''''''''''''''''''''''''''''''''''''''
-
-Answered in `issue #144 <https://github.com/platformio/platformio-core/issues/144#issuecomment-87388038>`_.
-
 Building
 ~~~~~~~~
+
+UnicodeDecodeError: Non-ASCII characters found in build environment
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+**KNOWN ISSUE**. :ref:`piocore` currently does not support projects which
+contain non-ASCII characters (codes) in a full path or depend on the
+libraries which use non-ASCII characters in their names.
+
+**TEMPORARY SOLUTION**
+
+1. Use :ref:`pioide`, it will automatically install :ref:`piocore` in a root
+   of system disk (``%DISK%/.platformio``) and avoid an issue when system
+   User contains non-ASCII characters
+2. Do not use non-ASCII characters in project folder name or its parent folders.
+
+Also, if you want to place :ref:`piocore` in own location, see:
+
+* Set :envvar:`PLATFORMIO_HOME_DIR` environment variable with own path
+* Configure custom location per project using :ref:`projectconf_pio_home_dir`
+  option in :ref:`projectconf`.
 
 ARM toolchain: cc1plus: error while loading shared libraries
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''

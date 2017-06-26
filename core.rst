@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _core:
+.. _piocore:
 
 PlatformIO Core
 ===============
@@ -32,23 +32,24 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 
 
 **PlatformIO Core** provides a rich and documented Command Line Interface (CLI).
-The other PlatformIO-based software and IDEs are based on
-**PlatformIO Core CLI**, such as :ref:`ide_atom`. In other words, they wrap
-**PlatformIO Core** with own GUI.
+The other PlatformIO-based software and IDEs are based on **PlatformIO Core CLI**,
+such as :ref:`pioide`. In other words, they wrap **PlatformIO Core** with own GUI.
 
 .. note::
 
     Please note that you do not need to install **PlatformIO Core** if you
-    are going to use :ref:`ide_atom`. **PlatformIO Core** is built into
+    are going to use :ref:`pioide`. **PlatformIO Core** is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    Also, PlatformIO IDE allows to install :ref:`core` Shell Commands
+    Also, PlatformIO IDE allows to install :ref:`piocore` Shell Commands
     (``pio``, ``platformio``) globally to your system via
     ``Menu: PlatformIO > Install Shell Commands``.
 
 .. toctree::
     :maxdepth: 2
 
+
+    userguide/demo
     installation
     quickstart
     userguide/index

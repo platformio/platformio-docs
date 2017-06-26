@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -27,10 +27,14 @@ page for more detailed information.
 Integration
 -----------
 
-.. note::
-    Please verify that folder where is located ``platformio`` program is added
-    to `PATH (wiki) <https://en.wikipedia.org/wiki/PATH_(variable)>`_ environment
-    variable. See FAQ: :ref:`faq_troubleshooting_pionotfoundinpath`.
+Integration process consists of these steps:
+
+1. Open system Terminal and install :ref:`piocore`
+2. Create new folder for your project and change directory (``cd``) to it
+3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+4. Import project in IDE.
+
+------------
 
 Project Generator
 ^^^^^^^^^^^^^^^^^
@@ -145,14 +149,6 @@ Conclusion
 ~~~~~~~~~~
 
 Taking everything into account, we can build project with shortcut ``Ctrl+Shift+B`` or using ``Menu: Build > Build Solution``.
-
-Examples
---------
-
-"Blink" Project
-^^^^^^^^^^^^^^^
-
-Source code of `Visual Studio "Blink" Project <https://github.com/platformio/platformio-examples/tree/develop/ide/visualstudio>`_.
 
 Known issues
 ------------

@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -14,7 +14,7 @@
 Eclipse Che
 ===========
 
-`Codeanywhere <https://www.eclipse.org/che/>`_ is an open-source Java based
+`Eclipse Che <https://www.eclipse.org/che/>`_ is an open-source Java based
 developer workspace server and cloud integrated development environment (IDE)
 which provides a remote development platform for multi-user purpose. The
 workspace server comes with a RESTful webservice and provides high flexibility.
@@ -22,8 +22,7 @@ It also contains a SDK which can be used to create plug-ins for languages,
 frameworks or tools.
 
 .. tip::
-  `QUESTIONS? Chat with us! <https://pioplus.com>`_
-  (chat button is located in the bottom right corner)
+  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
 .. contents::
 
@@ -77,7 +76,7 @@ Let's create our first PlatformIO-based Codenvy Project
 .. image:: ../_static/ide/eclipseche/ide-eclipseche-run-project.png
 
 
-3.  If you prefer to work with :ref:`core` CLI, then you can process project
+3.  If you prefer to work with :ref:`piocore` CLI, then you can process project
     using Cloud IDE Terminal and the next commands:
 
     * :ref:`cmd_run` - build project locally (using Cloud IDE's virtual machine)

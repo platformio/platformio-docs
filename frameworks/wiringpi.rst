@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -11,13 +11,17 @@
 
 .. _framework_wiringpi:
 
-Framework ``wiringpi``
-======================
+WiringPi
+========
+:ref:`projectconf_env_framework` = ``wiringpi``
+
 WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino "wiring" system.
 
 For more detailed information please visit `vendor site <http://wiringpi.com>`_.
 
-.. contents::
+
+.. contents:: Contents
+    :local:
 
 Platforms
 ---------
@@ -46,6 +50,8 @@ Raspberry Pi
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -53,6 +59,8 @@ Raspberry Pi
 
     * - ``raspberrypi_1b``
       - `Raspberry Pi 1 Model B <https://www.raspberrypi.org>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
       - BCM2835
       - 700 MHz
       - 524288 Kb
@@ -60,13 +68,26 @@ Raspberry Pi
 
     * - ``raspberrypi_2b``
       - `Raspberry Pi 2 Model B <https://www.raspberrypi.org>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
       - BCM2836
       - 900 MHz
       - 1048576 Kb
       - 1048576 Kb
 
+    * - ``raspberrypi_3b``
+      - `Raspberry Pi 3 Model B <https://www.raspberrypi.org>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
+      - BCM2837
+      - 1200 MHz
+      - 1048576 Kb
+      - 1048576 Kb
+
     * - ``raspberrypi_zero``
       - `Raspberry Pi Zero <https://www.raspberrypi.org>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
       - BCM2835
       - 1000 MHz
       - 524288 Kb

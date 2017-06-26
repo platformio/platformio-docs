@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -28,7 +28,7 @@ Description
 -----------
 
 Get or regenerate Personal Authentication Token. It is very useful for :ref:`ci`
-systems, :ref:`pio_remote` operations where you are not able manually authorize.
+systems, :ref:`pio_remote` operations where you are not able to authorize manually.
 
 PlatformIO handles Personal Authentication Token from environment variable
 :envvar:`PLATFORMIO_AUTH_TOKEN`.
@@ -42,3 +42,8 @@ Options
     --regenerate
 
     If this option is specified a new authentication token will be generated.
+
+.. option::
+    --json-output
+
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format

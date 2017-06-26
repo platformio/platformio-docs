@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -24,12 +24,22 @@ Refer to the `CLion Documentation <https://www.jetbrains.com/clion/documentation
 page for more detailed information.
 
 .. image:: ../_static/ide-platformio-clion.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-clion.png
+    :target: ../_images/ide-platformio-clion.png
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Integration
 -----------
+
+Integration process consists of these steps:
+
+1. Open system Terminal and install :ref:`piocore`
+2. Create new folder for your project and change directory (``cd``) to it
+3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+4. Import project in IDE.
+
+------------
 
 Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <http://platformio.org/boards>`_
 command and generate project via :option:`platformio init --ide` command:
@@ -43,19 +53,26 @@ command and generate project via :option:`platformio init --ide` command:
 
 Then:
 
-1. Place source files (``*.c, *.cpp, *.h, *.hpp``) to ``src`` directory
+1. Place source files (``*.c, *.cpp, *.h, *.hpp``) to ``src`` directory and
+   repeat :option:`platformio init --ide` command above (to refresh source files list)
 2. Import this project via ``Menu: File > Import Project``
    and specify root directory where is located :ref:`projectconf`
 3. Open source file from ``src`` directory
-4. Build project (*DO NOT RUN*): ``Menu: Run > Build``.
+4. Build project (*DO NOT* use "Run" button, see marks on the screenshot above):
+   ``Menu: Run > Build``.
 
 .. warning::
 
-    See know issue: :ref:`ide_clion_knownissues_inopde_not_supported` and how
+    1. :ref:`piocore` **DOES NOT** depend on ``Cmake``, it has own cross-platform
+       Build System. All data related to build flags and source code filtering
+       should be specified using :ref:`projectconf_section_env_build` in
+       :ref:`projectconf`.
+
+    2. See know issue: :ref:`ide_clion_knownissues_inopde_not_supported` and how
     to resolve it.
 
 There are 6 predefined targets for building (*NOT FOR RUNNING*, see marks on
-the screenshot below):
+the screenshot above):
 
 * ``PLATFORMIO_BUILD`` - Build project without auto-uploading
 * ``PLATFORMIO_UPLOAD`` - Build and upload (if no errors)
@@ -95,49 +112,7 @@ not valid C/C++ based source files:
 1. Missing includes such as ``#include <Arduino.h>``
 2. Function declarations are omitted.
 
-Convert Arduino file to C++ manually
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For example, we have the next ``Demo.ino`` file:
-
-.. code-block:: cpp
-
-    void function setup () {
-        someFunction(13);
-    }
-
-    void function loop() {
-        delay(1000);
-    }
-
-    void someFunction(int num) {
-    }
-
-Let's convert it to  ``Demo.cpp``:
-
-1. Add ``#include <Arduino.h>`` at the top of the source file
-2. Declare each custom function (excluding built-in, such as ``setup`` and ``loop``)
-   before it will be called.
-
-The final ``Demo.cpp``:
-
-.. code-block:: cpp
-
-    #include <Arduino.h>
-
-    void someFunction(int num);
-
-    void function setup () {
-        someFunction(13);
-    }
-
-    void function loop() {
-        delay(1000);
-    }
-
-    void someFunction(int num) {
-    }
-
+See how to :ref:`faq_convert_ino_to_cpp`.
 
 Articles / Manuals
 ------------------
@@ -147,11 +122,3 @@ Articles / Manuals
 * Nov 09, 2015 - **ÁLvaro García Gómez** - `Programar con Arduino "The good way" (Programming with Arduino "The good way", Spanish) <http://congdegnu.es/2015/11/09/programar-con-arduino-the-good-way/>`_
 
 See more :ref:`articles`.
-
-Examples
---------
-
-"Blink" Project
-~~~~~~~~~~~~~~~
-
-Source code of `CLion "Blink" Project <https://github.com/platformio/platformio-examples/tree/develop/ide/clion>`_.

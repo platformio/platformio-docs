@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -94,6 +94,14 @@ project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
 
 The mode can be changed using :ref:`projectconf_lib_ldf_mode` option in
 :ref:`projectconf`.
+
+.. note::
+  Usually, when the LDF appears to fail to identify a dependency of a library,
+  it is because the dependency is only referenced from the library source file,
+  and not the library header file (see example below). In this case, it is
+  necessary to either explicitly reference the dependency from the project
+  source or :ref:`projectconf` (:ref:`projectconf_lib_deps` option), or change
+  the LDF mode to "deep"(not generally recommended).
 
 A difference between ``chain/chain+`` and ``deep/deep+`` modes. For example,
 there are 2 libraries:

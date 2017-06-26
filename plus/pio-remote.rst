@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -36,8 +36,7 @@ You should have :ref:`cmd_account` to work with |PIORemote|.
 A registration is **FREE**.
 
 .. tip::
-  `QUESTIONS? Chat with us! <https://pioplus.com>`_
-  (chat button is located in the bottom right corner)
+  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
 .. contents::
 
@@ -82,11 +81,11 @@ listing of local and remote devices will look like :ref:`cmd_device_list` and
 Installation
 ------------
 
-|PIORemote| is built into :ref:`ide_atom`. Please open PlatformIO IDE Terminal
+|PIORemote| is built into :ref:`pioide`. Please open PlatformIO IDE Terminal
 and run ``pio remote --help`` command for usage (see :ref:`cmd_remote`).
 
-If you do not have :ref:`ide_atom`, or use :ref:`ide_cloud` or a card-sized PC
-(Raspberry Pi, BeagleBoard, etc.), please install :ref:`core`.
+If you do not have :ref:`pioide`, or use :ref:`ide_cloud` or a card-sized PC
+(Raspberry Pi, BeagleBoard, etc.), please install :ref:`piocore`.
 
 .. _pio_remote_quickstart:
 

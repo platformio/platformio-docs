@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -11,13 +11,17 @@
 
 .. _framework_artik-sdk:
 
-Framework ``artik-sdk``
-=======================
+ARTIK SDK
+=========
+:ref:`projectconf_env_framework` = ``artik-sdk``
+
 ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms. It exposes a set of APIs to ease up development of applications. These APIs cover hardware buses such as GPIO, SPI, I2C, UART, connectivity links like Wi-Fi, Bluetooth, Zigbee, and network protocols such as HTTP, Websockets, MQTT, and others.
 
 For more detailed information please visit `vendor site <http://www.artik.io>`_.
 
-.. contents::
+
+.. contents:: Contents
+    :local:
 
 Platforms
 ---------
@@ -46,6 +50,8 @@ Samsung
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -53,6 +59,8 @@ Samsung
 
     * - ``artik_1020``
       - `Samsung ARTIK 1020 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
       - EXYNOS5422
       - 1500 MHz
       - 16777216 Kb
@@ -60,6 +68,8 @@ Samsung
 
     * - ``artik_520``
       - `Samsung ARTIK 520 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
       - EXYNOS3250
       - 1000 MHz
       - 4194304 Kb
@@ -67,6 +77,8 @@ Samsung
 
     * - ``artik_530``
       - `Samsung ARTIK 530 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
       - S5P4418
       - 1200 MHz
       - 4194304 Kb
@@ -74,6 +86,8 @@ Samsung
 
     * - ``artik_710``
       - `Samsung ARTIK 710 <https://www.artik.io>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
       - S5P6818
       - 1400 MHz
       - 4194304 Kb

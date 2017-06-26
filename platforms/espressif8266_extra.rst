@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -191,7 +191,7 @@ For the full list with available options please run
 
 .. code-block:: bash
 
-    ~/.platformio/packages/framework-arduinoespressif8266/tools/espota.py -h
+    ~/.platformio/packages/tool-espotapy/espota.py -h
 
     Usage: espota.py [options]
 
@@ -267,6 +267,7 @@ please use :ref:`cmd_platform_update` command.
 Articles
 --------
 
+* Jun 23, 2017 - **Naresh Krish** - `Home Automation Using Wiscore, OpenHab and PlatformIO <https://www.hackster.io/naresh-krish/home-automation-using-wiscore-and-openhab-1ec6e4>`_
 * Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
 * Sep 12, 2016 - **Pedro Minatel** - `OTA – Como programar o ESP8266 pelo WiFi no platformIO (OTA programming for ESP8266 via Wi-Fi using PlatformIO, Portuguese) <http://pedrominatel.com.br/esp8266/ota-como-programar-o-esp8266-pelo-wifi-no-platformio/>`_
 * Sep 2, 2016 - **Tinkerman** `Optimizing files for SPIFFS with Gulp <http://tinkerman.cat/optimizing-files-for-spiffs-with-gulp/>`_

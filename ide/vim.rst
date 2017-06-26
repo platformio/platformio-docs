@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -25,11 +25,12 @@ standalone application in a graphical user interface.
 Integration
 -----------
 
-.. note::
-    Please verify that folder where is located ``platformio`` program is added
-    to `PATH (wiki) <https://en.wikipedia.org/wiki/PATH_(variable)>`_ environment
-    variable. See FAQ: :ref:`faq_troubleshooting_pionotfoundinpath`.
+Integration process consists of these steps:
 
+1. Open system Terminal and install :ref:`piocore`
+2. Create new folder for your project and change directory (``cd``) to it
+3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+4. Import project in IDE.
 
 "Neomake-PlatformIO" Plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -37,8 +38,15 @@ Integration
 Please visit `neomake-platformio <https://github.com/coddingtonbear/neomake-platformio>`_
 for the further installation steps and documentation.
 
-Manual
-~~~~~~
+Project Generator
+^^^^^^^^^^^^^^^^^
+
+Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <http://platformio.org/boards>`_
+command and generate project via :option:`platformio init --ide` command:
+
+.. code-block:: shell
+
+    platformio init --ide vim --board <ID>
 
 Recommended bundles:
 

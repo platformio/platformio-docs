@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -11,13 +11,17 @@
 
 .. _framework_pumbaa:
 
-Framework ``pumbaa``
-====================
+Pumbaa
+======
+:ref:`projectconf_env_framework` = ``pumbaa``
+
 Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
 
 For more detailed information please visit `vendor site <http://pumbaa.readthedocs.org/>`_.
 
-.. contents::
+
+.. contents:: Contents
+    :local:
 
 Platforms
 ---------
@@ -46,6 +50,8 @@ MakerAsia
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -53,7 +59,9 @@ MakerAsia
 
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb

@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -14,7 +14,8 @@
 What is PlatformIO?
 ===================
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Press about PlatformIO
 ----------------------
@@ -70,7 +71,8 @@ but also on the servers without X Window System. While PlatformIO itself is a
 console application, it can be used in combination with one's favorite
 :ref:`ide` or text editor such as :ref:`ide_atom`, :ref:`ide_clion`,
 :ref:`ide_eclipse`, :ref:`ide_emacs`, :ref:`ide_netbeans`, :ref:`ide_qtcreator`,
-:ref:`ide_sublimetext`, :ref:`ide_vim`, :ref:`ide_visualstudio`, etc.
+:ref:`ide_sublimetext`, :ref:`ide_vim`, :ref:`ide_visualstudio`,
+:ref:`ide_vscode`, etc.
 
 Alright, so PlatformIO can run on different operating systems. But more
 importantly, from development perspective at least, is a list of supported

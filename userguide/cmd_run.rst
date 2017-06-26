@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -50,6 +50,10 @@ You can also specify which environments should be processed by default using
 
 Process specified targets.
 
+.. note::
+    You can configure default targets per project environment using
+    :ref:`projectconf_targets` option in :ref:`projectconf`.
+
 Built-in targets:
 
 * Processing
@@ -62,6 +66,12 @@ Built-in targets:
     + ``buildfs`` :ref:`platform_espressif_uploadfs`
     + ``uploadfs`` :ref:`platform_espressif_uploadfs`
     + ``size`` print the size of the sections in a firmware/program
+
+* Device
+
+    + ``monitor`` automatically start :ref:`cmd_device_monitor` after success
+      build operation. You can configure monitor using
+      :ref:`projectconf_section_env_monitor`.
 
 * Service
 

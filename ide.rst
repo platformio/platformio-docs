@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -14,25 +14,38 @@
 Cloud & Standalone IDE
 ======================
 
+PlatformIO IDE
+--------------
+
+**PlatformIO IDE is the next-generation integrated development environment for IoT.**
+
+We provide official open-source packages (plugins, extensions) for the most
+popular IDEs and text editors.
+
+.. toctree::
+    :maxdepth: 1
+
+    Atom <ide/atom>
+    VSCode <ide/vscode>
+
 .. _ide_cloud:
 
 Cloud IDE
 ---------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     ide/cloud9
     ide/codeanywhere
     ide/eclipseche
 
-.. _ide_standalone:
 
-Standalone IDE
---------------
+Other IDE
+---------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     ide/clion
     ide/codeblocks
@@ -43,4 +56,3 @@ Standalone IDE
     ide/sublimetext
     ide/vim
     ide/visualstudio
-    ide/vscode

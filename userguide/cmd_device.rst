@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -120,12 +120,18 @@ Options
 .. option::
     -p, --port
 
-Port, a number or a device name
+Port, a number or a device name.
+
+Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_port`
+option.
 
 .. option::
     -b, --baud
 
-Set baud rate, default ``9600``
+Set baud rate, default ``9600``.
+
+Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_baud`
+option.
 
 .. option::
     --parity
@@ -146,12 +152,18 @@ Enable software flow control, default ``Off``
 .. option::
     --rts
 
-Set initial ``RTS`` line state (``0`` or ``1``), default ``1``
+Set initial ``RTS`` line state (``0`` or ``1``).
+
+Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_rts`
+option.
 
 .. option::
     --dtr
 
-Set initial ``DTR`` line state (``0`` or ``1``), default ``1``
+Set initial ``DTR`` line state (``0`` or ``1``).
+
+Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_dtr`
+option.
 
 .. option::
     --echo

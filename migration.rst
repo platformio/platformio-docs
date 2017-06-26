@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -22,7 +22,8 @@ general guide to upgrading from v2.x to v3.0. For a broader overview, see
 `what is new <https://community.platformio.org/c/announcements>`_ in the v3.0
 release announcement.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Major PlatformIO CLI changes
 ----------------------------

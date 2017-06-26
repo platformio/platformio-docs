@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -11,10 +11,13 @@
 
 .. _platform_native:
 
-Platform ``native``
-===================
+Native
+======
+:ref:`projectconf_env_platform` = ``native``
+
 Native development platform is intended to be used for desktop OS. This platform uses built-in toolchains (preferable based on GCC), frameworks, libs from particular OS where it will be run.
 
 For more detailed information please visit `vendor site <http://platformio.org/platforms/native>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:

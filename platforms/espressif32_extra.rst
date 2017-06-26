@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -8,6 +8,81 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+
+Over-the-Air (OTA) update
+-------------------------
+
+There are 2 options:
+
+* Directly specify :option:`platformio run --upload-port` in command line
+
+.. code-block:: bash
+
+    platformio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
+
+* Specify ``upload_port`` option in :ref:`projectconf`
+
+.. code-block:: ini
+
+   [env:myenv]
+   upload_port = IP_ADDRESS_HERE or mDNS_NAME.local
+
+For example,
+
+* ``platformio run -t upload --upload-port 192.168.0.255``
+* ``platformio run -t upload --upload-port myesp8266.local``
+
+Authentication and upload options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can pass additional options/flags to OTA uploader using
+``upload_flags`` option in :ref:`projectconf`
+
+.. code-block:: ini
+
+    [env:myenv]
+    upload_flags = --port=8266
+
+Available flags
+
+* ``--port=ESP_PORT`` ESP8266 OTA Port. Default 8266
+* ``--auth=AUTH`` Set authentication password
+* ``--spiffs`` Use this option to transmit a SPIFFS image and do not flash
+  the module
+
+For the full list with available options please run
+
+.. code-block:: bash
+
+    ~/.platformio/packages/tool-espotapy/espota.py -h
+
+    Usage: espota.py [options]
+
+    Transmit image over the air to the esp8266 module with OTA support.
+
+    Options:
+      -h, --help            show this help message and exit
+
+      Destination:
+        -i ESP_IP, --ip=ESP_IP
+                            ESP8266 IP Address.
+        -p ESP_PORT, --port=ESP_PORT
+                            ESP8266 ota Port. Default 8266
+
+      Authentication:
+        -a AUTH, --auth=AUTH
+                            Set authentication password.
+
+      Image:
+        -f FILE, --file=FILE
+                            Image file.
+        -s, --spiffs        Use this option to transmit a SPIFFS image and do not
+                            flash the module.
+
+      Output:
+        -d, --debug         Show debug output. And override loglevel with debug.
+        -r, --progress      Show progress output. Does not work for ArduinoIDE
 
 Using Arduino Framework with Staging version
 --------------------------------------------

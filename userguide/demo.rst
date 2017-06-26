@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -9,23 +9,18 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _demo:
+.. _piocore_demo:
 
-Demo & Projects
-===============
+Demo
+====
 
-.. contents::
-
-Project Examples
-----------------
-
-Pre-configured demo projects are located in PlatformIO GitHub repository
-`https://github.com/platformio/platformio-examples <https://github.com/platformio/platformio-examples>`_.
+.. contents:: Contents
+    :local:
 
 "Blink Project"
 ---------------
 
-.. image:: _static/platformio-demo-wiring.gif
+.. image:: ../_static/platformio-demo-wiring.gif
 
 Used in demo
 ~~~~~~~~~~~~
@@ -37,7 +32,7 @@ Used in demo
 Platform Manager
 ----------------
 
-.. image:: _static/platformio-demo-platforms.gif
+.. image:: ../_static/platformio-demo-platforms.gif
 
 Used in demo
 ~~~~~~~~~~~~
@@ -51,7 +46,7 @@ Used in demo
 Library Manager
 ---------------
 
-.. image:: _static/platformio-demo-lib.gif
+.. image:: ../_static/platformio-demo-lib.gif
 
 Used in demo
 ~~~~~~~~~~~~
@@ -69,7 +64,7 @@ Used in demo
 Over-the-Air update for ESP8266
 -------------------------------
 
-.. image:: _static/platformio-demo-ota-esp8266.jpg
+.. image:: ../_static/platformio-demo-ota-esp8266.jpg
     :target: https://www.youtube.com/watch?v=lXchL3hpDO4
 
 Used in demo

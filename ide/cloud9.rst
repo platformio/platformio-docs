@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -21,8 +21,7 @@ over your environment, including sudo rights. Do a git push, compile SASS, see
 server output, and Run apps easily with the built-in Terminal and Runners.
 
 .. tip::
-  `QUESTIONS? Chat with us! <https://pioplus.com>`_
-  (chat button is located in the bottom right corner)
+  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
 .. contents::
 
@@ -51,7 +50,7 @@ Integration
 
 .. image:: ../_static/ide/cloud9/ide-cloud9-new-workspace.png
 
-3. Install :ref:`core` using Cloud IDE Terminal. Paste a next command
+3. Install :ref:`piocore` using Cloud IDE Terminal. Paste a next command
 
 .. code-block:: bash
 
@@ -108,7 +107,7 @@ Let's create our first PlatformIO-based Cloud9 Project
 
 .. image:: ../_static/ide/cloud9/ide-cloud9-init-project.png
 
-3.  If you prefer to work with :ref:`core` CLI, then you can process project
+3.  If you prefer to work with :ref:`piocore` CLI, then you can process project
     using Cloud IDE Terminal and the next commands:
 
     * :ref:`cmd_run` - build project locally (using Cloud IDE's virtual machine)

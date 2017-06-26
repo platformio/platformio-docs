@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -12,13 +12,12 @@
 PlatformIO is an open source ecosystem for IoT development
 ==========================================================
 
-**Cross-platform build system and library manager. Continuous and IDE
-integration. Arduino, ESP8266 and ARM mbed compatible.**
+**Cross-platform IDE and unified debugger. Remote unit testing and firmware updates.**
 
-* **PlatformIO IDE** - The next-generation integrated development environment for IoT.
+* :ref:`pioide` - The next-generation integrated development environment for IoT.
   C/C++ Intelligent Code Completion and Smart Code Linter for the super-fast coding.
   Multi-projects workflow with Multiple Panes. Themes Support with dark and light colors.
-  Built-in Terminal with :ref:`core` and support for the powerful Serial Port Monitor.
+  Built-in Terminal with :ref:`piocore` and support for the powerful Serial Port Monitor.
   All advanced instruments without leaving your favorite development environment.
 * **Development Platforms** - Embedded and Desktop development platforms with
   pre-built toolchains, debuggers, uploaders and frameworks which work under
@@ -26,18 +25,18 @@ integration. Arduino, ESP8266 and ARM mbed compatible.**
 * **Embedded Boards** - Rapid Embedded Programming, IDE and Continuous
   Integration in a few steps with PlatformIO thanks to built-in project
   generator for the most popular embedded boards and IDE
-* **Library Manager** - Hundreds Popular Libraries are organized into single
+* :ref:`librarymanager` - Hundreds Popular Libraries are organized into single
   Web 2.0 platform: list by categories, keywords, authors, compatible
   platforms and frameworks; learn via examples; be up-to-date with the latest
   version
 
-*Atmel AVR & SAM, Espressif, Freescale Kinetis, Nordic nRF51, NXP LPC,
-Silicon Labs EFM32, ST STM32, TI MSP430 & Tiva, Teensy, Arduino, mbed,
-libOpenCM3, etc.*
+*Atmel AVR & SAM, Espressif, Freescale Kinetis, Maxim Integrated,
+Nordic nRF51 & nRF51, NXP LPC, Silicon Labs EFM32, ST STM32, TI MSP430 & Tiva,
+Teensy, Arduino, mbed, libOpenCM3, etc.*
 
 * `Home Page <http://platformio.org>`_
 * `PlatformIO Plus and professional solutions <https://pioplus.com>`_
-* :ref:`ide_atom`
+* :ref:`pioide`
 * `Library Search and Registry <http://platformio.org/lib>`_ |
   `Embedded Boards Explorer <http://platformio.org/boards>`_
 * `Project Examples <https://github.com/platformio/platformio-examples/tree/develop>`_
@@ -87,14 +86,14 @@ Contents
     :maxdepth: 2
 
     what-is-platformio
-    demo
 
 .. toctree::
     :caption: Getting Started
     :maxdepth: 2
 
-    PlatformIO IDE <ide/atom>
+    ide/pioide
     core
+    tutorials/index
 
 .. toctree::
     :caption: Configuration
@@ -107,9 +106,10 @@ Contents
     :caption: Instruments
     :maxdepth: 3
 
+    librarymanager/index
     platforms/index
-    platforms/embedded_boards
     frameworks/index
+    platforms/embedded_boards
     platforms/custom_platform_and_board
 
 .. toctree::
@@ -119,16 +119,6 @@ Contents
     plus/pio-remote
     plus/debugging
     plus/unit-testing
-
-.. toctree::
-    :caption: Library Manager
-    :maxdepth: 2
-
-    Quickstart <librarymanager/index>
-    User Guide <userguide/lib/index>
-    librarymanager/ldf
-    librarymanager/config
-    librarymanager/creating
 
 .. toctree::
     :caption: Integration

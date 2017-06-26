@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -15,7 +15,7 @@ Frameworks
 ==========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     arduino
     artik-sdk
@@ -27,4 +27,5 @@ Frameworks
     pumbaa
     simba
     spl
+    stm32cube
     wiringpi

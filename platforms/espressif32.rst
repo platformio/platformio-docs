@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -11,13 +11,16 @@
 
 .. _platform_espressif32:
 
-Platform ``espressif32``
-========================
+Espressif 32
+============
+:ref:`projectconf_env_platform` = ``espressif32``
+
 Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
 For more detailed information please visit `vendor site <https://espressif.com/>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------
@@ -40,6 +43,9 @@ Packages
     * - `framework-simba <https://github.com/eerimoq/simba>`__
       - Simba Framework
 
+    * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py>`__
+      - ESP8266 OTA utility
+
     * - `tool-esptoolpy <https://github.com/espressif/esptool>`__
       - Espressif ROM Bootloader utility
 
@@ -49,18 +55,16 @@ Packages
 .. warning::
     **Linux Users**:
 
-    * Ubuntu/Debian users may need to add own "username" to the "dialout"
-      group if they are not "root", doing this issuing a
-      ``sudo usermod -a -G dialout yourusername``.
-    * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-      (an instruction is located in the file).
-    * Raspberry Pi users, please read this article
-      `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
+        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
+          (an instruction is located inside a file).
+        * Raspberry Pi users, please read this article
+          `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
 
-    **Windows Users:** Please check that you have correctly installed USB
-    driver from board manufacturer
+    **Windows Users:**
 
+        Please check that you have a correctly installed USB driver from board
+        manufacturer
 
 
 Frameworks
@@ -92,6 +96,30 @@ Boards
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
+Adafruit
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``featheresp32``
+      - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 Aiyarafun
 ~~~~~~~~~
 
@@ -100,6 +128,8 @@ Aiyarafun
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -107,10 +137,12 @@ Aiyarafun
 
     * - ``node32s``
       - `Node32s <http://www.ayarafun.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
-      - 112 Kb
+      - 1280 Kb
+      - 288 Kb
 
 April Brother
 ~~~~~~~~~~~~~
@@ -120,6 +152,8 @@ April Brother
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -127,6 +161,80 @@ April Brother
 
     * - ``espea32``
       - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+DFRobot
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``firebeetle32``
+      - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+DOIT
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``esp32doit-devkit-v1``
+      - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+ESP32vn
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``esp32vn-iot-uno``
+      - `ESP32vn IoT Uno <https://esp32.vn/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
       - 1024 Kb
@@ -140,6 +248,8 @@ Electronic SweetPeas
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -147,9 +257,11 @@ Electronic SweetPeas
 
     * - ``esp320``
       - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Espressif
@@ -160,6 +272,8 @@ Espressif
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -167,9 +281,11 @@ Espressif
 
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
 Hornbill
@@ -180,6 +296,8 @@ Hornbill
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -187,16 +305,44 @@ Hornbill
 
     * - ``hornbill32dev``
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
       - 288 Kb
 
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
+      - 288 Kb
+
+IntoRobot
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``intorobot``
+      - `IntoRobot Fig <http://docs.intorobot.com/zh/hardware/fig/hardware/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
       - 288 Kb
 
 MakerAsia
@@ -207,6 +353,8 @@ MakerAsia
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -214,9 +362,35 @@ MakerAsia
 
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
+      - 288 Kb
+
+NodeMCU
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nodemcu-32s``
+      - `NodeMCU-32S <http://www.nodemcu.com/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
       - 288 Kb
 
 Noduino
@@ -227,6 +401,8 @@ Noduino
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -234,9 +410,35 @@ Noduino
 
     * - ``quantum``
       - `Noduino Quantum <http://wiki.jackslab.org/Noduino>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
+      - 288 Kb
+
+Onehorse
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``onehorse32dev``
+      - `Onehorse ESP32 Dev Module <https://www.tindie.com/products/onehorse/esp32-development-board/>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
       - 288 Kb
 
 SparkFun Electronics
@@ -247,6 +449,8 @@ SparkFun Electronics
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -254,10 +458,12 @@ SparkFun Electronics
 
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
-      - 112 Kb
+      - 1280 Kb
+      - 288 Kb
 
 WEMOS
 ~~~~~
@@ -267,16 +473,44 @@ WEMOS
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
       - RAM
 
     * - ``lolin32``
-      - `WEMOS LoLin32 <https://wemos.cc>`_
+      - `WEMOS LOLIN32 <https://wemos.cc>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
       - ESP32
       - 240 MHz
-      - 1024 Kb
+      - 1280 Kb
+      - 288 Kb
+
+Widora
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``widora-air``
+      - `Widora AIR <http://widora.io>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
       - 288 Kb
 
 .. include:: espressif32_extra.rst

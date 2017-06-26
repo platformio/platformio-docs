@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -23,6 +23,9 @@ Here are recent articles/reviews about PlatformIO:
 2017
 ^^^^
 
+* Jun 23, 2017 - **Naresh Krish** - `Home Automation Using Wiscore, OpenHab and PlatformIO <https://www.hackster.io/naresh-krish/home-automation-using-wiscore-and-openhab-1ec6e4>`_
+* Apr 12, 2017 - **Jane Elizabeth** - `Let's talk IoT: PlatformIO puts developers back in the driver's seat <https://jaxenter.com/open-source-iot-platformio-133282.html>`_
+* Mar 13, 2017 - **Ryan Mulligan** - `Continuous testing for Arduino libraries using PlatformIO and Travis CI <https://www.pololu.com/blog/654/continuous-testing-for-arduino-libraries-using-platformio-and-travis-ci>`_
 * Feb 23, 2017 - **Bastiaan Visee** - `Using PlatformIO for your Arduino projects <http://lichtsignaal.nl/2017/02/23/using-platformio-for-your-arduino-projects/>`_
 * Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
 

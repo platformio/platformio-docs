@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -11,13 +11,16 @@
 
 .. _platform_titiva:
 
-Platform ``titiva``
-===================
+TI TIVA
+=======
+:ref:`projectconf_env_platform` = ``titiva``
+
 Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
 For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/c2000_performance/control_automation/tm4c12x/overview.page>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------
@@ -37,24 +40,25 @@ Packages
     * - `tool-lm4flash <http://www.ti.com/tool/lmflashprogrammer>`__
       - Flash Programmer
 
+    * - `tool-openocd <http://openocd.org>`__
+      - OpenOCD
+
     * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
       - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:
 
-    * Ubuntu/Debian users may need to add own "username" to the "dialout"
-      group if they are not "root", doing this issuing a
-      ``sudo usermod -a -G dialout yourusername``.
-    * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-      (an instruction is located in the file).
-    * Raspberry Pi users, please read this article
-      `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
+        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
+          (an instruction is located inside a file).
+        * Raspberry Pi users, please read this article
+          `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
 
-    **Windows Users:** Please check that you have correctly installed USB
-    driver from board manufacturer
+    **Windows Users:**
 
+        Please check that you have a correctly installed USB driver from board
+        manufacturer
 
 
 Frameworks
@@ -88,6 +92,8 @@ TI
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -95,6 +101,8 @@ TI
 
     * - ``lplm4f120h5qr``
       - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl>`_
+      - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`Yes <piodebug>`
       - LPLM4F120H5QR
       - 80 MHz
       - 256 Kb
@@ -102,6 +110,8 @@ TI
 
     * - ``lptm4c1230c3pm``
       - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html>`_
+      - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`Yes <piodebug>`
       - LPTM4C1230C3PM
       - 80 MHz
       - 256 Kb
@@ -109,6 +119,8 @@ TI
 
     * - ``lptm4c1294ncpdt``
       - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html>`_
+      - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`Yes <piodebug>`
       - LPTM4C1294NCPDT
       - 120 MHz
       - 1024 Kb

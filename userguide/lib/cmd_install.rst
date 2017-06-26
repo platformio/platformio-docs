@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -53,9 +53,14 @@ Usage
     platformio lib [STORAGE_OPTIONS] install <repository#tag> ("tag" can be commit, branch or tag)
 
 .. warning::
-  If some libraries are not visible in :ref:`ide_atom` and Code Completion or
-  Code Linting does not work properly, please perform  ``Menu: PlatformIO >
-  Rebuild C/C++ Project Index (Autocomplete, Linter)``
+
+  If some libraries are not visible in :ref:`pioide` and Code Completion or
+  Code Linting does not work properly, please perform
+
+  * **Atom**: "Menu: PlatformIO > Rebuild C/C++ Project Index (Autocomplete,
+    Linter)"
+  * **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++
+    Project Index"
 
 Description
 -----------

@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -9,13 +9,13 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIOUTE| replace:: **PlatformIO Unit Testing Engine**
-.. |PIOUTF| replace:: *PlatformIO Unit Testing Framework*
+.. |PIOUTE| replace:: **PIO Unit Testing Engine**
+.. |PIOUTF| replace:: *PIO Unit Testing Framework*
 
 .. _unit_testing:
 
-Unit Testing
-============
+PIO Unit Testing
+================
 
 .. versionadded:: 3.0 (`PlatformIO Plus <https://pioplus.com>`_)
 
@@ -26,10 +26,10 @@ usage procedures, and operating procedures, are tested to determine whether
 they are fit for use. Unit testing finds problems early in the development cycle.
 
 .. tip::
-  `QUESTIONS? Chat with us! <https://pioplus.com>`_
-  (chat button is located in the bottom right corner)
+  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Demo
 ----
@@ -39,15 +39,31 @@ Demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-
 .. image:: ../_static/pioplus-unit-testing-demo.png
     :target: https://youtu.be/bo3VVRZVKhA
 
+Tutorials
+---------
+
+* :ref:`tutorial_stm32cube_debugging_unit_testing`
+
+Configuration
+-------------
+
+|PIOUTE| can be configured from :ref:`projectconf`
+
+* :ref:`projectconf_test_filter`
+* :ref:`projectconf_test_ignore`
+* :ref:`projectconf_test_port`
+* :ref:`projectconf_test_transport`
+
 Test Types
 ----------
 
 Desktop
 ~~~~~~~
 
-PlatformIO wraps the test and main program (from :ref:`projectconf_pio_src_dir`)
-with their own |PIOUTF|. It then builds the final program using
-:ref:`platform_native` and runs tests on the host machine (desktop).
+PlatformIO wraps a test and a main program (from :ref:`projectconf_pio_src_dir`)
+with |PIOUTF| and builds the final program using :ref:`platform_native`
+development platform. Finally, PlatformIO runs tests on the host machine
+(desktop or :ref:`ci` VM instance).
 
 .. note::
     PlatformIO does not install any toolchains automatically for
@@ -58,29 +74,30 @@ with their own |PIOUTF|. It then builds the final program using
 Embedded
 ~~~~~~~~
 
-PlatformIO wraps the test and main firmware (from :ref:`projectconf_pio_src_dir`)
-with their own |PIOUTF|. It then builds special firmware for the target device
-and uploads it. After uploading, PlatformIO connects to the embedded device
-(board) using the configured :ref:`projectconf_test_port` . Tests are then started
-and the results are collected for display on the host machine.
-
-Currently, |PIOUTE| supports these embedded frameworks:
-
-* :ref:`framework_arduino`
-* :ref:`framework_energia`
-* :ref:`framework_mbed`
+PlatformIO wraps a test and main firmware (from :ref:`projectconf_pio_src_dir`)
+with |PIOUTF| and builds special firmware for a target device and deploy it.
+Then, PlatformIO connects to the embedded device (board) using configured
+Serial :ref:`projectconf_test_port` and communicate via
+:ref:`projectconf_test_transport`. Finally, it runs tests on embedded side,
+collects results, analyzes them and provides a summary on host machine side
+(desktop).
 
 .. note::
-    Please note that the |PIOUTF| uses Serial/UART as a communication interface
-    between the PlatformIO Unit Test Engine and target device. If you use
+
+    Please note that the |PIOUTF| uses the first available ``Serial/UART``
+    implementation (depending on a :ref:`projectconf_env_framework`) as a
+    communication interface between the |PIOUTE| and target device. If you use
     ``Serial`` in your project, please wrap/hide Serial-based blocks with
     ``#ifndef UNIT_TEST`` macro.
+
+    Also, you can create custom :ref:`projectconf_test_transport` and implement
+    base interface.
 
 Test Runner
 -----------
 
 Test Runner allows you to process specific environments or ignore tests using
-"Glob patterns". You can also ignore tests for specific environments using the
+"Glob patterns". You can also ignore tests for specific environments using a
 :ref:`projectconf_test_ignore` option from :ref:`projectconf`.
 
 Local

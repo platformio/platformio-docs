@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -27,13 +27,23 @@ registers, and disassembly viewers.
 Refer to the `CDT Documentation <https://eclipse.org/cdt/documentation.php>`_
 page for more detailed information.
 
-.. image:: ../_static/ide-platformio-eclipse.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-eclipse.png
+.. image:: ../_static/ide/eclipse/ide-platformio-eclipse.png
+    :target: ../_images/ide-platformio-eclipse.png
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Integration
 -----------
+
+Integration process consists of these steps:
+
+1. Open system Terminal and install :ref:`piocore`
+2. Create new folder for your project and change directory (``cd``) to it
+3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+4. Import project in IDE.
+
+------------
 
 Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <http://platformio.org/boards>`_
 command and generate project via :option:`platformio init --ide` command:
@@ -94,8 +104,20 @@ Live Integration
 
 Eclipse Virtual IoT Meetup: `PlatformIO: a cross-platform IoT solution to build them all! <http://www.meetup.com/Virtual-IoT/events/229964142/>`_
 
-.. image:: ../_static/ide-eclipse-virtualiot.jpg
+.. image:: ../_static/ide/eclipse/ide-eclipse-virtualiot.jpg
     :target: https://www.youtube.com/watch?v=6t7UbX812Yw
+
+Debugging
+---------
+
+A debugging feature is provided by :ref:`piodebug` and new debug configuration
+named "PlatformIO Debugger" is created. No need to do extra configuration steps!
+
+1. Build a project first time or after "Clean" operation using
+   ``PlatformIO: Build`` target
+2. Launch debugger via "Menu: Debug" or "Bug Icon" button on Tool Bar.
+3. Wait for a while, PlatformIO will prepare project for debugging and
+   session will be started soon.
 
 Articles / Manuals
 ------------------
@@ -106,11 +128,3 @@ Articles / Manuals
 * June 20, 2014 - **Ivan Kravets, Ph.D.** - `Building and debugging Atmel AVR (Arduino-based) project using Eclipse IDE+PlatformIO <http://www.ikravets.com/computer-life/programming/2014/06/20/building-and-debugging-atmel-avr-arduino-based-project-using-eclipse-ideplatformio>`_
 
 See a full list with :ref:`articles`.
-
-Examples
---------
-
-"Blink" Project
-^^^^^^^^^^^^^^^
-
-Source code of `Eclipse "Blink" Project <https://github.com/platformio/platformio-examples/tree/develop/ide/eclipse>`_.

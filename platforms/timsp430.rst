@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -11,13 +11,16 @@
 
 .. _platform_timsp430:
 
-Platform ``timsp430``
-=====================
+TI MSP430
+=========
+:ref:`projectconf_env_platform` = ``timsp430``
+
 MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 
 For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/msp/overview.page>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------
@@ -43,18 +46,16 @@ Packages
 .. warning::
     **Linux Users**:
 
-    * Ubuntu/Debian users may need to add own "username" to the "dialout"
-      group if they are not "root", doing this issuing a
-      ``sudo usermod -a -G dialout yourusername``.
-    * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-      (an instruction is located in the file).
-    * Raspberry Pi users, please read this article
-      `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
+        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
+          (an instruction is located inside a file).
+        * Raspberry Pi users, please read this article
+          `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
 
-    **Windows Users:** Please check that you have correctly installed USB
-    driver from board manufacturer
+    **Windows Users:**
 
+        Please check that you have a correctly installed USB driver from board
+        manufacturer
 
 
 Frameworks
@@ -88,6 +89,8 @@ PanStamp
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -95,6 +98,8 @@ PanStamp
 
     * - ``panStampNRG``
       - `PanStamp NRG 1.1 <http://www.panstamp.com/product/197/>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - 
       - CC430F5137
       - 12 MHz
       - 32 Kb
@@ -108,6 +113,8 @@ TI
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -115,6 +122,8 @@ TI
 
     * - ``lpmsp430f5529``
       - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`Yes <piodebug>`
       - MSP430F5529
       - 16 MHz
       - 128 Kb
@@ -122,6 +131,8 @@ TI
 
     * - ``lpmsp430fr4133``
       - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`Yes <piodebug>`
       - MSP430FR4133
       - 8 MHz
       - 16 Kb
@@ -129,6 +140,8 @@ TI
 
     * - ``lpmsp430fr5739``
       - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`Yes <piodebug>`
       - MSP430FR5739
       - 16 MHz
       - 16 Kb
@@ -136,6 +149,8 @@ TI
 
     * - ``lpmsp430fr5969``
       - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`Yes <piodebug>`
       - MSP430FR5969
       - 8 MHz
       - 64 Kb
@@ -143,6 +158,8 @@ TI
 
     * - ``lpmsp430fr6989``
       - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`Yes <piodebug>`
       - MSP430FR6989
       - 8 MHz
       - 128 Kb
@@ -150,6 +167,8 @@ TI
 
     * - ``lpmsp430g2553``
       - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`Yes <piodebug>`
       - MSP430G2553
       - 16 MHz
       - 16 Kb

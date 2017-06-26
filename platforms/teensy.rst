@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -11,13 +11,16 @@
 
 .. _platform_teensy:
 
-Platform ``teensy``
-===================
+Teensy
+======
+:ref:`projectconf_env_platform` = ``teensy``
+
 Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
 For more detailed information please visit `vendor site <https://www.pjrc.com/teensy>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------
@@ -46,21 +49,20 @@ Packages
 .. warning::
     **Linux Users**:
 
-    * Ubuntu/Debian users may need to add own "username" to the "dialout"
-      group if they are not "root", doing this issuing a
-      ``sudo usermod -a -G dialout yourusername``.
-    * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-      (an instruction is located in the file).
-    * Raspberry Pi users, please read this article
-      `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
+        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
+          (an instruction is located inside a file).
+        * Raspberry Pi users, please read this article
+          `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
 
-    **Windows Users:** Teensy programming uses only Windows built-in HID
-    drivers. When Teensy is programmed to act as a USB Serial device,
-    Windows XP, Vista, 7 and 8 require `this serial driver
-    <http://www.pjrc.com/teensy/serial_install.exe>`_
-    is needed to access the COM port your program uses. No special driver
-    installation is necessary on Windows 10.
+    **Windows Users:**
+
+        Teensy programming uses only Windows built-in HID
+        drivers. When Teensy is programmed to act as a USB Serial device,
+        Windows XP, Vista, 7 and 8 require `this serial driver
+        <http://www.pjrc.com/teensy/serial_install.exe>`_
+        is needed to access the COM port your program uses. No special driver
+        installation is necessary on Windows 10.
 
 
 Frameworks
@@ -94,6 +96,8 @@ Teensy
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -101,6 +105,8 @@ Teensy
 
     * - ``teensy20``
       - `Teensy 2.0 <https://www.pjrc.com/store/teensy.html>`_
+      - :ref:`Teensy <platform_teensy>`
+      - 
       - ATMEGA32U4
       - 16 MHz
       - 32 Kb
@@ -108,6 +114,8 @@ Teensy
 
     * - ``teensy20pp``
       - `Teensy++ 2.0 <https://www.pjrc.com/store/teensypp.html>`_
+      - :ref:`Teensy <platform_teensy>`
+      - 
       - AT90USB1286
       - 16 MHz
       - 128 Kb
@@ -115,6 +123,8 @@ Teensy
 
     * - ``teensy30``
       - `Teensy 3.0 <https://www.pjrc.com/store/teensy3.html>`_
+      - :ref:`Teensy <platform_teensy>`
+      - 
       - MK20DX128
       - 48 MHz
       - 128 Kb
@@ -122,6 +132,8 @@ Teensy
 
     * - ``teensy31``
       - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html>`_
+      - :ref:`Teensy <platform_teensy>`
+      - 
       - MK20DX256
       - 72 MHz
       - 256 Kb
@@ -129,6 +141,8 @@ Teensy
 
     * - ``teensy35``
       - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html>`_
+      - :ref:`Teensy <platform_teensy>`
+      - 
       - MK64FX512
       - 120 MHz
       - 512 Kb
@@ -136,6 +150,8 @@ Teensy
 
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html>`_
+      - :ref:`Teensy <platform_teensy>`
+      - 
       - MK66FX1M0
       - 180 MHz
       - 1024 Kb
@@ -143,6 +159,8 @@ Teensy
 
     * - ``teensylc``
       - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html>`_
+      - :ref:`Teensy <platform_teensy>`
+      - 
       - MKL26Z64
       - 48 MHz
       - 64 Kb

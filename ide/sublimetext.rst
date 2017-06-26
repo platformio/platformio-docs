@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -19,28 +19,38 @@ The `Sublime Text <http://www.sublimetext.com/>`_ is a cross-platform text and s
 Refer to the `Sublime Text Documentation <http://docs.sublimetext.info/en/latest>`_
 page for more detailed information.
 
-.. image:: ../_static/ide-sublime-text-deviot.gif
-    :target: https://github.com/gepd/Deviot
+.. image:: ../_static/ide/sublimetext/ide-sublimetext-demo.png
+    :target: ../_images/ide-sublimetext-demo.png
 
-.. contents::
+.. contents:: Contents
+    :local:
+
+Deviot Plugin
+-------------
+
+We are glad to inform you about an awesome Sublime Text plugin for IoT development
+named `Deviot <https://github.com/gepd/Deviot>`_. It is based on
+:ref:`piocore` and will automatically install it for you. Please visit `official
+Deviot page <https://github.com/gepd/Deviot>`_ for the further installation
+steps and documentation.
+
+.. image:: ../_static/ide/sublimetext/ide-sublime-text-deviot.gif
+    :target: https://github.com/gepd/Deviot
 
 Integration
 -----------
 
-Deviot Plugin
-^^^^^^^^^^^^^
-
-We are glad to inform you about awesome Sublime Text plugin for IoT development
-named `Deviot <https://github.com/gepd/Deviot>`_. It is based on
-:ref:`core` and will automatically install it for you. Please visit `official
-Deviot page <https://github.com/gepd/Deviot>`_ for the further installation
-steps and documentation.
-
-.. image:: ../_static/ide-sublime-text-deviot.gif
-    :target: https://github.com/gepd/Deviot
-
 Project Generator
 ^^^^^^^^^^^^^^^^^
+
+Integration process consists of these steps:
+
+1. Open system Terminal and install :ref:`piocore`
+2. Create new folder for your project and change directory (``cd``) to it
+3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+4. Import project in IDE.
+
+------------
 
 Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <http://platformio.org/boards>`_
 command and generate project via :option:`platformio init --ide` command:
@@ -77,7 +87,7 @@ Manual Integration
 .. note::
     Please verify that folder where is located ``platformio`` program is added
     to `PATH (wiki) <https://en.wikipedia.org/wiki/PATH_(variable)>`_ environment
-    variable. See FAQ: :ref:`faq_troubleshooting_pionotfoundinpath`.
+    variable.
 
 Initial configuration
 ~~~~~~~~~~~~~~~~~~~~~
@@ -106,13 +116,13 @@ described below:
 
 Secondly, we need to select "PlatformIO" Build System from a list:
 
-.. image:: ../_static/ide-sublime-text-platformio-newproject-2.png
+.. image:: ../_static/ide/sublimetext/ide-sublimetext-newproject-1.png
 
 After that, we can use the necessary commands from
 ``Menu: Tools > Command Palette`` or with ``Ctrl+Shift+P`` (Windows/Linux)
 ``Cmd+Shift+P`` (Mac) shortcut.
 
-.. image:: ../_static/ide-sublime-text-platformio-newproject-3.png
+.. image:: ../_static/ide/sublimetext/ide-sublimetext-newproject-2.png
 
 Command Hotkeys
 '''''''''''''''
@@ -120,7 +130,7 @@ Command Hotkeys
 Sublime Text allows to bind own hotkey per command. Let's setup them
 for PlatformIO commands using shortcut ``Menu: Preferences > Key-Bindings - User``:
 
-.. image:: ../_static/ide-sublime-text-platformio-newproject-4.png
+.. image:: ../_static/ide/sublimetext/ide-sublimetext-newproject-3.png
 
 We are going to use these shortcuts:
 
@@ -186,10 +196,13 @@ Conclusion
 
 Taking everything into account, we can open project directory in Sublime Text using ``Menu: File > Open Folder`` and build it with shortcut ``Ctrl+B`` (Windows/Linux) or ``Cmd+B`` (Mac), clean project with shortcut ``F11`` and upload firmware to target with shortcut ``F12``.
 
-Examples
---------
+Debugging
+---------
 
-"Blink" Project
-^^^^^^^^^^^^^^^
+A debugging feature is provided by :ref:`piodebug` and new debug configuration
+named "PlatformIO Debugger" is created. No need to do extra configuration steps!
 
-Source code of `Sublime Text "Blink" Project <https://github.com/platformio/platformio-examples/tree/develop/ide/sublimetext>`_.
+1. Install `SublimeGDB <https://github.com/quarnster/SublimeGDB>`__ package
+2. Launch debugger with ``F5``
+3. Wait for a while, PlatformIO will prepare project for debugging and
+   session will be started soon.

@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -17,10 +17,10 @@ Installation
 .. note::
 
     Please note that you do not need to install **PlatformIO Core** if you
-    are going to use :ref:`ide_atom`. **PlatformIO Core** is built into
+    are going to use :ref:`pioide`. **PlatformIO Core** is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    Also, PlatformIO IDE allows to install :ref:`core` Shell Commands
+    Also, PlatformIO IDE allows to install :ref:`piocore` Shell Commands
     (``pio``, ``platformio``) globally to your system via
     ``Menu: PlatformIO > Install Shell Commands``.
 
@@ -31,6 +31,7 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `Samsung ARTIK <https://www.artik.io>`_, etc.).
 
 .. contents::
+    :local:
 
 System requirements
 -------------------
@@ -192,9 +193,12 @@ Development Version
 ~~~~~~~~~~~~~~~~~~~
 
 .. warning::
-    If you use :ref:`ide_atom`, please enable development version via
-    ``Menu PlatformIO: Settings > PlatformIO IDE > Use development version of
-    PlatformIO``.
+    If you use :ref:`pioide`, please enable development version:
+
+    * **Atom**: "Menu PlatformIO: Settings > PlatformIO IDE > Use development
+      version of PlatformIO Core"
+    * **VSCode**: Set ```platformio-ide.useDevelopmentPIOCore`` to ``true`` in
+      Settings.
 
 Install the latest PlatformIO from the ``develop`` branch:
 
@@ -217,6 +221,23 @@ To revert to the latest stable version
     pip uninstall platformio
     pip install -U platformio
 
+.. _piocore_uninstall:
+
+Uninstall PIO Core and dependent packages
+-----------------------------------------
+
+* Uninstall PIO Core tool
+
+    .. code-block:: bash
+
+        # uninstall standalone PIO Core installed via `pip`
+        pip uninstall platformio
+
+        # uninstall Homebrew's PIO Core (only macOS users if you installed it via Homebrew before)
+        brew uninstall platformio
+
+* Dependent packages, global libraries are installed to ``$HOME/.platformio``
+  folder (in user's HOME directory). Just remove it.
 
 Troubleshooting
 ---------------

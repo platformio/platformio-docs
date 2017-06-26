@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -23,7 +23,8 @@ location where |PIOAPICR| will have *HTTP* access.
 Updates to existing libraries are done every 24 hours. In case a more urgent
 update is required, you can post a request on PlatformIO `community <https://community.platformio.org/>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Source Code Location
 --------------------

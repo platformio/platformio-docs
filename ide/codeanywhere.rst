@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -23,8 +23,7 @@ you will need for any coding task are built into Codeanywhere, making
 development more productive and fun.
 
 .. tip::
-  `QUESTIONS? Chat with us! <https://pioplus.com>`_
-  (chat button is located in the bottom right corner)
+  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
 .. contents::
 
@@ -60,7 +59,7 @@ Integration
 .. image:: ../_static/ide/codeanywhere/ide-codeanywhere-connection-wizard.png
 
 4.  Open **SSH-Terminal** tab (right click on
-    ``Container (PlatformIO) > SSH Terminal``) and install :ref:`core` using
+    ``Container (PlatformIO) > SSH Terminal``) and install :ref:`piocore` using
     a next command
 
 .. code-block:: bash
@@ -121,7 +120,7 @@ Let's create our first PlatformIO-based Codeanywhere Project
 
 .. image:: ../_static/ide/codeanywhere/ide-codeanywhere-init-project.png
 
-3.  If you prefer to work with :ref:`core` CLI, then you can process project
+3.  If you prefer to work with :ref:`piocore` CLI, then you can process project
     using Cloud IDE SSH Terminal and the next commands:
 
     * :ref:`cmd_run` - build project locally (using Cloud IDE's virtual machine)

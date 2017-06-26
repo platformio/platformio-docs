@@ -1,4 +1,4 @@
-..  Copyright 2014-present PlatformIO <contact@platformio.org>
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
@@ -11,13 +11,16 @@
 
 .. _platform_intel_arc32:
 
-Platform ``intel_arc32``
-========================
+Intel ARC32
+===========
+:ref:`projectconf_env_platform` = ``intel_arc32``
+
 ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
 For more detailed information please visit `vendor site <http://www.intel.com/content/www/us/en/wearables/wearable-soc.html>`_.
 
-.. contents::
+.. contents:: Contents
+    :local:
 
 Packages
 --------
@@ -40,18 +43,16 @@ Packages
 .. warning::
     **Linux Users**:
 
-    * Ubuntu/Debian users may need to add own "username" to the "dialout"
-      group if they are not "root", doing this issuing a
-      ``sudo usermod -a -G dialout yourusername``.
-    * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-      (an instruction is located in the file).
-    * Raspberry Pi users, please read this article
-      `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
+        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
+          (an instruction is located inside a file).
+        * Raspberry Pi users, please read this article
+          `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
 
-    **Windows Users:** Please check that you have correctly installed USB
-    driver from board manufacturer
+    **Windows Users:**
 
+        Please check that you have a correctly installed USB driver from board
+        manufacturer
 
 
 Frameworks
@@ -82,6 +83,8 @@ Intel
 
     * - ID
       - Name
+      - Platform
+      - Debug
       - Microcontroller
       - Frequency
       - Flash
@@ -89,6 +92,8 @@ Intel
 
     * - ``genuino101``
       - `Arduino/Genuino 101 <https://www.arduino.cc/en/Main/ArduinoBoard101>`_
+      - :ref:`Intel ARC32 <platform_intel_arc32>`
+      - 
       - ARCV2EM
       - 32 MHz
       - 192 Kb
