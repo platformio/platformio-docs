@@ -54,7 +54,7 @@ I. Atom
   + *Windows*, ``Menu: File > Settings > Install``
   + *Linux*, ``Menu: Edit > Preferences > Install``
 
-2. **Search** for official ``platformio-ide`` package
+2. **Search** for official ``platformio-ide`` `package <https://atom.io/packages/platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
 .. image:: ../_static/ide/atom/ide-atom-pkg-installer.png
