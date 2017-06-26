@@ -276,3 +276,11 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # http://sphinx-doc.org/config.html#confval-linkcheck_timeout
 linkcheck_timeout = 10
 linkcheck_anchors = False
+
+html_context = {
+    "display_github": True,
+    "github_user": "platformio",
+    "github_repo": "platformio-docs",
+    "github_version": "develop",
+    "conf_py_path": "/"
+}
