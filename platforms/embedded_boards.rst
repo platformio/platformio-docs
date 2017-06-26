@@ -4252,7 +4252,7 @@ Silicon Labs
       - `Silicon Labs EFM32ZG-STK3200 (Zero Gecko) <https://developer.mbed.org/platforms/EFM32-Zero-Gecko/>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`Yes <piodebug>`
-      - EFM2ZG222F32
+      - EFM32ZG222F32
       - 24 MHz
       - 32 Kb
       - 4 Kb
@@ -4908,7 +4908,7 @@ WEMOS
       - 
       - ESP8266
       - 80 MHz
-      - 1024 Kb
+      - 4096 Kb
       - 80 Kb
 
     * - ``d1_mini_lite``
