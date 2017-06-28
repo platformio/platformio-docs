@@ -519,3 +519,8 @@ Articles / Manuals
 * Feb 25, 2016 - **NutDIY** - `PlatformIO Blink On Nodemcu Dev Kit V1.0 (Thai) <http://nutdiy.blogspot.com/2016/02/platformio-blink-on-nodemcu-dev-kit-v10.html>`_
 
 See a full list with :ref:`articles`.
+
+Changelog
+---------
+
+Please visit `releases page <https://github.com/platformio/platformio-atom-ide/releases>`_.

@@ -248,3 +248,8 @@ Please open PIO Terminal using :ref:`ide_vscode_toolbar` |pio_vscode_toolbar_ter
   * Change temporary password using :ref:`cmd_account_password` command
 
 .. |PIO_VSCODE_TOOLBAR_TERMINAL| image:: ../_static/ide/vscode/platformio-ide-vscode-toolbar-terminal.png
+
+Changelog
+---------
+
+Please visit `releases page <https://github.com/platformio/platformio-vscode-ide/releases>`_.
