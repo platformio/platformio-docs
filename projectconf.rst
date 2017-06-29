@@ -32,11 +32,11 @@ Multi-values option could be specified in 2 ways:
 .. code-block:: ini
 
     [platformio]
+    env_default = uno
     ; Unix
     lib_extra_dirs = ${env.HOME}/Documents/Arduino/libraries
     ; Windows
     lib_extra_dirs = ${env.HOMEDRIVE}${env.HOMEPATH}\Documents\Arduino\libraries
-
 
     [some_common_data]
     build_flags = -D VERSION=1.2.3 -D DEBUG=1
