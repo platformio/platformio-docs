@@ -42,7 +42,8 @@ Example:
     ; Windows
     lib_extra_dirs = ${env.HOMEDRIVE}${env.HOMEPATH}\Documents\Arduino\libraries
 
-
+    ; You MUST inject these options into [env:] section
+    ; using ${common.***} (see below)
     [common]
     build_flags = -D VERSION=1.2.3 -D DEBUG=1
     lib_deps_builtin =

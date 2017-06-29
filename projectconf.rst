@@ -38,7 +38,9 @@ Multi-values option could be specified in 2 ways:
     ; Windows
     lib_extra_dirs = ${env.HOMEDRIVE}${env.HOMEPATH}\Documents\Arduino\libraries
 
-    [some_common_data]
+    ; You MUST inject these options into [env:] section
+    ; using ${common_env_data.***} (see below)
+    [common_env_data]
     build_flags = -D VERSION=1.2.3 -D DEBUG=1
     lib_deps_builtin =
       SPI
@@ -53,17 +55,17 @@ Multi-values option could be specified in 2 ways:
     platform = atmelavr
     framework = arduino
     board = uno
-    build_flags = ${some_common_data.build_flags}
-    lib_deps = ${some_common_data.lib_deps_builtin}, ${some_common_data.lib_deps_external}
+    build_flags = ${common_env_data.build_flags}
+    lib_deps = ${common_env_data.lib_deps_builtin}, ${common_env_data.lib_deps_external}
 
     [env:nodemcuv2]
     platform = espressif8266
     framework = arduino
     board = nodemcuv2
-    build_flags = ${some_common_data.build_flags} -DSSID_NAME=HELLO -DSSID_PASWORD=WORLD
+    build_flags = ${common_env_data.build_flags} -DSSID_NAME=HELLO -DSSID_PASWORD=WORLD
     lib_deps =
-      ${some_common_data.lib_deps_builtin}
-      ${some_common_data.lib_deps_external}
+      ${common_env_data.lib_deps_builtin}
+      ${common_env_data.lib_deps_external}
       PubSubClient@2.6
       OneWire
 
