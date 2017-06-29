@@ -18,6 +18,7 @@ Section ``[platformio]``
     :local:
 
 A ``platformio`` section is used for overriding default configuration options
+for :ref:`piocore`.
 
 .. note::
     Relative path is allowed for directory option:

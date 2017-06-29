@@ -529,7 +529,7 @@ Please note that you can generate source filter "on-the-fly" using
 *Optional* | Type: ``String``
 
 Launch extra script before build process.
-More details :ref:`projectconf_extra_script`.
+More details :ref:`projectconf_extra_scripts`.
 
 **Example** (HAL-based library)
 

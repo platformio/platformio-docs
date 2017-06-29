@@ -92,7 +92,8 @@ which "uploader" tool uses when sending firmware to board.
 ^^^^^^^^^^^^^^^^
 
 Extra flags for uploader. Will be added to the end of uploader command. If you
-need to override uploader command or base flags please use :ref:`projectconf_extra_script`.
+need to override uploader command or base flags please use
+:ref:`projectconf_extra_scripts`.
 
 This option can be set by global environment variable
 :envvar:`PLATFORMIO_UPLOAD_FLAGS`.

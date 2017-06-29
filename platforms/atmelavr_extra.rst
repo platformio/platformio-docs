@@ -116,7 +116,7 @@ Custom Fuses
 ~~~~~~~~~~~~
 
 You can specify custom fuse bits. Please create custom
-:ref:`projectconf_extra_script` and override default "fuses" command:
+:ref:`projectconf_extra_scripts` and override default "fuses" command:
 
 ``platformio.ini``:
 
@@ -124,7 +124,7 @@ You can specify custom fuse bits. Please create custom
 
     [env:custom_fuses]
     platform = atmelavr
-    extra_script = extra_script.py
+    extra_scripts = extra_script.py
 
 
 ``extra_script.py``:

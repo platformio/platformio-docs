@@ -175,7 +175,7 @@ Before/Pre and After/Post build actions
 ---------------------------------------
 
 PlatformIO Build System has rich API that allows to attach different pre-/post
-actions (hooks). See features of :ref:`projectconf_extra_script` option for
+actions (hooks). See features of :ref:`projectconf_extra_scripts` option for
 :ref:`projectconf`.
 
 .. _faq_troubleshooting:

@@ -14,18 +14,18 @@
 Advanced options
 ~~~~~~~~~~~~~~~~
 
-.. _projectconf_extra_script:
+.. _projectconf_extra_scripts:
 
-``extra_script``
-^^^^^^^^^^^^^^^^
+``extra_scripts``
+^^^^^^^^^^^^^^^^^
 
 .. warning::
 
   This option is recommended for Advanced Users and requires Python language knowledge.
 
   We highly recommend to take a look at :ref:`projectconf_dynamic_build_flags`
-  option where you can use any programming language. Also, this option is very
-  good if you need to apply changes to the project before building/uploading
+  option where you can use any programming language. Also, this option is
+  useful if you need to apply changes to the project before building/uploading
   process:
 
   * Macro with the latest VCS revision/tag "on-the-fly"
@@ -38,13 +38,39 @@ Advanced options
 .. contents::
     :local:
 
-Allows to launch extra script using `SCons <http://www.scons.org>`_ software
-construction tool. For more details please follow to "Construction Environments"
-section of
-`SCons documentation <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
+Allows to launch extra scripts which are based on `SCons <http://www.scons.org>`_
+software construction tool. For more details please follow to
+"Construction Environments" section of `SCons documentation <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
+
+There 2 type of extra scripts:
+
+1. **PRE** - executes before a main script of :ref:`platforms`
+2. **POST** - executes after a main script of :ref:`platforms`
+
+
+Multiple extra scripts are allowed. Please split them via  ", "
+(comma + space) in the same line or use multi-line values.
+
+For example,
+
+.. code-block:: ini
+
+  [env:my_env_1]
+  ; without prefix, POST script
+  extra_scripts = post_extra_script.py
+
+  [env:my_env_2]
+  extra_scripts = pre:pre_extra_script1.py, pre:pre_extra_script2.py
+
+  [env:my_env_3]
+  extra_scripts =
+    pre:pre_extra_script.py
+    post:post_extra_script1.py
+    post_extra_script2.py
+
 
 This option can be set by global environment variable
-:envvar:`PLATFORMIO_EXTRA_SCRIPT`.
+:envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
 
 Take a look at the multiple snippets/answers for the user questions:
 
@@ -67,7 +93,7 @@ extra script will help:
 
     [env:env_extra_link_flags]
     platform = windows_x86
-    extra_script = extra_script.py
+    extra_scripts = extra_script.py
 
 ``extra_script.py`` (place it near ``platformio.ini``):
 
@@ -94,7 +120,7 @@ Example, specify own upload command for :ref:`platform_atmelavr`:
 
     [env:env_custom_uploader]
     platform = atmelavr
-    extra_script = /path/to/extra_script.py
+    extra_scripts = /path/to/extra_script.py
     custom_option = hello
 
 ``extra_script.py``:
@@ -130,7 +156,7 @@ when :option:`platformio run --target` is called with ``upload`` value.
 .. code-block:: ini
 
     [env:pre_and_post_hooks]
-    extra_script = extra_script.py
+    extra_scripts = extra_script.py
 
 ``extra_script.py``:
 

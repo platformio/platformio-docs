@@ -21,10 +21,57 @@ The Project configuration file is named ``platformio.ini``. This is a
 key / value pairs within the sections. Lines beginning with ``;``
 are ignored and may be used to provide comments.
 
+Multi-values option could be specified in 2 ways:
+
+1. Split values with ", " (comma + space)
+2. Use multi-line format, where each new line should start with 2 spaces
+   (minimum)
+
+**Example**
+
+.. code-block:: ini
+
+    [platformio]
+    ; Unix
+    lib_extra_dirs = ${env.HOME}/Documents/Arduino/libraries
+    ; Windows
+    lib_extra_dirs = ${env.HOMEDRIVE}${env.HOMEPATH}\Documents\Arduino\libraries
+
+
+    [some_common_data]
+    build_flags = -D VERSION=1.2.3 -D DEBUG=1
+    lib_deps_builtin =
+      SPI
+      Wire
+    lib_deps_external =
+        ArduinoJson@~5.6,!=5.4
+        https://github.com/gioblu/PJON.git#v2.0
+        https://github.com/me-no-dev/ESPAsyncTCP.git
+        https://github.com/adafruit/DHT-sensor-library/archive/master.zip
+
+    [env:uno]
+    platform = atmelavr
+    framework = arduino
+    board = uno
+    build_flags = ${some_common_data.build_flags}
+    lib_deps = ${some_common_data.lib_deps_builtin}, ${some_common_data.lib_deps_external}
+
+    [env:nodemcuv2]
+    platform = espressif8266
+    framework = arduino
+    board = nodemcuv2
+    build_flags = ${some_common_data.build_flags} -DSSID_NAME=HELLO -DSSID_PASWORD=WORLD
+    lib_deps =
+      ${some_common_data.lib_deps_builtin}
+      ${some_common_data.lib_deps_external}
+      PubSubClient@2.6
+      OneWire
+
+
 There are 2 system reserved sections:
 
-* Base PlatformIO settings: :ref:`projectconf_section_platformio`
-* Build Environment settings: :ref:`projectconf_section_env`
+* :ref:`piocore` settings: :ref:`projectconf_section_platformio`
+* Environment settings: :ref:`projectconf_section_env`
 
 The other sections can be used by users, for example, for
 :ref:`projectconf_dynamic_vars`. The sections and their allowable values are

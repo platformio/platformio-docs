@@ -137,9 +137,9 @@ Allows to set :ref:`projectconf` option :ref:`projectconf_src_build_flags`.
 
 Allows to set :ref:`projectconf` option :ref:`projectconf_src_filter`.
 
-.. envvar:: PLATFORMIO_EXTRA_SCRIPT
+.. envvar:: PLATFORMIO_EXTRA_SCRIPTS
 
-Allows to set :ref:`projectconf` option :ref:`projectconf_extra_script`.
+Allows to set :ref:`projectconf` option :ref:`projectconf_extra_scripts`.
 
 .. envvar:: PLATFORMIO_LIB_EXTRA_DIRS
 

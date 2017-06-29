@@ -90,7 +90,7 @@ Library Manager and Intelligent Build System
 * Show detailed build information about dependent libraries (Library Dependency Graph)
 * Support for the 3rd party manifests (Arduino IDE "library.properties" and
   ARM mbed "module.json")
-* Build System: Attach custom Before/Pre and After/Post actions for targets using :ref:`projectconf_extra_script`
+* Build System: Attach custom Before/Pre and After/Post actions for targets using :ref:`projectconf_extra_scripts`
 
 Command Line Interface
 ~~~~~~~~~~~~~~~~~~~~~~
