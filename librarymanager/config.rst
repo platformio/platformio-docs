@@ -516,7 +516,9 @@ details :ref:`projectconf_build_unflags`.
 *Optional* | Type: ``String`` or ``Array``
 
 Specify which source files should be included/excluded from build process.
-More details :ref:`projectconf_src_filter`.
+The path in filter should be **relative from a root** of library.
+
+See syntax in :ref:`projectconf_src_filter`.
 
 Please note that you can generate source filter "on-the-fly" using
 ``extraScript`` (see below)
@@ -609,7 +611,8 @@ Build System (``"libArchive": true``).
 
 Specify Library Dependency Finder Mode. See :ref:`ldf_mode` for details.
 
-**Examples**
+Examples
+--------
 
 1. Custom macros/defines
 
