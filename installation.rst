@@ -190,7 +190,7 @@ For upgrading ``platformio`` to the latest version:
 .. _installation_develop:
 
 Development Version
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 .. warning::
     If you use :ref:`pioide`, please enable development version:
