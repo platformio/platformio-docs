@@ -22,6 +22,7 @@ Frameworks
     cmsis
     energia
     espidf
+    esp8266-rtos-sdk
     libopencm3
     mbed
     pumbaa
