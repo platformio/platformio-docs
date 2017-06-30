@@ -56,7 +56,9 @@ Example:
     framework = arduino
     board = uno
     build_flags = ${common.build_flags}
-    lib_deps = ${common.lib_deps_builtin}, ${common.lib_deps_external}
+    lib_deps =
+      ${common.lib_deps_builtin}
+      ${common.lib_deps_external}
 
     [env:nodemcuv2]
     platform = espressif8266

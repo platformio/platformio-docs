@@ -32,43 +32,70 @@ Multi-values option could be specified in 2 ways:
 .. code-block:: ini
 
     [platformio]
-    env_default = uno
-    ; Unix
-    lib_extra_dirs = ${env.HOME}/Documents/Arduino/libraries
-    ; Windows
-    lib_extra_dirs = ${env.HOMEDRIVE}${env.HOMEPATH}\Documents\Arduino\libraries
+    env_default = nodemcuv2
 
     ; You MUST inject these options into [env:] section
     ; using ${common_env_data.***} (see below)
     [common_env_data]
     build_flags = -D VERSION=1.2.3 -D DEBUG=1
     lib_deps_builtin =
-      SPI
-      Wire
+        SPI
+        Wire
     lib_deps_external =
         ArduinoJson@~5.6,!=5.4
         https://github.com/gioblu/PJON.git#v2.0
-        https://github.com/me-no-dev/ESPAsyncTCP.git
         https://github.com/adafruit/DHT-sensor-library/archive/master.zip
-
-    [env:uno]
-    platform = atmelavr
-    framework = arduino
-    board = uno
-    build_flags = ${common_env_data.build_flags}
-    lib_deps = ${common_env_data.lib_deps_builtin}, ${common_env_data.lib_deps_external}
 
     [env:nodemcuv2]
     platform = espressif8266
     framework = arduino
     board = nodemcuv2
-    build_flags = ${common_env_data.build_flags} -DSSID_NAME=HELLO -DSSID_PASWORD=WORLD
-    lib_deps =
-      ${common_env_data.lib_deps_builtin}
-      ${common_env_data.lib_deps_external}
-      PubSubClient@2.6
-      OneWire
 
+    ; Build options
+    build_flags = ${common_env_data.build_flags} -DSSID_NAME=HELLO -DSSID_PASWORD=WORLD
+
+    ; Library options
+    lib_deps =
+        ${common_env_data.lib_deps_builtin}
+        ${common_env_data.lib_deps_external}
+        https://github.com/me-no-dev/ESPAsyncTCP.git
+        PubSubClient@2.6
+        OneWire
+
+    ; Serial Monitor options
+    monitor_baud = 15200
+
+    ; Unit Testing options
+    test_ignore = test_desktop
+
+    [env:bluepill_f103c8]
+    platform = ststm32
+    framework = arduino
+    board = bluepill_f103c8
+
+    ; Build options
+    build_flags = ${common_env_data.build_flags}
+
+    ; Library options
+    lib_deps =
+        ${common.lib_deps_external}
+
+    ; Debug options
+    debug_tool = custom
+    debug_server =
+        JLinkGDBServer
+        -singlerun
+        -if
+        SWD
+        -select
+        USB
+        -port
+        2331
+        -device
+        STM32F103C8
+
+    ; Unit Testing options
+    test_ignore = test_desktop
 
 There are 2 system reserved sections:
 
