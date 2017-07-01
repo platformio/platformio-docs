@@ -11,18 +11,10 @@
 
 .. _cmd_account:
 
-PIO Account
-===========
+platformio account
+==================
 
-Having **PIO Account** allows you to use extra professional features from
-`PlatformIO Plus <https://pioplus.com/>`__:
-
-* :ref:`pio_remote`
-* :ref:`piodebug`
-* :ref:`unit_testing`
-* :ref:`ide_cloud`
-
-A registration is **FREE**. Please open :ref:`pioide` Terminal and type:
+Helper command for :ref:`pioaccount`.
 
 .. code::
 

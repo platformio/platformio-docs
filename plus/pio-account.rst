@@ -9,33 +9,34 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account_register:
+.. _pioaccount:
 
-platformio account register
-===========================
+PIO Account
+===========
 
-.. contents::
+Having **PIO Account** allows you to use extra professional features from
+`PlatformIO Plus <https://pioplus.com/>`__:
 
-Usage
------
+* :ref:`pioremote`
+* :ref:`piodebug`
+* :ref:`unit_testing`
+* Integration with :ref:`ide_cloud`
 
-.. code-block:: bash
+A registration is **FREE**.
 
-    platformio account register [OPTIONS]
-    pio account register [OPTIONS]
+PlatformIO IDE for Atom
+-----------------------
 
-Description
------------
+:ref:`ide_atom` has built-in UI to manage PIO Account. You can register new
+account, reset a password or fetch authentication token.
 
-Create a new :ref:`pioaccount`. A registration is FREE.
+.. image:: ../_static/ide/atom/ide-atom-account-modal-login.png
 
-Options
-~~~~~~~
 
-.. program:: platformio account register
+User Guide (CLI)
+----------------
 
-.. option::
-    --username, -u
+.. toctree::
+    :maxdepth: 2
 
-User name (E-Mail). You can omit this option and enter E-Mail in Register
-Wizard later.
+    ../userguide/account/index

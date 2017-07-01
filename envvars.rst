@@ -55,8 +55,8 @@ PlatformIO uses it to disable prompts and progress bars. In other words,
 .. envvar:: PLATFORMIO_AUTH_TOKEN
 
 Allows to specify Personal Authentication Token that could be used for
-automatic login in to :ref:`cmd_account`. It is very useful for :ref:`ci`
-systems and :ref:`pio_remote` operations where you are not able manually authorize.
+automatic login in to :ref:`pioaccount`. It is very useful for :ref:`ci`
+systems and :ref:`pioremote` operations where you are not able manually authorize.
 
 You can get own Personal Authentication Token using :ref:`cmd_account_token`
 command.

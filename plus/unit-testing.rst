@@ -111,7 +111,7 @@ Remote
 
 Allows you to run tests on a remote machine or remote target devices (boards)
 without having to depend on OS software, extra software, SSH, VPN or opening
-network ports. Remote Unit Testing works in pair with :ref:`pio_remote`. In this
+network ports. Remote Unit Testing works in pair with :ref:`pioremote`. In this
 case, you need to use the special command :ref:`cmd_remote_test`.
 
 PlatformIO supports multiple :ref:`ci` systems where you can run unit tests

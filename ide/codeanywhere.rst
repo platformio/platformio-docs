@@ -29,8 +29,8 @@ development more productive and fun.
 
 .. note::
 
-    1. Please make sure to read :ref:`pio_remote` guide first.
-    2. You need :ref:`cmd_account` if you don't have it. Registration is FREE.
+    1. Please make sure to read :ref:`pioremote` guide first.
+    2. You need :ref:`pioaccount` if you don't have it. Registration is FREE.
     3. You should have a running :ref:`cmd_remote_agent` on a remote machine
        where hardware devices are connected physically or accessible for the
        remote operations. See **PIO Remote** :ref:`pio_remote_quickstart` for details.
@@ -68,7 +68,7 @@ Integration
 
 .. image:: ../_static/ide/codeanywhere/ide-codeanywhere-install-pio-cli.png
 
-5.  Log in to :ref:`cmd_account` using :ref:`cmd_account_login` command.
+5.  Log in to :ref:`pioaccount` using :ref:`cmd_account_login` command.
 
 
 Quick Start
@@ -157,7 +157,7 @@ command to this button.
 Remote Device Manager
 ---------------------
 
-Remote Device Manager works in pair with :ref:`pio_remote`.
+Remote Device Manager works in pair with :ref:`pioremote`.
 You can list remote devices that are connected to host machine where
 :ref:`cmd_remote_agent` is started or are visible for it.
 
@@ -173,7 +173,7 @@ You can list remote devices that are connected to host machine where
 Remote Firmware Uploading
 -------------------------
 
-Remote Firmware Uploading works in pair with :ref:`pio_remote`.
+Remote Firmware Uploading works in pair with :ref:`pioremote`.
 You can deploy firmware to any devices which are visible for :ref:`cmd_remote_agent`.
 
 1. Open Cloud IDE SSH Terminal
@@ -188,7 +188,7 @@ You can deploy firmware to any devices which are visible for :ref:`cmd_remote_ag
 Remote Serial Port Monitor
 --------------------------
 
-Remote Serial Port Monitor works in pair with :ref:`pio_remote`.
+Remote Serial Port Monitor works in pair with :ref:`pioremote`.
 You can read or send data to any device that is connected to host machine
 where :ref:`cmd_remote_agent` is started.
 To list active agents please use this command :ref:`cmd_remote_agent_list`.

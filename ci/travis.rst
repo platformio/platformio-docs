@@ -49,7 +49,7 @@ and `general build configuration <http://docs.travis-ci.com/user/customizing-the
 guides first.
 
 .. note::
-    If you are going to use PlatformIO :ref:`unit_testing` or :ref:`pio_remote`
+    If you are going to use PlatformIO :ref:`unit_testing` or :ref:`pioremote`
     you will need to define :envvar:`PLATFORMIO_AUTH_TOKEN` environment
     variable in project settings. See
     `Defining Variables in Repository Settings <https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings>`_

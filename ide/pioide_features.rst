@@ -18,7 +18,7 @@
     - 10+ frameworks
 
 * :ref:`piodebug`
-* :ref:`pio_remote`
+* :ref:`pioremote`
 * :ref:`unit_testing`
 * C/C++ Intelligent Code Completion
 * C/C++ Smart Code Linter for rapid professional development

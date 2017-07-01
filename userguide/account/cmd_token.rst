@@ -28,7 +28,7 @@ Description
 -----------
 
 Get or regenerate Personal Authentication Token. It is very useful for :ref:`ci`
-systems, :ref:`pio_remote` operations where you are not able to authorize manually.
+systems, :ref:`pioremote` operations where you are not able to authorize manually.
 
 PlatformIO handles Personal Authentication Token from environment variable
 :envvar:`PLATFORMIO_AUTH_TOKEN`.

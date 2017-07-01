@@ -18,7 +18,7 @@ Start :ref:`cmd_remote_agent` on a host machine and work remotely with
 your devices **WITHOUT** extra software, services, SSH, VPN, tunneling or
 opening incoming network ports.
 
-:ref:`pio_remote` supports wired and wireless devices. Wired devices should be
+:ref:`pioremote` supports wired and wireless devices. Wired devices should be
 connected physically to host machine where :ref:`cmd_remote_agent` is started,
 where wireless devices should be visible for :ref:`cmd_remote_agent` to provide
 network operations Over-The-Air (OTA).
@@ -42,7 +42,7 @@ Usage
 Description
 ~~~~~~~~~~~
 
-List active :ref:`cmd_remote_agent` s started using own :ref:`cmd_account`
+List active :ref:`cmd_remote_agent` s started using own :ref:`pioaccount`
 or shared with you by other PlatformIO developers.
 
 Example
@@ -98,7 +98,7 @@ commands. Good names are home, office, lab or etc.
     -s, --share
 
 Share your agent/devices with other PlatformIO developers who have
-:ref:`cmd_account`: friends, co-workers, team, etc.
+:ref:`pioaccount`: friends, co-workers, team, etc.
 
 The valid value for ``--share`` option is E-Mail address that was used for
 :ref:`cmd_account_register` command.

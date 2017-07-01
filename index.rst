@@ -57,6 +57,7 @@ Contents
     :caption: PlatformIO Plus
     :maxdepth: 1
 
+    plus/pio-account
     plus/pio-remote
     plus/debugging
     plus/unit-testing

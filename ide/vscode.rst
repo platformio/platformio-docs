@@ -72,11 +72,11 @@ Setting Up the Project
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-select-board.png
 
-4. Create FREE :ref:`cmd_account` which opens access to extra features, such as:
+4. Create FREE :ref:`pioaccount` which opens access to extra features, such as:
 
     * :ref:`piodebug`
     * :ref:`unit_testing`
-    * :ref:`pio_remote`
+    * :ref:`pioremote`
 
   Please open PIO Terminal using :ref:`ide_vscode_toolbar` |pio_vscode_toolbar_terminal|
 
@@ -234,11 +234,11 @@ Please navigate to FAQ :ref:`faq_install_shell_commands`.
 PIO Account
 ~~~~~~~~~~~
 
-Create FREE :ref:`cmd_account` which opens access to extra features, such as:
+Create FREE :ref:`pioaccount` which opens access to extra features, such as:
 
   * :ref:`piodebug`
   * :ref:`unit_testing`
-  * :ref:`pio_remote`
+  * :ref:`pioremote`
 
 Please open PIO Terminal using :ref:`ide_vscode_toolbar` |pio_vscode_toolbar_terminal|
 
