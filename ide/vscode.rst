@@ -25,7 +25,7 @@ TypeScript and Node.js and has a rich ecosystem of extensions for other
 languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unity)
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode.png
-    :target: https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide
+    :target: ../_images/platformio-ide-vscode.png
 
 .. contents:: Contents
     :local:

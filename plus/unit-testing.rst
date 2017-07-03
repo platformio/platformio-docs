@@ -147,7 +147,7 @@ Workflow
         ;   Library options: dependencies, extra library storages
         ;
         ; Please visit documentation for the other options and examples
-        ; http://docs.platformio.org/en/stable/projectconf.html
+        ; http://docs.platformio.org/page/projectconf.html
 
         ;
         ; Embedded platforms
@@ -368,7 +368,7 @@ Source files
       ;   Library options: dependencies, extra library storages
       ;
       ; Please visit documentation for the other options and examples
-      ; http://docs.platformio.org/en/stable/projectconf.html
+      ; http://docs.platformio.org/page/projectconf.html
 
 
       [env:uno]

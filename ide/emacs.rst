@@ -22,8 +22,8 @@ with extensions to support text editing.
 Refer to the `Emacs Documentation <https://www.gnu.org/software/emacs/#Manuals>`_
 page for more detailed information.
 
-.. image:: ../_static/ide-platformio-emacs.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-emacs.png
+.. image:: ../_static/ide/emacs/ide-platformio-emacs.png
+    :target: ../_images/ide-platformio-emacs.png
 
 .. contents::
 

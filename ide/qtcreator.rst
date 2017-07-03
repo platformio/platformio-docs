@@ -19,8 +19,8 @@ The `Qt Creator <https://github.com/qtproject/qt-creator>`_ is an open source cr
 Refer to the `Qt-creator Manual <http://doc.qt.io/qtcreator/>`_
 page for more detailed information.
 
-.. image:: ../_static/ide-platformio-qtcreator-7.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-qtcreator-7.png
+.. image:: ../_static/ide/qtcreator/ide-qtcreator-7.png
+    :target: ../_images/ide-qtcreator-7.png
 
 .. contents::
 
@@ -85,8 +85,8 @@ Then:
    directory (``*.c, *.cpp, *.ino, etc.``)
 8. Build project: ``Menu: Build > Build All``.
 
-.. image:: ../_static/ide-platformio-qtcreator-3.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-qtcreator-3.png
+.. image:: ../_static/ide/qtcreator/ide-qtcreator-3.png
+    :target: ../_images/ide-qtcreator-3.png
 
 .. warning::
     The libraries which are added, installed or used in the project
@@ -101,17 +101,17 @@ Setup New Project
 
 First of all, let's create new project from Qt Creator Start Page: ``New Project`` or using ``Menu: File > New File or Project``, then select project with ``Empty Qt Project`` type (``Other Project > Empty Qt Project``), fill ``Name``, ``Create in``.
 
-.. image:: ../_static/ide-platformio-qtcreator-1.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-qtcreator-1.png
+.. image:: ../_static/ide/qtcreator/ide-qtcreator-1.png
+    :target: ../_images/ide-qtcreator-1.png
 
 On the next steps select any available kit and click Finish button.
 
-.. image:: ../_static/ide-platformio-qtcreator-2.png
+.. image:: ../_static/ide/qtcreator/ide-qtcreator-2.png
 
 Secondly, we need to delete default build and clean steps and configure project with PlatformIO Build System (click on Projects label on left menu or ``Ctrl+5`` shortcut):
 
-.. image:: ../_static/ide-platformio-qtcreator-3.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-qtcreator-3.png
+.. image:: ../_static/ide/qtcreator/ide-qtcreator-3.png
+    :target: ../_images/ide-qtcreator-3.png
 
 Thirdly, change project file by adding path to directories with header files. Please edit project file to match the following contents:
 
@@ -127,8 +127,8 @@ Thirdly, change project file by adding path to directories with header files. Pl
     INCLUDEPATH += "$${HOMEDIR}/.platformio/packages/framework-arduinoavr/cores/arduino"
     INCLUDEPATH += "$${HOMEDIR}/.platformio/packages/toolchain-atmelavr/avr/include"
 
-.. image:: ../_static/ide-platformio-qtcreator-4.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-qtcreator-4.png
+.. image:: ../_static/ide/qtcreator/ide-qtcreator-4.png
+    :target: ../_images/ide-qtcreator-4.png
 
 First program in Qt Creator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -138,8 +138,8 @@ Simple "Blink" project will consist from two files:
 2. The main "C" source file named ``main.c`` must be located in the ``src`` directory.
 Let's create new text file named ``main.c`` using ``Menu: New File or Project > General > Text File``:
 
-.. image:: ../_static/ide-platformio-qtcreator-5.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-qtcreator-5.png
+.. image:: ../_static/ide/qtcreator/ide-qtcreator-5.png
+    :target: ../_images/ide-qtcreator-5.png
 
 Copy the source code which is described below to file ``main.c``.
 
@@ -163,8 +163,8 @@ Copy the source code which is described below to file ``main.c``.
 
 3. Locate the project configuration file named ``platformio.ini`` at the root of the project directory and open it.
 
-.. image:: ../_static/ide-platformio-qtcreator-6.png
-    :target: http://docs.platformio.org/en/stable/_static/ide-platformio-qtcreator-6.png
+.. image:: ../_static/ide/qtcreator/ide-qtcreator-6.png
+    :target: ../_images/ide-qtcreator-6.png
 
 Edit the content to match the code described below.
 
@@ -177,7 +177,7 @@ Edit the content to match the code described below.
     ;   Library options: dependencies, extra library storages
     ;
     ; Please visit documentation for the other options and examples
-    ; http://docs.platformio.org/en/stable/projectconf.html
+    ; http://docs.platformio.org/page/projectconf.html
 
     [env:arduino_uno]
     platform = atmelavr
