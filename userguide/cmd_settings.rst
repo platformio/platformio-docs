@@ -43,7 +43,7 @@ Settings
 ``auto_update_libraries``
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:Default:   Yes
+:Default:   No
 :Values:    Yes/No
 
 Automatically update libraries.
@@ -53,7 +53,7 @@ Automatically update libraries.
 ``auto_update_platforms``
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:Default:   Yes
+:Default:   No
 :Values:    Yes/No
 
 Automatically update platforms.
