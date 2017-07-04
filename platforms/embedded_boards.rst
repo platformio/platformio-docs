@@ -3426,6 +3426,48 @@ RepRap
       - 256 Kb
       - 8 Kb
 
+RushUp
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``cloud_jam``
+      - `RushUp Cloud-JAM <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F401RET6
+      - 84 MHz
+      - 512 Kb
+      - 96 Kb
+
+    * - ``cloud_jam_l4``
+      - `RushUp Cloud-JAM L4 <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L476RGT6
+      - 80 MHz
+      - 1024 Kb
+      - 128 Kb
+
+    * - ``kitra_520``
+      - `RushUp Kitra 520 <https://www.rushup.tech/kitra>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
+      - EXYNOS3250
+      - 1000 MHz
+      - 4194304 Kb
+      - 524288 Kb
+
 SODAQ
 ~~~~~
 
