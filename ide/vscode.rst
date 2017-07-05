@@ -193,6 +193,11 @@ Use development version of :ref:`piocore`, default configuration is ``false``.
 Automatically rebuild C/C++ Project Index when :ref:`projectconf` is changed
 or when new libraries are installed, default configuration is ``true``.
 
+``platformio-ide.forceUploadAndMonitor``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Force "Upload and Monitor" task for Upload (``platformio-ide.upload``) command,
+default configuration is ``false``.
+
 ``platformio-ide.customPATH``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Custom PATH for ``platformio`` command. Paste here the result of ``echo $PATH``
