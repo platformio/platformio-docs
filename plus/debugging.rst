@@ -72,21 +72,15 @@ Configuration
 * :ref:`projectconf_debug_server`
 * :ref:`projectconf_debug_port`
 
-User Guide (CLI)
-----------------
-
-.. toctree::
-    :maxdepth: 3
-
-    platformio debug <../userguide/cmd_debug>
-
-
 .. _debugging_tools:
 
 Tools
 -----
 
 You can change debugging tool via :ref:`projectconf_debug_tool` option.
+
+.. contents::
+    :local:
 
 .. _debugging_tool_blackmagic:
 
@@ -100,6 +94,9 @@ microprocessors. It is able to control and examine the state of the target
 microprocessor using a JTAG or Serial Wire Debugging (SWD) port and on-chip
 debug logic provided by the microprocessor. The probe connects to a host
 computer using a standard USB interface.
+
+Also, see :ref:`debugging_tool_custom` debugging configuration with
+Black Magic Probe.
 
 `More details <https://github.com/blacksphere/blackmagic/wiki>`__
 
@@ -230,80 +227,131 @@ Custom debugging configuration:
 * :ref:`projectconf_debug_port`
 
 
-**Examples**
+Examples
+^^^^^^^^
 
-1. Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
+.. contents::
+    :local:
 
-  * Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/>`_
-  * `Convert ST-LINK On-Board Into a J-Link <https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/>`_
+Black Magic Probe
+'''''''''''''''''
 
-  .. note::
+Black Magic Probe with a custom :ref:`projectconf_debug_port` (list ports
+with :ref:`cmd_device_list`)
 
-    You can use configuration below in pair with other boards, not only with ST
-    Nucleo F446RE. In this case, please replace ``STM32F446RE`` with
-    your own device name in ``debug_server`` option.
+.. code-block:: ini
 
-    See full list with `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php>`__.
+  [env:debug]
+  platform = ...
+  board = ...
+  framework = ...
+  debug_tool = custom
+  ; set here a valid port...
+  debug_port = /dev/cu.usbmodem7BB07991
+  debug_init_cmds =
+    target extended-remote $DEBUG_PORT
+    monitor swdp_scan
+    attach 1
+    set mem inaccessible-by-default off
+    file "$PROG_PATH"
+    $INIT_BREAK
+    $LOAD_CMD
+
+J-Link and ST Nucleo
+''''''''''''''''''''
+
+Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
+
+* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/>`_
+* `Convert ST-LINK On-Board Into a J-Link <https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/>`_
+
+.. note::
+
+  You can use configuration below in pair with other boards, not only with ST
+  Nucleo F446RE. In this case, please replace ``STM32F446RE`` with
+  your own device name in ``debug_server`` option.
+
+  See full list with `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php>`__.
 
 
-  .. code-block:: ini
+.. code-block:: ini
 
-      [env:debug_jlink]
-      platform = ststm32
-      framework = mbed
-      board = nucleo_f446re
-      debug_tool = custom
-      debug_server =
-        /set/path/to/JLinkGDBServerCL
-        -singlerun
-        -if
-        SWD
-        -select
-        USB
-        -port
-        2331
-        -device
-        STM32F446RE
+    [env:debug_jlink]
+    platform = ststm32
+    framework = mbed
+    board = nucleo_f446re
+    debug_tool = custom
+    debug_server =
+      /set/path/to/JLinkGDBServerCL
+      -singlerun
+      -if
+      SWD
+      -select
+      USB
+      -port
+      2331
+      -device
+      STM32F446RE
 
-2. On-board ST-Link V2/V2-1 in pair with `ST-Util GDB Server <https://github.com/texane/stlink>`_:
 
-  .. code-block:: ini
+ST-Util and ST-Link
+'''''''''''''''''''
 
-      [env:debug]
-      platform = ststm32
-      framework = mbed
-      board = ...
-      debug_tool = custom
-      debug_port = :4242
-      debug_server = $PLATFORMIO_HOME_DIR/packages/tool-stlink/st-util
+On-board ST-Link V2/V2-1 in pair with `ST-Util GDB Server <https://github.com/texane/stlink>`_:
 
-3. On-board ST-Link V2/V2-1 in pair with `OpenOCD GDB Server <http://openocd.org>`_:
+.. code-block:: ini
 
-  .. code-block:: ini
+    [env:debug]
+    platform = ststm32
+    framework = mbed
+    board = ...
+    debug_tool = custom
+    debug_port = :4242
+    debug_server = $PLATFORMIO_HOME_DIR/packages/tool-stlink/st-util
 
-      [env:debug]
-      platform = ststm32
-      framework = mbed
-      board = ...
-      debug_tool = custom
-      debug_server =
-        $PLATFORMIO_HOME_DIR/packages/tool-openocd/bin/openocd
-        -f
-        $PLATFORMIO_HOME_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg
+OpenOCD and ST-Link
+'''''''''''''''''''
 
-4. Using pyOCD for CMSIS-DAP based boards
+On-board ST-Link V2/V2-1 in pair with `OpenOCD GDB Server <http://openocd.org>`_:
 
-  Firstly, please install `pyOCD <https://github.com/mbedmicro/pyOCD>`__ and
-  check that ``pyocd-gdbserver --version`` command works.
+.. code-block:: ini
 
-  .. code-block:: ini
+    [env:debug]
+    platform = ststm32
+    framework = mbed
+    board = ...
+    debug_tool = custom
+    debug_server =
+      $PLATFORMIO_HOME_DIR/packages/tool-openocd/bin/openocd
+      -f
+      $PLATFORMIO_HOME_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg
 
-      [env:debug]
-      platform = ...
-      board = ...
-      framework = mbed
-      debug_tool = custom
-      debug_server = pyocd-gdbserver
+pyOCD and CMSIS-DAP
+'''''''''''''''''''
+
+Using pyOCD for CMSIS-DAP based boards
+
+Firstly, please install `pyOCD <https://github.com/mbedmicro/pyOCD>`__ and
+check that ``pyocd-gdbserver --version`` command works.
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ...
+    board = ...
+    framework = mbed
+    debug_tool = custom
+    debug_server = pyocd-gdbserver
+
+
+User Guide (CLI)
+----------------
+
+.. toctree::
+    :maxdepth: 3
+
+    platformio debug <../userguide/cmd_debug>
+
 
 .. _debugging_platforms:
 
@@ -325,7 +373,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
