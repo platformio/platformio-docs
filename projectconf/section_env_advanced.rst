@@ -14,6 +14,8 @@
 Advanced options
 ~~~~~~~~~~~~~~~~
 
+.. versionadded:: 3.4.1
+
 .. _projectconf_extra_scripts:
 
 ``extra_scripts``
@@ -38,9 +40,14 @@ Advanced options
 .. contents::
     :local:
 
-Allows to launch extra scripts which are based on `SCons <http://www.scons.org>`_
-software construction tool. For more details please follow to
-"Construction Environments" section of `SCons documentation <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
+Allows to launch extra scripts (based on `SCons <http://www.scons.org>`_
+software construction tool) while processing environment. For more details
+please follow to "Construction Environments" section of `SCons documentation <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
+
+.. warning::
+  You can not run/debug these scripts directly with Python interpreter. They
+  will be loaded automatically when processing project environment using
+  :ref:`cmd_run` command.
 
 There 2 type of extra scripts:
 
@@ -56,13 +63,16 @@ For example,
 .. code-block:: ini
 
   [env:my_env_1]
+  platform = ...
   ; without prefix, POST script
   extra_scripts = post_extra_script.py
 
   [env:my_env_2]
+  platform = ...
   extra_scripts = pre:pre_extra_script1.py, pre:pre_extra_script2.py
 
   [env:my_env_3]
+  platform = ...
   extra_scripts =
     pre:pre_extra_script.py
     post:post_extra_script1.py
