@@ -30,7 +30,7 @@ For this purpose PlatformIO has special macro definitions that should be added t
     * - ``PIO_FRAMEWORK_MBED_FILESYSTEM_PRESENT``
       - Build the project with enabled ``filesystem`` library
 
-An example of :ref:`projectconf` with enabled ``events`` library 
+An example of :ref:`projectconf` with enabled ``events`` library
 
 .. code-block:: ini
 
@@ -38,8 +38,8 @@ An example of :ref:`projectconf` with enabled ``events`` library
     platform = wiznet7500
     framework = mbed
     board = wizwiki_w7500p
-    build_flags = -DPIO_FRAMEWORK_MBED_EVENTS_PRESENT
-    
+    build_flags = -D PIO_FRAMEWORK_MBED_EVENTS_PRESENT
+
 
 An example of :ref:`projectconf` with ``events`` and ``rtos`` libraries
 
@@ -49,7 +49,7 @@ An example of :ref:`projectconf` with ``events`` and ``rtos`` libraries
     platform = nordicnrf52
     framework = mbed
     board = nrf52_dk
-    build_flags = -DPIO_FRAMEWORK_MBED_EVENTS_PRESENT -DPIO_FRAMEWORK_MBED_RTOS_PRESENT
+    build_flags = -D PIO_FRAMEWORK_MBED_EVENTS_PRESENT -D PIO_FRAMEWORK_MBED_RTOS_PRESENT
 
 An example of :ref:`projectconf` with ``filesystem`` library
 
@@ -59,7 +59,7 @@ An example of :ref:`projectconf` with ``filesystem`` library
     platform = ststm32
     framework = mbed
     board = nucleo_f767zi
-    build_flags = -DPIO_FRAMEWORK_MBED_FILESYSTEM_PRESENT
+    build_flags = -D PIO_FRAMEWORK_MBED_FILESYSTEM_PRESENT
 
 Articles
 --------
