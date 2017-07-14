@@ -373,7 +373,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
@@ -470,7 +470,7 @@ Adafruit
     * - ``adafruit_circuitplayground_m0``
       - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -479,7 +479,7 @@ Adafruit
     * - ``adafruit_feather_m0``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -488,7 +488,7 @@ Adafruit
     * - ``adafruit_metro_m0``
       - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -512,7 +512,7 @@ Arduino
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -521,7 +521,7 @@ Arduino
     * - ``mzeroUSB``
       - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -1835,7 +1835,7 @@ SparkFun
     * - ``sparkfun_samd21_dev_usb``
       - `SparkFun SAMD21 Dev Breakout <https://www.sparkfun.com/products/13672>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -1844,7 +1844,7 @@ SparkFun
     * - ``sparkfun_samd21_mini_usb``
       - `SparkFun SAMD21 Mini Breakout <https://www.sparkfun.com/products/13664>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
