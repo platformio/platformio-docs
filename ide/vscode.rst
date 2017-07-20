@@ -177,6 +177,46 @@ Key Bindings: Building / Uploading / Other Tasks
 * ``ctrl+alt+t`` Run Other Tasks (Upload using Programmer, Upload SPIFFS
   image, Test Project, Update packages and libraries, Upgrade :ref:`piocore`)
 
+Task Runner
+~~~~~~~~~~~
+
+PlatformIO IDE provides base tasks (Build, Upload, Clean, Monitor, etc) and
+custom tasks per :ref:`projectconf` environment (``[env:***]``). A default
+behavior is to use Terminal Panel for presentation. Also, we use dedicated
+panel per unique task.
+
+PlatformIO IDE provides own Problems Matcher named ``$platformio``.
+You can use it later if decide to change base task settings.
+
+You can override existing task with own presentation options. For example,
+let configure PlatformIO Task Runner to use NEW Terminal panel per each "Build"
+command:
+
+1. Please click on "gear" icon near "Build" task in ``Menu > Tasks``
+2. Replace template in ``tasks.json`` with this code
+
+  .. code-block:: json
+
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "type": "PlatformIO",
+                "args": [
+                    "run"
+                ],
+                "problemMatcher": [
+                    "$platformio"
+                ],
+                "presentation": {
+                    "panel": "new"
+                }
+            }
+        ]
+    }
+
+See more options in `official VSCode documentation <https://code.visualstudio.com/docs/editor/tasks#_output-behavior>`__.
+
 Extension Settings
 ~~~~~~~~~~~~~~~~~~
 
