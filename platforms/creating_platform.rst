@@ -77,6 +77,9 @@ Packages
     * - `framework-arduinosam <http://arduino.cc/en/Reference/HomePage>`__
       - Arduino Wiring-based Framework (SAM Core, 1.6)
 
+    * - `framework-arduinostm32mxchip <https://microsoft.github.io/azure-iot-developer-kit/>`__
+      - Arduino Wiring-based Framework (ST STM32 MXChip Core)
+
     * - `framework-arduinoststm32 <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
       - Arduino Wiring-based Framework (STM32 Core)
 

@@ -1270,7 +1270,7 @@ DycodeX
       - RAM
 
     * - ``espectro``
-      - `ESPrectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
+      - `ESPectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 
       - ESP8266
@@ -1699,6 +1699,15 @@ Freescale
       - MK64FN1M0VLL12
       - 120 MHz
       - 1024 Kb
+      - 256 Kb
+
+    * - ``frdm_k66f``
+      - `Freescale Kinetis FRDM-K66F <https://developer.mbed.org/platforms/FRDM-K66F/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MK66FN2M0VMD18
+      - 180 MHz
+      - 2048 Kb
       - 256 Kb
 
     * - ``frdm_kl05z``
@@ -2327,6 +2336,30 @@ LowPowerLab
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+MXChip
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mxchip_az3166``
+      - `Microsoft Azure IoT Development Kit (MXChip AZ3166) <https://microsoft.github.io/azure-iot-developer-kit/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
 
 MakerAsia
 ~~~~~~~~~
@@ -3704,6 +3737,15 @@ ST
       - 32 MHz
       - 128 Kb
       - 16 Kb
+
+    * - ``disco_l475vg_iot01a``
+      - `ST DISCO-L475VG-IOT01A <https://developer.mbed.org/platforms/ST-Discovery-L475E-IOT01A/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L475VGT6
+      - 80 MHz
+      - 1024 Kb
+      - 128 Kb
 
     * - ``disco_l476vg``
       - `ST 32L476GDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF261635>`_

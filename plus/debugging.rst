@@ -379,7 +379,7 @@ Platforms
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
     * - :ref:`platform_wiznet7500`
-      - The IOP (Internet Offload Processor) W7500  is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
+      - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -803,6 +803,15 @@ Freescale
       - 1024 Kb
       - 256 Kb
 
+    * - ``frdm_k66f``
+      - `Freescale Kinetis FRDM-K66F <https://developer.mbed.org/platforms/FRDM-K66F/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - MK66FN2M0VMD18
+      - 180 MHz
+      - 2048 Kb
+      - 256 Kb
+
     * - ``frdm_kl05z``
       - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
@@ -958,6 +967,30 @@ JKSoft
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+MXChip
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mxchip_az3166``
+      - `Microsoft Azure IoT Development Kit (MXChip AZ3166) <https://microsoft.github.io/azure-iot-developer-kit/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
 
 Micromint
 ~~~~~~~~~
@@ -1393,6 +1426,15 @@ ST
       - 32 MHz
       - 128 Kb
       - 16 Kb
+
+    * - ``disco_l475vg_iot01a``
+      - `ST DISCO-L475VG-IOT01A <https://developer.mbed.org/platforms/ST-Discovery-L475E-IOT01A/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - STM32L475VGT6
+      - 80 MHz
+      - 1024 Kb
+      - 128 Kb
 
     * - ``disco_l476vg``
       - `ST 32L476GDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF261635>`_

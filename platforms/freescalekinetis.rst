@@ -126,6 +126,15 @@ Freescale
       - 1024 Kb
       - 256 Kb
 
+    * - ``frdm_k66f``
+      - `Freescale Kinetis FRDM-K66F <https://developer.mbed.org/platforms/FRDM-K66F/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MK66FN2M0VMD18
+      - 180 MHz
+      - 2048 Kb
+      - 256 Kb
+
     * - ``frdm_kl05z``
       - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`

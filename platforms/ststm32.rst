@@ -31,6 +31,9 @@ Packages
     * - Name
       - Description
 
+    * - `framework-arduinostm32mxchip <https://microsoft.github.io/azure-iot-developer-kit/>`__
+      - Arduino Wiring-based Framework (ST STM32 MXChip Core)
+
     * - `framework-arduinoststm32 <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
       - Arduino Wiring-based Framework (STM32 Core)
 
@@ -321,6 +324,30 @@ LeafLabs
       - 128 Kb
       - 17 Kb
 
+MXChip
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mxchip_az3166``
+      - `Microsoft Azure IoT Development Kit (MXChip AZ3166) <https://microsoft.github.io/azure-iot-developer-kit/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
+
 MultiTech
 ~~~~~~~~~
 
@@ -554,6 +581,15 @@ ST
       - 32 MHz
       - 128 Kb
       - 16 Kb
+
+    * - ``disco_l475vg_iot01a``
+      - `ST DISCO-L475VG-IOT01A <https://developer.mbed.org/platforms/ST-Discovery-L475E-IOT01A/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L475VGT6
+      - 80 MHz
+      - 1024 Kb
+      - 128 Kb
 
     * - ``disco_l476vg``
       - `ST 32L476GDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF261635>`_

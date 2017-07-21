@@ -106,7 +106,7 @@ DycodeX
       - RAM
 
     * - ``espectro``
-      - `ESPrectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
+      - `ESPectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 
       - ESP8266

@@ -1105,7 +1105,7 @@ DycodeX
       - RAM
 
     * - ``espectro``
-      - `ESPrectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
+      - `ESPectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 
       - ESP8266
@@ -1871,6 +1871,30 @@ LowPowerLab
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+MXChip
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mxchip_az3166``
+      - `Microsoft Azure IoT Development Kit (MXChip AZ3166) <https://microsoft.github.io/azure-iot-developer-kit/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
 
 MakerAsia
 ~~~~~~~~~
