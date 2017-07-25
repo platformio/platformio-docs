@@ -83,7 +83,7 @@ Custom Flash Size
 -----------------
 
 .. warning::
-    Please make sure to read `ESP8266 Flash layout <https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md#flash-layout>`_
+    Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
     information first.
 
 The list with preconfigured LD scripts is located in public repository
@@ -124,7 +124,7 @@ Uploading files to file system SPIFFS
 -------------------------------------
 
 .. warning::
-    Please make sure to read `ESP8266 Flash layout <https://github.com/esp8266/Arduino/blob/master/doc/filesystem.rst#flash-layout>`_
+    Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
     information first.
 
 1. Initialize project :ref:`cmd_init` (if you have not initialized yet)
@@ -147,7 +147,7 @@ Active discussion is located in `issue #382 <https://github.com/platformio/platf
 Over-the-Air (OTA) update
 -------------------------
 
-Firstly, please read `What is OTA? How to use it? <https://github.com/esp8266/Arduino/blob/master/doc/ota_updates/readme.rst>`_
+Firstly, please read `What is OTA? How to use it? <https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html>`_
 
 There are 2 options:
 
