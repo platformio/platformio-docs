@@ -933,6 +933,57 @@ CQ Publishing
       - 64 Kb
       - 10 Kb
 
+Controllino
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``controllino_maxi``
+      - `Controllino Maxi <https://controllino.biz/controllino/maxi/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA2560
+      - 16 MHz
+      - 256 Kb
+      - 8 Kb
+
+    * - ``controllino_maxi_automation``
+      - `Controllino Maxi Automation <https://controllino.biz/controllino/maxi-automation/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA2560
+      - 16 MHz
+      - 256 Kb
+      - 8 Kb
+
+    * - ``controllino_mega``
+      - `Controllino Mega <https://controllino.biz/controllino/mega/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA2560
+      - 16 MHz
+      - 256 Kb
+      - 8 Kb
+
+    * - ``controllino_mini``
+      - `Controllino Mini <https://controllino.biz/controllino/mini/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
 DFRobot
 ~~~~~~~
 
