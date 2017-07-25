@@ -124,7 +124,7 @@ Uploading files to file system SPIFFS
 -------------------------------------
 
 .. warning::
-    Please make sure to read `ESP8266 Flash layout <https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md#flash-layout>`_
+    Please make sure to read `ESP8266 Flash layout <https://github.com/esp8266/Arduino/blob/master/doc/filesystem.rst#flash-layout>`_
     information first.
 
 1. Initialize project :ref:`cmd_init` (if you have not initialized yet)
