@@ -11,31 +11,16 @@
 
 .. _tutorials:
 
+Tutorials and Examples
+======================
+
 Tutorials
-=========
-
-Platforms
 ---------
-
-ST STM32
-~~~~~~~~
-
-* :ref:`tutorial_stm32cube_debugging_unit_testing`
-
-Frameworks
-----------
-
-STM32Cube
-~~~~~~~~~
-
-* :ref:`tutorial_stm32cube_debugging_unit_testing`
-
-All
-----
 
 .. toctree::
     :maxdepth: 1
 
+    core/unit_testing_blink
     ststm32/stm32cube_debugging_unit_testing
 
 Project Examples
