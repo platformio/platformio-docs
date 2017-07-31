@@ -157,9 +157,10 @@ argument ``target`` can be a name of target that is passed using
 (buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or path
 to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
-The example below demonstrates how to call different functions
-when :option:`platformio run --target` is called with ``upload`` value.
-`extra_script.py` file is located on the same level as ``platformio.ini``.
+
+**Examples**
+
+``extra_script.py`` file is located on the same level as ``platformio.ini``.
 
 ``platformio.ini``:
 
@@ -211,3 +212,13 @@ when :option:`platformio run --target` is called with ``upload`` value.
 
     # custom action for project's main.cpp
     env.AddPostAction("$BUILD_DIR/src/main.cpp.o", callback...)
+
+    # Custom HEX from ELF
+    env.AddPostAction(
+        "$BUILD_DIR/firmware.elf",
+        env.VerboseAction(" ".join([
+            "$OBJCOPY", "-O", "ihex", "-R", ".eeprom",
+            "$BUILD_DIR/firmware.elf", "$BUILD_DIR/firmware.hex"
+        ]), "Building $BUILD_DIR/firmware.hex")
+    )
+
