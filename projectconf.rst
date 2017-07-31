@@ -37,7 +37,9 @@ Multi-values option could be specified in 2 ways:
     ; You MUST inject these options into [env:] section
     ; using ${common_env_data.***} (see below)
     [common_env_data]
-    build_flags = -D VERSION=1.2.3 -D DEBUG=1
+    build_flags =
+        -D VERSION=1.2.3
+        -D DEBUG=1
     lib_deps_builtin =
         SPI
         Wire
@@ -52,7 +54,10 @@ Multi-values option could be specified in 2 ways:
     board = nodemcuv2
 
     ; Build options
-    build_flags = ${common_env_data.build_flags} -DSSID_NAME=HELLO -DSSID_PASWORD=WORLD
+    build_flags =
+        ${common_env_data.build_flags}
+        -DSSID_NAME=HELLO
+        -DSSID_PASWORD=WORLD
 
     ; Library options
     lib_deps =
