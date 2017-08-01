@@ -68,7 +68,7 @@ Multi-values option could be specified in 2 ways:
         OneWire
 
     ; Serial Monitor options
-    monitor_baud = 15200
+    monitor_baud = 115200
 
     ; Unit Testing options
     test_ignore = test_desktop
