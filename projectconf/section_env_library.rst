@@ -59,7 +59,7 @@ Example:
 
 .. code-block:: ini
 
-  [env:depends_on_some_libs]
+  [env:myenv]
   lib_deps =
     13
     PubSubClient
@@ -90,7 +90,7 @@ Example:
 
 .. code-block:: ini
 
-    [env:ignore_some_libs]
+    [env:myenv]
     lib_ignore = SPI, Ethernet, mbed-fs
 
 .. _projectconf_lib_extra_dirs:
@@ -118,8 +118,8 @@ Example:
 
 .. code-block:: ini
 
-    [env:custom_lib_dirs]
-    lib_extra_dirs = /path/to/private/dir1,/path/to/private/dir2
+    [env:myenv]
+    lib_extra_dirs = /path/to/private/dir1, /path/to/private/dir2
 
 .. _projectconf_lib_ldf_mode:
 
@@ -132,6 +132,13 @@ Example:
 
 This option specifies how does Library Dependency Finder should analyze
 dependencies (``#include`` directives). See :ref:`ldf_mode` for details.
+
+Example:
+
+.. code-block:: ini
+
+    [env:myenv]
+    lib_ldf_mode = chain
 
 .. _projectconf_lib_compat_mode:
 
@@ -146,3 +153,35 @@ Finder. More details :ref:`ldf_compat_mode`.
 
 By default, this value is set to ``lib_compat_mode = 1`` and means that LDF
 will check only for framework compatibility.
+
+Example:
+
+.. code-block:: ini
+
+    [env:myenv]
+    lib_compat_mode = 1
+
+.. _projectconf_lib_archive:
+
+``lib_archive``
+^^^^^^^^^^^^^^^
+
+.. versionadded:: 3.4.1
+
+Create an archive (``*.a``, static library) from the object files and link it
+into a firmware (program). This is default behavior of PlatformIO Build System
+(``lib_archive = true``).
+
+Setting ``lib_archive = false`` will instruct PIO Build System to link object
+files directly (in-line). This could be useful if you need to override ``weak``
+symbols defined in framework or other libraries.
+
+You can disable library archiving per a custom library using
+:ref:`libjson_archive` field in :ref:`library_config` manifest.
+
+Example:
+
+.. code-block:: ini
+
+    [env:myenv]
+    lib_archive = false

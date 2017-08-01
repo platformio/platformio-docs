@@ -596,13 +596,23 @@ Project structure
             env.Replace(SRC_FILTER=["+<*>", "-<hal>", "+<%s>" % join("hal", item[1])])
             break
 
+.. _libjson_archive:
+
 ``libArchive``
 ~~~~~~~~~~~~~~
 
 *Optional* | Type: ``Boolean``
 
-Archive object files to Static Library. This is default behavior of PlatformIO
-Build System (``"libArchive": true``).
+Create an archive (``*.a``, static library) from the object files and link it
+into a firmware (program). This is default behavior of PlatformIO Build System
+(``"libArchive": true``).
+
+Setting ``"libArchive": false`` will instruct PIO Build System to link object
+files directly (in-line). This could be useful if you need to override ``weak``
+symbols defined in framework or other libraries.
+
+You can disable library archiving globally using :ref:`projectconf_lib_archive`
+option in :ref:`projectconf`.
 
 ``libLDFMode``
 ~~~~~~~~~~~~~~

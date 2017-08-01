@@ -35,6 +35,7 @@ Library Dependency Finder has controls that can be set up in :ref:`projectconf`:
     * :ref:`projectconf_lib_ignore`
     * :ref:`projectconf_lib_compat_mode`
     * :ref:`projectconf_lib_ldf_mode`
+    * :ref:`projectconf_lib_archive`
 
 -----------
 
