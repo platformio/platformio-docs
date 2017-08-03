@@ -20,6 +20,9 @@ To upload firmware using programmer you need to use ``program`` target instead
 
 .. warning::
     Upload options like ``upload_port`` don't work as expected with ``platformio run -t program``. You need to use ``upload_flags`` if you want to specify custom port or speed (see examples below).
+    
+.. note::
+    List of avrdude supported programmers are accessible with ``avrdude -c ?``
 
 Configuration for the programmers:
 
