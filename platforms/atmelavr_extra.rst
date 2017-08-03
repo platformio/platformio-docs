@@ -18,6 +18,9 @@ To upload firmware using programmer you need to use ``program`` target instead
 ``upload`` for :option:`platformio run --target` command. For example,
 ``platformio run -t program``.
 
+.. warning::
+    Upload options like ``upload_port`` don't work as expected with ``platformio run -t program``. You need to use ``upload_flags`` if you want to specify custom port or speed (see examples below).
+
 Configuration for the programmers:
 
 *   AVR ISP
@@ -94,6 +97,20 @@ Configuration for the programmers:
         ; edit these lines
         upload_port = SERIAL_PORT_HERE
         upload_speed = 19200
+
+*   Bus Pirate as ISP
+
+    .. code-block:: ini
+
+        [env:myenv]
+        platform = atmelavr
+        framework = arduino
+        upload_protocol = buspirate
+        upload_flags = -P$UPLOAD_PORT -b$UPLOAD_SPEED
+
+        ; edit these lines
+        upload_port = SERIAL_PORT_HERE
+        upload_speed = 115200
 
 Upload EEPROM data
 ------------------
