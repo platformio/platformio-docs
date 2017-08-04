@@ -74,7 +74,7 @@ Multiple environments are allowed if they *are separated with ", "
 ^^^^^^^^^^^^
 
 Is used to store platform toolchains, frameworks, global libraries for
-:ref: `ldf`, service data and etc. The size of this folder will depend on
+:ref:`ldf`, service data and etc. The size of this folder will depend on
 number of installed development platforms.
 
 A default value is User's home directory:
