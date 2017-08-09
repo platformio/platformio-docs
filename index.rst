@@ -48,9 +48,9 @@ Contents
     :maxdepth: 1
 
     librarymanager/index
-    platforms/index
+    Platforms <platforms/index>
     frameworks/index
-    platforms/embedded_boards
+    Boards <platforms/embedded_boards>
     platforms/custom_platform_and_board
 
 .. toctree::
