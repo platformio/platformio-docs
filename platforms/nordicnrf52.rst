@@ -31,6 +31,9 @@ Packages
     * - Name
       - Description
 
+    * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5>`__
+      - Arduino Wiring-based Framework (Nordic NRF5 Core)
+
     * - `framework-mbed <http://mbed.org>`__
       - mbed Framework
 
@@ -65,6 +68,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
@@ -119,6 +125,63 @@ Nordic
 
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
+RedBearLab
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``redbear_blenano2``
+      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
+    * - ``redbear_blend2``
+      - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
+Taida Century
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``stct_nrf52_minidev``
+      - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp>`_
       - :ref:`Nordic nRF52 <platform_nordicnrf52>`
       - :ref:`Yes <piodebug>`
       - NRF52832

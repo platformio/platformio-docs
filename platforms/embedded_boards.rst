@@ -267,8 +267,8 @@ Aiyarafun
       - 1280 Kb
       - 288 Kb
 
-Alorium Technolog
-~~~~~~~~~~~~~~~~~
+Alorium Technology
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -284,6 +284,30 @@ Alorium Technolog
 
     * - ``alorium_xlr8``
       - `Alorium XLR8 <http://www.aloriumtech.com/xlr8/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+Anarduino
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``miniwireless``
+      - `Anarduino MiniWireless <http://www.anarduino.com/miniwireless/>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -870,7 +894,7 @@ BBC
     * - ``bbcmicrobit``
       - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      - :ref:`Yes <piodebug>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -932,6 +956,30 @@ BitWizard
       - 16 MHz
       - 32 Kb
       - 2 Kb
+
+BluzDK
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``bluz_dk``
+      - `BluzDK <https://bluz.io/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 CQ Publishing
 ~~~~~~~~~~~~~
@@ -1610,6 +1658,15 @@ Espressif
       - Frequency
       - Flash
       - RAM
+
+    * - ``esp-wrover-kit``
+      - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
     * - ``esp01``
       - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
@@ -3108,6 +3165,30 @@ OLIMEX
       - 1280 Kb
       - 288 Kb
 
+OSHChip
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``oshchip``
+      - `OSHChip <http://oshchip.org/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
 Olimex
 ~~~~~~
 
@@ -3426,7 +3507,7 @@ RFduino
     * - ``rfduino``
       - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      - :ref:`Yes <piodebug>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -3535,13 +3616,31 @@ RedBearLab
       - 16 Kb
 
     * - ``redBearLabBLENano``
-      - `RedBearLab BLE Nano <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
+      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - :ref:`Yes <piodebug>`
       - NRF51822
       - 16 MHz
       - 256 Kb
       - 32 Kb
+
+    * - ``redbear_blenano2``
+      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
+    * - ``redbear_blend2``
+      - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
 RepRap
 ~~~~~~
@@ -4887,6 +4986,30 @@ TI
       - 1024 Kb
       - 256 Kb
 
+Taida Century
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``stct_nrf52_minidev``
+      - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
 Teensy
 ~~~~~~
 
@@ -5181,6 +5304,30 @@ WIZNet
       - 128 Kb
       - 48 Kb
 
+Waveshare
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``waveshare_ble400``
+      - `Waveshare BLE400 <http://www.waveshare.com/wiki/BLE400>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
 Wicked Device
 ~~~~~~~~~~~~~
 
@@ -5307,6 +5454,30 @@ makerlab.mx
       - 
       - ATMEGA256RFR2
       - 16 MHz
+      - 256 Kb
+      - 32 Kb
+
+ng-beacon
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``ng_beacon``
+      - `ng-beacon <https://github.com/urish/ng-beacon>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
       - 256 Kb
       - 32 Kb
 

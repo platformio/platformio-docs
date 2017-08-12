@@ -162,7 +162,7 @@ BBC
     * - ``bbcmicrobit``
       - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      - :ref:`Yes <piodebug>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -925,7 +925,7 @@ RedBearLab
       - 16 Kb
 
     * - ``redBearLabBLENano``
-      - `RedBearLab BLE Nano <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
+      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - :ref:`Yes <piodebug>`
       - NRF51822

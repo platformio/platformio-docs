@@ -198,8 +198,8 @@ Adafruit
       - 8 Kb
       - 0.5 Kb
 
-Alorium Technolog
-~~~~~~~~~~~~~~~~~
+Alorium Technology
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -215,6 +215,30 @@ Alorium Technolog
 
     * - ``alorium_xlr8``
       - `Alorium XLR8 <http://www.aloriumtech.com/xlr8/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+Anarduino
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``miniwireless``
+      - `Anarduino MiniWireless <http://www.anarduino.com/miniwireless/>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P

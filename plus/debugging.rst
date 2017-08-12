@@ -638,6 +638,54 @@ Atmel
       - 256 Kb
       - 32 Kb
 
+BBC
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``bbcmicrobit``
+      - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 16 MHz
+      - 256 Kb
+      - 16 Kb
+
+BluzDK
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``bluz_dk``
+      - `BluzDK <https://bluz.io/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`debugging_tool_jlink`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
 Delta
 ~~~~~
 
@@ -1178,7 +1226,7 @@ Nordic
     * - ``nrf51_dk``
       - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board)
       - NRF51822
       - 32 MHz
       - 256 Kb
@@ -1205,11 +1253,59 @@ Nordic
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
       - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - :ref:`debugging_tool_jlink` (on-board)
       - NRF52832
       - 64 MHz
       - 512 Kb
       - 64 Kb
+
+OSHChip
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``oshchip``
+      - `OSHChip <http://oshchip.org/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`debugging_tool_cmsis-dap`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
+RFduino
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``rfduino``
+      - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`debugging_tool_cmsis-dap`
+      - NRF51822
+      - 16 MHz
+      - 128 Kb
+      - 8 Kb
 
 RedBearLab
 ~~~~~~~~~~
@@ -1236,13 +1332,31 @@ RedBearLab
       - 16 Kb
 
     * - ``redBearLabBLENano``
-      - `RedBearLab BLE Nano <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
+      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - :ref:`debugging_tool_cmsis-dap` (on-board)
       - NRF51822
       - 16 MHz
       - 256 Kb
       - 32 Kb
+
+    * - ``redbear_blenano2``
+      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_cmsis-dap`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
+    * - ``redbear_blend2``
+      - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
 RushUp
 ~~~~~~
@@ -2039,6 +2153,30 @@ TI
       - 1024 Kb
       - 256 Kb
 
+Taida Century
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``stct_nrf52_minidev``
+      - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_jlink`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
 WIZNet
 ~~~~~~
 
@@ -2080,6 +2218,54 @@ WIZNet
       - 48 MHz
       - 128 Kb
       - 48 Kb
+
+Waveshare
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``waveshare_ble400``
+      - `Waveshare BLE400 <http://www.waveshare.com/wiki/BLE400>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`debugging_tool_jlink`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
+ng-beacon
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``ng_beacon``
+      - `ng-beacon <https://github.com/urish/ng-beacon>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`debugging_tool_jlink`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 u-blox
 ~~~~~~

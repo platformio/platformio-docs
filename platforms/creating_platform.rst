@@ -71,8 +71,8 @@ Packages
     * - `framework-arduinomsp430 <http://arduino.cc/en/Reference/HomePage>`__
       - Arduino Wiring-based Framework (MSP430 Core)
 
-    * - `framework-arduinonordicnrf51 <https://github.com/RFduino/RFduino>`__
-      - Arduino Wiring-based Framework (RFduino Core)
+    * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5>`__
+      - Arduino Wiring-based Framework (Nordic NRF5 Core)
 
     * - `framework-arduinosam <http://arduino.cc/en/Reference/HomePage>`__
       - Arduino Wiring-based Framework (SAM Core, 1.6)

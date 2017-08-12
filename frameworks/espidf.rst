@@ -225,6 +225,15 @@ Espressif
       - Flash
       - RAM
 
+    * - ``esp-wrover-kit``
+      - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
       - :ref:`Espressif 32 <platform_espressif32>`
