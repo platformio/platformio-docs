@@ -24,13 +24,13 @@ Having **PIO Account** allows you to use extra professional features from
 
 A registration is **FREE**.
 
-PlatformIO IDE for Atom
------------------------
+PlatformIO IDE
+--------------
 
-:ref:`ide_atom` has built-in UI to manage PIO Account. You can register new
-account, reset a password or fetch authentication token.
+:ref:`pioide` has built-in UI in PIO Home to manage PIO Account. You can
+crate a new account, reset a password or fetch authentication token.
 
-.. image:: ../_static/ide/atom/ide-atom-account-modal-login.png
+.. image:: ../_static/home/pio-home-account-login.png
 
 
 User Guide (CLI)

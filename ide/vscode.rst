@@ -72,24 +72,12 @@ Setting Up the Project
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-select-board.png
 
-4. Create FREE :ref:`pioaccount` which opens access to extra features, such as:
 
-    * :ref:`piodebug`
-    * :ref:`unit_testing`
-    * :ref:`pioremote`
-
-  Please open PIO Terminal using :ref:`ide_vscode_toolbar` |pio_vscode_toolbar_terminal|
-
-    * Create new PIO Account with :ref:`cmd_account_register` command
-    * Use temporary password from received e-mail and login with
-      :ref:`cmd_account_login` command
-    * Change temporary password using :ref:`cmd_account_password` command
-
-5. Create New File named ``main.cpp`` in ``src`` folder
+4. Create New File named ``main.cpp`` in ``src`` folder
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-new-src-file.png
 
-6. Copy the next source code to the just created file ``main.cpp``
+5. Copy the next source code to the just created file ``main.cpp``
 
 .. warning::
 
@@ -130,13 +118,13 @@ Setting Up the Project
       delay(1000);
     }
 
-7. Build your project with ``ctrl+alt+b`` hotkey (see all Key Bindings in
+6. Build your project with ``ctrl+alt+b`` hotkey (see all Key Bindings in
    "User Guide" section below)
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-build-project.png
 
-8. Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload, Clean,
-   Serial Monitor, Library Manager, Run Other Tasks) in "User Guider" section.
+7. Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload, Clean,
+   Serial Monitor) in "User Guider" section.
 
 **Happy coding with PlatformIO!**
 
@@ -157,12 +145,12 @@ Each button contains hint (delay mouse on it).
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-toolbar.png
 
+* PlatformIO: Home (:ref:`pioaccount`, library and platform managers, board explorer,
+  and more...)
 * PlatformIO: Build
 * PlatformIO: Upload
 * PlatformIO: Clean
-* PlatformIO: Run Other Tasks
 * Initialize new PlatformIO Project or Update existing...
-* :ref:`librarymanager`
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * PIO Terminal
 
@@ -174,7 +162,7 @@ Key Bindings: Building / Uploading / Other Tasks
 * ``cmd-shift-d`` / ``ctrl-shift-d`` Debug project
 * ``ctrl+alt+u`` Upload Firmware
 * ``ctrl+alt+s`` Open :ref:`Serial Port Monitor <cmd_device_monitor>`
-* ``ctrl+alt+t`` Run Other Tasks (Upload using Programmer, Upload SPIFFS
+* ``alt+shift+f`` Run Other Tasks (Upload using Programmer, Upload SPIFFS
   image, Test Project, Update packages and libraries, Upgrade :ref:`piocore`)
 
 Task Runner
@@ -276,23 +264,6 @@ Install Shell Commands
 
 Please navigate to FAQ :ref:`faq_install_shell_commands`.
 
-PIO Account
-~~~~~~~~~~~
-
-Create FREE :ref:`pioaccount` which opens access to extra features, such as:
-
-  * :ref:`piodebug`
-  * :ref:`unit_testing`
-  * :ref:`pioremote`
-
-Please open PIO Terminal using :ref:`ide_vscode_toolbar` |pio_vscode_toolbar_terminal|
-
-  * Create new PIO Account with :ref:`cmd_account_register` command
-  * Use temporary password from received e-mail and login with
-    :ref:`cmd_account_login` command
-  * Change temporary password using :ref:`cmd_account_password` command
-
-.. |PIO_VSCODE_TOOLBAR_TERMINAL| image:: ../_static/ide/vscode/platformio-ide-vscode-toolbar-terminal.png
 
 Changelog
 ---------
