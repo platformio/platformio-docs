@@ -28,7 +28,7 @@ Atom
 core—a tool you can customize to do anything but also use productively without
 ever touching a config file.
 
-:ref:`Install PlatformIO IDE for Atom <ide_atom>`
+:ref:`Install PlatformIO IDE for Atom / Get started <ide_atom>`
 
 .. image:: ../_static/ide/atom/ide-atom-platformio.png
     :target: atom.html
@@ -42,7 +42,7 @@ with built-in support for JavaScript, TypeScript and Node.js and has a rich
 ecosystem of extensions for other languages (such as C++, C#, Python, PHP,
 Go) and runtimes (such as .NET and Unity)
 
-:ref:`Install PlatformIO IDE for VSCode <ide_vscode>`
+:ref:`Install PlatformIO IDE for VSCode / Get started <ide_vscode>`
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode.png
     :target: vscode.html
