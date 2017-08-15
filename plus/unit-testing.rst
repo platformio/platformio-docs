@@ -46,8 +46,9 @@ Tutorials
 ~~~~~~~~~
 
 * :ref:`tutorial_unit_testing_blink`
-* `Start Embedded Testing with PlatformIO <http://www.thingforward.io/techblog/2017-07-25-starting-embedded-testing-with-platformio.html>`_
 * :ref:`tutorial_stm32cube_debugging_unit_testing`
+* `ThingForward: Start Embedded Testing with PlatformIO <http://www.thingforward.io/techblog/2017-07-25-starting-embedded-testing-with-platformio.html>`_
+* `ThingForward: Embedded Testing with PlatformIO - Part 2 <http://www.thingforward.io/techblog/2017-08-08-embedded-testing-with-platformio-part-2.html>`_
 
 
 Project Examples
