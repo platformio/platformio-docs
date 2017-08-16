@@ -158,13 +158,12 @@ This option can be overridden by global environment variable
 
 .. versionadded:: 3.2
 
-A list with global extra directories for a project where :ref:`ldf` will look
-for libraries.
+A list with extra storages for a project where :ref:`ldf` will look for libraries.
 
 This option has the same behavior as :ref:`projectconf_lib_extra_dirs` option
 for a specific build environment defined in ``[env:]`` section. The main
-difference is that the option that is defined in ``[platofrmio]`` section
-will be applied automatically for all ``[env:]`` sections.
+difference is that the option which is defined in ``[platofrmio]`` section
+will be extra applied automatically for all ``[env:]`` sections.
 
 For the possible values and examples please follow to :ref:`projectconf_lib_extra_dirs`.
 

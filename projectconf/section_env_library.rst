@@ -110,16 +110,16 @@ This option can be set by global environment variable
 and :ref:`projectconf_global_lib_extra_dirs` option.
 
 .. warning::
-  This is a not direct path to library with source code. It should be the path
+  This is a not direct path to a library with source code. It should be a path
   to storage that contains libraries grouped by folders. For example,
-  ``/extra/lib/storage/`` but not ``/extra/lib/storage/MyLibrary``.
+  ``D:\PlatformIO\extra\libraries`` but not ``D:\PlatformIO\extra\libraries\FooLibrary``.
 
 Example:
 
 .. code-block:: ini
 
     [env:myenv]
-    lib_extra_dirs = /path/to/private/dir1, /path/to/private/dir2
+    lib_extra_dirs = /common/libraries, /iot/libraries
 
 .. _projectconf_lib_ldf_mode:
 
