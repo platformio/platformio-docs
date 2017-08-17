@@ -114,8 +114,8 @@ described below.
 .. toctree::
     :maxdepth: 2
 
-    projectconf/section_platformio
-    projectconf/section_env
+    [platformio] <projectconf/section_platformio>
+    [env:NAME] <projectconf/section_env>
     projectconf/dynamic_variables
     projectconf/advanced_scripting
     projectconf/examples
