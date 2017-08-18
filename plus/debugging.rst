@@ -282,7 +282,7 @@ Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
     board = nucleo_f446re
     debug_tool = custom
     debug_server =
-      /set/path/to/JLinkGDBServerCL
+      /full/path/to/JLinkGDBServerCL
       -singlerun
       -if
       SWD
@@ -293,6 +293,61 @@ Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
       -device
       STM32F446RE
 
+J-Link as debugger and uploader
+'''''''''''''''''''''''''''''''
+
+Segger J-Link probe as debugger and uploader for a custom Teensy-based board
+
+* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/>`_
+
+
+.. code-block:: ini
+
+    [env:jlink_debug_and_upload]
+    platform = teensy
+    framework = arduino
+    board = teensy31
+    extra_scripts = extra_script.py
+    debug_tool = custom
+    debug_server =
+      /full/path/to/JLinkGDBServerCL
+      -singlerun
+      -if
+      SWD
+      -select
+      USB
+      -port
+      2331
+      -device
+      MK20DX256xxx7
+
+**extra_script.py**
+
+Place this file on the same level as :ref:`projectconf`.
+
+.. code-block:: py
+
+    Import("env")
+
+    env.AddPostAction(
+        "$BUILD_DIR/firmware.hex",
+        env.VerboseAction(" ".join([
+            "sed", "-i.bak",
+            "s/:10040000FFFFFFFFFFFFFFFFFFFFFFFFDEF9FFFF23/:10040000FFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFFFD/",
+            "$BUILD_DIR/firmware.hex"
+        ]), "Fixing $BUILD_DIR/firmware.hex secure flash flags"))
+    env.AddPreAction(
+        "upload",
+         env.VerboseAction(" ".join([
+             "echo",
+             "'h\\nloadfile $BUILD_DIR/firmware.hex\\nr\\nq\\n'",
+             ">$BUILD_DIR/aux.jlink"
+         ]), "Creating auxiliary files"))
+
+    env.Replace(
+        UPLOADHEXCMD=
+        'JLinkExe -device MK20DX256xxx7 -speed 4000 -if swd -autoconnect 1 -CommanderScript $BUILD_DIR/aux.jlink'
+    )
 
 ST-Util and ST-Link
 '''''''''''''''''''
@@ -373,7 +428,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
