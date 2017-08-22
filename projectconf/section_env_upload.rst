@@ -67,7 +67,7 @@ Example:
     [env:uno]
     platform = atmelavr
     framework = arduino
-    ; any port that stats with /dev/ttyUSB
+    ; any port that starts with /dev/ttyUSB
     upload_port = /dev/ttyUSB*
 
     ; COM1 or COM3
