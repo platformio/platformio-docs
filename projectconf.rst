@@ -115,7 +115,7 @@ described below.
     :maxdepth: 2
 
     [platformio] <projectconf/section_platformio>
-    [env:NAME] <projectconf/section_env>
+    [env] <projectconf/section_env>
     projectconf/dynamic_variables
     projectconf/advanced_scripting
     projectconf/examples
