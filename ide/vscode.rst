@@ -162,16 +162,16 @@ Key Bindings: Building / Uploading / Other Tasks
 * ``cmd-shift-d`` / ``ctrl-shift-d`` Debug project
 * ``ctrl+alt+u`` Upload Firmware
 * ``ctrl+alt+s`` Open :ref:`Serial Port Monitor <cmd_device_monitor>`
-* ``alt+shift+f`` Run Other Tasks (Upload using Programmer, Upload SPIFFS
+* ``Menu > Tasks`` Run Other Tasks (Upload using Programmer, Upload SPIFFS
   image, Test Project, Update packages and libraries, Upgrade :ref:`piocore`)
 
 Task Runner
 ~~~~~~~~~~~
 
-PlatformIO IDE provides base tasks (Build, Upload, Clean, Monitor, etc) and
-custom tasks per :ref:`projectconf` environment (``[env:***]``). A default
-behavior is to use Terminal Panel for presentation. Also, we use dedicated
-panel per unique task.
+PlatformIO IDE provides base tasks ``Menu > Tasks`` (Build, Upload, Clean,
+Monitor, etc) and custom tasks per :ref:`projectconf` environment
+(``[env:***]``). A default behavior is to use Terminal Panel for presentation.
+Also, we use dedicated panel per unique task.
 
 PlatformIO IDE provides own Problems Matcher named ``$platformio``.
 You can use it later if decide to change base task settings.
