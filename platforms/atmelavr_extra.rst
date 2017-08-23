@@ -20,7 +20,7 @@ To upload firmware using programmer you need to use ``program`` target instead
 
 .. warning::
     Upload options like ``upload_port`` don't work as expected with ``platformio run -t program``. You need to use ``upload_flags`` if you want to specify custom port or speed (see examples below).
-    
+
 .. note::
     List of avrdude supported programmers are accessible with ``avrdude -c ?``
 
@@ -172,13 +172,12 @@ Examples
 --------
 
 All project examples are located in PlatformIO repository
-`Examples for Atmel AVR platform <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino>`_.
+`Examples for Atmel AVR platform <https://github.com/platformio/platformio-examples/tree/develop/atmelavr>`_.
 
 * `Wiring Blink <https://github.com/platformio/platformio-examples/tree/develop/wiring-blink>`_
-* `Arduino with external libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/arduino-external-libs>`_
-* `Arduino with internal libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/arduino-internal-libs>`_
-* `Project uses source file name for "src" directory (Arduino project structure) <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/arduino-own-src_dir>`_
-* `Atmel AVR Native blink <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/atmelavr-native-blink>`_
-* `Digitstump Mouse <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/digitstump-mouse>`_
-* `Engduino magnetometer <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/engduino-magnetometer>`_
-* `PanStamp blink <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/panstamp-blink>`_
+* `Arduino with external libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-external-libs>`_
+* `Arduino with internal libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-internal-libs>`_
+* `Project uses source file name for "src" directory (Arduino project structure) <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-own-src_dir>`_
+* `Atmel AVR Native blink <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/atmelavr-native-blink>`_
+* `Digitstump Mouse <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/digitstump-mouse>`_
+* `Engduino magnetometer <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/engduino-magnetometer>`_

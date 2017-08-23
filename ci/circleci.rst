@@ -170,8 +170,6 @@ Examples
             # ...
             - platformio ci examples/Xbox/XBOXUSB --board=uno --board=teensy31 --board=due --lib="."
 
-* Configuration file: https://github.com/ivankravets/USB_Host_Shield_2.0/blob/master/circle.yml
-* Build History: https://circleci.com/gh/ivankravets/USB_Host_Shield_2.0/tree/master
 
 2. Dependency on external libraries
 

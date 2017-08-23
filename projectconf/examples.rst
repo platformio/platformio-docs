@@ -79,7 +79,7 @@ command. To use other programmers see :ref:`atmelavr_upload_via_programmer`.
     board = armstrap_eagle512
     upload_protocol = gdb
 
-Also, take a look at this article `Armstrap Eagle and PlatformIO <http://isobit.io/2015/08/08/armstrap.html>`_.
+Also, take a look at this article `Armstrap Eagle and PlatformIO <https://www.isobit.io/blog/2015-08-08-armstrap/>`_.
 
 5. :ref:`platform_ststm32`: Upload firmware using ST-Link instead mbed's media
    disk

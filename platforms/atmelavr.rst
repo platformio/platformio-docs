@@ -349,7 +349,7 @@ Arduino
       - 2 Kb
 
     * - ``chiwawa``
-      - `Arduino Industrial 101 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-industrial-101>`_
+      - `Arduino Industrial 101 <https://www.arduino.cc/en/Main/ArduinoBoard101>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -376,7 +376,7 @@ Arduino
       - 2 Kb
 
     * - ``esplora``
-      - `Arduino Esplora <http://www.arduino.org/products/boards/4-arduino-boards/arduino-esplora>`_
+      - `Arduino Esplora <https://www.arduino.cc/en/Main/ArduinoBoardEsplora>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -385,7 +385,7 @@ Arduino
       - 2.5 Kb
 
     * - ``ethernet``
-      - `Arduino Ethernet <http://www.arduino.org/products/boards/4-arduino-boards/arduino-ethernet>`_
+      - `Arduino Ethernet <https://www.arduino.cc/en/Main/ArduinoBoardEthernet>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -403,7 +403,7 @@ Arduino
       - 2 Kb
 
     * - ``leonardo``
-      - `Arduino Leonardo <http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo>`_
+      - `Arduino Leonardo <https://www.arduino.cc/en/Main/ArduinoBoardLeonardo>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -412,7 +412,7 @@ Arduino
       - 2.5 Kb
 
     * - ``leonardoeth``
-      - `Arduino Leonardo ETH <http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo-eth>`_
+      - `Arduino Leonardo ETH <https://www.arduino.cc/en/Main/ArduinoBoardLeonardoEth>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -439,7 +439,7 @@ Arduino
       - 2 Kb
 
     * - ``megaADK``
-      - `Arduino Mega ADK <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-adk>`_
+      - `Arduino Mega ADK <https://www.arduino.cc/en/Main/ArduinoBoardMegaADK>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA2560
@@ -448,7 +448,7 @@ Arduino
       - 8 Kb
 
     * - ``megaatmega1280``
-      - `Arduino Mega or Mega 2560 ATmega1280 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - `Arduino Mega or Mega 2560 ATmega1280 <https://www.arduino.cc/en/Main/ArduinoBoardMega2560>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA1280
@@ -457,7 +457,7 @@ Arduino
       - 8 Kb
 
     * - ``megaatmega2560``
-      - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <https://www.arduino.cc/en/Main/ArduinoBoardMega2560>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA2560
@@ -466,7 +466,7 @@ Arduino
       - 8 Kb
 
     * - ``micro``
-      - `Arduino Micro <http://www.arduino.org/products/boards/4-arduino-boards/arduino-micro>`_
+      - `Arduino Micro <https://www.arduino.cc/en/Main/ArduinoBoardMicro>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -493,7 +493,7 @@ Arduino
       - 2 Kb
 
     * - ``nanoatmega168``
-      - `Arduino Nano ATmega168 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - `Arduino Nano ATmega168 <https://www.arduino.cc/en/Main/ArduinoBoardNano>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA168
@@ -502,7 +502,7 @@ Arduino
       - 1 Kb
 
     * - ``nanoatmega328``
-      - `Arduino Nano ATmega328 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - `Arduino Nano ATmega328 <https://www.arduino.cc/en/Main/ArduinoBoardNano>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -547,7 +547,7 @@ Arduino
       - 2 Kb
 
     * - ``robotControl``
-      - `Arduino Robot Control <http://www.arduino.org/products/boards/4-arduino-boards/arduino-robot>`_
+      - `Arduino Robot Control <https://www.arduino.cc/en/Main/Robot>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -556,7 +556,7 @@ Arduino
       - 2.5 Kb
 
     * - ``robotMotor``
-      - `Arduino Robot Motor <http://www.arduino.org/products/boards/4-arduino-boards/arduino-robot>`_
+      - `Arduino Robot Motor <https://www.arduino.cc/en/Main/Robot>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -565,7 +565,7 @@ Arduino
       - 2.5 Kb
 
     * - ``uno``
-      - `Arduino Uno <http://www.arduino.org/products/boards/4-arduino-boards/arduino-uno>`_
+      - `Arduino Uno <https://www.arduino.cc/en/Main/ArduinoBoardUno>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -574,7 +574,7 @@ Arduino
       - 2 Kb
 
     * - ``yun``
-      - `Arduino Yun <http://www.arduino.org/products/boards/4-arduino-boards/arduino-yun>`_
+      - `Arduino Yun <https://www.arduino.cc/en/Main/ArduinoBoardYun>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -583,7 +583,7 @@ Arduino
       - 2.5 Kb
 
     * - ``yunmini``
-      - `Arduino Yun Mini <http://www.arduino.org/products/boards/4-arduino-boards/arduino-yun-mini>`_
+      - `Arduino Yun Mini <https://www.arduino.cc/en/Main/ArduinoBoardYunMini>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -1174,7 +1174,7 @@ Microduino
       - RAM
 
     * - ``1284p16m``
-      - `Microduino Core+ (ATmega1284P@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - `Microduino Core+ (ATmega1284P@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_Core%2B>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA1284P
@@ -1183,7 +1183,7 @@ Microduino
       - 16 Kb
 
     * - ``1284p8m``
-      - `Microduino Core+ (ATmega1284P@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - `Microduino Core+ (ATmega1284P@8M,3.3V) <http://wiki.microduinoinc.com/Microduino-Module_Core%2B>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA1284P
@@ -1192,7 +1192,7 @@ Microduino
       - 16 Kb
 
     * - ``168pa16m``
-      - `Microduino Core (Atmega168PA@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - `Microduino Core (Atmega168PA@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_Core>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA168P
@@ -1201,7 +1201,7 @@ Microduino
       - 1 Kb
 
     * - ``168pa8m``
-      - `Microduino Core (Atmega168PA@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - `Microduino Core (Atmega168PA@8M,3.3V) <http://wiki.microduinoinc.com/Microduino-Module_Core>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA168P
@@ -1210,7 +1210,7 @@ Microduino
       - 1 Kb
 
     * - ``328p16m``
-      - `Microduino Core (Atmega328P@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - `Microduino Core (Atmega328P@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_Core>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -1219,7 +1219,7 @@ Microduino
       - 2 Kb
 
     * - ``328p8m``
-      - `Microduino Core (Atmega328P@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - `Microduino Core (Atmega328P@8M,3.3V) <http://wiki.microduinoinc.com/Microduino-Module_Core>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -1228,7 +1228,7 @@ Microduino
       - 2 Kb
 
     * - ``32u416m``
-      - `Microduino Core USB (ATmega32U4@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-CoreUSB>`_
+      - `Microduino Core USB (ATmega32U4@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_CoreUSB>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -1237,7 +1237,7 @@ Microduino
       - 2.5 Kb
 
     * - ``644pa16m``
-      - `Microduino Core+ (Atmega644PA@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - `Microduino Core+ (Atmega644PA@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_Core%2B>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA644P
@@ -1246,7 +1246,7 @@ Microduino
       - 4 Kb
 
     * - ``644pa8m``
-      - `Microduino Core+ (Atmega644PA@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - `Microduino Core+ (Atmega644PA@8M,3.3V) <http://wiki.microduinoinc.com/Microduino-Module_Core%2B>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA644P

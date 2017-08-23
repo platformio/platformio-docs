@@ -160,7 +160,7 @@ Arduino
       - RAM
 
     * - ``due``
-      - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - AT91SAM3X8E
@@ -169,7 +169,7 @@ Arduino
       - 32 Kb
 
     * - ``dueUSB``
-      - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - AT91SAM3X8E
@@ -205,7 +205,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeroUSB``
-      - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
+      - `Arduino M0 <https://www.arduino.cc/en/Main/ArduinoBoardM0>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
@@ -214,7 +214,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeropro``
-      - `Arduino M0 Pro (Programming/Debug Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - `Arduino M0 Pro (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
@@ -223,7 +223,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeroproUSB``
-      - `Arduino M0 Pro (Native USB Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - `Arduino M0 Pro (Native USB Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - SAMD21G18A
@@ -232,7 +232,7 @@ Arduino
       - 32 Kb
 
     * - ``tian``
-      - `Arduino Tian <http://www.arduino.org/products/boards/arduino-tian>`_
+      - `Arduino Tian <https://www.arduino.cc/en/Main/ArduinoBoardTian>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - SAMD21G18A
@@ -360,7 +360,7 @@ SODAQ
     * - ``sodaq_explorer``
       - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <piodebug>`
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -369,7 +369,7 @@ SODAQ
     * - ``sodaq_one``
       - `SODAQ ONE <http://support.sodaq.com/sodaq-one/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <piodebug>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb

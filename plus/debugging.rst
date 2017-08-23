@@ -428,7 +428,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
@@ -574,7 +574,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeroUSB``
-      - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
+      - `Arduino M0 <https://www.arduino.cc/en/Main/ArduinoBoardM0>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`
       - SAMD21G18A
@@ -583,7 +583,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeropro``
-      - `Arduino M0 Pro (Programming/Debug Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - `Arduino M0 Pro (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`debugging_tool_cmsis-dap` (on-board)
       - SAMD21G18A
@@ -1445,6 +1445,39 @@ RushUp
       - 80 MHz
       - 1024 Kb
       - 128 Kb
+
+SODAQ
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``sodaq_explorer``
+      - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_jlink`
+      - SAMD21J18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``sodaq_one``
+      - `SODAQ ONE <http://support.sodaq.com/sodaq-one/>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_jlink`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
 
 ST
 ~~

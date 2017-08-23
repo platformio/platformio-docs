@@ -91,7 +91,7 @@ Arduino
       - RAM
 
     * - ``due``
-      - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - AT91SAM3X8E
@@ -100,7 +100,7 @@ Arduino
       - 32 Kb
 
     * - ``dueUSB``
-      - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - AT91SAM3X8E
@@ -109,7 +109,7 @@ Arduino
       - 32 Kb
 
     * - ``megaatmega2560``
-      - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <https://www.arduino.cc/en/Main/ArduinoBoardMega2560>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA2560
@@ -118,7 +118,7 @@ Arduino
       - 8 Kb
 
     * - ``nanoatmega328``
-      - `Arduino Nano ATmega328 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - `Arduino Nano ATmega328 <https://www.arduino.cc/en/Main/ArduinoBoardNano>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -127,7 +127,7 @@ Arduino
       - 2 Kb
 
     * - ``uno``
-      - `Arduino Uno <http://www.arduino.org/products/boards/4-arduino-boards/arduino-uno>`_
+      - `Arduino Uno <https://www.arduino.cc/en/Main/ArduinoBoardUno>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
