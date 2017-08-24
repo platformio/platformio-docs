@@ -22,6 +22,7 @@ Tutorials
 
     core/unit_testing_blink
     ststm32/stm32cube_debugging_unit_testing
+    nordicnrf52/arduino_debugging_unit_testing
 
 Project Examples
 ----------------
