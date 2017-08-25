@@ -23,8 +23,13 @@ Here are recent articles/reviews about PlatformIO:
 2017
 ^^^^
 
+* Aug 23, 2017 - **陳亮** - `Develop ESP32 With PlatformIO IDE <http://www.instructables.com/id/Develop-ESP32-With-PlatformIO-IDE/>`_
+* Aug 08, 2017 - **ThingForward** - `Embedded Testing with PlatformIO - Part 2 <http://www.thingforward.io/techblog/2017-08-08-embedded-testing-with-platformio-part-2.html>`_
+* Jul 25, 2017 - **ThingForward** - `Start Embedded Testing with PlatformIO <http://www.thingforward.io/techblog/2017-07-25-starting-embedded-testing-with-platformio.html>`_
 * Jun 23, 2017 - **Naresh Krish** - `Home Automation Using Wiscore, OpenHab and PlatformIO <https://www.hackster.io/naresh-krish/home-automation-using-wiscore-and-openhab-1ec6e4>`_
+* Jun 05, 2017 - **Projects DIY** - `Démarrer avec PlatformIO IDE alternatif pour Arduino, ESP8266, ESP32 et autres micro-contrôleurs (Start with PlatformIO alternative IDE for Arduino, ESP8266, ESP32 and other microcontrollers, French) <https://projetsdiy.fr/bien-demarrer-platformio-ide-arduino-esp8266-esp32-stm32/>`_
 * Apr 12, 2017 - **Jane Elizabeth** - `Let's talk IoT: PlatformIO puts developers back in the driver's seat <https://jaxenter.com/open-source-iot-platformio-133282.html>`_
+* Apr 07, 2017 - **Al Williams** - `Hackaday: PlatformIO and Visual Studio take over the world <http://hackaday.com/2017/04/07/platformio-and-visual-studio-take-over-the-world/>`_
 * Mar 13, 2017 - **Ryan Mulligan** - `Continuous testing for Arduino libraries using PlatformIO and Travis CI <https://www.pololu.com/blog/654/continuous-testing-for-arduino-libraries-using-platformio-and-travis-ci>`_
 * Feb 23, 2017 - **Bastiaan Visee** - `Using PlatformIO for your Arduino projects <http://lichtsignaal.nl/2017/02/23/using-platformio-for-your-arduino-projects/>`_
 * Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
