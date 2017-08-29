@@ -129,15 +129,10 @@ Setting Up the Project
 **Happy coding with PlatformIO!**
 
 
-.. _ide_vscode_user_guide:
-
-User Guide
-----------
-
 .. _ide_vscode_toolbar:
 
 PlatformIO Toolbar
-~~~~~~~~~~~~~~~~~~
+------------------
 
 PlatformIO IDE Toolbar is located in VSCode Status Bar (left corner)
 and contains quick access buttons for the popular commands.
@@ -146,7 +141,7 @@ Each button contains hint (delay mouse on it).
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-toolbar.png
 
 * PlatformIO: Home (:ref:`pioaccount`, library and platform managers, board explorer,
-  and more...)
+  and many more...)
 * PlatformIO: Build
 * PlatformIO: Upload
 * PlatformIO: Clean
@@ -154,19 +149,17 @@ Each button contains hint (delay mouse on it).
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * PIO Terminal
 
-Key Bindings: Building / Uploading / Other Tasks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Key Bindings
+------------
 
 * ``ctrl+alt+i`` Initialize or Update Project
 * ``ctrl+alt+b`` / ``cmd-shift-b`` / ``ctrl-shift-b`` Build Project
 * ``cmd-shift-d`` / ``ctrl-shift-d`` Debug project
 * ``ctrl+alt+u`` Upload Firmware
 * ``ctrl+alt+s`` Open :ref:`Serial Port Monitor <cmd_device_monitor>`
-* ``Menu > Tasks`` Run Other Tasks (Upload using Programmer, Upload SPIFFS
-  image, Test Project, Update packages and libraries, Upgrade :ref:`piocore`)
 
 Task Runner
-~~~~~~~~~~~
+-----------
 
 PlatformIO IDE provides base tasks ``Menu > Tasks`` (Build, Upload, Clean,
 Monitor, etc) and custom tasks per :ref:`projectconf` environment
@@ -205,36 +198,8 @@ command:
 
 See more options in `official VSCode documentation <https://code.visualstudio.com/docs/editor/tasks#_output-behavior>`__.
 
-Extension Settings
-~~~~~~~~~~~~~~~~~~
-
-``platformio-ide.useBuiltinPIOCore``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Use built-in :ref:`piocore`, default configuration is ``true``.
-
-``platformio-ide.useDevelopmentPIOCore``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Use development version of :ref:`piocore`, default configuration is ``false``.
-
-``platformio-ide.autoRebuildAutocompleteIndex``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Automatically rebuild C/C++ Project Index when :ref:`projectconf` is changed
-or when new libraries are installed, default configuration is ``true``.
-
-``platformio-ide.forceUploadAndMonitor``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Force "Upload and Monitor" task for Upload (``platformio-ide.upload``) command,
-default configuration is ``false``.
-
-``platformio-ide.customPATH``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Custom PATH for ``platformio`` command. Paste here the result of ``echo $PATH``
-(Unix) / ``echo %PATH%`` (Windows) command by typing into your system terminal
-if you prefer to use custom version of :ref:`piocore`, default configuration
-is ``null``.
-
 Serial Port Monitor
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 You can customize Serial Port Monitor using
 :ref:`projectconf_section_env_monitor` in :ref:`projectconf`:
@@ -260,9 +225,43 @@ Example:
     monitor_baud = 115200
 
 Install Shell Commands
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Please navigate to FAQ :ref:`faq_install_shell_commands`.
+
+Settings
+--------
+
+`How to configure VSCode settings? <https://code.visualstudio.com/docs/getstarted/settings>`_
+
+``platformio-ide.showHomeOnStartup``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Show PaltformIO Home on startup, default configuration is ``true``.
+
+``platformio-ide.useBuiltinPIOCore``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use built-in :ref:`piocore`, default configuration is ``true``.
+
+``platformio-ide.useDevelopmentPIOCore``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use development version of :ref:`piocore`, default configuration is ``false``.
+
+``platformio-ide.autoRebuildAutocompleteIndex``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Automatically rebuild C/C++ Project Index when :ref:`projectconf` is changed
+or when new libraries are installed, default configuration is ``true``.
+
+``platformio-ide.forceUploadAndMonitor``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Force "Upload and Monitor" task for Upload (``platformio-ide.upload``) command,
+default configuration is ``false``.
+
+``platformio-ide.customPATH``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Custom PATH for ``platformio`` command. Paste here the result of ``echo $PATH``
+(Unix) / ``echo %PATH%`` (Windows) command by typing into your system terminal
+if you prefer to use custom version of :ref:`piocore`, default configuration
+is ``null``.
 
 
 Changelog
