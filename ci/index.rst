@@ -31,5 +31,6 @@ easily.
     appveyor
     circleci
     drone
+    gitlab
     shippable
     travis
