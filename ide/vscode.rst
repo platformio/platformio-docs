@@ -234,10 +234,6 @@ Settings
 
 `How to configure VSCode settings? <https://code.visualstudio.com/docs/getstarted/settings>`_
 
-``platformio-ide.showHomeOnStartup``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Show PaltformIO Home on startup, default configuration is ``true``.
-
 ``platformio-ide.useBuiltinPIOCore``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Use built-in :ref:`piocore`, default configuration is ``true``.
