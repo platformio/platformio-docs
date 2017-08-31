@@ -18,7 +18,7 @@ GitLab CI
 platform that can help you build, test, deploy, and monitor your code from 
 `GitLab <https://about.gitlab.com/>`_ repositories.
 
-GitLab CI is enabled by default on new projects, so you can start using its features right away. All you need is :ref:`cmd_ci` command, a file called ``.gitlab-ci.yml`` (where you describe how the build should run) placed in the root directory of your git project, and a configured Runner to perform the actual build. Each project comes with a Builds page where you can follow the output of each build, see the commit that introduced it and other useful information such as the time the build started, how long it lasted and the commiter's name. The statuses for each build are exposed in the GitLab UI, and you can see whether a build succeeded, failed, got canceled or skipped.
+GitLab CI is enabled by default on new projects, so you can start using its features right away. All you need is :ref:`cmd_ci` command, a file called ``.gitlab-ci.yml`` (where you describe how the build should run) placed in the root directory of your git project, and a configured Runner to perform the actual build (Gitlab has some pre-configured public runners so your CI script should work out of the box). Each project comes with a Builds page where you can follow the output of each build, see the commit that introduced it and other useful information such as the time the build started, how long it lasted and the commiter's name. The statuses for each build are exposed in the GitLab UI, and you can see whether a build succeeded, failed, got canceled or skipped.
 
 .. contents::
 
