@@ -56,33 +56,24 @@ have a general understanding of how to work with projects in the IDE.
 Setting Up the Project
 ~~~~~~~~~~~~~~~~~~~~~~
 
-1. Create empty directory (or use existing) and open it via ``File > Open...``
+1. Click on "PlatformIO Home" button on the bottom :ref:`ide_vscode_toolbar`
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-open-folder.png
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-welcome.png
 
-2. Initialize PlatformIO Project using one of these methods:
+2. Click on "New Project", select a board and create a new PlatformIO Project
 
-    * Run "Initialize or Update Project" command using ``ctrl+alt+i`` hotkey
-    * Launch "VS Code Menu: View > Command Palette..." or use hotkey
-      ``Ctrl+Shift+P`` (``Cmd+Shift+P`` for macOS), search for
-      ``PlatformIO: Initialize or Update Project``, and press enter
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-new-project.png
 
-3. Select a board. You can change it any time in :ref:`projectconf` or add
-   new using the same ``PlatformIO: Initialize or Update Project`` command.
-
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-select-board.png
-
-
-4. Create New File named ``main.cpp`` in ``src`` folder
-
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-new-src-file.png
-
-5. Copy the next source code to the just created file ``main.cpp``
+3. Open ``main.cpp`` file form ``src`` folder and replace its contents with
+   the next:
 
 .. warning::
 
     The code below works only in pair with Arduino-based boards. Please
     follow to `PlatformIO Project Examples <https://github.com/platformio/platformio-examples>`_ repository for other pre-configured projects.
+
+
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-blink-project.png
 
 .. code-block:: cpp
 
@@ -118,13 +109,14 @@ Setting Up the Project
       delay(1000);
     }
 
-6. Build your project with ``ctrl+alt+b`` hotkey (see all Key Bindings in
-   "User Guide" section below)
+4. Build your project with ``ctrl+alt+b`` hotkey (see all Key Bindings in
+   "User Guide" section below) or using "Build" button on the :ref:`ide_vscode_toolbar`
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-build-project.png
 
-7. Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload, Clean,
-   Serial Monitor) in "User Guider" section.
+
+Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload, Clean,
+Serial Monitor) below.
 
 **Happy coding with PlatformIO!**
 
@@ -145,7 +137,7 @@ Each button contains hint (delay mouse on it).
 * PlatformIO: Build
 * PlatformIO: Upload
 * PlatformIO: Clean
-* Initialize new PlatformIO Project or Update existing...
+* Run a task... (See "Task Runner" below)
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * PIO Terminal
 
