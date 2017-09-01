@@ -30,12 +30,11 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vs
 Setting Up the Project
 ----------------------
 
-At first we need to create an empty folder for our project (or use existing), then we can open this folder using ``Menu: File > Open folder...`` or using hotkeys 
-``cmd-alt-k / ctrl-alt-k + cmd-alt-o / ctrl-alt-o``:
+At first step, we need to create a new project using PlatformIO Home Page (to open this page just press Home icon on the toolbar):
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-1.png
 
-On the next step we need to initialize PlatformIO project for ``Nordic nRF52-DK`` board, to do this we can use Command Palette ``View: Command Palette > PlatformIO: Initialize or Update Project`` or hotkeys ``cmd-alt-i / ctrl-alt-i`` and search for the board by typing its name:
+On the next step we need to select ``Nordic nRF52-DK`` as a development board, :ref:`framework_arduino` as a framework and a path to the project location (or use the default one):
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-2.png
 
@@ -45,11 +44,7 @@ and after these steps, we have a fully configured project that is ready for deve
 Adding Code to the Generated Project
 ------------------------------------
 
-Let's add some actual code to the project. Firstly, we create the main file named ``main.cpp`` in the :ref:`projectconf_pio_src_dir` folder. Right click on the ``src`` in the project tree:
-
-.. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-3.png
-
-Add this code to ``main.cpp``:
+Let's add some actual code to the project. Firstly, we open a default main file named ``main.cpp`` in the :ref:`projectconf_pio_src_dir` folder and replace its content with next one:
 
 .. code-block:: cpp
 
@@ -68,8 +63,9 @@ Add this code to ``main.cpp``:
         delay(100);
     } 
  
+.. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-3.png
 
-After this step, we created a basic blink project that is ready for compiling and uploading.
+After this step, we created a basic blink project ready for compiling and uploading.
 
 Compiling and Uploading the Firmware
 ------------------------------------
