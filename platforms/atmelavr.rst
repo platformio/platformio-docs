@@ -1062,6 +1062,15 @@ LowPowerLab
       - Flash
       - RAM
 
+    * - ``mightyhat``
+      - `LowPowerLab Moteino <https://lowpowerlab.com/shop/product/130>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
     * - ``moteino``
       - `LowPowerLab Moteino <https://lowpowerlab.com/shop/moteino-r4>`_
       - :ref:`Atmel AVR <platform_atmelavr>`

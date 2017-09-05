@@ -1287,6 +1287,15 @@ DycodeX
       - 4096 Kb
       - 80 Kb
 
+    * - ``espectro32``
+      - `ESPectro32 <https://shop.makestro.com/product/espectro32>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 ESP32vn
 ~~~~~~~
 
@@ -1851,6 +1860,39 @@ Generic ATTiny
       - 8 Kb
       - 0.5 Kb
 
+Heltec Automation
+~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``heltec_wifi_kit_32``
+      - `Heltec WIFI Kit 32 <http://www.heltec.cn>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``heltec_wifi_lora_32``
+      - `Heltec WIFI LoRa 32 <http://www.heltec.cn>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 Hornbill
 ~~~~~~~~
 
@@ -2037,6 +2079,15 @@ LowPowerLab
       - Flash
       - RAM
 
+    * - ``mightyhat``
+      - `LowPowerLab Moteino <https://lowpowerlab.com/shop/product/130>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
     * - ``moteino``
       - `LowPowerLab Moteino <https://lowpowerlab.com/shop/moteino-r4>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -2054,6 +2105,63 @@ LowPowerLab
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+M5Stack
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``m5stack-core-esp32``
+      - `M5Stack Core ESP32 <http://www.m5stack.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+MH-ET Live
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mhetesp32devkit``
+      - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``mhetesp32minikit``
+      - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
 MXChip
 ~~~~~~
