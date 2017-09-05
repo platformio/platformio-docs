@@ -56,7 +56,7 @@ There are 2 type of extra scripts:
 Multiple extra scripts are allowed. Please split them via  ", "
 (comma + space) in the same line or use multi-line values.
 
-For example,
+For example, :ref:`projectconf`
 
 .. code-block:: ini
 

@@ -117,5 +117,4 @@ described below.
     [platformio] <projectconf/section_platformio>
     [env] <projectconf/section_env>
     projectconf/dynamic_variables
-    projectconf/advanced_scripting
     projectconf/examples
