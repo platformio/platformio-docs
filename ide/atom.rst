@@ -121,37 +121,16 @@ ready for using. Happy coding!
 Setting Up the Project
 ~~~~~~~~~~~~~~~~~~~~~~
 
-1. To create a new project choose
-   ``Menu: PlatformIO > Initialize new Project or update existing`` or press
-   the corresponding icon in the PlatformIO toolbar as shown in the image below:
+1. Click on "PlatformIO Home" button on the :ref:`atom_ide_platformio_toolbar`
 
-.. image:: ../_static/ide/atom/ide-atom-quick-start-1.png
-    :target: ../_images/ide-atom-quick-start-1.png
+.. image:: ../_static/ide/atom/ide-atom-welcome.png
 
-2. In the "New Project Menu" choose desired boards (more than one board is
-   allowed) and select a project directory. Then press "Initialize" button:
+2. Click on "New Project", select a board and create new PlatformIO Project
 
-.. image:: ../_static/ide/atom/ide-atom-quick-start-2.png
-    :target: ../_images/ide-atom-quick-start-2.png
+.. image:: ../_static/ide/atom/ide-atom-new-project.png
 
-3. If everything is fine, you should see the success message and project tree
-   in the left panel:
-
-.. image:: ../_static/ide/atom/ide-atom-quick-start-3.png
-    :target: ../_images/ide-atom-quick-start-3.png
-
-4. Now, let's create the first project source file: right-click on the folder
-   ``src`` and choose ``New File``:
-
-.. image:: ../_static/ide/atom/ide-atom-quick-start-4.png
-    :target: ../_images/ide-atom-quick-start-4.png
-
-Enter filename ``main.cpp``:
-
-.. image:: ../_static/ide/atom/ide-atom-quick-start-5.png
-    :target: ../_images/ide-atom-quick-start-5.png
-
-Copy the next source code to the just created file ``main.cpp``
+3. Open ``main.cpp`` file form ``src`` folder and replace its contents with
+   the next:
 
 .. warning::
 
@@ -192,6 +171,9 @@ Copy the next source code to the just created file ``main.cpp``
       delay(1000);
     }
 
+.. image:: ../_static/ide/atom/ide-atom-blink-project.png
+
+
 Process Project
 ~~~~~~~~~~~~~~~
 
@@ -202,14 +184,12 @@ upload firmware, run other targets) using:
     - :ref:`atom_ide_platformio_menu`
     - :ref:`ide_atom_building_targets` and hotkeys
 
-.. image:: ../_static/ide/atom/ide-atom-quick-start-6.png
-    :target: ../_images/ide-atom-quick-start-6.png
+.. image:: ../_static/ide/atom/ide-atom-process-project.png
 
 5. Run ``Build`` and you should see green "success" result in the building
    panel:
 
-.. image:: ../_static/ide/atom/ide-atom-quick-start-7.png
-    :target: ../_images/ide-atom-quick-start-7.png
+.. image:: ../_static/ide/atom/ide-atom-build-project.png
 
 To upload firmware to the board run ``Upload``.
 
@@ -253,13 +233,10 @@ And allows you to communicate with your board in an easy way:
     :target: ../_images/ide-atom-quick-start-14.png
 
 
-User Guide
-----------
-
 .. _atom_ide_platformio_menu:
 
 Menu item ``PlatformIO``
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 `platformio-ide <https://atom.io/packages/platformio-ide>`_ package adds to Atom
 new menu item named ``Menu: PlatformIO`` (after ``Menu: Help`` item).
@@ -269,14 +246,15 @@ new menu item named ``Menu: PlatformIO`` (after ``Menu: Help`` item).
 .. _atom_ide_platformio_toolbar:
 
 PlatformIO Toolbar
-~~~~~~~~~~~~~~~~~~
+------------------
 
 PlatformIO IDE Toolbar contains quick access buttons for the popular commands.
 Each button contains hint (delay mouse on it).
 
 .. image:: ../_static/ide/atom/ide-atom-toolbar.png
 
-* PlatformIO: Home (PIO Account, Library Manager, Board Explorer, Development Platform Manager)
+* PlatformIO: Home (:ref:`pioaccount`, library and platform managers, board explorer,
+  and many more...)
 * PlatformIO: Build
 * PlatformIO: Upload
 * PlatformIO: Clean
@@ -284,10 +262,7 @@ Each button contains hint (delay mouse on it).
 * Run other target (Build environments, :ref:`unit_testing`)
 * Toggle build panel
 * ||
-* Initialize new PlatformIO Project or update existing...
-* Add/Open Project Folder...
 * Find in Project...
-* ||
 * PIO Terminal
 * Serial Monitor
 * ||
@@ -296,7 +271,7 @@ Each button contains hint (delay mouse on it).
 .. _ide_atom_building_targets:
 
 Building / Uploading / Targets
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 * ``cmd-alt-b`` / ``ctrl-alt-b`` / ``f9`` builds project without auto-uploading.
 * ``cmd-alt-u`` / ``ctrl-alt-u`` builds and uploads (if no errors).
@@ -310,7 +285,7 @@ Building / Uploading / Targets
 More options ``Menu: PlatformIO > Settings > Build``.
 
 Intelligent Code Completion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 PlatformIO IDE uses `clang <http://clang.llvm.org>`_ for the Intelligent Code Completion.
 To install it or check if it is already installed, please follow to step
@@ -324,7 +299,7 @@ To install it or check if it is already installed, please follow to step
 .. _ide_atom_smart_code_linter:
 
 Smart Code Linter
-~~~~~~~~~~~~~~~~~
+-----------------
 
 PlatformIO IDE uses PlatformIO's pre-built GCC toolchains for Smart Code Linter
 and rapid professional development.
@@ -338,13 +313,8 @@ automatically created and preconfigured when you initialize project using
     Rebuild C/C++ Project Index (Autocomplete, Linter)``
 
 
-.. error::
-    If you have an error like ``linter-gcc: Executable not found`` and
-    ``"***/.platformio/packages/toolchain-atmelavr/bin/avr-g++" not found``,
-    please ``Menu: PlatformIO > Initialize new PlatformIO Project or update existing...``.
-
 Install Shell Commands
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 To install ``platformio`` and ``pio`` shell commands please use ``Menu:
 PlatformIO > Install Shell Commands``. It will allow you to call PlatformIO from

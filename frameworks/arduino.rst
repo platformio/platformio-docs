@@ -2080,7 +2080,7 @@ LowPowerLab
       - RAM
 
     * - ``mightyhat``
-      - `LowPowerLab Moteino <https://lowpowerlab.com/shop/product/130>`_
+      - `LowPowerLab MightyHat <https://lowpowerlab.com/shop/product/130>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P

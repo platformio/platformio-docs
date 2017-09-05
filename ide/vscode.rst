@@ -60,7 +60,7 @@ Setting Up the Project
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-welcome.png
 
-2. Click on "New Project", select a board and create a new PlatformIO Project
+2. Click on "New Project", select a board and create new PlatformIO Project
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-new-project.png
 
@@ -71,9 +71,6 @@ Setting Up the Project
 
     The code below works only in pair with Arduino-based boards. Please
     follow to `PlatformIO Project Examples <https://github.com/platformio/platformio-examples>`_ repository for other pre-configured projects.
-
-
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-blink-project.png
 
 .. code-block:: cpp
 
@@ -108,6 +105,8 @@ Setting Up the Project
        // wait for a second
       delay(1000);
     }
+
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-blink-project.png
 
 4. Build your project with ``ctrl+alt+b`` hotkey (see all Key Bindings in
    "User Guide" section below) or using "Build" button on the :ref:`ide_vscode_toolbar`
