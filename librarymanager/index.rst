@@ -22,7 +22,8 @@ up-to-date. PlatformIO Library Manager supports
 
 -------
 
-:ref:`ide_atom` has built-in Library Manager with a friendly GUI. It allows:
+:ref:`pioide` has built-in **PIO Home: Library Manager** with a friendly GUI.
+It allows:
 
 * Search for new libraries in PlatformIO Registry
 * "1-click" library installation, per-project libraries, extra storages
@@ -31,7 +32,7 @@ up-to-date. PlatformIO Library Manager supports
 * Updates for installed libraries
 * Multiple examples, trending libraries, and more.
 
-.. image:: ../_static/ide/atom/ide-atom-home-lib.png
+.. image:: ../_static/home/pio-home-library-search.png
 
 .. toctree::
     :maxdepth: 2

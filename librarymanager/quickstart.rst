@@ -20,11 +20,11 @@ Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
 up-to-date. PlatformIO Library Manager supports
 `Semantic Versioning <http://semver.org>`_ and its rules.
 
-There are 3 options how to find a library:
+There are 3 options how to find/manage libraries:
 
-* Using Library Manager in :ref:`ide_atom`
+* PIO Home: Library Manager in :ref:`pioide`
+* PIO Core :ref:`Command Line Interface <cmd_lib_search>`
 * `Web Library Search <http://platformio.org/lib>`__
-* :ref:`Command Line Interface <cmd_lib_search>`
 
 You can manage different library storages using
 :option:`platformio lib --global` or  :option:`platformio lib --storage-dir`
@@ -71,7 +71,8 @@ possible values.
 PlatformIO IDE
 --------------
 
-:ref:`ide_atom` has built-in Library Manager with a friendly GUI. It allows:
+:ref:`pioide` has built-in **PIO Home: Library Manager** with a friendly GUI.
+It allows:
 
 * Search for new libraries in PlatformIO Registry
 * "1-click" library installation, per-project libraries, extra storages
@@ -80,7 +81,7 @@ PlatformIO IDE
 * Updates for installed libraries
 * Multiple examples, trending libraries, and more.
 
-.. image:: ../_static/ide/atom/ide-atom-home-lib.png
+.. image:: ../_static/home/pio-home-library-search.png
 
 
 PlatformIO Core
