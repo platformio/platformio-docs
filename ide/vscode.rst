@@ -11,7 +11,7 @@
 
 .. _ide_vscode:
 
-PlatformIO IDE for VScode
+PlatformIO IDE for VSCode
 =========================
 
 .. include:: pioide_features.rst

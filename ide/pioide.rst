@@ -21,6 +21,11 @@ PlatformIO IDE
 We provide official packages (plugins, extensions) for the most popular IDEs
 and text editors.
 
+.. hint::
+
+    We highly recommend to use :ref:`ide_vscode` for the best experience and
+    performance.
+
 Atom
 ----
 
