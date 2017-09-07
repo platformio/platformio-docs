@@ -135,11 +135,29 @@ Adafruit
       - 256 Kb
       - 32 Kb
 
+    * - ``adafruit_gemma_m0``
+      - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - SAMD21E18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
     * - ``adafruit_metro_m0``
       - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_trinket_m0``
+      - `Adafruit Trinket M0 <https://www.adafruit.com/product/3500>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - SAMD21E18A
       - 48 MHz
       - 256 Kb
       - 32 Kb
