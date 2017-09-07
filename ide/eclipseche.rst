@@ -21,9 +21,6 @@ workspace server comes with a RESTful webservice and provides high flexibility.
 It also contains a SDK which can be used to create plug-ins for languages,
 frameworks or tools.
 
-.. tip::
-  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
-
 .. contents::
 
 .. note::

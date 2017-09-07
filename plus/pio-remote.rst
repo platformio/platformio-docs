@@ -35,9 +35,6 @@ awesome things at any time when inspiration comes to you.
 You should have :ref:`pioaccount` to work with |PIORemote|.
 A registration is **FREE**.
 
-.. tip::
-  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
-
 .. contents::
 
 Features
