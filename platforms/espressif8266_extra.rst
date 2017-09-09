@@ -233,16 +233,16 @@ Using Arduino Framework with Staging version
 PlatformIO will install the latest Arduino Core for ESP8266 from
 https://github.com/esp8266/Arduino. The `Git <https://git-scm.com>`_
 should be installed in a system. To update Arduino Core to the latest revision,
-please use :ref:`cmd_platform_update` command.
+please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
 
-1.  Install Espressif 8266 (Stage) development platform
-
-    .. code::
-
-        platformio platform install https://github.com/platformio/platform-espressif8266.git#feature/stage
-
-2.  Set :ref:`projectconf_env_platform` to ``espressif8266_stage`` in
-    :ref:`projectconf`. For example,
+1.  Please install :ref:`pioide`
+2.  Navigate to ``PIO Home > Platforms > Installed`` and uninstall stable
+    ``Espressif 8266`` development platform (if it's already installed).
+3.  Click on "Advanced Installation" button in ``PIO Home > Platforms > Installed``
+    and enter ``https://github.com/platformio/platform-espressif8266.git#feature/stage``,
+    then "Install" button
+4.  Open :ref:`projectconf` and set :ref:`projectconf_env_platform` to
+    ``espressif8266_stage``. For example,
 
     .. code-block:: ini
 
@@ -251,18 +251,18 @@ please use :ref:`cmd_platform_update` command.
         board = nodemcuv2
         framework = arduino
 
-3.  Try to build project
-4.  If you see build errors, then try to build this project using the same
+5.  Try to build project
+6.  If you see build errors, then try to build this project using the same
     ``stage`` with Arduino IDE
-5.  If it works with Arduino IDE but doesn't work with PlatformIO, please
-    `file new issue <https://github.com/platformio/platform-espressif8266/issues>`_
+7.  If it works with Arduino IDE but doesn't work with PlatformIO, then please
+    `file new issue <https://github.com/platformio/platform-espressif32/issuess>`_
     with attached information:
 
     - test project/files
     - detailed log of build process from Arduino IDE (please copy it from
-      console to http://pastebin.com)
-    - detailed log of build process from PlatformIO Build System (
-      please copy it from console to http://pastebin.com)
+      console to https://hastebin.com)
+    - detailed log of build process from PlatformIO Build System (please copy
+      it from console to https://hastebin.com)
 
 Articles
 --------
