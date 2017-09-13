@@ -24,6 +24,7 @@ Here are recent articles/reviews about PlatformIO:
 ^^^^
 
 * Sep 06, 2017 - **ThingForward** - `Embedded Testing with PlatformIO – Part 3: Remoting <http://www.thingforward.io/techblog/2017-09-06-embedded-testing-with-platformio-part-3-remoting.html>`_
+* Sep 04, 2017 - **Dror Gluska** - `Looking To The IoT Future With PlatformIO And ESP32 <http://uhurumkate.blogspot.co.il/2017/09/looking-to-iot-future-with-platformio.html>`_
 * Aug 23, 2017 - **陳亮** - `Develop ESP32 With PlatformIO IDE <http://www.instructables.com/id/Develop-ESP32-With-PlatformIO-IDE/>`_
 * Aug 08, 2017 - **ThingForward** - `Embedded Testing with PlatformIO - Part 2 <http://www.thingforward.io/techblog/2017-08-08-embedded-testing-with-platformio-part-2.html>`_
 * Jul 25, 2017 - **ThingForward** - `Start Embedded Testing with PlatformIO <http://www.thingforward.io/techblog/2017-07-25-starting-embedded-testing-with-platformio.html>`_

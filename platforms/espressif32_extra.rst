@@ -121,6 +121,12 @@ please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
     - detailed log of build process from PlatformIO Build System (please copy
       it from console to https://hastebin.com)
 
+Articles
+--------
+
+* Sep 04, 2017 - **Dror Gluska** - `Looking To The IoT Future With PlatformIO And ESP32 <http://uhurumkate.blogspot.co.il/2017/09/looking-to-iot-future-with-platformio.html>`_
+* Aug 23, 2017 - **陳亮** - `Develop ESP32 With PlatformIO IDE <http://www.instructables.com/id/Develop-ESP32-With-PlatformIO-IDE/>`_
+
 Examples
 --------
 
