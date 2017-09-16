@@ -2925,6 +2925,15 @@ MikroElektronika
       - 512 Kb
       - 32 Kb
 
+    * - ``flipnclickmz``
+      - `MikroElektronika Flip N Click MZ <https://shop.mikroe.com/flipclick-pic32mz>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
+      - 
+      - 32MZ2048EFH100
+      - 252 MHz
+      - 2048 Kb
+      - 512 Kb
+
     * - ``hexiwear``
       - `Hexiwear <https://developer.mbed.org/platforms/Hexiwear/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
@@ -3459,15 +3468,6 @@ PONTECH
       - Flash
       - RAM
 
-    * - ``quick240_usb``
-      - `PONTECH quicK240 <http://quick240.com/quicki/>`_
-      - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
-      - 32MX795F512L
-      - 80 MHz
-      - 512 Kb
-      - 128 Kb
-
     * - ``usbono_pic32``
       - `PONTECH UAV100 <http://www.pontech.com/productdisplay/uav100>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
@@ -3557,6 +3557,39 @@ Pololu Corporation
       - 16 MHz
       - 32 Kb
       - 2.5 Kb
+
+Pontech
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nofire``
+      - `Pontech NoFire <http://www.pontech.com/products>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
+      - 
+      - 32MZ2048EFG100
+      - 200 MHz
+      - 2048 Kb
+      - 512 Kb
+
+    * - ``quick240_usb``
+      - `Pontech Quick240 <http://chipkit.net/wpcproduct/pontech-quick240/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
+      - 
+      - 32MX795F512L
+      - 80 MHz
+      - 512 Kb
+      - 128 Kb
 
 Punch Through
 ~~~~~~~~~~~~~
