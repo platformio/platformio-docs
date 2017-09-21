@@ -237,14 +237,12 @@ please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
 
 1.  Please install :ref:`pioide`
 2.  Initialize a new project, open :ref:`projectconf` and set
-    :ref:`projectconf_env_platform` to
-    ``https://github.com/platformio/platform-espressif8266.git#feature/stage``.
-    For example,
+    :ref:`projectconf_env_platform` to ``espressif8266_stage``. For example,
 
     .. code-block:: ini
 
         [env:nodemcuv2]
-        platform = https://github.com/platformio/platform-espressif8266.git#feature/stage
+        platform = espressif8266_stage
         board = nodemcuv2
         framework = arduino
 
