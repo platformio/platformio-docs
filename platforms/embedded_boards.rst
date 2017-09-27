@@ -4431,6 +4431,15 @@ Samsung
       - Flash
       - RAM
 
+    * - ``artik_053``
+      - `Samsung ARTIK053 <http://www.artik.io>`_
+      - :ref:`Samsung ARTIK <platform_samsung_artik>`
+      - :ref:`Yes <piodebug>`
+      - S5JT200
+      - 320 MHz
+      - 8192 Kb
+      - 1280 Kb
+
     * - ``artik_1020``
       - `Samsung ARTIK 1020 <https://www.artik.io>`_
       - :ref:`Linux ARM <platform_linux_arm>`

@@ -433,6 +433,9 @@ Platforms
     * - :ref:`platform_wiznet7500`
       - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
+    * - :ref:`platform_samsung_artik`
+      - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
+
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
 
@@ -1904,6 +1907,30 @@ ST
       - 80 MHz
       - 1024 Kb
       - 128 Kb
+
+Samsung
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``artik_053``
+      - `Samsung ARTIK053 <http://www.artik.io>`_
+      - :ref:`Samsung ARTIK <platform_samsung_artik>`
+      - :ref:`debugging_tool_custom` (default)
+      - S5JT200
+      - 320 MHz
+      - 8192 Kb
+      - 1280 Kb
 
 SeeedStudio
 ~~~~~~~~~~~

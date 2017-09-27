@@ -122,6 +122,9 @@ Packages
     * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897>`__
       - STM32Cube embedded software libraries
 
+    * - `framework-tizenrt <http://www.artik.io>`__
+      - TizenRT RTOS with library
+
     * - `framework-wiringpi <http://wiringpi.com>`__
       - GPIO Interface library for the Raspberry Pi
 
@@ -133,6 +136,9 @@ Packages
 
     * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools>`__
       - Genuino101 uploader
+
+    * - `tool-artik-openocd <http://openocd.org>`__
+      - OpenOCD for ARTIK
 
     * - `tool-avrdude <http://www.nongnu.org/avrdude/>`__
       - AVRDUDE
@@ -147,7 +153,7 @@ Packages
       - esptool-ck
 
     * - `tool-esptoolpy <https://github.com/espressif/esptool>`__
-      - Espressif ROM Bootloader utility
+      - ESP8266 and ESP32 serial bootloader utility
 
     * - `tool-lm4flash <http://www.ti.com/tool/lmflashprogrammer>`__
       - Flash Programmer

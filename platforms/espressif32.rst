@@ -47,7 +47,7 @@ Packages
       - ESP8266 OTA utility
 
     * - `tool-esptoolpy <https://github.com/espressif/esptool>`__
-      - Espressif ROM Bootloader utility
+      - ESP8266 and ESP32 serial bootloader utility
 
     * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf>`__
       - xtensa32-gcc
