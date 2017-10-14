@@ -259,7 +259,7 @@ Summary of the `Unity Test API <https://github.com/ThrowTheSwitch/Unity#unity-te
 
 * `Running Tests <https://github.com/ThrowTheSwitch/Unity#running-tests>`_
 
-  - ``RUN_TEST(func, linenum)``
+  - ``RUN_TEST(func)``
 
 * `Ignoring Tests <https://github.com/ThrowTheSwitch/Unity#ignoring-tests>`_
 
