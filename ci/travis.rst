@@ -30,7 +30,7 @@ Travis CI is configured by adding a file named ``.travis.yml``, which is a
 directory of the GitHub repository.
 
 Travis CI automatically detects when a commit has been made and pushed to a
-GitHub repository that is using Travis CI, and each time this happens, it will
+repository that is using Travis CI, and each time this happens, it will
 try to build the project using :ref:`cmd_ci` command. This includes commits to
 all branches, not just to the master branch. Travis CI will also build and run
 pull requests. When that process has completed, it will notify a developer in

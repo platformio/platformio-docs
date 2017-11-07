@@ -32,5 +32,6 @@ easily.
     circleci
     drone
     gitlab
+    jenkins
     shippable
     travis

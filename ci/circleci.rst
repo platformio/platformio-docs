@@ -11,21 +11,21 @@
 
 .. _ci_circleci:
 
-Circle CI
-=========
+CircleCI
+========
 
-`Circle CI <https://circleci.com/about>`_ is a hosted cloud
+`CircleCI <https://circleci.com/about>`_ is a hosted cloud
 platform that provides hosted continuous integration, deployment, and testing
 to `GitHub <http://en.wikipedia.org/wiki/GitHub>`_ repositories.
 
-Circle CI is configured by adding a file named ``circle.yml``, which is a
+CircleCI is configured by adding a file named ``circle.yml``, which is a
 `YAML <http://en.wikipedia.org/wiki/YAML>`_ format text file, to the root
 directory of the GitHub repository.
 
-Circle CI automatically detects when a commit has been made and pushed to a
-GitHub repository that is using Circle CI, and each time this happens, it will
+CircleCI automatically detects when a commit has been made and pushed to a
+repository that is using CircleCI, and each time this happens, it will
 try to build the project using :ref:`cmd_ci` command. This includes commits to
-all branches, not just to the master branch. Circle CI will also build and run
+all branches, not just to the master branch. CircleCI will also build and run
 pull requests. When that process has completed, it will notify a developer in
 the way it has been configured to do so — for example, by sending an email
 containing the build results (showing success or failure), or by posting a
@@ -37,7 +37,7 @@ different :ref:`platforms`.
 Integration
 -----------
 
-Please make sure to read Circle CI `Getting Started <https://circleci.com/docs/getting-started>`_
+Please make sure to read CircleCI `Getting Started <https://circleci.com/docs/getting-started>`_
 guide first.
 
 .. code-block:: yaml

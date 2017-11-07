@@ -11,14 +11,24 @@
 
 .. _ci_gitlab:
 
-GitLab CI
-=========
+GitLab
+======
 
-`GitLab CI <https://about.gitlab.com/features/gitlab-ci-cd/>`_ is a hosted cloud
-platform that can help you build, test, deploy, and monitor your code from 
-`GitLab <https://about.gitlab.com/>`_ repositories.
+`GitLab <https://about.gitlab.com/features/gitlab-ci-cd/>`_ is a hosted cloud
+platform that can help you build, test, deploy, and monitor your code from
+GitLab repositories.
 
-GitLab CI is enabled by default on new projects, so you can start using its features right away. All you need is :ref:`cmd_ci` command, a file called ``.gitlab-ci.yml`` (where you describe how the build should run) placed in the root directory of your git project, and a configured Runner to perform the actual build (Gitlab has some pre-configured public runners so your CI script should work out of the box). Each project comes with a Builds page where you can follow the output of each build, see the commit that introduced it and other useful information such as the time the build started, how long it lasted and the commiter's name. The statuses for each build are exposed in the GitLab UI, and you can see whether a build succeeded, failed, got canceled or skipped.
+GitLab CI is enabled by default on new projects, so you can start using its
+features right away. All you need is :ref:`cmd_ci` command, a file
+called ``.gitlab-ci.yml`` (where you describe how the build should run) placed
+in the root directory of your git project, and a configured Runner to
+perform the actual build (Gitlab has some pre-configured public runners
+so your CI script should work out of the box). Each project comes with a
+Builds page where you can follow the output of each build, see the commit
+that introduced it and other useful information such as the time the build
+started, how long it lasted and the commiter's name. The statuses for each
+build are exposed in the GitLab UI, and you can see whether a build
+succeeded, failed, got canceled or skipped.
 
 .. contents::
 
@@ -60,7 +70,7 @@ Examples
      - test
 
     .job_template: &pio_run
-      script: 
+      script:
         - "platformio ci --lib='.' --board=uno --board=teensy31 --board=nodemcuv2 $PLATFORMIO_CI_EXTRA_ARGS"
 
     before_script:
@@ -71,35 +81,35 @@ Examples
       variables:
         PLATFORMIO_CI_EXTRA_ARGS: "--board=due"
         PLATFORMIO_CI_SRC: examples/JsonGeneratorExample
-      
+
     JsonHttpClient:
       <<: *pio_run
-      variables: 
+      variables:
         PLATFORMIO_CI_SRC: examples/JsonHttpClient
-      
+
     JsonParserExample:
       <<: *pio_run
-      variables: 
+      variables:
         PLATFORMIO_CI_SRC: examples/JsonParserExample
-      
+
     JsonServer:
       <<: *pio_run
-      variables: 
+      variables:
         PLATFORMIO_CI_SRC: examples/JsonServer
-      
+
     JsonUdpBeacon:
       <<: *pio_run
-      variables: 
+      variables:
         PLATFORMIO_CI_SRC: examples/JsonUdpBeacon
-      
+
     ProgmemExample:
       stage: test
       <<: *pio_run
-      variables: 
+      variables:
         PLATFORMIO_CI_SRC: examples/ProgmemExample
-      
+
     StringExample:
       stage: test
       <<: *pio_run
-      variables: 
+      variables:
         PLATFORMIO_CI_SRC: examples/StringExample

@@ -24,7 +24,7 @@ AppVeyor is configured by adding a file named ``appveyor.yml``, which is a
 directory of the GitHub repository.
 
 AppVeyor automatically detects when a commit has been made and pushed to a
-GitHub repository that is using AppVeyor, and each time this happens, it will
+repository that is using AppVeyor, and each time this happens, it will
 try to build the project using :ref:`cmd_ci` command. This includes commits to
 all branches, not just to the master branch. AppVeyor will also build and run
 pull requests. When that process has completed, it will notify a developer in
