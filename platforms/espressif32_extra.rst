@@ -9,6 +9,63 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Custom CPU Frequency
+--------------------
+
+See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
+
+.. code-block:: ini
+
+    [env:myenv]
+    ; set frequency to 160MHz
+    board_f_cpu = 160000000L
+
+Custom FLASH Frequency
+----------------------
+
+See :ref:`projectconf_board_f_flash` option from :ref:`projectconf`. Possible
+values:
+
+* ``40000000L`` (default)
+* ``80000000L``
+
+.. code-block:: ini
+
+    [env:myenv]
+    ; set frequency to 80MHz
+    board_f_flash = 80000000L
+
+Custom FLASH Mode
+-----------------
+
+Flash chip interface mode. This parameter is stored in the binary image
+header, along with the flash size and flash frequency. The ROM bootloader
+in the ESP chip uses the value of these parameters in order to know how to
+talk to the flash chip.
+
+See :ref:`projectconf_board_flash_mode` option from :ref:`projectconf`. Possible
+values:
+
+* ``qio``
+* ``qout``
+* ``dio``
+* ``dout``
+
+.. code-block:: ini
+
+    [env:myenv]
+    board_flash_mode = qio
+
+Custom Upload Speed
+-------------------
+
+You can set custom upload speed using  :ref:`projectconf_upload_speed` option
+from :ref:`projectconf`
+
+.. code-block:: ini
+
+    [env:myenv]
+    upload_speed = 9600
 
 Over-the-Air (OTA) update
 -------------------------

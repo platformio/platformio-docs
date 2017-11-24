@@ -28,7 +28,7 @@ values:
 
 * ``20000000L``
 * ``26000000L``
-* ``40000000L``
+* ``40000000L`` (default)
 * ``80000000L``
 
 .. code-block:: ini
@@ -86,8 +86,8 @@ Custom Flash Size
     Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
     information first.
 
-The list with preconfigured LD scripts is located in public repository
-`platformio-pkg-ldscripts <https://github.com/platformio/platformio-pkg-ldscripts>`_.
+Available LD-scripts:
+https://github.com/platformio/platform-espressif8266/tree/develop/ldscripts
 
 * ``esp8266.flash.512k0.ld`` 512K (no SPIFFS)
 * ``esp8266.flash.512k64.ld`` 512K (64K SPIFFS)
