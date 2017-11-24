@@ -131,6 +131,12 @@ the supported forms:
 * git+git://git.server.org/my-library
 * git+https://git.server.org/my-library
 * git+ssh://git.server.org/my-library
+* git+ssh://user@git.server.org/my-library
+
+.. warning::
+    PlatformIO does not support SCP-like syntax. Please use
+    ``git+ssh://[user@]host.xz/path/to/repo.git`` instead of
+    ``[user@]host.xz:path/to/repo.git/``.
 
 Passing branch names, a commit hash or a tag name is possible like so:
 
