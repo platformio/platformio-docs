@@ -29,4 +29,5 @@ Frameworks
     simba
     spl
     stm32cube
+    tizenrt
     wiringpi
