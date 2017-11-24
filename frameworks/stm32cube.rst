@@ -42,6 +42,30 @@ Boards
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
+1BitSquared
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``1bitsy_stm32f415rgt``
+      - `1Bitsy <http://1bitsy.org>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F415RGT
+      - 168 MHz
+      - 1024 Kb
+      - 128 Kb
+
 96Boards
 ~~~~~~~~
 
@@ -174,7 +198,7 @@ MultiTech
     * - ``xdot_l151cc``
       - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      - :ref:`Yes <piodebug>`
       - STM32L151CCU6
       - 32 MHz
       - 256 Kb
@@ -371,6 +395,15 @@ ST
       - 80 MHz
       - 1024 Kb
       - 128 Kb
+
+    * - ``eval_l073z``
+      - `ST STM32L073Z-EVAL <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-eval-boards/stm32l073z-eval.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L073VZT6
+      - 32 MHz
+      - 192 Kb
+      - 20 Kb
 
     * - ``nucleo_f030r8``
       - `ST Nucleo F030R8 <https://developer.mbed.org/platforms/ST-Nucleo-F030R8/>`_

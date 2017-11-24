@@ -349,7 +349,7 @@ Arduino
       - 2 Kb
 
     * - ``chiwawa``
-      - `Arduino Industrial 101 <https://www.arduino.cc/en/Main/ArduinoBoard101>`_
+      - `Arduino Industrial 101 <https://store.arduino.cc/arduino-industrial-101>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -1740,6 +1740,30 @@ SparkFun
       - 
       - ATMEGA328P
       - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+SpellFoundry
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``sleepypi``
+      - `SpellFoundry Sleepy Pi 2 <https://spellfoundry.com/product/sleepy-pi-2/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 8 MHz
       - 32 Kb
       - 2 Kb
 

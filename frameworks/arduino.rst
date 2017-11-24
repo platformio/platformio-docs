@@ -481,7 +481,7 @@ Arduino
       - 2 Kb
 
     * - ``chiwawa``
-      - `Arduino Industrial 101 <https://www.arduino.cc/en/Main/ArduinoBoard101>`_
+      - `Arduino Industrial 101 <https://store.arduino.cc/arduino-industrial-101>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -2010,7 +2010,7 @@ LeafLabs
     * - ``maple``
       - `Maple <http://www.leaflabs.com/maple/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      - :ref:`Yes <piodebug>`
       - STM32F103RB
       - 72 MHz
       - 128 Kb
@@ -2019,7 +2019,7 @@ LeafLabs
     * - ``maple_mini_b20``
       - `Maple Mini Bootloader 2.0 <http://www.leaflabs.com/maple/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      - :ref:`Yes <piodebug>`
       - STM32F103CB
       - 72 MHz
       - 128 Kb
@@ -2028,7 +2028,7 @@ LeafLabs
     * - ``maple_mini_origin``
       - `Maple Mini Original <http://www.leaflabs.com/maple/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      - :ref:`Yes <piodebug>`
       - STM32F103CB
       - 72 MHz
       - 128 Kb
@@ -2204,6 +2204,30 @@ MXChip
       - 100 MHz
       - 1024 Kb
       - 256 Kb
+
+Macchina
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``macchina2``
+      - `Macchina M2 <https://www.macchina.cc>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - AT91SAM3X8E
+      - 84 MHz
+      - 512 Kb
+      - 32 Kb
 
 MakerAsia
 ~~~~~~~~~
@@ -3450,6 +3474,30 @@ SparkFun Electronics
       - 1280 Kb
       - 288 Kb
 
+SpellFoundry
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``sleepypi``
+      - `SpellFoundry Sleepy Pi 2 <https://spellfoundry.com/product/sleepy-pi-2/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 8 MHz
+      - 32 Kb
+      - 2 Kb
+
 SweetPea
 ~~~~~~~~
 
@@ -3552,7 +3600,7 @@ Teensy
     * - ``teensy35``
       - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html>`_
       - :ref:`Teensy <platform_teensy>`
-      - 
+      - :ref:`Yes <piodebug>`
       - MK64FX512
       - 120 MHz
       - 512 Kb
@@ -3561,7 +3609,7 @@ Teensy
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html>`_
       - :ref:`Teensy <platform_teensy>`
-      - 
+      - :ref:`Yes <piodebug>`
       - MK66FX1M0
       - 180 MHz
       - 1024 Kb

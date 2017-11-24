@@ -351,6 +351,30 @@ Digistump
       - 512 Kb
       - 28 Kb
 
+Macchina
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``macchina2``
+      - `Macchina M2 <https://www.macchina.cc>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - AT91SAM3X8E
+      - 84 MHz
+      - 512 Kb
+      - 32 Kb
+
 SODAQ
 ~~~~~
 

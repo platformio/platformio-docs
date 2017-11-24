@@ -55,6 +55,17 @@ Packages
         manufacturer
 
 
+Frameworks
+----------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`framework_tizenrt`
+      - Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
+
 Boards
 ------
 

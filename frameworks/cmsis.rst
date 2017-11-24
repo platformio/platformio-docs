@@ -42,6 +42,30 @@ Boards
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
+1BitSquared
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``1bitsy_stm32f415rgt``
+      - `1Bitsy <http://1bitsy.org>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F415RGT
+      - 168 MHz
+      - 1024 Kb
+      - 128 Kb
+
 Armstrap
 ~~~~~~~~
 
