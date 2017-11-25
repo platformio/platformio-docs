@@ -617,9 +617,16 @@ option in :ref:`projectconf`.
 ``libLDFMode``
 ~~~~~~~~~~~~~~
 
-*Optional* | Type: ``Integer``
+*Optional* | Type: ``String``
 
 Specify Library Dependency Finder Mode. See :ref:`ldf_mode` for details.
+
+``libCompatMode``
+~~~~~~~~~~~~~~~~~
+
+*Optional* | Type: ``Integer``
+
+Specify Library Compatibility Mode. See :ref:`ldf_compat_mode` for details.
 
 Examples
 --------
