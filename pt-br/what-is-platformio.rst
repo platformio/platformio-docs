@@ -14,7 +14,7 @@
 O que é PlatformIO?
 ===================
 
-.. contents:: Contents
+.. contents:: Conteúdos
     :local:
 
 Publicação sobre PlatformIO
@@ -36,7 +36,7 @@ na organização e administração de centena de bibliotecas que podem ser inclu
 facilmente em seu projeto. PlatformIO inicialmente foi desenvolvido com a filosofia de linha de comando.
 Isso foi com sucesso usado com outras IDE's como Eclipse ou Visual Studio.
 Recentemente nós lançamos uma versão construída na IDE base do Editor de texto Atom", -
-[Embedds]_.
+[Embarcados]_.
 
 Prêmios
 -------
@@ -102,4 +102,4 @@ desenvolvimento de projeto usando PlatformIO é o seguinte:
   e atualizado para todas as placas de interesse.
 
 
-.. [Embedds] Embedds.com: `Desenvolva facilmente com o ecossistema PlatformIO <http://www.embedds.com/develop-easier-with-platformio-ecosystem/>`_
+.. [Embarcados] Embedds.com: `Desenvolva facilmente com o ecossistema PlatformIO <http://www.embedds.com/develop-easier-with-platformio-ecosystem/>`_
