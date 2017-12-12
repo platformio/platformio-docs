@@ -24,12 +24,20 @@ Usage
     platformio upgrade
     pio upgrade
 
-
 Description
 -----------
 
 Check or upgrade PlatformIO to the latest version
 
+Options
+-------
+
+.. program:: platformio upgrade
+
+.. option::
+    --develop
+
+Force development branch.
 
 Examples
 --------
