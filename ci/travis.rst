@@ -64,12 +64,6 @@ PlatformIO is written in Python and is recommended to be run within
     python:
         - "2.7"
 
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-
     env:
         - PLATFORMIO_CI_SRC=path/to/test/file.c
         - PLATFORMIO_CI_SRC=examples/file.ino
@@ -180,12 +174,6 @@ Examples
     python:
         - "2.7"
 
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-
     env:
         - PLATFORMIO_CI_SRC=examples/acm/acm_terminal
         - PLATFORMIO_CI_SRC=examples/Bluetooth/WiiIRCamera PLATFORMIO_BUILD_FLAGS="-DWIICAMERA"
@@ -217,12 +205,6 @@ Examples
     python:
         - "2.7"
 
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-
     env:
         - PLATFORMIO_CI_SRC=examples/backSoon/backSoon.ino
         - PLATFORMIO_CI_SRC=examples/etherNode/etherNode.ino
@@ -250,12 +232,6 @@ Examples
     language: python
     python:
         - "2.7"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
 
     env:
         - PLATFORMIO_CI_SRC=examples/TimeArduinoDue PLATFORMIO_CI_EXTRA_ARGS="--board=due"
@@ -287,12 +263,6 @@ Examples
     language: python
     python:
         - "2.7"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
 
     env:
         - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Adafruit_Bluefruit_LE
