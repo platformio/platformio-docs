@@ -35,9 +35,9 @@ Options
 .. program:: platformio upgrade
 
 .. option::
-    --develop
+    --dev
 
-Force development branch.
+Use development branch.
 
 Examples
 --------
