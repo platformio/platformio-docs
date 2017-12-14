@@ -92,6 +92,35 @@ Example:
     [platformio]
     home_dir = /path/to/custom/pio/storage
 
+.. _projectconf_pio_include_dir:
+
+``include_dir``
+^^^^^^^^^^^^^^^
+
+A path to project's headers files. PlatformIO uses it for :ref:`cmd_run`
+command. A default value is ``include`` that means that folder is located in the
+root of project. This path will be added to ``CPPPATH`` of build environment.
+
+This option can be overridden by global environment variable
+:envvar:`PLATFORMIO_INCLUDE_DIR`.
+
+.. _projectconf_pio_src_dir:
+
+``src_dir``
+^^^^^^^^^^^
+
+A path to project's source directory. PlatformIO uses it for :ref:`cmd_run`
+command. A default value is ``src`` that means that folder is located in the
+root of project.
+
+This option can be overridden by global environment variable
+:envvar:`PLATFORMIO_SRC_DIR`.
+
+.. note::
+    This option is useful for people who migrate from Arduino/Energia IDEs where
+    source directory should have the same name like the main source file.
+    See `example <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-own-src_dir>`__ project with own source directory.
+
 .. _projectconf_pio_lib_dir:
 
 ``lib_dir``
@@ -166,23 +195,6 @@ difference is that the option which is defined in ``[platofrmio]`` section
 will be extra applied automatically for all ``[env:]`` sections.
 
 For the possible values and examples please follow to :ref:`projectconf_lib_extra_dirs`.
-
-.. _projectconf_pio_src_dir:
-
-``src_dir``
-^^^^^^^^^^^
-
-A path to project's source directory. PlatformIO uses it for :ref:`cmd_run`
-command. A default value is ``src`` that means that folder is located in the
-root of project.
-
-This option can be overridden by global environment variable
-:envvar:`PLATFORMIO_SRC_DIR`.
-
-.. note::
-    This option is useful for people who migrate from Arduino/Energia IDEs where
-    source directory should have the same name like the main source file.
-    See `example <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-own-src_dir>`__ project with own source directory.
 
 .. _projectconf_pio_envs_dir:
 
