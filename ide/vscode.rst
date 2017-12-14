@@ -227,29 +227,53 @@ Settings
 
 ``platformio-ide.useBuiltinPIOCore``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Use built-in :ref:`piocore`, default configuration is ``true``.
+Use built-in :ref:`piocore`, default value is ``true``.
 
 ``platformio-ide.useDevelopmentPIOCore``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Use development version of :ref:`piocore`, default configuration is ``false``.
+Use development version of :ref:`piocore`, default value is ``false``.
 
 ``platformio-ide.autoRebuildAutocompleteIndex``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Automatically rebuild C/C++ Project Index when :ref:`projectconf` is changed
-or when new libraries are installed, default configuration is ``true``.
+or when new libraries are installed, default value is ``true``.
 
 ``platformio-ide.forceUploadAndMonitor``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Force "Upload and Monitor" task for Upload (``platformio-ide.upload``) command,
-default configuration is ``false``.
+default value is ``false``.
 
 ``platformio-ide.customPATH``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Custom PATH for ``platformio`` command. Paste here the result of ``echo $PATH``
 (Unix) / ``echo %PATH%`` (Windows) command by typing into your system terminal
-if you prefer to use custom version of :ref:`piocore`, default configuration
-is ``null``.
+if you prefer to use custom version of :ref:`piocore`, default value is ``null``.
 
+``platformio-ide.updateTerminalPathConfiguration``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Update Terminal configuration with patched PATH environment, default value
+is ``true``.
+
+Known issues
+------------
+
+PackageManager is unable to install tool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a known bug in VSCode Terminal
+`issue #61 <https://github.com/platformio/platformio-vscode-ide/issues/61>`_.
+
+Temporary solution:
+
+1. :ref:`faq_install_shell_commands` and close all terminals
+2. Open **System Terminal** ``cmd`` (not VSCode IDE Terminal)
+3. Change directory to PlatformIO project where you have this issue using
+   ``cd path/to/platformio/project``
+4. Start uploading and PlatformIO will download all dependent tools using
+   ``pio run -t upload`` command.
+
+Now, back to VSCode.
 
 Changelog
 ---------

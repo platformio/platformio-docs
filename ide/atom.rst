@@ -316,9 +316,7 @@ automatically created and preconfigured when you initialize project using
 Install Shell Commands
 ----------------------
 
-To install ``platformio`` and ``pio`` shell commands please use ``Menu:
-PlatformIO > Install Shell Commands``. It will allow you to call PlatformIO from
-other process, terminal and etc.
+Please navigate to FAQ :ref:`faq_install_shell_commands`.
 
 Known issues
 ------------
