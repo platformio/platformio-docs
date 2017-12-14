@@ -184,6 +184,14 @@ Allows to override setting :ref:`setting_check_platformio_interval`.
 
 Allows to override setting :ref:`setting_check_platforms_interval`.
 
+.. envvar:: PLATFORMIO_SETTING_ENABLE_CACHE
+
+Allows to override setting :ref:`setting_enable_cache`.
+
+.. envvar:: PLATFORMIO_SETTING_ENABLE_SSL
+
+Allows to override setting :ref:`setting_enable_ssl`.
+
 .. envvar:: PLATFORMIO_SETTING_ENABLE_TELEMETRY
 
 Allows to override setting :ref:`setting_enable_telemetry`.
@@ -192,6 +200,6 @@ Allows to override setting :ref:`setting_enable_telemetry`.
 
 Allows to override setting :ref:`setting_force_verbose`.
 
-.. envvar:: PLATFORMIO_SETTING_ENABLE_SSL
+.. envvar:: PLATFORMIO_SETTING_PROJECTS_DIR
 
-Allows to override setting :ref:`setting_enable_ssl`.
+Allows to override setting :ref:`setting_projects_dir`.
