@@ -266,12 +266,20 @@ This is a known bug in VSCode Terminal
 
 Temporary solution:
 
-1. :ref:`faq_install_shell_commands` and close all terminals
-2. Open **System Terminal** ``cmd`` (not VSCode IDE Terminal)
-3. Change directory to PlatformIO project where you have this issue using
-   ``cd path/to/platformio/project``
-4. Start uploading and PlatformIO will download all dependent tools using
-   ``pio run -t upload`` command.
+1. Open **System Terminal** (on Windows ``cmd.exe``), not VSCode IDE Terminal
+2. Build project and upload firmware using :ref:`piocore` which will download
+   and install all dependencies and toolchain:
+
+   .. code-block:: bash
+
+       # a) Change directory to PlatformIO Project where is located "platformio.ini"
+       cd path/to/platformio/project
+
+       # For Windows, please replace {username} with real user name
+       C:\Users\{username}\.platformio\penv\Scripts\platformio.exe run -target upload
+
+       # For Unix
+       ~/.platformio/penv/bin/platformio run --target upload
 
 Now, back to VSCode.
 
