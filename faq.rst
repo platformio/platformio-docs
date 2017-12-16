@@ -90,6 +90,9 @@ Install PIO Core Shell Commands
 If you have :ref:`pioide` already installed, you do not need to install
 :ref:`piocore` separately. Just link these tools with your shell:
 
+.. contents::
+    :local:
+
 Unix and Unix-like
 ~~~~~~~~~~~~~~~~~~
 
@@ -98,7 +101,7 @@ In Unix and Unix-like systems, there are multiple ways to achieve this.
 Method 1
 ''''''''
 
-You can add PlatformIO exexcutables' directory to the PATH environmental variable. This method will allow you to execute ``platformio`` commands from any terminal emulator as long as you're logged in as the user PlatformIO is installed and configured for.
+You can add PlatformIO executables' directory to the PATH environmental variable. This method will allow you to execute ``platformio`` commands from any terminal emulator as long as you're logged in as the user PlatformIO is installed and configured for.
 
 If you use Bash as your default shell, you can do it by editing either ``~/.profile`` or ``~/.bash_profile`` and adding the following line:
 
