@@ -706,7 +706,7 @@ Digistump
       - RAM
 
     * - ``digispark-pro``
-      - `Digistump Digispark Pro (Default 16 MHz) <http://digistump.com/products/109>`_
+      - `Digispark Pro <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -715,7 +715,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-pro32``
-      - `Digistump Digispark Pro (16 MHz) (32 byte buffer) <http://digistump.com/products/109>`_
+      - `Digispark Pro (32 byte buffer) <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -724,7 +724,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-pro64``
-      - `Digistump Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
+      - `Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -733,7 +733,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-tiny``
-      - `Digistump Digispark (Default - 16 MHz) <http://digistump.com/products/1>`_
+      - `Digispark USB <http://digistump.com/products/1>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY85
@@ -763,6 +763,30 @@ Dwengo
       - AT90USB646
       - 16 MHz
       - 64 Kb
+      - 2 Kb
+
+Elektor
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``elektor_uno_r4``
+      - `Elektor Uno R4 <https://www.elektor.com/elektor-uno-r4>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328PB
+      - 16 MHz
+      - 32 Kb
       - 2 Kb
 
 Engduino
@@ -1166,6 +1190,54 @@ Mcudude
       - 16 MHz
       - 8 Kb
       - 0.5 Kb
+
+MediaTek Labs
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``smart7688``
+      - `LinkIt Smart 7688 Duo <https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA32U4
+      - 8 MHz
+      - 32 Kb
+      - 2.5 Kb
+
+Microchip
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``at90pwm316``
+      - `Atmel AT90PWM316 <http://www.microchip.com/wwwproducts/en/AT90PWM316>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - AT90PWM316
+      - 0 MHz
+      - 16 Kb
+      - 1 Kb
 
 Microduino
 ~~~~~~~~~~
@@ -1610,6 +1682,30 @@ Sanguino
       - 8 MHz
       - 64 Kb
       - 4 Kb
+
+SeeedStudio
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``seeeduino``
+      - `Seeeduino <https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
 
 SparkFun
 ~~~~~~~~

@@ -1189,7 +1189,7 @@ Digistump
       - RAM
 
     * - ``digispark-pro``
-      - `Digistump Digispark Pro (Default 16 MHz) <http://digistump.com/products/109>`_
+      - `Digispark Pro <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -1198,7 +1198,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-pro32``
-      - `Digistump Digispark Pro (16 MHz) (32 byte buffer) <http://digistump.com/products/109>`_
+      - `Digispark Pro (32 byte buffer) <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -1207,7 +1207,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-pro64``
-      - `Digistump Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
+      - `Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -1216,7 +1216,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-tiny``
-      - `Digistump Digispark (Default - 16 MHz) <http://digistump.com/products/1>`_
+      - `Digispark USB <http://digistump.com/products/1>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY85
@@ -1256,6 +1256,30 @@ Doit
       - 80 MHz
       - 4096 Kb
       - 80 Kb
+
+Dongsen Technology
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``pocket_32``
+      - `Dongsen Tech Pocket 32 <http://dong-sen.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
 Dwengo
 ~~~~~~
@@ -1418,6 +1442,30 @@ Electronic SweetPeas
       - 240 MHz
       - 1280 Kb
       - 288 Kb
+
+Elektor
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``elektor_uno_r4``
+      - `Elektor Uno R4 <https://www.elektor.com/elektor-uno-r4>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328PB
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
 
 Engduino
 ~~~~~~~~
@@ -1878,6 +1926,30 @@ Generic ATTiny
       - 8 Kb
       - 0.5 Kb
 
+Heltec
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``heltek_kit_8``
+      - `Heltec Wifi kit 8 <http://www.heltec.cn/project/wifi_kit_8/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
+      - 80 Kb
+
 Heltec Automation
 ~~~~~~~~~~~~~~~~~
 
@@ -2331,6 +2403,30 @@ Mcudude
       - 8 Kb
       - 0.5 Kb
 
+MediaTek Labs
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``smart7688``
+      - `LinkIt Smart 7688 Duo <https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA32U4
+      - 8 MHz
+      - 32 Kb
+      - 2.5 Kb
+
 Microduino
 ~~~~~~~~~~
 
@@ -2426,6 +2522,15 @@ Microduino
       - 8 MHz
       - 64 Kb
       - 4 Kb
+
+    * - ``microduino-core-esp32``
+      - `Microduino Core ESP32 <https://microduinoinc.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
 MikroElektronika
 ~~~~~~~~~~~~~~~~
@@ -2558,6 +2663,15 @@ Nordic
       - 32 MHz
       - 256 Kb
       - 32 Kb
+
+    * - ``nrf52840_dk``
+      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52840
+      - 64 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
@@ -3273,6 +3387,24 @@ SeeedStudio
       - 256 Kb
       - 16 Kb
 
+    * - ``seeeduino``
+      - `Seeeduino <https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+    * - ``wio_node``
+      - `Wio Node <https://www.seeedstudio.com/Wio-Node-p-2637.html>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
+      - 80 Kb
+
 SparkFun
 ~~~~~~~~
 
@@ -3798,6 +3930,15 @@ WEMOS
       - 1280 Kb
       - 288 Kb
 
+    * - ``wemosbat``
+      - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 Waveshare
 ~~~~~~~~~
 
@@ -4043,6 +4184,30 @@ nicai-systems
       - 20 MHz
       - 128 Kb
       - 16 Kb
+
+u-blox
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nina_w10``
+      - `u-blox NINA-W10 series <https://www.u-blox.com/en/product/nina-w10-series>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
 ubIQio
 ~~~~~~

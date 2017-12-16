@@ -216,6 +216,30 @@ DOIT
       - 1280 Kb
       - 288 Kb
 
+Dongsen Technology
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``pocket_32``
+      - `Dongsen Tech Pocket 32 <http://dong-sen.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 DycodeX
 ~~~~~~~
 
@@ -492,6 +516,30 @@ MakerAsia
       - 1280 Kb
       - 288 Kb
 
+Microduino
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``microduino-core-esp32``
+      - `Microduino Core ESP32 <https://microduinoinc.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 NodeMCU
 ~~~~~~~
 
@@ -669,6 +717,15 @@ WEMOS
       - 1280 Kb
       - 288 Kb
 
+    * - ``wemosbat``
+      - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 Widora
 ~~~~~~
 
@@ -686,6 +743,30 @@ Widora
 
     * - ``widora-air``
       - `Widora AIR <http://widora.io>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+u-blox
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nina_w10``
+      - `u-blox NINA-W10 series <https://www.u-blox.com/en/product/nina-w10-series>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32

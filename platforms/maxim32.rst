@@ -108,6 +108,24 @@ Maxim
       - 2048 Kb
       - 256 Kb
 
+    * - ``max32625mbed``
+      - `MAX32625MBED <https://os.mbed.com/platforms/MAX32625MBED/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32625
+      - 96 MHz
+      - 512 Kb
+      - 160 Kb
+
+    * - ``max32625nexpaq``
+      - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32625
+      - 96 MHz
+      - 512 Kb
+      - 160 Kb
+
     * - ``max32630fthr``
       - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/>`_
       - :ref:`Maxim 32 <platform_maxim32>`

@@ -98,6 +98,9 @@ Packages
     * - `framework-energiativa <http://energia.nu/reference/>`__
       - Energia Wiring-based Framework (LM4F Core)
 
+    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK>`__
+      - ESP8266 Non-OS SDK
+
     * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK>`__
       - ESP8266 SDK based on FreeRTOS
 

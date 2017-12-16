@@ -189,6 +189,15 @@ Freescale
       - 256 Kb
       - 32 Kb
 
+    * - ``frdm_kw41z``
+      - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MKW41Z512VHT4
+      - 48 MHz
+      - 512 Kb
+      - 128 Kb
+
 MikroElektronika
 ~~~~~~~~~~~~~~~~
 

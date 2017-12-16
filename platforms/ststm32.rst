@@ -543,6 +543,15 @@ ST
       - 512 Kb
       - 128 Kb
 
+    * - ``disco_f413zh``
+      - `ST 32F413HDISCOVERY <https://os.mbed.com/platforms/ST-Discovery-F413H/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F413ZHT6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``disco_f429zi``
       - `ST 32F429IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259090>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -956,6 +965,24 @@ u-blox
       - Frequency
       - Flash
       - RAM
+
+    * - ``ublox_c030_n211``
+      - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
+
+    * - ``ublox_c030_u201``
+      - `u-blox C030-U201 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``ublox_evk_odin_w2``
       - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_

@@ -267,6 +267,30 @@ Espressif
       - 448 Kb
       - 80 Kb
 
+Heltec
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``heltek_kit_8``
+      - `Heltec Wifi kit 8 <http://www.heltec.cn/project/wifi_kit_8/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
+      - 80 Kb
+
 NodeMCU
 ~~~~~~~
 
@@ -322,6 +346,30 @@ Olimex
       - ESP8266
       - 80 MHz
       - 2048 Kb
+      - 80 Kb
+
+SeeedStudio
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``wio_node``
+      - `Wio Node <https://www.seeedstudio.com/Wio-Node-p-2637.html>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
       - 80 Kb
 
 SparkFun

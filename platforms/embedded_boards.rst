@@ -1170,6 +1170,15 @@ Delta
       - 512 Kb
       - 64 Kb
 
+    * - ``delta_dfcm_nnn50``
+      - `Delta DFCM-NNN50 <https://os.mbed.com/platforms/Delta-DFCM-NNN50/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 16 Kb
+
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -1327,7 +1336,7 @@ Digistump
       - RAM
 
     * - ``digispark-pro``
-      - `Digistump Digispark Pro (Default 16 MHz) <http://digistump.com/products/109>`_
+      - `Digispark Pro <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -1336,7 +1345,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-pro32``
-      - `Digistump Digispark Pro (16 MHz) (32 byte buffer) <http://digistump.com/products/109>`_
+      - `Digispark Pro (32 byte buffer) <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -1345,7 +1354,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-pro64``
-      - `Digistump Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
+      - `Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -1354,7 +1363,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-tiny``
-      - `Digistump Digispark (Default - 16 MHz) <http://digistump.com/products/1>`_
+      - `Digispark USB <http://digistump.com/products/1>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY85
@@ -1394,6 +1403,30 @@ Doit
       - 80 MHz
       - 4096 Kb
       - 80 Kb
+
+Dongsen Technology
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``pocket_32``
+      - `Dongsen Tech Pocket 32 <http://dong-sen.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
 Dwengo
 ~~~~~~
@@ -1556,6 +1589,30 @@ Electronic SweetPeas
       - 240 MHz
       - 1280 Kb
       - 288 Kb
+
+Elektor
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``elektor_uno_r4``
+      - `Elektor Uno R4 <https://www.elektor.com/elektor-uno-r4>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328PB
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
 
 Elektor Labs
 ~~~~~~~~~~~~
@@ -1947,6 +2004,15 @@ Freescale
       - 256 Kb
       - 32 Kb
 
+    * - ``frdm_kw41z``
+      - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MKW41Z512VHT4
+      - 48 MHz
+      - 512 Kb
+      - 128 Kb
+
 Fubarino
 ~~~~~~~~
 
@@ -2267,6 +2333,30 @@ Generic ATTiny
       - 8 MHz
       - 8 Kb
       - 0.5 Kb
+
+Heltec
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``heltek_kit_8``
+      - `Heltec Wifi kit 8 <http://www.heltec.cn/project/wifi_kit_8/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
+      - 80 Kb
 
 Heltec Automation
 ~~~~~~~~~~~~~~~~~
@@ -2724,6 +2814,24 @@ Maxim
       - 2048 Kb
       - 256 Kb
 
+    * - ``max32625mbed``
+      - `MAX32625MBED <https://os.mbed.com/platforms/MAX32625MBED/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32625
+      - 96 MHz
+      - 512 Kb
+      - 160 Kb
+
+    * - ``max32625nexpaq``
+      - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32625
+      - 96 MHz
+      - 512 Kb
+      - 160 Kb
+
     * - ``max32630fthr``
       - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/>`_
       - :ref:`Maxim 32 <platform_maxim32>`
@@ -2820,6 +2928,54 @@ Mcudude
       - 8 Kb
       - 0.5 Kb
 
+MediaTek Labs
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``smart7688``
+      - `LinkIt Smart 7688 Duo <https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA32U4
+      - 8 MHz
+      - 32 Kb
+      - 2.5 Kb
+
+Microchip
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``at90pwm316``
+      - `Atmel AT90PWM316 <http://www.microchip.com/wwwproducts/en/AT90PWM316>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - AT90PWM316
+      - 0 MHz
+      - 16 Kb
+      - 1 Kb
+
 Microduino
 ~~~~~~~~~~
 
@@ -2915,6 +3071,15 @@ Microduino
       - 8 MHz
       - 64 Kb
       - 4 Kb
+
+    * - ``microduino-core-esp32``
+      - `Microduino Core ESP32 <https://microduinoinc.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
 Micromint
 ~~~~~~~~~
@@ -3305,6 +3470,15 @@ Nordic
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+    * - ``nrf52840_dk``
+      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52840
+      - 64 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
@@ -4089,6 +4263,15 @@ ST
       - 512 Kb
       - 128 Kb
 
+    * - ``disco_f413zh``
+      - `ST 32F413HDISCOVERY <https://os.mbed.com/platforms/ST-Discovery-F413H/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F413ZHT6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``disco_f429zi``
       - `ST 32F429IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259090>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -4679,6 +4862,24 @@ SeeedStudio
       - 16 MHz
       - 256 Kb
       - 16 Kb
+
+    * - ``seeeduino``
+      - `Seeeduino <https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+    * - ``wio_node``
+      - `Wio Node <https://www.seeedstudio.com/Wio-Node-p-2637.html>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
+      - 80 Kb
 
     * - ``xadow_m0``
       - `Seeed Xadow M0 <https://developer.mbed.org/platforms/Seeed-Xadow-M0/>`_
@@ -5460,6 +5661,30 @@ UBW32
       - 512 Kb
       - 128 Kb
 
+VNG
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``vbluno51``
+      - `VNG VBLUNO51 <https://os.mbed.com/platforms/VBLUNO51/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 16 MHz
+      - 128 Kb
+      - 32 Kb
+
 WEMOS
 ~~~~~
 
@@ -5504,6 +5729,15 @@ WEMOS
 
     * - ``lolin32``
       - `WEMOS LOLIN32 <https://wemos.cc>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``wemosbat``
+      - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32
@@ -5813,6 +6047,33 @@ u-blox
       - Frequency
       - Flash
       - RAM
+
+    * - ``nina_w10``
+      - `u-blox NINA-W10 series <https://www.u-blox.com/en/product/nina-w10-series>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``ublox_c030_n211``
+      - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
+
+    * - ``ublox_c030_u201``
+      - `u-blox C030-U201 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``ublox_evk_odin_w2``
       - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_

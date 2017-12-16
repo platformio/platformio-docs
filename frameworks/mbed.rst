@@ -225,6 +225,15 @@ Delta
       - 512 Kb
       - 64 Kb
 
+    * - ``delta_dfcm_nnn50``
+      - `Delta DFCM-NNN50 <https://os.mbed.com/platforms/Delta-DFCM-NNN50/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 16 Kb
+
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -438,6 +447,15 @@ Freescale
       - 256 Kb
       - 32 Kb
 
+    * - ``frdm_kw41z``
+      - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MKW41Z512VHT4
+      - 48 MHz
+      - 512 Kb
+      - 128 Kb
+
 GHI Electronics
 ~~~~~~~~~~~~~~~
 
@@ -542,6 +560,24 @@ Maxim
       - 96 MHz
       - 2048 Kb
       - 256 Kb
+
+    * - ``max32625mbed``
+      - `MAX32625MBED <https://os.mbed.com/platforms/MAX32625MBED/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32625
+      - 96 MHz
+      - 512 Kb
+      - 160 Kb
+
+    * - ``max32625nexpaq``
+      - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32625
+      - 96 MHz
+      - 512 Kb
+      - 160 Kb
 
     * - ``max32630fthr``
       - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/>`_
@@ -866,6 +902,15 @@ Nordic
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+    * - ``nrf52840_dk``
+      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52840
+      - 64 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
@@ -1680,6 +1725,30 @@ Teensy
       - 256 Kb
       - 64 Kb
 
+VNG
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``vbluno51``
+      - `VNG VBLUNO51 <https://os.mbed.com/platforms/VBLUNO51/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 16 MHz
+      - 128 Kb
+      - 32 Kb
+
 WIZNet
 ~~~~~~
 
@@ -1736,6 +1805,24 @@ u-blox
       - Frequency
       - Flash
       - RAM
+
+    * - ``ublox_c030_n211``
+      - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
+
+    * - ``ublox_c030_u201``
+      - `u-blox C030-U201 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``ublox_evk_odin_w2``
       - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_

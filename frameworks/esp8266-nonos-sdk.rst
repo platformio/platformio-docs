@@ -9,89 +9,30 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _platform_espressif8266:
+.. _framework_esp8266-nonos-sdk:
 
-Espressif 8266
-==============
-:ref:`projectconf_env_platform` = ``espressif8266``
+ESP8266 Non-OS SDK
+==================
+:ref:`projectconf_env_framework` = ``esp8266-nonos-sdk``
 
-Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions.
 
-For more detailed information please visit `vendor site <https://espressif.com/>`_.
+For more detailed information please visit `vendor site <https://github.com/espressif/ESP8266_NONOS_SDK>`_.
+
 
 .. contents:: Contents
     :local:
 
-Packages
---------
-
+Platforms
+---------
 .. list-table::
     :header-rows:  1
 
     * - Name
       - Description
 
-    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino>`__
-      - Arduino Wiring-based Framework (ESP8266 Core)
-
-    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK>`__
-      - ESP8266 Non-OS SDK
-
-    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK>`__
-      - ESP8266 SDK based on FreeRTOS
-
-    * - `framework-simba <https://github.com/eerimoq/simba>`__
-      - Simba Framework
-
-    * - `sdk-esp8266 <http://bbs.espressif.com>`__
-      - ESP8266 SDK
-
-    * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py>`__
-      - ESP8266 OTA utility
-
-    * - `tool-esptool <https://github.com/igrr/esptool-ck>`__
-      - esptool-ck
-
-    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs>`__
-      - Tool to build and unpack SPIFFS images
-
-    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa>`__
-      - xtensa-gcc
-
-.. warning::
-    **Linux Users**:
-
-        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-          (an instruction is located inside a file).
-        * Raspberry Pi users, please read this article
-          `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
-
-
-    **Windows Users:**
-
-        Please check that you have a correctly installed USB driver from board
-        manufacturer
-
-
-Frameworks
-----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_esp8266-nonos-sdk`
-      - The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions.
-
-    * - :ref:`framework_esp8266-rtos-sdk`
-      - ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
-
-    * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+    * - :ref:`platform_espressif8266`
+      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
 Boards
 ------
@@ -99,8 +40,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll tables below by horizontal.
 
 Adafruit
 ~~~~~~~~
@@ -554,14 +494,3 @@ WEMOS
       - 80 MHz
       - 4096 Kb
       - 80 Kb
-
-    * - ``d1_mini_lite``
-      - `WEMOS D1 mini Lite <https://wiki.wemos.cc/products:d1:d1_mini_lite>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
-      - ESP8266
-      - 80 MHz
-      - 960 Kb
-      - 80 Kb
-
-.. include:: espressif8266_extra.rst

@@ -795,6 +795,15 @@ Delta
       - 512 Kb
       - 64 Kb
 
+    * - ``delta_dfcm_nnn50``
+      - `Delta DFCM-NNN50 <https://os.mbed.com/platforms/Delta-DFCM-NNN50/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 16 Kb
+
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -998,6 +1007,15 @@ Freescale
       - 48 MHz
       - 256 Kb
       - 32 Kb
+
+    * - ``frdm_kw41z``
+      - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - MKW41Z512VHT4
+      - 48 MHz
+      - 512 Kb
+      - 128 Kb
 
 Generic
 ~~~~~~~
@@ -1386,6 +1404,15 @@ Nordic
       - 128 Kb
       - 16 Kb
 
+    * - ``nrf52840_dk``
+      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - NRF52840
+      - 64 MHz
+      - 1024 Kb
+      - 256 Kb
+
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
       - :ref:`Nordic nRF52 <platform_nordicnrf52>`
@@ -1643,6 +1670,15 @@ ST
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
       - STM32F411VET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
+    * - ``disco_f413zh``
+      - `ST 32F413HDISCOVERY <https://os.mbed.com/platforms/ST-Discovery-F413H/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - STM32F413ZHT6
       - 100 MHz
       - 512 Kb
       - 128 Kb
@@ -2412,6 +2448,30 @@ Teensy
       - 1024 Kb
       - 256 Kb
 
+VNG
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``vbluno51``
+      - `VNG VBLUNO51 <https://os.mbed.com/platforms/VBLUNO51/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 16 MHz
+      - 128 Kb
+      - 32 Kb
+
 WIZNet
 ~~~~~~
 
@@ -2516,6 +2576,24 @@ u-blox
       - Frequency
       - Flash
       - RAM
+
+    * - ``ublox_c030_n211``
+      - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
+
+    * - ``ublox_c030_u201``
+      - `u-blox C030-U201 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
 
     * - ``ublox_evk_odin_w2``
       - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_
