@@ -56,6 +56,11 @@ Do not install specified package (or alias)
 
 Skip default packages
 
+.. option::
+    -f, --force
+
+Reinstall/redownload development platform and its packages if they exist
+
 
 Description
 -----------

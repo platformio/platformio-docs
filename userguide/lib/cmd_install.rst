@@ -110,6 +110,11 @@ Suppress progress reporting
 
 Allow to make a choice for all prompts
 
+.. option::
+    -f, --force
+
+Reinstall/redownload library if it exists
+
 Version control
 ---------------
 
