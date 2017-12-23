@@ -275,10 +275,10 @@ Temporary solution:
        # a) Change directory to PlatformIO Project where is located "platformio.ini"
        cd path/to/platformio/project
 
-       # For Windows, please replace {username} with real user name
+       # b.Windows (please replace {username} with real user name)
        C:\Users\{username}\.platformio\penv\Scripts\platformio.exe run -target upload
 
-       # For Unix
+       # b.Unix
        ~/.platformio/penv/bin/platformio run --target upload
 
 Now, back to VSCode.
