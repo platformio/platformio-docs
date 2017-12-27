@@ -282,7 +282,7 @@ Heltec
       - Flash
       - RAM
 
-    * - ``heltek_kit_8``
+    * - ``heltec_wifi_kit_8``
       - `Heltec Wifi kit 8 <http://www.heltec.cn/project/wifi_kit_8/>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 

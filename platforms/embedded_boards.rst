@@ -2349,7 +2349,7 @@ Heltec
       - Flash
       - RAM
 
-    * - ``heltek_kit_8``
+    * - ``heltec_wifi_kit_8``
       - `Heltec Wifi kit 8 <http://www.heltec.cn/project/wifi_kit_8/>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 
@@ -2967,12 +2967,21 @@ Microchip
       - Flash
       - RAM
 
+    * - ``at90pwm216``
+      - `Atmel AT90PWM216 <http://www.microchip.com/wwwproducts/en/AT90PWM216>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - AT90PWM216
+      - 16 MHz
+      - 16 Kb
+      - 1 Kb
+
     * - ``at90pwm316``
       - `Atmel AT90PWM316 <http://www.microchip.com/wwwproducts/en/AT90PWM316>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - AT90PWM316
-      - 0 MHz
+      - 16 MHz
       - 16 Kb
       - 1 Kb
 
@@ -6074,6 +6083,15 @@ u-blox
       - 180 MHz
       - 1024 Kb
       - 256 Kb
+
+    * - ``ublox_evk_nina_b1``
+      - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
     * - ``ublox_evk_odin_w2``
       - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_

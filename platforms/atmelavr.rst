@@ -1230,12 +1230,21 @@ Microchip
       - Flash
       - RAM
 
+    * - ``at90pwm216``
+      - `Atmel AT90PWM216 <http://www.microchip.com/wwwproducts/en/AT90PWM216>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - AT90PWM216
+      - 16 MHz
+      - 16 Kb
+      - 1 Kb
+
     * - ``at90pwm316``
       - `Atmel AT90PWM316 <http://www.microchip.com/wwwproducts/en/AT90PWM316>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - AT90PWM316
-      - 0 MHz
+      - 16 MHz
       - 16 Kb
       - 1 Kb
 

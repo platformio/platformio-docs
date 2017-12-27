@@ -197,3 +197,27 @@ Taida Century
       - 64 MHz
       - 512 Kb
       - 64 Kb
+
+u-blox
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``ublox_evk_nina_b1``
+      - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb

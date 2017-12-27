@@ -2595,6 +2595,15 @@ u-blox
       - 1024 Kb
       - 256 Kb
 
+    * - ``ublox_evk_nina_b1``
+      - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
     * - ``ublox_evk_odin_w2``
       - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_
       - :ref:`ST STM32 <platform_ststm32>`

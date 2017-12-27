@@ -143,7 +143,6 @@ Each button contains hint (delay mouse on it).
 Key Bindings
 ------------
 
-* ``ctrl+alt+i`` Initialize or Update Project
 * ``ctrl+alt+b`` / ``cmd-shift-b`` / ``ctrl-shift-b`` Build Project
 * ``cmd-shift-d`` / ``ctrl-shift-d`` Debug project
 * ``ctrl+alt+u`` Upload Firmware
