@@ -162,6 +162,54 @@ DOIT
       - 1280 Kb
       - 288 Kb
 
+Dongsen Technology
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``pocket_32``
+      - `Dongsen Tech Pocket 32 <http://dong-sen.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+DycodeX
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``espectro32``
+      - `ESPectro32 <https://shop.makestro.com/product/espectro32>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 ESP32vn
 ~~~~~~~
 
@@ -225,8 +273,50 @@ Espressif
       - Flash
       - RAM
 
+    * - ``esp-wrover-kit``
+      - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+Heltec Automation
+~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``heltec_wifi_kit_32``
+      - `Heltec WIFI Kit 32 <http://www.heltec.cn>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``heltec_wifi_lora_32``
+      - `Heltec WIFI LoRa 32 <http://www.heltec.cn>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32
@@ -291,6 +381,63 @@ IntoRobot
       - 1280 Kb
       - 288 Kb
 
+M5Stack
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``m5stack-core-esp32``
+      - `M5Stack Core ESP32 <http://www.m5stack.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+MH-ET Live
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mhetesp32devkit``
+      - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``mhetesp32minikit``
+      - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 MakerAsia
 ~~~~~~~~~
 
@@ -308,6 +455,30 @@ MakerAsia
 
     * - ``nano32``
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+Microduino
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``microduino-core-esp32``
+      - `Microduino Core ESP32 <https://microduinoinc.com>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32
@@ -363,6 +534,39 @@ Noduino
       - 1280 Kb
       - 288 Kb
 
+OLIMEX
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``esp32-evb``
+      - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``esp32-gateway``
+      - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 Onehorse
 ~~~~~~~~
 
@@ -411,6 +615,30 @@ SparkFun Electronics
       - 1280 Kb
       - 288 Kb
 
+ThaiEasyElec
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``espino32``
+      - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 WEMOS
 ~~~~~
 
@@ -435,6 +663,15 @@ WEMOS
       - 1280 Kb
       - 288 Kb
 
+    * - ``wemosbat``
+      - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 Widora
 ~~~~~~
 
@@ -452,6 +689,30 @@ Widora
 
     * - ``widora-air``
       - `Widora AIR <http://widora.io>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+u-blox
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nina_w10``
+      - `u-blox NINA-W10 series <https://www.u-blox.com/en/product/nina-w10-series>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - 
       - ESP32

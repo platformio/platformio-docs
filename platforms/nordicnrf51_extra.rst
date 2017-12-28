@@ -12,12 +12,10 @@
 Articles
 --------
 
-* Aug 28, 2016 - **Tom Parker** `Using the BBC micro:bit with PlatformIO <http://www.lshift.net/blog/2016/08/28/using-the-bbc-microbit-with-platformio/>`_
+* Aug 28, 2016 - **Tom Parker** `Using the BBC micro:bit with PlatformIO <http://tech.labs.oliverwyman.com/blog/2016/08/28/using-the-bbc-microbit-with-platformio/>`_
 
 Examples
 --------
 
 All project examples are located in PlatformIO repository
-`Examples for Nordic nRF51 platform <https://github.com/platformio/platformio-examples/tree/develop/nordicnrf51>`_.
-
-* `RFduino iBeacon <https://github.com/platformio/platformio-examples/tree/develop/nordicnrf51/rfduino-ibeacon>`_
+`Examples for Nordic nRF51 platform <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples>`_.

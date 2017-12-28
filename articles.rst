@@ -16,15 +16,24 @@ Articles about us
 
 .. note::
     If you've written article about PlatformIO and would like it listed on
-    this page, `please edit this page <https://github.com/platformio/platformio-core/blob/develop/docs/articles.rst>`_.
+    this page, `please edit this page <https://github.com/platformio/platformio-docs/blob/develop/articles.rst>`_.
 
 Here are recent articles/reviews about PlatformIO:
 
 2017
 ^^^^
 
+* Oct 18, 2017 - **ThingForward** - `Getting Started with SigFox and PlatformIO <http://www.thingforward.io/techblog/2017-10-18-getting-started-with-sigfox-and-platformio.html>`_
+* Sep 18, 2017 - **ThingForward** - `Embedded Testing with PlatformIO – Part 4: Continuous Integration <http://www.thingforward.io/techblog/2017-09-18-embedded-testing-with-platformio-part-4-continuous-integration.html>`_
+* Sep 06, 2017 - **ThingForward** - `Embedded Testing with PlatformIO – Part 3: Remoting <http://www.thingforward.io/techblog/2017-09-06-embedded-testing-with-platformio-part-3-remoting.html>`_
+* Sep 04, 2017 - **Dror Gluska** - `Looking To The IoT Future With PlatformIO And ESP32 <http://uhurumkate.blogspot.co.il/2017/09/looking-to-iot-future-with-platformio.html>`_
+* Aug 23, 2017 - **陳亮** - `Develop ESP32 With PlatformIO IDE <http://www.instructables.com/id/Develop-ESP32-With-PlatformIO-IDE/>`_
+* Aug 08, 2017 - **ThingForward** - `Embedded Testing with PlatformIO - Part 2 <http://www.thingforward.io/techblog/2017-08-08-embedded-testing-with-platformio-part-2.html>`_
+* Jul 25, 2017 - **ThingForward** - `Start Embedded Testing with PlatformIO <http://www.thingforward.io/techblog/2017-07-25-starting-embedded-testing-with-platformio.html>`_
 * Jun 23, 2017 - **Naresh Krish** - `Home Automation Using Wiscore, OpenHab and PlatformIO <https://www.hackster.io/naresh-krish/home-automation-using-wiscore-and-openhab-1ec6e4>`_
+* Jun 05, 2017 - **Projects DIY** - `Démarrer avec PlatformIO IDE alternatif pour Arduino, ESP8266, ESP32 et autres micro-contrôleurs (Start with PlatformIO alternative IDE for Arduino, ESP8266, ESP32 and other microcontrollers, French) <https://projetsdiy.fr/bien-demarrer-platformio-ide-arduino-esp8266-esp32-stm32/>`_
 * Apr 12, 2017 - **Jane Elizabeth** - `Let's talk IoT: PlatformIO puts developers back in the driver's seat <https://jaxenter.com/open-source-iot-platformio-133282.html>`_
+* Apr 07, 2017 - **Al Williams** - `Hackaday: PlatformIO and Visual Studio take over the world <http://hackaday.com/2017/04/07/platformio-and-visual-studio-take-over-the-world/>`_
 * Mar 13, 2017 - **Ryan Mulligan** - `Continuous testing for Arduino libraries using PlatformIO and Travis CI <https://www.pololu.com/blog/654/continuous-testing-for-arduino-libraries-using-platformio-and-travis-ci>`_
 * Feb 23, 2017 - **Bastiaan Visee** - `Using PlatformIO for your Arduino projects <http://lichtsignaal.nl/2017/02/23/using-platformio-for-your-arduino-projects/>`_
 * Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
@@ -43,7 +52,7 @@ Here are recent articles/reviews about PlatformIO:
 * Sep 13, 2016 - **Xose Pérez** `MQTT LED Matrix Display <http://tinkerman.cat/mqtt-led-matrix-display/>`_
 * Sep 12, 2016 - **Pedro Minatel** - `OTA – Como programar o ESP8266 pelo WiFi no platformIO (OTA programming for ESP8266 via Wi-Fi using PlatformIO, Portuguese) <http://pedrominatel.com.br/esp8266/ota-como-programar-o-esp8266-pelo-wifi-no-platformio/>`_
 * Sep 2, 2016 - **Xose Pérez** `ESP8266: Optimizing files for SPIFFS with Gulp <http://tinkerman.cat/optimizing-files-for-spiffs-with-gulp/>`_
-* Aug 28, 2016 - **Tom Parker** `Using the BBC micro:bit with PlatformIO <http://www.lshift.net/blog/2016/08/28/using-the-bbc-microbit-with-platformio/>`_
+* Aug 28, 2016 - **Tom Parker** `Using the BBC micro:bit with PlatformIO <http://tech.labs.oliverwyman.com/blog/2016/08/28/using-the-bbc-microbit-with-platformio/>`_
 * Aug 24, 2016 - **Primal Cortex** `Cloud based continuous integration and delivery for IOT using PlatformIO <https://primalcortex.wordpress.com/2016/08/24/cloud-based-continuous-integration-and-delivery-for-iot-using-platformio/>`_
 * Aug 18, 2016 - **Primal Cortex** - `Installing PlatformIO on Arch Linux <https://primalcortex.wordpress.com/2016/08/18/platformio/>`_
 * Aug 14, 2016 - **Rodrigo Castro** - `PlataformIO o comó usar Arduino con ATOM (Spanish) <http://kiryeelesion.blogspot.mx/2016/08/plataformio-o-como-usar-arduino-con-atom.html>`_
@@ -107,20 +116,20 @@ Here are recent articles/reviews about PlatformIO:
 * Nov 22, 2015 - **Michał Seroczyński** - `Using PlatformIO to get started with Arduino in CLion IDE <http://www.ches.pl/using-platformio-get-started-arduino-clion-ide/>`_
 * Nov 09, 2015 - **ÁLvaro García Gómez** - `Programar con Arduino "The good way" (Programming with Arduino "The good way", Spanish) <http://congdegnu.es/2015/11/09/programar-con-arduino-the-good-way/>`_
 * Nov 06, 2015 - **nocd5** - `PlatformIOでmbedをオフラインビルドしSTM32 Nucleoボードでmrubyを使う (Use mruby in the offline build for STM32 Nucleo board with mbed and PlatformIO, Japanese) <http://qiita.com/nocd5/items/d5fda776240f7e7c17eb>`_
-* Oct 21, 2015 - **Vittorio Zaccaria** - `Using a cheap STM32 Nucleo to teach remote sensor monitoring <http://www.vittoriozaccaria.net/blog/2015/10/21/using-a-cheap-stm32-nucleo-to-teach-remote-sensor-monitoring.html>`_
+* Oct 21, 2015 - **Vittorio Zaccaria** - `Using a cheap STM32 Nucleo to teach remote sensor monitoring <http://www.vittoriozaccaria.net/#/blog/2015/10/21/using-a-cheap-stm32-to-teach-remote-sensor-monitoring.html>`_
 * Oct 18, 2015 - **Nico Coetzee** - `First Arduino I2C Experience with PlatformIO <https://electronicventurer.wordpress.com/2015/10/18/first-arduino-i2c-experience/>`_
 * Oct 10, 2015 - **Floyd Hilton** - `Programming Arduino with Atom <http://floydhilton.com/software/career/2015/10/10/Arduino_with_Atom.html>`_
 * Oct 01, 2015 - **Mistan** - `Compile and Upload Arduino Sketch with PlatformIO for Raspberry Pi Running Arch Linux <http://tech.memoryimprintstudio.com/code-building-for-arduino-with-platformio-for-raspberry-pi-with-arch-linux/>`_
 * Sep 30, 2015 - **Jay Wiggins** - `PlatformIO Investigation <http://jaywiggins.com/platformio/arduino/avr/es8266/2015/09/30/platformio-investigation/>`_
 * Sep 01, 2015 - **Thomas P. Weldon, Ph.D.** - `Improvised MBED FRDM-K64F Eclipse/PlatformIO Setup and Software Installation <http://thomasweldon.com/tpw/courses/embeddsp/p00pcFrdmK64_eclipsePlatformioSetup.html>`_
-* Aug 08, 2015 - **Josh Glendenning** - `Armstrap Eagle and PlatformIO <http://isobit.io/2015/08/08/armstrap.html>`_
+* Aug 08, 2015 - **Josh Glendenning** - `Armstrap Eagle and PlatformIO <https://www.isobit.io/blog/2015-08-08-armstrap/>`_
 * Aug 01, 2015 - **Russell Davis** - `PlatformIO on the Raspberry Pi <http://www.russelldavis.org/2015/08/01/platformio-on-the-raspberry-pi/>`_
 * Jul 25, 2015 - **DinoTools** - `Erste Schritte mit PlatformIO (Getting Started with PlatformIO, German) <https://www.dinotools.de/2015/07/25/erste-schritte-mit-platformio/>`_
 * Jul 20, 2015 - **Eli Fatsi** - `Arduino Development in Atom Editor <http://viget.com/extend/arduino-development-in-atom-editor>`_
 * Jul 14, 2015 - **ElbinarIO** - `Programar para Arduino y otros microcontroladores desde la linea de comandos (Program Arguino and other microcontrollers from the command line, Spanish) <http://elbinario.net/2015/07/14/programar-para-arduino-y-otros-microcontroladores-desde-la-linea-de-comandos/>`_
 * Jul 11, 2015 - **TrojanC** - `Learning Arduino GitHub Repository <http://www.trojanc.co.za/2015/07/11/learning-arduino-github-repository/>`_
 * Jul 07, 2015 - **Sho Hashimoto** - `PlatformIOでArduino開発する(Arduino development in PlatformIO, Japanese) <http://shokai.org/blog/archives/10250>`_
-* Jun 02, 2015 - **Alejandro Guirao Rodríguez** - `Discovering PlatformIO: The RaspberryPi / Arduino combo kit is a winner option when prototyping an IoT-style project <http://lekum.org/posts/discovering-platformio/index.html>`_
+* Jun 02, 2015 - **Alejandro Guirao Rodríguez** - `Discovering PlatformIO: The RaspberryPi / Arduino combo kit is a winner option when prototyping an IoT-style project <https://lekum.org/posts/discovering-platformio/index.html>`_
 * May 17, 2015 - **S.S** - `コマンドラインでArduino開発 : vim + platformio (Arduino development at the command line: VIM + PlatformIO, Japanese) <http://qiita.com/caad1229/items/7b5fb47f034ae6e0baf2>`_
 * May 11, 2015 - **IT Hare** - `From Web Developer to Embedded One: Interview with Ivan Kravets, The Guy Behind PlatformIO. Part II <http://ithare.com/from-web-developer-to-embedded-one-interview-with-ivan-kravets-the-guy-behind-platformio-part-ii/>`_
 * May 4, 2015 - **IT Hare** - `From Web Developer to Embedded One: Interview with Ivan Kravets, The Guy Behind PlatformIO. Part I <http://ithare.com/from-web-development-to-embedded-one-interview-with-ivan-kravets-the-guy-behind-platformio-part-i/>`_

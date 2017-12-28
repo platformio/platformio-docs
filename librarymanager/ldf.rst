@@ -35,6 +35,7 @@ Library Dependency Finder has controls that can be set up in :ref:`projectconf`:
     * :ref:`projectconf_lib_ignore`
     * :ref:`projectconf_lib_compat_mode`
     * :ref:`projectconf_lib_ldf_mode`
+    * :ref:`projectconf_lib_archive`
 
 -----------
 
@@ -79,6 +80,8 @@ project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
     * - ``chain`` (**default**)
       - Parses ALL C/C++ source code of the project and follows
         only by nested includes (``#include ...``, chain...) from the libraries.
+        It also parses C, CC, CPP files from libraries which have the same
+        name as included header file.
         Does not evaluates :ref:`ldf_c_cond_syntax`.
 
     * - ``deep``
@@ -101,7 +104,7 @@ The mode can be changed using :ref:`projectconf_lib_ldf_mode` option in
   and not the library header file (see example below). In this case, it is
   necessary to either explicitly reference the dependency from the project
   source or :ref:`projectconf` (:ref:`projectconf_lib_deps` option), or change
-  the LDF mode to "deep"(not generally recommended).
+  the LDF mode to "deep" (not generally recommended).
 
 A difference between ``chain/chain+`` and ``deep/deep+`` modes. For example,
 there are 2 libraries:
@@ -110,6 +113,7 @@ there are 2 libraries:
 
   - ``Foo/foo.h``
   - ``Foo/foo.cpp``
+  - ``Foo/extra.cpp``
 
 * Library "Bar" with files:
 
@@ -128,20 +132,20 @@ there are 2 libraries:
 :Case 2:
 
     * ``lib_ldf_mode = chain``
-    * ``Foo/foo.cpp`` depends on "Bar" library (contains ``#include <bar.h>``)
+    * ``Foo/extra.cpp`` depends on "Bar" library (contains ``#include <bar.h>``)
     * ``#include <foo.h>`` is located in one of the project source files
 
     In this case, ``LDF`` will not find "Bar" library because it doesn't know
-    about CPP file (``Foo/foo.cpp``).
+    about CPP file (``Foo/extra.cpp``).
 
 :Case 3:
 
     * ``lib_ldf_mode = deep``
-    * ``Foo/foo.cpp`` depends on "Bar" library (contains ``#include <bar.h>``)
+    * ``Foo/extra.cpp`` depends on "Bar" library (contains ``#include <bar.h>``)
     * ``#include <foo.h>`` is located in one of the project source files
 
     Firstly, ``LDF`` finds "Foo" library, then it parses all sources from "Foo"
-    library and finds ``Foo/foo.cpp`` that depends on ``#include <bar.h>``.
+    library and finds ``Foo/extra.cpp`` that depends on ``#include <bar.h>``.
     Secondly, it will parse all sources from "Bar" library and this operation
     continues until all dependencies will not be parsed.
 

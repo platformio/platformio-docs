@@ -23,7 +23,7 @@ and deploy as you make changes to your code to
 Drone is configured by modifying settings in your project control panel.
 
 Drone automatically detects when a commit has been made and pushed to a
-GitHub repository that is using Drone, and each time this happens, it will
+repository that is using Drone, and each time this happens, it will
 try to build the project using :ref:`cmd_ci` command. This includes commits to
 all branches, not just to the master branch. Drone will also build and run
 pull requests. When that process has completed, it will notify a developer in

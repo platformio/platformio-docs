@@ -42,6 +42,30 @@ Boards
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
+RushUp
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``kitra_520``
+      - `RushUp Kitra 520 <https://www.rushup.tech/kitra>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
+      - EXYNOS3250
+      - 1000 MHz
+      - 4194304 Kb
+      - 524288 Kb
+
 Samsung
 ~~~~~~~
 

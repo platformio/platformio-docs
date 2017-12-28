@@ -18,6 +18,12 @@ To upload firmware using programmer you need to use ``program`` target instead
 ``upload`` for :option:`platformio run --target` command. For example,
 ``platformio run -t program``.
 
+.. warning::
+    Upload options like ``upload_port`` don't work as expected with ``platformio run -t program``. You need to use ``upload_flags`` if you want to specify custom port or speed (see examples below).
+
+.. note::
+    List of avrdude supported programmers are accessible with ``avrdude -c ?``
+
 Configuration for the programmers:
 
 *   AVR ISP
@@ -95,6 +101,20 @@ Configuration for the programmers:
         upload_port = SERIAL_PORT_HERE
         upload_speed = 19200
 
+*   Bus Pirate as ISP
+
+    .. code-block:: ini
+
+        [env:myenv]
+        platform = atmelavr
+        framework = arduino
+        upload_protocol = buspirate
+        upload_flags = -P$UPLOAD_PORT -b$UPLOAD_SPEED
+
+        ; edit these lines
+        upload_port = SERIAL_PORT_HERE
+        upload_speed = 115200
+
 Upload EEPROM data
 ------------------
 
@@ -116,7 +136,7 @@ Custom Fuses
 ~~~~~~~~~~~~
 
 You can specify custom fuse bits. Please create custom
-:ref:`projectconf_extra_script` and override default "fuses" command:
+:ref:`projectconf_extra_scripts` and override default "fuses" command:
 
 ``platformio.ini``:
 
@@ -124,7 +144,7 @@ You can specify custom fuse bits. Please create custom
 
     [env:custom_fuses]
     platform = atmelavr
-    extra_script = extra_script.py
+    extra_scripts = extra_script.py
 
 
 ``extra_script.py``:
@@ -152,13 +172,12 @@ Examples
 --------
 
 All project examples are located in PlatformIO repository
-`Examples for Atmel AVR platform <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino>`_.
+`Examples for Atmel AVR platform <https://github.com/platformio/platformio-examples/tree/develop/atmelavr>`_.
 
 * `Wiring Blink <https://github.com/platformio/platformio-examples/tree/develop/wiring-blink>`_
-* `Arduino with external libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/arduino-external-libs>`_
-* `Arduino with internal libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/arduino-internal-libs>`_
-* `Project uses source file name for "src" directory (Arduino project structure) <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/arduino-own-src_dir>`_
-* `Atmel AVR Native blink <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/atmelavr-native-blink>`_
-* `Digitstump Mouse <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/digitstump-mouse>`_
-* `Engduino magnetometer <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/engduino-magnetometer>`_
-* `PanStamp blink <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/panstamp-blink>`_
+* `Arduino with external libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-external-libs>`_
+* `Arduino with internal libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-internal-libs>`_
+* `Project uses source file name for "src" directory (Arduino project structure) <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-own-src_dir>`_
+* `Atmel AVR Native blink <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/atmelavr-native-blink>`_
+* `Digitstump Mouse <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/digitstump-mouse>`_
+* `Engduino magnetometer <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/engduino-magnetometer>`_

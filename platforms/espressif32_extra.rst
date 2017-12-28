@@ -9,6 +9,63 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Custom CPU Frequency
+--------------------
+
+See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
+
+.. code-block:: ini
+
+    [env:myenv]
+    ; set frequency to 160MHz
+    board_f_cpu = 160000000L
+
+Custom FLASH Frequency
+----------------------
+
+See :ref:`projectconf_board_f_flash` option from :ref:`projectconf`. Possible
+values:
+
+* ``40000000L`` (default)
+* ``80000000L``
+
+.. code-block:: ini
+
+    [env:myenv]
+    ; set frequency to 80MHz
+    board_f_flash = 80000000L
+
+Custom FLASH Mode
+-----------------
+
+Flash chip interface mode. This parameter is stored in the binary image
+header, along with the flash size and flash frequency. The ROM bootloader
+in the ESP chip uses the value of these parameters in order to know how to
+talk to the flash chip.
+
+See :ref:`projectconf_board_flash_mode` option from :ref:`projectconf`. Possible
+values:
+
+* ``qio``
+* ``qout``
+* ``dio``
+* ``dout``
+
+.. code-block:: ini
+
+    [env:myenv]
+    board_flash_mode = qio
+
+Custom Upload Speed
+-------------------
+
+You can set custom upload speed using  :ref:`projectconf_upload_speed` option
+from :ref:`projectconf`
+
+.. code-block:: ini
+
+    [env:myenv]
+    upload_speed = 9600
 
 Over-the-Air (OTA) update
 -------------------------
@@ -90,21 +147,18 @@ Using Arduino Framework with Staging version
 PlatformIO will install the latest Arduino Core for ESP32 from
 https://github.com/espressif/arduino-esp32. The `Git <https://git-scm.com>`_
 should be installed in a system. To update Arduino Core to the latest revision,
-please use :ref:`cmd_platform_update` command.
+please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
 
-1. 	Install Espressif 32 (Stage) development platform
-
-    .. code::
-
-        platformio platform install https://github.com/platformio/platform-espressif32.git#feature/stage
-
-2.  Set :ref:`projectconf_env_platform` to ``espressif32_stage`` in
-    :ref:`projectconf`. For example,
+1.  Please install :ref:`pioide`
+2.  Initialize a new project, open :ref:`projectconf` and set
+    :ref:`projectconf_env_platform` to
+    ``https://github.com/platformio/platform-espressif32.git#feature/stage``.
+    For example,
 
     .. code-block:: ini
 
         [env:esp32dev]
-        platform = espressif32_stage
+        platform = https://github.com/platformio/platform-espressif32.git#feature/stage
         board = esp32dev
         framework = arduino
 
@@ -117,9 +171,15 @@ please use :ref:`cmd_platform_update` command.
 
     - test project/files
     - detailed log of build process from Arduino IDE (please copy it from
-      console to http://pastebin.com)
-    - detailed log of build process from PlatformIO Build System (
-      please copy it from console to http://pastebin.com)
+      console to https://hastebin.com)
+    - detailed log of build process from PlatformIO Build System (please copy
+      it from console to https://hastebin.com)
+
+Articles
+--------
+
+* Sep 04, 2017 - **Dror Gluska** - `Looking To The IoT Future With PlatformIO And ESP32 <http://uhurumkate.blogspot.co.il/2017/09/looking-to-iot-future-with-platformio.html>`_
+* Aug 23, 2017 - **陳亮** - `Develop ESP32 With PlatformIO IDE <http://www.instructables.com/id/Develop-ESP32-With-PlatformIO-IDE/>`_
 
 Examples
 --------

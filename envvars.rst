@@ -55,8 +55,8 @@ PlatformIO uses it to disable prompts and progress bars. In other words,
 .. envvar:: PLATFORMIO_AUTH_TOKEN
 
 Allows to specify Personal Authentication Token that could be used for
-automatic login in to :ref:`cmd_account`. It is very useful for :ref:`ci`
-systems and :ref:`pio_remote` operations where you are not able manually authorize.
+automatic login in to :ref:`pioaccount`. It is very useful for :ref:`ci`
+systems and :ref:`pioremote` operations where you are not able manually authorize.
 
 You can get own Personal Authentication Token using :ref:`cmd_account_token`
 command.
@@ -76,6 +76,14 @@ The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_
 
 Allows to override :ref:`projectconf` option :ref:`projectconf_pio_home_dir`.
 
+.. envvar:: PLATFORMIO_INCLUDE_DIR
+
+Allows to override :ref:`projectconf` option :ref:`projectconf_pio_include_dir`.
+
+.. envvar:: PLATFORMIO_SRC_DIR
+
+Allows to override :ref:`projectconf` option :ref:`projectconf_pio_src_dir`.
+
 .. envvar:: PLATFORMIO_LIB_DIR
 
 Allows to override :ref:`projectconf` option :ref:`projectconf_pio_lib_dir`.
@@ -83,10 +91,6 @@ Allows to override :ref:`projectconf` option :ref:`projectconf_pio_lib_dir`.
 .. envvar:: PLATFORMIO_LIBDEPS_DIR
 
 Allows to override :ref:`projectconf` option :ref:`projectconf_pio_libdeps_dir`.
-
-.. envvar:: PLATFORMIO_SRC_DIR
-
-Allows to override :ref:`projectconf` option :ref:`projectconf_pio_src_dir`.
 
 .. envvar:: PLATFORMIO_ENVS_DIR
 
@@ -137,9 +141,9 @@ Allows to set :ref:`projectconf` option :ref:`projectconf_src_build_flags`.
 
 Allows to set :ref:`projectconf` option :ref:`projectconf_src_filter`.
 
-.. envvar:: PLATFORMIO_EXTRA_SCRIPT
+.. envvar:: PLATFORMIO_EXTRA_SCRIPTS
 
-Allows to set :ref:`projectconf` option :ref:`projectconf_extra_script`.
+Allows to set :ref:`projectconf` option :ref:`projectconf_extra_scripts`.
 
 .. envvar:: PLATFORMIO_LIB_EXTRA_DIRS
 
@@ -184,6 +188,14 @@ Allows to override setting :ref:`setting_check_platformio_interval`.
 
 Allows to override setting :ref:`setting_check_platforms_interval`.
 
+.. envvar:: PLATFORMIO_SETTING_ENABLE_CACHE
+
+Allows to override setting :ref:`setting_enable_cache`.
+
+.. envvar:: PLATFORMIO_SETTING_ENABLE_SSL
+
+Allows to override setting :ref:`setting_enable_ssl`.
+
 .. envvar:: PLATFORMIO_SETTING_ENABLE_TELEMETRY
 
 Allows to override setting :ref:`setting_enable_telemetry`.
@@ -192,6 +204,6 @@ Allows to override setting :ref:`setting_enable_telemetry`.
 
 Allows to override setting :ref:`setting_force_verbose`.
 
-.. envvar:: PLATFORMIO_SETTING_ENABLE_SSL
+.. envvar:: PLATFORMIO_SETTING_PROJECTS_DIR
 
-Allows to override setting :ref:`setting_enable_ssl`.
+Allows to override setting :ref:`setting_projects_dir`.

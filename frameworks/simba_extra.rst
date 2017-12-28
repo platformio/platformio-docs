@@ -13,6 +13,7 @@ Examples
 --------
 
 All project examples are located in PlatformIO repository
-`Examples for Simba framework <https://github.com/platformio/platformio-examples/tree/develop/examples/simba>`_.
+`Examples for Simba framework <https://github.com/platformio/platformio-examples/tree/develop/simba>`_.
 
 * `Blink <https://github.com/platformio/platformio-examples/tree/develop/simba/blink>`_
+* `Hello World <https://github.com/platformio/platformio-examples/tree/develop/simba/hello_world>`_

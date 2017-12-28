@@ -11,7 +11,7 @@
 
 .. _ide_vscode:
 
-PlatformIO IDE for VScode
+PlatformIO IDE for VSCode
 =========================
 
 .. include:: pioide_features.rst
@@ -25,7 +25,7 @@ TypeScript and Node.js and has a rich ecosystem of extensions for other
 languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unity)
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode.png
-    :target: https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide
+    :target: ../_images/platformio-ide-vscode.png
 
 .. contents:: Contents
     :local:
@@ -41,7 +41,7 @@ Installation
 
 0. `Download <https://code.visualstudio.com>`_ and install official Microsoft Visual Studio Code. PlatformIO IDE is built on top of it
 1. **Open** VSCode Package Manager
-2. **Search** for official ``platformio-ide`` package
+2. **Search** for official ``platformio-ide`` `extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-pkg-installer.png
@@ -56,40 +56,16 @@ have a general understanding of how to work with projects in the IDE.
 Setting Up the Project
 ~~~~~~~~~~~~~~~~~~~~~~
 
-1. Create empty directory (or use existing) and open it via ``File > Open...``
+1. Click on "PlatformIO Home" button on the bottom :ref:`ide_vscode_toolbar`
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-open-folder.png
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-welcome.png
 
-2. Initialize PlatformIO Project using one of these methods:
+2. Click on "New Project", select a board and create new PlatformIO Project
 
-    * Run "Initialize or Update Project" command using ``ctrl+alt+i`` hotkey
-    * Launch "VS Code Menu: View > Command Palette..." or use hotkey
-      ``Ctrl+Shift+P`` (``Cmd+Shift+P`` for macOS), search for
-      ``PlatformIO: Initialize or Update Project``, and press enter
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-new-project.png
 
-3. Select a board. You can change it any time in :ref:`projectconf` or add
-   new using the same ``PlatformIO: Initialize or Update Project`` command.
-
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-select-board.png
-
-4. Create FREE :ref:`cmd_account` which opens access to extra features, such as:
-
-    * :ref:`piodebug`
-    * :ref:`unit_testing`
-    * :ref:`pio_remote`
-
-  Please open PIO Terminal using :ref:`ide_vscode_toolbar` |pio_vscode_toolbar_terminal|
-
-    * Create new PIO Account with :ref:`cmd_account_register` command
-    * Use temporary password from received e-mail and login with
-      :ref:`cmd_account_login` command
-    * Change temporary password using :ref:`cmd_account_password` command
-
-5. Create New File named ``main.cpp`` in ``src`` folder
-
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-new-src-file.png
-
-6. Copy the next source code to the just created file ``main.cpp``
+3. Open ``main.cpp`` file form ``src`` folder and replace its contents with
+   the next:
 
 .. warning::
 
@@ -130,26 +106,24 @@ Setting Up the Project
       delay(1000);
     }
 
-7. Build your project with ``ctrl+alt+b`` hotkey (see all Key Bindings in
-   "User Guide" section below)
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-blink-project.png
+
+4. Build your project with ``ctrl+alt+b`` hotkey (see all Key Bindings in
+   "User Guide" section below) or using "Build" button on the :ref:`ide_vscode_toolbar`
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-build-project.png
 
-8. Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload, Clean,
-   Serial Monitor, Library Manager, Run Other Tasks) in "User Guider" section.
+
+Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload, Clean,
+Serial Monitor) below.
 
 **Happy coding with PlatformIO!**
 
 
-.. _ide_vscode_user_guide:
-
-User Guide
-----------
-
 .. _ide_vscode_toolbar:
 
 PlatformIO Toolbar
-~~~~~~~~~~~~~~~~~~
+------------------
 
 PlatformIO IDE Toolbar is located in VSCode Status Bar (left corner)
 and contains quick access buttons for the popular commands.
@@ -157,51 +131,64 @@ Each button contains hint (delay mouse on it).
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-toolbar.png
 
+* :ref:`piohome`
 * PlatformIO: Build
 * PlatformIO: Upload
 * PlatformIO: Clean
-* PlatformIO: Run Other Tasks
-* Initialize new PlatformIO Project or Update existing...
-* :ref:`librarymanager`
+* Run a task... (See "Task Runner" below)
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * PIO Terminal
 
-Key Bindings: Building / Uploading / Other Tasks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Key Bindings
+------------
 
-* ``ctrl+alt+i`` Initialize or Update Project
 * ``ctrl+alt+b`` / ``cmd-shift-b`` / ``ctrl-shift-b`` Build Project
 * ``cmd-shift-d`` / ``ctrl-shift-d`` Debug project
 * ``ctrl+alt+u`` Upload Firmware
 * ``ctrl+alt+s`` Open :ref:`Serial Port Monitor <cmd_device_monitor>`
-* ``ctrl+alt+t`` Run Other Tasks (Upload using Programmer, Upload SPIFFS
-  image, Test Project, Update packages and libraries, Upgrade :ref:`piocore`)
 
-Extension Settings
-~~~~~~~~~~~~~~~~~~
+Task Runner
+-----------
 
-``platformio-ide.useBuiltinPIOCore``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Use built-in :ref:`piocore`, default configuration is ``true``.
+PlatformIO IDE provides base tasks ``Menu > Tasks`` (Build, Upload, Clean,
+Monitor, etc) and custom tasks per :ref:`projectconf` environment
+(``[env:***]``). A default behavior is to use Terminal Panel for presentation.
+Also, we use dedicated panel per unique task.
 
-``platformio-ide.useDevelopmentPIOCore``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Use development version of :ref:`piocore`, default configuration is ``false``.
+PlatformIO IDE provides own Problems Matcher named ``$platformio``.
+You can use it later if decide to change base task settings.
 
-``platformio-ide.autoRebuildAutocompleteIndex``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Automatically rebuild C/C++ Project Index when :ref:`projectconf` is changed
-or when new libraries are installed, default configuration is ``true``.
+You can override existing task with own presentation options. For example,
+let configure PlatformIO Task Runner to use NEW Terminal panel per each "Build"
+command:
 
-``platformio-ide.customPATH``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Custom PATH for ``platformio`` command. Paste here the result of ``echo $PATH``
-(Unix) / ``echo %PATH%`` (Windows) command by typing into your system terminal
-if you prefer to use custom version of :ref:`piocore`, default configuration
-is ``null``.
+1. Please click on "gear" icon near "Build" task in ``Menu > Tasks``
+2. Replace template in ``tasks.json`` with this code
+
+  .. code-block:: json
+
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "type": "PlatformIO",
+                "args": [
+                    "run"
+                ],
+                "problemMatcher": [
+                    "$platformio"
+                ],
+                "presentation": {
+                    "panel": "new"
+                }
+            }
+        ]
+    }
+
+See more options in `official VSCode documentation <https://code.visualstudio.com/docs/editor/tasks#_output-behavior>`__.
 
 Serial Port Monitor
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 You can customize Serial Port Monitor using
 :ref:`projectconf_section_env_monitor` in :ref:`projectconf`:
@@ -227,24 +214,74 @@ Example:
     monitor_baud = 115200
 
 Install Shell Commands
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Please navigate to FAQ :ref:`faq_install_shell_commands`.
 
-PIO Account
-~~~~~~~~~~~
+Settings
+--------
 
-Create FREE :ref:`cmd_account` which opens access to extra features, such as:
+`How to configure VSCode settings? <https://code.visualstudio.com/docs/getstarted/settings>`_
 
-  * :ref:`piodebug`
-  * :ref:`unit_testing`
-  * :ref:`pio_remote`
+``platformio-ide.useBuiltinPIOCore``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use built-in :ref:`piocore`, default value is ``true``.
 
-Please open PIO Terminal using :ref:`ide_vscode_toolbar` |pio_vscode_toolbar_terminal|
+``platformio-ide.useDevelopmentPIOCore``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use development version of :ref:`piocore`, default value is ``false``.
 
-  * Create new PIO Account with :ref:`cmd_account_register` command
-  * Use temporary password from received e-mail and login with
-    :ref:`cmd_account_login` command
-  * Change temporary password using :ref:`cmd_account_password` command
+``platformio-ide.autoRebuildAutocompleteIndex``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Automatically rebuild C/C++ Project Index when :ref:`projectconf` is changed
+or when new libraries are installed, default value is ``true``.
 
-.. |PIO_VSCODE_TOOLBAR_TERMINAL| image:: ../_static/ide/vscode/platformio-ide-vscode-toolbar-terminal.png
+``platformio-ide.forceUploadAndMonitor``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Force "Upload and Monitor" task for Upload (``platformio-ide.upload``) command,
+default value is ``false``.
+
+``platformio-ide.customPATH``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Custom PATH for ``platformio`` command. Paste here the result of ``echo $PATH``
+(Unix) / ``echo %PATH%`` (Windows) command by typing into your system terminal
+if you prefer to use custom version of :ref:`piocore`, default value is ``null``.
+
+``platformio-ide.updateTerminalPathConfiguration``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Update Terminal configuration with patched PATH environment, default value
+is ``true``.
+
+Known issues
+------------
+
+PackageManager is unable to install tool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a known bug in VSCode Terminal
+`issue #61 <https://github.com/platformio/platformio-vscode-ide/issues/61>`_.
+
+Temporary solution:
+
+1. Open **System Terminal** (on Windows ``cmd.exe``), not VSCode IDE Terminal
+2. Build project and upload firmware using :ref:`piocore` which will download
+   and install all dependencies and toolchain:
+
+   .. code-block:: bash
+
+       # a) Change directory to PlatformIO Project where is located "platformio.ini"
+       cd path/to/platformio/project
+
+       # b.Windows (please replace {username} with real user name)
+       C:\Users\{username}\.platformio\penv\Scripts\platformio.exe run -target upload
+
+       # b.Unix
+       ~/.platformio/penv/bin/platformio run --target upload
+
+Now, back to VSCode.
+
+Changelog
+---------
+
+Please visit `releases page <https://github.com/platformio/platformio-vscode-ide/releases>`_.

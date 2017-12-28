@@ -52,6 +52,9 @@ Platforms
     * - :ref:`platform_nordicnrf51`
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
+    * - :ref:`platform_nordicnrf52`
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
@@ -117,11 +120,47 @@ Adafruit
       - 256 Kb
       - 32 Kb
 
-    * - ``adafruit_feather_m0_usb``
+    * - ``adafruit_feather_m0``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_feather_m0_express``
+      - `Adafruit Feather M0 Express <https://www.adafruit.com/product/3403>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_gemma_m0``
+      - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - SAMD21E18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_metro_m0``
+      - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_trinket_m0``
+      - `Adafruit Trinket M0 <https://www.adafruit.com/product/3500>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - SAMD21E18A
       - 48 MHz
       - 256 Kb
       - 32 Kb
@@ -267,6 +306,54 @@ Aiyarafun
       - 1280 Kb
       - 288 Kb
 
+Alorium Technology
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``alorium_xlr8``
+      - `Alorium XLR8 <http://www.aloriumtech.com/xlr8/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+Anarduino
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``miniwireless``
+      - `Anarduino MiniWireless <http://www.anarduino.com/miniwireless/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
 April Brother
 ~~~~~~~~~~~~~
 
@@ -394,7 +481,7 @@ Arduino
       - 2 Kb
 
     * - ``chiwawa``
-      - `Arduino Industrial 101 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-industrial-101>`_
+      - `Arduino Industrial 101 <https://store.arduino.cc/arduino-industrial-101>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -421,7 +508,7 @@ Arduino
       - 2 Kb
 
     * - ``due``
-      - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - AT91SAM3X8E
@@ -430,7 +517,7 @@ Arduino
       - 32 Kb
 
     * - ``dueUSB``
-      - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - AT91SAM3X8E
@@ -439,7 +526,7 @@ Arduino
       - 32 Kb
 
     * - ``esplora``
-      - `Arduino Esplora <http://www.arduino.org/products/boards/4-arduino-boards/arduino-esplora>`_
+      - `Arduino Esplora <https://www.arduino.cc/en/Main/ArduinoBoardEsplora>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -448,7 +535,7 @@ Arduino
       - 2.5 Kb
 
     * - ``ethernet``
-      - `Arduino Ethernet <http://www.arduino.org/products/boards/4-arduino-boards/arduino-ethernet>`_
+      - `Arduino Ethernet <https://www.arduino.cc/en/Main/ArduinoBoardEthernet>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -466,7 +553,7 @@ Arduino
       - 2 Kb
 
     * - ``leonardo``
-      - `Arduino Leonardo <http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo>`_
+      - `Arduino Leonardo <https://www.arduino.cc/en/Main/ArduinoBoardLeonardo>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -475,7 +562,7 @@ Arduino
       - 2.5 Kb
 
     * - ``leonardoeth``
-      - `Arduino Leonardo ETH <http://www.arduino.org/products/boards/4-arduino-boards/arduino-leonardo-eth>`_
+      - `Arduino Leonardo ETH <https://www.arduino.cc/en/Main/ArduinoBoardLeonardoEth>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -502,7 +589,7 @@ Arduino
       - 2 Kb
 
     * - ``megaADK``
-      - `Arduino Mega ADK <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-adk>`_
+      - `Arduino Mega ADK <https://www.arduino.cc/en/Main/ArduinoBoardMegaADK>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA2560
@@ -511,7 +598,7 @@ Arduino
       - 8 Kb
 
     * - ``megaatmega1280``
-      - `Arduino Mega or Mega 2560 ATmega1280 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - `Arduino Mega or Mega 2560 ATmega1280 <https://www.arduino.cc/en/Main/ArduinoBoardMega2560>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA1280
@@ -520,7 +607,7 @@ Arduino
       - 8 Kb
 
     * - ``megaatmega2560``
-      - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-mega-2560>`_
+      - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <https://www.arduino.cc/en/Main/ArduinoBoardMega2560>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA2560
@@ -529,7 +616,7 @@ Arduino
       - 8 Kb
 
     * - ``micro``
-      - `Arduino Micro <http://www.arduino.org/products/boards/4-arduino-boards/arduino-micro>`_
+      - `Arduino Micro <https://www.arduino.cc/en/Main/ArduinoBoardMicro>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -583,7 +670,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeroUSB``
-      - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
+      - `Arduino M0 <https://www.arduino.cc/en/Main/ArduinoBoardM0>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
@@ -592,7 +679,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeropro``
-      - `Arduino M0 Pro (Programming/Debug Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - `Arduino M0 Pro (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
@@ -601,7 +688,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeroproUSB``
-      - `Arduino M0 Pro (Native USB Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - `Arduino M0 Pro (Native USB Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - SAMD21G18A
@@ -610,7 +697,7 @@ Arduino
       - 32 Kb
 
     * - ``nanoatmega168``
-      - `Arduino Nano ATmega168 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - `Arduino Nano ATmega168 <https://www.arduino.cc/en/Main/ArduinoBoardNano>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA168
@@ -619,7 +706,7 @@ Arduino
       - 1 Kb
 
     * - ``nanoatmega328``
-      - `Arduino Nano ATmega328 <http://www.arduino.org/products/boards/4-arduino-boards/arduino-nano>`_
+      - `Arduino Nano ATmega328 <https://www.arduino.cc/en/Main/ArduinoBoardNano>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -664,7 +751,7 @@ Arduino
       - 2 Kb
 
     * - ``robotControl``
-      - `Arduino Robot Control <http://www.arduino.org/products/boards/4-arduino-boards/arduino-robot>`_
+      - `Arduino Robot Control <https://www.arduino.cc/en/Main/Robot>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -673,7 +760,7 @@ Arduino
       - 2.5 Kb
 
     * - ``robotMotor``
-      - `Arduino Robot Motor <http://www.arduino.org/products/boards/4-arduino-boards/arduino-robot>`_
+      - `Arduino Robot Motor <https://www.arduino.cc/en/Main/Robot>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -682,7 +769,7 @@ Arduino
       - 2.5 Kb
 
     * - ``tian``
-      - `Arduino Tian <http://www.arduino.org/products/boards/arduino-tian>`_
+      - `Arduino Tian <https://www.arduino.cc/en/Main/ArduinoBoardTian>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - SAMD21G18A
@@ -691,7 +778,7 @@ Arduino
       - 32 Kb
 
     * - ``uno``
-      - `Arduino Uno <http://www.arduino.org/products/boards/4-arduino-boards/arduino-uno>`_
+      - `Arduino Uno <https://www.arduino.cc/en/Main/ArduinoBoardUno>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -700,7 +787,7 @@ Arduino
       - 2 Kb
 
     * - ``yun``
-      - `Arduino Yun <http://www.arduino.org/products/boards/4-arduino-boards/arduino-yun>`_
+      - `Arduino Yun <https://www.arduino.cc/en/Main/ArduinoBoardYun>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -709,7 +796,7 @@ Arduino
       - 2.5 Kb
 
     * - ``yunmini``
-      - `Arduino Yun Mini <http://www.arduino.org/products/boards/4-arduino-boards/arduino-yun-mini>`_
+      - `Arduino Yun Mini <https://www.arduino.cc/en/Main/ArduinoBoardYunMini>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -734,6 +821,30 @@ Arduino
       - 48 MHz
       - 256 Kb
       - 32 Kb
+
+BBC
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``bbcmicrobit``
+      - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 16 MHz
+      - 256 Kb
+      - 16 Kb
 
 BQ
 ~~
@@ -776,6 +887,81 @@ BitWizard
 
     * - ``raspduino``
       - `BitWizard Raspduino <http://www.bitwizard.nl/wiki/index.php/Raspduino>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+BluzDK
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``bluz_dk``
+      - `BluzDK <https://bluz.io/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
+Controllino
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``controllino_maxi``
+      - `Controllino Maxi <https://controllino.biz/controllino/maxi/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA2560
+      - 16 MHz
+      - 256 Kb
+      - 8 Kb
+
+    * - ``controllino_maxi_automation``
+      - `Controllino Maxi Automation <https://controllino.biz/controllino/maxi-automation/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA2560
+      - 16 MHz
+      - 256 Kb
+      - 8 Kb
+
+    * - ``controllino_mega``
+      - `Controllino Mega <https://controllino.biz/controllino/mega/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA2560
+      - 16 MHz
+      - 256 Kb
+      - 8 Kb
+
+    * - ``controllino_mini``
+      - `Controllino Mini <https://controllino.biz/controllino/mini/>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -830,6 +1016,30 @@ DOIT
       - 240 MHz
       - 1280 Kb
       - 288 Kb
+
+Delta
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``delta_dfbm_nq620``
+      - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
 Digilent
 ~~~~~~~~
@@ -979,7 +1189,7 @@ Digistump
       - RAM
 
     * - ``digispark-pro``
-      - `Digistump Digispark Pro (Default 16 MHz) <http://digistump.com/products/109>`_
+      - `Digispark Pro <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -988,7 +1198,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-pro32``
-      - `Digistump Digispark Pro (16 MHz) (32 byte buffer) <http://digistump.com/products/109>`_
+      - `Digispark Pro (32 byte buffer) <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -997,7 +1207,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-pro64``
-      - `Digistump Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
+      - `Digispark Pro (16 MHz) (64 byte buffer) <http://digistump.com/products/109>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY167
@@ -1006,7 +1216,7 @@ Digistump
       - 0.5 Kb
 
     * - ``digispark-tiny``
-      - `Digistump Digispark (Default - 16 MHz) <http://digistump.com/products/1>`_
+      - `Digispark USB <http://digistump.com/products/1>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATTINY85
@@ -1046,6 +1256,30 @@ Doit
       - 80 MHz
       - 4096 Kb
       - 80 Kb
+
+Dongsen Technology
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``pocket_32``
+      - `Dongsen Tech Pocket 32 <http://dong-sen.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
 Dwengo
 ~~~~~~
@@ -1087,13 +1321,22 @@ DycodeX
       - RAM
 
     * - ``espectro``
-      - `ESPrectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
+      - `ESPectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 
       - ESP8266
       - 80 MHz
       - 4096 Kb
       - 80 Kb
+
+    * - ``espectro32``
+      - `ESPectro32 <https://shop.makestro.com/product/espectro32>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
 ESP32vn
 ~~~~~~~
@@ -1200,6 +1443,30 @@ Electronic SweetPeas
       - 1280 Kb
       - 288 Kb
 
+Elektor
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``elektor_uno_r4``
+      - `Elektor Uno R4 <https://www.elektor.com/elektor-uno-r4>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328PB
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
 Engduino
 ~~~~~~~~
 
@@ -1262,6 +1529,15 @@ Espressif
       - Frequency
       - Flash
       - RAM
+
+    * - ``esp-wrover-kit``
+      - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
     * - ``esp01``
       - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
@@ -1650,6 +1926,63 @@ Generic ATTiny
       - 8 Kb
       - 0.5 Kb
 
+Heltec
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``heltec_wifi_kit_8``
+      - `Heltec Wifi kit 8 <http://www.heltec.cn/project/wifi_kit_8/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
+      - 80 Kb
+
+Heltec Automation
+~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``heltec_wifi_kit_32``
+      - `Heltec WIFI Kit 32 <http://www.heltec.cn>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``heltec_wifi_lora_32``
+      - `Heltec WIFI LoRa 32 <http://www.heltec.cn>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
 Hornbill
 ~~~~~~~~
 
@@ -1749,7 +2082,7 @@ LeafLabs
     * - ``maple``
       - `Maple <http://www.leaflabs.com/maple/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      - :ref:`Yes <piodebug>`
       - STM32F103RB
       - 72 MHz
       - 128 Kb
@@ -1758,7 +2091,7 @@ LeafLabs
     * - ``maple_mini_b20``
       - `Maple Mini Bootloader 2.0 <http://www.leaflabs.com/maple/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      - :ref:`Yes <piodebug>`
       - STM32F103CB
       - 72 MHz
       - 128 Kb
@@ -1767,7 +2100,7 @@ LeafLabs
     * - ``maple_mini_origin``
       - `Maple Mini Original <http://www.leaflabs.com/maple/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      - :ref:`Yes <piodebug>`
       - STM32F103CB
       - 72 MHz
       - 128 Kb
@@ -1836,6 +2169,15 @@ LowPowerLab
       - Flash
       - RAM
 
+    * - ``mightyhat``
+      - `LowPowerLab MightyHat <https://lowpowerlab.com/shop/product/130>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
     * - ``moteino``
       - `LowPowerLab Moteino <https://lowpowerlab.com/shop/moteino-r4>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1853,6 +2195,111 @@ LowPowerLab
       - 16 MHz
       - 128 Kb
       - 16 Kb
+
+M5Stack
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``m5stack-core-esp32``
+      - `M5Stack Core ESP32 <http://www.m5stack.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+MH-ET Live
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mhetesp32devkit``
+      - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``mhetesp32minikit``
+      - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+MXChip
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mxchip_az3166``
+      - `Microsoft Azure IoT Development Kit (MXChip AZ3166) <https://microsoft.github.io/azure-iot-developer-kit/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
+
+Macchina
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``macchina2``
+      - `Macchina M2 <https://www.macchina.cc>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - AT91SAM3X8E
+      - 84 MHz
+      - 512 Kb
+      - 32 Kb
 
 MakerAsia
 ~~~~~~~~~
@@ -1956,6 +2403,30 @@ Mcudude
       - 8 Kb
       - 0.5 Kb
 
+MediaTek Labs
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``smart7688``
+      - `LinkIt Smart 7688 Duo <https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA32U4
+      - 8 MHz
+      - 32 Kb
+      - 2.5 Kb
+
 Microduino
 ~~~~~~~~~~
 
@@ -1972,7 +2443,7 @@ Microduino
       - RAM
 
     * - ``1284p16m``
-      - `Microduino Core+ (ATmega1284P@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - `Microduino Core+ (ATmega1284P@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_Core%2B>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA1284P
@@ -1981,7 +2452,7 @@ Microduino
       - 16 Kb
 
     * - ``1284p8m``
-      - `Microduino Core+ (ATmega1284P@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - `Microduino Core+ (ATmega1284P@8M,3.3V) <http://wiki.microduinoinc.com/Microduino-Module_Core%2B>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA1284P
@@ -1990,7 +2461,7 @@ Microduino
       - 16 Kb
 
     * - ``168pa16m``
-      - `Microduino Core (Atmega168PA@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - `Microduino Core (Atmega168PA@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_Core>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA168P
@@ -1999,7 +2470,7 @@ Microduino
       - 1 Kb
 
     * - ``168pa8m``
-      - `Microduino Core (Atmega168PA@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - `Microduino Core (Atmega168PA@8M,3.3V) <http://wiki.microduinoinc.com/Microduino-Module_Core>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA168P
@@ -2008,7 +2479,7 @@ Microduino
       - 1 Kb
 
     * - ``328p16m``
-      - `Microduino Core (Atmega328P@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - `Microduino Core (Atmega328P@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_Core>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -2017,7 +2488,7 @@ Microduino
       - 2 Kb
 
     * - ``328p8m``
-      - `Microduino Core (Atmega328P@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core>`_
+      - `Microduino Core (Atmega328P@8M,3.3V) <http://wiki.microduinoinc.com/Microduino-Module_Core>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA328P
@@ -2026,7 +2497,7 @@ Microduino
       - 2 Kb
 
     * - ``32u416m``
-      - `Microduino Core USB (ATmega32U4@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-CoreUSB>`_
+      - `Microduino Core USB (ATmega32U4@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_CoreUSB>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA32U4
@@ -2035,7 +2506,7 @@ Microduino
       - 2.5 Kb
 
     * - ``644pa16m``
-      - `Microduino Core+ (Atmega644PA@16M,5V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - `Microduino Core+ (Atmega644PA@16M,5V) <http://wiki.microduinoinc.com/Microduino-Module_Core%2B>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA644P
@@ -2044,13 +2515,22 @@ Microduino
       - 4 Kb
 
     * - ``644pa8m``
-      - `Microduino Core+ (Atmega644PA@8M,3.3V) <https://www.microduino.cc/wiki/index.php?title=Microduino-Core%2B>`_
+      - `Microduino Core+ (Atmega644PA@8M,3.3V) <http://wiki.microduinoinc.com/Microduino-Module_Core%2B>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - 
       - ATMEGA644P
       - 8 MHz
       - 64 Kb
       - 4 Kb
+
+    * - ``microduino-core-esp32``
+      - `Microduino Core ESP32 <https://microduinoinc.com>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
 MikroElektronika
 ~~~~~~~~~~~~~~~~
@@ -2075,6 +2555,15 @@ MikroElektronika
       - 80 MHz
       - 512 Kb
       - 32 Kb
+
+    * - ``flipnclickmz``
+      - `MikroElektronika Flip N Click MZ <https://shop.mikroe.com/flipclick-pic32mz>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
+      - 
+      - 32MZ2048EFH100
+      - 252 MHz
+      - 2048 Kb
+      - 512 Kb
 
 NodeMCU
 ~~~~~~~
@@ -2141,6 +2630,114 @@ Noduino
       - 240 MHz
       - 1280 Kb
       - 288 Kb
+
+Nordic
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nrf51_dk``
+      - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``nrf51_dongle``
+      - `Nordic nRF51-Dongle <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``nrf52840_dk``
+      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52840
+      - 64 MHz
+      - 1024 Kb
+      - 256 Kb
+
+    * - ``nrf52_dk``
+      - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
+OLIMEX
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``esp32-evb``
+      - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``esp32-gateway``
+      - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+OSHChip
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``oshchip``
+      - `OSHChip <http://oshchip.org/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 Olimex
 ~~~~~~
@@ -2262,15 +2859,6 @@ PONTECH
       - Flash
       - RAM
 
-    * - ``quick240_usb``
-      - `PONTECH quicK240 <http://quick240.com/quicki/>`_
-      - :ref:`Microchip PIC32 <platform_microchippic32>`
-      - 
-      - 32MX795F512L
-      - 80 MHz
-      - 512 Kb
-      - 128 Kb
-
     * - ``usbono_pic32``
       - `PONTECH UAV100 <http://www.pontech.com/productdisplay/uav100>`_
       - :ref:`Microchip PIC32 <platform_microchippic32>`
@@ -2361,6 +2949,39 @@ Pololu Corporation
       - 32 Kb
       - 2.5 Kb
 
+Pontech
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nofire``
+      - `Pontech NoFire <http://www.pontech.com/products>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
+      - 
+      - 32MZ2048EFG100
+      - 200 MHz
+      - 2048 Kb
+      - 512 Kb
+
+    * - ``quick240_usb``
+      - `Pontech Quick240 <http://chipkit.net/wpcproduct/pontech-quick240/>`_
+      - :ref:`Microchip PIC32 <platform_microchippic32>`
+      - 
+      - 32MX795F512L
+      - 80 MHz
+      - 512 Kb
+      - 128 Kb
+
 Punch Through
 ~~~~~~~~~~~~~
 
@@ -2436,7 +3057,7 @@ RFduino
     * - ``rfduino``
       - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      - :ref:`Yes <piodebug>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -2483,6 +3104,42 @@ RedBearLab
       - 8 MHz
       - 32 Kb
       - 2.5 Kb
+
+    * - ``redBearLab``
+      - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 16 MHz
+      - 256 Kb
+      - 16 Kb
+
+    * - ``redBearLabBLENano``
+      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 16 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``redbear_blenano2``
+      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
+
+    * - ``redbear_blend2``
+      - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
 RepRap
 ~~~~~~
@@ -2535,7 +3192,7 @@ SODAQ
     * - ``sodaq_explorer``
       - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <piodebug>`
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -2580,7 +3237,7 @@ SODAQ
     * - ``sodaq_one``
       - `SODAQ ONE <http://support.sodaq.com/sodaq-one/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <piodebug>`
       - SAMD21G18A
       - 48 MHz
       - 256 Kb
@@ -2594,15 +3251,6 @@ SODAQ
       - 8 MHz
       - 128 Kb
       - 16 Kb
-
-    * - ``sodaq_wdt``
-      - `SODAQ WDT <http://support.sodaq.com/>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
-      - SAMD21J18A
-      - 48 MHz
-      - 256 Kb
-      - 32 Kb
 
 SainSmart
 ~~~~~~~~~
@@ -2729,6 +3377,33 @@ SeeedStudio
       - 80 MHz
       - 512 Kb
       - 128 Kb
+
+    * - ``seeedTinyBLE``
+      - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 16 MHz
+      - 256 Kb
+      - 16 Kb
+
+    * - ``seeeduino``
+      - `Seeeduino <https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 16 MHz
+      - 32 Kb
+      - 2 Kb
+
+    * - ``wio_node``
+      - `Wio Node <https://www.seeedstudio.com/Wio-Node-p-2637.html>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
+      - 80 Kb
 
 SparkFun
 ~~~~~~~~
@@ -2931,6 +3606,30 @@ SparkFun Electronics
       - 1280 Kb
       - 288 Kb
 
+SpellFoundry
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``sleepypi``
+      - `SpellFoundry Sleepy Pi 2 <https://spellfoundry.com/product/sleepy-pi-2/>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - 
+      - ATMEGA328P
+      - 8 MHz
+      - 32 Kb
+      - 2 Kb
+
 SweetPea
 ~~~~~~~~
 
@@ -2954,6 +3653,30 @@ SweetPea
       - 80 MHz
       - 4096 Kb
       - 80 Kb
+
+Taida Century
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``stct_nrf52_minidev``
+      - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
 Teensy
 ~~~~~~
@@ -3009,7 +3732,7 @@ Teensy
     * - ``teensy35``
       - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html>`_
       - :ref:`Teensy <platform_teensy>`
-      - 
+      - :ref:`Yes <piodebug>`
       - MK64FX512
       - 120 MHz
       - 512 Kb
@@ -3018,7 +3741,7 @@ Teensy
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html>`_
       - :ref:`Teensy <platform_teensy>`
-      - 
+      - :ref:`Yes <piodebug>`
       - MK66FX1M0
       - 180 MHz
       - 1024 Kb
@@ -3047,6 +3770,15 @@ ThaiEasyElec
       - Frequency
       - Flash
       - RAM
+
+    * - ``espino32``
+      - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
 
     * - ``espinotee``
       - `ThaiEasyElec ESPino <http://www.thaieasyelec.com/products/wireless-modules/wifi-modules/espino-wifi-development-board-detail.html>`_
@@ -3198,6 +3930,39 @@ WEMOS
       - 1280 Kb
       - 288 Kb
 
+    * - ``wemosbat``
+      - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+Waveshare
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``waveshare_ble400``
+      - `Waveshare BLE400 <http://www.waveshare.com/wiki/BLE400>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
 Wicked Device
 ~~~~~~~~~~~~~
 
@@ -3327,6 +4092,30 @@ makerlab.mx
       - 256 Kb
       - 32 Kb
 
+ng-beacon
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``ng_beacon``
+      - `ng-beacon <https://github.com/urish/ng-beacon>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
 nicai-systems
 ~~~~~~~~~~~~~
 
@@ -3395,6 +4184,39 @@ nicai-systems
       - 20 MHz
       - 128 Kb
       - 16 Kb
+
+u-blox
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``nina_w10``
+      - `u-blox NINA-W10 series <https://www.u-blox.com/en/product/nina-w10-series>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - 
+      - ESP32
+      - 240 MHz
+      - 1280 Kb
+      - 288 Kb
+
+    * - ``ublox_evk_nina_b1``
+      - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
 ubIQio
 ~~~~~~

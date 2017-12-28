@@ -33,12 +33,12 @@ Description
 -----------
 
 Process remotely environments which are defined in :ref:`projectconf` file.
-By default, :ref:`pio_remote` builds project on a host machine and deploy
+By default, :ref:`pioremote` builds project on a host machine and deploy
 final firmware (program) to a remote device (embedded board).
 
 If you need to process project on a remote machine, please use
 :option:`platformio remote run --force-remote` option. In this case,
-:ref:`pio_remote` will automatically synchronize your project with remote machine,
+:ref:`pioremote` will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.
 
 
@@ -103,12 +103,12 @@ or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
 .. option::
     -r, --force-remote
 
-By default, :ref:`pio_remote` builds project on a host machine and deploy
+By default, :ref:`pioremote` builds project on a host machine and deploy
 final firmware (program) to remote device (embedded board).
 
 If you need to process project on remote machine, please use
 :option:`platformio remote run --force-remote` option. In this case,
-:ref:`pio_remote` will automatically synchronize your project with remote machine,
+:ref:`pioremote` will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.
 
 Example

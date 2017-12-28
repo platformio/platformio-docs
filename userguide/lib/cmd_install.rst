@@ -110,6 +110,11 @@ Suppress progress reporting
 
 Allow to make a choice for all prompts
 
+.. option::
+    -f, --force
+
+Reinstall/redownload library if it exists
+
 Version control
 ---------------
 
@@ -131,6 +136,8 @@ the supported forms:
 * git+git://git.server.org/my-library
 * git+https://git.server.org/my-library
 * git+ssh://git.server.org/my-library
+* git+ssh://user@git.server.org/my-library
+* [user@]host.xz:path/to/repo.git
 
 Passing branch names, a commit hash or a tag name is possible like so:
 

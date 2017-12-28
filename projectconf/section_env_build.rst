@@ -118,6 +118,11 @@ Use Cases:
  * Process media content before generating SPIFFS image
  * Make some changes to source code or related libraries
 
+.. note::
+  If you need more advanced control and would like to apply changes to
+  PIO Build System environment, please refer to :ref:`projectconf_section_env_advanced`
+  and use Pre/Post Extra Scripts.
+
 Example:
 
 .. code-block:: ini

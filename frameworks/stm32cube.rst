@@ -42,6 +42,30 @@ Boards
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
+1BitSquared
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``1bitsy_stm32f415rgt``
+      - `1Bitsy <http://1bitsy.org>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F415RGT
+      - 168 MHz
+      - 1024 Kb
+      - 128 Kb
+
 96Boards
 ~~~~~~~~
 
@@ -156,6 +180,126 @@ Generic
       - 64 Kb
       - 20 Kb
 
+    * - ``genericSTM32F103C8``
+      - `STM32F103C8 (20k RAM. 64k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103C8
+      - 72 MHz
+      - 64 Kb
+      - 20 Kb
+
+    * - ``genericSTM32F103CB``
+      - `STM32F103CB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103cb.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103CB
+      - 72 MHz
+      - 128 Kb
+      - 20 Kb
+
+    * - ``genericSTM32F103R8``
+      - `STM32F103R8 (20k RAM. 64 Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103r8.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103R8
+      - 72 MHz
+      - 64 Kb
+      - 20 Kb
+
+    * - ``genericSTM32F103RB``
+      - `STM32F103RB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rb.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103RB
+      - 72 MHz
+      - 128 Kb
+      - 20 Kb
+
+    * - ``genericSTM32F103RC``
+      - `STM32F103RC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rc.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103RC
+      - 72 MHz
+      - 256 Kb
+      - 48 Kb
+
+    * - ``genericSTM32F103RE``
+      - `STM32F103RE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103re.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103RE
+      - 72 MHz
+      - 512 Kb
+      - 64 Kb
+
+LeafLabs
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``maple``
+      - `Maple <http://www.leaflabs.com/maple/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103RB
+      - 72 MHz
+      - 128 Kb
+      - 17 Kb
+
+    * - ``maple_mini_b20``
+      - `Maple Mini Bootloader 2.0 <http://www.leaflabs.com/maple/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103CB
+      - 72 MHz
+      - 128 Kb
+      - 20 Kb
+
+    * - ``maple_mini_origin``
+      - `Maple Mini Original <http://www.leaflabs.com/maple/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103CB
+      - 72 MHz
+      - 128 Kb
+      - 17 Kb
+
+MXChip
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``mxchip_az3166``
+      - `Microsoft Azure IoT Development Kit (MXChip AZ3166) <https://microsoft.github.io/azure-iot-developer-kit/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F412ZGT6
+      - 100 MHz
+      - 1024 Kb
+      - 256 Kb
+
 MultiTech
 ~~~~~~~~~
 
@@ -171,14 +315,74 @@ MultiTech
       - Flash
       - RAM
 
+    * - ``mts_dragonfly_f411re``
+      - `MTS Dragonfly <https://developer.mbed.org/platforms/MTS-Dragonfly/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
+    * - ``mts_mdot_f405rg``
+      - `MultiTech mDot <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
+    * - ``mts_mdot_f411re``
+      - `MultiTech mDot F411 <https://developer.mbed.org/platforms/MTS-mDot-F411/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F411RET6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``xdot_l151cc``
       - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      - :ref:`Yes <piodebug>`
       - STM32L151CCU6
       - 32 MHz
       - 256 Kb
       - 32 Kb
+
+RushUp
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``cloud_jam``
+      - `RushUp Cloud-JAM <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F401RET6
+      - 84 MHz
+      - 512 Kb
+      - 96 Kb
+
+    * - ``cloud_jam_l4``
+      - `RushUp Cloud-JAM L4 <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L476RGT6
+      - 80 MHz
+      - 1024 Kb
+      - 128 Kb
 
 ST
 ~~
@@ -267,6 +471,15 @@ ST
       - 512 Kb
       - 128 Kb
 
+    * - ``disco_f413zh``
+      - `ST 32F413HDISCOVERY <https://os.mbed.com/platforms/ST-Discovery-F413H/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F413ZHT6
+      - 100 MHz
+      - 512 Kb
+      - 128 Kb
+
     * - ``disco_f429zi``
       - `ST 32F429IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259090>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -330,6 +543,15 @@ ST
       - 128 Kb
       - 16 Kb
 
+    * - ``disco_l475vg_iot01a``
+      - `ST DISCO-L475VG-IOT01A <https://developer.mbed.org/platforms/ST-Discovery-L475E-IOT01A/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L475VGT6
+      - 80 MHz
+      - 1024 Kb
+      - 128 Kb
+
     * - ``disco_l476vg``
       - `ST 32L476GDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF261635>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -338,6 +560,15 @@ ST
       - 80 MHz
       - 1024 Kb
       - 128 Kb
+
+    * - ``eval_l073z``
+      - `ST STM32L073Z-EVAL <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-eval-boards/stm32l073z-eval.html>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L073VZT6
+      - 32 MHz
+      - 192 Kb
+      - 20 Kb
 
     * - ``nucleo_f030r8``
       - `ST Nucleo F030R8 <https://developer.mbed.org/platforms/ST-Nucleo-F030R8/>`_
@@ -537,6 +768,15 @@ ST
       - 2048 Kb
       - 512 Kb
 
+    * - ``nucleo_l011k4``
+      - `ST Nucleo L011K4 <https://developer.mbed.org/platforms/ST-Nucleo-L011K4/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L011K4T6
+      - 32 MHz
+      - 16 Kb
+      - 2 Kb
+
     * - ``nucleo_l031k6``
       - `ST Nucleo L031K6 <https://developer.mbed.org/platforms/ST-Nucleo-L031K6/>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -638,5 +878,47 @@ Semtech
       - 32 MHz
       - 256 Kb
       - 32 Kb
+
+u-blox
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``ublox_c030_n211``
+      - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
+
+    * - ``ublox_c030_u201``
+      - `u-blox C030-U201 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
+
+    * - ``ublox_evk_odin_w2``
+      - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F439ZIY6
+      - 168 MHz
+      - 2048 Kb
+      - 256 Kb
 
 .. include:: stm32cube_extra.rst

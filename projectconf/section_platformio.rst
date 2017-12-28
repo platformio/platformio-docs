@@ -18,6 +18,7 @@ Section ``[platformio]``
     :local:
 
 A ``platformio`` section is used for overriding default configuration options
+for :ref:`piocore`.
 
 .. note::
     Relative path is allowed for directory option:
@@ -73,7 +74,7 @@ Multiple environments are allowed if they *are separated with ", "
 ^^^^^^^^^^^^
 
 Is used to store platform toolchains, frameworks, global libraries for
-:ref: `ldf`, service data and etc. The size of this folder will depend on
+:ref:`ldf`, service data and etc. The size of this folder will depend on
 number of installed development platforms.
 
 A default value is User's home directory:
@@ -90,6 +91,35 @@ Example:
 
     [platformio]
     home_dir = /path/to/custom/pio/storage
+
+.. _projectconf_pio_include_dir:
+
+``include_dir``
+^^^^^^^^^^^^^^^
+
+A path to project's headers files. PlatformIO uses it for :ref:`cmd_run`
+command. A default value is ``include`` that means that folder is located in the
+root of project. This path will be added to ``CPPPATH`` of build environment.
+
+This option can be overridden by global environment variable
+:envvar:`PLATFORMIO_INCLUDE_DIR`.
+
+.. _projectconf_pio_src_dir:
+
+``src_dir``
+^^^^^^^^^^^
+
+A path to project's source directory. PlatformIO uses it for :ref:`cmd_run`
+command. A default value is ``src`` that means that folder is located in the
+root of project.
+
+This option can be overridden by global environment variable
+:envvar:`PLATFORMIO_SRC_DIR`.
+
+.. note::
+    This option is useful for people who migrate from Arduino/Energia IDEs where
+    source directory should have the same name like the main source file.
+    See `example <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-own-src_dir>`__ project with own source directory.
 
 .. _projectconf_pio_lib_dir:
 
@@ -157,32 +187,14 @@ This option can be overridden by global environment variable
 
 .. versionadded:: 3.2
 
-A list with global extra directories for a project where :ref:`ldf` will look
-for libraries.
+A list with extra storages for a project where :ref:`ldf` will look for libraries.
 
 This option has the same behavior as :ref:`projectconf_lib_extra_dirs` option
 for a specific build environment defined in ``[env:]`` section. The main
-difference is that the option that is defined in ``[platofrmio]`` section
-will be applied automatically for all ``[env:]`` sections.
+difference is that the option which is defined in ``[platofrmio]`` section
+will be extra applied automatically for all ``[env:]`` sections.
 
 For the possible values and examples please follow to :ref:`projectconf_lib_extra_dirs`.
-
-.. _projectconf_pio_src_dir:
-
-``src_dir``
-^^^^^^^^^^^
-
-A path to project's source directory. PlatformIO uses it for :ref:`cmd_run`
-command. A default value is ``src`` that means that folder is located in the
-root of project.
-
-This option can be overridden by global environment variable
-:envvar:`PLATFORMIO_SRC_DIR`.
-
-.. note::
-    This option is useful for people who migrate from Arduino/Energia IDEs where
-    source directory should have the same name like the main source file.
-    See `example <https://github.com/platformio/platformio-examples/tree/develop/atmelavr-and-arduino/arduino-own-src_dir>`__ project with own source directory.
 
 .. _projectconf_pio_envs_dir:
 

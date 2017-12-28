@@ -12,7 +12,7 @@
 .. |PIORemote| replace:: **PIO Remote™**
 .. |PIOCloud| replace:: PlatformIO Cloud
 
-.. _pio_remote:
+.. _pioremote:
 
 PIO Remote™
 ===========
@@ -32,11 +32,8 @@ Using PIO Remote™ you can share your devices with colleagues across your
 organization or friends. In combination with :ref:`ide_cloud`, you can create
 awesome things at any time when inspiration comes to you.
 
-You should have :ref:`cmd_account` to work with |PIORemote|.
+You should have :ref:`pioaccount` to work with |PIORemote|.
 A registration is **FREE**.
-
-.. tip::
-  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
 
 .. contents::
 
@@ -134,7 +131,6 @@ User Guide (CLI)
 .. toctree::
     :maxdepth: 3
 
-    platformio account <../userguide/account/index>
-    platformio remote <../userguide/remote/index>
+    ../userguide/remote/index
 
 

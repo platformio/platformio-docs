@@ -25,7 +25,9 @@ General options
 :ref:`platforms` name.
 
 PlatformIO allows to use specific version of platform using
-`Semantic Versioning <http://semver.org>`_ (X.Y.Z=MAJOR.MINOR.PATCH).
+`Semantic Versioning <http://semver.org>`_ (X.Y.Z=MAJOR.MINOR.PATCH) or VCS
+(Git, Mercurial and Subversion).
+
 Version specifications can take any of the following forms:
 
 * ``0.1.2``: an exact version number. Use only this exact version
@@ -36,6 +38,8 @@ Version specifications can take any of the following forms:
   are also possible
 * ``>0.1.0,!=0.2.0,<0.3.0``: any version greater than ``0.1.0``, not equal to
   ``0.2.0`` and less than ``0.3.0``
+
+Other forms are the same as for the  :ref:`cmd_platform_install` command.
 
 Examples:
 
@@ -49,6 +53,15 @@ Examples:
 
     [env:specific_major_and_minor_version]
     platform = atmelavr@~0.1.2
+
+    [env:development_verion_by_git]
+    platform = https://github.com/platformio/platform-ststm32.git
+
+    [env:custom_git_branch]
+    platform = https://github.com/platformio/platform-espressif8266.git#feature/stage
+
+    [env:specific_git_commit]
+    platform = https://github.com/platformio/platform-espressif8266.git#921855a9c530082efddb5d48b44c3f4be0e2dfa2
 
 .. _projectconf_env_framework:
 

@@ -63,6 +63,7 @@ Commands
     cmd_ci
     cmd_debug
     cmd_device
+    cmd_home
     cmd_init
     platformio lib <lib/index>
     platformio platform <platforms/index>

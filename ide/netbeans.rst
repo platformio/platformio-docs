@@ -25,8 +25,8 @@ NetBeans IDE can be downloaded from `here <https://netbeans.org/downloads/>`_.
 Just make sure you download the C/C++ version (or if you already use NetBeans,
 install the C/C++ development plugins).
 
-.. image:: ../_static/ide-platformio-netbeans.png
-    :target: http://docs.platformio.org/en/stable/_images/ide-platformio-netbeans.png
+.. image:: ../_static/ide/netbeans/ide-platformio-netbeans.png
+    :target: ../_images/ide-platformio-netbeans.png
 
 .. contents::
 

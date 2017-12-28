@@ -27,7 +27,7 @@ Usage
 Description
 -----------
 
-Create a new :ref:`cmd_account`. A registration is FREE.
+Create a new :ref:`pioaccount`. A registration is FREE.
 
 Options
 ~~~~~~~

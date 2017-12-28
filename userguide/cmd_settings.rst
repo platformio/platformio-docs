@@ -33,6 +33,10 @@ Usage
 Description
 ~~~~~~~~~~~
 
+.. note::
+    * The ``Yes`` value is equal to: ``True``, ``Y``, ``1`` and is not case sensitive.
+    * You can override these settings using :ref:`envvars`.
+
 Get/List existing settings
 
 Settings
@@ -43,7 +47,7 @@ Settings
 ``auto_update_libraries``
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:Default:   Yes
+:Default:   No
 :Values:    Yes/No
 
 Automatically update libraries.
@@ -53,7 +57,7 @@ Automatically update libraries.
 ``auto_update_platforms``
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:Default:   Yes
+:Default:   No
 :Values:    Yes/No
 
 Automatically update platforms.
@@ -88,17 +92,7 @@ Check for the new PlatformIO interval.
 
 Check for the platform updates interval.
 
-.. _setting_enable_ssl:
-
-``enable_ssl``
-^^^^^^^^^^^^^^
-
-:Default:   No
-:Values:    Yes/No
-
-Enable SSL for PlatformIO Services
-
-.. _enable_cache:
+.. _setting_enable_cache:
 
 ``enable_cache``
 ^^^^^^^^^^^^^^^^
@@ -108,19 +102,15 @@ Enable SSL for PlatformIO Services
 
 Enable caching for API requests and Library Manager
 
-.. _setting_force_verbose:
+.. _setting_enable_ssl:
 
-``force_verbose``
-^^^^^^^^^^^^^^^^^
+``enable_ssl``
+^^^^^^^^^^^^^^
 
 :Default:   No
 :Values:    Yes/No
 
-Force verbose output when processing environments. This setting overrides
-
-* :option:`platformio run --verbose`
-* :option:`platformio ci --verbose`
-* :option:`platformio test --verbose`
+Enable SSL for PlatformIO Services
 
 .. _setting_enable_telemetry:
 
@@ -144,11 +134,29 @@ source code of your project. All information shares anonymously.
 
 Thanks a lot that keep this setting enabled.
 
+.. _setting_force_verbose:
 
-.. note::
-    * The ``Yes`` value is equl to: ``True``, ``Y``, ``1``.
-      The value is not case sensetive.
-    * You can override these settings using :ref:`envvars`.
+``force_verbose``
+^^^^^^^^^^^^^^^^^
+
+:Default:   No
+:Values:    Yes/No
+
+Force verbose output when processing environments. This setting overrides
+
+* :option:`platformio run --verbose`
+* :option:`platformio ci --verbose`
+* :option:`platformio test --verbose`
+
+.. _setting_projects_dir:
+
+``projects_dir``
+^^^^^^^^^^^^^^^^
+
+:Default:   ~/Documents/PlatformIO/Projects
+:Values:    Path to folder
+
+Default location for PlatformIO projects (PIO Home)
 
 Examples
 ~~~~~~~~
@@ -168,8 +176,9 @@ Examples
     check_platforms_interval        7                 Check for the platform updates interval (days)
     enable_cache                    Yes               Enable caching for API requests and Library Manager
     enable_ssl                      No                Enable SSL for PlatformIO Services
-    enable_telemetry                Yes               Telemetry service (Yes/No)
+    enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
+    projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PIO Home)
 
 
 2. Show specified setting
@@ -245,5 +254,6 @@ Examples
     check_platforms_interval        7                 Check for the platform updates interval (days)
     enable_cache                    Yes               Enable caching for API requests and Library Manager
     enable_ssl                      No                Enable SSL for PlatformIO Services
-    enable_telemetry                Yes               Telemetry service (Yes/No)
+    enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
+    projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PIO Home)

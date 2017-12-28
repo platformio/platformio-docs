@@ -114,6 +114,30 @@ Raspberry Pi
       - 524288 Kb
       - 524288 Kb
 
+RushUp
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``kitra_520``
+      - `RushUp Kitra 520 <https://www.rushup.tech/kitra>`_
+      - :ref:`Linux ARM <platform_linux_arm>`
+      - 
+      - EXYNOS3250
+      - 1000 MHz
+      - 4194304 Kb
+      - 524288 Kb
+
 Samsung
 ~~~~~~~
 

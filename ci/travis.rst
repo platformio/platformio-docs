@@ -30,7 +30,7 @@ Travis CI is configured by adding a file named ``.travis.yml``, which is a
 directory of the GitHub repository.
 
 Travis CI automatically detects when a commit has been made and pushed to a
-GitHub repository that is using Travis CI, and each time this happens, it will
+repository that is using Travis CI, and each time this happens, it will
 try to build the project using :ref:`cmd_ci` command. This includes commits to
 all branches, not just to the master branch. Travis CI will also build and run
 pull requests. When that process has completed, it will notify a developer in
@@ -49,7 +49,7 @@ and `general build configuration <http://docs.travis-ci.com/user/customizing-the
 guides first.
 
 .. note::
-    If you are going to use PlatformIO :ref:`unit_testing` or :ref:`pio_remote`
+    If you are going to use PlatformIO :ref:`unit_testing` or :ref:`pioremote`
     you will need to define :envvar:`PLATFORMIO_AUTH_TOKEN` environment
     variable in project settings. See
     `Defining Variables in Repository Settings <https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings>`_
@@ -63,12 +63,6 @@ PlatformIO is written in Python and is recommended to be run within
     language: python
     python:
         - "2.7"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
 
     env:
         - PLATFORMIO_CI_SRC=path/to/test/file.c
@@ -180,12 +174,6 @@ Examples
     python:
         - "2.7"
 
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-
     env:
         - PLATFORMIO_CI_SRC=examples/acm/acm_terminal
         - PLATFORMIO_CI_SRC=examples/Bluetooth/WiiIRCamera PLATFORMIO_BUILD_FLAGS="-DWIICAMERA"
@@ -217,12 +205,6 @@ Examples
     python:
         - "2.7"
 
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-
     env:
         - PLATFORMIO_CI_SRC=examples/backSoon/backSoon.ino
         - PLATFORMIO_CI_SRC=examples/etherNode/etherNode.ino
@@ -250,12 +232,6 @@ Examples
     language: python
     python:
         - "2.7"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
 
     env:
         - PLATFORMIO_CI_SRC=examples/TimeArduinoDue PLATFORMIO_CI_EXTRA_ARGS="--board=due"
@@ -287,12 +263,6 @@ Examples
     language: python
     python:
         - "2.7"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
 
     env:
         - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Adafruit_Bluefruit_LE

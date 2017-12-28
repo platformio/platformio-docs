@@ -516,7 +516,9 @@ details :ref:`projectconf_build_unflags`.
 *Optional* | Type: ``String`` or ``Array``
 
 Specify which source files should be included/excluded from build process.
-More details :ref:`projectconf_src_filter`.
+The path in filter should be **relative from a root** of library.
+
+See syntax in :ref:`projectconf_src_filter`.
 
 Please note that you can generate source filter "on-the-fly" using
 ``extraScript`` (see below)
@@ -527,7 +529,7 @@ Please note that you can generate source filter "on-the-fly" using
 *Optional* | Type: ``String``
 
 Launch extra script before build process.
-More details :ref:`projectconf_extra_script`.
+More details :ref:`projectconf_extra_scripts`.
 
 **Example** (HAL-based library)
 
@@ -594,22 +596,40 @@ Project structure
             env.Replace(SRC_FILTER=["+<*>", "-<hal>", "+<%s>" % join("hal", item[1])])
             break
 
+.. _libjson_archive:
+
 ``libArchive``
 ~~~~~~~~~~~~~~
 
 *Optional* | Type: ``Boolean``
 
-Archive object files to Static Library. This is default behavior of PlatformIO
-Build System (``"libArchive": true``).
+Create an archive (``*.a``, static library) from the object files and link it
+into a firmware (program). This is default behavior of PlatformIO Build System
+(``"libArchive": true``).
+
+Setting ``"libArchive": false`` will instruct PIO Build System to link object
+files directly (in-line). This could be useful if you need to override ``weak``
+symbols defined in framework or other libraries.
+
+You can disable library archiving globally using :ref:`projectconf_lib_archive`
+option in :ref:`projectconf`.
 
 ``libLDFMode``
 ~~~~~~~~~~~~~~
 
-*Optional* | Type: ``Integer``
+*Optional* | Type: ``String``
 
 Specify Library Dependency Finder Mode. See :ref:`ldf_mode` for details.
 
-**Examples**
+``libCompatMode``
+~~~~~~~~~~~~~~~~~
+
+*Optional* | Type: ``Integer``
+
+Specify Library Compatibility Mode. See :ref:`ldf_compat_mode` for details.
+
+Examples
+--------
 
 1. Custom macros/defines
 

@@ -35,6 +35,32 @@ Usage
     platformio platform install <name=repository> (name it should have locally)
     platformio platform install <repository#tag> ("tag" can be commit, branch or tag)
 
+Options
+-------
+
+.. program:: platformio platform install
+
+.. option::
+    --with-package
+
+Install specified package (or alias)
+
+
+.. option::
+    --without-package
+
+Do not install specified package (or alias)
+
+.. option::
+    --skip-default
+
+Skip default packages
+
+.. option::
+    -f, --force
+
+Reinstall/redownload development platform and its packages if they exist
+
 
 Description
 -----------
@@ -61,27 +87,6 @@ contain ``platform.json`` manifest.
 * ``file:///local/path/to/the/platform.zip``
 * ``file:///local/path/to/the/platform.tar.gz``
 
-Options
--------
-
-.. program:: platformio platform install
-
-.. option::
-    --with-package
-
-Install specified package (or alias)
-
-
-.. option::
-    --without-package
-
-Do not install specified package (or alias)
-
-.. option::
-    --skip-default
-
-Skip default packages
-
 Version control
 ---------------
 
@@ -103,6 +108,8 @@ the supported forms:
 * git+git://git.server.org/my-platform
 * git+https://git.server.org/my-platform
 * git+ssh://git.server.org/my-platform
+* git+ssh://user@git.server.org/my-platform
+* [user@]host.xz:path/to/repo.git
 
 Passing branch names, a commit hash or a tag name is possible like so:
 

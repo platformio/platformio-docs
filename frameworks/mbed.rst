@@ -50,7 +50,7 @@ Platforms
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
     * - :ref:`platform_wiznet7500`
-      - The IOP (Internet Offload Processor) W7500  is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
+      - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -162,7 +162,7 @@ BBC
     * - ``bbcmicrobit``
       - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      - :ref:`Yes <piodebug>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -224,6 +224,15 @@ Delta
       - 64 MHz
       - 512 Kb
       - 64 Kb
+
+    * - ``delta_dfcm_nnn50``
+      - `Delta DFCM-NNN50 <https://os.mbed.com/platforms/Delta-DFCM-NNN50/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 16 Kb
 
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
@@ -375,6 +384,15 @@ Freescale
       - 1024 Kb
       - 256 Kb
 
+    * - ``frdm_k66f``
+      - `Freescale Kinetis FRDM-K66F <https://developer.mbed.org/platforms/FRDM-K66F/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MK66FN2M0VMD18
+      - 180 MHz
+      - 2048 Kb
+      - 256 Kb
+
     * - ``frdm_kl05z``
       - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
@@ -428,6 +446,15 @@ Freescale
       - 48 MHz
       - 256 Kb
       - 32 Kb
+
+    * - ``frdm_kw41z``
+      - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MKW41Z512VHT4
+      - 48 MHz
+      - 512 Kb
+      - 128 Kb
 
 GHI Electronics
 ~~~~~~~~~~~~~~~
@@ -533,6 +560,24 @@ Maxim
       - 96 MHz
       - 2048 Kb
       - 256 Kb
+
+    * - ``max32625mbed``
+      - `MAX32625MBED <https://os.mbed.com/platforms/MAX32625MBED/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32625
+      - 96 MHz
+      - 512 Kb
+      - 160 Kb
+
+    * - ``max32625nexpaq``
+      - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - 
+      - MAX32625
+      - 96 MHz
+      - 512 Kb
+      - 160 Kb
 
     * - ``max32630fthr``
       - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/>`_
@@ -654,7 +699,7 @@ MultiTech
     * - ``xdot_l151cc``
       - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - 
+      - :ref:`Yes <piodebug>`
       - STM32L151CCU6
       - 32 MHz
       - 256 Kb
@@ -858,6 +903,15 @@ Nordic
       - 128 Kb
       - 16 Kb
 
+    * - ``nrf52840_dk``
+      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52840
+      - 64 MHz
+      - 1024 Kb
+      - 256 Kb
+
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/>`_
       - :ref:`Nordic nRF52 <platform_nordicnrf52>`
@@ -916,13 +970,46 @@ RedBearLab
       - 16 Kb
 
     * - ``redBearLabBLENano``
-      - `RedBearLab BLE Nano <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
+      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - :ref:`Yes <piodebug>`
       - NRF51822
       - 16 MHz
       - 256 Kb
       - 32 Kb
+
+RushUp
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``cloud_jam``
+      - `RushUp Cloud-JAM <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F401RET6
+      - 84 MHz
+      - 512 Kb
+      - 96 Kb
+
+    * - ``cloud_jam_l4``
+      - `RushUp Cloud-JAM L4 <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L476RGT6
+      - 80 MHz
+      - 1024 Kb
+      - 128 Kb
 
 ST
 ~~
@@ -1055,6 +1142,15 @@ ST
       - 32 MHz
       - 192 Kb
       - 20 Kb
+
+    * - ``disco_l475vg_iot01a``
+      - `ST DISCO-L475VG-IOT01A <https://developer.mbed.org/platforms/ST-Discovery-L475E-IOT01A/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L475VGT6
+      - 80 MHz
+      - 1024 Kb
+      - 128 Kb
 
     * - ``disco_l476vg``
       - `ST 32L476GDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF261635>`_
@@ -1629,6 +1725,30 @@ Teensy
       - 256 Kb
       - 64 Kb
 
+VNG
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``vbluno51``
+      - `VNG VBLUNO51 <https://os.mbed.com/platforms/VBLUNO51/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 16 MHz
+      - 128 Kb
+      - 32 Kb
+
 WIZNet
 ~~~~~~
 
@@ -1685,6 +1805,33 @@ u-blox
       - Frequency
       - Flash
       - RAM
+
+    * - ``ublox_c030_n211``
+      - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
+
+    * - ``ublox_c030_u201``
+      - `u-blox C030-U201 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180 MHz
+      - 1024 Kb
+      - 256 Kb
+
+    * - ``ublox_evk_nina_b1``
+      - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64 MHz
+      - 512 Kb
+      - 64 Kb
 
     * - ``ublox_evk_odin_w2``
       - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/>`_

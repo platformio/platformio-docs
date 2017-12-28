@@ -27,4 +27,4 @@ Usage
 Description
 -----------
 
-Change password for :ref:`cmd_account`.
+Change password for :ref:`pioaccount`.

@@ -28,7 +28,7 @@ values:
 
 * ``20000000L``
 * ``26000000L``
-* ``40000000L``
+* ``40000000L`` (default)
 * ``80000000L``
 
 .. code-block:: ini
@@ -83,11 +83,11 @@ Custom Flash Size
 -----------------
 
 .. warning::
-    Please make sure to read `ESP8266 Flash layout <https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md#flash-layout>`_
+    Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
     information first.
 
-The list with preconfigured LD scripts is located in public repository
-`platformio-pkg-ldscripts <https://github.com/platformio/platformio-pkg-ldscripts>`_.
+Available LD-scripts:
+https://github.com/platformio/platform-espressif8266/tree/develop/ldscripts
 
 * ``esp8266.flash.512k0.ld`` 512K (no SPIFFS)
 * ``esp8266.flash.512k64.ld`` 512K (64K SPIFFS)
@@ -124,7 +124,7 @@ Uploading files to file system SPIFFS
 -------------------------------------
 
 .. warning::
-    Please make sure to read `ESP8266 Flash layout <https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md#flash-layout>`_
+    Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
     information first.
 
 1. Initialize project :ref:`cmd_init` (if you have not initialized yet)
@@ -147,7 +147,7 @@ Active discussion is located in `issue #382 <https://github.com/platformio/platf
 Over-the-Air (OTA) update
 -------------------------
 
-Firstly, please read `What is OTA? How to use it? <https://github.com/esp8266/Arduino/blob/master/doc/ota_updates/readme.md>`_
+Firstly, please read `What is OTA? How to use it? <https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html>`_
 
 There are 2 options:
 
@@ -233,36 +233,33 @@ Using Arduino Framework with Staging version
 PlatformIO will install the latest Arduino Core for ESP8266 from
 https://github.com/esp8266/Arduino. The `Git <https://git-scm.com>`_
 should be installed in a system. To update Arduino Core to the latest revision,
-please use :ref:`cmd_platform_update` command.
+please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
 
-1.  Install Espressif 8266 (Stage) development platform
-
-    .. code::
-
-        platformio platform install https://github.com/platformio/platform-espressif8266.git#feature/stage
-
-2.  Set :ref:`projectconf_env_platform` to ``espressif8266_stage`` in
-    :ref:`projectconf`. For example,
+1.  Please install :ref:`pioide`
+2.  Initialize a new project, open :ref:`projectconf` and set
+    :ref:`projectconf_env_platform` to
+    ``https://github.com/platformio/platform-espressif8266.git#feature/stage``.
+    For example,
 
     .. code-block:: ini
 
         [env:nodemcuv2]
-        platform = espressif8266_stage
+        platform = https://github.com/platformio/platform-espressif8266.git#feature/stage
         board = nodemcuv2
         framework = arduino
 
 3.  Try to build project
 4.  If you see build errors, then try to build this project using the same
     ``stage`` with Arduino IDE
-5.  If it works with Arduino IDE but doesn't work with PlatformIO, please
-    `file new issue <https://github.com/platformio/platform-espressif8266/issues>`_
+5.  If it works with Arduino IDE but doesn't work with PlatformIO, then please
+    `file new issue <https://github.com/platformio/platform-espressif32/issuess>`_
     with attached information:
 
     - test project/files
     - detailed log of build process from Arduino IDE (please copy it from
-      console to http://pastebin.com)
-    - detailed log of build process from PlatformIO Build System (
-      please copy it from console to http://pastebin.com)
+      console to https://hastebin.com)
+    - detailed log of build process from PlatformIO Build System (please copy
+      it from console to https://hastebin.com)
 
 Articles
 --------

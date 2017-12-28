@@ -34,6 +34,9 @@ Packages
     * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino>`__
       - Arduino Wiring-based Framework (ESP8266 Core)
 
+    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK>`__
+      - ESP8266 Non-OS SDK
+
     * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK>`__
       - ESP8266 SDK based on FreeRTOS
 
@@ -80,6 +83,12 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_esp8266-nonos-sdk`
+      - The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions.
+
+    * - :ref:`framework_esp8266-rtos-sdk`
+      - ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
@@ -157,7 +166,7 @@ DycodeX
       - RAM
 
     * - ``espectro``
-      - `ESPrectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
+      - `ESPectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 
       - ESP8266
@@ -318,6 +327,30 @@ Espressif
       - 448 Kb
       - 80 Kb
 
+Heltec
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``heltec_wifi_kit_8``
+      - `Heltec Wifi kit 8 <http://www.heltec.cn/project/wifi_kit_8/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
+      - 80 Kb
+
 NodeMCU
 ~~~~~~~
 
@@ -373,6 +406,30 @@ Olimex
       - ESP8266
       - 80 MHz
       - 2048 Kb
+      - 80 Kb
+
+SeeedStudio
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``wio_node``
+      - `Wio Node <https://www.seeedstudio.com/Wio-Node-p-2637.html>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 4096 Kb
       - 80 Kb
 
 SparkFun

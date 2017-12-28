@@ -26,7 +26,7 @@ directory of the GitHub repository or you can use your Travis CI configuration
 file ``.travis.yml``.
 
 Shippable automatically detects when a commit has been made and pushed to a
-GitHub repository that is using Shippable, and each time this happens, it will
+repository that is using Shippable, and each time this happens, it will
 try to build the project using :ref:`cmd_ci` command. This includes commits to
 all branches, not just to the master branch. Shippable will also build and run
 pull requests. When that process has completed, it will notify a developer in

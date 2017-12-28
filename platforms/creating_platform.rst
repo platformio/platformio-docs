@@ -71,11 +71,14 @@ Packages
     * - `framework-arduinomsp430 <http://arduino.cc/en/Reference/HomePage>`__
       - Arduino Wiring-based Framework (MSP430 Core)
 
-    * - `framework-arduinonordicnrf51 <https://github.com/RFduino/RFduino>`__
-      - Arduino Wiring-based Framework (RFduino Core)
+    * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5>`__
+      - Arduino Wiring-based Framework (Nordic NRF5 Core)
 
     * - `framework-arduinosam <http://arduino.cc/en/Reference/HomePage>`__
       - Arduino Wiring-based Framework (SAM Core, 1.6)
+
+    * - `framework-arduinostm32mxchip <https://microsoft.github.io/azure-iot-developer-kit/>`__
+      - Arduino Wiring-based Framework (ST STM32 MXChip Core)
 
     * - `framework-arduinoststm32 <https://github.com/rogerclarkmelbourne/Arduino_STM32>`__
       - Arduino Wiring-based Framework (STM32 Core)
@@ -94,6 +97,9 @@ Packages
 
     * - `framework-energiativa <http://energia.nu/reference/>`__
       - Energia Wiring-based Framework (LM4F Core)
+
+    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK>`__
+      - ESP8266 Non-OS SDK
 
     * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK>`__
       - ESP8266 SDK based on FreeRTOS
@@ -119,6 +125,9 @@ Packages
     * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897>`__
       - STM32Cube embedded software libraries
 
+    * - `framework-tizenrt <http://www.artik.io>`__
+      - TizenRT RTOS with library
+
     * - `framework-wiringpi <http://wiringpi.com>`__
       - GPIO Interface library for the Raspberry Pi
 
@@ -130,6 +139,9 @@ Packages
 
     * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools>`__
       - Genuino101 uploader
+
+    * - `tool-artik-openocd <http://openocd.org>`__
+      - OpenOCD for ARTIK
 
     * - `tool-avrdude <http://www.nongnu.org/avrdude/>`__
       - AVRDUDE
@@ -144,7 +156,7 @@ Packages
       - esptool-ck
 
     * - `tool-esptoolpy <https://github.com/espressif/esptool>`__
-      - Espressif ROM Bootloader utility
+      - ESP8266 and ESP32 serial bootloader utility
 
     * - `tool-lm4flash <http://www.ti.com/tool/lmflashprogrammer>`__
       - Flash Programmer

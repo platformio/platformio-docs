@@ -117,11 +117,47 @@ Adafruit
       - 256 Kb
       - 32 Kb
 
-    * - ``adafruit_feather_m0_usb``
+    * - ``adafruit_feather_m0``
       - `Adafruit Feather M0 <https://www.adafruit.com/product/2772>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_feather_m0_express``
+      - `Adafruit Feather M0 Express <https://www.adafruit.com/product/3403>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_gemma_m0``
+      - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - SAMD21E18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_metro_m0``
+      - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48 MHz
+      - 256 Kb
+      - 32 Kb
+
+    * - ``adafruit_trinket_m0``
+      - `Adafruit Trinket M0 <https://www.adafruit.com/product/3500>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - SAMD21E18A
       - 48 MHz
       - 256 Kb
       - 32 Kb
@@ -142,7 +178,7 @@ Arduino
       - RAM
 
     * - ``due``
-      - `Arduino Due (Programming Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - AT91SAM3X8E
@@ -151,7 +187,7 @@ Arduino
       - 32 Kb
 
     * - ``dueUSB``
-      - `Arduino Due (USB Native Port) <http://www.arduino.org/products/boards/4-arduino-boards/arduino-due>`_
+      - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - AT91SAM3X8E
@@ -187,7 +223,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeroUSB``
-      - `Arduino M0 <http://www.arduino.org/products/boards/arduino-m0>`_
+      - `Arduino M0 <https://www.arduino.cc/en/Main/ArduinoBoardM0>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
@@ -196,7 +232,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeropro``
-      - `Arduino M0 Pro (Programming/Debug Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - `Arduino M0 Pro (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
@@ -205,7 +241,7 @@ Arduino
       - 32 Kb
 
     * - ``mzeroproUSB``
-      - `Arduino M0 Pro (Native USB Port) <http://www.arduino.org/products/boards/arduino-m0-pro>`_
+      - `Arduino M0 Pro (Native USB Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - SAMD21G18A
@@ -214,7 +250,7 @@ Arduino
       - 32 Kb
 
     * - ``tian``
-      - `Arduino Tian <http://www.arduino.org/products/boards/arduino-tian>`_
+      - `Arduino Tian <https://www.arduino.cc/en/Main/ArduinoBoardTian>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - 
       - SAMD21G18A
@@ -315,6 +351,30 @@ Digistump
       - 512 Kb
       - 28 Kb
 
+Macchina
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``macchina2``
+      - `Macchina M2 <https://www.macchina.cc>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - 
+      - AT91SAM3X8E
+      - 84 MHz
+      - 512 Kb
+      - 32 Kb
+
 SODAQ
 ~~~~~
 
@@ -342,7 +402,7 @@ SODAQ
     * - ``sodaq_explorer``
       - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <piodebug>`
       - SAMD21J18A
       - 48 MHz
       - 256 Kb
@@ -351,17 +411,8 @@ SODAQ
     * - ``sodaq_one``
       - `SODAQ ONE <http://support.sodaq.com/sodaq-one/>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
+      - :ref:`Yes <piodebug>`
       - SAMD21G18A
-      - 48 MHz
-      - 256 Kb
-      - 32 Kb
-
-    * - ``sodaq_wdt``
-      - `SODAQ WDT <http://support.sodaq.com/>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - 
-      - SAMD21J18A
       - 48 MHz
       - 256 Kb
       - 32 Kb

@@ -42,7 +42,8 @@ Example:
     ; Windows
     lib_extra_dirs = ${env.HOMEDRIVE}${env.HOMEPATH}\Documents\Arduino\libraries
 
-
+    ; You MUST inject these options into [env:] section
+    ; using ${common.***} (see below)
     [common]
     build_flags = -D VERSION=1.2.3 -D DEBUG=1
     lib_deps_builtin =
@@ -55,7 +56,9 @@ Example:
     framework = arduino
     board = uno
     build_flags = ${common.build_flags}
-    lib_deps = ${common.lib_deps_builtin}, ${common.lib_deps_external}
+    lib_deps =
+      ${common.lib_deps_builtin}
+      ${common.lib_deps_external}
 
     [env:nodemcuv2]
     platform = espressif8266

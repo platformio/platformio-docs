@@ -31,17 +31,14 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinonordicnrf51 <https://github.com/RFduino/RFduino>`__
-      - Arduino Wiring-based Framework (RFduino Core)
+    * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5>`__
+      - Arduino Wiring-based Framework (Nordic NRF5 Core)
 
     * - `framework-mbed <http://mbed.org>`__
       - mbed Framework
 
     * - `tool-openocd <http://openocd.org>`__
       - OpenOCD
-
-    * - `tool-rfdloader <https://github.com/RFduino/RFduino>`__
-      - rfdloader
 
     * - `tool-sreccat <https://github.com/marcows/SRecord>`__
       - Merging tool
@@ -105,7 +102,7 @@ BBC
     * - ``bbcmicrobit``
       - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      - :ref:`Yes <piodebug>`
       - NRF51822
       - 16 MHz
       - 256 Kb
@@ -119,6 +116,30 @@ BBC
       - 16 MHz
       - 256 Kb
       - 16 Kb
+
+BluzDK
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``bluz_dk``
+      - `BluzDK <https://bluz.io/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
 
 Delta
 ~~~~~
@@ -134,6 +155,15 @@ Delta
       - Frequency
       - Flash
       - RAM
+
+    * - ``delta_dfcm_nnn50``
+      - `Delta DFCM-NNN50 <https://os.mbed.com/platforms/Delta-DFCM-NNN50/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 16 Kb
 
     * - ``dfcm_nnn40``
       - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
@@ -210,6 +240,30 @@ Nordic
       - 128 Kb
       - 16 Kb
 
+OSHChip
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``oshchip``
+      - `OSHChip <http://oshchip.org/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
 RFduino
 ~~~~~~~
 
@@ -228,7 +282,7 @@ RFduino
     * - ``rfduino``
       - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      - :ref:`Yes <piodebug>`
       - NRF51822
       - 16 MHz
       - 128 Kb
@@ -259,7 +313,7 @@ RedBearLab
       - 16 Kb
 
     * - ``redBearLabBLENano``
-      - `RedBearLab BLE Nano <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
+      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - :ref:`Yes <piodebug>`
       - NRF51822
@@ -335,6 +389,78 @@ Switch Science
 
     * - ``ty51822r3``
       - `Switch Science mbed TY51822r3 <https://developer.mbed.org/platforms/Switch-Science-mbed-TY51822r3/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
+VNG
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``vbluno51``
+      - `VNG VBLUNO51 <https://os.mbed.com/platforms/VBLUNO51/>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 16 MHz
+      - 128 Kb
+      - 32 Kb
+
+Waveshare
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``waveshare_ble400``
+      - `Waveshare BLE400 <http://www.waveshare.com/wiki/BLE400>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32 MHz
+      - 256 Kb
+      - 32 Kb
+
+ng-beacon
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``ng_beacon``
+      - `ng-beacon <https://github.com/urish/ng-beacon>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
       - :ref:`Yes <piodebug>`
       - NRF51822

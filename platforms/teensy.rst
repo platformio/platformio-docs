@@ -142,7 +142,7 @@ Teensy
     * - ``teensy35``
       - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html>`_
       - :ref:`Teensy <platform_teensy>`
-      - 
+      - :ref:`Yes <piodebug>`
       - MK64FX512
       - 120 MHz
       - 512 Kb
@@ -151,7 +151,7 @@ Teensy
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html>`_
       - :ref:`Teensy <platform_teensy>`
-      - 
+      - :ref:`Yes <piodebug>`
       - MK66FX1M0
       - 180 MHz
       - 1024 Kb

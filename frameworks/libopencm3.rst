@@ -17,7 +17,7 @@ libOpenCM3
 
 The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
 
-For more detailed information please visit `vendor site <http://www.libopencm3.org/wiki/Main_Page>`_.
+For more detailed information please visit `vendor site <http://www.libopencm3.org/>`_.
 
 
 .. contents:: Contents
@@ -44,6 +44,30 @@ Boards
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
+
+1BitSquared
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``1bitsy_stm32f415rgt``
+      - `1Bitsy <http://1bitsy.org>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F415RGT
+      - 168 MHz
+      - 1024 Kb
+      - 128 Kb
 
 ST
 ~~

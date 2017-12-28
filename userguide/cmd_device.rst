@@ -33,7 +33,9 @@ Usage
 Description
 ~~~~~~~~~~~
 
-List available `Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_
+List available devices.
+Default is set to ``--serial`` and all available
+`Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_ will be shown.
 
 Options
 ~~~~~~~
@@ -41,9 +43,25 @@ Options
 .. program:: platformio device list
 
 .. option::
+    --serial
+
+List available `Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_,
+default.
+
+.. option::
+    --logical
+
+List available logical devices.
+
+.. option::
+    --mdns
+
+List multicast DNS services.
+
+.. option::
     --json-output
 
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 
 
 Examples
@@ -79,6 +97,56 @@ Examples
     ----------
     Hardware ID: USB VID:PID=10C4:EA60 SNR=0001
     Description: Silicon Labs CP210x USB to UART Bridge (COM3)
+
+
+3. List multicast DNS services and logical devices
+
+.. code-block:: bash
+
+    $ platformio device list --mdns --logical
+    Multicast DNS Services
+    ======================
+
+    PlatformIO._bttremote._tcp.local.
+    ------------------------------
+    Type: _bttremote._tcp.local.
+    IP: ...
+    Port: 62941
+    Properties: ...
+
+    Time for PlatformIO._adisk._tcp.local.
+    ---------------------------------
+    Type: _adisk._tcp.local.
+    IP: 192.168.0.1
+    Port: 9
+    Properties: ...
+
+    PlatformIO._ssh._tcp.local.
+    ------------------------
+    Type: _ssh._tcp.local.
+    IP: ...
+    Port: 22
+
+    PlatformIO._sftp-ssh._tcp.local.
+    -----------------------------
+    Type: _sftp-ssh._tcp.local.
+    IP: ...
+    Port: 22
+
+
+    Logical Devices
+    ===============
+    /
+    -
+    Name:
+
+    /Volumes/PIO
+    -------------
+    Name: PIO
+
+    /Volumes/PLUS
+    --------------
+    Name: PLUS
 
 
 .. _cmd_device_monitor:

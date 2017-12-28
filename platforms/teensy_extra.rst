@@ -44,5 +44,5 @@ All project examples are located in PlatformIO repository
 `Examples for Teensy platform <https://github.com/platformio/platformio-examples/tree/develop/teensy>`_.
 
 * `Wiring Blink <https://github.com/platformio/platformio-examples/tree/develop/wiring-blink>`_
-* `HID Mouse <https://github.com/platformio/platformio-examples/tree/develop/teensy/teensy-hid-usb-mouse>`_
-* `Chat Server <https://github.com/platformio/platformio-examples/tree/develop/teensy/teensy-internal-libs>`_
+* `HID Mouse <https://github.com/platformio/platformio-examples/tree/develop/teensy/hid-usb-mouse>`_
+* `Internal Libs <https://github.com/platformio/platformio-examples/tree/develop/teensy/internal-libs>`_

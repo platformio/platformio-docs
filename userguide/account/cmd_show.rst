@@ -27,7 +27,7 @@ Usage
 Description
 -----------
 
-Show detailed information about :ref:`cmd_account`:
+Show detailed information about :ref:`pioaccount`:
 
 * Active groups and expiration
 * Group permissions

@@ -21,15 +21,12 @@ workspace server comes with a RESTful webservice and provides high flexibility.
 It also contains a SDK which can be used to create plug-ins for languages,
 frameworks or tools.
 
-.. tip::
-  **QUESTIONS? Ask us!** Chat button is located in the bottom right corner
-
 .. contents::
 
 .. note::
 
-    1. Please make sure to read :ref:`pio_remote` guide first.
-    2. You need :ref:`cmd_account` if you don't have it. Registration is FREE.
+    1. Please make sure to read :ref:`pioremote` guide first.
+    2. You need :ref:`pioaccount` if you don't have it. Registration is FREE.
     3. You should have a running :ref:`cmd_remote_agent` on a remote machine
        where hardware devices are connected physically or accessible for the
        remote operations. See **PIO Remote** :ref:`pio_remote_quickstart` for details.
@@ -55,7 +52,7 @@ Integration
 
 .. image:: ../_static/ide/eclipseche/ide-eclipseche-new-workspace.png
 
-4.  Using opened Terminal, please log in to :ref:`cmd_account` using
+4.  Using opened Terminal, please log in to :ref:`pioaccount` using
     :ref:`cmd_account_login` command.
 
 

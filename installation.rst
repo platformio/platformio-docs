@@ -16,13 +16,11 @@ Installation
 
 .. note::
 
-    Please note that you do not need to install **PlatformIO Core** if you
-    are going to use :ref:`pioide`. **PlatformIO Core** is built into
+    Please note that you no need to install :ref:`piocore` if you are going
+    to use :ref:`pioide`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    Also, PlatformIO IDE allows to install :ref:`piocore` Shell Commands
-    (``pio``, ``platformio``) globally to your system via
-    ``Menu: PlatformIO > Install Shell Commands``.
+    If you need :ref:`piocore` outside PlatformIO IDE, please :ref:`faq_install_shell_commands`.
 
 **PlatformIO Core** is written in `Python 2.7 <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
@@ -118,14 +116,14 @@ To install or upgrade *PlatformIO* paste that at a *Terminal* prompt
 
 .. code-block:: bash
 
-    python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
+    python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
 
 
 Local Download (Mac / Linux / Windows)
 ''''''''''''''''''''''''''''''''''''''
 
 To install or upgrade *PlatformIO*, download (save as...)
-`get-platformio.py <https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py>`_
+`get-platformio.py <https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py>`_
 script. Then run the following (**MAY require** administrator access ``sudo``):
 
 .. code-block:: bash
@@ -190,7 +188,7 @@ For upgrading ``platformio`` to the latest version:
 .. _installation_develop:
 
 Development Version
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 .. warning::
     If you use :ref:`pioide`, please enable development version:
