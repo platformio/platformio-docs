@@ -9,12 +9,14 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. |PIOCORE| replace:: **PlatformIO Core**
+
 .. _piocore:
 
 PlatformIO Core
 ===============
 
-**PlatformIO Core** is a heart of whole PlatformIO ecosystem and consists of
+|PIOCORE| (CLI tool) is a heart of whole PlatformIO ecosystem and consists of
 
 * Multi-platform Build System
 * Development platform and package managers
@@ -23,7 +25,7 @@ PlatformIO Core
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * Integration components (:ref:`ide` and :ref:`ci`).
 
-**PlatformIO Core** is written in `Python 2.7 <https://www.python.org/downloads/>`_
+|PIOCORE| is written in `Python 2.7 <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
 computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `BeagleBone <http://beagleboard.org>`_,
@@ -31,23 +33,20 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `Samsung ARTIK <https://www.artik.io>`_, etc.).
 
 
-**PlatformIO Core** provides a rich and documented Command Line Interface (CLI).
+|PIOCORE| provides a rich and documented Command Line Interface (CLI).
 The other PlatformIO-based software and IDEs are based on **PlatformIO Core CLI**,
-such as :ref:`pioide`. In other words, they wrap **PlatformIO Core** with own GUI.
+such as :ref:`pioide`. In other words, they wrap |PIOCORE| with own GUI.
 
 .. note::
 
-    Please note that you do not need to install **PlatformIO Core** if you
-    are going to use :ref:`pioide`. **PlatformIO Core** is built into
+    Please note that you no need to install |PIOCORE| if you are going
+    to use :ref:`pioide`. |PIOCORE| is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    Also, PlatformIO IDE allows to install :ref:`piocore` Shell Commands
-    (``pio``, ``platformio``) globally to your system via
-    ``Menu: PlatformIO > Install Shell Commands``.
+    If you need |PIOCORE| outside PlatformIO IDE, please :ref:`faq_install_shell_commands`.
 
 .. toctree::
     :maxdepth: 2
-
 
     userguide/demo
     installation

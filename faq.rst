@@ -79,8 +79,8 @@ on the "Customize" stage, otherwise ``python`` command will not be available.
 
 .. _faq_install_shell_commands:
 
-Install PIO Core Shell Commands
--------------------------------
+Install PlatformIO Core Shell Commands
+--------------------------------------
 
 :ref:`piocore` consists of 2 standalone tools in a system:
 

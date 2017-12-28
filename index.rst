@@ -34,6 +34,7 @@ Contents
 
     ide/pioide
     core
+    home/index
     tutorials/index
 
 .. toctree::

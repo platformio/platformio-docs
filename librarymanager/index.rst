@@ -22,8 +22,7 @@ up-to-date. PlatformIO Library Manager supports
 
 -------
 
-:ref:`pioide` has built-in **PIO Home: Library Manager** with a friendly GUI.
-It allows:
+:ref:`pioide` has built-in :ref:`piohome` with a modern GUI which allows:
 
 * Search for new libraries in PlatformIO Registry
 * "1-click" library installation, per-project libraries, extra storages

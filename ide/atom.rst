@@ -253,8 +253,7 @@ Each button contains hint (delay mouse on it).
 
 .. image:: ../_static/ide/atom/ide-atom-toolbar.png
 
-* PlatformIO: Home (:ref:`pioaccount`, library and platform managers, board explorer,
-  and many more...)
+* :ref:`piohome`
 * PlatformIO: Build
 * PlatformIO: Upload
 * PlatformIO: Clean
