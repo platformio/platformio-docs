@@ -16,8 +16,8 @@
 PlatformIO Home
 ===============
 
-|PIOHOME| allows you to interact with PlatformIO ecosystem using modern GUI.
-It's very useful to manage:
+|PIOHOME| allows you to interact with PlatformIO ecosystem using modern and
+cross-platform GUI:
 
 * PlatformIO Projects
 * :ref:`pioaccount`
