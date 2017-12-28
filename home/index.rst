@@ -66,7 +66,7 @@ Library Manager
 
 .. image:: ../_static/home/pio-home-library-stats.png
 
-Boards Explorer
-~~~~~~~~~~~~~~~
+Board Explorer
+~~~~~~~~~~~~~~
 
 .. image:: ../_static/home/pio-home-boards.png
