@@ -281,6 +281,15 @@ Please upgrade *SetupTools* package:
 Building
 ~~~~~~~~
 
+UnicodeWarning: Unicode equal comparison failed
+'''''''''''''''''''''''''''''''''''''''''''''''
+
+Full warning message is "UnicodeWarning: Unicode equal comparison failed to
+convert both arguments to Unicode - interpreting them as being unequal".
+
+**KNOWN ISSUE**. Please move your project to a folder which full path does not
+contain non-ASCII chars.
+
 UnicodeDecodeError: Non-ASCII characters found in build environment
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
