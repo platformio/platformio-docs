@@ -31,7 +31,7 @@ cross-platform GUI:
 Installation
 ------------
 
-You no need to install |PIOHOME| separately, it's already built-in in
+You do not need to install |PIOHOME| separately, it's already built-in in
 :ref:`pioide` and :ref:`piocore`.
 
 Quick Start
