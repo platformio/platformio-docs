@@ -16,7 +16,7 @@ Installation
 
 .. note::
 
-    Please note that you no need to install :ref:`piocore` if you are going
+    Please note that you do not need to install :ref:`piocore` if you are going
     to use :ref:`pioide`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
