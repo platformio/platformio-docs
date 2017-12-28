@@ -40,7 +40,7 @@ Quick Start
 PlatformIO IDE
 ~~~~~~~~~~~~~~
 
-For :ref:`pioide`: please open |PIOHOME| using (HOME) button on PIO Toolbar:
+Please open |PIOHOME| using (HOME) button on PIO Toolbar:
 
 * **Atom**: :ref:`atom_ide_platformio_toolbar`
 * **VSCode**: :ref:`ide_vscode_toolbar`
