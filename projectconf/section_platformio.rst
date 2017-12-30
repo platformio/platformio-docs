@@ -196,10 +196,10 @@ will be extra applied automatically for all ``[env:]`` sections.
 
 For the possible values and examples please follow to :ref:`projectconf_lib_extra_dirs`.
 
-.. _projectconf_pio_envs_dir:
+.. _projectconf_pio_build_dir:
 
-``envs_dir``
-^^^^^^^^^^^^
+``build_dir``
+^^^^^^^^^^^^^
 
 .. warning::
     **PLEASE DO NOT EDIT FILES IN THIS FOLDER**. PlatformIO will overwrite
@@ -214,11 +214,11 @@ fast!
 then PlatformIO will remove this folder automatically. It will be created on the
 next build operation.
 
-A default value is ``.pioenvs`` that means that folder is located in the root of
+A default value is ``build`` that means that folder is located in the root of
 project.
 
 This option can be overridden by global environment variable
-:envvar:`PLATFORMIO_ENVS_DIR`.
+:envvar:`PLATFORMIO_BUILD_DIR`.
 
 .. note::
     If you have any problems with building your Project environments which

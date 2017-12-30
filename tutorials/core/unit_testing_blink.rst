@@ -192,28 +192,28 @@ Test results
     Collected 34 compatible libraries
     Looking for dependencies...
     Project does not have dependencies
-    Compiling .pioenvs/nodemcu/src/main.o
-    Compiling .pioenvs/nodemcu/test/output_export.o
-    Compiling .pioenvs/nodemcu/test/test_main.o
-    Compiling .pioenvs/nodemcu/UnityTestLib/unity.o
-    Archiving .pioenvs/nodemcu/libFrameworkArduinoVariant.a
-    Indexing .pioenvs/nodemcu/libFrameworkArduinoVariant.a
-    Compiling .pioenvs/nodemcu/FrameworkArduino/Esp.o
-    Compiling .pioenvs/nodemcu/FrameworkArduino/FS.o
-    Compiling .pioenvs/nodemcu/FrameworkArduino/HardwareSerial.o
-    Compiling .pioenvs/nodemcu/FrameworkArduino/IPAddress.o
-    Archiving .pioenvs/nodemcu/libUnityTestLib.a
-    Indexing .pioenvs/nodemcu/libUnityTestLib.a
-    Compiling .pioenvs/nodemcu/FrameworkArduino/MD5Builder.o
+    Compiling build/nodemcu/src/main.o
+    Compiling build/nodemcu/test/output_export.o
+    Compiling build/nodemcu/test/test_main.o
+    Compiling build/nodemcu/UnityTestLib/unity.o
+    Archiving build/nodemcu/libFrameworkArduinoVariant.a
+    Indexing build/nodemcu/libFrameworkArduinoVariant.a
+    Compiling build/nodemcu/FrameworkArduino/Esp.o
+    Compiling build/nodemcu/FrameworkArduino/FS.o
+    Compiling build/nodemcu/FrameworkArduino/HardwareSerial.o
+    Compiling build/nodemcu/FrameworkArduino/IPAddress.o
+    Archiving build/nodemcu/libUnityTestLib.a
+    Indexing build/nodemcu/libUnityTestLib.a
+    Compiling build/nodemcu/FrameworkArduino/MD5Builder.o
     ...
-    Compiling .pioenvs/nodemcu/FrameworkArduino/umm_malloc/umm_malloc.o
-    Archiving .pioenvs/nodemcu/libFrameworkArduino.a
-    Indexing .pioenvs/nodemcu/libFrameworkArduino.a
-    Linking .pioenvs/nodemcu/firmware.elf
-    Calculating size .pioenvs/nodemcu/firmware.elf
+    Compiling build/nodemcu/FrameworkArduino/umm_malloc/umm_malloc.o
+    Archiving build/nodemcu/libFrameworkArduino.a
+    Indexing build/nodemcu/libFrameworkArduino.a
+    Linking build/nodemcu/firmware.elf
+    Calculating size build/nodemcu/firmware.elf
     text       data     bss     dec     hex filename
-    223500     2408   29536  255444   3e5d4 .pioenvs/nodemcu/firmware.elf
-    Building .pioenvs/nodemcu/firmware.bin
+    223500     2408   29536  255444   3e5d4 build/nodemcu/firmware.elf
+    Building build/nodemcu/firmware.bin
 
     ============================== [test::*] Uploading... (2/3) ==============================
     [Wed Sep  7 15:17:01 2016] Processing nodemcu (platform: espressif8266, board: nodemcu, framework: arduino)
@@ -222,17 +222,17 @@ Test results
     Collected 34 compatible libraries
     Looking for dependencies...
     Project does not have dependencies
-    Linking .pioenvs/nodemcu/firmware.elf
-    Checking program size .pioenvs/nodemcu/firmware.elf
+    Linking build/nodemcu/firmware.elf
+    Checking program size build/nodemcu/firmware.elf
     text       data     bss     dec     hex filename
-    223500     2408   29536  255444   3e5d4 .pioenvs/nodemcu/firmware.elf
-    Calculating size .pioenvs/nodemcu/firmware.elf
+    223500     2408   29536  255444   3e5d4 build/nodemcu/firmware.elf
+    Calculating size build/nodemcu/firmware.elf
     text       data     bss     dec     hex filename
-    223500     2408   29536  255444   3e5d4 .pioenvs/nodemcu/firmware.elf
+    223500     2408   29536  255444   3e5d4 build/nodemcu/firmware.elf
     Looking for upload port...
     Auto-detected: /dev/cu.SLAB_USBtoUART
-    Uploading .pioenvs/nodemcu/firmware.bin
-    Uploading 230064 bytes from .pioenvs/nodemcu/firmware.bin to flash at 0x00000000
+    Uploading build/nodemcu/firmware.bin
+    Uploading 230064 bytes from build/nodemcu/firmware.bin to flash at 0x00000000
     ................................................................................ [ 35% ]
     ................................................................................ [ 71% ]
     .................................................................                [ 100% ]

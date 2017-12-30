@@ -29,11 +29,6 @@ What is PlatformIO?
 
 Please refer to :ref:`what_is_pio`
 
-What is ``.pioenvs`` directory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Please refer to :ref:`projectconf_pio_envs_dir`.
-
 Command completion in Terminal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
