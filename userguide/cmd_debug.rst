@@ -85,24 +85,24 @@ Examples
     Collected 26 compatible libraries
     Looking for dependencies...
     Project does not have dependencies
-    Compiling build/mzeropro/src/main.o
-    Compiling build/mzeropro/FrameworkArduinoVariant/variant.o
-    Compiling build/mzeropro/FrameworkArduino/IPAddress.o
-    Compiling build/mzeropro/FrameworkArduino/Print.o
-    Archiving build/mzeropro/libFrameworkArduinoVariant.a
-    Indexing build/mzeropro/libFrameworkArduinoVariant.a
+    Compiling .pioenvs/mzeropro/src/main.o
+    Compiling .pioenvs/mzeropro/FrameworkArduinoVariant/variant.o
+    Compiling .pioenvs/mzeropro/FrameworkArduino/IPAddress.o
+    Compiling .pioenvs/mzeropro/FrameworkArduino/Print.o
+    Archiving .pioenvs/mzeropro/libFrameworkArduinoVariant.a
+    Indexing .pioenvs/mzeropro/libFrameworkArduinoVariant.a
     ...
-    Compiling build/mzeropro/FrameworkArduino/wiring_analog.o
-    Compiling build/mzeropro/FrameworkArduino/wiring_digital.o
-    Compiling build/mzeropro/FrameworkArduino/wiring_private.o
-    Compiling build/mzeropro/FrameworkArduino/wiring_shift.o
-    Archiving build/mzeropro/libFrameworkArduino.a
-    Indexing build/mzeropro/libFrameworkArduino.a
-    Linking build/mzeropro/firmware.elf
-    Calculating size build/mzeropro/firmware.elf
-    Building build/mzeropro/firmware.bin
+    Compiling .pioenvs/mzeropro/FrameworkArduino/wiring_analog.o
+    Compiling .pioenvs/mzeropro/FrameworkArduino/wiring_digital.o
+    Compiling .pioenvs/mzeropro/FrameworkArduino/wiring_private.o
+    Compiling .pioenvs/mzeropro/FrameworkArduino/wiring_shift.o
+    Archiving .pioenvs/mzeropro/libFrameworkArduino.a
+    Indexing .pioenvs/mzeropro/libFrameworkArduino.a
+    Linking .pioenvs/mzeropro/firmware.elf
+    Calculating size .pioenvs/mzeropro/firmware.elf
+    Building .pioenvs/mzeropro/firmware.bin
     text       data     bss     dec     hex filename
-    11512       256    1788   13556    34f4 build/mzeropro/firmware.elf
+    11512       256    1788   13556    34f4 .pioenvs/mzeropro/firmware.elf
     =========================== [SUCCESS] Took 7.82 seconds ===========================
 
 2. Launch GDB instance and load initial configuration per a project

@@ -92,6 +92,35 @@ Example:
     [platformio]
     home_dir = /path/to/custom/pio/storage
 
+.. _projectconf_pio_build_dir:
+
+``build_dir``
+^^^^^^^^^^^^^
+
+.. warning::
+    **PLEASE DO NOT EDIT FILES IN THIS FOLDER**. PlatformIO will overwrite
+    your changes on the next build. **THIS IS A CACHE DIRECTORY**.
+
+*PlatformIO Build System* uses this folder for project
+environments to store compiled object files, static libraries, firmwares and
+other cached information. It allows PlatformIO to build source code extremely
+fast!
+
+*You can delete this folder without any risk!* If you modify :ref:`projectconf`,
+then PlatformIO will remove this folder automatically. It will be created on the
+next build operation.
+
+A default value is ``.pioenvs`` that means that folder is located in the root of
+project.
+
+This option can be overridden by global environment variable
+:envvar:`PLATFORMIO_BUILD_DIR`.
+
+.. note::
+    If you have any problems with building your Project environments which
+    are defined in :ref:`projectconf`, then **TRY TO DELETE** this folder. In
+    this situation you will remove all cached files without any risk.
+
 .. _projectconf_pio_include_dir:
 
 ``include_dir``
@@ -195,35 +224,6 @@ difference is that the option which is defined in ``[platofrmio]`` section
 will be extra applied automatically for all ``[env:]`` sections.
 
 For the possible values and examples please follow to :ref:`projectconf_lib_extra_dirs`.
-
-.. _projectconf_pio_build_dir:
-
-``build_dir``
-^^^^^^^^^^^^^
-
-.. warning::
-    **PLEASE DO NOT EDIT FILES IN THIS FOLDER**. PlatformIO will overwrite
-    your changes on the next build. **THIS IS A CACHE DIRECTORY**.
-
-*PlatformIO Build System* uses this folder for project
-environments to store compiled object files, static libraries, firmwares and
-other cached information. It allows PlatformIO to build source code extremely
-fast!
-
-*You can delete this folder without any risk!* If you modify :ref:`projectconf`,
-then PlatformIO will remove this folder automatically. It will be created on the
-next build operation.
-
-A default value is ``build`` that means that folder is located in the root of
-project.
-
-This option can be overridden by global environment variable
-:envvar:`PLATFORMIO_BUILD_DIR`.
-
-.. note::
-    If you have any problems with building your Project environments which
-    are defined in :ref:`projectconf`, then **TRY TO DELETE** this folder. In
-    this situation you will remove all cached files without any risk.
 
 .. _projectconf_pio_data_dir:
 

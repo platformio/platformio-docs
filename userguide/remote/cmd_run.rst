@@ -126,41 +126,41 @@ Example
     Collected 25 compatible libraries
     Looking for dependencies...
     Project does not have dependencies
-    Compiling build/uno/src/main.o
-    Archiving build/uno/libFrameworkArduinoVariant.a
-    Indexing build/uno/libFrameworkArduinoVariant.a
-    Compiling build/uno/FrameworkArduino/CDC.o
-    Compiling build/uno/FrameworkArduino/HardwareSerial.o
-    Compiling build/uno/FrameworkArduino/HardwareSerial0.o
-    Compiling build/uno/FrameworkArduino/HardwareSerial1.o
-    Compiling build/uno/FrameworkArduino/HardwareSerial2.o
-    Compiling build/uno/FrameworkArduino/HardwareSerial3.o
-    Compiling build/uno/FrameworkArduino/IPAddress.o
-    Compiling build/uno/FrameworkArduino/PluggableUSB.o
-    Compiling build/uno/FrameworkArduino/Print.o
-    Compiling build/uno/FrameworkArduino/Stream.o
-    Compiling build/uno/FrameworkArduino/Tone.o
-    Compiling build/uno/FrameworkArduino/USBCore.o
-    Compiling build/uno/FrameworkArduino/WInterrupts.o
-    Compiling build/uno/FrameworkArduino/WMath.o
-    Compiling build/uno/FrameworkArduino/WString.o
-    Compiling build/uno/FrameworkArduino/_wiring_pulse.o
-    Compiling build/uno/FrameworkArduino/abi.o
-    Compiling build/uno/FrameworkArduino/hooks.o
-    Compiling build/uno/FrameworkArduino/main.o
-    Compiling build/uno/FrameworkArduino/new.o
-    Compiling build/uno/FrameworkArduino/wiring.o
-    Compiling build/uno/FrameworkArduino/wiring_analog.o
-    Compiling build/uno/FrameworkArduino/wiring_digital.o
-    Compiling build/uno/FrameworkArduino/wiring_pulse.o
-    Compiling build/uno/FrameworkArduino/wiring_shift.o
-    Archiving build/uno/libFrameworkArduino.a
-    Indexing build/uno/libFrameworkArduino.a
-    Linking build/uno/firmware.elf
+    Compiling .pioenvs/uno/src/main.o
+    Archiving .pioenvs/uno/libFrameworkArduinoVariant.a
+    Indexing .pioenvs/uno/libFrameworkArduinoVariant.a
+    Compiling .pioenvs/uno/FrameworkArduino/CDC.o
+    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial.o
+    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial0.o
+    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial1.o
+    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial2.o
+    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial3.o
+    Compiling .pioenvs/uno/FrameworkArduino/IPAddress.o
+    Compiling .pioenvs/uno/FrameworkArduino/PluggableUSB.o
+    Compiling .pioenvs/uno/FrameworkArduino/Print.o
+    Compiling .pioenvs/uno/FrameworkArduino/Stream.o
+    Compiling .pioenvs/uno/FrameworkArduino/Tone.o
+    Compiling .pioenvs/uno/FrameworkArduino/USBCore.o
+    Compiling .pioenvs/uno/FrameworkArduino/WInterrupts.o
+    Compiling .pioenvs/uno/FrameworkArduino/WMath.o
+    Compiling .pioenvs/uno/FrameworkArduino/WString.o
+    Compiling .pioenvs/uno/FrameworkArduino/_wiring_pulse.o
+    Compiling .pioenvs/uno/FrameworkArduino/abi.o
+    Compiling .pioenvs/uno/FrameworkArduino/hooks.o
+    Compiling .pioenvs/uno/FrameworkArduino/main.o
+    Compiling .pioenvs/uno/FrameworkArduino/new.o
+    Compiling .pioenvs/uno/FrameworkArduino/wiring.o
+    Compiling .pioenvs/uno/FrameworkArduino/wiring_analog.o
+    Compiling .pioenvs/uno/FrameworkArduino/wiring_digital.o
+    Compiling .pioenvs/uno/FrameworkArduino/wiring_pulse.o
+    Compiling .pioenvs/uno/FrameworkArduino/wiring_shift.o
+    Archiving .pioenvs/uno/libFrameworkArduino.a
+    Indexing .pioenvs/uno/libFrameworkArduino.a
+    Linking .pioenvs/uno/firmware.elf
     Checking program size
-    Building build/uno/firmware.hex
+    Building .pioenvs/uno/firmware.hex
     text       data     bss     dec     hex filename
-    2574         48     168    2790     ae6 build/uno/firmware.elf
+    2574         48     168    2790     ae6 .pioenvs/uno/firmware.elf
     ========================= [SUCCESS] Took 10.01 seconds =======================
     ================================== [SUMMARY] =================================
     Environment nodemcuv2   [SKIP]
@@ -174,17 +174,17 @@ Example
     Verbose mode can be enabled via `-v, --verbose` option
     Looking for upload port...
     Auto-detected: /dev/cu.usbmodemFA1431
-    Uploading build/uno/firmware.hex
+    Uploading .pioenvs/uno/firmware.hex
     avrdude: AVR device initialized and ready to accept instructions
     Reading | ################################################## | 100% 0.00s
     avrdude: Device signature = 0x1e950f
-    avrdude: reading input file "build/uno/firmware.hex"
+    avrdude: reading input file ".pioenvs/uno/firmware.hex"
     avrdude: writing flash (2622 bytes):
     Writing | ################################################## | 100% 0.43s
     avrdude: 2622 bytes of flash written
-    avrdude: verifying flash memory against build/uno/firmware.hex:
-    avrdude: load data flash data from input file build/uno/firmware.hex:
-    avrdude: input file build/uno/firmware.hex contains 2622 bytes
+    avrdude: verifying flash memory against .pioenvs/uno/firmware.hex:
+    avrdude: load data flash data from input file .pioenvs/uno/firmware.hex:
+    avrdude: input file .pioenvs/uno/firmware.hex contains 2622 bytes
     avrdude: reading on-chip flash data:
     Reading | ################################################## | 100% 0.34s
     avrdude: verifying ...
