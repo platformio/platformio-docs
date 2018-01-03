@@ -87,6 +87,88 @@ Take a look at the multiple snippets/answers for the user questions:
   - `#351 Specific reset method for ESP8266 <https://github.com/platformio/platformio-core/issues/351#issuecomment-161789165>`_
   - `#247 Specific options for avrdude <https://github.com/platformio/platformio-core/issues/247#issuecomment-118169728>`_.
 
+Before/Pre and After/Post actions
+'''''''''''''''''''''''''''''''''
+
+PlatformIO Build System has rich API that allows to attach different pre-/post
+actions (hooks) using ``env.AddPreAction(target, callback)`` or
+``env.AddPreAction(target, [callback1, callback2, ...])`` function. A first
+argument ``target`` can be a name of target that is passed using
+:option:`platformio run --target` command, a name of built-in targets
+(buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or path
+to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
+
+
+**Examples**
+
+``extra_script.py`` file is located on the same level as ``platformio.ini``.
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:pre_and_post_hooks]
+    extra_scripts = extra_script.py
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    Import("env")
+
+    #
+    # Dump build environment (for debug)
+    # print env.Dump()
+    #
+
+    #
+    # Upload actions
+    #
+
+    def before_upload(source, target, env):
+        print "before_upload"
+        # do some actions
+
+
+    def after_upload(source, target, env):
+        print "after_upload"
+        # do some actions
+
+    print "Current build targets", map(str, BUILD_TARGETS)
+
+    env.AddPreAction("upload", before_upload)
+    env.AddPostAction("upload", after_upload)
+
+    #
+    # Custom actions when building program/firmware
+    #
+
+    env.AddPreAction("buildprog", callback...)
+    env.AddPostAction("buildprog", callback...)
+
+    #
+    # Custom actions for specific files/objects
+    #
+
+    env.AddPreAction("$BUILD_DIR/${PROGNAME}.elf", [callback1, callback2,...])
+    env.AddPostAction("$BUILD_DIR/${PROGNAME}.hex", callback...)
+
+    # custom action before building SPIFFS image. For example, compress HTML, etc.
+    env.AddPreAction("$BUILD_DIR/spiffs.bin", callback...)
+
+    # custom action for project's main.cpp
+    env.AddPostAction("$BUILD_DIR/src/main.cpp.o", callback...)
+
+    # Custom HEX from ELF
+    env.AddPostAction(
+        "$BUILD_DIR/${PROGNAME}.elf",
+        env.VerboseAction(" ".join([
+            "$OBJCOPY", "-O", "ihex", "-R", ".eeprom",
+            "$BUILD_DIR/${PROGNAME}.elf", "$BUILD_DIR/${PROGNAME}.hex"
+        ]), "Building $BUILD_DIR/${PROGNAME}.hex")
+    )
+
+
 Extra Linker Flags without ``-Wl,`` prefix
 ''''''''''''''''''''''''''''''''''''''''''
 
@@ -153,28 +235,21 @@ Example, specify own upload command for :ref:`platform_atmelavr`:
     # uncomment line below to see environment variables
     # print ARGUMENTS
 
-Before/Pre and After/Post actions
-'''''''''''''''''''''''''''''''''
+Custom firmware/program name
+''''''''''''''''''''''''''''
 
-PlatformIO Build System has rich API that allows to attach different pre-/post
-actions (hooks) using ``env.AddPreAction(target, callback)`` or
-``env.AddPreAction(target, [callback1, callback2, ...])`` function. A first
-argument ``target`` can be a name of target that is passed using
-:option:`platformio run --target` command, a name of built-in targets
-(buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or path
-to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
-
-
-**Examples**
-
-``extra_script.py`` file is located on the same level as ``platformio.ini``.
+Sometime is useful to have a different firmware/program name in
+:ref:`projectconf_pio_build_dir`.
 
 ``platformio.ini``:
 
 .. code-block:: ini
 
-    [env:pre_and_post_hooks]
-    extra_scripts = extra_script.py
+    [env:env_custom_prog_name]
+    platform = espressif8266
+    board = nodemcuv2
+    framework = arduino
+    extra_scripts = pre:extra_script.py
 
 ``extra_script.py``:
 
@@ -182,54 +257,6 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
     Import("env")
 
-    #
-    # Dump build environment (for debug)
-    # print env.Dump()
-    #
+    build_tag = "v13"  # you can automate it
 
-    #
-    # Upload actions
-    #
-
-    def before_upload(source, target, env):
-        print "before_upload"
-        # do some actions
-
-
-    def after_upload(source, target, env):
-        print "after_upload"
-        # do some actions
-
-    print "Current build targets", map(str, BUILD_TARGETS)
-
-    env.AddPreAction("upload", before_upload)
-    env.AddPostAction("upload", after_upload)
-
-    #
-    # Custom actions when building program/firmware
-    #
-
-    env.AddPreAction("buildprog", callback...)
-    env.AddPostAction("buildprog", callback...)
-
-    #
-    # Custom actions for specific files/objects
-    #
-
-    env.AddPreAction("$BUILD_DIR/firmware.elf", [callback1, callback2,...])
-    env.AddPostAction("$BUILD_DIR/firmware.hex", callback...)
-
-    # custom action before building SPIFFS image. For example, compress HTML, etc.
-    env.AddPreAction("$BUILD_DIR/spiffs.bin", callback...)
-
-    # custom action for project's main.cpp
-    env.AddPostAction("$BUILD_DIR/src/main.cpp.o", callback...)
-
-    # Custom HEX from ELF
-    env.AddPostAction(
-        "$BUILD_DIR/firmware.elf",
-        env.VerboseAction(" ".join([
-            "$OBJCOPY", "-O", "ihex", "-R", ".eeprom",
-            "$BUILD_DIR/firmware.elf", "$BUILD_DIR/firmware.hex"
-        ]), "Building $BUILD_DIR/firmware.hex")
-    )
+    env.Replace(PROGNAME="firmware_%s" % build_tag)
