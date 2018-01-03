@@ -159,15 +159,6 @@ Espressif
       - 512 Kb
       - 80 Kb
 
-    * - ``esp01_1m``
-      - `Espressif Generic ESP8266 ESP-01 1M <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
-      - ESP8266
-      - 80 MHz
-      - 1024 Kb
-      - 80 Kb
-
     * - ``esp12e``
       - `Espressif ESP8266 ESP-12E <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`

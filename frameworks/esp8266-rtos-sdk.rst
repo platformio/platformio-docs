@@ -42,6 +42,30 @@ Boards
       `PlatformIO Boards Explorer <http://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
+4D Systems
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - Microcontroller
+      - Frequency
+      - Flash
+      - RAM
+
+    * - ``gen4iod``
+      - `4D Systems gen4 IoD Range <http://www.4dsystems.com.au/product/gen4_IoD/>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 512 Kb
+      - 80 Kb
+
 Adafruit
 ~~~~~~~~
 
@@ -246,7 +270,7 @@ Espressif
       - 
       - ESP8266
       - 80 MHz
-      - 1024 Kb
+      - 4096 Kb
       - 80 Kb
 
     * - ``phoenix_v2``
@@ -255,7 +279,7 @@ Espressif
       - 
       - ESP8266
       - 80 MHz
-      - 1024 Kb
+      - 4096 Kb
       - 80 Kb
 
     * - ``wifinfo``
@@ -264,7 +288,7 @@ Espressif
       - 
       - ESP8266
       - 80 MHz
-      - 448 Kb
+      - 1024 Kb
       - 80 Kb
 
 Heltec
@@ -478,7 +502,7 @@ WEMOS
       - RAM
 
     * - ``d1``
-      - `WEMOS D1 (Retired) <https://wiki.wemos.cc/products:d1:d1>`_
+      - `WEMOS D1 R1 (Retired) <https://wiki.wemos.cc/products:d1:d1>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 
       - ESP8266
@@ -487,10 +511,19 @@ WEMOS
       - 80 Kb
 
     * - ``d1_mini``
-      - `WEMOS D1 mini <https://wiki.wemos.cc/products:d1:d1_mini>`_
+      - `WeMos D1 R2 & mini <https://wiki.wemos.cc/products:d1:d1_mini>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - 
       - ESP8266
       - 80 MHz
       - 4096 Kb
+      - 80 Kb
+
+    * - ``d1_mini_pro``
+      - `WeMos D1 mini Pro <https://wiki.wemos.cc/products:d1:d1_mini>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - 
+      - ESP8266
+      - 80 MHz
+      - 16384 Kb
       - 80 Kb
