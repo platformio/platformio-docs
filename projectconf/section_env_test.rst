@@ -107,6 +107,14 @@ automatically.
 
 To print all available serial ports use :ref:`cmd_device_list` command.
 
+.. _projectconf_test_speed:
+
+``test_speed``
+--------------
+
+A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
+to communicate with a target device. Default is ``115200``.
+
 .. _projectconf_test_transport:
 
 ``test_transport``
@@ -118,7 +126,7 @@ by a :ref:`projectconf_env_framework`. For example, when
 ":ref:`projectconf_env_framework` = ``arduino``", the first available
 ``Serial`` will be used.
 
-Baud rate should be set to ``9600``.
+Default baudrate/speed is set to :ref:`projectconf_test_speed`.
 
 You can also define ``custom`` transport and implement its interface:
 
