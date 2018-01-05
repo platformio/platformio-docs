@@ -274,7 +274,7 @@ Temporary solution:
        cd path/to/platformio/project
 
        # b.Windows (please replace {username} with real user name)
-       C:\Users\{username}\.platformio\penv\Scripts\platformio.exe run -target upload
+       C:\Users\{username}\.platformio\penv\Scripts\platformio.exe run --target upload
 
        # b.Unix
        ~/.platformio/penv/bin/platformio run --target upload
