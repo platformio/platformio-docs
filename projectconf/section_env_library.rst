@@ -63,7 +63,7 @@ Example:
   lib_deps =
     13
     PubSubClient
-    Json@~5.6,!=5.4
+    ArduinoJson@~5.6,!=5.4
     https://github.com/gioblu/PJON.git#v2.0
     https://github.com/me-no-dev/ESPAsyncTCP.git
 
