@@ -201,18 +201,6 @@ The final ``Demo.cpp``:
     }
 
 
-PlatformIO IDE
---------------
-
-Please refer to :ref:`PlatformIO IDE Frequently Asked Questions <pioide>`.
-
-Before/Pre and After/Post build actions
----------------------------------------
-
-PlatformIO Build System has rich API that allows to attach different pre-/post
-actions (hooks). See features of :ref:`projectconf_extra_scripts` option for
-:ref:`projectconf`.
-
 .. _faq_troubleshooting:
 
 Troubleshooting
@@ -277,6 +265,78 @@ Please upgrade *SetupTools* package:
     # Then re-install PlatformIO
     [sudo] pip uninstall platformio
     [sudo] pip install platformio
+
+
+Package Manager
+~~~~~~~~~~~~~~~
+
+[Error 5] Access is denied
+''''''''''''''''''''''''''
+
+PlatformIO installs all packages to ":ref:`projectconf_pio_home_dir`/packages"
+directory. You **MUST HAVE** write access for this folder.
+Please note that **PlatformIO does not require** "sudo"/administrative privileges.
+
+.. contents::
+    :local:
+
+Solution 1: Remove folder
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A quick solution is to remove ":ref:`projectconf_pio_home_dir`/packages" folder
+and repeat installation/building/uploading again.
+
+Solution 2: Antivirus
+^^^^^^^^^^^^^^^^^^^^^
+
+Some antivirus tools forbid programs to create files in background.
+PlatformIO Package Manager does all work in background: downloads package,
+unpacks archive in temporary folder and moves final files to
+":ref:`projectconf_pio_home_dir`/packages" folder.
+
+Antivirus tool can block PlatformIO, that is why you see "[Error 5] Access is denied".
+Try to **disable it for a while** or add :ref:`projectconf_pio_home_dir`
+directory to exclusion/white list.
+
+Solution 3: Run from Terminal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As we mentioned in "Solution 2", antivirus tools can block background file
+system operations. Other solution is to run :ref:`piocore` from a system terminal.
+
+1. Open **System Terminal**, on Windows ``cmd.exe`` (not :ref:`pioide` Terminal)
+2. Build project and upload firmware using :ref:`piocore` which will download
+   and install all dependent packages:
+
+   .. code-block:: bash
+
+       # Change directory to PlatformIO Project where is located "platformio.ini"
+       cd path/to/platformio/project
+
+       # Force PlatformIO to install all tools
+       platformio run --target upload
+
+If "platformio" command is not globally available in your environment and you
+use :ref:`pioide`, please use built-in :ref:`piocore` which is located in:
+
+* Windows: ``C:\Users\{username}\.platformio\penv\Scripts\platformio``
+  Please replace ``{username}`` with a real user name
+* Unix: ``~/.platformio/penv/bin/platformio``
+
+
+.. note::
+    You can add ``platformio`` and ``pio`` commands to your system environment.
+    See :ref:`faq_install_shell_commands`.
+
+Solution 4: Manual
+^^^^^^^^^^^^^^^^^^
+
+If none of solutions above does not work for you, you can download and unpack
+all packages manually to ":ref:`projectconf_pio_home_dir`/packages".
+
+Please visit `PlatformIO Package Storage <https://bintray.com/platformio/dl-packages>`_
+and download a package for your platform.
+A correct package path is ":ref:`projectconf_pio_home_dir`/packages/{package_name}/package.json".
 
 Building
 ~~~~~~~~
