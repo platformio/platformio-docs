@@ -270,6 +270,8 @@ Please upgrade *SetupTools* package:
 Package Manager
 ~~~~~~~~~~~~~~~
 
+.. _faq_package_manager_error_5:
+
 [Error 5] Access is denied
 ''''''''''''''''''''''''''
 

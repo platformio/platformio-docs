@@ -262,22 +262,9 @@ PackageManager is unable to install tool
 This is a known bug in VSCode Terminal
 `issue #61 <https://github.com/platformio/platformio-vscode-ide/issues/61>`_.
 
-Temporary solution:
-
-1. Open **System Terminal** (on Windows ``cmd.exe``), not VSCode IDE Terminal
-2. Build project and upload firmware using :ref:`piocore` which will download
-   and install all dependencies and toolchain:
-
-   .. code-block:: bash
-
-       # a) Change directory to PlatformIO Project where is located "platformio.ini"
-       cd path/to/platformio/project
-
-       # b.Windows (please replace {username} with real user name)
-       C:\Users\{username}\.platformio\penv\Scripts\platformio.exe run --target upload
-
-       # b.Unix
-       ~/.platformio/penv/bin/platformio run --target upload
+A temporary solution is to install packages using a system terminal (not VSCode Terminal).
+Please use "Solution 3: Run from Terminal" in FAQ > Package Manager >
+:ref:`faq_package_manager_error_5`.
 
 Now, back to VSCode.
 
