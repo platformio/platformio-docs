@@ -249,6 +249,7 @@ Sometime is useful to have a different firmware/program name in
     platform = espressif8266
     board = nodemcuv2
     framework = arduino
+    build_flags = -D VERSION=13
     extra_scripts = pre:extra_script.py
 
 ``extra_script.py``:
@@ -257,6 +258,8 @@ Sometime is useful to have a different firmware/program name in
 
     Import("env")
 
-    build_tag = "v13"  # you can automate it
+    my_flags = env.ParseFlags(env['BUILD_FLAGS'])
+    defines = {k: v for (k, v) in my_flags.get("CPPDEFINES")}
+    # print defines
 
-    env.Replace(PROGNAME="firmware_%s" % build_tag)
+    env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
