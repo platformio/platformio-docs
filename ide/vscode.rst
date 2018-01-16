@@ -253,6 +253,12 @@ if you prefer to use custom version of :ref:`piocore`, default value is ``null``
 Update Terminal configuration with patched PATH environment, default value
 is ``true``.
 
+``platformio-ide.activateOnlyOnPlatformIOProject``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Activate extension only when PlatformIO-based project (with :ref:`projectconf`)
+is opened in workspace, default value is ``false``.
+
 Known issues
 ------------
 
