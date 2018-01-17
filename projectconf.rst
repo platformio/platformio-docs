@@ -27,6 +27,24 @@ Multi-values option could be specified in 2 ways:
 2. Use multi-line format, where each new line should start with 2 spaces
    (minimum)
 
+There are 2 system reserved sections:
+
+* :ref:`piocore` settings: :ref:`projectconf_section_platformio`
+* Environment settings: :ref:`projectconf_section_env`
+
+The other sections can be used by users, for example, for
+:ref:`projectconf_dynamic_vars`. The sections and their allowable values are
+described below.
+
+.. toctree::
+    :maxdepth: 2
+
+    [platformio] <projectconf/section_platformio>
+    [env] <projectconf/section_env>
+    projectconf/dynamic_variables
+    projectconf/examples
+
+
 **Example**
 
 .. code-block:: ini
@@ -101,20 +119,3 @@ Multi-values option could be specified in 2 ways:
 
     ; Unit Testing options
     test_ignore = test_desktop
-
-There are 2 system reserved sections:
-
-* :ref:`piocore` settings: :ref:`projectconf_section_platformio`
-* Environment settings: :ref:`projectconf_section_env`
-
-The other sections can be used by users, for example, for
-:ref:`projectconf_dynamic_vars`. The sections and their allowable values are
-described below.
-
-.. toctree::
-    :maxdepth: 2
-
-    [platformio] <projectconf/section_platformio>
-    [env] <projectconf/section_env>
-    projectconf/dynamic_variables
-    projectconf/examples
