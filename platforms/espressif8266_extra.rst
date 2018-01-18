@@ -87,17 +87,24 @@ Custom Flash Size
     information first.
 
 Available LD-scripts:
-https://github.com/platformio/platform-espressif8266/tree/develop/ldscripts
+https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld
 
-* ``esp8266.flash.512k0.ld`` 512K (no SPIFFS)
-* ``esp8266.flash.512k64.ld`` 512K (64K SPIFFS)
-* ``esp8266.flash.1m64.ld`` 1M (64K SPIFFS)
-* ``esp8266.flash.1m128.ld`` 1M (128K SPIFFS)
-* ``esp8266.flash.1m256.ld`` 1M (256K SPIFFS)
-* ``esp8266.flash.1m512.ld`` 1M (512K SPIFFS)
-* ``esp8266.flash.2m.ld`` 2M (1M SPIFFS)
-* ``esp8266.flash.4m1m.ld`` 4M (1M SPIFFS)
-* ``esp8266.flash.4m.ld`` 4M (3M SPIFFS)
+* ``eagle.flash.512k0.ld`` 512K (no SPIFFS)
+* ``eagle.flash.512k64.ld`` 512K (64K SPIFFS)
+* ``eagle.flash.512k128.ld`` 512K (128K SPIFFS)
+* ``eagle.flash.1m0.ld`` 1M (no SPIFFS)
+* ``eagle.flash.1m64.ld`` 1M (64K SPIFFS)
+* ``eagle.flash.1m128.ld`` 1M (128K SPIFFS)
+* ``eagle.flash.1m144.ld`` 1M (144K SPIFFS)
+* ``eagle.flash.1m160.ld`` 1M (160K SPIFFS)
+* ``eagle.flash.1m192.ld`` 1M (192K SPIFFS)
+* ``eagle.flash.1m256.ld`` 1M (256K SPIFFS)
+* ``eagle.flash.1m512.ld`` 1M (512K SPIFFS)
+* ``eagle.flash.2m.ld`` 2M (1M SPIFFS)
+* ``eagle.flash.4m1m.ld`` 4M (1M SPIFFS)
+* ``eagle.flash.4m.ld`` 4M (3M SPIFFS)
+* ``eagle.flash.8m.ld`` 8M (7M SPIFFS)
+* ``eagle.flash.16m.ld`` 16M (15M SPIFFS)
 
 To override default LD script please use :ref:`projectconf_build_flags` from
 :ref:`projectconf`.
@@ -105,7 +112,7 @@ To override default LD script please use :ref:`projectconf_build_flags` from
 .. code-block:: ini
 
     [env:myenv]
-    build_flags = -Wl,-Tesp8266.flash.4m.ld
+    build_flags = -Wl,-Teagle.flash.4m.ld
 
 Custom Upload Speed
 -------------------

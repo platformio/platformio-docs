@@ -1329,7 +1329,7 @@ NXP
     * - ``lpc1768``
       - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/>`_
       - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
       - LPC1768
       - 96 MHz
       - 512 Kb

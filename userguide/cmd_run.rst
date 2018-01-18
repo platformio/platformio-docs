@@ -108,7 +108,7 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 .. option::
     --disable-auto-clean
 
-Disable auto-clean of :ref:`projectconf_pio_envs_dir` when :ref:`projectconf`
+Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`projectconf`
 or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
 
 Examples

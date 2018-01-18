@@ -106,8 +106,8 @@ Examples
     --------
     2.6, released 10 months ago
 
-    Unique Downloads
-    ----------------
+    Downloads
+    ---------
     Today: 25
     Week: 120
     Month: 462

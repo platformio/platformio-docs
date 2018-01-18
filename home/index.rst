@@ -31,7 +31,7 @@ cross-platform GUI:
 Installation
 ------------
 
-You no need to install |PIOHOME| separately, it's already built-in in
+You do not need to install |PIOHOME| separately, it's already built-in in
 :ref:`pioide` and :ref:`piocore`.
 
 Quick Start
@@ -40,7 +40,7 @@ Quick Start
 PlatformIO IDE
 ~~~~~~~~~~~~~~
 
-For :ref:`pioide`: please open |PIOHOME| using (HOME) button on PIO Toolbar:
+Please open |PIOHOME| using (HOME) button on PIO Toolbar:
 
 * **Atom**: :ref:`atom_ide_platformio_toolbar`
 * **VSCode**: :ref:`ide_vscode_toolbar`
@@ -66,7 +66,7 @@ Library Manager
 
 .. image:: ../_static/home/pio-home-library-stats.png
 
-Boards Explorer
-~~~~~~~~~~~~~~~
+Board Explorer
+~~~~~~~~~~~~~~
 
 .. image:: ../_static/home/pio-home-boards.png

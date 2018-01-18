@@ -183,6 +183,7 @@ it evaluates `C/C++ Preprocessor conditional syntax <https://gcc.gnu.org/onlined
 .. code-block:: ini
 
     [env:myenv]
+    lib_ldf_mode = chain+
     build_flags = -D MY_PROJECT_VERSION=13
 
 ``mylib.h``
