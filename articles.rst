@@ -20,6 +20,11 @@ Articles about us
 
 Here are recent articles/reviews about PlatformIO:
 
+2018
+^^^^
+
+* Jan 13, 2018 - **Rui Marinho** - `Quick start guide to flashing ESP8266-based devices with PlatformIO <https://ruimarinho.github.io/post/quick-start-guide-to-flashing-esp8266-based-devices-with-platformio/>`_
+
 2017
 ^^^^
 
