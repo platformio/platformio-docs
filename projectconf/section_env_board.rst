@@ -35,7 +35,7 @@ in *Boards* section of :ref:`platforms`. See "Microcontroller" column.
 
 An option ``board_f_cpu`` is used to define MCU frequency (Hertz, Clock). A
 format of this option is ``C-like long integer`` value with ``L`` suffix. The
-1 Hertz is equal to ``1L``, then 16 Mhz (Mega Hertz) is equal to ``16000000L``.
+1 Hertz is equal to ``1L``, then 16 MHz (Mega Hertz) is equal to ``16000000L``.
 
 The full list of ``board_f_cpu`` for the popular embedded platforms you can
 find in *Boards* section of :ref:`platforms`. See "Frequency" column. You can
@@ -48,7 +48,7 @@ overclock a board by specifying a ``board_f_cpu`` value other than the default.
 
 An option ``board_f_flash`` is used to define FLASH chip frequency (Hertz, Clock). A
 format of this option is ``C-like long integer`` value with ``L`` suffix. The
-1 Hertz is equal to ``1L``, then 40 Mhz (Mega Hertz) is equal to ``40000000L``.
+1 Hertz is equal to ``1L``, then 40 MHz (Mega Hertz) is equal to ``40000000L``.
 
 This option isn't available for the all development platforms. The only
 :ref:`platform_espressif8266` supports it.

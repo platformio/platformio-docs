@@ -68,11 +68,11 @@ to find Teensy boards:
     ---------------------------------------------------------------------------
     Type                  MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
-    teensy20              atmega32u4     16Mhz     31kB    2.5kB  Teensy 2.0
-    teensy30              mk20dx128      48Mhz     128kB   16kB   Teensy 3.0
-    teensy31              mk20dx256      72Mhz     256kB   64kB   Teensy 3.1 / 3.2
-    teensylc              mkl26z64       48Mhz     62kB    8kB    Teensy LC
-    teensy20pp            at90usb1286    16Mhz     127kB   8kB    Teensy++ 2.0
+    teensy20              atmega32u4     16MHz     31K    2.5K  Teensy 2.0
+    teensy30              mk20dx128      48MHz     128K   16K   Teensy 3.0
+    teensy31              mk20dx256      72MHz     256K   64K   Teensy 3.1 / 3.2
+    teensylc              mkl26z64       48MHz     62K    8K    Teensy LC
+    teensy20pp            at90usb1286    16MHz     127K   8K    Teensy++ 2.0
 
 According to the table above the ID/TYPE for Teensy 3.1 is ``teensy31``. Also,
 the ID for Arduino UNO is ``uno`` and for NodeMCU 1.0 (ESP-12E Module)
