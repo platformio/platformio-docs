@@ -108,7 +108,7 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 .. code-block:: ini
 
     [env:pre_and_post_hooks]
-    extra_scripts = extra_script.py
+    extra_scripts = post:extra_script.py
 
 ``extra_script.py``:
 
@@ -128,6 +128,9 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
     def before_upload(source, target, env):
         print "before_upload"
         # do some actions
+
+        # call Node.JS or other script
+        env.Execute("node --version")
 
 
     def after_upload(source, target, env):
