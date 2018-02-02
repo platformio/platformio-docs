@@ -9,8 +9,14 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Configuration
+-------------
+
+.. contents::
+    :local:
+
 Custom CPU Frequency
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
 
@@ -21,7 +27,7 @@ See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
     board_f_cpu = 160000000L
 
 Custom FLASH Frequency
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 See :ref:`projectconf_board_f_flash` option from :ref:`projectconf`. Possible
 values:
@@ -36,7 +42,7 @@ values:
     board_f_flash = 80000000L
 
 Custom FLASH Mode
------------------
+~~~~~~~~~~~~~~~~~
 
 Flash chip interface mode. This parameter is stored in the binary image
 header, along with the flash size and flash frequency. The ROM bootloader
@@ -57,7 +63,7 @@ values:
     board_flash_mode = qio
 
 Custom Upload Speed
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 You can set custom upload speed using  :ref:`projectconf_upload_speed` option
 from :ref:`projectconf`
@@ -68,7 +74,7 @@ from :ref:`projectconf`
     upload_speed = 9600
 
 Over-the-Air (OTA) update
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are 2 options:
 
@@ -91,7 +97,7 @@ For example,
 * ``platformio run -t upload --upload-port myesp8266.local``
 
 Authentication and upload options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can pass additional options/flags to OTA uploader using
 ``upload_flags`` option in :ref:`projectconf`
@@ -142,7 +148,7 @@ For the full list with available options please run
         -r, --progress      Show progress output. Does not work for ArduinoIDE
 
 Using Arduino Framework with Staging version
---------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PlatformIO will install the latest Arduino Core for ESP32 from
 https://github.com/espressif/arduino-esp32. The `Git <https://git-scm.com>`_
@@ -174,20 +180,3 @@ please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
       console to https://hastebin.com)
     - detailed log of build process from PlatformIO Build System (please copy
       it from console to https://hastebin.com)
-
-Articles
---------
-
-* Sep 04, 2017 - **Dror Gluska** - `Looking To The IoT Future With PlatformIO And ESP32 <http://uhurumkate.blogspot.co.il/2017/09/looking-to-iot-future-with-platformio.html>`_
-* Aug 23, 2017 - **陳亮** - `Develop ESP32 With PlatformIO IDE <http://www.instructables.com/id/Develop-ESP32-With-PlatformIO-IDE/>`_
-
-Examples
---------
-
-All project examples are located in PlatformIO repository
-`Examples for Espressif 32 platform <https://github.com/platformio/platformio-examples/tree/develop/espressif>`_.
-
-* `Arduino Blink <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp32-arduino-blink>`_
-* `Arduino WiFiScan <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp32-arduino-wifiscan>`_
-* `ESP-IDF Hello World <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp32-espidf-hello-world>`_
-* `ESP-IDF HTTP Request <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp32-espidf-http-request>`_

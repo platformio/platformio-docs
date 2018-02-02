@@ -17,7 +17,14 @@ Native
 
 Native development platform is intended to be used for desktop OS. This platform uses built-in toolchains (preferable based on GCC), frameworks, libs from particular OS where it will be run.
 
-For more detailed information please visit `vendor site <http://platformio.org/platforms/native>`_.
+For more detailed information please visit `vendor site <http://platformio.org/platforms/native?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are located in `Native development platform repository <https://github.com/platformio/platform-native/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.

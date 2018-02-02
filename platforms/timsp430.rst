@@ -17,10 +17,90 @@ TI MSP430
 
 MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 
-For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/msp/overview.page>`_.
+For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/msp/overview.page?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are located in `TI MSP430 development platform repository <https://github.com/platformio/platform-timsp430/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+On-Board tools
+~~~~~~~~~~~~~~
+
+Boards listed below have on-board debugging tools and **ARE READY** for debugging!
+You do not need to use/buy external debugger.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``lpmsp430f5529``
+      - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430F5529
+      - 16 MHz
+      - 128K
+      - 8K
+    * - ``lpmsp430fr4133``
+      - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR4133
+      - 8 MHz
+      - 15K
+      - 2K
+    * - ``lpmsp430fr5739``
+      - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR5739
+      - 16 MHz
+      - 16K
+      - 512B
+    * - ``lpmsp430fr5969``
+      - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR5969
+      - 8 MHz
+      - 64K
+      - 2K
+    * - ``lpmsp430fr6989``
+      - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR6989
+      - 8 MHz
+      - 127K
+      - 2K
+    * - ``lpmsp430g2553``
+      - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430G2553
+      - 16 MHz
+      - 16K
+      - 512B
+
 
 Packages
 --------
@@ -31,16 +111,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinomsp430 <http://arduino.cc/en/Reference/HomePage>`__
+    * - `framework-arduinomsp430 <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (MSP430 Core)
 
-    * - `framework-energiamsp430 <http://energia.nu/reference/>`__
+    * - `framework-energiamsp430 <http://energia.nu/reference/?utm_source=platformio&utm_medium=docs>`__
       - Energia Wiring-based Framework (MSP430 Core)
 
-    * - `tool-mspdebug <http://mspdebug.sourceforge.net/>`__
+    * - `tool-mspdebug <http://mspdebug.sourceforge.net/?utm_source=platformio&utm_medium=docs>`__
       - MSPDebug
 
-    * - `toolchain-timsp430 <http://sourceforge.net/projects/mspgcc/>`__
+    * - `toolchain-timsp430 <http://sourceforge.net/projects/mspgcc/?utm_source=platformio&utm_medium=docs>`__
       - msp-gcc
 
 .. warning::
@@ -89,21 +169,18 @@ PanStamp
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``panStampNRG``
-      - `PanStamp NRG 1.1 <http://www.panstamp.com/product/197/>`_
-      - :ref:`TI MSP430 <platform_timsp430>`
-      - 
+      - `PanStamp NRG 1.1 <http://www.panstamp.com/product/197/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - CC430F5137
       - 12 MHz
-      - 32 Kb
-      - 4 Kb
+      - 31.88K
+      - 4K
 
 TI
 ~~
@@ -113,65 +190,50 @@ TI
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``lpmsp430f5529``
-      - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html>`_
-      - :ref:`TI MSP430 <platform_timsp430>`
+      - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MSP430F5529
       - 16 MHz
-      - 128 Kb
-      - 8 Kb
-
+      - 128K
+      - 8K
     * - ``lpmsp430fr4133``
-      - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133>`_
-      - :ref:`TI MSP430 <platform_timsp430>`
+      - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MSP430FR4133
       - 8 MHz
-      - 16 Kb
-      - 2 Kb
-
+      - 15K
+      - 2K
     * - ``lpmsp430fr5739``
-      - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739>`_
-      - :ref:`TI MSP430 <platform_timsp430>`
+      - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MSP430FR5739
       - 16 MHz
-      - 16 Kb
-      - 0.5 Kb
-
+      - 16K
+      - 512B
     * - ``lpmsp430fr5969``
-      - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html>`_
-      - :ref:`TI MSP430 <platform_timsp430>`
+      - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MSP430FR5969
       - 8 MHz
-      - 64 Kb
-      - 2 Kb
-
+      - 64K
+      - 2K
     * - ``lpmsp430fr6989``
-      - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989>`_
-      - :ref:`TI MSP430 <platform_timsp430>`
+      - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MSP430FR6989
       - 8 MHz
-      - 128 Kb
-      - 2 Kb
-
+      - 127K
+      - 2K
     * - ``lpmsp430g2553``
-      - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html>`_
-      - :ref:`TI MSP430 <platform_timsp430>`
+      - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MSP430G2553
       - 16 MHz
-      - 16 Kb
-      - 0.5 Kb
-
-.. include:: timsp430_extra.rst
+      - 16K
+      - 512B

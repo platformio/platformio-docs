@@ -17,10 +17,63 @@ Teensy
 
 Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
-For more detailed information please visit `vendor site <https://www.pjrc.com/teensy>`_.
+For more detailed information please visit `vendor site <https://www.pjrc.com/teensy?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+.. include:: teensy_extra.rst
+
+Examples
+--------
+
+Examples are located in `Teensy development platform repository <https://github.com/platformio/platform-teensy/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+External tools
+~~~~~~~~~~~~~~
+
+Boards listed below are compatible with :ref:`piodebug` but depend on external
+debugging tools. See "Debug" column for compatible debugging tools.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``teensy35``
+      - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MK64FX512
+      - 120 MHz
+      - 512K
+      - 192K
+    * - ``teensy36``
+      - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MK66FX1M0
+      - 180 MHz
+      - 1M
+      - 256K
+
 
 Packages
 --------
@@ -31,19 +84,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoteensy <http://arduino.cc/en/Reference/HomePage>`__
+    * - `framework-arduinoteensy <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework
 
-    * - `framework-mbed <http://mbed.org>`__
+    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-teensy <https://www.pjrc.com/teensy/loader.html>`__
+    * - `tool-teensy <https://www.pjrc.com/teensy/loader.html?utm_source=platformio&utm_medium=docs>`__
       - Teensy Loader
 
-    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc>`__
+    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio&utm_medium=docs>`__
       - avr-gcc
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
@@ -96,74 +149,57 @@ Teensy
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``teensy20``
-      - `Teensy 2.0 <https://www.pjrc.com/store/teensy.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy 2.0 <https://www.pjrc.com/store/teensy.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ATMEGA32U4
       - 16 MHz
-      - 32 Kb
-      - 2.5 Kb
-
+      - 31.50K
+      - 2.50K
     * - ``teensy20pp``
-      - `Teensy++ 2.0 <https://www.pjrc.com/store/teensypp.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy++ 2.0 <https://www.pjrc.com/store/teensypp.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - AT90USB1286
       - 16 MHz
-      - 128 Kb
-      - 8 Kb
-
+      - 127K
+      - 8K
     * - ``teensy30``
-      - `Teensy 3.0 <https://www.pjrc.com/store/teensy3.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy 3.0 <https://www.pjrc.com/store/teensy3.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MK20DX128
       - 48 MHz
-      - 128 Kb
-      - 16 Kb
-
+      - 128K
+      - 16K
     * - ``teensy31``
-      - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MK20DX256
       - 72 MHz
-      - 256 Kb
-      - 64 Kb
-
+      - 256K
+      - 64K
     * - ``teensy35``
-      - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html>`_
-      - :ref:`Teensy <platform_teensy>`
+      - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK64FX512
       - 120 MHz
-      - 512 Kb
-      - 192 Kb
-
+      - 512K
+      - 192K
     * - ``teensy36``
-      - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html>`_
-      - :ref:`Teensy <platform_teensy>`
+      - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK66FX1M0
       - 180 MHz
-      - 1024 Kb
-      - 256 Kb
-
+      - 1M
+      - 256K
     * - ``teensylc``
-      - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MKL26Z64
       - 48 MHz
-      - 64 Kb
-      - 8 Kb
-
-.. include:: teensy_extra.rst
+      - 62K
+      - 8K

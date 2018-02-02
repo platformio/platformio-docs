@@ -9,8 +9,14 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Configuration
+-------------
+
+.. contents::
+    :local:
+
 Custom CPU Frequency
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
 
@@ -21,7 +27,7 @@ See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
     board_f_cpu = 160000000L
 
 Custom FLASH Frequency
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 See :ref:`projectconf_board_f_flash` option from :ref:`projectconf`. Possible
 values:
@@ -38,7 +44,7 @@ values:
     board_f_flash = 80000000L
 
 Custom FLASH Mode
------------------
+~~~~~~~~~~~~~~~~~
 
 Flash chip interface mode. This parameter is stored in the binary image
 header, along with the flash size and flash frequency. The ROM bootloader
@@ -59,7 +65,7 @@ values:
     board_flash_mode = qio
 
 Custom Reset Method
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 You can set custom reset method using :ref:`projectconf_upload_resetmethod`
 option from :ref:`projectconf`.
@@ -80,7 +86,7 @@ See `default reset methods per board <https://github.com/platformio/platform-esp
 .. _platform_espressif_customflash:
 
 Custom Flash Size
------------------
+~~~~~~~~~~~~~~~~~
 
 .. warning::
     Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
@@ -115,7 +121,7 @@ To override default LD script please use :ref:`projectconf_build_flags` from
     build_flags = -Wl,-Teagle.flash.4m.ld
 
 Custom Upload Speed
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 You can set custom upload speed using  :ref:`projectconf_upload_speed` option
 from :ref:`projectconf`
@@ -128,7 +134,7 @@ from :ref:`projectconf`
 .. _platform_espressif_uploadfs:
 
 Uploading files to file system SPIFFS
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. warning::
     Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
@@ -152,7 +158,7 @@ Active discussion is located in `issue #382 <https://github.com/platformio/platf
 .. _platform_espressif_ota:
 
 Over-the-Air (OTA) update
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Firstly, please read `What is OTA? How to use it? <https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html>`_
 
@@ -177,7 +183,7 @@ For example,
 * ``platformio run -t upload --upload-port myesp8266.local``
 
 Authentication and upload options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can pass additional options/flags to OTA uploader using
 ``upload_flags`` option in :ref:`projectconf`
@@ -235,7 +241,7 @@ Demo
 
 
 Using Arduino Framework with Staging version
---------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PlatformIO will install the latest Arduino Core for ESP8266 from
 https://github.com/esp8266/Arduino. The `Git <https://git-scm.com>`_
@@ -267,36 +273,3 @@ please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
       console to https://hastebin.com)
     - detailed log of build process from PlatformIO Build System (please copy
       it from console to https://hastebin.com)
-
-Articles
---------
-
-* Jun 23, 2017 - **Naresh Krish** - `Home Automation Using Wiscore, OpenHab and PlatformIO <https://www.hackster.io/naresh-krish/home-automation-using-wiscore-and-openhab-1ec6e4>`_
-* Jan 12, 2017 - **Tiest van Gool** - `OTA: PlatformIO and ESP8266 <http://tiestvangool.ghost.io/2017/01/12/ota-platformio-and-esp8266/>`_
-* Sep 12, 2016 - **Pedro Minatel** - `OTA – Como programar o ESP8266 pelo WiFi no platformIO (OTA programming for ESP8266 via Wi-Fi using PlatformIO, Portuguese) <http://pedrominatel.com.br/esp8266/ota-como-programar-o-esp8266-pelo-wifi-no-platformio/>`_
-* Sep 2, 2016 - **Tinkerman** `Optimizing files for SPIFFS with Gulp <http://tinkerman.cat/optimizing-files-for-spiffs-with-gulp/>`_
-* Jul 15, 2016 - **Jaime** - `ESP8266 Mobile Rick Roll Captive Portal <https://hackaday.io/project/12709-esp8266-mobile-rick-roll-captive-portal>`_
-* Jun 13, 2016 - **Daniel Eichhorn** - `New Weather Station Demo on Github <http://blog.squix.org/2016/06/new-weather-station-demo-on-github.html>`_
-* Jun 3, 2016 - **Daniel Eichhorn** - `ESP8266: Continuous Delivery Pipeline – Push To Production <http://blog.squix.org/2016/06/esp8266-continuous-delivery-pipeline-push-to-production.html>`_
-* May 29, 2016 - **Chris Synan** - `Reverse Engineer RF Remote Controller for IoT! <http://www.instructables.com/id/Reverse-Engineer-RF-Remote-Controller-for-IoT/?ALLSTEPS>`_
-* May 22, 2016 - **Pedro Minatel** - `Estação meteorológica com ESP8266 (Weather station with ESP8266, Portuguese) <http://pedrominatel.com.br/esp8266/estacao-meteorologica-com-esp8266/>`_
-* May 16, 2016 - **Pedro Minatel** - `Controle remoto WiFi com ESP8266 (WiFi remote control using ESP8266, Portuguese) <http://pedrominatel.com.br/esp8266/controle-remoto-wifi-com-esp8266/>`_
-* May 08, 2016 - **Radoslaw Bob** - `Touch controlled buzzer (Nodemcu ESP8266) <https://gettoknowthebob.wordpress.com/2016/05/08/touch-controlled-buzzer-nodemcu-esp8266/>`_
-* Mar 07, 2016 - **Joran Jessurun** - `Nieuwe wereld met PlatformIO (New world with PlatformIO, Dutch) <http://blog.wisclub.nl/#post178>`_
-* Feb 25, 2016 - **NutDIY** - `PlatformIO Blink On Nodemcu Dev Kit V1.0 (ESP 12-E) <http://nutdiy.blogspot.com/2016/02/platformio-blink-on-nodemcu-dev-kit-v10.html>`_
-* Feb 23, 2016 - **Ptarmigan Labs** - `ESP8266 Over The Air updating – what are the options? <https://ptarmiganlabs.com/blog/2016/02/23/esp8266-over-the-air-updating-what-are-the-options/>`_
-* Jan 16, 2016 - **Dani Eichhorn** - `ESP8266 Arduino IDE Alternative: PlatformIO <http://blog.squix.ch/2016/01/esp8266-arduino-ide-alternative.html>`_
-* Dec 22, 2015 - **Jan Penninkhof** - `Over-the-Air ESP8266 programming using PlatformIO <http://www.penninkhof.com/2015/12/1610-over-the-air-esp8266-programming-using-platformio/>`_
-* Dec 01, 2015 - **Tateno Yuichi** - `ESP8266 を CUI で開発する (Develop a ESP8266 in CUI, Japanese) <http://jaywiggins.com/platformio/arduino/avr/es8266/2015/09/30/platformio-investigation/>`_
-
-See more :ref:`articles`.
-
-Examples
---------
-
-All project examples are located in PlatformIO repository
-`Examples for Espressif 8266 platform <https://github.com/platformio/platformio-examples/tree/develop/espressif>`_.
-
-* `Native SDK <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp8266-native>`_
-* `WebServer <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp8266-webserver>`_
-* `WiFiScan <https://github.com/platformio/platformio-examples/tree/develop/espressif/esp8266-wifiscan>`_

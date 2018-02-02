@@ -9,11 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Configuration
+-------------
+
+.. contents::
+    :local:
+
 USB Features
-------------
+~~~~~~~~~~~~
 
 If you want to use Teensy USB Features, you need to add special
-acros/define using :ref:`projectconf_build_flags`:
+macros/define using :ref:`projectconf_build_flags`:
 
 * ``-D USB_AUDIO``
 * ``-D USB_HID``
@@ -36,13 +42,3 @@ Example:
     build_flags = -D USB_RAWHID
 
 See `Teensy USB Examples <https://www.pjrc.com/teensy/usb_debug_only.html>`_.
-
-Examples
---------
-
-All project examples are located in PlatformIO repository
-`Examples for Teensy platform <https://github.com/platformio/platformio-examples/tree/develop/teensy>`_.
-
-* `Wiring Blink <https://github.com/platformio/platformio-examples/tree/develop/wiring-blink>`_
-* `HID Mouse <https://github.com/platformio/platformio-examples/tree/develop/teensy/hid-usb-mouse>`_
-* `Internal Libs <https://github.com/platformio/platformio-examples/tree/develop/teensy/internal-libs>`_

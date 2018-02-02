@@ -9,13 +9,19 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Configuration
+-------------
+
+.. contents::
+    :local:
+
 .. _atmelavr_upload_via_programmer:
 
 Upload using Programmer
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 To upload firmware using programmer you need to use ``program`` target instead
-``upload`` for :option:`platformio run --target` command. For example,
+of ``upload`` for :option:`platformio run --target` command. For example,
 ``platformio run -t program``.
 
 .. warning::
@@ -116,14 +122,14 @@ Configuration for the programmers:
         upload_speed = 115200
 
 Upload EEPROM data
-------------------
+~~~~~~~~~~~~~~~~~~
 
 To upload EEPROM data (from EEMEM directive) you need to use ``uploadeep``
 target instead ``upload`` for :option:`platformio run --target` command.
 For example, ``platformio run -t uploadeep``.
 
 Fuses
------
+~~~~~
 
 PlatformIO has built-in target named ``fuses`` for setting fuse bits. The
 default fuse bits are predefined in board manifest file in ``fuses`` section.
@@ -133,7 +139,7 @@ To set fuse bits you need to use  target ``fuses`` for
 :option:`platformio run --target` command.
 
 Custom Fuses
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 You can specify custom fuse bits. Please create custom
 :ref:`projectconf_extra_scripts` and override default "fuses" command:
@@ -153,31 +159,3 @@ You can specify custom fuse bits. Please create custom
 
     Import('env')
     env.Replace(FUSESCMD="avrdude $UPLOADERFLAGS -e -Ulock:w:0x3F:m -Uhfuse:w:0xDE:m -Uefuse:w:0x05:m -Ulfuse:w:0xFF:m")
-
-
-Articles
---------
-
-* Dec 01, 2015 - **Michał Seroczyński** - `Push Notification from Arduino Yún with motion sensor <http://www.ches.pl/push-from-yun-1/>`_
-* Nov 29, 2015 - **Keith Hughes** - `Using PlatformIO for Embedded Projects <http://smartspacestuff.blogspot.com/2015/11/using-platformio-for-embedded-projects.html>`_
-* Nov 22, 2015 - **Michał Seroczyński** - `Using PlatformIO to get started with Arduino in CLion IDE <http://www.ches.pl/using-platformio-get-started-arduino-clion-ide/>`_
-* Nov 09, 2015 - **ÁLvaro García Gómez** - `Programar con Arduino "The good way" (Programming with Arduino "The good way", Spanish) <http://congdegnu.es/2015/11/09/programar-con-arduino-the-good-way/>`_
-* Oct 18, 2015 - **Nico Coetzee** - `First Arduino I2C Experience with PlatformIO <https://electronicventurer.wordpress.com/2015/10/18/first-arduino-i2c-experience/>`_
-* Oct 10, 2015 - **Floyd Hilton** - `Programming Arduino with Atom <http://floydhilton.com/software/career/2015/10/10/Arduino_with_Atom.html>`_
-* June 20, 2014 - **Ivan Kravets, Ph.D.** - `Building and debugging Atmel AVR (Arduino-based) project using Eclipse IDE+PlatformIO <http://www.ikravets.com/computer-life/programming/2014/06/20/building-and-debugging-atmel-avr-arduino-based-project-using-eclipse-ideplatformio>`_
-
-See more :ref:`articles`.
-
-Examples
---------
-
-All project examples are located in PlatformIO repository
-`Examples for Atmel AVR platform <https://github.com/platformio/platformio-examples/tree/develop/atmelavr>`_.
-
-* `Wiring Blink <https://github.com/platformio/platformio-examples/tree/develop/wiring-blink>`_
-* `Arduino with external libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-external-libs>`_
-* `Arduino with internal libraries <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-internal-libs>`_
-* `Project uses source file name for "src" directory (Arduino project structure) <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-own-src_dir>`_
-* `Atmel AVR Native blink <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/atmelavr-native-blink>`_
-* `Digitstump Mouse <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/digitstump-mouse>`_
-* `Engduino magnetometer <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/engduino-magnetometer>`_

@@ -17,10 +17,18 @@ Maxim 32
 
 Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
-For more detailed information please visit `vendor site <https://www.maximintegrated.com/en/products/digital/microcontrollers.html>`_.
+For more detailed information please visit `vendor site <https://www.maximintegrated.com/en/products/digital/microcontrollers.html?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are located in `Maxim 32 development platform repository <https://github.com/platformio/platform-maxim32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+
 
 Packages
 --------
@@ -31,13 +39,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-mbed <http://mbed.org>`__
+    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-openocd <http://openocd.org>`__
+    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
@@ -83,63 +91,50 @@ Maxim
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``max32600mbed``
-      - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/>`_
-      - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MAX32600
       - 24 MHz
-      - 256 Kb
-      - 32 Kb
-
+      - 256K
+      - 32K
     * - ``max32620hsp``
-      - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/>`_
-      - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MAX32620
       - 96 MHz
-      - 2048 Kb
-      - 256 Kb
-
+      - 2M
+      - 256K
     * - ``max32625mbed``
-      - `MAX32625MBED <https://os.mbed.com/platforms/MAX32625MBED/>`_
-      - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      - `MAX32625MBED <https://os.mbed.com/platforms/MAX32625MBED/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MAX32625
       - 96 MHz
-      - 512 Kb
-      - 160 Kb
-
+      - 512K
+      - 160K
     * - ``max32625nexpaq``
-      - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/>`_
-      - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MAX32625
       - 96 MHz
-      - 512 Kb
-      - 160 Kb
-
+      - 512K
+      - 160K
     * - ``max32630fthr``
-      - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/>`_
-      - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MAX32630
       - 96 MHz
-      - 2048 Kb
-      - 512 Kb
-
+      - 2M
+      - 512K
     * - ``maxwsnenv``
-      - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/>`_
-      - :ref:`Maxim 32 <platform_maxim32>`
-      - 
+      - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MAX32610
       - 24 MHz
-      - 256 Kb
-      - 32 Kb
+      - 256K
+      - 32K

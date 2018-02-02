@@ -12,6 +12,9 @@
 Configuration
 -------------
 
+.. contents::
+    :local:
+
 If you are using the Samsung ARTIK platform on macOS or Linux, you need to
 perform the configuration steps detailed below to enable support for deployment
 and debugging.

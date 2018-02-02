@@ -170,6 +170,9 @@ Packages
     * - `tool-mspdebug <http://mspdebug.sourceforge.net/>`__
       - MSPDebug
 
+    * - `tool-nrfjprog <https://www.nordicsemi.com>`__
+      - nRF5x command line tool
+
     * - `tool-openocd <http://openocd.org>`__
       - OpenOCD
 

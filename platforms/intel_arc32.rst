@@ -17,10 +17,18 @@ Intel ARC32
 
 ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
-For more detailed information please visit `vendor site <http://www.intel.com/content/www/us/en/wearables/wearable-soc.html>`_.
+For more detailed information please visit `vendor site <http://www.intel.com/content/www/us/en/wearables/wearable-soc.html?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are located in `Intel ARC32 development platform repository <https://github.com/platformio/platform-intel_arc32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+
 
 Packages
 --------
@@ -31,13 +39,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101>`__
+    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (Intel ARC Core)
 
-    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools>`__
+    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools?utm_source=platformio&utm_medium=docs>`__
       - Genuino101 uploader
 
-    * - `toolchain-intelarc32 <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain>`__
+    * - `toolchain-intelarc32 <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain?utm_source=platformio&utm_medium=docs>`__
       - GCC for Intel ARC
 
 .. warning::
@@ -83,18 +91,15 @@ Intel
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``genuino101``
-      - `Arduino/Genuino 101 <https://www.arduino.cc/en/Main/ArduinoBoard101>`_
-      - :ref:`Intel ARC32 <platform_intel_arc32>`
-      - 
+      - `Arduino/Genuino 101 <https://www.arduino.cc/en/Main/ArduinoBoard101?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ARCV2EM
       - 32 MHz
-      - 192 Kb
-      - 80 Kb
+      - 152K
+      - 80K

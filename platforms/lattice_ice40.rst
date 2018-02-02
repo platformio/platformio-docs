@@ -17,10 +17,18 @@ Lattice iCE40
 
 The iCE40 family of ultra-low power, non-volatile FPGAs has five devices with densities ranging from 384 to 7680 Look-Up Tables (LUTs). In addition to LUT-based,low-cost programmable logic, these devices feature Embedded Block RAM (EBR), Non-volatile Configuration Memory (NVCM) and Phase Locked Loops (PLLs). These features allow the devices to be used in low-cost, high-volume consumer and system applications.
 
-For more detailed information please visit `vendor site <http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx>`_.
+For more detailed information please visit `vendor site <http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are located in `Lattice iCE40 development platform repository <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+
 
 Packages
 --------
@@ -31,10 +39,10 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-icestorm <http://www.clifford.at/icestorm/>`__
+    * - `toolchain-icestorm <http://www.clifford.at/icestorm/?utm_source=platformio&utm_medium=docs>`__
       - Tools for analyzing and creating bitstream files for FPGA IceStorm
 
-    * - `toolchain-iverilog <http://iverilog.icarus.com>`__
+    * - `toolchain-iverilog <http://iverilog.icarus.com?utm_source=platformio&utm_medium=docs>`__
       - Verilog simulation and synthesis tool
 
 .. warning::
@@ -69,21 +77,18 @@ FPGAwars
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``icezum``
-      - `IceZUM Alhambra FPGA <https://github.com/FPGAwars/icezum/wiki>`_
-      - :ref:`Lattice iCE40 <platform_lattice_ice40>`
-      - 
+      - `IceZUM Alhambra FPGA <https://github.com/FPGAwars/icezum/wiki?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ICE40-HX1K-TQ144
       - 12 MHz
-      - 32 Kb
-      - 32 Kb
+      - 32K
+      - 32K
 
 Lattice
 ~~~~~~~
@@ -93,18 +98,15 @@ Lattice
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``icestick``
-      - `Lattice iCEstick FPGA Evaluation Kit <http://www.latticesemi.com/icestick>`_
-      - :ref:`Lattice iCE40 <platform_lattice_ice40>`
-      - 
+      - `Lattice iCEstick FPGA Evaluation Kit <http://www.latticesemi.com/icestick?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ICE40-HX1K-TQ144
       - 12 MHz
-      - 32 Kb
-      - 32 Kb
+      - 32K
+      - 32K

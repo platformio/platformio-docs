@@ -17,10 +17,69 @@ TI TIVA
 
 Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
-For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/c2000_performance/control_automation/tm4c12x/overview.page>`_.
+For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/c2000_performance/control_automation/tm4c12x/overview.page?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are located in `TI TIVA development platform repository <https://github.com/platformio/platform-titiva/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+On-Board tools
+~~~~~~~~~~~~~~
+
+Boards listed below have on-board debugging tools and **ARE READY** for debugging!
+You do not need to use/buy external debugger.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``lplm4f120h5qr``
+      - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_ti-icdi` (on-board)
+      - LPLM4F120H5QR
+      - 80 MHz
+      - 256K
+      - 32K
+    * - ``lptm4c1230c3pm``
+      - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_ti-icdi` (on-board)
+      - LPTM4C1230C3PM
+      - 80 MHz
+      - 256K
+      - 32K
+    * - ``lptm4c1294ncpdt``
+      - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_ti-icdi` (on-board)
+      - LPTM4C1294NCPDT
+      - 120 MHz
+      - 1M
+      - 256K
+
 
 Packages
 --------
@@ -31,19 +90,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-energiativa <http://energia.nu/reference/>`__
+    * - `framework-energiativa <http://energia.nu/reference/?utm_source=platformio&utm_medium=docs>`__
       - Energia Wiring-based Framework (LM4F Core)
 
-    * - `framework-libopencm3 <http://www.libopencm3.org/>`__
+    * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio&utm_medium=docs>`__
       - libOpenCM3 Framework
 
-    * - `tool-lm4flash <http://www.ti.com/tool/lmflashprogrammer>`__
+    * - `tool-lm4flash <http://www.ti.com/tool/lmflashprogrammer?utm_source=platformio&utm_medium=docs>`__
       - Flash Programmer
 
-    * - `tool-openocd <http://openocd.org>`__
+    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
@@ -92,38 +151,29 @@ TI
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``lplm4f120h5qr``
-      - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl>`_
-      - :ref:`TI TIVA <platform_titiva>`
+      - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPLM4F120H5QR
       - 80 MHz
-      - 256 Kb
-      - 32 Kb
-
+      - 256K
+      - 32K
     * - ``lptm4c1230c3pm``
-      - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html>`_
-      - :ref:`TI TIVA <platform_titiva>`
+      - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPTM4C1230C3PM
       - 80 MHz
-      - 256 Kb
-      - 32 Kb
-
+      - 256K
+      - 32K
     * - ``lptm4c1294ncpdt``
-      - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html>`_
-      - :ref:`TI TIVA <platform_titiva>`
+      - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPTM4C1294NCPDT
       - 120 MHz
-      - 1024 Kb
-      - 256 Kb
-
-.. include:: titiva_extra.rst
+      - 1M
+      - 256K

@@ -17,10 +17,18 @@ Linux i686
 
 Linux i686 (32-bit) is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X or Linux 32-bit) you can build native application for Linux i686 platform.
 
-For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_i686>`_.
+For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_i686?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are located in `Linux i686 development platform repository <https://github.com/platformio/platform-linux_i686/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+
 
 Packages
 --------
@@ -31,5 +39,5 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-gcclinux32 <https://gcc.gnu.org>`__
+    * - `toolchain-gcclinux32 <https://gcc.gnu.org?utm_source=platformio&utm_medium=docs>`__
       - GCC for Linux i686

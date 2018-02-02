@@ -17,11 +17,121 @@ Energia
 
 Energia Wiring-based framework enables pretty much anyone to start easily creating microcontroller-based projects and applications. Its easy-to-use libraries and functions provide developers of all experience levels to start blinking LEDs, buzzing buzzers and sensing sensors more quickly than ever before.
 
-For more detailed information please visit `vendor site <http://energia.nu/reference/>`_.
+For more detailed information please visit `vendor site <http://energia.nu/reference/?utm_source=platformio&utm_medium=docs>`_.
 
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+On-Board tools
+~~~~~~~~~~~~~~
+
+Boards listed below have on-board debugging tools and **ARE READY** for debugging!
+You do not need to use/buy external debugger.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``lplm4f120h5qr``
+      - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`debugging_tool_ti-icdi` (on-board)
+      - LPLM4F120H5QR
+      - 80 MHz
+      - 256K
+      - 32K
+    * - ``lpmsp430f5529``
+      - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430F5529
+      - 16 MHz
+      - 128K
+      - 8K
+    * - ``lpmsp430fr4133``
+      - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR4133
+      - 8 MHz
+      - 15K
+      - 2K
+    * - ``lpmsp430fr5739``
+      - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR5739
+      - 16 MHz
+      - 16K
+      - 512B
+    * - ``lpmsp430fr5969``
+      - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR5969
+      - 8 MHz
+      - 64K
+      - 2K
+    * - ``lpmsp430fr6989``
+      - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR6989
+      - 8 MHz
+      - 127K
+      - 2K
+    * - ``lpmsp430g2553``
+      - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430G2553
+      - 16 MHz
+      - 16K
+      - 512B
+    * - ``lptm4c1230c3pm``
+      - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`debugging_tool_ti-icdi` (on-board)
+      - LPTM4C1230C3PM
+      - 80 MHz
+      - 256K
+      - 32K
+    * - ``lptm4c1294ncpdt``
+      - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI TIVA <platform_titiva>`
+      - :ref:`debugging_tool_ti-icdi` (on-board)
+      - LPTM4C1294NCPDT
+      - 120 MHz
+      - 1M
+      - 256K
+
+
+Examples
+--------
+
+* `Energia for TI MSP430 <https://github.com/platformio/platform-timsp430/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `Energia for TI TIVA <https://github.com/platformio/platform-titiva/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -55,88 +165,79 @@ TI
       - Name
       - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``lplm4f120h5qr``
-      - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl>`_
+      - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl?utm_source=platformio&utm_medium=docs>`_
       - :ref:`TI TIVA <platform_titiva>`
       - :ref:`Yes <piodebug>`
       - LPLM4F120H5QR
       - 80 MHz
-      - 256 Kb
-      - 32 Kb
-
+      - 256K
+      - 32K
     * - ``lpmsp430f5529``
-      - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html>`_
+      - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`TI MSP430 <platform_timsp430>`
       - :ref:`Yes <piodebug>`
       - MSP430F5529
       - 16 MHz
-      - 128 Kb
-      - 8 Kb
-
+      - 128K
+      - 8K
     * - ``lpmsp430fr4133``
-      - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133>`_
+      - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133?utm_source=platformio&utm_medium=docs>`_
       - :ref:`TI MSP430 <platform_timsp430>`
       - :ref:`Yes <piodebug>`
       - MSP430FR4133
       - 8 MHz
-      - 16 Kb
-      - 2 Kb
-
+      - 15K
+      - 2K
     * - ``lpmsp430fr5739``
-      - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739>`_
+      - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739?utm_source=platformio&utm_medium=docs>`_
       - :ref:`TI MSP430 <platform_timsp430>`
       - :ref:`Yes <piodebug>`
       - MSP430FR5739
       - 16 MHz
-      - 16 Kb
-      - 0.5 Kb
-
+      - 16K
+      - 512B
     * - ``lpmsp430fr5969``
-      - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html>`_
+      - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`TI MSP430 <platform_timsp430>`
       - :ref:`Yes <piodebug>`
       - MSP430FR5969
       - 8 MHz
-      - 64 Kb
-      - 2 Kb
-
+      - 64K
+      - 2K
     * - ``lpmsp430fr6989``
-      - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989>`_
+      - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989?utm_source=platformio&utm_medium=docs>`_
       - :ref:`TI MSP430 <platform_timsp430>`
       - :ref:`Yes <piodebug>`
       - MSP430FR6989
       - 8 MHz
-      - 128 Kb
-      - 2 Kb
-
+      - 127K
+      - 2K
     * - ``lpmsp430g2553``
-      - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html>`_
+      - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`TI MSP430 <platform_timsp430>`
       - :ref:`Yes <piodebug>`
       - MSP430G2553
       - 16 MHz
-      - 16 Kb
-      - 0.5 Kb
-
+      - 16K
+      - 512B
     * - ``lptm4c1230c3pm``
-      - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html>`_
+      - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`TI TIVA <platform_titiva>`
       - :ref:`Yes <piodebug>`
       - LPTM4C1230C3PM
       - 80 MHz
-      - 256 Kb
-      - 32 Kb
-
+      - 256K
+      - 32K
     * - ``lptm4c1294ncpdt``
-      - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html>`_
+      - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`TI TIVA <platform_titiva>`
       - :ref:`Yes <piodebug>`
       - LPTM4C1294NCPDT
       - 120 MHz
-      - 1024 Kb
-      - 256 Kb
+      - 1M
+      - 256K

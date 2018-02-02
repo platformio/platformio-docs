@@ -17,10 +17,56 @@ Samsung ARTIK
 
 The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
 
-For more detailed information please visit `vendor site <http://platformio.org/platforms/samsung_artik>`_.
+For more detailed information please visit `vendor site <http://platformio.org/platforms/samsung_artik?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+.. include:: samsung_artik_extra.rst
+
+Examples
+--------
+
+Examples are located in `Samsung ARTIK development platform repository <https://github.com/platformio/platform-samsung_artik/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+External tools
+~~~~~~~~~~~~~~
+
+Boards listed below are compatible with :ref:`piodebug` but depend on external
+debugging tools. See "Debug" column for compatible debugging tools.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``artik_053``
+      - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_custom` (default)
+      - S5JT200
+      - 320 MHz
+      - 8M
+      - 1.25M
+
 
 Packages
 --------
@@ -31,13 +77,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-tizenrt <http://www.artik.io>`__
+    * - `framework-tizenrt <http://www.artik.io?utm_source=platformio&utm_medium=docs>`__
       - TizenRT RTOS with library
 
-    * - `tool-artik-openocd <http://openocd.org>`__
+    * - `tool-artik-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD for ARTIK
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
@@ -83,20 +129,15 @@ Samsung
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``artik_053``
-      - `Samsung ARTIK053 <http://www.artik.io>`_
-      - :ref:`Samsung ARTIK <platform_samsung_artik>`
+      - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - S5JT200
       - 320 MHz
-      - 8192 Kb
-      - 1280 Kb
-
-.. include:: samsung_artik_extra.rst
+      - 8M
+      - 1.25M

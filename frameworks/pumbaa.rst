@@ -17,11 +17,17 @@ Pumbaa
 
 Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
 
-For more detailed information please visit `vendor site <http://pumbaa.readthedocs.org/>`_.
+For more detailed information please visit `vendor site <http://pumbaa.readthedocs.org/?utm_source=platformio&utm_medium=docs>`_.
 
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+Examples
+--------
+
+* `Pumbaa for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -52,16 +58,15 @@ MakerAsia
       - Name
       - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``nano32``
-      - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board>`_
+      - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - 
+      - No
       - ESP32
       - 240 MHz
-      - 1280 Kb
-      - 288 Kb
+      - 1.25M
+      - 288K

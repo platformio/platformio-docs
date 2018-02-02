@@ -9,17 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-Articles
---------
+Tutorials
+---------
 
-* Jan 11, 2016 - **David Mills, Ph.D.** - `STM NUCLEOF401RE TIMER IO <http://webshed.org/wiki/STM_NUCLEOF401RE_TIMER_IO>`_
-
-See more :ref:`articles`.
-
-Examples
---------
-
-All project examples are located in PlatformIO repository
-`Examples for CMSIS framework <https://github.com/platformio/platformio-examples/tree/develop/stm32>`_.
-
-* `Blink <https://github.com/platformio/platformio-examples/tree/develop/stm32/stm32-cmsis-blink>`_
+* :ref:`tutorial_arduino_debugging_unit_testing`
