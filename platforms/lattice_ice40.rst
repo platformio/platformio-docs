@@ -27,8 +27,10 @@ For more detailed information please visit `vendor site <http://www.latticesemi.
 Examples
 --------
 
-Examples are located in `Lattice iCE40 development platform repository <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Lattice iCE40 development platform repository <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `counter <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples/counter?utm_source=platformio&utm_medium=docs>`_
+* `leds <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples/leds?utm_source=platformio&utm_medium=docs>`_
 
 Packages
 --------

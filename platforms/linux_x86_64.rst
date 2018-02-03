@@ -27,8 +27,9 @@ For more detailed information please visit `vendor site <http://platformio.org/p
 Examples
 --------
 
-Examples are located in `Linux x86_64 development platform repository <https://github.com/platformio/platform-linux_x86_64/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Linux x86_64 development platform repository <https://github.com/platformio/platform-linux_x86_64/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `hello-world <https://github.com/platformio/platform-linux_x86_64/tree/develop/examples/hello-world?utm_source=platformio&utm_medium=docs>`_
 
 Packages
 --------

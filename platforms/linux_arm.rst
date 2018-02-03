@@ -27,8 +27,10 @@ For more detailed information please visit `vendor site <http://platformio.org/p
 Examples
 --------
 
-Examples are located in `Linux ARM development platform repository <https://github.com/platformio/platform-linux_arm/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Linux ARM development platform repository <https://github.com/platformio/platform-linux_arm/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `wiringpi-blink <https://github.com/platformio/platform-linux_arm/tree/develop/examples/wiringpi-blink?utm_source=platformio&utm_medium=docs>`_
+* `wiringpi-serial <https://github.com/platformio/platform-linux_arm/tree/develop/examples/wiringpi-serial?utm_source=platformio&utm_medium=docs>`_
 
 Packages
 --------

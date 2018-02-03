@@ -225,7 +225,7 @@ Espressif
       - 1M
       - 80K
     * - ``esp07``
-      - `Espressif Generic ESP8266 ESP-07 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family#esp-07&utm_source=platformio&utm_medium=docs>`_
+      - `Espressif Generic ESP8266 ESP-07 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs#esp-07>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266

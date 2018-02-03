@@ -28,8 +28,16 @@ For more detailed information please visit `vendor site <https://espressif.com/?
 Examples
 --------
 
-Examples are located in `Espressif 8266 development platform repository <https://github.com/platformio/platform-espressif8266/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Espressif 8266 development platform repository <https://github.com/platformio/platform-espressif8266/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `arduino-asyncudp <https://github.com/platformio/platform-espressif8266/tree/develop/examples/arduino-asyncudp?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-espressif8266/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-webserver <https://github.com/platformio/platform-espressif8266/tree/develop/examples/arduino-webserver?utm_source=platformio&utm_medium=docs>`_
+* `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/develop/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
+* `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/develop/examples/esp8266-nonos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
+* `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/develop/examples/esp8266-rtos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
+* `native-sdk <https://github.com/platformio/platform-espressif8266/tree/develop/examples/native-sdk?utm_source=platformio&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-espressif8266/tree/develop/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
 Packages
 --------
@@ -293,7 +301,7 @@ Espressif
       - 1M
       - 80K
     * - ``esp07``
-      - `Espressif Generic ESP8266 ESP-07 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family#esp-07&utm_source=platformio&utm_medium=docs>`_
+      - `Espressif Generic ESP8266 ESP-07 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs#esp-07>`_
       - No
       - ESP8266
       - 80 MHz

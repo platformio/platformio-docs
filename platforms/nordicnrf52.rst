@@ -28,8 +28,16 @@ For more detailed information please visit `vendor site <https://www.nordicsemi.
 Examples
 --------
 
-Examples are located in `Nordic nRF52 development platform repository <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Nordic nRF52 development platform repository <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `arduino-ble-led <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples/arduino-ble-led?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples/mbed-ble-thermometer?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

@@ -28,8 +28,18 @@ For more detailed information please visit `vendor site <https://espressif.com/?
 Examples
 --------
 
-Examples are located in `Espressif 32 development platform repository <https://github.com/platformio/platform-espressif32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Espressif 32 development platform repository <https://github.com/platformio/platform-espressif32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `arduino-blink <https://github.com/platformio/platform-espressif32/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/develop/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
+* `espidf-ble-adv <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ble-adv?utm_source=platformio&utm_medium=docs>`_
+* `espidf-coap-server <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-coap-server?utm_source=platformio&utm_medium=docs>`_
+* `espidf-hello-world <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-hello-world?utm_source=platformio&utm_medium=docs>`_
+* `espidf-http-request <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-http-request?utm_source=platformio&utm_medium=docs>`_
+* `espidf-peripherals-uart <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-peripherals-uart?utm_source=platformio&utm_medium=docs>`_
+* `espidf-storage-sdcard <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-storage-sdcard?utm_source=platformio&utm_medium=docs>`_
+* `pumbaa-blink <https://github.com/platformio/platform-espressif32/tree/develop/examples/pumbaa-blink?utm_source=platformio&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-espressif32/tree/develop/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
 Packages
 --------

@@ -27,8 +27,9 @@ For more detailed information please visit `vendor site <http://platformio.org/p
 Examples
 --------
 
-Examples are located in `Windows x86 development platform repository <https://github.com/platformio/platform-windows_x86/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Windows x86 development platform repository <https://github.com/platformio/platform-windows_x86/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `hello-world <https://github.com/platformio/platform-windows_x86/tree/develop/examples/hello-world?utm_source=platformio&utm_medium=docs>`_
 
 Packages
 --------

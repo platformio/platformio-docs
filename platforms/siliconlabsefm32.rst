@@ -27,8 +27,12 @@ For more detailed information please visit `vendor site <http://www.silabs.com/p
 Examples
 --------
 
-Examples are located in `Silicon Labs EFM32 development platform repository <https://github.com/platformio/platform-siliconlabsefm32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Silicon Labs EFM32 development platform repository <https://github.com/platformio/platform-siliconlabsefm32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `mbed-blink <https://github.com/platformio/platform-siliconlabsefm32/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-siliconlabsefm32/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-siliconlabsefm32/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-siliconlabsefm32/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

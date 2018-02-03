@@ -27,8 +27,10 @@ For more detailed information please visit `vendor site <http://www.microchip.co
 Examples
 --------
 
-Examples are located in `Microchip PIC32 development platform repository <https://github.com/platformio/platform-microchippic32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Microchip PIC32 development platform repository <https://github.com/platformio/platform-microchippic32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `arduino-blink <https://github.com/platformio/platform-microchippic32/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-microchippic32/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
 
 Packages
 --------

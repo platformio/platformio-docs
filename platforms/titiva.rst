@@ -27,8 +27,12 @@ For more detailed information please visit `vendor site <http://www.ti.com/lsds/
 Examples
 --------
 
-Examples are located in `TI TIVA development platform repository <https://github.com/platformio/platform-titiva/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `TI TIVA development platform repository <https://github.com/platformio/platform-titiva/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `energia-blink <https://github.com/platformio/platform-titiva/tree/develop/examples/energia-blink?utm_source=platformio&utm_medium=docs>`_
+* `energia-internal-libs <https://github.com/platformio/platform-titiva/tree/develop/examples/energia-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `libopencm3-blink <https://github.com/platformio/platform-titiva/tree/develop/examples/libopencm3-blink?utm_source=platformio&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-titiva/tree/develop/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

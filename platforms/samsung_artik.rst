@@ -28,8 +28,11 @@ For more detailed information please visit `vendor site <http://platformio.org/p
 Examples
 --------
 
-Examples are located in `Samsung ARTIK development platform repository <https://github.com/platformio/platform-samsung_artik/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_.
+Examples are listed from `Samsung ARTIK development platform repository <https://github.com/platformio/platform-samsung_artik/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `artik_sdk <https://github.com/platformio/platform-samsung_artik/tree/develop/examples/artik_sdk?utm_source=platformio&utm_medium=docs>`_
+* `blink_led_wifi <https://github.com/platformio/platform-samsung_artik/tree/develop/examples/blink_led_wifi?utm_source=platformio&utm_medium=docs>`_
+* `hello <https://github.com/platformio/platform-samsung_artik/tree/develop/examples/hello?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
