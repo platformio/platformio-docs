@@ -131,13 +131,15 @@ Each button contains hint (delay mouse on it).
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-toolbar.png
 
-* :ref:`piohome`
-* PlatformIO: Build
-* PlatformIO: Upload
-* PlatformIO: Clean
-* Run a task... (See "Task Runner" below)
-* :ref:`Serial Port Monitor <cmd_device_monitor>`
-* PIO Terminal
+1. :ref:`piohome`
+2. PlatformIO: Build
+3. PlatformIO: Upload
+4. :ref:`pioremote`
+5. PlatformIO: Clean
+6. :ref:`unit_testing`
+7. Run a task... (See "Task Runner" below)
+8. :ref:`Serial Port Monitor <cmd_device_monitor>`
+9. PIO Terminal
 
 Key Bindings
 ------------
@@ -258,6 +260,15 @@ is ``true``.
 
 Activate extension only when PlatformIO-based project (with :ref:`projectconf`)
 is opened in workspace, default value is ``false``.
+
+``platformio-ide.defaultToolbarBuildAction``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Default action for "Build" button on :ref:`ide_vscode_toolbar`, default value
+is `release`. Possible values are ``release`` or ``pre-debug``.
+
+To eliminate a full project rebuilding before debugging, please change this
+value to ``pre-debug``.
 
 Known issues
 ------------
