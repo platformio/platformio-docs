@@ -23,6 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2018
 ^^^^
 
+* Jan 24, 2018 - **ThingForward** - `Embedded and Cloud - Continuous Integration <https://www.thingforward.io/techblog/2018-01-24-embedded-and-cloud-continuous-integration.html>`_
 * Jan 13, 2018 - **Rui Marinho** - `Quick start guide to flashing ESP8266-based devices with PlatformIO <https://ruimarinho.github.io/post/quick-start-guide-to-flashing-esp8266-based-devices-with-platformio/>`_
 
 2017
