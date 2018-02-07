@@ -67,6 +67,6 @@ MakerAsia
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB

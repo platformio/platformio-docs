@@ -58,9 +58,9 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`Samsung ARTIK <platform_samsung_artik>`
       - :ref:`debugging_tool_custom` (default)
       - S5JT200
-      - 320 MHz
-      - 8M
-      - 1.25M
+      - 320MHz
+      - 8MB
+      - 1.25MB
 
 
 Examples
@@ -106,6 +106,6 @@ Samsung
       - :ref:`Samsung ARTIK <platform_samsung_artik>`
       - :ref:`Yes <piodebug>`
       - S5JT200
-      - 320 MHz
-      - 8M
-      - 1.25M
+      - 320MHz
+      - 8MB
+      - 1.25MB

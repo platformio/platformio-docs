@@ -102,9 +102,9 @@ Boards
       - `4DSystems PICadillo 35T <http://www.4dsystems.com.au/product/Picadillo_35T/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX795F512L
-      - 80 MHz
-      - 508K
-      - 128K
+      - 80MHz
+      - 508KB
+      - 128KB
 
 Digilent
 ~~~~~~~~
@@ -123,93 +123,93 @@ Digilent
       - `Digilent Cerebot 32MX4 <http://store.digilentinc.com/cerebot-32mx4-limited-time-see-chipkit-pro-mx4/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX460F512L
-      - 80 MHz
-      - 508K
-      - 32K
+      - 80MHz
+      - 508KB
+      - 32KB
     * - ``cerebot32mx7``
       - `Digilent Cerebot 32MX7 <http://www.microchip.com/Developmenttools/ProductDetails.aspx?PartNO=TDGL004&utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX795F512L
-      - 80 MHz
-      - 508K
-      - 128K
+      - 80MHz
+      - 508KB
+      - 128KB
     * - ``chipkit_cmod``
       - `Digilent chipKIT Cmod <http://store.digilentinc.com/chipkit-cmod-breadboardable-mz-microcontroller-board/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX150F128D
-      - 40 MHz
-      - 124K
-      - 32K
+      - 40MHz
+      - 124KB
+      - 32KB
     * - ``chipkit_dp32``
       - `Digilent chipKIT DP32 <http://store.digilentinc.com/chipkit-dp32-dip-package-prototyping-microcontroller-board/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX250F128B
-      - 40 MHz
-      - 120K
-      - 32K
+      - 40MHz
+      - 120KB
+      - 32KB
     * - ``chipkit_mx3``
       - `Digilent chipKIT MX3 <http://store.digilentinc.com/chipkit-mx3-microcontroller-board-with-pmod-headers/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX320F128H
-      - 80 MHz
-      - 124K
-      - 16K
+      - 80MHz
+      - 124KB
+      - 16KB
     * - ``chipkit_pro_mx4``
       - `Digilent chipKIT Pro MX4 <http://store.digilentinc.com/chipkit-pro-mx4-embedded-systems-trainer-board/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX460F512L
-      - 80 MHz
-      - 508K
-      - 32K
+      - 80MHz
+      - 508KB
+      - 32KB
     * - ``chipkit_pro_mx7``
       - `Digilent chipKIT Pro MX7 <http://store.digilentinc.com/chipkit-pro-mx7-advanced-peripherals-embedded-systems-trainer-board/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX795F512L
-      - 80 MHz
-      - 508K
-      - 128K
+      - 80MHz
+      - 508KB
+      - 128KB
     * - ``chipkit_uc32``
       - `Digilent chipKIT uC32 <http://store.digilentinc.com/chipkit-uc32-basic-microcontroller-board-with-uno-r3-headers/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX340F512H
-      - 80 MHz
-      - 508K
-      - 32K
+      - 80MHz
+      - 508KB
+      - 32KB
     * - ``chipkit_wf32``
       - `Digilent chipKIT WF32 <http://store.digilentinc.com/chipkit-wf32-wifi-enabled-microntroller-board-with-uno-r3-headers/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX695F512L
-      - 80 MHz
-      - 508K
-      - 128K
+      - 80MHz
+      - 508KB
+      - 128KB
     * - ``chipkit_wifire``
       - `Digilent chipKIT WiFire <http://store.digilentinc.com/chipkit-wi-fire-wifi-enabled-mz-microcontroller-board/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MZ2048ECG100
-      - 200 MHz
-      - 1.98M
-      - 512K
+      - 200MHz
+      - 1.98MB
+      - 512KB
     * - ``mega_pic32``
       - `Digilent chipKIT MAX32 <http://store.digilentinc.com/chipkit-max32-microcontroller-board-with-mega-r3-headers/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX795F512L
-      - 80 MHz
-      - 508K
-      - 128K
+      - 80MHz
+      - 508KB
+      - 128KB
     * - ``openscope``
       - `Digilent OpenScope <http://store.digilentinc.com/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MZ2048EFG124
-      - 200 MHz
-      - 1.98M
-      - 512K
+      - 200MHz
+      - 1.98MB
+      - 512KB
     * - ``uno_pic32``
       - `Digilent chipKIT UNO32 <http://store.digilentinc.com/chipkit-uno32-basic-microcontroller-board-retired-see-chipkit-uc32/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX320F128H
-      - 80 MHz
-      - 124K
-      - 16K
+      - 80MHz
+      - 124KB
+      - 16KB
 
 Fubarino
 ~~~~~~~~
@@ -228,16 +228,16 @@ Fubarino
       - `Fubarino Mini <http://fubarino.org/mini/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX250F128D
-      - 48 MHz
-      - 120K
-      - 32K
+      - 48MHz
+      - 120KB
+      - 32KB
     * - ``fubarino_sd``
       - `Fubarino SD (1.5) <http://fubarino.org/sd/index.html?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX795F512H
-      - 80 MHz
-      - 508K
-      - 128K
+      - 80MHz
+      - 508KB
+      - 128KB
 
 MikroElektronika
 ~~~~~~~~~~~~~~~~
@@ -256,16 +256,16 @@ MikroElektronika
       - `MikroElektronika Clicker 2 <http://www.mikroe.com/pic/clicker/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX460F512L
-      - 80 MHz
-      - 508K
-      - 32K
+      - 80MHz
+      - 508KB
+      - 32KB
     * - ``flipnclickmz``
       - `MikroElektronika Flip N Click MZ <https://shop.mikroe.com/flipclick-pic32mz?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MZ2048EFH100
-      - 252 MHz
-      - 1.98M
-      - 512K
+      - 252MHz
+      - 1.98MB
+      - 512KB
 
 Olimex
 ~~~~~~
@@ -284,9 +284,9 @@ Olimex
       - `Olimex PIC32-PINGUINO <https://www.olimex.com/Products/Duino/PIC32/PIC32-PINGUINO/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX440F256H
-      - 80 MHz
-      - 252K
-      - 32K
+      - 80MHz
+      - 252KB
+      - 32KB
 
 OpenBCI
 ~~~~~~~
@@ -305,9 +305,9 @@ OpenBCI
       - `OpenBCI 32bit <http://shop.openbci.com/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX250F128B
-      - 40 MHz
-      - 120K
-      - 32K
+      - 40MHz
+      - 120KB
+      - 32KB
 
 PONTECH
 ~~~~~~~
@@ -326,9 +326,9 @@ PONTECH
       - `PONTECH UAV100 <http://www.pontech.com/productdisplay/uav100?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX440F512H
-      - 80 MHz
-      - 508K
-      - 32K
+      - 80MHz
+      - 508KB
+      - 32KB
 
 Pontech
 ~~~~~~~
@@ -347,16 +347,16 @@ Pontech
       - `Pontech NoFire <http://www.pontech.com/products?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MZ2048EFG100
-      - 200 MHz
-      - 1.98M
-      - 512K
+      - 200MHz
+      - 1.98MB
+      - 512KB
     * - ``quick240_usb``
       - `Pontech Quick240 <http://chipkit.net/wpcproduct/pontech-quick240/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX795F512L
-      - 80 MHz
-      - 508K
-      - 128K
+      - 80MHz
+      - 508KB
+      - 128KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -375,9 +375,9 @@ SeeedStudio
       - `SeeedStudio CUI32stem <http://www.seeedstudio.com/wiki/CUI32Stem?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX795F512H
-      - 80 MHz
-      - 508K
-      - 128K
+      - 80MHz
+      - 508KB
+      - 128KB
 
 UBW32
 ~~~~~
@@ -396,16 +396,16 @@ UBW32
       - `UBW32 MX460 <http://www.schmalzhaus.com/UBW32/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX460F512L
-      - 80 MHz
-      - 508K
-      - 32K
+      - 80MHz
+      - 508KB
+      - 32KB
     * - ``ubw32_mx795``
       - `UBW32 MX795 <http://www.schmalzhaus.com/UBW32/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX795F512L
-      - 80 MHz
-      - 508K
-      - 128K
+      - 80MHz
+      - 508KB
+      - 128KB
 
 chipKIT
 ~~~~~~~
@@ -424,9 +424,9 @@ chipKIT
       - `chipKIT Lenny <http://chipkit.net/tag/lenny/?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX270F256D
-      - 40 MHz
-      - 120K
-      - 32K
+      - 40MHz
+      - 120KB
+      - 32KB
 
 element14
 ~~~~~~~~~
@@ -445,6 +445,6 @@ element14
       - `Element14 chipKIT Pi <http://www.element14.com/community/community/knode/dev_platforms_kits/element14_dev_kits/microchip-chipkit/chipkit_pi?utm_source=platformio&utm_medium=docs>`_
       - No
       - 32MX250F128B
-      - 40 MHz
-      - 120K
-      - 32K
+      - 40MHz
+      - 120KB
+      - 32KB

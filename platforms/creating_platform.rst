@@ -179,6 +179,9 @@ Packages
     * - `tool-pic32prog <https://github.com/sergev/pic32prog>`__
       - pic32prog
 
+    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD>`__
+      - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
+
     * - `tool-rfdloader <https://github.com/RFduino/RFduino>`__
       - rfdloader
 

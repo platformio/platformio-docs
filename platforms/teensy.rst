@@ -67,20 +67,34 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - Frequency
       - Flash
       - RAM
+    * - ``teensy31``
+      - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MK20DX256
+      - 72MHz
+      - 256KB
+      - 64KB
     * - ``teensy35``
       - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_jlink`
       - MK64FX512
-      - 120 MHz
-      - 512K
-      - 192K
+      - 120MHz
+      - 512KB
+      - 192KB
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_jlink`
       - MK66FX1M0
-      - 180 MHz
-      - 1M
-      - 256K
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - ``teensylc``
+      - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MKL26Z64
+      - 48MHz
+      - 62KB
+      - 8KB
 
 
 Packages
@@ -166,48 +180,48 @@ Teensy
       - `Teensy 2.0 <https://www.pjrc.com/store/teensy.html?utm_source=platformio&utm_medium=docs>`_
       - No
       - ATMEGA32U4
-      - 16 MHz
-      - 31.50K
-      - 2.50K
+      - 16MHz
+      - 31.50KB
+      - 2.50KB
     * - ``teensy20pp``
       - `Teensy++ 2.0 <https://www.pjrc.com/store/teensypp.html?utm_source=platformio&utm_medium=docs>`_
       - No
       - AT90USB1286
-      - 16 MHz
-      - 127K
-      - 8K
+      - 16MHz
+      - 127KB
+      - 8KB
     * - ``teensy30``
       - `Teensy 3.0 <https://www.pjrc.com/store/teensy3.html?utm_source=platformio&utm_medium=docs>`_
       - No
       - MK20DX128
-      - 48 MHz
-      - 128K
-      - 16K
+      - 48MHz
+      - 128KB
+      - 16KB
     * - ``teensy31``
       - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html?utm_source=platformio&utm_medium=docs>`_
-      - No
+      - :ref:`Yes <piodebug>`
       - MK20DX256
-      - 72 MHz
-      - 256K
-      - 64K
+      - 72MHz
+      - 256KB
+      - 64KB
     * - ``teensy35``
       - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK64FX512
-      - 120 MHz
-      - 512K
-      - 192K
+      - 120MHz
+      - 512KB
+      - 192KB
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK66FX1M0
-      - 180 MHz
-      - 1M
-      - 256K
+      - 180MHz
+      - 1MB
+      - 256KB
     * - ``teensylc``
       - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html?utm_source=platformio&utm_medium=docs>`_
-      - No
+      - :ref:`Yes <piodebug>`
       - MKL26Z64
-      - 48 MHz
-      - 62K
-      - 8K
+      - 48MHz
+      - 62KB
+      - 8KB

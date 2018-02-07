@@ -66,23 +66,23 @@ You do not need to use/buy external debugger.
       - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_ti-icdi` (on-board)
       - LPLM4F120H5QR
-      - 80 MHz
-      - 256K
-      - 32K
+      - 80MHz
+      - 256KB
+      - 32KB
     * - ``lptm4c1230c3pm``
       - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_ti-icdi` (on-board)
       - LPTM4C1230C3PM
-      - 80 MHz
-      - 256K
-      - 32K
+      - 80MHz
+      - 256KB
+      - 32KB
     * - ``lptm4c1294ncpdt``
       - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_ti-icdi` (on-board)
       - LPTM4C1294NCPDT
-      - 120 MHz
-      - 1M
-      - 256K
+      - 120MHz
+      - 1MB
+      - 256KB
 
 
 Packages
@@ -164,20 +164,20 @@ TI
       - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPLM4F120H5QR
-      - 80 MHz
-      - 256K
-      - 32K
+      - 80MHz
+      - 256KB
+      - 32KB
     * - ``lptm4c1230c3pm``
       - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPTM4C1230C3PM
-      - 80 MHz
-      - 256K
-      - 32K
+      - 80MHz
+      - 256KB
+      - 32KB
     * - ``lptm4c1294ncpdt``
       - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPTM4C1294NCPDT
-      - 120 MHz
-      - 1M
-      - 256K
+      - 120MHz
+      - 1MB
+      - 256KB

@@ -79,9 +79,9 @@ Adafruit
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 Arduino
 ~~~~~~~
@@ -102,41 +102,41 @@ Arduino
       - :ref:`Atmel SAM <platform_atmelsam>`
       - No
       - AT91SAM3X8E
-      - 84 MHz
-      - 512K
-      - 32K
+      - 84MHz
+      - 512KB
+      - 32KB
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - No
       - AT91SAM3X8E
-      - 84 MHz
-      - 512K
-      - 32K
+      - 84MHz
+      - 512KB
+      - 32KB
     * - ``megaatmega2560``
       - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <https://www.arduino.cc/en/Main/ArduinoBoardMega2560?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - No
       - ATMEGA2560
-      - 16 MHz
-      - 248K
-      - 8K
+      - 16MHz
+      - 248KB
+      - 8KB
     * - ``nanoatmega328``
       - `Arduino Nano ATmega328 <https://www.arduino.cc/en/Main/ArduinoBoardNano?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - No
       - ATMEGA328P
-      - 16 MHz
-      - 30K
-      - 2K
+      - 16MHz
+      - 30KB
+      - 2KB
     * - ``uno``
       - `Arduino Uno <https://www.arduino.cc/en/Main/ArduinoBoardUno?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
       - No
       - ATMEGA328P
-      - 16 MHz
-      - 31.50K
-      - 2K
+      - 16MHz
+      - 31.50KB
+      - 2KB
 
 Espressif
 ~~~~~~~~~
@@ -157,25 +157,25 @@ Espressif
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 512K
-      - 80K
+      - 80MHz
+      - 512KB
+      - 80KB
     * - ``esp12e``
       - `Espressif ESP8266 ESP-12E <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``esp_wroom_02``
       - `ESP-WROOM-02 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 MakerAsia
 ~~~~~~~~~
@@ -196,9 +196,9 @@ MakerAsia
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 NodeMCU
 ~~~~~~~
@@ -219,17 +219,17 @@ NodeMCU
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``nodemcuv2``
       - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -250,6 +250,6 @@ SeeedStudio
       - :ref:`Atmel AVR <platform_atmelavr>`
       - No
       - ATMEGA328P
-      - 16 MHz
-      - 31.50K
-      - 2K
+      - 16MHz
+      - 31.50KB
+      - 2KB

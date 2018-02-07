@@ -88,9 +88,9 @@ FPGAwars
       - `IceZUM Alhambra FPGA <https://github.com/FPGAwars/icezum/wiki?utm_source=platformio&utm_medium=docs>`_
       - No
       - ICE40-HX1K-TQ144
-      - 12 MHz
-      - 32K
-      - 32K
+      - 12MHz
+      - 32KB
+      - 32KB
 
 Lattice
 ~~~~~~~
@@ -109,6 +109,6 @@ Lattice
       - `Lattice iCEstick FPGA Evaluation Kit <http://www.latticesemi.com/icestick?utm_source=platformio&utm_medium=docs>`_
       - No
       - ICE40-HX1K-TQ144
-      - 12 MHz
-      - 32K
-      - 32K
+      - 12MHz
+      - 32KB
+      - 32KB

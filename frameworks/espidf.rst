@@ -67,9 +67,9 @@ Adafruit
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -90,9 +90,9 @@ Aiyarafun
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 April Brother
 ~~~~~~~~~~~~~
@@ -113,9 +113,9 @@ April Brother
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 DFRobot
 ~~~~~~~
@@ -136,9 +136,9 @@ DFRobot
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 DOIT
 ~~~~
@@ -159,9 +159,9 @@ DOIT
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Dongsen Technology
 ~~~~~~~~~~~~~~~~~~
@@ -182,9 +182,9 @@ Dongsen Technology
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 DycodeX
 ~~~~~~~
@@ -205,9 +205,9 @@ DycodeX
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 ESP32vn
 ~~~~~~~
@@ -228,9 +228,9 @@ ESP32vn
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Electronic SweetPeas
 ~~~~~~~~~~~~~~~~~~~~
@@ -251,9 +251,9 @@ Electronic SweetPeas
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Espressif
 ~~~~~~~~~
@@ -274,17 +274,17 @@ Espressif
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Heltec Automation
 ~~~~~~~~~~~~~~~~~
@@ -305,17 +305,17 @@ Heltec Automation
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``heltec_wifi_lora_32``
       - `Heltec WIFI LoRa 32 <http://www.heltec.cn?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Hornbill
 ~~~~~~~~
@@ -336,17 +336,17 @@ Hornbill
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 IntoRobot
 ~~~~~~~~~
@@ -367,9 +367,9 @@ IntoRobot
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 M5Stack
 ~~~~~~~
@@ -390,9 +390,9 @@ M5Stack
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 MH-ET Live
 ~~~~~~~~~~
@@ -413,17 +413,17 @@ MH-ET Live
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 MakerAsia
 ~~~~~~~~~
@@ -444,9 +444,9 @@ MakerAsia
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Microduino
 ~~~~~~~~~~
@@ -467,9 +467,9 @@ Microduino
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 NodeMCU
 ~~~~~~~
@@ -490,9 +490,9 @@ NodeMCU
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Noduino
 ~~~~~~~
@@ -513,9 +513,9 @@ Noduino
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 OLIMEX
 ~~~~~~
@@ -536,17 +536,17 @@ OLIMEX
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Onehorse
 ~~~~~~~~
@@ -567,9 +567,9 @@ Onehorse
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 SparkFun Electronics
 ~~~~~~~~~~~~~~~~~~~~
@@ -590,9 +590,9 @@ SparkFun Electronics
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 ThaiEasyElec
 ~~~~~~~~~~~~
@@ -613,9 +613,9 @@ ThaiEasyElec
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 WEMOS
 ~~~~~
@@ -636,17 +636,17 @@ WEMOS
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Widora
 ~~~~~~
@@ -667,9 +667,9 @@ Widora
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 u-blox
 ~~~~~~
@@ -690,6 +690,6 @@ u-blox
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB

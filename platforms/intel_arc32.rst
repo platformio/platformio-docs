@@ -103,6 +103,6 @@ Intel
       - `Arduino/Genuino 101 <https://www.arduino.cc/en/Main/ArduinoBoard101?utm_source=platformio&utm_medium=docs>`_
       - No
       - ARCV2EM
-      - 32 MHz
-      - 152K
-      - 80K
+      - 32MHz
+      - 152KB
+      - 80KB

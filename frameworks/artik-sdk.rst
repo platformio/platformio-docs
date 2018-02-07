@@ -67,9 +67,9 @@ RushUp
       - :ref:`Linux ARM <platform_linux_arm>`
       - No
       - EXYNOS3250
-      - 1000 MHz
-      - 4G
-      - 512M
+      - 1000MHz
+      - 4GB
+      - 512MB
 
 Samsung
 ~~~~~~~
@@ -90,30 +90,30 @@ Samsung
       - :ref:`Linux ARM <platform_linux_arm>`
       - No
       - EXYNOS5422
-      - 1500 MHz
-      - 16G
-      - 2G
+      - 1500MHz
+      - 16GB
+      - 2GB
     * - ``artik_520``
       - `Samsung ARTIK 520 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
       - No
       - EXYNOS3250
-      - 1000 MHz
-      - 4G
-      - 512M
+      - 1000MHz
+      - 4GB
+      - 512MB
     * - ``artik_530``
       - `Samsung ARTIK 530 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
       - No
       - S5P4418
-      - 1200 MHz
-      - 4G
-      - 512M
+      - 1200MHz
+      - 4GB
+      - 512MB
     * - ``artik_710``
       - `Samsung ARTIK 710 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
       - No
       - S5P6818
-      - 1400 MHz
-      - 4G
-      - 1G
+      - 1400MHz
+      - 4GB
+      - 1GB

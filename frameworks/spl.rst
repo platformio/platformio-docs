@@ -59,65 +59,65 @@ You do not need to use/buy external debugger.
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
       - STM32F417VGT6
-      - 168 MHz
-      - 1M
-      - 192K
+      - 168MHz
+      - 1MB
+      - 192KB
     * - ``armstrap_eagle2048``
       - `Armstrap Eagle 2048 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
       - STM32F427VIT6
-      - 168 MHz
-      - 1.99M
-      - 256K
+      - 168MHz
+      - 1.99MB
+      - 256KB
     * - ``armstrap_eagle512``
       - `Armstrap Eagle 512 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
       - STM32F407VET6
-      - 168 MHz
-      - 512K
-      - 192K
+      - 168MHz
+      - 512KB
+      - 192KB
     * - ``cloud_jam``
       - `RushUp Cloud-JAM <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
       - STM32F401RET6
-      - 84 MHz
-      - 512K
-      - 96K
+      - 84MHz
+      - 512KB
+      - 96KB
     * - ``disco_f303vc``
       - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (on-board)
       - STM32F303VCT6
-      - 72 MHz
-      - 256K
-      - 48K
+      - 72MHz
+      - 256KB
+      - 48KB
     * - ``disco_f407vg``
       - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (on-board)
       - STM32F407VGT6
-      - 168 MHz
-      - 1M
-      - 128K
+      - 168MHz
+      - 1MB
+      - 128KB
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
       - STM32L152RBT6
-      - 32 MHz
-      - 128K
-      - 16K
+      - 32MHz
+      - 128KB
+      - 16KB
     * - ``nucleo_f401re``
       - `ST Nucleo F401RE <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
       - STM32F401RET6
-      - 84 MHz
-      - 512K
-      - 96K
+      - 84MHz
+      - 512KB
+      - 96KB
 
 
 External tools
@@ -143,9 +143,9 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic` (default)
       - STM32F415RGT
-      - 168 MHz
-      - 1M
-      - 128K
+      - 168MHz
+      - 1MB
+      - 128KB
 
 
 Examples
@@ -191,9 +191,9 @@ Boards
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F415RGT
-      - 168 MHz
-      - 1M
-      - 128K
+      - 168MHz
+      - 1MB
+      - 128KB
 
 Armstrap
 ~~~~~~~~
@@ -214,25 +214,25 @@ Armstrap
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F417VGT6
-      - 168 MHz
-      - 1M
-      - 192K
+      - 168MHz
+      - 1MB
+      - 192KB
     * - ``armstrap_eagle2048``
       - `Armstrap Eagle 2048 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F427VIT6
-      - 168 MHz
-      - 1.99M
-      - 256K
+      - 168MHz
+      - 1.99MB
+      - 256KB
     * - ``armstrap_eagle512``
       - `Armstrap Eagle 512 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F407VET6
-      - 168 MHz
-      - 512K
-      - 192K
+      - 168MHz
+      - 512KB
+      - 192KB
 
 RushUp
 ~~~~~~
@@ -253,9 +253,9 @@ RushUp
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F401RET6
-      - 84 MHz
-      - 512K
-      - 96K
+      - 84MHz
+      - 512KB
+      - 96KB
 
 ST
 ~~
@@ -276,30 +276,30 @@ ST
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F303VCT6
-      - 72 MHz
-      - 256K
-      - 48K
+      - 72MHz
+      - 256KB
+      - 48KB
     * - ``disco_f407vg``
       - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F407VGT6
-      - 168 MHz
-      - 1M
-      - 128K
+      - 168MHz
+      - 1MB
+      - 128KB
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32L152RBT6
-      - 32 MHz
-      - 128K
-      - 16K
+      - 32MHz
+      - 128KB
+      - 16KB
     * - ``nucleo_f401re``
       - `ST Nucleo F401RE <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F401RET6
-      - 84 MHz
-      - 512K
-      - 96K
+      - 84MHz
+      - 512KB
+      - 96KB

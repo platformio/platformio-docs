@@ -69,39 +69,39 @@ You do not need to use/buy external debugger.
       - RAM
     * - ``delta_dfbm_nq620``
       - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (default, on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
     * - ``nrf52840_dk``
       - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
       - NRF52840
-      - 64 MHz
-      - 1M
-      - 256K
+      - 64MHz
+      - 1MB
+      - 256KB
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
     * - ``redbear_blend2``
       - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (default, on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
     * - ``ublox_evk_nina_b1``
       - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_stlink`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
 
 
 External tools
@@ -125,16 +125,16 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (default), :ref:`debugging_tool_stlink`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
     * - ``stct_nrf52_minidev``
       - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
 
 
 Packages
@@ -219,9 +219,9 @@ Delta
       - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
 
 Nordic
 ~~~~~~
@@ -240,16 +240,16 @@ Nordic
       - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF52840
-      - 64 MHz
-      - 1M
-      - 256K
+      - 64MHz
+      - 1MB
+      - 256KB
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
 
 RedBearLab
 ~~~~~~~~~~
@@ -268,16 +268,16 @@ RedBearLab
       - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
     * - ``redbear_blend2``
       - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
 
 Taida Century
 ~~~~~~~~~~~~~
@@ -296,9 +296,9 @@ Taida Century
       - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB
 
 u-blox
 ~~~~~~
@@ -317,6 +317,6 @@ u-blox
       - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF52832
-      - 64 MHz
-      - 512K
-      - 64K
+      - 64MHz
+      - 512KB
+      - 64KB

@@ -105,41 +105,41 @@ Maxim
       - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/?utm_source=platformio&utm_medium=docs>`_
       - No
       - MAX32600
-      - 24 MHz
-      - 256K
-      - 32K
+      - 24MHz
+      - 256KB
+      - 32KB
     * - ``max32620hsp``
       - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/?utm_source=platformio&utm_medium=docs>`_
       - No
       - MAX32620
-      - 96 MHz
-      - 2M
-      - 256K
+      - 96MHz
+      - 2MB
+      - 256KB
     * - ``max32625mbed``
       - `MAX32625MBED <https://os.mbed.com/platforms/MAX32625MBED/?utm_source=platformio&utm_medium=docs>`_
       - No
       - MAX32625
-      - 96 MHz
-      - 512K
-      - 160K
+      - 96MHz
+      - 512KB
+      - 160KB
     * - ``max32625nexpaq``
       - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/?utm_source=platformio&utm_medium=docs>`_
       - No
       - MAX32625
-      - 96 MHz
-      - 512K
-      - 160K
+      - 96MHz
+      - 512KB
+      - 160KB
     * - ``max32630fthr``
       - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/?utm_source=platformio&utm_medium=docs>`_
       - No
       - MAX32630
-      - 96 MHz
-      - 2M
-      - 512K
+      - 96MHz
+      - 2MB
+      - 512KB
     * - ``maxwsnenv``
       - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/?utm_source=platformio&utm_medium=docs>`_
       - No
       - MAX32610
-      - 24 MHz
-      - 256K
-      - 32K
+      - 24MHz
+      - 256KB
+      - 32KB

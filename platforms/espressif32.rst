@@ -132,9 +132,9 @@ Adafruit
       - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -153,9 +153,9 @@ Aiyarafun
       - `Node32s <http://www.ayarafun.com?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 April Brother
 ~~~~~~~~~~~~~
@@ -174,9 +174,9 @@ April Brother
       - `April Brother ESPea32 <https://blog.aprbrother.com/product/espea?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 DFRobot
 ~~~~~~~
@@ -195,9 +195,9 @@ DFRobot
       - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 DOIT
 ~~~~
@@ -216,9 +216,9 @@ DOIT
       - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Dongsen Technology
 ~~~~~~~~~~~~~~~~~~
@@ -237,9 +237,9 @@ Dongsen Technology
       - `Dongsen Tech Pocket 32 <http://dong-sen.com?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 DycodeX
 ~~~~~~~
@@ -258,9 +258,9 @@ DycodeX
       - `ESPectro32 <https://shop.makestro.com/product/espectro32?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 ESP32vn
 ~~~~~~~
@@ -279,9 +279,9 @@ ESP32vn
       - `ESP32vn IoT Uno <https://esp32.vn/?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Electronic SweetPeas
 ~~~~~~~~~~~~~~~~~~~~
@@ -300,9 +300,9 @@ Electronic SweetPeas
       - `Electronic SweetPeas ESP320 <http://www.sweetpeas.se/controller-modules/10-esp210.html?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Espressif
 ~~~~~~~~~
@@ -321,16 +321,16 @@ Espressif
       - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Heltec Automation
 ~~~~~~~~~~~~~~~~~
@@ -349,16 +349,16 @@ Heltec Automation
       - `Heltec WIFI Kit 32 <http://www.heltec.cn?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``heltec_wifi_lora_32``
       - `Heltec WIFI LoRa 32 <http://www.heltec.cn?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Hornbill
 ~~~~~~~~
@@ -377,16 +377,16 @@ Hornbill
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 IntoRobot
 ~~~~~~~~~
@@ -405,9 +405,9 @@ IntoRobot
       - `IntoRobot Fig <http://docs.intorobot.com/zh/hardware/fig/hardware/?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 M5Stack
 ~~~~~~~
@@ -426,9 +426,9 @@ M5Stack
       - `M5Stack Core ESP32 <http://www.m5stack.com?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 MH-ET Live
 ~~~~~~~~~~
@@ -447,16 +447,16 @@ MH-ET Live
       - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 MakerAsia
 ~~~~~~~~~
@@ -475,9 +475,9 @@ MakerAsia
       - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Microduino
 ~~~~~~~~~~
@@ -496,9 +496,9 @@ Microduino
       - `Microduino Core ESP32 <https://microduinoinc.com?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 NodeMCU
 ~~~~~~~
@@ -517,9 +517,9 @@ NodeMCU
       - `NodeMCU-32S <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Noduino
 ~~~~~~~
@@ -538,9 +538,9 @@ Noduino
       - `Noduino Quantum <http://wiki.jackslab.org/Noduino?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 OLIMEX
 ~~~~~~
@@ -559,16 +559,16 @@ OLIMEX
       - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Onehorse
 ~~~~~~~~
@@ -587,9 +587,9 @@ Onehorse
       - `Onehorse ESP32 Dev Module <https://www.tindie.com/products/onehorse/esp32-development-board/?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 SparkFun Electronics
 ~~~~~~~~~~~~~~~~~~~~
@@ -608,9 +608,9 @@ SparkFun Electronics
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 ThaiEasyElec
 ~~~~~~~~~~~~
@@ -629,9 +629,9 @@ ThaiEasyElec
       - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 WEMOS
 ~~~~~
@@ -650,16 +650,16 @@ WEMOS
       - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 Widora
 ~~~~~~
@@ -678,9 +678,9 @@ Widora
       - `Widora AIR <http://widora.io?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB
 
 u-blox
 ~~~~~~
@@ -699,6 +699,6 @@ u-blox
       - `u-blox NINA-W10 series <https://www.u-blox.com/en/product/nina-w10-series?utm_source=platformio&utm_medium=docs>`_
       - No
       - ESP32
-      - 240 MHz
-      - 1.25M
-      - 288K
+      - 240MHz
+      - 1.25MB
+      - 288KB

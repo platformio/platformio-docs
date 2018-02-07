@@ -67,23 +67,23 @@ You do not need to use/buy external debugger.
       - `WIZNet WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board)
       - WIZNET7500
-      - 48 MHz
-      - 128K
-      - 48K
+      - 48MHz
+      - 128KB
+      - 48KB
     * - ``wizwiki_w7500eco``
       - `WIZNet WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board)
       - WIZNET7500ECO
-      - 48 MHz
-      - 128K
-      - 48K
+      - 48MHz
+      - 128KB
+      - 48KB
     * - ``wizwiki_w7500p``
       - `WIZNet WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board)
       - WIZNET7500P
-      - 48 MHz
-      - 128K
-      - 48K
+      - 48MHz
+      - 128KB
+      - 48KB
 
 
 Packages
@@ -156,20 +156,20 @@ WIZNet
       - `WIZNet WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - WIZNET7500
-      - 48 MHz
-      - 128K
-      - 48K
+      - 48MHz
+      - 128KB
+      - 48KB
     * - ``wizwiki_w7500eco``
       - `WIZNet WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - WIZNET7500ECO
-      - 48 MHz
-      - 128K
-      - 48K
+      - 48MHz
+      - 128KB
+      - 48KB
     * - ``wizwiki_w7500p``
       - `WIZNet WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - WIZNET7500P
-      - 48 MHz
-      - 128K
-      - 48K
+      - 48MHz
+      - 128KB
+      - 48KB

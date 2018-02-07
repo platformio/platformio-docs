@@ -90,30 +90,30 @@ Raspberry Pi
       - `Raspberry Pi 1 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - No
       - BCM2835
-      - 700 MHz
-      - 512M
-      - 512M
+      - 700MHz
+      - 512MB
+      - 512MB
     * - ``raspberrypi_2b``
       - `Raspberry Pi 2 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - No
       - BCM2836
-      - 900 MHz
-      - 1G
-      - 1G
+      - 900MHz
+      - 1GB
+      - 1GB
     * - ``raspberrypi_3b``
       - `Raspberry Pi 3 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - No
       - BCM2837
-      - 1200 MHz
-      - 1G
-      - 1G
+      - 1200MHz
+      - 1GB
+      - 1GB
     * - ``raspberrypi_zero``
       - `Raspberry Pi Zero <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - No
       - BCM2835
-      - 1000 MHz
-      - 512M
-      - 512M
+      - 1000MHz
+      - 512MB
+      - 512MB
 
 RushUp
 ~~~~~~
@@ -132,9 +132,9 @@ RushUp
       - `RushUp Kitra 520 <https://www.rushup.tech/kitra?utm_source=platformio&utm_medium=docs>`_
       - No
       - EXYNOS3250
-      - 1000 MHz
-      - 4G
-      - 512M
+      - 1000MHz
+      - 4GB
+      - 512MB
 
 Samsung
 ~~~~~~~
@@ -153,27 +153,27 @@ Samsung
       - `Samsung ARTIK 1020 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - No
       - EXYNOS5422
-      - 1500 MHz
-      - 16G
-      - 2G
+      - 1500MHz
+      - 16GB
+      - 2GB
     * - ``artik_520``
       - `Samsung ARTIK 520 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - No
       - EXYNOS3250
-      - 1000 MHz
-      - 4G
-      - 512M
+      - 1000MHz
+      - 4GB
+      - 512MB
     * - ``artik_530``
       - `Samsung ARTIK 530 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - No
       - S5P4418
-      - 1200 MHz
-      - 4G
-      - 512M
+      - 1200MHz
+      - 4GB
+      - 512MB
     * - ``artik_710``
       - `Samsung ARTIK 710 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - No
       - S5P6818
-      - 1400 MHz
-      - 4G
-      - 1G
+      - 1400MHz
+      - 4GB
+      - 1GB

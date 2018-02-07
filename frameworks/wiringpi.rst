@@ -67,30 +67,30 @@ Raspberry Pi
       - :ref:`Linux ARM <platform_linux_arm>`
       - No
       - BCM2835
-      - 700 MHz
-      - 512M
-      - 512M
+      - 700MHz
+      - 512MB
+      - 512MB
     * - ``raspberrypi_2b``
       - `Raspberry Pi 2 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
       - No
       - BCM2836
-      - 900 MHz
-      - 1G
-      - 1G
+      - 900MHz
+      - 1GB
+      - 1GB
     * - ``raspberrypi_3b``
       - `Raspberry Pi 3 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
       - No
       - BCM2837
-      - 1200 MHz
-      - 1G
-      - 1G
+      - 1200MHz
+      - 1GB
+      - 1GB
     * - ``raspberrypi_zero``
       - `Raspberry Pi Zero <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
       - No
       - BCM2835
-      - 1000 MHz
-      - 512M
-      - 512M
+      - 1000MHz
+      - 512MB
+      - 512MB

@@ -67,9 +67,9 @@ Boards
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 512K
-      - 80K
+      - 80MHz
+      - 512KB
+      - 80KB
 
 Adafruit
 ~~~~~~~~
@@ -90,9 +90,9 @@ Adafruit
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 Doit
 ~~~~
@@ -113,9 +113,9 @@ Doit
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 DycodeX
 ~~~~~~~
@@ -136,9 +136,9 @@ DycodeX
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 ESPert
 ~~~~~~
@@ -159,17 +159,17 @@ ESPert
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``espresso_lite_v2``
       - `ESPresso Lite 2.0 <http://www.espert.co?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 ESPino
 ~~~~~~
@@ -190,9 +190,9 @@ ESPino
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 Espressif
 ~~~~~~~~~
@@ -213,73 +213,73 @@ Espressif
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 512K
-      - 80K
+      - 80MHz
+      - 512KB
+      - 80KB
     * - ``esp01_1m``
       - `Espressif Generic ESP8266 ESP-01 1M <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 1M
-      - 80K
+      - 80MHz
+      - 1MB
+      - 80KB
     * - ``esp07``
       - `Espressif Generic ESP8266 ESP-07 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs#esp-07>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``esp12e``
       - `Espressif ESP8266 ESP-12E <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``esp8285``
       - `Generic ESP8285 Module <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 423.98K
-      - 80K
+      - 80MHz
+      - 423.98KB
+      - 80KB
     * - ``esp_wroom_02``
       - `ESP-WROOM-02 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``phoenix_v1``
       - `Phoenix 1.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``phoenix_v2``
       - `Phoenix 2.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``wifinfo``
       - `WifInfo <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 1M
-      - 80K
+      - 80MHz
+      - 1MB
+      - 80KB
 
 Heltec
 ~~~~~~
@@ -300,9 +300,9 @@ Heltec
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 NodeMCU
 ~~~~~~~
@@ -323,17 +323,17 @@ NodeMCU
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``nodemcuv2``
       - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 Olimex
 ~~~~~~
@@ -354,9 +354,9 @@ Olimex
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 2M
-      - 80K
+      - 80MHz
+      - 2MB
+      - 80KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -377,9 +377,9 @@ SeeedStudio
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 SparkFun
 ~~~~~~~~
@@ -400,25 +400,25 @@ SparkFun
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``thing``
       - `SparkFun ESP8266 Thing <https://www.sparkfun.com/products/13231?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 512K
-      - 80K
+      - 80MHz
+      - 512KB
+      - 80KB
     * - ``thingdev``
       - `SparkFun ESP8266 Thing Dev <https://www.sparkfun.com/products/13231?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 512K
-      - 80K
+      - 80MHz
+      - 512KB
+      - 80KB
 
 SweetPea
 ~~~~~~~~
@@ -439,9 +439,9 @@ SweetPea
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 ThaiEasyElec
 ~~~~~~~~~~~~
@@ -462,9 +462,9 @@ ThaiEasyElec
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
 
 WEMOS
 ~~~~~
@@ -485,22 +485,22 @@ WEMOS
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``d1_mini``
       - `WeMos D1 R2 & mini <https://wiki.wemos.cc/products:d1:d1_mini?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 4M
-      - 80K
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``d1_mini_pro``
       - `WeMos D1 mini Pro <https://wiki.wemos.cc/products:d1:d1_mini?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
       - No
       - ESP8266
-      - 80 MHz
-      - 16M
-      - 80K
+      - 80MHz
+      - 16MB
+      - 80KB
