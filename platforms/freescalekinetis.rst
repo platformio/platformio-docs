@@ -176,6 +176,28 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 256KB
 
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-freescalekinetis/releases>`__
+of Freescale Kinetis development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =freescalekinetis@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-freescalekinetis.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

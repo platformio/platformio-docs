@@ -41,6 +41,28 @@ Examples are listed from `Espressif 32 development platform repository <https://
 * `pumbaa-blink <https://github.com/platformio/platform-espressif32/tree/develop/examples/pumbaa-blink?utm_source=platformio&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-espressif32/tree/develop/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-espressif32/releases>`__
+of Espressif 32 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =espressif32@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-espressif32.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

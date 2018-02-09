@@ -85,6 +85,28 @@ You do not need to use/buy external debugger.
       - 256KB
 
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-titiva/releases>`__
+of TI TIVA development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =titiva@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-titiva.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

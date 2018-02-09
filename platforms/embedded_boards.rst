@@ -5411,7 +5411,7 @@ WIZNet
       - Flash
       - RAM
     * - ``wizwiki_w7500``
-      - `WIZNet WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
+      - `WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`WIZNet W7500 <platform_wiznet7500>`
       - :ref:`Yes <piodebug>`
       - WIZNET7500
@@ -5419,7 +5419,7 @@ WIZNet
       - 128KB
       - 48KB
     * - ``wizwiki_w7500eco``
-      - `WIZNet WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`_
+      - `WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`WIZNet W7500 <platform_wiznet7500>`
       - :ref:`Yes <piodebug>`
       - WIZNET7500ECO
@@ -5427,7 +5427,7 @@ WIZNet
       - 128KB
       - 48KB
     * - ``wizwiki_w7500p``
-      - `WIZNet WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/?utm_source=platformio&utm_medium=docs>`_
+      - `WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`WIZNet W7500 <platform_wiznet7500>`
       - :ref:`Yes <piodebug>`
       - WIZNET7500P

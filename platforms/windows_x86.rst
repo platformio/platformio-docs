@@ -31,6 +31,28 @@ Examples are listed from `Windows x86 development platform repository <https://g
 
 * `hello-world <https://github.com/platformio/platform-windows_x86/tree/develop/examples/hello-world?utm_source=platformio&utm_medium=docs>`_
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-windows_x86/releases>`__
+of Windows x86 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =windows_x86@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-windows_x86.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

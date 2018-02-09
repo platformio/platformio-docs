@@ -71,6 +71,28 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 1.25MB
 
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-samsung_artik/releases>`__
+of Samsung ARTIK development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =samsung_artik@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-samsung_artik.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

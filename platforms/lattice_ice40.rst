@@ -32,6 +32,28 @@ Examples are listed from `Lattice iCE40 development platform repository <https:/
 * `counter <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples/counter?utm_source=platformio&utm_medium=docs>`_
 * `leds <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples/leds?utm_source=platformio&utm_medium=docs>`_
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-lattice_ice40/releases>`__
+of Lattice iCE40 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =lattice_ice40@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-lattice_ice40.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

@@ -137,6 +137,28 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 64KB
 
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-nordicnrf52/releases>`__
+of Nordic nRF52 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =nordicnrf52@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-nordicnrf52.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

@@ -39,6 +39,28 @@ Examples are listed from `Espressif 8266 development platform repository <https:
 * `native-sdk <https://github.com/platformio/platform-espressif8266/tree/develop/examples/native-sdk?utm_source=platformio&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-espressif8266/tree/develop/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-espressif8266/releases>`__
+of Espressif 8266 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =espressif8266@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-espressif8266.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

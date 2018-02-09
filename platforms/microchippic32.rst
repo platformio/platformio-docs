@@ -32,6 +32,28 @@ Examples are listed from `Microchip PIC32 development platform repository <https
 * `arduino-blink <https://github.com/platformio/platform-microchippic32/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-microchippic32/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-microchippic32/releases>`__
+of Microchip PIC32 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =microchippic32@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-microchippic32.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

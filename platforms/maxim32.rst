@@ -35,6 +35,28 @@ Examples are listed from `Maxim 32 development platform repository <https://gith
 * `mbed-rtos <https://github.com/platformio/platform-maxim32/tree/develop/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-maxim32/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-maxim32/releases>`__
+of Maxim 32 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =maxim32@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-maxim32.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

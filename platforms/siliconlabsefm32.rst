@@ -106,6 +106,28 @@ You do not need to use/buy external debugger.
       - 4KB
 
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-siliconlabsefm32/releases>`__
+of Silicon Labs EFM32 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =siliconlabsefm32@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-siliconlabsefm32.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

@@ -32,6 +32,28 @@ Examples are listed from `Linux ARM development platform repository <https://git
 * `wiringpi-blink <https://github.com/platformio/platform-linux_arm/tree/develop/examples/wiringpi-blink?utm_source=platformio&utm_medium=docs>`_
 * `wiringpi-serial <https://github.com/platformio/platform-linux_arm/tree/develop/examples/wiringpi-serial?utm_source=platformio&utm_medium=docs>`_
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-linux_arm/releases>`__
+of Linux ARM development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =linux_arm@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-linux_arm.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

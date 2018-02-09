@@ -39,6 +39,28 @@ Examples are listed from `Atmel AVR development platform repository <https://git
 * `native-blink <https://github.com/platformio/platform-atmelavr/tree/develop/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-atmelavr/tree/develop/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-atmelavr/releases>`__
+of Atmel AVR development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =atmelavr@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-atmelavr.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

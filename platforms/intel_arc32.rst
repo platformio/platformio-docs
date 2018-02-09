@@ -33,6 +33,28 @@ Examples are listed from `Intel ARC32 development platform repository <https://g
 * `arduino-curie-imu <https://github.com/platformio/platform-intel_arc32/tree/develop/examples/arduino-curie-imu?utm_source=platformio&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-intel_arc32/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-intel_arc32/releases>`__
+of Intel ARC32 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =intel_arc32@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-intel_arc32.git
+    board = ...
+    ...
+
+
 Packages
 --------
 

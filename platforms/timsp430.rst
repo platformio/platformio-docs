@@ -106,6 +106,28 @@ You do not need to use/buy external debugger.
       - 512B
 
 
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-timsp430/releases>`__
+of TI MSP430 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =timsp430@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-timsp430.git
+    board = ...
+    ...
+
+
 Packages
 --------
 
