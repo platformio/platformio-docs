@@ -251,7 +251,7 @@ Manifest File ``platform.json``
       "title": "My Platform",
       "description": "My custom development platform",
       "url": "http://example.com",
-      "homepage": "http://platformio.org/platforms/myplatform",
+      "homepage": "https://platformio.org/platforms/myplatform",
       "license": "Apache-2.0",
       "engines": {
         "platformio": "~3.0.0",

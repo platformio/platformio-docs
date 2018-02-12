@@ -83,7 +83,7 @@ need to specify ``board_mcu``, ``board_f_cpu``, ``upload_protocol`` or
 pre-fill options described above with appropriate values.
 
 You can find the ``board`` type in *Boards* section of each :ref:`platforms` or
-using `PlatformIO Embedded Boards Explorer <http://platformio.org/boards>`_.
+using `PlatformIO Embedded Boards Explorer <https://platformio.org/boards>`_.
 
 .. _projectconf_targets:
 

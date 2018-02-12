@@ -184,7 +184,7 @@ Workflow
 
         ;
         ; Desktop platforms (Win, Mac, Linux, Raspberry Pi, etc)
-        ; See http://platformio.org/platforms/native
+        ; See https://platformio.org/platforms/native
         ;
 
         [env:native]

@@ -106,7 +106,7 @@ Install dependent library using :ref:`librarymanager`
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # http://platformio.org/lib/show/1/OneWire
+        # https://platformio.org/lib/show/1/OneWire
         - platformio lib -g install 1
 
 Manually download dependent library and include in build process via ``--lib`` option
@@ -187,8 +187,8 @@ Examples
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # http://platformio.org/lib/show/416/TinyGPS
-        # http://platformio.org/lib/show/417/SPI4Teensy3
+        # https://platformio.org/lib/show/416/TinyGPS
+        # https://platformio.org/lib/show/417/SPI4Teensy3
         - platformio lib -g install 416 417
 
     script:
@@ -247,7 +247,7 @@ Examples
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # http://platformio.org/lib/show/416/TinyGPS
+        # https://platformio.org/lib/show/416/TinyGPS
         - platformio lib -g install 416 421 422
 
     script:
@@ -277,19 +277,19 @@ Examples
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # http://platformio.org/lib/show/44/Time
-        # http://platformio.org/lib/show/419/SimpleTimer
+        # https://platformio.org/lib/show/44/Time
+        # https://platformio.org/lib/show/419/SimpleTimer
         #
-        # http://platformio.org/lib/show/17/Adafruit-CC3000
-        # http://platformio.org/lib/show/28/SPI4Teensy3
-        # http://platformio.org/lib/show/91/UIPEthernet
-        # http://platformio.org/lib/show/418/WildFireCore
-        # http://platformio.org/lib/show/420/WildFire-CC3000
-        # http://platformio.org/lib/show/65/WiFlyHQ
-        # http://platformio.org/lib/show/19/Adafruit-DHT
-        # http://platformio.org/lib/show/299/WiFi101
-        # http://platformio.org/lib/show/259/BLEPeripheral
-        # http://platformio.org/lib/show/177/Adafruit_BluefruitLE_nRF51
+        # https://platformio.org/lib/show/17/Adafruit-CC3000
+        # https://platformio.org/lib/show/28/SPI4Teensy3
+        # https://platformio.org/lib/show/91/UIPEthernet
+        # https://platformio.org/lib/show/418/WildFireCore
+        # https://platformio.org/lib/show/420/WildFire-CC3000
+        # https://platformio.org/lib/show/65/WiFlyHQ
+        # https://platformio.org/lib/show/19/Adafruit-DHT
+        # https://platformio.org/lib/show/299/WiFi101
+        # https://platformio.org/lib/show/259/BLEPeripheral
+        # https://platformio.org/lib/show/177/Adafruit_BluefruitLE_nRF51
 
         - platformio lib -g install 17 28 91 418 419 420 65 44 19 299 259 177 https://github.com/vshymanskyy/BlynkESP8266.git https://github.com/cmaglie/FlashStorage.git https://github.com/michael71/Timer5.git
 

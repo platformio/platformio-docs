@@ -49,20 +49,20 @@ Let's add some actual code to the project. Firstly, we open a default main file 
 .. code-block:: cpp
 
     #include <Arduino.h>
- 
+
     void setup()
     {
         pinMode(LED_BUILTIN, OUTPUT);
     }
-     
+
     void loop()
     {
         digitalWrite(LED_BUILTIN, HIGH);
         delay(100);
         digitalWrite(LED_BUILTIN, LOW);
         delay(100);
-    } 
- 
+    }
+
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-3.png
 
 After this step, we created a basic blink project ready for compiling and uploading.
@@ -169,24 +169,24 @@ Also, we need to wrap the main file using ``UNIT_TEST`` define:
 .. code-block:: cpp
 
     #include <Arduino.h>
-     
+
     #ifndef UNIT_TEST // <<
 
     void setup()
     {
         pinMode(LED_BUILTIN, OUTPUT);
     }
-     
+
     void loop()
     {
         digitalWrite(LED_BUILTIN, HIGH);
         delay(100);
         digitalWrite(LED_BUILTIN, LOW);
         delay(100);
-    } 
+    }
 
     #endif // <<
- 
+
 
 Now we are ready to upload tests to the board. To do this we can use ``Tasks: Run Task... > PlatformIO Test`` from top menu:
 
@@ -202,7 +202,7 @@ Adding Bluetooth LE features
 ----------------------------
 
 To add the basic BLE functionality to our project we need to define the SoftDevice version
-and install a library called `BLEPeripheral <http://platformio.org/lib/show/259/BLEPeripheral>`_. 
+and install a library called `BLEPeripheral <https://platformio.org/lib/show/259/BLEPeripheral>`_.
 Both these modifications can be specified in :ref:`projectconf`:
 
 
@@ -214,7 +214,7 @@ Both these modifications can be specified in :ref:`projectconf`:
     framework = arduino
     ; SoftDevice version
     build_flags = -DNRF52_S132
-    lib_deps = 
+    lib_deps =
       BLEPeripheral
 
 Now let's create a basic application that can interact with other BLE devices (e.g phone)
@@ -265,7 +265,7 @@ For example, next code declares a BLE characteristic that controls the state of 
     #endif
 
 Now we can compile and upload this program to the board as described in previous sections.
-To verify that our application works as expected, we can use any Android smartphone with BLE feature and 
+To verify that our application works as expected, we can use any Android smartphone with BLE feature and
 `Nordic nRF Connect tool <https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en>`_.
 
 At first, we need to scan all advertising BLE devices and connect to the device called ``Nordic NRF52 DK``.

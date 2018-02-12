@@ -27,7 +27,7 @@ Usage
 Description
 -----------
 
-Search for library in `PlatformIO Library Registry <http://platformio.org/lib>`_
+Search for library in `PlatformIO Library Registry <https://platformio.org/lib>`_
 by :ref:`library_config` fields in the boolean mode.
 
 The boolean search capability supports the following operators:
@@ -173,7 +173,7 @@ Examples
     Show next libraries? [y/N]:
     ...
 
-2. Search for `1-Wire libraries <http://platformio.org/lib/search?query=%25221-wire%2522>`_
+2. Search for `1-Wire libraries <https://platformio.org/lib/search?query=%25221-wire%2522>`_
 
 .. code::
 
@@ -204,7 +204,7 @@ Examples
     Show next libraries? [y/N]:
     ...
 
-3. Search for `Arduino-based "I2C" libraries <http://platformio.org/lib/search?query=framework%253Aarduino%2520i2c>`_
+3. Search for `Arduino-based "I2C" libraries <https://platformio.org/lib/search?query=framework%253Aarduino%2520i2c>`_
 
 .. code::
 
@@ -245,7 +245,7 @@ Examples
     Show next libraries? [y/N]:
     ...
 
-4. Search for `libraries by "web" and "http" keywords <http://platformio.org/lib/search?query=keyword%253A%2522web%2522%2520keyword%253A%2522http%2522>`_.
+4. Search for `libraries by "web" and "http" keywords <https://platformio.org/lib/search?query=keyword%253A%2522web%2522%2520keyword%253A%2522http%2522>`_.
 
 .. code::
 
@@ -296,7 +296,7 @@ Examples
     Show next libraries? [y/N]:
     ...
 
-5. Search for `libraries by "Adafruit Industries" author <http://platformio.org/lib/search?query=author%253A%2522Adafruit%20Industries%2522>`_
+5. Search for `libraries by "Adafruit Industries" author <https://platformio.org/lib/search?query=author%253A%2522Adafruit%20Industries%2522>`_
 
 .. code::
 
@@ -327,7 +327,7 @@ Examples
     Show next libraries? [y/N]:
     ...
 
-6. Search for `libraries which are compatible with Dallas temperature sensors <http://platformio.org/lib/search?query=DS*>`_
+6. Search for `libraries which are compatible with Dallas temperature sensors <https://platformio.org/lib/search?query=DS*>`_
    like DS18B20, DS18S20 and etc.
 
 .. code::
@@ -359,7 +359,7 @@ Examples
     Show next libraries? [y/N]:
     ...
 
-7. Search for `Energia-based *nRF24* or *HttpClient* libraries <http://platformio.org/lib/search?query=framework%253Aenergia%2520%252B(nRF24%2520HttpClient)>`_.
+7. Search for `Energia-based *nRF24* or *HttpClient* libraries <https://platformio.org/lib/search?query=framework%253Aenergia%2520%252B(nRF24%2520HttpClient)>`_.
    The search query that is described below can be interpreted like
    ``energia nRF24 OR energia HttpClient``
 
@@ -403,7 +403,7 @@ Examples
     ...
 
 
-8. Search for the `all sensor libraries excluding temperature <http://platformio.org/lib/search?query=sensor%2520-temperature>`_.
+8. Search for the `all sensor libraries excluding temperature <https://platformio.org/lib/search?query=sensor%2520-temperature>`_.
 
 .. code::
 

@@ -17,7 +17,7 @@ Windows x86
 
 Windows x86 (32-bit) is a metafamily of graphical operating systems developed and marketed by Microsoft. Using host OS (Windows, Linux 32/64 or Mac OS X) you can build native application for Windows x86 platform.
 
-For more detailed information please visit `vendor site <http://platformio.org/platforms/windows_x86?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://platformio.org/platforms/windows_x86?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:

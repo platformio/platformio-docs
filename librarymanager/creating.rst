@@ -53,7 +53,7 @@ you **need to specify** only these fields in the :ref:`library_config`:
 |PIOAPICR| will populate the rest fields, like :ref:`libjson_authors` with an
 actual information from *GitHub*.
 
-Example, `DallasTemperature <http://platformio.org/lib/show/54/DallasTemperature/manifest>`_:
+Example, `DallasTemperature <https://platformio.org/lib/show/54/DallasTemperature/manifest>`_:
 
 .. code-block:: javascript
 
@@ -192,6 +192,6 @@ Command:
 
     $ platformio lib register http://my.example.com/library.json
 
-* `GitHub + fixed release <http://platformio.org/lib/show/552/ACNoblex>`_
-* `Dependencies by author and framework <http://platformio.org/lib/show/3/PID-AutoTune>`_
+* `GitHub + fixed release <https://platformio.org/lib/show/552/ACNoblex>`_
+* `Dependencies by author and framework <https://platformio.org/lib/show/3/PID-AutoTune>`_
 * `Multiple libraries in the one repository <https://github.com/jrowberg/i2cdevlib/tree/master/Arduino>`_

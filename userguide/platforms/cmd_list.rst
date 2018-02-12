@@ -50,7 +50,7 @@ Examples
     ====================
     Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
-    Home: http://platformio.org/platforms/atmelavr
+    Home: https://platformio.org/platforms/atmelavr
     Packages: toolchain-atmelavr, framework-simba
     Version: 0.0.0
 
@@ -58,7 +58,7 @@ Examples
     ====================
     Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
-    Home: http://platformio.org/platforms/atmelsam
+    Home: https://platformio.org/platforms/atmelsam
     Packages: framework-arduinosam, framework-mbed, framework-simba, toolchain-gccarmnoneeabi, tool-bossac
     Version: 0.0.0
 
@@ -66,7 +66,7 @@ Examples
     ==============================
     Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-    Home: http://platformio.org/platforms/espressif8266
+    Home: https://platformio.org/platforms/espressif8266
     Packages: framework-simba, tool-esptool, framework-arduinoespressif8266, sdk-esp8266, toolchain-xtensa
     Version: 0.0.0
     ...

@@ -27,7 +27,7 @@ Usage
 Description
 -----------
 
-Register new library in `PlatformIO Library Registry <http://platformio.org/lib>`_.
+Register new library in `PlatformIO Library Registry <https://platformio.org/lib>`_.
 
 PlatformIO Library Registry supports the next library manifests:
 

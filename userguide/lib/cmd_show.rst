@@ -29,7 +29,7 @@ Description
 -----------
 
 Show detailed info about a library using
-`PlatformIO Library Registry <http://platformio.org/lib>`_.
+`PlatformIO Library Registry <https://platformio.org/lib>`_.
 
 The possible values for ``[LIBRARY]``:
 
