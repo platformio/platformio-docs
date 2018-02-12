@@ -24,6 +24,53 @@ For more detailed information please visit `vendor site <http://simba-os.readthe
     :local:
     :depth: 1
 
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+External tools
+~~~~~~~~~~~~~~
+
+Boards listed below are compatible with :ref:`piodebug` but depend on external
+debugging tools. See "Debug" column for compatible debugging tools.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``due``
+      - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 32KB
+    * - ``dueUSB``
+      - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 32KB
+
+
 Examples
 --------
 
@@ -100,7 +147,7 @@ Arduino
     * - ``due``
       - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -108,7 +155,7 @@ Arduino
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB

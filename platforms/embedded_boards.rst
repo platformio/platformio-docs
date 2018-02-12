@@ -134,7 +134,7 @@ Adafruit
       - Flash
       - RAM
     * - ``adafruit_circuitplayground_m0``
-      - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3000?utm_source=platformio&utm_medium=docs>`_
+      - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3333?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
@@ -152,7 +152,7 @@ Adafruit
     * - ``adafruit_feather_m0_express``
       - `Adafruit Feather M0 Express <https://www.adafruit.com/product/3403?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -160,7 +160,7 @@ Adafruit
     * - ``adafruit_gemma_m0``
       - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - SAMD21E18A
       - 48MHz
       - 256KB
@@ -176,7 +176,7 @@ Adafruit
     * - ``adafruit_trinket_m0``
       - `Adafruit Trinket M0 <https://www.adafruit.com/product/3500?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - SAMD21E18A
       - 48MHz
       - 256KB
@@ -521,7 +521,7 @@ Arduino
     * - ``due``
       - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -529,7 +529,7 @@ Arduino
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -647,17 +647,33 @@ Arduino
       - 256KB
       - 32KB
     * - ``mkrfox1200``
-      - `Arduino MKRFox1200 <https://www.arduino.cc/en/Main.ArduinoBoardMKRFox1200?utm_source=platformio&utm_medium=docs>`_
+      - `Arduino MKR FOX 1200 <https://www.arduino.cc/en/Main.ArduinoBoardMKRFox1200?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``mkrgsm1400``
+      - `Arduino MKR GSM 1400 <https://store.arduino.cc/mkr-gsm-1400?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``mkrwan1300``
+      - `Arduino MKR WAN 1300 <https://store.arduino.cc/mkr-wan-1300?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - ``mkrzero``
-      - `Arduino MKRZero <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero?utm_source=platformio&utm_medium=docs>`_
+      - `Arduino MKRZERO <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -681,7 +697,7 @@ Arduino
     * - ``mzeroproUSB``
       - `Arduino M0 Pro (Native USB Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -753,7 +769,7 @@ Arduino
     * - ``tian``
       - `Arduino Tian <https://www.arduino.cc/en/Main/ArduinoBoardTian?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -793,7 +809,7 @@ Arduino
     * - ``zeroUSB``
       - `Arduino Zero (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -1331,7 +1347,7 @@ Digistump
     * - ``digix``
       - `Digistump DigiX <http://digistump.com/products/50?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -2631,7 +2647,7 @@ Macchina
     * - ``macchina2``
       - `Macchina M2 <https://www.macchina.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -2677,7 +2693,7 @@ Maxim
     * - ``max32600mbed``
       - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - MAX32600
       - 24MHz
       - 256KB
@@ -2717,7 +2733,7 @@ Maxim
     * - ``maxwsnenv``
       - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Maxim 32 <platform_maxim32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - MAX32610
       - 24MHz
       - 256KB
@@ -3893,7 +3909,7 @@ SODAQ
     * - ``sodaq_autonomo``
       - `SODAQ Autonomo <http://support.sodaq.com/sodaq-one/autonomo/getting-started-autonomo/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - SAMD21J18A
       - 48MHz
       - 256KB
@@ -4371,7 +4387,7 @@ SainSmart
     * - ``sainSmartDue``
       - `SainSmart Due (Programming Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -4379,7 +4395,7 @@ SainSmart
     * - ``sainSmartDueUSB``
       - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
-      - No
+      - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB

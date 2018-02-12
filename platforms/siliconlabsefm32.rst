@@ -64,42 +64,42 @@ You do not need to use/buy external debugger.
       - RAM
     * - ``efm32gg_stk3700``
       - `Silicon Labs EFM32GG-STK3700 (Giant Gecko) <https://developer.mbed.org/platforms/EFM32-Giant-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (on-board)
       - EFM32GG990F1024
       - 48MHz
       - 1MB
       - 128KB
     * - ``efm32hg_stk3400``
       - `Silicon Labs SLSTK3400A USB-enabled (Happy Gecko) <https://developer.mbed.org/platforms/EFM32-Happy-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (on-board)
       - EFM32HG322F64
       - 24MHz
       - 64KB
       - 8KB
     * - ``efm32lg_stk3600``
       - `Silicon Labs EFM32LG-STK3600 (Leopard Gecko) <https://developer.mbed.org/platforms/EFM32-Leopard-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (on-board)
       - EFM32LG990F256
       - 48MHz
       - 256KB
       - 32KB
     * - ``efm32pg_stk3401``
       - `Silicon Labs SLSTK3401A (Pearl Gecko) <https://developer.mbed.org/platforms/EFM32-Pearl-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (on-board)
       - EFM32PG1B200F256
       - 40MHz
       - 256KB
       - 32KB
     * - ``efm32wg_stk3800``
       - `Silicon Labs EFM32WG-STK3800 (Wonder Gecko) <https://developer.mbed.org/platforms/EFM32-Wonder-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (on-board)
       - EFM32WG990F256
       - 48MHz
       - 256KB
       - 32KB
     * - ``efm32zg_stk3200``
       - `Silicon Labs EFM32ZG-STK3200 (Zero Gecko) <https://developer.mbed.org/platforms/EFM32-Zero-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (on-board)
       - EFM32ZG222F32
       - 24MHz
       - 32KB
