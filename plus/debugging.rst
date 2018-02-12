@@ -38,6 +38,7 @@ A registration is **FREE**.
 
 .. contents:: Contents
     :local:
+    :depth: 1
 
 Tutorials
 ---------
@@ -79,6 +80,18 @@ You can change debugging tool via :ref:`projectconf_debug_tool` option.
 .. contents::
     :local:
 
+.. _debugging_tool_atmel-ice:
+
+Atmel-ICE
+~~~~~~~~~
+
+:ref:`projectconf_debug_tool` = ``atmel-ice``
+
+Atmel-ICE is a powerful development tool for debugging and programming ARM®
+Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability.
+
+`More details <https://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs>`__
+
 .. _debugging_tool_blackmagic:
 
 Black Magic Probe
@@ -95,7 +108,7 @@ computer using a standard USB interface.
 Also, see :ref:`debugging_tool_custom` debugging configuration with
 Black Magic Probe.
 
-`More details <https://github.com/blacksphere/blackmagic/wiki>`__
+`More details <https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs>`__
 
 .. _debugging_tool_cmsis-dap:
 
@@ -109,7 +122,7 @@ direct USB connection from a development board to a debugger running on a host
 computer on one side, and over JTAG (Joint Test Action Group) or SWD
 (Serial Wire Debug) to the target device to access the Coresight DAP on the other.
 
-`More details <https://developer.mbed.org/handbook/CMSIS-DAP>`__
+`More details <https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs>`__
 
 .. _debugging_tool_jlink:
 
@@ -124,13 +137,13 @@ including OEM versions and on-board solutions. This popularity stems from the
 unparalleled performance, extensive feature set, large number of supported
 CPUs, and compatibility with all popular development environments.
 
-* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/>`_
-* `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php>`__
+* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/?utm_source=platformio&utm_medium=docs>`_
+* `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php?utm_source=platformio&utm_medium=docs>`__
 
 Also, see :ref:`debugging_tool_custom` debugging configuration with
 J-Link GDB Server.
 
-`More details <https://www.segger.com/jlink-debug-probes.html>`__
+`More details <https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs>`__
 
 .. _debugging_tool_mspdebug:
 
@@ -147,7 +160,7 @@ between all PC software and all MSP430 and SimpleLink MSP432 microcontroller
 derivatives and handles tasks such as code download, stepping through code or
 break points
 
-`More details <http://www.ti.com/tool/mspds>`__
+`More details <http://www.ti.com/tool/mspds?utm_source=platformio&utm_medium=docs>`__
 
 .. _debugging_tool_ti-icdi:
 
@@ -160,7 +173,7 @@ Tiva™ C Series evaluation and reference design kits provide an integrated
 In-Circuit Debug Interface (ICDI) which allows programming and debugging of
 the onboard C Series microcontroller
 
-`More details <http://www.ti.com/tool/stellaris_icdi_drivers>`__
+`More details <http://www.ti.com/tool/stellaris_icdi_drivers?utm_source=platformio&utm_medium=docs>`__
 
 .. _debugging_tool_stlink:
 
@@ -174,7 +187,7 @@ microcontroller families. The single wire interface module (SWIM) and
 JTAG/serial wire debugging (SWD) interfaces are used to communicate with any
 STM8 or STM32 microcontroller located on an application board.
 
-`More details <http://www.st.com/en/development-tools/st-link-v2.1.html>`__
+`More details <http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs>`__
 
 .. _debugging_tool_stlink-v1:
 
@@ -259,8 +272,8 @@ J-Link and ST Nucleo
 
 Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
 
-* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/>`_
-* `Convert ST-LINK On-Board Into a J-Link <https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/>`_
+* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/?utm_source=platformio&utm_medium=docs>`_
+* `Convert ST-LINK On-Board Into a J-Link <https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/?utm_source=platformio&utm_medium=docs>`_
 
 .. note::
 
@@ -268,7 +281,7 @@ Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
   Nucleo F446RE. In this case, please replace ``STM32F446RE`` with
   your own device name in ``debug_server`` option.
 
-  See full list with `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php>`__.
+  See full list with `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php?utm_source=platformio&utm_medium=docs>`__.
 
 
 .. code-block:: ini
@@ -295,7 +308,7 @@ J-Link as debugger and uploader
 
 Segger J-Link probe as debugger and uploader for a custom Teensy-based board
 
-* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/>`_
+* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/?utm_source=platformio&utm_medium=docs>`_
 
 
 .. code-block:: ini
@@ -428,7 +441,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
