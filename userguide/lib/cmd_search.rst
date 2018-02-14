@@ -75,6 +75,11 @@ Options
 .. program:: platformio lib search
 
 .. option::
+    --id
+
+Filter libraries by registry ID
+
+.. option::
     -n, --name
 
 Filter libraries by specified name (strict search)
