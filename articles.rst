@@ -23,7 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2018
 ^^^^
 
-* Feb 16, 2018 - **Alex Corvis** - `DIY Virtual alike NEST Thermostat with Node-RED < https://www.hackster.io/alex-corvis-84/diy-virtual-alike-nest-thermostat-with-node-red-04e6f4>`_
+* Feb 16, 2018 - **Alex Corvis** - `DIY Virtual alike NEST Thermostat with Node-RED <https://www.hackster.io/alex-corvis-84/diy-virtual-alike-nest-thermostat-with-node-red-04e6f4>`_
 * Jan 24, 2018 - **ThingForward** - `Embedded and Cloud - Continuous Integration <https://www.thingforward.io/techblog/2018-01-24-embedded-and-cloud-continuous-integration.html>`_
 * Jan 13, 2018 - **Rui Marinho** - `Quick start guide to flashing ESP8266-based devices with PlatformIO <https://ruimarinho.github.io/post/quick-start-guide-to-flashing-esp8266-based-devices-with-platformio/>`_
 
