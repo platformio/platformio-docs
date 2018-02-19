@@ -54,34 +54,10 @@ You do not need to use/buy external debugger.
       - Frequency
       - Flash
       - RAM
-    * - ``armstrap_eagle1024``
-      - `Armstrap Eagle 1024 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
-      - STM32F417VGT6
-      - 168MHz
-      - 1MB
-      - 192KB
-    * - ``armstrap_eagle2048``
-      - `Armstrap Eagle 2048 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
-      - STM32F427VIT6
-      - 168MHz
-      - 1.99MB
-      - 256KB
-    * - ``armstrap_eagle512``
-      - `Armstrap Eagle 512 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
-      - STM32F407VET6
-      - 168MHz
-      - 512KB
-      - 192KB
     * - ``cloud_jam``
       - `RushUp Cloud-JAM <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
       - STM32F401RET6
       - 84MHz
       - 512KB
@@ -89,7 +65,7 @@ You do not need to use/buy external debugger.
     * - ``disco_f303vc``
       - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
       - STM32F303VCT6
       - 72MHz
       - 256KB
@@ -97,7 +73,7 @@ You do not need to use/buy external debugger.
     * - ``disco_f407vg``
       - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
       - STM32F407VGT6
       - 168MHz
       - 1MB
@@ -105,7 +81,7 @@ You do not need to use/buy external debugger.
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
       - STM32L152RBT6
       - 32MHz
       - 128KB
@@ -113,7 +89,7 @@ You do not need to use/buy external debugger.
     * - ``nucleo_f401re``
       - `ST Nucleo F401RE <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
       - STM32F401RET6
       - 84MHz
       - 512KB
@@ -141,11 +117,35 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``1bitsy_stm32f415rgt``
       - `1Bitsy <http://1bitsy.org?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic` (default)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F415RGT
       - 168MHz
       - 1MB
       - 128KB
+    * - ``armstrap_eagle1024``
+      - `Armstrap Eagle 1024 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F417VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - ``armstrap_eagle2048``
+      - `Armstrap Eagle 2048 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
+    * - ``armstrap_eagle512``
+      - `Armstrap Eagle 512 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
 
 
 Examples

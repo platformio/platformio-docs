@@ -56,7 +56,7 @@ You do not need to use/buy external debugger.
     * - ``disco_f303vc``
       - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
       - STM32F303VCT6
       - 72MHz
       - 256KB
@@ -64,7 +64,7 @@ You do not need to use/buy external debugger.
     * - ``disco_f407vg``
       - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
       - STM32F407VGT6
       - 168MHz
       - 1MB
@@ -72,7 +72,7 @@ You do not need to use/buy external debugger.
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
       - STM32L152RBT6
       - 32MHz
       - 128KB
@@ -104,7 +104,7 @@ You do not need to use/buy external debugger.
     * - ``nucleo_f103rb``
       - `ST Nucleo F103RB <https://developer.mbed.org/platforms/ST-Nucleo-F103RB/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2-1` (on-board)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
       - STM32F103RBT6
       - 72MHz
       - 128KB
@@ -132,7 +132,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``1bitsy_stm32f415rgt``
       - `1Bitsy <http://1bitsy.org?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic` (default)
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F415RGT
       - 168MHz
       - 1MB
@@ -140,7 +140,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``bluepill_f103c8``
       - `BluePill F103C8 <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (default), :ref:`debugging_tool_stlink-v2-1`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103C8T6
       - 72MHz
       - 64KB
@@ -148,7 +148,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``genericSTM32F103C8``
       - `STM32F103C8 (20k RAM. 64k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (default), :ref:`debugging_tool_stlink-v2-1`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103C8T6
       - 72MHz
       - 64KB
@@ -156,7 +156,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``genericSTM32F103CB``
       - `STM32F103CB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103cb.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (default), :ref:`debugging_tool_stlink-v2-1`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103CBT6
       - 72MHz
       - 128KB
@@ -164,7 +164,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``genericSTM32F103R8``
       - `STM32F103R8 (20k RAM. 64 Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103r8.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (default), :ref:`debugging_tool_stlink-v2-1`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103R8T6
       - 72MHz
       - 64KB
@@ -172,7 +172,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``genericSTM32F103RB``
       - `STM32F103RB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rb.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (default), :ref:`debugging_tool_stlink-v2-1`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103RBT6
       - 72MHz
       - 128KB
@@ -180,7 +180,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``genericSTM32F103RC``
       - `STM32F103RC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rc.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (default), :ref:`debugging_tool_stlink-v2-1`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103RCT6
       - 72MHz
       - 256KB
@@ -188,7 +188,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``genericSTM32F103RE``
       - `STM32F103RE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103re.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (default), :ref:`debugging_tool_stlink-v2-1`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103RET6
       - 72MHz
       - 512KB
@@ -196,7 +196,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``genericSTM32F103VC``
       - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (default), :ref:`debugging_tool_stlink-v2-1`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103VCT6
       - 72MHz
       - 256KB
@@ -204,7 +204,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``genericSTM32F103VE``
       - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink-v2` (default), :ref:`debugging_tool_stlink-v2-1`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103VET6
       - 72MHz
       - 512KB
@@ -212,7 +212,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``maple``
       - `Maple <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103RBT6
       - 72MHz
       - 108KB
@@ -220,7 +220,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``maple_mini_b20``
       - `Maple Mini Bootloader 2.0 <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103CBT6
       - 72MHz
       - 120KB
@@ -228,7 +228,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``maple_mini_origin``
       - `Maple Mini Original <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103CBT6
       - 72MHz
       - 108KB

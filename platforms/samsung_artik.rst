@@ -17,7 +17,7 @@ Samsung ARTIK
 
 The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
 
-For more detailed information please visit `vendor site <https://platformio.org/platforms/samsung_artik?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://platformio.org/platforms/samsung_artik?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:

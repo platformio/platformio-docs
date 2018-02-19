@@ -18,6 +18,9 @@ Debugging options
 .. seealso::
     Please make sure to read :ref:`piodebug` guide first.
 
+.. contents::
+    :local:
+
 .. _projectconf_debug_tool:
 
 ``debug_tool``
