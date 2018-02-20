@@ -64,6 +64,12 @@ PlatformIO is written in Python and is recommended to be run within
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=path/to/test/file.c
         - PLATFORMIO_CI_SRC=examples/file.ino
@@ -71,6 +77,7 @@ PlatformIO is written in Python and is recommended to be run within
 
     install:
         - pip install -U platformio
+        - platformio update
 
     script:
         - platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
@@ -174,6 +181,12 @@ Examples
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=examples/acm/acm_terminal
         - PLATFORMIO_CI_SRC=examples/Bluetooth/WiiIRCamera PLATFORMIO_BUILD_FLAGS="-DWIICAMERA"
@@ -183,6 +196,7 @@ Examples
 
     install:
         - pip install -U platformio
+        - platformio update
 
         #
         # Libraries from PlatformIO Library Registry:
@@ -205,6 +219,12 @@ Examples
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=examples/backSoon/backSoon.ino
         - PLATFORMIO_CI_SRC=examples/etherNode/etherNode.ino
@@ -212,6 +232,7 @@ Examples
 
     install:
         - pip install -U platformio
+        - platformio update
 
         - wget https://github.com/jcw/jeelib/archive/master.zip -O /tmp/jeelib.zip
         - unzip /tmp/jeelib.zip -d /tmp
@@ -233,6 +254,12 @@ Examples
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=examples/TimeArduinoDue PLATFORMIO_CI_EXTRA_ARGS="--board=due"
         - PLATFORMIO_CI_SRC=examples/TimeGPS
@@ -242,6 +269,7 @@ Examples
 
     install:
         - pip install -U platformio
+        - platformio update
         - rm -rf ./linux
 
         #
@@ -264,6 +292,12 @@ Examples
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Adafruit_Bluefruit_LE
         - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Arduino_101_BLE PLATFORMIO_CI_EXTRA_ARGS="--board=genuino101"
@@ -273,6 +307,7 @@ Examples
 
     install:
         - pip install -U platformio
+        - platformio update
 
         #
         # Libraries from PlatformIO Library Registry:
