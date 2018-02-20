@@ -266,6 +266,51 @@ Please upgrade *SetupTools* package:
     [sudo] pip uninstall platformio
     [sudo] pip install platformio
 
+.. _faq_udev_rules:
+
+99-platformio-udev.rules
+''''''''''''''''''''''''
+
+Linux users have to install `udev <https://en.wikipedia.org/wiki/Udev>`_ rules
+for PlatformIO supported boards/devices. The
+latest version of rules may be found at https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules
+
+This file must be placed at ``/etc/udev/rules.d/99-platformio-udev.rules``
+(preferred location) or ``/lib/udev/rules.d/99-platformio-udev.rules``
+(required on some broken systems).
+
+Please open system Terminal and type
+
+.. code-block:: bash
+
+    # Recommended
+    sudo curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules > /etc/udev/rules.d/99-platformio-udev.rule
+
+    # OR, manually download and copy this file to destination folder
+    sudo cp 99-platformio-udev.rules /etc/udev/rules.d/99-platformio-udev.rules
+
+
+Restart "udev" management tool:
+
+.. code-block:: bash
+
+    sudo service udev restart
+
+    # or
+
+    sudo udevadm control --reload-rules
+    sudo udevadm trigger
+
+
+Ubuntu/Debian users may need to add own “username” to the “dialout” group if
+they are not “root”, doing this issuing
+
+.. code-block:: bash
+
+    sudo usermod -a -G dialout $USER
+    sudo usermod -a -G plugdev $USER
+
+After this file is installed, physically unplug and reconnect your board.
 
 Package Manager
 ~~~~~~~~~~~~~~~
