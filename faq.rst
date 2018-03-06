@@ -200,6 +200,74 @@ The final ``Demo.cpp``:
     void someFunction(int num) {
     }
 
+Firmware memory size explanation: text, data and bss
+----------------------------------------------------
+
+If project builds successfully, PlatformIO calculates firmware/program memory
+size by segments:
+
+:``.text``:
+
+    The code segment, also known as a text segment or simply as
+    text, is where a portion of an object file or the corresponding section of
+    the program's virtual address space that contains executable instructions
+    is stored and is generally read-only and fixed size.
+
+:``.data``:
+
+    The .data segment contains any global or static variables which have a
+    pre-defined value and can be modified. The values for these variables are
+    initially stored within the read-only memory (typically within ``.text``)
+    and are copied into the ``.data`` segment during the start-up routine of
+    the program. Example,
+
+    .. code-block:: cpp
+
+         int val = 3;
+         char string[] = "Hello World";
+
+:``.bss``:
+
+     Uninitialized data, is usually adjacent to the data segment. The BSS
+     segment contains all global variables and static variables that are
+     initialized to zero or do not have explicit initialization in source code.
+     For instance, a variable defined as ``static int i;`` would be contained
+     in the BSS segment.
+
+
+The rough calculation for MCU could be done as:
+
+* Flash data = ``.text`` + ``.data``
+* RAM data = ``.bss``
+
+For example, build log by :ref:`platform_espressif8266` project:
+
+.. code::
+
+    ...
+    PLATFORM: Espressif 8266 > NodeMCU 1.0 (ESP-12E Module)
+    SYSTEM: ESP8266 80MHz 80KB RAM (4MB Flash)
+    ...
+    Compiling .pioenvs/nodemcuv2/src/...
+    ...
+    Linking .pioenvs/nodemcuv2/firmware.elf
+    Building .pioenvs/nodemcuv2/firmware.bin
+    Calculating size .pioenvs/nodemcuv2/firmware.elf
+    text       data     bss     dec     hex filename
+    283399     4816   30264  318479   4dc0f .pioenvs/nodemcuv2/firmware.elf
+
+
+1. All numbers are in bytes
+2. ``dec`` is equal to "``.text`` + ``.data`` + ``.bss``"
+3. ``hex`` is the ``dec`` in hexadecimal format
+
+* Flash data = ``.text`` + ``.data`` = 288215 Bytes = 281 KB (maximum is 4 MB)
+* RAM data = ``.bss`` = 30264 Bytes = 30 KB (maximum is 80 KB)
+
+Recommended for reading:
+
+* https://en.wikipedia.org/wiki/Data_segment
+* `text, data and bss: Code and Data Size Explained <https://mcuoneclipse.com/2013/04/14/text-data-and-bss-code-and-data-size-explained/?utm_source=platformio&utm_medium=docs>`_
 
 .. _faq_troubleshooting:
 
