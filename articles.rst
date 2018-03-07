@@ -31,6 +31,7 @@ Here are recent articles/reviews about PlatformIO:
 2017
 ^^^^
 
+* Dec 26, 2017 - **Coyt Barringer** - `Programming STM32F103 Blue Pill using USB Bootloader and PlatformIO <http://coytbarringer.com/programming-stm32f103-blue-pill-using-usb-bootloader-platformio/>`_
 * Dec 1, 2017 - **ThingForward** - `Using Cloud IDEs for Embedded Development: CodeAnywhere <https://www.thingforward.io/techblog/2017-12-01-using-cloud-ides-for-embedded-development-codeanywhere.html>`_
 * Nov 13, 2017 - **ThingForward** - `Automating Static and Dynamic Code Analysis with PlatformIO <https://www.thingforward.io/techblog/2017-11-13-automating-code-analysis-debugging-and-coverage-with-platformio.html>`_
 * Oct 18, 2017 - **ThingForward** - `Getting Started with SigFox and PlatformIO <http://www.thingforward.io/techblog/2017-10-18-getting-started-with-sigfox-and-platformio.html>`_
