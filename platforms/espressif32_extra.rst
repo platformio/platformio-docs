@@ -180,3 +180,8 @@ please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
       console to https://hastebin.com)
     - detailed log of build process from PlatformIO Build System (please copy
       it from console to https://hastebin.com)
+
+Arduino Core Wiki
+~~~~~~~~~~~~~~~~~
+
+Tips, tricks and common problems: http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/
