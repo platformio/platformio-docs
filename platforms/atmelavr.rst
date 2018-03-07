@@ -1403,42 +1403,42 @@ Sanguino
       - Flash
       - RAM
     * - ``sanguino_atmega1284_8m``
-      - `Sanguino ATmega1284p (8MHz) <https://code.google.com/p/sanguino/?utm_source=platformio&utm_medium=docs>`_
+      - `Sanguino ATmega1284p (8MHz) <https://github.com/Lauszus/Sanguino?utm_source=platformio&utm_medium=docs>`_
       - No
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - ``sanguino_atmega1284p``
-      - `Sanguino ATmega1284p (16MHz) <https://code.google.com/p/sanguino/?utm_source=platformio&utm_medium=docs>`_
+      - `Sanguino ATmega1284p (16MHz) <https://github.com/Lauszus/Sanguino?utm_source=platformio&utm_medium=docs>`_
       - No
       - ATMEGA1284P
       - 16MHz
       - 127KB
       - 16KB
     * - ``sanguino_atmega644``
-      - `Sanguino ATmega644 or ATmega644A (16 MHz) <https://code.google.com/p/sanguino/?utm_source=platformio&utm_medium=docs>`_
+      - `Sanguino ATmega644 or ATmega644A (16 MHz) <https://github.com/Lauszus/Sanguino?utm_source=platformio&utm_medium=docs>`_
       - No
       - ATMEGA644
       - 16MHz
       - 63KB
       - 4KB
     * - ``sanguino_atmega644_8m``
-      - `Sanguino ATmega644 or ATmega644A (8 MHz) <https://code.google.com/p/sanguino/?utm_source=platformio&utm_medium=docs>`_
+      - `Sanguino ATmega644 or ATmega644A (8 MHz) <https://github.com/Lauszus/Sanguino?utm_source=platformio&utm_medium=docs>`_
       - No
       - ATMEGA644
       - 8MHz
       - 63KB
       - 4KB
     * - ``sanguino_atmega644p``
-      - `Sanguino ATmega644P or ATmega644PA (16 MHz) <https://code.google.com/p/sanguino/?utm_source=platformio&utm_medium=docs>`_
+      - `Sanguino ATmega644P or ATmega644PA (16 MHz) <https://github.com/Lauszus/Sanguino?utm_source=platformio&utm_medium=docs>`_
       - No
       - ATMEGA644P
       - 16MHz
       - 63KB
       - 4KB
     * - ``sanguino_atmega644p_8m``
-      - `Sanguino ATmega644P or ATmega644PA (8 MHz) <https://code.google.com/p/sanguino/?utm_source=platformio&utm_medium=docs>`_
+      - `Sanguino ATmega644P or ATmega644PA (8 MHz) <https://github.com/Lauszus/Sanguino?utm_source=platformio&utm_medium=docs>`_
       - No
       - ATMEGA644P
       - 8MHz
