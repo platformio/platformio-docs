@@ -2981,14 +2981,6 @@ Micromint
       - 204MHz
       - 8MB
       - 264KB
-    * - ``lpc4337``
-      - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`Yes <piodebug>`
-      - LPC4337
-      - 204MHz
-      - 1MB
-      - 136KB
 
 MikroElektronika
 ~~~~~~~~~~~~~~~~
@@ -3177,22 +3169,22 @@ NXP
       - 96MHz
       - 512KB
       - 64KB
-    * - ``lpc2368``
-      - `NXP LPC2368 <https://developer.mbed.org/platforms/mbed-LPC2368/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - No
-      - LPC2368
-      - 72MHz
-      - 512KB
-      - 58KB
-    * - ``lpc2460``
-      - `NXP LPC2460 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-arm7-arm9-mcus/lpc-arm7-mcus/lpc2100-200-300-400/flashless-16-bit-32-bit-microcontroller-ethernet-can-isp-iap-usb-2.0-device-host-otg-external-memory-interface:LPC2460FBD208?utm_source=platformio&utm_medium=docs>`_
+    * - ``lpc54114``
+      - `NXP LPCXpresso54114 <https://os.mbed.com/platforms/LPCXpresso54114/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`NXP LPC <platform_nxplpc>`
       - :ref:`Yes <piodebug>`
-      - LPC2460
-      - 72MHz
-      - 64KB
-      - 16KB
+      - LPC54114J256BD64
+      - 100MHz
+      - 256KB
+      - 192KB
+    * - ``lpc546xx``
+      - `NXP LPCXpresso54608 <https://os.mbed.com/platforms/LPCXpresso54608/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`NXP LPC <platform_nxplpc>`
+      - :ref:`Yes <piodebug>`
+      - LPC54608ET512
+      - 180MHz
+      - 512KB
+      - 200KB
     * - ``lpc812``
       - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`NXP LPC <platform_nxplpc>`
@@ -4273,6 +4265,14 @@ ST
       - 100MHz
       - 1MB
       - 256KB
+    * - ``nucleo_f413zh``
+      - `ST Nucleo F413ZH <https://os.mbed.com/platforms/ST-Nucleo-F413ZH/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F413ZHT6
+      - 100MHz
+      - 512KB
+      - 128KB
     * - ``nucleo_f429zi``
       - `ST Nucleo F429ZI <https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -4366,6 +4366,14 @@ ST
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - ``nucleo_l496zg``
+      - `ST Nucleo L496ZG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L496ZGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -5697,6 +5705,22 @@ u-blox
       - Frequency
       - Flash
       - RAM
+    * - ``mbed_connect_odin``
+      - `Mbed Connect Cloud <https://os.mbed.com/platforms/mbed-Connect-Cloud/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F439ZIY6
+      - 168MHz
+      - 2MB
+      - 256KB
+    * - ``mtb_ublox_odin_w2``
+      - `u-blox ODIN-W2 <https://os.mbed.com/modules/u-blox-odin-w2/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F439ZIY6
+      - 168MHz
+      - 2MB
+      - 256KB
     * - ``nina_w10``
       - `u-blox NINA-W10 series <https://www.u-blox.com/en/product/nina-w10-series?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`

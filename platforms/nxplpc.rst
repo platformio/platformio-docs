@@ -67,42 +67,42 @@ You do not need to use/buy external debugger.
       - RAM
     * - ``elektor_cocorico``
       - `CoCo-ri-Co! <https://developer.mbed.org/platforms/CoCo-ri-Co/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC812
       - 30MHz
       - 16KB
       - 4KB
     * - ``lpc1114fn28``
       - `Switch Science mbed LPC1114FN28 <https://developer.mbed.org/platforms/LPC1114FN28/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC1114FN28
       - 48MHz
       - 32KB
       - 4KB
     * - ``lpc11u24``
       - `NXP mbed LPC11U24 <https://developer.mbed.org/platforms/mbed-LPC11U24/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC11U24
       - 48MHz
       - 32KB
       - 8KB
     * - ``lpc11u24_301``
       - `ARM mbed LPC11U24 (+CAN) <https://developer.mbed.org/handbook/mbed-NXP-LPC11U24?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC11U24
       - 48MHz
       - 32KB
       - 8KB
     * - ``lpc11u68``
       - `LPCXpresso11U68 <https://developer.mbed.org/platforms/LPCXpresso11U68/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC11U68
       - 50MHz
       - 256KB
       - 36KB
     * - ``lpc1768``
       - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC1768
       - 96MHz
       - 512KB
@@ -123,21 +123,35 @@ You do not need to use/buy external debugger.
       - 96KB
     * - ``lpc4330_m4``
       - `Bambino-210E <https://developer.mbed.org/platforms/Micromint-Bambino-210E/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC4330
       - 204MHz
       - 8MB
       - 264KB
+    * - ``lpc54114``
+      - `NXP LPCXpresso54114 <https://os.mbed.com/platforms/LPCXpresso54114/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - LPC54114J256BD64
+      - 100MHz
+      - 256KB
+      - 192KB
+    * - ``lpc546xx``
+      - `NXP LPCXpresso54608 <https://os.mbed.com/platforms/LPCXpresso54608/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink` (on-board)
+      - LPC54608ET512
+      - 180MHz
+      - 512KB
+      - 200KB
     * - ``lpc812``
       - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC812
       - 30MHz
       - 16KB
       - 4KB
     * - ``lpc824``
       - `LPCXpresso824-MAX <https://developer.mbed.org/platforms/LPCXpresso824-MAX/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC824
       - 30MHz
       - 32KB
@@ -151,14 +165,14 @@ You do not need to use/buy external debugger.
       - 64KB
     * - ``ssci824``
       - `Switch Science mbed LPC824 <https://developer.mbed.org/platforms/Switch-Science-mbed-LPC824/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC824
       - 30MHz
       - 32KB
       - 8KB
     * - ``ubloxc027``
       - `u-blox C027 <https://developer.mbed.org/platforms/u-blox-C027/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - LPC1768
       - 96MHz
       - 512KB
@@ -252,20 +266,6 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 72MHz
       - 256KB
       - 36KB
-    * - ``lpc2460``
-      - `NXP LPC2460 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-arm7-arm9-mcus/lpc-arm7-mcus/lpc2100-200-300-400/flashless-16-bit-32-bit-microcontroller-ethernet-can-isp-iap-usb-2.0-device-host-otg-external-memory-interface:LPC2460FBD208?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink`
-      - LPC2460
-      - 72MHz
-      - 64KB
-      - 16KB
-    * - ``lpc4337``
-      - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC4337
-      - 204MHz
-      - 1MB
-      - 136KB
 
 
 Stable and upstream versions
@@ -484,13 +484,6 @@ Micromint
       - 204MHz
       - 8MB
       - 264KB
-    * - ``lpc4337``
-      - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - LPC4337
-      - 204MHz
-      - 1MB
-      - 136KB
 
 NGX Technologies
 ~~~~~~~~~~~~~~~~
@@ -582,20 +575,20 @@ NXP
       - 96MHz
       - 512KB
       - 64KB
-    * - ``lpc2368``
-      - `NXP LPC2368 <https://developer.mbed.org/platforms/mbed-LPC2368/?utm_source=platformio&utm_medium=docs>`_
-      - No
-      - LPC2368
-      - 72MHz
-      - 512KB
-      - 58KB
-    * - ``lpc2460``
-      - `NXP LPC2460 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-arm7-arm9-mcus/lpc-arm7-mcus/lpc2100-200-300-400/flashless-16-bit-32-bit-microcontroller-ethernet-can-isp-iap-usb-2.0-device-host-otg-external-memory-interface:LPC2460FBD208?utm_source=platformio&utm_medium=docs>`_
+    * - ``lpc54114``
+      - `NXP LPCXpresso54114 <https://os.mbed.com/platforms/LPCXpresso54114/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
-      - LPC2460
-      - 72MHz
-      - 64KB
-      - 16KB
+      - LPC54114J256BD64
+      - 100MHz
+      - 256KB
+      - 192KB
+    * - ``lpc546xx``
+      - `NXP LPCXpresso54608 <https://os.mbed.com/platforms/LPCXpresso54608/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - LPC54608ET512
+      - 180MHz
+      - 512KB
+      - 200KB
     * - ``lpc812``
       - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`

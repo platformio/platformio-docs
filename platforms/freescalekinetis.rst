@@ -108,7 +108,7 @@ You do not need to use/buy external debugger.
       - 4KB
     * - ``frdm_kl25z``
       - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - MKL25Z128VLK4
       - 48MHz
       - 128KB
@@ -122,7 +122,7 @@ You do not need to use/buy external debugger.
       - 16KB
     * - ``frdm_kl27z``
       - `Freescale Kinetis FRDM-KL27Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl17-and-kl27-mcus:FRDM-KL27Z?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - MKL27Z64VLH4
       - 48MHz
       - 64KB

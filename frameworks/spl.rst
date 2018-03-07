@@ -57,7 +57,7 @@ You do not need to use/buy external debugger.
     * - ``cloud_jam``
       - `RushUp Cloud-JAM <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32F401RET6
       - 84MHz
       - 512KB
@@ -65,7 +65,7 @@ You do not need to use/buy external debugger.
     * - ``disco_f303vc``
       - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32F303VCT6
       - 72MHz
       - 256KB
@@ -73,7 +73,7 @@ You do not need to use/buy external debugger.
     * - ``disco_f407vg``
       - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32F407VGT6
       - 168MHz
       - 1MB
@@ -81,7 +81,7 @@ You do not need to use/buy external debugger.
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32L152RBT6
       - 32MHz
       - 128KB
@@ -89,7 +89,7 @@ You do not need to use/buy external debugger.
     * - ``nucleo_f401re``
       - `ST Nucleo F401RE <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default, on-board)
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32F401RET6
       - 84MHz
       - 512KB

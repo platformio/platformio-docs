@@ -103,14 +103,14 @@ You do not need to use/buy external debugger.
       - 16KB
     * - ``nrf51822_y5_mbug``
       - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - ``nrf51_dk``
       - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF51822
       - 32MHz
       - 256KB
@@ -131,35 +131,35 @@ You do not need to use/buy external debugger.
       - 16KB
     * - ``redBearLab``
       - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - ``redBearLabBLENano``
       - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF51822
       - 16MHz
       - 256KB
       - 32KB
     * - ``seeedArchBLE``
       - `Seeed Arch BLE <https://developer.mbed.org/platforms/Seeed-Arch-BLE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF51822
       - 16MHz
       - 128KB
       - 16KB
     * - ``seeedArchLink``
       - `Seeed Arch Link <https://developer.mbed.org/platforms/Seeed-Arch-Link/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - ``seeedTinyBLE``
       - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF51822
       - 16MHz
       - 256KB

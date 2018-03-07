@@ -69,42 +69,42 @@ You do not need to use/buy external debugger.
       - RAM
     * - ``delta_dfbm_nq620``
       - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - ``nrf52840_dk``
       - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - ``redbear_blenano2``
       - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - ``redbear_blend2``
       - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - ``ublox_evk_nina_b1``
       - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF52832
       - 64MHz
       - 512KB
