@@ -17,11 +17,56 @@ Tizen RT
 
 Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
 
-For more detailed information please visit `vendor site <https://source.tizen.org/documentation/tizen-rt>`_.
+For more detailed information please visit `vendor site <https://source.tizen.org/documentation/tizen-rt?utm_source=platformio&utm_medium=docs>`_.
 
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+External tools
+~~~~~~~~~~~~~~
+
+Boards listed below are compatible with :ref:`piodebug` but depend on external
+debugging tools. See "Debug" column for compatible debugging tools.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``artik_053``
+      - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Samsung ARTIK <platform_samsung_artik>`
+      - :ref:`debugging_tool_custom` (default)
+      - S5JT200
+      - 320MHz
+      - 8MB
+      - 1.25MB
+
+
+Examples
+--------
+
+* `Tizen RT for Samsung ARTIK <https://github.com/platformio/platform-samsung_artik/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -39,7 +84,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
 Samsung
@@ -52,16 +97,15 @@ Samsung
       - Name
       - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``artik_053``
-      - `Samsung ARTIK053 <http://www.artik.io>`_
+      - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Samsung ARTIK <platform_samsung_artik>`
       - :ref:`Yes <piodebug>`
       - S5JT200
-      - 320 MHz
-      - 8192 Kb
-      - 1280 Kb
+      - 320MHz
+      - 8MB
+      - 1.25MB

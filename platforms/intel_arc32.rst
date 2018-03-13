@@ -17,10 +17,43 @@ Intel ARC32
 
 ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
-For more detailed information please visit `vendor site <http://www.intel.com/content/www/us/en/wearables/wearable-soc.html>`_.
+For more detailed information please visit `vendor site <http://www.intel.com/content/www/us/en/wearables/wearable-soc.html?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are listed from `Intel ARC32 development platform repository <https://github.com/platformio/platform-intel_arc32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `arduino-blink <https://github.com/platformio/platform-intel_arc32/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-curie-imu <https://github.com/platformio/platform-intel_arc32/tree/develop/examples/arduino-curie-imu?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-intel_arc32/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-intel_arc32/releases>`__
+of Intel ARC32 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =intel_arc32@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-intel_arc32.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,20 +64,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101>`__
+    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (Intel ARC Core)
 
-    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools>`__
+    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools?utm_source=platformio&utm_medium=docs>`__
       - Genuino101 uploader
 
-    * - `toolchain-intelarc32 <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain>`__
+    * - `toolchain-intelarc32 <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain?utm_source=platformio&utm_medium=docs>`__
       - GCC for Intel ARC
 
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-          (an instruction is located inside a file).
+        * Install "udev" rules :ref:`faq_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -71,7 +103,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
@@ -83,18 +115,15 @@ Intel
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``genuino101``
-      - `Arduino/Genuino 101 <https://www.arduino.cc/en/Main/ArduinoBoard101>`_
-      - :ref:`Intel ARC32 <platform_intel_arc32>`
-      - 
+      - `Arduino/Genuino 101 <https://www.arduino.cc/en/Main/ArduinoBoard101?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ARCV2EM
-      - 32 MHz
-      - 192 Kb
-      - 80 Kb
+      - 32MHz
+      - 152KB
+      - 80KB

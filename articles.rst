@@ -20,9 +20,20 @@ Articles about us
 
 Here are recent articles/reviews about PlatformIO:
 
+2018
+^^^^
+
+* Feb 16, 2018 - **Alex Corvis** - `DIY Virtual alike NEST Thermostat with Node-RED <https://www.hackster.io/alex-corvis-84/diy-virtual-alike-nest-thermostat-with-node-red-04e6f4>`_
+* Jan 24, 2018 - **ThingForward** - `Embedded and Cloud - Continuous Integration <https://www.thingforward.io/techblog/2018-01-24-embedded-and-cloud-continuous-integration.html>`_
+* Jan 14, 2018 - **IT4nextgen** - `5 Best Development Software(IDE) for Internet of Things (IOT) in 2018 <http://www.it4nextgen.com/best-development-software-ide-internet-things-iot/>`_
+* Jan 13, 2018 - **Rui Marinho** - `Quick start guide to flashing ESP8266-based devices with PlatformIO <https://ruimarinho.github.io/post/quick-start-guide-to-flashing-esp8266-based-devices-with-platformio/>`_
+
 2017
 ^^^^
 
+* Dec 26, 2017 - **Coyt Barringer** - `Programming STM32F103 Blue Pill using USB Bootloader and PlatformIO <http://coytbarringer.com/programming-stm32f103-blue-pill-using-usb-bootloader-platformio/>`_
+* Dec 1, 2017 - **ThingForward** - `Using Cloud IDEs for Embedded Development: CodeAnywhere <https://www.thingforward.io/techblog/2017-12-01-using-cloud-ides-for-embedded-development-codeanywhere.html>`_
+* Nov 13, 2017 - **ThingForward** - `Automating Static and Dynamic Code Analysis with PlatformIO <https://www.thingforward.io/techblog/2017-11-13-automating-code-analysis-debugging-and-coverage-with-platformio.html>`_
 * Oct 18, 2017 - **ThingForward** - `Getting Started with SigFox and PlatformIO <http://www.thingforward.io/techblog/2017-10-18-getting-started-with-sigfox-and-platformio.html>`_
 * Sep 18, 2017 - **ThingForward** - `Embedded Testing with PlatformIO – Part 4: Continuous Integration <http://www.thingforward.io/techblog/2017-09-18-embedded-testing-with-platformio-part-4-continuous-integration.html>`_
 * Sep 06, 2017 - **ThingForward** - `Embedded Testing with PlatformIO – Part 3: Remoting <http://www.thingforward.io/techblog/2017-09-06-embedded-testing-with-platformio-part-3-remoting.html>`_

@@ -17,10 +17,42 @@ Lattice iCE40
 
 The iCE40 family of ultra-low power, non-volatile FPGAs has five devices with densities ranging from 384 to 7680 Look-Up Tables (LUTs). In addition to LUT-based,low-cost programmable logic, these devices feature Embedded Block RAM (EBR), Non-volatile Configuration Memory (NVCM) and Phase Locked Loops (PLLs). These features allow the devices to be used in low-cost, high-volume consumer and system applications.
 
-For more detailed information please visit `vendor site <http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx>`_.
+For more detailed information please visit `vendor site <http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are listed from `Lattice iCE40 development platform repository <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `counter <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples/counter?utm_source=platformio&utm_medium=docs>`_
+* `leds <https://github.com/platformio/platform-lattice_ice40/tree/develop/examples/leds?utm_source=platformio&utm_medium=docs>`_
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-lattice_ice40/releases>`__
+of Lattice iCE40 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =lattice_ice40@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-lattice_ice40.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,17 +63,16 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-icestorm <http://www.clifford.at/icestorm/>`__
+    * - `toolchain-icestorm <http://www.clifford.at/icestorm/?utm_source=platformio&utm_medium=docs>`__
       - Tools for analyzing and creating bitstream files for FPGA IceStorm
 
-    * - `toolchain-iverilog <http://iverilog.icarus.com>`__
+    * - `toolchain-iverilog <http://iverilog.icarus.com?utm_source=platformio&utm_medium=docs>`__
       - Verilog simulation and synthesis tool
 
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-          (an instruction is located inside a file).
+        * Install "udev" rules :ref:`faq_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -57,7 +88,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
@@ -69,21 +100,18 @@ FPGAwars
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``icezum``
-      - `IceZUM Alhambra FPGA <https://github.com/FPGAwars/icezum/wiki>`_
-      - :ref:`Lattice iCE40 <platform_lattice_ice40>`
-      - 
+      - `IceZUM Alhambra FPGA <https://github.com/FPGAwars/icezum/wiki?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ICE40-HX1K-TQ144
-      - 12 MHz
-      - 32 Kb
-      - 32 Kb
+      - 12MHz
+      - 32KB
+      - 32KB
 
 Lattice
 ~~~~~~~
@@ -93,18 +121,15 @@ Lattice
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``icestick``
-      - `Lattice iCEstick FPGA Evaluation Kit <http://www.latticesemi.com/icestick>`_
-      - :ref:`Lattice iCE40 <platform_lattice_ice40>`
-      - 
+      - `Lattice iCEstick FPGA Evaluation Kit <http://www.latticesemi.com/icestick?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ICE40-HX1K-TQ144
-      - 12 MHz
-      - 32 Kb
-      - 32 Kb
+      - 12MHz
+      - 32KB
+      - 32KB

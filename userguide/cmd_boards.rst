@@ -57,12 +57,12 @@ Examples
     ---------------------------------------------------------------------------
     Type                  MCU           Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
-    btatmega168           atmega168     16Mhz     14Kb    1Kb    Arduino BT ATmega168
-    btatmega328           atmega328p    16Mhz     28Kb    2Kb    Arduino BT ATmega328
-    diecimilaatmega168    atmega168     16Mhz     14Kb    1Kb    Arduino Duemilanove or Diecimila ATmega168
-    diecimilaatmega328    atmega328p    16Mhz     30Kb    2Kb    Arduino Duemilanove or Diecimila ATmega328
-    esplora               atmega32u4    16Mhz     28Kb    2Kb    Arduino Esplora
-    ethernet              atmega328p    16Mhz     31Kb    2Kb    Arduino Ethernet
+    btatmega168           atmega168     16MHz     14K    1K    Arduino BT ATmega168
+    btatmega328           atmega328p    16MHz     28K    2K    Arduino BT ATmega328
+    diecimilaatmega168    atmega168     16MHz     14K    1K    Arduino Duemilanove or Diecimila ATmega168
+    diecimilaatmega328    atmega328p    16MHz     30K    2K    Arduino Duemilanove or Diecimila ATmega328
+    esplora               atmega32u4    16MHz     28K    2K    Arduino Esplora
+    ethernet              atmega328p    16MHz     31K    2K    Arduino Ethernet
     ...
 
 2. Filter Arduino-based boards
@@ -75,12 +75,12 @@ Examples
     ---------------------------------------------------------------------------
     Type                  MCU           Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
-    btatmega168           atmega168     16Mhz     14Kb    1Kb    Arduino BT ATmega168
-    btatmega328           atmega328p    16Mhz     28Kb    2Kb    Arduino BT ATmega328
-    diecimilaatmega168    atmega168     16Mhz     14Kb    1Kb    Arduino Duemilanove or Diecimila ATmega168
-    diecimilaatmega328    atmega328p    16Mhz     30Kb    2Kb    Arduino Duemilanove or Diecimila ATmega328
-    esplora               atmega32u4    16Mhz     28Kb    2Kb    Arduino Esplora
-    ethernet              atmega328p    16Mhz     31Kb    2Kb    Arduino Ethernet
+    btatmega168           atmega168     16MHz     14K    1K    Arduino BT ATmega168
+    btatmega328           atmega328p    16MHz     28K    2K    Arduino BT ATmega328
+    diecimilaatmega168    atmega168     16MHz     14K    1K    Arduino Duemilanove or Diecimila ATmega168
+    diecimilaatmega328    atmega328p    16MHz     30K    2K    Arduino Duemilanove or Diecimila ATmega328
+    esplora               atmega32u4    16MHz     28K    2K    Arduino Esplora
+    ethernet              atmega328p    16MHz     31K    2K    Arduino Ethernet
     ...
 
 
@@ -94,33 +94,33 @@ Examples
     ---------------------------------------------------------------------------
     Type                  MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
-    frdm_k20d50m          mk20dx128vlh5  48Mhz     128Kb   16Kb   Freescale Kinetis FRDM-K20D50M
-    frdm_k22f             mk22fn512vlh12 120Mhz    512Kb   128Kb  Freescale Kinetis FRDM-K22F
+    frdm_k20d50m          mk20dx128vlh5  48MHz     128K   16K   Freescale Kinetis FRDM-K20D50M
+    frdm_k22f             mk22fn512vlh12 120MHz    512K   128K  Freescale Kinetis FRDM-K22F
     ...
 
     Platform: nordicnrf51
     ---------------------------------------------------------------------------
     Type                  MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
-    wallBotBLE            nrf51822       16Mhz     128Kb   16Kb   JKSoft Wallbot BLE
-    nrf51_dk              nrf51822       32Mhz     256Kb   32Kb   Nordic nRF51-DK
+    wallBotBLE            nrf51822       16MHz     128K   16K   JKSoft Wallbot BLE
+    nrf51_dk              nrf51822       32MHz     256K   32K   Nordic nRF51-DK
     ...
 
     Platform: nxplpc
     ---------------------------------------------------------------------------
     Type                  MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
-    blueboard_lpc11u24    lpc11u24       48Mhz     32Kb    8Kb    BlueBoard-LPC11U24
-    dipcortexm0           lpc11u24       50Mhz     32Kb    8Kb    DipCortex M0
-    lpc11u35              lpc11u35       48Mhz     64Kb    10Kb   EA LPC11U35 QuickStart Board
+    blueboard_lpc11u24    lpc11u24       48MHz     32K    8K    BlueBoard-LPC11U24
+    dipcortexm0           lpc11u24       50MHz     32K    8K    DipCortex M0
+    lpc11u35              lpc11u35       48MHz     64K    10K   EA LPC11U35 QuickStart Board
     ...
 
     Platform: ststm32
     ---------------------------------------------------------------------------
     Type                  MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
-    disco_f401vc          stm32f401vct6  84Mhz     256Kb   64Kb   32F401CDISCOVERY
-    nucleo_f030r8         stm32f030r8t6  48Mhz     64Kb    8Kb    ST Nucleo F030R8
+    disco_f401vc          stm32f401vct6  84MHz     256K   64K   32F401CDISCOVERY
+    nucleo_f030r8         stm32f030r8t6  48MHz     64K    8K    ST Nucleo F030R8
     ...
 
 4. Filter boards which are based on ``ATmega168`` MCU
@@ -133,16 +133,16 @@ Examples
     ---------------------------------------------------------------------------
     Type                  MCU           Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
-    btatmega168           atmega168     16Mhz     14Kb    1Kb    Arduino BT ATmega168
-    diecimilaatmega168    atmega168     16Mhz     14Kb    1Kb    Arduino Duemilanove or Diecimila ATmega168
-    miniatmega168         atmega168     16Mhz     14Kb    1Kb    Arduino Mini ATmega168
-    atmegangatmega168     atmega168     16Mhz     14Kb    1Kb    Arduino NG or older ATmega168
-    nanoatmega168         atmega168     16Mhz     14Kb    1Kb    Arduino Nano ATmega168
-    pro8MHzatmega168      atmega168     8Mhz      14Kb    1Kb    Arduino Pro or Pro Mini ATmega168 (3.3V, 8 MHz)
-    pro16MHzatmega168     atmega168     16Mhz     14Kb    1Kb    Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz)
-    lilypadatmega168      atmega168     8Mhz      14Kb    1Kb    LilyPad Arduino ATmega168
-    168pa16m              atmega168p    16Mhz     15Kb    1Kb    Microduino Core (Atmega168PA@16M,5V)
-    168pa8m               atmega168p    8Mhz      15Kb    1Kb    Microduino Core (Atmega168PA@8M,3.3V)
+    btatmega168           atmega168     16MHz     14K    1K    Arduino BT ATmega168
+    diecimilaatmega168    atmega168     16MHz     14K    1K    Arduino Duemilanove or Diecimila ATmega168
+    miniatmega168         atmega168     16MHz     14K    1K    Arduino Mini ATmega168
+    atmegangatmega168     atmega168     16MHz     14K    1K    Arduino NG or older ATmega168
+    nanoatmega168         atmega168     16MHz     14K    1K    Arduino Nano ATmega168
+    pro8MHzatmega168      atmega168     8MHz      14K    1K    Arduino Pro or Pro Mini ATmega168 (3.3V, 8 MHz)
+    pro16MHzatmega168     atmega168     16MHz     14K    1K    Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz)
+    lilypadatmega168      atmega168     8MHz      14K    1K    LilyPad Arduino ATmega168
+    168pa16m              atmega168p    16MHz     15K    1K    Microduino Core (Atmega168PA@16M,5V)
+    168pa8m               atmega168p    8MHz      15K    1K    Microduino Core (Atmega168PA@8M,3.3V)
 
 5. Show boards by :ref:`platform_timsp430`
 
@@ -154,10 +154,10 @@ Examples
     ---------------------------------------------------------------------------
     Type                  MCU           Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
-    lpmsp430fr5739        msp430fr5739  16Mhz     15Kb    1Kb    FraunchPad w/ msp430fr5739
-    lpmsp430f5529         msp430f5529   16Mhz     128Kb   1Kb    LaunchPad w/ msp430f5529 (16MHz)
-    lpmsp430f5529_25      msp430f5529   25Mhz     128Kb   1Kb    LaunchPad w/ msp430f5529 (25MHz)
-    lpmsp430fr5969        msp430fr5969  8Mhz      64Kb    1Kb    LaunchPad w/ msp430fr5969
-    lpmsp430g2231         msp430g2231   1Mhz      2Kb     128B   LaunchPad w/ msp430g2231 (1MHz)
-    lpmsp430g2452         msp430g2452   16Mhz     8Kb     256B   LaunchPad w/ msp430g2452 (16MHz)
-    lpmsp430g2553         msp430g2553   16Mhz     16Kb    512B   LaunchPad w/ msp430g2553 (16MHz)
+    lpmsp430fr5739        msp430fr5739  16MHz     15K    1K    FraunchPad w/ msp430fr5739
+    lpmsp430f5529         msp430f5529   16MHz     128K   1K    LaunchPad w/ msp430f5529 (16MHz)
+    lpmsp430f5529_25      msp430f5529   25MHz     128K   1K    LaunchPad w/ msp430f5529 (25MHz)
+    lpmsp430fr5969        msp430fr5969  8MHz      64K    1K    LaunchPad w/ msp430fr5969
+    lpmsp430g2231         msp430g2231   1MHz      2K     128B   LaunchPad w/ msp430g2231 (1MHz)
+    lpmsp430g2452         msp430g2452   16MHz     8K     256B   LaunchPad w/ msp430g2452 (16MHz)
+    lpmsp430g2553         msp430g2553   16MHz     16K    512B   LaunchPad w/ msp430g2553 (16MHz)

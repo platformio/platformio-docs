@@ -84,7 +84,7 @@ Let's create our first PlatformIO-based Codeanywhere Project
         platformio init --board uno
 
     To get board ``ID`` please use :ref:`cmd_boards` command or
-    `Embedded Boards Explorer <http://platformio.org/boards>`_.
+    `Embedded Boards Explorer <https://platformio.org/boards>`_.
 
     If you do not see created project, please refresh Project Tree using
     right-click on ``Container Name (PlatformIO) > Refresh``.

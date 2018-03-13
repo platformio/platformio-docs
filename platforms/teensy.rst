@@ -17,10 +17,107 @@ Teensy
 
 Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
-For more detailed information please visit `vendor site <https://www.pjrc.com/teensy>`_.
+For more detailed information please visit `vendor site <https://www.pjrc.com/teensy?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+.. include:: teensy_extra.rst
+
+Examples
+--------
+
+Examples are listed from `Teensy development platform repository <https://github.com/platformio/platform-teensy/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `arduino-blink <https://github.com/platformio/platform-teensy/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-hid-usb-mouse <https://github.com/platformio/platform-teensy/tree/develop/examples/arduino-hid-usb-mouse?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-teensy/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+External tools
+~~~~~~~~~~~~~~
+
+Boards listed below are compatible with :ref:`piodebug` but depend on external
+debugging tools. See "Debug" column for compatible debugging tools.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``teensy31``
+      - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MK20DX256
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - ``teensy35``
+      - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MK64FX512
+      - 120MHz
+      - 512KB
+      - 192KB
+    * - ``teensy36``
+      - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MK66FX1M0
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - ``teensylc``
+      - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MKL26Z64
+      - 48MHz
+      - 62KB
+      - 8KB
+
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-teensy/releases>`__
+of Teensy development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =teensy@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-teensy.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,26 +128,25 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoteensy <http://arduino.cc/en/Reference/HomePage>`__
+    * - `framework-arduinoteensy <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework
 
-    * - `framework-mbed <http://mbed.org>`__
+    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-teensy <https://www.pjrc.com/teensy/loader.html>`__
+    * - `tool-teensy <https://www.pjrc.com/teensy/loader.html?utm_source=platformio&utm_medium=docs>`__
       - Teensy Loader
 
-    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc>`__
+    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio&utm_medium=docs>`__
       - avr-gcc
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-          (an instruction is located inside a file).
+        * Install "udev" rules :ref:`faq_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -84,7 +180,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
@@ -96,74 +192,57 @@ Teensy
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``teensy20``
-      - `Teensy 2.0 <https://www.pjrc.com/store/teensy.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy 2.0 <https://www.pjrc.com/store/teensy.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ATMEGA32U4
-      - 16 MHz
-      - 32 Kb
-      - 2.5 Kb
-
+      - 16MHz
+      - 31.50KB
+      - 2.50KB
     * - ``teensy20pp``
-      - `Teensy++ 2.0 <https://www.pjrc.com/store/teensypp.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy++ 2.0 <https://www.pjrc.com/store/teensypp.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - AT90USB1286
-      - 16 MHz
-      - 128 Kb
-      - 8 Kb
-
+      - 16MHz
+      - 127KB
+      - 8KB
     * - ``teensy30``
-      - `Teensy 3.0 <https://www.pjrc.com/store/teensy3.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy 3.0 <https://www.pjrc.com/store/teensy3.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - MK20DX128
-      - 48 MHz
-      - 128 Kb
-      - 16 Kb
-
+      - 48MHz
+      - 128KB
+      - 16KB
     * - ``teensy31``
-      - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - MK20DX256
-      - 72 MHz
-      - 256 Kb
-      - 64 Kb
-
+      - 72MHz
+      - 256KB
+      - 64KB
     * - ``teensy35``
-      - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html>`_
-      - :ref:`Teensy <platform_teensy>`
+      - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK64FX512
-      - 120 MHz
-      - 512 Kb
-      - 192 Kb
-
+      - 120MHz
+      - 512KB
+      - 192KB
     * - ``teensy36``
-      - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html>`_
-      - :ref:`Teensy <platform_teensy>`
+      - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK66FX1M0
-      - 180 MHz
-      - 1024 Kb
-      - 256 Kb
-
+      - 180MHz
+      - 1MB
+      - 256KB
     * - ``teensylc``
-      - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html>`_
-      - :ref:`Teensy <platform_teensy>`
-      - 
+      - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - MKL26Z64
-      - 48 MHz
-      - 64 Kb
-      - 8 Kb
-
-.. include:: teensy_extra.rst
+      - 48MHz
+      - 62KB
+      - 8KB

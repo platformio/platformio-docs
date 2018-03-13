@@ -9,21 +9,41 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Configuration
+-------------
+
+.. contents::
+    :local:
+
 USB Features
-------------
+~~~~~~~~~~~~
 
-If you want to use Teensy USB Features, you need to add special
-acros/define using :ref:`projectconf_build_flags`:
+If you want to use Teensy USB Features, you need to add special macro/define
+using :ref:`projectconf_build_flags`:
 
-* ``-D USB_AUDIO``
+* ``-D USB_SERIAL``
+* ``-D USB_KEYBOARDONLY``
+* ``-D USB_TOUCHSCREEN``
+* ``-D USB_HID_TOUCHSCREEN``
 * ``-D USB_HID``
 * ``-D USB_SERIAL_HID``
-* ``-D USB_DISK``
-* ``-D USB_DISK_SDFLASH``
 * ``-D USB_MIDI``
+* ``-D USB_MIDI4``
+* ``-D USB_MIDI16``
+* ``-D USB_MIDI_SERIAL``
+* ``-D USB_MIDI4_SERIAL``
+* ``-D USB_MIDI16_SERIAL``
+* ``-D USB_AUDIO``
+* ``-D USB_MIDI_AUDIO_SERIAL``
+* ``-D USB_MIDI16_AUDIO_SERIAL``
+* ``-D USB_MTPDISK``
 * ``-D USB_RAWHID``
 * ``-D USB_FLIGHTSIM``
+* ``-D USB_FLIGHTSIM_JOYSTICK``
+* ``-D USB_EVERYTHING``
 * ``-D USB_DISABLED``
+
+A default macro is set to ``-D USB_SERIAL`` if no one is specified.
 
 Example:
 
@@ -36,13 +56,3 @@ Example:
     build_flags = -D USB_RAWHID
 
 See `Teensy USB Examples <https://www.pjrc.com/teensy/usb_debug_only.html>`_.
-
-Examples
---------
-
-All project examples are located in PlatformIO repository
-`Examples for Teensy platform <https://github.com/platformio/platformio-examples/tree/develop/teensy>`_.
-
-* `Wiring Blink <https://github.com/platformio/platformio-examples/tree/develop/wiring-blink>`_
-* `HID Mouse <https://github.com/platformio/platformio-examples/tree/develop/teensy/hid-usb-mouse>`_
-* `Internal Libs <https://github.com/platformio/platformio-examples/tree/develop/teensy/internal-libs>`_

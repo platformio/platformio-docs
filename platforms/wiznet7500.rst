@@ -17,10 +17,96 @@ WIZNet W7500
 
 The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
-For more detailed information please visit `vendor site <http://www.wiznet.io/product-item/w7500/>`_.
+For more detailed information please visit `vendor site <http://www.wiznet.io/product-item/w7500/?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are listed from `WIZNet W7500 development platform repository <https://github.com/platformio/platform-wiznet7500/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `mbed-blink <https://github.com/platformio/platform-wiznet7500/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-wiznet7500/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-wiznet7500/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-wiznet7500/tree/develop/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-wiznet7500/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+On-Board tools
+~~~~~~~~~~~~~~
+
+Boards listed below have on-board debugging tools and **ARE READY** for debugging!
+You do not need to use/buy external debugger.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``wizwiki_w7500``
+      - `WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - WIZNET7500
+      - 48MHz
+      - 128KB
+      - 48KB
+    * - ``wizwiki_w7500eco``
+      - `WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - WIZNET7500ECO
+      - 48MHz
+      - 128KB
+      - 48KB
+    * - ``wizwiki_w7500p``
+      - `WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - WIZNET7500P
+      - 48MHz
+      - 128KB
+      - 48KB
+
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-wiznet7500/releases>`__
+of WIZNet W7500 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =wiznet7500@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-wiznet7500.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,20 +117,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-mbed <http://mbed.org>`__
+    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-openocd <http://openocd.org>`__
-      - OpenOCD
+    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD?utm_source=platformio&utm_medium=docs>`__
+      - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-          (an instruction is located inside a file).
+        * Install "udev" rules :ref:`faq_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -71,7 +156,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
@@ -83,36 +168,29 @@ WIZNet
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``wizwiki_w7500``
-      - `WIZNet WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/>`_
-      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - `WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - WIZNET7500
-      - 48 MHz
-      - 128 Kb
-      - 48 Kb
-
+      - 48MHz
+      - 128KB
+      - 48KB
     * - ``wizwiki_w7500eco``
-      - `WIZNet WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/>`_
-      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - `WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - WIZNET7500ECO
-      - 48 MHz
-      - 128 Kb
-      - 48 Kb
-
+      - 48MHz
+      - 128KB
+      - 48KB
     * - ``wizwiki_w7500p``
-      - `WIZNet WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/>`_
-      - :ref:`WIZNet W7500 <platform_wiznet7500>`
+      - `WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - WIZNET7500P
-      - 48 MHz
-      - 128 Kb
-      - 48 Kb
+      - 48MHz
+      - 128KB
+      - 48KB

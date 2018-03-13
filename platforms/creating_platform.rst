@@ -170,11 +170,17 @@ Packages
     * - `tool-mspdebug <http://mspdebug.sourceforge.net/>`__
       - MSPDebug
 
+    * - `tool-nrfjprog <https://www.nordicsemi.com>`__
+      - nRF5x command line tool
+
     * - `tool-openocd <http://openocd.org>`__
       - OpenOCD
 
     * - `tool-pic32prog <https://github.com/sergev/pic32prog>`__
       - pic32prog
+
+    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD>`__
+      - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
     * - `tool-rfdloader <https://github.com/RFduino/RFduino>`__
       - rfdloader
@@ -245,7 +251,7 @@ Manifest File ``platform.json``
       "title": "My Platform",
       "description": "My custom development platform",
       "url": "http://example.com",
-      "homepage": "http://platformio.org/platforms/myplatform",
+      "homepage": "https://platformio.org/platforms/myplatform",
       "license": "Apache-2.0",
       "engines": {
         "platformio": "~3.0.0",

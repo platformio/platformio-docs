@@ -17,10 +17,49 @@ Espressif 8266
 
 Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-For more detailed information please visit `vendor site <https://espressif.com/>`_.
+For more detailed information please visit `vendor site <https://espressif.com/?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+.. include:: espressif8266_extra.rst
+
+Examples
+--------
+
+Examples are listed from `Espressif 8266 development platform repository <https://github.com/platformio/platform-espressif8266/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `arduino-asyncudp <https://github.com/platformio/platform-espressif8266/tree/develop/examples/arduino-asyncudp?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-espressif8266/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-webserver <https://github.com/platformio/platform-espressif8266/tree/develop/examples/arduino-webserver?utm_source=platformio&utm_medium=docs>`_
+* `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/develop/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
+* `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/develop/examples/esp8266-nonos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
+* `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/develop/examples/esp8266-rtos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
+* `native-sdk <https://github.com/platformio/platform-espressif8266/tree/develop/examples/native-sdk?utm_source=platformio&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-espressif8266/tree/develop/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-espressif8266/releases>`__
+of Espressif 8266 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =espressif8266@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-espressif8266.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,38 +70,37 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino>`__
+    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (ESP8266 Core)
 
-    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK>`__
+    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK?utm_source=platformio&utm_medium=docs>`__
       - ESP8266 Non-OS SDK
 
-    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK>`__
+    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK?utm_source=platformio&utm_medium=docs>`__
       - ESP8266 SDK based on FreeRTOS
 
-    * - `framework-simba <https://github.com/eerimoq/simba>`__
+    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
       - Simba Framework
 
-    * - `sdk-esp8266 <http://bbs.espressif.com>`__
+    * - `sdk-esp8266 <http://bbs.espressif.com?utm_source=platformio&utm_medium=docs>`__
       - ESP8266 SDK
 
-    * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py>`__
+    * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py?utm_source=platformio&utm_medium=docs>`__
       - ESP8266 OTA utility
 
-    * - `tool-esptool <https://github.com/igrr/esptool-ck>`__
+    * - `tool-esptool <https://github.com/igrr/esptool-ck?utm_source=platformio&utm_medium=docs>`__
       - esptool-ck
 
-    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs>`__
+    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio&utm_medium=docs>`__
       - Tool to build and unpack SPIFFS images
 
-    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa>`__
+    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa?utm_source=platformio&utm_medium=docs>`__
       - xtensa-gcc
 
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-          (an instruction is located inside a file).
+        * Install "udev" rules :ref:`faq_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -98,7 +136,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
@@ -110,21 +148,18 @@ Boards
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``gen4iod``
-      - `4D Systems gen4 IoD Range <http://www.4dsystems.com.au/product/gen4_IoD/>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `4D Systems gen4 IoD Range <http://www.4dsystems.com.au/product/gen4_IoD/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 512 Kb
-      - 80 Kb
+      - 80MHz
+      - 512KB
+      - 80KB
 
 Adafruit
 ~~~~~~~~
@@ -134,21 +169,18 @@ Adafruit
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``huzzah``
-      - `Adafruit HUZZAH ESP8266 <https://www.adafruit.com/products/2471>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Adafruit HUZZAH ESP8266 <https://www.adafruit.com/products/2471?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 DigiStump
 ~~~~~~~~~
@@ -158,21 +190,18 @@ DigiStump
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``oak``
-      - `DigiStump Oak <http://digistump.com/category/22>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `DigiStump Oak <http://digistump.com/category/22?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 Doit
 ~~~~
@@ -182,21 +211,18 @@ Doit
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``espduino``
-      - `ESPDuino (ESP-13 Module) <https://www.tindie.com/products/doit/espduinowifi-uno-r3/>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `ESPDuino (ESP-13 Module) <https://www.tindie.com/products/doit/espduinowifi-uno-r3/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 DycodeX
 ~~~~~~~
@@ -206,21 +232,18 @@ DycodeX
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``espectro``
-      - `ESPectro Core <https://shop.makestro.com/en/product/espectro-core/>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `ESPectro Core <https://shop.makestro.com/en/product/espectro-core/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 ESPert
 ~~~~~~
@@ -230,30 +253,25 @@ ESPert
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``espresso_lite_v1``
-      - `ESPresso Lite 1.0 <http://www.espert.co>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `ESPresso Lite 1.0 <http://www.espert.co?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``espresso_lite_v2``
-      - `ESPresso Lite 2.0 <http://www.espert.co>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `ESPresso Lite 2.0 <http://www.espert.co?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 ESPino
 ~~~~~~
@@ -263,21 +281,18 @@ ESPino
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``espino``
-      - `ESPino <http://www.espino.io>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `ESPino <http://www.espino.io?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 Espressif
 ~~~~~~~~~
@@ -287,93 +302,74 @@ Espressif
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``esp01``
-      - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 512 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 512KB
+      - 80KB
     * - ``esp01_1m``
-      - `Espressif Generic ESP8266 ESP-01 1M <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Espressif Generic ESP8266 ESP-01 1M <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 1024 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 1MB
+      - 80KB
     * - ``esp07``
-      - `Espressif Generic ESP8266 ESP-07 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family#esp-07>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Espressif Generic ESP8266 ESP-07 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs#esp-07>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``esp12e``
-      - `Espressif ESP8266 ESP-12E <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Espressif ESP8266 ESP-12E <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``esp8285``
-      - `Generic ESP8285 Module <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Generic ESP8285 Module <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 448 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 423.98KB
+      - 80KB
     * - ``esp_wroom_02``
-      - `ESP-WROOM-02 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `ESP-WROOM-02 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``phoenix_v1``
-      - `Phoenix 1.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Phoenix 1.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``phoenix_v2``
-      - `Phoenix 2.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Phoenix 2.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``wifinfo``
-      - `WifInfo <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `WifInfo <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 1024 Kb
-      - 80 Kb
+      - 80MHz
+      - 1MB
+      - 80KB
 
 Heltec
 ~~~~~~
@@ -383,21 +379,18 @@ Heltec
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``heltec_wifi_kit_8``
-      - `Heltec Wifi kit 8 <http://www.heltec.cn/project/wifi_kit_8/>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Heltec Wifi kit 8 <http://www.heltec.cn/project/wifi_kit_8/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 NodeMCU
 ~~~~~~~
@@ -407,30 +400,25 @@ NodeMCU
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``nodemcu``
-      - `NodeMCU 0.9 (ESP-12 Module) <http://www.nodemcu.com/>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `NodeMCU 0.9 (ESP-12 Module) <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``nodemcuv2``
-      - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 Olimex
 ~~~~~~
@@ -440,21 +428,18 @@ Olimex
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``modwifi``
-      - `Olimex MOD-WIFI-ESP8266(-DEV) <https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Olimex MOD-WIFI-ESP8266(-DEV) <https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 2048 Kb
-      - 80 Kb
+      - 80MHz
+      - 2MB
+      - 80KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -464,21 +449,18 @@ SeeedStudio
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``wio_node``
-      - `Wio Node <https://www.seeedstudio.com/Wio-Node-p-2637.html>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `Wio Node <https://www.seeedstudio.com/Wio-Node-p-2637.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 SparkFun
 ~~~~~~~~
@@ -488,39 +470,32 @@ SparkFun
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``sparkfunBlynk``
-      - `SparkFun Blynk Board <https://www.sparkfun.com/products/13794>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `SparkFun Blynk Board <https://www.sparkfun.com/products/13794?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``thing``
-      - `SparkFun ESP8266 Thing <https://www.sparkfun.com/products/13231>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `SparkFun ESP8266 Thing <https://www.sparkfun.com/products/13231?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 512 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 512KB
+      - 80KB
     * - ``thingdev``
-      - `SparkFun ESP8266 Thing Dev <https://www.sparkfun.com/products/13231>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `SparkFun ESP8266 Thing Dev <https://www.sparkfun.com/products/13231?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 512 Kb
-      - 80 Kb
+      - 80MHz
+      - 512KB
+      - 80KB
 
 SweetPea
 ~~~~~~~~
@@ -530,21 +505,18 @@ SweetPea
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``esp210``
-      - `SweetPea ESP-210 <http://wiki.sweetpeas.se/index.php?title=ESP-210>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `SweetPea ESP-210 <http://wiki.sweetpeas.se/index.php?title=ESP-210&utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 ThaiEasyElec
 ~~~~~~~~~~~~
@@ -554,21 +526,18 @@ ThaiEasyElec
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``espinotee``
-      - `ThaiEasyElec ESPino <http://www.thaieasyelec.com/products/wireless-modules/wifi-modules/espino-wifi-development-board-detail.html>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `ThaiEasyElec ESPino <http://www.thaieasyelec.com/products/wireless-modules/wifi-modules/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
+      - 80MHz
+      - 4MB
+      - 80KB
 
 WEMOS
 ~~~~~
@@ -578,47 +547,36 @@ WEMOS
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``d1``
-      - `WEMOS D1 R1 (Retired) <https://wiki.wemos.cc/products:d1:d1>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `WEMOS D1 R1 (Retired) <https://wiki.wemos.cc/products:d1:d1?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``d1_mini``
-      - `WeMos D1 R2 & mini <https://wiki.wemos.cc/products:d1:d1_mini>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `WeMos D1 R2 & mini <https://wiki.wemos.cc/products:d1:d1_mini?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 4096 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``d1_mini_lite``
-      - `WeMos D1 mini Lite <https://wiki.wemos.cc/products:d1:d1_mini_lite>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `WeMos D1 mini Lite <https://wiki.wemos.cc/products:d1:d1_mini_lite?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 1024 Kb
-      - 80 Kb
-
+      - 80MHz
+      - 1MB
+      - 80KB
     * - ``d1_mini_pro``
-      - `WeMos D1 mini Pro <https://wiki.wemos.cc/products:d1:d1_mini>`_
-      - :ref:`Espressif 8266 <platform_espressif8266>`
-      - 
+      - `WeMos D1 mini Pro <https://wiki.wemos.cc/products:d1:d1_mini?utm_source=platformio&utm_medium=docs>`_
+      - No
       - ESP8266
-      - 80 MHz
-      - 16384 Kb
-      - 80 Kb
-
-.. include:: espressif8266_extra.rst
+      - 80MHz
+      - 16MB
+      - 80KB

@@ -17,10 +17,186 @@ Freescale Kinetis
 
 Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
-For more detailed information please visit `vendor site <http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS>`_.
+For more detailed information please visit `vendor site <http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS&utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are listed from `Freescale Kinetis development platform repository <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `mbed-blink <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-ethernet <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+On-Board tools
+~~~~~~~~~~~~~~
+
+Boards listed below have on-board debugging tools and **ARE READY** for debugging!
+You do not need to use/buy external debugger.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``IBMEthernetKit``
+      - `Ethernet IoT Starter Kit <http://developer.mbed.org/platforms/IBMEthernetKit/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MK64FN1M0VLL12
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - ``frdm_k20d50m``
+      - `Freescale Kinetis FRDM-K20D50M <https://developer.mbed.org/platforms/FRDM-K20D50M/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MK20DX128VLH5
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - ``frdm_k22f``
+      - `Freescale Kinetis FRDM-K22F <https://developer.mbed.org/platforms/FRDM-K22F/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MK22FN512VLH12
+      - 120MHz
+      - 512KB
+      - 128KB
+    * - ``frdm_k64f``
+      - `Freescale Kinetis FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MK64FN1M0VLL12
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - ``frdm_k66f``
+      - `Freescale Kinetis FRDM-K66F <https://developer.mbed.org/platforms/FRDM-K66F/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MK66FN2M0VMD18
+      - 180MHz
+      - 2MB
+      - 256KB
+    * - ``frdm_kl05z``
+      - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MKL05Z32VFM4
+      - 48MHz
+      - 32KB
+      - 4KB
+    * - ``frdm_kl25z``
+      - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - MKL25Z128VLK4
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - ``frdm_kl26z``
+      - `Freescale Kinetis FRDM-KL26Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MKL26Z128VLH4
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - ``frdm_kl27z``
+      - `Freescale Kinetis FRDM-KL27Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl17-and-kl27-mcus:FRDM-KL27Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - MKL27Z64VLH4
+      - 48MHz
+      - 64KB
+      - 16KB
+    * - ``frdm_kl43z``
+      - `Freescale Kinetis FRDM-KL43Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl43-kl33-kl27-kl17-and-kl13-mcus:FRDM-KL43Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MKL43Z256VLH4
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``frdm_kl46z``
+      - `Freescale Kinetis FRDM-KL46Z <https://developer.mbed.org/platforms/FRDM-KL46Z/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MKL46Z256VLL4
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``frdm_kw41z``
+      - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MKW41Z512VHT4
+      - 48MHz
+      - 512KB
+      - 128KB
+
+
+External tools
+~~~~~~~~~~~~~~
+
+Boards listed below are compatible with :ref:`piodebug` but depend on external
+debugging tools. See "Debug" column for compatible debugging tools.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``hexiwear``
+      - `Hexiwear <https://developer.mbed.org/platforms/Hexiwear/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`
+      - MK64FN1M0VDC12
+      - 120MHz
+      - 1MB
+      - 256KB
+
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-freescalekinetis/releases>`__
+of Freescale Kinetis development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =freescalekinetis@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-freescalekinetis.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,20 +207,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-mbed <http://mbed.org>`__
+    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-openocd <http://openocd.org>`__
-      - OpenOCD
+    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD?utm_source=platformio&utm_medium=docs>`__
+      - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-          (an instruction is located inside a file).
+        * Install "udev" rules :ref:`faq_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -71,7 +246,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
@@ -83,120 +258,95 @@ Freescale
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``IBMEthernetKit``
-      - `Ethernet IoT Starter Kit <http://developer.mbed.org/platforms/IBMEthernetKit/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Ethernet IoT Starter Kit <http://developer.mbed.org/platforms/IBMEthernetKit/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK64FN1M0VLL12
-      - 120 MHz
-      - 1024 Kb
-      - 256 Kb
-
+      - 120MHz
+      - 1MB
+      - 256KB
     * - ``frdm_k20d50m``
-      - `Freescale Kinetis FRDM-K20D50M <https://developer.mbed.org/platforms/FRDM-K20D50M/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-K20D50M <https://developer.mbed.org/platforms/FRDM-K20D50M/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK20DX128VLH5
-      - 48 MHz
-      - 128 Kb
-      - 16 Kb
-
+      - 48MHz
+      - 128KB
+      - 16KB
     * - ``frdm_k22f``
-      - `Freescale Kinetis FRDM-K22F <https://developer.mbed.org/platforms/FRDM-K22F/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-K22F <https://developer.mbed.org/platforms/FRDM-K22F/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK22FN512VLH12
-      - 120 MHz
-      - 512 Kb
-      - 128 Kb
-
+      - 120MHz
+      - 512KB
+      - 128KB
     * - ``frdm_k64f``
-      - `Freescale Kinetis FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK64FN1M0VLL12
-      - 120 MHz
-      - 1024 Kb
-      - 256 Kb
-
+      - 120MHz
+      - 1MB
+      - 256KB
     * - ``frdm_k66f``
-      - `Freescale Kinetis FRDM-K66F <https://developer.mbed.org/platforms/FRDM-K66F/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-K66F <https://developer.mbed.org/platforms/FRDM-K66F/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK66FN2M0VMD18
-      - 180 MHz
-      - 2048 Kb
-      - 256 Kb
-
+      - 180MHz
+      - 2MB
+      - 256KB
     * - ``frdm_kl05z``
-      - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKL05Z32VFM4
-      - 48 MHz
-      - 32 Kb
-      - 4 Kb
-
+      - 48MHz
+      - 32KB
+      - 4KB
     * - ``frdm_kl25z``
-      - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKL25Z128VLK4
-      - 48 MHz
-      - 128 Kb
-      - 16 Kb
-
+      - 48MHz
+      - 128KB
+      - 16KB
     * - ``frdm_kl26z``
-      - `Freescale Kinetis FRDM-KL26Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-KL26Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKL26Z128VLH4
-      - 48 MHz
-      - 128 Kb
-      - 16 Kb
-
+      - 48MHz
+      - 128KB
+      - 16KB
     * - ``frdm_kl27z``
-      - `Freescale Kinetis FRDM-KL27Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl17-and-kl27-mcus:FRDM-KL27Z>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-KL27Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl17-and-kl27-mcus:FRDM-KL27Z?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKL27Z64VLH4
-      - 48 MHz
-      - 64 Kb
-      - 16 Kb
-
+      - 48MHz
+      - 64KB
+      - 16KB
     * - ``frdm_kl43z``
-      - `Freescale Kinetis FRDM-KL43Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl43-kl33-kl27-kl17-and-kl13-mcus:FRDM-KL43Z>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-KL43Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl43-kl33-kl27-kl17-and-kl13-mcus:FRDM-KL43Z?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKL43Z256VLH4
-      - 48 MHz
-      - 256 Kb
-      - 32 Kb
-
+      - 48MHz
+      - 256KB
+      - 32KB
     * - ``frdm_kl46z``
-      - `Freescale Kinetis FRDM-KL46Z <https://developer.mbed.org/platforms/FRDM-KL46Z/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-KL46Z <https://developer.mbed.org/platforms/FRDM-KL46Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKL46Z256VLL4
-      - 48 MHz
-      - 256 Kb
-      - 32 Kb
-
+      - 48MHz
+      - 256KB
+      - 32KB
     * - ``frdm_kw41z``
-      - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKW41Z512VHT4
-      - 48 MHz
-      - 512 Kb
-      - 128 Kb
+      - 48MHz
+      - 512KB
+      - 128KB
 
 MikroElektronika
 ~~~~~~~~~~~~~~~~
@@ -206,18 +356,15 @@ MikroElektronika
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``hexiwear``
-      - `Hexiwear <https://developer.mbed.org/platforms/Hexiwear/>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - `Hexiwear <https://developer.mbed.org/platforms/Hexiwear/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MK64FN1M0VDC12
-      - 120 MHz
-      - 1024 Kb
-      - 256 Kb
+      - 120MHz
+      - 1MB
+      - 256KB

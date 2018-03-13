@@ -17,10 +17,251 @@ Nordic nRF51
 
 The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
-For more detailed information please visit `vendor site <https://www.nordicsemi.com/eng/Products/nRF51-Series-SoC>`_.
+For more detailed information please visit `vendor site <https://www.nordicsemi.com/eng/Products/nRF51-Series-SoC?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are listed from `Nordic nRF51 development platform repository <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `arduino-ble-led <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/arduino-ble-led?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-ble-thermometer?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-microbit-hello-world <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-microbit-hello-world?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+On-Board tools
+~~~~~~~~~~~~~~
+
+Boards listed below have on-board debugging tools and **ARE READY** for debugging!
+You do not need to use/buy external debugger.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``bbcmicrobit``
+      - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - ``bbcmicrobit_b``
+      - `BBC micro:bit B(S130) <https://developer.mbed.org/platforms/Microbit/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - ``delta_dfcm_nnn50``
+      - `Delta DFCM-NNN50 <https://os.mbed.com/platforms/Delta-DFCM-NNN50/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 16KB
+    * - ``dfcm_nnn40``
+      - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - ``hrm1017``
+      - `Switch Science mbed HRM1017 <https://developer.mbed.org/platforms/mbed-HRM1017/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - ``nrf51822_y5_mbug``
+      - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - ``nrf51_dk``
+      - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - ``nrf51_dongle``
+      - `Nordic nRF51-Dongle <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board)
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - ``nrf51_mkit``
+      - `Nordic nRF51822-mKIT <http://developer.mbed.org/platforms/Nordic-nRF51822/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 16KB
+    * - ``redBearLab``
+      - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - ``redBearLabBLENano``
+      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 32KB
+    * - ``seeedArchBLE``
+      - `Seeed Arch BLE <https://developer.mbed.org/platforms/Seeed-Arch-BLE/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 16KB
+    * - ``seeedArchLink``
+      - `Seeed Arch Link <https://developer.mbed.org/platforms/Seeed-Arch-Link/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - ``seeedTinyBLE``
+      - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - ``ty51822r3``
+      - `Switch Science mbed TY51822r3 <https://developer.mbed.org/platforms/Switch-Science-mbed-TY51822r3/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - ``vbluno51``
+      - `VNG VBLUNO51 <https://os.mbed.com/platforms/VBLUNO51/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 32KB
+    * - ``wallbot_ble``
+      - `JKSoft Wallbot BLE <https://developer.mbed.org/platforms/JKSoft-Wallbot-BLE/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 16KB
+
+
+External tools
+~~~~~~~~~~~~~~
+
+Boards listed below are compatible with :ref:`piodebug` but depend on external
+debugging tools. See "Debug" column for compatible debugging tools.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``bluz_dk``
+      - `BluzDK <https://bluz.io/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - ``ng_beacon``
+      - `ng-beacon <https://github.com/urish/ng-beacon?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - ``oshchip``
+      - `OSHChip <http://oshchip.org/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - ``rfduino``
+      - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 8KB
+    * - ``waveshare_ble400``
+      - `Waveshare BLE400 <http://www.waveshare.com/wiki/BLE400?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-nordicnrf51/releases>`__
+of Nordic nRF51 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =nordicnrf51@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-nordicnrf51.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,26 +272,28 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5>`__
+    * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (Nordic NRF5 Core)
 
-    * - `framework-mbed <http://mbed.org>`__
+    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-openocd <http://openocd.org>`__
+    * - `tool-nrfjprog <https://www.nordicsemi.com?utm_source=platformio&utm_medium=docs>`__
+      - nRF5x command line tool
+
+    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
 
-    * - `tool-sreccat <https://github.com/marcows/SRecord>`__
+    * - `tool-sreccat <https://github.com/marcows/SRecord?utm_source=platformio&utm_medium=docs>`__
       - Merging tool
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-          (an instruction is located inside a file).
+        * Install "udev" rules :ref:`faq_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -80,7 +323,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
@@ -92,30 +335,25 @@ BBC
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``bbcmicrobit``
-      - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 256 Kb
-      - 16 Kb
-
+      - 16MHz
+      - 256KB
+      - 16KB
     * - ``bbcmicrobit_b``
-      - `BBC micro:bit B(S130) <https://developer.mbed.org/platforms/Microbit/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - 
+      - `BBC micro:bit B(S130) <https://developer.mbed.org/platforms/Microbit/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 256 Kb
-      - 16 Kb
+      - 16MHz
+      - 256KB
+      - 16KB
 
 BluzDK
 ~~~~~~
@@ -125,21 +363,18 @@ BluzDK
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``bluz_dk``
-      - `BluzDK <https://bluz.io/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `BluzDK <https://bluz.io/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 32 MHz
-      - 256 Kb
-      - 32 Kb
+      - 32MHz
+      - 256KB
+      - 32KB
 
 Delta
 ~~~~~
@@ -149,30 +384,25 @@ Delta
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``delta_dfcm_nnn50``
-      - `Delta DFCM-NNN50 <https://os.mbed.com/platforms/Delta-DFCM-NNN50/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Delta DFCM-NNN50 <https://os.mbed.com/platforms/Delta-DFCM-NNN50/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 32 MHz
-      - 256 Kb
-      - 16 Kb
-
+      - 32MHz
+      - 256KB
+      - 16KB
     * - ``dfcm_nnn40``
-      - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 32 MHz
-      - 256 Kb
-      - 32 Kb
+      - 32MHz
+      - 256KB
+      - 32KB
 
 JKSoft
 ~~~~~~
@@ -182,21 +412,18 @@ JKSoft
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``wallbot_ble``
-      - `JKSoft Wallbot BLE <https://developer.mbed.org/platforms/JKSoft-Wallbot-BLE/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `JKSoft Wallbot BLE <https://developer.mbed.org/platforms/JKSoft-Wallbot-BLE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 128 Kb
-      - 16 Kb
+      - 16MHz
+      - 128KB
+      - 16KB
 
 Nordic
 ~~~~~~
@@ -206,39 +433,32 @@ Nordic
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``nrf51_dk``
-      - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 32 MHz
-      - 256 Kb
-      - 32 Kb
-
+      - 32MHz
+      - 256KB
+      - 32KB
     * - ``nrf51_dongle``
-      - `Nordic nRF51-Dongle <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Nordic nRF51-Dongle <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 32 MHz
-      - 256 Kb
-      - 32 Kb
-
+      - 32MHz
+      - 256KB
+      - 32KB
     * - ``nrf51_mkit``
-      - `Nordic nRF51822-mKIT <http://developer.mbed.org/platforms/Nordic-nRF51822/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Nordic nRF51822-mKIT <http://developer.mbed.org/platforms/Nordic-nRF51822/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 128 Kb
-      - 16 Kb
+      - 16MHz
+      - 128KB
+      - 16KB
 
 OSHChip
 ~~~~~~~
@@ -248,21 +468,18 @@ OSHChip
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``oshchip``
-      - `OSHChip <http://oshchip.org/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `OSHChip <http://oshchip.org/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 32 MHz
-      - 256 Kb
-      - 32 Kb
+      - 32MHz
+      - 256KB
+      - 32KB
 
 RFduino
 ~~~~~~~
@@ -272,21 +489,18 @@ RFduino
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``rfduino``
-      - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 128 Kb
-      - 8 Kb
+      - 16MHz
+      - 128KB
+      - 8KB
 
 RedBearLab
 ~~~~~~~~~~
@@ -296,30 +510,25 @@ RedBearLab
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``redBearLab``
-      - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 256 Kb
-      - 16 Kb
-
+      - 16MHz
+      - 256KB
+      - 16KB
     * - ``redBearLabBLENano``
-      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 256 Kb
-      - 32 Kb
+      - 16MHz
+      - 256KB
+      - 32KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -329,39 +538,32 @@ SeeedStudio
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``seeedArchBLE``
-      - `Seeed Arch BLE <https://developer.mbed.org/platforms/Seeed-Arch-BLE/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Seeed Arch BLE <https://developer.mbed.org/platforms/Seeed-Arch-BLE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 128 Kb
-      - 16 Kb
-
+      - 16MHz
+      - 128KB
+      - 16KB
     * - ``seeedArchLink``
-      - `Seeed Arch Link <https://developer.mbed.org/platforms/Seeed-Arch-Link/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Seeed Arch Link <https://developer.mbed.org/platforms/Seeed-Arch-Link/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 256 Kb
-      - 16 Kb
-
+      - 16MHz
+      - 256KB
+      - 16KB
     * - ``seeedTinyBLE``
-      - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 256 Kb
-      - 16 Kb
+      - 16MHz
+      - 256KB
+      - 16KB
 
 Switch Science
 ~~~~~~~~~~~~~~
@@ -371,30 +573,25 @@ Switch Science
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``hrm1017``
-      - `Switch Science mbed HRM1017 <https://developer.mbed.org/platforms/mbed-HRM1017/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Switch Science mbed HRM1017 <https://developer.mbed.org/platforms/mbed-HRM1017/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 256 Kb
-      - 16 Kb
-
+      - 16MHz
+      - 256KB
+      - 16KB
     * - ``ty51822r3``
-      - `Switch Science mbed TY51822r3 <https://developer.mbed.org/platforms/Switch-Science-mbed-TY51822r3/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Switch Science mbed TY51822r3 <https://developer.mbed.org/platforms/Switch-Science-mbed-TY51822r3/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 32 MHz
-      - 256 Kb
-      - 32 Kb
+      - 32MHz
+      - 256KB
+      - 32KB
 
 VNG
 ~~~
@@ -404,21 +601,18 @@ VNG
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``vbluno51``
-      - `VNG VBLUNO51 <https://os.mbed.com/platforms/VBLUNO51/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `VNG VBLUNO51 <https://os.mbed.com/platforms/VBLUNO51/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 128 Kb
-      - 32 Kb
+      - 16MHz
+      - 128KB
+      - 32KB
 
 Waveshare
 ~~~~~~~~~
@@ -428,21 +622,18 @@ Waveshare
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``waveshare_ble400``
-      - `Waveshare BLE400 <http://www.waveshare.com/wiki/BLE400>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `Waveshare BLE400 <http://www.waveshare.com/wiki/BLE400?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 32 MHz
-      - 256 Kb
-      - 32 Kb
+      - 32MHz
+      - 256KB
+      - 32KB
 
 ng-beacon
 ~~~~~~~~~
@@ -452,21 +643,18 @@ ng-beacon
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``ng_beacon``
-      - `ng-beacon <https://github.com/urish/ng-beacon>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `ng-beacon <https://github.com/urish/ng-beacon?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 32 MHz
-      - 256 Kb
-      - 32 Kb
+      - 32MHz
+      - 256KB
+      - 32KB
 
 y5 design
 ~~~~~~~~~
@@ -476,20 +664,15 @@ y5 design
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``nrf51822_y5_mbug``
-      - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
-      - 16 MHz
-      - 256 Kb
-      - 16 Kb
-
-.. include:: nordicnrf51_extra.rst
+      - 16MHz
+      - 256KB
+      - 16KB

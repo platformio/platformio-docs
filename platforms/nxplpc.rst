@@ -17,10 +17,278 @@ NXP LPC
 
 The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
-For more detailed information please visit `vendor site <http://www.nxp.com/products/microcontrollers/>`_.
+For more detailed information please visit `vendor site <http://www.nxp.com/products/microcontrollers/?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are listed from `NXP LPC development platform repository <https://github.com/platformio/platform-nxplpc/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `mbed-blink <https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-http-client <https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-http-client?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-ethernet <https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+On-Board tools
+~~~~~~~~~~~~~~
+
+Boards listed below have on-board debugging tools and **ARE READY** for debugging!
+You do not need to use/buy external debugger.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``elektor_cocorico``
+      - `CoCo-ri-Co! <https://developer.mbed.org/platforms/CoCo-ri-Co/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC812
+      - 30MHz
+      - 16KB
+      - 4KB
+    * - ``lpc1114fn28``
+      - `Switch Science mbed LPC1114FN28 <https://developer.mbed.org/platforms/LPC1114FN28/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC1114FN28
+      - 48MHz
+      - 32KB
+      - 4KB
+    * - ``lpc11u24``
+      - `NXP mbed LPC11U24 <https://developer.mbed.org/platforms/mbed-LPC11U24/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U24
+      - 48MHz
+      - 32KB
+      - 8KB
+    * - ``lpc11u24_301``
+      - `ARM mbed LPC11U24 (+CAN) <https://developer.mbed.org/handbook/mbed-NXP-LPC11U24?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U24
+      - 48MHz
+      - 32KB
+      - 8KB
+    * - ``lpc11u68``
+      - `LPCXpresso11U68 <https://developer.mbed.org/platforms/LPCXpresso11U68/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U68
+      - 50MHz
+      - 256KB
+      - 36KB
+    * - ``lpc1768``
+      - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC1768
+      - 96MHz
+      - 512KB
+      - 64KB
+    * - ``lpc4088``
+      - `Embedded Artists LPC4088 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC4088/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - LPC4088
+      - 120MHz
+      - 512KB
+      - 96KB
+    * - ``lpc4088_dm``
+      - `Embedded Artists LPC4088 Display Module <https://developer.mbed.org/platforms/EA-LPC4088-Display-Module/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - LPC4088
+      - 120MHz
+      - 512KB
+      - 96KB
+    * - ``lpc4330_m4``
+      - `Bambino-210E <https://developer.mbed.org/platforms/Micromint-Bambino-210E/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC4330
+      - 204MHz
+      - 8MB
+      - 264KB
+    * - ``lpc54114``
+      - `NXP LPCXpresso54114 <https://os.mbed.com/platforms/LPCXpresso54114/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - LPC54114J256BD64
+      - 100MHz
+      - 256KB
+      - 192KB
+    * - ``lpc546xx``
+      - `NXP LPCXpresso54608 <https://os.mbed.com/platforms/LPCXpresso54608/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink` (on-board)
+      - LPC54608ET512
+      - 180MHz
+      - 512KB
+      - 200KB
+    * - ``lpc812``
+      - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC812
+      - 30MHz
+      - 16KB
+      - 4KB
+    * - ``lpc824``
+      - `LPCXpresso824-MAX <https://developer.mbed.org/platforms/LPCXpresso824-MAX/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC824
+      - 30MHz
+      - 32KB
+      - 8KB
+    * - ``seeedArchPro``
+      - `Seeed Arch Pro <https://developer.mbed.org/platforms/Seeeduino-Arch-Pro/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board)
+      - LPC1768
+      - 96MHz
+      - 512KB
+      - 64KB
+    * - ``ssci824``
+      - `Switch Science mbed LPC824 <https://developer.mbed.org/platforms/Switch-Science-mbed-LPC824/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC824
+      - 30MHz
+      - 32KB
+      - 8KB
+    * - ``ubloxc027``
+      - `u-blox C027 <https://developer.mbed.org/platforms/u-blox-C027/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC1768
+      - 96MHz
+      - 512KB
+      - 64KB
+
+
+External tools
+~~~~~~~~~~~~~~
+
+Boards listed below are compatible with :ref:`piodebug` but depend on external
+debugging tools. See "Debug" column for compatible debugging tools.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``blueboard_lpc11u24``
+      - `NGX Technologies BlueBoard-LPC11U24 <https://developer.mbed.org/platforms/BlueBoard-LPC11U24/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U24
+      - 48MHz
+      - 32KB
+      - 8KB
+    * - ``dipcortexm0``
+      - `Solder Splash Labs DipCortex M0 <https://developer.mbed.org/platforms/DipCortex-M0/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U24
+      - 50MHz
+      - 32KB
+      - 8KB
+    * - ``lpc11c24``
+      - `NXP LPC11C24 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/scalable-entry-level-32-bit-microcontroller-mcu-based-on-arm-cortex-m0-plus-m0-cores:LPC11C24FBD48?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11C24
+      - 48MHz
+      - 32KB
+      - 8KB
+    * - ``lpc11u34_421``
+      - `NXP LPC11U34 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/40kb-flash-8kb-sram-lqfp48-package:LPC11U34FBD48?lang_cd=en&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U34
+      - 48MHz
+      - 40KB
+      - 8KB
+    * - ``lpc11u35``
+      - `EA LPC11U35 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC11U35/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U35
+      - 48MHz
+      - 64KB
+      - 10KB
+    * - ``lpc11u35_501``
+      - `CQ Publishing TG-LPC11U35-501 <https://developer.mbed.org/platforms/TG-LPC11U35-501/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U35
+      - 48MHz
+      - 64KB
+      - 10KB
+    * - ``lpc11u35_y5_mbug``
+      - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U35
+      - 48MHz
+      - 64KB
+      - 10KB
+    * - ``lpc11u37_501``
+      - `NXP LPC11U37 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/128kb-flash-10kb-sram-lqfp48-package:LPC11U37FBD48?lang_cd=en&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC11U37
+      - 48MHz
+      - 128KB
+      - 10KB
+    * - ``lpc1347``
+      - `DipCortex M3 <https://developer.mbed.org/platforms/DipCortex-M3/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - LPC1347
+      - 72MHz
+      - 64KB
+      - 12KB
+    * - ``lpc1549``
+      - `NXP LPCXpresso1549 <https://developer.mbed.org/platforms/LPCXpresso1549/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - LPC1549
+      - 72MHz
+      - 256KB
+      - 36KB
+
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-nxplpc/releases>`__
+of NXP LPC development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =nxplpc@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-nxplpc.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,20 +299,22 @@ Packages
     * - Name
       - Description
 
-    * - `framework-mbed <http://mbed.org>`__
+    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-openocd <http://openocd.org>`__
+    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded>`__
+    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD?utm_source=platformio&utm_medium=docs>`__
+      - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
+
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-          (an instruction is located inside a file).
+        * Install "udev" rules :ref:`faq_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -71,9 +341,30 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
+
+AppNearMe
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``micronfcboard``
+      - `MicroNFCBoard <https://os.mbed.com/platforms/MicroNFCBoard/?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - LPC11U34
+      - 48MHz
+      - 48KB
+      - 10KB
 
 CQ Publishing
 ~~~~~~~~~~~~~
@@ -83,21 +374,18 @@ CQ Publishing
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``lpc11u35_501``
-      - `CQ Publishing TG-LPC11U35-501 <https://developer.mbed.org/platforms/TG-LPC11U35-501/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `CQ Publishing TG-LPC11U35-501 <https://developer.mbed.org/platforms/TG-LPC11U35-501/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC11U35
-      - 48 MHz
-      - 64 Kb
-      - 10 Kb
+      - 48MHz
+      - 64KB
+      - 10KB
 
 Elektor Labs
 ~~~~~~~~~~~~
@@ -107,21 +395,18 @@ Elektor Labs
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``elektor_cocorico``
-      - `CoCo-ri-Co! <https://developer.mbed.org/platforms/CoCo-ri-Co/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `CoCo-ri-Co! <https://developer.mbed.org/platforms/CoCo-ri-Co/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC812
-      - 30 MHz
-      - 16 Kb
-      - 4 Kb
+      - 30MHz
+      - 16KB
+      - 4KB
 
 Embedded Artists
 ~~~~~~~~~~~~~~~~
@@ -131,39 +416,32 @@ Embedded Artists
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``lpc11u35``
-      - `EA LPC11U35 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC11U35/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `EA LPC11U35 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC11U35/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC11U35
-      - 48 MHz
-      - 64 Kb
-      - 10 Kb
-
+      - 48MHz
+      - 64KB
+      - 10KB
     * - ``lpc4088``
-      - `Embedded Artists LPC4088 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC4088/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `Embedded Artists LPC4088 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC4088/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC4088
-      - 120 MHz
-      - 512 Kb
-      - 96 Kb
-
+      - 120MHz
+      - 512KB
+      - 96KB
     * - ``lpc4088_dm``
-      - `Embedded Artists LPC4088 Display Module <https://developer.mbed.org/platforms/EA-LPC4088-Display-Module/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `Embedded Artists LPC4088 Display Module <https://developer.mbed.org/platforms/EA-LPC4088-Display-Module/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC4088
-      - 120 MHz
-      - 512 Kb
-      - 96 Kb
+      - 120MHz
+      - 512KB
+      - 96KB
 
 GHI Electronics
 ~~~~~~~~~~~~~~~
@@ -173,21 +451,18 @@ GHI Electronics
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``oc_mbuino``
-      - `mBuino <https://developer.mbed.org/platforms/mBuino/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `mBuino <https://developer.mbed.org/platforms/mBuino/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - LPC11U24
-      - 50 MHz
-      - 32 Kb
-      - 10 Kb
+      - 50MHz
+      - 32KB
+      - 10KB
 
 Micromint
 ~~~~~~~~~
@@ -197,30 +472,18 @@ Micromint
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``lpc4330_m4``
-      - `Bambino-210E <https://developer.mbed.org/platforms/Micromint-Bambino-210E/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `Bambino-210E <https://developer.mbed.org/platforms/Micromint-Bambino-210E/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC4330
-      - 204 MHz
-      - 8192 Kb
-      - 264 Kb
-
-    * - ``lpc4337``
-      - `LPCXpresso4337 <https://developer.mbed.org/platforms/LPCXpresso4337/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
-      - LPC4337
-      - 204 MHz
-      - 1024 Kb
-      - 136 Kb
+      - 204MHz
+      - 8MB
+      - 264KB
 
 NGX Technologies
 ~~~~~~~~~~~~~~~~
@@ -230,21 +493,18 @@ NGX Technologies
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``blueboard_lpc11u24``
-      - `NGX Technologies BlueBoard-LPC11U24 <https://developer.mbed.org/platforms/BlueBoard-LPC11U24/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `NGX Technologies BlueBoard-LPC11U24 <https://developer.mbed.org/platforms/BlueBoard-LPC11U24/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC11U24
-      - 48 MHz
-      - 32 Kb
-      - 8 Kb
+      - 48MHz
+      - 32KB
+      - 8KB
 
 NXP
 ~~~
@@ -254,129 +514,95 @@ NXP
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``lpc11c24``
-      - `NXP LPC11C24 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/scalable-entry-level-32-bit-microcontroller-mcu-based-on-arm-cortex-m0-plus-m0-cores:LPC11C24FBD48>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `NXP LPC11C24 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/scalable-entry-level-32-bit-microcontroller-mcu-based-on-arm-cortex-m0-plus-m0-cores:LPC11C24FBD48?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC11C24
-      - 48 MHz
-      - 32 Kb
-      - 8 Kb
-
+      - 48MHz
+      - 32KB
+      - 8KB
     * - ``lpc11u24``
-      - `NXP mbed LPC11U24 <https://developer.mbed.org/platforms/mbed-LPC11U24/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `NXP mbed LPC11U24 <https://developer.mbed.org/platforms/mbed-LPC11U24/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC11U24
-      - 48 MHz
-      - 32 Kb
-      - 8 Kb
-
+      - 48MHz
+      - 32KB
+      - 8KB
     * - ``lpc11u24_301``
-      - `ARM mbed LPC11U24 (+CAN) <https://developer.mbed.org/handbook/mbed-NXP-LPC11U24>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `ARM mbed LPC11U24 (+CAN) <https://developer.mbed.org/handbook/mbed-NXP-LPC11U24?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC11U24
-      - 48 MHz
-      - 32 Kb
-      - 8 Kb
-
+      - 48MHz
+      - 32KB
+      - 8KB
     * - ``lpc11u34_421``
-      - `NXP LPC11U34 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/40kb-flash-8kb-sram-lqfp48-package:LPC11U34FBD48?lang_cd=en>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `NXP LPC11U34 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/40kb-flash-8kb-sram-lqfp48-package:LPC11U34FBD48?lang_cd=en&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC11U34
-      - 48 MHz
-      - 64 Kb
-      - 8 Kb
-
+      - 48MHz
+      - 40KB
+      - 8KB
     * - ``lpc11u37_501``
-      - `NXP LPC11U37 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/128kb-flash-10kb-sram-lqfp48-package:LPC11U37FBD48?lang_cd=en>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `NXP LPC11U37 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/128kb-flash-10kb-sram-lqfp48-package:LPC11U37FBD48?lang_cd=en&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC11U37
-      - 48 MHz
-      - 128 Kb
-      - 10 Kb
-
+      - 48MHz
+      - 128KB
+      - 10KB
     * - ``lpc11u68``
-      - `LPCXpresso11U68 <https://developer.mbed.org/platforms/LPCXpresso11U68/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `LPCXpresso11U68 <https://developer.mbed.org/platforms/LPCXpresso11U68/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC11U68
-      - 50 MHz
-      - 256 Kb
-      - 36 Kb
-
+      - 50MHz
+      - 256KB
+      - 36KB
     * - ``lpc1549``
-      - `NXP LPCXpresso1549 <https://developer.mbed.org/platforms/LPCXpresso1549/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `NXP LPCXpresso1549 <https://developer.mbed.org/platforms/LPCXpresso1549/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC1549
-      - 72 MHz
-      - 256 Kb
-      - 36 Kb
-
+      - 72MHz
+      - 256KB
+      - 36KB
     * - ``lpc1768``
-      - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC1768
-      - 96 MHz
-      - 512 Kb
-      - 64 Kb
-
-    * - ``lpc2368``
-      - `NXP LPC2368 <https://developer.mbed.org/platforms/mbed-LPC2368/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
-      - LPC2368
-      - 72 MHz
-      - 512 Kb
-      - 58 Kb
-
-    * - ``lpc2460``
-      - `NXP LPC2460 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-arm7-arm9-mcus/lpc-arm7-mcus/lpc2100-200-300-400/flashless-16-bit-32-bit-microcontroller-ethernet-can-isp-iap-usb-2.0-device-host-otg-external-memory-interface:LPC2460FBD208>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - 96MHz
+      - 512KB
+      - 64KB
+    * - ``lpc54114``
+      - `NXP LPCXpresso54114 <https://os.mbed.com/platforms/LPCXpresso54114/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
-      - LPC2460
-      - 72 MHz
-      - 64 Kb
-      - 16 Kb
-
+      - LPC54114J256BD64
+      - 100MHz
+      - 256KB
+      - 192KB
+    * - ``lpc546xx``
+      - `NXP LPCXpresso54608 <https://os.mbed.com/platforms/LPCXpresso54608/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - LPC54608ET512
+      - 180MHz
+      - 512KB
+      - 200KB
     * - ``lpc812``
-      - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC812
-      - 30 MHz
-      - 16 Kb
-      - 4 Kb
-
+      - 30MHz
+      - 16KB
+      - 4KB
     * - ``lpc824``
-      - `LPCXpresso824-MAX <https://developer.mbed.org/platforms/LPCXpresso824-MAX/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `LPCXpresso824-MAX <https://developer.mbed.org/platforms/LPCXpresso824-MAX/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC824
-      - 30 MHz
-      - 32 Kb
-      - 8 Kb
-
-    * - ``micronfcboard``
-      - `MicroNFCBoard <https://developer.mbed.org/platforms/MicroNFCBoard/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
-      - LPC11U34
-      - 48 MHz
-      - 64 Kb
-      - 10 Kb
+      - 30MHz
+      - 32KB
+      - 8KB
 
 Outrageous Circuits
 ~~~~~~~~~~~~~~~~~~~
@@ -386,21 +612,18 @@ Outrageous Circuits
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``mbuino``
-      - `Outrageous Circuits mBuino <https://developer.mbed.org/platforms/Outrageous-Circuits-mBuino/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `Outrageous Circuits mBuino <https://developer.mbed.org/platforms/Outrageous-Circuits-mBuino/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - LPC11U24
-      - 48 MHz
-      - 32 Kb
-      - 8 Kb
+      - 48MHz
+      - 32KB
+      - 8KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -410,39 +633,32 @@ SeeedStudio
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``seeedArchGPRS``
-      - `Seeed Arch GPRS V2 <https://www.seeedstudio.com/Arch-GPRS-V2-p-2026.html>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `Seeed Arch GPRS V2 <https://www.seeedstudio.com/Arch-GPRS-V2-p-2026.html?utm_source=platformio&utm_medium=docs>`_
+      - No
       - LPC11U37
-      - 48 MHz
-      - 128 Kb
-      - 10 Kb
-
+      - 48MHz
+      - 128KB
+      - 10KB
     * - ``seeedArchPro``
-      - `Seeed Arch Pro <https://developer.mbed.org/platforms/Seeeduino-Arch-Pro/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `Seeed Arch Pro <https://developer.mbed.org/platforms/Seeeduino-Arch-Pro/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC1768
-      - 96 MHz
-      - 512 Kb
-      - 64 Kb
-
+      - 96MHz
+      - 512KB
+      - 64KB
     * - ``xadow_m0``
-      - `Seeed Xadow M0 <https://developer.mbed.org/platforms/Seeed-Xadow-M0/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `Seeed Xadow M0 <https://developer.mbed.org/platforms/Seeed-Xadow-M0/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - LPC11U35
-      - 48 MHz
-      - 64 Kb
-      - 10 Kb
+      - 48MHz
+      - 64KB
+      - 10KB
 
 Smeshlink
 ~~~~~~~~~
@@ -452,21 +668,18 @@ Smeshlink
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``xbed_lpc1768``
-      - `Smeshlink xbed LPC1768 <https://developer.mbed.org/platforms/xbed-LPC1768/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `Smeshlink xbed LPC1768 <https://developer.mbed.org/platforms/xbed-LPC1768/?utm_source=platformio&utm_medium=docs>`_
+      - No
       - LPC1768
-      - 96 MHz
-      - 512 Kb
-      - 32 Kb
+      - 96MHz
+      - 512KB
+      - 32KB
 
 Solder Splash Labs
 ~~~~~~~~~~~~~~~~~~
@@ -476,30 +689,25 @@ Solder Splash Labs
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``dipcortexm0``
-      - `Solder Splash Labs DipCortex M0 <https://developer.mbed.org/platforms/DipCortex-M0/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `Solder Splash Labs DipCortex M0 <https://developer.mbed.org/platforms/DipCortex-M0/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC11U24
-      - 50 MHz
-      - 32 Kb
-      - 8 Kb
-
+      - 50MHz
+      - 32KB
+      - 8KB
     * - ``lpc1347``
-      - `DipCortex M3 <https://developer.mbed.org/platforms/DipCortex-M3/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `DipCortex M3 <https://developer.mbed.org/platforms/DipCortex-M3/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC1347
-      - 72 MHz
-      - 64 Kb
-      - 12 Kb
+      - 72MHz
+      - 64KB
+      - 12KB
 
 Switch Science
 ~~~~~~~~~~~~~~
@@ -509,30 +717,25 @@ Switch Science
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``lpc1114fn28``
-      - `Switch Science mbed LPC1114FN28 <https://developer.mbed.org/platforms/LPC1114FN28/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `Switch Science mbed LPC1114FN28 <https://developer.mbed.org/platforms/LPC1114FN28/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC1114FN28
-      - 48 MHz
-      - 32 Kb
-      - 4 Kb
-
+      - 48MHz
+      - 32KB
+      - 4KB
     * - ``ssci824``
-      - `Switch Science mbed LPC824 <https://developer.mbed.org/platforms/Switch-Science-mbed-LPC824/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `Switch Science mbed LPC824 <https://developer.mbed.org/platforms/Switch-Science-mbed-LPC824/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC824
-      - 30 MHz
-      - 32 Kb
-      - 8 Kb
+      - 30MHz
+      - 32KB
+      - 8KB
 
 u-blox
 ~~~~~~
@@ -542,21 +745,18 @@ u-blox
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``ubloxc027``
-      - `u-blox C027 <https://developer.mbed.org/platforms/u-blox-C027/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
+      - `u-blox C027 <https://developer.mbed.org/platforms/u-blox-C027/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - LPC1768
-      - 96 MHz
-      - 512 Kb
-      - 64 Kb
+      - 96MHz
+      - 512KB
+      - 64KB
 
 y5 design
 ~~~~~~~~~
@@ -566,18 +766,15 @@ y5 design
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``lpc11u35_y5_mbug``
-      - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - 
+      - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
       - LPC11U35
-      - 48 MHz
-      - 64 Kb
-      - 10 Kb
+      - 48MHz
+      - 64KB
+      - 10KB

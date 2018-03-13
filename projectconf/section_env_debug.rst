@@ -18,6 +18,9 @@ Debugging options
 .. seealso::
     Please make sure to read :ref:`piodebug` guide first.
 
+.. contents::
+    :local:
+
 .. _projectconf_debug_tool:
 
 ``debug_tool``
@@ -136,16 +139,30 @@ for GDB:
 Specify a command which will be used to load program/firmware to a target
 device. Possible options:
 
-* ``debug_load_cmd = command`` - pass any debugging client command (GDB, etc.)
-* ``debug_load_cmd = load`` - is setup by **default**
-* ``debug_load_cmd = load address`` - load program at specified address, where
-  "address" should be a valid number
-* ``debug_load_cmd = preload`` - some embedded devices have locked Flash
-  Memory (a few Freescale Kinetis and NXP LPC boards). In this case, firmware
-  loading using debugging client is disabled. ``preload`` command instructs
+* ``command`` - pass any debugging client command (GDB, etc.)
+* ``load`` - is setup by **default**
+* ``load address`` - load program at specified address, where "address"
+  should be a valid number
+* ``preload`` - some embedded devices have locked Flash Memory (a few
+  Freescale Kinetis and NXP LPC boards). In this case, firmware loading using
+  debugging client is disabled. ``preload`` command instructs
   :ref:`piocore` to load program/firmware using development platform "upload"
   method (via bootloader, media disk, etc)
-* ``debug_load_cmd =`` - (empty value), disables program loading at all.
+* (empty value, ``debug_load_cmd =``), disables program loading at all.
+
+
+.. _projectconf_debug_load_mode:
+
+``debug_load_mode``
+^^^^^^^^^^^^^^^^^^^
+
+Allows to control when PlatformIO should load debugging firmware to the end
+target. Possible options:
+
+* ``always`` - load for the each debugging session, **default**
+* ``modified`` - load only when firmware was modified
+* ``manual`` - do not load firmware automatically. You are responsible to
+  pre-flash target with debugging firmware in this case.
 
 .. _projectconf_debug_server:
 

@@ -17,11 +17,17 @@ WiringPi
 
 WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino "wiring" system.
 
-For more detailed information please visit `vendor site <http://wiringpi.com>`_.
+For more detailed information please visit `vendor site <http://wiringpi.com?utm_source=platformio&utm_medium=docs>`_.
 
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+Examples
+--------
+
+* `WiringPi for Linux ARM <https://github.com/platformio/platform-linux_arm/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -39,7 +45,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
 Raspberry Pi
@@ -52,45 +58,39 @@ Raspberry Pi
       - Name
       - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``raspberrypi_1b``
-      - `Raspberry Pi 1 Model B <https://www.raspberrypi.org>`_
+      - `Raspberry Pi 1 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - No
       - BCM2835
-      - 700 MHz
-      - 524288 Kb
-      - 524288 Kb
-
+      - 700MHz
+      - 512MB
+      - 512MB
     * - ``raspberrypi_2b``
-      - `Raspberry Pi 2 Model B <https://www.raspberrypi.org>`_
+      - `Raspberry Pi 2 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - No
       - BCM2836
-      - 900 MHz
-      - 1048576 Kb
-      - 1048576 Kb
-
+      - 900MHz
+      - 1GB
+      - 1GB
     * - ``raspberrypi_3b``
-      - `Raspberry Pi 3 Model B <https://www.raspberrypi.org>`_
+      - `Raspberry Pi 3 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - No
       - BCM2837
-      - 1200 MHz
-      - 1048576 Kb
-      - 1048576 Kb
-
+      - 1200MHz
+      - 1GB
+      - 1GB
     * - ``raspberrypi_zero``
-      - `Raspberry Pi Zero <https://www.raspberrypi.org>`_
+      - `Raspberry Pi Zero <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - No
       - BCM2835
-      - 1000 MHz
-      - 524288 Kb
-      - 524288 Kb
-
-.. include:: wiringpi_extra.rst
+      - 1000MHz
+      - 512MB
+      - 512MB

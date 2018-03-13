@@ -108,7 +108,7 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 .. code-block:: ini
 
     [env:pre_and_post_hooks]
-    extra_scripts = extra_script.py
+    extra_scripts = post:extra_script.py
 
 ``extra_script.py``:
 
@@ -128,6 +128,9 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
     def before_upload(source, target, env):
         print "before_upload"
         # do some actions
+
+        # call Node.JS or other script
+        env.Execute("node --version")
 
 
     def after_upload(source, target, env):
@@ -263,3 +266,42 @@ Sometime is useful to have a different firmware/program name in
     # print defines
 
     env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
+
+Custom build target
+'''''''''''''''''''
+
+There is a list with built-in targets which could be processed using
+:option:`platformio run --target` option. You can create unlimited number of
+the own targets and declare custom handlers for them.
+
+Let's create a simple ``ping`` target and process it with
+``platformio run --target ping`` command:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:env_custom_target]
+    platform = ...
+    ...
+    extra_scripts = extra_script.py
+    custom_ping_host = google.com
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    from base64 import b64decode
+
+    from SCons.Script import ARGUMENTS, AlwaysBuild
+
+    Import("env")
+
+
+    def mytarget_callback(*args, **kwargs):
+        print "Hello PlatformIO!"
+        env.Execute("ping " + b64decode(ARGUMENTS.get("CUSTOM_PING_HOST")))
+
+
+    AlwaysBuild(env.Alias("ping", "", mytarget_callback))
+

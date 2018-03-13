@@ -23,7 +23,8 @@ directives.
 In spite of the fact that Library Dependency Finder is written in pure Python,
 it evaluates :ref:`ldf_c_cond_syntax` (``#ifdef``, ``if``, ``defined``,
 ``else``, and ``elif``) without calling ``gcc -E``. This approach allows
-significantly reduce total compilation time.
+significantly reduce total compilation time. See :ref:`ldf_mode` for more
+details.
 
 Library Dependency Finder has controls that can be set up in :ref:`projectconf`:
 
@@ -65,38 +66,31 @@ Dependency Finder Mode
 Library Dependency Finder starts work from analyzing source files of the
 project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
 
-.. list-table::
-    :header-rows:  1
+:``off``:
+    "Manual mode", does not process source files of a project and dependencies.
+    Builds only the libraries that are specified in manifests
+    (:ref:`library_config`, ``module.json``) or using :ref:`projectconf_lib_deps`
+    option.
 
-    * - Mode
-      - Description
+:``chain``:
+    [**DEFAULT**] Parses ALL C/C++ source files of the project and follows
+    only by nested includes (``#include ...``, chain...) from the libraries.
+    It also parses C, CC, CPP files from libraries which have the same name as
+    included header file. **Does not evaluates** :ref:`ldf_c_cond_syntax`.
 
-    * - ``off``
-      - "Manual mode", does not process source files of a project and
-        dependencies. Builds only the libraries that are specified in
-        manifests (:ref:`library_config`, ``module.json``) or using
-        :ref:`projectconf_lib_deps` option.
+:``deep``:
+    Parses ALL C/C++ source files of the project and parses ALL C/C++ source
+    files of the each found dependency (recursively).
+    **Does not evaluates** :ref:`ldf_c_cond_syntax`.
 
-    * - ``chain`` (**default**)
-      - Parses ALL C/C++ source code of the project and follows
-        only by nested includes (``#include ...``, chain...) from the libraries.
-        It also parses C, CC, CPP files from libraries which have the same
-        name as included header file.
-        Does not evaluates :ref:`ldf_c_cond_syntax`.
+:``chain+``:
+    The same behavior as for the ``chain`` but **evaluates** :ref:`ldf_c_cond_syntax`.
 
-    * - ``deep``
-      - Parses ALL C/C++ source code of the project and parses ALL C/C++
-        source code of the each found dependency (recursively).
-        Does not process :ref:`ldf_c_cond_syntax`.
-
-    * - ``chain+``
-      - The same behavior as for the ``chain`` but evaluates :ref:`ldf_c_cond_syntax`.
-
-    * - ``deep+``
-      - The same behavior as for the ``deep`` but evaluates :ref:`ldf_c_cond_syntax`.
+:``deep+``:
+    The same behavior as for the ``deep`` but **evaluates** :ref:`ldf_c_cond_syntax`.
 
 The mode can be changed using :ref:`projectconf_lib_ldf_mode` option in
-:ref:`projectconf`.
+:ref:`projectconf`. Default value is set to ``chain``.
 
 .. note::
   Usually, when the LDF appears to fail to identify a dependency of a library,
@@ -159,14 +153,19 @@ If library contains one of manifest file (:ref:`library_config`,
 ``library.properties``, ``module.json``), then LDF check compatibility of this
 library with real build environment. Available compatibility modes:
 
-* ``0`` - does not check for compatibility (is not recommended)
-* ``1`` - **default** - checks for the compatibility with
-  :ref:`projectconf_env_framework` from build environment
-* ``2`` - checks for the compatibility with :ref:`projectconf_env_framework`
-  and :ref:`projectconf_env_platform` from build environment.
+:``off``:
+    Does not check for compatibility (is not recommended)
+
+:``light``:
+    [**DEFAULT**] Checks for the compatibility with :ref:`projectconf_env_framework` from
+    build environment
+
+:``strict``:
+    Checks for the compatibility with :ref:`projectconf_env_framework`
+    and :ref:`projectconf_env_platform` from build environment.
 
 This mode can be changed using :ref:`projectconf_lib_compat_mode` option in
-:ref:`projectconf`.
+:ref:`projectconf`. Default value is set to ``light``.
 
 .. _ldf_c_cond_syntax:
 

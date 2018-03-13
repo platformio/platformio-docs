@@ -74,7 +74,7 @@ Let's create our first PlatformIO-based Cloud9 Project
         platformio init --board uno
 
     To get board ``ID`` please use :ref:`cmd_boards` command or
-    `Embedded Boards Explorer <http://platformio.org/boards>`_.
+    `Embedded Boards Explorer <https://platformio.org/boards>`_.
 
 2.  Create new source file named ``main.cpp`` in ``src`` folder using
     Project Tree (left side). Please make right click on ``src`` folder,

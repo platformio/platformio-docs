@@ -53,64 +53,64 @@ Print all supported frameworks, SDKs, etc.
     =================
     Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
-    Home: http://platformio.org/frameworks/arduino
+    Home: https://platformio.org/frameworks/arduino
 
     artik-sdk ~ ARTIK SDK
     =====================
     ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms. It exposes a set of APIs to ease up development of applications. These APIs cover hardware buses such as GPIO, SPI, I2C, UART, connectivity links like Wi-Fi, Bluetooth, Zigbee, and network protocols such as HTTP, Websockets, MQTT, and others.
 
-    Home: http://platformio.org/frameworks/artik-sdk
+    Home: https://platformio.org/frameworks/artik-sdk
 
     cmsis ~ CMSIS
     =============
     The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
 
-    Home: http://platformio.org/frameworks/cmsis
+    Home: https://platformio.org/frameworks/cmsis
 
     energia ~ Energia
     =================
     Energia Wiring-based framework enables pretty much anyone to start easily creating microcontroller-based projects and applications. Its easy-to-use libraries and functions provide developers of all experience levels to start blinking LEDs, buzzing buzzers and sensing sensors more quickly than ever before.
 
-    Home: http://platformio.org/frameworks/energia
+    Home: https://platformio.org/frameworks/energia
 
     espidf ~ ESP-IDF
     ================
     Espressif IoT Development Framework. Official development framework for ESP32.
 
-    Home: http://platformio.org/frameworks/espidf
+    Home: https://platformio.org/frameworks/espidf
 
     libopencm3 ~ libOpenCM3
     =======================
     The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
 
-    Home: http://platformio.org/frameworks/libopencm3
+    Home: https://platformio.org/frameworks/libopencm3
 
     mbed ~ mbed
     ===========
     The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
 
-    Home: http://platformio.org/frameworks/mbed
+    Home: https://platformio.org/frameworks/mbed
 
     pumbaa ~ Pumbaa
     ===============
     Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
 
-    Home: http://platformio.org/frameworks/pumbaa
+    Home: https://platformio.org/frameworks/pumbaa
 
     simba ~ Simba
     =============
     Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
 
-    Home: http://platformio.org/frameworks/simba
+    Home: https://platformio.org/frameworks/simba
 
     spl ~ SPL
     =========
     The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
 
-    Home: http://platformio.org/frameworks/spl
+    Home: https://platformio.org/frameworks/spl
 
     wiringpi ~ WiringPi
     ===================
     WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino "wiring" system.
 
-    Home: http://platformio.org/frameworks/wiringpi
+    Home: https://platformio.org/frameworks/wiringpi

@@ -65,7 +65,8 @@ Example:
     PubSubClient
     ArduinoJson@~5.6,!=5.4
     https://github.com/gioblu/PJON.git#v2.0
-    https://github.com/me-no-dev/ESPAsyncTCP.git
+    me-no-dev/ESPAsyncTCP
+    IRremoteESP8266=https://github.com/markszabo/IRremoteESP8266/archive/master.zip
 
 .. _projectconf_lib_ignore:
 

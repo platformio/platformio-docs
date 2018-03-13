@@ -17,10 +17,41 @@ Linux i686
 
 Linux i686 (32-bit) is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X or Linux 32-bit) you can build native application for Linux i686 platform.
 
-For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_i686>`_.
+For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_i686?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are listed from `Linux i686 development platform repository <https://github.com/platformio/platform-linux_i686/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `hello-world <https://github.com/platformio/platform-linux_i686/tree/develop/examples/hello-world?utm_source=platformio&utm_medium=docs>`_
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-linux_i686/releases>`__
+of Linux i686 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =linux_i686@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-linux_i686.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,5 +62,5 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-gcclinux32 <https://gcc.gnu.org>`__
+    * - `toolchain-gcclinux32 <https://gcc.gnu.org?utm_source=platformio&utm_medium=docs>`__
       - GCC for Linux i686

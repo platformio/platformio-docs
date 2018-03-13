@@ -43,7 +43,7 @@ Examples
     Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
     Version: 1.2.1
-    Home: http://platformio.org/platforms/atmelavr
+    Home: https://platformio.org/platforms/atmelavr
     License: Apache-2.0
     Frameworks: simba, arduino
 

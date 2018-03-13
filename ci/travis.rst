@@ -64,6 +64,12 @@ PlatformIO is written in Python and is recommended to be run within
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=path/to/test/file.c
         - PLATFORMIO_CI_SRC=examples/file.ino
@@ -71,6 +77,7 @@ PlatformIO is written in Python and is recommended to be run within
 
     install:
         - pip install -U platformio
+        - platformio update
 
     script:
         - platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
@@ -106,7 +113,7 @@ Install dependent library using :ref:`librarymanager`
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # http://platformio.org/lib/show/1/OneWire
+        # https://platformio.org/lib/show/1/OneWire
         - platformio lib -g install 1
 
 Manually download dependent library and include in build process via ``--lib`` option
@@ -174,6 +181,12 @@ Examples
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=examples/acm/acm_terminal
         - PLATFORMIO_CI_SRC=examples/Bluetooth/WiiIRCamera PLATFORMIO_BUILD_FLAGS="-DWIICAMERA"
@@ -183,12 +196,13 @@ Examples
 
     install:
         - pip install -U platformio
+        - platformio update
 
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # http://platformio.org/lib/show/416/TinyGPS
-        # http://platformio.org/lib/show/417/SPI4Teensy3
+        # https://platformio.org/lib/show/416/TinyGPS
+        # https://platformio.org/lib/show/417/SPI4Teensy3
         - platformio lib -g install 416 417
 
     script:
@@ -205,6 +219,12 @@ Examples
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=examples/backSoon/backSoon.ino
         - PLATFORMIO_CI_SRC=examples/etherNode/etherNode.ino
@@ -212,6 +232,7 @@ Examples
 
     install:
         - pip install -U platformio
+        - platformio update
 
         - wget https://github.com/jcw/jeelib/archive/master.zip -O /tmp/jeelib.zip
         - unzip /tmp/jeelib.zip -d /tmp
@@ -233,6 +254,12 @@ Examples
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=examples/TimeArduinoDue PLATFORMIO_CI_EXTRA_ARGS="--board=due"
         - PLATFORMIO_CI_SRC=examples/TimeGPS
@@ -242,12 +269,13 @@ Examples
 
     install:
         - pip install -U platformio
+        - platformio update
         - rm -rf ./linux
 
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # http://platformio.org/lib/show/416/TinyGPS
+        # https://platformio.org/lib/show/416/TinyGPS
         - platformio lib -g install 416 421 422
 
     script:
@@ -264,6 +292,12 @@ Examples
     python:
         - "2.7"
 
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
     env:
         - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Adafruit_Bluefruit_LE
         - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Arduino_101_BLE PLATFORMIO_CI_EXTRA_ARGS="--board=genuino101"
@@ -273,23 +307,24 @@ Examples
 
     install:
         - pip install -U platformio
+        - platformio update
 
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # http://platformio.org/lib/show/44/Time
-        # http://platformio.org/lib/show/419/SimpleTimer
+        # https://platformio.org/lib/show/44/Time
+        # https://platformio.org/lib/show/419/SimpleTimer
         #
-        # http://platformio.org/lib/show/17/Adafruit-CC3000
-        # http://platformio.org/lib/show/28/SPI4Teensy3
-        # http://platformio.org/lib/show/91/UIPEthernet
-        # http://platformio.org/lib/show/418/WildFireCore
-        # http://platformio.org/lib/show/420/WildFire-CC3000
-        # http://platformio.org/lib/show/65/WiFlyHQ
-        # http://platformio.org/lib/show/19/Adafruit-DHT
-        # http://platformio.org/lib/show/299/WiFi101
-        # http://platformio.org/lib/show/259/BLEPeripheral
-        # http://platformio.org/lib/show/177/Adafruit_BluefruitLE_nRF51
+        # https://platformio.org/lib/show/17/Adafruit-CC3000
+        # https://platformio.org/lib/show/28/SPI4Teensy3
+        # https://platformio.org/lib/show/91/UIPEthernet
+        # https://platformio.org/lib/show/418/WildFireCore
+        # https://platformio.org/lib/show/420/WildFire-CC3000
+        # https://platformio.org/lib/show/65/WiFlyHQ
+        # https://platformio.org/lib/show/19/Adafruit-DHT
+        # https://platformio.org/lib/show/299/WiFi101
+        # https://platformio.org/lib/show/259/BLEPeripheral
+        # https://platformio.org/lib/show/177/Adafruit_BluefruitLE_nRF51
 
         - platformio lib -g install 17 28 91 418 419 420 65 44 19 299 259 177 https://github.com/vshymanskyy/BlynkESP8266.git https://github.com/cmaglie/FlashStorage.git https://github.com/michael71/Timer5.git
 

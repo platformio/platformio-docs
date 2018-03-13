@@ -17,10 +17,41 @@ Linux x86_64
 
 Linux x86_64 (64-bit) is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X or Linux 64-bit) you can build native application for Linux x86_64 platform.
 
-For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_x86_64>`_.
+For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_x86_64?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are listed from `Linux x86_64 development platform repository <https://github.com/platformio/platform-linux_x86_64/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `hello-world <https://github.com/platformio/platform-linux_x86_64/tree/develop/examples/hello-world?utm_source=platformio&utm_medium=docs>`_
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-linux_x86_64/releases>`__
+of Linux x86_64 development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =linux_x86_64@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-linux_x86_64.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,5 +62,5 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-gcclinux64 <https://gcc.gnu.org>`__
+    * - `toolchain-gcclinux64 <https://gcc.gnu.org?utm_source=platformio&utm_medium=docs>`__
       - GCC for Linux x86_64

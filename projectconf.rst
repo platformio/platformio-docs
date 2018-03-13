@@ -64,7 +64,7 @@ described below.
     lib_deps_external =
         ArduinoJson@~5.6,!=5.4
         https://github.com/gioblu/PJON.git#v2.0
-        https://github.com/adafruit/DHT-sensor-library/archive/master.zip
+        IRremoteESP8266=https://github.com/markszabo/IRremoteESP8266/archive/master.zip
 
     [env:nodemcuv2]
     platform = espressif8266

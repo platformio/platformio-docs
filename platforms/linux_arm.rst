@@ -17,10 +17,42 @@ Linux ARM
 
 Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
-For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_arm>`_.
+For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_arm?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
+    :depth: 1
+
+
+Examples
+--------
+
+Examples are listed from `Linux ARM development platform repository <https://github.com/platformio/platform-linux_arm/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+
+* `wiringpi-blink <https://github.com/platformio/platform-linux_arm/tree/develop/examples/wiringpi-blink?utm_source=platformio&utm_medium=docs>`_
+* `wiringpi-serial <https://github.com/platformio/platform-linux_arm/tree/develop/examples/wiringpi-serial?utm_source=platformio&utm_medium=docs>`_
+
+Stable and upstream versions
+----------------------------
+
+You can switch between `stable releases <https://github.com/platformio/platform-linux_arm/releases>`__
+of Linux ARM development platform and the latest upstream version using
+:ref:`projectconf_env_platform` option as described below:
+
+.. code-block:: ini
+
+    ; Custom stable version
+    [env:stable]
+    platform =linux_arm@x.y.z
+    board = ...
+    ...
+
+    ; The latest upstream/development version
+    [env:upstream]
+    platform = https://github.com/platformio/platform-linux_arm.git
+    board = ...
+    ...
+
 
 Packages
 --------
@@ -31,13 +63,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-artik-sdk <http://www.artik.io>`__
+    * - `framework-artik-sdk <http://www.artik.io?utm_source=platformio&utm_medium=docs>`__
       - ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms
 
-    * - `framework-wiringpi <http://wiringpi.com>`__
+    * - `framework-wiringpi <http://wiringpi.com?utm_source=platformio&utm_medium=docs>`__
       - GPIO Interface library for the Raspberry Pi
 
-    * - `toolchain-gccarmlinuxgnueabi <https://gcc.gnu.org>`__
+    * - `toolchain-gccarmlinuxgnueabi <https://gcc.gnu.org?utm_source=platformio&utm_medium=docs>`__
       - GCC for Linux ARM GNU EABI
 
 Frameworks
@@ -59,7 +91,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <http://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
@@ -71,48 +103,39 @@ Raspberry Pi
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``raspberrypi_1b``
-      - `Raspberry Pi 1 Model B <https://www.raspberrypi.org>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - `Raspberry Pi 1 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
+      - No
       - BCM2835
-      - 700 MHz
-      - 524288 Kb
-      - 524288 Kb
-
+      - 700MHz
+      - 512MB
+      - 512MB
     * - ``raspberrypi_2b``
-      - `Raspberry Pi 2 Model B <https://www.raspberrypi.org>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - `Raspberry Pi 2 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
+      - No
       - BCM2836
-      - 900 MHz
-      - 1048576 Kb
-      - 1048576 Kb
-
+      - 900MHz
+      - 1GB
+      - 1GB
     * - ``raspberrypi_3b``
-      - `Raspberry Pi 3 Model B <https://www.raspberrypi.org>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - `Raspberry Pi 3 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
+      - No
       - BCM2837
-      - 1200 MHz
-      - 1048576 Kb
-      - 1048576 Kb
-
+      - 1200MHz
+      - 1GB
+      - 1GB
     * - ``raspberrypi_zero``
-      - `Raspberry Pi Zero <https://www.raspberrypi.org>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - `Raspberry Pi Zero <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
+      - No
       - BCM2835
-      - 1000 MHz
-      - 524288 Kb
-      - 524288 Kb
+      - 1000MHz
+      - 512MB
+      - 512MB
 
 RushUp
 ~~~~~~
@@ -122,21 +145,18 @@ RushUp
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``kitra_520``
-      - `RushUp Kitra 520 <https://www.rushup.tech/kitra>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - `RushUp Kitra 520 <https://www.rushup.tech/kitra?utm_source=platformio&utm_medium=docs>`_
+      - No
       - EXYNOS3250
-      - 1000 MHz
-      - 4194304 Kb
-      - 524288 Kb
+      - 1000MHz
+      - 4GB
+      - 512MB
 
 Samsung
 ~~~~~~~
@@ -146,45 +166,36 @@ Samsung
 
     * - ID
       - Name
-      - Platform
       - Debug
-      - Microcontroller
+      - MCU
       - Frequency
       - Flash
       - RAM
-
     * - ``artik_1020``
-      - `Samsung ARTIK 1020 <https://www.artik.io>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - `Samsung ARTIK 1020 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+      - No
       - EXYNOS5422
-      - 1500 MHz
-      - 16777216 Kb
-      - 2097152 Kb
-
+      - 1500MHz
+      - 16GB
+      - 2GB
     * - ``artik_520``
-      - `Samsung ARTIK 520 <https://www.artik.io>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - `Samsung ARTIK 520 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+      - No
       - EXYNOS3250
-      - 1000 MHz
-      - 4194304 Kb
-      - 524288 Kb
-
+      - 1000MHz
+      - 4GB
+      - 512MB
     * - ``artik_530``
-      - `Samsung ARTIK 530 <https://www.artik.io>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - `Samsung ARTIK 530 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+      - No
       - S5P4418
-      - 1200 MHz
-      - 4194304 Kb
-      - 524288 Kb
-
+      - 1200MHz
+      - 4GB
+      - 512MB
     * - ``artik_710``
-      - `Samsung ARTIK 710 <https://www.artik.io>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
-      - 
+      - `Samsung ARTIK 710 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+      - No
       - S5P6818
-      - 1400 MHz
-      - 4194304 Kb
-      - 1048576 Kb
+      - 1400MHz
+      - 4GB
+      - 1GB
