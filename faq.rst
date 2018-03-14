@@ -352,7 +352,7 @@ Please open system Terminal and type
 .. code-block:: bash
 
     # Recommended
-    sudo curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules > /etc/udev/rules.d/99-platformio-udev.rule
+    sudo curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules > /etc/udev/rules.d/99-platformio-udev.rules
 
     # OR, manually download and copy this file to destination folder
     sudo cp 99-platformio-udev.rules /etc/udev/rules.d/99-platformio-udev.rules
