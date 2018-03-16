@@ -29,6 +29,11 @@ for :ref:`piocore`.
 Options
 ~~~~~~~
 
+``description``
+^^^^^^^^^^^^^^^
+Describe a project with a short information. PlatformIO uses it for
+:ref:`piohome` in the multiple places.
+
 .. _projectconf_pio_env_default:
 
 ``env_default``
