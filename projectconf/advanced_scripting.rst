@@ -122,6 +122,12 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
     #
 
     #
+    # Change build flags in runtime
+    #
+    env.ProcessUnFlags("-DVECT_TAB_ADDR")
+    env.Append(CPPDEFINES=("VECT_TAB_ADDR", 0x123456789))
+
+    #
     # Upload actions
     #
 
