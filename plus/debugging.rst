@@ -277,7 +277,9 @@ Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
 J-Link as debugger and uploader
 '''''''''''''''''''''''''''''''
 
-Segger J-Link probe as debugger and uploader for a custom Teensy-based board
+Segger J-Link probe as debugger and uploader for a custom Teensy-based board.
+If you plan to use with other board, please change device ``MK20DX256xxx7``
+to a valid identifier. See supported J-Link devices at :ref:`debugging_tool_jlink`.
 
 * Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/?utm_source=platformio&utm_medium=docs>`_
 
@@ -289,6 +291,7 @@ Segger J-Link probe as debugger and uploader for a custom Teensy-based board
     framework = arduino
     board = teensy31
     extra_scripts = extra_script.py
+    upload_protocol = custom
     debug_tool = custom
     debug_server =
       /full/path/to/JLinkGDBServerCL
@@ -308,8 +311,12 @@ Place this file on the same level as :ref:`projectconf`.
 
 .. code-block:: py
 
-    Import("env")
+    from os import makedirs
+    from os.path import isdir, join
+    Import('env')
 
+
+    # Optional block, only for Teensy
     env.AddPostAction(
         "$BUILD_DIR/firmware.hex",
         env.VerboseAction(" ".join([
@@ -317,18 +324,30 @@ Place this file on the same level as :ref:`projectconf`.
             "s/:10040000FFFFFFFFFFFFFFFFFFFFFFFFDEF9FFFF23/:10040000FFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFFFD/",
             "$BUILD_DIR/firmware.hex"
         ]), "Fixing $BUILD_DIR/firmware.hex secure flash flags"))
-    env.AddPreAction(
-        "upload",
-         env.VerboseAction(" ".join([
-             "echo",
-             "'h\\nloadfile $BUILD_DIR/firmware.hex\\nr\\nq\\n'",
-             ">$BUILD_DIR/aux.jlink"
-         ]), "Creating auxiliary files"))
+
+
+    def _jlink_cmd_script(env, source):
+        build_dir = env.subst("$BUILD_DIR")
+        if not isdir(build_dir):
+            makedirs(build_dir)
+        script_path = join(build_dir, "upload.jlink")
+        commands = ["h", "loadbin %s,0x0" % source, "r", "q"]
+        with open(script_path, "w") as fp:
+            fp.write("\n".join(commands))
+        return script_path
 
     env.Replace(
-        UPLOADHEXCMD=
-        'JLinkExe -device MK20DX256xxx7 -speed 4000 -if swd -autoconnect 1 -CommanderScript $BUILD_DIR/aux.jlink'
+        __jlink_cmd_script=_jlink_cmd_script,
+        UPLOADER="/full/path/to/JLink",
+        UPLOADERFLAGS=[
+            "-device", "MK20DX256xxx7",
+            "-speed", "4000",
+            "-if", "swd",
+            "-autoconnect", "1"
+        ],
+        UPLOADCMD='"$UPLOADER" $UPLOADERFLAGS -CommanderScript ${__jlink_cmd_script(__env__, SOURCE)}'
     )
+
 
 ST-Util and ST-Link
 '''''''''''''''''''
@@ -412,7 +431,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
