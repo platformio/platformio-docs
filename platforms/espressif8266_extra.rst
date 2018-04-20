@@ -108,6 +108,7 @@ https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld
 * ``eagle.flash.1m512.ld`` 1M (512K SPIFFS)
 * ``eagle.flash.2m.ld`` 2M (1M SPIFFS)
 * ``eagle.flash.4m1m.ld`` 4M (1M SPIFFS)
+* ``eagle.flash.4m2m.ld`` 4M (2M SPIFFS)
 * ``eagle.flash.4m.ld`` 4M (3M SPIFFS)
 * ``eagle.flash.8m.ld`` 8M (7M SPIFFS)
 * ``eagle.flash.16m.ld`` 16M (15M SPIFFS)
@@ -311,6 +312,26 @@ Please scroll to ``generic.menu.DebugLevel`` section.
 
     ; NoAssert-NDEBUG
     build_flags = -DNDEBUG
+
+
+VTables
+~~~~~~~
+
+Please use one of the next :ref:`projectconf_build_flags`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    ...
+
+    ; Flash (default)
+    build_flags = -DVTABLES_IN_FLASH
+
+    ; Heap
+    build_flags = -DVTABLES_IN_DRAM
+
+    ; IRAM
+    build_flags = -DVTABLES_IN_IRAM
 
 
 .. _platform_espressif_uploadfs:
