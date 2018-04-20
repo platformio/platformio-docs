@@ -15,8 +15,8 @@ Configuration
 .. contents::
     :local:
 
-Custom CPU Frequency
-~~~~~~~~~~~~~~~~~~~~
+CPU Frequency
+~~~~~~~~~~~~~
 
 See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
 
@@ -26,8 +26,8 @@ See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
     ; set frequency to 160MHz
     board_f_cpu = 160000000L
 
-Custom FLASH Frequency
-~~~~~~~~~~~~~~~~~~~~~~
+FLASH Frequency
+~~~~~~~~~~~~~~~
 
 See :ref:`projectconf_board_f_flash` option from :ref:`projectconf`. Possible
 values:
@@ -43,8 +43,8 @@ values:
     ; set frequency to 80MHz
     board_f_flash = 80000000L
 
-Custom FLASH Mode
-~~~~~~~~~~~~~~~~~
+FLASH Mode
+~~~~~~~~~~
 
 Flash chip interface mode. This parameter is stored in the binary image
 header, along with the flash size and flash frequency. The ROM bootloader
@@ -64,8 +64,8 @@ values:
     [env:myenv]
     board_flash_mode = qio
 
-Custom Reset Method
-~~~~~~~~~~~~~~~~~~~
+Reset Method
+~~~~~~~~~~~~
 
 You can set custom reset method using :ref:`projectconf_upload_resetmethod`
 option from :ref:`projectconf`.
@@ -85,8 +85,8 @@ See `default reset methods per board <https://github.com/platformio/platform-esp
 
 .. _platform_espressif_customflash:
 
-Custom Flash Size
-~~~~~~~~~~~~~~~~~
+Flash Size
+~~~~~~~~~~
 
 .. warning::
     Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
@@ -120,8 +120,8 @@ To override default LD script please use :ref:`projectconf_build_flags` from
     [env:myenv]
     build_flags = -Wl,-Teagle.flash.4m.ld
 
-Custom Upload Speed
-~~~~~~~~~~~~~~~~~~~
+Upload Speed
+~~~~~~~~~~~~
 
 You can set custom upload speed using  :ref:`projectconf_upload_speed` option
 from :ref:`projectconf`
@@ -130,6 +130,188 @@ from :ref:`projectconf`
 
     [env:myenv]
     upload_speed = 9600
+
+lwIP Variant
+~~~~~~~~~~~~
+
+Available variants (macros):
+
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth (default)
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY`` v2 Lower Memory
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH`` v2 Higher Bandwidth
+
+You can change lwIP Variant passing a custom macro using project
+:ref:`projectconf_build_flags`.
+
+For example, switch to lwIP v2 Lower Memory
+
+.. code-block:: ini
+
+    [env:myenv]
+    ...
+    build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY
+
+
+.. _platform_espressif8266_serial_debug:
+
+Serial Debug
+~~~~~~~~~~~~
+
+Please use the next :ref:`projectconf_build_flags` to enable Serial debug:
+
+.. code-block:: ini
+
+    [env:myenv]
+    ...
+    build_flags = -DDEBUG_ESP_PORT=Serial
+
+    ; or for Serial1
+    build_flags = -DDEBUG_ESP_PORT=Serial1
+
+
+Debug Level
+~~~~~~~~~~~
+
+Please use one of the next :ref:`projectconf_build_flags` to change debug level.
+A :ref:`projectconf_build_flags` option could be used only the one time per
+build environment. If you need to specify more flags, please separate them
+with a new line or space.
+
+Also, please note that you will need to extend :ref:`projectconf_build_flags`
+with :ref:`platform_espressif8266_serial_debug` macro. For example,
+``build_flags = -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_SSL ...``.
+
+Actual information is available in `Arduino for ESP8266 Board Manifest <https://github.com/esp8266/Arduino/blob/master/boards.txt#L286>`_.
+Please scroll to ``generic.menu.DebugLevel`` section.
+
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    framework = arduino
+
+    ;;;;; Possible options ;;;;;;
+
+    ; SSL
+    build_flags = -DDEBUG_ESP_SSL
+
+    ; TLS_MEM
+    build_flags = -DDEBUG_ESP_TLS_MEM
+
+    ; HTTP_CLIENT
+    build_flags = -DDEBUG_ESP_HTTP_CLIENT
+
+    ; HTTP_SERVER
+    build_flags = -DDEBUG_ESP_HTTP_SERVER
+
+    ; SSL+TLS_MEM
+    build_flags =
+      -DDEBUG_ESP_SSL
+      -DDEBUG_ESP_TLS_MEM
+
+    ; SSL+HTTP_CLIENT
+    build_flags =
+      -DDEBUG_ESP_SSL
+      -DDEBUG_ESP_HTTP_CLIENT
+
+    ; SSL+HTTP_SERVER
+    build_flags =
+      -DDEBUG_ESP_SSL
+      -DDEBUG_ESP_HTTP_SERVER
+
+    ; TLS_MEM+HTTP_CLIENT
+    build_flags =
+      -DDEBUG_ESP_TLS_MEM
+      -DDEBUG_ESP_HTTP_CLIENT
+
+    ; TLS_MEM+HTTP_SERVER
+    build_flags =
+      -DDEBUG_ESP_TLS_MEM
+      -DDEBUG_ESP_HTTP_SERVER
+
+    ; HTTP_CLIENT+HTTP_SERVER
+    build_flags =
+      -DDEBUG_ESP_HTTP_CLIENT
+      -DDEBUG_ESP_HTTP_SERVER
+
+    ; SSL+TLS_MEM+HTTP_CLIENT
+    build_flags =
+      -DDEBUG_ESP_SSL
+      -DDEBUG_ESP_TLS_MEM
+      -DDEBUG_ESP_HTTP_CLIENT
+
+    ; SSL+TLS_MEM+HTTP_SERVER
+    build_flags =
+      -DDEBUG_ESP_SSL
+      -DDEBUG_ESP_TLS_MEM
+      -DDEBUG_ESP_HTTP_SERVER
+
+    ; SSL+HTTP_CLIENT+HTTP_SERVER
+    build_flags =
+      -DDEBUG_ESP_SSL
+      -DDEBUG_ESP_HTTP_CLIENT
+      -DDEBUG_ESP_HTTP_SERVER
+
+    ; TLS_MEM+HTTP_CLIENT+HTTP_SERVER
+    build_flags =
+      -DDEBUG_ESP_TLS_MEM
+      -DDEBUG_ESP_HTTP_CLIENT
+      -DDEBUG_ESP_HTTP_SERVER
+
+    ; SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER
+    build_flags =
+      -DDEBUG_ESP_SSL
+      -DDEBUG_ESP_TLS_MEM
+      -DDEBUG_ESP_HTTP_CLIENT
+      -DDEBUG_ESP_HTTP_SERVER
+
+    ; CORE
+    build_flags = -DDEBUG_ESP_CORE
+
+    ; WIFI
+    build_flags = -DDEBUG_ESP_WIFI
+
+    ; HTTP_UPDATE
+    build_flags = -DDEBUG_ESP_HTTP_UPDATE
+
+    ; UPDATER
+    build_flags = -DDEBUG_ESP_UPDATER
+
+    ; OTA
+    build_flags = -DDEBUG_ESP_OTA
+
+    ; OOM
+    build_flags =
+      -DDEBUG_ESP_OOM
+      -include "umm_malloc/umm_malloc_cfg.h"
+
+    ; CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM
+    build_flags =
+      -DDEBUG_ESP_CORE
+      -DDEBUG_ESP_WIFI
+      -DDEBUG_ESP_HTTP_UPDATE
+      -DDEBUG_ESP_UPDATER
+      -DDEBUG_ESP_OTA
+      -DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"
+
+    ; SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER+CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM
+    build_flags =
+      -DDEBUG_ESP_SSL
+      -DDEBUG_ESP_TLS_MEM
+      -DDEBUG_ESP_HTTP_CLIENT
+      -DDEBUG_ESP_HTTP_SERVER
+      -DDEBUG_ESP_CORE
+      -DDEBUG_ESP_WIFI
+      -DDEBUG_ESP_HTTP_UPDATE
+      -DDEBUG_ESP_UPDATER
+      -DDEBUG_ESP_OTA
+      -DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"
+
+    ; NoAssert-NDEBUG
+    build_flags = -DNDEBUG
+
 
 .. _platform_espressif_uploadfs:
 
