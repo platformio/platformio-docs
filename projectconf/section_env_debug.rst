@@ -95,12 +95,14 @@ For example, the custom initial commands for GDB:
     platform = ...
     board = ...
     debug_init_cmds =
-      target remote $DEBUG_PORT
+      target extended-remote $DEBUG_PORT
       file "$PROG_PATH"
-      load "$PROG_PATH"
+      $INIT_BREAK
+      monitor reset halt
+      $LOAD_CMD
       monitor init
       monitor reset halt
-      $INIT_BREAK
+      enable-pretty-printing
 
 .. _projectconf_debug_extra_cmds:
 
@@ -139,8 +141,8 @@ for GDB:
 Specify a command which will be used to load program/firmware to a target
 device. Possible options:
 
-* ``command`` - pass any debugging client command (GDB, etc.)
 * ``load`` - is setup by **default**
+* ``command`` - pass any debugging client command (GDB, etc.)
 * ``load address`` - load program at specified address, where "address"
   should be a valid number
 * ``preload`` - some embedded devices have locked Flash Memory (a few
