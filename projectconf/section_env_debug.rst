@@ -102,7 +102,6 @@ For example, the custom initial commands for GDB:
       $LOAD_CMD
       monitor init
       monitor reset halt
-      enable-pretty-printing
 
 .. _projectconf_debug_extra_cmds:
 
