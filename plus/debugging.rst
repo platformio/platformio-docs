@@ -55,10 +55,10 @@ Configuration
 
   **Linux Users**: Install "udev" rules :ref:`faq_udev_rules`
 
-  **Windows Users:**: Please check that you have a correctly installed USB
+  **Windows Users**: Please check that you have a correctly installed USB
   driver from board manufacturer
 
-|PIODebug| can be configured from :ref:`projectconf`
+|PIODebug| can be configured from :ref:`projectconf`:
 
 * :ref:`projectconf_debug_tool`
 * :ref:`projectconf_debug_init_break`
@@ -69,6 +69,7 @@ Configuration
 * :ref:`projectconf_debug_load_mode`
 * :ref:`projectconf_debug_server`
 * :ref:`projectconf_debug_port`
+* :ref:`projectconf_debug_svd_path`
 
 .. _debugging_tools:
 

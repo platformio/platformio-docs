@@ -207,3 +207,11 @@ For example:
 * ``/dev/ttyUSB0`` - Unix-based OS
 * ``COM3`` - Windows OS
 * ``localhost:3333``
+
+.. _projectconf_debug_svd_path:
+
+``debug_svd_path``
+^^^^^^^^^^^^^^^^^^
+
+A custom path to `SVD file <https://www.keil.com/pack/doc/CMSIS/SVD/html/svd_Format_pg.html>`_
+which contains information about device peripherals.
