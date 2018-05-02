@@ -47,9 +47,7 @@ See available tools in :ref:`debugging_tools`.
 ^^^^^^^^^^^^^^^^^^^^
 
 An initial breakpoint that makes your program stop whenever a certain point in
-the program is reached. **Default** value is ``tbreak main`` that means to create
-a temporary breakpoint at ``int main(...)`` function and automatically delete
-it after the first time a program stops there.
+the program is reached. PlatformIO does not set any breakpoints by default.
 
 * `GDB Setting Breakpoints <https://sourceware.org/gdb/onlinedocs/gdb/Set-Breaks.html#Set-Breaks>`_
 * `GDB Breakpoint Locations <https://sourceware.org/gdb/onlinedocs/gdb/Specify-Location.html#Specify-Location>`_
@@ -72,7 +70,7 @@ it after the first time a program stops there.
     debug_init_break =
 
     ; Examples 2: temporary stop at ``void loop()`` function
-    debug_init_break = tb loop
+    debug_init_break = tbreak main
 
     ; Examples 3: stop in main.cpp at line 13
     debug_init_break = break main.cpp:13
@@ -96,7 +94,6 @@ For example, the custom initial commands for GDB:
     board = ...
     debug_init_cmds =
       target extended-remote $DEBUG_PORT
-      file "$PROG_PATH"
       $INIT_BREAK
       monitor reset halt
       $LOAD_CMD
@@ -109,8 +106,8 @@ For example, the custom initial commands for GDB:
 ^^^^^^^^^^^^^^^^^^^^
 
 Extra commands that will be passed to back-end debugger after initialization.
-For example, add custom breakpoint and load ``.gdbinit`` from a project directory
-for GDB:
+For example, add custom breakpoints, load ``.gdbinit`` from a project directory
+and runt a target (will stop at the ``main()`` function):
 
 .. code-block:: ini
 
@@ -118,9 +115,10 @@ for GDB:
     platform = ...
     board = ...
     debug_extra_cmds =
-      break main.cpp:13
+      tbreak main
       break foo.cpp:100
       source .gdbinit
+      continue
 
 .. note::
 
@@ -141,7 +139,7 @@ Specify a command which will be used to load program/firmware to a target
 device. Possible options:
 
 * ``load`` - is setup by **default**
-* ``command`` - pass any debugging client command (GDB, etc.)
+* ``some command...`` - pass any debugging client command (GDB, etc.)
 * ``load address`` - load program at specified address, where "address"
   should be a valid number
 * ``preload`` - some embedded devices have locked Flash Memory (a few

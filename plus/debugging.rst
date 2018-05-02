@@ -235,7 +235,6 @@ with :ref:`cmd_device_list`)
     monitor swdp_scan
     attach 1
     set mem inaccessible-by-default off
-    file "$PROG_PATH"
     $INIT_BREAK
     $LOAD_CMD
 
