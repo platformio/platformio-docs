@@ -94,7 +94,7 @@ There are 2 options:
 For example,
 
 * ``platformio run -t upload --upload-port 192.168.0.255``
-* ``platformio run -t upload --upload-port myesp8266.local``
+* ``platformio run -t upload --upload-port myesp32.local``
 
 Authentication and upload options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -105,11 +105,11 @@ You can pass additional options/flags to OTA uploader using
 .. code-block:: ini
 
     [env:myenv]
-    upload_flags = --port=8266
+    upload_flags = --port=3232
 
 Available flags
 
-* ``--port=ESP_PORT`` ESP8266 OTA Port. Default 8266
+* ``--port=ESP_PORT`` ESP32 OTA Port. Default 3232
 * ``--auth=AUTH`` Set authentication password
 * ``--spiffs`` Use this option to transmit a SPIFFS image and do not flash
   the module
@@ -122,16 +122,16 @@ For the full list with available options please run
 
     Usage: espota.py [options]
 
-    Transmit image over the air to the esp8266 module with OTA support.
+    Transmit image over the air to the esp32 module with OTA support.
 
     Options:
       -h, --help            show this help message and exit
 
       Destination:
         -i ESP_IP, --ip=ESP_IP
-                            ESP8266 IP Address.
+                            ESP32 IP Address.
         -p ESP_PORT, --port=ESP_PORT
-                            ESP8266 ota Port. Default 8266
+                            ESP32 ota Port. Default 3232
 
       Authentication:
         -a AUTH, --auth=AUTH
