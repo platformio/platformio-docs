@@ -76,7 +76,12 @@ from :ref:`projectconf`
 Over-the-Air (OTA) update
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are 2 options:
+Demo code for:
+
+* `Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA/examples/BasicOTA>`_
+* `ESP-IDF <https://github.com/espressif/esp-idf/tree/master/examples/system/ota>`_
+
+There are 2 options how to upload firmware OTA:
 
 * Directly specify :option:`platformio run --upload-port` in command line
 
