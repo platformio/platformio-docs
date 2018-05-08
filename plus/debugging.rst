@@ -22,7 +22,7 @@ PIO Unified Debugger
 
 .. note::
 
-  `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/pio-unified-debugger/1704>`_
+  `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/finally-pio-unified-debugger-comes-to-vscode/4091>`_
 
 * "1-click" solution, zero configuration
 * Support for 200+ embedded boards (see below)
