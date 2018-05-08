@@ -34,7 +34,23 @@ PIO Unified Debugger
 You should have :ref:`pioaccount` to work with |PIODebug|.
 A registration is **FREE**.
 
-.. image:: ../_static/pioplus-debugger-demo.png
+
+.. hint::
+  In our experience, :ref:`ide_vscode` has the best system performance,
+  modern interface for |PIODebug|, and users have found it easier to get started.
+  Key debugging features of :ref:`ide_vscode`:
+
+  - Conditional Breakpoints
+  - Expressions and Watchpoints
+  - Generic Registers
+  - Peripheral Registers
+  - Memory Viewer
+  - Disassembly
+  - Multi-thread support
+  - A hot restart of an active debugging session
+
+.. image:: ../_static/ide/vscode/platformio-ide-vscode.png
+  :target: ../ide/vscode.html
 
 .. contents:: Contents
     :local:
