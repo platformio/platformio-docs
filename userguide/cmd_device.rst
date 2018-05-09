@@ -289,6 +289,20 @@ default ``20`` (DEC)
 
 Diagnostics: suppress non-error messages, default ``Off``
 
+.. option::
+    -d, --project-dir
+
+Specify the path to project directory. By default, ``--project-dir`` is equal
+to current working directory (``CWD``).
+
+.. option::
+    -e, --environment
+
+Process specified environments.
+
+You can also specify which environments should be processed by default using
+:ref:`projectconf_pio_env_default` option from :ref:`projectconf`.
+
 Examples
 ~~~~~~~~
 
