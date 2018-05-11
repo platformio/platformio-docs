@@ -200,7 +200,7 @@ Adafruit
     * - ``featheresp32``
       - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -303,7 +303,7 @@ Aiyarafun
     * - ``node32s``
       - `Node32s <http://www.ayarafun.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -872,7 +872,7 @@ Atmel
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
-      - ATSAMD21J18A
+      - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
@@ -880,7 +880,7 @@ Atmel
       - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
-      - ATSAMD21G18A
+      - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
@@ -888,7 +888,7 @@ Atmel
       - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
-      - ATSAML21J18B
+      - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
@@ -896,7 +896,7 @@ Atmel
       - `Atmel ATSAMR21-XPRO <https://developer.mbed.org/platforms/SAMR21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
-      - ATSAMR21G18A
+      - SAMR21G18A
       - 48MHz
       - 256KB
       - 32KB
@@ -1088,7 +1088,7 @@ DFRobot
     * - ``firebeetle32``
       - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1111,7 +1111,7 @@ DOIT
     * - ``esp32doit-devkit-v1``
       - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1393,7 +1393,7 @@ Dongsen Technology
     * - ``pocket_32``
       - `Dongsen Tech Pocket 32 <http://dong-sen.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1447,7 +1447,7 @@ DycodeX
     * - ``espectro32``
       - `ESPectro32 <https://shop.makestro.com/product/espectro32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1470,7 +1470,7 @@ ESP32vn
     * - ``esp32vn-iot-uno``
       - `ESP32vn IoT Uno <https://esp32.vn/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1724,7 +1724,7 @@ Espressif
     * - ``esp-wrover-kit``
       - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1764,7 +1764,7 @@ Espressif
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1783,7 +1783,7 @@ Espressif
       - No
       - ESP8266
       - 80MHz
-      - 4MB
+      - 2MB
       - 80KB
     * - ``phoenix_v1``
       - `Phoenix 1.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
@@ -1801,6 +1801,14 @@ Espressif
       - 80MHz
       - 4MB
       - 80KB
+    * - ``pico32``
+      - `ESP32 Pico Kit <http://esp-idf.readthedocs.io/en/latest/get-started/get-started-pico-kit.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - No
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``wifinfo``
       - `WifInfo <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -1903,16 +1911,8 @@ Freescale
       - 48MHz
       - 128KB
       - 16KB
-    * - ``frdm_kl26z``
-      - `Freescale Kinetis FRDM-KL26Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`Yes <piodebug>`
-      - MKL26Z128VLH4
-      - 48MHz
-      - 128KB
-      - 16KB
     * - ``frdm_kl27z``
-      - `Freescale Kinetis FRDM-KL27Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl17-and-kl27-mcus:FRDM-KL27Z?utm_source=platformio&utm_medium=docs>`_
+      - `Freescale Kinetis FRDM-KL27Z <https://os.mbed.com/platforms/FRDM-KL27Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - :ref:`Yes <piodebug>`
       - MKL27Z64VLH4
@@ -1920,7 +1920,7 @@ Freescale
       - 64KB
       - 16KB
     * - ``frdm_kl43z``
-      - `Freescale Kinetis FRDM-KL43Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl43-kl33-kl27-kl17-and-kl13-mcus:FRDM-KL43Z?utm_source=platformio&utm_medium=docs>`_
+      - `Freescale Kinetis FRDM-KL43Z <https://os.mbed.com/platforms/FRDM-KL43Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - :ref:`Yes <piodebug>`
       - MKL43Z256VLH4
@@ -2084,6 +2084,14 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F407VET6``
+      - `STM32F407VE (192k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f407ve.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
 
 Generic ATTiny
 ~~~~~~~~~~~~~~
@@ -2323,7 +2331,7 @@ Hornbill
     * - ``hornbill32dev``
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -2331,7 +2339,7 @@ Hornbill
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -2593,7 +2601,7 @@ MH-ET Live
     * - ``mhetesp32devkit``
       - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -2601,7 +2609,7 @@ MH-ET Live
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -3227,7 +3235,7 @@ NodeMCU
     * - ``nodemcu-32s``
       - `NodeMCU-32S <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -3336,7 +3344,7 @@ OLIMEX
     * - ``esp32-evb``
       - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -3344,7 +3352,7 @@ OLIMEX
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -4334,7 +4342,7 @@ ST
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32L053R8T6
-      - 48MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - ``nucleo_l073rz``
@@ -4645,6 +4653,29 @@ Semtech
       - 256KB
       - 32KB
 
+SiFive
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``freedom-e300-hifive1``
+      - `HiFive1 <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`RISC-V <platform_riscv>`
+      - :ref:`Yes <piodebug>`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+
 Silicon Labs
 ~~~~~~~~~~~~
 
@@ -4938,7 +4969,7 @@ SparkFun Electronics
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -5235,7 +5266,7 @@ ThaiEasyElec
     * - ``espino32``
       - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -5406,7 +5437,7 @@ WEMOS
     * - ``lolin32``
       - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -5414,7 +5445,7 @@ WEMOS
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -5535,6 +5566,37 @@ Widora
       - 240MHz
       - 1.25MB
       - 288KB
+
+Xilinx
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``coreplexip-e31-arty``
+      - `Freedom E310 Arty (Artix-7) FPGA Dev Kit <http://www.xilinx.com/products/boards-and-kits/arty.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`RISC-V <platform_riscv>`
+      - :ref:`Yes <piodebug>`
+      - E31
+      - 320MHz
+      - 16MB
+      - 256MB
+    * - ``coreplexip-e51-arty``
+      - `E51 Arty (Artix-7) FPGA Dev Kit <http://www.xilinx.com/products/boards-and-kits/arty.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`RISC-V <platform_riscv>`
+      - :ref:`Yes <piodebug>`
+      - E51
+      - 1500MHz
+      - 16MB
+      - 256MB
 
 chipKIT
 ~~~~~~~

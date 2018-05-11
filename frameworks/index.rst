@@ -21,9 +21,10 @@ Frameworks
     artik-sdk
     cmsis
     energia
-    espidf
     esp8266-nonos-sdk
     esp8266-rtos-sdk
+    espidf
+    freedom-e-sdk
     libopencm3
     mbed
     pumbaa

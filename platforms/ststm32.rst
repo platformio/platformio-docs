@@ -428,7 +428,7 @@ You do not need to use/buy external debugger.
       - `ST Nucleo L053R8 <https://developer.mbed.org/platforms/ST-Nucleo-L053R8/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32L053R8T6
-      - 48MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - ``nucleo_l073rz``
@@ -590,6 +590,13 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F407VET6``
+      - `STM32F407VE (192k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f407ve.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - ``maple``
       - `Maple <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
@@ -963,6 +970,13 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F407VET6``
+      - `STM32F407VE (192k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f407ve.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
 
 LeafLabs
 ~~~~~~~~
@@ -1415,7 +1429,7 @@ ST
       - `ST Nucleo L053R8 <https://developer.mbed.org/platforms/ST-Nucleo-L053R8/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - STM32L053R8T6
-      - 48MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - ``nucleo_l073rz``

@@ -347,7 +347,7 @@ Espressif
       - No
       - ESP8266
       - 80MHz
-      - 4MB
+      - 2MB
       - 80KB
     * - ``phoenix_v1``
       - `Phoenix 1.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_

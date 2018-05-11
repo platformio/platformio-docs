@@ -32,6 +32,7 @@ Examples are listed from `Atmel SAM development platform repository <https://git
 * `arduino-blink <https://github.com/platformio/platform-atmelsam/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
 * `arduino-external-libs <https://github.com/platformio/platform-atmelsam/tree/develop/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-atmelsam/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-web-thing-led <https://github.com/platformio/platform-atmelsam/tree/develop/examples/arduino-web-thing-led?utm_source=platformio&utm_medium=docs>`_
 * `mbed-blink <https://github.com/platformio/platform-atmelsam/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-atmelsam/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-atmelsam/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
@@ -76,28 +77,28 @@ You do not need to use/buy external debugger.
     * - ``samd21_xpro``
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - ATSAMD21J18A
+      - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - ``samd21g18a``
       - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - ATSAMD21G18A
+      - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - ``saml21_xpro_b``
       - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - ATSAML21J18B
+      - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
     * - ``samr21_xpro``
       - `Atmel ATSAMR21-XPRO <https://developer.mbed.org/platforms/SAMR21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - ATSAMR21G18A
+      - SAMR21G18A
       - 48MHz
       - 256KB
       - 32KB
@@ -580,28 +581,28 @@ Atmel
     * - ``samd21_xpro``
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
-      - ATSAMD21J18A
+      - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - ``samd21g18a``
       - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
-      - ATSAMD21G18A
+      - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - ``saml21_xpro_b``
       - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
-      - ATSAML21J18B
+      - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
     * - ``samr21_xpro``
       - `Atmel ATSAMR21-XPRO <https://developer.mbed.org/platforms/SAMR21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
-      - ATSAMR21G18A
+      - SAMR21G18A
       - 48MHz
       - 256KB
       - 32KB

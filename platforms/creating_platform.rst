@@ -107,6 +107,9 @@ Packages
     * - `framework-espidf <https://github.com/espressif/esp-idf>`__
       - Espressif IoT Development Framework
 
+    * - `framework-freedom-e-sdk <https://github.com/sifive/freedom-e-sdk>`__
+      - Open Source Software for Developing on the SiFive Freedom E Platform
+
     * - `framework-libopencm3 <http://www.libopencm3.org/>`__
       - libOpenCM3 Framework
 
@@ -176,6 +179,9 @@ Packages
     * - `tool-openocd <http://openocd.org>`__
       - OpenOCD
 
+    * - `tool-openocd-esp32 <https://github.com/espressif/openocd-esp32>`__
+      - OpenOCD for Espressif 32
+
     * - `tool-pic32prog <https://github.com/sergev/pic32prog>`__
       - pic32prog
 
@@ -229,6 +235,9 @@ Packages
 
     * - `toolchain-microchippic32 <https://github.com/chipKIT32/chipKIT-cxx>`__
       - GCC for Microchip PIC32
+
+    * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain>`__
+      - GNU toolchain for RISC-V, including GCC
 
     * - `toolchain-timsp430 <http://sourceforge.net/projects/mspgcc/>`__
       - msp-gcc
