@@ -15,8 +15,8 @@ Configuration
 .. contents::
     :local:
 
-Custom CPU Frequency
-~~~~~~~~~~~~~~~~~~~~
+CPU Frequency
+~~~~~~~~~~~~~
 
 See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
 
@@ -26,8 +26,8 @@ See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
     ; set frequency to 160MHz
     board_f_cpu = 160000000L
 
-Custom FLASH Frequency
-~~~~~~~~~~~~~~~~~~~~~~
+FLASH Frequency
+~~~~~~~~~~~~~~~
 
 See :ref:`projectconf_board_f_flash` option from :ref:`projectconf`. Possible
 values:
@@ -41,8 +41,8 @@ values:
     ; set frequency to 80MHz
     board_f_flash = 80000000L
 
-Custom FLASH Mode
-~~~~~~~~~~~~~~~~~
+FLASH Mode
+~~~~~~~~~~
 
 Flash chip interface mode. This parameter is stored in the binary image
 header, along with the flash size and flash frequency. The ROM bootloader
@@ -62,8 +62,47 @@ values:
     [env:myenv]
     board_flash_mode = qio
 
-Custom Upload Speed
-~~~~~~~~~~~~~~~~~~~
+Debug Level
+~~~~~~~~~~~
+
+Please use one of the next :ref:`projectconf_build_flags` to change debug level.
+A :ref:`projectconf_build_flags` option could be used only the one time per
+build environment. If you need to specify more flags, please separate them
+with a new line or space.
+
+Actual information is available in `Arduino for ESP32 Board Manifest <https://github.com/espressif/arduino-esp32/blob/master/boards.txt#L80>`_.
+Please scroll to ``esp32.menu.DebugLevel`` section.
+
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    framework = arduino
+
+    ;;;;; Possible options ;;;;;;
+
+    ; None
+    build_flags = -DCORE_DEBUG_LEVEL=0
+
+    ; Error
+    build_flags = -DCORE_DEBUG_LEVEL=1
+
+    ; Warn
+    build_flags = -DCORE_DEBUG_LEVEL=2
+
+    ; Info
+    build_flags = -DCORE_DEBUG_LEVEL=3
+
+    ; Debug
+    build_flags = -DCORE_DEBUG_LEVEL=4
+
+    ; Verbose
+    build_flags = -DCORE_DEBUG_LEVEL=5
+
+Upload Speed
+~~~~~~~~~~~~
 
 You can set custom upload speed using  :ref:`projectconf_upload_speed` option
 from :ref:`projectconf`
