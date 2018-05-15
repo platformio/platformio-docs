@@ -196,7 +196,7 @@ You can customize Serial Port Monitor using
 :ref:`projectconf_section_env_monitor` in :ref:`projectconf`:
 
 * :ref:`projectconf_monitor_port`
-* :ref:`projectconf_monitor_baud`
+* :ref:`projectconf_monitor_speed`
 * :ref:`projectconf_monitor_rts`
 * :ref:`projectconf_monitor_dtr`
 
@@ -212,8 +212,8 @@ Example:
     ; Custom Serial Monitor port
     monitor_port = /dev/ttyUSB1
 
-    ; Custom Serial Monitor baud rate
-    monitor_baud = 115200
+    ; Custom Serial Monitor speed (baud rate)
+    monitor_speed = 115200
 
 Install Shell Commands
 ----------------------

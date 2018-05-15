@@ -198,7 +198,7 @@ option.
 
 Set baud rate, default ``9600``.
 
-Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_baud`
+Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_speed`
 option.
 
 .. option::

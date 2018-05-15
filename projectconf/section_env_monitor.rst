@@ -38,20 +38,21 @@ Example:
     ; Windows
     monitor_port = COM3
 
-.. _projectconf_monitor_baud:
+.. _projectconf_monitor_speed:
 
-``monitor_baud``
-^^^^^^^^^^^^^^^^
+``monitor_speed``
+^^^^^^^^^^^^^^^^^
 
-A monitor baud rate (speed). See :option:`platformio device monitor --baud`.
+A monitor speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_).
+See :option:`platformio device monitor --baud`.
 
 Example:
 
 .. code-block:: ini
 
-    [env:custom_monitor_baudrate]
+    [env:custom_monitor_speedrate]
     ...
-    monitor_baud = 115200
+    monitor_speed = 115200
 
 .. _projectconf_monitor_rts:
 
