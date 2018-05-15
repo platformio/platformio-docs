@@ -37,7 +37,7 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-lattice_ice40/releases>`__
 of Lattice iCE40 development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below:
 
 .. code-block:: ini
 

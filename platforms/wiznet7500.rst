@@ -91,7 +91,7 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-wiznet7500/releases>`__
 of WIZNet W7500 development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below:
 
 .. code-block:: ini
 
