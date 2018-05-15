@@ -113,8 +113,6 @@ Let’s implement some basic tests for blinking routine:
     #include <Arduino.h>
     #include <unity.h>
 
-    #ifdef UNIT_TEST
-
     // void setUp(void) {
     // // set stuff up here
     // }
@@ -161,32 +159,6 @@ Let’s implement some basic tests for blinking routine:
     {
     }
 
-    #endif
-
-
-Also, we need to wrap the main file using ``UNIT_TEST`` define:
-
-.. code-block:: cpp
-
-    #include <Arduino.h>
-
-    #ifndef UNIT_TEST // <<
-
-    void setup()
-    {
-        pinMode(LED_BUILTIN, OUTPUT);
-    }
-
-    void loop()
-    {
-        digitalWrite(LED_BUILTIN, HIGH);
-        delay(100);
-        digitalWrite(LED_BUILTIN, LOW);
-        delay(100);
-    }
-
-    #endif // <<
-
 
 Now we are ready to upload tests to the board. To do this we can use ``Tasks: Run Task... > PlatformIO Test`` from top menu:
 
@@ -226,8 +198,6 @@ For example, next code declares a BLE characteristic that controls the state of 
     #include <SPI.h>
     #include <BLEPeripheral.h>
 
-    #ifndef UNIT_TEST
-
     BLEPeripheral ledPeripheral = BLEPeripheral();
 
     BLEService ledService = BLEService("19b10000e8f2537e4f6cd104768a1214");
@@ -262,7 +232,6 @@ For example, next code declares a BLE characteristic that controls the state of 
       }
     }
 
-    #endif
 
 Now we can compile and upload this program to the board as described in previous sections.
 To verify that our application works as expected, we can use any Android smartphone with BLE feature and

@@ -279,8 +279,6 @@ Let’s implement some basic tests for blinking routine:
     #include <main.h>
     #include <unity.h>
 
-    #ifdef UNIT_TEST
-
     void setUp(void) {
         HAL_Init();
 
@@ -327,28 +325,6 @@ Let’s implement some basic tests for blinking routine:
         UNITY_END(); // stop unit testing
 
         while(1){}
-    }
-
-    #endif
-
-Also, we need to wrap the main function in our application:
-
-.. code-block:: cpp
-
-    #ifndef UNIT_TEST
-    int main(void)
-    #else
-    int app_main(void)
-    #endif
-    {
-      HAL_Init();
-      LED_Init();
-
-      while (1)
-      {
-        HAL_GPIO_TogglePin(LED_GPIO_PORT, LED_PIN);
-        HAL_Delay(1000);
-      }
     }
 
 
