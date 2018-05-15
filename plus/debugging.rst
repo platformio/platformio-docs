@@ -147,6 +147,8 @@ computer on one side, and over JTAG (Joint Test Action Group) or SWD
 FTDI FT2232H
 ~~~~~~~~~~~~
 
+:ref:`projectconf_debug_tool` = ``ft2232h``
+
 The FT2232H is a USB 2.0 Hi-Speed (480Mb/s) to UART/FIFO IC. It has the
 capability of being configured in a variety of industry standard serial or
 parallel interfaces.
