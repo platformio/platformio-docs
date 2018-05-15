@@ -868,6 +868,166 @@ Atmel
       - Frequency
       - Flash
       - RAM
+    * - ``attiny13``
+      - `Generic ATTiny13 <http://www.atmel.com/devices/ATTINY13.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - ``attiny1634``
+      - `Generic ATTiny1634 <http://www.atmel.com/devices/ATTINY1634.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY1634
+      - 8MHz
+      - 16KB
+      - 1KB
+    * - ``attiny167``
+      - `Generic ATTiny167 <http://www.atmel.com/devices/ATTINY167.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY167
+      - 8MHz
+      - 16KB
+      - 512B
+    * - ``attiny2313``
+      - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY2313
+      - 8MHz
+      - 2KB
+      - 128B
+    * - ``attiny24``
+      - `Generic ATTiny24 <http://www.atmel.com/devices/ATTINY24.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY24
+      - 8MHz
+      - 2KB
+      - 128B
+    * - ``attiny25``
+      - `Generic ATTiny25 <http://www.atmel.com/devices/ATTINY25.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY25
+      - 8MHz
+      - 2KB
+      - 128B
+    * - ``attiny261``
+      - `Generic ATTiny261 <http://www.atmel.com/devices/ATTINY261.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY261
+      - 8MHz
+      - 2KB
+      - 128B
+    * - ``attiny4313``
+      - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY4313
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny44``
+      - `Generic ATTiny44 <http://www.atmel.com/devices/ATTINY44.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY44
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny441``
+      - `Generic ATTiny441 <http://www.atmel.com/devices/ATTINY441.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY441
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny45``
+      - `Generic ATTiny45 <http://www.atmel.com/devices/ATTINY45.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY45
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny461``
+      - `Generic ATTiny461 <http://www.atmel.com/devices/ATTINY461.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY461
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny48``
+      - `Generic ATTiny48 <http://www.atmel.com/devices/ATTINY48.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY48
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny828``
+      - `Generic ATTiny828 <http://www.atmel.com/devices/ATTINY828.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY828
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny84``
+      - `Generic ATTiny84 <http://www.atmel.com/devices/ATTINY84.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY84
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny841``
+      - `Generic ATTiny841 <http://www.atmel.com/devices/ATTINY841.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY841
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny85``
+      - `Generic ATTiny85 <http://www.atmel.com/devices/ATTINY85.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY85
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny861``
+      - `Generic ATTiny861 <http://www.atmel.com/devices/ATTINY861.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY861
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny87``
+      - `Generic ATTiny87 <http://www.atmel.com/devices/ATTINY87.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY87
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny88``
+      - `Generic ATTiny88 <http://www.atmel.com/devices/ATTINY88.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY88
+      - 8MHz
+      - 8KB
+      - 512B
     * - ``samd21_xpro``
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -2092,173 +2252,6 @@ Generic
       - 168MHz
       - 502.23KB
       - 128KB
-
-Generic ATTiny
-~~~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - ID
-      - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - ``attiny13``
-      - `Generic ATTiny13 <http://www.atmel.com/devices/ATTINY13.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY13
-      - 9MHz
-      - 1KB
-      - 64B
-    * - ``attiny1634``
-      - `Generic ATTiny1634 <http://www.atmel.com/devices/ATTINY1634.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY1634
-      - 8MHz
-      - 16KB
-      - 1KB
-    * - ``attiny167``
-      - `Generic ATTiny167 <http://www.atmel.com/devices/ATTINY167.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY167
-      - 8MHz
-      - 16KB
-      - 512B
-    * - ``attiny2313``
-      - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY2313
-      - 8MHz
-      - 2KB
-      - 128B
-    * - ``attiny24``
-      - `Generic ATTiny24 <http://www.atmel.com/devices/ATTINY24.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY24
-      - 8MHz
-      - 2KB
-      - 128B
-    * - ``attiny25``
-      - `Generic ATTiny25 <http://www.atmel.com/devices/ATTINY25.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY25
-      - 8MHz
-      - 2KB
-      - 128B
-    * - ``attiny261``
-      - `Generic ATTiny261 <http://www.atmel.com/devices/ATTINY261.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY261
-      - 8MHz
-      - 2KB
-      - 128B
-    * - ``attiny4313``
-      - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY4313
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny44``
-      - `Generic ATTiny44 <http://www.atmel.com/devices/ATTINY44.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY44
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny441``
-      - `Generic ATTiny441 <http://www.atmel.com/devices/ATTINY441.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY441
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny45``
-      - `Generic ATTiny45 <http://www.atmel.com/devices/ATTINY45.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY45
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny461``
-      - `Generic ATTiny461 <http://www.atmel.com/devices/ATTINY461.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY461
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny48``
-      - `Generic ATTiny48 <http://www.atmel.com/devices/ATTINY48.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY48
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny84``
-      - `Generic ATTiny84 <http://www.atmel.com/devices/ATTINY84.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY84
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny841``
-      - `Generic ATTiny841 <http://www.atmel.com/devices/ATTINY841.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY841
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny85``
-      - `Generic ATTiny85 <http://www.atmel.com/devices/ATTINY85.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY85
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny861``
-      - `Generic ATTiny861 <http://www.atmel.com/devices/ATTINY861.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY861
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny87``
-      - `Generic ATTiny87 <http://www.atmel.com/devices/ATTINY87.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY87
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny88``
-      - `Generic ATTiny88 <http://www.atmel.com/devices/ATTINY88.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY88
-      - 8MHz
-      - 8KB
-      - 512B
 
 Heltec
 ~~~~~~
