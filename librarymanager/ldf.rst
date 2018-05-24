@@ -156,7 +156,7 @@ library with real build environment. Available compatibility modes:
 :``off``:
     Does not check for compatibility (is not recommended)
 
-:``light``:
+:``soft``:
     [**DEFAULT**] Checks for the compatibility with :ref:`projectconf_env_framework` from
     build environment
 
@@ -165,7 +165,7 @@ library with real build environment. Available compatibility modes:
     and :ref:`projectconf_env_platform` from build environment.
 
 This mode can be changed using :ref:`projectconf_lib_compat_mode` option in
-:ref:`projectconf`. Default value is set to ``light``.
+:ref:`projectconf`. Default value is set to ``soft``.
 
 .. _ldf_c_cond_syntax:
 
