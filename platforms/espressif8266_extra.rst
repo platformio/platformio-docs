@@ -18,19 +18,19 @@ Configuration
 CPU Frequency
 ~~~~~~~~~~~~~
 
-See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
+See :ref:`projectconf_board_build.f_cpu` option from :ref:`projectconf`
 
 .. code-block:: ini
 
     [env:myenv]
     ; set frequency to 160MHz
-    board_f_cpu = 160000000L
+    board_build.f_cpu = 160000000L
 
 FLASH Frequency
 ~~~~~~~~~~~~~~~
 
-See :ref:`projectconf_board_f_flash` option from :ref:`projectconf`. Possible
-values:
+Please use ``board_build.f_flash`` option from :ref:`projectconf` to change
+a value. Possible values:
 
 * ``20000000L``
 * ``26000000L``
@@ -41,7 +41,7 @@ values:
 
     [env:myenv]
     ; set frequency to 80MHz
-    board_f_flash = 80000000L
+    board_build.f_flash = 80000000L
 
 FLASH Mode
 ~~~~~~~~~~
@@ -51,8 +51,8 @@ header, along with the flash size and flash frequency. The ROM bootloader
 in the ESP chip uses the value of these parameters in order to know how to
 talk to the flash chip.
 
-See :ref:`projectconf_board_flash_mode` option from :ref:`projectconf`. Possible
-values:
+Please use ``board_build.flash_mode`` option from :ref:`projectconf` to change
+a value. Possible values:
 
 * ``qio``
 * ``qout``
@@ -62,7 +62,7 @@ values:
 .. code-block:: ini
 
     [env:myenv]
-    board_flash_mode = qio
+    board_build.flash_mode = qio
 
 Reset Method
 ~~~~~~~~~~~~

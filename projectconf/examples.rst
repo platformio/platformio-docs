@@ -40,8 +40,8 @@ Examples
 
     [env:atmelavr_atmega168_board]
     platform = atmelavr
-    board_mcu = atmega168
-    board_f_cpu = 16000000L
+    board_build.mcu = atmega168
+    board_build.f_cpu = 16000000L
 
     upload_port = /dev/ttyUSB0
     ; for Windows OS

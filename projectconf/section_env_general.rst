@@ -78,7 +78,7 @@ The multiple frameworks are allowed, *split them with comma+space ", "*.
 ^^^^^^^^^
 
 *PlatformIO* has pre-configured settings for the most popular boards. You don't
-need to specify ``board_mcu``, ``board_f_cpu``, ``upload_protocol`` or
+need to specify ``board_build.mcu``, ``board_build.f_cpu``, ``upload_protocol`` or
 ``upload_speed`` options. Just define a ``board`` type and *PlatformIO* will
 pre-fill options described above with appropriate values.
 
