@@ -125,6 +125,11 @@ Uploading files to file system SPIFFS
 To upload SPIFFS image using OTA update please specify ``upload_port`` /
 ``--upload-port`` as IP address or mDNS host name (ending with the ``*.local``).
 
+Examples:
+
+* `SPIFFS for Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/SPIFFS/examples>`_
+* `SPIFFS for ESP-IDF <https://github.com/espressif/esp-idf/tree/master/examples/storage/spiffs>`_
+
 
 Over-the-Air (OTA) update
 ~~~~~~~~~~~~~~~~~~~~~~~~~

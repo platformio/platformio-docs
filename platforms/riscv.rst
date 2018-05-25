@@ -110,21 +110,31 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-riscv/releases>`__
 of RISC-V development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+
+Stable
+~~~~~~
 
 .. code-block:: ini
 
-    ; Custom stable version
-    [env:stable]
-    platform =riscv@x.y.z
+    ; Latest stable version
+    [env:latest_stable]
+    platform = riscv
     board = ...
-    ...
 
-    ; The latest upstream/development version
-    [env:upstream]
+    ; Custom stable version
+    [env:custom_stable]
+    platform = riscv@x.y.z
+    board = ...
+
+Upstream
+~~~~~~~~
+
+.. code-block:: ini
+
+    [env:upstream_develop]
     platform = https://github.com/platformio/platform-riscv.git
     board = ...
-    ...
 
 
 Packages

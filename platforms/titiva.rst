@@ -90,21 +90,31 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-titiva/releases>`__
 of TI TIVA development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+
+Stable
+~~~~~~
 
 .. code-block:: ini
 
-    ; Custom stable version
-    [env:stable]
-    platform =titiva@x.y.z
+    ; Latest stable version
+    [env:latest_stable]
+    platform = titiva
     board = ...
-    ...
 
-    ; The latest upstream/development version
-    [env:upstream]
+    ; Custom stable version
+    [env:custom_stable]
+    platform = titiva@x.y.z
+    board = ...
+
+Upstream
+~~~~~~~~
+
+.. code-block:: ini
+
+    [env:upstream_develop]
     platform = https://github.com/platformio/platform-titiva.git
     board = ...
-    ...
 
 
 Packages
