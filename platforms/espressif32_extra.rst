@@ -112,6 +112,20 @@ from :ref:`projectconf`
     [env:myenv]
     upload_speed = 9600
 
+Uploading files to file system SPIFFS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Initialize project :ref:`cmd_init` (if you have not initialized yet)
+2. Create ``data`` folder (it should be on the same level as ``src`` folder)
+   and put files here. Also, you can specify own location for
+   :ref:`projectconf_pio_data_dir`
+3. Run ``buildfs`` or ``uploadfs`` target using
+   :option:`platformio run --target` command.
+
+To upload SPIFFS image using OTA update please specify ``upload_port`` /
+``--upload-port`` as IP address or mDNS host name (ending with the ``*.local``).
+
+
 Over-the-Air (OTA) update
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
