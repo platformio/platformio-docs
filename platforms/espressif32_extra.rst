@@ -112,6 +112,41 @@ from :ref:`projectconf`
     [env:myenv]
     upload_speed = 9600
 
+
+Partition Tables
+~~~~~~~~~~~~~~~~
+
+You can create a custom partitions table (CSV) following `ESP32 Partition Tables <http://esp-idf.readthedocs.io/en/v3.0/api-guides/partition-tables.html>`_
+documentation. PlatformIO uses **default partition tables** depending on a
+:ref:`projectconf_env_framework` type:
+
+* `"default.csv" for Arduino <https://github.com/espressif/arduino-esp32/blob/master/tools/partitions/default.csv>`_
+* `"partitions_singleapp.csv" for ESP-IDF <https://github.com/espressif/esp-idf/blob/master/components/partition_table/partitions_singleapp.csv>`_
+
+To override default table please use ``board_build.partitions`` option in
+:ref:`projectconf`.
+
+.. warning::
+    SPIFFS partition **MUST** have configured "Type" as "data" and "SubType"
+    as "spiffs". For example, ``spiffs, data, spiffs, 0x291000, 1M,``
+
+Examples:
+
+.. code-block:: ini
+
+    ; 1) A "custom.csv" in the root of project directory
+    [env:custom_table]
+    ; board_build.partitions = path/to/csv
+    board_build.partitions = $PROJECT_DIR/custom.csv
+
+    ; 2) Switch between built-in tables
+    ; https://github.com/espressif/arduino-esp32/tree/master/tools/partitions
+    ; https://github.com/espressif/esp-idf/tree/master/components/partition_table
+    [env:custom_builtin_table]
+    platform = espressif32
+    framework = arduino
+    board_build.partitions = no_ota.csv
+
 Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
