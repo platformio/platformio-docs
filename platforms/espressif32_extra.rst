@@ -112,10 +112,17 @@ from :ref:`projectconf`
     [env:myenv]
     upload_speed = 9600
 
+Enable C++ exceptions
+~~~~~~~~~~~~~~~~~~~~~
+
+Please add ``-D PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS`` to :ref:`projectconf_build_flags`
+of :ref:`projectconf` to enable C++ exceptions for :ref:`framework_espidf`.
+
+See `project example <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-exceptions>`_.
+
 
 Partition Tables
 ~~~~~~~~~~~~~~~~
-
 You can create a custom partitions table (CSV) following `ESP32 Partition Tables <http://esp-idf.readthedocs.io/en/v3.0/api-guides/partition-tables.html>`_
 documentation. PlatformIO uses **default partition tables** depending on a
 :ref:`projectconf_env_framework` type:
