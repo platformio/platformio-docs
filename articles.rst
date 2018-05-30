@@ -23,6 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2018
 ^^^^
 
+* May 21, 2018 - **Dentella Luca** - `ESP32, PlatformIO <http://www.lucadentella.it/en/2018/05/21/esp32-platformio/>`_
 * Mar 27, 2018 - **Andreas Schmidt** - `Building a Web Of Things REST-API on an Arduino MKR1000 with PlatformIO <https://thngstruction.online/blog/building-a-rest-api-on-arduino-mkr1000-platformio.md>`_
 * Mar 19, 2018 - **ThingForward** - `Webinar: Unit Testing for Embedded with PlatformIO and Qt Creator <https://www.youtube.com/watch?v=GJiMdmlBGlk>`_
 * Feb 16, 2018 - **Alex Corvis** - `DIY Virtual alike NEST Thermostat with Node-RED <https://www.hackster.io/alex-corvis-84/diy-virtual-alike-nest-thermostat-with-node-red-04e6f4>`_
