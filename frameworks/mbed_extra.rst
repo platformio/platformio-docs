@@ -15,10 +15,13 @@ Configuration
 .. contents::
     :local:
 
+RTOS, Events, FileSystem
+~~~~~~~~~~~~~~~~~~~~~~~~
+
 mbed framework consists of several components, some of which should be
 explicitly added to the build process. For this purpose PlatformIO has special
-macro definitions that should be added to :ref:`projectconf_build_flags` when
-one of the components is used in a project:
+macro definitions that should be added to :ref:`projectconf_build_flags` of
+:ref:`projectconf` when one of the components is used in a project:
 
 .. list-table::
     :header-rows:  1
@@ -65,3 +68,8 @@ An example of :ref:`projectconf` with ``filesystem`` library
     framework = mbed
     board = nucleo_f767zi
     build_flags = -D PIO_FRAMEWORK_MBED_FILESYSTEM_PRESENT
+
+Ignore built-in libraries
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+See :ref:`projectconf_lib_ignore`.
