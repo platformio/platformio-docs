@@ -141,17 +141,14 @@ Examples:
 
 .. code-block:: ini
 
-    ; 1) A "custom.csv" in the root of project directory
+    ; 1) A "partitions_custom.csv" in the root of project directory
     [env:custom_table]
-    ; board_build.partitions = path/to/csv
-    board_build.partitions = $PROJECT_DIR/custom.csv
+    board_build.partitions = partitions_custom.csv
 
     ; 2) Switch between built-in tables
     ; https://github.com/espressif/arduino-esp32/tree/master/tools/partitions
     ; https://github.com/espressif/esp-idf/tree/master/components/partition_table
     [env:custom_builtin_table]
-    platform = espressif32
-    framework = arduino
     board_build.partitions = no_ota.csv
 
 Uploading files to file system SPIFFS
