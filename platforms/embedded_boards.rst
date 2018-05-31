@@ -1888,7 +1888,7 @@ Espressif
       - ESP32
       - 240MHz
       - 1.25MB
-      - 288KB
+      - 4MB
     * - ``esp01``
       - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`

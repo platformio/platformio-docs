@@ -1285,7 +1285,7 @@ Espressif
       - ESP32
       - 240MHz
       - 1.25MB
-      - 288KB
+      - 4MB
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
