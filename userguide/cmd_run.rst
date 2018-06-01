@@ -66,6 +66,7 @@ Built-in targets:
     + ``buildfs`` :ref:`platform_espressif_uploadfs`
     + ``uploadfs`` :ref:`platform_espressif_uploadfs`
     + ``size`` print the size of the sections in a firmware/program
+    + ``checkprogsize`` check maximum allowed firmware size for uploading
 
 * Device
 
