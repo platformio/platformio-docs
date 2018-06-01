@@ -76,14 +76,14 @@ You do not need to use/buy external debugger.
       - 64KB
     * - ``nrf52840_dk``
       - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF52832
       - 64MHz
       - 512KB
@@ -142,21 +142,31 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-nordicnrf52/releases>`__
 of Nordic nRF52 development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+
+Stable
+~~~~~~
 
 .. code-block:: ini
 
-    ; Custom stable version
-    [env:stable]
-    platform =nordicnrf52@x.y.z
+    ; Latest stable version
+    [env:latest_stable]
+    platform = nordicnrf52
     board = ...
-    ...
 
-    ; The latest upstream/development version
-    [env:upstream]
+    ; Custom stable version
+    [env:custom_stable]
+    platform = nordicnrf52@x.y.z
+    board = ...
+
+Upstream
+~~~~~~~~
+
+.. code-block:: ini
+
+    [env:upstream_develop]
     platform = https://github.com/platformio/platform-nordicnrf52.git
     board = ...
-    ...
 
 
 Packages

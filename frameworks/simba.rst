@@ -221,7 +221,7 @@ Espressif
       - No
       - ESP8266
       - 80MHz
-      - 4MB
+      - 2MB
       - 80KB
 
 MakerAsia

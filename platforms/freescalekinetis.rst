@@ -113,22 +113,15 @@ You do not need to use/buy external debugger.
       - 48MHz
       - 128KB
       - 16KB
-    * - ``frdm_kl26z``
-      - `Freescale Kinetis FRDM-KL26Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MKL26Z128VLH4
-      - 48MHz
-      - 128KB
-      - 16KB
     * - ``frdm_kl27z``
-      - `Freescale Kinetis FRDM-KL27Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl17-and-kl27-mcus:FRDM-KL27Z?utm_source=platformio&utm_medium=docs>`_
+      - `Freescale Kinetis FRDM-KL27Z <https://os.mbed.com/platforms/FRDM-KL27Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - MKL27Z64VLH4
       - 48MHz
       - 64KB
       - 16KB
     * - ``frdm_kl43z``
-      - `Freescale Kinetis FRDM-KL43Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl43-kl33-kl27-kl17-and-kl13-mcus:FRDM-KL43Z?utm_source=platformio&utm_medium=docs>`_
+      - `Freescale Kinetis FRDM-KL43Z <https://os.mbed.com/platforms/FRDM-KL43Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
       - MKL43Z256VLH4
       - 48MHz
@@ -181,21 +174,31 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-freescalekinetis/releases>`__
 of Freescale Kinetis development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+
+Stable
+~~~~~~
 
 .. code-block:: ini
 
-    ; Custom stable version
-    [env:stable]
-    platform =freescalekinetis@x.y.z
+    ; Latest stable version
+    [env:latest_stable]
+    platform = freescalekinetis
     board = ...
-    ...
 
-    ; The latest upstream/development version
-    [env:upstream]
+    ; Custom stable version
+    [env:custom_stable]
+    platform = freescalekinetis@x.y.z
+    board = ...
+
+Upstream
+~~~~~~~~
+
+.. code-block:: ini
+
+    [env:upstream_develop]
     platform = https://github.com/platformio/platform-freescalekinetis.git
     board = ...
-    ...
 
 
 Packages
@@ -312,22 +315,15 @@ Freescale
       - 48MHz
       - 128KB
       - 16KB
-    * - ``frdm_kl26z``
-      - `Freescale Kinetis FRDM-KL26Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - MKL26Z128VLH4
-      - 48MHz
-      - 128KB
-      - 16KB
     * - ``frdm_kl27z``
-      - `Freescale Kinetis FRDM-KL27Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl17-and-kl27-mcus:FRDM-KL27Z?utm_source=platformio&utm_medium=docs>`_
+      - `Freescale Kinetis FRDM-KL27Z <https://os.mbed.com/platforms/FRDM-KL27Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKL27Z64VLH4
       - 48MHz
       - 64KB
       - 16KB
     * - ``frdm_kl43z``
-      - `Freescale Kinetis FRDM-KL43Z <http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl43-kl33-kl27-kl17-and-kl13-mcus:FRDM-KL43Z?utm_source=platformio&utm_medium=docs>`_
+      - `Freescale Kinetis FRDM-KL43Z <https://os.mbed.com/platforms/FRDM-KL43Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKL43Z256VLH4
       - 48MHz

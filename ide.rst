@@ -11,8 +11,8 @@
 
 .. _ide:
 
-Cloud & Standalone IDE
-======================
+Cloud & Desktop IDE
+===================
 
 PlatformIO IDE
 --------------
@@ -41,8 +41,8 @@ Cloud IDE
     ide/eclipseche
 
 
-Other IDE
----------
+Desktop IDE
+-----------
 
 .. toctree::
     :maxdepth: 1

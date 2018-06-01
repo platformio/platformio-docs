@@ -70,6 +70,14 @@ You do not need to use/buy external debugger.
       - 64MHz
       - 512KB
       - 64KB
+    * - ``esp-wrover-kit``
+      - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_ft2232h` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 4MB
     * - ``mxchip_az3166``
       - `Microsoft Azure IoT Development Kit (MXChip AZ3166) <https://microsoft.github.io/azure-iot-developer-kit/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -89,7 +97,7 @@ You do not need to use/buy external debugger.
     * - ``nrf51_dk``
       - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF51822
       - 32MHz
       - 256KB
@@ -97,7 +105,7 @@ You do not need to use/buy external debugger.
     * - ``nrf51_dongle``
       - `Nordic nRF51-Dongle <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board)
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board)
       - NRF51822
       - 32MHz
       - 256KB
@@ -105,7 +113,7 @@ You do not need to use/buy external debugger.
     * - ``nrf52840_dk``
       - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF52840
       - 64MHz
       - 1MB
@@ -113,7 +121,7 @@ You do not need to use/buy external debugger.
     * - ``nrf52_dk``
       - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF52832
       - 64MHz
       - 512KB
@@ -158,6 +166,14 @@ You do not need to use/buy external debugger.
       - 64MHz
       - 512KB
       - 64KB
+    * - ``samd21g18a``
+      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - ``seeedTinyBLE``
       - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -290,6 +306,86 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 84MHz
       - 512KB
       - 32KB
+    * - ``esp32-evb``
+      - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32-gateway``
+      - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32dev``
+      - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32doit-devkit-v1``
+      - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32thing``
+      - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32vn-iot-uno``
+      - `ESP32vn IoT Uno <https://esp32.vn/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``espectro32``
+      - `ESPectro32 <https://shop.makestro.com/product/espectro32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``espino32``
+      - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``featheresp32``
+      - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``firebeetle32``
+      - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``genericSTM32F103C8``
       - `STM32F103C8 (20k RAM. 64k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -354,6 +450,38 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F407VET6``
+      - `STM32F407VE (192k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f407ve.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
+    * - ``hornbill32dev``
+      - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``hornbill32minima``
+      - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``lolin32``
+      - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``macchina2``
       - `Macchina M2 <https://www.macchina.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -386,6 +514,22 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 72MHz
       - 108KB
       - 17KB
+    * - ``mhetesp32devkit``
+      - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``mhetesp32minikit``
+      - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -450,6 +594,22 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 32MHz
       - 256KB
       - 32KB
+    * - ``node32s``
+      - `Node32s <http://www.ayarafun.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``nodemcu-32s``
+      - `NodeMCU-32S <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``oshchip``
       - `OSHChip <http://oshchip.org/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -458,6 +618,14 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 32MHz
       - 256KB
       - 32KB
+    * - ``pocket_32``
+      - `Dongsen Tech Pocket 32 <http://dong-sen.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``rfduino``
       - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -578,6 +746,14 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 32MHz
       - 256KB
       - 32KB
+    * - ``wemosbat``
+      - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``zeroUSB``
       - `Arduino Zero (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -779,7 +955,7 @@ Adafruit
     * - ``featheresp32``
       - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -882,7 +1058,7 @@ Aiyarafun
     * - ``node32s``
       - `Node32s <http://www.ayarafun.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1371,6 +1547,189 @@ Arduino
       - 256KB
       - 32KB
 
+Atmel
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``attiny13``
+      - `Generic ATTiny13 <http://www.atmel.com/devices/ATTINY13.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - ``attiny1634``
+      - `Generic ATTiny1634 <http://www.atmel.com/devices/ATTINY1634.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY1634
+      - 8MHz
+      - 16KB
+      - 1KB
+    * - ``attiny167``
+      - `Generic ATTiny167 <http://www.atmel.com/devices/ATTINY167.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY167
+      - 8MHz
+      - 16KB
+      - 512B
+    * - ``attiny2313``
+      - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY2313
+      - 8MHz
+      - 2KB
+      - 128B
+    * - ``attiny24``
+      - `Generic ATTiny24 <http://www.atmel.com/devices/ATTINY24.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY24
+      - 8MHz
+      - 2KB
+      - 128B
+    * - ``attiny25``
+      - `Generic ATTiny25 <http://www.atmel.com/devices/ATTINY25.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY25
+      - 8MHz
+      - 2KB
+      - 128B
+    * - ``attiny261``
+      - `Generic ATTiny261 <http://www.atmel.com/devices/ATTINY261.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY261
+      - 8MHz
+      - 2KB
+      - 128B
+    * - ``attiny4313``
+      - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY4313
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny44``
+      - `Generic ATTiny44 <http://www.atmel.com/devices/ATTINY44.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY44
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny441``
+      - `Generic ATTiny441 <http://www.atmel.com/devices/ATTINY441.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY441
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny45``
+      - `Generic ATTiny45 <http://www.atmel.com/devices/ATTINY45.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY45
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny461``
+      - `Generic ATTiny461 <http://www.atmel.com/devices/ATTINY461.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY461
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny48``
+      - `Generic ATTiny48 <http://www.atmel.com/devices/ATTINY48.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY48
+      - 8MHz
+      - 4KB
+      - 256B
+    * - ``attiny828``
+      - `Generic ATTiny828 <http://www.atmel.com/devices/ATTINY828.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY828
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny84``
+      - `Generic ATTiny84 <http://www.atmel.com/devices/ATTINY84.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY84
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny841``
+      - `Generic ATTiny841 <http://www.atmel.com/devices/ATTINY841.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY841
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny85``
+      - `Generic ATTiny85 <http://www.atmel.com/devices/ATTINY85.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY85
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny861``
+      - `Generic ATTiny861 <http://www.atmel.com/devices/ATTINY861.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY861
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny87``
+      - `Generic ATTiny87 <http://www.atmel.com/devices/ATTINY87.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY87
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``attiny88``
+      - `Generic ATTiny88 <http://www.atmel.com/devices/ATTINY88.aspx?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATTINY88
+      - 8MHz
+      - 8KB
+      - 512B
+    * - ``samd21g18a``
+      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+
 BBC
 ~~~
 
@@ -1527,7 +1886,7 @@ DFRobot
     * - ``firebeetle32``
       - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1550,7 +1909,7 @@ DOIT
     * - ``esp32doit-devkit-v1``
       - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1816,7 +2175,7 @@ Dongsen Technology
     * - ``pocket_32``
       - `Dongsen Tech Pocket 32 <http://dong-sen.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1870,7 +2229,7 @@ DycodeX
     * - ``espectro32``
       - `ESPectro32 <https://shop.makestro.com/product/espectro32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -1893,7 +2252,7 @@ ESP32vn
     * - ``esp32vn-iot-uno``
       - `ESP32vn IoT Uno <https://esp32.vn/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -2062,11 +2421,11 @@ Espressif
     * - ``esp-wrover-kit``
       - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
-      - 288KB
+      - 4MB
     * - ``esp01``
       - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -2102,7 +2461,7 @@ Espressif
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -2121,7 +2480,7 @@ Espressif
       - No
       - ESP8266
       - 80MHz
-      - 4MB
+      - 2MB
       - 80KB
     * - ``phoenix_v1``
       - `Phoenix 1.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
@@ -2139,6 +2498,14 @@ Espressif
       - 80MHz
       - 4MB
       - 80KB
+    * - ``pico32``
+      - `ESP32 Pico Kit <http://esp-idf.readthedocs.io/en/latest/get-started/get-started-pico-kit.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - No
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
     * - ``wifinfo``
       - `WifInfo <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -2265,173 +2632,14 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
-
-Generic ATTiny
-~~~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - ID
-      - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - ``attiny13``
-      - `Generic ATTiny13 <http://www.atmel.com/devices/ATTINY13.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY13
-      - 9MHz
-      - 1KB
-      - 64B
-    * - ``attiny1634``
-      - `Generic ATTiny1634 <http://www.atmel.com/devices/ATTINY1634.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY1634
-      - 8MHz
-      - 16KB
-      - 1KB
-    * - ``attiny167``
-      - `Generic ATTiny167 <http://www.atmel.com/devices/ATTINY167.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY167
-      - 8MHz
-      - 16KB
-      - 512B
-    * - ``attiny2313``
-      - `Generic ATTiny2313 <http://www.microchip.com/wwwproducts/en/ATTINY2313?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY2313
-      - 8MHz
-      - 2KB
-      - 128B
-    * - ``attiny24``
-      - `Generic ATTiny24 <http://www.atmel.com/devices/ATTINY24.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY24
-      - 8MHz
-      - 2KB
-      - 128B
-    * - ``attiny25``
-      - `Generic ATTiny25 <http://www.atmel.com/devices/ATTINY25.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY25
-      - 8MHz
-      - 2KB
-      - 128B
-    * - ``attiny261``
-      - `Generic ATTiny261 <http://www.atmel.com/devices/ATTINY261.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY261
-      - 8MHz
-      - 2KB
-      - 128B
-    * - ``attiny4313``
-      - `Generic ATTiny4313 <http://www.microchip.com/wwwproducts/en/ATTINY4313?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY4313
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny44``
-      - `Generic ATTiny44 <http://www.atmel.com/devices/ATTINY44.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY44
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny441``
-      - `Generic ATTiny441 <http://www.atmel.com/devices/ATTINY441.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY441
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny45``
-      - `Generic ATTiny45 <http://www.atmel.com/devices/ATTINY45.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY45
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny461``
-      - `Generic ATTiny461 <http://www.atmel.com/devices/ATTINY461.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY461
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny48``
-      - `Generic ATTiny48 <http://www.atmel.com/devices/ATTINY48.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY48
-      - 8MHz
-      - 4KB
-      - 256B
-    * - ``attiny84``
-      - `Generic ATTiny84 <http://www.atmel.com/devices/ATTINY84.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY84
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny841``
-      - `Generic ATTiny841 <http://www.atmel.com/devices/ATTINY841.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY841
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny85``
-      - `Generic ATTiny85 <http://www.atmel.com/devices/ATTINY85.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY85
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny861``
-      - `Generic ATTiny861 <http://www.atmel.com/devices/ATTINY861.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY861
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny87``
-      - `Generic ATTiny87 <http://www.atmel.com/devices/ATTINY87.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY87
-      - 8MHz
-      - 8KB
-      - 512B
-    * - ``attiny88``
-      - `Generic ATTiny88 <http://www.atmel.com/devices/ATTINY88.aspx?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATTINY88
-      - 8MHz
-      - 8KB
-      - 512B
+    * - ``genericSTM32F407VET6``
+      - `STM32F407VE (192k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f407ve.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
 
 Heltec
 ~~~~~~
@@ -2504,7 +2712,7 @@ Hornbill
     * - ``hornbill32dev``
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -2512,7 +2720,7 @@ Hornbill
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -2728,7 +2936,7 @@ MH-ET Live
     * - ``mhetesp32devkit``
       - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -2736,7 +2944,7 @@ MH-ET Live
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -3056,7 +3264,7 @@ NodeMCU
     * - ``nodemcu-32s``
       - `NodeMCU-32S <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -3157,7 +3365,7 @@ OLIMEX
     * - ``esp32-evb``
       - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -3165,7 +3373,7 @@ OLIMEX
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -4015,7 +4223,7 @@ SparkFun Electronics
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -4178,7 +4386,7 @@ ThaiEasyElec
     * - ``espino32``
       - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -4326,7 +4534,7 @@ WEMOS
     * - ``lolin32``
       - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -4334,7 +4542,7 @@ WEMOS
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB

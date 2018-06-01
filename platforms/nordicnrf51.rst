@@ -110,14 +110,14 @@ You do not need to use/buy external debugger.
       - 16KB
     * - ``nrf51_dk``
       - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - ``nrf51_dongle``
       - `Nordic nRF51-Dongle <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (default, on-board)
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board)
       - NRF51822
       - 32MHz
       - 256KB
@@ -246,21 +246,31 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-nordicnrf51/releases>`__
 of Nordic nRF51 development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+
+Stable
+~~~~~~
 
 .. code-block:: ini
 
-    ; Custom stable version
-    [env:stable]
-    platform =nordicnrf51@x.y.z
+    ; Latest stable version
+    [env:latest_stable]
+    platform = nordicnrf51
     board = ...
-    ...
 
-    ; The latest upstream/development version
-    [env:upstream]
+    ; Custom stable version
+    [env:custom_stable]
+    platform = nordicnrf51@x.y.z
+    board = ...
+
+Upstream
+~~~~~~~~
+
+.. code-block:: ini
+
+    [env:upstream_develop]
     platform = https://github.com/platformio/platform-nordicnrf51.git
     board = ...
-    ...
 
 
 Packages

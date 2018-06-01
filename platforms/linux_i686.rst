@@ -36,21 +36,31 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-linux_i686/releases>`__
 of Linux i686 development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+
+Stable
+~~~~~~
 
 .. code-block:: ini
 
-    ; Custom stable version
-    [env:stable]
-    platform =linux_i686@x.y.z
+    ; Latest stable version
+    [env:latest_stable]
+    platform = linux_i686
     board = ...
-    ...
 
-    ; The latest upstream/development version
-    [env:upstream]
+    ; Custom stable version
+    [env:custom_stable]
+    platform = linux_i686@x.y.z
+    board = ...
+
+Upstream
+~~~~~~~~
+
+.. code-block:: ini
+
+    [env:upstream_develop]
     platform = https://github.com/platformio/platform-linux_i686.git
     board = ...
-    ...
 
 
 Packages

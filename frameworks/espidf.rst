@@ -24,6 +24,217 @@ For more detailed information please visit `vendor site <https://github.com/espr
     :local:
     :depth: 1
 
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` options.
+
+
+On-Board tools
+~~~~~~~~~~~~~~
+
+Boards listed below have on-board debugging tools and **ARE READY** for debugging!
+You do not need to use/buy external debugger.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``esp-wrover-kit``
+      - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_ft2232h` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 4MB
+
+
+External tools
+~~~~~~~~~~~~~~
+
+Boards listed below are compatible with :ref:`piodebug` but depend on external
+debugging tools. See "Debug" column for compatible debugging tools.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``esp32-evb``
+      - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32-gateway``
+      - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32dev``
+      - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32doit-devkit-v1``
+      - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32thing``
+      - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``esp32vn-iot-uno``
+      - `ESP32vn IoT Uno <https://esp32.vn/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``espectro32``
+      - `ESPectro32 <https://shop.makestro.com/product/espectro32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``espino32``
+      - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``featheresp32``
+      - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``firebeetle32``
+      - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``hornbill32dev``
+      - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``hornbill32minima``
+      - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``lolin32``
+      - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``mhetesp32devkit``
+      - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``mhetesp32minikit``
+      - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``node32s``
+      - `Node32s <http://www.ayarafun.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``nodemcu-32s``
+      - `NodeMCU-32S <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``pocket_32``
+      - `Dongsen Tech Pocket 32 <http://dong-sen.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+    * - ``wemosbat``
+      - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 288KB
+
+
 Examples
 --------
 
@@ -65,7 +276,7 @@ Adafruit
     * - ``featheresp32``
       - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -88,7 +299,7 @@ Aiyarafun
     * - ``node32s``
       - `Node32s <http://www.ayarafun.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -134,7 +345,7 @@ DFRobot
     * - ``firebeetle32``
       - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -157,7 +368,7 @@ DOIT
     * - ``esp32doit-devkit-v1``
       - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -180,7 +391,7 @@ Dongsen Technology
     * - ``pocket_32``
       - `Dongsen Tech Pocket 32 <http://dong-sen.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -203,7 +414,7 @@ DycodeX
     * - ``espectro32``
       - `ESPectro32 <https://shop.makestro.com/product/espectro32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -226,7 +437,7 @@ ESP32vn
     * - ``esp32vn-iot-uno``
       - `ESP32vn IoT Uno <https://esp32.vn/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -272,13 +483,21 @@ Espressif
     * - ``esp-wrover-kit``
       - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 1.25MB
+      - 4MB
+    * - ``esp32dev``
+      - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
       - 288KB
-    * - ``esp32dev``
-      - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
+    * - ``pico32``
+      - `ESP32 Pico Kit <http://esp-idf.readthedocs.io/en/latest/get-started/get-started-pico-kit.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - No
       - ESP32
@@ -334,7 +553,7 @@ Hornbill
     * - ``hornbill32dev``
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -342,7 +561,7 @@ Hornbill
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -411,7 +630,7 @@ MH-ET Live
     * - ``mhetesp32devkit``
       - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -419,7 +638,7 @@ MH-ET Live
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -488,7 +707,7 @@ NodeMCU
     * - ``nodemcu-32s``
       - `NodeMCU-32S <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -534,7 +753,7 @@ OLIMEX
     * - ``esp32-evb``
       - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -542,7 +761,7 @@ OLIMEX
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -588,7 +807,7 @@ SparkFun Electronics
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -611,7 +830,7 @@ ThaiEasyElec
     * - ``espino32``
       - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -634,7 +853,7 @@ WEMOS
     * - ``lolin32``
       - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB
@@ -642,7 +861,7 @@ WEMOS
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - No
+      - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
       - 1.25MB

@@ -17,46 +17,51 @@ Board options
 .. contents::
     :local:
 
-``board_mcu``
-^^^^^^^^^^^^^
+``board_build.mcu``
+^^^^^^^^^^^^^^^^^^^
 
-``board_mcu`` is a microcontroller(MCU) type that is used by compiler to
-recognize MCU architecture. The correct type of ``board_mcu`` depends on
-platform library. For example, the list of ``board_mcu`` for "megaAVR Devices"
+``board_build.mcu`` is a microcontroller(MCU) type that is used by compiler to
+recognize MCU architecture. The correct type of ``board_build.mcu`` depends on
+platform library. For example, the list of ``board_build.mcu`` for "megaAVR Devices"
 is described `here <http://www.nongnu.org/avr-libc/user-manual/>`_.
 
-The full list of ``board_mcu`` for the popular embedded platforms you can find
+The full list of ``board_build.mcu`` for the popular embedded platforms you can find
 in *Boards* section of :ref:`platforms`. See "Microcontroller" column.
 
-.. _projectconf_board_f_cpu:
+.. _projectconf_board_build.f_cpu:
 
-``board_f_cpu``
-^^^^^^^^^^^^^^^
+``board_build.f_cpu``
+^^^^^^^^^^^^^^^^^^^^^
 
-An option ``board_f_cpu`` is used to define MCU frequency (Hertz, Clock). A
+An option ``board_build.f_cpu`` is used to define MCU frequency (Hertz, Clock). A
 format of this option is ``C-like long integer`` value with ``L`` suffix. The
 1 Hertz is equal to ``1L``, then 16 MHz (Mega Hertz) is equal to ``16000000L``.
 
-The full list of ``board_f_cpu`` for the popular embedded platforms you can
+The full list of ``board_build.f_cpu`` for the popular embedded platforms you can
 find in *Boards* section of :ref:`platforms`. See "Frequency" column. You can
-overclock a board by specifying a ``board_f_cpu`` value other than the default.
+overclock a board by specifying a ``board_build.f_cpu`` value other than the default.
 
-.. _projectconf_board_f_flash:
+More options
+^^^^^^^^^^^^
 
-``board_f_flash``
-^^^^^^^^^^^^^^^^^
+You can override any board option declared in manifest file using the next
+format ``board_{OBJECT.PATH}``, where ``{OBJECT.PATH}`` is an object path in
+JSON manifest. Please navigate to "boards" folder of `PlatfomIO development platforms <https://github.com/topics/platformio-platform>`_
+and open JSON file to list all available options.
 
-An option ``board_f_flash`` is used to define FLASH chip frequency (Hertz, Clock). A
-format of this option is ``C-like long integer`` value with ``L`` suffix. The
-1 Hertz is equal to ``1L``, then 40 MHz (Mega Hertz) is equal to ``40000000L``.
+For example, `Manifest: Espressif ESP32 Dev Module <https://github.com/platformio/platform-espressif32/blob/develop/boards/esp32dev.json>`_:
 
-This option isn't available for the all development platforms. The only
-:ref:`platform_espressif8266` supports it.
+.. code-block:: ini
 
-.. _projectconf_board_flash_mode:
+    [env:custom_board_options]
+    ; Custom CPU Frequency
+    board_build.f_cpu = 160000000L
 
-``board_flash_mode``
-^^^^^^^^^^^^^^^^^^^^
+    ; Custom FLASH Frequency
+    board_build.f_flash = 80000000L
 
-Flash chip interface mode. This option isn't available for the all development
-platforms. The only :ref:`platform_espressif8266` supports it.
+    ; Custom FLASH Mode
+    board_build.flash_mode = qio
+
+    ; Custom maximum program size
+    board_upload.maximum_size = 1310720

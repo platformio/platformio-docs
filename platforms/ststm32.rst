@@ -428,7 +428,7 @@ You do not need to use/buy external debugger.
       - `ST Nucleo L053R8 <https://developer.mbed.org/platforms/ST-Nucleo-L053R8/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32L053R8T6
-      - 48MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - ``nucleo_l073rz``
@@ -590,6 +590,13 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F407VET6``
+      - `STM32F407VE (192k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f407ve.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - ``maple``
       - `Maple <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
@@ -681,21 +688,31 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-ststm32/releases>`__
 of ST STM32 development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+
+Stable
+~~~~~~
 
 .. code-block:: ini
 
-    ; Custom stable version
-    [env:stable]
-    platform =ststm32@x.y.z
+    ; Latest stable version
+    [env:latest_stable]
+    platform = ststm32
     board = ...
-    ...
 
-    ; The latest upstream/development version
-    [env:upstream]
+    ; Custom stable version
+    [env:custom_stable]
+    platform = ststm32@x.y.z
+    board = ...
+
+Upstream
+~~~~~~~~
+
+.. code-block:: ini
+
+    [env:upstream_develop]
     platform = https://github.com/platformio/platform-ststm32.git
     board = ...
-    ...
 
 
 Packages
@@ -963,6 +980,13 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F407VET6``
+      - `STM32F407VE (192k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f407ve.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
 
 LeafLabs
 ~~~~~~~~
@@ -1415,7 +1439,7 @@ ST
       - `ST Nucleo L053R8 <https://developer.mbed.org/platforms/ST-Nucleo-L053R8/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - STM32L053R8T6
-      - 48MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - ``nucleo_l073rz``

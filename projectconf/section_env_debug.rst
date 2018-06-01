@@ -47,9 +47,9 @@ See available tools in :ref:`debugging_tools`.
 ^^^^^^^^^^^^^^^^^^^^
 
 An initial breakpoint that makes your program stop whenever a certain point in
-the program is reached. **Default** value is ``tbreak main`` that means to create
-a temporary breakpoint at ``int main(...)`` function and automatically delete
-it after the first time a program stops there.
+the program is reached. **Default** value is  set to ``tbreak main`` and means
+creating a temporary breakpoint at ``int main(...)`` function and
+automatically delete it after the first time a program stops there.
 
 * `GDB Setting Breakpoints <https://sourceware.org/gdb/onlinedocs/gdb/Set-Breaks.html#Set-Breaks>`_
 * `GDB Breakpoint Locations <https://sourceware.org/gdb/onlinedocs/gdb/Specify-Location.html#Specify-Location>`_
@@ -72,7 +72,7 @@ it after the first time a program stops there.
     debug_init_break =
 
     ; Examples 2: temporary stop at ``void loop()`` function
-    debug_init_break = tb loop
+    debug_init_break = tbreak loop
 
     ; Examples 3: stop in main.cpp at line 13
     debug_init_break = break main.cpp:13
@@ -95,12 +95,12 @@ For example, the custom initial commands for GDB:
     platform = ...
     board = ...
     debug_init_cmds =
-      target remote $DEBUG_PORT
-      file "$PROG_PATH"
-      load "$PROG_PATH"
+      target extended-remote $DEBUG_PORT
+      $INIT_BREAK
+      monitor reset halt
+      $LOAD_CMD
       monitor init
       monitor reset halt
-      $INIT_BREAK
 
 .. _projectconf_debug_extra_cmds:
 
@@ -139,8 +139,8 @@ for GDB:
 Specify a command which will be used to load program/firmware to a target
 device. Possible options:
 
-* ``command`` - pass any debugging client command (GDB, etc.)
-* ``load`` - is setup by **default**
+* ``load`` - **default** option
+* ``some command`` - pass any debugging client command (GDB, etc.)
 * ``load address`` - load program at specified address, where "address"
   should be a valid number
 * ``preload`` - some embedded devices have locked Flash Memory (a few
@@ -206,3 +206,11 @@ For example:
 * ``/dev/ttyUSB0`` - Unix-based OS
 * ``COM3`` - Windows OS
 * ``localhost:3333``
+
+.. _projectconf_debug_svd_path:
+
+``debug_svd_path``
+^^^^^^^^^^^^^^^^^^
+
+A custom path to `SVD file <https://www.keil.com/pack/doc/CMSIS/SVD/html/svd_Format_pg.html>`_
+which contains information about device peripherals.

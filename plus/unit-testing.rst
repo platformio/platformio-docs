@@ -10,7 +10,6 @@
     limitations under the License.
 
 .. |PIOUTE| replace:: **PIO Unit Testing Engine**
-.. |PIOUTF| replace:: *PIO Unit Testing Framework*
 
 .. _unit_testing:
 
@@ -48,13 +47,14 @@ Tutorials
 * `ThingForward: Embedded Testing with PlatformIO - Part 2 <http://www.thingforward.io/techblog/2017-08-08-embedded-testing-with-platformio-part-2.html>`_
 * `ThingForward: Embedded Testing with PlatformIO – Part 3: Remoting <http://www.thingforward.io/techblog/2017-09-06-embedded-testing-with-platformio-part-3-remoting.html>`_
 * `ThingForward: Embedded Testing with PlatformIO – Part 4: Continuous Integration <http://www.thingforward.io/techblog/2017-09-18-embedded-testing-with-platformio-part-4-continuous-integration.html>`_
+* `ThingForward, Webinar: Unit Testing for Embedded with PlatformIO and Qt Creator <https://www.youtube.com/watch?v=GJiMdmlBGlk>`_
 
 
 Project Examples
 ~~~~~~~~~~~~~~~~
 
 * `Embedded: Wiring Blink <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/wiring-blink>`_
-* `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_
+* `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`__
 * `Labmet Weather Station <https://github.com/lab804/labmet-weatherstation>`_
 * `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`__
 
@@ -79,10 +79,9 @@ Test Types
 Desktop
 ~~~~~~~
 
-PlatformIO wraps a test and a main program (from :ref:`projectconf_pio_src_dir`)
-with |PIOUTF| and builds the final program using :ref:`platform_native`
-development platform. Finally, PlatformIO runs tests on the host machine
-(desktop or :ref:`ci` VM instance).
+|PIOUTE| builds a test program for a host machine using :ref:`platform_native`
+development platform. This test could be run only with the desktop or :ref:`ci`
+VM instance.
 
 .. note::
     PlatformIO does not install any toolchains automatically for
@@ -93,21 +92,18 @@ development platform. Finally, PlatformIO runs tests on the host machine
 Embedded
 ~~~~~~~~
 
-PlatformIO wraps a test and main firmware (from :ref:`projectconf_pio_src_dir`)
-with |PIOUTF| and builds special firmware for a target device and deploy it.
-Then, PlatformIO connects to the embedded device (board) using configured
-Serial :ref:`projectconf_test_port` and communicate via
-:ref:`projectconf_test_transport`. Finally, it runs tests on embedded side,
-collects results, analyzes them and provides a summary on host machine side
-(desktop).
+|PIOUTE| builds a special firmware for a target device (board) and program it.
+Then, it connects to this device using configured Serial :ref:`projectconf_test_port`
+and communicate via :ref:`projectconf_test_transport`. Finally, it runs
+test on an embedded side, collects results, analyzes them and provides a
+summary on a host machine side (desktop).
 
 .. note::
-
-    Please note that the |PIOUTF| uses the first available ``Serial/UART``
+    Please note that the |PIOUTE| uses the first available ``Serial/UART``
     implementation (depending on a :ref:`projectconf_env_framework`) as a
     communication interface between the |PIOUTE| and target device. If you use
-    ``Serial`` in your project, please wrap/hide Serial-based blocks with
-    ``#ifndef UNIT_TEST`` macro.
+    ``Serial`` in your project libraries, please wrap/hide Serial-based blocks
+    with ``#ifndef UNIT_TEST`` macro.
 
     Also, you can create custom :ref:`projectconf_test_transport` and implement
     base interface.
@@ -115,47 +111,34 @@ collects results, analyzes them and provides a summary on host machine side
 Test Runner
 -----------
 
-Test Runner allows you to process specific environments or ignore tests using
-"Glob patterns". You can also ignore tests for specific environments using a
+Test Runner allows you to process specific environments or ignore a test using
+"Glob patterns". You can also ignore a test for specific environments using a
 :ref:`projectconf_test_ignore` option from :ref:`projectconf`.
 
 Local
 ~~~~~
-Allows you to run tests on a host machine or on target devices (boards) that are
-directly connected to the host machine. In this case, need to use the
+
+Allows you to run a test on a host machine or on a target device (board) which
+is directly connected to the host machine. In this case, you need to use the
 :ref:`cmd_test` command.
 
 Remote
 ~~~~~~
 
-Allows you to run tests on a remote machine or remote target devices (boards)
+Allows you to run test on a remote machine or remote target device (board)
 without having to depend on OS software, extra software, SSH, VPN or opening
 network ports. Remote Unit Testing works in pair with :ref:`pioremote`. In this
 case, you need to use the special command :ref:`cmd_remote_test`.
 
 PlatformIO supports multiple :ref:`ci` systems where you can run unit tests
-on each integration stage. See real
+at the each integration stage. See real
 `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`__.
-
-.. _unit_testing_design:
-
-Design
-------
-
-The |PIOUTE| design is based on a few isolated components:
-
-1. **Main Program**. Contains the independent modules, procedures, functions or
-   methods that will be the target candidates (TC) for testing.
-2. **Unit Test**. A small independent program that is intended to re-use TC from
-   the main program and apply tests to them.
-3. **Test Processor**. The set of approaches and tools that will be used
-   to apply tests for the environments from :ref:`projectconf`.
 
 Workflow
 --------
 
 1. Create PlatformIO project using the :ref:`cmd_init` command. For Desktop Unit
-   Testing (on the host machine), you need to use :ref:`platform_native`.
+   Testing (on a host machine), you need to use :ref:`platform_native`.
 
    .. code-block:: ini
 
@@ -190,53 +173,17 @@ Workflow
         [env:native]
         platform = native
 
-2. Place source code for the main program in the ``src`` directory.
-3. Wrap ``main()`` or ``setup()/loop()`` methods in the main program with a
-   ``UNIT_TEST`` guard:
-
-   .. code-block:: c
-
-        /**
-        * Arduino Wiring-based Framework
-        */
-        #ifndef UNIT_TEST
-        #include <Arduino.h>
-        void setup () {
-          // some code...
-        }
-
-        void loop () {
-          // some code...
-        }
-        #endif
-
-
-   .. code-block:: c
-
-        /**
-        * Generic C/C++
-        */
-        #ifndef UNIT_TEST
-        int main(int argc, char **argv) {
-          // setup code...
-
-          while (1) {
-              // loop code...
-          }
-          return 0
-        }
-        #endif
-
-4. Create a ``test`` directory in the root of your project. See :ref:`projectconf_pio_test_dir`.
-5. Write the test using :ref:`unit_testing_api`. Each test is a small independent
-   program with its own ``main()`` or ``setup()/loop()`` methods. Tests should
-   start with ``UNITY_BEGIN()`` and finish with ``UNITY_END()``.
+2. Create a ``test`` folder in a root of your project. See :ref:`projectconf_pio_test_dir`.
+3. Write a test using :ref:`unit_testing_api`. Each test is a small independent
+   program/firmware with its own ``main()`` or ``setup()/loop()`` functions.
+   Test should start with ``UNITY_BEGIN()`` and finish with ``UNITY_END()``
+   calls.
 
    .. warning::
-     If your board does not support software reset via ``Serial.DTR/RTS``,
+     If your board does not support software reseting via ``Serial.DTR/RTS``,
      you should add >2 seconds delay before ``UNITY_BEGIN()`.
-     That time is needed to establish a ``Serial`` communication between the host
-     machine and target device.
+     That time is needed to establish a ``Serial`` connection between a host
+     machine and a target device.
 
      .. code-block:: c
 
@@ -245,11 +192,17 @@ Workflow
          UNITY_BEGIN();
 
 
-6. Place the test in the ``test`` directory. If you have more than one test,
+4. Place a test in the ``test`` directory. If you have more than one test,
    split them into sub-folders. For example, ``test/test_1/*.[c,cpp,h]``,
    ``test_N/*.[c,cpp,h]``, etc. If there is no such directory in the ``test``folder,
    then |PIOUTE| will treat the source code of ``test`` folder as SINGLE test.
-7. Run tests using the :ref:`cmd_test` command.
+5. Run test using the :ref:`cmd_test` command.
+
+
+.. hint::
+  If you have a **shared code** between your "main" program (from :ref:`projectconf_pio_src_dir`) and "test" program, please put it into
+  project's private libraries folder (:ref:`projectconf_pio_lib_dir`).
+  See `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`__ example.
 
 .. _unit_testing_api:
 

@@ -44,21 +44,31 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-espressif8266/releases>`__
 of Espressif 8266 development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option as described below:
+:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+
+Stable
+~~~~~~
 
 .. code-block:: ini
 
-    ; Custom stable version
-    [env:stable]
-    platform =espressif8266@x.y.z
+    ; Latest stable version
+    [env:latest_stable]
+    platform = espressif8266
     board = ...
-    ...
 
-    ; The latest upstream/development version
-    [env:upstream]
+    ; Custom stable version
+    [env:custom_stable]
+    platform = espressif8266@x.y.z
+    board = ...
+
+Upstream
+~~~~~~~~
+
+.. code-block:: ini
+
+    [env:upstream_develop]
     platform = https://github.com/platformio/platform-espressif8266.git
     board = ...
-    ...
 
 
 Packages
@@ -347,7 +357,7 @@ Espressif
       - No
       - ESP8266
       - 80MHz
-      - 4MB
+      - 2MB
       - 80KB
     * - ``phoenix_v1``
       - `Phoenix 1.0 <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_

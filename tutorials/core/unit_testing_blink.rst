@@ -17,7 +17,7 @@ Get started with Unit Testing of "Blink" Project
 The goal of this tutorial is to demonstrate how is simple to use :ref:`unit_testing`.
 
 * **Level:** Beginner
-* **Platforms:** Windows, Mac OS X, Linux
+* **Platforms:** Windows, macOS, Linux
 
 .. contents:: Contents
     :local:
@@ -26,12 +26,9 @@ Setting Up the Project
 ----------------------
 
 1. Please navigate to :ref:`quickstart` section and create the "Blink Project".
-   According to the Unit Testing :ref:`unit_testing_design` it is the **Main program**.
 2. Create a ``test`` directory in the project (on the same level as ``src``)
    and place ``test_main.cpp`` file in it (the source code is located below).
-3. Wrap ``setup()`` and ``loop()`` methods of the main program in a ``UNIT_TEST``
-   guard.
-4. Run tests using :ref:`cmd_test` command.
+3. Run tests using :ref:`cmd_test` command.
 
 Project structure
 -----------------
@@ -43,7 +40,7 @@ Project structure
     │   └── readme.txt
     ├── platformio.ini
     ├── src
-    │   └── main.cpp
+    │   └── ...
     └── test
         └── test_main.cpp
 
@@ -79,48 +76,12 @@ Source files
       framework = arduino
       board = teensy31
 
-* ``src/main.cpp``
-
-  .. code-block:: cpp
-
-      /*
-       * Blink
-       * Turns on an LED on for one second,
-       * then off for one second, repeatedly.
-       */
-
-      #include "Arduino.h"
-
-      #ifndef UNIT_TEST  // IMPORTANT LINE!
-
-      void setup()
-      {
-        // initialize LED digital pin as an output.
-        pinMode(LED_BUILTIN, OUTPUT);
-      }
-
-      void loop()
-      {
-        // turn the LED on (HIGH is the voltage level)
-        digitalWrite(LED_BUILTIN, HIGH);
-        // wait for a second
-        delay(1000);
-        // turn the LED off by making the voltage LOW
-        digitalWrite(LED_BUILTIN, LOW);
-         // wait for a second
-        delay(1000);
-      }
-
-      #endif    // IMPORTANT LINE!
-
 * ``test/test_main.cpp``
 
   .. code-block:: cpp
 
       #include <Arduino.h>
       #include <unity.h>
-
-      #ifdef UNIT_TEST
 
       // void setUp(void) {
       // // set stuff up here
@@ -172,7 +133,6 @@ Source files
           }
       }
 
-      #endif
 
 Test results
 ------------
@@ -185,7 +145,7 @@ Test results
     Verbose mode can be enabled via `-v, --verbose` option
     Collected 1 items
 
-    ============================== [test::*] Building... (1/3) ==============================
+    ============================== [test/*] Building... (1/3) ==============================
     [Wed Sep  7 15:16:55 2016] Processing nodemcu (platform: espressif8266, board: nodemcu, framework: arduino)
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------
     Verbose mode can be enabled via `-v, --verbose` option
@@ -215,7 +175,7 @@ Test results
     223500     2408   29536  255444   3e5d4 .pioenvs/nodemcu/firmware.elf
     Building .pioenvs/nodemcu/firmware.bin
 
-    ============================== [test::*] Uploading... (2/3) ==============================
+    ============================== [test/*] Uploading... (2/3) ==============================
     [Wed Sep  7 15:17:01 2016] Processing nodemcu (platform: espressif8266, board: nodemcu, framework: arduino)
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------
     Verbose mode can be enabled via `-v, --verbose` option
@@ -237,7 +197,7 @@ Test results
     ................................................................................ [ 71% ]
     .................................................................                [ 100% ]
 
-    =============================== [test::*] Testing... (3/3) ===============================
+    =============================== [test/*] Testing... (3/3) ===============================
     If you don't see any output for the first 10 secs, please reset board (press reset button)
 
     test/test_main.cpp:41:test_led_state_high       [PASSED]
@@ -252,5 +212,5 @@ Test results
     11 Tests 1 Failures 0 Ignored
 
     ===================================== [TEST SUMMARY] =====================================
-    test:*/env:nodemcu      [PASSED]
+    test/*/env:nodemcu      [PASSED]
     ================================ [PASSED] Took 38.15 seconds ================================

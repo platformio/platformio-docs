@@ -46,6 +46,7 @@ Embedded
     nordicnrf51
     nordicnrf52
     nxplpc
+    riscv
     samsung_artik
     siliconlabsefm32
     ststm32

@@ -15,22 +15,22 @@ Configuration
 .. contents::
     :local:
 
-Custom CPU Frequency
-~~~~~~~~~~~~~~~~~~~~
+CPU Frequency
+~~~~~~~~~~~~~
 
-See :ref:`projectconf_board_f_cpu` option from :ref:`projectconf`
+See :ref:`projectconf_board_build.f_cpu` option from :ref:`projectconf`
 
 .. code-block:: ini
 
     [env:myenv]
     ; set frequency to 160MHz
-    board_f_cpu = 160000000L
+    board_build.f_cpu = 160000000L
 
-Custom FLASH Frequency
-~~~~~~~~~~~~~~~~~~~~~~
+FLASH Frequency
+~~~~~~~~~~~~~~~
 
-See :ref:`projectconf_board_f_flash` option from :ref:`projectconf`. Possible
-values:
+Please use ``board_build.f_flash`` option from :ref:`projectconf` to change
+a value. Possible values:
 
 * ``40000000L`` (default)
 * ``80000000L``
@@ -39,18 +39,18 @@ values:
 
     [env:myenv]
     ; set frequency to 80MHz
-    board_f_flash = 80000000L
+    board_build.f_flash = 80000000L
 
-Custom FLASH Mode
-~~~~~~~~~~~~~~~~~
+FLASH Mode
+~~~~~~~~~~
 
 Flash chip interface mode. This parameter is stored in the binary image
 header, along with the flash size and flash frequency. The ROM bootloader
 in the ESP chip uses the value of these parameters in order to know how to
 talk to the flash chip.
 
-See :ref:`projectconf_board_flash_mode` option from :ref:`projectconf`. Possible
-values:
+Please use ``board_build.flash_mode`` option from :ref:`projectconf` to change
+a value. Possible values:
 
 * ``qio``
 * ``qout``
@@ -60,10 +60,49 @@ values:
 .. code-block:: ini
 
     [env:myenv]
-    board_flash_mode = qio
+    board_build.flash_mode = qio
 
-Custom Upload Speed
-~~~~~~~~~~~~~~~~~~~
+Debug Level
+~~~~~~~~~~~
+
+Please use one of the next :ref:`projectconf_build_flags` to change debug level.
+A :ref:`projectconf_build_flags` option could be used only the one time per
+build environment. If you need to specify more flags, please separate them
+with a new line or space.
+
+Actual information is available in `Arduino for ESP32 Board Manifest <https://github.com/espressif/arduino-esp32/blob/master/boards.txt#L80>`_.
+Please scroll to ``esp32.menu.DebugLevel`` section.
+
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    framework = arduino
+
+    ;;;;; Possible options ;;;;;;
+
+    ; None
+    build_flags = -DCORE_DEBUG_LEVEL=0
+
+    ; Error
+    build_flags = -DCORE_DEBUG_LEVEL=1
+
+    ; Warn
+    build_flags = -DCORE_DEBUG_LEVEL=2
+
+    ; Info
+    build_flags = -DCORE_DEBUG_LEVEL=3
+
+    ; Debug
+    build_flags = -DCORE_DEBUG_LEVEL=4
+
+    ; Verbose
+    build_flags = -DCORE_DEBUG_LEVEL=5
+
+Upload Speed
+~~~~~~~~~~~~
 
 You can set custom upload speed using  :ref:`projectconf_upload_speed` option
 from :ref:`projectconf`
@@ -73,10 +112,73 @@ from :ref:`projectconf`
     [env:myenv]
     upload_speed = 9600
 
+Enable C++ exceptions
+~~~~~~~~~~~~~~~~~~~~~
+
+Please add ``-D PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS`` to :ref:`projectconf_build_flags`
+of :ref:`projectconf` to enable C++ exceptions for :ref:`framework_espidf`.
+
+See `project example <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-exceptions>`_.
+
+
+Partition Tables
+~~~~~~~~~~~~~~~~
+You can create a custom partitions table (CSV) following `ESP32 Partition Tables <http://esp-idf.readthedocs.io/en/v3.0/api-guides/partition-tables.html>`_
+documentation. PlatformIO uses **default partition tables** depending on a
+:ref:`projectconf_env_framework` type:
+
+* `"default.csv" for Arduino <https://github.com/espressif/arduino-esp32/blob/master/tools/partitions/default.csv>`_
+* `"partitions_singleapp.csv" for ESP-IDF <https://github.com/espressif/esp-idf/blob/master/components/partition_table/partitions_singleapp.csv>`_
+
+To override default table please use ``board_build.partitions`` option in
+:ref:`projectconf`.
+
+.. warning::
+    SPIFFS partition **MUST** have configured "Type" as "data" and "SubType"
+    as "spiffs". For example, ``spiffs, data, spiffs, 0x291000, 1M,``
+
+Examples:
+
+.. code-block:: ini
+
+    ; 1) A "partitions_custom.csv" in the root of project directory
+    [env:custom_table]
+    board_build.partitions = partitions_custom.csv
+
+    ; 2) Switch between built-in tables
+    ; https://github.com/espressif/arduino-esp32/tree/master/tools/partitions
+    ; https://github.com/espressif/esp-idf/tree/master/components/partition_table
+    [env:custom_builtin_table]
+    board_build.partitions = no_ota.csv
+
+Uploading files to file system SPIFFS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Initialize project :ref:`cmd_init` (if you have not initialized yet)
+2. Create ``data`` folder (it should be on the same level as ``src`` folder)
+   and put files here. Also, you can specify own location for
+   :ref:`projectconf_pio_data_dir`
+3. Run ``buildfs`` or ``uploadfs`` target using
+   :option:`platformio run --target` command.
+
+To upload SPIFFS image using OTA update please specify ``upload_port`` /
+``--upload-port`` as IP address or mDNS host name (ending with the ``*.local``).
+
+Examples:
+
+* `SPIFFS for Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/SPIFFS/examples>`_
+* `SPIFFS for ESP-IDF <https://github.com/espressif/esp-idf/tree/master/examples/storage/spiffs>`_
+
+
 Over-the-Air (OTA) update
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are 2 options:
+Demo code for:
+
+* `Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA/examples/BasicOTA>`_
+* `ESP-IDF <https://github.com/espressif/esp-idf/tree/master/examples/system/ota>`_
+
+There are 2 options how to upload firmware OTA:
 
 * Directly specify :option:`platformio run --upload-port` in command line
 
@@ -94,7 +196,7 @@ There are 2 options:
 For example,
 
 * ``platformio run -t upload --upload-port 192.168.0.255``
-* ``platformio run -t upload --upload-port myesp8266.local``
+* ``platformio run -t upload --upload-port myesp32.local``
 
 Authentication and upload options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -105,11 +207,11 @@ You can pass additional options/flags to OTA uploader using
 .. code-block:: ini
 
     [env:myenv]
-    upload_flags = --port=8266
+    upload_flags = --port=3232
 
 Available flags
 
-* ``--port=ESP_PORT`` ESP8266 OTA Port. Default 8266
+* ``--port=ESP_PORT`` ESP32 OTA Port. Default 3232
 * ``--auth=AUTH`` Set authentication password
 * ``--spiffs`` Use this option to transmit a SPIFFS image and do not flash
   the module
@@ -122,16 +224,16 @@ For the full list with available options please run
 
     Usage: espota.py [options]
 
-    Transmit image over the air to the esp8266 module with OTA support.
+    Transmit image over the air to the esp32 module with OTA support.
 
     Options:
       -h, --help            show this help message and exit
 
       Destination:
         -i ESP_IP, --ip=ESP_IP
-                            ESP8266 IP Address.
+                            ESP32 IP Address.
         -p ESP_PORT, --port=ESP_PORT
-                            ESP8266 ota Port. Default 8266
+                            ESP32 ota Port. Default 3232
 
       Authentication:
         -a AUTH, --auth=AUTH

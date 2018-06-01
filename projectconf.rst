@@ -86,7 +86,7 @@ described below.
         OneWire
 
     ; Serial Monitor options
-    monitor_baud = 115200
+    monitor_speed = 115200
 
     ; Unit Testing options
     test_ignore = test_desktop

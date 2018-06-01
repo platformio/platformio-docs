@@ -198,7 +198,7 @@ option.
 
 Set baud rate, default ``9600``.
 
-Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_baud`
+Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_speed`
 option.
 
 .. option::
@@ -288,6 +288,20 @@ default ``20`` (DEC)
     ---quiet
 
 Diagnostics: suppress non-error messages, default ``Off``
+
+.. option::
+    -d, --project-dir
+
+Specify the path to project directory. By default, ``--project-dir`` is equal
+to current working directory (``CWD``).
+
+.. option::
+    -e, --environment
+
+Process specified environments.
+
+You can also specify which environments should be processed by default using
+:ref:`projectconf_pio_env_default` option from :ref:`projectconf`.
 
 Examples
 ~~~~~~~~

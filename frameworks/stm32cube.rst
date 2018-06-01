@@ -451,7 +451,7 @@ You do not need to use/buy external debugger.
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32L053R8T6
-      - 48MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - ``nucleo_l073rz``
@@ -1462,7 +1462,7 @@ ST
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32L053R8T6
-      - 48MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - ``nucleo_l073rz``
