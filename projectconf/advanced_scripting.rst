@@ -114,10 +114,16 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
 .. code-block:: python
 
-    Import("env")
+    Import("env", "projenv")
+
+    # access to global build environment
+    print env
+
+    # access to project build environment (is used source files in "src" folder)
+    print projenv
 
     #
-    # Dump build environment (for debug)
+    # Dump build environment (for debug purpose)
     # print env.Dump()
     #
 
