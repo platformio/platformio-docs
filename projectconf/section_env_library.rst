@@ -183,7 +183,7 @@ Example:
 Library compatibility mode allows to control strictness of Library Dependency
 Finder. More details :ref:`ldf_compat_mode`.
 
-By default, this value is set to ``lib_compat_mode = 1`` and means that LDF
+By default, this value is set to ``lib_compat_mode = soft`` and means that LDF
 will check only for framework compatibility.
 
 Example:
@@ -191,7 +191,7 @@ Example:
 .. code-block:: ini
 
     [env:myenv]
-    lib_compat_mode = 1
+    lib_compat_mode = soft
 
 .. _projectconf_lib_archive:
 
