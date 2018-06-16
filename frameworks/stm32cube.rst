@@ -634,6 +634,14 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F407VET6``
+      - `STM32F407VE (192k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f407ve.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - ``maple``
       - `Maple <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -950,6 +958,14 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F407VET6``
+      - `STM32F407VE (192k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f407ve.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
 
 LeafLabs
 ~~~~~~~~

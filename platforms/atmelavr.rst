@@ -152,8 +152,15 @@ Adafruit
       - 8MHz
       - 28KB
       - 2.50KB
+    * - ``feather328p``
+      - `Adafruit Feather 328P <https://www.adafruit.com/product/3458?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
     * - ``feather32u4``
-      - `Adafruit Feather <https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/?utm_source=platformio&utm_medium=docs>`_
+      - `Adafruit Feather 32u4 <https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/?utm_source=platformio&utm_medium=docs>`_
       - No
       - ATMEGA32U4
       - 8MHz
@@ -173,6 +180,20 @@ Adafruit
       - 8MHz
       - 8KB
       - 512B
+    * - ``itsybitsy32u4_3V``
+      - `Adafruit ItsyBitsy 3V/8MHz <https://www.adafruit.com/product/3675?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - ``itsybitsy32u4_5V``
+      - `Adafruit ItsyBitsy 5V/16MHz <https://www.adafruit.com/product/3677?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
     * - ``metro``
       - `Adafruit Metro <https://www.adafruit.com/products/2466?utm_source=platformio&utm_medium=docs>`_
       - No

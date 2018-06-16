@@ -83,7 +83,7 @@ nav {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px;
   font-size: 14px;
 }
 .nav > li > a:hover,
