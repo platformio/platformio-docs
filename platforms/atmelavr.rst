@@ -712,6 +712,13 @@ Atmel
       - 8MHz
       - 8KB
       - 512B
+    * - ``usbasp``
+      - `USBasp stick <https://www.fischl.de/usbasp/?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - ATMEGA8
+      - 12MHz
+      - 8KB
+      - 1KB
 
 BQ
 ~~
