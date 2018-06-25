@@ -59,7 +59,7 @@ A registration is **FREE**.
 Tutorials
 ---------
 
-* `[VIDEO OVERVIEW] ThingForward - Intro to PIO Unified Debugger using ARM mbed OS and PlatformIO IDE for VSCode <https://www.youtube.com/watch?v=GtlsW3FDN3E>`_
+* `[VIDEO] ThingForward - Intro to PIO Unified Debugger using ARM mbed OS and PlatformIO IDE for VSCode <https://www.youtube.com/watch?v=GtlsW3FDN3E>`_
 * :ref:`tutorial_stm32cube_debugging_unit_testing`
 
 Configuration
