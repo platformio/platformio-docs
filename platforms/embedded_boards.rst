@@ -211,7 +211,7 @@ Adafruit
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``flora8``
       - `Adafruit Flora <http://www.adafruit.com/product/659?utm_source=platformio&utm_medium=docs>`_
@@ -330,7 +330,7 @@ Aiyarafun
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Alorium Technology
@@ -422,7 +422,7 @@ April Brother
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Arduboy
@@ -1283,7 +1283,7 @@ DFRobot
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 DOIT
@@ -1306,7 +1306,7 @@ DOIT
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Delta
@@ -1588,7 +1588,7 @@ Dongsen Technology
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Dwengo
@@ -1642,7 +1642,7 @@ DycodeX
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 ESP32vn
@@ -1665,7 +1665,7 @@ ESP32vn
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 ESPert
@@ -1742,7 +1742,7 @@ Electronic SweetPeas
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Elektor
@@ -1919,8 +1919,8 @@ Espressif
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
       - 4MB
+      - 288KB
     * - ``esp01``
       - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -1959,7 +1959,7 @@ Espressif
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``esp8285``
       - `Generic ESP8285 Module <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
@@ -1999,7 +1999,7 @@ Espressif
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``wifinfo``
       - `WifInfo <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
@@ -2384,7 +2384,7 @@ Heltec Automation
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``heltec_wifi_lora_32``
       - `Heltec WIFI LoRa 32 <http://www.heltec.cn?utm_source=platformio&utm_medium=docs>`_
@@ -2392,7 +2392,7 @@ Heltec Automation
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Hornbill
@@ -2415,7 +2415,7 @@ Hornbill
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
@@ -2423,7 +2423,7 @@ Hornbill
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Intel
@@ -2469,7 +2469,7 @@ IntoRobot
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 JKSoft
@@ -2670,7 +2670,7 @@ M5Stack
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 MH-ET Live
@@ -2693,7 +2693,7 @@ MH-ET Live
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
@@ -2701,7 +2701,7 @@ MH-ET Live
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 MXChip
@@ -2770,7 +2770,7 @@ MakerAsia
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Maxim
@@ -3053,7 +3053,7 @@ Microduino
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``microduino32_flash``
       - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
@@ -3335,7 +3335,7 @@ NodeMCU
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``nodemcuv2``
       - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
@@ -3366,7 +3366,7 @@ Noduino
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 16MB
       - 288KB
 
 Nordic
@@ -3444,7 +3444,7 @@ OLIMEX
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
@@ -3452,7 +3452,7 @@ OLIMEX
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 OSHChip
@@ -3529,7 +3529,7 @@ Onehorse
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 OpenBCI
@@ -5069,7 +5069,7 @@ SparkFun Electronics
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 SpellFoundry
@@ -5366,7 +5366,7 @@ ThaiEasyElec
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``espinotee``
       - `ThaiEasyElec ESPino <http://www.thaieasyelec.com/products/wireless-modules/wifi-modules/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
@@ -5537,7 +5537,7 @@ WEMOS
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
@@ -5545,7 +5545,7 @@ WEMOS
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 WIZNet
@@ -5661,7 +5661,7 @@ Widora
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 16MB
       - 288KB
 
 Xilinx
@@ -5886,7 +5886,7 @@ u-blox
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 2MB
       - 288KB
     * - ``ublox_c030_n211``
       - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/?utm_source=platformio&utm_medium=docs>`_

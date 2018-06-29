@@ -59,8 +59,8 @@ You do not need to use/buy external debugger.
       - :ref:`debugging_tool_ft2232h` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
       - 4MB
+      - 288KB
 
 
 External tools
@@ -87,7 +87,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
@@ -95,7 +95,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
@@ -103,7 +103,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``esp32doit-devkit-v1``
       - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/?utm_source=platformio&utm_medium=docs>`_
@@ -111,7 +111,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907?utm_source=platformio&utm_medium=docs>`_
@@ -119,7 +119,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``esp32vn-iot-uno``
       - `ESP32vn IoT Uno <https://esp32.vn/?utm_source=platformio&utm_medium=docs>`_
@@ -127,7 +127,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``espectro32``
       - `ESPectro32 <https://shop.makestro.com/product/espectro32?utm_source=platformio&utm_medium=docs>`_
@@ -135,7 +135,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``espino32``
       - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
@@ -143,7 +143,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``featheresp32``
       - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405?utm_source=platformio&utm_medium=docs>`_
@@ -151,7 +151,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``firebeetle32``
       - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com?utm_source=platformio&utm_medium=docs>`_
@@ -159,7 +159,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``hornbill32dev``
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
@@ -167,7 +167,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
@@ -175,7 +175,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``lolin32``
       - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
@@ -183,7 +183,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``mhetesp32devkit``
       - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
@@ -191,7 +191,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
@@ -199,7 +199,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``node32s``
       - `Node32s <http://www.ayarafun.com?utm_source=platformio&utm_medium=docs>`_
@@ -207,7 +207,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``nodemcu-32s``
       - `NodeMCU-32S <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
@@ -215,7 +215,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``pocket_32``
       - `Dongsen Tech Pocket 32 <http://dong-sen.com?utm_source=platformio&utm_medium=docs>`_
@@ -223,7 +223,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
@@ -231,7 +231,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 
@@ -279,7 +279,7 @@ Adafruit
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Aiyarafun
@@ -302,7 +302,7 @@ Aiyarafun
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 April Brother
@@ -325,7 +325,7 @@ April Brother
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 DFRobot
@@ -348,7 +348,7 @@ DFRobot
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 DOIT
@@ -371,7 +371,7 @@ DOIT
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Dongsen Technology
@@ -394,7 +394,7 @@ Dongsen Technology
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 DycodeX
@@ -417,7 +417,7 @@ DycodeX
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 ESP32vn
@@ -440,7 +440,7 @@ ESP32vn
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Electronic SweetPeas
@@ -463,7 +463,7 @@ Electronic SweetPeas
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Espressif
@@ -486,15 +486,15 @@ Espressif
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
       - 4MB
+      - 288KB
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``pico32``
       - `ESP32 Pico Kit <http://esp-idf.readthedocs.io/en/latest/get-started/get-started-pico-kit.html?utm_source=platformio&utm_medium=docs>`_
@@ -502,7 +502,7 @@ Espressif
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Heltec Automation
@@ -525,7 +525,7 @@ Heltec Automation
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``heltec_wifi_lora_32``
       - `Heltec WIFI LoRa 32 <http://www.heltec.cn?utm_source=platformio&utm_medium=docs>`_
@@ -533,7 +533,7 @@ Heltec Automation
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Hornbill
@@ -556,7 +556,7 @@ Hornbill
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
@@ -564,7 +564,7 @@ Hornbill
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 IntoRobot
@@ -587,7 +587,7 @@ IntoRobot
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 M5Stack
@@ -610,7 +610,7 @@ M5Stack
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 MH-ET Live
@@ -633,7 +633,7 @@ MH-ET Live
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
@@ -641,7 +641,7 @@ MH-ET Live
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 MakerAsia
@@ -664,7 +664,7 @@ MakerAsia
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Microduino
@@ -687,7 +687,7 @@ Microduino
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 NodeMCU
@@ -710,7 +710,7 @@ NodeMCU
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Noduino
@@ -733,7 +733,7 @@ Noduino
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 16MB
       - 288KB
 
 OLIMEX
@@ -756,7 +756,7 @@ OLIMEX
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
@@ -764,7 +764,7 @@ OLIMEX
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Onehorse
@@ -787,7 +787,7 @@ Onehorse
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 SparkFun Electronics
@@ -810,7 +810,7 @@ SparkFun Electronics
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 ThaiEasyElec
@@ -833,7 +833,7 @@ ThaiEasyElec
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 WEMOS
@@ -856,7 +856,7 @@ WEMOS
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
@@ -864,7 +864,7 @@ WEMOS
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 4MB
       - 288KB
 
 Widora
@@ -887,7 +887,7 @@ Widora
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 16MB
       - 288KB
 
 u-blox
@@ -910,5 +910,5 @@ u-blox
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
+      - 2MB
       - 288KB
