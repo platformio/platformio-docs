@@ -173,6 +173,15 @@ Examples:
 Over-the-Air (OTA) update
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Using JFrog Bintray (free and secure Cloud solution)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Video and presentation - `swampUP: Over-The-Air (OTA) firmware upgrades for Internet of Things devices with PlatformIO and JFrog Bintray <https://www.slideshare.net/ivankravets/swampup-overtheair-ota-firmware-upgrades-for-internet-of-things-devices-with-platformio-and-jfrog-bintray>`_
+* Demo source code: https://github.com/platformio/bintray-secure-ota
+
+Using built-in Local solution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Demo code for:
 
 * `Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA/examples/BasicOTA>`_
@@ -199,7 +208,7 @@ For example,
 * ``platformio run -t upload --upload-port myesp32.local``
 
 Authentication and upload options
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''
 
 You can pass additional options/flags to OTA uploader using
 ``upload_flags`` option in :ref:`projectconf`
