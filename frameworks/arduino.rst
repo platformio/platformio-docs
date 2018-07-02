@@ -85,7 +85,7 @@ You do not need to use/buy external debugger.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``mxchip_az3166``
       - `Microsoft Azure IoT Development Kit (MXChip AZ3166) <https://microsoft.github.io/azure-iot-developer-kit/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -321,7 +321,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -329,7 +329,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -337,7 +337,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp32doit-devkit-v1``
       - `DOIT ESP32 DEVKIT V1 <http://www.doit.am/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -345,7 +345,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -353,7 +353,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp32vn-iot-uno``
       - `ESP32vn IoT Uno <https://esp32.vn/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -361,7 +361,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``espectro32``
       - `ESPectro32 <https://shop.makestro.com/product/espectro32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -369,7 +369,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``espino32``
       - `ESPino32 <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -377,7 +377,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``featheresp32``
       - `Adafruit ESP32 Feather <https://www.adafruit.com/product/3405?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -385,7 +385,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``firebeetle32``
       - `FireBeetle-ESP32 <https://dfrobotblog.wordpress.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -393,7 +393,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``genericSTM32F103C8``
       - `STM32F103C8 (20k RAM. 64k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -529,7 +529,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -537,7 +537,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``lolin32``
       - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -545,7 +545,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``macchina2``
       - `Macchina M2 <https://www.macchina.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -593,7 +593,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -601,7 +601,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``microduino32_flash``
       - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -681,7 +681,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``nodemcu-32s``
       - `NodeMCU-32S <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -689,7 +689,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``oshchip``
       - `OSHChip <http://oshchip.org/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -705,7 +705,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``rfduino``
       - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -833,7 +833,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``zeroUSB``
       - `Arduino Zero (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -1047,7 +1047,7 @@ Adafruit
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``flora8``
       - `Adafruit Flora <http://www.adafruit.com/product/659?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1166,7 +1166,7 @@ Aiyarafun
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Alorium Technology
 ~~~~~~~~~~~~~~~~~~
@@ -1235,7 +1235,7 @@ April Brother
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Arduboy
 ~~~~~~~
@@ -2002,7 +2002,7 @@ DFRobot
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 DOIT
 ~~~~
@@ -2025,7 +2025,7 @@ DOIT
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Delta
 ~~~~~
@@ -2291,7 +2291,7 @@ Dongsen Technology
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Dwengo
 ~~~~~~
@@ -2345,7 +2345,7 @@ DycodeX
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 ESP32vn
 ~~~~~~~
@@ -2368,7 +2368,7 @@ ESP32vn
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 ESPert
 ~~~~~~
@@ -2445,7 +2445,7 @@ Electronic SweetPeas
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Elektor
 ~~~~~~~
@@ -2537,7 +2537,7 @@ Espressif
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp01``
       - `Espressif Generic ESP8266 ESP-01 512k <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -2577,7 +2577,7 @@ Espressif
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp8285``
       - `Generic ESP8285 Module <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -2617,7 +2617,7 @@ Espressif
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``wifinfo``
       - `WifInfo <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -2809,6 +2809,29 @@ Generic
       - 502.23KB
       - 128KB
 
+Hardkernel
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``odroid_esp32``
+      - `ODROID-GO <https://www.hardkernel.com/main/products/prdt_info.php?g_code=G152875062626&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
+
 Heltec
 ~~~~~~
 
@@ -2853,7 +2876,7 @@ Heltec Automation
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``heltec_wifi_lora_32``
       - `Heltec WIFI LoRa 32 <http://www.heltec.cn?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -2861,7 +2884,7 @@ Heltec Automation
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Hornbill
 ~~~~~~~~
@@ -2884,7 +2907,7 @@ Hornbill
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -2892,7 +2915,7 @@ Hornbill
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Intel
 ~~~~~
@@ -2938,7 +2961,7 @@ IntoRobot
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 LeafLabs
 ~~~~~~~~
@@ -3093,7 +3116,7 @@ M5Stack
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 MH-ET Live
 ~~~~~~~~~~
@@ -3116,7 +3139,7 @@ MH-ET Live
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -3124,7 +3147,7 @@ MH-ET Live
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 MXChip
 ~~~~~~
@@ -3193,7 +3216,7 @@ MakerAsia
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Mcudude
 ~~~~~~~
@@ -3382,7 +3405,7 @@ Microduino
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``microduino32_flash``
       - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -3452,7 +3475,7 @@ NodeMCU
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``nodemcuv2``
       - `NodeMCU 1.0 (ESP-12E Module) <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -3483,7 +3506,7 @@ Noduino
       - ESP32
       - 240MHz
       - 16MB
-      - 288KB
+      - 320KB
 
 Nordic
 ~~~~~~
@@ -3553,7 +3576,7 @@ OLIMEX
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -3561,7 +3584,7 @@ OLIMEX
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 OSHChip
 ~~~~~~~
@@ -3638,7 +3661,7 @@ Onehorse
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 OpenBCI
 ~~~~~~~
@@ -4419,7 +4442,7 @@ SparkFun Electronics
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 SpellFoundry
 ~~~~~~~~~~~~
@@ -4582,7 +4605,7 @@ ThaiEasyElec
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``espinotee``
       - `ThaiEasyElec ESPino <http://www.thaieasyelec.com/products/wireless-modules/wifi-modules/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -4730,7 +4753,7 @@ WEMOS
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -4738,7 +4761,7 @@ WEMOS
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Waveshare
 ~~~~~~~~~
@@ -4815,7 +4838,7 @@ Widora
       - ESP32
       - 240MHz
       - 16MB
-      - 288KB
+      - 320KB
 
 chipKIT
 ~~~~~~~
@@ -4993,7 +5016,7 @@ u-blox
       - ESP32
       - 240MHz
       - 2MB
-      - 288KB
+      - 320KB
     * - ``ublox_evk_nina_b1``
       - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF52 <platform_nordicnrf52>`

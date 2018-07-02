@@ -245,7 +245,7 @@ MakerAsia
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 NodeMCU
 ~~~~~~~

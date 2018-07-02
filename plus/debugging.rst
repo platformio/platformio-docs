@@ -719,7 +719,7 @@ Adafruit
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -742,7 +742,7 @@ Aiyarafun
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Arduino
 ~~~~~~~
@@ -1047,7 +1047,7 @@ DFRobot
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 DOIT
 ~~~~
@@ -1070,7 +1070,7 @@ DOIT
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Delta
 ~~~~~
@@ -1155,7 +1155,7 @@ Dongsen Technology
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 DycodeX
 ~~~~~~~
@@ -1178,7 +1178,7 @@ DycodeX
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 ESP32vn
 ~~~~~~~
@@ -1201,7 +1201,7 @@ ESP32vn
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Elektor Labs
 ~~~~~~~~~~~~
@@ -1309,7 +1309,7 @@ Espressif
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp32dev``
       - `Espressif ESP32 Dev Module <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -1317,7 +1317,7 @@ Espressif
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Freescale
 ~~~~~~~~~
@@ -1594,7 +1594,7 @@ Hornbill
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``hornbill32minima``
       - `Hornbill ESP32 Minima <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -1602,7 +1602,7 @@ Hornbill
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 JKSoft
 ~~~~~~
@@ -1695,7 +1695,7 @@ MH-ET Live
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``mhetesp32minikit``
       - `MH ET LIVE ESP32MiniKit <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -1703,7 +1703,7 @@ MH-ET Live
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 MXChip
 ~~~~~~
@@ -2053,7 +2053,7 @@ NodeMCU
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Nordic
 ~~~~~~
@@ -2131,7 +2131,7 @@ OLIMEX
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``esp32-gateway``
       - `OLIMEX ESP32-GATEWAY <https://www.olimex.com/Products/IoT/ESP32-GATEWAY/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -2139,7 +2139,7 @@ OLIMEX
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 OSHChip
 ~~~~~~~
@@ -3020,7 +3020,7 @@ SparkFun Electronics
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 Switch Science
 ~~~~~~~~~~~~~~
@@ -3247,7 +3247,7 @@ ThaiEasyElec
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 VNG
 ~~~
@@ -3293,7 +3293,7 @@ WEMOS
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -3301,7 +3301,7 @@ WEMOS
       - ESP32
       - 240MHz
       - 4MB
-      - 288KB
+      - 320KB
 
 WIZNet
 ~~~~~~
