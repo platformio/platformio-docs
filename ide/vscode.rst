@@ -174,9 +174,7 @@ command:
         "tasks": [
             {
                 "type": "PlatformIO",
-                "args": [
-                    "run"
-                ],
+                "task": "Monitor",
                 "problemMatcher": [
                     "$platformio"
                 ],
@@ -188,6 +186,37 @@ command:
     }
 
 See more options in `official VSCode documentation <https://code.visualstudio.com/docs/editor/tasks#_output-behavior>`__.
+
+Custom Tasks
+------------
+
+Custom tasks can be added to ``tasks.json`` file located in ``.vscode`` folder
+in the root of project. Please read official documentation `Tasks in VSCode <https://code.visualstudio.com/docs/editor/tasks#vscode>`_.
+
+This simple example demonstrates a custom build process in verbose mode.
+There are a lot of other commands, please read more about :ref:`piocore` and
+its commands (:ref:`userguide`).
+
+  .. code-block:: json
+
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "type": "shell",
+                "command": "platformio",
+                "args": [
+                    "run",
+                    "--verbose"
+                ],
+                "problemMatcher": [
+                    "$platformio"
+                ],
+                "label": "PlatformIO: Verbose Build"
+            }
+        ]
+    }
+
 
 Serial Port Monitor
 -------------------
@@ -269,6 +298,12 @@ is `release`. Possible values are ``release`` or ``pre-debug``.
 
 To eliminate a full project rebuilding before debugging, please change this
 value to ``pre-debug``.
+
+``platformio-ide.autoCloseSerialMonitor``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Automatically close :ref:`cmd_device_monitor` before uploading/testing,
+default value is ``true``.
 
 Known issues
 ------------

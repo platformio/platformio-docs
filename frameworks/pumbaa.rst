@@ -68,5 +68,5 @@ MakerAsia
       - No
       - ESP32
       - 240MHz
-      - 1.25MB
-      - 288KB
+      - 4MB
+      - 320KB

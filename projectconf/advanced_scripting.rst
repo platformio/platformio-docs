@@ -82,10 +82,219 @@ This option can be set by global environment variable
 
 Take a look at the multiple snippets/answers for the user questions:
 
-  - `#462 Split C/C++ build flags <https://github.com/platformio/platformio-core/issues/462#issuecomment-172667342>`_
   - `#365 Extra configuration for ESP8266 uploader <https://github.com/platformio/platformio-core/issues/365#issuecomment-163695011>`_
-  - `#351 Specific reset method for ESP8266 <https://github.com/platformio/platformio-core/issues/351#issuecomment-161789165>`_
   - `#247 Specific options for avrdude <https://github.com/platformio/platformio-core/issues/247#issuecomment-118169728>`_.
+
+
+Custom options in ``platformio.ini``
+''''''''''''''''''''''''''''''''''''
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:my_env]
+    platform = ...
+    extra_scripts = extra_script.py
+
+    custom_option1 = value1
+    custom_option2 = value2
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    from platformio import util
+
+    config = util.load_project_config()
+
+    value1 = config.get("my_env", "custom_option1")
+    value2 = config.get("my_env", "custom_option2")
+
+Split C/C++ build flags
+'''''''''''''''''''''''
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:my_env]
+    platform = ...
+    extra_scripts = extra_script.py
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    Import("env")
+
+    # General options that are passed to the C and C++ compilers
+    env.Append(CCFLAGS=["flag1", "falg2"])
+
+    # General options that are passed to the C compiler (C only; not C++).
+    env.Append(CFLAGS=["flag1", "flag2"])
+
+    # General options that are passed to the C++ compiler
+    env.Append(CXXFLAGS=["flag1", "flag2"])
+
+Extra Linker Flags without ``-Wl,`` prefix
+''''''''''''''''''''''''''''''''''''''''''
+
+Sometimes you need to pass extra flags to GCC linker without ``Wl,``. You could
+use :ref:`projectconf_build_flags` option but it will not work. PlatformIO
+will not parse these flags to ``LINKFLAGS`` scope. In this case, simple
+extra script will help:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:env_extra_link_flags]
+    platform = windows_x86
+    extra_scripts = extra_script.py
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    Import("env")
+
+    #
+    # Dump build environment (for debug)
+    # print env.Dump()
+    #
+
+    env.Append(
+      LINKFLAGS=[
+          "-static",
+          "-static-libgcc",
+          "-static-libstdc++"
+      ]
+    )
+
+Custom upload tool
+''''''''''''''''''
+
+You can override default upload command of development platform using extra
+script. There is the common environment variable ``UPLOADCMD`` which PlatformIO
+Build System will handle when you :ref:`platformio run -t upload <cmd_run>`.
+
+Please note that some development platforms can have more than 1 upload command.
+For example, :ref:`platform_atmelavr` has ``UPLOADHEXCMD``
+(firmware) and ``UPLOADEEPCMD`` (EEPROM data).
+
+See examples below:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:my_custom_upload_tool]
+    platform = ...
+    # place it into the root of project or use full path
+    extra_scripts = extra_script.py
+    upload_protocol = custom
+    upload_flags = -arg1 -arg2 -argN
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    Import("env")
+
+    # please keep $SOURCE variable, it will be replaced with a path to firmware
+
+    # Generic
+    env.Replace(
+        UPLOADER="executable or path to executable"
+        UPLOADCMD="$UPLOADER $UPLOADERFLAGS $SOURCE"
+    )
+
+    # In-line command with arguments
+    env.Replace(
+        UPLOADCMD="executable -arg1 -arg2 $SOURCE"
+    )
+
+    # Python callback
+    def on_upload(source, target, env):
+        print source, target
+        firmware_path = str(source[0])
+        # do something
+        env.Execute("executable arg1 arg2")
+
+    env.Replace(UPLOADCMD=on_upload)
+
+Upload to Cloud (OTA)
+'''''''''''''''''''''
+
+See project example https://github.com/platformio/bintray-secure-ota
+
+Custom firmware/program name
+''''''''''''''''''''''''''''
+
+Sometime is useful to have a different firmware/program name in
+:ref:`projectconf_pio_build_dir`.
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:env_custom_prog_name]
+    platform = espressif8266
+    board = nodemcuv2
+    framework = arduino
+    build_flags = -D VERSION=13
+    extra_scripts = pre:extra_script.py
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    Import("env")
+
+    my_flags = env.ParseFlags(env['BUILD_FLAGS'])
+    defines = {k: v for (k, v) in my_flags.get("CPPDEFINES")}
+    # print defines
+
+    env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
+
+Custom build target
+'''''''''''''''''''
+
+There is a list with built-in targets which could be processed using
+:option:`platformio run --target` option. You can create unlimited number of
+the own targets and declare custom handlers for them.
+
+Let's create a simple ``ping`` target and process it with
+``platformio run --target ping`` command:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:env_custom_target]
+    platform = ...
+    ...
+    extra_scripts = extra_script.py
+    custom_ping_host = google.com
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    from platformio import util
+    from SCons.Script import AlwaysBuild
+    Import("env")
+
+    config = util.load_project_config()
+    host = config.get("env_custom_target", "custom_ping_host")
+
+    def mytarget_callback(*args, **kwargs):
+        print "Hello PlatformIO!"
+        env.Execute("ping " + host)
+
+
+    AlwaysBuild(env.Alias("ping", "", mytarget_callback))
 
 Before/Pre and After/Post actions
 '''''''''''''''''''''''''''''''''
@@ -114,10 +323,16 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
 .. code-block:: python
 
-    Import("env")
+    Import("env", "projenv")
+
+    # access to global build environment
+    print env
+
+    # access to project build environment (is used source files in "src" folder)
+    print projenv
 
     #
-    # Dump build environment (for debug)
+    # Dump build environment (for debug purpose)
     # print env.Dump()
     #
 
@@ -176,138 +391,3 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
             "$BUILD_DIR/${PROGNAME}.elf", "$BUILD_DIR/${PROGNAME}.hex"
         ]), "Building $BUILD_DIR/${PROGNAME}.hex")
     )
-
-
-Extra Linker Flags without ``-Wl,`` prefix
-''''''''''''''''''''''''''''''''''''''''''
-
-Sometimes you need to pass extra flags to GCC linker without ``Wl,``. You could
-use :ref:`projectconf_build_flags` option but it will not work. PlatformIO
-will not parse these flags to ``LINKFLAGS`` scope. In this case, simple
-extra script will help:
-
-``platformio.ini``:
-
-.. code-block:: ini
-
-    [env:env_extra_link_flags]
-    platform = windows_x86
-    extra_scripts = extra_script.py
-
-``extra_script.py`` (place it near ``platformio.ini``):
-
-.. code-block:: python
-
-    Import('env')
-
-    #
-    # Dump build environment (for debug)
-    # print env.Dump()
-    #
-
-    env.Append(
-      LINKFLAGS=[
-          "-static",
-          "-static-libgcc",
-          "-static-libstdc++"
-      ]
-    )
-
-Custom Uploader
-'''''''''''''''
-
-Example, specify own upload command for :ref:`platform_atmelavr`:
-
-``platformio.ini``:
-
-.. code-block:: ini
-
-    [env:env_custom_uploader]
-    platform = atmelavr
-    extra_scripts = /path/to/extra_script.py
-    custom_option = hello
-
-``extra_script.py``:
-
-.. code-block:: python
-
-    Import('env')
-    from base64 import b64decode
-
-    #
-    # Dump build environment (for debug)
-    # print env.Dump()
-    #
-
-    env.Replace(UPLOADHEXCMD='"$UPLOADER" ' + b64decode(ARGUMENTS.get("CUSTOM_OPTION")) + ' --uploader --flags')
-
-    # uncomment line below to see environment variables
-    # print ARGUMENTS
-
-Custom firmware/program name
-''''''''''''''''''''''''''''
-
-Sometime is useful to have a different firmware/program name in
-:ref:`projectconf_pio_build_dir`.
-
-``platformio.ini``:
-
-.. code-block:: ini
-
-    [env:env_custom_prog_name]
-    platform = espressif8266
-    board = nodemcuv2
-    framework = arduino
-    build_flags = -D VERSION=13
-    extra_scripts = pre:extra_script.py
-
-``extra_script.py``:
-
-.. code-block:: python
-
-    Import("env")
-
-    my_flags = env.ParseFlags(env['BUILD_FLAGS'])
-    defines = {k: v for (k, v) in my_flags.get("CPPDEFINES")}
-    # print defines
-
-    env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
-
-Custom build target
-'''''''''''''''''''
-
-There is a list with built-in targets which could be processed using
-:option:`platformio run --target` option. You can create unlimited number of
-the own targets and declare custom handlers for them.
-
-Let's create a simple ``ping`` target and process it with
-``platformio run --target ping`` command:
-
-``platformio.ini``:
-
-.. code-block:: ini
-
-    [env:env_custom_target]
-    platform = ...
-    ...
-    extra_scripts = extra_script.py
-    custom_ping_host = google.com
-
-``extra_script.py``:
-
-.. code-block:: python
-
-    from base64 import b64decode
-
-    from SCons.Script import ARGUMENTS, AlwaysBuild
-
-    Import("env")
-
-
-    def mytarget_callback(*args, **kwargs):
-        print "Hello PlatformIO!"
-        env.Execute("ping " + b64decode(ARGUMENTS.get("CUSTOM_PING_HOST")))
-
-
-    AlwaysBuild(env.Alias("ping", "", mytarget_callback))
-

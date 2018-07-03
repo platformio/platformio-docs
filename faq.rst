@@ -46,7 +46,7 @@ Bash completion for `platformio` subcommands you need to put into your `.bashrc`
 .. code-block:: bash
 
     eval "$(_PLATFORMIO_COMPLETE=source platformio)"
-    eval "$(_PLATFORMIO_COMPLETE=source pio)"
+    eval "$(_PIO_COMPLETE=source pio)"
 
 ZSH completion
 ''''''''''''''
@@ -57,7 +57,7 @@ To enable ``zsh`` completion please run these commands:
 
     autoload bashcompinit && bashcompinit
     eval "$(_PLATFORMIO_COMPLETE=source platformio)"
-    eval "$(_PLATFORMIO_COMPLETE=source pio)"
+    eval "$(_PIO_COMPLETE=source pio)"
 
 .. note::
 
@@ -200,11 +200,10 @@ The final ``Demo.cpp``:
     void someFunction(int num) {
     }
 
-Firmware memory size explanation: text, data and bss
-----------------------------------------------------
+Program Memory Usage
+--------------------
 
-If project builds successfully, PlatformIO calculates firmware/program memory
-size by segments:
+PlatformIO calculates firmware/program memory usage based on the next segments:
 
 :``.text``:
 
@@ -234,35 +233,13 @@ size by segments:
      For instance, a variable defined as ``static int i;`` would be contained
      in the BSS segment.
 
+The rough calculation could be done as:
 
-The rough calculation for MCU could be done as:
+* PROGRAM (Flash) = ``.text`` + ``.data``
+* DATA (RAM) = ``.bss`` + ``.data``
 
-* Flash data = ``.text`` + ``.data``
-* RAM data = ``.bss``
-
-For example, build log by :ref:`platform_espressif8266` project:
-
-.. code::
-
-    ...
-    PLATFORM: Espressif 8266 > NodeMCU 1.0 (ESP-12E Module)
-    SYSTEM: ESP8266 80MHz 80KB RAM (4MB Flash)
-    ...
-    Compiling .pioenvs/nodemcuv2/src/...
-    ...
-    Linking .pioenvs/nodemcuv2/firmware.elf
-    Building .pioenvs/nodemcuv2/firmware.bin
-    Calculating size .pioenvs/nodemcuv2/firmware.elf
-    text       data     bss     dec     hex filename
-    283399     4816   30264  318479   4dc0f .pioenvs/nodemcuv2/firmware.elf
-
-
-1. All numbers are in bytes
-2. ``dec`` is equal to "``.text`` + ``.data`` + ``.bss``"
-3. ``hex`` is the ``dec`` in hexadecimal format
-
-* Flash data = ``.text`` + ``.data`` = 288215 Bytes = 281 KB (maximum is 4 MB)
-* RAM data = ``.bss`` = 30264 Bytes = 30 KB (maximum is 80 KB)
+If you need to print **all memory sections and addresses**, please use
+:option:`platformio run --verbose` command.
 
 Recommended for reading:
 
@@ -352,7 +329,7 @@ Please open system Terminal and type
 .. code-block:: bash
 
     # Recommended
-    sudo curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules > /etc/udev/rules.d/99-platformio-udev.rules
+    curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules | sudo tee /etc/udev/rules.d/99-platformio-udev.rules
 
     # OR, manually download and copy this file to destination folder
     sudo cp 99-platformio-udev.rules /etc/udev/rules.d/99-platformio-udev.rules

@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ pathto('_static/css/extra.css', 1) }}" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="http://dl.platformio.org/misc/abplus.js"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
 <script>
   var navBarHTML = '\
 <div>\
@@ -30,54 +30,55 @@
         <ul class="nav navbar-nav">\
           <li><a href="https://platformio.org/get-started"><i class="fa fa-rocket fa-lg"></i>Get Started</a></li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>\
-              Products <span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-heart fa-lg"></i>Open Source<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cogs fa-lg"></i> PlatformIO IDE</a></li>\
-              <li role="menuitem"><a href="http://docs.platformio.org/page/core.html"><i class="fa fa-wrench fa-lg"></i> PlatformIO Core</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="http://docs.platformio.org/page/core.html"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="http://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe fa-lg"></i> PIO Remote&trade;</a></li>\
-              <li role="menuitem"><a href="http://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug fa-lg"></i> PIO Unified Debugger</a></li>\
-              <li role="menuitem"><a href="http://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece fa-lg"></i> PIO Unit Testing</a></li>\
+              <li role="menuitem"><a href="http://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/pricing#solution-pio-delivery"><i class="fa fa-download fa-lg"></i> PIO Delivery&trade;</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/pricing#solution-cloud-builder"><i class="fa fa-cloud fa-lg"></i> Cloud Builder</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="http://docs.platformio.org/page/ide.html"><i class="fa fa-cube"></i>Standalone IDE Integration</a></li>\
+              <li role="menuitem"><a href="http://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="http://docs.platformio.org/page/projectconf/advanced_scripting.html"><i class="fa fa-wrench"></i>Advanced Scripting API</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="http://docs.platformio.org/page/librarymanager/index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions <span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/pricing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>\
+              PIO Plus<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="http://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code fa-lg"></i> Library Management</a></li>\
+              <li role="menuitem"><a href="http://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>PIO Remote&trade;</a></li>\
+              <li role="menuitem"><a href="http://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>PIO Unified Debugger</a></li>\
+              <li role="menuitem"><a href="http://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>PIO Unit Testing</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/pricing#solution-cloud-ide"><i class="fa fa-cube"></i> Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="http://docs.platformio.org/page/ide.html"><i class="fa fa-cube"></i> Standalone IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/pricing#solution-cloud-ide"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="http://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i> Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/pricing#solution-white-labeling"><i class="fa fa-cube"></i>"White Label" IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/pricing#enterprise-features"><i class="fa fa-briefcase"></i>Integration Services</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/pricing#solution-static-project-analysis"><i class="fa fa-bug fa-lg"></i> Static Project Analysis</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/pricing#enterprise-features"><i class="fa fa-certificate"></i>Certification Program</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>\
-              Registry <span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code fa-lg"></i> Libraries</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop fa-lg"></i> Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog fa-lg"></i> Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-gamepad fa-lg"></i> Boards / MCUs</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
             </ul>\
           </li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li><a href="https://platformio.org/pricing"><i class="fa fa-shopping-cart fa-lg"></i>Pricing</a></li>\
           <li class="active"><a href="http://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/contact"><i class="fa fa-envelope fa-lg"></i>Contact</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
         </ul>\
       </div>\
     </nav>\

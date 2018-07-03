@@ -24,13 +24,13 @@ Each variable should have a next format: ``${<section>.<option>}``, where
 ``<section>`` is a value from ``[<section>]`` group, and ``<option>`` is a
 first item from pair ``<option> = value``.
 
-You can inject environment variable using ``env`` as a ``section``. For example,
-``${env.HOME}``, etc.
+You can inject system environment variable using ``sysenv`` as a ``section``.
+For example, ``${sysenv.HOME}``, etc.
 
 * Variable can be applied only for the option's value
 * Multiple variables are allowed
 * The ``platformio`` and ``env`` sections are reserved and could not be used
-  as custom section. Some good section names might be ``common`` or ``global``.
+  as a custom section. Some good section names might be ``common`` or ``global``.
 
 Example:
 
@@ -38,9 +38,9 @@ Example:
 
     [platformio]
     ; Unix
-    lib_extra_dirs = ${env.HOME}/Documents/Arduino/libraries
+    lib_extra_dirs = ${sysenv.HOME}/Documents/Arduino/libraries
     ; Windows
-    lib_extra_dirs = ${env.HOMEDRIVE}${env.HOMEPATH}\Documents\Arduino\libraries
+    lib_extra_dirs = ${sysenv.HOMEDRIVE}${sysenv.HOMEPATH}\Documents\Arduino\libraries
 
     ; You MUST inject these options into [env:] section
     ; using ${common.***} (see below)

@@ -83,7 +83,7 @@ nav {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px;
   font-size: 14px;
 }
 .nav > li > a:hover,
@@ -570,6 +570,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   .navbar .github-corner {
     display: block;
   }
+}
+
+.nav .dropdown .caret {
+  margin-left: 4px;
+}
+
+.nav .dropdown-menu li .fa {
+  margin-right: 5px;
 }
 
 /* TOP Banner */
