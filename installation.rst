@@ -20,7 +20,7 @@ Installation
     to use :ref:`pioide`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    If you need :ref:`piocore` outside PlatformIO IDE, please :ref:`faq_install_shell_commands`.
+    If you need :ref:`piocore` outside PlatformIO IDE, please :ref:`piocore_install_shell_commands`.
 
 **PlatformIO Core** is written in `Python 2.7 <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
@@ -185,6 +185,116 @@ For upgrading ``platformio`` to the latest version:
 
     pip install -U platformio
 
+
+Virtual Environment
+~~~~~~~~~~~~~~~~~~~
+
+PlatformIO Core may be installed into isolated Python environment. This
+method is very good if you don't want to install PlatformIO Core Python's
+dependencies (packages) into your global system scope. :ref:`pioide` uses this
+method to install PlatformIO Core.
+
+Default and recommended environment folder is ":ref:`projectconf_pio_home_dir`/penv".
+You can print **environment folder path** using the next command in your
+system terminal:
+
+.. code-block:: bash
+
+    python -c "import os; print os.path.join(os.getenv('PLATFORMIO_HOME_DIR', os.path.join(os.path.expanduser('~'), '.platformio')), 'penv')"
+
+    ######################## Examples
+    # Windows
+    # C:\Users\UserName\.platformio\penv
+
+    # Linux
+    # ~/.platformio/penv
+    # /home/username/.platformio/penv
+
+    # macOS
+    # ~/.platformio/penv
+    # /Users/username/.platformio/penv
+
+Prerequisites
+'''''''''''''
+
+1.  Please remove existing PlatformIO Core **environment folder** if exists.
+    See above how to get a path.
+
+2.  Please check that you have a valid Python interpreter running a next
+    command in system terminal. Python 2.7.9+ is recommended.
+
+    .. code-block:: bash
+
+        python --version
+
+        # or, for Unix (Linux, Mac), you can use `python2` or `python2.7` aliases
+        python2 --version
+        python2.7 --version
+
+    .. warning::
+        **Windows Users**: If you already tried to install :ref:`pioide` and did
+        not get success, please open system's Control Panel > Installed Programs,
+        and check if PlatformIO IDE tried to install an own isolated Python 2.7
+        version. Please uninstall it. Also is good to uninstall all Python
+        interpreters from a system and install manually the latest Python 2.7
+        using :ref:`faq_install_python` guide.
+
+        Please note, that you can have Python 3 installed in a system too. You
+        will need to specify full path to Python 2.7 when creating a virtual
+        environment (explained below).
+
+3.  Make sure ``virtualenv --help`` command exists in a system, otherwise,
+    please install it manually using ``pip install virtualenv`` or
+    ``pip2 install virtualenv`` command.
+
+    If ``pip`` (Python Package Manager) does not exists, you have to install it
+    manually. See https://pip.pypa.io/en/stable/installing/
+
+Creating
+''''''''
+
+1.  Create a folder which contains all the necessary executables to use the
+    packages that PIO Core would need using ``virtualenv`` command:
+
+    .. code-block:: bash
+
+        virtualenv /path/to/.platformio/penv
+
+        # if you have multiple Python interpreters in a system, please specify
+        # a valid Python 2.7 via ``-p, --python`` option:
+        virtualenv -p python2 /path/to/.platformio/penv
+
+        # or using full path to Python 2.7 interpreter
+        virtualenv --python=/path/to/python2.7 /path/to/.platformio/penv
+
+        # EXAMPLES
+        # Windows
+        virtualenv C:\Users\UserName\.platformio\penv
+        virtualenv --python=C:\Python27\python.exe  C:\Users\UserName\.platformio\penv
+
+        # Unix (Linux, Mac)
+        virtualenv ~/.platformio/penv
+        virtualenv -p python2.7 ~/.platformio/penv
+
+2.  Activate virtual environment
+
+    .. code-block:: bash
+
+        # Windows
+        /path/to/.platformio/penv/Scripts/activate
+
+        # Unix (Linux, Mac)
+        /path/to/.platformio/penv/bin/activate
+
+3.  Install PIO Core into virtual environment
+
+    .. code-block:: bash
+
+        pip install -U platformio
+
+If you plan to use PIO Core commands outside virtual environment, please
+:ref:`piocore_install_shell_commands`.
+
 .. _installation_develop:
 
 Development Version
@@ -219,6 +329,83 @@ To revert to the latest stable version
     pip uninstall platformio
     pip install -U platformio
 
+
+.. _piocore_install_shell_commands:
+
+Install Shell Commands
+----------------------
+
+:ref:`piocore` consists of 2 standalone tools in a system:
+
+* ``platformio`` or ``pio`` (short alias) - :ref:`userguide`
+* ``piodebuggdb`` - alias of :ref:`cmd_debug`
+
+If you have :ref:`pioide` already installed, you do not need to install
+:ref:`piocore` separately. Just link these tools with your shell:
+
+.. contents::
+    :local:
+
+Unix and Unix-like
+~~~~~~~~~~~~~~~~~~
+
+In Unix and Unix-like systems, there are multiple ways to achieve this.
+
+Method 1
+''''''''
+
+You can export PlatformIO executables' directory to the PATH environmental
+variable. This method will allow you to execute ``platformio`` commands from
+any terminal emulator as long as you're logged in as the user PlatformIO is
+installed and configured for.
+
+If you use Bash as your default shell, you can do it by editing either
+``~/.profile`` or ``~/.bash_profile`` and adding the following line:
+
+.. code-block:: shell
+
+    export PATH=$PATH:~/.platformio/penv/bin
+
+If you use Zsh, you can either edit ``~/.zprofile`` and add the code above, or
+for supporting both, Bash and Zsh, you can first edit ``~/.profile`` and add
+the code above, then edit ``~/.zprofile`` and add the following line:
+
+.. code-block:: shell
+
+    emulate sh -c '. ~/.profile'
+
+After everithing's done, just restart your session (log out and log back in) and you're good to go.
+
+If you don't know the difference between the two, check out `this page <https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc>`_.
+
+Method 2
+''''''''
+
+Go to the *PlatformIO* menu → *Settings* → *PlatformIO IDE*, scroll down to the *Custom PATH for `platformio` command* and enter the following: ``~/.platformio/penv/bin``. After you've done that, you'll need to go to the *PlatformIO* menu → *Settings* → *PlatformIO IDE Terminal*, scroll down to the *Toggles* section and uncheck the *Login Shell* checkbox. Finally, restart Atom and check out the result.
+
+Method 3
+''''''''
+
+You can create system-wide symlinks. This method is not recommended if you have multiple users on your computer because the symlinks will be broken for other users and they will get errors while executing PlatformIO commands. If that's not a problem, open your system terminal app and paste these commands (**MAY require** administrator access ``sudo``):
+
+.. code-block:: shell
+
+    ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
+    ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
+    ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
+
+After that, you should be able to run PlatformIO from terminal. No restart is required.
+
+Windows
+~~~~~~~
+
+Please read one of these instructions `How do I set or change the PATH system variable? <https://www.google.com.ua/search?q=how+do+i+set+or+change+the+path+system+variable>`_
+
+You need to edit system environment variable called ``Path`` and append
+``C:\Users\UserName\.platformio\penv\Scripts;`` path in the beginning of a
+list (please replace ``UserName`` with your account name).
+
+
 .. _piocore_uninstall:
 
 Uninstall PIO Core and dependent packages
@@ -234,7 +421,7 @@ Uninstall PIO Core and dependent packages
         # uninstall Homebrew's PIO Core (only macOS users if you installed it via Homebrew before)
         brew uninstall platformio
 
-* Dependent packages, global libraries are installed to ``$HOME/.platformio``
+* Dependent packages, global libraries are installed to :ref:`projectconf_pio_home_dir`
   folder (in user's HOME directory). Just remove it.
 
 Troubleshooting
