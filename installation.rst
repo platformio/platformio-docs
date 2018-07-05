@@ -38,15 +38,7 @@ System requirements
 :Python Interpreter:
 
     Python 2.7 is required. PlatformIO **does not** support Python 3.
-
-    .. attention::
-        **Windows Users**: Please `Download the latest Python 2.7
-        <https://www.python.org/downloads/>`_ and install it.
-        **DON'T FORGET** to select ``Add python.exe to Path`` feature on the
-        "Customize" stage, otherwise Python Package Manager ``pip`` command
-        will not be available.
-
-        .. image:: _static/python-installer-add-path.png
+    See detailed instruction how to :ref:`faq_install_python` for Windows.
 
 :Terminal Application:
 
