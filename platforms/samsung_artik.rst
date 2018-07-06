@@ -45,11 +45,11 @@ You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+~~~~~~~~~~~~~~~~~~~~~
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::

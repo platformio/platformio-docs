@@ -35,11 +35,11 @@ You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
 
-On-Board tools
-~~~~~~~~~~~~~~
+On-Board Debug Tools
+~~~~~~~~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::

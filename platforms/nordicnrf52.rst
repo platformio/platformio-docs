@@ -50,11 +50,11 @@ You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
 
-On-Board tools
-~~~~~~~~~~~~~~
+On-Board Debug Tools
+~~~~~~~~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -111,11 +111,11 @@ You do not need to use/buy external debugger.
       - 64KB
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+~~~~~~~~~~~~~~~~~~~~~
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::

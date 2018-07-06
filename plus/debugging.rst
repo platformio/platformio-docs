@@ -116,7 +116,7 @@ Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability.
 
 .. begin_compatible_platforms_atmel-ice
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_atmelsam`
 
@@ -144,7 +144,7 @@ Black Magic Probe.
 
 .. begin_compatible_platforms_blackmagic
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_atmelsam`
 * :ref:`platform_freescalekinetis`
@@ -174,7 +174,7 @@ computer on one side, and over JTAG (Joint Test Action Group) or SWD
 
 .. begin_compatible_platforms_cmsis-dap
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_atmelsam`
 * :ref:`platform_freescalekinetis`
@@ -208,7 +208,7 @@ communication using JTAG, I2C and SPI on two channels simultaneously.
 
 .. begin_compatible_platforms_ft2232h
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_espressif32`
 * :ref:`platform_riscv`
@@ -241,7 +241,7 @@ J-Link GDB Server.
 
 .. begin_compatible_platforms_jlink
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_atmelsam`
 * :ref:`platform_freescalekinetis`
@@ -263,7 +263,7 @@ FT2232H Mini-Module
 :ref:`projectconf_debug_tool` = ``minimodule``
 
 .. image:: ../_static/debug_probes/minimodule.jpg
-    :target: http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini
+  :target: http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini
 
 The FT2232H Mini Module is a USB to dual channel serial/MPSSE/FIFO interface
 converter module based on the FT2232H USB Hi-Speed IC. The FT2232H handles all
@@ -273,9 +273,31 @@ ideal for development purposes to quickly prove functionality of adding USB
 to a target design.
 `More... <http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini>`__
 
+**Wiring Connections**
+
+.. list-table::
+  :header-rows:  1
+
+  * - FT2232H Mini-Module Pin
+    - Board JTAG Pin
+  * - AD0 [CN2-7]
+    - TCK
+  * - AD1 [CN2-10]
+    - TDI
+  * - AD2 [CN2-9]
+    - TDO
+  * - AD3 [CN2-12]
+    - TMS
+  * - AC2 [CN2-20]
+    - RST
+  * - GND [CN2-2]
+    - GND
+
+`FT2232H Mini-Module Datasheet <http://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_FT2232H_Mini_Module.pdf>`_
+
 .. begin_compatible_platforms_minimodule
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_espressif32`
 
@@ -299,7 +321,7 @@ break points.
 
 .. begin_compatible_platforms_mspdebug
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_timsp430`
 
@@ -319,9 +341,29 @@ Olimex ARM-USB-OCD
 5-9-12VDC device (supported by OpenOCD ARM debugger software).
 `More... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/?utm_source=platformio&utm_medium=docs>`__
 
+**Wiring Connections**
+
+.. list-table::
+  :header-rows:  1
+
+  * - Olimex ARM-USB-OCD Pin
+    - Board JTAG Pin
+  * - 11
+    - TCK
+  * - 5
+    - TDI
+  * - 13
+    - TDO
+  * - 7
+    - TMS
+  * - 3
+    - RST
+  * - 4
+    - GND
+
 .. begin_compatible_platforms_olimex-arm-usb-ocd
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_espressif32`
 
@@ -341,9 +383,29 @@ High-speed 3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power
 supply 5VDC device.
 `More... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs>`__
 
+**Wiring Connections**
+
+.. list-table::
+  :header-rows:  1
+
+  * - Olimex ARM-USB-OCD-H Pin
+    - Board JTAG Pin
+  * - 11
+    - TCK
+  * - 5
+    - TDI
+  * - 13
+    - TDO
+  * - 7
+    - TMS
+  * - 3
+    - RST
+  * - 4
+    - GND
+
 .. begin_compatible_platforms_olimex-arm-usb-ocd-h
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_espressif32`
 
@@ -362,9 +424,29 @@ Olimex ARM-USB-TINY
 Low-cost and high-speed ARM/ESP32 USB JTAG.
 `More... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs>`__
 
+**Wiring Connections**
+
+.. list-table::
+  :header-rows:  1
+
+  * - Olimex ARM-USB-TINY Pin
+    - Board JTAG Pin
+  * - 11
+    - TCK
+  * - 5
+    - TDI
+  * - 13
+    - TDO
+  * - 7
+    - TMS
+  * - 3
+    - RST
+  * - 4
+    - GND
+
 .. begin_compatible_platforms_olimex-jtag-tiny
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_espressif32`
 
@@ -383,9 +465,29 @@ Olimex ARM-USB-TINY-H
 Low-cost and high-speed ARM/ESP32 USB JTAG.
 `More... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY-H/?utm_source=platformio&utm_medium=docs>`__
 
+**Wiring Connections**
+
+.. list-table::
+  :header-rows:  1
+
+  * - Olimex ARM-USB-TINY-H Pin
+    - Board JTAG Pin
+  * - 11
+    - TCK
+  * - 5
+    - TDI
+  * - 13
+    - TDO
+  * - 7
+    - TMS
+  * - 3
+    - RST
+  * - 4
+    - GND
+
 .. begin_compatible_platforms_olimex-arm-usb-tiny-h
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_espressif32`
 * :ref:`platform_riscv`
@@ -406,7 +508,7 @@ the onboard C Series microcontroller.
 
 .. begin_compatible_platforms_ti-icdi
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_titiva`
 
@@ -430,7 +532,7 @@ STM8 or STM32 microcontroller located on an application board.
 
 .. begin_compatible_platforms_stlink
 
-Compatible development platforms:
+**Compatible development platforms:**
 
 * :ref:`platform_nordicnrf51`
 * :ref:`platform_nordicnrf52`
