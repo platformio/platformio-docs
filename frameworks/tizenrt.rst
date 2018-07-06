@@ -56,7 +56,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
     * - ``artik_053``
       - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Samsung ARTIK <platform_samsung_artik>`
-      - :ref:`debugging_tool_custom` (default)
+      - :ref:`debugging_tool_ft2232h` (default)
       - S5JT200
       - 320MHz
       - 8MB

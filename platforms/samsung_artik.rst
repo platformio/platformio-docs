@@ -64,7 +64,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - RAM
     * - ``artik_053``
       - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_custom` (default)
+      - :ref:`debugging_tool_ft2232h` (default)
       - S5JT200
       - 320MHz
       - 8MB
