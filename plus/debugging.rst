@@ -293,6 +293,9 @@ to a target design.
   * - GND [CN2-2]
     - GND
 
+You will also need to connect Vbus [CN3-1] to Vcc [CN3-3] of FT2232H Mini-Module
+to power the FTDI chip.
+
 `FT2232H Mini-Module Datasheet <http://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_FT2232H_Mini_Module.pdf>`_
 
 .. begin_compatible_platforms_minimodule
