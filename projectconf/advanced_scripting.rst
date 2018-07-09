@@ -94,6 +94,9 @@ uses to process a project:
   Please note that :ref:`projectconf_src_build_flags` specified in
   :ref:`projectconf` will be passed to ``projenv`` and not to ``env``.
 
+  .. note::  ``projenv`` is available only for POST-type scripts
+
+
 ``extra_script.py``:
 
 .. code-block:: python
