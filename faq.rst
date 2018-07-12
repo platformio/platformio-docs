@@ -337,7 +337,10 @@ system operations. Other solution is to run :ref:`piocore` from a system termina
        # Change directory to PlatformIO Project where is located "platformio.ini"
        cd path/to/platformio/project
 
-       # Force PlatformIO to install all tools
+       # Force PlatformIO to install PIO Home dependencies
+       platformio home
+
+       # Force PlatformIO to install toolchains
        platformio run --target upload
 
 If "platformio" command is not globally available in your environment and you
