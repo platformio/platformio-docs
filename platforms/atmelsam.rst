@@ -149,6 +149,13 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_feather_m4``
+      - `Adafruit Feather M4 (SAMD51) <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_gemma_m0``
       - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -156,10 +163,38 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_itsybitsy_m0``
+      - `Adafruit ItsyBitsy M0 <https://www.adafruit.com/product/3727?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_itsybitsy_m4``
+      - `Adafruit ItsyBitsy M4 (SAMD51) <https://www.adafruit.com/product/3800?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_metro_m0``
       - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_metro_m4``
+      - `Adafruit Metro M4 (SAMD51) <https://www.adafruit.com/product/3382?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - ``adafruit_pirkey``
+      - `Adafruit pIRkey <https://www.adafruit.com/product/3364?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
@@ -448,6 +483,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_feather_m4``
+      - `Adafruit Feather M4 (SAMD51) <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_gemma_m0``
       - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -455,10 +497,38 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_itsybitsy_m0``
+      - `Adafruit ItsyBitsy M0 <https://www.adafruit.com/product/3727?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_itsybitsy_m4``
+      - `Adafruit ItsyBitsy M4 (SAMD51) <https://www.adafruit.com/product/3800?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_metro_m0``
       - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_metro_m4``
+      - `Adafruit Metro M4 (SAMD51) <https://www.adafruit.com/product/3382?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - ``adafruit_pirkey``
+      - `Adafruit pIRkey <https://www.adafruit.com/product/3364?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
