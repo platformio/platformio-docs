@@ -56,7 +56,7 @@ Contents
     platforms/custom_platform_and_board
 
 .. toctree::
-    :caption: PlatformIO Plus
+    :caption: PIO Plus
     :maxdepth: 1
 
     plus/pio-account

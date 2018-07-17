@@ -141,7 +141,7 @@ Test results
 
     > platformio test -e nodemcu --verbose
 
-    PlatformIO Plus (https://pioplus.com) v0.1.0
+    PIO Plus (https://pioplus.com) v0.1.0
     Verbose mode can be enabled via `-v, --verbose` option
     Collected 1 items
 

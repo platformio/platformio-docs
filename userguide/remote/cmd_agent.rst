@@ -52,7 +52,7 @@ Example
 
     > platformio remote agent list
 
-    PlatformIO Plus (https://pioplus.com)
+    PIO Plus (https://pioplus.com)
 
     innomac.local
     -------------
@@ -137,7 +137,7 @@ Example
 
     > platformio remote agent list
 
-    PlatformIO Plus (https://pioplus.com)
+    PIO Plus (https://pioplus.com)
 
     innomac.local
     -------------

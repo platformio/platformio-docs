@@ -51,7 +51,7 @@ Examples
 
     > platformio remote update
 
-    PlatformIO Plus (https://pioplus.com)
+    PIO Plus (https://pioplus.com)
 
     Platform Manager
     ================

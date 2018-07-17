@@ -15,14 +15,14 @@ PIO Account
 ===========
 
 Having **PIO Account** allows you to use extra professional features from
-`PlatformIO Plus <https://pioplus.com/>`__:
+`PIO Plus <https://pioplus.com/>`__:
 
-* :ref:`pioremote`
 * :ref:`piodebug`
+* :ref:`pioremote`
 * :ref:`unit_testing`
 * Integration with :ref:`ide_cloud`
 
-A registration is **FREE**.
+A registration is **FREE**. No Credit Card Required.
 
 PlatformIO IDE
 --------------

@@ -140,7 +140,7 @@ updated commands and options.
     * - :ref:`platformio settings set force_verbose true <setting_force_verbose>`
       - Force verbose output when processing environments (globally)
     * - :ref:`cmd_test`
-      - PlatformIO Plus Unit Testing
+      - PIO Plus Unit Testing
     * - :option:`platformio update --only-check`
       - Do not update, only check for new version
 

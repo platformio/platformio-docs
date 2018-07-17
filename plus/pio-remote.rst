@@ -19,7 +19,7 @@ PIO Remote™
 
 **Your devices are always with you!**
 
-.. versionadded:: 3.2 (`PlatformIO Plus <https://pioplus.com>`__)
+.. versionadded:: 3.2 (`PIO Plus <https://pioplus.com>`__)
 
 |PIORemote| allows you to work remotely with devices from
 *Anywhere In The World*. No matter where are you now! Run a small and
@@ -54,7 +54,7 @@ Technology
 
 .. image:: ../_static/pio-remote-architecture.png
 
-|PIORemote| is an own `PlatformIO Plus <https://pioplus.com/>`__ technology
+|PIORemote| is an own `PIO Plus <https://pioplus.com/>`__ technology
 for remote solutions without external dependencies to
 operation system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
 The Server component (|PIOCloud|) plays a role of coupling link between
