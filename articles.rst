@@ -23,6 +23,8 @@ Here are recent articles/reviews about PlatformIO:
 2018
 ^^^^
 
+* Jul 3, 2018 - **Andreas Schmidt** - `IoT for web developers: From zero to firmware, Part II <https://jaxenter.com/iot-web-developers-part-two-145815.html>`_
+* Jun 22, 2018 - **Andreas Schmidt** - `IoT for web developers, Part I <https://jaxenter.com/iot-web-developers-part-one-145802.html>`_
 * Jul 4, 2018 - **ThingForward** - `Screen-cast: First steps with PlatformIO’s Unified Debugger <https://www.thingforward.io/techblog/2018-07-04-first-steps-with-platformios-unified-debugger.html>`_
 * Jun 6, 2018 - **Andreas Schmidt** - `ESP32, WebThing API and PlatformIO-style projects <https://thngstruction.online/blog/support-for-esp32-webthingapi.md>`_
 * May 21, 2018 - **Dentella Luca** - `ESP32, PlatformIO <http://www.lucadentella.it/en/2018/05/21/esp32-platformio/>`_
