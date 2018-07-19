@@ -2433,6 +2433,77 @@ Hornbill
       - 4MB
       - 320KB
 
+Infineon
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xmc1100_boot_kit``
+      - `XMC1100 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1100_h_bridge2go``
+      - `XMC1100 H-Bridge 2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1100_xmc2go``
+      - `XMC1100 XMC2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1300_boot_kit``
+      - `XMC1300 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1300
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1300_sense2gol``
+      - `XMC1300 Sense2GoL <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1300
+      - 32MHz
+      - 64KB
+      - 122.23KB
+    * - ``xmc4200_distance2go``
+      - `XMC4200 Distance2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC4200
+      - 80MHz
+      - 250KB
+      - 256KB
+    * - ``xmc4700_relax_kit``
+      - `XMC4700 Relax Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC4700
+      - 144MHz
+      - 2.00MB
+      - 1.95MB
+
 Intel
 ~~~~~
 

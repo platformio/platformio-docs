@@ -245,6 +245,7 @@ J-Link GDB Server.
 
 * :ref:`platform_atmelsam`
 * :ref:`platform_freescalekinetis`
+* :ref:`platform_infineonxmc`
 * :ref:`platform_nordicnrf51`
 * :ref:`platform_nordicnrf52`
 * :ref:`platform_nxplpc`
@@ -779,6 +780,9 @@ Platforms
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
+    * - :ref:`platform_infineonxmc`
+      - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
+
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
@@ -786,7 +790,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
@@ -1845,6 +1849,77 @@ Hornbill
       - 240MHz
       - 4MB
       - 320KB
+
+Infineon
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xmc1100_boot_kit``
+      - `XMC1100 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1100_h_bridge2go``
+      - `XMC1100 H-Bridge 2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1100_xmc2go``
+      - `XMC1100 XMC2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1300_boot_kit``
+      - `XMC1300 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1300
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1300_sense2gol``
+      - `XMC1300 Sense2GoL <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1300
+      - 32MHz
+      - 64KB
+      - 122.23KB
+    * - ``xmc4200_distance2go``
+      - `XMC4200 Distance2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC4200
+      - 80MHz
+      - 250KB
+      - 256KB
+    * - ``xmc4700_relax_kit``
+      - `XMC4700 Relax Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC4700
+      - 144MHz
+      - 2.00MB
+      - 1.95MB
 
 JKSoft
 ~~~~~~

@@ -39,6 +39,7 @@ Embedded
     espressif32
     espressif8266
     freescalekinetis
+    infineonxmc
     intel_arc32
     lattice_ice40
     maxim32
