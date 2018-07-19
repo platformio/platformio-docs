@@ -82,7 +82,24 @@ processes:
 This option can be set by global environment variable
 :envvar:`PLATFORMIO_BUILD_FLAGS`.
 
-Example:
+For more detailed information about available flags/options go to:
+
+* `Options to Request or Suppress Warnings
+  <https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html>`_
+* `Options for Debugging Your Program
+  <https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html>`_
+* `Options That Control Optimization
+  <https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html>`_
+* `Options Controlling the Preprocessor
+  <https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html>`_
+* `Passing Options to the Assembler
+  <https://gcc.gnu.org/onlinedocs/gcc/Assembler-Options.html>`_
+* `Options for Linking <https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html>`_
+* `Options for Directory Search
+  <https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html>`_
+
+
+Examples:
 
 .. code-block:: ini
 
@@ -104,8 +121,10 @@ Example:
 Dynamic build flags
 '''''''''''''''''''
 
-PlatformIO Core allows to run external command/script which outputs build flags.
-PIO will automatically parse the output and append flags to a build environment.
+PlatformIO allows to run external command/script which outputs build flags
+into STDOUT. PlatformIO will automatically parse this output and append flags
+to a build environment.
+
 **You can use any shell or programming language.**
 
 This external command will be called on each :ref:`cmd_run` command before
@@ -120,8 +139,7 @@ Use Cases:
 
 .. note::
   If you need more advanced control and would like to apply changes to
-  PIO Build System environment, please refer to :ref:`projectconf_section_env_advanced`
-  and use Pre/Post Extra Scripts.
+  PlatformIO Build System environment, please refer to :ref:`projectconf_advanced_scripting`.
 
 Example:
 
@@ -130,19 +148,13 @@ Example:
     [env:generate_flags_with_external_command]
     build_flags = !cmd_or_path_to_script
 
+    ; Unix only, get output from internal command
+    build_flags = !echo "-DSOME_MACRO="$(some_cmd arg1 --option1)
 
-**Use Case: Get the latest GIT revision "on-the-fly"**
 
-*Unix*
+**Use Case: Create "PIO_SRC_REV" macro with the latest Git revision**
 
-.. code-block:: ini
-
-    [env:git_revision_macro]
-    build_flags = !echo "-DPIO_SRC_REV="$(git rev-parse HEAD)
-
-*Windows*
-
-You need to create a separate file named ``print_git_rev.bat`` and place it
+You will need to create a separate file named ``git_rev_macro.py`` and place it
 near ``platformio.ini``.
 
 ``platformio.ini``:
@@ -152,31 +164,15 @@ near ``platformio.ini``.
     [env:git_revision_macro]
     build_flags = !print_git_rev.bat
 
-``print_git_rev.bat``:
+``git_rev_macro.py``:
 
-.. code-block:: bat
+.. code-block:: py
 
-    @echo off
-    FOR /F "tokens=1 delims=" %%A in ('git rev-parse HEAD') do echo -DPIO_SRC_REV=%%A
+    import subprocess
 
+    revision = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip()
+    print "-DPIO_SRC_REV=%s" % revision
 
---------------
-
-For more detailed information about available flags/options go to:
-
-* `Options to Request or Suppress Warnings
-  <https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html>`_
-* `Options for Debugging Your Program
-  <https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html>`_
-* `Options That Control Optimization
-  <https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html>`_
-* `Options Controlling the Preprocessor
-  <https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html>`_
-* `Passing Options to the Assembler
-  <https://gcc.gnu.org/onlinedocs/gcc/Assembler-Options.html>`_
-* `Options for Linking <https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html>`_
-* `Options for Directory Search
-  <https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html>`_
 
 .. _projectconf_src_build_flags:
 
