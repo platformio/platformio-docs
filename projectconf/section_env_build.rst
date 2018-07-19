@@ -98,23 +98,54 @@ For more detailed information about available flags/options go to:
 * `Options for Directory Search
   <https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html>`_
 
-
 Examples:
 
 .. code-block:: ini
 
     [env:specific_defines]
-    build_flags = -DFOO -DBAR=1 -DFLOAT_VALUE=1.23457e+07
+    build_flags =
+      -DFOO -DBAR=1
+      -D BUILD_ENV_NAME=$PIOENV
+      -D CURRENT_TIME=$UNIX_TIME
+      -DFLOAT_VALUE=1.23457e+07
 
     [env:string_defines]
-    build_flags = '-DHELLO="World!"' '-DWIFI_PASS="My password"'
+    build_flags =
+      '-DHELLO="World!"'
+      '-DWIFI_PASS="My password"'
 
     [env:specific_inclibs]
-    build_flags = -I/opt/include -L/opt/lib -lfoo
+    build_flags =
+      -I/opt/include
+      -L/opt/lib
+      -lfoo
 
     [env:specific_ld_script]
     build_flags = -Wl,-T/path/to/ld_script.ld
 
+    [env:ignore_incremental_builds]
+    ; We dynamically change the value of "LAST_BUILD_TIME" macro,
+    ; PlatformIO will not cache objects
+    build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
+
+Built-in Variables
+''''''''''''''''''
+
+You can inject into build flags built-in variables, such as:
+
+* ``$PYTHONEXE``, full path to current Python interpreter
+* ``$UNIX_TIME``, current time in Unix format
+* ``$PIOENV``, name of build environment from :ref:`projectconf`
+* ``$PIOPLATFORM``, name of development platform
+* ``$PIOFRAMEWORK``, name of framework
+* ``$PIOHOME_DIR``, PlatformIO Home directory
+* ``$PROJECT_DIR``, project directory
+* ``$PROJECTBUILD_DIR``, project build directory per all environments
+* ``$BUILD_DIR``, build directory per current environment
+* `Need more PlatformIO variables? <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L30:L113>`_
+
+Please use target ``envdump`` for :option:`platformio run --target` command to
+see ALL variables from a build environment.
 
 .. _projectconf_dynamic_build_flags:
 
