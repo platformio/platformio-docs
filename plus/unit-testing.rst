@@ -199,6 +199,8 @@ Workflow
 5. Run test using the :ref:`cmd_test` command.
 
 
+.. _unit_testing_shared_code:
+
 Shared Code
 ~~~~~~~~~~~
 
@@ -218,14 +220,13 @@ programs, you have 2 options:
    and main program using ``#include <calculator.h>``.
 
 2. Manually instruct PlatformIO to build source code from :ref:`projectconf_pio_src_dir`
-   folder using :ref:`projectconf_lib_extra_dirs` option and ``..`` as value.
-   This step will instruct :ref:`ldf` to treat project as a library.
+   folder using :ref:`projectconf_test_build_project_src` option in :ref:`projectconf`:
 
    .. code-block:: ini
 
       [env:myenv]
-      ; add upper folder to extra directories list
-      lib_extra_dirs = ..
+      platform = ...
+      test_build_project_src = true
 
    This is very useful if you unit test independent library where you
    can't split source code.
