@@ -27,12 +27,12 @@ For more detailed information please visit `vendor site <http://www.ti.com/lsds/
 Examples
 --------
 
-Examples are listed from `TI MSP430 development platform repository <https://github.com/platformio/platform-timsp430/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `TI MSP430 development platform repository <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-timsp430/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `energia-blink <https://github.com/platformio/platform-timsp430/tree/develop/examples/energia-blink?utm_source=platformio&utm_medium=docs>`_
-* `energia-internal-libs <https://github.com/platformio/platform-timsp430/tree/develop/examples/energia-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-timsp430/tree/develop/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `energia-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/energia-blink?utm_source=platformio&utm_medium=docs>`_
+* `energia-internal-libs <https://github.com/platformio/platform-timsp430/tree/master/examples/energia-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

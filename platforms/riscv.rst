@@ -27,13 +27,13 @@ For more detailed information please visit `vendor site <https://riscv.org?utm_s
 Examples
 --------
 
-Examples are listed from `RISC-V development platform repository <https://github.com/platformio/platform-riscv/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `RISC-V development platform repository <https://github.com/platformio/platform-riscv/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `freedom-e-sdk_asm <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_asm?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_dhrystone <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_dhrystone?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_gpio <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_gpio?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_hello <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_smp <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_smp?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_asm <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_asm?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_dhrystone <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_dhrystone?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_gpio <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_gpio?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_hello <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_smp <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_smp?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

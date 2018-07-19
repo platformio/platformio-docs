@@ -27,7 +27,7 @@ For more detailed information please visit `vendor site <http://www.artik.io?utm
 Examples
 --------
 
-* `ARTIK SDK for Linux ARM <https://github.com/platformio/platform-linux_arm/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `ARTIK SDK for Linux ARM <https://github.com/platformio/platform-linux_arm/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------

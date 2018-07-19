@@ -238,8 +238,8 @@ external debug tool. See "Debug" column for compatible debug tools.
 Examples
 --------
 
-* `libOpenCM3 for ST STM32 <https://github.com/platformio/platform-ststm32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `libOpenCM3 for TI TIVA <https://github.com/platformio/platform-titiva/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `libOpenCM3 for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `libOpenCM3 for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------

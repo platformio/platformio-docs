@@ -66,7 +66,7 @@ external debug tool. See "Debug" column for compatible debug tools.
 Examples
 --------
 
-* `Tizen RT for Samsung ARTIK <https://github.com/platformio/platform-samsung_artik/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `Tizen RT for Samsung ARTIK <https://github.com/platformio/platform-samsung_artik/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------

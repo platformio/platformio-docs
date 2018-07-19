@@ -27,9 +27,9 @@ For more detailed information please visit `vendor site <http://platformio.org/p
 Examples
 --------
 
-Examples are listed from `Native development platform repository <https://github.com/platformio/platform-native/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Native development platform repository <https://github.com/platformio/platform-native/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `hello-world <https://github.com/platformio/platform-native/tree/develop/examples/hello-world?utm_source=platformio&utm_medium=docs>`_
+* `hello-world <https://github.com/platformio/platform-native/tree/master/examples/hello-world?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------

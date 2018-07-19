@@ -238,7 +238,7 @@ external debug tool. See "Debug" column for compatible debug tools.
 Examples
 --------
 
-* `ESP-IDF for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `ESP-IDF for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------

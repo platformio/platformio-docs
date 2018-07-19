@@ -102,7 +102,7 @@ external debug tool. See "Debug" column for compatible debug tools.
 Examples
 --------
 
-* `Freedom E SDK for RISC-V <https://github.com/platformio/platform-riscv/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `Freedom E SDK for RISC-V <https://github.com/platformio/platform-riscv/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------

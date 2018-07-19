@@ -158,7 +158,7 @@ external debug tool. See "Debug" column for compatible debug tools.
 Examples
 --------
 
-* `CMSIS for ST STM32 <https://github.com/platformio/platform-ststm32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `CMSIS for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------

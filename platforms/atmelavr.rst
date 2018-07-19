@@ -28,16 +28,16 @@ For more detailed information please visit `vendor site <http://www.atmel.com/pr
 Examples
 --------
 
-Examples are listed from `Atmel AVR development platform repository <https://github.com/platformio/platform-atmelavr/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Atmel AVR development platform repository <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-atmelavr/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-external-libs <https://github.com/platformio/platform-atmelavr/tree/develop/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-atmelavr/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-own-src_dir <https://github.com/platformio/platform-atmelavr/tree/develop/examples/arduino-own-src_dir?utm_source=platformio&utm_medium=docs>`_
-* `digitstump-mouse <https://github.com/platformio/platform-atmelavr/tree/develop/examples/digitstump-mouse?utm_source=platformio&utm_medium=docs>`_
-* `engduino-magnetometer <https://github.com/platformio/platform-atmelavr/tree/develop/examples/engduino-magnetometer?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-atmelavr/tree/develop/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-atmelavr/tree/develop/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-external-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-own-src_dir <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-own-src_dir?utm_source=platformio&utm_medium=docs>`_
+* `digitstump-mouse <https://github.com/platformio/platform-atmelavr/tree/master/examples/digitstump-mouse?utm_source=platformio&utm_medium=docs>`_
+* `engduino-magnetometer <https://github.com/platformio/platform-atmelavr/tree/master/examples/engduino-magnetometer?utm_source=platformio&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------

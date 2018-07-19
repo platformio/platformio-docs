@@ -27,14 +27,14 @@ For more detailed information please visit `vendor site <http://www.freescale.co
 Examples
 --------
 
-Examples are listed from `Freescale Kinetis development platform repository <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Freescale Kinetis development platform repository <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos-ethernet <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-ethernet <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

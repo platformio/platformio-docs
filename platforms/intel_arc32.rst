@@ -27,11 +27,11 @@ For more detailed information please visit `vendor site <http://www.intel.com/co
 Examples
 --------
 
-Examples are listed from `Intel ARC32 development platform repository <https://github.com/platformio/platform-intel_arc32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Intel ARC32 development platform repository <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-intel_arc32/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-curie-imu <https://github.com/platformio/platform-intel_arc32/tree/develop/examples/arduino-curie-imu?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-intel_arc32/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-intel_arc32/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-curie-imu <https://github.com/platformio/platform-intel_arc32/tree/master/examples/arduino-curie-imu?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-intel_arc32/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
