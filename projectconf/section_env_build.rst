@@ -193,7 +193,7 @@ near ``platformio.ini``.
 .. code-block:: ini
 
     [env:git_revision_macro]
-    build_flags = !print_git_rev.bat
+    build_flags = !python git_rev_macro.py
 
 ``git_rev_macro.py``:
 
