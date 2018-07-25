@@ -580,6 +580,18 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-right: 5px;
 }
 
+.nav .nav-pio-install {
+  background-color: #398439;
+}
+
+.nav .nav-pio-install:hover {
+  background-color: #449d44
+}
+
+.nav .nav-pio-install > a {
+  color: white !important;
+}
+
 /* TOP Banner */
 .top-banner {
     text-shadow: 0 1px 1px rgba(0, 0, 0, .12);
