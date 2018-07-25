@@ -60,7 +60,7 @@ Please note that you can use Unix shell-style wildcards:
     * - ``[!seq]``
       - matches any character not in seq
 
-Example:
+**Example**
 
 .. code-block:: ini
 
@@ -97,6 +97,25 @@ need to override uploader command or base flags please use
 
 This option can be set by global environment variable
 :envvar:`PLATFORMIO_UPLOAD_FLAGS`.
+
+**Example**
+
+Please specify each flag/option in a new line starting with minimum 2 spaces.
+
+.. code-block:: ini
+
+    [env:atmega328pb]
+    platform = atmelavr
+    board = atmega328pb
+    framework = arduino
+    upload_flags =
+      -P$UPLOAD_PORT
+      -b$UPLOAD_SPEED
+      -u
+      -Ulock:w:0xCF:m
+      -Uhfuse:w:0xD7:m
+      -Uefuse:w:0xF6:m
+      -Ulfuse:w:0xE2:m
 
 .. _projectconf_upload_resetmethod:
 
