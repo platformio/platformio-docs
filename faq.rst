@@ -219,30 +219,6 @@ profile, please do not override global ``PATH``. This line
 ``export PATH="/my/custom/path"`` is incorrect. Use ``export PATH="/my/custom/path":$PATH``
 instead.
 
-[Errno 1] Operation not permitted
-'''''''''''''''''''''''''''''''''
-
-Answered in `issue #295 <https://github.com/platformio/platformio-core/issues/295#issuecomment-143772005>`_.
-
-Windows AttributeError: 'module' object has no attribute 'packages'
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Answered in `issue #252 <https://github.com/platformio/platformio-core/issues/252#issuecomment-127072039>`_.
-
-PlatformIO: command not found || An error "pkg_resources.DistributionNotFound"
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Please upgrade *SetupTools* package:
-
-.. code-block:: bash
-
-    [sudo] pip uninstall setuptools
-    [sudo] pip install setuptools
-
-    # Then re-install PlatformIO
-    [sudo] pip uninstall platformio
-    [sudo] pip install platformio
-
 .. _faq_udev_rules:
 
 99-platformio-udev.rules
@@ -288,6 +264,21 @@ they are not “root”, doing this issuing
     sudo usermod -a -G plugdev $USER
 
 After this file is installed, physically unplug and reconnect your board.
+
+ImportError: cannot import name _remove_dead_weakref
+''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Windows users can experience this issue when multiple Python interpreters are
+installed in a system and conflict each other. The easy way to fix this
+problem is uninstalling all Python interpreters using Windows Programs Manager
+and installing them manually again.
+
+1. "Windows > Start Menu > Settings > System > Apps & Features", select
+   Python interpreters and uninstall them.
+2. Install the latest Python 2.7 interpreter, see :ref:`faq_install_python` guide
+3. Remove ``C:\Users\YourUserName\.platformio`` and ``C:\.platformio`` folders
+   if exist (do not forget to replace "YourUserName" with the real user name)
+4. Restart :ref:`pioide`.
 
 Package Manager
 ~~~~~~~~~~~~~~~
