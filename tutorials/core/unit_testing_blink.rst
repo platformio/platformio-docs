@@ -11,8 +11,8 @@
 
 .. _tutorial_unit_testing_blink:
 
-Get started with Unit Testing of "Blink" Project
-================================================
+Unit Testing of a "Blink" Project
+=================================
 
 The goal of this tutorial is to demonstrate how is simple to use :ref:`unit_testing`.
 
