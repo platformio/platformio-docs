@@ -97,6 +97,20 @@ Tools & Debug Probes
 You can switch between debugging tools using :ref:`projectconf_debug_tool`
 option.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system:
+
+    :Windows:
+        Please check official documentation for your debug tool and install
+        required drivers or use related tools, such as Zadig.
+
+    :Mac:
+        You don't need to install extra drivers. Nevertheless, please check
+        official documentation.
+
+    :Linux:
+        Please install "udev" rules :ref:`faq_udev_rules`
+
 .. contents::
     :local:
 
@@ -206,6 +220,18 @@ multi-protocol synchronous serial engines (MPSSEs) which allow for
 communication using JTAG, I2C and SPI on two channels simultaneously.
 `More... <http://www.ftdichip.com/Products/ICs/FT2232H.html?utm_source=platformio&utm_medium=docs>`__
 
+**Drivers**
+
+:Windows:
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+:Mac:
+    You don't need to install extra drivers. Nevertheless, please check
+    official documentation.
+
+:Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`.
+
 .. begin_compatible_platforms_ft2232h
 
 **Compatible development platforms:**
@@ -299,6 +325,18 @@ to power the FTDI chip.
 
 `FT2232H Mini-Module Datasheet <http://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_FT2232H_Mini_Module.pdf>`_
 
+**Drivers**
+
+:Windows:
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+:Mac:
+    You don't need to install extra drivers. Nevertheless, please check
+    official documentation.
+
+:Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`.
+
 .. begin_compatible_platforms_minimodule
 
 **Compatible development platforms:**
@@ -365,6 +403,18 @@ Olimex ARM-USB-OCD
   * - 4
     - GND
 
+**Drivers**
+
+:Windows:
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+:Mac:
+    You don't need to install extra drivers. Nevertheless, please check
+    official documentation.
+
+:Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`.
+
 .. begin_compatible_platforms_olimex-arm-usb-ocd
 
 **Compatible development platforms:**
@@ -407,6 +457,18 @@ supply 5VDC device.
   * - 4
     - GND
 
+**Drivers**
+
+:Windows:
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+:Mac:
+    You don't need to install extra drivers. Nevertheless, please check
+    official documentation.
+
+:Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`.
+
 .. begin_compatible_platforms_olimex-arm-usb-ocd-h
 
 **Compatible development platforms:**
@@ -448,6 +510,18 @@ Low-cost and high-speed ARM/ESP32 USB JTAG.
   * - 4
     - GND
 
+**Drivers**
+
+:Windows:
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+:Mac:
+    You don't need to install extra drivers. Nevertheless, please check
+    official documentation.
+
+:Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`.
+
 .. begin_compatible_platforms_olimex-jtag-tiny
 
 **Compatible development platforms:**
@@ -488,6 +562,18 @@ Low-cost and high-speed ARM/ESP32 USB JTAG.
     - RST
   * - 4
     - GND
+
+**Drivers**
+
+:Windows:
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+:Mac:
+    You don't need to install extra drivers. Nevertheless, please check
+    official documentation.
+
+:Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`.
 
 .. begin_compatible_platforms_olimex-arm-usb-tiny-h
 
