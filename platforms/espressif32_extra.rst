@@ -62,6 +62,38 @@ a value. Possible values:
     [env:myenv]
     board_build.flash_mode = qio
 
+External RAM (PSRAM)
+~~~~~~~~~~~~~~~~~~~~
+
+You can enable external RAM using the next extra :ref:`projectconf_build_flags`
+in :ref:`projectconf` depending on a framework type.
+
+Framework :ref:`framework_arduino`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = espressif32
+    framework = arduino
+    board = ...
+    build_flags =
+        -DBOARD_HAS_PSRAM
+        -mfix-esp32-psram-cache-issue
+
+Framework :ref:`framework_espidf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = espressif32
+    framework = espidf
+    board = ...
+    build_flags =
+        -DCONFIG_SPIRAM_CACHE_WORKAROUND
+
+More details are located in the official ESP-IDF documentation -
+`Support for external RAM <http://esp-idf.readthedocs.io/en/latest/api-guides/external-ram.html>`_.
+
 Debug Level
 ~~~~~~~~~~~
 
