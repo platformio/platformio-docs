@@ -2742,6 +2742,14 @@ M5Stack
       - 240MHz
       - 4MB
       - 320KB
+    * - ``m5stack-fire``
+      - `M5Stack FIRE <http://www.m5stack.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
 
 MH-ET Live
 ~~~~~~~~~~
@@ -4011,6 +4019,29 @@ RepRap
       - 16MHz
       - 252KB
       - 8KB
+
+RoboticsBrno
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``alksesp32``
+      - `ALKS ESP32 <https://github.com/RoboticsBrno/ArduinoLearningKitStarter.git?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 RushUp
 ~~~~~~
@@ -5314,6 +5345,29 @@ TI
       - 1MB
       - 256KB
 
+TTGO
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``ttgo-lora32-v1``
+      - `TTGO LoRa32-OLED V1 <https://www.google.com.ua/search?q=TTGO+LoRa32-OLED+V1&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Taida Century
 ~~~~~~~~~~~~~
 
@@ -5594,7 +5648,23 @@ WEMOS
       - 16MB
       - 80KB
     * - ``lolin32``
-      - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - `WEMOS LOLIN32 <https://wiki.wemos.cc/products:lolin32:lolin32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32``
+      - `WEMOS LOLIN D32 <https://wiki.wemos.cc/products:d32:d32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32_pro``
+      - `WEMOS LOLIN D32 PRO <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - :ref:`Yes <piodebug>`
       - ESP32
@@ -5756,6 +5826,29 @@ Xilinx
       - 1500MHz
       - 16MB
       - 256MB
+
+XinaBox
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xinabox_cw02``
+      - `XinaBox CW02 <https://xinabox.cc/products/cw02?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 chipKIT
 ~~~~~~~
