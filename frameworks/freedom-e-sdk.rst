@@ -67,7 +67,7 @@ You do not need to use/buy external debug tool.
     * - ``freedom-e300-hifive1``
       - `HiFive1 <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`RISC-V <platform_riscv>`
-      - :ref:`debugging_tool_ft2232h` (on-board)
+      - :ref:`debugging_tool_ftdi` (on-board)
       - FE310
       - 320MHz
       - 16MB

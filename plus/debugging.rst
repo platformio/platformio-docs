@@ -210,27 +210,20 @@ CMSIS-DAP
 
 .. end_compatible_platforms_cmsis-dap
 
-.. _debugging_tool_ft2232h:
+.. _debugging_tool_ftdi:
 
-FTDI FT2232H
-~~~~~~~~~~~~
+FTDI Chip
+~~~~~~~~~
 
 :Configuration:
-  :ref:`projectconf_debug_tool` = ``ft2232h``
+  :ref:`projectconf_debug_tool` = ``ftdi``
 
 :Picture:
-  .. image:: ../_static/debug_probes/ft2232h.jpg
-    :target: http://www.ftdichip.com/Products/ICs/FT2232H.html?utm_source=platformio&utm_medium=docs
+  .. image:: ../_static/debug_probes/ftdi.jpg
+    :target: http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs
 
 :Description:
-  The FT2232H is a USB 2.0 Hi-Speed (480Mb/s) to UART/FIFO IC. It has the
-  capability of being configured in a variety of industry standard serial or
-  parallel interfaces.
-
-  Building on the innovative features of the FT2232, the FT2232H has two
-  multi-protocol synchronous serial engines (MPSSEs) which allow for
-  communication using JTAG, I2C and SPI on two channels simultaneously.
-  `Vendor information... <http://www.ftdichip.com/Products/ICs/FT2232H.html?utm_source=platformio&utm_medium=docs>`__
+  FTDI Chip develops innovative silicon solutions that enhance interaction with today’s technology. When a designer needs to add a USB port, rest assured that FTDI Chip has a full range of USB solutions to get the job done... <http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs>`__
 
 :Drivers:
   :Windows:
@@ -243,7 +236,7 @@ FTDI FT2232H
   :Linux:
       Please install "udev" rules :ref:`faq_udev_rules`.
 
-.. begin_compatible_platforms_ft2232h
+.. begin_compatible_platforms_ftdi
 
 :Compatible Platforms:
 
@@ -251,7 +244,7 @@ FTDI FT2232H
   * :ref:`platform_riscv`
   * :ref:`platform_samsung_artik`
 
-.. end_compatible_platforms_ft2232h
+.. end_compatible_platforms_ftdi
 
 .. _debugging_tool_jlink:
 
@@ -298,7 +291,7 @@ J-LINK
 
 .. _debugging_tool_minimodule:
 
-FT2232H Mini-Module
+Mini-Module FT2232H
 ~~~~~~~~~~~~~~~~~~~
 
 :Configuration:
@@ -1717,7 +1710,7 @@ Espressif
     * - ``esp-wrover-kit``
       - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - :ref:`debugging_tool_ft2232h` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - :ref:`debugging_tool_ftdi` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
       - 4MB
@@ -3186,7 +3179,7 @@ Samsung
     * - ``artik_053``
       - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Samsung ARTIK <platform_samsung_artik>`
-      - :ref:`debugging_tool_ft2232h` (default)
+      - :ref:`debugging_tool_ftdi` (default)
       - S5JT200
       - 320MHz
       - 8MB
@@ -3287,7 +3280,7 @@ SiFive
     * - ``freedom-e300-hifive1``
       - `HiFive1 <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`RISC-V <platform_riscv>`
-      - :ref:`debugging_tool_ft2232h` (on-board)
+      - :ref:`debugging_tool_ftdi` (on-board)
       - FE310
       - 320MHz
       - 16MB
