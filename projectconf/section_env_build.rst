@@ -111,8 +111,9 @@ Examples:
 
     [env:string_defines]
     build_flags =
-      '-DHELLO="World!"'
-      '-DWIFI_PASS="My password"'
+      -DHELLO="World!"
+      ; Password with special chars: My pass'word
+      -DWIFI_PASS=\"My\ pass\'word\"
 
     [env:specific_inclibs]
     build_flags =
