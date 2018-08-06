@@ -11,8 +11,8 @@
 
 .. _cmd_remote_agent:
 
-PIO Remote™ Agent
-=================
+PIO Remote Agent
+================
 
 Start :ref:`cmd_remote_agent` on a host machine and work remotely with
 your devices **WITHOUT** extra software, services, SSH, VPN, tunneling or
@@ -52,7 +52,7 @@ Example
 
     > platformio remote agent list
 
-    PlatformIO Plus (https://pioplus.com)
+    PIO Plus (https://pioplus.com)
 
     innomac.local
     -------------
@@ -137,7 +137,7 @@ Example
 
     > platformio remote agent list
 
-    PlatformIO Plus (https://pioplus.com)
+    PIO Plus (https://pioplus.com)
 
     innomac.local
     -------------

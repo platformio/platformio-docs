@@ -111,7 +111,7 @@ Examples
 
     > platformio debug --interface=gdb -x .pioinit
 
-    PlatformIO Plus (https://pioplus.com) v0.8.2
+    PIO Plus (https://pioplus.com) v0.8.2
     ...
     Loading section .text, size 0x2c98 lma 0x4000
     Loading section .ramfunc, size 0x60 lma 0x6c98

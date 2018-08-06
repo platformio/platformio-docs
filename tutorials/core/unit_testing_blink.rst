@@ -11,8 +11,8 @@
 
 .. _tutorial_unit_testing_blink:
 
-Get started with Unit Testing of "Blink" Project
-================================================
+Unit Testing of a "Blink" Project
+=================================
 
 The goal of this tutorial is to demonstrate how is simple to use :ref:`unit_testing`.
 
@@ -141,7 +141,7 @@ Test results
 
     > platformio test -e nodemcu --verbose
 
-    PlatformIO Plus (https://pioplus.com) v0.1.0
+    PIO Plus (https://pioplus.com) v0.1.0
     Verbose mode can be enabled via `-v, --verbose` option
     Collected 1 items
 

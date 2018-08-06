@@ -28,28 +28,39 @@ For more detailed information please visit `vendor site <http://platformio.org/p
 Examples
 --------
 
-Examples are listed from `Samsung ARTIK development platform repository <https://github.com/platformio/platform-samsung_artik/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Samsung ARTIK development platform repository <https://github.com/platformio/platform-samsung_artik/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `artik_sdk <https://github.com/platformio/platform-samsung_artik/tree/develop/examples/artik_sdk?utm_source=platformio&utm_medium=docs>`_
-* `blink_led_wifi <https://github.com/platformio/platform-samsung_artik/tree/develop/examples/blink_led_wifi?utm_source=platformio&utm_medium=docs>`_
-* `hello <https://github.com/platformio/platform-samsung_artik/tree/develop/examples/hello?utm_source=platformio&utm_medium=docs>`_
+* `artik_sdk <https://github.com/platformio/platform-samsung_artik/tree/master/examples/artik_sdk?utm_source=platformio&utm_medium=docs>`_
+* `blink_led_wifi <https://github.com/platformio/platform-samsung_artik/tree/master/examples/blink_led_wifi?utm_source=platformio&utm_medium=docs>`_
+* `hello <https://github.com/platformio/platform-samsung_artik/tree/master/examples/hello?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-External tools
-~~~~~~~~~~~~~~
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::
@@ -64,7 +75,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - RAM
     * - ``artik_053``
       - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_custom` (default)
+      - :ref:`debugging_tool_ftdi` (default)
       - S5JT200
       - 320MHz
       - 8MB

@@ -27,9 +27,9 @@ For more detailed information please visit `vendor site <http://platformio.org/p
 Examples
 --------
 
-Examples are listed from `Linux i686 development platform repository <https://github.com/platformio/platform-linux_i686/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Linux i686 development platform repository <https://github.com/platformio/platform-linux_i686/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `hello-world <https://github.com/platformio/platform-linux_i686/tree/develop/examples/hello-world?utm_source=platformio&utm_medium=docs>`_
+* `hello-world <https://github.com/platformio/platform-linux_i686/tree/master/examples/hello-world?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------

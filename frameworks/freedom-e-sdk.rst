@@ -29,17 +29,28 @@ Debugging
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -56,18 +67,18 @@ You do not need to use/buy external debugger.
     * - ``freedom-e300-hifive1``
       - `HiFive1 <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`RISC-V <platform_riscv>`
-      - :ref:`debugging_tool_ft2232h` (on-board)
+      - :ref:`debugging_tool_ftdi` (on-board)
       - FE310
       - 320MHz
       - 16MB
       - 16KB
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::
@@ -102,7 +113,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
 Examples
 --------
 
-* `Freedom E SDK for RISC-V <https://github.com/platformio/platform-riscv/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `Freedom E SDK for RISC-V <https://github.com/platformio/platform-riscv/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------

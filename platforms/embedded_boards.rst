@@ -157,6 +157,14 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_feather_m4``
+      - `Adafruit Feather M4 (SAMD51) <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_gemma_m0``
       - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -165,11 +173,43 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_itsybitsy_m0``
+      - `Adafruit ItsyBitsy M0 <https://www.adafruit.com/product/3727?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_itsybitsy_m4``
+      - `Adafruit ItsyBitsy M4 (SAMD51) <https://www.adafruit.com/product/3800?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_metro_m0``
       - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_metro_m4``
+      - `Adafruit Metro M4 (SAMD51) <https://www.adafruit.com/product/3382?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - ``adafruit_pirkey``
+      - `Adafruit pIRkey <https://www.adafruit.com/product/3364?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
@@ -2260,30 +2300,6 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
-    * - ``genericSTM32F103T8``
-      - `STM32F103T8 (20k RAM. 64k Flash) <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103T8T6
-      - 72MHz
-      - 20KB
-      - 64KB
-    * - ``genericSTM32F103TB``
-      - `STM32F103TB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103tb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103TBT6
-      - 72MHz
-      - 128KB
-      - 20KB
-    * - ``genericSTM32F103VB``
-      - `STM32F103VB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103vb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103VBT6
-      - 72MHz
-      - 128KB
-      - 20KB
     * - ``genericSTM32F103VC``
       - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -2292,43 +2308,11 @@ Generic
       - 72MHz
       - 256KB
       - 48KB
-    * - ``genericSTM32F103VD``
-      - `STM32F103VD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103vd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103VDT6
-      - 72MHz
-      - 384KB
-      - 64KB
     * - ``genericSTM32F103VE``
       - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F103VET6
-      - 72MHz
-      - 512KB
-      - 64KB
-    * - ``genericSTM32F103ZC``
-      - `STM32F103ZC (48k RAM. 256k Flash) <http://www.st.com/en/microcontrollers/stm32f103zc.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103ZCT6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``genericSTM32F103ZD``
-      - `STM32F103ZD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103zd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103ZDT6
-      - 72MHz
-      - 384KB
-      - 64KB
-    * - ``genericSTM32F103ZE``
-      - `STM32F103ZE (64k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
@@ -2448,6 +2432,77 @@ Hornbill
       - 240MHz
       - 4MB
       - 320KB
+
+Infineon
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xmc1100_boot_kit``
+      - `XMC1100 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1100_h_bridge2go``
+      - `XMC1100 H-Bridge 2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1100_xmc2go``
+      - `XMC1100 XMC2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1300_boot_kit``
+      - `XMC1300 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1300
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1300_sense2gol``
+      - `XMC1300 Sense2GoL <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC1300
+      - 32MHz
+      - 64KB
+      - 122.23KB
+    * - ``xmc4200_distance2go``
+      - `XMC4200 Distance2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC4200
+      - 80MHz
+      - 250KB
+      - 256KB
+    * - ``xmc4700_relax_kit``
+      - `XMC4700 Relax Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`Yes <piodebug>`
+      - XMC4700
+      - 144MHz
+      - 2.00MB
+      - 1.95MB
 
 Intel
 ~~~~~
@@ -2579,14 +2634,6 @@ LeafLabs
       - 72MHz
       - 108KB
       - 17KB
-    * - ``maple_ret6``
-      - `Maple (RET6) <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103RET6
-      - 72MHz
-      - 256KB
-      - 48KB
 
 LightUp
 ~~~~~~~
@@ -2694,6 +2741,14 @@ M5Stack
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - ``m5stack-fire``
+      - `M5Stack FIRE <http://www.m5stack.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
       - 320KB
 
 MH-ET Live
@@ -3078,14 +3133,6 @@ Microduino
       - 240MHz
       - 4MB
       - 320KB
-    * - ``microduino32_flash``
-      - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F103CBT6
-      - 72MHz
-      - 105.47KB
-      - 16.60KB
 
 Micromint
 ~~~~~~~~~
@@ -3972,6 +4019,29 @@ RepRap
       - 16MHz
       - 252KB
       - 8KB
+
+RoboticsBrno
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``alksesp32``
+      - `ALKS ESP32 <https://github.com/RoboticsBrno/ArduinoLearningKitStarter.git?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 RushUp
 ~~~~~~
@@ -5275,6 +5345,29 @@ TI
       - 1MB
       - 256KB
 
+TTGO
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``ttgo-lora32-v1``
+      - `TTGO LoRa32-OLED V1 <https://www.google.com.ua/search?q=TTGO+LoRa32-OLED+V1&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Taida Century
 ~~~~~~~~~~~~~
 
@@ -5555,7 +5648,23 @@ WEMOS
       - 16MB
       - 80KB
     * - ``lolin32``
-      - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - `WEMOS LOLIN32 <https://wiki.wemos.cc/products:lolin32:lolin32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32``
+      - `WEMOS LOLIN D32 <https://wiki.wemos.cc/products:d32:d32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32_pro``
+      - `WEMOS LOLIN D32 PRO <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - :ref:`Yes <piodebug>`
       - ESP32
@@ -5717,6 +5826,29 @@ Xilinx
       - 1500MHz
       - 16MB
       - 256MB
+
+XinaBox
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xinabox_cw02``
+      - `XinaBox CW02 <https://xinabox.cc/products/cw02?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 chipKIT
 ~~~~~~~

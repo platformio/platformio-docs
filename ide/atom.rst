@@ -315,7 +315,7 @@ automatically created and preconfigured when you initialize project using
 Install Shell Commands
 ----------------------
 
-Please navigate to FAQ :ref:`faq_install_shell_commands`.
+Please navigate to PIO Core :ref:`piocore_install_shell_commands`.
 
 Known issues
 ------------

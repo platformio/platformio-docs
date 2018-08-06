@@ -28,47 +28,58 @@ For more detailed information please visit `vendor site <http://www.st.com/web/e
 Examples
 --------
 
-Examples are listed from `ST STM32 development platform repository <https://github.com/platformio/platform-ststm32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `ST STM32 development platform repository <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-ststm32/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-external-libs <https://github.com/platformio/platform-ststm32/tree/develop/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-ststm32/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-mxchip-azureiot <https://github.com/platformio/platform-ststm32/tree/develop/examples/arduino-mxchip-azureiot?utm_source=platformio&utm_medium=docs>`_
-* `arduino-mxchip-filesystem <https://github.com/platformio/platform-ststm32/tree/develop/examples/arduino-mxchip-filesystem?utm_source=platformio&utm_medium=docs>`_
-* `arduino-mxchip-sensors <https://github.com/platformio/platform-ststm32/tree/develop/examples/arduino-mxchip-sensors?utm_source=platformio&utm_medium=docs>`_
-* `arduino-mxchip-wifiscan <https://github.com/platformio/platform-ststm32/tree/develop/examples/arduino-mxchip-wifiscan?utm_source=platformio&utm_medium=docs>`_
-* `cmsis-blink <https://github.com/platformio/platform-ststm32/tree/develop/examples/cmsis-blink?utm_source=platformio&utm_medium=docs>`_
-* `libopencm3-1bitsy <https://github.com/platformio/platform-ststm32/tree/develop/examples/libopencm3-1bitsy?utm_source=platformio&utm_medium=docs>`_
-* `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/develop/examples/libopencm3-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-blink <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-filesystem <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-filesystem?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos-ethernet <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-rtos-ethernet-tls?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos-semaphore <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-rtos-semaphore?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
-* `spl-blink <https://github.com/platformio/platform-ststm32/tree/develop/examples/spl-blink?utm_source=platformio&utm_medium=docs>`_
-* `stm32cube-hal-blink <https://github.com/platformio/platform-ststm32/tree/develop/examples/stm32cube-hal-blink?utm_source=platformio&utm_medium=docs>`_
-* `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/develop/examples/stm32cube-ll-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-external-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-mxchip-azureiot <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-azureiot?utm_source=platformio&utm_medium=docs>`_
+* `arduino-mxchip-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-filesystem?utm_source=platformio&utm_medium=docs>`_
+* `arduino-mxchip-sensors <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-sensors?utm_source=platformio&utm_medium=docs>`_
+* `arduino-mxchip-wifiscan <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-wifiscan?utm_source=platformio&utm_medium=docs>`_
+* `cmsis-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/cmsis-blink?utm_source=platformio&utm_medium=docs>`_
+* `libopencm3-1bitsy <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-1bitsy?utm_source=platformio&utm_medium=docs>`_
+* `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-filesystem?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-ethernet <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-semaphore <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-semaphore?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+* `spl-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/spl-blink?utm_source=platformio&utm_medium=docs>`_
+* `stm32cube-hal-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-blink?utm_source=platformio&utm_medium=docs>`_
+* `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -475,11 +486,11 @@ You do not need to use/buy external debugger.
       - 192KB
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::
@@ -576,27 +587,6 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 72MHz
       - 512KB
       - 64KB
-    * - ``genericSTM32F103T8``
-      - `STM32F103T8 (20k RAM. 64k Flash) <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103T8T6
-      - 72MHz
-      - 20KB
-      - 64KB
-    * - ``genericSTM32F103TB``
-      - `STM32F103TB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103tb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103TBT6
-      - 72MHz
-      - 128KB
-      - 20KB
-    * - ``genericSTM32F103VB``
-      - `STM32F103VB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103vb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103VBT6
-      - 72MHz
-      - 128KB
-      - 20KB
     * - ``genericSTM32F103VC``
       - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
@@ -604,38 +594,10 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 72MHz
       - 256KB
       - 48KB
-    * - ``genericSTM32F103VD``
-      - `STM32F103VD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103vd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103VDT6
-      - 72MHz
-      - 384KB
-      - 64KB
     * - ``genericSTM32F103VE``
       - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103VET6
-      - 72MHz
-      - 512KB
-      - 64KB
-    * - ``genericSTM32F103ZC``
-      - `STM32F103ZC (48k RAM. 256k Flash) <http://www.st.com/en/microcontrollers/stm32f103zc.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103ZCT6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``genericSTM32F103ZD``
-      - `STM32F103ZD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103zd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103ZDT6
-      - 72MHz
-      - 384KB
-      - 64KB
-    * - ``genericSTM32F103ZE``
-      - `STM32F103ZE (64k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
@@ -667,20 +629,6 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 72MHz
       - 108KB
       - 17KB
-    * - ``maple_ret6``
-      - `Maple (RET6) <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103RET6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``microduino32_flash``
-      - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103CBT6
-      - 72MHz
-      - 105.47KB
-      - 16.60KB
     * - ``mote_l152rc``
       - `NAMote72 <https://developer.mbed.org/platforms/NAMote-72/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
@@ -1029,27 +977,6 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
-    * - ``genericSTM32F103T8``
-      - `STM32F103T8 (20k RAM. 64k Flash) <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - STM32F103T8T6
-      - 72MHz
-      - 20KB
-      - 64KB
-    * - ``genericSTM32F103TB``
-      - `STM32F103TB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103tb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - STM32F103TBT6
-      - 72MHz
-      - 128KB
-      - 20KB
-    * - ``genericSTM32F103VB``
-      - `STM32F103VB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103vb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - STM32F103VBT6
-      - 72MHz
-      - 128KB
-      - 20KB
     * - ``genericSTM32F103VC``
       - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -1057,38 +984,10 @@ Generic
       - 72MHz
       - 256KB
       - 48KB
-    * - ``genericSTM32F103VD``
-      - `STM32F103VD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103vd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - STM32F103VDT6
-      - 72MHz
-      - 384KB
-      - 64KB
     * - ``genericSTM32F103VE``
       - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - STM32F103VET6
-      - 72MHz
-      - 512KB
-      - 64KB
-    * - ``genericSTM32F103ZC``
-      - `STM32F103ZC (48k RAM. 256k Flash) <http://www.st.com/en/microcontrollers/stm32f103zc.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - STM32F103ZCT6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``genericSTM32F103ZD``
-      - `STM32F103ZD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103zd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - STM32F103ZDT6
-      - 72MHz
-      - 384KB
-      - 64KB
-    * - ``genericSTM32F103ZE``
-      - `STM32F103ZE (64k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
@@ -1134,13 +1033,6 @@ LeafLabs
       - 72MHz
       - 108KB
       - 17KB
-    * - ``maple_ret6``
-      - `Maple (RET6) <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - STM32F103RET6
-      - 72MHz
-      - 256KB
-      - 48KB
 
 MXChip
 ~~~~~~
@@ -1162,27 +1054,6 @@ MXChip
       - 100MHz
       - 1MB
       - 256KB
-
-Microduino
-~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - ID
-      - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - ``microduino32_flash``
-      - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - STM32F103CBT6
-      - 72MHz
-      - 105.47KB
-      - 16.60KB
 
 MultiTech
 ~~~~~~~~~

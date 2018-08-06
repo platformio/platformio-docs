@@ -27,34 +27,45 @@ For more detailed information please visit `vendor site <http://www.atmel.com/pr
 Examples
 --------
 
-Examples are listed from `Atmel SAM development platform repository <https://github.com/platformio/platform-atmelsam/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Atmel SAM development platform repository <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-atmelsam/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-external-libs <https://github.com/platformio/platform-atmelsam/tree/develop/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-atmelsam/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-web-thing-led <https://github.com/platformio/platform-atmelsam/tree/develop/examples/arduino-web-thing-led?utm_source=platformio&utm_medium=docs>`_
-* `mbed-blink <https://github.com/platformio/platform-atmelsam/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-atmelsam/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-atmelsam/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-atmelsam/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-atmelsam/tree/develop/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-external-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-web-thing-led <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-web-thing-led?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -111,11 +122,11 @@ You do not need to use/buy external debugger.
       - 32KB
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::
@@ -149,6 +160,13 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_feather_m4``
+      - `Adafruit Feather M4 (SAMD51) <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_gemma_m0``
       - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -156,10 +174,38 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_itsybitsy_m0``
+      - `Adafruit ItsyBitsy M0 <https://www.adafruit.com/product/3727?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_itsybitsy_m4``
+      - `Adafruit ItsyBitsy M4 (SAMD51) <https://www.adafruit.com/product/3800?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_metro_m0``
       - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_metro_m4``
+      - `Adafruit Metro M4 (SAMD51) <https://www.adafruit.com/product/3382?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - ``adafruit_pirkey``
+      - `Adafruit pIRkey <https://www.adafruit.com/product/3364?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
@@ -448,6 +494,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_feather_m4``
+      - `Adafruit Feather M4 (SAMD51) <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_gemma_m0``
       - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -455,10 +508,38 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_itsybitsy_m0``
+      - `Adafruit ItsyBitsy M0 <https://www.adafruit.com/product/3727?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_itsybitsy_m4``
+      - `Adafruit ItsyBitsy M4 (SAMD51) <https://www.adafruit.com/product/3800?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_metro_m0``
       - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_metro_m4``
+      - `Adafruit Metro M4 (SAMD51) <https://www.adafruit.com/product/3382?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - ``adafruit_pirkey``
+      - `Adafruit pIRkey <https://www.adafruit.com/product/3364?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB

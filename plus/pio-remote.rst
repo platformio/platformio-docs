@@ -9,17 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIORemote| replace:: **PIO Remote™**
+.. |PIORemote| replace:: **PIO Remote**
 .. |PIOCloud| replace:: PlatformIO Cloud
 
 .. _pioremote:
 
-PIO Remote™
-===========
+PIO Remote
+==========
 
 **Your devices are always with you!**
 
-.. versionadded:: 3.2 (`PlatformIO Plus <https://pioplus.com>`__)
+.. versionadded:: 3.2 (`PIO Plus <https://pioplus.com>`__)
 
 |PIORemote| allows you to work remotely with devices from
 *Anywhere In The World*. No matter where are you now! Run a small and
@@ -28,7 +28,7 @@ list active devices (wireless + wired), to upload firmware (program),
 to process remote unit tests, or to start remote debugging session via
 **Remote Serial Port Monitor**.
 
-Using PIO Remote™ you can share your devices with colleagues across your
+Using PIO Remote you can share your devices with colleagues across your
 organization or friends. In combination with :ref:`ide_cloud`, you can create
 awesome things at any time when inspiration comes to you.
 
@@ -54,7 +54,7 @@ Technology
 
 .. image:: ../_static/pio-remote-architecture.png
 
-|PIORemote| is an own `PlatformIO Plus <https://pioplus.com/>`__ technology
+|PIORemote| is an own `PIO Plus <https://pioplus.com/>`__ technology
 for remote solutions without external dependencies to
 operation system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
 The Server component (|PIOCloud|) plays a role of coupling link between

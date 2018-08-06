@@ -82,86 +82,6 @@ processes:
 This option can be set by global environment variable
 :envvar:`PLATFORMIO_BUILD_FLAGS`.
 
-Example:
-
-.. code-block:: ini
-
-    [env:specific_defines]
-    build_flags = -DFOO -DBAR=1 -DFLOAT_VALUE=1.23457e+07
-
-    [env:string_defines]
-    build_flags = '-DHELLO="World!"' '-DWIFI_PASS="My password"'
-
-    [env:specific_inclibs]
-    build_flags = -I/opt/include -L/opt/lib -lfoo
-
-    [env:specific_ld_script]
-    build_flags = -Wl,-T/path/to/ld_script.ld
-
-
-.. _projectconf_dynamic_build_flags:
-
-Dynamic build flags
-'''''''''''''''''''
-
-PlatformIO Core allows to run external command/script which outputs build flags.
-PIO will automatically parse the output and append flags to a build environment.
-**You can use any shell or programming language.**
-
-This external command will be called on each :ref:`cmd_run` command before
-building/uploading process.
-
-Use Cases:
-
- * Macro with the latest VCS revision/tag "on-the-fly"
- * Generate dynamic headers (``*.h``)
- * Process media content before generating SPIFFS image
- * Make some changes to source code or related libraries
-
-.. note::
-  If you need more advanced control and would like to apply changes to
-  PIO Build System environment, please refer to :ref:`projectconf_section_env_advanced`
-  and use Pre/Post Extra Scripts.
-
-Example:
-
-.. code-block:: ini
-
-    [env:generate_flags_with_external_command]
-    build_flags = !cmd_or_path_to_script
-
-
-**Use Case: Get the latest GIT revision "on-the-fly"**
-
-*Unix*
-
-.. code-block:: ini
-
-    [env:git_revision_macro]
-    build_flags = !echo "-DPIO_SRC_REV="$(git rev-parse HEAD)
-
-*Windows*
-
-You need to create a separate file named ``print_git_rev.bat`` and place it
-near ``platformio.ini``.
-
-``platformio.ini``:
-
-.. code-block:: ini
-
-    [env:git_revision_macro]
-    build_flags = !print_git_rev.bat
-
-``print_git_rev.bat``:
-
-.. code-block:: bat
-
-    @echo off
-    FOR /F "tokens=1 delims=" %%A in ('git rev-parse HEAD') do echo -DPIO_SRC_REV=%%A
-
-
---------------
-
 For more detailed information about available flags/options go to:
 
 * `Options to Request or Suppress Warnings
@@ -177,6 +97,114 @@ For more detailed information about available flags/options go to:
 * `Options for Linking <https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html>`_
 * `Options for Directory Search
   <https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html>`_
+
+Examples:
+
+.. code-block:: ini
+
+    [env:specific_defines]
+    build_flags =
+      -DFOO -DBAR=1
+      -D BUILD_ENV_NAME=$PIOENV
+      -D CURRENT_TIME=$UNIX_TIME
+      -DFLOAT_VALUE=1.23457e+07
+
+    [env:string_defines]
+    build_flags =
+      -DHELLO="World!"
+      ; Password with special chars: My pass'word
+      -DWIFI_PASS=\"My\ pass\'word\"
+
+    [env:specific_inclibs]
+    build_flags =
+      -I/opt/include
+      -L/opt/lib
+      -lfoo
+
+    [env:specific_ld_script]
+    build_flags = -Wl,-T/path/to/ld_script.ld
+
+    [env:ignore_incremental_builds]
+    ; We dynamically change the value of "LAST_BUILD_TIME" macro,
+    ; PlatformIO will not cache objects
+    build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
+
+Built-in Variables
+''''''''''''''''''
+
+You can inject into build flags built-in variables, such as:
+
+* ``$PYTHONEXE``, full path to current Python interpreter
+* ``$UNIX_TIME``, current time in Unix format
+* ``$PIOENV``, name of build environment from :ref:`projectconf`
+* ``$PIOPLATFORM``, name of development platform
+* ``$PIOFRAMEWORK``, name of framework
+* ``$PIOHOME_DIR``, PlatformIO Home directory
+* ``$PROJECT_DIR``, project directory
+* ``$PROJECTBUILD_DIR``, project build directory per all environments
+* ``$BUILD_DIR``, build directory per current environment
+* `Need more PlatformIO variables? <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L30:L113>`_
+
+Please use target ``envdump`` for :option:`platformio run --target` command to
+see ALL variables from a build environment.
+
+.. _projectconf_dynamic_build_flags:
+
+Dynamic build flags
+'''''''''''''''''''
+
+PlatformIO allows to run external command/script which outputs build flags
+into STDOUT. PlatformIO will automatically parse this output and append flags
+to a build environment.
+
+**You can use any shell or programming language.**
+
+This external command will be called on each :ref:`cmd_run` command before
+building/uploading process.
+
+Use Cases:
+
+ * Macro with the latest VCS revision/tag "on-the-fly"
+ * Generate dynamic headers (``*.h``)
+ * Process media content before generating SPIFFS image
+ * Make some changes to source code or related libraries
+
+.. note::
+  If you need more advanced control and would like to apply changes to
+  PlatformIO Build System environment, please refer to :ref:`projectconf_advanced_scripting`.
+
+Example:
+
+.. code-block:: ini
+
+    [env:generate_flags_with_external_command]
+    build_flags = !cmd_or_path_to_script
+
+    ; Unix only, get output from internal command
+    build_flags = !echo "-DSOME_MACRO="$(some_cmd arg1 --option1)
+
+
+**Use Case: Create "PIO_SRC_REV" macro with the latest Git revision**
+
+You will need to create a separate file named ``git_rev_macro.py`` and place it
+near ``platformio.ini``.
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:git_revision_macro]
+    build_flags = !python git_rev_macro.py
+
+``git_rev_macro.py``:
+
+.. code-block:: py
+
+    import subprocess
+
+    revision = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip()
+    print "-DPIO_SRC_REV=%s" % revision
+
 
 .. _projectconf_src_build_flags:
 

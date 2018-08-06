@@ -27,30 +27,41 @@ For more detailed information please visit `vendor site <https://riscv.org?utm_s
 Examples
 --------
 
-Examples are listed from `RISC-V development platform repository <https://github.com/platformio/platform-riscv/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `RISC-V development platform repository <https://github.com/platformio/platform-riscv/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `freedom-e-sdk_asm <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_asm?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_dhrystone <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_dhrystone?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_gpio <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_gpio?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_hello <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_smp <https://github.com/platformio/platform-riscv/tree/develop/examples/freedom-e-sdk_smp?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_asm <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_asm?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_dhrystone <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_dhrystone?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_gpio <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_gpio?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_hello <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_smp <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_smp?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -65,18 +76,18 @@ You do not need to use/buy external debugger.
       - RAM
     * - ``freedom-e300-hifive1``
       - `HiFive1 <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_ft2232h` (on-board)
+      - :ref:`debugging_tool_ftdi` (on-board)
       - FE310
       - 320MHz
       - 16MB
       - 16KB
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::

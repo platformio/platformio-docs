@@ -29,17 +29,28 @@ Debugging
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -130,8 +141,8 @@ You do not need to use/buy external debugger.
 Examples
 --------
 
-* `Energia for TI MSP430 <https://github.com/platformio/platform-timsp430/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `Energia for TI TIVA <https://github.com/platformio/platform-titiva/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `Energia for TI MSP430 <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Energia for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------

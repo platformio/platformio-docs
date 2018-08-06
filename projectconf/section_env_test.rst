@@ -177,3 +177,21 @@ Examples
     #endif
 
 2. :ref:`tutorial_stm32cube_debugging_unit_testing`
+
+.. _projectconf_test_build_project_src:
+
+``test_build_project_src``
+--------------------------
+
+Force :ref:`unit_testing` engine to build project source code from
+:ref:`projectconf_pio_src_dir` setting ``test_build_project_src`` to ``true``.
+More detail about :ref:`unit_testing_shared_code`.
+
+
+**Example**
+
+.. code-block:: ini
+
+  [env:myenv]
+  platform = ...
+  test_build_project_src = true

@@ -29,17 +29,28 @@ Debugging
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -56,18 +67,18 @@ You do not need to use/buy external debugger.
     * - ``esp-wrover-kit``
       - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - :ref:`debugging_tool_ft2232h` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - :ref:`debugging_tool_ftdi` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::
@@ -178,7 +189,23 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 4MB
       - 320KB
     * - ``lolin32``
-      - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - `WEMOS LOLIN32 <https://wiki.wemos.cc/products:lolin32:lolin32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32``
+      - `WEMOS LOLIN D32 <https://wiki.wemos.cc/products:d32:d32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32_pro``
+      - `WEMOS LOLIN D32 PRO <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
@@ -225,8 +252,24 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 240MHz
       - 4MB
       - 320KB
+    * - ``ttgo-lora32-v1``
+      - `TTGO LoRa32-OLED V1 <https://www.google.com.ua/search?q=TTGO+LoRa32-OLED+V1&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``xinabox_cw02``
+      - `XinaBox CW02 <https://xinabox.cc/products/cw02?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
@@ -238,7 +281,7 @@ debugging tools. See "Debug" column for compatible debugging tools.
 Examples
 --------
 
-* `ESP-IDF for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `ESP-IDF for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -635,6 +678,14 @@ M5Stack
       - 240MHz
       - 4MB
       - 320KB
+    * - ``m5stack-fire``
+      - `M5Stack FIRE <http://www.m5stack.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
 
 MH-ET Live
 ~~~~~~~~~~
@@ -836,6 +887,29 @@ SparkFun Electronics
       - 4MB
       - 320KB
 
+TTGO
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``ttgo-lora32-v1``
+      - `TTGO LoRa32-OLED V1 <https://www.google.com.ua/search?q=TTGO+LoRa32-OLED+V1&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 ThaiEasyElec
 ~~~~~~~~~~~~
 
@@ -874,7 +948,23 @@ WEMOS
       - Flash
       - RAM
     * - ``lolin32``
-      - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - `WEMOS LOLIN32 <https://wiki.wemos.cc/products:lolin32:lolin32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32``
+      - `WEMOS LOLIN D32 <https://wiki.wemos.cc/products:d32:d32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32_pro``
+      - `WEMOS LOLIN D32 PRO <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - :ref:`Yes <piodebug>`
       - ESP32
@@ -911,6 +1001,29 @@ Widora
       - ESP32
       - 240MHz
       - 16MB
+      - 320KB
+
+XinaBox
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xinabox_cw02``
+      - `XinaBox CW02 <https://xinabox.cc/products/cw02?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
       - 320KB
 
 u-blox

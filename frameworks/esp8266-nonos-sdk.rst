@@ -27,7 +27,7 @@ For more detailed information please visit `vendor site <https://github.com/espr
 Examples
 --------
 
-* `ESP8266 Non-OS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `ESP8266 Non-OS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------

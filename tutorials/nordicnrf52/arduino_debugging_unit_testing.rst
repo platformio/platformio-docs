@@ -11,8 +11,8 @@
 
 .. _tutorial_arduino_debugging_unit_testing:
 
-Get started with Arduino and Nordic nRF52-DK: debugging and unit testing
-============================================================================
+Arduino and Nordic nRF52-DK: debugging and unit testing
+=======================================================
 
 The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vscode` to develop, run and debug a simple project with :ref:`framework_arduino` framework for ``Nordic nRF52-DK`` board.
 

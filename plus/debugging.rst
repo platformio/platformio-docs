@@ -18,7 +18,7 @@ PIO Unified Debugger
 
 **It Simply Works. Easier than ever before!**
 
-.. versionadded:: 3.4 (`PlatformIO Plus <https://pioplus.com>`__)
+.. versionadded:: 3.4 (`PIO Plus <https://pioplus.com>`__)
 
 .. note::
 
@@ -59,6 +59,7 @@ A registration is **FREE**.
 Tutorials
 ---------
 
+* `ThingForward: First steps with PlatformIO’s Unified Debugger <https://www.thingforward.io/techblog/2018-07-04-first-steps-with-platformios-unified-debugger.html>`_
 * `[VIDEO] ThingForward - Intro to PIO Unified Debugger using ARM mbed OS and PlatformIO IDE for VSCode <https://www.youtube.com/watch?v=GtlsW3FDN3E>`_
 * :ref:`tutorial_stm32cube_debugging_unit_testing`
 
@@ -90,11 +91,25 @@ Configuration
 
 .. _debugging_tools:
 
-Tools
------
+Tools & Debug Probes
+--------------------
 
 You can switch between debugging tools using :ref:`projectconf_debug_tool`
 option.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system:
+
+    :Windows:
+        Please check official documentation for your debug tool and install
+        required drivers or use related tools, such as Zadig.
+
+    :Mac:
+        You don't need to install extra drivers. Nevertheless, please check
+        official documentation.
+
+    :Linux:
+        Please install "udev" rules :ref:`faq_udev_rules`
 
 .. contents::
     :local:
@@ -104,204 +119,551 @@ option.
 Atmel-ICE
 ~~~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``atmel-ice``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``atmel-ice``
 
-Atmel-ICE is a powerful development tool for debugging and programming ARM®
-Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability.
+:Picture:
+  .. image:: ../_static/debug_probes/atmel-ice.jpg
+    :target: https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs
 
-`More details <https://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs>`__
+:Description:
+  Atmel-ICE is a powerful development tool for debugging and programming ARM®
+  Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability.
+  `Vendor information... <https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs>`__
+
+.. begin_compatible_platforms_atmel-ice
+
+:Compatible Platforms:
+
+  * :ref:`platform_atmelsam`
+
+.. end_compatible_platforms_atmel-ice
 
 .. _debugging_tool_blackmagic:
 
 Black Magic Probe
 ~~~~~~~~~~~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``blackmagic``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``blackmagic``
 
-The Black Magic Probe is a modern, in-application debugging tool for embedded
-microprocessors. It is able to control and examine the state of the target
-microprocessor using a JTAG or Serial Wire Debugging (SWD) port and on-chip
-debug logic provided by the microprocessor. The probe connects to a host
-computer using a standard USB interface.
+:Picture:
+  .. image:: ../_static/debug_probes/blackmagic.jpg
+    :target: https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs
 
-Also, see :ref:`debugging_tool_custom` debugging configuration with
-Black Magic Probe.
+:Description:
+  The Black Magic Probe is a modern, in-application debugging tool for embedded
+  microprocessors. It is able to control and examine the state of the target
+  microprocessor using a JTAG or Serial Wire Debugging (SWD) port and on-chip
+  debug logic provided by the microprocessor. The probe connects to a host
+  computer using a standard USB interface.
+  `Vendor information... <https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs>`__
 
-`More details <https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs>`__
+  Also, see :ref:`debugging_tool_custom` debugging configuration with
+  Black Magic Probe.
+
+.. begin_compatible_platforms_blackmagic
+
+:Compatible Platforms:
+
+  * :ref:`platform_atmelsam`
+  * :ref:`platform_freescalekinetis`
+  * :ref:`platform_nordicnrf51`
+  * :ref:`platform_nordicnrf52`
+  * :ref:`platform_nxplpc`
+  * :ref:`platform_siliconlabsefm32`
+  * :ref:`platform_ststm32`
+
+.. end_compatible_platforms_blackmagic
 
 .. _debugging_tool_cmsis-dap:
 
 CMSIS-DAP
 ~~~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``cmsis-dap``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``cmsis-dap``
 
-CMSIS-DAP is generally implemented as an on-board interface chip, providing
-direct USB connection from a development board to a debugger running on a host
-computer on one side, and over JTAG (Joint Test Action Group) or SWD
-(Serial Wire Debug) to the target device to access the Coresight DAP on the other.
+:Picture:
+  .. image:: ../_static/debug_probes/cmsis-dap.png
+    :target: https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs
 
-`More details <https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs>`__
+:Description:
+  CMSIS-DAP is generally implemented as an on-board interface chip, providing
+  direct USB connection from a development board to a debugger running on a host
+  computer on one side, and over JTAG (Joint Test Action Group) or SWD
+  (Serial Wire Debug) to the target device to access the Coresight DAP on the other.
+  `Vendor information... <https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs>`__
 
-.. _debugging_tool_ft2232h:
+.. begin_compatible_platforms_cmsis-dap
 
-FTDI FT2232H
-~~~~~~~~~~~~
+:Compatible Platforms:
 
-:ref:`projectconf_debug_tool` = ``ft2232h``
+  * :ref:`platform_atmelsam`
+  * :ref:`platform_freescalekinetis`
+  * :ref:`platform_maxim32`
+  * :ref:`platform_nordicnrf51`
+  * :ref:`platform_nordicnrf52`
+  * :ref:`platform_nxplpc`
+  * :ref:`platform_ststm32`
+  * :ref:`platform_wiznet7500`
 
-The FT2232H is a USB 2.0 Hi-Speed (480Mb/s) to UART/FIFO IC. It has the
-capability of being configured in a variety of industry standard serial or
-parallel interfaces.
+.. end_compatible_platforms_cmsis-dap
 
-Building on the innovative features of the FT2232, the FT2232H has two
-multi-protocol synchronous serial engines (MPSSEs) which allow for
-communication using JTAG, I2C and SPI on two channels simultaneously.
+.. _debugging_tool_ftdi:
 
-`More details <http://www.ftdichip.com/Products/ICs/FT2232H.html?utm_source=platformio&utm_medium=docs>`__
+FTDI Chip
+~~~~~~~~~
+
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``ftdi``
+
+:Picture:
+  .. image:: ../_static/debug_probes/ftdi.jpg
+    :target: http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs
+
+:Description:
+  FTDI Chip develops innovative silicon solutions that enhance interaction with today’s technology. When a designer needs to add a USB port, rest assured that FTDI Chip has a full range of USB solutions to get the job done... <http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs>`__
+
+:Drivers:
+  :Windows:
+      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+  :Mac:
+      You don't need to install extra drivers. Nevertheless, please check
+      official documentation.
+
+  :Linux:
+      Please install "udev" rules :ref:`faq_udev_rules`.
+
+.. begin_compatible_platforms_ftdi
+
+:Compatible Platforms:
+
+  * :ref:`platform_espressif32`
+  * :ref:`platform_riscv`
+  * :ref:`platform_samsung_artik`
+
+.. end_compatible_platforms_ftdi
 
 .. _debugging_tool_jlink:
 
 J-LINK
 ~~~~~~
 
-:ref:`projectconf_debug_tool` = ``jlink``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``jlink``
 
-SEGGER J-Links are the most widely used line of debug probes available today.
-They've proven their value for more than 10 years with over 400,000 units sold,
-including OEM versions and on-board solutions. This popularity stems from the
-unparalleled performance, extensive feature set, large number of supported
-CPUs, and compatibility with all popular development environments.
+:Picture:
+  .. image:: ../_static/debug_probes/jlink.png
+    :target: https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs
 
-* Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/?utm_source=platformio&utm_medium=docs>`_
-* `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php?utm_source=platformio&utm_medium=docs>`__
+:Description:
+  SEGGER J-Links are the most widely used line of debug probes available today.
+  They've proven their value for more than 10 years with over 400,000 units sold,
+  including OEM versions and on-board solutions. This popularity stems from the
+  unparalleled performance, extensive feature set, large number of supported
+  CPUs, and compatibility with all popular development environments.
+  `Vendor information... <https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs>`__
 
-Also, see :ref:`debugging_tool_custom` debugging configuration with
-J-Link GDB Server.
+  * Install `J-Link GDB Server <https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/?utm_source=platformio&utm_medium=docs>`_
+  * `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php?utm_source=platformio&utm_medium=docs>`__
 
-`More details <https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs>`__
+  Also, see :ref:`debugging_tool_custom` debugging configuration with
+  J-Link GDB Server.
+
+.. begin_compatible_platforms_jlink
+
+:Compatible Platforms:
+
+  * :ref:`platform_atmelsam`
+  * :ref:`platform_freescalekinetis`
+  * :ref:`platform_infineonxmc`
+  * :ref:`platform_nordicnrf51`
+  * :ref:`platform_nordicnrf52`
+  * :ref:`platform_nxplpc`
+  * :ref:`platform_siliconlabsefm32`
+  * :ref:`platform_ststm32`
+  * :ref:`platform_teensy`
+  * :ref:`platform_wiznet7500`
+
+.. end_compatible_platforms_jlink
 
 .. _debugging_tool_minimodule:
 
-Mini-Module
-~~~~~~~~~~~
+Mini-Module FT2232H
+~~~~~~~~~~~~~~~~~~~
 
-The FT2232H Mini Module is a USB to dual channel serial/MPSSE/FIFO interface
-converter module based on the FT2232H USB Hi-Speed IC. The FT2232H handles all
-the USB signalling and protocol handling. The module provides access to device
-I/O interfaces via 2 double row 0.1" pitch male connectors.  The module is
-ideal for development purposes to quickly prove functionality of adding USB
-to a target design.
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``minimodule``
 
-`More details <http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini>`__
+:Picture:
+  .. image:: ../_static/debug_probes/minimodule.jpg
+    :target: http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini
+
+:Description:
+  The FT2232H Mini Module is a USB to dual channel serial/MPSSE/FIFO interface
+  converter module based on the FT2232H USB Hi-Speed IC. The FT2232H handles all
+  the USB signalling and protocol handling. The module provides access to device
+  I/O interfaces via 2 double row 0.1" pitch male connectors.  The module is
+  ideal for development purposes to quickly prove functionality of adding USB
+  to a target design.
+  `Vendor information... <http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini>`__
+
+:Wiring Connections:
+  .. list-table::
+    :header-rows:  1
+
+    * - FT2232H Mini-Module Pin
+      - Board JTAG Pin
+    * - AD0 [CN2-7]
+      - TCK
+    * - AD1 [CN2-10]
+      - TDI
+    * - AD2 [CN2-9]
+      - TDO
+    * - AD3 [CN2-12]
+      - TMS
+    * - AC2 [CN2-20]
+      - RST
+    * - GND [CN2-2]
+      - GND
+
+  You will also need to connect Vbus [CN3-1] to Vcc [CN3-3] of FT2232H Mini-Module
+  to power the FTDI chip. See `FT2232H Mini-Module Datasheet <http://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_FT2232H_Mini_Module.pdf>`_
+
+:Drivers:
+  :Windows:
+      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+  :Mac:
+      You don't need to install extra drivers. Nevertheless, please check
+      official documentation.
+
+  :Linux:
+      Please install "udev" rules :ref:`faq_udev_rules`.
+
+.. begin_compatible_platforms_minimodule
+
+:Compatible Platforms:
+
+  * :ref:`platform_espressif32`
+
+.. end_compatible_platforms_minimodule
 
 .. _debugging_tool_mspdebug:
 
 MSP Debug
 ~~~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``mspdebug``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``mspdebug``
 
-The MSP debug stack (MSPDS) for all MSP430™ microcontrollers (MCUs) and
-SimpleLink™ MSP432™ devices consists of a static library on the host system
-side as well as an embedded firmware that runs on debug tools including the
-MSP-FET, MSP-FET430UIF or on-board eZ debuggers. It is the bridging element
-between all PC software and all MSP430 and SimpleLink MSP432 microcontroller
-derivatives and handles tasks such as code download, stepping through code or
-break points
+:Description:
+  The MSP debug stack (MSPDS) for all MSP430™ microcontrollers (MCUs) and
+  SimpleLink™ MSP432™ devices consists of a static library on the host system
+  side as well as an embedded firmware that runs on debug tools including the
+  MSP-FET, MSP-FET430UIF or on-board eZ debuggers. It is the bridging element
+  between all PC software and all MSP430 and SimpleLink MSP432 microcontroller
+  derivatives and handles tasks such as code download, stepping through code or
+  break points.
+  `Vendor information... <http://www.ti.com/tool/mspds?utm_source=platformio&utm_medium=docs>`__
 
-`More details <http://www.ti.com/tool/mspds?utm_source=platformio&utm_medium=docs>`__
+.. begin_compatible_platforms_mspdebug
+
+:Compatible Platforms:
+
+  * :ref:`platform_timsp430`
+
+.. end_compatible_platforms_mspdebug
 
 .. _debugging_tool_olimex-arm-usb-ocd:
 
 Olimex ARM-USB-OCD
 ~~~~~~~~~~~~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``olimex-arm-usb-ocd``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``olimex-arm-usb-ocd``
 
-3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power supply
-5-9-12VDC device (supported by OpenOCD ARM debugger software).
+:Picture:
+  .. image:: ../_static/debug_probes/olimex-arm-usb-ocd.jpg
+    :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/?utm_source=platformio&utm_medium=docs
 
-`More details <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD//?utm_source=platformio&utm_medium=docs>`__
+:Description:
+  3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power supply
+  5-9-12VDC device (supported by OpenOCD ARM debugger software).
+  `Vendor information... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/?utm_source=platformio&utm_medium=docs>`__
+
+:Wiring Connections:
+  .. list-table::
+    :header-rows:  1
+
+    * - Olimex ARM-USB-OCD Pin
+      - Board JTAG Pin
+    * - 11
+      - TCK
+    * - 5
+      - TDI
+    * - 13
+      - TDO
+    * - 7
+      - TMS
+    * - 3
+      - RST
+    * - 4
+      - GND
+
+:Drivers:
+  :Windows:
+      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+  :Mac:
+      You don't need to install extra drivers. Nevertheless, please check
+      official documentation.
+
+  :Linux:
+      Please install "udev" rules :ref:`faq_udev_rules`.
+
+.. begin_compatible_platforms_olimex-arm-usb-ocd
+
+:Compatible Platforms:
+
+  * :ref:`platform_espressif32`
+
+.. end_compatible_platforms_olimex-arm-usb-ocd
 
 .. _debugging_tool_olimex-arm-usb-ocd-h:
 
 Olimex ARM-USB-OCD-H
 ~~~~~~~~~~~~~~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``olimex-arm-usb-ocd-h``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``olimex-arm-usb-ocd-h``
 
-High-speed 3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power
- supply 5VDC device.
+:Picture:
+  .. image:: ../_static/debug_probes/olimex-arm-usb-ocd-h.jpg
+    :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs
 
-`More details <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs>`__
+:Description:
+  High-speed 3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power
+  supply 5VDC device.
+  `Vendor information... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs>`__
+
+:Wiring Connections:
+  .. list-table::
+    :header-rows:  1
+
+    * - Olimex ARM-USB-OCD-H Pin
+      - Board JTAG Pin
+    * - 11
+      - TCK
+    * - 5
+      - TDI
+    * - 13
+      - TDO
+    * - 7
+      - TMS
+    * - 3
+      - RST
+    * - 4
+      - GND
+
+:Drivers:
+  :Windows:
+      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+  :Mac:
+      You don't need to install extra drivers. Nevertheless, please check
+      official documentation.
+
+  :Linux:
+      Please install "udev" rules :ref:`faq_udev_rules`.
+
+.. begin_compatible_platforms_olimex-arm-usb-ocd-h
+
+:Compatible Platforms:
+
+  * :ref:`platform_espressif32`
+
+.. end_compatible_platforms_olimex-arm-usb-ocd-h
 
 .. _debugging_tool_olimex-jtag-tiny:
 
 Olimex ARM-USB-TINY
 ~~~~~~~~~~~~~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``olimex-jtag-tiny``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``olimex-jtag-tiny``
 
-Low-cost and high-speed ARM/ESP32 USB JTAG
+:Picture:
+  .. image:: ../_static/debug_probes/olimex-jtag-tiny.jpg
+    :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs
 
-`More details <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs>`__
+:Description:
+  Low-cost and high-speed ARM/ESP32 USB JTAG.
+  `Vendor information... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs>`__
+
+:Wiring Connections:
+  .. list-table::
+    :header-rows:  1
+
+    * - Olimex ARM-USB-TINY Pin
+      - Board JTAG Pin
+    * - 11
+      - TCK
+    * - 5
+      - TDI
+    * - 13
+      - TDO
+    * - 7
+      - TMS
+    * - 3
+      - RST
+    * - 4
+      - GND
+
+:Drivers:
+  :Windows:
+      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+  :Mac:
+      You don't need to install extra drivers. Nevertheless, please check
+      official documentation.
+
+  :Linux:
+      Please install "udev" rules :ref:`faq_udev_rules`.
+
+.. begin_compatible_platforms_olimex-jtag-tiny
+
+:Compatible Platforms:
+
+  * :ref:`platform_espressif32`
+
+.. end_compatible_platforms_olimex-jtag-tiny
 
 .. _debugging_tool_olimex-arm-usb-tiny-h:
 
 Olimex ARM-USB-TINY-H
 ~~~~~~~~~~~~~~~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``olimex-arm-usb-tiny-h``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``olimex-arm-usb-tiny-h``
 
-Low-cost and high-speed ARM/ESP32 USB JTAG
+:Picture:
+  .. image:: ../_static/debug_probes/olimex-arm-usb-tiny-h.jpg
+    :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY-H/?utm_source=platformio&utm_medium=docs
 
-`More details <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY-H/?utm_source=platformio&utm_medium=docs>`__
+:Description:
+  Low-cost and high-speed ARM/ESP32 USB JTAG.
+  `Vendor information... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY-H/?utm_source=platformio&utm_medium=docs>`__
+
+:Wiring Connections:
+  .. list-table::
+    :header-rows:  1
+
+    * - Olimex ARM-USB-TINY-H Pin
+      - Board JTAG Pin
+    * - 11
+      - TCK
+    * - 5
+      - TDI
+    * - 13
+      - TDO
+    * - 7
+      - TMS
+    * - 3
+      - RST
+    * - 4
+      - GND
+
+:Drivers:
+  :Windows:
+      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+  :Mac:
+      You don't need to install extra drivers. Nevertheless, please check
+      official documentation.
+
+  :Linux:
+      Please install "udev" rules :ref:`faq_udev_rules`.
+
+.. begin_compatible_platforms_olimex-arm-usb-tiny-h
+
+:Compatible Platforms:
+
+  * :ref:`platform_espressif32`
+  * :ref:`platform_riscv`
+
+.. end_compatible_platforms_olimex-arm-usb-tiny-h
 
 .. _debugging_tool_ti-icdi:
 
 TI-ICDI
 ~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``ti-icdi``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``ti-icdi``
 
-Tiva™ C Series evaluation and reference design kits provide an integrated
-In-Circuit Debug Interface (ICDI) which allows programming and debugging of
-the onboard C Series microcontroller
+:Description:
+  Tiva™ C Series evaluation and reference design kits provide an integrated
+  In-Circuit Debug Interface (ICDI) which allows programming and debugging of
+  the onboard C Series microcontroller.
+  `Vendor information... <http://www.ti.com/tool/stellaris_icdi_drivers?utm_source=platformio&utm_medium=docs>`__
 
-`More details <http://www.ti.com/tool/stellaris_icdi_drivers?utm_source=platformio&utm_medium=docs>`__
+.. begin_compatible_platforms_ti-icdi
+
+:Compatible Platforms:
+
+  * :ref:`platform_titiva`
+
+.. end_compatible_platforms_ti-icdi
 
 .. _debugging_tool_stlink:
 
 ST-LINK
 ~~~~~~~
 
-:ref:`projectconf_debug_tool` = ``stlink``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``stlink``
 
-The ST-LINK is an in-circuit debugger and programmer for the STM8 and STM32
-microcontroller families. The single wire interface module (SWIM) and
-JTAG/serial wire debugging (SWD) interfaces are used to communicate with any
-STM8 or STM32 microcontroller located on an application board.
+:Picture:
+  .. image:: ../_static/debug_probes/stlink.jpg
+    :target: http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs
 
-`More details <http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs>`__
+:Description:
+  The ST-LINK is an in-circuit debugger and programmer for the STM8 and STM32
+  microcontroller families. The single wire interface module (SWIM) and
+  JTAG/serial wire debugging (SWD) interfaces are used to communicate with any
+  STM8 or STM32 microcontroller located on an application board.
+  `Vendor information... <http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs>`__
+
+.. begin_compatible_platforms_stlink
+
+:Compatible Platforms:
+
+  * :ref:`platform_nordicnrf51`
+  * :ref:`platform_nordicnrf52`
+  * :ref:`platform_ststm32`
+
+.. end_compatible_platforms_stlink
 
 .. _debugging_tool_custom:
 
 Custom
 ~~~~~~
 
-:ref:`projectconf_debug_tool` = ``custom``
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``custom``
 
-Custom debugging configuration:
+:Custom debugging configuration:
 
-* :ref:`projectconf_debug_init_break`
-* :ref:`projectconf_debug_init_cmds`
-* :ref:`projectconf_debug_extra_cmds` (conditional project breakpoints, extra
-  configuration, etc.)
-* :ref:`projectconf_debug_load_cmd`
-* :ref:`projectconf_debug_server`
-* :ref:`projectconf_debug_port`
-
+  * :ref:`projectconf_debug_init_break`
+  * :ref:`projectconf_debug_init_cmds`
+  * :ref:`projectconf_debug_extra_cmds` (conditional project breakpoints, extra
+    configuration, etc.)
+  * :ref:`projectconf_debug_load_cmd`
+  * :ref:`projectconf_debug_server`
+  * :ref:`projectconf_debug_port`
 
 Examples
 ^^^^^^^^
@@ -521,6 +883,9 @@ Platforms
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
+    * - :ref:`platform_infineonxmc`
+      - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
+
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
@@ -528,13 +893,10 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
-
-    * - :ref:`platform_wiznet7500`
-      - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
     * - :ref:`platform_riscv`
       - RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
@@ -556,6 +918,9 @@ Platforms
 
     * - :ref:`platform_titiva`
       - Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
+
+    * - :ref:`platform_wiznet7500`
+      - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
 Frameworks
 ----------
@@ -688,6 +1053,14 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_feather_m4``
+      - `Adafruit Feather M4 (SAMD51) <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_gemma_m0``
       - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -696,11 +1069,43 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - ``adafruit_itsybitsy_m0``
+      - `Adafruit ItsyBitsy M0 <https://www.adafruit.com/product/3727?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_itsybitsy_m4``
+      - `Adafruit ItsyBitsy M4 (SAMD51) <https://www.adafruit.com/product/3800?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - ``adafruit_metro_m0``
       - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``adafruit_metro_m4``
+      - `Adafruit Metro M4 (SAMD51) <https://www.adafruit.com/product/3382?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - ``adafruit_pirkey``
+      - `Adafruit pIRkey <https://www.adafruit.com/product/3364?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
@@ -1305,7 +1710,7 @@ Espressif
     * - ``esp-wrover-kit``
       - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
-      - :ref:`debugging_tool_ft2232h` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - :ref:`debugging_tool_ftdi` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
       - 4MB
@@ -1492,30 +1897,6 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
-    * - ``genericSTM32F103T8``
-      - `STM32F103T8 (20k RAM. 64k Flash) <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103T8T6
-      - 72MHz
-      - 20KB
-      - 64KB
-    * - ``genericSTM32F103TB``
-      - `STM32F103TB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103tb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103TBT6
-      - 72MHz
-      - 128KB
-      - 20KB
-    * - ``genericSTM32F103VB``
-      - `STM32F103VB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103vb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103VBT6
-      - 72MHz
-      - 128KB
-      - 20KB
     * - ``genericSTM32F103VC``
       - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -1524,43 +1905,11 @@ Generic
       - 72MHz
       - 256KB
       - 48KB
-    * - ``genericSTM32F103VD``
-      - `STM32F103VD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103vd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103VDT6
-      - 72MHz
-      - 384KB
-      - 64KB
     * - ``genericSTM32F103VE``
       - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103VET6
-      - 72MHz
-      - 512KB
-      - 64KB
-    * - ``genericSTM32F103ZC``
-      - `STM32F103ZC (48k RAM. 256k Flash) <http://www.st.com/en/microcontrollers/stm32f103zc.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103ZCT6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``genericSTM32F103ZD``
-      - `STM32F103ZD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103zd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103ZDT6
-      - 72MHz
-      - 384KB
-      - 64KB
-    * - ``genericSTM32F103ZE``
-      - `STM32F103ZE (64k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
@@ -1603,6 +1952,77 @@ Hornbill
       - 240MHz
       - 4MB
       - 320KB
+
+Infineon
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xmc1100_boot_kit``
+      - `XMC1100 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1100_h_bridge2go``
+      - `XMC1100 H-Bridge 2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1100_xmc2go``
+      - `XMC1100 XMC2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1100
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1300_boot_kit``
+      - `XMC1300 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1300
+      - 32MHz
+      - 64KB
+      - 64KB
+    * - ``xmc1300_sense2gol``
+      - `XMC1300 Sense2GoL <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC1300
+      - 32MHz
+      - 64KB
+      - 122.23KB
+    * - ``xmc4200_distance2go``
+      - `XMC4200 Distance2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC4200
+      - 80MHz
+      - 250KB
+      - 256KB
+    * - ``xmc4700_relax_kit``
+      - `XMC4700 Relax Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Infineon XMC <platform_infineonxmc>`
+      - :ref:`debugging_tool_jlink` (on-board)
+      - XMC4700
+      - 144MHz
+      - 2.00MB
+      - 1.95MB
 
 JKSoft
 ~~~~~~
@@ -1665,14 +2085,6 @@ LeafLabs
       - 72MHz
       - 108KB
       - 17KB
-    * - ``maple_ret6``
-      - `Maple (RET6) <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103RET6
-      - 72MHz
-      - 256KB
-      - 48KB
 
 MH-ET Live
 ~~~~~~~~~~
@@ -1781,29 +2193,6 @@ Maxim
       - 24MHz
       - 256KB
       - 32KB
-
-Microduino
-~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - ID
-      - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - ``microduino32_flash``
-      - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103CBT6
-      - 72MHz
-      - 105.47KB
-      - 16.60KB
 
 Micromint
 ~~~~~~~~~
@@ -2233,6 +2622,29 @@ RedBearLab
       - 64MHz
       - 512KB
       - 64KB
+
+RoboticsBrno
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``alksesp32``
+      - `ALKS ESP32 <https://github.com/RoboticsBrno/ArduinoLearningKitStarter.git?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 RushUp
 ~~~~~~
@@ -2767,7 +3179,7 @@ Samsung
     * - ``artik_053``
       - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Samsung ARTIK <platform_samsung_artik>`
-      - :ref:`debugging_tool_custom` (default)
+      - :ref:`debugging_tool_ftdi` (default)
       - S5JT200
       - 320MHz
       - 8MB
@@ -2868,7 +3280,7 @@ SiFive
     * - ``freedom-e300-hifive1``
       - `HiFive1 <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`RISC-V <platform_riscv>`
-      - :ref:`debugging_tool_ft2232h` (on-board)
+      - :ref:`debugging_tool_ftdi` (on-board)
       - FE310
       - 320MHz
       - 16MB
@@ -3156,6 +3568,29 @@ TI
       - 1MB
       - 256KB
 
+TTGO
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``ttgo-lora32-v1``
+      - `TTGO LoRa32-OLED V1 <https://www.google.com.ua/search?q=TTGO+LoRa32-OLED+V1&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Taida Century
 ~~~~~~~~~~~~~
 
@@ -3287,7 +3722,23 @@ WEMOS
       - Flash
       - RAM
     * - ``lolin32``
-      - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - `WEMOS LOLIN32 <https://wiki.wemos.cc/products:lolin32:lolin32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32``
+      - `WEMOS LOLIN D32 <https://wiki.wemos.cc/products:d32:d32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32_pro``
+      - `WEMOS LOLIN D32 PRO <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
@@ -3395,6 +3846,29 @@ Xilinx
       - 1500MHz
       - 16MB
       - 256MB
+
+XinaBox
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xinabox_cw02``
+      - `XinaBox CW02 <https://xinabox.cc/products/cw02?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 32 <platform_espressif32>`
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 ng-beacon
 ~~~~~~~~~

@@ -28,36 +28,49 @@ For more detailed information please visit `vendor site <https://espressif.com/?
 Examples
 --------
 
-Examples are listed from `Espressif 32 development platform repository <https://github.com/platformio/platform-espressif32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Espressif 32 development platform repository <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-espressif32/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/develop/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
-* `espidf-ble-adv <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ble-adv?utm_source=platformio&utm_medium=docs>`_
-* `espidf-coap-server <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-coap-server?utm_source=platformio&utm_medium=docs>`_
-* `espidf-exceptions <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-exceptions?utm_source=platformio&utm_medium=docs>`_
-* `espidf-hello-world <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-hello-world?utm_source=platformio&utm_medium=docs>`_
-* `espidf-http-request <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-http-request?utm_source=platformio&utm_medium=docs>`_
-* `espidf-peripherals-uart <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-peripherals-uart?utm_source=platformio&utm_medium=docs>`_
-* `espidf-storage-sdcard <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-storage-sdcard?utm_source=platformio&utm_medium=docs>`_
-* `pumbaa-blink <https://github.com/platformio/platform-espressif32/tree/develop/examples/pumbaa-blink?utm_source=platformio&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-espressif32/tree/develop/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
+* `espidf-aws-iot <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-aws-iot?utm_source=platformio&utm_medium=docs>`_
+* `espidf-ble-adv <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ble-adv?utm_source=platformio&utm_medium=docs>`_
+* `espidf-coap-server <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-coap-server?utm_source=platformio&utm_medium=docs>`_
+* `espidf-exceptions <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-exceptions?utm_source=platformio&utm_medium=docs>`_
+* `espidf-hello-world <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-hello-world?utm_source=platformio&utm_medium=docs>`_
+* `espidf-http-request <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-http-request?utm_source=platformio&utm_medium=docs>`_
+* `espidf-peripherals-uart <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-uart?utm_source=platformio&utm_medium=docs>`_
+* `espidf-storage-sdcard <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-sdcard?utm_source=platformio&utm_medium=docs>`_
+* `pumbaa-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/pumbaa-blink?utm_source=platformio&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+.. include:: espressif32_debug.rst
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -72,18 +85,18 @@ You do not need to use/buy external debugger.
       - RAM
     * - ``esp-wrover-kit``
       - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_ft2232h` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - :ref:`debugging_tool_ftdi` (default, on-board), :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::
@@ -96,6 +109,13 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - Frequency
       - Flash
       - RAM
+    * - ``alksesp32``
+      - `ALKS ESP32 <https://github.com/RoboticsBrno/ArduinoLearningKitStarter.git?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - ``esp32-evb``
       - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
@@ -181,7 +201,21 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 4MB
       - 320KB
     * - ``lolin32``
-      - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - `WEMOS LOLIN32 <https://wiki.wemos.cc/products:lolin32:lolin32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32``
+      - `WEMOS LOLIN D32 <https://wiki.wemos.cc/products:d32:d32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32_pro``
+      - `WEMOS LOLIN D32 PRO <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
@@ -222,8 +256,22 @@ debugging tools. See "Debug" column for compatible debugging tools.
       - 240MHz
       - 4MB
       - 320KB
+    * - ``ttgo-lora32-v1``
+      - `TTGO LoRa32-OLED V1 <https://www.google.com.ua/search?q=TTGO+LoRa32-OLED+V1&utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - ``wemosbat``
       - `WeMos WiFi & Bluetooth Battery <https://www.wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``xinabox_cw02``
+      - `XinaBox CW02 <https://xinabox.cc/products/cw02?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
       - ESP32
       - 240MHz
@@ -684,6 +732,13 @@ M5Stack
       - 240MHz
       - 4MB
       - 320KB
+    * - ``m5stack-fire``
+      - `M5Stack FIRE <http://www.m5stack.com?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
 
 MH-ET Live
 ~~~~~~~~~~
@@ -846,6 +901,27 @@ Onehorse
       - 4MB
       - 320KB
 
+RoboticsBrno
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``alksesp32``
+      - `ALKS ESP32 <https://github.com/RoboticsBrno/ArduinoLearningKitStarter.git?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 SparkFun Electronics
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -861,6 +937,27 @@ SparkFun Electronics
       - RAM
     * - ``esp32thing``
       - `SparkFun ESP32 Thing <https://www.sparkfun.com/products/13907?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+TTGO
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``ttgo-lora32-v1``
+      - `TTGO LoRa32-OLED V1 <https://www.google.com.ua/search?q=TTGO+LoRa32-OLED+V1&utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
@@ -902,7 +999,21 @@ WEMOS
       - Flash
       - RAM
     * - ``lolin32``
-      - `WEMOS LOLIN32 <https://wemos.cc?utm_source=platformio&utm_medium=docs>`_
+      - `WEMOS LOLIN32 <https://wiki.wemos.cc/products:lolin32:lolin32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32``
+      - `WEMOS LOLIN D32 <https://wiki.wemos.cc/products:d32:d32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - ``lolin_d32_pro``
+      - `WEMOS LOLIN D32 PRO <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - ESP32
       - 240MHz
@@ -935,6 +1046,27 @@ Widora
       - ESP32
       - 240MHz
       - 16MB
+      - 320KB
+
+XinaBox
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xinabox_cw02``
+      - `XinaBox CW02 <https://xinabox.cc/products/cw02?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - ESP32
+      - 240MHz
+      - 4MB
       - 320KB
 
 u-blox

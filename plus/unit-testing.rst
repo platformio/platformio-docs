@@ -16,7 +16,7 @@
 PIO Unit Testing
 ================
 
-.. versionadded:: 3.0 (`PlatformIO Plus <https://pioplus.com>`_)
+.. versionadded:: 3.0 (`PIO Plus <https://pioplus.com>`_)
 
 `Unit Testing (wiki) <https://en.wikipedia.org/wiki/Unit_testing>`_
 is a software testing method by which individual units of source code, sets
@@ -199,10 +199,42 @@ Workflow
 5. Run test using the :ref:`cmd_test` command.
 
 
-.. hint::
-  If you have a **shared code** between your "main" program (from :ref:`projectconf_pio_src_dir`) and "test" program, please put it into
-  project's private libraries folder (:ref:`projectconf_pio_lib_dir`).
-  See `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`__ example.
+.. _unit_testing_shared_code:
+
+Shared Code
+~~~~~~~~~~~
+
+|PIOUTE| does not build source code from :ref:`projectconf_pio_src_dir` folder
+by default. If you have a shared/common code between your "main" and "test"
+programs, you have 2 options:
+
+1. **RECOMMENDED**. We recommend to split a program source code into multiple
+   components and place them into :ref:`projectconf_pio_lib_dir` (project's
+   private libraries and components). :ref:`ldf` will find these libraries
+   automatically and include to build process. You will need to include
+   any library/component header file in your test or program source code via
+   ``#include <MyComponent.h>``.
+
+   See `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`__ example. We have "calculator"
+   component in :ref:`projectconf_pio_lib_dir` folder and include it in tests
+   and main program using ``#include <calculator.h>``.
+
+2. Manually instruct PlatformIO to build source code from :ref:`projectconf_pio_src_dir`
+   folder using :ref:`projectconf_test_build_project_src` option in :ref:`projectconf`:
+
+   .. code-block:: ini
+
+      [env:myenv]
+      platform = ...
+      test_build_project_src = true
+
+   This is very useful if you unit test independent library where you
+   can't split source code.
+
+   .. warning::
+       Please note that you will need to use ``#ifdef UNIT_TEST`` and ``#endif``
+       guard to hide non-test related source code. For example, own ``main()``
+       or ``setup() / loop()`` functions.
 
 .. _unit_testing_api:
 

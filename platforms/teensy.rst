@@ -28,33 +28,44 @@ For more detailed information please visit `vendor site <https://www.pjrc.com/te
 Examples
 --------
 
-Examples are listed from `Teensy development platform repository <https://github.com/platformio/platform-teensy/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Teensy development platform repository <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-teensy/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-hid-usb-mouse <https://github.com/platformio/platform-teensy/tree/develop/examples/arduino-hid-usb-mouse?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-teensy/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `mbed-blink <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-teensy/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-hid-usb-mouse <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-hid-usb-mouse?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-External tools
-~~~~~~~~~~~~~~
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::
@@ -143,6 +154,9 @@ Packages
 
     * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
+
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+      - SEGGER J-Link Software and Documentation Pack
 
     * - `tool-teensy <https://www.pjrc.com/teensy/loader.html?utm_source=platformio&utm_medium=docs>`__
       - Teensy Loader

@@ -64,6 +64,8 @@ To enable ``zsh`` completion please run these commands:
     For permanent command completion you need to place commands above to
     ``~/.bashrc`` or ``~/.zshrc`` file.
 
+.. _faq_install_python:
+
 Install Python Interpreter
 --------------------------
 
@@ -75,76 +77,6 @@ and install it. **DON'T FORGET** to select ``Add python.exe to Path`` feature
 on the "Customize" stage, otherwise ``python`` command will not be available.
 
 .. image:: _static/python-installer-add-path.png
-
-
-.. _faq_install_shell_commands:
-
-Install PlatformIO Core Shell Commands
---------------------------------------
-
-:ref:`piocore` consists of 2 standalone tools in a system:
-
-* ``platformio`` or ``pio`` (short alias) - :ref:`userguide`
-* ``piodebuggdb`` - alias of :ref:`cmd_debug`
-
-If you have :ref:`pioide` already installed, you do not need to install
-:ref:`piocore` separately. Just link these tools with your shell:
-
-.. contents::
-    :local:
-
-Unix and Unix-like
-~~~~~~~~~~~~~~~~~~
-
-In Unix and Unix-like systems, there are multiple ways to achieve this.
-
-Method 1
-''''''''
-
-You can add PlatformIO executables' directory to the PATH environmental variable. This method will allow you to execute ``platformio`` commands from any terminal emulator as long as you're logged in as the user PlatformIO is installed and configured for.
-
-If you use Bash as your default shell, you can do it by editing either ``~/.profile`` or ``~/.bash_profile`` and adding the following line:
-
-.. code-block:: shell
-
-    export PATH=$PATH:~/.platformio/penv/bin
-
-If you use Zsh, you can either edit ``~/.zprofile`` and add the code above, or for supporting both, Bash and Zsh, you can first edit ``~/.profile`` and add the code above, then edit ``~/.zprofile`` and add the following line:
-
-.. code-block:: shell
-
-    emulate sh -c '. ~/.profile'
-
-After everithing's done, just restart your session (log out and log back in) and you're good to go.
-
-If you don't know the difference between the two, check out `this page <https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc>`_.
-
-Method 2
-''''''''
-
-Go to the *PlatformIO* menu → *Settings* → *PlatformIO IDE*, scroll down to the *Custom PATH for `platformio` command* and enter the following: ``~/.platformio/penv/bin``. After you've done that, you'll need to go to the *PlatformIO* menu → *Settings* → *PlatformIO IDE Terminal*, scroll down to the *Toggles* section and uncheck the *Login Shell* checkbox. Finally, restart Atom and check out the result.
-
-Method 3
-''''''''
-
-You can create system-wide symlinks. This method is not recommended if you have multiple users on your computer because the symlinks will be broken for other users and they will get errors while executing PlatformIO commands. If that's not a problem, open your system terminal app and paste these commands (**MAY require** administrator access ``sudo``):
-
-.. code-block:: shell
-
-    ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
-    ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
-    ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
-
-After that, you should be able to run PlatformIO from terminal. No restart is required.
-
-Windows
-~~~~~~~
-
-Please read one of these instructions `How do I set or change the PATH system variable? <https://www.google.com.ua/search?q=how+do+i+set+or+change+the+path+system+variable>`_
-
-You need to edit system environment variable called ``Path`` and append
-``C:\Users\{username}\.platformio\penv\Scripts;`` path in the beginning of a
-list (please replace ``{username}`` with your account name).
 
 .. _faq_convert_ino_to_cpp:
 
@@ -274,7 +206,7 @@ Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
     brew uninstall platformio
 
 If you need to have :ref:`piocore` globally in a system, please
-:ref:`faq_install_shell_commands`.
+:ref:`piocore_install_shell_commands`.
 
 'platformio' is not recognized as an internal or external command
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -286,30 +218,6 @@ If you modify system environment variable ``PATH`` in your Bash/Fish/ZSH
 profile, please do not override global ``PATH``. This line
 ``export PATH="/my/custom/path"`` is incorrect. Use ``export PATH="/my/custom/path":$PATH``
 instead.
-
-[Errno 1] Operation not permitted
-'''''''''''''''''''''''''''''''''
-
-Answered in `issue #295 <https://github.com/platformio/platformio-core/issues/295#issuecomment-143772005>`_.
-
-Windows AttributeError: 'module' object has no attribute 'packages'
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Answered in `issue #252 <https://github.com/platformio/platformio-core/issues/252#issuecomment-127072039>`_.
-
-PlatformIO: command not found || An error "pkg_resources.DistributionNotFound"
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Please upgrade *SetupTools* package:
-
-.. code-block:: bash
-
-    [sudo] pip uninstall setuptools
-    [sudo] pip install setuptools
-
-    # Then re-install PlatformIO
-    [sudo] pip uninstall platformio
-    [sudo] pip install platformio
 
 .. _faq_udev_rules:
 
@@ -356,6 +264,21 @@ they are not “root”, doing this issuing
     sudo usermod -a -G plugdev $USER
 
 After this file is installed, physically unplug and reconnect your board.
+
+ImportError: cannot import name _remove_dead_weakref
+''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Windows users can experience this issue when multiple Python interpreters are
+installed in a system and conflict each other. The easy way to fix this
+problem is uninstalling all Python interpreters using Windows Programs Manager
+and installing them manually again.
+
+1. "Windows > Start Menu > Settings > System > Apps & Features", select
+   Python interpreters and uninstall them.
+2. Install the latest Python 2.7 interpreter, see :ref:`faq_install_python` guide
+3. Remove ``C:\Users\YourUserName\.platformio`` and ``C:\.platformio`` folders
+   if exist (do not forget to replace "YourUserName" with the real user name)
+4. Restart :ref:`pioide`.
 
 Package Manager
 ~~~~~~~~~~~~~~~
@@ -405,7 +328,10 @@ system operations. Other solution is to run :ref:`piocore` from a system termina
        # Change directory to PlatformIO Project where is located "platformio.ini"
        cd path/to/platformio/project
 
-       # Force PlatformIO to install all tools
+       # Force PlatformIO to install PIO Home dependencies
+       platformio home
+
+       # Force PlatformIO to install toolchains
        platformio run --target upload
 
 If "platformio" command is not globally available in your environment and you
@@ -418,7 +344,7 @@ use :ref:`pioide`, please use built-in :ref:`piocore` which is located in:
 
 .. note::
     You can add ``platformio`` and ``pio`` commands to your system environment.
-    See :ref:`faq_install_shell_commands`.
+    See :ref:`piocore_install_shell_commands`.
 
 Solution 4: Manual
 ^^^^^^^^^^^^^^^^^^

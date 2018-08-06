@@ -101,7 +101,10 @@ Configuration for the programmers:
         platform = atmelavr
         framework = arduino
         upload_protocol = stk500v1
-        upload_flags = -P$UPLOAD_PORT -b$UPLOAD_SPEED
+        ; each flag in a new line
+        upload_flags =
+            -P$UPLOAD_PORT
+            -b$UPLOAD_SPEED
 
         ; edit these lines
         upload_port = SERIAL_PORT_HERE
@@ -115,7 +118,10 @@ Configuration for the programmers:
         platform = atmelavr
         framework = arduino
         upload_protocol = buspirate
-        upload_flags = -P$UPLOAD_PORT -b$UPLOAD_SPEED
+        ; each flag in a new line
+        upload_flags =
+            -P$UPLOAD_PORT
+            -b$UPLOAD_SPEED
 
         ; edit these lines
         upload_port = SERIAL_PORT_HERE

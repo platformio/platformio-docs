@@ -72,7 +72,7 @@ Example
 
     > platformio remote device list
 
-    PlatformIO Plus (https://pioplus.com)
+    PIO Plus (https://pioplus.com)
 
     Agent innomac.local
     ===================

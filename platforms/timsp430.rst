@@ -27,29 +27,40 @@ For more detailed information please visit `vendor site <http://www.ti.com/lsds/
 Examples
 --------
 
-Examples are listed from `TI MSP430 development platform repository <https://github.com/platformio/platform-timsp430/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `TI MSP430 development platform repository <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-timsp430/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `energia-blink <https://github.com/platformio/platform-timsp430/tree/develop/examples/energia-blink?utm_source=platformio&utm_medium=docs>`_
-* `energia-internal-libs <https://github.com/platformio/platform-timsp430/tree/develop/examples/energia-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-timsp430/tree/develop/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `energia-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/energia-blink?utm_source=platformio&utm_medium=docs>`_
+* `energia-internal-libs <https://github.com/platformio/platform-timsp430/tree/master/examples/energia-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::

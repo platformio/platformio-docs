@@ -27,33 +27,44 @@ For more detailed information please visit `vendor site <https://www.nordicsemi.
 Examples
 --------
 
-Examples are listed from `Nordic nRF51 development platform repository <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Nordic nRF51 development platform repository <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-ble-led <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/arduino-ble-led?utm_source=platformio&utm_medium=docs>`_
-* `arduino-blink <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-ble-thermometer?utm_source=platformio&utm_medium=docs>`_
-* `mbed-blink <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-microbit-hello-world <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-microbit-hello-world?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+* `arduino-ble-led <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-ble-led?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-ble-thermometer?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-microbit-hello-world <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-microbit-hello-world?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -187,11 +198,11 @@ You do not need to use/buy external debugger.
       - 16KB
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::
@@ -287,6 +298,9 @@ Packages
 
     * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
+
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+      - SEGGER J-Link Software and Documentation Pack
 
     * - `tool-nrfjprog <https://www.nordicsemi.com?utm_source=platformio&utm_medium=docs>`__
       - nRF5x command line tool

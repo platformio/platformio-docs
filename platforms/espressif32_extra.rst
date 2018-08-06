@@ -62,6 +62,38 @@ a value. Possible values:
     [env:myenv]
     board_build.flash_mode = qio
 
+External RAM (PSRAM)
+~~~~~~~~~~~~~~~~~~~~
+
+You can enable external RAM using the next extra :ref:`projectconf_build_flags`
+in :ref:`projectconf` depending on a framework type.
+
+Framework :ref:`framework_arduino`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = espressif32
+    framework = arduino
+    board = ...
+    build_flags =
+        -DBOARD_HAS_PSRAM
+        -mfix-esp32-psram-cache-issue
+
+Framework :ref:`framework_espidf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = espressif32
+    framework = espidf
+    board = ...
+    build_flags =
+        -DCONFIG_SPIRAM_CACHE_WORKAROUND
+
+More details are located in the official ESP-IDF documentation -
+`Support for external RAM <http://esp-idf.readthedocs.io/en/latest/api-guides/external-ram.html>`_.
+
 Debug Level
 ~~~~~~~~~~~
 
@@ -120,7 +152,6 @@ of :ref:`projectconf` to enable C++ exceptions for :ref:`framework_espidf`.
 
 See `project example <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-exceptions>`_.
 
-
 Partition Tables
 ~~~~~~~~~~~~~~~~
 You can create a custom partitions table (CSV) following `ESP32 Partition Tables <http://esp-idf.readthedocs.io/en/v3.0/api-guides/partition-tables.html>`_
@@ -150,6 +181,48 @@ Examples:
     ; https://github.com/espressif/esp-idf/tree/master/components/partition_table
     [env:custom_builtin_table]
     board_build.partitions = no_ota.csv
+
+Embedding Binary Data
+~~~~~~~~~~~~~~~~~~~~~
+
+Sometimes you have a file with some binary or text data that you’d like to
+make available to your program - but you don’t want to reformat the file as
+C source.
+
+You can set a macro (define) ``COMPONENT_EMBED_FILES`` using
+:ref:`projectconf_build_flags` in :ref:`projectconf`, giving the names of the
+files to embed in this way:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = espressif32
+    board = ...
+    build_flags =
+        -DCOMPONENT_EMBED_TXTFILES=src/private.pem.key:src/certificate.pem.crt:src/aws-root-ca.pem
+
+Multiple files are allowed and should be split by colon - ``:``.
+
+The file’s contents will be added to the ``.rodata`` section in flash, and
+are available via symbol names as follows:
+
+.. code-block:: c
+
+    extern const uint8_t aws_root_ca_pem_start[] asm("_binary_src_aws_root_ca_pem_start");
+    extern const uint8_t aws_root_ca_pem_end[] asm("_binary_src_aws_root_ca_pem_end");
+    extern const uint8_t certificate_pem_crt_start[] asm("_binary_src_certificate_pem_crt_start");
+    extern const uint8_t certificate_pem_crt_end[] asm("_binary_src_certificate_pem_crt_end");
+    extern const uint8_t private_pem_key_start[] asm("_binary_src_private_pem_key_start");
+    extern const uint8_t private_pem_key_end[] asm("_binary_src_private_pem_key_end");
+
+The names are generated from the full name of the file, as given in
+``COMPONENT_EMBED_FILES``. Characters ``/, .``, etc. are replaced with
+underscores. The ``_binary`` + ``_nested_folder`` prefix in the symbol name
+is added by "objcopy" and is the same for both text and binary files.
+
+See full example with embedding Amazon AWS certificates:
+
+- https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-aws-iot
 
 Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

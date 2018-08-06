@@ -30,17 +30,28 @@ Debugging
 
 :ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
 
+.. contents::
+    :local:
+
+
+Debug Tools
+~~~~~~~~~~~
+
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` options.
 
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
 
-On-Board tools
-~~~~~~~~~~~~~~
 
-Boards listed below have on-board debugging tools and **ARE READY** for debugging!
-You do not need to use/buy external debugger.
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -968,11 +979,11 @@ You do not need to use/buy external debugger.
       - 48KB
 
 
-External tools
-~~~~~~~~~~~~~~
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but depend on external
-debugging tools. See "Debug" column for compatible debugging tools.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug tool. See "Debug" column for compatible debug tools.
 
 
 .. list-table::
@@ -1199,16 +1210,16 @@ debugging tools. See "Debug" column for compatible debugging tools.
 Examples
 --------
 
-* `mbed for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Maxim 32 <https://github.com/platformio/platform-maxim32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for WIZNet W7500 <https://github.com/platformio/platform-wiznet7500/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for ST STM32 <https://github.com/platformio/platform-ststm32/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Teensy <https://github.com/platformio/platform-teensy/tree/develop/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for Maxim 32 <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `mbed for WIZNet W7500 <https://github.com/platformio/platform-wiznet7500/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -1236,9 +1247,6 @@ Platforms
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
-    * - :ref:`platform_wiznet7500`
-      - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
-
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
 
@@ -1247,6 +1255,9 @@ Platforms
 
     * - :ref:`platform_teensy`
       - Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
+
+    * - :ref:`platform_wiznet7500`
+      - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
 Boards
 ------

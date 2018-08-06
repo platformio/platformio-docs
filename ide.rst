@@ -25,8 +25,8 @@ popular IDEs and text editors.
 .. toctree::
     :maxdepth: 1
 
-    Atom <ide/atom>
     VSCode <ide/vscode>
+    Atom <ide/atom>
 
 .. _ide_cloud:
 

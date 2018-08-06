@@ -43,7 +43,7 @@ such as :ref:`pioide`. In other words, they wrap |PIOCORE| with own GUI.
     to use :ref:`pioide`. |PIOCORE| is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    If you need |PIOCORE| outside PlatformIO IDE, please :ref:`faq_install_shell_commands`.
+    If you need |PIOCORE| commands outside PlatformIO IDE, please :ref:`piocore_install_shell_commands`.
 
 .. toctree::
     :maxdepth: 2

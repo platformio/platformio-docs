@@ -34,20 +34,22 @@ Advanced Scripting
   More details :ref:`projectconf_dynamic_build_flags`.
 
 .. contents::
-    :local:
 
-PlatformIO Build System allows to launch custom :ref:`projectconf_extra_scripts`
-(based on `SCons <http://www.scons.org>`_ software construction tool) while
-processing environment. For more details please follow to
-"Construction Environments" section of
-`SCons documentation <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
+PlatformIO Build System allows to extend build process with the custom
+:ref:`projectconf_extra_scripts` using Python interpreter and
+`SCons <http://www.scons.org>`_ construction tool.
+Build and upload flags, targets, toolchains data, and other information are
+stored in `SCons Construction Environments <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
 
 .. warning::
-  You can not run/debug these scripts directly with Python Interpreter. They
+  You can not run/debug these scripts directly with Python interpreter. They
   will be loaded automatically when you processing project environment using
   :ref:`cmd_run` command.
 
-There are 2 type of extra scripts:
+Launch types
+~~~~~~~~~~~~
+
+There are 2 launch type of extra scripts:
 
 1. **PRE** - executes before a main script of :ref:`platforms`
 2. **POST** - executes after a main script of :ref:`platforms`
@@ -76,9 +78,145 @@ For example, :ref:`projectconf`
     post:post_extra_script1.py
     post_extra_script2.py
 
+This option can be set by global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
 
-This option can be set by global environment variable
-:envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
+Construction Environments
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are 2 built-in construction environments which PlatformIO Build System
+uses to process a project:
+
+* ``env``, ``Import("env")`` - global construction environment which is used
+  for :ref:`platforms` and :ref:`frameworks` build scripts, upload tools,
+  :ref:`ldf`, and other internal operations
+* ``projenv``, ``Import("projenv")`` - isolated construction environment which
+  is used for processing of project source code located in :ref:`projectconf_pio_src_dir`.
+  Please note that :ref:`projectconf_src_build_flags` specified in
+  :ref:`projectconf` will be passed to ``projenv`` and not to ``env``.
+
+  .. note::  ``projenv`` is available only for POST-type scripts
+
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    Import("env", "projenv")
+
+    # access to global construction environment
+    print env
+
+    # access to project construction environment
+    print projenv
+
+    #
+    # Dump construction environments (for debug purpose)
+    print env.Dump()
+    print projenv.Dump()
+
+
+See examples below how to import construction environments and modify existing
+data or add new.
+
+Before/Pre and After/Post actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PlatformIO Build System has rich API that allows to attach different pre-/post
+actions (hooks) using ``env.AddPreAction(target, callback)`` or
+``env.AddPreAction(target, [callback1, callback2, ...])`` function. A first
+argument ``target`` can be a name of target that is passed using
+:option:`platformio run --target` command, a name of built-in targets
+(buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or path
+to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
+
+
+**Examples**
+
+``extra_script.py`` file is located on the same level as ``platformio.ini``.
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:pre_and_post_hooks]
+    extra_scripts = post:extra_script.py
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    Import("env", "projenv")
+
+    # access to global build environment
+    print env
+
+    # access to project build environment (is used source files in "src" folder)
+    print projenv
+
+    #
+    # Dump build environment (for debug purpose)
+    # print env.Dump()
+    #
+
+    #
+    # Change build flags in runtime
+    #
+    env.ProcessUnFlags("-DVECT_TAB_ADDR")
+    env.Append(CPPDEFINES=("VECT_TAB_ADDR", 0x123456789))
+
+    #
+    # Upload actions
+    #
+
+    def before_upload(source, target, env):
+        print "before_upload"
+        # do some actions
+
+        # call Node.JS or other script
+        env.Execute("node --version")
+
+
+    def after_upload(source, target, env):
+        print "after_upload"
+        # do some actions
+
+    print "Current build targets", map(str, BUILD_TARGETS)
+
+    env.AddPreAction("upload", before_upload)
+    env.AddPostAction("upload", after_upload)
+
+    #
+    # Custom actions when building program/firmware
+    #
+
+    env.AddPreAction("buildprog", callback...)
+    env.AddPostAction("buildprog", callback...)
+
+    #
+    # Custom actions for specific files/objects
+    #
+
+    env.AddPreAction("$BUILD_DIR/${PROGNAME}.elf", [callback1, callback2,...])
+    env.AddPostAction("$BUILD_DIR/${PROGNAME}.hex", callback...)
+
+    # custom action before building SPIFFS image. For example, compress HTML, etc.
+    env.AddPreAction("$BUILD_DIR/spiffs.bin", callback...)
+
+    # custom action for project's main.cpp
+    env.AddPostAction("$BUILD_DIR/src/main.cpp.o", callback...)
+
+    # Custom HEX from ELF
+    env.AddPostAction(
+        "$BUILD_DIR/${PROGNAME}.elf",
+        env.VerboseAction(" ".join([
+            "$OBJCOPY", "-O", "ihex", "-R", ".eeprom",
+            "$BUILD_DIR/${PROGNAME}.elf", "$BUILD_DIR/${PROGNAME}.hex"
+        ]), "Building $BUILD_DIR/${PROGNAME}.hex")
+    )
+
+
+Examples
+~~~~~~~~
 
 Take a look at the multiple snippets/answers for the user questions:
 
@@ -295,99 +433,3 @@ Let's create a simple ``ping`` target and process it with
 
 
     AlwaysBuild(env.Alias("ping", "", mytarget_callback))
-
-Before/Pre and After/Post actions
-'''''''''''''''''''''''''''''''''
-
-PlatformIO Build System has rich API that allows to attach different pre-/post
-actions (hooks) using ``env.AddPreAction(target, callback)`` or
-``env.AddPreAction(target, [callback1, callback2, ...])`` function. A first
-argument ``target`` can be a name of target that is passed using
-:option:`platformio run --target` command, a name of built-in targets
-(buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or path
-to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
-
-
-**Examples**
-
-``extra_script.py`` file is located on the same level as ``platformio.ini``.
-
-``platformio.ini``:
-
-.. code-block:: ini
-
-    [env:pre_and_post_hooks]
-    extra_scripts = post:extra_script.py
-
-``extra_script.py``:
-
-.. code-block:: python
-
-    Import("env", "projenv")
-
-    # access to global build environment
-    print env
-
-    # access to project build environment (is used source files in "src" folder)
-    print projenv
-
-    #
-    # Dump build environment (for debug purpose)
-    # print env.Dump()
-    #
-
-    #
-    # Change build flags in runtime
-    #
-    env.ProcessUnFlags("-DVECT_TAB_ADDR")
-    env.Append(CPPDEFINES=("VECT_TAB_ADDR", 0x123456789))
-
-    #
-    # Upload actions
-    #
-
-    def before_upload(source, target, env):
-        print "before_upload"
-        # do some actions
-
-        # call Node.JS or other script
-        env.Execute("node --version")
-
-
-    def after_upload(source, target, env):
-        print "after_upload"
-        # do some actions
-
-    print "Current build targets", map(str, BUILD_TARGETS)
-
-    env.AddPreAction("upload", before_upload)
-    env.AddPostAction("upload", after_upload)
-
-    #
-    # Custom actions when building program/firmware
-    #
-
-    env.AddPreAction("buildprog", callback...)
-    env.AddPostAction("buildprog", callback...)
-
-    #
-    # Custom actions for specific files/objects
-    #
-
-    env.AddPreAction("$BUILD_DIR/${PROGNAME}.elf", [callback1, callback2,...])
-    env.AddPostAction("$BUILD_DIR/${PROGNAME}.hex", callback...)
-
-    # custom action before building SPIFFS image. For example, compress HTML, etc.
-    env.AddPreAction("$BUILD_DIR/spiffs.bin", callback...)
-
-    # custom action for project's main.cpp
-    env.AddPostAction("$BUILD_DIR/src/main.cpp.o", callback...)
-
-    # Custom HEX from ELF
-    env.AddPostAction(
-        "$BUILD_DIR/${PROGNAME}.elf",
-        env.VerboseAction(" ".join([
-            "$OBJCOPY", "-O", "ihex", "-R", ".eeprom",
-            "$BUILD_DIR/${PROGNAME}.elf", "$BUILD_DIR/${PROGNAME}.hex"
-        ]), "Building $BUILD_DIR/${PROGNAME}.hex")
-    )
