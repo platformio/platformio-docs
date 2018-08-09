@@ -46,11 +46,11 @@ You can switch between debugging :ref:`debugging_tools` using
     Please click on compatible debug tool below for the further instructions.
 
 
-External Debug Tools
+On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug tool. See "Debug" column for compatible debug tools.
+Boards listed below have on-board debug tool and **ARE READY** for debugging!
+You do not need to use/buy external debug tool.
 
 
 .. list-table::
@@ -67,7 +67,7 @@ external debug tool. See "Debug" column for compatible debug tools.
     * - ``artik_053``
       - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Samsung ARTIK <platform_samsung_artik>`
-      - :ref:`debugging_tool_ftdi` (default)
+      - :ref:`debugging_tool_ftdi` (on-board)
       - S5JT200
       - 320MHz
       - 8MB

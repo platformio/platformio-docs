@@ -110,6 +110,13 @@ You do not need to use/buy external debug tool.
       - 180MHz
       - 2MB
       - 256KB
+    * - ``frdm_k82f``
+      - `Freescale Kinetis FRDM-K82F <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k8x-secure/freedom-development-platform-for-kinetis-k82-k81-and-k80-mcus:FRDM-K82F?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MK82FN256VLL15
+      - 150MHz
+      - 256KB
+      - 256KB
     * - ``frdm_kl05z``
       - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
@@ -121,6 +128,13 @@ You do not need to use/buy external debug tool.
       - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - MKL25Z128VLK4
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - ``frdm_kl26z``
+      - `Freescale Kinetis FRDM-KL26Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - MKL26Z128VLH4
       - 48MHz
       - 128KB
       - 16KB
@@ -171,6 +185,20 @@ external debug tool. See "Debug" column for compatible debug tools.
       - Frequency
       - Flash
       - RAM
+    * - ``frdm_kl82z``
+      - `Freescale Kinetis FRDM-KL82Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-board-for-kinetis-ultra-low-power-kl82-mcus:FRDM-KL82Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MKL82Z128VLK7
+      - 96MHz
+      - 128KB
+      - 96KB
+    * - ``frdm_kw24d``
+      - `Freescale Kinetis FRDM-KW24D512 <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/w-serieswireless-conn.m0-plus-m4/freedom-development-platform-for-kinetis-kw2x-mcus:FRDM-KW24D512?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_jlink`
+      - MKW24D512
+      - 50MHz
+      - 512KB
+      - 64KB
     * - ``hexiwear``
       - `Hexiwear <https://developer.mbed.org/platforms/Hexiwear/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`
@@ -315,6 +343,13 @@ Freescale
       - 180MHz
       - 2MB
       - 256KB
+    * - ``frdm_k82f``
+      - `Freescale Kinetis FRDM-K82F <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k8x-secure/freedom-development-platform-for-kinetis-k82-k81-and-k80-mcus:FRDM-K82F?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - MK82FN256VLL15
+      - 150MHz
+      - 256KB
+      - 256KB
     * - ``frdm_kl05z``
       - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -326,6 +361,13 @@ Freescale
       - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - MKL25Z128VLK4
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - ``frdm_kl26z``
+      - `Freescale Kinetis FRDM-KL26Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - MKL26Z128VLH4
       - 48MHz
       - 128KB
       - 16KB
@@ -350,6 +392,20 @@ Freescale
       - 48MHz
       - 256KB
       - 32KB
+    * - ``frdm_kl82z``
+      - `Freescale Kinetis FRDM-KL82Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-board-for-kinetis-ultra-low-power-kl82-mcus:FRDM-KL82Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - MKL82Z128VLK7
+      - 96MHz
+      - 128KB
+      - 96KB
+    * - ``frdm_kw24d``
+      - `Freescale Kinetis FRDM-KW24D512 <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/w-serieswireless-conn.m0-plus-m4/freedom-development-platform-for-kinetis-kw2x-mcus:FRDM-KW24D512?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - MKW24D512
+      - 50MHz
+      - 512KB
+      - 64KB
     * - ``frdm_kw41z``
       - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`

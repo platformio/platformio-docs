@@ -222,28 +222,28 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 28KB
+      - 96KB
     * - ``due``
       - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``macchina2``
       - `Macchina M2 <https://www.macchina.cc?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -279,6 +279,13 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 48MHz
       - 256KB
       - 32KB
+    * - ``moteino_zero``
+      - `Moteino M0 <https://lowpowerlab.com/shop/product/184?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - ``mzeroUSB``
       - `Arduino M0 <https://www.arduino.cc/en/Main/ArduinoBoardM0?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -299,14 +306,14 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``sainSmartDueUSB``
       - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``sodaq_autonomo``
       - `SODAQ Autonomo <http://support.sodaq.com/sodaq-one/autonomo/getting-started-autonomo/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -570,14 +577,14 @@ Arduino
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -717,7 +724,28 @@ Digistump
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 28KB
+      - 96KB
+
+LowPowerLab
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``moteino_zero``
+      - `Moteino M0 <https://lowpowerlab.com/shop/product/184?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
 
 Macchina
 ~~~~~~~~
@@ -738,7 +766,7 @@ Macchina
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
 
 SODAQ
 ~~~~~
@@ -794,14 +822,14 @@ SainSmart
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``sainSmartDueUSB``
       - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
 
 SparkFun
 ~~~~~~~~

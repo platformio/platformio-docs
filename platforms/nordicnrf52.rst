@@ -139,6 +139,20 @@ external debug tool. See "Debug" column for compatible debug tools.
       - Frequency
       - Flash
       - RAM
+    * - ``bluey``
+      - `Bluey nRF52832 IoT <https://electronut.in/portfolio/bluey/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - ``hackaBLE``
+      - `hackaBLE <https://electronut.in/portfolio/hackaBLE/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - ``stct_nrf52_minidev``
       - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
@@ -262,6 +276,34 @@ Delta
       - RAM
     * - ``delta_dfbm_nq620``
       - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
+Electronut Labs
+~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``bluey``
+      - `Bluey nRF52832 IoT <https://electronut.in/portfolio/bluey/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - ``hackaBLE``
+      - `hackaBLE <https://electronut.in/portfolio/hackaBLE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF52832
       - 64MHz

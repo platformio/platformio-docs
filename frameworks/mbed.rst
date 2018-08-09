@@ -265,8 +265,16 @@ You do not need to use/buy external debug tool.
       - 80MHz
       - 1MB
       - 128KB
+    * - ``disco_l496ag``
+      - `ST 32L496GDISCOVERY <https://www.st.com/en/evaluation-tools/32l496gdiscovery.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L496AGI6
+      - 80MHz
+      - 1MB
+      - 320KB
     * - ``efm32gg_stk3700``
-      - `Silicon Labs EFM32GG-STK3700 (Giant Gecko) <https://developer.mbed.org/platforms/EFM32-Giant-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `EFM32GG-STK3700 Giant Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-giant-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
       - EFM32GG990F1024
@@ -274,15 +282,15 @@ You do not need to use/buy external debug tool.
       - 1MB
       - 128KB
     * - ``efm32hg_stk3400``
-      - `Silicon Labs SLSTK3400A USB-enabled (Happy Gecko) <https://developer.mbed.org/platforms/EFM32-Happy-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `SLSTK3400A USB-enabled Happy Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-happy-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
       - EFM32HG322F64
-      - 24MHz
+      - 25MHz
       - 64KB
       - 8KB
     * - ``efm32lg_stk3600``
-      - `Silicon Labs EFM32LG-STK3600 (Leopard Gecko) <https://developer.mbed.org/platforms/EFM32-Leopard-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `EFM32LG-STK3600 Leopard Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-leopard-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
       - EFM32LG990F256
@@ -290,15 +298,15 @@ You do not need to use/buy external debug tool.
       - 256KB
       - 32KB
     * - ``efm32pg_stk3401``
-      - `Silicon Labs SLSTK3401A (Pearl Gecko) <https://developer.mbed.org/platforms/EFM32-Pearl-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `SLSTK3401A Pearl Gecko PG1 <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-pearl-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFM32PG1B200F256
+      - EFM32PG1B200F256GM48
       - 40MHz
       - 256KB
       - 32KB
     * - ``efm32wg_stk3800``
-      - `Silicon Labs EFM32WG-STK3800 (Wonder Gecko) <https://developer.mbed.org/platforms/EFM32-Wonder-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `EFM32WG-STK3800 Wonder Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-wonder-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
       - EFM32WG990F256
@@ -306,7 +314,7 @@ You do not need to use/buy external debug tool.
       - 256KB
       - 32KB
     * - ``efm32zg_stk3200``
-      - `Silicon Labs EFM32ZG-STK3200 (Zero Gecko) <https://developer.mbed.org/platforms/EFM32-Zero-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `EFM32ZG-STK3200 Zero Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-zero-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
       - EFM32ZG222F32
@@ -353,6 +361,14 @@ You do not need to use/buy external debug tool.
       - 180MHz
       - 2MB
       - 256KB
+    * - ``frdm_k82f``
+      - `Freescale Kinetis FRDM-K82F <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k8x-secure/freedom-development-platform-for-kinetis-k82-k81-and-k80-mcus:FRDM-K82F?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+      - MK82FN256VLL15
+      - 150MHz
+      - 256KB
+      - 256KB
     * - ``frdm_kl05z``
       - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
@@ -366,6 +382,14 @@ You do not need to use/buy external debug tool.
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - MKL25Z128VLK4
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - ``frdm_kl26z``
+      - `Freescale Kinetis FRDM-KL26Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - MKL26Z128VLH4
       - 48MHz
       - 128KB
       - 16KB
@@ -721,6 +745,14 @@ You do not need to use/buy external debug tool.
       - 180MHz
       - 2MB
       - 256KB
+    * - ``nucleo_f439zi``
+      - `ST Nucleo F439ZI <https://developer.mbed.org/platforms/ST-Nucleo-F439ZI/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32F439ZIT6
+      - 180MHz
+      - 2MB
+      - 256KB
     * - ``nucleo_f446re``
       - `ST Nucleo F446RE <https://developer.mbed.org/platforms/ST-Nucleo-F446RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -745,6 +777,14 @@ You do not need to use/buy external debug tool.
       - 216MHz
       - 1MB
       - 320KB
+    * - ``nucleo_f756zg``
+      - `ST Nucleo F756ZG <https://www.st.com/en/evaluation-tools/nucleo-f756zg.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32F756ZG
+      - 216MHz
+      - 1MB
+      - 320KB
     * - ``nucleo_f767zi``
       - `ST Nucleo F767ZI <https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -753,14 +793,6 @@ You do not need to use/buy external debug tool.
       - 216MHz
       - 2MB
       - 512KB
-    * - ``nucleo_l011k4``
-      - `ST Nucleo L011K4 <https://developer.mbed.org/platforms/ST-Nucleo-L011K4/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L011K4T6
-      - 32MHz
-      - 16KB
-      - 2KB
     * - ``nucleo_l031k6``
       - `ST Nucleo L031K6 <https://developer.mbed.org/platforms/ST-Nucleo-L031K6/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -801,7 +833,23 @@ You do not need to use/buy external debug tool.
       - 80MHz
       - 256KB
       - 64KB
+    * - ``nucleo_l433rc_p``
+      - `ST Nucleo L433RC-P <https://www.st.com/en/evaluation-tools/nucleo-l433rc-p.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L433RC
+      - 80MHz
+      - 256KB
+      - 64KB
     * - ``nucleo_l476rg``
+      - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - ``nucleo_l486rg``
       - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -817,6 +865,14 @@ You do not need to use/buy external debug tool.
       - 80MHz
       - 1MB
       - 128KB
+    * - ``nucleo_l496zg_p``
+      - `ST Nucleo L496ZG-P <https://www.st.com/en/evaluation-tools/nucleo-l496zg-p.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L496ZGT6P
+      - 80MHz
+      - 1MB
+      - 320KB
     * - ``redBearLab``
       - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -833,6 +889,14 @@ You do not need to use/buy external debug tool.
       - 16MHz
       - 256KB
       - 32KB
+    * - ``redbear_blenano2``
+      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - ``samd21_xpro``
       - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -905,6 +969,14 @@ You do not need to use/buy external debug tool.
       - 16MHz
       - 256KB
       - 16KB
+    * - ``silica_sensor_node``
+      - `ST Sensor Node <https://www.avnet.com/shop/emea/products/avnet-engineering-services/silicastmsensornodeplus-3074457345633959668/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L476JG
+      - 80MHz
+      - 1MB
+      - 128KB
     * - ``ssci824``
       - `Switch Science mbed LPC824 <https://developer.mbed.org/platforms/Switch-Science-mbed-LPC824/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`NXP LPC <platform_nxplpc>`
@@ -913,6 +985,14 @@ You do not need to use/buy external debug tool.
       - 30MHz
       - 32KB
       - 8KB
+    * - ``tb_sense_12``
+      - `Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT <https://www.silabs.com/products/development-tools/thunderboard/thunderboard-sense-two-kit?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
+      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
+      - EFR32MG12P432F1024
+      - 40MHz
+      - 1MB
+      - 256KB
     * - ``ty51822r3``
       - `Switch Science mbed TY51822r3 <https://developer.mbed.org/platforms/Switch-Science-mbed-TY51822r3/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -921,6 +1001,14 @@ You do not need to use/buy external debug tool.
       - 32MHz
       - 256KB
       - 32KB
+    * - ``ublox_c030_r410m``
+      - `u-blox C030-R410M IoT <https://os.mbed.com/platforms/ublox-C030-R410M/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32F437VG
+      - 180MHz
+      - 1MB
+      - 256KB
     * - ``ublox_evk_nina_b1``
       - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF52 <platform_nordicnrf52>`
@@ -953,6 +1041,14 @@ You do not need to use/buy external debug tool.
       - 16MHz
       - 128KB
       - 16KB
+    * - ``wio_3g``
+      - `Seeed Wio 3G <https://os.mbed.com/platforms/Seeed-Wio-3g/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32F439VI
+      - 180MHz
+      - 2MB
+      - 256KB
     * - ``wizwiki_w7500``
       - `WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`WIZNet W7500 <platform_wiznet7500>`
@@ -1029,6 +1125,22 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 100MHz
       - 512KB
       - 128KB
+    * - ``frdm_kl82z``
+      - `Freescale Kinetis FRDM-KL82Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-board-for-kinetis-ultra-low-power-kl82-mcus:FRDM-KL82Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`debugging_tool_jlink`
+      - MKL82Z128VLK7
+      - 96MHz
+      - 128KB
+      - 96KB
+    * - ``frdm_kw24d``
+      - `Freescale Kinetis FRDM-KW24D512 <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/w-serieswireless-conn.m0-plus-m4/freedom-development-platform-for-kinetis-kw2x-mcus:FRDM-KW24D512?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`debugging_tool_jlink`
+      - MKW24D512
+      - 50MHz
+      - 512KB
+      - 64KB
     * - ``genericSTM32F103C8``
       - `STM32F103C8 (20k RAM. 64k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -1360,6 +1472,29 @@ Atmel
       - 256KB
       - 32KB
 
+Avnet Silica
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``silica_sensor_node``
+      - `ST Sensor Node <https://www.avnet.com/shop/emea/products/avnet-engineering-services/silicastmsensornodeplus-3074457345633959668/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L476JG
+      - 80MHz
+      - 1MB
+      - 128KB
+
 BBC
 ~~~
 
@@ -1592,6 +1727,14 @@ Freescale
       - 180MHz
       - 2MB
       - 256KB
+    * - ``frdm_k82f``
+      - `Freescale Kinetis FRDM-K82F <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k8x-secure/freedom-development-platform-for-kinetis-k82-k81-and-k80-mcus:FRDM-K82F?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MK82FN256VLL15
+      - 150MHz
+      - 256KB
+      - 256KB
     * - ``frdm_kl05z``
       - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
@@ -1605,6 +1748,14 @@ Freescale
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
       - :ref:`Yes <piodebug>`
       - MKL25Z128VLK4
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - ``frdm_kl26z``
+      - `Freescale Kinetis FRDM-KL26Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MKL26Z128VLH4
       - 48MHz
       - 128KB
       - 16KB
@@ -1632,6 +1783,22 @@ Freescale
       - 48MHz
       - 256KB
       - 32KB
+    * - ``frdm_kl82z``
+      - `Freescale Kinetis FRDM-KL82Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-board-for-kinetis-ultra-low-power-kl82-mcus:FRDM-KL82Z?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MKL82Z128VLK7
+      - 96MHz
+      - 128KB
+      - 96KB
+    * - ``frdm_kw24d``
+      - `Freescale Kinetis FRDM-KW24D512 <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/w-serieswireless-conn.m0-plus-m4/freedom-development-platform-for-kinetis-kw2x-mcus:FRDM-KW24D512?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
+      - :ref:`Yes <piodebug>`
+      - MKW24D512
+      - 50MHz
+      - 512KB
+      - 64KB
     * - ``frdm_kw41z``
       - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Freescale Kinetis <platform_freescalekinetis>`
@@ -1748,6 +1915,14 @@ Maxim
       - 24MHz
       - 256KB
       - 32KB
+    * - ``max32620fthr``
+      - `MAX32620FTHR <https://www.maximintegrated.com/en/products/microcontrollers/MAX32620FTHR.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - No
+      - MAX32620FTHR
+      - 96MHz
+      - 2MB
+      - 256KB
     * - ``max32620hsp``
       - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Maxim 32 <platform_maxim32>`
@@ -1766,6 +1941,14 @@ Maxim
       - 160KB
     * - ``max32625nexpaq``
       - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Maxim 32 <platform_maxim32>`
+      - No
+      - MAX32625
+      - 96MHz
+      - 512KB
+      - 160KB
+    * - ``max32625pico``
+      - `MAX32625MBED <http://www.maximintegrated.com/max32625pico?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Maxim 32 <platform_maxim32>`
       - No
       - MAX32625
@@ -2124,6 +2307,14 @@ RedBearLab
       - 16MHz
       - 256KB
       - 32KB
+    * - ``redbear_blenano2``
+      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 RushUp
 ~~~~~~
@@ -2298,6 +2489,14 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - ``disco_l496ag``
+      - `ST 32L496GDISCOVERY <https://www.st.com/en/evaluation-tools/32l496gdiscovery.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L496AGI6
+      - 80MHz
+      - 1MB
+      - 320KB
     * - ``nucleo_f030r8``
       - `ST Nucleo F030R8 <https://developer.mbed.org/platforms/ST-Nucleo-F030R8/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -2450,6 +2649,14 @@ ST
       - 180MHz
       - 2MB
       - 256KB
+    * - ``nucleo_f439zi``
+      - `ST Nucleo F439ZI <https://developer.mbed.org/platforms/ST-Nucleo-F439ZI/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F439ZIT6
+      - 180MHz
+      - 2MB
+      - 256KB
     * - ``nucleo_f446re``
       - `ST Nucleo F446RE <https://developer.mbed.org/platforms/ST-Nucleo-F446RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -2474,6 +2681,14 @@ ST
       - 216MHz
       - 1MB
       - 320KB
+    * - ``nucleo_f756zg``
+      - `ST Nucleo F756ZG <https://www.st.com/en/evaluation-tools/nucleo-f756zg.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F756ZG
+      - 216MHz
+      - 1MB
+      - 320KB
     * - ``nucleo_f767zi``
       - `ST Nucleo F767ZI <https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -2482,14 +2697,6 @@ ST
       - 216MHz
       - 2MB
       - 512KB
-    * - ``nucleo_l011k4``
-      - `ST Nucleo L011K4 <https://developer.mbed.org/platforms/ST-Nucleo-L011K4/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32L011K4T6
-      - 32MHz
-      - 16KB
-      - 2KB
     * - ``nucleo_l031k6``
       - `ST Nucleo L031K6 <https://developer.mbed.org/platforms/ST-Nucleo-L031K6/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -2530,7 +2737,23 @@ ST
       - 80MHz
       - 256KB
       - 64KB
+    * - ``nucleo_l433rc_p``
+      - `ST Nucleo L433RC-P <https://www.st.com/en/evaluation-tools/nucleo-l433rc-p.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L433RC
+      - 80MHz
+      - 256KB
+      - 64KB
     * - ``nucleo_l476rg``
+      - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - ``nucleo_l486rg``
       - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
@@ -2546,6 +2769,14 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - ``nucleo_l496zg_p``
+      - `ST Nucleo L496ZG-P <https://www.st.com/en/evaluation-tools/nucleo-l496zg-p.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32L496ZGT6P
+      - 80MHz
+      - 1MB
+      - 320KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -2609,6 +2840,14 @@ SeeedStudio
       - 16MHz
       - 256KB
       - 16KB
+    * - ``wio_3g``
+      - `Seeed Wio 3G <https://os.mbed.com/platforms/Seeed-Wio-3g/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F439VI
+      - 180MHz
+      - 2MB
+      - 256KB
     * - ``xadow_m0``
       - `Seeed Xadow M0 <https://developer.mbed.org/platforms/Seeed-Xadow-M0/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`NXP LPC <platform_nxplpc>`
@@ -2656,7 +2895,7 @@ Silicon Labs
       - Flash
       - RAM
     * - ``efm32gg_stk3700``
-      - `Silicon Labs EFM32GG-STK3700 (Giant Gecko) <https://developer.mbed.org/platforms/EFM32-Giant-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `EFM32GG-STK3700 Giant Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-giant-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`Yes <piodebug>`
       - EFM32GG990F1024
@@ -2664,15 +2903,15 @@ Silicon Labs
       - 1MB
       - 128KB
     * - ``efm32hg_stk3400``
-      - `Silicon Labs SLSTK3400A USB-enabled (Happy Gecko) <https://developer.mbed.org/platforms/EFM32-Happy-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `SLSTK3400A USB-enabled Happy Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-happy-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`Yes <piodebug>`
       - EFM32HG322F64
-      - 24MHz
+      - 25MHz
       - 64KB
       - 8KB
     * - ``efm32lg_stk3600``
-      - `Silicon Labs EFM32LG-STK3600 (Leopard Gecko) <https://developer.mbed.org/platforms/EFM32-Leopard-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `EFM32LG-STK3600 Leopard Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-leopard-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`Yes <piodebug>`
       - EFM32LG990F256
@@ -2680,15 +2919,15 @@ Silicon Labs
       - 256KB
       - 32KB
     * - ``efm32pg_stk3401``
-      - `Silicon Labs SLSTK3401A (Pearl Gecko) <https://developer.mbed.org/platforms/EFM32-Pearl-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `SLSTK3401A Pearl Gecko PG1 <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-pearl-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`Yes <piodebug>`
-      - EFM32PG1B200F256
+      - EFM32PG1B200F256GM48
       - 40MHz
       - 256KB
       - 32KB
     * - ``efm32wg_stk3800``
-      - `Silicon Labs EFM32WG-STK3800 (Wonder Gecko) <https://developer.mbed.org/platforms/EFM32-Wonder-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `EFM32WG-STK3800 Wonder Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-wonder-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`Yes <piodebug>`
       - EFM32WG990F256
@@ -2696,13 +2935,21 @@ Silicon Labs
       - 256KB
       - 32KB
     * - ``efm32zg_stk3200``
-      - `Silicon Labs EFM32ZG-STK3200 (Zero Gecko) <https://developer.mbed.org/platforms/EFM32-Zero-Gecko/?utm_source=platformio&utm_medium=docs>`_
+      - `EFM32ZG-STK3200 Zero Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-zero-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
       - :ref:`Yes <piodebug>`
       - EFM32ZG222F32
       - 24MHz
       - 32KB
       - 4KB
+    * - ``tb_sense_12``
+      - `Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT <https://www.silabs.com/products/development-tools/thunderboard/thunderboard-sense-two-kit?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
+      - :ref:`Yes <piodebug>`
+      - EFR32MG12P432F1024
+      - 40MHz
+      - 1MB
+      - 256KB
 
 Smeshlink
 ~~~~~~~~~
@@ -2922,6 +3169,14 @@ u-blox
       - 256KB
     * - ``ublox_c030_n211``
       - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - ``ublox_c030_r410m``
+      - `u-blox C030-R410M IoT <https://os.mbed.com/platforms/ublox-C030-R410M/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F437VG

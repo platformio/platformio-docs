@@ -215,6 +215,13 @@ external debug tool. See "Debug" column for compatible debug tools.
       - Frequency
       - Flash
       - RAM
+    * - ``Sinobit``
+      - `Sino:Bit <https://github.com/sinobitorg/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
     * - ``bluz_dk``
       - `BluzDK <https://bluz.io/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
@@ -674,6 +681,27 @@ ng-beacon
       - RAM
     * - ``ng_beacon``
       - `ng-beacon <https://github.com/urish/ng-beacon?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+
+sino:bit
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``Sinobit``
+      - `Sino:Bit <https://github.com/sinobitorg/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - NRF51822
       - 32MHz

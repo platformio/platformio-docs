@@ -213,6 +213,13 @@ Maxim
       - 24MHz
       - 256KB
       - 32KB
+    * - ``max32620fthr``
+      - `MAX32620FTHR <https://www.maximintegrated.com/en/products/microcontrollers/MAX32620FTHR.html?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - MAX32620FTHR
+      - 96MHz
+      - 2MB
+      - 256KB
     * - ``max32620hsp``
       - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/?utm_source=platformio&utm_medium=docs>`_
       - No
@@ -229,6 +236,13 @@ Maxim
       - 160KB
     * - ``max32625nexpaq``
       - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - MAX32625
+      - 96MHz
+      - 512KB
+      - 160KB
+    * - ``max32625pico``
+      - `MAX32625MBED <http://www.maximintegrated.com/max32625pico?utm_source=platformio&utm_medium=docs>`_
       - No
       - MAX32625
       - 96MHz

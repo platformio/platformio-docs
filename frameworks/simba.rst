@@ -71,7 +71,7 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -79,7 +79,7 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
 
 
 Examples
@@ -162,7 +162,7 @@ Arduino
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -170,7 +170,7 @@ Arduino
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``megaatmega2560``
       - `Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) <https://www.arduino.cc/en/Main/ArduinoBoardMega2560?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`

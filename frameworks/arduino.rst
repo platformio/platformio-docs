@@ -293,6 +293,14 @@ external debug tool. See "Debug" column for compatible debug tools.
       - Frequency
       - Flash
       - RAM
+    * - ``Sinobit``
+      - `Sino:Bit <https://github.com/sinobitorg/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
     * - ``adafruit_circuitplayground_m0``
       - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3333?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -397,6 +405,14 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 72MHz
       - 64KB
       - 20KB
+    * - ``bluey``
+      - `Bluey nRF52832 IoT <https://electronut.in/portfolio/bluey/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - ``bluz_dk``
       - `BluzDK <https://bluz.io/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -412,7 +428,7 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 28KB
+      - 96KB
     * - ``due``
       - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -420,7 +436,7 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -428,7 +444,7 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``esp32-evb``
       - `OLIMEX ESP32-EVB <https://www.olimex.com/Products/IoT/ESP32-EVB/open-source-hardware?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -557,6 +573,30 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F103T8``
+      - `STM32F103T8 (20k RAM. 64k Flash) <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103T8T6
+      - 72MHz
+      - 20KB
+      - 64KB
+    * - ``genericSTM32F103TB``
+      - `STM32F103TB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103tb.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103TBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - ``genericSTM32F103VB``
+      - `STM32F103VB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103vb.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103VBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - ``genericSTM32F103VC``
       - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -565,11 +605,43 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 72MHz
       - 256KB
       - 48KB
+    * - ``genericSTM32F103VD``
+      - `STM32F103VD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103vd.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103VDT6
+      - 72MHz
+      - 384KB
+      - 64KB
     * - ``genericSTM32F103VE``
       - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - ``genericSTM32F103ZC``
+      - `STM32F103ZC (48k RAM. 256k Flash) <http://www.st.com/en/microcontrollers/stm32f103zc.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103ZCT6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - ``genericSTM32F103ZD``
+      - `STM32F103ZD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103zd.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103ZDT6
+      - 72MHz
+      - 384KB
+      - 64KB
+    * - ``genericSTM32F103ZE``
+      - `STM32F103ZE (64k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
@@ -581,6 +653,14 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 168MHz
       - 502.23KB
       - 128KB
+    * - ``hackaBLE``
+      - `hackaBLE <https://electronut.in/portfolio/hackaBLE/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - ``hornbill32dev``
       - `Hornbill ESP32 Dev <https://hackaday.io/project/18997-hornbill?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -628,7 +708,7 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``maple``
       - `Maple <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -653,6 +733,14 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 72MHz
       - 108KB
       - 17KB
+    * - ``maple_ret6``
+      - `Maple (RET6) <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103RET6
+      - 72MHz
+      - 256KB
+      - 48KB
     * - ``mhetesp32devkit``
       - `MH ET LIVE ESP32DevKIT <http://forum.mhetlive.com?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`
@@ -669,6 +757,14 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 240MHz
       - 4MB
       - 320KB
+    * - ``microduino32_flash``
+      - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103CBT6
+      - 72MHz
+      - 105.47KB
+      - 16.60KB
     * - ``mkr1000USB``
       - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -705,6 +801,14 @@ external debug tool. See "Debug" column for compatible debug tools.
       - `Arduino MKRZERO <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
       - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - ``moteino_zero``
+      - `Moteino M0 <https://lowpowerlab.com/shop/product/184?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -780,7 +884,7 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``sainSmartDueUSB``
       - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -788,7 +892,7 @@ external debug tool. See "Debug" column for compatible debug tools.
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``sodaq_autonomo``
       - `SODAQ Autonomo <http://support.sodaq.com/sodaq-one/autonomo/getting-started-autonomo/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -968,7 +1072,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
 
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
@@ -1480,7 +1584,7 @@ Arduino
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``dueUSB``
       - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -1488,7 +1592,7 @@ Arduino
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``esplora``
       - `Arduino Esplora <https://www.arduino.cc/en/Main/ArduinoBoardEsplora?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1952,14 +2056,6 @@ Atmel
       - 48MHz
       - 256KB
       - 32KB
-    * - ``usbasp``
-      - `USBasp stick <https://www.fischl.de/usbasp/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel AVR <platform_atmelavr>`
-      - No
-      - ATMEGA8
-      - 12MHz
-      - 8KB
-      - 1KB
 
 BBC
 ~~~
@@ -2364,7 +2460,7 @@ Digistump
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 28KB
+      - 96KB
 
 Doit
 ~~~~
@@ -2565,6 +2661,37 @@ Electronic SweetPeas
       - 240MHz
       - 4MB
       - 320KB
+
+Electronut Labs
+~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``bluey``
+      - `Bluey nRF52832 IoT <https://electronut.in/portfolio/bluey/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - ``hackaBLE``
+      - `hackaBLE <https://electronut.in/portfolio/hackaBLE/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
+      - :ref:`Yes <piodebug>`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 Elektor
 ~~~~~~~
@@ -2847,6 +2974,30 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F103T8``
+      - `STM32F103T8 (20k RAM. 64k Flash) <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103T8T6
+      - 72MHz
+      - 20KB
+      - 64KB
+    * - ``genericSTM32F103TB``
+      - `STM32F103TB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103tb.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103TBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - ``genericSTM32F103VB``
+      - `STM32F103VB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103vb.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103VBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - ``genericSTM32F103VC``
       - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
@@ -2855,11 +3006,43 @@ Generic
       - 72MHz
       - 256KB
       - 48KB
+    * - ``genericSTM32F103VD``
+      - `STM32F103VD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103vd.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103VDT6
+      - 72MHz
+      - 384KB
+      - 64KB
     * - ``genericSTM32F103VE``
       - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`ST STM32 <platform_ststm32>`
       - :ref:`Yes <piodebug>`
       - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - ``genericSTM32F103ZC``
+      - `STM32F103ZC (48k RAM. 256k Flash) <http://www.st.com/en/microcontrollers/stm32f103zc.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103ZCT6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - ``genericSTM32F103ZD``
+      - `STM32F103ZD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103zd.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103ZDT6
+      - 72MHz
+      - 384KB
+      - 64KB
+    * - ``genericSTM32F103ZE``
+      - `STM32F103ZE (64k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
@@ -3135,6 +3318,14 @@ LeafLabs
       - 72MHz
       - 108KB
       - 17KB
+    * - ``maple_ret6``
+      - `Maple (RET6) <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103RET6
+      - 72MHz
+      - 256KB
+      - 48KB
 
 LightUp
 ~~~~~~~
@@ -3212,6 +3403,14 @@ LowPowerLab
       - 16MHz
       - 31.50KB
       - 2KB
+    * - ``moteino_zero``
+      - `Moteino M0 <https://lowpowerlab.com/shop/product/184?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel SAM <platform_atmelsam>`
+      - :ref:`Yes <piodebug>`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - ``moteinomega``
       - `LowPowerLab MoteinoMEGA <http://lowpowerlab.com/blog/2014/08/09/moteinomega-available-now/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -3327,7 +3526,7 @@ Macchina
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
 
 MakerAsia
 ~~~~~~~~~
@@ -3540,6 +3739,14 @@ Microduino
       - 240MHz
       - 4MB
       - 320KB
+    * - ``microduino32_flash``
+      - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`ST STM32 <platform_ststm32>`
+      - :ref:`Yes <piodebug>`
+      - STM32F103CBT6
+      - 72MHz
+      - 105.47KB
+      - 16.60KB
 
 MikroElektronika
 ~~~~~~~~~~~~~~~~
@@ -4291,7 +4498,7 @@ SainSmart
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
     * - ``sainSmartDueUSB``
       - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel SAM <platform_atmelsam>`
@@ -4299,7 +4506,7 @@ SainSmart
       - AT91SAM3X8E
       - 84MHz
       - 512KB
-      - 32KB
+      - 96KB
 
 Sanguino
 ~~~~~~~~
@@ -5205,6 +5412,29 @@ nicai-systems
       - 20MHz
       - 128KB
       - 16KB
+
+sino:bit
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``Sinobit``
+      - `Sino:Bit <https://github.com/sinobitorg/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
+      - :ref:`Yes <piodebug>`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
 
 u-blox
 ~~~~~~

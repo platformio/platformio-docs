@@ -218,6 +218,13 @@ You do not need to use/buy external debug tool.
       - 32MHz
       - 192KB
       - 20KB
+    * - ``disco_l100rc``
+      - `ST 32L100DISCOVERY <https://www.st.com/en/evaluation-tools/32l100cdiscovery.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`
+      - STM32L100RCT6
+      - 32MHz
+      - 256KB
+      - 16KB
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -239,6 +246,13 @@ You do not need to use/buy external debug tool.
       - 80MHz
       - 1MB
       - 128KB
+    * - ``disco_l496ag``
+      - `ST 32L496GDISCOVERY <https://www.st.com/en/evaluation-tools/32l496gdiscovery.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L496AGI6
+      - 80MHz
+      - 1MB
+      - 320KB
     * - ``eval_l073z``
       - `ST STM32L073Z-EVAL <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-eval-boards/stm32l073z-eval.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -393,6 +407,13 @@ You do not need to use/buy external debug tool.
       - 180MHz
       - 2MB
       - 256KB
+    * - ``nucleo_f439zi``
+      - `ST Nucleo F439ZI <https://developer.mbed.org/platforms/ST-Nucleo-F439ZI/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32F439ZIT6
+      - 180MHz
+      - 2MB
+      - 256KB
     * - ``nucleo_f446re``
       - `ST Nucleo F446RE <https://developer.mbed.org/platforms/ST-Nucleo-F446RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -414,6 +435,13 @@ You do not need to use/buy external debug tool.
       - 216MHz
       - 1MB
       - 320KB
+    * - ``nucleo_f756zg``
+      - `ST Nucleo F756ZG <https://www.st.com/en/evaluation-tools/nucleo-f756zg.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32F756ZG
+      - 216MHz
+      - 1MB
+      - 320KB
     * - ``nucleo_f767zi``
       - `ST Nucleo F767ZI <https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -422,7 +450,7 @@ You do not need to use/buy external debug tool.
       - 2MB
       - 512KB
     * - ``nucleo_l011k4``
-      - `ST Nucleo L011K4 <https://developer.mbed.org/platforms/ST-Nucleo-L011K4/?utm_source=platformio&utm_medium=docs>`_
+      - `ST Nucleo L011K4 <https://www.st.com/en/evaluation-tools/nucleo-l011k4.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32L011K4T6
       - 32MHz
@@ -463,7 +491,21 @@ You do not need to use/buy external debug tool.
       - 80MHz
       - 256KB
       - 64KB
+    * - ``nucleo_l433rc_p``
+      - `ST Nucleo L433RC-P <https://www.st.com/en/evaluation-tools/nucleo-l433rc-p.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L433RC
+      - 80MHz
+      - 256KB
+      - 64KB
     * - ``nucleo_l476rg``
+      - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - ``nucleo_l486rg``
       - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
       - STM32L476RGT6
@@ -477,6 +519,13 @@ You do not need to use/buy external debug tool.
       - 80MHz
       - 1MB
       - 128KB
+    * - ``nucleo_l496zg_p``
+      - `ST Nucleo L496ZG-P <https://www.st.com/en/evaluation-tools/nucleo-l496zg-p.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L496ZGT6P
+      - 80MHz
+      - 1MB
+      - 320KB
     * - ``seeedArchMax``
       - `Seeed Arch Max <https://developer.mbed.org/platforms/Seeed-Arch-Max/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
@@ -484,6 +533,27 @@ You do not need to use/buy external debug tool.
       - 168MHz
       - 512KB
       - 192KB
+    * - ``silica_sensor_node``
+      - `ST Sensor Node <https://www.avnet.com/shop/emea/products/avnet-engineering-services/silicastmsensornodeplus-3074457345633959668/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32L476JG
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - ``ublox_c030_r410m``
+      - `u-blox C030-R410M IoT <https://os.mbed.com/platforms/ublox-C030-R410M/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32F437VG
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - ``wio_3g``
+      - `Seeed Wio 3G <https://os.mbed.com/platforms/Seeed-Wio-3g/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - STM32F439VI
+      - 180MHz
+      - 2MB
+      - 256KB
 
 
 External Debug Tools
@@ -587,6 +657,27 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F103T8``
+      - `STM32F103T8 (20k RAM. 64k Flash) <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103T8T6
+      - 72MHz
+      - 20KB
+      - 64KB
+    * - ``genericSTM32F103TB``
+      - `STM32F103TB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103tb.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103TBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - ``genericSTM32F103VB``
+      - `STM32F103VB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103vb.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103VBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - ``genericSTM32F103VC``
       - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
@@ -594,10 +685,38 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 72MHz
       - 256KB
       - 48KB
+    * - ``genericSTM32F103VD``
+      - `STM32F103VD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103vd.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103VDT6
+      - 72MHz
+      - 384KB
+      - 64KB
     * - ``genericSTM32F103VE``
       - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
       - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - ``genericSTM32F103ZC``
+      - `STM32F103ZC (48k RAM. 256k Flash) <http://www.st.com/en/microcontrollers/stm32f103zc.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103ZCT6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - ``genericSTM32F103ZD``
+      - `STM32F103ZD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103zd.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103ZDT6
+      - 72MHz
+      - 384KB
+      - 64KB
+    * - ``genericSTM32F103ZE``
+      - `STM32F103ZE (64k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
@@ -629,6 +748,20 @@ external debug tool. See "Debug" column for compatible debug tools.
       - 72MHz
       - 108KB
       - 17KB
+    * - ``maple_ret6``
+      - `Maple (RET6) <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103RET6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - ``microduino32_flash``
+      - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - STM32F103CBT6
+      - 72MHz
+      - 105.47KB
+      - 16.60KB
     * - ``mote_l152rc``
       - `NAMote72 <https://developer.mbed.org/platforms/NAMote-72/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
@@ -894,6 +1027,27 @@ Armstrap
       - 512KB
       - 192KB
 
+Avnet Silica
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``silica_sensor_node``
+      - `ST Sensor Node <https://www.avnet.com/shop/emea/products/avnet-engineering-services/silicastmsensornodeplus-3074457345633959668/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32L476JG
+      - 80MHz
+      - 1MB
+      - 128KB
+
 Espotel
 ~~~~~~~
 
@@ -977,6 +1131,27 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - ``genericSTM32F103T8``
+      - `STM32F103T8 (20k RAM. 64k Flash) <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F103T8T6
+      - 72MHz
+      - 20KB
+      - 64KB
+    * - ``genericSTM32F103TB``
+      - `STM32F103TB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103tb.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F103TBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - ``genericSTM32F103VB``
+      - `STM32F103VB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103vb.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F103VBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - ``genericSTM32F103VC``
       - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -984,10 +1159,38 @@ Generic
       - 72MHz
       - 256KB
       - 48KB
+    * - ``genericSTM32F103VD``
+      - `STM32F103VD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103vd.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F103VDT6
+      - 72MHz
+      - 384KB
+      - 64KB
     * - ``genericSTM32F103VE``
       - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - ``genericSTM32F103ZC``
+      - `STM32F103ZC (48k RAM. 256k Flash) <http://www.st.com/en/microcontrollers/stm32f103zc.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F103ZCT6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - ``genericSTM32F103ZD``
+      - `STM32F103ZD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103zd.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F103ZDT6
+      - 72MHz
+      - 384KB
+      - 64KB
+    * - ``genericSTM32F103ZE``
+      - `STM32F103ZE (64k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
@@ -1033,6 +1236,13 @@ LeafLabs
       - 72MHz
       - 108KB
       - 17KB
+    * - ``maple_ret6``
+      - `Maple (RET6) <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F103RET6
+      - 72MHz
+      - 256KB
+      - 48KB
 
 MXChip
 ~~~~~~
@@ -1054,6 +1264,27 @@ MXChip
       - 100MHz
       - 1MB
       - 256KB
+
+Microduino
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``microduino32_flash``
+      - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F103CBT6
+      - 72MHz
+      - 105.47KB
+      - 16.60KB
 
 MultiTech
 ~~~~~~~~~
@@ -1243,6 +1474,13 @@ ST
       - 32MHz
       - 192KB
       - 20KB
+    * - ``disco_l100rc``
+      - `ST 32L100DISCOVERY <https://www.st.com/en/evaluation-tools/32l100cdiscovery.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32L100RCT6
+      - 32MHz
+      - 256KB
+      - 16KB
     * - ``disco_l152rb``
       - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -1264,6 +1502,13 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - ``disco_l496ag``
+      - `ST 32L496GDISCOVERY <https://www.st.com/en/evaluation-tools/32l496gdiscovery.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32L496AGI6
+      - 80MHz
+      - 1MB
+      - 320KB
     * - ``eval_l073z``
       - `ST STM32L073Z-EVAL <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-eval-boards/stm32l073z-eval.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -1404,6 +1649,13 @@ ST
       - 180MHz
       - 2MB
       - 256KB
+    * - ``nucleo_f439zi``
+      - `ST Nucleo F439ZI <https://developer.mbed.org/platforms/ST-Nucleo-F439ZI/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F439ZIT6
+      - 180MHz
+      - 2MB
+      - 256KB
     * - ``nucleo_f446re``
       - `ST Nucleo F446RE <https://developer.mbed.org/platforms/ST-Nucleo-F446RE/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -1425,6 +1677,13 @@ ST
       - 216MHz
       - 1MB
       - 320KB
+    * - ``nucleo_f756zg``
+      - `ST Nucleo F756ZG <https://www.st.com/en/evaluation-tools/nucleo-f756zg.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F756ZG
+      - 216MHz
+      - 1MB
+      - 320KB
     * - ``nucleo_f767zi``
       - `ST Nucleo F767ZI <https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
@@ -1433,7 +1692,7 @@ ST
       - 2MB
       - 512KB
     * - ``nucleo_l011k4``
-      - `ST Nucleo L011K4 <https://developer.mbed.org/platforms/ST-Nucleo-L011K4/?utm_source=platformio&utm_medium=docs>`_
+      - `ST Nucleo L011K4 <https://www.st.com/en/evaluation-tools/nucleo-l011k4.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - STM32L011K4T6
       - 32MHz
@@ -1474,7 +1733,21 @@ ST
       - 80MHz
       - 256KB
       - 64KB
+    * - ``nucleo_l433rc_p``
+      - `ST Nucleo L433RC-P <https://www.st.com/en/evaluation-tools/nucleo-l433rc-p.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32L433RC
+      - 80MHz
+      - 256KB
+      - 64KB
     * - ``nucleo_l476rg``
+      - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - ``nucleo_l486rg``
       - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - STM32L476RGT6
@@ -1488,6 +1761,13 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - ``nucleo_l496zg_p``
+      - `ST Nucleo L496ZG-P <https://www.st.com/en/evaluation-tools/nucleo-l496zg-p.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32L496ZGT6P
+      - 80MHz
+      - 1MB
+      - 320KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -1509,6 +1789,13 @@ SeeedStudio
       - 168MHz
       - 512KB
       - 192KB
+    * - ``wio_3g``
+      - `Seeed Wio 3G <https://os.mbed.com/platforms/Seeed-Wio-3g/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F439VI
+      - 180MHz
+      - 2MB
+      - 256KB
 
 Semtech
 ~~~~~~~
@@ -1560,6 +1847,13 @@ u-blox
       - 256KB
     * - ``ublox_c030_n211``
       - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Yes <piodebug>`
+      - STM32F437VG
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - ``ublox_c030_r410m``
+      - `u-blox C030-R410M IoT <https://os.mbed.com/platforms/ublox-C030-R410M/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`
       - STM32F437VG
       - 180MHz
