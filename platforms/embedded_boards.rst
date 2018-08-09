@@ -3056,7 +3056,7 @@ Maxim
       - 512KB
       - 160KB
     * - ``max32625pico``
-      - `MAX32625MBED <http://www.maximintegrated.com/max32625pico?utm_source=platformio&utm_medium=docs>`_
+      - `MAX32625PICO <https://www.maximintegrated.com/en/products/microcontrollers/MAX32625PICO.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Maxim 32 <platform_maxim32>`
       - No
       - MAX32625
