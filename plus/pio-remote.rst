@@ -56,7 +56,7 @@ Technology
 
 |PIORemote| is an own `PIO Plus <https://pioplus.com/>`__ technology
 for remote solutions without external dependencies to
-operation system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
+operating system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
 The Server component (|PIOCloud|) plays a role of coupling link between
 :ref:`cmd_remote_agent` and Client (:ref:`cmd_remote`, :ref:`ide_cloud`,
 :ref:`ci`, SDKs, etc.).

@@ -99,7 +99,7 @@ For more details please look into :option:`platformio init --board`.
     --build-dir
 
 Path to directory where PlatformIO will initialise new project. By default it's
-temporary directory within your operation system.
+temporary directory within your operating system.
 
 .. note::
 
