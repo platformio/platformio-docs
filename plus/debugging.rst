@@ -98,18 +98,8 @@ You can switch between debugging tools using :ref:`projectconf_debug_tool`
 option.
 
 .. warning::
-    You will need to install debug tool drivers depending on your system:
-
-    :Windows:
-        Please check official documentation for your debug tool and install
-        required drivers or use related tools, such as Zadig.
-
-    :Mac:
-        You don't need to install extra drivers. Nevertheless, please check
-        official documentation.
-
-    :Linux:
-        Please install "udev" rules :ref:`faq_udev_rules`
+    You will need to install debug tool drivers depending on your operating
+    system. Please check "Drivers" section for debugging tool below.
 
 .. contents::
     :local:
@@ -130,6 +120,18 @@ Atmel-ICE
   Atmel-ICE is a powerful development tool for debugging and programming ARM®
   Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability.
   `Vendor information... <https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs>`__
+
+:Drivers:
+  :Windows:
+    When installing the Atmel-ICE on a computer running Microsoft Windows,
+    the USB driver is loaded when the Atmel-ICE is first plugged in.
+
+  :Mac:
+    Not required.
+
+  :Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_atmel-ice
 
@@ -161,6 +163,9 @@ Black Magic Probe
 
   Also, see :ref:`debugging_tool_custom` debugging configuration with
   Black Magic Probe.
+
+:Drivers:
+  Not required.
 
 .. begin_compatible_platforms_blackmagic
 
@@ -195,6 +200,18 @@ CMSIS-DAP
   (Serial Wire Debug) to the target device to access the Coresight DAP on the other.
   `Vendor information... <https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs>`__
 
+:Drivers:
+  :Windows:
+    Please install `Windows serial driver <https://os.mbed.com/docs/latest/tutorials/windows-serial-driver.html>`_ and check "USB Driver Installation" guide
+    for your board.
+
+  :Mac:
+    Not required.
+
+  :Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
+
 .. begin_compatible_platforms_cmsis-dap
 
 :Compatible Platforms:
@@ -227,14 +244,18 @@ FTDI Chip
 
 :Drivers:
   :Windows:
-      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
 
   :Mac:
-      You don't need to install extra drivers. Nevertheless, please check
-      official documentation.
+    macOS contains default FTDIUSBSerialDriver driver which conflicts with
+    debug tools which are based on this chip. FTDI Chip company recommends
+    removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note
+    (Page 16, Section 4: Uninstalling FTDI Drivers on OS X)
+    `AN134: FTDI Drivers Installation guide for MAC OS X <http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf>`__
 
   :Linux:
-      Please install "udev" rules :ref:`faq_udev_rules`.
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_ftdi
 
@@ -271,6 +292,20 @@ J-LINK
 
   Also, see :ref:`debugging_tool_custom` debugging configuration with
   J-Link GDB Server.
+
+:Drivers:
+  :Windows:
+    1. Start debugging session using :ref:`pioide`. PlatformIO will install
+       J-Link software dependencies
+    2. Navigate to :ref:`projectconf_pio_home_dir`/packages/tool-jlink/USBDriver
+    3. Run ``InstDrivers.exe``.
+
+  :Mac:
+    Not required.
+
+  :Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_jlink
 
@@ -334,14 +369,18 @@ Mini-Module FT2232H
 
 :Drivers:
   :Windows:
-      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
 
   :Mac:
-      You don't need to install extra drivers. Nevertheless, please check
-      official documentation.
+    macOS contains default FTDIUSBSerialDriver driver which conflicts with
+    debug tools which are based on this chip. FTDI Chip company recommends
+    removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note
+    (Page 16, Section 4: Uninstalling FTDI Drivers on OS X)
+    `AN134: FTDI Drivers Installation guide for MAC OS X <http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf>`__
 
   :Linux:
-      Please install "udev" rules :ref:`faq_udev_rules`.
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_minimodule
 
@@ -368,6 +407,17 @@ MSP Debug
   derivatives and handles tasks such as code download, stepping through code or
   break points.
   `Vendor information... <http://www.ti.com/tool/mspds?utm_source=platformio&utm_medium=docs>`__
+
+:Drivers:
+  :Windows:
+    Please "USB Driver Installation" guide for your board.
+
+  :Mac:
+    Not required.
+
+  :Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_mspdebug
 
@@ -415,14 +465,18 @@ Olimex ARM-USB-OCD
 
 :Drivers:
   :Windows:
-      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
 
   :Mac:
-      You don't need to install extra drivers. Nevertheless, please check
-      official documentation.
+    macOS contains default FTDIUSBSerialDriver driver which conflicts with
+    debug tools which are based on this chip. FTDI Chip company recommends
+    removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note
+    (Page 16, Section 4: Uninstalling FTDI Drivers on OS X)
+    `AN134: FTDI Drivers Installation guide for MAC OS X <http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf>`__
 
   :Linux:
-      Please install "udev" rules :ref:`faq_udev_rules`.
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_olimex-arm-usb-ocd
 
@@ -470,14 +524,18 @@ Olimex ARM-USB-OCD-H
 
 :Drivers:
   :Windows:
-      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
 
   :Mac:
-      You don't need to install extra drivers. Nevertheless, please check
-      official documentation.
+    macOS contains default FTDIUSBSerialDriver driver which conflicts with
+    debug tools which are based on this chip. FTDI Chip company recommends
+    removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note
+    (Page 16, Section 4: Uninstalling FTDI Drivers on OS X)
+    `AN134: FTDI Drivers Installation guide for MAC OS X <http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf>`__
 
   :Linux:
-      Please install "udev" rules :ref:`faq_udev_rules`.
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_olimex-arm-usb-ocd-h
 
@@ -524,14 +582,18 @@ Olimex ARM-USB-TINY
 
 :Drivers:
   :Windows:
-      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
 
   :Mac:
-      You don't need to install extra drivers. Nevertheless, please check
-      official documentation.
+    macOS contains default FTDIUSBSerialDriver driver which conflicts with
+    debug tools which are based on this chip. FTDI Chip company recommends
+    removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note
+    (Page 16, Section 4: Uninstalling FTDI Drivers on OS X)
+    `AN134: FTDI Drivers Installation guide for MAC OS X <http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf>`__
 
   :Linux:
-      Please install "udev" rules :ref:`faq_udev_rules`.
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_olimex-jtag-tiny
 
@@ -578,14 +640,18 @@ Olimex ARM-USB-TINY-H
 
 :Drivers:
   :Windows:
-      See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
 
   :Mac:
-      You don't need to install extra drivers. Nevertheless, please check
-      official documentation.
+    macOS contains default FTDIUSBSerialDriver driver which conflicts with
+    debug tools which are based on this chip. FTDI Chip company recommends
+    removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note
+    (Page 16, Section 4: Uninstalling FTDI Drivers on OS X)
+    `AN134: FTDI Drivers Installation guide for MAC OS X <http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf>`__
 
   :Linux:
-      Please install "udev" rules :ref:`faq_udev_rules`.
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_olimex-arm-usb-tiny-h
 
@@ -609,6 +675,17 @@ TI-ICDI
   In-Circuit Debug Interface (ICDI) which allows programming and debugging of
   the onboard C Series microcontroller.
   `Vendor information... <http://www.ti.com/tool/stellaris_icdi_drivers?utm_source=platformio&utm_medium=docs>`__
+
+:Drivers:
+  :Windows:
+    Please "USB Driver Installation" guide for your board.
+
+  :Mac:
+    Not required.
+
+  :Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_ti-icdi
 
@@ -636,6 +713,17 @@ ST-LINK
   JTAG/serial wire debugging (SWD) interfaces are used to communicate with any
   STM8 or STM32 microcontroller located on an application board.
   `Vendor information... <http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs>`__
+
+:Drivers:
+  :Windows:
+    Please install official `ST-LINK USB driver <https://www.st.com/en/development-tools/stsw-link009.html>`_.
+
+  :Mac:
+    Not required.
+
+  :Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_compatible_platforms_stlink
 
@@ -893,7 +981,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
