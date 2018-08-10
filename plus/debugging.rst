@@ -227,6 +227,51 @@ CMSIS-DAP
 
 .. end_compatible_platforms_cmsis-dap
 
+.. _debugging_tool_esp-prog:
+
+ESP-Prog
+~~~~~~~~
+
+:Configuration:
+  :ref:`projectconf_debug_tool` = ``esp-prog``
+
+:Picture:
+  .. image:: ../_static/debug_probes/esp-prog.jpg
+    :target: https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs
+
+:Description:
+  ESP-Prog is one of Espressif’s development and debugging tools, with functions
+  including automatic firmware downloading, serial communication, and JTAG
+  online debugging. ESP-Prog's automatic firmware downloading and serial
+  communication functions are supported on both the ESP8266 and ESP32
+  platforms, while the JTAG online debugging is supported only on the ESP32
+  platform. `Vendor information... <https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs>`__
+
+:Drivers:
+  :Windows:
+    See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+
+  :Mac:
+    macOS contains default FTDIUSBSerialDriver driver which conflicts with
+    debug tools which are based on this chip. FTDI Chip company recommends
+    removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note
+    (Page 16, Section 4: Uninstalling FTDI Drivers on OS X)
+    `AN134: FTDI Drivers Installation guide for MAC OS X <http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf>`__
+
+  :Linux:
+    Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+    them before, please check that your rules are up-to-date or repeat steps.
+
+.. begin_compatible_platforms_esp-prog
+
+:Compatible Platforms:
+
+  * :ref:`platform_espressif32`
+  * :ref:`platform_riscv`
+  * :ref:`platform_samsung_artik`
+
+.. end_compatible_platforms_esp-prog
+
 .. _debugging_tool_ftdi:
 
 FTDI Chip
@@ -240,7 +285,7 @@ FTDI Chip
     :target: http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs
 
 :Description:
-  FTDI Chip develops innovative silicon solutions that enhance interaction with today’s technology. When a designer needs to add a USB port, rest assured that FTDI Chip has a full range of USB solutions to get the job done... <http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs>`__
+  FTDI Chip develops innovative silicon solutions that enhance interaction with today’s technology. When a designer needs to add a USB port, rest assured that FTDI Chip has a full range of USB solutions to get the job done. `Vendor information...  <http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs>`__
 
 :Drivers:
   :Windows:
