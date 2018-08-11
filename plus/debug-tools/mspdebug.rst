@@ -26,6 +26,10 @@ derivatives and handles tasks such as code download, stepping through code or
 break points.
 `Vendor information... <http://www.ti.com/tool/mspds?utm_source=platformio&utm_medium=docs>`__
 
+.. contents:: Contents
+    :local:
+    :depth: 1
+
 Drivers
 -------
 
@@ -39,11 +43,96 @@ Drivers
   Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
   them before, please check that your rules are up-to-date or repeat steps.
 
-.. begin_compatible_platforms
+.. begin_platforms
 
-Compatible Platforms
---------------------
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
 
-* :ref:`platform_timsp430`
+    * - Name
+      - Description
 
-.. end_compatible_platforms
+    * - :ref:`platform_timsp430`
+      - MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
+
+Frameworks
+----------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_energia`
+      - Energia Wiring-based framework enables pretty much anyone to start easily creating microcontroller-based projects and applications. Its easy-to-use libraries and functions provide developers of all experience levels to start blinking LEDs, buzzing buzzers and sensing sensors more quickly than ever before.
+
+Boards
+------
+
+.. note::
+    For more detailed ``board`` information please scroll tables below by horizontal.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``lpmsp430f5529``
+      - `TI LaunchPad MSP-EXP430F5529LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430F5529
+      - 16MHz
+      - 128KB
+      - 8KB
+    * - ``lpmsp430fr4133``
+      - `TI LaunchPad MSP-EXP430FR4133LP <http://www.ti.com/tool/msp-exp430fr4133?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR4133
+      - 8MHz
+      - 15KB
+      - 2KB
+    * - ``lpmsp430fr5739``
+      - `TI FraunchPad MSP-EXP430FR5739LP <http://www.ti.com/tool/msp-exp430fr5739?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR5739
+      - 16MHz
+      - 16KB
+      - 512B
+    * - ``lpmsp430fr5969``
+      - `TI LaunchPad MSP-EXP430FR5969LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR5969
+      - 8MHz
+      - 64KB
+      - 2KB
+    * - ``lpmsp430fr6989``
+      - `TI LaunchPad MSP-EXP430FR6989LP <http://www.ti.com/tool/msp-exp430fr6989?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430FR6989
+      - 8MHz
+      - 127KB
+      - 2KB
+    * - ``lpmsp430g2553``
+      - `TI LaunchPad MSP-EXP430G2553LP <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430g2.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`TI MSP430 <platform_timsp430>`
+      - :ref:`debugging_tool_mspdebug` (on-board)
+      - MSP430G2553
+      - 16MHz
+      - 16KB
+      - 512B
