@@ -13,7 +13,9 @@
 
 ESP8266 Non-OS SDK
 ==================
-:ref:`projectconf_env_framework` = ``esp8266-nonos-sdk``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``esp8266-nonos-sdk``
 
 The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions.
 

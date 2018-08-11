@@ -13,7 +13,9 @@
 
 libOpenCM3
 ==========
-:ref:`projectconf_env_framework` = ``libopencm3``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``libopencm3``
 
 The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
 
@@ -33,8 +35,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

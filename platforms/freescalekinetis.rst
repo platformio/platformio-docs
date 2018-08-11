@@ -13,7 +13,9 @@
 
 Freescale Kinetis
 =================
-:ref:`projectconf_env_platform` = ``freescalekinetis``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``freescalekinetis``
 
 Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
@@ -45,8 +47,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

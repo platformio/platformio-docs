@@ -13,7 +13,9 @@
 
 Arduino
 =======
-:ref:`projectconf_env_framework` = ``arduino``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``arduino``
 
 Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
@@ -34,8 +36,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

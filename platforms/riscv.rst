@@ -13,7 +13,9 @@
 
 RISC-V
 ======
-:ref:`projectconf_env_platform` = ``riscv``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``riscv``
 
 RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
 
@@ -44,8 +46,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

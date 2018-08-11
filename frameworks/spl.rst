@@ -13,7 +13,9 @@
 
 SPL
 ===
-:ref:`projectconf_env_framework` = ``spl``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``spl``
 
 The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
 
@@ -34,8 +36,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

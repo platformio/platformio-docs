@@ -13,7 +13,9 @@
 
 Infineon XMC
 ============
-:ref:`projectconf_env_platform` = ``infineonxmc``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``infineonxmc``
 
 Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
@@ -46,8 +48,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

@@ -13,7 +13,9 @@
 
 Espressif 8266
 ==============
-:ref:`projectconf_env_platform` = ``espressif8266``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``espressif8266``
 
 Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 

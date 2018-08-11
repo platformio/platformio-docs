@@ -13,7 +13,9 @@
 
 Tizen RT
 ========
-:ref:`projectconf_env_framework` = ``tizenrt``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``tizenrt``
 
 Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
 
@@ -33,8 +35,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

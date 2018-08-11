@@ -13,7 +13,9 @@
 
 Espressif 32
 ============
-:ref:`projectconf_env_platform` = ``espressif32``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``espressif32``
 
 Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
@@ -53,8 +55,8 @@ Debugging
 
 .. include:: espressif32_debug.rst
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

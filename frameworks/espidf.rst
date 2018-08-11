@@ -13,7 +13,9 @@
 
 ESP-IDF
 =======
-:ref:`projectconf_env_framework` = ``espidf``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``espidf``
 
 Espressif IoT Development Framework. Official development framework for ESP32.
 
@@ -33,8 +35,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

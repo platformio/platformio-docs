@@ -13,7 +13,9 @@
 
 Maxim 32
 ========
-:ref:`projectconf_env_platform` = ``maxim32``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``maxim32``
 
 Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
@@ -44,8 +46,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

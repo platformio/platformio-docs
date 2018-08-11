@@ -13,7 +13,9 @@
 
 TI TIVA
 =======
-:ref:`projectconf_env_platform` = ``titiva``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``titiva``
 
 Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
@@ -43,8 +45,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

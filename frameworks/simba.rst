@@ -13,7 +13,9 @@
 
 Simba
 =====
-:ref:`projectconf_env_framework` = ``simba``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``simba``
 
 Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
 
@@ -33,8 +35,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

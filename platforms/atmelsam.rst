@@ -13,7 +13,9 @@
 
 Atmel SAM
 =========
-:ref:`projectconf_env_platform` = ``atmelsam``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``atmelsam``
 
 Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
@@ -48,8 +50,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

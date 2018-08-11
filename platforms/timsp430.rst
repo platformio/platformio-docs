@@ -13,7 +13,9 @@
 
 TI MSP430
 =========
-:ref:`projectconf_env_platform` = ``timsp430``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``timsp430``
 
 MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 
@@ -43,8 +45,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

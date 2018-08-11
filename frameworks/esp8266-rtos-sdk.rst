@@ -13,7 +13,9 @@
 
 ESP8266 RTOS SDK
 ================
-:ref:`projectconf_env_framework` = ``esp8266-rtos-sdk``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``esp8266-rtos-sdk``
 
 ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
 

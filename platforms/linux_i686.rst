@@ -13,7 +13,9 @@
 
 Linux i686
 ==========
-:ref:`projectconf_env_platform` = ``linux_i686``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``linux_i686``
 
 Linux i686 (32-bit) is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X or Linux 32-bit) you can build native application for Linux i686 platform.
 

@@ -13,7 +13,9 @@
 
 Samsung ARTIK
 =============
-:ref:`projectconf_env_platform` = ``samsung_artik``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``samsung_artik``
 
 The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
 
@@ -43,8 +45,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

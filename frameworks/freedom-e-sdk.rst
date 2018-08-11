@@ -13,7 +13,9 @@
 
 Freedom E SDK
 =============
-:ref:`projectconf_env_framework` = ``freedom-e-sdk``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``freedom-e-sdk``
 
 Open Source Software for Developing on the SiFive Freedom E Platform
 
@@ -33,8 +35,8 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.

@@ -13,7 +13,9 @@
 
 Atmel AVR
 =========
-:ref:`projectconf_env_platform` = ``atmelavr``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``atmelavr``
 
 Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 

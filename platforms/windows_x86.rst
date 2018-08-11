@@ -13,7 +13,9 @@
 
 Windows x86
 ===========
-:ref:`projectconf_env_platform` = ``windows_x86``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``windows_x86``
 
 Windows x86 (32-bit) is a metafamily of graphical operating systems developed and marketed by Microsoft. Using host OS (Windows, Linux 32/64 or Mac OS X) you can build native application for Windows x86 platform.
 
