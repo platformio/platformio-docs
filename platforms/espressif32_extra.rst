@@ -289,7 +289,9 @@ You can pass additional options/flags to OTA uploader using
 .. code-block:: ini
 
     [env:myenv]
-    upload_flags = --port=3232
+    ; each flag in a new line
+    upload_flags =
+        --port=3232
 
 Available flags
 

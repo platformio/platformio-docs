@@ -40,7 +40,9 @@ Configuration for the programmers:
         platform = atmelavr
         framework = arduino
         upload_protocol = stk500v1
-        upload_flags = -P$UPLOAD_PORT
+        ; each flag in a new line
+        upload_flags =
+            -P$UPLOAD_PORT
 
         ; edit this line with valid upload port
         upload_port = SERIAL_PORT_HERE
@@ -53,7 +55,9 @@ Configuration for the programmers:
         platform = atmelavr
         framework = arduino
         upload_protocol = stk500v2
-        upload_flags = -Pusb
+        ; each flag in a new line
+        upload_flags =
+            -Pusb
 
 *   USBtinyISP
 
@@ -81,7 +85,9 @@ Configuration for the programmers:
         platform = atmelavr
         framework = arduino
         upload_protocol = usbasp
-        upload_flags = -Pusb
+        ; each flag in a new line
+        upload_flags =
+            -Pusb
 
 *   Parallel Programmer
 
@@ -91,7 +97,9 @@ Configuration for the programmers:
         platform = atmelavr
         framework = arduino
         upload_protocol = dapa
-        upload_flags = -F
+        ; each flag in a new line
+        upload_flags =
+            -F
 
 *   Arduino as ISP
 

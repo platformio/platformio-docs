@@ -329,10 +329,14 @@ See examples below:
 
     [env:my_custom_upload_tool]
     platform = ...
-    # place it into the root of project or use full path
+    ; place it into the root of project or use full path
     extra_scripts = extra_script.py
     upload_protocol = custom
-    upload_flags = -arg1 -arg2 -argN
+    ; each flag in a new line
+    upload_flags =
+      -arg1
+      -arg2
+      -argN
 
 ``extra_script.py`` (place it near ``platformio.ini``):
 
