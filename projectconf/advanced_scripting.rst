@@ -69,10 +69,6 @@ For example, :ref:`projectconf`
 
   [env:my_env_2]
   platform = ...
-  extra_scripts = pre:pre_extra_script1.py, pre:pre_extra_script2.py
-
-  [env:my_env_3]
-  platform = ...
   extra_scripts =
     pre:pre_extra_script.py
     post:post_extra_script1.py
@@ -90,14 +86,39 @@ uses to process a project:
   for :ref:`platforms` and :ref:`frameworks` build scripts, upload tools,
   :ref:`ldf`, and other internal operations
 * ``projenv``, ``Import("projenv")`` - isolated construction environment which
-  is used for processing of project source code located in :ref:`projectconf_pio_src_dir`.
+  is used for processing of a project source code located in :ref:`projectconf_pio_src_dir`.
   Please note that :ref:`projectconf_src_build_flags` specified in
   :ref:`projectconf` will be passed to ``projenv`` and not to ``env``.
 
-  .. note::  ``projenv`` is available only for POST-type scripts
+
+.. warning::
+  1. ``projenv`` is available only for POST-type scripts
+  2. Flags passed to ``env`` using PRE-type script will affect ``projenv`` too.
+
+``my_pre_extra_script.py``:
+
+.. code-block:: python
+
+    Import("env")
+
+    # access to global construction environment
+    print env
+
+    # Dump construction environment (for debug purpose)
+    print env.Dump()
+
+    # append extra flags to global build environment
+    # which later will be used to build:
+    # - project source code
+    # - frameworks
+    # - dependent libraries
+    env.Append(CPPDEFINES=[
+      "MACRO_1_NAME",
+      ("MACRO_2_NAME", "MACRO_2_VALUE")
+    ])
 
 
-``extra_script.py``:
+``my_post_extra_script.py``:
 
 .. code-block:: python
 
@@ -109,10 +130,24 @@ uses to process a project:
     # access to project construction environment
     print projenv
 
-    #
     # Dump construction environments (for debug purpose)
     print env.Dump()
     print projenv.Dump()
+
+    # append extra flags to global build environment
+    # which later will be used to build:
+    # - frameworks
+    # - dependent libraries
+    env.Append(CPPDEFINES=[
+      "MACRO_1_NAME",
+      ("MACRO_2_NAME", "MACRO_2_VALUE")
+    ])
+
+    # append extra flags to only project build environment
+    projenv.Append(CPPDEFINES=[
+      "PROJECT_EXTRA_MACRO_1_NAME",
+      ("ROJECT_EXTRA_MACRO_2_NAME", "ROJECT_EXTRA_MACRO_2_VALUE")
+    ])
 
 
 See examples below how to import construction environments and modify existing
@@ -218,11 +253,8 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 Examples
 ~~~~~~~~
 
-Take a look at the multiple snippets/answers for the user questions:
-
-  - `#365 Extra configuration for ESP8266 uploader <https://github.com/platformio/platformio-core/issues/365#issuecomment-163695011>`_
-  - `#247 Specific options for avrdude <https://github.com/platformio/platformio-core/issues/247#issuecomment-118169728>`_.
-
+The beast examples are `PaltformIO development platforms <https://github.com/topics/platformio-platform>`__.
+Please check ``builder`` folder for the main and framework scripts.
 
 Custom options in ``platformio.ini``
 ''''''''''''''''''''''''''''''''''''
