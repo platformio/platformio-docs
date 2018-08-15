@@ -74,7 +74,7 @@ The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
 * ``1.2.3`` - an exact version number. Use only this exact version
-* ``^1.2.3`` - any compatible version (exact version for ``1.x.x`` versions
+* ``^1.2.3`` - any compatible version (exact version for ``1.x.x`` versions)
 * ``~1.2.3`` - any version with the same major and minor versions, and an
   equal or greater patch version
 * ``>1.2.3`` - any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``

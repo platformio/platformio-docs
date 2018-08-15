@@ -31,7 +31,7 @@ PlatformIO allows to use specific version of platform using
 Version specifications can take any of the following forms:
 
 * ``1.2.3``: an exact version number. Use only this exact version
-* ``^1.2.3``: any compatible version (exact version for ``1.x.x`` versions
+* ``^1.2.3``: any compatible version (exact version for ``1.x.x`` versions)
 * ``~1.2.3``: any version with the same major and minor versions, and an
   equal or greater patch version
 * ``>1.2.3``: any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
@@ -47,6 +47,9 @@ Examples:
 
     [env:the_latest_version]
     platform = atmelavr
+
+    [env:specific_version]
+    platform = atmelavr@1.2.3
 
     [env:specific_major_version]
     platform = atmelavr@^1.2.3
