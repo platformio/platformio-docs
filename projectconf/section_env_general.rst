@@ -48,7 +48,7 @@ Examples:
     [env:the_latest_version]
     platform = atmelavr
 
-    [env:specific_version]
+    [env:exact_version]
     platform = atmelavr@1.2.3
 
     [env:specific_major_version]
