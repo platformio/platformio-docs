@@ -96,6 +96,29 @@ Adafruit
       - 4MB
       - 80KB
 
+Amperka
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``wifi_slot``
+      - `WiFi Slot <http://wiki.amperka.ru/wifi-slot?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
 Doit
 ~~~~
 
@@ -374,6 +397,14 @@ SeeedStudio
       - Frequency
       - Flash
       - RAM
+    * - ``wio_link``
+      - `Wio Link <https://www.seeedstudio.com/Wio-Link-p-2604.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``wio_node``
       - `Wio Node <https://www.seeedstudio.com/Wio-Node-p-2637.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -505,4 +536,50 @@ WEMOS
       - ESP8266
       - 80MHz
       - 16MB
+      - 80KB
+
+WifiDuino
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``wifiduino``
+      - `WiFiduino <https://www.facebook.com/WifiDuino/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
+XinaBox
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``xinabox_cw01``
+      - `XinaBox CW01 <https://xinabox.cc/products/cw01?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
       - 80KB

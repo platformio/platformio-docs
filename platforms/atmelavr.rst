@@ -497,6 +497,13 @@ Arduino
       - 16MHz
       - 30KB
       - 2KB
+    * - ``nanoatmega328new``
+      - `Arduino Nano ATmega328 (New Bootloader) <https://www.arduino.cc/en/Main/ArduinoBoardNano?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
     * - ``pro16MHzatmega168``
       - `Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini?utm_source=platformio&utm_medium=docs>`_
       - No
@@ -714,6 +721,13 @@ Atmel
       - 8MHz
       - 8KB
       - 512B
+    * - ``usbasp``
+      - `USBasp stick <https://www.fischl.de/usbasp/?utm_source=platformio&utm_medium=docs>`_
+      - No
+      - ATMEGA8
+      - 12MHz
+      - 8KB
+      - 1KB
 
 BQ
 ~~

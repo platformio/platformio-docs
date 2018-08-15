@@ -396,6 +396,29 @@ Alorium Technology
       - 31.50KB
       - 2KB
 
+Amperka
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``wifi_slot``
+      - `WiFi Slot <http://wiki.amperka.ru/wifi-slot?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
 Anarduino
 ~~~~~~~~~
 
@@ -782,6 +805,14 @@ Arduino
       - 16MHz
       - 30KB
       - 2KB
+    * - ``nanoatmega328new``
+      - `Arduino Nano ATmega328 (New Bootloader) <https://www.arduino.cc/en/Main/ArduinoBoardNano?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
     * - ``pro16MHzatmega168``
       - `Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz) <http://arduino.cc/en/Main/ArduinoBoardProMini?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
@@ -1124,6 +1155,14 @@ Atmel
       - 48MHz
       - 256KB
       - 32KB
+    * - ``usbasp``
+      - `USBasp stick <https://www.fischl.de/usbasp/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATMEGA8
+      - 12MHz
+      - 8KB
+      - 1KB
 
 Avnet Silica
 ~~~~~~~~~~~~
@@ -5041,6 +5080,14 @@ SeeedStudio
       - 180MHz
       - 2MB
       - 256KB
+    * - ``wio_link``
+      - `Wio Link <https://www.seeedstudio.com/Wio-Link-p-2604.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``wio_node``
       - `Wio Node <https://www.seeedstudio.com/Wio-Node-p-2637.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 8266 <platform_espressif8266>`
@@ -6042,6 +6089,29 @@ Widora
       - 16MB
       - 320KB
 
+WifiDuino
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``wifiduino``
+      - `WiFiduino <https://www.facebook.com/WifiDuino/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
 Xilinx
 ~~~~~~
 
@@ -6087,6 +6157,14 @@ XinaBox
       - Frequency
       - Flash
       - RAM
+    * - ``xinabox_cw01``
+      - `XinaBox CW01 <https://xinabox.cc/products/cw01?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Espressif 8266 <platform_espressif8266>`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
     * - ``xinabox_cw02``
       - `XinaBox CW02 <https://xinabox.cc/products/cw02?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Espressif 32 <platform_espressif32>`

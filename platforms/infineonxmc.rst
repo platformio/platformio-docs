@@ -35,6 +35,7 @@ Examples are listed from `Infineon XMC development platform repository <https://
 * `arduino-wire <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/arduino-wire?utm_source=platformio&utm_medium=docs>`_
 * `device-control <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/device-control?utm_source=platformio&utm_medium=docs>`_
 * `ifx9201 <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/ifx9201?utm_source=platformio&utm_medium=docs>`_
+* `radar <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/radar?utm_source=platformio&utm_medium=docs>`_
 * `rtc <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/rtc?utm_source=platformio&utm_medium=docs>`_
 * `spi <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/spi?utm_source=platformio&utm_medium=docs>`_
 * `ultrasonic <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/ultrasonic?utm_source=platformio&utm_medium=docs>`_

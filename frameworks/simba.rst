@@ -189,6 +189,14 @@ Arduino
       - 16MHz
       - 30KB
       - 2KB
+    * - ``nanoatmega328new``
+      - `Arduino Nano ATmega328 (New Bootloader) <https://www.arduino.cc/en/Main/ArduinoBoardNano?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
     * - ``uno``
       - `Arduino Uno <https://www.arduino.cc/en/Main/ArduinoBoardUno?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
