@@ -137,7 +137,7 @@ Copy the source code which is described below to it.
     ;   Library options: dependencies, extra library storages
     ;
     ; Please visit documentation for the other options and examples
-    ; http://docs.platformio.org/page/projectconf.html
+    ; https://docs.platformio.org/page/projectconf.html
 
     [env:arduino_uno]
     platform = atmelavr
