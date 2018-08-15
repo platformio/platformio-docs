@@ -570,6 +570,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   .navbar .github-corner {
     display: block;
   }
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
 }
 
 .nav .dropdown .caret {
