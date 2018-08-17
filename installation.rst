@@ -366,7 +366,7 @@ the code above, then edit ``~/.zprofile`` and add the following line:
 
     emulate sh -c '. ~/.profile'
 
-After everithing's done, just restart your session (log out and log back in) and you're good to go.
+After everything's done, just restart your session (log out and log back in) and you're good to go.
 
 If you don't know the difference between the two, check out `this page <https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc>`_.
 
