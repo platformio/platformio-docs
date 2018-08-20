@@ -41,6 +41,7 @@ Embedded
     freescalekinetis
     infineonxmc
     intel_arc32
+    intel_mcs51
     lattice_ice40
     maxim32
     microchippic32

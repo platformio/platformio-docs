@@ -3707,6 +3707,61 @@ Nordic
       - 512KB
       - 64KB
 
+Nuvoton
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``n79e8432``
+      - `Generic N79E8432 <http://www.nuvoton.com/hq/products/microcontrollers/8bit-8051-mcus/low-pin-count-8051-series/n79e8432/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Intel MCS-51 (8051) <platform_intel_mcs51>`
+      - No
+      - N79E8432
+      - 22MHz
+      - 4KB
+      - 512B
+    * - ``n79e844``
+      - `Generic N79E844 <http://www.nuvoton.com/hq/products/microcontrollers/8bit-8051-mcus/low-pin-count-8051-series/n79e844/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Intel MCS-51 (8051) <platform_intel_mcs51>`
+      - No
+      - N79E844
+      - 22MHz
+      - 8KB
+      - 512B
+    * - ``n79e845``
+      - `Generic N79E845 <http://www.nuvoton.com/hq/products/microcontrollers/8bit-8051-mcus/low-pin-count-8051-series/n79e845/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Intel MCS-51 (8051) <platform_intel_mcs51>`
+      - No
+      - N79E845
+      - 22MHz
+      - 16KB
+      - 512B
+    * - ``n79e854``
+      - `Generic N79E854 <http://www.nuvoton.com/hq/products/microcontrollers/8bit-8051-mcus/low-pin-count-8051-series/n79e854/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Intel MCS-51 (8051) <platform_intel_mcs51>`
+      - No
+      - N79E854
+      - 22MHz
+      - 8KB
+      - 512B
+    * - ``n79e855``
+      - `Generic N79E855 <http://www.nuvoton.com/hq/products/microcontrollers/8bit-8051-mcus/low-pin-count-8051-series/n79e855/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Intel MCS-51 (8051) <platform_intel_mcs51>`
+      - No
+      - N79E855
+      - 22MHz
+      - 16KB
+      - 512B
+
 OLIMEX
 ~~~~~~
 
@@ -4844,6 +4899,45 @@ ST
       - 80MHz
       - 1MB
       - 320KB
+
+STC
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``stc15f204ea``
+      - `Generic STC15F204EA <https://www.stcmicro.com/STC/STC15F204EA.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Intel MCS-51 (8051) <platform_intel_mcs51>`
+      - No
+      - STC15F204EA
+      - 11MHz
+      - 4KB
+      - 256B
+    * - ``stc15w404as``
+      - `Generic STC15W408AS <https://www.stcmicro.com/STC/STC15W408AS.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Intel MCS-51 (8051) <platform_intel_mcs51>`
+      - No
+      - STC15W408AS
+      - 11MHz
+      - 4KB
+      - 512B
+    * - ``stc15w408as``
+      - `Generic STC15W408AS <https://www.stcmicro.com/STC/STC15W408AS.html?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Intel MCS-51 (8051) <platform_intel_mcs51>`
+      - No
+      - STC15W408AS
+      - 11MHz
+      - 8KB
+      - 512B
 
 SainSmart
 ~~~~~~~~~
