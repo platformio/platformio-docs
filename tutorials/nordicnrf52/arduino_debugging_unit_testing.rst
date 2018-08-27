@@ -21,6 +21,7 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vs
 
 **Requirements:**
     - Downloaded and installed :ref:`ide_vscode`
+    - Install drivers for :ref:`debugging_tool_jlink` debug tool
     - `Nordic nRF52-DK <https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF52-DK>`_ development board
 
 

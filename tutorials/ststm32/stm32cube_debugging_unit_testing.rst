@@ -21,6 +21,7 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_at
 
 **Requirements:**
     - Downloaded and installed :ref:`ide_atom`
+    - Install drivers for :ref:`debugging_tool_stlink` debug tool
     - `Nucleo-F401RE <http://www.st.com/en/evaluation-tools/nucleo-f401re.html>`_ development board
 
 
