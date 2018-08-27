@@ -105,45 +105,53 @@ We can walk through the code using control buttons, set breakpoints, add variabl
 Writing Unit Tests
 ------------------
 
-Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add three default functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``. ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example we will use these functions to accordingly initialize and deinitialize LED.  ``setup`` and ``loop`` functions act as a simple Arduino program where we describe our test plan.
+Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``. Functions ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example we will use these functions to accordingly initialize and deinitialize LED.  ``setup`` and ``loop`` functions act as a simple Arduino program where we describe our test plan.
 
 Let’s implement some basic tests for blinking routine:
+
+* ``test_led_builtin_pin_number`` ensures that ``LED_BUILTIN`` has the correct value for this board
+* ``test_led_state_high`` tests functions ``digitalWrite`` and ``digitalRead`` with ``HIGH`` value
+* ``test_led_state_low`` tests functions ``digitalWrite`` and ``digitalRead`` with ``LOW`` value
+
+.. note::
+  Please note that LEDs on this board are active ``LOW``, that means we need to write logical ``0`` to illuminate the LED
 
 .. code-block:: cpp
 
     #include <Arduino.h>
     #include <unity.h>
 
-    // void setUp(void) {
-    // // set stuff up here
-    // }
+    void setUp(void) {
+        // set stuff up here
+        pinMode(LED_BUILTIN, OUTPUT);
+    }
 
-    // void tearDown(void) {
-    // // clean stuff up here
-    // }
+    void tearDown(void) {
+        // clean stuff up here
+        pinMode(LED_BUILTIN, INPUT);
+    }
 
     void test_led_builtin_pin_number(void)
     {
-        TEST_ASSERT_EQUAL(LED_BUILTIN, 13);
+        TEST_ASSERT_EQUAL(6, LED_BUILTIN);
     }
 
     void test_led_state_high(void)
     {
         digitalWrite(LED_BUILTIN, HIGH);
-        TEST_ASSERT_EQUAL(digitalRead(LED_BUILTIN), LOW);
+        TEST_ASSERT_EQUAL(LOW, digitalRead(LED_BUILTIN));
     }
 
     void test_led_state_low(void)
     {
         digitalWrite(LED_BUILTIN, LOW);
-        TEST_ASSERT_EQUAL(digitalRead(LED_BUILTIN), LOW);
+        TEST_ASSERT_EQUAL(LOW, digitalRead(LOW, LED_BUILTIN));
     }
 
     void setup()
     {
         UNITY_BEGIN();
         RUN_TEST(test_led_builtin_pin_number);
-        pinMode(LED_BUILTIN, OUTPUT);
 
         for (uint8_t i = 0; i < 5; i++)
         {
