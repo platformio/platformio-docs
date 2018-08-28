@@ -114,7 +114,8 @@ Let’s implement some basic tests for blinking routine:
 * ``test_led_state_low`` tests functions ``digitalWrite`` and ``digitalRead`` with ``LOW`` value
 
 .. note::
-  Please note that LEDs on this board are active ``LOW``, that means we need to write logical ``0`` to illuminate the LED
+  * LEDs on this board are active ``LOW``, so we need to write logical ``0`` to illuminate the LED
+  * At the moment there is an issue with the function ``digitalRead`` which always returns ``LOW``
 
 .. code-block:: cpp
 
@@ -150,6 +151,7 @@ Let’s implement some basic tests for blinking routine:
 
     void setup()
     {
+        delay(2000);
         UNITY_BEGIN();
         RUN_TEST(test_led_builtin_pin_number);
 
