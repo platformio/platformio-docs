@@ -101,7 +101,7 @@ described below.
 
     ; Library options
     lib_deps =
-        ${common.lib_deps_external}
+        ${common_env_data.lib_deps_external}
 
     ; Debug options
     debug_tool = custom
