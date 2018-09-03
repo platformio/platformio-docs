@@ -90,7 +90,17 @@ After successful uploading, the green LED1 should start blinking.
 Debugging the Firmware
 ----------------------
 
-:ref:`piodebug` offers the easiest way to debug your board. Just navigate to the top menu and select ``Debug: Start debugging`` or use hotkey button ``F5``:
+:ref:`piodebug` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:nrf52_dk]
+    platform = nordicnrf52
+    board = nrf52_dk
+    framework = arduino
+    debug_tool = jlink
+
+Then we can navigate to the top menu and select ``Debug: Start debugging`` or use hotkey button ``F5``:
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-7.png
 
@@ -107,7 +117,7 @@ Writing Unit Tests
 
 Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``. Functions ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example we will use these functions to accordingly initialize and deinitialize LED.  ``setup`` and ``loop`` functions act as a simple Arduino program where we describe our test plan.
 
-Let’s implement some basic tests for blinking routine:
+Let's create ``test`` folder in the root of the project and add a new file ``test_main.cpp`` to this folder. Next basic tests will be implemented in this file:
 
 * ``test_led_builtin_pin_number`` ensures that ``LED_BUILTIN`` has the correct value for this board
 * ``test_led_state_high`` tests functions ``digitalWrite`` and ``digitalRead`` with ``HIGH`` value
@@ -116,6 +126,7 @@ Let’s implement some basic tests for blinking routine:
 .. note::
   * LEDs on this board are active ``LOW``, so we need to write logical ``0`` to illuminate the LED
   * At the moment there is an issue with the function ``digitalRead`` which always returns ``LOW``
+  * 2 sec delay is requried since the board doesn't support software reseting via ``Serial.DTR/RTS``
 
 .. code-block:: cpp
 
@@ -146,7 +157,7 @@ Let’s implement some basic tests for blinking routine:
     void test_led_state_low(void)
     {
         digitalWrite(LED_BUILTIN, LOW);
-        TEST_ASSERT_EQUAL(LOW, digitalRead(LOW, LED_BUILTIN));
+        TEST_ASSERT_EQUAL(LOW, digitalRead(LED_BUILTIN));
     }
 
     void setup()
@@ -171,7 +182,7 @@ Let’s implement some basic tests for blinking routine:
     }
 
 
-Now we are ready to upload tests to the board. To do this we can use ``Tasks: Run Task... > PlatformIO Test`` from top menu:
+Now we are ready to upload tests to the board. To do this we can use ``Tasks: Run Task... > PlatformIO Test`` from top menu or Test button on :ref:`ide_vscode_toolbar`:
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-10.png
 
@@ -195,6 +206,7 @@ Both these modifications can be specified in :ref:`projectconf`:
     platform = nordicnrf52
     board = nrf52_dk
     framework = arduino
+    debug_tool = jlink
     ; SoftDevice version
     build_flags = -DNRF52_S132
     lib_deps =
