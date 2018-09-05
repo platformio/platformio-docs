@@ -45,7 +45,7 @@ and after these steps, we have a fully configured project that is ready for deve
 Adding Code to the Generated Project
 ------------------------------------
 
-Let's add some actual code to the project. Firstly, we open a default main file named ``main.cpp`` in the :ref:`projectconf_pio_src_dir` folder and replace its content with next one:
+Let's add some actual code to the project. Firstly, we open a default main file named ``main.cpp`` in the :ref:`projectconf_pio_src_dir` folder and replace its content with the next one:
 
 .. code-block:: cpp
 
@@ -117,62 +117,74 @@ Writing Unit Tests
 
 Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``. Functions ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example we will use these functions to accordingly initialize and deinitialize LED.  ``setup`` and ``loop`` functions act as a simple Arduino program where we describe our test plan.
 
-Let's create ``test`` folder in the root of the project and add a new file ``test_main.cpp`` to this folder. Next basic tests will be implemented in this file:
+Let's create ``test`` folder in the root of the project and add a new file ``test_main.cpp`` to this folder. Next basic tests for ``String`` class will be implemented in this file:
 
-* ``test_led_builtin_pin_number`` ensures that ``LED_BUILTIN`` has the correct value for this board
-* ``test_led_state_high`` tests functions ``digitalWrite`` and ``digitalRead`` with ``HIGH`` value
-* ``test_led_state_low`` tests functions ``digitalWrite`` and ``digitalRead`` with ``LOW`` value
+* ``test_string_concat`` tests the concatenation of two strings
+* ``test_string_substring`` tests the correctness of the substring extraction
+* ``test_string_index_of`` ensures that the string returns the correct index of the specified symbol
+* ``test_string_equal_ignore_case`` tests case-insensitive comparison of two strings
+* ``test_string_to_upper_case`` tests upper-case conversion of the string
+* ``test_string_replace`` tests the correctness of the replacing operation
 
 .. note::
-  * LEDs on this board are active ``LOW``, so we need to write logical ``0`` to illuminate the LED
-  * At the moment there is an issue with the function ``digitalRead`` which always returns ``LOW``
-  * 2 sec delay is requried since the board doesn't support software reseting via ``Serial.DTR/RTS``
+  * 2 sec delay is required since the board doesn't support software resetting via ``Serial.DTR/RTS``
 
 .. code-block:: cpp
 
     #include <Arduino.h>
     #include <unity.h>
 
+    String STR_TO_TEST;
+
     void setUp(void) {
         // set stuff up here
-        pinMode(LED_BUILTIN, OUTPUT);
+        STR_TO_TEST = "Hello, world!";
     }
 
     void tearDown(void) {
         // clean stuff up here
-        pinMode(LED_BUILTIN, INPUT);
+        STR_TO_TEST = "";
     }
 
-    void test_led_builtin_pin_number(void)
-    {
-        TEST_ASSERT_EQUAL(6, LED_BUILTIN);
+    void test_string_concat(void) {
+        String hello = "Hello, ";
+        String world = "world!";
+        TEST_ASSERT_EQUAL_STRING(STR_TO_TEST.c_str(), (hello + world).c_str());
     }
 
-    void test_led_state_high(void)
-    {
-        digitalWrite(LED_BUILTIN, HIGH);
-        TEST_ASSERT_EQUAL(LOW, digitalRead(LED_BUILTIN));
+    void test_string_substring(void) {
+        TEST_ASSERT_EQUAL_STRING("Hello", STR_TO_TEST.substring(0, 5).c_str());
     }
 
-    void test_led_state_low(void)
-    {
-        digitalWrite(LED_BUILTIN, LOW);
-        TEST_ASSERT_EQUAL(LOW, digitalRead(LED_BUILTIN));
+    void test_string_index_of(void) {
+        TEST_ASSERT_EQUAL(7, STR_TO_TEST.indexOf('w'));
+    }
+
+    void test_string_equal_ignore_case(void) {
+        TEST_ASSERT_TRUE(STR_TO_TEST.equalsIgnoreCase("HELLO, WORLD!"));
+    }
+
+    void test_string_to_upper_case(void) {
+        STR_TO_TEST.toUpperCase();
+        TEST_ASSERT_EQUAL_STRING("HELLO, WORLD!", STR_TO_TEST.c_str());
+    }
+
+    void test_string_replace(void) {
+        STR_TO_TEST.replace('!', '?');
+        TEST_ASSERT_EQUAL_STRING("Hello, world?", STR_TO_TEST.c_str());
     }
 
     void setup()
     {
         delay(2000);
         UNITY_BEGIN();
-        RUN_TEST(test_led_builtin_pin_number);
 
-        for (uint8_t i = 0; i < 5; i++)
-        {
-            RUN_TEST(test_led_state_high);
-            delay(200);
-            RUN_TEST(test_led_state_low);
-            delay(200);
-        }
+        RUN_TEST(test_string_concat);
+        RUN_TEST(test_string_substring);
+        RUN_TEST(test_string_index_of);
+        RUN_TEST(test_string_equal_ignore_case);
+        RUN_TEST(test_string_to_upper_case);
+        RUN_TEST(test_string_replace);
 
         UNITY_END(); // stop unit testing
     }
@@ -182,11 +194,11 @@ Let's create ``test`` folder in the root of the project and add a new file ``tes
     }
 
 
-Now we are ready to upload tests to the board. To do this we can use ``Tasks: Run Task... > PlatformIO Test`` from top menu or Test button on :ref:`ide_vscode_toolbar`:
+Now we are ready to upload tests to the board. To do this we can use ``Tasks: Run Task... > PlatformIO Test`` from the top menu or Test button on :ref:`ide_vscode_toolbar`:
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-10.png
 
-After processing we should see a detailed report about testing results:
+After processing we should see a detailed report about the testing results:
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-11.png
 
