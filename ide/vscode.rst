@@ -290,15 +290,6 @@ is ``true``.
 Activate extension only when PlatformIO-based project (with :ref:`projectconf`)
 is opened in workspace, default value is ``false``.
 
-``platformio-ide.defaultToolbarBuildAction``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Default action for "Build" button on :ref:`ide_vscode_toolbar`, default value
-is `release`. Possible values are ``release`` or ``pre-debug``.
-
-To eliminate a full project rebuilding before debugging, please change this
-value to ``pre-debug``.
-
 ``platformio-ide.autoCloseSerialMonitor``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
