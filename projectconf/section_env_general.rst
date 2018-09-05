@@ -99,12 +99,23 @@ comma+space **", "**.
 
 The list with available targets is located in :option:`platformio run --target`.
 
-**Example**: build a project, upload firmware and start :ref:`Serial Monitor <cmd_device_monitor>` automatically.
+**Examples**
 
-.. code-block:: ini
+1. Build a project, upload firmware and start :ref:`Serial Monitor <cmd_device_monitor>` automatically.
 
-   [env:upload_and_monitor]
-   targets = upload, monitor
+    .. code-block:: ini
+
+       [env:upload_and_monitor]
+       targets = upload, monitor
+
+2. Build a project in "Debug Mode" including debug information. This is very
+   useful if you use the same build environment for :ref:`piodebug`. It will
+   allow to avoid project rebuilding between "Run/Debug" modes.
+
+    .. code-block:: ini
+
+       [env:debug]
+       targets = debug
 
 
 **Tip!** You can use these targets like an option to
