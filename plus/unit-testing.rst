@@ -122,6 +122,8 @@ Allows you to run a test on a host machine or on a target device (board) which
 is directly connected to the host machine. In this case, you need to use the
 :ref:`cmd_test` command.
 
+.. _unit_testing_remote:
+
 Remote
 ~~~~~~
 
