@@ -63,7 +63,7 @@ Use Cases
 
 :Remote Unit Testing:
   Instruct any of :ref:`ci` services to run remote tests on a physical device.
-  See documentation for :ref:`Remote Test Runner <unit_testing_remote>`.
+  See the documentation for :ref:`Remote Test Runner <unit_testing_remote>`.
 
   How does it work?
 
@@ -85,7 +85,7 @@ Use Cases
   documentation below.
 
 :Remote Serial Monitor:
-  Sometime you don't have physical access to a target device but you need to
+  Sometimes you don't have physical access to a target device but you need to
   read data from some serial port. |PIORemote| allows you to connect to a
   remote agent and list connected devices with their serial ports. See
   :ref:`cmd_remote_device_monitor` command for details.

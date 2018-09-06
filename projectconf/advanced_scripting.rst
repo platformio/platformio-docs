@@ -406,7 +406,7 @@ See project example https://github.com/platformio/bintray-secure-ota
 Custom firmware/program name
 ''''''''''''''''''''''''''''
 
-Sometime is useful to have a different firmware/program name in
+Sometimes is useful to have a different firmware/program name in
 :ref:`projectconf_pio_build_dir`.
 
 ``platformio.ini``:
