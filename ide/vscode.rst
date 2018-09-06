@@ -114,8 +114,13 @@ Setting Up the Project
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-build-project.png
 
 
-Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload, Clean,
-Serial Monitor) below.
+---------------
+
+Further for reading:
+
+* :ref:`tutorials` (step-by-step tutorials with debugging and unit testing)
+* Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload,
+  Clean, Serial Monitor) below.
 
 **Happy coding with PlatformIO!**
 
@@ -149,11 +154,28 @@ Key Bindings
 * ``ctrl+alt+u`` Upload Firmware
 * ``ctrl+alt+s`` Open :ref:`Serial Port Monitor <cmd_device_monitor>`
 
-Task Runner
------------
+You can override existing key bindings  or add a new in VSCode. See official
+documentation `Key Bindings for Visual Studio Code <https://code.visualstudio.com/docs/getstarted/keybindings>`_.
 
-PlatformIO IDE provides base tasks ``Menu > Tasks`` (Build, Upload, Clean,
-Monitor, etc) and custom tasks per :ref:`projectconf` environment
+Project Tasks
+-------------
+
+Task Explorer
+~~~~~~~~~~~~~
+
+PlatformIO provides access to "Project Task Explorer" where you can control
+build process of declared environments in :ref:`projectconf`.
+Project Task Explorer is located in VSCode Activity Bar under branded
+PlatformIO icon. You can also access it via "VSCode Menu > Open View... >
+PlatformIO".
+
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-task-explorer.png
+
+Task Runner
+~~~~~~~~~~~
+
+PlatformIO IDE provides base tasks ``Menu > Termina > Run Task...`` (Build,
+Upload, Clean, Monitor, etc) and custom tasks per :ref:`projectconf` environment
 (``[env:***]``). A default behavior is to use Terminal Panel for presentation.
 Also, we use dedicated panel per unique task.
 
@@ -188,7 +210,7 @@ command:
 See more options in `official VSCode documentation <https://code.visualstudio.com/docs/editor/tasks#_output-behavior>`__.
 
 Custom Tasks
-------------
+~~~~~~~~~~~~
 
 Custom tasks can be added to ``tasks.json`` file located in ``.vscode`` folder
 in the root of project. Please read official documentation `Tasks in VSCode <https://code.visualstudio.com/docs/editor/tasks#vscode>`_.
@@ -217,6 +239,14 @@ its commands (:ref:`userguide`).
         ]
     }
 
+
+Multi-project Workspaces
+------------------------
+
+You can work with multiple project folders in Visual Studio Code with
+multi-root workspaces. This can be very helpful when you are working on
+several related projects at one time. Read more in documentation
+`Multi-root Workspaces <https://code.visualstudio.com/docs/editor/multi-root-workspaces>`_.
 
 Serial Port Monitor
 -------------------
