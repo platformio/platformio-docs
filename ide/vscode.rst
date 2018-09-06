@@ -293,20 +293,21 @@ VSCode has a separate activity view named "Debug" (bug icon on the left toolbar)
 - Multi-thread support
 - A hot restart of an active debugging session.
 
-There are 2 pre-configured debugging configurations. They are identical. The
-only difference is a presentation of build results.
+There are 2 pre-configured debugging configurations:
 
 :PIO Debug:
-  **Default configuration**. PlatformIO builds project using
-  :ref:`Debug Configuration <build_configurations>` and outputs results in
-  VSCode Debug Console.
+  **Default configuration**. PlatformIO runs **Pre-Debug** task and builds
+  project using :ref:`Debug Configuration <build_configurations>`. Also, it
+  checks for project changes.
 
-:PIO Debug (with Pre-Debug):
-  PlatformIO runs a separate "Pre-Debug" task which is based on
-  :ref:`Debug Configuration <build_configurations>`, and outputs results in
-  VSCode built-in Terminal. This configuration is very useful because VSCode
-  will parse output results and point you to the problems in a project if
-  error occurs.
+:PIO Debug (skip Pre-Debug):
+  PlatformIO skips **Pre-Debug** stage and DOES NOT build or check project changes.
+  If you do changes in project source files, they will not be reflected in
+  a debug session until you switch back to "PIO Debug" configuration or
+  manually run "Pre-Debug" task.
+
+  This configuration is very useful for quick debug session. It is super fast
+  and skips different checks. You manually control project changes.
 
 .. note::
   Please note that :ref:`piodebug` will use the first declared build
