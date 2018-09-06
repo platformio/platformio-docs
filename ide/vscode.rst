@@ -308,6 +308,11 @@ only difference is a presentation of build results.
   will parse output results and point you to the problems in a project if
   error occurs.
 
+.. note::
+  Please note that :ref:`piodebug` will use the first declared build
+  environment in :ref:`projectconf` if :ref:`projectconf_pio_env_default` option
+  is not specified.
+
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-debug.png
 
 Install Shell Commands

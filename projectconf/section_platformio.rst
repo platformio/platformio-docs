@@ -44,6 +44,8 @@ if :option:`platformio run --environment` option is not specified.
 :ref:`projectconf_pio_env_default` allows to define environments which
 should be processed by default.
 
+Also, :ref:`piodebug` checks this option when looking for debug environment.
+
 Multiple environments are allowed if they *are separated with ", "
 (comma+space)*. For example.
 
