@@ -244,6 +244,42 @@ Example:
     ; Custom Serial Monitor speed (baud rate)
     monitor_speed = 115200
 
+Debugging
+---------
+
+Debugging in VSCode works in combination with :ref:`piodebug`. You should
+have :ref:`pioaccount` to work with it.
+
+VSCode has a separate activity view named "Debug" (bug icon on the left toolbar).
+:ref:`piodebug` extends it with the next advanced debugging instruments and features:
+
+- Local, Global, and Static Variable Explorer
+- Conditional Breakpoints
+- Expressions and Watchpoints
+- Generic Registers
+- Peripheral Registers
+- Memory Viewer
+- Disassembly
+- Multi-thread support
+- A hot restart of an active debugging session.
+
+There are 2 pre-configured debugging configurations. They are identical. The
+only difference is a presentation of build results.
+
+:PIO Debug:
+  **Default configuration**. PlatformIO builds project using
+  :ref:`Debug Configuration <build_configurations>` and outputs results in
+  VSCode Debug Console.
+
+:PIO Debug (with Pre-Debug):
+  PlatformIO runs a separate "Pre-Debug" task which is based on
+  :ref:`Debug Configuration <build_configurations>`, and outputs results in
+  VSCode built-in Terminal. This configuration is very useful because VSCode
+  will parse output results and point you to the problems in a project if
+  error occurs.
+
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-debug.png
+
 Install Shell Commands
 ----------------------
 
