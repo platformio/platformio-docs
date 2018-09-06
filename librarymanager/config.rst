@@ -357,7 +357,7 @@ Exclude the directories and files which match with ``exclude`` patterns.
 *Optional* | Type: ``String`` or ``Array``
 
 A list with compatible frameworks. The available framework types are defined in
-the :ref:`platforms` section.
+the :ref:`frameworks` section.
 
 If the library is compatible with the all frameworks, then you can use ``*``
 symbol:
