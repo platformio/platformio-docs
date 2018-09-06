@@ -41,9 +41,9 @@ described below.
 
     [platformio] <projectconf/section_platformio>
     [env] <projectconf/section_env>
+    projectconf/build_configurations
     projectconf/dynamic_variables
     projectconf/examples
-
 
 **Example**
 
