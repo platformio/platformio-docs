@@ -137,137 +137,137 @@ Test results
     > platformio test -e uno --verbose
 
     PIO Plus (https://pioplus.com) v1.4.6
-Verbose mode can be enabled via `-v, --verbose` option
-Collected 1 items
+    Verbose mode can be enabled via `-v, --verbose` option
+    Collected 1 items
 
-================================== [test/*] Building... (1/3) ================================== 
-Processing uno (platform: atmelavr; board: uno; framework: arduino)
------------------------------------------------------------------------------------------------- 
-Verbose mode can be enabled via `-v, --verbose` option
-PLATFORM: Atmel AVR > Arduino Uno
-SYSTEM: ATMEGA328P 16MHz 2KB RAM (31.50KB Flash)
-Library Dependency Finder -> http://bit.ly/configure-pio-ldf
-LDF MODES: FINDER(chain) COMPATIBILITY(soft)
-Collected 24 compatible libraries
-Scanning dependencies...
-No dependencies
-Compiling .pioenvs\uno\test\output_export.cpp.o
-Compiling .pioenvs\uno\test\test_main.cpp.o
-Archiving .pioenvs\uno\libFrameworkArduinoVariant.a
-Compiling .pioenvs\uno\FrameworkArduino\CDC.cpp.o
-Indexing .pioenvs\uno\libFrameworkArduinoVariant.a
-Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial0.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial1.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial2.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial3.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\IPAddress.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\PluggableUSB.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\Print.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\Stream.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\Tone.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\USBCore.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\WInterrupts.c.o
-Compiling .pioenvs\uno\FrameworkArduino\WMath.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\WString.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\abi.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\hooks.c.o
-Compiling .pioenvs\uno\FrameworkArduino\main.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\new.cpp.o
-Compiling .pioenvs\uno\FrameworkArduino\wiring.c.o
-Compiling .pioenvs\uno\FrameworkArduino\wiring_analog.c.o
-Compiling .pioenvs\uno\FrameworkArduino\wiring_digital.c.o
-Compiling .pioenvs\uno\FrameworkArduino\wiring_pulse.S.o
-Compiling .pioenvs\uno\FrameworkArduino\wiring_pulse.c.o
-Compiling .pioenvs\uno\FrameworkArduino\wiring_shift.c.o
-Compiling .pioenvs\uno\UnityTestLib\unity.o
-Archiving .pioenvs\uno\libFrameworkArduino.a
-Indexing .pioenvs\uno\libFrameworkArduino.a
-Archiving .pioenvs\uno\libUnityTestLib.a
-Indexing .pioenvs\uno\libUnityTestLib.a
-Linking .pioenvs\uno\firmware.elf
-Checking size .pioenvs\uno\firmware.elf
-Building .pioenvs\uno\firmware.hex
-Memory Usage -> http://bit.ly/pio-memory-usage
-DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
-PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
+    ================================== [test/*] Building... (1/3) ================================== 
+    Processing uno (platform: atmelavr; board: uno; framework: arduino)
+    ------------------------------------------------------------------------------------------------ 
+    Verbose mode can be enabled via `-v, --verbose` option
+    PLATFORM: Atmel AVR > Arduino Uno
+    SYSTEM: ATMEGA328P 16MHz 2KB RAM (31.50KB Flash)
+    Library Dependency Finder -> http://bit.ly/configure-pio-ldf
+    LDF MODES: FINDER(chain) COMPATIBILITY(soft)
+    Collected 24 compatible libraries
+    Scanning dependencies...
+    No dependencies
+    Compiling .pioenvs\uno\test\output_export.cpp.o
+    Compiling .pioenvs\uno\test\test_main.cpp.o
+    Archiving .pioenvs\uno\libFrameworkArduinoVariant.a
+    Compiling .pioenvs\uno\FrameworkArduino\CDC.cpp.o
+    Indexing .pioenvs\uno\libFrameworkArduinoVariant.a
+    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial0.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial1.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial2.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial3.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\IPAddress.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\PluggableUSB.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\Print.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\Stream.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\Tone.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\USBCore.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\WInterrupts.c.o
+    Compiling .pioenvs\uno\FrameworkArduino\WMath.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\WString.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\abi.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\hooks.c.o
+    Compiling .pioenvs\uno\FrameworkArduino\main.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\new.cpp.o
+    Compiling .pioenvs\uno\FrameworkArduino\wiring.c.o
+    Compiling .pioenvs\uno\FrameworkArduino\wiring_analog.c.o
+    Compiling .pioenvs\uno\FrameworkArduino\wiring_digital.c.o
+    Compiling .pioenvs\uno\FrameworkArduino\wiring_pulse.S.o
+    Compiling .pioenvs\uno\FrameworkArduino\wiring_pulse.c.o
+    Compiling .pioenvs\uno\FrameworkArduino\wiring_shift.c.o
+    Compiling .pioenvs\uno\UnityTestLib\unity.o
+    Archiving .pioenvs\uno\libFrameworkArduino.a
+    Indexing .pioenvs\uno\libFrameworkArduino.a
+    Archiving .pioenvs\uno\libUnityTestLib.a
+    Indexing .pioenvs\uno\libUnityTestLib.a
+    Linking .pioenvs\uno\firmware.elf
+    Checking size .pioenvs\uno\firmware.elf
+    Building .pioenvs\uno\firmware.hex
+    Memory Usage -> http://bit.ly/pio-memory-usage
+    DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
+    PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
 
-========================================== [SUMMARY] ==========================================
-Environment uno                 [SUCCESS]
-Environment teensy31            [SKIP]
-================================= [SUCCESS] Took 2.54 seconds =================================
+    ========================================== [SUMMARY] ==========================================
+    Environment uno                 [SUCCESS]
+    Environment teensy31            [SKIP]
+    ================================= [SUCCESS] Took 2.54 seconds =================================
 
-================================= [test/*] Uploading... (2/3) =================================
-Processing uno (platform: atmelavr; board: uno; framework: arduino)
------------------------------------------------------------------------------------------------ 
-Verbose mode can be enabled via `-v, --verbose` option
-PLATFORM: Atmel AVR > Arduino Uno
-SYSTEM: ATMEGA328P 16MHz 2KB RAM (31.50KB Flash)
-Library Dependency Finder -> http://bit.ly/configure-pio-ldf
-LDF MODES: FINDER(chain) COMPATIBILITY(soft)
-Collected 24 compatible libraries
-Scanning dependencies...
-No dependencies
-Checking size .pioenvs\uno\firmware.elf
-Memory Usage -> http://bit.ly/pio-memory-usage
-DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
-PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
-Configuring upload protocol...
-AVAILABLE: arduino
-CURRENT: upload_protocol = arduino
-Looking for upload port...
-Auto-detected: COM18
-Uploading .pioenvs\uno\firmware.hex
+    ================================= [test/*] Uploading... (2/3) =================================
+    Processing uno (platform: atmelavr; board: uno; framework: arduino)
+    ----------------------------------------------------------------------------------------------- 
+    Verbose mode can be enabled via `-v, --verbose` option
+    PLATFORM: Atmel AVR > Arduino Uno
+    SYSTEM: ATMEGA328P 16MHz 2KB RAM (31.50KB Flash)
+    Library Dependency Finder -> http://bit.ly/configure-pio-ldf
+    LDF MODES: FINDER(chain) COMPATIBILITY(soft)
+    Collected 24 compatible libraries
+    Scanning dependencies...
+    No dependencies
+    Checking size .pioenvs\uno\firmware.elf
+    Memory Usage -> http://bit.ly/pio-memory-usage
+    DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
+    PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
+    Configuring upload protocol...
+    AVAILABLE: arduino
+    CURRENT: upload_protocol = arduino
+    Looking for upload port...
+    Auto-detected: COM18
+    Uploading .pioenvs\uno\firmware.hex
 
-avrdude: AVR device initialized and ready to accept instructions
+    avrdude: AVR device initialized and ready to accept instructions
 
-Reading | ################################################## | 100% 0.00s
+    Reading | ################################################## | 100% 0.00s
 
-avrdude: Device signature = 0x1e950f (probably m328p)
-avrdude: reading input file ".pioenvs\uno\firmware.hex"
-avrdude: writing flash (4060 bytes):
+    avrdude: Device signature = 0x1e950f (probably m328p)
+    avrdude: reading input file ".pioenvs\uno\firmware.hex"
+    avrdude: writing flash (4060 bytes):
 
-Writing | ################################################## | 100% 0.76s
+    Writing | ################################################## | 100% 0.76s
 
-avrdude: 4060 bytes of flash written
-avrdude: verifying flash memory against .pioenvs\uno\firmware.hex:
-avrdude: load data flash data from input file .pioenvs\uno\firmware.hex:
-avrdude: input file .pioenvs\uno\firmware.hex contains 4060 bytes
-avrdude: reading on-chip flash data:
+    avrdude: 4060 bytes of flash written
+    avrdude: verifying flash memory against .pioenvs\uno\firmware.hex:
+    avrdude: load data flash data from input file .pioenvs\uno\firmware.hex:
+    avrdude: input file .pioenvs\uno\firmware.hex contains 4060 bytes
+    avrdude: reading on-chip flash data:
 
-Reading | ################################################## | 100% 0.48s
+    Reading | ################################################## | 100% 0.48s
 
-avrdude: verifying ...
-avrdude: 4060 bytes of flash verified
+    avrdude: verifying ...
+    avrdude: 4060 bytes of flash verified
 
-avrdude: safemode: Fuses OK (E:00, H:00, L:00)
+    avrdude: safemode: Fuses OK (E:00, H:00, L:00)
 
-avrdude done.  Thank you.
+    avrdude done.  Thank you.
 
 
-========================================== [SUMMARY] ==========================================
-Environment uno                 [SUCCESS]
-Environment teensy31            [SKIP]
-================================= [SUCCESS] Took 4.45 seconds =================================
+    ========================================== [SUMMARY] ==========================================
+    Environment uno                 [SUCCESS]
+    Environment teensy31            [SKIP]
+    ================================= [SUCCESS] Took 4.45 seconds =================================
 
-================================== [test/*] Testing... (3/3) ==================================
-If you don't see any output for the first 10 secs, please reset board (press reset button)
+    ================================== [test/*] Testing... (3/3) ==================================
+    If you don't see any output for the first 10 secs, please reset board (press reset button)
 
-test\test_main.cpp:30:test_led_builtin_pin_number       [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
------------------------
-11 Tests 0 Failures 0 Ignored
+    test\test_main.cpp:30:test_led_builtin_pin_number       [PASSED]
+    test\test_main.cpp:41:test_led_state_high       [PASSED]
+    test\test_main.cpp:43:test_led_state_low        [PASSED]
+    test\test_main.cpp:41:test_led_state_high       [PASSED]
+    test\test_main.cpp:43:test_led_state_low        [PASSED]
+    test\test_main.cpp:41:test_led_state_high       [PASSED]
+    test\test_main.cpp:43:test_led_state_low        [PASSED]
+    test\test_main.cpp:41:test_led_state_high       [PASSED]
+    test\test_main.cpp:43:test_led_state_low        [PASSED]
+    test\test_main.cpp:41:test_led_state_high       [PASSED]
+    test\test_main.cpp:43:test_led_state_low        [PASSED]
+    -----------------------
+    11 Tests 0 Failures 0 Ignored
 
-======================================== [TEST SUMMARY] ======================================== 
-test/*/env:uno  [PASSED]
-test/*/env:teensy31     [IGNORED]
-================================= [PASSED] Took 12.99 seconds =================================
+    ======================================== [TEST SUMMARY] ======================================== 
+    test/*/env:uno  [PASSED]
+    test/*/env:teensy31     [IGNORED]
+    ================================= [PASSED] Took 12.99 seconds =================================
