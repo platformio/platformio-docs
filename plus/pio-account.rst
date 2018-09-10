@@ -33,8 +33,8 @@ crate a new account, reset a password or fetch authentication token.
 .. image:: ../_static/home/pio-home-account-login.png
 
 
-User Guide (CLI)
-----------------
+CLI Guide
+---------
 
 .. toctree::
     :maxdepth: 2

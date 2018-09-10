@@ -166,8 +166,8 @@ Quick Start
     OTA update will look as ``platformio remote run -t upload --upload-port 192.168.0.255``
     or ``platformio remote run -t upload --upload-port myesp8266.local``.
 
-User Guide (CLI)
-----------------
+CLI Guide
+---------
 
 .. toctree::
     :maxdepth: 3

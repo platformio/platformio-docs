@@ -323,8 +323,8 @@ Summary of the `Unity Test API <https://github.com/ThrowTheSwitch/Unity#unity-te
   - ``TEST_ASSERT_EQUAL_MEMORY(expected, actual, len)``
 
 
-User Guide (CLI)
-----------------
+CLI Guide
+---------
 
 .. toctree::
     :maxdepth: 3

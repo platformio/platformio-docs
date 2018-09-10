@@ -105,8 +105,8 @@ option.
   debug-tools/ti-icdi
   debug-tools/custom
 
-User Guide (CLI)
-----------------
+CLI Guide
+---------
 
 .. toctree::
   :maxdepth: 3
