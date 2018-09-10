@@ -174,6 +174,11 @@ escape sequences of the *xterm*. On *Windows* the typical console window is dumb
 and does not support any escapes. When *ANSI.sys* is loaded it supports some
 escapes.
 
+Miniterm supports `RFC 2217 <https://tools.ietf.org/html/rfc2217.html>`__
+remote serial ports and raw sockets using `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__
+such as ``rfc2217://<host>:<port>`` respectively ``socket://<host>:<port>``
+as port argument when invoking.
+
 To control *monitor* please use these "hot keys":
 
 * ``Ctrl+C`` Quit
@@ -188,10 +193,19 @@ Options
 .. option::
     -p, --port
 
-Port, a number or a device name.
+Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
 
 Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_port`
 option.
+
+**URL Handlers**
+
+* `rfc2217://<host>:<port>[?<option>[&<option>...]] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#rfc2217>`__
+* `socket://<host>:<port>[?logging={debug|info|warning|error}] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#socket>`__
+* `loop://[?logging={debug|info|warning|error}] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#loop>`__
+* `hwgrep://<regexp>[&skip_busy][&n=N] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#hwgrep>`__
+* `spy://port[?option[=value][&option[=value]]] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#spy>`__
+* `alt://port?class=<classname> <https://pyserial.readthedocs.io/en/latest/url_handlers.html#alt>`__
 
 .. option::
     -b, --baud
