@@ -45,7 +45,7 @@ and after these steps, we have a fully configured project that is ready for deve
 Adding Code to the Generated Project
 ------------------------------------
 
-Let's add some actual code to the project. Firstly, we open a default main file named ``main.cpp`` in the :ref:`projectconf_pio_src_dir` folder and replace its content with the next one:
+Let's add some actual code to the project. Firstly, we open a default main file ``main.cpp`` in the :ref:`projectconf_pio_src_dir` folder and replace its contents with the following:
 
 .. code-block:: cpp
 
@@ -71,8 +71,8 @@ After this step, we created a basic blink project ready for compiling and upload
 Compiling and Uploading the Firmware
 ------------------------------------
 
-Now we can build the project. To compile firmware we can use three options:
-Using Build button on :ref:`ide_vscode_toolbar`, using Command Palette ``View: Command Palette > PlatformIO: Build``, using Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
+Now we can build the project. To compile firmware we can use next options:
+Build option from the ``Project Tasks`` menu, Build button in :ref:`ide_vscode_toolbar`, Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-4.png
 
@@ -80,8 +80,8 @@ If everything went well, we should see a successful result message in the termin
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-5.png
 
-Now we can upload firmware to the board:
-Using Upload button on :ref:`ide_vscode_toolbar`, using Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
+To upload the firmware to the board we can use next options:
+Upload option from the ``Project Tasks`` menu, Upload button in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-6.png
 
@@ -90,7 +90,7 @@ After successful uploading, the green LED1 should start blinking.
 Debugging the Firmware
 ----------------------
 
-:ref:`piodebug` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`projectconf`:
+:ref:`piodebug` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`projectconf`. Since the board has an on-board ``JLink`` debug probe we can directly declare it in :ref:`projectconf`:
 
 .. code-block:: ini
 
@@ -100,11 +100,12 @@ Debugging the Firmware
     framework = arduino
     debug_tool = jlink
 
-Then we can navigate to the top menu and select ``Debug: Start debugging`` or use hotkey button ``F5``:
+To start the debug session we can use next options:
+``Debug: Start debugging`` from the top menu, ``Start Debugging`` option from Quick Access menu or hotkey button ``F5``:
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-7.png
 
-We need to wait some time while PlatformIO is initializing debug session and when the first line after the main function is highlighted we are ready to debug:
+We need to wait some time while PlatformIO is initializing the debug session and when the first line after the main function is highlighted we are ready to debug:
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-8.png
 
@@ -176,7 +177,7 @@ Let's create ``test`` folder in the root of the project and add a new file ``tes
 
     void setup()
     {
-        delay(2000);
+        delay(2000); // service delay
         UNITY_BEGIN();
 
         RUN_TEST(test_string_concat);
@@ -194,7 +195,8 @@ Let's create ``test`` folder in the root of the project and add a new file ``tes
     }
 
 
-Now we are ready to upload tests to the board. To do this we can use ``Tasks: Run Task... > PlatformIO Test`` from the top menu or Test button on :ref:`ide_vscode_toolbar`:
+Now we are ready to upload tests to the board. To do this we can use next options:
+Test button on :ref:`ide_vscode_toolbar`, Test option from the ``Project Tasks`` menu or ``Tasks: Run Task... > PlatformIO Test`` from the top menu:
 
 .. image:: ../../_static/tutorials/nordicnrf52/arduino-debugging-unit-testing-10.png
 
@@ -225,7 +227,7 @@ Both these modifications can be specified in :ref:`projectconf`:
       BLEPeripheral
 
 Now let's create a basic application that can interact with other BLE devices (e.g phone)
-For example, next code declares a BLE characteristic that controls the state of the LED1
+For example, next code declares a BLE characteristic that controls the state of the LED1.
 
 .. code-block:: cpp
 
