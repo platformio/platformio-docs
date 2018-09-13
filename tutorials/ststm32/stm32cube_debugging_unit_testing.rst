@@ -304,8 +304,8 @@ Let's add a new file ``test_main.c`` to the folder ``test``. Next basic tests fo
     }
 
     int main() {
-        HAL_Init();
-        HAL_Delay(2000);
+        HAL_Init();         // initialize the HAL library
+        HAL_Delay(2000);    // service delay
         UNITY_BEGIN();
         RUN_TEST(test_led_builtin_pin_number);
 
