@@ -17,7 +17,7 @@ Nordic nRF52
 :Configuration:
   :ref:`projectconf_env_platform` = ``nordicnrf52``
 
-The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
 For more detailed information please visit `vendor site <https://www.nordicsemi.com/Products/nRF52-Series-SoC?utm_source=platformio&utm_medium=docs>`_.
 

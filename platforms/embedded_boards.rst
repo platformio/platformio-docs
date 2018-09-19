@@ -387,6 +387,14 @@ Alorium Technology
       - Frequency
       - Flash
       - RAM
+    * - ``alorium_sno``
+      - `Alorium Sno <https://www.aloriumtech.com/sno/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`Atmel AVR <platform_atmelavr>`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
     * - ``alorium_xlr8``
       - `Alorium XLR8 <http://www.aloriumtech.com/xlr8/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Atmel AVR <platform_atmelavr>`
