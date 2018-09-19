@@ -26,21 +26,17 @@ it evaluates :ref:`ldf_c_cond_syntax` (``#ifdef``, ``if``, ``defined``,
 significantly reduce total compilation time. See :ref:`ldf_mode` for more
 details.
 
-Library Dependency Finder has controls that can be set up in :ref:`projectconf`:
-
-.. hlist::
-    :columns: 3
-
-    * :ref:`projectconf_lib_deps`
-    * :ref:`projectconf_lib_extra_dirs`
-    * :ref:`projectconf_lib_ignore`
-    * :ref:`projectconf_lib_compat_mode`
-    * :ref:`projectconf_lib_ldf_mode`
-    * :ref:`projectconf_lib_archive`
-
------------
-
 .. contents::
+
+Configuration
+-------------
+
+Library Dependency Finder can be configured from :ref:`projectconf`:
+
+.. toctree::
+  :maxdepth: 2
+
+  ../projectconf/section_env_library
 
 .. _ldf_storage:
 

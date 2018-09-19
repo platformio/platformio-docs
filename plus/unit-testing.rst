@@ -66,11 +66,10 @@ Configuration
 
 |PIOUTE| can be configured from :ref:`projectconf`
 
-* :ref:`projectconf_test_filter`
-* :ref:`projectconf_test_ignore`
-* :ref:`projectconf_test_port`
-* :ref:`projectconf_test_speed`
-* :ref:`projectconf_test_transport`
+.. toctree::
+  :maxdepth: 2
+
+  ../projectconf/section_env_test
 
 Test Types
 ----------

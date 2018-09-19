@@ -37,7 +37,8 @@ up-to-date. PlatformIO Library Manager supports
     :maxdepth: 2
 
     quickstart
-    CLI Guide <../userguide/lib/index>
     ldf
+    Configuration <../projectconf/section_env_library>
     config
     creating
+    CLI Guide <../userguide/lib/index>
