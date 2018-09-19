@@ -273,10 +273,12 @@ Creating
     .. code-block:: bash
 
         # Windows
-        /path/to/.platformio/penv/Scripts/activate
+        C:\Users\UserName\.platformio\penv
 
         # Unix (Linux, Mac)
-        /path/to/.platformio/penv/bin/activate
+        source /path/to/.platformio/penv/bin/activate
+        # or
+        . /path/to/.platformio/penv/bin/activate
 
 3.  Install PIO Core into virtual environment
 
