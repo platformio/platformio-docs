@@ -151,6 +151,9 @@ Platforms
     * - :ref:`platform_riscv`
       - RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
 
+    * - :ref:`platform_riscv_gap`
+      - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
+
     * - :ref:`platform_samsung_artik`
       - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
 
@@ -1313,6 +1316,29 @@ Generic
       - 168MHz
       - 502.23KB
       - 128KB
+
+GreenWaves Technologies
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``gapuino``
+      - `GAPUINO GAP8 development board <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`RISC-V GAP <platform_riscv_gap>`
+      - :ref:`debugging_tool_ftdi` (on-board)
+      - 
+      - 250MHz
+      - 64MB
+      - 8MB
 
 Hornbill
 ~~~~~~~~

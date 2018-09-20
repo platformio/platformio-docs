@@ -2506,6 +2506,29 @@ Generic
       - 502.23KB
       - 128KB
 
+GreenWaves Technologies
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``gapuino``
+      - `GAPUINO GAP8 development board <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`RISC-V GAP <platform_riscv_gap>`
+      - :ref:`Yes <piodebug>`
+      - 
+      - 250MHz
+      - 64MB
+      - 8MB
+
 Hardkernel
 ~~~~~~~~~~
 

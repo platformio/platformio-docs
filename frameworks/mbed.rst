@@ -427,6 +427,14 @@ You do not need to use/buy external debug tool.
       - 48MHz
       - 512KB
       - 128KB
+    * - ``gapuino``
+      - `GAPUINO GAP8 development board <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`RISC-V GAP <platform_riscv_gap>`
+      - :ref:`debugging_tool_ftdi` (on-board)
+      - 
+      - 250MHz
+      - 64MB
+      - 8MB
     * - ``hrm1017``
       - `Switch Science mbed HRM1017 <https://developer.mbed.org/platforms/mbed-HRM1017/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Nordic nRF51 <platform_nordicnrf51>`
@@ -1871,6 +1879,29 @@ Generic
       - 72MHz
       - 128KB
       - 20KB
+
+GreenWaves Technologies
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - ID
+      - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - ``gapuino``
+      - `GAPUINO GAP8 development board <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`_
+      - :ref:`RISC-V GAP <platform_riscv_gap>`
+      - :ref:`Yes <piodebug>`
+      - 
+      - 250MHz
+      - 64MB
+      - 8MB
 
 JKSoft
 ~~~~~~
