@@ -253,7 +253,7 @@ with the type of archive (``.zip`` or ``.tar.gz``).
     :ref:`libjson_downloadurl` has higher priority than
     :ref:`libjson_repository`.
 
-Example with fixed release/tag on GitHub:
+Example with detached release/tag on GitHub:
 
 .. code-block:: javascript
 
