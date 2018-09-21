@@ -368,6 +368,12 @@ is opened in workspace, default value is ``false``.
 Automatically close :ref:`cmd_device_monitor` before uploading/testing,
 default value is ``true``.
 
+``platformio-ide.reopenSerialMonitorDelay``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Configure time in milliseconds after which reopen Serial Port Monitor,
+default value is ``0``, which means reopen instantly.
+
 Known issues
 ------------
 
