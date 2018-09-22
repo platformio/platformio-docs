@@ -43,6 +43,27 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     platform = ...
     board = ...
     debug_tool = blackmagic
+    debug_port = <CONFIGURE GDB PORT>
+
+    ;
+    ; Debug Port Examples
+    ;
+
+    ; Linux
+    debug_port = /dev/ttyACM0
+
+    ; Windows for COM1-COM9
+    debug_port = COM3
+    ; Windows for COM10-XXX
+    debug_port = \\.\COM13
+
+    ; macOS
+    debug_port = /dev/cu.usbmodemE2C0C4C6
+
+Black Magic Probe has 2 serial ports: UART and GDB. We will need "GDB" port.
+Please use :ref:`piohome` > Devices or :ref:`piocore` and :ref:`cmd_device_list`
+command to list available ports. If you do not see "Black Magic Probe GDB" port,
+please try both. More `details <https://github.com/blacksphere/blackmagic/wiki/Useful-GDB-commands#connecting-gdb-to-the-black-magic-probe>`_.
 
 If you would like to use this tool for firmware uploading, please change
 upload protocol:
@@ -53,6 +74,9 @@ upload protocol:
     platform = ...
     board = ...
     debug_tool = blackmagic
+    debug_port = <CONFIGURE GDB PORT>
+
+    upload_port = <THE SAME AS DEBUG PORT>
 
     ; SWD interface
     upload_protocol = blackmagic
