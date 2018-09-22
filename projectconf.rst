@@ -11,7 +11,7 @@
 
 .. _projectconf:
 
-Project Configuration File ``platformio.ini``
+"platformio.ini" (Project Configuration File)
 =============================================
 
 The Project configuration file is named ``platformio.ini``. This is a

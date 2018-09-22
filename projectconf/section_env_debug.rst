@@ -47,7 +47,7 @@ See available tools in :ref:`debugging_tools`.
 ^^^^^^^^^^^^^^^^^^^^
 
 An initial breakpoint that makes your program stop whenever a certain point in
-the program is reached. **Default** value is  set to ``tbreak main`` and means
+the program is reached. **Default** value is set to ``tbreak main`` and means
 creating a temporary breakpoint at ``int main(...)`` function and
 automatically delete it after the first time a program stops there.
 
@@ -76,6 +76,9 @@ automatically delete it after the first time a program stops there.
 
     ; Examples 3: stop in main.cpp at line 13
     debug_init_break = break main.cpp:13
+
+    ; Examples 4: temporary stop at ``void Reset_Handler(void)``
+    debug_init_break = tbreak Reset_Handler
 
 .. _projectconf_debug_init_cmds:
 
