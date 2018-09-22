@@ -53,7 +53,12 @@ upload protocol:
     platform = ...
     board = ...
     debug_tool = blackmagic
+
+    ; SWD interface
     upload_protocol = blackmagic
+
+    ; JTAG interface
+    upload_protocol = blackmagic-jtag
 
 More options:
 

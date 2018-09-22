@@ -55,7 +55,12 @@ upload protocol:
     platform = ...
     board = ...
     debug_tool = jlink
+
+    ; SWD interface
     upload_protocol = jlink
+
+    ; JTAG interface
+    upload_protocol = jlink-jtag
 
 More options:
 
