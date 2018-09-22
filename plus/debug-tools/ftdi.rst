@@ -14,9 +14,6 @@
 FTDI Chip
 =========
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``ftdi``
-
 .. image:: ../../_static/debug_probes/ftdi.jpg
   :target: http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs
 
@@ -28,6 +25,35 @@ FTDI Chip has a full range of USB solutions to get the job done.
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = ftdi
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = ftdi
+    upload_protocol = ftdi
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------
@@ -137,7 +163,7 @@ Boards
       - `GAPUINO GAP8 development board <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`RISC-V GAP <platform_riscv_gap>`
       - :ref:`debugging_tool_ftdi` (on-board)
-      - 
+      -
       - 250MHz
       - 64MB
       - 8MB

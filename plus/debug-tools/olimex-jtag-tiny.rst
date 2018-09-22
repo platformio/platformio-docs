@@ -14,9 +14,6 @@
 Olimex ARM-USB-TINY
 ===================
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``olimex-jtag-tiny``
-
 .. image:: ../../_static/debug_probes/olimex-jtag-tiny.jpg
   :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs
 
@@ -26,6 +23,35 @@ Low-cost and high-speed ARM/ESP32 USB JTAG.
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = olimex-jtag-tiny
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = olimex-jtag-tiny
+    upload_protocol = olimex-jtag-tiny
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------

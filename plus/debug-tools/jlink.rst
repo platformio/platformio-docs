@@ -14,9 +14,6 @@
 J-LINK
 ======
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``jlink``
-
 .. image:: ../../_static/debug_probes/jlink.png
   :target: https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs
 
@@ -35,6 +32,35 @@ J-Link GDB Server.
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = jlink
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = jlink
+    upload_protocol = jlink
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------

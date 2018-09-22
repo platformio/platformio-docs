@@ -14,9 +14,6 @@
 TI-ICDI
 =======
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``ti-icdi``
-
 Tiva™ C Series evaluation and reference design kits provide an integrated
 In-Circuit Debug Interface (ICDI) which allows programming and debugging of
 the onboard C Series microcontroller.
@@ -25,6 +22,35 @@ the onboard C Series microcontroller.
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = ti-icdi
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = ti-icdi
+    upload_protocol = ti-icdi
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------

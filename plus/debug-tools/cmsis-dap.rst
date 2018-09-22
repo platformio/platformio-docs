@@ -14,9 +14,6 @@
 CMSIS-DAP
 =========
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``cmsis-dap``
-
 .. image:: ../../_static/debug_probes/cmsis-dap.png
   :target: https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs
 
@@ -29,6 +26,35 @@ computer on one side, and over JTAG (Joint Test Action Group) or SWD
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = cmsis-dap
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = cmsis-dap
+    upload_protocol = cmsis-dap
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------

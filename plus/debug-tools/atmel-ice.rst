@@ -14,9 +14,6 @@
 Atmel-ICE
 =========
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``atmel-ice``
-
 .. image:: ../../_static/debug_probes/atmel-ice.jpg
   :target: https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs
 
@@ -27,6 +24,35 @@ Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability.
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = atmel-ice
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = atmel-ice
+    upload_protocol = atmel-ice
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------

@@ -14,9 +14,6 @@
 ST-LINK
 =======
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``stlink``
-
 .. image:: ../../_static/debug_probes/stlink.jpg
   :target: http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs
 
@@ -29,6 +26,35 @@ STM8 or STM32 microcontroller located on an application board.
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = stlink
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = stlink
+    upload_protocol = stlink
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------

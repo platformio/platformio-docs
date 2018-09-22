@@ -14,9 +14,6 @@
 MSP Debug
 =========
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``mspdebug``
-
 The MSP debug stack (MSPDS) for all MSP430™ microcontrollers (MCUs) and
 SimpleLink™ MSP432™ devices consists of a static library on the host system
 side as well as an embedded firmware that runs on debug tools including the
@@ -29,6 +26,35 @@ break points.
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = mspdebug
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = mspdebug
+    upload_protocol = mspdebug
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------

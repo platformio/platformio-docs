@@ -14,9 +14,6 @@
 ESP-Prog
 ========
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``esp-prog``
-
 .. image:: ../../_static/debug_probes/esp-prog.jpg
   :target: https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs
 
@@ -30,6 +27,35 @@ platform. `Vendor information... <https://github.com/espressif/esp-iot-solution/
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = esp-prog
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = esp-prog
+    upload_protocol = esp-prog
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------

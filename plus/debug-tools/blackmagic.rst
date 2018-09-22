@@ -14,9 +14,6 @@
 Black Magic Probe
 =================
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``blackmagic``
-
 .. image:: ../../_static/debug_probes/blackmagic.jpg
   :target: https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs
 
@@ -33,6 +30,35 @@ Black Magic Probe.
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = blackmagic
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = blackmagic
+    upload_protocol = blackmagic
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------

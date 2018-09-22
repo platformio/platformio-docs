@@ -14,9 +14,6 @@
 Olimex ARM-USB-OCD
 ==================
 
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``olimex-arm-usb-ocd``
-
 .. image:: ../../_static/debug_probes/olimex-arm-usb-ocd.jpg
   :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/?utm_source=platformio&utm_medium=docs
 
@@ -27,6 +24,35 @@ Olimex ARM-USB-OCD
 .. contents:: Contents
     :local:
     :depth: 1
+
+Configuration
+-------------
+
+You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+:ref:`projectconf`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = olimex-arm-usb-ocd
+
+If you would like to use this tool for firmware uploading, please change
+upload protocol:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    debug_tool = olimex-arm-usb-ocd
+    upload_protocol = olimex-arm-usb-ocd
+
+More options:
+
+* :ref:`projectconf_section_env_debug`
+* :ref:`projectconf_section_env_upload`
 
 Drivers
 -------
