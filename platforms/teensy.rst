@@ -93,7 +93,7 @@ external debug tool. See "Debug" column for compatible debug tools.
       - MK64FX512
       - 120MHz
       - 512KB
-      - 192KB
+      - 255.99KB
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`debugging_tool_jlink`
@@ -257,7 +257,7 @@ Teensy
       - MK64FX512
       - 120MHz
       - 512KB
-      - 192KB
+      - 255.99KB
     * - ``teensy36``
       - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
       - :ref:`Yes <piodebug>`

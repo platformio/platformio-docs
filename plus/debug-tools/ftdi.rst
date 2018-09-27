@@ -163,7 +163,7 @@ Boards
       - `GAPUINO GAP8 development board <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`_
       - :ref:`RISC-V GAP <platform_riscv_gap>`
       - :ref:`debugging_tool_ftdi` (on-board)
-      -
+      - 
       - 250MHz
       - 64MB
       - 8MB
