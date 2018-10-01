@@ -12,4 +12,5 @@
 Tutorials
 ---------
 
-* :ref:`tutorial_arduino_debugging_unit_testing`
+* :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
+* :ref:`tutorial_nordicnrf52_arduino_debugging_unit_testing`

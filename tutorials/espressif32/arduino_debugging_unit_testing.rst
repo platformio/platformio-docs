@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _tutorial_arduino_debugging_unit_testing:
+.. _tutorial_espressif32_arduino_debugging_unit_testing:
 
 Get started with Arduino and ESP32-DevKitC: debugging and unit testing
 ======================================================================
@@ -50,18 +50,18 @@ Let's add some actual code to the project. Firstly, we open a default main file 
 .. code-block:: cpp
 
     #include <Arduino.h>
- 
+
     void setup()
     {
         Serial.begin(9600);
     }
-     
+
     void loop()
     {
         Serial.println("Hello world!");
         delay(1000);
-    } 
- 
+    }
+
 .. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-3.png
 
 After this step, we created a basic project ready for compiling and uploading.
@@ -294,7 +294,7 @@ For example, next code declares a BLE characteristic whose value can be printed 
     }
 
 Now we can compile and upload this program to the board as described in the previous sections.
-To verify that our application works as expected, we can use any Android smartphone with BLE feature and 
+To verify that our application works as expected, we can use any Android smartphone with BLE feature and
 `Nordic nRF Connect tool <https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en>`_.
 
 At first, we need to scan all advertising BLE devices and connect to the device called ``ESP32 BLE example``.

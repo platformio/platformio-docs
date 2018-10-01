@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _tutorial_arduino_debugging_unit_testing:
+.. _tutorial_nordicnrf52_arduino_debugging_unit_testing:
 
 Arduino and Nordic nRF52-DK: debugging and unit testing
 =======================================================
