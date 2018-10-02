@@ -96,8 +96,9 @@ Wiring Connections
   * - GND [CN2-2]
     - GND
 
-You will also need to connect Vbus [CN3-1] to Vcc [CN3-3] of FT2232H Mini-Module
-to power the FTDI chip. See `FT2232H Mini-Module Datasheet <http://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_FT2232H_Mini_Module.pdf>`_
+You will also need to connect Vbus [CN3-1] to Vcc [CN3-3] and V3V3 [CN2-1] to VIO [CN2-11] of FT2232H Mini-Module
+to power the FTDI chip. 
+See `FT2232H Mini-Module Datasheet <http://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_FT2232H_Mini_Module.pdf>`_
 
 .. begin_platforms
 
