@@ -23,6 +23,8 @@ Here are recent articles/reviews about PlatformIO:
 2018
 ^^^^
 
+* Sep 27, 2018 - **Lup Yuen Lee** - `Connect STM32 Blue Pill to Sigfox <https://medium.com/coinmonks/connect-stm32-blue-pill-to-sigfox-28c6f91bddc1>`_
+* Aug 27, 2018 - **Lup Yuen Lee** - `Juggling STM32 Blue Pill For Arduino Jugglers <https://medium.com/coinmonks/juggling-stm32-blue-pill-for-arduino-jugglers-edf6820dc808>`_
 * Jul 3, 2018 - **Andreas Schmidt** - `IoT for web developers: From zero to firmware, Part II <https://jaxenter.com/iot-web-developers-part-two-145815.html>`_
 * Jun 22, 2018 - **Andreas Schmidt** - `IoT for web developers, Part I <https://jaxenter.com/iot-web-developers-part-one-145802.html>`_
 * Jul 4, 2018 - **ThingForward** - `Screen-cast: First steps with PlatformIO’s Unified Debugger <https://www.thingforward.io/techblog/2018-07-04-first-steps-with-platformios-unified-debugger.html>`_
