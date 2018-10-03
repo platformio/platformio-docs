@@ -15,7 +15,6 @@ GAPuino GAP8
 ============
 
 .. contents::
-    :local:
 
 Platform :ref:`platform_riscv_gap`: GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 

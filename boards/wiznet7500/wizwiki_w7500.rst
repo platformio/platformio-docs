@@ -15,7 +15,6 @@ WIZwiki-W7500
 =============
 
 .. contents::
-    :local:
 
 Platform :ref:`platform_wiznet7500`: The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 

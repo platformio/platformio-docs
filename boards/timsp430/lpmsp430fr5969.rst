@@ -15,7 +15,6 @@ TI LaunchPad MSP-EXP430FR5969LP
 ===============================
 
 .. contents::
-    :local:
 
 Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 

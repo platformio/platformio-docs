@@ -15,7 +15,6 @@ Digilent chipKIT Pro MX7
 ========================
 
 .. contents::
-    :local:
 
 Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
 

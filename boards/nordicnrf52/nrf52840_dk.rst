@@ -15,7 +15,6 @@ Nordic nRF52840-DK
 ==================
 
 .. contents::
-    :local:
 
 Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 

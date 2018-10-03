@@ -15,7 +15,6 @@ Generic N79E845
 ===============
 
 .. contents::
-    :local:
 
 Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is an internally Harvard architecture, complex instruction set computer (CISC) instruction set, single chip microcontroller (uC) series developed by Intel in 1980 for use in embedded systems.
 

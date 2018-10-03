@@ -15,7 +15,6 @@ Arduino/Genuino 101
 ===================
 
 .. contents::
-    :local:
 
 Platform :ref:`platform_intel_arc32`: ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
