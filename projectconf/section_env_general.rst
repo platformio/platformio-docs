@@ -80,13 +80,16 @@ The multiple frameworks are allowed, *split them with comma+space ", "*.
 ``board``
 ^^^^^^^^^
 
-*PlatformIO* has pre-configured settings for the most popular boards. You don't
-need to specify ``board_build.mcu``, ``board_build.f_cpu``, ``upload_protocol`` or
-``upload_speed`` options. Just define a ``board`` type and *PlatformIO* will
-pre-fill options described above with appropriate values.
+*PlatformIO* has pre-configured settings for the most popular boards:
 
-You can find the ``board`` type in *Boards* section of each :ref:`platforms` or
-using `PlatformIO Embedded Boards Explorer <https://platformio.org/boards>`_.
+- build configuration
+- upload configuration
+- debugging configuration
+- connectivity information, etc.
+
+You can find a valid  ``board`` ID in :ref:`boards` catalog,
+`Boards Explorer <https://platformio.org/boards>`_ or
+:ref:`cmd_boards` command.
 
 .. _projectconf_targets:
 

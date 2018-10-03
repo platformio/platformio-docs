@@ -56,7 +56,7 @@ Tools & Debug Probes
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -66,59 +66,45 @@ You can switch between debugging :ref:`debugging_tools` using
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug tool and **ARE READY** for debugging!
-You do not need to use/buy external debug tool.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``mzeropro``
-      - `Arduino M0 Pro (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_mzeropro`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``samd21_xpro``
-      - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21J18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``samd21g18a``
-      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_zero`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``saml21_xpro_b``
-      - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAML21J18B
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``samr21_xpro``
-      - `Atmel ATSAMR21-XPRO <https://developer.mbed.org/platforms/SAMR21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_samr21_xpro`
       - SAMR21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``zero``
-      - `Arduino Zero (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_samd21g18a`
       - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_samd21_xpro`
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_saml21_xpro_b`
+      - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
@@ -128,239 +114,174 @@ External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
 Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug tool. See "Debug" column for compatible debug tools.
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``adafruit_circuitplayground_m0``
-      - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3333?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_feather_m0``
-      - `Adafruit Feather M0 <https://www.adafruit.com/product/2772?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_feather_m0`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_feather_m0_express``
-      - `Adafruit Feather M0 Express <https://www.adafruit.com/product/3403?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_feather_m0_express`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_feather_m4``
-      - `Adafruit Feather M4 (SAMD51) <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_feather_m4`
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
-    * - ``adafruit_gemma_m0``
-      - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_itsybitsy_m0``
-      - `Adafruit ItsyBitsy M0 <https://www.adafruit.com/product/3727?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_itsybitsy_m4``
-      - `Adafruit ItsyBitsy M4 (SAMD51) <https://www.adafruit.com/product/3800?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
-    * - ``adafruit_metro_m0``
-      - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_metro_m0`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_metro_m4``
-      - `Adafruit Metro M4 (SAMD51) <https://www.adafruit.com/product/3382?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_metro_m4`
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
-    * - ``adafruit_pirkey``
-      - `Adafruit pIRkey <https://www.adafruit.com/product/3364?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_trinket_m0``
-      - `Adafruit Trinket M0 <https://www.adafruit.com/product/3500?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_pirkey`
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``digix``
-      - `Digistump DigiX <http://digistump.com/products/50?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_due`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
-    * - ``due``
-      - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_dueUSB`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
-    * - ``dueUSB``
-      - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_mzeroUSB`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mzeroproUSB`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrfox1200`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrgsm1400`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrwan1300`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkr1000USB`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrzero`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_tian`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_zeroUSB`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_digix`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
-    * - ``macchina2``
-      - `Macchina M2 <https://www.macchina.cc?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_macchina2`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
-    * - ``mkr1000USB``
-      - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_moteino_zero`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mkrfox1200``
-      - `Arduino MKR FOX 1200 <https://www.arduino.cc/en/Main.ArduinoBoardMKRFox1200?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mkrgsm1400``
-      - `Arduino MKR GSM 1400 <https://store.arduino.cc/mkr-gsm-1400?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mkrwan1300``
-      - `Arduino MKR WAN 1300 <https://store.arduino.cc/mkr-wan-1300?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mkrzero``
-      - `Arduino MKRZERO <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``moteino_zero``
-      - `Moteino M0 <https://lowpowerlab.com/shop/product/184?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mzeroUSB``
-      - `Arduino M0 <https://www.arduino.cc/en/Main/ArduinoBoardM0?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mzeroproUSB``
-      - `Arduino M0 Pro (Native USB Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``sainSmartDue``
-      - `SainSmart Due (Programming Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``sainSmartDueUSB``
-      - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``sodaq_autonomo``
-      - `SODAQ Autonomo <http://support.sodaq.com/sodaq-one/autonomo/getting-started-autonomo/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_sodaq_autonomo`
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``sodaq_explorer``
-      - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_sodaq_explorer`
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``sodaq_one``
-      - `SODAQ ONE <http://support.sodaq.com/sodaq-one/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_sodaq_one`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``sparkfun_samd21_dev_usb``
-      - `SparkFun SAMD21 Dev Breakout <https://www.sparkfun.com/products/13672?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_sainSmartDue`
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_sainSmartDueUSB`
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``sparkfun_samd21_mini_usb``
-      - `SparkFun SAMD21 Mini Breakout <https://www.sparkfun.com/products/13664?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``tian``
-      - `Arduino Tian <https://www.arduino.cc/en/Main/ArduinoBoardTian?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``zeroUSB``
-      - `Arduino Zero (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -478,86 +399,74 @@ Adafruit
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``adafruit_circuitplayground_m0``
-      - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3333?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_feather_m0``
-      - `Adafruit Feather M0 <https://www.adafruit.com/product/2772?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_feather_m0`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_feather_m0_express``
-      - `Adafruit Feather M0 Express <https://www.adafruit.com/product/3403?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_feather_m0_express`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_feather_m4``
-      - `Adafruit Feather M4 (SAMD51) <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_feather_m4`
+      - Yes :sup:`?`
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
-    * - ``adafruit_gemma_m0``
-      - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_gemma_m0`
+      - Yes :sup:`?`
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_itsybitsy_m0``
-      - `Adafruit ItsyBitsy M0 <https://www.adafruit.com/product/3727?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_itsybitsy_m4``
-      - `Adafruit ItsyBitsy M4 (SAMD51) <https://www.adafruit.com/product/3800?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
+      - Yes :sup:`?`
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
-    * - ``adafruit_metro_m0``
-      - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_metro_m0`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_metro_m4``
-      - `Adafruit Metro M4 (SAMD51) <https://www.adafruit.com/product/3382?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_metro_m4`
+      - Yes :sup:`?`
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
-    * - ``adafruit_pirkey``
-      - `Adafruit pIRkey <https://www.adafruit.com/product/3364?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_trinket_m0`
+      - Yes :sup:`?`
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``adafruit_trinket_m0``
-      - `Adafruit Trinket M0 <https://www.adafruit.com/product/3500?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_adafruit_pirkey`
+      - Yes :sup:`?`
       - SAMD21E18A
       - 48MHz
       - 256KB
@@ -569,100 +478,86 @@ Arduino
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``due``
-      - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_due`
+      - Yes :sup:`?`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
-    * - ``dueUSB``
-      - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_dueUSB`
+      - Yes :sup:`?`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
-    * - ``mkr1000USB``
-      - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_mzeroUSB`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mkrfox1200``
-      - `Arduino MKR FOX 1200 <https://www.arduino.cc/en/Main.ArduinoBoardMKRFox1200?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_mzeroproUSB`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mkrgsm1400``
-      - `Arduino MKR GSM 1400 <https://store.arduino.cc/mkr-gsm-1400?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_mzeropro`
+      - Yes
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mkrwan1300``
-      - `Arduino MKR WAN 1300 <https://store.arduino.cc/mkr-wan-1300?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_mkrfox1200`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mkrzero``
-      - `Arduino MKRZERO <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_mkrgsm1400`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mzeroUSB``
-      - `Arduino M0 <https://www.arduino.cc/en/Main/ArduinoBoardM0?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_mkrwan1300`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mzeropro``
-      - `Arduino M0 Pro (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_mkr1000USB`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mzeroproUSB``
-      - `Arduino M0 Pro (Native USB Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_mkrzero`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``tian``
-      - `Arduino Tian <https://www.arduino.cc/en/Main/ArduinoBoardTian?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_tian`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``zero``
-      - `Arduino Zero (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_zero`
+      - Yes
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``zeroUSB``
-      - `Arduino Zero (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_zeroUSB`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -674,38 +569,33 @@ Atmel
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``samd21_xpro``
-      - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - SAMD21J18A
+    * - :ref:`board_atmelsam_samr21_xpro`
+      - Yes
+      - SAMR21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``samd21g18a``
-      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_samd21g18a`
+      - Yes
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``saml21_xpro_b``
-      - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - SAML21J18B
+    * - :ref:`board_atmelsam_samd21_xpro`
+      - Yes
+      - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``samr21_xpro``
-      - `Atmel ATSAMR21-XPRO <https://developer.mbed.org/platforms/SAMR21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - SAMR21G18A
+    * - :ref:`board_atmelsam_saml21_xpro_b`
+      - Yes
+      - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
@@ -716,16 +606,14 @@ Digistump
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``digix``
-      - `Digistump DigiX <http://digistump.com/products/50?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_digix`
+      - Yes :sup:`?`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -737,16 +625,14 @@ LowPowerLab
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``moteino_zero``
-      - `Moteino M0 <https://lowpowerlab.com/shop/product/184?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_moteino_zero`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -758,16 +644,14 @@ Macchina
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``macchina2``
-      - `Macchina M2 <https://www.macchina.cc?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_macchina2`
+      - Yes :sup:`?`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -779,30 +663,26 @@ SODAQ
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``sodaq_autonomo``
-      - `SODAQ Autonomo <http://support.sodaq.com/sodaq-one/autonomo/getting-started-autonomo/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_sodaq_autonomo`
+      - Yes :sup:`?`
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``sodaq_explorer``
-      - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_sodaq_explorer`
+      - Yes :sup:`?`
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``sodaq_one``
-      - `SODAQ ONE <http://support.sodaq.com/sodaq-one/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_sodaq_one`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -814,23 +694,20 @@ SainSmart
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``sainSmartDue``
-      - `SainSmart Due (Programming Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_sainSmartDue`
+      - Yes :sup:`?`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
-    * - ``sainSmartDueUSB``
-      - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_sainSmartDueUSB`
+      - Yes :sup:`?`
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -842,23 +719,20 @@ SparkFun
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``sparkfun_samd21_dev_usb``
-      - `SparkFun SAMD21 Dev Breakout <https://www.sparkfun.com/products/13672?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``sparkfun_samd21_mini_usb``
-      - `SparkFun SAMD21 Mini Breakout <https://www.sparkfun.com/products/13664?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB

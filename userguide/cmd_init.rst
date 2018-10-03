@@ -82,9 +82,9 @@ Multiple options are allowed.
 .. option::
     --env-prefix
 
-An environment prefix which will be used with pair in board type.
-For example, the default environment name for ``teensy_31`` board will
-be ``[env:teensy_31]``.
+An environment prefix which will be used with pair in :ref:`projectconf_env_board` ID.
+For example, the default environment name for :ref:`board_teensy_teensy31`
+board will be ``[env:teensy31]``.
 
 .. option::
     -s, --silent

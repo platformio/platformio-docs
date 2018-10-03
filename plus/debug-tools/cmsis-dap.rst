@@ -143,539 +143,472 @@ Boards
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``IBMEthernetKit``
-      - `Ethernet IoT Starter Kit <http://developer.mbed.org/platforms/IBMEthernetKit/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MK64FN1M0VLL12
-      - 120MHz
-      - 1MB
-      - 256KB
-    * - ``bbcmicrobit``
-      - `BBC micro:bit <https://developer.mbed.org/platforms/Microbit/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - ``bbcmicrobit_b``
-      - `BBC micro:bit B(S130) <https://developer.mbed.org/platforms/Microbit/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - ``delta_dfbm_nq620``
-      - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``delta_dfcm_nnn50``
-      - `Delta DFCM-NNN50 <https://os.mbed.com/platforms/Delta-DFCM-NNN50/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 16KB
-    * - ``dfcm_nnn40``
-      - `Delta DFCM-NNN40 <https://developer.mbed.org/platforms/Delta-DFCM-NNN40/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``elektor_cocorico``
-      - `CoCo-ri-Co! <https://developer.mbed.org/platforms/CoCo-ri-Co/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC812
-      - 30MHz
-      - 16KB
-      - 4KB
-    * - ``frdm_k20d50m``
-      - `Freescale Kinetis FRDM-K20D50M <https://developer.mbed.org/platforms/FRDM-K20D50M/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MK20DX128VLH5
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - ``frdm_k22f``
-      - `Freescale Kinetis FRDM-K22F <https://developer.mbed.org/platforms/FRDM-K22F/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MK22FN512VLH12
-      - 120MHz
-      - 512KB
-      - 128KB
-    * - ``frdm_k64f``
-      - `Freescale Kinetis FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MK64FN1M0VLL12
-      - 120MHz
-      - 1MB
-      - 256KB
-    * - ``frdm_k66f``
-      - `Freescale Kinetis FRDM-K66F <https://developer.mbed.org/platforms/FRDM-K66F/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MK66FN2M0VMD18
-      - 180MHz
-      - 2MB
-      - 256KB
-    * - ``frdm_k82f``
-      - `Freescale Kinetis FRDM-K82F <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k8x-secure/freedom-development-platform-for-kinetis-k82-k81-and-k80-mcus:FRDM-K82F?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MK82FN256VLL15
-      - 150MHz
-      - 256KB
-      - 256KB
-    * - ``frdm_kl05z``
-      - `Freescale Kinetis FRDM-KL05Z <https://developer.mbed.org/platforms/FRDM-KL05Z/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MKL05Z32VFM4
-      - 48MHz
-      - 32KB
-      - 4KB
-    * - ``frdm_kl25z``
-      - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - MKL25Z128VLK4
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - ``frdm_kl26z``
-      - `Freescale Kinetis FRDM-KL26Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - MKL26Z128VLH4
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - ``frdm_kl27z``
-      - `Freescale Kinetis FRDM-KL27Z <https://os.mbed.com/platforms/FRDM-KL27Z/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - MKL27Z64VLH4
-      - 48MHz
-      - 64KB
-      - 16KB
-    * - ``frdm_kl43z``
-      - `Freescale Kinetis FRDM-KL43Z <https://os.mbed.com/platforms/FRDM-KL43Z/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MKL43Z256VLH4
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``frdm_kl46z``
-      - `Freescale Kinetis FRDM-KL46Z <https://developer.mbed.org/platforms/FRDM-KL46Z/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MKL46Z256VLL4
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``frdm_kw41z``
-      - `Freescale Kinetis FRDM-KW41Z <https://os.mbed.com/platforms/FRDM-KW41Z/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - MKW41Z512VHT4
-      - 48MHz
-      - 512KB
-      - 128KB
-    * - ``hexiwear``
-      - `Hexiwear <https://developer.mbed.org/platforms/Hexiwear/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`
-      - MK64FN1M0VDC12
-      - 120MHz
-      - 1MB
-      - 256KB
-    * - ``hrm1017``
-      - `Switch Science mbed HRM1017 <https://developer.mbed.org/platforms/mbed-HRM1017/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - ``lpc1114fn28``
-      - `Switch Science mbed LPC1114FN28 <https://developer.mbed.org/platforms/LPC1114FN28/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC1114FN28
-      - 48MHz
-      - 32KB
-      - 4KB
-    * - ``lpc11u24``
-      - `NXP mbed LPC11U24 <https://developer.mbed.org/platforms/mbed-LPC11U24/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_nxplpc_lpc11u24_301`
+      - :ref:`platform_nxplpc`
+      - Yes
       - LPC11U24
       - 48MHz
       - 32KB
       - 8KB
-    * - ``lpc11u24_301``
-      - `ARM mbed LPC11U24 (+CAN) <https://developer.mbed.org/handbook/mbed-NXP-LPC11U24?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U24
-      - 48MHz
-      - 32KB
-      - 8KB
-    * - ``lpc11u68``
-      - `LPCXpresso11U68 <https://developer.mbed.org/platforms/LPCXpresso11U68/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U68
-      - 50MHz
-      - 256KB
-      - 36KB
-    * - ``lpc1768``
-      - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC1768
-      - 96MHz
-      - 512KB
-      - 64KB
-    * - ``lpc4088``
-      - `Embedded Artists LPC4088 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC4088/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - LPC4088
-      - 120MHz
-      - 512KB
-      - 96KB
-    * - ``lpc4088_dm``
-      - `Embedded Artists LPC4088 Display Module <https://developer.mbed.org/platforms/EA-LPC4088-Display-Module/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - LPC4088
-      - 120MHz
-      - 512KB
-      - 96KB
-    * - ``lpc4330_m4``
-      - `Bambino-210E <https://developer.mbed.org/platforms/Micromint-Bambino-210E/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC4330
-      - 204MHz
-      - 8MB
-      - 264KB
-    * - ``lpc54114``
-      - `NXP LPCXpresso54114 <https://os.mbed.com/platforms/LPCXpresso54114/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - LPC54114J256BD64
-      - 100MHz
-      - 256KB
-      - 192KB
-    * - ``lpc812``
-      - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC812
-      - 30MHz
-      - 16KB
-      - 4KB
-    * - ``lpc824``
-      - `LPCXpresso824-MAX <https://developer.mbed.org/platforms/LPCXpresso824-MAX/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC824
-      - 30MHz
-      - 32KB
-      - 8KB
-    * - ``max32600mbed``
-      - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Maxim 32 <platform_maxim32>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - MAX32600
-      - 24MHz
-      - 256KB
-      - 32KB
-    * - ``maxwsnenv``
-      - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Maxim 32 <platform_maxim32>`
-      - :ref:`debugging_tool_cmsis-dap`
-      - MAX32610
-      - 24MHz
-      - 256KB
-      - 32KB
-    * - ``mbed_connect_odin``
-      - `Mbed Connect Cloud <https://os.mbed.com/platforms/mbed-Connect-Cloud/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
-    * - ``moteino_zero``
-      - `Moteino M0 <https://lowpowerlab.com/shop/product/184?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_mzeropro`
+      - :ref:`platform_atmelsam`
+      - Yes
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mzeropro``
-      - `Arduino M0 Pro (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_zero`
+      - :ref:`platform_atmelsam`
+      - Yes
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``nrf51822_y5_mbug``
-      - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - ``nrf51_dk``
-      - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``nrf51_dongle``
-      - `Nordic nRF51-Dongle <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board)
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``nrf51_mkit``
-      - `Nordic nRF51822-mKIT <http://developer.mbed.org/platforms/Nordic-nRF51822/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - ``nrf52840_dk``
-      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - ``nrf52_dk``
-      - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``redBearLab``
-      - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - ``redBearLabBLENano``
-      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 32KB
-    * - ``redbear_blenano2``
-      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``redbear_blend2``
-      - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``samd21_xpro``
-      - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21J18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``samd21g18a``
-      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``saml21_xpro_b``
-      - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAML21J18B
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``samr21_xpro``
-      - `Atmel ATSAMR21-XPRO <https://developer.mbed.org/platforms/SAMR21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_samr21_xpro`
+      - :ref:`platform_atmelsam`
+      - Yes
       - SAMR21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``seeedArchBLE``
-      - `Seeed Arch BLE <https://developer.mbed.org/platforms/Seeed-Arch-BLE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - ``seeedArchLink``
-      - `Seeed Arch Link <https://developer.mbed.org/platforms/Seeed-Arch-Link/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - ``seeedArchPro``
-      - `Seeed Arch Pro <https://developer.mbed.org/platforms/Seeeduino-Arch-Pro/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - LPC1768
-      - 96MHz
-      - 512KB
-      - 64KB
-    * - ``seeedTinyBLE``
-      - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - ``ssci824``
-      - `Switch Science mbed LPC824 <https://developer.mbed.org/platforms/Switch-Science-mbed-LPC824/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC824
-      - 30MHz
-      - 32KB
-      - 8KB
-    * - ``ty51822r3``
-      - `Switch Science mbed TY51822r3 <https://developer.mbed.org/platforms/Switch-Science-mbed-TY51822r3/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``ublox_c030_n211``
-      - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - ``ublox_c030_u201``
-      - `u-blox C030-U201 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - ``ubloxc027``
-      - `u-blox C027 <https://developer.mbed.org/platforms/u-blox-C027/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC1768
-      - 96MHz
-      - 512KB
-      - 64KB
-    * - ``vbluno51``
-      - `VNG VBLUNO51 <https://os.mbed.com/platforms/VBLUNO51/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 32KB
-    * - ``wallbot_ble``
-      - `JKSoft Wallbot BLE <https://developer.mbed.org/platforms/JKSoft-Wallbot-BLE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - ``wizwiki_w7500``
-      - `WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`WIZNet W7500 <platform_wiznet7500>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - WIZNET7500
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - ``wizwiki_w7500eco``
-      - `WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`WIZNet W7500 <platform_wiznet7500>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - WIZNET7500ECO
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - ``wizwiki_w7500p``
-      - `WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`WIZNet W7500 <platform_wiznet7500>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
-      - WIZNET7500P
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - ``zero``
-      - `Arduino Zero (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_samd21g18a`
+      - :ref:`platform_atmelsam`
+      - Yes
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_samd21_xpro`
+      - :ref:`platform_atmelsam`
+      - Yes
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_saml21_xpro_b`
+      - :ref:`platform_atmelsam`
+      - Yes
+      - SAML21J18B
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_bbcmicrobit`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_nordicnrf51_bbcmicrobit_b`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_nxplpc_lpc4330_m4`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC4330
+      - 204MHz
+      - 8MB
+      - 264KB
+    * - :ref:`board_nxplpc_elektor_cocorico`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC812
+      - 30MHz
+      - 16KB
+      - 4KB
+    * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf51_dfcm_nnn40`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_delta_dfcm_nnn50`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_nxplpc_lpc4088_dm`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC4088
+      - 120MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_nxplpc_lpc4088`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC4088
+      - 120MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_freescalekinetis_IBMEthernetKit`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MK64FN1M0VLL12
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_freescalekinetis_frdm_k20d50m`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MK20DX128VLH5
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_freescalekinetis_frdm_k22f`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MK22FN512VLH12
+      - 120MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_freescalekinetis_frdm_k64f`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MK64FN1M0VLL12
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_freescalekinetis_frdm_k66f`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MK66FN2M0VMD18
+      - 180MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_freescalekinetis_frdm_k82f`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MK82FN256VLL15
+      - 150MHz
+      - 256KB
+      - 256KB
+    * - :ref:`board_freescalekinetis_frdm_kl05z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKL05Z32VFM4
+      - 48MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_freescalekinetis_frdm_kl25z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKL25Z128VLK4
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_freescalekinetis_frdm_kl26z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKL26Z128VLH4
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_freescalekinetis_frdm_kl27z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKL27Z64VLH4
+      - 48MHz
+      - 64KB
+      - 16KB
+    * - :ref:`board_freescalekinetis_frdm_kl43z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKL43Z256VLH4
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_freescalekinetis_frdm_kl46z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKL46Z256VLL4
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_freescalekinetis_frdm_kw41z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKW41Z512VHT4
+      - 48MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_freescalekinetis_hexiwear`
+      - :ref:`platform_freescalekinetis`
+      - Yes :sup:`?`
+      - MK64FN1M0VDC12
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf51_wallbot_ble`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_nxplpc_lpc11u68`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC11U68
+      - 50MHz
+      - 256KB
+      - 36KB
+    * - :ref:`board_nxplpc_lpc824`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC824
+      - 30MHz
+      - 32KB
+      - 8KB
+    * - :ref:`board_maxim32_max32600mbed`
+      - :ref:`platform_maxim32`
+      - Yes
+      - MAX32600
+      - 24MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_maxim32_maxwsnenv`
+      - :ref:`platform_maxim32`
+      - Yes :sup:`?`
+      - MAX32610
+      - 24MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_mbed_connect_odin`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F439ZIY6
+      - 168MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_atmelsam_moteino_zero`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nxplpc_lpc812`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC812
+      - 30MHz
+      - 16KB
+      - 4KB
+    * - :ref:`board_nxplpc_lpc54114`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC54114J256BD64
+      - 100MHz
+      - 256KB
+      - 192KB
+    * - :ref:`board_nxplpc_lpc11u24`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC11U24
+      - 48MHz
+      - 32KB
+      - 8KB
+    * - :ref:`board_nxplpc_lpc1768`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC1768
+      - 96MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_nrf51_dongle`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_nrf51_mkit`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_nordicnrf52_nrf52_dk`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf51_redBearLabBLENano`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf52_redbear_blenano2`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_redbear_blend2`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf51_redBearLab`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_nordicnrf51_seeedArchBLE`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_nordicnrf51_seeedArchLink`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_nxplpc_seeedArchPro`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC1768
+      - 96MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf51_seeedTinyBLE`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_nordicnrf51_hrm1017`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_nxplpc_lpc1114fn28`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC1114FN28
+      - 48MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_nxplpc_ssci824`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC824
+      - 30MHz
+      - 32KB
+      - 8KB
+    * - :ref:`board_nordicnrf51_ty51822r3`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_vbluno51`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_wiznet7500_wizwiki_w7500`
+      - :ref:`platform_wiznet7500`
+      - Yes
+      - WIZNET7500
+      - 48MHz
+      - 128KB
+      - 48KB
+    * - :ref:`board_wiznet7500_wizwiki_w7500eco`
+      - :ref:`platform_wiznet7500`
+      - Yes
+      - WIZNET7500ECO
+      - 48MHz
+      - 128KB
+      - 48KB
+    * - :ref:`board_wiznet7500_wizwiki_w7500p`
+      - :ref:`platform_wiznet7500`
+      - Yes
+      - WIZNET7500P
+      - 48MHz
+      - 128KB
+      - 48KB
+    * - :ref:`board_nxplpc_ubloxc027`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC1768
+      - 96MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_ublox_c030_n211`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F437VG
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_ublox_c030_u201`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F437VG
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB

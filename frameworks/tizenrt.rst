@@ -41,7 +41,7 @@ Tools & Debug Probes
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -51,25 +51,21 @@ You can switch between debugging :ref:`debugging_tools` using
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug tool and **ARE READY** for debugging!
-You do not need to use/buy external debug tool.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
-      - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``artik_053``
-      - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Samsung ARTIK <platform_samsung_artik>`
-      - :ref:`debugging_tool_ftdi` (on-board)
+    * - :ref:`board_samsung_artik_artik_053`
+      - :ref:`platform_samsung_artik`
       - S5JT200
       - 320MHz
       - 8MB
@@ -106,18 +102,16 @@ Samsung
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``artik_053``
-      - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Samsung ARTIK <platform_samsung_artik>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_samsung_artik_artik_053`
+      - :ref:`platform_samsung_artik`
+      - Yes
       - S5JT200
       - 320MHz
       - 8MB

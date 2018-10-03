@@ -52,7 +52,7 @@ Tools & Debug Probes
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -62,23 +62,19 @@ You can switch between debugging :ref:`debugging_tools` using
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug tool and **ARE READY** for debugging!
-You do not need to use/buy external debug tool.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``max32600mbed``
-      - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board)
+    * - :ref:`board_maxim32_max32600mbed`
       - MAX32600
       - 24MHz
       - 256KB
@@ -89,22 +85,19 @@ External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
 Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug tool. See "Debug" column for compatible debug tools.
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``maxwsnenv``
-      - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap`
+    * - :ref:`board_maxim32_maxwsnenv`
       - MAX32610
       - 24MHz
       - 256KB
@@ -201,65 +194,56 @@ Maxim
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``max32600mbed``
-      - `Maxim ARM mbed Enabled Development Platform for MAX32600 <https://developer.mbed.org/platforms/MAX32600mbed/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - MAX32600
-      - 24MHz
-      - 256KB
-      - 32KB
-    * - ``max32620fthr``
-      - `MAX32620FTHR <https://www.maximintegrated.com/en/products/microcontrollers/MAX32620FTHR.html?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_maxim32_max32620fthr`
       - No
       - MAX32620FTHR
       - 96MHz
       - 2MB
       - 256KB
-    * - ``max32620hsp``
-      - `Maxim Health Sensor Platform <https://developer.mbed.org/platforms/MAX32620HSP/?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_maxim32_max32625mbed`
+      - No
+      - MAX32625
+      - 96MHz
+      - 512KB
+      - 160KB
+    * - :ref:`board_maxim32_max32625nexpaq`
+      - No
+      - MAX32625
+      - 96MHz
+      - 512KB
+      - 160KB
+    * - :ref:`board_maxim32_max32625pico`
+      - No
+      - MAX32625
+      - 96MHz
+      - 512KB
+      - 160KB
+    * - :ref:`board_maxim32_max32600mbed`
+      - Yes
+      - MAX32600
+      - 24MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_maxim32_max32620hsp`
       - No
       - MAX32620
       - 96MHz
       - 2MB
       - 256KB
-    * - ``max32625mbed``
-      - `MAX32625MBED <https://os.mbed.com/platforms/MAX32625MBED/?utm_source=platformio&utm_medium=docs>`_
-      - No
-      - MAX32625
-      - 96MHz
-      - 512KB
-      - 160KB
-    * - ``max32625nexpaq``
-      - `MAX32625NEXPAQ <https://os.mbed.com/platforms/max32625nexpaq/?utm_source=platformio&utm_medium=docs>`_
-      - No
-      - MAX32625
-      - 96MHz
-      - 512KB
-      - 160KB
-    * - ``max32625pico``
-      - `MAX32625PICO <https://www.maximintegrated.com/en/products/microcontrollers/MAX32625PICO.html?utm_source=platformio&utm_medium=docs>`_
-      - No
-      - MAX32625
-      - 96MHz
-      - 512KB
-      - 160KB
-    * - ``max32630fthr``
-      - `Maxim MAX32630FTHR Application Platform <https://developer.mbed.org/platforms/MAX32630FTHR/?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_maxim32_max32630fthr`
       - No
       - MAX32630
       - 96MHz
       - 2MB
       - 512KB
-    * - ``maxwsnenv``
-      - `Maxim Wireless Sensor Node Demonstrator <https://developer.mbed.org/platforms/MAXWSNENV/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_maxim32_maxwsnenv`
+      - Yes :sup:`?`
       - MAX32610
       - 24MHz
       - 256KB

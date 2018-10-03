@@ -1,0 +1,103 @@
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+       http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+.. _board_riscv_gap_gapuino:
+
+GAPuino GAP8
+============
+
+.. contents::
+    :local:
+
+Platform :ref:`platform_riscv_gap`: GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
+
+System
+------
+
+.. list-table::
+
+  * - **Microcontroller**
+    - GAP8
+  * - **Frequency**
+    - 250Mhz
+  * - **Flash**
+    - 64MB
+  * - **RAM**
+    - 8MB
+  * - **Vendor**
+    - `GreenWaves Technologies <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`__
+
+
+Configuration
+-------------
+
+Please use ``gapuino`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+
+.. code-block:: ini
+
+  [env:gapuino]
+  platform = riscv_gap
+  board = gapuino
+
+You can override default GAPuino GAP8 settings per build environment using
+``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+board manifest `gapuino.json <https://github.com/pioplus/platform-riscv_gap/blob/master/boards/gapuino.json>`_. For example,
+
+.. code-block:: ini
+
+  [env:gapuino]
+  platform = riscv_gap
+  board = gapuino
+
+  ; change microcontroller
+  board_build.mcu = gap8
+
+  ; change MCU frequency
+  board_build.f_cpu = 250000000L
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further
+    instructions and configuration information.
+
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+GAPuino GAP8 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Compatible Tools
+    - On-board
+    - Default
+  * - :ref:`debugging_tool_ftdi`
+    - Yes
+    - Yes
+
+Frameworks
+----------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`framework_mbed`
+      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+
+    * - :ref:`framework_pulp-os`
+      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.

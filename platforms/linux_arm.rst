@@ -113,36 +113,31 @@ Raspberry Pi
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``raspberrypi_1b``
-      - `Raspberry Pi 1 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_linux_arm_raspberrypi_1b`
       - No
       - BCM2835
       - 700MHz
       - 512MB
       - 512MB
-    * - ``raspberrypi_2b``
-      - `Raspberry Pi 2 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_linux_arm_raspberrypi_2b`
       - No
       - BCM2836
       - 900MHz
       - 1GB
       - 1GB
-    * - ``raspberrypi_3b``
-      - `Raspberry Pi 3 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_linux_arm_raspberrypi_3b`
       - No
       - BCM2837
       - 1200MHz
       - 1GB
       - 1GB
-    * - ``raspberrypi_zero``
-      - `Raspberry Pi Zero <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_linux_arm_raspberrypi_zero`
       - No
       - BCM2835
       - 1000MHz
@@ -155,15 +150,13 @@ RushUp
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``kitra_520``
-      - `RushUp Kitra 520 <https://www.rushup.tech/kitra?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_linux_arm_kitra_520`
       - No
       - EXYNOS3250
       - 1000MHz
@@ -176,36 +169,31 @@ Samsung
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``artik_1020``
-      - `Samsung ARTIK 1020 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_linux_arm_artik_1020`
       - No
       - EXYNOS5422
       - 1500MHz
       - 16GB
       - 2GB
-    * - ``artik_520``
-      - `Samsung ARTIK 520 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_linux_arm_artik_520`
       - No
       - EXYNOS3250
       - 1000MHz
       - 4GB
       - 512MB
-    * - ``artik_530``
-      - `Samsung ARTIK 530 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_linux_arm_artik_530`
       - No
       - S5P4418
       - 1200MHz
       - 4GB
       - 512MB
-    * - ``artik_710``
-      - `Samsung ARTIK 710 <https://www.artik.io?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_linux_arm_artik_710`
       - No
       - S5P6818
       - 1400MHz

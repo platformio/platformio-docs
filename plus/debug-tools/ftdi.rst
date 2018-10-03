@@ -111,6 +111,12 @@ Frameworks
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
+    * - :ref:`framework_mbed`
+      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+
+    * - :ref:`framework_pulp-os`
+      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.
+
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
 
@@ -127,43 +133,38 @@ Boards
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``artik_053``
-      - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Samsung ARTIK <platform_samsung_artik>`
-      - :ref:`debugging_tool_ftdi` (on-board)
-      - S5JT200
-      - 320MHz
-      - 8MB
-      - 1.25MB
-    * - ``esp-wrover-kit``
-      - `Espressif ESP-WROVER-KIT <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Espressif 32 <platform_espressif32>`
-      - :ref:`debugging_tool_ftdi` (default, on-board), :ref:`debugging_tool_esp-prog`, :ref:`debugging_tool_minimodule`, :ref:`debugging_tool_olimex-arm-usb-ocd-h`, :ref:`debugging_tool_olimex-arm-usb-ocd`, :ref:`debugging_tool_olimex-arm-usb-tiny-h`, :ref:`debugging_tool_olimex-jtag-tiny`
+    * - :ref:`board_espressif32_esp-wrover-kit`
+      - :ref:`platform_espressif32`
+      - Yes
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
-    * - ``freedom-e300-hifive1``
-      - `HiFive1 <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`RISC-V <platform_riscv>`
-      - :ref:`debugging_tool_ftdi` (on-board)
+    * - :ref:`board_riscv_gap_gapuino`
+      - :ref:`platform_riscv_gap`
+      - Yes
+      - GAP8
+      - 250MHz
+      - 64MB
+      - 8MB
+    * - :ref:`board_riscv_freedom-e300-hifive1`
+      - :ref:`platform_riscv`
+      - Yes
       - FE310
       - 320MHz
       - 16MB
       - 16KB
-    * - ``gapuino``
-      - `GAPUINO GAP8 development board <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`RISC-V GAP <platform_riscv_gap>`
-      - :ref:`debugging_tool_ftdi` (on-board)
-      - 
-      - 250MHz
-      - 64MB
+    * - :ref:`board_samsung_artik_artik_053`
+      - :ref:`platform_samsung_artik`
+      - Yes
+      - S5JT200
+      - 320MHz
       - 8MB
+      - 1.25MB

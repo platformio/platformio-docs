@@ -1,0 +1,88 @@
+..  Copyright (c) 2014-present PlatformIO <contact@platformio.org>
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+       http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+.. _board_espressif8266_nodemcuv2:
+
+NodeMCU 1.0 (ESP-12E Module)
+============================
+
+.. contents::
+    :local:
+
+Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
+System
+------
+
+.. list-table::
+
+  * - **Microcontroller**
+    - ESP8266
+  * - **Frequency**
+    - 80Mhz
+  * - **Flash**
+    - 4MB
+  * - **RAM**
+    - 80KB
+  * - **Vendor**
+    - `NodeMCU <http://www.nodemcu.com/?utm_source=platformio&utm_medium=docs>`__
+
+
+Configuration
+-------------
+
+Please use ``nodemcuv2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+
+.. code-block:: ini
+
+  [env:nodemcuv2]
+  platform = espressif8266
+  board = nodemcuv2
+
+You can override default NodeMCU 1.0 (ESP-12E Module) settings per build environment using
+``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+board manifest `nodemcuv2.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/nodemcuv2.json>`_. For example,
+
+.. code-block:: ini
+
+  [env:nodemcuv2]
+  platform = espressif8266
+  board = nodemcuv2
+
+  ; change microcontroller
+  board_build.mcu = esp8266
+
+  ; change MCU frequency
+  board_build.f_cpu = 80000000L
+
+Debugging
+---------
+:ref:`piodebug` currently does not support NodeMCU 1.0 (ESP-12E Module) board.
+
+Frameworks
+----------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_esp8266-nonos-sdk`
+      - The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions.
+
+    * - :ref:`framework_esp8266-rtos-sdk`
+      - ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
+
+    * - :ref:`framework_simba`
+      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.

@@ -27,6 +27,7 @@ Frameworks
     freedom-e-sdk
     libopencm3
     mbed
+    pulp-os
     pumbaa
     simba
     spl

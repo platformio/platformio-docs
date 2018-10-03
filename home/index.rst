@@ -24,7 +24,7 @@ cross-platform GUI:
 * :ref:`librarymanager`
 * :ref:`platforms`
 * :ref:`frameworks`
-* :ref:`embedded_boards`
+* :ref:`boards`
 * :ref:`Device Manager <cmd_device>`: serial, logical, and multicast DNS services
 * Library and development platform updates.
 

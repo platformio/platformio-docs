@@ -102,34 +102,30 @@ Boards
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``lplm4f120h5qr``
-      - `TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) <http://www.ti.com/tool/ek-lm4f120xl?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`TI TIVA <platform_titiva>`
-      - :ref:`debugging_tool_ti-icdi` (on-board)
+    * - :ref:`board_titiva_lplm4f120h5qr`
+      - :ref:`platform_titiva`
+      - Yes
       - LPLM4F120H5QR
       - 80MHz
       - 256KB
       - 32KB
-    * - ``lptm4c1230c3pm``
-      - `TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c123gxl.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`TI TIVA <platform_titiva>`
-      - :ref:`debugging_tool_ti-icdi` (on-board)
+    * - :ref:`board_titiva_lptm4c1230c3pm`
+      - :ref:`platform_titiva`
+      - Yes
       - LPTM4C1230C3PM
       - 80MHz
       - 256KB
       - 32KB
-    * - ``lptm4c1294ncpdt``
-      - `TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`TI TIVA <platform_titiva>`
-      - :ref:`debugging_tool_ti-icdi` (on-board)
+    * - :ref:`board_titiva_lptm4c1294ncpdt`
+      - :ref:`platform_titiva`
+      - Yes
       - LPTM4C1294NCPDT
       - 120MHz
       - 1MB

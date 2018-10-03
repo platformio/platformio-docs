@@ -110,15 +110,13 @@ FPGAwars
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``icezum``
-      - `IceZUM Alhambra FPGA <https://github.com/FPGAwars/icezum/wiki?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_lattice_ice40_icezum`
       - No
       - ICE40-HX1K-TQ144
       - 12MHz
@@ -131,15 +129,13 @@ Lattice
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``icestick``
-      - `Lattice iCEstick FPGA Evaluation Kit <http://www.latticesemi.com/icestick?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_lattice_ice40_icestick`
       - No
       - ICE40-HX1K-TQ144
       - 12MHz

@@ -55,7 +55,7 @@ Tools & Debug Probes
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -65,65 +65,49 @@ You can switch between debugging :ref:`debugging_tools` using
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug tool and **ARE READY** for debugging!
-You do not need to use/buy external debug tool.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``xmc1100_boot_kit``
-      - `XMC1100 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+    * - :ref:`board_infineonxmc_xmc1100_boot_kit`
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
-    * - ``xmc1100_h_bridge2go``
-      - `XMC1100 H-Bridge 2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+    * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
-    * - ``xmc1100_xmc2go``
-      - `XMC1100 XMC2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+    * - :ref:`board_infineonxmc_xmc1100_xmc2go`
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
-    * - ``xmc1300_boot_kit``
-      - `XMC1300 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+    * - :ref:`board_infineonxmc_xmc1300_boot_kit`
       - XMC1300
       - 32MHz
       - 64KB
       - 64KB
-    * - ``xmc1300_sense2gol``
-      - `XMC1300 Sense2GoL <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+    * - :ref:`board_infineonxmc_xmc1300_sense2gol`
       - XMC1300
       - 32MHz
       - 64KB
       - 122.23KB
-    * - ``xmc4200_distance2go``
-      - `XMC4200 Distance2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+    * - :ref:`board_infineonxmc_xmc4200_distance2go`
       - XMC4200
       - 80MHz
       - 250KB
       - 256KB
-    * - ``xmc4700_relax_kit``
-      - `XMC4700 Relax Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board)
+    * - :ref:`board_infineonxmc_xmc4700_relax_kit`
       - XMC4700
       - 144MHz
       - 2.00MB
@@ -220,58 +204,50 @@ Infineon
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``xmc1100_boot_kit``
-      - `XMC1100 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_infineonxmc_xmc1100_boot_kit`
+      - Yes
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
-    * - ``xmc1100_h_bridge2go``
-      - `XMC1100 H-Bridge 2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
+      - Yes
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
-    * - ``xmc1100_xmc2go``
-      - `XMC1100 XMC2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_infineonxmc_xmc1100_xmc2go`
+      - Yes
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
-    * - ``xmc1300_boot_kit``
-      - `XMC1300 Boot Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_infineonxmc_xmc1300_boot_kit`
+      - Yes
       - XMC1300
       - 32MHz
       - 64KB
       - 64KB
-    * - ``xmc1300_sense2gol``
-      - `XMC1300 Sense2GoL <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_infineonxmc_xmc1300_sense2gol`
+      - Yes
       - XMC1300
       - 32MHz
       - 64KB
       - 122.23KB
-    * - ``xmc4200_distance2go``
-      - `XMC4200 Distance2Go <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_infineonxmc_xmc4200_distance2go`
+      - Yes
       - XMC4200
       - 80MHz
       - 250KB
       - 256KB
-    * - ``xmc4700_relax_kit``
-      - `XMC4700 Relax Kit <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_infineonxmc_xmc4700_relax_kit`
+      - Yes
       - XMC4700
       - 144MHz
       - 2.00MB

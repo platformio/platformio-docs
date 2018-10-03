@@ -164,1539 +164,1347 @@ Boards
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``1bitsy_stm32f415rgt``
-      - `1Bitsy <http://1bitsy.org?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_ststm32_1bitsy_stm32f415rgt`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
       - STM32F415RGT
       - 168MHz
       - 1MB
       - 128KB
-    * - ``Sinobit``
-      - `Sino:Bit <https://github.com/sinobitorg/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``adafruit_circuitplayground_m0``
-      - `Adafruit Circuit Playground Express <https://www.adafruit.com/product/3333?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``adafruit_feather_m0``
-      - `Adafruit Feather M0 <https://www.adafruit.com/product/2772?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``adafruit_feather_m0_express``
-      - `Adafruit Feather M0 Express <https://www.adafruit.com/product/3403?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``adafruit_feather_m4``
-      - `Adafruit Feather M4 (SAMD51) <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD51J19A
-      - 120MHz
-      - 496KB
-      - 192KB
-    * - ``adafruit_gemma_m0``
-      - `Adafruit Gemma M0 <https://www.adafruit.com/product/3501?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21E18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``adafruit_itsybitsy_m0``
-      - `Adafruit ItsyBitsy M0 <https://www.adafruit.com/product/3727?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``adafruit_itsybitsy_m4``
-      - `Adafruit ItsyBitsy M4 (SAMD51) <https://www.adafruit.com/product/3800?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD51J19A
-      - 120MHz
-      - 496KB
-      - 192KB
-    * - ``adafruit_metro_m0``
-      - `Adafruit Metro M0 Expresss <https://www.adafruit.com/product/3505?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``adafruit_metro_m4``
-      - `Adafruit Metro M4 (SAMD51) <https://www.adafruit.com/product/3382?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD51J19A
-      - 120MHz
-      - 496KB
-      - 192KB
-    * - ``adafruit_pirkey``
-      - `Adafruit pIRkey <https://www.adafruit.com/product/3364?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21E18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``adafruit_trinket_m0``
-      - `Adafruit Trinket M0 <https://www.adafruit.com/product/3500?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21E18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``armstrap_eagle1024``
-      - `Armstrap Eagle 1024 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F417VGT6
-      - 168MHz
-      - 1MB
-      - 192KB
-    * - ``armstrap_eagle2048``
-      - `Armstrap Eagle 2048 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F427VIT6
-      - 168MHz
-      - 1.99MB
-      - 256KB
-    * - ``armstrap_eagle512``
-      - `Armstrap Eagle 512 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F407VET6
-      - 168MHz
-      - 512KB
-      - 192KB
-    * - ``b96b_f446ve``
-      - `96Boards B96B-F446VE <https://developer.mbed.org/platforms/ST-B96B-F446VE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_ststm32_b96b_f446ve`
+      - :ref:`platform_ststm32`
+      - Yes
       - STM32F446VET6
       - 168MHz
       - 512KB
       - 128KB
-    * - ``blueboard_lpc11u24``
-      - `NGX Technologies BlueBoard-LPC11U24 <https://developer.mbed.org/platforms/BlueBoard-LPC11U24/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_nxplpc_lpc11u24_301`
+      - :ref:`platform_nxplpc`
+      - Yes
       - LPC11U24
       - 48MHz
       - 32KB
       - 8KB
-    * - ``bluepill_f103c8``
-      - `BluePill F103C8 <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103C8T6
-      - 72MHz
-      - 64KB
-      - 20KB
-    * - ``bluey``
-      - `Bluey nRF52832 IoT <https://electronut.in/portfolio/bluey/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``bluz_dk``
-      - `BluzDK <https://bluz.io/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``cloud_jam``
-      - `RushUp Cloud-JAM <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F401RET6
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``cloud_jam_l4``
-      - `RushUp Cloud-JAM L4 <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L476RGT6
-      - 80MHz
-      - 1MB
-      - 128KB
-    * - ``delta_dfbm_nq620``
-      - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``digix``
-      - `Digistump DigiX <http://digistump.com/products/50?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``dipcortexm0``
-      - `Solder Splash Labs DipCortex M0 <https://developer.mbed.org/platforms/DipCortex-M0/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U24
-      - 50MHz
-      - 32KB
-      - 8KB
-    * - ``disco_f030r8``
-      - `ST STM32F0308DISCOVERY <http://www.st.com/en/evaluation-tools/32f0308discovery.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F030R8T6
-      - 48MHz
-      - 64KB
-      - 8KB
-    * - ``disco_f051r8``
-      - `ST STM32F0DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF253215?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F051R8T6
-      - 48MHz
-      - 64KB
-      - 8KB
-    * - ``disco_f100rb``
-      - `ST STM32VLDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF250863?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F100RBT6
-      - 24MHz
-      - 128KB
-      - 8KB
-    * - ``disco_f303vc``
-      - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F303VCT6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``disco_f334c8``
-      - `ST 32F3348DISCOVERY <http://www.st.com/web/en/catalog/tools/PF260318?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F334C8T6
-      - 72MHz
-      - 64KB
-      - 12KB
-    * - ``disco_f401vc``
-      - `ST 32F401CDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259098?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F401VCT6
-      - 84MHz
-      - 256KB
-      - 64KB
-    * - ``disco_f407vg``
-      - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F407VGT6
-      - 168MHz
-      - 1MB
-      - 128KB
-    * - ``disco_f411ve``
-      - `ST 32F411EDISCOVERY <http://www.st.com/en/evaluation-tools/32f411ediscovery.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F411VET6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - ``disco_f413zh``
-      - `ST 32F413HDISCOVERY <https://os.mbed.com/platforms/ST-Discovery-F413H/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F413ZHT6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - ``disco_f429zi``
-      - `ST 32F429IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259090?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F429ZIT6
-      - 180MHz
-      - 2MB
-      - 256KB
-    * - ``disco_f469ni``
-      - `ST 32F469IDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF262395?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F469NIH6
-      - 180MHz
-      - 1MB
-      - 384KB
-    * - ``disco_f746ng``
-      - `ST 32F746GDISCOVERY <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/32f746gdiscovery.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F746NGH6
-      - 216MHz
-      - 1MB
-      - 320KB
-    * - ``disco_f769ni``
-      - `ST 32F769IDISCOVERY <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/32f769idiscovery.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F769NIH6
-      - 80MHz
-      - 1MB
-      - 512KB
-    * - ``disco_l053c8``
-      - `ST 32L0538DISCOVERY <http://www.st.com/web/en/catalog/tools/PF260319?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L053C8T6
-      - 32MHz
-      - 64KB
-      - 8KB
-    * - ``disco_l072cz_lrwan1``
-      - `ST DISCO-L072CZ-LRWAN1 <https://developer.mbed.org/platforms/ST-Discovery-LRWAN1/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
-    * - ``disco_l100rc``
-      - `ST 32L100DISCOVERY <https://www.st.com/en/evaluation-tools/32l100cdiscovery.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`
-      - STM32L100RCT6
-      - 32MHz
-      - 256KB
-      - 16KB
-    * - ``disco_l152rb``
-      - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L152RBT6
-      - 32MHz
-      - 128KB
-      - 16KB
-    * - ``disco_l475vg_iot01a``
-      - `ST DISCO-L475VG-IOT01A <https://developer.mbed.org/platforms/ST-Discovery-L475E-IOT01A/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L475VGT6
-      - 80MHz
-      - 1MB
-      - 128KB
-    * - ``disco_l476vg``
-      - `ST 32L476GDISCOVERY <http://www.st.com/web/catalog/tools/FM116/CL1620/SC959/SS1532/LN1848/PF261635?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L476VGT6
-      - 80MHz
-      - 1MB
-      - 128KB
-    * - ``disco_l496ag``
-      - `ST 32L496GDISCOVERY <https://www.st.com/en/evaluation-tools/32l496gdiscovery.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L496AGI6
-      - 80MHz
-      - 1MB
-      - 320KB
-    * - ``due``
-      - `Arduino Due (Programming Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``dueUSB``
-      - `Arduino Due (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardDue?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``efm32gg_stk3700``
-      - `EFM32GG-STK3700 Giant Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-giant-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFM32GG990F1024
-      - 48MHz
-      - 1MB
-      - 128KB
-    * - ``efm32hg_stk3400``
-      - `SLSTK3400A USB-enabled Happy Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-happy-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFM32HG322F64
-      - 25MHz
-      - 64KB
-      - 8KB
-    * - ``efm32lg_stk3600``
-      - `EFM32LG-STK3600 Leopard Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-leopard-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFM32LG990F256
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``efm32pg_stk3401``
-      - `SLSTK3401A Pearl Gecko PG1 <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-pearl-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFM32PG1B200F256GM48
-      - 40MHz
-      - 256KB
-      - 32KB
-    * - ``efm32wg_stk3800``
-      - `EFM32WG-STK3800 Wonder Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-wonder-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFM32WG990F256
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``efm32zg_stk3200``
-      - `EFM32ZG-STK3200 Zero Gecko <https://www.silabs.com/products/development-tools/mcu/32-bit/efm32-zero-gecko-starter-kit?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFM32ZG222F32
-      - 24MHz
-      - 32KB
-      - 4KB
-    * - ``elektor_cocorico``
-      - `CoCo-ri-Co! <https://developer.mbed.org/platforms/CoCo-ri-Co/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC812
-      - 30MHz
-      - 16KB
-      - 4KB
-    * - ``elmo_f411re``
-      - `Espotel LoRa Module <https://developer.mbed.org/platforms/Espotel-ELMO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink` (default)
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - ``eval_l073z``
-      - `ST STM32L073Z-EVAL <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-eval-boards/stm32l073z-eval.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L073VZT6
-      - 32MHz
-      - 192KB
-      - 20KB
-    * - ``frdm_kl25z``
-      - `Freescale Kinetis FRDM-KL25Z <https://developer.mbed.org/platforms/KL25Z/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - MKL25Z128VLK4
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - ``frdm_kl26z``
-      - `Freescale Kinetis FRDM-KL26Z <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/l-seriesultra-low-powerm0-plus/freedom-development-platform-for-kinetis-kl16-and-kl26-mcus-up-to-128-kb-flash:FRDM-KL26Z?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - MKL26Z128VLH4
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - ``frdm_kl27z``
-      - `Freescale Kinetis FRDM-KL27Z <https://os.mbed.com/platforms/FRDM-KL27Z/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Freescale Kinetis <platform_freescalekinetis>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - MKL27Z64VLH4
-      - 48MHz
-      - 64KB
-      - 16KB
-    * - ``genericSTM32F103C8``
-      - `STM32F103C8 (20k RAM. 64k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103C8T6
-      - 72MHz
-      - 64KB
-      - 20KB
-    * - ``genericSTM32F103CB``
-      - `STM32F103CB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103cb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103CBT6
-      - 72MHz
-      - 128KB
-      - 20KB
-    * - ``genericSTM32F103R8``
-      - `STM32F103R8 (20k RAM. 64 Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103r8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103R8T6
-      - 72MHz
-      - 64KB
-      - 20KB
-    * - ``genericSTM32F103RB``
-      - `STM32F103RB (20k RAM. 128k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103RBT6
-      - 72MHz
-      - 128KB
-      - 20KB
-    * - ``genericSTM32F103RC``
-      - `STM32F103RC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103rc.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103RCT6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``genericSTM32F103RE``
-      - `STM32F103RE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103re.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103RET6
-      - 72MHz
-      - 512KB
-      - 64KB
-    * - ``genericSTM32F103T8``
-      - `STM32F103T8 (20k RAM. 64k Flash) <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103T8T6
-      - 72MHz
-      - 20KB
-      - 64KB
-    * - ``genericSTM32F103TB``
-      - `STM32F103TB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103tb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103TBT6
-      - 72MHz
-      - 128KB
-      - 20KB
-    * - ``genericSTM32F103VB``
-      - `STM32F103VB (20k RAM. 128k Flash) <http://www.st.com/en/microcontrollers/stm32f103vb.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103VBT6
-      - 72MHz
-      - 128KB
-      - 20KB
-    * - ``genericSTM32F103VC``
-      - `STM32F103VC (48k RAM. 256k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103VCT6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``genericSTM32F103VD``
-      - `STM32F103VD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103vd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103VDT6
-      - 72MHz
-      - 384KB
-      - 64KB
-    * - ``genericSTM32F103VE``
-      - `STM32F103VE (64k RAM. 512k Flash) <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103VET6
-      - 72MHz
-      - 512KB
-      - 64KB
-    * - ``genericSTM32F103ZC``
-      - `STM32F103ZC (48k RAM. 256k Flash) <http://www.st.com/en/microcontrollers/stm32f103zc.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103ZCT6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``genericSTM32F103ZD``
-      - `STM32F103ZD (64k RAM. 384k Flash) <http://www.st.com/en/microcontrollers/stm32f103zd.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103ZDT6
-      - 72MHz
-      - 384KB
-      - 64KB
-    * - ``genericSTM32F103ZE``
-      - `STM32F103ZE (64k RAM. 512k Flash) <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103ZET6
-      - 72MHz
-      - 512KB
-      - 64KB
-    * - ``hackaBLE``
-      - `hackaBLE <https://electronut.in/portfolio/hackaBLE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``lpc1114fn28``
-      - `Switch Science mbed LPC1114FN28 <https://developer.mbed.org/platforms/LPC1114FN28/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC1114FN28
-      - 48MHz
-      - 32KB
-      - 4KB
-    * - ``lpc11c24``
-      - `NXP LPC11C24 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/scalable-entry-level-32-bit-microcontroller-mcu-based-on-arm-cortex-m0-plus-m0-cores:LPC11C24FBD48?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11C24
-      - 48MHz
-      - 32KB
-      - 8KB
-    * - ``lpc11u24``
-      - `NXP mbed LPC11U24 <https://developer.mbed.org/platforms/mbed-LPC11U24/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U24
-      - 48MHz
-      - 32KB
-      - 8KB
-    * - ``lpc11u24_301``
-      - `ARM mbed LPC11U24 (+CAN) <https://developer.mbed.org/handbook/mbed-NXP-LPC11U24?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U24
-      - 48MHz
-      - 32KB
-      - 8KB
-    * - ``lpc11u34_421``
-      - `NXP LPC11U34 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/40kb-flash-8kb-sram-lqfp48-package:LPC11U34FBD48?lang_cd=en&utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U34
-      - 48MHz
-      - 40KB
-      - 8KB
-    * - ``lpc11u35``
-      - `EA LPC11U35 QuickStart Board <https://developer.mbed.org/platforms/EA-LPC11U35/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U35
-      - 48MHz
-      - 64KB
-      - 10KB
-    * - ``lpc11u35_501``
-      - `CQ Publishing TG-LPC11U35-501 <https://developer.mbed.org/platforms/TG-LPC11U35-501/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U35
-      - 48MHz
-      - 64KB
-      - 10KB
-    * - ``lpc11u35_y5_mbug``
-      - `y5 LPC11U35 mbug <https://developer.mbed.org/platforms/Y5-LPC11U35-MBUG/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U35
-      - 48MHz
-      - 64KB
-      - 10KB
-    * - ``lpc11u37_501``
-      - `NXP LPC11U37 <http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0/lpc1100-cortex-m0-plus-m0/128kb-flash-10kb-sram-lqfp48-package:LPC11U37FBD48?lang_cd=en&utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U37
-      - 48MHz
-      - 128KB
-      - 10KB
-    * - ``lpc11u68``
-      - `LPCXpresso11U68 <https://developer.mbed.org/platforms/LPCXpresso11U68/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC11U68
-      - 50MHz
-      - 256KB
-      - 36KB
-    * - ``lpc1549``
-      - `NXP LPCXpresso1549 <https://developer.mbed.org/platforms/LPCXpresso1549/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC1549
-      - 72MHz
-      - 256KB
-      - 36KB
-    * - ``lpc1768``
-      - `NXP mbed LPC1768 <http://developer.mbed.org/platforms/mbed-LPC1768/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC1768
-      - 96MHz
-      - 512KB
-      - 64KB
-    * - ``lpc4330_m4``
-      - `Bambino-210E <https://developer.mbed.org/platforms/Micromint-Bambino-210E/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC4330
-      - 204MHz
-      - 8MB
-      - 264KB
-    * - ``lpc812``
-      - `NXP LPC800-MAX <https://developer.mbed.org/platforms/NXP-LPC800-MAX/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC812
-      - 30MHz
-      - 16KB
-      - 4KB
-    * - ``lpc824``
-      - `LPCXpresso824-MAX <https://developer.mbed.org/platforms/LPCXpresso824-MAX/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC824
-      - 30MHz
-      - 32KB
-      - 8KB
-    * - ``macchina2``
-      - `Macchina M2 <https://www.macchina.cc?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``maple``
-      - `Maple <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103RBT6
-      - 72MHz
-      - 108KB
-      - 17KB
-    * - ``maple_mini_b20``
-      - `Maple Mini Bootloader 2.0 <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103CBT6
-      - 72MHz
-      - 120KB
-      - 20KB
-    * - ``maple_mini_origin``
-      - `Maple Mini Original <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103CBT6
-      - 72MHz
-      - 108KB
-      - 17KB
-    * - ``maple_ret6``
-      - `Maple (RET6) <http://www.leaflabs.com/maple/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103RET6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``mbed_connect_odin``
-      - `Mbed Connect Cloud <https://os.mbed.com/platforms/mbed-Connect-Cloud/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
-    * - ``microduino32_flash``
-      - `Microduino Core STM32 to Flash <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F103CBT6
-      - 72MHz
-      - 105.47KB
-      - 16.60KB
-    * - ``mkr1000USB``
-      - `Arduino MKR1000 <https://www.arduino.cc/en/Main/ArduinoMKR1000?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mkrfox1200``
-      - `Arduino MKR FOX 1200 <https://www.arduino.cc/en/Main.ArduinoBoardMKRFox1200?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_feather_m0`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mkrgsm1400``
-      - `Arduino MKR GSM 1400 <https://store.arduino.cc/mkr-gsm-1400?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_feather_m0_express`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``mkrwan1300``
-      - `Arduino MKR WAN 1300 <https://store.arduino.cc/mkr-wan-1300?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mkrzero``
-      - `Arduino MKRZERO <https://www.arduino.cc/en/Main/ArduinoBoardMKRZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mote_l152rc``
-      - `NAMote72 <https://developer.mbed.org/platforms/NAMote-72/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32L152RC
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``moteino_zero``
-      - `Moteino M0 <https://lowpowerlab.com/shop/product/184?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mtb_ublox_odin_w2``
-      - `u-blox ODIN-W2 <https://os.mbed.com/modules/u-blox-odin-w2/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
-    * - ``mts_dragonfly_f411re``
-      - `MTS Dragonfly <https://developer.mbed.org/platforms/MTS-Dragonfly/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - ``mts_mdot_f405rg``
-      - `MultiTech mDot <https://developer.mbed.org/platforms/MTS-mDot-F411/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - ``mts_mdot_f411re``
-      - `MultiTech mDot F411 <https://developer.mbed.org/platforms/MTS-mDot-F411/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - ``mxchip_az3166``
-      - `Microsoft Azure IoT Development Kit (MXChip AZ3166) <https://microsoft.github.io/azure-iot-developer-kit/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F412ZGT6
-      - 100MHz
-      - 1MB
-      - 256KB
-    * - ``mzeroUSB``
-      - `Arduino M0 <https://www.arduino.cc/en/Main/ArduinoBoardM0?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mzeropro``
-      - `Arduino M0 Pro (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``mzeroproUSB``
-      - `Arduino M0 Pro (Native USB Port) <https://www.arduino.cc/en/Main/ArduinoBoardM0PRO?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``ng_beacon``
-      - `ng-beacon <https://github.com/urish/ng-beacon?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``nrf51822_y5_mbug``
-      - `y5 nRF51822 mbug <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - ``nrf51_dk``
-      - `Nordic nRF51-DK <https://developer.mbed.org/platforms/Nordic-nRF51-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``nrf52840_dk``
-      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - ``nrf52_dk``
-      - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``nucleo_f030r8``
-      - `ST Nucleo F030R8 <https://developer.mbed.org/platforms/ST-Nucleo-F030R8/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F030R8T6
-      - 48MHz
-      - 64KB
-      - 8KB
-    * - ``nucleo_f031k6``
-      - `ST Nucleo F031K6 <https://developer.mbed.org/platforms/ST-Nucleo-F031K6/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F031K6T6
-      - 48MHz
-      - 32KB
-      - 4KB
-    * - ``nucleo_f042k6``
-      - `ST Nucleo F042K6 <https://developer.mbed.org/platforms/ST-Nucleo-F042K6/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F042K6T6
-      - 48MHz
-      - 32KB
-      - 6KB
-    * - ``nucleo_f070rb``
-      - `ST Nucleo F070RB <https://developer.mbed.org/platforms/ST-Nucleo-F070RB/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F070RBT6
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - ``nucleo_f072rb``
-      - `ST Nucleo F072RB <https://developer.mbed.org/platforms/ST-Nucleo-F072RB/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F072RBT6
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - ``nucleo_f091rc``
-      - `ST Nucleo F091RC <https://developer.mbed.org/platforms/ST-Nucleo-F091RC/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F091RCT6
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``nucleo_f103rb``
-      - `ST Nucleo F103RB <https://developer.mbed.org/platforms/ST-Nucleo-F103RB/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F103RBT6
-      - 72MHz
-      - 128KB
-      - 20KB
-    * - ``nucleo_f207zg``
-      - `ST Nucleo F207ZG <https://developer.mbed.org/platforms/ST-Nucleo-F207ZG/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F207ZGT6
+    * - :ref:`board_atmelsam_adafruit_feather_m4`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD51J19A
       - 120MHz
-      - 1MB
-      - 128KB
-    * - ``nucleo_f302r8``
-      - `ST Nucleo F302R8 <https://developer.mbed.org/platforms/ST-Nucleo-F302R8/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F302R8T6
-      - 72MHz
-      - 64KB
-      - 16KB
-    * - ``nucleo_f303k8``
-      - `ST Nucleo F303K8 <https://developer.mbed.org/platforms/ST-Nucleo-F303K8/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F303K8T6
-      - 72MHz
-      - 64KB
-      - 16KB
-    * - ``nucleo_f303re``
-      - `ST Nucleo F303RE <http://developer.mbed.org/platforms/ST-Nucleo-F303RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F303RET6
-      - 72MHz
-      - 512KB
-      - 64KB
-    * - ``nucleo_f303ze``
-      - `ST Nucleo F303ZE <https://developer.mbed.org/platforms/ST-Nucleo-F303ZE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F303ZET6
-      - 72MHz
-      - 512KB
-      - 64KB
-    * - ``nucleo_f334r8``
-      - `ST Nucleo F334R8 <https://developer.mbed.org/platforms/ST-Nucleo-F334R8/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F334R8T6
-      - 72MHz
-      - 64KB
-      - 16KB
-    * - ``nucleo_f401re``
-      - `ST Nucleo F401RE <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F401RET6
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``nucleo_f410rb``
-      - `ST Nucleo F410RB <https://developer.mbed.org/platforms/ST-Nucleo-F410RB/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F410RBT6
-      - 100MHz
-      - 128KB
-      - 32KB
-    * - ``nucleo_f411re``
-      - `ST Nucleo F411RE <https://developer.mbed.org/platforms/ST-Nucleo-F411RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - ``nucleo_f412zg``
-      - `ST Nucleo F412ZG <https://developer.mbed.org/platforms/ST-Nucleo-F411RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F412ZGT6
-      - 100MHz
-      - 1MB
-      - 256KB
-    * - ``nucleo_f413zh``
-      - `ST Nucleo F413ZH <https://os.mbed.com/platforms/ST-Nucleo-F413ZH/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F413ZHT6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - ``nucleo_f429zi``
-      - `ST Nucleo F429ZI <https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F429ZIT6
-      - 180MHz
-      - 2MB
-      - 256KB
-    * - ``nucleo_f439zi``
-      - `ST Nucleo F439ZI <https://developer.mbed.org/platforms/ST-Nucleo-F439ZI/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F439ZIT6
-      - 180MHz
-      - 2MB
-      - 256KB
-    * - ``nucleo_f446re``
-      - `ST Nucleo F446RE <https://developer.mbed.org/platforms/ST-Nucleo-F446RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F446RET6
-      - 180MHz
-      - 512KB
-      - 128KB
-    * - ``nucleo_f446ze``
-      - `ST Nucleo F446ZE <https://developer.mbed.org/platforms/ST-Nucleo-F446ZE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F446ZET6
-      - 180MHz
-      - 512KB
-      - 128KB
-    * - ``nucleo_f746zg``
-      - `ST Nucleo F746ZG <https://developer.mbed.org/platforms/ST-Nucleo-F446ZE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F746ZGT6
-      - 216MHz
-      - 1MB
-      - 320KB
-    * - ``nucleo_f756zg``
-      - `ST Nucleo F756ZG <https://www.st.com/en/evaluation-tools/nucleo-f756zg.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F756ZG
-      - 216MHz
-      - 1MB
-      - 320KB
-    * - ``nucleo_f767zi``
-      - `ST Nucleo F767ZI <https://developer.mbed.org/platforms/ST-Nucleo-F767ZI/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F767ZIT6
-      - 216MHz
-      - 2MB
-      - 512KB
-    * - ``nucleo_l011k4``
-      - `ST Nucleo L011K4 <https://www.st.com/en/evaluation-tools/nucleo-l011k4.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L011K4T6
-      - 32MHz
-      - 16KB
-      - 2KB
-    * - ``nucleo_l031k6``
-      - `ST Nucleo L031K6 <https://developer.mbed.org/platforms/ST-Nucleo-L031K6/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L031K6T6
-      - 32MHz
-      - 32KB
-      - 8KB
-    * - ``nucleo_l053r8``
-      - `ST Nucleo L053R8 <https://developer.mbed.org/platforms/ST-Nucleo-L053R8/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L053R8T6
-      - 32MHz
-      - 64KB
-      - 8KB
-    * - ``nucleo_l073rz``
-      - `ST Nucleo L073RZ <https://developer.mbed.org/platforms/ST-Nucleo-L073RZ/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L073RZ
-      - 32MHz
+      - 496KB
       - 192KB
-      - 20KB
-    * - ``nucleo_l152re``
-      - `ST Nucleo L152RE <https://developer.mbed.org/platforms/ST-Nucleo-L152RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L152RET6
-      - 32MHz
-      - 512KB
-      - 80KB
-    * - ``nucleo_l432kc``
-      - `ST Nucleo L432KC <https://developer.mbed.org/platforms/ST-Nucleo-L432KC/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L432KCU6
-      - 80MHz
-      - 256KB
-      - 64KB
-    * - ``nucleo_l433rc_p``
-      - `ST Nucleo L433RC-P <https://www.st.com/en/evaluation-tools/nucleo-l433rc-p.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L433RC
-      - 80MHz
-      - 256KB
-      - 64KB
-    * - ``nucleo_l476rg``
-      - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L476RGT6
-      - 80MHz
-      - 1MB
-      - 128KB
-    * - ``nucleo_l486rg``
-      - `ST Nucleo L476RG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L476RGT6
-      - 80MHz
-      - 1MB
-      - 128KB
-    * - ``nucleo_l496zg``
-      - `ST Nucleo L496ZG <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L496ZGT6
-      - 80MHz
-      - 1MB
-      - 128KB
-    * - ``nucleo_l496zg_p``
-      - `ST Nucleo L496ZG-P <https://www.st.com/en/evaluation-tools/nucleo-l496zg-p.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L496ZGT6P
-      - 80MHz
-      - 1MB
-      - 320KB
-    * - ``oshchip``
-      - `OSHChip <http://oshchip.org/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - ``redBearLab``
-      - `RedBearLab nRF51822 <https://developer.mbed.org/platforms/RedBearLab-nRF51822/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - ``redBearLabBLENano``
-      - `RedBearLab BLE Nano 1.5 <https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 32KB
-    * - ``redbear_blenano2``
-      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``redbear_blend2``
-      - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``rfduino``
-      - `RFduino <http://www.rfduino.com/product/rfd22102-rfduino-dip/index.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 8KB
-    * - ``sainSmartDue``
-      - `SainSmart Due (Programming Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``sainSmartDueUSB``
-      - `SainSmart Due (USB Native Port) <http://www.sainsmart.com/arduino/control-boards/sainsmart-due-atmel-sam3x8e-arm-cortex-m3-board-black.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-    * - ``samd21_xpro``
-      - `Atmel SAMD21-XPRO <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21J18A
+    * - :ref:`board_atmelsam_adafruit_gemma_m0`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``samd21g18a``
-      - `Atmel ATSAMW25-XPRO <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``saml21_xpro_b``
-      - `Atmel SAML21-XPRO-B <https://developer.mbed.org/platforms/SAML21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAML21J18B
+    * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_metro_m0`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``samr21_xpro``
-      - `Atmel ATSAMR21-XPRO <https://developer.mbed.org/platforms/SAMR21-XPRO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMR21G18A
+    * - :ref:`board_atmelsam_adafruit_metro_m4`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_trinket_m0`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``seeedArchBLE``
-      - `Seeed Arch BLE <https://developer.mbed.org/platforms/Seeed-Arch-BLE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - ``seeedArchLink``
-      - `Seeed Arch Link <https://developer.mbed.org/platforms/Seeed-Arch-Link/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
+    * - :ref:`board_atmelsam_adafruit_pirkey`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21E18A
+      - 48MHz
       - 256KB
-      - 16KB
-    * - ``seeedArchMax``
-      - `Seeed Arch Max <https://developer.mbed.org/platforms/Seeed-Arch-Max/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - 32KB
+    * - :ref:`board_atmelsam_due`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_dueUSB`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_mzeroUSB`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mzeroproUSB`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mzeropro`
+      - :ref:`platform_atmelsam`
+      - Yes
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrfox1200`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrgsm1400`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrwan1300`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkr1000USB`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrzero`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_tian`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_zero`
+      - :ref:`platform_atmelsam`
+      - Yes
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_zeroUSB`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_armstrap_eagle1024`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F417VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_armstrap_eagle2048`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
+    * - :ref:`board_ststm32_armstrap_eagle512`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
       - STM32F407VET6
       - 168MHz
       - 512KB
       - 192KB
-    * - ``seeedTinyBLE``
-      - `Seeed Tiny BLE <http://developer.mbed.org/platforms/Seeed-Tiny-BLE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 16MHz
+    * - :ref:`board_atmelsam_samr21_xpro`
+      - :ref:`platform_atmelsam`
+      - Yes
+      - SAMR21G18A
+      - 48MHz
       - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_samd21g18a`
+      - :ref:`platform_atmelsam`
+      - Yes
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_samd21_xpro`
+      - :ref:`platform_atmelsam`
+      - Yes
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_saml21_xpro_b`
+      - :ref:`platform_atmelsam`
+      - Yes
+      - SAML21J18B
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nxplpc_lpc4330_m4`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC4330
+      - 204MHz
+      - 8MB
+      - 264KB
+    * - :ref:`board_ststm32_bluepill_f103c8`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103C8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_nordicnrf52_bluey`
+      - :ref:`platform_nordicnrf52`
+      - Yes :sup:`?`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf51_bluz_dk`
+      - :ref:`platform_nordicnrf51`
+      - Yes :sup:`?`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nxplpc_lpc11u35_501`
+      - :ref:`platform_nxplpc`
+      - Yes :sup:`?`
+      - LPC11U35
+      - 48MHz
+      - 64KB
+      - 10KB
+    * - :ref:`board_nxplpc_elektor_cocorico`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC812
+      - 30MHz
       - 16KB
-    * - ``silica_sensor_node``
-      - `ST Sensor Node <https://www.avnet.com/shop/emea/products/avnet-engineering-services/silicastmsensornodeplus-3074457345633959668/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32L476JG
-      - 80MHz
+      - 4KB
+    * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_atmelsam_digix`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_nxplpc_lpc11u35`
+      - :ref:`platform_nxplpc`
+      - Yes :sup:`?`
+      - LPC11U35
+      - 48MHz
+      - 64KB
+      - 10KB
+    * - :ref:`board_siliconlabsefm32_efm32gg_stk3700`
+      - :ref:`platform_siliconlabsefm32`
+      - Yes
+      - EFM32GG990F1024
+      - 48MHz
       - 1MB
       - 128KB
-    * - ``sodaq_autonomo``
-      - `SODAQ Autonomo <http://support.sodaq.com/sodaq-one/autonomo/getting-started-autonomo/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21J18A
+    * - :ref:`board_siliconlabsefm32_efm32lg_stk3600`
+      - :ref:`platform_siliconlabsefm32`
+      - Yes
+      - EFM32LG990F256
       - 48MHz
       - 256KB
       - 32KB
-    * - ``sodaq_explorer``
-      - `SODAQ ExpLoRer <http://support.sodaq.com/sodaq-one/explorer/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21J18A
+    * - :ref:`board_siliconlabsefm32_efm32wg_stk3800`
+      - :ref:`platform_siliconlabsefm32`
+      - Yes
+      - EFM32WG990F256
       - 48MHz
       - 256KB
       - 32KB
-    * - ``sodaq_one``
-      - `SODAQ ONE <http://support.sodaq.com/sodaq-one/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
+    * - :ref:`board_siliconlabsefm32_efm32zg_stk3200`
+      - :ref:`platform_siliconlabsefm32`
+      - Yes
+      - EFM32ZG222F32
+      - 24MHz
       - 32KB
-    * - ``sparkfun_samd21_dev_usb``
-      - `SparkFun SAMD21 Dev Breakout <https://www.sparkfun.com/products/13672?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
+      - 4KB
+    * - :ref:`board_ststm32_elmo_f411re`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F411RET6
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_freescalekinetis_frdm_kl25z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKL25Z128VLK4
       - 48MHz
-      - 256KB
-      - 32KB
-    * - ``sparkfun_samd21_mini_usb``
-      - `SparkFun SAMD21 Mini Breakout <https://www.sparkfun.com/products/13664?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
+      - 128KB
+      - 16KB
+    * - :ref:`board_freescalekinetis_frdm_kl26z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKL26Z128VLH4
       - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_freescalekinetis_frdm_kl27z`
+      - :ref:`platform_freescalekinetis`
+      - Yes
+      - MKL27Z64VLH4
+      - 48MHz
+      - 64KB
+      - 16KB
+    * - :ref:`board_nxplpc_lpc11u68`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC11U68
+      - 50MHz
       - 256KB
-      - 32KB
-    * - ``ssci824``
-      - `Switch Science mbed LPC824 <https://developer.mbed.org/platforms/Switch-Science-mbed-LPC824/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - 36KB
+    * - :ref:`board_nxplpc_lpc824`
+      - :ref:`platform_nxplpc`
+      - Yes
       - LPC824
       - 30MHz
       - 32KB
       - 8KB
-    * - ``stct_nrf52_minidev``
-      - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
+    * - :ref:`board_ststm32_mts_dragonfly_f411re`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F411RET6
+      - 100MHz
       - 512KB
-      - 64KB
-    * - ``tb_sense_12``
-      - `Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT <https://www.silabs.com/products/development-tools/thunderboard/thunderboard-sense-two-kit?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Silicon Labs EFM32 <platform_siliconlabsefm32>`
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFR32MG12P432F1024
-      - 40MHz
-      - 1MB
-      - 256KB
-    * - ``tian``
-      - `Arduino Tian <https://www.arduino.cc/en/Main/ArduinoBoardTian?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - ``ublox_c030_n211``
-      - `u-blox C030-N211 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - ``ublox_c030_r410m``
-      - `u-blox C030-R410M IoT <https://os.mbed.com/platforms/ublox-C030-R410M/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - ``ublox_c030_u201``
-      - `u-blox C030-U201 IoT Starter Kit <https://os.mbed.com/platforms/ublox-C030-N211/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_cmsis-dap`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - ``ublox_evk_nina_b1``
-      - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF52 <platform_nordicnrf52>`
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
+      - 128KB
+    * - :ref:`board_atmelsam_macchina2`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - AT91SAM3X8E
+      - 84MHz
       - 512KB
-      - 64KB
-    * - ``ublox_evk_odin_w2``
-      - `u-blox EVK-ODIN-W2 <https://developer.mbed.org/platforms/ublox-EVK-ODIN-W2/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+      - 96KB
+    * - :ref:`board_ststm32_maple`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103RBT6
+      - 72MHz
+      - 108KB
+      - 17KB
+    * - :ref:`board_ststm32_maple_ret6`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103RET6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - :ref:`board_ststm32_maple_mini_b20`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103CBT6
+      - 72MHz
+      - 120KB
+      - 20KB
+    * - :ref:`board_ststm32_maple_mini_origin`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103CBT6
+      - 72MHz
+      - 108KB
+      - 17KB
+    * - :ref:`board_ststm32_mbed_connect_odin`
+      - :ref:`platform_ststm32`
+      - Yes
       - STM32F439ZIY6
       - 168MHz
       - 2MB
       - 256KB
-    * - ``ubloxc027``
-      - `u-blox C027 <https://developer.mbed.org/platforms/u-blox-C027/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`NXP LPC <platform_nxplpc>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - LPC1768
-      - 96MHz
-      - 512KB
-      - 64KB
-    * - ``waveshare_ble400``
-      - `Waveshare BLE400 <http://www.waveshare.com/wiki/BLE400?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Nordic nRF51 <platform_nordicnrf51>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF51822
-      - 32MHz
+    * - :ref:`board_ststm32_microduino32_flash`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103CBT6
+      - 72MHz
+      - 105.47KB
+      - 16.60KB
+    * - :ref:`board_ststm32_mxchip_az3166`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_atmelsam_moteino_zero`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
       - 256KB
       - 32KB
-    * - ``wio_3g``
-      - `Seeed Wio 3G <https://os.mbed.com/platforms/Seeed-Wio-3g/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F439VI
-      - 180MHz
-      - 2MB
-      - 256KB
-    * - ``xdot_l151cc``
-      - `MultiTech xDot <https://developer.mbed.org/platforms/MTS-xDot-L151CC/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_ststm32_mts_mdot_f405rg`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F411RET6
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_mts_mdot_f411re`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F411RET6
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_xdot_l151cc`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
       - STM32L151CCU6
       - 32MHz
       - 256KB
       - 32KB
-    * - ``zero``
-      - `Arduino Zero (Programming/Debug Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_ststm32_mote_l152rc`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32L152RC
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nxplpc_blueboard_lpc11u24`
+      - :ref:`platform_nxplpc`
+      - Yes :sup:`?`
+      - LPC11U24
+      - 48MHz
+      - 32KB
+      - 8KB
+    * - :ref:`board_nxplpc_lpc11c24`
+      - :ref:`platform_nxplpc`
+      - Yes :sup:`?`
+      - LPC11C24
+      - 48MHz
+      - 32KB
+      - 8KB
+    * - :ref:`board_nxplpc_lpc11u34_421`
+      - :ref:`platform_nxplpc`
+      - Yes :sup:`?`
+      - LPC11U34
+      - 48MHz
+      - 40KB
+      - 8KB
+    * - :ref:`board_nxplpc_lpc11u37_501`
+      - :ref:`platform_nxplpc`
+      - Yes :sup:`?`
+      - LPC11U37
+      - 48MHz
+      - 128KB
+      - 10KB
+    * - :ref:`board_nxplpc_lpc812`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC812
+      - 30MHz
+      - 16KB
+      - 4KB
+    * - :ref:`board_nxplpc_lpc1549`
+      - :ref:`platform_nxplpc`
+      - Yes :sup:`?`
+      - LPC1549
+      - 72MHz
+      - 256KB
+      - 36KB
+    * - :ref:`board_nxplpc_lpc11u24`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC11U24
+      - 48MHz
+      - 32KB
+      - 8KB
+    * - :ref:`board_nxplpc_lpc1768`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC1768
+      - 96MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf52_nrf52_dk`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf51_oshchip`
+      - :ref:`platform_nordicnrf51`
+      - Yes :sup:`?`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_rfduino`
+      - :ref:`platform_nordicnrf51`
+      - Yes :sup:`?`
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 8KB
+    * - :ref:`board_nordicnrf51_redBearLabBLENano`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf52_redbear_blenano2`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_redbear_blend2`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf51_redBearLab`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_ststm32_cloud_jam`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F401RET6
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_ststm32_cloud_jam_l4`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
+      - :ref:`platform_siliconlabsefm32`
+      - Yes
+      - EFM32HG322F64
+      - 25MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_siliconlabsefm32_efm32pg_stk3401`
+      - :ref:`platform_siliconlabsefm32`
+      - Yes
+      - EFM32PG1B200F256GM48
+      - 40MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sodaq_autonomo`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sodaq_explorer`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sodaq_one`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
-    * - ``zeroUSB``
-      - `Arduino Zero (USB Native Port) <https://www.arduino.cc/en/Main/ArduinoBoardZero?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Atmel SAM <platform_atmelsam>`
-      - :ref:`debugging_tool_atmel-ice`, :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_ststm32_disco_f334c8`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F334C8T6
+      - 72MHz
+      - 64KB
+      - 12KB
+    * - :ref:`board_ststm32_disco_f401vc`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F401VCT6
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_disco_f411ve`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F411VET6
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_disco_f413zh`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F413ZHT6
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_disco_f429zi`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F429ZIT6
+      - 180MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_ststm32_disco_f469ni`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_ststm32_disco_f746ng`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F746NGH6
+      - 216MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_disco_f769ni`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F769NIH6
+      - 80MHz
+      - 1MB
+      - 512KB
+    * - :ref:`board_ststm32_disco_l053c8`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L053C8T6
+      - 32MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_ststm32_disco_l100rc`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L100RCT6
+      - 32MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_ststm32_disco_l476vg`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L476VGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_disco_l496ag`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L496AGI6
+      - 80MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_disco_l475vg_iot01a`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L475VGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_f030r8`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F030R8T6
+      - 48MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_ststm32_nucleo_f031k6`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F031K6T6
+      - 48MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_ststm32_nucleo_f042k6`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F042K6T6
+      - 48MHz
+      - 32KB
+      - 6KB
+    * - :ref:`board_ststm32_nucleo_f070rb`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F070RBT6
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_ststm32_nucleo_f072rb`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F072RBT6
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_ststm32_nucleo_f091rc`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F091RCT6
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_f103rb`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_nucleo_f207zg`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F207ZGT6
+      - 120MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_f302r8`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F302R8T6
+      - 72MHz
+      - 64KB
+      - 16KB
+    * - :ref:`board_ststm32_nucleo_f303k8`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F303K8T6
+      - 72MHz
+      - 64KB
+      - 16KB
+    * - :ref:`board_ststm32_nucleo_f303re`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F303RET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_nucleo_f303ze`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F303ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_nucleo_f334r8`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F334R8T6
+      - 72MHz
+      - 64KB
+      - 16KB
+    * - :ref:`board_ststm32_nucleo_f401re`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F401RET6
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_ststm32_nucleo_f410rb`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F410RBT6
+      - 100MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_f411re`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F411RET6
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_f412zg`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_nucleo_f413zh`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F413ZHT6
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_f429zi`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F429ZIT6
+      - 180MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_ststm32_nucleo_f439zi`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F439ZIT6
+      - 180MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_ststm32_nucleo_f446re`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_f446ze`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F446ZET6
+      - 180MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_f746zg`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F746ZGT6
+      - 216MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_nucleo_f756zg`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F756ZG
+      - 216MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_nucleo_f767zi`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F767ZIT6
+      - 216MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_nucleo_l011k4`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L011K4T6
+      - 32MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_ststm32_nucleo_l031k6`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L031K6T6
+      - 32MHz
+      - 32KB
+      - 8KB
+    * - :ref:`board_ststm32_nucleo_l053r8`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L053R8T6
+      - 32MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_ststm32_nucleo_l073rz`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_nucleo_l152re`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L152RET6
+      - 32MHz
+      - 512KB
+      - 80KB
+    * - :ref:`board_ststm32_nucleo_l432kc`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L432KCU6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_nucleo_l433rc_p`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L433RC
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_nucleo_l486rg`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_l476rg`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_l496zg`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L496ZGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_l496zg_p`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L496ZGT6P
+      - 80MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_disco_f030r8`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F030R8T6
+      - 48MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_ststm32_disco_f051r8`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F051R8T6
+      - 48MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_ststm32_disco_f303vc`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F303VCT6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - :ref:`board_ststm32_disco_f407vg`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F407VGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_eval_l073z`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L073VZT6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_disco_l152rb`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L152RBT6
+      - 32MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_ststm32_disco_f100rb`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F100RBT6
+      - 24MHz
+      - 128KB
+      - 8KB
+    * - :ref:`board_ststm32_silica_sensor_node`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32L476JG
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F103C8`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103C8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103CB`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103CBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103R8`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103R8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103RB`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103RC`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - :ref:`board_ststm32_genericSTM32F103RE`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103RET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103T8`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103T8T6
+      - 72MHz
+      - 20KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103TB`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103TBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103VB`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103VBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103VC`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103VCT6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - :ref:`board_ststm32_genericSTM32F103VD`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103VDT6
+      - 72MHz
+      - 384KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103VE`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103ZC`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103ZCT6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - :ref:`board_ststm32_genericSTM32F103ZD`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103ZDT6
+      - 72MHz
+      - 384KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103ZE`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_atmelsam_sainSmartDue`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_sainSmartDueUSB`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_nordicnrf51_seeedArchBLE`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_nordicnrf51_seeedArchLink`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_ststm32_seeedArchMax`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_nordicnrf51_seeedTinyBLE`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
+    * - :ref:`board_ststm32_wio_3g`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F439VI
+      - 180MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_nordicnrf51_Sinobit`
+      - :ref:`platform_nordicnrf51`
+      - Yes :sup:`?`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nxplpc_dipcortexm0`
+      - :ref:`platform_nxplpc`
+      - Yes :sup:`?`
+      - LPC11U24
+      - 50MHz
+      - 32KB
+      - 8KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
+      - :ref:`platform_atmelsam`
+      - Yes :sup:`?`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nxplpc_lpc1114fn28`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC1114FN28
+      - 48MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_nxplpc_ssci824`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC824
+      - 30MHz
+      - 32KB
+      - 8KB
+    * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
+      - :ref:`platform_nordicnrf52`
+      - Yes :sup:`?`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_siliconlabsefm32_tb_sense_12`
+      - :ref:`platform_siliconlabsefm32`
+      - Yes
+      - EFR32MG12P432F1024
+      - 40MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf51_waveshare_ble400`
+      - :ref:`platform_nordicnrf51`
+      - Yes :sup:`?`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf52_hackaBLE`
+      - :ref:`platform_nordicnrf52`
+      - Yes :sup:`?`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf51_ng_beacon`
+      - :ref:`platform_nordicnrf51`
+      - Yes :sup:`?`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nxplpc_ubloxc027`
+      - :ref:`platform_nxplpc`
+      - Yes
+      - LPC1768
+      - 96MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_ublox_c030_n211`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F437VG
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_ublox_c030_r410m`
+      - :ref:`platform_ststm32`
+      - Yes
+      - STM32F437VG
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_ublox_c030_u201`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F437VG
+      - 180MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
+      - :ref:`platform_nordicnrf52`
+      - Yes
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_ublox_evk_odin_w2`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F439ZIY6
+      - 168MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_ststm32_mtb_ublox_odin_w2`
+      - :ref:`platform_ststm32`
+      - Yes :sup:`?`
+      - STM32F439ZIY6
+      - 168MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_nxplpc_lpc11u35_y5_mbug`
+      - :ref:`platform_nxplpc`
+      - Yes :sup:`?`
+      - LPC11U35
+      - 48MHz
+      - 64KB
+      - 10KB
+    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
+      - :ref:`platform_nordicnrf51`
+      - Yes
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
