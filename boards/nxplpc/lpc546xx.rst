@@ -16,17 +16,17 @@ NXP LPCXpresso54608
 
 .. contents::
 
-Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
-
 System
 ------
+
+Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
 .. list-table::
 
   * - **Microcontroller**
     - LPC54608ET512
   * - **Frequency**
-    - 180Mhz
+    - 180MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``lpc546xx`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   board = lpc546xx
 
 You can override default NXP LPCXpresso54608 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `lpc546xx.json <https://github.com/platformio/platform-nxplpc/blob/master/boards/lpc546xx.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

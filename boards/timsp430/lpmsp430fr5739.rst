@@ -16,17 +16,17 @@ TI FraunchPad MSP-EXP430FR5739LP
 
 .. contents::
 
-Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
-
 System
 ------
+
+Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 
 .. list-table::
 
   * - **Microcontroller**
     - MSP430FR5739
   * - **Frequency**
-    - 16Mhz
+    - 16MHz
   * - **Flash**
     - 16KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``lpmsp430fr5739`` ID for :ref:`projectconf_env_board` option in :ref
   board = lpmsp430fr5739
 
 You can override default TI FraunchPad MSP-EXP430FR5739LP settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `lpmsp430fr5739.json <https://github.com/platformio/platform-timsp430/blob/master/boards/lpmsp430fr5739.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

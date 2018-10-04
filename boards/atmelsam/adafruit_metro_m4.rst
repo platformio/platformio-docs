@@ -16,17 +16,17 @@ Adafruit Metro M4 (SAMD51)
 
 .. contents::
 
-Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
-
 System
 ------
+
+Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
 .. list-table::
 
   * - **Microcontroller**
     - SAMD51J19A
   * - **Frequency**
-    - 120Mhz
+    - 120MHz
   * - **Flash**
     - 496KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``adafruit_metro_m4`` ID for :ref:`projectconf_env_board` option in :
   board = adafruit_metro_m4
 
 You can override default Adafruit Metro M4 (SAMD51) settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `adafruit_metro_m4.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_metro_m4.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

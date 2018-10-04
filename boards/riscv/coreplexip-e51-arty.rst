@@ -16,17 +16,17 @@ E51 Arty (Artix-7) FPGA Dev Kit
 
 .. contents::
 
-Platform :ref:`platform_riscv`: RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
-
 System
 ------
+
+Platform :ref:`platform_riscv`: RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
 
 .. list-table::
 
   * - **Microcontroller**
     - E51
   * - **Frequency**
-    - 1500Mhz
+    - 1500MHz
   * - **Flash**
     - 16MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``coreplexip-e51-arty`` ID for :ref:`projectconf_env_board` option in
   board = coreplexip-e51-arty
 
 You can override default E51 Arty (Artix-7) FPGA Dev Kit settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `coreplexip-e51-arty.json <https://github.com/platformio/platform-riscv/blob/master/boards/coreplexip-e51-arty.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

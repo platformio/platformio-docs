@@ -16,17 +16,17 @@ Teensy LC
 
 .. contents::
 
-Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
-
 System
 ------
+
+Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
 .. list-table::
 
   * - **Microcontroller**
     - MKL26Z64
   * - **Frequency**
-    - 48Mhz
+    - 48MHz
   * - **Flash**
     - 62KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``teensylc`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   board = teensylc
 
 You can override default Teensy LC settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `teensylc.json <https://github.com/platformio/platform-teensy/blob/master/boards/teensylc.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

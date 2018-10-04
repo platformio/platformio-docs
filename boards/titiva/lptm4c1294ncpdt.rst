@@ -16,17 +16,17 @@ TI LaunchPad (Tiva C) w/ tm4c129 (120MHz)
 
 .. contents::
 
-Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
-
 System
 ------
+
+Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
 .. list-table::
 
   * - **Microcontroller**
     - LPTM4C1294NCPDT
   * - **Frequency**
-    - 120Mhz
+    - 120MHz
   * - **Flash**
     - 1MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``lptm4c1294ncpdt`` ID for :ref:`projectconf_env_board` option in :re
   board = lptm4c1294ncpdt
 
 You can override default TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `lptm4c1294ncpdt.json <https://github.com/platformio/platform-titiva/blob/master/boards/lptm4c1294ncpdt.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

@@ -16,17 +16,17 @@ Adafruit Feather 32u4
 
 .. contents::
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
-
 System
 ------
+
+Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
 .. list-table::
 
   * - **Microcontroller**
     - ATMEGA32U4
   * - **Frequency**
-    - 8Mhz
+    - 8MHz
   * - **Flash**
     - 28KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``feather32u4`` ID for :ref:`projectconf_env_board` option in :ref:`p
   board = feather32u4
 
 You can override default Adafruit Feather 32u4 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `feather32u4.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/feather32u4.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

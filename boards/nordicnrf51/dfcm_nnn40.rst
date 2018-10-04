@@ -16,17 +16,17 @@ Delta DFCM-NNN40
 
 .. contents::
 
-Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
-
 System
 ------
+
+Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
 .. list-table::
 
   * - **Microcontroller**
     - NRF51822
   * - **Frequency**
-    - 32Mhz
+    - 32MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``dfcm_nnn40`` ID for :ref:`projectconf_env_board` option in :ref:`pr
   board = dfcm_nnn40
 
 You can override default Delta DFCM-NNN40 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `dfcm_nnn40.json <https://github.com/platformio/platform-nordicnrf51/blob/master/boards/dfcm_nnn40.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

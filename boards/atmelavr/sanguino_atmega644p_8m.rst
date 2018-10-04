@@ -16,17 +16,17 @@ Sanguino ATmega644P or ATmega644PA (8 MHz)
 
 .. contents::
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
-
 System
 ------
+
+Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
 .. list-table::
 
   * - **Microcontroller**
     - ATMEGA644P
   * - **Frequency**
-    - 8Mhz
+    - 8MHz
   * - **Flash**
     - 63KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``sanguino_atmega644p_8m`` ID for :ref:`projectconf_env_board` option
   board = sanguino_atmega644p_8m
 
 You can override default Sanguino ATmega644P or ATmega644PA (8 MHz) settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `sanguino_atmega644p_8m.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/sanguino_atmega644p_8m.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

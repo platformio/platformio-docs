@@ -16,17 +16,17 @@ Samsung ARTIK 530
 
 .. contents::
 
-Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
-
 System
 ------
+
+Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
 .. list-table::
 
   * - **Microcontroller**
     - S5P4418
   * - **Frequency**
-    - 1200Mhz
+    - 1200MHz
   * - **Flash**
     - 4GB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``artik_530`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   board = artik_530
 
 You can override default Samsung ARTIK 530 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `artik_530.json <https://github.com/platformio/platform-linux_arm/blob/master/boards/artik_530.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

@@ -16,17 +16,17 @@ LPCXpresso824-MAX
 
 .. contents::
 
-Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
-
 System
 ------
+
+Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
 .. list-table::
 
   * - **Microcontroller**
     - LPC824
   * - **Frequency**
-    - 30Mhz
+    - 30MHz
   * - **Flash**
     - 32KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``lpc824`` ID for :ref:`projectconf_env_board` option in :ref:`projec
   board = lpc824
 
 You can override default LPCXpresso824-MAX settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `lpc824.json <https://github.com/platformio/platform-nxplpc/blob/master/boards/lpc824.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

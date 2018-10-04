@@ -16,17 +16,17 @@ HiFive1
 
 .. contents::
 
-Platform :ref:`platform_riscv`: RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
-
 System
 ------
+
+Platform :ref:`platform_riscv`: RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
 
 .. list-table::
 
   * - **Microcontroller**
     - FE310
   * - **Frequency**
-    - 320Mhz
+    - 320MHz
   * - **Flash**
     - 16MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``freedom-e300-hifive1`` ID for :ref:`projectconf_env_board` option i
   board = freedom-e300-hifive1
 
 You can override default HiFive1 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `freedom-e300-hifive1.json <https://github.com/platformio/platform-riscv/blob/master/boards/freedom-e300-hifive1.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

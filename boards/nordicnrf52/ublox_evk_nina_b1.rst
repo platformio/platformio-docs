@@ -16,17 +16,17 @@ u-blox EVK-NINA-B1
 
 .. contents::
 
-Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
-
 System
 ------
+
+Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
 .. list-table::
 
   * - **Microcontroller**
     - NRF52832
   * - **Frequency**
-    - 64Mhz
+    - 64MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``ublox_evk_nina_b1`` ID for :ref:`projectconf_env_board` option in :
   board = ublox_evk_nina_b1
 
 You can override default u-blox EVK-NINA-B1 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `ublox_evk_nina_b1.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/ublox_evk_nina_b1.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

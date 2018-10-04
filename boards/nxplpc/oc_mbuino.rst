@@ -16,17 +16,17 @@ mBuino
 
 .. contents::
 
-Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
-
 System
 ------
+
+Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
 .. list-table::
 
   * - **Microcontroller**
     - LPC11U24
   * - **Frequency**
-    - 50Mhz
+    - 50MHz
   * - **Flash**
     - 32KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``oc_mbuino`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   board = oc_mbuino
 
 You can override default mBuino settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `oc_mbuino.json <https://github.com/platformio/platform-nxplpc/blob/master/boards/oc_mbuino.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

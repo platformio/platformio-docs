@@ -16,17 +16,17 @@ WIZwiki-W7500P
 
 .. contents::
 
-Platform :ref:`platform_wiznet7500`: The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
-
 System
 ------
+
+Platform :ref:`platform_wiznet7500`: The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
 .. list-table::
 
   * - **Microcontroller**
     - WIZNET7500P
   * - **Frequency**
-    - 48Mhz
+    - 48MHz
   * - **Flash**
     - 128KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``wizwiki_w7500p`` ID for :ref:`projectconf_env_board` option in :ref
   board = wizwiki_w7500p
 
 You can override default WIZwiki-W7500P settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `wizwiki_w7500p.json <https://github.com/platformio/platform-wiznet7500/blob/master/boards/wizwiki_w7500p.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

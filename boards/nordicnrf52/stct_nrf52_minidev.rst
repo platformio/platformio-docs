@@ -16,17 +16,17 @@ Taida Century nRF52 mini board
 
 .. contents::
 
-Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
-
 System
 ------
+
+Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
 .. list-table::
 
   * - **Microcontroller**
     - NRF52832
   * - **Frequency**
-    - 64Mhz
+    - 64MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``stct_nrf52_minidev`` ID for :ref:`projectconf_env_board` option in 
   board = stct_nrf52_minidev
 
 You can override default Taida Century nRF52 mini board settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `stct_nrf52_minidev.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/stct_nrf52_minidev.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

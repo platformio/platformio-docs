@@ -16,17 +16,17 @@ y5 nRF51822 mbug
 
 .. contents::
 
-Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
-
 System
 ------
+
+Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
 .. list-table::
 
   * - **Microcontroller**
     - NRF51822
   * - **Frequency**
-    - 16Mhz
+    - 16MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``nrf51822_y5_mbug`` ID for :ref:`projectconf_env_board` option in :r
   board = nrf51822_y5_mbug
 
 You can override default y5 nRF51822 mbug settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `nrf51822_y5_mbug.json <https://github.com/platformio/platform-nordicnrf51/blob/master/boards/nrf51822_y5_mbug.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

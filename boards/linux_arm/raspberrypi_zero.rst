@@ -16,17 +16,17 @@ Raspberry Pi Zero
 
 .. contents::
 
-Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
-
 System
 ------
+
+Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
 .. list-table::
 
   * - **Microcontroller**
     - BCM2835
   * - **Frequency**
-    - 1000Mhz
+    - 1000MHz
   * - **Flash**
     - 512MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``raspberrypi_zero`` ID for :ref:`projectconf_env_board` option in :r
   board = raspberrypi_zero
 
 You can override default Raspberry Pi Zero settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `raspberrypi_zero.json <https://github.com/platformio/platform-linux_arm/blob/master/boards/raspberrypi_zero.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

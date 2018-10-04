@@ -16,17 +16,17 @@ ST STM32F3DISCOVERY
 
 .. contents::
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
-
 System
 ------
+
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
     - STM32F303VCT6
   * - **Frequency**
-    - 72Mhz
+    - 72MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``disco_f303vc`` ID for :ref:`projectconf_env_board` option in :ref:`
   board = disco_f303vc
 
 You can override default ST STM32F3DISCOVERY settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `disco_f303vc.json <https://github.com/platformio/platform-ststm32/blob/master/boards/disco_f303vc.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

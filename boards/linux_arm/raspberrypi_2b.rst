@@ -16,17 +16,17 @@ Raspberry Pi 2 Model B
 
 .. contents::
 
-Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
-
 System
 ------
+
+Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
 .. list-table::
 
   * - **Microcontroller**
     - BCM2836
   * - **Frequency**
-    - 900Mhz
+    - 900MHz
   * - **Flash**
     - 1GB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``raspberrypi_2b`` ID for :ref:`projectconf_env_board` option in :ref
   board = raspberrypi_2b
 
 You can override default Raspberry Pi 2 Model B settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `raspberrypi_2b.json <https://github.com/platformio/platform-linux_arm/blob/master/boards/raspberrypi_2b.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

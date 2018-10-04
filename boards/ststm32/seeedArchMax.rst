@@ -16,17 +16,17 @@ Seeed Arch Max
 
 .. contents::
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
-
 System
 ------
+
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
     - STM32F407VET6
   * - **Frequency**
-    - 168Mhz
+    - 168MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``seeedArchMax`` ID for :ref:`projectconf_env_board` option in :ref:`
   board = seeedArchMax
 
 You can override default Seeed Arch Max settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `seeedArchMax.json <https://github.com/platformio/platform-ststm32/blob/master/boards/seeedArchMax.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

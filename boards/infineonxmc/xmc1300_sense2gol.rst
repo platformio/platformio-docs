@@ -16,17 +16,17 @@ XMC1300 Sense2GoL
 
 .. contents::
 
-Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
 System
 ------
+
+Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
 .. list-table::
 
   * - **Microcontroller**
     - XMC1300
   * - **Frequency**
-    - 32Mhz
+    - 32MHz
   * - **Flash**
     - 64KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``xmc1300_sense2gol`` ID for :ref:`projectconf_env_board` option in :
   board = xmc1300_sense2gol
 
 You can override default XMC1300 Sense2GoL settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `xmc1300_sense2gol.json <https://github.com/Infineon/platformio-infineonxmc/blob/master/boards/xmc1300_sense2gol.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

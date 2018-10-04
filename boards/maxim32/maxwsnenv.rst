@@ -16,17 +16,17 @@ Maxim Wireless Sensor Node Demonstrator
 
 .. contents::
 
-Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
-
 System
 ------
+
+Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
 .. list-table::
 
   * - **Microcontroller**
     - MAX32610
   * - **Frequency**
-    - 24Mhz
+    - 24MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``maxwsnenv`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   board = maxwsnenv
 
 You can override default Maxim Wireless Sensor Node Demonstrator settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `maxwsnenv.json <https://github.com/platformio/platform-maxim32/blob/master/boards/maxwsnenv.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

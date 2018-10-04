@@ -16,17 +16,17 @@ SparkFun Mega Pro 3.3V/8MHz
 
 .. contents::
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
-
 System
 ------
+
+Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
 .. list-table::
 
   * - **Microcontroller**
     - ATMEGA2560
   * - **Frequency**
-    - 8Mhz
+    - 8MHz
   * - **Flash**
     - 252KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``sparkfun_megapro8MHz`` ID for :ref:`projectconf_env_board` option i
   board = sparkfun_megapro8MHz
 
 You can override default SparkFun Mega Pro 3.3V/8MHz settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `sparkfun_megapro8MHz.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/sparkfun_megapro8MHz.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

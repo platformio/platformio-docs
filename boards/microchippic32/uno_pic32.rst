@@ -16,17 +16,17 @@ Digilent chipKIT UNO32
 
 .. contents::
 
-Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
-
 System
 ------
+
+Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
 
 .. list-table::
 
   * - **Microcontroller**
     - 32MX320F128H
   * - **Frequency**
-    - 80Mhz
+    - 80MHz
   * - **Flash**
     - 124KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``uno_pic32`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   board = uno_pic32
 
 You can override default Digilent chipKIT UNO32 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `uno_pic32.json <https://github.com/platformio/platform-microchippic32/blob/master/boards/uno_pic32.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

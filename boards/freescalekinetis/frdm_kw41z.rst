@@ -16,17 +16,17 @@ Freescale Kinetis FRDM-KW41Z
 
 .. contents::
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
-
 System
 ------
+
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
 .. list-table::
 
   * - **Microcontroller**
     - MKW41Z512VHT4
   * - **Frequency**
-    - 48Mhz
+    - 48MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``frdm_kw41z`` ID for :ref:`projectconf_env_board` option in :ref:`pr
   board = frdm_kw41z
 
 You can override default Freescale Kinetis FRDM-KW41Z settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `frdm_kw41z.json <https://github.com/platformio/platform-freescalekinetis/blob/master/boards/frdm_kw41z.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

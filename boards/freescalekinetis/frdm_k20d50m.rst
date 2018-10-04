@@ -16,17 +16,17 @@ Freescale Kinetis FRDM-K20D50M
 
 .. contents::
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
-
 System
 ------
+
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
 .. list-table::
 
   * - **Microcontroller**
     - MK20DX128VLH5
   * - **Frequency**
-    - 48Mhz
+    - 48MHz
   * - **Flash**
     - 128KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``frdm_k20d50m`` ID for :ref:`projectconf_env_board` option in :ref:`
   board = frdm_k20d50m
 
 You can override default Freescale Kinetis FRDM-K20D50M settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `frdm_k20d50m.json <https://github.com/platformio/platform-freescalekinetis/blob/master/boards/frdm_k20d50m.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

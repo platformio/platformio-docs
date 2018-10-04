@@ -16,17 +16,17 @@ Arduino NG or older ATmega8
 
 .. contents::
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
-
 System
 ------
+
+Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
 .. list-table::
 
   * - **Microcontroller**
     - ATMEGA8
   * - **Frequency**
-    - 16Mhz
+    - 16MHz
   * - **Flash**
     - 7KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``atmegangatmega8`` ID for :ref:`projectconf_env_board` option in :re
   board = atmegangatmega8
 
 You can override default Arduino NG or older ATmega8 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `atmegangatmega8.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/atmegangatmega8.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

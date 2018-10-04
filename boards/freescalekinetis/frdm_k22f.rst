@@ -16,17 +16,17 @@ Freescale Kinetis FRDM-K22F
 
 .. contents::
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
-
 System
 ------
+
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
 .. list-table::
 
   * - **Microcontroller**
     - MK22FN512VLH12
   * - **Frequency**
-    - 120Mhz
+    - 120MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``frdm_k22f`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   board = frdm_k22f
 
 You can override default Freescale Kinetis FRDM-K22F settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `frdm_k22f.json <https://github.com/platformio/platform-freescalekinetis/blob/master/boards/frdm_k22f.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

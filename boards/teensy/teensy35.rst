@@ -16,17 +16,17 @@ Teensy 3.5
 
 .. contents::
 
-Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
-
 System
 ------
+
+Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
 .. list-table::
 
   * - **Microcontroller**
     - MK64FX512
   * - **Frequency**
-    - 120Mhz
+    - 120MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``teensy35`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   board = teensy35
 
 You can override default Teensy 3.5 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `teensy35.json <https://github.com/platformio/platform-teensy/blob/master/boards/teensy35.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

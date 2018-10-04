@@ -16,17 +16,17 @@ Freescale Kinetis FRDM-KW24D512
 
 .. contents::
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
-
 System
 ------
+
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
 .. list-table::
 
   * - **Microcontroller**
     - MKW24D512
   * - **Frequency**
-    - 50Mhz
+    - 50MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``frdm_kw24d`` ID for :ref:`projectconf_env_board` option in :ref:`pr
   board = frdm_kw24d
 
 You can override default Freescale Kinetis FRDM-KW24D512 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `frdm_kw24d.json <https://github.com/platformio/platform-freescalekinetis/blob/master/boards/frdm_kw24d.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

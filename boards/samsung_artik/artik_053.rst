@@ -16,17 +16,17 @@ Samsung ARTIK053
 
 .. contents::
 
-Platform :ref:`platform_samsung_artik`: The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
-
 System
 ------
+
+Platform :ref:`platform_samsung_artik`: The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
 
 .. list-table::
 
   * - **Microcontroller**
     - S5JT200
   * - **Frequency**
-    - 320Mhz
+    - 320MHz
   * - **Flash**
     - 8MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``artik_053`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   board = artik_053
 
 You can override default Samsung ARTIK053 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `artik_053.json <https://github.com/platformio/platform-samsung_artik/blob/master/boards/artik_053.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

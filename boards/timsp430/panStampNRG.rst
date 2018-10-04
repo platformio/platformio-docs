@@ -16,17 +16,17 @@ PanStamp NRG 1.1
 
 .. contents::
 
-Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
-
 System
 ------
+
+Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 
 .. list-table::
 
   * - **Microcontroller**
     - CC430F5137
   * - **Frequency**
-    - 12Mhz
+    - 12MHz
   * - **Flash**
     - 31.88KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``panStampNRG`` ID for :ref:`projectconf_env_board` option in :ref:`p
   board = panStampNRG
 
 You can override default PanStamp NRG 1.1 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `panStampNRG.json <https://github.com/platformio/platform-timsp430/blob/master/boards/panStampNRG.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

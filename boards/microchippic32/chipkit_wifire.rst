@@ -16,17 +16,17 @@ Digilent chipKIT WiFire
 
 .. contents::
 
-Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
-
 System
 ------
+
+Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
 
 .. list-table::
 
   * - **Microcontroller**
     - 32MZ2048ECG100
   * - **Frequency**
-    - 200Mhz
+    - 200MHz
   * - **Flash**
     - 1.98MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``chipkit_wifire`` ID for :ref:`projectconf_env_board` option in :ref
   board = chipkit_wifire
 
 You can override default Digilent chipKIT WiFire settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `chipkit_wifire.json <https://github.com/platformio/platform-microchippic32/blob/master/boards/chipkit_wifire.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

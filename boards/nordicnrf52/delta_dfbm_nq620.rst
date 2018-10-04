@@ -16,17 +16,17 @@ Delta DFBM-NQ620
 
 .. contents::
 
-Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
-
 System
 ------
+
+Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
 .. list-table::
 
   * - **Microcontroller**
     - NRF52832
   * - **Frequency**
-    - 64Mhz
+    - 64MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``delta_dfbm_nq620`` ID for :ref:`projectconf_env_board` option in :r
   board = delta_dfbm_nq620
 
 You can override default Delta DFBM-NQ620 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `delta_dfbm_nq620.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/delta_dfbm_nq620.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

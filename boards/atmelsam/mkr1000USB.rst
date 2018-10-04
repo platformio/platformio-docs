@@ -16,17 +16,17 @@ Arduino MKR1000
 
 .. contents::
 
-Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
-
 System
 ------
+
+Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
 .. list-table::
 
   * - **Microcontroller**
     - SAMD21G18A
   * - **Frequency**
-    - 48Mhz
+    - 48MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``mkr1000USB`` ID for :ref:`projectconf_env_board` option in :ref:`pr
   board = mkr1000USB
 
 You can override default Arduino MKR1000 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `mkr1000USB.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/mkr1000USB.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

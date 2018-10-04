@@ -16,17 +16,17 @@ ST DISCO-L475VG-IOT01A
 
 .. contents::
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
-
 System
 ------
+
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
     - STM32L475VGT6
   * - **Frequency**
-    - 80Mhz
+    - 80MHz
   * - **Flash**
     - 1MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``disco_l475vg_iot01a`` ID for :ref:`projectconf_env_board` option in
   board = disco_l475vg_iot01a
 
 You can override default ST DISCO-L475VG-IOT01A settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `disco_l475vg_iot01a.json <https://github.com/platformio/platform-ststm32/blob/master/boards/disco_l475vg_iot01a.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

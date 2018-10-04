@@ -16,17 +16,17 @@ Atmel SAML21-XPRO-B
 
 .. contents::
 
-Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
-
 System
 ------
+
+Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
 .. list-table::
 
   * - **Microcontroller**
     - SAML21J18B
   * - **Frequency**
-    - 48Mhz
+    - 48MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``saml21_xpro_b`` ID for :ref:`projectconf_env_board` option in :ref:
   board = saml21_xpro_b
 
 You can override default Atmel SAML21-XPRO-B settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `saml21_xpro_b.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/saml21_xpro_b.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

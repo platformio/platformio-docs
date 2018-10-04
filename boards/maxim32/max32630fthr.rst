@@ -16,17 +16,17 @@ Maxim MAX32630FTHR Application Platform
 
 .. contents::
 
-Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
-
 System
 ------
+
+Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
 .. list-table::
 
   * - **Microcontroller**
     - MAX32630
   * - **Frequency**
-    - 96Mhz
+    - 96MHz
   * - **Flash**
     - 2MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``max32630fthr`` ID for :ref:`projectconf_env_board` option in :ref:`
   board = max32630fthr
 
 You can override default Maxim MAX32630FTHR Application Platform settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `max32630fthr.json <https://github.com/platformio/platform-maxim32/blob/master/boards/max32630fthr.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

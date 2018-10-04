@@ -16,17 +16,17 @@ Generic STC15F204EA
 
 .. contents::
 
-Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is an internally Harvard architecture, complex instruction set computer (CISC) instruction set, single chip microcontroller (uC) series developed by Intel in 1980 for use in embedded systems.
-
 System
 ------
+
+Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is an internally Harvard architecture, complex instruction set computer (CISC) instruction set, single chip microcontroller (uC) series developed by Intel in 1980 for use in embedded systems.
 
 .. list-table::
 
   * - **Microcontroller**
     - STC15F204EA
   * - **Frequency**
-    - 11Mhz
+    - 11MHz
   * - **Flash**
     - 4KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``stc15f204ea`` ID for :ref:`projectconf_env_board` option in :ref:`p
   board = stc15f204ea
 
 You can override default Generic STC15F204EA settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `stc15f204ea.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/stc15f204ea.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

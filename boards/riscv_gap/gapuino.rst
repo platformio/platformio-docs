@@ -16,17 +16,17 @@ GAPuino GAP8
 
 .. contents::
 
-Platform :ref:`platform_riscv_gap`: GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
-
 System
 ------
+
+Platform :ref:`platform_riscv_gap`: GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 
 .. list-table::
 
   * - **Microcontroller**
     - GAP8
   * - **Frequency**
-    - 250Mhz
+    - 250MHz
   * - **Flash**
     - 64MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``gapuino`` ID for :ref:`projectconf_env_board` option in :ref:`proje
   board = gapuino
 
 You can override default GAPuino GAP8 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `gapuino.json <https://github.com/pioplus/platform-riscv_gap/blob/master/boards/gapuino.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

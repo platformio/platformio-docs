@@ -16,17 +16,17 @@ EFM32ZG-STK3200 Zero Gecko
 
 .. contents::
 
-Platform :ref:`platform_siliconlabsefm32`: Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
-
 System
 ------
+
+Platform :ref:`platform_siliconlabsefm32`: Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
 
 .. list-table::
 
   * - **Microcontroller**
     - EFM32ZG222F32
   * - **Frequency**
-    - 24Mhz
+    - 24MHz
   * - **Flash**
     - 32KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``efm32zg_stk3200`` ID for :ref:`projectconf_env_board` option in :re
   board = efm32zg_stk3200
 
 You can override default EFM32ZG-STK3200 Zero Gecko settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `efm32zg_stk3200.json <https://github.com/platformio/platform-siliconlabsefm32/blob/master/boards/efm32zg_stk3200.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

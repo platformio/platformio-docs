@@ -16,17 +16,17 @@ VNG VBLUNO51
 
 .. contents::
 
-Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
-
 System
 ------
+
+Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
 .. list-table::
 
   * - **Microcontroller**
     - NRF51822
   * - **Frequency**
-    - 16Mhz
+    - 16MHz
   * - **Flash**
     - 128KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``vbluno51`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   board = vbluno51
 
 You can override default VNG VBLUNO51 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `vbluno51.json <https://github.com/platformio/platform-nordicnrf51/blob/master/boards/vbluno51.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

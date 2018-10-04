@@ -16,17 +16,17 @@ XMC4700 Relax Kit
 
 .. contents::
 
-Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
 System
 ------
+
+Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
 .. list-table::
 
   * - **Microcontroller**
     - XMC4700
   * - **Frequency**
-    - 144Mhz
+    - 144MHz
   * - **Flash**
     - 2.00MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``xmc4700_relax_kit`` ID for :ref:`projectconf_env_board` option in :
   board = xmc4700_relax_kit
 
 You can override default XMC4700 Relax Kit settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `xmc4700_relax_kit.json <https://github.com/Infineon/platformio-infineonxmc/blob/master/boards/xmc4700_relax_kit.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

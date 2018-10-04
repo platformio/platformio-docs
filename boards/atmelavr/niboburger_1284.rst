@@ -16,17 +16,17 @@ nicai-systems NIBO burger robot with Tuning Kit
 
 .. contents::
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
-
 System
 ------
+
+Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
 .. list-table::
 
   * - **Microcontroller**
     - ATMEGA1284P
   * - **Frequency**
-    - 20Mhz
+    - 20MHz
   * - **Flash**
     - 128KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``niboburger_1284`` ID for :ref:`projectconf_env_board` option in :re
   board = niboburger_1284
 
 You can override default nicai-systems NIBO burger robot with Tuning Kit settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `niboburger_1284.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/niboburger_1284.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

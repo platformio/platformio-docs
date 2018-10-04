@@ -16,17 +16,17 @@ y5 LPC11U35 mbug
 
 .. contents::
 
-Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
-
 System
 ------
+
+Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
 .. list-table::
 
   * - **Microcontroller**
     - LPC11U35
   * - **Frequency**
-    - 48Mhz
+    - 48MHz
   * - **Flash**
     - 64KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``lpc11u35_y5_mbug`` ID for :ref:`projectconf_env_board` option in :r
   board = lpc11u35_y5_mbug
 
 You can override default y5 LPC11U35 mbug settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `lpc11u35_y5_mbug.json <https://github.com/platformio/platform-nxplpc/blob/master/boards/lpc11u35_y5_mbug.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

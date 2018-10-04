@@ -16,17 +16,17 @@ Arduino Mega or Mega 2560 ATmega2560 (Mega 2560)
 
 .. contents::
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
-
 System
 ------
+
+Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
 .. list-table::
 
   * - **Microcontroller**
     - ATMEGA2560
   * - **Frequency**
-    - 16Mhz
+    - 16MHz
   * - **Flash**
     - 248KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``megaatmega2560`` ID for :ref:`projectconf_env_board` option in :ref
   board = megaatmega2560
 
 You can override default Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `megaatmega2560.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/megaatmega2560.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

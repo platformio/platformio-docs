@@ -16,17 +16,17 @@ STM32F103TB (20k RAM. 128k Flash)
 
 .. contents::
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
-
 System
 ------
+
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
     - STM32F103TBT6
   * - **Frequency**
-    - 72Mhz
+    - 72MHz
   * - **Flash**
     - 128KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``genericSTM32F103TB`` ID for :ref:`projectconf_env_board` option in 
   board = genericSTM32F103TB
 
 You can override default STM32F103TB (20k RAM. 128k Flash) settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `genericSTM32F103TB.json <https://github.com/platformio/platform-ststm32/blob/master/boards/genericSTM32F103TB.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

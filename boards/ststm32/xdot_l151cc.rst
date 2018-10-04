@@ -16,17 +16,17 @@ MultiTech xDot
 
 .. contents::
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
-
 System
 ------
+
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
     - STM32L151CCU6
   * - **Frequency**
-    - 32Mhz
+    - 32MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``xdot_l151cc`` ID for :ref:`projectconf_env_board` option in :ref:`p
   board = xdot_l151cc
 
 You can override default MultiTech xDot settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `xdot_l151cc.json <https://github.com/platformio/platform-ststm32/blob/master/boards/xdot_l151cc.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

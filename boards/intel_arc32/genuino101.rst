@@ -16,17 +16,17 @@ Arduino/Genuino 101
 
 .. contents::
 
-Platform :ref:`platform_intel_arc32`: ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
-
 System
 ------
+
+Platform :ref:`platform_intel_arc32`: ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
 .. list-table::
 
   * - **Microcontroller**
     - ARCV2EM
   * - **Frequency**
-    - 32Mhz
+    - 32MHz
   * - **Flash**
     - 152KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``genuino101`` ID for :ref:`projectconf_env_board` option in :ref:`pr
   board = genuino101
 
 You can override default Arduino/Genuino 101 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `genuino101.json <https://github.com/platformio/platform-intel_arc32/blob/master/boards/genuino101.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

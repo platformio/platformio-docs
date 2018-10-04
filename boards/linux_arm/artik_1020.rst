@@ -16,17 +16,17 @@ Samsung ARTIK 1020
 
 .. contents::
 
-Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
-
 System
 ------
+
+Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
 .. list-table::
 
   * - **Microcontroller**
     - EXYNOS5422
   * - **Frequency**
-    - 1500Mhz
+    - 1500MHz
   * - **Flash**
     - 16GB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``artik_1020`` ID for :ref:`projectconf_env_board` option in :ref:`pr
   board = artik_1020
 
 You can override default Samsung ARTIK 1020 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `artik_1020.json <https://github.com/platformio/platform-linux_arm/blob/master/boards/artik_1020.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

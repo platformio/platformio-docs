@@ -16,17 +16,17 @@ WeMos D1 mini Pro
 
 .. contents::
 
-Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
-
 System
 ------
+
+Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
 .. list-table::
 
   * - **Microcontroller**
     - ESP8266
   * - **Frequency**
-    - 80Mhz
+    - 80MHz
   * - **Flash**
     - 16MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``d1_mini_pro`` ID for :ref:`projectconf_env_board` option in :ref:`p
   board = d1_mini_pro
 
 You can override default WeMos D1 mini Pro settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `d1_mini_pro.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/d1_mini_pro.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

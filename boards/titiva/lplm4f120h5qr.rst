@@ -16,17 +16,17 @@ TI LaunchPad (Stellaris) w/ lm4f120 (80MHz)
 
 .. contents::
 
-Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
-
 System
 ------
+
+Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
 .. list-table::
 
   * - **Microcontroller**
     - LPLM4F120H5QR
   * - **Frequency**
-    - 80Mhz
+    - 80MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``lplm4f120h5qr`` ID for :ref:`projectconf_env_board` option in :ref:
   board = lplm4f120h5qr
 
 You can override default TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `lplm4f120h5qr.json <https://github.com/platformio/platform-titiva/blob/master/boards/lplm4f120h5qr.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

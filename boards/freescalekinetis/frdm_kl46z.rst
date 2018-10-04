@@ -16,17 +16,17 @@ Freescale Kinetis FRDM-KL46Z
 
 .. contents::
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
-
 System
 ------
+
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
 .. list-table::
 
   * - **Microcontroller**
     - MKL46Z256VLL4
   * - **Frequency**
-    - 48Mhz
+    - 48MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``frdm_kl46z`` ID for :ref:`projectconf_env_board` option in :ref:`pr
   board = frdm_kl46z
 
 You can override default Freescale Kinetis FRDM-KL46Z settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `frdm_kl46z.json <https://github.com/platformio/platform-freescalekinetis/blob/master/boards/frdm_kl46z.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

@@ -16,17 +16,17 @@ Teensy 3.6
 
 .. contents::
 
-Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
-
 System
 ------
+
+Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
 .. list-table::
 
   * - **Microcontroller**
     - MK66FX1M0
   * - **Frequency**
-    - 180Mhz
+    - 180MHz
   * - **Flash**
     - 1MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``teensy36`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   board = teensy36
 
 You can override default Teensy 3.6 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `teensy36.json <https://github.com/platformio/platform-teensy/blob/master/boards/teensy36.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

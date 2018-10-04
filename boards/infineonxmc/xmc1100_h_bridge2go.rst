@@ -16,17 +16,17 @@ XMC1100 H-Bridge 2Go
 
 .. contents::
 
-Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
 System
 ------
+
+Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
 .. list-table::
 
   * - **Microcontroller**
     - XMC1100
   * - **Frequency**
-    - 32Mhz
+    - 32MHz
   * - **Flash**
     - 64KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``xmc1100_h_bridge2go`` ID for :ref:`projectconf_env_board` option in
   board = xmc1100_h_bridge2go
 
 You can override default XMC1100 H-Bridge 2Go settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `xmc1100_h_bridge2go.json <https://github.com/Infineon/platformio-infineonxmc/blob/master/boards/xmc1100_h_bridge2go.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

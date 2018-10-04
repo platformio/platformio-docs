@@ -16,17 +16,17 @@ Microsoft Azure IoT Development Kit (MXChip AZ3166)
 
 .. contents::
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
-
 System
 ------
+
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
     - STM32F412ZGT6
   * - **Frequency**
-    - 100Mhz
+    - 100MHz
   * - **Flash**
     - 1MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``mxchip_az3166`` ID for :ref:`projectconf_env_board` option in :ref:
   board = mxchip_az3166
 
 You can override default Microsoft Azure IoT Development Kit (MXChip AZ3166) settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `mxchip_az3166.json <https://github.com/platformio/platform-ststm32/blob/master/boards/mxchip_az3166.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

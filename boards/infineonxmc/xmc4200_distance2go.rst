@@ -16,17 +16,17 @@ XMC4200 Distance2Go
 
 .. contents::
 
-Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
 System
 ------
+
+Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
 .. list-table::
 
   * - **Microcontroller**
     - XMC4200
   * - **Frequency**
-    - 80Mhz
+    - 80MHz
   * - **Flash**
     - 250KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``xmc4200_distance2go`` ID for :ref:`projectconf_env_board` option in
   board = xmc4200_distance2go
 
 You can override default XMC4200 Distance2Go settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `xmc4200_distance2go.json <https://github.com/Infineon/platformio-infineonxmc/blob/master/boards/xmc4200_distance2go.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

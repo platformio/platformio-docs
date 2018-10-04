@@ -16,17 +16,17 @@ ALKS ESP32
 
 .. contents::
 
-Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
-
 System
 ------
+
+Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
 .. list-table::
 
   * - **Microcontroller**
     - ESP32
   * - **Frequency**
-    - 240Mhz
+    - 240MHz
   * - **Flash**
     - 4MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``alksesp32`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   board = alksesp32
 
 You can override default ALKS ESP32 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `alksesp32.json <https://github.com/platformio/platform-espressif32/blob/master/boards/alksesp32.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

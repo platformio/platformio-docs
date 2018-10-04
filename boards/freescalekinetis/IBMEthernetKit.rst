@@ -16,17 +16,17 @@ Ethernet IoT Starter Kit
 
 .. contents::
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
-
 System
 ------
+
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
 .. list-table::
 
   * - **Microcontroller**
     - MK64FN1M0VLL12
   * - **Frequency**
-    - 120Mhz
+    - 120MHz
   * - **Flash**
     - 1MB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``IBMEthernetKit`` ID for :ref:`projectconf_env_board` option in :ref
   board = IBMEthernetKit
 
 You can override default Ethernet IoT Starter Kit settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `IBMEthernetKit.json <https://github.com/platformio/platform-freescalekinetis/blob/master/boards/IBMEthernetKit.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

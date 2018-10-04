@@ -16,17 +16,17 @@ Samsung ARTIK 710
 
 .. contents::
 
-Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
-
 System
 ------
+
+Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
 .. list-table::
 
   * - **Microcontroller**
     - S5P6818
   * - **Frequency**
-    - 1400Mhz
+    - 1400MHz
   * - **Flash**
     - 4GB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``artik_710`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   board = artik_710
 
 You can override default Samsung ARTIK 710 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `artik_710.json <https://github.com/platformio/platform-linux_arm/blob/master/boards/artik_710.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

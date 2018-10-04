@@ -16,17 +16,17 @@ TI LaunchPad MSP-EXP430G2553LP
 
 .. contents::
 
-Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
-
 System
 ------
+
+Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 
 .. list-table::
 
   * - **Microcontroller**
     - MSP430G2553
   * - **Frequency**
-    - 16Mhz
+    - 16MHz
   * - **Flash**
     - 16KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``lpmsp430g2553`` ID for :ref:`projectconf_env_board` option in :ref:
   board = lpmsp430g2553
 
 You can override default TI LaunchPad MSP-EXP430G2553LP settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `lpmsp430g2553.json <https://github.com/platformio/platform-timsp430/blob/master/boards/lpmsp430g2553.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

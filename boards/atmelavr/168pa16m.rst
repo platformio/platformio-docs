@@ -16,17 +16,17 @@ Microduino Core (Atmega168PA@16M,5V)
 
 .. contents::
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
-
 System
 ------
+
+Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
 .. list-table::
 
   * - **Microcontroller**
     - ATMEGA168P
   * - **Frequency**
-    - 16Mhz
+    - 16MHz
   * - **Flash**
     - 15.50KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``168pa16m`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   board = 168pa16m
 
 You can override default Microduino Core (Atmega168PA@16M,5V) settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `168pa16m.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/168pa16m.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 

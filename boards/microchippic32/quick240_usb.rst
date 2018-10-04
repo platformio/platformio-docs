@@ -16,17 +16,17 @@ Pontech Quick240
 
 .. contents::
 
-Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
-
 System
 ------
+
+Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
 
 .. list-table::
 
   * - **Microcontroller**
     - 32MX795F512L
   * - **Frequency**
-    - 80Mhz
+    - 80MHz
   * - **Flash**
     - 508KB
   * - **RAM**
@@ -47,8 +47,9 @@ Please use ``quick240_usb`` ID for :ref:`projectconf_env_board` option in :ref:`
   board = quick240_usb
 
 You can override default Pontech Quick240 settings per build environment using
-``board_{JSON.PATH}`` option, where ``{JSON.PATH}`` is a path from
+``board_***`` option, where ``***`` is a JSON object path from
 board manifest `quick240_usb.json <https://github.com/platformio/platform-microchippic32/blob/master/boards/quick240_usb.json>`_. For example,
+``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
