@@ -255,7 +255,7 @@ Delta
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
@@ -274,13 +274,13 @@ Electronut Labs
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_bluey`
-      - Yes :sup:`?`
+      - External
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_hackaBLE`
-      - Yes :sup:`?`
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -299,13 +299,13 @@ Nordic
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_nrf52_dk`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
-      - Yes
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
@@ -324,13 +324,13 @@ RedBearLab
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_redbear_blenano2`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_redbear_blend2`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
@@ -349,7 +349,7 @@ Taida Century
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
-      - Yes :sup:`?`
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -368,7 +368,7 @@ u-blox
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB

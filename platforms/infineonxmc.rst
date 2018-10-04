@@ -211,43 +211,43 @@ Infineon
       - Flash
       - RAM
     * - :ref:`board_infineonxmc_xmc1100_boot_kit`
-      - Yes
+      - On-board
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
     * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
-      - Yes
+      - On-board
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
     * - :ref:`board_infineonxmc_xmc1100_xmc2go`
-      - Yes
+      - On-board
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
     * - :ref:`board_infineonxmc_xmc1300_boot_kit`
-      - Yes
+      - On-board
       - XMC1300
       - 32MHz
       - 64KB
       - 64KB
     * - :ref:`board_infineonxmc_xmc1300_sense2gol`
-      - Yes
+      - On-board
       - XMC1300
       - 32MHz
       - 64KB
       - 122.23KB
     * - :ref:`board_infineonxmc_xmc4200_distance2go`
-      - Yes
+      - On-board
       - XMC4200
       - 80MHz
       - 250KB
       - 256KB
     * - :ref:`board_infineonxmc_xmc4700_relax_kit`
-      - Yes
+      - On-board
       - XMC4700
       - 144MHz
       - 2.00MB

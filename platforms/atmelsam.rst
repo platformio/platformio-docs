@@ -406,67 +406,67 @@ Adafruit
       - Flash
       - RAM
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m0_express`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
-      - Yes :sup:`?`
+      - External
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
-      - Yes :sup:`?`
+      - External
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
-      - Yes :sup:`?`
+      - External
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_metro_m4`
-      - Yes :sup:`?`
+      - External
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
-      - Yes :sup:`?`
+      - External
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_pirkey`
-      - Yes :sup:`?`
+      - External
       - SAMD21E18A
       - 48MHz
       - 256KB
@@ -485,79 +485,79 @@ Arduino
       - Flash
       - RAM
     * - :ref:`board_atmelsam_due`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
     * - :ref:`board_atmelsam_dueUSB`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
     * - :ref:`board_atmelsam_mzeroUSB`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mzeroproUSB`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mzeropro`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrfox1200`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrgsm1400`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkr1000USB`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrzero`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_tian`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_zero`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_zeroUSB`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -576,25 +576,25 @@ Atmel
       - Flash
       - RAM
     * - :ref:`board_atmelsam_samr21_xpro`
-      - Yes
+      - On-board
       - SAMR21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_samd21g18a`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_samd21_xpro`
-      - Yes
+      - On-board
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_saml21_xpro_b`
-      - Yes
+      - On-board
       - SAML21J18B
       - 48MHz
       - 256KB
@@ -613,7 +613,7 @@ Digistump
       - Flash
       - RAM
     * - :ref:`board_atmelsam_digix`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -632,7 +632,7 @@ LowPowerLab
       - Flash
       - RAM
     * - :ref:`board_atmelsam_moteino_zero`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -651,7 +651,7 @@ Macchina
       - Flash
       - RAM
     * - :ref:`board_atmelsam_macchina2`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -670,19 +670,19 @@ SODAQ
       - Flash
       - RAM
     * - :ref:`board_atmelsam_sodaq_autonomo`
-      - Yes :sup:`?`
+      - External
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sodaq_explorer`
-      - Yes :sup:`?`
+      - External
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sodaq_one`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -701,13 +701,13 @@ SainSmart
       - Flash
       - RAM
     * - :ref:`board_atmelsam_sainSmartDue`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
     * - :ref:`board_atmelsam_sainSmartDueUSB`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -726,13 +726,13 @@ SparkFun
       - Flash
       - RAM
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB

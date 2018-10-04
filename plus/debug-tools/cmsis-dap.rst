@@ -152,462 +152,462 @@ Boards
       - RAM
     * - :ref:`board_nxplpc_lpc11u24_301`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC11U24
       - 48MHz
       - 32KB
       - 8KB
     * - :ref:`board_atmelsam_mzeropro`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_zero`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_samr21_xpro`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMR21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_samd21g18a`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_samd21_xpro`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_saml21_xpro_b`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_bbcmicrobit`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - :ref:`board_nordicnrf51_bbcmicrobit_b`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - :ref:`board_nxplpc_lpc4330_m4`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC4330
       - 204MHz
       - 8MB
       - 264KB
     * - :ref:`board_nxplpc_elektor_cocorico`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC812
       - 30MHz
       - 16KB
       - 4KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf51_dfcm_nnn40`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_delta_dfcm_nnn50`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 16KB
     * - :ref:`board_nxplpc_lpc4088_dm`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC4088
       - 120MHz
       - 512KB
       - 96KB
     * - :ref:`board_nxplpc_lpc4088`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC4088
       - 120MHz
       - 512KB
       - 96KB
     * - :ref:`board_freescalekinetis_IBMEthernetKit`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MK64FN1M0VLL12
       - 120MHz
       - 1MB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_k20d50m`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MK20DX128VLH5
       - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_k22f`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MK22FN512VLH12
       - 120MHz
       - 512KB
       - 128KB
     * - :ref:`board_freescalekinetis_frdm_k64f`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MK64FN1M0VLL12
       - 120MHz
       - 1MB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_k66f`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MK66FN2M0VMD18
       - 180MHz
       - 2MB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_k82f`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MK82FN256VLL15
       - 150MHz
       - 256KB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_kl05z`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MKL05Z32VFM4
       - 48MHz
       - 32KB
       - 4KB
     * - :ref:`board_freescalekinetis_frdm_kl25z`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MKL25Z128VLK4
       - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl26z`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MKL26Z128VLH4
       - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl27z`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MKL27Z64VLH4
       - 48MHz
       - 64KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl43z`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MKL43Z256VLH4
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_freescalekinetis_frdm_kl46z`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MKL46Z256VLL4
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_freescalekinetis_frdm_kw41z`
       - :ref:`platform_freescalekinetis`
-      - Yes
+      - On-board
       - MKW41Z512VHT4
       - 48MHz
       - 512KB
       - 128KB
     * - :ref:`board_freescalekinetis_hexiwear`
       - :ref:`platform_freescalekinetis`
-      - Yes :sup:`?`
+      - External
       - MK64FN1M0VDC12
       - 120MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf51_wallbot_ble`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 128KB
       - 16KB
     * - :ref:`board_nxplpc_lpc11u68`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC11U68
       - 50MHz
       - 256KB
       - 36KB
     * - :ref:`board_nxplpc_lpc824`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC824
       - 30MHz
       - 32KB
       - 8KB
     * - :ref:`board_maxim32_max32600mbed`
       - :ref:`platform_maxim32`
-      - Yes
+      - On-board
       - MAX32600
       - 24MHz
       - 256KB
       - 32KB
     * - :ref:`board_maxim32_maxwsnenv`
       - :ref:`platform_maxim32`
-      - Yes :sup:`?`
+      - External
       - MAX32610
       - 24MHz
       - 256KB
       - 32KB
     * - :ref:`board_ststm32_mbed_connect_odin`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F439ZIY6
       - 168MHz
       - 2MB
       - 256KB
     * - :ref:`board_atmelsam_moteino_zero`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_nxplpc_lpc812`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC812
       - 30MHz
       - 16KB
       - 4KB
     * - :ref:`board_nxplpc_lpc54114`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC54114J256BD64
       - 100MHz
       - 256KB
       - 192KB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC11U24
       - 48MHz
       - 32KB
       - 8KB
     * - :ref:`board_nxplpc_lpc1768`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC1768
       - 96MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_mkit`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 128KB
       - 16KB
     * - :ref:`board_nordicnrf52_nrf52_dk`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf52_redbear_blenano2`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_redbear_blend2`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf51_redBearLab`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - :ref:`board_nordicnrf51_seeedArchBLE`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 128KB
       - 16KB
     * - :ref:`board_nordicnrf51_seeedArchLink`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - :ref:`board_nxplpc_seeedArchPro`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC1768
       - 96MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf51_seeedTinyBLE`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - :ref:`board_nordicnrf51_hrm1017`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - :ref:`board_nxplpc_lpc1114fn28`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC1114FN28
       - 48MHz
       - 32KB
       - 4KB
     * - :ref:`board_nxplpc_ssci824`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC824
       - 30MHz
       - 32KB
       - 8KB
     * - :ref:`board_nordicnrf51_ty51822r3`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_vbluno51`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 128KB
       - 32KB
     * - :ref:`board_wiznet7500_wizwiki_w7500`
       - :ref:`platform_wiznet7500`
-      - Yes
+      - On-board
       - WIZNET7500
       - 48MHz
       - 128KB
       - 48KB
     * - :ref:`board_wiznet7500_wizwiki_w7500eco`
       - :ref:`platform_wiznet7500`
-      - Yes
+      - On-board
       - WIZNET7500ECO
       - 48MHz
       - 128KB
       - 48KB
     * - :ref:`board_wiznet7500_wizwiki_w7500p`
       - :ref:`platform_wiznet7500`
-      - Yes
+      - On-board
       - WIZNET7500P
       - 48MHz
       - 128KB
       - 48KB
     * - :ref:`board_nxplpc_ubloxc027`
       - :ref:`platform_nxplpc`
-      - Yes
+      - On-board
       - LPC1768
       - 96MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_ublox_c030_n211`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F437VG
       - 180MHz
       - 1MB
       - 256KB
     * - :ref:`board_ststm32_ublox_c030_u201`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F437VG
       - 180MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB

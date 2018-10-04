@@ -111,21 +111,21 @@ Boards
       - RAM
     * - :ref:`board_titiva_lplm4f120h5qr`
       - :ref:`platform_titiva`
-      - Yes
+      - On-board
       - LPLM4F120H5QR
       - 80MHz
       - 256KB
       - 32KB
     * - :ref:`board_titiva_lptm4c1230c3pm`
       - :ref:`platform_titiva`
-      - Yes
+      - On-board
       - LPTM4C1230C3PM
       - 80MHz
       - 256KB
       - 32KB
     * - :ref:`board_titiva_lptm4c1294ncpdt`
       - :ref:`platform_titiva`
-      - Yes
+      - On-board
       - LPTM4C1294NCPDT
       - 120MHz
       - 1MB

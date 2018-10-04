@@ -920,14 +920,14 @@ Adafruit
       - 2.50KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_espressif32_featheresp32`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -948,21 +948,21 @@ Adafruit
       - 2.50KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m0_express`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD51J19A
       - 120MHz
       - 496KB
@@ -983,7 +983,7 @@ Adafruit
       - 512B
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21E18A
       - 48MHz
       - 256KB
@@ -1011,14 +1011,14 @@ Adafruit
       - 2.50KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD51J19A
       - 120MHz
       - 496KB
@@ -1032,14 +1032,14 @@ Adafruit
       - 2KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_metro_m4`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD51J19A
       - 120MHz
       - 496KB
@@ -1088,14 +1088,14 @@ Adafruit
       - 512B
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_pirkey`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21E18A
       - 48MHz
       - 256KB
@@ -1116,7 +1116,7 @@ Aiyarafun
       - RAM
     * - :ref:`board_espressif32_node32s`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -1270,14 +1270,14 @@ Arduino
       - 2KB
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
     * - :ref:`board_atmelsam_dueUSB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -1361,56 +1361,56 @@ Arduino
       - 2.50KB
     * - :ref:`board_atmelsam_mzeroUSB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mzeroproUSB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mzeropro`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrfox1200`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrgsm1400`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkr1000USB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrzero`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -1536,7 +1536,7 @@ Arduino
       - 2.50KB
     * - :ref:`board_atmelsam_tian`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -1564,14 +1564,14 @@ Arduino
       - 2.50KB
     * - :ref:`board_atmelsam_zero`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_zeroUSB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -1599,7 +1599,7 @@ Atmel
       - RAM
     * - :ref:`board_atmelsam_samd21g18a`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -1767,7 +1767,7 @@ BBC
       - RAM
     * - :ref:`board_nordicnrf51_bbcmicrobit`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
@@ -1830,7 +1830,7 @@ BluzDK
       - RAM
     * - :ref:`board_nordicnrf51_bluz_dk`
       - :ref:`platform_nordicnrf51`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -1893,7 +1893,7 @@ DFRobot
       - RAM
     * - :ref:`board_espressif32_firebeetle32`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -1914,7 +1914,7 @@ DOIT
       - RAM
     * - :ref:`board_espressif32_esp32doit-devkit-v1`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -1935,7 +1935,7 @@ Delta
       - RAM
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
@@ -2110,7 +2110,7 @@ Digistump
       - 512B
     * - :ref:`board_atmelsam_digix`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -2152,7 +2152,7 @@ Dongsen Technology
       - RAM
     * - :ref:`board_espressif32_pocket_32`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -2201,7 +2201,7 @@ DycodeX
       - 80KB
     * - :ref:`board_espressif32_espectro32`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -2222,7 +2222,7 @@ ESP32vn
       - RAM
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -2313,14 +2313,14 @@ Electronut Labs
       - RAM
     * - :ref:`board_nordicnrf52_bluey`
       - :ref:`platform_nordicnrf52`
-      - Yes :sup:`?`
+      - External
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_hackaBLE`
       - :ref:`platform_nordicnrf52`
-      - Yes :sup:`?`
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -2418,14 +2418,14 @@ Espressif
       - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
-      - Yes
+      - On-board
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp32dev`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -2530,119 +2530,119 @@ Generic
       - RAM
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103C8T6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103C8T6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103CB`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103R8`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103R8T6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103RB`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103RC`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_genericSTM32F103RE`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103T8`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103T8T6
       - 72MHz
       - 20KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103TBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103VB`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103VBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103VC`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103VCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_genericSTM32F103VD`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103VDT6
       - 72MHz
       - 384KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103VE`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103VET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103ZC`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103ZCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_genericSTM32F103ZD`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103ZDT6
       - 72MHz
       - 384KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103ZE`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F407VET6
       - 168MHz
       - 502.23KB
@@ -2733,14 +2733,14 @@ Hornbill
       - RAM
     * - :ref:`board_espressif32_hornbill32dev`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_hornbill32minima`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -2761,49 +2761,49 @@ Infineon
       - RAM
     * - :ref:`board_infineonxmc_xmc1100_boot_kit`
       - :ref:`platform_infineonxmc`
-      - Yes
+      - On-board
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
     * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
       - :ref:`platform_infineonxmc`
-      - Yes
+      - On-board
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
     * - :ref:`board_infineonxmc_xmc1100_xmc2go`
       - :ref:`platform_infineonxmc`
-      - Yes
+      - On-board
       - XMC1100
       - 32MHz
       - 64KB
       - 64KB
     * - :ref:`board_infineonxmc_xmc1300_boot_kit`
       - :ref:`platform_infineonxmc`
-      - Yes
+      - On-board
       - XMC1300
       - 32MHz
       - 64KB
       - 64KB
     * - :ref:`board_infineonxmc_xmc1300_sense2gol`
       - :ref:`platform_infineonxmc`
-      - Yes
+      - On-board
       - XMC1300
       - 32MHz
       - 64KB
       - 122.23KB
     * - :ref:`board_infineonxmc_xmc4200_distance2go`
       - :ref:`platform_infineonxmc`
-      - Yes
+      - On-board
       - XMC4200
       - 80MHz
       - 250KB
       - 256KB
     * - :ref:`board_infineonxmc_xmc4700_relax_kit`
       - :ref:`platform_infineonxmc`
-      - Yes
+      - On-board
       - XMC4700
       - 144MHz
       - 2.00MB
@@ -2866,28 +2866,28 @@ LeafLabs
       - RAM
     * - :ref:`board_ststm32_maple`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RBT6
       - 72MHz
       - 108KB
       - 17KB
     * - :ref:`board_ststm32_maple_ret6`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RET6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_maple_mini_b20`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 120KB
       - 20KB
     * - :ref:`board_ststm32_maple_mini_origin`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 108KB
@@ -2971,7 +2971,7 @@ LowPowerLab
       - 16KB
     * - :ref:`board_atmelsam_moteino_zero`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -3020,14 +3020,14 @@ MH-ET Live
       - RAM
     * - :ref:`board_espressif32_mhetesp32devkit`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_mhetesp32minikit`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -3048,7 +3048,7 @@ MXChip
       - RAM
     * - :ref:`board_ststm32_mxchip_az3166`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F412ZGT6
       - 100MHz
       - 1MB
@@ -3069,7 +3069,7 @@ Macchina
       - RAM
     * - :ref:`board_atmelsam_macchina2`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -3230,7 +3230,7 @@ Microduino
       - 320KB
     * - :ref:`board_ststm32_microduino32_flash`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 105.47KB
@@ -3328,7 +3328,7 @@ NodeMCU
       - 80KB
     * - :ref:`board_espressif32_nodemcu-32s`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -3370,28 +3370,28 @@ Nordic
       - RAM
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf52_nrf52_dk`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
@@ -3412,14 +3412,14 @@ OLIMEX
       - RAM
     * - :ref:`board_espressif32_esp32-evb`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp32-gateway`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -3440,7 +3440,7 @@ OSHChip
       - RAM
     * - :ref:`board_nordicnrf51_oshchip`
       - :ref:`platform_nordicnrf51`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -3720,7 +3720,7 @@ RFduino
       - RAM
     * - :ref:`board_nordicnrf51_rfduino`
       - :ref:`platform_nordicnrf51`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 16MHz
       - 128KB
@@ -3741,14 +3741,14 @@ RedBearLab
       - RAM
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf52_redbear_blenano2`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
@@ -3762,7 +3762,7 @@ RedBearLab
       - 2.50KB
     * - :ref:`board_nordicnrf52_redbear_blend2`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
@@ -3783,7 +3783,7 @@ RedBearLab
       - 2.50KB
     * - :ref:`board_nordicnrf51_redBearLab`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
@@ -3825,7 +3825,7 @@ RoboticsBrno
       - RAM
     * - :ref:`board_espressif32_alksesp32`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -3846,14 +3846,14 @@ SODAQ
       - RAM
     * - :ref:`board_atmelsam_sodaq_autonomo`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sodaq_explorer`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21J18A
       - 48MHz
       - 256KB
@@ -3888,7 +3888,7 @@ SODAQ
       - 16KB
     * - :ref:`board_atmelsam_sodaq_one`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -3916,14 +3916,14 @@ ST
       - RAM
     * - :ref:`board_ststm32_nucleo_f103rb`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F103RBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F407VGT6
       - 168MHz
       - 1MB
@@ -3944,14 +3944,14 @@ SainSmart
       - RAM
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
     * - :ref:`board_atmelsam_sainSmartDueUSB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
@@ -4028,7 +4028,7 @@ SeeedStudio
       - RAM
     * - :ref:`board_nordicnrf51_seeedTinyBLE`
       - :ref:`platform_nordicnrf51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
@@ -4182,14 +4182,14 @@ SparkFun
       - 2KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -4217,7 +4217,7 @@ SparkFun Electronics
       - RAM
     * - :ref:`board_espressif32_esp32thing`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -4280,7 +4280,7 @@ TTGO
       - RAM
     * - :ref:`board_espressif32_ttgo-lora32-v1`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -4301,7 +4301,7 @@ Taida Century
       - RAM
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
       - :ref:`platform_nordicnrf52`
-      - Yes :sup:`?`
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -4336,28 +4336,28 @@ Teensy
       - 16KB
     * - :ref:`board_teensy_teensy31`
       - :ref:`platform_teensy`
-      - Yes :sup:`?`
+      - External
       - MK20DX256
       - 72MHz
       - 256KB
       - 64KB
     * - :ref:`board_teensy_teensy35`
       - :ref:`platform_teensy`
-      - Yes :sup:`?`
+      - External
       - MK64FX512
       - 120MHz
       - 512KB
       - 255.99KB
     * - :ref:`board_teensy_teensy36`
       - :ref:`platform_teensy`
-      - Yes :sup:`?`
+      - External
       - MK66FX1M0
       - 180MHz
       - 1MB
       - 256KB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
-      - Yes :sup:`?`
+      - External
       - MKL26Z64
       - 48MHz
       - 62KB
@@ -4385,7 +4385,7 @@ ThaiEasyElec
       - RAM
     * - :ref:`board_espressif32_espino32`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -4497,21 +4497,21 @@ WEMOS
       - 80KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin_d32_pro`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin32`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -4539,7 +4539,7 @@ WEMOS
       - 80KB
     * - :ref:`board_espressif32_wemosbat`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -4560,7 +4560,7 @@ Waveshare
       - RAM
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -4658,7 +4658,7 @@ XinaBox
       - 80KB
     * - :ref:`board_espressif32_xinabox_cw02`
       - :ref:`platform_espressif32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -4742,7 +4742,7 @@ ng-beacon
       - RAM
     * - :ref:`board_nordicnrf51_ng_beacon`
       - :ref:`platform_nordicnrf51`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -4819,7 +4819,7 @@ sino:bit
       - RAM
     * - :ref:`board_nordicnrf51_Sinobit`
       - :ref:`platform_nordicnrf51`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -4840,7 +4840,7 @@ u-blox
       - RAM
     * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
       - :ref:`platform_nordicnrf52`
-      - Yes
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB

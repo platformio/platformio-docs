@@ -177,7 +177,7 @@ Samsung
       - Flash
       - RAM
     * - :ref:`board_samsung_artik_artik_053`
-      - Yes
+      - On-board
       - S5JT200
       - 320MHz
       - 8MB

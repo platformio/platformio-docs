@@ -117,224 +117,224 @@ Boards
       - RAM
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m0_express`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_metro_m4`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD51J19A
       - 120MHz
       - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_pirkey`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21E18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mzeroUSB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mzeroproUSB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mzeropro`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrfox1200`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrgsm1400`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkr1000USB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrzero`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_tian`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_zero`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_zeroUSB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_samr21_xpro`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMR21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_samd21g18a`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_samd21_xpro`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_saml21_xpro_b`
       - :ref:`platform_atmelsam`
-      - Yes
+      - On-board
       - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_moteino_zero`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sodaq_autonomo`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sodaq_explorer`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21J18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sodaq_one`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB

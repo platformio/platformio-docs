@@ -196,19 +196,19 @@ TI
       - Flash
       - RAM
     * - :ref:`board_titiva_lplm4f120h5qr`
-      - Yes
+      - On-board
       - LPLM4F120H5QR
       - 80MHz
       - 256KB
       - 32KB
     * - :ref:`board_titiva_lptm4c1230c3pm`
-      - Yes
+      - On-board
       - LPTM4C1230C3PM
       - 80MHz
       - 256KB
       - 32KB
     * - :ref:`board_titiva_lptm4c1294ncpdt`
-      - Yes
+      - On-board
       - LPTM4C1294NCPDT
       - 120MHz
       - 1MB

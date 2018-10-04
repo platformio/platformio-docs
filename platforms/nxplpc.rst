@@ -348,7 +348,7 @@ CQ Publishing
       - Flash
       - RAM
     * - :ref:`board_nxplpc_lpc11u35_501`
-      - Yes :sup:`?`
+      - External
       - LPC11U35
       - 48MHz
       - 64KB
@@ -367,7 +367,7 @@ Elektor Labs
       - Flash
       - RAM
     * - :ref:`board_nxplpc_elektor_cocorico`
-      - Yes
+      - On-board
       - LPC812
       - 30MHz
       - 16KB
@@ -386,19 +386,19 @@ Embedded Artists
       - Flash
       - RAM
     * - :ref:`board_nxplpc_lpc11u35`
-      - Yes :sup:`?`
+      - External
       - LPC11U35
       - 48MHz
       - 64KB
       - 10KB
     * - :ref:`board_nxplpc_lpc4088_dm`
-      - Yes
+      - On-board
       - LPC4088
       - 120MHz
       - 512KB
       - 96KB
     * - :ref:`board_nxplpc_lpc4088`
-      - Yes
+      - On-board
       - LPC4088
       - 120MHz
       - 512KB
@@ -436,7 +436,7 @@ Micromint
       - Flash
       - RAM
     * - :ref:`board_nxplpc_lpc4330_m4`
-      - Yes
+      - On-board
       - LPC4330
       - 204MHz
       - 8MB
@@ -455,7 +455,7 @@ NGX Technologies
       - Flash
       - RAM
     * - :ref:`board_nxplpc_blueboard_lpc11u24`
-      - Yes :sup:`?`
+      - External
       - LPC11U24
       - 48MHz
       - 32KB
@@ -474,73 +474,73 @@ NXP
       - Flash
       - RAM
     * - :ref:`board_nxplpc_lpc11u24_301`
-      - Yes
+      - On-board
       - LPC11U24
       - 48MHz
       - 32KB
       - 8KB
     * - :ref:`board_nxplpc_lpc11u68`
-      - Yes
+      - On-board
       - LPC11U68
       - 50MHz
       - 256KB
       - 36KB
     * - :ref:`board_nxplpc_lpc824`
-      - Yes
+      - On-board
       - LPC824
       - 30MHz
       - 32KB
       - 8KB
     * - :ref:`board_nxplpc_lpc11c24`
-      - Yes :sup:`?`
+      - External
       - LPC11C24
       - 48MHz
       - 32KB
       - 8KB
     * - :ref:`board_nxplpc_lpc11u34_421`
-      - Yes :sup:`?`
+      - External
       - LPC11U34
       - 48MHz
       - 40KB
       - 8KB
     * - :ref:`board_nxplpc_lpc11u37_501`
-      - Yes :sup:`?`
+      - External
       - LPC11U37
       - 48MHz
       - 128KB
       - 10KB
     * - :ref:`board_nxplpc_lpc812`
-      - Yes
+      - On-board
       - LPC812
       - 30MHz
       - 16KB
       - 4KB
     * - :ref:`board_nxplpc_lpc1549`
-      - Yes :sup:`?`
+      - External
       - LPC1549
       - 72MHz
       - 256KB
       - 36KB
     * - :ref:`board_nxplpc_lpc54114`
-      - Yes
+      - On-board
       - LPC54114J256BD64
       - 100MHz
       - 256KB
       - 192KB
     * - :ref:`board_nxplpc_lpc546xx`
-      - Yes
+      - On-board
       - LPC54608ET512
       - 180MHz
       - 512KB
       - 200KB
     * - :ref:`board_nxplpc_lpc11u24`
-      - Yes
+      - On-board
       - LPC11U24
       - 48MHz
       - 32KB
       - 8KB
     * - :ref:`board_nxplpc_lpc1768`
-      - Yes
+      - On-board
       - LPC1768
       - 96MHz
       - 512KB
@@ -584,7 +584,7 @@ SeeedStudio
       - 128KB
       - 10KB
     * - :ref:`board_nxplpc_seeedArchPro`
-      - Yes
+      - On-board
       - LPC1768
       - 96MHz
       - 512KB
@@ -628,13 +628,13 @@ Solder Splash Labs
       - Flash
       - RAM
     * - :ref:`board_nxplpc_lpc1347`
-      - Yes :sup:`?`
+      - External
       - LPC1347
       - 72MHz
       - 64KB
       - 12KB
     * - :ref:`board_nxplpc_dipcortexm0`
-      - Yes :sup:`?`
+      - External
       - LPC11U24
       - 50MHz
       - 32KB
@@ -653,13 +653,13 @@ Switch Science
       - Flash
       - RAM
     * - :ref:`board_nxplpc_lpc1114fn28`
-      - Yes
+      - On-board
       - LPC1114FN28
       - 48MHz
       - 32KB
       - 4KB
     * - :ref:`board_nxplpc_ssci824`
-      - Yes
+      - On-board
       - LPC824
       - 30MHz
       - 32KB
@@ -678,7 +678,7 @@ u-blox
       - Flash
       - RAM
     * - :ref:`board_nxplpc_ubloxc027`
-      - Yes
+      - On-board
       - LPC1768
       - 96MHz
       - 512KB
@@ -697,7 +697,7 @@ y5 design
       - Flash
       - RAM
     * - :ref:`board_nxplpc_lpc11u35_y5_mbug`
-      - Yes :sup:`?`
+      - External
       - LPC11U35
       - 48MHz
       - 64KB

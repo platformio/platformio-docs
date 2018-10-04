@@ -353,7 +353,7 @@ Adafruit
       - Flash
       - RAM
     * - :ref:`board_espressif32_featheresp32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -372,7 +372,7 @@ Aiyarafun
       - Flash
       - RAM
     * - :ref:`board_espressif32_node32s`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -410,7 +410,7 @@ DFRobot
       - Flash
       - RAM
     * - :ref:`board_espressif32_firebeetle32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -429,7 +429,7 @@ DOIT
       - Flash
       - RAM
     * - :ref:`board_espressif32_esp32doit-devkit-v1`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -448,7 +448,7 @@ Dongsen Technology
       - Flash
       - RAM
     * - :ref:`board_espressif32_pocket_32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -467,7 +467,7 @@ DycodeX
       - Flash
       - RAM
     * - :ref:`board_espressif32_espectro32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -486,7 +486,7 @@ ESP32vn
       - Flash
       - RAM
     * - :ref:`board_espressif32_esp32vn-iot-uno`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -530,13 +530,13 @@ Espressif
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
-      - Yes
+      - On-board
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp32dev`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -599,13 +599,13 @@ Hornbill
       - Flash
       - RAM
     * - :ref:`board_espressif32_hornbill32dev`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_hornbill32minima`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -668,13 +668,13 @@ MH-ET Live
       - Flash
       - RAM
     * - :ref:`board_espressif32_mhetesp32devkit`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_mhetesp32minikit`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -731,7 +731,7 @@ NodeMCU
       - Flash
       - RAM
     * - :ref:`board_espressif32_nodemcu-32s`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -769,13 +769,13 @@ OLIMEX
       - Flash
       - RAM
     * - :ref:`board_espressif32_esp32-evb`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp32-gateway`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -813,7 +813,7 @@ RoboticsBrno
       - Flash
       - RAM
     * - :ref:`board_espressif32_alksesp32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -832,7 +832,7 @@ SparkFun Electronics
       - Flash
       - RAM
     * - :ref:`board_espressif32_esp32thing`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -851,7 +851,7 @@ TTGO
       - Flash
       - RAM
     * - :ref:`board_espressif32_ttgo-lora32-v1`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -870,7 +870,7 @@ ThaiEasyElec
       - Flash
       - RAM
     * - :ref:`board_espressif32_espino32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -889,25 +889,25 @@ WEMOS
       - Flash
       - RAM
     * - :ref:`board_espressif32_lolin_d32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin_d32_pro`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin32`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_wemosbat`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -945,7 +945,7 @@ XinaBox
       - Flash
       - RAM
     * - :ref:`board_espressif32_xinabox_cw02`
-      - Yes :sup:`?`
+      - External
       - ESP32
       - 240MHz
       - 4MB

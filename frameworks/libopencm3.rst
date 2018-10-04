@@ -302,7 +302,7 @@ Boards
       - RAM
     * - :ref:`board_ststm32_1bitsy_stm32f415rgt`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F415RGT
       - 168MHz
       - 1MB
@@ -323,112 +323,112 @@ Generic
       - RAM
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103C8T6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103C8T6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103CB`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103R8`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103R8T6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103RB`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103RC`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_genericSTM32F103RE`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103T8`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103T8T6
       - 72MHz
       - 20KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103TBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103VB`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103VBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103VC`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103VCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_genericSTM32F103VD`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103VDT6
       - 72MHz
       - 384KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103VE`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103VET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103ZC`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103ZCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_genericSTM32F103ZD`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103ZDT6
       - 72MHz
       - 384KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103ZE`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103ZET6
       - 72MHz
       - 512KB
@@ -449,28 +449,28 @@ LeafLabs
       - RAM
     * - :ref:`board_ststm32_maple`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RBT6
       - 72MHz
       - 108KB
       - 17KB
     * - :ref:`board_ststm32_maple_ret6`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103RET6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_maple_mini_b20`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 120KB
       - 20KB
     * - :ref:`board_ststm32_maple_mini_origin`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 108KB
@@ -491,7 +491,7 @@ Microduino
       - RAM
     * - :ref:`board_ststm32_microduino32_flash`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 105.47KB
@@ -512,28 +512,28 @@ ST
       - RAM
     * - :ref:`board_ststm32_nucleo_f103rb`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F103RBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_disco_f303vc`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F303VCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F407VGT6
       - 168MHz
       - 1MB
       - 128KB
     * - :ref:`board_ststm32_disco_l152rb`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32L152RBT6
       - 32MHz
       - 128KB
@@ -554,21 +554,21 @@ TI
       - RAM
     * - :ref:`board_titiva_lplm4f120h5qr`
       - :ref:`platform_titiva`
-      - Yes
+      - On-board
       - LPLM4F120H5QR
       - 80MHz
       - 256KB
       - 32KB
     * - :ref:`board_titiva_lptm4c1230c3pm`
       - :ref:`platform_titiva`
-      - Yes
+      - On-board
       - LPTM4C1230C3PM
       - 80MHz
       - 256KB
       - 32KB
     * - :ref:`board_titiva_lptm4c1294ncpdt`
       - :ref:`platform_titiva`
-      - Yes
+      - On-board
       - LPTM4C1294NCPDT
       - 120MHz
       - 1MB

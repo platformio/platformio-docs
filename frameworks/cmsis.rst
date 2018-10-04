@@ -184,7 +184,7 @@ Boards
       - RAM
     * - :ref:`board_ststm32_1bitsy_stm32f415rgt`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F415RGT
       - 168MHz
       - 1MB
@@ -205,21 +205,21 @@ Armstrap
       - RAM
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
     * - :ref:`board_ststm32_armstrap_eagle2048`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_armstrap_eagle512`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F407VET6
       - 168MHz
       - 512KB
@@ -240,7 +240,7 @@ Generic
       - RAM
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
-      - Yes :sup:`?`
+      - External
       - STM32F103C8T6
       - 72MHz
       - 64KB
@@ -261,7 +261,7 @@ RushUp
       - RAM
     * - :ref:`board_ststm32_cloud_jam`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F401RET6
       - 84MHz
       - 512KB
@@ -282,28 +282,28 @@ ST
       - RAM
     * - :ref:`board_ststm32_nucleo_f401re`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F401RET6
       - 84MHz
       - 512KB
       - 96KB
     * - :ref:`board_ststm32_disco_f303vc`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F303VCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32F407VGT6
       - 168MHz
       - 1MB
       - 128KB
     * - :ref:`board_ststm32_disco_l152rb`
       - :ref:`platform_ststm32`
-      - Yes
+      - On-board
       - STM32L152RBT6
       - 32MHz
       - 128KB

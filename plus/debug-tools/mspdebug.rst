@@ -115,42 +115,42 @@ Boards
       - RAM
     * - :ref:`board_timsp430_lpmsp430fr5739`
       - :ref:`platform_timsp430`
-      - Yes
+      - On-board
       - MSP430FR5739
       - 16MHz
       - 16KB
       - 512B
     * - :ref:`board_timsp430_lpmsp430f5529`
       - :ref:`platform_timsp430`
-      - Yes
+      - On-board
       - MSP430F5529
       - 16MHz
       - 128KB
       - 8KB
     * - :ref:`board_timsp430_lpmsp430fr4133`
       - :ref:`platform_timsp430`
-      - Yes
+      - On-board
       - MSP430FR4133
       - 8MHz
       - 15KB
       - 2KB
     * - :ref:`board_timsp430_lpmsp430fr5969`
       - :ref:`platform_timsp430`
-      - Yes
+      - On-board
       - MSP430FR5969
       - 8MHz
       - 64KB
       - 2KB
     * - :ref:`board_timsp430_lpmsp430fr6989`
       - :ref:`platform_timsp430`
-      - Yes
+      - On-board
       - MSP430FR6989
       - 8MHz
       - 127KB
       - 2KB
     * - :ref:`board_timsp430_lpmsp430g2553`
       - :ref:`platform_timsp430`
-      - Yes
+      - On-board
       - MSP430G2553
       - 16MHz
       - 16KB

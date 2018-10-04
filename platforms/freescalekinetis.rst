@@ -275,91 +275,91 @@ Freescale
       - Flash
       - RAM
     * - :ref:`board_freescalekinetis_IBMEthernetKit`
-      - Yes
+      - On-board
       - MK64FN1M0VLL12
       - 120MHz
       - 1MB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_k20d50m`
-      - Yes
+      - On-board
       - MK20DX128VLH5
       - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_k22f`
-      - Yes
+      - On-board
       - MK22FN512VLH12
       - 120MHz
       - 512KB
       - 128KB
     * - :ref:`board_freescalekinetis_frdm_k64f`
-      - Yes
+      - On-board
       - MK64FN1M0VLL12
       - 120MHz
       - 1MB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_k66f`
-      - Yes
+      - On-board
       - MK66FN2M0VMD18
       - 180MHz
       - 2MB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_k82f`
-      - Yes
+      - On-board
       - MK82FN256VLL15
       - 150MHz
       - 256KB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_kl05z`
-      - Yes
+      - On-board
       - MKL05Z32VFM4
       - 48MHz
       - 32KB
       - 4KB
     * - :ref:`board_freescalekinetis_frdm_kl25z`
-      - Yes
+      - On-board
       - MKL25Z128VLK4
       - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl26z`
-      - Yes
+      - On-board
       - MKL26Z128VLH4
       - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl27z`
-      - Yes
+      - On-board
       - MKL27Z64VLH4
       - 48MHz
       - 64KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl43z`
-      - Yes
+      - On-board
       - MKL43Z256VLH4
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_freescalekinetis_frdm_kl46z`
-      - Yes
+      - On-board
       - MKL46Z256VLL4
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_freescalekinetis_frdm_kl82z`
-      - Yes :sup:`?`
+      - External
       - MKL82Z128VLK7
       - 96MHz
       - 128KB
       - 96KB
     * - :ref:`board_freescalekinetis_frdm_kw24d`
-      - Yes :sup:`?`
+      - External
       - MKW24D512
       - 50MHz
       - 512KB
       - 64KB
     * - :ref:`board_freescalekinetis_frdm_kw41z`
-      - Yes
+      - On-board
       - MKW41Z512VHT4
       - 48MHz
       - 512KB
@@ -378,7 +378,7 @@ MikroElektronika
       - Flash
       - RAM
     * - :ref:`board_freescalekinetis_hexiwear`
-      - Yes :sup:`?`
+      - External
       - MK64FN1M0VDC12
       - 120MHz
       - 1MB

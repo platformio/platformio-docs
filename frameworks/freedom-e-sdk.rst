@@ -142,7 +142,7 @@ SiFive
       - RAM
     * - :ref:`board_riscv_freedom-e300-hifive1`
       - :ref:`platform_riscv`
-      - Yes
+      - On-board
       - FE310
       - 320MHz
       - 16MB
@@ -163,14 +163,14 @@ Xilinx
       - RAM
     * - :ref:`board_riscv_coreplexip-e51-arty`
       - :ref:`platform_riscv`
-      - Yes :sup:`?`
+      - External
       - E51
       - 1500MHz
       - 16MB
       - 256MB
     * - :ref:`board_riscv_coreplexip-e31-arty`
       - :ref:`platform_riscv`
-      - Yes :sup:`?`
+      - External
       - E31
       - 320MHz
       - 16MB

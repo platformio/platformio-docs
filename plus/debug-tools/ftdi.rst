@@ -142,28 +142,28 @@ Boards
       - RAM
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
-      - Yes
+      - On-board
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_riscv_gap_gapuino`
       - :ref:`platform_riscv_gap`
-      - Yes
+      - On-board
       - GAP8
       - 250MHz
       - 64MB
       - 8MB
     * - :ref:`board_riscv_freedom-e300-hifive1`
       - :ref:`platform_riscv`
-      - Yes
+      - On-board
       - FE310
       - 320MHz
       - 16MB
       - 16KB
     * - :ref:`board_samsung_artik_artik_053`
       - :ref:`platform_samsung_artik`
-      - Yes
+      - On-board
       - S5JT200
       - 320MHz
       - 8MB

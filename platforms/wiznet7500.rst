@@ -191,19 +191,19 @@ WIZNet
       - Flash
       - RAM
     * - :ref:`board_wiznet7500_wizwiki_w7500`
-      - Yes
+      - On-board
       - WIZNET7500
       - 48MHz
       - 128KB
       - 48KB
     * - :ref:`board_wiznet7500_wizwiki_w7500eco`
-      - Yes
+      - On-board
       - WIZNET7500ECO
       - 48MHz
       - 128KB
       - 48KB
     * - :ref:`board_wiznet7500_wizwiki_w7500p`
-      - Yes
+      - On-board
       - WIZNET7500P
       - 48MHz
       - 128KB

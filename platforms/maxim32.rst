@@ -225,7 +225,7 @@ Maxim
       - 512KB
       - 160KB
     * - :ref:`board_maxim32_max32600mbed`
-      - Yes
+      - On-board
       - MAX32600
       - 24MHz
       - 256KB
@@ -243,7 +243,7 @@ Maxim
       - 2MB
       - 512KB
     * - :ref:`board_maxim32_maxwsnenv`
-      - Yes :sup:`?`
+      - External
       - MAX32610
       - 24MHz
       - 256KB

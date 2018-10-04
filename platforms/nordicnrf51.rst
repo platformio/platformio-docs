@@ -324,13 +324,13 @@ BBC
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_bbcmicrobit`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - :ref:`board_nordicnrf51_bbcmicrobit_b`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
@@ -349,7 +349,7 @@ BluzDK
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_bluz_dk`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -368,13 +368,13 @@ Delta
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_dfcm_nnn40`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_delta_dfcm_nnn50`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
@@ -393,7 +393,7 @@ JKSoft
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_wallbot_ble`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 128KB
@@ -412,19 +412,19 @@ Nordic
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_nrf51_dk`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_mkit`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 128KB
@@ -443,7 +443,7 @@ OSHChip
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_oshchip`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -462,7 +462,7 @@ RFduino
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_rfduino`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 16MHz
       - 128KB
@@ -481,13 +481,13 @@ RedBearLab
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_redBearLab`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
@@ -506,19 +506,19 @@ SeeedStudio
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 128KB
       - 16KB
     * - :ref:`board_nordicnrf51_seeedArchLink`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - :ref:`board_nordicnrf51_seeedTinyBLE`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
@@ -537,13 +537,13 @@ Switch Science
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_hrm1017`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
     * - :ref:`board_nordicnrf51_ty51822r3`
-      - Yes
+      - On-board
       - NRF51822
       - 32MHz
       - 256KB
@@ -562,7 +562,7 @@ VNG
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_vbluno51`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 128KB
@@ -581,7 +581,7 @@ Waveshare
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_waveshare_ble400`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -600,7 +600,7 @@ ng-beacon
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_ng_beacon`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -619,7 +619,7 @@ sino:bit
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_Sinobit`
-      - Yes :sup:`?`
+      - External
       - NRF51822
       - 32MHz
       - 256KB
@@ -638,7 +638,7 @@ y5 design
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - Yes
+      - On-board
       - NRF51822
       - 16MHz
       - 256KB

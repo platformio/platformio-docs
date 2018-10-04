@@ -151,14 +151,14 @@ Arduino
       - RAM
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB
       - 96KB
     * - :ref:`board_atmelsam_dueUSB`
       - :ref:`platform_atmelsam`
-      - Yes :sup:`?`
+      - External
       - AT91SAM3X8E
       - 84MHz
       - 512KB

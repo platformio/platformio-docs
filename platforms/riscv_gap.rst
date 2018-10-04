@@ -191,7 +191,7 @@ GreenWaves Technologies
       - Flash
       - RAM
     * - :ref:`board_riscv_gap_gapuino`
-      - Yes
+      - On-board
       - GAP8
       - 250MHz
       - 64MB

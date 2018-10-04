@@ -207,43 +207,43 @@ Silicon Labs
       - Flash
       - RAM
     * - :ref:`board_siliconlabsefm32_efm32gg_stk3700`
-      - Yes
+      - On-board
       - EFM32GG990F1024
       - 48MHz
       - 1MB
       - 128KB
     * - :ref:`board_siliconlabsefm32_efm32lg_stk3600`
-      - Yes
+      - On-board
       - EFM32LG990F256
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_siliconlabsefm32_efm32wg_stk3800`
-      - Yes
+      - On-board
       - EFM32WG990F256
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_siliconlabsefm32_efm32zg_stk3200`
-      - Yes
+      - On-board
       - EFM32ZG222F32
       - 24MHz
       - 32KB
       - 4KB
     * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
-      - Yes
+      - On-board
       - EFM32HG322F64
       - 25MHz
       - 64KB
       - 8KB
     * - :ref:`board_siliconlabsefm32_efm32pg_stk3401`
-      - Yes
+      - On-board
       - EFM32PG1B200F256GM48
       - 40MHz
       - 256KB
       - 32KB
     * - :ref:`board_siliconlabsefm32_tb_sense_12`
-      - Yes
+      - On-board
       - EFR32MG12P432F1024
       - 40MHz
       - 1MB

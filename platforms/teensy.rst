@@ -226,25 +226,25 @@ Teensy
       - 128KB
       - 16KB
     * - :ref:`board_teensy_teensy31`
-      - Yes :sup:`?`
+      - External
       - MK20DX256
       - 72MHz
       - 256KB
       - 64KB
     * - :ref:`board_teensy_teensy35`
-      - Yes :sup:`?`
+      - External
       - MK64FX512
       - 120MHz
       - 512KB
       - 255.99KB
     * - :ref:`board_teensy_teensy36`
-      - Yes :sup:`?`
+      - External
       - MK66FX1M0
       - 180MHz
       - 1MB
       - 256KB
     * - :ref:`board_teensy_teensylc`
-      - Yes :sup:`?`
+      - External
       - MKL26Z64
       - 48MHz
       - 62KB

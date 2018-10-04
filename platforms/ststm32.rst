@@ -758,7 +758,7 @@ Boards
       - Flash
       - RAM
     * - :ref:`board_ststm32_1bitsy_stm32f415rgt`
-      - Yes :sup:`?`
+      - External
       - STM32F415RGT
       - 168MHz
       - 1MB
@@ -777,7 +777,7 @@ Boards
       - Flash
       - RAM
     * - :ref:`board_ststm32_b96b_f446ve`
-      - Yes
+      - On-board
       - STM32F446VET6
       - 168MHz
       - 512KB
@@ -796,19 +796,19 @@ Armstrap
       - Flash
       - RAM
     * - :ref:`board_ststm32_armstrap_eagle1024`
-      - Yes :sup:`?`
+      - External
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
     * - :ref:`board_ststm32_armstrap_eagle2048`
-      - Yes :sup:`?`
+      - External
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_armstrap_eagle512`
-      - Yes :sup:`?`
+      - External
       - STM32F407VET6
       - 168MHz
       - 512KB
@@ -827,7 +827,7 @@ Avnet Silica
       - Flash
       - RAM
     * - :ref:`board_ststm32_silica_sensor_node`
-      - Yes
+      - On-board
       - STM32L476JG
       - 80MHz
       - 1MB
@@ -846,7 +846,7 @@ Espotel
       - Flash
       - RAM
     * - :ref:`board_ststm32_elmo_f411re`
-      - Yes :sup:`?`
+      - External
       - STM32F411RET6
       - 100MHz
       - 512KB
@@ -865,103 +865,103 @@ Generic
       - Flash
       - RAM
     * - :ref:`board_ststm32_bluepill_f103c8`
-      - Yes :sup:`?`
+      - External
       - STM32F103C8T6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
-      - Yes :sup:`?`
+      - External
       - STM32F103C8T6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103CB`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103R8`
-      - Yes :sup:`?`
+      - External
       - STM32F103R8T6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103RB`
-      - Yes :sup:`?`
+      - External
       - STM32F103RBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103RC`
-      - Yes :sup:`?`
+      - External
       - STM32F103RCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_genericSTM32F103RE`
-      - Yes :sup:`?`
+      - External
       - STM32F103RET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103T8`
-      - Yes :sup:`?`
+      - External
       - STM32F103T8T6
       - 72MHz
       - 20KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
-      - Yes :sup:`?`
+      - External
       - STM32F103TBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103VB`
-      - Yes :sup:`?`
+      - External
       - STM32F103VBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103VC`
-      - Yes :sup:`?`
+      - External
       - STM32F103VCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_genericSTM32F103VD`
-      - Yes :sup:`?`
+      - External
       - STM32F103VDT6
       - 72MHz
       - 384KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103VE`
-      - Yes :sup:`?`
+      - External
       - STM32F103VET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103ZC`
-      - Yes :sup:`?`
+      - External
       - STM32F103ZCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_genericSTM32F103ZD`
-      - Yes :sup:`?`
+      - External
       - STM32F103ZDT6
       - 72MHz
       - 384KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F103ZE`
-      - Yes :sup:`?`
+      - External
       - STM32F103ZET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
-      - Yes :sup:`?`
+      - External
       - STM32F407VET6
       - 168MHz
       - 502.23KB
@@ -980,25 +980,25 @@ LeafLabs
       - Flash
       - RAM
     * - :ref:`board_ststm32_maple`
-      - Yes :sup:`?`
+      - External
       - STM32F103RBT6
       - 72MHz
       - 108KB
       - 17KB
     * - :ref:`board_ststm32_maple_ret6`
-      - Yes :sup:`?`
+      - External
       - STM32F103RET6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_maple_mini_b20`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 120KB
       - 20KB
     * - :ref:`board_ststm32_maple_mini_origin`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 108KB
@@ -1017,7 +1017,7 @@ MXChip
       - Flash
       - RAM
     * - :ref:`board_ststm32_mxchip_az3166`
-      - Yes
+      - On-board
       - STM32F412ZGT6
       - 100MHz
       - 1MB
@@ -1036,7 +1036,7 @@ Microduino
       - Flash
       - RAM
     * - :ref:`board_ststm32_microduino32_flash`
-      - Yes :sup:`?`
+      - External
       - STM32F103CBT6
       - 72MHz
       - 105.47KB
@@ -1055,25 +1055,25 @@ MultiTech
       - Flash
       - RAM
     * - :ref:`board_ststm32_mts_dragonfly_f411re`
-      - Yes :sup:`?`
+      - External
       - STM32F411RET6
       - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_mts_mdot_f405rg`
-      - Yes :sup:`?`
+      - External
       - STM32F411RET6
       - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_mts_mdot_f411re`
-      - Yes :sup:`?`
+      - External
       - STM32F411RET6
       - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_xdot_l151cc`
-      - Yes :sup:`?`
+      - External
       - STM32L151CCU6
       - 32MHz
       - 256KB
@@ -1092,13 +1092,13 @@ RushUp
       - Flash
       - RAM
     * - :ref:`board_ststm32_cloud_jam`
-      - Yes
+      - On-board
       - STM32F401RET6
       - 84MHz
       - 512KB
       - 96KB
     * - :ref:`board_ststm32_cloud_jam_l4`
-      - Yes
+      - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
@@ -1117,343 +1117,343 @@ ST
       - Flash
       - RAM
     * - :ref:`board_ststm32_disco_f334c8`
-      - Yes
+      - On-board
       - STM32F334C8T6
       - 72MHz
       - 64KB
       - 12KB
     * - :ref:`board_ststm32_disco_f401vc`
-      - Yes
+      - On-board
       - STM32F401VCT6
       - 84MHz
       - 256KB
       - 64KB
     * - :ref:`board_ststm32_disco_f411ve`
-      - Yes
+      - On-board
       - STM32F411VET6
       - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_disco_f413zh`
-      - Yes
+      - On-board
       - STM32F413ZHT6
       - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_disco_f429zi`
-      - Yes
+      - On-board
       - STM32F429ZIT6
       - 180MHz
       - 2MB
       - 256KB
     * - :ref:`board_ststm32_disco_f469ni`
-      - Yes
+      - On-board
       - STM32F469NIH6
       - 180MHz
       - 1MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
-      - Yes
+      - On-board
       - STM32F746NGH6
       - 216MHz
       - 1MB
       - 320KB
     * - :ref:`board_ststm32_disco_f769ni`
-      - Yes
+      - On-board
       - STM32F769NIH6
       - 80MHz
       - 1MB
       - 512KB
     * - :ref:`board_ststm32_disco_l053c8`
-      - Yes
+      - On-board
       - STM32L053C8T6
       - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_disco_l100rc`
-      - Yes
+      - On-board
       - STM32L100RCT6
       - 32MHz
       - 256KB
       - 16KB
     * - :ref:`board_ststm32_disco_l476vg`
-      - Yes
+      - On-board
       - STM32L476VGT6
       - 80MHz
       - 1MB
       - 128KB
     * - :ref:`board_ststm32_disco_l496ag`
-      - Yes
+      - On-board
       - STM32L496AGI6
       - 80MHz
       - 1MB
       - 320KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - Yes
+      - On-board
       - STM32L072CZ
       - 32MHz
       - 192KB
       - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
-      - Yes
+      - On-board
       - STM32L475VGT6
       - 80MHz
       - 1MB
       - 128KB
     * - :ref:`board_ststm32_nucleo_f030r8`
-      - Yes
+      - On-board
       - STM32F030R8T6
       - 48MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_nucleo_f031k6`
-      - Yes
+      - On-board
       - STM32F031K6T6
       - 48MHz
       - 32KB
       - 4KB
     * - :ref:`board_ststm32_nucleo_f042k6`
-      - Yes
+      - On-board
       - STM32F042K6T6
       - 48MHz
       - 32KB
       - 6KB
     * - :ref:`board_ststm32_nucleo_f070rb`
-      - Yes
+      - On-board
       - STM32F070RBT6
       - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_ststm32_nucleo_f072rb`
-      - Yes
+      - On-board
       - STM32F072RBT6
       - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_ststm32_nucleo_f091rc`
-      - Yes
+      - On-board
       - STM32F091RCT6
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_f103rb`
-      - Yes
+      - On-board
       - STM32F103RBT6
       - 72MHz
       - 128KB
       - 20KB
     * - :ref:`board_ststm32_nucleo_f207zg`
-      - Yes
+      - On-board
       - STM32F207ZGT6
       - 120MHz
       - 1MB
       - 128KB
     * - :ref:`board_ststm32_nucleo_f302r8`
-      - Yes
+      - On-board
       - STM32F302R8T6
       - 72MHz
       - 64KB
       - 16KB
     * - :ref:`board_ststm32_nucleo_f303k8`
-      - Yes
+      - On-board
       - STM32F303K8T6
       - 72MHz
       - 64KB
       - 16KB
     * - :ref:`board_ststm32_nucleo_f303re`
-      - Yes
+      - On-board
       - STM32F303RET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_nucleo_f303ze`
-      - Yes
+      - On-board
       - STM32F303ZET6
       - 72MHz
       - 512KB
       - 64KB
     * - :ref:`board_ststm32_nucleo_f334r8`
-      - Yes
+      - On-board
       - STM32F334R8T6
       - 72MHz
       - 64KB
       - 16KB
     * - :ref:`board_ststm32_nucleo_f401re`
-      - Yes
+      - On-board
       - STM32F401RET6
       - 84MHz
       - 512KB
       - 96KB
     * - :ref:`board_ststm32_nucleo_f410rb`
-      - Yes
+      - On-board
       - STM32F410RBT6
       - 100MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_f411re`
-      - Yes
+      - On-board
       - STM32F411RET6
       - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_f412zg`
-      - Yes
+      - On-board
       - STM32F412ZGT6
       - 100MHz
       - 1MB
       - 256KB
     * - :ref:`board_ststm32_nucleo_f413zh`
-      - Yes
+      - On-board
       - STM32F413ZHT6
       - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_f429zi`
-      - Yes
+      - On-board
       - STM32F429ZIT6
       - 180MHz
       - 2MB
       - 256KB
     * - :ref:`board_ststm32_nucleo_f439zi`
-      - Yes
+      - On-board
       - STM32F439ZIT6
       - 180MHz
       - 2MB
       - 256KB
     * - :ref:`board_ststm32_nucleo_f446re`
-      - Yes
+      - On-board
       - STM32F446RET6
       - 180MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_f446ze`
-      - Yes
+      - On-board
       - STM32F446ZET6
       - 180MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_f746zg`
-      - Yes
+      - On-board
       - STM32F746ZGT6
       - 216MHz
       - 1MB
       - 320KB
     * - :ref:`board_ststm32_nucleo_f756zg`
-      - Yes
+      - On-board
       - STM32F756ZG
       - 216MHz
       - 1MB
       - 320KB
     * - :ref:`board_ststm32_nucleo_f767zi`
-      - Yes
+      - On-board
       - STM32F767ZIT6
       - 216MHz
       - 2MB
       - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
-      - Yes
+      - On-board
       - STM32L011K4T6
       - 32MHz
       - 16KB
       - 2KB
     * - :ref:`board_ststm32_nucleo_l031k6`
-      - Yes
+      - On-board
       - STM32L031K6T6
       - 32MHz
       - 32KB
       - 8KB
     * - :ref:`board_ststm32_nucleo_l053r8`
-      - Yes
+      - On-board
       - STM32L053R8T6
       - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_nucleo_l073rz`
-      - Yes
+      - On-board
       - STM32L073RZ
       - 32MHz
       - 192KB
       - 20KB
     * - :ref:`board_ststm32_nucleo_l152re`
-      - Yes
+      - On-board
       - STM32L152RET6
       - 32MHz
       - 512KB
       - 80KB
     * - :ref:`board_ststm32_nucleo_l432kc`
-      - Yes
+      - On-board
       - STM32L432KCU6
       - 80MHz
       - 256KB
       - 64KB
     * - :ref:`board_ststm32_nucleo_l433rc_p`
-      - Yes
+      - On-board
       - STM32L433RC
       - 80MHz
       - 256KB
       - 64KB
     * - :ref:`board_ststm32_nucleo_l486rg`
-      - Yes
+      - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
     * - :ref:`board_ststm32_nucleo_l476rg`
-      - Yes
+      - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
     * - :ref:`board_ststm32_nucleo_l496zg`
-      - Yes
+      - On-board
       - STM32L496ZGT6
       - 80MHz
       - 1MB
       - 128KB
     * - :ref:`board_ststm32_nucleo_l496zg_p`
-      - Yes
+      - On-board
       - STM32L496ZGT6P
       - 80MHz
       - 1MB
       - 320KB
     * - :ref:`board_ststm32_disco_f030r8`
-      - Yes
+      - On-board
       - STM32F030R8T6
       - 48MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_disco_f051r8`
-      - Yes
+      - On-board
       - STM32F051R8T6
       - 48MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_disco_f303vc`
-      - Yes
+      - On-board
       - STM32F303VCT6
       - 72MHz
       - 256KB
       - 48KB
     * - :ref:`board_ststm32_disco_f407vg`
-      - Yes
+      - On-board
       - STM32F407VGT6
       - 168MHz
       - 1MB
       - 128KB
     * - :ref:`board_ststm32_eval_l073z`
-      - Yes
+      - On-board
       - STM32L073VZT6
       - 32MHz
       - 192KB
       - 20KB
     * - :ref:`board_ststm32_disco_l152rb`
-      - Yes
+      - On-board
       - STM32L152RBT6
       - 32MHz
       - 128KB
       - 16KB
     * - :ref:`board_ststm32_disco_f100rb`
-      - Yes
+      - On-board
       - STM32F100RBT6
       - 24MHz
       - 128KB
@@ -1472,13 +1472,13 @@ SeeedStudio
       - Flash
       - RAM
     * - :ref:`board_ststm32_seeedArchMax`
-      - Yes
+      - On-board
       - STM32F407VET6
       - 168MHz
       - 512KB
       - 192KB
     * - :ref:`board_ststm32_wio_3g`
-      - Yes
+      - On-board
       - STM32F439VI
       - 180MHz
       - 2MB
@@ -1497,7 +1497,7 @@ Semtech
       - Flash
       - RAM
     * - :ref:`board_ststm32_mote_l152rc`
-      - Yes :sup:`?`
+      - External
       - STM32L152RC
       - 32MHz
       - 256KB
@@ -1516,37 +1516,37 @@ u-blox
       - Flash
       - RAM
     * - :ref:`board_ststm32_mbed_connect_odin`
-      - Yes
+      - On-board
       - STM32F439ZIY6
       - 168MHz
       - 2MB
       - 256KB
     * - :ref:`board_ststm32_ublox_c030_n211`
-      - Yes :sup:`?`
+      - External
       - STM32F437VG
       - 180MHz
       - 1MB
       - 256KB
     * - :ref:`board_ststm32_ublox_c030_r410m`
-      - Yes
+      - On-board
       - STM32F437VG
       - 180MHz
       - 1MB
       - 256KB
     * - :ref:`board_ststm32_ublox_c030_u201`
-      - Yes :sup:`?`
+      - External
       - STM32F437VG
       - 180MHz
       - 1MB
       - 256KB
     * - :ref:`board_ststm32_ublox_evk_odin_w2`
-      - Yes :sup:`?`
+      - External
       - STM32F439ZIY6
       - 168MHz
       - 2MB
       - 256KB
     * - :ref:`board_ststm32_mtb_ublox_odin_w2`
-      - Yes :sup:`?`
+      - External
       - STM32F439ZIY6
       - 168MHz
       - 2MB
