@@ -319,7 +319,7 @@ There are 2 pre-configured debugging configurations:
 Watchpoints
 ~~~~~~~~~~~
 
-Please read GDB: Setting Watchpoints <https://sourceware.org/gdb/download/onlinedocs/gdb/Set-Watchpoints.html>`__
+Please read `GDB: Setting Watchpoints <https://sourceware.org/gdb/download/onlinedocs/gdb/Set-Watchpoints.html>`__
 before.
 
 Currently, VSCode does not provide an API to change value format of watch points.
