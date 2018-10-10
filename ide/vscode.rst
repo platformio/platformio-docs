@@ -327,10 +327,8 @@ You can manually cast output setting it as a watch of a pointer:
 
 * ``$pc``, default decimal integer format
 * ``*0x10012000``, an address, default decimal integer format
-* ``*(void**)$pc``, $pc register, hexadecimal format
+* ``(void*)$pc``, $pc register, hexadecimal format
 * ``*(void**)0x10012000``, an address, hexadecimal format
-* ``*(int *)0x12345678``, an address, a 4-byte region at the specified
-  address (assuming an int occupies 4 bytes).
 
 Install Shell Commands
 ----------------------
