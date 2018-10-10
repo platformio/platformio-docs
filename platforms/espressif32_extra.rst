@@ -194,7 +194,7 @@ Sometimes you have a file with some binary or text data that you’d like to
 make available to your program - but you don’t want to reformat the file as
 C source.
 
-You can set a macro (define) ``COMPONENT_EMBED_FILES`` using
+You can set a macro (define) ``COMPONENT_EMBED_TXTFILES`` using
 :ref:`projectconf_build_flags` in :ref:`projectconf`, giving the names of the
 files to embed in this way:
 
@@ -221,7 +221,7 @@ are available via symbol names as follows:
     extern const uint8_t private_pem_key_end[] asm("_binary_src_private_pem_key_end");
 
 The names are generated from the full name of the file, as given in
-``COMPONENT_EMBED_FILES``. Characters ``/, .``, etc. are replaced with
+``COMPONENT_EMBED_TXTFILES``. Characters ``/, .``, etc. are replaced with
 underscores. The ``_binary`` + ``_nested_folder`` prefix in the symbol name
 is added by "objcopy" and is the same for both text and binary files.
 
