@@ -69,6 +69,25 @@ Drivers
   Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
   them before, please check that your rules are up-to-date or repeat steps.
 
+Wiring Connections
+------------------
+
+.. list-table::
+  :header-rows:  1
+
+  *  - ST-Link JTAG 20-Pins
+     - Board JTAG/SWD Pin
+  *  - 9
+     - TCK/SWCLK
+  *  - 7
+     - TMS/SWDIO
+  *  - 15(NRST) or 3(TRST)
+     - RST
+  *  - 1 (TVCC)
+     - 3.3V
+  *  - 20
+     - GND
+
 .. begin_platforms
 
 Platforms
