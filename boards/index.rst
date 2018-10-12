@@ -203,6 +203,7 @@ Atmel SAM
     atmelsam/adafruit_feather_m0_express
     atmelsam/adafruit_feather_m4
     atmelsam/adafruit_gemma_m0
+    atmelsam/adafruit_hallowing
     atmelsam/adafruit_itsybitsy_m0
     atmelsam/adafruit_itsybitsy_m4
     atmelsam/adafruit_metro_m0
@@ -232,6 +233,8 @@ Atmel SAM
     atmelsam/sodaq_autonomo
     atmelsam/sodaq_explorer
     atmelsam/sodaq_one
+    atmelsam/sodaq_sara
+    atmelsam/sodaq_sff
     atmelsam/sainSmartDue
     atmelsam/sainSmartDueUSB
     atmelsam/sparkfun_samd21_dev_usb

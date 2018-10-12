@@ -11,8 +11,8 @@
 
 .. _board_atmelsam_adafruit_feather_m4:
 
-Adafruit Feather M4 (SAMD51)
-============================
+Adafruit Feather M4 Express (SAMD51)
+====================================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``adafruit_feather_m4`` ID for :ref:`projectconf_env_board` option in
   platform = atmelsam
   board = adafruit_feather_m4
 
-You can override default Adafruit Feather M4 (SAMD51) settings per build environment using
+You can override default Adafruit Feather M4 Express (SAMD51) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `adafruit_feather_m4.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_feather_m4.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `adafruit_feather_m4.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-Adafruit Feather M4 (SAMD51) supports the next uploading protocols:
+Adafruit Feather M4 Express (SAMD51) supports the next uploading protocols:
 
 * ``sam-ba``
 * ``blackmagic``
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit Feather M4 (SAMD51) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Adafruit Feather M4 Express (SAMD51) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

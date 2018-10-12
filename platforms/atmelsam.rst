@@ -151,6 +151,11 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_hallowing`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - SAMD21G18A
       - 48MHz
@@ -262,6 +267,16 @@ Please click on board name for the further details.
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sodaq_one`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sodaq_sara`
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sodaq_sff`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -432,6 +447,12 @@ Adafruit
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - External
       - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_hallowing`
+      - External
+      - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
@@ -682,6 +703,18 @@ SODAQ
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sodaq_one`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sodaq_sara`
+      - External
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sodaq_sff`
       - External
       - SAMD21G18A
       - 48MHz

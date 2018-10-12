@@ -98,6 +98,9 @@ Platforms
     * - Name
       - Description
 
+    * - :ref:`platform_atmelsam`
+      - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
+
     * - :ref:`platform_nordicnrf51`
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
@@ -126,6 +129,9 @@ Frameworks
 
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+
+    * - :ref:`framework_simba`
+      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
 
     * - :ref:`framework_spl`
       - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
@@ -164,6 +170,20 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_atmelsam_due`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_dueUSB`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
       - External
@@ -213,6 +233,13 @@ Boards
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_atmelsam_digix`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_elmo_f411re`
       - :ref:`platform_ststm32`
       - External
@@ -227,6 +254,13 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_atmelsam_macchina2`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_maple`
       - :ref:`platform_ststm32`
       - External
@@ -899,6 +933,20 @@ Boards
       - 168MHz
       - 502.23KB
       - 128KB
+    * - :ref:`board_atmelsam_sainSmartDue`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_sainSmartDueUSB`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_nordicnrf51_seeedArchBLE`
       - :ref:`platform_nordicnrf51`
       - On-board

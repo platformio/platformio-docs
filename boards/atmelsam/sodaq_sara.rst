@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelsam_sodaq_autonomo:
+.. _board_atmelsam_sodaq_sara:
 
-SODAQ Autonomo
-==============
+SODAQ SARA
+==========
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `SODAQ <https://support.sodaq.com/autonom%D0%BE/features-autonomo/?utm_source=platformio&utm_medium=docs>`__
+    - `SODAQ <https://support.sodaq.com/sodaq-one/sara/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``sodaq_autonomo`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sodaq_sara`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:sodaq_autonomo]
+  [env:sodaq_sara]
   platform = atmelsam
-  board = sodaq_autonomo
+  board = sodaq_sara
 
-You can override default SODAQ Autonomo settings per build environment using
+You can override default SODAQ SARA settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `sodaq_autonomo.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/sodaq_autonomo.json>`_. For example,
+board manifest `sodaq_sara.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/sodaq_sara.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:sodaq_autonomo]
+  [env:sodaq_sara]
   platform = atmelsam
-  board = sodaq_autonomo
+  board = sodaq_sara
 
   ; change microcontroller
   board_build.mcu = samd21j18a
@@ -66,7 +66,7 @@ board manifest `sodaq_autonomo.json <https://github.com/platformio/platform-atme
 
 Uploading
 ---------
-SODAQ Autonomo supports the next uploading protocols:
+SODAQ SARA supports the next uploading protocols:
 
 * ``sam-ba``
 * ``blackmagic``
@@ -79,9 +79,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:sodaq_autonomo]
+  [env:sodaq_sara]
   platform = atmelsam
-  board = sodaq_autonomo
+  board = sodaq_sara
 
   upload_protocol = sam-ba
 
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-SODAQ Autonomo does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+SODAQ SARA does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

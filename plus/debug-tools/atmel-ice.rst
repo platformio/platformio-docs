@@ -150,6 +150,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_hallowing`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -192,6 +199,20 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_due`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_dueUSB`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_atmelsam_mzeroUSB`
       - :ref:`platform_atmelsam`
       - External
@@ -297,6 +318,20 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_digix`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_macchina2`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_atmelsam_moteino_zero`
       - :ref:`platform_atmelsam`
       - External
@@ -325,6 +360,34 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sodaq_sara`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sodaq_sff`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sainSmartDue`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_atmelsam_sainSmartDueUSB`
+      - :ref:`platform_atmelsam`
+      - External
+      - AT91SAM3X8E
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - External

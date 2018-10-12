@@ -153,8 +153,8 @@ Packages
     * - `framework-freedom-e-sdk <https://github.com/sifive/freedom-e-sdk?utm_source=platformio&utm_medium=docs>`__
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
-      - OpenOCD
+    * - `tool-openocd-riscv <https://github.com/riscv/riscv-openocd?utm_source=platformio&utm_medium=docs>`__
+      - OpenOCD for RISC-V
 
     * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain?utm_source=platformio&utm_medium=docs>`__
       - GNU toolchain for RISC-V, including GCC

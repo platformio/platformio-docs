@@ -71,6 +71,8 @@ Digistump DigiX supports the next uploading protocols:
 * ``sam-ba``
 * ``jlink``
 * ``blackmagic``
+* ``atmel-ice``
+* ``stlink``
 
 Default protocol is ``sam-ba``
 
@@ -105,10 +107,16 @@ Digistump DigiX does not have on-board debug probe and **IS NOT READY** for debu
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_blackmagic`
+  * - :ref:`debugging_tool_atmel-ice`
     - 
     - Yes
+  * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
+    - 
+    - 
+  * - :ref:`debugging_tool_stlink`
     - 
     - 
 
