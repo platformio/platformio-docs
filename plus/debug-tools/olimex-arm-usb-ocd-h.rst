@@ -88,7 +88,7 @@ Wiring Connections
   * - 7
     - TMS
   * - 3
-    - RST
+    - RESET
   * - 4
     - GND
 

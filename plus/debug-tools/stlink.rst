@@ -75,14 +75,14 @@ Wiring Connections
 .. list-table::
   :header-rows:  1
 
-  *  - ST-Link JTAG 20-Pins
+  *  - ST-Link JTAG 20-Pin Connector
      - Board JTAG/SWD Pin
   *  - 9
      - TCK/SWCLK
   *  - 7
      - TMS/SWDIO
   *  - 15(NRST) or 3(TRST)
-     - RST
+     - RESET
   *  - 1 (TVCC)
      - 3.3V
   *  - 20

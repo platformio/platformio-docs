@@ -92,7 +92,7 @@ Wiring Connections
   * - AD3 [CN2-12]
     - TMS
   * - AC2 [CN2-20]
-    - RST
+    - RESET
   * - GND [CN2-2]
     - GND
 
