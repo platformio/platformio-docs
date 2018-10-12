@@ -115,7 +115,7 @@ SWD
 .. list-table::
   :header-rows:  1
 
-  *  - ST-Link JTAG 20-Pins
+  *  - ST-Link JTAG 20-Pin Connector
      - Board SWD Pin
   *  - 9
      - TCK/SWCLK
