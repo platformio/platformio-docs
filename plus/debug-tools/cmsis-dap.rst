@@ -25,7 +25,6 @@ computer on one side, and over JTAG (Joint Test Action Group) or SWD
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------

@@ -24,7 +24,6 @@ FTDI Chip has a full range of USB solutions to get the job done.
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------

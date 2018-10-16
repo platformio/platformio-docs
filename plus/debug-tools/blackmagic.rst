@@ -29,7 +29,6 @@ Black Magic Probe.
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------
@@ -93,6 +92,69 @@ Drivers
 -------
 
 Not required.
+
+Wiring Connections
+------------------
+
+JTAG Interface
+~~~~~~~~~~~~~~
+
+.. image:: ../../_static/debug_probes/arm_jtag_connector.png
+
+.. list-table::
+  :header-rows:  1
+
+  *  - Black Magic Probe 10-Pin Connector
+     - Board JTAG Pin
+     - Description
+  *  - 1
+     - VCC
+     - Positive Supply Voltage — Power supply for JTAG interface drivers
+  *  - 3
+     - GND
+     - Digital ground
+  *  - 2
+     - TMS
+     - Test Mode State
+  *  - 4
+     - TCLK
+     - JTAG Return Test ClocK
+  *  - 6
+     - TDO
+     - Test Data Out
+  *  - 8
+     - TDI
+     - Test Data In
+  *  - 10
+     - RESET
+     - Connect this pin to the (active low) reset input of the target CPU
+
+Serial Wire Mode Interface (SWD)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: ../../_static/debug_probes/arm_swd_connector.png
+
+.. list-table::
+  :header-rows:  1
+
+  *  - Black Magic Probe 10-Pin Connector
+     - Board SWD Pin
+     - Description
+  *  - 1
+     - VCC
+     - Positive Supply Voltage — Power supply for JTAG interface drivers
+  *  - 3
+     - GND
+     - Digital ground
+  *  - 2
+     - SWDIO
+     - Data I/O
+  *  - 4
+     - SWCLK
+     - Clock
+  *  - 10
+     - RESET
+     - Connect this pin to the (active low) reset input of the target CPU
 
 .. begin_platforms
 

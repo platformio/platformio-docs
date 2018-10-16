@@ -31,7 +31,6 @@ J-Link GDB Server.
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------
@@ -86,47 +85,63 @@ Drivers
 Wiring Connections
 ------------------
 
-JTAG
-~~~~
+.. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
+
+JTAG Interface
+~~~~~~~~~~~~~~
 
 .. list-table::
   :header-rows:  1
 
   *  - J-Link JTAG 20-Pin Connector
      - Board JTAG Pin
+     - Description
+  *  - 1
+     - VCC
+     - Positive Supply Voltage — Power supply for JTAG interface drivers
+  *  - 4
+     - GND
+     - Digital ground
   *  - 5
      - TDI
+     - Test Data In pin
   *  - 7
      - TMS
+     - Test Mode State pin
   *  - 9
      - TCK
+     - JTAG Return Test ClocK
   *  - 13
      - TDO
+     - Test Data Out pin
   *  - 15
      - RESET
-  *  - 1 (TVCC)
-     - 3.3V / 5V  (MCU VCC)
-  *  - 20
-     - GND
+     - Connect this pin to the (active low) reset input of the target CPU
 
-SWD
-~~~
+Serial Wire Mode Interface (SWD)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
   :header-rows:  1
 
-  *  - ST-Link JTAG 20-Pin Connector
+  *  - J-Link SWD 20-Pin Connector
      - Board SWD Pin
-  *  - 9
-     - TCK/SWCLK
+     - Description
+  *  - 1
+     - VCC
+     - Positive Supply Voltage — Power supply for JTAG interface drivers
+  *  - 4
+     - GND
+     - Digital ground
   *  - 7
-     - TMS/SWDIO
+     - SWDIO
+     - Data I/O
+  *  - 9
+     - SWCLK
+     - Clock
   *  - 15
      - RESET
-  *  - 1 (TVCC)
-     - 3.3V / 5V (MCU VCC)
-  *  - 20
-     - GND
+     - Connect this pin to the (active low) reset input of the target CPU
 
 .. begin_platforms
 

@@ -23,7 +23,6 @@ Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability.
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------

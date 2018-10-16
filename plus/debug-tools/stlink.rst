@@ -25,7 +25,6 @@ STM8 or STM32 microcontroller located on an application board.
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------
@@ -72,21 +71,63 @@ Drivers
 Wiring Connections
 ------------------
 
+.. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
+
+JTAG Interface
+~~~~~~~~~~~~~~
+
 .. list-table::
   :header-rows:  1
 
   *  - ST-Link JTAG 20-Pin Connector
-     - Board JTAG/SWD Pin
-  *  - 9
-     - TCK/SWCLK
-  *  - 7
-     - TMS/SWDIO
-  *  - 15(NRST) or 3(TRST)
-     - RESET
-  *  - 1 (TVCC)
-     - 3.3V
-  *  - 20
+     - Board JTAG Pin
+     - Description
+  *  - 1
+     - VCC
+     - Positive Supply Voltage — Power supply for JTAG interface drivers
+  *  - 4
      - GND
+     - Digital ground
+  *  - 5
+     - TDI
+     - Test Data In pin
+  *  - 7
+     - TMS
+     - Test Mode State pin
+  *  - 9
+     - TCK
+     - JTAG Return Test ClocK
+  *  - 13
+     - TDO
+     - Test Data Out pin
+  *  - 15
+     - RESET
+     - Connect this pin to the (active low) reset input of the target CPU
+
+Serial Wire Mode Interface (SWD)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+  :header-rows:  1
+
+  *  - ST-Link SWD 20-Pin Connector
+     - Board SWD Pin
+     - Description
+  *  - 1
+     - VCC
+     - Positive Supply Voltage — Power supply for JTAG interface drivers
+  *  - 4
+     - GND
+     - Digital ground
+  *  - 7
+     - SWDIO
+     - Data I/O
+  *  - 9
+     - SWCLK
+     - Clock
+  *  - 15
+     - RESET
+     - Connect this pin to the (active low) reset input of the target CPU
 
 .. begin_platforms
 

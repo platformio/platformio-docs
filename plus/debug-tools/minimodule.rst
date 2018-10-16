@@ -27,7 +27,6 @@ to a target design.
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------
@@ -83,18 +82,25 @@ Wiring Connections
 
   * - FT2232H Mini-Module Pin
     - Board JTAG Pin
-  * - AD0 [CN2-7]
-    - TCK
-  * - AD1 [CN2-10]
-    - TDI
-  * - AD2 [CN2-9]
-    - TDO
-  * - AD3 [CN2-12]
-    - TMS
-  * - AC2 [CN2-20]
-    - RESET
+    - Description
   * - GND [CN2-2]
     - GND
+    - Digital ground
+  * - AD0 [CN2-7]
+    - TCK
+    - JTAG Return Test ClocK
+  * - AD1 [CN2-10]
+    - TDI
+    - Test Data In
+  * - AD2 [CN2-9]
+    - TDO
+    - Test Data Out
+  * - AD3 [CN2-12]
+    - TMS
+    - Test Mode State
+  * - AC2 [CN2-20]
+    - RESET
+    - Connect this pin to the (active low) reset input of the target CPU
 
 You will also need to connect Vbus [CN3-1] to Vcc [CN3-3] of FT2232H Mini-Module
 to power the FTDI chip. See `FT2232H Mini-Module Datasheet <http://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_FT2232H_Mini_Module.pdf>`_

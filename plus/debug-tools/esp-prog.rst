@@ -26,7 +26,6 @@ platform. `Vendor information... <https://github.com/espressif/esp-iot-solution/
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------
@@ -77,21 +76,32 @@ Drivers
 Wiring Connections
 ------------------
 
+.. image:: ../../_static/debug_probes/esp-prog_jtag_connector.png
+
 .. list-table::
   :header-rows:  1
 
-  * - ESP-Prog JTAG Pin
-    - Board JTAG Pin
-  * - 4
-    - TCK
-  * - 8
-    - TDI
-  * - 6
-    - TDO
-  * - 2
-    - TMS
-  * - 3
-    - GND
+  *  - ESP-Prog JTAG 10-Pin Connector
+     - Board JTAG Pin
+     - Description
+  *  - 1
+     - VDD
+     - Positive Supply Voltage — Power supply for JTAG interface drivers
+  *  - 3
+     - GND
+     - Digital ground
+  *  - 2
+     - ESP_TMS
+     - Test Mode State
+  *  - 4
+     - ESP_TCK
+     - JTAG Return Test ClocK
+  *  - 6
+     - ESP_TDO
+     - Test Data Out
+  *  - 8
+     - ESP_TDI
+     - Test Data In
 
 .. begin_platforms
 

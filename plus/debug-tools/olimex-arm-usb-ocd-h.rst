@@ -23,7 +23,6 @@ supply 5VDC device.
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------
@@ -74,23 +73,35 @@ Drivers
 Wiring Connections
 ------------------
 
+.. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
+
 .. list-table::
   :header-rows:  1
 
-  * - Olimex ARM-USB-OCD-H Pin
+  * - Olimex ARM-USB-OCD-H JTAG 20-Pin Connector
     - Board JTAG Pin
-  * - 11
-    - TCK
-  * - 5
-    - TDI
-  * - 13
-    - TDO
-  * - 7
-    - TMS
+    - Description
+  *  - 1
+     - VCC
+     - Positive Supply Voltage — Power supply for JTAG interface drivers
+  *  - 4
+     - GND
+     - Digital ground
+  *  - 5
+     - TDI
+     - Test Data In pin
+  *  - 7
+     - TMS
+     - Test Mode State pin
+  *  - 9
+     - TCK
+     - JTAG Return Test ClocK
+  *  - 13
+     - TDO
+     - Test Data Out pin
   * - 3
     - RESET
-  * - 4
-    - GND
+    - Connect this pin to the (active low) reset input of the target CPU
 
 .. begin_platforms
 

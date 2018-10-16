@@ -21,7 +21,6 @@ the onboard C Series microcontroller.
 
 .. contents:: Contents
     :local:
-    :depth: 1
 
 Configuration
 -------------
