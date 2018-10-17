@@ -32,6 +32,8 @@ Examples
 Examples are listed from `Intel MCS-51 (8051) development platform repository <https://github.com/platformio/platform-intel_mcs51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
 * `native-blink <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
+* `stc-blink <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-blink?utm_source=platformio&utm_medium=docs>`_
+* `stc-header <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-header?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -161,6 +163,12 @@ STC
     * - :ref:`board_intel_mcs51_stc15f204ea`
       - No
       - STC15F204EA
+      - 11MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_intel_mcs51_stc15w204s`
+      - No
+      - STC15W204S
       - 11MHz
       - 4KB
       - 256B

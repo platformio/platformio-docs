@@ -166,7 +166,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_nordicnrf51_seeedTinyBLE`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -203,6 +203,12 @@ You do not need to use/buy external debug probe.
       - 32MHz
       - 64KB
       - 122.23KB
+    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
+      - :ref:`platform_infineonxmc`
+      - XMC1400
+      - 48MHz
+      - 1.95MB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc4200_distance2go`
       - :ref:`platform_infineonxmc`
       - XMC4200
@@ -684,6 +690,12 @@ Please click on board name for the further details.
       - 168MHz
       - 502.23KB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407VGT6`
+      - :ref:`platform_ststm32`
+      - STM32F407VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -2672,6 +2684,13 @@ Generic
       - 168MHz
       - 502.23KB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407VGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
 
 Hardkernel
 ~~~~~~~~~~
@@ -2819,6 +2838,13 @@ Infineon
       - 32MHz
       - 64KB
       - 122.23KB
+    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
+      - :ref:`platform_infineonxmc`
+      - On-board
+      - XMC1400
+      - 48MHz
+      - 1.95MB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc4200_distance2go`
       - :ref:`platform_infineonxmc`
       - On-board
@@ -3966,7 +3992,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
 
 SainSmart
 ~~~~~~~~~

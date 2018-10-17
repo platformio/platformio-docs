@@ -102,6 +102,11 @@ You do not need to use/buy external debug probe.
       - 32MHz
       - 64KB
       - 122.23KB
+    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
+      - XMC1400
+      - 48MHz
+      - 1.95MB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc4200_distance2go`
       - XMC4200
       - 80MHz
@@ -240,6 +245,12 @@ Infineon
       - 32MHz
       - 64KB
       - 122.23KB
+    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
+      - On-board
+      - XMC1400
+      - 48MHz
+      - 1.95MB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc4200_distance2go`
       - On-board
       - XMC4200

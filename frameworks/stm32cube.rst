@@ -395,6 +395,12 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 320KB
+    * - :ref:`board_ststm32_nucleo_l4r5zi`
+      - :ref:`platform_ststm32`
+      - STM32L4R5ZIT6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - STM32F030R8T6
@@ -418,7 +424,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - STM32L073VZT6
@@ -672,6 +678,12 @@ Please click on board name for the further details.
       - 168MHz
       - 502.23KB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407VGT6`
+      - :ref:`platform_ststm32`
+      - STM32F407VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_ublox_c030_n211`
       - :ref:`platform_ststm32`
       - STM32F437VG
@@ -973,6 +985,13 @@ Generic
       - 168MHz
       - 502.23KB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407VGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
 
 LeafLabs
 ~~~~~~~~
@@ -1491,6 +1510,13 @@ ST
       - 80MHz
       - 1MB
       - 320KB
+    * - :ref:`board_ststm32_nucleo_l4r5zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L4R5ZIT6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -1518,7 +1544,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - On-board

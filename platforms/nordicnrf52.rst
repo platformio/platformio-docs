@@ -38,6 +38,7 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 * `mbed-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-nfc <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-nfc?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 

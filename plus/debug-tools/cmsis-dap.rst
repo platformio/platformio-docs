@@ -317,13 +317,6 @@ Boards
       - 48MHz
       - 128KB
       - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl26z`
-      - :ref:`platform_freescalekinetis`
-      - On-board
-      - MKL26Z128VLH4
-      - 48MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl27z`
       - :ref:`platform_freescalekinetis`
       - On-board

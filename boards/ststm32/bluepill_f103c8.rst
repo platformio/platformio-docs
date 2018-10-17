@@ -109,13 +109,13 @@ BluePill F103C8 does not have on-board debug probe and **IS NOT READY** for debu
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - Yes
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
   * - :ref:`debugging_tool_stlink`
     - 
-    - 
+    - Yes
 
 Frameworks
 ----------

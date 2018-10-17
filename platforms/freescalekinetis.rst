@@ -115,11 +115,6 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 128KB
       - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl26z`
-      - MKL26Z128VLH4
-      - 48MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl27z`
       - MKL27Z64VLH4
       - 48MHz
@@ -319,12 +314,6 @@ Freescale
     * - :ref:`board_freescalekinetis_frdm_kl25z`
       - On-board
       - MKL25Z128VLK4
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl26z`
-      - On-board
-      - MKL26Z128VLH4
       - 48MHz
       - 128KB
       - 16KB

@@ -227,12 +227,6 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 128KB
       - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl26z`
-      - :ref:`platform_freescalekinetis`
-      - MKL26Z128VLH4
-      - 48MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl27z`
       - :ref:`platform_freescalekinetis`
       - MKL27Z64VLH4
@@ -677,6 +671,12 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 320KB
+    * - :ref:`board_ststm32_nucleo_l4r5zi`
+      - :ref:`platform_ststm32`
+      - STM32L4R5ZIT6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - STM32F030R8T6
@@ -700,7 +700,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_ststm32_disco_f100rb`
       - :ref:`platform_ststm32`
       - STM32F100RBT6
@@ -1412,13 +1412,6 @@ Freescale
       - :ref:`platform_freescalekinetis`
       - On-board
       - MKL25Z128VLK4
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl26z`
-      - :ref:`platform_freescalekinetis`
-      - On-board
-      - MKL26Z128VLH4
       - 48MHz
       - 128KB
       - 16KB
@@ -2311,6 +2304,13 @@ ST
       - 80MHz
       - 1MB
       - 320KB
+    * - :ref:`board_ststm32_nucleo_l4r5zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L4R5ZIT6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2338,7 +2338,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_ststm32_disco_f100rb`
       - :ref:`platform_ststm32`
       - On-board

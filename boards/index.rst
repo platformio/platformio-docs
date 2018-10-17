@@ -343,7 +343,6 @@ Freescale Kinetis
     freescalekinetis/frdm_k82f
     freescalekinetis/frdm_kl05z
     freescalekinetis/frdm_kl25z
-    freescalekinetis/frdm_kl26z
     freescalekinetis/frdm_kl27z
     freescalekinetis/frdm_kl43z
     freescalekinetis/frdm_kl46z
@@ -363,6 +362,7 @@ Infineon XMC
     infineonxmc/xmc1100_xmc2go
     infineonxmc/xmc1300_boot_kit
     infineonxmc/xmc1300_sense2gol
+    infineonxmc/xmc1400_boot_kit
     infineonxmc/xmc4200_distance2go
     infineonxmc/xmc4700_relax_kit
 
@@ -386,6 +386,7 @@ Intel MCS-51 (8051)
     intel_mcs51/n79e854
     intel_mcs51/n79e855
     intel_mcs51/stc15f204ea
+    intel_mcs51/stc15w204s
     intel_mcs51/stc15w404as
     intel_mcs51/stc15w408as
 
@@ -666,6 +667,7 @@ ST STM32
     ststm32/nucleo_l476rg
     ststm32/nucleo_l496zg
     ststm32/nucleo_l496zg_p
+    ststm32/nucleo_l4r5zi
     ststm32/disco_f030r8
     ststm32/disco_f051r8
     ststm32/disco_f303vc
@@ -690,6 +692,7 @@ ST STM32
     ststm32/genericSTM32F103ZD
     ststm32/genericSTM32F103ZE
     ststm32/genericSTM32F407VET6
+    ststm32/genericSTM32F407VGT6
     ststm32/seeedArchMax
     ststm32/wio_3g
     ststm32/ublox_c030_n211

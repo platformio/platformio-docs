@@ -1031,13 +1031,6 @@ Freescale
       - 48MHz
       - 128KB
       - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl26z`
-      - :ref:`platform_freescalekinetis`
-      - On-board
-      - MKL26Z128VLH4
-      - 48MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl27z`
       - :ref:`platform_freescalekinetis`
       - On-board
@@ -1213,6 +1206,13 @@ Generic
       - 168MHz
       - 502.23KB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407VGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
 
 GreenWaves Technologies
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -1311,6 +1311,13 @@ Infineon
       - 32MHz
       - 64KB
       - 122.23KB
+    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
+      - :ref:`platform_infineonxmc`
+      - On-board
+      - XMC1400
+      - 48MHz
+      - 1.95MB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc4200_distance2go`
       - :ref:`platform_infineonxmc`
       - On-board
@@ -2375,6 +2382,13 @@ ST
       - 80MHz
       - 1MB
       - 320KB
+    * - :ref:`board_ststm32_nucleo_l4r5zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L4R5ZIT6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2402,7 +2416,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - On-board
