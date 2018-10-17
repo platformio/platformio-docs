@@ -23,6 +23,14 @@ popular embedded boards and IDE.
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
+Aceinna IMU
+-----------
+
+.. toctree::
+    :maxdepth: 1
+        
+    aceinna_imu/OpenIMU300ZA
+
 Atmel AVR
 ---------
 

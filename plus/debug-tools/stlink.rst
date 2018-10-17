@@ -139,6 +139,9 @@ Platforms
     * - Name
       - Description
 
+    * - :ref:`platform_aceinna_imu`
+      - Open-source, embedded development platform for Aceinna IMU hardware. Run custom algorithms and navigation code on Aceinna IMU/INS hardware.
+
     * - :ref:`platform_atmelsam`
       - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
@@ -210,6 +213,13 @@ Boards
       - STM32F446VET6
       - 168MHz
       - 512KB
+      - 128KB
+    * - :ref:`board_aceinna_imu_OpenIMU300ZA`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F405RG
+      - 120MHz
+      - 1MB
       - 128KB
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
