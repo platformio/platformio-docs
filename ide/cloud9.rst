@@ -201,13 +201,13 @@ recommend a next folders structure:
 
     ├── project-A
     │   ├── lib
-    │   │   └── readme.txt
+    │   │   └── README
     │   ├── platformio.ini
     │   └── src
     │       └── main.ino
     └── project-B
         ├── lib
-        │   └── readme.txt
+        │   └── README
         ├── platformio.ini
         └── src
             ├── main.cpp

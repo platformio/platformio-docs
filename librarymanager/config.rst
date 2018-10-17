@@ -541,7 +541,7 @@ Project structure
 .. code::
 
     ├── lib
-    │   ├── readme.txt
+    │   ├── README
     │   └── SomeLib
     │       ├── extra_script.py
     │       ├── hal

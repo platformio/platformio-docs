@@ -128,7 +128,7 @@ next structure:
 * ``src`` directory where you should place source code
   (``*.h, *.c, *.cpp, *.S, *.ino, etc.``)
 * ``lib`` directory can be used for the project specific (private) libraries.
-  More details are located in ``lib/readme.txt`` file.
+  More details are located in ``lib/README`` file.
 * Miscellaneous files for VCS and :ref:`ci` support.
 
 
@@ -211,7 +211,7 @@ The final Project structure:
 
     project_dir
     ├── lib
-    │   └── readme.txt
+    │   └── README
     ├── platformio.ini
     └── src
         └── main.cpp

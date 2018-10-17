@@ -37,7 +37,7 @@ Project structure
 
     project_dir
     ├── lib
-    │   └── readme.txt
+    │   └── README
     ├── platformio.ini
     ├── src
     │   └── ...
