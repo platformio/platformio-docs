@@ -34,6 +34,7 @@ Embedded
 .. toctree::
     :maxdepth: 1
 
+    aceinna_imu
     atmelavr
     atmelsam
     espressif32
