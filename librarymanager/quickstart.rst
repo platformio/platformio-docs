@@ -87,3 +87,11 @@ PlatformIO Core
 ---------------
 
 .. image:: ../_static/platformio-demo-lib.gif
+
+CLI Guide
+---------
+
+.. toctree::
+    :maxdepth: 3
+
+    ../userguide/lib/index

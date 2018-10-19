@@ -41,4 +41,3 @@ up-to-date. PlatformIO Library Manager supports
     Configuration <../projectconf/section_env_library>
     config
     creating
-    CLI Guide <../userguide/lib/index>
