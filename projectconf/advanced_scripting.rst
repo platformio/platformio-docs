@@ -250,6 +250,103 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
     )
 
 
+Custom target
+~~~~~~~~~~~~~
+
+There is a list with built-in targets which could be processed using
+:option:`platformio run --target` option. You can create unlimited number of
+the own targets and declare custom handlers for them.
+
+We will use SCons's `Alias(alias, [targets, [action]]) , env.Alias(alias, [targets, [action]]) <https://scons.org/doc/production/HTML/scons-user/apd.html>`__
+function to declare a custom target/alias.
+
+Command shortcut
+''''''''''''''''
+
+Create a custom ``node`` target (alias) which will print a NodeJS version
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    ...
+    extra_scripts = extra_script.py
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    Import("env")
+    env.AlwaysBuild(env.Alias("node", None, ["node --version"]))
+
+
+Now, run ``pio run -t node``.
+
+Dependent target
+''''''''''''''''
+
+Sometime you need to run a command which depends on another target (file,
+firmware, etc). Let's create an ``ota`` target and declare command which will
+depend on a project firmware. If a build process successes, declared command
+will be run.
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    ...
+    extra_scripts = extra_script.py
+
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    Import("env")
+    env.AlwaysBuild(env.Alias("ota",
+        "$BUILD_DIR/${PROGNAME}.elf",
+        ["ota_script --firmware-path $SOURCE"]))
+
+
+Now, run ``pio run -t ota``.
+
+Target with options
+'''''''''''''''''''
+
+Let's create a simple ``ping`` target and process it with
+``platformio run --target ping`` command:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:env_custom_target]
+    platform = ...
+    ...
+    extra_scripts = extra_script.py
+    custom_ping_host = google.com
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    from platformio import util
+    Import("env")
+
+    config = util.load_project_config()
+    host = config.get("env_custom_target", "custom_ping_host")
+
+    def mytarget_callback(*args, **kwargs):
+        print "Hello PlatformIO!"
+        env.Execute("ping " + host)
+
+
+    env.AlwaysBuild(env.Alias("ping", None, mytarget_callback))
+
 Examples
 ~~~~~~~~
 
@@ -431,81 +528,3 @@ Sometimes is useful to have a different firmware/program name in
     # print defines
 
     env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
-
-Custom build target
-'''''''''''''''''''
-
-There is a list with built-in targets which could be processed using
-:option:`platformio run --target` option. You can create unlimited number of
-the own targets and declare custom handlers for them.
-
-We will use SCons's `Alias(alias, [targets, [action]]) , env.Alias(alias, [targets, [action]]) <https://scons.org/doc/production/HTML/scons-user/apd.html>`__
-function to declare a custom target/alias.
-
-Custom command
-^^^^^^^^^^^^^^
-
-Create a custom ``node`` target (alias) which will print a NodeJS version
-
-``extra_script.py``:
-
-.. code-block:: python
-
-    Import("env")
-    env.AlwaysBuild(env.Alias("node", None, ["node --version"]))
-
-
-Now, run ``pio run -t node``.
-
-Dependent target
-^^^^^^^^^^^^^^^^
-
-Sometime you need to run a command which depends on another target (file,
-firmware, etc). Let's create an ``ota`` target and declare command which will
-depend on a project firmware. If a build process successes, declared command
-will be run.
-
-``extra_script.py``:
-
-.. code-block:: python
-
-    Import("env")
-    env.AlwaysBuild(env.Alias("ota",
-        "$BUILD_DIR/${PROGNAME}.elf",
-        ["ota_script --firmware-path $SOURCE"]))
-
-
-Now, run ``pio run -t ota``.
-
-Target with options
-^^^^^^^^^^^^^^^^^^^
-
-Let's create a simple ``ping`` target and process it with
-``platformio run --target ping`` command:
-
-``platformio.ini``:
-
-.. code-block:: ini
-
-    [env:env_custom_target]
-    platform = ...
-    ...
-    extra_scripts = extra_script.py
-    custom_ping_host = google.com
-
-``extra_script.py``:
-
-.. code-block:: python
-
-    from platformio import util
-    Import("env")
-
-    config = util.load_project_config()
-    host = config.get("env_custom_target", "custom_ping_host")
-
-    def mytarget_callback(*args, **kwargs):
-        print "Hello PlatformIO!"
-        env.Execute("ping " + host)
-
-
-    env.AlwaysBuild(env.Alias("ping", None, mytarget_callback))
