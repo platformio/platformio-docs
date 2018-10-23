@@ -71,6 +71,7 @@ Espressif ESP-WROVER-KIT supports the next uploading protocols:
 * ``esptool``
 * ``ftdi``
 * ``esp-prog``
+* ``jlink``
 * ``olimex-arm-usb-tiny-h``
 * ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-ocd``
@@ -116,6 +117,9 @@ Espressif ESP-WROVER-KIT has on-board debug probe and **IS READY** for debugging
   * - :ref:`debugging_tool_ftdi`
     - Yes
     - Yes
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
   * - :ref:`debugging_tool_minimodule`
     - 
     - 

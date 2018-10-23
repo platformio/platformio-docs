@@ -159,6 +159,9 @@ Platforms
     * - :ref:`platform_atmelsam`
       - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
+    * - :ref:`platform_espressif32`
+      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
@@ -199,6 +202,9 @@ Frameworks
 
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
+
+    * - :ref:`framework_espidf`
+      - Espressif IoT Development Framework. Official development framework for ESP32.
 
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
@@ -246,6 +252,13 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_espressif32_alksesp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nxplpc_lpc11u24_301`
       - :ref:`platform_nxplpc`
       - On-board
@@ -267,6 +280,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_featheresp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -400,6 +420,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_mkrwifi1010`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_mkr1000USB`
       - :ref:`platform_atmelsam`
       - External
@@ -526,6 +553,13 @@ Boards
       - 30MHz
       - 16KB
       - 4KB
+    * - :ref:`board_espressif32_esp32doit-devkit-v1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -547,6 +581,13 @@ Boards
       - 72MHz
       - 64KB
       - 12KB
+    * - :ref:`board_espressif32_pocket_32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nxplpc_lpc11u35`
       - :ref:`platform_nxplpc`
       - External
@@ -582,6 +623,27 @@ Boards
       - 24MHz
       - 32KB
       - 4KB
+    * - :ref:`board_espressif32_esp32vn-iot-uno`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_espectro32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_espino32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nxplpc_lpc4088_dm`
       - :ref:`platform_nxplpc`
       - On-board
@@ -603,6 +665,20 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_espressif32_esp-wrover-kit`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32dev`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_freescalekinetis_IBMEthernetKit`
       - :ref:`platform_freescalekinetis`
       - On-board
@@ -610,6 +686,13 @@ Boards
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_firebeetle32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_freescalekinetis_frdm_k20d50m`
       - :ref:`platform_freescalekinetis`
       - On-board
@@ -708,6 +791,20 @@ Boards
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_hornbill32dev`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_hornbill32minima`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nxplpc_lpc11u68`
       - :ref:`platform_nxplpc`
       - On-board
@@ -722,6 +819,20 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_espressif32_mhetesp32devkit`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_mhetesp32minikit`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_ststm32_mts_dragonfly_f411re`
       - :ref:`platform_ststm32`
       - External
@@ -890,6 +1001,20 @@ Boards
       - 96MHz
       - 512KB
       - 64KB
+    * - :ref:`board_espressif32_node32s`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_nodemcu-32s`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -918,6 +1043,20 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_esp32-evb`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-gateway`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf51_oshchip`
       - :ref:`platform_nordicnrf51`
       - External
@@ -1597,6 +1736,13 @@ Boards
       - 50MHz
       - 32KB
       - 8KB
+    * - :ref:`board_espressif32_esp32thing`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - External
@@ -1625,6 +1771,13 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_espressif32_ttgo-lora32-v1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
       - :ref:`platform_nordicnrf52`
       - External
@@ -1667,6 +1820,27 @@ Boards
       - 40MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_lolin_d32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_d32_pro`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_wiznet7500_wizwiki_w7500`
       - :ref:`platform_wiznet7500`
       - On-board
@@ -1695,6 +1869,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_wemosbat`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_infineonxmc_xmc1100_boot_kit`
       - :ref:`platform_infineonxmc`
       - On-board
@@ -1751,6 +1932,13 @@ Boards
       - 144MHz
       - 2.00MB
       - 1.95MB
+    * - :ref:`board_espressif32_xinabox_cw02`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf52_hackaBLE`
       - :ref:`platform_nordicnrf52`
       - External

@@ -70,6 +70,7 @@ WEMOS LOLIN D32 PRO supports the next uploading protocols:
 
 * ``esptool``
 * ``esp-prog``
+* ``jlink``
 * ``olimex-arm-usb-tiny-h``
 * ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-ocd``
@@ -112,6 +113,9 @@ WEMOS LOLIN D32 PRO does not have on-board debug probe and **IS NOT READY** for 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - Yes
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
   * - :ref:`debugging_tool_minimodule`
     - 
     - 
