@@ -439,6 +439,47 @@ There is a list with built-in targets which could be processed using
 :option:`platformio run --target` option. You can create unlimited number of
 the own targets and declare custom handlers for them.
 
+We will use SCons's `Alias(alias, [targets, [action]]) , env.Alias(alias, [targets, [action]]) <https://scons.org/doc/production/HTML/scons-user/apd.html>`__
+function to declare a custom target/alias.
+
+Custom command
+^^^^^^^^^^^^^^
+
+Create a custom ``node`` target (alias) which will print a NodeJS version
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    Import("env")
+    env.AlwaysBuild(env.Alias("node", None, ["node --version"]))
+
+
+Now, run ``pio run -t node``.
+
+Dependent target
+^^^^^^^^^^^^^^^^
+
+Sometime you need to run a command which depends on another target (file,
+firmware, etc). Let's create an ``ota`` target and declare command which will
+depend on a project firmware. If a build process successes, declared command
+will be run.
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    Import("env")
+    env.AlwaysBuild(env.Alias("ota",
+        "$BUILD_DIR/${PROGNAME}.elf",
+        ["ota_script --firmware-path $SOURCE"]))
+
+
+Now, run ``pio run -t ota``.
+
+Target with options
+^^^^^^^^^^^^^^^^^^^
+
 Let's create a simple ``ping`` target and process it with
 ``platformio run --target ping`` command:
 
@@ -457,7 +498,6 @@ Let's create a simple ``ping`` target and process it with
 .. code-block:: python
 
     from platformio import util
-    from SCons.Script import AlwaysBuild
     Import("env")
 
     config = util.load_project_config()
@@ -468,4 +508,4 @@ Let's create a simple ``ping`` target and process it with
         env.Execute("ping " + host)
 
 
-    AlwaysBuild(env.Alias("ping", "", mytarget_callback))
+    env.AlwaysBuild(env.Alias("ping", None, mytarget_callback))
