@@ -226,6 +226,7 @@ Atmel SAM
     atmelsam/mkrfox1200
     atmelsam/mkrgsm1400
     atmelsam/mkrwan1300
+    atmelsam/mkrwifi1010
     atmelsam/mkr1000USB
     atmelsam/mkrzero
     atmelsam/tian

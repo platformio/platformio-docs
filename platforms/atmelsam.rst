@@ -221,6 +221,11 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_mkrwifi1010`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_mkr1000USB`
       - SAMD21G18A
       - 48MHz
@@ -548,6 +553,12 @@ Arduino
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrwifi1010`
       - External
       - SAMD21G18A
       - 48MHz
