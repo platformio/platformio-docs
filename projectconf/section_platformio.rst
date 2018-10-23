@@ -123,8 +123,9 @@ project.
 There is a ``$PROJECT_HASH`` template variable. You can use it in a path.
 It will by replaced by a SHA1[0:10] hash of a full project path.
 This is very useful to declare a global storage for project artifacts.
-For example, ``/tmp/pio-build/$PROJECT_HASH``.
-You can set a global build directory using :envvar:`PLATFORMIO_BUILD_DIR`.
+For example, ``/tmp/pio-build/$PROJECT_HASH`` (Unix) or
+``%TEMP%/pio-build/$PROJECT_HASH`` (Windows). You can set a global build
+directory using system environment variable :envvar:`PLATFORMIO_BUILD_DIR`.
 
 This option can be overridden by global environment variable
 :envvar:`PLATFORMIO_BUILD_DIR`.
