@@ -954,6 +954,13 @@ Adafruit
       - 8MHz
       - 28KB
       - 2.50KB
+    * - :ref:`board_atmelavr_circuitplay_classic`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -3218,7 +3225,7 @@ Mcudude
     * - :ref:`board_atmelavr_mightycore8535`
       - :ref:`platform_atmelavr`
       - No
-      - ATMEGA16
+      - ATMEGA8535
       - 16MHz
       - 7.50KB
       - 512B
@@ -4497,6 +4504,27 @@ The Things Network
       - 28KB
       - 2.50KB
 
+Till Harbaum
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_ftduino`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+
 TinyCircuits
 ~~~~~~~~~~~~
 
@@ -4713,6 +4741,27 @@ WifiDuino
       - 80MHz
       - 4MB
       - 80KB
+
+Wisen
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_whispernode`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
 
 XinaBox
 ~~~~~~~

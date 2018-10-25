@@ -38,6 +38,7 @@ Atmel AVR
     :maxdepth: 1
         
     atmelavr/bluefruitmicro
+    atmelavr/circuitplay_classic
     atmelavr/feather328p
     atmelavr/feather32u4
     atmelavr/flora8
@@ -186,12 +187,14 @@ Atmel AVR
     atmelavr/sparkfun_redboard
     atmelavr/sparkfun_serial7seg
     atmelavr/sleepypi
+    atmelavr/whispernode
     atmelavr/the_things_uno
     atmelavr/tinyduino
     atmelavr/tinylily
     atmelavr/usbasp
     atmelavr/wildfirev2
     atmelavr/wildfirev3
+    atmelavr/ftduino
     atmelavr/bob3
     atmelavr/nibo2
     atmelavr/niboburger

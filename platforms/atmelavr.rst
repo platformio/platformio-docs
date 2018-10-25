@@ -152,6 +152,12 @@ Adafruit
       - 8MHz
       - 28KB
       - 2.50KB
+    * - :ref:`board_atmelavr_circuitplay_classic`
+      - No
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
     * - :ref:`board_atmelavr_feather328p`
       - No
       - ATMEGA328P
@@ -963,7 +969,7 @@ Mcudude
       - 4KB
     * - :ref:`board_atmelavr_mightycore8535`
       - No
-      - ATMEGA16
+      - ATMEGA8535
       - 16MHz
       - 7.50KB
       - 512B
@@ -1489,6 +1495,25 @@ The Things Network
       - 28KB
       - 2.50KB
 
+Till Harbaum
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_ftduino`
+      - No
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+
 TinyCircuits
 ~~~~~~~~~~~~
 
@@ -1538,6 +1563,25 @@ Wicked Device
       - 16MHz
       - 127KB
       - 16KB
+
+Wisen
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_whispernode`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
 
 makerlab.mx
 ~~~~~~~~~~~
