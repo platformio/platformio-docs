@@ -17,7 +17,8 @@ oddWires IOT-Bus JTAG
 .. image:: ../../_static/debug_probes/iot-bus-jtag.jpg
   :target: http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs
 
-This IoT-Bus module provides JTAG debugging for the ESP32 Io and Proteus
+This IoT-Bus module provides JTAG debugging for the
+:ref:`board_espressif32_iotbusio` and :ref:`board_espressif32_iotbusproteus`
 boards (can be used with other boards too, see wiring connections below).
 The board uses the FT232H to provide a USB controller with JTAG
 support. Both debugging and flashing is possible using this port.
