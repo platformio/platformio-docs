@@ -9,16 +9,21 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _debugging_tool_olimex-jtag-tiny:
+.. _debugging_tool_tumpa:
 
-Olimex ARM-USB-TINY
-===================
+TIAO USB Multi-Protocol Adapter (TUMPA)
+=======================================
 
-.. image:: ../../_static/debug_probes/olimex-jtag-tiny.jpg
-  :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs
+.. image:: ../../_static/debug_probes/tumpa.jpg
+  :target: https://www.diygadget.com/jtag-cables-and-microcontroller-programmers/114-tiao-usb-multi-protocol-adapter-jtag-spi-i2c-serial.html?utm_source=platformio&utm_medium=docs
 
-Low-cost and high-speed ARM/ESP32 USB JTAG.
-`Vendor information... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs>`__
+The TIAO USB Multi Protocol Adapter (TUMPA) is a multi-functional USB
+communication adapter for hobbyists or engineers. The adapter is based on
+FDTI's flagship communication chip FT2232H, a USB 2.0 Hi-Speed (480Mb/s) to
+UART/FIFO IC. It has two multi-protocol synchronous serial engines (MPSSEs)
+which allow for communication using JTAG, I2C and SPI on two channels
+simultaneously.
+`Vendor information... <https://www.diygadget.com/jtag-cables-and-microcontroller-programmers/114-tiao-usb-multi-protocol-adapter-jtag-spi-i2c-serial.html?utm_source=platformio&utm_medium=docs>`__
 
 .. contents:: Contents
     :local:
@@ -34,7 +39,7 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = olimex-jtag-tiny
+    debug_tool = tumpa
 
 If you would like to use this tool for firmware uploading, please change
 upload protocol:
@@ -44,8 +49,8 @@ upload protocol:
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = olimex-jtag-tiny
-    upload_protocol = olimex-jtag-tiny
+    debug_tool = tumpa
+    upload_protocol = tumpa
 
 More options:
 
@@ -59,10 +64,13 @@ Wiring Connections
 
 .. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
 
+JTAG Interface
+~~~~~~~~~~~~~~
+
 .. list-table::
   :header-rows:  1
 
-  * - Olimex ARM-USB-TINY 20-Pin Connector
+  * - TUMPA JTAG 20-Pin Connector
     - Board JTAG Pin
     - Description
   * - 1
@@ -83,7 +91,32 @@ Wiring Connections
   * - 13
     - TDO
     - Test Data Out pin
-  * - 3
+  * - 15
+    - RESET
+    - Connect this pin to the (active low) reset input of the target CPU
+
+Serial Wire Mode Interface (SWD)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+  :header-rows:  1
+
+  * - TUMPA SWD 20-Pin Connector
+    - Board SWD Pin
+    - Description
+  * - 1
+    - VCC
+    - Positive Supply Voltage — Power supply for JTAG interface drivers
+  * - 4
+    - GND
+    - Digital ground
+  * - 7
+    - SWDIO
+    - Data I/O
+  * - 9
+    - SWCLK
+    - Clock
+  * - 15
     - RESET
     - Connect this pin to the (active low) reset input of the target CPU
 

@@ -106,6 +106,7 @@ option.
   debug-tools/olimex-jtag-tiny
   debug-tools/stlink
   debug-tools/ti-icdi
+  debug-tools/tumpa
   debug-tools/custom
 
 CLI Guide

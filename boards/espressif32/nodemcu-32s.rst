@@ -76,6 +76,7 @@ NodeMCU-32S supports the next uploading protocols:
 * ``olimex-arm-usb-ocd``
 * ``olimex-jtag-tiny``
 * ``iot-bus-jtag``
+* ``tumpa``
 * ``minimodule``
 
 Default protocol is ``esptool``
@@ -133,6 +134,9 @@ NodeMCU-32S does not have on-board debug probe and **IS NOT READY** for debuggin
     - 
     - 
   * - :ref:`debugging_tool_olimex-jtag-tiny`
+    - 
+    - 
+  * - :ref:`debugging_tool_tumpa`
     - 
     - 
 

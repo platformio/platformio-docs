@@ -76,6 +76,7 @@ WEMOS LOLIN32 supports the next uploading protocols:
 * ``olimex-arm-usb-ocd``
 * ``olimex-jtag-tiny``
 * ``iot-bus-jtag``
+* ``tumpa``
 * ``minimodule``
 
 Default protocol is ``esptool``
@@ -133,6 +134,9 @@ WEMOS LOLIN32 does not have on-board debug probe and **IS NOT READY** for debugg
     - 
     - 
   * - :ref:`debugging_tool_olimex-jtag-tiny`
+    - 
+    - 
+  * - :ref:`debugging_tool_tumpa`
     - 
     - 
 
