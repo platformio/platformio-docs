@@ -30,7 +30,7 @@ be able to import pre-generated PlatformIO project using favorite IDE and
 extend it with the professional instruments for IoT development.
 
 This tutorial is based on the next popular embedded boards and development
-platforms using *Arduino Wiring-based Framework*:
+platforms using :ref:`framework_arduino`:
 
 
 .. list-table::
@@ -40,24 +40,24 @@ platforms using *Arduino Wiring-based Framework*:
       - Board
       - Framework
 
-    * - Atmel AVR
-      - Arduino Uno (8-bit ATmega328P)
-      - Arduino Wiring-based Framework
+    * - :ref:`platform_atmelavr`
+      - :ref:`board_atmelavr_uno`
+      - :ref:`framework_arduino`
 
-    * - Espressif
-      - NodeMCU 1.0 (32-bit ESP8266)
-      - Arduino Wiring-based Framework
+    * - :ref:`platform_espressif8266`
+      - :ref:`board_espressif8266_nodemcuv2`
+      - :ref:`framework_arduino`
 
-    * - Teensy
-      - Teensy 3.1 (32-bit ARM MK20DX256)
-      - Arduino Wiring-based Framework
+    * - :ref:`platform_teensy`
+      - :ref:`board_teensy_teensy31`
+      - :ref:`framework_arduino`
 
 Board Identifier
 ----------------
 
-:ref:`cmd_init` command requires to specify board identifier (ID/TYPE). It can
-be found using `Embedded Boards Explorer <https://platformio.org/boards>`_
-or :ref:`cmd_boards` command. For example, using :ref:`cmd_boards` let's try
+:ref:`cmd_init` command requires to specify board identifier ID. It can
+be found using :ref:`boards` catalog,
+`Boards Explorer <https://platformio.org/boards>`_ or :ref:`cmd_boards` command. For example, using :ref:`cmd_boards` let's try
 to find Teensy boards:
 
 .. code-block:: bash
@@ -66,7 +66,7 @@ to find Teensy boards:
 
     Platform: teensy
     ---------------------------------------------------------------------------
-    Type                  MCU            Frequency  Flash   RAM    Name
+    ID                    MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
     teensy20              atmega32u4     16MHz     31K    2.5K  Teensy 2.0
     teensy30              mk20dx128      48MHz     128K   16K   Teensy 3.0
@@ -74,9 +74,9 @@ to find Teensy boards:
     teensylc              mkl26z64       48MHz     62K    8K    Teensy LC
     teensy20pp            at90usb1286    16MHz     127K   8K    Teensy++ 2.0
 
-According to the table above the ID/TYPE for Teensy 3.1 is ``teensy31``. Also,
-the ID for Arduino UNO is ``uno`` and for NodeMCU 1.0 (ESP-12E Module)
-is ``nodemcuv2``.
+According to the table above the ID for :ref:`board_teensy_teensy31` is
+``teensy31``. Also, the ID for :ref:`board_atmelavr_uno` is ``uno`` and
+for :ref:`board_espressif8266_nodemcuv2` is ``nodemcuv2``.
 
 Initialize Project
 ------------------
@@ -128,7 +128,7 @@ next structure:
 * ``src`` directory where you should place source code
   (``*.h, *.c, *.cpp, *.S, *.ino, etc.``)
 * ``lib`` directory can be used for the project specific (private) libraries.
-  More details are located in ``lib/readme.txt`` file.
+  More details are located in ``lib/README`` file.
 * Miscellaneous files for VCS and :ref:`ci` support.
 
 
@@ -148,7 +148,7 @@ The result of just generated ``platformio.ini``:
     ;   Library options: dependencies, extra library storages
     ;
     ; Please visit documentation for the other options and examples
-    ; http://docs.platformio.org/page/projectconf.html
+    ; https://docs.platformio.org/page/projectconf.html
 
     [env:uno]
     platform = atmelavr
@@ -211,7 +211,7 @@ The final Project structure:
 
     project_dir
     ├── lib
-    │   └── readme.txt
+    │   └── README
     ├── platformio.ini
     └── src
         └── main.cpp

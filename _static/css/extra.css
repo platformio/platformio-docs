@@ -535,6 +535,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   visibility: none;
 }
 
+/* Tables */
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+  white-space: initial;
+}
+
 @media (min-width: 768px) {
   .wy-side-scroll {
     padding-bottom: 50px;
@@ -568,6 +574,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 @media screen and (min-width: 992px) {
   .navbar .github-corner {
+    display: block;
+  }
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
 }

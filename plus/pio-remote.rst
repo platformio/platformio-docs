@@ -40,7 +40,6 @@ A registration is **FREE**.
 Features
 --------
 
-* :ref:`ide_cloud`
 * :ref:`Remote Device Manager <cmd_remote_device>`
 * :ref:`Remote Serial Port Monitor <cmd_remote_device_monitor>`
 * :ref:`Remote Firmware Updates <cmd_remote_run>`
@@ -49,6 +48,48 @@ Features
 * Continuous Delivery
 * Remote Unit Testing
 
+Use Cases
+---------
+
+:Cloud IDE:
+  Program your devices from anywhere in the world using the most popular
+  :ref:`ide_cloud`. You do not need to install any extra software, no need to
+  have static IP or open network ports. Everything works out of the box.
+
+:Devices behind card sized PC:
+  Work with your favorite development environment and program devices connected
+  to card-sized PC (Raspberry Pi, Cubie Board, etc.). You do not need to open
+  SSH ports, install any extra Linux packages, toolchains.
+
+:Remote Unit Testing:
+  Instruct any of :ref:`ci` services to run remote tests on a physical device.
+  See the documentation for :ref:`Remote Test Runner <unit_testing_remote>`.
+
+  How does it work?
+
+  - You commit new changes to your source code repository
+  - :ref:`ci` service deploys unit tests to a remote agent
+  - :ref:`unit_testing` engine runs tests on a physical device, process them,
+    and send results
+  - :ref:`ci` service prints results in human readable format
+  - If one test fails, current CI build will fail too.
+
+:Board Farm:
+  A similar concept as described in "Remote Unit Testing" above. Let's imagine
+  that you need to test some logic on the unlimited number of target devices.
+  Very often it can be the same hardware prototype but with different factory
+  revisions.
+
+  You connect these devices via USB hub to PC and instruct |PIORemote| to
+  process your test on ALL targets connected to a specific agent. See
+  documentation below.
+
+:Remote Serial Monitor:
+  Sometimes you don't have physical access to a target device but you need to
+  read data from some serial port. |PIORemote| allows you to connect to a
+  remote agent and list connected devices with their serial ports. See
+  :ref:`cmd_remote_device_monitor` command for details.
+
 Technology
 ----------
 
@@ -56,7 +97,7 @@ Technology
 
 |PIORemote| is an own `PIO Plus <https://pioplus.com/>`__ technology
 for remote solutions without external dependencies to
-operation system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
+operating system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
 The Server component (|PIOCloud|) plays a role of coupling link between
 :ref:`cmd_remote_agent` and Client (:ref:`cmd_remote`, :ref:`ide_cloud`,
 :ref:`ci`, SDKs, etc.).
@@ -125,8 +166,8 @@ Quick Start
     OTA update will look as ``platformio remote run -t upload --upload-port 192.168.0.255``
     or ``platformio remote run -t upload --upload-port myesp8266.local``.
 
-User Guide (CLI)
-----------------
+CLI Guide
+---------
 
 .. toctree::
     :maxdepth: 3

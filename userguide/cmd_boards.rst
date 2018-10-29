@@ -55,7 +55,7 @@ Examples
 
     Platform: atmelavr
     ---------------------------------------------------------------------------
-    Type                  MCU           Frequency  Flash   RAM    Name
+    ID                    MCU           Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
     btatmega168           atmega168     16MHz     14K    1K    Arduino BT ATmega168
     btatmega328           atmega328p    16MHz     28K    2K    Arduino BT ATmega328
@@ -73,7 +73,7 @@ Examples
 
     Platform: atmelavr
     ---------------------------------------------------------------------------
-    Type                  MCU           Frequency  Flash   RAM    Name
+    ID                    MCU           Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
     btatmega168           atmega168     16MHz     14K    1K    Arduino BT ATmega168
     btatmega328           atmega328p    16MHz     28K    2K    Arduino BT ATmega328
@@ -92,7 +92,7 @@ Examples
 
     Platform: freescalekinetis
     ---------------------------------------------------------------------------
-    Type                  MCU            Frequency  Flash   RAM    Name
+    ID                    MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
     frdm_k20d50m          mk20dx128vlh5  48MHz     128K   16K   Freescale Kinetis FRDM-K20D50M
     frdm_k22f             mk22fn512vlh12 120MHz    512K   128K  Freescale Kinetis FRDM-K22F
@@ -100,7 +100,7 @@ Examples
 
     Platform: nordicnrf51
     ---------------------------------------------------------------------------
-    Type                  MCU            Frequency  Flash   RAM    Name
+    ID                    MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
     wallBotBLE            nrf51822       16MHz     128K   16K   JKSoft Wallbot BLE
     nrf51_dk              nrf51822       32MHz     256K   32K   Nordic nRF51-DK
@@ -108,7 +108,7 @@ Examples
 
     Platform: nxplpc
     ---------------------------------------------------------------------------
-    Type                  MCU            Frequency  Flash   RAM    Name
+    ID                    MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
     blueboard_lpc11u24    lpc11u24       48MHz     32K    8K    BlueBoard-LPC11U24
     dipcortexm0           lpc11u24       50MHz     32K    8K    DipCortex M0
@@ -117,7 +117,7 @@ Examples
 
     Platform: ststm32
     ---------------------------------------------------------------------------
-    Type                  MCU            Frequency  Flash   RAM    Name
+    ID                    MCU            Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
     disco_f401vc          stm32f401vct6  84MHz     256K   64K   32F401CDISCOVERY
     nucleo_f030r8         stm32f030r8t6  48MHz     64K    8K    ST Nucleo F030R8
@@ -131,7 +131,7 @@ Examples
 
     Platform: atmelavr
     ---------------------------------------------------------------------------
-    Type                  MCU           Frequency  Flash   RAM    Name
+    ID                    MCU           Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
     btatmega168           atmega168     16MHz     14K    1K    Arduino BT ATmega168
     diecimilaatmega168    atmega168     16MHz     14K    1K    Arduino Duemilanove or Diecimila ATmega168
@@ -152,7 +152,7 @@ Examples
 
     Platform: timsp430
     ---------------------------------------------------------------------------
-    Type                  MCU           Frequency  Flash   RAM    Name
+    ID                    MCU           Frequency  Flash   RAM    Name
     ---------------------------------------------------------------------------
     lpmsp430fr5739        msp430fr5739  16MHz     15K    1K    FraunchPad w/ msp430fr5739
     lpmsp430f5529         msp430f5529   16MHz     128K   1K    LaunchPad w/ msp430f5529 (16MHz)

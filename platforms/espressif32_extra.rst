@@ -9,6 +9,11 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Tutorials
+---------
+
+* :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
+
 Configuration
 -------------
 
@@ -189,7 +194,7 @@ Sometimes you have a file with some binary or text data that you’d like to
 make available to your program - but you don’t want to reformat the file as
 C source.
 
-You can set a macro (define) ``COMPONENT_EMBED_FILES`` using
+You can set a macro (define) ``COMPONENT_EMBED_TXTFILES`` using
 :ref:`projectconf_build_flags` in :ref:`projectconf`, giving the names of the
 files to embed in this way:
 
@@ -216,7 +221,7 @@ are available via symbol names as follows:
     extern const uint8_t private_pem_key_end[] asm("_binary_src_private_pem_key_end");
 
 The names are generated from the full name of the file, as given in
-``COMPONENT_EMBED_FILES``. Characters ``/, .``, etc. are replaced with
+``COMPONENT_EMBED_TXTFILES``. Characters ``/, .``, etc. are replaced with
 underscores. The ``_binary`` + ``_nested_folder`` prefix in the symbol name
 is added by "objcopy" and is the same for both text and binary files.
 
@@ -227,12 +232,14 @@ See full example with embedding Amazon AWS certificates:
 Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Initialize project :ref:`cmd_init` (if you have not initialized yet)
+1. Create new project using :ref:`pioide` or initialize project using
+   :ref:`piocore` and :ref:`cmd_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
-3. Run ``buildfs`` or ``uploadfs`` target using
-   :option:`platformio run --target` command.
+3. Run "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
+   and :option:`platformio run --target` command with ``uploadfs`` target.
+
 
 To upload SPIFFS image using OTA update please specify ``upload_port`` /
 ``--upload-port`` as IP address or mDNS host name (ending with the ``*.local``).
@@ -289,7 +296,9 @@ You can pass additional options/flags to OTA uploader using
 .. code-block:: ini
 
     [env:myenv]
-    upload_flags = --port=3232
+    ; each flag in a new line
+    upload_flags =
+        --port=3232
 
 Available flags
 

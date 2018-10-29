@@ -11,7 +11,7 @@
 
 .. _projectconf:
 
-Project Configuration File ``platformio.ini``
+"platformio.ini" (Project Configuration File)
 =============================================
 
 The Project configuration file is named ``platformio.ini``. This is a
@@ -41,9 +41,9 @@ described below.
 
     [platformio] <projectconf/section_platformio>
     [env] <projectconf/section_env>
+    projectconf/build_configurations
     projectconf/dynamic_variables
     projectconf/examples
-
 
 **Example**
 
@@ -101,7 +101,7 @@ described below.
 
     ; Library options
     lib_deps =
-        ${common.lib_deps_external}
+        ${common_env_data.lib_deps_external}
 
     ; Debug options
     debug_tool = custom

@@ -13,7 +13,9 @@
 
 WiringPi
 ========
-:ref:`projectconf_env_framework` = ``wiringpi``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``wiringpi``
 
 WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino "wiring" system.
 
@@ -54,41 +56,36 @@ Raspberry Pi
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``raspberrypi_1b``
-      - `Raspberry Pi 1 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
+    * - :ref:`board_linux_arm_raspberrypi_1b`
+      - :ref:`platform_linux_arm`
       - No
       - BCM2835
       - 700MHz
       - 512MB
       - 512MB
-    * - ``raspberrypi_2b``
-      - `Raspberry Pi 2 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
+    * - :ref:`board_linux_arm_raspberrypi_2b`
+      - :ref:`platform_linux_arm`
       - No
       - BCM2836
       - 900MHz
       - 1GB
       - 1GB
-    * - ``raspberrypi_3b``
-      - `Raspberry Pi 3 Model B <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
+    * - :ref:`board_linux_arm_raspberrypi_3b`
+      - :ref:`platform_linux_arm`
       - No
       - BCM2837
       - 1200MHz
       - 1GB
       - 1GB
-    * - ``raspberrypi_zero``
-      - `Raspberry Pi Zero <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Linux ARM <platform_linux_arm>`
+    * - :ref:`board_linux_arm_raspberrypi_zero`
+      - :ref:`platform_linux_arm`
       - No
       - BCM2835
       - 1000MHz

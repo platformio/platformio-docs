@@ -11,8 +11,8 @@
 
 .. _userguide:
 
-User Guide
-==========
+CLI Guide
+=========
 
 .. contents::
 

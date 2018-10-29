@@ -253,7 +253,7 @@ with the type of archive (``.zip`` or ``.tar.gz``).
     :ref:`libjson_downloadurl` has higher priority than
     :ref:`libjson_repository`.
 
-Example with fixed release/tag on GitHub:
+Example with detached release/tag on GitHub:
 
 .. code-block:: javascript
 
@@ -357,7 +357,7 @@ Exclude the directories and files which match with ``exclude`` patterns.
 *Optional* | Type: ``String`` or ``Array``
 
 A list with compatible frameworks. The available framework types are defined in
-the :ref:`platforms` section.
+the :ref:`frameworks` section.
 
 If the library is compatible with the all frameworks, then you can use ``*``
 symbol:
@@ -405,11 +405,11 @@ Allowed requirements for dependent library:
 The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
-* ``0.1.2`` - an exact version number. Use only this exact version
-* ``^0.1.2`` - any compatible version (exact version for ``0.x.x`` versions
-* ``~0.1.2`` - any version with the same major and minor versions, and an
+* ``1.2.3`` - an exact version number. Use only this exact version
+* ``^1.2.3`` - any compatible version (exact version for ``1.x.x`` versions
+* ``~1.2.3`` - any version with the same major and minor versions, and an
   equal or greater patch version
-* ``>0.1.2`` - any version greater than ``0.1.2``. ``>=``, ``<``, and ``<=``
+* ``>1.2.3`` - any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
   are also possible
 * ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
   ``0.2.0`` and less than ``0.3.0``
@@ -541,7 +541,7 @@ Project structure
 .. code::
 
     ├── lib
-    │   ├── readme.txt
+    │   ├── README
     │   └── SomeLib
     │       ├── extra_script.py
     │       ├── hal
@@ -636,7 +636,7 @@ Examples
 .. code-block:: javascript
 
     "build": {
-        "flags": "-D MYLIB_REV=0.1.2 -DRELEASE"
+        "flags": "-D MYLIB_REV=1.2.3 -DRELEASE"
     }
 
 2. Extra includes for C preprocessor

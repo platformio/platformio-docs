@@ -34,6 +34,7 @@ Embedded
 .. toctree::
     :maxdepth: 1
 
+    aceinna_imu
     atmelavr
     atmelsam
     espressif32
@@ -41,6 +42,7 @@ Embedded
     freescalekinetis
     infineonxmc
     intel_arc32
+    intel_mcs51
     lattice_ice40
     maxim32
     microchippic32
@@ -48,6 +50,7 @@ Embedded
     nordicnrf52
     nxplpc
     riscv
+    riscv_gap
     samsung_artik
     siliconlabsefm32
     ststm32

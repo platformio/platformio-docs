@@ -83,7 +83,7 @@ boards and MCUs. To keep things short: PlatformIO supports approximately 200
 User SHOULD have a choice
 -------------------------
 
-* Decide which operation system they want to run development process on.
+* Decide which operating system they want to run development process on.
   You can even use one OS at home and another at work.
 * Choose which editor to use for writing the code. It can be pretty simple
   editor or powerful favorite :ref:`ide`.

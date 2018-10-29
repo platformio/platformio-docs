@@ -34,10 +34,12 @@ Initialize new PlatformIO based project or update existing with new data.
 This command will create:
 
 * :ref:`projectconf`
-* ``src`` directory where you should place source code
+* :ref:`projectconf_pio_include_dir`, put project header files here
+* :ref:`projectconf_pio_src_dir`, put project source files here
   (``*.h, *.c, *.cpp, *.S, *.ino, etc.``)
-* ``lib`` directory can be used for the project specific (private) libraries.
-  More details are located in ``lib/readme.txt`` file.
+* :ref:`projectconf_pio_lib_dir`, put project specific (private) libraries here.
+  See also :ref:`ldf`
+* :ref:`projectconf_pio_test_dir`, put project tests here. More details :ref:`unit_testing`
 * Miscellaneous files for VCS and :ref:`ci` support.
 
 Options
@@ -82,9 +84,9 @@ Multiple options are allowed.
 .. option::
     --env-prefix
 
-An environment prefix which will be used with pair in board type.
-For example, the default environment name for ``teensy_31`` board will
-be ``[env:teensy_31]``.
+An environment prefix which will be used with pair in :ref:`projectconf_env_board` ID.
+For example, the default environment name for :ref:`board_teensy_teensy31`
+board will be ``[env:teensy31]``.
 
 .. option::
     -s, --silent

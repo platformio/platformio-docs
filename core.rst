@@ -13,8 +13,8 @@
 
 .. _piocore:
 
-PlatformIO Core
-===============
+PlatformIO Core (CLI)
+=====================
 
 |PIOCORE| (CLI tool) is a heart of whole PlatformIO ecosystem and consists of
 

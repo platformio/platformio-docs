@@ -172,6 +172,11 @@ base template of ``main.py``.
         OBJCOPY="objcopy",
         RANLIB="ranlib",
 
+        UPLOADER=join("$PIOPACKAGES_DIR", "tool-bar", "uploader"),
+        UPLOADCMD="$UPLOADER $SOURCES"
+    )
+
+    env.Append(
         ARFLAGS=["..."],
 
         ASFLAGS=["flag1", "flag2", "flagN"],
@@ -183,11 +188,6 @@ base template of ``main.py``.
 
         LIBS=["additional", "libs", "here"],
 
-        UPLOADER=join("$PIOPACKAGES_DIR", "tool-bar", "uploader"),
-        UPLOADCMD="$UPLOADER $SOURCES"
-    )
-
-    env.Append(
         BUILDERS=dict(
             ElfToBin=Builder(
                 action=" ".join([

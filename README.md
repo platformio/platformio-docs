@@ -1,3 +1,3 @@
 # PlatformIO Documentation
 
-[http://docs.platformio.org/](http://docs.platformio.org/)
+[https://docs.platformio.org/](https://docs.platformio.org/)

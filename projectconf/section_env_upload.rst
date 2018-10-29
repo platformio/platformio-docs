@@ -73,10 +73,13 @@ Please note that you can use Unix shell-style wildcards:
     ; COM1 or COM3
     upload_port = COM[13]
 
+.. _projectconf_upload_protocol:
+
 ``upload_protocol``
 ^^^^^^^^^^^^^^^^^^^
 
-A protocol that "uploader" tool uses to talk to the board.
+A protocol that "uploader" tool uses to talk to a board. Please check
+:ref:`boards` for supported uploading protocols by your board.
 
 .. _projectconf_upload_speed:
 

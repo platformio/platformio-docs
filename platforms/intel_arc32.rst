@@ -13,7 +13,9 @@
 
 Intel ARC32
 ===========
-:ref:`projectconf_env_platform` = ``intel_arc32``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``intel_arc32``
 
 ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
@@ -123,15 +125,13 @@ Intel
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``genuino101``
-      - `Arduino/Genuino 101 <https://www.arduino.cc/en/Main/ArduinoBoard101?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_intel_arc32_genuino101`
       - No
       - ARCV2EM
       - 32MHz

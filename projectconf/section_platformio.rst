@@ -44,6 +44,8 @@ if :option:`platformio run --environment` option is not specified.
 :ref:`projectconf_pio_env_default` allows to define environments which
 should be processed by default.
 
+Also, :ref:`piodebug` checks this option when looking for debug environment.
+
 Multiple environments are allowed if they *are separated with ", "
 (comma+space)*. For example.
 
@@ -117,6 +119,13 @@ next build operation.
 
 A default value is ``.pioenvs`` that means that folder is located in the root of
 project.
+
+There is a ``$PROJECT_HASH`` template variable. You can use it in a path.
+It will by replaced by a SHA1[0:10] hash of a full project path.
+This is very useful to declare a global storage for project artifacts.
+For example, ``/tmp/pio-build/$PROJECT_HASH`` (Unix) or
+``%TEMP%/pio-build/$PROJECT_HASH`` (Windows). You can set a global build
+directory using system environment variable :envvar:`PLATFORMIO_BUILD_DIR`.
 
 This option can be overridden by global environment variable
 :envvar:`PLATFORMIO_BUILD_DIR`.

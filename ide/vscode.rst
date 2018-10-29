@@ -114,8 +114,13 @@ Setting Up the Project
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-build-project.png
 
 
-Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload, Clean,
-Serial Monitor) below.
+---------------
+
+Further for reading:
+
+* :ref:`tutorials` (step-by-step tutorials with debugging and unit testing)
+* Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload,
+  Clean, Serial Monitor) below.
 
 **Happy coding with PlatformIO!**
 
@@ -149,11 +154,28 @@ Key Bindings
 * ``ctrl+alt+u`` Upload Firmware
 * ``ctrl+alt+s`` Open :ref:`Serial Port Monitor <cmd_device_monitor>`
 
-Task Runner
------------
+You can override existing key bindings  or add a new in VSCode. See official
+documentation `Key Bindings for Visual Studio Code <https://code.visualstudio.com/docs/getstarted/keybindings>`_.
 
-PlatformIO IDE provides base tasks ``Menu > Tasks`` (Build, Upload, Clean,
-Monitor, etc) and custom tasks per :ref:`projectconf` environment
+Project Tasks
+-------------
+
+Task Explorer
+~~~~~~~~~~~~~
+
+PlatformIO provides access to "Project Task Explorer" where you can control
+build process of declared environments in :ref:`projectconf`.
+Project Task Explorer is located in VSCode Activity Bar under branded
+PlatformIO icon. You can also access it via "VSCode Menu > Open View... >
+PlatformIO".
+
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-task-explorer.png
+
+Task Runner
+~~~~~~~~~~~
+
+PlatformIO IDE provides base tasks ``Menu > Termina > Run Task...`` (Build,
+Upload, Clean, Monitor, etc) and custom tasks per :ref:`projectconf` environment
 (``[env:***]``). A default behavior is to use Terminal Panel for presentation.
 Also, we use dedicated panel per unique task.
 
@@ -188,7 +210,7 @@ command:
 See more options in `official VSCode documentation <https://code.visualstudio.com/docs/editor/tasks#_output-behavior>`__.
 
 Custom Tasks
-------------
+~~~~~~~~~~~~
 
 Custom tasks can be added to ``tasks.json`` file located in ``.vscode`` folder
 in the root of project. Please read official documentation `Tasks in VSCode <https://code.visualstudio.com/docs/editor/tasks#vscode>`_.
@@ -218,6 +240,14 @@ its commands (:ref:`userguide`).
     }
 
 
+Multi-project Workspaces
+------------------------
+
+You can work with multiple project folders in Visual Studio Code with
+multi-root workspaces. This can be very helpful when you are working on
+several related projects at one time. Read more in documentation
+`Multi-root Workspaces <https://code.visualstudio.com/docs/editor/multi-root-workspaces>`_.
+
 Serial Port Monitor
 -------------------
 
@@ -243,6 +273,62 @@ Example:
 
     ; Custom Serial Monitor speed (baud rate)
     monitor_speed = 115200
+
+Debugging
+---------
+
+Debugging in VSCode works in combination with :ref:`piodebug`. You should
+have :ref:`pioaccount` to work with it.
+
+VSCode has a separate activity view named "Debug" (bug icon on the left toolbar).
+:ref:`piodebug` extends it with the next advanced debugging instruments and features:
+
+- Local, Global, and Static Variable Explorer
+- Conditional Breakpoints
+- Expressions and Watchpoints
+- Generic Registers
+- Peripheral Registers
+- Memory Viewer
+- Disassembly
+- Multi-thread support
+- A hot restart of an active debugging session.
+
+There are 2 pre-configured debugging configurations:
+
+:PIO Debug:
+  **Default configuration**. PlatformIO runs **Pre-Debug** task and builds
+  project using :ref:`Debug Configuration <build_configurations>`. Also, it
+  checks for project changes.
+
+:PIO Debug (skip Pre-Debug):
+  PlatformIO skips **Pre-Debug** stage and DOES NOT build or check project changes.
+  If you do changes in project source files, they will not be reflected in
+  a debug session until you switch back to "PIO Debug" configuration or
+  manually run "Pre-Debug" task.
+
+  This configuration is very useful for quick debug session. It is super fast
+  and skips different checks. You manually control project changes.
+
+.. note::
+  Please note that :ref:`piodebug` will use the first declared build
+  environment in :ref:`projectconf` if :ref:`projectconf_pio_env_default` option
+  is not specified.
+
+.. image:: ../_static/ide/vscode/platformio-ide-vscode-debug.png
+
+Watchpoints
+~~~~~~~~~~~
+
+Please read `GDB: Setting Watchpoints <https://sourceware.org/gdb/download/onlinedocs/gdb/Set-Watchpoints.html>`__
+before.
+
+Currently, VSCode does not provide an API to change value format of watch points.
+You can manually cast output setting it as a watch of a pointer:
+
+* ``$pc``, default decimal integer format
+* ``*0x10012000``, an address, default decimal integer format
+* ``(void*)$pc``, $pc register, hexadecimal format
+* ``*(void**)0x10012000``, an address, hexadecimal format
 
 Install Shell Commands
 ----------------------
@@ -290,20 +376,17 @@ is ``true``.
 Activate extension only when PlatformIO-based project (with :ref:`projectconf`)
 is opened in workspace, default value is ``false``.
 
-``platformio-ide.defaultToolbarBuildAction``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Default action for "Build" button on :ref:`ide_vscode_toolbar`, default value
-is `release`. Possible values are ``release`` or ``pre-debug``.
-
-To eliminate a full project rebuilding before debugging, please change this
-value to ``pre-debug``.
-
 ``platformio-ide.autoCloseSerialMonitor``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Automatically close :ref:`cmd_device_monitor` before uploading/testing,
 default value is ``true``.
+
+``platformio-ide.reopenSerialMonitorDelay``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Configure time in milliseconds after which reopen Serial Port Monitor,
+default value is ``0``, which means reopen instantly.
 
 Known issues
 ------------

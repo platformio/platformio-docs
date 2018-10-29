@@ -13,7 +13,9 @@
 
 Lattice iCE40
 =============
-:ref:`projectconf_env_platform` = ``lattice_ice40``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``lattice_ice40``
 
 The iCE40 family of ultra-low power, non-volatile FPGAs has five devices with densities ranging from 384 to 7680 Look-Up Tables (LUTs). In addition to LUT-based,low-cost programmable logic, these devices feature Embedded Block RAM (EBR), Non-volatile Configuration Memory (NVCM) and Phase Locked Loops (PLLs). These features allow the devices to be used in low-cost, high-volume consumer and system applications.
 
@@ -108,15 +110,13 @@ FPGAwars
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``icezum``
-      - `IceZUM Alhambra FPGA <https://github.com/FPGAwars/icezum/wiki?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_lattice_ice40_icezum`
       - No
       - ICE40-HX1K-TQ144
       - 12MHz
@@ -129,15 +129,13 @@ Lattice
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``icestick``
-      - `Lattice iCEstick FPGA Evaluation Kit <http://www.latticesemi.com/icestick?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_lattice_ice40_icestick`
       - No
       - ICE40-HX1K-TQ144
       - 12MHz

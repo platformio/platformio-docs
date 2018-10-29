@@ -55,7 +55,6 @@ Project Examples
 
 * `Embedded: Wiring Blink <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/wiring-blink>`_
 * `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`__
-* `Labmet Weather Station <https://github.com/lab804/labmet-weatherstation>`_
 * `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`__
 
 For the other examples and source code please follow to
@@ -67,11 +66,10 @@ Configuration
 
 |PIOUTE| can be configured from :ref:`projectconf`
 
-* :ref:`projectconf_test_filter`
-* :ref:`projectconf_test_ignore`
-* :ref:`projectconf_test_port`
-* :ref:`projectconf_test_speed`
-* :ref:`projectconf_test_transport`
+.. toctree::
+  :maxdepth: 2
+
+  ../projectconf/section_env_test
 
 Test Types
 ----------
@@ -122,6 +120,8 @@ Allows you to run a test on a host machine or on a target device (board) which
 is directly connected to the host machine. In this case, you need to use the
 :ref:`cmd_test` command.
 
+.. _unit_testing_remote:
+
 Remote
 ~~~~~~
 
@@ -149,7 +149,7 @@ Workflow
         ;   Library options: dependencies, extra library storages
         ;
         ; Please visit documentation for the other options and examples
-        ; http://docs.platformio.org/page/projectconf.html
+        ; https://docs.platformio.org/page/projectconf.html
 
         ;
         ; Embedded platforms
@@ -321,8 +321,8 @@ Summary of the `Unity Test API <https://github.com/ThrowTheSwitch/Unity#unity-te
   - ``TEST_ASSERT_EQUAL_MEMORY(expected, actual, len)``
 
 
-User Guide (CLI)
-----------------
+CLI Guide
+---------
 
 .. toctree::
     :maxdepth: 3

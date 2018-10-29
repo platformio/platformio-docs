@@ -13,7 +13,9 @@
 
 Pumbaa
 ======
-:ref:`projectconf_env_framework` = ``pumbaa``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``pumbaa``
 
 Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
 
@@ -54,17 +56,15 @@ MakerAsia
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``nano32``
-      - `MakerAsia Nano32 <http://iot-bits.com/nano32-esp32-development-board?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Espressif 32 <platform_espressif32>`
+    * - :ref:`board_espressif32_nano32`
+      - :ref:`platform_espressif32`
       - No
       - ESP32
       - 240MHz

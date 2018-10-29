@@ -63,7 +63,10 @@ Examples
     framework = arduino
     board = pro8MHzatmega328
     upload_protocol = usbasp
-    upload_flags = -Pusb -B5
+    ; each flag in a new line
+    upload_flags =
+      -Pusb
+      -B5
 
 Then upload firmware using target ``program`` for :option:`platformio run --target`.
 command. To use other programmers see :ref:`atmelavr_upload_via_programmer`.

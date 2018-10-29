@@ -13,7 +13,9 @@
 
 Silicon Labs EFM32
 ==================
-:ref:`projectconf_env_platform` = ``siliconlabsefm32``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``siliconlabsefm32``
 
 Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
 
@@ -43,13 +45,13 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -59,62 +61,53 @@ You can switch between debugging :ref:`debugging_tools` using
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug tool and **ARE READY** for debugging!
-You do not need to use/buy external debug tool.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``efm32gg_stk3700``
-      - `Silicon Labs EFM32GG-STK3700 (Giant Gecko) <https://developer.mbed.org/platforms/EFM32-Giant-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
+    * - :ref:`board_siliconlabsefm32_efm32gg_stk3700`
       - EFM32GG990F1024
       - 48MHz
       - 1MB
       - 128KB
-    * - ``efm32hg_stk3400``
-      - `Silicon Labs SLSTK3400A USB-enabled (Happy Gecko) <https://developer.mbed.org/platforms/EFM32-Happy-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFM32HG322F64
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - ``efm32lg_stk3600``
-      - `Silicon Labs EFM32LG-STK3600 (Leopard Gecko) <https://developer.mbed.org/platforms/EFM32-Leopard-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
+    * - :ref:`board_siliconlabsefm32_efm32lg_stk3600`
       - EFM32LG990F256
       - 48MHz
       - 256KB
       - 32KB
-    * - ``efm32pg_stk3401``
-      - `Silicon Labs SLSTK3401A (Pearl Gecko) <https://developer.mbed.org/platforms/EFM32-Pearl-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
-      - EFM32PG1B200F256
-      - 40MHz
-      - 256KB
-      - 32KB
-    * - ``efm32wg_stk3800``
-      - `Silicon Labs EFM32WG-STK3800 (Wonder Gecko) <https://developer.mbed.org/platforms/EFM32-Wonder-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
+    * - :ref:`board_siliconlabsefm32_efm32wg_stk3800`
       - EFM32WG990F256
       - 48MHz
       - 256KB
       - 32KB
-    * - ``efm32zg_stk3200``
-      - `Silicon Labs EFM32ZG-STK3200 (Zero Gecko) <https://developer.mbed.org/platforms/EFM32-Zero-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`
+    * - :ref:`board_siliconlabsefm32_efm32zg_stk3200`
       - EFM32ZG222F32
       - 24MHz
       - 32KB
       - 4KB
+    * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
+      - EFM32HG322F64
+      - 25MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_siliconlabsefm32_efm32pg_stk3401`
+      - EFM32PG1B200F256GM48
+      - 40MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_siliconlabsefm32_tb_sense_12`
+      - EFR32MG12P432F1024
+      - 40MHz
+      - 1MB
+      - 256KB
 
 
 Stable and upstream versions
@@ -161,8 +154,8 @@ Packages
     * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
-      - OpenOCD
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+      - SEGGER J-Link Software and Documentation Pack
 
     * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
       - gcc-arm-embedded
@@ -207,52 +200,51 @@ Silicon Labs
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``efm32gg_stk3700``
-      - `Silicon Labs EFM32GG-STK3700 (Giant Gecko) <https://developer.mbed.org/platforms/EFM32-Giant-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_siliconlabsefm32_efm32gg_stk3700`
+      - On-board
       - EFM32GG990F1024
       - 48MHz
       - 1MB
       - 128KB
-    * - ``efm32hg_stk3400``
-      - `Silicon Labs SLSTK3400A USB-enabled (Happy Gecko) <https://developer.mbed.org/platforms/EFM32-Happy-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - EFM32HG322F64
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - ``efm32lg_stk3600``
-      - `Silicon Labs EFM32LG-STK3600 (Leopard Gecko) <https://developer.mbed.org/platforms/EFM32-Leopard-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_siliconlabsefm32_efm32lg_stk3600`
+      - On-board
       - EFM32LG990F256
       - 48MHz
       - 256KB
       - 32KB
-    * - ``efm32pg_stk3401``
-      - `Silicon Labs SLSTK3401A (Pearl Gecko) <https://developer.mbed.org/platforms/EFM32-Pearl-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - EFM32PG1B200F256
-      - 40MHz
-      - 256KB
-      - 32KB
-    * - ``efm32wg_stk3800``
-      - `Silicon Labs EFM32WG-STK3800 (Wonder Gecko) <https://developer.mbed.org/platforms/EFM32-Wonder-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_siliconlabsefm32_efm32wg_stk3800`
+      - On-board
       - EFM32WG990F256
       - 48MHz
       - 256KB
       - 32KB
-    * - ``efm32zg_stk3200``
-      - `Silicon Labs EFM32ZG-STK3200 (Zero Gecko) <https://developer.mbed.org/platforms/EFM32-Zero-Gecko/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_siliconlabsefm32_efm32zg_stk3200`
+      - On-board
       - EFM32ZG222F32
       - 24MHz
       - 32KB
       - 4KB
+    * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
+      - On-board
+      - EFM32HG322F64
+      - 25MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_siliconlabsefm32_efm32pg_stk3401`
+      - On-board
+      - EFM32PG1B200F256GM48
+      - 40MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_siliconlabsefm32_tb_sense_12`
+      - On-board
+      - EFR32MG12P432F1024
+      - 40MHz
+      - 1MB
+      - 256KB

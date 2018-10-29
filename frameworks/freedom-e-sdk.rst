@@ -13,7 +13,9 @@
 
 Freedom E SDK
 =============
-:ref:`projectconf_env_framework` = ``freedom-e-sdk``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``freedom-e-sdk``
 
 Open Source Software for Developing on the SiFive Freedom E Platform
 
@@ -33,13 +35,13 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -49,25 +51,21 @@ You can switch between debugging :ref:`debugging_tools` using
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug tool and **ARE READY** for debugging!
-You do not need to use/buy external debug tool.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
-      - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``freedom-e300-hifive1``
-      - `HiFive1 <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`RISC-V <platform_riscv>`
-      - :ref:`debugging_tool_ftdi` (on-board)
+    * - :ref:`board_riscv_freedom-e300-hifive1`
+      - :ref:`platform_riscv`
       - FE310
       - 320MHz
       - 16MB
@@ -78,34 +76,29 @@ External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
 Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug tool. See "Debug" column for compatible debug tools.
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
-      - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``coreplexip-e31-arty``
-      - `Freedom E310 Arty (Artix-7) FPGA Dev Kit <http://www.xilinx.com/products/boards-and-kits/arty.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`RISC-V <platform_riscv>`
-      - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-      - E31
-      - 320MHz
-      - 16MB
-      - 256MB
-    * - ``coreplexip-e51-arty``
-      - `E51 Arty (Artix-7) FPGA Dev Kit <http://www.xilinx.com/products/boards-and-kits/arty.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`RISC-V <platform_riscv>`
-      - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+    * - :ref:`board_riscv_coreplexip-e51-arty`
+      - :ref:`platform_riscv`
       - E51
       - 1500MHz
+      - 16MB
+      - 256MB
+    * - :ref:`board_riscv_coreplexip-e31-arty`
+      - :ref:`platform_riscv`
+      - E31
+      - 320MHz
       - 16MB
       - 256MB
 
@@ -140,18 +133,16 @@ SiFive
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``freedom-e300-hifive1``
-      - `HiFive1 <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`RISC-V <platform_riscv>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_riscv_freedom-e300-hifive1`
+      - :ref:`platform_riscv`
+      - On-board
       - FE310
       - 320MHz
       - 16MB
@@ -163,27 +154,24 @@ Xilinx
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``coreplexip-e31-arty``
-      - `Freedom E310 Arty (Artix-7) FPGA Dev Kit <http://www.xilinx.com/products/boards-and-kits/arty.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`RISC-V <platform_riscv>`
-      - :ref:`Yes <piodebug>`
-      - E31
-      - 320MHz
-      - 16MB
-      - 256MB
-    * - ``coreplexip-e51-arty``
-      - `E51 Arty (Artix-7) FPGA Dev Kit <http://www.xilinx.com/products/boards-and-kits/arty.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`RISC-V <platform_riscv>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_riscv_coreplexip-e51-arty`
+      - :ref:`platform_riscv`
+      - External
       - E51
       - 1500MHz
+      - 16MB
+      - 256MB
+    * - :ref:`board_riscv_coreplexip-e31-arty`
+      - :ref:`platform_riscv`
+      - External
+      - E31
+      - 320MHz
       - 16MB
       - 256MB

@@ -13,7 +13,9 @@
 
 Teensy
 ======
-:ref:`projectconf_env_platform` = ``teensy``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``teensy``
 
 Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
@@ -48,13 +50,13 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -65,43 +67,34 @@ External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
 Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug tool. See "Debug" column for compatible debug tools.
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``teensy31``
-      - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink`
+    * - :ref:`board_teensy_teensy31`
       - MK20DX256
       - 72MHz
       - 256KB
       - 64KB
-    * - ``teensy35``
-      - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink`
+    * - :ref:`board_teensy_teensy35`
       - MK64FX512
       - 120MHz
       - 512KB
-      - 192KB
-    * - ``teensy36``
-      - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink`
+      - 255.99KB
+    * - :ref:`board_teensy_teensy36`
       - MK66FX1M0
       - 180MHz
       - 1MB
       - 256KB
-    * - ``teensylc``
-      - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink`
+    * - :ref:`board_teensy_teensylc`
       - MKL26Z64
       - 48MHz
       - 62KB
@@ -214,59 +207,51 @@ Teensy
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``teensy20``
-      - `Teensy 2.0 <https://www.pjrc.com/store/teensy.html?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_teensy_teensy20`
       - No
       - ATMEGA32U4
       - 16MHz
       - 31.50KB
       - 2.50KB
-    * - ``teensy20pp``
-      - `Teensy++ 2.0 <https://www.pjrc.com/store/teensypp.html?utm_source=platformio&utm_medium=docs>`_
-      - No
-      - AT90USB1286
-      - 16MHz
-      - 127KB
-      - 8KB
-    * - ``teensy30``
-      - `Teensy 3.0 <https://www.pjrc.com/store/teensy3.html?utm_source=platformio&utm_medium=docs>`_
+    * - :ref:`board_teensy_teensy30`
       - No
       - MK20DX128
       - 48MHz
       - 128KB
       - 16KB
-    * - ``teensy31``
-      - `Teensy 3.1 / 3.2 <https://www.pjrc.com/store/teensy31.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_teensy_teensy31`
+      - External
       - MK20DX256
       - 72MHz
       - 256KB
       - 64KB
-    * - ``teensy35``
-      - `Teensy 3.5 <https://www.pjrc.com/store/teensy35.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_teensy_teensy35`
+      - External
       - MK64FX512
       - 120MHz
       - 512KB
-      - 192KB
-    * - ``teensy36``
-      - `Teensy 3.6 <https://www.pjrc.com/store/teensy36.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+      - 255.99KB
+    * - :ref:`board_teensy_teensy36`
+      - External
       - MK66FX1M0
       - 180MHz
       - 1MB
       - 256KB
-    * - ``teensylc``
-      - `Teensy LC <http://www.pjrc.com/teensy/teensyLC.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_teensy_teensylc`
+      - External
       - MKL26Z64
       - 48MHz
       - 62KB
+      - 8KB
+    * - :ref:`board_teensy_teensy20pp`
+      - No
+      - AT90USB1286
+      - 16MHz
+      - 127KB
       - 8KB

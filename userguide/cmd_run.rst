@@ -60,6 +60,7 @@ Built-in targets:
 
     + ``clean`` delete compiled object files, libraries and firmware/program binaries
     + ``upload`` firmware "auto-uploading" for embedded platforms
+    + ``debug`` build using :ref:`Debug Configuration <build_configurations>`
     + ``program`` firmware "auto-uploading" for embedded platforms using external
       programmer (available only for :ref:`platform_atmelavr`)
     + ``fuses`` set fuse bits (available only for :ref:`platform_atmelavr`)

@@ -30,11 +30,11 @@ PlatformIO allows to use specific version of platform using
 
 Version specifications can take any of the following forms:
 
-* ``0.1.2``: an exact version number. Use only this exact version
-* ``^0.1.2``: any compatible version (exact version for ``0.x.x`` versions
-* ``~0.1.2``: any version with the same major and minor versions, and an
+* ``1.2.3``: an exact version number. Use only this exact version
+* ``^1.2.3``: any compatible version (exact version for ``1.x.x`` versions)
+* ``~1.2.3``: any version with the same major and minor versions, and an
   equal or greater patch version
-* ``>0.1.2``: any version greater than ``0.1.2``. ``>=``, ``<``, and ``<=``
+* ``>1.2.3``: any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
   are also possible
 * ``>0.1.0,!=0.2.0,<0.3.0``: any version greater than ``0.1.0``, not equal to
   ``0.2.0`` and less than ``0.3.0``
@@ -48,11 +48,14 @@ Examples:
     [env:the_latest_version]
     platform = atmelavr
 
+    [env:exact_version]
+    platform = atmelavr@1.2.3
+
     [env:specific_major_version]
-    platform = atmelavr@^0.1.2
+    platform = atmelavr@^1.2.3
 
     [env:specific_major_and_minor_version]
-    platform = atmelavr@~0.1.2
+    platform = atmelavr@~1.2.3
 
     [env:development_verion_by_git]
     platform = https://github.com/platformio/platform-ststm32.git
@@ -77,13 +80,16 @@ The multiple frameworks are allowed, *split them with comma+space ", "*.
 ``board``
 ^^^^^^^^^
 
-*PlatformIO* has pre-configured settings for the most popular boards. You don't
-need to specify ``board_build.mcu``, ``board_build.f_cpu``, ``upload_protocol`` or
-``upload_speed`` options. Just define a ``board`` type and *PlatformIO* will
-pre-fill options described above with appropriate values.
+*PlatformIO* has pre-configured settings for the most popular boards:
 
-You can find the ``board`` type in *Boards* section of each :ref:`platforms` or
-using `PlatformIO Embedded Boards Explorer <https://platformio.org/boards>`_.
+- build configuration
+- upload configuration
+- debugging configuration
+- connectivity information, etc.
+
+You can find a valid  ``board`` ID in :ref:`boards` catalog,
+`Boards Explorer <https://platformio.org/boards>`_ or
+:ref:`cmd_boards` command.
 
 .. _projectconf_targets:
 
@@ -96,12 +102,18 @@ comma+space **", "**.
 
 The list with available targets is located in :option:`platformio run --target`.
 
-**Example**: build a project, upload firmware and start :ref:`Serial Monitor <cmd_device_monitor>` automatically.
+**Examples**
 
-.. code-block:: ini
+1. Build a project using :ref:`Release Configuration <build_configurations>`,
+   upload firmware, and start :ref:`Serial Monitor <cmd_device_monitor>`
+   automatically:
 
-   [env:upload_and_monitor]
-   targets = upload, monitor
+    .. code-block:: ini
+
+       [env:upload_and_monitor]
+       targets = upload, monitor
+
+2. Build a project using :ref:`Debug Configuration <build_configurations>`.
 
 
 **Tip!** You can use these targets like an option to

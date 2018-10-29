@@ -13,7 +13,9 @@
 
 Native
 ======
-:ref:`projectconf_env_platform` = ``native``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``native``
 
 Native development platform is intended to be used for desktop OS. This platform uses built-in toolchains (preferable based on GCC), frameworks, libs from particular OS where it will be run.
 

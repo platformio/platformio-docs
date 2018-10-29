@@ -52,7 +52,7 @@ Contents
     librarymanager/index
     Platforms <platforms/index>
     frameworks/index
-    Boards <platforms/embedded_boards>
+    boards/index
     platforms/custom_platform_and_board
 
 .. toctree::

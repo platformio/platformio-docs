@@ -13,7 +13,9 @@
 
 WIZNet W7500
 ============
-:ref:`projectconf_env_platform` = ``wiznet7500``
+
+:Configuration:
+  :ref:`projectconf_env_platform` = ``wiznet7500``
 
 The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
@@ -44,13 +46,13 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -60,37 +62,29 @@ You can switch between debugging :ref:`debugging_tools` using
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug tool and **ARE READY** for debugging!
-You do not need to use/buy external debug tool.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``wizwiki_w7500``
-      - `WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+    * - :ref:`board_wiznet7500_wizwiki_w7500`
       - WIZNET7500
       - 48MHz
       - 128KB
       - 48KB
-    * - ``wizwiki_w7500eco``
-      - `WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+    * - :ref:`board_wiznet7500_wizwiki_w7500eco`
       - WIZNET7500ECO
       - 48MHz
       - 128KB
       - 48KB
-    * - ``wizwiki_w7500p``
-      - `WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink`
+    * - :ref:`board_wiznet7500_wizwiki_w7500p`
       - WIZNET7500P
       - 48MHz
       - 128KB
@@ -190,30 +184,26 @@ WIZNet
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``wizwiki_w7500``
-      - `WIZwiki-W7500 <https://developer.mbed.org/platforms/WIZwiki-W7500/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_wiznet7500_wizwiki_w7500`
+      - On-board
       - WIZNET7500
       - 48MHz
       - 128KB
       - 48KB
-    * - ``wizwiki_w7500eco``
-      - `WIZwiki-W7500ECO <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_wiznet7500_wizwiki_w7500eco`
+      - On-board
       - WIZNET7500ECO
       - 48MHz
       - 128KB
       - 48KB
-    * - ``wizwiki_w7500p``
-      - `WIZwiki-W7500P <https://developer.mbed.org/platforms/WIZwiki-W7500P/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_wiznet7500_wizwiki_w7500p`
+      - On-board
       - WIZNET7500P
       - 48MHz
       - 128KB

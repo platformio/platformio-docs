@@ -192,6 +192,6 @@ Command:
 
     $ platformio lib register http://my.example.com/library.json
 
-* `GitHub + fixed release <https://platformio.org/lib/show/552/ACNoblex>`_
+* `GitHub + detached release <https://platformio.org/lib/show/552/ACNoblex>`_
 * `Dependencies by author and framework <https://platformio.org/lib/show/3/PID-AutoTune>`_
 * `Multiple libraries in the one repository <https://github.com/jrowberg/i2cdevlib/tree/master/Arduino>`_

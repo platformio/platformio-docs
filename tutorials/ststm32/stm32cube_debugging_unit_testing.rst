@@ -21,6 +21,7 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_at
 
 **Requirements:**
     - Downloaded and installed :ref:`ide_atom`
+    - Install drivers for :ref:`debugging_tool_stlink` debug tool
     - `Nucleo-F401RE <http://www.st.com/en/evaluation-tools/nucleo-f401re.html>`_ development board
 
 
@@ -30,36 +31,22 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_at
 Setting Up the Project
 ----------------------
 
-There are two ways how to create a new project in PlatformIO IDE: using "New Project" button menu on Home Page or
-using ``Menu: PlatformIO > Initialize or Update PlatformIO Project``:
+At first step, we need to create a new project using PlatformIO Home Page (to open this page just press Home icon on the toolbar):
 
 .. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-1.png
 
-On the next step we choose the desired board (in our case it’s ``ST Nucleo-F401RE``) and also select a directory for our project:
+On the next step, we need to select ``ST Nucleo-F401RE`` as a development board, :ref:`framework_stm32cube` as a framework and a path to the project location (or use the default one):
 
 .. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-2.png
 
-After processing the selected options (PlatformIO IDE will download and install all required packages, thus the first installation may take some amount of time), we should now have the new project created with the following folder structure:
-
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-3.png
-
-The default framework used with ``ST Nucleo-F401RE`` board is :ref:`framework_mbed`, but since we decided to use :ref:`framework_stm32cube` we need to change the framework parameter in :ref:`projectconf` to the next one:
-
-.. code-block:: ini
-
-    [env:nucleo_f401re]
-    platform = ststm32
-    board = nucleo_f401re
-    framework = stm32cube
-
-After these steps, we have a fully configured project that is ready for developing code with :ref:`framework_stm32cube` framework.
+Processing the selected project may take some amount of time (PlatformIO will download and install all required packages) and after these steps, we have a fully configured project that is ready for developing code with :ref:`framework_stm32cube` framework.
 
 Adding Code to the Generated Project
 ------------------------------------
 
 Let's add some actual code to the project. Firstly, we create two main files ``main.c`` and ``main.h`` in the :ref:`projectconf_pio_src_dir` folder. Right click on the ``src`` in the project window:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-4.png
+.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-3.png
 
 Add next content to ``main.h``:
 
@@ -116,36 +103,36 @@ After this step, we created a basic blink project that is ready for compiling an
 Compiling and Uploading the Firmware
 ------------------------------------
 
-Now we can build the project. To compile firmware we can use three options:
-Using Build button on :ref:`atom_ide_platformio_toolbar`, using ``Menu: PlatformIO > Build`` option from top menu, using targets list in bottom left corner or via hotkeys ``cmd-alt-b / ctrl-alt-b / f9``:
+Now we can build the project. To compile firmware we can use next options:
+Build option on the ``Project Tasks`` menu, Build button on :ref:`ide_vscode_toolbar`, using Command Palette ``View: Command Palette > PlatformIO: Build``, using Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
+
+.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-4.png
+
+If everything went well, we should see the successful result in the terminal window:
 
 .. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-5.png
 
-If everything went well, we should see successful result in the terminal window:
+To upload the firmware to the board we can use next options:
+Upload option on the ``Project Tasks`` menu, Upload button on :ref:`ide_vscode_toolbar`, using Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
 
 .. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-6.png
-
-Now we can upload firmware to the board:
-Using Build button on :ref:`atom_ide_platformio_toolbar`, using ``Menu: PlatformIO > Upload`` from top menu, using targets list in bottom left corner or via hotkeys ``cmd-alt-u / ctrl-alt-u``
-
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-7.png
 
 After successful uploading, the green LED2 should start blinking.
 
 Debugging the Firmware
 ----------------------
 
-:ref:`piodebug` offers the easiest way to debug your board. Just click Debug button on :ref:`atom_ide_platformio_toolbar` or use ``Menu: PlatformIO > Debug > Start new debug session``:
+:ref:`piodebug` offers the easiest way to debug your board. To start debugging session you can use ``Start debugging`` option in ``PlatformIO Quick Access`` menu, ``Debug: Start debugging`` from the top menu or hotkey button ``F5``:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-8.png
+.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-7.png
 
 We need to wait some time while PlatformIO is initializing debug session and when the first line after the main function is highlighted we are ready to debug:
 
+.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-8.png
+
+We can walk through the code using control buttons, set breakpoints, see peripheral registers, add variables to ``Watch window``:
+
 .. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-9.png
-
-We can walk through the code using control buttons, set breakpoints, add variables to ``Watch window``:
-
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-10.png
 
 Writing Unit Tests
 ------------------
@@ -160,9 +147,11 @@ Now let’s write some tests using :ref:`unit_testing` feature that can help us 
   framework = stm32cube
   test_transport = custom
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-11.png
+Also, we need to create a new folder ``test`` where the tests and custom :ref:`projectconf_test_transport` implementation (described next) will be located:
 
-We will use ``USART2`` on ``ST Nucleo-F401RE`` board because it's directly connected to the STLink debug interface and in OS it can be visible as a Virtual Com Port, so we don't need any additional USB-UART converter. To implement the custom :ref:`projectconf_test_transport` we need to create two files ``unittest_transport.h`` and ``unittest_transport.c`` and put them in the :ref:`projectconf_pio_test_dir` in the root folder of our project. In these files we need to implement next four functions:
+.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-10.png
+
+We will use ``USART2`` on ``ST Nucleo-F401RE`` board because it's directly connected to the STLink debug interface and in OS it can be visible as a Virtual Com Port, so we don't need any additional USB-UART converter. To implement the custom :ref:`projectconf_test_transport` we need to create two files ``unittest_transport.h`` and ``unittest_transport.c`` and put them in the :ref:`projectconf_pio_test_dir` in the root folder of our project. In these files we need to implement the next four functions:
 
 .. code-block:: cpp
 
@@ -270,20 +259,24 @@ Implementation of unittest_transport.c:
       USARTx_TX_GPIO_CLK_DISABLE();
     }
 
-Now we need to add some test cases. Tests can be added to a single C file that may include multiple tests. First of all, in this file we need to add three default functions: ``setUp``, ``tearDown`` and ``main``. ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example we will use these functions to accordingly initialize and deinitialize LED.  ``main`` function acts as a simple program where we describe our test plan.
+Now we need to add some test cases. Tests can be added to a single C file that may include multiple tests. First of all, we need to add three default functions: ``setUp``, ``tearDown`` and ``main``. ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example, we will use these functions to accordingly initialize and deinitialize LED.  ``main`` function acts as a simple program where we describe our test plan.
 
-Let’s implement some basic tests for blinking routine:
+Let's add a new file ``test_main.c`` to the folder ``test``. Next basic tests for blinking routine will be implemented in this file:
+
+* ``test_led_builtin_pin_number`` ensures that ``LED_PIN`` has the correct value
+* ``test_led_state_high``  tests functions ``HAL_GPIO_WritePin`` and ``HAL_GPIO_ReadPin`` with ``GPIO_PIN_SET`` value
+* ``test_led_state_low``  tests functions ``HAL_GPIO_WritePin`` and ``HAL_GPIO_ReadPin`` with ``GPIO_PIN_RESET`` value
+
+.. note::
+  * 2 sec delay is required  since the board doesn't support software resetting  via ``Serial.DTR/RTS``
 
 .. code-block:: cpp
 
-    #include <main.h>
+    #include "../src/main.h"
     #include <unity.h>
 
     void setUp(void) {
-        HAL_Init();
-
         LED_GPIO_CLK_ENABLE();
-
         GPIO_InitTypeDef GPIO_InitStruct;
         GPIO_InitStruct.Pin = LED_PIN;
         GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -297,20 +290,22 @@ Let’s implement some basic tests for blinking routine:
     }
 
     void test_led_builtin_pin_number(void) {
-        TEST_ASSERT_EQUAL(LED_PIN, GPIO_PIN_5);
+        TEST_ASSERT_EQUAL(GPIO_PIN_5, LED_PIN);
     }
 
     void test_led_state_high(void) {
         HAL_GPIO_WritePin(LED_GPIO_PORT, LED_PIN, GPIO_PIN_SET);
-        TEST_ASSERT_EQUAL(HAL_GPIO_ReadPin(LED_GPIO_PORT, LED_PIN), GPIO_PIN_SET);
+        TEST_ASSERT_EQUAL(GPIO_PIN_SET, HAL_GPIO_ReadPin(LED_GPIO_PORT, LED_PIN));
     }
 
     void test_led_state_low(void) {
         HAL_GPIO_WritePin(LED_GPIO_PORT, LED_PIN, GPIO_PIN_RESET);
-        TEST_ASSERT_EQUAL(HAL_GPIO_ReadPin(LED_GPIO_PORT, LED_PIN), GPIO_PIN_RESET);
+        TEST_ASSERT_EQUAL(GPIO_PIN_RESET, HAL_GPIO_ReadPin(LED_GPIO_PORT, LED_PIN));
     }
 
     int main() {
+        HAL_Init();         // initialize the HAL library
+        HAL_Delay(2000);    // service delay
         UNITY_BEGIN();
         RUN_TEST(test_led_builtin_pin_number);
 
@@ -327,14 +322,18 @@ Let’s implement some basic tests for blinking routine:
         while(1){}
     }
 
+    void SysTick_Handler(void) {
+        HAL_IncTick();
+    }
 
-Now we are ready to upload tests to the board. To do this we can use ``Menu: PlatformIO > Test (Unit Testing)`` from top menu or targets list in bottom left corner:
+
+Now we are ready to upload tests to the board. To do this we can use ``Test`` option from the Project Tasks menu, ``Tasks: Run Task... > PlatformIO Test`` option from the top menu or Test button on :ref:`ide_vscode_toolbar`:
+
+.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-11.png
+
+After processing we should see a detailed report about the testing results:
 
 .. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-12.png
-
-After processing we should see a detailed report about testing results:
-
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-13.png
 
 Congratulations! As we can see from the report, all our tests went successfully!
 

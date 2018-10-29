@@ -13,7 +13,9 @@
 
 CMSIS
 =====
-:ref:`projectconf_env_framework` = ``cmsis``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``cmsis``
 
 The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
 
@@ -33,13 +35,13 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -49,117 +51,94 @@ You can switch between debugging :ref:`debugging_tools` using
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug tool and **ARE READY** for debugging!
-You do not need to use/buy external debug tool.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
-      - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``cloud_jam``
-      - `RushUp Cloud-JAM <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_ststm32_cloud_jam`
+      - :ref:`platform_ststm32`
       - STM32F401RET6
       - 84MHz
       - 512KB
       - 96KB
-    * - ``disco_f303vc``
-      - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_ststm32_nucleo_f401re`
+      - :ref:`platform_ststm32`
+      - STM32F401RET6
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_ststm32_disco_f303vc`
+      - :ref:`platform_ststm32`
       - STM32F303VCT6
       - 72MHz
       - 256KB
       - 48KB
-    * - ``disco_f407vg``
-      - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+    * - :ref:`board_ststm32_disco_f407vg`
+      - :ref:`platform_ststm32`
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
-    * - ``disco_l152rb``
-      - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
+      - 192KB
+    * - :ref:`board_ststm32_disco_l152rb`
+      - :ref:`platform_ststm32`
       - STM32L152RBT6
       - 32MHz
       - 128KB
       - 16KB
-    * - ``nucleo_f401re``
-      - `ST Nucleo F401RE <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_stlink` (default, on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`
-      - STM32F401RET6
-      - 84MHz
-      - 512KB
-      - 96KB
 
 
 External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
 Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug tool. See "Debug" column for compatible debug tools.
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
-      - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``1bitsy_stm32f415rgt``
-      - `1Bitsy <http://1bitsy.org?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_ststm32_1bitsy_stm32f415rgt`
+      - :ref:`platform_ststm32`
       - STM32F415RGT
       - 168MHz
       - 1MB
       - 128KB
-    * - ``armstrap_eagle1024``
-      - `Armstrap Eagle 1024 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_ststm32_armstrap_eagle1024`
+      - :ref:`platform_ststm32`
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
-    * - ``armstrap_eagle2048``
-      - `Armstrap Eagle 2048 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_ststm32_armstrap_eagle2048`
+      - :ref:`platform_ststm32`
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
-    * - ``armstrap_eagle512``
-      - `Armstrap Eagle 512 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_ststm32_armstrap_eagle512`
+      - :ref:`platform_ststm32`
       - STM32F407VET6
       - 168MHz
       - 512KB
       - 192KB
-    * - ``bluepill_f103c8``
-      - `BluePill F103C8 <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_ststm32_bluepill_f103c8`
+      - :ref:`platform_ststm32`
       - STM32F103C8T6
       - 72MHz
       - 64KB
@@ -196,18 +175,16 @@ Boards
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``1bitsy_stm32f415rgt``
-      - `1Bitsy <http://1bitsy.org?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_ststm32_1bitsy_stm32f415rgt`
+      - :ref:`platform_ststm32`
+      - External
       - STM32F415RGT
       - 168MHz
       - 1MB
@@ -219,34 +196,30 @@ Armstrap
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``armstrap_eagle1024``
-      - `Armstrap Eagle 1024 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_ststm32_armstrap_eagle1024`
+      - :ref:`platform_ststm32`
+      - External
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
-    * - ``armstrap_eagle2048``
-      - `Armstrap Eagle 2048 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_ststm32_armstrap_eagle2048`
+      - :ref:`platform_ststm32`
+      - External
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
-    * - ``armstrap_eagle512``
-      - `Armstrap Eagle 512 <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_ststm32_armstrap_eagle512`
+      - :ref:`platform_ststm32`
+      - External
       - STM32F407VET6
       - 168MHz
       - 512KB
@@ -258,18 +231,16 @@ Generic
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``bluepill_f103c8``
-      - `BluePill F103C8 <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_ststm32_bluepill_f103c8`
+      - :ref:`platform_ststm32`
+      - External
       - STM32F103C8T6
       - 72MHz
       - 64KB
@@ -281,18 +252,16 @@ RushUp
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``cloud_jam``
-      - `RushUp Cloud-JAM <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_ststm32_cloud_jam`
+      - :ref:`platform_ststm32`
+      - On-board
       - STM32F401RET6
       - 84MHz
       - 512KB
@@ -304,43 +273,38 @@ ST
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``disco_f303vc``
-      - `ST STM32F3DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F303VCT6
-      - 72MHz
-      - 256KB
-      - 48KB
-    * - ``disco_f407vg``
-      - `ST STM32F4DISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32F407VGT6
-      - 168MHz
-      - 1MB
-      - 128KB
-    * - ``disco_l152rb``
-      - `ST STM32LDISCOVERY <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF258515?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
-      - STM32L152RBT6
-      - 32MHz
-      - 128KB
-      - 16KB
-    * - ``nucleo_f401re``
-      - `ST Nucleo F401RE <https://developer.mbed.org/platforms/ST-Nucleo-F401RE/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`ST STM32 <platform_ststm32>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_ststm32_nucleo_f401re`
+      - :ref:`platform_ststm32`
+      - On-board
       - STM32F401RET6
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_disco_f303vc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F303VCT6
+      - 72MHz
+      - 256KB
+      - 48KB
+    * - :ref:`board_ststm32_disco_f407vg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F407VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_disco_l152rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L152RBT6
+      - 32MHz
+      - 128KB
+      - 16KB

@@ -13,7 +13,9 @@
 
 Tizen RT
 ========
-:ref:`projectconf_env_framework` = ``tizenrt``
+
+:Configuration:
+  :ref:`projectconf_env_framework` = ``tizenrt``
 
 Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
 
@@ -33,41 +35,37 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
     Please click on compatible debug tool below for the further instructions.
 
 
-External Debug Tools
+On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug tool. See "Debug" column for compatible debug tools.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
-      - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``artik_053``
-      - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Samsung ARTIK <platform_samsung_artik>`
-      - :ref:`debugging_tool_ftdi` (default)
+    * - :ref:`board_samsung_artik_artik_053`
+      - :ref:`platform_samsung_artik`
       - S5JT200
       - 320MHz
       - 8MB
@@ -104,18 +102,16 @@ Samsung
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Platform
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``artik_053``
-      - `Samsung ARTIK053 <http://www.artik.io?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Samsung ARTIK <platform_samsung_artik>`
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_samsung_artik_artik_053`
+      - :ref:`platform_samsung_artik`
+      - On-board
       - S5JT200
       - 320MHz
       - 8MB

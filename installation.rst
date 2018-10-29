@@ -55,11 +55,7 @@ System requirements
 
     **Linux Users**:
 
-    * Ubuntu/Debian users may need to add own "username" to the "dialout"
-      group if they are not "root", doing this issuing a
-      ``sudo usermod -a -G dialout yourusername``.
-    * Install "udev" rules file `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_
-      (an instruction is located in the file).
+    * Please install :ref:`faq_udev_rules`
     * Raspberry Pi users, please read this article
       `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -273,10 +269,12 @@ Creating
     .. code-block:: bash
 
         # Windows
-        /path/to/.platformio/penv/Scripts/activate
+        C:\Users\UserName\.platformio\penv
 
         # Unix (Linux, Mac)
-        /path/to/.platformio/penv/bin/activate
+        source /path/to/.platformio/penv/bin/activate
+        # or
+        . /path/to/.platformio/penv/bin/activate
 
 3.  Install PIO Core into virtual environment
 
@@ -366,7 +364,7 @@ the code above, then edit ``~/.zprofile`` and add the following line:
 
     emulate sh -c '. ~/.profile'
 
-After everithing's done, just restart your session (log out and log back in) and you're good to go.
+After everything's done, just restart your session (log out and log back in) and you're good to go.
 
 If you don't know the difference between the two, check out `this page <https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc>`_.
 

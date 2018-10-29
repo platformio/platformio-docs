@@ -13,9 +13,11 @@
 
 Nordic nRF52
 ============
-:ref:`projectconf_env_platform` = ``nordicnrf52``
 
-The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market. 
+:Configuration:
+  :ref:`projectconf_env_platform` = ``nordicnrf52``
+
+The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
 For more detailed information please visit `vendor site <https://www.nordicsemi.com/Products/nRF52-Series-SoC?utm_source=platformio&utm_medium=docs>`_.
 
@@ -36,6 +38,7 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 * `mbed-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-nfc <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-nfc?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
@@ -48,13 +51,13 @@ Debugging
     :local:
 
 
-Debug Tools
-~~~~~~~~~~~
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` options.
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -64,58 +67,44 @@ You can switch between debugging :ref:`debugging_tools` using
 On-Board Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug tool and **ARE READY** for debugging!
-You do not need to use/buy external debug tool.
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``delta_dfbm_nq620``
-      - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
-    * - ``nrf52840_dk``
-      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_nordicnrf52_nrf52_dk`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk`
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
-    * - ``nrf52_dk``
-      - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_nordicnrf52_redbear_blenano2`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
-    * - ``redbear_blenano2``
-      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_nordicnrf52_redbear_blend2`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
-    * - ``redbear_blend2``
-      - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_cmsis-dap` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - ``ublox_evk_nina_b1``
-      - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_jlink` (on-board), :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
       - NRF52832
       - 64MHz
       - 512KB
@@ -126,22 +115,29 @@ External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
 Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug tool. See "Debug" column for compatible debug tools.
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
 
 
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
-      - Debug
+    * - Name
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``stct_nrf52_minidev``
-      - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`debugging_tool_blackmagic`, :ref:`debugging_tool_jlink`, :ref:`debugging_tool_stlink`
+    * - :ref:`board_nordicnrf52_bluey`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_hackaBLE`
       - NRF52832
       - 64MHz
       - 512KB
@@ -253,16 +249,39 @@ Delta
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``delta_dfbm_nq620``
-      - `Delta DFBM-NQ620 <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
+Electronut Labs
+~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_bluey`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_hackaBLE`
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -274,27 +293,24 @@ Nordic
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``nrf52840_dk``
-      - `Nordic nRF52840-DK <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - ``nrf52_dk``
-      - `Nordic nRF52-DK <https://developer.mbed.org/platforms/Nordic-nRF52-DK/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_nordicnrf52_nrf52_dk`
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
 
 RedBearLab
 ~~~~~~~~~~
@@ -302,23 +318,20 @@ RedBearLab
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``redbear_blenano2``
-      - `RedBearLab BLE Nano 2 <https://redbear.cc/product/ble-nano-2-soldered.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_nordicnrf52_redbear_blenano2`
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
-    * - ``redbear_blend2``
-      - `RedBearLab Blend 2 <https://redbear.cc/product/ble/blend-2.html?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_nordicnrf52_redbear_blend2`
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
@@ -330,16 +343,14 @@ Taida Century
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``stct_nrf52_minidev``
-      - `Taida Century nRF52 mini board <http://taida-century.com/en/index.asp?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -351,16 +362,14 @@ u-blox
 .. list-table::
     :header-rows:  1
 
-    * - ID
-      - Name
+    * - Name
       - Debug
       - MCU
       - Frequency
       - Flash
       - RAM
-    * - ``ublox_evk_nina_b1``
-      - `u-blox EVK-NINA-B1 <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio&utm_medium=docs>`_
-      - :ref:`Yes <piodebug>`
+    * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
