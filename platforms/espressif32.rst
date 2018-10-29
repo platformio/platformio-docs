@@ -227,6 +227,16 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_iotbusio`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_iotbusproteus`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 
 Stable and upstream versions
@@ -945,6 +955,31 @@ XinaBox
       - Flash
       - RAM
     * - :ref:`board_espressif32_xinabox_cw02`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+oddWires
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_iotbusio`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_iotbusproteus`
       - External
       - ESP32
       - 240MHz

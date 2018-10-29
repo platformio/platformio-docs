@@ -75,6 +75,7 @@ Espressif ESP32 Dev Module supports the next uploading protocols:
 * ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-ocd``
 * ``olimex-jtag-tiny``
+* ``iot-bus-jtag``
 * ``minimodule``
 
 Default protocol is ``esptool``
@@ -113,6 +114,9 @@ Espressif ESP32 Dev Module does not have on-board debug probe and **IS NOT READY
   * - :ref:`debugging_tool_esp-prog`
     - 
     - Yes
+  * - :ref:`debugging_tool_iot-bus-jtag`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

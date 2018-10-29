@@ -96,6 +96,7 @@ option.
   debug-tools/cmsis-dap
   debug-tools/esp-prog
   debug-tools/ftdi
+  debug-tools/iot-bus-jtag
   debug-tools/jlink
   debug-tools/minimodule
   debug-tools/mspdebug
@@ -3169,6 +3170,34 @@ ng-beacon
       - 32MHz
       - 256KB
       - 32KB
+
+oddWires
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_iotbusio`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_iotbusproteus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 sino:bit
 ~~~~~~~~

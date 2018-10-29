@@ -75,6 +75,7 @@ Hornbill ESP32 Dev supports the next uploading protocols:
 * ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-ocd``
 * ``olimex-jtag-tiny``
+* ``iot-bus-jtag``
 * ``minimodule``
 
 Default protocol is ``esptool``
@@ -113,6 +114,9 @@ Hornbill ESP32 Dev does not have on-board debug probe and **IS NOT READY** for d
   * - :ref:`debugging_tool_esp-prog`
     - 
     - Yes
+  * - :ref:`debugging_tool_iot-bus-jtag`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

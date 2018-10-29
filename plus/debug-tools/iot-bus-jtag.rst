@@ -9,17 +9,19 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _debugging_tool_olimex-arm-usb-ocd-h:
+.. _debugging_tool_iot-bus-jtag:
 
-Olimex ARM-USB-OCD-H
-====================
+oddWires IOT-Bus JTAG
+=====================
 
-.. image:: ../../_static/debug_probes/olimex-arm-usb-ocd-h.jpg
-  :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs
+.. image:: ../../_static/debug_probes/iot-bus-jtag.jpg
+  :target: http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs
 
-High-speed 3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power
-supply 5VDC device.
-`Vendor information... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs>`__
+This IoT-Bus module provides JTAG debugging for the ESP32 Io and Proteus
+boards (can be used with other boards too, see wiring connections below).
+The board uses the FT232H to provide a USB controller with JTAG
+support. Both debugging and flashing is possible using this port.
+`Vendor information... <http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs>`__
 
 .. contents:: Contents
     :local:
@@ -35,7 +37,7 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = olimex-arm-usb-ocd-h
+    debug_tool = iot-bus-jtag
 
 If you would like to use this tool for firmware uploading, please change
 upload protocol:
@@ -45,8 +47,8 @@ upload protocol:
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = olimex-arm-usb-ocd-h
-    upload_protocol = olimex-arm-usb-ocd-h
+    debug_tool = iot-bus-jtag
+    upload_protocol = iot-bus-jtag
 
 More options:
 
@@ -73,27 +75,25 @@ Drivers
 Wiring Connections
 ------------------
 
-.. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
-
 .. list-table::
   :header-rows:  1
 
-  * - Olimex ARM-USB-OCD-H JTAG 20-Pin Connector
+  * - IOT-Bus JTAG Pin
     - Board JTAG Pin
     - Description
-  * - 1
+  * - 2
     - VCC
     - Positive Supply Voltage — Power supply for JTAG interface drivers
-  * - 4
+  * - 1
     - GND
     - Digital ground
-  * - 5
+  * - 16
     - TDI
     - Test Data In pin
-  * - 7
+  * - 14
     - TMS
     - Test Mode State pin
-  * - 9
+  * - 15
     - TCK
     - JTAG Return Test ClocK
   * - 13

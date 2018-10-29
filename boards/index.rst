@@ -297,6 +297,8 @@ Espressif 32
     espressif32/wemosbat
     espressif32/widora-air
     espressif32/xinabox_cw02
+    espressif32/iotbusio
+    espressif32/iotbusproteus
     espressif32/nina_w10
 
 Espressif 8266

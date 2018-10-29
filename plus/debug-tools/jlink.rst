@@ -1953,6 +1953,20 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_iotbusio`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_iotbusproteus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nxplpc_ubloxc027`
       - :ref:`platform_nxplpc`
       - On-board

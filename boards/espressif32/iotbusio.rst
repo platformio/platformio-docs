@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_node32s:
+.. _board_espressif32_iotbusio:
 
-Node32s
-=======
+oddWires IoT-Bus Io
+===================
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Aiyarafun <http://www.ayarafun.com?utm_source=platformio&utm_medium=docs>`__
+    - `oddWires <http://www.oddwires.com/iot-bus-io-esp32-processor-with-wifi-and-bluetooth/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``node32s`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``iotbusio`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:node32s]
+  [env:iotbusio]
   platform = espressif32
-  board = node32s
+  board = iotbusio
 
-You can override default Node32s settings per build environment using
+You can override default oddWires IoT-Bus Io settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `node32s.json <https://github.com/platformio/platform-espressif32/blob/master/boards/node32s.json>`_. For example,
+board manifest `iotbusio.json <https://github.com/platformio/platform-espressif32/blob/master/boards/iotbusio.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:node32s]
+  [env:iotbusio]
   platform = espressif32
-  board = node32s
+  board = iotbusio
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,7 +66,7 @@ board manifest `node32s.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-Node32s supports the next uploading protocols:
+oddWires IoT-Bus Io supports the next uploading protocols:
 
 * ``esptool``
 * ``esp-prog``
@@ -84,9 +84,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:node32s]
+  [env:iotbusio]
   platform = espressif32
-  board = node32s
+  board = iotbusio
 
   upload_protocol = esptool
 
@@ -103,7 +103,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Node32s does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+oddWires IoT-Bus Io does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -113,10 +113,10 @@ Node32s does not have on-board debug probe and **IS NOT READY** for debugging. Y
     - Default
   * - :ref:`debugging_tool_esp-prog`
     - 
-    - Yes
+    - 
   * - :ref:`debugging_tool_iot-bus-jtag`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_jlink`
     - 
     - 
