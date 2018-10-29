@@ -81,27 +81,27 @@ Wiring Connections
 .. list-table::
   :header-rows:  1
 
-  *  - ESP-Prog JTAG 10-Pin Connector
-     - Board JTAG Pin
-     - Description
-  *  - 1
-     - VDD
-     - Positive Supply Voltage — Power supply for JTAG interface drivers
-  *  - 3
-     - GND
-     - Digital ground
-  *  - 2
-     - ESP_TMS
-     - Test Mode State
-  *  - 4
-     - ESP_TCK
-     - JTAG Return Test ClocK
-  *  - 6
-     - ESP_TDO
-     - Test Data Out
-  *  - 8
-     - ESP_TDI
-     - Test Data In
+  * - ESP-Prog JTAG 10-Pin Connector
+    - Board JTAG Pin
+    - Description
+  * - 1
+    - VDD
+    - Positive Supply Voltage — Power supply for JTAG interface drivers
+  * - 3
+    - GND
+    - Digital ground
+  * - 2
+    - ESP_TMS
+    - Test Mode State
+  * - 4
+    - ESP_TCK
+    - JTAG Return Test ClocK
+  * - 6
+    - ESP_TDO
+    - Test Data Out
+  * - 8
+    - ESP_TDI
+    - Test Data In
 
 .. begin_platforms
 
@@ -319,6 +319,20 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_xinabox_cw02`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_iotbusio`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_iotbusproteus`
       - :ref:`platform_espressif32`
       - External
       - ESP32

@@ -81,24 +81,24 @@ Wiring Connections
   * - Olimex ARM-USB-OCD-H JTAG 20-Pin Connector
     - Board JTAG Pin
     - Description
-  *  - 1
-     - VCC
-     - Positive Supply Voltage — Power supply for JTAG interface drivers
-  *  - 4
-     - GND
-     - Digital ground
-  *  - 5
-     - TDI
-     - Test Data In pin
-  *  - 7
-     - TMS
-     - Test Mode State pin
-  *  - 9
-     - TCK
-     - JTAG Return Test ClocK
-  *  - 13
-     - TDO
-     - Test Data Out pin
+  * - 1
+    - VCC
+    - Positive Supply Voltage — Power supply for JTAG interface drivers
+  * - 4
+    - GND
+    - Digital ground
+  * - 5
+    - TDI
+    - Test Data In pin
+  * - 7
+    - TMS
+    - Test Mode State pin
+  * - 9
+    - TCK
+    - JTAG Return Test ClocK
+  * - 13
+    - TDO
+    - Test Data Out pin
   * - 3
     - RESET
     - Connect this pin to the (active low) reset input of the target CPU
