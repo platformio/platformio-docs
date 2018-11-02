@@ -137,20 +137,22 @@ lwIP Variant
 
 Available variants (macros):
 
-* ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth (default)
-* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY`` v2 Lower Memory
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY`` v2 Lower Memory **(default)**
 * ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH`` v2 Higher Bandwidth
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY_LOW_FLASH``
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH_LOW_FLASH``
 
 You can change lwIP Variant passing a custom macro using project
 :ref:`projectconf_build_flags`.
 
-For example, switch to lwIP v2 Lower Memory
+For example, switch to lwIP v1.4
 
 .. code-block:: ini
 
     [env:myenv]
     ...
-    build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY
+    build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH
 
 
 .. _platform_espressif8266_serial_debug:
