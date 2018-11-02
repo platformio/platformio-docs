@@ -67,25 +67,25 @@ Wiring Connections
   * - IOT-Bus JTAG Pin
     - Board JTAG Pin
     - Description
-  * - 2
+  * - 3V3
     - VCC
     - Positive Supply Voltage — Power supply for JTAG interface drivers
-  * - 1
+  * - GND
     - GND
     - Digital ground
-  * - 16
+  * - 12
     - TDI
     - Test Data In pin
   * - 14
     - TMS
     - Test Mode State pin
-  * - 15
-    - TCK
-    - JTAG Return Test ClocK
   * - 13
+    - TCK
+    - JTAG Return Test Clock
+  * - 15
     - TDO
     - Test Data Out pin
-  * - 3
+  * - EN
     - RESET
     - Connect this pin to the (active low) reset input of the target CPU
 
