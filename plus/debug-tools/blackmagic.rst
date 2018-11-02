@@ -118,7 +118,7 @@ JTAG Interface
     - Test Mode State
   * - 4
     - TCLK
-    - JTAG Return Test ClocK
+    - JTAG Return Test Clock
   * - 6
     - TDO
     - Test Data Out

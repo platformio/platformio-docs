@@ -80,7 +80,7 @@ Wiring Connections
     - Test Mode State
   * - 4
     - ESP_TCK
-    - JTAG Return Test ClocK
+    - JTAG Return Test Clock
   * - 6
     - ESP_TDO
     - Test Data Out

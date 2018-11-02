@@ -73,7 +73,7 @@ Wiring Connections
     - Digital ground
   * - AD0 [CN2-7]
     - TCK
-    - JTAG Return Test ClocK
+    - JTAG Return Test Clock
   * - AD1 [CN2-10]
     - TDI
     - Test Data In

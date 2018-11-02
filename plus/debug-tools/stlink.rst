@@ -96,7 +96,7 @@ JTAG Interface
     - Test Mode State pin
   * - 9
     - TCK
-    - JTAG Return Test ClocK
+    - JTAG Return Test Clock
   * - 13
     - TDO
     - Test Data Out pin
