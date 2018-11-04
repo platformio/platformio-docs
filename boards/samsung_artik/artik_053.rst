@@ -16,8 +16,8 @@ Samsung ARTIK053
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_samsung_artik`: The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
 

@@ -16,8 +16,8 @@ E51 Arty (Artix-7) FPGA Dev Kit
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_riscv`: RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
 

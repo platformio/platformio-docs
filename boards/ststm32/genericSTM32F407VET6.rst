@@ -16,8 +16,8 @@ STM32F407VE (192k RAM. 512k Flash)
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 

@@ -16,8 +16,8 @@ Generic ATTiny24
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 

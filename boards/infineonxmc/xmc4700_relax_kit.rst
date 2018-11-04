@@ -16,8 +16,8 @@ XMC4700 Relax Kit
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 

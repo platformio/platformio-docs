@@ -16,8 +16,8 @@ TI LaunchPad (Tiva C) w/ tm4c123 (80MHz)
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
