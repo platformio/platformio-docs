@@ -415,9 +415,7 @@ For the full list with available options please run
 
 .. code-block:: bash
    
-~/.platformio/packages/tool-espotapy/espota.py -h
-
-    Usage: espota.py [options]
+    ~/.platformio/packages/tool-espotapy/espota.py --help
 
     Transmit image over the air to the esp8266 module with OTA support.
 
