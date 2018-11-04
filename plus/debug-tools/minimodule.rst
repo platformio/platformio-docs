@@ -85,7 +85,7 @@ Wiring Connections
     - Test Mode State
   * - AC2 [CN2-20]
     - RESET
-    - Connect this pin to the (active low) reset input of the target CPU
+    - Connect this pin to the (active low) reset input of the target CPU (EN for ESP32)
 
 You will also need to connect Vbus [CN3-1] to Vcc [CN3-3] of FT2232H Mini-Module
 to power the FTDI chip. See `FT2232H Mini-Module Datasheet <http://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_FT2232H_Mini_Module.pdf>`_

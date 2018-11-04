@@ -93,7 +93,7 @@ JTAG Interface
     - Test Data Out pin
   * - 15
     - RESET
-    - Connect this pin to the (active low) reset input of the target CPU
+    - Connect this pin to the (active low) reset input of the target CPU (EN for ESP32)
 
 Serial Wire Mode Interface (SWD)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

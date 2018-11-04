@@ -86,7 +86,7 @@ Wiring Connections
     - Test Data Out pin
   * - 3
     - RESET
-    - Connect this pin to the (active low) reset input of the target CPU
+    - Connect this pin to the (active low) reset input of the target CPU (EN for ESP32)
 
 .. begin_platforms
 
