@@ -754,6 +754,13 @@ OLIMEX
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-pro`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Onehorse
 ~~~~~~~~

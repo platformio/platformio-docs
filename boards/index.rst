@@ -288,6 +288,7 @@ Espressif 32
     espressif32/odroid_esp32
     espressif32/esp32-evb
     espressif32/esp32-gateway
+    espressif32/esp32-pro
     espressif32/onehorse32dev
     espressif32/esp32thing
     espressif32/ttgo-lora32-v1
