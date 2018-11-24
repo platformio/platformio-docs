@@ -68,6 +68,7 @@ Built-in targets:
     + ``uploadfs`` :ref:`platform_espressif_uploadfs`
     + ``size`` print the size of the sections in a firmware/program
     + ``checkprogsize`` check maximum allowed firmware size for uploading
+    + ``erase`` erase device flash (not available on the all :ref:`platforms`)
 
 * Device
 

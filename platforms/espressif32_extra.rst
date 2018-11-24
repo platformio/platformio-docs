@@ -149,6 +149,20 @@ from :ref:`projectconf`
     [env:myenv]
     upload_speed = 9600
 
+Erase Flash
+~~~~~~~~~~~
+
+Please :option:`platformio run --target` the next command to erase the entire
+flash chip (all data replaced with 0xFF bytes):
+
+.. code::
+
+    > platformio run --target erase
+
+    # or short version
+
+    > pio run -t erase
+
 Enable C++ exceptions
 ~~~~~~~~~~~~~~~~~~~~~
 
