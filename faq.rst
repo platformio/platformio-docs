@@ -74,7 +74,7 @@ is installed by default on the all popular OS except Windows.
 
 **Windows Users**, please `Download the latest Python 2.7.x <https://www.python.org/downloads/>`_
 and install it. **DON'T FORGET** to select ``Add python.exe to Path`` feature
-on the "Customize" stage, otherwise ``python`` command will not be available.
+on the "Customize" stage, otherwise, ``python`` command will not be available.
 
 .. image:: _static/python-installer-add-path.png
 
@@ -89,8 +89,8 @@ they are not valid C/C++ based source files:
 1. Missing includes such as ``#include <Arduino.h>``
 2. Function declarations are omitted.
 
-In this case, code completion and code linting does not work properly or
-disabled. To avoid this issue you can manually convert your INO files to CPP.
+In this case, code completion and code linting do not work properly or
+are disabled. To avoid this issue you can manually convert your INO files to CPP.
 
 For example, we have the next ``Demo.ino`` file:
 
@@ -132,6 +132,8 @@ The final ``Demo.cpp``:
     void someFunction(int num) {
     }
 
+Finish.
+
 Program Memory Usage
 --------------------
 
@@ -159,9 +161,9 @@ PlatformIO calculates firmware/program memory usage based on the next segments:
 
 :``.bss``:
 
-     Uninitialized data, is usually adjacent to the data segment. The BSS
+     Uninitialized data is usually adjacent to the data segment. The BSS
      segment contains all global variables and static variables that are
-     initialized to zero or do not have explicit initialization in source code.
+     initialized to zero or do not have explicit initialization in the source code.
      For instance, a variable defined as ``static int i;`` would be contained
      in the BSS segment.
 
@@ -189,7 +191,7 @@ Installation
 Multiple PIO Cores in a system
 ''''''''''''''''''''''''''''''
 
-Multiple standalone :ref:`piocore` in a system could lead to a different
+Multiple standalone :ref:`piocore` in a system could lead to the different
 issues. We highly recommend to keep one instance of PIO Core or use built-in
 PIO Core in :ref:`pioide`:
 
@@ -294,7 +296,7 @@ Package Manager
 ''''''''''''''''''''''''''
 
 PlatformIO installs all packages to ":ref:`projectconf_pio_home_dir`/packages"
-directory. You **MUST HAVE** write access for this folder.
+directory. You **MUST HAVE** write access to this folder.
 Please note that **PlatformIO does not require** "sudo"/administrative privileges.
 
 .. contents::
@@ -309,23 +311,23 @@ and repeat installation/building/uploading again.
 Solution 2: Antivirus
 ^^^^^^^^^^^^^^^^^^^^^
 
-Some antivirus tools forbid programs to create files in background.
-PlatformIO Package Manager does all work in background: downloads package,
+Some antivirus tools forbid programs to create files in the background.
+PlatformIO Package Manager does all work in the background: downloads package,
 unpacks archive in temporary folder and moves final files to
 ":ref:`projectconf_pio_home_dir`/packages" folder.
 
 Antivirus tool can block PlatformIO, that is why you see "[Error 5] Access is denied".
 Try to **disable it for a while** or add :ref:`projectconf_pio_home_dir`
-directory to exclusion/white list.
+directory to exclusion/whitelist.
 
 Solution 3: Run from Terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As we mentioned in "Solution 2", antivirus tools can block background file
-system operations. Other solution is to run :ref:`piocore` from a system terminal.
+system operations. Another solution is to run :ref:`piocore` from a system terminal.
 
 1. Open **System Terminal**, on Windows ``cmd.exe`` (not :ref:`pioide` Terminal)
-2. Build project and upload firmware using :ref:`piocore` which will download
+2. Build a project and upload firmware using :ref:`piocore` which will download
    and install all dependent packages:
 
    .. code-block:: bash
@@ -354,7 +356,7 @@ use :ref:`pioide`, please use built-in :ref:`piocore` which is located in:
 Solution 4: Manual
 ^^^^^^^^^^^^^^^^^^
 
-If none of solutions above does not work for you, you can download and unpack
+If none of the solutions above do work for you, you can download and unpack
 all packages manually to ":ref:`projectconf_pio_home_dir`/packages".
 
 Please visit `PlatformIO Package Storage <https://bintray.com/platformio/dl-packages>`_

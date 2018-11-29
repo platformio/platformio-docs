@@ -137,20 +137,22 @@ lwIP Variant
 
 Available variants (macros):
 
-* ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth (default)
-* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY`` v2 Lower Memory
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY`` v2 Lower Memory **(default)**
 * ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH`` v2 Higher Bandwidth
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY_LOW_FLASH``
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH_LOW_FLASH``
 
 You can change lwIP Variant passing a custom macro using project
 :ref:`projectconf_build_flags`.
 
-For example, switch to lwIP v2 Lower Memory
+For example, switch to lwIP v1.4
 
 .. code-block:: ini
 
     [env:myenv]
     ...
-    build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY
+    build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH
 
 
 .. _platform_espressif8266_serial_debug:
@@ -412,10 +414,8 @@ Available flags
 For the full list with available options please run
 
 .. code-block:: bash
-
-    ~/.platformio/packages/tool-espotapy/espota.py -h
-
-    Usage: espota.py [options]
+   
+    ~/.platformio/packages/tool-espotapy/espota.py --help
 
     Transmit image over the air to the esp8266 module with OTA support.
 
@@ -425,8 +425,12 @@ For the full list with available options please run
       Destination:
         -i ESP_IP, --ip=ESP_IP
                             ESP8266 IP Address.
+        -I HOST_IP, --host_ip=HOST_IP
+                            Host IP Address.
         -p ESP_PORT, --port=ESP_PORT
                             ESP8266 ota Port. Default 8266
+        -P HOST_PORT, --host_port=HOST_PORT
+                            Host server ota Port. Default random 10000-60000
 
       Authentication:
         -a AUTH, --auth=AUTH
@@ -441,6 +445,8 @@ For the full list with available options please run
       Output:
         -d, --debug         Show debug output. And override loglevel with debug.
         -r, --progress      Show progress output. Does not work for ArduinoIDE
+        -t TIMEOUT, --timeout=TIMEOUT
+                            Timeout to wait for the ESP8266 to accept invitation
 
 Demo
 ~~~~

@@ -79,30 +79,30 @@ JTAG Interface
 .. list-table::
   :header-rows:  1
 
-  *  - ST-Link JTAG 20-Pin Connector
-     - Board JTAG Pin
-     - Description
-  *  - 1
-     - VCC
-     - Positive Supply Voltage — Power supply for JTAG interface drivers
-  *  - 4
-     - GND
-     - Digital ground
-  *  - 5
-     - TDI
-     - Test Data In pin
-  *  - 7
-     - TMS
-     - Test Mode State pin
-  *  - 9
-     - TCK
-     - JTAG Return Test ClocK
-  *  - 13
-     - TDO
-     - Test Data Out pin
-  *  - 15
-     - RESET
-     - Connect this pin to the (active low) reset input of the target CPU
+  * - ST-Link JTAG 20-Pin Connector
+    - Board JTAG Pin
+    - Description
+  * - 1
+    - VCC
+    - Positive Supply Voltage — Power supply for JTAG interface drivers
+  * - 4
+    - GND
+    - Digital ground
+  * - 5
+    - TDI
+    - Test Data In pin
+  * - 7
+    - TMS
+    - Test Mode State pin
+  * - 9
+    - TCK
+    - JTAG Return Test Clock
+  * - 13
+    - TDO
+    - Test Data Out pin
+  * - 15
+    - RESET
+    - Connect this pin to the (active low) reset input of the target CPU
 
 Serial Wire Mode Interface (SWD)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

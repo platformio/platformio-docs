@@ -23,6 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2018
 ^^^^
 
+* Nov 24, 2018 - **Martin Fasani** - `PlatformIO: An alternative to Arduino IDE and a complete ecosystem for IoT <https://fasani.de/2018/11/24/platformio-an-alternative-to-arduino-ide-and-a-complete-ecosystem-for-iot/>`_
 * Sep 27, 2018 - **Lup Yuen Lee** - `Connect STM32 Blue Pill to Sigfox <https://medium.com/coinmonks/connect-stm32-blue-pill-to-sigfox-28c6f91bddc1>`_
 * Aug 27, 2018 - **Lup Yuen Lee** - `Juggling STM32 Blue Pill For Arduino Jugglers <https://medium.com/coinmonks/juggling-stm32-blue-pill-for-arduino-jugglers-edf6820dc808>`_
 * Jul 3, 2018 - **Andreas Schmidt** - `IoT for web developers: From zero to firmware, Part II <https://jaxenter.com/iot-web-developers-part-two-145815.html>`_

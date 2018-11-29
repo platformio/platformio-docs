@@ -16,8 +16,8 @@ Aceinna OpenIMU 300ZA
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_aceinna_imu`: Open-source, embedded development platform for Aceinna IMU hardware. Run custom algorithms and navigation code on Aceinna IMU/INS hardware.
 

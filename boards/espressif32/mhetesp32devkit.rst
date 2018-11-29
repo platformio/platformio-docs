@@ -16,8 +16,8 @@ MH ET LIVE ESP32DevKIT
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
@@ -75,6 +75,8 @@ MH ET LIVE ESP32DevKIT supports the next uploading protocols:
 * ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-ocd``
 * ``olimex-jtag-tiny``
+* ``iot-bus-jtag``
+* ``tumpa``
 * ``minimodule``
 
 Default protocol is ``esptool``
@@ -113,6 +115,9 @@ MH ET LIVE ESP32DevKIT does not have on-board debug probe and **IS NOT READY** f
   * - :ref:`debugging_tool_esp-prog`
     - 
     - Yes
+  * - :ref:`debugging_tool_iot-bus-jtag`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
@@ -129,6 +134,9 @@ MH ET LIVE ESP32DevKIT does not have on-board debug probe and **IS NOT READY** f
     - 
     - 
   * - :ref:`debugging_tool_olimex-jtag-tiny`
+    - 
+    - 
+  * - :ref:`debugging_tool_tumpa`
     - 
     - 
 

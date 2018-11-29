@@ -16,8 +16,8 @@ Espressif ESP-WROVER-KIT
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
@@ -76,6 +76,8 @@ Espressif ESP-WROVER-KIT supports the next uploading protocols:
 * ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-ocd``
 * ``olimex-jtag-tiny``
+* ``iot-bus-jtag``
+* ``tumpa``
 * ``minimodule``
 
 Default protocol is ``esptool``
@@ -117,6 +119,9 @@ Espressif ESP-WROVER-KIT has on-board debug probe and **IS READY** for debugging
   * - :ref:`debugging_tool_ftdi`
     - Yes
     - Yes
+  * - :ref:`debugging_tool_iot-bus-jtag`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
@@ -133,6 +138,9 @@ Espressif ESP-WROVER-KIT has on-board debug probe and **IS READY** for debugging
     - 
     - 
   * - :ref:`debugging_tool_olimex-jtag-tiny`
+    - 
+    - 
+  * - :ref:`debugging_tool_tumpa`
     - 
     - 
 

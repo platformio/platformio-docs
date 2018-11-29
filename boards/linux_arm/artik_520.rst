@@ -16,8 +16,8 @@ Samsung ARTIK 520
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 

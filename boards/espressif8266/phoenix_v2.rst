@@ -16,8 +16,8 @@ Phoenix 2.0
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 

@@ -16,8 +16,8 @@ Freescale Kinetis FRDM-K64F
 
 .. contents::
 
-System
-------
+Hardware
+--------
 
 Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 

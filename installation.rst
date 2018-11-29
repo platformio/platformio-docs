@@ -371,7 +371,7 @@ If you don't know the difference between the two, check out `this page <https://
 Method 2
 ''''''''
 
-Go to the *PlatformIO* menu → *Settings* → *PlatformIO IDE*, scroll down to the *Custom PATH for `platformio` command* and enter the following: ``~/.platformio/penv/bin``. After you've done that, you'll need to go to the *PlatformIO* menu → *Settings* → *PlatformIO IDE Terminal*, scroll down to the *Toggles* section and uncheck the *Login Shell* checkbox. Finally, restart Atom and check out the result.
+Go to the *PlatformIO* menu → *Settings* → *PlatformIO IDE*, scroll down to the *Custom PATH for `platformio` command* and enter the following: ``~/.platformio/penv/bin``. After you've done that, you'll need to go to the *PlatformIO* menu → *Settings* → *PlatformIO IDE Terminal*, scroll down to the *Toggles* section and uncheck the *Login Shell* checkbox. Finally, restart your editor/IDE and check out the result.
 
 Method 3
 ''''''''

@@ -47,7 +47,7 @@ PlatformIO was nominated for the year's `best Software and Tools in the 2015/16 
 Problematic
 -----------
 
-* The main problem which repulses people from embedded world is a complicated
+* The main problem which repulses people from the embedded world is a complicated
   process to setup development software for a specific MCU/board: toolchains,
   proprietary vendor’s IDE (which sometimes isn’t free) and what is more,
   to get a computer with OS where that software is supported.
@@ -55,13 +55,13 @@ Problematic
   IDEs, etc, and, respectively, spending time on learning new development environments.
 * Finding proper libraries and code samples showing how to use popular
   sensors, actuators, etc.
-* Sharing embedded projects between team members, regardless of operating
+* Sharing embedded projects between team members, regardless of an operating
   system they prefer to work with.
 
 Overview
 --------
 
-PlatformIO is independent from the platform, in which it is running. In fact,
+PlatformIO is independent of the platform, in which it is running. In fact,
 the only requirement is Python, which exists pretty much everywhere. What this
 means is that PlatformIO projects can be easily moved from one computer to
 another, as well as that PlatformIO allows for the easy sharing of projects
@@ -75,7 +75,7 @@ console application, it can be used in combination with one's favorite
 :ref:`ide_vscode`, etc.
 
 Alright, so PlatformIO can run on different operating systems. But more
-importantly, from development perspective at least, is a list of supported
+importantly, from a development perspective at least, is a list of supported
 boards and MCUs. To keep things short: PlatformIO supports approximately 200
 `Embedded Boards <https://platformio.org/boards>`_ and all major
 :ref:`platforms`.
@@ -85,7 +85,7 @@ User SHOULD have a choice
 
 * Decide which operating system they want to run development process on.
   You can even use one OS at home and another at work.
-* Choose which editor to use for writing the code. It can be pretty simple
+* Choose which editor to use for writing the code. It can be a pretty simple
   editor or powerful favorite :ref:`ide`.
 * Focus on the code development, significantly simplifying support for the
   :ref:`platforms` and MCUs.
