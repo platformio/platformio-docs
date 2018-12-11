@@ -17,10 +17,11 @@ Cloud & Desktop IDE
 PlatformIO IDE
 --------------
 
-**PlatformIO IDE is the next-generation integrated development environment for IoT.**
+"PlatformIO IDE" is an official extension/plugin which provides native
+integration with IDEs/Text Editors and contains built-in
+:ref:`piocore` and :ref:`piohome`.
 
-We provide official open-source packages (plugins, extensions) for the most
-popular IDEs and text editors.
+We highly recommend to use it for the best experience.
 
 .. toctree::
     :maxdepth: 1
