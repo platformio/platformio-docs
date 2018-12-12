@@ -145,13 +145,13 @@ Each button contains hint (delay mouse on it).
 8. :ref:`Serial Port Monitor <cmd_device_monitor>`
 9. PIO Terminal
 
-
 Custom Build Task
 ~~~~~~~~~~~~~~~~~
 
-You can override default "PlatformIO: Build" task for "Build" button and its
+You can override default "PlatformIO: Build" task for "Build" command which
+is used by "Build" button in PlatformIO Toolbar and
 :ref:`ide_vscode_keybindings`. See ``platformio-ide.buildTask`` setting
-in :ref:`ide_vscode_settings`.
+in :ref:`ide_vscode_settings` for more details.
 
 Built-in PlatformIO tasks are available in "Menu > Terminal > Run Task..." list.
 
@@ -232,26 +232,52 @@ This simple example demonstrates a custom build process in verbose mode.
 There are a lot of other commands, please read more about :ref:`piocore` and
 its commands (:ref:`userguide`).
 
-  .. code-block:: json
+.. code-block:: json
 
-    {
-        "version": "2.0.0",
-        "tasks": [
-            {
-                "type": "shell",
-                "command": "platformio",
-                "args": [
-                    "run",
-                    "--verbose"
-                ],
-                "problemMatcher": [
-                    "$platformio"
-                ],
-                "label": "PlatformIO: Verbose Build"
-            }
-        ]
-    }
+  {
+      "version": "2.0.0",
+      "tasks": [
+          {
+              "type": "shell",
+              "command": "platformio",
+              "args": [
+                  "run",
+                  "--verbose"
+              ],
+              "problemMatcher": [
+                  "$platformio"
+              ],
+              "label": "PlatformIO: Verbose Build"
+          }
+      ]
+  }
 
+If ``platformio`` executable file is not in your system environment "PATH", you
+can provide a path to binary folder using ``options`` field for task. For example,
+``platformio`` binary is located in home folder "~/.platformio/penv/bin":
+
+.. code-block:: json
+
+  {
+      "version": "2.0.0",
+      "tasks": [
+          {
+              "type": "shell",
+              "command": "platformio",
+              "args": [
+                  "run",
+                  "--verbose"
+              ],
+              "problemMatcher": [
+                  "$platformio"
+              ],
+              "label": "PlatformIO: Verbose Build",
+              "options": {
+                  "env": {"PATH": "~/.platformio/penv/bin"}
+              }
+          }
+      ]
+  }
 
 Multi-project Workspaces
 ------------------------
