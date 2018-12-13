@@ -1882,35 +1882,35 @@ Boards
       - XMC1100
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1100
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1100_xmc2go`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1100
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1300_boot_kit`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1300
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1300_sense2gol`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1300
       - 32MHz
-      - 64KB
-      - 122.23KB
+      - 32KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1400_boot_kit`
       - :ref:`platform_infineonxmc`
       - On-board
@@ -1923,8 +1923,8 @@ Boards
       - On-board
       - XMC4200
       - 80MHz
-      - 250KB
       - 256KB
+      - 40KB
     * - :ref:`board_infineonxmc_xmc4700_relax_kit`
       - :ref:`platform_infineonxmc`
       - On-board
