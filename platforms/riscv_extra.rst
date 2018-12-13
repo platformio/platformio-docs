@@ -9,26 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _tutorials:
-
-Tutorials and Examples
-======================
-
 Tutorials
 ---------
 
-.. toctree::
-    :maxdepth: 1
-
-    core/unit_testing_blink
-    espressif32/arduino_debugging_unit_testing
-    ststm32/stm32cube_debugging_unit_testing
-    nordicnrf52/arduino_debugging_unit_testing
-    riscv/riscv_asm_video_tutorial
-
-Project Examples
-----------------
-
-Pre-configured projects with source code are located in
-`PlatformIO Examples <https://github.com/platformio/platformio-examples>`_
-repository.
+* :ref:`tutorial_riscv_asm_video`
