@@ -31,9 +31,11 @@ Examples
 
 Examples are listed from `Aceinna IMU development platform repository <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `Compass <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/Compass?utm_source=platformio&utm_medium=docs>`_
 * `Framework <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/Framework?utm_source=platformio&utm_medium=docs>`_
 * `IMU <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/IMU?utm_source=platformio&utm_medium=docs>`_
-* `LEVELER <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/LEVELER?utm_source=platformio&utm_medium=docs>`_
+* `INS <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/INS?utm_source=platformio&utm_medium=docs>`_
+* `Leveler <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/Leveler?utm_source=platformio&utm_medium=docs>`_
 * `VG_AHRS <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/VG_AHRS?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
