@@ -95,10 +95,10 @@ Flash Size
 Available LD-scripts:
 https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld
 
-* ``eagle.flash.512k0.ld`` 512K (no SPIFFS)
+* ``eagle.flash.512k.ld`` 512K (no SPIFFS)
 * ``eagle.flash.512k64.ld`` 512K (64K SPIFFS)
 * ``eagle.flash.512k128.ld`` 512K (128K SPIFFS)
-* ``eagle.flash.1m0.ld`` 1M (no SPIFFS)
+* ``eagle.flash.1m.ld`` 1M (no SPIFFS)
 * ``eagle.flash.1m64.ld`` 1M (64K SPIFFS)
 * ``eagle.flash.1m128.ld`` 1M (128K SPIFFS)
 * ``eagle.flash.1m144.ld`` 1M (144K SPIFFS)
@@ -414,7 +414,7 @@ Available flags
 For the full list with available options please run
 
 .. code-block:: bash
-   
+
     ~/.platformio/packages/tool-espotapy/espota.py --help
 
     Transmit image over the air to the esp8266 module with OTA support.
