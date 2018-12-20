@@ -722,13 +722,13 @@ Teensy
 .. toctree::
     :maxdepth: 1
         
-    teensy/teensy20
+    teensy/teensy2
     teensy/teensy30
     teensy/teensy31
     teensy/teensy35
     teensy/teensy36
     teensy/teensylc
-    teensy/teensy20pp
+    teensy/teensy2pp
 
 TI MSP430
 ---------

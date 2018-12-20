@@ -63,9 +63,50 @@ board manifest `max32620hsp.json <https://github.com/platformio/platform-maxim32
   ; change MCU frequency
   board_build.f_cpu = 96000000L
 
+
+Uploading
+---------
+Maxim Health Sensor Platform supports the next uploading protocols:
+
+* ``mbed``
+* ``jlink``
+
+Default protocol is ``mbed``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:max32620hsp]
+  platform = maxim32
+  board = max32620hsp
+
+  upload_protocol = mbed
+
 Debugging
 ---------
-:ref:`piodebug` currently does not support Maxim Health Sensor Platform board.
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further
+    instructions and configuration information.
+
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+Maxim Health Sensor Platform does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Compatible Tools
+    - On-board
+    - Default
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - Yes
 
 Frameworks
 ----------

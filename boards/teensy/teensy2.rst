@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_teensy_teensy20:
+.. _board_teensy_teensy2:
 
 Teensy 2.0
 ==========
@@ -38,24 +38,24 @@ Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller 
 Configuration
 -------------
 
-Please use ``teensy20`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``teensy2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:teensy20]
+  [env:teensy2]
   platform = teensy
-  board = teensy20
+  board = teensy2
 
 You can override default Teensy 2.0 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `teensy20.json <https://github.com/platformio/platform-teensy/blob/master/boards/teensy20.json>`_. For example,
+board manifest `teensy2.json <https://github.com/platformio/platform-teensy/blob/master/boards/teensy2.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:teensy20]
+  [env:teensy2]
   platform = teensy
-  board = teensy20
+  board = teensy2
 
   ; change microcontroller
   board_build.mcu = atmega32u4
@@ -77,9 +77,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:teensy20]
+  [env:teensy2]
   platform = teensy
-  board = teensy20
+  board = teensy2
 
   upload_protocol = teensy-gui
 

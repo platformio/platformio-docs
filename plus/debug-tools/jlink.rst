@@ -168,6 +168,9 @@ Platforms
     * - :ref:`platform_infineonxmc`
       - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
+    * - :ref:`platform_maxim32`
+      - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
+
     * - :ref:`platform_nordicnrf51`
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
@@ -819,6 +822,13 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_maxim32_max32620fthr`
+      - :ref:`platform_maxim32`
+      - External
+      - MAX32620FTHR
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_espressif32_mhetesp32devkit`
       - :ref:`platform_espressif32`
       - External
@@ -875,6 +885,13 @@ Boards
       - 72MHz
       - 108KB
       - 17KB
+    * - :ref:`board_maxim32_max32620hsp`
+      - :ref:`platform_maxim32`
+      - External
+      - MAX32620
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_mbed_connect_odin`
       - :ref:`platform_ststm32`
       - On-board

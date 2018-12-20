@@ -4424,7 +4424,7 @@ Teensy
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_teensy_teensy20`
+    * - :ref:`board_teensy_teensy2`
       - :ref:`platform_teensy`
       - No
       - ATMEGA32U4
@@ -4466,7 +4466,7 @@ Teensy
       - 48MHz
       - 62KB
       - 8KB
-    * - :ref:`board_teensy_teensy20pp`
+    * - :ref:`board_teensy_teensy2pp`
       - :ref:`platform_teensy`
       - No
       - AT90USB1286

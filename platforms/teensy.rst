@@ -213,7 +213,7 @@ Teensy
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_teensy_teensy20`
+    * - :ref:`board_teensy_teensy2`
       - No
       - ATMEGA32U4
       - 16MHz
@@ -249,7 +249,7 @@ Teensy
       - 48MHz
       - 62KB
       - 8KB
-    * - :ref:`board_teensy_teensy20pp`
+    * - :ref:`board_teensy_teensy2pp`
       - No
       - AT90USB1286
       - 16MHz

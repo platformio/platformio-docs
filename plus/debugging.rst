@@ -1533,6 +1533,13 @@ Maxim
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_maxim32_max32620fthr`
+      - :ref:`platform_maxim32`
+      - External
+      - MAX32620FTHR
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_maxim32_max32600mbed`
       - :ref:`platform_maxim32`
       - On-board
@@ -1540,6 +1547,13 @@ Maxim
       - 24MHz
       - 256KB
       - 32KB
+    * - :ref:`board_maxim32_max32620hsp`
+      - :ref:`platform_maxim32`
+      - External
+      - MAX32620
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_maxim32_maxwsnenv`
       - :ref:`platform_maxim32`
       - External
