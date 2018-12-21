@@ -108,7 +108,9 @@ Atmel AVR
     atmelavr/elektor_uno_r4
     atmelavr/engduinov3
     atmelavr/mayfly
+    atmelavr/fysetc_f6_13
     atmelavr/attiny13
+    atmelavr/attiny13a
     atmelavr/attiny1634
     atmelavr/attiny167
     atmelavr/attiny2313

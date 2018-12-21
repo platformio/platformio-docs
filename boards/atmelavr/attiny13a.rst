@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_attiny13:
+.. _board_atmelavr_attiny13a:
 
-Generic ATTiny13
-================
+Generic ATTiny13A
+=================
 
 .. contents::
 
@@ -24,7 +24,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATTINY13
+    - ATTINY13A
   * - **Frequency**
     - 1MHz
   * - **Flash**
@@ -32,40 +32,40 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
   * - **RAM**
     - 64B
   * - **Vendor**
-    - `Atmel <http://www.atmel.com/devices/ATTINY13.aspx?utm_source=platformio&utm_medium=docs>`__
+    - `Atmel <https://www.microchip.com/wwwproducts/en/ATtiny13A?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``attiny13`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``attiny13a`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:attiny13]
+  [env:attiny13a]
   platform = atmelavr
-  board = attiny13
+  board = attiny13a
 
-You can override default Generic ATTiny13 settings per build environment using
+You can override default Generic ATTiny13A settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `attiny13.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny13.json>`_. For example,
+board manifest `attiny13a.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny13a.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:attiny13]
+  [env:attiny13a]
   platform = atmelavr
-  board = attiny13
+  board = attiny13a
 
   ; change microcontroller
-  board_build.mcu = attiny13
+  board_build.mcu = attiny13a
 
   ; change MCU frequency
   board_build.f_cpu = 1200000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATTiny13 board.
+:ref:`piodebug` currently does not support Generic ATTiny13A board.
 
 Frameworks
 ----------

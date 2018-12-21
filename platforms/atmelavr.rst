@@ -538,7 +538,13 @@ Atmel
     * - :ref:`board_atmelavr_attiny13`
       - No
       - ATTINY13
-      - 9MHz
+      - 1MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - No
+      - ATTINY13A
+      - 1MHz
       - 1KB
       - 64B
     * - :ref:`board_atmelavr_attiny1634`
@@ -849,6 +855,25 @@ EnviroDIY
       - 8MHz
       - 127KB
       - 16KB
+
+FYSETC
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_fysetc_f6_13`
+      - No
+      - ATMEGA2560
+      - 16MHz
+      - 252KB
+      - 8KB
 
 LightUp
 ~~~~~~~

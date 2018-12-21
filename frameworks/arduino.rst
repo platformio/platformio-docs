@@ -1677,7 +1677,14 @@ Atmel
       - :ref:`platform_atmelavr`
       - No
       - ATTINY13
-      - 9MHz
+      - 1MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATTINY13A
+      - 1MHz
       - 1KB
       - 64B
     * - :ref:`board_atmelavr_attiny1634`
@@ -2555,6 +2562,27 @@ Espressif
       - 80MHz
       - 1MB
       - 80KB
+
+FYSETC
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_fysetc_f6_13`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA2560
+      - 16MHz
+      - 252KB
+      - 8KB
 
 Fubarino
 ~~~~~~~~
