@@ -452,6 +452,8 @@ For example, :ref:`platform_atmelavr` has ``UPLOADHEXCMD``
 
 See examples below:
 
+**Template**
+
 ``platformio.ini``:
 
 .. code-block:: ini
@@ -494,6 +496,47 @@ See examples below:
         env.Execute("executable arg1 arg2")
 
     env.Replace(UPLOADCMD=on_upload)
+
+
+**Custom openOCD command**
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:disco_f407vg]
+    platform = ststm32
+    board = disco_f407vg
+    framework = mbed
+
+    extra_scripts = extra_script.py
+    upload_protocol = custom
+    ; each flag in a new line
+    upload_flags =
+        -f
+        scripts/interface/stlink.cfg
+        -f
+        scripts/target/stm32f4x.cfg
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    Import("env")
+
+    platform = env.PioPlatform()
+
+    env.Prepend(
+        UPLOADERFLAGS=["-s", platform.get_package_dir("tool-openocd") or ""]
+    )
+    env.Append(
+        UPLOADERFLAGS=["-c", "program {{$SOURCE}} verify reset; shutdown"]
+    )
+    env.Replace(
+        UPLOADER="openocd",
+        UPLOADCMD="$UPLOADER $UPLOADERFLAGS"
+    )
+
 
 Upload to Cloud (OTA)
 '''''''''''''''''''''
