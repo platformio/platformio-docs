@@ -311,6 +311,12 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - :ref:`platform_ststm32`
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - STM32F746ZGT6
@@ -329,6 +335,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - STM32L011K4T6
@@ -1412,6 +1424,13 @@ ST
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -1433,6 +1452,13 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board

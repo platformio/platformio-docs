@@ -718,6 +718,13 @@ Boards
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -739,6 +746,13 @@ Boards
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board

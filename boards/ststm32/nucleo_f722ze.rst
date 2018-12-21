@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_l053r8:
+.. _board_ststm32_nucleo_f722ze:
 
-ST Nucleo L053R8
+ST Nucleo F722ZE
 ================
 
 .. contents::
@@ -24,49 +24,49 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L053R8T6
+    - STM32F722ZET6
   * - **Frequency**
-    - 32MHz
+    - 216MHz
   * - **Flash**
-    - 64KB
+    - 512KB
   * - **RAM**
-    - 8KB
+    - 256KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-L053R8/?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-f722ze.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_l053r8`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_f722ze`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_l053r8]
+  [env:nucleo_f722ze]
   platform = ststm32
-  board = nucleo_l053r8
+  board = nucleo_f722ze
 
-You can override default ST Nucleo L053R8 settings per build environment using
+You can override default ST Nucleo F722ZE settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_l053r8.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l053r8.json>`_. For example,
+board manifest `nucleo_f722ze.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_f722ze.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_l053r8]
+  [env:nucleo_f722ze]
   platform = ststm32
-  board = nucleo_l053r8
+  board = nucleo_f722ze
 
   ; change microcontroller
-  board_build.mcu = stm32l053r8t6
+  board_build.mcu = stm32f722zet6
 
   ; change MCU frequency
-  board_build.f_cpu = 32000000L
+  board_build.f_cpu = 216000000L
 
 
 Uploading
 ---------
-ST Nucleo L053R8 supports the next uploading protocols:
+ST Nucleo F722ZE supports the next uploading protocols:
 
 * ``jlink``
 * ``stlink``
@@ -79,9 +79,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_l053r8]
+  [env:nucleo_f722ze]
   platform = ststm32
-  board = nucleo_l053r8
+  board = nucleo_f722ze
 
   upload_protocol = mbed
 
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L053R8 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ST Nucleo F722ZE has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -123,12 +123,6 @@ Frameworks
 
     * - Name
       - Description
-
-    * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

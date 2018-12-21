@@ -70,6 +70,7 @@ ST 32L100DISCOVERY supports the next uploading protocols:
 
 * ``stlink``
 * ``blackmagic``
+* ``jlink``
 
 Default protocol is ``stlink``
 
@@ -105,6 +106,9 @@ ST 32L100DISCOVERY has on-board debug probe and **IS READY** for debugging. You 
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_jlink`
     - 
     - 
   * - :ref:`debugging_tool_stlink`

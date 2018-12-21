@@ -670,9 +670,11 @@ ST STM32
     ststm32/nucleo_f439zi
     ststm32/nucleo_f446re
     ststm32/nucleo_f446ze
+    ststm32/nucleo_f722ze
     ststm32/nucleo_f746zg
     ststm32/nucleo_f756zg
     ststm32/nucleo_f767zi
+    ststm32/nucleo_h743zi
     ststm32/nucleo_l011k4
     ststm32/nucleo_l031k6
     ststm32/nucleo_l053r8

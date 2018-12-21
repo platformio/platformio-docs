@@ -1242,6 +1242,13 @@ Boards
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_disco_l100rc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L100RCT6
+      - 32MHz
+      - 256KB
+      - 16KB
     * - :ref:`board_ststm32_disco_l476vg`
       - :ref:`platform_ststm32`
       - On-board
@@ -1424,6 +1431,13 @@ Boards
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -1445,6 +1459,13 @@ Boards
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -1690,6 +1711,20 @@ Boards
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F407VET6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407VGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - External

@@ -297,6 +297,11 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - STM32F746ZGT6
       - 216MHz
@@ -312,6 +317,11 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - STM32L011K4T6
       - 32MHz
@@ -694,11 +704,11 @@ Packages
     * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897&utm_source=platformio&utm_medium=docs>`__
       - STM32Cube embedded software libraries
 
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+      - SEGGER J-Link Software and Documentation Pack
+
     * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
-
-    * - `tool-stlink <https://github.com/texane/stlink?utm_source=platformio&utm_medium=docs>`__
-      - ST-Link
 
     * - `tool-stm32duino <https://github.com/rogerclarkmelbourne/Arduino_STM32?utm_source=platformio&utm_medium=docs>`__
       - STM32Duino Tools
@@ -1348,6 +1358,12 @@ ST
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - On-board
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - On-board
       - STM32F746ZGT6
@@ -1366,6 +1382,12 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - On-board
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - On-board
       - STM32L011K4T6
