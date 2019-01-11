@@ -68,12 +68,12 @@ Uploading
 ---------
 Seeed Arch Link supports the next uploading protocols:
 
-* ``cmsis-dap``
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
+* ``mbed``
 * ``nrfjprog``
 * ``stlink``
-* ``mbed``
 
 Default protocol is ``cmsis-dap``
 

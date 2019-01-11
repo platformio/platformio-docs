@@ -68,9 +68,9 @@ Uploading
 ---------
 Seeed Wio 3G supports the next uploading protocols:
 
-* ``stlink``
-* ``jlink``
 * ``blackmagic``
+* ``jlink``
+* ``stlink``
 
 Default protocol is ``stlink``
 

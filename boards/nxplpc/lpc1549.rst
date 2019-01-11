@@ -68,8 +68,8 @@ Uploading
 ---------
 NXP LPCXpresso1549 supports the next uploading protocols:
 
-* ``jlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

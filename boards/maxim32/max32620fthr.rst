@@ -68,8 +68,8 @@ Uploading
 ---------
 MAX32620FTHR supports the next uploading protocols:
 
-* ``mbed``
 * ``jlink``
+* ``mbed``
 
 Default protocol is ``mbed``
 

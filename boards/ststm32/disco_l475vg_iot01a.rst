@@ -68,10 +68,10 @@ Uploading
 ---------
 ST DISCO-L475VG-IOT01A supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
+* ``stlink``
 
 Default protocol is ``mbed``
 

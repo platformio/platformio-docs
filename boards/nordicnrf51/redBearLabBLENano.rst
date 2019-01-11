@@ -68,12 +68,12 @@ Uploading
 ---------
 RedBearLab BLE Nano 1.5 supports the next uploading protocols:
 
-* ``cmsis-dap``
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
-* ``stlink``
-* ``nrfjprog``
 * ``mbed``
+* ``nrfjprog``
+* ``stlink``
 
 Default protocol is ``cmsis-dap``
 

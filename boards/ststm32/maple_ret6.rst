@@ -68,10 +68,10 @@ Uploading
 ---------
 Maple (RET6) supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
 * ``dfu``
+* ``jlink``
+* ``stlink``
 
 Default protocol is ``dfu``
 

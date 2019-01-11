@@ -68,9 +68,9 @@ Uploading
 ---------
 ST STM32LDISCOVERY supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``stlink``
 

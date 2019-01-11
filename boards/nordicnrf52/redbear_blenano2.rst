@@ -68,11 +68,11 @@ Uploading
 ---------
 RedBearLab BLE Nano 2 supports the next uploading protocols:
 
+* ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``nrfjprog``
 * ``stlink``
-* ``blackmagic``
-* ``cmsis-dap``
 
 Default protocol is ``cmsis-dap``
 

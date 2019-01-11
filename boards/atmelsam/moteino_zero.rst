@@ -68,11 +68,11 @@ Uploading
 ---------
 Moteino M0 supports the next uploading protocols:
 
-* ``sam-ba``
-* ``cmsis-dap``
-* ``blackmagic``
-* ``jlink``
 * ``atmel-ice``
+* ``blackmagic``
+* ``cmsis-dap``
+* ``jlink``
+* ``sam-ba``
 
 Default protocol is ``sam-ba``
 

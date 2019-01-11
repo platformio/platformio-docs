@@ -68,10 +68,10 @@ Uploading
 ---------
 ST DISCO-L072CZ-LRWAN1 supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
+* ``stlink``
 
 Default protocol is ``mbed``
 

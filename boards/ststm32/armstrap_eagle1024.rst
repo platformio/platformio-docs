@@ -68,9 +68,9 @@ Uploading
 ---------
 Armstrap Eagle 1024 supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``blackmagic``
 

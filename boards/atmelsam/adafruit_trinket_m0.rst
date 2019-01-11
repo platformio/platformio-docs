@@ -68,10 +68,10 @@ Uploading
 ---------
 Adafruit Trinket M0 supports the next uploading protocols:
 
-* ``sam-ba``
+* ``atmel-ice``
 * ``blackmagic``
 * ``jlink``
-* ``atmel-ice``
+* ``sam-ba``
 
 Default protocol is ``sam-ba``
 

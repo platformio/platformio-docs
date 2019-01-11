@@ -68,8 +68,8 @@ Uploading
 ---------
 NXP LPC11U37 supports the next uploading protocols:
 
-* ``jlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

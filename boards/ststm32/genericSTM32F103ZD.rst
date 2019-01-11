@@ -68,11 +68,11 @@ Uploading
 ---------
 STM32F103ZD (64k RAM. 384k Flash) supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
-* ``serial``
 * ``dfu``
+* ``jlink``
+* ``serial``
+* ``stlink``
 
 Default protocol is ``stlink``
 

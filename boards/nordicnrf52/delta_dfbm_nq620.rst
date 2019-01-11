@@ -68,12 +68,12 @@ Uploading
 ---------
 Delta DFBM-NQ620 supports the next uploading protocols:
 
-* ``jlink``
-* ``nrfjprog``
 * ``blackmagic``
 * ``cmsis-dap``
-* ``stlink``
+* ``jlink``
 * ``mbed``
+* ``nrfjprog``
+* ``stlink``
 
 Default protocol is ``cmsis-dap``
 

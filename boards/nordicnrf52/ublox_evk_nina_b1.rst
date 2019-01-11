@@ -68,11 +68,11 @@ Uploading
 ---------
 u-blox EVK-NINA-B1 supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
+* ``mbed``
 * ``nrfjprog``
 * ``stlink``
-* ``blackmagic``
-* ``mbed``
 
 Default protocol is ``jlink``
 

@@ -68,9 +68,9 @@ Uploading
 ---------
 ST STM32F0308DISCOVERY supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``stlink``
 

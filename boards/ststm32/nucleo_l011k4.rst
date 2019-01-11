@@ -68,9 +68,9 @@ Uploading
 ---------
 ST Nucleo L011K4 supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``stlink``
 

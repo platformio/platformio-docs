@@ -68,9 +68,9 @@ Uploading
 ---------
 ST 32F401CDISCOVERY supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``stlink``
 

@@ -68,10 +68,10 @@ Uploading
 ---------
 Arduino Tian supports the next uploading protocols:
 
-* ``stk500v2``
+* ``atmel-ice``
 * ``blackmagic``
 * ``jlink``
-* ``atmel-ice``
+* ``stk500v2``
 
 Default protocol is ``stk500v2``
 

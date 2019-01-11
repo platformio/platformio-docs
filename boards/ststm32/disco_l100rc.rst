@@ -68,9 +68,9 @@ Uploading
 ---------
 ST 32L100DISCOVERY supports the next uploading protocols:
 
-* ``stlink``
 * ``blackmagic``
 * ``jlink``
+* ``stlink``
 
 Default protocol is ``stlink``
 

@@ -68,9 +68,9 @@ Uploading
 ---------
 u-blox ODIN-W2 supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``stlink``
 

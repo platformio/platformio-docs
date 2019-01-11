@@ -68,10 +68,10 @@ Uploading
 ---------
 Mbed Connect Cloud supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
 * ``cmsis-dap``
+* ``jlink``
+* ``stlink``
 
 Default protocol is ``stlink``
 

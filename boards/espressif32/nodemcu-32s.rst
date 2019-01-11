@@ -69,15 +69,15 @@ Uploading
 NodeMCU-32S supports the next uploading protocols:
 
 * ``esp-prog``
+* ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``
 * ``minimodule``
-* ``olimex-arm-usb-tiny-h``
-* ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-ocd``
+* ``olimex-arm-usb-ocd-h``
+* ``olimex-arm-usb-tiny-h``
 * ``olimex-jtag-tiny``
 * ``tumpa``
-* ``esptool``
 
 Default protocol is ``esptool``
 

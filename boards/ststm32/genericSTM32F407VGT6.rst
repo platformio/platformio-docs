@@ -68,9 +68,9 @@ Uploading
 ---------
 STM32F407VG (192k RAM. 1024k Flash) supports the next uploading protocols:
 
-* ``stlink``
 * ``dfu``
 * ``jlink``
+* ``stlink``
 
 Default protocol is ``stlink``
 

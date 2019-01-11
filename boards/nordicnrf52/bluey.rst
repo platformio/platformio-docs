@@ -68,10 +68,10 @@ Uploading
 ---------
 Bluey nRF52832 IoT supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``nrfjprog``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``jlink``
 

@@ -68,8 +68,8 @@ Uploading
 ---------
 Maxim Health Sensor Platform supports the next uploading protocols:
 
-* ``mbed``
 * ``jlink``
+* ``mbed``
 
 Default protocol is ``mbed``
 
