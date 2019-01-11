@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_lolin_d32_pro:
+.. _board_espressif32_ttgo-t-beam:
 
-WEMOS LOLIN D32 PRO
-===================
+TTGO T-Beam
+===========
 
 .. contents::
 
@@ -30,32 +30,32 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Flash**
     - 4MB
   * - **RAM**
-    - 320KB
+    - 1.25MB
   * - **Vendor**
-    - `WEMOS <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`__
+    - `TTGO <https://github.com/LilyGO/TTGO-T-Beam?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``lolin_d32_pro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ttgo-t-beam`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:lolin_d32_pro]
+  [env:ttgo-t-beam]
   platform = espressif32
-  board = lolin_d32_pro
+  board = ttgo-t-beam
 
-You can override default WEMOS LOLIN D32 PRO settings per build environment using
+You can override default TTGO T-Beam settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `lolin_d32_pro.json <https://github.com/platformio/platform-espressif32/blob/master/boards/lolin_d32_pro.json>`_. For example,
+board manifest `ttgo-t-beam.json <https://github.com/platformio/platform-espressif32/blob/master/boards/ttgo-t-beam.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:lolin_d32_pro]
+  [env:ttgo-t-beam]
   platform = espressif32
-  board = lolin_d32_pro
+  board = ttgo-t-beam
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,7 +66,7 @@ board manifest `lolin_d32_pro.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-WEMOS LOLIN D32 PRO supports the next uploading protocols:
+TTGO T-Beam supports the next uploading protocols:
 
 * ``esp-prog``
 * ``iot-bus-jtag``
@@ -85,9 +85,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:lolin_d32_pro]
+  [env:ttgo-t-beam]
   platform = espressif32
-  board = lolin_d32_pro
+  board = ttgo-t-beam
 
   upload_protocol = esptool
 
@@ -104,7 +104,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WEMOS LOLIN D32 PRO does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+TTGO T-Beam does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

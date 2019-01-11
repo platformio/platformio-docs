@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_m5stack-fire:
+.. _board_espressif32_esp32-poe:
 
-M5Stack FIRE
-============
+OLIMEX ESP32-PoE
+================
 
 .. contents::
 
@@ -28,34 +28,34 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 16MB
+    - 4MB
   * - **RAM**
-    - 6.25MB
+    - 320KB
   * - **Vendor**
-    - `M5Stack <http://www.m5stack.com?utm_source=platformio&utm_medium=docs>`__
+    - `OLIMEX <https://www.olimex.com/Products/IoT/ESP32/ESP32-POE/open-source-hardware?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``m5stack-fire`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``esp32-poe`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:m5stack-fire]
+  [env:esp32-poe]
   platform = espressif32
-  board = m5stack-fire
+  board = esp32-poe
 
-You can override default M5Stack FIRE settings per build environment using
+You can override default OLIMEX ESP32-PoE settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `m5stack-fire.json <https://github.com/platformio/platform-espressif32/blob/master/boards/m5stack-fire.json>`_. For example,
+board manifest `esp32-poe.json <https://github.com/platformio/platform-espressif32/blob/master/boards/esp32-poe.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:m5stack-fire]
+  [env:esp32-poe]
   platform = espressif32
-  board = m5stack-fire
+  board = esp32-poe
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -65,7 +65,7 @@ board manifest `m5stack-fire.json <https://github.com/platformio/platform-espres
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support M5Stack FIRE board.
+:ref:`piodebug` currently does not support OLIMEX ESP32-PoE board.
 
 Frameworks
 ----------

@@ -11,7 +11,7 @@
 
 .. _board_espressif32_iotbusproteus:
 
-oddWires Proteus IoT-Bus
+oddWires IoT-Bus Proteus
 ========================
 
 .. contents::
@@ -46,7 +46,7 @@ Please use ``iotbusproteus`` ID for :ref:`projectconf_env_board` option in :ref:
   platform = espressif32
   board = iotbusproteus
 
-You can override default oddWires Proteus IoT-Bus settings per build environment using
+You can override default oddWires IoT-Bus Proteus settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `iotbusproteus.json <https://github.com/platformio/platform-espressif32/blob/master/boards/iotbusproteus.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,18 +66,18 @@ board manifest `iotbusproteus.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-oddWires Proteus IoT-Bus supports the next uploading protocols:
+oddWires IoT-Bus Proteus supports the next uploading protocols:
 
-* ``esptool``
 * ``esp-prog``
+* ``iot-bus-jtag``
 * ``jlink``
+* ``minimodule``
 * ``olimex-arm-usb-tiny-h``
 * ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-ocd``
 * ``olimex-jtag-tiny``
-* ``iot-bus-jtag``
 * ``tumpa``
-* ``minimodule``
+* ``esptool``
 
 Default protocol is ``esptool``
 
@@ -104,7 +104,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-oddWires Proteus IoT-Bus does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+oddWires IoT-Bus Proteus does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

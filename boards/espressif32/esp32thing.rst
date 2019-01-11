@@ -68,16 +68,16 @@ Uploading
 ---------
 SparkFun ESP32 Thing supports the next uploading protocols:
 
-* ``esptool``
 * ``esp-prog``
+* ``iot-bus-jtag``
 * ``jlink``
+* ``minimodule``
 * ``olimex-arm-usb-tiny-h``
 * ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-ocd``
 * ``olimex-jtag-tiny``
-* ``iot-bus-jtag``
 * ``tumpa``
-* ``minimodule``
+* ``esptool``
 
 Default protocol is ``esptool``
 

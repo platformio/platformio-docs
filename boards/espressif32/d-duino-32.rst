@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_lolin_d32_pro:
+.. _board_espressif32_d-duino-32:
 
-WEMOS LOLIN D32 PRO
-===================
+D-duino-32
+==========
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `WEMOS <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`__
+    - `DSTIKE <https://www.tindie.com/products/lspoplove/dstike-d-duino-32-v3/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``lolin_d32_pro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``d-duino-32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:lolin_d32_pro]
+  [env:d-duino-32]
   platform = espressif32
-  board = lolin_d32_pro
+  board = d-duino-32
 
-You can override default WEMOS LOLIN D32 PRO settings per build environment using
+You can override default D-duino-32 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `lolin_d32_pro.json <https://github.com/platformio/platform-espressif32/blob/master/boards/lolin_d32_pro.json>`_. For example,
+board manifest `d-duino-32.json <https://github.com/platformio/platform-espressif32/blob/master/boards/d-duino-32.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:lolin_d32_pro]
+  [env:d-duino-32]
   platform = espressif32
-  board = lolin_d32_pro
+  board = d-duino-32
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,7 +66,7 @@ board manifest `lolin_d32_pro.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-WEMOS LOLIN D32 PRO supports the next uploading protocols:
+D-duino-32 supports the next uploading protocols:
 
 * ``esp-prog``
 * ``iot-bus-jtag``
@@ -85,9 +85,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:lolin_d32_pro]
+  [env:d-duino-32]
   platform = espressif32
-  board = lolin_d32_pro
+  board = d-duino-32
 
   upload_protocol = esptool
 
@@ -104,7 +104,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WEMOS LOLIN D32 PRO does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+D-duino-32 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

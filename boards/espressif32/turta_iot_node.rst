@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_m5stack-fire:
+.. _board_espressif32_turta_iot_node:
 
-M5Stack FIRE
-============
+Turta IoT Node
+==============
 
 .. contents::
 
@@ -28,34 +28,34 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 16MB
+    - 4MB
   * - **RAM**
-    - 6.25MB
+    - 320KB
   * - **Vendor**
-    - `M5Stack <http://www.m5stack.com?utm_source=platformio&utm_medium=docs>`__
+    - `Turta <https://www.turta.io/en/iotnode?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``m5stack-fire`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``turta_iot_node`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:m5stack-fire]
+  [env:turta_iot_node]
   platform = espressif32
-  board = m5stack-fire
+  board = turta_iot_node
 
-You can override default M5Stack FIRE settings per build environment using
+You can override default Turta IoT Node settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `m5stack-fire.json <https://github.com/platformio/platform-espressif32/blob/master/boards/m5stack-fire.json>`_. For example,
+board manifest `turta_iot_node.json <https://github.com/platformio/platform-espressif32/blob/master/boards/turta_iot_node.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:m5stack-fire]
+  [env:turta_iot_node]
   platform = espressif32
-  board = m5stack-fire
+  board = turta_iot_node
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -65,7 +65,7 @@ board manifest `m5stack-fire.json <https://github.com/platformio/platform-espres
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support M5Stack FIRE board.
+:ref:`piodebug` currently does not support Turta IoT Node board.
 
 Frameworks
 ----------

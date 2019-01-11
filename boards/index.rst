@@ -263,8 +263,11 @@ Espressif 32
     espressif32/alksesp32
     espressif32/featheresp32
     espressif32/espea32
+    espressif32/bpi-bit
+    espressif32/d-duino-32
     espressif32/esp32doit-devkit-v1
     espressif32/pocket_32
+    espressif32/fm-devkit
     espressif32/pico32
     espressif32/esp32vn-iot-uno
     espressif32/espectro32
@@ -291,9 +294,16 @@ Espressif 32
     espressif32/esp32-evb
     espressif32/esp32-gateway
     espressif32/esp32-pro
+    espressif32/esp32-poe
+    espressif32/oroca_edubot
     espressif32/onehorse32dev
+    espressif32/lopy
+    espressif32/lopy4
+    espressif32/wesp32
     espressif32/esp32thing
     espressif32/ttgo-lora32-v1
+    espressif32/ttgo-t-beam
+    espressif32/turta_iot_node
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
     espressif32/lolin32

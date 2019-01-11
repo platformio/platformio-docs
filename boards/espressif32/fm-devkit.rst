@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_lolin_d32_pro:
+.. _board_espressif32_fm-devkit:
 
-WEMOS LOLIN D32 PRO
-===================
+ESP32 FM DevKit
+===============
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `WEMOS <https://wiki.wemos.cc/products:d32:d32_pro?utm_source=platformio&utm_medium=docs>`__
+    - `Unknown <https://github.com/dragon-engineer/esp32_fmdevkit?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``lolin_d32_pro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``fm-devkit`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:lolin_d32_pro]
+  [env:fm-devkit]
   platform = espressif32
-  board = lolin_d32_pro
+  board = fm-devkit
 
-You can override default WEMOS LOLIN D32 PRO settings per build environment using
+You can override default ESP32 FM DevKit settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `lolin_d32_pro.json <https://github.com/platformio/platform-espressif32/blob/master/boards/lolin_d32_pro.json>`_. For example,
+board manifest `fm-devkit.json <https://github.com/platformio/platform-espressif32/blob/master/boards/fm-devkit.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:lolin_d32_pro]
+  [env:fm-devkit]
   platform = espressif32
-  board = lolin_d32_pro
+  board = fm-devkit
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,7 +66,7 @@ board manifest `lolin_d32_pro.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-WEMOS LOLIN D32 PRO supports the next uploading protocols:
+ESP32 FM DevKit supports the next uploading protocols:
 
 * ``esp-prog``
 * ``iot-bus-jtag``
@@ -85,9 +85,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:lolin_d32_pro]
+  [env:fm-devkit]
   platform = espressif32
-  board = lolin_d32_pro
+  board = fm-devkit
 
   upload_protocol = esptool
 
@@ -104,7 +104,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WEMOS LOLIN D32 PRO does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+ESP32 FM DevKit does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
