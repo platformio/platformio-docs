@@ -83,7 +83,7 @@ Packages
       - Description
 
     * - `framework-arduinoavr <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (AVR Core, 1.6)
+      - Arduino Wiring-based Framework (AVR Core)
 
     * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
       - Simba Framework

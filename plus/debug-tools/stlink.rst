@@ -154,6 +154,9 @@ Platforms
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
+    * - :ref:`platform_ststm8`
+      - The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.
+
 Frameworks
 ----------
 .. list-table::
@@ -886,6 +889,13 @@ Boards
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm8_stm8sdisco`
+      - :ref:`platform_ststm8`
+      - On-board
+      - STM8S105C6T6
+      - 16MHz
+      - 32KB
+      - 2KB
     * - :ref:`board_ststm32_silica_sensor_node`
       - :ref:`platform_ststm32`
       - On-board

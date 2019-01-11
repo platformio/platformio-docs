@@ -730,6 +730,18 @@ ST STM32
     ststm32/ublox_evk_odin_w2
     ststm32/mtb_ublox_odin_w2
 
+ST STM8
+-------
+
+.. toctree::
+    :maxdepth: 1
+        
+    ststm8/stm8sdisco
+    ststm8/stm8sblue
+    ststm8/stm8sblack
+    ststm8/mb208
+    ststm8/s8uno
+
 Teensy
 ------
 

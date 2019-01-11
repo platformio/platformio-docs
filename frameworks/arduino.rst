@@ -293,6 +293,12 @@ You do not need to use/buy external debug probe.
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm8_stm8sdisco`
+      - :ref:`platform_ststm8`
+      - STM8S105C6T6
+      - 16MHz
+      - 32KB
+      - 2KB
     * - :ref:`board_nordicnrf51_seeedTinyBLE`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -1017,6 +1023,7 @@ Examples
 * `Arduino for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Arduino for ST STM8 <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for TI MSP430 <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
@@ -1057,6 +1064,9 @@ Platforms
 
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+
+    * - :ref:`platform_ststm8`
+      - The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.
 
     * - :ref:`platform_teensy`
       - Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
@@ -4473,6 +4483,27 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm8_stm8sdisco`
+      - :ref:`platform_ststm8`
+      - On-board
+      - STM8S105C6T6
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_ststm8_stm8sblue`
+      - :ref:`platform_ststm8`
+      - No
+      - STM8S103F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_ststm8_stm8sblack`
+      - :ref:`platform_ststm8`
+      - No
+      - STM8S105K4T6
+      - 16MHz
+      - 16KB
+      - 2KB
 
 SainSmart
 ~~~~~~~~~
@@ -5488,6 +5519,34 @@ oddWires
       - 240MHz
       - 4MB
       - 320KB
+
+sduino
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm8_mb208`
+      - :ref:`platform_ststm8`
+      - No
+      - STM8S208MBT6
+      - 16MHz
+      - 128KB
+      - 6KB
+    * - :ref:`board_ststm8_s8uno`
+      - :ref:`platform_ststm8`
+      - No
+      - STM8S105K6T6
+      - 16MHz
+      - 32KB
+      - 2KB
 
 sino:bit
 ~~~~~~~~
