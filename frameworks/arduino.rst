@@ -3293,6 +3293,13 @@ LowPowerLab
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_atmelavr_moteino8mhz`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
     * - :ref:`board_atmelavr_moteinomega`
       - :ref:`platform_atmelavr`
       - No
@@ -3440,6 +3447,13 @@ Mcudude
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelavr_megacore128`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA128
+      - 8MHz
+      - 127KB
+      - 4KB
     * - :ref:`board_atmelavr_mightycore1284`
       - :ref:`platform_atmelavr`
       - No

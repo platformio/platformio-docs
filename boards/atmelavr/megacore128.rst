@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_moteinomega:
+.. _board_atmelavr_megacore128:
 
-LowPowerLab MoteinoMEGA
-=======================
+MegaCore ATmega128
+==================
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA1284P
+    - ATMEGA128
   * - **Frequency**
-    - 16MHz
+    - 8MHz
   * - **Flash**
     - 127KB
   * - **RAM**
-    - 16KB
+    - 4KB
   * - **Vendor**
-    - `LowPowerLab <https://lowpowerlab.com/shop/product/119?utm_source=platformio&utm_medium=docs>`__
+    - `Mcudude <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``moteinomega`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``megacore128`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:moteinomega]
+  [env:megacore128]
   platform = atmelavr
-  board = moteinomega
+  board = megacore128
 
-You can override default LowPowerLab MoteinoMEGA settings per build environment using
+You can override default MegaCore ATmega128 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `moteinomega.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/moteinomega.json>`_. For example,
+board manifest `megacore128.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/megacore128.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:moteinomega]
+  [env:megacore128]
   platform = atmelavr
-  board = moteinomega
+  board = megacore128
 
   ; change microcontroller
-  board_build.mcu = atmega1284p
+  board_build.mcu = atmega128
 
   ; change MCU frequency
-  board_build.f_cpu = 16000000L
+  board_build.f_cpu = 8000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support LowPowerLab MoteinoMEGA board.
+:ref:`piodebug` currently does not support MegaCore ATmega128 board.
 
 Frameworks
 ----------

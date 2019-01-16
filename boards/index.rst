@@ -137,7 +137,9 @@ Atmel AVR
     atmelavr/smart7688
     atmelavr/mightyhat
     atmelavr/moteino
+    atmelavr/moteino8mhz
     atmelavr/moteinomega
+    atmelavr/megacore128
     atmelavr/168pa16m
     atmelavr/168pa8m
     atmelavr/328p16m

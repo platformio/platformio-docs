@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_moteinomega:
+.. _board_atmelavr_moteino8mhz:
 
-LowPowerLab MoteinoMEGA
-=======================
+LowPowerLab Moteino (8Mhz)
+==========================
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA1284P
+    - ATMEGA328P
   * - **Frequency**
-    - 16MHz
+    - 8MHz
   * - **Flash**
-    - 127KB
+    - 31.50KB
   * - **RAM**
-    - 16KB
+    - 2KB
   * - **Vendor**
-    - `LowPowerLab <https://lowpowerlab.com/shop/product/119?utm_source=platformio&utm_medium=docs>`__
+    - `LowPowerLab <https://lowpowerlab.com/shop/product/159?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``moteinomega`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``moteino8mhz`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:moteinomega]
+  [env:moteino8mhz]
   platform = atmelavr
-  board = moteinomega
+  board = moteino8mhz
 
-You can override default LowPowerLab MoteinoMEGA settings per build environment using
+You can override default LowPowerLab Moteino (8Mhz) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `moteinomega.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/moteinomega.json>`_. For example,
+board manifest `moteino8mhz.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/moteino8mhz.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:moteinomega]
+  [env:moteino8mhz]
   platform = atmelavr
-  board = moteinomega
+  board = moteino8mhz
 
   ; change microcontroller
-  board_build.mcu = atmega1284p
+  board_build.mcu = atmega328p
 
   ; change MCU frequency
-  board_build.f_cpu = 16000000L
+  board_build.f_cpu = 8000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support LowPowerLab MoteinoMEGA board.
+:ref:`piodebug` currently does not support LowPowerLab Moteino (8Mhz) board.
 
 Frameworks
 ----------
