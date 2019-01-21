@@ -355,6 +355,23 @@ There are 2 pre-configured debugging configurations:
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-debug.png
 
+Variable Format
+~~~~~~~~~~~~~~~
+
+Currently, VSCode does not provide UI/API to change variable format. See
+related `VSCode Issue #28025 <https://github.com/Microsoft/vscode/issues/28025>`_.
+
+Temporary solution is to set the default numeric base in which the debugger
+displays numeric output using Debug Console (you will see it during active
+debugging session). For example, show variables in hexadecimal format (copy
+below and paste into "Debug Console"):
+
+.. code::
+
+  set output-radix 16
+
+Possible values, listed in decimal base, are: 8, 10, 16.
+
 Watchpoints
 ~~~~~~~~~~~
 
