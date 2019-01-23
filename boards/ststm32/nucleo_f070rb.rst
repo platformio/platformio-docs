@@ -68,10 +68,10 @@ Uploading
 ---------
 ST Nucleo F070RB supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
+* ``stlink``
 
 Default protocol is ``mbed``
 

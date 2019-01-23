@@ -11,8 +11,8 @@
 
 .. _board_espressif32_wemosbat:
 
-WeMos WiFi & Bluetooth Battery
-==============================
+WeMos WiFi and Bluetooth Battery
+================================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``wemosbat`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   platform = espressif32
   board = wemosbat
 
-You can override default WeMos WiFi & Bluetooth Battery settings per build environment using
+You can override default WeMos WiFi and Bluetooth Battery settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `wemosbat.json <https://github.com/platformio/platform-espressif32/blob/master/boards/wemosbat.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,18 +66,18 @@ board manifest `wemosbat.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-WeMos WiFi & Bluetooth Battery supports the next uploading protocols:
+WeMos WiFi and Bluetooth Battery supports the next uploading protocols:
 
-* ``esptool``
 * ``esp-prog``
-* ``jlink``
-* ``olimex-arm-usb-tiny-h``
-* ``olimex-arm-usb-ocd-h``
-* ``olimex-arm-usb-ocd``
-* ``olimex-jtag-tiny``
+* ``esptool``
 * ``iot-bus-jtag``
-* ``tumpa``
+* ``jlink``
 * ``minimodule``
+* ``olimex-arm-usb-ocd``
+* ``olimex-arm-usb-ocd-h``
+* ``olimex-arm-usb-tiny-h``
+* ``olimex-jtag-tiny``
+* ``tumpa``
 
 Default protocol is ``esptool``
 
@@ -104,7 +104,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WeMos WiFi & Bluetooth Battery does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+WeMos WiFi and Bluetooth Battery does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

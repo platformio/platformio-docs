@@ -68,12 +68,12 @@ Uploading
 ---------
 Nordic nRF51-DK supports the next uploading protocols:
 
-* ``cmsis-dap``
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
+* ``mbed``
 * ``nrfjprog``
 * ``stlink``
-* ``mbed``
 
 Default protocol is ``jlink``
 

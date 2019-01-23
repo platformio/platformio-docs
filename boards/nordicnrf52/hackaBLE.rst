@@ -68,10 +68,10 @@ Uploading
 ---------
 hackaBLE supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``nrfjprog``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``jlink``
 

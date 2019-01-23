@@ -68,10 +68,10 @@ Uploading
 ---------
 ST STM32F4DISCOVERY supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
+* ``stlink``
 
 Default protocol is ``mbed``
 

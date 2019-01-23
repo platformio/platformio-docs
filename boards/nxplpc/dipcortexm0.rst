@@ -68,8 +68,8 @@ Uploading
 ---------
 Solder Splash Labs DipCortex M0 supports the next uploading protocols:
 
-* ``jlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

@@ -350,7 +350,7 @@ Packages
       - Description
 
     * - `framework-arduinosam <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (SAM Core, 1.6)
+      - Arduino Wiring-based Framework (SAM Core)
 
     * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework

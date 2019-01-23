@@ -68,8 +68,8 @@ Uploading
 ---------
 NGX Technologies BlueBoard-LPC11U24 supports the next uploading protocols:
 
-* ``jlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

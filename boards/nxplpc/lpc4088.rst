@@ -68,8 +68,8 @@ Uploading
 ---------
 Embedded Artists LPC4088 QuickStart Board supports the next uploading protocols:
 
-* ``jlink``
 * ``cmsis-dap``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

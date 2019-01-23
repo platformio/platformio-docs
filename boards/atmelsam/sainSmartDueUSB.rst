@@ -68,10 +68,10 @@ Uploading
 ---------
 SainSmart Due (USB Native Port) supports the next uploading protocols:
 
-* ``sam-ba``
-* ``jlink``
-* ``blackmagic``
 * ``atmel-ice``
+* ``blackmagic``
+* ``jlink``
+* ``sam-ba``
 * ``stlink``
 
 Default protocol is ``sam-ba``

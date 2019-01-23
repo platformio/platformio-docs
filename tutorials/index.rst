@@ -24,6 +24,7 @@ Tutorials
     espressif32/arduino_debugging_unit_testing
     ststm32/stm32cube_debugging_unit_testing
     nordicnrf52/arduino_debugging_unit_testing
+    riscv/riscv_asm_video_tutorial
 
 Project Examples
 ----------------

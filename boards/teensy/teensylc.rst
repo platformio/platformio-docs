@@ -68,9 +68,9 @@ Uploading
 ---------
 Teensy LC supports the next uploading protocols:
 
+* ``jlink``
 * ``teensy-cli``
 * ``teensy-gui``
-* ``jlink``
 
 Default protocol is ``teensy-gui``
 

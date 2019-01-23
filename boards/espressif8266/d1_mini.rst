@@ -11,8 +11,8 @@
 
 .. _board_espressif8266_d1_mini:
 
-WeMos D1 R2 & mini
-==================
+WeMos D1 R2 and mini
+====================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``d1_mini`` ID for :ref:`projectconf_env_board` option in :ref:`proje
   platform = espressif8266
   board = d1_mini
 
-You can override default WeMos D1 R2 & mini settings per build environment using
+You can override default WeMos D1 R2 and mini settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `d1_mini.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/d1_mini.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -65,7 +65,7 @@ board manifest `d1_mini.json <https://github.com/platformio/platform-espressif82
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support WeMos D1 R2 & mini board.
+:ref:`piodebug` currently does not support WeMos D1 R2 and mini board.
 
 Frameworks
 ----------

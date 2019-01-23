@@ -25,6 +25,7 @@ For more detailed information please visit `vendor site <https://riscv.org?utm_s
     :local:
     :depth: 1
 
+.. include:: riscv_extra.rst
 
 Examples
 --------

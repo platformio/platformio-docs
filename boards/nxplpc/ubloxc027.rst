@@ -68,9 +68,9 @@ Uploading
 ---------
 u-blox C027 supports the next uploading protocols:
 
-* ``jlink``
 * ``blackmagic``
 * ``cmsis-dap``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

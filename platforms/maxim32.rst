@@ -97,6 +97,16 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_maxim32_max32620fthr`
+      - MAX32620FTHR
+      - 96MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_maxim32_max32620hsp`
+      - MAX32620
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_maxim32_maxwsnenv`
       - MAX32610
       - 24MHz
@@ -147,6 +157,9 @@ Packages
 
     * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
+
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+      - SEGGER J-Link Software and Documentation Pack
 
     * - `tool-pyocd <https://github.com/mbedmicro/pyOCD?utm_source=platformio&utm_medium=docs>`__
       - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
@@ -201,7 +214,7 @@ Maxim
       - Flash
       - RAM
     * - :ref:`board_maxim32_max32620fthr`
-      - No
+      - External
       - MAX32620FTHR
       - 96MHz
       - 2MB
@@ -231,7 +244,7 @@ Maxim
       - 256KB
       - 32KB
     * - :ref:`board_maxim32_max32620hsp`
-      - No
+      - External
       - MAX32620
       - 96MHz
       - 2MB

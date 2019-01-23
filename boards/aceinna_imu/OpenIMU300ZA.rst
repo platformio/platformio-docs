@@ -69,8 +69,8 @@ Uploading
 Aceinna OpenIMU 300ZA supports the next uploading protocols:
 
 * ``blackmagic``
-* ``stlink``
 * ``jlink``
+* ``stlink``
 
 Default protocol is ``stlink``
 

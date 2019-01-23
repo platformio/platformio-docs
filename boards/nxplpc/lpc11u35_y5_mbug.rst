@@ -68,8 +68,8 @@ Uploading
 ---------
 y5 LPC11U35 mbug supports the next uploading protocols:
 
-* ``jlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

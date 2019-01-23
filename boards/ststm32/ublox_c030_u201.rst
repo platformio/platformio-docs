@@ -68,11 +68,11 @@ Uploading
 ---------
 u-blox C030-U201 IoT Starter Kit supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
-* ``mbed``
 * ``cmsis-dap``
+* ``jlink``
+* ``mbed``
+* ``stlink``
 
 Default protocol is ``mbed``
 

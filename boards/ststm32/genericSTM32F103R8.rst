@@ -68,11 +68,11 @@ Uploading
 ---------
 STM32F103R8 (20k RAM. 64 Flash) supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
-* ``serial``
 * ``dfu``
+* ``jlink``
+* ``serial``
+* ``stlink``
 
 Default protocol is ``stlink``
 

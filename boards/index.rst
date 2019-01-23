@@ -108,7 +108,9 @@ Atmel AVR
     atmelavr/elektor_uno_r4
     atmelavr/engduinov3
     atmelavr/mayfly
+    atmelavr/fysetc_f6_13
     atmelavr/attiny13
+    atmelavr/attiny13a
     atmelavr/attiny1634
     atmelavr/attiny167
     atmelavr/attiny2313
@@ -135,7 +137,9 @@ Atmel AVR
     atmelavr/smart7688
     atmelavr/mightyhat
     atmelavr/moteino
+    atmelavr/moteino8mhz
     atmelavr/moteinomega
+    atmelavr/megacore128
     atmelavr/168pa16m
     atmelavr/168pa8m
     atmelavr/328p16m
@@ -261,8 +265,11 @@ Espressif 32
     espressif32/alksesp32
     espressif32/featheresp32
     espressif32/espea32
+    espressif32/bpi-bit
+    espressif32/d-duino-32
     espressif32/esp32doit-devkit-v1
     espressif32/pocket_32
+    espressif32/fm-devkit
     espressif32/pico32
     espressif32/esp32vn-iot-uno
     espressif32/espectro32
@@ -289,9 +296,16 @@ Espressif 32
     espressif32/esp32-evb
     espressif32/esp32-gateway
     espressif32/esp32-pro
+    espressif32/esp32-poe
+    espressif32/oroca_edubot
     espressif32/onehorse32dev
+    espressif32/lopy
+    espressif32/lopy4
+    espressif32/wesp32
     espressif32/esp32thing
     espressif32/ttgo-lora32-v1
+    espressif32/ttgo-t-beam
+    espressif32/turta_iot_node
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
     espressif32/lolin32
@@ -668,9 +682,11 @@ ST STM32
     ststm32/nucleo_f439zi
     ststm32/nucleo_f446re
     ststm32/nucleo_f446ze
+    ststm32/nucleo_f722ze
     ststm32/nucleo_f746zg
     ststm32/nucleo_f756zg
     ststm32/nucleo_f767zi
+    ststm32/nucleo_h743zi
     ststm32/nucleo_l011k4
     ststm32/nucleo_l031k6
     ststm32/nucleo_l053r8
@@ -716,19 +732,31 @@ ST STM32
     ststm32/ublox_evk_odin_w2
     ststm32/mtb_ublox_odin_w2
 
+ST STM8
+-------
+
+.. toctree::
+    :maxdepth: 1
+        
+    ststm8/stm8sdisco
+    ststm8/stm8sblue
+    ststm8/stm8sblack
+    ststm8/mb208
+    ststm8/s8uno
+
 Teensy
 ------
 
 .. toctree::
     :maxdepth: 1
         
-    teensy/teensy20
+    teensy/teensy2
     teensy/teensy30
     teensy/teensy31
     teensy/teensy35
     teensy/teensy36
     teensy/teensylc
-    teensy/teensy20pp
+    teensy/teensy2pp
 
 TI MSP430
 ---------

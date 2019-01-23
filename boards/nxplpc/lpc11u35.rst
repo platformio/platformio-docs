@@ -68,8 +68,8 @@ Uploading
 ---------
 EA LPC11U35 QuickStart Board supports the next uploading protocols:
 
-* ``jlink``
 * ``blackmagic``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

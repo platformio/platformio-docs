@@ -68,9 +68,9 @@ Uploading
 ---------
 CoCo-ri-Co! supports the next uploading protocols:
 
+* ``blackmagic``
 * ``cmsis-dap``
 * ``jlink``
-* ``blackmagic``
 * ``mbed``
 
 Default protocol is ``mbed``

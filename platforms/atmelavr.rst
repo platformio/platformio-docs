@@ -83,7 +83,7 @@ Packages
       - Description
 
     * - `framework-arduinoavr <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (AVR Core, 1.6)
+      - Arduino Wiring-based Framework (AVR Core)
 
     * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
       - Simba Framework
@@ -538,7 +538,13 @@ Atmel
     * - :ref:`board_atmelavr_attiny13`
       - No
       - ATTINY13
-      - 9MHz
+      - 1MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - No
+      - ATTINY13A
+      - 1MHz
       - 1KB
       - 64B
     * - :ref:`board_atmelavr_attiny1634`
@@ -850,6 +856,25 @@ EnviroDIY
       - 127KB
       - 16KB
 
+FYSETC
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_fysetc_f6_13`
+      - No
+      - ATMEGA2560
+      - 16MHz
+      - 252KB
+      - 8KB
+
 LightUp
 ~~~~~~~
 
@@ -912,6 +937,12 @@ LowPowerLab
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_atmelavr_moteino8mhz`
+      - No
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
     * - :ref:`board_atmelavr_moteinomega`
       - No
       - ATMEGA1284P
@@ -931,6 +962,12 @@ Mcudude
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelavr_megacore128`
+      - No
+      - ATMEGA128
+      - 8MHz
+      - 127KB
+      - 4KB
     * - :ref:`board_atmelavr_mightycore1284`
       - No
       - ATMEGA1284P

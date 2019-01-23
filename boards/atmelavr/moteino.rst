@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `LowPowerLab <https://lowpowerlab.com/shop/moteino-r4?utm_source=platformio&utm_medium=docs>`__
+    - `LowPowerLab <https://lowpowerlab.com/shop/product/99?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration

@@ -68,9 +68,9 @@ Uploading
 ---------
 u-blox C030-R410M IoT supports the next uploading protocols:
 
-* ``stlink``
-* ``jlink``
 * ``blackmagic``
+* ``jlink``
+* ``stlink``
 
 Default protocol is ``stlink``
 

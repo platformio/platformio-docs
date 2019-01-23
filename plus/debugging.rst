@@ -170,6 +170,9 @@ Platforms
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
+    * - :ref:`platform_ststm8`
+      - The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.
+
     * - :ref:`platform_teensy`
       - Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
@@ -743,6 +746,27 @@ DOIT
       - 4MB
       - 320KB
 
+DSTIKE
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_d-duino-32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Delta
 ~~~~~
 
@@ -1268,6 +1292,27 @@ GreenWaves Technologies
       - 64MB
       - 8MB
 
+Heltec Automation
+~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_heltec_wifi_lora_32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Hornbill
 ~~~~~~~~
 
@@ -1315,35 +1360,35 @@ Infineon
       - XMC1100
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1100
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1100_xmc2go`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1100
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1300_boot_kit`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1300
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1300_sense2gol`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1300
       - 32MHz
-      - 64KB
-      - 122.23KB
+      - 32KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1400_boot_kit`
       - :ref:`platform_infineonxmc`
       - On-board
@@ -1356,8 +1401,8 @@ Infineon
       - On-board
       - XMC4200
       - 80MHz
-      - 250KB
       - 256KB
+      - 40KB
     * - :ref:`board_infineonxmc_xmc4700_relax_kit`
       - :ref:`platform_infineonxmc`
       - On-board
@@ -1533,6 +1578,13 @@ Maxim
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_maxim32_max32620fthr`
+      - :ref:`platform_maxim32`
+      - External
+      - MAX32620FTHR
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_maxim32_max32600mbed`
       - :ref:`platform_maxim32`
       - On-board
@@ -1540,6 +1592,13 @@ Maxim
       - 24MHz
       - 256KB
       - 32KB
+    * - :ref:`board_maxim32_max32620hsp`
+      - :ref:`platform_maxim32`
+      - External
+      - MAX32620
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_maxim32_maxwsnenv`
       - :ref:`platform_maxim32`
       - External
@@ -1890,6 +1949,34 @@ OSHChip
       - 32MHz
       - 256KB
       - 32KB
+
+Pycom Ltd.
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_lopy`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lopy4`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
 
 RFduino
 ~~~~~~~
@@ -2317,6 +2404,13 @@ ST
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -2338,6 +2432,13 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -2471,6 +2572,13 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm8_stm8sdisco`
+      - :ref:`platform_ststm8`
+      - On-board
+      - STM8S105C6T6
+      - 16MHz
+      - 32KB
+      - 2KB
 
 SainSmart
 ~~~~~~~~~
@@ -2618,6 +2726,27 @@ SiFive
       - 320MHz
       - 16MB
       - 16KB
+
+Silicognition
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_wesp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Silicon Labs
 ~~~~~~~~~~~~
@@ -2898,6 +3027,13 @@ TTGO
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-t-beam`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
 
 Taida Century
 ~~~~~~~~~~~~~
@@ -2976,6 +3112,27 @@ ThaiEasyElec
       - Flash
       - RAM
     * - :ref:`board_espressif32_espino32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Unknown
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_fm-devkit`
       - :ref:`platform_espressif32`
       - External
       - ESP32

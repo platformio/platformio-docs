@@ -68,9 +68,9 @@ Uploading
 ---------
 MultiTech xDot supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``stlink``
 

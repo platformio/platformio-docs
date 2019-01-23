@@ -95,6 +95,12 @@ You do not need to use/buy external debug probe.
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm8_stm8sdisco`
+      - :ref:`platform_ststm8`
+      - STM8S105C6T6
+      - 16MHz
+      - 32KB
+      - 2KB
 
 
 External Debug Tools
@@ -144,6 +150,7 @@ Examples
 --------
 
 * `SPL for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `SPL for ST STM8 <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -155,6 +162,9 @@ Platforms
 
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+
+    * - :ref:`platform_ststm8`
+      - The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.
 
 Boards
 ------
@@ -282,3 +292,52 @@ ST
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm8_stm8sdisco`
+      - :ref:`platform_ststm8`
+      - On-board
+      - STM8S105C6T6
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_ststm8_stm8sblue`
+      - :ref:`platform_ststm8`
+      - No
+      - STM8S103F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_ststm8_stm8sblack`
+      - :ref:`platform_ststm8`
+      - No
+      - STM8S105K4T6
+      - 16MHz
+      - 16KB
+      - 2KB
+
+sduino
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm8_mb208`
+      - :ref:`platform_ststm8`
+      - No
+      - STM8S208MBT6
+      - 16MHz
+      - 128KB
+      - 6KB
+    * - :ref:`board_ststm8_s8uno`
+      - :ref:`platform_ststm8`
+      - No
+      - STM8S105K6T6
+      - 16MHz
+      - 32KB
+      - 2KB

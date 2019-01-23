@@ -68,8 +68,9 @@ Uploading
 ---------
 STM32F407VG (192k RAM. 1024k Flash) supports the next uploading protocols:
 
-* ``stlink``
 * ``dfu``
+* ``jlink``
+* ``stlink``
 
 Default protocol is ``stlink``
 
@@ -104,9 +105,12 @@ STM32F407VG (192k RAM. 1024k Flash) does not have on-board debug probe and **IS 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_stlink`
+  * - :ref:`debugging_tool_jlink`
     - 
     - Yes
+  * - :ref:`debugging_tool_stlink`
+    - 
+    - 
 
 Frameworks
 ----------

@@ -124,7 +124,6 @@ Further for reading:
 
 **Happy coding with PlatformIO!**
 
-
 .. _ide_vscode_toolbar:
 
 PlatformIO Toolbar
@@ -145,6 +144,18 @@ Each button contains hint (delay mouse on it).
 7. Run a task... (See "Task Runner" below)
 8. :ref:`Serial Port Monitor <cmd_device_monitor>`
 9. PIO Terminal
+
+Custom Build Task
+~~~~~~~~~~~~~~~~~
+
+You can override default "PlatformIO: Build" task for "Build" command which
+is used by "Build" button in PlatformIO Toolbar and
+:ref:`ide_vscode_keybindings`. See ``platformio-ide.buildTask`` setting
+in :ref:`ide_vscode_settings` for more details.
+
+Built-in PlatformIO tasks are available in "Menu > Terminal > Run Task..." list.
+
+.. _ide_vscode_keybindings:
 
 Key Bindings
 ------------
@@ -209,6 +220,8 @@ command:
 
 See more options in `official VSCode documentation <https://code.visualstudio.com/docs/editor/tasks#_output-behavior>`__.
 
+.. _ide_vscode_custom_task:
+
 Custom Tasks
 ~~~~~~~~~~~~
 
@@ -219,26 +232,52 @@ This simple example demonstrates a custom build process in verbose mode.
 There are a lot of other commands, please read more about :ref:`piocore` and
 its commands (:ref:`userguide`).
 
-  .. code-block:: json
+.. code-block:: json
 
-    {
-        "version": "2.0.0",
-        "tasks": [
-            {
-                "type": "shell",
-                "command": "platformio",
-                "args": [
-                    "run",
-                    "--verbose"
-                ],
-                "problemMatcher": [
-                    "$platformio"
-                ],
-                "label": "PlatformIO: Verbose Build"
-            }
-        ]
-    }
+  {
+      "version": "2.0.0",
+      "tasks": [
+          {
+              "type": "shell",
+              "command": "platformio",
+              "args": [
+                  "run",
+                  "--verbose"
+              ],
+              "problemMatcher": [
+                  "$platformio"
+              ],
+              "label": "PlatformIO: Verbose Build"
+          }
+      ]
+  }
 
+If ``platformio`` executable file is not in your system environment "PATH", you
+can provide a path to binary folder using ``options`` field for task. For example,
+``platformio`` binary is located in home folder "~/.platformio/penv/bin":
+
+.. code-block:: json
+
+  {
+      "version": "2.0.0",
+      "tasks": [
+          {
+              "type": "shell",
+              "command": "platformio",
+              "args": [
+                  "run",
+                  "--verbose"
+              ],
+              "problemMatcher": [
+                  "$platformio"
+              ],
+              "label": "PlatformIO: Verbose Build",
+              "options": {
+                  "env": {"PATH": "~/.platformio/penv/bin"}
+              }
+          }
+      ]
+  }
 
 Multi-project Workspaces
 ------------------------
@@ -316,6 +355,23 @@ There are 2 pre-configured debugging configurations:
 
 .. image:: ../_static/ide/vscode/platformio-ide-vscode-debug.png
 
+Variable Format
+~~~~~~~~~~~~~~~
+
+Currently, VSCode does not provide UI/API to change variable format. See
+related `VSCode Issue #28025 <https://github.com/Microsoft/vscode/issues/28025>`_.
+
+Temporary solution is to set the default numeric base in which the debugger
+displays numeric output using Debug Console (you will see it during active
+debugging session). For example, show variables in hexadecimal format (copy
+below and paste into "Debug Console"):
+
+.. code::
+
+  set output-radix 16
+
+Possible values, listed in decimal base, are: 8, 10, 16.
+
 Watchpoints
 ~~~~~~~~~~~
 
@@ -335,40 +391,12 @@ Install Shell Commands
 
 Please navigate to PIO Core :ref:`piocore_install_shell_commands`.
 
+.. _ide_vscode_settings:
+
 Settings
 --------
 
 `How to configure VSCode settings? <https://code.visualstudio.com/docs/getstarted/settings>`_
-
-``platformio-ide.useBuiltinPIOCore``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Use built-in :ref:`piocore`, default value is ``true``.
-
-``platformio-ide.useDevelopmentPIOCore``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Use development version of :ref:`piocore`, default value is ``false``.
-
-``platformio-ide.autoRebuildAutocompleteIndex``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Automatically rebuild C/C++ Project Index when :ref:`projectconf` is changed
-or when new libraries are installed, default value is ``true``.
-
-``platformio-ide.forceUploadAndMonitor``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Force "Upload and Monitor" task for Upload (``platformio-ide.upload``) command,
-default value is ``false``.
-
-``platformio-ide.customPATH``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Custom PATH for ``platformio`` command. Paste here the result of ``echo $PATH``
-(Unix) / ``echo %PATH%`` (Windows) command by typing into your system terminal
-if you prefer to use custom version of :ref:`piocore`, default value is ``null``.
-
-``platformio-ide.updateTerminalPathConfiguration``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Update Terminal configuration with patched PATH environment, default value
-is ``true``.
 
 ``platformio-ide.activateOnlyOnPlatformIOProject``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -382,11 +410,49 @@ is opened in workspace, default value is ``false``.
 Automatically close :ref:`cmd_device_monitor` before uploading/testing,
 default value is ``true``.
 
+``platformio-ide.autoRebuildAutocompleteIndex``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Automatically rebuild C/C++ Project Index when :ref:`projectconf` is changed
+or when new libraries are installed, default value is ``true``.
+
+``platformio-ide.buildTask``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+A build task (label) which is used by "Build" button in the
+:ref:`ide_vscode_toolbar` and :ref:`ide_vscode_keybindings`. Default is set to
+``PlatformIO: Build``.
+
+You can create custom :ref:`ide_vscode_custom_task` and assign to ``platformio-ide.buildTask``.
+
+``platformio-ide.customPATH``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Custom PATH for ``platformio`` command. Paste here the result of ``echo $PATH``
+(Unix) / ``echo %PATH%`` (Windows) command by typing into your system terminal
+if you prefer to use custom version of :ref:`piocore`, default value is ``null``.
+
+``platformio-ide.forceUploadAndMonitor``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Force "Upload and Monitor" task for Upload (``platformio-ide.upload``) command,
+default value is ``false``.
+
 ``platformio-ide.reopenSerialMonitorDelay``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Configure time in milliseconds after which reopen Serial Port Monitor,
 default value is ``0``, which means reopen instantly.
+
+``platformio-ide.updateTerminalPathConfiguration``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Update Terminal configuration with patched PATH environment, default value
+is ``true``.
+
+``platformio-ide.useBuiltinPIOCore``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use built-in :ref:`piocore`, default value is ``true``.
+
+``platformio-ide.useDevelopmentPIOCore``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use development version of :ref:`piocore`, default value is ``false``.
 
 Known issues
 ------------

@@ -68,9 +68,9 @@ Uploading
 ---------
 Microsoft Azure IoT Development Kit (MXChip AZ3166) supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``stlink``
 

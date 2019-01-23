@@ -68,10 +68,10 @@ Uploading
 ---------
 Arduino Zero (Programming/Debug Port) supports the next uploading protocols:
 
-* ``cmsis-dap``
-* ``blackmagic``
-* ``jlink``
 * ``atmel-ice``
+* ``blackmagic``
+* ``cmsis-dap``
+* ``jlink``
 
 Default protocol is ``cmsis-dap``
 

@@ -30,7 +30,7 @@ Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrol
   * - **Flash**
     - 64KB
   * - **RAM**
-    - 64KB
+    - 16KB
   * - **Vendor**
     - `Infineon <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`__
 

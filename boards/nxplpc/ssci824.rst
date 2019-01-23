@@ -68,9 +68,9 @@ Uploading
 ---------
 Switch Science mbed LPC824 supports the next uploading protocols:
 
-* ``jlink``
 * ``blackmagic``
 * ``cmsis-dap``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

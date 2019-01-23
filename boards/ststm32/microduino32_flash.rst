@@ -68,10 +68,10 @@ Uploading
 ---------
 Microduino Core STM32 to Flash supports the next uploading protocols:
 
-* ``jlink``
-* ``stlink``
 * ``blackmagic``
 * ``dfu``
+* ``jlink``
+* ``stlink``
 
 Default protocol is ``dfu``
 

@@ -68,9 +68,9 @@ Uploading
 ---------
 ARM mbed LPC11U24 (+CAN) supports the next uploading protocols:
 
-* ``jlink``
 * ``blackmagic``
 * ``cmsis-dap``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``mbed``

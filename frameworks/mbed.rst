@@ -894,12 +894,24 @@ Please click on board name for the further details.
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_maxim32_max32620fthr`
+      - :ref:`platform_maxim32`
+      - MAX32620FTHR
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_mts_dragonfly_f411re`
       - :ref:`platform_ststm32`
       - STM32F411RET6
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_maxim32_max32620hsp`
+      - :ref:`platform_maxim32`
+      - MAX32620
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_maxim32_maxwsnenv`
       - :ref:`platform_maxim32`
       - MAX32610
@@ -1571,7 +1583,7 @@ Maxim
       - RAM
     * - :ref:`board_maxim32_max32620fthr`
       - :ref:`platform_maxim32`
-      - No
+      - External
       - MAX32620FTHR
       - 96MHz
       - 2MB
@@ -1606,7 +1618,7 @@ Maxim
       - 32KB
     * - :ref:`board_maxim32_max32620hsp`
       - :ref:`platform_maxim32`
-      - No
+      - External
       - MAX32620
       - 96MHz
       - 2MB

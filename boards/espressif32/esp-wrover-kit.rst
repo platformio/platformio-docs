@@ -68,17 +68,17 @@ Uploading
 ---------
 Espressif ESP-WROVER-KIT supports the next uploading protocols:
 
+* ``esp-prog``
 * ``esptool``
 * ``ftdi``
-* ``esp-prog``
-* ``jlink``
-* ``olimex-arm-usb-tiny-h``
-* ``olimex-arm-usb-ocd-h``
-* ``olimex-arm-usb-ocd``
-* ``olimex-jtag-tiny``
 * ``iot-bus-jtag``
-* ``tumpa``
+* ``jlink``
 * ``minimodule``
+* ``olimex-arm-usb-ocd``
+* ``olimex-arm-usb-ocd-h``
+* ``olimex-arm-usb-tiny-h``
+* ``olimex-jtag-tiny``
+* ``tumpa``
 
 Default protocol is ``esptool``
 

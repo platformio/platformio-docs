@@ -54,6 +54,7 @@ Embedded
     samsung_artik
     siliconlabsefm32
     ststm32
+    ststm8
     teensy
     timsp430
     titiva

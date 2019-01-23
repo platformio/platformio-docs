@@ -70,8 +70,8 @@ Nordic nRF51-Dongle supports the next uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``
-* ``nrfjprog``
 * ``mbed``
+* ``nrfjprog``
 
 Default protocol is ``jlink``
 

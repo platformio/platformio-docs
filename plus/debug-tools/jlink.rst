@@ -168,6 +168,9 @@ Platforms
     * - :ref:`platform_infineonxmc`
       - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
+    * - :ref:`platform_maxim32`
+      - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
+
     * - :ref:`platform_nordicnrf51`
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
@@ -553,6 +556,13 @@ Boards
       - 30MHz
       - 16KB
       - 4KB
+    * - :ref:`board_espressif32_d-duino-32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32doit-devkit-v1`
       - :ref:`platform_espressif32`
       - External
@@ -623,6 +633,13 @@ Boards
       - 24MHz
       - 32KB
       - 4KB
+    * - :ref:`board_espressif32_fm-devkit`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - :ref:`platform_espressif32`
       - External
@@ -784,6 +801,13 @@ Boards
       - 48MHz
       - 512KB
       - 128KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_freescalekinetis_hexiwear`
       - :ref:`platform_freescalekinetis`
       - External
@@ -819,6 +843,13 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_maxim32_max32620fthr`
+      - :ref:`platform_maxim32`
+      - External
+      - MAX32620FTHR
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_espressif32_mhetesp32devkit`
       - :ref:`platform_espressif32`
       - External
@@ -875,6 +906,13 @@ Boards
       - 72MHz
       - 108KB
       - 17KB
+    * - :ref:`board_maxim32_max32620hsp`
+      - :ref:`platform_maxim32`
+      - External
+      - MAX32620
+      - 96MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_mbed_connect_odin`
       - :ref:`platform_ststm32`
       - On-board
@@ -1064,6 +1102,20 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_lopy`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lopy4`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
     * - :ref:`board_nordicnrf51_rfduino`
       - :ref:`platform_nordicnrf51`
       - External
@@ -1225,6 +1277,13 @@ Boards
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_disco_l100rc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L100RCT6
+      - 32MHz
+      - 256KB
+      - 16KB
     * - :ref:`board_ststm32_disco_l476vg`
       - :ref:`platform_ststm32`
       - On-board
@@ -1407,6 +1466,13 @@ Boards
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -1428,6 +1494,13 @@ Boards
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -1673,6 +1746,20 @@ Boards
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F407VET6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407VGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - External
@@ -1722,6 +1809,13 @@ Boards
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_espressif32_wesp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf51_Sinobit`
       - :ref:`platform_nordicnrf51`
       - External
@@ -1778,6 +1872,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-t-beam`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
       - :ref:`platform_nordicnrf52`
       - External
@@ -1882,35 +1983,35 @@ Boards
       - XMC1100
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1100
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1100_xmc2go`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1100
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1300_boot_kit`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1300
       - 32MHz
       - 64KB
-      - 64KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1300_sense2gol`
       - :ref:`platform_infineonxmc`
       - On-board
       - XMC1300
       - 32MHz
-      - 64KB
-      - 122.23KB
+      - 32KB
+      - 16KB
     * - :ref:`board_infineonxmc_xmc1400_boot_kit`
       - :ref:`platform_infineonxmc`
       - On-board
@@ -1923,8 +2024,8 @@ Boards
       - On-board
       - XMC4200
       - 80MHz
-      - 250KB
       - 256KB
+      - 40KB
     * - :ref:`board_infineonxmc_xmc4700_relax_kit`
       - :ref:`platform_infineonxmc`
       - On-board

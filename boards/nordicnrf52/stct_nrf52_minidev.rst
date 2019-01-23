@@ -68,10 +68,10 @@ Uploading
 ---------
 Taida Century nRF52 mini board supports the next uploading protocols:
 
+* ``blackmagic``
 * ``jlink``
 * ``nrfjprog``
 * ``stlink``
-* ``blackmagic``
 
 Default protocol is ``jlink``
 

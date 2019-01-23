@@ -30,7 +30,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Flash**
     - 16MB
   * - **RAM**
-    - 320KB
+    - 6.25MB
   * - **Vendor**
     - `M5Stack <http://www.m5stack.com?utm_source=platformio&utm_medium=docs>`__
 

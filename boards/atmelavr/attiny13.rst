@@ -26,7 +26,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
   * - **Microcontroller**
     - ATTINY13
   * - **Frequency**
-    - 9MHz
+    - 1MHz
   * - **Flash**
     - 1KB
   * - **RAM**
@@ -61,7 +61,7 @@ board manifest `attiny13.json <https://github.com/platformio/platform-atmelavr/b
   board_build.mcu = attiny13
 
   ; change MCU frequency
-  board_build.f_cpu = 9600000L
+  board_build.f_cpu = 1200000L
 
 Debugging
 ---------
