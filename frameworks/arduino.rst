@@ -1375,6 +1375,13 @@ Alorium Technology
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelavr_alorium_hinj`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
     * - :ref:`board_atmelavr_alorium_sno`
       - :ref:`platform_atmelavr`
       - No

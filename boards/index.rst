@@ -52,6 +52,7 @@ Atmel AVR
     atmelavr/protrinket5
     atmelavr/trinket3
     atmelavr/trinket5
+    atmelavr/alorium_hinj
     atmelavr/alorium_sno
     atmelavr/alorium_xlr8
     atmelavr/altair
