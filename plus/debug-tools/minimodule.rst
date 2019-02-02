@@ -68,22 +68,22 @@ Wiring Connections
   * - FT2232H Mini-Module Pin
     - Board JTAG Pin
     - Description
-  * - GND [CN2-2]
+  * - GND
     - GND
     - Digital ground
-  * - AD0 [CN2-7]
+  * - AD0
     - TCK
     - JTAG Return Test Clock
-  * - AD1 [CN2-10]
+  * - AD1
     - TDI
     - Test Data In
-  * - AD2 [CN2-9]
+  * - AD2
     - TDO
     - Test Data Out
-  * - AD3 [CN2-12]
+  * - AD3
     - TMS
     - Test Mode State
-  * - AC2 [CN2-20]
+  * - RESET#
     - RESET
     - Connect this pin to the (active low) reset input of the target CPU (EN for ESP32)
 
