@@ -114,7 +114,7 @@ Don't remove :option:`platformio ci --build-dir` after build process.
 .. option::
     -P, --project-conf
 
-Buid project using pre-configured :ref:`projectconf`.
+Build project using pre-configured :ref:`projectconf`.
 
 .. option::
     -O, --project-option

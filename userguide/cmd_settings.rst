@@ -243,7 +243,7 @@ Examples
 .. code-block:: bash
 
     $ platformio settings reset
-    The settings have been reseted!
+    The settings have been reset!
 
     Name                            Value [Default]   Description
     ------------------------------------------------------------------------------------------
