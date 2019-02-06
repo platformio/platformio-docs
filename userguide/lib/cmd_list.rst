@@ -127,7 +127,7 @@ Examples
     Debouncing library for Arduino or Wiring
 
     Version: 2.1
-    Keywords: input, signal, ouput, bounce
+    Keywords: input, signal, output, bounce
     Compatible frameworks: arduino
     Compatible platforms: atmelavr, atmelsam, espressif8266, intel_arc32, microchippic32, nordicnrf51, teensy, timsp430
     Authors: Thomas O Fredericks

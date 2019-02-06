@@ -73,5 +73,5 @@ There are 6 predefined targets for building.
 
 .. warning::
     The libraries which are added, installed or used in the project
-    after generating process wont be reflected in IDE. To fix it you
+    after generating process won't be reflected in IDE. To fix it you
     need to reinitialize project using :ref:`cmd_init` (repeat it).

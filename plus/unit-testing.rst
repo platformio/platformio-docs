@@ -180,7 +180,7 @@ Workflow
    calls.
 
    .. warning::
-     If your board does not support software reseting via ``Serial.DTR/RTS``,
+     If your board does not support software resetting via ``Serial.DTR/RTS``,
      you should add >2 seconds delay before ``UNITY_BEGIN()`.
      That time is needed to establish a ``Serial`` connection between a host
      machine and a target device.

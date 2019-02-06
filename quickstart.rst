@@ -92,7 +92,7 @@ pre-installed instruments for the professional development.
 
     .. code-block:: bash
 
-        # create new direcotry
+        # create new directory
         > mkdir path_to_the_new_directory
 
         # go to it

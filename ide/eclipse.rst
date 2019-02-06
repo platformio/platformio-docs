@@ -85,7 +85,7 @@ If you have some problems with unresolved includes, defines, etc., then
 
 .. warning::
     The libraries which are added, installed or used in the project
-    after generating process wont be reflected in IDE. To fix it please run
+    after generating process won't be reflected in IDE. To fix it please run
     ``PlatformIO: Rebuild C/C++ Project Index`` target and right click on the
     project and ``Project > Refresh`` (F5).
 
