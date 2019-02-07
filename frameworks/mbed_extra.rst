@@ -15,11 +15,11 @@ Configuration
 .. contents::
     :local:
 
-mbed_app.json
-~~~~~~~~~~~~~
+The configuration system
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 PlatformIO allows you to customize mbed OS compile time configuration
-parameters using ``mbed_lib.json`` manifest. It should be placed into the root
+parameters using ``mbed_app.json`` manifest. It should be placed into the root
 of your project and located on the same level as :ref:`projectconf`.
 
 Configuration is defined using `JSON <https://en.wikipedia.org/wiki/JSON>`_.
@@ -30,20 +30,20 @@ Some examples of configuration parameters:
 * The receive buffer size of a serial communication library.
 * The flash and RAM memory size of a target board.
 
-See more details in official `ARM Mbed OS Configuration System <https://os.mbed.com/docs/mbed-os/v5.11/reference/configuration.html>`_.
+See more details in the official `ARM Mbed OS Configuration System <https://os.mbed.com/docs/mbed-os/v5.11/reference/configuration.html>`_.
 
-A few PlatformIO-ready projects based on ARM mbed OS which use ``mbed_lib.json``;
+A few PlatformIO-ready projects based on ARM mbed OS which use ``mbed_app.json``;
 
 * `Freescale Kinetis: mbed-rtos-tls-client <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-rtos-tls-client>`_
 * `ST STM32: mbed-rtos-mesh-minimal <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-rtos-mesh-minimal>`_
 
-RTOS, Events, FileSystem
-~~~~~~~~~~~~~~~~~~~~~~~~
+Mbed lib and Mbed OS 5
+~~~~~~~~~~~~~~~~~~~~~~
 
-mbed framework consists of several components, some of which should be
-explicitly added to the build process. For this purpose PlatformIO has special
-macro definitions that should be added to :ref:`projectconf_build_flags` of
-:ref:`projectconf` when one of the components is used in a project:
+PlatformIO allows compiling projects with or without Mbed OS. By default, project 
+is built without the OS feature. Most of the framework functionality requires the OS to be 
+enabled. To add the OS feature you can use a special macro definition that needs be added to 
+:ref:`projectconf_build_flags` of :ref:`projectconf`:
 
 .. list-table::
     :header-rows:  1
@@ -52,15 +52,9 @@ macro definitions that should be added to :ref:`projectconf_build_flags` of
       - Description
 
     * - ``PIO_FRAMEWORK_MBED_RTOS_PRESENT``
-      - Build the project with enabled ``rtos`` library
+      - Build the project with enabled ``rtos``
 
-    * - ``PIO_FRAMEWORK_MBED_EVENTS_PRESENT``
-      - Build the project with enabled ``events`` library
-
-    * - ``PIO_FRAMEWORK_MBED_FILESYSTEM_PRESENT``
-      - Build the project with enabled ``filesystem`` library
-
-An example of :ref:`projectconf` with enabled ``events`` library
+An example of :ref:`projectconf` with enabled ``rtos``
 
 .. code-block:: ini
 
@@ -68,25 +62,29 @@ An example of :ref:`projectconf` with enabled ``events`` library
     platform = wiznet7500
     framework = mbed
     board = wizwiki_w7500p
-    build_flags = -D PIO_FRAMEWORK_MBED_EVENTS_PRESENT
+    build_flags = -D PIO_FRAMEWORK_MBED_RTOS_PRESENT
 
 
-An example of :ref:`projectconf` with ``events`` and ``rtos`` libraries
+Build profiles
+~~~~~~~~~~~~~~
 
-.. code-block:: ini
+By default, PlatformIO builds your project using ``develop profile`` which provides optimized 
+firmware size with full error information and allows MCU to go to sleep mode. In the case when
+defalt build profile is not suitable for your project there two other profiles ``release`` and
+``debug`` that can be enabled using special macro definitions. You can change build profile 
+:ref:`projectconf_build_flags` of :ref:`projectconf`:
 
-    [env:nrf52_dk]
-    platform = nordicnrf52
-    framework = mbed
-    board = nrf52_dk
-    build_flags = -D PIO_FRAMEWORK_MBED_EVENTS_PRESENT -D PIO_FRAMEWORK_MBED_RTOS_PRESENT
+.. list-table::
+    :header-rows:  1
 
-An example of :ref:`projectconf` with ``filesystem`` library
+    * - Name
+      - Description
 
-.. code-block:: ini
+    * - ``MBED_BUILD_PROFILE_RELEASE``
+      - Release profile (smallest firmware, minimal error info)
 
-    [env:nucleo_f767zi]
-    platform = ststm32
-    framework = mbed
-    board = nucleo_f767zi
-    build_flags = -D PIO_FRAMEWORK_MBED_FILESYSTEM_PRESENT
+    * - ``MBED_BUILD_PROFILE_DEBUG``
+      - Debug profile (largest firmware, disabled sleep mode)
+
+More information about differences between build profiles can be found on the 
+official page `ARM Mbed OS Build Profiles <https://os.mbed.com/docs/mbed-os/v5.11/tools/build-profiles.html>`_.
