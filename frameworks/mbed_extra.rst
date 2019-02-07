@@ -15,6 +15,28 @@ Configuration
 .. contents::
     :local:
 
+mbed_app.json
+~~~~~~~~~~~~~
+
+PlatformIO allows you to customize mbed OS compile time configuration
+parameters using ``mbed_lib.json`` manifest. It should be placed into the root
+of your project and located on the same level as :ref:`projectconf`.
+
+Configuration is defined using `JSON <https://en.wikipedia.org/wiki/JSON>`_.
+Some examples of configuration parameters:
+
+* The sampling period for a data acquisition application.
+* The default stack size for a newly created OS thread.
+* The receive buffer size of a serial communication library.
+* The flash and RAM memory size of a target board.
+
+See more details in official `ARM Mbed OS Configuration System <https://os.mbed.com/docs/mbed-os/v5.11/reference/configuration.html>`_.
+
+A few PlatformIO-ready projects based on ARM mbed OS which use ``mbed_lib.json``;
+
+* `Freescale Kinetis: mbed-rtos-tls-client <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-rtos-tls-client>`_
+* `ST STM32: mbed-rtos-mesh-minimal <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-rtos-mesh-minimal>`_
+
 RTOS, Events, FileSystem
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -68,8 +90,3 @@ An example of :ref:`projectconf` with ``filesystem`` library
     framework = mbed
     board = nucleo_f767zi
     build_flags = -D PIO_FRAMEWORK_MBED_FILESYSTEM_PRESENT
-
-Ignore built-in libraries
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-See :ref:`projectconf_lib_ignore`.

@@ -611,6 +611,18 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
+    * - :ref:`board_ststm32_nucleo_l011k4`
+      - :ref:`platform_ststm32`
+      - STM32L011K4T6
+      - 32MHz
+      - 16KB
+      - 2KB
     * - :ref:`board_ststm32_nucleo_l031k6`
       - :ref:`platform_ststm32`
       - STM32L031K6T6
@@ -851,6 +863,12 @@ Please click on board name for the further details.
       - STM32F103C8T6
       - 72MHz
       - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
       - 20KB
     * - :ref:`board_nxplpc_lpc11u35_501`
       - :ref:`platform_nxplpc`
@@ -1510,6 +1528,13 @@ Generic
       - STM32F103C8T6
       - 72MHz
       - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
@@ -2246,6 +2271,20 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
+    * - :ref:`board_ststm32_nucleo_l011k4`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L011K4T6
+      - 32MHz
+      - 16KB
+      - 2KB
     * - :ref:`board_ststm32_nucleo_l031k6`
       - :ref:`platform_ststm32`
       - On-board

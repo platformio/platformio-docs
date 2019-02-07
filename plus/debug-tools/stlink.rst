@@ -266,6 +266,13 @@ Boards
       - 72MHz
       - 64KB
       - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_nordicnrf52_bluey`
       - :ref:`platform_nordicnrf52`
       - External
@@ -791,6 +798,13 @@ Boards
       - 32MHz
       - 512KB
       - 80KB
+    * - :ref:`board_ststm32_nucleo_l412kb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L412KBU6
+      - 80MHz
+      - 128KB
+      - 40KB
     * - :ref:`board_ststm32_nucleo_l432kc`
       - :ref:`platform_ststm32`
       - On-board
@@ -1008,6 +1022,13 @@ Boards
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F303CB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CBT6
+      - 72MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External

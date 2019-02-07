@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_l011k4:
+.. _board_ststm32_genericSTM32F303CB:
 
-ST Nucleo L011K4
-================
+STM32F303CB (32k RAM. 128k Flash)
+=================================
 
 .. contents::
 
@@ -24,49 +24,49 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L011K4T6
+    - STM32F303CBT6
   * - **Frequency**
-    - 32MHz
+    - 72MHz
   * - **Flash**
-    - 16KB
+    - 128KB
   * - **RAM**
-    - 2KB
+    - 32KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-l011k4.html?utm_source=platformio&utm_medium=docs>`__
+    - `Generic <https://www.st.com/en/microcontrollers/stm32f303cb.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_l011k4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``genericSTM32F303CB`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_l011k4]
+  [env:genericSTM32F303CB]
   platform = ststm32
-  board = nucleo_l011k4
+  board = genericSTM32F303CB
 
-You can override default ST Nucleo L011K4 settings per build environment using
+You can override default STM32F303CB (32k RAM. 128k Flash) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_l011k4.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l011k4.json>`_. For example,
+board manifest `genericSTM32F303CB.json <https://github.com/platformio/platform-ststm32/blob/master/boards/genericSTM32F303CB.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_l011k4]
+  [env:genericSTM32F303CB]
   platform = ststm32
-  board = nucleo_l011k4
+  board = genericSTM32F303CB
 
   ; change microcontroller
-  board_build.mcu = stm32l011k4t6
+  board_build.mcu = stm32f303cbt6
 
   ; change MCU frequency
-  board_build.f_cpu = 32000000L
+  board_build.f_cpu = 72000000L
 
 
 Uploading
 ---------
-ST Nucleo L011K4 supports the next uploading protocols:
+STM32F303CB (32k RAM. 128k Flash) supports the next uploading protocols:
 
 * ``blackmagic``
 * ``jlink``
@@ -78,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_l011k4]
+  [env:genericSTM32F303CB]
   platform = ststm32
-  board = nucleo_l011k4
+  board = genericSTM32F303CB
 
   upload_protocol = stlink
 
@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L011K4 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+STM32F303CB (32k RAM. 128k Flash) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -107,13 +107,13 @@ ST Nucleo L011K4 has on-board debug probe and **IS READY** for debugging. You do
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_jlink`
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------
@@ -122,9 +122,6 @@ Frameworks
 
     * - Name
       - Description
-
-    * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

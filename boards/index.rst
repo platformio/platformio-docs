@@ -632,6 +632,7 @@ ST STM32
     ststm32/armstrap_eagle2048
     ststm32/armstrap_eagle512
     ststm32/bluepill_f103c8
+    ststm32/bluepill_f103c8_128k
     ststm32/elmo_f411re
     ststm32/mts_dragonfly_f411re
     ststm32/maple
@@ -693,6 +694,7 @@ ST STM32
     ststm32/nucleo_l053r8
     ststm32/nucleo_l073rz
     ststm32/nucleo_l152re
+    ststm32/nucleo_l412kb
     ststm32/nucleo_l432kc
     ststm32/nucleo_l433rc_p
     ststm32/nucleo_l486rg
@@ -723,6 +725,7 @@ ST STM32
     ststm32/genericSTM32F103ZC
     ststm32/genericSTM32F103ZD
     ststm32/genericSTM32F103ZE
+    ststm32/genericSTM32F303CB
     ststm32/genericSTM32F407VET6
     ststm32/genericSTM32F407VGT6
     ststm32/seeedArchMax

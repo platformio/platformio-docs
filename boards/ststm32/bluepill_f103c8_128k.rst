@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_l011k4:
+.. _board_ststm32_bluepill_f103c8_128k:
 
-ST Nucleo L011K4
-================
+BluePill F103C8 (128k)
+======================
 
 .. contents::
 
@@ -24,52 +24,54 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L011K4T6
+    - STM32F103C8T6
   * - **Frequency**
-    - 32MHz
+    - 72MHz
   * - **Flash**
-    - 16KB
+    - 128KB
   * - **RAM**
-    - 2KB
+    - 20KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-l011k4.html?utm_source=platformio&utm_medium=docs>`__
+    - `Generic <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_l011k4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``bluepill_f103c8_128k`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_l011k4]
+  [env:bluepill_f103c8_128k]
   platform = ststm32
-  board = nucleo_l011k4
+  board = bluepill_f103c8_128k
 
-You can override default ST Nucleo L011K4 settings per build environment using
+You can override default BluePill F103C8 (128k) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_l011k4.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l011k4.json>`_. For example,
+board manifest `bluepill_f103c8_128k.json <https://github.com/platformio/platform-ststm32/blob/master/boards/bluepill_f103c8_128k.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_l011k4]
+  [env:bluepill_f103c8_128k]
   platform = ststm32
-  board = nucleo_l011k4
+  board = bluepill_f103c8_128k
 
   ; change microcontroller
-  board_build.mcu = stm32l011k4t6
+  board_build.mcu = stm32f103c8t6
 
   ; change MCU frequency
-  board_build.f_cpu = 32000000L
+  board_build.f_cpu = 72000000L
 
 
 Uploading
 ---------
-ST Nucleo L011K4 supports the next uploading protocols:
+BluePill F103C8 (128k) supports the next uploading protocols:
 
 * ``blackmagic``
+* ``dfu``
 * ``jlink``
+* ``mbed``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -78,9 +80,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_l011k4]
+  [env:bluepill_f103c8_128k]
   platform = ststm32
-  board = nucleo_l011k4
+  board = bluepill_f103c8_128k
 
   upload_protocol = stlink
 
@@ -97,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L011K4 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+BluePill F103C8 (128k) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -112,7 +114,7 @@ ST Nucleo L011K4 has on-board debug probe and **IS READY** for debugging. You do
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
+    - 
     - Yes
 
 Frameworks
@@ -122,6 +124,15 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_cmsis`
+      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
+
+    * - :ref:`framework_libopencm3`
+      - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
 
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.

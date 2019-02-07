@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_l011k4:
+.. _board_ststm32_nucleo_l412kb:
 
-ST Nucleo L011K4
+ST Nucleo L412KB
 ================
 
 .. contents::
@@ -24,49 +24,49 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L011K4T6
+    - STM32L412KBU6
   * - **Frequency**
-    - 32MHz
+    - 80MHz
   * - **Flash**
-    - 16KB
+    - 128KB
   * - **RAM**
-    - 2KB
+    - 40KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-l011k4.html?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-l412kb.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_l011k4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_l412kb`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_l011k4]
+  [env:nucleo_l412kb]
   platform = ststm32
-  board = nucleo_l011k4
+  board = nucleo_l412kb
 
-You can override default ST Nucleo L011K4 settings per build environment using
+You can override default ST Nucleo L412KB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_l011k4.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l011k4.json>`_. For example,
+board manifest `nucleo_l412kb.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l412kb.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_l011k4]
+  [env:nucleo_l412kb]
   platform = ststm32
-  board = nucleo_l011k4
+  board = nucleo_l412kb
 
   ; change microcontroller
-  board_build.mcu = stm32l011k4t6
+  board_build.mcu = stm32l412kbu6
 
   ; change MCU frequency
-  board_build.f_cpu = 32000000L
+  board_build.f_cpu = 80000000L
 
 
 Uploading
 ---------
-ST Nucleo L011K4 supports the next uploading protocols:
+ST Nucleo L412KB supports the next uploading protocols:
 
 * ``blackmagic``
 * ``jlink``
@@ -78,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_l011k4]
+  [env:nucleo_l412kb]
   platform = ststm32
-  board = nucleo_l011k4
+  board = nucleo_l412kb
 
   upload_protocol = stlink
 
@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L011K4 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ST Nucleo L412KB has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -122,9 +122,6 @@ Frameworks
 
     * - Name
       - Description
-
-    * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

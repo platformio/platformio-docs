@@ -540,6 +540,12 @@ Please click on board name for the further details.
       - 72MHz
       - 64KB
       - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_nordicnrf52_bluey`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -2858,6 +2864,13 @@ Generic
       - STM32F103C8T6
       - 72MHz
       - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`

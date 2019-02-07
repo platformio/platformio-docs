@@ -49,6 +49,7 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `mbed-rtos <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos-ethernet <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-mesh-minimal <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-mesh-minimal?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos-semaphore <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-semaphore?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 * `spl-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/spl-blink?utm_source=platformio&utm_medium=docs>`_
@@ -347,6 +348,11 @@ You do not need to use/buy external debug probe.
       - 32MHz
       - 512KB
       - 80KB
+    * - :ref:`board_ststm32_nucleo_l412kb`
+      - STM32L412KBU6
+      - 80MHz
+      - 128KB
+      - 40KB
     * - :ref:`board_ststm32_nucleo_l432kc`
       - STM32L432KCU6
       - 80MHz
@@ -480,6 +486,11 @@ Please click on board name for the further details.
       - 72MHz
       - 64KB
       - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_elmo_f411re`
       - STM32F411RET6
       - 100MHz
@@ -610,6 +621,11 @@ Please click on board name for the further details.
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F303CB`
+      - STM32F303CBT6
+      - 72MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - STM32F407VET6
       - 168MHz
@@ -890,6 +906,12 @@ Generic
       - 72MHz
       - 64KB
       - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - External
       - STM32F103C8T6
@@ -980,6 +1002,12 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F303CB`
+      - External
+      - STM32F303CBT6
+      - 72MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - External
       - STM32F407VET6
@@ -1418,6 +1446,12 @@ ST
       - 32MHz
       - 512KB
       - 80KB
+    * - :ref:`board_ststm32_nucleo_l412kb`
+      - On-board
+      - STM32L412KBU6
+      - 80MHz
+      - 128KB
+      - 40KB
     * - :ref:`board_ststm32_nucleo_l432kc`
       - On-board
       - STM32L432KCU6
