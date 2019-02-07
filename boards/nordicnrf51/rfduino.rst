@@ -64,6 +64,20 @@ board manifest `rfduino.json <https://github.com/platformio/platform-nordicnrf51
   board_build.f_cpu = 16000000L
 
 
+Unsupported
+~~~~~~~~~~~
+
+RFduino support has been dropped since PlatformIO switched to `arduino-nRF5 https://github.com/sandeepmistry/arduino-nRF5`. As a workaround, you can use the older version by specifying it explicitly:
+
+.. code-block:: ini
+
+   [env:rfduino]
+   platform = nordicnrf51@2.2.0
+   board = rfduino
+   framework = arduino
+   lib_deps = fastLED
+
+
 Uploading
 ---------
 RFduino supports the next uploading protocols:
