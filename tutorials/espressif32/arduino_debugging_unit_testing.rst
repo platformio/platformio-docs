@@ -142,7 +142,14 @@ To start the debug session we can use the next options:
 
 .. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-9.png
 
-We need to wait some time while PlatformIO is initializing debug session and when the first line after the main function is highlighted we are ready to debug:
+We need to wait some time while PlatformIO is initializing debug session,
+and we are ready to debug when the first line after the main function is highlighted.
+
+1. Please wait when debugging session is stopped at the first line of ``app_main()`` function
+2. **WARNING!** Please set breakpoint at ``void loopTask(void *pvParameters)`` (13 line  on the screenshot below, this line can change between releases)
+3. Now, please press CONTINUE/RUN button on debugging toolbar (right arrow icon)
+4. Debugging session should stop at the first line of ``void loopTask(void *pvParameters)`` function
+5. Now, navigate to your Arduino setup/loop code and do classic debugging.
 
 .. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-10.png
 
