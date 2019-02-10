@@ -14,7 +14,7 @@
 Olimex ARM-USB-TINY-H
 =====================
 
-.. image:: ../../_static/debug_probes/olimex-arm-usb-tiny-h.jpg
+.. image:: ../../_static/images/debug_probes/olimex-arm-usb-tiny-h.jpg
   :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY-H/?utm_source=platformio&utm_medium=docs
 
 Low-cost and high-speed ARM/ESP32 USB JTAG.
@@ -57,7 +57,7 @@ More options:
 Wiring Connections
 ------------------
 
-.. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
+.. image:: ../../_static/images/debug_probes/generic_jtag_swd_connector.jpg
 
 .. list-table::
   :header-rows:  1

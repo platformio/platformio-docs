@@ -14,7 +14,7 @@
 FTDI Chip
 =========
 
-.. image:: ../../_static/debug_probes/ftdi.jpg
+.. image:: ../../_static/images/debug_probes/ftdi.jpg
   :target: http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs
 
 FTDI Chip develops innovative silicon solutions that enhance interaction with

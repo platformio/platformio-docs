@@ -32,7 +32,7 @@ It is already pre-configured PlatformIO project:
 Video Collection
 ----------------
 
-.. image:: ../../_static/tutorials/riscv/riscv_asm_video_tutorial.jpg
+.. image:: ../../_static/images/tutorials/riscv/riscv_asm_video_tutorial.jpg
 	:target: https://www.youtube.com/playlist?list=PL6noQ0vZDAdh_aGvqKvxd0brXImHXMuLY
 
 * `Part 1 of 12 | Introduction <https://www.youtube.com/watch?v=KLybwrpfQ3I&index=1&list=PL6noQ0vZDAdh_aGvqKvxd0brXImHXMuLY>`_

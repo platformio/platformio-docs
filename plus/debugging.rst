@@ -50,7 +50,7 @@ A registration is **FREE**.
   - Multi-thread support
   - A hot restart of an active debugging session
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode.png
   :target: ../ide/vscode.html
 
 .. contents:: Contents

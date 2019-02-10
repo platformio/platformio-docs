@@ -35,7 +35,7 @@ Go) and runtimes (such as .NET and Unity)
 
 :ref:`Install PlatformIO IDE for VSCode / Get started <ide_vscode>`
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode.png
     :target: vscode.html
 
 Atom
@@ -47,5 +47,5 @@ ever touching a config file.
 
 :ref:`Install PlatformIO IDE for Atom / Get started <ide_atom>`
 
-.. image:: ../_static/ide/atom/ide-atom-platformio.png
+.. image:: ../_static/images/ide/atom/ide-atom-platformio.png
     :target: atom.html

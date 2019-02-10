@@ -34,7 +34,7 @@ frameworks or tools.
 Demo
 ----
 
-.. image:: ../_static/ide/eclipseche/ide-eclipseche-demo.png
+.. image:: ../_static/images/ide/eclipseche/ide-eclipseche-demo.png
 
 Integration
 -----------
@@ -50,7 +50,7 @@ Integration
     * **Stack** search for ``PLATFORMIO``
     * Click on "Create" button, then "Open".
 
-.. image:: ../_static/ide/eclipseche/ide-eclipseche-new-workspace.png
+.. image:: ../_static/images/ide/eclipseche/ide-eclipseche-new-workspace.png
 
 4.  Using opened Terminal, please log in to :ref:`pioaccount` using
     :ref:`cmd_account_login` command.
@@ -65,12 +65,12 @@ Let's create our first PlatformIO-based Codenvy Project
     ``platformio-arduino-blink`` sample. Set "Name" to "Arduino Blink" and
     press "Create".
 
-.. image:: ../_static/ide/eclipseche/ide-eclipseche-create-project.png
+.. image:: ../_static/images/ide/eclipseche/ide-eclipseche-create-project.png
 
 
 2.  Now you can use dropdown Commands menu and process project with "run" command
 
-.. image:: ../_static/ide/eclipseche/ide-eclipseche-run-project.png
+.. image:: ../_static/images/ide/eclipseche/ide-eclipseche-run-project.png
 
 
 3.  If you prefer to work with :ref:`piocore` CLI, then you can process project

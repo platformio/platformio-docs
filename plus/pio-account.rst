@@ -30,7 +30,7 @@ PlatformIO IDE
 :ref:`pioide` has built-in UI in PIO Home to manage PIO Account. You can
 crate a new account, reset a password or fetch authentication token.
 
-.. image:: ../_static/home/pio-home-account-login.png
+.. image:: ../_static/images/home/pio-home-account-login.png
 
 
 CLI Guide

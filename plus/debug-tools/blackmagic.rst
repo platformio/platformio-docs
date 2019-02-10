@@ -14,7 +14,7 @@
 Black Magic Probe
 =================
 
-.. image:: ../../_static/debug_probes/blackmagic.jpg
+.. image:: ../../_static/images/debug_probes/blackmagic.jpg
   :target: https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs
 
 The Black Magic Probe is a modern, in-application debugging tool for embedded
@@ -99,7 +99,7 @@ Wiring Connections
 JTAG Interface
 ~~~~~~~~~~~~~~
 
-.. image:: ../../_static/debug_probes/arm_jtag_connector.png
+.. image:: ../../_static/images/debug_probes/arm_jtag_connector.png
 
 .. list-table::
   :header-rows:  1
@@ -132,7 +132,7 @@ JTAG Interface
 Serial Wire Mode Interface (SWD)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../../_static/debug_probes/arm_swd_connector.png
+.. image:: ../../_static/images/debug_probes/arm_swd_connector.png
 
 .. list-table::
   :header-rows:  1

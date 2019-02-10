@@ -32,4 +32,4 @@ Pinout Diagram
   * - GND
     - GND
 
-.. image:: ../_static/platforms/espressif32_debug_pinout.jpg
+.. image:: ../_static/images/platforms/espressif32_debug_pinout.jpg

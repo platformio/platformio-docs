@@ -51,7 +51,7 @@ Manage custom library storage. It can be used later for the
 Demo
 ----
 
-.. image:: ../../_static/platformio-demo-lib.gif
+.. image:: ../../_static/images/platformio-demo-lib.gif
 
 Commands
 --------

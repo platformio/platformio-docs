@@ -14,7 +14,7 @@
 oddWires IOT-Bus JTAG
 =====================
 
-.. image:: ../../_static/debug_probes/iot-bus-jtag.jpg
+.. image:: ../../_static/images/debug_probes/iot-bus-jtag.jpg
   :target: http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs
 
 This IoT-Bus module provides JTAG debugging for the

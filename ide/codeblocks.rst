@@ -22,7 +22,7 @@ oriented towards C, C++, and Fortran.
 
 CodeBlocks IDE can be downloaded from `here <http://www.codeblocks.org/downloads>`_.
 
-.. image:: ../_static/ide/codeblocks/ide-platformio-codeblocks.png
+.. image:: ../_static/images/ide/codeblocks/ide-platformio-codeblocks.png
     :target: ../_images/ide-platformio-codeblocks.png
 
 .. contents::

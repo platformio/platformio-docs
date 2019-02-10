@@ -435,7 +435,7 @@ For the full list with available options please run
 Demo
 ~~~~
 
-.. image:: ../_static/platformio-demo-ota-esp8266.jpg
+.. image:: ../_static/images/platformio-demo-ota-esp8266.jpg
     :target: https://www.youtube.com/watch?v=lXchL3hpDO4
 
 
