@@ -131,6 +131,11 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_crickit_m0`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - SAMD21G18A
       - 48MHz
@@ -151,6 +156,11 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_grandcentral_m4`
+      - SAMD51P20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_hallowing`
       - SAMD21G18A
       - 48MHz
@@ -162,7 +172,7 @@ Please click on board name for the further details.
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -172,6 +182,11 @@ Please click on board name for the further details.
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_metro_m4`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - SAMD51J19A
       - 120MHz
       - 496KB
@@ -212,6 +227,11 @@ Please click on board name for the further details.
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrgsm1400`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrnb1500`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -431,6 +451,12 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_crickit_m0`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - External
       - SAMD21G18A
@@ -455,6 +481,12 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_grandcentral_m4`
+      - External
+      - SAMD51P20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_hallowing`
       - External
       - SAMD21G18A
@@ -469,7 +501,7 @@ Adafruit
       - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
       - External
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -480,6 +512,12 @@ Adafruit
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_metro_m4`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - External
       - SAMD51J19A
       - 120MHz
@@ -547,6 +585,12 @@ Arduino
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrgsm1400`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrnb1500`
       - External
       - SAMD21G18A
       - 48MHz
@@ -663,6 +707,12 @@ LowPowerLab
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_current_ranger`
+      - No
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_moteino_zero`
       - External
       - SAMD21G18A

@@ -271,6 +271,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_crickit_m0`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -285,13 +292,6 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_adafruit_feather_m4`
-      - :ref:`platform_atmelsam`
-      - External
-      - SAMD51J19A
-      - 120MHz
-      - 496KB
-      - 192KB
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -313,13 +313,6 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
-      - :ref:`platform_atmelsam`
-      - External
-      - SAMD51J19A
-      - 120MHz
-      - 496KB
-      - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -327,13 +320,6 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_adafruit_metro_m4`
-      - :ref:`platform_atmelsam`
-      - External
-      - SAMD51J19A
-      - 120MHz
-      - 496KB
-      - 192KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -391,6 +377,13 @@ Boards
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrgsm1400`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrnb1500`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A

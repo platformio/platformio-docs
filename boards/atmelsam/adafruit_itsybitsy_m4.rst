@@ -24,7 +24,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 .. list-table::
 
   * - **Microcontroller**
-    - SAMD51J19A
+    - SAMD51G19A
   * - **Frequency**
     - 120MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `adafruit_itsybitsy_m4.json <https://github.com/platformio/platfo
   board = adafruit_itsybitsy_m4
 
   ; change microcontroller
-  board_build.mcu = samd51j19a
+  board_build.mcu = samd51g19a
 
   ; change MCU frequency
   board_build.f_cpu = 120000000L
@@ -69,7 +69,6 @@ Uploading
 Adafruit ItsyBitsy M4 (SAMD51) supports the next uploading protocols:
 
 * ``atmel-ice``
-* ``blackmagic``
 * ``jlink``
 * ``sam-ba``
 
@@ -109,9 +108,6 @@ Adafruit ItsyBitsy M4 (SAMD51) does not have on-board debug probe and **IS NOT R
   * - :ref:`debugging_tool_atmel-ice`
     - 
     - Yes
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
