@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif8266_esp8285:
+.. _board_espressif8266_inventone:
 
-Generic ESP8285 Module
-======================
+Invent One
+==========
 
 .. contents::
 
@@ -28,34 +28,34 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **Frequency**
     - 80MHz
   * - **Flash**
-    - 1MB
+    - 4MB
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Espressif <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs>`__
+    - `Invent One <https://inventone.ng/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``esp8285`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``inventone`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:esp8285]
+  [env:inventone]
   platform = espressif8266
-  board = esp8285
+  board = inventone
 
-You can override default Generic ESP8285 Module settings per build environment using
+You can override default Invent One settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `esp8285.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/esp8285.json>`_. For example,
+board manifest `inventone.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/inventone.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:esp8285]
+  [env:inventone]
   platform = espressif8266
-  board = esp8285
+  board = inventone
 
   ; change microcontroller
   board_build.mcu = esp8266
@@ -65,7 +65,7 @@ board manifest `esp8285.json <https://github.com/platformio/platform-espressif82
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ESP8285 Module board.
+:ref:`piodebug` currently does not support Invent One board.
 
 Frameworks
 ----------
@@ -83,3 +83,6 @@ Frameworks
 
     * - :ref:`framework_esp8266-rtos-sdk`
       - ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
+
+    * - :ref:`framework_simba`
+      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.

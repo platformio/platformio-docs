@@ -338,6 +338,7 @@ Espressif 8266
     espressif8266/esp07
     espressif8266/esp8285
     espressif8266/heltec_wifi_kit_8
+    espressif8266/inventone
     espressif8266/nodemcu
     espressif8266/nodemcuv2
     espressif8266/modwifi

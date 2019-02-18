@@ -356,7 +356,7 @@ Espressif
       - No
       - ESP8266
       - 80MHz
-      - 423.98KB
+      - 1MB
       - 80KB
     * - :ref:`board_espressif8266_phoenix_v1`
       - No
@@ -390,6 +390,25 @@ Heltec
       - Flash
       - RAM
     * - :ref:`board_espressif8266_heltec_wifi_kit_8`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
+Invent One
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_inventone`
       - No
       - ESP8266
       - 80MHz

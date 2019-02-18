@@ -2772,7 +2772,7 @@ Espressif
       - No
       - ESP8266
       - 80MHz
-      - 423.98KB
+      - 1MB
       - 80KB
     * - :ref:`board_espressif8266_phoenix_v1`
       - :ref:`platform_espressif8266`
@@ -3201,6 +3201,27 @@ IntoRobot
       - 240MHz
       - 4MB
       - 320KB
+
+Invent One
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_inventone`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
 
 LeafLabs
 ~~~~~~~~
