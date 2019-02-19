@@ -119,6 +119,7 @@ Atmel AVR
     atmelavr/attiny25
     atmelavr/attiny261
     atmelavr/attiny4313
+    atmelavr/attiny43
     atmelavr/attiny44
     atmelavr/attiny441
     atmelavr/attiny45
@@ -136,6 +137,7 @@ Atmel AVR
     atmelavr/lightup
     atmelavr/one
     atmelavr/smart7688
+    atmelavr/lora32u4II
     atmelavr/mightyhat
     atmelavr/moteino
     atmelavr/moteino8mhz

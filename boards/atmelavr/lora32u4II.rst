@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_attiny87:
+.. _board_atmelavr_lora32u4II:
 
-Generic ATtiny87
-================
+LoRa32u4II (868-915MHz)
+=======================
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATTINY87
+    - ATMEGA32U4
   * - **Frequency**
     - 8MHz
   * - **Flash**
-    - 8KB
+    - 28KB
   * - **RAM**
-    - 512B
+    - 2.50KB
   * - **Vendor**
-    - `Atmel <http://www.atmel.com/devices/ATTINY87.aspx?utm_source=platformio&utm_medium=docs>`__
+    - `BSFrance <https://bsfrance.fr/lora-long-range/1345-LoRa32u4-II-Lora-LiPo-Atmega32u4-SX1276-HPD13-868MHZ-EU-Antenna.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``attiny87`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lora32u4II`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:attiny87]
+  [env:lora32u4II]
   platform = atmelavr
-  board = attiny87
+  board = lora32u4II
 
-You can override default Generic ATtiny87 settings per build environment using
+You can override default LoRa32u4II (868-915MHz) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `attiny87.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny87.json>`_. For example,
+board manifest `lora32u4II.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/lora32u4II.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:attiny87]
+  [env:lora32u4II]
   platform = atmelavr
-  board = attiny87
+  board = lora32u4II
 
   ; change microcontroller
-  board_build.mcu = attiny87
+  board_build.mcu = atmega32u4
 
   ; change MCU frequency
   board_build.f_cpu = 8000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATtiny87 board.
+:ref:`piodebug` currently does not support LoRa32u4II (868-915MHz) board.
 
 Frameworks
 ----------

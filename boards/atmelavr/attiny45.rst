@@ -11,7 +11,7 @@
 
 .. _board_atmelavr_attiny45:
 
-Generic ATTiny45
+Generic ATtiny45
 ================
 
 .. contents::
@@ -46,7 +46,7 @@ Please use ``attiny45`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   platform = atmelavr
   board = attiny45
 
-You can override default Generic ATTiny45 settings per build environment using
+You can override default Generic ATtiny45 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `attiny45.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny45.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -65,7 +65,7 @@ board manifest `attiny45.json <https://github.com/platformio/platform-atmelavr/b
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATTiny45 board.
+:ref:`piodebug` currently does not support Generic ATtiny45 board.
 
 Frameworks
 ----------

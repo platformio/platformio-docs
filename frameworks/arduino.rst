@@ -1979,6 +1979,13 @@ Atmel
       - 8MHz
       - 4KB
       - 256B
+    * - :ref:`board_atmelavr_attiny43`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATTINY43U
+      - 8MHz
+      - 4KB
+      - 256B
     * - :ref:`board_atmelavr_attiny44`
       - :ref:`platform_atmelavr`
       - No
@@ -2133,6 +2140,27 @@ BQ
       - 16MHz
       - 28KB
       - 2KB
+
+BSFrance
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_lora32u4II`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
 
 BitWizard
 ~~~~~~~~~

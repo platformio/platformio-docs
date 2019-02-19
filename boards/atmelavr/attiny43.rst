@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_attiny87:
+.. _board_atmelavr_attiny43:
 
-Generic ATtiny87
-================
+Generic ATtiny43U
+=================
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATTINY87
+    - ATTINY43U
   * - **Frequency**
     - 8MHz
   * - **Flash**
-    - 8KB
+    - 4KB
   * - **RAM**
-    - 512B
+    - 256B
   * - **Vendor**
-    - `Atmel <http://www.atmel.com/devices/ATTINY87.aspx?utm_source=platformio&utm_medium=docs>`__
+    - `Atmel <https://www.microchip.com/wwwproducts/en/ATtiny43U?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``attiny87`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``attiny43`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:attiny87]
+  [env:attiny43]
   platform = atmelavr
-  board = attiny87
+  board = attiny43
 
-You can override default Generic ATtiny87 settings per build environment using
+You can override default Generic ATtiny43U settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `attiny87.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny87.json>`_. For example,
+board manifest `attiny43.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny43.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:attiny87]
+  [env:attiny43]
   platform = atmelavr
-  board = attiny87
+  board = attiny43
 
   ; change microcontroller
-  board_build.mcu = attiny87
+  board_build.mcu = attiny43u
 
   ; change MCU frequency
   board_build.f_cpu = 8000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATtiny87 board.
+:ref:`piodebug` currently does not support Generic ATtiny43U board.
 
 Frameworks
 ----------
