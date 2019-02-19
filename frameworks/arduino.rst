@@ -756,12 +756,6 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 1.25MB
-    * - :ref:`board_nordicnrf51_rfduino`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 8KB
     * - :ref:`board_atmelsam_sodaq_autonomo`
       - :ref:`platform_atmelsam`
       - SAMD21J18A
@@ -4240,27 +4234,6 @@ Quirkbot
       - 8MHz
       - 28KB
       - 2.50KB
-
-RFduino
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_rfduino`
-      - :ref:`platform_nordicnrf51`
-      - External
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 8KB
 
 RedBearLab
 ~~~~~~~~~~

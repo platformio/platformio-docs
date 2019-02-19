@@ -1151,13 +1151,6 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
-    * - :ref:`board_nordicnrf51_rfduino`
-      - :ref:`platform_nordicnrf51`
-      - External
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 8KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - On-board

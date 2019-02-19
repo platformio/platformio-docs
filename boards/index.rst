@@ -519,7 +519,6 @@ Nordic nRF51
     nordicnrf51/nrf51_dongle
     nordicnrf51/nrf51_mkit
     nordicnrf51/oshchip
-    nordicnrf51/rfduino
     nordicnrf51/redBearLabBLENano
     nordicnrf51/redBearLab
     nordicnrf51/seeedArchBLE

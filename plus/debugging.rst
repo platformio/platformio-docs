@@ -2020,27 +2020,6 @@ Pycom Ltd.
       - 4MB
       - 1.25MB
 
-RFduino
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_rfduino`
-      - :ref:`platform_nordicnrf51`
-      - External
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 8KB
-
 RedBearLab
 ~~~~~~~~~~
 

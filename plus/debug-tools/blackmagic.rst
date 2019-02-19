@@ -803,13 +803,6 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nordicnrf51_rfduino`
-      - :ref:`platform_nordicnrf51`
-      - External
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 8KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - On-board
