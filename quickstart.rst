@@ -240,7 +240,7 @@ targets.
 Finally, demo which demonstrates building project and uploading firmware to
 Arduino Uno:
 
-.. image:: _static/platformio-demo-wiring.gif
+.. image:: _static/images/platformio-demo-wiring.gif
 
 Further Reading
 ---------------

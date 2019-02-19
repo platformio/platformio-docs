@@ -14,7 +14,7 @@
 ST-LINK
 =======
 
-.. image:: ../../_static/debug_probes/stlink.jpg
+.. image:: ../../_static/images/debug_probes/stlink.jpg
   :target: http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs
 
 The ST-LINK is an in-circuit debugger and programmer for the STM8 and STM32
@@ -71,7 +71,7 @@ Drivers
 Wiring Connections
 ------------------
 
-.. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
+.. image:: ../../_static/images/debug_probes/generic_jtag_swd_connector.jpg
 
 JTAG Interface
 ~~~~~~~~~~~~~~

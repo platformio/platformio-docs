@@ -18,7 +18,7 @@ VIM
 editor. Vim is designed for use both from a command-line interface and as a
 standalone application in a graphical user interface.
 
-.. image:: ../_static/ide/vim/ide-platformio-vim.png
+.. image:: ../_static/images/ide/vim/ide-platformio-vim.png
 
 .. contents::
 

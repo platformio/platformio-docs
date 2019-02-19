@@ -59,14 +59,14 @@ Demo
 Welcome & Project Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../_static/home/pio-home-welcome.png
+.. image:: ../_static/images/home/pio-home-welcome.png
 
 Library Manager
 ~~~~~~~~~~~~~~~
 
-.. image:: ../_static/home/pio-home-library-stats.png
+.. image:: ../_static/images/home/pio-home-library-stats.png
 
 Board Explorer
 ~~~~~~~~~~~~~~
 
-.. image:: ../_static/home/pio-home-boards.png
+.. image:: ../_static/images/home/pio-home-boards.png

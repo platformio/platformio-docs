@@ -14,7 +14,7 @@
 J-LINK
 ======
 
-.. image:: ../../_static/debug_probes/jlink.png
+.. image:: ../../_static/images/debug_probes/jlink.png
   :target: https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs
 
 SEGGER J-Links are the most widely used line of debug probes available today.
@@ -85,7 +85,7 @@ Drivers
 Wiring Connections
 ------------------
 
-.. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
+.. image:: ../../_static/images/debug_probes/generic_jtag_swd_connector.jpg
 
 JTAG Interface
 ~~~~~~~~~~~~~~

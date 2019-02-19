@@ -33,11 +33,11 @@ Setting Up the Project
 
 At first step, we need to create a new project using PlatformIO Home Page (to open this page just press Home icon on the toolbar):
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-1.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-1.png
 
 On the next step we need to select ``ESP32-DevKitC`` as a development board, :ref:`framework_arduino` as a framework and a path to the project location (or use the default one):
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-2.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-2.png
 
 Processing the selected project may take some amount of time (PlatformIO will download and install all required packages)
 and after these steps, we have a fully configured project that is ready for developing code with :ref:`framework_arduino` framework.
@@ -62,7 +62,7 @@ Let's add some actual code to the project. Firstly, we open a default main file 
         delay(1000);
     }
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-3.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-3.png
 
 After this step, we created a basic project ready for compiling and uploading.
 
@@ -72,25 +72,25 @@ Compiling and Uploading the Firmware
 Now we can build the project. To compile firmware we can use the next options:
 Build option from the ``Project Tasks`` menu, Build button in :ref:`ide_vscode_toolbar`, Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-4.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-4.png
 
 If everything went well, we should see a successful result message in the terminal window:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-5.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-5.png
 
 To upload the firmware to the board we can use the next options:
 Upload option from the ``Project Tasks`` menu, Upload button in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-6.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-6.png
 
 After successful uploading, we need to check if the firmware is uploaded correctly. To do this we need to open the serial monitor and check that the message from the board is received. To open serial monitor we can use the next options:
 Monitor option from the ``Project Tasks`` menu, Serial Monitor button in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Monitor``, Task Menu ``Tasks: Run Task... > PlatformIO: Monitor``:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-7.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-7.png
 
 If the firmware works as expected, the message from the board can be observed in the terminal window:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-8.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-8.png
 
 Debugging the Firmware
 ----------------------
@@ -140,7 +140,7 @@ In order to use a JTAG probe with ESP32 we need to connect the following pins:
 To start the debug session we can use the next options:
 ``Debug: Start debugging`` from the top menu, ``Start Debugging`` option from Quick Access menu or hotkey button ``F5``:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-9.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-9.png
 
 We need to wait some time while PlatformIO is initializing debug session,
 and we are ready to debug when the first line after the main function is highlighted.
@@ -151,11 +151,11 @@ and we are ready to debug when the first line after the main function is highlig
 4. Debugging session should stop at the first line of ``void loopTask(void *pvParameters)`` function
 5. Now, navigate to your Arduino setup/loop code and do classic debugging.
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-10.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-10.png
 
 We can walk through the code using control buttons, set breakpoints, add variables to ``Watch window``:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-11.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-11.png
 
 Writing Unit Tests
 ------------------
@@ -239,11 +239,11 @@ Let's create ``test`` folder in the root of the project and add a new file ``tes
 Now we are ready to upload tests to the board. To do this we can use the next options:
 Test button on :ref:`ide_vscode_toolbar`, Test option from the ``Project Tasks`` menu or ``Tasks: Run Task... > PlatformIO Test`` from the top menu:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-12.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-12.png
 
 After processing we should see a detailed report about testing results:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-13.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-13.png
 
 As we can see from the report, all our tests were successful!
 
@@ -307,15 +307,15 @@ To verify that our application works as expected, we can use any Android smartph
 At first, we need to scan all advertising BLE devices and connect to the device called ``ESP32 BLE example``.
 After the successful connection to the board, we should see one "Unknown Service" with one "Unknown Characteristic" field:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-14.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-14.png
 
 To set the value we need to send the new text to the BLE characteristic:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-15.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-15.png
 
 The change of the value is printed to the serial monitor:
 
-.. image:: ../../_static/tutorials/espressif32/arduino-debugging-unit-testing-16.png
+.. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-16.png
 
 Conclusion
 ----------

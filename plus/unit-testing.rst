@@ -32,7 +32,7 @@ Demo
 
 Demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_.
 
-.. image:: ../_static/pioplus-unit-testing-demo.png
+.. image:: ../_static/images/pioplus-unit-testing-demo.png
     :target: https://youtu.be/bo3VVRZVKhA
 
 Tutorials and Examples

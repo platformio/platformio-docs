@@ -14,7 +14,7 @@
 Mini-Module FT2232H
 ===================
 
-.. image:: ../../_static/debug_probes/minimodule.jpg
+.. image:: ../../_static/images/debug_probes/minimodule.jpg
   :target: http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini
 
 The FT2232H Mini Module is a USB to dual channel serial/MPSSE/FIFO interface

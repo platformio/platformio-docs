@@ -14,7 +14,7 @@
 Atmel-ICE
 =========
 
-.. image:: ../../_static/debug_probes/atmel-ice.jpg
+.. image:: ../../_static/images/debug_probes/atmel-ice.jpg
   :target: https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs
 
 Atmel-ICE is a powerful development tool for debugging and programming ARM®

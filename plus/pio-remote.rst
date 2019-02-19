@@ -93,7 +93,7 @@ Use Cases
 Technology
 ----------
 
-.. image:: ../_static/pio-remote-architecture.png
+.. image:: ../_static/images/pio-remote-architecture.png
 
 |PIORemote| is an own `PIO Plus <https://pioplus.com/>`__ technology
 for remote solutions without external dependencies to

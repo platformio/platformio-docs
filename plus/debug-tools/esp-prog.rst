@@ -14,7 +14,7 @@
 ESP-Prog
 ========
 
-.. image:: ../../_static/debug_probes/esp-prog.jpg
+.. image:: ../../_static/images/debug_probes/esp-prog.jpg
   :target: https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs
 
 ESP-Prog is one of Espressif’s development and debugging tools, with functions
@@ -61,7 +61,7 @@ More options:
 Wiring Connections
 ------------------
 
-.. image:: ../../_static/debug_probes/esp-prog_jtag_connector.png
+.. image:: ../../_static/images/debug_probes/esp-prog_jtag_connector.png
 
 .. list-table::
   :header-rows:  1

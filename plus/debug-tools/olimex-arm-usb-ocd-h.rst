@@ -14,7 +14,7 @@
 Olimex ARM-USB-OCD-H
 ====================
 
-.. image:: ../../_static/debug_probes/olimex-arm-usb-ocd-h.jpg
+.. image:: ../../_static/images/debug_probes/olimex-arm-usb-ocd-h.jpg
   :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs
 
 High-speed 3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power
@@ -58,7 +58,7 @@ More options:
 Wiring Connections
 ------------------
 
-.. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
+.. image:: ../../_static/images/debug_probes/generic_jtag_swd_connector.jpg
 
 .. list-table::
   :header-rows:  1

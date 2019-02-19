@@ -14,7 +14,7 @@
 TIAO USB Multi-Protocol Adapter (TUMPA)
 =======================================
 
-.. image:: ../../_static/debug_probes/tumpa.jpg
+.. image:: ../../_static/images/debug_probes/tumpa.jpg
   :target: https://www.diygadget.com/jtag-cables-and-microcontroller-programmers/114-tiao-usb-multi-protocol-adapter-jtag-spi-i2c-serial.html?utm_source=platformio&utm_medium=docs
 
 The TIAO USB Multi Protocol Adapter (TUMPA) is a multi-functional USB
@@ -62,7 +62,7 @@ More options:
 Wiring Connections
 ------------------
 
-.. image:: ../../_static/debug_probes/generic_jtag_swd_connector.jpg
+.. image:: ../../_static/images/debug_probes/generic_jtag_swd_connector.jpg
 
 JTAG Interface
 ~~~~~~~~~~~~~~

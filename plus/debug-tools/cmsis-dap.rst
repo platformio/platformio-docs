@@ -14,7 +14,7 @@
 CMSIS-DAP
 =========
 
-.. image:: ../../_static/debug_probes/cmsis-dap.png
+.. image:: ../../_static/images/debug_probes/cmsis-dap.png
   :target: https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs
 
 CMSIS-DAP is generally implemented as an on-board interface chip, providing

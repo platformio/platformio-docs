@@ -76,7 +76,7 @@ is installed by default on the all popular OS except Windows.
 and install it. **DON'T FORGET** to select ``Add python.exe to Path`` feature
 on the "Customize" stage, otherwise, ``python`` command will not be available.
 
-.. image:: _static/python-installer-add-path.png
+.. image:: _static/images/python-installer-add-path.png
 
 .. _faq_convert_ino_to_cpp:
 

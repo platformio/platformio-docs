@@ -27,7 +27,7 @@ registers, and disassembly viewers.
 Refer to the `CDT Documentation <https://eclipse.org/cdt/documentation.php>`_
 page for more detailed information.
 
-.. image:: ../_static/ide/eclipse/ide-platformio-eclipse.png
+.. image:: ../_static/images/ide/eclipse/ide-platformio-eclipse.png
     :target: ../_images/ide-platformio-eclipse.png
 
 .. contents:: Contents
@@ -104,7 +104,7 @@ Live Integration
 
 Eclipse Virtual IoT Meetup: `PlatformIO: a cross-platform IoT solution to build them all! <http://www.meetup.com/Virtual-IoT/events/229964142/>`_
 
-.. image:: ../_static/ide/eclipse/ide-eclipse-virtualiot.jpg
+.. image:: ../_static/images/ide/eclipse/ide-eclipse-virtualiot.jpg
     :target: https://www.youtube.com/watch?v=6t7UbX812Yw
 
 Debugging

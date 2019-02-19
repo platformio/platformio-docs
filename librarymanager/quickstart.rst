@@ -80,13 +80,13 @@ PlatformIO IDE
 * Updates for installed libraries
 * Multiple examples, trending libraries, and more.
 
-.. image:: ../_static/home/pio-home-library-search.png
+.. image:: ../_static/images/home/pio-home-library-search.png
 
 
 PlatformIO Core
 ---------------
 
-.. image:: ../_static/platformio-demo-lib.gif
+.. image:: ../_static/images/platformio-demo-lib.gif
 
 CLI Guide
 ---------

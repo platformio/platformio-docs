@@ -53,7 +53,7 @@ Please fill all fields for your project in the Drone control panel:
     pip install -U platformio
     platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
-.. image:: ../_static/droneci-platformio-integration-1.png
+.. image:: ../_static/images/droneci-platformio-integration-1.png
 
 For more details as for PlatformIO build process please look into :ref:`cmd_ci`
 command.
@@ -80,4 +80,4 @@ Examples
     unzip /tmp/spi4teensy3.zip -d /tmp
     platformio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
 
-.. image:: ../_static/droneci-platformio-integration-2.png
+.. image:: ../_static/images/droneci-platformio-integration-2.png
