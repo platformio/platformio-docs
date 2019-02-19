@@ -234,50 +234,52 @@ its commands (:ref:`userguide`).
 
 .. code-block:: json
 
-  {
-      "version": "2.0.0",
-      "tasks": [
-          {
-              "type": "shell",
-              "command": "platformio",
-              "args": [
-                  "run",
-                  "--verbose"
-              ],
-              "problemMatcher": [
-                  "$platformio"
-              ],
-              "label": "PlatformIO: Verbose Build"
-          }
-      ]
-  }
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "type": "shell",
+                "command": "platformio",
+                "args": [
+                    "device",
+                    "monitor",
+                    "--echo"
+                ],
+                "problemMatcher": [
+                    "$platformio"
+                ],
+                "label": "PlatformIO: Monitor (local echo)"
+            }
+        ]
+    }
 
 If ``platformio`` executable file is not in your system environment "PATH", you
-can provide a path to binary folder using ``options`` field for task. For example,
+can provide a full path to binary folder using ``options`` field for task. For example,
 ``platformio`` binary is located in home folder "~/.platformio/penv/bin":
 
 .. code-block:: json
 
-  {
-      "version": "2.0.0",
-      "tasks": [
-          {
-              "type": "shell",
-              "command": "platformio",
-              "args": [
-                  "run",
-                  "--verbose"
-              ],
-              "problemMatcher": [
-                  "$platformio"
-              ],
-              "label": "PlatformIO: Verbose Build",
-              "options": {
-                  "env": {"PATH": "~/.platformio/penv/bin"}
-              }
-          }
-      ]
-  }
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "type": "shell",
+                "command": "platformio",
+                "args": [
+                    "device",
+                    "monitor",
+                    "--echo"
+                ],
+                "problemMatcher": [
+                    "$platformio"
+                ],
+                "label": "PlatformIO: Monitor (local echo)",
+                "options": {
+                    "env": {"PATH": "${env:HOME}/.platformio/penv/bin"}
+                }
+            }
+        ]
+    }
 
 Multi-project Workspaces
 ------------------------
