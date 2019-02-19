@@ -37,6 +37,7 @@ Examples are listed from `RISC-V development platform repository <https://github
 * `freedom-e-sdk_gpio <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_gpio?utm_source=platformio&utm_medium=docs>`_
 * `freedom-e-sdk_hello <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
 * `freedom-e-sdk_smp <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_smp?utm_source=platformio&utm_medium=docs>`_
+* `native-blink_asm <https://github.com/platformio/platform-riscv/tree/master/examples/native-blink_asm?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
