@@ -120,10 +120,14 @@ Build project using pre-configured :ref:`projectconf`.
     -O, --project-option
 
 Pass additional options from :ref:`projectconf` to :ref:`cmd_init` command.
-Use multiple ``--project-option`` options to pass multiple options to
-:ref:`cmd_init` command. For example, automatically install dependent libraries
+For example, automatically install dependent libraries
 ``platformio ci --project-option="lib_deps=ArduinoJSON"`` or ignore specific
 library ``platformio ci --project-option="lib_ignore=SomeLib"``.
+
+.. note::
+    Use multiple ``--project-option`` to pass multiple options to
+    :ref:`projectconf`. One option per one argument. For example,
+    ``platformio ci --project-option="build_unflags = -std=gnu++11" --project-option="build_flags = -std=c++14"``
 
 .. option::
     -v, --verbose
