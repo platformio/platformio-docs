@@ -18,9 +18,6 @@ Tutorials
 Configuration
 -------------
 
-.. contents::
-    :local:
-
 Switching between cores
 ~~~~~~~~~~~~~~~~~~~~~~~
 

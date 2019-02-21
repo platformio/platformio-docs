@@ -13,3 +13,11 @@ Tutorials
 ---------
 
 * :ref:`tutorial_stm32cube_debugging_unit_testing`
+
+Configuration
+-------------
+
+Switching between Arduino cores
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+See "Configuration" section for :ref:`framework_arduino` framework.
