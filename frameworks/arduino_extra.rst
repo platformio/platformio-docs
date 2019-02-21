@@ -14,3 +14,39 @@ Tutorials
 
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
 * :ref:`tutorial_nordicnrf52_arduino_debugging_unit_testing`
+
+Configuration
+-------------
+
+.. contents::
+    :local:
+
+Switching between cores
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If board supports multiple Arduino cores, you can switch between them using
+``board_build.core`` option in :ref:`projectconf`.
+
+For example, some boards of :ref:`platform_ststm32` development platform
+support official ``stm32`` core and ``maple`` core by
+`Roger Clark <https://github.com/rogerclarkmelbourne/Arduino_STM32>`_.
+
+Example:
+
+.. code-block:: ini
+
+	[env:disco_f100rb_stm32]
+	platform = ststm32
+	framework = arduino
+	board = disco_f100rb
+
+	; Is set by default
+	board_build.core = stm32
+
+	[env:disco_f100rb_maple]
+	platform = ststm32
+	framework = arduino
+	board = disco_f100rb
+
+	; force to Maple core
+	board_build.core = maple
