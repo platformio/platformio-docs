@@ -112,6 +112,7 @@ Examples:
     [env:string_defines]
     build_flags =
       -DHELLO="World!"
+      '-DWIFI_PASS="My password"'
       ; Password with special chars: My pass'word
       -DWIFI_PASS=\"My\ pass\'word\"
 
