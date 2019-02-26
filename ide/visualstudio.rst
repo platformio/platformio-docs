@@ -156,7 +156,7 @@ Known issues
 IntelliSense Errors
 ^^^^^^^^^^^^^^^^^^^
 
-VS Studio does not allow to specify for project other toolchain which will
+VS Studio does not allow one to specify for project other toolchain which will
 be used by IntelliSense. In this case, IntelliSense does not understand
 GCC-specific definitions.
 
