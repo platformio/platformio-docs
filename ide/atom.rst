@@ -38,7 +38,7 @@ Installation
     if you are going to use :ref:`ide_atom`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    Also, PlatformIO IDE allows to install :ref:`piocore` Shell Commands
+    Also, PlatformIO IDE allows one to install :ref:`piocore` Shell Commands
     (``pio``, ``platformio``) globally to your system via
     ``Menu: PlatformIO > Install Shell Commands``.
 

@@ -127,7 +127,7 @@ After that, we can use the necessary commands from
 Command Hotkeys
 '''''''''''''''
 
-Sublime Text allows to bind own hotkey per command. Let's setup them
+Sublime Text allows one to bind own hotkey per command. Let's setup them
 for PlatformIO commands using shortcut ``Menu: Preferences > Key-Bindings - User``:
 
 .. image:: ../_static/images/ide/sublimetext/ide-sublimetext-newproject-3.png

@@ -24,7 +24,7 @@ General options
 
 :ref:`platforms` name.
 
-PlatformIO allows to use specific version of platform using
+PlatformIO allows one to use specific version of platform using
 `Semantic Versioning <http://semver.org>`_ (X.Y.Z=MAJOR.MINOR.PATCH) or VCS
 (Git, Mercurial and Subversion).
 

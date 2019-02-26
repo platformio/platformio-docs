@@ -280,7 +280,7 @@ Home page of library (if is different from :ref:`libjson_repository` url).
 
 Explain PlatformIO Library Crawler which content from the repository/archive
 should be exported as "source code" of the library. This option is useful if
-need to exclude extra data (test code, docs, images, PDFs, etc). It allows to
+need to exclude extra data (test code, docs, images, PDFs, etc). It allows one to
 reduce size of the final archive.
 
 Possible options:

@@ -23,7 +23,7 @@ Setting Up the Project
 ----------------------
 
 :ref:`piocore` provides special :ref:`cmd_init` command for configuring your projects.
-It allows to initialize new empty project or update existing with the new data.
+It allows one to initialize new empty project or update existing with the new data.
 
 What is more, :ref:`cmd_init` can be used for :ref:`ide`. It means that you will
 be able to import pre-generated PlatformIO project using favorite IDE and

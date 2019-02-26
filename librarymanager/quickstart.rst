@@ -35,7 +35,7 @@ storage in :ref:`projectconf_pio_libdeps_dir`.
 Project dependencies
 --------------------
 
-*PlatformIO Library Manager* allows to specify project dependencies
+*PlatformIO Library Manager* allows one to specify project dependencies
 (:ref:`projectconf_lib_deps`) that will be installed automatically per project
 before environment processing. You do not need to install libraries manually.
 The only one simple step is to define dependencies in :ref:`projectconf`.

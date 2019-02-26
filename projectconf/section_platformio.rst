@@ -41,7 +41,7 @@ Describe a project with a short information. PlatformIO uses it for
 
 :ref:`cmd_run` command processes all environments ``[env:***]`` by default
 if :option:`platformio run --environment` option is not specified.
-:ref:`projectconf_pio_env_default` allows to define environments which
+:ref:`projectconf_pio_env_default` allows one to define environments which
 should be processed by default.
 
 Also, :ref:`piodebug` checks this option when looking for debug environment.

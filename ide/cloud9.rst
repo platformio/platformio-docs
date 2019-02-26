@@ -120,7 +120,7 @@ Let's create our first PlatformIO-based Cloud9 Project
 PlatformIO Build System
 -----------------------
 
-Cloud9 allows to create own build system and use hotkey or command
+Cloud9 allows one to create own build system and use hotkey or command
 (Menu: Run > Build) to build a project.
 
 Let's create PlatformIO Build System that will be used for C/C++/H/INO/PDE

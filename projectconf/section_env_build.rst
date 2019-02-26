@@ -154,7 +154,7 @@ see ALL variables from a build environment.
 Dynamic build flags
 '''''''''''''''''''
 
-PlatformIO allows to run external command/script which outputs build flags
+PlatformIO allows one to run external command/script which outputs build flags
 into STDOUT. PlatformIO will automatically parse this output and append flags
 to a build environment.
 
@@ -237,7 +237,7 @@ Remove base/initial flags which were set by development platform.
 ``src_filter``
 ^^^^^^^^^^^^^^
 
-This option allows to specify which source files should be included/excluded
+This option allows one to specify which source files should be included/excluded
 from build process. Filter supports 2 templates:
 
 * ``+<PATH>`` include template
