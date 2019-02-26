@@ -159,7 +159,7 @@ device. Possible options:
 ``debug_load_mode``
 ^^^^^^^^^^^^^^^^^^^
 
-Allows to control when PlatformIO should load debugging firmware to the end
+Allows one to control when PlatformIO should load debugging firmware to the end
 target. Possible options:
 
 * ``always`` - load for the each debugging session, **default**
@@ -172,7 +172,7 @@ target. Possible options:
 ``debug_server``
 ^^^^^^^^^^^^^^^^
 
-Allows to setup a custom debugging server. By default, boards are pre-configured
+Allows one to setup a custom debugging server. By default, boards are pre-configured
 with a debugging server that is compatible with "on-board" debugging tool
 (adapter, probe). Also, this option is useful for a
 :ref:`debugging_tool_custom` debugging tool.
