@@ -122,7 +122,7 @@ updated commands and options.
     * - :option:`platformio lib install --silent`
       - Suppress progress reporting when install library
     * - :option:`platformio lib install --interactive`
-      - Allow to make a choice for all prompts when install library
+      - Allow one to make a choice for all prompts when install library
     * - :option:`platformio lib search --header`
       - Search library by specific header file name (include)
     * - :option:`platformio lib update --only-check`
