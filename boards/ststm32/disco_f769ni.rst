@@ -26,7 +26,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Microcontroller**
     - STM32F769NIH6
   * - **Frequency**
-    - 80MHz
+    - 216MHz
   * - **Flash**
     - 1MB
   * - **RAM**
