@@ -311,6 +311,13 @@ Adafruit
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -353,6 +360,13 @@ Adafruit
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -1942,6 +1956,13 @@ Nordic
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 OLIMEX
 ~~~~~~

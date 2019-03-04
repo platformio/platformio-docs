@@ -538,10 +538,13 @@ Nordic nRF52
 .. toctree::
     :maxdepth: 1
         
+    nordicnrf52/adafruit_feather_nrf52832
+    nordicnrf52/adafruit_feather_nrf52840
     nordicnrf52/bluey
     nordicnrf52/delta_dfbm_nq620
     nordicnrf52/nrf52_dk
     nordicnrf52/nrf52840_dk
+    nordicnrf52/nrf52840_dk_adafruit
     nordicnrf52/redbear_blenano2
     nordicnrf52/redbear_blend2
     nordicnrf52/stct_nrf52_minidev
