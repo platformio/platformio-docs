@@ -367,9 +367,13 @@ There are 2 options:
 
 * Specify ``upload_port`` option in :ref:`projectconf`
 
+
+You also need to set :ref:`projectconf_upload_port` to `espota`.
+
 .. code-block:: ini
 
    [env:myenv]
+   upload_protocol = espota
    upload_port = IP_ADDRESS_HERE or mDNS_NAME.local
 
 For example,
@@ -386,6 +390,7 @@ You can pass additional options/flags to OTA uploader using
 .. code-block:: ini
 
     [env:myenv]
+    upload_protocol = espota
     ; each flag in a new line
     upload_flags =
       --port=8266

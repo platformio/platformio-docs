@@ -63,6 +63,26 @@ board manifest `espresso_lite_v2.json <https://github.com/platformio/platform-es
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+ESPresso Lite 2.0 supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:espresso_lite_v2]
+  platform = espressif8266
+  board = espresso_lite_v2
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support ESPresso Lite 2.0 board.

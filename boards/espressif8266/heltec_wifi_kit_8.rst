@@ -63,6 +63,26 @@ board manifest `heltec_wifi_kit_8.json <https://github.com/platformio/platform-e
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+Heltec Wifi kit 8 supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:heltec_wifi_kit_8]
+  platform = espressif8266
+  board = heltec_wifi_kit_8
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Heltec Wifi kit 8 board.
