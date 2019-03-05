@@ -71,6 +71,7 @@ Maple Mini Original supports the next uploading protocols:
 * ``blackmagic``
 * ``dfu``
 * ``jlink``
+* ``serial``
 * ``stlink``
 
 Default protocol is ``dfu``

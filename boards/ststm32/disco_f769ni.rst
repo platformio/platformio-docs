@@ -26,7 +26,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Microcontroller**
     - STM32F769NIH6
   * - **Frequency**
-    - 80MHz
+    - 216MHz
   * - **Flash**
     - 1MB
   * - **RAM**
@@ -61,7 +61,7 @@ board manifest `disco_f769ni.json <https://github.com/platformio/platform-ststm3
   board_build.mcu = stm32f769nih6
 
   ; change MCU frequency
-  board_build.f_cpu = 80000000L
+  board_build.f_cpu = 216000000L
 
 
 Uploading
@@ -73,7 +73,7 @@ ST 32F769IDISCOVERY supports the next uploading protocols:
 * ``mbed``
 * ``stlink``
 
-Default protocol is ``mbed``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
@@ -83,7 +83,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
   platform = ststm32
   board = disco_f769ni
 
-  upload_protocol = mbed
+  upload_protocol = stlink
 
 Debugging
 ---------

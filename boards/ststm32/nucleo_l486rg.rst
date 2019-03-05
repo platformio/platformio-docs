@@ -73,7 +73,7 @@ ST Nucleo L476RG supports the next uploading protocols:
 * ``mbed``
 * ``stlink``
 
-Default protocol is ``mbed``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
@@ -83,7 +83,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
   platform = ststm32
   board = nucleo_l486rg
 
-  upload_protocol = mbed
+  upload_protocol = stlink
 
 Debugging
 ---------
