@@ -637,14 +637,30 @@ ST STM32
     :maxdepth: 1
         
     ststm32/1bitsy_stm32f415rgt
+    ststm32/armed_v1
+    ststm32/rumba32_f446ve
+    ststm32/remram_v1
     ststm32/b96b_f446ve
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
     ststm32/armstrap_eagle512
+    ststm32/black_f407ve
+    ststm32/black_f407vg
+    ststm32/black_f407zg
+    ststm32/black_f407ze
+    ststm32/blackpill_f103c8
+    ststm32/blackpill_f103c8_128
+    ststm32/blue_f407ve_mini
+    ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
     ststm32/bluepill_f103c8_128k
+    ststm32/demo_f030f4
     ststm32/elmo_f411re
+    ststm32/diymore_f407vgt
+    ststm32/fk407m1
+    ststm32/malyanm200_f070cb
     ststm32/mts_dragonfly_f411re
+    ststm32/malyanm200_f103cb
     ststm32/maple
     ststm32/maple_ret6
     ststm32/maple_mini_b20
@@ -655,7 +671,10 @@ ST STM32
     ststm32/mts_mdot_f405rg
     ststm32/mts_mdot_f411re
     ststm32/xdot_l151cc
+    ststm32/netduino2plus
     ststm32/mote_l152rc
+    ststm32/rak811_tracker_32
+    ststm32/rak811_tracker
     ststm32/cloud_jam
     ststm32/cloud_jam_l4
     ststm32/disco_f334c8
@@ -672,6 +691,7 @@ ST STM32
     ststm32/disco_l496ag
     ststm32/disco_l072cz_lrwan1
     ststm32/disco_l475vg_iot01a
+    ststm32/disco_f072rb
     ststm32/nucleo_f030r8
     ststm32/nucleo_f031k6
     ststm32/nucleo_f042k6
@@ -707,6 +727,7 @@ ST STM32
     ststm32/nucleo_l412kb
     ststm32/nucleo_l432kc
     ststm32/nucleo_l433rc_p
+    ststm32/nucleo_l452re
     ststm32/nucleo_l486rg
     ststm32/nucleo_l476rg
     ststm32/nucleo_l496zg
@@ -738,8 +759,10 @@ ST STM32
     ststm32/genericSTM32F303CB
     ststm32/genericSTM32F407VET6
     ststm32/genericSTM32F407VGT6
+    ststm32/stm32f4stamp
     ststm32/seeedArchMax
     ststm32/wio_3g
+    ststm32/hy_tinystm103tb
     ststm32/ublox_c030_n211
     ststm32/ublox_c030_r410m
     ststm32/ublox_c030_u201

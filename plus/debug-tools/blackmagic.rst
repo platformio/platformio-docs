@@ -243,6 +243,27 @@ Boards
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_armed_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_rumba32_f446ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_remram_v1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F765VIT6
+      - 216MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - :ref:`platform_ststm32`
       - On-board
@@ -495,6 +516,62 @@ Boards
       - 204MHz
       - 8MB
       - 264KB
+    * - :ref:`board_ststm32_black_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407vg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407ze`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_blackpill_f103c8`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_blackpill_f103c8_128`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_blue_f407ve_mini`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_bluepill_f103c6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C6T6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
       - External
@@ -544,6 +621,13 @@ Boards
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_demo_f030f4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F030F4P6
+      - 48MHz
+      - 16KB
+      - 4KB
     * - :ref:`board_atmelsam_digix`
       - :ref:`platform_atmelsam`
       - External
@@ -593,6 +677,20 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_diymore_f407vgt`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_fk407m1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_freescalekinetis_frdm_kl25z`
       - :ref:`platform_freescalekinetis`
       - On-board
@@ -621,6 +719,13 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_ststm32_malyanm200_f070cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
     * - :ref:`board_ststm32_mts_dragonfly_f411re`
       - :ref:`platform_ststm32`
       - External
@@ -635,6 +740,13 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_malyanm200_f103cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103CBT6
+      - 72MHz
+      - 120KB
+      - 20KB
     * - :ref:`board_ststm32_maple`
       - :ref:`platform_ststm32`
       - External
@@ -803,6 +915,20 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_rak811_tracker`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -947,7 +1073,7 @@ Boards
       - :ref:`platform_ststm32`
       - On-board
       - STM32F769NIH6
-      - 80MHz
+      - 216MHz
       - 1MB
       - 512KB
     * - :ref:`board_ststm32_disco_l053c8`
@@ -992,6 +1118,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_f072rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F072RBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -1234,6 +1367,13 @@ Boards
       - :ref:`platform_ststm32`
       - On-board
       - STM32L433RC
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_nucleo_l452re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L452RET6
       - 80MHz
       - 256KB
       - 64KB
@@ -1545,6 +1685,13 @@ Boards
       - 40MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_hy_tinystm103tb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103TBU6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`
       - External

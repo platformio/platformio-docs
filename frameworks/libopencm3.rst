@@ -131,6 +131,18 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_blackpill_f103c8`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_blackpill_f103c8_128`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -167,12 +179,6 @@ Please click on board name for the further details.
       - 72MHz
       - 108KB
       - 17KB
-    * - :ref:`board_ststm32_microduino32_flash`
-      - :ref:`platform_ststm32`
-      - STM32F103CBT6
-      - 72MHz
-      - 105.47KB
-      - 16.60KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -327,6 +333,20 @@ Generic
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_blackpill_f103c8`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_blackpill_f103c8_128`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
       - External
@@ -488,27 +508,6 @@ LeafLabs
       - 72MHz
       - 108KB
       - 17KB
-
-Microduino
-~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_ststm32_microduino32_flash`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F103CBT6
-      - 72MHz
-      - 105.47KB
-      - 16.60KB
 
 ST
 ~~
