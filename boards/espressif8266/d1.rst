@@ -11,8 +11,8 @@
 
 .. _board_espressif8266_d1:
 
-WEMOS D1 R1 (Retired)
-=====================
+WEMOS D1 R1
+===========
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``d1`` ID for :ref:`projectconf_env_board` option in :ref:`projectcon
   platform = espressif8266
   board = d1
 
-You can override default WEMOS D1 R1 (Retired) settings per build environment using
+You can override default WEMOS D1 R1 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `d1.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/d1.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `d1.json <https://github.com/platformio/platform-espressif8266/bl
 
 Uploading
 ---------
-WEMOS D1 R1 (Retired) supports the next uploading protocols:
+WEMOS D1 R1 supports the next uploading protocols:
 
 * ``espota``
 * ``esptool``
@@ -85,7 +85,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support WEMOS D1 R1 (Retired) board.
+:ref:`piodebug` currently does not support WEMOS D1 R1 board.
 
 Frameworks
 ----------
