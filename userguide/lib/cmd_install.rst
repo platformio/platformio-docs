@@ -108,7 +108,7 @@ Suppress progress reporting
 .. option::
     --interactive
 
-Allow to make a choice for all prompts
+Allow one to make a choice for all prompts
 
 .. option::
     -f, --force

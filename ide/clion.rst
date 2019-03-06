@@ -89,7 +89,7 @@ the screenshot above):
   see :ref:`platform_espressif_uploadfs`
 * ``PLATFORMIO_UPDATE`` - Update installed platforms and libraries via :ref:`cmd_update`
 * ``PLATFORMIO_REBUILD_PROJECT_INDEX`` - Rebuild C/C++ Index for the Project.
-  Allows to fix code completion and code linting issues.
+  Allows one to fix code completion and code linting issues.
 
 .. warning::
     The libraries which are added, installed or used in the project

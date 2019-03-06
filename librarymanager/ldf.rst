@@ -144,7 +144,7 @@ there are 2 libraries:
 Compatibility Mode
 ------------------
 
-Compatibility mode allows to control strictness of Library Dependency Finder.
+Compatibility mode allows one to control strictness of Library Dependency Finder.
 If library contains one of manifest file (:ref:`library_config`,
 ``library.properties``, ``module.json``), then LDF check compatibility of this
 library with real build environment. Available compatibility modes:

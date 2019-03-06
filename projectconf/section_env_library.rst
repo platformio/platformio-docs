@@ -180,7 +180,7 @@ Example:
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
-Library compatibility mode allows to control strictness of Library Dependency
+Library compatibility mode allows one to control strictness of Library Dependency
 Finder. More details :ref:`ldf_compat_mode`.
 
 By default, this value is set to ``lib_compat_mode = soft`` and means that LDF

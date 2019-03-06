@@ -107,10 +107,10 @@ role from anywhere in the world.
 
 |PIORemote| is multi-agents and multi-clients system. A single agent can be
 shared with multiple clients, where different clients can use the same agent.
-This approach allows to work with distributed hardware located in the different
+This approach allows one to work with distributed hardware located in the different
 places, networks, etc.
 
-This technology allows to work with remote devices in generic form as you
+This technology allows one to work with remote devices in generic form as you
 do that with local devices using PlatformIO ecosystem. The only one difference
 is a prefix "remote" before each generic PlatformIO command. For example,
 listing of local and remote devices will look like :ref:`cmd_device_list` and

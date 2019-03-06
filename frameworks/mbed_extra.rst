@@ -70,7 +70,7 @@ Build profiles
 
 By default, PlatformIO builds your project using ``develop profile`` which provides optimized 
 firmware size with full error information and allows MCU to go to sleep mode. In the case when
-defalt build profile is not suitable for your project there two other profiles ``release`` and
+default build profile is not suitable for your project there two other profiles ``release`` and
 ``debug`` that can be enabled using special macro definitions. You can change build profile 
 :ref:`projectconf_build_flags` of :ref:`projectconf`:
 

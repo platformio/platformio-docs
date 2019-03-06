@@ -122,7 +122,7 @@ updated commands and options.
     * - :option:`platformio lib install --silent`
       - Suppress progress reporting when install library
     * - :option:`platformio lib install --interactive`
-      - Allow to make a choice for all prompts when install library
+      - Allow one to make a choice for all prompts when install library
     * - :option:`platformio lib search --header`
       - Search library by specific header file name (include)
     * - :option:`platformio lib update --only-check`
@@ -167,7 +167,7 @@ updated options.
       - Specify project dependencies that should be installed automatically to :ref:`projectconf_pio_libdeps_dir` before environment processing.
     * - env
       - :ref:`projectconf_env_platform`
-      - PlatformIO 3.0 allows to use specific version of platform using `Semantic Versioning <http://semver.org>`_ (X.Y.Z=MAJOR.MINOR.PATCH).
+      - PlatformIO 3.0 allows one to use specific version of platform using `Semantic Versioning <http://semver.org>`_ (X.Y.Z=MAJOR.MINOR.PATCH).
     * - env
       - :ref:`projectconf_lib_extra_dirs`
       - A list with extra directories/storages where :ref:`ldf` will look for dependencies
@@ -176,7 +176,7 @@ updated options.
       - This option specifies how does :ref:`ldf` should analyze dependencies (``#include`` directives)
     * - env
       - :ref:`projectconf_lib_compat_mode`
-      - Library compatibility mode allows to control strictness of :ref:`ldf`
+      - Library compatibility mode allows one to control strictness of :ref:`ldf`
     * - env
       - :ref:`projectconf_test_ignore`
       - Ignore tests where the name matches specified patterns

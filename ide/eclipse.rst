@@ -73,7 +73,7 @@ Then:
    + ``PlatformIO: Update platforms and libraries`` - Update installed
      platforms and libraries via :ref:`cmd_update`
    + ``PlatformIO: Rebuild C/C++ Project Index`` - Rebuild C/C++ Index for the Project.
-     Allows to fix code completion and code linting issues.
+     Allows one to fix code completion and code linting issues.
 
 If you have some problems with unresolved includes, defines, etc., then
 

@@ -48,7 +48,7 @@ For more details as for integration with the popular Continuous Integration
 Systems please follow to :ref:`ci` page.
 
 .. note::
-    :ref:`cmd_ci` command is useful for library developers. It allows to build
+    :ref:`cmd_ci` command is useful for library developers. It allows one to build
     different examples without creating own project per them. Also, is possible
     to upload firmware to the target device. In this case, you need to pass
     additional option ``--project-option="targets=upload"``. What is more,
