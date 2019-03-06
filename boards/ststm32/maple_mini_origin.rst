@@ -76,6 +76,10 @@ Maple Mini Original supports the next uploading protocols:
 
 Default protocol is ``dfu``
 
+.. warning::
+    You may need to install Java depending on your system configuration when
+    using the dfu upload protocol.
+
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
