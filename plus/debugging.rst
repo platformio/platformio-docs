@@ -25,9 +25,9 @@ PIO Unified Debugger
   `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/finally-pio-unified-debugger-comes-to-vscode/4091>`_
 
 * "1-click" solution, zero configuration
-* Support for 200+ embedded boards (see below)
+* Support over 300+ embedded boards (see below)
 * Multiple architectures and development platforms
-* Windows, MacOS, Linux (+ARMv6-8)
+* Windows, MacOS, Linux
 * Built-in into :ref:`ide_atom` and :ref:`ide_vscode`
 * Integration with :ref:`ide_eclipse` and :ref:`ide_sublimetext`
 

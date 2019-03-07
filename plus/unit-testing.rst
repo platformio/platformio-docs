@@ -30,10 +30,13 @@ they are fit for use. Unit testing finds problems early in the development cycle
 Demo
 ----
 
-Demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_.
+This is a demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_ which demonstrates running embedded tests on physical hardware
+(:ref:`board_atmelavr_uno`) and native tests on host machine (desktop).
+
+Learn more about :ref:`cmd_test` command.
 
 .. image:: ../_static/images/pioplus-unit-testing-demo.png
-    :target: https://youtu.be/bo3VVRZVKhA
+    :target: https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator
 
 Tutorials and Examples
 ----------------------
