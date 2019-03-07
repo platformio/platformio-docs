@@ -18,7 +18,7 @@ VIM
 editor. Vim is designed for use both from a command-line interface and as a
 standalone application in a graphical user interface.
 
-.. image:: ../_static/ide/vim/ide-platformio-vim.png
+.. image:: ../_static/images/ide/vim/ide-platformio-vim.png
 
 .. contents::
 
@@ -63,22 +63,22 @@ Put to the project directory ``Makefile`` wrapper with contents:
     #PATH := /usr/local/bin:$(PATH)
 
     all:
-        platformio -f -c vim run
+            platformio -f -c vim run
 
     upload:
-        platformio -f -c vim run --target upload
+            platformio -f -c vim run --target upload
 
     clean:
-        platformio -f -c vim run --target clean
+            platformio -f -c vim run --target clean
 
     program:
-        platformio -f -c vim run --target program
+            platformio -f -c vim run --target program
 
     uploadfs:
-        platformio -f -c vim run --target uploadfs
+            platformio -f -c vim run --target uploadfs
 
     update:
-        platformio -f -c vim update
+            platformio -f -c vim update
 
 
 Pre-defined targets:

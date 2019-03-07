@@ -23,7 +23,7 @@ Setting Up the Project
 ----------------------
 
 :ref:`piocore` provides special :ref:`cmd_init` command for configuring your projects.
-It allows to initialize new empty project or update existing with the new data.
+It allows one to initialize new empty project or update existing with the new data.
 
 What is more, :ref:`cmd_init` can be used for :ref:`ide`. It means that you will
 be able to import pre-generated PlatformIO project using favorite IDE and
@@ -92,7 +92,7 @@ pre-installed instruments for the professional development.
 
     .. code-block:: bash
 
-        # create new direcotry
+        # create new directory
         > mkdir path_to_the_new_directory
 
         # go to it
@@ -240,7 +240,7 @@ targets.
 Finally, demo which demonstrates building project and uploading firmware to
 Arduino Uno:
 
-.. image:: _static/platformio-demo-wiring.gif
+.. image:: _static/images/platformio-demo-wiring.gif
 
 Further Reading
 ---------------

@@ -19,7 +19,7 @@ The `Microsoft Visual Studio (Free) <http://visualstudio.com/free>`_ is an integ
 Refer to the `Visual Studio Documentation <https://msdn.microsoft.com/library/vstudio>`_
 page for more detailed information.
 
-.. image:: ../_static/ide/visualstudio/ide-visualstudio-newproject-8.png
+.. image:: ../_static/images/ide/visualstudio/ide-visualstudio-newproject-8.png
     :target: ../_images/ide-visualstudio-newproject-8.png
 
 .. contents::
@@ -58,7 +58,7 @@ Then:
 
 .. warning::
     The libraries which are added, installed or used in the project
-    after generating process wont be reflected in IDE. To fix it you
+    after generating process won't be reflected in IDE. To fix it you
     need to reinitialize project using :ref:`cmd_init` (repeat it).
 
 Manual Integration
@@ -69,19 +69,19 @@ Setup New Project
 
 First of all, let's create new project from Visual Studio Start Page: ``Start > New Project`` or using ``Menu: File > New > Project``, then select project with ``Makefile`` type (``Visual C++ > General > Makefile Project``), fill ``Project name``, ``Solution name``, ``Location`` fields and press OK button.
 
-.. image:: ../_static/ide/visualstudio/ide-visualstudio-newproject.png
+.. image:: ../_static/images/ide/visualstudio/ide-visualstudio-newproject.png
 
 Secondly, we need to configure project with PlatformIO Build System:
 
-.. image:: ../_static/ide/visualstudio/ide-visualstudio-newproject-2.png
+.. image:: ../_static/images/ide/visualstudio/ide-visualstudio-newproject-2.png
 
 If we want to use native AVR programming, we have to specify additional preprocessor symbol ("Preprocessor definitions" field) about your MCU. For example, an Arduino Uno is based on the ATmega328 MCU. In this case We will add new definition  ``__AVR_ATmega328__``.
 
-.. image:: ../_static/ide/visualstudio/ide-visualstudio-newproject-2-1.png
+.. image:: ../_static/images/ide/visualstudio/ide-visualstudio-newproject-2-1.png
 
 Release Configuration is the same as Debug, so on the next step we check "Same as Debug Configuration" and click "Finish" button.
 
-.. image:: ../_static/ide/visualstudio/ide-visualstudio-newproject-3.png
+.. image:: ../_static/images/ide/visualstudio/ide-visualstudio-newproject-3.png
 
 Thirdly, we need to add directories with header files using project properties (right click on the project name or ``Alt-Enter`` shortcut) and add two directories to ``Configuration Properties > NMake > Include Search Path``:
 
@@ -90,7 +90,7 @@ Thirdly, we need to add directories with header files using project properties (
     $(HOMEDRIVE)$(HOMEPATH)\.platformio\packages\toolchain-atmelavr\avr\include
     $(HOMEDRIVE)$(HOMEPATH)\.platformio\packages\framework-arduinoavr\cores\arduino
 
-.. image:: ../_static/ide/visualstudio/ide-visualstudio-newproject-5.png
+.. image:: ../_static/images/ide/visualstudio/ide-visualstudio-newproject-5.png
 
 First program in Visual Studio
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -100,7 +100,7 @@ Simple "Blink" project will consist from two files:
 1. Main "C++" source file named ``main.cpp`` must be located in the ``src`` directory.
 Let's create new file named ``main.cpp`` using ``Menu: File > New File`` or shortcut ``Ctrl+N``:
 
-.. image:: ../_static/ide/visualstudio/ide-visualstudio-newproject-6.png
+.. image:: ../_static/images/ide/visualstudio/ide-visualstudio-newproject-6.png
 
 Copy the source code which is described below to file ``main.cpp``.
 
@@ -124,7 +124,7 @@ Copy the source code which is described below to file ``main.cpp``.
 
 2. Project Configuration File named ``platformio.ini`` must be located in the project root directory.
 
-.. image:: ../_static/ide/visualstudio/ide-visualstudio-newproject-7.png
+.. image:: ../_static/images/ide/visualstudio/ide-visualstudio-newproject-7.png
 
 Copy the source code which is described below to it.
 
@@ -156,7 +156,7 @@ Known issues
 IntelliSense Errors
 ^^^^^^^^^^^^^^^^^^^
 
-VS Studio does not allow to specify for project other toolchain which will
+VS Studio does not allow one to specify for project other toolchain which will
 be used by IntelliSense. In this case, IntelliSense does not understand
 GCC-specific definitions.
 
@@ -169,5 +169,5 @@ GCC constructs and make sure that the GCC will ignore such definitions or
 disable IntelliSense error reporting at all.
 See details in `issue #543 <https://github.com/platformio/platformio-core/issues/543>`_
 
-.. image:: ../_static/ide/visualstudio/ide-visualstudio-newproject-9.png
+.. image:: ../_static/images/ide/visualstudio/ide-visualstudio-newproject-9.png
     :target: ../_images/ide-visualstudio-newproject-9.png

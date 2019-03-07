@@ -33,7 +33,7 @@ server output, and Run apps easily with the built-in Terminal and Runners.
 Demo
 ----
 
-.. image:: ../_static/ide/cloud9/ide-cloud9-demo.jpg
+.. image:: ../_static/images/ide/cloud9/ide-cloud9-demo.jpg
     :target: https://www.youtube.com/watch?v=NX56_0Ea_K8
 
 Integration
@@ -45,7 +45,7 @@ Integration
 
 2.  Create a new workspace using **Blank** template
 
-.. image:: ../_static/ide/cloud9/ide-cloud9-new-workspace.png
+.. image:: ../_static/images/ide/cloud9/ide-cloud9-new-workspace.png
 
 3. Install :ref:`piocore` using Cloud IDE Terminal. Paste a next command
 
@@ -53,7 +53,7 @@ Integration
 
     sudo python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
 
-.. image:: ../_static/ide/cloud9/ide-cloud9-install-pio-cli.png
+.. image:: ../_static/images/ide/cloud9/ide-cloud9-install-pio-cli.png
 
 4.  Log in to :ref:`pioaccount` using :ref:`cmd_account_login` command.
 
@@ -102,7 +102,7 @@ Let's create our first PlatformIO-based Cloud9 Project
             delay(100);
         }
 
-.. image:: ../_static/ide/cloud9/ide-cloud9-init-project.png
+.. image:: ../_static/images/ide/cloud9/ide-cloud9-init-project.png
 
 3.  If you prefer to work with :ref:`piocore` CLI, then you can process project
     using Cloud IDE Terminal and the next commands:
@@ -120,7 +120,7 @@ Let's create our first PlatformIO-based Cloud9 Project
 PlatformIO Build System
 -----------------------
 
-Cloud9 allows to create own build system and use hotkey or command
+Cloud9 allows one to create own build system and use hotkey or command
 (Menu: Run > Build) to build a project.
 
 Let's create PlatformIO Build System that will be used for C/C++/H/INO/PDE
@@ -153,7 +153,7 @@ Please click on ``Menu: Run > Run Configurations > Manage...``, then
 * **Command**: set to ``pio remote device list``
 * **Runner**: set to "Shell command"
 
-.. image:: ../_static/ide/cloud9/ide-cloud9-runner-ota-devices.png
+.. image:: ../_static/images/ide/cloud9/ide-cloud9-runner-ota-devices.png
 
 .. _ide_cloud9_ota_updates:
 
@@ -171,7 +171,7 @@ Please click on ``Menu: Run > Run Configurations > Manage...``, then
 * **Command**: set to ``pio remote run -t upload``
 * **Runner**: set to "Shell command"
 
-.. image:: ../_static/ide/cloud9/ide-cloud9-runner-ota-uploading.png
+.. image:: ../_static/images/ide/cloud9/ide-cloud9-runner-ota-uploading.png
 
 Remote Serial Port Monitor
 --------------------------
@@ -189,7 +189,7 @@ Please click on ``Menu: Run > Run Configurations > Manage...``, then
 * **Command**: set to ``pio remote device monitor``
 * **Runner**: set to "Shell command"
 
-.. image:: ../_static/ide/cloud9/ide-cloud9-runner-ota-serial-monitor.png
+.. image:: ../_static/images/ide/cloud9/ide-cloud9-runner-ota-serial-monitor.png
 
 Multi-Project workspace
 -----------------------

@@ -63,6 +63,26 @@ board manifest `esp12e.json <https://github.com/platformio/platform-espressif826
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+Espressif ESP8266 ESP-12E supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:esp12e]
+  platform = espressif8266
+  board = esp12e
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Espressif ESP8266 ESP-12E board.

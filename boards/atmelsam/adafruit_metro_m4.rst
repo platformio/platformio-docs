@@ -69,7 +69,6 @@ Uploading
 Adafruit Metro M4 (SAMD51) supports the next uploading protocols:
 
 * ``atmel-ice``
-* ``blackmagic``
 * ``jlink``
 * ``sam-ba``
 
@@ -109,9 +108,6 @@ Adafruit Metro M4 (SAMD51) does not have on-board debug probe and **IS NOT READY
   * - :ref:`debugging_tool_atmel-ice`
     - 
     - Yes
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

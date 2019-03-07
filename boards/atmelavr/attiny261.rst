@@ -11,7 +11,7 @@
 
 .. _board_atmelavr_attiny261:
 
-Generic ATTiny261
+Generic ATtiny261
 =================
 
 .. contents::
@@ -46,7 +46,7 @@ Please use ``attiny261`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   platform = atmelavr
   board = attiny261
 
-You can override default Generic ATTiny261 settings per build environment using
+You can override default Generic ATtiny261 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `attiny261.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny261.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -65,7 +65,7 @@ board manifest `attiny261.json <https://github.com/platformio/platform-atmelavr/
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATTiny261 board.
+:ref:`piodebug` currently does not support Generic ATtiny261 board.
 
 Frameworks
 ----------

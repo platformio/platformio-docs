@@ -38,7 +38,6 @@ Examples are listed from `Espressif 8266 development platform repository <https:
 * `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
 * `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
 * `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
-* `native-sdk <https://github.com/platformio/platform-espressif8266/tree/master/examples/native-sdk?utm_source=platformio&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
@@ -93,9 +92,6 @@ Packages
 
     * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
       - Simba Framework
-
-    * - `sdk-esp8266 <http://bbs.espressif.com?utm_source=platformio&utm_medium=docs>`__
-      - ESP8266 SDK
 
     * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py?utm_source=platformio&utm_medium=docs>`__
       - ESP8266 OTA utility
@@ -356,7 +352,7 @@ Espressif
       - No
       - ESP8266
       - 80MHz
-      - 423.98KB
+      - 1MB
       - 80KB
     * - :ref:`board_espressif8266_phoenix_v1`
       - No
@@ -390,6 +386,25 @@ Heltec
       - Flash
       - RAM
     * - :ref:`board_espressif8266_heltec_wifi_kit_8`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
+Invent One
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_inventone`
       - No
       - ESP8266
       - 80MHz

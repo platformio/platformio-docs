@@ -20,6 +20,24 @@ Drivers
 
 See "Drivers" section for :ref:`debugging_tool_ftdi` debug probe.
 
+AutoTiler
+~~~~~~~~~
+
+You need GAP8 AutoTiler library, please request it via
+`support@greenwaves-technologies.com <mailto:support@greenwaves-technologies.com>`_
+
+Put a library somewhere on a disk and add this folder to library path using
+:ref:`projectconf_build_flags` in :ref:`projectconf`. For example,
+
+  .. code-block:: ini
+
+    [env:gapuino]
+    platform = riscv_gap
+    board = gapuino
+    framework = ...
+    build_flags = -L/path/to/libtile/folder
+
+
 Running modes
 ~~~~~~~~~~~~~
 

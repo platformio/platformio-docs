@@ -32,7 +32,7 @@ Demo
 
 Demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_.
 
-.. image:: ../_static/pioplus-unit-testing-demo.png
+.. image:: ../_static/images/pioplus-unit-testing-demo.png
     :target: https://youtu.be/bo3VVRZVKhA
 
 Tutorials and Examples
@@ -180,7 +180,7 @@ Workflow
    calls.
 
    .. warning::
-     If your board does not support software reseting via ``Serial.DTR/RTS``,
+     If your board does not support software resetting via ``Serial.DTR/RTS``,
      you should add >2 seconds delay before ``UNITY_BEGIN()`.
      That time is needed to establish a ``Serial`` connection between a host
      machine and a target device.
@@ -194,7 +194,7 @@ Workflow
 
 4. Place a test in the ``test`` directory. If you have more than one test,
    split them into sub-folders. For example, ``test/test_1/*.[c,cpp,h]``,
-   ``test_N/*.[c,cpp,h]``, etc. If there is no such directory in the ``test``folder,
+   ``test_N/*.[c,cpp,h]``, etc. If there is no such directory in the ``test`` folder,
    then |PIOUTE| will treat the source code of ``test`` folder as SINGLE test.
 5. Run test using the :ref:`cmd_test` command.
 

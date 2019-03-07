@@ -20,7 +20,7 @@ list is available:
 * `Embedded Boards Explorer <https://platformio.org/boards>`_ (Web)
 * :ref:`cmd_boards` (CLI command)
 
-Nevertheless, PlatformIO allows to create own board or override existing
+Nevertheless, PlatformIO allows one to create own board or override existing
 board's settings. All data is declared using
 `JSON-style <http://en.wikipedia.org/wiki/JSON>`_ via
 `associative array <http://en.wikipedia.org/wiki/Associative_array>`_

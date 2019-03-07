@@ -119,6 +119,12 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_armed_v1`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
       - STM32F417VGT6
@@ -137,12 +143,78 @@ Please click on board name for the further details.
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_black_f407ve`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407vg`
+      - :ref:`platform_ststm32`
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407ze`
+      - :ref:`platform_ststm32`
+      - STM32F407ZET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_blackpill_f103c8`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_blackpill_f103c8_128`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_blue_f407ve_mini`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_bluepill_f103c6`
+      - :ref:`platform_ststm32`
+      - STM32F103C6T6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
       - 72MHz
       - 64KB
       - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_diymore_f407vgt`
+      - :ref:`platform_ststm32`
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_fk407m1`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
 
 
 Examples
@@ -190,6 +262,27 @@ Boards
       - 1MB
       - 128KB
 
+Armed
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_armed_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+
 Armstrap
 ~~~~~~~~
 
@@ -225,6 +318,27 @@ Armstrap
       - 512KB
       - 192KB
 
+Diymore
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_diymore_f407vgt`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
+
 Generic
 ~~~~~~~
 
@@ -238,6 +352,27 @@ Generic
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_blackpill_f103c8`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_blackpill_f103c8_128`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C6T6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
       - External
@@ -245,6 +380,20 @@ Generic
       - 72MHz
       - 64KB
       - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_fk407m1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
 
 RushUp
 ~~~~~~
@@ -280,6 +429,41 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_black_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407vg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407ze`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_blue_f407ve_mini`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f401re`
       - :ref:`platform_ststm32`
       - On-board

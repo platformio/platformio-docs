@@ -15,6 +15,42 @@ Configuration
 .. contents::
     :local:
 
+Optimization
+~~~~~~~~~~~~
+
+(valid only for Teensy LC, Teensy 3.0-3.6)
+
+You can control firmware optimization via special macro/define
+using :ref:`projectconf_build_flags` in :ref:`projectconf`:
+
+* ``-D TEENSY_OPT_FASTER``, **default**
+* ``-D TEENSY_OPT_FASTER_LTO``
+* ``-D TEENSY_OPT_FAST``
+* ``-D TEENSY_OPT_FAST_LTO``
+* ``-D TEENSY_OPT_FASTEST``
+* ``-D TEENSY_OPT_FASTEST_LTO``
+* ``-D TEENSY_OPT_FASTEST_PURE_CODE``, valid only for Teensy 3.5-3.6
+* ``-D TEENSY_OPT_FASTEST_PURE_CODE_LTO``, valid only for Teensy 3.5-3.6
+* ``-D TEENSY_OPT_DEBUG``
+* ``-D TEENSY_OPT_DEBUG_LTO``
+* ``-D TEENSY_OPT_SMALLEST_CODE``
+* ``-D TEENSY_OPT_SMALLEST_CODE_LTO``
+
+The only one macro can be used in per one build environment. Also, you can see
+verbose build using ``-v, --verbose`` option for :ref:`cmd_run` command.
+
+Example:
+
+Let's set optimization for the smallest code
+
+.. code-block:: ini
+
+    [env:teensy_hid_device]
+    platform = teensy
+    framework = arduino
+    board = teensy36
+    build_flags = -D TEENSY_OPT_SMALLEST_CODE
+
 USB Features
 ~~~~~~~~~~~~
 

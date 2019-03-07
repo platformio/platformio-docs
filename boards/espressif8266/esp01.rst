@@ -63,6 +63,26 @@ board manifest `esp01.json <https://github.com/platformio/platform-espressif8266
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+Espressif Generic ESP8266 ESP-01 512k supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:esp01]
+  platform = espressif8266
+  board = esp01
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Espressif Generic ESP8266 ESP-01 512k board.

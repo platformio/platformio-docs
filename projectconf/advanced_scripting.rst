@@ -35,7 +35,7 @@ Advanced Scripting
 
 .. contents::
 
-PlatformIO Build System allows to extend build process with the custom
+PlatformIO Build System allows one to extend build process with the custom
 :ref:`projectconf_extra_scripts` using Python interpreter and
 `SCons <http://www.scons.org>`_ construction tool.
 Build and upload flags, targets, toolchains data, and other information are
@@ -156,7 +156,7 @@ data or add new.
 Before/Pre and After/Post actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO Build System has rich API that allows to attach different pre-/post
+PlatformIO Build System has rich API that allows one to attach different pre-/post
 actions (hooks) using ``env.AddPreAction(target, callback)`` or
 ``env.AddPreAction(target, [callback1, callback2, ...])`` function. A first
 argument ``target`` can be a name of target that is passed using

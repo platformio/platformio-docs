@@ -249,6 +249,12 @@ Alorium Technology
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelavr_alorium_hinj`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
     * - :ref:`board_atmelavr_alorium_sno`
       - No
       - ATMEGA328P
@@ -589,6 +595,12 @@ Atmel
       - 8MHz
       - 4KB
       - 256B
+    * - :ref:`board_atmelavr_attiny43`
+      - No
+      - ATTINY43U
+      - 8MHz
+      - 4KB
+      - 256B
     * - :ref:`board_atmelavr_attiny44`
       - No
       - ATTINY44
@@ -686,6 +698,25 @@ BQ
       - 16MHz
       - 28KB
       - 2KB
+
+BSFrance
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_lora32u4II`
+      - No
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
 
 BitWizard
 ~~~~~~~~~

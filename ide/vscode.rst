@@ -24,7 +24,7 @@ Windows, macOS and Linux. It comes with built-in support for JavaScript,
 TypeScript and Node.js and has a rich ecosystem of extensions for other
 languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unity)
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode.png
     :target: ../_images/platformio-ide-vscode.png
 
 .. contents:: Contents
@@ -44,7 +44,7 @@ Installation
 2. **Search** for official ``platformio-ide`` `extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-pkg-installer.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode-pkg-installer.png
 
 Quick Start
 -----------
@@ -58,11 +58,11 @@ Setting Up the Project
 
 1. Click on "PlatformIO Home" button on the bottom :ref:`ide_vscode_toolbar`
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-welcome.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode-welcome.png
 
 2. Click on "New Project", select a board and create new PlatformIO Project
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-new-project.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode-new-project.png
 
 3. Open ``main.cpp`` file form ``src`` folder and replace its contents with
    the next:
@@ -106,12 +106,12 @@ Setting Up the Project
       delay(1000);
     }
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-blink-project.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode-blink-project.png
 
 4. Build your project with ``ctrl+alt+b`` hotkey (see all Key Bindings in
    "User Guide" section below) or using "Build" button on the :ref:`ide_vscode_toolbar`
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-build-project.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode-build-project.png
 
 
 ---------------
@@ -133,7 +133,7 @@ PlatformIO IDE Toolbar is located in VSCode Status Bar (left corner)
 and contains quick access buttons for the popular commands.
 Each button contains hint (delay mouse on it).
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-toolbar.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode-toolbar.png
 
 1. :ref:`piohome`
 2. PlatformIO: Build
@@ -180,7 +180,7 @@ Project Task Explorer is located in VSCode Activity Bar under branded
 PlatformIO icon. You can also access it via "VSCode Menu > Open View... >
 PlatformIO".
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-task-explorer.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode-task-explorer.png
 
 Task Runner
 ~~~~~~~~~~~
@@ -234,50 +234,52 @@ its commands (:ref:`userguide`).
 
 .. code-block:: json
 
-  {
-      "version": "2.0.0",
-      "tasks": [
-          {
-              "type": "shell",
-              "command": "platformio",
-              "args": [
-                  "run",
-                  "--verbose"
-              ],
-              "problemMatcher": [
-                  "$platformio"
-              ],
-              "label": "PlatformIO: Verbose Build"
-          }
-      ]
-  }
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "type": "shell",
+                "command": "platformio",
+                "args": [
+                    "device",
+                    "monitor",
+                    "--echo"
+                ],
+                "problemMatcher": [
+                    "$platformio"
+                ],
+                "label": "PlatformIO: Monitor (local echo)"
+            }
+        ]
+    }
 
 If ``platformio`` executable file is not in your system environment "PATH", you
-can provide a path to binary folder using ``options`` field for task. For example,
+can provide a full path to binary folder using ``options`` field for task. For example,
 ``platformio`` binary is located in home folder "~/.platformio/penv/bin":
 
 .. code-block:: json
 
-  {
-      "version": "2.0.0",
-      "tasks": [
-          {
-              "type": "shell",
-              "command": "platformio",
-              "args": [
-                  "run",
-                  "--verbose"
-              ],
-              "problemMatcher": [
-                  "$platformio"
-              ],
-              "label": "PlatformIO: Verbose Build",
-              "options": {
-                  "env": {"PATH": "~/.platformio/penv/bin"}
-              }
-          }
-      ]
-  }
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "type": "shell",
+                "command": "platformio",
+                "args": [
+                    "device",
+                    "monitor",
+                    "--echo"
+                ],
+                "problemMatcher": [
+                    "$platformio"
+                ],
+                "label": "PlatformIO: Monitor (local echo)",
+                "options": {
+                    "env": {"PATH": "${env:HOME}/.platformio/penv/bin"}
+                }
+            }
+        ]
+    }
 
 Multi-project Workspaces
 ------------------------
@@ -353,7 +355,7 @@ There are 2 pre-configured debugging configurations:
   environment in :ref:`projectconf` if :ref:`projectconf_pio_env_default` option
   is not specified.
 
-.. image:: ../_static/ide/vscode/platformio-ide-vscode-debug.png
+.. image:: ../_static/images/ide/vscode/platformio-ide-vscode-debug.png
 
 Variable Format
 ~~~~~~~~~~~~~~~

@@ -52,6 +52,7 @@ Atmel AVR
     atmelavr/protrinket5
     atmelavr/trinket3
     atmelavr/trinket5
+    atmelavr/alorium_hinj
     atmelavr/alorium_sno
     atmelavr/alorium_xlr8
     atmelavr/altair
@@ -118,6 +119,7 @@ Atmel AVR
     atmelavr/attiny25
     atmelavr/attiny261
     atmelavr/attiny4313
+    atmelavr/attiny43
     atmelavr/attiny44
     atmelavr/attiny441
     atmelavr/attiny45
@@ -135,6 +137,7 @@ Atmel AVR
     atmelavr/lightup
     atmelavr/one
     atmelavr/smart7688
+    atmelavr/lora32u4II
     atmelavr/mightyhat
     atmelavr/moteino
     atmelavr/moteino8mhz
@@ -214,15 +217,18 @@ Atmel SAM
     :maxdepth: 1
         
     atmelsam/adafruit_circuitplayground_m0
+    atmelsam/adafruit_crickit_m0
     atmelsam/adafruit_feather_m0
     atmelsam/adafruit_feather_m0_express
     atmelsam/adafruit_feather_m4
     atmelsam/adafruit_gemma_m0
+    atmelsam/adafruit_grandcentral_m4
     atmelsam/adafruit_hallowing
     atmelsam/adafruit_itsybitsy_m0
     atmelsam/adafruit_itsybitsy_m4
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
+    atmelsam/adafruit_trellis_m4
     atmelsam/adafruit_trinket_m0
     atmelsam/adafruit_pirkey
     atmelsam/due
@@ -232,6 +238,7 @@ Atmel SAM
     atmelsam/mzeropro
     atmelsam/mkrfox1200
     atmelsam/mkrgsm1400
+    atmelsam/mkrnb1500
     atmelsam/mkrwan1300
     atmelsam/mkrwifi1010
     atmelsam/mkr1000USB
@@ -244,6 +251,7 @@ Atmel SAM
     atmelsam/samd21_xpro
     atmelsam/saml21_xpro_b
     atmelsam/digix
+    atmelsam/current_ranger
     atmelsam/macchina2
     atmelsam/moteino_zero
     atmelsam/sodaq_autonomo
@@ -337,6 +345,7 @@ Espressif 8266
     espressif8266/esp07
     espressif8266/esp8285
     espressif8266/heltec_wifi_kit_8
+    espressif8266/inventone
     espressif8266/nodemcu
     espressif8266/nodemcuv2
     espressif8266/modwifi
@@ -510,7 +519,6 @@ Nordic nRF51
     nordicnrf51/nrf51_dongle
     nordicnrf51/nrf51_mkit
     nordicnrf51/oshchip
-    nordicnrf51/rfduino
     nordicnrf51/redBearLabBLENano
     nordicnrf51/redBearLab
     nordicnrf51/seeedArchBLE
@@ -530,10 +538,13 @@ Nordic nRF52
 .. toctree::
     :maxdepth: 1
         
+    nordicnrf52/adafruit_feather_nrf52832
+    nordicnrf52/adafruit_feather_nrf52840
     nordicnrf52/bluey
     nordicnrf52/delta_dfbm_nq620
     nordicnrf52/nrf52_dk
     nordicnrf52/nrf52840_dk
+    nordicnrf52/nrf52840_dk_adafruit
     nordicnrf52/redbear_blenano2
     nordicnrf52/redbear_blend2
     nordicnrf52/stct_nrf52_minidev
@@ -626,13 +637,30 @@ ST STM32
     :maxdepth: 1
         
     ststm32/1bitsy_stm32f415rgt
+    ststm32/armed_v1
+    ststm32/rumba32_f446ve
+    ststm32/remram_v1
     ststm32/b96b_f446ve
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
     ststm32/armstrap_eagle512
+    ststm32/black_f407ve
+    ststm32/black_f407vg
+    ststm32/black_f407zg
+    ststm32/black_f407ze
+    ststm32/blackpill_f103c8
+    ststm32/blackpill_f103c8_128
+    ststm32/blue_f407ve_mini
+    ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
+    ststm32/bluepill_f103c8_128k
+    ststm32/demo_f030f4
     ststm32/elmo_f411re
+    ststm32/diymore_f407vgt
+    ststm32/fk407m1
+    ststm32/malyanm200_f070cb
     ststm32/mts_dragonfly_f411re
+    ststm32/malyanm200_f103cb
     ststm32/maple
     ststm32/maple_ret6
     ststm32/maple_mini_b20
@@ -643,7 +671,10 @@ ST STM32
     ststm32/mts_mdot_f405rg
     ststm32/mts_mdot_f411re
     ststm32/xdot_l151cc
+    ststm32/netduino2plus
     ststm32/mote_l152rc
+    ststm32/rak811_tracker_32
+    ststm32/rak811_tracker
     ststm32/cloud_jam
     ststm32/cloud_jam_l4
     ststm32/disco_f334c8
@@ -660,6 +691,7 @@ ST STM32
     ststm32/disco_l496ag
     ststm32/disco_l072cz_lrwan1
     ststm32/disco_l475vg_iot01a
+    ststm32/disco_f072rb
     ststm32/nucleo_f030r8
     ststm32/nucleo_f031k6
     ststm32/nucleo_f042k6
@@ -692,8 +724,10 @@ ST STM32
     ststm32/nucleo_l053r8
     ststm32/nucleo_l073rz
     ststm32/nucleo_l152re
+    ststm32/nucleo_l412kb
     ststm32/nucleo_l432kc
     ststm32/nucleo_l433rc_p
+    ststm32/nucleo_l452re
     ststm32/nucleo_l486rg
     ststm32/nucleo_l476rg
     ststm32/nucleo_l496zg
@@ -722,10 +756,13 @@ ST STM32
     ststm32/genericSTM32F103ZC
     ststm32/genericSTM32F103ZD
     ststm32/genericSTM32F103ZE
+    ststm32/genericSTM32F303CB
     ststm32/genericSTM32F407VET6
     ststm32/genericSTM32F407VGT6
+    ststm32/stm32f4stamp
     ststm32/seeedArchMax
     ststm32/wio_3g
+    ststm32/hy_tinystm103tb
     ststm32/ublox_c030_n211
     ststm32/ublox_c030_r410m
     ststm32/ublox_c030_u201

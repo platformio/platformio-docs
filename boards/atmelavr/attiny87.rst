@@ -11,7 +11,7 @@
 
 .. _board_atmelavr_attiny87:
 
-Generic ATTiny87
+Generic ATtiny87
 ================
 
 .. contents::
@@ -46,7 +46,7 @@ Please use ``attiny87`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   platform = atmelavr
   board = attiny87
 
-You can override default Generic ATTiny87 settings per build environment using
+You can override default Generic ATtiny87 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `attiny87.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny87.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -65,7 +65,7 @@ board manifest `attiny87.json <https://github.com/platformio/platform-atmelavr/b
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATTiny87 board.
+:ref:`piodebug` currently does not support Generic ATtiny87 board.
 
 Frameworks
 ----------

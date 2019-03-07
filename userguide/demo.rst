@@ -20,7 +20,7 @@ Demo
 "Blink Project"
 ---------------
 
-.. image:: ../_static/platformio-demo-wiring.gif
+.. image:: ../_static/images/platformio-demo-wiring.gif
 
 Used in demo
 ~~~~~~~~~~~~
@@ -32,7 +32,7 @@ Used in demo
 Platform Manager
 ----------------
 
-.. image:: ../_static/platformio-demo-platforms.gif
+.. image:: ../_static/images/platformio-demo-platforms.gif
 
 Used in demo
 ~~~~~~~~~~~~
@@ -46,7 +46,7 @@ Used in demo
 Library Manager
 ---------------
 
-.. image:: ../_static/platformio-demo-lib.gif
+.. image:: ../_static/images/platformio-demo-lib.gif
 
 Used in demo
 ~~~~~~~~~~~~
@@ -64,7 +64,7 @@ Used in demo
 Over-the-Air update for ESP8266
 -------------------------------
 
-.. image:: ../_static/platformio-demo-ota-esp8266.jpg
+.. image:: ../_static/images/platformio-demo-ota-esp8266.jpg
     :target: https://www.youtube.com/watch?v=lXchL3hpDO4
 
 Used in demo

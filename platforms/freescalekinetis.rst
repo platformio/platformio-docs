@@ -36,6 +36,7 @@ Examples are listed from `Freescale Kinetis development platform repository <htt
 * `mbed-events <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos-ethernet <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-tls-client <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-tls-client?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
 Debugging

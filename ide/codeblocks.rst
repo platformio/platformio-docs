@@ -22,7 +22,7 @@ oriented towards C, C++, and Fortran.
 
 CodeBlocks IDE can be downloaded from `here <http://www.codeblocks.org/downloads>`_.
 
-.. image:: ../_static/ide/codeblocks/ide-platformio-codeblocks.png
+.. image:: ../_static/images/ide/codeblocks/ide-platformio-codeblocks.png
     :target: ../_images/ide-platformio-codeblocks.png
 
 .. contents::
@@ -59,5 +59,5 @@ Then:
 
 .. warning::
     The libraries which are added, installed or used in the project
-    after generating process wont be reflected in IDE. To fix it you
+    after generating process won't be reflected in IDE. To fix it you
     need to reinitialize project using :ref:`cmd_init` (repeat it).

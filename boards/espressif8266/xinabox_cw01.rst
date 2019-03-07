@@ -63,6 +63,26 @@ board manifest `xinabox_cw01.json <https://github.com/platformio/platform-espres
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+XinaBox CW01 supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:xinabox_cw01]
+  platform = espressif8266
+  board = xinabox_cw01
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support XinaBox CW01 board.

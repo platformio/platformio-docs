@@ -73,7 +73,7 @@ ST Nucleo H743ZI supports the next uploading protocols:
 * ``mbed``
 * ``stlink``
 
-Default protocol is ``mbed``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
@@ -83,7 +83,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
   platform = ststm32
   board = nucleo_h743zi
 
-  upload_protocol = mbed
+  upload_protocol = stlink
 
 Debugging
 ---------
@@ -123,6 +123,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

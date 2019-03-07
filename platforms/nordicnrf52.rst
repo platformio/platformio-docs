@@ -34,6 +34,7 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 
 * `arduino-ble-led <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-ble-led?utm_source=platformio&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-bluefruit-bleuart <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-bluefruit-bleuart?utm_source=platformio&utm_medium=docs>`_
 * `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-ble-thermometer?utm_source=platformio&utm_medium=docs>`_
 * `mbed-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
@@ -79,6 +80,16 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - NRF52832
       - 64MHz
@@ -94,6 +105,11 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_redbear_blenano2`
       - NRF52832
       - 64MHz
@@ -185,6 +201,9 @@ Packages
     * - Name
       - Description
 
+    * - `framework-arduinoadafruitnrf52 <https://github.com/adafruit/Adafruit_nRF52_Arduino?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Nordic nRF52 BLE SoC))
+
     * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (Nordic NRF5 Core)
 
@@ -242,6 +261,31 @@ Boards
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
+
+Adafruit
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 Delta
 ~~~~~
@@ -311,6 +355,12 @@ Nordic
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 RedBearLab
 ~~~~~~~~~~

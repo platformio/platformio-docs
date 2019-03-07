@@ -63,6 +63,26 @@ board manifest `gen4iod.json <https://github.com/platformio/platform-espressif82
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+4D Systems gen4 IoD Range supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:gen4iod]
+  platform = espressif8266
+  board = gen4iod
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support 4D Systems gen4 IoD Range board.

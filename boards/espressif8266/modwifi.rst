@@ -63,6 +63,26 @@ board manifest `modwifi.json <https://github.com/platformio/platform-espressif82
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+Olimex MOD-WIFI-ESP8266(-DEV) supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:modwifi]
+  platform = espressif8266
+  board = modwifi
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Olimex MOD-WIFI-ESP8266(-DEV) board.

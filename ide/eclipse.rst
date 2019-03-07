@@ -27,7 +27,7 @@ registers, and disassembly viewers.
 Refer to the `CDT Documentation <https://eclipse.org/cdt/documentation.php>`_
 page for more detailed information.
 
-.. image:: ../_static/ide/eclipse/ide-platformio-eclipse.png
+.. image:: ../_static/images/ide/eclipse/ide-platformio-eclipse.png
     :target: ../_images/ide-platformio-eclipse.png
 
 .. contents:: Contents
@@ -73,7 +73,7 @@ Then:
    + ``PlatformIO: Update platforms and libraries`` - Update installed
      platforms and libraries via :ref:`cmd_update`
    + ``PlatformIO: Rebuild C/C++ Project Index`` - Rebuild C/C++ Index for the Project.
-     Allows to fix code completion and code linting issues.
+     Allows one to fix code completion and code linting issues.
 
 If you have some problems with unresolved includes, defines, etc., then
 
@@ -85,7 +85,7 @@ If you have some problems with unresolved includes, defines, etc., then
 
 .. warning::
     The libraries which are added, installed or used in the project
-    after generating process wont be reflected in IDE. To fix it please run
+    after generating process won't be reflected in IDE. To fix it please run
     ``PlatformIO: Rebuild C/C++ Project Index`` target and right click on the
     project and ``Project > Refresh`` (F5).
 
@@ -104,7 +104,7 @@ Live Integration
 
 Eclipse Virtual IoT Meetup: `PlatformIO: a cross-platform IoT solution to build them all! <http://www.meetup.com/Virtual-IoT/events/229964142/>`_
 
-.. image:: ../_static/ide/eclipse/ide-eclipse-virtualiot.jpg
+.. image:: ../_static/images/ide/eclipse/ide-eclipse-virtualiot.jpg
     :target: https://www.youtube.com/watch?v=6t7UbX812Yw
 
 Debugging

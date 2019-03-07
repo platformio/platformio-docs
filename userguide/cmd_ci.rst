@@ -48,7 +48,7 @@ For more details as for integration with the popular Continuous Integration
 Systems please follow to :ref:`ci` page.
 
 .. note::
-    :ref:`cmd_ci` command is useful for library developers. It allows to build
+    :ref:`cmd_ci` command is useful for library developers. It allows one to build
     different examples without creating own project per them. Also, is possible
     to upload firmware to the target device. In this case, you need to pass
     additional option ``--project-option="targets=upload"``. What is more,
@@ -114,16 +114,20 @@ Don't remove :option:`platformio ci --build-dir` after build process.
 .. option::
     -P, --project-conf
 
-Buid project using pre-configured :ref:`projectconf`.
+Build project using pre-configured :ref:`projectconf`.
 
 .. option::
     -O, --project-option
 
 Pass additional options from :ref:`projectconf` to :ref:`cmd_init` command.
-Use multiple ``--project-option`` options to pass multiple options to
-:ref:`cmd_init` command. For example, automatically install dependent libraries
+For example, automatically install dependent libraries
 ``platformio ci --project-option="lib_deps=ArduinoJSON"`` or ignore specific
 library ``platformio ci --project-option="lib_ignore=SomeLib"``.
+
+.. note::
+    Use multiple ``--project-option`` to pass multiple options to
+    :ref:`projectconf`. One option per one argument. For example,
+    ``platformio ci --project-option="build_unflags = -std=gnu++11" --project-option="build_flags = -std=c++14"``
 
 .. option::
     -v, --verbose

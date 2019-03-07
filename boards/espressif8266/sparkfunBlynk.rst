@@ -63,6 +63,26 @@ board manifest `sparkfunBlynk.json <https://github.com/platformio/platform-espre
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+SparkFun Blynk Board supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:sparkfunBlynk]
+  platform = espressif8266
+  board = sparkfunBlynk
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support SparkFun Blynk Board board.

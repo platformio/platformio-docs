@@ -25,7 +25,7 @@ NetBeans IDE can be downloaded from `here <https://netbeans.org/downloads/>`_.
 Just make sure you download the C/C++ version (or if you already use NetBeans,
 install the C/C++ development plugins).
 
-.. image:: ../_static/ide/netbeans/ide-platformio-netbeans.png
+.. image:: ../_static/images/ide/netbeans/ide-platformio-netbeans.png
     :target: ../_images/ide-platformio-netbeans.png
 
 .. contents::
@@ -62,7 +62,7 @@ Then:
 
 .. warning::
     The libraries which are added, installed or used in the project
-    after generating process wont be reflected in IDE. To fix it you
+    after generating process won't be reflected in IDE. To fix it you
     need to reinitialize project using :ref:`cmd_init` (repeat it).
 
 Articles / Manuals

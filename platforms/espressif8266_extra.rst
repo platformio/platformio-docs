@@ -121,11 +121,13 @@ lwIP Variant
 
 Available variants (macros):
 
-* ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth
 * ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY`` v2 Lower Memory **(default)**
 * ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH`` v2 Higher Bandwidth
-* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY_LOW_FLASH``
-* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH_LOW_FLASH``
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY_LOW_FLASH`` v2 Lower Memory (no features)
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH_LOW_FLASH`` v2 Higher Bandwidth (no features)
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_IPV6_LOW_MEMORY`` v2 IPv6 Lower Memory
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_IPV6_HIGHER_BANDWIDTH`` v2 IPv6 Higher Bandwidth
+* ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth
 
 You can change lwIP Variant passing a custom macro using project
 :ref:`projectconf_build_flags`.
@@ -169,7 +171,7 @@ with :ref:`platform_espressif8266_serial_debug` macro. For example,
 ``build_flags = -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_SSL ...``.
 
 Actual information is available in `Arduino for ESP8266 Board Manifest <https://github.com/esp8266/Arduino/blob/master/boards.txt#L286>`_.
-Please scroll to ``generic.menu.DebugLevel`` section.
+Please scroll to ``generic.menu.lvl`` section.
 
 
 .. code-block:: ini
@@ -365,9 +367,13 @@ There are 2 options:
 
 * Specify ``upload_port`` option in :ref:`projectconf`
 
+
+You also need to set :ref:`projectconf_upload_port` to ``espota``.
+
 .. code-block:: ini
 
    [env:myenv]
+   upload_protocol = espota
    upload_port = IP_ADDRESS_HERE or mDNS_NAME.local
 
 For example,
@@ -384,6 +390,7 @@ You can pass additional options/flags to OTA uploader using
 .. code-block:: ini
 
     [env:myenv]
+    upload_protocol = espota
     ; each flag in a new line
     upload_flags =
       --port=8266
@@ -435,7 +442,7 @@ For the full list with available options please run
 Demo
 ~~~~
 
-.. image:: ../_static/platformio-demo-ota-esp8266.jpg
+.. image:: ../_static/images/platformio-demo-ota-esp8266.jpg
     :target: https://www.youtube.com/watch?v=lXchL3hpDO4
 
 

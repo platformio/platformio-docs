@@ -23,7 +23,7 @@ automated refactorings, project manager, integrated version control systems.
 Refer to the `CLion Documentation <https://www.jetbrains.com/clion/documentation/>`_
 page for more detailed information.
 
-.. image:: ../_static/ide/clion/ide-platformio-clion.png
+.. image:: ../_static/images/ide/clion/ide-platformio-clion.png
     :target: ../_images/ide-platformio-clion.png
 
 .. contents:: Contents
@@ -34,10 +34,13 @@ Integration
 
 Integration process consists of these steps:
 
-1. Open system Terminal and install :ref:`piocore`
-2. Create new folder for your project and change directory (``cd``) to it
-3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
-4. Import project in IDE.
+1. Install `File Watchers <https://plugins.jetbrains.com/plugin/7177-file-watchers>`_
+   plugin via "Clion: Preferences > Plugins". We need it to automatically
+   update project configuration when changes are made in :ref:`projectconf`
+2. Open system Terminal and install :ref:`piocore`
+3. Create new folder for your project and change directory (``cd``) to it
+4. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+5. Import project in IDE.
 
 ------------
 
@@ -75,8 +78,10 @@ There are 6 predefined targets for building (*NOT FOR RUNNING*, see marks on
 the screenshot above):
 
 * ``PLATFORMIO_BUILD`` - Build project without auto-uploading
+* ``PLATFORMIO_BUILD_VERBOSE`` - Build project without auto-uploading in verbose mode
 * ``PLATFORMIO_UPLOAD`` - Build and upload (if no errors)
 * ``PLATFORMIO_CLEAN`` - Clean compiled objects
+* ``PLATFORMIO_MONITOR`` - Device monitor :ref:`cmd_device_monitor`
 * ``PLATFORMIO_TEST`` - :ref:`unit_testing`
 * ``PLATFORMIO_PROGRAM`` - Build and upload using external programmer
   (if no errors), see :ref:`atmelavr_upload_via_programmer`
@@ -84,13 +89,7 @@ the screenshot above):
   see :ref:`platform_espressif_uploadfs`
 * ``PLATFORMIO_UPDATE`` - Update installed platforms and libraries via :ref:`cmd_update`
 * ``PLATFORMIO_REBUILD_PROJECT_INDEX`` - Rebuild C/C++ Index for the Project.
-  Allows to fix code completion and code linting issues.
-
-
-PlatformIO Project Generator created "File Watchers" configuration to monitor
-changes in ``platformio.ini`` and automatically rebuild C/C++ Project Index.
-**You need to install extra plugin** named ``File Watchers`` via
-"Clion: Preferences > Plugins" to enable this feature.
+  Allows one to fix code completion and code linting issues.
 
 .. warning::
     The libraries which are added, installed or used in the project

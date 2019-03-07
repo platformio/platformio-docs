@@ -14,7 +14,7 @@
 Mini-Module FT2232H
 ===================
 
-.. image:: ../../_static/debug_probes/minimodule.jpg
+.. image:: ../../_static/images/debug_probes/minimodule.jpg
   :target: http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini
 
 The FT2232H Mini Module is a USB to dual channel serial/MPSSE/FIFO interface
@@ -68,22 +68,22 @@ Wiring Connections
   * - FT2232H Mini-Module Pin
     - Board JTAG Pin
     - Description
-  * - GND [CN2-2]
+  * - GND
     - GND
     - Digital ground
-  * - AD0 [CN2-7]
+  * - AD0
     - TCK
     - JTAG Return Test Clock
-  * - AD1 [CN2-10]
+  * - AD1
     - TDI
     - Test Data In
-  * - AD2 [CN2-9]
+  * - AD2
     - TDO
     - Test Data Out
-  * - AD3 [CN2-12]
+  * - AD3
     - TMS
     - Test Mode State
-  * - AC2 [CN2-20]
+  * - RESET#
     - RESET
     - Connect this pin to the (active low) reset input of the target CPU (EN for ESP32)
 

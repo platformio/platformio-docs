@@ -190,11 +190,6 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nordicnrf51_rfduino`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 8KB
     * - :ref:`board_nordicnrf51_Sinobit`
       - NRF51822
       - 32MHz
@@ -448,25 +443,6 @@ OSHChip
       - 32MHz
       - 256KB
       - 32KB
-
-RFduino
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_rfduino`
-      - External
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 8KB
 
 RedBearLab
 ~~~~~~~~~~

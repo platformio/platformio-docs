@@ -67,8 +67,8 @@ it), please use ``--lib="."`` option for :ref:`cmd_ci` command
     script:
         - platformio ci --lib="." --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
-Library dependecies
-~~~~~~~~~~~~~~~~~~~
+Library dependencies
+~~~~~~~~~~~~~~~~~~~~
 
 There 2 options to test source code with dependent libraries:
 
@@ -110,7 +110,7 @@ Manually download dependent library and include in build process via ``--lib`` o
 Custom Build Flags
 ~~~~~~~~~~~~~~~~~~
 
-PlatformIO allows to specify own build flags using :envvar:`PLATFORMIO_BUILD_FLAGS` environment
+PlatformIO allows one to specify own build flags using :envvar:`PLATFORMIO_BUILD_FLAGS` environment
 
 .. code-block:: yaml
 
@@ -126,7 +126,7 @@ For the more details, please follow to
 Advanced configuration
 ~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO allows to configure multiple build environments for the single
+PlatformIO allows one to configure multiple build environments for the single
 source code using :ref:`projectconf`.
 
 Instead of ``--board`` option, please use :option:`platformio ci --project-conf`

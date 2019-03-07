@@ -63,6 +63,26 @@ board manifest `d1_mini.json <https://github.com/platformio/platform-espressif82
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+WeMos D1 R2 and mini supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:d1_mini]
+  platform = espressif8266
+  board = d1_mini
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support WeMos D1 R2 and mini board.

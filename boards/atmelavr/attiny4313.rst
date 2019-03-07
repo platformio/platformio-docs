@@ -11,7 +11,7 @@
 
 .. _board_atmelavr_attiny4313:
 
-Generic ATTiny4313
+Generic ATtiny4313
 ==================
 
 .. contents::
@@ -46,7 +46,7 @@ Please use ``attiny4313`` ID for :ref:`projectconf_env_board` option in :ref:`pr
   platform = atmelavr
   board = attiny4313
 
-You can override default Generic ATTiny4313 settings per build environment using
+You can override default Generic ATtiny4313 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `attiny4313.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny4313.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -65,7 +65,7 @@ board manifest `attiny4313.json <https://github.com/platformio/platform-atmelavr
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATTiny4313 board.
+:ref:`piodebug` currently does not support Generic ATtiny4313 board.
 
 Frameworks
 ----------

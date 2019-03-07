@@ -33,11 +33,11 @@ Setting Up the Project
 
 At first step, we need to create a new project using PlatformIO Home Page (to open this page just press Home icon on the toolbar):
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-1.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-1.png
 
 On the next step, we need to select ``ST Nucleo-F401RE`` as a development board, :ref:`framework_stm32cube` as a framework and a path to the project location (or use the default one):
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-2.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-2.png
 
 Processing the selected project may take some amount of time (PlatformIO will download and install all required packages) and after these steps, we have a fully configured project that is ready for developing code with :ref:`framework_stm32cube` framework.
 
@@ -46,7 +46,7 @@ Adding Code to the Generated Project
 
 Let's add some actual code to the project. Firstly, we create two main files ``main.c`` and ``main.h`` in the :ref:`projectconf_pio_src_dir` folder. Right click on the ``src`` in the project window:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-3.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-3.png
 
 Add next content to ``main.h``:
 
@@ -106,16 +106,16 @@ Compiling and Uploading the Firmware
 Now we can build the project. To compile firmware we can use next options:
 Build option on the ``Project Tasks`` menu, Build button on :ref:`ide_vscode_toolbar`, using Command Palette ``View: Command Palette > PlatformIO: Build``, using Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-4.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-4.png
 
 If everything went well, we should see the successful result in the terminal window:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-5.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-5.png
 
 To upload the firmware to the board we can use next options:
 Upload option on the ``Project Tasks`` menu, Upload button on :ref:`ide_vscode_toolbar`, using Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-6.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-6.png
 
 After successful uploading, the green LED2 should start blinking.
 
@@ -124,15 +124,15 @@ Debugging the Firmware
 
 :ref:`piodebug` offers the easiest way to debug your board. To start debugging session you can use ``Start debugging`` option in ``PlatformIO Quick Access`` menu, ``Debug: Start debugging`` from the top menu or hotkey button ``F5``:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-7.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-7.png
 
 We need to wait some time while PlatformIO is initializing debug session and when the first line after the main function is highlighted we are ready to debug:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-8.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-8.png
 
 We can walk through the code using control buttons, set breakpoints, see peripheral registers, add variables to ``Watch window``:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-9.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-9.png
 
 Writing Unit Tests
 ------------------
@@ -149,7 +149,7 @@ Now let’s write some tests using :ref:`unit_testing` feature that can help us 
 
 Also, we need to create a new folder ``test`` where the tests and custom :ref:`projectconf_test_transport` implementation (described next) will be located:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-10.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-10.png
 
 We will use ``USART2`` on ``ST Nucleo-F401RE`` board because it's directly connected to the STLink debug interface and in OS it can be visible as a Virtual Com Port, so we don't need any additional USB-UART converter. To implement the custom :ref:`projectconf_test_transport` we need to create two files ``unittest_transport.h`` and ``unittest_transport.c`` and put them in the :ref:`projectconf_pio_test_dir` in the root folder of our project. In these files we need to implement the next four functions:
 
@@ -329,11 +329,11 @@ Let's add a new file ``test_main.c`` to the folder ``test``. Next basic tests fo
 
 Now we are ready to upload tests to the board. To do this we can use ``Test`` option from the Project Tasks menu, ``Tasks: Run Task... > PlatformIO Test`` option from the top menu or Test button on :ref:`ide_vscode_toolbar`:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-11.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-11.png
 
 After processing we should see a detailed report about the testing results:
 
-.. image:: ../../_static/tutorials/ststm32/stm32cube-debugging-unit-testing-12.png
+.. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-12.png
 
 Congratulations! As we can see from the report, all our tests went successfully!
 

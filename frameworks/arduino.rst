@@ -65,6 +65,24 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_remram_v1`
+      - :ref:`platform_ststm32`
+      - STM32F765VIT6
+      - 216MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
+      - :ref:`platform_nordicnrf52`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_mzeropro`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -131,6 +149,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -173,6 +197,12 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_f072rb`
+      - :ref:`platform_ststm32`
+      - STM32F072RBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - STM32F030R8T6
@@ -239,6 +269,18 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f767zi`
+      - :ref:`platform_ststm32`
+      - STM32F767ZIT6
+      - 216MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l031k6`
       - :ref:`platform_ststm32`
       - STM32L031K6T6
@@ -251,15 +293,33 @@ You do not need to use/buy external debug probe.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_l073rz`
+      - :ref:`platform_ststm32`
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_nucleo_l152re`
       - :ref:`platform_ststm32`
       - STM32L152RET6
       - 32MHz
       - 512KB
       - 80KB
+    * - :ref:`board_ststm32_nucleo_l412kb`
+      - :ref:`platform_ststm32`
+      - STM32L412KBU6
+      - 80MHz
+      - 128KB
+      - 40KB
     * - :ref:`board_ststm32_nucleo_l432kc`
       - :ref:`platform_ststm32`
       - STM32L432KCU6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_nucleo_l452re`
+      - :ref:`platform_ststm32`
+      - STM32L452RET6
       - 80MHz
       - 256KB
       - 64KB
@@ -275,6 +335,18 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_l496zg_p`
+      - :ref:`platform_ststm32`
+      - STM32L496ZGT6P
+      - 80MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_nucleo_l4r5zi`
+      - :ref:`platform_ststm32`
+      - STM32L4R5ZIT6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - STM32F030R8T6
@@ -378,6 +450,18 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_armed_v1`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_rumba32_f446ve`
+      - :ref:`platform_ststm32`
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_espressif32_alksesp32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -385,6 +469,12 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_crickit_m0`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
       - 48MHz
@@ -420,6 +510,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_grandcentral_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51P20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_hallowing`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -434,7 +530,7 @@ Please click on board name for the further details.
       - 32KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
       - :ref:`platform_atmelsam`
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -445,6 +541,12 @@ Please click on board name for the further details.
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_adafruit_metro_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - SAMD51J19A
       - 120MHz
@@ -498,6 +600,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_mkrnb1500`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -534,11 +642,65 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_black_f407ve`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407vg`
+      - :ref:`platform_ststm32`
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407ze`
+      - :ref:`platform_ststm32`
+      - STM32F407ZET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_blackpill_f103c8`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_blackpill_f103c8_128`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_blue_f407ve_mini`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_bluepill_f103c6`
+      - :ref:`platform_ststm32`
+      - STM32F103C6T6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
       - 72MHz
       - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - :ref:`platform_ststm32`
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
       - 20KB
     * - :ref:`board_nordicnrf52_bluey`
       - :ref:`platform_nordicnrf52`
@@ -564,6 +726,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_demo_f030f4`
+      - :ref:`platform_ststm32`
+      - STM32F030F4P6
+      - 48MHz
+      - 16KB
+      - 4KB
     * - :ref:`board_atmelsam_digix`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -606,6 +774,18 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_diymore_f407vgt`
+      - :ref:`platform_ststm32`
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_fk407m1`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_espressif32_firebeetle32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -630,6 +810,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_malyanm200_f070cb`
+      - :ref:`platform_ststm32`
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
     * - :ref:`board_espressif32_mhetesp32devkit`
       - :ref:`platform_espressif32`
       - ESP32
@@ -648,6 +834,12 @@ Please click on board name for the further details.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_malyanm200_f103cb`
+      - :ref:`platform_ststm32`
+      - STM32F103CBT6
+      - 72MHz
+      - 120KB
+      - 20KB
     * - :ref:`board_ststm32_maple`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -684,6 +876,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_netduino2plus`
+      - :ref:`platform_ststm32`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_espressif32_node32s`
       - :ref:`platform_espressif32`
       - ESP32
@@ -726,12 +924,18 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 1.25MB
-    * - :ref:`board_nordicnrf51_rfduino`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - :ref:`platform_ststm32`
+      - STM32L151RBT6
+      - 32MHz
       - 128KB
-      - 8KB
+      - 32KB
+    * - :ref:`board_ststm32_rak811_tracker`
+      - :ref:`platform_ststm32`
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_atmelsam_sodaq_autonomo`
       - :ref:`platform_atmelsam`
       - SAMD21J18A
@@ -864,6 +1068,12 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_stm32f4stamp`
+      - :ref:`platform_ststm32`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -948,6 +1158,12 @@ Please click on board name for the further details.
       - 48MHz
       - 62KB
       - 8KB
+    * - :ref:`board_ststm32_hy_tinystm103tb`
+      - :ref:`platform_ststm32`
+      - STM32F103TBU6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1144,6 +1360,13 @@ Adafruit
       - 8MHz
       - 28KB
       - 2.50KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_atmelavr_circuitplay_classic`
       - :ref:`platform_atmelavr`
       - No
@@ -1152,6 +1375,13 @@ Adafruit
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_crickit_m0`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A
@@ -1200,6 +1430,13 @@ Adafruit
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelavr_flora8`
       - :ref:`platform_atmelavr`
       - No
@@ -1221,6 +1458,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_grandcentral_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51P20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_espressif8266_huzzah`
       - :ref:`platform_espressif8266`
       - No
@@ -1259,7 +1503,7 @@ Adafruit
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
       - :ref:`platform_atmelsam`
       - External
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -1312,6 +1556,13 @@ Adafruit
       - 16MHz
       - 28KB
       - 2KB
+    * - :ref:`board_atmelsam_adafruit_trellis_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelavr_trinket3`
       - :ref:`platform_atmelavr`
       - No
@@ -1375,6 +1626,13 @@ Alorium Technology
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelavr_alorium_hinj`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
     * - :ref:`board_atmelavr_alorium_sno`
       - :ref:`platform_atmelavr`
       - No
@@ -1634,6 +1892,13 @@ Arduino
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_mkrnb1500`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
       - :ref:`platform_atmelsam`
       - External
@@ -1831,6 +2096,27 @@ Arduino
       - 31.50KB
       - 2KB
 
+Armed
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_armed_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+
 Atmel
 ~~~~~
 
@@ -1911,6 +2197,13 @@ Atmel
       - :ref:`platform_atmelavr`
       - No
       - ATTINY4313
+      - 8MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelavr_attiny43`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATTINY43U
       - 8MHz
       - 4KB
       - 256B
@@ -2068,6 +2361,27 @@ BQ
       - 16MHz
       - 28KB
       - 2KB
+
+BSFrance
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_lora32u4II`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
 
 BitWizard
 ~~~~~~~~~
@@ -2411,6 +2725,27 @@ Digistump
       - 84MHz
       - 512KB
       - 96KB
+
+Diymore
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_diymore_f407vgt`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
 
 Doit
 ~~~~
@@ -2759,7 +3094,7 @@ Espressif
       - No
       - ESP8266
       - 80MHz
-      - 423.98KB
+      - 1MB
       - 80KB
     * - :ref:`board_espressif8266_phoenix_v1`
       - :ref:`platform_espressif8266`
@@ -2845,6 +3180,27 @@ Generic
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_blackpill_f103c8`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 64KB
+      - 20KB
+    * - :ref:`board_ststm32_blackpill_f103c8_128`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C6T6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_bluepill_f103c8`
       - :ref:`platform_ststm32`
       - External
@@ -2852,6 +3208,27 @@ Generic
       - 72MHz
       - 64KB
       - 20KB
+    * - :ref:`board_ststm32_bluepill_f103c8_128k`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C8T6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_demo_f030f4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F030F4P6
+      - 48MHz
+      - 16KB
+      - 4KB
+    * - :ref:`board_ststm32_fk407m1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - External
@@ -2971,6 +3348,34 @@ Generic
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_stm32f4stamp`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+
+HY
+~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_hy_tinystm103tb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103TBU6
+      - 72MHz
+      - 128KB
+      - 20KB
 
 Hardkernel
 ~~~~~~~~~~
@@ -3182,6 +3587,27 @@ IntoRobot
       - 4MB
       - 320KB
 
+Invent One
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_inventone`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
 LeafLabs
 ~~~~~~~~
 
@@ -3279,6 +3705,13 @@ LowPowerLab
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_current_ranger`
+      - :ref:`platform_atmelsam`
+      - No
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelavr_mightyhat`
       - :ref:`platform_atmelavr`
       - No
@@ -3433,6 +3866,34 @@ MakerAsia
       - 240MHz
       - 4MB
       - 320KB
+
+Malyan
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_malyanm200_f070cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
+    * - :ref:`board_ststm32_malyanm200_f103cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103CBT6
+      - 72MHz
+      - 120KB
+      - 20KB
 
 Mcudude
 ~~~~~~~
@@ -3644,6 +4105,27 @@ MikroElektronika
       - 1.98MB
       - 512KB
 
+Netduino
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_netduino2plus`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+
 NodeMCU
 ~~~~~~~
 
@@ -3741,6 +4223,13 @@ Nordic
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 OLIMEX
 ~~~~~~
@@ -4113,8 +4602,8 @@ Quirkbot
       - 28KB
       - 2.50KB
 
-RFduino
-~~~~~~~
+RAK
+~~~
 
 .. list-table::
     :header-rows:  1
@@ -4126,13 +4615,41 @@ RFduino
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_rfduino`
-      - :ref:`platform_nordicnrf51`
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - :ref:`platform_ststm32`
       - External
-      - NRF51822
-      - 16MHz
+      - STM32L151RBT6
+      - 32MHz
       - 128KB
-      - 8KB
+      - 32KB
+    * - :ref:`board_ststm32_rak811_tracker`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 16KB
+
+RUMBA
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_rumba32_f446ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
 
 RedBearLab
 ~~~~~~~~~~
@@ -4196,6 +4713,27 @@ RedBearLab
       - 16MHz
       - 256KB
       - 16KB
+
+RemRam
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_remram_v1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F765VIT6
+      - 216MHz
+      - 2MB
+      - 512KB
 
 RepRap
 ~~~~~~
@@ -4336,6 +4874,41 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_black_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407vg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VGT6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_black_f407ze`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZET6
+      - 168MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_blue_f407ve_mini`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
       - On-board
@@ -4357,6 +4930,13 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_f072rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F072RBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -4434,6 +5014,20 @@ ST
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f767zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F767ZIT6
+      - 216MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 1MB
     * - :ref:`board_ststm32_nucleo_l031k6`
       - :ref:`platform_ststm32`
       - On-board
@@ -4448,6 +5042,13 @@ ST
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_l073rz`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_nucleo_l152re`
       - :ref:`platform_ststm32`
       - On-board
@@ -4455,10 +5056,24 @@ ST
       - 32MHz
       - 512KB
       - 80KB
+    * - :ref:`board_ststm32_nucleo_l412kb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L412KBU6
+      - 80MHz
+      - 128KB
+      - 40KB
     * - :ref:`board_ststm32_nucleo_l432kc`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L432KCU6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_nucleo_l452re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L452RET6
       - 80MHz
       - 256KB
       - 64KB
@@ -4476,6 +5091,20 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_l496zg_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L496ZGT6P
+      - 80MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_nucleo_l4r5zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L4R5ZIT6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board

@@ -63,6 +63,26 @@ board manifest `phoenix_v1.json <https://github.com/platformio/platform-espressi
   ; change MCU frequency
   board_build.f_cpu = 80000000L
 
+
+Uploading
+---------
+Phoenix 1.0 supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:phoenix_v1]
+  platform = espressif8266
+  board = phoenix_v1
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Phoenix 1.0 board.

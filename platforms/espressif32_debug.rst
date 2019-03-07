@@ -32,5 +32,4 @@ Pinout Diagram
   * - GND
     - GND
 
-.. image:: https://community.platformio.org/uploads/default/original/2X/a/a205db2620adc6b53e2f171021a384fed13795a1.jpg
-    :target: https://community.platformio.org/uploads/default/original/2X/a/a205db2620adc6b53e2f171021a384fed13795a1.jpg
+.. image:: ../_static/images/platforms/espressif32_debug_pinout.jpg
