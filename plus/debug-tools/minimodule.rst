@@ -23,7 +23,7 @@ the USB signalling and protocol handling. The module provides access to device
 I/O interfaces via 2 double row 0.1" pitch male connectors.  The module is
 ideal for development purposes to quickly prove functionality of adding USB
 to a target design.
-`Vendor information... <http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini>`__
+Official reference can be found `here <http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini>`__
 
 .. contents:: Contents
     :local:

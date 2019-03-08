@@ -22,7 +22,7 @@ They've proven their value for more than 10 years with over 400,000 units sold,
 including OEM versions and on-board solutions. This popularity stems from the
 unparalleled performance, extensive feature set, large number of supported
 CPUs, and compatibility with all popular development environments.
-`Vendor information... <https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs>`__.
 
 * `J-Link Supported Devices <https://www.segger.com/downloads/supported_devices_jlink.php?utm_source=platformio&utm_medium=docs>`__
 

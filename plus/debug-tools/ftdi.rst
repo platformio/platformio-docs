@@ -20,7 +20,7 @@ FTDI Chip
 FTDI Chip develops innovative silicon solutions that enhance interaction with
 today’s technology. When a designer needs to add a USB port, rest assured that
 FTDI Chip has a full range of USB solutions to get the job done.
-`Vendor information...  <http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here  <http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

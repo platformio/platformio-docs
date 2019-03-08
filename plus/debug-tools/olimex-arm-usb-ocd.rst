@@ -19,7 +19,7 @@ Olimex ARM-USB-OCD
 
 3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power supply
 5-9-12VDC device (supported by OpenOCD ARM debugger software).
-`Vendor information... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

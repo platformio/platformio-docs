@@ -22,7 +22,7 @@ This IoT-Bus module provides JTAG debugging for the
 boards (can be used with other boards too, see wiring connections below).
 The board uses the FT232H to provide a USB controller with JTAG
 support. Both debugging and flashing is possible using this port.
-`Vendor information... <http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:
