@@ -20,6 +20,11 @@ Articles about us
 
 Here are recent articles/reviews about PlatformIO:
 
+2019
+^^^^
+
+* Mar 08, 2019 - **Nathan Glover** - `Amazon Alexa controlled IoT Traffic Lights <https://devopstar.com/2019/03/08/amazon-alexa-controlled-iot-traffic-lights/>`_
+
 2018
 ^^^^
 
