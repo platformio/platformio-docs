@@ -77,18 +77,6 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 32KB
       - 8KB
-    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
-      - :ref:`platform_nordicnrf52`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
     * - :ref:`board_atmelsam_samr21_xpro`
       - :ref:`platform_atmelsam`
       - SAMR21G18A
@@ -359,12 +347,6 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 1MB
       - 256KB
-    * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -1136,34 +1118,6 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
-
-Adafruit
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
 
 AppNearMe
 ~~~~~~~~~
@@ -1941,13 +1895,6 @@ Nordic
       - 64MHz
       - 1MB
       - 256KB
-    * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
 
 Outrageous Circuits
 ~~~~~~~~~~~~~~~~~~~
