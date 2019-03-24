@@ -243,7 +243,7 @@ from build process. Filter supports 2 templates:
 * ``+<PATH>`` include template
 * ``-<PATH>`` exclude template
 
-``PATH`` MAST BE related from :ref:`projectconf_pio_src_dir`. All patterns will
+``PATH`` MUST BE related from :ref:`projectconf_pio_src_dir`. All patterns will
 be applied in theirs order.
 `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
 
