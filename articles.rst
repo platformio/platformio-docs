@@ -28,6 +28,7 @@ Here are recent articles/reviews about PlatformIO:
 2018
 ^^^^
 
+* Dec 27, 2018 - **Xose Pérez** - `Automated unit testing in the metal <https://tinkerman.cat/automated-unit-testing-metal/>`_
 * Dec 20, 2018 - **Jean-Claude Wippler** - `Getting started with the STM32F407VG and STM32Cube <https://jeelabs.org/2018/getting-started-f407/>`_
 * Nov 24, 2018 - **Martin Fasani** - `PlatformIO: An alternative to Arduino IDE and a complete ecosystem for IoT <https://fasani.de/2018/11/24/platformio-an-alternative-to-arduino-ide-and-a-complete-ecosystem-for-iot/>`_
 * Sep 27, 2018 - **Lup Yuen Lee** - `Connect STM32 Blue Pill to Sigfox <https://medium.com/coinmonks/connect-stm32-blue-pill-to-sigfox-28c6f91bddc1>`_
