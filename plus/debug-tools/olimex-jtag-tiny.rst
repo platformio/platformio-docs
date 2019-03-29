@@ -18,7 +18,7 @@ Olimex ARM-USB-TINY
   :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs
 
 Low-cost and high-speed ARM/ESP32 USB JTAG.
-`Vendor information... <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

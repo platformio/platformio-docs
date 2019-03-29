@@ -24,10 +24,27 @@ PIO Unified Debugger
 
   `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/finally-pio-unified-debugger-comes-to-vscode/4091>`_
 
+PIO Plus offers a unique debugging experience for productive embedded
+development. Using our multi-board and multi-architecture programming
+experience, we simplified the debugging process in the same way. A zero
+debugging configuration with support for the most popular debugging probes
+and compatibility between IDEs and OS.
+
+Developers can finally forget about complex UI windows which they need to
+pre-configure before a simple “Hello World!” debugging session. No need to
+know any aspects about the debugging server or how to configure it. PIO Plus
+Unified Debugger does this complex work automatically having a rich
+configuration database per each board and debugging probe.
+
+Just select a board, connect debugging probe (if a board does not have
+onboard debugging interface), specify it in PlatformIO project configuration
+file “platformio.ini”, and a project is ready for 1-Click debugging.
+
+
 * "1-click" solution, zero configuration
-* Support for 200+ embedded boards (see below)
+* Support over 300+ embedded boards (see below)
 * Multiple architectures and development platforms
-* Windows, MacOS, Linux (+ARMv6-8)
+* Windows, MacOS, Linux
 * Built-in into :ref:`ide_atom` and :ref:`ide_vscode`
 * Integration with :ref:`ide_eclipse` and :ref:`ide_sublimetext`
 

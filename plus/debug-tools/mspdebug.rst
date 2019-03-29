@@ -21,7 +21,7 @@ MSP-FET, MSP-FET430UIF or on-board eZ debuggers. It is the bridging element
 between all PC software and all MSP430 and SimpleLink MSP432 microcontroller
 derivatives and handles tasks such as code download, stepping through code or
 break points.
-`Vendor information... <http://www.ti.com/tool/mspds?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <http://www.ti.com/tool/mspds?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

@@ -22,7 +22,7 @@ microprocessors. It is able to control and examine the state of the target
 microprocessor using a JTAG or Serial Wire Debugging (SWD) port and on-chip
 debug logic provided by the microprocessor. The probe connects to a host
 computer using a standard USB interface.
-`Vendor information... <https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs>`__.
 
 Also, see :ref:`debugging_tool_custom` debugging configuration with
 Black Magic Probe.

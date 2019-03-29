@@ -23,7 +23,7 @@ FDTI's flagship communication chip FT2232H, a USB 2.0 Hi-Speed (480Mb/s) to
 UART/FIFO IC. It has two multi-protocol synchronous serial engines (MPSSEs)
 which allow for communication using JTAG, I2C and SPI on two channels
 simultaneously.
-`Vendor information... <https://www.diygadget.com/jtag-cables-and-microcontroller-programmers/114-tiao-usb-multi-protocol-adapter-jtag-spi-i2c-serial.html?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <https://www.diygadget.com/jtag-cables-and-microcontroller-programmers/114-tiao-usb-multi-protocol-adapter-jtag-spi-i2c-serial.html?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

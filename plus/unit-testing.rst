@@ -18,11 +18,17 @@ PIO Unit Testing
 
 .. versionadded:: 3.0 (`PIO Plus <https://pioplus.com>`_)
 
-`Unit Testing (wiki) <https://en.wikipedia.org/wiki/Unit_testing>`_
-is a software testing method by which individual units of source code, sets
-of one or more MCU program modules together with associated control data,
-usage procedures, and operating procedures, are tested to determine whether
-they are fit for use. Unit testing finds problems early in the development cycle.
+PIO Unit Testing allows segregating each part of the firmware/program and test
+that the individual parts are working correctly. Using |PIOUTE| you can
+execute the same tests on the local host machine (native), on the multiple
+local embedded devices/boards (connected to local host machine), or in both
+cases. In the last case, PIO Plus builds firmware on the host machine, uploads
+into a target device, starts tests and collects test results into test reports.
+The final information will be shown on the host side with informative output
+and statistic.
+
+Using :ref:`pioremote` you can start unit tests on the **Remote Device** from
+anywhere in the world or integrate with :ref:`ci` systems.
 
 .. contents:: Contents
     :local:
@@ -30,10 +36,13 @@ they are fit for use. Unit testing finds problems early in the development cycle
 Demo
 ----
 
-Demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_.
+This is a demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_ which demonstrates running embedded tests on physical hardware
+(:ref:`board_atmelavr_uno`) and native tests on host machine (desktop).
+
+Learn more about :ref:`cmd_test` command.
 
 .. image:: ../_static/images/pioplus-unit-testing-demo.png
-    :target: https://youtu.be/bo3VVRZVKhA
+    :target: https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator
 
 Tutorials and Examples
 ----------------------
@@ -48,6 +57,7 @@ Tutorials
 * `ThingForward: Embedded Testing with PlatformIO – Part 3: Remoting <http://www.thingforward.io/techblog/2017-09-06-embedded-testing-with-platformio-part-3-remoting.html>`_
 * `ThingForward: Embedded Testing with PlatformIO – Part 4: Continuous Integration <http://www.thingforward.io/techblog/2017-09-18-embedded-testing-with-platformio-part-4-continuous-integration.html>`_
 * `ThingForward, Webinar: Unit Testing for Embedded with PlatformIO and Qt Creator <https://www.youtube.com/watch?v=GJiMdmlBGlk>`_
+* `Xose Pérez: Automated unit testing in the metal <https://tinkerman.cat/automated-unit-testing-metal/>`_
 
 
 Project Examples

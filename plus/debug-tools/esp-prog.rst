@@ -22,7 +22,7 @@ including automatic firmware downloading, serial communication, and JTAG
 online debugging. ESP-Prog's automatic firmware downloading and serial
 communication functions are supported on both the ESP8266 and ESP32
 platforms, while the JTAG online debugging is supported only on the ESP32
-platform. `Vendor information... <https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs>`__
+platform. Official reference can be found `here <https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

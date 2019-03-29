@@ -19,7 +19,7 @@ Atmel-ICE
 
 Atmel-ICE is a powerful development tool for debugging and programming ARM®
 Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability.
-`Vendor information... <https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

@@ -21,7 +21,7 @@ The ST-LINK is an in-circuit debugger and programmer for the STM8 and STM32
 microcontroller families. The single wire interface module (SWIM) and
 JTAG/serial wire debugging (SWD) interfaces are used to communicate with any
 STM8 or STM32 microcontroller located on an application board.
-`Vendor information... <http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

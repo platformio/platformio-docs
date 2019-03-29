@@ -17,7 +17,7 @@ TI-ICDI
 Tiva™ C Series evaluation and reference design kits provide an integrated
 In-Circuit Debug Interface (ICDI) which allows programming and debugging of
 the onboard C Series microcontroller.
-`Vendor information... <http://www.ti.com/tool/stellaris_icdi_drivers?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <http://www.ti.com/tool/stellaris_icdi_drivers?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

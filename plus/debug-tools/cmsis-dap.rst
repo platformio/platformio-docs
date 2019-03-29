@@ -21,7 +21,7 @@ CMSIS-DAP is generally implemented as an on-board interface chip, providing
 direct USB connection from a development board to a debugger running on a host
 computer on one side, and over JTAG (Joint Test Action Group) or SWD
 (Serial Wire Debug) to the target device to access the Coresight DAP on the other.
-`Vendor information... <https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs>`__
+Official reference can be found `here <https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:
