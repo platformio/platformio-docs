@@ -21,13 +21,9 @@ PlatformIO IDE
 integration with IDEs/Text Editors and contains built-in
 :ref:`piocore` and :ref:`piohome`.
 
-We highly recommend to use it for the best experience.
-
-.. toctree::
-    :maxdepth: 1
-
-    VSCode <ide/vscode>
-    Atom <ide/atom>
+.. note::
+    In our experience, :ref:`ide_vscode` offers better system performance,
+    and users have found it easier to get started
 
 .. _ide_cloud:
 
@@ -48,6 +44,7 @@ Desktop IDE
 .. toctree::
     :maxdepth: 1
 
+    Atom <ide/atom>
     ide/clion
     ide/codeblocks
     ide/eclipse
@@ -57,3 +54,4 @@ Desktop IDE
     ide/sublimetext
     ide/vim
     ide/visualstudio
+    VSCode <ide/vscode>

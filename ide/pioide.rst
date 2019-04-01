@@ -37,15 +37,3 @@ Go) and runtimes (such as .NET and Unity)
 
 .. image:: ../_static/images/ide/vscode/platformio-ide-vscode.png
     :target: vscode.html
-
-Atom
-----
-
-**Atom** is a text editor that's modern, approachable, yet hackable to the
-core—a tool you can customize to do anything but also use productively without
-ever touching a config file.
-
-:ref:`Install PlatformIO IDE for Atom / Get started <ide_atom>`
-
-.. image:: ../_static/images/ide/atom/ide-atom-platformio.png
-    :target: atom.html
