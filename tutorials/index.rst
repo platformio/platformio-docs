@@ -32,3 +32,13 @@ Project Examples
 Pre-configured projects with source code are located in
 `PlatformIO Examples <https://github.com/platformio/platformio-examples>`_
 repository.
+
+Community Video Tutorials
+-------------------------
+
+* `PlatformIO for Arduino, ESP8266, and ESP32 Tutorial <https://www.youtube.com/watch?v=0poh_2rBq7E>`_
+* `RISC-V ASM Tutorial <https://www.youtube.com/playlist?list=PL6noQ0vZDAdh_aGvqKvxd0brXImHXMuLY>`_
+* `PlatformIO или прощай, Arduino IDE <https://www.youtube.com/watch?v=OGCyKncOyNU>`_
+* `Debugging for ESP32 / Отладка ESP32 в PlatformIO <https://www.youtube.com/watch?v=rreMOwEJcII>`_
+* `A Better Arduino IDE - Getting Started with PlatformIO <https://www.youtube.com/watch?v=EIkGTwLOD7o>`_
+* `PlatformIO - Using External Libraries <https://www.youtube.com/watch?v=EBlHNBNHESQ>`_
