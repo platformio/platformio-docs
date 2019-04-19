@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_heltec_wifi_lora_32:
+.. _board_espressif32_heltec_wireless_stick:
 
-Heltec WiFi LoRa 32
-===================
+Heltec Wireless Stick
+=====================
 
 .. contents::
 
@@ -28,34 +28,34 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 4MB
+    - 8MB
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Heltec Automation <http://www.heltec.cn?utm_source=platformio&utm_medium=docs>`__
+    - `Heltec Automation <http://www.heltec.cn/project/wireless-stick/?lang=en&utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``heltec_wifi_lora_32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``heltec_wireless_stick`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:heltec_wifi_lora_32]
+  [env:heltec_wireless_stick]
   platform = espressif32
-  board = heltec_wifi_lora_32
+  board = heltec_wireless_stick
 
-You can override default Heltec WiFi LoRa 32 settings per build environment using
+You can override default Heltec Wireless Stick settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `heltec_wifi_lora_32.json <https://github.com/platformio/platform-espressif32/blob/master/boards/heltec_wifi_lora_32.json>`_. For example,
+board manifest `heltec_wireless_stick.json <https://github.com/platformio/platform-espressif32/blob/master/boards/heltec_wireless_stick.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:heltec_wifi_lora_32]
+  [env:heltec_wireless_stick]
   platform = espressif32
-  board = heltec_wifi_lora_32
+  board = heltec_wireless_stick
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,7 +66,7 @@ board manifest `heltec_wifi_lora_32.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-Heltec WiFi LoRa 32 supports the next uploading protocols:
+Heltec Wireless Stick supports the next uploading protocols:
 
 * ``esp-prog``
 * ``esptool``
@@ -85,9 +85,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:heltec_wifi_lora_32]
+  [env:heltec_wireless_stick]
   platform = espressif32
-  board = heltec_wifi_lora_32
+  board = heltec_wireless_stick
 
   upload_protocol = esptool
 
@@ -104,7 +104,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Heltec WiFi LoRa 32 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Heltec Wireless Stick does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

@@ -270,6 +270,7 @@ Espressif 32
 .. toctree::
     :maxdepth: 1
         
+    espressif32/esp32cam
     espressif32/alksesp32
     espressif32/featheresp32
     espressif32/espea32
@@ -286,13 +287,17 @@ Espressif 32
     espressif32/esp-wrover-kit
     espressif32/esp32dev
     espressif32/firebeetle32
+    espressif32/frogboard
     espressif32/heltec_wifi_kit_32
     espressif32/heltec_wifi_lora_32
+    espressif32/heltec_wifi_lora_32_V2
+    espressif32/heltec_wireless_stick
     espressif32/hornbill32dev
     espressif32/hornbill32minima
     espressif32/intorobot
     espressif32/m5stack-core-esp32
     espressif32/m5stack-fire
+    espressif32/m5stick-c
     espressif32/mhetesp32devkit
     espressif32/mhetesp32minikit
     espressif32/nano32
@@ -311,6 +316,7 @@ Espressif 32
     espressif32/lopy4
     espressif32/wesp32
     espressif32/esp32thing
+    espressif32/sparkfun_lora_gateway_1-channel
     espressif32/ttgo-lora32-v1
     espressif32/ttgo-t-beam
     espressif32/turta_iot_node

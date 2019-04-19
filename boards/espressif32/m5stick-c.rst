@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_heltec_wifi_kit_32:
+.. _board_espressif32_m5stick-c:
 
-Heltec WiFi Kit 32
-==================
+M5Stick-C
+=========
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Heltec Automation <http://www.heltec.cn/project/wifi-kit-32/?lang=en&utm_source=platformio&utm_medium=docs>`__
+    - `M5Stack <http://www.m5stack.com?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``heltec_wifi_kit_32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``m5stick-c`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:heltec_wifi_kit_32]
+  [env:m5stick-c]
   platform = espressif32
-  board = heltec_wifi_kit_32
+  board = m5stick-c
 
-You can override default Heltec WiFi Kit 32 settings per build environment using
+You can override default M5Stick-C settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `heltec_wifi_kit_32.json <https://github.com/platformio/platform-espressif32/blob/master/boards/heltec_wifi_kit_32.json>`_. For example,
+board manifest `m5stick-c.json <https://github.com/platformio/platform-espressif32/blob/master/boards/m5stick-c.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:heltec_wifi_kit_32]
+  [env:m5stick-c]
   platform = espressif32
-  board = heltec_wifi_kit_32
+  board = m5stick-c
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -65,7 +65,7 @@ board manifest `heltec_wifi_kit_32.json <https://github.com/platformio/platform-
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Heltec WiFi Kit 32 board.
+:ref:`piodebug` currently does not support M5Stick-C board.
 
 Frameworks
 ----------

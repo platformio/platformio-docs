@@ -1120,6 +1120,27 @@ Espressif
       - 4MB
       - 320KB
 
+Fred
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_frogboard`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Freescale
 ~~~~~~~~~
 
@@ -1489,6 +1510,20 @@ Heltec Automation
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32_V2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wireless_stick`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
       - 320KB
 
 Hornbill
@@ -3191,6 +3226,13 @@ SparkFun
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - External
