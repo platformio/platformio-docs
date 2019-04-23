@@ -162,10 +162,25 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_frogboard`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32_V2`
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wireless_stick`
+      - ESP32
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_hornbill32dev`
       - ESP32
@@ -223,6 +238,11 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp32thing`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
       - ESP32
       - 240MHz
       - 4MB
@@ -384,6 +404,25 @@ Boards
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
+
+AI Thinker
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_esp32cam`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Adafruit
 ~~~~~~~~
@@ -625,6 +664,25 @@ Espressif
       - 4MB
       - 320KB
 
+Fred
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_frogboard`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Hardkernel
 ~~~~~~~~~~
 
@@ -667,6 +725,18 @@ Heltec Automation
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32_V2`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wireless_stick`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
       - 320KB
 
 Hornbill
@@ -737,6 +807,12 @@ M5Stack
       - 240MHz
       - 16MB
       - 6.25MB
+    * - :ref:`board_espressif32_m5stick-c`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 MH-ET Live
 ~~~~~~~~~~
@@ -971,6 +1047,25 @@ Silicognition
       - Flash
       - RAM
     * - :ref:`board_espressif32_wesp32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+SparkFun
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
       - External
       - ESP32
       - 240MHz

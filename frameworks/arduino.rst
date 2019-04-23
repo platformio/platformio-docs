@@ -792,11 +792,29 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_frogboard`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32_V2`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wireless_stick`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_hornbill32dev`
       - :ref:`platform_espressif32`
@@ -1104,6 +1122,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -1339,6 +1363,27 @@ Boards
       - 80MHz
       - 508KB
       - 128KB
+
+AI Thinker
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_esp32cam`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Adafruit
 ~~~~~~~~
@@ -3139,6 +3184,27 @@ FYSETC
       - 252KB
       - 8KB
 
+Fred
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_frogboard`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Fubarino
 ~~~~~~~~
 
@@ -3445,6 +3511,20 @@ Heltec Automation
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32_V2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wireless_stick`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
       - 320KB
 
 Hornbill
@@ -3775,6 +3855,13 @@ M5Stack
       - 240MHz
       - 16MB
       - 6.25MB
+    * - :ref:`board_espressif32_m5stick-c`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 MH-ET Live
 ~~~~~~~~~~
@@ -5357,6 +5444,13 @@ SparkFun
       - 8MHz
       - 28KB
       - 2.50KB
+    * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelavr_sparkfun_makeymakey`
       - :ref:`platform_atmelavr`
       - No

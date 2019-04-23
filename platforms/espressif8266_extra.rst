@@ -368,7 +368,7 @@ There are 2 options:
 * Specify ``upload_port`` option in :ref:`projectconf`
 
 
-You also need to set :ref:`projectconf_upload_port` to ``espota``.
+You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
 
 .. code-block:: ini
 

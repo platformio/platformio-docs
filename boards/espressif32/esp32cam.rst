@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_heltec_wifi_kit_32:
+.. _board_espressif32_esp32cam:
 
-Heltec WiFi Kit 32
-==================
+AI Thinker ESP32-CAM
+====================
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Heltec Automation <http://www.heltec.cn/project/wifi-kit-32/?lang=en&utm_source=platformio&utm_medium=docs>`__
+    - `AI Thinker <https://wiki.ai-thinker.com/esp32-cam?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``heltec_wifi_kit_32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``esp32cam`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:heltec_wifi_kit_32]
+  [env:esp32cam]
   platform = espressif32
-  board = heltec_wifi_kit_32
+  board = esp32cam
 
-You can override default Heltec WiFi Kit 32 settings per build environment using
+You can override default AI Thinker ESP32-CAM settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `heltec_wifi_kit_32.json <https://github.com/platformio/platform-espressif32/blob/master/boards/heltec_wifi_kit_32.json>`_. For example,
+board manifest `esp32cam.json <https://github.com/platformio/platform-espressif32/blob/master/boards/esp32cam.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:heltec_wifi_kit_32]
+  [env:esp32cam]
   platform = espressif32
-  board = heltec_wifi_kit_32
+  board = esp32cam
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -65,7 +65,7 @@ board manifest `heltec_wifi_kit_32.json <https://github.com/platformio/platform-
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Heltec WiFi Kit 32 board.
+:ref:`piodebug` currently does not support AI Thinker ESP32-CAM board.
 
 Frameworks
 ----------

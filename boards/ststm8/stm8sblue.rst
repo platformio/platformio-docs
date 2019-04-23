@@ -63,6 +63,26 @@ board manifest `stm8sblue.json <https://github.com/platformio/platform-ststm8/bl
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
+
+Uploading
+---------
+ST STM8S103F3 Breakout Board supports the next uploading protocols:
+
+* ``serial``
+* ``stlinkv2``
+
+Default protocol is ``serial``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:stm8sblue]
+  platform = ststm8
+  board = stm8sblue
+
+  upload_protocol = serial
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support ST STM8S103F3 Breakout Board board.
