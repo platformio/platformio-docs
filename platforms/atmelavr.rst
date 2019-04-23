@@ -981,7 +981,7 @@ LowPowerLab
       - 127KB
       - 16KB
 
-Mcudude
+MCUdude
 ~~~~~~~
 
 .. list-table::

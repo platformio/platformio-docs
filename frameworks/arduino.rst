@@ -3863,6 +3863,76 @@ M5Stack
       - 4MB
       - 320KB
 
+MCUdude
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_megacore128`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA128
+      - 8MHz
+      - 127KB
+      - 4KB
+    * - :ref:`board_atmelavr_mightycore1284`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA1284P
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_mightycore16`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA16
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_mightycore164`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA164P
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_mightycore32`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA32
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_mightycore324`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA324P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_mightycore644`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA644P
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_mightycore8535`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA8535
+      - 16MHz
+      - 7.50KB
+      - 512B
+
 MH-ET Live
 ~~~~~~~~~~
 
@@ -3981,76 +4051,6 @@ Malyan
       - 72MHz
       - 120KB
       - 20KB
-
-Mcudude
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_atmelavr_megacore128`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA128
-      - 8MHz
-      - 127KB
-      - 4KB
-    * - :ref:`board_atmelavr_mightycore1284`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA1284P
-      - 16MHz
-      - 127KB
-      - 16KB
-    * - :ref:`board_atmelavr_mightycore16`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA16
-      - 16MHz
-      - 15.50KB
-      - 1KB
-    * - :ref:`board_atmelavr_mightycore164`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA164P
-      - 16MHz
-      - 15.50KB
-      - 1KB
-    * - :ref:`board_atmelavr_mightycore32`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA32
-      - 16MHz
-      - 31.50KB
-      - 2KB
-    * - :ref:`board_atmelavr_mightycore324`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA324P
-      - 16MHz
-      - 31.50KB
-      - 2KB
-    * - :ref:`board_atmelavr_mightycore644`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA644P
-      - 16MHz
-      - 63KB
-      - 4KB
-    * - :ref:`board_atmelavr_mightycore8535`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA8535
-      - 16MHz
-      - 7.50KB
-      - 512B
 
 MediaTek Labs
 ~~~~~~~~~~~~~
