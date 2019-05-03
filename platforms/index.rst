@@ -43,6 +43,7 @@ Embedded
     infineonxmc
     intel_arc32
     intel_mcs51
+    kendryte210
     lattice_ice40
     maxim32
     microchippic32

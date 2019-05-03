@@ -434,6 +434,16 @@ Intel MCS-51 (8051)
     intel_mcs51/stc15w404as
     intel_mcs51/stc15w408as
 
+Kendryte K210
+-------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    kendryte210/sipeed-maix-bit
+    kendryte210/sipeed-maix-go
+    kendryte210/sipeed-maix-one
+
 Lattice iCE40
 -------------
 
