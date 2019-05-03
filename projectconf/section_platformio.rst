@@ -43,6 +43,117 @@ Options
 Describe a project with a short information. PlatformIO uses it for
 :ref:`piohome` in the multiple places.
 
+``extra_configs``
+^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
+
+This option allows extending a base :ref:`projectconf` with extra configuration
+files. The format and rules are the same as for the :ref:`projectconf`.
+A name of the configuration file can be any.
+
+``extra_configs`` can be a single path to an extra configuration file or a list
+of them. Please note that you can use Unix shell-style wildcards:
+
+.. list-table::
+    :header-rows:  1
+
+    * - Pattern
+      - Meaning
+
+    * - ``*``
+      - matches everything
+
+    * - ``?``
+      - matches any single character
+
+    * - ``[seq]``
+      - matches any character in seq
+
+    * - ``[!seq]``
+      - matches any character not in seq
+
+.. note::
+    If you declare the same pair of "group" + "option" in an extra configuration
+    file which was previously declared in a base :ref:`projectconf`, it will
+    be overwritten with a value from extra configuration.
+
+**Example**
+
+*Base "platformio.ini"*
+
+.. code-block:: ini
+
+    [platformio]
+    extra_configs =
+      extra_envs.ini
+      extra_debug.ini
+
+    [common]
+    debug_flags = -D RELEASE
+    lib_flags = -lc -lm
+
+    [env:esp-wrover-kit]
+    platform = espressif32
+    framework = espidf
+    board = esp-wrover-kit
+    build_flags = ${common.debug_flags}
+
+
+*"extra_envs.ini"*
+
+.. code-block:: ini
+
+    [env:esp32dev]
+    platform = espressif32
+    framework = espidf
+    board = esp32dev
+    build_flags = ${common.lib_flags} ${common.debug_flags}
+
+    [env:lolin32]
+    platform = espressif32
+    framework = espidf
+    board = lolin32
+    build_flags = ${common.debug_flags}
+
+
+*"extra_debug.ini"*
+
+.. code-block:: ini
+
+    # Override base "common.debug_flags"
+    [common]
+    debug_flags = -D DEBUG=1
+
+    [env:lolin32]
+    build_flags = -Og
+
+After a parsing process, configuration state will be the next:
+
+.. code-block:: ini
+
+    [common]
+    debug_flags = -D DEBUG=1
+    lib_flags = -lc -lm
+
+    [env:esp-wrover-kit]
+    platform = espressif32
+    framework = espidf
+    board = esp-wrover-kit
+    build_flags = ${common.debug_flags}
+
+    [env:esp32dev]
+    platform = espressif32
+    framework = espidf
+    board = esp32dev
+    build_flags = ${common.lib_flags} ${common.debug_flags}
+
+    [env:lolin32]
+    platform = espressif32
+    framework = espidf
+    board = lolin32
+    build_flags = -Og
+
 .. _projectconf_pio_env_default:
 
 ``env_default``
