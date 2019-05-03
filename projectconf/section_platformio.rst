@@ -142,9 +142,12 @@ This option can be overridden by global environment variable
 ``include_dir``
 ^^^^^^^^^^^^^^^
 
-A path to project's headers files. PlatformIO uses it for :ref:`cmd_run`
+A path to project's default headers files. PlatformIO uses it for :ref:`cmd_run`
 command. A default value is ``include`` that means that folder is located in the
 root of project. This path will be added to ``CPPPATH`` of build environment.
+
+If you need to add extra include directories to ``CPPPATH`` scope, please use
+:ref:`projectconf_build_flags` with ``-I /path/to/extra/dir`` option.
 
 This option can be overridden by global environment variable
 :envvar:`PLATFORMIO_INCLUDE_DIR`.
