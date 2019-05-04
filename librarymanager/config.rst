@@ -511,7 +511,7 @@ Remove base/initial flags which were set by development platform. More
 details :ref:`projectconf_build_unflags`.
 
 ``includeDir``
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 *Optional* | Type: ``String``
 
@@ -519,7 +519,7 @@ Custom location of library header files. A default value is ``include`` and
 means that folder is located in the root of a library.
 
 ``srcDir``
-~~~~~~~~~~~~~
+~~~~~~~~~~
 
 *Optional* | Type: ``String``
 
