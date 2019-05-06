@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelsam_adafruit_feather_m4:
+.. _board_atmelsam_adafruit_pybadge_m4:
 
-Adafruit Feather M4 Express
+Adafruit pyBadge M4 Express
 ===========================
 
 .. contents::
@@ -32,30 +32,30 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 192KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`__
+    - `Adafruit <https://www.adafruit.com/product/4200?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``adafruit_feather_m4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``adafruit_pybadge_m4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:adafruit_feather_m4]
+  [env:adafruit_pybadge_m4]
   platform = atmelsam
-  board = adafruit_feather_m4
+  board = adafruit_pybadge_m4
 
-You can override default Adafruit Feather M4 Express settings per build environment using
+You can override default Adafruit pyBadge M4 Express settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `adafruit_feather_m4.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_feather_m4.json>`_. For example,
+board manifest `adafruit_pybadge_m4.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_pybadge_m4.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:adafruit_feather_m4]
+  [env:adafruit_pybadge_m4]
   platform = atmelsam
-  board = adafruit_feather_m4
+  board = adafruit_pybadge_m4
 
   ; change microcontroller
   board_build.mcu = samd51j19a
@@ -66,7 +66,7 @@ board manifest `adafruit_feather_m4.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-Adafruit Feather M4 Express supports the next uploading protocols:
+Adafruit pyBadge M4 Express supports the next uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``
@@ -78,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:adafruit_feather_m4]
+  [env:adafruit_pybadge_m4]
   platform = atmelsam
-  board = adafruit_feather_m4
+  board = adafruit_pybadge_m4
 
   upload_protocol = sam-ba
 
@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit Feather M4 Express does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Adafruit pyBadge M4 Express does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

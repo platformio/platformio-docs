@@ -11,8 +11,8 @@
 
 .. _board_atmelsam_adafruit_grandcentral_m4:
 
-Adafruit Grand Central M4 (SAMD51)
-==================================
+Adafruit Grand Central M4
+=========================
 
 .. contents::
 
@@ -28,9 +28,9 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **Frequency**
     - 120MHz
   * - **Flash**
-    - 496KB
+    - 1MB
   * - **RAM**
-    - 192KB
+    - 256KB
   * - **Vendor**
     - `Adafruit <https://www.adafruit.com/product/4064?utm_source=platformio&utm_medium=docs>`__
 
@@ -46,7 +46,7 @@ Please use ``adafruit_grandcentral_m4`` ID for :ref:`projectconf_env_board` opti
   platform = atmelsam
   board = adafruit_grandcentral_m4
 
-You can override default Adafruit Grand Central M4 (SAMD51) settings per build environment using
+You can override default Adafruit Grand Central M4 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `adafruit_grandcentral_m4.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_grandcentral_m4.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `adafruit_grandcentral_m4.json <https://github.com/platformio/pla
 
 Uploading
 ---------
-Adafruit Grand Central M4 (SAMD51) supports the next uploading protocols:
+Adafruit Grand Central M4 supports the next uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``
@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit Grand Central M4 (SAMD51) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Adafruit Grand Central M4 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelsam_adafruit_feather_m4:
+.. _board_atmelsam_minitronics20:
 
-Adafruit Feather M4 Express
-===========================
+Minitronics v2.0
+================
 
 .. contents::
 
@@ -24,51 +24,52 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 .. list-table::
 
   * - **Microcontroller**
-    - SAMD51J19A
+    - SAMD21J18A
   * - **Frequency**
-    - 120MHz
+    - 48MHz
   * - **Flash**
-    - 512KB
+    - 256KB
   * - **RAM**
-    - 192KB
+    - 32KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`__
+    - `ReprapWorld <https://reprapworld.com/products/electronics/minitronics/minitronics_v2_0_32_bit_all_in_one_controller_board/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``adafruit_feather_m4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``minitronics20`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:adafruit_feather_m4]
+  [env:minitronics20]
   platform = atmelsam
-  board = adafruit_feather_m4
+  board = minitronics20
 
-You can override default Adafruit Feather M4 Express settings per build environment using
+You can override default Minitronics v2.0 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `adafruit_feather_m4.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_feather_m4.json>`_. For example,
+board manifest `minitronics20.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/minitronics20.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:adafruit_feather_m4]
+  [env:minitronics20]
   platform = atmelsam
-  board = adafruit_feather_m4
+  board = minitronics20
 
   ; change microcontroller
-  board_build.mcu = samd51j19a
+  board_build.mcu = samd21j18a
 
   ; change MCU frequency
-  board_build.f_cpu = 120000000L
+  board_build.f_cpu = 48000000L
 
 
 Uploading
 ---------
-Adafruit Feather M4 Express supports the next uploading protocols:
+Minitronics v2.0 supports the next uploading protocols:
 
 * ``atmel-ice``
+* ``blackmagic``
 * ``jlink``
 * ``sam-ba``
 
@@ -78,9 +79,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:adafruit_feather_m4]
+  [env:minitronics20]
   platform = atmelsam
-  board = adafruit_feather_m4
+  board = minitronics20
 
   upload_protocol = sam-ba
 
@@ -97,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit Feather M4 Express does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Minitronics v2.0 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -108,6 +109,9 @@ Adafruit Feather M4 Express does not have on-board debug probe and **IS NOT READ
   * - :ref:`debugging_tool_atmel-ice`
     - 
     - Yes
+  * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

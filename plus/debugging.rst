@@ -381,7 +381,7 @@ Adafruit
       - External
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
@@ -402,8 +402,8 @@ Adafruit
       - External
       - SAMD51P20A
       - 120MHz
-      - 496KB
-      - 192KB
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_hallowing`
       - :ref:`platform_atmelsam`
       - External
@@ -423,7 +423,7 @@ Adafruit
       - External
       - SAMD51G19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
@@ -437,14 +437,35 @@ Adafruit
       - External
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_metro_m4_airliftlite`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - External
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
@@ -460,6 +481,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_pybadge_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -1455,6 +1483,27 @@ Generic
       - 1MB
       - 192KB
 
+Gimasi
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelsam_tuinozero96`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+
 GreenWaves Technologies
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -2365,6 +2414,27 @@ RemRam
       - 2MB
       - 512KB
 
+ReprapWorld
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelsam_minitronics20`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+
 RoboticsBrno
 ~~~~~~~~~~~~
 
@@ -3008,6 +3078,27 @@ Samsung
       - 320MHz
       - 8MB
       - 1.25MB
+
+Seeed
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
 
 SeeedStudio
 ~~~~~~~~~~~

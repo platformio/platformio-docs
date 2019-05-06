@@ -796,6 +796,13 @@ Boards
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_minitronics20`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_moteino_zero`
       - :ref:`platform_atmelsam`
       - External
@@ -1629,6 +1636,13 @@ Boards
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf51_Sinobit`
       - :ref:`platform_nordicnrf51`
       - External
@@ -1692,6 +1706,13 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_atmelsam_tuinozero96`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`
       - External
