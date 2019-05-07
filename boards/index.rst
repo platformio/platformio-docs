@@ -440,6 +440,7 @@ Intel MCS-51 (8051)
     intel_mcs51/stc15w204s
     intel_mcs51/stc15w404as
     intel_mcs51/stc15w408as
+    intel_mcs51/stc89c52rc
 
 Kendryte K210
 -------------

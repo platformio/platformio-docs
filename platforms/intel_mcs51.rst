@@ -174,13 +174,19 @@ STC
       - 256B
     * - :ref:`board_intel_mcs51_stc15w404as`
       - No
-      - STC15W408AS
+      - STC15W404AS
       - 11MHz
       - 4KB
       - 512B
     * - :ref:`board_intel_mcs51_stc15w408as`
       - No
       - STC15W408AS
+      - 11MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_intel_mcs51_stc89c52rc`
+      - No
+      - STC89C52RC
       - 11MHz
       - 8KB
       - 512B
