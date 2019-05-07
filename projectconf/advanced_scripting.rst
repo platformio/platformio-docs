@@ -350,7 +350,7 @@ Let's create a simple ``ping`` target and process it with
 Examples
 ~~~~~~~~
 
-The beast examples are `PaltformIO development platforms <https://github.com/topics/platformio-platform>`__.
+The beast examples are `PlatformIO development platforms <https://github.com/topics/platformio-platform>`__.
 Please check ``builder`` folder for the main and framework scripts.
 
 Custom options in ``platformio.ini``
@@ -396,7 +396,7 @@ Split C/C++ build flags
     Import("env")
 
     # General options that are passed to the C and C++ compilers
-    env.Append(CCFLAGS=["flag1", "falg2"])
+    env.Append(CCFLAGS=["flag1", "flag2"])
 
     # General options that are passed to the C compiler (C only; not C++).
     env.Append(CFLAGS=["flag1", "flag2"])
