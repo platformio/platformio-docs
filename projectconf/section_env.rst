@@ -11,23 +11,75 @@
 
 .. _projectconf_section_env:
 
-Section ``[env:NAME]``
-----------------------
+Section ``[env]``
+=================
 
 .. contents::
     :local:
 
-A section with ``env:`` prefix is used to define virtual environment with
-specific options that will be processed with :ref:`cmd_run` command. You can
-define unlimited numbers of environments.
+Allows declaring configuration options for building, programming, debugging,
+unit testing, device monitoring, library dependencies, etc.
 
-Each environment must have unique ``NAME``. The valid chars for ``NAME`` are
+Global scope ``[env]``
+----------------------
 
-* letters ``a-z``
-* numbers ``0-9``
-* special char ``_`` (underscore)
+.. versionadded:: 4.0
 
+Allows declaring global options which will be shared between all ``[env:NAME]``
+sections in :ref:`projectconf`. It is very useful if the configuration file
+has a lot of local scopes ``[env:NAME]`` and they have common options.
+
+For example:
+
+.. code-block:: ini
+
+    [env]
+    platform = ststm32
+    framework = stm32cube
+    board = nucleo_l152re
+
+    [env:release]
+    build_flags = -D RELEASE
+
+    [env:debug]
+    build_flags = -D DEBUG
+
+In this example we have 2 build environments ``release`` and ``debug``. This
+is the same if you duplicate all options:
+
+.. code-block:: ini
+
+    [env:release]
+    platform = ststm32
+    framework = stm32cube
+    board = nucleo_l152re
+    build_flags = -D RELEASE
+
+    [env:debug]
+    platform = ststm32
+    framework = stm32cube
+    board = nucleo_l152re
+    build_flags = -D DEBUG
+
+
+Local scope ``[env:NAME]``
+--------------------------
+
+A section with ``env:`` prefix is used to define a build environment with
+local options (available only for this environment). PlatformIO uses
+``[env:NAME]`` environments for :ref:`cmd_run`, :ref:`cmd_test`,
+:ref:`cmd_debug`, and other commands.
+
+Each environment must have a unique ``NAME``. The valid chars for ``NAME`` are
+letters ``a-z``, numbers ``0-9``,  special char ``_`` (underscore).
 For example, ``[env:hello_world]``.
+Multiple ``[env:NAME]`` environments with different ``NAME`` are allowed.
+
+If you have more than one build environment and you need to process only a few
+of them, please check ``-e, --environment`` option for commands mentioned above.
+
+Options
+-------
 
 .. toctree::
     :maxdepth: 2
