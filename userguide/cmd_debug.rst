@@ -56,6 +56,13 @@ Specify the path to a project directory. By default, ``--project-dir`` is equal
 to a current working directory (``CWD``).
 
 .. option::
+    -c, --project-conf
+
+.. versionadded:: 4.0
+
+Process project with a custom :ref:`projectconf`.
+
+.. option::
     --interface
 
 PIO Debugging Interface. Valid values:

@@ -112,7 +112,7 @@ temporary directory within your operating system.
 Don't remove :option:`platformio ci --build-dir` after build process.
 
 .. option::
-    -P, --project-conf
+    -c, --project-conf
 
 Build project using pre-configured :ref:`projectconf`.
 
