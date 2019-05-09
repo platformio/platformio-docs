@@ -344,8 +344,6 @@ This option can be overridden by global environment variable
 ``lib_extra_dirs``
 ^^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 3.2
-
 A list with extra storages for a project where :ref:`ldf` will look for libraries.
 
 This option has the same behavior as :ref:`projectconf_lib_extra_dirs` option

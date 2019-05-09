@@ -14,8 +14,6 @@
 Advanced options
 ~~~~~~~~~~~~~~~~
 
-.. versionadded:: 3.4.1
-
 .. _projectconf_extra_scripts:
 
 ``extra_scripts``

@@ -14,7 +14,6 @@
 Library options
 ~~~~~~~~~~~~~~~
 
-.. versionadded:: 3.0
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
@@ -158,7 +157,6 @@ Example:
 ``lib_ldf_mode``
 ^^^^^^^^^^^^^^^^
 
-.. versionadded:: 3.0
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
@@ -197,8 +195,6 @@ Example:
 
 ``lib_archive``
 ^^^^^^^^^^^^^^^
-
-.. versionadded:: 3.4.1
 
 Create an archive (``*.a``, static library) from the object files and link it
 into a firmware (program). This is default behavior of PlatformIO Build System

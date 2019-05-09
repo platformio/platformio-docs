@@ -14,8 +14,6 @@
 Library Dependency Finder (LDF)
 ===============================
 
-.. versionadded:: 3.0
-
 Library Dependency Finder is a core part of PlatformIO Build System that
 operates with the C/C++ source files and looks for ``#include ...``
 directives.

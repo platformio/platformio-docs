@@ -14,7 +14,6 @@
 Debugging options
 ~~~~~~~~~~~~~~~~~
 
-.. versionadded:: 3.4
 .. seealso::
     Please make sure to read :ref:`piodebug` guide first.
 

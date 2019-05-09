@@ -33,17 +33,12 @@ Options
 .. option::
      -g, --global
 
-.. versionadded:: 3.0
-
-
 Manage global PlatformIO's library storage (
 ":ref:`projectconf_pio_home_dir`/lib") where :ref:`ldf` will look for
 dependencies by default.
 
 .. option::
     -d, --storage-dir
-
-.. versionadded:: 3.0
 
 Manage custom library storage. It can be used later for the
 :ref:`projectconf_lib_extra_dirs` option from :ref:`projectconf`.

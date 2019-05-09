@@ -14,8 +14,6 @@
 Advanced Scripting
 ------------------
 
-.. versionadded:: 3.4.1
-
 .. warning::
 
   Advanced Scripting is recommended for Advanced Users and requires Python

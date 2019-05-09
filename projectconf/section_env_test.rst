@@ -14,7 +14,6 @@
 Test options
 ============
 
-.. versionadded:: 3.0
 .. seealso::
     Please make sure to read :ref:`unit_testing` guide first.
 

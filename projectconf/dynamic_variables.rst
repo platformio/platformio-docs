@@ -14,8 +14,6 @@
 Dynamic variables
 -----------------
 
-.. versionadded:: 3.1
-
 Dynamic variables (interpolations) are useful when you have a custom
 configuration data between build environments. For examples, extra
 :ref:`projectconf_build_flags` or project dependencies :ref:`projectconf_lib_deps`.
