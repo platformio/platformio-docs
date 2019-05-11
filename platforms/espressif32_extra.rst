@@ -281,7 +281,7 @@ Demo code for:
 * `Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA/examples/BasicOTA>`_
 * `ESP-IDF <https://github.com/espressif/esp-idf/tree/master/examples/system/ota>`_
 
-There are 2 options how to upload firmware OTA:
+There are 2 options:
 
 * Directly specify :option:`platformio run --upload-port` in command line
 
@@ -291,15 +291,19 @@ There are 2 options how to upload firmware OTA:
 
 * Specify ``upload_port`` option in :ref:`projectconf`
 
+
+You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
+
 .. code-block:: ini
 
    [env:myenv]
+   upload_protocol = espota
    upload_port = IP_ADDRESS_HERE or mDNS_NAME.local
 
 For example,
 
 * ``platformio run -t upload --upload-port 192.168.0.255``
-* ``platformio run -t upload --upload-port myesp32.local``
+* ``platformio run -t upload --upload-port myesp8266.local``
 
 Authentication and upload options
 '''''''''''''''''''''''''''''''''
@@ -310,6 +314,7 @@ You can pass additional options/flags to OTA uploader using
 .. code-block:: ini
 
     [env:myenv]
+    upload_protocol = espota
     ; each flag in a new line
     upload_flags =
         --port=3232
