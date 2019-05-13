@@ -140,6 +140,22 @@ For example, switch to lwIP v1.4
     ...
     build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH
 
+SSL Support
+~~~~~~~~~~~
+
+By default, all SSL ciphers (most compatible) are supported.
+
+You can control SSL support passing a custom macro using project
+:ref:`projectconf_build_flags`.
+
+For example, use basic SSL ciphers (lower ROM use):
+
+.. code-block:: ini
+
+    [env:myenv]
+    ...
+    build_flags = -D BEARSSL_SSL_BASIC
+
 
 .. _platform_espressif8266_serial_debug:
 
