@@ -109,14 +109,6 @@
     $(window).scroll(function() {
       $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
-
-    $(document).ready(function() {
-      var editElm = $('.wy-breadcrumbs-aside a.fa-github');
-      if (editElm) {
-        editElm.attr('href', editElm.attr('href').replace('https://github.com/platformio/platformio-core/blob/develop/docs/', 'https://github.com/platformio/platformio-docs/blob/develop/'));
-      }
-    });
-
   })();
 </script>
 {{ super() }}
