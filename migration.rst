@@ -125,13 +125,13 @@ updated commands and options.
       - Allow one to make a choice for all prompts when install library
     * - :option:`platformio lib search --header`
       - Search library by specific header file name (include)
-    * - :option:`platformio lib update --only-check`
+    * - :option:`platformio lib update --dry-run`
       - Do not update, only check for new version
     * - :ref:`platformio platform <userguide_platform>`
       - New PlatformIO 3.0 Platform Manager! Semantic Versioning, VCS support and external URL support.
     * - :option:`platformio platform update --only-packages`
       - Update only platform packages
-    * - :option:`platformio platform update --only-check`
+    * - :option:`platformio platform update --dry-run`
       - Do not update, only check for new version
     * - :ref:`cmd_run`
       - By default, prints only human-readable information when processing environments
@@ -141,7 +141,7 @@ updated commands and options.
       - Force verbose output when processing environments (globally)
     * - :ref:`cmd_test`
       - PIO Plus Unit Testing
-    * - :option:`platformio update --only-check`
+    * - :option:`platformio update --dry-run`
       - Do not update, only check for new version
 
 :ref:`projectconf`

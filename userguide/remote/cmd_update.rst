@@ -41,7 +41,13 @@ Options
 .. option::
     -c, --only-check
 
-Do not update, only check for new version
+DEPRECATED. Please use ``--dry-run`` instead.
+
+
+.. option::
+    --dry-run
+
+Do not update, only check for the new versions
 
 
 Examples
