@@ -79,7 +79,7 @@ processes:
       - Add directory *dir* to the list of directories to be searched for
         ``-l``.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_BUILD_FLAGS`.
 
 For more detailed information about available flags/options go to:
@@ -216,7 +216,7 @@ An option ``src_build_flags`` has the same behavior like ``build_flags``
 but will be applied only for the project source code from
 :ref:`projectconf_pio_src_dir` directory.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_SRC_BUILD_FLAGS`.
 
 .. _projectconf_build_unflags:
@@ -252,5 +252,5 @@ By default, ``src_filter`` is predefined to
 that means "includes ALL files, then
 exclude ``.git`` and ``svn`` repository folders, ``example`` ... folder.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_SRC_FILTER`.

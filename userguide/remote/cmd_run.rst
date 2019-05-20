@@ -91,7 +91,7 @@ to current working directory (``CWD``).
 
 Shows detailed information when processing environments.
 
-This option can be set globally using :ref:`setting_force_verbose` setting
+This option can also be set globally using :ref:`setting_force_verbose` setting
 or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 
 .. option::

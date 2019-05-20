@@ -37,7 +37,7 @@ automatically.
 
 To print all available serial ports use :ref:`cmd_device_list` command.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_UPLOAD_PORT`.
 
 Please note that you can use Unix shell-style wildcards:
@@ -98,7 +98,7 @@ Extra flags for uploader. Will be added to the end of uploader command. If you
 need to override uploader command or base flags please use
 :ref:`projectconf_extra_scripts`.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_UPLOAD_FLAGS`.
 
 **Example**

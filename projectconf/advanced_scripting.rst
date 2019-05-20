@@ -72,7 +72,7 @@ For example, :ref:`projectconf`
     post:post_extra_script1.py
     post_extra_script2.py
 
-This option can be set by global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
+This option can also be set by global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
 
 Construction Environments
 ~~~~~~~~~~~~~~~~~~~~~~~~~
