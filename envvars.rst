@@ -152,6 +152,11 @@ Allows one to set :ref:`projectconf` option :ref:`projectconf_src_filter`.
 
 Allows one to set :ref:`projectconf` option :ref:`projectconf_extra_scripts`.
 
+.. envvar:: PLATFORMIO_LIB_EXTRA_DIRS
+
+Allows one to set :ref:`projectconf` option :ref:`projectconf_lib_extra_dirs`.
+
+
 Uploading
 ---------
 
