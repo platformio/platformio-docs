@@ -16,10 +16,8 @@ Environment variables
 
 `Environment variables <http://en.wikipedia.org/wiki/Environment_variable>`_
 are a set of dynamic named values that can affect the way running processes
-will behave on a computer.
-
-*PlatformIO* handles variables which start with ``PLATFORMIO_`` prefix. They
-have the **HIGHEST PRIORITY**.
+will behave on a computer. PlatformIO handles variables which start with
+``PLATFORMIO_`` prefix.
 
 How to set environment variable?
 
@@ -27,6 +25,8 @@ How to set environment variable?
 
     # Windows
     set VARIABLE_NAME=VALUE
+
+    # Windows GUI -> https://www.youtube.com/watch?v=bEroNNzqlF4
 
     # Unix (bash, zsh)
     export VARIABLE_NAME=VALUE
@@ -75,6 +75,10 @@ The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_
 .. envvar:: PLATFORMIO_HOME_DIR
 
 Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_home_dir`.
+
+.. envvar:: PLATFORMIO_WORKSPACE_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_workspace_dir`.
 
 .. envvar:: PLATFORMIO_INCLUDE_DIR
 

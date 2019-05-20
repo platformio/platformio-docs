@@ -151,43 +151,43 @@ Test results
     Collected 24 compatible libraries
     Scanning dependencies...
     No dependencies
-    Compiling .pioenvs\uno\test\output_export.cpp.o
-    Compiling .pioenvs\uno\test\test_main.cpp.o
-    Archiving .pioenvs\uno\libFrameworkArduinoVariant.a
-    Compiling .pioenvs\uno\FrameworkArduino\CDC.cpp.o
-    Indexing .pioenvs\uno\libFrameworkArduinoVariant.a
-    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial0.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial1.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial2.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\HardwareSerial3.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\IPAddress.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\PluggableUSB.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\Print.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\Stream.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\Tone.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\USBCore.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\WInterrupts.c.o
-    Compiling .pioenvs\uno\FrameworkArduino\WMath.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\WString.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\abi.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\hooks.c.o
-    Compiling .pioenvs\uno\FrameworkArduino\main.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\new.cpp.o
-    Compiling .pioenvs\uno\FrameworkArduino\wiring.c.o
-    Compiling .pioenvs\uno\FrameworkArduino\wiring_analog.c.o
-    Compiling .pioenvs\uno\FrameworkArduino\wiring_digital.c.o
-    Compiling .pioenvs\uno\FrameworkArduino\wiring_pulse.S.o
-    Compiling .pioenvs\uno\FrameworkArduino\wiring_pulse.c.o
-    Compiling .pioenvs\uno\FrameworkArduino\wiring_shift.c.o
-    Compiling .pioenvs\uno\UnityTestLib\unity.o
-    Archiving .pioenvs\uno\libFrameworkArduino.a
-    Indexing .pioenvs\uno\libFrameworkArduino.a
-    Archiving .pioenvs\uno\libUnityTestLib.a
-    Indexing .pioenvs\uno\libUnityTestLib.a
-    Linking .pioenvs\uno\firmware.elf
-    Checking size .pioenvs\uno\firmware.elf
-    Building .pioenvs\uno\firmware.hex
+    Compiling .pio\build\uno\test\output_export.cpp.o
+    Compiling .pio\build\uno\test\test_main.cpp.o
+    Archiving .pio\build\uno\libFrameworkArduinoVariant.a
+    Compiling .pio\build\uno\FrameworkArduino\CDC.cpp.o
+    Indexing .pio\build\uno\libFrameworkArduinoVariant.a
+    Compiling .pio\build\uno\FrameworkArduino\HardwareSerial.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\HardwareSerial0.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\HardwareSerial1.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\HardwareSerial2.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\HardwareSerial3.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\IPAddress.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\PluggableUSB.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\Print.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\Stream.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\Tone.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\USBCore.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\WInterrupts.c.o
+    Compiling .pio\build\uno\FrameworkArduino\WMath.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\WString.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\abi.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\hooks.c.o
+    Compiling .pio\build\uno\FrameworkArduino\main.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\new.cpp.o
+    Compiling .pio\build\uno\FrameworkArduino\wiring.c.o
+    Compiling .pio\build\uno\FrameworkArduino\wiring_analog.c.o
+    Compiling .pio\build\uno\FrameworkArduino\wiring_digital.c.o
+    Compiling .pio\build\uno\FrameworkArduino\wiring_pulse.S.o
+    Compiling .pio\build\uno\FrameworkArduino\wiring_pulse.c.o
+    Compiling .pio\build\uno\FrameworkArduino\wiring_shift.c.o
+    Compiling .pio\build\uno\UnityTestLib\unity.o
+    Archiving .pio\build\uno\libFrameworkArduino.a
+    Indexing .pio\build\uno\libFrameworkArduino.a
+    Archiving .pio\build\uno\libUnityTestLib.a
+    Indexing .pio\build\uno\libUnityTestLib.a
+    Linking .pio\build\uno\firmware.elf
+    Checking size .pio\build\uno\firmware.elf
+    Building .pio\build\uno\firmware.hex
     Memory Usage -> http://bit.ly/pio-memory-usage
     DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
     PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
@@ -208,7 +208,7 @@ Test results
     Collected 24 compatible libraries
     Scanning dependencies...
     No dependencies
-    Checking size .pioenvs\uno\firmware.elf
+    Checking size .pio\build\uno\firmware.elf
     Memory Usage -> http://bit.ly/pio-memory-usage
     DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
     PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
@@ -217,22 +217,22 @@ Test results
     CURRENT: upload_protocol = arduino
     Looking for upload port...
     Auto-detected: COM18
-    Uploading .pioenvs\uno\firmware.hex
+    Uploading .pio\build\uno\firmware.hex
 
     avrdude: AVR device initialized and ready to accept instructions
 
     Reading | ################################################## | 100% 0.00s
 
     avrdude: Device signature = 0x1e950f (probably m328p)
-    avrdude: reading input file ".pioenvs\uno\firmware.hex"
+    avrdude: reading input file ".pio\build\uno\firmware.hex"
     avrdude: writing flash (4060 bytes):
 
     Writing | ################################################## | 100% 0.76s
 
     avrdude: 4060 bytes of flash written
-    avrdude: verifying flash memory against .pioenvs\uno\firmware.hex:
-    avrdude: load data flash data from input file .pioenvs\uno\firmware.hex:
-    avrdude: input file .pioenvs\uno\firmware.hex contains 4060 bytes
+    avrdude: verifying flash memory against .pio\build\uno\firmware.hex:
+    avrdude: load data flash data from input file .pio\build\uno\firmware.hex:
+    avrdude: input file .pio\build\uno\firmware.hex contains 4060 bytes
     avrdude: reading on-chip flash data:
 
     Reading | ################################################## | 100% 0.48s
