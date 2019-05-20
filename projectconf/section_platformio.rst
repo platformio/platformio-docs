@@ -361,20 +361,6 @@ that folder is located in the root of project.
 This option can also be configured by global environment variable
 :envvar:`PLATFORMIO_LIBDEPS_DIR`.
 
-.. _projectconf_global_lib_extra_dirs:
-
-``lib_extra_dirs``
-^^^^^^^^^^^^^^^^^^
-
-A list with extra storages for a project where :ref:`ldf` will look for libraries.
-
-This option has the same behavior as :ref:`projectconf_lib_extra_dirs` option
-for a specific build environment defined in ``[env:]`` section. The main
-difference is that the option which is defined in ``[platofrmio]`` section
-will be extra applied automatically for all ``[env:]`` sections.
-
-For the possible values and examples please follow to :ref:`projectconf_lib_extra_dirs`.
-
 .. _projectconf_pio_data_dir:
 
 ``data_dir``

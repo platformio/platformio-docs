@@ -72,6 +72,9 @@ Disable progress bar for package/library downloader and uploader. This is
 useful when calling PlatformIO from subprocess and output is a ``pipe`` (not a ``tty``).
 The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_PROGRESSBAR=false``.
 
+Directories
+-----------
+
 .. envvar:: PLATFORMIO_HOME_DIR
 
 Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_home_dir`.
@@ -148,11 +151,6 @@ Allows one to set :ref:`projectconf` option :ref:`projectconf_src_filter`.
 .. envvar:: PLATFORMIO_EXTRA_SCRIPTS
 
 Allows one to set :ref:`projectconf` option :ref:`projectconf_extra_scripts`.
-
-.. envvar:: PLATFORMIO_LIB_EXTRA_DIRS
-
-Allows one to set :ref:`projectconf` option :ref:`projectconf_lib_extra_dirs`.
-
 
 Uploading
 ---------

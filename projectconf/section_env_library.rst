@@ -134,11 +134,7 @@ put each library name in a separate new line.
 
 A list with extra directories/storages where :ref:`ldf` will
 look for dependencies. Multiple paths are allowed. *Please separate them
-using comma+space ", "*.
-
-This option can be set by global environment variable
-:envvar:`PLATFORMIO_LIB_EXTRA_DIRS` or using global ``[platformio]`` section
-and :ref:`projectconf_global_lib_extra_dirs` option.
+using comma+space ", " or place each path in a new line*.
 
 .. warning::
   This is a not direct path to a library with source code. It should be a path

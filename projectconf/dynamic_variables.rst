@@ -27,8 +27,9 @@ For example, ``${sysenv.HOME}``.
 
 * Variable can be applied only for the option's value
 * Multiple variables are allowed
-* The ``platformio`` and ``env`` sections are reserved and could not be used
-  as a custom section. Some good section names might be ``extra`` or ``custom``.
+* The :ref:`projectconf_section_platformio` and :ref:`projectconf_section_env`
+  sections are reserved and could not be used as a custom section. Some good
+  section names might be ``extra`` or ``custom``.
 
 .. note::
     If you need to **share common configuration options** between all build
@@ -39,7 +40,7 @@ Example:
 
 .. code-block:: ini
 
-    [platformio]
+    [env]
     ; Unix
     lib_extra_dirs = ${sysenv.HOME}/Documents/Arduino/libraries
     ; Windows
