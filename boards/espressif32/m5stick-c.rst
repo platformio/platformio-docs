@@ -63,6 +63,26 @@ board manifest `m5stick-c.json <https://github.com/platformio/platform-espressif
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+M5Stick-C supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:m5stick-c]
+  platform = espressif32
+  board = m5stick-c
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support M5Stick-C board.

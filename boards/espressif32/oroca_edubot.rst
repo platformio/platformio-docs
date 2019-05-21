@@ -63,6 +63,26 @@ board manifest `oroca_edubot.json <https://github.com/platformio/platform-espres
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+OROCA EduBot supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:oroca_edubot]
+  platform = espressif32
+  board = oroca_edubot
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support OROCA EduBot board.

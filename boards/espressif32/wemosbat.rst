@@ -69,6 +69,7 @@ Uploading
 WeMos WiFi and Bluetooth Battery supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

@@ -63,6 +63,26 @@ board manifest `onehorse32dev.json <https://github.com/platformio/platform-espre
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+Onehorse ESP32 Dev Module supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:onehorse32dev]
+  platform = espressif32
+  board = onehorse32dev
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Onehorse ESP32 Dev Module board.

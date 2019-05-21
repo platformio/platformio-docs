@@ -63,6 +63,26 @@ board manifest `pico32.json <https://github.com/platformio/platform-espressif32/
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+ESP32 Pico Kit supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:pico32]
+  platform = espressif32
+  board = pico32
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support ESP32 Pico Kit board.

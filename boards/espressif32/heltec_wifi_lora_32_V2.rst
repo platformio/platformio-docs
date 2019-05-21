@@ -69,6 +69,7 @@ Uploading
 Heltec WiFi LoRa 32 (V2) supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

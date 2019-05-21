@@ -63,6 +63,26 @@ board manifest `quantum.json <https://github.com/platformio/platform-espressif32
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+Noduino Quantum supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:quantum]
+  platform = espressif32
+  board = quantum
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Noduino Quantum board.

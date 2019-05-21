@@ -63,6 +63,26 @@ board manifest `intorobot.json <https://github.com/platformio/platform-espressif
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+IntoRobot Fig supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:intorobot]
+  platform = espressif32
+  board = intorobot
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support IntoRobot Fig board.

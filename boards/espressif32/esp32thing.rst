@@ -69,6 +69,7 @@ Uploading
 SparkFun ESP32 Thing supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

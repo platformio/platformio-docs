@@ -69,6 +69,7 @@ Uploading
 DOIT ESP32 DEVKIT V1 supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

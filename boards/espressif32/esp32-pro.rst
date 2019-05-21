@@ -63,6 +63,26 @@ board manifest `esp32-pro.json <https://github.com/platformio/platform-espressif
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+OLIMEX ESP32-PRO supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:esp32-pro]
+  platform = espressif32
+  board = esp32-pro
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support OLIMEX ESP32-PRO board.

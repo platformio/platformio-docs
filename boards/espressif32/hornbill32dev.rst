@@ -69,6 +69,7 @@ Uploading
 Hornbill ESP32 Dev supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

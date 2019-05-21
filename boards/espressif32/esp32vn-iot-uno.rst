@@ -69,6 +69,7 @@ Uploading
 ESP32vn IoT Uno supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

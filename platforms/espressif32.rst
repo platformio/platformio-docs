@@ -347,9 +347,6 @@ Packages
     * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
       - Simba Framework
 
-    * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py?utm_source=platformio&utm_medium=docs>`__
-      - ESP8266 OTA utility
-
     * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio&utm_medium=docs>`__
       - ESP8266 and ESP32 serial bootloader utility
 

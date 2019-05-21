@@ -63,6 +63,26 @@ board manifest `widora-air.json <https://github.com/platformio/platform-espressi
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+Widora AIR supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:widora-air]
+  platform = espressif32
+  board = widora-air
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Widora AIR board.
