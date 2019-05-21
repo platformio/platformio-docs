@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_nordicnrf51_ng_beacon:
+.. _board_nordicnrf51_nrf51_beacon:
 
-ng-beacon
-=========
+Nordic Beacon Kit (PCA20006)
+============================
 
 .. contents::
 
@@ -26,49 +26,50 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **Microcontroller**
     - NRF51822
   * - **Frequency**
-    - 16MHz
+    - 32MHz
   * - **Flash**
     - 256KB
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `ng-beacon <https://github.com/urish/ng-beacon?utm_source=platformio&utm_medium=docs>`__
+    - `Nordic <https://www.nordicsemi.com/Software-and-Tools/Reference-Designs/nRF51822-Beacon-Kit?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``ng_beacon`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nrf51_beacon`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ng_beacon]
+  [env:nrf51_beacon]
   platform = nordicnrf51
-  board = ng_beacon
+  board = nrf51_beacon
 
-You can override default ng-beacon settings per build environment using
+You can override default Nordic Beacon Kit (PCA20006) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ng_beacon.json <https://github.com/platformio/platform-nordicnrf51/blob/master/boards/ng_beacon.json>`_. For example,
+board manifest `nrf51_beacon.json <https://github.com/platformio/platform-nordicnrf51/blob/master/boards/nrf51_beacon.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ng_beacon]
+  [env:nrf51_beacon]
   platform = nordicnrf51
-  board = ng_beacon
+  board = nrf51_beacon
 
   ; change microcontroller
   board_build.mcu = nrf51822
 
   ; change MCU frequency
-  board_build.f_cpu = 16000000L
+  board_build.f_cpu = 32000000L
 
 
 Uploading
 ---------
-ng-beacon supports the next uploading protocols:
+Nordic Beacon Kit (PCA20006) supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``nrfjprog``
 * ``stlink``
@@ -79,9 +80,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:ng_beacon]
+  [env:nrf51_beacon]
   platform = nordicnrf51
-  board = ng_beacon
+  board = nrf51_beacon
 
   upload_protocol = jlink
 
@@ -98,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ng-beacon does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Nordic Beacon Kit (PCA20006) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -108,9 +109,12 @@ ng-beacon does not have on-board debug probe and **IS NOT READY** for debugging.
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
+    - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
+    - Yes
     - 
   * - :ref:`debugging_tool_stlink`
     - 

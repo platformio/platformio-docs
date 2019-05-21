@@ -261,3 +261,28 @@ Maxim
       - 24MHz
       - 256KB
       - 32KB
+
+Sigma Delta Technologies
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_maxim32_sdt32620b`
+      - No
+      - MAX32620IWG
+      - 96MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_maxim32_sdt32625b`
+      - No
+      - MAX32625ITK
+      - 96MHz
+      - 512KB
+      - 160KB

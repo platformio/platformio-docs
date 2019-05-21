@@ -149,6 +149,11 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_sdt52832b`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
       - NRF52832
       - 64MHz
@@ -383,6 +388,25 @@ RedBearLab
       - 64KB
     * - :ref:`board_nordicnrf52_redbear_blend2`
       - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
+Sigma Delta Technologies
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_sdt52832b`
+      - External
       - NRF52832
       - 64MHz
       - 512KB

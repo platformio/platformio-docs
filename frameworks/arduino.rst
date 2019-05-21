@@ -107,6 +107,12 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf51_calliope_mini`
+      - :ref:`platform_nordicnrf51`
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -125,13 +131,19 @@ You do not need to use/buy external debug probe.
       - 100MHz
       - 1MB
       - 256KB
-    * - :ref:`board_nordicnrf51_nrf51_dk`
+    * - :ref:`board_nordicnrf51_nrf51_beacon`
       - :ref:`platform_nordicnrf51`
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
+      - :ref:`platform_nordicnrf51`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - NRF51822
       - 32MHz
@@ -1293,7 +1305,7 @@ Please click on board name for the further details.
     * - :ref:`board_nordicnrf51_ng_beacon`
       - :ref:`platform_nordicnrf51`
       - NRF51822
-      - 32MHz
+      - 16MHz
       - 256KB
       - 32KB
     * - :ref:`board_espressif32_iotbusio`
@@ -2561,6 +2573,27 @@ BluzDK
       - 32MHz
       - 256KB
       - 32KB
+
+Calliope
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf51_calliope_mini`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
 
 Controllino
 ~~~~~~~~~~~
@@ -4395,7 +4428,7 @@ Nordic
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_nrf51_dk`
+    * - :ref:`board_nordicnrf51_nrf51_beacon`
       - :ref:`platform_nordicnrf51`
       - On-board
       - NRF51822
@@ -4403,6 +4436,13 @@ Nordic
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - On-board
       - NRF51822
@@ -6359,7 +6399,7 @@ ng-beacon
       - :ref:`platform_nordicnrf51`
       - External
       - NRF51822
-      - 32MHz
+      - 16MHz
       - 256KB
       - 32KB
 

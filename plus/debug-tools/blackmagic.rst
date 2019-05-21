@@ -705,6 +705,13 @@ Boards
       - 48MHz
       - 64KB
       - 16KB
+    * - :ref:`board_ststm32_rhombio_l476dmw1k`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L476VGT6
+      - 80MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nxplpc_lpc11u68`
       - :ref:`platform_nxplpc`
       - On-board
@@ -894,6 +901,13 @@ Boards
       - 96MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf51_nrf51_beacon`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -978,6 +992,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_nordicnrf52_sdt52832b`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
       - :ref:`platform_siliconlabsefm32`
       - On-board
@@ -1731,9 +1752,16 @@ Boards
       - :ref:`platform_nordicnrf51`
       - External
       - NRF51822
-      - 32MHz
+      - 16MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_sakuraio_evb_01`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F411RET6
+      - 100MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nxplpc_ubloxc027`
       - :ref:`platform_nxplpc`
       - On-board
