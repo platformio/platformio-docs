@@ -275,6 +275,10 @@ they are not “root”, doing this issuing
     sudo usermod -a -G dialout $USER
     sudo usermod -a -G plugdev $USER
 
+.. note::
+  You will need to log out and log back in again (or reboot) for the user
+  group changes to take effect. 
+
 After this file is installed, physically unplug and reconnect your board.
 
 ImportError: cannot import name _remove_dead_weakref
