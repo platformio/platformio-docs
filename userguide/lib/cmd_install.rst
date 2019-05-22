@@ -34,7 +34,7 @@ Usage
 
     # install to custom storage
     platformio lib --storage-dir /path/to/dir install [OPTIONS] [LIBRARY...]
-    platformio lib -d /path/to/dir install [OPTIONS] [LIBRARY...]
+    platformio lib -d /path/to/dir1 -d /path/to/dir2 install [OPTIONS] [LIBRARY...]
 
     # [LIBRARY...] forms
     platformio lib [STORAGE_OPTIONS] install (with no args, project dependencies)

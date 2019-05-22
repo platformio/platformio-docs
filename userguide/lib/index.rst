@@ -31,6 +31,13 @@ Options
 .. program:: platformio lib
 
 .. option::
+    -d, --storage-dir
+
+Manage custom library storage. It can be used later for the
+:ref:`projectconf_lib_extra_dirs` option from :ref:`projectconf`.
+Multiple options are allowed.
+
+.. option::
      -g, --global
 
 Manage global PlatformIO's library storage (
@@ -38,10 +45,11 @@ Manage global PlatformIO's library storage (
 dependencies by default.
 
 .. option::
-    -d, --storage-dir
+     -e, --environment
 
-Manage custom library storage. It can be used later for the
-:ref:`projectconf_lib_extra_dirs` option from :ref:`projectconf`.
+Manage libraries for the specific project build environments declared in
+:ref:`projectconf`. Works for ``--storage-dir`` which is valid PlatformIO
+project.
 
 Demo
 ----

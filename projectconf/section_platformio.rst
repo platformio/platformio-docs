@@ -270,6 +270,18 @@ This option can also be configured by global environment variable
     this situation you will remove all cached files without any risk. Also,
     you can use "clean" target for :option:`platformio run --target` command.
 
+.. _projectconf_pio_libdeps_dir:
+
+``libdeps_dir``
+^^^^^^^^^^^^^^^
+
+Internal storage where :ref:`librarymanager` will install project dependencies
+(:ref:`projectconf_lib_deps`). A default value is
+":ref:`projectconf_pio_workspace_dir`/libdeps".
+
+This option can also be configured by global environment variable
+:envvar:`PLATFORMIO_LIBDEPS_DIR`.
+
 .. _projectconf_pio_include_dir:
 
 ``include_dir``
@@ -348,18 +360,6 @@ Then in ``src/main.c`` you should use:
 
 PlatformIO will find your libraries automatically, configure preprocessor's
 include paths and build them.
-
-.. _projectconf_pio_libdeps_dir:
-
-``libdeps_dir``
-^^^^^^^^^^^^^^^
-
-Internal storage where :ref:`librarymanager` will install project dependencies
-(:ref:`projectconf_lib_deps`). A default value is ``.piolibdeps`` that means
-that folder is located in the root of project.
-
-This option can also be configured by global environment variable
-:envvar:`PLATFORMIO_LIBDEPS_DIR`.
 
 .. _projectconf_pio_data_dir:
 
