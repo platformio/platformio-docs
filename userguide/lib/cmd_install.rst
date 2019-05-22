@@ -36,6 +36,10 @@ Usage
     platformio lib --storage-dir /path/to/dir install [OPTIONS] [LIBRARY...]
     platformio lib -d /path/to/dir1 -d /path/to/dir2 install [OPTIONS] [LIBRARY...]
 
+    # install dependencies for the specific project build environment
+    platformio lib -e myenv install [OPTIONS] [LIBRARY...]
+    platformio lib -d /path/to/platformio/project -e myenv install [OPTIONS] [LIBRARY...]
+
     # [LIBRARY...] forms
     platformio lib [STORAGE_OPTIONS] install (with no args, project dependencies)
     platformio lib [STORAGE_OPTIONS] install <id>

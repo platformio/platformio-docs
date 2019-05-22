@@ -38,14 +38,14 @@ Manage custom library storage. It can be used later for the
 Multiple options are allowed.
 
 .. option::
-     -g, --global
+    -g, --global
 
 Manage global PlatformIO's library storage (
 ":ref:`projectconf_pio_home_dir`/lib") where :ref:`ldf` will look for
 dependencies by default.
 
 .. option::
-     -e, --environment
+    -e, --environment
 
 Manage libraries for the specific project build environments declared in
 :ref:`projectconf`. Works for ``--storage-dir`` which is valid PlatformIO
