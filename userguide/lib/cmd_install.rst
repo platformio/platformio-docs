@@ -110,6 +110,16 @@ Options
 .. program:: platformio lib install
 
 .. option::
+    --save
+
+Save installed libraries into the :ref:`projectconf` dependency list
+(:ref:`projectconf_lib_deps`).
+
+You can save libraries for the specific project environment using
+``-e, --environment`` option from :ref:`platformio lib <cmd_lib>` command. For example,
+``platformio lib -e myenv install [LIBRARY...]``.
+
+.. option::
     -s, --silent
 
 Suppress progress reporting
