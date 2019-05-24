@@ -182,13 +182,13 @@ method is very good if you don't want to install PlatformIO Core Python's
 dependencies (packages) into your global system scope. :ref:`pioide` uses this
 method to install PlatformIO Core.
 
-Default and recommended environment folder is ":ref:`projectconf_pio_home_dir`/penv".
+Default and recommended environment folder is ":ref:`projectconf_pio_core_dir`/penv".
 You can print **environment folder path** using the next command in your
 system terminal:
 
 .. code-block:: bash
 
-    python -c "import os; print os.path.join(os.getenv('PLATFORMIO_HOME_DIR', os.path.join(os.path.expanduser('~'), '.platformio')), 'penv')"
+    python -c "import os; print os.path.join(os.getenv('PLATFORMIO_CORE_DIR', os.path.join(os.path.expanduser('~'), '.platformio')), 'penv')"
 
     ######################## Examples
     # Windows
@@ -411,7 +411,7 @@ Uninstall PIO Core and dependent packages
         # uninstall Homebrew's PIO Core (only macOS users if you installed it via Homebrew before)
         brew uninstall platformio
 
-* Dependent packages, global libraries are installed to :ref:`projectconf_pio_home_dir`
+* Dependent packages, global libraries are installed to :ref:`projectconf_pio_core_dir`
   folder (in user's HOME directory). Just remove it.
 
 Troubleshooting

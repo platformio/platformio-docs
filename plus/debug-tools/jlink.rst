@@ -72,7 +72,7 @@ Drivers
 :Windows:
   1. Start debugging session using :ref:`pioide`. PlatformIO will install
      J-Link software dependencies
-  2. Navigate to :ref:`projectconf_pio_home_dir`/packages/tool-jlink/USBDriver
+  2. Navigate to :ref:`projectconf_pio_core_dir`/packages/tool-jlink/USBDriver
   3. Run ``InstDrivers.exe``.
 
 :Mac:

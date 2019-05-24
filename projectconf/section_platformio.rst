@@ -36,13 +36,54 @@ for :ref:`piocore`.
 
     See below available directory ``***_dir`` options.
 
-Options
-~~~~~~~
+Generic options
+~~~~~~~~~~~~~~~
 
 ``description``
 ^^^^^^^^^^^^^^^
 Describe a project with a short information. PlatformIO uses it for
 :ref:`piohome` in the multiple places.
+
+.. _projectconf_pio_env_default:
+
+``env_default``
+^^^^^^^^^^^^^^^
+
+:ref:`cmd_run` command processes all environments ``[env:***]`` by default
+if :option:`platformio run --environment` option is not specified.
+:ref:`projectconf_pio_env_default` allows one to define environments which
+should be processed by default.
+
+Also, :ref:`piodebug` checks this option when looking for debug environment.
+
+Multiple environments are allowed if they *are separated with ", "
+(comma+space)*. For example.
+
+.. code-block:: ini
+
+    [platformio]
+    env_default = uno, nodemcu
+
+    [env:uno]
+    platform = atmelavr
+    framework = arduino
+    board = uno
+
+    [env:nodemcu]
+    platform = espressif8266
+    framework = arduino
+    board = nodemcu
+
+    [env:teensy31]
+    platform = teensy
+    framework = arduino
+    board = teensy31
+
+    [env:lpmsp430g2553]
+    platform = timsp430
+    framework = energia
+    board = lpmsp430g2553
+    build_flags = -D LED_BUILTIN=RED_LED
 
 ``extra_configs``
 ^^^^^^^^^^^^^^^^^
@@ -155,55 +196,19 @@ After a parsing process, configuration state will be the next:
     board = lolin32
     build_flags = -Og
 
-.. _projectconf_pio_env_default:
 
-``env_default``
-^^^^^^^^^^^^^^^
+Directory options
+~~~~~~~~~~~~~~~~~
 
-:ref:`cmd_run` command processes all environments ``[env:***]`` by default
-if :option:`platformio run --environment` option is not specified.
-:ref:`projectconf_pio_env_default` allows one to define environments which
-should be processed by default.
+.. _projectconf_pio_core_dir:
 
-Also, :ref:`piodebug` checks this option when looking for debug environment.
-
-Multiple environments are allowed if they *are separated with ", "
-(comma+space)*. For example.
-
-.. code-block:: ini
-
-    [platformio]
-    env_default = uno, nodemcu
-
-    [env:uno]
-    platform = atmelavr
-    framework = arduino
-    board = uno
-
-    [env:nodemcu]
-    platform = espressif8266
-    framework = arduino
-    board = nodemcu
-
-    [env:teensy31]
-    platform = teensy
-    framework = arduino
-    board = teensy31
-
-    [env:lpmsp430g2553]
-    platform = timsp430
-    framework = energia
-    board = lpmsp430g2553
-    build_flags = -D LED_BUILTIN=RED_LED
-
-.. _projectconf_pio_home_dir:
-
-``home_dir``
+``core_dir``
 ^^^^^^^^^^^^
 
-Is used to store platform toolchains, frameworks, global libraries for
-:ref:`ldf`, service data and etc. The size of this folder will depend on
-number of installed development platforms.
+Is used to store development platform packages (toolchains, frameworks, SDKs,
+upload and debug tools), global libraries for :ref:`ldf`, and other PlatformIO
+Core service data. The size of this folder will depend on number of installed
+development platforms.
 
 A default value is User's home directory:
 
@@ -211,15 +216,61 @@ A default value is User's home directory:
 * Windows ``%HOMEPATH%\.platformio``
 
 This option can also be configured by global environment variable
-:envvar:`PLATFORMIO_HOME_DIR`.
+:envvar:`PLATFORMIO_CORE_DIR`.
 
 Example:
 
 .. code-block:: ini
 
     [platformio]
-    home_dir = /path/to/custom/pio/storage
+    core_dir = /path/to/custom/pio-core/storage
 
+.. _projectconf_pio_globallib_dir:
+
+``globallib_dir``
+^^^^^^^^^^^^^^^^^
+
+Global library storage for PlatfrmIO projects and :ref:`librarymanager` where
+:ref:`ldf` looks for dependencies.
+A default value is ":ref:`projectconf_pio_core_dir`/lib" .
+
+This option can also be configured by global environment variable
+:envvar:`PLATFORMIO_GLOBALLIB_DIR`.
+
+.. _projectconf_pio_platforms_dir:
+
+``platforms_dir``
+^^^^^^^^^^^^^^^^^
+
+Global storage where **PlatformIO Package Manager** installs :ref:`platforms`.
+A default value is ":ref:`projectconf_pio_core_dir`/platforms" .
+
+This option can also be configured by global environment variable
+:envvar:`PLATFORMIO_PLATFORMS_DIR`.
+
+.. _projectconf_pio_packages_dir:
+
+``packages_dir``
+^^^^^^^^^^^^^^^^
+
+Global storage where **PlatformIO Package Manager** installs :ref:`platforms`
+dependencies (toolchains, :ref:`frameworks`, SDKs, upload and debug tools).
+A default value is ":ref:`projectconf_pio_core_dir`/packages" .
+
+This option can also be configured by global environment variable
+:envvar:`PLATFORMIO_PACKAGES_DIR`.
+
+.. _projectconf_pio_cache_dir:
+
+``cache_dir``
+^^^^^^^^^^^^^
+
+:ref:`piocore` uses this folder to store caching information (requests to
+PlatformIO Registry, downloaded libraries and other service information).
+A default value is ":ref:`projectconf_pio_core_dir`/cache" .
+
+This option can also be configured by global environment variable
+:envvar:`PLATFORMIO_CACHE_DIR`.
 
 .. _projectconf_pio_workspace_dir:
 
@@ -287,7 +338,7 @@ This option can also be configured by global environment variable
 ``include_dir``
 ^^^^^^^^^^^^^^^
 
-A path to project's default headers files. PlatformIO uses it for :ref:`cmd_run`
+A path to project's default header files. PlatformIO uses it for :ref:`cmd_run`
 command. A default value is ``include`` that means that folder is located in the
 root of project. This path will be added to ``CPPPATH`` of build environment.
 
@@ -397,8 +448,8 @@ project.
 By default, PlatformIO looks for boards in this order:
 
 1. Project :ref:`projectconf_pio_boards_dir`
-2. Global :ref:`projectconf_pio_home_dir`/boards
-3. Development platform :ref:`projectconf_pio_home_dir`/platforms/\*/boards.
+2. Global :ref:`projectconf_pio_core_dir`/boards
+3. Development platform :ref:`projectconf_pio_core_dir`/platforms/\*/boards.
 
 This option can also be configured by global environment variable
 :envvar:`PLATFORMIO_BOARDS_DIR`.

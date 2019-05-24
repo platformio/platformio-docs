@@ -12,7 +12,7 @@
 .. _projectconf_section_env_advanced:
 
 Advanced options
-~~~~~~~~~~~~~~~~
+----------------
 
 .. _projectconf_extra_scripts:
 

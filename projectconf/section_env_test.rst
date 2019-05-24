@@ -12,7 +12,7 @@
 .. _projectconf_section_env_test:
 
 Test options
-============
+------------
 
 .. seealso::
     Please make sure to read :ref:`unit_testing` guide first.
@@ -23,7 +23,7 @@ Test options
 .. _projectconf_test_filter:
 
 ``test_filter``
----------------
+^^^^^^^^^^^^^^^
 
 Process only the :ref:`unit_testing` tests where the name matches specified
 patterns. Multiple names are allowed. *Please separate them using comma+space ", "*.
@@ -58,7 +58,7 @@ Also, you can filter some tests using :option:`platformio test --filter` command
 .. _projectconf_test_ignore:
 
 ``test_ignore``
----------------
+^^^^^^^^^^^^^^^
 
 Ignore :ref:`unit_testing` tests where the name matches specified patterns.
 Multiple names are allowed. *Please separate them using comma+space ", "*.
@@ -93,7 +93,7 @@ Also, you can ignore some tests using :option:`platformio test --ignore` command
 .. _projectconf_test_port:
 
 ``test_port``
--------------
+^^^^^^^^^^^^^
 
 This option specifies communication interface (Serial/UART) between PlatformIO
 :ref:`unit_testing` Engine and target device. For example,
@@ -109,7 +109,7 @@ To print all available serial ports use :ref:`cmd_device_list` command.
 .. _projectconf_test_speed:
 
 ``test_speed``
---------------
+^^^^^^^^^^^^^^
 
 A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
 to communicate with a target device. Default is ``115200``.
@@ -117,7 +117,7 @@ to communicate with a target device. Default is ``115200``.
 .. _projectconf_test_transport:
 
 ``test_transport``
-------------------
+^^^^^^^^^^^^^^^^^^
 
 :ref:`unit_testing` engine uses different transports to communicate with a
 target device. By default, it uses ``Serial/UART`` transport provided
@@ -134,8 +134,7 @@ You can also define ``custom`` transport and implement its interface:
 * ``unittest_uart_flush();``
 * ``unittest_uart_end();``
 
-Examples
-~~~~~~~~
+**Examples**
 
 1. Custom transport for :ref:`platform_native` platform
 
@@ -180,7 +179,7 @@ Examples
 .. _projectconf_test_build_project_src:
 
 ``test_build_project_src``
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Force :ref:`unit_testing` engine to build project source code from
 :ref:`projectconf_pio_src_dir` setting ``test_build_project_src`` to ``true``.

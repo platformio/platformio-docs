@@ -75,9 +75,25 @@ The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_
 Directories
 -----------
 
-.. envvar:: PLATFORMIO_HOME_DIR
+.. envvar:: PLATFORMIO_CORE_DIR
 
-Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_home_dir`.
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_core_dir`.
+
+.. envvar:: PLATFORMIO_GLOBALLIB_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_globallib_dir`.
+
+.. envvar:: PLATFORMIO_PLATFORMS_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_platforms_dir`.
+
+.. envvar:: PLATFORMIO_PACKAGES_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_packages_dir`.
+
+.. envvar:: PLATFORMIO_CACHE_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_cache_dir`.
 
 .. envvar:: PLATFORMIO_WORKSPACE_DIR
 

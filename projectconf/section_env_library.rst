@@ -12,7 +12,7 @@
 .. _projectconf_section_env_library:
 
 Library options
-~~~~~~~~~~~~~~~
+---------------
 
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.

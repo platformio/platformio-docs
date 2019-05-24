@@ -178,7 +178,7 @@ On-board ST-Link V2/V2-1 in pair with `ST-Util GDB Server <https://github.com/te
     board = ...
     debug_tool = custom
     debug_port = :4242
-    debug_server = $PLATFORMIO_HOME_DIR/packages/tool-stlink/bin/st-util
+    debug_server = $PLATFORMIO_CORE_DIR/packages/tool-stlink/bin/st-util
 
 OpenOCD and ST-Link
 ~~~~~~~~~~~~~~~~~~~
@@ -193,9 +193,9 @@ On-board ST-Link V2/V2-1 in pair with `OpenOCD GDB Server <http://openocd.org>`_
     board = ...
     debug_tool = custom
     debug_server =
-      $PLATFORMIO_HOME_DIR/packages/tool-openocd/bin/openocd
+      $PLATFORMIO_CORE_DIR/packages/tool-openocd/bin/openocd
       -f
-      $PLATFORMIO_HOME_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg
+      $PLATFORMIO_CORE_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg
 
 pyOCD and CMSIS-DAP
 ~~~~~~~~~~~~~~~~~~~

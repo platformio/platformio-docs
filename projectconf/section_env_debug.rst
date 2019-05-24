@@ -12,7 +12,7 @@
 .. _projectconf_section_env_debug:
 
 Debugging options
-~~~~~~~~~~~~~~~~~
+-----------------
 
 .. seealso::
     Please make sure to read :ref:`piodebug` guide first.

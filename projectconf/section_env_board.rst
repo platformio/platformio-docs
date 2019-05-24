@@ -12,7 +12,7 @@
 .. _projectconf_section_env_board:
 
 Board options
-~~~~~~~~~~~~~
+-------------
 
 .. contents::
     :local:

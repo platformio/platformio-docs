@@ -12,7 +12,7 @@
 .. _projectconf_section_env_monitor:
 
 Monitor options
-~~~~~~~~~~~~~~~
+---------------
 
 .. contents::
     :local:

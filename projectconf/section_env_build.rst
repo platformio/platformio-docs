@@ -12,7 +12,7 @@
 .. _projectconf_section_env_build:
 
 Build options
-~~~~~~~~~~~~~
+-------------
 
 .. contents::
     :local:
@@ -140,11 +140,11 @@ You can inject into build flags built-in variables, such as:
 * ``$PIOENV``, name of build environment from :ref:`projectconf`
 * ``$PIOPLATFORM``, name of development platform
 * ``$PIOFRAMEWORK``, name of framework
-* ``$PIOHOME_DIR``, PlatformIO Home directory
 * ``$PROJECT_DIR``, project directory
+* ``$PROJECTCORE_DIR``, PlatformIO Core directory, see :ref:`projectconf_pio_core_dir`
 * ``$PROJECTBUILD_DIR``, project build directory per all environments
 * ``$BUILD_DIR``, build directory per current environment
-* `Need more PlatformIO variables? <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L30:L113>`_
+* `Need more PlatformIO variables? <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L43:L128>`_
 
 Please use target ``envdump`` for :option:`platformio run --target` command to
 see ALL variables from a build environment.
