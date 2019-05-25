@@ -92,9 +92,9 @@ the screenshot above):
   Allows one to fix code completion and code linting issues.
 
 .. warning::
-    The libraries which are added, installed or used in the project
-    after generating process will not be reflected in IDE. To fix it please run
-    ``PLATFORMIO_REBUILD_PROJECT_INDEX`` target.
+    The libraries which are added, installed or used in a project after
+    generating process will not be reflected in IDE. Please run
+    ``PLATFORMIO_REBUILD_PROJECT_INDEX`` target to resolve this issue.
 
 Known issues
 ------------
