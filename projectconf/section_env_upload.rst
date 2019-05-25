@@ -35,7 +35,7 @@ This option is used by "uploader" tool when sending firmware to board via
 If ``upload_port`` isn't specified, then *PlatformIO* will try to detect it
 automatically.
 
-To print all available serial ports use :ref:`cmd_device_list` command.
+To print all available serial ports please use :ref:`cmd_device_list` command.
 
 This option can also be set by global environment variable
 :envvar:`PLATFORMIO_UPLOAD_PORT`.

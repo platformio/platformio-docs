@@ -25,6 +25,27 @@ Custom options for :ref:`cmd_device_monitor` command.
 ^^^^^^^^^^^^^^^^
 
 Port, a number or a device name. See :option:`platformio device monitor --port`.
+To print all available serial ports please use :ref:`cmd_device_list` command.
+
+Please note that you can use Unix shell-style wildcards:
+
+.. list-table::
+    :header-rows:  1
+
+    * - Pattern
+      - Meaning
+
+    * - ``*``
+      - matches everything
+
+    * - ``?``
+      - matches any single character
+
+    * - ``[seq]``
+      - matches any character in seq
+
+    * - ``[!seq]``
+      - matches any character not in seq
 
 Example:
 
@@ -35,8 +56,8 @@ Example:
     ; Unix
     monitor_port = /dev/ttyUSB1
 
-    ; Windows
-    monitor_port = COM3
+    ; Windows, COM1 or COM3
+    monitor_port = COM[13]
 
 .. _projectconf_monitor_speed:
 
