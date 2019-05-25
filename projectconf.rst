@@ -87,6 +87,9 @@ described below.
 
     ; Serial Monitor options
     monitor_speed = 115200
+    monitor_options =
+        --encoding
+        hexlify
 
     ; Unit Testing options
     test_ignore = test_desktop

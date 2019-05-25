@@ -195,7 +195,7 @@ Options
 
 Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
 
-Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_port`
+Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_port`
 option.
 
 **URL Handlers**
@@ -212,7 +212,7 @@ option.
 
 Set baud rate, default ``9600``.
 
-Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_speed`
+Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_speed`
 option.
 
 .. option::
@@ -236,7 +236,7 @@ Enable software flow control, default ``Off``
 
 Set initial ``RTS`` line state (``0`` or ``1``).
 
-Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_rts`
+Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_rts`
 option.
 
 .. option::
@@ -244,7 +244,7 @@ option.
 
 Set initial ``DTR`` line state (``0`` or ``1``).
 
-Could be customized in :ref:`projectconf` using :ref:`projectconf_monitor_dtr`
+Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_dtr`
 option.
 
 .. option::

@@ -67,3 +67,30 @@ A monitor initial ``RTS`` line state. See :option:`platformio device monitor --r
 ^^^^^^^^^^^^^^^
 
 A monitor initial ``DTR`` line state. See :option:`platformio device monitor --dtr`.
+
+.. _projectconf_monitor_flags:
+
+``monitor_flags``
+^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
+
+Pass extra flags and options to :ref:`cmd_device_monitor` command. Please note
+that each flag, option or its value should be passed in a new line. See
+example below.
+
+Available flags and options are the same which are documented for
+:ref:`cmd_device_monitor` command.
+
+Example:
+
+.. code-block:: ini
+
+    [env:extra_monitor_flags]
+    platform = ...
+    board = ...
+    monitor_flags=
+        --parity
+        N
+        --encoding
+        hexlify

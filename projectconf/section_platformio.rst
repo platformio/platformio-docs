@@ -205,6 +205,8 @@ Directory options
 ``core_dir``
 ^^^^^^^^^^^^
 
+.. versionadded:: 4.0
+
 Is used to store development platform packages (toolchains, frameworks, SDKs,
 upload and debug tools), global libraries for :ref:`ldf`, and other PlatformIO
 Core service data. The size of this folder will depend on number of installed
@@ -230,6 +232,8 @@ Example:
 ``globallib_dir``
 ^^^^^^^^^^^^^^^^^
 
+.. versionadded:: 4.0
+
 Global library storage for PlatfrmIO projects and :ref:`librarymanager` where
 :ref:`ldf` looks for dependencies.
 A default value is ":ref:`projectconf_pio_core_dir`/lib" .
@@ -242,6 +246,8 @@ This option can also be configured by global environment variable
 ``platforms_dir``
 ^^^^^^^^^^^^^^^^^
 
+.. versionadded:: 4.0
+
 Global storage where **PlatformIO Package Manager** installs :ref:`platforms`.
 A default value is ":ref:`projectconf_pio_core_dir`/platforms" .
 
@@ -252,6 +258,8 @@ This option can also be configured by global environment variable
 
 ``packages_dir``
 ^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
 
 Global storage where **PlatformIO Package Manager** installs :ref:`platforms`
 dependencies (toolchains, :ref:`frameworks`, SDKs, upload and debug tools).
@@ -264,6 +272,8 @@ This option can also be configured by global environment variable
 
 ``cache_dir``
 ^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
 
 :ref:`piocore` uses this folder to store caching information (requests to
 PlatformIO Registry, downloaded libraries and other service information).
