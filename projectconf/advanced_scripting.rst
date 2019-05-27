@@ -579,9 +579,7 @@ PlatformIO Package Manager automatically installs pre-built packages
 files with own versions: configure custom GPIO, do changes to built-in LD
 scripts, or some patching to installed library dependency.
 
-The simplest way is using `Diff and Patch technique <https://linuxacademy.com/blog/linux/introduction-using-diff-and-patch/>`_.
-
-How does it work?
+The simplest way is using `Diff and Patch technique <https://linuxacademy.com/blog/linux/introduction-using-diff-and-patch/>`_. How does it work?
 
 1. Modify original source files
 2. Generate patches
