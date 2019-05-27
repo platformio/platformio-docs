@@ -332,10 +332,15 @@ Let's create a simple ``ping`` target and process it with
 
 .. code-block:: python
 
-    from platformio import util
+    try:
+        import ConfigParser as ConfigParser
+    except ImportError:
+        import configparser as ConfigParser
+
     Import("env")
 
-    config = util.load_project_config()
+    config = ConfigParser()
+    config.read("platformio.ini")
     host = config.get("env_custom_target", "custom_ping_host")
 
     def mytarget_callback(*args, **kwargs):
@@ -369,9 +374,13 @@ Custom options in ``platformio.ini``
 
 .. code-block:: python
 
-    from platformio import util
+    try:
+        import ConfigParser as ConfigParser
+    except ImportError:
+        import configparser as ConfigParser
 
-    config = util.load_project_config()
+    config = ConfigParser()
+    config.read("platformio.ini")
 
     value1 = config.get("my_env", "custom_option1")
     value2 = config.get("my_env", "custom_option2")
