@@ -276,8 +276,10 @@ This option can also be configured by global environment variable
 .. versionadded:: 4.0
 
 :ref:`piocore` uses this folder to store caching information (requests to
-PlatformIO Registry, downloaded libraries and other service information).
+PlatformIO Registry, downloaded packages and other service information).
 A default value is ":ref:`projectconf_pio_core_dir`/cache" .
+
+To reset a cache, please run :ref:`cmd_update` command.
 
 This option can also be configured by global environment variable
 :envvar:`PLATFORMIO_CACHE_DIR`.
