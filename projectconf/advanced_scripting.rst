@@ -569,3 +569,92 @@ Sometimes is useful to have a different firmware/program name in
     # print defines
 
     env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
+
+Override package files
+''''''''''''''''''''''
+
+PlatformIO Package Manager automatically installs pre-built packages
+(:ref:`frameworks`, toolchains, libraries) required by development
+:ref:`platforms` and build process. Sometimes you need to override original
+files with own versions: configure custom GPIO, do changes to built-in LD
+scripts, or some patching to installed library dependency.
+
+The simplest way is using `Diff and Patch technique <https://linuxacademy.com/blog/linux/introduction-using-diff-and-patch/>`_.
+
+How does it work?
+
+1. Modify original source files
+2. Generate patches
+3. Apply patches via PlatformIO extra script before build process.
+
+**Example**
+
+We need to patch the original ``standard/pins_arduino.h`` variant from
+:ref:`framework_arduino` framework and add extra macro ``#define PIN_A8   (99)``.
+Let's duplicate ``standard/pins_arduino.h`` and apply changes. Generate a
+patch file and place it into ``patches`` folder located in the root of a project:
+
+.. code-block:: shell
+
+    diff ~/.platformio/packages/framework-arduinoavr/variants/standard/pins_arduino.h /tmp/pins_arduino_modified.h > /path/to/platformio/project/patches/1-framework-arduinoavr-add-pin-a8.patch
+
+The result of ``1-framework-arduinoavr-add-pin-a8.patch``:
+
+.. code-block:: diff
+
+    63a64
+    > #define PIN_A8   (99)
+    112c113
+    < // 14-21 PA0-PA7 works
+    ---
+    > // 14-21 PA0-PA7 works
+
+Using extra scripting we can apply patching before a build process. The final
+result of :ref:`projectconf` and "PRE" extra script named ``apply_patches.py``:
+
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:uno]
+    platform = atmelavr
+    board = uno
+    framework = arduino
+    extra_scripts = pre:apply_patches.py
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    from os.path import join, isfile
+
+    Import("env")
+
+    FRAMEWORK_DIR = env.PioPlatform().get_package_dir("framework-arduinoavr")
+    patchflag_path = join(FRAMEWORK_DIR, ".patching-done")
+
+    # skip patch process if we did it before
+    if isfile(join(FRAMEWORK_DIR, ".patching-done")):
+        env.Exit(0)
+
+    original_file = join(FRAMEWORK_DIR, "variants", "standard", "pins_arduino.h")
+    patched_file = join("patches", "1-framework-arduinoavr-add-pin-a8.patch")
+
+    assert isfile(original_file) and isfile(patched_file)
+
+    env.Execute("patch %s %s" % (original_file, patched_file))
+    # env.Execute("touch " + patchflag_path)
+
+
+    def _touch(path):
+        with open(path, "w") as fp:
+            fp.write("")
+
+    env.Execute(lambda *args, **kwargs: _touch(patchflag_path))
+
+
+Please note that this example will work on a system where a ``patch`` command
+is available. If you need to make it more independent to the operating system,
+please replace the ``patch`` with a multi-platform
+`python-patch <https://github.com/techtonik/python-patch>`_ script.
