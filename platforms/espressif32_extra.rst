@@ -177,8 +177,10 @@ You can create a custom partitions table (CSV) following `ESP32 Partition Tables
 documentation. PlatformIO uses **default partition tables** depending on a
 :ref:`projectconf_env_framework` type:
 
-* `"default.csv" for Arduino <https://github.com/espressif/arduino-esp32/blob/master/tools/partitions/default.csv>`_
-* `"partitions_singleapp.csv" for ESP-IDF <https://github.com/espressif/esp-idf/blob/master/components/partition_table/partitions_singleapp.csv>`_
+* ``default.csv`` for :ref:`framework_arduino`
+  (`show pre-configured partition tables <https://github.com/espressif/arduino-esp32/blob/master/tools/partitions>`__)
+* ``partitions_singleapp.csv`` for :ref:`framework_espidf`
+  (`show pre-configured partition tables <https://github.com/espressif/esp-idf/blob/master/components/partition_table>`__)
 
 To override default table please use ``board_build.partitions`` option in
 :ref:`projectconf`.
