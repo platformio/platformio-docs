@@ -661,7 +661,11 @@ result of :ref:`projectconf` and "PRE" extra script named ``apply_patches.py``:
     env.Execute(lambda *args, **kwargs: _touch(patchflag_path))
 
 
-Please note that this example will work on a system where a ``patch`` command
-is available. If you need to make it more independent to the operating system,
+Please note that this example will work on a system where a ``patch`` tool
+is available. For Windows OS, you can use ``patch`` and ``diff`` tools
+provided by `Git client utility <https://git-scm.com/>`__
+(located inside installation directory).
+
+If you need to make it more independent to the operating system,
 please replace the ``patch`` with a multi-platform
 `python-patch <https://github.com/techtonik/python-patch>`_ script.
