@@ -492,3 +492,30 @@ By default, PlatformIO looks for boards in this order:
 
 This option can also be configured by global environment variable
 :envvar:`PLATFORMIO_BOARDS_DIR`.
+
+.. _projectconf_pio_shared_dir:
+
+``shared_dir``
+^^^^^^^^^^^^^^
+
+Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``shared``"
+
+:ref:`pioremote` uses this folder to synchronize extra files between remote
+machine. For example, you can share :ref:`projectconf_extra_scripts`.
+
+Please note that these folders are automatically shared between remote machine
+with :option:`platformio remote run --force-remote` or
+:option:`platformio remote test --force-remote` commands:
+
+- :ref:`projectconf_pio_lib_dir`
+- :ref:`projectconf_pio_include_dir`
+- :ref:`projectconf_pio_src_dir`
+- :ref:`projectconf_pio_boards_dir`
+- :ref:`projectconf_pio_data_dir`
+- :ref:`projectconf_pio_test_dir`
+
+A default value is ``shared`` that means that folder is located in the root of
+project.
+
+This option can also be configured by global environment variable
+:envvar:`PLATFORMIO_SHARED_DIR`.
