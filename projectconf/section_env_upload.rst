@@ -22,6 +22,8 @@ Upload options
 ``upload_port``
 ^^^^^^^^^^^^^^^
 
+Type: ``String (Pattern)`` | Multiple: ``No``
+
 This option is used by "uploader" tool when sending firmware to board via
 ``upload_port``. For example,
 
@@ -78,6 +80,8 @@ Please note that you can use Unix shell-style wildcards:
 ``upload_protocol``
 ^^^^^^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``No``
+
 A protocol that "uploader" tool uses to talk to a board. Please check
 :ref:`boards` for supported uploading protocols by your board.
 
@@ -86,6 +90,8 @@ A protocol that "uploader" tool uses to talk to a board. Please check
 ``upload_speed``
 ^^^^^^^^^^^^^^^^
 
+Type: ``Integer`` | Multiple: ``No``
+
 A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
 which "uploader" tool uses when sending firmware to board.
 
@@ -93,6 +99,8 @@ which "uploader" tool uses when sending firmware to board.
 
 ``upload_flags``
 ^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``Yes``
 
 Extra flags for uploader. Will be added to the end of uploader command. If you
 need to override uploader command or base flags please use
@@ -124,6 +132,8 @@ Please specify each flag/option in a new line starting with minimum 2 spaces.
 
 ``upload_resetmethod``
 ^^^^^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No``
 
 Specify reset method for "uploader" tool. This option isn't available for all
 development platforms. The only :ref:`platform_espressif8266` supports it.

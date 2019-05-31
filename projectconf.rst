@@ -21,7 +21,7 @@ The Project configuration file is named ``platformio.ini``. This is a
 key / value pairs within the sections. Lines beginning with ``;``
 are ignored and may be used to provide comments.
 
-Multi-values option could be specified in 2 ways:
+Multiple values option can be specified in 2 ways:
 
 1. Split values with ", " (comma + space)
 2. Use multi-line format, where each new line should start with 2 spaces

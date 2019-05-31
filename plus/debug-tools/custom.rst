@@ -52,7 +52,7 @@ with :ref:`cmd_device_list`)
     attach 1
     set mem inaccessible-by-default off
     $INIT_BREAK
-    $LOAD_CMD
+    $LOAD_CMDS
 
 J-Link and ST Nucleo
 ~~~~~~~~~~~~~~~~~~~~

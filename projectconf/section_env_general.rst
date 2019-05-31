@@ -22,6 +22,8 @@ General options
 ``platform``
 ^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``No``
+
 :ref:`platforms` name.
 
 PlatformIO allows one to use specific version of platform using
@@ -71,60 +73,6 @@ Examples:
 ``framework``
 ^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``Yes``
+
 :ref:`frameworks` name.
-
-The multiple frameworks are allowed, *split them with comma+space ", "*.
-
-.. _projectconf_env_board:
-
-``board``
-^^^^^^^^^
-
-*PlatformIO* has pre-configured settings for the most popular boards:
-
-- build configuration
-- upload configuration
-- debugging configuration
-- connectivity information, etc.
-
-You can find a valid  ``board`` ID in :ref:`boards` catalog,
-`Boards Explorer <https://platformio.org/boards>`_ or
-:ref:`cmd_boards` command.
-
-.. _projectconf_targets:
-
-``targets``
-^^^^^^^^^^^
-
-A list with targets which will be processed by :ref:`cmd_run` command by
-default. You can enter more than one target, please split them with
-comma+space **", "**.
-
-The list with available targets is located in :option:`platformio run --target`.
-
-**Examples**
-
-1. Build a project using :ref:`Release Configuration <build_configurations>`,
-   upload firmware, and start :ref:`Serial Monitor <cmd_device_monitor>`
-   automatically:
-
-    .. code-block:: ini
-
-       [env:upload_and_monitor]
-       targets = upload, monitor
-
-2. Build a project using :ref:`Debug Configuration <build_configurations>`.
-
-
-**Tip!** You can use these targets like an option to
-:option:`platformio run --target` command. For example:
-
-.. code-block:: bash
-
-    # clean project
-    platformio run -t clean
-
-    # dump current build environment
-    platformio run --target envdump
-
-When no targets are defined, *PlatformIO* will build only sources by default.

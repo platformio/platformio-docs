@@ -19,4 +19,8 @@ Advanced options
 ``extra_scripts``
 ^^^^^^^^^^^^^^^^^
 
+Type: ``FilePath`` | Multiple: ``Yes``
+
+A list of PRE and POST extra scripts.
+
 See details and examples in :ref:`projectconf_advanced_scripting` section.

@@ -41,6 +41,9 @@ Generic options
 
 ``description``
 ^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No``
+
 Describe a project with a short information. PlatformIO uses it for
 :ref:`piohome` in the multiple places.
 
@@ -49,6 +52,8 @@ Describe a project with a short information. PlatformIO uses it for
 ``env_default``
 ^^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``Yes``
+
 :ref:`cmd_run` command processes all environments ``[env:***]`` by default
 if :option:`platformio run --environment` option is not specified.
 :ref:`projectconf_pio_env_default` allows one to define environments which
@@ -56,8 +61,7 @@ should be processed by default.
 
 Also, :ref:`piodebug` checks this option when looking for debug environment.
 
-Multiple environments are allowed if they *are separated with ", "
-(comma+space)*. For example.
+Example:
 
 .. code-block:: ini
 
@@ -89,6 +93,8 @@ Multiple environments are allowed if they *are separated with ", "
 ^^^^^^^^^^^^^^^^^
 
 .. versionadded:: 4.0
+
+Type: ``String (Pattern)`` | Multiple: ``Yes``
 
 This option allows extending a base :ref:`projectconf` with extra configuration
 files. The format and rules are the same as for the :ref:`projectconf`.
@@ -207,6 +213,8 @@ Directory options
 
 .. versionadded:: 4.0
 
+Type: ``DirPath`` | Multiple: ``No``
+
 Is used to store development platform packages (toolchains, frameworks, SDKs,
 upload and debug tools), global libraries for :ref:`ldf`, and other PlatformIO
 Core service data. The size of this folder will depend on number of installed
@@ -234,9 +242,10 @@ Example:
 
 .. versionadded:: 4.0
 
+Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/lib"
+
 Global library storage for PlatfrmIO projects and :ref:`librarymanager` where
 :ref:`ldf` looks for dependencies.
-A default value is ":ref:`projectconf_pio_core_dir`/lib" .
 
 This option can also be configured by global environment variable
 :envvar:`PLATFORMIO_GLOBALLIB_DIR`.
@@ -248,8 +257,9 @@ This option can also be configured by global environment variable
 
 .. versionadded:: 4.0
 
+Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/platforms"
+
 Global storage where **PlatformIO Package Manager** installs :ref:`platforms`.
-A default value is ":ref:`projectconf_pio_core_dir`/platforms" .
 
 This option can also be configured by global environment variable
 :envvar:`PLATFORMIO_PLATFORMS_DIR`.
@@ -261,9 +271,10 @@ This option can also be configured by global environment variable
 
 .. versionadded:: 4.0
 
+Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/packages"
+
 Global storage where **PlatformIO Package Manager** installs :ref:`platforms`
 dependencies (toolchains, :ref:`frameworks`, SDKs, upload and debug tools).
-A default value is ":ref:`projectconf_pio_core_dir`/packages" .
 
 This option can also be configured by global environment variable
 :envvar:`PLATFORMIO_PACKAGES_DIR`.
@@ -275,9 +286,10 @@ This option can also be configured by global environment variable
 
 .. versionadded:: 4.0
 
+Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/cache"
+
 :ref:`piocore` uses this folder to store caching information (requests to
 PlatformIO Registry, downloaded packages and other service information).
-A default value is ":ref:`projectconf_pio_core_dir`/cache" .
 
 To reset a cache, please run :ref:`cmd_update` command.
 
@@ -290,6 +302,8 @@ This option can also be configured by global environment variable
 ^^^^^^^^^^^^^^^^^
 
 .. versionadded:: 4.0
+
+Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``.pio``"
 
 A path to a project workspace directory where PlatformIO keeps by default
 compiled objects, static libraries, firmwares, and external library
@@ -313,6 +327,8 @@ This option can also be configured by global environment variable
     **PLEASE DO NOT EDIT FILES IN THIS FOLDER**. PlatformIO will overwrite
     your changes on the next build. **THIS IS A CACHE DIRECTORY**.
 
+Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_workspace_dir`/build"
+
 *PlatformIO Build System* uses this folder for project
 environments to store compiled object files, static libraries, firmwares and
 other cached information. It allows PlatformIO to build source code extremely
@@ -321,8 +337,6 @@ fast!
 *You can delete this folder without any risk!* If you modify :ref:`projectconf`,
 then PlatformIO will remove this folder automatically. It will be created on the
 next build operation.
-
-A default value is ":ref:`projectconf_pio_workspace_dir`/build" .
 
 This option can also be configured by global environment variable
 :envvar:`PLATFORMIO_BUILD_DIR`.
@@ -338,9 +352,10 @@ This option can also be configured by global environment variable
 ``libdeps_dir``
 ^^^^^^^^^^^^^^^
 
+Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_workspace_dir`/libdeps"
+
 Internal storage where :ref:`librarymanager` will install project dependencies
-(:ref:`projectconf_lib_deps`). A default value is
-":ref:`projectconf_pio_workspace_dir`/libdeps".
+(:ref:`projectconf_lib_deps`).
 
 This option can also be configured by global environment variable
 :envvar:`PLATFORMIO_LIBDEPS_DIR`.
@@ -349,6 +364,8 @@ This option can also be configured by global environment variable
 
 ``include_dir``
 ^^^^^^^^^^^^^^^
+
+Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``include``"
 
 A path to project's default header files. PlatformIO uses it for :ref:`cmd_run`
 command. A default value is ``include`` that means that folder is located in the
@@ -364,6 +381,8 @@ This option can also be configured by global environment variable
 
 ``src_dir``
 ^^^^^^^^^^^
+
+Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``src``"
 
 A path to project's source directory. PlatformIO uses it for :ref:`cmd_run`
 command. A default value is ``src`` that means that folder is located in the
@@ -381,6 +400,8 @@ This option can also be configured by global environment variable
 
 ``lib_dir``
 ^^^^^^^^^^^
+
+Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``lib``"
 
 You can put here your own/private libraries. The source code of each library
 should be placed in separate directory, like
@@ -429,6 +450,8 @@ include paths and build them.
 ``data_dir``
 ^^^^^^^^^^^^
 
+Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``data``"
+
 Data directory to store contents and :ref:`platform_espressif_uploadfs`.
 A default value is ``data`` that means that folder is located in the root of
 project.
@@ -441,6 +464,8 @@ This option can also be configured by global environment variable
 ``test_dir``
 ^^^^^^^^^^^^
 
+Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``test``"
+
 Directory where :ref:`unit_testing` engine will look for the tests.
 A default value is ``test`` that means that folder is located in the root of
 project.
@@ -452,6 +477,8 @@ This option can also be configured by global environment variable
 
 ``boards_dir``
 ^^^^^^^^^^^^^^
+
+Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``boards``"
 
 Custom board settings per project. You can change this path with your own.
 A default value is ``boards`` that means that folder is located in the root of

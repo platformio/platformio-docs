@@ -285,7 +285,7 @@ Now, run ``pio run -t node``.
 Dependent target
 ''''''''''''''''
 
-Sometime you need to run a command which depends on another target (file,
+Sometimes you need to run a command which depends on another target (file,
 firmware, etc). Let's create an ``ota`` target and declare command which will
 depend on a project firmware. If a build process successes, declared command
 will be run.

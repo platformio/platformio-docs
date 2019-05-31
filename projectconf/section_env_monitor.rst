@@ -24,6 +24,8 @@ Custom options for :ref:`cmd_device_monitor` command.
 ``monitor_port``
 ^^^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``No``
+
 Port, a number or a device name. See :option:`platformio device monitor --port`.
 To print all available serial ports please use :ref:`cmd_device_list` command.
 
@@ -64,6 +66,8 @@ Example:
 ``monitor_speed``
 ^^^^^^^^^^^^^^^^^
 
+Type: ``Integer`` | Multiple: ``No`` | Default: ``9600``
+
 A monitor speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_).
 See :option:`platformio device monitor --baud`.
 
@@ -80,12 +84,16 @@ Example:
 ``monitor_rts``
 ^^^^^^^^^^^^^^^
 
+Type: ``Integer (0 or 1)`` | Multiple: ``No``
+
 A monitor initial ``RTS`` line state. See :option:`platformio device monitor --rts`.
 
 .. _projectconf_monitor_dtr:
 
 ``monitor_dtr``
 ^^^^^^^^^^^^^^^
+
+Type: ``Integer (0 or 1)`` | Multiple: ``No``
 
 A monitor initial ``DTR`` line state. See :option:`platformio device monitor --dtr`.
 
@@ -95,6 +103,8 @@ A monitor initial ``DTR`` line state. See :option:`platformio device monitor --d
 ^^^^^^^^^^^^^^^^^
 
 .. versionadded:: 4.0
+
+Type: ``String`` | Multiple: ``Yes``
 
 Pass extra flags and options to :ref:`cmd_device_monitor` command. Please note
 that each flag, option or its value should be passed in a new line. See

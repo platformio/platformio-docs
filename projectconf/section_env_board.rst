@@ -17,8 +17,28 @@ Board options
 .. contents::
     :local:
 
+.. _projectconf_env_board:
+
+``board``
+^^^^^^^^^
+
+Type: ``String (ID)`` | Multiple: ``No``
+
+*PlatformIO* has pre-configured settings for the most popular boards:
+
+- build configuration
+- upload configuration
+- debugging configuration
+- connectivity information, etc.
+
+You can find a valid  ``board`` ID in :ref:`boards` catalog,
+`Boards Explorer <https://platformio.org/boards>`_ or
+:ref:`cmd_boards` command.
+
 ``board_build.mcu``
 ^^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No``
 
 ``board_build.mcu`` is a microcontroller(MCU) type that is used by compiler to
 recognize MCU architecture. The correct type of ``board_build.mcu`` depends on
@@ -32,6 +52,8 @@ in *Boards* section of :ref:`platforms`. See "Microcontroller" column.
 
 ``board_build.f_cpu``
 ^^^^^^^^^^^^^^^^^^^^^
+
+Type: ``Integer`` | Multiple: ``No``
 
 An option ``board_build.f_cpu`` is used to define MCU frequency (Hertz, Clock). A
 format of this option is ``C-like long integer`` value with ``L`` suffix. The
