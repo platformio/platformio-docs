@@ -47,7 +47,7 @@ Options
 Debug specified environments.
 
 You can also specify which environments should be used for debugging by default
-using :ref:`projectconf_pio_env_default` option from :ref:`projectconf`.
+using :ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
 
 .. option::
     -d, --project-dir

@@ -315,7 +315,7 @@ to current working directory (``CWD``).
 Process specified environments.
 
 You can also specify which environments should be processed by default using
-:ref:`projectconf_pio_env_default` option from :ref:`projectconf`.
+:ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
 
 Examples
 ~~~~~~~~

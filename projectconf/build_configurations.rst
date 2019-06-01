@@ -74,4 +74,4 @@ project debugging from :ref:`pioide` or use :ref:`cmd_debug` command.
   "Release" configuration and upload firmware/artifacts to end device.
 
 Please note that you can set a default build environment per a project using
-:ref:`projectconf_pio_env_default` option in :ref:`projectconf_section_platformio`.
+:ref:`projectconf_pio_default_envs` option in :ref:`projectconf_section_platformio`.

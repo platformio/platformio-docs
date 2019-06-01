@@ -353,7 +353,7 @@ There are 2 pre-configured debugging configurations:
 
 .. note::
   Please note that :ref:`piodebug` will use the first declared build
-  environment in :ref:`projectconf` if :ref:`projectconf_pio_env_default` option
+  environment in :ref:`projectconf` if :ref:`projectconf_pio_default_envs` option
   is not specified.
 
 .. image:: ../_static/images/ide/vscode/platformio-ide-vscode-debug.png

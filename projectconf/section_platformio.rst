@@ -47,16 +47,16 @@ Type: ``String`` | Multiple: ``No``
 Describe a project with a short information. PlatformIO uses it for
 :ref:`piohome` in the multiple places.
 
-.. _projectconf_pio_env_default:
+.. _projectconf_pio_default_envs:
 
-``env_default``
-^^^^^^^^^^^^^^^
+``default_envs``
+^^^^^^^^^^^^^^^^
 
 Type: ``String`` | Multiple: ``Yes``
 
 :ref:`cmd_run` command processes all environments ``[env:***]`` by default
 if :option:`platformio run --environment` option is not specified.
-:ref:`projectconf_pio_env_default` allows one to define environments which
+:ref:`projectconf_pio_default_envs` allows one to define environments which
 should be processed by default.
 
 Also, :ref:`piodebug` checks this option when looking for debug environment.
