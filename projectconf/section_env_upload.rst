@@ -137,3 +137,83 @@ Type: ``String`` | Multiple: ``No``
 
 Specify reset method for "uploader" tool. This option isn't available for all
 development platforms. The only :ref:`platform_espressif8266` supports it.
+
+.. _projectconf_upload_command:
+
+``upload_command``
+^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
+
+Type: ``String`` | Multiple: ``No``
+
+Override default :ref:`platforms` upload command with a custom. You can pass a full
+upload command with arguments and options or mix with :ref:`projectconf_upload_flags`.
+
+Default upload commands are declared in ``build/main.py`` script file of
+:ref:`platforms`. See a list with open source
+:ref:`platforms` => https://github.com/topics/platformio-platform
+
+.. note::
+  Please note that you can use build variables in ``upload_command``, such as
+  PlatformIO project folders and other runtime configuration. A list with
+  build variables are available by running
+  ``platformio run --target envdump`` command.
+
+**Examples**
+
+1.  Override default upload command but handle pre-uploading actions (looking
+    for serial port, extra image preparation, etc.). Normally, the
+    pre-configured upload options will be stored in ``$UPLOADERFLAGS`` build
+    variable. A classic default upload command for :ref:`platforms` may look as
+    ``some-flash-bin-tool $UPLOADERFLAGS $SOURCE``, where
+    ``$SOURCE`` will be replaced by a real program/firmware binary.
+
+    ``$PROJECTPACKAGES_DIR`` build variable points to :ref:`projectconf_pio_packages_dir`.
+
+    .. code-block:: ini
+
+        [env:program_via_AVR_ISP]
+        platform = atmelavr
+        framework = arduino
+        board = uno
+        upload_flags =
+            -C
+            $PROJECTPACKAGES_DIR/tool-avrdude/avrdude.conf
+            -p
+            atmega328p
+            -P
+            $UPLOAD_PORT
+            -b
+            115200
+            -c
+            stk500v1
+        upload_command = avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i
+
+2.  Override default upload command and skip pre-uploading actions.
+
+    .. code-block:: ini
+
+        [env:program_via_usbasp]
+        platform = atmelavr
+        framework = arduino
+        board = uno
+        upload_flags =
+            -C
+            $PROJECTPACKAGES_DIR/tool-avrdude/avrdude.conf
+            -p
+            atmega328p
+            -Pusb
+            -c
+            stk500v1
+        upload_command = avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i
+
+
+        ; Use ST-util for flashing
+        ; https://github.com/texane/stlink
+
+        [env:custom_st_flash]
+        platform = ststm32
+        framework = stm32cube
+        board = bluepill_f103c6
+        upload_command = $PROJECTPACKAGES_DIR/tool-stlink/st-flash write $SOURCE 0x8000000
