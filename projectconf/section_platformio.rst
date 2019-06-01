@@ -61,6 +61,9 @@ should be processed by default.
 
 Also, :ref:`piodebug` checks this option when looking for debug environment.
 
+This option can also be configured by global environment variable
+:envvar:`PLATFORMIO_DEFAULT_ENVS`.
+
 Example:
 
 .. code-block:: ini

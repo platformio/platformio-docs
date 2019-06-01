@@ -176,6 +176,10 @@ Allows one to set :ref:`projectconf` option :ref:`projectconf_src_filter`.
 
 Allows one to set :ref:`projectconf` option :ref:`projectconf_extra_scripts`.
 
+.. envvar:: PLATFORMIO_DEFAULT_ENVS
+
+Allows one to set :ref:`projectconf` option :ref:`projectconf_pio_default_envs`.
+
 Uploading
 ---------
 
