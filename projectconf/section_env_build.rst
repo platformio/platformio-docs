@@ -17,6 +17,15 @@ Build options
 .. contents::
     :local:
 
+.. _projectconf_build_type:
+
+``build_type``
+^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No`` | Default: ``release``
+
+See extended documentation for :ref:`build_configurations`.
+
 .. _projectconf_build_flags:
 
 ``build_flags``

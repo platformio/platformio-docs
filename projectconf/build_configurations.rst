@@ -14,64 +14,50 @@
 Build Configurations
 ====================
 
-.. versionadded:: 3.6.1
+.. versionadded:: 4.0.0
 
-There are 2 types of build configurations in PlatformIO:
+There are 2 types (:ref:`projectconf_build_type`) of build configuration in
+PlatformIO:
 
-:Release:
-	**Default configuration**. The release configuration of your firmware/program
-	does not contain symbolic debug information and is fully optimized.
+:``release``:
+  **Default configuration**. A "release" configuration of your firmware/program
+  does not contain symbolic debug information and is optimized for the firmware
+  size or speed (depending on :ref:`platforms`)
 
-:Debug:
-	The debug configuration of your firmware/program is compiled with full
-	symbolic debug information and no optimization. Optimization complicates
-	debugging, because the relationship between source code and generated
-	instructions is more complex.
+:``debug``:
+  A "debug" configuration of your firmware/program is compiled with full
+  symbolic debug information and no optimization. Optimization complicates
+  debugging, because the relationship between source code and generated
+  instructions is more complex.
 
-As we mentioned before, PlatformIO builds project in ``Release`` configuration
-by default. You can build project in ``Debug`` configuration using one of
+If you need to build a project in ``debug`` configuration, please use one of
 these options:
 
-* Using target ``debug`` for :option:`platformio run --target` command
-* Using :ref:`projectconf_targets` option in :ref:`projectconf` per build
-  environment.
-
-:ref:`piodebug` automatically switches to "Debug" configuration when you do
-project debugging from :ref:`pioide` or use :ref:`cmd_debug` command.
+* Add :ref:`projectconf_build_type` with ``debug`` value to :ref:`projectconf`
+* Use target ``debug`` for :option:`platformio run --target` command.
 
 .. note::
-  If you use the same build environment for "Release" and for :ref:`piodebug`,
-  PlatformIO will rebuild your project each time when you switch between
-  build configurations. To avoid this issue, please declare 2 separate
-  project build environments in :ref:`projectconf` as described below in example.
+  :ref:`piodebug` automatically switches to ``debug`` configuration when you do
+  project debugging from :ref:`pioide` or use :ref:`cmd_debug` command.
 
-  Otherwise, please add ``targets = debug`` to your build environment and
-  PlatformIO will build project using "Debug" configuration even when you
-  do not use :ref:`piodebug`.
+  To avoid project rebuilding, please create a separate build environment
+  and add ``build_type = debug``. See example below where ``mydebug`` build
+  environment will be used automatically by :ref:`piodebug`:
 
---------------
+  .. code-block:: ini
 
-**Example** of classic "release" and "debug" scheme using :ref:`projectconf`
+     [env]
+     platform = ...
+     board = ...
+     framework = ...
+     ... other common configuration
 
-.. code-block:: ini
+     [env:myrelease]
+     some_extra_options = ...
 
-   [env:debug]
-   platform = ...
-   board = ...
-   framework = ...
-   targets = debug
-
-   [env:release]
-   platform = ...
-   board = ...
-   framework = ...
-
-* :ref:`cmd_run` command builds ALL environments and places artifacts to
-  :ref:`projectconf_pio_build_dir`
-* ``platformio run --environment debug`` builds only ``debug`` environment
-* ``platformio run --environment release`` builds only ``release`` environment.
-* ``platformio run --environment release --target upload`` builds project using
-  "Release" configuration and upload firmware/artifacts to end device.
+     [env:mydebug]
+     build_type = debug
+     some_extra_options = ...
 
 Please note that you can set a default build environment per a project using
 :ref:`projectconf_pio_default_envs` option in :ref:`projectconf_section_platformio`.
