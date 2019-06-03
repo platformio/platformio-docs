@@ -333,13 +333,13 @@ Let's create a simple ``ping`` target and process it with
 .. code-block:: python
 
     try:
-        import ConfigParser as ConfigParser
+        import configparser
     except ImportError:
-        import configparser as ConfigParser
+        import ConfigParser as configparser
 
     Import("env")
 
-    config = ConfigParser()
+    config = configparser.ConfigParser()
     config.read("platformio.ini")
     host = config.get("env_custom_target", "custom_ping_host")
 
@@ -375,11 +375,11 @@ Custom options in ``platformio.ini``
 .. code-block:: python
 
     try:
-        import ConfigParser as ConfigParser
+        import configparser
     except ImportError:
-        import configparser as ConfigParser
+        import ConfigParser as configparser
 
-    config = ConfigParser()
+    config = configparser.ConfigParser()
     config.read("platformio.ini")
 
     value1 = config.get("my_env", "custom_option1")
