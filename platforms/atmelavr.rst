@@ -522,12 +522,6 @@ Arduino
       - 16MHz
       - 28KB
       - 2.50KB
-    * - :ref:`board_atmelavr_atmega328pb`
-      - No
-      - ATMEGA328PB
-      - 16MHz
-      - 31.50KB
-      - 2KB
 
 Atmel
 ~~~~~
@@ -1073,6 +1067,66 @@ Microchip
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelavr_ATMEGA168`
+      - No
+      - ATMEGA168
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA168P`
+      - No
+      - ATMEGA168P
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA328`
+      - No
+      - ATMEGA328
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATMEGA328P`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_atmega328pb`
+      - No
+      - ATMEGA328PB
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATMEGA48`
+      - No
+      - ATMEGA48
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelavr_ATMEGA48P`
+      - No
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelavr_ATMEGA8`
+      - No
+      - ATMEGA8
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA88`
+      - No
+      - ATMEGA88
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA88P`
+      - No
+      - ATMEGA88P
+      - 16MHz
+      - 7.50KB
+      - 1KB
     * - :ref:`board_atmelavr_at90pwm216`
       - No
       - AT90PWM216

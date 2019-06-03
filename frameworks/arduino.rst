@@ -2237,13 +2237,6 @@ Arduino
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelavr_atmega328pb`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA328PB
-      - 16MHz
-      - 31.50KB
-      - 2KB
 
 Armed
 ~~~~~
@@ -4218,6 +4211,90 @@ MediaTek Labs
       - 8MHz
       - 28KB
       - 2.50KB
+
+Microchip
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_ATMEGA168`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA168
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA168P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA168P
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA328`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATMEGA328P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_atmega328pb`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328PB
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATMEGA48`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA48
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelavr_ATMEGA48P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelavr_ATMEGA8`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA8
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA88`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA88
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA88P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA88P
+      - 16MHz
+      - 7.50KB
+      - 1KB
 
 Microduino
 ~~~~~~~~~~

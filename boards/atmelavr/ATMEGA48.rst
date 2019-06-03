@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_atmega328pb:
+.. _board_atmelavr_ATMEGA48:
 
-ATMEGA328PB
-===========
+ATMEGA48/A
+==========
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA328PB
+    - ATMEGA48
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 31.50KB
+    - 4KB
   * - **RAM**
-    - 2KB
+    - 512B
   * - **Vendor**
-    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega328PB?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega48?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``atmega328pb`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATMEGA48`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:atmega328pb]
+  [env:ATMEGA48]
   platform = atmelavr
-  board = atmega328pb
+  board = ATMEGA48
 
-You can override default ATMEGA328PB settings per build environment using
+You can override default ATMEGA48/A settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `atmega328pb.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/atmega328pb.json>`_. For example,
+board manifest `ATMEGA48.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATMEGA48.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:atmega328pb]
+  [env:ATMEGA48]
   platform = atmelavr
-  board = atmega328pb
+  board = ATMEGA48
 
   ; change microcontroller
-  board_build.mcu = atmega328pb
+  board_build.mcu = atmega48
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATMEGA328PB board.
+:ref:`piodebug` currently does not support ATMEGA48/A board.
 
 Frameworks
 ----------

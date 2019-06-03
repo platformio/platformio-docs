@@ -37,6 +37,16 @@ Atmel AVR
 .. toctree::
     :maxdepth: 1
         
+    atmelavr/ATMEGA168
+    atmelavr/ATMEGA168P
+    atmelavr/ATMEGA328
+    atmelavr/ATMEGA328P
+    atmelavr/atmega328pb
+    atmelavr/ATMEGA48
+    atmelavr/ATMEGA48P
+    atmelavr/ATMEGA8
+    atmelavr/ATMEGA88
+    atmelavr/ATMEGA88P
     atmelavr/bluefruitmicro
     atmelavr/circuitplay_classic
     atmelavr/feather328p
@@ -94,7 +104,6 @@ Atmel AVR
     atmelavr/yunmini
     atmelavr/at90pwm216
     atmelavr/at90pwm316
-    atmelavr/atmega328pb
     atmelavr/zumbt328
     atmelavr/raspduino
     atmelavr/controllino_maxi
