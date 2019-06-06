@@ -92,6 +92,8 @@ Example:
     board = lpmsp430g2553
     build_flags = -D LED_BUILTIN=RED_LED
 
+.. _projectconf_pio_extra_configs:
+
 ``extra_configs``
 ^^^^^^^^^^^^^^^^^
 
@@ -500,6 +502,8 @@ This option can also be configured by global environment variable
 
 ``shared_dir``
 ^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``shared``"
 

@@ -147,6 +147,8 @@ for GDB:
 ``debug_load_cmds``
 ^^^^^^^^^^^^^^^^^^^
 
+.. versionadded:: 4.0
+
 Type: ``String`` | Multiple: ``Yes`` | Default: ``load``
 
 Specify a command which will be used to load program/firmware to a target

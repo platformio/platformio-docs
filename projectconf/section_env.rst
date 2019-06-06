@@ -37,12 +37,18 @@ For example:
     platform = ststm32
     framework = stm32cube
     board = nucleo_l152re
+    lib_deps = Dep1, Dep2
 
     [env:release]
     build_flags = -D RELEASE
+    lib_deps =
+        ${env.lib_deps}
+        Dep3
 
     [env:debug]
+    build_type = debug
     build_flags = -D DEBUG
+    lib_deps = DepCustom
 
 In this example we have 2 build environments ``release`` and ``debug``. This
 is the same if you duplicate all options:
@@ -54,12 +60,15 @@ is the same if you duplicate all options:
     framework = stm32cube
     board = nucleo_l152re
     build_flags = -D RELEASE
+    lib_deps = Dep1, Dep2, Dep3
 
     [env:debug]
     platform = ststm32
     framework = stm32cube
     board = nucleo_l152re
+    build_type = debug
     build_flags = -D DEBUG
+    lib_deps = DepCustom
 
 
 Local scope ``[env:NAME]``

@@ -22,6 +22,8 @@ Build options
 ``build_type``
 ^^^^^^^^^^^^^^
 
+.. versionadded:: 4.0
+
 Type: ``String`` | Multiple: ``No`` | Default: ``release``
 
 See extended documentation for :ref:`build_configurations`.
