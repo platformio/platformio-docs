@@ -15,7 +15,9 @@ Migrating from 3.x to 4.0
 =========================
 
 Guidance on how to upgrade from :ref:`piocore` v3.x to v4.x with emphasis on
-major changes, what is new, and what is been removed.
+major changes, what is new, and what has been removed.
+
+Please read :ref:`PlatformIO 4.0 Release Notes <release_notes_4_0>` before.
 
 .. contents:: Contents
   :local:
@@ -40,19 +42,10 @@ Infrastructure
 --------------
 
 Finally, Python 3 interpreter is officially supported! The minimum requirements
-for PlatformIO Core 4.0 and Python interpreter are Python 2.7 or Python 3.5+.
+are Python 2.7 or Python 3.5+.
 
-`Over 200 commits and 100 changed files <https://github.com/platformio/platformio-core/compare/v3.6.7...develop>`_ since 3.6.7 release. The main reason of
-significant changes was a goal to make PlatformIO Core compatible between
-Python 2 and Python 3. Mostly, it relates to operating system with non-UTF8
-locale, or when file system encoding differs from default operating encodings
-(some Windows OS), or when project path contains non-ASCII chars.
-Also, `over 30+ new features <https://github.com/platformio/platformio-core/projects/2>`_
-were added.
-
-**PlatformIO Core 4.0 is the best what has been created since the 2014 year by
-PlatormIO Team.**
-This is a solid foundation for an unpredictable and exciting future!
+We have finally added full support for operating system locales other than UTF-8.
+So, your project path can contain non-ASCII/non-Latin chars now.
 
 What is new
 -----------
@@ -72,7 +65,7 @@ invalid :ref:`ldf_mode` or non-existing :ref:`projectconf_debug_svd_path`).
 Global scope ``[env]``
 ^^^^^^^^^^^^^^^^^^^^^^
 
-One of most requested features was a "global" or "common" project
+One of the most requested features was a "global" or "common" project
 environment (:ref:`projectconf_section_env`) where developers can share common configuration between all declared build environments ``[env:NAME]``.
 
 The previous solution in PlatformIO Core 3.0 was using :ref:`projectconf_dynamic_vars`.
@@ -127,13 +120,13 @@ is the same if you duplicate all options (PlatformIO Core 3.0 compatible):
 External Configuration Files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To simplify a project configuration process, PlatformIO Core 4.0 adds support
+To simplify the project configuration process, PlatformIO Core 4.0 adds support
 for external :ref:`projectconf`. Yes! You can finally extend one configuration
 file with another or with a list of them. The cool feature is a support for
 Unix shell-style wildcards. So, you can dynamically generate :ref:`projectconf`
 files or load bunch of them from a folder.
 See :ref:`projectconf_pio_extra_configs` option for details and a simple example
-below,
+below:
 
 *Base "platformio.ini"*
 
@@ -263,7 +256,7 @@ updated options.
       - Pass extra flags and options to :ref:`cmd_device_monitor` command
     * - env
       - :ref:`projectconf_upload_command`
-      - Override default :ref:`platforms` upload command with a custom.
+      - Override default :ref:`platforms` upload command with a custom one.
 
 Library Management
 ~~~~~~~~~~~~~~~~~~
@@ -293,7 +286,7 @@ Build System
 
 PlatformIO Core 4.0 uses a new :ref:`projectconf_pio_build_dir` instead of
 ``.pioenvs`` for compiled objects, archived libraries, firmware binaries
-and other artifacts. New :ref:`projectconf_build_type` option allows to control
+and, other artifacts. A new :ref:`projectconf_build_type` option allows to control
 a build process between "Release" and "Debug" modes (see :ref:`build_configurations`).
 
 See **Build System** section in :ref:`release_notes_4_0` release notes
@@ -309,9 +302,9 @@ etc). PlatformIO Package Manager installs these packages automatically and
 PlatformIO Build System uses them later.
 
 Starting from PlatformIO Core 4.0, developers will see which versions of
-development platform or its dependent packages be used. This is a great addition
+a development platform or its dependent packages be used. This is a great addition
 to track changes (:ref:`frameworks`, SDKs) between :ref:`platforms` updates.
-See example with "staging" (Git) version of :ref:`platform_espressif8266`
+See an example with "staging" (Git) version of :ref:`platform_espressif8266`
 development platform:
 
 .. code-block:: shell
