@@ -274,8 +274,8 @@ presented in PlatformIO 3.0:
    PlatformIO Core 4.0 may delete/cleanup this folder in a service purpose any time.
 
 2. :ref:`ldf` now uses isolated library dependency storage per project build
-   environment. It resolves conflicts, when libraries declared via
-   :ref:`projectconf_lib_deps` option, in the different build environments
+   environment. It resolves conflicts when the libraries from different
+   build environments declared via :ref:`projectconf_lib_deps` option
    were installed into the same ``.piolibdeps`` folder.
 
 See **Library Management** section in :ref:`release_notes_4_0` release notes
