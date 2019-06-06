@@ -296,13 +296,13 @@ Package Dependencies
 ^^^^^^^^^^^^^^^^^^^^^
 
 PlatformIO has decentralized architecture and allows platform maintainers
-to create :ref:`platform_creating`: for PlatformIO ecosystem. Each development
+to create :ref:`platform_creating` for PlatformIO ecosystem. Each development
 platform depends on a list of packages (toolchains, SDKs, debugging servers,
 etc). PlatformIO Package Manager installs these packages automatically and
 PlatformIO Build System uses them later.
 
-Starting from PlatformIO Core 4.0, developers will see which versions of
-a development platform or its dependent packages be used. This is a great addition
+Starting from PlatformIO Core 4.0, developers can see which versions of
+a development platform or its dependent packages will be used. This is a great addition
 to track changes (:ref:`frameworks`, SDKs) between :ref:`platforms` updates.
 See an example with "staging" (Git) version of :ref:`platform_espressif8266`
 development platform:
