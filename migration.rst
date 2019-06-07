@@ -51,7 +51,25 @@ If you are :ref:`platforms` maintainer or you need to show a progress bar
 (upload progress, connecting status...), PlatformIO Core 4.0 has re-factored
 target runner where line-buffering was totally removed. Just print any progress
 information in real time and PlatformIO Core will display it instantly on user
-the side.
+the side. For example, a writing progress from :ref:`platform_atmelavr`
+"avrdude" programmer:
+
+.. code-block:: shell
+
+    ...
+    Looking for upload port...
+    Auto-detected: /dev/cu.usbmodemFA141
+    Uploading build/uno/firmware.hex
+
+    avrdude: AVR device initialized and ready to accept instructions
+
+    Reading | ################################################## | 100% 0.00s
+
+    avrdude: Device signature = 0x1e950f (probably m328p)
+    avrdude: reading input file "build/uno/firmware.hex"
+    avrdude: writing flash (930 bytes):
+
+    Writing | ##########################
 
 What is new
 -----------
