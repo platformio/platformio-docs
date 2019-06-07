@@ -226,7 +226,7 @@ After a parsing process, configuration state will be the next:
     board = lolin32
     build_flags = -Og
 
-New options
+New Options
 ^^^^^^^^^^^
 
 We have added new options and changed some existing ones. Here are the new or
@@ -344,6 +344,38 @@ development platform:
   LDF Modes: Finder ~ chain+, Compatibility ~ soft
   Found 35 compatible libraries
   Scanning dependencies...
+
+Custom Platform Packages
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sometimes you need to override default :ref:`platforms` packages or add an
+extra. PlatformIO Core 4.0 introduces a new configuration option
+:ref:`projectconf_env_platform_packages` per a build environment.
+Also, using this option you can install external packages and use them later
+as programmers or upload tools. See a few examples:
+
+.. code-block:: ini
+
+    [env:override_default_toolchain]
+    platform = atmelavr
+    platform_packages =
+        # use GCC AVR 5.0+
+        toolchain-gccarmnoneeabi@>1.50000.0
+
+    [env:override_framework]
+    platform = espressif8266
+    platform_packages =
+        # use upstream Git version
+        framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
+
+    [env:external_package]
+    platform = ststm32
+    platform_packages =
+        # latest openOCD from PlatformIO Package Registry
+        tool-openocd
+
+        # source code of ST-Link
+        tool-stlink-source @ https://github.com/texane/stlink.git
 
 Custom Upload Command
 ^^^^^^^^^^^^^^^^^^^^^
