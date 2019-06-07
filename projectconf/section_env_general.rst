@@ -88,23 +88,23 @@ Examples:
     [env:override_default_toolchain]
     platform = atmelavr
     platform_packages =
-        # use GCC AVR 5.0+
-        toolchain-gccarmnoneeabi@>1.50000.0
+      ; use GCC AVR 5.0+
+      toolchain-gccarmnoneeabi@>1.50000.0
 
     [env:override_framework]
     platform = espressif8266
     platform_packages =
-        # use upstream Git version
-        framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
+      ; use upstream Git version
+      framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
 
     [env:external_package]
     platform = ststm32
     platform_packages =
-        # latest openOCD from PlatformIO Package Registry
-        tool-openocd
+      ; latest openOCD from PlatformIO Package Registry
+      tool-openocd
 
-        # source code of ST-Link
-        tool-stlink-source @ https://github.com/texane/stlink.git
+      ; source code of ST-Link
+      tool-stlink-source @ https://github.com/texane/stlink.git
 
 .. _projectconf_env_framework:
 
