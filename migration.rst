@@ -44,8 +44,14 @@ Infrastructure
 Finally, Python 3 interpreter is officially supported! The minimum requirements
 are Python 2.7 or Python 3.5+.
 
-We have finally added full support for operating system locales other than UTF-8.
+We also added full support for operating system locales other than UTF-8.
 So, your project path can contain non-ASCII/non-Latin chars now.
+
+If you are :ref:`platforms` maintainer or you need to show a progress bar
+(upload progress, connecting status...), PlatformIO Core 4.0 has re-factored
+target runner where line-buffering was totally removed. Just print any progress
+information in real time and PlatformIO Core will display it instantly on user
+the side.
 
 What is new
 -----------
