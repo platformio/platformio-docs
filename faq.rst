@@ -201,6 +201,7 @@ issues. We highly recommend to keep one instance of PIO Core or use built-in
 PIO Core in :ref:`pioide`:
 
 * :ref:`ide_atom` - ``Menu PlatformIO: Settings > PlatformIO IDE > Use built-in PlatformIO Core``
+* :ref:`ide_vscode` - :ref:`ide_vscode_settings` > Set ``platformio-ide.useBuiltinPIOCore`` to ``true``.
 
 Finally, if you have a standalone :ref:`piocore` in a system, please open system
 Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
@@ -209,7 +210,7 @@ Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
 
     pip uninstall platformio
 
-    # if you used MacOS "brew"
+    # if you used macOS "brew"
     brew uninstall platformio
 
 If you need to have :ref:`piocore` globally in a system, please
