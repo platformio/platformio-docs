@@ -293,10 +293,10 @@ Development Version
 .. warning::
     If you use :ref:`pioide`, please enable development version:
 
-    * **Atom**: "Menu PlatformIO: Settings > PlatformIO IDE > Use development
+    * :ref:`ide_atom`: "Menu PlatformIO: Settings > PlatformIO IDE > Use development
       version of PlatformIO Core"
-    * **VSCode**: Set ```platformio-ide.useDevelopmentPIOCore`` to ``true`` in
-      Settings.
+    * :ref:`ide_vscode`: Set ``platformio-ide.useDevelopmentPIOCore`` to ``true`` in
+      :ref:`ide_vscode_settings`.
 
 Install the latest PlatformIO from the ``develop`` branch:
 
