@@ -61,7 +61,7 @@ should be processed by default.
 
 Also, :ref:`piodebug` checks this option when looking for debug environment.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_DEFAULT_ENVS`.
 
 Example:
@@ -230,7 +230,7 @@ A default value is User's home directory:
 * Unix ``~/.platformio``
 * Windows ``%HOMEPATH%\.platformio``
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_CORE_DIR`.
 
 Example:
@@ -252,7 +252,7 @@ Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`
 Global library storage for PlatfrmIO projects and :ref:`librarymanager` where
 :ref:`ldf` looks for dependencies.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_GLOBALLIB_DIR`.
 
 .. _projectconf_pio_platforms_dir:
@@ -266,7 +266,7 @@ Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`
 
 Global storage where **PlatformIO Package Manager** installs :ref:`platforms`.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_PLATFORMS_DIR`.
 
 .. _projectconf_pio_packages_dir:
@@ -281,7 +281,7 @@ Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`
 Global storage where **PlatformIO Package Manager** installs :ref:`platforms`
 dependencies (toolchains, :ref:`frameworks`, SDKs, upload and debug tools).
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_PACKAGES_DIR`.
 
 .. _projectconf_pio_cache_dir:
@@ -298,8 +298,48 @@ PlatformIO Registry, downloaded packages and other service information).
 
 To reset a cache, please run :ref:`cmd_update` command.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_CACHE_DIR`.
+
+.. _projectconf_pio_build_cache_dir:
+
+``build_cache_dir``
+^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
+
+Type: ``DirPath`` | Multiple: ``No`` | Default: None (Disabled)
+
+:ref:`piocore` uses this folder to store derived files from a build system
+(objects, firmwares, ELFs). These files are shared between all build
+environments. To speed up a build process, you can use the same cache folder
+between different projects if they depend on the same development platform and
+framework.
+
+This option can also be configured by the global environment variable
+:envvar:`PLATFORMIO_BUILD_CACHE_DIR`.
+
+The example of :ref:`projectconf` below instructs PlatformIO Build System to
+check :ref:`projectconf_pio_build_cache_dir` for already compiled objects for
+:ref:`framework_stm32cube` and project source files. The cached object will
+not be used if the original source file was modified or build environment has
+a different configuration (new build flags, etc):
+
+.. code-block:: ini
+
+    [platformio]
+    ; set a path to a cache folder
+    build_cache_dir = /tmp/platformio-shared-cache
+
+    [env:bluepill_f103c6]
+    platform = ststm32
+    framework = stm32cube
+    board = bluepill_f103c6
+
+    [env:nucleo_f411re]
+    platform = ststm32
+    framework = stm32cube
+    board = nucleo_f411re
 
 .. _projectconf_pio_workspace_dir:
 
@@ -320,7 +360,7 @@ dependencies. It is used by the next options:
 A default value is ``.pio`` and means that folder is located in the root of
 project.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_WORKSPACE_DIR`.
 
 .. _projectconf_pio_build_dir:
@@ -343,7 +383,7 @@ fast!
 then PlatformIO will remove this folder automatically. It will be created on the
 next build operation.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_BUILD_DIR`.
 
 .. note::
@@ -362,7 +402,7 @@ Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_workspace
 Internal storage where :ref:`librarymanager` will install project dependencies
 (:ref:`projectconf_lib_deps`).
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_LIBDEPS_DIR`.
 
 .. _projectconf_pio_include_dir:
@@ -379,7 +419,7 @@ root of project. This path will be added to ``CPPPATH`` of build environment.
 If you need to add extra include directories to ``CPPPATH`` scope, please use
 :ref:`projectconf_build_flags` with ``-I /path/to/extra/dir`` option.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_INCLUDE_DIR`.
 
 .. _projectconf_pio_src_dir:
@@ -393,7 +433,7 @@ A path to project's source directory. PlatformIO uses it for :ref:`cmd_run`
 command. A default value is ``src`` that means that folder is located in the
 root of project.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_SRC_DIR`.
 
 .. note::
@@ -416,7 +456,7 @@ priority for :ref:`ldf`.
 A default value is ``lib`` that means that folder is located in the root of
 project.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_LIB_DIR`.
 
 For example, see how can be organized ``Foo`` and ``Bar`` libraries:
@@ -461,7 +501,7 @@ Data directory to store contents and :ref:`platform_espressif_uploadfs`.
 A default value is ``data`` that means that folder is located in the root of
 project.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_DATA_DIR`.
 
 .. _projectconf_pio_test_dir:
@@ -475,7 +515,7 @@ Directory where :ref:`unit_testing` engine will look for the tests.
 A default value is ``test`` that means that folder is located in the root of
 project.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_TEST_DIR`.
 
 .. _projectconf_pio_boards_dir:
@@ -495,7 +535,7 @@ By default, PlatformIO looks for boards in this order:
 2. Global :ref:`projectconf_pio_core_dir`/boards
 3. Development platform :ref:`projectconf_pio_core_dir`/platforms/\*/boards.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_BOARDS_DIR`.
 
 .. _projectconf_pio_shared_dir:
@@ -524,5 +564,5 @@ with :option:`platformio remote run --force-remote` or
 A default value is ``shared`` that means that folder is located in the root of
 project.
 
-This option can also be configured by global environment variable
+This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_SHARED_DIR`.

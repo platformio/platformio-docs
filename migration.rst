@@ -310,8 +310,9 @@ Build System
 
 PlatformIO Core 4.0 uses a new :ref:`projectconf_pio_build_dir` instead of
 ``.pioenvs`` for compiled objects, archived libraries, firmware binaries
-and, other artifacts. A new :ref:`projectconf_build_type` option allows to control
-a build process between "Release" and "Debug" modes (see :ref:`build_configurations`).
+and, other artifacts. A new :ref:`projectconf_build_type` option allows you
+to control a build process between "Release" and "Debug" modes
+(see :ref:`build_configurations`).
 
 See **Build System** section in :ref:`release_notes_4_0` release notes
 for more details.
@@ -382,7 +383,7 @@ Custom Upload Command
 
 PlatformIO's :ref:`platforms` have pre-configured settings to program boards
 or devices. They depend on a type of bootloader or programming interface.
-PlatformIO Core 4.0 allows to override default upload command using
+PlatformIO Core 4.0 allows you to override default upload command using
 :ref:`projectconf_upload_command` option in :ref:`projectconf`:
 
 .. code-block:: ini
@@ -394,6 +395,40 @@ PlatformIO Core 4.0 allows to override default upload command using
     upload_command = /my/flasher arg1 arg2 --flag1 $SOURCE
 
 See real examples for :ref:`projectconf_upload_command`.
+
+Shared Cache Directory
+^^^^^^^^^^^^^^^^^^^^^^
+
+PlatformIO Core 4.0 allows you to configure a shared folder for the derived
+files (objects, firmwares, ELFs) from a build system using
+:ref:`projectconf_pio_build_cache_dir`. You can use it in multi-environments
+project configuration to avoid multiple compilations of the same source code
+files.
+
+The example of :ref:`projectconf` below instructs PlatformIO Build System to
+check :ref:`projectconf_pio_build_cache_dir` for already compiled objects for
+:ref:`framework_stm32cube` and project source files. The cached object will
+not be used if the original source file was modified or build environment has
+a different configuration (new build flags, etc):
+
+.. code-block:: ini
+
+    [platformio]
+    ; set a path to a cache folder
+    build_cache_dir = /tmp/platformio-shared-cache
+
+    [env:bluepill_f103c6]
+    platform = ststm32
+    framework = stm32cube
+    board = bluepill_f103c6
+
+    [env:nucleo_f411re]
+    platform = ststm32
+    framework = stm32cube
+    board = nucleo_f411re
+
+You can also use the same :ref:`projectconf_pio_build_cache_dir` between
+different projects if they use the same :ref:`platforms` and :ref:`frameworks`.
 
 What is removed or changed
 --------------------------

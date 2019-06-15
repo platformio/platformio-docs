@@ -95,6 +95,10 @@ Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_packages_
 
 Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_cache_dir`.
 
+.. envvar:: PLATFORMIO_BUILD_CACHE_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_build_cache_dir`.
+
 .. envvar:: PLATFORMIO_WORKSPACE_DIR
 
 Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_workspace_dir`.
