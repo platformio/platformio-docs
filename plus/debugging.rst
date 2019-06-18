@@ -18,8 +18,6 @@ PIO Unified Debugger
 
 **It Simply Works. Easier than ever before!**
 
-.. versionadded:: 3.4 (`PIO Plus <https://pioplus.com>`__)
-
 .. note::
 
   `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/finally-pio-unified-debugger-comes-to-vscode/4091>`_

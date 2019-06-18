@@ -16,8 +16,6 @@
 PIO Unit Testing
 ================
 
-.. versionadded:: 3.0 (`PIO Plus <https://pioplus.com>`_)
-
 PIO Unit Testing allows segregating each part of the firmware/program and test
 that the individual parts are working correctly. Using |PIOUTE| you can
 execute the same tests on the local host machine (native), on the multiple

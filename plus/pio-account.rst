@@ -14,12 +14,9 @@
 PIO Account
 ===========
 
-Having **PIO Account** allows you to use extra professional features from
-`PIO Plus <https://pioplus.com/>`__:
+**PIO Account** is required for using:
 
-* :ref:`piodebug`
 * :ref:`pioremote`
-* :ref:`unit_testing`
 * Integration with :ref:`ide_cloud`
 
 A registration is **FREE**. No Credit Card Required.
