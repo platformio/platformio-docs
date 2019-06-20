@@ -245,6 +245,52 @@ See full example with embedding Amazon AWS certificates:
 
 - https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-aws-iot
 
+ULP coprocessor programming
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you want to take measurements using ADC, internal temperature sensor or external 
+I2C sensors, while the main processors are in deep sleep mode you need to use ULP 
+coprocessor. At the moment ULP can be used only with the framework :ref:`framework_espidf`.
+
+First of all, to use ULP in your project you need to make sure that it is enabled in your
+``sdkconfig.h`` configuration file. The next two lines must be added:
+
+.. code-block:: cpp
+
+    #define CONFIG_ULP_COPROC_ENABLED 1
+    #define CONFIG_ULP_COPROC_RESERVE_MEM 1024
+
+Usually ``CONFIG_ULP_COPROC_RESERVE_MEM`` is already defined in the default 
+``sdkconfig.h`` with value ``0``. You can modify this value to meet your requirements.
+
+
+Secondly, all ULP code, usually written in assembly in files with ``.S`` extension, 
+must be placed into a separate directory with the name ``ulp`` in the root folder 
+of your project. So your project structure should look like this:
+
+.. code-block:: bash
+
+    project_dir
+    ├── include
+    ├── lib
+    │   └── README
+    ├── test
+    ├── src
+    │    ├── main.c
+    │    └── sdkconfig.h
+    ├── ulp
+    │    └── ulp_code.S     
+    └── platformio.ini
+
+
+See full examples with ULP coprocessor programming:
+
+- https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-adc
+- https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-pulse
+
+More details are located in the official ESP-IDF documentation -
+`ULP coprocessor programming <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable>`_.
+
 Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
