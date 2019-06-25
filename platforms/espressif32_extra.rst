@@ -13,6 +13,7 @@ Tutorials
 ---------
 
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
+* `Video: Free Inline Debugging for ESP32 and Arduino Sketches <hhttps://www.youtube.com/watch?v=psMqilqlrRQ>`__
 
 Configuration
 -------------
@@ -248,8 +249,8 @@ See full example with embedding Amazon AWS certificates:
 ULP coprocessor programming
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to take measurements using ADC, internal temperature sensor or external 
-I2C sensors, while the main processors are in deep sleep mode you need to use ULP 
+If you want to take measurements using ADC, internal temperature sensor or external
+I2C sensors, while the main processors are in deep sleep mode you need to use ULP
 coprocessor. At the moment ULP can be used only with the framework :ref:`framework_espidf`.
 
 First of all, to use ULP in your project you need to make sure that it is enabled in your
@@ -260,12 +261,12 @@ First of all, to use ULP in your project you need to make sure that it is enable
     #define CONFIG_ULP_COPROC_ENABLED 1
     #define CONFIG_ULP_COPROC_RESERVE_MEM 1024
 
-Usually ``CONFIG_ULP_COPROC_RESERVE_MEM`` is already defined in the default 
+Usually ``CONFIG_ULP_COPROC_RESERVE_MEM`` is already defined in the default
 ``sdkconfig.h`` with value ``0``. You can modify this value to meet your requirements.
 
 
-Secondly, all ULP code, usually written in assembly in files with ``.S`` extension, 
-must be placed into a separate directory with the name ``ulp`` in the root folder 
+Secondly, all ULP code, usually written in assembly in files with ``.S`` extension,
+must be placed into a separate directory with the name ``ulp`` in the root folder
 of your project. So your project structure should look like this:
 
 .. code-block:: bash
@@ -279,7 +280,7 @@ of your project. So your project structure should look like this:
     │    ├── main.c
     │    └── sdkconfig.h
     ├── ulp
-    │    └── ulp_code.S     
+    │    └── ulp_code.S
     └── platformio.ini
 
 
