@@ -50,7 +50,7 @@ described below.
 .. code-block:: ini
 
     [platformio]
-    default_envs = nodemcuv2
+    env_default = nodemcuv2
 
     ; You MUST inject these options into [env:] section
     ; using ${common_env_data.***} (see below)
