@@ -313,6 +313,7 @@ Espressif 32
     espressif32/intorobot
     espressif32/m5stack-core-esp32
     espressif32/m5stack-fire
+    espressif32/m5stack-grey
     espressif32/m5stick-c
     espressif32/mhetesp32devkit
     espressif32/mhetesp32minikit
@@ -459,7 +460,8 @@ Kendryte K210
         
     kendryte210/sipeed-maix-bit
     kendryte210/sipeed-maix-go
-    kendryte210/sipeed-maix-one
+    kendryte210/sipeed-maix-one-dock
+    kendryte210/sipeed-maixduino
 
 Lattice iCE40
 -------------

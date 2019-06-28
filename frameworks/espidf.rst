@@ -778,6 +778,13 @@ M5Stack
       - 240MHz
       - 16MB
       - 6.25MB
+    * - :ref:`board_espressif32_m5stack-grey`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_m5stick-c`
       - :ref:`platform_espressif32`
       - No

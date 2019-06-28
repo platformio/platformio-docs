@@ -43,6 +43,8 @@ Examples are listed from `Espressif 32 development platform repository <https://
 * `espidf-http-request <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-http-request?utm_source=platformio&utm_medium=docs>`_
 * `espidf-peripherals-uart <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-uart?utm_source=platformio&utm_medium=docs>`_
 * `espidf-storage-sdcard <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-sdcard?utm_source=platformio&utm_medium=docs>`_
+* `espidf-ulp-adc <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ulp-adc?utm_source=platformio&utm_medium=docs>`_
+* `espidf-ulp-pulse <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ulp-pulse?utm_source=platformio&utm_medium=docs>`_
 * `pumbaa-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/pumbaa-blink?utm_source=platformio&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
 
@@ -355,6 +357,9 @@ Packages
 
     * - `tool-openocd-esp32 <https://github.com/espressif/openocd-esp32?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD for Espressif 32
+
+    * - `toolchain-esp32ulp <https://github.com/espressif/binutils-esp32ulp?utm_source=platformio&utm_medium=docs>`__
+      - Binutils fork with support for the ESP32 ULP co-processor
 
     * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf?utm_source=platformio&utm_medium=docs>`__
       - xtensa32-gcc
@@ -804,6 +809,12 @@ M5Stack
       - 240MHz
       - 16MB
       - 6.25MB
+    * - :ref:`board_espressif32_m5stack-grey`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_m5stick-c`
       - No
       - ESP32
