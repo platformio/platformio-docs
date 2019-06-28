@@ -460,8 +460,7 @@ Kendryte K210
         
     kendryte210/sipeed-maix-bit
     kendryte210/sipeed-maix-go
-    kendryte210/sipeed-maix-one-dock
-    kendryte210/sipeed-maixduino
+    kendryte210/sipeed-maix-one
 
 Lattice iCE40
 -------------
