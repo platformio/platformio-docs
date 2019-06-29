@@ -370,7 +370,7 @@ You can pass additional options/flags to OTA uploader using
 
 Available flags
 
-* ``--port=ESP_PORT`` ESP32 OTA Port. Default 3232
+* ``--port=ESP_PORT`` ESP32 OTA Port. **Default 8266**
 * ``--auth=AUTH`` Set authentication password
 * ``--spiffs`` Use this option to transmit a SPIFFS image and do not flash
   the module
@@ -392,7 +392,7 @@ For the full list with available options please run
         -i ESP_IP, --ip=ESP_IP
                             ESP32 IP Address.
         -p ESP_PORT, --port=ESP_PORT
-                            ESP32 ota Port. Default 3232
+                            ESP32 ota Port. Default 8266
 
       Authentication:
         -a AUTH, --auth=AUTH
