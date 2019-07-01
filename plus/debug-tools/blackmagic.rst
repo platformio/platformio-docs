@@ -733,6 +733,13 @@ Boards
       - 48MHz
       - 120KB
       - 14.81KB
+    * - :ref:`board_atmelsam_mkrvidor4000`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_ststm32_mts_dragonfly_f411re`
       - :ref:`platform_ststm32`
       - External
@@ -843,6 +850,13 @@ Boards
       - External
       - STM32L152RC
       - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_nano_33_iot`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_nxplpc_blueboard_lpc11u24`

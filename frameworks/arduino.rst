@@ -900,6 +900,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_atmelsam_mkrvidor4000`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_macchina2`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -960,6 +966,12 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_atmelsam_nano_33_iot`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_node32s`
       - :ref:`platform_espressif32`
       - ESP32
@@ -2231,6 +2243,20 @@ Arduino
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_zeroUSB`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrvidor4000`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_nano_33_iot`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A

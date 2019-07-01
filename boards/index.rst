@@ -265,9 +265,11 @@ Atmel SAM
     atmelsam/saml21_xpro_b
     atmelsam/digix
     atmelsam/current_ranger
+    atmelsam/mkrvidor4000
     atmelsam/macchina2
     atmelsam/minitronics20
     atmelsam/moteino_zero
+    atmelsam/nano_33_iot
     atmelsam/sodaq_autonomo
     atmelsam/sodaq_explorer
     atmelsam/sodaq_one

@@ -627,6 +627,20 @@ Arduino
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_mkrvidor4000`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_nano_33_iot`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
 
 Armed
 ~~~~~

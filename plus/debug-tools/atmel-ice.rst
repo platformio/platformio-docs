@@ -387,6 +387,13 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_atmelsam_mkrvidor4000`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_macchina2`
       - :ref:`platform_atmelsam`
       - External
@@ -402,6 +409,13 @@ Boards
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_moteino_zero`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_nano_33_iot`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A
