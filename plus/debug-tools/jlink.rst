@@ -183,6 +183,9 @@ Platforms
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
+    * - :ref:`platform_sifive`
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
 
@@ -211,6 +214,9 @@ Frameworks
 
     * - :ref:`framework_espidf`
       - Espressif IoT Development Framework. Official development framework for ESP32.
+
+    * - :ref:`framework_freedom-e-sdk`
+      - Open Source Software for Developing on the SiFive Freedom E Platform
 
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
@@ -583,6 +589,13 @@ Boards
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_sifive_e310-arty`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 450MHz
+      - 16MB
+      - 256MB
     * - :ref:`board_atmelsam_samr21_xpro`
       - :ref:`platform_atmelsam`
       - On-board
@@ -1031,6 +1044,13 @@ Boards
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_sifive_hifive1-revb`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
     * - :ref:`board_espressif32_hornbill32dev`
       - :ref:`platform_espressif32`
       - External

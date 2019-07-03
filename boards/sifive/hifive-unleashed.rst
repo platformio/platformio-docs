@@ -9,59 +9,59 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_riscv_coreplexip-e31-arty:
+.. _board_sifive_hifive-unleashed:
 
-Freedom E310 Arty (Artix-7) FPGA Dev Kit
-========================================
+HiFive Unleashed
+================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_riscv`: RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
+Platform :ref:`platform_sifive`: SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 .. list-table::
 
   * - **Microcontroller**
-    - E31
+    - FU540
   * - **Frequency**
-    - 320MHz
+    - 1500MHz
   * - **Flash**
-    - 16MB
+    - 32MB
   * - **RAM**
-    - 256MB
+    - 8GB
   * - **Vendor**
-    - `Xilinx <http://www.xilinx.com/products/boards-and-kits/arty.html?utm_source=platformio&utm_medium=docs>`__
+    - `SiFive <https://www.sifive.com/boards/hifive-unleashed?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``coreplexip-e31-arty`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``hifive-unleashed`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:coreplexip-e31-arty]
-  platform = riscv
-  board = coreplexip-e31-arty
+  [env:hifive-unleashed]
+  platform = sifive
+  board = hifive-unleashed
 
-You can override default Freedom E310 Arty (Artix-7) FPGA Dev Kit settings per build environment using
+You can override default HiFive Unleashed settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `coreplexip-e31-arty.json <https://github.com/platformio/platform-riscv/blob/master/boards/coreplexip-e31-arty.json>`_. For example,
+board manifest `hifive-unleashed.json <https://github.com/platformio/platform-sifive/blob/master/boards/hifive-unleashed.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:coreplexip-e31-arty]
-  platform = riscv
-  board = coreplexip-e31-arty
+  [env:hifive-unleashed]
+  platform = sifive
+  board = hifive-unleashed
 
   ; change microcontroller
-  board_build.mcu = e31
+  board_build.mcu = fu540
 
   ; change MCU frequency
-  board_build.f_cpu = 320000000L
+  board_build.f_cpu = 1500000000L
 
 Debugging
 ---------
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Freedom E310 Arty (Artix-7) FPGA Dev Kit does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+HiFive Unleashed has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -84,9 +84,12 @@ Freedom E310 Arty (Artix-7) FPGA Dev Kit does not have on-board debug probe and 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
+  * - :ref:`debugging_tool_ftdi`
     - Yes
+    - Yes
+  * - :ref:`debugging_tool_qemu`
+    - Yes
+    - 
 
 Frameworks
 ----------

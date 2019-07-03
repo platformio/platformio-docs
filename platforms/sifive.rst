@@ -9,35 +9,38 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _platform_riscv:
+.. _platform_sifive:
 
-RISC-V
+SiFive
 ======
 
 :Configuration:
-  :ref:`projectconf_env_platform` = ``riscv``
+  :ref:`projectconf_env_platform` = ``sifive``
 
-RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
+SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
-For more detailed information please visit `vendor site <https://riscv.org?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://sifive.com?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
     :depth: 1
 
-.. include:: riscv_extra.rst
 
 Examples
 --------
 
-Examples are listed from `RISC-V development platform repository <https://github.com/platformio/platform-riscv/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `SiFive development platform repository <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `freedom-e-sdk_asm <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_asm?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_dhrystone <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_dhrystone?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_gpio <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_gpio?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_hello <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_smp <https://github.com/platformio/platform-riscv/tree/master/examples/freedom-e-sdk_smp?utm_source=platformio&utm_medium=docs>`_
-* `native-blink_asm <https://github.com/platformio/platform-riscv/tree/master/examples/native-blink_asm?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_dhrystone <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_dhrystone?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_multicore-hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_multicore-hello?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_sifive-welcome <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_sifive-welcome?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_spi <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_spi?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_test-coreip <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_test-coreip?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_timer-interrupt <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_timer-interrupt?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_user-mode <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-mode?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_user-syscall <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-syscall?utm_source=platformio&utm_medium=docs>`_
+* `native-blink_asm <https://github.com/platformio/platform-sifive/tree/master/examples/native-blink_asm?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -76,46 +79,33 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_riscv_freedom-e300-hifive1`
+    * - :ref:`board_sifive_e310-arty`
+      - FE310
+      - 450MHz
+      - 16MB
+      - 256MB
+    * - :ref:`board_sifive_hifive-unleashed`
+      - FU540
+      - 1500MHz
+      - 32MB
+      - 8GB
+    * - :ref:`board_sifive_hifive1`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_hifive1-revb`
       - FE310
       - 320MHz
       - 16MB
       - 16KB
 
 
-External Debug Tools
-^^^^^^^^^^^^^^^^^^^^
-
-Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug probe. They **ARE NOT READY** for debugging.
-Please click on board name for the further details.
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_riscv_coreplexip-e51-arty`
-      - E51
-      - 1500MHz
-      - 16MB
-      - 256MB
-    * - :ref:`board_riscv_coreplexip-e31-arty`
-      - E31
-      - 320MHz
-      - 16MB
-      - 256MB
-
-
 Stable and upstream versions
 ----------------------------
 
-You can switch between `stable releases <https://github.com/platformio/platform-riscv/releases>`__
-of RISC-V development platform and the latest upstream version using
+You can switch between `stable releases <https://github.com/platformio/platform-sifive/releases>`__
+of SiFive development platform and the latest upstream version using
 :ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
 
 Stable
@@ -125,12 +115,12 @@ Stable
 
     ; Latest stable version
     [env:latest_stable]
-    platform = riscv
+    platform = sifive
     board = ...
 
     ; Custom stable version
     [env:custom_stable]
-    platform = riscv@x.y.z
+    platform = sifive@x.y.z
     board = ...
 
 Upstream
@@ -139,7 +129,7 @@ Upstream
 .. code-block:: ini
 
     [env:upstream_develop]
-    platform = https://github.com/platformio/platform-riscv.git
+    platform = https://github.com/platformio/platform-sifive.git
     board = ...
 
 
@@ -155,8 +145,14 @@ Packages
     * - `framework-freedom-e-sdk <https://github.com/sifive/freedom-e-sdk?utm_source=platformio&utm_medium=docs>`__
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+      - SEGGER J-Link Software and Documentation Pack
+
     * - `tool-openocd-riscv <https://github.com/riscv/riscv-openocd?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD for RISC-V
+
+    * - `tool-qemu-riscv <https://www.qemu.org/?utm_source=platformio&utm_medium=docs>`__
+      - Open source machine emulator and virtualizer
 
     * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain?utm_source=platformio&utm_medium=docs>`__
       - GNU toolchain for RISC-V, including GCC
@@ -207,7 +203,19 @@ SiFive
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_riscv_freedom-e300-hifive1`
+    * - :ref:`board_sifive_hifive-unleashed`
+      - On-board
+      - FU540
+      - 1500MHz
+      - 32MB
+      - 8GB
+    * - :ref:`board_sifive_hifive1`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_hifive1-revb`
       - On-board
       - FE310
       - 320MHz
@@ -226,15 +234,9 @@ Xilinx
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_riscv_coreplexip-e51-arty`
-      - External
-      - E51
-      - 1500MHz
-      - 16MB
-      - 256MB
-    * - :ref:`board_riscv_coreplexip-e31-arty`
-      - External
-      - E31
-      - 320MHz
+    * - :ref:`board_sifive_e310-arty`
+      - On-board
+      - FE310
+      - 450MHz
       - 16MB
       - 256MB

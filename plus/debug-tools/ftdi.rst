@@ -72,14 +72,14 @@ Platforms
     * - :ref:`platform_kendryte210`
       - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
 
-    * - :ref:`platform_riscv`
-      - RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
-
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 
     * - :ref:`platform_samsung_artik`
       - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
+
+    * - :ref:`platform_sifive`
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 Frameworks
 ----------
@@ -130,6 +130,13 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_sifive_e310-arty`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 450MHz
+      - 16MB
+      - 256MB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
       - On-board
@@ -144,8 +151,15 @@ Boards
       - 250MHz
       - 64MB
       - 8MB
-    * - :ref:`board_riscv_freedom-e300-hifive1`
-      - :ref:`platform_riscv`
+    * - :ref:`board_sifive_hifive-unleashed`
+      - :ref:`platform_sifive`
+      - On-board
+      - FU540
+      - 1500MHz
+      - 32MB
+      - 8GB
+    * - :ref:`board_sifive_hifive1`
+      - :ref:`platform_sifive`
       - On-board
       - FE310
       - 320MHz

@@ -630,16 +630,6 @@ NXP LPC
     nxplpc/ubloxc027
     nxplpc/lpc11u35_y5_mbug
 
-RISC-V
-------
-
-.. toctree::
-    :maxdepth: 1
-        
-    riscv/coreplexip-e51-arty
-    riscv/coreplexip-e31-arty
-    riscv/freedom-e300-hifive1
-
 RISC-V GAP
 ----------
 
@@ -655,6 +645,17 @@ Samsung ARTIK
     :maxdepth: 1
         
     samsung_artik/artik_053
+
+SiFive
+------
+
+.. toctree::
+    :maxdepth: 1
+        
+    sifive/e310-arty
+    sifive/hifive-unleashed
+    sifive/hifive1
+    sifive/hifive1-revb
 
 Silicon Labs EFM32
 ------------------

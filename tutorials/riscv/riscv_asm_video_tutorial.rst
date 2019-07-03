@@ -14,8 +14,8 @@
 RISC-V ASM Video Tutorial
 =========================
 
-An introduction to using :ref:`platform_riscv` and Assembly language on the
-SiFive :ref:`board_riscv_freedom-e300-hifive1` by Martin Fink, Chief
+An introduction to using :ref:`platform_sifive` and Assembly language on the
+SiFive :ref:`board_sifive_hifive1` by Martin Fink, Chief
 Technology Officer at Western Digital.
 
 Source Files

@@ -64,49 +64,36 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_riscv_freedom-e300-hifive1`
-      - :ref:`platform_riscv`
+    * - :ref:`board_sifive_e310-arty`
+      - :ref:`platform_sifive`
+      - FE310
+      - 450MHz
+      - 16MB
+      - 256MB
+    * - :ref:`board_sifive_hifive-unleashed`
+      - :ref:`platform_sifive`
+      - FU540
+      - 1500MHz
+      - 32MB
+      - 8GB
+    * - :ref:`board_sifive_hifive1`
+      - :ref:`platform_sifive`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_hifive1-revb`
+      - :ref:`platform_sifive`
       - FE310
       - 320MHz
       - 16MB
       - 16KB
 
 
-External Debug Tools
-^^^^^^^^^^^^^^^^^^^^
-
-Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug probe. They **ARE NOT READY** for debugging.
-Please click on board name for the further details.
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_riscv_coreplexip-e51-arty`
-      - :ref:`platform_riscv`
-      - E51
-      - 1500MHz
-      - 16MB
-      - 256MB
-    * - :ref:`board_riscv_coreplexip-e31-arty`
-      - :ref:`platform_riscv`
-      - E31
-      - 320MHz
-      - 16MB
-      - 256MB
-
-
 Examples
 --------
 
-* `Freedom E SDK for RISC-V <https://github.com/platformio/platform-riscv/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Freedom E SDK for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -116,8 +103,8 @@ Platforms
     * - Name
       - Description
 
-    * - :ref:`platform_riscv`
-      - RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
+    * - :ref:`platform_sifive`
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 Boards
 ------
@@ -140,8 +127,22 @@ SiFive
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_riscv_freedom-e300-hifive1`
-      - :ref:`platform_riscv`
+    * - :ref:`board_sifive_hifive-unleashed`
+      - :ref:`platform_sifive`
+      - On-board
+      - FU540
+      - 1500MHz
+      - 32MB
+      - 8GB
+    * - :ref:`board_sifive_hifive1`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_hifive1-revb`
+      - :ref:`platform_sifive`
       - On-board
       - FE310
       - 320MHz
@@ -161,17 +162,10 @@ Xilinx
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_riscv_coreplexip-e51-arty`
-      - :ref:`platform_riscv`
-      - External
-      - E51
-      - 1500MHz
-      - 16MB
-      - 256MB
-    * - :ref:`board_riscv_coreplexip-e31-arty`
-      - :ref:`platform_riscv`
-      - External
-      - E31
-      - 320MHz
+    * - :ref:`board_sifive_e310-arty`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 450MHz
       - 16MB
       - 256MB

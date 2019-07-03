@@ -120,6 +120,7 @@ option.
   debug-tools/olimex-arm-usb-ocd
   debug-tools/olimex-arm-usb-tiny-h
   debug-tools/olimex-jtag-tiny
+  debug-tools/qemu
   debug-tools/stlink
   debug-tools/ti-icdi
   debug-tools/tumpa
@@ -174,14 +175,14 @@ Platforms
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
-    * - :ref:`platform_riscv`
-      - RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
-
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 
     * - :ref:`platform_samsung_artik`
       - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
+
+    * - :ref:`platform_sifive`
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -3224,8 +3225,22 @@ SiFive
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_riscv_freedom-e300-hifive1`
-      - :ref:`platform_riscv`
+    * - :ref:`board_sifive_hifive-unleashed`
+      - :ref:`platform_sifive`
+      - On-board
+      - FU540
+      - 1500MHz
+      - 32MB
+      - 8GB
+    * - :ref:`board_sifive_hifive1`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_hifive1-revb`
+      - :ref:`platform_sifive`
       - On-board
       - FE310
       - 320MHz
@@ -3840,18 +3855,11 @@ Xilinx
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_riscv_coreplexip-e51-arty`
-      - :ref:`platform_riscv`
-      - External
-      - E51
-      - 1500MHz
-      - 16MB
-      - 256MB
-    * - :ref:`board_riscv_coreplexip-e31-arty`
-      - :ref:`platform_riscv`
-      - External
-      - E31
-      - 320MHz
+    * - :ref:`board_sifive_e310-arty`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 450MHz
       - 16MB
       - 256MB
 
