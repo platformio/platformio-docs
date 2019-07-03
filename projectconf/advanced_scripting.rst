@@ -486,7 +486,7 @@ See examples below:
 
     # Generic
     env.Replace(
-        UPLOADER="executable or path to executable"
+        UPLOADER="executable or path to executable",
         UPLOADCMD="$UPLOADER $UPLOADERFLAGS $SOURCE"
     )
 
