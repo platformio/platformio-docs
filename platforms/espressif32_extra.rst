@@ -408,6 +408,11 @@ For the full list with available options please run
         -d, --debug         Show debug output. And override loglevel with debug.
         -r, --progress      Show progress output. Does not work for ArduinoIDE
 
+.. warning::
+    For windows users. To manage OTA check the ESP wifi network profile isn't checked on public
+    be sure it's on private mode``
+
+
 Using Arduino Framework with Staging version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
