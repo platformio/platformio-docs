@@ -25,7 +25,7 @@ PlatformIO Core (CLI)
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * Integration components (:ref:`ide` and :ref:`ci`).
 
-|PIOCORE| is written in `Python 2.7 <https://www.python.org/downloads/>`_
+|PIOCORE| is written in `Python 2 <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
 computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `BeagleBone <http://beagleboard.org>`_,

@@ -22,7 +22,7 @@ Installation
 
     If you need :ref:`piocore` outside PlatformIO IDE, please :ref:`piocore_install_shell_commands`.
 
-**PlatformIO Core** is written in `Python 2.7 <https://www.python.org/downloads/>`_
+**PlatformIO Core** is written in `Python <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
 computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `BeagleBone <http://beagleboard.org>`_, `CubieBoard <http://cubieboard.org>`_,
@@ -37,7 +37,7 @@ System requirements
 :Operating System: Windows, macOS, Linux, FreeBSD, Linux ARMv6+
 :Python Interpreter:
 
-    Python 2.7 is required. PlatformIO **does not** support Python 3.
+    Python 2.7 or Python 3.5+.
     See detailed instruction how to :ref:`faq_install_python` for Windows.
 
 :Terminal Application:
@@ -147,16 +147,13 @@ macOS Homebrew Packages Manager (`brew <http://brew.sh/>`_) as follows:
 Full Guide
 ~~~~~~~~~~
 
-1. Check a ``python`` version (only Python 2.7 is supported):
+1. Check a ``python`` version:
 
 .. code-block:: bash
 
     python --version
 
-*Windows Users* only:
-
-    * `Download Python 2.7 <https://www.python.org/downloads/>`_ and install it.
-    * Add to PATH system variable ``;C:\Python27;C:\Python27\Scripts;`` and reopen *Command Prompt* (``cmd.exe``) application. Please read this article `How to set the path and environment variables in Windows <http://www.computerhope.com/issues/ch000549.htm>`_.
+If Python is not installed (command not found), please :ref:`faq_install_python`.
 
 2. Install a ``platformio`` and related packages:
 
@@ -209,27 +206,23 @@ Prerequisites
     See above how to get a path.
 
 2.  Please check that you have a valid Python interpreter running a next
-    command in system terminal. Python 2.7.9+ is recommended.
+    command in system terminal. Python 2.7.9+ or Python 3.5+ is recommended.
 
     .. code-block:: bash
 
         python --version
 
-        # or, for Unix (Linux, Mac), you can use `python2` or `python2.7` aliases
+        # or, for Unix (Linux, Mac), you can use `python2` or `python3` aliases
         python2 --version
-        python2.7 --version
+        python3 --version
 
     .. warning::
         **Windows Users**: If you already tried to install :ref:`pioide` and did
         not get success, please open system's Control Panel > Installed Programs,
         and check if PlatformIO IDE tried to install an own isolated Python 2.7
         version. Please uninstall it. Also is good to uninstall all Python
-        interpreters from a system and install manually the latest Python 2.7
+        interpreters from a system and install manually the latest Python
         using :ref:`faq_install_python` guide.
-
-        Please note, that you can have Python 3 installed in a system too. You
-        will need to specify full path to Python 2.7 when creating a virtual
-        environment (explained below).
 
 3.  Make sure ``virtualenv --help`` command exists in a system, otherwise,
     please install it manually using ``pip install virtualenv`` or
@@ -248,12 +241,8 @@ Creating
 
         virtualenv /path/to/.platformio/penv
 
-        # if you have multiple Python interpreters in a system, please specify
-        # a valid Python 2.7 via ``-p, --python`` option:
-        virtualenv -p python2 /path/to/.platformio/penv
-
-        # or using full path to Python 2.7 interpreter
-        virtualenv --python=/path/to/python2.7 /path/to/.platformio/penv
+        # If you want to use a custom Python interpreter
+        virtualenv --python=/path/to/custom/python /path/to/.platformio/penv
 
         # EXAMPLES
         # Windows
@@ -262,7 +251,7 @@ Creating
 
         # Unix (Linux, Mac)
         virtualenv ~/.platformio/penv
-        virtualenv -p python2.7 ~/.platformio/penv
+        virtualenv -p python3 ~/.platformio/penv
 
 2.  Activate virtual environment
 
