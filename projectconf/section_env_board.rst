@@ -63,6 +63,8 @@ The full list of ``board_build.f_cpu`` for the popular embedded platforms you ca
 find in *Boards* section of :ref:`platforms`. See "Frequency" column. You can
 overclock a board by specifying a ``board_build.f_cpu`` value other than the default.
 
+.. _projectconf_board_more_options:
+
 More options
 ^^^^^^^^^^^^
 

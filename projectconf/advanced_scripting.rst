@@ -630,7 +630,7 @@ result of :ref:`projectconf` and "PRE" extra script named ``apply_patches.py``:
     framework = arduino
     extra_scripts = pre:apply_patches.py
 
-``extra_script.py``:
+``apply_patches.py``:
 
 .. code-block:: python
 
@@ -669,3 +669,34 @@ provided by `Git client utility <https://git-scm.com/>`__
 If you need to make it more independent to the operating system,
 please replace the ``patch`` with a multi-platform
 `python-patch <https://github.com/techtonik/python-patch>`_ script.
+
+Override Board Configuration
+''''''''''''''''''''''''''''
+
+PlatformIO allows to override some basic options (integer or string values)
+using :ref:`projectconf_board_more_options` in :ref:`projectconf`.
+Sometimes you need to do complex changes to default board manifest and
+extra PRE scripting work well here. See example below how to override default
+hardware VID/PIDs:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:uno]
+    platform = atmelavr
+    board = uno
+    framework = arduino
+    extra_scripts = pre:custon_hwids.py
+
+``custon_hwids.py``:
+
+.. code-block:: python
+
+    Import("env")
+
+    board_config = env.BoardConfig()
+    board_config.update("build.hwids", [
+      ["0x2341", "0x0243"],
+      ["0x2A03", "0x0043"]
+    ])
