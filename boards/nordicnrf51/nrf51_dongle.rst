@@ -11,8 +11,8 @@
 
 .. _board_nordicnrf51_nrf51_dongle:
 
-Nordic nRF51-Dongle
-===================
+Nordic nRF51 Dongle (PCA10031)
+==============================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``nrf51_dongle`` ID for :ref:`projectconf_env_board` option in :ref:`
   platform = nordicnrf51
   board = nrf51_dongle
 
-You can override default Nordic nRF51-Dongle settings per build environment using
+You can override default Nordic nRF51 Dongle (PCA10031) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `nrf51_dongle.json <https://github.com/platformio/platform-nordicnrf51/blob/master/boards/nrf51_dongle.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `nrf51_dongle.json <https://github.com/platformio/platform-nordic
 
 Uploading
 ---------
-Nordic nRF51-Dongle supports the next uploading protocols:
+Nordic nRF51 Dongle (PCA10031) supports the next uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Nordic nRF51-Dongle has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Nordic nRF51 Dongle (PCA10031) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1

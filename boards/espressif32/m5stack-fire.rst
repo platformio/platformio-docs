@@ -63,6 +63,26 @@ board manifest `m5stack-fire.json <https://github.com/platformio/platform-espres
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+M5Stack FIRE supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:m5stack-fire]
+  platform = espressif32
+  board = m5stack-fire
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support M5Stack FIRE board.

@@ -510,6 +510,26 @@ processes. More details :ref:`projectconf_build_flags`.
 Remove base/initial flags which were set by development platform. More
 details :ref:`projectconf_build_unflags`.
 
+``includeDir``
+~~~~~~~~~~~~~~
+
+*Optional* | Type: ``String``
+
+.. versionadded:: 4.0
+
+Custom location of library header files. A default value is ``include`` and
+means that folder is located in the root of a library.
+
+``srcDir``
+~~~~~~~~~~
+
+*Optional* | Type: ``String``
+
+.. versionadded:: 4.0
+
+Custom location of library source code. A default value is ``src`` and
+means that folder is located in the root of a library.
+
 ``srcFilter``
 ~~~~~~~~~~~~~
 

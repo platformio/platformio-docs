@@ -12,7 +12,7 @@
 .. _projectconf_section_env_general:
 
 General options
-~~~~~~~~~~~~~~~
+---------------
 
 .. contents::
     :local:
@@ -21,6 +21,8 @@ General options
 
 ``platform``
 ^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No``
 
 :ref:`platforms` name.
 
@@ -66,65 +68,49 @@ Examples:
     [env:specific_git_commit]
     platform = https://github.com/platformio/platform-espressif8266.git#921855a9c530082efddb5d48b44c3f4be0e2dfa2
 
+.. _projectconf_env_platform_packages:
+
+``platform_packages``
+^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
+
+Type: ``String`` | Multiple: ``Yes``
+
+Configure custom packages per a build environment. You can also override
+default packages by :ref:`platforms` using the same name. Packages will be
+installed in :ref:`projectconf_pio_packages_dir`.
+
+Examples:
+
+.. code-block:: ini
+
+    [env:override_default_toolchain]
+    platform = atmelavr
+    platform_packages =
+      ; use GCC AVR 5.0+
+      toolchain-gccarmnoneeabi@>1.50000.0
+
+    [env:override_framework]
+    platform = espressif8266
+    platform_packages =
+      ; use upstream Git version
+      framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
+
+    [env:external_package]
+    platform = ststm32
+    platform_packages =
+      ; latest openOCD from PlatformIO Package Registry
+      tool-openocd
+
+      ; source code of ST-Link
+      tool-stlink-source @ https://github.com/texane/stlink.git
+
 .. _projectconf_env_framework:
 
 ``framework``
 ^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``Yes``
+
 :ref:`frameworks` name.
-
-The multiple frameworks are allowed, *split them with comma+space ", "*.
-
-.. _projectconf_env_board:
-
-``board``
-^^^^^^^^^
-
-*PlatformIO* has pre-configured settings for the most popular boards:
-
-- build configuration
-- upload configuration
-- debugging configuration
-- connectivity information, etc.
-
-You can find a valid  ``board`` ID in :ref:`boards` catalog,
-`Boards Explorer <https://platformio.org/boards>`_ or
-:ref:`cmd_boards` command.
-
-.. _projectconf_targets:
-
-``targets``
-^^^^^^^^^^^
-
-A list with targets which will be processed by :ref:`cmd_run` command by
-default. You can enter more than one target, please split them with
-comma+space **", "**.
-
-The list with available targets is located in :option:`platformio run --target`.
-
-**Examples**
-
-1. Build a project using :ref:`Release Configuration <build_configurations>`,
-   upload firmware, and start :ref:`Serial Monitor <cmd_device_monitor>`
-   automatically:
-
-    .. code-block:: ini
-
-       [env:upload_and_monitor]
-       targets = upload, monitor
-
-2. Build a project using :ref:`Debug Configuration <build_configurations>`.
-
-
-**Tip!** You can use these targets like an option to
-:option:`platformio run --target` command. For example:
-
-.. code-block:: bash
-
-    # clean project
-    platformio run -t clean
-
-    # dump current build environment
-    platformio run --target envdump
-
-When no targets are defined, *PlatformIO* will build only sources by default.

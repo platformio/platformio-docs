@@ -125,6 +125,13 @@ Specify the path to project directory. By default, ``--project-dir`` is equal
 to current working directory (``CWD``).
 
 .. option::
+    -c, --project-conf
+
+.. versionadded:: 4.0
+
+Process project with a custom :ref:`projectconf`.
+
+.. option::
     --without-building
 
 Skip building stage.
@@ -163,7 +170,7 @@ default ``1``. We use it to gather test results via Serial connection.
 
 Shows detailed information when processing environments.
 
-This option can be set globally using :ref:`setting_force_verbose` setting
+This option can also be set globally using :ref:`setting_force_verbose` setting
 or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 
 Examples

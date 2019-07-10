@@ -12,15 +12,28 @@
 .. _projectconf_section_env_build:
 
 Build options
-~~~~~~~~~~~~~
+-------------
 
 .. contents::
     :local:
+
+.. _projectconf_build_type:
+
+``build_type``
+^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
+
+Type: ``String`` | Multiple: ``No`` | Default: ``release``
+
+See extended documentation for :ref:`build_configurations`.
 
 .. _projectconf_build_flags:
 
 ``build_flags``
 ^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``Yes``
 
 These flags/options control preprocessing, compilation, assembly and linking
 processes:
@@ -79,7 +92,7 @@ processes:
       - Add directory *dir* to the list of directories to be searched for
         ``-l``.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_BUILD_FLAGS`.
 
 For more detailed information about available flags/options go to:
@@ -140,11 +153,11 @@ You can inject into build flags built-in variables, such as:
 * ``$PIOENV``, name of build environment from :ref:`projectconf`
 * ``$PIOPLATFORM``, name of development platform
 * ``$PIOFRAMEWORK``, name of framework
-* ``$PIOHOME_DIR``, PlatformIO Home directory
 * ``$PROJECT_DIR``, project directory
+* ``$PROJECTCORE_DIR``, PlatformIO Core directory, see :ref:`projectconf_pio_core_dir`
 * ``$PROJECTBUILD_DIR``, project build directory per all environments
 * ``$BUILD_DIR``, build directory per current environment
-* `Need more PlatformIO variables? <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L30:L113>`_
+* `Need more PlatformIO variables? <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L43:L128>`_
 
 Please use target ``envdump`` for :option:`platformio run --target` command to
 see ALL variables from a build environment.
@@ -212,17 +225,21 @@ near ``platformio.ini``.
 ``src_build_flags``
 ^^^^^^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``Yes``
+
 An option ``src_build_flags`` has the same behavior like ``build_flags``
 but will be applied only for the project source code from
 :ref:`projectconf_pio_src_dir` directory.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_SRC_BUILD_FLAGS`.
 
 .. _projectconf_build_unflags:
 
 ``build_unflags``
 ^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``Yes``
 
 Remove base/initial flags which were set by development platform.
 
@@ -237,8 +254,11 @@ Remove base/initial flags which were set by development platform.
 ``src_filter``
 ^^^^^^^^^^^^^^
 
-This option allows one to specify which source files should be included/excluded
-from build process. Filter supports 2 templates:
+Type: ``String (Templates)`` | Multiple: ``Yes``
+
+This option allows one to specify which source files should be
+included/excluded from :ref:`projectconf_pio_src_dir` for a build process.
+Filter supports 2 templates:
 
 * ``+<PATH>`` include template
 * ``-<PATH>`` exclude template
@@ -252,5 +272,45 @@ By default, ``src_filter`` is predefined to
 that means "includes ALL files, then
 exclude ``.git`` and ``svn`` repository folders, ``example`` ... folder.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_SRC_FILTER`.
+
+.. _projectconf_targets:
+
+``targets``
+^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``Yes``
+
+A list of targets which will be processed by :ref:`cmd_run` command by
+default. You can enter more than one target, please split them with
+comma+space **", "**.
+
+The list with available targets is located in :option:`platformio run --target`.
+
+**Examples**
+
+1. Build a project using :ref:`Release Configuration <build_configurations>`,
+   upload firmware, and start :ref:`Serial Monitor <cmd_device_monitor>`
+   automatically:
+
+    .. code-block:: ini
+
+       [env:upload_and_monitor]
+       targets = upload, monitor
+
+2. Build a project using :ref:`Debug Configuration <build_configurations>`.
+
+
+**Tip!** You can use these targets like an option to
+:option:`platformio run --target` command. For example:
+
+.. code-block:: bash
+
+    # clean project
+    platformio run -t clean
+
+    # dump current build environment
+    platformio run --target envdump
+
+When no targets are defined, *PlatformIO* will build only sources by default.

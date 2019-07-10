@@ -31,22 +31,25 @@ Options
 .. program:: platformio lib
 
 .. option::
-     -g, --global
-
-.. versionadded:: 3.0
-
-
-Manage global PlatformIO's library storage (
-":ref:`projectconf_pio_home_dir`/lib") where :ref:`ldf` will look for
-dependencies by default.
-
-.. option::
     -d, --storage-dir
-
-.. versionadded:: 3.0
 
 Manage custom library storage. It can be used later for the
 :ref:`projectconf_lib_extra_dirs` option from :ref:`projectconf`.
+Multiple options are allowed.
+
+.. option::
+    -g, --global
+
+Manage global PlatformIO's library storage (
+":ref:`projectconf_pio_core_dir`/lib") where :ref:`ldf` will look for
+dependencies by default.
+
+.. option::
+    -e, --environment
+
+Manage libraries for the specific project build environments declared in
+:ref:`projectconf`. Works for ``--storage-dir`` which is valid PlatformIO
+project.
 
 Demo
 ----

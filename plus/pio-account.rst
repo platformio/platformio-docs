@@ -14,12 +14,9 @@
 PIO Account
 ===========
 
-Having **PIO Account** allows you to use extra professional features from
-`PIO Plus <https://pioplus.com/>`__:
+**PIO Account** is required for using:
 
-* :ref:`piodebug`
 * :ref:`pioremote`
-* :ref:`unit_testing`
 * Integration with :ref:`ide_cloud`
 
 A registration is **FREE**. No Credit Card Required.
@@ -28,7 +25,7 @@ PlatformIO IDE
 --------------
 
 :ref:`pioide` has built-in UI in PIO Home to manage PIO Account. You can
-crate a new account, reset a password or fetch authentication token.
+create a new account, reset your password or fetch an authentication token.
 
 .. image:: ../_static/images/home/pio-home-account-login.png
 

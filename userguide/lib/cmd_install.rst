@@ -24,9 +24,18 @@ Usage
     platformio lib [STORAGE_OPTIONS] install [OPTIONS] [LIBRARY...]
     pio lib [STORAGE_OPTIONS] install [OPTIONS] [LIBRARY...]
 
+    # install all project dependencies declared via "lib_deps"
+    # (run it from a project root where is located "platformio.ini")
+    platformio lib install [OPTIONS]
+
     # install project dependent library
     # (run it from a project root where is located "platformio.ini")
     platformio lib install [OPTIONS] [LIBRARY...]
+
+    # install dependencies for the specific project build environment
+    # (run it from a project root where is located "platformio.ini")
+    platformio lib -e myenv install [OPTIONS] [LIBRARY...]
+    platformio lib -d /path/to/platformio/project -e myenv install [OPTIONS] [LIBRARY...]
 
     # install to global storage
     platformio lib --global install [OPTIONS] [LIBRARY...]
@@ -34,7 +43,7 @@ Usage
 
     # install to custom storage
     platformio lib --storage-dir /path/to/dir install [OPTIONS] [LIBRARY...]
-    platformio lib -d /path/to/dir install [OPTIONS] [LIBRARY...]
+    platformio lib -d /path/to/dir1 -d /path/to/dir2 install [OPTIONS] [LIBRARY...]
 
     # [LIBRARY...] forms
     platformio lib [STORAGE_OPTIONS] install (with no args, project dependencies)
@@ -99,6 +108,16 @@ Options
 -------
 
 .. program:: platformio lib install
+
+.. option::
+    --save
+
+Save installed libraries into the :ref:`projectconf` dependency list
+(:ref:`projectconf_lib_deps`).
+
+You can save libraries for the specific project environment using
+``-e, --environment`` option from :ref:`platformio lib <cmd_lib>` command. For example,
+``platformio lib -e myenv install [LIBRARY...]``.
 
 .. option::
     -s, --silent

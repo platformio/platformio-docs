@@ -137,9 +137,6 @@ Packages
     * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio&utm_medium=docs>`__
       - libOpenCM3 Framework
 
-    * - `tool-lm4flash <http://www.ti.com/tool/lmflashprogrammer?utm_source=platformio&utm_medium=docs>`__
-      - Flash Programmer
-
     * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
 

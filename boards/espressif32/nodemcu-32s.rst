@@ -69,6 +69,7 @@ Uploading
 NodeMCU-32S supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

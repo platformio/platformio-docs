@@ -69,6 +69,7 @@ Uploading
 BBC micro:bit supports the next uploading protocols:
 
 * ``cmsis-dap``
+* ``jlink``
 * ``mbed``
 
 Default protocol is ``cmsis-dap``
@@ -107,6 +108,9 @@ BBC micro:bit has on-board debug probe and **IS READY** for debugging. You don't
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
     - Yes
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
 
 Frameworks
 ----------

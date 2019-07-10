@@ -63,6 +63,26 @@ board manifest `m5stack-core-esp32.json <https://github.com/platformio/platform-
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+M5Stack Core ESP32 supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:m5stack-core-esp32]
+  platform = espressif32
+  board = m5stack-core-esp32
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support M5Stack Core ESP32 board.

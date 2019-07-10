@@ -69,6 +69,7 @@ Uploading
 SparkFun LoRa Gateway 1-Channel supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

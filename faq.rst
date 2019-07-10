@@ -29,6 +29,11 @@ What is PlatformIO?
 
 Please refer to :ref:`what_is_pio`
 
+What is ``.pio`` directory
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please refer to :ref:`projectconf_pio_workspace_dir`.
+
 What is ``.pioenvs`` directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -72,7 +77,7 @@ Install Python Interpreter
 :ref:`piocore` is written in `Python <https://www.python.org/downloads/>`_ that
 is installed by default on the all popular OS except Windows.
 
-**Windows Users**, please `Download the latest Python 2.7.x <https://www.python.org/downloads/>`_
+**Windows Users**, please `Download the latest Python <https://www.python.org/downloads/>`_
 and install it. **DON'T FORGET** to select ``Add python.exe to Path`` feature
 on the "Customize" stage, otherwise, ``python`` command will not be available.
 
@@ -196,6 +201,7 @@ issues. We highly recommend to keep one instance of PIO Core or use built-in
 PIO Core in :ref:`pioide`:
 
 * :ref:`ide_atom` - ``Menu PlatformIO: Settings > PlatformIO IDE > Use built-in PlatformIO Core``
+* :ref:`ide_vscode` - :ref:`ide_vscode_settings` > Set ``platformio-ide.useBuiltinPIOCore`` to ``true``.
 
 Finally, if you have a standalone :ref:`piocore` in a system, please open system
 Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
@@ -204,7 +210,7 @@ Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
 
     pip uninstall platformio
 
-    # if you used MacOS "brew"
+    # if you used macOS "brew"
     brew uninstall platformio
 
 If you need to have :ref:`piocore` globally in a system, please
@@ -270,6 +276,10 @@ they are not “root”, doing this issuing
     sudo usermod -a -G dialout $USER
     sudo usermod -a -G plugdev $USER
 
+.. note::
+  You will need to log out and log back in again (or reboot) for the user
+  group changes to take effect.
+
 After this file is installed, physically unplug and reconnect your board.
 
 ImportError: cannot import name _remove_dead_weakref
@@ -295,7 +305,7 @@ Package Manager
 [Error 5] Access is denied
 ''''''''''''''''''''''''''
 
-PlatformIO installs all packages to ":ref:`projectconf_pio_home_dir`/packages"
+PlatformIO installs all packages to ":ref:`projectconf_pio_core_dir`/packages"
 directory. You **MUST HAVE** write access to this folder.
 Please note that **PlatformIO does not require** "sudo"/administrative privileges.
 
@@ -305,7 +315,7 @@ Please note that **PlatformIO does not require** "sudo"/administrative privilege
 Solution 1: Remove folder
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A quick solution is to remove ":ref:`projectconf_pio_home_dir`/packages" folder
+A quick solution is to remove ":ref:`projectconf_pio_core_dir`/packages" folder
 and repeat installation/building/uploading again.
 
 Solution 2: Antivirus
@@ -314,10 +324,10 @@ Solution 2: Antivirus
 Some antivirus tools forbid programs to create files in the background.
 PlatformIO Package Manager does all work in the background: downloads package,
 unpacks archive in temporary folder and moves final files to
-":ref:`projectconf_pio_home_dir`/packages" folder.
+":ref:`projectconf_pio_core_dir`/packages" folder.
 
 Antivirus tool can block PlatformIO, that is why you see "[Error 5] Access is denied".
-Try to **disable it for a while** or add :ref:`projectconf_pio_home_dir`
+Try to **disable it for a while** or add :ref:`projectconf_pio_core_dir`
 directory to exclusion/whitelist.
 
 Solution 3: Run from Terminal
@@ -357,11 +367,11 @@ Solution 4: Manual
 ^^^^^^^^^^^^^^^^^^
 
 If none of the solutions above do work for you, you can download and unpack
-all packages manually to ":ref:`projectconf_pio_home_dir`/packages".
+all packages manually to ":ref:`projectconf_pio_core_dir`/packages".
 
 Please visit `PlatformIO Package Storage <https://bintray.com/platformio/dl-packages>`_
 and download a package for your platform.
-A correct package path is ":ref:`projectconf_pio_home_dir`/packages/{package_name}/package.json".
+A correct package path is ":ref:`projectconf_pio_core_dir`/packages/{package_name}/package.json".
 
 Building
 ~~~~~~~~
@@ -391,8 +401,8 @@ libraries which use non-ASCII characters in their names.
 
 Also, if you want to place :ref:`piocore` in own location, see:
 
-* Set :envvar:`PLATFORMIO_HOME_DIR` environment variable with own path
-* Configure custom location per project using :ref:`projectconf_pio_home_dir`
+* Set :envvar:`PLATFORMIO_CORE_DIR` environment variable with own path
+* Configure custom location per project using :ref:`projectconf_pio_core_dir`
   option in :ref:`projectconf`.
 
 ARM toolchain: cc1plus: error while loading shared libraries

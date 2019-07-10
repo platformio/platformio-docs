@@ -44,7 +44,7 @@ command and generate project via :option:`platformio init --ide` command:
 
 .. code-block:: shell
 
-    platformio init --ide sublimetext --board <ID>
+    platformio init --ide visualstudio --board <ID>
 
     # For example, generate project for Arduino UNO
     platformio init --ide visualstudio --board uno

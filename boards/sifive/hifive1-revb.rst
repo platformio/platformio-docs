@@ -9,17 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_riscv_freedom-e300-hifive1:
+.. _board_sifive_hifive1-revb:
 
-HiFive1
-=======
+HiFive1 Rev B
+=============
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_riscv`: RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
+Platform :ref:`platform_sifive`: SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 .. list-table::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_riscv`: RISC-V is an open, free ISA enabling a new era o
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `SiFive <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`__
+    - `SiFive <https://www.sifive.com/boards/hifive1-rev-b?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``freedom-e300-hifive1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``hifive1-revb`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:freedom-e300-hifive1]
-  platform = riscv
-  board = freedom-e300-hifive1
+  [env:hifive1-revb]
+  platform = sifive
+  board = hifive1-revb
 
-You can override default HiFive1 settings per build environment using
+You can override default HiFive1 Rev B settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `freedom-e300-hifive1.json <https://github.com/platformio/platform-riscv/blob/master/boards/freedom-e300-hifive1.json>`_. For example,
+board manifest `hifive1-revb.json <https://github.com/platformio/platform-sifive/blob/master/boards/hifive1-revb.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:freedom-e300-hifive1]
-  platform = riscv
-  board = freedom-e300-hifive1
+  [env:hifive1-revb]
+  platform = sifive
+  board = hifive1-revb
 
   ; change microcontroller
   board_build.mcu = fe310
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-HiFive1 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+HiFive1 Rev B has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -84,7 +84,7 @@ HiFive1 has on-board debug probe and **IS READY** for debugging. You don't need 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_ftdi`
+  * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes
 

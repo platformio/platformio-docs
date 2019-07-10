@@ -231,7 +231,7 @@ base template of ``main.py``.
 Installation
 ------------
 
-1. Create ``platforms`` directory in :ref:`projectconf_pio_home_dir` if it
+1. Create ``platforms`` directory in :ref:`projectconf_pio_core_dir` if it
    doesn't exist.
 2. Create ``myplatform`` directory in ``platforms``
 3. Copy ``platform.json`` and ``builder/main.py`` files to ``myplatform`` directory.

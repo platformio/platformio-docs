@@ -63,6 +63,26 @@ board manifest `turta_iot_node.json <https://github.com/platformio/platform-espr
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+Turta IoT Node supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:turta_iot_node]
+  platform = espressif32
+  board = turta_iot_node
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Turta IoT Node board.

@@ -11,8 +11,8 @@
 
 .. _board_nordicnrf51_nrf51_dk:
 
-Nordic nRF51-DK
-===============
+Nordic nRF51X22 Development Kit(PCA1000X)
+=========================================
 
 .. contents::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Nordic <https://developer.mbed.org/platforms/Nordic-nRF51-DK/?utm_source=platformio&utm_medium=docs>`__
+    - `Nordic <https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF51-DK?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``nrf51_dk`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   platform = nordicnrf51
   board = nrf51_dk
 
-You can override default Nordic nRF51-DK settings per build environment using
+You can override default Nordic nRF51X22 Development Kit(PCA1000X) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `nrf51_dk.json <https://github.com/platformio/platform-nordicnrf51/blob/master/boards/nrf51_dk.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `nrf51_dk.json <https://github.com/platformio/platform-nordicnrf5
 
 Uploading
 ---------
-Nordic nRF51-DK supports the next uploading protocols:
+Nordic nRF51X22 Development Kit(PCA1000X) supports the next uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -100,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Nordic nRF51-DK has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Nordic nRF51X22 Development Kit(PCA1000X) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1

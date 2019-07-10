@@ -12,9 +12,8 @@
 .. _projectconf_section_env_library:
 
 Library options
-~~~~~~~~~~~~~~~
+---------------
 
-.. versionadded:: 3.0
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
@@ -29,9 +28,10 @@ Library options
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
+Type: ``String`` | Multiple: ``Yes``
+
 Specify project dependencies that should be installed automatically to
 :ref:`projectconf_pio_libdeps_dir` before environment processing.
-Multiple dependencies are allowed (*multi-lines or separated with comma+space ", "*).
 
 If you have multiple build environments that depend on the same libraries,
 you can use :ref:`projectconf_dynamic_vars` to use common configuration.
@@ -76,14 +76,13 @@ Example:
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
+Type: ``String`` | Multiple: ``Yes``
+
 Specify libraries which should be ignored by Library Dependency Finder.
 
 The correct value for this option is a library name (not folder name).
 You will see these names in "Library Dependency Graph" when building a project
 between ``<`` and ``>`` symbols.
-
-The multiple library names are allowed, *split them with comma+space ", "* or
-put each library name in a separate new line.
 
 **Example:**
 
@@ -133,13 +132,13 @@ put each library name in a separate new line.
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
-A list with extra directories/storages where :ref:`ldf` will
-look for dependencies. Multiple paths are allowed. *Please separate them
-using comma+space ", "*.
+Type: ``DirPath`` | Multiple: ``Yes``
 
-This option can be set by global environment variable
-:envvar:`PLATFORMIO_LIB_EXTRA_DIRS` or using global ``[platformio]`` section
-and :ref:`projectconf_global_lib_extra_dirs` option.
+A list with extra directories/storages where :ref:`ldf` will
+look for dependencies.
+
+This option can also be set by global environment variable
+:envvar:`PLATFORMIO_LIB_EXTRA_DIRS`.
 
 .. warning::
   This is a not direct path to a library with source code. It should be a path
@@ -151,26 +150,31 @@ Example:
 .. code-block:: ini
 
     [env:myenv]
-    lib_extra_dirs = /common/libraries, /iot/libraries
+    lib_extra_dirs =
+        /common/libraries
+        /iot/libraries
 
 .. _projectconf_lib_ldf_mode:
 
 ``lib_ldf_mode``
 ^^^^^^^^^^^^^^^^
 
-.. versionadded:: 3.0
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
+Type: ``String`` | Multiple: ``No`` | Default: ``chain``
+
 This option specifies how does Library Dependency Finder should analyze
-dependencies (``#include`` directives). See :ref:`ldf_mode` for details.
+dependencies (``#include`` directives). See :ref:`ldf_mode` for details
+and available options.
 
 Example:
 
 .. code-block:: ini
 
     [env:myenv]
-    lib_ldf_mode = chain
+    ; evaluate C/C++ Preprocessor conditional syntax
+    lib_ldf_mode = chain+
 
 .. _projectconf_lib_compat_mode:
 
@@ -180,8 +184,10 @@ Example:
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
+Type: ``String`` | Multiple: ``No`` | Default: ``soft``
+
 Library compatibility mode allows one to control strictness of Library Dependency
-Finder. More details :ref:`ldf_compat_mode`.
+Finder. See :ref:`ldf_compat_mode` for details and available options..
 
 By default, this value is set to ``lib_compat_mode = soft`` and means that LDF
 will check only for framework compatibility.
@@ -191,20 +197,21 @@ Example:
 .. code-block:: ini
 
     [env:myenv]
-    lib_compat_mode = soft
+    ; Checks for the compatibility with frameworks and dev/platforms
+    lib_compat_mode = strict
 
 .. _projectconf_lib_archive:
 
 ``lib_archive``
 ^^^^^^^^^^^^^^^
 
-.. versionadded:: 3.4.1
+Type: ``Bool (yes or no)`` | Multiple: ``No`` | Default: ``yes``
 
 Create an archive (``*.a``, static library) from the object files and link it
 into a firmware (program). This is default behavior of PlatformIO Build System
-(``lib_archive = true``).
+(``lib_archive = yes``).
 
-Setting ``lib_archive = false`` will instruct PIO Build System to link object
+Setting ``lib_archive = no`` will instruct PIO Build System to link object
 files directly (in-line). This could be useful if you need to override ``weak``
 symbols defined in framework or other libraries.
 
@@ -216,4 +223,4 @@ Example:
 .. code-block:: ini
 
     [env:myenv]
-    lib_archive = false
+    lib_archive = no

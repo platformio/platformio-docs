@@ -69,6 +69,7 @@ Uploading
 Silicognition wESP32 supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

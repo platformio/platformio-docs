@@ -14,8 +14,6 @@
 Library Dependency Finder (LDF)
 ===============================
 
-.. versionadded:: 3.0
-
 Library Dependency Finder is a core part of PlatformIO Build System that
 operates with the C/C++ source files and looks for ``#include ...``
 directives.
@@ -51,7 +49,7 @@ order:
 2. :ref:`projectconf_pio_lib_dir` - own/private library storage per project
 3. :ref:`projectconf_pio_libdeps_dir` - project dependency storage used by
    :ref:`librarymanager`
-4. ":ref:`projectconf_pio_home_dir`/lib" - global storage per all projects.
+4. ":ref:`projectconf_pio_core_dir`/lib" - global storage per all projects.
 5. Library storages built into frameworks, SDKs.
 
 .. _ldf_mode:

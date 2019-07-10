@@ -12,9 +12,8 @@
 .. _projectconf_section_env_debug:
 
 Debugging options
-~~~~~~~~~~~~~~~~~
+-----------------
 
-.. versionadded:: 3.4
 .. seealso::
     Please make sure to read :ref:`piodebug` guide first.
 
@@ -25,6 +24,8 @@ Debugging options
 
 ``debug_tool``
 ^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No``
 
 A name of debugging tool. This option is useful when board supports more than
 one debugging tool (adapter, probe) or you want to create :ref:`debugging_tool_custom`
@@ -45,6 +46,8 @@ See available tools in :ref:`debugging_tools`.
 
 ``debug_init_break``
 ^^^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No`` | Default: ``tbreak main``
 
 An initial breakpoint that makes your program stop whenever a certain point in
 the program is reached. **Default** value is set to ``tbreak main`` and means
@@ -85,10 +88,13 @@ automatically delete it after the first time a program stops there.
 ``debug_init_cmds``
 ^^^^^^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``Yes`` | Default: `See details... <https://github.com/platformio/platformio-core/blob/develop/platformio/commands/debug/initcfgs.py>`__
+
 Initial commands that will be passed to back-end debugger.
 
-PlatformIO dynamically configures back-end debugger depending on a debug environment.
-**Highly recommended to DO NOT override this option.**
+PlatformIO dynamically configures back-end debugger depending on a debug
+environment. Here is `a list with default initial commands <https://github.com/platformio/platformio-core/blob/develop/platformio/commands/debug/initcfgs.py>`__
+for the popular :ref:`debugging_tools`.
 
 For example, the custom initial commands for GDB:
 
@@ -101,7 +107,7 @@ For example, the custom initial commands for GDB:
       target extended-remote $DEBUG_PORT
       $INIT_BREAK
       monitor reset halt
-      $LOAD_CMD
+      $LOAD_CMDS
       monitor init
       monitor reset halt
 
@@ -110,7 +116,9 @@ For example, the custom initial commands for GDB:
 ``debug_extra_cmds``
 ^^^^^^^^^^^^^^^^^^^^
 
-Extra commands that will be passed to back-end debugger after initialization.
+Type: ``String`` | Multiple: ``Yes``
+
+Extra commands that will be passed to back-end debugger after :ref:`projectconf_debug_init_cmds`.
 For example, add custom breakpoint and load ``.gdbinit`` from a project directory
 for GDB:
 
@@ -134,30 +142,48 @@ for GDB:
   command in Debug Console. For example, ``save breakpoints .gdbinit``. Later,
   this file could be loaded via ``source [filename]`` command. See above.
 
-.. _projectconf_debug_load_cmd:
+.. _projectconf_debug_load_cmds:
 
-``debug_load_cmd``
-^^^^^^^^^^^^^^^^^^
+``debug_load_cmds``
+^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
+
+Type: ``String`` | Multiple: ``Yes`` | Default: ``load``
 
 Specify a command which will be used to load program/firmware to a target
 device. Possible options:
 
 * ``load`` - **default** option
-* ``some command`` - pass any debugging client command (GDB, etc.)
-* ``load address`` - load program at specified address, where "address"
+* ``load [address]`` - load program at specified address, where "[address]"
   should be a valid number
 * ``preload`` - some embedded devices have locked Flash Memory (a few
   Freescale Kinetis and NXP LPC boards). In this case, firmware loading using
   debugging client is disabled. ``preload`` command instructs
   :ref:`piocore` to load program/firmware using development platform "upload"
   method (via bootloader, media disk, etc)
-* (empty value, ``debug_load_cmd =``), disables program loading at all.
+* (empty value, ``debug_load_cmds =``), disables program loading at all.
+* ``custom commands`` - pass any debugging client command (GDB, etc.)
 
+Sometimes you need to run extra monitor commands (on debug server side) before
+program/firmware loading, such as flash unlocking or erasing. In this case we
+can combine service commands with loading and run them before. See example:
+
+.. code-block:: ini
+
+    [env:debug]
+    platform = ...
+    board = ...
+    debug_load_cmds =
+      monitor flash erase_sector 0 0 11
+      load
 
 .. _projectconf_debug_load_mode:
 
 ``debug_load_mode``
 ^^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No`` | Default: ``always``
 
 Allows one to control when PlatformIO should load debugging firmware to the end
 target. Possible options:
@@ -171,6 +197,8 @@ target. Possible options:
 
 ``debug_server``
 ^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``Yes``
 
 Allows one to setup a custom debugging server. By default, boards are pre-configured
 with a debugging server that is compatible with "on-board" debugging tool
@@ -201,6 +229,8 @@ with a debugging server that is compatible with "on-board" debugging tool
 ``debug_port``
 ^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``No``
+
 A debugging port of a remote target. Could be a serial device or network address.
 PlatformIO detects it automatically if is not specified.
 
@@ -214,6 +244,8 @@ For example:
 
 ``debug_svd_path``
 ^^^^^^^^^^^^^^^^^^
+
+Type: ``FilePath`` | Multiple: ``No``
 
 A custom path to `SVD file <https://www.keil.com/pack/doc/CMSIS/SVD/html/svd_Format_pg.html>`_
 which contains information about device peripherals.

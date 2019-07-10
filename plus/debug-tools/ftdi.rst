@@ -69,14 +69,17 @@ Platforms
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-    * - :ref:`platform_riscv`
-      - RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
+    * - :ref:`platform_kendryte210`
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
 
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 
     * - :ref:`platform_samsung_artik`
       - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
+
+    * - :ref:`platform_sifive`
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 Frameworks
 ----------
@@ -94,6 +97,9 @@ Frameworks
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
+
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support
 
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
@@ -124,6 +130,13 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_sifive_e310-arty`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 450MHz
+      - 16MB
+      - 256MB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
       - On-board
@@ -138,8 +151,15 @@ Boards
       - 250MHz
       - 64MB
       - 8MB
-    * - :ref:`board_riscv_freedom-e300-hifive1`
-      - :ref:`platform_riscv`
+    * - :ref:`board_sifive_hifive-unleashed`
+      - :ref:`platform_sifive`
+      - On-board
+      - FU540
+      - 1500MHz
+      - 32MB
+      - 8GB
+    * - :ref:`board_sifive_hifive1`
+      - :ref:`platform_sifive`
       - On-board
       - FE310
       - 320MHz
@@ -152,3 +172,24 @@ Boards
       - 320MHz
       - 8MB
       - 1.25MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit`
+      - :ref:`platform_kendryte210`
+      - On-board
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-go`
+      - :ref:`platform_kendryte210`
+      - On-board
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-one`
+      - :ref:`platform_kendryte210`
+      - On-board
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB

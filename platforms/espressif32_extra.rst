@@ -13,6 +13,7 @@ Tutorials
 ---------
 
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
+* `Video: Free Inline Debugging for ESP32 and Arduino Sketches <hhttps://www.youtube.com/watch?v=psMqilqlrRQ>`__
 
 Configuration
 -------------
@@ -177,8 +178,10 @@ You can create a custom partitions table (CSV) following `ESP32 Partition Tables
 documentation. PlatformIO uses **default partition tables** depending on a
 :ref:`projectconf_env_framework` type:
 
-* `"default.csv" for Arduino <https://github.com/espressif/arduino-esp32/blob/master/tools/partitions/default.csv>`_
-* `"partitions_singleapp.csv" for ESP-IDF <https://github.com/espressif/esp-idf/blob/master/components/partition_table/partitions_singleapp.csv>`_
+* ``default.csv`` for :ref:`framework_arduino`
+  (`show pre-configured partition tables <https://github.com/espressif/arduino-esp32/blob/master/tools/partitions>`__)
+* ``partitions_singleapp.csv`` for :ref:`framework_espidf`
+  (`show pre-configured partition tables <https://github.com/espressif/esp-idf/blob/master/components/partition_table>`__)
 
 To override default table please use ``board_build.partitions`` option in
 :ref:`projectconf`.
@@ -243,6 +246,52 @@ See full example with embedding Amazon AWS certificates:
 
 - https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-aws-iot
 
+ULP coprocessor programming
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you want to take measurements using ADC, internal temperature sensor or external
+I2C sensors, while the main processors are in deep sleep mode you need to use ULP
+coprocessor. At the moment ULP can be used only with the framework :ref:`framework_espidf`.
+
+First of all, to use ULP in your project you need to make sure that it is enabled in your
+``sdkconfig.h`` configuration file. The next two lines must be added:
+
+.. code-block:: cpp
+
+    #define CONFIG_ULP_COPROC_ENABLED 1
+    #define CONFIG_ULP_COPROC_RESERVE_MEM 1024
+
+Usually ``CONFIG_ULP_COPROC_RESERVE_MEM`` is already defined in the default
+``sdkconfig.h`` with value ``0``. You can modify this value to meet your requirements.
+
+
+Secondly, all ULP code, usually written in assembly in files with ``.S`` extension,
+must be placed into a separate directory with the name ``ulp`` in the root folder
+of your project. So your project structure should look like this:
+
+.. code-block:: bash
+
+    project_dir
+    ├── include
+    ├── lib
+    │   └── README
+    ├── test
+    ├── src
+    │    ├── main.c
+    │    └── sdkconfig.h
+    ├── ulp
+    │    └── ulp_code.S
+    └── platformio.ini
+
+
+See full examples with ULP coprocessor programming:
+
+- https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-adc
+- https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-pulse
+
+More details are located in the official ESP-IDF documentation -
+`ULP coprocessor programming <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable>`_.
+
 Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -281,7 +330,7 @@ Demo code for:
 * `Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA/examples/BasicOTA>`_
 * `ESP-IDF <https://github.com/espressif/esp-idf/tree/master/examples/system/ota>`_
 
-There are 2 options how to upload firmware OTA:
+There are 2 options:
 
 * Directly specify :option:`platformio run --upload-port` in command line
 
@@ -291,15 +340,19 @@ There are 2 options how to upload firmware OTA:
 
 * Specify ``upload_port`` option in :ref:`projectconf`
 
+
+You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
+
 .. code-block:: ini
 
    [env:myenv]
+   upload_protocol = espota
    upload_port = IP_ADDRESS_HERE or mDNS_NAME.local
 
 For example,
 
 * ``platformio run -t upload --upload-port 192.168.0.255``
-* ``platformio run -t upload --upload-port myesp32.local``
+* ``platformio run -t upload --upload-port myesp8266.local``
 
 Authentication and upload options
 '''''''''''''''''''''''''''''''''
@@ -310,13 +363,14 @@ You can pass additional options/flags to OTA uploader using
 .. code-block:: ini
 
     [env:myenv]
+    upload_protocol = espota
     ; each flag in a new line
     upload_flags =
         --port=3232
 
 Available flags
 
-* ``--port=ESP_PORT`` ESP32 OTA Port. Default 3232
+* ``--port=ESP_PORT`` ESP32 OTA Port. **Default 8266**
 * ``--auth=AUTH`` Set authentication password
 * ``--spiffs`` Use this option to transmit a SPIFFS image and do not flash
   the module
@@ -338,7 +392,7 @@ For the full list with available options please run
         -i ESP_IP, --ip=ESP_IP
                             ESP32 IP Address.
         -p ESP_PORT, --port=ESP_PORT
-                            ESP32 ota Port. Default 3232
+                            ESP32 ota Port. Default 8266
 
       Authentication:
         -a AUTH, --auth=AUTH
@@ -353,6 +407,11 @@ For the full list with available options please run
       Output:
         -d, --debug         Show debug output. And override loglevel with debug.
         -r, --progress      Show progress output. Does not work for ArduinoIDE
+
+.. warning::
+    For windows users. To manage OTA check the ESP wifi network profile isn't checked on public
+    be sure it's on private mode``
+
 
 Using Arduino Framework with Staging version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

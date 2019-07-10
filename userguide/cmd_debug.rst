@@ -47,13 +47,20 @@ Options
 Debug specified environments.
 
 You can also specify which environments should be used for debugging by default
-using :ref:`projectconf_pio_env_default` option from :ref:`projectconf`.
+using :ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
 
 .. option::
     -d, --project-dir
 
 Specify the path to a project directory. By default, ``--project-dir`` is equal
 to a current working directory (``CWD``).
+
+.. option::
+    -c, --project-conf
+
+.. versionadded:: 4.0
+
+Process project with a custom :ref:`projectconf`.
 
 .. option::
     --interface
@@ -67,7 +74,7 @@ PIO Debugging Interface. Valid values:
 
 Shows detailed information when processing environments.
 
-This option can be set globally using :ref:`setting_force_verbose` setting
+This option can also be set globally using :ref:`setting_force_verbose` setting
 or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 
 Examples
@@ -85,24 +92,24 @@ Examples
     Collected 26 compatible libraries
     Looking for dependencies...
     Project does not have dependencies
-    Compiling .pioenvs/mzeropro/src/main.o
-    Compiling .pioenvs/mzeropro/FrameworkArduinoVariant/variant.o
-    Compiling .pioenvs/mzeropro/FrameworkArduino/IPAddress.o
-    Compiling .pioenvs/mzeropro/FrameworkArduino/Print.o
-    Archiving .pioenvs/mzeropro/libFrameworkArduinoVariant.a
-    Indexing .pioenvs/mzeropro/libFrameworkArduinoVariant.a
+    Compiling .pio/build/mzeropro/src/main.o
+    Compiling .pio/build/mzeropro/FrameworkArduinoVariant/variant.o
+    Compiling .pio/build/mzeropro/FrameworkArduino/IPAddress.o
+    Compiling .pio/build/mzeropro/FrameworkArduino/Print.o
+    Archiving .pio/build/mzeropro/libFrameworkArduinoVariant.a
+    Indexing .pio/build/mzeropro/libFrameworkArduinoVariant.a
     ...
-    Compiling .pioenvs/mzeropro/FrameworkArduino/wiring_analog.o
-    Compiling .pioenvs/mzeropro/FrameworkArduino/wiring_digital.o
-    Compiling .pioenvs/mzeropro/FrameworkArduino/wiring_private.o
-    Compiling .pioenvs/mzeropro/FrameworkArduino/wiring_shift.o
-    Archiving .pioenvs/mzeropro/libFrameworkArduino.a
-    Indexing .pioenvs/mzeropro/libFrameworkArduino.a
-    Linking .pioenvs/mzeropro/firmware.elf
-    Calculating size .pioenvs/mzeropro/firmware.elf
-    Building .pioenvs/mzeropro/firmware.bin
+    Compiling .pio/build/mzeropro/FrameworkArduino/wiring_analog.o
+    Compiling .pio/build/mzeropro/FrameworkArduino/wiring_digital.o
+    Compiling .pio/build/mzeropro/FrameworkArduino/wiring_private.o
+    Compiling .pio/build/mzeropro/FrameworkArduino/wiring_shift.o
+    Archiving .pio/build/mzeropro/libFrameworkArduino.a
+    Indexing .pio/build/mzeropro/libFrameworkArduino.a
+    Linking .pio/build/mzeropro/firmware.elf
+    Calculating size .pio/build/mzeropro/firmware.elf
+    Building .pio/build/mzeropro/firmware.bin
     text       data     bss     dec     hex filename
-    11512       256    1788   13556    34f4 .pioenvs/mzeropro/firmware.elf
+    11512       256    1788   13556    34f4 .pio/build/mzeropro/firmware.elf
     =========================== [SUCCESS] Took 7.82 seconds ===========================
 
 2. Launch GDB instance and load initial configuration per a project

@@ -11,8 +11,8 @@
 
 .. _board_atmelavr_atmega328pb:
 
-Atmel ATmega328PB
-=================
+ATMEGA328PB
+===========
 
 .. contents::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `Arduino <http://www.atmel.com/devices/ATMEGA328PB.aspx?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega328PB?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``atmega328pb`` ID for :ref:`projectconf_env_board` option in :ref:`p
   platform = atmelavr
   board = atmega328pb
 
-You can override default Atmel ATmega328PB settings per build environment using
+You can override default ATMEGA328PB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `atmega328pb.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/atmega328pb.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -65,7 +65,7 @@ board manifest `atmega328pb.json <https://github.com/platformio/platform-atmelav
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Atmel ATmega328PB board.
+:ref:`piodebug` currently does not support ATMEGA328PB board.
 
 Frameworks
 ----------

@@ -705,6 +705,13 @@ Boards
       - 48MHz
       - 64KB
       - 16KB
+    * - :ref:`board_ststm32_rhombio_l476dmw1k`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L476VGT6
+      - 80MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nxplpc_lpc11u68`
       - :ref:`platform_nxplpc`
       - On-board
@@ -726,6 +733,13 @@ Boards
       - 48MHz
       - 120KB
       - 14.81KB
+    * - :ref:`board_atmelsam_mkrvidor4000`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_ststm32_mts_dragonfly_f411re`
       - :ref:`platform_ststm32`
       - External
@@ -796,6 +810,13 @@ Boards
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_minitronics20`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_moteino_zero`
       - :ref:`platform_atmelsam`
       - External
@@ -829,6 +850,13 @@ Boards
       - External
       - STM32L152RC
       - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_nano_33_iot`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_nxplpc_blueboard_lpc11u24`
@@ -887,6 +915,13 @@ Boards
       - 96MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf51_nrf51_beacon`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -971,6 +1006,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_nordicnrf52_sdt52832b`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
       - :ref:`platform_siliconlabsefm32`
       - On-board
@@ -1629,6 +1671,13 @@ Boards
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf51_Sinobit`
       - :ref:`platform_nordicnrf51`
       - External
@@ -1692,6 +1741,13 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_atmelsam_tuinozero96`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`
       - External
@@ -1710,9 +1766,16 @@ Boards
       - :ref:`platform_nordicnrf51`
       - External
       - NRF51822
-      - 32MHz
+      - 16MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_sakuraio_evb_01`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F411RET6
+      - 100MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nxplpc_ubloxc027`
       - :ref:`platform_nxplpc`
       - On-board

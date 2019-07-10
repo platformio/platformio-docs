@@ -103,6 +103,11 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_rhombio_l476dmw1k`
+      - STM32L476VGT6
+      - 80MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_mbed_connect_odin`
       - STM32F439ZIY6
       - 168MHz
@@ -453,6 +458,11 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_ststm32_sakuraio_evb_01`
+      - STM32F411RET6
+      - 100MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_ublox_c030_r410m`
       - STM32F437VG
       - 180MHz
@@ -1940,6 +1950,44 @@ Semtech
       - 32MHz
       - 256KB
       - 32KB
+
+rhomb.io
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_rhombio_l476dmw1k`
+      - On-board
+      - STM32L476VGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+
+sakura.io
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sakuraio_evb_01`
+      - On-board
+      - STM32F411RET6
+      - 100MHz
+      - 1MB
+      - 128KB
 
 u-blox
 ~~~~~~

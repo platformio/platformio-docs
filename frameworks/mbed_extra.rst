@@ -88,3 +88,77 @@ default build profile is not suitable for your project there two other profiles 
 
 More information about differences between build profiles can be found on the 
 official page `ARM Mbed OS Build Profiles <https://os.mbed.com/docs/mbed-os/v5.11/tools/build-profiles.html>`_.
+
+Custom Targets
+~~~~~~~~~~~~~~
+
+In case when your board is not officially supported by :ref:`framework_mbed` you can 
+manually add custom board definitions to your project. First of all, you need to create 
+a special file ``custom_targets.json`` in the root folder of your project where you 
+describe your board, for example here is the configuration for ``NUCLEO-F401RE`` board:
+
+.. code-block:: json
+
+    {
+      "NUCLEO_F401RE": {
+            "inherits": ["FAMILY_STM32"],
+            "supported_form_factors": ["ARDUINO", "MORPHO"],
+            "core": "Cortex-M4F",
+            "extra_labels_add": ["STM32F4", "STM32F401xE", "STM32F401RE"],
+            "config": {
+                "clock_source": {
+                    "help": "Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI",
+                    "value": "USE_PLL_HSE_EXTC|USE_PLL_HSI",
+                    "macro_name": "CLOCK_SOURCE"
+                }
+            },
+            "detect_code": ["0720"],
+            "macros_add": ["USB_STM_HAL", "USBHOST_OTHER"],
+            "device_has_add": [
+                "SERIAL_ASYNCH",
+                "FLASH",
+                "MPU"
+            ],
+            "release_versions": ["2", "5"],
+            "device_name": "STM32F401RE"
+        }
+    }
+
+Secondly, you need to add code specific to your target to the ``src`` folder of your project.
+Usually, it's a good idea to isolate this code in a separate folder and add еру path to this folder
+to :ref:`projectconf_build_flags` of :ref:`projectconf`:
+
+.. code-block:: ini
+
+  [env:my_custom_board]
+  platform = nxplpc
+  framework = mbed
+  board = my_custom_board
+  build_flags = -I$PROJECTSRC_DIR/MY_CUSTOM_BOARD_TARGET
+
+Next, you need to inform PlatformIO that there is a new custom board. To do this, you can create 
+``boards`` directory in the root folder of your project and add a board manifest file with your
+board name, e.g. ``my_custom_board.json`` as described here :ref:`board_creating`
+
+After these steps, your project structure should look like this:
+
+.. code-block:: bash
+
+    project_dir
+    ├── include
+    ├── boards
+    │    └── my_custom_board.json
+    ├── src
+    │    ├── main.cpp
+    │    └── MY_CUSTOM_BOARD_TARGET
+    │         ├── pinNames.h
+    │         └── pinNames.c
+    ├── custom_targets.json
+    └── platformio.ini
+
+More information about adding custom targets can be found on the official page
+ `Adding and configuring targets <https://os.mbed.com/docs/mbed-os/v5.12/reference/adding-and-configuring-targets.html>`_.
+
+See full examples with a custom baord:
+
+- https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-custom-target

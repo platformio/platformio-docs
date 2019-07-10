@@ -25,6 +25,7 @@ Frameworks
     esp8266-rtos-sdk
     espidf
     freedom-e-sdk
+    kendryte-standalone-sdk
     libopencm3
     mbed
     pulp-os

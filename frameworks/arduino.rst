@@ -107,6 +107,12 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf51_calliope_mini`
+      - :ref:`platform_nordicnrf51`
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -125,13 +131,19 @@ You do not need to use/buy external debug probe.
       - 100MHz
       - 1MB
       - 256KB
-    * - :ref:`board_nordicnrf51_nrf51_dk`
+    * - :ref:`board_nordicnrf51_nrf51_beacon`
       - :ref:`platform_nordicnrf51`
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
+      - :ref:`platform_nordicnrf51`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - NRF51822
       - 32MHz
@@ -377,6 +389,24 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_kendryte210_sipeed-maix-bit`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-go`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-one`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_infineonxmc_xmc1100_boot_kit`
       - :ref:`platform_infineonxmc`
       - XMC1100
@@ -502,7 +532,7 @@ Please click on board name for the further details.
       - :ref:`platform_atmelsam`
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - :ref:`platform_atmelsam`
@@ -514,8 +544,8 @@ Please click on board name for the further details.
       - :ref:`platform_atmelsam`
       - SAMD51P20A
       - 120MHz
-      - 496KB
-      - 192KB
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_hallowing`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -532,7 +562,7 @@ Please click on board name for the further details.
       - :ref:`platform_atmelsam`
       - SAMD51G19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
@@ -544,13 +574,31 @@ Please click on board name for the further details.
       - :ref:`platform_atmelsam`
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_metro_m4_airliftlite`
+      - :ref:`platform_atmelsam`
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
@@ -564,6 +612,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_pybadge_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -846,6 +900,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_atmelsam_mkrvidor4000`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_macchina2`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -888,6 +948,12 @@ Please click on board name for the further details.
       - 72MHz
       - 105.47KB
       - 16.60KB
+    * - :ref:`board_atmelsam_minitronics20`
+      - :ref:`platform_atmelsam`
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_moteino_zero`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -900,6 +966,12 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_atmelsam_nano_33_iot`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_node32s`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1104,6 +1176,12 @@ Please click on board name for the further details.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1188,6 +1266,12 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_atmelsam_tuinozero96`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1233,7 +1317,7 @@ Please click on board name for the further details.
     * - :ref:`board_nordicnrf51_ng_beacon`
       - :ref:`platform_nordicnrf51`
       - NRF51822
-      - 32MHz
+      - 16MHz
       - 256KB
       - 32KB
     * - :ref:`board_espressif32_iotbusio`
@@ -1259,6 +1343,7 @@ Examples
 * `Arduino for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Infineon XMC <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Intel ARC32 <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Arduino for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Microchip PIC32 <https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
@@ -1292,6 +1377,9 @@ Platforms
 
     * - :ref:`platform_intel_arc32`
       - ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
+
+    * - :ref:`platform_kendryte210`
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
 
     * - :ref:`platform_microchippic32`
       - Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
@@ -1473,7 +1561,7 @@ Adafruit
       - External
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
@@ -1508,8 +1596,8 @@ Adafruit
       - External
       - SAMD51P20A
       - 120MHz
-      - 496KB
-      - 192KB
+      - 1MB
+      - 256KB
     * - :ref:`board_espressif8266_huzzah`
       - :ref:`platform_espressif8266`
       - No
@@ -1550,7 +1638,7 @@ Adafruit
       - External
       - SAMD51G19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_atmelavr_metro`
       - :ref:`platform_atmelavr`
@@ -1571,7 +1659,14 @@ Adafruit
       - External
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_metro_m4_airliftlite`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
       - 192KB
     * - :ref:`board_atmelavr_protrinket3ftdi`
       - :ref:`platform_atmelavr`
@@ -1601,12 +1696,26 @@ Adafruit
       - 16MHz
       - 28KB
       - 2KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - External
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_atmelavr_trinket3`
       - :ref:`platform_atmelavr`
@@ -1636,6 +1745,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_pybadge_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -2133,13 +2249,20 @@ Arduino
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelavr_atmega328pb`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA328PB
-      - 16MHz
-      - 31.50KB
-      - 2KB
+    * - :ref:`board_atmelsam_mkrvidor4000`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_nano_33_iot`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
 
 Armed
 ~~~~~
@@ -2469,6 +2592,27 @@ BluzDK
       - 32MHz
       - 256KB
       - 32KB
+
+Calliope
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf51_calliope_mini`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
 
 Controllino
 ~~~~~~~~~~~
@@ -3422,6 +3566,27 @@ Generic
       - 1MB
       - 192KB
 
+Gimasi
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelsam_tuinozero96`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+
 HY
 ~~
 
@@ -3855,6 +4020,13 @@ M5Stack
       - 240MHz
       - 16MB
       - 6.25MB
+    * - :ref:`board_espressif32_m5stack-grey`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_m5stick-c`
       - :ref:`platform_espressif32`
       - No
@@ -3862,6 +4034,76 @@ M5Stack
       - 240MHz
       - 4MB
       - 320KB
+
+MCUdude
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_megacore128`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA128
+      - 8MHz
+      - 127KB
+      - 4KB
+    * - :ref:`board_atmelavr_mightycore1284`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA1284P
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_mightycore16`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA16
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_mightycore164`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA164P
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_mightycore32`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA32
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_mightycore324`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA324P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_mightycore644`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA644P
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_mightycore8535`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA8535
+      - 16MHz
+      - 7.50KB
+      - 512B
 
 MH-ET Live
 ~~~~~~~~~~
@@ -3982,76 +4224,6 @@ Malyan
       - 120KB
       - 20KB
 
-Mcudude
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_atmelavr_megacore128`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA128
-      - 8MHz
-      - 127KB
-      - 4KB
-    * - :ref:`board_atmelavr_mightycore1284`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA1284P
-      - 16MHz
-      - 127KB
-      - 16KB
-    * - :ref:`board_atmelavr_mightycore16`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA16
-      - 16MHz
-      - 15.50KB
-      - 1KB
-    * - :ref:`board_atmelavr_mightycore164`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA164P
-      - 16MHz
-      - 15.50KB
-      - 1KB
-    * - :ref:`board_atmelavr_mightycore32`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA32
-      - 16MHz
-      - 31.50KB
-      - 2KB
-    * - :ref:`board_atmelavr_mightycore324`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA324P
-      - 16MHz
-      - 31.50KB
-      - 2KB
-    * - :ref:`board_atmelavr_mightycore644`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA644P
-      - 16MHz
-      - 63KB
-      - 4KB
-    * - :ref:`board_atmelavr_mightycore8535`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA8535
-      - 16MHz
-      - 7.50KB
-      - 512B
-
 MediaTek Labs
 ~~~~~~~~~~~~~
 
@@ -4072,6 +4244,90 @@ MediaTek Labs
       - 8MHz
       - 28KB
       - 2.50KB
+
+Microchip
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_ATMEGA168`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA168
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA168P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA168P
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA328`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATMEGA328P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_atmega328pb`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328PB
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATMEGA48`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA48
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelavr_ATMEGA48P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelavr_ATMEGA8`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA8
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA88`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA88
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATMEGA88P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA88P
+      - 16MHz
+      - 7.50KB
+      - 1KB
 
 Microduino
 ~~~~~~~~~~
@@ -4282,7 +4538,7 @@ Nordic
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_nrf51_dk`
+    * - :ref:`board_nordicnrf51_nrf51_beacon`
       - :ref:`platform_nordicnrf51`
       - On-board
       - NRF51822
@@ -4290,6 +4546,13 @@ Nordic
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - On-board
       - NRF51822
@@ -4843,6 +5106,27 @@ RepRap
       - 252KB
       - 8KB
 
+ReprapWorld
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelsam_minitronics20`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+
 RoboticsBrno
 ~~~~~~~~~~~~
 
@@ -5319,6 +5603,27 @@ Sanguino
       - 63KB
       - 4KB
 
+Seeed
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+
 SeeedStudio
 ~~~~~~~~~~~
 
@@ -5388,6 +5693,41 @@ Silicognition
       - 240MHz
       - 4MB
       - 320KB
+
+Sipeed
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_kendryte210_sipeed-maix-bit`
+      - :ref:`platform_kendryte210`
+      - On-board
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-go`
+      - :ref:`platform_kendryte210`
+      - On-board
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-one`
+      - :ref:`platform_kendryte210`
+      - On-board
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
 
 SparkFun
 ~~~~~~~~
@@ -6169,7 +6509,7 @@ ng-beacon
       - :ref:`platform_nordicnrf51`
       - External
       - NRF51822
-      - 32MHz
+      - 16MHz
       - 256KB
       - 32KB
 

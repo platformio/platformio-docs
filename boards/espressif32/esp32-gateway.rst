@@ -69,6 +69,7 @@ Uploading
 OLIMEX ESP32-GATEWAY supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

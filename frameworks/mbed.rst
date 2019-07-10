@@ -107,12 +107,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_nordicnrf51_bbcmicrobit_b`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_nxplpc_lpc4330_m4`
       - :ref:`platform_nxplpc`
       - LPC4330
@@ -263,6 +257,12 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_rhombio_l476dmw1k`
+      - :ref:`platform_ststm32`
+      - STM32L476VGT6
+      - 80MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nxplpc_lpc11u68`
       - :ref:`platform_nxplpc`
       - LPC11U68
@@ -317,12 +317,6 @@ You do not need to use/buy external debug probe.
       - 96MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_nrf51_dk`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -335,6 +329,12 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 128KB
       - 16KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
+      - :ref:`platform_nordicnrf51`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf52_nrf52_dk`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -809,6 +809,12 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 128KB
       - 48KB
+    * - :ref:`board_ststm32_sakuraio_evb_01`
+      - :ref:`platform_ststm32`
+      - STM32F411RET6
+      - 100MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nxplpc_ubloxc027`
       - :ref:`platform_nxplpc`
       - LPC1768
@@ -978,6 +984,12 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 36KB
+    * - :ref:`board_nordicnrf52_sdt52832b`
+      - :ref:`platform_nordicnrf52`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -1217,13 +1229,6 @@ BBC
       - Flash
       - RAM
     * - :ref:`board_nordicnrf51_bbcmicrobit`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_bbcmicrobit_b`
       - :ref:`platform_nordicnrf51`
       - On-board
       - NRF51822
@@ -1860,13 +1865,6 @@ Nordic
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_nrf51_dk`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -1881,6 +1879,13 @@ Nordic
       - 16MHz
       - 128KB
       - 16KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf52_nrf52_dk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2463,6 +2468,41 @@ Semtech
       - 256KB
       - 32KB
 
+Sigma Delta Technologies
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_maxim32_sdt32620b`
+      - :ref:`platform_maxim32`
+      - No
+      - MAX32620IWG
+      - 96MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_maxim32_sdt32625b`
+      - :ref:`platform_maxim32`
+      - No
+      - MAX32625ITK
+      - 96MHz
+      - 512KB
+      - 160KB
+    * - :ref:`board_nordicnrf52_sdt52832b`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
 Silicon Labs
 ~~~~~~~~~~~~
 
@@ -2693,6 +2733,48 @@ WIZNet
       - 48MHz
       - 128KB
       - 48KB
+
+rhomb.io
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_rhombio_l476dmw1k`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L476VGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+
+sakura.io
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sakuraio_evb_01`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F411RET6
+      - 100MHz
+      - 1MB
+      - 128KB
 
 u-blox
 ~~~~~~

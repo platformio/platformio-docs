@@ -11,8 +11,8 @@
 
 .. _board_atmelsam_adafruit_metro_m4:
 
-Adafruit Metro M4 (SAMD51)
-==========================
+Adafruit Metro M4
+=================
 
 .. contents::
 
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **Frequency**
     - 120MHz
   * - **Flash**
-    - 496KB
+    - 512KB
   * - **RAM**
     - 192KB
   * - **Vendor**
@@ -46,7 +46,7 @@ Please use ``adafruit_metro_m4`` ID for :ref:`projectconf_env_board` option in :
   platform = atmelsam
   board = adafruit_metro_m4
 
-You can override default Adafruit Metro M4 (SAMD51) settings per build environment using
+You can override default Adafruit Metro M4 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `adafruit_metro_m4.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_metro_m4.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `adafruit_metro_m4.json <https://github.com/platformio/platform-a
 
 Uploading
 ---------
-Adafruit Metro M4 (SAMD51) supports the next uploading protocols:
+Adafruit Metro M4 supports the next uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``
@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit Metro M4 (SAMD51) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Adafruit Metro M4 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

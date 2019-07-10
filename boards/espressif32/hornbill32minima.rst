@@ -69,6 +69,7 @@ Uploading
 Hornbill ESP32 Minima supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

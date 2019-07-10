@@ -69,6 +69,7 @@ Uploading
 TTGO LoRa32-OLED V1 supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

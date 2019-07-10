@@ -63,6 +63,26 @@ board manifest `bpi-bit.json <https://github.com/platformio/platform-espressif32
   ; change MCU frequency
   board_build.f_cpu = 160000000L
 
+
+Uploading
+---------
+BPI-Bit supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:bpi-bit]
+  platform = espressif32
+  board = bpi-bit
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support BPI-Bit board.

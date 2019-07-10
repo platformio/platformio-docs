@@ -16,8 +16,6 @@
 PIO Unit Testing
 ================
 
-.. versionadded:: 3.0 (`PIO Plus <https://pioplus.com>`_)
-
 PIO Unit Testing allows segregating each part of the firmware/program and test
 that the individual parts are working correctly. Using |PIOUTE| you can
 execute the same tests on the local host machine (native), on the multiple
@@ -191,7 +189,7 @@ Workflow
 
    .. warning::
      If your board does not support software resetting via ``Serial.DTR/RTS``,
-     you should add >2 seconds delay before ``UNITY_BEGIN()`.
+     you should add >2 seconds delay before ``UNITY_BEGIN()``.
      That time is needed to establish a ``Serial`` connection between a host
      machine and a target device.
 
@@ -255,7 +253,7 @@ Summary of the `Unity Test API <https://github.com/ThrowTheSwitch/Unity#unity-te
 
 * `Running Tests <https://github.com/ThrowTheSwitch/Unity#running-tests>`_
 
-  - ``RUN_TEST(func, linenum)``
+  - ``RUN_TEST(func)``
 
 * `Ignoring Tests <https://github.com/ThrowTheSwitch/Unity#ignoring-tests>`_
 

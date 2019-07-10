@@ -12,7 +12,7 @@
 .. _projectconf_section_env_monitor:
 
 Monitor options
-~~~~~~~~~~~~~~~
+---------------
 
 .. contents::
     :local:
@@ -24,7 +24,30 @@ Custom options for :ref:`cmd_device_monitor` command.
 ``monitor_port``
 ^^^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``No``
+
 Port, a number or a device name. See :option:`platformio device monitor --port`.
+To print all available serial ports please use :ref:`cmd_device_list` command.
+
+Please note that you can use Unix shell-style wildcards:
+
+.. list-table::
+    :header-rows:  1
+
+    * - Pattern
+      - Meaning
+
+    * - ``*``
+      - matches everything
+
+    * - ``?``
+      - matches any single character
+
+    * - ``[seq]``
+      - matches any character in seq
+
+    * - ``[!seq]``
+      - matches any character not in seq
 
 Example:
 
@@ -35,13 +58,15 @@ Example:
     ; Unix
     monitor_port = /dev/ttyUSB1
 
-    ; Windows
-    monitor_port = COM3
+    ; Windows, COM1 or COM3
+    monitor_port = COM[13]
 
 .. _projectconf_monitor_speed:
 
 ``monitor_speed``
 ^^^^^^^^^^^^^^^^^
+
+Type: ``Integer`` | Multiple: ``No`` | Default: ``9600``
 
 A monitor speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_).
 See :option:`platformio device monitor --baud`.
@@ -59,6 +84,8 @@ Example:
 ``monitor_rts``
 ^^^^^^^^^^^^^^^
 
+Type: ``Integer (0 or 1)`` | Multiple: ``No``
+
 A monitor initial ``RTS`` line state. See :option:`platformio device monitor --rts`.
 
 .. _projectconf_monitor_dtr:
@@ -66,4 +93,35 @@ A monitor initial ``RTS`` line state. See :option:`platformio device monitor --r
 ``monitor_dtr``
 ^^^^^^^^^^^^^^^
 
+Type: ``Integer (0 or 1)`` | Multiple: ``No``
+
 A monitor initial ``DTR`` line state. See :option:`platformio device monitor --dtr`.
+
+.. _projectconf_monitor_flags:
+
+``monitor_flags``
+^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
+
+Type: ``String`` | Multiple: ``Yes``
+
+Pass extra flags and options to :ref:`cmd_device_monitor` command. Please note
+that each flag, option or its value should be passed in a new line. See
+example below.
+
+Available flags and options are the same which are documented for
+:ref:`cmd_device_monitor` command.
+
+Example:
+
+.. code-block:: ini
+
+    [env:extra_monitor_flags]
+    platform = ...
+    board = ...
+    monitor_flags=
+        --parity
+        N
+        --encoding
+        hexlify

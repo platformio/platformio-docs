@@ -28,7 +28,7 @@
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-heart fa-lg"></i>Open Source<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -36,30 +36,24 @@
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/projectconf/advanced_scripting.html"><i class="fa fa-wrench"></i>Advanced Scripting API</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/pricing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>\
-              PIO Plus<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>\
+              Products<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>PIO Remote&trade;</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>PIO Remote</a></li>\
               <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>PIO Unified Debugger</a></li>\
               <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>PIO Unit Testing</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/pricing#solution-white-labeling"><i class="fa fa-cube"></i>"White Label" IDE</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/pricing#enterprise-features"><i class="fa fa-briefcase"></i>Integration Services</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/pricing#enterprise-features"><i class="fa fa-certificate"></i>Certification Program</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/support"><i class="fa fa-question-circle"></i>Premium Support</a></li>\
+              <li role="menuitem"><a href="/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
@@ -75,7 +69,6 @@
           </li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li><a href="https://platformio.org/pricing"><i class="fa fa-shopping-cart fa-lg"></i>Pricing</a></li>\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
           <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
           <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
@@ -109,14 +102,6 @@
     $(window).scroll(function() {
       $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
-
-    $(document).ready(function() {
-      var editElm = $('.wy-breadcrumbs-aside a.fa-github');
-      if (editElm) {
-        editElm.attr('href', editElm.attr('href').replace('https://github.com/platformio/platformio-core/blob/develop/docs/', 'https://github.com/platformio/platformio-docs/blob/develop/'));
-      }
-    });
-
   })();
 </script>
 {{ super() }}

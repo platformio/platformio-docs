@@ -11,7 +11,7 @@
 
 .. _board_intel_mcs51_stc15w404as:
 
-Generic STC15W408AS
+Generic STC15W404AS
 ===================
 
 .. contents::
@@ -24,7 +24,7 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
 .. list-table::
 
   * - **Microcontroller**
-    - STC15W408AS
+    - STC15W404AS
   * - **Frequency**
     - 11MHz
   * - **Flash**
@@ -32,7 +32,7 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
   * - **RAM**
     - 512B
   * - **Vendor**
-    - `STC <https://www.stcmicro.com/STC/STC15W408AS.html?utm_source=platformio&utm_medium=docs>`__
+    - `STC <https://www.stcmicro.com/STC/STC15W404AS.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``stc15w404as`` ID for :ref:`projectconf_env_board` option in :ref:`p
   platform = intel_mcs51
   board = stc15w404as
 
-You can override default Generic STC15W408AS settings per build environment using
+You can override default Generic STC15W404AS settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `stc15w404as.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/stc15w404as.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -58,11 +58,11 @@ board manifest `stc15w404as.json <https://github.com/platformio/platform-intel_m
   board = stc15w404as
 
   ; change microcontroller
-  board_build.mcu = stc15w408as
+  board_build.mcu = stc15w404as
 
   ; change MCU frequency
   board_build.f_cpu = 11059200L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic STC15W408AS board.
+:ref:`piodebug` currently does not support Generic STC15W404AS board.

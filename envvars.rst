@@ -16,10 +16,8 @@ Environment variables
 
 `Environment variables <http://en.wikipedia.org/wiki/Environment_variable>`_
 are a set of dynamic named values that can affect the way running processes
-will behave on a computer.
-
-*PlatformIO* handles variables which start with ``PLATFORMIO_`` prefix. They
-have the **HIGHEST PRIORITY**.
+will behave on a computer. PlatformIO handles variables which start with
+``PLATFORMIO_`` prefix.
 
 How to set environment variable?
 
@@ -27,6 +25,8 @@ How to set environment variable?
 
     # Windows
     set VARIABLE_NAME=VALUE
+
+    # Windows GUI -> https://www.youtube.com/watch?v=bEroNNzqlF4
 
     # Unix (bash, zsh)
     export VARIABLE_NAME=VALUE
@@ -72,9 +72,36 @@ Disable progress bar for package/library downloader and uploader. This is
 useful when calling PlatformIO from subprocess and output is a ``pipe`` (not a ``tty``).
 The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_PROGRESSBAR=false``.
 
-.. envvar:: PLATFORMIO_HOME_DIR
+Directories
+-----------
 
-Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_home_dir`.
+.. envvar:: PLATFORMIO_CORE_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_core_dir`.
+
+.. envvar:: PLATFORMIO_GLOBALLIB_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_globallib_dir`.
+
+.. envvar:: PLATFORMIO_PLATFORMS_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_platforms_dir`.
+
+.. envvar:: PLATFORMIO_PACKAGES_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_packages_dir`.
+
+.. envvar:: PLATFORMIO_CACHE_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_cache_dir`.
+
+.. envvar:: PLATFORMIO_BUILD_CACHE_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_build_cache_dir`.
+
+.. envvar:: PLATFORMIO_WORKSPACE_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_workspace_dir`.
 
 .. envvar:: PLATFORMIO_INCLUDE_DIR
 
@@ -108,9 +135,17 @@ Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_test_dir`
 
 Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_boards_dir`.
 
+.. envvar:: PLATFORMIO_SHARED_DIR
+
+Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_shared_dir`.
+
 .. envvar:: PLATFORMIO_REMOTE_AGENT_DIR
 
 Allows one to override :option:`platformio remote agent start --working-dir`.
+
+.. envvar:: PLATFORMIO_LIB_EXTRA_DIRS
+
+Allows one to set :ref:`projectconf` option :ref:`projectconf_lib_extra_dirs`.
 
 Building
 --------
@@ -145,10 +180,9 @@ Allows one to set :ref:`projectconf` option :ref:`projectconf_src_filter`.
 
 Allows one to set :ref:`projectconf` option :ref:`projectconf_extra_scripts`.
 
-.. envvar:: PLATFORMIO_LIB_EXTRA_DIRS
+.. envvar:: PLATFORMIO_DEFAULT_ENVS
 
-Allows one to set :ref:`projectconf` option :ref:`projectconf_lib_extra_dirs`.
-
+Allows one to set :ref:`projectconf` option :ref:`projectconf_pio_default_envs`.
 
 Uploading
 ---------

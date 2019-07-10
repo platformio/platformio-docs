@@ -69,6 +69,7 @@ Uploading
 MH ET LIVE ESP32DevKIT supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``

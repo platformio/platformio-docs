@@ -63,6 +63,26 @@ board manifest `nina_w10.json <https://github.com/platformio/platform-espressif3
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+u-blox NINA-W10 series supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:nina_w10]
+  platform = espressif32
+  board = nina_w10
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support u-blox NINA-W10 series board.

@@ -47,7 +47,13 @@ build scripts, board configs and etc.
 .. option::
     -c, --only-check
 
-Do not update, only check for a new version
+DEPRECATED. Please use ``--dry-run`` instead.
+
+
+.. option::
+    --dry-run
+
+Do not update, only check for the new versions
 
 .. option::
     --json-output

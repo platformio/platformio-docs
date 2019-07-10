@@ -19,8 +19,6 @@ PIO Remote
 
 **Your devices are always with you!**
 
-.. versionadded:: 3.2 (`PIO Plus <https://pioplus.com>`__)
-
 |PIORemote| allows you to work remotely with devices from
 *Anywhere In The World*. No matter where are you now! Run a small and
 cross-platform :ref:`cmd_remote_agent` on a remote machine and you are able to

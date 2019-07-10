@@ -72,7 +72,7 @@ Drivers
 :Windows:
   1. Start debugging session using :ref:`pioide`. PlatformIO will install
      J-Link software dependencies
-  2. Navigate to :ref:`projectconf_pio_home_dir`/packages/tool-jlink/USBDriver
+  2. Navigate to :ref:`projectconf_pio_core_dir`/packages/tool-jlink/USBDriver
   3. Run ``InstDrivers.exe``.
 
 :Mac:
@@ -168,6 +168,9 @@ Platforms
     * - :ref:`platform_infineonxmc`
       - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
+    * - :ref:`platform_kendryte210`
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
+
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
@@ -179,6 +182,9 @@ Platforms
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
+
+    * - :ref:`platform_sifive`
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -208,6 +214,12 @@ Frameworks
 
     * - :ref:`framework_espidf`
       - Espressif IoT Development Framework. Official development framework for ESP32.
+
+    * - :ref:`framework_freedom-e-sdk`
+      - Open Source Software for Developing on the SiFive Freedom E Platform
+
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support
 
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
@@ -344,7 +356,7 @@ Boards
       - External
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
@@ -365,8 +377,8 @@ Boards
       - External
       - SAMD51P20A
       - 120MHz
-      - 496KB
-      - 192KB
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_hallowing`
       - :ref:`platform_atmelsam`
       - External
@@ -386,7 +398,7 @@ Boards
       - External
       - SAMD51G19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
@@ -400,14 +412,35 @@ Boards
       - External
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_metro_m4_airliftlite`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - External
       - SAMD51J19A
       - 120MHz
-      - 496KB
+      - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
@@ -423,6 +456,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_pybadge_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
       - External
@@ -549,6 +589,13 @@ Boards
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_sifive_e310-arty`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 450MHz
+      - 16MB
+      - 256MB
     * - :ref:`board_atmelsam_samr21_xpro`
       - :ref:`platform_atmelsam`
       - On-board
@@ -577,6 +624,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf51_bbcmicrobit`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
     * - :ref:`board_nxplpc_lpc4330_m4`
       - :ref:`platform_nxplpc`
       - On-board
@@ -675,6 +729,13 @@ Boards
       - 48MHz
       - 64KB
       - 10KB
+    * - :ref:`board_nordicnrf51_calliope_mini`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
     * - :ref:`board_nxplpc_elektor_cocorico`
       - :ref:`platform_nxplpc`
       - On-board
@@ -983,6 +1044,13 @@ Boards
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_sifive_hifive1-revb`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
     * - :ref:`board_espressif32_hornbill32dev`
       - :ref:`platform_espressif32`
       - External
@@ -997,6 +1065,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_rhombio_l476dmw1k`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L476VGT6
+      - 80MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nxplpc_lpc11u68`
       - :ref:`platform_nxplpc`
       - On-board
@@ -1039,6 +1114,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_atmelsam_mkrvidor4000`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_ststm32_mts_dragonfly_f411re`
       - :ref:`platform_ststm32`
       - External
@@ -1116,6 +1198,13 @@ Boards
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_minitronics20`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_moteino_zero`
       - :ref:`platform_atmelsam`
       - External
@@ -1156,6 +1245,13 @@ Boards
       - External
       - STM32L152RC
       - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_nano_33_iot`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_nxplpc_blueboard_lpc11u24`
@@ -1242,7 +1338,7 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_nordicnrf51_nrf51_dk`
+    * - :ref:`board_nordicnrf51_nrf51_beacon`
       - :ref:`platform_nordicnrf51`
       - On-board
       - NRF51822
@@ -1250,6 +1346,13 @@ Boards
       - 256KB
       - 32KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
+      - :ref:`platform_nordicnrf51`
+      - On-board
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - On-board
       - NRF51822
@@ -1368,6 +1471,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_nordicnrf52_sdt52832b`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
       - :ref:`platform_siliconlabsefm32`
       - On-board
@@ -2047,6 +2157,13 @@ Boards
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - External
@@ -2061,6 +2178,27 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_kendryte210_sipeed-maix-bit`
+      - :ref:`platform_kendryte210`
+      - On-board
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-go`
+      - :ref:`platform_kendryte210`
+      - On-board
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-one`
+      - :ref:`platform_kendryte210`
+      - On-board
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_nxplpc_dipcortexm0`
       - :ref:`platform_nxplpc`
       - External
@@ -2173,6 +2311,13 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_atmelsam_tuinozero96`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - External
@@ -2303,7 +2448,7 @@ Boards
       - :ref:`platform_nordicnrf51`
       - External
       - NRF51822
-      - 32MHz
+      - 16MHz
       - 256KB
       - 32KB
     * - :ref:`board_espressif32_iotbusio`
@@ -2320,6 +2465,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_sakuraio_evb_01`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F411RET6
+      - 100MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nxplpc_ubloxc027`
       - :ref:`platform_nxplpc`
       - On-board

@@ -14,8 +14,6 @@
 Advanced Scripting
 ------------------
 
-.. versionadded:: 3.4.1
-
 .. warning::
 
   Advanced Scripting is recommended for Advanced Users and requires Python
@@ -74,7 +72,7 @@ For example, :ref:`projectconf`
     post:post_extra_script1.py
     post_extra_script2.py
 
-This option can be set by global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
+This option can also be set by global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
 
 Construction Environments
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -287,7 +285,7 @@ Now, run ``pio run -t node``.
 Dependent target
 ''''''''''''''''
 
-Sometime you need to run a command which depends on another target (file,
+Sometimes you need to run a command which depends on another target (file,
 firmware, etc). Let's create an ``ota`` target and declare command which will
 depend on a project firmware. If a build process successes, declared command
 will be run.
@@ -334,10 +332,15 @@ Let's create a simple ``ping`` target and process it with
 
 .. code-block:: python
 
-    from platformio import util
+    try:
+        import configparser
+    except ImportError:
+        import ConfigParser as configparser
+
     Import("env")
 
-    config = util.load_project_config()
+    config = configparser.ConfigParser()
+    config.read("platformio.ini")
     host = config.get("env_custom_target", "custom_ping_host")
 
     def mytarget_callback(*args, **kwargs):
@@ -350,7 +353,7 @@ Let's create a simple ``ping`` target and process it with
 Examples
 ~~~~~~~~
 
-The beast examples are `PaltformIO development platforms <https://github.com/topics/platformio-platform>`__.
+The beast examples are `PlatformIO development platforms <https://github.com/topics/platformio-platform>`__.
 Please check ``builder`` folder for the main and framework scripts.
 
 Custom options in ``platformio.ini``
@@ -371,9 +374,13 @@ Custom options in ``platformio.ini``
 
 .. code-block:: python
 
-    from platformio import util
+    try:
+        import configparser
+    except ImportError:
+        import ConfigParser as configparser
 
-    config = util.load_project_config()
+    config = configparser.ConfigParser()
+    config.read("platformio.ini")
 
     value1 = config.get("my_env", "custom_option1")
     value2 = config.get("my_env", "custom_option2")
@@ -396,7 +403,7 @@ Split C/C++ build flags
     Import("env")
 
     # General options that are passed to the C and C++ compilers
-    env.Append(CCFLAGS=["flag1", "falg2"])
+    env.Append(CCFLAGS=["flag1", "flag2"])
 
     # General options that are passed to the C compiler (C only; not C++).
     env.Append(CFLAGS=["flag1", "flag2"])
@@ -479,7 +486,7 @@ See examples below:
 
     # Generic
     env.Replace(
-        UPLOADER="executable or path to executable"
+        UPLOADER="executable or path to executable",
         UPLOADCMD="$UPLOADER $UPLOADERFLAGS $SOURCE"
     )
 
@@ -571,3 +578,125 @@ Sometimes is useful to have a different firmware/program name in
     # print defines
 
     env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
+
+Override package files
+''''''''''''''''''''''
+
+PlatformIO Package Manager automatically installs pre-built packages
+(:ref:`frameworks`, toolchains, libraries) required by development
+:ref:`platforms` and build process. Sometimes you need to override original
+files with own versions: configure custom GPIO, do changes to built-in LD
+scripts, or some patching to installed library dependency.
+
+The simplest way is using `Diff and Patch technique <https://linuxacademy.com/blog/linux/introduction-using-diff-and-patch/>`_. How does it work?
+
+1. Modify original source files
+2. Generate patches
+3. Apply patches via PlatformIO extra script before build process.
+
+**Example**
+
+We need to patch the original ``standard/pins_arduino.h`` variant from
+:ref:`framework_arduino` framework and add extra macro ``#define PIN_A8   (99)``.
+Let's duplicate ``standard/pins_arduino.h`` and apply changes. Generate a
+patch file and place it into ``patches`` folder located in the root of a project:
+
+.. code-block:: shell
+
+    diff ~/.platformio/packages/framework-arduinoavr/variants/standard/pins_arduino.h /tmp/pins_arduino_modified.h > /path/to/platformio/project/patches/1-framework-arduinoavr-add-pin-a8.patch
+
+The result of ``1-framework-arduinoavr-add-pin-a8.patch``:
+
+.. code-block:: diff
+
+    63a64
+    > #define PIN_A8   (99)
+    112c113
+    < // 14-21 PA0-PA7 works
+    ---
+    > // 14-21 PA0-PA7 works
+
+Using extra scripting we can apply patching before a build process. The final
+result of :ref:`projectconf` and "PRE" extra script named ``apply_patches.py``:
+
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:uno]
+    platform = atmelavr
+    board = uno
+    framework = arduino
+    extra_scripts = pre:apply_patches.py
+
+``apply_patches.py``:
+
+.. code-block:: python
+
+    from os.path import join, isfile
+
+    Import("env")
+
+    FRAMEWORK_DIR = env.PioPlatform().get_package_dir("framework-arduinoavr")
+    patchflag_path = join(FRAMEWORK_DIR, ".patching-done")
+
+    # skip patch process if we did it before
+    if isfile(join(FRAMEWORK_DIR, ".patching-done")):
+        env.Exit(0)
+
+    original_file = join(FRAMEWORK_DIR, "variants", "standard", "pins_arduino.h")
+    patched_file = join("patches", "1-framework-arduinoavr-add-pin-a8.patch")
+
+    assert isfile(original_file) and isfile(patched_file)
+
+    env.Execute("patch %s %s" % (original_file, patched_file))
+    # env.Execute("touch " + patchflag_path)
+
+
+    def _touch(path):
+        with open(path, "w") as fp:
+            fp.write("")
+
+    env.Execute(lambda *args, **kwargs: _touch(patchflag_path))
+
+
+Please note that this example will work on a system where a ``patch`` tool
+is available. For Windows OS, you can use ``patch`` and ``diff`` tools
+provided by `Git client utility <https://git-scm.com/>`__
+(located inside installation directory).
+
+If you need to make it more independent to the operating system,
+please replace the ``patch`` with a multi-platform
+`python-patch <https://github.com/techtonik/python-patch>`_ script.
+
+Override Board Configuration
+''''''''''''''''''''''''''''
+
+PlatformIO allows to override some basic options (integer or string values)
+using :ref:`projectconf_board_more_options` in :ref:`projectconf`.
+Sometimes you need to do complex changes to default board manifest and
+extra PRE scripting work well here. See example below how to override default
+hardware VID/PIDs:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:uno]
+    platform = atmelavr
+    board = uno
+    framework = arduino
+    extra_scripts = pre:custon_hwids.py
+
+``custon_hwids.py``:
+
+.. code-block:: python
+
+    Import("env")
+
+    board_config = env.BoardConfig()
+    board_config.update("build.hwids", [
+      ["0x2341", "0x0243"],
+      ["0x2A03", "0x0043"]
+    ])

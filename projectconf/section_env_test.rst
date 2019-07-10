@@ -12,9 +12,8 @@
 .. _projectconf_section_env_test:
 
 Test options
-============
+------------
 
-.. versionadded:: 3.0
 .. seealso::
     Please make sure to read :ref:`unit_testing` guide first.
 
@@ -24,10 +23,12 @@ Test options
 .. _projectconf_test_filter:
 
 ``test_filter``
----------------
+^^^^^^^^^^^^^^^
+
+Type: ``String (Pattern)`` | Multiple: ``Yes``
 
 Process only the :ref:`unit_testing` tests where the name matches specified
-patterns. Multiple names are allowed. *Please separate them using comma+space ", "*.
+patterns.
 
 Also, you can filter some tests using :option:`platformio test --filter` command.
 
@@ -59,10 +60,11 @@ Also, you can filter some tests using :option:`platformio test --filter` command
 .. _projectconf_test_ignore:
 
 ``test_ignore``
----------------
+^^^^^^^^^^^^^^^
+
+Type: ``String (Pattern)`` | Multiple: ``Yes``
 
 Ignore :ref:`unit_testing` tests where the name matches specified patterns.
-Multiple names are allowed. *Please separate them using comma+space ", "*.
 
 Also, you can ignore some tests using :option:`platformio test --ignore` command.
 
@@ -89,12 +91,17 @@ Also, you can ignore some tests using :option:`platformio test --ignore` command
 .. code-block:: ini
 
   [env:myenv]
-  test_ignore = footest, bartest_*, test[13]
+  test_ignore =
+    footest
+    bartest_*
+    test[13]
 
 .. _projectconf_test_port:
 
 ``test_port``
--------------
+^^^^^^^^^^^^^
+
+Type: ``String (Pattern)`` | Multiple: ``No``
 
 This option specifies communication interface (Serial/UART) between PlatformIO
 :ref:`unit_testing` Engine and target device. For example,
@@ -110,15 +117,19 @@ To print all available serial ports use :ref:`cmd_device_list` command.
 .. _projectconf_test_speed:
 
 ``test_speed``
---------------
+^^^^^^^^^^^^^^
+
+Type: ``Integer`` | Multiple: ``No`` | Default: ``115200``
 
 A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
-to communicate with a target device. Default is ``115200``.
+to communicate with a target device.
 
 .. _projectconf_test_transport:
 
 ``test_transport``
-------------------
+^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No``
 
 :ref:`unit_testing` engine uses different transports to communicate with a
 target device. By default, it uses ``Serial/UART`` transport provided
@@ -135,8 +146,7 @@ You can also define ``custom`` transport and implement its interface:
 * ``unittest_uart_flush();``
 * ``unittest_uart_end();``
 
-Examples
-~~~~~~~~
+**Examples**
 
 1. Custom transport for :ref:`platform_native` platform
 
@@ -181,12 +191,13 @@ Examples
 .. _projectconf_test_build_project_src:
 
 ``test_build_project_src``
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Type: ``Bool (yes or no)`` | Multiple: ``No`` | Default: ``no``
 
 Force :ref:`unit_testing` engine to build project source code from
-:ref:`projectconf_pio_src_dir` setting ``test_build_project_src`` to ``true``.
+:ref:`projectconf_pio_src_dir` setting ``test_build_project_src`` to ``yes``.
 More detail about :ref:`unit_testing_shared_code`.
-
 
 **Example**
 
@@ -194,4 +205,4 @@ More detail about :ref:`unit_testing_shared_code`.
 
   [env:myenv]
   platform = ...
-  test_build_project_src = true
+  test_build_project_src = yes

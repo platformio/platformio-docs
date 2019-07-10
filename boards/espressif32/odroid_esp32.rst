@@ -63,6 +63,26 @@ board manifest `odroid_esp32.json <https://github.com/platformio/platform-espres
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+ODROID-GO supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:odroid_esp32]
+  platform = espressif32
+  board = odroid_esp32
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support ODROID-GO board.

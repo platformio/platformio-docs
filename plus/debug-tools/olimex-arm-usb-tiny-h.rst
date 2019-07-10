@@ -100,8 +100,8 @@ Platforms
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-    * - :ref:`platform_riscv`
-      - RISC-V is an open, free ISA enabling a new era of processor innovation through open standard collaboration. Born in academia and research, RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation.
+    * - :ref:`platform_sifive`
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 Frameworks
 ----------
@@ -154,6 +154,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_sifive_e310-arty`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 450MHz
+      - 16MB
+      - 256MB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
       - External
@@ -175,13 +182,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_riscv_coreplexip-e51-arty`
-      - :ref:`platform_riscv`
-      - External
-      - E51
-      - 1500MHz
-      - 16MB
-      - 256MB
     * - :ref:`board_espressif32_fm-devkit`
       - :ref:`platform_espressif32`
       - External
@@ -231,13 +231,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_riscv_coreplexip-e31-arty`
-      - :ref:`platform_riscv`
-      - External
-      - E31
-      - 320MHz
-      - 16MB
-      - 256MB
     * - :ref:`board_espressif32_frogboard`
       - :ref:`platform_espressif32`
       - External

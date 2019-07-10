@@ -299,6 +299,7 @@ You can customize Serial Port Monitor using
 * :ref:`projectconf_monitor_speed`
 * :ref:`projectconf_monitor_rts`
 * :ref:`projectconf_monitor_dtr`
+* :ref:`projectconf_monitor_flags`
 
 Example:
 
@@ -352,7 +353,7 @@ There are 2 pre-configured debugging configurations:
 
 .. note::
   Please note that :ref:`piodebug` will use the first declared build
-  environment in :ref:`projectconf` if :ref:`projectconf_pio_env_default` option
+  environment in :ref:`projectconf` if :ref:`projectconf_pio_default_envs` option
   is not specified.
 
 .. image:: ../_static/images/ide/vscode/platformio-ide-vscode-debug.png
@@ -395,10 +396,21 @@ Please navigate to PIO Core :ref:`piocore_install_shell_commands`.
 
 .. _ide_vscode_settings:
 
+Proxy Server Support
+--------------------
+
+There 2 options how to configure a proxy server:
+
+1. Declare ``HTTP_PROXY`` and ``HTTPS_PROXY`` system environment variables (
+   ``HTTP_PROXY=http://user:pass@10.10.1.10:3128/``, etc.)
+2. Open `VSCode Settings <https://code.visualstudio.com/docs/getstarted/settings>`__
+   and search for "Proxy". Please set "Http: Proxy" and disable
+   "Http: Proxy String SSL".
+
 Settings
 --------
 
-`How to configure VSCode settings? <https://code.visualstudio.com/docs/getstarted/settings>`_
+`How to configure VSCode settings? <https://code.visualstudio.com/docs/getstarted/settings>`__
 
 ``platformio-ide.activateOnlyOnPlatformIOProject``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

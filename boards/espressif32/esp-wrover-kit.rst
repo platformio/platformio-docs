@@ -69,6 +69,7 @@ Uploading
 Espressif ESP-WROVER-KIT supports the next uploading protocols:
 
 * ``esp-prog``
+* ``espota``
 * ``esptool``
 * ``ftdi``
 * ``iot-bus-jtag``

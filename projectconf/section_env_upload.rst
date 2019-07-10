@@ -12,7 +12,7 @@
 .. _projectconf_section_env_upload:
 
 Upload options
-~~~~~~~~~~~~~~
+--------------
 
 .. contents::
     :local:
@@ -21,6 +21,8 @@ Upload options
 
 ``upload_port``
 ^^^^^^^^^^^^^^^
+
+Type: ``String (Pattern)`` | Multiple: ``No``
 
 This option is used by "uploader" tool when sending firmware to board via
 ``upload_port``. For example,
@@ -35,9 +37,9 @@ This option is used by "uploader" tool when sending firmware to board via
 If ``upload_port`` isn't specified, then *PlatformIO* will try to detect it
 automatically.
 
-To print all available serial ports use :ref:`cmd_device_list` command.
+To print all available serial ports please use :ref:`cmd_device_list` command.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_UPLOAD_PORT`.
 
 Please note that you can use Unix shell-style wildcards:
@@ -78,6 +80,8 @@ Please note that you can use Unix shell-style wildcards:
 ``upload_protocol``
 ^^^^^^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``No``
+
 A protocol that "uploader" tool uses to talk to a board. Please check
 :ref:`boards` for supported uploading protocols by your board.
 
@@ -85,6 +89,8 @@ A protocol that "uploader" tool uses to talk to a board. Please check
 
 ``upload_speed``
 ^^^^^^^^^^^^^^^^
+
+Type: ``Integer`` | Multiple: ``No``
 
 A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
 which "uploader" tool uses when sending firmware to board.
@@ -94,11 +100,13 @@ which "uploader" tool uses when sending firmware to board.
 ``upload_flags``
 ^^^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``Yes``
+
 Extra flags for uploader. Will be added to the end of uploader command. If you
 need to override uploader command or base flags please use
 :ref:`projectconf_extra_scripts`.
 
-This option can be set by global environment variable
+This option can also be set by global environment variable
 :envvar:`PLATFORMIO_UPLOAD_FLAGS`.
 
 **Example**
@@ -125,5 +133,87 @@ Please specify each flag/option in a new line starting with minimum 2 spaces.
 ``upload_resetmethod``
 ^^^^^^^^^^^^^^^^^^^^^^
 
+Type: ``String`` | Multiple: ``No``
+
 Specify reset method for "uploader" tool. This option isn't available for all
 development platforms. The only :ref:`platform_espressif8266` supports it.
+
+.. _projectconf_upload_command:
+
+``upload_command``
+^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.0
+
+Type: ``String`` | Multiple: ``No``
+
+Override default :ref:`platforms` upload command with a custom. You can pass a full
+upload command with arguments and options or mix with :ref:`projectconf_upload_flags`.
+
+Default upload commands are declared in ``build/main.py`` script file of
+:ref:`platforms`. See a list with open source
+:ref:`platforms` => https://github.com/topics/platformio-platform
+
+.. note::
+  Please note that you can use build variables in ``upload_command``, such as
+  PlatformIO project folders and other runtime configuration. A list with
+  build variables are available by running
+  ``platformio run --target envdump`` command.
+
+**Examples**
+
+1.  Override default upload command but handle pre-uploading actions (looking
+    for serial port, extra image preparation, etc.). Normally, the
+    pre-configured upload options will be stored in ``$UPLOADERFLAGS`` build
+    variable. A classic default upload command for :ref:`platforms` may look as
+    ``some-flash-bin-tool $UPLOADERFLAGS $SOURCE``, where
+    ``$SOURCE`` will be replaced by a real program/firmware binary.
+
+    ``$PROJECTPACKAGES_DIR`` build variable points to :ref:`projectconf_pio_packages_dir`.
+
+    .. code-block:: ini
+
+        [env:program_via_AVR_ISP]
+        platform = atmelavr
+        framework = arduino
+        board = uno
+        upload_flags =
+            -C
+            $PROJECTPACKAGES_DIR/tool-avrdude/avrdude.conf
+            -p
+            atmega328p
+            -P
+            $UPLOAD_PORT
+            -b
+            115200
+            -c
+            stk500v1
+        upload_command = avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i
+
+2.  Override default upload command and skip pre-uploading actions.
+
+    .. code-block:: ini
+
+        [env:program_via_usbasp]
+        platform = atmelavr
+        framework = arduino
+        board = uno
+        upload_flags =
+            -C
+            $PROJECTPACKAGES_DIR/tool-avrdude/avrdude.conf
+            -p
+            atmega328p
+            -Pusb
+            -c
+            stk500v1
+        upload_command = avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i
+
+
+        ; Use ST-util for flashing
+        ; https://github.com/texane/stlink
+
+        [env:custom_st_flash]
+        platform = ststm32
+        framework = stm32cube
+        board = bluepill_f103c6
+        upload_command = $PROJECTPACKAGES_DIR/tool-stlink/st-flash write $SOURCE 0x8000000

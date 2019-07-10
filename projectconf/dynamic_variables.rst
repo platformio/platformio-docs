@@ -14,37 +14,41 @@
 Dynamic variables
 -----------------
 
-.. versionadded:: 3.1
-
-Dynamic variables/templates are useful when you have common configuration data
-between build environments. For examples, common :ref:`projectconf_build_flags`
-or project dependencies :ref:`projectconf_lib_deps`.
+Dynamic variables (interpolations) are useful when you have a custom
+configuration data between build environments. For examples, extra
+:ref:`projectconf_build_flags` or project dependencies :ref:`projectconf_lib_deps`.
 
 Each variable should have a next format: ``${<section>.<option>}``, where
 ``<section>`` is a value from ``[<section>]`` group, and ``<option>`` is a
 first item from pair ``<option> = value``.
 
 You can inject system environment variable using ``sysenv`` as a ``section``.
-For example, ``${sysenv.HOME}``, etc.
+For example, ``${sysenv.HOME}``.
 
 * Variable can be applied only for the option's value
 * Multiple variables are allowed
-* The ``platformio`` and ``env`` sections are reserved and could not be used
-  as a custom section. Some good section names might be ``common`` or ``global``.
+* The :ref:`projectconf_section_platformio` and :ref:`projectconf_section_env`
+  sections are reserved and could not be used as a custom section. Some good
+  section names might be ``extra`` or ``custom``.
+
+.. note::
+    If you need to **share common configuration options** between all build
+    environments, please take a look at **"Global scope"** in
+    :ref:`projectconf_section_env`.
 
 Example:
 
 .. code-block:: ini
 
-    [platformio]
+    [env]
     ; Unix
     lib_extra_dirs = ${sysenv.HOME}/Documents/Arduino/libraries
     ; Windows
     lib_extra_dirs = ${sysenv.HOMEDRIVE}${sysenv.HOMEPATH}\Documents\Arduino\libraries
 
     ; You MUST inject these options into [env:] section
-    ; using ${common.***} (see below)
-    [common]
+    ; using ${extra.***} (see below)
+    [extra]
     build_flags = -D VERSION=1.2.3 -D DEBUG=1
     lib_deps_builtin =
       SPI
@@ -55,18 +59,18 @@ Example:
     platform = atmelavr
     framework = arduino
     board = uno
-    build_flags = ${common.build_flags}
+    build_flags = ${extra.build_flags}
     lib_deps =
-      ${common.lib_deps_builtin}
-      ${common.lib_deps_external}
+      ${extra.lib_deps_builtin}
+      ${extra.lib_deps_external}
 
     [env:nodemcuv2]
     platform = espressif8266
     framework = arduino
     board = nodemcuv2
-    build_flags = ${common.build_flags} -DSSID_NAME=HELLO -DSSID_PASWORD=WORLD
+    build_flags = ${extra.build_flags} -DSSID_NAME=HELLO -DSSID_PASWORD=WORLD
     lib_deps =
-      ${common.lib_deps_builtin}
-      ${common.lib_deps_external}
+      ${extra.lib_deps_builtin}
+      ${extra.lib_deps_external}
       PubSubClient@2.6
       OneWire

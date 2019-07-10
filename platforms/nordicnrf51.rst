@@ -82,7 +82,7 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_nordicnrf51_bbcmicrobit_b`
+    * - :ref:`board_nordicnrf51_calliope_mini`
       - NRF51822
       - 16MHz
       - 256KB
@@ -102,7 +102,7 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 128KB
       - 16KB
-    * - :ref:`board_nordicnrf51_nrf51_dk`
+    * - :ref:`board_nordicnrf51_nrf51_beacon`
       - NRF51822
       - 32MHz
       - 256KB
@@ -117,6 +117,11 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 128KB
       - 16KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - NRF51822
       - 16MHz
@@ -202,7 +207,7 @@ Please click on board name for the further details.
       - 32KB
     * - :ref:`board_nordicnrf51_ng_beacon`
       - NRF51822
-      - 32MHz
+      - 16MHz
       - 256KB
       - 32KB
 
@@ -324,12 +329,6 @@ BBC
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_nordicnrf51_bbcmicrobit_b`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
 
 BluzDK
 ~~~~~~
@@ -349,6 +348,25 @@ BluzDK
       - 32MHz
       - 256KB
       - 32KB
+
+Calliope
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf51_calliope_mini`
+      - On-board
+      - NRF51822
+      - 16MHz
+      - 256KB
+      - 16KB
 
 Delta
 ~~~~~
@@ -406,7 +424,7 @@ Nordic
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_nrf51_dk`
+    * - :ref:`board_nordicnrf51_nrf51_beacon`
       - On-board
       - NRF51822
       - 32MHz
@@ -424,6 +442,12 @@ Nordic
       - 16MHz
       - 128KB
       - 16KB
+    * - :ref:`board_nordicnrf51_nrf51_dk`
+      - On-board
+      - NRF51822
+      - 32MHz
+      - 256KB
+      - 32KB
 
 OSHChip
 ~~~~~~~
@@ -578,7 +602,7 @@ ng-beacon
     * - :ref:`board_nordicnrf51_ng_beacon`
       - External
       - NRF51822
-      - 32MHz
+      - 16MHz
       - 256KB
       - 32KB
 

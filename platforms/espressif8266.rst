@@ -93,11 +93,11 @@ Packages
     * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
       - Simba Framework
 
-    * - `tool-espotapy <https://github.com/esp8266/Arduino/blob/master/tools/espota.py?utm_source=platformio&utm_medium=docs>`__
-      - ESP8266 OTA utility
-
     * - `tool-esptool <https://github.com/igrr/esptool-ck?utm_source=platformio&utm_medium=docs>`__
       - esptool-ck
+
+    * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio&utm_medium=docs>`__
+      - ESP8266 and ESP32 serial bootloader utility
 
     * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio&utm_medium=docs>`__
       - Tool to build and unpack SPIFFS images

@@ -35,6 +35,7 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 * `arduino-ble-led <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-ble-led?utm_source=platformio&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
 * `arduino-bluefruit-bleuart <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-bluefruit-bleuart?utm_source=platformio&utm_medium=docs>`_
+* `arduino-nina-b1-generic-example <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-nina-b1-generic-example?utm_source=platformio&utm_medium=docs>`_
 * `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-ble-thermometer?utm_source=platformio&utm_medium=docs>`_
 * `mbed-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
@@ -144,6 +145,11 @@ Please click on board name for the further details.
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_bluey`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_sdt52832b`
       - NRF52832
       - 64MHz
       - 512KB
@@ -382,6 +388,25 @@ RedBearLab
       - 64KB
     * - :ref:`board_nordicnrf52_redbear_blend2`
       - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
+Sigma Delta Technologies
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_sdt52832b`
+      - External
       - NRF52832
       - 64MHz
       - 512KB

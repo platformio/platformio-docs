@@ -53,7 +53,7 @@ Options
 Process specified environments.
 
 You can also specify which environments should be processed by default using
-:ref:`projectconf_pio_env_default` option from :ref:`projectconf`.
+:ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
 
 
 .. option::
@@ -91,7 +91,7 @@ to current working directory (``CWD``).
 
 Shows detailed information when processing environments.
 
-This option can be set globally using :ref:`setting_force_verbose` setting
+This option can also be set globally using :ref:`setting_force_verbose` setting
 or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 
 .. option::
@@ -126,41 +126,41 @@ Example
     Collected 25 compatible libraries
     Looking for dependencies...
     Project does not have dependencies
-    Compiling .pioenvs/uno/src/main.o
-    Archiving .pioenvs/uno/libFrameworkArduinoVariant.a
-    Indexing .pioenvs/uno/libFrameworkArduinoVariant.a
-    Compiling .pioenvs/uno/FrameworkArduino/CDC.o
-    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial.o
-    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial0.o
-    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial1.o
-    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial2.o
-    Compiling .pioenvs/uno/FrameworkArduino/HardwareSerial3.o
-    Compiling .pioenvs/uno/FrameworkArduino/IPAddress.o
-    Compiling .pioenvs/uno/FrameworkArduino/PluggableUSB.o
-    Compiling .pioenvs/uno/FrameworkArduino/Print.o
-    Compiling .pioenvs/uno/FrameworkArduino/Stream.o
-    Compiling .pioenvs/uno/FrameworkArduino/Tone.o
-    Compiling .pioenvs/uno/FrameworkArduino/USBCore.o
-    Compiling .pioenvs/uno/FrameworkArduino/WInterrupts.o
-    Compiling .pioenvs/uno/FrameworkArduino/WMath.o
-    Compiling .pioenvs/uno/FrameworkArduino/WString.o
-    Compiling .pioenvs/uno/FrameworkArduino/_wiring_pulse.o
-    Compiling .pioenvs/uno/FrameworkArduino/abi.o
-    Compiling .pioenvs/uno/FrameworkArduino/hooks.o
-    Compiling .pioenvs/uno/FrameworkArduino/main.o
-    Compiling .pioenvs/uno/FrameworkArduino/new.o
-    Compiling .pioenvs/uno/FrameworkArduino/wiring.o
-    Compiling .pioenvs/uno/FrameworkArduino/wiring_analog.o
-    Compiling .pioenvs/uno/FrameworkArduino/wiring_digital.o
-    Compiling .pioenvs/uno/FrameworkArduino/wiring_pulse.o
-    Compiling .pioenvs/uno/FrameworkArduino/wiring_shift.o
-    Archiving .pioenvs/uno/libFrameworkArduino.a
-    Indexing .pioenvs/uno/libFrameworkArduino.a
-    Linking .pioenvs/uno/firmware.elf
+    Compiling .pio/build/uno/src/main.o
+    Archiving .pio/build/uno/libFrameworkArduinoVariant.a
+    Indexing .pio/build/uno/libFrameworkArduinoVariant.a
+    Compiling .pio/build/uno/FrameworkArduino/CDC.o
+    Compiling .pio/build/uno/FrameworkArduino/HardwareSerial.o
+    Compiling .pio/build/uno/FrameworkArduino/HardwareSerial0.o
+    Compiling .pio/build/uno/FrameworkArduino/HardwareSerial1.o
+    Compiling .pio/build/uno/FrameworkArduino/HardwareSerial2.o
+    Compiling .pio/build/uno/FrameworkArduino/HardwareSerial3.o
+    Compiling .pio/build/uno/FrameworkArduino/IPAddress.o
+    Compiling .pio/build/uno/FrameworkArduino/PluggableUSB.o
+    Compiling .pio/build/uno/FrameworkArduino/Print.o
+    Compiling .pio/build/uno/FrameworkArduino/Stream.o
+    Compiling .pio/build/uno/FrameworkArduino/Tone.o
+    Compiling .pio/build/uno/FrameworkArduino/USBCore.o
+    Compiling .pio/build/uno/FrameworkArduino/WInterrupts.o
+    Compiling .pio/build/uno/FrameworkArduino/WMath.o
+    Compiling .pio/build/uno/FrameworkArduino/WString.o
+    Compiling .pio/build/uno/FrameworkArduino/_wiring_pulse.o
+    Compiling .pio/build/uno/FrameworkArduino/abi.o
+    Compiling .pio/build/uno/FrameworkArduino/hooks.o
+    Compiling .pio/build/uno/FrameworkArduino/main.o
+    Compiling .pio/build/uno/FrameworkArduino/new.o
+    Compiling .pio/build/uno/FrameworkArduino/wiring.o
+    Compiling .pio/build/uno/FrameworkArduino/wiring_analog.o
+    Compiling .pio/build/uno/FrameworkArduino/wiring_digital.o
+    Compiling .pio/build/uno/FrameworkArduino/wiring_pulse.o
+    Compiling .pio/build/uno/FrameworkArduino/wiring_shift.o
+    Archiving .pio/build/uno/libFrameworkArduino.a
+    Indexing .pio/build/uno/libFrameworkArduino.a
+    Linking .pio/build/uno/firmware.elf
     Checking program size
-    Building .pioenvs/uno/firmware.hex
+    Building .pio/build/uno/firmware.hex
     text       data     bss     dec     hex filename
-    2574         48     168    2790     ae6 .pioenvs/uno/firmware.elf
+    2574         48     168    2790     ae6 .pio/build/uno/firmware.elf
     ========================= [SUCCESS] Took 10.01 seconds =======================
     ================================== [SUMMARY] =================================
     Environment nodemcuv2   [SKIP]
@@ -174,17 +174,17 @@ Example
     Verbose mode can be enabled via `-v, --verbose` option
     Looking for upload port...
     Auto-detected: /dev/cu.usbmodemFA1431
-    Uploading .pioenvs/uno/firmware.hex
+    Uploading .pio/build/uno/firmware.hex
     avrdude: AVR device initialized and ready to accept instructions
     Reading | ################################################## | 100% 0.00s
     avrdude: Device signature = 0x1e950f
-    avrdude: reading input file ".pioenvs/uno/firmware.hex"
+    avrdude: reading input file ".pio/build/uno/firmware.hex"
     avrdude: writing flash (2622 bytes):
     Writing | ################################################## | 100% 0.43s
     avrdude: 2622 bytes of flash written
-    avrdude: verifying flash memory against .pioenvs/uno/firmware.hex:
-    avrdude: load data flash data from input file .pioenvs/uno/firmware.hex:
-    avrdude: input file .pioenvs/uno/firmware.hex contains 2622 bytes
+    avrdude: verifying flash memory against .pio/build/uno/firmware.hex:
+    avrdude: load data flash data from input file .pio/build/uno/firmware.hex:
+    avrdude: input file .pio/build/uno/firmware.hex contains 2622 bytes
     avrdude: reading on-chip flash data:
     Reading | ################################################## | 100% 0.34s
     avrdude: verifying ...

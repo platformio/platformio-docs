@@ -63,6 +63,26 @@ board manifest `microduino-core-esp32.json <https://github.com/platformio/platfo
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+
+Uploading
+---------
+Microduino Core ESP32 supports the next uploading protocols:
+
+* ``espota``
+* ``esptool``
+
+Default protocol is ``esptool``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:microduino-core-esp32]
+  platform = espressif32
+  board = microduino-core-esp32
+
+  upload_protocol = esptool
+
 Debugging
 ---------
 :ref:`piodebug` currently does not support Microduino Core ESP32 board.

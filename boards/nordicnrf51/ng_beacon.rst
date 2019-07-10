@@ -26,7 +26,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **Microcontroller**
     - NRF51822
   * - **Frequency**
-    - 32MHz
+    - 16MHz
   * - **Flash**
     - 256KB
   * - **RAM**
@@ -61,7 +61,7 @@ board manifest `ng_beacon.json <https://github.com/platformio/platform-nordicnrf
   board_build.mcu = nrf51822
 
   ; change MCU frequency
-  board_build.f_cpu = 32000000L
+  board_build.f_cpu = 16000000L
 
 
 Uploading

@@ -37,6 +37,16 @@ Atmel AVR
 .. toctree::
     :maxdepth: 1
         
+    atmelavr/ATMEGA168
+    atmelavr/ATMEGA168P
+    atmelavr/ATMEGA328
+    atmelavr/ATMEGA328P
+    atmelavr/atmega328pb
+    atmelavr/ATMEGA48
+    atmelavr/ATMEGA48P
+    atmelavr/ATMEGA8
+    atmelavr/ATMEGA88
+    atmelavr/ATMEGA88P
     atmelavr/bluefruitmicro
     atmelavr/circuitplay_classic
     atmelavr/feather328p
@@ -94,7 +104,6 @@ Atmel AVR
     atmelavr/yunmini
     atmelavr/at90pwm216
     atmelavr/at90pwm316
-    atmelavr/atmega328pb
     atmelavr/zumbt328
     atmelavr/raspduino
     atmelavr/controllino_maxi
@@ -228,9 +237,13 @@ Atmel SAM
     atmelsam/adafruit_itsybitsy_m4
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
+    atmelsam/adafruit_metro_m4_airliftlite
+    atmelsam/adafruit_pygamer_m4
+    atmelsam/adafruit_pyportal_m4
     atmelsam/adafruit_trellis_m4
     atmelsam/adafruit_trinket_m0
     atmelsam/adafruit_pirkey
+    atmelsam/adafruit_pybadge_m4
     atmelsam/due
     atmelsam/dueUSB
     atmelsam/mzeroUSB
@@ -252,8 +265,11 @@ Atmel SAM
     atmelsam/saml21_xpro_b
     atmelsam/digix
     atmelsam/current_ranger
+    atmelsam/mkrvidor4000
     atmelsam/macchina2
+    atmelsam/minitronics20
     atmelsam/moteino_zero
+    atmelsam/nano_33_iot
     atmelsam/sodaq_autonomo
     atmelsam/sodaq_explorer
     atmelsam/sodaq_one
@@ -261,8 +277,10 @@ Atmel SAM
     atmelsam/sodaq_sff
     atmelsam/sainSmartDue
     atmelsam/sainSmartDueUSB
+    atmelsam/seeeduino_lorawan
     atmelsam/sparkfun_samd21_dev_usb
     atmelsam/sparkfun_samd21_mini_usb
+    atmelsam/tuinozero96
 
 Espressif 32
 ------------
@@ -297,6 +315,7 @@ Espressif 32
     espressif32/intorobot
     espressif32/m5stack-core-esp32
     espressif32/m5stack-fire
+    espressif32/m5stack-grey
     espressif32/m5stick-c
     espressif32/mhetesp32devkit
     espressif32/mhetesp32minikit
@@ -433,6 +452,17 @@ Intel MCS-51 (8051)
     intel_mcs51/stc15w204s
     intel_mcs51/stc15w404as
     intel_mcs51/stc15w408as
+    intel_mcs51/stc89c52rc
+
+Kendryte K210
+-------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    kendryte210/sipeed-maix-bit
+    kendryte210/sipeed-maix-go
+    kendryte210/sipeed-maix-one
 
 Lattice iCE40
 -------------
@@ -473,6 +503,8 @@ Maxim 32
     maxim32/max32620hsp
     maxim32/max32630fthr
     maxim32/maxwsnenv
+    maxim32/sdt32620b
+    maxim32/sdt32625b
 
 Microchip PIC32
 ---------------
@@ -516,14 +548,15 @@ Nordic nRF51
     :maxdepth: 1
         
     nordicnrf51/bbcmicrobit
-    nordicnrf51/bbcmicrobit_b
     nordicnrf51/bluz_dk
+    nordicnrf51/calliope_mini
     nordicnrf51/dfcm_nnn40
     nordicnrf51/delta_dfcm_nnn50
     nordicnrf51/wallbot_ble
-    nordicnrf51/nrf51_dk
+    nordicnrf51/nrf51_beacon
     nordicnrf51/nrf51_dongle
     nordicnrf51/nrf51_mkit
+    nordicnrf51/nrf51_dk
     nordicnrf51/oshchip
     nordicnrf51/redBearLabBLENano
     nordicnrf51/redBearLab
@@ -553,6 +586,7 @@ Nordic nRF52
     nordicnrf52/nrf52840_dk_adafruit
     nordicnrf52/redbear_blenano2
     nordicnrf52/redbear_blend2
+    nordicnrf52/sdt52832b
     nordicnrf52/stct_nrf52_minidev
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_evk_nina_b1
@@ -596,16 +630,6 @@ NXP LPC
     nxplpc/ubloxc027
     nxplpc/lpc11u35_y5_mbug
 
-RISC-V
-------
-
-.. toctree::
-    :maxdepth: 1
-        
-    riscv/coreplexip-e51-arty
-    riscv/coreplexip-e31-arty
-    riscv/freedom-e300-hifive1
-
 RISC-V GAP
 ----------
 
@@ -621,6 +645,17 @@ Samsung ARTIK
     :maxdepth: 1
         
     samsung_artik/artik_053
+
+SiFive
+------
+
+.. toctree::
+    :maxdepth: 1
+        
+    sifive/e310-arty
+    sifive/hifive-unleashed
+    sifive/hifive1
+    sifive/hifive1-revb
 
 Silicon Labs EFM32
 ------------------
@@ -664,6 +699,7 @@ ST STM32
     ststm32/elmo_f411re
     ststm32/diymore_f407vgt
     ststm32/fk407m1
+    ststm32/rhombio_l476dmw1k
     ststm32/malyanm200_f070cb
     ststm32/mts_dragonfly_f411re
     ststm32/malyanm200_f103cb
@@ -769,6 +805,7 @@ ST STM32
     ststm32/seeedArchMax
     ststm32/wio_3g
     ststm32/hy_tinystm103tb
+    ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211
     ststm32/ublox_c030_r410m
     ststm32/ublox_c030_u201

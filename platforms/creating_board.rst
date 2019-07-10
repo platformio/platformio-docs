@@ -70,7 +70,7 @@ The key fields:
 Installation
 ------------
 
-1. Create ``boards`` directory in :ref:`projectconf_pio_home_dir` if it
+1. Create ``boards`` directory in :ref:`projectconf_pio_core_dir` if it
    doesn't exist.
 2. Create ``myboard.json`` file in this ``boards`` directory.
 3. Search available boards via :ref:`cmd_boards` command. You should see
