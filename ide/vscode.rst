@@ -396,10 +396,21 @@ Please navigate to PIO Core :ref:`piocore_install_shell_commands`.
 
 .. _ide_vscode_settings:
 
+Proxy Server Support
+--------------------
+
+There 2 options how to configure a proxy server:
+
+1. Declare ``HTTP_PROXY`` and ``HTTPS_PROXY`` system environment variables (
+   ``HTTP_PROXY=http://user:pass@10.10.1.10:3128/``, etc.)
+2. Open `VSCode Settings <https://code.visualstudio.com/docs/getstarted/settings>`__
+   and search for "Proxy". Please set "Http: Proxy" and disable
+   "Http: Proxy String SSL".
+
 Settings
 --------
 
-`How to configure VSCode settings? <https://code.visualstudio.com/docs/getstarted/settings>`_
+`How to configure VSCode settings? <https://code.visualstudio.com/docs/getstarted/settings>`__
 
 ``platformio-ide.activateOnlyOnPlatformIOProject``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
