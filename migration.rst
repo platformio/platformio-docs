@@ -430,7 +430,7 @@ a different configuration (new build flags, etc):
 You can also use the same :ref:`projectconf_pio_build_cache_dir` between
 different projects if they use the same :ref:`platforms` and :ref:`frameworks`.
 
-What is removed or changed
+What is changed or removed
 --------------------------
 
 Command Line Interface
@@ -443,6 +443,8 @@ The following commands have been changed in v4.0.
 
     * - Command
       - Description
+    * - :ref:`cmd_run`
+      - Added :option:`platformio run --jobs` option
     * - :ref:`cmd_update`
       - Replaced ``-c, --only-check`` with :option:`platformio update --dry-run`
     * - :ref:`cmd_lib_update`

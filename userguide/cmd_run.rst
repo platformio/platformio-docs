@@ -103,6 +103,13 @@ to current working directory (``CWD``).
 Process project with a custom :ref:`projectconf`.
 
 .. option::
+    -j, --jobs
+
+.. versionadded:: 4.0
+
+Control a number of parallel build jobs. Default is a number of CPUs in a system.
+
+.. option::
     -s, --silent
 
 Suppress progress reporting
