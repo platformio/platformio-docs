@@ -221,6 +221,9 @@ Frameworks
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
 
+    * - :ref:`framework_kendryte-freertos-sdk`
+      - Kendryte SDK with FreeRTOS support
+
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
 
@@ -421,6 +424,13 @@ Boards
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_pygamer_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -2180,21 +2190,28 @@ Boards
       - 32KB
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB

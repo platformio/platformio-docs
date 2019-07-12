@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_kendryte210_sipeed-maix-bit:
+.. _board_kendryte210_sipeed-maixduino:
 
-Sipeed MAIX BiT
-===============
+Sipeed MAIXDUINO
+================
 
 .. contents::
 
@@ -38,24 +38,24 @@ Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dua
 Configuration
 -------------
 
-Please use ``sipeed-maix-bit`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sipeed-maixduino`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:sipeed-maix-bit]
+  [env:sipeed-maixduino]
   platform = kendryte210
-  board = sipeed-maix-bit
+  board = sipeed-maixduino
 
-You can override default Sipeed MAIX BiT settings per build environment using
+You can override default Sipeed MAIXDUINO settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `sipeed-maix-bit.json <https://github.com/sipeed/platform-kendryte210/blob/master/boards/sipeed-maix-bit.json>`_. For example,
+board manifest `sipeed-maixduino.json <https://github.com/sipeed/platform-kendryte210/blob/master/boards/sipeed-maixduino.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:sipeed-maix-bit]
+  [env:sipeed-maixduino]
   platform = kendryte210
-  board = sipeed-maix-bit
+  board = sipeed-maixduino
 
   ; change microcontroller
   board_build.mcu = K210
@@ -66,7 +66,7 @@ board manifest `sipeed-maix-bit.json <https://github.com/sipeed/platform-kendryt
 
 Uploading
 ---------
-Sipeed MAIX BiT supports the next uploading protocols:
+Sipeed MAIXDUINO supports the next uploading protocols:
 
 * ``iot-bus-jtag``
 * ``jlink``
@@ -84,9 +84,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:sipeed-maix-bit]
+  [env:sipeed-maixduino]
   platform = kendryte210
-  board = sipeed-maix-bit
+  board = sipeed-maixduino
 
   upload_protocol = kflash
 
@@ -103,7 +103,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Sipeed MAIX BiT does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Sipeed MAIXDUINO does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

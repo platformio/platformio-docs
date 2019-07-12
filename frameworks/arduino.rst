@@ -389,24 +389,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
     * - :ref:`board_infineonxmc_xmc1100_boot_kit`
       - :ref:`platform_infineonxmc`
       - XMC1100
@@ -582,6 +564,12 @@ Please click on board name for the further details.
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_pygamer_m4`
       - :ref:`platform_atmelsam`
       - SAMD51J19A
@@ -1194,6 +1182,30 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_kendryte210_sipeed-maix-bit`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-go`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_espressif32_esp32thing`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1696,6 +1708,13 @@ Adafruit
       - 16MHz
       - 28KB
       - 2KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_pygamer_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -5709,21 +5728,28 @@ Sipeed
       - RAM
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB

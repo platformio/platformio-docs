@@ -63,6 +63,33 @@ board manifest `sipeed-maix-go.json <https://github.com/sipeed/platform-kendryte
   ; change MCU frequency
   board_build.f_cpu = 400000000L
 
+
+Uploading
+---------
+Sipeed MAIX GO supports the next uploading protocols:
+
+* ``iot-bus-jtag``
+* ``jlink``
+* ``kflash``
+* ``minimodule``
+* ``olimex-arm-usb-ocd``
+* ``olimex-arm-usb-ocd-h``
+* ``olimex-arm-usb-tiny-h``
+* ``olimex-jtag-tiny``
+* ``tumpa``
+
+Default protocol is ``kflash``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:sipeed-maix-go]
+  platform = kendryte210
+  board = sipeed-maix-go
+
+  upload_protocol = kflash
+
 Debugging
 ---------
 
@@ -76,7 +103,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Sipeed MAIX GO has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Sipeed MAIX GO does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -84,11 +111,29 @@ Sipeed MAIX GO has on-board debug probe and **IS READY** for debugging. You don'
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_ftdi`
-    - Yes
+  * - :ref:`debugging_tool_iot-bus-jtag`
+    - 
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - Yes
+    - 
+    - 
+  * - :ref:`debugging_tool_minimodule`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-jtag-tiny`
+    - 
+    - 
+  * - :ref:`debugging_tool_tumpa`
+    - 
     - 
 
 Frameworks
@@ -104,3 +149,6 @@ Frameworks
 
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
+
+    * - :ref:`framework_kendryte-freertos-sdk`
+      - Kendryte SDK with FreeRTOS support

@@ -32,6 +32,7 @@ Examples
 Examples are listed from `Kendryte K210 development platform repository <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
 * `arduino-blink <https://github.com/sipeed/platform-kendryte210/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `kendryte-freertos-sdk_hello <https://github.com/sipeed/platform-kendryte210/tree/master/examples/kendryte-freertos-sdk_hello?utm_source=platformio&utm_medium=docs>`_
 * `kendryte-standalone-sdk_hello <https://github.com/sipeed/platform-kendryte210/tree/master/examples/kendryte-standalone-sdk_hello?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
@@ -56,11 +57,12 @@ You can switch between debugging :ref:`debugging_tools` using
     Please click on compatible debug tool below for the further instructions.
 
 
-On-Board Debug Tools
+External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug probe and **ARE READY** for debugging!
-You do not need to use/buy external debug probe.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
 
 
 .. list-table::
@@ -81,7 +83,12 @@ You do not need to use/buy external debug probe.
       - 400MHz
       - 16MB
       - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
       - K210
       - 400MHz
       - 16MB
@@ -129,8 +136,11 @@ Packages
     * - Name
       - Description
 
+    * - `framework-kendryte-freertos-sdk <https://github.com/kendryte/kendryte-freertos-sdk?utm_source=platformio&utm_medium=docs>`__
+      - Kendryte SDK with FreeRTOS support
+
     * - `framework-kendryte-standalone-sdk <https://github.com/kendryte/kendryte-standalone-sdk?utm_source=platformio&utm_medium=docs>`__
-      - This SDK is for Kendryte K210 without OS support
+      - Kendryte standalone SDK without OS support
 
     * - `framework-maixduino <https://github.com/sipeed/Maixduino?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (K210 Core)
@@ -138,8 +148,8 @@ Packages
     * - `tool-kflash-kendryte210 <https://github.com/kendryte/kflash.py?utm_source=platformio&utm_medium=docs>`__
       - kflash, A Python-based Kendryte K210 UART ISP Utility
 
-    * - `tool-openocd-kendryte210 <https://github.com/kendryte/openocd-kendryte?utm_source=platformio&utm_medium=docs>`__
-      - OpenOCD for RISC-V kendryte 210
+    * - `tool-openocd-kendryte <https://github.com/kendryte/openocd-kendryte?utm_source=platformio&utm_medium=docs>`__
+      - OpenOCD for RISC-V Kendryte
 
     * - `toolchain-kendryte210 <https://github.com/kendryte/kendryte-gnu-toolchain?utm_source=platformio&utm_medium=docs>`__
       - RISC-V GCC toolchain for Kendryte 210
@@ -172,6 +182,9 @@ Frameworks
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
 
+    * - :ref:`framework_kendryte-freertos-sdk`
+      - Kendryte SDK with FreeRTOS support
+
 Boards
 ------
 
@@ -194,19 +207,25 @@ Sipeed
       - Flash
       - RAM
     * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
-      - On-board
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - External
       - K210
       - 400MHz
       - 16MB

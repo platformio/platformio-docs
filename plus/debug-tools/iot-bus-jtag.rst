@@ -102,6 +102,9 @@ Platforms
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
+    * - :ref:`platform_kendryte210`
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
+
 Frameworks
 ----------
 .. list-table::
@@ -115,6 +118,12 @@ Frameworks
 
     * - :ref:`framework_espidf`
       - Espressif IoT Development Framework. Official development framework for ESP32.
+
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support
+
+    * - :ref:`framework_kendryte-freertos-sdk`
+      - Kendryte SDK with FreeRTOS support
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
@@ -325,6 +334,34 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_kendryte210_sipeed-maix-bit`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-go`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_espressif32_esp32thing`
       - :ref:`platform_espressif32`
       - External

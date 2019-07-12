@@ -9,17 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _framework_kendryte-standalone-sdk:
+.. _framework_kendryte-freertos-sdk:
 
-Kendryte Standalone SDK
-=======================
+Kendryte FreeRTOS SDK
+=====================
 
 :Configuration:
-  :ref:`projectconf_env_framework` = ``kendryte-standalone-sdk``
+  :ref:`projectconf_env_framework` = ``kendryte-freertos-sdk``
 
-Kendryte Standalone SDK without OS support
+Kendryte SDK with FreeRTOS support
 
-For more detailed information please visit `vendor site <https://github.com/kendryte/kendryte-standalone-sdk?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/kendryte/kendryte-freertos-sdk?utm_source=platformio&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -94,7 +94,7 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `Kendryte Standalone SDK for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Kendryte FreeRTOS SDK for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
