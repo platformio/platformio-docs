@@ -238,6 +238,7 @@ Atmel SAM
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
     atmelsam/adafruit_metro_m4_airliftlite
+    atmelsam/adafruit_pygamer_advance_m4
     atmelsam/adafruit_pygamer_m4
     atmelsam/adafruit_pyportal_m4
     atmelsam/adafruit_trellis_m4

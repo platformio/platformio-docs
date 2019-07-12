@@ -107,10 +107,10 @@ STM32F4Stamp F405 does not have on-board debug probe and **IS NOT READY** for de
     - Default
   * - :ref:`debugging_tool_jlink`
     - 
-    - Yes
+    - 
   * - :ref:`debugging_tool_stlink`
     - 
-    - 
+    - Yes
 
 Frameworks
 ----------

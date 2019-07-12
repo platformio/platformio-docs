@@ -107,10 +107,10 @@ STM32F407VG (192k RAM. 1024k Flash) does not have on-board debug probe and **IS 
     - Default
   * - :ref:`debugging_tool_jlink`
     - 
-    - Yes
+    - 
   * - :ref:`debugging_tool_stlink`
     - 
-    - 
+    - Yes
 
 Frameworks
 ----------
