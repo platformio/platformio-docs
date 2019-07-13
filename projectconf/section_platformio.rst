@@ -142,13 +142,18 @@ of them. Please note that you can use Unix shell-style wildcards:
       extra_envs.ini
       extra_debug.ini
 
+    ; Global data for all [env:***]
+    [env]
+    platform = espressif32
+    framework = espidf
+
+    ; Custom data group
+    ; can be use in [env:***] via ${common.***}
     [common]
     debug_flags = -D RELEASE
     lib_flags = -lc -lm
 
     [env:esp-wrover-kit]
-    platform = espressif32
-    framework = espidf
     board = esp-wrover-kit
     build_flags = ${common.debug_flags}
 
@@ -158,8 +163,6 @@ of them. Please note that you can use Unix shell-style wildcards:
 .. code-block:: ini
 
     [env:esp32dev]
-    platform = espressif32
-    framework = espidf
     board = esp32dev
     build_flags = ${common.lib_flags} ${common.debug_flags}
 
