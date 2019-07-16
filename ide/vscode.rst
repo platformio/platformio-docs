@@ -405,7 +405,7 @@ There 2 options how to configure a proxy server:
    ``HTTP_PROXY=http://user:pass@10.10.1.10:3128/``, etc.)
 2. Open `VSCode Settings <https://code.visualstudio.com/docs/getstarted/settings>`__
    and search for "Proxy". Please set "Http: Proxy" and disable
-   "Http: Proxy String SSL".
+   "Http: Proxy Strict SSL".
 
 Settings
 --------
