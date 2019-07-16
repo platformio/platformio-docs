@@ -226,9 +226,9 @@ Allows one to override setting :ref:`setting_check_platforms_interval`.
 
 Allows one to override setting :ref:`setting_enable_cache`.
 
-.. envvar:: PLATFORMIO_SETTING_ENABLE_SSL
+.. envvar:: PLATFORMIO_SETTING_STRICT_SSL
 
-Allows one to override setting :ref:`setting_enable_ssl`.
+Allows one to override setting :ref:`setting_strict_ssl`.
 
 .. envvar:: PLATFORMIO_SETTING_ENABLE_TELEMETRY
 
