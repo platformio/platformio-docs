@@ -69,7 +69,7 @@ Example:
 .. code-block:: ini
 
     [platformio]
-    env_default = uno, nodemcu
+    default_envs = uno, nodemcu
 
     [env:uno]
     platform = atmelavr
