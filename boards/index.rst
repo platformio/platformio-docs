@@ -450,6 +450,7 @@ Intel MCS-51 (8051)
     intel_mcs51/n79e854
     intel_mcs51/n79e855
     intel_mcs51/stc15f204ea
+    intel_mcs51/stc15f2k60s2
     intel_mcs51/stc15w204s
     intel_mcs51/stc15w404as
     intel_mcs51/stc15w408as
@@ -462,6 +463,7 @@ Kendryte K210
     :maxdepth: 1
         
     kendryte210/sipeed-maix-bit
+    kendryte210/sipeed-maix-bit-mic
     kendryte210/sipeed-maix-go
     kendryte210/sipeed-maix-one-dock
     kendryte210/sipeed-maixduino
@@ -680,9 +682,11 @@ ST STM32
     :maxdepth: 1
         
     ststm32/1bitsy_stm32f415rgt
+    ststm32/disco_f723ie
     ststm32/armed_v1
     ststm32/rumba32_f446ve
     ststm32/remram_v1
+    ststm32/st3dp001_eval
     ststm32/b96b_f446ve
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
@@ -693,6 +697,7 @@ ST STM32
     ststm32/black_f407ze
     ststm32/blackpill_f103c8
     ststm32/blackpill_f103c8_128
+    ststm32/robotdyn_blackpill_f303cc
     ststm32/blue_f407ve_mini
     ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
@@ -717,6 +722,8 @@ ST STM32
     ststm32/xdot_l151cc
     ststm32/netduino2plus
     ststm32/mote_l152rc
+    ststm32/nucleo_g071rb
+    ststm32/nucleo_wb55rg_p
     ststm32/rak811_tracker_32
     ststm32/rak811_tracker
     ststm32/cloud_jam
@@ -772,8 +779,8 @@ ST STM32
     ststm32/nucleo_l432kc
     ststm32/nucleo_l433rc_p
     ststm32/nucleo_l452re
-    ststm32/nucleo_l486rg
     ststm32/nucleo_l476rg
+    ststm32/nucleo_l486rg
     ststm32/nucleo_l496zg
     ststm32/nucleo_l496zg_p
     ststm32/nucleo_l4r5zi
@@ -804,9 +811,12 @@ ST STM32
     ststm32/genericSTM32F407VET6
     ststm32/genericSTM32F407VGT6
     ststm32/stm32f4stamp
+    ststm32/disco_f750n8
     ststm32/seeedArchMax
     ststm32/wio_3g
+    ststm32/sparky_v1
     ststm32/hy_tinystm103tb
+    ststm32/vake_v1
     ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211
     ststm32/ublox_c030_r410m

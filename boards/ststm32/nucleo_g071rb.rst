@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_l486rg:
+.. _board_ststm32_nucleo_g071rb:
 
-ST Nucleo L486RG
-================
+Nucleo G071RB
+=============
 
 .. contents::
 
@@ -24,49 +24,49 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L486RGT6
+    - STM32G071RBT6
   * - **Frequency**
-    - 80MHz
+    - 24MHz
   * - **Flash**
-    - 1MB
+    - 2MB
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-L486RG/?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-g071rb.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_l486rg`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_g071rb`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_l486rg]
+  [env:nucleo_g071rb]
   platform = ststm32
-  board = nucleo_l486rg
+  board = nucleo_g071rb
 
-You can override default ST Nucleo L486RG settings per build environment using
+You can override default Nucleo G071RB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_l486rg.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l486rg.json>`_. For example,
+board manifest `nucleo_g071rb.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_g071rb.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_l486rg]
+  [env:nucleo_g071rb]
   platform = ststm32
-  board = nucleo_l486rg
+  board = nucleo_g071rb
 
   ; change microcontroller
-  board_build.mcu = stm32l486rgt6
+  board_build.mcu = stm32g071rbt6
 
   ; change MCU frequency
-  board_build.f_cpu = 80000000L
+  board_build.f_cpu = 24000000L
 
 
 Uploading
 ---------
-ST Nucleo L486RG supports the next uploading protocols:
+Nucleo G071RB supports the next uploading protocols:
 
 * ``blackmagic``
 * ``jlink``
@@ -79,9 +79,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_l486rg]
+  [env:nucleo_g071rb]
   platform = ststm32
-  board = nucleo_l486rg
+  board = nucleo_g071rb
 
   upload_protocol = stlink
 
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L486RG has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Nucleo G071RB has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -124,8 +124,5 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
-
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.

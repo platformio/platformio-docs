@@ -166,6 +166,12 @@ STC
       - 11MHz
       - 4KB
       - 256B
+    * - :ref:`board_intel_mcs51_stc15f2k60s2`
+      - No
+      - STC15F2K60S2
+      - 6MHz
+      - 60KB
+      - 2KB
     * - :ref:`board_intel_mcs51_stc15w204s`
       - No
       - STC15W204S

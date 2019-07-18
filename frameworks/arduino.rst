@@ -71,6 +71,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -167,6 +173,18 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - :ref:`platform_ststm32`
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -720,6 +738,12 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -1188,6 +1212,12 @@ Please click on board name for the further details.
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
       - K210
@@ -1230,6 +1260,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1284,6 +1320,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -5146,6 +5188,27 @@ ReprapWorld
       - 256KB
       - 32KB
 
+RobotDyn
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 RoboticsBrno
 ~~~~~~~~~~~~
 
@@ -5264,6 +5327,13 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - External
@@ -5299,6 +5369,20 @@ ST
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
       - On-board
@@ -5733,6 +5817,13 @@ Sipeed
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
       - External
@@ -6014,6 +6105,27 @@ Taida Century
       - 512KB
       - 64KB
 
+TauLabs
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 Teensy
 ~~~~~~
 
@@ -6244,6 +6356,27 @@ Unknown
       - 240MHz
       - 4MB
       - 320KB
+
+VAE
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
 
 WEMOS
 ~~~~~

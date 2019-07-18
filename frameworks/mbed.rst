@@ -653,15 +653,15 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
+    * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
-      - STM32L476RGT6
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -2306,17 +2306,17 @@ ST
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
+    * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32L476RGT6
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB

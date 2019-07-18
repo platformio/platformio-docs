@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_kendryte210_sipeed-maix-one-dock:
+.. _board_kendryte210_sipeed-maix-bit-mic:
 
-Sipeed MAIX ONE DOCK
-====================
+Sipeed MAIX BiT with Mic
+========================
 
 .. contents::
 
@@ -38,24 +38,24 @@ Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dua
 Configuration
 -------------
 
-Please use ``sipeed-maix-one-dock`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sipeed-maix-bit-mic`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:sipeed-maix-one-dock]
+  [env:sipeed-maix-bit-mic]
   platform = kendryte210
-  board = sipeed-maix-one-dock
+  board = sipeed-maix-bit-mic
 
-You can override default Sipeed MAIX ONE DOCK settings per build environment using
+You can override default Sipeed MAIX BiT with Mic settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `sipeed-maix-one-dock.json <https://github.com/sipeed/platform-kendryte210/blob/master/boards/sipeed-maix-one-dock.json>`_. For example,
+board manifest `sipeed-maix-bit-mic.json <https://github.com/sipeed/platform-kendryte210/blob/master/boards/sipeed-maix-bit-mic.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:sipeed-maix-one-dock]
+  [env:sipeed-maix-bit-mic]
   platform = kendryte210
-  board = sipeed-maix-one-dock
+  board = sipeed-maix-bit-mic
 
   ; change microcontroller
   board_build.mcu = K210
@@ -66,7 +66,7 @@ board manifest `sipeed-maix-one-dock.json <https://github.com/sipeed/platform-ke
 
 Uploading
 ---------
-Sipeed MAIX ONE DOCK supports the next uploading protocols:
+Sipeed MAIX BiT with Mic supports the next uploading protocols:
 
 * ``iot-bus-jtag``
 * ``jlink``
@@ -85,9 +85,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:sipeed-maix-one-dock]
+  [env:sipeed-maix-bit-mic]
   platform = kendryte210
-  board = sipeed-maix-one-dock
+  board = sipeed-maix-bit-mic
 
   upload_protocol = kflash
 
@@ -104,7 +104,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Sipeed MAIX ONE DOCK does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Sipeed MAIX BiT with Mic does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_l486rg:
+.. _board_ststm32_nucleo_wb55rg_p:
 
-ST Nucleo L486RG
-================
+P-Nucleo WB55RG
+===============
 
 .. contents::
 
@@ -24,53 +24,52 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L486RGT6
+    - STM32WB55RG
   * - **Frequency**
-    - 80MHz
+    - 64MHz
   * - **Flash**
-    - 1MB
+    - 512KB
   * - **RAM**
-    - 128KB
+    - 192.00KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-L486RG/?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/p-nucleo-wb55.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_l486rg`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_wb55rg_p`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_l486rg]
+  [env:nucleo_wb55rg_p]
   platform = ststm32
-  board = nucleo_l486rg
+  board = nucleo_wb55rg_p
 
-You can override default ST Nucleo L486RG settings per build environment using
+You can override default P-Nucleo WB55RG settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_l486rg.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l486rg.json>`_. For example,
+board manifest `nucleo_wb55rg_p.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_wb55rg_p.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_l486rg]
+  [env:nucleo_wb55rg_p]
   platform = ststm32
-  board = nucleo_l486rg
+  board = nucleo_wb55rg_p
 
   ; change microcontroller
-  board_build.mcu = stm32l486rgt6
+  board_build.mcu = stm32wb55rg
 
   ; change MCU frequency
-  board_build.f_cpu = 80000000L
+  board_build.f_cpu = 64000000L
 
 
 Uploading
 ---------
-ST Nucleo L486RG supports the next uploading protocols:
+P-Nucleo WB55RG supports the next uploading protocols:
 
 * ``blackmagic``
 * ``jlink``
-* ``mbed``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -79,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_l486rg]
+  [env:nucleo_wb55rg_p]
   platform = ststm32
-  board = nucleo_l486rg
+  board = nucleo_wb55rg_p
 
   upload_protocol = stlink
 
@@ -98,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L486RG has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+P-Nucleo WB55RG has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -124,8 +123,5 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
-
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.

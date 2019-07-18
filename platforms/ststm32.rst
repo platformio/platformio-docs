@@ -43,6 +43,7 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `libopencm3-1bitsy <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-1bitsy?utm_source=platformio&utm_medium=docs>`_
 * `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-custom-target <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-custom-target?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
 * `mbed-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-filesystem?utm_source=platformio&utm_medium=docs>`_
@@ -93,11 +94,21 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f723ie`
+      - STM32F723IEK6
+      - 216MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_remram_v1`
       - STM32F765VIT6
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - STM32F446VET6
       - 168MHz
@@ -118,6 +129,16 @@ You do not need to use/buy external debug probe.
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_ststm32_cloud_jam`
       - STM32F401RET6
       - 84MHz
@@ -383,13 +404,13 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
-      - STM32L476RGT6
+    * - :ref:`board_ststm32_nucleo_l486rg`
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -448,6 +469,11 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_f750n8`
+      - STM32F750N8H6
+      - 216MHz
+      - 64KB
+      - 340KB
     * - :ref:`board_ststm32_seeedArchMax`
       - STM32F407VET6
       - 168MHz
@@ -546,6 +572,11 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - STM32F407VET6
       - 168MHz
@@ -756,11 +787,21 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_sparky_v1`
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_ststm32_hy_tinystm103tb`
       - STM32F103TBU6
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_vake_v1`
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_ublox_c030_n211`
       - STM32F437VG
       - 180MHz
@@ -847,6 +888,9 @@ Packages
 
     * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897&utm_source=platformio&utm_medium=docs>`__
       - STM32Cube embedded software libraries
+
+    * - `tool-dfuutil <git://git.code.sf.net/p/dfu-util/dfu-util?utm_source=platformio&utm_medium=docs>`__
+      - Host side implementation of the DFU 1.0 and DFU 1.1 specifications
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
@@ -1461,6 +1505,25 @@ RemRam
       - 2MB
       - 512KB
 
+RobotDyn
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 RushUp
 ~~~~~~
 
@@ -1498,6 +1561,18 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f723ie`
+      - On-board
+      - STM32F723IEK6
+      - 216MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - On-board
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_black_f407ve`
       - External
       - STM32F407VET6
@@ -1528,6 +1603,18 @@ ST
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - On-board
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - On-board
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_ststm32_disco_f334c8`
       - On-board
       - STM32F334C8T6
@@ -1834,15 +1921,15 @@ ST
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
+    * - :ref:`board_ststm32_nucleo_l486rg`
       - On-board
-      - STM32L476RGT6
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -1906,6 +1993,12 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_disco_f750n8`
+      - On-board
+      - STM32F750N8H6
+      - 216MHz
+      - 64KB
+      - 340KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -1950,6 +2043,44 @@ Semtech
       - 32MHz
       - 256KB
       - 32KB
+
+TauLabs
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sparky_v1`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
+VAE
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_vake_v1`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
 
 rhomb.io
 ~~~~~~~~

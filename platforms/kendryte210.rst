@@ -78,6 +78,11 @@ Please click on board name for the further details.
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - K210
       - 400MHz
@@ -207,6 +212,12 @@ Sipeed
       - Flash
       - RAM
     * - :ref:`board_kendryte210_sipeed-maix-bit`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
       - External
       - K210
       - 400MHz

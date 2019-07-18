@@ -76,6 +76,7 @@ Sipeed MAIX GO supports the next uploading protocols:
 * ``olimex-arm-usb-ocd-h``
 * ``olimex-arm-usb-tiny-h``
 * ``olimex-jtag-tiny``
+* ``sipeed-rv-debugger``
 * ``tumpa``
 
 Default protocol is ``kflash``
@@ -130,6 +131,9 @@ Sipeed MAIX GO does not have on-board debug probe and **IS NOT READY** for debug
     - 
     - 
   * - :ref:`debugging_tool_olimex-jtag-tiny`
+    - 
+    - 
+  * - :ref:`debugging_tool_sipeed-rv-debugger`
     - 
     - 
   * - :ref:`debugging_tool_tumpa`

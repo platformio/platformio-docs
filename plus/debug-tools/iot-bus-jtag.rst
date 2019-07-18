@@ -341,6 +341,13 @@ Boards
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
       - External

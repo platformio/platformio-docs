@@ -210,6 +210,13 @@ Boards
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_f723ie`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F723IEK6
+      - 216MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_armed_v1`
       - :ref:`platform_ststm32`
       - External
@@ -231,6 +238,13 @@ Boards
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - :ref:`platform_ststm32`
       - On-board
@@ -322,6 +336,13 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -553,6 +574,13 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
     * - :ref:`board_nordicnrf51_oshchip`
       - :ref:`platform_nordicnrf51`
       - External
@@ -560,6 +588,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_ststm32_rak811_tracker_32`
       - :ref:`platform_ststm32`
       - External
@@ -980,17 +1015,17 @@ Boards
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
+    * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32L476RGT6
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -1211,6 +1246,13 @@ Boards
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_disco_f750n8`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F750N8H6
+      - 216MHz
+      - 64KB
+      - 340KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - External
@@ -1267,6 +1309,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
       - :ref:`platform_nordicnrf52`
       - External
@@ -1281,6 +1330,13 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`
       - External

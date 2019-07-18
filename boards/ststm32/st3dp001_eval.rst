@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_genericSTM32F103VE:
+.. _board_ststm32_st3dp001_eval:
 
-STM32F103VE (64k RAM. 512k Flash)
-=================================
+3DP001V1 Evaluation board for 3D printer
+========================================
 
 .. contents::
 
@@ -24,54 +24,52 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F103VET6
+    - STM32F401VGT6
   * - **Frequency**
-    - 72MHz
+    - 84MHz
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 64KB
+    - 96KB
   * - **Vendor**
-    - `Generic <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103ve.html?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/steval-3dp001v1.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``genericSTM32F103VE`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``st3dp001_eval`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:genericSTM32F103VE]
+  [env:st3dp001_eval]
   platform = ststm32
-  board = genericSTM32F103VE
+  board = st3dp001_eval
 
-You can override default STM32F103VE (64k RAM. 512k Flash) settings per build environment using
+You can override default 3DP001V1 Evaluation board for 3D printer settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `genericSTM32F103VE.json <https://github.com/platformio/platform-ststm32/blob/master/boards/genericSTM32F103VE.json>`_. For example,
+board manifest `st3dp001_eval.json <https://github.com/platformio/platform-ststm32/blob/master/boards/st3dp001_eval.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:genericSTM32F103VE]
+  [env:st3dp001_eval]
   platform = ststm32
-  board = genericSTM32F103VE
+  board = st3dp001_eval
 
   ; change microcontroller
-  board_build.mcu = stm32f103vet6
+  board_build.mcu = stm32f401vgt6
 
   ; change MCU frequency
-  board_build.f_cpu = 72000000L
+  board_build.f_cpu = 84000000L
 
 
 Uploading
 ---------
-STM32F103VE (64k RAM. 512k Flash) supports the next uploading protocols:
+3DP001V1 Evaluation board for 3D printer supports the next uploading protocols:
 
 * ``blackmagic``
-* ``dfu``
 * ``jlink``
-* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -80,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:genericSTM32F103VE]
+  [env:st3dp001_eval]
   platform = ststm32
-  board = genericSTM32F103VE
+  board = st3dp001_eval
 
   upload_protocol = stlink
 
@@ -99,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-STM32F103VE (64k RAM. 512k Flash) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+3DP001V1 Evaluation board for 3D printer has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -109,13 +107,13 @@ STM32F103VE (64k RAM. 512k Flash) does not have on-board debug probe and **IS NO
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - Yes
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - 
-    - 
+    - Yes
+    - Yes
 
 Frameworks
 ----------
@@ -127,12 +125,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_cmsis`
-      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
-
-    * - :ref:`framework_libopencm3`
-      - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

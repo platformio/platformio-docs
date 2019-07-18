@@ -19,7 +19,7 @@ Sipeed RV Debugger
 
 High-speed 3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power
 supply 5VDC device.
-Official reference can be found `here <https://tang.sipeed.com/en/hardware-overview/rv-debugger//?utm_source=platformio&utm_medium=docs>`__.
+Official reference can be found `here <https://tang.sipeed.com/en/hardware-overview/rv-debugger/?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:

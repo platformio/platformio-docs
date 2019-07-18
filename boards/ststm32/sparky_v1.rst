@@ -9,87 +9,80 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_kendryte210_sipeed-maix-one-dock:
+.. _board_ststm32_sparky_v1:
 
-Sipeed MAIX ONE DOCK
-====================
+Sparky V1 F303
+==============
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
-    - K210
+    - STM32F303CCT6
   * - **Frequency**
-    - 400MHz
+    - 72MHz
   * - **Flash**
-    - 16MB
+    - 256KB
   * - **RAM**
-    - 6MB
+    - 40KB
   * - **Vendor**
-    - `Sipeed <https://www.sipeed.com/?utm_source=platformio&utm_medium=docs>`__
+    - `TauLabs <https://github.com/TauLabs/TauLabs/wiki/Sparky?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``sipeed-maix-one-dock`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sparky_v1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:sipeed-maix-one-dock]
-  platform = kendryte210
-  board = sipeed-maix-one-dock
+  [env:sparky_v1]
+  platform = ststm32
+  board = sparky_v1
 
-You can override default Sipeed MAIX ONE DOCK settings per build environment using
+You can override default Sparky V1 F303 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `sipeed-maix-one-dock.json <https://github.com/sipeed/platform-kendryte210/blob/master/boards/sipeed-maix-one-dock.json>`_. For example,
+board manifest `sparky_v1.json <https://github.com/platformio/platform-ststm32/blob/master/boards/sparky_v1.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:sipeed-maix-one-dock]
-  platform = kendryte210
-  board = sipeed-maix-one-dock
+  [env:sparky_v1]
+  platform = ststm32
+  board = sparky_v1
 
   ; change microcontroller
-  board_build.mcu = K210
+  board_build.mcu = stm32f303cct6
 
   ; change MCU frequency
-  board_build.f_cpu = 400000000L
+  board_build.f_cpu = 72000000L
 
 
 Uploading
 ---------
-Sipeed MAIX ONE DOCK supports the next uploading protocols:
+Sparky V1 F303 supports the next uploading protocols:
 
-* ``iot-bus-jtag``
+* ``blackmagic``
 * ``jlink``
-* ``kflash``
-* ``minimodule``
-* ``olimex-arm-usb-ocd``
-* ``olimex-arm-usb-ocd-h``
-* ``olimex-arm-usb-tiny-h``
-* ``olimex-jtag-tiny``
-* ``sipeed-rv-debugger``
-* ``tumpa``
+* ``stlink``
 
-Default protocol is ``kflash``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:sipeed-maix-one-dock]
-  platform = kendryte210
-  board = sipeed-maix-one-dock
+  [env:sparky_v1]
+  platform = ststm32
+  board = sparky_v1
 
-  upload_protocol = kflash
+  upload_protocol = stlink
 
 Debugging
 ---------
@@ -104,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Sipeed MAIX ONE DOCK does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Sparky V1 F303 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -112,31 +105,13 @@ Sipeed MAIX ONE DOCK does not have on-board debug probe and **IS NOT READY** for
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_iot-bus-jtag`
+  * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
   * - :ref:`debugging_tool_jlink`
     - 
     - 
-  * - :ref:`debugging_tool_minimodule`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
-  * - :ref:`debugging_tool_sipeed-rv-debugger`
-    - 
-    - 
-  * - :ref:`debugging_tool_tumpa`
+  * - :ref:`debugging_tool_stlink`
     - 
     - 
 
@@ -151,8 +126,5 @@ Frameworks
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
-
-    * - :ref:`framework_kendryte-freertos-sdk`
-      - Kendryte SDK with FreeRTOS support
+    * - :ref:`framework_stm32cube`
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

@@ -2481,6 +2481,27 @@ ReprapWorld
       - 256KB
       - 32KB
 
+RobotDyn
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 RoboticsBrno
 ~~~~~~~~~~~~
 
@@ -2592,6 +2613,20 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f723ie`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F723IEK6
+      - 216MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - External
@@ -2627,6 +2662,20 @@ ST
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2984,17 +3033,17 @@ ST
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
+    * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32L476RGT6
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -3075,6 +3124,13 @@ ST
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_ststm32_disco_f750n8`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F750N8H6
+      - 216MHz
+      - 64KB
+      - 340KB
 
 SainSmart
 ~~~~~~~~~
@@ -3383,6 +3439,13 @@ Sipeed
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
       - External
@@ -3657,6 +3720,27 @@ Taida Century
       - 512KB
       - 64KB
 
+TauLabs
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 Teensy
 ~~~~~~
 
@@ -3740,6 +3824,27 @@ Unknown
       - 240MHz
       - 4MB
       - 320KB
+
+VAE
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
 
 VNG
 ~~~
