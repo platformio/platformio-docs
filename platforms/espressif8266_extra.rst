@@ -338,6 +338,23 @@ Please use one of the next :ref:`projectconf_build_flags`:
     build_flags = -DVTABLES_IN_IRAM
 
 
+Exceptions
+~~~~~~~~~~
+
+Exceptions are disabled by default. To enable exceptions, use the following :ref:`projectconf_build_flags` and :ref:`projectconf_build_unflags`:
+
+.. code-block:: ini
+
+    [env:myenv]
+    ...
+
+    ; Remove default exceptions disabled flag
+    build_unflags = -fno-exceptions
+
+    ; Enable exceptions
+    build_flags = -fexceptions
+
+
 .. _platform_espressif_uploadfs:
 
 Uploading files to file system SPIFFS
