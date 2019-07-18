@@ -121,6 +121,7 @@ option.
   debug-tools/olimex-arm-usb-tiny-h
   debug-tools/olimex-jtag-tiny
   debug-tools/qemu
+  debug-tools/sipeed-rv-debugger
   debug-tools/stlink
   debug-tools/ti-icdi
   debug-tools/tumpa
