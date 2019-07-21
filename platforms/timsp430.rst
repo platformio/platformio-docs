@@ -32,8 +32,7 @@ Examples
 Examples are listed from `TI MSP430 development platform repository <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
 * `arduino-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `energia-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/energia-blink?utm_source=platformio&utm_medium=docs>`_
-* `energia-internal-libs <https://github.com/platformio/platform-timsp430/tree/master/examples/energia-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-timsp430/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
 * `native-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
@@ -146,9 +145,6 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinomsp430 <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (MSP430 Core)
-
     * - `framework-energiamsp430 <http://energia.nu/reference/?utm_source=platformio&utm_medium=docs>`__
       - Energia Wiring-based Framework (MSP430 Core)
 
@@ -183,9 +179,6 @@ Frameworks
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
-    * - :ref:`framework_energia`
-      - Energia Wiring-based framework enables pretty much anyone to start easily creating microcontroller-based projects and applications. Its easy-to-use libraries and functions provide developers of all experience levels to start blinking LEDs, buzzing buzzers and sensing sensors more quickly than ever before.
-
 Boards
 ------
 
@@ -194,25 +187,6 @@ Boards
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
-
-PanStamp
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_timsp430_panStampNRG`
-      - No
-      - CC430F5137
-      - 12MHz
-      - 31.88KB
-      - 4KB
 
 TI
 ~~

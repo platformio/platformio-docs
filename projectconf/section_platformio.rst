@@ -88,7 +88,7 @@ Example:
 
     [env:lpmsp430g2553]
     platform = timsp430
-    framework = energia
+    framework = arduino
     board = lpmsp430g2553
     build_flags = -D LED_BUILTIN=RED_LED
 

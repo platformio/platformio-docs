@@ -209,21 +209,21 @@ Examples
     Building .pio/build/teensy31/firmware.hex
     =========================== [SUCCESS] Took 5.36 seconds ===========================
 
-    [Wed Sep  7 15:49:12 2016] Processing lpmsp430g2553 (platform: timsp430, build_flags: -D LED_BUILTIN=RED_LED, board: lpmsp430g2553, framework: energia)
+    [Wed Sep  7 15:49:12 2016] Processing lpmsp430g2553 (platform: timsp430, build_flags: -D LED_BUILTIN=RED_LED, board: lpmsp430g2553, framework: arduino)
     -----------------------------------------------------------------------------------------------
     Verbose mode can be enabled via `-v, --verbose` option
     Collected 29 compatible libraries
     Looking for dependencies...
     Project does not have dependencies
     Compiling .pio/build/lpmsp430g2553/src/main.o
-    Compiling .pio/build/lpmsp430g2553/FrameworkEnergia/HardwareSerial.o
-    Compiling .pio/build/lpmsp430g2553/FrameworkEnergia/IPAddress.o
+    Compiling .pio/build/lpmsp430g2553/FrameworkAnergia/HardwareSerial.o
+    Compiling .pio/build/lpmsp430g2553/FrameworkAnergia/IPAddress.o
     ...
-    Compiling .pio/build/lpmsp430g2553/FrameworkEnergia/wiring_digital.o
-    Compiling .pio/build/lpmsp430g2553/FrameworkEnergia/wiring_pulse.o
-    Compiling .pio/build/lpmsp430g2553/FrameworkEnergia/wiring_shift.o
-    Archiving .pio/build/lpmsp430g2553/libFrameworkEnergia.a
-    Indexing .pio/build/lpmsp430g2553/libFrameworkEnergia.a
+    Compiling .pio/build/lpmsp430g2553/FrameworkAnergia/wiring_digital.o
+    Compiling .pio/build/lpmsp430g2553/FrameworkAnergia/wiring_pulse.o
+    Compiling .pio/build/lpmsp430g2553/FrameworkAnergia/wiring_shift.o
+    Archiving .pio/build/lpmsp430g2553/libFrameworkAnergia.a
+    Indexing .pio/build/lpmsp430g2553/libFrameworkAnergia.a
     Linking .pio/build/lpmsp430g2553/firmware.elf
     Calculating size .pio/build/lpmsp430g2553/firmware.elf
     text       data     bss     dec     hex filename
@@ -351,10 +351,10 @@ Examples
     -----------------------------------------------------------------------------------------------------
     Removed .pio/build/lpmsp430g2553/firmware.elf
     Removed .pio/build/lpmsp430g2553/firmware.hex
-    Removed .pio/build/lpmsp430g2553/libFrameworkEnergia.a
-    Removed .pio/build/lpmsp430g2553/FrameworkEnergia/atof.o
+    Removed .pio/build/lpmsp430g2553/libFrameworkAnergia.a
+    Removed .pio/build/lpmsp430g2553/FrameworkAnergia/atof.o
     ...
-    Removed .pio/build/lpmsp430g2553/FrameworkEnergia/avr/dtostrf.o
+    Removed .pio/build/lpmsp430g2553/FrameworkAnergia/avr/dtostrf.o
     Removed .pio/build/lpmsp430g2553/src/main.o
     Done cleaning
     ======================= [SUCCESS] Took 0.49 seconds =======================

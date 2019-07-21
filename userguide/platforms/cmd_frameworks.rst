@@ -67,12 +67,6 @@ Print all supported frameworks, SDKs, etc.
 
     Home: https://platformio.org/frameworks/cmsis
 
-    energia ~ Energia
-    =================
-    Energia Wiring-based framework enables pretty much anyone to start easily creating microcontroller-based projects and applications. Its easy-to-use libraries and functions provide developers of all experience levels to start blinking LEDs, buzzing buzzers and sensing sensors more quickly than ever before.
-
-    Home: https://platformio.org/frameworks/energia
-
     espidf ~ ESP-IDF
     ================
     Espressif IoT Development Framework. Official development framework for ESP32.

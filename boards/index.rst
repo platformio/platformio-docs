@@ -856,7 +856,6 @@ TI MSP430
 .. toctree::
     :maxdepth: 1
         
-    timsp430/panStampNRG
     timsp430/lpmsp430fr5739
     timsp430/lpmsp430f5529
     timsp430/lpmsp430fr4133

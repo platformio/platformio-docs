@@ -407,6 +407,60 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_timsp430_lpmsp430fr5739`
+      - :ref:`platform_timsp430`
+      - MSP430FR5739
+      - 16MHz
+      - 16KB
+      - 512B
+    * - :ref:`board_titiva_lplm4f120h5qr`
+      - :ref:`platform_titiva`
+      - LPLM4F120H5QR
+      - 80MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_titiva_lptm4c1230c3pm`
+      - :ref:`platform_titiva`
+      - LPTM4C1230C3PM
+      - 80MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_titiva_lptm4c1294ncpdt`
+      - :ref:`platform_titiva`
+      - LPTM4C1294NCPDT
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_timsp430_lpmsp430f5529`
+      - :ref:`platform_timsp430`
+      - MSP430F5529
+      - 16MHz
+      - 128KB
+      - 8KB
+    * - :ref:`board_timsp430_lpmsp430fr4133`
+      - :ref:`platform_timsp430`
+      - MSP430FR4133
+      - 8MHz
+      - 15KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr5969`
+      - :ref:`platform_timsp430`
+      - MSP430FR5969
+      - 8MHz
+      - 64KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr6989`
+      - :ref:`platform_timsp430`
+      - MSP430FR6989
+      - 8MHz
+      - 127KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430g2553`
+      - :ref:`platform_timsp430`
+      - MSP430G2553
+      - 16MHz
+      - 16KB
+      - 512B
     * - :ref:`board_infineonxmc_xmc1100_boot_kit`
       - :ref:`platform_infineonxmc`
       - XMC1100
@@ -1405,6 +1459,7 @@ Examples
 * `Arduino for ST STM8 <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for TI MSP430 <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Arduino for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -1455,6 +1510,9 @@ Platforms
 
     * - :ref:`platform_timsp430`
       - MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
+
+    * - :ref:`platform_titiva`
+      - Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
 Boards
 ------
@@ -4858,13 +4916,6 @@ PanStamp
       - 8MHz
       - 31.50KB
       - 2KB
-    * - :ref:`board_timsp430_panStampNRG`
-      - :ref:`platform_timsp430`
-      - No
-      - CC430F5137
-      - 12MHz
-      - 31.88KB
-      - 4KB
 
 Pinoccio
 ~~~~~~~~
@@ -6055,6 +6106,83 @@ SweetPea
       - 80MHz
       - 4MB
       - 80KB
+
+TI
+~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_timsp430_lpmsp430fr5739`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR5739
+      - 16MHz
+      - 16KB
+      - 512B
+    * - :ref:`board_titiva_lplm4f120h5qr`
+      - :ref:`platform_titiva`
+      - On-board
+      - LPLM4F120H5QR
+      - 80MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_titiva_lptm4c1230c3pm`
+      - :ref:`platform_titiva`
+      - On-board
+      - LPTM4C1230C3PM
+      - 80MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_titiva_lptm4c1294ncpdt`
+      - :ref:`platform_titiva`
+      - On-board
+      - LPTM4C1294NCPDT
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_timsp430_lpmsp430f5529`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430F5529
+      - 16MHz
+      - 128KB
+      - 8KB
+    * - :ref:`board_timsp430_lpmsp430fr4133`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR4133
+      - 8MHz
+      - 15KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr5969`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR5969
+      - 8MHz
+      - 64KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr6989`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR6989
+      - 8MHz
+      - 127KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430g2553`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430G2553
+      - 16MHz
+      - 16KB
+      - 512B
 
 TTGO
 ~~~~

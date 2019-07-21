@@ -370,39 +370,39 @@ Examples
 
 .. code::
 
-    > platformio lib search "+(nRF24 HttpClient)" --framework="energia"
+    > platformio lib search "+(nRF24 HttpClient)" --framework="arduino"
 
     Found N libraries:
-
-    nRF24
-    =====
-    #ID: 43
-    The nRF24L01 is a low-cost 2.4GHz ISM transceiver module. It supports a number of channel frequencies in the 2.4GHz band and a range of data rates.
-
-    Keywords: wireless, spi, rf, radio
-    Compatible frameworks: Energia
-    Compatible platforms: TI MSP430
-    Authors: Eric
-
-    HttpClient
-    ==========
-    #ID: 46
-    HttpClient is a library to make it easier to interact with web servers
-
-    Keywords: web, client, http, ethernet
-    Compatible frameworks: Energia
-    Compatible platforms: TI MSP430, TI Tiva
-    Authors: Zack Lalanne
 
     RadioHead
     =========
     #ID: 124
     The RadioHead Packet Radio library which provides a complete object-oriented library for sending and receiving packetized messages via RF22/24/26/27/69, Si4460/4461/4463/4464, nRF24/nRF905, SX1276/77/78, RFM95/96/97/98 and etc.
 
-    Keywords: wireless, rf, radio
+    Keywords: rf, radio, wireless
     Compatible frameworks: Arduino, Energia
-    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 8266, Intel ARC32, Microchip PIC32, Nordic nRF51, Teensy, TI MSP430, TI Tiva
+    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 32, Espressif 8266, Infineon XMC, Intel ARC32, Kendryte K210, Microchip PIC32, Nordic nRF51, Nordic nRF52, ST STM32, ST STM8, Teensy, TI MSP430, TI Tiva
     Authors: Mike McCauley
+
+    ArduinoHttpClient
+    =================
+    #ID: 798
+    [EXPERIMENTAL] Easily interact with web servers from Arduino, using HTTP and WebSocket's.
+
+    Keywords: communication
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 32, Espressif 8266, Intel ARC32, Microchip PIC32, Nordic nRF51, Nordic nRF52, ST STM32, ST STM8, Teensy, TI MSP430
+    Authors: Arduino
+
+    HttpClient
+    ==========
+    #ID: 66
+    Library to easily make HTTP GET, POST and PUT requests to a web server.
+
+    Keywords: communication
+    Compatible frameworks: Arduino
+    Compatible platforms: Atmel AVR, Atmel SAM, Espressif 32, Espressif 8266, Intel ARC32, Microchip PIC32, Nordic nRF51, Nordic nRF52, ST STM32, Teensy, TI MSP430
+    Authors: Adrian McEwen
 
     Show next libraries? [y/N]:
     ...

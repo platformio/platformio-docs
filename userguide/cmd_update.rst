@@ -70,7 +70,6 @@ Examples
     Updating timsp430 @ 0.0.0:  [Up-to-date]
     Updating toolchain-timsp430 @ 1.40603.0:    [Up-to-date]
     Updating framework-energiamsp430 @ 1.17.0:  [Up-to-date]
-    Updating framework-arduinomsp430 @ 1.10601.0:   [Up-to-date]
     Updating tool-scons @ 2.4.1:    [Up-to-date]
 
     Platform freescalekinetis
