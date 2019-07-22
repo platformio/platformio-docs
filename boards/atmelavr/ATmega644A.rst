@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_mightycore1284:
+.. _board_atmelavr_ATmega644A:
 
-MightyCore ATmega1284
-=====================
+ATmega644/A
+===========
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA1284P
+    - ATMEGA644A
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 127KB
+    - 63KB
   * - **RAM**
-    - 16KB
+    - 4KB
   * - **Vendor**
-    - `MCUdude <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega644a?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``mightycore1284`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega644A`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:mightycore1284]
+  [env:ATmega644A]
   platform = atmelavr
-  board = mightycore1284
+  board = ATmega644A
 
-You can override default MightyCore ATmega1284 settings per build environment using
+You can override default ATmega644/A settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `mightycore1284.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/mightycore1284.json>`_. For example,
+board manifest `ATmega644A.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega644A.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:mightycore1284]
+  [env:ATmega644A]
   platform = atmelavr
-  board = mightycore1284
+  board = ATmega644A
 
   ; change microcontroller
-  board_build.mcu = atmega1284p
+  board_build.mcu = atmega644a
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MightyCore ATmega1284 board.
+:ref:`piodebug` currently does not support ATmega644/A board.
 
 Frameworks
 ----------

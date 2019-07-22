@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_mightycore16:
+.. _board_atmelavr_ATmega640:
 
-MightyCore ATmega16
-===================
+ATmega640
+=========
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA16
+    - ATMEGA640
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 15.50KB
+    - 63KB
   * - **RAM**
-    - 1KB
+    - 8KB
   * - **Vendor**
-    - `MCUdude <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/ATmega640?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``mightycore16`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega640`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:mightycore16]
+  [env:ATmega640]
   platform = atmelavr
-  board = mightycore16
+  board = ATmega640
 
-You can override default MightyCore ATmega16 settings per build environment using
+You can override default ATmega640 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `mightycore16.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/mightycore16.json>`_. For example,
+board manifest `ATmega640.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega640.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:mightycore16]
+  [env:ATmega640]
   platform = atmelavr
-  board = mightycore16
+  board = ATmega640
 
   ; change microcontroller
-  board_build.mcu = atmega16
+  board_build.mcu = atmega640
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MightyCore ATmega16 board.
+:ref:`piodebug` currently does not support ATmega640 board.
 
 Frameworks
 ----------

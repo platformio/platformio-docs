@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_ATMEGA88P:
+.. _board_atmelavr_ATmega88P:
 
-ATMEGA88P/PA
+ATmega88P/PA
 ============
 
 .. contents::
@@ -38,24 +38,24 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 Configuration
 -------------
 
-Please use ``ATMEGA88P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega88P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ATMEGA88P]
+  [env:ATmega88P]
   platform = atmelavr
-  board = ATMEGA88P
+  board = ATmega88P
 
-You can override default ATMEGA88P/PA settings per build environment using
+You can override default ATmega88P/PA settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ATMEGA88P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATMEGA88P.json>`_. For example,
+board manifest `ATmega88P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega88P.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ATMEGA88P]
+  [env:ATmega88P]
   platform = atmelavr
-  board = ATMEGA88P
+  board = ATmega88P
 
   ; change microcontroller
   board_build.mcu = atmega88p
@@ -65,7 +65,7 @@ board manifest `ATMEGA88P.json <https://github.com/platformio/platform-atmelavr/
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATMEGA88P/PA board.
+:ref:`piodebug` currently does not support ATmega88P/PA board.
 
 Frameworks
 ----------

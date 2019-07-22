@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_ATMEGA328:
+.. _board_atmelavr_ATmega328:
 
-ATMEGA328
+ATmega328
 =========
 
 .. contents::
@@ -38,24 +38,24 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 Configuration
 -------------
 
-Please use ``ATMEGA328`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega328`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ATMEGA328]
+  [env:ATmega328]
   platform = atmelavr
-  board = ATMEGA328
+  board = ATmega328
 
-You can override default ATMEGA328 settings per build environment using
+You can override default ATmega328 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ATMEGA328.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATMEGA328.json>`_. For example,
+board manifest `ATmega328.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega328.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ATMEGA328]
+  [env:ATmega328]
   platform = atmelavr
-  board = ATMEGA328
+  board = ATmega328
 
   ; change microcontroller
   board_build.mcu = atmega328
@@ -65,7 +65,7 @@ board manifest `ATMEGA328.json <https://github.com/platformio/platform-atmelavr/
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATMEGA328 board.
+:ref:`piodebug` currently does not support ATmega328 board.
 
 Frameworks
 ----------

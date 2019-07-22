@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_ATmega168P:
+.. _board_atmelavr_ATmega2560:
 
-ATmega168P/PA
-=============
+ATmega2560
+==========
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA168P
+    - ATMEGA2560
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 15.50KB
+    - 255KB
   * - **RAM**
-    - 1KB
+    - 8KB
   * - **Vendor**
-    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega168P?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/ATmega2560?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``ATmega168P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega2560`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ATmega168P]
+  [env:ATmega2560]
   platform = atmelavr
-  board = ATmega168P
+  board = ATmega2560
 
-You can override default ATmega168P/PA settings per build environment using
+You can override default ATmega2560 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ATmega168P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega168P.json>`_. For example,
+board manifest `ATmega2560.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega2560.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ATmega168P]
+  [env:ATmega2560]
   platform = atmelavr
-  board = ATmega168P
+  board = ATmega2560
 
   ; change microcontroller
-  board_build.mcu = atmega168p
+  board_build.mcu = atmega2560
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega168P/PA board.
+:ref:`piodebug` currently does not support ATmega2560 board.
 
 Frameworks
 ----------

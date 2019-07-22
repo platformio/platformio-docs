@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_ATMEGA48P:
+.. _board_atmelavr_ATmega48P:
 
-ATMEGA48P/PA
-============
+ATmega8P/PA
+===========
 
 .. contents::
 
@@ -38,24 +38,24 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 Configuration
 -------------
 
-Please use ``ATMEGA48P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega48P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ATMEGA48P]
+  [env:ATmega48P]
   platform = atmelavr
-  board = ATMEGA48P
+  board = ATmega48P
 
-You can override default ATMEGA48P/PA settings per build environment using
+You can override default ATmega8P/PA settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ATMEGA48P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATMEGA48P.json>`_. For example,
+board manifest `ATmega48P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega48P.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ATMEGA48P]
+  [env:ATmega48P]
   platform = atmelavr
-  board = ATMEGA48P
+  board = ATmega48P
 
   ; change microcontroller
   board_build.mcu = atmega48p
@@ -65,7 +65,7 @@ board manifest `ATMEGA48P.json <https://github.com/platformio/platform-atmelavr/
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATMEGA48P/PA board.
+:ref:`piodebug` currently does not support ATmega8P/PA board.
 
 Frameworks
 ----------

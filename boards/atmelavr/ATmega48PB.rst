@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_ATmega168P:
+.. _board_atmelavr_ATmega48PB:
 
-ATmega168P/PA
-=============
+ATmega48PB
+==========
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA168P
+    - ATMEGA48PB
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 15.50KB
+    - 4KB
   * - **RAM**
-    - 1KB
+    - 512B
   * - **Vendor**
-    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega168P?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega48PB?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``ATmega168P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega48PB`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ATmega168P]
+  [env:ATmega48PB]
   platform = atmelavr
-  board = ATmega168P
+  board = ATmega48PB
 
-You can override default ATmega168P/PA settings per build environment using
+You can override default ATmega48PB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ATmega168P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega168P.json>`_. For example,
+board manifest `ATmega48PB.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega48PB.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ATmega168P]
+  [env:ATmega48PB]
   platform = atmelavr
-  board = ATmega168P
+  board = ATmega48PB
 
   ; change microcontroller
-  board_build.mcu = atmega168p
+  board_build.mcu = atmega48pb
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega168P/PA board.
+:ref:`piodebug` currently does not support ATmega48PB board.
 
 Frameworks
 ----------

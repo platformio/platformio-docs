@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_mightycore32:
+.. _board_atmelavr_ATmega324P:
 
-MightyCore ATmega32
-===================
+ATmega324P
+==========
 
 .. contents::
 
@@ -24,7 +24,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA32
+    - ATMEGA324P
   * - **Frequency**
     - 16MHz
   * - **Flash**
@@ -32,40 +32,40 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `MCUdude <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega324p?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``mightycore32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega324P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:mightycore32]
+  [env:ATmega324P]
   platform = atmelavr
-  board = mightycore32
+  board = ATmega324P
 
-You can override default MightyCore ATmega32 settings per build environment using
+You can override default ATmega324P settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `mightycore32.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/mightycore32.json>`_. For example,
+board manifest `ATmega324P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega324P.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:mightycore32]
+  [env:ATmega324P]
   platform = atmelavr
-  board = mightycore32
+  board = ATmega324P
 
   ; change microcontroller
-  board_build.mcu = atmega32
+  board_build.mcu = atmega324p
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MightyCore ATmega32 board.
+:ref:`piodebug` currently does not support ATmega324P board.
 
 Frameworks
 ----------

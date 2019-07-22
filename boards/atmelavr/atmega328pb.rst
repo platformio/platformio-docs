@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_atmega328pb:
+.. _board_atmelavr_ATmega328PB:
 
-ATMEGA328PB
+ATmega328PB
 ===========
 
 .. contents::
@@ -38,24 +38,24 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 Configuration
 -------------
 
-Please use ``atmega328pb`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega328PB`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:atmega328pb]
+  [env:ATmega328PB]
   platform = atmelavr
-  board = atmega328pb
+  board = ATmega328PB
 
-You can override default ATMEGA328PB settings per build environment using
+You can override default ATmega328PB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `atmega328pb.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/atmega328pb.json>`_. For example,
+board manifest `ATmega328PB.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega328PB.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:atmega328pb]
+  [env:ATmega328PB]
   platform = atmelavr
-  board = atmega328pb
+  board = ATmega328PB
 
   ; change microcontroller
   board_build.mcu = atmega328pb
@@ -65,7 +65,7 @@ board manifest `atmega328pb.json <https://github.com/platformio/platform-atmelav
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATMEGA328PB board.
+:ref:`piodebug` currently does not support ATmega328PB board.
 
 Frameworks
 ----------

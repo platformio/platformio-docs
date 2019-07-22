@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_ATMEGA8:
+.. _board_atmelavr_ATmega8:
 
-ATMEGA8/A
+ATmega8/A
 =========
 
 .. contents::
@@ -38,24 +38,24 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 Configuration
 -------------
 
-Please use ``ATMEGA8`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega8`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ATMEGA8]
+  [env:ATmega8]
   platform = atmelavr
-  board = ATMEGA8
+  board = ATmega8
 
-You can override default ATMEGA8/A settings per build environment using
+You can override default ATmega8/A settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ATMEGA8.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATMEGA8.json>`_. For example,
+board manifest `ATmega8.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega8.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ATMEGA8]
+  [env:ATmega8]
   platform = atmelavr
-  board = ATMEGA8
+  board = ATmega8
 
   ; change microcontroller
   board_build.mcu = atmega8
@@ -65,7 +65,7 @@ board manifest `ATMEGA8.json <https://github.com/platformio/platform-atmelavr/bl
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATMEGA8/A board.
+:ref:`piodebug` currently does not support ATmega8/A board.
 
 Frameworks
 ----------

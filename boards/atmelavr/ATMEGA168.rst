@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_ATMEGA168:
+.. _board_atmelavr_ATmega168:
 
-ATMEGA168/A
+ATmega168/A
 ===========
 
 .. contents::
@@ -38,24 +38,24 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 Configuration
 -------------
 
-Please use ``ATMEGA168`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega168`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ATMEGA168]
+  [env:ATmega168]
   platform = atmelavr
-  board = ATMEGA168
+  board = ATmega168
 
-You can override default ATMEGA168/A settings per build environment using
+You can override default ATmega168/A settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ATMEGA168.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATMEGA168.json>`_. For example,
+board manifest `ATmega168.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega168.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ATMEGA168]
+  [env:ATmega168]
   platform = atmelavr
-  board = ATMEGA168
+  board = ATmega168
 
   ; change microcontroller
   board_build.mcu = atmega168
@@ -65,7 +65,7 @@ board manifest `ATMEGA168.json <https://github.com/platformio/platform-atmelavr/
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATMEGA168/A board.
+:ref:`piodebug` currently does not support ATmega168/A board.
 
 Frameworks
 ----------

@@ -37,16 +37,42 @@ Atmel AVR
 .. toctree::
     :maxdepth: 1
         
-    atmelavr/ATMEGA168
-    atmelavr/ATMEGA168P
-    atmelavr/ATMEGA328
-    atmelavr/ATMEGA328P
-    atmelavr/atmega328pb
-    atmelavr/ATMEGA48
-    atmelavr/ATMEGA48P
-    atmelavr/ATMEGA8
-    atmelavr/ATMEGA88
-    atmelavr/ATMEGA88P
+    atmelavr/AT90CAN128
+    atmelavr/AT90CAN32
+    atmelavr/AT90CAN64
+    atmelavr/ATmega128
+    atmelavr/ATmega1280
+    atmelavr/ATmega1281
+    atmelavr/ATmega1284
+    atmelavr/ATmega1284P
+    atmelavr/ATmega16
+    atmelavr/ATmega164A
+    atmelavr/ATmega164P
+    atmelavr/ATmega168
+    atmelavr/ATmega168P
+    atmelavr/ATmega168PB
+    atmelavr/ATmega2560
+    atmelavr/ATmega2561
+    atmelavr/ATmega32
+    atmelavr/ATmega324A
+    atmelavr/ATmega324P
+    atmelavr/ATmega324PA
+    atmelavr/ATmega324PB
+    atmelavr/ATmega328
+    atmelavr/ATmega328P
+    atmelavr/ATmega328PB
+    atmelavr/ATmega48
+    atmelavr/ATmega48PB
+    atmelavr/ATmega64
+    atmelavr/ATmega640
+    atmelavr/ATmega644A
+    atmelavr/ATmega644P
+    atmelavr/ATmega8
+    atmelavr/ATmega8535
+    atmelavr/ATmega88
+    atmelavr/ATmega88P
+    atmelavr/ATmega88PB
+    atmelavr/ATmega48P
     atmelavr/bluefruitmicro
     atmelavr/circuitplay_classic
     atmelavr/feather328p
@@ -151,7 +177,6 @@ Atmel AVR
     atmelavr/moteino
     atmelavr/moteino8mhz
     atmelavr/moteinomega
-    atmelavr/megacore128
     atmelavr/168pa16m
     atmelavr/168pa8m
     atmelavr/328p16m
@@ -161,13 +186,6 @@ Atmel AVR
     atmelavr/1284p8m
     atmelavr/644pa16m
     atmelavr/644pa8m
-    atmelavr/mightycore1284
-    atmelavr/mightycore16
-    atmelavr/mightycore164
-    atmelavr/mightycore32
-    atmelavr/mightycore324
-    atmelavr/mightycore644
-    atmelavr/mightycore8535
     atmelavr/emonpi
     atmelavr/panStampAVR
     atmelavr/pinoccio
