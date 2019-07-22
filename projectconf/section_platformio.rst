@@ -331,8 +331,12 @@ a different configuration (new build flags, etc):
 .. code-block:: ini
 
     [platformio]
-    ; set a path to a cache folder
-    build_cache_dir = /tmp/platformio-shared-cache
+    ; Set a path to a cache folder
+    build_cache_dir =
+
+    ; Examples:
+    ; (Unix) build_cache_dir = /path/to/cache/folder
+    ; (Windows) build_cache_dir = C:/path/to/cache/folder
 
     [env:bluepill_f103c6]
     platform = ststm32
