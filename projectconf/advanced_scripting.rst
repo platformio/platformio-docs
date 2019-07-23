@@ -100,10 +100,10 @@ uses to process a project:
     Import("env")
 
     # access to global construction environment
-    print env
+    print(env)
 
     # Dump construction environment (for debug purpose)
-    print env.Dump()
+    print(env.Dump())
 
     # append extra flags to global build environment
     # which later will be used to build:
@@ -123,14 +123,14 @@ uses to process a project:
     Import("env", "projenv")
 
     # access to global construction environment
-    print env
+    print(env)
 
     # access to project construction environment
-    print projenv
+    print(projenv)
 
     # Dump construction environments (for debug purpose)
-    print env.Dump()
-    print projenv.Dump()
+    print(env.Dump())
+    print(projenv.Dump())
 
     # append extra flags to global build environment
     # which later will be used to build:
@@ -181,14 +181,14 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
     Import("env", "projenv")
 
     # access to global build environment
-    print env
+    print(env)
 
     # access to project build environment (is used source files in "src" folder)
-    print projenv
+    print(projenv)
 
     #
     # Dump build environment (for debug purpose)
-    # print env.Dump()
+    # print(env.Dump())
     #
 
     #
@@ -202,7 +202,7 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
     #
 
     def before_upload(source, target, env):
-        print "before_upload"
+        print("before_upload")
         # do some actions
 
         # call Node.JS or other script
@@ -210,10 +210,10 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
 
     def after_upload(source, target, env):
-        print "after_upload"
+        print("after_upload")
         # do some actions
 
-    print "Current build targets", map(str, BUILD_TARGETS)
+    print("Current build targets", map(str, BUILD_TARGETS))
 
     env.AddPreAction("upload", before_upload)
     env.AddPostAction("upload", after_upload)
@@ -344,7 +344,7 @@ Let's create a simple ``ping`` target and process it with
     host = config.get("env_custom_target", "custom_ping_host")
 
     def mytarget_callback(*args, **kwargs):
-        print "Hello PlatformIO!"
+        print("Hello PlatformIO!")
         env.Execute("ping " + host)
 
 
@@ -435,7 +435,7 @@ extra script will help:
 
     #
     # Dump build environment (for debug)
-    # print env.Dump()
+    # print(env.Dump())
     #
 
     env.Append(
@@ -497,7 +497,7 @@ See examples below:
 
     # Python callback
     def on_upload(source, target, env):
-        print source, target
+        print(source, target)
         firmware_path = str(source[0])
         # do something
         env.Execute("executable arg1 arg2")
@@ -575,7 +575,7 @@ Sometimes is useful to have a different firmware/program name in
 
     my_flags = env.ParseFlags(env['BUILD_FLAGS'])
     defines = {k: v for (k, v) in my_flags.get("CPPDEFINES")}
-    # print defines
+    # print(defines)
 
     env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
 

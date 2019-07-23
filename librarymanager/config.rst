@@ -715,7 +715,7 @@ Examples
 .. code-block:: python
 
     Import('env')
-    # print env.Dump()
+    # print(env.Dump())
     env.Append(
         CPPDEFINES=["HELLO=WORLD", "TAG=1.2.3", "DEBUG"],
         CPPPATH=["inc", "inc/devices"]
