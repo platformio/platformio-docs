@@ -175,7 +175,7 @@ Register
 The registration requirements:
 
 * A library must adhere to the library manifest specification - :ref:`library_config`, `library.properties <https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#library-metadata>`_ or `module.json <http://docs.yottabuild.org/reference/module.html>`_.
-* There must be public *HTTP* access to the library :ref:`library_config` file.
+* There must be public *HTTP* access to the library manifest file.
 
 Now, you can :ref:`register <cmd_lib_register>` your library and allow others
 to :ref:`install <cmd_lib_install>` it.
