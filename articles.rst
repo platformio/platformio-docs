@@ -23,6 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2019
 ^^^^
 
+* Jul 04, 2019 - **Jean-Claude Wippler** - `The PlatformIO command line <https://jeelabs.org/2019/pio-cli/>`_
 * Mar 08, 2019 - **Nathan Glover** - `Amazon Alexa controlled IoT Traffic Lights <https://devopstar.com/2019/03/08/amazon-alexa-controlled-iot-traffic-lights/>`_
 
 2018
