@@ -23,6 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2019
 ^^^^
 
+* Aug 13, 2019 - **Tech Explorations** - `6 reasons why PlatformIO is perhaps the best programming environment for the ESP32 <https://techexplorations.com/guides/esp32/unleashed/tools/>`_
 * Jul 04, 2019 - **Jean-Claude Wippler** - `The PlatformIO command line <https://jeelabs.org/2019/pio-cli/>`_
 * Mar 08, 2019 - **Nathan Glover** - `Amazon Alexa controlled IoT Traffic Lights <https://devopstar.com/2019/03/08/amazon-alexa-controlled-iot-traffic-lights/>`_
 
