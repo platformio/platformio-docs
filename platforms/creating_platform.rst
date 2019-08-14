@@ -25,11 +25,6 @@ boards and etc. These data are pre-built and packaged to the different
 which can use the same packages(toolchains, frameworks), but have
 different/own build scripts, uploader and etc.
 
-.. note::
-    If you want to change some build flags for the existing
-    :ref:`platforms`, you don't need to create (or duplicate) own
-    development platforms! Please use :ref:`projectconf_build_flags` option.
-
 **Step-by-Step Manual**
 
 1. Choose :ref:`platform_creating_packages` for platform
@@ -45,8 +40,8 @@ Packages
 --------
 
 PlatformIO has own registry with pre-built packages for the most popular
-systems and you can use them in your manifest. These packages are stored in
-super-fast and reliably CDN storage provided by JFrog Bintray:
+operating systems and you can use them in your manifest. These packages are
+stored in super-fast and reliably CDN storage provided by JFrog Bintray:
 
 - https://bintray.com/platformio/dl-packages
 
@@ -245,5 +240,5 @@ option in :ref:`projectconf`.
 Examples
 --------
 
-Please take a look at the source code of
-`PlatformIO Development Platforms <https://github.com/platformio?query=platform->`_.
+Please take a look at the source code of existing
+`PlatformIO Development Platforms <https://github.com/topics/platformio-platform>`_.
