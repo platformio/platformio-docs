@@ -394,8 +394,6 @@ Install Shell Commands
 
 Please navigate to PIO Core :ref:`piocore_install_shell_commands`.
 
-.. _ide_vscode_settings:
-
 Proxy Server Support
 --------------------
 
@@ -406,6 +404,8 @@ There 2 options how to configure a proxy server:
 2. Open `VSCode Settings <https://code.visualstudio.com/docs/getstarted/settings>`__
    and search for "Proxy". Please set "Http: Proxy" and disable
    "Http: Proxy Strict SSL".
+
+.. _ide_vscode_settings:
 
 Settings
 --------
