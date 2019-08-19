@@ -865,6 +865,7 @@ Teensy
     teensy/teensy31
     teensy/teensy35
     teensy/teensy36
+    teensy/teensy40
     teensy/teensylc
     teensy/teensy2pp
 

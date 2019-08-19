@@ -94,6 +94,11 @@ Please click on board name for the further details.
       - 180MHz
       - 1MB
       - 256KB
+    * - :ref:`board_teensy_teensy40`
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 1MB
     * - :ref:`board_teensy_teensylc`
       - MKL26Z64
       - 48MHz
@@ -243,6 +248,12 @@ Teensy
       - 180MHz
       - 1MB
       - 256KB
+    * - :ref:`board_teensy_teensy40`
+      - External
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 1MB
     * - :ref:`board_teensy_teensylc`
       - External
       - MKL26Z64
