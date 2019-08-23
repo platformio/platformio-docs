@@ -868,7 +868,7 @@ Packages
     * - `framework-arduinostm32mxchip <https://microsoft.github.io/azure-iot-developer-kit/?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (ST STM32 MXChip Core)
 
-    * - `framework-arduinoststm32 <https://github.com/rogerclarkmelbourne/Arduino_STM32?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-arduinoststm32 <https://github.com/stm32duino/Arduino_Core_STM32?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (STM32 Core)
 
     * - `framework-arduinoststm32-maple <https://github.com/rogerclarkmelbourne/Arduino_STM32?utm_source=platformio&utm_medium=docs>`__
