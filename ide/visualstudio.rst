@@ -107,18 +107,17 @@ Copy the source code which is described below to file ``main.cpp``.
 .. code-block:: cpp
 
     #include "Arduino.h"
-    #define WLED    13  // Most Arduino boards already have an LED attached to pin 13 on the board itself
 
     void setup()
     {
-      pinMode(WLED, OUTPUT);  // set pin as output
+      pinMode(LED_BUILTIN, OUTPUT);  // set pin as output
     }
 
     void loop()
     {
-      digitalWrite(WLED, HIGH);  // set the LED on
+      digitalWrite(LED_BUILTIN, HIGH);  // set the LED on
       delay(1000);               // wait for a second
-      digitalWrite(WLED, LOW);   // set the LED off
+      digitalWrite(LED_BUILTIN, LOW);   // set the LED off
       delay(1000);               // wait for a second
     }
 
