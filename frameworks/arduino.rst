@@ -131,6 +131,12 @@ You do not need to use/buy external debug probe.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_mxchip_az3166`
       - :ref:`platform_ststm32`
       - STM32F412ZGT6
@@ -268,7 +274,7 @@ You do not need to use/buy external debug probe.
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - STM32F303RET6
@@ -388,7 +394,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f100rb`
       - :ref:`platform_ststm32`
       - STM32F100RBT6
@@ -761,25 +767,25 @@ Please click on board name for the further details.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407vg`
       - :ref:`platform_ststm32`
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407zg`
       - :ref:`platform_ststm32`
       - STM32F407ZGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - STM32F407ZET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_blackpill_f103c8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -803,7 +809,7 @@ Please click on board name for the further details.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_bluepill_f103c6`
       - :ref:`platform_ststm32`
       - STM32F103C6T6
@@ -899,13 +905,13 @@ Please click on board name for the further details.
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_fk407m1`
       - :ref:`platform_ststm32`
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_espressif32_firebeetle32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1877,6 +1883,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -3059,7 +3072,7 @@ Diymore
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Doit
 ~~~~
@@ -3563,7 +3576,7 @@ Generic
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - External
@@ -5509,35 +5522,35 @@ ST
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407vg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407zg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -5621,7 +5634,7 @@ ST
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - On-board
@@ -5761,7 +5774,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f100rb`
       - :ref:`platform_ststm32`
       - On-board

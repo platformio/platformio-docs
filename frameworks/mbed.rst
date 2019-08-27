@@ -526,7 +526,7 @@ You do not need to use/buy external debug probe.
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - STM32F303RET6
@@ -706,7 +706,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f100rb`
       - :ref:`platform_ststm32`
       - STM32F100RBT6
@@ -2158,7 +2158,7 @@ ST
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - On-board
@@ -2368,7 +2368,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f100rb`
       - :ref:`platform_ststm32`
       - On-board
