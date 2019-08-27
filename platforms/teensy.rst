@@ -38,7 +38,6 @@ Examples are listed from `Teensy development platform repository <https://github
 * `mbed-blink <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
