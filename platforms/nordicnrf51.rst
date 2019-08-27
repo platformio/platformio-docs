@@ -37,7 +37,6 @@ Examples are listed from `Nordic nRF51 development platform repository <https://
 * `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-ble-thermometer?utm_source=platformio&utm_medium=docs>`_
 * `mbed-blink <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-microbit-hello-world <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-microbit-hello-world?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
 Debugging

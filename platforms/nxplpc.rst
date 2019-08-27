@@ -35,7 +35,6 @@ Examples are listed from `NXP LPC development platform repository <https://githu
 * `mbed-custom-target <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-custom-target?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-http-client <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-http-client?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos-ethernet <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
