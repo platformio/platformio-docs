@@ -66,6 +66,11 @@ command.
 Force to output color ANSI-codes even if the output is a ``pipe`` (not a ``tty``).
 The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_FORCE_COLOR=false``.
 
+.. envvar:: PLATFORMIO_DISABLE_COLOR
+
+Disable color ANSI-codes even if the output is a ``pipe`` (not a ``tty``).
+The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_COLOR=false``.
+
 .. envvar:: PLATFORMIO_DISABLE_PROGRESSBAR
 
 Disable progress bar for package/library downloader and uploader. This is
