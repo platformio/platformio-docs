@@ -41,7 +41,7 @@ Installation
 
 0. `Download <https://code.visualstudio.com>`_ and install official Microsoft Visual Studio Code. PlatformIO IDE is built on top of it
 1. **Open** VSCode Package Manager
-2. **Search** for official ``platformio-ide`` `extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_
+2. **Search** for official ``platformio ide`` `extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
 .. image:: ../_static/images/ide/vscode/platformio-ide-vscode-pkg-installer.png
@@ -394,8 +394,6 @@ Install Shell Commands
 
 Please navigate to PIO Core :ref:`piocore_install_shell_commands`.
 
-.. _ide_vscode_settings:
-
 Proxy Server Support
 --------------------
 
@@ -405,7 +403,9 @@ There 2 options how to configure a proxy server:
    ``HTTP_PROXY=http://user:pass@10.10.1.10:3128/``, etc.)
 2. Open `VSCode Settings <https://code.visualstudio.com/docs/getstarted/settings>`__
    and search for "Proxy". Please set "Http: Proxy" and disable
-   "Http: Proxy String SSL".
+   "Http: Proxy Strict SSL".
+
+.. _ide_vscode_settings:
 
 Settings
 --------

@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 1MB
   * - **RAM**
-    - 192KB
+    - 128KB
   * - **Vendor**
     - `ST <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?utm_source=platformio&utm_medium=docs>`__
 

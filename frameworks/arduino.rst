@@ -71,6 +71,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -125,6 +131,12 @@ You do not need to use/buy external debug probe.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_mxchip_az3166`
       - :ref:`platform_ststm32`
       - STM32F412ZGT6
@@ -167,6 +179,18 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - :ref:`platform_ststm32`
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -250,7 +274,7 @@ You do not need to use/buy external debug probe.
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - STM32F303RET6
@@ -370,7 +394,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f100rb`
       - :ref:`platform_ststm32`
       - STM32F100RBT6
@@ -389,24 +413,60 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
+    * - :ref:`board_timsp430_lpmsp430fr5739`
+      - :ref:`platform_timsp430`
+      - MSP430FR5739
+      - 16MHz
+      - 16KB
+      - 512B
+    * - :ref:`board_titiva_lplm4f120h5qr`
+      - :ref:`platform_titiva`
+      - LPLM4F120H5QR
+      - 80MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_titiva_lptm4c1230c3pm`
+      - :ref:`platform_titiva`
+      - LPTM4C1230C3PM
+      - 80MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_titiva_lptm4c1294ncpdt`
+      - :ref:`platform_titiva`
+      - LPTM4C1294NCPDT
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_timsp430_lpmsp430f5529`
+      - :ref:`platform_timsp430`
+      - MSP430F5529
+      - 16MHz
+      - 128KB
+      - 8KB
+    * - :ref:`board_timsp430_lpmsp430fr4133`
+      - :ref:`platform_timsp430`
+      - MSP430FR4133
+      - 8MHz
+      - 15KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr5969`
+      - :ref:`platform_timsp430`
+      - MSP430FR5969
+      - 8MHz
+      - 64KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr6989`
+      - :ref:`platform_timsp430`
+      - MSP430FR6989
+      - 8MHz
+      - 127KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430g2553`
+      - :ref:`platform_timsp430`
+      - MSP430G2553
+      - 16MHz
+      - 16KB
+      - 512B
     * - :ref:`board_infineonxmc_xmc1100_boot_kit`
       - :ref:`platform_infineonxmc`
       - XMC1100
@@ -582,6 +642,12 @@ Please click on board name for the further details.
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_pygamer_m4`
       - :ref:`platform_atmelsam`
       - SAMD51J19A
@@ -701,25 +767,25 @@ Please click on board name for the further details.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407vg`
       - :ref:`platform_ststm32`
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407zg`
       - :ref:`platform_ststm32`
       - STM32F407ZGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - STM32F407ZET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_blackpill_f103c8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -732,12 +798,18 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_bluepill_f103c6`
       - :ref:`platform_ststm32`
       - STM32F103C6T6
@@ -833,13 +905,13 @@ Please click on board name for the further details.
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_fk407m1`
       - :ref:`platform_ststm32`
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_espressif32_firebeetle32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1194,6 +1266,36 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_kendryte210_sipeed-maix-bit`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-go`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_espressif32_esp32thing`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1218,6 +1320,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1254,6 +1362,12 @@ Please click on board name for the further details.
       - 180MHz
       - 1MB
       - 256KB
+    * - :ref:`board_teensy_teensy40`
+      - :ref:`platform_teensy`
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 1MB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - MKL26Z64
@@ -1272,6 +1386,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1351,6 +1471,7 @@ Examples
 * `Arduino for ST STM8 <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for TI MSP430 <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Arduino for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -1401,6 +1522,9 @@ Platforms
 
     * - :ref:`platform_timsp430`
       - MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
+
+    * - :ref:`platform_titiva`
+      - Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
 Boards
 ------
@@ -1696,6 +1820,13 @@ Adafruit
       - 16MHz
       - 28KB
       - 2KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_pygamer_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -1752,6 +1883,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -2934,7 +3072,7 @@ Diymore
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Doit
 ~~~~
@@ -3438,7 +3576,7 @@ Generic
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - External
@@ -4035,76 +4173,6 @@ M5Stack
       - 4MB
       - 320KB
 
-MCUdude
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_atmelavr_megacore128`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA128
-      - 8MHz
-      - 127KB
-      - 4KB
-    * - :ref:`board_atmelavr_mightycore1284`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA1284P
-      - 16MHz
-      - 127KB
-      - 16KB
-    * - :ref:`board_atmelavr_mightycore16`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA16
-      - 16MHz
-      - 15.50KB
-      - 1KB
-    * - :ref:`board_atmelavr_mightycore164`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA164P
-      - 16MHz
-      - 15.50KB
-      - 1KB
-    * - :ref:`board_atmelavr_mightycore32`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA32
-      - 16MHz
-      - 31.50KB
-      - 2KB
-    * - :ref:`board_atmelavr_mightycore324`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA324P
-      - 16MHz
-      - 31.50KB
-      - 2KB
-    * - :ref:`board_atmelavr_mightycore644`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA644P
-      - 16MHz
-      - 63KB
-      - 4KB
-    * - :ref:`board_atmelavr_mightycore8535`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA8535
-      - 16MHz
-      - 7.50KB
-      - 512B
-
 MH-ET Live
 ~~~~~~~~~~
 
@@ -4258,76 +4326,258 @@ Microchip
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_atmelavr_ATMEGA168`
+    * - :ref:`board_atmelavr_AT90CAN128`
+      - :ref:`platform_atmelavr`
+      - No
+      - AT90CAN128
+      - 16MHz
+      - 127KB
+      - 4KB
+    * - :ref:`board_atmelavr_AT90CAN32`
+      - :ref:`platform_atmelavr`
+      - No
+      - AT90CAN32
+      - 16MHz
+      - 31KB
+      - 2KB
+    * - :ref:`board_atmelavr_AT90CAN64`
+      - :ref:`platform_atmelavr`
+      - No
+      - AT90CAN64
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega128`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA128
+      - 16MHz
+      - 127KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega1280`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA1280
+      - 16MHz
+      - 127KB
+      - 8KB
+    * - :ref:`board_atmelavr_ATmega1281`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA1281
+      - 16MHz
+      - 127KB
+      - 8KB
+    * - :ref:`board_atmelavr_ATmega1284`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA1284
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_ATmega1284P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA1284P
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_ATmega16`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA16
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega164A`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA164A
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega164P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA164P
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega168`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA168
       - 16MHz
       - 15.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATMEGA168P`
+    * - :ref:`board_atmelavr_ATmega168P`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA168P
       - 16MHz
       - 15.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATMEGA328`
+    * - :ref:`board_atmelavr_ATmega168PB`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA168PB
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega2560`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA2560
+      - 16MHz
+      - 255KB
+      - 8KB
+    * - :ref:`board_atmelavr_ATmega2561`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA2561
+      - 16MHz
+      - 255KB
+      - 8KB
+    * - :ref:`board_atmelavr_ATmega32`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA32
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega324A`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA324A
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega324P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA324P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega324PA`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA324PA
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega324PB`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA324PB
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega328`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA328
       - 16MHz
       - 31.50KB
       - 2KB
-    * - :ref:`board_atmelavr_ATMEGA328P`
+    * - :ref:`board_atmelavr_ATmega328P`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
-    * - :ref:`board_atmelavr_atmega328pb`
+    * - :ref:`board_atmelavr_ATmega328PB`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA328PB
       - 16MHz
       - 31.50KB
       - 2KB
-    * - :ref:`board_atmelavr_ATMEGA48`
+    * - :ref:`board_atmelavr_ATmega48`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA48
       - 16MHz
       - 4KB
       - 512B
-    * - :ref:`board_atmelavr_ATMEGA48P`
+    * - :ref:`board_atmelavr_ATmega48PB`
       - :ref:`platform_atmelavr`
       - No
-      - ATMEGA48P
+      - ATMEGA48PB
       - 16MHz
       - 4KB
       - 512B
-    * - :ref:`board_atmelavr_ATMEGA8`
+    * - :ref:`board_atmelavr_ATmega64`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA64
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega640`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA640
+      - 16MHz
+      - 63KB
+      - 8KB
+    * - :ref:`board_atmelavr_ATmega644A`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA644A
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega644P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA644P
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega8`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA8
       - 16MHz
       - 7.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATMEGA88`
+    * - :ref:`board_atmelavr_ATmega8535`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA8535
+      - 16MHz
+      - 7.50KB
+      - 512B
+    * - :ref:`board_atmelavr_ATmega88`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA88
       - 16MHz
       - 7.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATMEGA88P`
+    * - :ref:`board_atmelavr_ATmega88P`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA88P
       - 16MHz
       - 7.50KB
       - 1KB
+    * - :ref:`board_atmelavr_ATmega88PB`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA88PB
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega48P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
 
 Microduino
 ~~~~~~~~~~
@@ -4797,13 +5047,6 @@ PanStamp
       - 8MHz
       - 31.50KB
       - 2KB
-    * - :ref:`board_timsp430_panStampNRG`
-      - :ref:`platform_timsp430`
-      - No
-      - CC430F5137
-      - 12MHz
-      - 31.88KB
-      - 4KB
 
 Pinoccio
 ~~~~~~~~
@@ -5127,6 +5370,27 @@ ReprapWorld
       - 256KB
       - 32KB
 
+RobotDyn
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 RoboticsBrno
 ~~~~~~~~~~~~
 
@@ -5245,41 +5509,62 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407vg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407zg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
       - On-board
@@ -5349,7 +5634,7 @@ ST
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - On-board
@@ -5489,7 +5774,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f100rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -5709,21 +5994,35 @@ Sipeed
       - RAM
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB
@@ -5939,6 +6238,83 @@ SweetPea
       - 4MB
       - 80KB
 
+TI
+~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_timsp430_lpmsp430fr5739`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR5739
+      - 16MHz
+      - 16KB
+      - 512B
+    * - :ref:`board_titiva_lplm4f120h5qr`
+      - :ref:`platform_titiva`
+      - On-board
+      - LPLM4F120H5QR
+      - 80MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_titiva_lptm4c1230c3pm`
+      - :ref:`platform_titiva`
+      - On-board
+      - LPTM4C1230C3PM
+      - 80MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_titiva_lptm4c1294ncpdt`
+      - :ref:`platform_titiva`
+      - On-board
+      - LPTM4C1294NCPDT
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_timsp430_lpmsp430f5529`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430F5529
+      - 16MHz
+      - 128KB
+      - 8KB
+    * - :ref:`board_timsp430_lpmsp430fr4133`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR4133
+      - 8MHz
+      - 15KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr5969`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR5969
+      - 8MHz
+      - 64KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr6989`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR6989
+      - 8MHz
+      - 127KB
+      - 2KB
+    * - :ref:`board_timsp430_lpmsp430g2553`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430G2553
+      - 16MHz
+      - 16KB
+      - 512B
+
 TTGO
 ~~~~
 
@@ -5988,6 +6364,27 @@ Taida Century
       - 512KB
       - 64KB
 
+TauLabs
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 Teensy
 ~~~~~~
 
@@ -6036,6 +6433,13 @@ Teensy
       - 180MHz
       - 1MB
       - 256KB
+    * - :ref:`board_teensy_teensy40`
+      - :ref:`platform_teensy`
+      - External
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 1MB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - External
@@ -6218,6 +6622,27 @@ Unknown
       - 240MHz
       - 4MB
       - 320KB
+
+VAE
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
 
 WEMOS
 ~~~~~

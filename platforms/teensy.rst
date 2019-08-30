@@ -38,7 +38,6 @@ Examples are listed from `Teensy development platform repository <https://github
 * `mbed-blink <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
@@ -94,6 +93,11 @@ Please click on board name for the further details.
       - 180MHz
       - 1MB
       - 256KB
+    * - :ref:`board_teensy_teensy40`
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 1MB
     * - :ref:`board_teensy_teensylc`
       - MKL26Z64
       - 48MHz
@@ -243,6 +247,12 @@ Teensy
       - 180MHz
       - 1MB
       - 256KB
+    * - :ref:`board_teensy_teensy40`
+      - External
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 1MB
     * - :ref:`board_teensy_teensylc`
       - External
       - MKL26Z64

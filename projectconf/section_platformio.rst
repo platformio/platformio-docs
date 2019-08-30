@@ -69,7 +69,7 @@ Example:
 .. code-block:: ini
 
     [platformio]
-    env_default = uno, nodemcu
+    default_envs = uno, nodemcu
 
     [env:uno]
     platform = atmelavr
@@ -88,7 +88,7 @@ Example:
 
     [env:lpmsp430g2553]
     platform = timsp430
-    framework = energia
+    framework = arduino
     board = lpmsp430g2553
     build_flags = -D LED_BUILTIN=RED_LED
 
@@ -142,13 +142,18 @@ of them. Please note that you can use Unix shell-style wildcards:
       extra_envs.ini
       extra_debug.ini
 
+    ; Global data for all [env:***]
+    [env]
+    platform = espressif32
+    framework = espidf
+
+    ; Custom data group
+    ; can be use in [env:***] via ${common.***}
     [common]
     debug_flags = -D RELEASE
     lib_flags = -lc -lm
 
     [env:esp-wrover-kit]
-    platform = espressif32
-    framework = espidf
     board = esp-wrover-kit
     build_flags = ${common.debug_flags}
 
@@ -158,8 +163,6 @@ of them. Please note that you can use Unix shell-style wildcards:
 .. code-block:: ini
 
     [env:esp32dev]
-    platform = espressif32
-    framework = espidf
     board = esp32dev
     build_flags = ${common.lib_flags} ${common.debug_flags}
 
@@ -328,8 +331,12 @@ a different configuration (new build flags, etc):
 .. code-block:: ini
 
     [platformio]
-    ; set a path to a cache folder
-    build_cache_dir = /tmp/platformio-shared-cache
+    ; Set a path to a cache folder
+    build_cache_dir =
+
+    ; Examples:
+    ; (Unix) build_cache_dir = /path/to/cache/folder
+    ; (Windows) build_cache_dir = C:/path/to/cache/folder
 
     [env:bluepill_f103c6]
     platform = ststm32

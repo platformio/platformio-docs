@@ -121,6 +121,7 @@ option.
   debug-tools/olimex-arm-usb-tiny-h
   debug-tools/olimex-jtag-tiny
   debug-tools/qemu
+  debug-tools/sipeed-rv-debugger
   debug-tools/stlink
   debug-tools/ti-icdi
   debug-tools/tumpa
@@ -219,9 +220,6 @@ Frameworks
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
 
-    * - :ref:`framework_energia`
-      - Energia Wiring-based framework enables pretty much anyone to start easily creating microcontroller-based projects and applications. Its easy-to-use libraries and functions provide developers of all experience levels to start blinking LEDs, buzzing buzzers and sensing sensors more quickly than ever before.
-
     * - :ref:`framework_espidf`
       - Espressif IoT Development Framework. Official development framework for ESP32.
 
@@ -230,6 +228,9 @@ Frameworks
 
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
+
+    * - :ref:`framework_kendryte-freertos-sdk`
+      - Kendryte SDK with FreeRTOS support
 
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
@@ -446,6 +447,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_pygamer_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -488,6 +496,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -984,7 +999,7 @@ Diymore
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Dongsen Technology
 ~~~~~~~~~~~~~~~~~~
@@ -1376,7 +1391,7 @@ Generic
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - External
@@ -2470,6 +2485,27 @@ ReprapWorld
       - 256KB
       - 32KB
 
+RobotDyn
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 RoboticsBrno
 ~~~~~~~~~~~~
 
@@ -2581,41 +2617,69 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f723ie`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F723IEK6
+      - 216MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407vg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407zg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2790,7 +2854,7 @@ ST
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - On-board
@@ -2973,17 +3037,17 @@ ST
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
+    * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32L476RGT6
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -3035,7 +3099,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - On-board
@@ -3064,6 +3128,13 @@ ST
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_ststm32_disco_f750n8`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F750N8H6
+      - 216MHz
+      - 64KB
+      - 340KB
 
 SainSmart
 ~~~~~~~~~
@@ -3367,21 +3438,35 @@ Sipeed
       - RAM
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB
@@ -3639,6 +3724,27 @@ Taida Century
       - 512KB
       - 64KB
 
+TauLabs
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 Teensy
 ~~~~~~
 
@@ -3673,6 +3779,13 @@ Teensy
       - 180MHz
       - 1MB
       - 256KB
+    * - :ref:`board_teensy_teensy40`
+      - :ref:`platform_teensy`
+      - External
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 1MB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - External
@@ -3722,6 +3835,27 @@ Unknown
       - 240MHz
       - 4MB
       - 320KB
+
+VAE
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
 
 VNG
 ~~~

@@ -11,7 +11,7 @@
 
 .. _board_ststm32_nucleo_l486rg:
 
-ST Nucleo L476RG
+ST Nucleo L486RG
 ================
 
 .. contents::
@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L476RGT6
+    - STM32L486RGT6
   * - **Frequency**
     - 80MHz
   * - **Flash**
@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-L476RG/?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-L486RG/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``nucleo_l486rg`` ID for :ref:`projectconf_env_board` option in :ref:
   platform = ststm32
   board = nucleo_l486rg
 
-You can override default ST Nucleo L476RG settings per build environment using
+You can override default ST Nucleo L486RG settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `nucleo_l486rg.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l486rg.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -58,7 +58,7 @@ board manifest `nucleo_l486rg.json <https://github.com/platformio/platform-ststm
   board = nucleo_l486rg
 
   ; change microcontroller
-  board_build.mcu = stm32l476rgt6
+  board_build.mcu = stm32l486rgt6
 
   ; change MCU frequency
   board_build.f_cpu = 80000000L
@@ -66,7 +66,7 @@ board manifest `nucleo_l486rg.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo L476RG supports the next uploading protocols:
+ST Nucleo L486RG supports the next uploading protocols:
 
 * ``blackmagic``
 * ``jlink``
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L476RG has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ST Nucleo L486RG has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1

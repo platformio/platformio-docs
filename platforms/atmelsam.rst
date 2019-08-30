@@ -191,6 +191,11 @@ Please click on board name for the further details.
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_pygamer_m4`
       - SAMD51J19A
       - 120MHz
@@ -568,6 +573,12 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_pygamer_m4`
       - External
       - SAMD51J19A

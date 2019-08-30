@@ -48,11 +48,12 @@ You can switch between debugging :ref:`debugging_tools` using
     Please click on compatible debug tool below for the further instructions.
 
 
-On-Board Debug Tools
+External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug probe and **ARE READY** for debugging!
-You do not need to use/buy external debug probe.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
 
 
 .. list-table::
@@ -70,13 +71,25 @@ You do not need to use/buy external debug probe.
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
       - K210
       - 400MHz
       - 16MB
       - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
       - :ref:`platform_kendryte210`
       - K210
       - 400MHz
@@ -123,21 +136,35 @@ Sipeed
       - RAM
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB

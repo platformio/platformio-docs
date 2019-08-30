@@ -88,7 +88,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_l152rb`
       - :ref:`platform_ststm32`
       - STM32L152RBT6
@@ -284,7 +284,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_l152rb`
       - :ref:`platform_ststm32`
       - On-board

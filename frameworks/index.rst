@@ -20,11 +20,11 @@ Frameworks
     arduino
     artik-sdk
     cmsis
-    energia
     esp8266-nonos-sdk
     esp8266-rtos-sdk
     espidf
     freedom-e-sdk
+    kendryte-freertos-sdk
     kendryte-standalone-sdk
     libopencm3
     mbed

@@ -37,16 +37,42 @@ Atmel AVR
 .. toctree::
     :maxdepth: 1
         
-    atmelavr/ATMEGA168
-    atmelavr/ATMEGA168P
-    atmelavr/ATMEGA328
-    atmelavr/ATMEGA328P
-    atmelavr/atmega328pb
-    atmelavr/ATMEGA48
-    atmelavr/ATMEGA48P
-    atmelavr/ATMEGA8
-    atmelavr/ATMEGA88
-    atmelavr/ATMEGA88P
+    atmelavr/AT90CAN128
+    atmelavr/AT90CAN32
+    atmelavr/AT90CAN64
+    atmelavr/ATmega128
+    atmelavr/ATmega1280
+    atmelavr/ATmega1281
+    atmelavr/ATmega1284
+    atmelavr/ATmega1284P
+    atmelavr/ATmega16
+    atmelavr/ATmega164A
+    atmelavr/ATmega164P
+    atmelavr/ATmega168
+    atmelavr/ATmega168P
+    atmelavr/ATmega168PB
+    atmelavr/ATmega2560
+    atmelavr/ATmega2561
+    atmelavr/ATmega32
+    atmelavr/ATmega324A
+    atmelavr/ATmega324P
+    atmelavr/ATmega324PA
+    atmelavr/ATmega324PB
+    atmelavr/ATmega328
+    atmelavr/ATmega328P
+    atmelavr/ATmega328PB
+    atmelavr/ATmega48
+    atmelavr/ATmega48PB
+    atmelavr/ATmega64
+    atmelavr/ATmega640
+    atmelavr/ATmega644A
+    atmelavr/ATmega644P
+    atmelavr/ATmega8
+    atmelavr/ATmega8535
+    atmelavr/ATmega88
+    atmelavr/ATmega88P
+    atmelavr/ATmega88PB
+    atmelavr/ATmega48P
     atmelavr/bluefruitmicro
     atmelavr/circuitplay_classic
     atmelavr/feather328p
@@ -151,7 +177,6 @@ Atmel AVR
     atmelavr/moteino
     atmelavr/moteino8mhz
     atmelavr/moteinomega
-    atmelavr/megacore128
     atmelavr/168pa16m
     atmelavr/168pa8m
     atmelavr/328p16m
@@ -161,13 +186,6 @@ Atmel AVR
     atmelavr/1284p8m
     atmelavr/644pa16m
     atmelavr/644pa8m
-    atmelavr/mightycore1284
-    atmelavr/mightycore16
-    atmelavr/mightycore164
-    atmelavr/mightycore32
-    atmelavr/mightycore324
-    atmelavr/mightycore644
-    atmelavr/mightycore8535
     atmelavr/emonpi
     atmelavr/panStampAVR
     atmelavr/pinoccio
@@ -238,6 +256,7 @@ Atmel SAM
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
     atmelsam/adafruit_metro_m4_airliftlite
+    atmelsam/adafruit_pygamer_advance_m4
     atmelsam/adafruit_pygamer_m4
     atmelsam/adafruit_pyportal_m4
     atmelsam/adafruit_trellis_m4
@@ -449,6 +468,7 @@ Intel MCS-51 (8051)
     intel_mcs51/n79e854
     intel_mcs51/n79e855
     intel_mcs51/stc15f204ea
+    intel_mcs51/stc15f2k60s2
     intel_mcs51/stc15w204s
     intel_mcs51/stc15w404as
     intel_mcs51/stc15w408as
@@ -461,8 +481,10 @@ Kendryte K210
     :maxdepth: 1
         
     kendryte210/sipeed-maix-bit
+    kendryte210/sipeed-maix-bit-mic
     kendryte210/sipeed-maix-go
-    kendryte210/sipeed-maix-one
+    kendryte210/sipeed-maix-one-dock
+    kendryte210/sipeed-maixduino
 
 Lattice iCE40
 -------------
@@ -581,6 +603,7 @@ Nordic nRF52
     nordicnrf52/adafruit_feather_nrf52840
     nordicnrf52/bluey
     nordicnrf52/delta_dfbm_nq620
+    nordicnrf52/adafruit_metro_nrf52840
     nordicnrf52/nrf52_dk
     nordicnrf52/nrf52840_dk
     nordicnrf52/nrf52840_dk_adafruit
@@ -678,9 +701,11 @@ ST STM32
     :maxdepth: 1
         
     ststm32/1bitsy_stm32f415rgt
+    ststm32/disco_f723ie
     ststm32/armed_v1
     ststm32/rumba32_f446ve
     ststm32/remram_v1
+    ststm32/st3dp001_eval
     ststm32/b96b_f446ve
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
@@ -691,6 +716,7 @@ ST STM32
     ststm32/black_f407ze
     ststm32/blackpill_f103c8
     ststm32/blackpill_f103c8_128
+    ststm32/robotdyn_blackpill_f303cc
     ststm32/blue_f407ve_mini
     ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
@@ -715,6 +741,8 @@ ST STM32
     ststm32/xdot_l151cc
     ststm32/netduino2plus
     ststm32/mote_l152rc
+    ststm32/nucleo_g071rb
+    ststm32/nucleo_wb55rg_p
     ststm32/rak811_tracker_32
     ststm32/rak811_tracker
     ststm32/cloud_jam
@@ -770,8 +798,8 @@ ST STM32
     ststm32/nucleo_l432kc
     ststm32/nucleo_l433rc_p
     ststm32/nucleo_l452re
-    ststm32/nucleo_l486rg
     ststm32/nucleo_l476rg
+    ststm32/nucleo_l486rg
     ststm32/nucleo_l496zg
     ststm32/nucleo_l496zg_p
     ststm32/nucleo_l4r5zi
@@ -802,9 +830,12 @@ ST STM32
     ststm32/genericSTM32F407VET6
     ststm32/genericSTM32F407VGT6
     ststm32/stm32f4stamp
+    ststm32/disco_f750n8
     ststm32/seeedArchMax
     ststm32/wio_3g
+    ststm32/sparky_v1
     ststm32/hy_tinystm103tb
+    ststm32/vake_v1
     ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211
     ststm32/ublox_c030_r410m
@@ -835,6 +866,7 @@ Teensy
     teensy/teensy31
     teensy/teensy35
     teensy/teensy36
+    teensy/teensy40
     teensy/teensylc
     teensy/teensy2pp
 
@@ -844,7 +876,6 @@ TI MSP430
 .. toctree::
     :maxdepth: 1
         
-    timsp430/panStampNRG
     timsp430/lpmsp430fr5739
     timsp430/lpmsp430f5529
     timsp430/lpmsp430fr4133

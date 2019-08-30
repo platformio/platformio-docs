@@ -69,9 +69,6 @@ Platforms
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
-
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 
@@ -97,9 +94,6 @@ Frameworks
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
-
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
 
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
@@ -172,24 +166,3 @@ Boards
       - 320MHz
       - 8MB
       - 1.25MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - On-board
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - On-board
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
-      - :ref:`platform_kendryte210`
-      - On-board
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB

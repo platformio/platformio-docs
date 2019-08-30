@@ -31,7 +31,6 @@ Examples
 
 Examples are listed from `SiFive development platform repository <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `freedom-e-sdk_dhrystone <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_dhrystone?utm_source=platformio&utm_medium=docs>`_
 * `freedom-e-sdk_hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
 * `freedom-e-sdk_multicore-hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_multicore-hello?utm_source=platformio&utm_medium=docs>`_
 * `freedom-e-sdk_sifive-welcome <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_sifive-welcome?utm_source=platformio&utm_medium=docs>`_

@@ -185,7 +185,7 @@ system terminal:
 
 .. code-block:: bash
 
-    python -c "import os; print os.path.join(os.getenv('PLATFORMIO_CORE_DIR', os.path.join(os.path.expanduser('~'), '.platformio')), 'penv')"
+    python -c "import os; print(os.path.join(os.getenv('PLATFORMIO_CORE_DIR', os.path.join(os.path.expanduser('~'), '.platformio')), 'penv'))"
 
     ######################## Examples
     # Windows

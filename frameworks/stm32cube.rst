@@ -65,12 +65,24 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f723ie`
+      - :ref:`platform_ststm32`
+      - STM32F723IEK6
+      - 216MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_remram_v1`
       - :ref:`platform_ststm32`
       - STM32F765VIT6
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - :ref:`platform_ststm32`
       - STM32F446VET6
@@ -256,7 +268,7 @@ You do not need to use/buy external debug probe.
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - STM32F303RET6
@@ -413,15 +425,15 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
+    * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
-      - STM32L476RGT6
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -466,7 +478,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - STM32L073VZT6
@@ -491,6 +503,12 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_f750n8`
+      - :ref:`platform_ststm32`
+      - STM32F750N8H6
+      - 216MHz
+      - 64KB
+      - 340KB
     * - :ref:`board_ststm32_seeedArchMax`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -575,25 +593,25 @@ Please click on board name for the further details.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407vg`
       - :ref:`platform_ststm32`
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407zg`
       - :ref:`platform_ststm32`
       - STM32F407ZGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - STM32F407ZET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_blackpill_f103c8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -606,12 +624,18 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_bluepill_f103c6`
       - :ref:`platform_ststm32`
       - STM32F103C6T6
@@ -647,13 +671,13 @@ Please click on board name for the further details.
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_fk407m1`
       - :ref:`platform_ststm32`
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
       - :ref:`platform_ststm32`
       - STM32F070CBT6
@@ -858,12 +882,24 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_ststm32_hy_tinystm103tb`
       - :ref:`platform_ststm32`
       - STM32F103TBU6
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_ublox_c030_n211`
       - :ref:`platform_ststm32`
       - STM32F437VG
@@ -1052,7 +1088,7 @@ Diymore
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Espotel
 ~~~~~~~
@@ -1136,7 +1172,7 @@ Generic
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - External
@@ -1537,6 +1573,27 @@ RemRam
       - 2MB
       - 512KB
 
+RobotDyn
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
 RushUp
 ~~~~~~
 
@@ -1578,41 +1635,55 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f723ie`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F723IEK6
+      - 216MHz
+      - 512KB
+      - 192KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407vg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407zg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - On-board
@@ -1787,7 +1858,7 @@ ST
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - On-board
@@ -1970,17 +2041,17 @@ ST
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
+    * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32L476RGT6
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -2032,7 +2103,7 @@ ST
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - On-board
@@ -2054,6 +2125,13 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_disco_f750n8`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F750N8H6
+      - 216MHz
+      - 64KB
+      - 340KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -2103,6 +2181,48 @@ Semtech
       - 32MHz
       - 256KB
       - 32KB
+
+TauLabs
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
+
+VAE
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
 
 rhomb.io
 ~~~~~~~~

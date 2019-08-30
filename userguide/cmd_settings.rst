@@ -102,15 +102,15 @@ Check for the platform updates interval.
 
 Enable caching for API requests and Library Manager
 
-.. _setting_enable_ssl:
+.. _setting_strict_ssl:
 
-``enable_ssl``
+``strict_ssl``
 ^^^^^^^^^^^^^^
 
 :Default:   No
 :Values:    Yes/No
 
-Enable SSL for PlatformIO Services
+Strict SSL for PlatformIO Services
 
 .. _setting_enable_telemetry:
 
@@ -120,7 +120,7 @@ Enable SSL for PlatformIO Services
 :Default:   Yes
 :Values:    Yes/No
 
-Share diagnostics and usage information to help us make PlatformIO better:
+Share minimal diagnostics and usage information to help us make PlatformIO better:
 
 * PlatformIO errors/exceptions
 * The name of used platforms, boards, frameworks (for example, "espressif", "arduino", "uno", etc.)
@@ -175,7 +175,7 @@ Examples
     check_platformio_interval       3                 Check for the new PlatformIO interval (days)
     check_platforms_interval        7                 Check for the platform updates interval (days)
     enable_cache                    Yes               Enable caching for API requests and Library Manager
-    enable_ssl                      No                Enable SSL for PlatformIO Services
+    strict_ssl                      No                Strict SSL for PlatformIO Services
     enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
     projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PIO Home)
@@ -253,7 +253,7 @@ Examples
     check_platformio_interval       3                 Check for the new PlatformIO interval (days)
     check_platforms_interval        7                 Check for the platform updates interval (days)
     enable_cache                    Yes               Enable caching for API requests and Library Manager
-    enable_ssl                      No                Enable SSL for PlatformIO Services
+    strict_ssl                      No                Enable SSL for PlatformIO Services
     enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
     projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PIO Home)

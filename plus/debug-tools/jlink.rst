@@ -221,6 +221,9 @@ Frameworks
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
 
+    * - :ref:`framework_kendryte-freertos-sdk`
+      - Kendryte SDK with FreeRTOS support
+
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
 
@@ -260,6 +263,13 @@ Boards
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_f723ie`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F723IEK6
+      - 216MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_armed_v1`
       - :ref:`platform_ststm32`
       - External
@@ -281,6 +291,13 @@ Boards
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_st3dp001_eval`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F401VGT6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - :ref:`platform_ststm32`
       - On-board
@@ -421,6 +438,13 @@ Boards
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_atmelsam_adafruit_pygamer_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -644,28 +668,28 @@ Boards
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407vg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407zg`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_blackpill_f103c8`
       - :ref:`platform_ststm32`
       - External
@@ -680,13 +704,20 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_robotdyn_blackpill_f303cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_bluepill_f103c6`
       - :ref:`platform_ststm32`
       - External
@@ -903,14 +934,14 @@ Boards
       - STM32F407VGT6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_fk407m1`
       - :ref:`platform_ststm32`
       - External
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_espressif32_firebeetle32`
       - :ref:`platform_espressif32`
       - External
@@ -1184,6 +1215,13 @@ Boards
       - 168MHz
       - 2MB
       - 256KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_microduino32_flash`
       - :ref:`platform_ststm32`
       - External
@@ -1380,6 +1418,13 @@ Boards
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
     * - :ref:`board_espressif32_esp32-evb`
       - :ref:`platform_espressif32`
       - External
@@ -1401,6 +1446,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_nucleo_wb55rg_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32WB55RG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_espressif32_lopy`
       - :ref:`platform_espressif32`
       - External
@@ -1701,7 +1753,7 @@ Boards
       - STM32F303K8T6
       - 72MHz
       - 64KB
-      - 16KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - On-board
@@ -1884,17 +1936,17 @@ Boards
       - 80MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_l486rg`
+    * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_l476rg`
+    * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32L476RGT6
+      - STM32L486RGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -1946,7 +1998,7 @@ Boards
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - On-board
@@ -2108,6 +2160,13 @@ Boards
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_disco_f750n8`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F750N8H6
+      - 216MHz
+      - 64KB
+      - 340KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - External
@@ -2180,21 +2239,35 @@ Boards
       - 32KB
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maix-go`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
       - K210
       - 400MHz
       - 16MB
       - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one`
+    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
       - :ref:`platform_kendryte210`
-      - On-board
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
       - K210
       - 400MHz
       - 16MB
@@ -2234,6 +2307,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_sparky_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303CCT6
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_nxplpc_lpc1114fn28`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2290,6 +2370,13 @@ Boards
       - 180MHz
       - 1MB
       - 256KB
+    * - :ref:`board_teensy_teensy40`
+      - :ref:`platform_teensy`
+      - External
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 1MB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - External
@@ -2318,6 +2405,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_vake_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - External

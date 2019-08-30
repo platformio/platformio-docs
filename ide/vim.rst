@@ -11,10 +11,10 @@
 
 .. _ide_vim:
 
-VIM
+Vim
 ===
 
-`VIM <http://www.vim.org/>`_ is an open-source, powerful and configurable text
+`Vim <http://www.vim.org/>`_ is an open-source, powerful and configurable text
 editor. Vim is designed for use both from a command-line interface and as a
 standalone application in a graphical user interface.
 
@@ -50,6 +50,7 @@ command and generate project via :option:`platformio init --ide` command:
 
 Recommended bundles:
 
+* C/C++/ language server supporting cross references, hierarchies, completion and semantic highlighting - `CCLS: vim lsp <https://github.com/MaskRay/ccls/wiki/vim-lsp>`_
 * Syntax highlight - `Arduino-syntax-file <https://github.com/vim-scripts/Arduino-syntax-file>`_
 * Code Completion - `YouCompleteMe <https://github.com/Valloric/YouCompleteMe>`_ (see configuration example by **Anthony Ford** `PlatformIO/YouCompleteMe Integration <https://gist.github.com/ajford/f551b2b6fd4d6b6e1ef2>`_)
 * Syntax checking - `Syntastic <https://github.com/scrooloose/syntastic>`_

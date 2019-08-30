@@ -292,7 +292,7 @@ and installing them manually again.
 
 1. "Windows > Start Menu > Settings > System > Apps & Features", select
    Python interpreters and uninstall them.
-2. Install the latest Python 2.7 interpreter, see :ref:`faq_install_python` guide
+2. Install the latest Python interpreter, see :ref:`faq_install_python` guide
 3. Remove ``C:\Users\YourUserName\.platformio`` and ``C:\.platformio`` folders
    if exist (do not forget to replace "YourUserName" with the real user name)
 4. Restart :ref:`pioide`.

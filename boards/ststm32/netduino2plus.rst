@@ -107,10 +107,10 @@ N2+ does not have on-board debug probe and **IS NOT READY** for debugging. You w
     - Default
   * - :ref:`debugging_tool_jlink`
     - 
-    - Yes
+    - 
   * - :ref:`debugging_tool_stlink`
     - 
-    - 
+    - Yes
 
 Frameworks
 ----------

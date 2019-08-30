@@ -217,7 +217,7 @@ near ``platformio.ini``.
     import subprocess
 
     revision = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip()
-    print "-DPIO_SRC_REV=%s" % revision
+    print("-DPIO_SRC_REV=%s" % revision)
 
 
 .. _projectconf_src_build_flags:
@@ -268,7 +268,7 @@ be applied in theirs order.
 `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
 
 By default, ``src_filter`` is predefined to
-``+<*> -<.git/> -<svn/> -<example/> -<examples/> -<test/> -<tests/>``,
+``+<*> -<.git/> -<.svn/> -<example/> -<examples/> -<test/> -<tests/>``,
 that means "includes ALL files, then
 exclude ``.git`` and ``svn`` repository folders, ``example`` ... folder.
 

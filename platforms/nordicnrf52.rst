@@ -96,6 +96,11 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_nrf52_dk`
       - NRF52832
       - 64MHz
@@ -287,6 +292,12 @@ Adafruit
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
       - On-board
       - NRF52840
       - 64MHz

@@ -17,7 +17,7 @@ Creating Library
 
 *PlatformIO* :ref:`librarymanager` doesn't have any requirements to a library
 source code structure. The only one requirement is library's manifest file -
-:ref:`library_config`. It can be located inside your library or in the another
+:ref:`library_config`, `library.properties <https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#library-metadata>`_ or `module.json <http://docs.yottabuild.org/reference/module.html>`_. It can be located inside your library or in the another
 location where |PIOAPICR| will have *HTTP* access.
 
 Updates to existing libraries are done every 24 hours. In case a more urgent
@@ -174,8 +174,8 @@ Register
 
 The registration requirements:
 
-* A library must adhere to the :ref:`library_config` specification.
-* There must be public *HTTP* access to the library :ref:`library_config` file.
+* A library must adhere to the library manifest specification - :ref:`library_config`, `library.properties <https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#library-metadata>`_ or `module.json <http://docs.yottabuild.org/reference/module.html>`_.
+* There must be public *HTTP* access to the library manifest file.
 
 Now, you can :ref:`register <cmd_lib_register>` your library and allow others
 to :ref:`install <cmd_lib_install>` it.
@@ -191,6 +191,8 @@ Command:
 .. code-block:: bash
 
     $ platformio lib register http://my.example.com/library.json
+    $ platformio lib register http://my.example.com/library.properties
+    $ platformio lib register http://my.example.com/module.json
 
 * `GitHub + detached release <https://platformio.org/lib/show/552/ACNoblex>`_
 * `Dependencies by author and framework <https://platformio.org/lib/show/3/PID-AutoTune>`_

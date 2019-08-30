@@ -137,7 +137,13 @@ We can walk through the code using control buttons, set breakpoints, see periphe
 Writing Unit Tests
 ------------------
 
-Now let’s write some tests using :ref:`unit_testing` feature that can help us test code directly on the target board. :ref:`unit_testing` engine by default supports only three frameworks: :ref:`framework_arduino`, :ref:`framework_energia` and :ref:`framework_mbed`. Since we decided to use :ref:`framework_stm32cube` we need to implement a custom :ref:`projectconf_test_transport` to print testing results and specify that condition in :ref:`projectconf`:
+Now let’s write some tests using :ref:`unit_testing` feature that can help us
+test code directly on the target board. :ref:`unit_testing` engine by default
+supports only three frameworks: :ref:`framework_arduino`, :ref:`framework_espidf`,
+:ref:`framework_mbed`, and :ref:`framework_mbed`. Since we decided to use
+:ref:`framework_stm32cube` we need to implement a custom
+:ref:`projectconf_test_transport` to print testing results and specify that
+condition in :ref:`projectconf`:
 
 .. code-block:: ini
 

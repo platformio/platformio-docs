@@ -34,6 +34,8 @@ Examples are listed from `Espressif 32 development platform repository <https://
 
 * `arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
 * `arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
+* `espidf-arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `espidf-arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
 * `espidf-aws-iot <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-aws-iot?utm_source=platformio&utm_medium=docs>`_
 * `espidf-ble-adv <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ble-adv?utm_source=platformio&utm_medium=docs>`_
 * `espidf-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-blink?utm_source=platformio&utm_medium=docs>`_
