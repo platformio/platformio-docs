@@ -66,7 +66,7 @@ Then:
 
 .. warning::
 
-    1. :ref:`piocore` **DOES NOT** depend on ``Cmake``, it has own cross-platform
+    1. :ref:`piocore` **DOES NOT** depend on ``CMake``, it has own cross-platform
        Build System. All data related to build flags and source code filtering
        should be specified using :ref:`projectconf_section_env_build` in
        :ref:`projectconf`.
@@ -74,7 +74,7 @@ Then:
     2. See know issue: :ref:`ide_clion_knownissues_inopde_not_supported` and how
     to resolve it.
 
-There are 6 predefined targets for building (*NOT FOR RUNNING*, see marks on
+There are 11 predefined targets for building (*NOT FOR RUNNING*, see marks on
 the screenshot above):
 
 * ``PLATFORMIO_BUILD`` - Build project without auto-uploading
@@ -90,6 +90,13 @@ the screenshot above):
 * ``PLATFORMIO_UPDATE`` - Update installed platforms and libraries via :ref:`cmd_update`
 * ``PLATFORMIO_REBUILD_PROJECT_INDEX`` - Rebuild C/C++ Index for the Project.
   Allows one to fix code completion and code linting issues.
+* ``PLATFORMIO_DEVICE_LIST`` - List connected devices.
+
+If you have multiple environements, you can select which one the target is going to use by 
+changing the build profile (See screenshot). Changing the build profile also updates 
+defines and includes for code completion in the editor to those specified by the environement.
+
+The profile ``All`` runs the target for all environements ; this was the previous behavior.
 
 .. warning::
     The libraries which are added, installed or used in a project after
