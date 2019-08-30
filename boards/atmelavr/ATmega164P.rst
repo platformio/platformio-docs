@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_mightycore32:
+.. _board_atmelavr_ATmega164P:
 
-MightyCore ATmega32
-===================
+ATmega164P/PA
+=============
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA32
+    - ATMEGA164P
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 31.50KB
+    - 15.50KB
   * - **RAM**
-    - 2KB
+    - 1KB
   * - **Vendor**
-    - `MCUdude <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega164p?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``mightycore32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega164P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:mightycore32]
+  [env:ATmega164P]
   platform = atmelavr
-  board = mightycore32
+  board = ATmega164P
 
-You can override default MightyCore ATmega32 settings per build environment using
+You can override default ATmega164P/PA settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `mightycore32.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/mightycore32.json>`_. For example,
+board manifest `ATmega164P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega164P.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:mightycore32]
+  [env:ATmega164P]
   platform = atmelavr
-  board = mightycore32
+  board = ATmega164P
 
   ; change microcontroller
-  board_build.mcu = atmega32
+  board_build.mcu = atmega164p
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MightyCore ATmega32 board.
+:ref:`piodebug` currently does not support ATmega164P/PA board.
 
 Frameworks
 ----------

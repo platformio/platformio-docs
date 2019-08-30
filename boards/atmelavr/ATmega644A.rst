@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_megacore128:
+.. _board_atmelavr_ATmega644A:
 
-MegaCore ATmega128
-==================
+ATmega644/A
+===========
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA128
+    - ATMEGA644A
   * - **Frequency**
-    - 8MHz
+    - 16MHz
   * - **Flash**
-    - 127KB
+    - 63KB
   * - **RAM**
     - 4KB
   * - **Vendor**
-    - `MCUdude <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega644a?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``megacore128`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega644A`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:megacore128]
+  [env:ATmega644A]
   platform = atmelavr
-  board = megacore128
+  board = ATmega644A
 
-You can override default MegaCore ATmega128 settings per build environment using
+You can override default ATmega644/A settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `megacore128.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/megacore128.json>`_. For example,
+board manifest `ATmega644A.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega644A.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:megacore128]
+  [env:ATmega644A]
   platform = atmelavr
-  board = megacore128
+  board = ATmega644A
 
   ; change microcontroller
-  board_build.mcu = atmega128
+  board_build.mcu = atmega644a
 
   ; change MCU frequency
-  board_build.f_cpu = 8000000L
+  board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MegaCore ATmega128 board.
+:ref:`piodebug` currently does not support ATmega644/A board.
 
 Frameworks
 ----------

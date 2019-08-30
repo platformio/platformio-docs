@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_mightycore8535:
+.. _board_atmelavr_AT90CAN128:
 
-MightyCore ATmega8535
-=====================
+AT90CAN128
+==========
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA8535
+    - AT90CAN128
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 7.50KB
+    - 127KB
   * - **RAM**
-    - 512B
+    - 4KB
   * - **Vendor**
-    - `MCUdude <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/AT90CAN128?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``mightycore8535`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``AT90CAN128`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:mightycore8535]
+  [env:AT90CAN128]
   platform = atmelavr
-  board = mightycore8535
+  board = AT90CAN128
 
-You can override default MightyCore ATmega8535 settings per build environment using
+You can override default AT90CAN128 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `mightycore8535.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/mightycore8535.json>`_. For example,
+board manifest `AT90CAN128.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/AT90CAN128.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:mightycore8535]
+  [env:AT90CAN128]
   platform = atmelavr
-  board = mightycore8535
+  board = AT90CAN128
 
   ; change microcontroller
-  board_build.mcu = atmega8535
+  board_build.mcu = at90can128
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MightyCore ATmega8535 board.
+:ref:`piodebug` currently does not support AT90CAN128 board.
 
 Frameworks
 ----------

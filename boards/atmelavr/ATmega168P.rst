@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_mightycore324:
+.. _board_atmelavr_ATmega168P:
 
-MightyCore ATmega324
-====================
+ATmega168P/PA
+=============
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA324P
+    - ATMEGA168P
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 31.50KB
+    - 15.50KB
   * - **RAM**
-    - 2KB
+    - 1KB
   * - **Vendor**
-    - `MCUdude <https://www.tindie.com/products/MCUdude/dip-40-arduino-compatible-development-board?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega168P?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``mightycore324`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega168P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:mightycore324]
+  [env:ATmega168P]
   platform = atmelavr
-  board = mightycore324
+  board = ATmega168P
 
-You can override default MightyCore ATmega324 settings per build environment using
+You can override default ATmega168P/PA settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `mightycore324.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/mightycore324.json>`_. For example,
+board manifest `ATmega168P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega168P.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:mightycore324]
+  [env:ATmega168P]
   platform = atmelavr
-  board = mightycore324
+  board = ATmega168P
 
   ; change microcontroller
-  board_build.mcu = atmega324p
+  board_build.mcu = atmega168p
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MightyCore ATmega324 board.
+:ref:`piodebug` currently does not support ATmega168P/PA board.
 
 Frameworks
 ----------
