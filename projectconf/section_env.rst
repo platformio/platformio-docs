@@ -93,7 +93,7 @@ Options
 .. toctree::
     :maxdepth: 2
 
-    section_env_general
+    section_env_platform
     section_env_board
     section_env_build
     section_env_upload

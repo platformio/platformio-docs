@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _projectconf_section_env_general:
+.. _projectconf_section_env_platform:
 
-General options
----------------
+Platform options
+----------------
 
 .. contents::
     :local:

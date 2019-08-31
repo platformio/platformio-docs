@@ -14,6 +14,45 @@
 Advanced options
 ----------------
 
+.. _projectconf_env_extends:
+
+``extends``
+^^^^^^^^^^^
+
+.. versionadded:: 4.1
+
+Type: ``String`` | Multiple: ``Yes``
+
+This option allows to inherit configuration from other sections or build environments
+in :ref:`projectconf`. Multiple items are allowed, split them with ``,`` or
+with a new line.
+
+If you need to extend only a few options from some section, please take a look at
+:ref:`projectconf_dynamic_vars`.
+
+Example:
+
+.. code-block:: ini
+
+    [strict_ldf]
+    lib_ldf_mode = chain+
+    lib_compat_mode = strict
+
+    [espressi32_base]
+    platform = espressif32
+    framework = arduino
+
+    [env:release]
+    extends = espressi32_base, strict_ldf
+    board = esp32dev
+    build_flags = -D RELEASE
+
+    [env:debug]
+    extends = env:release
+    build_type = debug
+    build_flags = -D DEBUG
+
+
 .. _projectconf_extra_scripts:
 
 ``extra_scripts``
