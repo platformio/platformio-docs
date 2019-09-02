@@ -767,6 +767,13 @@ Boards
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nxplpc_elektor_cocorico`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2524,6 +2531,13 @@ Boards
       - 144MHz
       - 2.00MB
       - 1.95MB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_espressif32_xinabox_cw02`
       - :ref:`platform_espressif32`
       - External

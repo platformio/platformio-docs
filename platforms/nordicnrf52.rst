@@ -154,6 +154,11 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_sdt52832b`
       - NRF52832
       - 64MHz
@@ -164,6 +169,11 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_hackaBLE`
       - NRF52832
       - 64MHz
@@ -297,6 +307,12 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
       - On-board
       - NRF52840
@@ -374,6 +390,25 @@ Nordic
       - 256KB
     * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
       - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+
+Particle
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - External
       - NRF52840
       - 64MHz
       - 796KB

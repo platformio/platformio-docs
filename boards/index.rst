@@ -602,6 +602,7 @@ Nordic nRF52
     nordicnrf52/adafruit_feather_nrf52832
     nordicnrf52/adafruit_feather_nrf52840
     nordicnrf52/bluey
+    nordicnrf52/adafruit_cplaynrf52840
     nordicnrf52/delta_dfbm_nq620
     nordicnrf52/adafruit_metro_nrf52840
     nordicnrf52/nrf52_dk
@@ -611,6 +612,7 @@ Nordic nRF52
     nordicnrf52/redbear_blend2
     nordicnrf52/sdt52832b
     nordicnrf52/stct_nrf52_minidev
+    nordicnrf52/particle_xenon
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_evk_nina_b1
 

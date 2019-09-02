@@ -496,6 +496,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2323,6 +2330,27 @@ OSHChip
       - 32MHz
       - 256KB
       - 32KB
+
+Particle
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 Pycom Ltd.
 ~~~~~~~~~~

@@ -840,6 +840,12 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1422,6 +1428,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_espressif32_xinabox_cw02`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1883,6 +1895,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -5047,6 +5066,27 @@ PanStamp
       - 8MHz
       - 31.50KB
       - 2KB
+
+Particle
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 Pinoccio
 ~~~~~~~~
