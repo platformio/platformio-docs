@@ -60,6 +60,7 @@ Contents
     :maxdepth: 1
 
     plus/pio-account
+    plus/pio-check
     plus/pio-remote
     plus/debugging
     plus/unit-testing
