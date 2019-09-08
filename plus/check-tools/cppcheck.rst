@@ -14,15 +14,15 @@
 Cppcheck
 ========
 
-**Cppcheck** is a static analysis tool for C/C++ code. It provides a unique 
-code analysis to detect bugs and focuses on detecting undefined behavior and 
-dangerous coding constructs. The goal is to detect only real errors in the 
-code (i.e. have very few false positives). More information about this tool on 
+**Cppcheck** is a static analysis tool for C/C++ code. It provides a unique
+code analysis to detect bugs and focuses on detecting undefined behavior and
+dangerous coding constructs. The goal is to detect only real errors in the
+code (i.e. have very few false positives). More information about this tool on
 `the official webpage  <http://cppcheck.sourceforge.net>`__.
 
 .. hint::
-  Cppcheck is rarely wrong about reported errors. But there are many bugs that 
-  it doesn't detect. You will find more bugs in your software by testing your 
+  Cppcheck is rarely wrong about reported errors. But there are many bugs that
+  it doesn't detect. You will find more bugs in your software by testing your
   software carefully than by using Cppcheck.
 
 .. contents:: Contents
@@ -31,9 +31,9 @@ code (i.e. have very few false positives). More information about this tool on
 Features
 --------
 
-**Cppcheck** supports a wide variety of static checks that may not be covered 
-by the compiler itself. These checks are static analysis checks that can be 
-performed at a source code level. The program is directed towards static 
+**Cppcheck** supports a wide variety of static checks that may not be covered
+by the compiler itself. These checks are static analysis checks that can be
+performed at a source code level. The program is directed towards static
 analysis checks that are rigorous, rather than heuristic in nature.
 
 Some of the defects that might be detected include:
@@ -50,21 +50,22 @@ Some of the defects that might be detected include:
 Additional checks
 -----------------
 
-Be default **Cppcheck** is configured to check the next additonal defects:
-  - ``warning``
-  - ``style``
-  - ``performance``
-  - ``portability``
-  - ``unusedFunction``
+Be default **Cppcheck** is configured to check the next additional defects:
 
-The full list of supported check with detailed description is located on 
+- ``warning``
+- ``style``
+- ``performance``
+- ``portability``
+- ``unusedFunction``
+
+The full list of supported check with detailed description is located on
 `the official webpage  <https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/>`__.
 
 Configuration
 -------------
 
-**Cppcheck** is implicitly used as the default check tool when :ref:`projectconf_check_tool` 
-option in :ref:`projectconf` is not set. To be explicit, you can specify it 
+**Cppcheck** is implicitly used as the default check tool when :ref:`projectconf_check_tool`
+option in :ref:`projectconf` is not set. To be explicit, you can specify it
 in the configuration directly:
 
 .. code-block:: ini
@@ -128,9 +129,9 @@ your project requirements:
       - Start ``<jobs>`` threads to do the checking simultaneously.
 
 Addons (MISRA, CERT)
---------------------------
+--------------------
 
-**Cppcheck** provides several addon scripts that analyze dump files to check 
+**Cppcheck** provides several addon scripts that analyze dump files to check
 compatibility with secure coding standards and to locate various issues.
 Most useful addons for verifying compliance with popular guidelines are
 **MISRA** and **CERT**.
@@ -138,17 +139,17 @@ Most useful addons for verifying compliance with popular guidelines are
 MISRA
 ~~~~~
 
-``MISRA`` is a proprietary set of software development guidelines for the 
-C/C++ programming languages developed by MISRA (Motor Industry Software 
-Reliability Association).  It aims to facilitate code safety, security, 
-portability, and reliability  in the context of embedded systems, specifically 
-those systems programmed in ISO C/C++. 
+``MISRA`` is a proprietary set of software development guidelines for the
+C/C++ programming languages developed by MISRA (Motor Industry Software
+Reliability Association).  It aims to facilitate code safety, security,
+portability, and reliability  in the context of embedded systems, specifically
+those systems programmed in ISO C/C++.
 
 .. note::
-  Since this standard is proprietary, **Cppcheck** does not display error text 
-  by specifying only the number of violated rules (for example, [c2012-21.3]). 
-  If you want to display full texts for violated rules, you will need to 
-  create a text file containing MISRA rules, which you will have to pass when 
+  Since this standard is proprietary, **Cppcheck** does not display error text
+  by specifying only the number of violated rules (for example, [c2012-21.3]).
+  If you want to display full texts for violated rules, you will need to
+  create a text file containing MISRA rules, which you will have to pass when
   calling the script with ``--rule-texts`` flag.
 
 In order to use ``MISRA`` addon you will need to provide a special file with
@@ -166,8 +167,8 @@ the description of ``MISRA`` rules. Usually, it has the next contents:
   Rule 21.4
   R21.4 Rule description
 
-Next, you need to instruct **Cppcheck** that you want to run an additional 
-addon script. Since this script requires an additional file with rules, 
+Next, you need to instruct **Cppcheck** that you want to run an additional
+addon script. Since this script requires an additional file with rules,
 you can pass it via a special ``json`` file:
 
 .. code-block:: json
@@ -185,20 +186,20 @@ Finally, add new flag to :ref:`projectconf_check_flags`:
     platform = ...
     board = ...
     check_tool = cppcheck
-    check_flags = 
+    check_flags =
       cppcheck: --addon=misra.json
 
-The full list of implemented ``MISRA`` checks can be found on 
-`the official webpage  <http://cppcheck.sourceforge.net/misra.php>`__. 
+The full list of implemented ``MISRA`` checks can be found on
+`the official webpage  <http://cppcheck.sourceforge.net/misra.php>`__.
 
 CERT
 ~~~~
 
-``SEI CERT`` coding standard provides rules for secure coding in the C 
-programming language. The goal of these rules and recommendations is to 
-develop safe, reliable, and secure systems, for example by eliminating 
-undefined behaviors that can lead to undefined program behaviors and 
-exploitable vulnerabilities. 
+``SEI CERT`` coding standard provides rules for secure coding in the C
+programming language. The goal of these rules and recommendations is to
+develop safe, reliable, and secure systems, for example by eliminating
+undefined behaviors that can lead to undefined program behaviors and
+exploitable vulnerabilities.
 
 In order to use the ``CERT`` addon, simply specify it as an additional flag in
 :ref:`projectconf_check_flags` section:
@@ -209,5 +210,5 @@ In order to use the ``CERT`` addon, simply specify it as an additional flag in
     platform = ...
     board = ...
     check_tool = cppcheck
-    check_flags = 
+    check_flags =
       cppcheck: --addon=cert.py

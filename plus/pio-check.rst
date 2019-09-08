@@ -9,25 +9,25 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. |PIOCheck| replace:: **PIO Check**
+
 .. _piocheck:
 
-**PIO Check**
-====================
+PIO Check
+=========
+
+.. versionadded:: 4.1
 
 **Automated code analysis without hassle!**
 
-.. note::
-
-  `Demo, discussions, request support for new tools. <link_here>`_
-
-Static analysis bacame an important part of software development cycle. It can
-identify potential bugs, vulnerabilities and security threats by doing an 
-analysis on the source code level without having to test it on hardware or 
+Static analysis became an important part of software development cycle. It can
+identify potential bugs, vulnerabilities and security threats by doing an
+analysis on the source code level without having to test it on hardware or
 execute any code.
 
-**PIO Check** helps reduce development cost by enabling engineers to detect the 
-precise location of defects and eliminate issues more efficiently and earlier 
-in the development cycle. It can also ensure compliance with internal or 
+|PIOCheck| helps reduce development cost by enabling engineers to detect the
+precise location of defects and eliminate issues more efficiently and earlier
+in the development cycle. It can also ensure compliance with internal or
 industry coding standards such as MISRA, CERT, etc.
 
 Key features:
@@ -39,7 +39,7 @@ Key features:
   - Multiple architectures and development platforms.
   - Cross-platform: Windows, MacOS, Linux.
 
-**PIO Check** can detect a wide range of known defects in C/C++ code, including:
+|PIOCheck| can detect a wide range of known defects in C/C++ code, including:
   - Potential NULL pointer dereferences
   - Possible indexing beyond array bounds
   - Suspicious assignments
@@ -48,8 +48,8 @@ Key features:
   - Out of scope memory usage
 
 .. warning::
-  Before performimg a static analysis check, make sure your project builds 
-  without errors. For information about how to build a project, see the 
+  Before performimg a static analysis check, make sure your project builds
+  without errors. For information about how to build a project, see the
   :ref:`cmd_run` command or :ref:`ide_vscode` guide.
 
 .. contents:: Contents
@@ -59,8 +59,8 @@ Key features:
 Configuration
 -------------
 
-**PIO Check** allows selecting what tool is used for finding defects in 
-the project, what source files are checked. **PIO Check** can be configured 
+|PIOCheck| allows selecting what tool is used for finding defects in
+the project, what source files are checked. |PIOCheck| can be configured
 from :ref:`projectconf` using the next options:
 
 .. toctree::
@@ -68,10 +68,12 @@ from :ref:`projectconf` using the next options:
 
   ../projectconf/section_env_check
 
+.. _check_tools:
+
 Check tools
 -----------
 
-You can switch between or specify multiple tools used for finding defects 
+You can switch between or specify multiple tools used for finding defects
 using :ref:`projectconf_check_tool` option:
 
 .. code-block:: ini
@@ -82,7 +84,7 @@ using :ref:`projectconf_check_tool` option:
     check_tool = cppcheck, clangtidy
 
 
-Detailed information about supported check tools and their configuration 
+Detailed information about supported check tools and their configuration
 process can be found on these pages:
 
 .. toctree::
@@ -91,12 +93,14 @@ process can be found on these pages:
   check-tools/cppcheck
   check-tools/clang-tidy
 
+.. _check_severity:
+
 Defect severity
 ---------------
 
-``Defect severity`` is a classification of software defect (bug, 
-vulnerability, etc) that indicates the degree of negative impact on the quality 
-of software. **PIO Check** uses the next classification of possible defects:
+Defect severity is a classification of software defect (bug,
+vulnerability, etc) that indicates the degree of negative impact on the quality
+of software. |PIOCheck| uses the next classification of possible defects:
 
 .. list-table::
     :header-rows:  1
@@ -104,21 +108,20 @@ of software. **PIO Check** uses the next classification of possible defects:
     * - Severity
       - Meaning
 
-    * - ``HIGH``
+    * - ``high``
       - Issues that are possibly bugs
 
-    * - ``MEDIUM``
+    * - ``medium``
       - Suggestions about defensive programming in order to prevent potential bugs
 
-    * - ``LOW``
+    * - ``low``
       - Issues related to code cleanup and performance (unused functions, redundant code, const-ness, etc)
 
-.. _check_tools:
 
 CLI Guide
 ---------
 
-**PIO Check** can be configured using command line commands. Detailed description
+|PIOCheck| can be configured using command line commands. Detailed description
 of these commands can be found here:
 
 .. toctree::

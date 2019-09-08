@@ -27,7 +27,7 @@ Check options
 
 Type: ``String`` | Multiple: ``Yes`` | Default: ``cppcheck``
 
-The name of the check tool used for analysis. This option is useful when you 
+A name of the check tool used for analysis. This option is useful when you
 want to check source code with two or more tools.
 
 See available tools in :ref:`check_tools`.
@@ -36,7 +36,7 @@ See available tools in :ref:`check_tools`.
 
 .. code-block:: ini
 
-    [env:check]
+    [env:myenv]
     platform = ...
     board = ...
     check_tool = cppcheck, clangtidy
@@ -49,16 +49,15 @@ See available tools in :ref:`check_tools`.
 
 Type: ``String (Pattern)`` | Multiple: ``Yes``
 
-This option allows specifing which source files should be
+This option allows specifying which source files should be
 included/excluded from the check process. The filter supports 2 templates:
 
 * ``+<PATH>`` include template
 * ``-<PATH>`` exclude template
 
-``PATH`` MUST BE related from :ref:`projectconf_pio_src_dir`. All patterns will
+``PATH`` MUST BE related from a project root directory. All patterns will
 be applied in their order.
 `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
-
 
 Another option for filtering source files is :option:`platformio check --filter` command.
 
@@ -66,11 +65,11 @@ Another option for filtering source files is :option:`platformio check --filter`
 
 .. code-block:: ini
 
-    [env:check]
+    [env:custom_check_filter]
     platform = ...
     board = ...
     check_tool = clangtidy
-    check_filter = "-<*> +<src/module_to_check>"
+    check_filter = -<*> +<src/module_to_check>
 
 
 .. _projectconf_check_flags:
@@ -80,10 +79,10 @@ Another option for filtering source files is :option:`platformio check --filter`
 
 Type: ``String`` | Multiple: ``No``
 
-Additional flags to be passed to the tool command line. This option is useful 
-when you want to adjust the check process to fit your project requirements. 
-By default, the flags are passed to all tools specified in :ref:`projectconf_check_tool` 
-section. To set individual flags, define tool name at the begining of the line.
+Additional flags to be passed to the tool command line. This option is useful
+when you want to adjust the check process to fit your project requirements.
+By default, the flags are passed to all tools specified in :ref:`projectconf_check_tool`
+section. To set individual flags, define tool name at the beginning of the line.
 
 Another option for adding flags is :option:`platformio check --flags` command.
 
@@ -91,11 +90,11 @@ Another option for adding flags is :option:`platformio check --flags` command.
 
 .. code-block:: ini
 
-    [env:check]
+    [env:extra_check_flags]
     platform = ...
     board = ...
     check_tool = cppcheck, clangtidy
-    check_flags = 
+    check_flags =
       --common-flag
       cppcheck: --enable=performance --inline-suppr
       clangtidy: -fix-errors -format-style=mozilla
@@ -106,25 +105,10 @@ Another option for adding flags is :option:`platformio check --flags` command.
 ``check_severity``
 ^^^^^^^^^^^^^^^^^^
 
-Type: ``String`` | Multiple: ``no`` | Default: ``low``
+Type: ``String`` | Multiple: ``Yes`` | Default: ``low, medium, high``
 
-This option allows specifing the severity level of defects that are reported 
-by the tools:
-
-.. list-table::
-    :header-rows:  1
-
-    * - Severity
-      - Meaning
-
-    * - ``HIGH``
-      - Issues that are possibly bugs
-
-    * - ``MEDIUM``
-      - Suggestions about defensive programming in order to prevent potential bugs
-
-    * - ``LOW``
-      - Issues related to code cleanup and performance (unused functions, redundant code, const-ness, etc)
+This option allows specifying the :ref:`check_severity` types which will
+be reported by the :ref:`check_tools`.
 
 Another option for filtering source files is :option:`platformio check --severity` command.
 
@@ -132,7 +116,7 @@ Another option for filtering source files is :option:`platformio check --severit
 
 .. code-block:: ini
 
-    [env:check]
+    [env:detect_only_medium_or_high_defects]
     platform = ...
     board = ...
-    check_severity = medium
+    check_severity = medium, high

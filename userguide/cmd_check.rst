@@ -14,7 +14,7 @@
 platformio check
 ================
 
-Helper command for :ref:`code_analysis`.
+Helper command for :ref:`piocheck`.
 
 .. contents::
 
@@ -29,11 +29,9 @@ Usage
 Description
 -----------
 
-Perform static analysis check on PlatformIO based project. More details about 
-PlatformIO :ref:`code_analysis`. By default ``CppCheck`` analysis tool is used.
+Perform static analysis check on PlatformIO based project. By default :ref:`check_tool_cppcheck` analysis tool is used.
 
-This command allows you to run checks for the environments specified
-in :ref:`projectconf`.
+More details about PlatformIO :ref:`piocheck`.
 
 Options
 -------
@@ -43,7 +41,7 @@ Options
 .. option::
     -e, --environment
 
-Process specified environments. More details :option:`platformio check --environment`
+Process specified environments.
 
 .. option::
     --filter
@@ -51,15 +49,17 @@ Process specified environments. More details :option:`platformio check --environ
 Normally a program has many source files. By default only :ref:`projectconf_pio_src_dir`
 and :ref:`projectconf_pio_include_dir` are checked. You can specify which source
 files should be included/excluded from check process. The paths in filter should
-be **relative to the root** of the project.
+be **relative to the root** of a project.
 
-For example, ``platformio check --filter "-<*> +<src/> +<tests/>"``
+Multiple ``--filter`` options are allowed.
+
+Example: ``platformio check --filter "-<*> +<src/> +<tests/>"``
 
 .. option::
     --flags
 
 Specify additional flags that need to be passed to the analysis tool. If multiple tools
-set in :ref:`projectconf_check_tool` option, the flags are passed to all of them. 
+set in :ref:`projectconf_check_tool` option, the flags are passed to all of them.
 Individual flags for each tool can be added using a special suffix with the tool name.
 
 .. list-table::
@@ -74,28 +74,16 @@ Individual flags for each tool can be added using a special suffix with the tool
     * - ``-D<ID>``
       - Define preprocessor symbol.
 
-For example, ``platformio check --flags "-DDEBUG cppcheck: --std=c++11  --platform=avr8"``
+Multiple ``--flags`` options are allowed.
+
+Example: ``platformio check --flags "-DDEBUG cppcheck: --std=c++11  --platform=avr8"``
 
 .. option::
     --severity
 
-    Selects which severity level of the messages to be displayed. 
-    The possible severity levels for found defects are:
+Specify the :ref:`check_severity` types which will be reported by the :ref:`check_tools`.
 
-.. list-table::
-    :header-rows:  1
-
-    * - Severity
-      - Meaning
-
-    * - ``HIGH``
-      - Issues that are possibly bugs
-
-    * - ``MEDIUM``
-      - Suggestions about defensive programming in order to prevent potential bugs
-
-    * - ``LOW``
-      - Issues related to code cleanup and performance (unused functions, redundant code, const-ness, etc)
+Multiple ``--severity`` options are allowed.
 
 .. option::
     -d, --project-dir
@@ -106,19 +94,18 @@ to the current working directory (``CWD``).
 .. option::
     -c, --project-conf
 
-.. versionadded:: 4.0
-
 Process project with a custom :ref:`projectconf`.
 
 .. option::
     --json-output
 
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 
 .. option::
     -s, --silent
 
-Suppress progress reporting
+Suppress progress reporting and show only defects with ``high`` severity.
+See :ref:`check_severity`.
 
 .. option::
     -v, --verbose
@@ -131,4 +118,4 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 Examples
 --------
 
-For the examples please follow to :ref:`code_analysis` page.
+For the examples please follow to :ref:`piocheck` page.

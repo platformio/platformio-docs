@@ -14,9 +14,9 @@
 Clang-Tidy
 ==========
 
-**Clang-Tidy** is a clang-based C++ "linter" tool. Its purpose is to provide an 
-extensible framework for diagnosing and fixing typical programming errors, 
-like style violations, interface misuse, or bugs that can be deduced via 
+**Clang-Tidy** is a clang-based C++ "linter" tool. Its purpose is to provide an
+extensible framework for diagnosing and fixing typical programming errors,
+like style violations, interface misuse, or bugs that can be deduced via
 static analysis.
 Official page can be found `here  <https://clang.llvm.org/extra/clang-tidy>`__.
 
@@ -26,21 +26,22 @@ Official page can be found `here  <https://clang.llvm.org/extra/clang-tidy>`__.
 Features
 --------
 
-**Clang-Tidy** supports a large variety of static checks that may not be covered 
-by the compiler itself. These checks are static analysis checks that can be 
+**Clang-Tidy** supports a large variety of static checks that may not be covered
+by the compiler itself. These checks are static analysis checks that can be
 performed at a source code level.
 
 Some of the defects that might be detected include:
-  - Buffer overflow
-  - Potential NULL pointer dereferences
-  - Use of memory that has already been deallocated
-  - Out of scope memory usage
-  - Failure to set a return value from a subroutine
+
+- Buffer overflow
+- Potential NULL pointer dereferences
+- Use of memory that has already been deallocated
+- Out of scope memory usage
+- Failure to set a return value from a subroutine
 
 Configuration
 -------------
 
-To enable **Clang-Tidy** tool simply add it to the :ref:`projectconf_check_tool` 
+To enable **Clang-Tidy** tool simply add it to the :ref:`projectconf_check_tool`
 option in :ref:`projectconf`:
 
 .. code-block:: ini
@@ -60,7 +61,7 @@ Useful options that can be used used for adjusting check process:
 Supported checks
 ----------------
 
-There are currently the following groups of most used checks (By default all 
+There are currently the following groups of most used checks (By default all
 checks are enabled):
 
   .. list-table::
@@ -105,8 +106,8 @@ checks are enabled):
     * - ``readability-``
       - Checks that target readability-related issues that don’t relate to any particular coding style.
 
-The full list of supported checks can be found on 
-`the official webpage  <https://clang.llvm.org/extra/clang-tidy/checks/list.html>`__. 
+The full list of supported checks can be found on
+`the official webpage  <https://clang.llvm.org/extra/clang-tidy/checks/list.html>`__.
 
 Extra flags
 -----------
@@ -136,12 +137,13 @@ your project requirements:
       - Display the errors from system headers.
 
 
-An example with enablin specific checks and fixing code on the fly:
+An example with enabling specific checks and fixing code on the fly:
+
 .. code-block:: ini
 
     [env:myenv]
     platform = ...
     board = ...
     check_tool = clangtidy
-    check_flags = 
+    check_flags =
       clangtidy: --check=-*,cert-*,clang-analyzer-* --fix
