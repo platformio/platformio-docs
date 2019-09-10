@@ -2645,6 +2645,62 @@ BBC
       - 256KB
       - 16KB
 
+BOXTEC
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_microchippic32_helvepic32_smd`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX250F128D
+      - 48MHz
+      - 120KB
+      - 32KB
+    * - :ref:`board_microchippic32_helvepic32_breadboardside`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX250F128B
+      - 48MHz
+      - 120KB
+      - 32KB
+    * - :ref:`board_microchippic32_helvepic32`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX250F128B
+      - 48MHz
+      - 120KB
+      - 32KB
+    * - :ref:`board_microchippic32_helvepic32_mx270`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX270F256B
+      - 48MHz
+      - 244KB
+      - 62KB
+    * - :ref:`board_microchippic32_helvepic32_robot`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX270F256D
+      - 48MHz
+      - 244KB
+      - 62KB
+    * - :ref:`board_microchippic32_helvepic32_smd_mx270`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX270F256D
+      - 48MHz
+      - 244KB
+      - 62KB
+
 BPI Tech
 ~~~~~~~~
 
@@ -2770,6 +2826,27 @@ Calliope
       - 16MHz
       - 256KB
       - 16KB
+
+ChipKIT
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_microchippic32_rgb_station`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX270F256D
+      - 48MHz
+      - 240KB
+      - 62KB
 
 Controllino
 ~~~~~~~~~~~
@@ -3022,6 +3099,13 @@ Digilent
       - 80MHz
       - 508KB
       - 32KB
+    * - :ref:`board_microchippic32_chipkit_wifire_revc`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MZ2048EFG100
+      - 200MHz
+      - 1.98MB
+      - 512KB
 
 Digistump
 ~~~~~~~~~
@@ -3533,6 +3617,13 @@ Fubarino
       - 80MHz
       - 508KB
       - 128KB
+    * - :ref:`board_microchippic32_fubarino_mini_20`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX270F256D
+      - 48MHz
+      - 240KB
+      - 62KB
 
 Generic
 ~~~~~~~
@@ -4282,6 +4373,27 @@ MakerAsia
       - 240MHz
       - 4MB
       - 320KB
+
+Makerology
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_microchippic32_dsmini`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX150F128C
+      - 40MHz
+      - 120KB
+      - 32KB
 
 Malyan
 ~~~~~~
@@ -6081,6 +6193,13 @@ SparkFun
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_microchippic32_cui32`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX440F512H
+      - 80MHz
+      - 508KB
+      - 32KB
     * - :ref:`board_atmelavr_sparkfun_satmega128rfa1`
       - :ref:`platform_atmelavr`
       - No

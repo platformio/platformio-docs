@@ -535,6 +535,7 @@ Microchip PIC32
     :maxdepth: 1
         
     microchippic32/picadillo_35t
+    microchippic32/dsmini
     microchippic32/cerebot32mx4
     microchippic32/cerebot32mx7
     microchippic32/openscope
@@ -551,17 +552,27 @@ Microchip PIC32
     microchippic32/chipkit_pi
     microchippic32/fubarino_mini
     microchippic32/fubarino_sd
+    microchippic32/helvepic32_smd
+    microchippic32/helvepic32_breadboardside
+    microchippic32/helvepic32
+    microchippic32/helvepic32_mx270
+    microchippic32/helvepic32_robot
+    microchippic32/helvepic32_smd_mx270
     microchippic32/clicker2
     microchippic32/flipnclickmz
+    microchippic32/fubarino_mini_20
     microchippic32/pinguino32
     microchippic32/openbci
     microchippic32/usbono_pic32
+    microchippic32/cui32
     microchippic32/nofire
     microchippic32/quick240_usb
+    microchippic32/rgb_station
     microchippic32/cui32stem
     microchippic32/ubw32_mx460
     microchippic32/ubw32_mx795
     microchippic32/lenny
+    microchippic32/chipkit_wifire_revc
 
 Nordic nRF51
 ------------
