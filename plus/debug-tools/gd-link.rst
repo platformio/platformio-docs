@@ -9,17 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _debugging_tool_sipeed-rv-debugger:
+.. _debugging_tool_gd-link:
 
-Sipeed RV Debugger
-==================
+GD-LINK
+=======
 
-.. image:: ../../_static/images/debug_probes/sipeed-rv-debugger.jpg
-  :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs
+.. image:: ../../_static/images/debug_probes/gd-link.jpg
+  :target: http://gd32mcu.21ic.com/data/documents/yingyongbiji/GD-Link%20Adapter%20User%20Manual%20V1.0.pdf
 
-High-speed 3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power
-supply 5VDC device.
-Official reference can be found `here <https://tang.sipeed.com/en/hardware-overview/rv-debugger/?utm_source=platformio&utm_medium=docs>`__.
+GD-Link adapter is a three-in-one multi-function development tool for GD32 series of MCUs.
+It provides CMSIS-DAP debugger port with JTAG/SWD interface.
+Official reference can be found `here <http://gd32mcu.21ic.com/data/documents/yingyongbiji/GD-Link%20Adapter%20User%20Manual%20V1.0.pdf>`__.
 
 .. contents:: Contents
     :local:
@@ -35,7 +35,7 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = sipeed-rv-debugger
+    debug_tool = gd-link
 
 If you would like to use this tool for firmware uploading, please change
 upload protocol:
@@ -45,43 +45,85 @@ upload protocol:
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = sipeed-rv-debugger
-    upload_protocol = sipeed-rv-debugger
+    debug_tool = gd-link
+    upload_protocol = gd-link
 
 More options:
 
 * :ref:`projectconf_section_env_debug`
 * :ref:`projectconf_section_env_upload`
 
-.. include:: _common_jtag_drivers.rst
+Drivers
+-------
+
+:Windows:
+  Check vendor recommendations.
+
+:Mac:
+  Not required.
+
+:Linux:
+  Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+  them before, please check that your rules are up-to-date or repeat steps.
 
 Wiring Connections
 ------------------
 
+JTAG Interface
+~~~~~~~~~~~~~~
+
 .. list-table::
   :header-rows:  1
 
-  * - Sipeed RV Debugger Connector
+  * - GD-Link JTAG 20-Pin Connector
     - Board JTAG Pin
     - Description
-  * - 1
-    - GND
-    - Digital ground
-  * - 2
-    - TDI
-    - Test Data In pin
-  * - 6
+  * - +3V3
+    - VCC
+    - Positive Supply Voltage — Power supply for JTAG interface drivers
+  * - TMS/IO
     - TMS
     - Test Mode State pin
-  * - 10
+  * - TCK/CLK
     - TCK
     - JTAG Return Test Clock
-  * - 8
+  * - TDO/SWO
     - TDO
     - Test Data Out pin
-  * - 4
-    - RST
+  * - TDI
+    - TDI
+    - Test Data In pin
+  * - GDN
+    - GND
+    - Digital ground
+  * - TReset
+    - RESET
     - Connect this pin to the (active low) reset input of the target CPU
+
+Serial Wire Mode Interface (SWD)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+  :header-rows:  1
+
+  *  - GD-Link SWD 20-Pin Connector
+     - Board SWD Pin
+     - Description
+  *  - +3V3
+     - VCC
+     - Positive Supply Voltage — Power supply for JTAG interface drivers
+  *  - GND
+     - GND
+     - Digital ground
+  *  - TMS/IO
+     - SWDIO
+     - Data I/O
+  *  - TCK/CLK
+     - SWCLK
+     - Clock
+  *  - TReset
+     - RESET
+     - Connect this pin to the (active low) reset input of the target CPU
 
 .. begin_platforms
 
@@ -96,9 +138,6 @@ Platforms
     * - :ref:`platform_gd32v`
       - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
 
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
-
 Frameworks
 ----------
 .. list-table::
@@ -112,12 +151,6 @@ Frameworks
 
     * - :ref:`framework_gd32vf103-sdk`
       - GigaDevice GD32VF103 Firmware Library (SDK)
-
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
-
-    * - :ref:`framework_kendryte-freertos-sdk`
-      - Kendryte SDK with FreeRTOS support
 
 Boards
 ------
@@ -150,38 +183,3 @@ Boards
       - 108MHz
       - 128KB
       - 32KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB

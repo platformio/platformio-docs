@@ -89,6 +89,12 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_aceinna_imu_LowCostRTK`
+      - :ref:`platform_aceinna_imu`
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
     * - :ref:`board_ststm32_rhombio_l476dmw1k`
       - :ref:`platform_ststm32`
       - STM32L476VGT6
@@ -570,6 +576,12 @@ Please click on board name for the further details.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_aceinna_imu_OpenIMU330`
+      - :ref:`platform_aceinna_imu`
+      - STM32L431CB
+      - 80MHz
+      - 128KB
+      - 64KB
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
       - STM32F417VGT6
@@ -600,17 +612,17 @@ Please click on board name for the further details.
       - 168MHz
       - 512KB
       - 128KB
-    * - :ref:`board_ststm32_black_f407zg`
-      - :ref:`platform_ststm32`
-      - STM32F407ZGT6
-      - 168MHz
-      - 1MB
-      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - STM32F407ZET6
       - 168MHz
       - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_blackpill_f103c8`
       - :ref:`platform_ststm32`
@@ -756,18 +768,18 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_ststm32_rak811_tracker_32`
-      - :ref:`platform_ststm32`
-      - STM32L151RBT6
-      - 32MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - STM32L151RBT6
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - :ref:`platform_ststm32`
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -991,6 +1003,34 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+
+Aceinna
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_aceinna_imu_LowCostRTK`
+      - :ref:`platform_aceinna_imu`
+      - On-board
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenIMU330`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32L431CB
+      - 80MHz
+      - 128KB
+      - 64KB
 
 Armed
 ~~~~~
@@ -1516,13 +1556,6 @@ RAK
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_rak811_tracker_32`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32L151RBT6
-      - 32MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - External
@@ -1530,6 +1563,13 @@ RAK
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 32KB
 
 RUMBA
 ~~~~~
@@ -1663,19 +1703,19 @@ ST
       - 168MHz
       - 512KB
       - 128KB
-    * - :ref:`board_ststm32_black_f407zg`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F407ZGT6
-      - 168MHz
-      - 1MB
-      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZET6
       - 168MHz
       - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`

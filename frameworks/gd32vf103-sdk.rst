@@ -9,17 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _framework_kendryte-standalone-sdk:
+.. _framework_gd32vf103-sdk:
 
-Kendryte Standalone SDK
-=======================
+GigaDevice GD32V SDK
+====================
 
 :Configuration:
-  :ref:`projectconf_env_framework` = ``kendryte-standalone-sdk``
+  :ref:`projectconf_env_framework` = ``gd32vf103-sdk``
 
-Kendryte Standalone SDK without OS support
+GigaDevice GD32VF103 Firmware Library (SDK)
 
-For more detailed information please visit `vendor site <https://github.com/kendryte/kendryte-standalone-sdk?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -65,42 +65,24 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
+    * - :ref:`board_gd32v_gd32vf103v-eval`
+      - :ref:`platform_gd32v`
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano`
+      - :ref:`platform_gd32v`
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
 
 
 Examples
 --------
 
-* `Kendryte Standalone SDK for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `GigaDevice GD32V SDK for GigaDevice GD32V <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -110,8 +92,8 @@ Platforms
     * - Name
       - Description
 
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
+    * - :ref:`platform_gd32v`
+      - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
 
 Boards
 ------
@@ -134,38 +116,17 @@ Sipeed
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
+    * - :ref:`board_gd32v_gd32vf103v-eval`
+      - :ref:`platform_gd32v`
       - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano`
+      - :ref:`platform_gd32v`
       - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB

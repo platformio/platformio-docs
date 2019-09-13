@@ -552,15 +552,15 @@ Please click on board name for the further details.
       - 168MHz
       - 512KB
       - 128KB
-    * - :ref:`board_ststm32_black_f407zg`
-      - STM32F407ZGT6
-      - 168MHz
-      - 1MB
-      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - STM32F407ZET6
       - 168MHz
       - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_blackpill_f103c8`
       - STM32F103C8T6
@@ -682,16 +682,16 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_ststm32_rak811_tracker_32`
-      - STM32L151RBT6
-      - 32MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_rak811_tracker`
       - STM32L151RBT6
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - STM32F103C8T6
       - 72MHz
@@ -1454,18 +1454,18 @@ RAK
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_rak811_tracker_32`
-      - External
-      - STM32L151RBT6
-      - 32MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_rak811_tracker`
       - External
       - STM32L151RBT6
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - External
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 32KB
 
 RUMBA
 ~~~~~
@@ -1585,17 +1585,17 @@ ST
       - 168MHz
       - 512KB
       - 128KB
-    * - :ref:`board_ststm32_black_f407zg`
-      - External
-      - STM32F407ZGT6
-      - 168MHz
-      - 1MB
-      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - External
       - STM32F407ZET6
       - 168MHz
       - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - External

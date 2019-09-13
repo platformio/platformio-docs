@@ -17,9 +17,9 @@ Kendryte K210
 :Configuration:
   :ref:`projectconf_env_platform` = ``kendryte210``
 
-Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
+Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
-For more detailed information please visit `vendor site <http://www.sipeed.com?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://kendryte.com/?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:

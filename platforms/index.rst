@@ -40,6 +40,7 @@ Embedded
     espressif32
     espressif8266
     freescalekinetis
+    gd32v
     infineonxmc
     intel_arc32
     intel_mcs51

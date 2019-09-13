@@ -149,9 +149,9 @@ BOXTEC
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_microchippic32_helvepic32_smd`
+    * - :ref:`board_microchippic32_helvepic32`
       - No
-      - 32MX250F128D
+      - 32MX250F128B
       - 48MHz
       - 120KB
       - 32KB
@@ -161,9 +161,9 @@ BOXTEC
       - 48MHz
       - 120KB
       - 32KB
-    * - :ref:`board_microchippic32_helvepic32`
+    * - :ref:`board_microchippic32_helvepic32_smd`
       - No
-      - 32MX250F128B
+      - 32MX250F128D
       - 48MHz
       - 120KB
       - 32KB

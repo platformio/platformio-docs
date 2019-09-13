@@ -9,17 +9,16 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _debugging_tool_sipeed-rv-debugger:
+.. _debugging_tool_altera-usb-blaster:
 
-Sipeed RV Debugger
-==================
+Altera / Intel USB-Blaster Download Cable
+=========================================
 
-.. image:: ../../_static/images/debug_probes/sipeed-rv-debugger.jpg
-  :target: https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs
+.. image:: ../../_static/images/debug_probes/altera-usb-blaster.jpg
+  :target: https://www.intel.com/content/www/us/en/programmable/products/boards_and_kits/download-cables.html?utm_source=platformio&utm_medium=docs
 
-High-speed 3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power
-supply 5VDC device.
-Official reference can be found `here <https://tang.sipeed.com/en/hardware-overview/rv-debugger/?utm_source=platformio&utm_medium=docs>`__.
+USB Blaster Download Cable is designed for ALTERA FPGA, CPLD, Active Serial Configuration Devices and Enhanced Configuration Devices, USB 2.0 connection to the PC and JTAG, AS, PS to the target device.
+Official reference can be found `here <https://www.intel.com/content/www/us/en/programmable/products/boards_and_kits/download-cables.html?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:
@@ -35,7 +34,7 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = sipeed-rv-debugger
+    debug_tool = altera-usb-blaster
 
 If you would like to use this tool for firmware uploading, please change
 upload protocol:
@@ -45,43 +44,51 @@ upload protocol:
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = sipeed-rv-debugger
-    upload_protocol = sipeed-rv-debugger
+    debug_tool = altera-usb-blaster
+    upload_protocol = altera-usb-blaster
 
 More options:
 
 * :ref:`projectconf_section_env_debug`
 * :ref:`projectconf_section_env_upload`
 
-.. include:: _common_jtag_drivers.rst
+Drivers
+-------
+
+Please install `official drivers <https://www.intel.com/content/www/us/en/programmable/support/support-resources/download/drivers/dri-index.html?utm_source=platformio&utm_medium=docs>`__.
 
 Wiring Connections
 ------------------
 
+.. image:: ../../_static/images/debug_probes/altera-usb-blaster-connector.jpg
+
+JTAG Interface
+~~~~~~~~~~~~~~
+
 .. list-table::
   :header-rows:  1
 
-  * - Sipeed RV Debugger Connector
+  * - USB-Blaster JTAG 10-Pin Connector
     - Board JTAG Pin
     - Description
   * - 1
-    - GND
-    - Digital ground
-  * - 2
-    - TDI
-    - Test Data In pin
-  * - 6
-    - TMS
-    - Test Mode State pin
-  * - 10
     - TCK
     - JTAG Return Test Clock
-  * - 8
+  * - 2
+    - GND
+    - Digital ground
+  * - 3
     - TDO
     - Test Data Out pin
   * - 4
-    - RST
-    - Connect this pin to the (active low) reset input of the target CPU
+    - VCC
+    - Positive Supply Voltage — Power supply for JTAG interface drivers
+  * - 5
+    - TMS
+    - Test Mode State pin
+  * - 9
+    - TDI
+    - Test Data In pin
 
 .. begin_platforms
 
@@ -96,9 +103,6 @@ Platforms
     * - :ref:`platform_gd32v`
       - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
 
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
-
 Frameworks
 ----------
 .. list-table::
@@ -112,12 +116,6 @@ Frameworks
 
     * - :ref:`framework_gd32vf103-sdk`
       - GigaDevice GD32VF103 Firmware Library (SDK)
-
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
-
-    * - :ref:`framework_kendryte-freertos-sdk`
-      - Kendryte SDK with FreeRTOS support
 
 Boards
 ------
@@ -150,38 +148,3 @@ Boards
       - 108MHz
       - 128KB
       - 32KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB

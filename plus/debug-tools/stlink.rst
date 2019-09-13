@@ -252,6 +252,20 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_aceinna_imu_LowCostRTK`
+      - :ref:`platform_aceinna_imu`
+      - On-board
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenIMU300`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F405RG
+      - 120MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_aceinna_imu_OpenIMU300ZA`
       - :ref:`platform_aceinna_imu`
       - External
@@ -259,6 +273,13 @@ Boards
       - 120MHz
       - 1MB
       - 128KB
+    * - :ref:`board_aceinna_imu_OpenIMU330`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32L431CB
+      - 80MHz
+      - 128KB
+      - 64KB
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
       - External
@@ -308,19 +329,19 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
-    * - :ref:`board_ststm32_black_f407zg`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F407ZGT6
-      - 168MHz
-      - 1MB
-      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZET6
       - 168MHz
       - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_blackpill_f103c8`
       - :ref:`platform_ststm32`
@@ -595,13 +616,6 @@ Boards
       - 64MHz
       - 512KB
       - 192.00KB
-    * - :ref:`board_ststm32_rak811_tracker_32`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32L151RBT6
-      - 32MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - External
@@ -609,6 +623,13 @@ Boards
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - On-board

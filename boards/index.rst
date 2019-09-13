@@ -29,7 +29,10 @@ Aceinna IMU
 .. toctree::
     :maxdepth: 1
         
+    aceinna_imu/LowCostRTK
+    aceinna_imu/OpenIMU300
     aceinna_imu/OpenIMU300ZA
+    aceinna_imu/OpenIMU330
 
 Atmel AVR
 ---------
@@ -433,6 +436,15 @@ Freescale Kinetis
     freescalekinetis/frdm_kw41z
     freescalekinetis/hexiwear
 
+GigaDevice GD32V
+----------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    gd32v/gd32vf103v-eval
+    gd32v/sipeed-longan-nano
+
 Infineon XMC
 ------------
 
@@ -552,9 +564,9 @@ Microchip PIC32
     microchippic32/chipkit_pi
     microchippic32/fubarino_mini
     microchippic32/fubarino_sd
-    microchippic32/helvepic32_smd
-    microchippic32/helvepic32_breadboardside
     microchippic32/helvepic32
+    microchippic32/helvepic32_breadboardside
+    microchippic32/helvepic32_smd
     microchippic32/helvepic32_mx270
     microchippic32/helvepic32_robot
     microchippic32/helvepic32_smd_mx270
@@ -725,8 +737,8 @@ ST STM32
     ststm32/armstrap_eagle512
     ststm32/black_f407ve
     ststm32/black_f407vg
-    ststm32/black_f407zg
     ststm32/black_f407ze
+    ststm32/black_f407zg
     ststm32/blackpill_f103c8
     ststm32/blackpill_f103c8_128
     ststm32/robotdyn_blackpill_f303cc
@@ -756,8 +768,8 @@ ST STM32
     ststm32/mote_l152rc
     ststm32/nucleo_g071rb
     ststm32/nucleo_wb55rg_p
-    ststm32/rak811_tracker_32
     ststm32/rak811_tracker
+    ststm32/rak811_tracker_32
     ststm32/cloud_jam
     ststm32/cloud_jam_l4
     ststm32/disco_f334c8

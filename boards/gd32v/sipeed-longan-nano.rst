@@ -9,28 +9,28 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_kendryte210_sipeed-maix-bit:
+.. _board_gd32v_sipeed-longan-nano:
 
-Sipeed MAIX BiT
-===============
+Sipeed Longan Nano
+==================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dual core SoC.
+Platform :ref:`platform_gd32v`: The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
 
 .. list-table::
 
   * - **Microcontroller**
-    - K210
+    - GD32VF103CBT6
   * - **Frequency**
-    - 400MHz
+    - 108MHz
   * - **Flash**
-    - 16MB
+    - 128KB
   * - **RAM**
-    - 6MB
+    - 32KB
   * - **Vendor**
     - `Sipeed <https://www.sipeed.com/?utm_source=platformio&utm_medium=docs>`__
 
@@ -38,58 +38,54 @@ Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dua
 Configuration
 -------------
 
-Please use ``sipeed-maix-bit`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sipeed-longan-nano`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:sipeed-maix-bit]
-  platform = kendryte210
-  board = sipeed-maix-bit
+  [env:sipeed-longan-nano]
+  platform = gd32v
+  board = sipeed-longan-nano
 
-You can override default Sipeed MAIX BiT settings per build environment using
+You can override default Sipeed Longan Nano settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `sipeed-maix-bit.json <https://github.com/sipeed/platform-kendryte210/blob/master/boards/sipeed-maix-bit.json>`_. For example,
+board manifest `sipeed-longan-nano.json <https://github.com/sipeed/platform-gd32v/blob/master/boards/sipeed-longan-nano.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:sipeed-maix-bit]
-  platform = kendryte210
-  board = sipeed-maix-bit
+  [env:sipeed-longan-nano]
+  platform = gd32v
+  board = sipeed-longan-nano
 
   ; change microcontroller
-  board_build.mcu = K210
+  board_build.mcu = GD32VF103CBT6
 
   ; change MCU frequency
-  board_build.f_cpu = 400000000L
+  board_build.f_cpu = 108000000L
 
 
 Uploading
 ---------
-Sipeed MAIX BiT supports the next uploading protocols:
+Sipeed Longan Nano supports the next uploading protocols:
 
-* ``iot-bus-jtag``
+* ``altera-usb-blaster``
+* ``gd-link``
 * ``jlink``
-* ``kflash``
-* ``minimodule``
-* ``olimex-arm-usb-ocd``
-* ``olimex-arm-usb-ocd-h``
-* ``olimex-arm-usb-tiny-h``
-* ``olimex-jtag-tiny``
+* ``serial``
 * ``sipeed-rv-debugger``
-* ``tumpa``
+* ``um232h``
 
-Default protocol is ``kflash``
+Default protocol is ``serial``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:sipeed-maix-bit]
-  platform = kendryte210
-  board = sipeed-maix-bit
+  [env:sipeed-longan-nano]
+  platform = gd32v
+  board = sipeed-longan-nano
 
-  upload_protocol = kflash
+  upload_protocol = serial
 
 Debugging
 ---------
@@ -104,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Sipeed MAIX BiT does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Sipeed Longan Nano does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -112,31 +108,19 @@ Sipeed MAIX BiT does not have on-board debug probe and **IS NOT READY** for debu
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_iot-bus-jtag`
+  * - :ref:`debugging_tool_altera-usb-blaster`
     - 
     - Yes
+  * - :ref:`debugging_tool_gd-link`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
-  * - :ref:`debugging_tool_minimodule`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-jtag-tiny`
     - 
     - 
   * - :ref:`debugging_tool_sipeed-rv-debugger`
     - 
     - 
-  * - :ref:`debugging_tool_tumpa`
+  * - :ref:`debugging_tool_um232h`
     - 
     - 
 
@@ -151,8 +135,5 @@ Frameworks
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
-
-    * - :ref:`framework_kendryte-freertos-sdk`
-      - Kendryte SDK with FreeRTOS support
+    * - :ref:`framework_gd32vf103-sdk`
+      - GigaDevice GD32VF103 Firmware Library (SDK)

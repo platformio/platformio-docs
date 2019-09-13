@@ -9,17 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _platform_aceinna_imu:
+.. _platform_gd32v:
 
-Aceinna IMU
-===========
+GigaDevice GD32V
+================
 
 :Configuration:
-  :ref:`projectconf_env_platform` = ``aceinna_imu``
+  :ref:`projectconf_env_platform` = ``gd32v``
 
-Open-source, embedded development platform for Aceinna IMU hardware. Run custom algorithms and navigation code on Aceinna IMU/INS hardware.
+The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
 
-For more detailed information please visit `vendor site <https://www.aceinna.com?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.gigadevice.com/products/microcontrollers/gd32/risc-v/?utm_source=platformio&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,11 +29,11 @@ For more detailed information please visit `vendor site <https://www.aceinna.com
 Examples
 --------
 
-Examples are listed from `Aceinna IMU development platform repository <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `GigaDevice GD32V development platform repository <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `OpenIMU300RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300RI?utm_source=platformio&utm_medium=docs>`_
-* `OpenIMU300ZI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300ZI?utm_source=platformio&utm_medium=docs>`_
-* `OpenIMU330BI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU330BI?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
+* `eval-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/eval-blink?utm_source=platformio&utm_medium=docs>`_
+* `longan-nano-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/longan-nano-blink?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -57,28 +57,6 @@ You can switch between debugging :ref:`debugging_tools` using
     Please click on compatible debug tool below for the further instructions.
 
 
-On-Board Debug Tools
-^^^^^^^^^^^^^^^^^^^^
-
-Boards listed below have on-board debug probe and **ARE READY** for debugging!
-You do not need to use/buy external debug probe.
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_aceinna_imu_LowCostRTK`
-      - STM32F469NIH6
-      - 180MHz
-      - 1MB
-      - 384KB
-
-
 External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -95,28 +73,23 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_aceinna_imu_OpenIMU300`
-      - STM32F405RG
-      - 120MHz
-      - 1MB
+    * - :ref:`board_gd32v_gd32vf103v-eval`
+      - GD32VF103VBT6
+      - 108MHz
       - 128KB
-    * - :ref:`board_aceinna_imu_OpenIMU300ZA`
-      - STM32F405RG
-      - 120MHz
-      - 1MB
+      - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano`
+      - GD32VF103CBT6
+      - 108MHz
       - 128KB
-    * - :ref:`board_aceinna_imu_OpenIMU330`
-      - STM32L431CB
-      - 80MHz
-      - 128KB
-      - 64KB
+      - 32KB
 
 
 Stable and upstream versions
 ----------------------------
 
-You can switch between `stable releases <https://github.com/aceinna/platform-aceinna_imu/releases>`__
-of Aceinna IMU development platform and the latest upstream version using
+You can switch between `stable releases <https://github.com/sipeed/platform-gd32v/releases>`__
+of GigaDevice GD32V development platform and the latest upstream version using
 :ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
 
 Stable
@@ -126,12 +99,12 @@ Stable
 
     ; Latest stable version
     [env:latest_stable]
-    platform = aceinna_imu
+    platform = gd32v
     board = ...
 
     ; Custom stable version
     [env:custom_stable]
-    platform = aceinna_imu@x.y.z
+    platform = gd32v@x.y.z
     board = ...
 
 Upstream
@@ -140,7 +113,7 @@ Upstream
 .. code-block:: ini
 
     [env:upstream_develop]
-    platform = https://github.com/aceinna/platform-aceinna_imu.git
+    platform = https://github.com/sipeed/platform-gd32v.git
     board = ...
 
 
@@ -153,14 +126,20 @@ Packages
     * - Name
       - Description
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
-      - SEGGER J-Link Software and Documentation Pack
+    * - `framework-arduino-gd32v <https://github.com/sipeed/Maixduino?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (GigaDevice GD32V Core)
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
-      - OpenOCD
+    * - `framework-gd32vf103-sdk <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio&utm_medium=docs>`__
+      - GigaDevice GD32V SDK
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `tool-gd32vflash <https://github.com/riscv-mcu/gd32-dfu-utils?utm_source=platformio&utm_medium=docs>`__
+      - GD32V FLASH TOOLS
+
+    * - `tool-openocd-gd32v <https://github.com/riscv/riscv-openocd?utm_source=platformio&utm_medium=docs>`__
+      - OpenOCD for RISC-V GigaDevice GD32V
+
+    * - `toolchain-gd32v <https://github.com/riscv-mcu/riscv-gnu-toolchain?utm_source=platformio&utm_medium=docs>`__
+      - GCC for GigaDevice GD32V
 
 .. warning::
     **Linux Users**:
@@ -176,6 +155,20 @@ Packages
         manufacturer
 
 
+Frameworks
+----------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_gd32vf103-sdk`
+      - GigaDevice GD32VF103 Firmware Library (SDK)
+
 Boards
 ------
 
@@ -185,8 +178,8 @@ Boards
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
-Aceinna
-~~~~~~~
+Sipeed
+~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -197,27 +190,15 @@ Aceinna
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_aceinna_imu_LowCostRTK`
-      - On-board
-      - STM32F469NIH6
-      - 180MHz
-      - 1MB
-      - 384KB
-    * - :ref:`board_aceinna_imu_OpenIMU300`
+    * - :ref:`board_gd32v_gd32vf103v-eval`
       - External
-      - STM32F405RG
-      - 120MHz
-      - 1MB
+      - GD32VF103VBT6
+      - 108MHz
       - 128KB
-    * - :ref:`board_aceinna_imu_OpenIMU300ZA`
+      - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano`
       - External
-      - STM32F405RG
-      - 120MHz
-      - 1MB
+      - GD32VF103CBT6
+      - 108MHz
       - 128KB
-    * - :ref:`board_aceinna_imu_OpenIMU330`
-      - External
-      - STM32L431CB
-      - 80MHz
-      - 128KB
-      - 64KB
+      - 32KB
