@@ -33,6 +33,12 @@ Pre-configured projects with source code are located in
 `PlatformIO Examples <https://github.com/platformio/platformio-examples>`_
 repository.
 
+Community Tutorials
+-------------------
+
+* `Arduino In-circuit Debugging with PlatformIO <https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc>`__
+* `ThingForward: First steps with PlatformIO’s Unified Debugger <https://www.thingforward.io/techblog/2018-07-04-first-steps-with-platformios-unified-debugger.html>`_
+
 Community Video Tutorials
 -------------------------
 
