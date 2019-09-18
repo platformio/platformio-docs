@@ -341,18 +341,22 @@ Espressif 32
     espressif32/m5stick-c
     espressif32/mhetesp32devkit
     espressif32/mhetesp32minikit
+    espressif32/magicbit
     espressif32/nano32
     espressif32/microduino-core-esp32
     espressif32/node32s
     espressif32/nodemcu-32s
     espressif32/quantum
     espressif32/odroid_esp32
+    espressif32/esp32-devkitlipo
     espressif32/esp32-evb
     espressif32/esp32-gateway
     espressif32/esp32-pro
     espressif32/esp32-poe
+    espressif32/esp32-poe-iso
     espressif32/oroca_edubot
     espressif32/onehorse32dev
+    espressif32/pycom_gpy
     espressif32/lopy
     espressif32/lopy4
     espressif32/wesp32
@@ -360,10 +364,14 @@ Espressif 32
     espressif32/sparkfun_lora_gateway_1-channel
     espressif32/ttgo-lora32-v1
     espressif32/ttgo-t-beam
+    espressif32/ttgo-t-watch
+    espressif32/ttgo-t1
+    espressif32/tinypico
     espressif32/turta_iot_node
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
     espressif32/lolin32
+    espressif32/wemos_d1_mini32
     espressif32/wemosbat
     espressif32/widora-air
     espressif32/xinabox_cw02

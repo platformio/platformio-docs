@@ -209,6 +209,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-devkitlipo`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-evb`
       - :ref:`platform_espressif32`
       - ESP32
@@ -276,6 +282,12 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin32`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wemos_d1_mini32`
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
@@ -821,6 +833,27 @@ MH-ET Live
       - 4MB
       - 320KB
 
+Magicblocks.io
+~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_magicbit`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 MakerAsia
 ~~~~~~~~~
 
@@ -918,6 +951,13 @@ OLIMEX
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_esp32-devkitlipo`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-evb`
       - :ref:`platform_espressif32`
       - External
@@ -940,6 +980,13 @@ OLIMEX
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp32-poe`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-poe-iso`
       - :ref:`platform_espressif32`
       - No
       - ESP32
@@ -1002,6 +1049,13 @@ Pycom Ltd.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_pycom_gpy`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lopy`
       - :ref:`platform_espressif32`
       - External
@@ -1107,6 +1161,20 @@ TTGO
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_ttgo-t-watch`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_ttgo-t1`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 ThaiEasyElec
 ~~~~~~~~~~~~
@@ -1124,6 +1192,27 @@ ThaiEasyElec
     * - :ref:`board_espressif32_espino32`
       - :ref:`platform_espressif32`
       - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+TinyPICO
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_tinypico`
+      - :ref:`platform_espressif32`
+      - No
       - ESP32
       - 240MHz
       - 4MB
@@ -1199,6 +1288,13 @@ WEMOS
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wemos_d1_mini32`
       - :ref:`platform_espressif32`
       - External
       - ESP32

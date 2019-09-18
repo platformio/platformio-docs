@@ -889,7 +889,7 @@ Packages
     * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897&utm_source=platformio&utm_medium=docs>`__
       - STM32Cube embedded software libraries
 
-    * - `tool-dfuutil <git://git.code.sf.net/p/dfu-util/dfu-util?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-dfuutil <http://dfu-util.sourceforge.net/?utm_source=platformio&utm_medium=docs>`__
       - Host side implementation of the DFU 1.0 and DFU 1.1 specifications
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
