@@ -14,7 +14,7 @@
 Unit Testing of a "Blink" Project
 =================================
 
-The goal of this tutorial is to demonstrate how is simple to use :ref:`unit_testing`.
+The goal of this tutorial is to demonstrate how simple it is to use :ref:`unit_testing`.
 
 * **Level:** Beginner
 * **Platforms:** Windows, macOS, Linux
@@ -25,10 +25,10 @@ The goal of this tutorial is to demonstrate how is simple to use :ref:`unit_test
 Setting Up the Project
 ----------------------
 
-1. Please navigate to :ref:`quickstart` section and create the "Blink Project".
+1. Please navigate to the :ref:`quickstart` section and create the "Blink Project".
 2. Create a ``test`` directory in the project (on the same level as ``src``)
-   and place ``test_main.cpp`` file in it (the source code is located below).
-3. Run tests using :ref:`cmd_test` command.
+   and place a ``test_main.cpp`` file in it (the source code is located below).
+3. Run tests using the :ref:`cmd_test` command.
 
 Project structure
 -----------------

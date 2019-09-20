@@ -46,7 +46,7 @@ Installation
 I. Atom
 ~~~~~~~
 
-0. `Download <https://atom.io>`_ and install official GitHub's Atom text editor. PlatformIO IDE is built on top of it
+0. `Download <https://atom.io>`_ and install GitHub's official Atom text editor. PlatformIO IDE is built on top of it.
 
 1. **Open** Atom Package Manager
 
@@ -54,7 +54,7 @@ I. Atom
   + *Windows*, ``Menu: File > Settings > Install``
   + *Linux*, ``Menu: Edit > Preferences > Install``
 
-2. **Search** for official ``platformio-ide`` `package <https://atom.io/packages/platformio-ide>`_
+2. **Search** for the official ``platformio-ide`` `package <https://atom.io/packages/platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
 .. image:: ../_static/images/ide/atom/ide-atom-pkg-installer.png
@@ -83,12 +83,12 @@ then **install it and restart Atom**:
 
   .. warning::
 
-      PLEASE DO NOT INSTALL CLANG 4.0. TEMPORARY, WE SUPPORT ONLY CLANG 3.9.
+      PLEASE DO NOT INSTALL CLANG 4.0. TEMPORARILY, WE SUPPORT ONLY CLANG 3.9.
 
-      If you see ``Failed to find MSBuild toolsets directory`` error in
+      If you see a ``Failed to find MSBuild toolsets directory`` error in
       the installation console, please ignore it and press any key to close
-      this window. PlatformIO IDE uses only Clang completion engine that
-      should work after it without any problems.
+      this window. PlatformIO IDE uses only the Clang completion engine, which
+      should work after that without any problems.
 
 - **Linux**: Using package managers: ``apt-get install clang`` or ``yum install clang``.
 - **Other Systems**: Download the latest `Clang for the other systems <http://llvm.org/releases/download.html>`_.
@@ -105,37 +105,37 @@ Quick Start
 -----------
 
 This tutorial introduces you to the basics of PlatformIO IDE workflow and shows
-you a creation process of a simple "Blink" example. After finishing you will
+you the creation process for a simple "Blink" example. After finishing, you will
 have a general understanding of how to work with projects in the IDE.
 
 Launch
 ~~~~~~
 
-After installation, you launch PlatformIO IDE by opening Atom. Once Atom is
-opened, PlatformIO IDE auto installer will continue to install dependent packages
-and :ref:`piocore`. Please be patient and let the installation complete. In the
-final result PlatformIO IDE will ask you to reload Atom window to apply
-installed components. Please click on ``Reload Now``. After it PlatformIO IDE is
-ready for using. Happy coding!
+After installation, launch PlatformIO IDE by opening Atom. Once Atom is
+opened, the PlatformIO IDE auto installer will continue to install dependent packages
+and :ref:`piocore`. Please be patient and let the installation complete. Once finished, 
+PlatformIO IDE will ask you to reload the Atom window to apply
+installed components. Please click on ``Reload Now``. After that, PlatformIO IDE is
+ready for use. Happy coding!
 
 Setting Up the Project
 ~~~~~~~~~~~~~~~~~~~~~~
 
-1. Click on "PlatformIO Home" button on the :ref:`atom_ide_platformio_toolbar`
+1. Click on the "PlatformIO Home" button on the :ref:`atom_ide_platformio_toolbar`
 
 .. image:: ../_static/images/ide/atom/ide-atom-welcome.png
 
-2. Click on "New Project", select a board and create new PlatformIO Project
+2. Click on "New Project", select a board and create a new PlatformIO Project
 
 .. image:: ../_static/images/ide/atom/ide-atom-new-project.png
 
-3. Open ``main.cpp`` file form ``src`` folder and replace its contents with
-   the next:
+3. Open the ``main.cpp`` file in the ``src`` folder and replace its contents with
+   the following:
 
 .. warning::
 
-    The code below works only in pair with Arduino-based boards. Please
-    follow to `PlatformIO Project Examples <https://github.com/platformio/platformio-examples>`_ repository for other pre-configured projects.
+    The code below only works with Arduino-based boards. Please
+    visit the `PlatformIO Project Examples <https://github.com/platformio/platformio-examples>`_ repository for other pre-configured projects.
 
 .. code-block:: cpp
 
@@ -177,7 +177,7 @@ Setting Up the Project
 Process Project
 ~~~~~~~~~~~~~~~
 
-PlatformIO IDE proposes different ways to process project (build, clean,
+PlatformIO IDE proposes different ways to process the project (build, clean,
 upload firmware, run other targets) using:
 
     - :ref:`atom_ide_platformio_toolbar`
@@ -186,12 +186,12 @@ upload firmware, run other targets) using:
 
 .. image:: ../_static/images/ide/atom/ide-atom-process-project.png
 
-5. Run ``Build`` and you should see green "success" result in the building
+5. Run ``Build`` and you should see a green "success" result in the build
    panel:
 
 .. image:: ../_static/images/ide/atom/ide-atom-build-project.png
 
-To upload firmware to the board run ``Upload``.
+To upload firmware to the board, run ``Upload``.
 
 6. What is more, you can run specific target or process project environment
    using ``Menu: PlatformIO > Run other target...``
@@ -205,29 +205,29 @@ And select desired target:
 .. image:: ../_static/images/ide/atom/ide-atom-quick-start-9.png
     :target: ../_images/ide-atom-quick-start-9.png
 
-7. To run built-in terminal interface choose ``Menu: PlatformIO > Terminal`` or
+7. To launch the built-in terminal interface, choose ``Menu: PlatformIO > Terminal`` or
    press the corresponding icon in the PlatformIO toolbar:
 
 .. image:: ../_static/images/ide/atom/ide-atom-quick-start-10.png
     :target: ../_images/ide-atom-quick-start-10.png
 
-It provides you fast access to all set of powerful :ref:`piocore` CLI commands:
+This provides you fast access to a set of powerful :ref:`piocore` CLI commands:
 
 .. image:: ../_static/images/ide/atom/ide-atom-quick-start-11.png
     :target: ../_images/ide-atom-quick-start-11.png
 
-8. To run built-in "Serial Monitor" choose ``Menu: PlatformIO > Serial Monitor``
+8. To run the built-in "Serial Monitor", choose ``Menu: PlatformIO > Serial Monitor``
    or press the corresponding icon in the PlatformIO toolbar:
 
 .. image:: ../_static/images/ide/atom/ide-atom-quick-start-12.png
     :target: ../_images/ide-atom-quick-start-12.png
 
-It has several settings to adjust your connection:
+The monitor has several settings to adjust your connection:
 
 .. image:: ../_static/images/ide/atom/ide-atom-quick-start-13.png
     :target: ../_images/ide-atom-quick-start-13.png
 
-And allows you to communicate with your board in an easy way:
+It also allows you to communicate with your board in an easy way:
 
 .. image:: ../_static/images/ide/atom/ide-atom-quick-start-14.png
     :target: ../_images/ide-atom-quick-start-14.png
@@ -249,7 +249,7 @@ PlatformIO Toolbar
 ------------------
 
 PlatformIO IDE Toolbar contains quick access buttons for the popular commands.
-Each button contains hint (delay mouse on it).
+Each button contains a hint (leave the mouse on it for a moment).
 
 .. image:: ../_static/images/ide/atom/ide-atom-toolbar.png
 
@@ -281,18 +281,18 @@ Building / Uploading / Targets
 * ``cmd-alt-v`` / ``ctrl-alt-v`` / ``f8`` toggles the build panel.
 * ``escape`` terminates build / closes the build window.
 
-More options ``Menu: PlatformIO > Settings > Build``.
+More options: ``Menu: PlatformIO > Settings > Build``.
 
 Intelligent Code Completion
 ---------------------------
 
 PlatformIO IDE uses `clang <http://clang.llvm.org>`_ for the Intelligent Code Completion.
-To install it or check if it is already installed, please follow to step
+To install it or check if it is already installed, please follow see the step
 :ref:`ide_atom_installation_clang` from Installation guide.
 
 .. warning::
-    The libraries which are added/installed after initializing process will
-    not be reflected in code linter. You need ``Menu: PlatformIO >
+    The libraries which are added/installed after the initializing process will
+    not be reflected in the code linter. You need ``Menu: PlatformIO >
     Rebuild C/C++ Project Index (Autocomplete, Linter)``.
 
 .. _ide_atom_smart_code_linter:
