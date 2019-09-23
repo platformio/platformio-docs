@@ -61,15 +61,17 @@ systems and :ref:`pioremote` operations where you are not able manually authoriz
 You can get own Personal Authentication Token using :ref:`cmd_account_token`
 command.
 
-.. envvar:: PLATFORMIO_FORCE_COLOR
+.. envvar:: PLATFORMIO_FORCE_ANSI
 
-Force to output color ANSI-codes even if the output is a ``pipe`` (not a ``tty``).
-The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_FORCE_COLOR=false``.
+Force to output ANSI control character even if the output is a ``pipe`` (not a ``tty``).
+The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_FORCE_ANSI=false``.
 
-.. envvar:: PLATFORMIO_DISABLE_COLOR
+.. envvar:: PLATFORMIO_NO_ANSI
 
-Disable color ANSI-codes even if the output is a ``pipe`` (not a ``tty``).
-The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_COLOR=false``.
+Do not print ANSI control characters.
+The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_NO_ANSI=false``.
+
+You can also use :option:`platformio --no-ansi` flag for :ref:`piocore`.
 
 .. envvar:: PLATFORMIO_DISABLE_PROGRESSBAR
 
