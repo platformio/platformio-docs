@@ -15,7 +15,7 @@ Configuration
 .. contents::
     :local:
 
-The configuration system
+Configuration system
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 PlatformIO allows you to customize mbed OS compile time configuration
@@ -89,6 +89,22 @@ default build profile is not suitable for your project there two other profiles 
 More information about differences between build profiles can be found on the 
 official page `ARM Mbed OS Build Profiles <https://os.mbed.com/docs/mbed-os/v5.11/tools/build-profiles.html>`_.
 
+Ignoring particular components
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In case you don't need all parts of the framework or you want to reduce the compilation time, you can explicitly 
+exclude folders with redundant sources. For example, to remove ``cellular``, ``mbedtls`` and ``nanostack`` features 
+from the build process, navigate to :ref:`projectconf_pio_packages_dir` and create a new file ``framework-mbed/features/.mbedignore`` 
+with the following contents:
+
+.. code-block:: ini
+
+    cellular/*
+    mbedtls/*
+    nanostack/*
+
+If you want to exclude the entire folder, simply create ``.mbedignore`` file and add only one symbol ``*`` to this file.
+    
 Custom Targets
 ~~~~~~~~~~~~~~
 
@@ -159,6 +175,6 @@ After these steps, your project structure should look like this:
 More information about adding custom targets can be found on the official page
  `Adding and configuring targets <https://os.mbed.com/docs/mbed-os/v5.12/reference/adding-and-configuring-targets.html>`_.
 
-See full examples with a custom baord:
+See full examples with a custom board:
 
 - https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-custom-target
