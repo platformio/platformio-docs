@@ -70,12 +70,12 @@ project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
     [**DEFAULT**] Parses ALL C/C++ source files of the project and follows
     only by nested includes (``#include ...``, chain...) from the libraries.
     It also parses C, CC, CPP files from libraries which have the same name as
-    included header file. **Does not evaluates** :ref:`ldf_c_cond_syntax`.
+    included header file. **Does not evaluate** :ref:`ldf_c_cond_syntax`.
 
 :``deep``:
     Parses ALL C/C++ source files of the project and parses ALL C/C++ source
     files of the each found dependency (recursively).
-    **Does not evaluates** :ref:`ldf_c_cond_syntax`.
+    **Does not evaluate** :ref:`ldf_c_cond_syntax`.
 
 :``chain+``:
     The same behavior as for the ``chain`` but **evaluates** :ref:`ldf_c_cond_syntax`.
