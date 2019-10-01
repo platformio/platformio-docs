@@ -16,7 +16,7 @@ Configuration
     :local:
 
 Configuration system
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 PlatformIO allows you to customize mbed OS compile time configuration
 parameters using ``mbed_app.json`` manifest. It should be placed into the root
@@ -40,9 +40,9 @@ A few PlatformIO-ready projects based on ARM mbed OS which use ``mbed_app.json``
 Mbed lib and Mbed OS 5
 ~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO allows compiling projects with or without Mbed OS. By default, project 
-is built without the OS feature. Most of the framework functionality requires the OS to be 
-enabled. To add the OS feature you can use a special macro definition that needs be added to 
+PlatformIO allows compiling projects with or without Mbed OS. By default, project
+is built without the OS feature. Most of the framework functionality requires the OS to be
+enabled. To add the OS feature you can use a special macro definition that needs be added to
 :ref:`projectconf_build_flags` of :ref:`projectconf`:
 
 .. list-table::
@@ -68,10 +68,10 @@ An example of :ref:`projectconf` with enabled ``rtos``
 Build profiles
 ~~~~~~~~~~~~~~
 
-By default, PlatformIO builds your project using ``develop profile`` which provides optimized 
+By default, PlatformIO builds your project using ``develop profile`` which provides optimized
 firmware size with full error information and allows MCU to go to sleep mode. In the case when
 default build profile is not suitable for your project there two other profiles ``release`` and
-``debug`` that can be enabled using special macro definitions. You can change build profile 
+``debug`` that can be enabled using special macro definitions. You can change build profile
 :ref:`projectconf_build_flags` of :ref:`projectconf`:
 
 .. list-table::
@@ -86,15 +86,15 @@ default build profile is not suitable for your project there two other profiles 
     * - ``MBED_BUILD_PROFILE_DEBUG``
       - Debug profile (largest firmware, disabled sleep mode)
 
-More information about differences between build profiles can be found on the 
+More information about differences between build profiles can be found on the
 official page `ARM Mbed OS Build Profiles <https://os.mbed.com/docs/mbed-os/v5.11/tools/build-profiles.html>`_.
 
 Ignoring particular components
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In case you don't need all parts of the framework or you want to reduce the compilation time, you can explicitly 
-exclude folders with redundant sources. For example, to remove ``cellular``, ``mbedtls`` and ``nanostack`` features 
-from the build process, navigate to :ref:`projectconf_pio_packages_dir` and create a new file ``framework-mbed/features/.mbedignore`` 
+In case you don't need all parts of the framework or you want to reduce the compilation time, you can explicitly
+exclude folders with redundant sources. For example, to remove ``cellular``, ``mbedtls`` and ``nanostack`` features
+from the build process, navigate to :ref:`projectconf_pio_packages_dir` and create a new file ``framework-mbed/features/.mbedignore``
 with the following contents:
 
 .. code-block:: ini
@@ -104,13 +104,13 @@ with the following contents:
     nanostack/*
 
 If you want to exclude the entire folder, simply create ``.mbedignore`` file and add only one symbol ``*`` to this file.
-    
+
 Custom Targets
 ~~~~~~~~~~~~~~
 
-In case when your board is not officially supported by :ref:`framework_mbed` you can 
-manually add custom board definitions to your project. First of all, you need to create 
-a special file ``custom_targets.json`` in the root folder of your project where you 
+In case when your board is not officially supported by :ref:`framework_mbed` you can
+manually add custom board definitions to your project. First of all, you need to create
+a special file ``custom_targets.json`` in the root folder of your project where you
 describe your board, for example here is the configuration for ``NUCLEO-F401RE`` board:
 
 .. code-block:: json
@@ -152,7 +152,7 @@ to :ref:`projectconf_build_flags` of :ref:`projectconf`:
   board = my_custom_board
   build_flags = -I$PROJECTSRC_DIR/MY_CUSTOM_BOARD_TARGET
 
-Next, you need to inform PlatformIO that there is a new custom board. To do this, you can create 
+Next, you need to inform PlatformIO that there is a new custom board. To do this, you can create
 ``boards`` directory in the root folder of your project and add a board manifest file with your
 board name, e.g. ``my_custom_board.json`` as described here :ref:`board_creating`
 
