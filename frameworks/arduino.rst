@@ -612,6 +612,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_hallowing_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -623,6 +629,12 @@ Please click on board name for the further details.
       - SAMD51G19A
       - 120MHz
       - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_monster_m4sk`
+      - :ref:`platform_atmelsam`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
@@ -678,6 +690,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_pybadge_airlift_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J20A
+      - 120MHz
+      - 1008KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_pybadge_m4`
       - :ref:`platform_atmelsam`
       - SAMD51J19A
@@ -1776,6 +1794,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_hallowing_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelavr_itsybitsy32u4_3V`
       - :ref:`platform_atmelavr`
       - No
@@ -1803,6 +1828,13 @@ Adafruit
       - SAMD51G19A
       - 120MHz
       - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_monster_m4sk`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
       - 192KB
     * - :ref:`board_atmelavr_metro`
       - :ref:`platform_atmelavr`
@@ -1916,6 +1948,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_pybadge_airlift_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1008KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_pybadge_m4`
       - :ref:`platform_atmelsam`
       - External

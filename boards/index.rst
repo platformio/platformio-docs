@@ -254,8 +254,10 @@ Atmel SAM
     atmelsam/adafruit_gemma_m0
     atmelsam/adafruit_grandcentral_m4
     atmelsam/adafruit_hallowing
+    atmelsam/adafruit_hallowing_m4
     atmelsam/adafruit_itsybitsy_m0
     atmelsam/adafruit_itsybitsy_m4
+    atmelsam/adafruit_monster_m4sk
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
     atmelsam/adafruit_metro_m4_airliftlite
@@ -265,6 +267,7 @@ Atmel SAM
     atmelsam/adafruit_trellis_m4
     atmelsam/adafruit_trinket_m0
     atmelsam/adafruit_pirkey
+    atmelsam/adafruit_pybadge_airlift_m4
     atmelsam/adafruit_pybadge_m4
     atmelsam/due
     atmelsam/dueUSB

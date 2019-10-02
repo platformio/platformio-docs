@@ -430,6 +430,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_hallowing_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -443,6 +450,13 @@ Boards
       - SAMD51G19A
       - 120MHz
       - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_monster_m4sk`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
@@ -507,6 +521,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_pybadge_airlift_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1008KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_pybadge_m4`
       - :ref:`platform_atmelsam`
       - External
