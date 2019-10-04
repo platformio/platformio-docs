@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_ttgo-t1:
+.. _board_espressif32_iotaap_magnolia:
 
-TTGO T1
-=======
+IoTaaP Magnolia
+===============
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `TTGO <https://github.com/LilyGO/ESP32-TTGO-T1?utm_source=platformio&utm_medium=docs>`__
+    - `MVT Solutions <https://iotaap.mvt-solutions.com?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``ttgo-t1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``iotaap_magnolia`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ttgo-t1]
+  [env:iotaap_magnolia]
   platform = espressif32
-  board = ttgo-t1
+  board = iotaap_magnolia
 
-You can override default TTGO T1 settings per build environment using
+You can override default IoTaaP Magnolia settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ttgo-t1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/ttgo-t1.json>`_. For example,
+board manifest `iotaap_magnolia.json <https://github.com/platformio/platform-espressif32/blob/master/boards/iotaap_magnolia.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ttgo-t1]
+  [env:iotaap_magnolia]
   platform = espressif32
-  board = ttgo-t1
+  board = iotaap_magnolia
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,7 +66,7 @@ board manifest `ttgo-t1.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-TTGO T1 supports the next uploading protocols:
+IoTaaP Magnolia supports the next uploading protocols:
 
 * ``esp-prog``
 * ``espota``
@@ -86,9 +86,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:ttgo-t1]
+  [env:iotaap_magnolia]
   platform = espressif32
-  board = ttgo-t1
+  board = iotaap_magnolia
 
   upload_protocol = esptool
 
@@ -105,7 +105,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-TTGO T1 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+IoTaaP Magnolia does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -151,6 +151,3 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_espidf`
-      - Espressif IoT Development Framework. Official development framework for ESP32.

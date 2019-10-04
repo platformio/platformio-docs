@@ -111,6 +111,11 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_esp32cam`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_alksesp32`
       - ESP32
       - 240MHz
@@ -196,6 +201,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_iotaap_magnolia`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_mhetesp32devkit`
       - ESP32
       - 240MHz
@@ -266,6 +276,16 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_ttgo-t1`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_vintlabs-devkit-v1`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lolin_d32`
       - ESP32
       - 240MHz
@@ -432,7 +452,7 @@ AI Thinker
       - Flash
       - RAM
     * - :ref:`board_espressif32_esp32cam`
-      - No
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -859,6 +879,25 @@ MH-ET Live
       - 4MB
       - 320KB
 
+MVT Solutions
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_iotaap_magnolia`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Magicblocks.io
 ~~~~~~~~~~~~~~
 
@@ -1179,7 +1218,7 @@ TTGO
       - 16MB
       - 320KB
     * - :ref:`board_espressif32_ttgo-t1`
-      - No
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -1255,6 +1294,25 @@ Unknown
       - Flash
       - RAM
     * - :ref:`board_espressif32_fm-devkit`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+VintLabs
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_vintlabs-devkit-v1`
       - External
       - ESP32
       - 240MHz

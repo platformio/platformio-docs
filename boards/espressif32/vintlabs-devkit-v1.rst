@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_ttgo-t1:
+.. _board_espressif32_vintlabs-devkit-v1:
 
-TTGO T1
-=======
+VintLabs ESP32 Devkit
+=====================
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `TTGO <https://github.com/LilyGO/ESP32-TTGO-T1?utm_source=platformio&utm_medium=docs>`__
+    - `VintLabs <https://www.vintlabs.com/product/vintlabs-esp32-wroom32-iot-8x2a-pwm-driver-development-kit-4mb-flash-wifi-bluetooth/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``ttgo-t1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``vintlabs-devkit-v1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ttgo-t1]
+  [env:vintlabs-devkit-v1]
   platform = espressif32
-  board = ttgo-t1
+  board = vintlabs-devkit-v1
 
-You can override default TTGO T1 settings per build environment using
+You can override default VintLabs ESP32 Devkit settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ttgo-t1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/ttgo-t1.json>`_. For example,
+board manifest `vintlabs-devkit-v1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/vintlabs-devkit-v1.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ttgo-t1]
+  [env:vintlabs-devkit-v1]
   platform = espressif32
-  board = ttgo-t1
+  board = vintlabs-devkit-v1
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,7 +66,7 @@ board manifest `ttgo-t1.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-TTGO T1 supports the next uploading protocols:
+VintLabs ESP32 Devkit supports the next uploading protocols:
 
 * ``esp-prog``
 * ``espota``
@@ -86,9 +86,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:ttgo-t1]
+  [env:vintlabs-devkit-v1]
   platform = espressif32
-  board = ttgo-t1
+  board = vintlabs-devkit-v1
 
   upload_protocol = esptool
 
@@ -105,7 +105,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-TTGO T1 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+VintLabs ESP32 Devkit does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

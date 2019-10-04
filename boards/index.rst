@@ -338,6 +338,7 @@ Espressif 32
     espressif32/hornbill32dev
     espressif32/hornbill32minima
     espressif32/intorobot
+    espressif32/iotaap_magnolia
     espressif32/m5stack-core-esp32
     espressif32/m5stack-fire
     espressif32/m5stack-grey
@@ -371,6 +372,7 @@ Espressif 32
     espressif32/ttgo-t1
     espressif32/tinypico
     espressif32/turta_iot_node
+    espressif32/vintlabs-devkit-v1
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
     espressif32/lolin32

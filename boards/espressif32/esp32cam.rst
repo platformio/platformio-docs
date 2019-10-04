@@ -68,8 +68,17 @@ Uploading
 ---------
 AI Thinker ESP32-CAM supports the next uploading protocols:
 
+* ``esp-prog``
 * ``espota``
 * ``esptool``
+* ``iot-bus-jtag``
+* ``jlink``
+* ``minimodule``
+* ``olimex-arm-usb-ocd``
+* ``olimex-arm-usb-ocd-h``
+* ``olimex-arm-usb-tiny-h``
+* ``olimex-jtag-tiny``
+* ``tumpa``
 
 Default protocol is ``esptool``
 
@@ -85,7 +94,52 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support AI Thinker ESP32-CAM board.
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further
+    instructions and configuration information.
+
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+AI Thinker ESP32-CAM does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Compatible Tools
+    - On-board
+    - Default
+  * - :ref:`debugging_tool_esp-prog`
+    - 
+    - Yes
+  * - :ref:`debugging_tool_iot-bus-jtag`
+    - 
+    - 
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
+  * - :ref:`debugging_tool_minimodule`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-jtag-tiny`
+    - 
+    - 
+  * - :ref:`debugging_tool_tumpa`
+    - 
+    - 
 
 Frameworks
 ----------
