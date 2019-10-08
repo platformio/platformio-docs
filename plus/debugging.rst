@@ -124,6 +124,7 @@ option.
   debug-tools/olimex-arm-usb-tiny-h
   debug-tools/olimex-jtag-tiny
   debug-tools/qemu
+  debug-tools/rv-link
   debug-tools/sipeed-rv-debugger
   debug-tools/stlink
   debug-tools/ti-icdi
@@ -3390,6 +3391,13 @@ SeeedStudio
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_gd32v_wio_lite_risc-v`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
 
 Semtech
 ~~~~~~~

@@ -185,3 +185,10 @@ Boards
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_gd32v_wio_lite_risc-v`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB

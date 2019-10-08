@@ -457,6 +457,7 @@ GigaDevice GD32V
         
     gd32v/gd32vf103v-eval
     gd32v/sipeed-longan-nano
+    gd32v/wio_lite_risc-v
 
 Infineon XMC
 ------------

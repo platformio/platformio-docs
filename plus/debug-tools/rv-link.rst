@@ -9,16 +9,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _debugging_tool_altera-usb-blaster:
+.. _debugging_tool_rv-link:
 
-Altera / Intel USB-Blaster Download Cable
-=========================================
+RV-LINK
+=======
 
-.. image:: ../../_static/images/debug_probes/altera-usb-blaster.jpg
-  :target: https://www.intel.com/content/www/us/en/programmable/products/boards_and_kits/download-cables.html?utm_source=platformio&utm_medium=docs
-
-USB Blaster Download Cable is designed for ALTERA FPGA, CPLD, Active Serial Configuration Devices and Enhanced Configuration Devices, USB 2.0 connection to the PC and JTAG, AS, PS to the target device.
-Official reference can be found `here <https://www.intel.com/content/www/us/en/programmable/products/boards_and_kits/download-cables.html?utm_source=platformio&utm_medium=docs>`__.
+RISC-V emulator implemented with RISC-V development board. Unlike other emulators:
+RV-LINK interacts directly with GDB via a USB serial port and does not require an
+intermediary such as OpenOCD. Official reference can be found
+`here <https://gitee.com/zoomdy/RV-LINK/blob/master/README.md>`__.
 
 .. contents:: Contents
     :local:
@@ -34,7 +33,7 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = altera-usb-blaster
+    debug_tool = rv-link
 
 If you would like to use this tool for firmware uploading, please change
 upload protocol:
@@ -44,51 +43,13 @@ upload protocol:
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = altera-usb-blaster
-    upload_protocol = altera-usb-blaster
+    debug_tool = rv-link
+    upload_protocol = rv-link
 
 More options:
 
 * :ref:`projectconf_section_env_debug`
 * :ref:`projectconf_section_env_upload`
-
-Drivers
--------
-
-Please install `official drivers <https://www.intel.com/content/www/us/en/programmable/support/support-resources/download/drivers/dri-index.html?utm_source=platformio&utm_medium=docs>`__.
-
-Wiring Connections
-------------------
-
-.. image:: ../../_static/images/debug_probes/altera-usb-blaster-connector.jpg
-
-JTAG Interface
-~~~~~~~~~~~~~~
-
-.. list-table::
-  :header-rows:  1
-
-  * - USB-Blaster JTAG 10-Pin Connector
-    - Board JTAG Pin
-    - Description
-  * - 1
-    - TCK
-    - JTAG Return Test Clock
-  * - 2
-    - GND
-    - Digital ground
-  * - 3
-    - TDO
-    - Test Data Out pin
-  * - 4
-    - VCC
-    - Positive Supply Voltage — Power supply for JTAG interface drivers
-  * - 5
-    - TMS
-    - Test Mode State pin
-  * - 9
-    - TDI
-    - Test Data In pin
 
 .. begin_platforms
 

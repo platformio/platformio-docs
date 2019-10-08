@@ -1494,6 +1494,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_gd32v_wio_lite_risc-v`
+      - :ref:`platform_gd32v`
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_nordicnrf52_particle_xenon`
       - :ref:`platform_nordicnrf52`
       - NRF52840
@@ -6256,6 +6262,13 @@ SeeedStudio
       - 80MHz
       - 4MB
       - 80KB
+    * - :ref:`board_gd32v_wio_lite_risc-v`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_espressif8266_wio_node`
       - :ref:`platform_espressif8266`
       - No

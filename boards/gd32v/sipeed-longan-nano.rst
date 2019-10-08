@@ -71,6 +71,7 @@ Sipeed Longan Nano supports the next uploading protocols:
 * ``altera-usb-blaster``
 * ``gd-link``
 * ``jlink``
+* ``rv-link``
 * ``serial``
 * ``sipeed-rv-debugger``
 * ``um232h``
@@ -115,6 +116,9 @@ Sipeed Longan Nano does not have on-board debug probe and **IS NOT READY** for d
     - 
     - 
   * - :ref:`debugging_tool_jlink`
+    - 
+    - 
+  * - :ref:`debugging_tool_rv-link`
     - 
     - 
   * - :ref:`debugging_tool_sipeed-rv-debugger`

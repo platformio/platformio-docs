@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_gd32v_gd32vf103v-eval:
+.. _board_gd32v_wio_lite_risc-v:
 
-GD32VF103V-EVAL
+Wio Lite RISC-V
 ===============
 
 .. contents::
@@ -24,7 +24,7 @@ Platform :ref:`platform_gd32v`: The GigaDevice GD32V device is a 32-bit general-
 .. list-table::
 
   * - **Microcontroller**
-    - GD32VF103VBT6
+    - GD32VF103CBT6
   * - **Frequency**
     - 108MHz
   * - **Flash**
@@ -32,33 +32,33 @@ Platform :ref:`platform_gd32v`: The GigaDevice GD32V device is a 32-bit general-
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Sipeed <https://www.sipeed.com/?utm_source=platformio&utm_medium=docs>`__
+    - `SeeedStudio <https://www.seeedstudio.com/Wio-Lite-RISC-V-GD32VF103-p-4293.html?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``gd32vf103v-eval`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``wio_lite_risc-v`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:gd32vf103v-eval]
+  [env:wio_lite_risc-v]
   platform = gd32v
-  board = gd32vf103v-eval
+  board = wio_lite_risc-v
 
-You can override default GD32VF103V-EVAL settings per build environment using
+You can override default Wio Lite RISC-V settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `gd32vf103v-eval.json <https://github.com/sipeed/platform-gd32v/blob/master/boards/gd32vf103v-eval.json>`_. For example,
+board manifest `wio_lite_risc-v.json <https://github.com/sipeed/platform-gd32v/blob/master/boards/wio_lite_risc-v.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:gd32vf103v-eval]
+  [env:wio_lite_risc-v]
   platform = gd32v
-  board = gd32vf103v-eval
+  board = wio_lite_risc-v
 
   ; change microcontroller
-  board_build.mcu = GD32VF103VBT6
+  board_build.mcu = GD32VF103CBT6
 
   ; change MCU frequency
   board_build.f_cpu = 108000000L
@@ -66,7 +66,7 @@ board manifest `gd32vf103v-eval.json <https://github.com/sipeed/platform-gd32v/b
 
 Uploading
 ---------
-GD32VF103V-EVAL supports the next uploading protocols:
+Wio Lite RISC-V supports the next uploading protocols:
 
 * ``altera-usb-blaster``
 * ``gd-link``
@@ -76,17 +76,17 @@ GD32VF103V-EVAL supports the next uploading protocols:
 * ``sipeed-rv-debugger``
 * ``um232h``
 
-Default protocol is ``gd-link``
+Default protocol is ``serial``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:gd32vf103v-eval]
+  [env:wio_lite_risc-v]
   platform = gd32v
-  board = gd32vf103v-eval
+  board = wio_lite_risc-v
 
-  upload_protocol = gd-link
+  upload_protocol = serial
 
 Debugging
 ---------
@@ -101,7 +101,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-GD32VF103V-EVAL does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Wio Lite RISC-V does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

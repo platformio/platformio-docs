@@ -83,6 +83,11 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_wio_lite_risc-v`
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
 
 
 Stable and upstream versions
@@ -177,6 +182,25 @@ Boards
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
+
+SeeedStudio
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_gd32v_wio_lite_risc-v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
 
 Sipeed
 ~~~~~~
