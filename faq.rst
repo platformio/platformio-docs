@@ -275,6 +275,13 @@ they are not “root”, doing this issuing
     sudo usermod -a -G dialout $USER
     sudo usermod -a -G plugdev $USER
 
+Similarly, Arch users may need to add their user to the “uucp” group
+
+.. code-block:: bash
+
+    sudo usermod -a -G uucp $USER
+    sudo usermod -a -G lock $USER
+
 .. note::
   You will need to log out and log back in again (or reboot) for the user
   group changes to take effect.
