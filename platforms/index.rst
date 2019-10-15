@@ -53,6 +53,7 @@ Embedded
     nxplpc
     riscv_gap
     samsung_artik
+    shakti
     sifive
     siliconlabsefm32
     ststm32
