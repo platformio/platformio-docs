@@ -186,6 +186,9 @@ Platforms
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
+    * - :ref:`platform_shakti`
+      - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
+
     * - :ref:`platform_sifive`
       - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
@@ -235,6 +238,9 @@ Frameworks
 
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+
+    * - :ref:`framework_shakti-sdk`
+      - A software development kit for developing applications on Shakti class of processors
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
@@ -668,6 +674,20 @@ Boards
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_shakti_artix7_35t`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_artix7_100t`
+      - :ref:`platform_shakti`
+      - On-board
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
     * - :ref:`board_sifive_e310-arty`
       - :ref:`platform_sifive`
       - On-board

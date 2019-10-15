@@ -708,6 +708,15 @@ Samsung ARTIK
         
     samsung_artik/artik_053
 
+Shakti
+------
+
+.. toctree::
+    :maxdepth: 1
+        
+    shakti/artix7_35t
+    shakti/artix7_100t
+
 SiFive
 ------
 

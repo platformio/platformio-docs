@@ -190,6 +190,9 @@ Platforms
     * - :ref:`platform_samsung_artik`
       - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
 
+    * - :ref:`platform_shakti`
+      - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
+
     * - :ref:`platform_sifive`
       - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
@@ -251,6 +254,9 @@ Frameworks
 
     * - :ref:`framework_pulp-os`
       - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.
+
+    * - :ref:`framework_shakti-sdk`
+      - A software development kit for developing applications on Shakti class of processors
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
@@ -4175,6 +4181,20 @@ Xilinx
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_shakti_artix7_35t`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_artix7_100t`
+      - :ref:`platform_shakti`
+      - On-board
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
     * - :ref:`board_sifive_e310-arty`
       - :ref:`platform_sifive`
       - On-board
