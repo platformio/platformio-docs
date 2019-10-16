@@ -31,7 +31,7 @@ Frameworks
     mbed
     pulp-os
     pumbaa
-    shakti
+    shakti-sdk
     simba
     spl
     stm32cube
