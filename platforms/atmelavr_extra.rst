@@ -142,34 +142,206 @@ To upload EEPROM data (from EEMEM directive) you need to use ``uploadeep``
 target instead ``upload`` for :option:`platformio run --target` command.
 For example, ``platformio run -t uploadeep``.
 
-Fuses
-~~~~~
+Fuses programming
+~~~~~~~~~~~~~~~~~
 
-PlatformIO has built-in target named ``fuses`` for setting fuse bits. The
+PlatformIO has a built-in target named ``fuses`` for setting fuse bits. The
 default fuse bits are predefined in board manifest file in ``fuses`` section.
-For example, `Arduino Uno Fuses <https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json#L31>`_.
+For example, `fuses section for Arduino Uno board <https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json>`_. To set fuse bits you need to use target ``fuses`` with :option:`platformio run --target` command.
 
-To set fuse bits you need to use  target ``fuses`` for
-:option:`platformio run --target` command.
-
-Custom Fuses
+Custom fuses
 ^^^^^^^^^^^^
 
-You can specify custom fuse bits. Please create custom
-:ref:`projectconf_extra_scripts` and override default "fuses" command:
-
-``platformio.ini``:
+Custom fuse values and upload flags (based on upload protocol) should be specified in :ref:`projectconf`. ``lfuse`` and ``hfuse`` bits are mandatory,
+``efuse`` is optional and not supported by all targets. An example of setting custom fuses for ``uno`` board:
 
 .. code-block:: ini
 
     [env:custom_fuses]
     platform = atmelavr
-    extra_scripts = extra_script.py
+    framework = arduino
+    board = uno
+    upload_protocol = stk500v1
+    upload_speed = 19200
+    board_fuses.lfuse = 0xAA
+    board_fuses.hfuse = 0xBB
+    board_fuses.efuse = 0xCC
+    upload_flags =
+        -PCOM15
+        -b$UPLOAD_SPEED
+        -e
+
+Mini, Mega, Mighty cores
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+``Mini``, ``Mega``, ``Mighty`` cores support dynamic fuses generation. Generated values are based on the next parameters:
+
+  .. list-table::
+    :header-rows:  1
+
+    * - Parameter
+      - Description
+      - Default value
+
+    * - ``f_cpu``
+      - Specifies the clock frequencies in Hz. Used to determine what oscillator option to choose. A capital L has to be added to the end of the frequency number.
+      - ``16000000L``
+
+    * - ``oscillator``
+      - Specifies which oscillator is used ``internal`` or ``external``. Internal oscillator only works with ``f_cpu`` values ``8000000L`` and ``1000000L``
+      - ``external``
+
+    * - ``uart``
+      - Specifies the hardware UART port used for serial upload. can be ``uart0``, ``uart1``, ``uart2`` or ``uart3`` depending on the target. Use ``no_bootloader`` if you're not using a bootloader for serial upload.
+      - ``uart0``
+
+    * - ``bod``
+      - Specifies the hardware brown-out detection. Use ``disabled`` to disable brown-out detection.
+      - ``2.7v``
+
+    * - ``eesave``
+      - Specifies if the EEPROM memory should be retained when uploading using a programmer. Use ``no`` to disable
+      - ``yes``
+
+Valid BOD values:
+
+  .. list-table::
+    :header-rows:  1
+
+    * - ATmega8, ATmega8535/16/32, ATmega64/128
+      - AT90CAN32/64/128
+      - Other targets
+
+    * - 4.0v
+      - 4.1v
+      - 4.3v
+
+    * - 2.7v 
+      - 4.0v
+      - 2.7v
+
+    * - disabled
+      - 3.9v
+      - 1.8v
+
+    * - 
+      - 3.8v
+      - disabled
+
+    * - 
+      - 2.7v
+      - 
+
+    * - 
+      - 2.6v
+      - 
+
+    * - 
+      - 2.5v
+      - 
+
+    * - 
+      - disabled
+      - 
+
+Hardware configuration example:
+
+.. code-block:: ini
+
+    [env:custom_fuses]
+    platform = atmelavr
+    framework = arduino
+    board = ATmega32
+
+    board_build.f_cpu = 1000000L
+    board_hardware.uart = uart0
+    board_hardware.oscillator = internal
+    board_hardware.bod = 2.7v
+    board_hardware.eesave = no
+
+    upload_protocol = usbasp
+    upload_flags = 
+      -Pusb
+
+Bootloader programming
+~~~~~~~~~~~~~~~~~~~~~~
+
+PlatformIO has a built-in target named ``bootloader`` for flashing bootloaders. The default bootloader image and corresponding fuse bits are predefined in board manifest file in ``bootloader`` section, for example, `Arduino Uno <https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json>`_. To upload bootloader image you need to use target ``bootloader`` with
+:option:`platformio run --target` command.
 
 
-``extra_script.py``:
+Custom bootloader
+^^^^^^^^^^^^^^^^^
 
-.. code-block:: py
+Custom bootloader and corresponding fuses should be specified in :ref:`projectconf`. If ``lock_bits`` and ``unlock_bits`` are not set then the default values ``0x0F`` and ``0x3F`` are used accordingly. An example of setting custom bootloader for ``uno`` board:
 
-    Import('env')
-    env.Replace(FUSESCMD="avrdude $UPLOADERFLAGS -e -Ulock:w:0x3F:m -Uhfuse:w:0xDE:m -Uefuse:w:0x05:m -Ulfuse:w:0xFF:m")
+.. code-block:: ini
+
+    [env:uno]
+    platform = atmelavr
+    framework = arduino
+    board = uno
+
+    board_bootloader.file = /path/to/custom/bootloader.hex
+    board_bootloader.low_fuses = 0xFF
+    board_bootloader.high_fuses = 0xDE
+    board_bootloader.extended_fuses = 0xFD
+    board_bootloader.lock_bits = 0x0F
+    board_bootloader.unlock_bits = 0x3F
+
+
+Mini, Mega, Mighty cores
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+``Mini``, ``Mega``, ``Mighty`` cores have a wide variety of precompiled bootloaders. Bootloader binary is dynamically selected according to the hardware parameters: ``f_cpu``, ``oscillator``, ``upload_speed``:
+
+  .. list-table::
+    :header-rows:  1
+
+    * - Frequency
+      - Oscillator
+      - Upload Speed
+
+    * - ``20000000L``
+      - external
+      - ``115200``
+
+    * - ``18432000L``
+      - external
+      - ``115200``
+
+    * - ``16000000L``
+      - external
+      - ``115200``
+
+    * - ``14745600L``
+      - external
+      - ``115200``
+
+    * - ``12000000L``
+      - external
+      - ``57600``
+
+    * - ``11059200L``
+      - external
+      - ``115200``
+
+    * - ``8000000L``
+      - external/internal
+      - ``57600/38400``
+
+    * - ``7372800L``
+      - external
+      - ``115200``
+
+    * - ``3686400L``
+      - external
+      - ``115200``
+
+    * - ``1843200L``
+      - external
+      - ``115200``
+
+    * - ``1000000L``
+      - external/internal
+      - ``9600``
