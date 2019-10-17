@@ -203,7 +203,7 @@ Prerequisites
 '''''''''''''
 
 1.  Please remove existing PlatformIO Core **environment folder** if exists.
-    See above how to get a path.
+    See above command how to get path to environment folder.
 
 2.  Please check that you have a valid Python interpreter running a next
     command in system terminal. Python 2.7.9+ or Python 3.5+ is recommended.
