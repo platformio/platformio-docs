@@ -87,7 +87,7 @@ described below.
 
     ; Serial Monitor options
     monitor_speed = 115200
-    monitor_options =
+    monitor_flags =
         --encoding
         hexlify
 
