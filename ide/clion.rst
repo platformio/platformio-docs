@@ -40,7 +40,7 @@ Integration process consists of these steps:
 2. Open system Terminal and install :ref:`piocore`
 3. Create new folder for your project and change directory (``cd``) to it
 4. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
-5. Import project in IDE.
+5. Open project in IDE.
 
 ------------
 
@@ -58,7 +58,7 @@ Then:
 
 1. Place source files (``*.c, *.cpp, *.h, *.hpp``) to ``src`` directory and
    repeat :option:`platformio init --ide` command above (to refresh source files list)
-2. Import this project via ``Menu: File > Import Project``
+2. Open this project via ``Menu: File > Open...``
    and specify root directory where is located :ref:`projectconf`
 3. Open source file from ``src`` directory
 4. Build project (*DO NOT* use "Run" button, see marks on the screenshot above):
