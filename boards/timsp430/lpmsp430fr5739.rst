@@ -28,9 +28,9 @@ Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Ins
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 16KB
+    - 15.37KB
   * - **RAM**
-    - 512B
+    - 1KB
   * - **Vendor**
     - `TI <http://www.ti.com/tool/msp-exp430fr5739?utm_source=platformio&utm_medium=docs>`__
 

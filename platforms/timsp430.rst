@@ -75,13 +75,23 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_timsp430_lpmsp430fr5739`
       - MSP430FR5739
       - 16MHz
-      - 16KB
-      - 512B
+      - 15.37KB
+      - 1KB
     * - :ref:`board_timsp430_lpmsp430f5529`
       - MSP430F5529
-      - 16MHz
-      - 128KB
+      - 25MHz
+      - 47KB
       - 8KB
+    * - :ref:`board_timsp430_lpmsp430fr2311`
+      - MSP430FR2311
+      - 16MHz
+      - 3.75KB
+      - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2433`
+      - MSP430FR2433
+      - 8MHz
+      - 15KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr4133`
       - MSP430FR4133
       - 8MHz
@@ -90,13 +100,28 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_timsp430_lpmsp430fr5969`
       - MSP430FR5969
       - 8MHz
-      - 64KB
+      - 47KB
       - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr5994`
+      - MSP430FR5994
+      - 16MHz
+      - 256KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr6989`
       - MSP430FR6989
       - 8MHz
-      - 127KB
+      - 47KB
       - 2KB
+    * - :ref:`board_timsp430_lpmsp430g2231`
+      - MSP430G2231
+      - 1MHz
+      - 2KB
+      - 256B
+    * - :ref:`board_timsp430_lpmsp430g2452`
+      - MSP430G2452
+      - 16MHz
+      - 8KB
+      - 256B
     * - :ref:`board_timsp430_lpmsp430g2553`
       - MSP430G2553
       - 16MHz
@@ -147,6 +172,9 @@ Packages
 
     * - `framework-energiamsp430 <http://energia.nu/reference/?utm_source=platformio&utm_medium=docs>`__
       - Energia Wiring-based Framework (MSP430 Core)
+
+    * - `tool-dslite <http://www.ti.com/tool/UNIFLASH?utm_source=platformio&utm_medium=docs>`__
+      - Uniflash Standalone Flash Tool for TI Microcontrollers, Sitara Processors & SimpleLink devices
 
     * - `tool-mspdebug <http://mspdebug.sourceforge.net/?utm_source=platformio&utm_medium=docs>`__
       - MSPDebug
@@ -204,14 +232,26 @@ TI
       - On-board
       - MSP430FR5739
       - 16MHz
-      - 16KB
-      - 512B
+      - 15.37KB
+      - 1KB
     * - :ref:`board_timsp430_lpmsp430f5529`
       - On-board
       - MSP430F5529
-      - 16MHz
-      - 128KB
+      - 25MHz
+      - 47KB
       - 8KB
+    * - :ref:`board_timsp430_lpmsp430fr2311`
+      - On-board
+      - MSP430FR2311
+      - 16MHz
+      - 3.75KB
+      - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2433`
+      - On-board
+      - MSP430FR2433
+      - 8MHz
+      - 15KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr4133`
       - On-board
       - MSP430FR4133
@@ -222,14 +262,32 @@ TI
       - On-board
       - MSP430FR5969
       - 8MHz
-      - 64KB
+      - 47KB
       - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr5994`
+      - On-board
+      - MSP430FR5994
+      - 16MHz
+      - 256KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr6989`
       - On-board
       - MSP430FR6989
       - 8MHz
-      - 127KB
+      - 47KB
       - 2KB
+    * - :ref:`board_timsp430_lpmsp430g2231`
+      - On-board
+      - MSP430G2231
+      - 1MHz
+      - 2KB
+      - 256B
+    * - :ref:`board_timsp430_lpmsp430g2452`
+      - On-board
+      - MSP430G2452
+      - 16MHz
+      - 8KB
+      - 256B
     * - :ref:`board_timsp430_lpmsp430g2553`
       - On-board
       - MSP430G2553

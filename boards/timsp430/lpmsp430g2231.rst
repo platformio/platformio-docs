@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_timsp430_lpmsp430fr5969:
+.. _board_timsp430_lpmsp430g2231:
 
-TI LaunchPad MSP-EXP430FR5969LP
-===============================
+TI LaunchPad MSP-EXP430G2 w/ MSP430G2231
+========================================
 
 .. contents::
 
@@ -24,44 +24,44 @@ Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Ins
 .. list-table::
 
   * - **Microcontroller**
-    - MSP430FR5969
+    - MSP430G2231
   * - **Frequency**
-    - 8MHz
+    - 1MHz
   * - **Flash**
-    - 47KB
-  * - **RAM**
     - 2KB
+  * - **RAM**
+    - 256B
   * - **Vendor**
-    - `TI <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html?utm_source=platformio&utm_medium=docs>`__
+    - `TI <http://www.ti.com/product/MSP430G2231?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``lpmsp430fr5969`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lpmsp430g2231`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:lpmsp430fr5969]
+  [env:lpmsp430g2231]
   platform = timsp430
-  board = lpmsp430fr5969
+  board = lpmsp430g2231
 
-You can override default TI LaunchPad MSP-EXP430FR5969LP settings per build environment using
+You can override default TI LaunchPad MSP-EXP430G2 w/ MSP430G2231 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `lpmsp430fr5969.json <https://github.com/platformio/platform-timsp430/blob/master/boards/lpmsp430fr5969.json>`_. For example,
+board manifest `lpmsp430g2231.json <https://github.com/platformio/platform-timsp430/blob/master/boards/lpmsp430g2231.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:lpmsp430fr5969]
+  [env:lpmsp430g2231]
   platform = timsp430
-  board = lpmsp430fr5969
+  board = lpmsp430g2231
 
   ; change microcontroller
-  board_build.mcu = msp430fr5969
+  board_build.mcu = msp430g2231
 
   ; change MCU frequency
-  board_build.f_cpu = 8000000L
+  board_build.f_cpu = 1000000L
 
 Debugging
 ---------
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-TI LaunchPad MSP-EXP430FR5969LP has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+TI LaunchPad MSP-EXP430G2 w/ MSP430G2231 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1

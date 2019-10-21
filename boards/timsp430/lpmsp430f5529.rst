@@ -26,9 +26,9 @@ Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Ins
   * - **Microcontroller**
     - MSP430F5529
   * - **Frequency**
-    - 16MHz
+    - 25MHz
   * - **Flash**
-    - 128KB
+    - 47KB
   * - **RAM**
     - 8KB
   * - **Vendor**
@@ -61,7 +61,7 @@ board manifest `lpmsp430f5529.json <https://github.com/platformio/platform-timsp
   board_build.mcu = msp430f5529
 
   ; change MCU frequency
-  board_build.f_cpu = 16000000L
+  board_build.f_cpu = 25000000L
 
 Debugging
 ---------

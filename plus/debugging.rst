@@ -3773,8 +3773,8 @@ TI
       - On-board
       - MSP430FR5739
       - 16MHz
-      - 16KB
-      - 512B
+      - 15.37KB
+      - 1KB
     * - :ref:`board_titiva_lplm4f120h5qr`
       - :ref:`platform_titiva`
       - On-board
@@ -3800,9 +3800,23 @@ TI
       - :ref:`platform_timsp430`
       - On-board
       - MSP430F5529
-      - 16MHz
-      - 128KB
+      - 25MHz
+      - 47KB
       - 8KB
+    * - :ref:`board_timsp430_lpmsp430fr2311`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR2311
+      - 16MHz
+      - 3.75KB
+      - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2433`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR2433
+      - 8MHz
+      - 15KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr4133`
       - :ref:`platform_timsp430`
       - On-board
@@ -3815,15 +3829,36 @@ TI
       - On-board
       - MSP430FR5969
       - 8MHz
-      - 64KB
+      - 47KB
       - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr5994`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR5994
+      - 16MHz
+      - 256KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr6989`
       - :ref:`platform_timsp430`
       - On-board
       - MSP430FR6989
       - 8MHz
-      - 127KB
+      - 47KB
       - 2KB
+    * - :ref:`board_timsp430_lpmsp430g2231`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430G2231
+      - 1MHz
+      - 2KB
+      - 256B
+    * - :ref:`board_timsp430_lpmsp430g2452`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430G2452
+      - 16MHz
+      - 8KB
+      - 256B
     * - :ref:`board_timsp430_lpmsp430g2553`
       - :ref:`platform_timsp430`
       - On-board

@@ -926,9 +926,14 @@ TI MSP430
         
     timsp430/lpmsp430fr5739
     timsp430/lpmsp430f5529
+    timsp430/lpmsp430fr2311
+    timsp430/lpmsp430fr2433
     timsp430/lpmsp430fr4133
     timsp430/lpmsp430fr5969
+    timsp430/lpmsp430fr5994
     timsp430/lpmsp430fr6989
+    timsp430/lpmsp430g2231
+    timsp430/lpmsp430g2452
     timsp430/lpmsp430g2553
 
 TI TIVA
