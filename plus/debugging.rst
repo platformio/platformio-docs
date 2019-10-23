@@ -591,6 +591,27 @@ Adafruit
       - 796KB
       - 243KB
 
+AfroFlight
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_afroflight_f103cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103CBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+
 Aiyarafun
 ~~~~~~~~~
 
@@ -1526,8 +1547,8 @@ Generic
       - External
       - STM32F103T8T6
       - 72MHz
-      - 20KB
       - 64KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
       - External
@@ -2095,6 +2116,27 @@ Micromint
       - 204MHz
       - 8MB
       - 264KB
+
+Midatronics
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_mkr_sharky`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WB55CG
+      - 64MHz
+      - 512KB
+      - 192.00KB
 
 MikroElektronika
 ~~~~~~~~~~~~~~~~
@@ -2795,6 +2837,13 @@ ST
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -2802,12 +2851,40 @@ ST
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_coreboard_f401rc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G071RBT6
       - 24MHz
       - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431KBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431RBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474RET6
+      - 17MHz
+      - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - :ref:`platform_ststm32`
@@ -2816,6 +2893,13 @@ ST
       - 64MHz
       - 512KB
       - 192.00KB
+    * - :ref:`board_ststm32_rhf76_052`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L051C8T6
+      - 84MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - On-board
@@ -3109,7 +3193,7 @@ ST
       - STM32H743ZIT6
       - 400MHz
       - 2MB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -3271,6 +3355,13 @@ ST
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_steval_mksboxv1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R9ZI
+      - 120MHz
+      - 2MB
+      - 640KB
 
 SainSmart
 ~~~~~~~~~

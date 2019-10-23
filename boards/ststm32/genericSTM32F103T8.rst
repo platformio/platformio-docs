@@ -28,9 +28,9 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Frequency**
     - 72MHz
   * - **Flash**
-    - 20KB
-  * - **RAM**
     - 64KB
+  * - **RAM**
+    - 20KB
   * - **Vendor**
     - `Generic <http://www.st.com/en/microcontrollers/stm32f103t8.html?utm_source=platformio&utm_medium=docs>`__
 

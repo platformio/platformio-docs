@@ -280,6 +280,13 @@ Boards
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_ststm32_afroflight_f103cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103CBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
       - External
@@ -364,6 +371,13 @@ Boards
       - 72MHz
       - 256KB
       - 40KB
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -406,6 +420,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_coreboard_f401rc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -595,13 +616,6 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
-    * - :ref:`board_ststm32_nucleo_g071rb`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32G071RBT6
-      - 24MHz
-      - 2MB
-      - 128KB
     * - :ref:`board_nordicnrf51_oshchip`
       - :ref:`platform_nordicnrf51`
       - External
@@ -630,6 +644,13 @@ Boards
       - 32MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_rhf76_052`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L051C8T6
+      - 84MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -972,7 +993,7 @@ Boards
       - STM32H743ZIT6
       - 400MHz
       - 2MB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -1181,8 +1202,8 @@ Boards
       - External
       - STM32F103T8T6
       - 72MHz
-      - 20KB
       - 64KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
       - External
@@ -1323,6 +1344,13 @@ Boards
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_ststm32_steval_mksboxv1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R9ZI
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_nordicnrf51_Sinobit`
       - :ref:`platform_nordicnrf51`
       - External

@@ -179,12 +179,6 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 796KB
       - 243KB
-    * - :ref:`board_ststm32_nucleo_g071rb`
-      - :ref:`platform_ststm32`
-      - STM32G071RBT6
-      - 24MHz
-      - 2MB
-      - 128KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - :ref:`platform_ststm32`
       - STM32WB55RG
@@ -316,7 +310,7 @@ You do not need to use/buy external debug probe.
       - STM32H743ZIT6
       - 400MHz
       - 2MB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l031k6`
       - :ref:`platform_ststm32`
       - STM32L031K6T6
@@ -738,6 +732,12 @@ Please click on board name for the further details.
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_afroflight_f103cb`
+      - :ref:`platform_ststm32`
+      - STM32F103CBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -858,6 +858,12 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 40KB
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - STM32F401CCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -900,6 +906,12 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_ststm32_coreboard_f401rc`
+      - :ref:`platform_ststm32`
+      - STM32F401RCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1044,6 +1056,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_mkr_sharky`
+      - :ref:`platform_ststm32`
+      - STM32WB55CG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_atmelsam_mkrvidor4000`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -1128,6 +1146,30 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 24MHz
+      - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - :ref:`platform_ststm32`
+      - STM32G431KBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - STM32G431RBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - STM32G474RET6
+      - 17MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_espressif32_esp32-devkitlipo`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1176,6 +1218,12 @@ Please click on board name for the further details.
       - 32MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_rhf76_052`
+      - :ref:`platform_ststm32`
+      - STM32L051C8T6
+      - 84MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_atmelsam_sodaq_autonomo`
       - :ref:`platform_atmelsam`
       - SAMD21J18A
@@ -1246,8 +1294,8 @@ Please click on board name for the further details.
       - :ref:`platform_ststm32`
       - STM32F103T8T6
       - 72MHz
-      - 20KB
       - 64KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
       - STM32F103TBT6
@@ -1332,6 +1380,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_steval_mksboxv1`
+      - :ref:`platform_ststm32`
+      - STM32L4R9ZI
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -2036,6 +2090,27 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
+
+AfroFlight
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_afroflight_f103cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103CBT6
+      - 72MHz
+      - 128KB
+      - 20KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -3861,8 +3936,8 @@ Generic
       - External
       - STM32F103T8T6
       - 72MHz
-      - 20KB
       - 64KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
       - External
@@ -4970,6 +5045,27 @@ Microduino
       - 63KB
       - 4KB
 
+Midatronics
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_mkr_sharky`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WB55CG
+      - 64MHz
+      - 512KB
+      - 192.00KB
+
 MikroElektronika
 ~~~~~~~~~~~~~~~~
 
@@ -5886,6 +5982,13 @@ ST
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -5893,12 +5996,40 @@ ST
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_coreboard_f401rc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G071RBT6
       - 24MHz
       - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431KBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431RBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474RET6
+      - 17MHz
+      - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - :ref:`platform_ststm32`
@@ -5907,6 +6038,13 @@ ST
       - 64MHz
       - 512KB
       - 192.00KB
+    * - :ref:`board_ststm32_rhf76_052`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L051C8T6
+      - 84MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
       - On-board
@@ -6025,7 +6163,7 @@ ST
       - STM32H743ZIT6
       - 400MHz
       - 2MB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l031k6`
       - :ref:`platform_ststm32`
       - On-board
@@ -6145,6 +6283,13 @@ ST
       - 16MHz
       - 16KB
       - 2KB
+    * - :ref:`board_ststm32_steval_mksboxv1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R9ZI
+      - 120MHz
+      - 2MB
+      - 640KB
 
 SainSmart
 ~~~~~~~~~
