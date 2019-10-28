@@ -102,10 +102,10 @@ your project requirements:
       - Set standard. The available options are: ``c89``, ``c99``, ``c11``, ``c++03``, ``c++11``, ``c++14``, ``c++17``, ``c++20 (default)``
 
     * - ``--language=<language>``
-      - Forces cppcheck to check all files as the given language. Valid values are: ``c``, ``c++``
+      - Forces **Cppcheck** to check all files as the given language. Valid values are: ``c``, ``c++``
 
     * - ``--inline-suppr``
-      - Enable inline suppressions. Use them by placing one or more comments, like: ``// cppcheck-suppress warningId`` on the lines before the warning to suppress.
+      - Enable inline suppressions. Use them by placing one or more comments, like: ``// cppcheck-suppress warningId`` on the lines before the warning to suppress (enabled by default if no extra flags specified).
 
     * - ``--suppress=<spec>``
       - Suppress warnings that match ``<spec>``. The format of ``<spec>`` is: ``[error id]:[filename]:[line]``
@@ -127,6 +127,30 @@ your project requirements:
 
     * - ``-j <jobs>``
       - Start ``<jobs>`` threads to do the checking simultaneously.
+
+Suppressing warnings
+--------------------
+It might be useful to explicitly instruct **Cppcheck** to ignore some of the
+known defects in project codebase. Since ``--inline-suppr`` is enabled by
+default, it's possible to directly mark pieces of code that will be excluded
+from **Cppcheck** report. By default, :ref:`piocheck` command doesn't scan
+framework sources and that's why some functions from your project might be
+reported as unused. For example, you can ignore warnings about ``setup`` and
+``loop`` functions from Arduino-based projects:
+
+.. code-block:: c
+
+    // cppcheck-suppress unusedFunction
+    void setup()
+    {
+      ...
+    }
+
+    // cppcheck-suppress unusedFunction
+    void loop()
+    {
+      ...
+    }
 
 Addons (MISRA, CERT)
 --------------------
