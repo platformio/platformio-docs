@@ -133,10 +133,16 @@ Suppressing warnings
 It might be useful to explicitly instruct **Cppcheck** to ignore some of the
 known defects in project codebase. Since ``--inline-suppr`` is enabled by
 default, it's possible to directly mark pieces of code that will be excluded
-from **Cppcheck** report. By default, :ref:`piocheck` command doesn't scan
-framework sources and that's why some functions from your project might be
-reported as unused. For example, you can ignore warnings about ``setup`` and
-``loop`` functions from Arduino-based projects:
+from **Cppcheck** report using ``// cppcheck-suppress warningId`` syntax.
+
+.. note::
+  Warning ID can be found in square brackets at the end of defect description, for example:
+  ``src\Blink.cpp:17: [low:style] The function 'loop' is never used. [unusedFunction]``
+
+By default, :ref:`piocheck` command doesn't scan framework sources and that's
+why some functions from in your project might be reported as unused. For example,
+you can ignore warnings about ``setup`` and ``loop`` functions from
+Arduino-based projects:
 
 .. code-block:: c
 
