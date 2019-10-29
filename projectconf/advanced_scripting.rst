@@ -723,24 +723,22 @@ result of :ref:`projectconf` and "PRE" extra script named ``apply_patches.py``:
     FRAMEWORK_DIR = env.PioPlatform().get_package_dir("framework-arduinoavr")
     patchflag_path = join(FRAMEWORK_DIR, ".patching-done")
 
-    # skip patch process if we did it before
-    if isfile(join(FRAMEWORK_DIR, ".patching-done")):
-        env.Exit(0)
+    # patch file only if we didn't do it before
+    if not isfile(join(FRAMEWORK_DIR, ".patching-done")):
+        original_file = join(FRAMEWORK_DIR, "variants", "standard", "pins_arduino.h")
+        patched_file = join("patches", "1-framework-arduinoavr-add-pin-a8.patch")
 
-    original_file = join(FRAMEWORK_DIR, "variants", "standard", "pins_arduino.h")
-    patched_file = join("patches", "1-framework-arduinoavr-add-pin-a8.patch")
+        assert isfile(original_file) and isfile(patched_file)
 
-    assert isfile(original_file) and isfile(patched_file)
-
-    env.Execute("patch %s %s" % (original_file, patched_file))
-    # env.Execute("touch " + patchflag_path)
+        env.Execute("patch %s %s" % (original_file, patched_file))
+        # env.Execute("touch " + patchflag_path)
 
 
-    def _touch(path):
-        with open(path, "w") as fp:
-            fp.write("")
+        def _touch(path):
+            with open(path, "w") as fp:
+                fp.write("")
 
-    env.Execute(lambda *args, **kwargs: _touch(patchflag_path))
+        env.Execute(lambda *args, **kwargs: _touch(patchflag_path))
 
 
 Please note that this example will work on a system where a ``patch`` tool
