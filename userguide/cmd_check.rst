@@ -76,14 +76,16 @@ Individual flags for each tool can be added using a special suffix with the tool
 
 Multiple ``--flags`` options are allowed.
 
-Example: ``platformio check --flags "-DDEBUG cppcheck: --std=c++11  --platform=avr8"``
+Example: ``platformio check --flags "-DDEBUG cppcheck: --std=c++11 --platform=avr8"``
 
 .. option::
     --severity
 
 Specify the :ref:`check_severity` types which will be reported by the :ref:`check_tools`.
+Possible values described in :ref:`check_severity` section. Multiple ``--severity``
+options are allowed.
 
-Multiple ``--severity`` options are allowed.
+Example: ``platformio check --severity=high``
 
 .. option::
     -d, --project-dir
@@ -106,8 +108,10 @@ Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 
 Fail (exit with non-zero code) if there is a defect found with specified
 severity. By default exit code is the same as the exit code returned by 
-a tool selected for performing check.
-Multiple ``--fail-on-defect`` options are allowed.
+a tool selected for performing check. Possible values described in 
+:ref:`check_severity` section. Multiple ``--fail-on-defect`` options are allowed.
+
+Example: ``platformio check --fail-on-defect=low --fail-on-defect=medium``
 
 .. option::
     -s, --silent
