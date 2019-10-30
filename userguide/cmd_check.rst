@@ -104,8 +104,10 @@ Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 .. option::
     --fail-on-defect
 
-Fail (exit with non-zero code) if there is a critical defect found. By default
-exit code is the same as the exit code returned by a tool selected for performing check.
+Fail (exit with non-zero code) if there is a defect found with specified
+severity. By default exit code is the same as the exit code returned by 
+a tool selected for performing check.
+Multiple ``--fail-on-defect`` options are allowed.
 
 .. option::
     -s, --silent
