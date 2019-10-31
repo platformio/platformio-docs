@@ -641,6 +641,7 @@ Nordic nRF52
     nordicnrf52/bluey
     nordicnrf52/adafruit_cplaynrf52840
     nordicnrf52/delta_dfbm_nq620
+    nordicnrf52/adafruit_itsybitsy_nrf52840
     nordicnrf52/adafruit_metro_nrf52840
     nordicnrf52/nrf52_dk
     nordicnrf52/nrf52840_dk

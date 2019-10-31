@@ -77,18 +77,6 @@ You do not need to use/buy external debug probe.
       - 84MHz
       - 512KB
       - 96KB
-    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
-      - :ref:`platform_nordicnrf52`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
     * - :ref:`board_atmelsam_mzeropro`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -131,7 +119,7 @@ You do not need to use/buy external debug probe.
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+    * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
       - :ref:`platform_nordicnrf52`
       - NRF52840
       - 64MHz
@@ -588,6 +576,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
+      - :ref:`platform_nordicnrf52`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -624,6 +618,12 @@ Please click on board name for the further details.
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - :ref:`platform_atmelsam`
       - SAMD21E18A
@@ -1104,6 +1104,12 @@ Please click on board name for the further details.
       - 72MHz
       - 108KB
       - 17KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_microduino32_flash`
       - :ref:`platform_ststm32`
       - STM32F103CBT6
@@ -1791,7 +1797,7 @@ Adafruit
       - 2.50KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -1861,7 +1867,7 @@ Adafruit
       - 192KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52840
       - 64MHz
       - 796KB
@@ -2083,9 +2089,16 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
-    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+    * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
       - :ref:`platform_nordicnrf52`
       - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
       - NRF52840
       - 64MHz
       - 796KB

@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_nordicnrf52_adafruit_feather_nrf52840:
+.. _board_nordicnrf52_adafruit_itsybitsy_nrf52840:
 
-Adafruit Feather nRF52840 Express
-=================================
+ItsyBitsy nRF52840 Express
+==========================
 
 .. contents::
 
@@ -38,24 +38,24 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
 Configuration
 -------------
 
-Please use ``adafruit_feather_nrf52840`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``adafruit_itsybitsy_nrf52840`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:adafruit_feather_nrf52840]
+  [env:adafruit_itsybitsy_nrf52840]
   platform = nordicnrf52
-  board = adafruit_feather_nrf52840
+  board = adafruit_itsybitsy_nrf52840
 
-You can override default Adafruit Feather nRF52840 Express settings per build environment using
+You can override default ItsyBitsy nRF52840 Express settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `adafruit_feather_nrf52840.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/adafruit_feather_nrf52840.json>`_. For example,
+board manifest `adafruit_itsybitsy_nrf52840.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/adafruit_itsybitsy_nrf52840.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:adafruit_feather_nrf52840]
+  [env:adafruit_itsybitsy_nrf52840]
   platform = nordicnrf52
-  board = adafruit_feather_nrf52840
+  board = adafruit_itsybitsy_nrf52840
 
   ; change microcontroller
   board_build.mcu = nrf52840
@@ -66,7 +66,7 @@ board manifest `adafruit_feather_nrf52840.json <https://github.com/platformio/pl
 
 Uploading
 ---------
-Adafruit Feather nRF52840 Express supports the next uploading protocols:
+ItsyBitsy nRF52840 Express supports the next uploading protocols:
 
 * ``jlink``
 * ``nrfjprog``
@@ -78,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:adafruit_feather_nrf52840]
+  [env:adafruit_itsybitsy_nrf52840]
   platform = nordicnrf52
-  board = adafruit_feather_nrf52840
+  board = adafruit_itsybitsy_nrf52840
 
   upload_protocol = nrfutil
 
@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit Feather nRF52840 Express does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+ItsyBitsy nRF52840 Express has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -106,7 +106,7 @@ Adafruit Feather nRF52840 Express does not have on-board debug probe and **IS NO
     - On-board
     - Default
   * - :ref:`debugging_tool_jlink`
-    - 
+    - Yes
     - Yes
 
 Frameworks

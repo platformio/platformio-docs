@@ -396,7 +396,7 @@ Adafruit
       - RAM
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -445,7 +445,7 @@ Adafruit
       - 192KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52840
       - 64MHz
       - 796KB
@@ -583,9 +583,16 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
-    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+    * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
       - :ref:`platform_nordicnrf52`
       - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
       - NRF52840
       - 64MHz
       - 796KB
