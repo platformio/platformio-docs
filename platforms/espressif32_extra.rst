@@ -213,7 +213,7 @@ C source.
 
 There are two options ``board_build.embed_txtfiles`` and ``board_build.embed_files`` 
 which can be used for embedding data. The only difference is that files specified
-in ``board_build.embed_txt_files`` option are null-terminated in the final binary.
+in ``board_build.embed_txtfiles`` option are null-terminated in the final binary.
 
 .. code-block:: ini
 
