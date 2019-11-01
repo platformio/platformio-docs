@@ -95,6 +95,12 @@ Please click on board name for the further details.
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-MF1`
+      - :ref:`platform_kendryte210`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
 
 
 Examples
@@ -163,6 +169,13 @@ Sipeed
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-MF1`
       - :ref:`platform_kendryte210`
       - External
       - K210

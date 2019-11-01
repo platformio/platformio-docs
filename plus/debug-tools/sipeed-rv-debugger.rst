@@ -185,6 +185,13 @@ Boards
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-MF1`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_gd32v_wio_lite_risc-v`
       - :ref:`platform_gd32v`
       - External

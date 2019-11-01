@@ -98,6 +98,11 @@ Please click on board name for the further details.
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-MF1`
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
 
 
 Stable and upstream versions
@@ -236,6 +241,12 @@ Sipeed
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maixduino`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-MF1`
       - External
       - K210
       - 400MHz
