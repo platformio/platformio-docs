@@ -77,7 +77,7 @@ Another option for filtering source files is :option:`platformio check --filter`
 ``check_flags``
 ^^^^^^^^^^^^^^^
 
-Type: ``String`` | Multiple: ``No``
+Type: ``String`` | Multiple: ``Yes``
 
 Additional flags to be passed to the tool command line. This option is useful
 when you want to adjust the check process to fit your project requirements.
