@@ -42,34 +42,29 @@ See available tools in :ref:`check_tools`.
     check_tool = cppcheck, clangtidy
 
 
-.. _projectconf_check_filter:
+.. _projectconf_check_pattern:
 
-``check_filter``
-^^^^^^^^^^^^^^^^
+``check_pattern``
+^^^^^^^^^^^^^^^^^
 
 Type: ``String (Pattern)`` | Multiple: ``Yes``
 
-This option allows specifying which source files should be
-included/excluded from the check process. The filter supports 2 templates:
+This option allows specifying which source files or folders should be
+included/excluded from the check process. `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
 
-* ``+<PATH>`` include template
-* ``-<PATH>`` exclude template
-
-``PATH`` MUST BE related from a project root directory. All patterns will
-be applied in their order.
-`GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
-
-Another option for filtering source files is :option:`platformio check --filter` command.
+Another option for filtering source files is :option:`platformio check --pattern` command.
 
 **Example**
 
 .. code-block:: ini
 
-    [env:custom_check_filter]
+    [env:custom_check_pattern]
     platform = ...
     board = ...
     check_tool = clangtidy
-    check_filter = -<*> +<src/module_to_check>
+    check_pattern =
+      app/sources
+      tests/hardware/*.c
 
 
 .. _projectconf_check_flags:
