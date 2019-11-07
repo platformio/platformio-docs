@@ -64,6 +64,7 @@ Commands
 
     platformio account <account/index>
     cmd_boards
+    cmd_check
     cmd_ci
     cmd_debug
     cmd_device
