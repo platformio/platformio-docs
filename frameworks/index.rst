@@ -24,12 +24,14 @@ Frameworks
     esp8266-rtos-sdk
     espidf
     freedom-e-sdk
+    gd32vf103-sdk
     kendryte-freertos-sdk
     kendryte-standalone-sdk
     libopencm3
     mbed
     pulp-os
     pumbaa
+    shakti-sdk
     simba
     spl
     stm32cube

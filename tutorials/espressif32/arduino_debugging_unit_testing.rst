@@ -14,7 +14,7 @@
 Get started with Arduino and ESP32-DevKitC: debugging and unit testing
 ======================================================================
 
-The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vscode` to develop, run and debug a simple project with :ref:`framework_arduino` framework for ``ESP32-DevKitC`` board.
+The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vscode` to develop, run and debug a simple project with the :ref:`framework_arduino` framework for the ``ESP32-DevKitC`` board.
 
 * **Level:** Beginner
 * **Platforms:** Windows, Mac OS X, Linux
@@ -31,21 +31,21 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vs
 Setting Up the Project
 ----------------------
 
-At first step, we need to create a new project using PlatformIO Home Page (to open this page just press Home icon on the toolbar):
+First, we need to create a new project using the PlatformIO Home Page (to open this page, just press the Home icon on the toolbar):
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-1.png
 
-On the next step we need to select ``ESP32-DevKitC`` as a development board, :ref:`framework_arduino` as a framework and a path to the project location (or use the default one):
+Next, we need to select ``ESP32-DevKitC`` as a development board, :ref:`framework_arduino` as a framework and a path to the project location (or use the default one):
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-2.png
 
-Processing the selected project may take some amount of time (PlatformIO will download and install all required packages)
-and after these steps, we have a fully configured project that is ready for developing code with :ref:`framework_arduino` framework.
+Processing the selected project may take some time (PlatformIO will download and install all required packages).
+After that, we have a fully configured project that is ready for developing code with the :ref:`framework_arduino` framework.
 
 Adding Code to the Generated Project
 ------------------------------------
 
-Let's add some actual code to the project. Firstly, we open a default main file named ``main.cpp`` in the :ref:`projectconf_pio_src_dir` folder and replace its content with next one:
+Let's add some actual code to the project. Firstly, we open a default main file named ``main.cpp`` in the :ref:`projectconf_pio_src_dir` folder and replace its content with following:
 
 .. code-block:: cpp
 
@@ -64,27 +64,43 @@ Let's add some actual code to the project. Firstly, we open a default main file 
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-3.png
 
-After this step, we created a basic project ready for compiling and uploading.
+We have now created a basic project ready for compiling and uploading.
 
 Compiling and Uploading the Firmware
 ------------------------------------
 
-Now we can build the project. To compile firmware we can use the next options:
-Build option from the ``Project Tasks`` menu, Build button in :ref:`ide_vscode_toolbar`, Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
+Now we can build the project. There are several ways to compile firmware:
+
+* Build option in the ``Project Tasks`` menu,
+* Build button in :ref:`ide_vscode_toolbar`,
+* Task Menu: ``Tasks: Run Task... > PlatformIO: Build``, or in the :ref:`ide_vscode_toolbar`,
+* Command Palette: ``View: Command Palette > PlatformIO: Build``, or
+* via hotkeys ``cmd-alt-b / ctrl-alt-b``
+
+Marked in red:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-4.png
 
-If everything went well, we should see a successful result message in the terminal window:
+If everything went well, we should see a Success message in the terminal window:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-5.png
 
-To upload the firmware to the board we can use the next options:
-Upload option from the ``Project Tasks`` menu, Upload button in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
+There are also several ways to upload the firmware to the board:
+
+* Upload option in the ``Project Tasks`` menu,
+* Upload button in :ref:`ide_vscode_toolbar`,
+* Command Palette: ``View: Command Palette > PlatformIO: Upload``,
+* using the Task Menu: ``Tasks: Run Task... > PlatformIO: Upload``, or
+* via hotkeys: ``cmd-alt-u / ctrl-alt-u``:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-6.png
 
-After successful uploading, we need to check if the firmware is uploaded correctly. To do this we need to open the serial monitor and check that the message from the board is received. To open serial monitor we can use the next options:
-Monitor option from the ``Project Tasks`` menu, Serial Monitor button in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Monitor``, Task Menu ``Tasks: Run Task... > PlatformIO: Monitor``:
+After uploading, we need to check if the firmware is uploaded correctly. To do this, open the serial monitor and check that the message from the board is received. To open the serial monitor, we can use the following options:
+
+* Monitor option in the ``Project Tasks`` menu,
+* Serial Monitor button in the :ref:`ide_vscode_toolbar`,
+* Command Palette: ``View: Command Palette > PlatformIO: Monitor``, or
+* Task Menu: ``Tasks: Run Task... > PlatformIO: Monitor``:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-7.png
 
@@ -98,7 +114,7 @@ Debugging the Firmware
 Setting Up the Hardware
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to use a JTAG probe with ESP32 we need to connect the following pins:
+In order to use a JTAG probe with an ESP32, we need to connect the following pins:
 
 .. list-table::
     :header-rows:  1
@@ -127,7 +143,7 @@ In order to use a JTAG probe with ESP32 we need to connect the following pins:
     * - ``GPIO 15 (TDO)``
       - ``Pin 13 (TDO)``
 
-:ref:`piodebug` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`projectconf`. In this tutorial :ref:`debugging_tool_olimex-arm-usb-ocd-h` debug probe is used:
+:ref:`piodebug` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`projectconf`. In this tutorial, an :ref:`debugging_tool_olimex-arm-usb-ocd-h` debug probe is used:
 
 .. code-block:: ini
 
@@ -137,38 +153,41 @@ In order to use a JTAG probe with ESP32 we need to connect the following pins:
     framework = arduino
     debug_tool = olimex-arm-usb-ocd-h
 
-To start the debug session we can use the next options:
-``Debug: Start debugging`` from the top menu, ``Start Debugging`` option from Quick Access menu or hotkey button ``F5``:
+To start the debug session we can use the following methods:
+
+* ``Debug: Start debugging`` in the top menu,
+* ``Start Debugging`` option in the Quick Access menu, or
+* hotkey button ``F5``:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-9.png
 
-We need to wait some time while PlatformIO is initializing debug session,
-and we are ready to debug when the first line after the main function is highlighted.
+We need to wait some time while PlatformIO initializes the debug session,
+and are ready to debug when the first line after the main function is highlighted.
 
 1. Please wait when debugging session is stopped at the first line of ``app_main()`` function
-2. **WARNING!** Please set breakpoint at ``void loopTask(void *pvParameters)`` (13 line  on the screenshot below, this line can change between releases)
+2. **WARNING!** Please set a breakpoint at ``void loopTask(void *pvParameters)`` (line 13 in the screenshot below - this line can change between releases)
 3. Now, please press CONTINUE/RUN button on debugging toolbar (right arrow icon)
-4. Debugging session should stop at the first line of ``void loopTask(void *pvParameters)`` function
+4. The debugging session should stop at the first line of the ``void loopTask(void *pvParameters)`` function
 5. Now, navigate to your Arduino setup/loop code and do classic debugging.
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-10.png
 
-We can walk through the code using control buttons, set breakpoints, add variables to ``Watch window``:
+We can walk through the code using control buttons, set breakpoints, and add variables to the ``Watch window``:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-11.png
 
 Writing Unit Tests
 ------------------
 
-Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``. Functions ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example we will use these functions to accordingly initialize and deinitialize LED.  ``setup`` and ``loop`` functions act as a simple Arduino program where we describe our test plan.
+Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``. Functions ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests, but if you need to initialize some variables before you run a test, use the ``setUp`` function. Likewise, if you need to clean up variables, use ``tearDown`` function. In our example we will use these functions to respectively initialize and deinitialize LED states.  The ``setup`` and ``loop`` functions act as a simple Arduino program where we describe our test plan.
 
-Let's create ``test`` folder in the root of the project and add a new file ``test_main.cpp`` to this folder. Next basic tests for ``String`` class will be implemented in this file:
+Let's create a ``test`` folder in the root of the project and add a new file, ``test_main.cpp``, to this folder. Next, basic tests for ``String`` class will be implemented in this file:
 
 * ``test_string_concat`` tests the concatenation of two strings
 * ``test_string_substring`` tests the correctness of the substring extraction
 * ``test_string_index_of`` ensures that the string returns the correct index of the specified symbol
 * ``test_string_equal_ignore_case`` tests case-insensitive comparison of two strings
-* ``test_string_to_upper_case`` tests upper-case conversion of the string
+* ``test_string_to_upper_case`` tests conversion of the string to upper-case
 * ``test_string_replace`` tests the correctness of the replacing operation
 
 .. code-block:: cpp
@@ -236,12 +255,15 @@ Let's create ``test`` folder in the root of the project and add a new file ``tes
     }
 
 
-Now we are ready to upload tests to the board. To do this we can use the next options:
-Test button on :ref:`ide_vscode_toolbar`, Test option from the ``Project Tasks`` menu or ``Tasks: Run Task... > PlatformIO Test`` from the top menu:
+Now we are ready to upload tests to the board. To do this we can use the following:
+
+* Test button on :ref:`ide_vscode_toolbar`,
+* Test option in the ``Project Tasks`` menu, or
+* ``Tasks: Run Task... > PlatformIO Test`` in the top menu:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-12.png
 
-After processing we should see a detailed report about testing results:
+After processing, we should see a detailed report about the testing results:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-13.png
 
@@ -250,8 +272,8 @@ As we can see from the report, all our tests were successful!
 Adding Bluetooth LE features
 ----------------------------
 
-Now let's create a basic application that can interact with other BLE devices (e.g phone)
-For example, next code declares a BLE characteristic whose value can be printed to the serial port:
+Now let's create a basic application that can interact with other BLE devices (e.g phones).
+For example, the following code declares a BLE characteristic whose value can be printed to the serial port:
 
 .. code-block:: cpp
 
@@ -301,15 +323,15 @@ For example, next code declares a BLE characteristic whose value can be printed 
     }
 
 Now we can compile and upload this program to the board as described in the previous sections.
-To verify that our application works as expected, we can use any Android smartphone with BLE feature and
+To verify that our application works as expected, we can use any Android smartphone with the BLE feature and
 `Nordic nRF Connect tool <https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en>`_.
 
 At first, we need to scan all advertising BLE devices and connect to the device called ``ESP32 BLE example``.
-After the successful connection to the board, we should see one "Unknown Service" with one "Unknown Characteristic" field:
+After successful connection to the board, we should see one "Unknown Service" with one "Unknown Characteristic" field:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-14.png
 
-To set the value we need to send the new text to the BLE characteristic:
+To set the value, we need to send new text to the BLE characteristic:
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-15.png
 
@@ -320,4 +342,4 @@ The change of the value is printed to the serial monitor:
 Conclusion
 ----------
 
-Now we have a project template for ``ESP32-DevKitC`` board that we can use as boilerplate for the next projects.
+Now we have a project template for the ``ESP32-DevKitC`` board that we can use as boilerplate for later projects.

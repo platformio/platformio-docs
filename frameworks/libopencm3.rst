@@ -219,8 +219,8 @@ Please click on board name for the further details.
       - :ref:`platform_ststm32`
       - STM32F103T8T6
       - 72MHz
-      - 20KB
       - 64KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
       - STM32F103TBT6
@@ -408,8 +408,8 @@ Generic
       - External
       - STM32F103T8T6
       - 72MHz
-      - 20KB
       - 64KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
       - External

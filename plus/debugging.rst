@@ -75,6 +75,7 @@ A registration is **FREE**.
 Tutorials
 ---------
 
+* `Arduino In-circuit Debugging with PlatformIO <https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc>`__
 * `ThingForward: First steps with PlatformIO’s Unified Debugger <https://www.thingforward.io/techblog/2018-07-04-first-steps-with-platformios-unified-debugger.html>`_
 * `[VIDEO] ThingForward - Intro to PIO Unified Debugger using ARM mbed OS and PlatformIO IDE for VSCode <https://www.youtube.com/watch?v=GtlsW3FDN3E>`_
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
@@ -107,11 +108,13 @@ option.
 .. toctree::
   :maxdepth: 1
 
+  debug-tools/altera-usb-blaster
   debug-tools/atmel-ice
   debug-tools/blackmagic
   debug-tools/cmsis-dap
   debug-tools/esp-prog
   debug-tools/ftdi
+  debug-tools/gd-link
   debug-tools/iot-bus-jtag
   debug-tools/jlink
   debug-tools/minimodule
@@ -121,10 +124,12 @@ option.
   debug-tools/olimex-arm-usb-tiny-h
   debug-tools/olimex-jtag-tiny
   debug-tools/qemu
+  debug-tools/rv-link
   debug-tools/sipeed-rv-debugger
   debug-tools/stlink
   debug-tools/ti-icdi
   debug-tools/tumpa
+  debug-tools/um232h
   debug-tools/custom
 
 CLI Guide
@@ -158,11 +163,14 @@ Platforms
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
+    * - :ref:`platform_gd32v`
+      - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
+
     * - :ref:`platform_infineonxmc`
       - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
     * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
@@ -181,6 +189,9 @@ Platforms
 
     * - :ref:`platform_samsung_artik`
       - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
+
+    * - :ref:`platform_shakti`
+      - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
       - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
@@ -226,6 +237,9 @@ Frameworks
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
+    * - :ref:`framework_gd32vf103-sdk`
+      - GigaDevice GD32VF103 Firmware Library (SDK)
+
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
 
@@ -240,6 +254,9 @@ Frameworks
 
     * - :ref:`framework_pulp-os`
       - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.
+
+    * - :ref:`framework_shakti-sdk`
+      - A software development kit for developing applications on Shakti class of processors
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
@@ -301,6 +318,27 @@ Boards
       - 512KB
       - 128KB
 
+AI Thinker
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_esp32cam`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Aceinna
 ~~~~~~~
 
@@ -314,6 +352,20 @@ Aceinna
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_aceinna_imu_LowCostRTK`
+      - :ref:`platform_aceinna_imu`
+      - On-board
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenIMU300`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F405RG
+      - 120MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_aceinna_imu_OpenIMU300ZA`
       - :ref:`platform_aceinna_imu`
       - External
@@ -321,6 +373,13 @@ Aceinna
       - 120MHz
       - 1MB
       - 128KB
+    * - :ref:`board_aceinna_imu_OpenIMU330`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32L431CB
+      - 80MHz
+      - 128KB
+      - 64KB
 
 Adafruit
 ~~~~~~~~
@@ -337,7 +396,7 @@ Adafruit
       - RAM
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -386,7 +445,7 @@ Adafruit
       - 192KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52840
       - 64MHz
       - 796KB
@@ -412,6 +471,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_hallowing_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -425,6 +491,13 @@ Adafruit
       - SAMD51G19A
       - 120MHz
       - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_monster_m4sk`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
@@ -489,6 +562,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_pybadge_airlift_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1008KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_pybadge_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -496,13 +576,48 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
-    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
       - :ref:`platform_nordicnrf52`
       - On-board
       - NRF52840
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+
+AfroFlight
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_afroflight_f103cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103CBT6
+      - 72MHz
+      - 128KB
+      - 20KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -1439,8 +1554,8 @@ Generic
       - External
       - STM32F103T8T6
       - 72MHz
-      - 20KB
       - 64KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
       - External
@@ -1834,6 +1949,27 @@ MH-ET Live
       - 4MB
       - 320KB
 
+MVT Solutions
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_iotaap_magnolia`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 MXChip
 ~~~~~~
 
@@ -1987,6 +2123,27 @@ Micromint
       - 204MHz
       - 8MB
       - 264KB
+
+Midatronics
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_mkr_sharky`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WB55CG
+      - 64MHz
+      - 512KB
+      - 192.00KB
 
 MikroElektronika
 ~~~~~~~~~~~~~~~~
@@ -2288,6 +2445,13 @@ OLIMEX
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_esp32-devkitlipo`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-evb`
       - :ref:`platform_espressif32`
       - External
@@ -2323,6 +2487,27 @@ OSHChip
       - 32MHz
       - 256KB
       - 32KB
+
+Particle
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 Pycom Ltd.
 ~~~~~~~~~~
@@ -2365,13 +2550,6 @@ RAK
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_rak811_tracker_32`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32L151RBT6
-      - 32MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - External
@@ -2379,6 +2557,13 @@ RAK
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 32KB
 
 RUMBA
 ~~~~~
@@ -2645,13 +2830,6 @@ ST
       - 168MHz
       - 512KB
       - 128KB
-    * - :ref:`board_ststm32_black_f407zg`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F407ZGT6
-      - 168MHz
-      - 1MB
-      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - External
@@ -2659,6 +2837,20 @@ ST
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -2666,12 +2858,40 @@ ST
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_coreboard_f401rc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G071RBT6
       - 24MHz
       - 2MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431KBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431RBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474RET6
+      - 17MHz
+      - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - :ref:`platform_ststm32`
@@ -2680,6 +2900,13 @@ ST
       - 64MHz
       - 512KB
       - 192.00KB
+    * - :ref:`board_ststm32_rhf76_052`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L051C8T6
+      - 84MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2973,7 +3200,7 @@ ST
       - STM32H743ZIT6
       - 400MHz
       - 2MB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -3135,6 +3362,13 @@ ST
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_steval_mksboxv1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R9ZI
+      - 120MHz
+      - 2MB
+      - 640KB
 
 SainSmart
 ~~~~~~~~~
@@ -3261,6 +3495,13 @@ SeeedStudio
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_gd32v_wio_lite_risc-v`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
 
 Semtech
 ~~~~~~~
@@ -3436,6 +3677,20 @@ Sipeed
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_gd32v_gd32vf103v-eval`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
       - External
@@ -3465,6 +3720,13 @@ Sipeed
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-MF1`
       - :ref:`platform_kendryte210`
       - External
       - K210
@@ -3616,8 +3878,8 @@ TI
       - On-board
       - MSP430FR5739
       - 16MHz
-      - 16KB
-      - 512B
+      - 15.37KB
+      - 1KB
     * - :ref:`board_titiva_lplm4f120h5qr`
       - :ref:`platform_titiva`
       - On-board
@@ -3643,9 +3905,23 @@ TI
       - :ref:`platform_timsp430`
       - On-board
       - MSP430F5529
-      - 16MHz
-      - 128KB
+      - 25MHz
+      - 47KB
       - 8KB
+    * - :ref:`board_timsp430_lpmsp430fr2311`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR2311
+      - 16MHz
+      - 3.75KB
+      - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2433`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR2433
+      - 8MHz
+      - 15KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr4133`
       - :ref:`platform_timsp430`
       - On-board
@@ -3658,15 +3934,36 @@ TI
       - On-board
       - MSP430FR5969
       - 8MHz
-      - 64KB
+      - 47KB
       - 2KB
+    * - :ref:`board_timsp430_lpmsp430fr5994`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR5994
+      - 16MHz
+      - 256KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr6989`
       - :ref:`platform_timsp430`
       - On-board
       - MSP430FR6989
       - 8MHz
-      - 127KB
+      - 47KB
       - 2KB
+    * - :ref:`board_timsp430_lpmsp430g2231`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430G2231
+      - 1MHz
+      - 2KB
+      - 256B
+    * - :ref:`board_timsp430_lpmsp430g2452`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430G2452
+      - 16MHz
+      - 8KB
+      - 256B
     * - :ref:`board_timsp430_lpmsp430g2553`
       - :ref:`platform_timsp430`
       - On-board
@@ -3702,6 +3999,13 @@ TTGO
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_ttgo-t1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Taida Century
 ~~~~~~~~~~~~~
@@ -3878,6 +4182,27 @@ VNG
       - 128KB
       - 32KB
 
+VintLabs
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_vintlabs-devkit-v1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 WEMOS
 ~~~~~
 
@@ -3906,6 +4231,13 @@ WEMOS
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wemos_d1_mini32`
       - :ref:`platform_espressif32`
       - External
       - ESP32
@@ -3989,6 +4321,20 @@ Xilinx
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_shakti_artix7_35t`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_artix7_100t`
+      - :ref:`platform_shakti`
+      - On-board
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
     * - :ref:`board_sifive_e310-arty`
       - :ref:`platform_sifive`
       - On-board

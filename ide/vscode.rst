@@ -228,7 +228,7 @@ Custom Tasks
 Custom tasks can be added to ``tasks.json`` file located in ``.vscode`` folder
 in the root of project. Please read official documentation `Tasks in VSCode <https://code.visualstudio.com/docs/editor/tasks#vscode>`_.
 
-This simple example demonstrates a custom build process in verbose mode.
+This simple example demonstrates a custom monitor task which echoes input locally.
 There are a lot of other commands, please read more about :ref:`piocore` and
 its commands (:ref:`userguide`).
 

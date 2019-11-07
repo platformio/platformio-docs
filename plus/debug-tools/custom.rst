@@ -93,7 +93,7 @@ Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
 J-Link as debugger and uploader
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Segger J-Link probe as debugger and uploader for a custom Teensy-based board.
+Segger J-Link probe as debugger and uploader for a custom board.
 If you plan to use with other board, please change device ``MK20DX256xxx7``
 to a valid identifier. See supported J-Link devices at :ref:`debugging_tool_jlink`.
 
@@ -130,17 +130,6 @@ Place this file on the same level as :ref:`projectconf`.
     from os import makedirs
     from os.path import isdir, join
     Import('env')
-
-
-    # Optional block, only for Teensy
-    env.AddPostAction(
-        "$BUILD_DIR/firmware.hex",
-        env.VerboseAction(" ".join([
-            "sed", "-i.bak",
-            "s/:10040000FFFFFFFFFFFFFFFFFFFFFFFFDEF9FFFF23/:10040000FFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFFFD/",
-            "$BUILD_DIR/firmware.hex"
-        ]), "Fixing $BUILD_DIR/firmware.hex secure flash flags"))
-
 
     def _jlink_cmd_script(env, source):
         build_dir = env.subst("$BUILD_DIR")

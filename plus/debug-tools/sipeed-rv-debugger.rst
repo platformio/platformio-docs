@@ -93,8 +93,11 @@ Platforms
     * - Name
       - Description
 
+    * - :ref:`platform_gd32v`
+      - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
+
     * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
 Frameworks
 ----------
@@ -106,6 +109,9 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_gd32vf103-sdk`
+      - GigaDevice GD32VF103 Firmware Library (SDK)
 
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
@@ -130,6 +136,20 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_gd32v_gd32vf103v-eval`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
       - External
@@ -165,3 +185,17 @@ Boards
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-MF1`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_gd32v_wio_lite_risc-v`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB

@@ -165,11 +165,14 @@ Platforms
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
+    * - :ref:`platform_gd32v`
+      - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
+
     * - :ref:`platform_infineonxmc`
       - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
     * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
@@ -182,6 +185,9 @@ Platforms
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
+
+    * - :ref:`platform_shakti`
+      - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
       - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
@@ -218,6 +224,9 @@ Frameworks
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
+    * - :ref:`framework_gd32vf103-sdk`
+      - GigaDevice GD32VF103 Firmware Library (SDK)
+
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
 
@@ -229,6 +238,9 @@ Frameworks
 
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+
+    * - :ref:`framework_shakti-sdk`
+      - A software development kit for developing applications on Shakti class of processors
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
@@ -305,6 +317,13 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_espressif32_esp32cam`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_alksesp32`
       - :ref:`platform_espressif32`
       - External
@@ -319,6 +338,20 @@ Boards
       - 48MHz
       - 32KB
       - 8KB
+    * - :ref:`board_aceinna_imu_LowCostRTK`
+      - :ref:`platform_aceinna_imu`
+      - On-board
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenIMU300`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F405RG
+      - 120MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_aceinna_imu_OpenIMU300ZA`
       - :ref:`platform_aceinna_imu`
       - External
@@ -326,9 +359,16 @@ Boards
       - 120MHz
       - 1MB
       - 128KB
+    * - :ref:`board_aceinna_imu_OpenIMU330`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32L431CB
+      - 80MHz
+      - 128KB
+      - 64KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -377,7 +417,7 @@ Boards
       - 192KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52840
       - 64MHz
       - 796KB
@@ -403,6 +443,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_hallowing_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -416,6 +463,13 @@ Boards
       - SAMD51G19A
       - 120MHz
       - 512KB
+      - 192KB
+    * - :ref:`board_atmelsam_adafruit_monster_m4sk`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
@@ -480,6 +534,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_pybadge_airlift_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1008KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_pybadge_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -487,6 +548,13 @@ Boards
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_afroflight_f103cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103CBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
       - External
@@ -613,6 +681,20 @@ Boards
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_shakti_artix7_35t`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_artix7_100t`
+      - :ref:`platform_shakti`
+      - On-board
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
     * - :ref:`board_sifive_e310-arty`
       - :ref:`platform_sifive`
       - On-board
@@ -676,19 +758,19 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
-    * - :ref:`board_ststm32_black_f407zg`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F407ZGT6
-      - 168MHz
-      - 1MB
-      - 128KB
     * - :ref:`board_ststm32_black_f407ze`
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZET6
       - 168MHz
       - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_blackpill_f103c8`
       - :ref:`platform_ststm32`
@@ -711,6 +793,13 @@ Boards
       - 72MHz
       - 256KB
       - 40KB
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -767,6 +856,13 @@ Boards
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nxplpc_elektor_cocorico`
       - :ref:`platform_nxplpc`
       - On-board
@@ -774,6 +870,13 @@ Boards
       - 30MHz
       - 16KB
       - 4KB
+    * - :ref:`board_ststm32_coreboard_f401rc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RCT6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
       - External
@@ -1047,6 +1150,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_gd32v_gd32vf103v-eval`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - :ref:`platform_espressif32`
       - External
@@ -1096,6 +1206,20 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_iotaap_magnolia`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_rhombio_l476dmw1k`
       - :ref:`platform_ststm32`
       - On-board
@@ -1145,6 +1269,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_mkr_sharky`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WB55CG
+      - 64MHz
+      - 512KB
+      - 192.00KB
     * - :ref:`board_atmelsam_mkrvidor4000`
       - :ref:`platform_atmelsam`
       - External
@@ -1217,7 +1348,7 @@ Boards
       - 256KB
     * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52840
       - 64MHz
       - 796KB
@@ -1420,11 +1551,39 @@ Boards
       - 243KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G071RBT6
       - 24MHz
       - 2MB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431KBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431RBT6
+      - 24MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474RET6
+      - 17MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_espressif32_esp32-devkitlipo`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-evb`
       - :ref:`platform_espressif32`
       - External
@@ -1467,13 +1626,6 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
-    * - :ref:`board_ststm32_rak811_tracker_32`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32L151RBT6
-      - 32MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - External
@@ -1481,6 +1633,20 @@ Boards
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_rak811_tracker_32`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L151RBT6
+      - 32MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_rhf76_052`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L051C8T6
+      - 84MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -1872,7 +2038,7 @@ Boards
       - STM32H743ZIT6
       - 400MHz
       - 2MB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -2074,8 +2240,8 @@ Boards
       - External
       - STM32F103T8T6
       - 72MHz
-      - 20KB
       - 64KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
       - External
@@ -2223,6 +2389,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_steval_mksboxv1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R9ZI
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - External
@@ -2236,6 +2409,13 @@ Boards
       - NRF51822
       - 32MHz
       - 256KB
+      - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
       - 32KB
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
@@ -2266,6 +2446,13 @@ Boards
       - 16MB
       - 6MB
     * - :ref:`board_kendryte210_sipeed-maixduino`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
+    * - :ref:`board_kendryte210_sipeed-MF1`
       - :ref:`platform_kendryte210`
       - External
       - K210
@@ -2342,6 +2529,13 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_ttgo-t1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
       - :ref:`platform_nordicnrf52`
       - External
@@ -2412,6 +2606,13 @@ Boards
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_espressif32_vintlabs-devkit-v1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - External
@@ -2461,6 +2662,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_wemos_d1_mini32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_wemosbat`
       - :ref:`platform_espressif32`
       - External
@@ -2468,6 +2676,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_gd32v_wio_lite_risc-v`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_infineonxmc_xmc1100_boot_kit`
       - :ref:`platform_infineonxmc`
       - On-board
@@ -2524,6 +2739,13 @@ Boards
       - 144MHz
       - 2.00MB
       - 1.95MB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_espressif32_xinabox_cw02`
       - :ref:`platform_espressif32`
       - External

@@ -93,12 +93,13 @@ Options
 .. toctree::
     :maxdepth: 2
 
-    section_env_general
+    section_env_platform
     section_env_board
     section_env_build
     section_env_upload
     section_env_monitor
     section_env_library
+    section_env_check
     section_env_test
     section_env_debug
     section_env_advanced

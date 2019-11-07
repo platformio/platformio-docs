@@ -52,6 +52,12 @@ You can open PIO Home for inbound connections using host ``0.0.0.0``.
 
 Do not automatically open PIO Home in a system Web-browser.
 
+.. option::
+    --shutdown-timeout
+
+Automatically shutdown server on timeout (in seconds) when no clients are connected.
+Default is ``0`` which means never auto shutdown.
+
 Examples
 --------
 
@@ -64,3 +70,6 @@ Examples
     /  \_-__\
     |[]| [] |  http://127.0.0.1:8008
     |__|____|_______________________
+
+    Open PIO Home in your browser by this URL => http://127.0.0.1:8008
+    PIO Home has been started. Press Ctrl+C to shutdown.

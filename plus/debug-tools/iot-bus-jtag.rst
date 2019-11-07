@@ -103,7 +103,7 @@ Platforms
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
     * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
 Frameworks
 ----------
@@ -145,6 +145,13 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_esp32cam`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_alksesp32`
       - :ref:`platform_espressif32`
       - External
@@ -271,6 +278,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_iotaap_magnolia`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_mhetesp32devkit`
       - :ref:`platform_espressif32`
       - External
@@ -293,6 +307,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_nodemcu-32s`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-devkitlipo`
       - :ref:`platform_espressif32`
       - External
       - ESP32
@@ -369,6 +390,13 @@ Boards
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_kendryte210_sipeed-MF1`
+      - :ref:`platform_kendryte210`
+      - External
+      - K210
+      - 400MHz
+      - 16MB
+      - 6MB
     * - :ref:`board_espressif32_esp32thing`
       - :ref:`platform_espressif32`
       - External
@@ -397,6 +425,20 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_ttgo-t1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_vintlabs-devkit-v1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - External
@@ -412,6 +454,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wemos_d1_mini32`
       - :ref:`platform_espressif32`
       - External
       - ESP32

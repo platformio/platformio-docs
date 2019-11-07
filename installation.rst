@@ -169,7 +169,12 @@ For upgrading ``platformio`` to the latest version:
 .. code-block:: bash
 
     pip install -U platformio
+    
+Or:
 
+.. code-block:: bash
+
+    pio upgrade
 
 Virtual Environment
 ~~~~~~~~~~~~~~~~~~~
@@ -203,7 +208,7 @@ Prerequisites
 '''''''''''''
 
 1.  Please remove existing PlatformIO Core **environment folder** if exists.
-    See above how to get a path.
+    See above command how to get path to environment folder.
 
 2.  Please check that you have a valid Python interpreter running a next
     command in system terminal. Python 2.7.9+ or Python 3.5+ is recommended.
@@ -298,10 +303,21 @@ Install the latest PlatformIO from the ``develop`` branch:
     pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
 
 If you want to be up-to-date with the latest ``develop`` version of PlatformIO,
-then you need to re-install PlatformIO each time if you see the new commits in
-`PlatformIO GitHub repository (branch: develop) <https://github.com/platformio/platformio-core/commits/develop>`_.
+then you need to re-install PlatformIO each time you see a new commits in
+`PlatformIO GitHub repository (branch: develop) <https://github.com/platformio/platformio-core/commits/develop>`_ like so:
 
-To revert to the latest stable version
+
+.. code-block:: bash
+
+    pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
+
+Or:
+
+.. code-block:: bash
+
+    pio upgrade --dev
+
+To revert to the latest stable version:
 
 .. code-block:: bash
 

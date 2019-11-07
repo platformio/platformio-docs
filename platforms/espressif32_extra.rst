@@ -174,7 +174,7 @@ See `project example <https://github.com/platformio/platform-espressif32/tree/de
 
 Partition Tables
 ~~~~~~~~~~~~~~~~
-You can create a custom partitions table (CSV) following `ESP32 Partition Tables <http://esp-idf.readthedocs.io/en/v3.0/api-guides/partition-tables.html>`_
+You can create a custom partitions table (CSV) following `ESP32 Partition Tables <https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/storage/nvs_partition_gen.html>`_
 documentation. PlatformIO uses **default partition tables** depending on a
 :ref:`projectconf_env_framework` type:
 
@@ -211,19 +211,19 @@ Sometimes you have a file with some binary or text data that you’d like to
 make available to your program - but you don’t want to reformat the file as
 C source.
 
-You can set a macro (define) ``COMPONENT_EMBED_TXTFILES`` using
-:ref:`projectconf_build_flags` in :ref:`projectconf`, giving the names of the
-files to embed in this way:
+There are two options ``board_build.embed_txtfiles`` and ``board_build.embed_files`` 
+which can be used for embedding data. The only difference is that files specified
+in ``board_build.embed_txtfiles`` option are null-terminated in the final binary.
 
 .. code-block:: ini
 
     [env:myenv]
     platform = espressif32
     board = ...
-    build_flags =
-        -DCOMPONENT_EMBED_TXTFILES=src/private.pem.key:src/certificate.pem.crt:src/aws-root-ca.pem
-
-Multiple files are allowed and should be split by colon - ``:``.
+    board_build.embed_txtfiles = 
+      src/private.pem.key
+      src/certificate.pem.crt
+      src/aws-root-ca.pem
 
 The file’s contents will be added to the ``.rodata`` section in flash, and
 are available via symbol names as follows:
@@ -237,10 +237,9 @@ are available via symbol names as follows:
     extern const uint8_t private_pem_key_start[] asm("_binary_src_private_pem_key_start");
     extern const uint8_t private_pem_key_end[] asm("_binary_src_private_pem_key_end");
 
-The names are generated from the full name of the file, as given in
-``COMPONENT_EMBED_TXTFILES``. Characters ``/, .``, etc. are replaced with
-underscores. The ``_binary`` + ``_nested_folder`` prefix in the symbol name
-is added by "objcopy" and is the same for both text and binary files.
+The names are generated from the full name of the file. Characters ``/, .``,
+etc. are replaced with underscores. The ``_binary`` + ``_nested_folder`` prefix
+in the symbol name is added by "objcopy" and is the same for both text and binary files.
 
 See full example with embedding Amazon AWS certificates:
 

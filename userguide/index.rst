@@ -32,9 +32,13 @@ Options
 .. program:: platformio
 
 .. option::
-    --force, -f
+    --no-ansi
 
-Force to accept any confirmation prompts and disable progress bars.
+Do not print ANSI control characters.
+
+See also :envvar:`PLATFORMIO_NO_ANSI` and :envvar:`PLATFORMIO_FORCE_ANSI`
+environment variables.
+
 
 .. option::
     --version
@@ -60,6 +64,7 @@ Commands
 
     platformio account <account/index>
     cmd_boards
+    cmd_check
     cmd_ci
     cmd_debug
     cmd_device

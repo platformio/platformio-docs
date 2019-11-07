@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIOHOME| replace:: **PIO Home**
+.. |PIOHOME| replace:: **PlatformIO Home**
 
 .. _piohome:
 
@@ -19,14 +19,21 @@ PlatformIO Home
 |PIOHOME| allows you to interact with PlatformIO ecosystem using modern and
 cross-platform GUI:
 
-* PlatformIO Projects
+* Project Manager
 * :ref:`pioaccount`
 * :ref:`librarymanager`
 * :ref:`platforms`
+* Library and development platform updates
 * :ref:`frameworks`
 * :ref:`boards`
 * :ref:`Device Manager <cmd_device>`: serial, logical, and multicast DNS services
-* Library and development platform updates.
+* Static Code Analysis
+* Firmware File Explorer
+* Firmware Memory Inspection
+* Firmware Sections & Symbols Viewer.
+
+.. contents:: Contents
+    :local:
 
 Installation
 ------------
@@ -60,6 +67,42 @@ Welcome & Project Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ../_static/images/home/pio-home-welcome.png
+
+Project Inspect
+~~~~~~~~~~~~~~~
+
+Statistics
+''''''''''
+
+.. image:: ../_static/images/home/pio-home-inspect-stats.png
+
+Only code analysis
+
+.. image:: ../_static/images/home/pio-home-inspect-stats-check.png
+
+Firmware File Explorer
+''''''''''''''''''''''
+
+.. image:: ../_static/images/home/pio-home-inspect-firmware-file-explorer.png
+
+File Symbols
+
+.. image:: ../_static/images/home/pio-home-inspect-firmware-file-explorer-symbols.png
+
+Firmware Symbols
+''''''''''''''''
+
+.. image:: ../_static/images/home/pio-home-inspect-firmware-symbols.png
+
+Firmware Sections
+'''''''''''''''''
+
+.. image:: ../_static/images/home/pio-home-inspect-firmware-sections.png
+
+Static Code Analysis
+''''''''''''''''''''
+
+.. image:: ../_static/images/home/pio-home-inspect-code-defects.png
 
 Library Manager
 ~~~~~~~~~~~~~~~

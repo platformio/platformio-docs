@@ -31,12 +31,9 @@ Examples
 
 Examples are listed from `Aceinna IMU development platform repository <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `Compass <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/Compass?utm_source=platformio&utm_medium=docs>`_
-* `Framework <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/Framework?utm_source=platformio&utm_medium=docs>`_
-* `IMU <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/IMU?utm_source=platformio&utm_medium=docs>`_
-* `INS <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/INS?utm_source=platformio&utm_medium=docs>`_
-* `Leveler <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/Leveler?utm_source=platformio&utm_medium=docs>`_
-* `VG_AHRS <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/VG_AHRS?utm_source=platformio&utm_medium=docs>`_
+* `OpenIMU300RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300RI?utm_source=platformio&utm_medium=docs>`_
+* `OpenIMU300ZI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300ZI?utm_source=platformio&utm_medium=docs>`_
+* `OpenIMU330BI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU330BI?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -60,6 +57,28 @@ You can switch between debugging :ref:`debugging_tools` using
     Please click on compatible debug tool below for the further instructions.
 
 
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_aceinna_imu_LowCostRTK`
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
+
+
 External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -76,11 +95,21 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_aceinna_imu_OpenIMU300`
+      - STM32F405RG
+      - 120MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_aceinna_imu_OpenIMU300ZA`
       - STM32F405RG
       - 120MHz
       - 1MB
       - 128KB
+    * - :ref:`board_aceinna_imu_OpenIMU330`
+      - STM32L431CB
+      - 80MHz
+      - 128KB
+      - 64KB
 
 
 Stable and upstream versions
@@ -168,9 +197,27 @@ Aceinna
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_aceinna_imu_LowCostRTK`
+      - On-board
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenIMU300`
+      - External
+      - STM32F405RG
+      - 120MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_aceinna_imu_OpenIMU300ZA`
       - External
       - STM32F405RG
       - 120MHz
       - 1MB
       - 128KB
+    * - :ref:`board_aceinna_imu_OpenIMU330`
+      - External
+      - STM32L431CB
+      - 80MHz
+      - 128KB
+      - 64KB

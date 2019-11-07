@@ -33,12 +33,18 @@ Pre-configured projects with source code are located in
 `PlatformIO Examples <https://github.com/platformio/platformio-examples>`_
 repository.
 
+Community Tutorials
+-------------------
+
+* `Arduino In-circuit Debugging with PlatformIO <https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc>`__
+* `ThingForward: First steps with PlatformIO’s Unified Debugger <https://www.thingforward.io/techblog/2018-07-04-first-steps-with-platformios-unified-debugger.html>`_
+
 Community Video Tutorials
 -------------------------
 
 * `RISC-V ASM Tutorial <https://www.youtube.com/playlist?list=PL6noQ0vZDAdh_aGvqKvxd0brXImHXMuLY>`_
 * `PlatformIO for Arduino, ESP8266, and ESP32 Tutorial <https://www.youtube.com/watch?v=0poh_2rBq7E>`_
-* `Free Inline Debugging for ESP32 and Arduino Sketches <hhttps://www.youtube.com/watch?v=psMqilqlrRQ>`__
+* `Free Inline Debugging for ESP32 and Arduino Sketches <https://www.youtube.com/watch?v=psMqilqlrRQ>`__
 * `PlatformIO или прощай, Arduino IDE <https://www.youtube.com/watch?v=OGCyKncOyNU>`_
 * `Отладка ESP32 в PlatformIO <https://www.youtube.com/watch?v=rreMOwEJcII>`_
 * `A Better Arduino IDE - Getting Started with PlatformIO <https://www.youtube.com/watch?v=EIkGTwLOD7o>`_

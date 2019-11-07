@@ -29,7 +29,10 @@ Aceinna IMU
 .. toctree::
     :maxdepth: 1
         
+    aceinna_imu/LowCostRTK
+    aceinna_imu/OpenIMU300
     aceinna_imu/OpenIMU300ZA
+    aceinna_imu/OpenIMU330
 
 Atmel AVR
 ---------
@@ -251,8 +254,10 @@ Atmel SAM
     atmelsam/adafruit_gemma_m0
     atmelsam/adafruit_grandcentral_m4
     atmelsam/adafruit_hallowing
+    atmelsam/adafruit_hallowing_m4
     atmelsam/adafruit_itsybitsy_m0
     atmelsam/adafruit_itsybitsy_m4
+    atmelsam/adafruit_monster_m4sk
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
     atmelsam/adafruit_metro_m4_airliftlite
@@ -262,6 +267,7 @@ Atmel SAM
     atmelsam/adafruit_trellis_m4
     atmelsam/adafruit_trinket_m0
     atmelsam/adafruit_pirkey
+    atmelsam/adafruit_pybadge_airlift_m4
     atmelsam/adafruit_pybadge_m4
     atmelsam/due
     atmelsam/dueUSB
@@ -332,24 +338,29 @@ Espressif 32
     espressif32/hornbill32dev
     espressif32/hornbill32minima
     espressif32/intorobot
+    espressif32/iotaap_magnolia
     espressif32/m5stack-core-esp32
     espressif32/m5stack-fire
     espressif32/m5stack-grey
     espressif32/m5stick-c
     espressif32/mhetesp32devkit
     espressif32/mhetesp32minikit
+    espressif32/magicbit
     espressif32/nano32
     espressif32/microduino-core-esp32
     espressif32/node32s
     espressif32/nodemcu-32s
     espressif32/quantum
     espressif32/odroid_esp32
+    espressif32/esp32-devkitlipo
     espressif32/esp32-evb
     espressif32/esp32-gateway
     espressif32/esp32-pro
     espressif32/esp32-poe
+    espressif32/esp32-poe-iso
     espressif32/oroca_edubot
     espressif32/onehorse32dev
+    espressif32/pycom_gpy
     espressif32/lopy
     espressif32/lopy4
     espressif32/wesp32
@@ -357,10 +368,15 @@ Espressif 32
     espressif32/sparkfun_lora_gateway_1-channel
     espressif32/ttgo-lora32-v1
     espressif32/ttgo-t-beam
+    espressif32/ttgo-t-watch
+    espressif32/ttgo-t1
+    espressif32/tinypico
     espressif32/turta_iot_node
+    espressif32/vintlabs-devkit-v1
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
     espressif32/lolin32
+    espressif32/wemos_d1_mini32
     espressif32/wemosbat
     espressif32/widora-air
     espressif32/xinabox_cw02
@@ -433,6 +449,16 @@ Freescale Kinetis
     freescalekinetis/frdm_kw41z
     freescalekinetis/hexiwear
 
+GigaDevice GD32V
+----------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    gd32v/gd32vf103v-eval
+    gd32v/sipeed-longan-nano
+    gd32v/wio_lite_risc-v
+
 Infineon XMC
 ------------
 
@@ -485,6 +511,7 @@ Kendryte K210
     kendryte210/sipeed-maix-go
     kendryte210/sipeed-maix-one-dock
     kendryte210/sipeed-maixduino
+    kendryte210/sipeed-MF1
 
 Lattice iCE40
 -------------
@@ -535,6 +562,7 @@ Microchip PIC32
     :maxdepth: 1
         
     microchippic32/picadillo_35t
+    microchippic32/dsmini
     microchippic32/cerebot32mx4
     microchippic32/cerebot32mx7
     microchippic32/openscope
@@ -551,17 +579,27 @@ Microchip PIC32
     microchippic32/chipkit_pi
     microchippic32/fubarino_mini
     microchippic32/fubarino_sd
+    microchippic32/helvepic32
+    microchippic32/helvepic32_breadboardside
+    microchippic32/helvepic32_smd
+    microchippic32/helvepic32_mx270
+    microchippic32/helvepic32_robot
+    microchippic32/helvepic32_smd_mx270
     microchippic32/clicker2
     microchippic32/flipnclickmz
+    microchippic32/fubarino_mini_20
     microchippic32/pinguino32
     microchippic32/openbci
     microchippic32/usbono_pic32
+    microchippic32/cui32
     microchippic32/nofire
     microchippic32/quick240_usb
+    microchippic32/rgb_station
     microchippic32/cui32stem
     microchippic32/ubw32_mx460
     microchippic32/ubw32_mx795
     microchippic32/lenny
+    microchippic32/chipkit_wifire_revc
 
 Nordic nRF51
 ------------
@@ -602,7 +640,9 @@ Nordic nRF52
     nordicnrf52/adafruit_feather_nrf52832
     nordicnrf52/adafruit_feather_nrf52840
     nordicnrf52/bluey
+    nordicnrf52/adafruit_cplaynrf52840
     nordicnrf52/delta_dfbm_nq620
+    nordicnrf52/adafruit_itsybitsy_nrf52840
     nordicnrf52/adafruit_metro_nrf52840
     nordicnrf52/nrf52_dk
     nordicnrf52/nrf52840_dk
@@ -611,6 +651,7 @@ Nordic nRF52
     nordicnrf52/redbear_blend2
     nordicnrf52/sdt52832b
     nordicnrf52/stct_nrf52_minidev
+    nordicnrf52/particle_xenon
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_evk_nina_b1
 
@@ -669,6 +710,15 @@ Samsung ARTIK
         
     samsung_artik/artik_053
 
+Shakti
+------
+
+.. toctree::
+    :maxdepth: 1
+        
+    shakti/artix7_35t
+    shakti/artix7_100t
+
 SiFive
 ------
 
@@ -707,26 +757,30 @@ ST STM32
     ststm32/remram_v1
     ststm32/st3dp001_eval
     ststm32/b96b_f446ve
+    ststm32/afroflight_f103cb
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
     ststm32/armstrap_eagle512
     ststm32/black_f407ve
     ststm32/black_f407vg
-    ststm32/black_f407zg
     ststm32/black_f407ze
+    ststm32/black_f407zg
     ststm32/blackpill_f103c8
     ststm32/blackpill_f103c8_128
     ststm32/robotdyn_blackpill_f303cc
+    ststm32/blackpill_f401cc
     ststm32/blue_f407ve_mini
     ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
     ststm32/bluepill_f103c8_128k
+    ststm32/coreboard_f401rc
     ststm32/demo_f030f4
     ststm32/elmo_f411re
     ststm32/diymore_f407vgt
     ststm32/fk407m1
     ststm32/rhombio_l476dmw1k
     ststm32/malyanm200_f070cb
+    ststm32/mkr_sharky
     ststm32/mts_dragonfly_f411re
     ststm32/malyanm200_f103cb
     ststm32/maple
@@ -742,9 +796,13 @@ ST STM32
     ststm32/netduino2plus
     ststm32/mote_l152rc
     ststm32/nucleo_g071rb
+    ststm32/nucleo_g431kb
+    ststm32/nucleo_g431rb
+    ststm32/nucleo_g474re
     ststm32/nucleo_wb55rg_p
-    ststm32/rak811_tracker_32
     ststm32/rak811_tracker
+    ststm32/rak811_tracker_32
+    ststm32/rhf76_052
     ststm32/cloud_jam
     ststm32/cloud_jam_l4
     ststm32/disco_f334c8
@@ -833,6 +891,7 @@ ST STM32
     ststm32/disco_f750n8
     ststm32/seeedArchMax
     ststm32/wio_3g
+    ststm32/steval_mksboxv1
     ststm32/sparky_v1
     ststm32/hy_tinystm103tb
     ststm32/vake_v1
@@ -878,9 +937,14 @@ TI MSP430
         
     timsp430/lpmsp430fr5739
     timsp430/lpmsp430f5529
+    timsp430/lpmsp430fr2311
+    timsp430/lpmsp430fr2433
     timsp430/lpmsp430fr4133
     timsp430/lpmsp430fr5969
+    timsp430/lpmsp430fr5994
     timsp430/lpmsp430fr6989
+    timsp430/lpmsp430g2231
+    timsp430/lpmsp430g2452
     timsp430/lpmsp430g2553
 
 TI TIVA

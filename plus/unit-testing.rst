@@ -16,17 +16,9 @@
 PIO Unit Testing
 ================
 
-PIO Unit Testing allows segregating each part of the firmware/program and test
-that the individual parts are working correctly. Using |PIOUTE| you can
-execute the same tests on the local host machine (native), on the multiple
-local embedded devices/boards (connected to local host machine), or in both
-cases. In the last case, PIO Plus builds firmware on the host machine, uploads
-into a target device, starts tests and collects test results into test reports.
-The final information will be shown on the host side with informative output
-and statistic.
+PIO Unit Testing allows segregating each part of the firmware/program and testing that the individual parts are working correctly. Using |PIOUTE| you can execute the same tests on the local host machine (native), on the multiple local embedded devices/boards (connected to local host machine), or on both. When testing both, PIO Plus builds firmware on the host machine, uploads into a target device, starts tests, and collects the test results into test reports. The final information will be shown on the host side with informative output and statistic.
 
-Using :ref:`pioremote` you can start unit tests on the **Remote Device** from
-anywhere in the world or integrate with :ref:`ci` systems.
+Using :ref:`pioremote` you can start unit tests on the **Remote Device** from anywhere in the world or integrate with :ref:`ci` systems.
 
 .. contents:: Contents
     :local:
@@ -34,7 +26,7 @@ anywhere in the world or integrate with :ref:`ci` systems.
 Demo
 ----
 
-This is a demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_ which demonstrates running embedded tests on physical hardware
+This is a demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_, which demonstrates running embedded tests on physical hardware
 (:ref:`board_atmelavr_uno`) and native tests on host machine (desktop).
 
 Learn more about :ref:`cmd_test` command.
@@ -85,9 +77,7 @@ Test Types
 Desktop
 ~~~~~~~
 
-|PIOUTE| builds a test program for a host machine using :ref:`platform_native`
-development platform. This test could be run only with the desktop or :ref:`ci`
-VM instance.
+|PIOUTE| builds a test program for a host machine using :ref:`platform_native` development platform. This test could be run only with the desktop or :ref:`ci` VM instance.
 
 .. note::
     PlatformIO does not install any toolchains automatically for
@@ -98,11 +88,7 @@ VM instance.
 Embedded
 ~~~~~~~~
 
-|PIOUTE| builds a special firmware for a target device (board) and program it.
-Then, it connects to this device using configured Serial :ref:`projectconf_test_port`
-and communicate via :ref:`projectconf_test_transport`. Finally, it runs
-test on an embedded side, collects results, analyzes them and provides a
-summary on a host machine side (desktop).
+|PIOUTE| builds a special firmware for a target device (board) and programs it. Then, it connects to this device using configured Serial :ref:`projectconf_test_port` and communicates via :ref:`projectconf_test_transport`. Finally, it runs tests on the embedded side, collects results, analyzes them, and provides a summary on a host machine side (desktop).
 
 .. note::
     Please note that the |PIOUTE| uses the first available ``Serial/UART``
@@ -112,7 +98,7 @@ summary on a host machine side (desktop).
     with ``#ifndef UNIT_TEST`` macro.
 
     Also, you can create custom :ref:`projectconf_test_transport` and implement
-    base interface.
+    the base interface.
 
 Test Runner
 -----------
@@ -124,7 +110,7 @@ Test Runner allows you to process specific environments or ignore a test using
 Local
 ~~~~~
 
-Allows you to run a test on a host machine or on a target device (board) which
+Allows you to run a test on a host machine or on a target device (board), which
 is directly connected to the host machine. In this case, you need to use the
 :ref:`cmd_test` command.
 
@@ -139,7 +125,7 @@ network ports. Remote Unit Testing works in pair with :ref:`pioremote`. In this
 case, you need to use the special command :ref:`cmd_remote_test`.
 
 PlatformIO supports multiple :ref:`ci` systems where you can run unit tests
-at the each integration stage. See real
+at each integration stage. See real
 `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`__.
 
 Workflow
@@ -189,7 +175,7 @@ Workflow
 
    .. warning::
      If your board does not support software resetting via ``Serial.DTR/RTS``,
-     you should add >2 seconds delay before ``UNITY_BEGIN()``.
+     you should add at least 2 seconds delay before ``UNITY_BEGIN()``.
      That time is needed to establish a ``Serial`` connection between a host
      machine and a target device.
 
@@ -204,7 +190,7 @@ Workflow
    split them into sub-folders. For example, ``test/test_1/*.[c,cpp,h]``,
    ``test_N/*.[c,cpp,h]``, etc. If there is no such directory in the ``test`` folder,
    then |PIOUTE| will treat the source code of ``test`` folder as SINGLE test.
-5. Run test using the :ref:`cmd_test` command.
+5. Run tests using the :ref:`cmd_test` command.
 
 
 .. _unit_testing_shared_code:
@@ -216,16 +202,15 @@ Shared Code
 by default. If you have a shared/common code between your "main" and "test"
 programs, you have 2 options:
 
-1. **RECOMMENDED**. We recommend to split a program source code into multiple
-   components and place them into :ref:`projectconf_pio_lib_dir` (project's
-   private libraries and components). :ref:`ldf` will find these libraries
-   automatically and include to build process. You will need to include
-   any library/component header file in your test or program source code via
-   ``#include <MyComponent.h>``.
+1. **RECOMMENDED**. We recommend splitting the source code into multiple
+   components and placing them into :ref:`projectconf_pio_lib_dir` (project's
+   private libraries and components). :ref:`ldf` will find and include these libraries
+   automatically in the build process. You can include any library/component header file
+   in your test or program source code via ``#include <MyComponent.h>``.
 
-   See `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`__ example. We have "calculator"
+   See `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`__  for an example, where we have a "calculator"
    component in :ref:`projectconf_pio_lib_dir` folder and include it in tests
-   and main program using ``#include <calculator.h>``.
+   and the main program using ``#include <calculator.h>``.
 
 2. Manually instruct PlatformIO to build source code from :ref:`projectconf_pio_src_dir`
    folder using :ref:`projectconf_test_build_project_src` option in :ref:`projectconf`:
@@ -236,7 +221,7 @@ programs, you have 2 options:
       platform = ...
       test_build_project_src = true
 
-   This is very useful if you unit test independent library where you
+   This is very useful if you unit test independent libraries where you
    can't split source code.
 
    .. warning::

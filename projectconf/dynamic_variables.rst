@@ -32,9 +32,10 @@ For example, ``${sysenv.HOME}``.
   section names might be ``extra`` or ``custom``.
 
 .. note::
-    If you need to **share common configuration options** between all build
+    If you need to **share common configuration options** between build
     environments, please take a look at **"Global scope"** in
-    :ref:`projectconf_section_env`.
+    :ref:`projectconf_section_env` or :ref:`projectconf_env_extends` option which
+    allows extending of other sections.
 
 Example:
 
@@ -74,3 +75,8 @@ Example:
       ${extra.lib_deps_external}
       PubSubClient@2.6
       OneWire
+
+    [env:esp32dev]
+    extends = env:nodemcuv2
+    platform = espressif32
+    board = esp32dev

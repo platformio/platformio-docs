@@ -78,8 +78,7 @@ Install Python Interpreter
 is installed by default on the all popular OS except Windows.
 
 **Windows Users**, please `Download the latest Python <https://www.python.org/downloads/>`_
-and install it. **DON'T FORGET** to select ``Add python.exe to Path`` feature
-on the "Customize" stage, otherwise, ``python`` command will not be available.
+and install it. **DON'T FORGET** to select ``Add Python to Path`` (see below), otherwise, ``python`` command will not be available.
 
 .. image:: _static/images/python-installer-add-path.png
 
@@ -275,6 +274,13 @@ they are not “root”, doing this issuing
 
     sudo usermod -a -G dialout $USER
     sudo usermod -a -G plugdev $USER
+
+Similarly, Arch users may need to add their user to the “uucp” group
+
+.. code-block:: bash
+
+    sudo usermod -a -G uucp $USER
+    sudo usermod -a -G lock $USER
 
 .. note::
   You will need to log out and log back in again (or reboot) for the user

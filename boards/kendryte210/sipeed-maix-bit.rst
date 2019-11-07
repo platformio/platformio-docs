@@ -19,7 +19,7 @@ Sipeed MAIX BiT
 Hardware
 --------
 
-Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dual core SoC, this platform is ported by Sipeed.
+Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
 .. list-table::
 

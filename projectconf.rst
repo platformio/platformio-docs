@@ -39,8 +39,8 @@ described below.
 .. toctree::
     :maxdepth: 2
 
-    [platformio] <projectconf/section_platformio>
-    [env] <projectconf/section_env>
+    projectconf/section_platformio
+    projectconf/section_env
     projectconf/build_configurations
     projectconf/dynamic_variables
     projectconf/examples
@@ -87,7 +87,7 @@ described below.
 
     ; Serial Monitor options
     monitor_speed = 115200
-    monitor_options =
+    monitor_flags =
         --encoding
         hexlify
 
