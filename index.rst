@@ -12,10 +12,10 @@
 PlatformIO is an open source ecosystem for embedded development
 ===============================================================
 
-* **Cross-platform IDE** and **Unified Debugger**
-* **Static Code Analyzer** and **Remote Unit Testing**
-* **Multi-platform** and **Multi-architecture Build System**
-* **Firmware File Explorer** and **Memory Inspection**.
+* Cross-platform IDE and Unified Debugger
+* Static Code Analyzer and Remote Unit Testing
+* Multi-platform and Multi-architecture Build System
+* Firmware File Explorer and Memory Inspection.
 
 **Social:** `Twitter <https://twitter.com/PlatformIO_Org>`_ |
 `LinkedIn <https://www.linkedin.com/company/platformio/>`_ |
