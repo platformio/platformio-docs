@@ -46,10 +46,10 @@ Process specified environments.
 .. option::
     --pattern
 
-Normally a program has many source files. By default only :ref:`projectconf_pio_src_dir`
-and :ref:`projectconf_pio_include_dir` are checked. You can specify which source files
-or folders should be included/excluded from check process. Multiple ``--pattern`` options
-and `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
+You can specify which source files or folders should be included/excluded from check
+process. By default only :ref:`projectconf_pio_src_dir` and :ref:`projectconf_pio_include_dir`
+are checked. Multiple ``--pattern`` options and `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
+
 
 Example: ``platformio check --pattern="tests" --pattern="src/*.cpp"``
 

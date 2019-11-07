@@ -42,15 +42,17 @@ See available tools in :ref:`check_tools`.
     check_tool = cppcheck, clangtidy
 
 
-.. _projectconf_check_pattern:
+.. _projectconf_check_patterns:
 
-``check_pattern``
+``check_patterns``
 ^^^^^^^^^^^^^^^^^
 
 Type: ``String (Pattern)`` | Multiple: ``Yes``
 
 This option allows specifying which source files or folders should be
 included/excluded from the check process. `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
+:ref:`projectconf_pio_src_dir` and :ref:`projectconf_pio_include_dir` folders are checked
+by default.
 
 Another option for filtering source files is :option:`platformio check --pattern` command.
 
@@ -58,11 +60,11 @@ Another option for filtering source files is :option:`platformio check --pattern
 
 .. code-block:: ini
 
-    [env:custom_check_pattern]
+    [env:custom_check_patterns]
     platform = ...
     board = ...
     check_tool = clangtidy
-    check_pattern =
+    check_patterns =
       app/sources
       tests/hardware/*.c
 
