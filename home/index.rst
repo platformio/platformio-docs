@@ -32,6 +32,9 @@ cross-platform GUI:
 * Firmware Memory Inspection
 * Firmware Sections & Symbols Viewer.
 
+.. contents:: Contents
+    :local:
+
 Installation
 ------------
 

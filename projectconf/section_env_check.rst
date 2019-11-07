@@ -45,7 +45,7 @@ See available tools in :ref:`check_tools`.
 .. _projectconf_check_patterns:
 
 ``check_patterns``
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 Type: ``String (Pattern)`` | Multiple: ``Yes``
 

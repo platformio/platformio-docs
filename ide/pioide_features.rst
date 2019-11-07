@@ -13,7 +13,7 @@
 
 * Cross-platform build system without external dependencies to the OS software:
 
-    - 550+ embedded boards
+    - 700+ boards
     - 30+ development platforms
     - 15+ frameworks
 

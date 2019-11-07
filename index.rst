@@ -9,14 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-PlatformIO is an open source ecosystem for IoT development
-==========================================================
+PlatformIO is an open source ecosystem for embedded development
+===============================================================
 
-**Cross-platform IDE and unified debugger. Remote unit testing and firmware updates.**
+* **Cross-platform IDE** and **Unified Debugger**
+* **Static Code Analyzer** and **Remote Unit Testing**
+* **Multi-platform** and **Multi-architecture Build System**
+* **Firmware File Explorer** and **Memory Inspection**.
 
 **Social:** `Twitter <https://twitter.com/PlatformIO_Org>`_ |
+`LinkedIn <https://www.linkedin.com/company/platformio/>`_ |
 `Facebook <https://www.facebook.com/platformio>`_ |
-`Hackaday <https://hackaday.io/project/7980-platformio>`_ |
 `Bintray <https://bintray.com/platformio>`_ |
 `Community <https://community.platformio.org>`_
 
