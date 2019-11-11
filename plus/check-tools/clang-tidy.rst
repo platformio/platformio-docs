@@ -146,4 +146,4 @@ An example with enabling specific checks and fixing code on the fly:
     board = ...
     check_tool = clangtidy
     check_flags =
-      clangtidy: --check=-*,cert-*,clang-analyzer-* --fix
+      clangtidy: --checks=-*,cert-*,clang-analyzer-* --fix
