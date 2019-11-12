@@ -157,7 +157,7 @@ You can inject into build flags built-in variables, such as:
 * ``$PROJECT_CORE_DIR``, PlatformIO Core directory, see :ref:`projectconf_pio_core_dir`
 * ``$PROJECT_BUILD_DIR``, project build directory per all environments
 * ``$BUILD_DIR``, build directory per current environment
-* `Need more PlatformIO variables? <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L43:L128>`_
+* `Need more PlatformIO variables? <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L99:L120>`_
 
 Please use target ``envdump`` for :option:`platformio run --target` command to
 see ALL variables from a build environment.
