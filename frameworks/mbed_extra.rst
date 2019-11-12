@@ -150,7 +150,7 @@ to :ref:`projectconf_build_flags` of :ref:`projectconf`:
   platform = nxplpc
   framework = mbed
   board = my_custom_board
-  build_flags = -I$PROJECTSRC_DIR/MY_CUSTOM_BOARD_TARGET
+  build_flags = -I$PROJECT_SRC_DIR/MY_CUSTOM_BOARD_TARGET
 
 Next, you need to inform PlatformIO that there is a new custom board. To do this, you can create
 ``boards`` directory in the root folder of your project and add a board manifest file with your
