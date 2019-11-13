@@ -446,7 +446,7 @@ This option can also be configured by the global environment variable
 .. note::
     This option is useful for people who migrate from Arduino IDE where
     source directory should have the same name as a main source file.
-    See `example <https://github.com/platformio/platformio-examples/tree/develop/atmelavr/arduino-own-src_dir>`__ project with own source directory.
+    See `example <https://github.com/platformio/platform-atmelavr/tree/develop/examples/arduino-own-src_dir>`__ project with own source directory.
 
 .. _projectconf_pio_lib_dir:
 
