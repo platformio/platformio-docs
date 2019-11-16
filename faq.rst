@@ -184,6 +184,21 @@ Recommended for reading:
 * https://en.wikipedia.org/wiki/Data_segment
 * `text, data and bss: Code and Data Size Explained <https://mcuoneclipse.com/2013/04/14/text-data-and-bss-code-and-data-size-explained/?utm_source=platformio&utm_medium=docs>`_
 
+.. _faq_advanced_serial_monitor_ui:
+
+Advanced Serial Monitor with UI
+-------------------------------
+
+PlatformIO Core provides CLI version (:ref:`cmd_device_monitor`) of Serial Monitor.
+If you need advanced instrument with a rich UI, we recommend free and multi-platform
+`CoolTerm <https://freeware.the-meiers.org/?utm_source=platformio&utm_medium=docs>`_
+serial port terminal application.
+
+.. warning::
+  Please note that you need to **manually disconnect (close serial port connection)** in
+  CoolTerm **before doing uploading** in PlatformIO. PlatformIO can not disconnect/connect
+  to a target device automatically when CoolTerm is used.
+
 .. _faq_troubleshooting:
 
 Troubleshooting
