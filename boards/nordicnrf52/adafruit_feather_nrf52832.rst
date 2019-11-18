@@ -71,6 +71,7 @@ Adafruit Bluefruit nRF52832 Feather supports the next uploading protocols:
 * ``jlink``
 * ``nrfjprog``
 * ``nrfutil``
+* ``stlink``
 
 Default protocol is ``nrfutil``
 
@@ -108,6 +109,9 @@ Adafruit Bluefruit nRF52832 Feather does not have on-board debug probe and **IS 
   * - :ref:`debugging_tool_jlink`
     - 
     - Yes
+  * - :ref:`debugging_tool_stlink`
+    - 
+    - 
 
 Frameworks
 ----------
