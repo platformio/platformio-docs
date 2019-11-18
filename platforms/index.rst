@@ -36,6 +36,7 @@ Embedded
 
     aceinna_imu
     atmelavr
+    atmelmegaavr
     atmelsam
     espressif32
     espressif8266

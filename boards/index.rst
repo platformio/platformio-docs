@@ -240,6 +240,15 @@ Atmel AVR
     atmelavr/nibobee_1284
     atmelavr/ardhat
 
+Atmel megaAVR
+-------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    atmelmegaavr/nano_every
+    atmelmegaavr/uno_wifi_rev2
+
 Atmel SAM
 ---------
 

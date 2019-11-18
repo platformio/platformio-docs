@@ -1632,6 +1632,7 @@ Examples
 --------
 
 * `Arduino for Atmel AVR <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Arduino for Atmel megaAVR <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
@@ -1658,6 +1659,9 @@ Platforms
 
     * - :ref:`platform_atmelavr`
       - Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
+
+    * - :ref:`platform_atmelmegaavr`
+      - 8-bit MCUs Built for Real-time Control with Core Independent Peripherals combining intelligent hardware peripherals along with the low-power capability of an AVR core, megaAVR microcontrollers (MCUs) broaden the effectiveness of your real-time control systems.
 
     * - :ref:`platform_atmelsam`
       - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
@@ -2537,6 +2541,13 @@ Arduino
       - 16MHz
       - 30KB
       - 2KB
+    * - :ref:`board_atmelmegaavr_nano_every`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA4809
+      - 16MHz
+      - 47.50KB
+      - 6KB
     * - :ref:`board_atmelavr_pro8MHzatmega168`
       - :ref:`platform_atmelavr`
       - No
@@ -2593,6 +2604,13 @@ Arduino
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_atmelmegaavr_uno_wifi_rev2`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA4809
+      - 16MHz
+      - 47.50KB
+      - 6KB
     * - :ref:`board_atmelavr_yun`
       - :ref:`platform_atmelavr`
       - No
