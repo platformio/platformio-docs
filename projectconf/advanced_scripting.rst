@@ -780,3 +780,37 @@ hardware VID/PIDs:
       ["0x2341", "0x0243"],
       ["0x2A03", "0x0043"]
     ])
+
+
+Custom debug flags
+''''''''''''''''''
+
+PlatformIO removes all debug/optimization flags before a debug session or when
+:ref:`build_configurations` is set to ``debug`` and overrides them with
+``-0g -g2 -ggdb2`` for ``ASFLAGS``, ``CCFLAGS``, and ``LINKFLAGS`` build
+scopes.
+
+An extra script allows us to override PlatformIO's default behavior and declare
+custom flags. See example below where we override ``-Og`` with ``-O0``:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:teensy31]
+    platform = teensy
+    board = teensy31
+    framework = arduino
+    extra_scripts = custom_debug_flags.py
+
+``custom_debug_flags.py``:
+
+.. code-block:: python
+
+    Import("env")
+
+    if env.GetBuildType() == "debug":
+       for scope in ("ASFLAGS", "CCFLAGS", "LINKFLAGS"):
+          for i, flag in enumerate(env[scope]):
+             if flag == "-Og":
+                env[scope][i] = "-O0"
