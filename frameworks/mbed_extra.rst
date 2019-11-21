@@ -141,7 +141,7 @@ describe your board, for example here is the configuration for ``NUCLEO-F401RE``
     }
 
 Secondly, you need to add code specific to your target to the ``src`` folder of your project.
-Usually, it's a good idea to isolate this code in a separate folder and add еру path to this folder
+Usually, it's a good idea to isolate this code in a separate folder and add the path to this folder
 to :ref:`projectconf_build_flags` of :ref:`projectconf`:
 
 .. code-block:: ini
