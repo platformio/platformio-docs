@@ -56,6 +56,10 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `spl-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/spl-blink?utm_source=platformio&utm_medium=docs>`_
 * `stm32cube-hal-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-blink?utm_source=platformio&utm_medium=docs>`_
 * `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-cpp-synchronization <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-cpp-synchronization?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-drivers-can <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-drivers-can?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-subsys-usb-hid-mouse <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-subsys-usb-hid-mouse?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -94,6 +98,11 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f723ie`
       - STM32F723IEK6
       - 216MHz
@@ -469,6 +478,11 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h743xi`
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_seeedArchMax`
       - STM32F407VET6
       - 168MHz
@@ -717,6 +731,16 @@ Please click on board name for the further details.
       - 17MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_olimexino`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_olimex_p405`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_rak811_tracker`
       - STM32L151RBT6
       - 32MHz
@@ -732,6 +756,31 @@ Please click on board name for the further details.
       - 84MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_eval_f373vc`
+      - STM32F373VCT6
+      - 72MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_eval_f072vb`
+      - STM32F072VBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - STM32F103C8T6
       - 72MHz
@@ -934,11 +983,29 @@ Packages
     * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897&utm_source=platformio&utm_medium=docs>`__
       - STM32Cube embedded software libraries
 
+    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio&utm_medium=docs>`__
+      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+
+    * - `framework-zephyr-hal-stm32 <https://github.com/zephyrproject-rtos/hal_stm32?utm_source=platformio&utm_medium=docs>`__
+      - ST STM32 HAL for Zephyr framework
+
+    * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
     * - `tool-dfuutil <http://dfu-util.sourceforge.net/?utm_source=platformio&utm_medium=docs>`__
       - Host side implementation of the DFU 1.0 and DFU 1.1 specifications
 
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio&utm_medium=docs>`__
+      - Device tree compiler
+
+    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio&utm_medium=docs>`__
+      - GNU gperf is a perfect hash function generator.
+
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
+
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed.
 
     * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
@@ -988,6 +1055,9 @@ Frameworks
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
 
 Boards
 ------
@@ -1525,6 +1595,43 @@ Netduino
       - 1MB
       - 192KB
 
+Olimex
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_olimexino`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_olimex_p405`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+
 RAK
 ~~~
 
@@ -1644,6 +1751,12 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - On-board
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f723ie`
       - On-board
       - STM32F723IEK6
@@ -2112,12 +2225,36 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - External
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_eval_f373vc`
+      - External
+      - STM32F373VCT6
+      - 72MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_eval_f072vb`
+      - External
+      - STM32F072VBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_disco_f750n8`
       - On-board
       - STM32F750N8H6
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h743xi`
+      - On-board
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - External
       - STM32L4R9ZI

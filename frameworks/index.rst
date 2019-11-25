@@ -37,3 +37,4 @@ Frameworks
     stm32cube
     tizenrt
     wiringpi
+    zephyr

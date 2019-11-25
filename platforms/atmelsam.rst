@@ -40,6 +40,9 @@ Examples are listed from `Atmel SAM development platform repository <https://git
 * `mbed-events <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-drivers-i2c-scanner <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-drivers-i2c-scanner?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-subsys-logger <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-subsys-logger?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -443,14 +446,32 @@ Packages
     * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
       - Simba Framework
 
+    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio&utm_medium=docs>`__
+      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+
+    * - `framework-zephyr-hal-atmel <https://github.com/zephyrproject-rtos/hal_atmel?utm_source=platformio&utm_medium=docs>`__
+      - Atmel SAM HAL for Zephyr framework
+
     * - `tool-avrdude <http://www.nongnu.org/avrdude/?utm_source=platformio&utm_medium=docs>`__
       - AVRDUDE
 
     * - `tool-bossac <https://sourceforge.net/projects/b-o-s-s-a/?utm_source=platformio&utm_medium=docs>`__
       - BOSSA CLI
 
+    * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio&utm_medium=docs>`__
+      - Device tree compiler
+
+    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio&utm_medium=docs>`__
+      - GNU gperf is a perfect hash function generator.
+
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
+
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed.
 
     * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
@@ -488,6 +509,9 @@ Frameworks
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
 
 Boards
 ------

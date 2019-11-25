@@ -132,6 +132,9 @@ Frameworks
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
 
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+
 Boards
 ------
 
@@ -205,6 +208,20 @@ Boards
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_laird_bl652_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl654_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nxplpc_lpc4330_m4`
       - :ref:`platform_nxplpc`
       - On-board
@@ -247,6 +264,20 @@ Boards
       - 32MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_electronut_blip`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_electronut_papyr`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nxplpc_lpc4088_dm`
       - :ref:`platform_nxplpc`
       - On-board
@@ -352,6 +383,13 @@ Boards
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_holyiot_yj16019`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf51_wallbot_ble`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -380,6 +418,20 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_nordicnrf52_nrf52832_mdk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_mdk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_maxim32_max32600mbed`
       - :ref:`platform_maxim32`
       - On-board
@@ -443,6 +495,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_thingy_52`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -576,6 +635,13 @@ Boards
       - 16MHz
       - 128KB
       - 32KB
+    * - :ref:`board_nordicnrf52_vbluno52`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_wiznet7500_wizwiki_w7500`
       - :ref:`platform_wiznet7500`
       - On-board

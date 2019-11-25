@@ -40,6 +40,9 @@ Examples are listed from `SiFive development platform repository <https://github
 * `freedom-e-sdk_user-mode <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-mode?utm_source=platformio&utm_medium=docs>`_
 * `freedom-e-sdk_user-syscall <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-syscall?utm_source=platformio&utm_medium=docs>`_
 * `native-blink_asm <https://github.com/platformio/platform-sifive/tree/master/examples/native-blink_asm?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-blink <https://github.com/platformio/platform-sifive/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-hello-world <https://github.com/platformio/platform-sifive/tree/master/examples/zephyr-hello-world?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-synchronization <https://github.com/platformio/platform-sifive/tree/master/examples/zephyr-synchronization?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -144,8 +147,23 @@ Packages
     * - `framework-freedom-e-sdk <https://github.com/sifive/freedom-e-sdk?utm_source=platformio&utm_medium=docs>`__
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
+    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio&utm_medium=docs>`__
+      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+
+    * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio&utm_medium=docs>`__
+      - Device tree compiler
+
+    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio&utm_medium=docs>`__
+      - GNU gperf is a perfect hash function generator.
+
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
+
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed.
 
     * - `tool-openocd-riscv <https://github.com/riscv/riscv-openocd?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD for RISC-V
@@ -180,6 +198,9 @@ Frameworks
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
 
 Boards
 ------

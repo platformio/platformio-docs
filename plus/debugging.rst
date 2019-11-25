@@ -270,6 +270,9 @@ Frameworks
     * - :ref:`framework_tizenrt`
       - Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
 
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+
 Boards
 ------
 
@@ -317,6 +320,13 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_nordicnrf52_96b_nitrogen`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 AI Thinker
 ~~~~~~~~~~
@@ -1207,6 +1217,34 @@ Electronut Labs
       - 512KB
       - 64KB
 
+ElectronutLabs
+~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_electronut_blip`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_electronut_papyr`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+
 Elektor Labs
 ~~~~~~~~~~~~
 
@@ -1739,6 +1777,27 @@ Heltec Automation
       - 8MB
       - 320KB
 
+Holyiot
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_holyiot_yj16019`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
 Hornbill
 ~~~~~~~~
 
@@ -1857,6 +1916,34 @@ JKSoft
       - 16MHz
       - 128KB
       - 16KB
+
+Laird Connectivity
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_laird_bl652_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl654_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
 
 LeafLabs
 ~~~~~~~~
@@ -2011,6 +2098,34 @@ Macchina
       - 84MHz
       - 512KB
       - 96KB
+
+Makerdiary
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_nrf52832_mdk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_mdk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
 
 Malyan
 ~~~~~~
@@ -2389,6 +2504,13 @@ Nordic
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_thingy_52`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -2488,6 +2610,48 @@ OSHChip
       - 256KB
       - 32KB
 
+Olimex
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_olimex_p405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+
 Particle
 ~~~~~~~~
 
@@ -2501,6 +2665,20 @@ Particle
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_particle_argon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_particle_boron`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_particle_xenon`
       - :ref:`platform_nordicnrf52`
       - External
@@ -2802,6 +2980,13 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f723ie`
       - :ref:`platform_ststm32`
       - On-board
@@ -3355,6 +3540,27 @@ ST
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_eval_f373vc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F373VCT6
+      - 72MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_eval_f072vb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F072VBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_disco_f750n8`
       - :ref:`platform_ststm32`
       - On-board
@@ -3362,6 +3568,13 @@ ST
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h743xi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - :ref:`platform_ststm32`
       - External
@@ -4181,6 +4394,13 @@ VNG
       - 16MHz
       - 128KB
       - 32KB
+    * - :ref:`board_nordicnrf52_vbluno52`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 VintLabs
 ~~~~~~~~

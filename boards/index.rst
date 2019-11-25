@@ -647,20 +647,32 @@ Nordic nRF52
 .. toctree::
     :maxdepth: 1
         
+    nordicnrf52/96b_nitrogen
     nordicnrf52/adafruit_feather_nrf52832
     nordicnrf52/adafruit_feather_nrf52840
+    nordicnrf52/laird_bl652_dvk
+    nordicnrf52/laird_bl654_dvk
     nordicnrf52/bluey
     nordicnrf52/adafruit_cplaynrf52840
     nordicnrf52/delta_dfbm_nq620
+    nordicnrf52/electronut_blip
+    nordicnrf52/electronut_papyr
+    nordicnrf52/holyiot_yj16019
     nordicnrf52/adafruit_itsybitsy_nrf52840
+    nordicnrf52/nrf52832_mdk
+    nordicnrf52/nrf52840_mdk
     nordicnrf52/adafruit_metro_nrf52840
+    nordicnrf52/thingy_52
     nordicnrf52/nrf52_dk
     nordicnrf52/nrf52840_dk
     nordicnrf52/nrf52840_dk_adafruit
+    nordicnrf52/particle_argon
+    nordicnrf52/particle_boron
     nordicnrf52/redbear_blenano2
     nordicnrf52/redbear_blend2
     nordicnrf52/sdt52832b
     nordicnrf52/stct_nrf52_minidev
+    nordicnrf52/vbluno52
     nordicnrf52/particle_xenon
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_evk_nina_b1
@@ -761,6 +773,7 @@ ST STM32
     :maxdepth: 1
         
     ststm32/1bitsy_stm32f415rgt
+    ststm32/disco_f412zg
     ststm32/disco_f723ie
     ststm32/armed_v1
     ststm32/rumba32_f446ve
@@ -809,6 +822,8 @@ ST STM32
     ststm32/nucleo_g431kb
     ststm32/nucleo_g431rb
     ststm32/nucleo_g474re
+    ststm32/olimexino
+    ststm32/olimex_p405
     ststm32/nucleo_wb55rg_p
     ststm32/rak811_tracker
     ststm32/rak811_tracker_32
@@ -879,6 +894,11 @@ ST STM32
     ststm32/disco_l152rb
     ststm32/disco_f100rb
     ststm32/silica_sensor_node
+    ststm32/olimex_e407
+    ststm32/olimex_h407
+    ststm32/eval_f107vc
+    ststm32/eval_f373vc
+    ststm32/eval_f072vb
     ststm32/genericSTM32F103C8
     ststm32/genericSTM32F103CB
     ststm32/genericSTM32F103R8
@@ -899,6 +919,7 @@ ST STM32
     ststm32/genericSTM32F407VGT6
     ststm32/stm32f4stamp
     ststm32/disco_f750n8
+    ststm32/disco_h743xi
     ststm32/seeedArchMax
     ststm32/wio_3g
     ststm32/steval_mksboxv1

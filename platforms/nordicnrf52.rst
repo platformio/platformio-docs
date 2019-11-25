@@ -43,6 +43,9 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 * `mbed-nfc <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-nfc?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-ble-beacon <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-ble-beacon?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-subsys-nvs <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-subsys-nvs?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -81,6 +84,16 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_laird_bl652_dvk`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl654_dvk`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - NRF52832
       - 64MHz
@@ -91,6 +104,16 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_nrf52832_mdk`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_mdk`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_nrf52_dk`
       - NRF52832
       - 64MHz
@@ -112,6 +135,11 @@ You do not need to use/buy external debug probe.
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_redbear_blend2`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_vbluno52`
       - NRF52832
       - 64MHz
       - 512KB
@@ -139,6 +167,11 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_96b_nitrogen`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - NRF52832
       - 64MHz
@@ -159,7 +192,37 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_electronut_blip`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_electronut_papyr`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_holyiot_yj16019`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_thingy_52`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_particle_argon`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_particle_boron`
       - NRF52840
       - 64MHz
       - 796KB
@@ -236,8 +299,26 @@ Packages
     * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
 
+    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio&utm_medium=docs>`__
+      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+
+    * - `framework-zephyr-hal-nordic <https://github.com/zephyrproject-rtos/hal_nordic?utm_source=platformio&utm_medium=docs>`__
+      - Nordic nRF5x HAL for Zephyr framework
+
+    * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio&utm_medium=docs>`__
+      - Device tree compiler
+
+    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio&utm_medium=docs>`__
+      - GNU gperf is a perfect hash function generator.
+
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
+
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed.
 
     * - `tool-nrfjprog <https://www.nordicsemi.com?utm_source=platformio&utm_medium=docs>`__
       - nRF5x command line tool
@@ -279,6 +360,9 @@ Frameworks
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
 
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+
 Boards
 ------
 
@@ -287,6 +371,25 @@ Boards
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
+
+96Boards
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_96b_nitrogen`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 Adafruit
 ~~~~~~~~
@@ -375,6 +478,100 @@ Electronut Labs
       - 512KB
       - 64KB
 
+ElectronutLabs
+~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_electronut_blip`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_electronut_papyr`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+
+Holyiot
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_holyiot_yj16019`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
+Laird Connectivity
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_laird_bl652_dvk`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl654_dvk`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+
+Makerdiary
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_nrf52832_mdk`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_mdk`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+
 Nordic
 ~~~~~~
 
@@ -387,6 +584,12 @@ Nordic
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_thingy_52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_nrf52_dk`
       - On-board
       - NRF52832
@@ -418,6 +621,18 @@ Particle
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_particle_argon`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_particle_boron`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_particle_xenon`
       - External
       - NRF52840
@@ -483,6 +698,25 @@ Taida Century
       - RAM
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
       - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
+VNG
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_vbluno52`
+      - On-board
       - NRF52832
       - 64MHz
       - 512KB
