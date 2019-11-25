@@ -177,6 +177,13 @@ Arduino
       - 16MHz
       - 30KB
       - 2KB
+    * - :ref:`board_atmelavr_nanoatmega328new`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
     * - :ref:`board_atmelavr_uno`
       - :ref:`platform_atmelavr`
       - No

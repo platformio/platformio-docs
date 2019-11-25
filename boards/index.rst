@@ -193,6 +193,7 @@ Atmel AVR
     atmelavr/panStampAVR
     atmelavr/pinoccio
     atmelavr/a-star32U4
+    atmelavr/prusa_rambo
     atmelavr/quirkbot
     atmelavr/blend
     atmelavr/blendmicro16

@@ -5580,6 +5580,27 @@ Pontech
       - 508KB
       - 128KB
 
+Prusa 3D
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_prusa_rambo`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA2560
+      - 16MHz
+      - 252KB
+      - 8KB
+
 Punch Through
 ~~~~~~~~~~~~~
 
