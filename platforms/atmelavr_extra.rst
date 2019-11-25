@@ -171,10 +171,10 @@ Custom fuse values and upload flags (based on upload protocol) should be specifi
         -b$UPLOAD_SPEED
         -e
 
-Mini, Mega, Mighty cores
-^^^^^^^^^^^^^^^^^^^^^^^^
+MiniCore, MegaCore and MightyCore
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``Mini``, ``Mega``, ``Mighty`` cores support dynamic fuses generation. Generated values are based on the next parameters:
+``MiniCore``, ``MegaCore`` and ``MightyCore`` support dynamic fuses generation. Generated values are based on the next parameters:
 
   .. list-table::
     :header-rows:  1
@@ -290,10 +290,9 @@ Custom bootloader and corresponding fuses should be specified in :ref:`projectco
     board_bootloader.unlock_bits = 0x3F
 
 
-Mini, Mega, Mighty cores
-^^^^^^^^^^^^^^^^^^^^^^^^
+https://github.com/MCUdude/platformio-docs
 
-``Mini``, ``Mega``, ``Mighty`` cores have a wide variety of precompiled bootloaders. Bootloader binary is dynamically selected according to the hardware parameters: ``f_cpu``, ``oscillator``, ``upload_speed``:
+``MiniCore``, ``MegaCore`` and ``MightyCore`` have a wide variety of precompiled bootloaders. Bootloader binary is dynamically selected according to the hardware parameters: ``f_cpu``, ``oscillator``, ``upload_speed``:
 
   .. list-table::
     :header-rows:  1
