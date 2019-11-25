@@ -1194,6 +1194,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_nordicnrf51_oshchip`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -1260,6 +1266,18 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -3423,6 +3441,13 @@ Doit
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif8266_espmxdevkit`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
     * - :ref:`board_espressif8266_espduino`
       - :ref:`platform_espressif8266`
       - No
@@ -4200,6 +4225,48 @@ Hornbill
       - 240MHz
       - 4MB
       - 320KB
+
+ITEAD
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_sonoff_basic`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_s20`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_sv`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_th`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
 
 Infineon
 ~~~~~~~~
@@ -5369,6 +5436,13 @@ Olimex
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_espressif8266_modwifi`
       - :ref:`platform_espressif8266`
       - No
@@ -5383,6 +5457,20 @@ Olimex
       - 80MHz
       - 252KB
       - 32KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
 
 Onehorse
 ~~~~~~~~

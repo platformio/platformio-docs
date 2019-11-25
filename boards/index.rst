@@ -403,6 +403,7 @@ Espressif 8266
     espressif8266/gen4iod
     espressif8266/huzzah
     espressif8266/oak
+    espressif8266/espmxdevkit
     espressif8266/esp_wroom_02
     espressif8266/espduino
     espressif8266/espectro
@@ -421,6 +422,10 @@ Espressif 8266
     espressif8266/modwifi
     espressif8266/phoenix_v1
     espressif8266/phoenix_v2
+    espressif8266/sonoff_basic
+    espressif8266/sonoff_s20
+    espressif8266/sonoff_sv
+    espressif8266/sonoff_th
     espressif8266/sparkfunBlynk
     espressif8266/thing
     espressif8266/thingdev
