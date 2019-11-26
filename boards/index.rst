@@ -673,12 +673,12 @@ Nordic nRF52
     nordicnrf52/nrf52840_dk_adafruit
     nordicnrf52/particle_argon
     nordicnrf52/particle_boron
+    nordicnrf52/particle_xenon
     nordicnrf52/redbear_blenano2
     nordicnrf52/redbear_blend2
     nordicnrf52/sdt52832b
     nordicnrf52/stct_nrf52_minidev
     nordicnrf52/vbluno52
-    nordicnrf52/particle_xenon
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_evk_nina_b1
 

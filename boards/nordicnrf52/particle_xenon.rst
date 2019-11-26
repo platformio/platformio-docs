@@ -11,8 +11,8 @@
 
 .. _board_nordicnrf52_particle_xenon:
 
-Xenon
-=====
+Particle Xenon
+==============
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``particle_xenon`` ID for :ref:`projectconf_env_board` option in :ref
   platform = nordicnrf52
   board = particle_xenon
 
-You can override default Xenon settings per build environment using
+You can override default Particle Xenon settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `particle_xenon.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/particle_xenon.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `particle_xenon.json <https://github.com/platformio/platform-nord
 
 Uploading
 ---------
-Xenon supports the next uploading protocols:
+Particle Xenon supports the next uploading protocols:
 
 * ``jlink``
 * ``nrfjprog``
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Xenon does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Particle Xenon does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

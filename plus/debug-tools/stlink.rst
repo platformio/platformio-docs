@@ -759,6 +759,13 @@ Boards
       - 64MHz
       - 512KB
       - 192.00KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - External
@@ -1571,13 +1578,6 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nordicnrf52_particle_xenon`
-      - :ref:`platform_nordicnrf52`
-      - External
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
     * - :ref:`board_nordicnrf52_hackaBLE`
       - :ref:`platform_nordicnrf52`
       - External

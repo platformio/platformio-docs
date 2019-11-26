@@ -1713,6 +1713,13 @@ Boards
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_espressif32_lopy`
       - :ref:`platform_espressif32`
       - External
@@ -2889,13 +2896,6 @@ Boards
       - 144MHz
       - 2.00MB
       - 1.95MB
-    * - :ref:`board_nordicnrf52_particle_xenon`
-      - :ref:`platform_nordicnrf52`
-      - External
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
     * - :ref:`board_espressif32_xinabox_cw02`
       - :ref:`platform_espressif32`
       - External

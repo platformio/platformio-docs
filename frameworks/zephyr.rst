@@ -552,6 +552,12 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_olimex_e407`
       - :ref:`platform_ststm32`
       - STM32F407ZGT6
@@ -588,12 +594,6 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nordicnrf52_particle_xenon`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
 
 
 Examples

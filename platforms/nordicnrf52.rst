@@ -227,6 +227,11 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_sdt52832b`
       - NRF52832
       - 64MHz
@@ -237,11 +242,6 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf52_particle_xenon`
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
     * - :ref:`board_nordicnrf52_hackaBLE`
       - NRF52832
       - 64MHz

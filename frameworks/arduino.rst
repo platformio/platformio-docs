@@ -1206,6 +1206,12 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_espressif32_lopy`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1608,12 +1614,6 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
-    * - :ref:`board_nordicnrf52_particle_xenon`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
     * - :ref:`board_espressif32_xinabox_cw02`
       - :ref:`platform_espressif32`
       - ESP32
