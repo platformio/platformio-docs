@@ -17,7 +17,7 @@ Atmel AVR
 :Configuration:
   :ref:`projectconf_env_platform` = ``atmelavr``
 
-Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
+Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming.
 
 For more detailed information please visit `vendor site <http://www.atmel.com/products/microcontrollers/avr/default.aspx?utm_source=platformio&utm_medium=docs>`_.
 
@@ -101,13 +101,13 @@ Packages
       - Arduino Wiring-based Framework (Dwenguino Core)
 
     * - `framework-arduino-avr-megacore <https://github.com/MCUdude/MegaCore?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (megaCore Core)
+      - Arduino Wiring-based Framework (MegaCore)
 
     * - `framework-arduino-avr-mightycore <https://github.com/MCUdude/MightyCore?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (MightyCore Core)
+      - Arduino Wiring-based Framework (MightyCore)
 
     * - `framework-arduino-avr-minicore <https://github.com/MCUdude/MiniCore?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (MiniCore Core)
+      - Arduino Wiring-based Framework (MiniCore)
 
     * - `framework-arduino-avr-nicai <https://github.com/arduino/ArduinoCore-avr?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (Nicai Core)
