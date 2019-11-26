@@ -17,7 +17,7 @@ Atmel AVR
 :Configuration:
   :ref:`projectconf_env_platform` = ``atmelavr``
 
-Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming.
+Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming
 
 For more detailed information please visit `vendor site <http://www.atmel.com/products/microcontrollers/avr/default.aspx?utm_source=platformio&utm_medium=docs>`_.
 
@@ -92,7 +92,7 @@ Packages
       - Arduino Wiring-based Framework (Bean Core)
 
     * - `framework-arduino-avr-core13 <https://sourceforge.net/projects/ard-core13/?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Core13 Core)
+      - Arduino Wiring-based Framework (Core13)
 
     * - `framework-arduino-avr-digistump <https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (Digistump Core)
