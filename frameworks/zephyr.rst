@@ -25,6 +25,7 @@ For more detailed information please visit `vendor site <https://www.zephyrproje
 .. contents:: Contents
     :local:
     :depth: 1
+.. include:: zephyr_extra.rst
 
 Debugging
 ---------
