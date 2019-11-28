@@ -72,6 +72,7 @@ BluePill F103C8 supports the next uploading protocols:
 * ``dfu``
 * ``jlink``
 * ``mbed``
+* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -85,6 +86,10 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
   board = bluepill_f103c8
 
   upload_protocol = stlink
+  
+**A Note on the** ``serial`` **upload protocol:**
+
+The STM32 chips have a builtin bootloader which can be activated by setting the BOOT1 jumper to 1 (BOOT0 should be kept at 0) and pushing the reset button. The MCU will then wait for programming over the main UART. The pins are PA9 (TX) and PA10 (RX) on the blue pill boards. Programming will work using a USB/TTL-UART adapter, for example CH340 or similar. Keep in mind that RX from the MCU needs to be connected to TX of the USB adapter and vice versa.
 
 Debugging
 ---------
