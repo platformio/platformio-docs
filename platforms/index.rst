@@ -14,19 +14,34 @@
 Development Platforms
 =====================
 
-PlatformIO ecosystem has decentralized architecture. Build scripts, toolchains,
-the pre-built tools for the popular OS (*Mac OS X, Linux (+ARM) and Windows*)
-are organized into the multiple development platforms.
+The PlatformIO ecosystem has a decentralized architecture, allowing
+development for a range of *development platforms*. A development
+platform (or just "platform" for short) is usually a particular
+microcontroller or processor architecture that PlatformIO projects can
+be compiled to run on. (A few platforms, for example Teensy, use
+different target architectures for different boards.)
 
-Each development platform contains:
+Each of the three supported host systems Mac OS X, Linux and Windows
+support compiling for all platforms listed below. Some platforms are
+also supported under ARM Linux hosts such as Raspberry Pi. For each
+development platform, PlatformIO defines:
 
-- **PlatformIO Build System** based build scripts for the supported frameworks
+- The **PlatformIO Build System** build scripts for the supported frameworks
   and SDKs
-- Pre-configured presets for embedded boards
-- Pre-compiled toolchains and relative tools for multiple architectures.
+- Pre-configured presets for embedded circuit boards
+- Pre-compiled toolchains and related tools for the architechture(s)
 
-A platform name or its specific version could could be specified using
-:ref:`projectconf_env_platform` option in :ref:`projectconf`.
+Each project must specify the platform name using the
+:ref:`projectconf_env_platform` option in :ref:`projectconf`. A
+specific platform version can optionally be specified as well. As
+embedded boards are equipped with a particular microcontroller, each
+embedded board specifies what development platform it uses and this
+can not be changed.
+
+If a new board uses an architecture not in this list, a custom
+development platform can be created; see `Custom Development Platforms
+<https://platformio.org/platforms/creating_platform.html>`_.
+
 
 Embedded
 --------

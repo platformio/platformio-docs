@@ -17,8 +17,8 @@ Section ``[platformio]``
 .. contents::
     :local:
 
-A ``platformio`` section is used for overriding default configuration options
-for :ref:`piocore`.
+The platform.ini ``platformio`` section is used for overriding the
+default configuration options for :ref:`piocore`.
 
 .. note::
     Relative path is allowed for directory option:
@@ -27,14 +27,14 @@ for :ref:`piocore`.
     * ``../`` or ``..\`` go up to one folder
 
     There is a ``$PROJECT_HASH`` template variable. You can use it in a directory
-    path. It will by replaced by a SHA1[0:10] hash of a full project path.
+    path. It will by replaced by a SHA1[0:10] hash of the full project path.
     This is very useful to declare a global storage for project workspaces.
     For example, ``/tmp/pio-workspaces/$PROJECT_HASH`` (Unix) or
     ``$[sysenv.TEMP}/pio-workspaces/$PROJECT_HASH`` (Windows).
-    You can set a global workspace directory using system environment
+    You can set a global workspace directory using the system environment
     variable :envvar:`PLATFORMIO_WORKSPACE_DIR`.
 
-    See below available directory ``***_dir`` options.
+    See the available directory ``***_dir`` options below.
 
 Generic options
 ~~~~~~~~~~~~~~~
@@ -44,7 +44,7 @@ Generic options
 
 Type: ``String`` | Multiple: ``No``
 
-Describe a project with a short information. PlatformIO uses it for
+Short description of the project. PlatformIO uses it for
 :ref:`piohome` in the multiple places.
 
 .. _projectconf_pio_default_envs:
@@ -54,9 +54,9 @@ Describe a project with a short information. PlatformIO uses it for
 
 Type: ``String`` | Multiple: ``Yes``
 
-:ref:`cmd_run` command processes all environments ``[env:***]`` by default
-if :option:`platformio run --environment` option is not specified.
-:ref:`projectconf_pio_default_envs` allows one to define environments which
+The :ref:`cmd_run` command processes all environments ``[env:***]`` by default
+if the :option:`platformio run --environment` option is not specified.
+:ref:`projectconf_pio_default_envs` allows one to define which environments that
 should be processed by default.
 
 Also, :ref:`piodebug` checks this option when looking for debug environment.
@@ -223,12 +223,13 @@ Directory options
 
 Type: ``DirPath`` | Multiple: ``No``
 
-Is used to store development platform packages (toolchains, frameworks, SDKs,
-upload and debug tools), global libraries for :ref:`ldf`, and other PlatformIO
-Core service data. The size of this folder will depend on number of installed
-development platforms.
+The core_dir variable points out the directory used for all
+development platform packages (toolchains, frameworks, SDKs, upload
+and debug tools), global libraries for :ref:`ldf`, and other
+PlatformIO Core service data. The size of this folder will depend on
+the number of installed development platforms.
 
-A default value is User's home directory:
+The default value is the user's home directory:
 
 * Unix ``~/.platformio``
 * Windows ``%HOMEPATH%\.platformio``
@@ -357,14 +358,14 @@ a different configuration (new build flags, etc):
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``.pio``"
 
-A path to a project workspace directory where PlatformIO keeps by default
+The path to a project workspace directory where PlatformIO keeps by default
 compiled objects, static libraries, firmwares, and external library
-dependencies. It is used by the next options:
+dependencies. It is used by these options:
 
 - :ref:`projectconf_pio_build_dir`
 - :ref:`projectconf_pio_libdeps_dir`.
 
-A default value is ``.pio`` and means that folder is located in the root of
+The default value is ``.pio`` and means that folder is located in the root of
 project.
 
 This option can also be configured by the global environment variable
@@ -419,9 +420,10 @@ This option can also be configured by the global environment variable
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``include``"
 
-A path to project's default header files. PlatformIO uses it for :ref:`cmd_run`
-command. A default value is ``include`` that means that folder is located in the
-root of project. This path will be added to ``CPPPATH`` of build environment.
+The path to project's default header files. PlatformIO uses it for the
+:ref:`cmd_run` command. The default value is ``include`` meaning an
+``include`` directory located under the root directory of the project. This
+path will be added to ``CPPPATH`` of the build environment.
 
 If you need to add extra include directories to ``CPPPATH`` scope, please use
 :ref:`projectconf_build_flags` with ``-I /path/to/extra/dir`` option.
@@ -436,16 +438,16 @@ This option can also be configured by the global environment variable
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``src``"
 
-A path to project's source directory. PlatformIO uses it for :ref:`cmd_run`
-command. A default value is ``src`` that means that folder is located in the
-root of project.
+The path to the project's directory with source code. PlatformIO uses
+it for the :ref:`cmd_run` command. The default value is ``src``
+meaning a ``src`` directory located in the root directory of the project.
 
 This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_SRC_DIR`.
 
 .. note::
     This option is useful for people who migrate from Arduino IDE where
-    source directory should have the same name as a main source file.
+    the source directory should have the same name as the main source file.
     See `example <https://github.com/platformio/platform-atmelavr/tree/develop/examples/arduino-own-src_dir>`__ project with own source directory.
 
 .. _projectconf_pio_lib_dir:
@@ -455,18 +457,18 @@ This option can also be configured by the global environment variable
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``lib``"
 
-You can put here your own/private libraries. The source code of each library
+You can put your own/private libraries here. The source code of each library
 should be placed in separate directory, like
 ``lib/private_lib/[here are source files]``. This directory has the highest
 priority for :ref:`ldf`.
 
-A default value is ``lib`` that means that folder is located in the root of
-project.
+The default value is ``lib``, meaning a ``lib`` directory located in
+the root of the project.
 
 This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_LIB_DIR`.
 
-For example, see how can be organized ``Foo`` and ``Bar`` libraries:
+For example, see how the ``Foo`` and ``Bar`` libraries are organized:
 
 .. code::
 
@@ -492,10 +494,10 @@ Then in ``src/main.c`` you should use:
     #include <Foo.h>
     #include <Bar.h>
 
-    // rest H/C/CPP code
+    // rest of H/C/CPP code
 
-PlatformIO will find your libraries automatically, configure preprocessor's
-include paths and build them.
+PlatformIO will find your libraries automatically, configure the
+preprocessor's include paths and build them.
 
 .. _projectconf_pio_data_dir:
 
@@ -505,8 +507,8 @@ include paths and build them.
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``data``"
 
 Data directory to store contents and :ref:`platform_espressif_uploadfs`.
-A default value is ``data`` that means that folder is located in the root of
-project.
+The default value is ``data`` that means that folder is located in the root of
+the project.
 
 This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_DATA_DIR`.
@@ -518,9 +520,9 @@ This option can also be configured by the global environment variable
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``test``"
 
-Directory where :ref:`unit_testing` engine will look for the tests.
-A default value is ``test`` that means that folder is located in the root of
-project.
+The directory where :ref:`unit_testing` engine will look for the
+tests.  The default value is ``test``, meaning a ``test`` directory
+located in the root of the project.
 
 This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_TEST_DIR`.
@@ -532,13 +534,13 @@ This option can also be configured by the global environment variable
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``boards``"
 
-Custom board settings per project. You can change this path with your own.
-A default value is ``boards`` that means that folder is located in the root of
-project.
+The location of project-specific board definitions. Each project may
+choose a suitable directory name.  The default value is ``boards``,
+meaning a "boards" directory located in the root of the project.
 
 By default, PlatformIO looks for boards in this order:
 
-1. Project :ref:`projectconf_pio_boards_dir`
+1. Project :ref:`projectconf_pio_boards_dir` (as defined by this setting)
 2. Global :ref:`projectconf_pio_core_dir`/boards
 3. Development platform :ref:`projectconf_pio_core_dir`/platforms/\*/boards.
 
@@ -568,8 +570,8 @@ with :option:`platformio remote run --force-remote` or
 - :ref:`projectconf_pio_data_dir`
 - :ref:`projectconf_pio_test_dir`
 
-A default value is ``shared`` that means that folder is located in the root of
-project.
+The default value is ``shared``, meaning a directory named "shared"
+located in the root of the project.
 
 This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_SHARED_DIR`.

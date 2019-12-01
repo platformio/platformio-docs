@@ -35,14 +35,17 @@ See extended documentation for :ref:`build_configurations`.
 
 Type: ``String`` | Multiple: ``Yes``
 
-These flags/options control preprocessing, compilation, assembly and linking
-processes:
+These flags/options affect the preprocessing, compilation, assembly
+and linking processes for C and C++ code. All compiler and linker
+flags can be used. Here is a list of some common options.
+
+In spite of the name, ``CPPDEFINES`` rows also applies to the C compiler.
 
 .. list-table::
     :header-rows:  1
 
     * - Format
-      - Scope
+      - Affects build variable
       - Description
     * - ``-D name``
       - CPPDEFINES
@@ -61,10 +64,10 @@ processes:
         preprocessor
     * - ``-Wall``
       - CCFLAGS
-      - Turns on all optional warnings which are desirable for normal code.
+      - Turn on all optional warnings which are desirable for normal code.
     * - ``-Werror``
       - CCFLAGS
-      - Make all warnings into hard errors. Source code which triggers warnings will be rejected.
+      - Make all warnings into hard errors. With this option, if any source code triggers warnings, the compilation will be aborted.
     * - ``-w``
       - CCFLAGS
       - Suppress all warnings, including those which GNU CPP issues by default.
@@ -146,7 +149,7 @@ Examples:
 Built-in Variables
 ''''''''''''''''''
 
-You can inject into build flags built-in variables, such as:
+You can inject the built-in variables into your build flags, such as:
 
 * ``$PYTHONEXE``, full path to current Python interpreter
 * ``$UNIX_TIME``, current time in Unix format
@@ -157,26 +160,28 @@ You can inject into build flags built-in variables, such as:
 * ``$PROJECT_CORE_DIR``, PlatformIO Core directory, see :ref:`projectconf_pio_core_dir`
 * ``$PROJECT_BUILD_DIR``, project build directory per all environments
 * ``$BUILD_DIR``, build directory per current environment
-* `Need more PlatformIO variables? <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L99:L120>`_
 
-Please use target ``envdump`` for :option:`platformio run --target` command to
-see ALL variables from a build environment.
+See the `full list of PlatformIO variables <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L99:L120>`_.
+
+Please use target ``envdump`` for the :option:`platformio run --target`
+command to see ALL variable values for a build environment.
 
 .. _projectconf_dynamic_build_flags:
 
 Dynamic build flags
 '''''''''''''''''''
 
-PlatformIO allows one to run external command/script which outputs build flags
-into STDOUT. PlatformIO will automatically parse this output and append flags
-to a build environment.
+PlatformIO allows users to run an external command/script which
+outputs build flags into STDOUT by prepending the shell command with a
+``!`` character. PlatformIO will automatically replace commands with
+their output when appending flags to build environments.
 
 **You can use any shell or programming language.**
 
 This external command will be called on each :ref:`cmd_run` command before
 building/uploading process.
 
-Use Cases:
+Use cases:
 
  * Macro with the latest VCS revision/tag "on-the-fly"
  * Generate dynamic headers (``*.h``)
@@ -185,7 +190,7 @@ Use Cases:
 
 .. note::
   If you need more advanced control and would like to apply changes to
-  PlatformIO Build System environment, please refer to :ref:`projectconf_advanced_scripting`.
+  a PlatformIO Build System environment, please refer to :ref:`projectconf_advanced_scripting`.
 
 Example:
 
@@ -198,10 +203,10 @@ Example:
     build_flags = !echo "-DSOME_MACRO="$(some_cmd arg1 --option1)
 
 
-**Use Case: Create "PIO_SRC_REV" macro with the latest Git revision**
+**Use Case: Create a "PIO_SRC_REV" macro with the latest Git revision**
 
-You will need to create a separate file named ``git_rev_macro.py`` and place it
-near ``platformio.ini``.
+This example includes a separate file named ``git_rev_macro.py``, to be placed
+in the same directory as ``platformio.ini``.
 
 ``platformio.ini``:
 
@@ -227,11 +232,11 @@ near ``platformio.ini``.
 
 Type: ``String`` | Multiple: ``Yes``
 
-An option ``src_build_flags`` has the same behavior like ``build_flags``
-but will be applied only for the project source code from
+An option ``src_build_flags`` has the same behavior as ``build_flags``
+but will be applied only for project source files in the
 :ref:`projectconf_pio_src_dir` directory.
 
-This option can also be set by global environment variable
+This option can also be set by the global environment variable
 :envvar:`PLATFORMIO_SRC_BUILD_FLAGS`.
 
 .. _projectconf_build_unflags:
@@ -241,7 +246,7 @@ This option can also be set by global environment variable
 
 Type: ``String`` | Multiple: ``Yes``
 
-Remove base/initial flags which were set by development platform.
+Selectively remove base/initial flags that were set by the development platform.
 
 .. code-block:: ini
 
@@ -257,22 +262,22 @@ Remove base/initial flags which were set by development platform.
 Type: ``String (Templates)`` | Multiple: ``Yes``
 
 This option allows one to specify which source files should be
-included/excluded from :ref:`projectconf_pio_src_dir` for a build process.
-Filter supports 2 templates:
+included or excluded from :ref:`projectconf_pio_src_dir` for a build process.
+Filter supports two templates:
 
 * ``+<PATH>`` include template
 * ``-<PATH>`` exclude template
 
-``PATH`` MUST BE related from :ref:`projectconf_pio_src_dir`. All patterns will
-be applied in theirs order.
+``PATH`` is relative to :ref:`projectconf_pio_src_dir`. All patterns will
+be applied in their order of definition.
 `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
 
 By default, ``src_filter`` is predefined to
 ``+<*> -<.git/> -<.svn/> -<example/> -<examples/> -<test/> -<tests/>``,
-that means "includes ALL files, then
-exclude ``.git`` and ``svn`` repository folders, ``example`` ... folder.
+meaning "include ALL files, then
+exclude the ``.git`` and ``svn`` repository folders and the ``example`` ... folder.
 
-This option can also be set by global environment variable
+This option can also be set by the global environment variable
 :envvar:`PLATFORMIO_SRC_FILTER`.
 
 .. _projectconf_targets:
@@ -282,16 +287,15 @@ This option can also be set by global environment variable
 
 Type: ``String`` | Multiple: ``Yes``
 
-A list of targets which will be processed by :ref:`cmd_run` command by
-default. You can enter more than one target, please split them with
-comma+space **", "**.
+A list of targets which will be processed by the :ref:`cmd_run` command by
+default. You can enter more than one target, if separated by comma+space **", "**.
 
 The list with available targets is located in :option:`platformio run --target`.
 
 **Examples**
 
 1. Build a project using :ref:`Release Configuration <build_configurations>`,
-   upload firmware, and start :ref:`Serial Monitor <cmd_device_monitor>`
+   upload the firmware, and start :ref:`Serial Monitor <cmd_device_monitor>`
    automatically:
 
     .. code-block:: ini
