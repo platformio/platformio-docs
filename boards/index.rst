@@ -14,21 +14,25 @@
 Boards
 ======
 
-Rapid Embedded Development, Continuous and IDE integration in a few
-steps with PlatformIO thanks to built-in project generator for the most
-popular embedded boards and IDE.
+Enjoy rapid embedded development with Continuous Integration and IDE
+integration after just a few setup steps with PlatformIO thanks to the
+built-in project generator for the most popular embedded boards and
+IDEs.
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * You can list all pre-configured boards by the :ref:`cmd_boards`
+      command-line command or through the `PlatformIO Boards Explorer
+      <https://platformio.org/boards>`_
+    * To define your own board, see `Custom Embedded Boards <https://platformio.org/platforms/creating_board.html>`_
+
+For detailed information on the generally available ``board`` options, please see the list below:
 
 Aceinna IMU
 -----------
 
 .. toctree::
     :maxdepth: 1
-        
+
     aceinna_imu/LowCostRTK
     aceinna_imu/OpenIMU300
     aceinna_imu/OpenIMU300ZA

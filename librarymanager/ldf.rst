@@ -16,12 +16,12 @@ Library Dependency Finder (LDF)
 
 Library Dependency Finder is a core part of PlatformIO Build System that
 operates with the C/C++ source files and looks for ``#include ...``
-directives.
+directives to know what header directories to include for the compiler.
 
 In spite of the fact that Library Dependency Finder is written in pure Python,
 it evaluates :ref:`ldf_c_cond_syntax` (``#ifdef``, ``if``, ``defined``,
 ``else``, and ``elif``) without calling ``gcc -E``. This approach allows
-significantly reduce total compilation time. See :ref:`ldf_mode` for more
+to significantly reduce the total compilation time. See :ref:`ldf_mode` for more
 details.
 
 .. contents::
@@ -88,8 +88,8 @@ The mode can be changed using :ref:`projectconf_lib_ldf_mode` option in
 
 .. note::
   Usually, when the LDF appears to fail to identify a dependency of a library,
-  it is because the dependency is only referenced from the library source file,
-  and not the library header file (see example below). In this case, it is
+  it is because the dependency is only referenced from a library source file,
+  and not a library header file (see example below). In this case, it is
   necessary to either explicitly reference the dependency from the project
   source or :ref:`projectconf` (:ref:`projectconf_lib_deps` option), or change
   the LDF mode to "deep" (not generally recommended).
@@ -97,13 +97,13 @@ The mode can be changed using :ref:`projectconf_lib_ldf_mode` option in
 A difference between ``chain/chain+`` and ``deep/deep+`` modes. For example,
 there are 2 libraries:
 
-* Library "Foo" with files:
+* Library ``Foo`` with files:
 
   - ``Foo/foo.h``
   - ``Foo/foo.cpp``
   - ``Foo/extra.cpp``
 
-* Library "Bar" with files:
+* Library ``Bar`` with files:
 
   - ``Bar/bar.h``
   - ``Bar/bar.cpp``
@@ -111,31 +111,32 @@ there are 2 libraries:
 :Case 1:
 
     * ``lib_ldf_mode = chain``
-    * ``Foo/foo.h`` depends on "Bar" library (contains ``#include <bar.h>``)
+    * ``Foo/foo.h`` depends on the ``Bar`` library (contains ``#include <bar.h>``)
     * ``#include <foo.h>`` is located in one of the project source files
 
-    Here are nested includes (``project file > foo.h > bar.h``) and ``LDF``
-    will find both libraries "Foo" and "Bar".
+    Here the nested includes (``project file > foo.h > bar.h``) and LDF
+    will find both libraries "Foo`` and ``Bar``.
 
 :Case 2:
 
     * ``lib_ldf_mode = chain``
-    * ``Foo/extra.cpp`` depends on "Bar" library (contains ``#include <bar.h>``)
+    * ``Foo/extra.cpp`` depends on the ``Bar`` library (contains ``#include <bar.h>``)
     * ``#include <foo.h>`` is located in one of the project source files
 
-    In this case, ``LDF`` will not find "Bar" library because it doesn't know
-    about CPP file (``Foo/extra.cpp``).
+    In this case, LDF will not find the ``Bar`` library because it doesn't know
+    about the CPP file (``Foo/extra.cpp``).
 
 :Case 3:
 
     * ``lib_ldf_mode = deep``
-    * ``Foo/extra.cpp`` depends on "Bar" library (contains ``#include <bar.h>``)
+    * ``Foo/extra.cpp`` depends on ``Bar`` library (contains ``#include <bar.h>``)
     * ``#include <foo.h>`` is located in one of the project source files
 
-    Firstly, ``LDF`` finds "Foo" library, then it parses all sources from "Foo"
-    library and finds ``Foo/extra.cpp`` that depends on ``#include <bar.h>``.
-    Secondly, it will parse all sources from "Bar" library and this operation
-    continues until all dependencies will not be parsed.
+    Firstly, LDF finds the ``Foo`` library, then it parses all sources
+    from the ``Foo`` library and finds ``Foo/extra.cpp`` that depends
+    on ``#include <bar.h>``.  Secondly, it will parse all sources from
+    the ``Bar`` library. This operation continues until all
+    dependencies will not be parsed.
 
 .. _ldf_compat_mode:
 

@@ -34,15 +34,16 @@ If you need to build a project in ``debug`` configuration, please use one of
 these options:
 
 * Add :ref:`projectconf_build_type` with ``debug`` value to :ref:`projectconf`
-* Use target ``debug`` for :option:`platformio run --target` command.
+* Use target ``debug`` for the :option:`platformio run --target` command.
 
 .. note::
   :ref:`piodebug` automatically switches to ``debug`` configuration when you do
-  project debugging from :ref:`pioide` or use :ref:`cmd_debug` command.
+  project debugging from :ref:`pioide` or use the :ref:`cmd_debug` command.
 
-  To avoid project rebuilding, please create a separate build environment
-  and add ``build_type = debug``. See example below where ``mydebug`` build
-  environment will be used automatically by :ref:`piodebug`:
+  To avoid having :ref:`piodebug` rebuild the project, please create a
+  separate build environment that defines ``build_type = debug``. See
+  the example below where the ``mydebug`` build environment will be used
+  automatically by :ref:`piodebug`:
 
   .. code-block:: ini
 
@@ -59,5 +60,5 @@ these options:
      build_type = debug
      some_extra_options = ...
 
-Please note that you can set a default build environment per a project using
+Please note that you can set a default build environment per a project using the
 :ref:`projectconf_pio_default_envs` option in :ref:`projectconf_section_platformio`.
