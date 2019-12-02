@@ -42,10 +42,11 @@ sections and their allowed contents:
     projectconf/section_env
     projectconf/build_configurations
     projectconf/dynamic_variables
+    projectconf/examples
 
 **Example**
 
-For more examples, see :ref:`projectconf/examples`.
+For more examples, see :ref:`projectconf_examples`.
 
 .. code-block:: ini
 
