@@ -174,7 +174,7 @@ See `project example <https://github.com/platformio/platform-espressif32/tree/de
 
 Partition Tables
 ~~~~~~~~~~~~~~~~
-You can create a custom partitions table (CSV) following `ESP32 Partition Tables <https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/storage/nvs_partition_gen.html>`_
+You can create a custom partitions table (CSV) following `ESP32 Partition Tables <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/partition-tables.html>`_
 documentation. PlatformIO uses **default partition tables** depending on a
 :ref:`projectconf_env_framework` type:
 
