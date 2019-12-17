@@ -187,9 +187,6 @@ Platforms
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 
-    * - :ref:`platform_samsung_artik`
-      - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
-
     * - :ref:`platform_shakti`
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
@@ -266,9 +263,6 @@ Frameworks
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
-
-    * - :ref:`framework_tizenrt`
-      - Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
@@ -3610,27 +3604,6 @@ SainSmart
       - 84MHz
       - 512KB
       - 96KB
-
-Samsung
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_samsung_artik_artik_053`
-      - :ref:`platform_samsung_artik`
-      - On-board
-      - S5JT200
-      - 320MHz
-      - 8MB
-      - 1.25MB
 
 Seeed
 ~~~~~

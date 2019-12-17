@@ -18,7 +18,6 @@ Frameworks
     :maxdepth: 1
 
     arduino
-    artik-sdk
     cmsis
     esp8266-nonos-sdk
     esp8266-rtos-sdk
@@ -35,6 +34,5 @@ Frameworks
     simba
     spl
     stm32cube
-    tizenrt
     wiringpi
     zephyr

@@ -72,9 +72,6 @@ Platforms
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 
-    * - :ref:`platform_samsung_artik`
-      - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
-
     * - :ref:`platform_shakti`
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
@@ -109,9 +106,6 @@ Frameworks
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
-
-    * - :ref:`framework_tizenrt`
-      - Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
@@ -182,10 +176,3 @@ Boards
       - 320MHz
       - 16MB
       - 16KB
-    * - :ref:`board_samsung_artik_artik_053`
-      - :ref:`platform_samsung_artik`
-      - On-board
-      - S5JT200
-      - 320MHz
-      - 8MB
-      - 1.25MB

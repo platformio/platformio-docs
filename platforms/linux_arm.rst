@@ -75,9 +75,6 @@ Packages
     * - Name
       - Description
 
-    * - `framework-artik-sdk <http://www.artik.io?utm_source=platformio&utm_medium=docs>`__
-      - ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms
-
     * - `framework-wiringpi <http://wiringpi.com?utm_source=platformio&utm_medium=docs>`__
       - GPIO Interface library for the Raspberry Pi
 
@@ -91,9 +88,6 @@ Frameworks
 
     * - Name
       - Description
-
-    * - :ref:`framework_artik-sdk`
-      - ARTIK SDK is a C/C++ SDK targeting Samsung ARTIK platforms. It exposes a set of APIs to ease up development of applications. These APIs cover hardware buses such as GPIO, SPI, I2C, UART, connectivity links like Wi-Fi, Bluetooth, Zigbee, and network protocols such as HTTP, Websockets, MQTT, and others.
 
     * - :ref:`framework_wiringpi`
       - WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino "wiring" system.
@@ -143,59 +137,3 @@ Raspberry Pi
       - 1000MHz
       - 512MB
       - 512MB
-
-RushUp
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_linux_arm_kitra_520`
-      - No
-      - EXYNOS3250
-      - 1000MHz
-      - 4GB
-      - 512MB
-
-Samsung
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_linux_arm_artik_1020`
-      - No
-      - EXYNOS5422
-      - 1500MHz
-      - 16GB
-      - 2GB
-    * - :ref:`board_linux_arm_artik_520`
-      - No
-      - EXYNOS3250
-      - 1000MHz
-      - 4GB
-      - 512MB
-    * - :ref:`board_linux_arm_artik_530`
-      - No
-      - S5P4418
-      - 1200MHz
-      - 4GB
-      - 512MB
-    * - :ref:`board_linux_arm_artik_710`
-      - No
-      - S5P6818
-      - 1400MHz
-      - 4GB
-      - 1GB

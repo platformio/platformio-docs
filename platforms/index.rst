@@ -68,7 +68,6 @@ Embedded
     nordicnrf52
     nxplpc
     riscv_gap
-    samsung_artik
     shakti
     sifive
     siliconlabsefm32
