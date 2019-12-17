@@ -804,6 +804,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_nano33ble`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 960KB
+      - 256KB
     * - :ref:`board_atmelsam_tian`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -2538,6 +2544,13 @@ Arduino
       - 16MHz
       - 7KB
       - 1KB
+    * - :ref:`board_nordicnrf52_nano33ble`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 960KB
+      - 256KB
     * - :ref:`board_atmelavr_nanoatmega168`
       - :ref:`platform_atmelavr`
       - No

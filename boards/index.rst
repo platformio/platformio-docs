@@ -650,6 +650,7 @@ Nordic nRF52
     nordicnrf52/96b_nitrogen
     nordicnrf52/adafruit_feather_nrf52832
     nordicnrf52/adafruit_feather_nrf52840
+    nordicnrf52/nano33ble
     nordicnrf52/laird_bl652_dvk
     nordicnrf52/laird_bl654_dvk
     nordicnrf52/bluey

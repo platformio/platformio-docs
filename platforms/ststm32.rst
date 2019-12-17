@@ -59,6 +59,7 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `zephyr-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
 * `zephyr-cpp-synchronization <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-cpp-synchronization?utm_source=platformio&utm_medium=docs>`_
 * `zephyr-drivers-can <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-drivers-can?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-modules <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-modules?utm_source=platformio&utm_medium=docs>`_
 * `zephyr-subsys-usb-hid-mouse <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-subsys-usb-hid-mouse?utm_source=platformio&utm_medium=docs>`_
 
 Debugging

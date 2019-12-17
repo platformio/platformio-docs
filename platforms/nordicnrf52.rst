@@ -36,6 +36,7 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 * `arduino-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
 * `arduino-bluefruit-bleuart <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-bluefruit-bleuart?utm_source=platformio&utm_medium=docs>`_
 * `arduino-nina-b1-generic-example <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-nina-b1-generic-example?utm_source=platformio&utm_medium=docs>`_
+* `arduino-serial-plotter <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-serial-plotter?utm_source=platformio&utm_medium=docs>`_
 * `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-ble-thermometer?utm_source=platformio&utm_medium=docs>`_
 * `mbed-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
@@ -182,6 +183,11 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_nano33ble`
+      - NRF52840
+      - 64MHz
+      - 960KB
+      - 256KB
     * - :ref:`board_nordicnrf52_bluey`
       - NRF52832
       - 64MHz
@@ -290,6 +296,10 @@ Packages
     * - Name
       - Description
 
+    * - framework-arduino-nrf52-mbedos
+      -
+                
+
     * - `framework-arduinoadafruitnrf52 <https://github.com/adafruit/Adafruit_nRF52_Arduino?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (Nordic nRF52 BLE SoC))
 
@@ -304,6 +314,10 @@ Packages
 
     * - `framework-zephyr-hal-nordic <https://github.com/zephyrproject-rtos/hal_nordic?utm_source=platformio&utm_medium=docs>`__
       - Nordic nRF5x HAL for Zephyr framework
+
+    * - tool-bossac-nordicnrf52
+      -
+                
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
@@ -433,6 +447,25 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
+
+Arduino
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_nano33ble`
+      - External
+      - NRF52840
+      - 64MHz
+      - 960KB
+      - 256KB
 
 Delta
 ~~~~~
