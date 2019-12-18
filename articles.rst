@@ -23,6 +23,7 @@ Here are recent articles/reviews about PlatformIO:
 2019
 ^^^^
 
+* Oct 31, 2019 - **Frank Leon Rose** - `Minimal FreeRTOS with PlatformIO <https://dev.to/frankleonrose/minimal-freertos-with-platformio-2aca>`_
 * Aug 18, 2019 - **Manuel Bleichenbacher** - `Arduino In-circuit Debugging with PlatformIO <https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc>`_
 * Aug 13, 2019 - **Tech Explorations** - `6 reasons why PlatformIO is perhaps the best programming environment for the ESP32 <https://techexplorations.com/guides/esp32/unleashed/tools/>`_
 * Jul 04, 2019 - **Jean-Claude Wippler** - `The PlatformIO command line <https://jeelabs.org/2019/pio-cli/>`_
