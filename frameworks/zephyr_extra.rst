@@ -77,24 +77,47 @@ force CMake generate build configuration for this language.
 options. These application settings are merged with board-specific settings to produce a
 kernel configuration.
 
+Embedding files at compile time
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In case your ``CMakeLists.txt`` relies on using ``generate_inc_*`` functions that are 
+used for generating and compressing individual files (for example certificates for secure
+connections) you need to configure your PlatformIO project accordingly using the
+following structure:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    framework = zephyr
+    board_build.embed_files =
+        # files to be embedded
+        src/apps-cert.der
+        src/apps-key.der
+
+Where ``apps-cert.der`` and ``apps-key.der`` are the files you want to embed to your
+project at the compile time.
+
 Zephyr modules
 ~~~~~~~~~~~~~~
 
+.. note::
+    PlatformIO automatically installs several default modules used with Zephyr framework
+    including modules that implement silicon vendor Hardware Abstraction Layers (HALs).
+
 Zephyr modules are externally maintained packages that allow using well-established
-and mature code created by third party developers. By default PlatformIO only handles
-modules that implement silicon vendor Hardware Abstraction Layers (HALs). Other parts
-like File Systems, Inter-Process Communication (IPC) libraries, etc can be manually
-added to the build process as external packages.
+and mature code created by third party developers.
 
 These modules contain either a single ``module.yml`` file or ``CMakeLists.txt`` and
 ``Kconfig`` files that describe how to build and configure them. You can specify paths
-to additional directories with source code, Kconfig, etc. using ``ZEPHYR_MODULES`` at
-the top of your project's  ``CMakeLists.txt`` file, for example:
+to additional directories with source code, Kconfig, etc. using ``ZEPHYR_EXTRA_MODULES``
+at the top of your project's  ``CMakeLists.txt`` file, for example:
 
 .. code-block:: bash
 
     # Additional modules 
-    set(ZEPHYR_MODULES ${ZEPHYR_MODULES} "path/to-zephyr-custom-module"  [...])
+    set(ZEPHYR_EXTRA_MODULES "path/to-zephyr-custom-module"  [...])
 
     # Boilerplate code, which pulls in the Zephyr build system.
     cmake_minimum_required(VERSION 3.13.1)
@@ -110,7 +133,7 @@ characters (see ``CMAKE_OBJECT_PATH_MAX``) it might be a good idea to keep modul
 to the project configuration files (e.g. in ``zephyr`` folder) in form of a git submodule.
 
 .. warning::
-    Make sure the ``ZEPHYR_MODULES`` variable is set before including the boilerplate
+    Make sure the ``ZEPHYR_EXTRA_MODULES`` variable is set before including the boilerplate
     file, as shown above.
     
 
@@ -121,4 +144,4 @@ At the moment several limitations are present:
 
 * The minimum supported version of Python is ``3.4``
 * No whitespace characters allowed in project paths.
-
+* OpenThread module is not supported
