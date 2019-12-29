@@ -26,7 +26,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Microcontroller**
     - STM32G474RET6
   * - **Frequency**
-    - 17MHz
+    - 170MHz
   * - **Flash**
     - 512KB
   * - **RAM**
@@ -61,7 +61,7 @@ board manifest `nucleo_g474re.json <https://github.com/platformio/platform-ststm
   board_build.mcu = stm32g474ret6
 
   ; change MCU frequency
-  board_build.f_cpu = 17000000L
+  board_build.f_cpu = 170000000L
 
 
 Uploading
