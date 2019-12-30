@@ -401,6 +401,18 @@ You do not need to use/buy external debug probe.
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_sifive_sparkfun_redboard`
+      - :ref:`platform_sifive`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_sparkfun_thing_plus`
+      - :ref:`platform_sifive`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
     * - :ref:`board_nordicnrf51_vbluno51`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -525,9 +537,9 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - STM32G071RBT6
-      - 24MHz
-      - 2MB
+      - 64MHz
       - 128KB
+      - 36KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -1176,9 +1188,9 @@ ST
       - :ref:`platform_ststm32`
       - External
       - STM32G071RBT6
-      - 24MHz
-      - 2MB
+      - 64MHz
       - 128KB
+      - 36KB
     * - :ref:`board_ststm32_disco_f411ve`
       - :ref:`platform_ststm32`
       - On-board
@@ -1487,6 +1499,34 @@ Silicon Labs
       - 25MHz
       - 64KB
       - 8KB
+
+SparkFun
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_sifive_sparkfun_redboard`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_sparkfun_thing_plus`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
 
 VNG
 ~~~

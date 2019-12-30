@@ -31,10 +31,10 @@ Examples
 
 Examples are listed from `TI TIVA development platform repository <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
 * `libopencm3-blink <https://github.com/platformio/platform-titiva/tree/master/examples/libopencm3-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
 * `native-blink <https://github.com/platformio/platform-titiva/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

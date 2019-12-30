@@ -1090,28 +1090,28 @@ Boards
       - :ref:`platform_ststm32`
       - External
       - STM32G071RBT6
-      - 24MHz
-      - 2MB
+      - 64MHz
       - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - :ref:`platform_ststm32`
       - External
       - STM32G431KBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - :ref:`platform_ststm32`
       - External
       - STM32G431RBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
       - External
       - STM32G474RET6
-      - 17MHz
+      - 170MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_olimexino`

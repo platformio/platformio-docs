@@ -373,6 +373,7 @@ Espressif 32
     espressif32/pycom_gpy
     espressif32/lopy
     espressif32/lopy4
+    espressif32/qchip
     espressif32/wesp32
     espressif32/esp32thing
     espressif32/sparkfun_lora_gateway_1-channel
@@ -472,6 +473,7 @@ GigaDevice GD32V
         
     gd32v/gd32vf103v-eval
     gd32v/sipeed-longan-nano
+    gd32v/sipeed-longan-nano-lite
     gd32v/wio_lite_risc-v
 
 Infineon XMC
@@ -744,6 +746,8 @@ SiFive
     sifive/hifive-unleashed
     sifive/hifive1
     sifive/hifive1-revb
+    sifive/sparkfun_redboard
+    sifive/sparkfun_thing_plus
 
 Silicon Labs EFM32
 ------------------

@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_ttgo-lora32-v1:
+.. _board_espressif32_qchip:
 
-TTGO LoRa32-OLED V1
-===================
+Qchip
+=====
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `TTGO <https://github.com/Xinyuan-LilyGO/TTGO-LoRa-Series?utm_source=platformio&utm_medium=docs>`__
+    - `Qmobot LLP <http://qmobot.com/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``ttgo-lora32-v1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``qchip`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ttgo-lora32-v1]
+  [env:qchip]
   platform = espressif32
-  board = ttgo-lora32-v1
+  board = qchip
 
-You can override default TTGO LoRa32-OLED V1 settings per build environment using
+You can override default Qchip settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ttgo-lora32-v1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/ttgo-lora32-v1.json>`_. For example,
+board manifest `qchip.json <https://github.com/platformio/platform-espressif32/blob/master/boards/qchip.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ttgo-lora32-v1]
+  [env:qchip]
   platform = espressif32
-  board = ttgo-lora32-v1
+  board = qchip
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,19 +66,10 @@ board manifest `ttgo-lora32-v1.json <https://github.com/platformio/platform-espr
 
 Uploading
 ---------
-TTGO LoRa32-OLED V1 supports the next uploading protocols:
+Qchip supports the next uploading protocols:
 
-* ``esp-prog``
 * ``espota``
 * ``esptool``
-* ``iot-bus-jtag``
-* ``jlink``
-* ``minimodule``
-* ``olimex-arm-usb-ocd``
-* ``olimex-arm-usb-ocd-h``
-* ``olimex-arm-usb-tiny-h``
-* ``olimex-jtag-tiny``
-* ``tumpa``
 
 Default protocol is ``esptool``
 
@@ -86,60 +77,15 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:ttgo-lora32-v1]
+  [env:qchip]
   platform = espressif32
-  board = ttgo-lora32-v1
+  board = qchip
 
   upload_protocol = esptool
 
 Debugging
 ---------
-
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
-
-.. warning::
-    You will need to install debug tool drivers depending on your system.
-    Please click on compatible debug tool below for the further
-    instructions and configuration information.
-
-You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
-
-TTGO LoRa32-OLED V1 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
-
-.. list-table::
-  :header-rows:  1
-
-  * - Compatible Tools
-    - On-board
-    - Default
-  * - :ref:`debugging_tool_esp-prog`
-    - 
-    - Yes
-  * - :ref:`debugging_tool_iot-bus-jtag`
-    - 
-    - 
-  * - :ref:`debugging_tool_jlink`
-    - 
-    - 
-  * - :ref:`debugging_tool_minimodule`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
-  * - :ref:`debugging_tool_tumpa`
-    - 
-    - 
+:ref:`piodebug` currently does not support Qchip board.
 
 Frameworks
 ----------

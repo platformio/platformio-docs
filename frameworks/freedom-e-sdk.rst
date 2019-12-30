@@ -88,6 +88,18 @@ You do not need to use/buy external debug probe.
       - 320MHz
       - 16MB
       - 16KB
+    * - :ref:`board_sifive_sparkfun_redboard`
+      - :ref:`platform_sifive`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_sparkfun_thing_plus`
+      - :ref:`platform_sifive`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
 
 
 Examples
@@ -142,6 +154,34 @@ SiFive
       - 16MB
       - 16KB
     * - :ref:`board_sifive_hifive1-revb`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+
+SparkFun
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_sifive_sparkfun_redboard`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_sparkfun_thing_plus`
       - :ref:`platform_sifive`
       - On-board
       - FE310

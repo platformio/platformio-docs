@@ -31,9 +31,9 @@ Examples
 
 Examples are listed from `Intel MCS-51 (8051) development platform repository <https://github.com/platformio/platform-intel_mcs51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `stc-header <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-header?utm_source=platformio&utm_medium=docs>`_
 * `native-blink <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
 * `stc-blink <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-blink?utm_source=platformio&utm_medium=docs>`_
-* `stc-header <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-header?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------

@@ -9,88 +9,84 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_ttgo-lora32-v1:
+.. _board_gd32v_sipeed-longan-nano-lite:
 
-TTGO LoRa32-OLED V1
-===================
+Sipeed Longan Nano Lite
+=======================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+Platform :ref:`platform_gd32v`: The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
 
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32
+    - GD32VF103C8T6
   * - **Frequency**
-    - 240MHz
+    - 108MHz
   * - **Flash**
-    - 4MB
+    - 64KB
   * - **RAM**
-    - 320KB
+    - 20KB
   * - **Vendor**
-    - `TTGO <https://github.com/Xinyuan-LilyGO/TTGO-LoRa-Series?utm_source=platformio&utm_medium=docs>`__
+    - `Sipeed <https://www.sipeed.com/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``ttgo-lora32-v1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sipeed-longan-nano-lite`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ttgo-lora32-v1]
-  platform = espressif32
-  board = ttgo-lora32-v1
+  [env:sipeed-longan-nano-lite]
+  platform = gd32v
+  board = sipeed-longan-nano-lite
 
-You can override default TTGO LoRa32-OLED V1 settings per build environment using
+You can override default Sipeed Longan Nano Lite settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ttgo-lora32-v1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/ttgo-lora32-v1.json>`_. For example,
+board manifest `sipeed-longan-nano-lite.json <https://github.com/sipeed/platform-gd32v/blob/master/boards/sipeed-longan-nano-lite.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ttgo-lora32-v1]
-  platform = espressif32
-  board = ttgo-lora32-v1
+  [env:sipeed-longan-nano-lite]
+  platform = gd32v
+  board = sipeed-longan-nano-lite
 
   ; change microcontroller
-  board_build.mcu = esp32
+  board_build.mcu = GD32VF103C8T6
 
   ; change MCU frequency
-  board_build.f_cpu = 240000000L
+  board_build.f_cpu = 108000000L
 
 
 Uploading
 ---------
-TTGO LoRa32-OLED V1 supports the next uploading protocols:
+Sipeed Longan Nano Lite supports the next uploading protocols:
 
-* ``esp-prog``
-* ``espota``
-* ``esptool``
-* ``iot-bus-jtag``
+* ``altera-usb-blaster``
+* ``gd-link``
 * ``jlink``
-* ``minimodule``
-* ``olimex-arm-usb-ocd``
-* ``olimex-arm-usb-ocd-h``
-* ``olimex-arm-usb-tiny-h``
-* ``olimex-jtag-tiny``
-* ``tumpa``
+* ``rv-link``
+* ``serial``
+* ``sipeed-rv-debugger``
+* ``um232h``
 
-Default protocol is ``esptool``
+Default protocol is ``serial``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:ttgo-lora32-v1]
-  platform = espressif32
-  board = ttgo-lora32-v1
+  [env:sipeed-longan-nano-lite]
+  platform = gd32v
+  board = sipeed-longan-nano-lite
 
-  upload_protocol = esptool
+  upload_protocol = serial
 
 Debugging
 ---------
@@ -105,7 +101,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-TTGO LoRa32-OLED V1 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Sipeed Longan Nano Lite does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -113,31 +109,22 @@ TTGO LoRa32-OLED V1 does not have on-board debug probe and **IS NOT READY** for 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_esp-prog`
+  * - :ref:`debugging_tool_altera-usb-blaster`
     - 
     - Yes
-  * - :ref:`debugging_tool_iot-bus-jtag`
+  * - :ref:`debugging_tool_gd-link`
     - 
     - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
-  * - :ref:`debugging_tool_minimodule`
+  * - :ref:`debugging_tool_rv-link`
     - 
     - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
+  * - :ref:`debugging_tool_sipeed-rv-debugger`
     - 
     - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
-  * - :ref:`debugging_tool_tumpa`
+  * - :ref:`debugging_tool_um232h`
     - 
     - 
 
@@ -152,5 +139,5 @@ Frameworks
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
-    * - :ref:`framework_espidf`
-      - Espressif IoT Development Framework. Official development framework for ESP32.
+    * - :ref:`framework_gd32vf103-sdk`
+      - GigaDevice GD32VF103 Firmware Library (SDK)

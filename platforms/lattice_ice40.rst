@@ -31,8 +31,8 @@ Examples
 
 Examples are listed from `Lattice iCE40 development platform repository <https://github.com/platformio/platform-lattice_ice40/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `counter <https://github.com/platformio/platform-lattice_ice40/tree/master/examples/counter?utm_source=platformio&utm_medium=docs>`_
 * `leds <https://github.com/platformio/platform-lattice_ice40/tree/master/examples/leds?utm_source=platformio&utm_medium=docs>`_
+* `counter <https://github.com/platformio/platform-lattice_ice40/tree/master/examples/counter?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------

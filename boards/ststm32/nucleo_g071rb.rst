@@ -26,11 +26,11 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Microcontroller**
     - STM32G071RBT6
   * - **Frequency**
-    - 24MHz
+    - 64MHz
   * - **Flash**
-    - 2MB
-  * - **RAM**
     - 128KB
+  * - **RAM**
+    - 36KB
   * - **Vendor**
     - `ST <https://www.st.com/en/evaluation-tools/nucleo-g071rb.html?utm_source=platformio&utm_medium=docs>`__
 
@@ -61,7 +61,7 @@ board manifest `nucleo_g071rb.json <https://github.com/platformio/platform-ststm
   board_build.mcu = stm32g071rbt6
 
   ; change MCU frequency
-  board_build.f_cpu = 24000000L
+  board_build.f_cpu = 64000000L
 
 
 Uploading

@@ -31,12 +31,12 @@ Examples
 
 Examples are listed from `ST STM8 development platform repository <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `spl-blink <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-blink?utm_source=platformio&utm_medium=docs>`_
 * `arduino-fade-all-pins <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-fade-all-pins?utm_source=platformio&utm_medium=docs>`_
+* `spl-uart <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart?utm_source=platformio&utm_medium=docs>`_
+* `spl-flash <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-flash?utm_source=platformio&utm_medium=docs>`_
 * `arduino-internal-lib <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-internal-lib?utm_source=platformio&utm_medium=docs>`_
 * `arduino-ping-hc04 <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-ping-hc04?utm_source=platformio&utm_medium=docs>`_
-* `spl-blink <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-blink?utm_source=platformio&utm_medium=docs>`_
-* `spl-flash <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-flash?utm_source=platformio&utm_medium=docs>`_
-* `spl-uart <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

@@ -32,14 +32,14 @@ Examples
 Examples are listed from `NXP LPC development platform repository <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
 * `mbed-blink <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-custom-target <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-custom-target?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos-ethernet <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-nxplpc/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-custom-target <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-custom-target?utm_source=platformio&utm_medium=docs>`_
 * `zephyr-drivers-watchdog <https://github.com/platformio/platform-nxplpc/tree/master/examples/zephyr-drivers-watchdog?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-ethernet <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
 * `zephyr-synchronization <https://github.com/platformio/platform-nxplpc/tree/master/examples/zephyr-synchronization?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
@@ -276,8 +276,47 @@ Packages
     * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio&utm_medium=docs>`__
       - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
 
+    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module CivetWeb Embedded C/C++ web server
+
+    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for FATFS filesystem
+
     * - `framework-zephyr-hal-nxp <https://github.com/zephyrproject-rtos/hal_nxp?utm_source=platformio&utm_medium=docs>`__
       - NXP HAL for Zephyr framework
+
+    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for HAL abstraction layer used by open-amp
+
+    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for littlefs filesystem
+
+    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
+
+    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls?utm_source=platformio&utm_medium=docs>`__
+      - mbedTLS module for Zephyr
+
+    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for mcumgr management library for 32-bit MCUs
+
+    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for MIPI System Software Trace
+
+    * - `framework-zephyr-nffs <https://github.com/zephyrproject-rtos/nffs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for the Newtron Flash File System
+
+    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
+
+    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread?utm_source=platformio&utm_medium=docs>`__
+      - OpenThread module for Zephyr
+
+    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Segger RTT
+
+    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Concise Binary Object Representation Library
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
