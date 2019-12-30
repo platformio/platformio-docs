@@ -66,7 +66,7 @@ packages.
 Manifest File ``platform.json``
 -------------------------------
 
-Eack platform definition includes a *manifest file* with a particular
+Each platform definition includes a *manifest file* with a particular
 format that is parsed by PlatformIO when handling projects using that
 platform.
 
