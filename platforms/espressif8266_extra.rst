@@ -439,7 +439,9 @@ For the full list with available options please run
 
 .. code-block:: bash
 
-    ~/.platformio/packages/tool-espotapy/espota.py --help
+    ~/.platformio/packages/framework-arduinoespressif8266/tools/espota.py --help
+
+    Usage: espota.py [options]
 
     Transmit image over the air to the esp8266 module with OTA support.
 
@@ -469,8 +471,6 @@ For the full list with available options please run
       Output:
         -d, --debug         Show debug output. And override loglevel with debug.
         -r, --progress      Show progress output. Does not work for ArduinoIDE
-        -t TIMEOUT, --timeout=TIMEOUT
-                            Timeout to wait for the ESP8266 to accept invitation
 
 Demo
 ~~~~
