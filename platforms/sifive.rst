@@ -101,12 +101,12 @@ You do not need to use/buy external debug probe.
       - 320MHz
       - 16MB
       - 16KB
-    * - :ref:`board_sifive_sparkfun_redboard`
+    * - :ref:`board_sifive_sparkfun_redboard_v`
       - FE310
       - 320MHz
       - 16MB
       - 16KB
-    * - :ref:`board_sifive_sparkfun_thing_plus`
+    * - :ref:`board_sifive_sparkfun_thing_plus_v`
       - FE310
       - 320MHz
       - 16MB
@@ -303,13 +303,13 @@ SparkFun
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_sifive_sparkfun_redboard`
+    * - :ref:`board_sifive_sparkfun_redboard_v`
       - On-board
       - FE310
       - 320MHz
       - 16MB
       - 16KB
-    * - :ref:`board_sifive_sparkfun_thing_plus`
+    * - :ref:`board_sifive_sparkfun_thing_plus_v`
       - On-board
       - FE310
       - 320MHz

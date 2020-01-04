@@ -746,8 +746,8 @@ SiFive
     sifive/hifive-unleashed
     sifive/hifive1
     sifive/hifive1-revb
-    sifive/sparkfun_redboard
-    sifive/sparkfun_thing_plus
+    sifive/sparkfun_redboard_v
+    sifive/sparkfun_thing_plus_v
 
 Silicon Labs EFM32
 ------------------

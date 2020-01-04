@@ -2644,27 +2644,20 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_sifive_sparkfun_redboard`
+    * - :ref:`board_sifive_sparkfun_redboard_v`
       - :ref:`platform_sifive`
       - On-board
       - FE310
       - 320MHz
       - 16MB
       - 16KB
-    * - :ref:`board_sifive_sparkfun_thing_plus`
+    * - :ref:`board_sifive_sparkfun_thing_plus_v`
       - :ref:`platform_sifive`
       - On-board
       - FE310
       - 320MHz
       - 16MB
       - 16KB
-    * - :ref:`board_atmelavr_sparkfun_redboard`
-      - :ref:`platform_atmelavr`
-      - No
-      - ATMEGA328P
-      - 16MHz
-      - 31.50KB
-      - 2KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - External

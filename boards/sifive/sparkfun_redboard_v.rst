@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_sifive_sparkfun_thing_plus:
+.. _board_sifive_sparkfun_redboard_v:
 
-SparkFun RED-V Thing Plus
-=========================
+SparkFun RED-V RedBoard
+=======================
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_sifive`: SiFive brings the power of open source and soft
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `SparkFun <https://www.sparkfun.com/products/15799?utm_source=platformio&utm_medium=docs>`__
+    - `SparkFun <https://www.sparkfun.com/products/15594?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``sparkfun_thing_plus`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sparkfun_redboard_v`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:sparkfun_thing_plus]
+  [env:sparkfun_redboard_v]
   platform = sifive
-  board = sparkfun_thing_plus
+  board = sparkfun_redboard_v
 
-You can override default SparkFun RED-V Thing Plus settings per build environment using
+You can override default SparkFun RED-V RedBoard settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `sparkfun_thing_plus.json <https://github.com/platformio/platform-sifive/blob/master/boards/sparkfun_thing_plus.json>`_. For example,
+board manifest `sparkfun_redboard_v.json <https://github.com/platformio/platform-sifive/blob/master/boards/sparkfun_redboard_v.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:sparkfun_thing_plus]
+  [env:sparkfun_redboard_v]
   platform = sifive
-  board = sparkfun_thing_plus
+  board = sparkfun_redboard_v
 
   ; change microcontroller
   board_build.mcu = fe310
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-SparkFun RED-V Thing Plus has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+SparkFun RED-V RedBoard has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1

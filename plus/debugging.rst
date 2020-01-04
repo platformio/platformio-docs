@@ -3982,14 +3982,14 @@ SparkFun
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_sifive_sparkfun_redboard`
+    * - :ref:`board_sifive_sparkfun_redboard_v`
       - :ref:`platform_sifive`
       - On-board
       - FE310
       - 320MHz
       - 16MB
       - 16KB
-    * - :ref:`board_sifive_sparkfun_thing_plus`
+    * - :ref:`board_sifive_sparkfun_thing_plus_v`
       - :ref:`platform_sifive`
       - On-board
       - FE310
