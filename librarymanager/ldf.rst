@@ -184,12 +184,12 @@ it evaluates `C/C++ Preprocessor conditional syntax <https://gcc.gnu.org/onlined
 
 .. code-block:: c
 
-    #ifdef PROJECT_VERSION
+    #ifdef MY_PROJECT_VERSION
     // include common file for the project
     #include "my_common.h"
     #endif
 
-    #if PROJECT_VERSION < 10
+    #if MY_PROJECT_VERSION < 10
     // this include will be ignored because does not satisfy condition above
     #include "my_old.h"
     #endif
