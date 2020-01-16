@@ -77,10 +77,21 @@ Install Python Interpreter
 :ref:`piocore` is written in `Python <https://www.python.org/downloads/>`_ that
 is installed by default on the all popular OS except Windows.
 
-**Windows Users**, please `Download the latest Python <https://www.python.org/downloads/>`_
-and install it. **DON'T FORGET** to select ``Add Python to Path`` (see below), otherwise, ``python`` command will not be available.
+Please navigate to official website and `Download the latest Python <https://www.python.org/downloads/>`_
+and install it. Please **READ NOTES BELOW**.
 
-.. image:: _static/images/python-installer-add-path.png
+:macOS:
+  Please read the "Important Information" displayed during installation for information
+  about SSL/TLS certificate validation and the running the **"Install Certificates.command"**.
+
+  If you do not install SSL/TLS certificates, PlatformIO will not be able to download
+  dependent packages, libraries, and toolchains.
+
+:Windows:
+  Please select ``Add Python to Path`` (see below), otherwise, ``python`` command will
+  not be available.
+
+  .. image:: _static/images/python-installer-add-path.png
 
 .. _faq_convert_ino_to_cpp:
 
