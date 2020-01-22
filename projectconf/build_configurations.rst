@@ -30,6 +30,10 @@ PlatformIO:
   debugging, because the relationship between source code and generated
   instructions is more complex.
 
+.. note::
+  If you need to control build flags that are specific for debug configuration please 
+  refer to :ref:`projectconf_debug_build_flags`.
+
 If you need to build a project in ``debug`` configuration, please use one of
 these options:
 

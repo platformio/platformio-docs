@@ -146,6 +146,10 @@ Examples:
     ; PlatformIO will not cache objects
     build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
 
+.. note::
+  If you need to control build flags that are specific for debug configuration please 
+  refer to :ref:`projectconf_debug_build_flags`.
+
 Built-in Variables
 ''''''''''''''''''
 
