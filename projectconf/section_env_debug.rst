@@ -49,7 +49,7 @@ See available tools in :ref:`debugging_tools`.
 
 .. versionadded:: 4.1.1
 
-Type: ``String`` | Multiple: ``Yes``
+Type: ``String`` | Multiple: ``Yes`` | Default: ``-Og -g2 -ggdb2``
 
 These flags/options affect the preprocessing, compilation, assembly
 and linking processes for C and C++ code.
