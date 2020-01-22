@@ -427,23 +427,24 @@ should be installed in a system. To update Arduino Core to the latest revision,
 please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
 
 1.  Please install :ref:`pioide`
-2.  Initialize a new project, open :ref:`projectconf` and set
-    :ref:`projectconf_env_platform` to
-    ``https://github.com/platformio/platform-espressif32.git#feature/stage``.
+2.  Initialize a new project, open :ref:`projectconf` and specify the link to the 
+    framework repository in :ref:`projectconf_env_platform_packages` section.
     For example,
 
     .. code-block:: ini
 
         [env:esp32dev]
-        platform = https://github.com/platformio/platform-espressif32.git#feature/stage
+        platform = espressif32
         board = esp32dev
         framework = arduino
+        platform_packages =
+            framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git
 
-3.  Try to build project
+3.  Try to build the project
 4.  If you see build errors, then try to build this project using the same
     ``stage`` with Arduino IDE
 5.  If it works with Arduino IDE but doesn't work with PlatformIO, then please
-    `file new issue <https://github.com/platformio/platform-espressif32/issuess>`_
+    `file a new issue <https://github.com/platformio/platform-espressif32/issuess>`_
     with attached information:
 
     - test project/files
