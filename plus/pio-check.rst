@@ -92,6 +92,7 @@ process can be found on these pages:
 
   check-tools/cppcheck
   check-tools/clang-tidy
+  check-tools/pvs-studio
 
 .. _check_severity:
 
