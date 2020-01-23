@@ -20,9 +20,15 @@ Articles about us
 
 Here are recent articles/reviews about PlatformIO:
 
+2020
+^^^^
+
+* Jan 15, 2020 - **Ivan Kravets, CEO of PlatformIO** - `Next-generation IDE for your RISC-V Product in 20 Minutes <https://www.youtube.com/watch?v=0eYDKION0Bs>`_
+
 2019
 ^^^^
 
+* Dec 29, 2019 - **Andri Yadi** - `AI-Powered Magic Wand <https://www.hackster.io/andri/ai-powered-magic-wand-ab1c90>`_
 * Oct 31, 2019 - **Frank Leon Rose** - `Minimal FreeRTOS with PlatformIO <https://dev.to/frankleonrose/minimal-freertos-with-platformio-2aca>`_
 * Aug 18, 2019 - **Manuel Bleichenbacher** - `Arduino In-circuit Debugging with PlatformIO <https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc>`_
 * Aug 13, 2019 - **Tech Explorations** - `6 reasons why PlatformIO is perhaps the best programming environment for the ESP32 <https://techexplorations.com/guides/esp32/unleashed/tools/>`_
