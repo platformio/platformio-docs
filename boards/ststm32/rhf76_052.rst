@@ -26,7 +26,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Microcontroller**
     - STM32L051C8T6
   * - **Frequency**
-    - 84MHz
+    - 32MHz
   * - **Flash**
     - 64KB
   * - **RAM**
@@ -61,7 +61,7 @@ board manifest `rhf76_052.json <https://github.com/platformio/platform-ststm32/b
   board_build.mcu = stm32l051c8t6
 
   ; change MCU frequency
-  board_build.f_cpu = 84000000L
+  board_build.f_cpu = 32000000L
 
 
 Uploading

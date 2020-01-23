@@ -1160,7 +1160,7 @@ Boards
       - :ref:`platform_ststm32`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`

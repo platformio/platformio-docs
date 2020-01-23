@@ -1245,7 +1245,7 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_rhf76_052`
       - :ref:`platform_ststm32`
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_atmelsam_sodaq_autonomo`
@@ -1553,7 +1553,7 @@ Please click on board name for the further details.
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - MKL26Z64
@@ -6222,7 +6222,7 @@ ST
       - :ref:`platform_ststm32`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_disco_f746ng`
@@ -7190,7 +7190,7 @@ Teensy
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - External

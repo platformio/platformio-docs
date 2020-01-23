@@ -754,7 +754,7 @@ Please click on board name for the further details.
       - 32KB
     * - :ref:`board_ststm32_rhf76_052`
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_olimex_e407`
@@ -1887,7 +1887,7 @@ ST
     * - :ref:`board_ststm32_rhf76_052`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_disco_f334c8`

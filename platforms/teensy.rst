@@ -97,7 +97,7 @@ Please click on board name for the further details.
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - MKL26Z64
       - 48MHz
@@ -252,7 +252,7 @@ Teensy
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - External
       - MKL26Z64

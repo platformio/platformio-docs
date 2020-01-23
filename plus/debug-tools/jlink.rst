@@ -1759,7 +1759,7 @@ Boards
       - :ref:`platform_ststm32`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
@@ -2748,7 +2748,7 @@ Boards
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - External
