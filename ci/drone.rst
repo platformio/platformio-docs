@@ -36,7 +36,28 @@ configured to build project on a range of different :ref:`platforms`.
 Integration
 -----------
 
-Please fill all fields for your project in the Drone control panel:
+There are two possible ways of running PlatformIO in CI services:
+
+Using :ref:`cmd_run` command
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This variant is default choice for native PlatformIO projects (Please fill all
+fields for your project in the Drone control panel):
+
+`Commands`:
+
+.. code-block:: bash
+
+    pip install -U platformio
+    platformio run /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
+
+
+Using :ref:`cmd_ci` command
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This variant is more convenient when project is written as a library (when there are
+examples or testing code) as it has additional options for specifying extra libraries
+and boards from command line interface:
 
 `Environment Variables`:
 
@@ -54,9 +75,6 @@ Please fill all fields for your project in the Drone control panel:
     platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 .. image:: ../_static/images/droneci-platformio-integration-1.png
-
-For more details as for PlatformIO build process please look into :ref:`cmd_ci`
-command.
 
 Examples
 --------

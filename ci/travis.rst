@@ -56,7 +56,40 @@ guides first.
     guide.
 
 PlatformIO is written in Python and is recommended to be run within
-`Travis CI Python isolated environment <http://docs.travis-ci.com/user/languages/python/#Travis-CI-Uses-Isolated-virtualenvs>`_:
+`Travis CI Python isolated environment <http://docs.travis-ci.com/user/languages/python/#Travis-CI-Uses-Isolated-virtualenvs>`_. There are two possible ways of running
+PlatformIO in CI services:
+
+Using :ref:`cmd_run` command
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This variant is default choice for native PlatformIO projects:
+
+.. code-block:: yaml
+
+    language: python
+    python:
+        - "2.7"
+
+    # Cache PlatformIO packages using Travis CI container-based infrastructure
+    sudo: false
+    cache:
+        directories:
+            - "~/.platformio"
+
+    install:
+        - pip install -U platformio
+        - platformio update
+
+    script:
+        - platformio run /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
+
+
+Using :ref:`cmd_ci` command
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This variant is more convenient when project is written as a library (when there are
+examples or testing code) as it has additional options for specifying extra libraries
+and boards from command line interface:
 
 .. code-block:: yaml
 
@@ -83,19 +116,6 @@ PlatformIO is written in Python and is recommended to be run within
         - platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Then perform steps 1, 2 and 4 from http://docs.travis-ci.com/user/getting-started/
-
-For more details as for PlatformIO build process please look into :ref:`cmd_ci`.
-
-Project as a library
---------------------
-
-When project is written as a library (where own examples or testing code use
-it), please use ``--lib="."`` option for :ref:`cmd_ci` command
-
-.. code-block:: yaml
-
-    script:
-        - platformio ci --lib="." --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Library dependencies
 --------------------

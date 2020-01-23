@@ -40,8 +40,34 @@ different :ref:`platforms`.
 Integration
 -----------
 
-Please put ``shippable.yml`` or ``.travis.yml`` to the root directory of the
-GitHub repository.
+Put ``shippable.yml`` or ``.travis.yml`` to the root directory of your repository. The
+contents of this file depends on the project you want to add. There are two possible
+ways of running PlatformIO in CI services:
+
+Using :ref:`cmd_run` command
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This variant is default choice for native PlatformIO projects:
+
+.. code-block:: yaml
+
+    language: python
+    python:
+        - "2.7"
+
+    install:
+        - pip install -U platformio
+
+    script:
+        - platformio run /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
+
+
+Using :ref:`cmd_ci` command
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This variant is more convenient when project is written as a library (when there are
+examples or testing code) as it has additional options for specifying extra libraries
+and boards from command line interface:
 
 .. code-block:: yaml
 
@@ -60,9 +86,6 @@ GitHub repository.
     script:
         - platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
-
-For more details as for PlatformIO build process please look into :ref:`cmd_ci`
-command.
 
 Examples
 --------

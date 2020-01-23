@@ -35,8 +35,46 @@ it will try to build the project using :ref:`cmd_ci` command.
 Integration
 -----------
 
-Please make sure to read GitHub Actions `Getting Started <https://help.github.com/en/actions/automating-your-workflow-with-github-actions/getting-started-with-github-actions>`_
-guide first.
+.. note::
+    Please make sure to read GitHub Actions `Getting Started <https://help.github.com/en/actions/automating-your-workflow-with-github-actions/getting-started-with-github-actions>`_
+    guide first.
+
+There are two possible ways of running PlatformIO in CI services:
+
+Using :ref:`cmd_run` command
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This variant is default choice for native PlatformIO projects:
+
+.. code-block:: yaml
+
+    name: PlatformIO CI
+
+    on: [push]
+
+    jobs:
+      build:
+
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v1
+        - name: Set up Python
+          uses: actions/setup-python@v1
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install platformio
+        - name: Run PlatformIO
+          run: platformio run /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
+
+
+Using :ref:`cmd_ci` command
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This variant is more convenient when project is written as a library (when there are
+examples or testing code) as it has additional options for specifying extra libraries
+and boards from command line interface:
 
 .. code-block:: yaml
 
@@ -65,17 +103,6 @@ guide first.
           env:
             PLATFORMIO_CI_SRC: ${{ matrix.example }}
 
-For more details as for PlatformIO build process please look into :ref:`cmd_ci`.
-
-Project as a library
-~~~~~~~~~~~~~~~~~~~~
-
-When project is written as a library (where own examples or testing code use
-it), please use ``--lib="."`` option for :ref:`cmd_ci` command
-
-.. code-block:: yaml
-
-    run: platformio ci --lib="." --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Library dependencies
 ~~~~~~~~~~~~~~~~~~~~
