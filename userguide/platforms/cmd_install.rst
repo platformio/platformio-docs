@@ -57,6 +57,11 @@ Do not install specified package (or alias)
 Skip default packages
 
 .. option::
+    --with-all-packages
+
+Install all declared packages in ``platform.json``
+
+.. option::
     -f, --force
 
 Reinstall/redownload development platform and its packages if they exist
