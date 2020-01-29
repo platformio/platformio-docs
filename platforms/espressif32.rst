@@ -817,6 +817,25 @@ IntoRobot
       - 4MB
       - 320KB
 
+IoTaaP
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_iotaap_magnolia`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 M5Stack
 ~~~~~~~
 
@@ -873,25 +892,6 @@ MH-ET Live
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_mhetesp32minikit`
-      - External
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-
-MVT Solutions
-~~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_espressif32_iotaap_magnolia`
       - External
       - ESP32
       - 240MHz
