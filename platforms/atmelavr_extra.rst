@@ -283,14 +283,11 @@ Custom bootloader and corresponding fuses should be specified in :ref:`projectco
     board = uno
 
     board_bootloader.file = /path/to/custom/bootloader.hex
-    board_bootloader.low_fuses = 0xFF
-    board_bootloader.high_fuses = 0xDE
-    board_bootloader.extended_fuses = 0xFD
+    board_bootloader.lfuse = 0xFF
+    board_bootloader.hfuse = 0xDE
+    board_bootloader.efuse = 0xFD
     board_bootloader.lock_bits = 0x0F
     board_bootloader.unlock_bits = 0x3F
-
-
-https://github.com/MCUdude/platformio-docs
 
 ``MiniCore``, ``MegaCore`` and ``MightyCore`` have a wide variety of precompiled bootloaders. Bootloader binary is dynamically selected according to the hardware parameters: ``f_cpu``, ``oscillator``, ``upload_speed``:
 
