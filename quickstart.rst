@@ -22,10 +22,10 @@ to work with the multiple development platforms and embedded boards.
 Setting Up the Project
 ----------------------
 
-:ref:`piocore` provides special :ref:`cmd_init` command for configuring your projects.
+:ref:`piocore` provides special :ref:`cmd_project_init` command for configuring your projects.
 It allows one to initialize new empty project or update existing with the new data.
 
-What is more, :ref:`cmd_init` can be used for :ref:`ide`. It means that you will
+What is more, :ref:`cmd_project_init` can be used for :ref:`ide`. It means that you will
 be able to import pre-generated PlatformIO project using favorite IDE and
 extend it with the professional instruments for IoT development.
 
@@ -55,7 +55,7 @@ platforms using :ref:`framework_arduino`:
 Board Identifier
 ----------------
 
-:ref:`cmd_init` command requires to specify board identifier ID. It can
+:ref:`cmd_project_init` command requires to specify board identifier ID. It can
 be found using :ref:`boards` catalog,
 `Boards Explorer <https://platformio.org/boards>`_ or :ref:`cmd_boards` command. For example, using :ref:`cmd_boards` let's try
 to find Teensy boards:
@@ -103,11 +103,11 @@ pre-installed instruments for the professional development.
 
     .. code-block:: bash
 
-        > platformio init --board uno --board nodemcuv2 --board teensy31
+        > platformio project init --board uno --board nodemcuv2 --board teensy31
 
         The current working directory *** will be used for the new project.
         You can specify another project directory via
-        `platformio init -d %PATH_TO_THE_PROJECT_DIR%` command.
+        `platformio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
 
         The next files/directories will be created in ***
         platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
@@ -134,7 +134,7 @@ next structure:
 
 .. note::
     If you need to add new board to the existing project please use
-    :ref:`cmd_init` again.
+    :ref:`cmd_project_init` again.
 
 
 The result of just generated ``platformio.ini``:

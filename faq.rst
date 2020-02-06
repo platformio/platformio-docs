@@ -216,6 +216,8 @@ serial port terminal application.
 Compilation database ``compile_commands.json``
 ----------------------------------------------
 
+.. versionadded:: 4.2.0
+
 A `compilation database <https://clang.llvm.org/docs/JSONCompilationDatabase.html>`_ is
 a `JSON-formatted <https://www.json.org/>`_ file named ``compile_commands.json`` that
 contains structured data about every compilation unit in your project.

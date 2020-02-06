@@ -47,7 +47,7 @@ See available tools in :ref:`debugging_tools`.
 ``debug_build_flags``
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 4.1.1
+.. versionadded:: 4.2.0
 
 Type: ``String`` | Multiple: ``Yes`` | Default: ``-Og -g2 -ggdb2``
 
@@ -55,7 +55,7 @@ These flags/options affect the preprocessing, compilation, assembly
 and linking processes for C and C++ code.
 
 .. note::
-  This option might be helpful to adjust the optimization level if firmware with 
+  This option might be helpful to adjust the optimization level if firmware with
   debug information is too big to be uploaded to a target
 
 **Example**

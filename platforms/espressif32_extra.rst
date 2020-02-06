@@ -211,7 +211,7 @@ Sometimes you have a file with some binary or text data that you’d like to
 make available to your program - but you don’t want to reformat the file as
 C source.
 
-There are two options ``board_build.embed_txtfiles`` and ``board_build.embed_files`` 
+There are two options ``board_build.embed_txtfiles`` and ``board_build.embed_files``
 which can be used for embedding data. The only difference is that files specified
 in ``board_build.embed_txtfiles`` option are null-terminated in the final binary.
 
@@ -220,7 +220,7 @@ in ``board_build.embed_txtfiles`` option are null-terminated in the final binary
     [env:myenv]
     platform = espressif32
     board = ...
-    board_build.embed_txtfiles = 
+    board_build.embed_txtfiles =
       src/private.pem.key
       src/certificate.pem.crt
       src/aws-root-ca.pem
@@ -295,7 +295,7 @@ Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Create new project using :ref:`pioide` or initialize project using
-   :ref:`piocore` and :ref:`cmd_init` (if you have not initialized it yet)
+   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
@@ -427,7 +427,7 @@ should be installed in a system. To update Arduino Core to the latest revision,
 please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
 
 1.  Please install :ref:`pioide`
-2.  Initialize a new project, open :ref:`projectconf` and specify the link to the 
+2.  Initialize a new project, open :ref:`projectconf` and specify the link to the
     framework repository in :ref:`projectconf_env_platform_packages` section.
     For example,
 

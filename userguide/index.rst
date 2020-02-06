@@ -69,8 +69,8 @@ Commands
     cmd_debug
     cmd_device
     cmd_home
-    cmd_init
     platformio lib <lib/index>
+    platformio project <project/index>
     platformio platform <platforms/index>
     platformio remote <remote/index>
     cmd_run

@@ -365,7 +365,7 @@ Uploading files to file system SPIFFS
     information first.
 
 1. Create new project using :ref:`pioide` or initialize project using
-   :ref:`piocore` and :ref:`cmd_init` (if you have not initialized it yet)
+   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
@@ -488,7 +488,7 @@ should be installed in a system. To update Arduino Core to the latest revision,
 please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
 
 1.  Please install :ref:`pioide`
-2.  Initialize a new project, open :ref:`projectconf` and specify the link to the 
+2.  Initialize a new project, open :ref:`projectconf` and specify the link to the
     framework repository in :ref:`projectconf_env_platform_packages` section.
     For example,
 

@@ -78,10 +78,10 @@ Let's create our first PlatformIO-based Codeanywhere Project
 
     .. code-block:: bash
 
-        platformio init --board <ID>
+        platformio project init --board <ID>
 
         # initialize project for Arduino Uno
-        platformio init --board uno
+        platformio project init --board uno
 
     To get board ``ID`` please use :ref:`cmd_boards` command or
     `Embedded Boards Explorer <https://platformio.org/boards>`_.

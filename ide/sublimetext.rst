@@ -47,20 +47,20 @@ Integration process consists of these steps:
 
 1. Open system Terminal and install :ref:`piocore`
 2. Create new folder for your project and change directory (``cd``) to it
-3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+3. Generate a project using PIO Core Project Generator (:option:`platformio project init --ide`)
 4. Import project in IDE.
 
 ------------
 
 Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <https://platformio.org/boards>`_
-command and generate project via :option:`platformio init --ide` command:
+command and generate project via :option:`platformio project init --ide` command:
 
 .. code-block:: shell
 
-    platformio init --ide sublimetext --board <ID>
+    platformio project init --ide sublimetext --board <ID>
 
     # For example, generate project for Arduino UNO
-    platformio init --ide sublimetext --board uno
+    platformio project init --ide sublimetext --board uno
 
 Then:
 
