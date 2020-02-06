@@ -80,6 +80,10 @@
 </div>';
 
   (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
     var topBanner = $('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
