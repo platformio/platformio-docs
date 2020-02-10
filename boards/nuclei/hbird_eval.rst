@@ -70,7 +70,6 @@ HummingBird Evaluation Kit supports the next uploading protocols:
 
 * ``jlink``
 * ``rv-link``
-* ``rv-link``
 
 Default protocol is ``rv-link``
 

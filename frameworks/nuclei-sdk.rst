@@ -11,8 +11,8 @@
 
 .. _framework_nuclei-sdk:
 
-Nuclei N/NX Embedded Software Development Kit
-=============================================
+Nuclei SDK
+==========
 
 :Configuration:
   :ref:`projectconf_env_framework` = ``nuclei-sdk``
@@ -106,7 +106,7 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `Nuclei N/NX Embedded Software Development Kit for Nuclei <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Nuclei SDK for Nuclei <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
