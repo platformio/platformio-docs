@@ -66,6 +66,7 @@ Embedded
     microchippic32
     nordicnrf51
     nordicnrf52
+    nuclei
     nxplpc
     riscv_gap
     shakti

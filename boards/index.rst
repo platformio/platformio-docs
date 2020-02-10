@@ -680,6 +680,16 @@ Nordic nRF52
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_evk_nina_b1
 
+Nuclei
+------
+
+.. toctree::
+    :maxdepth: 1
+        
+    nuclei/gd32vf103v_eval
+    nuclei/gd32vf103v_rvstar
+    nuclei/hbird_eval
+
 NXP LPC
 -------
 

@@ -28,6 +28,7 @@ Frameworks
     kendryte-standalone-sdk
     libopencm3
     mbed
+    nuclei-sdk
     pulp-os
     pumbaa
     shakti-sdk

@@ -183,6 +183,9 @@ Platforms
     * - :ref:`platform_nordicnrf52`
       - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
+    * - :ref:`platform_nuclei`
+      - Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.
+
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
@@ -238,6 +241,9 @@ Frameworks
 
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+
+    * - :ref:`framework_nuclei-sdk`
+      - Open Source Software Development Kit for the Nuclei N/NX processors
 
     * - :ref:`framework_shakti-sdk`
       - A software development kit for developing applications on Shakti class of processors
@@ -1202,6 +1208,20 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nuclei_gd32vf103v_eval`
+      - :ref:`platform_nuclei`
+      - External
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_nuclei_gd32vf103v_rvstar`
+      - :ref:`platform_nuclei`
+      - On-board
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_gd32v_gd32vf103v-eval`
       - :ref:`platform_gd32v`
       - External
@@ -1265,6 +1285,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nuclei_hbird_eval`
+      - :ref:`platform_nuclei`
+      - On-board
+      - HUMMINGBIRD
+      - 5MHz
+      - 64KB
+      - 64KB
     * - :ref:`board_espressif32_iotaap_magnolia`
       - :ref:`platform_espressif32`
       - External
