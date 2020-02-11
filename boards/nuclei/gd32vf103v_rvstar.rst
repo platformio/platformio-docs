@@ -68,6 +68,8 @@ Uploading
 ---------
 GD32VF103V RVStar Kit supports the next uploading protocols:
 
+* ``altera-usb-blaster``
+* ``gd-link``
 * ``jlink``
 * ``rv-link``
 
@@ -104,6 +106,12 @@ GD32VF103V RVStar Kit has on-board debug probe and **IS READY** for debugging. Y
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_altera-usb-blaster`
+    - 
+    - 
+  * - :ref:`debugging_tool_gd-link`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

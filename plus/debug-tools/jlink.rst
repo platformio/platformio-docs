@@ -1285,13 +1285,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_nuclei_hbird_eval`
-      - :ref:`platform_nuclei`
-      - On-board
-      - HUMMINGBIRD
-      - 5MHz
-      - 64KB
-      - 64KB
     * - :ref:`board_espressif32_iotaap_magnolia`
       - :ref:`platform_espressif32`
       - External

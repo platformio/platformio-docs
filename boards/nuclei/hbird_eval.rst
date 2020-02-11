@@ -68,7 +68,8 @@ Uploading
 ---------
 HummingBird Evaluation Kit supports the next uploading protocols:
 
-* ``jlink``
+* ``altera-usb-blaster``
+* ``gd-link``
 * ``rv-link``
 
 Default protocol is ``rv-link``
@@ -104,7 +105,10 @@ HummingBird Evaluation Kit has on-board debug probe and **IS READY** for debuggi
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_jlink`
+  * - :ref:`debugging_tool_altera-usb-blaster`
+    - 
+    - 
+  * - :ref:`debugging_tool_gd-link`
     - 
     - 
   * - :ref:`debugging_tool_rv-link`

@@ -68,6 +68,8 @@ Uploading
 ---------
 GD32VF103V Evaluation Kit supports the next uploading protocols:
 
+* ``altera-usb-blaster``
+* ``gd-link``
 * ``jlink``
 * ``rv-link``
 
@@ -104,9 +106,15 @@ GD32VF103V Evaluation Kit does not have on-board debug probe and **IS NOT READY*
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_jlink`
+  * - :ref:`debugging_tool_altera-usb-blaster`
     - 
     - Yes
+  * - :ref:`debugging_tool_gd-link`
+    - 
+    - 
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
   * - :ref:`debugging_tool_rv-link`
     - 
     - 
