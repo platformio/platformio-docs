@@ -325,6 +325,7 @@ Espressif 32
         
     espressif32/esp32cam
     espressif32/alksesp32
+    espressif32/az-delivery-devkit-v4
     espressif32/featheresp32
     espressif32/espea32
     espressif32/bpi-bit

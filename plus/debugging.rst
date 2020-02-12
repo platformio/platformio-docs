@@ -349,6 +349,27 @@ AI Thinker
       - 4MB
       - 320KB
 
+AZ-Delivery
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_az-delivery-devkit-v4`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
+
 Aceinna
 ~~~~~~~
 

@@ -576,6 +576,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_az-delivery-devkit-v4`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -1808,6 +1814,27 @@ AI Thinker
       - 240MHz
       - 4MB
       - 320KB
+
+AZ-Delivery
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_az-delivery-devkit-v4`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
 
 Adafruit
 ~~~~~~~~
