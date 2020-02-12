@@ -757,7 +757,11 @@ PlatformIO allows to override some basic options (integer or string values)
 using :ref:`projectconf_board_more_options` in :ref:`projectconf`.
 Sometimes you need to do complex changes to default board manifest and
 extra PRE scripting work well here. See example below how to override default
-hardware VID/PIDs:
+hardware VID/PIDs.
+
+.. warning::
+    Due to a technical limitation these board changes will not work for
+    :ref:`cmd_device_monitor` command.
 
 ``platformio.ini``:
 
@@ -781,7 +785,6 @@ hardware VID/PIDs:
       ["0x2341", "0x0243"],  # 1st pair
       ["0x2A03", "0x0043"].  # 2nd pair, etc.
     ])
-
 
 Custom debug flags
 ''''''''''''''''''
