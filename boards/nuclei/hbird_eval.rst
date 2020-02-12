@@ -63,27 +63,6 @@ board manifest `hbird_eval.json <https://github.com/Nuclei-Software/platform-nuc
   ; change MCU frequency
   board_build.f_cpu = 5000000L
 
-
-Uploading
----------
-HummingBird Evaluation Kit supports the next uploading protocols:
-
-* ``altera-usb-blaster``
-* ``gd-link``
-* ``rv-link``
-
-Default protocol is ``rv-link``
-
-You can change upload protocol using :ref:`projectconf_upload_protocol` option:
-
-.. code-block:: ini
-
-  [env:hbird_eval]
-  platform = nuclei
-  board = hbird_eval
-
-  upload_protocol = rv-link
-
 Debugging
 ---------
 
@@ -105,12 +84,6 @@ HummingBird Evaluation Kit has on-board debug probe and **IS READY** for debuggi
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_altera-usb-blaster`
-    - 
-    - 
-  * - :ref:`debugging_tool_gd-link`
-    - 
-    - 
   * - :ref:`debugging_tool_rv-link`
     - Yes
     - Yes
