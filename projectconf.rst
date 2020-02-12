@@ -14,27 +14,26 @@
 "platformio.ini" (Project Configuration File)
 =============================================
 
-The Project configuration file is named ``platformio.ini``. This is a
+Each PlatformIO project has a configuration file named
+``platformio.ini`` in the root directory for the project. This is a
 `INI-style <http://en.wikipedia.org/wiki/INI_file>`_ file.
 
 ``platformio.ini`` has sections (each denoted by a ``[header]``) and
 key / value pairs within the sections. Lines beginning with ``;``
 are ignored and may be used to provide comments.
 
-Multiple values option can be specified in 2 ways:
+Multiple value options can be specified in two ways:
 
 1. Split values with ", " (comma + space)
-2. Use multi-line format, where each new line should start with 2 spaces
-   (minimum)
+2. Multi-line format, where each new line starts with at least two spaces
 
-There are 2 system reserved sections:
+There are two required sections:
 
 * :ref:`piocore` settings: :ref:`projectconf_section_platformio`
 * Environment settings: :ref:`projectconf_section_env`
 
-The other sections can be used by users, for example, for
-:ref:`projectconf_dynamic_vars`. The sections and their allowable values are
-described below.
+The other sections are optional to include. Here are the allowed
+sections and their allowed contents:
 
 .. toctree::
     :maxdepth: 2
@@ -46,6 +45,8 @@ described below.
     projectconf/examples
 
 **Example**
+
+For more examples, see :ref:`projectconf_examples`.
 
 .. code-block:: ini
 

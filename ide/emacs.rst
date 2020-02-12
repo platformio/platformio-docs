@@ -34,7 +34,7 @@ Integration process consists of these steps:
 
 1. Open system Terminal and install :ref:`piocore`
 2. Create new folder for your project and change directory (``cd``) to it
-3. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+3. Generate a project using PIO Core Project Generator (:option:`platformio project init --ide`)
 4. Import project in IDE.
 
 ------------
@@ -55,11 +55,11 @@ Project Generator
 ^^^^^^^^^^^^^^^^^
 
 Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <https://platformio.org/boards>`_
-command and generate project via :option:`platformio init --ide` command:
+command and generate project via :option:`platformio project init --ide` command:
 
 .. code-block:: shell
 
-    platformio init --ide emacs --board <ID>
+    platformio project init --ide emacs --board <ID>
 
 
 There are 6 predefined targets for building.
@@ -74,4 +74,4 @@ There are 6 predefined targets for building.
 .. warning::
     The libraries which are added, installed or used in the project
     after generating process won't be reflected in IDE. To fix it you
-    need to reinitialize project using :ref:`cmd_init` (repeat it).
+    need to reinitialize project using :ref:`cmd_project_init` (repeat it).

@@ -179,6 +179,12 @@ Please click on board name for the further details.
       - 72MHz
       - 108KB
       - 17KB
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -508,6 +514,27 @@ LeafLabs
       - 72MHz
       - 108KB
       - 17KB
+
+Olimex
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
 
 ST
 ~~

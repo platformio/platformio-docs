@@ -131,7 +131,7 @@ at each integration stage. See real
 Workflow
 --------
 
-1. Create PlatformIO project using the :ref:`cmd_init` command. For Desktop Unit
+1. Create PlatformIO project using the :ref:`cmd_project_init` command. For Desktop Unit
    Testing (on a host machine), you need to use :ref:`platform_native`.
 
    .. code-block:: ini

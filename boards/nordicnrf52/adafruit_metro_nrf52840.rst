@@ -71,6 +71,7 @@ Metro nRF52840 Express supports the next uploading protocols:
 * ``jlink``
 * ``nrfjprog``
 * ``nrfutil``
+* ``stlink``
 
 Default protocol is ``nrfutil``
 
@@ -108,6 +109,9 @@ Metro nRF52840 Express does not have on-board debug probe and **IS NOT READY** f
   * - :ref:`debugging_tool_jlink`
     - 
     - Yes
+  * - :ref:`debugging_tool_stlink`
+    - 
+    - 
 
 Frameworks
 ----------

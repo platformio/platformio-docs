@@ -11,19 +11,20 @@
 
 .. _platform_creating:
 
-Custom Development Platform
-===========================
+Custom Development Platforms
+============================
 
-*PlatformIO* was developed like a tool that may build the same source code
-for the different development platforms via single command :ref:`cmd_run`
+*PlatformIO* can build the same binary code under
+different host systems via the single command :ref:`cmd_run`
 without any dependent software or requirements.
 
-For this purpose *PlatformIO* uses own pre-configured platforms data:
-build scripts, toolchains, the settings for the most popular embedded
-boards and etc. These data are pre-built and packaged to the different
-``packages``. It allows *PlatformIO* to have multiple development platforms
-which can use the same packages(toolchains, frameworks), but have
-different/own build scripts, uploader and etc.
+A *manifest* describes how to produce binaries for a particular
+platform under one or multiple host systems by a set of build scripts,
+toolchains, the settings for the most popular embedded boards, etc.
+
+This guide explains how to write manifests, to support building for
+new development platforms.
+
 
 **Step-by-Step Manual**
 
@@ -39,20 +40,37 @@ different/own build scripts, uploader and etc.
 Packages
 --------
 
-PlatformIO has own registry with pre-built packages for the most popular
-operating systems and you can use them in your manifest. These packages are
-stored in super-fast and reliably CDN storage provided by JFrog Bintray:
+Some tools are the same when compiling for several platforms, for
+example a common compiler. A *package* is some tool or framework that
+can be used when compiling for one or multiple platforms. Even if
+multiple platforms use the same package, the package only needs to be
+downloaded once. Since each package is pre-built for the different
+host systems (Windows, Mac, Linux), developers can get started without
+first compiling the tools.
 
-- https://bintray.com/platformio/dl-packages
+PlatformIO has a registry with pre-built packages for the most popular
+operating systems and you can use them in your platform
+manifest. These packages are stored in the super-fast and reliably CDN
+storage provided by `JFrog Bintray
+<https://bintray.com/platformio/dl-packages>`_.
+
+Each platform definition must define ``packageRepositories`` to link
+to *package manifest files* that lists how PlatformIO can download the
+used packages. To use the pre-built packages, include
+http://dl.platformio.org/packages/manifest.json in the
+``packageRepositories`` list. Platform definitions can also use custom
+packages.
 
 .. _platform_creating_manifest_file:
 
 Manifest File ``platform.json``
 -------------------------------
 
-See example with a manifest for packages:
+Each platform definition includes a *manifest file* with a particular
+format that is parsed by PlatformIO when handling projects using that
+platform.
 
-- http://dl.platformio.org/packages/manifest.json
+Here is an example ``platform.json`` for the fictitious platform "myplatform":
 
 .. code-block:: json
 
@@ -132,6 +150,10 @@ See example with a manifest for packages:
           "optional": true,
           "version": "https://github.com/user/repo.git"
         }
+      },
+      "pythonPackages": {
+        "pypi-pkg-1": "1.2.3",
+        "pypi-pkg-2": ">=2.3, <3"
       }
     }
 
@@ -140,10 +162,12 @@ See example with a manifest for packages:
 Build Script ``main.py``
 ------------------------
 
-Platform's build script is based on a next-generation build tool named
-`SCons <http://www.scons.org>`_. PlatformIO has own built-in firmware builder
-``env.BuildProgram`` with the deep libraries search. Please look into a
-base template of ``main.py``.
+Each platform definition must include a ``main.py``.
+
+PlatformIO's build script is based on a next-generation build tool
+named `SCons <http://www.scons.org>`_. PlatformIO has its own built-in
+firmware builder ``env.BuildProgram`` with deep library search. Please
+see the following template as start for developing your own ``main.py``.
 
 .. code-block:: python
 
@@ -226,15 +250,17 @@ base template of ``main.py``.
 Installation
 ------------
 
-1. Create ``platforms`` directory in :ref:`projectconf_pio_core_dir` if it
-   doesn't exist.
-2. Create ``myplatform`` directory in ``platforms``
-3. Copy ``platform.json`` and ``builder/main.py`` files to ``myplatform`` directory.
-4. Search available platforms via :ref:`cmd_platform_search` command. You
-   should see ``myplatform`` platform.
-5. Install ``myplatform`` platform via :ref:`cmd_platform_install` command.
+Using the "myplatform" platform example above:
 
-Now, you can use ``myplatform`` for the :ref:`projectconf_env_platform`
+1. Create a ``platforms`` directory in :ref:`projectconf_pio_core_dir` if it
+   doesn't exist.
+2. Create a ``myplatform`` directory in ``platforms``
+3. Copy the ``platform.json`` and ``builder/main.py`` files to the ``myplatform`` directory.
+4. Search the available platforms via the :ref:`cmd_platform_search` command. You
+   should see the new ``myplatform`` platform.
+5. Install the ``myplatform`` platform via the :ref:`cmd_platform_install` command.
+
+Now, you can use ``myplatform`` as value for the :ref:`projectconf_env_platform`
 option in :ref:`projectconf`.
 
 Examples

@@ -31,8 +31,8 @@ Examples
 
 Examples are listed from `GigaDevice GD32V development platform repository <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
 * `eval-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/eval-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
 * `longan-nano-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/longan-nano-blink?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
@@ -83,6 +83,11 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB
     * - :ref:`board_gd32v_wio_lite_risc-v`
       - GD32VF103CBT6
       - 108MHz
@@ -226,3 +231,9 @@ Sipeed
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - External
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB

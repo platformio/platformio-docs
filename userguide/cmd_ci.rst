@@ -31,7 +31,7 @@ Description
 :ref:`cmd_ci` command is conceived of as "hot key" for building project with
 arbitrary source code structure. In a nutshell, using ``SRC`` and
 :option:`platformio ci --lib` contents PlatformIO initializes via
-:ref:`cmd_init` new project in :option:`platformio ci --build-dir`
+:ref:`cmd_project_init` new project in :option:`platformio ci --build-dir`
 with the build environments (using :option:`platformio ci --board` or
 :option:`platformio ci --project-conf`) and processes them via :ref:`cmd_run`
 command.
@@ -93,7 +93,7 @@ For example, exclude from project ``src`` directory:
 Build project with automatically pre-generated environments based on board
 settings.
 
-For more details please look into :option:`platformio init --board`.
+For more details please look into :option:`platformio project init --board`.
 
 .. option::
     --build-dir
@@ -119,7 +119,7 @@ Build project using pre-configured :ref:`projectconf`.
 .. option::
     -O, --project-option
 
-Pass additional options from :ref:`projectconf` to :ref:`cmd_init` command.
+Pass additional options from :ref:`projectconf` to :ref:`cmd_project_init` command.
 For example, automatically install dependent libraries
 ``platformio ci --project-option="lib_deps=ArduinoJSON"`` or ignore specific
 library ``platformio ci --project-option="lib_ignore=SomeLib"``.

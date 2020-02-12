@@ -37,7 +37,7 @@ Options
 .. option::
     --json-output
 
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 
 Examples
 --------

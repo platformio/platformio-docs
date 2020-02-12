@@ -174,7 +174,7 @@ See `project example <https://github.com/platformio/platform-espressif32/tree/de
 
 Partition Tables
 ~~~~~~~~~~~~~~~~
-You can create a custom partitions table (CSV) following `ESP32 Partition Tables <https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/storage/nvs_partition_gen.html>`_
+You can create a custom partitions table (CSV) following `ESP32 Partition Tables <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/partition-tables.html>`_
 documentation. PlatformIO uses **default partition tables** depending on a
 :ref:`projectconf_env_framework` type:
 
@@ -211,7 +211,7 @@ Sometimes you have a file with some binary or text data that you’d like to
 make available to your program - but you don’t want to reformat the file as
 C source.
 
-There are two options ``board_build.embed_txtfiles`` and ``board_build.embed_files`` 
+There are two options ``board_build.embed_txtfiles`` and ``board_build.embed_files``
 which can be used for embedding data. The only difference is that files specified
 in ``board_build.embed_txtfiles`` option are null-terminated in the final binary.
 
@@ -220,7 +220,7 @@ in ``board_build.embed_txtfiles`` option are null-terminated in the final binary
     [env:myenv]
     platform = espressif32
     board = ...
-    board_build.embed_txtfiles = 
+    board_build.embed_txtfiles =
       src/private.pem.key
       src/certificate.pem.crt
       src/aws-root-ca.pem
@@ -295,7 +295,7 @@ Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Create new project using :ref:`pioide` or initialize project using
-   :ref:`piocore` and :ref:`cmd_init` (if you have not initialized it yet)
+   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
@@ -378,7 +378,7 @@ For the full list with available options please run
 
 .. code-block:: bash
 
-    ~/.platformio/packages/tool-espotapy/espota.py -h
+    ~/.platformio/packages/framework-arduinoespressif32/tools/espota.py --help
 
     Usage: espota.py [options]
 
@@ -390,8 +390,12 @@ For the full list with available options please run
       Destination:
         -i ESP_IP, --ip=ESP_IP
                             ESP32 IP Address.
+        -I HOST_IP, --host_ip=HOST_IP
+                            Host IP Address.
         -p ESP_PORT, --port=ESP_PORT
-                            ESP32 ota Port. Default 8266
+                            ESP32 ota Port. Default 3232
+        -P HOST_PORT, --host_port=HOST_PORT
+                            Host server ota Port. Default random 10000-60000
 
       Authentication:
         -a AUTH, --auth=AUTH
@@ -406,6 +410,8 @@ For the full list with available options please run
       Output:
         -d, --debug         Show debug output. And override loglevel with debug.
         -r, --progress      Show progress output. Does not work for ArduinoIDE
+        -t TIMEOUT, --timeout=TIMEOUT
+                            Timeout to wait for the ESP32 to accept invitation
 
 .. warning::
     For windows users. To manage OTA check the ESP wifi network profile isn't checked on public
@@ -421,23 +427,24 @@ should be installed in a system. To update Arduino Core to the latest revision,
 please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
 
 1.  Please install :ref:`pioide`
-2.  Initialize a new project, open :ref:`projectconf` and set
-    :ref:`projectconf_env_platform` to
-    ``https://github.com/platformio/platform-espressif32.git#feature/stage``.
+2.  Initialize a new project, open :ref:`projectconf` and specify the link to the
+    framework repository in :ref:`projectconf_env_platform_packages` section.
     For example,
 
     .. code-block:: ini
 
         [env:esp32dev]
-        platform = https://github.com/platformio/platform-espressif32.git#feature/stage
+        platform = espressif32
         board = esp32dev
         framework = arduino
+        platform_packages =
+            framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git
 
-3.  Try to build project
+3.  Try to build the project
 4.  If you see build errors, then try to build this project using the same
     ``stage`` with Arduino IDE
 5.  If it works with Arduino IDE but doesn't work with PlatformIO, then please
-    `file new issue <https://github.com/platformio/platform-espressif32/issuess>`_
+    `file a new issue <https://github.com/platformio/platform-espressif32/issuess>`_
     with attached information:
 
     - test project/files

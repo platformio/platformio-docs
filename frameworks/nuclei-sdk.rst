@@ -9,17 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _framework_tizenrt:
+.. _framework_nuclei-sdk:
 
-Tizen RT
-========
+Nuclei SDK
+==========
 
 :Configuration:
-  :ref:`projectconf_env_framework` = ``tizenrt``
+  :ref:`projectconf_env_framework` = ``nuclei-sdk``
 
-Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
+Open Source Software Development Kit for the Nuclei N/NX processors
 
-For more detailed information please visit `vendor site <https://source.tizen.org/documentation/tizen-rt?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/Nuclei-Software/nuclei-sdk?utm_source=platformio&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -64,18 +64,49 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_samsung_artik_artik_053`
-      - :ref:`platform_samsung_artik`
-      - S5JT200
-      - 320MHz
-      - 8MB
-      - 1.25MB
+    * - :ref:`board_nuclei_gd32vf103v_rvstar`
+      - :ref:`platform_nuclei`
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_nuclei_hbird_eval`
+      - :ref:`platform_nuclei`
+      - HUMMINGBIRD
+      - 5MHz
+      - 64KB
+      - 64KB
+
+
+External Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nuclei_gd32vf103v_eval`
+      - :ref:`platform_nuclei`
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
 
 
 Examples
 --------
 
-* `Tizen RT for Samsung ARTIK <https://github.com/platformio/platform-samsung_artik/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Nuclei SDK for Nuclei <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -85,8 +116,8 @@ Platforms
     * - Name
       - Description
 
-    * - :ref:`platform_samsung_artik`
-      - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
+    * - :ref:`platform_nuclei`
+      - Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.
 
 Boards
 ------
@@ -96,8 +127,8 @@ Boards
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
-Samsung
-~~~~~~~
+GigaDevice
+~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -109,10 +140,38 @@ Samsung
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_samsung_artik_artik_053`
-      - :ref:`platform_samsung_artik`
+    * - :ref:`board_nuclei_gd32vf103v_eval`
+      - :ref:`platform_nuclei`
+      - External
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+
+Nuclei
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nuclei_gd32vf103v_rvstar`
+      - :ref:`platform_nuclei`
       - On-board
-      - S5JT200
-      - 320MHz
-      - 8MB
-      - 1.25MB
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_nuclei_hbird_eval`
+      - :ref:`platform_nuclei`
+      - On-board
+      - HUMMINGBIRD
+      - 5MHz
+      - 64KB
+      - 64KB

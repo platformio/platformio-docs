@@ -39,25 +39,25 @@ Integration process consists of these steps:
    update project configuration when changes are made in :ref:`projectconf`
 2. Open system Terminal and install :ref:`piocore`
 3. Create new folder for your project and change directory (``cd``) to it
-4. Generate a project using PIO Core Project Generator (:option:`platformio init --ide`)
+4. Generate a project using PIO Core Project Generator (:option:`platformio project init --ide`)
 5. Open project in IDE.
 
 ------------
 
 Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <https://platformio.org/boards>`_
-command and generate project via :option:`platformio init --ide` command:
+command and generate project via :option:`platformio project init --ide` command:
 
 .. code-block:: shell
 
-    platformio init --ide clion --board <ID>
+    platformio project init --ide clion --board <ID>
 
     # For example, generate project for Arduino UNO
-    platformio init --ide clion --board uno
+    platformio project init --ide clion --board uno
 
 Then:
 
 1. Place source files (``*.c, *.cpp, *.h, *.hpp``) to ``src`` directory and
-   repeat :option:`platformio init --ide` command above (to refresh source files list)
+   repeat :option:`platformio project init --ide` command above (to refresh source files list)
 2. Open this project via ``Menu: File > Open...``
    and specify root directory where is located :ref:`projectconf`
 3. Open source file from ``src`` directory
@@ -92,8 +92,8 @@ the screenshot above):
   Allows one to fix code completion and code linting issues.
 * ``PLATFORMIO_DEVICE_LIST`` - List connected devices.
 
-If you have multiple environements, you can select which one the target is going to use by 
-changing the build profile (See screenshot). Changing the build profile also updates 
+If you have multiple environements, you can select which one the target is going to use by
+changing the build profile (See screenshot). Changing the build profile also updates
 defines and includes for code completion in the editor to those specified by the environement.
 
 The profile ``All`` runs the target for all environements ; this was the previous behavior.

@@ -42,6 +42,7 @@ Community Tutorials
 Community Video Tutorials
 -------------------------
 
+* `Next-generation IDE for your RISC-V Product in 20 Minutes by CEO of PlatformIO <https://www.youtube.com/watch?v=0eYDKION0Bs>`_
 * `RISC-V ASM Tutorial <https://www.youtube.com/playlist?list=PL6noQ0vZDAdh_aGvqKvxd0brXImHXMuLY>`_
 * `PlatformIO for Arduino, ESP8266, and ESP32 Tutorial <https://www.youtube.com/watch?v=0poh_2rBq7E>`_
 * `Free Inline Debugging for ESP32 and Arduino Sketches <https://www.youtube.com/watch?v=psMqilqlrRQ>`__

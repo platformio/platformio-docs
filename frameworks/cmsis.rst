@@ -70,6 +70,24 @@ You do not need to use/buy external debug probe.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_disco_f411ve`
+      - :ref:`platform_ststm32`
+      - STM32F411VET6
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_disco_f429zi`
+      - :ref:`platform_ststm32`
+      - STM32F429ZIT6
+      - 180MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_ststm32_disco_f469ni`
+      - :ref:`platform_ststm32`
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
     * - :ref:`board_ststm32_nucleo_f401re`
       - :ref:`platform_ststm32`
       - STM32F401RET6
@@ -242,9 +260,27 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_rhf76_052`
       - :ref:`platform_ststm32`
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - :ref:`platform_ststm32`
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -680,6 +716,34 @@ Generic
       - 1MB
       - 192KB
 
+Olimex
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+
 RushUp
 ~~~~~~
 
@@ -767,9 +831,30 @@ ST
       - :ref:`platform_ststm32`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_disco_f411ve`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F411VET6
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_disco_f429zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F429ZIT6
+      - 180MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_ststm32_disco_f469ni`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F469NIH6
+      - 180MHz
+      - 1MB
+      - 384KB
     * - :ref:`board_ststm32_nucleo_f401re`
       - :ref:`platform_ststm32`
       - On-board
@@ -805,3 +890,10 @@ ST
       - 32MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB

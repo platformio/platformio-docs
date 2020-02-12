@@ -77,10 +77,21 @@ Install Python Interpreter
 :ref:`piocore` is written in `Python <https://www.python.org/downloads/>`_ that
 is installed by default on the all popular OS except Windows.
 
-**Windows Users**, please `Download the latest Python <https://www.python.org/downloads/>`_
-and install it. **DON'T FORGET** to select ``Add Python to Path`` (see below), otherwise, ``python`` command will not be available.
+Please navigate to official website and `Download the latest Python <https://www.python.org/downloads/>`_
+and install it. Please **READ NOTES BELOW**.
 
-.. image:: _static/images/python-installer-add-path.png
+:macOS:
+  Please read the "Important Information" displayed during installation for information
+  about SSL/TLS certificate validation and the running the **"Install Certificates.command"**.
+
+  If you do not install SSL/TLS certificates, PlatformIO will not be able to download
+  dependent packages, libraries, and toolchains.
+
+:Windows:
+  Please select ``Add Python to Path`` (see below), otherwise, ``python`` command will
+  not be available.
+
+  .. image:: _static/images/python-installer-add-path.png
 
 .. _faq_convert_ino_to_cpp:
 
@@ -183,6 +194,66 @@ Recommended for reading:
 
 * https://en.wikipedia.org/wiki/Data_segment
 * `text, data and bss: Code and Data Size Explained <https://mcuoneclipse.com/2013/04/14/text-data-and-bss-code-and-data-size-explained/?utm_source=platformio&utm_medium=docs>`_
+
+.. _faq_advanced_serial_monitor_ui:
+
+Advanced Serial Monitor with UI
+-------------------------------
+
+PlatformIO Core provides CLI version (:ref:`cmd_device_monitor`) of Serial Monitor.
+If you need advanced instrument with a rich UI, we recommend free and multi-platform
+`CoolTerm <https://freeware.the-meiers.org/?utm_source=platformio&utm_medium=docs>`_
+serial port terminal application.
+
+.. warning::
+  Please note that you need to **manually disconnect (close serial port connection)** in
+  CoolTerm **before doing uploading** in PlatformIO. PlatformIO can not disconnect/connect
+  to a target device automatically when CoolTerm is used.
+
+
+.. _faq_compilation_db:
+
+Compilation database ``compile_commands.json``
+----------------------------------------------
+
+.. versionadded:: 4.2.0
+
+A `compilation database <https://clang.llvm.org/docs/JSONCompilationDatabase.html>`_ is
+a `JSON-formatted <https://www.json.org/>`_ file named ``compile_commands.json`` that
+contains structured data about every compilation unit in your project.
+
+:ref:`piocore` supports generating of compilation database using
+:option:`platformio run --target` command and ``compiledb`` target. For example,
+
+.. code::
+
+  > platformio run -t compiledb
+
+
+A default path for ``compile_commands.json`` is ":ref:`projectconf_pio_build_dir`/envname".
+You can override this path with :ref:`projectconf_advanced_scripting` and
+``COMPILATIONDB_PATH`` environment variable. For example, generate ``compile_commands.json``
+in a root of project:
+
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    extra_scripts = post:extra_script.py
+
+
+``extra_script.py``:
+
+.. code-block:: python
+
+    import os
+    Import("env")
+
+    env.Replace(COMPILATIONDB_PATH=os.path.join("$PROJECT_DIR", "compile_commands.json"))
 
 .. _faq_troubleshooting:
 

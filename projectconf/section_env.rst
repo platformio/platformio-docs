@@ -17,17 +17,23 @@ Section ``[env]``
 .. contents::
     :local:
 
-Allows declaring configuration options for building, programming, debugging,
-unit testing, device monitoring, library dependencies, etc.
+Each project may have multiple *configuration environments* defining
+the available project tasks for building, programming, debugging, unit
+testing, device monitoring, library dependencies, etc. The
+configuration environments are declared using ``[env]`` sections in
+:ref:`projectconf`.
 
-Global scope ``[env]``
-----------------------
+The allowed options are listed under `Options`_.
+
+Common ``[env]``
+----------------
 
 .. versionadded:: 4.0
 
-Allows declaring global options which will be shared between all ``[env:NAME]``
-sections in :ref:`projectconf`. It is very useful if the configuration file
-has a lot of local scopes ``[env:NAME]`` and they have common options.
+An optional configuration environment with common options that will be
+shared between all ``[env:NAME]`` environments in the platform.ini
+file. It is very useful if the configuration file has a lot of
+environments ``[env:NAME]`` and they share common settings.
 
 For example:
 
@@ -50,8 +56,8 @@ For example:
     build_flags = -D DEBUG
     lib_deps = DepCustom
 
-In this example we have 2 build environments ``release`` and ``debug``. This
-is the same if you duplicate all options:
+In this example we have two configuration environments ``release`` and ``debug``. This
+is equivalent to duplicating all options as shown below:
 
 .. code-block:: ini
 
@@ -71,21 +77,20 @@ is the same if you duplicate all options:
     lib_deps = DepCustom
 
 
-Local scope ``[env:NAME]``
+Environment ``[env:NAME]``
 --------------------------
 
-A section with ``env:`` prefix is used to define a build environment with
-local options (available only for this environment). PlatformIO uses
-``[env:NAME]`` environments for :ref:`cmd_run`, :ref:`cmd_test`,
-:ref:`cmd_debug`, and other commands.
+A section with an ``env:`` prefix defines a **working environment** for
+:ref:`cmd_run`, :ref:`cmd_test`, :ref:`cmd_check`, :ref:`cmd_debug` and other commands.
+Multiple ``[env:NAME]`` environments with different ``NAME`` are allowed. Every project must define at least one working environment.
 
 Each environment must have a unique ``NAME``. The valid chars for ``NAME`` are
 letters ``a-z``, numbers ``0-9``,  special char ``_`` (underscore).
 For example, ``[env:hello_world]``.
-Multiple ``[env:NAME]`` environments with different ``NAME`` are allowed.
 
-If you have more than one build environment and you need to process only a few
-of them, please check ``-e, --environment`` option for commands mentioned above.
+If you have multiple working environments and you need to process only a few
+of them, the commands mentioned above accept the ``-e, --environment`` option to select a subset of the working environments to process.
+The [platformio] :ref:`projectconf_pio_default_envs` option can be used to define a default set of working environments for the commands to process.
 
 Options
 -------
@@ -94,11 +99,10 @@ Options
     :maxdepth: 2
 
     section_env_platform
-    section_env_board
     section_env_build
+    section_env_library
     section_env_upload
     section_env_monitor
-    section_env_library
     section_env_check
     section_env_test
     section_env_debug

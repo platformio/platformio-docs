@@ -32,13 +32,13 @@ Examples
 
 Examples are listed from `Espressif 8266 development platform repository <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `arduino-webserver <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio&utm_medium=docs>`_
 * `arduino-asyncudp <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-asyncudp?utm_source=platformio&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-webserver <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio&utm_medium=docs>`_
-* `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
-* `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
-* `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+* `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
+* `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -236,6 +236,12 @@ Doit
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif8266_espmxdevkit`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
     * - :ref:`board_espressif8266_espduino`
       - No
       - ESP8266
@@ -390,6 +396,43 @@ Heltec
       - ESP8266
       - 80MHz
       - 4MB
+      - 80KB
+
+ITEAD
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_sonoff_basic`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_s20`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_sv`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_th`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
       - 80KB
 
 Invent One

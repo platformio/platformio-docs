@@ -71,6 +71,7 @@ Circuit Playground Bluefruit supports the next uploading protocols:
 * ``jlink``
 * ``nrfjprog``
 * ``nrfutil``
+* ``stlink``
 
 Default protocol is ``nrfutil``
 
@@ -108,6 +109,9 @@ Circuit Playground Bluefruit does not have on-board debug probe and **IS NOT REA
   * - :ref:`debugging_tool_jlink`
     - 
     - Yes
+  * - :ref:`debugging_tool_stlink`
+    - 
+    - 
 
 Frameworks
 ----------

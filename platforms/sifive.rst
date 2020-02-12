@@ -31,15 +31,18 @@ Examples
 
 Examples are listed from `SiFive development platform repository <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `freedom-e-sdk_hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_multicore-hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_multicore-hello?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_sifive-welcome <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_sifive-welcome?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_spi <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_spi?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_test-coreip <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_test-coreip?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_timer-interrupt <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_timer-interrupt?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_user-mode <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-mode?utm_source=platformio&utm_medium=docs>`_
-* `freedom-e-sdk_user-syscall <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-syscall?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-blink <https://github.com/platformio/platform-sifive/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
 * `native-blink_asm <https://github.com/platformio/platform-sifive/tree/master/examples/native-blink_asm?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_test-coreip <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_test-coreip?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_sifive-welcome <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_sifive-welcome?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_timer-interrupt <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_timer-interrupt?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_multicore-hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_multicore-hello?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_user-syscall <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-syscall?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_spi <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_spi?utm_source=platformio&utm_medium=docs>`_
+* `freedom-e-sdk_user-mode <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-mode?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-synchronization <https://github.com/platformio/platform-sifive/tree/master/examples/zephyr-synchronization?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-hello-world <https://github.com/platformio/platform-sifive/tree/master/examples/zephyr-hello-world?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -98,6 +101,16 @@ You do not need to use/buy external debug probe.
       - 320MHz
       - 16MB
       - 16KB
+    * - :ref:`board_sifive_sparkfun_redboard_v`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_sparkfun_thing_plus_v`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
 
 
 Stable and upstream versions
@@ -144,8 +157,62 @@ Packages
     * - `framework-freedom-e-sdk <https://github.com/sifive/freedom-e-sdk?utm_source=platformio&utm_medium=docs>`__
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
+    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio&utm_medium=docs>`__
+      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+
+    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module CivetWeb Embedded C/C++ web server
+
+    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for FATFS filesystem
+
+    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for HAL abstraction layer used by open-amp
+
+    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for littlefs filesystem
+
+    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
+
+    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls?utm_source=platformio&utm_medium=docs>`__
+      - mbedTLS module for Zephyr
+
+    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for mcumgr management library for 32-bit MCUs
+
+    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for MIPI System Software Trace
+
+    * - `framework-zephyr-nffs <https://github.com/zephyrproject-rtos/nffs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for the Newtron Flash File System
+
+    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
+
+    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread?utm_source=platformio&utm_medium=docs>`__
+      - OpenThread module for Zephyr
+
+    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Segger RTT
+
+    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Concise Binary Object Representation Library
+
+    * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio&utm_medium=docs>`__
+      - Device tree compiler
+
+    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio&utm_medium=docs>`__
+      - GNU gperf is a perfect hash function generator.
+
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
+
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed.
 
     * - `tool-openocd-riscv <https://github.com/riscv/riscv-openocd?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD for RISC-V
@@ -181,6 +248,9 @@ Frameworks
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+
 Boards
 ------
 
@@ -215,6 +285,31 @@ SiFive
       - 16MB
       - 16KB
     * - :ref:`board_sifive_hifive1-revb`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+
+SparkFun
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_sifive_sparkfun_redboard_v`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_sparkfun_thing_plus_v`
       - On-board
       - FE310
       - 320MHz

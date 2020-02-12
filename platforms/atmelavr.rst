@@ -17,7 +17,7 @@ Atmel AVR
 :Configuration:
   :ref:`projectconf_env_platform` = ``atmelavr``
 
-Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
+Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming
 
 For more detailed information please visit `vendor site <http://www.atmel.com/products/microcontrollers/avr/default.aspx?utm_source=platformio&utm_medium=docs>`_.
 
@@ -33,13 +33,13 @@ Examples
 Examples are listed from `Atmel AVR development platform repository <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
 * `arduino-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-external-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-own-src_dir <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-own-src_dir?utm_source=platformio&utm_medium=docs>`_
-* `digitstump-mouse <https://github.com/platformio/platform-atmelavr/tree/master/examples/digitstump-mouse?utm_source=platformio&utm_medium=docs>`_
-* `engduino-magnetometer <https://github.com/platformio/platform-atmelavr/tree/master/examples/engduino-magnetometer?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-own-src_dir <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-own-src_dir?utm_source=platformio&utm_medium=docs>`_
+* `engduino-magnetometer <https://github.com/platformio/platform-atmelavr/tree/master/examples/engduino-magnetometer?utm_source=platformio&utm_medium=docs>`_
+* `digitstump-mouse <https://github.com/platformio/platform-atmelavr/tree/master/examples/digitstump-mouse?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-external-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -82,8 +82,41 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoavr <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-arduino-avr <https://github.com/arduino/ArduinoCore-avr?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (AVR Core)
+
+    * - `framework-arduino-avr-attiny <https://github.com/SpenceKonde/ATTinyCore?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (ATTiny Core)
+
+    * - `framework-arduino-avr-bean <https://github.com/PunchThrough/bean-arduino-core?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Bean Core)
+
+    * - `framework-arduino-avr-core13 <https://sourceforge.net/projects/ard-core13/?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Core13)
+
+    * - `framework-arduino-avr-digistump <https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Digistump Core)
+
+    * - `framework-arduino-avr-dwenguino <https://github.com/dwengovzw/Dwengo-library/tree/master/dwenguino/Dwenguino?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Dwenguino Core)
+
+    * - `framework-arduino-avr-megacore <https://github.com/MCUdude/MegaCore?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (MegaCore)
+
+    * - `framework-arduino-avr-mightycore <https://github.com/MCUdude/MightyCore?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (MightyCore)
+
+    * - `framework-arduino-avr-minicore <https://github.com/MCUdude/MiniCore?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (MiniCore)
+
+    * - `framework-arduino-avr-nicai <https://github.com/arduino/ArduinoCore-avr?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Nicai Core)
+
+    * - `framework-arduino-avr-panstamp <https://github.com/panStamp/panstamp?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Panstamp Core)
+
+    * - `framework-arduino-avr-prusa_rambo <https://github.com/prusa3d/Prusa-Firmware?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Prusa Rambo Core)
 
     * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
       - Simba Framework
@@ -1377,6 +1410,25 @@ Pololu Corporation
       - 16MHz
       - 28KB
       - 2.50KB
+
+Prusa 3D
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_prusa_rambo`
+      - No
+      - ATMEGA2560
+      - 16MHz
+      - 252KB
+      - 8KB
 
 Punch Through
 ~~~~~~~~~~~~~

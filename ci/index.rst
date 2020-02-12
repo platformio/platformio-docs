@@ -31,6 +31,7 @@ easily.
     appveyor
     circleci
     drone
+    github-actions
     gitlab
     jenkins
     shippable

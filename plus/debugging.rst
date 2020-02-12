@@ -181,14 +181,14 @@ Platforms
     * - :ref:`platform_nordicnrf52`
       - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
+    * - :ref:`platform_nuclei`
+      - Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.
+
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
-
-    * - :ref:`platform_samsung_artik`
-      - The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
 
     * - :ref:`platform_shakti`
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
@@ -252,6 +252,9 @@ Frameworks
     * - :ref:`framework_mbed`
       - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
 
+    * - :ref:`framework_nuclei-sdk`
+      - Open Source Software Development Kit for the Nuclei N/NX processors
+
     * - :ref:`framework_pulp-os`
       - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.
 
@@ -267,8 +270,8 @@ Frameworks
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
 
-    * - :ref:`framework_tizenrt`
-      - Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
 
 Boards
 ------
@@ -317,6 +320,13 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_nordicnrf52_96b_nitrogen`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 AI Thinker
 ~~~~~~~~~~
@@ -737,6 +747,13 @@ Arduino
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_nano33ble`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 960KB
+      - 256KB
     * - :ref:`board_atmelsam_tian`
       - :ref:`platform_atmelsam`
       - External
@@ -1207,6 +1224,34 @@ Electronut Labs
       - 512KB
       - 64KB
 
+ElectronutLabs
+~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_electronut_blip`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_electronut_papyr`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+
 Elektor Labs
 ~~~~~~~~~~~~
 
@@ -1641,6 +1686,27 @@ Generic
       - 1MB
       - 192KB
 
+GigaDevice
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nuclei_gd32vf103v_eval`
+      - :ref:`platform_nuclei`
+      - External
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+
 Gimasi
 ~~~~~~
 
@@ -1738,6 +1804,27 @@ Heltec Automation
       - 240MHz
       - 8MB
       - 320KB
+
+Holyiot
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_holyiot_yj16019`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 Hornbill
 ~~~~~~~~
@@ -1837,6 +1924,27 @@ Infineon
       - 2.00MB
       - 1.95MB
 
+IoTaaP
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_iotaap_magnolia`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 JKSoft
 ~~~~~~
 
@@ -1857,6 +1965,34 @@ JKSoft
       - 16MHz
       - 128KB
       - 16KB
+
+Laird Connectivity
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_laird_bl652_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl654_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
 
 LeafLabs
 ~~~~~~~~
@@ -1949,27 +2085,6 @@ MH-ET Live
       - 4MB
       - 320KB
 
-MVT Solutions
-~~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_espressif32_iotaap_magnolia`
-      - :ref:`platform_espressif32`
-      - External
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-
 MXChip
 ~~~~~~
 
@@ -2011,6 +2126,34 @@ Macchina
       - 84MHz
       - 512KB
       - 96KB
+
+Makerdiary
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_nrf52832_mdk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_mdk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
 
 Malyan
 ~~~~~~
@@ -2389,6 +2532,13 @@ Nordic
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_thingy_52`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -2431,6 +2581,34 @@ Nordic
       - 64MHz
       - 796KB
       - 243KB
+
+Nuclei
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nuclei_gd32vf103v_rvstar`
+      - :ref:`platform_nuclei`
+      - On-board
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_nuclei_hbird_eval`
+      - :ref:`platform_nuclei`
+      - On-board
+      - HUMMINGBIRD
+      - 5MHz
+      - 64KB
+      - 64KB
 
 OLIMEX
 ~~~~~~
@@ -2488,6 +2666,48 @@ OSHChip
       - 256KB
       - 32KB
 
+Olimex
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_olimex_p405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+
 Particle
 ~~~~~~~~
 
@@ -2501,6 +2721,20 @@ Particle
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_particle_argon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_particle_boron`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_particle_xenon`
       - :ref:`platform_nordicnrf52`
       - External
@@ -2802,6 +3036,13 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f723ie`
       - :ref:`platform_ststm32`
       - On-board
@@ -2869,28 +3110,28 @@ ST
       - :ref:`platform_ststm32`
       - External
       - STM32G071RBT6
-      - 24MHz
-      - 2MB
+      - 64MHz
       - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - :ref:`platform_ststm32`
       - External
       - STM32G431KBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - :ref:`platform_ststm32`
       - External
       - STM32G431RBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
       - External
       - STM32G474RET6
-      - 17MHz
+      - 170MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
@@ -2904,7 +3145,7 @@ ST
       - :ref:`platform_ststm32`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_disco_f334c8`
@@ -3355,6 +3596,27 @@ ST
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_eval_f373vc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F373VCT6
+      - 72MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_eval_f072vb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F072VBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_disco_f750n8`
       - :ref:`platform_ststm32`
       - On-board
@@ -3362,6 +3624,13 @@ ST
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h743xi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - :ref:`platform_ststm32`
       - External
@@ -3397,27 +3666,6 @@ SainSmart
       - 84MHz
       - 512KB
       - 96KB
-
-Samsung
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_samsung_artik_artik_053`
-      - :ref:`platform_samsung_artik`
-      - On-board
-      - S5JT200
-      - 320MHz
-      - 8MB
-      - 1.25MB
 
 Seeed
 ~~~~~
@@ -3691,6 +3939,13 @@ Sipeed
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
       - External
@@ -3782,6 +4037,20 @@ SparkFun
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_sifive_sparkfun_redboard_v`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_sparkfun_thing_plus_v`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - External
@@ -4089,7 +4358,7 @@ Teensy
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - External
@@ -4181,6 +4450,13 @@ VNG
       - 16MHz
       - 128KB
       - 32KB
+    * - :ref:`board_nordicnrf52_vbluno52`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 VintLabs
 ~~~~~~~~

@@ -87,12 +87,13 @@ Example, `DallasTemperature <https://platformio.org/lib/show/54/DallasTemperatur
           "email": "rob.tillaart@gmail.com"
         }
       ],
-      "dependencies":
-      {
-        "name": "OneWire",
-        "authors": "Paul Stoffregen",
-        "frameworks": "arduino"
-      },
+      "dependencies": [
+        {
+          "name": "OneWire",
+          "authors": "Paul Stoffregen",
+          "frameworks": "arduino"
+        }
+      ],
       "version": "3.7.7",
       "frameworks": "arduino",
       "platforms": "*"

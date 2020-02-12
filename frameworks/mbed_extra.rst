@@ -141,7 +141,7 @@ describe your board, for example here is the configuration for ``NUCLEO-F401RE``
     }
 
 Secondly, you need to add code specific to your target to the ``src`` folder of your project.
-Usually, it's a good idea to isolate this code in a separate folder and add еру path to this folder
+Usually, it's a good idea to isolate this code in a separate folder and add the path to this folder
 to :ref:`projectconf_build_flags` of :ref:`projectconf`:
 
 .. code-block:: ini
@@ -150,7 +150,7 @@ to :ref:`projectconf_build_flags` of :ref:`projectconf`:
   platform = nxplpc
   framework = mbed
   board = my_custom_board
-  build_flags = -I$PROJECTSRC_DIR/MY_CUSTOM_BOARD_TARGET
+  build_flags = -I$PROJECT_SRC_DIR/MY_CUSTOM_BOARD_TARGET
 
 Next, you need to inform PlatformIO that there is a new custom board. To do this, you can create
 ``boards`` directory in the root folder of your project and add a board manifest file with your

@@ -32,30 +32,35 @@ Examples
 
 Examples are listed from `ST STM32 development platform repository <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
+* `mbed-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-filesystem?utm_source=platformio&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
+* `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio&utm_medium=docs>`_
+* `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `mbed-custom-target <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-custom-target?utm_source=platformio&utm_medium=docs>`_
+* `cmsis-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/cmsis-blink?utm_source=platformio&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-external-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `spl-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/spl-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-mesh-minimal <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-mesh-minimal?utm_source=platformio&utm_medium=docs>`_
+* `arduino-mxchip-sensors <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-sensors?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-cpp-synchronization <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-cpp-synchronization?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-net-https-client <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-net-https-client?utm_source=platformio&utm_medium=docs>`_
+* `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio&utm_medium=docs>`_
+* `stm32cube-hal-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-blink?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-drivers-can <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-drivers-can?utm_source=platformio&utm_medium=docs>`_
 * `arduino-mxchip-azureiot <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-azureiot?utm_source=platformio&utm_medium=docs>`_
 * `arduino-mxchip-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-filesystem?utm_source=platformio&utm_medium=docs>`_
-* `arduino-mxchip-sensors <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-sensors?utm_source=platformio&utm_medium=docs>`_
-* `arduino-mxchip-wifiscan <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-wifiscan?utm_source=platformio&utm_medium=docs>`_
-* `cmsis-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/cmsis-blink?utm_source=platformio&utm_medium=docs>`_
-* `libopencm3-1bitsy <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-1bitsy?utm_source=platformio&utm_medium=docs>`_
-* `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-custom-target <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-custom-target?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-filesystem?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos-ethernet <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos-mesh-minimal <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-mesh-minimal?utm_source=platformio&utm_medium=docs>`_
+* `arduino-external-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
 * `mbed-rtos-semaphore <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-semaphore?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
-* `spl-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/spl-blink?utm_source=platformio&utm_medium=docs>`_
-* `stm32cube-hal-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-blink?utm_source=platformio&utm_medium=docs>`_
-* `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `arduino-mxchip-wifiscan <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-wifiscan?utm_source=platformio&utm_medium=docs>`_
+* `libopencm3-1bitsy <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-1bitsy?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-subsys-usb-hid-mouse <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-subsys-usb-hid-mouse?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -94,6 +99,11 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f723ie`
       - STM32F723IEK6
       - 216MHz
@@ -469,6 +479,11 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h743xi`
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_seeedArchMax`
       - STM32F407VET6
       - 168MHz
@@ -699,24 +714,34 @@ Please click on board name for the further details.
       - 32KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - STM32G071RBT6
-      - 24MHz
-      - 2MB
+      - 64MHz
       - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - STM32G431KBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - STM32G431RBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - STM32G474RET6
-      - 17MHz
+      - 170MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_olimexino`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_olimex_p405`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_rak811_tracker`
       - STM32L151RBT6
       - 32MHz
@@ -729,9 +754,34 @@ Please click on board name for the further details.
       - 32KB
     * - :ref:`board_ststm32_rhf76_052`
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_eval_f373vc`
+      - STM32F373VCT6
+      - 72MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_eval_f072vb`
+      - STM32F072VBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - STM32F103C8T6
       - 72MHz
@@ -934,11 +984,71 @@ Packages
     * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897&utm_source=platformio&utm_medium=docs>`__
       - STM32Cube embedded software libraries
 
+    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio&utm_medium=docs>`__
+      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+
+    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module CivetWeb Embedded C/C++ web server
+
+    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for FATFS filesystem
+
+    * - `framework-zephyr-hal-st <https://github.com/zephyrproject-rtos/hal_st?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for the official libraries provided by STMicroelectronics
+
+    * - `framework-zephyr-hal-stm32 <https://github.com/zephyrproject-rtos/hal_stm32?utm_source=platformio&utm_medium=docs>`__
+      - ST STM32 HAL for Zephyr framework
+
+    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for HAL abstraction layer used by open-amp
+
+    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for littlefs filesystem
+
+    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
+
+    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls?utm_source=platformio&utm_medium=docs>`__
+      - mbedTLS module for Zephyr
+
+    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for mcumgr management library for 32-bit MCUs
+
+    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for MIPI System Software Trace
+
+    * - `framework-zephyr-nffs <https://github.com/zephyrproject-rtos/nffs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for the Newtron Flash File System
+
+    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
+
+    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread?utm_source=platformio&utm_medium=docs>`__
+      - OpenThread module for Zephyr
+
+    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Segger RTT
+
+    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Concise Binary Object Representation Library
+
+    * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
     * - `tool-dfuutil <http://dfu-util.sourceforge.net/?utm_source=platformio&utm_medium=docs>`__
       - Host side implementation of the DFU 1.0 and DFU 1.1 specifications
 
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio&utm_medium=docs>`__
+      - Device tree compiler
+
+    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio&utm_medium=docs>`__
+      - GNU gperf is a perfect hash function generator.
+
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
+
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed.
 
     * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
@@ -988,6 +1098,9 @@ Frameworks
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
 
 Boards
 ------
@@ -1525,6 +1638,43 @@ Netduino
       - 1MB
       - 192KB
 
+Olimex
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_olimexino`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_olimex_p405`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+
 RAK
 ~~~
 
@@ -1644,6 +1794,12 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - On-board
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f723ie`
       - On-board
       - STM32F723IEK6
@@ -1701,25 +1857,25 @@ ST
     * - :ref:`board_ststm32_nucleo_g071rb`
       - External
       - STM32G071RBT6
-      - 24MHz
-      - 2MB
+      - 64MHz
       - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - External
       - STM32G431KBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - External
       - STM32G431RBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - External
       - STM32G474RET6
-      - 17MHz
+      - 170MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
@@ -1731,7 +1887,7 @@ ST
     * - :ref:`board_ststm32_rhf76_052`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_disco_f334c8`
@@ -2112,12 +2268,36 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - External
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_eval_f373vc`
+      - External
+      - STM32F373VCT6
+      - 72MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_eval_f072vb`
+      - External
+      - STM32F072VBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_disco_f750n8`
       - On-board
       - STM32F750N8H6
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h743xi`
+      - On-board
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - External
       - STM32L4R9ZI

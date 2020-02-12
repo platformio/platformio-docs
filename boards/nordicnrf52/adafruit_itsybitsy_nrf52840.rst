@@ -71,6 +71,7 @@ ItsyBitsy nRF52840 Express supports the next uploading protocols:
 * ``jlink``
 * ``nrfjprog``
 * ``nrfutil``
+* ``stlink``
 
 Default protocol is ``nrfutil``
 
@@ -108,6 +109,9 @@ ItsyBitsy nRF52840 Express has on-board debug probe and **IS READY** for debuggi
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes
+  * - :ref:`debugging_tool_stlink`
+    - 
+    - 
 
 Frameworks
 ----------

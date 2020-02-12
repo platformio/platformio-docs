@@ -70,6 +70,7 @@ Nordic nRF52840-DK (Adafruit BSP) supports the next uploading protocols:
 
 * ``jlink``
 * ``nrfjprog``
+* ``stlink``
 
 Default protocol is ``jlink``
 
@@ -107,6 +108,9 @@ Nordic nRF52840-DK (Adafruit BSP) has on-board debug probe and **IS READY** for 
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes
+  * - :ref:`debugging_tool_stlink`
+    - 
+    - 
 
 Frameworks
 ----------

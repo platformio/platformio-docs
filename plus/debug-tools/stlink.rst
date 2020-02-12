@@ -186,6 +186,9 @@ Frameworks
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
 
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+
 Boards
 ------
 
@@ -210,6 +213,13 @@ Boards
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_f412zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f723ie`
       - :ref:`platform_ststm32`
       - On-board
@@ -252,6 +262,13 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_nordicnrf52_96b_nitrogen`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_aceinna_imu_LowCostRTK`
       - :ref:`platform_aceinna_imu`
       - On-board
@@ -280,6 +297,20 @@ Boards
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_afroflight_f103cb`
       - :ref:`platform_ststm32`
       - External
@@ -322,6 +353,20 @@ Boards
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_laird_bl652_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl654_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - External
@@ -420,6 +465,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_coreboard_f401rc`
       - :ref:`platform_ststm32`
       - External
@@ -448,6 +500,20 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_nordicnrf52_electronut_blip`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_electronut_papyr`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_elmo_f411re`
       - :ref:`platform_ststm32`
       - External
@@ -469,6 +535,20 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_nordicnrf52_holyiot_yj16019`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_rhombio_l476dmw1k`
       - :ref:`platform_ststm32`
       - On-board
@@ -497,6 +577,20 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_nordicnrf52_nrf52832_mdk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_nrf52840_mdk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_malyanm200_f103cb`
       - :ref:`platform_ststm32`
       - External
@@ -539,6 +633,13 @@ Boards
       - 168MHz
       - 2MB
       - 256KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_microduino32_flash`
       - :ref:`platform_ststm32`
       - External
@@ -595,6 +696,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_thingy_52`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -616,6 +724,20 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_nordicnrf51_oshchip`
       - :ref:`platform_nordicnrf51`
       - External
@@ -623,6 +745,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_olimex_p405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - :ref:`platform_ststm32`
       - On-board
@@ -630,6 +759,13 @@ Boards
       - 64MHz
       - 512KB
       - 192.00KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - External
@@ -648,7 +784,7 @@ Boards
       - :ref:`platform_ststm32`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
@@ -1155,6 +1291,41 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_eval_f373vc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F373VCT6
+      - 72MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_eval_f072vb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F072VBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - External
@@ -1295,6 +1466,13 @@ Boards
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h743xi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - External
@@ -1386,6 +1564,13 @@ Boards
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_nordicnrf52_vbluno52`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`
       - External

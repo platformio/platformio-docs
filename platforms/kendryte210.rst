@@ -32,8 +32,8 @@ Examples
 Examples are listed from `Kendryte K210 development platform repository <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
 * `arduino-blink <https://github.com/sipeed/platform-kendryte210/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `kendryte-freertos-sdk_hello <https://github.com/sipeed/platform-kendryte210/tree/master/examples/kendryte-freertos-sdk_hello?utm_source=platformio&utm_medium=docs>`_
 * `kendryte-standalone-sdk_hello <https://github.com/sipeed/platform-kendryte210/tree/master/examples/kendryte-standalone-sdk_hello?utm_source=platformio&utm_medium=docs>`_
+* `kendryte-freertos-sdk_hello <https://github.com/sipeed/platform-kendryte210/tree/master/examples/kendryte-freertos-sdk_hello?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

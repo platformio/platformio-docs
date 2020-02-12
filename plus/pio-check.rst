@@ -30,7 +30,9 @@ precise location of defects and eliminate issues more efficiently and earlier
 in the development cycle. It can also ensure compliance with internal or
 industry coding standards such as MISRA, CERT, etc.
 
-Key features:
+Key features
+------------
+
   - Fully integrated within the PlatformIO ecosystem and easy to execute on the entire project.
   - Straightforward integration with :ref:`ci` services.
   - Possibility to reuse the same setup on other projects.
@@ -92,6 +94,7 @@ process can be found on these pages:
 
   check-tools/cppcheck
   check-tools/clang-tidy
+  check-tools/pvs-studio
 
 .. _check_severity:
 

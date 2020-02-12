@@ -65,6 +65,12 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - :ref:`platform_ststm32`
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f723ie`
       - :ref:`platform_ststm32`
       - STM32F723IEK6
@@ -515,6 +521,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h743xi`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_seeedArchMax`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -786,6 +798,18 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_olimex_p405`
+      - :ref:`platform_ststm32`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - STM32L151RBT6
@@ -801,9 +825,39 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_rhf76_052`
       - :ref:`platform_ststm32`
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - :ref:`platform_ststm32`
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_eval_f373vc`
+      - :ref:`platform_ststm32`
+      - STM32F373VCT6
+      - 72MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_eval_f072vb`
+      - :ref:`platform_ststm32`
+      - STM32F072VBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -1594,6 +1648,48 @@ Netduino
       - 1MB
       - 192KB
 
+Olimex
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_olimex_p405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+
 RAK
 ~~~
 
@@ -1726,6 +1822,13 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f723ie`
       - :ref:`platform_ststm32`
       - On-board
@@ -1793,7 +1896,7 @@ ST
       - :ref:`platform_ststm32`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_disco_f334c8`
@@ -2237,6 +2340,27 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_eval_f107vc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F107VCT6
+      - 72MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_eval_f373vc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F373VCT6
+      - 72MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_ststm32_eval_f072vb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F072VBT6
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_ststm32_disco_f750n8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2244,6 +2368,13 @@ ST
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h743xi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - :ref:`platform_ststm32`
       - External

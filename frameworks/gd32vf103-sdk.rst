@@ -77,6 +77,12 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - :ref:`platform_gd32v`
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB
     * - :ref:`board_gd32v_wio_lite_risc-v`
       - :ref:`platform_gd32v`
       - GD32VF103CBT6
@@ -157,3 +163,10 @@ Sipeed
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB

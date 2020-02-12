@@ -1089,6 +1089,27 @@ Pycom Ltd.
       - 4MB
       - 1.25MB
 
+Qmobot LLP
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_qchip`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Silicognition
 ~~~~~~~~~~~~~
 

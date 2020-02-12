@@ -71,6 +71,7 @@ Adafruit Bluefruit nRF52832 Feather supports the next uploading protocols:
 * ``jlink``
 * ``nrfjprog``
 * ``nrfutil``
+* ``stlink``
 
 Default protocol is ``nrfutil``
 
@@ -108,6 +109,9 @@ Adafruit Bluefruit nRF52832 Feather does not have on-board debug probe and **IS 
   * - :ref:`debugging_tool_jlink`
     - 
     - Yes
+  * - :ref:`debugging_tool_stlink`
+    - 
+    - 
 
 Frameworks
 ----------
@@ -119,3 +123,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.

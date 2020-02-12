@@ -126,6 +126,13 @@ Doit
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif8266_espmxdevkit`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
     * - :ref:`board_espressif8266_espduino`
       - :ref:`platform_espressif8266`
       - No
@@ -300,6 +307,48 @@ Heltec
       - ESP8266
       - 80MHz
       - 4MB
+      - 80KB
+
+ITEAD
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_sonoff_basic`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_s20`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_sv`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_th`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
       - 80KB
 
 Invent One

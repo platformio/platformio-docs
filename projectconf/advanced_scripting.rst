@@ -16,53 +16,53 @@ Advanced Scripting
 
 .. warning::
 
-  Advanced Scripting is recommended for Advanced Users and requires Python
-  language knowledge.
+  Advanced Scripting is recommended for Advanced Users and requires
+  knowledge of the Python language.
 
-  We highly recommend to take a look at :ref:`projectconf_dynamic_build_flags`
-  option where you can use any programming language. Also, this option is
-  useful if you need to apply changes to the project before building/uploading
-  process:
+.. warning::
+
+  :ref:`projectconf_dynamic_build_flags` is a highly recommended
+  alternative to advanced scripting, where you can use any programming
+  language. Also, that option is useful if you need to apply changes
+  to the project before the building/uploading process, such as:
 
   * Macro with the latest VCS revision/tag "on-the-fly"
   * Generate dynamic headers (``*.h``)
   * Process media content before generating SPIFFS image
   * Make some changes to source code or related libraries
 
-  More details :ref:`projectconf_dynamic_build_flags`.
-
 .. contents::
 
-PlatformIO Build System allows one to extend build process with the custom
-:ref:`projectconf_extra_scripts` using Python interpreter and
-`SCons <http://www.scons.org>`_ construction tool.
-Build and upload flags, targets, toolchains data, and other information are
-stored in `SCons Construction Environments <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
+The PlatformIO Build System allows the user to extend the build process with
+custom scripts using the Python interpreter and
+the `SCons <http://www.scons.org>`_ construction tool.
+Build flags, upload flags, targets, toolchains data and other information are
+available for modification as `SCons Construction Environments <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
+Custom scripts are included with :ref:`projectconf_extra_scripts`
 
 .. warning::
-  You can not run/debug these scripts directly with Python interpreter. They
-  will be loaded automatically when you processing project environment using
-  :ref:`cmd_run` command.
+  You can not run or debug these scripts manually with a Python
+  interpreter. They will be loaded automatically when the
+  :ref:`cmd_run` command processes the project environment.
 
 Launch types
 ~~~~~~~~~~~~
 
-There are 2 launch type of extra scripts:
+There are two execution orders for extra scripts:
 
-1. **PRE** - executes before a main script of :ref:`platforms`
-2. **POST** - executes after a main script of :ref:`platforms`
-
+1. **PRE** - executes before the main script of :ref:`platforms`
+2. **POST** - executes after the main script of :ref:`platforms`
 
 Multiple extra scripts are allowed. Please split them via  ", "
 (comma + space) in the same line or use multi-line values.
 
-For example, :ref:`projectconf`
+For example, in :ref:`projectconf`:
 
 .. code-block:: ini
 
   [env:my_env_1]
   platform = ...
-  ; without prefix, POST script
+  ; Defaults to POST script since no prefix is used
   extra_scripts = post_extra_script.py
 
   [env:my_env_2]
@@ -72,20 +72,20 @@ For example, :ref:`projectconf`
     post:post_extra_script1.py
     post_extra_script2.py
 
-This option can also be set by global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
+This option can also be set by the global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
 
 Construction Environments
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are 2 built-in construction environments which PlatformIO Build System
-uses to process a project:
+The PlatformIO Build System uses two built-in construction environments
+to process each project:
 
-* ``env``, ``Import("env")`` - global construction environment which is used
-  for :ref:`platforms` and :ref:`frameworks` build scripts, upload tools,
+* ``env``, ``Import("env")`` - the global construction environment used
+  for the :ref:`platforms` and :ref:`frameworks` build scripts, upload tools,
   :ref:`ldf`, and other internal operations
-* ``projenv``, ``Import("projenv")`` - isolated construction environment which
-  is used for processing of a project source code located in :ref:`projectconf_pio_src_dir`.
-  Please note that :ref:`projectconf_src_build_flags` specified in
+* ``projenv``, ``Import("projenv")`` - the isolated construction environment
+  used for processing the project source code in :ref:`projectconf_pio_src_dir`.
+  Please note that any :ref:`projectconf_src_build_flags` specified in
   :ref:`projectconf` will be passed to ``projenv`` and not to ``env``.
 
 
@@ -154,18 +154,18 @@ data or add new.
 Before/Pre and After/Post actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO Build System has a rich API that allows one to attach different pre-/post
+The PlatformIO Build System has a rich API that allows one to attach different pre-/post
 actions (hooks) using ``env.AddPreAction(target, callback)`` or
-``env.AddPreAction(target, [callback1, callback2, ...])`` function. A first
-argument ``target`` can be a name of target that is passed using
-:option:`platformio run --target` command, a name of built-in targets
-(buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or path
-to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
+``env.AddPreAction(target, [callback1, callback2, ...])`` function. The first
+argument ``target`` can be the name of a target that is passed using the
+:option:`platformio run --target` command, the name of a built-in target
+(buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or the path
+to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
 
 **Examples**
 
-``extra_script.py`` file is located on the same level as ``platformio.ini``.
+The ``extra_script.py`` file is located in the same directory as ``platformio.ini``.
 
 ``platformio.ini``:
 
@@ -776,7 +776,42 @@ hardware VID/PIDs:
     Import("env")
 
     board_config = env.BoardConfig()
+    # should be array of VID:PID pairs
     board_config.update("build.hwids", [
-      ["0x2341", "0x0243"],
-      ["0x2A03", "0x0043"]
+      ["0x2341", "0x0243"],  # 1st pair
+      ["0x2A03", "0x0043"].  # 2nd pair, etc.
     ])
+
+
+Custom debug flags
+''''''''''''''''''
+
+PlatformIO removes all debug/optimization flags before a debug session or when
+:ref:`build_configurations` is set to ``debug`` and overrides them with
+``-0g -g2 -ggdb2`` for ``ASFLAGS``, ``CCFLAGS``, and ``LINKFLAGS`` build
+scopes.
+
+An extra script allows us to override PlatformIO's default behavior and declare
+custom flags. See example below where we override ``-Og`` with ``-O0``:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:teensy31]
+    platform = teensy
+    board = teensy31
+    framework = arduino
+    extra_scripts = custom_debug_flags.py
+
+``custom_debug_flags.py``:
+
+.. code-block:: python
+
+    Import("env")
+
+    if env.GetBuildType() == "debug":
+       for scope in ("ASFLAGS", "CCFLAGS", "LINKFLAGS"):
+          for i, flag in enumerate(env[scope]):
+             if flag == "-Og":
+                env[scope][i] = "-O0"

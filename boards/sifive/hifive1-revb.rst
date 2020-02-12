@@ -98,3 +98,6 @@ Frameworks
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.

@@ -9,13 +9,14 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-PlatformIO is an open source ecosystem for embedded development
-===============================================================
+PlatformIO is a new generation ecosystem for embedded development
+=================================================================
 
-* **Cross-platform IDE** and **Unified Debugger**
-* **Static Code Analyzer** and **Remote Unit Testing**
-* **Multi-platform** and **Multi-architecture Build System**
-* **Firmware File Explorer** and **Memory Inspection**.
+* Open source, maximum permissive Apache 2.0 license
+* Cross-platform IDE and Unified Debugger
+* Static Code Analyzer and Remote Unit Testing
+* Multi-platform and Multi-architecture Build System
+* Firmware File Explorer and Memory Inspection.
 
 **Social:** `Twitter <https://twitter.com/PlatformIO_Org>`_ |
 `LinkedIn <https://www.linkedin.com/company/platformio/>`_ |

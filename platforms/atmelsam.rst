@@ -31,15 +31,18 @@ Examples
 
 Examples are listed from `Atmel SAM development platform repository <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-external-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-web-thing-led <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-web-thing-led?utm_source=platformio&utm_medium=docs>`_
 * `mbed-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-drivers-i2c-scanner <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-drivers-i2c-scanner?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-subsys-logger <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-subsys-logger?utm_source=platformio&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-external-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `arduino-web-thing-led <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-web-thing-led?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -443,14 +446,71 @@ Packages
     * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
       - Simba Framework
 
+    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio&utm_medium=docs>`__
+      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+
+    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module CivetWeb Embedded C/C++ web server
+
+    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for FATFS filesystem
+
+    * - `framework-zephyr-hal-atmel <https://github.com/zephyrproject-rtos/hal_atmel?utm_source=platformio&utm_medium=docs>`__
+      - Atmel SAM HAL for Zephyr framework
+
+    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for HAL abstraction layer used by open-amp
+
+    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for littlefs filesystem
+
+    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
+
+    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls?utm_source=platformio&utm_medium=docs>`__
+      - mbedTLS module for Zephyr
+
+    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for mcumgr management library for 32-bit MCUs
+
+    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for MIPI System Software Trace
+
+    * - `framework-zephyr-nffs <https://github.com/zephyrproject-rtos/nffs?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for the Newtron Flash File System
+
+    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
+
+    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread?utm_source=platformio&utm_medium=docs>`__
+      - OpenThread module for Zephyr
+
+    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Segger RTT
+
+    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor?utm_source=platformio&utm_medium=docs>`__
+      - Zephyr module for Concise Binary Object Representation Library
+
     * - `tool-avrdude <http://www.nongnu.org/avrdude/?utm_source=platformio&utm_medium=docs>`__
       - AVRDUDE
 
     * - `tool-bossac <https://sourceforge.net/projects/b-o-s-s-a/?utm_source=platformio&utm_medium=docs>`__
       - BOSSA CLI
 
+    * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio&utm_medium=docs>`__
+      - Device tree compiler
+
+    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio&utm_medium=docs>`__
+      - GNU gperf is a perfect hash function generator.
+
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
+
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed.
 
     * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
       - OpenOCD
@@ -488,6 +548,9 @@ Frameworks
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
 
 Boards
 ------

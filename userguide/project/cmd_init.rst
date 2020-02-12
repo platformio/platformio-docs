@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_init:
+.. _cmd_project_init:
 
-platformio init
-===============
+platformio project init
+=======================
 
 .. contents::
 
@@ -21,15 +21,14 @@ Usage
 
 .. code-block:: bash
 
-    platformio init [OPTIONS]
-    pio init [OPTIONS]
+    platformio project init [OPTIONS]
+    pio project init [OPTIONS]
 
 
 Description
 -----------
 
-Initialize new PlatformIO based project or update existing with new data.
-
+Initialize a new PlatformIO based project or update existing with new data.
 
 This command will create:
 
@@ -45,7 +44,7 @@ This command will create:
 Options
 -------
 
-.. program:: platformio init
+.. program:: platformio project init
 
 .. option::
     -d, --project-dir
@@ -71,14 +70,14 @@ The full list with pre-configured boards is available here :ref:`platforms`.
 Initialize PlatformIO project for the specified IDE which can be imported later
 via "Import Project" functionality.
 
-A list with supported IDE is available within ``platformio init --help`` command.
+A list with supported IDE is available within ``platformio project init --help`` command.
 Also, please take a look at :ref:`ide` page.
 
 .. option::
     -O, --project-option
 
 Initialize project with additional options from :ref:`projectconf`. For example,
-``platformio init --project-option="lib_deps=ArduinoJSON"``.
+``platformio project init --project-option="lib_deps=ArduinoJSON"``.
 Multiple options are allowed.
 
 .. option::
@@ -100,11 +99,11 @@ Examples
 
 .. code::
 
-    > platformio init
+    > platformio project init
 
     The current working directory *** will be used for the new project.
     You can specify another project directory via
-    `platformio init -d %PATH_TO_THE_PROJECT_DIR%` command.
+    `platformio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
 
     The next files/directories will be created in ***
     platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
@@ -121,7 +120,7 @@ Examples
 
 .. code::
 
-    > platformio init -d %PATH_TO_DIR%
+    > platformio project init -d %PATH_TO_DIR%
 
     The next files/directories will be created in ***
      platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
@@ -131,21 +130,21 @@ Examples
 
 .. code::
 
-    > platformio init --board uno
+    > platformio project init --board uno
 
     The current working directory *** will be used for the new project.
     You can specify another project directory via
-    `platformio init -d %PATH_TO_THE_PROJECT_DIR%` command.
+    `platformio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
     ...
 
 4. Initialize project for Teensy 3.1 board with custom :ref:`framework_mbed`
 
 .. code::
 
-    > platformio init --board teensy31 --project-option "framework=mbed"
+    > platformio project init --board teensy31 --project-option "framework=mbed"
 
     The current working directory *** will be used for the new project.
     You can specify another project directory via
-    `platformio init -d %PATH_TO_THE_PROJECT_DIR%` command.
+    `platformio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
 
     ...

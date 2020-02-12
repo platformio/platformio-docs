@@ -169,7 +169,7 @@ Default upload commands are declared in ``build/main.py`` script file of
     ``some-flash-bin-tool $UPLOADERFLAGS $SOURCE``, where
     ``$SOURCE`` will be replaced by a real program/firmware binary.
 
-    ``$PROJECTPACKAGES_DIR`` build variable points to :ref:`projectconf_pio_packages_dir`.
+    ``$PROJECT_PACKAGES_DIR`` build variable points to :ref:`projectconf_pio_packages_dir`.
 
     .. code-block:: ini
 
@@ -179,7 +179,7 @@ Default upload commands are declared in ``build/main.py`` script file of
         board = uno
         upload_flags =
             -C
-            $PROJECTPACKAGES_DIR/tool-avrdude/avrdude.conf
+            $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
             -p
             atmega328p
             -P
@@ -200,7 +200,7 @@ Default upload commands are declared in ``build/main.py`` script file of
         board = uno
         upload_flags =
             -C
-            $PROJECTPACKAGES_DIR/tool-avrdude/avrdude.conf
+            $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
             -p
             atmega328p
             -Pusb
@@ -216,4 +216,4 @@ Default upload commands are declared in ``build/main.py`` script file of
         platform = ststm32
         framework = stm32cube
         board = bluepill_f103c6
-        upload_command = $PROJECTPACKAGES_DIR/tool-stlink/st-flash write $SOURCE 0x8000000
+        upload_command = $PROJECT_PACKAGES_DIR/tool-stlink/st-flash write $SOURCE 0x8000000

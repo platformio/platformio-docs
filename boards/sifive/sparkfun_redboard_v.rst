@@ -9,56 +9,56 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_samsung_artik_artik_053:
+.. _board_sifive_sparkfun_redboard_v:
 
-Samsung ARTIK053
-================
+SparkFun RED-V RedBoard
+=======================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_samsung_artik`: The Samsung ARTIK Smart IoT platform brings hardware modules and cloud services together, with built-in security and an ecosystem of tools and partners to speed up your time-to-market.
+Platform :ref:`platform_sifive`: SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 .. list-table::
 
   * - **Microcontroller**
-    - S5JT200
+    - FE310
   * - **Frequency**
     - 320MHz
   * - **Flash**
-    - 8MB
+    - 16MB
   * - **RAM**
-    - 1.25MB
+    - 16KB
   * - **Vendor**
-    - `Samsung <http://www.artik.io?utm_source=platformio&utm_medium=docs>`__
+    - `SparkFun <https://www.sparkfun.com/products/15594?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``artik_053`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sparkfun_redboard_v`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:artik_053]
-  platform = samsung_artik
-  board = artik_053
+  [env:sparkfun_redboard_v]
+  platform = sifive
+  board = sparkfun_redboard_v
 
-You can override default Samsung ARTIK053 settings per build environment using
+You can override default SparkFun RED-V RedBoard settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `artik_053.json <https://github.com/platformio/platform-samsung_artik/blob/master/boards/artik_053.json>`_. For example,
+board manifest `sparkfun_redboard_v.json <https://github.com/platformio/platform-sifive/blob/master/boards/sparkfun_redboard_v.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:artik_053]
-  platform = samsung_artik
-  board = artik_053
+  [env:sparkfun_redboard_v]
+  platform = sifive
+  board = sparkfun_redboard_v
 
   ; change microcontroller
-  board_build.mcu = s5jt200
+  board_build.mcu = fe310
 
   ; change MCU frequency
   board_build.f_cpu = 320000000L
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Samsung ARTIK053 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+SparkFun RED-V RedBoard has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -84,7 +84,7 @@ Samsung ARTIK053 has on-board debug probe and **IS READY** for debugging. You do
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_ftdi`
+  * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes
 
@@ -96,5 +96,8 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_tizenrt`
-      - Tizen RT is a lightweight RTOS-based platform to support low-end IoT devices
+    * - :ref:`framework_freedom-e-sdk`
+      - Open Source Software for Developing on the SiFive Freedom E Platform
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.

@@ -804,6 +804,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_nano33ble`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 960KB
+      - 256KB
     * - :ref:`board_atmelsam_tian`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -1155,25 +1161,25 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - STM32G071RBT6
-      - 24MHz
-      - 2MB
+      - 64MHz
       - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - :ref:`platform_ststm32`
       - STM32G431KBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - :ref:`platform_ststm32`
       - STM32G431RBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
       - STM32G474RET6
-      - 17MHz
+      - 170MHz
       - 512KB
       - 128KB
     * - :ref:`board_espressif32_esp32-devkitlipo`
@@ -1194,12 +1200,24 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_nordicnrf51_oshchip`
       - :ref:`platform_nordicnrf51`
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_espressif32_lopy`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1227,7 +1245,7 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_rhf76_052`
       - :ref:`platform_ststm32`
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_atmelsam_sodaq_autonomo`
@@ -1260,6 +1278,18 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -1410,6 +1440,12 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - :ref:`platform_gd32v`
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
       - K210
@@ -1517,7 +1553,7 @@ Please click on board name for the further details.
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - MKL26Z64
@@ -1590,12 +1626,6 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
-    * - :ref:`board_nordicnrf52_particle_xenon`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 796KB
-      - 243KB
     * - :ref:`board_espressif32_xinabox_cw02`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1632,6 +1662,7 @@ Examples
 --------
 
 * `Arduino for Atmel AVR <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Arduino for Atmel megaAVR <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 * `Arduino for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
@@ -1657,7 +1688,10 @@ Platforms
       - Description
 
     * - :ref:`platform_atmelavr`
-      - Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
+      - Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming
+
+    * - :ref:`platform_atmelmegaavr`
+      - 8-bit MCUs Built for Real-time Control with Core Independent Peripherals combining intelligent hardware peripherals along with the low-power capability of an AVR core, megaAVR microcontrollers (MCUs) broaden the effectiveness of your real-time control systems.
 
     * - :ref:`platform_atmelsam`
       - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
@@ -2516,6 +2550,13 @@ Arduino
       - 16MHz
       - 7KB
       - 1KB
+    * - :ref:`board_nordicnrf52_nano33ble`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 960KB
+      - 256KB
     * - :ref:`board_atmelavr_nanoatmega168`
       - :ref:`platform_atmelavr`
       - No
@@ -2537,6 +2578,13 @@ Arduino
       - 16MHz
       - 30KB
       - 2KB
+    * - :ref:`board_atmelmegaavr_nano_every`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA4809
+      - 16MHz
+      - 47.50KB
+      - 6KB
     * - :ref:`board_atmelavr_pro8MHzatmega168`
       - :ref:`platform_atmelavr`
       - No
@@ -2593,6 +2641,13 @@ Arduino
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_atmelmegaavr_uno_wifi_rev2`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA4809
+      - 16MHz
+      - 47.50KB
+      - 6KB
     * - :ref:`board_atmelavr_yun`
       - :ref:`platform_atmelavr`
       - No
@@ -3405,6 +3460,13 @@ Doit
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif8266_espmxdevkit`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
     * - :ref:`board_espressif8266_espduino`
       - :ref:`platform_espressif8266`
       - No
@@ -4183,6 +4245,48 @@ Hornbill
       - 4MB
       - 320KB
 
+ITEAD
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_sonoff_basic`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_s20`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_sv`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_sonoff_th`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+
 Infineon
 ~~~~~~~~
 
@@ -4315,6 +4419,27 @@ Invent One
       - 80MHz
       - 4MB
       - 80KB
+
+IoTaaP
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_iotaap_magnolia`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 LeafLabs
 ~~~~~~~~
@@ -4519,27 +4644,6 @@ MH-ET Live
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_mhetesp32minikit`
-      - :ref:`platform_espressif32`
-      - External
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-
-MVT Solutions
-~~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_espressif32_iotaap_magnolia`
       - :ref:`platform_espressif32`
       - External
       - ESP32
@@ -5351,6 +5455,13 @@ Olimex
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_espressif8266_modwifi`
       - :ref:`platform_espressif8266`
       - No
@@ -5365,6 +5476,20 @@ Olimex
       - 80MHz
       - 252KB
       - 32KB
+    * - :ref:`board_ststm32_olimex_e407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_olimex_h407`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
 
 Onehorse
 ~~~~~~~~
@@ -5562,6 +5687,27 @@ Pontech
       - 508KB
       - 128KB
 
+Prusa 3D
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_prusa_rambo`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA2560
+      - 16MHz
+      - 252KB
+      - 8KB
+
 Punch Through
 ~~~~~~~~~~~~~
 
@@ -5624,6 +5770,27 @@ Pycom Ltd.
       - 240MHz
       - 4MB
       - 1.25MB
+
+Qmobot LLP
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_qchip`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Quirkbot
 ~~~~~~~~
@@ -6020,28 +6187,28 @@ ST
       - :ref:`platform_ststm32`
       - External
       - STM32G071RBT6
-      - 24MHz
-      - 2MB
+      - 64MHz
       - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - :ref:`platform_ststm32`
       - External
       - STM32G431KBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - :ref:`platform_ststm32`
       - External
       - STM32G431RBT6
-      - 24MHz
+      - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
       - External
       - STM32G474RET6
-      - 17MHz
+      - 170MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
@@ -6055,7 +6222,7 @@ ST
       - :ref:`platform_ststm32`
       - External
       - STM32L051C8T6
-      - 84MHz
+      - 32MHz
       - 64KB
       - 8KB
     * - :ref:`board_ststm32_disco_f746ng`
@@ -6513,6 +6680,13 @@ Sipeed
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB
     * - :ref:`board_kendryte210_sipeed-maix-bit`
       - :ref:`platform_kendryte210`
       - External
@@ -7016,7 +7190,7 @@ Teensy
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - :ref:`platform_teensy`
       - External

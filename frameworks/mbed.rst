@@ -11,7 +11,7 @@
 
 .. _framework_mbed:
 
-mbed
+Mbed
 ====
 
 :Configuration:
@@ -19,7 +19,7 @@ mbed
 
 The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
 
-For more detailed information please visit `vendor site <http://mbed.org/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.mbed.com?utm_source=platformio&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -65,6 +65,12 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - :ref:`platform_ststm32`
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - :ref:`platform_ststm32`
       - STM32F446VET6
@@ -990,6 +996,12 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 36KB
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_nordicnrf52_sdt52832b`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -1055,17 +1067,17 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `mbed for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Maxim 32 <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for RISC-V GAP <https://github.com/pioplus/platform-riscv_gap/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `mbed for WIZNet W7500 <https://github.com/platformio/platform-wiznet7500/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for Maxim 32 <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for RISC-V GAP <https://github.com/pioplus/platform-riscv_gap/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for WIZNet W7500 <https://github.com/platformio/platform-wiznet7500/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -1907,6 +1919,27 @@ Nordic
       - 1MB
       - 256KB
 
+Olimex
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+
 Outrageous Circuits
 ~~~~~~~~~~~~~~~~~~~
 
@@ -2004,6 +2037,13 @@ ST
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_disco_f412zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F412ZGT6
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - On-board
