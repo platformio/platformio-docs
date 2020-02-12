@@ -196,13 +196,6 @@ Boards
       - 108MHz
       - 128KB
       - 32KB
-    * - :ref:`board_nuclei_hbird_eval`
-      - :ref:`platform_nuclei`
-      - On-board
-      - HUMMINGBIRD
-      - 5MHz
-      - 64KB
-      - 64KB
     * - :ref:`board_gd32v_sipeed-longan-nano`
       - :ref:`platform_gd32v`
       - External
