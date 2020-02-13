@@ -165,7 +165,7 @@ overclock a board by specifying a ``board_build.f_cpu`` value other than the def
 .. _projectconf_board_build.ldscript:
 
 ``board_build.ldscript``
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Type: ``String`` | Multiple: ``No``
 
