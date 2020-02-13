@@ -17,7 +17,7 @@ Migrating from 3.x to 4.0
 Guidance on how to upgrade from :ref:`piocore` v3.x to v4.x with emphasis on
 major changes, what is new, and what has been removed.
 
-Please read :ref:`PlatformIO 4.0 Release Notes <release_notes_4_0>` before.
+Please read :ref:`PlatformIO 4.0 Release Notes <release_notes_4>` before.
 
 .. contents:: Contents
   :local:
@@ -76,7 +76,7 @@ What is new
 
 In this section, we are going to highlight the most important changes and
 features introduced in :ref:`piocore` 4.0. Please visit
-:ref:`PlatformIO 4.0 Release Notes <release_notes_4_0>` for more detailed information.
+:ref:`PlatformIO 4.0 Release Notes <release_notes_4>` for more detailed information.
 
 :ref:`projectconf`
 ~~~~~~~~~~~~~~~~~~
@@ -302,7 +302,7 @@ presented in PlatformIO 3.0:
    build environments declared via :ref:`projectconf_lib_deps` option
    were installed into the same ``.piolibdeps`` folder.
 
-See **Library Management** section in :ref:`release_notes_4_0` release notes
+See **Library Management** section in :ref:`release_notes_4` release notes
 for more details.
 
 Build System
@@ -314,7 +314,7 @@ and, other artifacts. A new :ref:`projectconf_build_type` option allows you
 to control a build process between "Release" and "Debug" modes
 (see :ref:`build_configurations`).
 
-See **Build System** section in :ref:`release_notes_4_0` release notes
+See **Build System** section in :ref:`release_notes_4` release notes
 for more details.
 
 Package Dependencies
