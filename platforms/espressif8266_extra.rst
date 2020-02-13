@@ -97,18 +97,18 @@ https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld
 
 Please open ``eagle.flash.***.ld`` file to check how flash is split.
 
-To override default LD script please use :ref:`projectconf_build_flags` from
-:ref:`projectconf`.
+To override default LD script please use :ref:`projectconf_board_build.ldscript`
+option from :ref:`projectconf`.
 
 .. code-block:: ini
 
     [env:myenv]
-    build_flags = -Wl,-Teagle.flash.4m.ld
+    board_build.ldscript = eagle.flash.4m.ld
 
 Upload Speed
 ~~~~~~~~~~~~
 
-You can set custom upload speed using  :ref:`projectconf_upload_speed` option
+You can set custom upload speed using :ref:`projectconf_upload_speed` option
 from :ref:`projectconf`
 
 .. code-block:: ini
