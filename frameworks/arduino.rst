@@ -1765,27 +1765,6 @@ Boards
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_espressif8266_gen4iod`
-      - :ref:`platform_espressif8266`
-      - No
-      - ESP8266
-      - 80MHz
-      - 512KB
-      - 80KB
-
-4DSystems
-~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
     * - :ref:`board_microchippic32_picadillo_35t`
       - :ref:`platform_microchippic32`
       - No
@@ -1793,6 +1772,13 @@ Boards
       - 80MHz
       - 508KB
       - 128KB
+    * - :ref:`board_espressif8266_gen4iod`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 512KB
+      - 80KB
 
 AI Thinker
 ~~~~~~~~~~
