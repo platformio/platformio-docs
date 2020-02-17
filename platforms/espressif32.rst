@@ -121,6 +121,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_az-delivery-devkit-v4`
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_featheresp32`
       - ESP32
       - 240MHz
@@ -457,6 +462,25 @@ AI Thinker
       - 240MHz
       - 4MB
       - 320KB
+
+AZ-Delivery
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_az-delivery-devkit-v4`
+      - External
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
 
 Adafruit
 ~~~~~~~~

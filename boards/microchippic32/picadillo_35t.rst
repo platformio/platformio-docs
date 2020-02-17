@@ -11,8 +11,8 @@
 
 .. _board_microchippic32_picadillo_35t:
 
-4DSystems PICadillo 35T
-=======================
+4D Systems PICadillo 35T
+========================
 
 .. contents::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `4DSystems <http://www.4dsystems.com.au/product/Picadillo_35T/?utm_source=platformio&utm_medium=docs>`__
+    - `4D Systems <http://www.4dsystems.com.au/product/Picadillo_35T/?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``picadillo_35t`` ID for :ref:`projectconf_env_board` option in :ref:
   platform = microchippic32
   board = picadillo_35t
 
-You can override default 4DSystems PICadillo 35T settings per build environment using
+You can override default 4D Systems PICadillo 35T settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `picadillo_35t.json <https://github.com/platformio/platform-microchippic32/blob/master/boards/picadillo_35t.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -65,7 +65,7 @@ board manifest `picadillo_35t.json <https://github.com/platformio/platform-micro
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support 4DSystems PICadillo 35T board.
+:ref:`piodebug` currently does not support 4D Systems PICadillo 35T board.
 
 Frameworks
 ----------

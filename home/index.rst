@@ -76,7 +76,7 @@ Statistics
 
 .. image:: ../_static/images/home/pio-home-inspect-stats.png
 
-Only code analysis
+Only code analysis (:ref:`piocheck`)
 
 .. image:: ../_static/images/home/pio-home-inspect-stats-check.png
 

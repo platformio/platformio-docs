@@ -154,13 +154,24 @@ in *Boards* section of :ref:`platforms`. See "Microcontroller" column.
 
 Type: ``Integer`` | Multiple: ``No``
 
-An option ``board_build.f_cpu`` is used to define MCU frequency (Hertz, Clock). A
+The option ``board_build.f_cpu`` is used to define MCU frequency (Hertz, Clock). A
 format of this option is ``C-like long integer`` value with ``L`` suffix. The
 1 Hertz is equal to ``1L``, then 16 MHz (Mega Hertz) is equal to ``16000000L``.
 
 The full list of ``board_build.f_cpu`` for the popular embedded platforms you can
 find in *Boards* section of :ref:`platforms`. See "Frequency" column. You can
 overclock a board by specifying a ``board_build.f_cpu`` value other than the default.
+
+.. _projectconf_board_build.ldscript:
+
+``board_build.ldscript``
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No``
+
+Path to the linker script to be used instead of the one defined by a framework. This 
+is useful for specifying a modified linker script, for example, when an application 
+requires a special memory section for a bootloader.
 
 .. _projectconf_board_more_options:
 
@@ -185,6 +196,9 @@ For example, `Manifest: Espressif ESP32 Dev Module <https://github.com/platformi
 
     ; Custom FLASH Mode
     board_build.flash_mode = qio
+
+    ; Custom linker script
+    board_build.ldscript = /path/to/ldscript.ld
 
     ; Custom maximum program size
     board_upload.maximum_size = 1310720

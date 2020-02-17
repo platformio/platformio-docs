@@ -118,8 +118,8 @@ Boards
     * For more detailed ``board`` information please scroll tables below by
       horizontal.
 
-4DSystems
-~~~~~~~~~
+4D Systems
+~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1

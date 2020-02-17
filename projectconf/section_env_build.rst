@@ -138,9 +138,6 @@ Examples:
       -L/opt/lib
       -lfoo
 
-    [env:specific_ld_script]
-    build_flags = -Wl,-T/path/to/ld_script.ld
-
     [env:ignore_incremental_builds]
     ; We dynamically change the value of "LAST_BUILD_TIME" macro,
     ; PlatformIO will not cache objects
