@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelsam_adafruit_monster_m4sk:
+.. _board_atmelsam_sparkfun_redboard_turbo:
 
-Adafruit MONSTER M4SK
-=====================
+SparkFun RedBoard Turbo
+=======================
 
 .. contents::
 
@@ -24,51 +24,52 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 .. list-table::
 
   * - **Microcontroller**
-    - SAMD51G19A
+    - SAMD21G18A
   * - **Frequency**
-    - 120MHz
+    - 48MHz
   * - **Flash**
-    - 496KB
+    - 256KB
   * - **RAM**
-    - 192KB
+    - 32KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/4343?utm_source=platformio&utm_medium=docs>`__
+    - `SparkFun <https://www.sparkfun.com/products/14812?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``adafruit_monster_m4sk`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sparkfun_redboard_turbo`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:adafruit_monster_m4sk]
+  [env:sparkfun_redboard_turbo]
   platform = atmelsam
-  board = adafruit_monster_m4sk
+  board = sparkfun_redboard_turbo
 
-You can override default Adafruit MONSTER M4SK settings per build environment using
+You can override default SparkFun RedBoard Turbo settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `adafruit_monster_m4sk.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_monster_m4sk.json>`_. For example,
+board manifest `sparkfun_redboard_turbo.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/sparkfun_redboard_turbo.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:adafruit_monster_m4sk]
+  [env:sparkfun_redboard_turbo]
   platform = atmelsam
-  board = adafruit_monster_m4sk
+  board = sparkfun_redboard_turbo
 
   ; change microcontroller
-  board_build.mcu = samd51g19a
+  board_build.mcu = samd21g18a
 
   ; change MCU frequency
-  board_build.f_cpu = 120000000L
+  board_build.f_cpu = 48000000L
 
 
 Uploading
 ---------
-Adafruit MONSTER M4SK supports the next uploading protocols:
+SparkFun RedBoard Turbo supports the next uploading protocols:
 
 * ``atmel-ice``
+* ``blackmagic``
 * ``jlink``
 * ``sam-ba``
 
@@ -78,9 +79,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:adafruit_monster_m4sk]
+  [env:sparkfun_redboard_turbo]
   platform = atmelsam
-  board = adafruit_monster_m4sk
+  board = sparkfun_redboard_turbo
 
   upload_protocol = sam-ba
 
@@ -97,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit MONSTER M4SK does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+SparkFun RedBoard Turbo does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -108,6 +109,9 @@ Adafruit MONSTER M4SK does not have on-board debug probe and **IS NOT READY** fo
   * - :ref:`debugging_tool_atmel-ice`
     - 
     - Yes
+  * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

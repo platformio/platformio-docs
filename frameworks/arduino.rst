@@ -668,7 +668,7 @@ Please click on board name for the further details.
       - 192KB
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
       - :ref:`platform_atmelsam`
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -703,6 +703,12 @@ Please click on board name for the further details.
       - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4_titano`
       - :ref:`platform_atmelsam`
       - SAMD51J20A
       - 120MHz
@@ -787,6 +793,12 @@ Please click on board name for the further details.
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrwan1310`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
       - 48MHz
@@ -1080,12 +1092,6 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_macchina2`
-      - :ref:`platform_atmelsam`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_ststm32_malyanm200_f103cb`
       - :ref:`platform_ststm32`
       - STM32F103CBT6
@@ -1482,6 +1488,12 @@ Please click on board name for the further details.
       - 400MHz
       - 16MB
       - 6MB
+    * - :ref:`board_atmelsam_sparkfun_samd21_9dof`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_esp32thing`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1494,6 +1506,18 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_atmelsam_sparkfun_qwiic_micro_samd21e`
+      - :ref:`platform_atmelsam`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_redboard_turbo`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -1501,6 +1525,12 @@ Please click on board name for the further details.
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_proRF`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
       - 48MHz
@@ -1999,7 +2029,7 @@ Adafruit
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
       - :ref:`platform_atmelsam`
       - External
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -2074,6 +2104,13 @@ Adafruit
       - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4_titano`
       - :ref:`platform_atmelsam`
       - External
       - SAMD51J20A
@@ -2480,6 +2517,13 @@ Arduino
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrwan1310`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A
@@ -4685,27 +4729,6 @@ MXChip
       - 1MB
       - 256KB
 
-Macchina
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_atmelsam_macchina2`
-      - :ref:`platform_atmelsam`
-      - External
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-
 Magicblocks.io
 ~~~~~~~~~~~~~~
 
@@ -6756,6 +6779,13 @@ SparkFun
       - 80MHz
       - 508KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_9dof`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelavr_sparkfun_satmega128rfa1`
       - :ref:`platform_atmelavr`
       - No
@@ -6861,6 +6891,13 @@ SparkFun
       - 8MHz
       - 28KB
       - 2.50KB
+    * - :ref:`board_atmelsam_sparkfun_qwiic_micro_samd21e`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelavr_sparkfun_redboard`
       - :ref:`platform_atmelavr`
       - No
@@ -6868,6 +6905,13 @@ SparkFun
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_atmelsam_sparkfun_redboard_turbo`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - External
@@ -6876,6 +6920,13 @@ SparkFun
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_proRF`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A

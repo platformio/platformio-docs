@@ -274,6 +274,7 @@ Atmel SAM
     atmelsam/adafruit_pygamer_advance_m4
     atmelsam/adafruit_pygamer_m4
     atmelsam/adafruit_pyportal_m4
+    atmelsam/adafruit_pyportal_m4_titano
     atmelsam/adafruit_trellis_m4
     atmelsam/adafruit_trinket_m0
     atmelsam/adafruit_pirkey
@@ -288,6 +289,7 @@ Atmel SAM
     atmelsam/mkrgsm1400
     atmelsam/mkrnb1500
     atmelsam/mkrwan1300
+    atmelsam/mkrwan1310
     atmelsam/mkrwifi1010
     atmelsam/mkr1000USB
     atmelsam/mkrzero
@@ -301,7 +303,6 @@ Atmel SAM
     atmelsam/digix
     atmelsam/current_ranger
     atmelsam/mkrvidor4000
-    atmelsam/macchina2
     atmelsam/minitronics20
     atmelsam/moteino_zero
     atmelsam/nano_33_iot
@@ -313,8 +314,12 @@ Atmel SAM
     atmelsam/sainSmartDue
     atmelsam/sainSmartDueUSB
     atmelsam/seeeduino_lorawan
+    atmelsam/sparkfun_samd21_9dof
+    atmelsam/sparkfun_qwiic_micro_samd21e
+    atmelsam/sparkfun_redboard_turbo
     atmelsam/sparkfun_samd21_dev_usb
     atmelsam/sparkfun_samd21_mini_usb
+    atmelsam/sparkfun_samd21_proRF
     atmelsam/tuinozero96
 
 Espressif 32

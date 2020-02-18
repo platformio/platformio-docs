@@ -185,7 +185,7 @@ Please click on board name for the further details.
       - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -215,6 +215,11 @@ Please click on board name for the further details.
       - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4_titano`
       - SAMD51J20A
       - 120MHz
       - 1MB
@@ -284,6 +289,11 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_mkrwan1310`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_mkrwifi1010`
       - SAMD21G18A
       - 48MHz
@@ -319,11 +329,6 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_macchina2`
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_atmelsam_minitronics20`
       - SAMD21J18A
       - 48MHz
@@ -379,12 +384,32 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_9dof`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_qwiic_micro_samd21e`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_redboard_turbo`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_proRF`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -437,8 +462,35 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinosam <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-arduino-sam <https://github.com/arduino/ArduinoCore-sam?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (SAM Core)
+
+    * - `framework-arduino-samd <https://github.com/arduino/ArduinoCore-samd?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (SAMD Core)
+
+    * - `framework-arduino-samd-adafruit <https://github.com/adafruit/ArduinoCore-samd?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Adafruit SAMD Core)
+
+    * - `framework-arduino-samd-moteino <https://github.com/LowPowerLab/Arduino?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Moteino SAMD Core)
+
+    * - `framework-arduino-samd-reprap <https://github.com/brupje/ArduinoCore-samd?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (RepRap SAMD Core)
+
+    * - `framework-arduino-samd-sodaq <https://github.com/SodaqMoja/SodaqCore-samd?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (SODAQ SAMD Core)
+
+    * - `framework-arduino-samd-sparkfun <https://github.com/sparkfun/Arduino_Boards/tree/master/sparkfun/samd?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (SparkFun SAMD Core)
+
+    * - `framework-arduino-samd-tuino0 <https://github.com/gimasi/TUINO_ZERO_96/tree/master/arduino_ide?utm_source=platformio&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Tuino0 SAMD Core)
+
+    * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio&utm_medium=docs>`__
+      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
+
+    * - `framework-cmsis-atmel <https://github.com/arduino/ArduinoModule-CMSIS-Atmel?utm_source=platformio&utm_medium=docs>`__
+      - Atmel Smart ARM devices CMSIS module
 
     * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
       - mbed Framework
@@ -641,7 +693,7 @@ Adafruit
       - 192KB
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
       - External
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -676,6 +728,12 @@ Adafruit
       - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4_titano`
       - External
       - SAMD51J20A
       - 120MHz
@@ -773,6 +831,12 @@ Arduino
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrwan1310`
       - External
       - SAMD21G18A
       - 48MHz
@@ -927,25 +991,6 @@ LowPowerLab
       - 256KB
       - 32KB
 
-Macchina
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_atmelsam_macchina2`
-      - External
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
-
 ReprapWorld
 ~~~~~~~~~~~
 
@@ -1064,6 +1109,24 @@ SparkFun
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_sparkfun_samd21_9dof`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_qwiic_micro_samd21e`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_redboard_turbo`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - External
       - SAMD21G18A
@@ -1071,6 +1134,12 @@ SparkFun
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_proRF`
       - External
       - SAMD21G18A
       - 48MHz

@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelsam_adafruit_monster_m4sk:
+.. _board_atmelsam_adafruit_pyportal_m4_titano:
 
-Adafruit MONSTER M4SK
-=====================
+Adafruit PyPortal M4 Titano
+===========================
 
 .. contents::
 
@@ -24,41 +24,41 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 .. list-table::
 
   * - **Microcontroller**
-    - SAMD51G19A
+    - SAMD51J20A
   * - **Frequency**
     - 120MHz
   * - **Flash**
-    - 496KB
+    - 1MB
   * - **RAM**
-    - 192KB
+    - 256KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/4343?utm_source=platformio&utm_medium=docs>`__
+    - `Adafruit <https://www.adafruit.com/product/4444?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``adafruit_monster_m4sk`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``adafruit_pyportal_m4_titano`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:adafruit_monster_m4sk]
+  [env:adafruit_pyportal_m4_titano]
   platform = atmelsam
-  board = adafruit_monster_m4sk
+  board = adafruit_pyportal_m4_titano
 
-You can override default Adafruit MONSTER M4SK settings per build environment using
+You can override default Adafruit PyPortal M4 Titano settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `adafruit_monster_m4sk.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_monster_m4sk.json>`_. For example,
+board manifest `adafruit_pyportal_m4_titano.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_pyportal_m4_titano.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:adafruit_monster_m4sk]
+  [env:adafruit_pyportal_m4_titano]
   platform = atmelsam
-  board = adafruit_monster_m4sk
+  board = adafruit_pyportal_m4_titano
 
   ; change microcontroller
-  board_build.mcu = samd51g19a
+  board_build.mcu = samd51j20a
 
   ; change MCU frequency
   board_build.f_cpu = 120000000L
@@ -66,7 +66,7 @@ board manifest `adafruit_monster_m4sk.json <https://github.com/platformio/platfo
 
 Uploading
 ---------
-Adafruit MONSTER M4SK supports the next uploading protocols:
+Adafruit PyPortal M4 Titano supports the next uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``
@@ -78,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:adafruit_monster_m4sk]
+  [env:adafruit_pyportal_m4_titano]
   platform = atmelsam
-  board = adafruit_monster_m4sk
+  board = adafruit_pyportal_m4_titano
 
   upload_protocol = sam-ba
 
@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit MONSTER M4SK does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Adafruit PyPortal M4 Titano does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
