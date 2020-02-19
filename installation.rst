@@ -169,7 +169,7 @@ For upgrading ``platformio`` to the latest version:
 .. code-block:: bash
 
     pip install -U platformio
-    
+
 Or:
 
 .. code-block:: bash
@@ -263,7 +263,7 @@ Creating
     .. code-block:: bash
 
         # Windows
-        C:\Users\UserName\.platformio\penv
+        C:\Users\UserName\.platformio\penv\Scripts\activate
 
         # Unix (Linux, Mac)
         source /path/to/.platformio/penv/bin/activate
