@@ -88,7 +88,7 @@ your project requirements:
     * - ``--lic-file <arg>``
       - Path to custom license file. Default locations ``~/.config/PVS-Studio/PVS-Studio.lic`` on Unix and ``%APPDATA%\PVS-Studio\PVS-Studio.lic`` on Windows
 
-    * - ``---rules-config <arg>``
+    * - ``--rules-config <arg>``
       - Specifies the path to rules configuration file.
 
     * - ``--platform <arg>``
