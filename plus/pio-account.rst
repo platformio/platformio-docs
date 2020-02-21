@@ -19,7 +19,7 @@ PIO Account
 * :ref:`pioremote`
 * Integration with :ref:`ide_cloud`
 
-A registration is **FREE**. No Credit Card Required.
+A registration is **FREE**.
 
 PlatformIO IDE
 --------------

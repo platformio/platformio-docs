@@ -52,8 +52,6 @@ Example
 
     > platformio remote agent list
 
-    PIO Plus (https://pioplus.com)
-
     innomac.local
     -------------
     ID: 98853d930......788d77375e7
@@ -136,8 +134,6 @@ Example
 .. code::
 
     > platformio remote agent list
-
-    PIO Plus (https://pioplus.com)
 
     innomac.local
     -------------

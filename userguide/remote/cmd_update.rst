@@ -57,8 +57,6 @@ Examples
 
     > platformio remote update
 
-    PIO Plus (https://pioplus.com)
-
     Platform Manager
     ================
     Platform timsp430

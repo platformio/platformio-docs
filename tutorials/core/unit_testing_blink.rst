@@ -136,7 +136,6 @@ Test results
 
     > platformio test -e uno --verbose
 
-    PIO Plus (https://pioplus.com) v1.4.6
     Verbose mode can be enabled via `-v, --verbose` option
     Collected 1 items
 

@@ -60,7 +60,7 @@ Contents
     platforms/custom_platform_and_board
 
 .. toctree::
-    :caption: PIO Plus
+    :caption: Professional
     :maxdepth: 1
 
     plus/pio-account

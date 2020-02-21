@@ -93,7 +93,7 @@ Technology
 
 .. image:: ../_static/images/pio-remote-architecture.png
 
-|PIORemote| is an own `PIO Plus <https://pioplus.com/>`__ technology
+|PIORemote| is an own PlatformIO technology
 for remote solutions without external dependencies to
 operating system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
 The Server component (|PIOCloud|) plays a role of coupling link between

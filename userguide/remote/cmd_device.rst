@@ -72,8 +72,6 @@ Example
 
     > platformio remote device list
 
-    PIO Plus (https://pioplus.com)
-
     Agent innomac.local
     ===================
     /dev/cu.Bluetooth-Incoming-Port

@@ -22,7 +22,7 @@ PIO Unified Debugger
 
   `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/finally-pio-unified-debugger-comes-to-vscode/4091>`_
 
-PIO Plus offers a unique debugging experience for productive embedded
+PlatformIO offers a unique debugging experience for productive embedded
 development. Using our multi-board and multi-architecture programming
 experience, we simplified the debugging process in the same way. A zero
 debugging configuration with support for the most popular debugging probes
@@ -30,7 +30,7 @@ and compatibility between IDEs and OS.
 
 Developers can finally forget about complex UI windows which they need to
 pre-configure before a simple “Hello World!” debugging session. No need to
-know any aspects about the debugging server or how to configure it. PIO Plus
+know any aspects about the debugging server or how to configure it. PIO
 Unified Debugger does this complex work automatically having a rich
 configuration database per each board and debugging probe.
 
@@ -194,7 +194,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.

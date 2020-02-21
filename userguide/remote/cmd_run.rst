@@ -118,7 +118,6 @@ Example
 
     > platformio remote run --environment uno --target upload
 
-    PIO Plus (https://pioplus.com)
     Building project locally
     [Wed Oct 26 16:35:09 2016] Processing uno (platform: atmelavr, board: uno, framework: arduino)
     --------------------------------------------------------------------------------
