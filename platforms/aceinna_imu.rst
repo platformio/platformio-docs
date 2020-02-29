@@ -33,6 +33,7 @@ Examples are listed from `Aceinna IMU development platform repository <https://g
 
 * `OpenIMU300RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300RI?utm_source=platformio&utm_medium=docs>`_
 * `OpenIMU330BI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU330BI?utm_source=platformio&utm_medium=docs>`_
+* `OpenRTK330LI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenRTK330LI?utm_source=platformio&utm_medium=docs>`_
 * `OpenIMU300ZI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300ZI?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
@@ -110,6 +111,16 @@ Please click on board name for the further details.
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
 
 
 Stable and upstream versions
@@ -221,3 +232,15 @@ Aceinna
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB

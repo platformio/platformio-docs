@@ -33,6 +33,8 @@ Aceinna IMU
     aceinna_imu/OpenIMU300
     aceinna_imu/OpenIMU300ZA
     aceinna_imu/OpenIMU330
+    aceinna_imu/OpenRTK
+    aceinna_imu/OpenRTK330L
 
 Atmel AVR
 ---------

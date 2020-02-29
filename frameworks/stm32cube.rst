@@ -594,6 +594,18 @@ Please click on board name for the further details.
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - :ref:`platform_aceinna_imu`
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - :ref:`platform_aceinna_imu`
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
     * - :ref:`board_ststm32_afroflight_f103cb`
       - :ref:`platform_ststm32`
       - STM32F103CBT6
@@ -1115,6 +1127,20 @@ Aceinna
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
 
 AfroFlight
 ~~~~~~~~~~

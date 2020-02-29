@@ -337,6 +337,20 @@ Boards
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - :ref:`platform_atmelsam`
       - External
