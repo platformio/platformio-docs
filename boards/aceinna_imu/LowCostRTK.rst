@@ -114,14 +114,3 @@ Aceinna Low Cost RTK has on-board debug probe and **IS READY** for debugging. Yo
   * - :ref:`debugging_tool_stlink`
     - Yes
     - Yes
-
-Frameworks
-----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

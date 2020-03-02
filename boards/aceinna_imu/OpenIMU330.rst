@@ -114,14 +114,3 @@ Aceinna OpenIMU 330 does not have on-board debug probe and **IS NOT READY** for 
   * - :ref:`debugging_tool_stlink`
     - 
     - Yes
-
-Frameworks
-----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
