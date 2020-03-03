@@ -446,6 +446,10 @@ Custom PATH for the ``platformio`` command. Paste here the result of ``echo $PAT
 (Unix) / ``echo %PATH%`` (Windows) command by typing into your system terminal
 if you prefer to use a custom version of :ref:`piocore`. The default value is ``null``, meaning PlatformIO looks for the ``platformio`` command in the system path.
 
+``platformio-ide.disableToolbar``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Disable the PlatformIO toolbar. The default value is ``false``.
+
 ``platformio-ide.forceUploadAndMonitor``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If true, the Upload (``platformio-ide.upload``) command is changed to
@@ -469,6 +473,15 @@ If true, use the built-in :ref:`piocore`. The default value is ``true``.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If true, use the development version of :ref:`piocore`. The default
 value is ``false``.
+
+``platformio-ide.disablePIOHomeStartup``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Disable showing PIO Home at startup. The default value is ``false``.
+
+``platformio-ide.pioHomeServerHttpPort``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PIO Home server HTTP port. The default value ``0`` automatically assigns a free port in
+the range [8010..8100]).
 
 Known issues
 ------------
