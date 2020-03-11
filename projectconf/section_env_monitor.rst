@@ -26,8 +26,8 @@ Custom options for :ref:`cmd_device_monitor` command.
 
 Type: ``String`` | Multiple: ``No``
 
-Port, a number or a device name. See :option:`platformio device monitor --port`.
-To print all available serial ports please use :ref:`cmd_device_list` command.
+Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
+See :option:`platformio device monitor --port`. To print all available serial ports please use :ref:`cmd_device_list` command.
 
 Please note that you can use Unix shell-style wildcards:
 
@@ -60,6 +60,9 @@ Example:
 
     ; Windows, COM1 or COM3
     monitor_port = COM[13]
+
+    ; Socket
+    monitor_port = socket://localhost:4444
 
 .. _projectconf_monitor_speed:
 
