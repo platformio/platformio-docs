@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_nordicnrf52_nrf52840_dk:
+.. _board_nordicnrf52_adafruit_feather_nrf52840_sense:
 
-Nordic nRF52840-DK
-==================
+Adafruit Feather Bluefruit Sense
+================================
 
 .. contents::
 
@@ -28,34 +28,34 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **Frequency**
     - 64MHz
   * - **Flash**
-    - 1MB
+    - 796KB
   * - **RAM**
-    - 256KB
+    - 243KB
   * - **Vendor**
-    - `Nordic <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`__
+    - `Adafruit <https://www.adafruit.com/product/4516?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nrf52840_dk`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``adafruit_feather_nrf52840_sense`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nrf52840_dk]
+  [env:adafruit_feather_nrf52840_sense]
   platform = nordicnrf52
-  board = nrf52840_dk
+  board = adafruit_feather_nrf52840_sense
 
-You can override default Nordic nRF52840-DK settings per build environment using
+You can override default Adafruit Feather Bluefruit Sense settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nrf52840_dk.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/nrf52840_dk.json>`_. For example,
+board manifest `adafruit_feather_nrf52840_sense.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/adafruit_feather_nrf52840_sense.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nrf52840_dk]
+  [env:adafruit_feather_nrf52840_sense]
   platform = nordicnrf52
-  board = nrf52840_dk
+  board = adafruit_feather_nrf52840_sense
 
   ; change microcontroller
   board_build.mcu = nrf52840
@@ -66,26 +66,24 @@ board manifest `nrf52840_dk.json <https://github.com/platformio/platform-nordicn
 
 Uploading
 ---------
-Nordic nRF52840-DK supports the next uploading protocols:
+Adafruit Feather Bluefruit Sense supports the next uploading protocols:
 
-* ``blackmagic``
-* ``cmsis-dap``
 * ``jlink``
-* ``mbed``
 * ``nrfjprog``
+* ``nrfutil``
 * ``stlink``
 
-Default protocol is ``jlink``
+Default protocol is ``nrfutil``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nrf52840_dk]
+  [env:adafruit_feather_nrf52840_sense]
   platform = nordicnrf52
-  board = nrf52840_dk
+  board = adafruit_feather_nrf52840_sense
 
-  upload_protocol = jlink
+  upload_protocol = nrfutil
 
 Debugging
 ---------
@@ -100,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Nordic nRF52840-DK has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Adafruit Feather Bluefruit Sense does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -108,14 +106,8 @@ Nordic nRF52840-DK has on-board debug probe and **IS READY** for debugging. You 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
-  * - :ref:`debugging_tool_cmsis-dap`
-    - Yes
-    - 
   * - :ref:`debugging_tool_jlink`
-    - Yes
+    - 
     - Yes
   * - :ref:`debugging_tool_stlink`
     - 
@@ -131,9 +123,3 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
-
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
