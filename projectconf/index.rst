@@ -38,11 +38,11 @@ sections and their allowed contents:
 .. toctree::
     :maxdepth: 2
 
-    projectconf/section_platformio
-    projectconf/section_env
-    projectconf/build_configurations
-    projectconf/dynamic_variables
-    projectconf/examples
+    section_platformio
+    section_env
+    build_configurations
+    dynamic_variables
+    examples
 
 **Example**
 

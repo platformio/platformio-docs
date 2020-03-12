@@ -45,7 +45,7 @@ Contents
     :caption: Configuration
     :maxdepth: 1
 
-    platformio.ini <projectconf>
+    platformio.ini <projectconf/index>
     envvars
     projectconf/advanced_scripting
 
