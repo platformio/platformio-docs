@@ -9,153 +9,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_device:
-
-platformio device
-=================
-
-.. contents::
-
-.. _cmd_device_list:
-
-platformio device list
-----------------------
-
-Usage
-~~~~~
-
-.. code-block:: bash
-
-    platformio device list [OPTIONS]
-    pio device list [OPTIONS]
-
-
-Description
-~~~~~~~~~~~
-
-List available devices.
-Default is set to ``--serial`` and all available
-`Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_ will be shown.
-
-Options
-~~~~~~~
-
-.. program:: platformio device list
-
-.. option::
-    --serial
-
-List available `Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_,
-default.
-
-.. option::
-    --logical
-
-List available logical devices.
-
-.. option::
-    --mdns
-
-List multicast DNS services.
-
-.. option::
-    --json-output
-
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
-
-
-Examples
-~~~~~~~~
-
-1. Unix OS
-
-.. code-block:: bash
-
-    $ platformio device list
-    /dev/cu.SLAB_USBtoUART
-    ----------
-    Hardware ID: USB VID:PID=10c4:ea60 SNR=0001
-    Description: CP2102 USB to UART Bridge Controller
-
-    /dev/cu.uart-1CFF4676258F4543
-    ----------
-    Hardware ID: USB VID:PID=451:f432 SNR=1CFF4676258F4543
-    Description: Texas Instruments MSP-FET430UIF
-
-
-2. Windows OS
-
-.. code-block:: bash
-
-    $ platformio device list
-    COM4
-    ----------
-    Hardware ID: USB VID:PID=0451:F432
-    Description: MSP430 Application UART (COM4)
-
-    COM3
-    ----------
-    Hardware ID: USB VID:PID=10C4:EA60 SNR=0001
-    Description: Silicon Labs CP210x USB to UART Bridge (COM3)
-
-
-3. List multicast DNS services and logical devices
-
-.. code-block:: bash
-
-    $ platformio device list --mdns --logical
-    Multicast DNS Services
-    ======================
-
-    PlatformIO._bttremote._tcp.local.
-    ------------------------------
-    Type: _bttremote._tcp.local.
-    IP: ...
-    Port: 62941
-    Properties: ...
-
-    Time for PlatformIO._adisk._tcp.local.
-    ---------------------------------
-    Type: _adisk._tcp.local.
-    IP: 192.168.0.1
-    Port: 9
-    Properties: ...
-
-    PlatformIO._ssh._tcp.local.
-    ------------------------
-    Type: _ssh._tcp.local.
-    IP: ...
-    Port: 22
-
-    PlatformIO._sftp-ssh._tcp.local.
-    -----------------------------
-    Type: _sftp-ssh._tcp.local.
-    IP: ...
-    Port: 22
-
-
-    Logical Devices
-    ===============
-    /
-    -
-    Name:
-
-    /Volumes/PIO
-    -------------
-    Name: PIO
-
-    /Volumes/PLUS
-    --------------
-    Name: PLUS
-
-
 .. _cmd_device_monitor:
 
 platformio device monitor
--------------------------
+=========================
+
+.. contents::
 
 Usage
-~~~~~
+-----
 
 .. code-block:: bash
 
@@ -163,7 +25,7 @@ Usage
 
 
 Description
-~~~~~~~~~~~
+-----------
 
 Are you looking for Serial Monitor with UI? Please check :ref:`faq_advanced_serial_monitor_ui`.
 
@@ -188,7 +50,7 @@ To control *monitor* please use these "hot keys":
 * ``Ctrl+T followed by Ctrl+H`` Help
 
 Options
-~~~~~~~
+-------
 
 .. program:: platformio device monitor
 
@@ -263,15 +125,7 @@ default ``UTF-8``.
 .. option::
     -f, --filter
 
-Add text transformation. Available filters:
-
-* ``colorize`` Apply different colors for received and echo
-* ``debug`` Print what is sent and received
-* ``default`` Remove typical terminal control codes from input
-* ``direct`` Do-nothing: forward all data unchanged
-* ``nocontrol`` Remove all control codes, incl. CR+LF
-* ``printable`` Show decimal code for all non-ASCII characters and replace
-  most control codes
+Add text transformation. See available filters at :ref:`cmd_device_monitor_filters`.
 
 .. option::
     --eol
@@ -319,8 +173,38 @@ Process specified environments.
 You can also specify which environments should be processed by default using
 :ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
 
+.. _cmd_device_monitor_filters:
+
+Filters
+-------
+
+A list of filters that can be applied for monitor output using :option:`platformio device monitor --filter` or :ref:`projectconf` and :ref:`projectconf_monitor_filters` options.
+option.
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+    * - ``default``
+      - Remove typical terminal control codes from input.
+    * - ``colorize``
+      - Apply different colors for received and echo.
+    * - ``debug``
+      - Print what is sent and received.
+    * - ``direct``
+      - Do-nothing: forward all data unchanged.
+    * - ``nocontrol``
+      - Remove all control codes, incl. CR+LF.
+    * - ``printable``
+      - Show decimal code for all non-ASCII characters and replace most control codes.
+    * - ``esp32_exception_decoder``
+      - Custom filter for :ref:`platform_espressif32` which decodes crash exception.
+    * - ``esp8266_exception_decoder``
+      - Custom filter for :ref:`platform_espressif8266` which decodes crash exception.
+
 Examples
-~~~~~~~~
+--------
 
 1. Show available options for *monitor*
 
@@ -340,7 +224,7 @@ Examples
       --echo                Enable local echo, default=Off
       --encoding TEXT       Set the encoding for the serial port (e.g. hexlify,
                             Latin1, UTF-8), default: UTF-8
-      -f, --filter TEXT     Add text transformation
+      -f, --filter TEXT     Add filters / text transformation
       --eol [CR|LF|CRLF]    End of line mode, default=CRLF
       --raw                 Do not apply any encodings/transformations
       --exit-char INTEGER   ASCII code of special character that is used to exit

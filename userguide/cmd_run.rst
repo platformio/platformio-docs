@@ -86,7 +86,7 @@ Built-in targets:
     --upload-port
 
 Custom upload port of embedded board. To print all available ports use
-:ref:`cmd_device` command.
+:ref:`cmd_device_list` command.
 
 If upload port is not specified, PlatformIO will try to detect it automatically.
 

@@ -82,6 +82,27 @@ Example:
     ...
     monitor_speed = 115200
 
+.. _projectconf_monitor_filters:
+
+``monitor_filters``
+^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 4.3
+
+Type: ``String`` | Multiple: ``Yes``
+
+Apply filters and text transformation for device output. See available filters at
+:ref:`cmd_device_monitor_filters`.
+
+Example:
+
+.. code-block:: ini
+
+    [env:apply_monitor_filters]
+    ...
+    platform = ...
+    monitor_filters = debug, printable
+
 .. _projectconf_monitor_rts:
 
 ``monitor_rts``

@@ -67,7 +67,7 @@ Commands
     cmd_check
     cmd_ci
     cmd_debug
-    cmd_device
+    platformio device <device/index>
     cmd_home
     platformio lib <lib/index>
     platformio project <project/index>
