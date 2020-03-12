@@ -83,6 +83,6 @@ Contents
 
     articles
     FAQ <faq>
-    history
+    core/history
     core/migration
 
