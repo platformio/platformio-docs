@@ -73,8 +73,8 @@ Contents
     :caption: Integration
     :maxdepth: 2
 
-    ide
-    ci/index
+    integration/ide/index
+    integration/ci/index
     integration/compile_commands
 
 .. toctree::
