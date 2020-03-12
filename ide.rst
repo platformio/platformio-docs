@@ -55,8 +55,3 @@ Desktop IDE
     ide/vim
     ide/visualstudio
     VSCode <ide/vscode>
-
-Miscellaneous
--------------
-
-* :ref:`faq_compilation_db`

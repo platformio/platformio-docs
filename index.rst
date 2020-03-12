@@ -75,6 +75,7 @@ Contents
 
     ide
     ci/index
+    integration/compile_commands
 
 .. toctree::
     :caption: Miscellaneous
