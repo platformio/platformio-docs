@@ -36,4 +36,4 @@ CLI Guide
 .. toctree::
     :maxdepth: 2
 
-    ../userguide/account/index
+    ../core/userguide/account/index

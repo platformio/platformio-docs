@@ -36,8 +36,8 @@ Contents
     :caption: Getting Started
     :maxdepth: 1
 
-    ide/pioide
-    core
+    integration/ide/pioide
+    core/index
     home/index
     tutorials/index
 
@@ -84,5 +84,5 @@ Contents
     articles
     FAQ <faq>
     history
-    migration
+    core/migration
 

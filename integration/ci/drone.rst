@@ -74,7 +74,7 @@ and boards from command line interface:
     pip install -U platformio
     platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
-.. image:: ../_static/images/droneci-platformio-integration-1.png
+.. image:: ../../_static/images/droneci-platformio-integration-1.png
 
 Examples
 --------
@@ -98,4 +98,4 @@ Examples
     unzip /tmp/spi4teensy3.zip -d /tmp
     platformio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
 
-.. image:: ../_static/images/droneci-platformio-integration-2.png
+.. image:: ../../_static/images/droneci-platformio-integration-2.png

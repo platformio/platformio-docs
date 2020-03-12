@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _migration:
+.. _core_migration:
 
 Migrating from 3.x to 4.0
 =========================

@@ -19,8 +19,8 @@ The `Sublime Text <http://www.sublimetext.com/>`_ is a cross-platform text and s
 Refer to the `Sublime Text Documentation <http://docs.sublimetext.info/en/latest>`_
 page for more detailed information.
 
-.. image:: ../_static/images/ide/sublimetext/ide-sublimetext-demo.png
-    :target: ../_images/ide-sublimetext-demo.png
+.. image:: ../../_static/images/ide/sublimetext/ide-sublimetext-demo.png
+    :target: ../../_images/ide-sublimetext-demo.png
 
 .. contents:: Contents
     :local:
@@ -34,7 +34,7 @@ named `Deviot <https://github.com/gepd/Deviot>`_. It is based on
 Deviot page <https://github.com/gepd/Deviot>`_ for the further installation
 steps and documentation.
 
-.. image:: ../_static/images/ide/sublimetext/ide-sublime-text-deviot.gif
+.. image:: ../../_static/images/ide/sublimetext/ide-sublime-text-deviot.gif
     :target: https://github.com/gepd/Deviot
 
 Integration
@@ -116,13 +116,13 @@ described below:
 
 Secondly, we need to select "PlatformIO" Build System from a list:
 
-.. image:: ../_static/images/ide/sublimetext/ide-sublimetext-newproject-1.png
+.. image:: ../../_static/images/ide/sublimetext/ide-sublimetext-newproject-1.png
 
 After that, we can use the necessary commands from
 ``Menu: Tools > Command Palette`` or with ``Ctrl+Shift+P`` (Windows/Linux)
 ``Cmd+Shift+P`` (Mac) shortcut.
 
-.. image:: ../_static/images/ide/sublimetext/ide-sublimetext-newproject-2.png
+.. image:: ../../_static/images/ide/sublimetext/ide-sublimetext-newproject-2.png
 
 Command Hotkeys
 '''''''''''''''
@@ -130,7 +130,7 @@ Command Hotkeys
 Sublime Text allows one to bind own hotkey per command. Let's setup them
 for PlatformIO commands using shortcut ``Menu: Preferences > Key-Bindings - User``:
 
-.. image:: ../_static/images/ide/sublimetext/ide-sublimetext-newproject-3.png
+.. image:: ../../_static/images/ide/sublimetext/ide-sublimetext-newproject-3.png
 
 We are going to use these shortcuts:
 

@@ -14,7 +14,7 @@
 Travis CI
 =========
 
-.. image:: ../_static/images/ci-travis-logo.png
+.. image:: ../../_static/images/ci-travis-logo.png
     :target: https://docs.travis-ci.com/user/integration/platformio/
 
 

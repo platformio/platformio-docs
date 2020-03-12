@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _quickstart:
+.. _core_quickstart:
 
 Quick Start
 ===========
@@ -240,7 +240,7 @@ targets.
 Finally, demo which demonstrates building project and uploading firmware to
 Arduino Uno:
 
-.. image:: _static/images/platformio-demo-wiring.gif
+.. image:: ../_static/images/platformio-demo-wiring.gif
 
 Further Reading
 ---------------

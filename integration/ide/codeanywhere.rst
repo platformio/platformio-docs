@@ -35,7 +35,7 @@ development more productive and fun.
 Demo
 ----
 
-.. image:: ../_static/images/ide/codeanywhere/ide-codeanywhere-demo.jpg
+.. image:: ../../_static/images/ide/codeanywhere/ide-codeanywhere-demo.jpg
     :target: https://youtu.be/NX56_0Ea_K8?t=148
 
 Integration
@@ -53,7 +53,7 @@ Integration
       Ubuntu OS.
     * Click on "Create" button.
 
-.. image:: ../_static/images/ide/codeanywhere/ide-codeanywhere-connection-wizard.png
+.. image:: ../../_static/images/ide/codeanywhere/ide-codeanywhere-connection-wizard.png
 
 4.  Open **SSH-Terminal** tab (right click on
     ``Container (PlatformIO) > SSH Terminal``) and install :ref:`piocore` using
@@ -63,7 +63,7 @@ Integration
 
     sudo python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
 
-.. image:: ../_static/images/ide/codeanywhere/ide-codeanywhere-install-pio-cli.png
+.. image:: ../../_static/images/ide/codeanywhere/ide-codeanywhere-install-pio-cli.png
 
 5.  Log in to :ref:`pioaccount` using :ref:`cmd_account_login` command.
 
@@ -115,7 +115,7 @@ Let's create our first PlatformIO-based Codeanywhere Project
             delay(100);
         }
 
-.. image:: ../_static/images/ide/codeanywhere/ide-codeanywhere-init-project.png
+.. image:: ../../_static/images/ide/codeanywhere/ide-codeanywhere-init-project.png
 
 3.  If you prefer to work with :ref:`piocore` CLI, then you can process project
     using Cloud IDE SSH Terminal and the next commands:
@@ -149,7 +149,7 @@ command. Let's add "PlatformIO Build Project" command:
 Now, try to click on "Run Project" button. You can assign any PlatformIO
 command to this button.
 
-.. image:: ../_static/images/ide/codeanywhere/ide-codeanywhere-project-config.png
+.. image:: ../../_static/images/ide/codeanywhere/ide-codeanywhere-project-config.png
 
 Remote Device Manager
 ---------------------
@@ -165,7 +165,7 @@ You can list remote devices that are connected to host machine where
 
         pio remote device list
 
-.. image:: ../_static/images/ide/codeanywhere/ide-codeanywhere-ota-devices.png
+.. image:: ../../_static/images/ide/codeanywhere/ide-codeanywhere-ota-devices.png
 
 Remote Firmware Uploading
 -------------------------
@@ -180,7 +180,7 @@ You can deploy firmware to any devices which are visible for :ref:`cmd_remote_ag
 
         pio remote run -t upload
 
-.. image:: ../_static/images/ide/codeanywhere/ide-codeanywhere-ota-uploading.png
+.. image:: ../../_static/images/ide/codeanywhere/ide-codeanywhere-ota-uploading.png
 
 Remote Serial Port Monitor
 --------------------------
@@ -197,7 +197,7 @@ To list active agents please use this command :ref:`cmd_remote_agent_list`.
 
         pio remote device monitor
 
-.. image:: ../_static/images/ide/codeanywhere/ide-codeanywhere-ota-serial-monitor.png
+.. image:: ../../_static/images/ide/codeanywhere/ide-codeanywhere-ota-serial-monitor.png
 
 Multi-Project workspace
 -----------------------

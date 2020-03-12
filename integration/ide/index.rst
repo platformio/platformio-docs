@@ -33,9 +33,9 @@ Cloud IDE
 .. toctree::
     :maxdepth: 1
 
-    ide/cloud9
-    ide/codeanywhere
-    ide/eclipseche
+    cloud9
+    codeanywhere
+    eclipseche
 
 
 Desktop IDE
@@ -44,14 +44,14 @@ Desktop IDE
 .. toctree::
     :maxdepth: 1
 
-    Atom <ide/atom>
-    ide/clion
-    ide/codeblocks
-    ide/eclipse
-    ide/emacs
-    ide/netbeans
-    ide/qtcreator
-    ide/sublimetext
-    ide/vim
-    ide/visualstudio
-    VSCode <ide/vscode>
+    Atom <atom>
+    clion
+    codeblocks
+    eclipse
+    emacs
+    netbeans
+    qtcreator
+    sublimetext
+    vim
+    visualstudio
+    VSCode <vscode>

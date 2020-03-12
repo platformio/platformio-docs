@@ -170,6 +170,6 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    ../userguide/remote/index
+    ../core/userguide/remote/index
 
 

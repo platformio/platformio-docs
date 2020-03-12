@@ -326,5 +326,5 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    platformio test <../userguide/cmd_test>
-    platformio remote test <../userguide/remote/cmd_test>
+    platformio test <../core/userguide/cmd_test>
+    platformio remote test <../core/userguide/remote/cmd_test>

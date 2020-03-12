@@ -28,12 +28,12 @@ install the C/C++ development plugins).
 .. warning::
 
   Note that the version of NetBeans IDE provided by some Linux package repositories
-  may be a Flatpak version, which are known to have issues with accessing the 
-  PlatformIO CLI installed due to the container nature of this technology. It is 
+  may be a Flatpak version, which are known to have issues with accessing the
+  PlatformIO CLI installed due to the container nature of this technology. It is
   recommended that you use the native version of the NetBeans IDE via the above link.
 
-.. image:: ../_static/images/ide/netbeans/ide-platformio-netbeans.png
-    :target: ../_images/ide-platformio-netbeans.png
+.. image:: ../../_static/images/ide/netbeans/ide-platformio-netbeans.png
+    :target: ../../_images/ide-platformio-netbeans.png
 
 .. contents::
 

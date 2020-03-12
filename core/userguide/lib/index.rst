@@ -54,7 +54,7 @@ project.
 Demo
 ----
 
-.. image:: ../../_static/images/platformio-demo-lib.gif
+.. image:: ../../../_static/images/platformio-demo-lib.gif
 
 Commands
 --------

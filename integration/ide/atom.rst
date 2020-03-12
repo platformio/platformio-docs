@@ -22,8 +22,8 @@ PlatformIO IDE for Atom
 yet hackable to the core—a tool you can customize to do anything but also use
 productively without ever touching a config file.
 
-.. image:: ../_static/images/ide/atom/ide-atom-platformio.png
-    :target: ../_images/ide-atom-platformio.png
+.. image:: ../../_static/images/ide/atom/ide-atom-platformio.png
+    :target: ../../_images/ide-atom-platformio.png
 
 
 .. contents:: Contents
@@ -57,7 +57,7 @@ I. Atom
 2. **Search** for the official ``platformio-ide`` `package <https://atom.io/packages/platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
-.. image:: ../_static/images/ide/atom/ide-atom-pkg-installer.png
+.. image:: ../../_static/images/ide/atom/ide-atom-pkg-installer.png
 
 .. _ide_atom_installation_clang:
 
@@ -79,7 +79,7 @@ then **install it and restart Atom**:
   * `Clang 3.9.1 for Windows (32-bit) <http://releases.llvm.org/3.9.1/LLVM-3.9.1-win32.exe>`__
   * `Clang 3.9.1 for Windows (64-bit) <http://releases.llvm.org/3.9.1/LLVM-3.9.1-win64.exe>`__
 
-  .. image:: ../_static/images/clang-installer-add-path.png
+  .. image:: ../../_static/images/clang-installer-add-path.png
 
   .. warning::
 
@@ -113,7 +113,7 @@ Launch
 
 After installation, launch PlatformIO IDE by opening Atom. Once Atom is
 opened, the PlatformIO IDE auto installer will continue to install dependent packages
-and :ref:`piocore`. Please be patient and let the installation complete. Once finished, 
+and :ref:`piocore`. Please be patient and let the installation complete. Once finished,
 PlatformIO IDE will ask you to reload the Atom window to apply
 installed components. Please click on ``Reload Now``. After that, PlatformIO IDE is
 ready for use. Happy coding!
@@ -123,11 +123,11 @@ Setting Up the Project
 
 1. Click on the "PlatformIO Home" button on the :ref:`atom_ide_platformio_toolbar`
 
-.. image:: ../_static/images/ide/atom/ide-atom-welcome.png
+.. image:: ../../_static/images/ide/atom/ide-atom-welcome.png
 
 2. Click on "New Project", select a board and create a new PlatformIO Project
 
-.. image:: ../_static/images/ide/atom/ide-atom-new-project.png
+.. image:: ../../_static/images/ide/atom/ide-atom-new-project.png
 
 3. Open the ``main.cpp`` file in the ``src`` folder and replace its contents with
    the following:
@@ -171,7 +171,7 @@ Setting Up the Project
       delay(1000);
     }
 
-.. image:: ../_static/images/ide/atom/ide-atom-blink-project.png
+.. image:: ../../_static/images/ide/atom/ide-atom-blink-project.png
 
 
 Process Project
@@ -184,12 +184,12 @@ upload firmware, run other targets) using:
     - :ref:`atom_ide_platformio_menu`
     - :ref:`ide_atom_building_targets` and hotkeys
 
-.. image:: ../_static/images/ide/atom/ide-atom-process-project.png
+.. image:: ../../_static/images/ide/atom/ide-atom-process-project.png
 
 5. Run ``Build`` and you should see a green "success" result in the build
    panel:
 
-.. image:: ../_static/images/ide/atom/ide-atom-build-project.png
+.. image:: ../../_static/images/ide/atom/ide-atom-build-project.png
 
 To upload firmware to the board, run ``Upload``.
 
@@ -197,40 +197,40 @@ To upload firmware to the board, run ``Upload``.
    using ``Menu: PlatformIO > Run other target...``
    or call targets list from the status bar (bottom, left corner):
 
-.. image:: ../_static/images/ide/atom/ide-atom-quick-start-8.png
-    :target: ../_images/ide-atom-quick-start-8.png
+.. image:: ../../_static/images/ide/atom/ide-atom-quick-start-8.png
+    :target: ../../_images/ide-atom-quick-start-8.png
 
 And select desired target:
 
-.. image:: ../_static/images/ide/atom/ide-atom-quick-start-9.png
-    :target: ../_images/ide-atom-quick-start-9.png
+.. image:: ../../_static/images/ide/atom/ide-atom-quick-start-9.png
+    :target: ../../_images/ide-atom-quick-start-9.png
 
 7. To launch the built-in terminal interface, choose ``Menu: PlatformIO > Terminal`` or
    press the corresponding icon in the PlatformIO toolbar:
 
-.. image:: ../_static/images/ide/atom/ide-atom-quick-start-10.png
-    :target: ../_images/ide-atom-quick-start-10.png
+.. image:: ../../_static/images/ide/atom/ide-atom-quick-start-10.png
+    :target: ../../_images/ide-atom-quick-start-10.png
 
 This provides you fast access to a set of powerful :ref:`piocore` CLI commands:
 
-.. image:: ../_static/images/ide/atom/ide-atom-quick-start-11.png
-    :target: ../_images/ide-atom-quick-start-11.png
+.. image:: ../../_static/images/ide/atom/ide-atom-quick-start-11.png
+    :target: ../../_images/ide-atom-quick-start-11.png
 
 8. To run the built-in "Serial Monitor", choose ``Menu: PlatformIO > Serial Monitor``
    or press the corresponding icon in the PlatformIO toolbar:
 
-.. image:: ../_static/images/ide/atom/ide-atom-quick-start-12.png
-    :target: ../_images/ide-atom-quick-start-12.png
+.. image:: ../../_static/images/ide/atom/ide-atom-quick-start-12.png
+    :target: ../../_images/ide-atom-quick-start-12.png
 
 The monitor has several settings to adjust your connection:
 
-.. image:: ../_static/images/ide/atom/ide-atom-quick-start-13.png
-    :target: ../_images/ide-atom-quick-start-13.png
+.. image:: ../../_static/images/ide/atom/ide-atom-quick-start-13.png
+    :target: ../../_images/ide-atom-quick-start-13.png
 
 It also allows you to communicate with your board in an easy way:
 
-.. image:: ../_static/images/ide/atom/ide-atom-quick-start-14.png
-    :target: ../_images/ide-atom-quick-start-14.png
+.. image:: ../../_static/images/ide/atom/ide-atom-quick-start-14.png
+    :target: ../../_images/ide-atom-quick-start-14.png
 
 
 .. _atom_ide_platformio_menu:
@@ -241,7 +241,7 @@ Menu item ``PlatformIO``
 `platformio-ide <https://atom.io/packages/platformio-ide>`_ package adds to Atom
 new menu item named ``Menu: PlatformIO`` (after ``Menu: Help`` item).
 
-.. image:: ../_static/images/ide/atom/ide-atom-menu-item.png
+.. image:: ../../_static/images/ide/atom/ide-atom-menu-item.png
 
 .. _atom_ide_platformio_toolbar:
 
@@ -251,7 +251,7 @@ PlatformIO Toolbar
 PlatformIO IDE Toolbar contains quick access buttons for the popular commands.
 Each button contains a hint (leave the mouse on it for a moment).
 
-.. image:: ../_static/images/ide/atom/ide-atom-toolbar.png
+.. image:: ../../_static/images/ide/atom/ide-atom-toolbar.png
 
 * :ref:`piohome`
 * PlatformIO: Build
