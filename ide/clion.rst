@@ -17,10 +17,10 @@ CLion
 The `CLion <https://www.jetbrains.com/clion/>`_ is a cross-platform C/C++ IDE
 for Linux, OS X, and Windows integrated with the CMake build system. The
 initial version will support the GCC and Clang compilers and GDB debugger.
-Clion includes such features as a smart editor, code quality assurance,
+CLion includes such features as a smart editor, code quality assurance,
 automated refactorings, project manager, integrated version control systems.
 
-Refer to the `CLion Documentation <https://www.jetbrains.com/clion/documentation/>`_
+Refer to the `CLion Documentation <https://www.jetbrains.com/clion/help>`_
 page for more detailed information.
 
 .. image:: ../_static/images/ide/clion/ide-platformio-clion.png
@@ -35,7 +35,7 @@ Integration
 Integration process consists of these steps:
 
 1. Install `File Watchers <https://plugins.jetbrains.com/plugin/7177-file-watchers>`_
-   plugin via "Clion: Preferences > Plugins". We need it to automatically
+   plugin via "CLion: Preferences > Plugins". We need it to automatically
    update project configuration when changes are made in :ref:`projectconf`
 2. Open system Terminal and install :ref:`piocore`
 3. Create new folder for your project and change directory (``cd``) to it
