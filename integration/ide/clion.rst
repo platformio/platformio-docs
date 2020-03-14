@@ -23,8 +23,8 @@ automated refactorings, project manager, integrated version control systems.
 Refer to the `CLion Documentation <https://www.jetbrains.com/clion/help/>`_
 page for more detailed information.
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion.png
-    :target: ../../_images/ide-platformio-clion.png
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-new.png
+    :target: ../../_images/ide-platformio-clion-new.png
 
 .. contents:: Contents
     :local:
