@@ -24,7 +24,6 @@ Refer to the `CLion Documentation <https://www.jetbrains.com/clion/help/>`_
 page for more detailed information.
 
 .. image:: ../../_static/images/ide/clion/ide-platformio-clion-new.png
-    :target: ../../_images/ide-platformio-clion-new.png
 
 .. contents:: Contents
     :local:
@@ -185,10 +184,26 @@ Build & Upload
 .. image:: ../../_static/images/ide/clion/ide-platformio-clion-build-upload-project.png
 
 
+Configuration options
+'''''''''''''''''''''
+
+- :ref:`projectconf_section_env_build`
+- :ref:`projectconf_section_env_upload`
+
+Device/Serial Monitor
+---------------------
+
+Please open CLion terminal and use :ref:`cmd_device`. You can also configure
+device monitor per project using :ref:`projectconf_section_env_monitor`.
+
+Please not that you need to manually close/stop device monitor before firmware uploading.
+
 Debugging
 ---------
 
-Select ``PlatformIO Debug`` configuration and press the "Debug" button:
+"PlatformIO for CLion" supports :ref:`piodebug` which allows you to debug your
+application with 1-Click without extra steps. Please select ``PlatformIO Debug``
+configuration and press the "Debug" button:
 
 .. image:: ../../_static/images/ide/clion/ide-platformio-clion-debug-project.png
 
@@ -204,8 +219,9 @@ and select registers to monitor. Close configuration window.
 
 
   A temporary solution is to open ``CMakeListsPrivate.txt`` file from a root of
-  PlatformIO project and manually load the SVD file declared in ``CLION_SVD_FILE_PATH``
-  "CMake" variable.
+  PlatformIO project and remember SVD file declared in ``CLION_SVD_FILE_PATH``
+  "CMake" variable. Now press the "+" button in Peripherals Wizard and select SVD file
+  mentioned in ``CLION_SVD_FILE_PATH``.
 
 .. image:: ../../_static/images/ide/clion/ide-platformio-clion-debug-peripherals.png
 
@@ -213,8 +229,16 @@ and select registers to monitor. Close configuration window.
 PlatformIO Home
 ---------------
 
-Please open CLion IDE terminal and type :ref:`cmd_home` command. It will open
-PlatformIO Home in your default browser:
+Currently, :ref:`piohome` is not integrated into "PlatformIO for CLion". See related
+feature request `CLion: CPP-19493 Integrate PlatformIO Home <https://youtrack.jetbrains.com/issue/CPP-19493>`_.
+
+Nevertheless, you can start it manually and open in your browser. Please note that some
+features do not work, such as project opening. Please open CLion terminal
+and run :ref:`cmd_home` command:
+
+.. code-block:: shell
+
+    platformio -c clion home
 
 .. image:: ../../_static/images/ide/clion/ide-platformio-clion-piohome-terminal.png
 
