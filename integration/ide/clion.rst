@@ -186,14 +186,14 @@ Build & Upload
 
 
 Debugging
-~~~~~~~~~
+---------
 
 Select ``PlatformIO Debug`` configuration and press the "Debug" button:
 
 .. image:: ../../_static/images/ide/clion/ide-platformio-clion-debug-project.png
 
 Peripheral Registers
-''''''''''''''''''''
+~~~~~~~~~~~~~~~~~~~~
 
 Please navigate to the "Peripheral" tab in a "Debug" view, press the "Configure" icon
 and select registers to monitor. Close configuration window.
@@ -209,6 +209,14 @@ and select registers to monitor. Close configuration window.
 
 .. image:: ../../_static/images/ide/clion/ide-platformio-clion-debug-peripherals.png
 
+
+PlatformIO Home
+---------------
+
+Please open CLion IDE terminal and type :ref:`cmd_home` command. It will open
+PlatformIO Home in your default browser:
+
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-piohome-terminal.png
 
 ---------------
 
