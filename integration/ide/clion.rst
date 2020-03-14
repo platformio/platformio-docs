@@ -17,10 +17,10 @@ CLion
 The `CLion <https://www.jetbrains.com/clion/>`_ is a cross-platform C/C++ IDE
 for Linux, OS X, and Windows integrated with the CMake build system. The
 initial version will support the GCC and Clang compilers and GDB debugger.
-Clion includes such features as a smart editor, code quality assurance,
+CLion includes such features as a smart editor, code quality assurance,
 automated refactorings, project manager, integrated version control systems.
 
-Refer to the `CLion Documentation <https://www.jetbrains.com/clion/documentation/>`_
+Refer to the `CLion Documentation <https://www.jetbrains.com/clion/help/>`_
 page for more detailed information.
 
 .. image:: ../../_static/images/ide/clion/ide-platformio-clion.png
@@ -29,90 +29,72 @@ page for more detailed information.
 .. contents:: Contents
     :local:
 
-Integration
------------
-
-Integration process consists of these steps:
-
-1. Install `File Watchers <https://plugins.jetbrains.com/plugin/7177-file-watchers>`_
-   plugin via "Clion: Preferences > Plugins". We need it to automatically
-   update project configuration when changes are made in :ref:`projectconf`
-2. Open system Terminal and install :ref:`piocore`
-3. Create new folder for your project and change directory (``cd``) to it
-4. Generate a project using PIO Core Project Generator (:option:`platformio project init --ide`)
-5. Open project in IDE.
-
+Installation
 ------------
 
-Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <https://platformio.org/boards>`_
-command and generate project via :option:`platformio project init --ide` command:
+1. Install PlatformIO Core (CLI). See :ref:`core_installation` guide
 
-.. code-block:: shell
+   .. warning::
+      1. This a **temporary step** and depends on `CLion #CPP-19412: Automatically install PlatformIO Core  <https://youtrack.jetbrains.com/issue/CPP-19412>`_
 
-    platformio project init --ide clion --board <ID>
+      2. "PlatformIO for CLion" plugin requires :ref:`piocore` 4.3 or above that has
+         not been released yet. Please run ``pio upgrade --dev`` command after
+         installing stable version of PlatformIO Core. Check a version with
+         ``pio --version`` command.
 
-    # For example, generate project for Arduino UNO
-    platformio project init --ide clion --board uno
+2. `Download <https://www.jetbrains.com/clion/>`_ and install CLion IDE
+3. Install official `PlatformIO for CLion <https://plugins.jetbrains.com/plugin/13922-platformio-for-clion>`_ plugin.
+   Open "Configure > Plugins" window and go to the "Marketplace" tab. Search for
+   ``PlatformIO`` and press the "Install" button.
 
-Then:
+   .. image:: ../../_static/images/ide/clion/ide-platformio-clion-install-plugin.png
 
-1. Place source files (``*.c, *.cpp, *.h, *.hpp``) to ``src`` directory and
-   repeat :option:`platformio project init --ide` command above (to refresh source files list)
-2. Open this project via ``Menu: File > Open...``
-   and specify root directory where is located :ref:`projectconf`
-3. Open source file from ``src`` directory
-4. Build project (*DO NOT* use "Run" button, see marks on the screenshot above):
-   ``Menu: Run > Build``.
+4. Restart CLion IDE.
 
-.. warning::
-
-    1. :ref:`piocore` **DOES NOT** depend on ``CMake``, it has own cross-platform
-       Build System. All data related to build flags and source code filtering
-       should be specified using :ref:`projectconf_section_env_build` in
-       :ref:`projectconf`.
-
-    2. See know issue: :ref:`ide_clion_knownissues_inopde_not_supported` and how
-    to resolve it.
-
-There are 11 predefined targets for building (*NOT FOR RUNNING*, see marks on
-the screenshot above):
-
-* ``PLATFORMIO_BUILD`` - Build project without auto-uploading
-* ``PLATFORMIO_BUILD_VERBOSE`` - Build project without auto-uploading in verbose mode
-* ``PLATFORMIO_UPLOAD`` - Build and upload (if no errors)
-* ``PLATFORMIO_CLEAN`` - Clean compiled objects
-* ``PLATFORMIO_MONITOR`` - Device monitor :ref:`cmd_device_monitor`
-* ``PLATFORMIO_TEST`` - :ref:`unit_testing`
-* ``PLATFORMIO_PROGRAM`` - Build and upload using external programmer
-  (if no errors), see :ref:`atmelavr_upload_via_programmer`
-* ``PLATFORMIO_UPLOADFS`` - Upload files to file system SPIFFS,
-  see :ref:`platform_espressif_uploadfs`
-* ``PLATFORMIO_UPDATE`` - Update installed platforms and libraries via :ref:`cmd_update`
-* ``PLATFORMIO_REBUILD_PROJECT_INDEX`` - Rebuild C/C++ Index for the Project.
-  Allows one to fix code completion and code linting issues.
-* ``PLATFORMIO_DEVICE_LIST`` - List connected devices.
-
-If you have multiple environements, you can select which one the target is going to use by
-changing the build profile (See screenshot). Changing the build profile also updates
-defines and includes for code completion in the editor to those specified by the environement.
-
-The profile ``All`` runs the target for all environements ; this was the previous behavior.
-
-.. warning::
-    The libraries which are added, installed or used in a project after
-    generating process will not be reflected in IDE. Please run
-    ``PLATFORMIO_REBUILD_PROJECT_INDEX`` target to resolve this issue.
+.. note::
+    We also recommend to install `Ini <https://plugins.jetbrains.com/plugin/6981-ini>`_
+    plugin that provides syntax highlighting, formatting, code folding, and viewing
+    structure for :ref:`projectconf`.
 
 Known issues
 ------------
 
-.. _ide_clion_knownissues_inopde_not_supported:
+Project configuration and CMake
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PlatformIO does not depend on "CMake" and uses own multi-platform build system.
+Project configuration, such as build flags, library dependencies, etc., should be
+declared in :ref:`projectconf`.
+
+.. warning::
+  Please note that "PlatformIO for CLion" plugin does not update automatically CLion
+  configuration. There is a feature request `CLion #CPP-18367:  Follow platformio.ini changes and update the project <https://youtrack.jetbrains.com/issue/CPP-18367>`_.
+
+  A temporary solution is to opening CLion terminal, changing directory (``cd ...``) to
+  a project and run:
+
+  .. code-block:: shell
+
+     platformio project init --ide clion
+
+
+CLion does not load project build environments from "platformio.ini"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a known issue `CLion CPP-19478: CLion does not handle "CMAKE_CONFIGURATION_TYPES" from CMakeLists.txt <https://youtrack.jetbrains.com/issue/CPP-19478>`_.
+A temporary solution is to manually configure project profiles in CLion.
+
+Please open CLion Settings and navigate to "Build, Execution, Deployment > CMake".
+Press "+" button and PlatformIO-based project profiles:
+
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-configure-profiles.png
+
 
 Arduino ``.ino`` files are not supported
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-CLion uses "CMake" tool for code completion and code linting. As result, it
-doesn't support Arduino files (``*.ino`` and ``.pde``) because they are
+CLion uses "CMake" tool for code completion and code linting. As a result, it
+doesn't support the Arduino files (``*.ino`` and ``.pde``) because they are
 not valid C/C++ based source files:
 
 1. Missing includes such as ``#include <Arduino.h>``
@@ -120,11 +102,119 @@ not valid C/C++ based source files:
 
 See how to :ref:`faq_convert_ino_to_cpp`.
 
-Articles / Manuals
-------------------
+Quick Start
+-----------
 
-* Dec 01, 2015 - **JetBrains CLion Blog** - `C++ Annotated: Fall 2015. Arduino Support in CLion using PlatformIO <http://blog.jetbrains.com/clion/2015/12/cpp-annotated-fall-2015/>`_
-* Nov 22, 2015 - **Michał Seroczyński** - `Using PlatformIO to get started with Arduino in CLion IDE <http://www.ches.pl/using-platformio-get-started-arduino-clion-ide/>`_
-* Nov 09, 2015 - **ÁLvaro García Gómez** - `Programar con Arduino "The good way" (Programming with Arduino "The good way", Spanish) <http://congdegnu.es/2015/11/09/programar-con-arduino-the-good-way/>`_
+This tutorial introduces you to the basics of PlatformIO for CLion workflow and shows
+you a creation process of a simple "Blink" example. After finishing you will
+have a general understanding of how to work with projects in the CLion IDE.
 
-See more :ref:`articles`.
+Setting Up the Project
+~~~~~~~~~~~~~~~~~~~~~~
+
+1. Please open "New Project" wizard, select board and framework, and create a new
+   PlatformIO project. Please **USE ONLY** Latin characters (a-z) in a project name to
+   avoid further issues with project compilation. Numbers and some symbols are
+   allowed depending on a file system:
+
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-new-project.png
+
+2. Rename ``main.c`` file in ``src`` folder to ``main.cpp``  (right click on a file
+   ``main.c``, Refactor > Rename...) . Paste the next contents:
+
+.. warning::
+
+    The code below works only in pair with Arduino-based boards. Please
+    follow to `PlatformIO Project Examples <https://github.com/platformio/platformio-examples>`__
+    repository for other pre-configured projects.
+
+.. code-block:: cpp
+
+    /**
+     * Blink
+     *
+     * Turns on an LED on for one second,
+     * then off for one second, repeatedly.
+     */
+    #include "Arduino.h"
+
+    // Set LED_BUILTIN if it is not defined by Arduino framework
+    // #define LED_BUILTIN 13
+
+    void setup()
+    {
+      // initialize LED digital pin as an output.
+      pinMode(LED_BUILTIN, OUTPUT);
+    }
+
+    void loop()
+    {
+      // turn the LED on (HIGH is the voltage level)
+      digitalWrite(LED_BUILTIN, HIGH);
+
+      // wait for a second
+      delay(1000);
+
+      // turn the LED off by making the voltage LOW
+      digitalWrite(LED_BUILTIN, LOW);
+
+       // wait for a second
+      delay(1000);
+    }
+
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-blink-project.png
+
+Build & Upload
+~~~~~~~~~~~~~~
+
+1. Open project configuration wizard and add ``PlatformIO Upload`` and
+   ``PlatformIO Debug`` configurations (you can add the rest configurations if you need them):
+
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-add-configuration.png
+
+
+2. Remove pre-task ("Build") from ``PlatformIO Upload`` and ``PlatformIO Debug``
+   configurations to avoid double project building. You should see "There are no tasks
+   to run before launch".
+
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-configuration-remove-pretasks.png
+
+3. Select ``PlatformIO Upload`` configuration and use the "Build" button for project
+   compilation or the "Run" for a firmware uploading:
+
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-build-upload-project.png
+
+
+Debugging
+~~~~~~~~~
+
+Select ``PlatformIO Debug`` configuration and press the "Debug" button:
+
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-debug-project.png
+
+Peripheral Registers
+''''''''''''''''''''
+
+Please navigate to the "Peripheral" tab in a "Debug" view, press the "Configure" icon
+and select registers to monitor. Close configuration window.
+
+.. warning::
+  Currently, CLion does not load automatically Peripheral Register Definitions (SVD file)
+  provided by PlatformIO. There is a feature request `CLion #CPP-18369: Support CLION_SVD_FILE_PATH CMake variable to auto-find svd file <https://youtrack.jetbrains.com/issue/CPP-18369>`_.
+
+
+  A temporary solution is to open ``CMakeListsPrivate.txt`` file from a root of
+  PlatformIO project and manually load the SVD file declared in ``CLION_SVD_FILE_PATH``
+  "CMake" variable.
+
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion-debug-peripherals.png
+
+
+---------------
+
+Further for reading:
+
+* :ref:`tutorials` (step-by-step tutorials with debugging and unit testing)
+* `CLion documentation <https://www.jetbrains.com/help/clion/working-with-source-code.html>`__.
+
+**Happy coding with PlatformIO!**
