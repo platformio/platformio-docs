@@ -23,7 +23,7 @@ Advanced options
 
 Type: ``String`` | Multiple: ``Yes``
 
-This option allows to inherit configuration from other sections or build environments
+This option allows one to inherit configuration from other sections or build environments
 in :ref:`projectconf`. Multiple items are allowed, split them with ``,`` or
 with a new line.
 
