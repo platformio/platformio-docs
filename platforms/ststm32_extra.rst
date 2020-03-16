@@ -103,7 +103,7 @@ configuration flags in :ref:`projectconf_build_flags` section of :ref:`projectco
       - High Speed in Full Speed mode
 
 
-Exmaple:
+Example:
 
 .. code-block:: ini
 

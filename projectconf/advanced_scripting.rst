@@ -753,7 +753,7 @@ please replace the ``patch`` with a multi-platform
 Override Board Configuration
 ''''''''''''''''''''''''''''
 
-PlatformIO allows to override some basic options (integer or string values)
+PlatformIO allows one to override some basic options (integer or string values)
 using :ref:`projectconf_board_more_options` in :ref:`projectconf`.
 Sometimes you need to do complex changes to default board manifest and
 extra PRE scripting work well here. See example below how to override default
