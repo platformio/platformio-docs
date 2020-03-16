@@ -18,7 +18,7 @@ Configuration
 The general project configuration (default optimization level, bootloader configuration
 partition tables, etc) is set in a single file called ``sdkconfig`` in the root folder
 of the project. This configuration file can be modified via a special target called
-``menuconfig``:
+``menuconfig`` (PlatformIO v4.3.0 greater is required):
 
 .. code-block:: none
 
