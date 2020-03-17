@@ -117,6 +117,11 @@ listing of local and remote devices will look like :ref:`cmd_device_list` and
 Installation
 ------------
 
+.. warning::
+  You **have to use** the **same major Python version** for an agent and for a client.
+  You cannot mix Python 2 and Python 3. We recommend using the latest Python 3 for the
+  agents and for the clients.
+
 |PIORemote| is built into :ref:`pioide`. Please open PlatformIO IDE Terminal
 and run ``pio remote --help`` command for usage (see :ref:`cmd_remote`).
 
