@@ -27,8 +27,6 @@ Usage
 Description
 -----------
 
-Are you looking for Serial Monitor with UI? Please check :ref:`faq_advanced_serial_monitor_ui`.
-
 This is a console application that provides a small terminal
 application. It is based on `Miniterm <https://pythonhosted.org/pyserial/examples.html#miniterm>`_
 and itself does not implement any terminal features such
