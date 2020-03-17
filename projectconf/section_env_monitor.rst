@@ -98,10 +98,10 @@ Example:
 
 .. code-block:: ini
 
-    [env:apply_monitor_filters]
+    [env:log_output_to_file_with_timestamp]
     ...
     platform = ...
-    monitor_filters = debug, printable
+    monitor_filters = log2file, time, default
 
 .. _projectconf_monitor_rts:
 

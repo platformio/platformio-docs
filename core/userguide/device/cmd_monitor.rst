@@ -178,6 +178,8 @@ You can also specify which environments should be processed by default using
 Filters
 -------
 
+.. versionadded:: 4.3
+
 A list of filters that can be applied for monitor output using :option:`platformio device monitor --filter` or :ref:`projectconf` and :ref:`projectconf_monitor_filters` options.
 option.
 
@@ -187,21 +189,46 @@ option.
     * - Name
       - Description
     * - ``default``
-      - Remove typical terminal control codes from input.
+      - Remove typical terminal control codes from input
     * - ``colorize``
-      - Apply different colors for received and echo.
+      - Apply different colors for received and echo
     * - ``debug``
-      - Print what is sent and received.
+      - Print what is sent and received
     * - ``direct``
-      - Do-nothing: forward all data unchanged.
+      - Do-nothing: forward all data unchanged
+    * - ``log2file``
+      - Log an output to a file "platformio-device-monitor-%date%.log" which will be located in the current working directory
     * - ``nocontrol``
-      - Remove all control codes, incl. CR+LF.
+      - Remove all control codes, incl. CR+LF
     * - ``printable``
-      - Show decimal code for all non-ASCII characters and replace most control codes.
+      - Show decimal code for all non-ASCII characters and replace most control codes
+    * - ``time``
+      - Add timestamp with milliseconds for each new line
     * - ``esp32_exception_decoder``
-      - Custom filter for :ref:`platform_espressif32` which decodes crash exception.
+      - Custom filter for :ref:`platform_espressif32` which decodes crash exception
     * - ``esp8266_exception_decoder``
-      - Custom filter for :ref:`platform_espressif8266` which decodes crash exception.
+      - Custom filter for :ref:`platform_espressif8266` which decodes crash exception
+
+Capture output to a file
+------------------------
+
+.. versionadded:: 4.3
+
+You need to use a ``log2file`` filter from :ref:`cmd_device_monitor_filters`:
+
+.. code-block:: bash
+
+    $ platformio device monitor -f log2file -f default
+
+
+or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
+
+.. code-block:: ini
+
+    [env:log_output_to_file]
+    ...
+    platform = ...
+    monitor_filters = log2file, default
 
 Examples
 --------
