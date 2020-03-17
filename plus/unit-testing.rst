@@ -134,6 +134,71 @@ PlatformIO supports multiple :ref:`ci` systems where you can run unit tests
 at each integration stage. See real
 `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`__.
 
+.. _unit_testing_transport:
+
+Test Transport
+--------------
+
+|PIOUTE| engine uses different transports to communicate with a
+target device. By default, it uses ``Serial/UART`` transport provided
+by a :ref:`projectconf_env_framework`. For example, when
+":ref:`projectconf_env_framework` = ``arduino``", the first available
+``Serial`` will be used.
+When :ref:`platform_native` dev-platform is used a ``native`` transport will be
+activated automatically. See example below.
+
+Default baudrate/speed is set to :ref:`projectconf_test_speed`.
+
+
+You can also define ``custom`` transport and implement its interface:
+
+* ``unittest_uart_begin();``
+* ``unittest_uart_putchar(char c);``
+* ``unittest_uart_flush();``
+* ``unittest_uart_end();``
+
+**Examples**
+
+1. Custom transport for :ref:`platform_native` platform
+
+  * Set ``test_transport = custom`` in :ref:`projectconf`
+
+  .. code-block:: ini
+
+    [env:mycustomtransport]
+    platform = native
+    test_transport = custom
+
+  * Create ``unittest_transport.h`` file in ``project/test`` directory and
+    implement prototypes above
+
+  .. code-block:: c
+
+    #ifndef UNITTEST_TRANSPORT_H
+    #define UNITTEST_TRANSPORT_H
+
+    #include <stdio.h>
+
+    void unittest_uart_begin() {
+
+    }
+
+    void unittest_uart_putchar(char c) {
+      putchar(c);
+    }
+
+    void unittest_uart_flush() {
+      fflush(stdout);
+    }
+
+    void unittest_uart_end() {
+
+    }
+
+    #endif
+
+2. :ref:`tutorial_stm32cube_debugging_unit_testing`
+
 Workflow
 --------
 
