@@ -204,6 +204,8 @@ option.
       - Show decimal code for all non-ASCII characters and replace most control codes
     * - ``time``
       - Add timestamp with milliseconds for each new line
+    * - ``send_on_enter``
+      - Send a text to device on ENTER
     * - ``esp32_exception_decoder``
       - Custom filter for :ref:`platform_espressif32` which decodes crash exception
     * - ``esp8266_exception_decoder``
