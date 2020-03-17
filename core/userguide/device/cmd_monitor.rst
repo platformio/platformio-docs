@@ -230,6 +230,16 @@ or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
     platform = ...
     monitor_filters = log2file, default
 
+
+Device Monitor Filter API
+-------------------------
+
+:ref:`piocore` provides an API to extend device monitor with a custom filter declared
+in "monitor" folder of :ref:`platforms`. See examples:
+
+- https://github.com/platformio/platform-espressif32/tree/develop/monitor
+- https://github.com/platformio/platform-espressif8266/tree/develop/monitor
+
 Examples
 --------
 
