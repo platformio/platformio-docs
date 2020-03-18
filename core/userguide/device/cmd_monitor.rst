@@ -194,8 +194,10 @@ option.
       - Print what is sent and received
     * - ``direct``
       - Do-nothing: forward all data unchanged
+    * - ``hexlify``
+      - Show a hexadecimal representation of the data (code point of each character)
     * - ``log2file``
-      - Log an output to a file "platformio-device-monitor-%date%.log" which will be located in the current working directory
+      - Log data to a file "platformio-device-monitor-%date%.log" located in the current working directory
     * - ``nocontrol``
       - Remove all control codes, incl. CR+LF
     * - ``printable``
