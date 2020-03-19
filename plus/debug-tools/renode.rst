@@ -42,6 +42,28 @@ More options:
 
 * :ref:`projectconf_section_env_debug`
 
+Installation
+------------
+
+We will automatically install for you the latest Renode package using PlatformIO
+package manager. The only requirement is to install Mono/.NET framework.
+
+:Windows:
+  On Windows 7, download and install `.NET Framework 4.7 <https://www.microsoft.com/net/download/dotnet-framework-runtime>`_.
+  Windows 10 ships with .NET by default, so no action is required there.
+
+:Mac:
+  Install `Homebrew <https://brew.sh/>`_ and ``mono`` package via ``brew install mono``
+  command.
+
+:Linux:
+  Install the ``mono-complete`` package as per the installation instructions for
+  various Linux distributions which can be found on `the Mono project website <https://www.mono-project.com/download/stable/#download-lin>`_.
+
+
+Check `official Renode installation guide <https://github.com/renode/renode/blob/master/README.rst>`_
+for more details.
+
 .. begin_platforms
 
 Platforms
@@ -53,7 +75,7 @@ Platforms
       - Description
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
 Frameworks
 ----------
