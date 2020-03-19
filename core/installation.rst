@@ -9,6 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. |PIOCore| replace:: **PlatformIO Core**
+
 .. _core_installation:
 
 Installation
@@ -22,7 +24,7 @@ Installation
 
     If you need :ref:`piocore` outside PlatformIO IDE, please :ref:`piocore_install_shell_commands`.
 
-**PlatformIO Core** is written in `Python <https://www.python.org/downloads/>`_
+|PIOCore| is written in `Python <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
 computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `BeagleBone <http://beagleboard.org>`_, `CubieBoard <http://cubieboard.org>`_,
@@ -37,7 +39,7 @@ System requirements
 :Operating System: Windows, macOS, Linux, FreeBSD, Linux ARMv6+
 :Python Interpreter:
 
-    Python 2.7 or Python 3.5+.
+    Python 2.7 or Python 3.5+ (the latest Python 3 is recommended).
     See detailed instruction how to :ref:`faq_install_python` for Windows.
 
 :Terminal Application:
@@ -68,56 +70,46 @@ Please *choose ONE of* the following methods:
 .. contents::
     :local:
 
-Python Package Manager
-~~~~~~~~~~~~~~~~~~~~~~
-
-The latest stable version of PlatformIO may be installed or upgraded via
-Python Package Manager (`pip <https://pip.pypa.io>`_) as follows:
-
-.. code-block:: bash
-
-    pip install -U platformio
-
-If ``pip`` command is not available run ``easy_install pip`` or use
-:ref:`installation_installer_script` which will install ``pip`` and
-``platformio`` automatically.
-
-Note that you may run into permissions issues running these commands. You have
-a few options here:
-
-* Run with ``sudo`` to install PlatformIO and dependencies globally
-* Specify the `pip install --user <https://pip.pypa.io/en/stable/user_guide.html#user-installs>`_
-  option to install local to your user
-* Run the command in a `virtualenv <https://virtualenv.pypa.io>`_ local to a
-  specific project working set.
-
 .. _installation_installer_script:
 
 Installer Script
 ~~~~~~~~~~~~~~~~
 
+.. warning::
+    PlatformIO **DOES NOT** require administrative/sudo permissions. Please install using
+    default user account **WITHOUT EXTRA PERMISSIONS**.
+
 Super-Quick (Mac / Linux)
 '''''''''''''''''''''''''
 
-To install or upgrade *PlatformIO* paste that at a *Terminal* prompt
-(**MAY require** administrator access ``sudo``):
+To install or upgrade |PIOCore| paste that at a *Terminal* prompt:
 
 .. code-block:: bash
 
-    python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
+    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
+
+    # or using `curl`
+
+    curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py -o get-platformio.py
+    python3 get-platformio.py
+
+    # or using `wget`
+
+    wget https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py -O get-platformio.py
+    python3 get-platformio.py
 
 
 Local Download (Mac / Linux / Windows)
 ''''''''''''''''''''''''''''''''''''''
 
-To install or upgrade *PlatformIO*, download (save as...)
-`get-platformio.py <https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py>`_
-script. Then run the following (**MAY require** administrator access ``sudo``):
+To install or upgrade *PlatformIO Core*, download (save as...)
+`get-platformio.py <https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py>`_
+script. Then run the following:
 
 .. code-block:: bash
 
     # change directory to folder where is located downloaded "get-platformio.py"
-    cd /path/to/dir/where/is/located/get-platformio.py/script
+    cd /path/to/dir/where/is/located/script/get-platformio.py
 
     # run it
     python get-platformio.py
@@ -128,11 +120,32 @@ On *Windows OS* it may look like:
 .. code-block:: bash
 
     # change directory to folder where is located downloaded "get-platformio.py"
-    cd C:\path\to\dir\where\is\located\get-platformio.py\script
+    cd C:\path\to\dir\where\is\located\script\get-platformio.py
 
     # run it
-    C:\Python27\python.exe get-platformio.py
+    python.exe get-platformio.py
 
+.. note::
+    If you need to have access to ``platformio`` or ``platformio.exe`` commands from
+    other applications or terminal in your OS, please :ref:`piocore_install_shell_commands`.
+
+Python Package Manager
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. warning::
+    We recommend using this method **ONLY FOR** :ref:`ci` use cases or where your have
+    full permissions to install PlatformIO Core into the global scope of your OS.
+
+    For personal using, and avoiding maintenance and upgrade issues, we
+    **HIGHLY RECOMMEND** using :ref:`installation_installer_script` which installs
+    |PIOCore| into an isolated virtual environment and does not affect your OS.
+
+The latest stable version of |PIOCore| may be installed or upgraded via
+Python Package Manager (`pip <https://pip.pypa.io>`_) as follows:
+
+.. code-block:: bash
+
+    pip install -U platformio
 
 macOS Homebrew
 ~~~~~~~~~~~~~~
@@ -143,38 +156,6 @@ macOS Homebrew Packages Manager (`brew <http://brew.sh/>`_) as follows:
 .. code-block:: bash
 
     brew install platformio
-
-Full Guide
-~~~~~~~~~~
-
-1. Check a ``python`` version:
-
-.. code-block:: bash
-
-    python --version
-
-If Python is not installed (command not found), please :ref:`faq_install_python`.
-
-2. Install a ``platformio`` and related packages:
-
-.. code-block:: bash
-
-    pip install -U platformio
-
-If your computer does not recognize ``pip`` command, try to install it first
-using `these instructions <https://pip.pypa.io/en/latest/installing.html>`_.
-
-For upgrading ``platformio`` to the latest version:
-
-.. code-block:: bash
-
-    pip install -U platformio
-
-Or:
-
-.. code-block:: bash
-
-    pio upgrade
 
 Virtual Environment
 ~~~~~~~~~~~~~~~~~~~
@@ -306,7 +287,6 @@ If you want to be up-to-date with the latest ``develop`` version of PlatformIO,
 then you need to re-install PlatformIO each time you see a new commits in
 `PlatformIO GitHub repository (branch: develop) <https://github.com/platformio/platformio-core/commits/develop>`_ like so:
 
-
 .. code-block:: bash
 
     pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
@@ -323,7 +303,6 @@ To revert to the latest stable version:
 
     pip uninstall platformio
     pip install -U platformio
-
 
 .. _piocore_install_shell_commands:
 
