@@ -113,10 +113,10 @@ Nordic nRF51X22 Development Kit(PCA1000X) has on-board debug probe and **IS READ
     - 
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
-    - Yes
+    - 
   * - :ref:`debugging_tool_jlink`
     - Yes
-    - 
+    - Yes
   * - :ref:`debugging_tool_stlink`
     - 
     - 

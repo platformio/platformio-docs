@@ -113,6 +113,18 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_electronut_blip`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_electronut_papyr`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_freescalekinetis_frdm_k64f`
       - :ref:`platform_freescalekinetis`
       - MK64FN1M0VLL12
@@ -498,18 +510,6 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
-    * - :ref:`board_nordicnrf52_electronut_blip`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_electronut_papyr`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
     * - :ref:`board_freescalekinetis_frdm_kw24d`
       - :ref:`platform_freescalekinetis`
       - MKW24D512
@@ -787,14 +787,14 @@ ElectronutLabs
       - RAM
     * - :ref:`board_nordicnrf52_electronut_blip`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf52_electronut_papyr`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB

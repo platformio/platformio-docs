@@ -36,8 +36,8 @@ Contents
     :caption: Getting Started
     :maxdepth: 1
 
-    ide/pioide
-    core
+    integration/ide/pioide
+    core/index
     home/index
     tutorials/index
 
@@ -45,7 +45,7 @@ Contents
     :caption: Configuration
     :maxdepth: 1
 
-    platformio.ini <projectconf>
+    platformio.ini <projectconf/index>
     envvars
     projectconf/advanced_scripting
 
@@ -60,7 +60,7 @@ Contents
     platforms/custom_platform_and_board
 
 .. toctree::
-    :caption: PIO Plus
+    :caption: Professional
     :maxdepth: 1
 
     plus/pio-account
@@ -73,8 +73,9 @@ Contents
     :caption: Integration
     :maxdepth: 2
 
-    ide
-    ci/index
+    integration/ide/index
+    integration/ci/index
+    integration/compile_commands
 
 .. toctree::
     :caption: Miscellaneous
@@ -82,6 +83,6 @@ Contents
 
     articles
     FAQ <faq>
-    history
-    migration
+    core/history
+    core/migration
 

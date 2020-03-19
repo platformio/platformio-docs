@@ -87,6 +87,9 @@ SparkFun RED-V RedBoard has on-board debug probe and **IS READY** for debugging.
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes
+  * - :ref:`debugging_tool_renode`
+    - Yes
+    - 
 
 Frameworks
 ----------

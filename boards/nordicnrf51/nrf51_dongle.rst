@@ -108,10 +108,10 @@ Nordic nRF51 Dongle (PCA10031) has on-board debug probe and **IS READY** for deb
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
-    - Yes
+    - 
   * - :ref:`debugging_tool_jlink`
     - Yes
-    - 
+    - Yes
 
 Frameworks
 ----------

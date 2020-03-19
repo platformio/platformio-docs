@@ -113,10 +113,10 @@ BL654 Development Kit has on-board debug probe and **IS READY** for debugging. Y
     - 
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
-    - Yes
+    - 
   * - :ref:`debugging_tool_jlink`
     - Yes
-    - 
+    - Yes
   * - :ref:`debugging_tool_stlink`
     - 
     - 

@@ -95,12 +95,6 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 512KB
       - 128KB
-    * - :ref:`board_aceinna_imu_LowCostRTK`
-      - :ref:`platform_aceinna_imu`
-      - STM32F469NIH6
-      - 180MHz
-      - 1MB
-      - 384KB
     * - :ref:`board_ststm32_rhombio_l476dmw1k`
       - :ref:`platform_ststm32`
       - STM32L476VGT6
@@ -588,12 +582,6 @@ Please click on board name for the further details.
       - 180MHz
       - 512KB
       - 128KB
-    * - :ref:`board_aceinna_imu_OpenIMU330`
-      - :ref:`platform_aceinna_imu`
-      - STM32L431CB
-      - 80MHz
-      - 128KB
-      - 64KB
     * - :ref:`board_ststm32_afroflight_f103cb`
       - :ref:`platform_ststm32`
       - STM32F103CBT6
@@ -1087,34 +1075,6 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
-
-Aceinna
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_aceinna_imu_LowCostRTK`
-      - :ref:`platform_aceinna_imu`
-      - On-board
-      - STM32F469NIH6
-      - 180MHz
-      - 1MB
-      - 384KB
-    * - :ref:`board_aceinna_imu_OpenIMU330`
-      - :ref:`platform_aceinna_imu`
-      - External
-      - STM32L431CB
-      - 80MHz
-      - 128KB
-      - 64KB
 
 AfroFlight
 ~~~~~~~~~~

@@ -90,6 +90,9 @@ HiFive Unleashed has on-board debug probe and **IS READY** for debugging. You do
   * - :ref:`debugging_tool_qemu`
     - Yes
     - 
+  * - :ref:`debugging_tool_renode`
+    - Yes
+    - 
 
 Frameworks
 ----------

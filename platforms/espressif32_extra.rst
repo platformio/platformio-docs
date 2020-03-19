@@ -13,7 +13,7 @@ Tutorials
 ---------
 
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
-* `Video: Free Inline Debugging for ESP32 and Arduino Sketches <hhttps://www.youtube.com/watch?v=psMqilqlrRQ>`__
+* `Video: Free Inline Debugging for ESP32 and Arduino Sketches <https://www.youtube.com/watch?v=psMqilqlrRQ>`__
 
 Configuration
 -------------
@@ -164,14 +164,6 @@ flash chip (all data replaced with 0xFF bytes):
 
     > pio run -t erase
 
-Enable C++ exceptions
-~~~~~~~~~~~~~~~~~~~~~
-
-Please add ``-D PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS`` to :ref:`projectconf_build_flags`
-of :ref:`projectconf` to enable C++ exceptions for :ref:`framework_espidf`.
-
-See `project example <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-exceptions>`_.
-
 Partition Tables
 ~~~~~~~~~~~~~~~~
 You can create a custom partitions table (CSV) following `ESP32 Partition Tables <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/partition-tables.html>`_
@@ -225,7 +217,7 @@ in ``board_build.embed_txtfiles`` option are null-terminated in the final binary
       src/certificate.pem.crt
       src/aws-root-ca.pem
 
-The file’s contents will be added to the ``.rodata`` section in flash, and
+The file contents will be added to the ``.rodata`` section in flash, and
 are available via symbol names as follows:
 
 .. code-block:: c
@@ -241,55 +233,14 @@ The names are generated from the full name of the file. Characters ``/, .``,
 etc. are replaced with underscores. The ``_binary`` + ``_nested_folder`` prefix
 in the symbol name is added by "objcopy" and is the same for both text and binary files.
 
+.. note::
+    With the ESP-IDF framework symbol names should not contain path to the files, for example
+    ``_binary_private_pem_key_start`` instead of ``_binary_src_private_pem_key_start``.
+
 See full example with embedding Amazon AWS certificates:
 
 - https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-aws-iot
 
-ULP coprocessor programming
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you want to take measurements using ADC, internal temperature sensor or external
-I2C sensors, while the main processors are in deep sleep mode you need to use ULP
-coprocessor. At the moment ULP can be used only with the framework :ref:`framework_espidf`.
-
-First of all, to use ULP in your project you need to make sure that it is enabled in your
-``sdkconfig.h`` configuration file. The next two lines must be added:
-
-.. code-block:: cpp
-
-    #define CONFIG_ULP_COPROC_ENABLED 1
-    #define CONFIG_ULP_COPROC_RESERVE_MEM 1024
-
-Usually ``CONFIG_ULP_COPROC_RESERVE_MEM`` is already defined in the default
-``sdkconfig.h`` with value ``0``. You can modify this value to meet your requirements.
-
-
-Secondly, all ULP code, usually written in assembly in files with ``.S`` extension,
-must be placed into a separate directory with the name ``ulp`` in the root folder
-of your project. So your project structure should look like this:
-
-.. code-block:: bash
-
-    project_dir
-    ├── include
-    ├── lib
-    │   └── README
-    ├── test
-    ├── src
-    │    ├── main.c
-    │    └── sdkconfig.h
-    ├── ulp
-    │    └── ulp_code.S
-    └── platformio.ini
-
-
-See full examples with ULP coprocessor programming:
-
-- https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-adc
-- https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-pulse
-
-More details are located in the official ESP-IDF documentation -
-`ULP coprocessor programming <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable>`_.
 
 Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

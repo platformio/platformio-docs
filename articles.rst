@@ -23,6 +23,8 @@ Here are recent articles/reviews about PlatformIO:
 2020
 ^^^^
 
+* Mar 05, 2020 - **Alex Govorov** - `PVS-Studio Integration in PlatformIO <https://habr.com/en/company/pvs-studio/blog/491220/>`_
+* Feb 2, 2020 - **Tommy Desrochers** - `VS Code et PlatformIO: Mieux que l'IDE Arduino? <https://www.youtube.com/watch?v=-2NhjhzFQsM>`_
 * Jan 15, 2020 - **Ivan Kravets, CEO of PlatformIO** - `Next-generation IDE for your RISC-V Product in 20 Minutes <https://www.youtube.com/watch?v=0eYDKION0Bs>`_
 
 2019

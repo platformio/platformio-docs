@@ -113,10 +113,10 @@ Nordic nRF52840-DK has on-board debug probe and **IS READY** for debugging. You 
     - 
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
-    - Yes
+    - 
   * - :ref:`debugging_tool_jlink`
     - Yes
-    - 
+    - Yes
   * - :ref:`debugging_tool_stlink`
     - 
     - 

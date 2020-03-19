@@ -11,8 +11,8 @@
 
 .. _board_aceinna_imu_OpenIMU300:
 
-Aceinna OpenIMU 300ZA
-=====================
+Aceinna OpenIMU 300
+===================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``OpenIMU300`` ID for :ref:`projectconf_env_board` option in :ref:`pr
   platform = aceinna_imu
   board = OpenIMU300
 
-You can override default Aceinna OpenIMU 300ZA settings per build environment using
+You can override default Aceinna OpenIMU 300 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `OpenIMU300.json <https://github.com/aceinna/platform-aceinna_imu/blob/master/boards/OpenIMU300.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `OpenIMU300.json <https://github.com/aceinna/platform-aceinna_imu
 
 Uploading
 ---------
-Aceinna OpenIMU 300ZA supports the next uploading protocols:
+Aceinna OpenIMU 300 supports the next uploading protocols:
 
 * ``blackmagic``
 * ``jlink``
@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Aceinna OpenIMU 300ZA does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Aceinna OpenIMU 300 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

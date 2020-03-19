@@ -396,6 +396,20 @@ Boards
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
       - External
@@ -424,6 +438,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840_sense`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -497,7 +518,7 @@ Boards
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
       - :ref:`platform_atmelsam`
       - External
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -537,6 +558,13 @@ Boards
       - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4_titano`
       - :ref:`platform_atmelsam`
       - External
       - SAMD51J20A
@@ -642,6 +670,13 @@ Boards
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrwan1310`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A
@@ -1042,14 +1077,14 @@ Boards
       - 320KB
     * - :ref:`board_nordicnrf52_electronut_blip`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf52_electronut_papyr`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
@@ -1376,13 +1411,6 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
-    * - :ref:`board_atmelsam_macchina2`
-      - :ref:`platform_atmelsam`
-      - External
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_nordicnrf52_nrf52832_mdk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2657,6 +2685,13 @@ Boards
       - 50MHz
       - 32KB
       - 8KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_9dof`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_esp32thing`
       - :ref:`platform_espressif32`
       - External
@@ -2671,6 +2706,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_atmelsam_sparkfun_qwiic_micro_samd21e`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_sifive_sparkfun_redboard_v`
       - :ref:`platform_sifive`
       - On-board
@@ -2685,6 +2727,13 @@ Boards
       - 320MHz
       - 16MB
       - 16KB
+    * - :ref:`board_atmelsam_sparkfun_redboard_turbo`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - External
@@ -2693,6 +2742,13 @@ Boards
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_proRF`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A

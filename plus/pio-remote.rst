@@ -93,7 +93,7 @@ Technology
 
 .. image:: ../_static/images/pio-remote-architecture.png
 
-|PIORemote| is an own `PIO Plus <https://pioplus.com/>`__ technology
+|PIORemote| is an own PlatformIO technology
 for remote solutions without external dependencies to
 operating system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
 The Server component (|PIOCloud|) plays a role of coupling link between
@@ -116,6 +116,11 @@ listing of local and remote devices will look like :ref:`cmd_device_list` and
 
 Installation
 ------------
+
+.. warning::
+  You **have to use** the **same major Python version** for an agent and for a client.
+  You cannot mix Python 2 and Python 3. We recommend using the latest Python 3 for the
+  agents and for the clients.
 
 |PIORemote| is built into :ref:`pioide`. Please open PlatformIO IDE Terminal
 and run ``pio remote --help`` command for usage (see :ref:`cmd_remote`).
@@ -170,6 +175,6 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    ../userguide/remote/index
+    ../core/userguide/remote/index
 
 

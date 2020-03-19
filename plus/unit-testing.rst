@@ -16,7 +16,13 @@
 PIO Unit Testing
 ================
 
-PIO Unit Testing allows segregating each part of the firmware/program and testing that the individual parts are working correctly. Using |PIOUTE| you can execute the same tests on the local host machine (native), on the multiple local embedded devices/boards (connected to local host machine), or on both. When testing both, PIO Plus builds firmware on the host machine, uploads into a target device, starts tests, and collects the test results into test reports. The final information will be shown on the host side with informative output and statistic.
+PIO Unit Testing allows segregating each part of the firmware/program and testing that
+the individual parts are working correctly. Using |PIOUTE| you can execute the same
+tests on the local host machine (native), on the multiple local embedded devices/boards
+(connected to local host machine), or on both. When testing both, PlatformIO builds
+firmware on the host machine, uploads into a target device, starts tests, and collects
+the test results into test reports. The final information will be shown on the host
+side with informative output and statistic.
 
 Using :ref:`pioremote` you can start unit tests on the **Remote Device** from anywhere in the world or integrate with :ref:`ci` systems.
 
@@ -127,6 +133,71 @@ case, you need to use the special command :ref:`cmd_remote_test`.
 PlatformIO supports multiple :ref:`ci` systems where you can run unit tests
 at each integration stage. See real
 `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`__.
+
+.. _unit_testing_transport:
+
+Test Transport
+--------------
+
+|PIOUTE| engine uses different transports to communicate with a
+target device. By default, it uses ``Serial/UART`` transport provided
+by a :ref:`projectconf_env_framework`. For example, when
+":ref:`projectconf_env_framework` = ``arduino``", the first available
+``Serial`` will be used.
+When :ref:`platform_native` dev-platform is used a ``native`` transport will be
+activated automatically. See example below.
+
+Default baudrate/speed is set to :ref:`projectconf_test_speed`.
+
+
+You can also define ``custom`` transport and implement its interface:
+
+* ``unittest_uart_begin();``
+* ``unittest_uart_putchar(char c);``
+* ``unittest_uart_flush();``
+* ``unittest_uart_end();``
+
+**Examples**
+
+1. Custom transport for :ref:`platform_native` platform
+
+  * Set ``test_transport = custom`` in :ref:`projectconf`
+
+  .. code-block:: ini
+
+    [env:mycustomtransport]
+    platform = native
+    test_transport = custom
+
+  * Create ``unittest_transport.h`` file in ``project/test`` directory and
+    implement prototypes above
+
+  .. code-block:: c
+
+    #ifndef UNITTEST_TRANSPORT_H
+    #define UNITTEST_TRANSPORT_H
+
+    #include <stdio.h>
+
+    void unittest_uart_begin() {
+
+    }
+
+    void unittest_uart_putchar(char c) {
+      putchar(c);
+    }
+
+    void unittest_uart_flush() {
+      fflush(stdout);
+    }
+
+    void unittest_uart_end() {
+
+    }
+
+    #endif
+
+2. :ref:`tutorial_stm32cube_debugging_unit_testing`
 
 Workflow
 --------
@@ -320,5 +391,5 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    platformio test <../userguide/cmd_test>
-    platformio remote test <../userguide/remote/cmd_test>
+    platformio test <../core/userguide/cmd_test>
+    platformio remote test <../core/userguide/remote/cmd_test>

@@ -90,6 +90,9 @@ HiFive1 has on-board debug probe and **IS READY** for debugging. You don't need 
   * - :ref:`debugging_tool_qemu`
     - Yes
     - 
+  * - :ref:`debugging_tool_renode`
+    - Yes
+    - 
 
 Frameworks
 ----------

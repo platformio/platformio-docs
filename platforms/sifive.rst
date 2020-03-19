@@ -220,6 +220,9 @@ Packages
     * - `tool-qemu-riscv <https://www.qemu.org/?utm_source=platformio&utm_medium=docs>`__
       - Open source machine emulator and virtualizer
 
+    * - `tool-renode <https://renode.io?utm_source=platformio&utm_medium=docs>`__
+      - Renode is a development framework which accelerates IoT and embedded systems development by letting you simulate physical hardware systems
+
     * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain?utm_source=platformio&utm_medium=docs>`__
       - GNU toolchain for RISC-V, including GCC
 

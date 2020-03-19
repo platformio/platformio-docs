@@ -22,7 +22,7 @@ PIO Unified Debugger
 
   `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/finally-pio-unified-debugger-comes-to-vscode/4091>`_
 
-PIO Plus offers a unique debugging experience for productive embedded
+PlatformIO offers a unique debugging experience for productive embedded
 development. Using our multi-board and multi-architecture programming
 experience, we simplified the debugging process in the same way. A zero
 debugging configuration with support for the most popular debugging probes
@@ -30,7 +30,7 @@ and compatibility between IDEs and OS.
 
 Developers can finally forget about complex UI windows which they need to
 pre-configure before a simple “Hello World!” debugging session. No need to
-know any aspects about the debugging server or how to configure it. PIO Plus
+know any aspects about the debugging server or how to configure it. PIO
 Unified Debugger does this complex work automatically having a rich
 configuration database per each board and debugging probe.
 
@@ -124,6 +124,7 @@ option.
   debug-tools/olimex-arm-usb-tiny-h
   debug-tools/olimex-jtag-tiny
   debug-tools/qemu
+  debug-tools/renode
   debug-tools/rv-link
   debug-tools/sipeed-rv-debugger
   debug-tools/stlink
@@ -138,7 +139,7 @@ CLI Guide
 .. toctree::
   :maxdepth: 3
 
-  platformio debug <../userguide/cmd_debug>
+  platformio debug <../core/userguide/cmd_debug>
 
 
 .. _debugging_platforms:
@@ -411,6 +412,20 @@ Aceinna
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
 
 Adafruit
 ~~~~~~~~
@@ -453,6 +468,13 @@ Adafruit
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840_sense`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -526,7 +548,7 @@ Adafruit
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
       - :ref:`platform_atmelsam`
       - External
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -566,6 +588,13 @@ Adafruit
       - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4_titano`
       - :ref:`platform_atmelsam`
       - External
       - SAMD51J20A
@@ -741,6 +770,13 @@ Arduino
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_mkrwan1300`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_mkrwan1310`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A
@@ -1260,14 +1296,14 @@ ElectronutLabs
       - RAM
     * - :ref:`board_nordicnrf52_electronut_blip`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf52_electronut_papyr`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
@@ -2126,27 +2162,6 @@ MXChip
       - 100MHz
       - 1MB
       - 256KB
-
-Macchina
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_atmelsam_macchina2`
-      - :ref:`platform_atmelsam`
-      - External
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
 
 Makerdiary
 ~~~~~~~~~~
@@ -4051,6 +4066,13 @@ SparkFun
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_sparkfun_samd21_9dof`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
       - :ref:`platform_espressif32`
       - External
@@ -4058,6 +4080,13 @@ SparkFun
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_atmelsam_sparkfun_qwiic_micro_samd21e`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_sifive_sparkfun_redboard_v`
       - :ref:`platform_sifive`
       - On-board
@@ -4072,6 +4101,13 @@ SparkFun
       - 320MHz
       - 16MB
       - 16KB
+    * - :ref:`board_atmelsam_sparkfun_redboard_turbo`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_dev_usb`
       - :ref:`platform_atmelsam`
       - External
@@ -4080,6 +4116,13 @@ SparkFun
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_mini_usb`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_proRF`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A

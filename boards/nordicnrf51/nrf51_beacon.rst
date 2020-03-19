@@ -112,10 +112,10 @@ Nordic Beacon Kit (PCA20006) has on-board debug probe and **IS READY** for debug
     - 
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
-    - Yes
+    - 
   * - :ref:`debugging_tool_jlink`
     - Yes
-    - 
+    - Yes
   * - :ref:`debugging_tool_stlink`
     - 
     - 

@@ -100,6 +100,16 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_electronut_blip`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_electronut_papyr`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
       - NRF52840
       - 64MHz
@@ -178,6 +188,11 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840_sense`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - NRF52840
       - 64MHz
@@ -198,16 +213,6 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
-    * - :ref:`board_nordicnrf52_electronut_blip`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_electronut_papyr`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
     * - :ref:`board_nordicnrf52_holyiot_yj16019`
       - NRF52832
       - 64MHz
@@ -460,6 +465,12 @@ Adafruit
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840_sense`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - External
       - NRF52840
@@ -561,13 +572,13 @@ ElectronutLabs
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_electronut_blip`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf52_electronut_papyr`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB

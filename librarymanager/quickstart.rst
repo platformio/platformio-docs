@@ -94,4 +94,4 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    ../userguide/lib/index
+    ../core/userguide/lib/index

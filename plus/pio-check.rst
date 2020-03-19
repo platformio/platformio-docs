@@ -140,4 +140,4 @@ of these commands can be found here:
 .. toctree::
   :maxdepth: 3
 
-  platformio check <../userguide/cmd_check>
+  platformio check <../core/userguide/cmd_check>

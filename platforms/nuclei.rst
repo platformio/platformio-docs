@@ -32,11 +32,14 @@ Examples
 Examples are listed from `Nuclei development platform repository <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
 
 * `freertos_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/freertos_demo?utm_source=platformio&utm_medium=docs>`_
+* `demo_dsp <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_dsp?utm_source=platformio&utm_medium=docs>`_
 * `helloworld <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/helloworld?utm_source=platformio&utm_medium=docs>`_
 * `dhrystone <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/dhrystone?utm_source=platformio&utm_medium=docs>`_
 * `whetstone <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/whetstone?utm_source=platformio&utm_medium=docs>`_
+* `demo_eclic <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_eclic?utm_source=platformio&utm_medium=docs>`_
 * `ucosii_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/ucosii_demo?utm_source=platformio&utm_medium=docs>`_
 * `coremark <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/coremark?utm_source=platformio&utm_medium=docs>`_
+* `demo_timer <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_timer?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------

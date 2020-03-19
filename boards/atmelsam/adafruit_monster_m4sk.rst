@@ -24,7 +24,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 .. list-table::
 
   * - **Microcontroller**
-    - SAMD51J19A
+    - SAMD51G19A
   * - **Frequency**
     - 120MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `adafruit_monster_m4sk.json <https://github.com/platformio/platfo
   board = adafruit_monster_m4sk
 
   ; change microcontroller
-  board_build.mcu = samd51j19a
+  board_build.mcu = samd51g19a
 
   ; change MCU frequency
   board_build.f_cpu = 120000000L

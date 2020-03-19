@@ -25,6 +25,7 @@ For more detailed information please visit `vendor site <https://github.com/espr
 .. contents:: Contents
     :local:
     :depth: 1
+.. include:: espidf_extra.rst
 
 Debugging
 ---------

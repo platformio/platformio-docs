@@ -273,14 +273,14 @@ Boards
       - 16KB
     * - :ref:`board_nordicnrf52_electronut_blip`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf52_electronut_papyr`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB

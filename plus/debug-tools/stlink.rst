@@ -297,6 +297,20 @@ Boards
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - :ref:`platform_aceinna_imu`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
       - External
@@ -304,6 +318,13 @@ Boards
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840_sense`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
       - External
@@ -502,14 +523,14 @@ Boards
       - 96KB
     * - :ref:`board_nordicnrf52_electronut_blip`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf52_electronut_papyr`
       - :ref:`platform_nordicnrf52`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
@@ -570,13 +591,6 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
-    * - :ref:`board_atmelsam_macchina2`
-      - :ref:`platform_atmelsam`
-      - External
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_nordicnrf52_nrf52832_mdk`
       - :ref:`platform_nordicnrf52`
       - On-board
