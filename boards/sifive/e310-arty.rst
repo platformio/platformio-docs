@@ -134,6 +134,9 @@ Arty FPGA Dev Kit has on-board debug probe and **IS READY** for debugging. You d
   * - :ref:`debugging_tool_qemu`
     - Yes
     - 
+  * - :ref:`debugging_tool_renode`
+    - Yes
+    - 
   * - :ref:`debugging_tool_tumpa`
     - 
     - 
