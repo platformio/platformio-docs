@@ -34,12 +34,7 @@ Installation
 1. Install PlatformIO Core (CLI). See :ref:`core_installation` guide
 
    .. warning::
-      1. This a **temporary step** and depends on `CLion #CPP-19412: Automatically install PlatformIO Core  <https://youtrack.jetbrains.com/issue/CPP-19412>`_
-
-      2. "PlatformIO for CLion" plugin requires :ref:`piocore` 4.3 or above that has
-         not been released yet. Please run ``pio upgrade --dev`` command after
-         installing stable version of PlatformIO Core. Check a version with
-         ``pio --version`` command.
+      This a **temporary step** and depends on `CLion #CPP-19412: Automatically install PlatformIO Core  <https://youtrack.jetbrains.com/issue/CPP-19412>`_
 
 2. `Download <https://www.jetbrains.com/clion/>`_ and install CLion IDE
 3. Install official `PlatformIO for CLion <https://plugins.jetbrains.com/plugin/13922-platformio-for-clion>`_ plugin.
