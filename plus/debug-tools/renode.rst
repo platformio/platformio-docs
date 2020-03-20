@@ -15,12 +15,12 @@ Renode
 ======
 
 .. image:: ../../_static/images/debug_probes/renode.png
-  :target: https://renode.io//?utm_source=platformio&utm_medium=docs
+  :target: https://renode.io/?utm_source=platformio&utm_medium=docs
 
 Renode is a development framework which accelerates IoT and embedded systems
 development by letting you simulate physical hardware systems - including both the CPU,
 peripherals, sensors, environment and wired or wireless medium between nodes.
-For more information, see `Renode's official website <https://renode.io//?utm_source=platformio&utm_medium=docs>`__.
+For more information, see `Renode's official website <https://renode.io/?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:
@@ -74,7 +74,7 @@ Platforms
       - Description
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
 Frameworks
 ----------
