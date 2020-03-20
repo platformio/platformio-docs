@@ -17,39 +17,77 @@ What is PlatformIO?
 .. contents:: Contents
     :local:
 
-Press about PlatformIO
-----------------------
+**A place where Developers and Teams have true Freedom! No more hardware or software lock-ins!**
 
-"Different microcontrollers normally have different developing tools .
-For instance Arduino rely on Arduino IDE. Few more advanced users set up different
-graphical interfaces like Eclipse for better project management. Sometimes
-it may be hard to keep up with different microcontrollers and tools. You
-probably thought that single unified development tool could be great. Well
-this is what PlatformIO open source ecosystem is for.
-
-This is cross platform code builder and library manager with platforms like
-Arduino or MBED support. They took care of toolchains, debuggers, frameworks
-that work on most popular platforms like Windows, Mac and Linux. It supports
-more than 200 development boards along with more than 15 development platforms
-and 10 frameworks. So most of popular boards are covered. They’ve done hard
-work in organizing and managing hundreds of libraries that can be included
-in to your project. Also lots of examples allow you to start developing
-quickly. PlatformIO initially was developed with Command line philosophy.
-It’s been successfully used with other IDE’s like Eclipse or Visual Studio.
-Recently they’ve released a version with built in IDE based on Atom text editor", -
-[Embedds]_.
+PlatformIO is a cross-platform, cross-architecture, multiple framework, professional
+tool for embedded systems engineers and for software developers who write applications
+for embedded products.
 
 Awards
 ------
 
 PlatformIO was nominated for the year's `best Software and Tools in the 2015/16 IoT Awards <http://www.postscapes.com/2015-16/best-iot-software-and-tools/>`_.
 
+A native `PlatformIO IDE extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`__
+for Microsoft :ref:`ide_vscode` editor is the most rated/reviewed extension with over 800
+five-star reviews in the whole Microsoft Marketplace. It also was installed by over
+750,000 unique developers around the world.
+
+Philosophy
+----------
+
+PlatformIO's unique philosophy in the embedded market provides developers with a modern
+integrated development environment (:ref:`ide`) that works cross-platform,
+supports many different software development kits (SDKs) or :ref:`frameworks`, and
+includes sophisticated debugging (:ref:`piodebug`), unit testing (:ref:`unit_testing`),
+automated code analysis (:ref:`piocheck`), and remote management (:ref:`pioremote`).
+It is architected to maximize flexibility and choice by developers, who can use either
+graphical or command line editors (:ref:`piocore`), or both.
+
+PlatformIO is a must-have tool for professional embedded systems engineers who develop
+solutions on more than one specific platform. In addition, by having a decentralized
+architecture, PlatformIO offers both new and existing developers a quick integration
+path for developing commercial-ready products, and reduces the overall time-to-market.
+
+And it runs on any one of your favorite modern operating systems (macOS, MS Windows,
+Linux, FreeBSD).
+
+Technologies
+------------
+
+PlatformIO applies the latest scalable and flexible software technology to the embedded
+market – an area traditionally served by complex software tools that experienced
+hardware engineers have learned over time (often painfully so). Instead, with
+PlatformIO, users can be hobbyists or professionals. They can import the classic
+Arduino "Blink" sketch or develop  a sophisticated low-level embedded C program for a
+commercial product. Example code for any supported framework can be compiled and
+uploaded to a target platform in minutes.
+
+The build system structure automatically tags software dependencies and applies them
+using a modular hierarchy that takes away the usual complexity and pain. Developers no
+longer have to manually find and assemble an environment of toolchains, compilers, and
+library dependencies to develop applications for a specific target. With PlatformIO,
+clicking the compile button will bring in all necessary dependencies automatically. It's
+analogous to if you were a furniture designer, and your CAD program had a "build" button
+that caused a robot to fetch all the necessary pieces and fasteners and correctly
+assemble them.
+
+:ref:`piocore` is a unique, developed-from-scratch build system that removes the usual
+pain of software integration, packaging, and library dependencies that developers
+encounter when they move beyond the bounds of a specific SDK or example embedded
+application. It can be used with a variety of code development environments and allows
+easy integration with numerous cloud platforms and web services feeds. The user
+experiences no barriers to getting started quickly: **no license fees, no legal contracts**.
+The user maintains full flexibility of the build environment because the tools are open
+source and permissively licensed (no permission needed to modify them, and no
+requirement to share changes.)
+
 Problematic
 -----------
 
 * The main problem which repulses people from the embedded world is a complicated
   process to setup development software for a specific MCU/board: toolchains,
-  proprietary vendor’s IDE (which sometimes isn’t free) and what is more,
+  proprietary vendor's IDE (which sometimes isn't free) and what is more,
   to get a computer with OS where that software is supported.
 * Multiple hardware platforms (MCUs, boards) require different toolchains,
   IDEs, etc, and, respectively, spending time on learning new development environments.
@@ -57,39 +95,6 @@ Problematic
   sensors, actuators, etc.
 * Sharing embedded projects between team members, regardless of an operating
   system they prefer to work with.
-
-Overview
---------
-
-PlatformIO is independent of the platform, in which it is running. In fact,
-the only requirement is Python, which exists pretty much everywhere. What this
-means is that PlatformIO projects can be easily moved from one computer to
-another, as well as that PlatformIO allows for the easy sharing of projects
-between team members, regardless of operating system they prefer to work with.
-Beyond that, PlatformIO can be run not only on commonly used desktops/laptops
-but also on the servers without X Window System. While PlatformIO itself is a
-console application, it can be used in combination with one's favorite
-:ref:`ide` or text editor such as :ref:`ide_atom`, :ref:`ide_clion`,
-:ref:`ide_eclipse`, :ref:`ide_emacs`, :ref:`ide_netbeans`, :ref:`ide_qtcreator`,
-:ref:`ide_sublimetext`, :ref:`ide_vim`, :ref:`ide_visualstudio`,
-:ref:`ide_vscode`, etc.
-
-Alright, so PlatformIO can run on different operating systems. But more
-importantly, from a development perspective at least, is a list of supported
-boards and MCUs. To keep things short: PlatformIO supports approximately 200
-`Embedded Boards <https://platformio.org/boards>`_ and all major
-:ref:`platforms`.
-
-User SHOULD have a choice
--------------------------
-
-* Decide which operating system they want to run development process on.
-  You can even use one OS at home and another at work.
-* Choose which editor to use for writing the code. It can be a pretty simple
-  editor or powerful favorite :ref:`ide`.
-* Focus on the code development, significantly simplifying support for the
-  :ref:`platforms` and MCUs.
-
 
 How does it work?
 -----------------
@@ -102,6 +107,3 @@ the project developed using PlatformIO is as follows:
   installs them automatically.
 * Users develop code and PlatformIO makes sure that it is compiled, prepared
   and uploaded to all the boards of interest.
-
-
-.. [Embedds] Embedds.com: `Develop easier with PlatformIO ecosystem <http://www.embedds.com/develop-easier-with-platformio-ecosystem/>`_

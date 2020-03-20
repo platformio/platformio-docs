@@ -27,3 +27,4 @@
 * Themes support with dark and light colors
 * Serial Port Monitor
 * Built-in Terminal with :ref:`piocore` and CLI tool (``pio``, ``platformio``)
+* Built-in :ref:`piohome`.
