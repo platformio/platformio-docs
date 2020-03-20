@@ -14,11 +14,10 @@
 CLion
 =====
 
-The `CLion <https://www.jetbrains.com/clion/>`_ is a cross-platform C/C++ IDE
-for Linux, OS X, and Windows integrated with the CMake build system. The
-initial version will support the GCC and Clang compilers and GDB debugger.
-CLion includes such features as a smart editor, code quality assurance,
-automated refactorings, project manager, integrated version control systems.
+The `CLion <https://www.jetbrains.com/clion/>`_ is a cross-platform C/C++ IDE for
+Linux, OS X, and Windows. CLion includes such features as a smart editor, code
+generation, code quality assurance, automated refactorings, on-the-fly code analysis,
+project manager, integrated version control systems and debugger.
 
 Refer to the `CLion Documentation <https://www.jetbrains.com/clion/help/>`_
 page for more detailed information.
@@ -191,7 +190,7 @@ Device/Serial Monitor
 Please open CLion terminal and use :ref:`cmd_device`. You can also configure
 device monitor per project using :ref:`projectconf_section_env_monitor`.
 
-Please not that you need to manually close/stop device monitor before firmware uploading.
+Please note that you need to manually close/stop device monitor before firmware uploading.
 
 Debugging
 ---------
