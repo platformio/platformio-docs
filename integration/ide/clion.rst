@@ -22,7 +22,7 @@ project manager, integrated version control systems and debugger.
 Refer to the `CLion Documentation <https://www.jetbrains.com/clion/help/>`_
 page for more detailed information.
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-new.png
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion.png
 
 .. contents:: Contents
     :local:
