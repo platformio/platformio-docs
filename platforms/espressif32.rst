@@ -395,9 +395,8 @@ Packages
     * - Name
       - Description
 
-    * - framework-arduino-mbcwb
-      -
-                
+    * - `framework-arduino-mbcwb <https://briki.org?utm_source=platformio&utm_medium=docs>`__
+      - Fork of Arduino framework for briki MBC-WB boards
 
     * - `framework-arduinoespressif32 <https://github.com/espressif/arduino-esp32?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (ESP32 Core)
@@ -417,17 +416,14 @@ Packages
     * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio&utm_medium=docs>`__
       - ESP8266 and ESP32 serial bootloader utility
 
-    * - tool-idf
-      -
-                
+    * - `tool-idf <https://github.com/espressif/esp-idf?utm_source=platformio&utm_medium=docs>`__
+      - Python idf.py binary
 
-    * - tool-mbctool
-      -
-                
+    * - `tool-mbctool <https://briki.org?utm_source=platformio&utm_medium=docs>`__
+      - MBC-WB Uploader Application
 
-    * - tool-mconf
-      -
-                
+    * - `tool-mconf <https://github.com/espressif/kconfig-frontends?utm_source=platformio&utm_medium=docs>`__
+      - Kconfig frontends and parser
 
     * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio&utm_medium=docs>`__
       - Tool to build and unpack SPIFFS images
