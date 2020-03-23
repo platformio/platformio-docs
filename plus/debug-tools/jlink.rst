@@ -928,6 +928,20 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_briki_abc_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
     * - :ref:`board_nxplpc_lpc11u35_501`
       - :ref:`platform_nxplpc`
       - External
@@ -1866,6 +1880,13 @@ Boards
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
       - :ref:`platform_siliconlabsefm32`
       - On-board
@@ -2777,6 +2798,13 @@ Boards
       - 32KB
       - 8KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
       - :ref:`platform_espressif32`
       - External
       - ESP32

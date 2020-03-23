@@ -336,6 +336,8 @@ Espressif 32
     espressif32/featheresp32
     espressif32/espea32
     espressif32/bpi-bit
+    espressif32/briki_abc_esp32
+    espressif32/briki_mbc-wb_esp32
     espressif32/d-duino-32
     espressif32/esp32doit-devkit-v1
     espressif32/pocket_32
@@ -382,10 +384,12 @@ Espressif 32
     espressif32/lopy
     espressif32/lopy4
     espressif32/qchip
+    espressif32/sg-o_airMon
     espressif32/wesp32
     espressif32/esp32thing
     espressif32/sparkfun_lora_gateway_1-channel
     espressif32/ttgo-lora32-v1
+    espressif32/ttgo-lora32-v2
     espressif32/ttgo-t-beam
     espressif32/ttgo-t-watch
     espressif32/ttgo-t1

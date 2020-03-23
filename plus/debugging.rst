@@ -3010,6 +3010,27 @@ RushUp
       - 1MB
       - 128KB
 
+SG-O
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 SODAQ
 ~~~~~
 
@@ -4325,6 +4346,13 @@ TTGO
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t-beam`
       - :ref:`platform_espressif32`
       - External
@@ -4702,6 +4730,34 @@ XinaBox
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+meteca
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_briki_abc_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
       - 320KB
 
 ng-beacon
