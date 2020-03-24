@@ -69,8 +69,6 @@ Uploading
 Briki ABC (MBC-WB) - ESP32 supports the next uploading protocols:
 
 * ``esp-prog``
-* ``espota``
-* ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``
 * ``mbctool``
@@ -121,9 +119,6 @@ Briki ABC (MBC-WB) - ESP32 does not have on-board debug probe and **IS NOT READY
     - 
     - 
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
-  * - :ref:`debugging_tool_mbctool`
     - 
     - 
   * - :ref:`debugging_tool_minimodule`
