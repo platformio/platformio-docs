@@ -66,6 +66,31 @@ More options:
 * :ref:`projectconf_section_env_debug`
 * :ref:`projectconf_section_env_upload`
 
+Custom Server
+~~~~~~~~~~~~~
+
+.. code-block:: ini
+
+    [env:debug_jlink]
+    platform = ststm32
+    framework = mbed
+    board = nucleo_f446re
+
+    debug_tool = jlink
+    debug_port = :2331
+
+    debug_server =
+      /full/path/to/JLinkGDBServerCL
+      -singlerun
+      -if
+      SWD
+      -select
+      USB
+      -port
+      2331
+      -device
+      STM32F446RE
+
 Drivers
 -------
 
@@ -935,6 +960,13 @@ Boards
       - 240MHz
       - 3.25MB
       - 320KB
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_briki_mbc-wb_esp32`
       - :ref:`platform_espressif32`
       - External
@@ -942,6 +974,13 @@ Boards
       - 240MHz
       - 3.25MB
       - 320KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nxplpc_lpc11u35_501`
       - :ref:`platform_nxplpc`
       - External

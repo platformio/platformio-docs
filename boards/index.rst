@@ -302,6 +302,8 @@ Atmel SAM
     atmelsam/samd21g18a
     atmelsam/samd21_xpro
     atmelsam/saml21_xpro_b
+    atmelsam/briki_abc_samd21
+    atmelsam/briki_mbcwb_samd21
     atmelsam/digix
     atmelsam/current_ranger
     atmelsam/mkrvidor4000

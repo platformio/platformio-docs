@@ -936,12 +936,24 @@ Please click on board name for the further details.
       - 240MHz
       - 3.25MB
       - 320KB
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_briki_mbc-wb_esp32`
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
       - 3.25MB
       - 320KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
       - :ref:`platform_nordicnrf52`
       - NRF52840
@@ -7866,6 +7878,13 @@ meteca
       - 240MHz
       - 3.25MB
       - 320KB
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_espressif32_briki_mbc-wb_esp32`
       - :ref:`platform_espressif32`
       - External
@@ -7873,6 +7892,13 @@ meteca
       - 240MHz
       - 3.25MB
       - 320KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
 
 ng-beacon
 ~~~~~~~~~

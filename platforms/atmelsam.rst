@@ -43,6 +43,7 @@ Examples are listed from `Atmel SAM development platform repository <https://git
 * `arduino-external-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
 * `arduino-web-thing-led <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-web-thing-led?utm_source=platformio&utm_medium=docs>`_
+* `arduino-briki-internal-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-briki-internal-libs?utm_source=platformio&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -319,6 +320,16 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_digix`
       - AT91SAM3X8E
       - 84MHz
@@ -462,6 +473,9 @@ Packages
     * - Name
       - Description
 
+    * - `framework-arduino-mbcwb <https://briki.org?utm_source=platformio&utm_medium=docs>`__
+      - Fork of Arduino framework for briki MBC-WB boards
+
     * - `framework-arduino-sam <https://github.com/arduino/ArduinoCore-sam?utm_source=platformio&utm_medium=docs>`__
       - Arduino Wiring-based Framework (SAM Core)
 
@@ -560,6 +574,9 @@ Packages
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
+
+    * - `tool-mbctool <https://briki.org?utm_source=platformio&utm_medium=docs>`__
+      - MBC-WB Uploader Application
 
     * - `tool-ninja <https://ninja-build.org?utm_source=platformio&utm_medium=docs>`__
       - Ninja is a small build system with a focus on speed.
@@ -1140,6 +1157,31 @@ SparkFun
       - 256KB
       - 32KB
     * - :ref:`board_atmelsam_sparkfun_samd21_proRF`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+
+meteca
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
       - External
       - SAMD21G18A
       - 48MHz
