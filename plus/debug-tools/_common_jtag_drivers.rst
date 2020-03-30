@@ -13,7 +13,8 @@ Drivers
 -------
 
 :Windows:
-  See https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20
+  * `Step-by-step guide: Drivers, Zadig, Wiring <https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20>`_
+  * `Video tutorial <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
 
 :Mac:
   macOS contains default FTDIUSBSerialDriver driver which conflicts with

@@ -88,6 +88,11 @@ Wiring Connections
     - ESP_TDI
     - Test Data In
 
+Tutorials
+---------
+
+* `Use the PlatformIO Debugger on the ESP32 Using an ESP-prog <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
+
 .. begin_platforms
 
 Platforms
