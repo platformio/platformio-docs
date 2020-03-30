@@ -32,7 +32,7 @@ Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the indust
   * - **RAM**
     - 256KB
   * - **Vendor**
-    - `TI <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html?utm_source=platformio&utm_medium=docs>`__
+    - `TI <http://www.ti.com/ww/en/launchpad/launchpads-connected-ek-tm4c1294xl.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `oddWires <http://www.oddwires.com/iot-bus-io-esp32-processor-with-wifi-and-bluetooth/?utm_source=platformio&utm_medium=docs>`__
+    - `oddWires <http://www.oddwires.com/iot-bus-io-esp32-processor-with-wifi-and-bluetooth/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

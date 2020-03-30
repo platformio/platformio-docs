@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 192KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/3857?utm_source=platformio&utm_medium=docs>`__
+    - `Adafruit <https://www.adafruit.com/product/3857?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -19,7 +19,7 @@ ESP8266 RTOS SDK
 
 ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
 
-For more detailed information please visit `vendor site <https://github.com/espressif/ESP8266_RTOS_SDK?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/espressif/ESP8266_RTOS_SDK?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -29,7 +29,7 @@ For more detailed information please visit `vendor site <https://github.com/espr
 Examples
 --------
 
-* `ESP8266 RTOS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `ESP8266 RTOS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------

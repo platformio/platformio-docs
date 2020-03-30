@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Aiyarafun <http://www.ayarafun.com?utm_source=platformio&utm_medium=docs>`__
+    - `Aiyarafun <http://www.ayarafun.com?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

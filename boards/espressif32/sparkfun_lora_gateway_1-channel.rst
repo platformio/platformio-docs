@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `SparkFun <https://www.sparkfun.com/products/15006?utm_source=platformio&utm_medium=docs>`__
+    - `SparkFun <https://www.sparkfun.com/products/15006?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

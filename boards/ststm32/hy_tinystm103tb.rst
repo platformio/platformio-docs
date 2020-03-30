@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 20KB
   * - **Vendor**
-    - `HY <http://www.hotmcu.com/stm32f103tb-arm-cortex-m3-development-board-p-222.html?utm_source=platformio&utm_medium=docs>`__
+    - `HY <http://www.hotmcu.com/stm32f103tb-arm-cortex-m3-development-board-p-222.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

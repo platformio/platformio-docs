@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `1BitSquared <http://1bitsy.org?utm_source=platformio&utm_medium=docs>`__
+    - `1BitSquared <http://1bitsy.org?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

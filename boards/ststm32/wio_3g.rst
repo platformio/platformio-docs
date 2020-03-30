@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 256KB
   * - **Vendor**
-    - `SeeedStudio <https://os.mbed.com/platforms/Seeed-Wio-3g/?utm_source=platformio&utm_medium=docs>`__
+    - `SeeedStudio <https://os.mbed.com/platforms/Seeed-Wio-3g/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

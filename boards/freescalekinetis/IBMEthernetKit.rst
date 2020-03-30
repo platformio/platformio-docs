@@ -32,7 +32,7 @@ Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is
   * - **RAM**
     - 256KB
   * - **Vendor**
-    - `Freescale <http://developer.mbed.org/platforms/IBMEthernetKit/?utm_source=platformio&utm_medium=docs>`__
+    - `Freescale <http://developer.mbed.org/platforms/IBMEthernetKit/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

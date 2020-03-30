@@ -32,7 +32,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
   * - **RAM**
     - 512KB
   * - **Vendor**
-    - `MikroElektronika <https://shop.mikroe.com/flipclick-pic32mz?utm_source=platformio&utm_medium=docs>`__
+    - `MikroElektronika <https://shop.mikroe.com/flipclick-pic32mz?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

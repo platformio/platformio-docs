@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `RedBearLab <https://redbear.cc/product/ble/blend-2.html?utm_source=platformio&utm_medium=docs>`__
+    - `RedBearLab <https://redbear.cc/product/ble/blend-2.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

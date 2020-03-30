@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2.50KB
   * - **Vendor**
-    - `The Things Network <https://shop.thethingsnetwork.com/index.php/product/the-things-uno/?utm_source=platformio&utm_medium=docs>`__
+    - `The Things Network <https://shop.thethingsnetwork.com/index.php/product/the-things-uno/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2.50KB
   * - **Vendor**
-    - `Arduboy <https://www.arduboy.com?utm_source=platformio&utm_medium=docs>`__
+    - `Arduboy <https://www.arduboy.com?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `ReprapWorld <https://reprapworld.com/products/electronics/minitronics/minitronics_v2_0_32_bit_all_in_one_controller_board/?utm_source=platformio&utm_medium=docs>`__
+    - `ReprapWorld <https://reprapworld.com/products/electronics/minitronics/minitronics_v2_0_32_bit_all_in_one_controller_board/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

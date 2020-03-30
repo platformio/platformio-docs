@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `makerlab.mx <http://www.aquila.io/en?utm_source=platformio&utm_medium=docs>`__
+    - `makerlab.mx <http://www.aquila.io/en?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

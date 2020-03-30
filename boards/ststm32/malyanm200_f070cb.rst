@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 14.81KB
   * - **Vendor**
-    - `Malyan <http://malyansys.com/en/product/fdm-series/m200-v2/?utm_source=platformio&utm_medium=docs>`__
+    - `Malyan <http://malyansys.com/en/product/fdm-series/m200-v2/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -19,7 +19,7 @@ GigaDevice GD32V SDK
 
 GigaDevice GD32VF103 Firmware Library (SDK)
 
-For more detailed information please visit `vendor site <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -94,7 +94,7 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `GigaDevice GD32V SDK for GigaDevice GD32V <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `GigaDevice GD32V SDK for GigaDevice GD32V <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------

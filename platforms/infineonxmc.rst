@@ -19,7 +19,7 @@ Infineon XMC
 
 Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
-For more detailed information please visit `vendor site <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.infineon.com?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,16 +29,16 @@ For more detailed information please visit `vendor site <https://www.infineon.co
 Examples
 --------
 
-Examples are listed from `Infineon XMC development platform repository <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Infineon XMC development platform repository <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `ifx9201 <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/ifx9201?utm_source=platformio&utm_medium=docs>`_
-* `device-control <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/device-control?utm_source=platformio&utm_medium=docs>`_
-* `arduino-blink <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `spi <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/spi?utm_source=platformio&utm_medium=docs>`_
-* `ultrasonic <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/ultrasonic?utm_source=platformio&utm_medium=docs>`_
-* `rtc <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/rtc?utm_source=platformio&utm_medium=docs>`_
-* `radar <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/radar?utm_source=platformio&utm_medium=docs>`_
-* `arduino-wire <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/arduino-wire?utm_source=platformio&utm_medium=docs>`_
+* `ifx9201 <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/ifx9201?utm_source=platformio.org&utm_medium=docs>`_
+* `device-control <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/device-control?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `spi <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/spi?utm_source=platformio.org&utm_medium=docs>`_
+* `ultrasonic <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/ultrasonic?utm_source=platformio.org&utm_medium=docs>`_
+* `rtc <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/rtc?utm_source=platformio.org&utm_medium=docs>`_
+* `radar <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/radar?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-wire <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples/arduino-wire?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -160,13 +160,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoxmc <https://github.com/Infineon/XMC-for-Arduino?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-arduinoxmc <https://github.com/Infineon/XMC-for-Arduino?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (Infineon XMC Core)
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::

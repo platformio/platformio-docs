@@ -19,7 +19,7 @@ PULP OS
 
 PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.
 
-For more detailed information please visit `vendor site <https://www.pulp-platform.org?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.pulp-platform.org?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -75,7 +75,7 @@ You do not need to use/buy external debug probe.
 Examples
 --------
 
-* `PULP OS for RISC-V GAP <https://github.com/pioplus/platform-riscv_gap/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `PULP OS for RISC-V GAP <https://github.com/pioplus/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------

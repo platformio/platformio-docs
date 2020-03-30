@@ -19,7 +19,7 @@ Shakti SDK
 
 A software development kit for developing applications on Shakti class of processors
 
-For more detailed information please visit `vendor site <https://gitlab.com/shaktiproject/software/shakti-sdk?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://gitlab.com/shaktiproject/software/shakti-sdk?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -81,7 +81,7 @@ You do not need to use/buy external debug probe.
 Examples
 --------
 
-* `Shakti SDK for Shakti <https://github.com/platformio/platform-shakti/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Shakti SDK for Shakti <https://github.com/platformio/platform-shakti/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------

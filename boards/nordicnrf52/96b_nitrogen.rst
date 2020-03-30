@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `96Boards <https://www.96boards.org/product/nitrogen/?utm_source=platformio&utm_medium=docs>`__
+    - `96Boards <https://www.96boards.org/product/nitrogen/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

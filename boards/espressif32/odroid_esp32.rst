@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Hardkernel <https://www.hardkernel.com/main/products/prdt_info.php?g_code=G152875062626&utm_source=platformio&utm_medium=docs>`__
+    - `Hardkernel <https://www.hardkernel.com/main/products/prdt_info.php?g_code=G152875062626&utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

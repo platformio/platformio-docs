@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `SODAQ <http://support.sodaq.com/sodaq-one/sodaq-mbili-1284p/?utm_source=platformio&utm_medium=docs>`__
+    - `SODAQ <http://support.sodaq.com/sodaq-one/sodaq-mbili-1284p/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

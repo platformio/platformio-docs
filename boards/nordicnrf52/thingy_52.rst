@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `Nordic <https://www.nordicsemi.com/Software-and-Tools/Prototyping-platforms/Nordic-Thingy-52?utm_source=platformio&utm_medium=docs>`__
+    - `Nordic <https://www.nordicsemi.com/Software-and-Tools/Prototyping-platforms/Nordic-Thingy-52?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

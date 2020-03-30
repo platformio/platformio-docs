@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `sino:bit <https://github.com/sinobitorg/?utm_source=platformio&utm_medium=docs>`__
+    - `sino:bit <https://github.com/sinobitorg/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

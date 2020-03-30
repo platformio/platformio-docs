@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `Wicked Device <http://shop.wickeddevice.com/resources/wildfire/?utm_source=platformio&utm_medium=docs>`__
+    - `Wicked Device <http://shop.wickeddevice.com/resources/wildfire/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

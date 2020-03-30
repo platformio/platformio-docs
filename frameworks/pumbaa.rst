@@ -19,7 +19,7 @@ Pumbaa
 
 Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
 
-For more detailed information please visit `vendor site <http://pumbaa.readthedocs.org/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://pumbaa.readthedocs.org/?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -29,7 +29,7 @@ For more detailed information please visit `vendor site <http://pumbaa.readthedo
 Examples
 --------
 
-* `Pumbaa for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Pumbaa for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------

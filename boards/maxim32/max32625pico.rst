@@ -32,7 +32,7 @@ Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, ef
   * - **RAM**
     - 160KB
   * - **Vendor**
-    - `Maxim <https://www.maximintegrated.com/en/products/microcontrollers/MAX32625PICO.html?utm_source=platformio&utm_medium=docs>`__
+    - `Maxim <https://www.maximintegrated.com/en/products/microcontrollers/MAX32625PICO.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

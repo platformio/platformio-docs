@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `rhomb.io <https://os.mbed.com/platforms/RHOMBIO-L476DMW1K/?utm_source=platformio&utm_medium=docs>`__
+    - `rhomb.io <https://os.mbed.com/platforms/RHOMBIO-L476DMW1K/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `WEMOS <https://wiki.wemos.cc/products:lolin32:lolin32?utm_source=platformio&utm_medium=docs>`__
+    - `WEMOS <https://wiki.wemos.cc/products:lolin32:lolin32?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

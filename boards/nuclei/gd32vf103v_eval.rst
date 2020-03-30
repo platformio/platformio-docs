@@ -32,7 +32,7 @@ Platform :ref:`platform_nuclei`: Find professional RISC-V Processor IP in Nuclei
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `GigaDevice <https://www.gigadevice.com/?utm_source=platformio&utm_medium=docs>`__
+    - `GigaDevice <https://www.gigadevice.com/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

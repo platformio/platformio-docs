@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `Delta <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio&utm_medium=docs>`__
+    - `Delta <https://developer.mbed.org/platforms/Delta-DFBM-NQ620/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

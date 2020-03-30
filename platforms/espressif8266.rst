@@ -19,7 +19,7 @@ Espressif 8266
 
 Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-For more detailed information please visit `vendor site <https://espressif.com/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://espressif.com/?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -30,15 +30,15 @@ For more detailed information please visit `vendor site <https://espressif.com/?
 Examples
 --------
 
-Examples are listed from `Espressif 8266 development platform repository <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Espressif 8266 development platform repository <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-webserver <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio&utm_medium=docs>`_
-* `arduino-asyncudp <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-asyncudp?utm_source=platformio&utm_medium=docs>`_
-* `arduino-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
-* `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
-* `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
+* `arduino-webserver <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-asyncudp <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-asyncudp?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/simba-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -81,28 +81,28 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (ESP8266 Core)
 
-    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK?utm_source=platformio.org&utm_medium=docs>`__
       - ESP8266 Non-OS SDK
 
-    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK?utm_source=platformio.org&utm_medium=docs>`__
       - ESP8266 SDK based on FreeRTOS
 
-    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio.org&utm_medium=docs>`__
       - Simba Framework
 
-    * - `tool-esptool <https://github.com/igrr/esptool-ck?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-esptool <https://github.com/igrr/esptool-ck?utm_source=platformio.org&utm_medium=docs>`__
       - esptool-ck
 
-    * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio.org&utm_medium=docs>`__
       - ESP8266 and ESP32 serial bootloader utility
 
-    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio.org&utm_medium=docs>`__
       - Tool to build and unpack SPIFFS images
 
-    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa?utm_source=platformio.org&utm_medium=docs>`__
       - xtensa-gcc
 
 .. warning::

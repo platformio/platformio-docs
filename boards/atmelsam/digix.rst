@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 96KB
   * - **Vendor**
-    - `Digistump <http://digistump.com/products/50?utm_source=platformio&utm_medium=docs>`__
+    - `Digistump <http://digistump.com/products/50?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

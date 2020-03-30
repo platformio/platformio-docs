@@ -32,7 +32,7 @@ Platform :ref:`platform_wiznet7500`: The IOP (Internet Offload Processor) W7500 
   * - **RAM**
     - 48KB
   * - **Vendor**
-    - `WIZNet <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio&utm_medium=docs>`__
+    - `WIZNet <https://developer.mbed.org/platforms/WIZwiki-W7500ECO/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

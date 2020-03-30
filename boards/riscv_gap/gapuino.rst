@@ -32,7 +32,7 @@ Platform :ref:`platform_riscv_gap`: GreenWaves GAP8 IoT application processor en
   * - **RAM**
     - 8MB
   * - **Vendor**
-    - `GreenWaves Technologies <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`__
+    - `GreenWaves Technologies <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

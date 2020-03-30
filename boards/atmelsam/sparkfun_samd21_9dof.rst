@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `SparkFun <https://www.sparkfun.com/products/14001?utm_source=platformio&utm_medium=docs>`__
+    - `SparkFun <https://www.sparkfun.com/products/14001?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

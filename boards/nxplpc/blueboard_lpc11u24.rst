@@ -32,7 +32,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
   * - **RAM**
     - 8KB
   * - **Vendor**
-    - `NGX Technologies <https://developer.mbed.org/platforms/BlueBoard-LPC11U24/?utm_source=platformio&utm_medium=docs>`__
+    - `NGX Technologies <https://developer.mbed.org/platforms/BlueBoard-LPC11U24/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

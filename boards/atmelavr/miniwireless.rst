@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `Anarduino <http://www.anarduino.com/miniwireless/?utm_source=platformio&utm_medium=docs>`__
+    - `Anarduino <http://www.anarduino.com/miniwireless/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

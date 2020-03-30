@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `MultiTech <https://developer.mbed.org/platforms/MTS-xDot-L151CC/?utm_source=platformio&utm_medium=docs>`__
+    - `MultiTech <https://developer.mbed.org/platforms/MTS-xDot-L151CC/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
   * - **RAM**
     - 62KB
   * - **Vendor**
-    - `ChipKIT <https://github.com/chipKIT32/RGB_Station?utm_source=platformio&utm_medium=docs>`__
+    - `ChipKIT <https://github.com/chipKIT32/RGB_Station?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

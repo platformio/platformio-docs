@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `Holyiot <http://www.holyiot.com/eacp_view.asp?id=306&utm_source=platformio&utm_medium=docs>`__
+    - `Holyiot <http://www.holyiot.com/eacp_view.asp?id=306&utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

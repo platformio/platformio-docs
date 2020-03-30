@@ -32,7 +32,7 @@ Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller 
   * - **RAM**
     - 8KB
   * - **Vendor**
-    - `Teensy <http://www.pjrc.com/teensy/teensyLC.html?utm_source=platformio&utm_medium=docs>`__
+    - `Teensy <http://www.pjrc.com/teensy/teensyLC.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

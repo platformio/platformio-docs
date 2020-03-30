@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `nicai-systems <http://www.nicai-systems.com/en/nibobee?utm_source=platformio&utm_medium=docs>`__
+    - `nicai-systems <http://www.nicai-systems.com/en/nibobee?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

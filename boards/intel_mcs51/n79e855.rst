@@ -32,7 +32,7 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
   * - **RAM**
     - 512B
   * - **Vendor**
-    - `Nuvoton <http://www.nuvoton.com/hq/products/microcontrollers/8bit-8051-mcus/low-pin-count-8051-series/n79e855/?utm_source=platformio&utm_medium=docs>`__
+    - `Nuvoton <http://www.nuvoton.com/hq/products/microcontrollers/8bit-8051-mcus/low-pin-count-8051-series/n79e855/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

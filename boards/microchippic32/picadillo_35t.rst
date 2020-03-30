@@ -32,7 +32,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `4D Systems <http://www.4dsystems.com.au/product/Picadillo_35T/?utm_source=platformio&utm_medium=docs>`__
+    - `4D Systems <http://www.4dsystems.com.au/product/Picadillo_35T/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

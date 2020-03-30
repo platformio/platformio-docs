@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Gimasi <http://www.gimasi.ch/productions-platforms/tuino096/?utm_source=platformio&utm_medium=docs>`__
+    - `Gimasi <http://www.gimasi.ch/productions-platforms/tuino096/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

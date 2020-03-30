@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Heltec <http://www.heltec.cn/project/wifi_kit_8/?utm_source=platformio&utm_medium=docs>`__
+    - `Heltec <http://www.heltec.cn/project/wifi_kit_8/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

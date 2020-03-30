@@ -19,7 +19,7 @@ GigaDevice GD32V
 
 The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
 
-For more detailed information please visit `vendor site <https://www.gigadevice.com/products/microcontrollers/gd32/risc-v/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.gigadevice.com/products/microcontrollers/gd32/risc-v/?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,11 +29,11 @@ For more detailed information please visit `vendor site <https://www.gigadevice.
 Examples
 --------
 
-Examples are listed from `GigaDevice GD32V development platform repository <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `GigaDevice GD32V development platform repository <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `eval-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/eval-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `longan-nano-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/longan-nano-blink?utm_source=platformio&utm_medium=docs>`_
+* `eval-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/eval-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `longan-nano-blink <https://github.com/sipeed/platform-gd32v/tree/master/examples/longan-nano-blink?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -136,19 +136,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-gd32v <https://github.com/sipeed/Maixduino?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-arduino-gd32v <https://github.com/sipeed/Maixduino?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (GigaDevice GD32V Core)
 
-    * - `framework-gd32vf103-sdk <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-gd32vf103-sdk <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio.org&utm_medium=docs>`__
       - GigaDevice GD32V SDK
 
-    * - `tool-gd32vflash <https://github.com/riscv-mcu/gd32-dfu-utils?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-gd32vflash <https://github.com/riscv-mcu/gd32-dfu-utils?utm_source=platformio.org&utm_medium=docs>`__
       - GD32V FLASH TOOLS
 
-    * - `tool-openocd-gd32v <https://github.com/riscv/riscv-openocd?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-openocd-gd32v <https://github.com/riscv/riscv-openocd?utm_source=platformio.org&utm_medium=docs>`__
       - OpenOCD for RISC-V GigaDevice GD32V
 
-    * - `toolchain-gd32v <https://github.com/riscv-mcu/riscv-gnu-toolchain?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-gd32v <https://github.com/riscv-mcu/riscv-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
       - GCC for GigaDevice GD32V
 
 .. warning::

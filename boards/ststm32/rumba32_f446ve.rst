@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `RUMBA <https://github.com/Aus3D/RUMBA32?utm_source=platformio&utm_medium=docs>`__
+    - `RUMBA <https://github.com/Aus3D/RUMBA32?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

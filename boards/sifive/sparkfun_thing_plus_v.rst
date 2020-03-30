@@ -32,7 +32,7 @@ Platform :ref:`platform_sifive`: SiFive brings the power of open source and soft
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `SparkFun <https://www.sparkfun.com/products/15799?utm_source=platformio&utm_medium=docs>`__
+    - `SparkFun <https://www.sparkfun.com/products/15799?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

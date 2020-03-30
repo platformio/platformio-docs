@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Nordic <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/?utm_source=platformio&utm_medium=docs>`__
+    - `Nordic <https://developer.mbed.org/platforms/Nordic-nRF51-Dongle/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

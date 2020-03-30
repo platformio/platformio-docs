@@ -32,7 +32,7 @@ Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrol
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `Infineon <https://www.infineon.com?utm_source=platformio&utm_medium=docs>`__
+    - `Infineon <https://www.infineon.com?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

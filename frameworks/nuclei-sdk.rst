@@ -19,7 +19,7 @@ Nuclei SDK
 
 Open Source Software Development Kit for the Nuclei N/NX processors
 
-For more detailed information please visit `vendor site <https://github.com/Nuclei-Software/nuclei-sdk?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/Nuclei-Software/nuclei-sdk?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -106,7 +106,7 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `Nuclei SDK for Nuclei <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Nuclei SDK for Nuclei <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------

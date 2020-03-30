@@ -19,7 +19,7 @@ Shakti
 
 Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
-For more detailed information please visit `vendor site <https://shakti.org.in/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://shakti.org.in/?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,11 +29,11 @@ For more detailed information please visit `vendor site <https://shakti.org.in/?
 Examples
 --------
 
-Examples are listed from `Shakti development platform repository <https://github.com/platformio/platform-shakti/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Shakti development platform repository <https://github.com/platformio/platform-shakti/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `shakti-sdk_gpio-keypad <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_gpio-keypad?utm_source=platformio&utm_medium=docs>`_
-* `shakti-sdk_i2c-lm75 <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_i2c-lm75?utm_source=platformio&utm_medium=docs>`_
-* `shakti-sdk_uart-hello <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_uart-hello?utm_source=platformio&utm_medium=docs>`_
+* `shakti-sdk_gpio-keypad <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_gpio-keypad?utm_source=platformio.org&utm_medium=docs>`_
+* `shakti-sdk_i2c-lm75 <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_i2c-lm75?utm_source=platformio.org&utm_medium=docs>`_
+* `shakti-sdk_uart-hello <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_uart-hello?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -125,19 +125,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-shakti-sdk <https://gitlab.com/shaktiproject/software/shakti-sdk?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-shakti-sdk <https://gitlab.com/shaktiproject/software/shakti-sdk?utm_source=platformio.org&utm_medium=docs>`__
       - A software development kit for developing applications on Shakti class of processors
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
 
-    * - `tool-openocd-riscv <https://github.com/riscv/riscv-openocd?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-openocd-riscv <https://github.com/riscv/riscv-openocd?utm_source=platformio.org&utm_medium=docs>`__
       - OpenOCD for RISC-V
 
-    * - `tool-qemu-riscv <https://www.qemu.org/?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-qemu-riscv <https://www.qemu.org/?utm_source=platformio.org&utm_medium=docs>`__
       - Open source machine emulator and virtualizer
 
-    * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
       - GNU toolchain for RISC-V, including GCC
 
 .. warning::

@@ -19,7 +19,7 @@ WIZNet W7500
 
 The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
-For more detailed information please visit `vendor site <http://www.wiznet.io/product-item/w7500/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.wiznet.io/product-item/w7500/?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,13 +29,13 @@ For more detailed information please visit `vendor site <http://www.wiznet.io/pr
 Examples
 --------
 
-Examples are listed from `WIZNet W7500 development platform repository <https://github.com/platformio/platform-wiznet7500/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `WIZNet W7500 development platform repository <https://github.com/platformio/platform-wiznet7500/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-rtos?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-wiznet7500/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -132,16 +132,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
 
-    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD?utm_source=platformio.org&utm_medium=docs>`__
       - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::

@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `ThaiEasyElec <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio&utm_medium=docs>`__
+    - `ThaiEasyElec <http://thaieasyelec.com/products/development-boards/espino-wifi-development-board-detail.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

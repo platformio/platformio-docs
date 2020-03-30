@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 1KB
   * - **Vendor**
-    - `Arduino <http://arduino.cc/en/Main/ArduinoBoardLilyPad?utm_source=platformio&utm_medium=docs>`__
+    - `Arduino <http://arduino.cc/en/Main/ArduinoBoardLilyPad?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

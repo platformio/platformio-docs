@@ -32,7 +32,7 @@ Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-co
   * - **RAM**
     - 512MB
   * - **Vendor**
-    - `Raspberry Pi <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`__
+    - `Raspberry Pi <https://www.raspberrypi.org?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

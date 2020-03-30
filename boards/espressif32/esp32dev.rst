@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Espressif <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio&utm_medium=docs>`__
+    - `Espressif <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `ITEAD <https://www.itead.cc/sonoff-th.html?utm_source=platformio&utm_medium=docs>`__
+    - `ITEAD <https://www.itead.cc/sonoff-th.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

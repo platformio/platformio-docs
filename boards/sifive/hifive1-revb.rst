@@ -32,7 +32,7 @@ Platform :ref:`platform_sifive`: SiFive brings the power of open source and soft
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `SiFive <https://www.sifive.com/boards/hifive1-rev-b?utm_source=platformio&utm_medium=docs>`__
+    - `SiFive <https://www.sifive.com/boards/hifive1-rev-b?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

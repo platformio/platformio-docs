@@ -19,7 +19,7 @@ ESP8266 Non-OS SDK
 
 The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions.
 
-For more detailed information please visit `vendor site <https://github.com/espressif/ESP8266_NONOS_SDK?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/espressif/ESP8266_NONOS_SDK?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -29,7 +29,7 @@ For more detailed information please visit `vendor site <https://github.com/espr
 Examples
 --------
 
-* `ESP8266 Non-OS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `ESP8266 Non-OS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------

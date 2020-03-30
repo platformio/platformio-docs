@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `Generic <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio&utm_medium=docs>`__
+    - `Generic <http://www.st.com/en/microcontrollers/stm32f103ze.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm8`: The STM8 is an 8-bit microcontroller family by 
   * - **RAM**
     - 1KB
   * - **Vendor**
-    - `ST <https://tenbaht.github.io/sduino/hardware/stm8blue/?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://tenbaht.github.io/sduino/hardware/stm8blue/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

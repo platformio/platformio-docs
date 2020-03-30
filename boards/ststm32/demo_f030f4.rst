@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 4KB
   * - **Vendor**
-    - `Generic <https://www.hotmcu.com/stm32f030f4p6-minimum-systerm-boardcortexm0-p-208.html?utm_source=platformio&utm_medium=docs>`__
+    - `Generic <https://www.hotmcu.com/stm32f030f4p6-minimum-systerm-boardcortexm0-p-208.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

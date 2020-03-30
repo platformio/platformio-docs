@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `Wisen <https://wisen.com.au/store/products/whisper-node-avr/?utm_source=platformio&utm_medium=docs>`__
+    - `Wisen <https://wisen.com.au/store/products/whisper-node-avr/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

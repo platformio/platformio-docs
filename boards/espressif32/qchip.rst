@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Qmobot LLP <http://qmobot.com/?utm_source=platformio&utm_medium=docs>`__
+    - `Qmobot LLP <http://qmobot.com/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

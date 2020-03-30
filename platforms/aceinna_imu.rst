@@ -19,7 +19,7 @@ Aceinna IMU
 
 Open-source, embedded development platform for Aceinna IMU hardware. Run custom algorithms and navigation code on Aceinna IMU/INS hardware.
 
-For more detailed information please visit `vendor site <https://www.aceinna.com?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.aceinna.com?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,12 +29,12 @@ For more detailed information please visit `vendor site <https://www.aceinna.com
 Examples
 --------
 
-Examples are listed from `Aceinna IMU development platform repository <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Aceinna IMU development platform repository <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `OpenIMU300RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300RI?utm_source=platformio&utm_medium=docs>`_
-* `OpenIMU330BI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU330BI?utm_source=platformio&utm_medium=docs>`_
-* `OpenRTK330LI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenRTK330LI?utm_source=platformio&utm_medium=docs>`_
-* `OpenIMU300ZI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300ZI?utm_source=platformio&utm_medium=docs>`_
+* `OpenIMU300RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300RI?utm_source=platformio.org&utm_medium=docs>`_
+* `OpenIMU330BI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU330BI?utm_source=platformio.org&utm_medium=docs>`_
+* `OpenRTK330LI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenRTK330LI?utm_source=platformio.org&utm_medium=docs>`_
+* `OpenIMU300ZI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300ZI?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -164,13 +164,13 @@ Packages
     * - Name
       - Description
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
       - OpenOCD
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::

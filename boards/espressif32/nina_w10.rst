@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `u-blox <https://www.u-blox.com/en/product/nina-w10-series?utm_source=platformio&utm_medium=docs>`__
+    - `u-blox <https://www.u-blox.com/en/product/nina-w10-series?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

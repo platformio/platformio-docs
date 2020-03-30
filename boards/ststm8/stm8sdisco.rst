@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm8`: The STM8 is an 8-bit microcontroller family by 
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/stm8s-discovery.html?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/stm8s-discovery.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
