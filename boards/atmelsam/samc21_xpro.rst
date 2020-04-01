@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelsam_samr21_xpro:
+.. _board_atmelsam_samc21_xpro:
 
-Atmel ATSAMR21-XPRO
-===================
+Atmel SAMC21-XPRO
+=================
 
 .. contents::
 
@@ -24,7 +24,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 .. list-table::
 
   * - **Microcontroller**
-    - SAMR21G18A
+    - SAMC21J18A
   * - **Frequency**
     - 48MHz
   * - **Flash**
@@ -32,33 +32,33 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Atmel <https://developer.mbed.org/platforms/SAMR21-XPRO/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Atmel <https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMC21-XPRO?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``samr21_xpro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``samc21_xpro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:samr21_xpro]
+  [env:samc21_xpro]
   platform = atmelsam
-  board = samr21_xpro
+  board = samc21_xpro
 
-You can override default Atmel ATSAMR21-XPRO settings per build environment using
+You can override default Atmel SAMC21-XPRO settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `samr21_xpro.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/samr21_xpro.json>`_. For example,
+board manifest `samc21_xpro.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/samc21_xpro.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:samr21_xpro]
+  [env:samc21_xpro]
   platform = atmelsam
-  board = samr21_xpro
+  board = samc21_xpro
 
   ; change microcontroller
-  board_build.mcu = samr21g18a
+  board_build.mcu = samc21j18a
 
   ; change MCU frequency
   board_build.f_cpu = 48000000L
@@ -66,7 +66,7 @@ board manifest `samr21_xpro.json <https://github.com/platformio/platform-atmelsa
 
 Uploading
 ---------
-Atmel ATSAMR21-XPRO supports the next uploading protocols:
+Atmel SAMC21-XPRO supports the next uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``
@@ -79,9 +79,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:samr21_xpro]
+  [env:samc21_xpro]
   platform = atmelsam
-  board = samr21_xpro
+  board = samc21_xpro
 
   upload_protocol = cmsis-dap
 
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Atmel ATSAMR21-XPRO has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Atmel SAMC21-XPRO has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -118,17 +118,3 @@ Atmel ATSAMR21-XPRO has on-board debug probe and **IS READY** for debugging. You
   * - :ref:`debugging_tool_jlink`
     - 
     - 
-
-Frameworks
-----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
-
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.

@@ -37,6 +37,7 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 * `zephyr-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
+* `zephyr-net-echo-client <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-net-echo-client?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-ble-led <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-ble-led?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-ble-beacon <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-ble-beacon?utm_source=platformio.org&utm_medium=docs>`_
@@ -316,6 +317,9 @@ Packages
     * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio.org&utm_medium=docs>`__
       - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
 
+    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for CANopenNode - a free and open source CANopen Stack
+
     * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module CivetWeb Embedded C/C++ web server
 
@@ -331,11 +335,17 @@ Packages
     * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for littlefs filesystem
 
+    * - `framework-zephyr-loramac-node <https://github.com/zephyrproject-rtos/loramac-node?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for LoRaWAN endpoint stack implementation
+
     * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
 
     * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls?utm_source=platformio.org&utm_medium=docs>`__
       - mbedTLS module for Zephyr
+
+    * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs
 
     * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for mcumgr management library for 32-bit MCUs
@@ -343,8 +353,8 @@ Packages
     * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for MIPI System Software Trace
 
-    * - `framework-zephyr-nffs <https://github.com/zephyrproject-rtos/nffs?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for the Newtron Flash File System
+    * - `framework-zephyr-nrf-hw-models <https://github.com/zephyrproject-rtos/nrf_hw_models?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for NRF52xxx HW models
 
     * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework

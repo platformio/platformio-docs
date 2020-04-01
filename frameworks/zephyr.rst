@@ -89,6 +89,18 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_samr21_xpro`
+      - :ref:`platform_atmelsam`
+      - SAMR21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_samd21_xpro`
+      - :ref:`platform_atmelsam`
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf51_bbcmicrobit`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -125,11 +137,23 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_freescalekinetis_frdm_k22f`
+      - :ref:`platform_freescalekinetis`
+      - MK22FN512VLH12
+      - 120MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_freescalekinetis_frdm_k64f`
       - :ref:`platform_freescalekinetis`
       - MK64FN1M0VLL12
       - 120MHz
       - 1MB
+      - 256KB
+    * - :ref:`board_freescalekinetis_frdm_k82f`
+      - :ref:`platform_freescalekinetis`
+      - MK82FN256VLL15
+      - 150MHz
+      - 256KB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_kl25z`
       - :ref:`platform_freescalekinetis`
@@ -751,6 +775,34 @@ Arduino
       - 256KB
       - 32KB
 
+Atmel
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelsam_samr21_xpro`
+      - :ref:`platform_atmelsam`
+      - On-board
+      - SAMR21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_samd21_xpro`
+      - :ref:`platform_atmelsam`
+      - On-board
+      - SAMD21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
+
 BBC
 ~~~
 
@@ -813,12 +865,26 @@ Freescale
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_freescalekinetis_frdm_k22f`
+      - :ref:`platform_freescalekinetis`
+      - On-board
+      - MK22FN512VLH12
+      - 120MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_freescalekinetis_frdm_k64f`
       - :ref:`platform_freescalekinetis`
       - On-board
       - MK64FN1M0VLL12
       - 120MHz
       - 1MB
+      - 256KB
+    * - :ref:`board_freescalekinetis_frdm_k82f`
+      - :ref:`platform_freescalekinetis`
+      - On-board
+      - MK82FN256VLL15
+      - 150MHz
+      - 256KB
       - 256KB
     * - :ref:`board_freescalekinetis_frdm_kl25z`
       - :ref:`platform_freescalekinetis`

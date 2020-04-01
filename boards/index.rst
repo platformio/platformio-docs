@@ -300,6 +300,7 @@ Atmel SAM
     atmelsam/zeroUSB
     atmelsam/samr21_xpro
     atmelsam/samd21g18a
+    atmelsam/samc21_xpro
     atmelsam/samd21_xpro
     atmelsam/saml21_xpro_b
     atmelsam/briki_abc_samd21

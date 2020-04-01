@@ -813,6 +813,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_samc21_xpro`
+      - :ref:`platform_atmelsam`
+      - On-board
+      - SAMC21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_samd21_xpro`
       - :ref:`platform_atmelsam`
       - On-board
