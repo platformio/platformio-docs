@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _userguide:
+.. _piocore_userguide:
 
 CLI Guide
 =========
