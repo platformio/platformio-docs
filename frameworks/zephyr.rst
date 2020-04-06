@@ -281,18 +281,18 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - :ref:`platform_ststm32`
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - :ref:`platform_ststm32`
       - STM32L475VGT6
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - :ref:`platform_ststm32`
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - :ref:`platform_ststm32`
       - STM32F072RBT6
@@ -371,6 +371,12 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_f446re`
+      - :ref:`platform_ststm32`
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - STM32F746ZGT6
@@ -383,6 +389,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 1MB
       - 320KB
+    * - :ref:`board_ststm32_nucleo_f767zi`
+      - :ref:`platform_ststm32`
+      - STM32F767ZIT6
+      - 216MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l053r8`
       - :ref:`platform_ststm32`
       - STM32L053R8T6
@@ -404,6 +416,12 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_l496zg`
+      - :ref:`platform_ststm32`
+      - STM32L496ZGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -480,6 +498,18 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_b96b_argonkey`
+      - :ref:`platform_ststm32`
+      - STM32F412CG
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_b96b_neonkey`
+      - :ref:`platform_ststm32`
+      - STM32F411CE
+      - 100MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_96b_nitrogen`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -564,6 +594,18 @@ Please click on board name for the further details.
       - 64MHz
       - 128KB
       - 36KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - STM32G431RBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -594,6 +636,12 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_ststm32_steval_fcu001v1`
+      - :ref:`platform_ststm32`
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_olimex_e407`
       - :ref:`platform_ststm32`
       - STM32F407ZGT6
@@ -697,11 +745,25 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_b96b_argonkey`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F412CG
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - :ref:`platform_ststm32`
       - On-board
       - STM32F446VET6
       - 168MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_b96b_neonkey`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411CE
+      - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_nordicnrf52_96b_nitrogen`
@@ -1257,6 +1319,20 @@ ST
       - 64MHz
       - 128KB
       - 36KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431RBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f411ve`
       - :ref:`platform_ststm32`
       - On-board
@@ -1306,13 +1382,6 @@ ST
       - 80MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - :ref:`platform_ststm32`
       - On-board
@@ -1320,6 +1389,13 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -1411,6 +1487,13 @@ ST
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_f446re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F446RET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -1425,6 +1508,13 @@ ST
       - 216MHz
       - 1MB
       - 320KB
+    * - :ref:`board_ststm32_nucleo_f767zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F767ZIT6
+      - 216MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l053r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -1450,6 +1540,13 @@ ST
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
+      - 80MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_nucleo_l496zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L496ZGT6
       - 80MHz
       - 1MB
       - 128KB
@@ -1481,6 +1578,13 @@ ST
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_steval_fcu001v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_eval_f107vc`
       - :ref:`platform_ststm32`
       - External

@@ -124,6 +124,21 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_armstrap_eagle1024`
+      - STM32F417VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_armstrap_eagle2048`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
+    * - :ref:`board_ststm32_armstrap_eagle512`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_rhombio_l476dmw1k`
       - STM32L476VGT6
       - 80MHz
@@ -214,16 +229,16 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - STM32L475VGT6
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - STM32F072RBT6
       - 48MHz
@@ -537,26 +552,26 @@ Please click on board name for the further details.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_b96b_argonkey`
+      - STM32F412CG
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_b96b_neonkey`
+      - STM32F411CE
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_afroflight_f103cb`
       - STM32F103CBT6
       - 72MHz
       - 128KB
       - 20KB
-    * - :ref:`board_ststm32_armstrap_eagle1024`
-      - STM32F417VGT6
-      - 168MHz
-      - 1MB
-      - 192KB
-    * - :ref:`board_ststm32_armstrap_eagle2048`
-      - STM32F427VIT6
-      - 168MHz
-      - 1.99MB
-      - 256KB
-    * - :ref:`board_ststm32_armstrap_eagle512`
-      - STM32F407VET6
-      - 168MHz
-      - 512KB
-      - 192KB
     * - :ref:`board_ststm32_black_f407ve`
       - STM32F407VET6
       - 168MHz
@@ -643,6 +658,11 @@ Please click on board name for the further details.
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
+    * - :ref:`board_ststm32_malyanm300_f070cb`
       - STM32F070CBT6
       - 48MHz
       - 120KB
@@ -742,6 +762,16 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_piconomix_px_her0`
+      - STM32L072RB
+      - 32MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_prntr_v2`
+      - STM32F407RE
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_rak811_tracker`
       - STM32L151RBT6
       - 32MHz
@@ -757,6 +787,11 @@ Please click on board name for the further details.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_steval_fcu001v1`
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_olimex_e407`
       - STM32F407ZGT6
       - 168MHz
@@ -862,6 +897,21 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - STM32F407VET6
       - 168MHz
@@ -887,6 +937,11 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 40KB
+    * - :ref:`board_ststm32_thunder_pack`
+      - STM32L072KZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_hy_tinystm103tb`
       - STM32F103TBU6
       - 72MHz
@@ -897,6 +952,11 @@ Please click on board name for the further details.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_wraith32_v1`
+      - STM32F051K6
+      - 48MHz
+      - 32KB
+      - 7.75KB
     * - :ref:`board_ststm32_ublox_c030_n211`
       - STM32F437VG
       - 180MHz
@@ -987,6 +1047,9 @@ Packages
     * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio.org&utm_medium=docs>`__
       - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
 
+    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for CANopenNode - a free and open source CANopen Stack
+
     * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module CivetWeb Embedded C/C++ web server
 
@@ -1005,20 +1068,23 @@ Packages
     * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for littlefs filesystem
 
+    * - `framework-zephyr-loramac-node <https://github.com/zephyrproject-rtos/loramac-node?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for LoRaWAN endpoint stack implementation
+
     * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
 
     * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls?utm_source=platformio.org&utm_medium=docs>`__
       - mbedTLS module for Zephyr
 
+    * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs
+
     * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for mcumgr management library for 32-bit MCUs
 
     * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for MIPI System Software Trace
-
-    * - `framework-zephyr-nffs <https://github.com/zephyrproject-rtos/nffs?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for the Newtron Flash File System
 
     * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
@@ -1142,11 +1208,42 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_b96b_argonkey`
+      - External
+      - STM32F412CG
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - On-board
       - STM32F446VET6
       - 168MHz
       - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_b96b_neonkey`
+      - External
+      - STM32F411CE
+      - 100MHz
+      - 512KB
+      - 128KB
+
+Adafruit
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
       - 128KB
 
 AfroFlight
@@ -1167,6 +1264,25 @@ AfroFlight
       - 72MHz
       - 128KB
       - 20KB
+
+Airbot
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_wraith32_v1`
+      - External
+      - STM32F051K6
+      - 48MHz
+      - 32KB
+      - 7.75KB
 
 Armed
 ~~~~~
@@ -1200,19 +1316,19 @@ Armstrap
       - Flash
       - RAM
     * - :ref:`board_ststm32_armstrap_eagle1024`
-      - External
+      - On-board
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
     * - :ref:`board_ststm32_armstrap_eagle2048`
-      - External
+      - On-board
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_armstrap_eagle512`
-      - External
+      - On-board
       - STM32F407VET6
       - 168MHz
       - 512KB
@@ -1425,6 +1541,24 @@ Generic
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - External
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - External
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - External
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - External
       - STM32F407VET6
@@ -1532,6 +1666,12 @@ Malyan
       - Flash
       - RAM
     * - :ref:`board_ststm32_malyanm200_f070cb`
+      - External
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
+    * - :ref:`board_ststm32_malyanm300_f070cb`
       - External
       - STM32F070CBT6
       - 48MHz
@@ -1674,6 +1814,44 @@ Olimex
       - 168MHz
       - 1MB
       - 128KB
+
+Piconomix
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_piconomix_px_her0`
+      - External
+      - STM32L072RB
+      - 32MHz
+      - 128KB
+      - 20KB
+
+PrntrBoard
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_prntr_v2`
+      - External
+      - STM32F407RE
+      - 168MHz
+      - 512KB
+      - 192KB
 
 RAK
 ~~~
@@ -1962,18 +2140,18 @@ ST
       - 80MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - On-board
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - On-board
       - STM32L475VGT6
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - On-board
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - On-board
       - STM32F072RBT6
@@ -2268,6 +2446,12 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_steval_fcu001v1`
+      - External
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_eval_f107vc`
       - External
       - STM32F107VCT6
@@ -2367,6 +2551,25 @@ TauLabs
       - 72MHz
       - 256KB
       - 40KB
+
+ThunderPack
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_thunder_pack`
+      - External
+      - STM32L072KZ
+      - 32MHz
+      - 192KB
+      - 20KB
 
 VAE
 ~~~

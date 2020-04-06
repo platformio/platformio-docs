@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Armstrap Eagle 1024 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Armstrap Eagle 1024 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -106,7 +106,7 @@ Armstrap Eagle 1024 does not have on-board debug probe and **IS NOT READY** for 
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
+    - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
     - 

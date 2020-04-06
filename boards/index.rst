@@ -802,7 +802,10 @@ ST STM32
     ststm32/rumba32_f446ve
     ststm32/remram_v1
     ststm32/st3dp001_eval
+    ststm32/b96b_argonkey
     ststm32/b96b_f446ve
+    ststm32/b96b_neonkey
+    ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
@@ -826,6 +829,7 @@ ST STM32
     ststm32/fk407m1
     ststm32/rhombio_l476dmw1k
     ststm32/malyanm200_f070cb
+    ststm32/malyanm300_f070cb
     ststm32/mkr_sharky
     ststm32/mts_dragonfly_f411re
     ststm32/malyanm200_f103cb
@@ -848,6 +852,8 @@ ST STM32
     ststm32/olimexino
     ststm32/olimex_p405
     ststm32/nucleo_wb55rg_p
+    ststm32/piconomix_px_her0
+    ststm32/prntr_v2
     ststm32/rak811_tracker
     ststm32/rak811_tracker_32
     ststm32/rhf76_052
@@ -865,8 +871,8 @@ ST STM32
     ststm32/disco_l100rc
     ststm32/disco_l476vg
     ststm32/disco_l496ag
-    ststm32/disco_l072cz_lrwan1
     ststm32/disco_l475vg_iot01a
+    ststm32/disco_l072cz_lrwan1
     ststm32/disco_f072rb
     ststm32/nucleo_f030r8
     ststm32/nucleo_f031k6
@@ -917,6 +923,7 @@ ST STM32
     ststm32/disco_l152rb
     ststm32/disco_f100rb
     ststm32/silica_sensor_node
+    ststm32/steval_fcu001v1
     ststm32/olimex_e407
     ststm32/olimex_h407
     ststm32/eval_f107vc
@@ -938,6 +945,9 @@ ST STM32
     ststm32/genericSTM32F103ZD
     ststm32/genericSTM32F103ZE
     ststm32/genericSTM32F303CB
+    ststm32/genericSTM32F401RB
+    ststm32/genericSTM32F401RC
+    ststm32/genericSTM32F401RE
     ststm32/genericSTM32F407VET6
     ststm32/genericSTM32F407VGT6
     ststm32/stm32f4stamp
@@ -947,8 +957,10 @@ ST STM32
     ststm32/wio_3g
     ststm32/steval_mksboxv1
     ststm32/sparky_v1
+    ststm32/thunder_pack
     ststm32/hy_tinystm103tb
     ststm32/vake_v1
+    ststm32/wraith32_v1
     ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211
     ststm32/ublox_c030_r410m

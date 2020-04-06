@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_armstrap_eagle2048:
+.. _board_ststm32_prntr_v2:
 
-Armstrap Eagle 2048
-===================
+PrntrBoard V2
+=============
 
 .. contents::
 
@@ -24,41 +24,41 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F427VIT6
+    - STM32F407RE
   * - **Frequency**
     - 168MHz
   * - **Flash**
-    - 1.99MB
+    - 512KB
   * - **RAM**
-    - 256KB
+    - 192KB
   * - **Vendor**
-    - `Armstrap <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `PrntrBoard <https://github.com/ghent360/PrntrBoardV2?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``armstrap_eagle2048`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``prntr_v2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:armstrap_eagle2048]
+  [env:prntr_v2]
   platform = ststm32
-  board = armstrap_eagle2048
+  board = prntr_v2
 
-You can override default Armstrap Eagle 2048 settings per build environment using
+You can override default PrntrBoard V2 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `armstrap_eagle2048.json <https://github.com/platformio/platform-ststm32/blob/master/boards/armstrap_eagle2048.json>`_. For example,
+board manifest `prntr_v2.json <https://github.com/platformio/platform-ststm32/blob/master/boards/prntr_v2.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:armstrap_eagle2048]
+  [env:prntr_v2]
   platform = ststm32
-  board = armstrap_eagle2048
+  board = prntr_v2
 
   ; change microcontroller
-  board_build.mcu = stm32f427vit6
+  board_build.mcu = stm32f407re
 
   ; change MCU frequency
   board_build.f_cpu = 168000000L
@@ -66,23 +66,25 @@ board manifest `armstrap_eagle2048.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Armstrap Eagle 2048 supports the next uploading protocols:
+PrntrBoard V2 supports the next uploading protocols:
 
 * ``blackmagic``
+* ``dfu``
 * ``jlink``
+* ``serial``
 * ``stlink``
 
-Default protocol is ``blackmagic``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:armstrap_eagle2048]
+  [env:prntr_v2]
   platform = ststm32
-  board = armstrap_eagle2048
+  board = prntr_v2
 
-  upload_protocol = blackmagic
+  upload_protocol = stlink
 
 Debugging
 ---------
@@ -97,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Armstrap Eagle 2048 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+PrntrBoard V2 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -106,7 +108,7 @@ Armstrap Eagle 2048 has on-board debug probe and **IS READY** for debugging. You
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - Yes
+    - 
     - Yes
   * - :ref:`debugging_tool_jlink`
     - 
@@ -123,11 +125,11 @@ Frameworks
     * - Name
       - Description
 
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
-
-    * - :ref:`framework_spl`
-      - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

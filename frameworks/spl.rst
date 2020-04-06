@@ -65,6 +65,24 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_armstrap_eagle1024`
+      - :ref:`platform_ststm32`
+      - STM32F417VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_armstrap_eagle2048`
+      - :ref:`platform_ststm32`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
+    * - :ref:`board_ststm32_armstrap_eagle512`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_cloud_jam`
       - :ref:`platform_ststm32`
       - STM32F401RET6
@@ -126,24 +144,24 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_armstrap_eagle1024`
+    * - :ref:`board_ststm32_genericSTM32F401RB`
       - :ref:`platform_ststm32`
-      - STM32F417VGT6
-      - 168MHz
-      - 1MB
-      - 192KB
-    * - :ref:`board_ststm32_armstrap_eagle2048`
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
       - :ref:`platform_ststm32`
-      - STM32F427VIT6
-      - 168MHz
-      - 1.99MB
+      - STM32F401RC
+      - 84MHz
       - 256KB
-    * - :ref:`board_ststm32_armstrap_eagle512`
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
       - :ref:`platform_ststm32`
-      - STM32F407VET6
-      - 168MHz
+      - STM32F401RE
+      - 84MHz
       - 512KB
-      - 192KB
+      - 96KB
 
 
 Examples
@@ -210,25 +228,60 @@ Armstrap
       - RAM
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
     * - :ref:`board_ststm32_armstrap_eagle2048`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_armstrap_eagle512`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F407VET6
       - 168MHz
       - 512KB
       - 192KB
+
+Generic
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
 
 RushUp
 ~~~~~~

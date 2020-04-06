@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_armstrap_eagle2048:
+.. _board_ststm32_genericSTM32F401RB:
 
-Armstrap Eagle 2048
-===================
+STM32F401RB (64k RAM. 128k Flash)
+=================================
 
 .. contents::
 
@@ -24,65 +24,67 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F427VIT6
+    - STM32F401RB
   * - **Frequency**
-    - 168MHz
+    - 84MHz
   * - **Flash**
-    - 1.99MB
+    - 128KB
   * - **RAM**
-    - 256KB
+    - 64KB
   * - **Vendor**
-    - `Armstrap <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Generic <https://www.st.com/en/microcontrollers-microprocessors/stm32f401rb.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``armstrap_eagle2048`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``genericSTM32F401RB`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:armstrap_eagle2048]
+  [env:genericSTM32F401RB]
   platform = ststm32
-  board = armstrap_eagle2048
+  board = genericSTM32F401RB
 
-You can override default Armstrap Eagle 2048 settings per build environment using
+You can override default STM32F401RB (64k RAM. 128k Flash) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `armstrap_eagle2048.json <https://github.com/platformio/platform-ststm32/blob/master/boards/armstrap_eagle2048.json>`_. For example,
+board manifest `genericSTM32F401RB.json <https://github.com/platformio/platform-ststm32/blob/master/boards/genericSTM32F401RB.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:armstrap_eagle2048]
+  [env:genericSTM32F401RB]
   platform = ststm32
-  board = armstrap_eagle2048
+  board = genericSTM32F401RB
 
   ; change microcontroller
-  board_build.mcu = stm32f427vit6
+  board_build.mcu = stm32f401rb
 
   ; change MCU frequency
-  board_build.f_cpu = 168000000L
+  board_build.f_cpu = 84000000L
 
 
 Uploading
 ---------
-Armstrap Eagle 2048 supports the next uploading protocols:
+STM32F401RB (64k RAM. 128k Flash) supports the next uploading protocols:
 
 * ``blackmagic``
+* ``dfu``
 * ``jlink``
+* ``serial``
 * ``stlink``
 
-Default protocol is ``blackmagic``
+Default protocol is ``serial``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:armstrap_eagle2048]
+  [env:genericSTM32F401RB]
   platform = ststm32
-  board = armstrap_eagle2048
+  board = genericSTM32F401RB
 
-  upload_protocol = blackmagic
+  upload_protocol = serial
 
 Debugging
 ---------
@@ -97,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Armstrap Eagle 2048 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+STM32F401RB (64k RAM. 128k Flash) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -106,7 +108,7 @@ Armstrap Eagle 2048 has on-board debug probe and **IS READY** for debugging. You
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - Yes
+    - 
     - Yes
   * - :ref:`debugging_tool_jlink`
     - 
@@ -122,6 +124,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.

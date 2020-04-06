@@ -288,11 +288,25 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_b96b_argonkey`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F412CG
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - :ref:`platform_ststm32`
       - On-board
       - STM32F446VET6
       - 168MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_b96b_neonkey`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411CE
+      - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_nordicnrf52_96b_nitrogen`
@@ -379,6 +393,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -542,21 +563,21 @@ Boards
       - 32KB
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
     * - :ref:`board_ststm32_armstrap_eagle2048`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_armstrap_eagle512`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F407VET6
       - 168MHz
       - 512KB
@@ -890,6 +911,13 @@ Boards
       - 48MHz
       - 120KB
       - 14.81KB
+    * - :ref:`board_ststm32_malyanm300_f070cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
     * - :ref:`board_ststm32_mkr_sharky`
       - :ref:`platform_ststm32`
       - External
@@ -1177,6 +1205,20 @@ Boards
       - 64MHz
       - 512KB
       - 192.00KB
+    * - :ref:`board_ststm32_piconomix_px_her0`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L072RB
+      - 32MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_prntr_v2`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407RE
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - External
@@ -1380,13 +1422,6 @@ Boards
       - 80MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - :ref:`platform_ststm32`
       - On-board
@@ -1394,6 +1429,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -1744,6 +1786,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_steval_fcu001v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_olimex_e407`
       - :ref:`platform_ststm32`
       - External
@@ -1891,6 +1940,27 @@ Boards
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_disco_f750n8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2052,6 +2122,13 @@ Boards
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_thunder_pack`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L072KZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_siliconlabsefm32_tb_sense_12`
       - :ref:`platform_siliconlabsefm32`
       - On-board
@@ -2094,6 +2171,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_wraith32_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F051K6
+      - 48MHz
+      - 32KB
+      - 7.75KB
     * - :ref:`board_nordicnrf52_hackaBLE`
       - :ref:`platform_nordicnrf52`
       - External

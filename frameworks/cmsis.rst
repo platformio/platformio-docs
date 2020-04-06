@@ -64,6 +64,24 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_armstrap_eagle1024`
+      - :ref:`platform_ststm32`
+      - STM32F417VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_armstrap_eagle2048`
+      - :ref:`platform_ststm32`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
+    * - :ref:`board_ststm32_armstrap_eagle512`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_cloud_jam`
       - :ref:`platform_ststm32`
       - STM32F401RET6
@@ -149,30 +167,18 @@ Please click on board name for the further details.
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - :ref:`platform_ststm32`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_afroflight_f103cb`
       - :ref:`platform_ststm32`
       - STM32F103CBT6
       - 72MHz
       - 128KB
       - 20KB
-    * - :ref:`board_ststm32_armstrap_eagle1024`
-      - :ref:`platform_ststm32`
-      - STM32F417VGT6
-      - 168MHz
-      - 1MB
-      - 192KB
-    * - :ref:`board_ststm32_armstrap_eagle2048`
-      - :ref:`platform_ststm32`
-      - STM32F427VIT6
-      - 168MHz
-      - 1.99MB
-      - 256KB
-    * - :ref:`board_ststm32_armstrap_eagle512`
-      - :ref:`platform_ststm32`
-      - STM32F407VET6
-      - 168MHz
-      - 512KB
-      - 192KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -257,6 +263,30 @@ Please click on board name for the further details.
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_malyanm200_f070cb`
+      - :ref:`platform_ststm32`
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
+    * - :ref:`board_ststm32_malyanm300_f070cb`
+      - :ref:`platform_ststm32`
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
+    * - :ref:`board_ststm32_piconomix_px_her0`
+      - :ref:`platform_ststm32`
+      - STM32L072RB
+      - 32MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_prntr_v2`
+      - :ref:`platform_ststm32`
+      - STM32F407RE
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_rhf76_052`
       - :ref:`platform_ststm32`
       - STM32L051C8T6
@@ -377,6 +407,24 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - :ref:`platform_ststm32`
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - :ref:`platform_ststm32`
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - :ref:`platform_ststm32`
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -389,6 +437,18 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_thunder_pack`
+      - :ref:`platform_ststm32`
+      - STM32L072KZ
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_wraith32_v1`
+      - :ref:`platform_ststm32`
+      - STM32F051K6
+      - 48MHz
+      - 32KB
+      - 7.75KB
 
 
 Examples
@@ -436,6 +496,27 @@ Boards
       - 1MB
       - 128KB
 
+Adafruit
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+
 AfroFlight
 ~~~~~~~~~~
 
@@ -456,6 +537,27 @@ AfroFlight
       - 72MHz
       - 128KB
       - 20KB
+
+Airbot
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_wraith32_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F051K6
+      - 48MHz
+      - 32KB
+      - 7.75KB
 
 Armed
 ~~~~~
@@ -493,21 +595,21 @@ Armstrap
       - RAM
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
     * - :ref:`board_ststm32_armstrap_eagle2048`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_armstrap_eagle512`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F407VET6
       - 168MHz
       - 512KB
@@ -701,6 +803,27 @@ Generic
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -715,6 +838,34 @@ Generic
       - 168MHz
       - 1MB
       - 192KB
+
+Malyan
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_malyanm200_f070cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
+    * - :ref:`board_ststm32_malyanm300_f070cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
 
 Olimex
 ~~~~~~
@@ -743,6 +894,48 @@ Olimex
       - 168MHz
       - 1MB
       - 128KB
+
+Piconomix
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_piconomix_px_her0`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L072RB
+      - 32MHz
+      - 128KB
+      - 20KB
+
+PrntrBoard
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_prntr_v2`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407RE
+      - 168MHz
+      - 512KB
+      - 192KB
 
 RushUp
 ~~~~~~
@@ -897,3 +1090,24 @@ ST
       - 72MHz
       - 256KB
       - 64KB
+
+ThunderPack
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_thunder_pack`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L072KZ
+      - 32MHz
+      - 192KB
+      - 20KB

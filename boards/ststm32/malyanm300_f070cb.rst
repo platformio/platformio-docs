@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_armstrap_eagle2048:
+.. _board_ststm32_malyanm300_f070cb:
 
-Armstrap Eagle 2048
-===================
+M300
+====
 
 .. contents::
 
@@ -24,65 +24,67 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F427VIT6
+    - STM32F070CBT6
   * - **Frequency**
-    - 168MHz
+    - 48MHz
   * - **Flash**
-    - 1.99MB
+    - 120KB
   * - **RAM**
-    - 256KB
+    - 14.81KB
   * - **Vendor**
-    - `Armstrap <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Malyan <http://malyansys.com/product/m300/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``armstrap_eagle2048`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``malyanm300_f070cb`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:armstrap_eagle2048]
+  [env:malyanm300_f070cb]
   platform = ststm32
-  board = armstrap_eagle2048
+  board = malyanm300_f070cb
 
-You can override default Armstrap Eagle 2048 settings per build environment using
+You can override default M300 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `armstrap_eagle2048.json <https://github.com/platformio/platform-ststm32/blob/master/boards/armstrap_eagle2048.json>`_. For example,
+board manifest `malyanm300_f070cb.json <https://github.com/platformio/platform-ststm32/blob/master/boards/malyanm300_f070cb.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:armstrap_eagle2048]
+  [env:malyanm300_f070cb]
   platform = ststm32
-  board = armstrap_eagle2048
+  board = malyanm300_f070cb
 
   ; change microcontroller
-  board_build.mcu = stm32f427vit6
+  board_build.mcu = stm32f070cbt6
 
   ; change MCU frequency
-  board_build.f_cpu = 168000000L
+  board_build.f_cpu = 48000000L
 
 
 Uploading
 ---------
-Armstrap Eagle 2048 supports the next uploading protocols:
+M300 supports the next uploading protocols:
 
 * ``blackmagic``
+* ``dfu``
 * ``jlink``
+* ``serial``
 * ``stlink``
 
-Default protocol is ``blackmagic``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:armstrap_eagle2048]
+  [env:malyanm300_f070cb]
   platform = ststm32
-  board = armstrap_eagle2048
+  board = malyanm300_f070cb
 
-  upload_protocol = blackmagic
+  upload_protocol = stlink
 
 Debugging
 ---------
@@ -97,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Armstrap Eagle 2048 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+M300 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -106,7 +108,7 @@ Armstrap Eagle 2048 has on-board debug probe and **IS READY** for debugging. You
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - Yes
+    - 
     - Yes
   * - :ref:`debugging_tool_jlink`
     - 
@@ -123,11 +125,11 @@ Frameworks
     * - Name
       - Description
 
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
-
-    * - :ref:`framework_spl`
-      - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

@@ -11,8 +11,8 @@
 
 .. _board_ststm32_disco_l475vg_iot01a:
 
-ST DISCO-L475VG-IOT01A
-======================
+ST B-L475E-IOT01A Discovery kit
+===============================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``disco_l475vg_iot01a`` ID for :ref:`projectconf_env_board` option in
   platform = ststm32
   board = disco_l475vg_iot01a
 
-You can override default ST DISCO-L475VG-IOT01A settings per build environment using
+You can override default ST B-L475E-IOT01A Discovery kit settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `disco_l475vg_iot01a.json <https://github.com/platformio/platform-ststm32/blob/master/boards/disco_l475vg_iot01a.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `disco_l475vg_iot01a.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-ST DISCO-L475VG-IOT01A supports the next uploading protocols:
+ST B-L475E-IOT01A Discovery kit supports the next uploading protocols:
 
 * ``blackmagic``
 * ``jlink``
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST DISCO-L475VG-IOT01A has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ST B-L475E-IOT01A Discovery kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
