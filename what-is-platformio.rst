@@ -14,10 +14,10 @@
 What is PlatformIO?
 ===================
 
+**A place where Developers and Teams have true Freedom! No more hardware or software lock-ins!**
+
 .. contents:: Contents
     :local:
-
-**A place where Developers and Teams have true Freedom! No more hardware or software lock-ins!**
 
 PlatformIO is a cross-platform, cross-architecture, multiple framework, professional
 tool for embedded systems engineers and for software developers who write applications
