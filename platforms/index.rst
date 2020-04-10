@@ -66,6 +66,7 @@ Embedded
     nordicnrf51
     nordicnrf52
     nuclei
+    nxpimxrt
     nxplpc
     riscv_gap
     shakti

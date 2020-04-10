@@ -706,6 +706,19 @@ Nuclei
     nuclei/gd32vf103v_rvstar
     nuclei/hbird_eval
 
+NXP i.MX RT
+-----------
+
+.. toctree::
+    :maxdepth: 1
+        
+    nxpimxrt/mimxrt1010_evk
+    nxpimxrt/mimxrt1015_evk
+    nxpimxrt/mimxrt1020_evk
+    nxpimxrt/mimxrt1050_evk
+    nxpimxrt/mimxrt1060_evk
+    nxpimxrt/mimxrt1064_evk
+
 NXP LPC
 -------
 

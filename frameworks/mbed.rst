@@ -311,6 +311,12 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 512KB
       - 200KB
+    * - :ref:`board_nxpimxrt_mimxrt1050_evk`
+      - :ref:`platform_nxpimxrt`
+      - MIMXRT1052DVL6B
+      - 600MHz
+      - 64MB
+      - 512KB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - LPC11U24
@@ -1072,6 +1078,7 @@ Examples
 * `Mbed for Maxim 32 <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for NXP i.MX RT <https://github.com/platformio/platform-nxpimxrt/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for RISC-V GAP <https://github.com/pioplus/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
@@ -1101,6 +1108,9 @@ Platforms
 
     * - :ref:`platform_nordicnrf52`
       - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
+
+    * - :ref:`platform_nxpimxrt`
+      - The i.MX RT series of crossover processors features the Arm Cortex-M core, real-time functionality and MCU usability at a cost-effective price.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
@@ -1855,6 +1865,13 @@ NXP
       - 180MHz
       - 512KB
       - 200KB
+    * - :ref:`board_nxpimxrt_mimxrt1050_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1052DVL6B
+      - 600MHz
+      - 64MB
+      - 512KB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - On-board

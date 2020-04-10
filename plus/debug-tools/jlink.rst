@@ -211,6 +211,9 @@ Platforms
     * - :ref:`platform_nuclei`
       - Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.
 
+    * - :ref:`platform_nxpimxrt`
+      - The i.MX RT series of crossover processors features the Arm Cortex-M core, real-time functionality and MCU usability at a cost-effective price.
+
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
@@ -1695,6 +1698,48 @@ Boards
       - 180MHz
       - 512KB
       - 200KB
+    * - :ref:`board_nxpimxrt_mimxrt1010_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1011DAE5A
+      - 500MHz
+      - 64KB
+      - 128KB
+    * - :ref:`board_nxpimxrt_mimxrt1015_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1015DAF5A
+      - 500MHz
+      - 96KB
+      - 128KB
+    * - :ref:`board_nxpimxrt_mimxrt1020_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1021DAG5A
+      - 500MHz
+      - 64MB
+      - 256MB
+    * - :ref:`board_nxpimxrt_mimxrt1050_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1052DVL6B
+      - 600MHz
+      - 64MB
+      - 512KB
+    * - :ref:`board_nxpimxrt_mimxrt1060_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1062DVL6A
+      - 600MHz
+      - 64MB
+      - 1MB
+    * - :ref:`board_nxpimxrt_mimxrt1064_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1064DVL6A
+      - 600MHz
+      - 4MB
+      - 1MB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - On-board
