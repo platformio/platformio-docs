@@ -9,6 +9,11 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+Tutorials
+---------
+
+* :ref:`tutorial_nordicnrf52_zephyr_debugging_unit_testing_analysis`
+
 Configuration
 -------------
 

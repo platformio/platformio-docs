@@ -81,6 +81,7 @@ Tutorials
 * `[VIDEO] ThingForward - Intro to PIO Unified Debugger using ARM mbed OS and PlatformIO IDE for VSCode <https://www.youtube.com/watch?v=GtlsW3FDN3E>`_
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
 * :ref:`tutorial_nordicnrf52_arduino_debugging_unit_testing`
+* :ref:`tutorial_nordicnrf52_zephyr_debugging_unit_testing_analysis`
 * :ref:`tutorial_stm32cube_debugging_unit_testing`
 
 Configuration
