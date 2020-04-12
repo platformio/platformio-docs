@@ -182,6 +182,9 @@ Compiling and Uploading the Firmware
 Debugging the Firmware
 ----------------------
 
+Since `Nordic nRF52-DK <https://docs.platformio.org/en/latest/boards/nordicnrf52/nrf52_dk.html>`__
+includes an onboard debug probe we can use :ref:`piodebug` without any configuration.
+
 #. To start a debug session we can use the following options:
 
     - ``Debug: Start debugging`` from the top menu
@@ -205,11 +208,12 @@ Writing Unit Tests
     ``setUp`` function and if you need to clean up variables you use ``tearDown``
     function.
 
-For the sake of simplicity, let's create a small library called ``calculator`` and
-implement several basic functions ``add``, ``sub``, ``mul``, ``div``.
+For the sake of simplicity, let's create a small library called ``calculator``,
+implement several basic functions ``add``, ``sub``, ``mul``, ``div`` and test them using
+:ref:`unit_testing` engine.
 
 #. PlatformIO uses a unit testing framework called ``Unity``. ``Unity`` is not 
-   compatible with C library implemented in the the framework. Let's enable standard
+   compatible with C library implemented in the framework. Let's enable standard
    version of newlib C library in ``prj.conf`` file using the following config:
 
     .. code-block:: none
