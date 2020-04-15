@@ -13,6 +13,7 @@ Tutorials
 ---------
 
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
+* :ref:`tutorial_espressif32_espidf_debugging_unit_testing_analysis`
 * `Video: Free Inline Debugging for ESP32 and Arduino Sketches <https://www.youtube.com/watch?v=psMqilqlrRQ>`__
 
 Configuration
