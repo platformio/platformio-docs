@@ -457,7 +457,7 @@ starts your application. You need to call the Installer Script with ``check core
 
 .. code-block:: bash
 
-    python get-platformio.py core check
+    python get-platformio.py check core
 
 This command returns ``0`` "exit code" when PlatformIO Core is already installed
 and is ready for use, otherwise, the non-zero code of subprocess will be returned and
