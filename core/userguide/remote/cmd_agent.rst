@@ -106,36 +106,3 @@ The valid value for ``--share`` option is E-Mail address that was used for
 
 A working directory where :ref:`cmd_remote_agent` stores projects data for
 incremental synchronization and embedded programs for PIO Process Supervisor.
-
-------------
-
-platformio remote agent reload
-------------------------------
-
-Usage
-~~~~~
-
-.. code::
-
-    platformio remote agent reload
-    pio remote agent reload
-
-    # reload specified PIO Remote Agents
-    platformio remote --agent NAME reload
-
-Description
-~~~~~~~~~~~
-
-Allows gracefully reload one or more :ref:`cmd_remote_agent` 's.
-
-Example
-~~~~~~~
-
-.. code::
-
-    > platformio remote agent list
-
-    innomac.local
-    -------------
-    ID: 98853d93.....77375e7
-    Reloaded: 2016-11-11 23:33:32
