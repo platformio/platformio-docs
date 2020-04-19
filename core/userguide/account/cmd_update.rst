@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account_login:
+.. _cmd_account_update:
 
-platformio account login
+platformio account update
 =========================
 
 .. contents::
@@ -21,28 +21,43 @@ Usage
 
 .. code-block:: bash
 
-    platformio account login [OPTIONS]
-    pio account login [OPTIONS]
+    platformio account update [OPTIONS]
+    pio account update [OPTIONS]
 
 Description
 -----------
 
-Log in to :ref:`pioaccount`. If you are not able to provide authentication
-credentials manually you can use :envvar:`PLATFORMIO_AUTH_TOKEN`. This is
-very useful for :ref:`ci` systems and :ref:`pioremote` operations.
+Update :ref:`pioaccount` profile.
 
 Options
 ~~~~~~~
 
-.. program:: platformio account login
+You can omit these options and enter them later in update Wizard.
+
+.. program:: platformio account register
 
 .. option::
     --username, -u
 
-Username or email. You can omit this option and enter username or email in Login Wizard
-later.
+A username that must contain at least 4 characters including single hyphens, and cannot
+begin or end with a hyphen.
 
 .. option::
-    --password, -p
+    --email, -e
 
-You can omit this option and enter securely password in Login Wizard later.
+An email. Please enter existing email, you will receive a confirmation letter.
+
+.. option::
+    --firstname
+
+A first name.
+
+.. option::
+    --lastname
+
+A last name.
+
+.. option::
+    --current-password
+
+A current password to confirm this operation.

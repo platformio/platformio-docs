@@ -98,7 +98,7 @@ commands. Good names are home, office, lab or etc.
 Share your agent/devices with other PlatformIO developers who have
 :ref:`pioaccount`: friends, co-workers, team, etc.
 
-The valid value for ``--share`` option is E-Mail address that was used for
+The valid value for ``--share`` option is email address that was used for
 :ref:`cmd_account_register` command.
 
 .. option::

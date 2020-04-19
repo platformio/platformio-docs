@@ -16,17 +16,6 @@ platformio account
 
 Helper command for :ref:`pioaccount`.
 
-.. code::
-
-    # Create PIO Account
-    pio account register
-
-    # Login with credentials (will be sent to your e-mail)
-    pio account login
-
-    # Change temporary password (from e-mail) to permanent
-    pio account password
-
 To print all available commands and options use:
 
 .. code-block:: bash
@@ -46,3 +35,4 @@ To print all available commands and options use:
     cmd_register
     cmd_show
     cmd_token
+    cmd_update

@@ -27,8 +27,8 @@ Usage
 Description
 -----------
 
-Allows you to reset password for :ref:`pioaccount` using E-Mail that
-was specified for registration.
+Allows you to reset password for :ref:`pioaccount` using username or email which
+were specified for registration.
 
 Options
 ~~~~~~~
@@ -38,5 +38,5 @@ Options
 .. option::
     --username, -u
 
-User name (E-Mail). You can omit this option and enter E-Mail in Forgot
+Username or email. You can omit this option and enter username or email in Forgot
 Wizard later.

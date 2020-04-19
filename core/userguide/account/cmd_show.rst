@@ -29,8 +29,8 @@ Description
 
 Show detailed information about :ref:`pioaccount`:
 
-* Active groups and expiration
-* Group permissions
+* Active subscriptions
+* Available packages and services
 
 Options
 ~~~~~~~
