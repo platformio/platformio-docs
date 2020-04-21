@@ -176,6 +176,14 @@ Adding Code to the Generated Project
           wifi_init_sta();
       }
 
+    .. warning::
+        Make sure this new file ``main.c`` is registered as source file using
+        ``idf_component_register`` function in ``src/CMakeLists.txt`` file:
+
+        .. code-block:: cmake
+
+          idf_component_register(SRCS "main.c")
+
 #. To compile the project use one of the following options:
 
     - Build option from the ``Project Tasks`` menu
