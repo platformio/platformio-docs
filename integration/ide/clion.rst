@@ -63,13 +63,7 @@ declared in :ref:`projectconf`.
   Please note that "PlatformIO for CLion" plugin does not update automatically CLion
   configuration. There is a feature request `CLion #CPP-18367:  Follow platformio.ini changes and update the project <https://youtrack.jetbrains.com/issue/CPP-18367>`_.
 
-  A temporary solution is to opening CLion terminal, changing directory (``cd ...``) to
-  a project and run:
-
-  .. code-block:: shell
-
-     platformio project init --ide clion
-
+Update CLion configuration: "Tools > PlatformIO > Re-Init"
 
 CLion does not load project build environments from "platformio.ini"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
