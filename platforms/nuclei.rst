@@ -32,6 +32,7 @@ Examples
 Examples are listed from `Nuclei development platform repository <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
 * `freertos_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/freertos_demo?utm_source=platformio.org&utm_medium=docs>`_
+* `rtthread_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/rtthread_demo?utm_source=platformio.org&utm_medium=docs>`_
 * `demo_dsp <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_dsp?utm_source=platformio.org&utm_medium=docs>`_
 * `helloworld <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/helloworld?utm_source=platformio.org&utm_medium=docs>`_
 * `dhrystone <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/dhrystone?utm_source=platformio.org&utm_medium=docs>`_
