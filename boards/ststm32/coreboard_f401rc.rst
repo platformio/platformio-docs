@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/microcontrollers-microprocessors/stm32f401rc.html?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/microcontrollers-microprocessors/stm32f401rc.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

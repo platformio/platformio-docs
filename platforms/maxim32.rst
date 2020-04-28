@@ -19,7 +19,7 @@ Maxim 32
 
 Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
-For more detailed information please visit `vendor site <https://www.maximintegrated.com/en/products/digital/microcontrollers.html?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.maximintegrated.com/en/products/digital/microcontrollers.html?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,13 +29,13 @@ For more detailed information please visit `vendor site <https://www.maximintegr
 Examples
 --------
 
-Examples are listed from `Maxim 32 development platform repository <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Maxim 32 development platform repository <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -155,16 +155,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
       - mbed Framework
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
 
-    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD?utm_source=platformio.org&utm_medium=docs>`__
       - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
@@ -198,8 +198,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 Maxim
 ~~~~~

@@ -19,7 +19,7 @@ Freedom E SDK
 
 Open Source Software for Developing on the SiFive Freedom E Platform
 
-For more detailed information please visit `vendor site <https://github.com/sifive/freedom-e-sdk?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/sifive/freedom-e-sdk?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -105,7 +105,7 @@ You do not need to use/buy external debug probe.
 Examples
 --------
 
-* `Freedom E SDK for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Freedom E SDK for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -124,7 +124,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 SiFive
 ~~~~~~

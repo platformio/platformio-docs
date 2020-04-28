@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2.50KB
   * - **Vendor**
-    - `MediaTek Labs <https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html?utm_source=platformio&utm_medium=docs>`__
+    - `MediaTek Labs <https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

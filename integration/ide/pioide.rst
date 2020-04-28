@@ -49,5 +49,5 @@ project manager, integrated version control systems and debugger.
 
 :ref:`Install PlatformIO for CLion / Get started <ide_clion>`
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-new.png
+.. image:: ../../_static/images/ide/clion/ide-platformio-clion.png
     :target: vscode.html

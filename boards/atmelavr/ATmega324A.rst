@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega324a?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega324a?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

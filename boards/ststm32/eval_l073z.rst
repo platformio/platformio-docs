@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 20KB
   * - **Vendor**
-    - `ST <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-eval-boards/stm32l073z-eval.html?utm_source=platformio&utm_medium=docs>`__
+    - `ST <http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-eval-boards/stm32l073z-eval.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

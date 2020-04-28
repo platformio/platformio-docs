@@ -32,7 +32,7 @@ Platform :ref:`platform_siliconlabsefm32`: Silicon Labs EFM32 Gecko 32-bit micro
   * - **RAM**
     - 256KB
   * - **Vendor**
-    - `Silicon Labs <https://www.silabs.com/products/development-tools/thunderboard/thunderboard-sense-two-kit?utm_source=platformio&utm_medium=docs>`__
+    - `Silicon Labs <https://www.silabs.com/products/development-tools/thunderboard/thunderboard-sense-two-kit?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

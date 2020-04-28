@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `VintLabs <https://www.vintlabs.com/product/vintlabs-esp32-wroom32-iot-8x2a-pwm-driver-development-kit-4mb-flash-wifi-bluetooth/?utm_source=platformio&utm_medium=docs>`__
+    - `VintLabs <https://www.vintlabs.com/product/vintlabs-esp32-wroom32-iot-8x2a-pwm-driver-development-kit-4mb-flash-wifi-bluetooth/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

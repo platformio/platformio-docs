@@ -23,6 +23,8 @@ Here are recent articles/reviews about PlatformIO:
 2020
 ^^^^
 
+* Mar 28, 2020 - **Brian Lough** - `Use the PlatformIO Debugger on the ESP32 Using an ESP-prog <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
+* Mar 10, 2020 - **James Harton** - `Augie the Hexapod Robot <https://www.hackster.io/james-harton/augie-the-hexapod-robot-8e5125>`_
 * Mar 05, 2020 - **Alex Govorov** - `PVS-Studio Integration in PlatformIO <https://habr.com/en/company/pvs-studio/blog/491220/>`_
 * Feb 2, 2020 - **Tommy Desrochers** - `VS Code et PlatformIO: Mieux que l'IDE Arduino? <https://www.youtube.com/watch?v=-2NhjhzFQsM>`_
 * Jan 15, 2020 - **Ivan Kravets, CEO of PlatformIO** - `Next-generation IDE for your RISC-V Product in 20 Minutes <https://www.youtube.com/watch?v=0eYDKION0Bs>`_

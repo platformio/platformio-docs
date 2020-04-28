@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-g474re.html?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-g474re.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -122,3 +122,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.

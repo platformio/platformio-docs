@@ -32,7 +32,7 @@ Platform :ref:`platform_shakti`: Shakti is an open-source initiative by the RISE
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `Xilinx <https://www.xilinx.com/products/boards-and-kits/arty.html?utm_source=platformio&utm_medium=docs>`__
+    - `Xilinx <https://www.xilinx.com/products/boards-and-kits/arty.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

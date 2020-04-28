@@ -32,7 +32,7 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
   * - **RAM**
     - 512B
   * - **Vendor**
-    - `STC <https://www.stcmicro.com/STC/STC15W404AS.html?utm_source=platformio&utm_medium=docs>`__
+    - `STC <https://www.stcmicro.com/STC/STC15W404AS.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

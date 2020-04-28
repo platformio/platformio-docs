@@ -19,7 +19,7 @@ ST STM8
 
 The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.
 
-For more detailed information please visit `vendor site <https://www.st.com/en/microcontrollers/stm8-8-bit-mcus.html?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.st.com/en/microcontrollers/stm8-8-bit-mcus.html?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,14 +29,14 @@ For more detailed information please visit `vendor site <https://www.st.com/en/m
 Examples
 --------
 
-Examples are listed from `ST STM8 development platform repository <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `ST STM8 development platform repository <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `spl-blink <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-fade-all-pins <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-fade-all-pins?utm_source=platformio&utm_medium=docs>`_
-* `spl-uart <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart?utm_source=platformio&utm_medium=docs>`_
-* `spl-flash <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-flash?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-lib <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-internal-lib?utm_source=platformio&utm_medium=docs>`_
-* `arduino-ping-hc04 <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-ping-hc04?utm_source=platformio&utm_medium=docs>`_
+* `spl-blink <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-fade-all-pins <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-fade-all-pins?utm_source=platformio.org&utm_medium=docs>`_
+* `spl-uart <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart?utm_source=platformio.org&utm_medium=docs>`_
+* `spl-flash <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-flash?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-internal-lib <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-internal-lib?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-ping-hc04 <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-ping-hc04?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -123,22 +123,22 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoststm8 <https://github.com/tenbaht/sduino?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-arduinoststm8 <https://github.com/tenbaht/sduino?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (STM8 Core)
 
-    * - `framework-ststm8spl <https://www.st.com/en/embedded-software/stsw-stm8069.html?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-ststm8spl <https://www.st.com/en/embedded-software/stsw-stm8069.html?utm_source=platformio.org&utm_medium=docs>`__
       - STM8S/A Standard peripheral library
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
       - OpenOCD
 
-    * - `tool-stm8binutils <https://stm8-binutils-gdb.sourceforge.io/?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-stm8binutils <https://stm8-binutils-gdb.sourceforge.io/?utm_source=platformio.org&utm_medium=docs>`__
       - STM8 GNU binutils
 
-    * - `tool-stm8tools <https://github.com/vdudouyt/stm8flash?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-stm8tools <https://github.com/vdudouyt/stm8flash?utm_source=platformio.org&utm_medium=docs>`__
       - STM8 upload tools
 
-    * - `toolchain-sdcc <http://sdcc.sourceforge.net/?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-sdcc <http://sdcc.sourceforge.net/?utm_source=platformio.org&utm_medium=docs>`__
       - Small Device C Compiler
 
 .. warning::
@@ -175,8 +175,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 ST
 ~~

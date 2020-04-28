@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `BBC <https://developer.mbed.org/platforms/Microbit/?utm_source=platformio&utm_medium=docs>`__
+    - `BBC <https://developer.mbed.org/platforms/Microbit/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

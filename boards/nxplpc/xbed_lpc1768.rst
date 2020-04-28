@@ -32,7 +32,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Smeshlink <https://developer.mbed.org/platforms/xbed-LPC1768/?utm_source=platformio&utm_medium=docs>`__
+    - `Smeshlink <https://developer.mbed.org/platforms/xbed-LPC1768/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

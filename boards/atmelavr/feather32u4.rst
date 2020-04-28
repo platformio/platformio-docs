@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2.50KB
   * - **Vendor**
-    - `Adafruit <https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/?utm_source=platformio&utm_medium=docs>`__
+    - `Adafruit <https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

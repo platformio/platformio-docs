@@ -19,7 +19,7 @@ libOpenCM3
 
 The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
 
-For more detailed information please visit `vendor site <http://www.libopencm3.org/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.libopencm3.org/?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -280,8 +280,8 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `libOpenCM3 for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `libOpenCM3 for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `libOpenCM3 for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `libOpenCM3 for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -303,7 +303,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 1BitSquared
 ~~~~~~~~~~~

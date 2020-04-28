@@ -15,12 +15,12 @@ Renode
 ======
 
 .. image:: ../../_static/images/debug_probes/renode.png
-  :target: https://renode.io//?utm_source=platformio&utm_medium=docs
+  :target: https://renode.io/?utm_source=platformio&utm_medium=docs
 
 Renode is a development framework which accelerates IoT and embedded systems
 development by letting you simulate physical hardware systems - including both the CPU,
-peripherals, sensors, environment and wired or wireless medium between nodes. .
-Official reference can be found `here  <https://renode.io//?utm_source=platformio&utm_medium=docs>`__.
+peripherals, sensors, environment and wired or wireless medium between nodes.
+For more information, see `Renode's official website <https://renode.io/?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:
@@ -28,7 +28,7 @@ Official reference can be found `here  <https://renode.io//?utm_source=platformi
 Configuration
 -------------
 
-You can configure debugging tool using :ref:`projectconf_debug_tool` option in
+You can configure Renode as a debugging tool using :ref:`projectconf_debug_tool` option in
 :ref:`projectconf`:
 
 .. code-block:: ini
@@ -53,15 +53,14 @@ package manager. The only requirement is to install Mono/.NET framework.
   Windows 10 ships with .NET by default, so no action is required there.
 
 :Mac:
-  Install `Homebrew <https://brew.sh/>`_ and ``mono`` package via ``brew install mono``
-  command.
+  Install `Homebrew <https://brew.sh/>`_ and the ``mono`` package using``brew install mono``.
 
 :Linux:
   Install the ``mono-complete`` package as per the installation instructions for
   various Linux distributions which can be found on `the Mono project website <https://www.mono-project.com/download/stable/#download-lin>`_.
 
 
-Check `official Renode installation guide <https://github.com/renode/renode/blob/master/README.rst>`_
+Check the `official Renode installation guide <https://github.com/renode/renode/blob/master/README.rst>`_
 for more details.
 
 .. begin_platforms
@@ -75,7 +74,7 @@ Platforms
       - Description
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 Frameworks
 ----------

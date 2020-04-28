@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `Diymore <https://www.st.com/en/microcontrollers/stm32f407vg.html?utm_source=platformio&utm_medium=docs>`__
+    - `Diymore <https://www.st.com/en/microcontrollers/stm32f407vg.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

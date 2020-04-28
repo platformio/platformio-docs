@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `SODAQ <https://support.sodaq.com/sodaq-one/sff//?utm_source=platformio&utm_medium=docs>`__
+    - `SODAQ <https://support.sodaq.com/sodaq-one/sff//?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

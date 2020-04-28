@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `Delta <https://os.mbed.com/platforms/Delta-DFCM-NNN50/?utm_source=platformio&utm_medium=docs>`__
+    - `Delta <https://os.mbed.com/platforms/Delta-DFCM-NNN50/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

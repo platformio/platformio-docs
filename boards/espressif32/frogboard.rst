@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Fred <https://www.tindie.com/products/fred_IOT/esp32s-esp-wroom32-frogopins-development-board/?utm_source=platformio&utm_medium=docs>`__
+    - `Fred <https://www.tindie.com/products/fred_IOT/esp32s-esp-wroom32-frogopins-development-board/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

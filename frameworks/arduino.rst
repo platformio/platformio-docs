@@ -19,7 +19,7 @@ Arduino
 
 Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
-For more detailed information please visit `vendor site <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://arduino.cc/en/Reference/HomePage?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -203,18 +203,18 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - :ref:`platform_ststm32`
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - :ref:`platform_ststm32`
       - STM32L475VGT6
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - :ref:`platform_ststm32`
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - :ref:`platform_ststm32`
       - STM32F072RBT6
@@ -630,6 +630,12 @@ Please click on board name for the further details.
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - :ref:`platform_ststm32`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
       - NRF52840
@@ -930,6 +936,30 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_briki_abc_esp32`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
       - :ref:`platform_nordicnrf52`
       - NRF52840
@@ -1069,6 +1099,12 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
+      - :ref:`platform_ststm32`
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
+    * - :ref:`board_ststm32_malyanm300_f070cb`
       - :ref:`platform_ststm32`
       - STM32F070CBT6
       - 48MHz
@@ -1236,6 +1272,18 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_ststm32_piconomix_px_her0`
+      - :ref:`platform_ststm32`
+      - STM32L072RB
+      - 32MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_prntr_v2`
+      - :ref:`platform_ststm32`
+      - STM32F407RE
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_espressif32_lopy`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1266,6 +1314,12 @@ Please click on board name for the further details.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_sodaq_autonomo`
       - :ref:`platform_atmelsam`
       - SAMD21J18A
@@ -1398,6 +1452,24 @@ Please click on board name for the further details.
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - :ref:`platform_ststm32`
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - :ref:`platform_ststm32`
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - :ref:`platform_ststm32`
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -1554,6 +1626,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t-beam`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1602,6 +1680,12 @@ Please click on board name for the further details.
       - 48MHz
       - 62KB
       - 8KB
+    * - :ref:`board_ststm32_thunder_pack`
+      - :ref:`platform_ststm32`
+      - STM32L072KZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_hy_tinystm103tb`
       - :ref:`platform_ststm32`
       - STM32F103TBU6
@@ -1668,6 +1752,12 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_wraith32_v1`
+      - :ref:`platform_ststm32`
+      - STM32F051K6
+      - 48MHz
+      - 32KB
+      - 7.75KB
     * - :ref:`board_espressif32_xinabox_cw02`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1703,23 +1793,23 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `Arduino for Atmel AVR <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Atmel megaAVR <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for GigaDevice GD32V <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Infineon XMC <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Intel ARC32 <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Microchip PIC32 <https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for ST STM8 <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for TI MSP430 <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Arduino for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Arduino for Atmel AVR <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Atmel megaAVR <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for GigaDevice GD32V <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Infineon XMC <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Intel ARC32 <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Microchip PIC32 <https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for ST STM8 <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for TI MSP430 <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -1786,7 +1876,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 4D Systems
 ~~~~~~~~~~
@@ -1955,6 +2045,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
       - External
@@ -2221,6 +2318,27 @@ AfroFlight
       - 72MHz
       - 128KB
       - 20KB
+
+Airbot
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_wraith32_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F051K6
+      - 48MHz
+      - 32KB
+      - 7.75KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -4139,6 +4257,27 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -4819,6 +4958,13 @@ Malyan
       - Flash
       - RAM
     * - :ref:`board_ststm32_malyanm200_f070cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
+    * - :ref:`board_ststm32_malyanm300_f070cb`
       - :ref:`platform_ststm32`
       - External
       - STM32F070CBT6
@@ -5666,6 +5812,27 @@ Particle
       - 796KB
       - 243KB
 
+Piconomix
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_piconomix_px_her0`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L072RB
+      - 32MHz
+      - 128KB
+      - 20KB
+
 Pinoccio
 ~~~~~~~~
 
@@ -5735,6 +5902,27 @@ Pontech
       - 80MHz
       - 508KB
       - 128KB
+
+PrntrBoard
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_prntr_v2`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407RE
+      - 168MHz
+      - 512KB
+      - 192KB
 
 Prusa 3D
 ~~~~~~~~
@@ -6079,6 +6267,27 @@ RoboticsBrno
       - 4MB
       - 320KB
 
+SG-O
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 SODAQ
 ~~~~~
 
@@ -6281,13 +6490,6 @@ ST
       - 216MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - :ref:`platform_ststm32`
       - On-board
@@ -6295,6 +6497,13 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -7149,6 +7358,13 @@ TTGO
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t-beam`
       - :ref:`platform_espressif32`
       - External
@@ -7331,6 +7547,27 @@ The Things Network
       - 16MHz
       - 28KB
       - 2.50KB
+
+ThunderPack
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_thunder_pack`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L072KZ
+      - 32MHz
+      - 192KB
+      - 20KB
 
 Till Harbaum
 ~~~~~~~~~~~~
@@ -7792,6 +8029,48 @@ makerlab.mx
       - ATMEGA256RFR2
       - 16MHz
       - 248KB
+      - 32KB
+
+meteca
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_briki_abc_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
       - 32KB
 
 ng-beacon

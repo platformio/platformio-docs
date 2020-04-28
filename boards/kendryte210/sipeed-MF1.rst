@@ -32,7 +32,7 @@ Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dua
   * - **RAM**
     - 6MB
   * - **Vendor**
-    - `Sipeed <https://www.sipeed.com/?utm_source=platformio&utm_medium=docs>`__
+    - `Sipeed <https://www.sipeed.com/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

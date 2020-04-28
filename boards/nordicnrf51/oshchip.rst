@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `OSHChip <http://oshchip.org/?utm_source=platformio&utm_medium=docs>`__
+    - `OSHChip <http://oshchip.org/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

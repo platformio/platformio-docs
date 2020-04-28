@@ -32,7 +32,7 @@ Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `Freescale <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/w-serieswireless-conn.m0-plus-m4/freedom-development-platform-for-kinetis-kw2x-mcus:FRDM-KW24D512?utm_source=platformio&utm_medium=docs>`__
+    - `Freescale <https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/w-serieswireless-conn.m0-plus-m4/freedom-development-platform-for-kinetis-kw2x-mcus:FRDM-KW24D512?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

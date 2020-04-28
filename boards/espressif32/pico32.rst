@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Espressif <http://esp-idf.readthedocs.io/en/latest/get-started/get-started-pico-kit.html?utm_source=platformio&utm_medium=docs>`__
+    - `Espressif <http://esp-idf.readthedocs.io/en/latest/get-started/get-started-pico-kit.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -29,7 +29,7 @@ Description
 
 Log in to :ref:`pioaccount`. If you are not able to provide authentication
 credentials manually you can use :envvar:`PLATFORMIO_AUTH_TOKEN`. This is
-very useful for :ref:`ci` systems and :ref:`pioremote` operations .
+very useful for :ref:`ci` systems and :ref:`pioremote` operations.
 
 Options
 ~~~~~~~
@@ -39,7 +39,7 @@ Options
 .. option::
     --username, -u
 
-User name (E-Mail). You can omit this option and enter E-Mail in Login Wizard
+Username or email. You can omit this option and enter username or email in Login Wizard
 later.
 
 .. option::

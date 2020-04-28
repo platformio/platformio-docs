@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelmegaavr`: 8-bit MCUs Built for Real-time Control wi
   * - **RAM**
     - 6KB
   * - **Vendor**
-    - `Arduino <https://www.arduino.cc/en/Guide/ArduinoUnoWiFiRev2?utm_source=platformio&utm_medium=docs>`__
+    - `Arduino <https://www.arduino.cc/en/Guide/ArduinoUnoWiFiRev2?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

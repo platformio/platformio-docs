@@ -234,7 +234,7 @@ in the root of project. Please read the official documentation `Tasks in VSCode 
 
 This simple example demonstrates a custom monitor task which echoes input locally.
 There are a lot of other commands, please read more about :ref:`piocore` and
-its commands (:ref:`userguide`).
+its commands (:ref:`piocore_userguide`).
 
 .. code-block:: json
 

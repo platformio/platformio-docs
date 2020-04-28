@@ -32,7 +32,7 @@ Platform :ref:`platform_intel_arc32`: ARC embedded processors are a family of 32
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Intel <https://www.arduino.cc/en/Main/ArduinoBoard101?utm_source=platformio&utm_medium=docs>`__
+    - `Intel <https://www.arduino.cc/en/Main/ArduinoBoard101?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

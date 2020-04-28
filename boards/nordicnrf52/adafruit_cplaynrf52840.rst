@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 243KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/4333?utm_source=platformio&utm_medium=docs>`__
+    - `Adafruit <https://www.adafruit.com/product/4333?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

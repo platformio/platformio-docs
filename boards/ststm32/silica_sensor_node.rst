@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `Avnet Silica <https://www.avnet.com/shop/emea/products/avnet-engineering-services/silicastmsensornodeplus-3074457345633959668/?utm_source=platformio&utm_medium=docs>`__
+    - `Avnet Silica <https://www.avnet.com/shop/emea/products/avnet-engineering-services/silicastmsensornodeplus-3074457345633959668/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

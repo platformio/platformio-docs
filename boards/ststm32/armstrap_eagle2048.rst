@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 256KB
   * - **Vendor**
-    - `Armstrap <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio&utm_medium=docs>`__
+    - `Armstrap <http://docs.armstrap.org/en/latest/hardware-overview.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -97,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Armstrap Eagle 2048 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Armstrap Eagle 2048 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -106,7 +106,7 @@ Armstrap Eagle 2048 does not have on-board debug probe and **IS NOT READY** for 
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
+    - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
     - 

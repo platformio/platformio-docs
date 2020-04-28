@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `SeeedStudio <https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html?utm_source=platformio&utm_medium=docs>`__
+    - `SeeedStudio <https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
   * - **RAM**
     - 8KB
   * - **Vendor**
-    - `Outrageous Circuits <https://developer.mbed.org/platforms/Outrageous-Circuits-mBuino/?utm_source=platformio&utm_medium=docs>`__
+    - `Outrageous Circuits <https://developer.mbed.org/platforms/Outrageous-Circuits-mBuino/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

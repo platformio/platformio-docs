@@ -32,7 +32,7 @@ Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Freescale <https://os.mbed.com/platforms/FRDM-KL43Z/?utm_source=platformio&utm_medium=docs>`__
+    - `Freescale <https://os.mbed.com/platforms/FRDM-KL43Z/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

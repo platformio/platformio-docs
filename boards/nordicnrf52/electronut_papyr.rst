@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 256KB
   * - **Vendor**
-    - `ElectronutLabs <https://docs.electronut.in/papyr?utm_source=platformio&utm_medium=docs>`__
+    - `ElectronutLabs <https://docs.electronut.in/papyr?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

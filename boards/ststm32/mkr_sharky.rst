@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 192.00KB
   * - **Vendor**
-    - `Midatronics <https://midatronics.com/Development_Boards/MKR_Sharky_I?utm_source=platformio&utm_medium=docs>`__
+    - `Midatronics <https://midatronics.com/Development_Boards/MKR_Sharky_I?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

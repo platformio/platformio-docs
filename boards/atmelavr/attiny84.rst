@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 512B
   * - **Vendor**
-    - `Atmel <http://www.atmel.com/devices/ATTINY84.aspx?utm_source=platformio&utm_medium=docs>`__
+    - `Atmel <http://www.atmel.com/devices/ATTINY84.aspx?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

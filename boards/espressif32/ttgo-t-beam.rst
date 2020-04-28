@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 1.25MB
   * - **Vendor**
-    - `TTGO <https://github.com/LilyGO/TTGO-T-Beam?utm_source=platformio&utm_medium=docs>`__
+    - `TTGO <https://github.com/LilyGO/TTGO-T-Beam?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

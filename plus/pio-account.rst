@@ -16,19 +16,15 @@ PIO Account
 
 **PIO Account** is required for using:
 
+* `Community Forum <https://community.platformio.org/>`__
 * :ref:`pioremote`
-* Integration with :ref:`ide_cloud`
-
-A registration is **FREE**.
 
 PlatformIO IDE
 --------------
 
 :ref:`pioide` has built-in UI in PIO Home to manage PIO Account. You can
-create a new account, reset your password or fetch an authentication token.
-
-.. image:: ../_static/images/home/pio-home-account-login.png
-
+create a new account, reset your password, update profile, or fetch an authentication
+token.
 
 CLI Guide
 ---------

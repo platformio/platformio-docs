@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `LowPowerLab <https://lowpowerlab.com/shop/product/159?utm_source=platformio&utm_medium=docs>`__
+    - `LowPowerLab <https://lowpowerlab.com/shop/product/159?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

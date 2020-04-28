@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 20KB
   * - **Vendor**
-    - `AfroFlight <https://www.dronetrest.com/t/naze-32-revision-6-flight-controller-guide/1605?utm_source=platformio&utm_medium=docs>`__
+    - `AfroFlight <https://www.dronetrest.com/t/naze-32-revision-6-flight-controller-guide/1605?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

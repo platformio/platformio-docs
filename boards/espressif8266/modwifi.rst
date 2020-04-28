@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Olimex <https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware?utm_source=platformio&utm_medium=docs>`__
+    - `Olimex <https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

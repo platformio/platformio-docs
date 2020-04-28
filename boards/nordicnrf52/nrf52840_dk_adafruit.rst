@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 243KB
   * - **Vendor**
-    - `Nordic <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio&utm_medium=docs>`__
+    - `Nordic <https://os.mbed.com/platforms/Nordic-nRF52840-DK/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

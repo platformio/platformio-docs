@@ -32,7 +32,7 @@ Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Ins
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `TI <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html?utm_source=platformio&utm_medium=docs>`__
+    - `TI <http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430fr5969.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

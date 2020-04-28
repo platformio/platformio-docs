@@ -32,7 +32,7 @@ Platform :ref:`platform_gd32v`: The GigaDevice GD32V device is a 32-bit general-
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Sipeed <https://www.sipeed.com/?utm_source=platformio&utm_medium=docs>`__
+    - `Sipeed <https://www.sipeed.com/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

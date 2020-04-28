@@ -32,7 +32,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
   * - **RAM**
     - 10KB
   * - **Vendor**
-    - `GHI Electronics <https://developer.mbed.org/platforms/mBuino/?utm_source=platformio&utm_medium=docs>`__
+    - `GHI Electronics <https://developer.mbed.org/platforms/mBuino/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

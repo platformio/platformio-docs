@@ -32,7 +32,7 @@ Platform :ref:`platform_lattice_ice40`: The iCE40 family of ultra-low power, non
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `FPGAwars <https://github.com/FPGAwars/icezum/wiki?utm_source=platformio&utm_medium=docs>`__
+    - `FPGAwars <https://github.com/FPGAwars/icezum/wiki?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

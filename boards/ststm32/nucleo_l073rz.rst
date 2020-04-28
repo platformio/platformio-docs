@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 20KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-L073RZ/?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-L073RZ/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

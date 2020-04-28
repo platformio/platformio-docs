@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 256KB
   * - **Vendor**
-    - `Makerdiary <https://wiki.makerdiary.com/nrf52840-mdk?utm_source=platformio&utm_medium=docs>`__
+    - `Makerdiary <https://wiki.makerdiary.com/nrf52840-mdk?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `BitWizard <http://www.bitwizard.nl/wiki/index.php/Raspduino?utm_source=platformio&utm_medium=docs>`__
+    - `BitWizard <http://www.bitwizard.nl/wiki/index.php/Raspduino?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

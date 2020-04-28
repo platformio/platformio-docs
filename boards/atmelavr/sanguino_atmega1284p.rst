@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `Sanguino <https://github.com/Lauszus/Sanguino?utm_source=platformio&utm_medium=docs>`__
+    - `Sanguino <https://github.com/Lauszus/Sanguino?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

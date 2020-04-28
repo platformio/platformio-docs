@@ -19,7 +19,7 @@ SPL
 
 The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
 
-For more detailed information please visit `vendor site <http://www.st.com/web/en/catalog/tools/FM147/CL1794/SC961/SS1743?sc=stm32embeddedsoftware&utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.st.com/web/en/catalog/tools/FM147/CL1794/SC961/SS1743?sc=stm32embeddedsoftware&utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -65,6 +65,24 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_armstrap_eagle1024`
+      - :ref:`platform_ststm32`
+      - STM32F417VGT6
+      - 168MHz
+      - 1MB
+      - 192KB
+    * - :ref:`board_ststm32_armstrap_eagle2048`
+      - :ref:`platform_ststm32`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
+    * - :ref:`board_ststm32_armstrap_eagle512`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_cloud_jam`
       - :ref:`platform_ststm32`
       - STM32F401RET6
@@ -126,31 +144,31 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_armstrap_eagle1024`
+    * - :ref:`board_ststm32_genericSTM32F401RB`
       - :ref:`platform_ststm32`
-      - STM32F417VGT6
-      - 168MHz
-      - 1MB
-      - 192KB
-    * - :ref:`board_ststm32_armstrap_eagle2048`
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
       - :ref:`platform_ststm32`
-      - STM32F427VIT6
-      - 168MHz
-      - 1.99MB
+      - STM32F401RC
+      - 84MHz
       - 256KB
-    * - :ref:`board_ststm32_armstrap_eagle512`
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
       - :ref:`platform_ststm32`
-      - STM32F407VET6
-      - 168MHz
+      - STM32F401RE
+      - 84MHz
       - 512KB
-      - 192KB
+      - 96KB
 
 
 Examples
 --------
 
-* `SPL for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `SPL for ST STM8 <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `SPL for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `SPL for ST STM8 <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -172,7 +190,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 1BitSquared
 ~~~~~~~~~~~
@@ -210,25 +228,60 @@ Armstrap
       - RAM
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
     * - :ref:`board_ststm32_armstrap_eagle2048`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_armstrap_eagle512`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F407VET6
       - 168MHz
       - 512KB
       - 192KB
+
+Generic
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
 
 RushUp
 ~~~~~~

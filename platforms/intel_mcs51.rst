@@ -19,7 +19,7 @@ Intel MCS-51 (8051)
 
 The Intel MCS-51 (commonly termed 8051) is an internally Harvard architecture, complex instruction set computer (CISC) instruction set, single chip microcontroller (uC) series developed by Intel in 1980 for use in embedded systems.
 
-For more detailed information please visit `vendor site <https://en.wikipedia.org/wiki/Intel_MCS-51?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://en.wikipedia.org/wiki/Intel_MCS-51?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,11 +29,11 @@ For more detailed information please visit `vendor site <https://en.wikipedia.or
 Examples
 --------
 
-Examples are listed from `Intel MCS-51 (8051) development platform repository <https://github.com/platformio/platform-intel_mcs51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Intel MCS-51 (8051) development platform repository <https://github.com/platformio/platform-intel_mcs51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `stc-header <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-header?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
-* `stc-blink <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-blink?utm_source=platformio&utm_medium=docs>`_
+* `stc-header <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-header?utm_source=platformio.org&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `stc-blink <https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-blink?utm_source=platformio.org&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -76,10 +76,10 @@ Packages
     * - Name
       - Description
 
-    * - `tool-stcgal <https://github.com/grigorig/stcgal?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-stcgal <https://github.com/grigorig/stcgal?utm_source=platformio.org&utm_medium=docs>`__
       - Open Source STC MCU ISP flash tool
 
-    * - `toolchain-sdcc <http://sdcc.sourceforge.net/?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-sdcc <http://sdcc.sourceforge.net/?utm_source=platformio.org&utm_medium=docs>`__
       - Small Device C Compiler
 
 .. warning::
@@ -102,8 +102,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 Nuvoton
 ~~~~~~~

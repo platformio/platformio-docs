@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-F446RE/?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-F446RE/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -132,3 +132,6 @@ Frameworks
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.

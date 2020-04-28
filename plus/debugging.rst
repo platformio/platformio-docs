@@ -76,10 +76,13 @@ Tutorials
 ---------
 
 * `Arduino In-circuit Debugging with PlatformIO <https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc>`__
+* `Use the PlatformIO Debugger on the ESP32 Using an ESP-prog <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
 * `ThingForward: First steps with PlatformIO’s Unified Debugger <https://www.thingforward.io/techblog/2018-07-04-first-steps-with-platformios-unified-debugger.html>`_
 * `[VIDEO] ThingForward - Intro to PIO Unified Debugger using ARM mbed OS and PlatformIO IDE for VSCode <https://www.youtube.com/watch?v=GtlsW3FDN3E>`_
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
+* :ref:`tutorial_espressif32_espidf_debugging_unit_testing_analysis`
 * :ref:`tutorial_nordicnrf52_arduino_debugging_unit_testing`
+* :ref:`tutorial_nordicnrf52_zephyr_debugging_unit_testing_analysis`
 * :ref:`tutorial_stm32cube_debugging_unit_testing`
 
 Configuration
@@ -184,6 +187,9 @@ Platforms
 
     * - :ref:`platform_nuclei`
       - Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.
+
+    * - :ref:`platform_nxpimxrt`
+      - The i.MX RT series of crossover processors features the Arm Cortex-M core, real-time functionality and MCU usability at a cost-effective price.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
@@ -314,11 +320,25 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_b96b_argonkey`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F412CG
+      - 100MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_f446ve`
       - :ref:`platform_ststm32`
       - On-board
       - STM32F446VET6
       - 168MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_b96b_neonkey`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411CE
+      - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_nordicnrf52_96b_nitrogen`
@@ -496,6 +516,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - :ref:`platform_nordicnrf52`
       - External
@@ -678,6 +705,27 @@ AfroFlight
       - 72MHz
       - 128KB
       - 20KB
+
+Airbot
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_wraith32_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F051K6
+      - 48MHz
+      - 32KB
+      - 7.75KB
 
 Aiyarafun
 ~~~~~~~~~
@@ -883,21 +931,21 @@ Armstrap
       - RAM
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F417VGT6
       - 168MHz
       - 1MB
       - 192KB
     * - :ref:`board_ststm32_armstrap_eagle2048`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F427VIT6
       - 168MHz
       - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_armstrap_eagle512`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F407VET6
       - 168MHz
       - 512KB
@@ -927,6 +975,13 @@ Atmel
       - :ref:`platform_atmelsam`
       - On-board
       - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_samc21_xpro`
+      - :ref:`platform_atmelsam`
+      - On-board
+      - SAMC21J18A
       - 48MHz
       - 256KB
       - 32KB
@@ -1721,6 +1776,27 @@ Generic
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F401RB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -2211,6 +2287,13 @@ Malyan
       - 48MHz
       - 120KB
       - 14.81KB
+    * - :ref:`board_ststm32_malyanm300_f070cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F070CBT6
+      - 48MHz
+      - 120KB
+      - 14.81KB
     * - :ref:`board_ststm32_malyanm200_f103cb`
       - :ref:`platform_ststm32`
       - External
@@ -2491,6 +2574,48 @@ NXP
       - 180MHz
       - 512KB
       - 200KB
+    * - :ref:`board_nxpimxrt_mimxrt1010_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1011DAE5A
+      - 500MHz
+      - 64KB
+      - 128KB
+    * - :ref:`board_nxpimxrt_mimxrt1015_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1015DAF5A
+      - 500MHz
+      - 96KB
+      - 128KB
+    * - :ref:`board_nxpimxrt_mimxrt1020_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1021DAG5A
+      - 500MHz
+      - 64MB
+      - 256MB
+    * - :ref:`board_nxpimxrt_mimxrt1050_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1052DVL6B
+      - 600MHz
+      - 64MB
+      - 512KB
+    * - :ref:`board_nxpimxrt_mimxrt1060_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1062DVL6A
+      - 600MHz
+      - 64MB
+      - 1MB
+    * - :ref:`board_nxpimxrt_mimxrt1064_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1064DVL6A
+      - 600MHz
+      - 4MB
+      - 1MB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2779,6 +2904,48 @@ Particle
       - 796KB
       - 243KB
 
+Piconomix
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_piconomix_px_her0`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L072RB
+      - 32MHz
+      - 128KB
+      - 20KB
+
+PrntrBoard
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_prntr_v2`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407RE
+      - 168MHz
+      - 512KB
+      - 192KB
+
 Pycom Ltd.
 ~~~~~~~~~~
 
@@ -3009,6 +3176,27 @@ RushUp
       - 80MHz
       - 1MB
       - 128KB
+
+SG-O
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 SODAQ
 ~~~~~
@@ -3268,13 +3456,6 @@ ST
       - 80MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - :ref:`platform_ststm32`
       - On-board
@@ -3282,6 +3463,13 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -3632,6 +3820,13 @@ ST
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_ststm32_steval_fcu001v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_eval_f107vc`
       - :ref:`platform_ststm32`
       - External
@@ -4325,6 +4520,13 @@ TTGO
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t-beam`
       - :ref:`platform_espressif32`
       - External
@@ -4451,6 +4653,27 @@ ThaiEasyElec
       - 240MHz
       - 4MB
       - 320KB
+
+ThunderPack
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_thunder_pack`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L072KZ
+      - 32MHz
+      - 192KB
+      - 20KB
 
 Unknown
 ~~~~~~~
@@ -4703,6 +4926,48 @@ XinaBox
       - 240MHz
       - 4MB
       - 320KB
+
+meteca
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_briki_abc_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
 
 ng-beacon
 ~~~~~~~~~

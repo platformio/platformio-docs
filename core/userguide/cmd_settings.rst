@@ -120,19 +120,30 @@ Strict SSL for PlatformIO Services
 :Default:   Yes
 :Values:    Yes/No
 
-Share minimal diagnostics and usage information to help us make PlatformIO better:
+Share minimal diagnostics and usage information to help us make PlatformIO better.
 
-* PlatformIO errors/exceptions
-* The name of used platforms, boards, frameworks (for example, "espressif", "arduino", "uno", etc.)
-* The name of commands (for example, "run", "lib list", etc.)
-* The type of IDE (for example, "atom", "eclipse", etc.)
+The source code of telemetry service is `open source <https://github.com/platformio/platformio-core/blob/develop/platformio/telemetry.py>`_.
+You can make sure that we **DO NOT SHARE PRIVATE** information or
+source code of your project. All information shares **ANONYMOUSLY**.
 
-This gives us a sense of what parts of the PlatformIO is most important.
+Which data do we collect and why?
 
-The source code of telemetry service is `open source <https://github.com/platformio/platformio-core/blob/develop/platformio/telemetry.py>`_. You can make sure that we DO NOT share PRIVATE information or
-source code of your project. All information shares anonymously.
+* **A version of Python Interpreter**. :ref:`piocore` is written in `Python language <https://www.python.org/>`__,
+  including development :ref:`platforms`. We need to know which Python version produces
+  such type of exceptions (see below), which is more popular, which version we should
+  drop and focus on a new one
+* :ref:`piocore` **errors/exceptions**. We report automatically fatal exceptions raised
+  by `PlatformIO Core source code <https://github.com/platformio/platformio-core>`__ but NOT by your project
+* **The name of the used platform, board, framework**. We collect this type of information
+  to have a clear picture which software products are the most widely used by our
+  Community and for the which we should provide frequent updates and add new features (
+  for example, "atmelavr", "arduino", "uno", etc.)
+* **The name of CLI command**. It helps us to improve our CLI. For example, "run",
+  "lib list")
+* The name of :ref:`ide`. This is very important information for us. We create native
+  extensions based on the popularity of IDEs (for example, :ref:`ide_vscode`, :ref:`ide_clion`)
 
-Thanks a lot that keep this setting enabled.
+**Thanks a lot that you keep this setting enabled!**
 
 .. _setting_force_verbose:
 

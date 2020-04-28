@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Doit <https://arduino-esp8266.readthedocs.io/en/latest/boards.html?utm_source=platformio&utm_medium=docs#doit-esp-mx-devkit-esp8285>`__
+    - `Doit <https://arduino-esp8266.readthedocs.io/en/latest/boards.html?utm_source=platformio.org&utm_medium=docs#doit-esp-mx-devkit-esp8285>`__
 
 
 Configuration

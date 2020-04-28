@@ -32,7 +32,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Olimex <https://www.olimex.com/Products/Duino/PIC32/PIC32-PINGUINO/open-source-hardware?utm_source=platformio&utm_medium=docs>`__
+    - `Olimex <https://www.olimex.com/Products/Duino/PIC32/PIC32-PINGUINO/open-source-hardware?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

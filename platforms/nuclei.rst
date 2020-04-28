@@ -19,7 +19,7 @@ Nuclei
 
 Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.
 
-For more detailed information please visit `vendor site <https://nucleisys.com/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://nucleisys.com/?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,17 +29,18 @@ For more detailed information please visit `vendor site <https://nucleisys.com/?
 Examples
 --------
 
-Examples are listed from `Nuclei development platform repository <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Nuclei development platform repository <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `freertos_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/freertos_demo?utm_source=platformio&utm_medium=docs>`_
-* `demo_dsp <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_dsp?utm_source=platformio&utm_medium=docs>`_
-* `helloworld <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/helloworld?utm_source=platformio&utm_medium=docs>`_
-* `dhrystone <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/dhrystone?utm_source=platformio&utm_medium=docs>`_
-* `whetstone <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/whetstone?utm_source=platformio&utm_medium=docs>`_
-* `demo_eclic <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_eclic?utm_source=platformio&utm_medium=docs>`_
-* `ucosii_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/ucosii_demo?utm_source=platformio&utm_medium=docs>`_
-* `coremark <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/coremark?utm_source=platformio&utm_medium=docs>`_
-* `demo_timer <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_timer?utm_source=platformio&utm_medium=docs>`_
+* `freertos_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/freertos_demo?utm_source=platformio.org&utm_medium=docs>`_
+* `rtthread_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/rtthread_demo?utm_source=platformio.org&utm_medium=docs>`_
+* `demo_dsp <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_dsp?utm_source=platformio.org&utm_medium=docs>`_
+* `helloworld <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/helloworld?utm_source=platformio.org&utm_medium=docs>`_
+* `dhrystone <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/dhrystone?utm_source=platformio.org&utm_medium=docs>`_
+* `whetstone <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/whetstone?utm_source=platformio.org&utm_medium=docs>`_
+* `demo_eclic <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_eclic?utm_source=platformio.org&utm_medium=docs>`_
+* `ucosii_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/ucosii_demo?utm_source=platformio.org&utm_medium=docs>`_
+* `coremark <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/coremark?utm_source=platformio.org&utm_medium=docs>`_
+* `demo_timer <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_timer?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -154,16 +155,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-nuclei-sdk <https://github.com/Nuclei-Software/nuclei-sdk?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-nuclei-sdk <https://github.com/Nuclei-Software/nuclei-sdk?utm_source=platformio.org&utm_medium=docs>`__
       - Nuclei N/NX Embedded Software Development Kit
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
 
-    * - `tool-openocd-nuclei <https://github.com/riscv-mcu/riscv-openocd?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-openocd-nuclei <https://github.com/riscv-mcu/riscv-openocd?utm_source=platformio.org&utm_medium=docs>`__
       - OpenOCD branch with Nuclei RISCV support
 
-    * - `toolchain-riscv-gcc-nuclei <https://github.com/riscv-mcu/riscv-gnu-toolchain?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-riscv-gcc-nuclei <https://github.com/riscv-mcu/riscv-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
       - Nuclei RISC-V GCC toolchain
 
 .. warning::
@@ -197,8 +198,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 GigaDevice
 ~~~~~~~~~~

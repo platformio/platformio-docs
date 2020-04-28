@@ -88,6 +88,11 @@ Wiring Connections
     - ESP_TDI
     - Test Data In
 
+Tutorials
+---------
+
+* `Use the PlatformIO Debugger on the ESP32 Using an ESP-prog <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
+
 .. begin_platforms
 
 Platforms
@@ -162,6 +167,20 @@ Boards
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_briki_abc_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
       - 320KB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
@@ -345,6 +364,13 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - External
@@ -367,6 +393,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
       - :ref:`platform_espressif32`
       - External
       - ESP32

@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Arduino <https://www.arduino.cc/en/Main/ArduinoBoardM0?utm_source=platformio&utm_medium=docs>`__
+    - `Arduino <https://www.arduino.cc/en/Main/ArduinoBoardM0?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

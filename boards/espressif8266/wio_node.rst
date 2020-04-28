@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `SeeedStudio <https://www.seeedstudio.com/Wio-Node-p-2637.html?utm_source=platformio&utm_medium=docs>`__
+    - `SeeedStudio <https://www.seeedstudio.com/Wio-Node-p-2637.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

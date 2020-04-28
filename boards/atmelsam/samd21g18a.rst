@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Atmel <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio&utm_medium=docs>`__
+    - `Atmel <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

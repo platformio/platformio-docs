@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `u-blox <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio&utm_medium=docs>`__
+    - `u-blox <https://os.mbed.com/platforms/u-blox-EVK-NINA-B1/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

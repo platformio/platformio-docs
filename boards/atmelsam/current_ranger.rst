@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `LowPowerLab <https://lowpowerlab.com/shop/product/152?search=CurrentRanger&utm_source=platformio&utm_medium=docs>`__
+    - `LowPowerLab <https://lowpowerlab.com/shop/product/152?search=CurrentRanger&utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

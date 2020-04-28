@@ -13,9 +13,9 @@
 
 * Cross-platform build system without external dependencies to the OS software:
 
-    - 700+ boards
-    - 30+ development platforms
-    - 15+ frameworks
+    - 800+ :ref:`boards`
+    - 35+ :ref:`platforms`
+    - 20+ :ref:`frameworks`
 
 * :ref:`piodebug`
 * :ref:`pioremote`

@@ -19,7 +19,7 @@ Linux ARM
 
 Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
-For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_arm?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_arm?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,10 +29,10 @@ For more detailed information please visit `vendor site <http://platformio.org/p
 Examples
 --------
 
-Examples are listed from `Linux ARM development platform repository <https://github.com/platformio/platform-linux_arm/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Linux ARM development platform repository <https://github.com/platformio/platform-linux_arm/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `wiringpi-serial <https://github.com/platformio/platform-linux_arm/tree/master/examples/wiringpi-serial?utm_source=platformio&utm_medium=docs>`_
-* `wiringpi-blink <https://github.com/platformio/platform-linux_arm/tree/master/examples/wiringpi-blink?utm_source=platformio&utm_medium=docs>`_
+* `wiringpi-serial <https://github.com/platformio/platform-linux_arm/tree/master/examples/wiringpi-serial?utm_source=platformio.org&utm_medium=docs>`_
+* `wiringpi-blink <https://github.com/platformio/platform-linux_arm/tree/master/examples/wiringpi-blink?utm_source=platformio.org&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -75,10 +75,10 @@ Packages
     * - Name
       - Description
 
-    * - `framework-wiringpi <http://wiringpi.com?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-wiringpi <http://wiringpi.com?utm_source=platformio.org&utm_medium=docs>`__
       - GPIO Interface library for the Raspberry Pi
 
-    * - `toolchain-gccarmlinuxgnueabi <https://gcc.gnu.org?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-gccarmlinuxgnueabi <https://gcc.gnu.org?utm_source=platformio.org&utm_medium=docs>`__
       - GCC for Linux ARM GNU EABI
 
 Frameworks
@@ -98,8 +98,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 Raspberry Pi
 ~~~~~~~~~~~~

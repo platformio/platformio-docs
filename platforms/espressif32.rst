@@ -19,7 +19,7 @@ Espressif 32
 
 Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-For more detailed information please visit `vendor site <https://espressif.com/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://espressif.com/?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -30,25 +30,26 @@ For more detailed information please visit `vendor site <https://espressif.com/?
 Examples
 --------
 
-Examples are listed from `Espressif 32 development platform repository <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Espressif 32 development platform repository <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `espidf-storage-sdcard <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-sdcard?utm_source=platformio&utm_medium=docs>`_
-* `espidf-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-blink?utm_source=platformio&utm_medium=docs>`_
-* `espidf-coap-server <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-coap-server?utm_source=platformio&utm_medium=docs>`_
-* `espidf-exceptions <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-exceptions?utm_source=platformio&utm_medium=docs>`_
-* `arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
-* `espidf-ulp-adc <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ulp-adc?utm_source=platformio&utm_medium=docs>`_
-* `espidf-ulp-pulse <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ulp-pulse?utm_source=platformio&utm_medium=docs>`_
-* `espidf-arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
-* `espidf-http-request <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-http-request?utm_source=platformio&utm_medium=docs>`_
-* `espidf-arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `pumbaa-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/pumbaa-blink?utm_source=platformio&utm_medium=docs>`_
-* `espidf-hello-world <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-hello-world?utm_source=platformio&utm_medium=docs>`_
-* `espidf-ble-adv <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ble-adv?utm_source=platformio&utm_medium=docs>`_
-* `espidf-aws-iot <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-aws-iot?utm_source=platformio&utm_medium=docs>`_
-* `espidf-peripherals-uart <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-uart?utm_source=platformio&utm_medium=docs>`_
-* `arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
+* `espidf-storage-sdcard <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-sdcard?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-coap-server <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-coap-server?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-exceptions <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-exceptions?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/simba-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-ble-eddystone <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ble-eddystone?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-ulp-adc <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ulp-adc?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-ulp-pulse <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-ulp-pulse?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-arduino-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-http-request <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-http-request?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `pumbaa-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/pumbaa-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-hello-world <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-hello-world?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-aws-iot <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-aws-iot?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-briki-internal-libs <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-briki-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-peripherals-uart <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-uart?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -130,6 +131,16 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_briki_abc_esp32`
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
+      - ESP32
+      - 240MHz
+      - 3.25MB
       - 320KB
     * - :ref:`board_espressif32_d-duino-32`
       - ESP32
@@ -256,6 +267,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_wesp32`
       - ESP32
       - 240MHz
@@ -272,6 +288,11 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
       - ESP32
       - 240MHz
       - 4MB
@@ -374,31 +395,49 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoespressif32 <https://github.com/espressif/arduino-esp32?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-arduino-mbcwb <https://briki.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Fork of Arduino framework for briki MBC-WB boards
+
+    * - `framework-arduinoespressif32 <https://github.com/espressif/arduino-esp32?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (ESP32 Core)
 
-    * - `framework-espidf <https://github.com/espressif/esp-idf?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-espidf <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`__
       - Espressif IoT Development Framework
 
-    * - `framework-pumbaa <https://github.com/eerimoq/pumbaa?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-pumbaa <https://github.com/eerimoq/pumbaa?utm_source=platformio.org&utm_medium=docs>`__
       - Pumbaa Framework
 
-    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio.org&utm_medium=docs>`__
       - Simba Framework
 
-    * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
+    * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio.org&utm_medium=docs>`__
       - ESP8266 and ESP32 serial bootloader utility
 
-    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-idf <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`__
+      - Python idf.py binary
+
+    * - `tool-mbctool <https://briki.org?utm_source=platformio.org&utm_medium=docs>`__
+      - MBC-WB Uploader Application
+
+    * - `tool-mconf <https://github.com/espressif/kconfig-frontends?utm_source=platformio.org&utm_medium=docs>`__
+      - Kconfig frontends and parser
+
+    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio.org&utm_medium=docs>`__
       - Tool to build and unpack SPIFFS images
 
-    * - `tool-openocd-esp32 <https://github.com/espressif/openocd-esp32?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed.
+
+    * - `tool-openocd-esp32 <https://github.com/espressif/openocd-esp32?utm_source=platformio.org&utm_medium=docs>`__
       - OpenOCD for Espressif 32
 
-    * - `toolchain-esp32ulp <https://github.com/espressif/binutils-esp32ulp?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-esp32ulp <https://github.com/espressif/binutils-esp32ulp?utm_source=platformio.org&utm_medium=docs>`__
       - Binutils fork with support for the ESP32 ULP co-processor
 
-    * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`__
       - xtensa32-gcc
 
 .. warning::
@@ -441,8 +480,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 AI Thinker
 ~~~~~~~~~~
@@ -1173,6 +1212,25 @@ RoboticsBrno
       - 4MB
       - 320KB
 
+SG-O
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Silicognition
 ~~~~~~~~~~~~~
 
@@ -1243,6 +1301,12 @@ TTGO
       - Flash
       - RAM
     * - :ref:`board_espressif32_ttgo-lora32-v1`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
       - External
       - ESP32
       - 240MHz
@@ -1441,6 +1505,31 @@ XinaBox
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+meteca
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_briki_abc_esp32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
       - 320KB
 
 oddWires

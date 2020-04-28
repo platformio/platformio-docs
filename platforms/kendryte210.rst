@@ -19,7 +19,7 @@ Kendryte K210
 
 Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
-For more detailed information please visit `vendor site <https://kendryte.com/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://kendryte.com/?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,11 +29,11 @@ For more detailed information please visit `vendor site <https://kendryte.com/?u
 Examples
 --------
 
-Examples are listed from `Kendryte K210 development platform repository <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Kendryte K210 development platform repository <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/sipeed/platform-kendryte210/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `kendryte-standalone-sdk_hello <https://github.com/sipeed/platform-kendryte210/tree/master/examples/kendryte-standalone-sdk_hello?utm_source=platformio&utm_medium=docs>`_
-* `kendryte-freertos-sdk_hello <https://github.com/sipeed/platform-kendryte210/tree/master/examples/kendryte-freertos-sdk_hello?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/sipeed/platform-kendryte210/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `kendryte-standalone-sdk_hello <https://github.com/sipeed/platform-kendryte210/tree/master/examples/kendryte-standalone-sdk_hello?utm_source=platformio.org&utm_medium=docs>`_
+* `kendryte-freertos-sdk_hello <https://github.com/sipeed/platform-kendryte210/tree/master/examples/kendryte-freertos-sdk_hello?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -146,22 +146,22 @@ Packages
     * - Name
       - Description
 
-    * - `framework-kendryte-freertos-sdk <https://github.com/kendryte/kendryte-freertos-sdk?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-kendryte-freertos-sdk <https://github.com/kendryte/kendryte-freertos-sdk?utm_source=platformio.org&utm_medium=docs>`__
       - Kendryte SDK with FreeRTOS support
 
-    * - `framework-kendryte-standalone-sdk <https://github.com/kendryte/kendryte-standalone-sdk?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-kendryte-standalone-sdk <https://github.com/kendryte/kendryte-standalone-sdk?utm_source=platformio.org&utm_medium=docs>`__
       - Kendryte standalone SDK without OS support
 
-    * - `framework-maixduino <https://github.com/sipeed/Maixduino?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-maixduino <https://github.com/sipeed/Maixduino?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (K210 Core)
 
-    * - `tool-kflash-kendryte210 <https://github.com/kendryte/kflash.py?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-kflash-kendryte210 <https://github.com/kendryte/kflash.py?utm_source=platformio.org&utm_medium=docs>`__
       - kflash, A Python-based Kendryte K210 UART ISP Utility
 
-    * - `tool-openocd-kendryte <https://github.com/kendryte/openocd-kendryte?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-openocd-kendryte <https://github.com/kendryte/openocd-kendryte?utm_source=platformio.org&utm_medium=docs>`__
       - OpenOCD for RISC-V Kendryte
 
-    * - `toolchain-kendryte210 <https://github.com/kendryte/kendryte-gnu-toolchain?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-kendryte210 <https://github.com/kendryte/kendryte-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
       - RISC-V GCC toolchain for Kendryte 210
 
 .. warning::
@@ -201,8 +201,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 Sipeed
 ~~~~~~

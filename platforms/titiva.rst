@@ -19,7 +19,7 @@ TI TIVA
 
 Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
-For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/c2000_performance/control_automation/tm4c12x/overview.page?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/c2000_performance/control_automation/tm4c12x/overview.page?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,12 +29,12 @@ For more detailed information please visit `vendor site <http://www.ti.com/lsds/
 Examples
 --------
 
-Examples are listed from `TI TIVA development platform repository <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `TI TIVA development platform repository <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `libopencm3-blink <https://github.com/platformio/platform-titiva/tree/master/examples/libopencm3-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-blink <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-titiva/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `libopencm3-blink <https://github.com/platformio/platform-titiva/tree/master/examples/libopencm3-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-titiva/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -131,16 +131,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-energiativa <http://energia.nu/reference/?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-energiativa <http://energia.nu/reference/?utm_source=platformio.org&utm_medium=docs>`__
       - Energia Wiring-based Framework (LM4F Core)
 
-    * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio.org&utm_medium=docs>`__
       - libOpenCM3 Framework
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
       - OpenOCD
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
       - gcc-arm-embedded
 
 .. warning::
@@ -177,8 +177,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 TI
 ~~

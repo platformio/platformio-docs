@@ -32,7 +32,7 @@ Platform :ref:`platform_lattice_ice40`: The iCE40 family of ultra-low power, non
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Lattice <http://www.latticesemi.com/icestick?utm_source=platformio&utm_medium=docs>`__
+    - `Lattice <http://www.latticesemi.com/icestick?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

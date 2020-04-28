@@ -19,7 +19,7 @@ Microchip PIC32
 
 Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
 
-For more detailed information please visit `vendor site <http://www.microchip.com/design-centers/32-bit?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.microchip.com/design-centers/32-bit?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,10 +29,10 @@ For more detailed information please visit `vendor site <http://www.microchip.co
 Examples
 --------
 
-Examples are listed from `Microchip PIC32 development platform repository <https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Microchip PIC32 development platform repository <https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-microchippic32/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-microchippic32/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-microchippic32/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-microchippic32/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -75,13 +75,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinomicrochippic32 <https://github.com/chipKIT32/chipKIT-core?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-arduinomicrochippic32 <https://github.com/chipKIT32/chipKIT-core?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (PIC32 Core)
 
-    * - `tool-pic32prog <https://github.com/sergev/pic32prog?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-pic32prog <https://github.com/sergev/pic32prog?utm_source=platformio.org&utm_medium=docs>`__
       - pic32prog
 
-    * - `toolchain-microchippic32 <https://github.com/chipKIT32/chipKIT-cxx?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-microchippic32 <https://github.com/chipKIT32/chipKIT-cxx?utm_source=platformio.org&utm_medium=docs>`__
       - GCC for Microchip PIC32
 
 .. warning::
@@ -115,8 +115,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 4D Systems
 ~~~~~~~~~~

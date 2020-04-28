@@ -411,6 +411,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_samc21_xpro`
+      - :ref:`platform_atmelsam`
+      - On-board
+      - SAMC21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_samd21_xpro`
       - :ref:`platform_atmelsam`
       - On-board
@@ -422,6 +429,20 @@ Boards
       - :ref:`platform_atmelsam`
       - On-board
       - SAML21J18B
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB

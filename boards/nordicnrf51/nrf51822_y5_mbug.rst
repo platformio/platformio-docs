@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `y5 design <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/?utm_source=platformio&utm_medium=docs>`__
+    - `y5 design <https://developer.mbed.org/platforms/Y5-NRF51822-MBUG/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

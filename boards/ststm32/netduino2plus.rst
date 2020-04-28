@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 192KB
   * - **Vendor**
-    - `Netduino <http://developer.wildernesslabs.co/Netduino/About/?utm_source=platformio&utm_medium=docs>`__
+    - `Netduino <http://developer.wildernesslabs.co/Netduino/About/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

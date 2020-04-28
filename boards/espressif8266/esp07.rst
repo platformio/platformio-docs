@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Espressif <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio&utm_medium=docs#esp-07>`__
+    - `Espressif <http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&utm_source=platformio.org&utm_medium=docs#esp-07>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 512KB
   * - **Vendor**
-    - `RemRam <https://github.com/hasenbanck/remram?utm_source=platformio&utm_medium=docs>`__
+    - `RemRam <https://github.com/hasenbanck/remram?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

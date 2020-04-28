@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Semtech <https://developer.mbed.org/platforms/NAMote-72/?utm_source=platformio&utm_medium=docs>`__
+    - `Semtech <https://developer.mbed.org/platforms/NAMote-72/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

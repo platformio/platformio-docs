@@ -39,8 +39,7 @@ embedded board specifies what development platform it uses and this
 can not be changed.
 
 If a new board uses an architecture not in this list, a custom
-development platform can be created; see `Custom Development Platforms
-<https://platformio.org/platforms/creating_platform.html>`_.
+development platform can be created; see :ref:`platform_creating`.
 
 
 Embedded
@@ -67,6 +66,7 @@ Embedded
     nordicnrf51
     nordicnrf52
     nuclei
+    nxpimxrt
     nxplpc
     riscv_gap
     shakti

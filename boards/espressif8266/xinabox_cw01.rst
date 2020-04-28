@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `XinaBox <https://xinabox.cc/products/cw01?utm_source=platformio&utm_medium=docs>`__
+    - `XinaBox <https://xinabox.cc/products/cw01?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
