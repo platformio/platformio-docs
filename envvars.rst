@@ -159,7 +159,7 @@ Building
 
 .. envvar:: PLATFORMIO_BUILD_FLAGS
 
-Allows one to set :ref:`projectconf` option :ref:`projectconf_build_flags`.
+Allows one to set :ref:`projectconf` option :ref:`projectconf_build_flags`. When using special characters, be sure to follow escaping rules for ``Bash`` and ``CMake``.
 
 Examples:
 
@@ -167,13 +167,13 @@ Examples:
 
     # Unix:
     export PLATFORMIO_BUILD_FLAGS=-DFOO
-    export PLATFORMIO_BUILD_FLAGS=-DFOO -DBAR=1 -DFLOAT_VALUE=1.23457e+07
-    export PLATFORMIO_BUILD_FLAGS='-DWIFI_PASS=\"My password\"' '-DWIFI_SSID=\"My ssid name\"'
+    export PLATFORMIO_BUILD_FLAGS='-DFOO -DBAR=1 -DFLOAT_VALUE=1.23457e+07'
+    export PLATFORMIO_BUILD_FLAGS='-D WIFI_SSID=\"My ssid\" -D WIFI_PASS=\"My password\"'
 
     # Windows:
     SET PLATFORMIO_BUILD_FLAGS=-DFOO
     SET PLATFORMIO_BUILD_FLAGS=-DFOO -DBAR=1 -DFLOAT_VALUE=1.23457e+07
-    SET PLATFORMIO_BUILD_FLAGS='-DWIFI_PASS="My password"' '-DWIFI_SSID="My ssid name"'
+    SET PLATFORMIO_BUILD_FLAGS='-D WIFI_SSID="My ssid"' '-D WIFI_PASS="My password"'
 
 .. envvar:: PLATFORMIO_SRC_BUILD_FLAGS
 
