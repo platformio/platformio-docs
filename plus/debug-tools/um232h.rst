@@ -80,9 +80,6 @@ Please read `4. UM232H Pin Out and Signal Descriptions <https://www.ftdichip.com
   * - AD3
     - TMS
     - Test Mode State
-  * - RST#
-    - RESET
-    - Connect this pin to the (active low) reset input of the target CPU (EN for ESP32)
 
 You will also need to connect VIO to V3V and USB to 5V0 of UM232H
 to power the FTDI chip and board. See `UM232H Datasheet <https://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_UM232H.pdf>`_
