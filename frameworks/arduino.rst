@@ -6813,6 +6813,27 @@ Sanguino
       - 63KB
       - 4KB
 
+Schirmilabs
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_eduinowifi`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
 Seeed
 ~~~~~
 

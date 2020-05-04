@@ -438,6 +438,7 @@ Espressif 8266
     espressif8266/modwifi
     espressif8266/phoenix_v1
     espressif8266/phoenix_v2
+    espressif8266/eduinowifi
     espressif8266/sonoff_basic
     espressif8266/sonoff_s20
     espressif8266/sonoff_sv
