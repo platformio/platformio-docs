@@ -9,21 +9,29 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_project:
+.. _cmd_misc_completion:
 
-Project Manager
-===============
+PlatformIO Shell Completion
+===========================
+
+Shell completion support for
+
+* `Fish <https://fishshell.com/>`__
+* `Zsh <http://www.zsh.org/>`__
+* `Bash <https://www.gnu.org/software/bash>`__
+* `PowerShell <https://msdn.microsoft.com/en-us/powershell/mt173057.aspx>`__
 
 To print all available commands and options use:
 
 .. code-block:: bash
 
-    platformio project --help
-    platformio project COMMAND --help
+    platformio misc completion --help
+    platformio misc completion COMMAND --help
+    pio misc completion --help
 
 
 .. toctree::
     :maxdepth: 2
 
-    cmd_config
-    cmd_init
+    cmd_install
+    cmd_uninstall

@@ -9,21 +9,23 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_project:
+.. _cmd_misc:
 
-Project Manager
-===============
+PlatformIO Miscellaneous
+========================
+
+Miscellaneous commands.
 
 To print all available commands and options use:
 
 .. code-block:: bash
 
-    platformio project --help
-    platformio project COMMAND --help
+    platformio misc --help
+    platformio misc COMMAND --help
+    pio misc --help
 
 
 .. toctree::
     :maxdepth: 2
 
-    cmd_config
-    cmd_init
+    completion/index

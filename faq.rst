@@ -42,32 +42,7 @@ Please refer to :ref:`projectconf_pio_build_dir`.
 Command completion in Terminal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Bash completion
-'''''''''''''''
-
-Bash completion support will complete subcommands and parameters. To enable
-Bash completion for `platformio` subcommands you need to put into your `.bashrc`:
-
-.. code-block:: bash
-
-    eval "$(_PLATFORMIO_COMPLETE=source platformio)"
-    eval "$(_PIO_COMPLETE=source pio)"
-
-ZSH completion
-''''''''''''''
-
-To enable ``zsh`` completion please run these commands:
-
-.. code-block:: bash
-
-    autoload bashcompinit && bashcompinit
-    eval "$(_PLATFORMIO_COMPLETE=source platformio)"
-    eval "$(_PIO_COMPLETE=source pio)"
-
-.. note::
-
-    For permanent command completion you need to place commands above to
-    ``~/.bashrc`` or ``~/.zshrc`` file.
+Please refer to :ref:`cmd_misc_completion`.
 
 .. _faq_install_python:
 
