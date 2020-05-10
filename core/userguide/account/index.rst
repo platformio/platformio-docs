@@ -11,8 +11,8 @@
 
 .. _cmd_account:
 
-platformio account
-==================
+PlatformIO Account CLI
+======================
 
 Helper command for :ref:`pioaccount`.
 

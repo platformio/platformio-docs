@@ -11,8 +11,8 @@
 
 .. _cmd_remote:
 
-platformio remote
-=================
+PlatformIO Remote CLI
+=====================
 
 Helper command for :ref:`pioremote`.
 

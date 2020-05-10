@@ -11,8 +11,8 @@
 
 .. _cmd_project:
 
-Project Manager
-===============
+Project Manager CLI
+===================
 
 To print all available commands and options use:
 

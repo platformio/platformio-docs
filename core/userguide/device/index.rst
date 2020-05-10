@@ -11,8 +11,8 @@
 
 .. _cmd_device:
 
-Device Manager
-==============
+Device Manager CLI
+==================
 
 To print all available commands and options use:
 

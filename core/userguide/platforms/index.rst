@@ -11,8 +11,8 @@
 
 .. _userguide_platform:
 
-Platform Manager
-================
+Platform Manager CLI
+====================
 
 To print all available commands and options use:
 
