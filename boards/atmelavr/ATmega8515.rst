@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_itsybitsy32u4_3V:
+.. _board_atmelavr_ATmega8515:
 
-Adafruit ItsyBitsy 3V/8MHz
-==========================
+ATmega8515
+==========
 
 .. contents::
 
@@ -24,69 +24,48 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA32U4
+    - ATMEGA8515
   * - **Frequency**
-    - 8MHz
+    - 16MHz
   * - **Flash**
-    - 28KB
+    - 7.50KB
   * - **RAM**
-    - 2.50KB
+    - 512B
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/3675?utm_source=platformio.org&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega8515?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``itsybitsy32u4_3V`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega8515`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:itsybitsy32u4_3V]
+  [env:ATmega8515]
   platform = atmelavr
-  board = itsybitsy32u4_3V
+  board = ATmega8515
 
-You can override default Adafruit ItsyBitsy 3V/8MHz settings per build environment using
+You can override default ATmega8515 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `itsybitsy32u4_3V.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/itsybitsy32u4_3V.json>`_. For example,
+board manifest `ATmega8515.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega8515.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:itsybitsy32u4_3V]
+  [env:ATmega8515]
   platform = atmelavr
-  board = itsybitsy32u4_3V
+  board = ATmega8515
 
   ; change microcontroller
-  board_build.mcu = atmega32u4
+  board_build.mcu = atmega8515
 
   ; change MCU frequency
-  board_build.f_cpu = 8000000L
+  board_build.f_cpu = 16000000L
 
 Debugging
 ---------
-
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
-
-.. warning::
-    You will need to install debug tool drivers depending on your system.
-    Please click on compatible debug tool below for the further
-    instructions and configuration information.
-
-You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
-
-Adafruit ItsyBitsy 3V/8MHz has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-.. list-table::
-  :header-rows:  1
-
-  * - Compatible Tools
-    - On-board
-    - Default
-  * - :ref:`debugging_tool_simavr`
-    - Yes
-    - Yes
+:ref:`piodebug` currently does not support ATmega8515 board.
 
 Frameworks
 ----------

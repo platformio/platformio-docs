@@ -65,7 +65,28 @@ board manifest `sanguino_atmega644_8m.json <https://github.com/platformio/platfo
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Sanguino ATmega644 or ATmega644A (8 MHz) board.
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further
+    instructions and configuration information.
+
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+Sanguino ATmega644 or ATmega644A (8 MHz) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Compatible Tools
+    - On-board
+    - Default
+  * - :ref:`debugging_tool_simavr`
+    - Yes
+    - Yes
 
 Frameworks
 ----------

@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_itsybitsy32u4_3V:
+.. _board_atmelavr_prusa_mm_control:
 
-Adafruit ItsyBitsy 3V/8MHz
-==========================
+Original Prusa i3 MK3 Multi Material 2.0 Upgrade
+================================================
 
 .. contents::
 
@@ -26,42 +26,42 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **Microcontroller**
     - ATMEGA32U4
   * - **Frequency**
-    - 8MHz
+    - 16MHz
   * - **Flash**
     - 28KB
   * - **RAM**
     - 2.50KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/3675?utm_source=platformio.org&utm_medium=docs>`__
+    - `Prusa 3D <https://shop.prusa3d.com/en/upgrades/183-original-prusa-i3-mk25smk3s-multi-material-2s-upgrade-kit-mmu2s.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``itsybitsy32u4_3V`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``prusa_mm_control`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:itsybitsy32u4_3V]
+  [env:prusa_mm_control]
   platform = atmelavr
-  board = itsybitsy32u4_3V
+  board = prusa_mm_control
 
-You can override default Adafruit ItsyBitsy 3V/8MHz settings per build environment using
+You can override default Original Prusa i3 MK3 Multi Material 2.0 Upgrade settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `itsybitsy32u4_3V.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/itsybitsy32u4_3V.json>`_. For example,
+board manifest `prusa_mm_control.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/prusa_mm_control.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:itsybitsy32u4_3V]
+  [env:prusa_mm_control]
   platform = atmelavr
-  board = itsybitsy32u4_3V
+  board = prusa_mm_control
 
   ; change microcontroller
   board_build.mcu = atmega32u4
 
   ; change MCU frequency
-  board_build.f_cpu = 8000000L
+  board_build.f_cpu = 16000000L
 
 Debugging
 ---------
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit ItsyBitsy 3V/8MHz has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Original Prusa i3 MK3 Multi Material 2.0 Upgrade has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
