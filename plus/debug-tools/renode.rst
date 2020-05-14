@@ -53,7 +53,7 @@ package manager. The only requirement is to install Mono/.NET framework.
   Windows 10 ships with .NET by default, so no action is required there.
 
 :Mac:
-  Install `Homebrew <https://brew.sh/>`_ and the ``mono`` package using``brew install mono``.
+  Install `Homebrew <https://brew.sh/>`_ and the ``mono`` package using ``brew install mono``.
 
 :Linux:
   Install the ``mono-complete`` package as per the installation instructions for
