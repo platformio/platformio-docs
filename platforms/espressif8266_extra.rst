@@ -129,16 +129,40 @@ Available variants (macros):
 * ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_IPV6_HIGHER_BANDWIDTH`` v2 IPv6 Higher Bandwidth
 * ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth
 
-You can change lwIP Variant passing a custom macro using project
+You can change lwIP Variant by passing a custom macro using project
 :ref:`projectconf_build_flags`.
 
-For example, switch to lwIP v1.4
+For example, to switch to lwIP v1.4
 
 .. code-block:: ini
 
     [env:myenv]
     ...
     build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH
+
+SDK Version
+~~~~~~~~~~~
+
+Available versions (macros):
+
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3`` NonOS SDK-pre-3.0 as of Jun 26, 2018
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK221`` NonOS SDK v2.2.1 (legacy) as of Jun 8, 2018
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190313`` NonOS SDK v2.2.x branch as of Mar 13, 2019
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190703`` NonOS SDK v2.2.x branch as of Jul 03, 2019 **(default)**
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191024`` NonOS SDK v2.2.x branch as of Oct 24, 2019
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191105`` NonOS SDK v2.2.x branch as of to Nov 05, 2019
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191122`` NonOS SDK v2.2.x branch as of to Nov 22, 2019
+
+You can change SDK version by passing a custom macro using project
+:ref:`projectconf_build_flags`.
+
+For example, to switch to SDK-pre-3.0:
+
+.. code-block:: ini
+
+    [env:myenv]
+    ...
+    build_flags = -D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3
 
 SSL Support
 ~~~~~~~~~~~
