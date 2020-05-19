@@ -69,6 +69,7 @@ Uploading
 BlackPill F103C8 supports the next uploading protocols:
 
 * ``blackmagic``
+* ``hid``
 * ``jlink``
 * ``serial``
 * ``stlink``
