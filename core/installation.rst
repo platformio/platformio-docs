@@ -295,7 +295,7 @@ Or:
 
 .. code-block:: bash
 
-    pio upgrade --dev
+    pip upgrade --dev
 
 To revert to the latest stable version:
 
