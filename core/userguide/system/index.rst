@@ -9,20 +9,20 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_misc:
+.. _cmd_system:
 
-PlatformIO Miscellaneous
-========================
+platformio system
+=================
 
-Miscellaneous commands.
+Miscellaneous system commands.
 
 To print all available commands and options use:
 
 .. code-block:: bash
 
-    platformio misc --help
-    platformio misc COMMAND --help
-    pio misc --help
+    platformio system --help
+    platformio system COMMAND --help
+    pio system --help
 
 
 .. toctree::

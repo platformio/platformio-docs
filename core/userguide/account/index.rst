@@ -11,10 +11,10 @@
 
 .. _cmd_account:
 
-PlatformIO Account CLI
-======================
+platformio account
+==================
 
-Helper command for :ref:`pioaccount`.
+CLI helper command for :ref:`pioaccount`.
 
 To print all available commands and options use:
 
