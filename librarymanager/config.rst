@@ -357,6 +357,11 @@ Allowed requirements for dependent library:
 * ``frameworks`` | Type: ``String`` or ``Array``
 * ``platforms`` | Type: ``String`` or ``Array``
 
+The ``name`` support also ``id`` of the library, for example when the library 
+name is not unique:
+
+* ``id=1``:
+
 The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
@@ -394,6 +399,9 @@ Example:
             "name": "lib-from-repo",
             "version": "https://github.com/user/package.git#1.2.3"
         }
+        {
+            "name": "id=1"
+        },
     ]
 
 A short definition of dependencies is allowed:
