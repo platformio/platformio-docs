@@ -498,6 +498,25 @@ Olimex
       - 2MB
       - 80KB
 
+Schirmilabs
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_eduinowifi`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
 SeeedStudio
 ~~~~~~~~~~~
 

@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _userguide_project:
+.. _cmd_project:
 
-Project Manager
-===============
+Project Manager CLI
+===================
 
 To print all available commands and options use:
 

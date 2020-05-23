@@ -39,8 +39,8 @@ System requirements
 :Operating System: Windows, macOS, Linux, FreeBSD, Linux ARMv6+
 :Python Interpreter:
 
-    Python 3.5+ (Python 2.7 is not recommended).
-    See detailed instruction how to :ref:`faq_install_python` for Windows.
+    Python 3.5+ (Python 2.7 is not recommended, support for it will be removed in the next releases).
+    See detailed instruction on how to :ref:`faq_install_python` for Windows.
 
 :Terminal Application:
 
@@ -445,7 +445,7 @@ A list of arguments and options for the installer script is available via
 Workflow
 ~~~~~~~~
 
-We will describe a simple workflow no how to automatically install :ref:`piocore` for
+We will describe a simple workflow on how to automatically install :ref:`piocore` for
 end-user of your application/extension. We assume that ``get-platformio.py`` script
 is already copied/downloaded and exists on the end-user machine. See above how to get it.
 

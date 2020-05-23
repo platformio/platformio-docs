@@ -11,8 +11,8 @@
 
 .. _cmd_lib:
 
-Library Manager
-===============
+Library Manager CLI
+===================
 
 Usage
 -----

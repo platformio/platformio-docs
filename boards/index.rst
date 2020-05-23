@@ -51,6 +51,7 @@ Atmel AVR
     atmelavr/ATmega1284
     atmelavr/ATmega1284P
     atmelavr/ATmega16
+    atmelavr/ATmega162
     atmelavr/ATmega164A
     atmelavr/ATmega164P
     atmelavr/ATmega168
@@ -73,6 +74,7 @@ Atmel AVR
     atmelavr/ATmega644A
     atmelavr/ATmega644P
     atmelavr/ATmega8
+    atmelavr/ATmega8515
     atmelavr/ATmega8535
     atmelavr/ATmega88
     atmelavr/ATmega88P
@@ -192,6 +194,7 @@ Atmel AVR
     atmelavr/644pa16m
     atmelavr/644pa8m
     atmelavr/emonpi
+    atmelavr/prusa_mm_control
     atmelavr/panStampAVR
     atmelavr/pinoccio
     atmelavr/a-star32U4
@@ -438,6 +441,7 @@ Espressif 8266
     espressif8266/modwifi
     espressif8266/phoenix_v1
     espressif8266/phoenix_v2
+    espressif8266/eduinowifi
     espressif8266/sonoff_basic
     espressif8266/sonoff_s20
     espressif8266/sonoff_sv
@@ -1005,6 +1009,7 @@ Teensy
     teensy/teensy35
     teensy/teensy36
     teensy/teensy40
+    teensy/teensy41
     teensy/teensylc
     teensy/teensy2pp
 

@@ -167,13 +167,17 @@ Examples:
 
     # Unix:
     export PLATFORMIO_BUILD_FLAGS=-DFOO
-    export PLATFORMIO_BUILD_FLAGS=-DFOO -DBAR=1 -DFLOAT_VALUE=1.23457e+07
-    export PLATFORMIO_BUILD_FLAGS='-DWIFI_PASS=\"My password\"' '-DWIFI_SSID=\"My ssid name\"'
+    export PLATFORMIO_BUILD_FLAGS=-DFOO -DBAR=1 -Wall
 
     # Windows:
     SET PLATFORMIO_BUILD_FLAGS=-DFOO
-    SET PLATFORMIO_BUILD_FLAGS=-DFOO -DBAR=1 -DFLOAT_VALUE=1.23457e+07
-    SET PLATFORMIO_BUILD_FLAGS='-DWIFI_PASS="My password"' '-DWIFI_SSID="My ssid name"'
+    SET PLATFORMIO_BUILD_FLAGS=-DFOO -DBAR=1 -Wall
+
+.. warning::
+
+    Consider using :ref:`projectconf_dynamic_vars` instead of ``PLATFORMIO_BUILD_FLAGS``
+    environment variable if additional build flags contain preprocessor directive with
+    special characters (``$``, ``&``, ``~``, etc) in its value.
 
 .. envvar:: PLATFORMIO_SRC_BUILD_FLAGS
 

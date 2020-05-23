@@ -115,14 +115,15 @@ should be purchased. But PVS-Studio can be used for free of charge, for example 
 checking open source projects. More information about the cases when you can get a free 
 **PVS-Studio** license can be found on `the official webpage <https://www.viva64.com/en/open-source-license/>`__. 
 
+.. tip::
+    If you're experiencing problems with the license file or see the following error message:
+    ``License information is incorrect. Please check your registration data or contact
+    Customer Support``, try saving the license file in ``UTF-8 + BOM`` format with the
+    following contents:
+    
+    .. code-block:: none
 
-An example with a custom analysis mode disabled errors:
-
-.. code-block:: ini
-
-    [env:myenv]
-    platform = ...
-    board = ...
-    check_tool = pvs-studio
-    check_flags =
-      pvs-studio: --analysis-mode=4 --errors-off=V532,V586
+        name@domain.com
+        AAAA-BBBB-CCCC-DDDD
+    
+    

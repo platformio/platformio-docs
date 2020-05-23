@@ -65,7 +65,28 @@ board manifest `168pa16m.json <https://github.com/platformio/platform-atmelavr/b
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Microduino Core (Atmega168PA@16M,5V) board.
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further
+    instructions and configuration information.
+
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+Microduino Core (Atmega168PA@16M,5V) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Compatible Tools
+    - On-board
+    - Default
+  * - :ref:`debugging_tool_simavr`
+    - Yes
+    - Yes
 
 Frameworks
 ----------

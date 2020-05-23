@@ -37,7 +37,7 @@ from :ref:`projectconf`.
 Options
 ~~~~~~~
 
-.. program:: platformio project list
+.. program:: platformio project config
 
 .. option::
     -d, --project-dir

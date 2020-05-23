@@ -48,6 +48,54 @@ You can switch between debugging :ref:`debugging_tools` using
     Please click on compatible debug tool below for the further instructions.
 
 
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_megaatmega2560`
+      - :ref:`platform_atmelavr`
+      - ATMEGA2560
+      - 16MHz
+      - 248KB
+      - 8KB
+    * - :ref:`board_atmelavr_nanoatmega328`
+      - :ref:`platform_atmelavr`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_nanoatmega328new`
+      - :ref:`platform_atmelavr`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_uno`
+      - :ref:`platform_atmelavr`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_seeeduino`
+      - :ref:`platform_atmelavr`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+
+
 External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -165,28 +213,28 @@ Arduino
       - 96KB
     * - :ref:`board_atmelavr_megaatmega2560`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_nanoatmega328`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_nanoatmega328new`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_uno`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -312,7 +360,7 @@ SeeedStudio
       - RAM
     * - :ref:`board_atmelavr_seeeduino`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB

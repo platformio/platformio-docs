@@ -435,7 +435,7 @@ Let's create a simple ``ping`` target and process it with
 Examples
 ~~~~~~~~
 
-The beast examples are `PlatformIO development platforms <https://github.com/topics/platformio-platform>`__.
+The best examples are `PlatformIO development platforms <https://github.com/topics/platformio-platform>`__.
 Please check ``builder`` folder for the main and framework scripts.
 
 Custom options in ``platformio.ini``
