@@ -491,7 +491,7 @@ means that folder is located in the root of a library.
 *Optional* | Type: ``String`` or ``Array``
 
 Specify which source files should be included/excluded from build process.
-The path in filter should be **relative from a root** of library.
+The path in filter should be relative to the ``srcDir`` option of a library.
 
 See syntax in :ref:`projectconf_src_filter`.
 
