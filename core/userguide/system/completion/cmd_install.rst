@@ -12,7 +12,7 @@
 .. _cmd_misc_completion_install:
 
 platformio system completion install
-==================================
+====================================
 
 .. contents::
 
