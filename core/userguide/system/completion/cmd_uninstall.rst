@@ -12,7 +12,7 @@
 .. _cmd_misc_completion_uninstall:
 
 platformio system completion uninstall
-====================================
+======================================
 
 .. contents::
 
