@@ -395,7 +395,32 @@ Please click on board name for the further details.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_atmelsam_seeed_femto`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_lite_mg126`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_terminal`
+      - SAMD51P19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_zero`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -430,6 +455,11 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_tuinozero96`
       - SAMD21G18A
       - 48MHz
@@ -495,6 +525,9 @@ Packages
 
     * - `framework-arduino-samd-reprap <https://github.com/brupje/ArduinoCore-samd?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (RepRap SAMD Core)
+
+    * - `framework-arduino-samd-seeed <https://github.com/Seeed-Studio/ArduinoCore-samd?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (Seeed SAMD Core)
 
     * - `framework-arduino-samd-sodaq <https://github.com/SodaqMoja/SodaqCore-samd?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (SODAQ SAMD Core)
@@ -1124,7 +1157,37 @@ Seeed
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_seeed_femto`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_lite_mg126`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_terminal`
+      - External
+      - SAMD51P19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_zero`
       - External
       - SAMD21G18A
       - 48MHz
@@ -1179,6 +1242,12 @@ SparkFun
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
 
 meteca
 ~~~~~~

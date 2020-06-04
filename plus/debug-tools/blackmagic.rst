@@ -2069,7 +2069,42 @@ Boards
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_atmelsam_seeed_femto`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_lite_mg126`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_terminal`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51P19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_zero`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A

@@ -1138,6 +1138,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_pico32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - :ref:`platform_espressif32`
       - External
@@ -2776,7 +2783,42 @@ Boards
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_atmelsam_seeed_femto`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_lite_mg126`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_terminal`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51P19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_zero`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A
@@ -2937,6 +2979,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_ststm32_sparky_v1`
       - :ref:`platform_ststm32`
       - External

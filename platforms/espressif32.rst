@@ -162,6 +162,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_pico32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - ESP32
       - 240MHz
@@ -439,6 +444,9 @@ Packages
 
     * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`__
       - xtensa32-gcc
+
+    * - `toolchain-xtensa32s2 <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`__
+      - Toolchain for Xtensa (ESP32-S2) based on GCC
 
 .. warning::
     **Linux Users**:
@@ -743,7 +751,7 @@ Espressif
       - Flash
       - RAM
     * - :ref:`board_espressif32_pico32`
-      - No
+      - External
       - ESP32
       - 240MHz
       - 4MB

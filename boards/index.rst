@@ -321,13 +321,19 @@ Atmel SAM
     atmelsam/sodaq_sff
     atmelsam/sainSmartDue
     atmelsam/sainSmartDueUSB
+    atmelsam/seeed_femto
     atmelsam/seeeduino_lorawan
+    atmelsam/seeed_wio_lite_mg126
+    atmelsam/seeed_wio_terminal
+    atmelsam/seeed_xiao
+    atmelsam/seeed_zero
     atmelsam/sparkfun_samd21_9dof
     atmelsam/sparkfun_qwiic_micro_samd21e
     atmelsam/sparkfun_redboard_turbo
     atmelsam/sparkfun_samd21_dev_usb
     atmelsam/sparkfun_samd21_mini_usb
     atmelsam/sparkfun_samd21_proRF
+    atmelsam/sparkfun_samd51_thing_plus
     atmelsam/tuinozero96
 
 Espressif 32
