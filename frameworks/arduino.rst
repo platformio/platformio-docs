@@ -2831,6 +2831,7 @@ Please click on board name for the further details.
 Examples
 --------
 
+* `Arduino for ASR Microelectronics ASR605x <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Atmel AVR <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Atmel megaAVR <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
@@ -2856,6 +2857,9 @@ Platforms
 
     * - Name
       - Description
+
+    * - :ref:`platform_asrmicro650x`
+      - ASR Microelectronics ASR605x series is highly intergrated and ultra low power SOC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
 
     * - :ref:`platform_atmelavr`
       - Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming
@@ -5414,6 +5418,55 @@ Heltec
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_asrmicro650x_cubecell_node`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6501
+      - 32MHz
+      - 128KB
+      - 128KB
+    * - :ref:`board_asrmicro650x_cubecell_board`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6501
+      - 32MHz
+      - 128KB
+      - 128KB
+    * - :ref:`board_asrmicro650x_cubecell_board_plus`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6501
+      - 32MHz
+      - 128KB
+      - 128KB
+    * - :ref:`board_asrmicro650x_cubecell_capsule`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6501
+      - 32MHz
+      - 128KB
+      - 128KB
+    * - :ref:`board_asrmicro650x_cubecell_gps`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6501
+      - 32MHz
+      - 128KB
+      - 128KB
+    * - :ref:`board_asrmicro650x_cubecell_module`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6501
+      - 32MHz
+      - 128KB
+      - 128KB
+    * - :ref:`board_asrmicro650x_cubecell_module_plus`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6501
+      - 32MHz
+      - 128KB
+      - 128KB
     * - :ref:`board_espressif8266_heltec_wifi_kit_8`
       - :ref:`platform_espressif8266`
       - No

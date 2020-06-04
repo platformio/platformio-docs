@@ -36,6 +36,20 @@ Aceinna IMU
     aceinna_imu/OpenRTK
     aceinna_imu/OpenRTK330L
 
+ASR Microelectronics ASR605x
+----------------------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    asrmicro650x/cubecell_node
+    asrmicro650x/cubecell_board
+    asrmicro650x/cubecell_board_plus
+    asrmicro650x/cubecell_capsule
+    asrmicro650x/cubecell_gps
+    asrmicro650x/cubecell_module
+    asrmicro650x/cubecell_module_plus
+
 Atmel AVR
 ---------
 

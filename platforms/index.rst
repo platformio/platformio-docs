@@ -49,6 +49,7 @@ Embedded
     :maxdepth: 1
 
     aceinna_imu
+    asrmicro650x
     atmelavr
     atmelmegaavr
     atmelsam
