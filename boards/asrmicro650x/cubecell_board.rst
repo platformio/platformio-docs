@@ -30,7 +30,7 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR605x series is hi
   * - **Flash**
     - 128KB
   * - **RAM**
-    - 128KB
+    - 16KB
   * - **Vendor**
     - `Heltec <https://heltec.org/project/htcc-ab01/?utm_source=platformio.org&utm_medium=docs>`__
 

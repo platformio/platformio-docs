@@ -42,6 +42,7 @@ ASR Microelectronics ASR605x
 .. toctree::
     :maxdepth: 1
         
+    asrmicro650x/cubecell_capsule_solar_sensor
     asrmicro650x/cubecell_node
     asrmicro650x/cubecell_board
     asrmicro650x/cubecell_board_plus

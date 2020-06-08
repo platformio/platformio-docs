@@ -137,45 +137,51 @@ Heltec
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_asrmicro650x_cubecell_node`
+    * - :ref:`board_asrmicro650x_cubecell_capsule_solar_sensor`
       - No
-      - ASR6501
+      - ASR6502
       - 32MHz
       - 128KB
+      - 16KB
+    * - :ref:`board_asrmicro650x_cubecell_node`
+      - No
+      - ASR6502
+      - 32MHz
       - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_board`
       - No
       - ASR6501
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_board_plus`
       - No
-      - ASR6501
+      - ASR6502
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_capsule`
       - No
       - ASR6501
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_gps`
       - No
-      - ASR6501
+      - ASR6502
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_module`
       - No
       - ASR6501
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_module_plus`
       - No
-      - ASR6501
+      - ASR6502
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB

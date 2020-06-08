@@ -24,13 +24,13 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR605x series is hi
 .. list-table::
 
   * - **Microcontroller**
-    - ASR6501
+    - ASR6502
   * - **Frequency**
     - 32MHz
   * - **Flash**
     - 128KB
   * - **RAM**
-    - 128KB
+    - 16KB
   * - **Vendor**
     - `Heltec <https://heltec.org/project/htcc-ab02/?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -58,7 +58,7 @@ board manifest `cubecell_board_plus.json <https://github.com/HelTecAutomation/pl
   board = cubecell_board_plus
 
   ; change microcontroller
-  board_build.mcu = asr6501
+  board_build.mcu = asr6502
 
   ; change MCU frequency
   board_build.f_cpu = 32000000L

@@ -11,7 +11,7 @@
 
 .. _board_asrmicro650x_cubecell_capsule:
 
-Heltec CubeCell-Capsule (HTCC-AC0X)
+Heltec CubeCell-Capsule (HTCC-AC01)
 ===================================
 
 .. contents::
@@ -30,7 +30,7 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR605x series is hi
   * - **Flash**
     - 128KB
   * - **RAM**
-    - 128KB
+    - 16KB
   * - **Vendor**
     - `Heltec <https://heltec.org/product/htcc-ac01/?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -46,7 +46,7 @@ Please use ``cubecell_capsule`` ID for :ref:`projectconf_env_board` option in :r
   platform = asrmicro650x
   board = cubecell_capsule
 
-You can override default Heltec CubeCell-Capsule (HTCC-AC0X) settings per build environment using
+You can override default Heltec CubeCell-Capsule (HTCC-AC01) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `cubecell_capsule.json <https://github.com/HelTecAutomation/platform-asrmicro650x/blob/master/boards/cubecell_capsule.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -65,7 +65,7 @@ board manifest `cubecell_capsule.json <https://github.com/HelTecAutomation/platf
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Heltec CubeCell-Capsule (HTCC-AC0X) board.
+:ref:`piodebug` currently does not support Heltec CubeCell-Capsule (HTCC-AC01) board.
 
 Frameworks
 ----------

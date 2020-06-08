@@ -5418,55 +5418,62 @@ Heltec
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_asrmicro650x_cubecell_capsule_solar_sensor`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6502
+      - 32MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_node`
       - :ref:`platform_asrmicro650x`
       - No
-      - ASR6501
+      - ASR6502
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_board`
       - :ref:`platform_asrmicro650x`
       - No
       - ASR6501
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_board_plus`
       - :ref:`platform_asrmicro650x`
       - No
-      - ASR6501
+      - ASR6502
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_capsule`
       - :ref:`platform_asrmicro650x`
       - No
       - ASR6501
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_gps`
       - :ref:`platform_asrmicro650x`
       - No
-      - ASR6501
+      - ASR6502
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_module`
       - :ref:`platform_asrmicro650x`
       - No
       - ASR6501
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_asrmicro650x_cubecell_module_plus`
       - :ref:`platform_asrmicro650x`
       - No
-      - ASR6501
+      - ASR6502
       - 32MHz
       - 128KB
-      - 128KB
+      - 16KB
     * - :ref:`board_espressif8266_heltec_wifi_kit_8`
       - :ref:`platform_espressif8266`
       - No

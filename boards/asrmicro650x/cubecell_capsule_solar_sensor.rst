@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_asrmicro650x_cubecell_gps:
+.. _board_asrmicro650x_cubecell_capsule_solar_sensor:
 
-Heltec CubeCell-GPS (HTCC-AB02S)
-================================
+Heltec CubeCell Capsule Solar Sensor (HTCC-AC02)
+================================================
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR605x series is hi
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `Heltec <https://heltec.org/project/htcc-ab02s/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Heltec <https://heltec.org/project/htcc-ac02/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``cubecell_gps`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``cubecell_capsule_solar_sensor`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:cubecell_gps]
+  [env:cubecell_capsule_solar_sensor]
   platform = asrmicro650x
-  board = cubecell_gps
+  board = cubecell_capsule_solar_sensor
 
-You can override default Heltec CubeCell-GPS (HTCC-AB02S) settings per build environment using
+You can override default Heltec CubeCell Capsule Solar Sensor (HTCC-AC02) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `cubecell_gps.json <https://github.com/HelTecAutomation/platform-asrmicro650x/blob/master/boards/cubecell_gps.json>`_. For example,
+board manifest `cubecell_capsule_solar_sensor.json <https://github.com/HelTecAutomation/platform-asrmicro650x/blob/master/boards/cubecell_capsule_solar_sensor.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:cubecell_gps]
+  [env:cubecell_capsule_solar_sensor]
   platform = asrmicro650x
-  board = cubecell_gps
+  board = cubecell_capsule_solar_sensor
 
   ; change microcontroller
   board_build.mcu = asr6502
@@ -65,7 +65,7 @@ board manifest `cubecell_gps.json <https://github.com/HelTecAutomation/platform-
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Heltec CubeCell-GPS (HTCC-AB02S) board.
+:ref:`piodebug` currently does not support Heltec CubeCell Capsule Solar Sensor (HTCC-AC02) board.
 
 Frameworks
 ----------
