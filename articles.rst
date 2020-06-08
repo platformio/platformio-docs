@@ -33,6 +33,7 @@ Here are recent articles/reviews about PlatformIO:
 ^^^^
 
 * Dec 29, 2019 - **Andri Yadi** - `AI-Powered Magic Wand <https://www.hackster.io/andri/ai-powered-magic-wand-ab1c90>`_
+* Dec 2, 2019 - **Wezley Sherman** - `TensorFlow, Meet The ESP32 <https://towardsdatascience.com/tensorflow-meet-the-esp32-3ac36d7f32c7>`_
 * Oct 31, 2019 - **Frank Leon Rose** - `Minimal FreeRTOS with PlatformIO <https://dev.to/frankleonrose/minimal-freertos-with-platformio-2aca>`_
 * Aug 18, 2019 - **Manuel Bleichenbacher** - `Arduino In-circuit Debugging with PlatformIO <https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc>`_
 * Aug 13, 2019 - **Tech Explorations** - `6 reasons why PlatformIO is perhaps the best programming environment for the ESP32 <https://techexplorations.com/guides/esp32/unleashed/tools/>`_
