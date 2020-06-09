@@ -334,8 +334,8 @@ Custom targets
 
 .. versionadded:: 4.4
 
-PlatformIO allows you yo declare unlimited number of the custom targets. There are a
-lot use cases for them:
+PlatformIO allows you to declare unlimited number of the custom targets. There are a
+lot of use cases for them:
 
 - Commands shortcut
 - Pre/Post processing based on a dependent source (other target, source file, etc.)
@@ -368,12 +368,12 @@ Build System API
 
 :dependencies:
     A list of dependencies that should be built BEFORE target will be launched. It is
-    possible pass multiple dependencies as a Python's list ``["dep1", dep_target_2]``.
-    If a target does have dependencies, ``None`` should be passed.
+    possible pass multiple dependencies as a Python list ``["dep1", dep_target_2]``.
+    If a target does not have dependencies, ``None`` should be passed.
 
 :actions:
     A list of actions to call on a target. It is possible to pass multiple actions as
-    a Python's list ``["python --version", my_calback]``.
+    a Python list ``["python --version", my_calback]``.
 
 :title:
     A title of a target. It will be printed when using :ref:`piocore` or :ref:`pioide`.
