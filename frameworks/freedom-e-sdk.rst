@@ -25,7 +25,8 @@ For more detailed information please visit `vendor site <https://github.com/sifi
 .. contents:: Contents
     :local:
     :depth: 1
-
+.. include:: freedom-e-sdk_extra.rst
+    
 Debugging
 ---------
 
