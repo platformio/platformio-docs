@@ -228,6 +228,20 @@ Boards
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_attiny13`
+      - :ref:`platform_atmelavr`
+      - On-board
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - :ref:`platform_atmelavr`
+      - On-board
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
     * - :ref:`board_atmelavr_bluefruitmicro`
       - :ref:`platform_atmelavr`
       - On-board
@@ -676,20 +690,6 @@ Boards
       - 16MHz
       - 252KB
       - 8KB
-    * - :ref:`board_atmelavr_attiny13`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny2313`
       - :ref:`platform_atmelavr`
       - On-board

@@ -183,6 +183,16 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_attiny13`
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
     * - :ref:`board_atmelavr_bluefruitmicro`
       - ATMEGA32U4
       - 8MHz
@@ -503,16 +513,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 252KB
       - 8KB
-    * - :ref:`board_atmelavr_attiny13`
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny2313`
       - ATTINY2313
       - 8MHz
@@ -969,6 +969,9 @@ Packages
 
     * - `framework-arduino-avr-megacore <https://github.com/MCUdude/MegaCore?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (MegaCore)
+
+    * - `framework-arduino-avr-microcore <https://github.com/MCUdude/MicroCore?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (MicroCore)
 
     * - `framework-arduino-avr-mightycore <https://github.com/MCUdude/MightyCore?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework (MightyCore)
@@ -1438,18 +1441,6 @@ Atmel
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_atmelavr_attiny13`
-      - On-board
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - On-board
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny1634`
       - No
       - ATTINY1634
@@ -2137,6 +2128,18 @@ Microchip
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_attiny13`
+      - On-board
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - On-board
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
     * - :ref:`board_atmelavr_at90pwm216`
       - No
       - AT90PWM216

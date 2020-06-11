@@ -99,6 +99,9 @@ Packages
     * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio.org&utm_medium=docs>`__
       - ESP8266 and ESP32 serial bootloader utility
 
+    * - `tool-mklittlefs <https://github.com/earlephilhower/mklittlefs?utm_source=platformio.org&utm_medium=docs>`__
+      - Utility for creating LittleFS for upload on the ESP8266
+
     * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio.org&utm_medium=docs>`__
       - Tool to build and unpack SPIFFS images
 

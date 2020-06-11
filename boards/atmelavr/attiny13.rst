@@ -11,8 +11,8 @@
 
 .. _board_atmelavr_attiny13:
 
-Generic ATtiny13
-================
+ATtiny13
+========
 
 .. contents::
 
@@ -26,13 +26,13 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **Microcontroller**
     - ATTINY13
   * - **Frequency**
-    - 1MHz
+    - 9MHz
   * - **Flash**
     - 1KB
   * - **RAM**
     - 64B
   * - **Vendor**
-    - `Atmel <http://www.atmel.com/devices/ATTINY13.aspx?utm_source=platformio.org&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATtiny13?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``attiny13`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   platform = atmelavr
   board = attiny13
 
-You can override default Generic ATtiny13 settings per build environment using
+You can override default ATtiny13 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `attiny13.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny13.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -61,7 +61,7 @@ board manifest `attiny13.json <https://github.com/platformio/platform-atmelavr/b
   board_build.mcu = attiny13
 
   ; change MCU frequency
-  board_build.f_cpu = 1200000L
+  board_build.f_cpu = 9600000L
 
 Debugging
 ---------
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Generic ATtiny13 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ATtiny13 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1

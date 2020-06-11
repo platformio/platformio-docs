@@ -248,6 +248,9 @@ Frameworks
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+
     * - :ref:`framework_gd32vf103-sdk`
       - GigaDevice GD32VF103 Firmware Library (SDK)
 
@@ -1423,20 +1426,6 @@ Atmel
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelavr_attiny13`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny2313`
       - :ref:`platform_atmelavr`
       - On-board
@@ -3278,6 +3267,20 @@ Microchip
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_attiny13`
+      - :ref:`platform_atmelavr`
+      - On-board
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - :ref:`platform_atmelavr`
+      - On-board
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
 
 Microduino
 ~~~~~~~~~~

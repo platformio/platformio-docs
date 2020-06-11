@@ -123,6 +123,9 @@ Frameworks
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
 

@@ -31,15 +31,18 @@ Examples
 
 Examples are listed from `SiFive development platform repository <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
+* `freedom-e-sdk_freertos-blinky-system-view <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_freertos-blinky-system-view?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-sifive/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `native-blink_asm <https://github.com/platformio/platform-sifive/tree/master/examples/native-blink_asm?utm_source=platformio.org&utm_medium=docs>`_
 * `freedom-e-sdk_hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_hello?utm_source=platformio.org&utm_medium=docs>`_
 * `freedom-e-sdk_test-coreip <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_test-coreip?utm_source=platformio.org&utm_medium=docs>`_
 * `freedom-e-sdk_sifive-welcome <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_sifive-welcome?utm_source=platformio.org&utm_medium=docs>`_
 * `freedom-e-sdk_timer-interrupt <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_timer-interrupt?utm_source=platformio.org&utm_medium=docs>`_
+* `freedom-e-sdk_freertos-blinky <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_freertos-blinky?utm_source=platformio.org&utm_medium=docs>`_
 * `freedom-e-sdk_multicore-hello <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_multicore-hello?utm_source=platformio.org&utm_medium=docs>`_
 * `freedom-e-sdk_user-syscall <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-syscall?utm_source=platformio.org&utm_medium=docs>`_
 * `freedom-e-sdk_spi <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_spi?utm_source=platformio.org&utm_medium=docs>`_
+* `freedom-e-sdk_freertos-pmp-blinky <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_freertos-pmp-blinky?utm_source=platformio.org&utm_medium=docs>`_
 * `freedom-e-sdk_user-mode <https://github.com/platformio/platform-sifive/tree/master/examples/freedom-e-sdk_user-mode?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-synchronization <https://github.com/platformio/platform-sifive/tree/master/examples/zephyr-synchronization?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-hello-world <https://github.com/platformio/platform-sifive/tree/master/examples/zephyr-hello-world?utm_source=platformio.org&utm_medium=docs>`_
@@ -256,6 +259,9 @@ Frameworks
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
+
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.

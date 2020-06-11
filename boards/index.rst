@@ -95,6 +95,8 @@ Atmel AVR
     atmelavr/ATmega88P
     atmelavr/ATmega88PB
     atmelavr/ATmega48P
+    atmelavr/attiny13
+    atmelavr/attiny13a
     atmelavr/bluefruitmicro
     atmelavr/circuitplay_classic
     atmelavr/feather328p
@@ -167,8 +169,6 @@ Atmel AVR
     atmelavr/engduinov3
     atmelavr/mayfly
     atmelavr/fysetc_f6_13
-    atmelavr/attiny13
-    atmelavr/attiny13a
     atmelavr/attiny1634
     atmelavr/attiny167
     atmelavr/attiny2313

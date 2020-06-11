@@ -203,6 +203,18 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_attiny13`
+      - :ref:`platform_atmelavr`
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - :ref:`platform_atmelavr`
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
     * - :ref:`board_atmelavr_bluefruitmicro`
       - :ref:`platform_atmelavr`
       - ATMEGA32U4
@@ -629,18 +641,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 252KB
       - 8KB
-    * - :ref:`board_atmelavr_attiny13`
-      - :ref:`platform_atmelavr`
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - :ref:`platform_atmelavr`
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny2313`
       - :ref:`platform_atmelavr`
       - ATTINY2313
@@ -3962,20 +3962,6 @@ Atmel
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelavr_attiny13`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny1634`
       - :ref:`platform_atmelavr`
       - No
@@ -6377,6 +6363,20 @@ Microchip
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_attiny13`
+      - :ref:`platform_atmelavr`
+      - On-board
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - :ref:`platform_atmelavr`
+      - On-board
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
 
 Microduino
 ~~~~~~~~~~
