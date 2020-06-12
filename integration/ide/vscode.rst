@@ -460,10 +460,9 @@ use the "Upload and Monitor" task. The default value is ``false``.
 Configure the time in milliseconds before reopening the Serial Port Monitor.
 The default value is ``0``, which means to reopen instantly.
 
-``platformio-ide.updateTerminalPathConfiguration``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-If true, use a patched PATH environment for the Terminal
-configuration. The default value is ``true``.
+``platformio-ide.useBuiltinPython``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use a built-in Python 3 Interpreter if available. The default value is ``true``.
 
 ``platformio-ide.useBuiltinPIOCore``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

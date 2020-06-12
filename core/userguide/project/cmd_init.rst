@@ -74,6 +74,11 @@ A list with supported IDE is available within ``platformio project init --help``
 Also, please take a look at :ref:`ide` page.
 
 .. option::
+    -e, --environment
+
+Update project using existing environment.
+
+.. option::
     -O, --project-option
 
 Initialize project with additional options from :ref:`projectconf`. For example,
