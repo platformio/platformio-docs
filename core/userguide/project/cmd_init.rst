@@ -76,6 +76,8 @@ Also, please take a look at :ref:`ide` page.
 .. option::
     -e, --environment
 
+.. versionadded:: 4.4
+
 Update project using existing environment.
 
 .. option::
