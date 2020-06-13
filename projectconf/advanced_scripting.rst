@@ -329,7 +329,7 @@ not be passed to the next middleware in chain.
     env.AddBuildMiddleware(skip_asm_from_build, "*.S")
 
 
-Custom targets
+Custom Targets
 ~~~~~~~~~~~~~~
 
 .. versionadded:: 4.4
@@ -337,9 +337,10 @@ Custom targets
 PlatformIO allows you to declare unlimited number of the custom targets. There are a
 lot of use cases for them:
 
-- Commands shortcut
-- Pre/Post processing based on a dependent source (other target, source file, etc.)
-- Launch commands with custom options declared in :ref:`projectconf`.
+- Pre/Post processing based on a dependent sources (other target, source file, etc.)
+- Command launcher with own arguments
+- Launch command with custom options declared in :ref:`projectconf`
+- Python callback as a target (use the power of Python interpreter and PlatformIO Build API).
 
 A custom target can be processed using :option:`platformio run --target` option.
 
