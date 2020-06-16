@@ -12,7 +12,7 @@
 PlatformIO is a new generation ecosystem for embedded development
 =================================================================
 
-**A place where Developers and Teams have true Freedom! No more hardware or software lock-ins!**
+**A place where Developers and Teams have true Freedom! No more vendor lock-in!**
 
 * Open source, maximum permissive Apache 2.0 license
 * Cross-platform IDE and Unified Debugger
