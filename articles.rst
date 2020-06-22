@@ -22,7 +22,11 @@ Here are recent articles/reviews about PlatformIO:
 
 2020
 ^^^^
+* Jun 22, 2020 - **Francesco Azzol** - `Run Tensorflow Lite on ESP32 from scratch: Easy guide (PlatformIO) <https://www.survivingwithandroid.com/run-tensorflow-lite-esp32-platformio/>`_
+* May 15, 2020 - **Francesco Azzol** - `ESP32 Rest API: How to implement an ESP32 API server using PlatformIO <https://www.survivingwithandroid.com/esp32-rest-api-esp32-api-server/>`_
 * May 10, 2020 - **Michael Schnyder** - `Migrating from Arduino IDE to Visual Studio Code to PlatformIO <https://blog.emtwo.ch/2020/05/migrating-from-ardiuno-ide-to-visual.html>`_
+* Apr 25, 2020 - **Hans-Günther Nusseck** - `ESP WiFi Timeserver Synchronized Wrist Watch <https://www.hackster.io/hague/esp-wifi-timeserver-synchronized-wrist-watch-8940cd>`_
+* Apr 19, 2020 - **Jorge B. Aspiazu** - `How to work with the STM32 Blue Pill in PlatformIO and not die trying <https://medium.com/@jobenas_25464/how-to-work-with-the-stm32-blue-pill-in-platformio-and-not-die-trying-1700250e54e2>`_
 * Mar 28, 2020 - **Brian Lough** - `Use the PlatformIO Debugger on the ESP32 Using an ESP-prog <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
 * Mar 10, 2020 - **James Harton** - `Augie the Hexapod Robot <https://www.hackster.io/james-harton/augie-the-hexapod-robot-8e5125>`_
 * Mar 05, 2020 - **Alex Govorov** - `PVS-Studio Integration in PlatformIO <https://habr.com/en/company/pvs-studio/blog/491220/>`_
