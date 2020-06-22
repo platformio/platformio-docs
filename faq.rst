@@ -42,7 +42,7 @@ Please refer to :ref:`projectconf_pio_build_dir`.
 Command completion in Terminal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Please refer to :ref:`cmd_misc_completion`.
+Please refer to :ref:`cmd_system_completion`.
 
 .. _faq_install_python:
 

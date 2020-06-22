@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_misc_completion_install:
+.. _cmd_system_completion_install:
 
 platformio system completion install
 ====================================
