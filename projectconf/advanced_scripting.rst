@@ -342,7 +342,8 @@ lot of use cases for them:
 - Launch command with custom options declared in :ref:`projectconf`
 - Python callback as a target (use the power of Python interpreter and PlatformIO Build API).
 
-A custom target can be processed using :option:`platformio run --target` option.
+A custom target can be processed using :option:`platformio run --target` option and
+you can list them via :option:`platformio run --list-targets` command.
 
 Build System API
 ^^^^^^^^^^^^^^^^

@@ -144,7 +144,7 @@ Examples:
     build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
 
 .. note::
-  If you need to control build flags that are specific for debug configuration please 
+  If you need to control build flags that are specific for debug configuration please
   refer to :ref:`projectconf_debug_build_flags`.
 
 Built-in Variables
@@ -291,7 +291,8 @@ Type: ``String`` | Multiple: ``Yes``
 A list of targets which will be processed by the :ref:`cmd_run` command by
 default. You can enter more than one target, if separated by comma+space **", "**.
 
-The list with available targets is located in :option:`platformio run --target`.
+Please follow to :option:`platformio run --list-targets` documentation for the other
+targets.
 
 **Examples**
 
