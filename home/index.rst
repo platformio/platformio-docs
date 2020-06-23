@@ -16,8 +16,8 @@
 PlatformIO Home
 ===============
 
-|PIOHOME| allows you to interact with PlatformIO collaborative platform using modern and
-cross-platform GUI:
+|PIOHOME| allows you to interact with PlatformIO's professional collaborative platform
+using modern and cross-platform GUI:
 
 * Project Manager
 * :ref:`pioaccount`

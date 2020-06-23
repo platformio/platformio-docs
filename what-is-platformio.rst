@@ -14,7 +14,7 @@
 What is PlatformIO?
 ===================
 
-**A place where Developers and Teams have true Freedom! No more hardware or software lock-ins!**
+**A place where Developers and Teams have true Freedom! No more vendor lock-in!**
 
 .. contents:: Contents
     :local:
