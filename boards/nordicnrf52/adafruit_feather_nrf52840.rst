@@ -68,6 +68,7 @@ Uploading
 ---------
 Adafruit Feather nRF52840 Express supports the next uploading protocols:
 
+* ``cmsis-dap``
 * ``jlink``
 * ``nrfjprog``
 * ``nrfutil``
@@ -106,9 +107,12 @@ Adafruit Feather nRF52840 Express does not have on-board debug probe and **IS NO
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_jlink`
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
   * - :ref:`debugging_tool_stlink`
     - 
     - 

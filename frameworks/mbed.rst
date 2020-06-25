@@ -1080,7 +1080,7 @@ Examples
 * `Mbed for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for NXP i.MX RT <https://github.com/platformio/platform-nxpimxrt/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Mbed for RISC-V GAP <https://github.com/pioplus/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for RISC-V GAP <https://github.com/platformio/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_

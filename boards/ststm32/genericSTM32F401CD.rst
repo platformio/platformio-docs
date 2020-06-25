@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_disco_h743xi:
+.. _board_ststm32_genericSTM32F401CD:
 
-STM32H747I-DISCO
-================
+STM32F401CD (96k RAM. 384k Flash)
+=================================
 
 .. contents::
 
@@ -24,66 +24,67 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32H747XIH6
+    - STM32F401CD
   * - **Frequency**
-    - 400MHz
+    - 84MHz
   * - **Flash**
-    - 2MB
+    - 384KB
   * - **RAM**
-    - 512KB
+    - 96KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/stm32h747i-disco.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Generic <https://www.st.com/en/microcontrollers-microprocessors/stm32f401cd.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``disco_h743xi`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``genericSTM32F401CD`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:disco_h743xi]
+  [env:genericSTM32F401CD]
   platform = ststm32
-  board = disco_h743xi
+  board = genericSTM32F401CD
 
-You can override default STM32H747I-DISCO settings per build environment using
+You can override default STM32F401CD (96k RAM. 384k Flash) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `disco_h743xi.json <https://github.com/platformio/platform-ststm32/blob/master/boards/disco_h743xi.json>`_. For example,
+board manifest `genericSTM32F401CD.json <https://github.com/platformio/platform-ststm32/blob/master/boards/genericSTM32F401CD.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:disco_h743xi]
+  [env:genericSTM32F401CD]
   platform = ststm32
-  board = disco_h743xi
+  board = genericSTM32F401CD
 
   ; change microcontroller
-  board_build.mcu = stm32h747xih6
+  board_build.mcu = stm32f401cd
 
   ; change MCU frequency
-  board_build.f_cpu = 400000000L
+  board_build.f_cpu = 84000000L
 
 
 Uploading
 ---------
-STM32H747I-DISCO supports the next uploading protocols:
+STM32F401CD (96k RAM. 384k Flash) supports the next uploading protocols:
 
 * ``blackmagic``
+* ``dfu``
 * ``jlink``
-* ``mbed``
+* ``serial``
 * ``stlink``
 
-Default protocol is ``stlink``
+Default protocol is ``serial``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:disco_h743xi]
+  [env:genericSTM32F401CD]
   platform = ststm32
-  board = disco_h743xi
+  board = genericSTM32F401CD
 
-  upload_protocol = stlink
+  upload_protocol = serial
 
 Debugging
 ---------
@@ -98,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-STM32H747I-DISCO has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+STM32F401CD (96k RAM. 384k Flash) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -108,13 +109,13 @@ STM32H747I-DISCO has on-board debug probe and **IS READY** for debugging. You do
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_jlink`
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------
@@ -124,8 +125,11 @@ Frameworks
     * - Name
       - Description
 
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_cmsis`
+      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
+
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
-
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.

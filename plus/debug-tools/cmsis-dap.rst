@@ -159,6 +159,13 @@ Boards
       - 48MHz
       - 32KB
       - 8KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_mzeropro`
       - :ref:`platform_atmelsam`
       - On-board

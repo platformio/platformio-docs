@@ -75,7 +75,7 @@ You do not need to use/buy external debug probe.
 Examples
 --------
 
-* `PULP OS for RISC-V GAP <https://github.com/pioplus/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `PULP OS for RISC-V GAP <https://github.com/platformio/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------

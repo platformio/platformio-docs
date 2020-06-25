@@ -142,6 +142,9 @@ Packages
     * - `framework-gd32vf103-sdk <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio.org&utm_medium=docs>`__
       - GigaDevice GD32V SDK
 
+    * - `tool-dfuutil <http://dfu-util.sourceforge.net/?utm_source=platformio.org&utm_medium=docs>`__
+      - Host side implementation of the DFU 1.0 and DFU 1.1 specifications
+
     * - `tool-gd32vflash <https://github.com/riscv-mcu/gd32-dfu-utils?utm_source=platformio.org&utm_medium=docs>`__
       - GD32V FLASH TOOLS
 

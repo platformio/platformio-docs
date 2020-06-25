@@ -11,8 +11,8 @@
 
 .. _board_ststm32_thunder_pack:
 
-ThunderPack
-===========
+ThunderPack v1.0
+================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``thunder_pack`` ID for :ref:`projectconf_env_board` option in :ref:`
   platform = ststm32
   board = thunder_pack
 
-You can override default ThunderPack settings per build environment using
+You can override default ThunderPack v1.0 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `thunder_pack.json <https://github.com/platformio/platform-ststm32/blob/master/boards/thunder_pack.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `thunder_pack.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ThunderPack supports the next uploading protocols:
+ThunderPack v1.0 supports the next uploading protocols:
 
 * ``blackmagic``
 * ``dfu``
@@ -99,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ThunderPack does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+ThunderPack v1.0 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

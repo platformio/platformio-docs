@@ -485,7 +485,7 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_disco_h743xi`
+    * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
       - 400MHz
@@ -1688,7 +1688,7 @@ ST
       - 48MHz
       - 128KB
       - 16KB
-    * - :ref:`board_ststm32_disco_h743xi`
+    * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - On-board
       - STM32H747XIH6

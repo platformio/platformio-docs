@@ -32,10 +32,10 @@ Examples
 
 Examples are listed from `ASR Microelectronics ASR605x development platform repository <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-lorawan <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-lorawan?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-rgb <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-rgb?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-adc <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-adc?utm_source=platformio.org&utm_medium=docs>`_
+* `LoRa <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/LoRa?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-lowpower <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-lowpower?utm_source=platformio.org&utm_medium=docs>`_
 
 Stable and upstream versions
@@ -140,48 +140,48 @@ Heltec
     * - :ref:`board_asrmicro650x_cubecell_capsule_solar_sensor`
       - No
       - ASR6502
-      - 32MHz
+      - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_asrmicro650x_cubecell_node`
       - No
       - ASR6502
-      - 32MHz
+      - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_asrmicro650x_cubecell_board`
       - No
       - ASR6501
-      - 32MHz
+      - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_asrmicro650x_cubecell_board_plus`
       - No
       - ASR6502
-      - 32MHz
+      - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_asrmicro650x_cubecell_capsule`
       - No
       - ASR6501
-      - 32MHz
+      - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_asrmicro650x_cubecell_gps`
       - No
       - ASR6502
-      - 32MHz
+      - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_asrmicro650x_cubecell_module`
       - No
       - ASR6501
-      - 32MHz
+      - 48MHz
       - 128KB
       - 16KB
     * - :ref:`board_asrmicro650x_cubecell_module_plus`
       - No
       - ASR6502
-      - 32MHz
+      - 48MHz
       - 128KB
       - 16KB

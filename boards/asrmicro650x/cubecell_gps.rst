@@ -26,7 +26,7 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR605x series is hi
   * - **Microcontroller**
     - ASR6502
   * - **Frequency**
-    - 32MHz
+    - 48MHz
   * - **Flash**
     - 128KB
   * - **RAM**
@@ -61,7 +61,7 @@ board manifest `cubecell_gps.json <https://github.com/HelTecAutomation/platform-
   board_build.mcu = asr6502
 
   ; change MCU frequency
-  board_build.f_cpu = 32000000L
+  board_build.f_cpu = 48000000L
 
 Debugging
 ---------

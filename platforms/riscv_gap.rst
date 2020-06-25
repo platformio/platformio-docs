@@ -30,25 +30,25 @@ For more detailed information please visit `vendor site <https://greenwaves-tech
 Examples
 --------
 
-Examples are listed from `RISC-V GAP development platform repository <https://github.com/pioplus/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
+Examples are listed from `RISC-V GAP development platform repository <https://github.com/platformio/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `gapuino-mbed-os-irq <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-os-irq?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-autotiler-cifar10 <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-autotiler-cifar10?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-driver-hyper-flash <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-driver-hyper-flash?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-pulp-os-i2c-eeprom <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-i2c-eeprom?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-events-queue <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-events-queue?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-pulp-os-kernel-dma <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-kernel-dma?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-driver-hyper-rtc-alarm <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-driver-hyper-rtc-alarm?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-fft2d <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-fft2d?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-pulp-os-autotiler-bilinear-resize <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-autotiler-bilinear-resize?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-matadd <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-matadd?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-features-cluster-dma <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-features-cluster-dma?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-features-filesystem <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-features-filesystem?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-pulp-os-filesystem <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-filesystem?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-os-memory-pool <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-os-memory-pool?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-pulp-os-autotiler-cifar10 <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-autotiler-cifar10?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-mbed-driver-cpp-raw-serial <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-mbed-driver-cpp-raw-serial?utm_source=platformio.org&utm_medium=docs>`_
-* `gapuino-pulp-os-hello-world <https://github.com/pioplus/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-hello-world?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-os-irq <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-os-irq?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-autotiler-cifar10 <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-autotiler-cifar10?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-driver-hyper-flash <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-driver-hyper-flash?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-pulp-os-i2c-eeprom <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-i2c-eeprom?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-events-queue <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-events-queue?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-pulp-os-kernel-dma <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-kernel-dma?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-driver-hyper-rtc-alarm <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-driver-hyper-rtc-alarm?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-fft2d <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-fft2d?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-pulp-os-autotiler-bilinear-resize <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-autotiler-bilinear-resize?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-matadd <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-matadd?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-features-cluster-dma <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-features-cluster-dma?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-features-filesystem <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-features-filesystem?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-pulp-os-filesystem <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-filesystem?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-os-memory-pool <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-os-memory-pool?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-pulp-os-autotiler-cifar10 <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-autotiler-cifar10?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-mbed-driver-cpp-raw-serial <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-mbed-driver-cpp-raw-serial?utm_source=platformio.org&utm_medium=docs>`_
+* `gapuino-pulp-os-hello-world <https://github.com/platformio/platform-riscv_gap/tree/master/examples/gapuino-pulp-os-hello-world?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -97,7 +97,7 @@ You do not need to use/buy external debug probe.
 Stable and upstream versions
 ----------------------------
 
-You can switch between `stable releases <https://github.com/pioplus/platform-riscv_gap/releases>`__
+You can switch between `stable releases <https://github.com/platformio/platform-riscv_gap/releases>`__
 of RISC-V GAP development platform and the latest upstream version using
 :ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
 
@@ -122,7 +122,7 @@ Upstream
 .. code-block:: ini
 
     [env:upstream_develop]
-    platform = https://github.com/pioplus/platform-riscv_gap.git
+    platform = https://github.com/platformio/platform-riscv_gap.git
     board = ...
 
 

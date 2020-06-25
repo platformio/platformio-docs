@@ -494,7 +494,7 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 64KB
       - 340KB
-    * - :ref:`board_ststm32_disco_h743xi`
+    * - :ref:`board_ststm32_disco_h747xi`
       - STM32H747XIH6
       - 400MHz
       - 2MB
@@ -642,6 +642,11 @@ Please click on board name for the further details.
       - 48MHz
       - 16KB
       - 4KB
+    * - :ref:`board_ststm32_electrosmith_daisy`
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_elmo_f411re`
       - STM32F411RET6
       - 100MHz
@@ -654,6 +659,11 @@ Please click on board name for the further details.
       - 128KB
     * - :ref:`board_ststm32_fk407m1`
       - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_fysetc_s6`
+      - STM32F446VET6
       - 168MHz
       - 512KB
       - 128KB
@@ -762,6 +772,26 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_pybstick26_duino`
+      - STM32F072RB
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_ststm32_pybstick26_pro`
+      - STM32F412RE
+      - 100MHz
+      - 512KB
+      - 256KB
+    * - :ref:`board_ststm32_pybstick26_lite`
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_ststm32_pybstick26_std`
+      - STM32F411CEU6
+      - 100MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_piconomix_px_her0`
       - STM32L072RB
       - 32MHz
@@ -786,6 +816,11 @@ Please click on board name for the further details.
       - STM32L051C8T6
       - 32MHz
       - 64KB
+      - 8KB
+    * - :ref:`board_ststm32_disco_g031j6`
+      - STM32G031J6
+      - 64MHz
+      - 128KB
       - 8KB
     * - :ref:`board_ststm32_steval_fcu001v1`
       - STM32F401CCU6
@@ -817,6 +852,16 @@ Please click on board name for the further details.
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_genericSTM32F103C4`
+      - STM32F103C4
+      - 72MHz
+      - 16KB
+      - 6KB
+    * - :ref:`board_ststm32_genericSTM32F103C6`
+      - STM32F103C6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - STM32F103C8T6
       - 72MHz
@@ -827,6 +872,16 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103R4`
+      - STM32F103R4
+      - 72MHz
+      - 16KB
+      - 6KB
+    * - :ref:`board_ststm32_genericSTM32F103R6`
+      - STM32F103R6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103R8`
       - STM32F103R8T6
       - 72MHz
@@ -842,11 +897,36 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 48KB
+    * - :ref:`board_ststm32_genericSTM32F103RD`
+      - STM32F103RD
+      - 72MHz
+      - 384KB
+      - 64KB
     * - :ref:`board_ststm32_genericSTM32F103RE`
       - STM32F103RET6
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103RF`
+      - STM32F103RF
+      - 72MHz
+      - 768KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103RG`
+      - STM32F103RG
+      - 72MHz
+      - 1MB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103T4`
+      - STM32F103T4
+      - 72MHz
+      - 16KB
+      - 6KB
+    * - :ref:`board_ststm32_genericSTM32F103T6`
+      - STM32F103T6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103T8`
       - STM32F103T8T6
       - 72MHz
@@ -856,6 +936,11 @@ Please click on board name for the further details.
       - STM32F103TBT6
       - 72MHz
       - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103V8`
+      - STM32F103V8
+      - 72MHz
+      - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103VB`
       - STM32F103VBT6
@@ -877,6 +962,16 @@ Please click on board name for the further details.
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103VF`
+      - STM32F103VF
+      - 72MHz
+      - 768KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103VG`
+      - STM32F103VG
+      - 72MHz
+      - 1MB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F103ZC`
       - STM32F103ZCT6
       - 72MHz
@@ -892,11 +987,41 @@ Please click on board name for the further details.
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103ZF`
+      - STM32F103ZF
+      - 72MHz
+      - 768KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103ZG`
+      - STM32F103ZG
+      - 72MHz
+      - 1MB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F303CB`
       - STM32F303CBT6
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F401CB`
+      - STM32F401CB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401CC`
+      - STM32F401CC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401CD`
+      - STM32F401CD
+      - 84MHz
+      - 384KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F401CE`
+      - STM32F401CE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F401RB`
       - STM32F401RB
       - 84MHz
@@ -907,11 +1032,21 @@ Please click on board name for the further details.
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RD`
+      - STM32F401RD
+      - 84MHz
+      - 384KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F401RE`
       - STM32F401RE
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_genericSTM32F405RG`
+      - STM32F405RG
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - STM32F407VET6
       - 168MHz
@@ -922,6 +1057,121 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_genericSTM32F410C8`
+      - STM32F410C8
+      - 100MHz
+      - 64KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F410CB`
+      - STM32F410CB
+      - 100MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F410R8`
+      - STM32F410R8
+      - 100MHz
+      - 64KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F410RB`
+      - STM32F410RB
+      - 100MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F411CC`
+      - STM32F411CC
+      - 100MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F411CE`
+      - STM32F411CE
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F411RC`
+      - STM32F411RC
+      - 100MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F411RE`
+      - STM32F411RE
+      - 100MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F412CE`
+      - STM32F412CE
+      - 100MHz
+      - 512KB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F412CG`
+      - STM32F412CG
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F412RE`
+      - STM32F412RE
+      - 100MHz
+      - 512KB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F412RG`
+      - STM32F412RG
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F413CG`
+      - STM32F413CG
+      - 100MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F413CH`
+      - STM32F413CH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F413RG`
+      - STM32F413RG
+      - 100MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F413RH`
+      - STM32F413RH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F415RG`
+      - STM32F415RG
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F417VE`
+      - STM32F417VE
+      - 168MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F417VG`
+      - STM32F417VG
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F423CH`
+      - STM32F423CH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F423RH`
+      - STM32F423RH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F446RC`
+      - STM32F446RC
+      - 180MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F446RE`
+      - STM32F446RE
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_stm32f4stamp`
       - STM32F405RGT6
       - 168MHz
@@ -942,6 +1192,11 @@ Please click on board name for the further details.
       - 32MHz
       - 192KB
       - 20KB
+    * - :ref:`board_ststm32_thunder_pack_f411`
+      - STM32F411CEU6
+      - 100MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_hy_tinystm103tb`
       - STM32F103TBU6
       - 72MHz
@@ -950,6 +1205,16 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_vake_v1`
       - STM32F446RET6
       - 180MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_vccgnd_f103zet6`
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_blackpill_f411ce`
+      - STM32F411CEU6
+      - 100MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_wraith32_v1`
@@ -1032,6 +1297,45 @@ Packages
     * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&utm_medium=docs>`__
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
+    * - `framework-cmsis-stm32f0 <https://github.com/STMicroelectronics/cmsis_device_f0?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32F0 series
+
+    * - `framework-cmsis-stm32f1 <https://github.com/STMicroelectronics/cmsis_device_f1?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32F1 series
+
+    * - `framework-cmsis-stm32f2 <https://github.com/STMicroelectronics/cmsis_device_f2?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32F2 series
+
+    * - `framework-cmsis-stm32f3 <https://github.com/STMicroelectronics/cmsis_device_f3?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32F3 series
+
+    * - `framework-cmsis-stm32f4 <https://github.com/STMicroelectronics/cmsis_device_f4?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32F4 series
+
+    * - `framework-cmsis-stm32f7 <https://github.com/STMicroelectronics/cmsis_device_f7?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32F7 series
+
+    * - `framework-cmsis-stm32g0 <https://github.com/STMicroelectronics/cmsis_device_g0?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32G0 series
+
+    * - `framework-cmsis-stm32g4 <https://github.com/STMicroelectronics/cmsis_device_g4?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32G4 series
+
+    * - `framework-cmsis-stm32h7 <https://github.com/STMicroelectronics/cmsis_device_h7?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32H7 series
+
+    * - `framework-cmsis-stm32l0 <https://github.com/STMicroelectronics/cmsis_device_l0?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32L0 series
+
+    * - `framework-cmsis-stm32l1 <https://github.com/STMicroelectronics/cmsis_device_l1?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32L1 series
+
+    * - `framework-cmsis-stm32l4 <https://github.com/STMicroelectronics/cmsis_device_l4?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32L4 series
+
+    * - `framework-cmsis-stm32l5 <https://github.com/STMicroelectronics/cmsis_device_l5?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the ST STM32L5 series
+
     * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio.org&utm_medium=docs>`__
       - libOpenCM3 Framework
 
@@ -1112,6 +1416,9 @@ Packages
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
       - SEGGER J-Link Software and Documentation Pack
+
+    * - `tool-ldscripts-ststm32 <https://www.st.com/en/development-tools/stm32cubemx.html?utm_source=platformio.org&utm_medium=docs>`__
+      - Linker scripts pack for ST STM32 platform
 
     * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
       - Ninja is a small build system with a focus on speed.
@@ -1372,6 +1679,25 @@ Diymore
       - 512KB
       - 128KB
 
+Electrosmith
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_electrosmith_daisy`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+
 Espotel
 ~~~~~~~
 
@@ -1388,6 +1714,25 @@ Espotel
       - External
       - STM32F411RET6
       - 100MHz
+      - 512KB
+      - 128KB
+
+FYSETC
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_fysetc_s6`
+      - External
+      - STM32F446VET6
+      - 168MHz
       - 512KB
       - 128KB
 
@@ -1445,6 +1790,18 @@ Generic
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F103C4`
+      - External
+      - STM32F103C4
+      - 72MHz
+      - 16KB
+      - 6KB
+    * - :ref:`board_ststm32_genericSTM32F103C6`
+      - External
+      - STM32F103C6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - External
       - STM32F103C8T6
@@ -1457,6 +1814,18 @@ Generic
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103R4`
+      - External
+      - STM32F103R4
+      - 72MHz
+      - 16KB
+      - 6KB
+    * - :ref:`board_ststm32_genericSTM32F103R6`
+      - External
+      - STM32F103R6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103R8`
       - External
       - STM32F103R8T6
@@ -1475,12 +1844,42 @@ Generic
       - 72MHz
       - 256KB
       - 48KB
+    * - :ref:`board_ststm32_genericSTM32F103RD`
+      - External
+      - STM32F103RD
+      - 72MHz
+      - 384KB
+      - 64KB
     * - :ref:`board_ststm32_genericSTM32F103RE`
       - External
       - STM32F103RET6
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103RF`
+      - External
+      - STM32F103RF
+      - 72MHz
+      - 768KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103RG`
+      - External
+      - STM32F103RG
+      - 72MHz
+      - 1MB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103T4`
+      - External
+      - STM32F103T4
+      - 72MHz
+      - 16KB
+      - 6KB
+    * - :ref:`board_ststm32_genericSTM32F103T6`
+      - External
+      - STM32F103T6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103T8`
       - External
       - STM32F103T8T6
@@ -1492,6 +1891,12 @@ Generic
       - STM32F103TBT6
       - 72MHz
       - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103V8`
+      - External
+      - STM32F103V8
+      - 72MHz
+      - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103VB`
       - External
@@ -1517,6 +1922,18 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103VF`
+      - External
+      - STM32F103VF
+      - 72MHz
+      - 768KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103VG`
+      - External
+      - STM32F103VG
+      - 72MHz
+      - 1MB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F103ZC`
       - External
       - STM32F103ZCT6
@@ -1535,12 +1952,48 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103ZF`
+      - External
+      - STM32F103ZF
+      - 72MHz
+      - 768KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103ZG`
+      - External
+      - STM32F103ZG
+      - 72MHz
+      - 1MB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F303CB`
       - External
       - STM32F303CBT6
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F401CB`
+      - External
+      - STM32F401CB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401CC`
+      - External
+      - STM32F401CC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401CD`
+      - External
+      - STM32F401CD
+      - 84MHz
+      - 384KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F401CE`
+      - External
+      - STM32F401CE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F401RB`
       - External
       - STM32F401RB
@@ -1553,12 +2006,24 @@ Generic
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RD`
+      - External
+      - STM32F401RD
+      - 84MHz
+      - 384KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F401RE`
       - External
       - STM32F401RE
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_genericSTM32F405RG`
+      - External
+      - STM32F405RG
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - External
       - STM32F407VET6
@@ -1571,6 +2036,144 @@ Generic
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_genericSTM32F410C8`
+      - External
+      - STM32F410C8
+      - 100MHz
+      - 64KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F410CB`
+      - External
+      - STM32F410CB
+      - 100MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F410R8`
+      - External
+      - STM32F410R8
+      - 100MHz
+      - 64KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F410RB`
+      - External
+      - STM32F410RB
+      - 100MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F411CC`
+      - External
+      - STM32F411CC
+      - 100MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F411CE`
+      - External
+      - STM32F411CE
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F411RC`
+      - External
+      - STM32F411RC
+      - 100MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F411RE`
+      - External
+      - STM32F411RE
+      - 100MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F412CE`
+      - External
+      - STM32F412CE
+      - 100MHz
+      - 512KB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F412CG`
+      - External
+      - STM32F412CG
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F412RE`
+      - External
+      - STM32F412RE
+      - 100MHz
+      - 512KB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F412RG`
+      - External
+      - STM32F412RG
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F413CG`
+      - External
+      - STM32F413CG
+      - 100MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F413CH`
+      - External
+      - STM32F413CH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F413RG`
+      - External
+      - STM32F413RG
+      - 100MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F413RH`
+      - External
+      - STM32F413RH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F415RG`
+      - External
+      - STM32F415RG
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F417VE`
+      - External
+      - STM32F417VE
+      - 168MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F417VG`
+      - External
+      - STM32F417VG
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F423CH`
+      - External
+      - STM32F423CH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F423RH`
+      - External
+      - STM32F423RH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F446RC`
+      - External
+      - STM32F446RC
+      - 180MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F446RE`
+      - External
+      - STM32F446RE
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_stm32f4stamp`
       - External
       - STM32F405RGT6
@@ -1813,6 +2416,43 @@ Olimex
       - STM32F407ZGT6
       - 168MHz
       - 1MB
+      - 128KB
+
+PYBStick
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_pybstick26_duino`
+      - External
+      - STM32F072RB
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_ststm32_pybstick26_pro`
+      - External
+      - STM32F412RE
+      - 100MHz
+      - 512KB
+      - 256KB
+    * - :ref:`board_ststm32_pybstick26_lite`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_ststm32_pybstick26_std`
+      - External
+      - STM32F411CEU6
+      - 100MHz
+      - 512KB
       - 128KB
 
 Piconomix
@@ -2428,6 +3068,12 @@ ST
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_g031j6`
+      - External
+      - STM32G031J6
+      - 64MHz
+      - 128KB
+      - 8KB
     * - :ref:`board_ststm32_eval_l073z`
       - On-board
       - STM32L073VZT6
@@ -2476,7 +3122,7 @@ ST
       - 216MHz
       - 64KB
       - 340KB
-    * - :ref:`board_ststm32_disco_h743xi`
+    * - :ref:`board_ststm32_disco_h747xi`
       - On-board
       - STM32H747XIH6
       - 400MHz
@@ -2570,6 +3216,12 @@ ThunderPack
       - 32MHz
       - 192KB
       - 20KB
+    * - :ref:`board_ststm32_thunder_pack_f411`
+      - External
+      - STM32F411CEU6
+      - 100MHz
+      - 512KB
+      - 128KB
 
 VAE
 ~~~
@@ -2587,6 +3239,44 @@ VAE
       - External
       - STM32F446RET6
       - 180MHz
+      - 512KB
+      - 128KB
+
+VCCGND
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_vccgnd_f103zet6`
+      - External
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
+
+WeAct
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_blackpill_f411ce`
+      - External
+      - STM32F411CEU6
+      - 100MHz
       - 512KB
       - 128KB
 

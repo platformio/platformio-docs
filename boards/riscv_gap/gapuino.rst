@@ -48,7 +48,7 @@ Please use ``gapuino`` ID for :ref:`projectconf_env_board` option in :ref:`proje
 
 You can override default GAPuino GAP8 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `gapuino.json <https://github.com/pioplus/platform-riscv_gap/blob/master/boards/gapuino.json>`_. For example,
+board manifest `gapuino.json <https://github.com/platformio/platform-riscv_gap/blob/master/boards/gapuino.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
