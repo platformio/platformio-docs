@@ -75,14 +75,14 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinomicrochippic32 <https://github.com/chipKIT32/chipKIT-core?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (PIC32 Core)
+    * - `framework-arduinomicrochippic32 <http://chipkit.net/?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip PIC32 microcontrollers
 
-    * - `tool-pic32prog <https://github.com/sergev/pic32prog?utm_source=platformio.org&utm_medium=docs>`__
-      - pic32prog
+    * - `tool-pic32prog <https://github.com/sergev/pic32prog.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Flash programming utility for Microchip PIC32 microcontrollers
 
-    * - `toolchain-microchippic32 <https://github.com/chipKIT32/chipKIT-cxx?utm_source=platformio.org&utm_medium=docs>`__
-      - GCC for Microchip PIC32
+    * - `toolchain-microchippic32 <https://github.com/chipKIT32/chipKIT-cxx.git?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Microchip PIC32
 
 .. warning::
     **Linux Users**:
@@ -107,7 +107,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
 Boards
 ------

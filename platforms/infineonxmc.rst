@@ -160,14 +160,14 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoxmc <https://github.com/Infineon/XMC-for-Arduino?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Infineon XMC Core)
+    * - `framework-arduinoxmc <https://github.com/Infineon/XMC-for-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Infineon's XMC microcontrollers
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
-      - SEGGER J-Link Software and Documentation Pack
+      - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
     **Linux Users**:
@@ -192,7 +192,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
 Boards
 ------

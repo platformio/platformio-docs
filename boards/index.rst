@@ -83,6 +83,7 @@ Atmel AVR
     atmelavr/ATmega328P
     atmelavr/ATmega328PB
     atmelavr/ATmega48
+    atmelavr/ATmega48P
     atmelavr/ATmega48PB
     atmelavr/ATmega64
     atmelavr/ATmega640
@@ -94,7 +95,6 @@ Atmel AVR
     atmelavr/ATmega88
     atmelavr/ATmega88P
     atmelavr/ATmega88PB
-    atmelavr/ATmega48P
     atmelavr/attiny13
     atmelavr/attiny13a
     atmelavr/bluefruitmicro
@@ -351,6 +351,14 @@ Atmel SAM
     atmelsam/sparkfun_samd51_thing_plus
     atmelsam/tuinozero96
 
+CHIPS Alliance
+--------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    chipsalliance/swervolf_nexys
+
 Espressif 32
 ------------
 
@@ -504,6 +512,7 @@ Freescale Kinetis
     freescalekinetis/frdm_kw24d
     freescalekinetis/frdm_kw41z
     freescalekinetis/hexiwear
+    freescalekinetis/segger_ip_switch
 
 GigaDevice GD32V
 ----------------
@@ -691,6 +700,7 @@ Nordic nRF52
         
     nordicnrf52/96b_nitrogen
     nordicnrf52/adafruit_feather_nrf52832
+    nordicnrf52/adafruit_clue_nrf52840
     nordicnrf52/adafruit_feather_nrf52840_sense
     nordicnrf52/adafruit_feather_nrf52840
     nordicnrf52/nano33ble
@@ -769,6 +779,7 @@ NXP LPC
     nxplpc/lpc1549
     nxplpc/lpc54114
     nxplpc/lpc546xx
+    nxplpc/lpcxpresso55s16
     nxplpc/lpc11u24
     nxplpc/lpc1768
     nxplpc/mbuino
@@ -842,6 +853,7 @@ ST STM32
     ststm32/st3dp001_eval
     ststm32/b96b_argonkey
     ststm32/b96b_f446ve
+    ststm32/b96b_aerocore2
     ststm32/b96b_neonkey
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb

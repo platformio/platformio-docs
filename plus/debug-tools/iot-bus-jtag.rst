@@ -114,19 +114,19 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_espidf`
-      - Espressif IoT Development Framework. Official development framework for ESP32.
-
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
+      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
 
     * - :ref:`framework_kendryte-freertos-sdk`
       - Kendryte SDK with FreeRTOS support
 
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support
+
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
 Boards
 ------

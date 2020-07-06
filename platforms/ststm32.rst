@@ -557,6 +557,11 @@ Please click on board name for the further details.
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_b96b_aerocore2`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_neonkey`
       - STM32F411CE
       - 100MHz
@@ -1286,151 +1291,160 @@ Packages
       - Description
 
     * - `framework-arduinostm32mxchip <https://microsoft.github.io/azure-iot-developer-kit/?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (ST STM32 MXChip Core)
+      - Arduino Wiring-based Framework for the Azure MXChip IoT DevKit
 
-    * - `framework-arduinoststm32 <https://github.com/stm32duino/Arduino_Core_STM32?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (STM32 Core)
+    * - `framework-arduinoststm32 <https://github.com/stm32duino/Arduino_Core_STM32.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for ST STM32 microcontrollers
 
-    * - `framework-arduinoststm32-maple <https://github.com/rogerclarkmelbourne/Arduino_STM32?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (ST STM32 Maple Core)
+    * - `framework-arduinoststm32-maple <https://github.com/rogerclarkmelbourne/Arduino_STM32.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for ST STM32 microcontrollers (Maple Core)
 
     * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&utm_medium=docs>`__
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
-    * - `framework-cmsis-stm32f0 <https://github.com/STMicroelectronics/cmsis_device_f0?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32F0 series
+    * - `framework-cmsis-stm32f0 <https://github.com/STMicroelectronics/cmsis_device_f0.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32F0 series
 
-    * - `framework-cmsis-stm32f1 <https://github.com/STMicroelectronics/cmsis_device_f1?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32F1 series
+    * - `framework-cmsis-stm32f1 <https://github.com/STMicroelectronics/cmsis_device_f1.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32F1 series
 
-    * - `framework-cmsis-stm32f2 <https://github.com/STMicroelectronics/cmsis_device_f2?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32F2 series
+    * - `framework-cmsis-stm32f2 <https://github.com/STMicroelectronics/cmsis_device_f2.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32F2 series
 
-    * - `framework-cmsis-stm32f3 <https://github.com/STMicroelectronics/cmsis_device_f3?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32F3 series
+    * - `framework-cmsis-stm32f3 <https://github.com/STMicroelectronics/cmsis_device_f3.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32F3 series
 
-    * - `framework-cmsis-stm32f4 <https://github.com/STMicroelectronics/cmsis_device_f4?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32F4 series
+    * - `framework-cmsis-stm32f4 <https://github.com/STMicroelectronics/cmsis_device_f4.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32F4 series
 
-    * - `framework-cmsis-stm32f7 <https://github.com/STMicroelectronics/cmsis_device_f7?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32F7 series
+    * - `framework-cmsis-stm32f7 <https://github.com/STMicroelectronics/cmsis_device_f7.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32F7 series
 
-    * - `framework-cmsis-stm32g0 <https://github.com/STMicroelectronics/cmsis_device_g0?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32G0 series
+    * - `framework-cmsis-stm32g0 <https://github.com/STMicroelectronics/cmsis_device_g0.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32G0 series
 
-    * - `framework-cmsis-stm32g4 <https://github.com/STMicroelectronics/cmsis_device_g4?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32G4 series
+    * - `framework-cmsis-stm32g4 <https://github.com/STMicroelectronics/cmsis_device_g4.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32G4 series
 
-    * - `framework-cmsis-stm32h7 <https://github.com/STMicroelectronics/cmsis_device_h7?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32H7 series
+    * - `framework-cmsis-stm32h7 <https://github.com/STMicroelectronics/cmsis_device_h7.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32H7 series
 
-    * - `framework-cmsis-stm32l0 <https://github.com/STMicroelectronics/cmsis_device_l0?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32L0 series
+    * - `framework-cmsis-stm32l0 <https://github.com/STMicroelectronics/cmsis_device_l0.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32L0 series
 
-    * - `framework-cmsis-stm32l1 <https://github.com/STMicroelectronics/cmsis_device_l1?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32L1 series
+    * - `framework-cmsis-stm32l1 <https://github.com/STMicroelectronics/cmsis_device_l1.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32L1 series
 
-    * - `framework-cmsis-stm32l4 <https://github.com/STMicroelectronics/cmsis_device_l4?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32L4 series
+    * - `framework-cmsis-stm32l4 <https://github.com/STMicroelectronics/cmsis_device_l4.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32L4 series
 
-    * - `framework-cmsis-stm32l5 <https://github.com/STMicroelectronics/cmsis_device_l5?utm_source=platformio.org&utm_medium=docs>`__
-      - CMSIS component for the ST STM32L5 series
+    * - `framework-cmsis-stm32l5 <https://github.com/STMicroelectronics/cmsis_device_l5.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CMSIS component for the STMicroelectronics STM32L5 series
 
     * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio.org&utm_medium=docs>`__
-      - libOpenCM3 Framework
+      - Open source ARM Cortex-M microcontroller library
 
     * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
-      - mbed Framework
+      - Arm Mbed OS is a platform operating system designed for the internet of things
 
     * - `framework-spl <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890?utm_source=platformio.org&utm_medium=docs>`__
-      - Standard Peripheral Library for STM32 MCUs
+      - Standard Peripheral Library for ST STM32 microcontrollers
 
-    * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897&utm_source=platformio.org&utm_medium=docs>`__
-      - STM32Cube embedded software libraries
+    * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform which simplifies and speeds up developers’ work.
 
-    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio.org&utm_medium=docs>`__
-      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+    * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for CANopenNode - a free and open source CANopen Stack
 
-    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module CivetWeb Embedded C/C++ web server
+    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for CivetWeb Embedded C/C++ web server
 
-    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-cmsis <https://github.com/zephyrproject-rtos/cmsis.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Software Interface Standard for Arm Cortex-based Microcontrollers and Zephyr framework
+
+    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for FATFS filesystem
 
-    * - `framework-zephyr-hal-st <https://github.com/zephyrproject-rtos/hal_st?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-hal-st <https://github.com/zephyrproject-rtos/hal_st.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for the official libraries provided by STMicroelectronics
 
-    * - `framework-zephyr-hal-stm32 <https://github.com/zephyrproject-rtos/hal_stm32?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-hal-stm32 <https://github.com/zephyrproject-rtos/hal_stm32.git?utm_source=platformio.org&utm_medium=docs>`__
       - ST STM32 HAL for Zephyr framework
 
-    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for HAL abstraction layer used by open-amp
 
-    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for littlefs filesystem
 
-    * - `framework-zephyr-loramac-node <https://github.com/zephyrproject-rtos/loramac-node?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-loramac-node <https://github.com/zephyrproject-rtos/loramac-node.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for LoRaWAN endpoint stack implementation
 
-    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
 
-    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls.git?utm_source=platformio.org&utm_medium=docs>`__
       - mbedTLS module for Zephyr
 
-    * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs
 
-    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for mcumgr management library for 32-bit MCUs
 
-    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for MIPI System Software Trace
 
-    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
 
-    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread.git?utm_source=platformio.org&utm_medium=docs>`__
       - OpenThread module for Zephyr
 
-    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Segger RTT
 
-    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Concise Binary Object Representation Library
 
+    * - `framework-zephyr-tinycrypt <https://github.com/zephyrproject-rtos/tinycrypt.git?utm_source=platformio.org&utm_medium=docs>`__
+      - The TinyCrypt Library provides an implementation for constrained devices of a minimal set of standard cryptography primitives for Zephyr framework
+
+    * - `framework-zephyr-trusted-firmware-m <https://github.com/zephyrproject-rtos/trusted-firmware-m.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Trusted Firmware M provides a reference implementation of secure world software for ARMv8-M and Zephyr framework
+
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
 
     * - `tool-dfuutil <http://dfu-util.sourceforge.net/?utm_source=platformio.org&utm_medium=docs>`__
-      - Host side implementation of the DFU 1.0 and DFU 1.1 specifications
+      - Device Firmware Upgrade Utilities
 
-    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
       - Device tree compiler
 
     * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio.org&utm_medium=docs>`__
-      - GNU gperf is a perfect hash function generator.
+      - GNU gperf is a perfect hash function generator
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
-      - SEGGER J-Link Software and Documentation Pack
+      - Software and Documentation Pack for SEGGER J-Link debug probes
 
     * - `tool-ldscripts-ststm32 <https://www.st.com/en/development-tools/stm32cubemx.html?utm_source=platformio.org&utm_medium=docs>`__
-      - Linker scripts pack for ST STM32 platform
+      - Linker scripts pack for STMicroelectronics STM32 platform
 
     * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
-      - Ninja is a small build system with a focus on speed.
+      - Ninja is a small build system with a focus on speed
 
     * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
-      - OpenOCD
+      - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
 
-    * - `tool-stm32duino <https://github.com/rogerclarkmelbourne/Arduino_STM32?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-stm32duino <https://www.stm32duino.com?utm_source=platformio.org&utm_medium=docs>`__
       - STM32Duino Tools
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
     **Linux Users**:
@@ -1455,25 +1469,25 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_cmsis`
-      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
-
-    * - :ref:`framework_libopencm3`
-      - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
+      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
-
-    * - :ref:`framework_spl`
-      - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
+
+    * - :ref:`framework_spl`
+      - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
+
+    * - :ref:`framework_libopencm3`
+      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
 
 Boards
 ------
@@ -1527,6 +1541,12 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_b96b_aerocore2`
+      - External
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_neonkey`
       - External
       - STM32F411CE

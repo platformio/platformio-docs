@@ -156,16 +156,16 @@ Packages
       - Description
 
     * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
-      - mbed Framework
+      - Arm Mbed OS is a platform operating system designed for the internet of things
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
-      - SEGGER J-Link Software and Documentation Pack
+      - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD.git?utm_source=platformio.org&utm_medium=docs>`__
       - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
     **Linux Users**:
@@ -190,7 +190,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
 Boards
 ------

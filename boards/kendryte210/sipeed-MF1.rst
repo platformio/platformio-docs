@@ -148,8 +148,8 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
-
     * - :ref:`framework_kendryte-freertos-sdk`
       - Kendryte SDK with FreeRTOS support
+
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support

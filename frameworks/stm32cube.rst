@@ -17,9 +17,9 @@ STM32Cube
 :Configuration:
   :ref:`projectconf_env_framework` = ``stm32cube``
 
-STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
 
-For more detailed information please visit `vendor site <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897&utm_source=platformio.org&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.st.com/en/ecosystems/stm32cube.html?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -605,6 +605,12 @@ Please click on board name for the further details.
       - STM32F412CG
       - 100MHz
       - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_b96b_aerocore2`
+      - :ref:`platform_ststm32`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_b96b_neonkey`
       - :ref:`platform_ststm32`
@@ -1466,6 +1472,13 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_b96b_aerocore2`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_neonkey`
       - :ref:`platform_ststm32`
       - External

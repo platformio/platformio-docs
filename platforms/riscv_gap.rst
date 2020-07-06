@@ -135,13 +135,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-gap_sdk <https://github.com/GreenWaves-Technologies/gap_sdk?utm_source=platformio.org&utm_medium=docs>`__
-      - The GAP8 SDK allows you to compile and execute applications on the GAP8 IoT Application Processor.
+    * - `framework-gap_sdk <https://github.com/GreenWaves-Technologies/gap_sdk.git?utm_source=platformio.org&utm_medium=docs>`__
+      - SDK for Greenwaves Technologies' GAP8 IoT Application Processor
 
-    * - `tool-pulp_tools <https://github.com/GreenWaves-Technologies/pulp_tools?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-pulp_tools <https://github.com/GreenWaves-Technologies/pulp_tools.git?utm_source=platformio.org&utm_medium=docs>`__
       - Top project for building PULP development tools
 
-    * - `toolchain-riscv-pulp <https://github.com/pulp-platform/pulp-riscv-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-riscv-pulp <https://github.com/pulp-platform/pulp-riscv-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
       - RISC-V GCC toolchain for PULP platform
 
 .. warning::
@@ -167,10 +167,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_pulp-os`
-      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.
+      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory
 
 Boards
 ------

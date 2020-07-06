@@ -17,7 +17,7 @@ Arduino
 :Configuration:
   :ref:`projectconf_env_framework` = ``arduino``
 
-Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
 For more detailed information please visit `vendor site <http://arduino.cc/en/Reference/HomePage?utm_source=platformio.org&utm_medium=docs>`_.
 
@@ -173,6 +173,12 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_ATmega48P`
+      - :ref:`platform_atmelavr`
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
     * - :ref:`board_atmelavr_ATmega644P`
       - :ref:`platform_atmelavr`
       - ATMEGA644P
@@ -197,12 +203,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 7.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATmega48P`
-      - :ref:`platform_atmelavr`
-      - ATMEGA48P
-      - 16MHz
-      - 4KB
-      - 512B
     * - :ref:`board_atmelavr_attiny13`
       - :ref:`platform_atmelavr`
       - ATTINY13
@@ -1608,6 +1608,12 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_clue_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -3377,6 +3383,13 @@ Adafruit
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_clue_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelavr_circuitplay_classic`
       - :ref:`platform_atmelavr`
       - On-board
@@ -6968,6 +6981,13 @@ Microchip
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_ATmega48P`
+      - :ref:`platform_atmelavr`
+      - On-board
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
     * - :ref:`board_atmelavr_ATmega48PB`
       - :ref:`platform_atmelavr`
       - No
@@ -7045,13 +7065,6 @@ Microchip
       - 16MHz
       - 7.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATmega48P`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATMEGA48P
-      - 16MHz
-      - 4KB
-      - 512B
     * - :ref:`board_atmelavr_attiny13`
       - :ref:`platform_atmelavr`
       - On-board

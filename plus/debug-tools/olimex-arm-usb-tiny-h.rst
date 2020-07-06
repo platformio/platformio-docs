@@ -97,6 +97,9 @@ Platforms
     * - Name
       - Description
 
+    * - :ref:`platform_chipsalliance`
+      - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
+
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
@@ -115,28 +118,31 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_espidf`
-      - Espressif IoT Development Framework. Official development framework for ESP32.
-
-    * - :ref:`framework_freedom-e-sdk`
-      - Open Source Software for Developing on the SiFive Freedom E Platform
+      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
 
     * - :ref:`framework_freertos`
       - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
+    * - :ref:`framework_freedom-e-sdk`
+      - Open Source Software for Developing on the SiFive Freedom E Platform
 
     * - :ref:`framework_kendryte-freertos-sdk`
       - Kendryte SDK with FreeRTOS support
 
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support
+
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
+
+    * - :ref:`framework_wd-riscv-sdk`
+      - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
 Boards
 ------
@@ -218,6 +224,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_chipsalliance_swervolf_nexys`
+      - :ref:`platform_chipsalliance`
+      - On-board
+      - 
+      - 320MHz
+      - 16MB
+      - 1.16MB
     * - :ref:`board_espressif32_pocket_32`
       - :ref:`platform_espressif32`
       - External

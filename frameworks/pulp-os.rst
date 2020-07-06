@@ -17,7 +17,7 @@ PULP OS
 :Configuration:
   :ref:`projectconf_env_framework` = ``pulp-os``
 
-PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.
+PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory
 
 For more detailed information please visit `vendor site <https://www.pulp-platform.org?utm_source=platformio.org&utm_medium=docs>`_.
 

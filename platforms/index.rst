@@ -53,6 +53,7 @@ Embedded
     atmelavr
     atmelmegaavr
     atmelsam
+    chipsalliance
     espressif32
     espressif8266
     freescalekinetis

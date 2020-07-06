@@ -401,52 +401,54 @@ Packages
       - Description
 
     * - `framework-arduino-mbcwb <https://briki.org?utm_source=platformio.org&utm_medium=docs>`__
-      - Fork of Arduino framework for briki MBC-WB boards
+      - Fork of Arduino Framework for briki MBC-WB boards
 
-    * - `framework-arduinoespressif32 <https://github.com/espressif/arduino-esp32?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (ESP32 Core)
+    * - `framework-arduinoespressif32 <https://github.com/espressif/arduino-esp32.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Espressif ESP32 microcontrollers
 
-    * - `framework-espidf <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`__
-      - Espressif IoT Development Framework
+    * - `framework-espidf <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/?utm_source=platformio.org&utm_medium=docs>`__
+      - Espressif IoT Development Framework. Official development framework for ESP32 chip
 
-    * - `framework-pumbaa <https://github.com/eerimoq/pumbaa?utm_source=platformio.org&utm_medium=docs>`__
-      - Pumbaa Framework
+    * - framework-pumbaa
+      -
+                
 
-    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio.org&utm_medium=docs>`__
-      - Simba Framework
+    * - framework-simba
+      -
+                
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
 
-    * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio.org&utm_medium=docs>`__
-      - ESP8266 and ESP32 serial bootloader utility
+    * - `tool-esptoolpy <https://github.com/espressif/esptool.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Espressif ESP8266 and ESP32 serial bootloader utility
 
-    * - `tool-idf <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`__
-      - Python idf.py binary
+    * - `tool-idf <https://github.com/espressif/esp-idf/tree/master/tools.git?utm_source=platformio.org&utm_medium=docs>`__
+      - idf is a top-level config/build command line tool for ESP-IDF
 
     * - `tool-mbctool <https://briki.org?utm_source=platformio.org&utm_medium=docs>`__
       - MBC-WB Uploader Application
 
-    * - `tool-mconf <https://github.com/espressif/kconfig-frontends?utm_source=platformio.org&utm_medium=docs>`__
-      - Kconfig frontends and parser
+    * - `tool-mconf <https://github.com/espressif/kconfig-frontends.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Fork of kconfig-frontends project with some modifications for use with ESP-IDF
 
-    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs.git?utm_source=platformio.org&utm_medium=docs>`__
       - Tool to build and unpack SPIFFS images
 
     * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
-      - Ninja is a small build system with a focus on speed.
+      - Ninja is a small build system with a focus on speed
 
-    * - `tool-openocd-esp32 <https://github.com/espressif/openocd-esp32?utm_source=platformio.org&utm_medium=docs>`__
-      - OpenOCD for Espressif 32
+    * - `tool-openocd-esp32 <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Open On-Chip Debugger for Espressif ESP32
 
-    * - `toolchain-esp32ulp <https://github.com/espressif/binutils-esp32ulp?utm_source=platformio.org&utm_medium=docs>`__
-      - Binutils fork with support for the ESP32 ULP co-processor
+    * - `toolchain-esp32ulp <https://github.com/espressif/binutils-esp32ulp.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Binutils fork with support for the Espressif ESP32 ULP co-processor
 
-    * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`__
-      - xtensa32-gcc
+    * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf.git?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Xtensa32 processor
 
-    * - `toolchain-xtensa32s2 <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`__
-      - Toolchain for Xtensa (ESP32-S2) based on GCC
+    * - `toolchain-xtensa32s2 <https://github.com/espressif/esp-idf.git?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Xtensa32-S2 processor
 
 .. warning::
     **Linux Users**:
@@ -471,16 +473,16 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_espidf`
-      - Espressif IoT Development Framework. Official development framework for ESP32.
+      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
 
     * - :ref:`framework_pumbaa`
-      - Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
+      - Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory
 
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
 Boards
 ------

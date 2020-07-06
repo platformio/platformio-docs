@@ -79,17 +79,17 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoasrmicro650x <https://github.com/HelTecAutomation/ASR650x-Arduino?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Heltec ASR650x core)
+    * - `framework-arduinoasrmicro650x <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for ASR Microelectronics ASR650x (Heltec core)
 
-    * - `tool-cubecellelftool <https://github.com/HelTecAutomation/ASR650x-Arduino?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cubecellelftool <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
       - CubeCell ELF tool
 
-    * - `tool-cubecellflash <https://github.com/HelTecAutomation/ASR650x-Arduino?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cubecellflash <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
       - CubeCell Flash tool
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
     **Linux Users**:
@@ -114,7 +114,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
 Boards
 ------

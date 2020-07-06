@@ -11,15 +11,15 @@
 
 .. _framework_espidf:
 
-ESP-IDF
-=======
+Espressif IoT Development Framework
+===================================
 
 :Configuration:
   :ref:`projectconf_env_framework` = ``espidf``
 
-Espressif IoT Development Framework. Official development framework for ESP32.
+ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
 
-For more detailed information please visit `vendor site <https://github.com/espressif/esp-idf?utm_source=platformio.org&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -365,7 +365,7 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `ESP-IDF for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Espressif IoT Development Framework for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------

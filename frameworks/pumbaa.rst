@@ -17,7 +17,7 @@ Pumbaa
 :Configuration:
   :ref:`projectconf_env_framework` = ``pumbaa``
 
-Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
+Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory
 
 For more detailed information please visit `vendor site <http://pumbaa.readthedocs.org/?utm_source=platformio.org&utm_medium=docs>`_.
 

@@ -146,23 +146,23 @@ Packages
     * - Name
       - Description
 
-    * - `framework-kendryte-freertos-sdk <https://github.com/kendryte/kendryte-freertos-sdk?utm_source=platformio.org&utm_medium=docs>`__
-      - Kendryte SDK with FreeRTOS support
+    * - `framework-kendryte-freertos-sdk <https://github.com/kendryte/kendryte-freertos-sdk.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Kendryte K210 SDK with FreeRTOS
 
-    * - `framework-kendryte-standalone-sdk <https://github.com/kendryte/kendryte-standalone-sdk?utm_source=platformio.org&utm_medium=docs>`__
-      - Kendryte standalone SDK without OS support
+    * - `framework-kendryte-standalone-sdk <https://github.com/kendryte/kendryte-standalone-sdk.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Kendryte K210 standalone SDK without OS support
 
-    * - `framework-maixduino <https://github.com/sipeed/Maixduino?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (K210 Core)
+    * - `framework-maixduino <https://github.com/sipeed/Maixduino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Сore for Maix Board (K210)
 
-    * - `tool-kflash-kendryte210 <https://github.com/kendryte/kflash.py?utm_source=platformio.org&utm_medium=docs>`__
-      - kflash, A Python-based Kendryte K210 UART ISP Utility
+    * - `tool-kflash-kendryte210 <https://github.com/kendryte/kflash.py.git?utm_source=platformio.org&utm_medium=docs>`__
+      - A Python-based Kendryte K210 UART ISP Utility
 
-    * - `tool-openocd-kendryte <https://github.com/kendryte/openocd-kendryte?utm_source=platformio.org&utm_medium=docs>`__
-      - OpenOCD for RISC-V Kendryte
+    * - `tool-openocd-kendryte <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Open On-Chip Debugger branch with RISC-V Kendryte support
 
-    * - `toolchain-kendryte210 <https://github.com/kendryte/kendryte-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
-      - RISC-V GCC toolchain for Kendryte 210
+    * - `toolchain-kendryte210 <https://github.com/kendryte/kendryte-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
+      - RISC-V GCC Toolchain for Kendryte 210
 
 .. warning::
     **Linux Users**:
@@ -187,13 +187,13 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_kendryte-freertos-sdk`
       - Kendryte SDK with FreeRTOS support
+
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support
 
 Boards
 ------

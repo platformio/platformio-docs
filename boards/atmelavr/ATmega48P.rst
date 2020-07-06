@@ -11,8 +11,8 @@
 
 .. _board_atmelavr_ATmega48P:
 
-ATmega8P/PA
-===========
+ATmega48P/PA
+============
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``ATmega48P`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   platform = atmelavr
   board = ATmega48P
 
-You can override default ATmega8P/PA settings per build environment using
+You can override default ATmega48P/PA settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `ATmega48P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega48P.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ATmega8P/PA has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ATmega48P/PA has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -97,4 +97,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

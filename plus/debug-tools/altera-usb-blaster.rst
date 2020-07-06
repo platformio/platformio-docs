@@ -11,8 +11,8 @@
 
 .. _debugging_tool_altera-usb-blaster:
 
-Altera / Intel USB-Blaster Download Cable
-=========================================
+Altera / Intel USB-Blaster
+==========================
 
 .. image:: ../../_static/images/debug_probes/altera-usb-blaster.jpg
   :target: https://www.intel.com/content/www/us/en/programmable/products/boards_and_kits/download-cables.html?utm_source=platformio&utm_medium=docs
@@ -115,10 +115,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_gd32vf103-sdk`
-      - GigaDevice GD32VF103 Firmware Library (SDK)
+      - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
 
     * - :ref:`framework_nuclei-sdk`
       - Open Source Software Development Kit for the Nuclei N/NX processors

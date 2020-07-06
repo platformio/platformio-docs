@@ -36,5 +36,6 @@ Frameworks
     simba
     spl
     stm32cube
+    wd-riscv-sdk
     wiringpi
     zephyr

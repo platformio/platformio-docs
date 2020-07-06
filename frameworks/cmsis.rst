@@ -17,9 +17,9 @@ CMSIS
 :Configuration:
   :ref:`projectconf_env_framework` = ``cmsis``
 
-The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
+The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
 
-For more detailed information please visit `vendor site <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://developer.arm.com/tools-and-software/embedded/cmsis?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -592,6 +592,12 @@ Please click on board name for the further details.
       - STM32F412CG
       - 100MHz
       - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_b96b_aerocore2`
+      - :ref:`platform_ststm32`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
       - 256KB
     * - :ref:`board_ststm32_b96b_neonkey`
       - :ref:`platform_ststm32`
@@ -1441,6 +1447,13 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_b96b_aerocore2`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_neonkey`
       - :ref:`platform_ststm32`
       - External
