@@ -84,7 +84,7 @@ Boards
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB
