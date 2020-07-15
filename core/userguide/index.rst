@@ -70,8 +70,9 @@ Commands
     platformio device <device/index>
     cmd_home
     platformio lib <lib/index>
-    platformio project <project/index>
+    package/index
     platformio platform <platforms/index>
+    platformio project <project/index>
     platformio remote <remote/index>
     cmd_run
     cmd_settings

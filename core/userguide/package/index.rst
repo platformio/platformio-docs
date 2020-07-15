@@ -9,28 +9,22 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _pioaccount:
+.. _cmd_package:
 
-PIO Account
-===========
+platformio package
+==================
 
-**PIO Account** is required for:
+To print all available commands and options use:
 
-* `Community Forum <https://community.platformio.org/>`__
-* :ref:`pioremote`
-* Managing packages in the registry using the :ref:`cmd_package` command.
+.. code-block:: bash
 
-PlatformIO IDE
---------------
+    platformio package --help
+    platformio package COMMAND --help
 
-:ref:`pioide` has built-in UI in PIO Home to manage PIO Account. You can
-create a new account, reset your password, update profile, or fetch an authentication
-token.
-
-CLI Guide
----------
 
 .. toctree::
     :maxdepth: 2
 
-    ../core/userguide/account/index
+    cmd_pack
+    cmd_publish
+    cmd_unpublish

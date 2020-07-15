@@ -78,48 +78,13 @@ Here is an example ``platform.json`` for the fictitious platform "myplatform":
       "name": "myplatform",
       "title": "My Platform",
       "description": "My custom development platform",
-      "url": "http://example.com",
-      "homepage": "https://platformio.org/platforms/myplatform",
+      "url": "https://example.com",
       "license": "Apache-2.0",
-      "engines": {
-        "platformio": "~3.0.0"
-      },
       "repository": {
         "type": "git",
         "url": "https://github.com/platformio/platform-myplatform.git"
       },
       "version": "0.0.0",
-      "packageRepositories": [
-        "https://dl.bintray.com/platformio/dl-packages/manifest.json",
-        "http://dl.platformio.org/packages/manifest.json",
-        {
-          "my_custom_package": [
-            {
-              "url": "http://dl.example.com/my_custom_package-darwin_x86_64-1.2.3.tar.gz",
-              "sha1": "bb7ddac56a314b5cb1926cc1790ae4de3a03e65c",
-              "version": "1.2.3",
-              "system": [
-                  "darwin_x86_64",
-                  "darwin_i386"
-              ]
-            },
-            {
-              "url": "http://dl.example.com/my_custom_package-linux_aarch64-1.2.3.tar.gz",
-              "sha1": "127ddac56a314b5cb1926cc1790ae4de3a03e65c",
-              "version": "1.2.3",
-              "system": "linux_aarch64"
-            }
-          ],
-          "framework-%FRAMEWORK_NAME_1%": [
-            {
-              "url": "http://dl.example.com/packages/framework-%FRAMEWORK_NAME_1%-1.10607.0.tar.gz",
-              "sha1": "adce2cd30a830d71cb6572575bf08461b7b73c07",
-              "version": "1.10607.0",
-              "system": "*"
-            }
-          ]
-        }
-      ],
       "frameworks": {
         "%FRAMEWORK_NAME_1%": {
           "package": "framework-%FRAMEWORK_NAME_1%",

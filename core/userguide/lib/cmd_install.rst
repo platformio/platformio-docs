@@ -91,9 +91,8 @@ The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 * ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
   ``0.2.0`` and less than ``0.3.0``
 
-PlatformIO supports installing from local directory or archive. Need
-to use ``file://`` prefix before local path. Also, directory or
-archive should contain ``.library.json`` manifest (see :ref:`library_config`).
+PlatformIO supports installing from local directory or archive.
+Need to use ``file://`` prefix before local path.
 
 * ``file:///local/path/to/the/platform/dir``
 * ``file:///local/path/to/the/platform.zip``
