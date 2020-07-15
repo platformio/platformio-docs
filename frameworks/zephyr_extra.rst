@@ -24,9 +24,9 @@ Project Structure
 ~~~~~~~~~~~~~~~~~
 
 .. warning::
-    Zephyr framework currently requires Python 3.4 or later. 
+    Zephyr framework currently requires Python 3.4 or later.
 
-Zephyr framework requires an unusual project structure because most of the framework 
+Zephyr framework requires an unusual project structure because most of the framework
 configuration is performed by the native for Zephyr build system called ``CMake``.
 
 .. note::
@@ -85,10 +85,32 @@ force CMake generate build configuration for this language.
 options. These application settings are merged with board-specific settings to produce a
 kernel configuration.
 
+Devicetree overlays
+~~~~~~~~~~~~~~~~~~~
+
+Zephyr applications can use overlay files to enable a peripheral that is disabled by
+default, select a sensor on the board for an application specific purpose, etc. This
+makes it possible to reconfigure the kernel and device drivers without modifying source
+code. There are several ways to set ``.overlay`` files:
+
+* Using ``DTC_OVERLAY_FILE`` variable in the ``CMakeLists.txt`` file,
+  before including Zephyr's ``boilerplate.cmake`` file. (Recommended)
+
+* Using a ``boards/<BOARD>.overlay`` file in the ``zephyr`` folder, for the current
+  board
+
+* Using a ``<BOARD>.overlay`` file in the  ``zephyr`` folder.
+
+.. warning::
+    PlatformIO board names may differ from Zephyr targets, which means that to help
+    the build system automatically pick up ``.overlay`` file, the ``<BOARD>`` name in
+    ``<BOARD>.overlay`` file must have the same name as specified in
+    `the official Zephyr board list <https://docs.zephyrproject.org/latest/boards/index.html>`_.
+
 Embedding files at compile time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In case your ``CMakeLists.txt`` relies on using ``generate_inc_*`` functions that are 
+In case your ``CMakeLists.txt`` relies on using ``generate_inc_*`` functions that are
 used for generating and compressing individual files (for example certificates for secure
 connections) you need to configure your PlatformIO project accordingly using the
 following structure:
@@ -124,7 +146,7 @@ at the top of your project's  ``CMakeLists.txt`` file, for example:
 
 .. code-block:: bash
 
-    # Additional modules 
+    # Additional modules
     set(ZEPHYR_EXTRA_MODULES "path/to-zephyr-custom-module"  [...])
 
     # Boilerplate code, which pulls in the Zephyr build system.
@@ -143,7 +165,7 @@ to the project configuration files (e.g. in ``zephyr`` folder) in form of a git 
 .. warning::
     Make sure the ``ZEPHYR_EXTRA_MODULES`` variable is set before including the boilerplate
     file, as shown above.
-    
+
 
 Limitations
 ~~~~~~~~~~~
