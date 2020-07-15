@@ -26,4 +26,5 @@ To print all available commands and options use:
     :maxdepth: 2
 
     cmd_config
+    cmd_idedata
     cmd_init

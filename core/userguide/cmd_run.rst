@@ -71,7 +71,6 @@ There are also built-in system targets:
 * System
 
     + ``envdump`` dump current build environment
-    + ``idedata`` export build environment for IDE (defines, build flags, CPPPATH, etc.)
 
 .. option::
     --upload-port
