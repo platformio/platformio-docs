@@ -22,6 +22,7 @@ Here are recent articles/reviews about PlatformIO:
 
 2020
 ^^^^
+* Jul 15, 2020 - **Andreas Schmidt** - `IoT für Webentwickler: Unit Testing mit PlatformIO <https://entwickler.de/online/iot/iot-unit-testing-platformio-579863298.html>`_
 * Jun 22, 2020 - **Francesco Azzol** - `Run Tensorflow Lite on ESP32 from scratch: Easy guide (PlatformIO) <https://www.survivingwithandroid.com/run-tensorflow-lite-esp32-platformio/>`_
 * May 15, 2020 - **Francesco Azzol** - `ESP32 Rest API: How to implement an ESP32 API server using PlatformIO <https://www.survivingwithandroid.com/esp32-rest-api-esp32-api-server/>`_
 * May 10, 2020 - **Michael Schnyder** - `Migrating from Arduino IDE to Visual Studio Code to PlatformIO <https://blog.emtwo.ch/2020/05/migrating-from-ardiuno-ide-to-visual.html>`_
