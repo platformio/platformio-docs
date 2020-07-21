@@ -42,6 +42,11 @@ More options:
 
 * :ref:`projectconf_section_env_debug`
 
+Examples
+--------
+
+* `Pre-configured projects for Zephyr RTOS, FreeRTOS, and Arduino <https://github.com/carlosedp/PlatformIO-Renode-Demos/>`__ by Carlos Eduardo
+
 Installation
 ------------
 
@@ -74,7 +79,7 @@ Platforms
       - Description
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
 Frameworks
 ----------
