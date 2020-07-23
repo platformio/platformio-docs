@@ -31,16 +31,15 @@ Examples
 
 Examples are listed from `Freescale Kinetis development platform repository <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-net-telnet <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/zephyr-net-telnet?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-usb-msd <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-usb-msd?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-sensor-sx9500 <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/zephyr-sensor-sx9500?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos-tls-client <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-tls-client?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos-ethernet <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-psa <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-psa?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-legacy-examples <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-kvstore <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-kvstore?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------

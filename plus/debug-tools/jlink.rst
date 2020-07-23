@@ -1743,6 +1743,13 @@ Boards
       - 150MHz
       - 256KB
       - 96KB
+    * - :ref:`board_nxplpc_lpcxpresso55s69`
+      - :ref:`platform_nxplpc`
+      - On-board
+      - LPC55S69
+      - 150MHz
+      - 640KB
+      - 320KB
     * - :ref:`board_nxpimxrt_mimxrt1010_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
@@ -2114,6 +2121,13 @@ Boards
       - 40MHz
       - 256KB
       - 32KB
+    * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
+      - :ref:`platform_siliconlabsefm32`
+      - On-board
+      - EFM32GG11B820F2048GL192
+      - 48MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_atmelsam_sodaq_autonomo`
       - :ref:`platform_atmelsam`
       - External

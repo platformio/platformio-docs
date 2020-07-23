@@ -311,6 +311,12 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 512KB
       - 200KB
+    * - :ref:`board_nxplpc_lpcxpresso55s69`
+      - :ref:`platform_nxplpc`
+      - LPC55S69
+      - 150MHz
+      - 640KB
+      - 320KB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - :ref:`platform_nxpimxrt`
       - MIMXRT1052DVL6B
@@ -401,6 +407,12 @@ You do not need to use/buy external debug probe.
       - 40MHz
       - 256KB
       - 32KB
+    * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
+      - :ref:`platform_siliconlabsefm32`
+      - EFM32GG11B820F2048GL192
+      - 48MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - STM32F334C8T6
@@ -737,6 +749,12 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_h747xi`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_nordicnrf51_seeedArchBLE`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -1002,6 +1020,12 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 36KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -1865,6 +1889,13 @@ NXP
       - 180MHz
       - 512KB
       - 200KB
+    * - :ref:`board_nxplpc_lpcxpresso55s69`
+      - :ref:`platform_nxplpc`
+      - On-board
+      - LPC55S69
+      - 150MHz
+      - 640KB
+      - 320KB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
@@ -2061,6 +2092,13 @@ ST
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2446,6 +2484,13 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_disco_h747xi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -2628,6 +2673,13 @@ Silicon Labs
       - 40MHz
       - 256KB
       - 32KB
+    * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
+      - :ref:`platform_siliconlabsefm32`
+      - On-board
+      - EFM32GG11B820F2048GL192
+      - 48MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_siliconlabsefm32_tb_sense_12`
       - :ref:`platform_siliconlabsefm32`
       - On-board

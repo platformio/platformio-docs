@@ -31,11 +31,10 @@ Examples
 
 Examples are listed from `Maxim 32 development platform repository <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-mutex <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos-mutex?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-sysinfo <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos-sysinfo?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-legacy-examples <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------

@@ -31,9 +31,10 @@ Examples
 
 Examples are listed from `NXP i.MX RT development platform repository <https://github.com/platformio/platform-nxpimxrt/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-nxpimxrt/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-nxpimxrt/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos-ethernet <https://github.com/platformio/platform-nxpimxrt/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-nxpimxrt/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-cellular <https://github.com/platformio/platform-nxpimxrt/tree/master/examples/mbed-rtos-cellular?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-nxpimxrt/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-synchronization <https://github.com/platformio/platform-nxpimxrt/tree/master/examples/zephyr-synchronization?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging

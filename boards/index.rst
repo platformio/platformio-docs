@@ -780,6 +780,7 @@ NXP LPC
     nxplpc/lpc54114
     nxplpc/lpc546xx
     nxplpc/lpcxpresso55s16
+    nxplpc/lpcxpresso55s69
     nxplpc/lpc11u24
     nxplpc/lpc1768
     nxplpc/mbuino
@@ -836,6 +837,7 @@ Silicon Labs EFM32
     siliconlabsefm32/efm32zg_stk3200
     siliconlabsefm32/efm32hg_stk3400
     siliconlabsefm32/efm32pg_stk3401
+    siliconlabsefm32/efm32gg11_stk3701
     siliconlabsefm32/tb_sense_12
 
 ST STM32

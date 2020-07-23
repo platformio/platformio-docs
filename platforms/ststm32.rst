@@ -32,15 +32,10 @@ Examples
 
 Examples are listed from `ST STM32 development platform repository <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-filesystem?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-wifi <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-wifi?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-custom-target <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-custom-target?utm_source=platformio.org&utm_medium=docs>`_
 * `cmsis-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/cmsis-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `spl-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/spl-blink?utm_source=platformio.org&utm_medium=docs>`_
@@ -48,19 +43,23 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `arduino-mxchip-sensors <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-sensors?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-cpp-synchronization <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-cpp-synchronization?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-net-https-client <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-net-https-client?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-filesystem?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-usb-keyboard <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-usb-keyboard?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-hal-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-drivers-can <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-drivers-can?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-mxchip-azureiot <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-azureiot?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-mxchip-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-filesystem?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos-ethernet <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-external-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-external-libs?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos-semaphore <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-semaphore?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-mxchip-wifiscan <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-events <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-events?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-legacy-examples <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-1bitsy <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-1bitsy?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-subsys-usb-hid-mouse <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-subsys-usb-hid-mouse?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-serial <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-serial?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-custom-target <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-custom-target?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------

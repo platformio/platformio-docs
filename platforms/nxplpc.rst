@@ -31,15 +31,12 @@ Examples
 
 Examples are listed from `NXP LPC development platform repository <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-nxplpc/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-custom-target <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-custom-target?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos-ethernet <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-ethernet?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-blockdevice <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-blockdevice?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-thread-statistics <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-thread-statistics?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-custom-board <https://github.com/platformio/platform-nxplpc/tree/master/examples/zephyr-custom-board?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-legacy-examples <https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-synchronization <https://github.com/platformio/platform-nxplpc/tree/master/examples/zephyr-synchronization?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
@@ -134,6 +131,11 @@ You do not need to use/buy external debug probe.
       - 150MHz
       - 256KB
       - 96KB
+    * - :ref:`board_nxplpc_lpcxpresso55s69`
+      - LPC55S69
+      - 150MHz
+      - 640KB
+      - 320KB
     * - :ref:`board_nxplpc_lpc11u24`
       - LPC11U24
       - 48MHz
@@ -622,6 +624,12 @@ NXP
       - 150MHz
       - 256KB
       - 96KB
+    * - :ref:`board_nxplpc_lpcxpresso55s69`
+      - On-board
+      - LPC55S69
+      - 150MHz
+      - 640KB
+      - 320KB
     * - :ref:`board_nxplpc_lpc11u24`
       - On-board
       - LPC11U24

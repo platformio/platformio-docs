@@ -31,13 +31,13 @@ Examples
 
 Examples are listed from `Silicon Labs EFM32 development platform repository <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-subsys-console-getline <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/zephyr-subsys-console-getline?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-usb-cdc <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-usb-cdc?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-semaphore <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-semaphore?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-custom-module <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/zephyr-custom-module?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-legacy-examples <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-sensor-vl53l0x <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/zephyr-sensor-vl53l0x?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
@@ -107,6 +107,11 @@ You do not need to use/buy external debug probe.
       - 40MHz
       - 256KB
       - 32KB
+    * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
+      - EFM32GG11B820F2048GL192
+      - 48MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_siliconlabsefm32_tb_sense_12`
       - EFR32MG12P432F1024
       - 40MHz
@@ -321,6 +326,12 @@ Silicon Labs
       - 40MHz
       - 256KB
       - 32KB
+    * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
+      - On-board
+      - EFM32GG11B820F2048GL192
+      - 48MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_siliconlabsefm32_tb_sense_12`
       - On-board
       - EFR32MG12P432F1024
