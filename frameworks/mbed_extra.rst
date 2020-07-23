@@ -14,9 +14,19 @@ Configuration
 
 .. contents::
     :local:
+    :depth: 2
 
 Configuration system
 ~~~~~~~~~~~~~~~~~~~~
+
+.. warning::
+
+    In Mbed OS 6 the list of supported boards was heavily reduced, only officially
+    supported and well maintained targets left. More information in
+    `the official explanation <https://os.mbed.com/blog/entry/Increase-the-quality-of-platform-support/>`_.
+    In order to keep legacy projects built on top of Mbed OS 5 compilable, each
+    development platform contains a list of deprecated boards that is used to dynamically
+    select the proper version of Mbed OS (OS5 or OS6).
 
 PlatformIO allows you to customize mbed OS compile time configuration
 parameters using ``mbed_app.json`` manifest. It should be placed into the root
@@ -32,18 +42,44 @@ Some examples of configuration parameters:
 
 See more details in the official `ARM Mbed OS Configuration System <https://os.mbed.com/docs/mbed-os/v5.11/reference/configuration.html>`_.
 
-A few PlatformIO-ready projects based on ARM mbed OS which use ``mbed_app.json``;
+A few PlatformIO-ready projects based on ARM mbed OS which use ``mbed_app.json``:
 
-* `Freescale Kinetis: mbed-rtos-tls-client <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-rtos-tls-client>`_
+* `Freescale Kinetis: mbed-rtos-kvstore <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-rtos-kvstore>`_
 * `ST STM32: mbed-rtos-mesh-minimal <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-rtos-mesh-minimal>`_
 
-Mbed lib and Mbed OS 5
-~~~~~~~~~~~~~~~~~~~~~~
+.. warning::
 
-PlatformIO allows compiling projects with or without Mbed OS. By default, project
-is built without the OS feature. Most of the framework functionality requires the OS to be
-enabled. To add the OS feature you can use a special macro definition that needs be added to
-:ref:`projectconf_build_flags` of :ref:`projectconf`:
+    On Windows the maximum length for a path (file name and directory route, also
+    known as ``MAX_PATH``) — has been defined by 260 characters which can lead to
+    compilation error for some targets. It's possible to shorten these paths is to
+    install packages in root of any logical disk by specifying :ref:`projectconf_pio_core_dir`.
+
+
+Mbed OS 6
+^^^^^^^^^
+
+Using Bare Metal profile
+""""""""""""""""""""""""
+
+The bare metal profile implements a subset of Mbed OS's RTOS APIs that are useful in
+non-threaded applications, such as semaphores (calling the release API from interrupts)
+and tickers (to set up a recurring interrupt). It does not include an RTX, and is
+therefore suitable for applications that do not require complex thread management.
+Instead of the RTOS's scheduler, all activities are polled or interrupt-driven.
+
+Useful links:
+
+* `Detailed description of bare metal profile <https://os.mbed.com/docs/mbed-os/v6.2/bare-metal/index.html>`_
+* `Porting a target from Mbed OS 2 to Mbed OS 6 bare metal <https://os.mbed.com/docs/mbed-os/v6.2/bare-metal/porting-a-target-from-mbed-os-2-to-mbed-os-6-bare-metal.html>`_
+
+
+Mbed OS 5 and Mbed 2
+^^^^^^^^^^^^^^^^^^^^
+
+PlatformIO allows compiling projects with or without Mbed OS 5. By default, project
+is built without the OS feature. Most of the framework functionality requires the OS to
+be enabled. To add the OS feature you can use a special macro definition that needs be
+added to :ref:`projectconf_build_flags` of :ref:`projectconf`:
 
 .. list-table::
     :header-rows:  1
@@ -68,11 +104,11 @@ An example of :ref:`projectconf` with enabled ``rtos``
 Build profiles
 ~~~~~~~~~~~~~~
 
-By default, PlatformIO builds your project using ``develop profile`` which provides optimized
-firmware size with full error information and allows MCU to go to sleep mode. In the case when
-default build profile is not suitable for your project there two other profiles ``release`` and
-``debug`` that can be enabled using special macro definitions. You can change build profile
-:ref:`projectconf_build_flags` of :ref:`projectconf`:
+By default, PlatformIO builds your project using ``develop profile`` which provides
+optimized firmware size with full error information and allows MCU to go to sleep mode.
+In the case when default build profile is not suitable for your project there two other
+profiles ``release`` and ``debug`` that can be enabled using special macro definitions.
+You can change build profile :ref:`projectconf_build_flags` of :ref:`projectconf`:
 
 .. list-table::
     :header-rows:  1
@@ -92,9 +128,10 @@ official page `ARM Mbed OS Build Profiles <https://os.mbed.com/docs/mbed-os/v5.1
 Ignoring particular components
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In case you don't need all parts of the framework or you want to reduce the compilation time, you can explicitly
-exclude folders with redundant sources. For example, to remove ``cellular``, ``mbedtls`` and ``nanostack`` features
-from the build process, navigate to :ref:`projectconf_pio_packages_dir` and create a new file ``framework-mbed/features/.mbedignore``
+In case you don't need all parts of the framework or you want to reduce the compilation
+time, you can explicitly exclude folders with redundant sources. For example, to remove
+``cellular``, ``mbedtls`` and ``nanostack`` features from the build process, navigate
+to :ref:`projectconf_pio_packages_dir` and create a new file ``framework-mbed/features/.mbedignore``
 with the following contents:
 
 .. code-block:: ini
@@ -103,7 +140,8 @@ with the following contents:
     mbedtls/*
     nanostack/*
 
-If you want to exclude the entire folder, simply create ``.mbedignore`` file and add only one symbol ``*`` to this file.
+If you want to exclude the entire folder, simply create ``.mbedignore`` file and add
+only one symbol ``*`` to this file.
 
 Custom Targets
 ~~~~~~~~~~~~~~
@@ -117,27 +155,38 @@ describe your board, for example here is the configuration for ``NUCLEO-F401RE``
 
     {
       "NUCLEO_F401RE": {
-            "inherits": ["FAMILY_STM32"],
-            "supported_form_factors": ["ARDUINO", "MORPHO"],
-            "core": "Cortex-M4F",
-            "extra_labels_add": ["STM32F4", "STM32F401xE", "STM32F401RE"],
-            "config": {
-                "clock_source": {
-                    "help": "Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI",
-                    "value": "USE_PLL_HSE_EXTC|USE_PLL_HSI",
-                    "macro_name": "CLOCK_SOURCE"
-                }
-            },
-            "detect_code": ["0720"],
-            "macros_add": ["USB_STM_HAL", "USBHOST_OTHER"],
-            "device_has_add": [
-                "SERIAL_ASYNCH",
-                "FLASH",
-                "MPU"
-            ],
-            "release_versions": ["2", "5"],
-            "device_name": "STM32F401RE"
-        }
+        "inherits": [
+            "MCU_STM32"
+        ],
+        "supported_form_factors": [
+            "ARDUINO",
+            "MORPHO"
+        ],
+        "core": "Cortex-M4F",
+        "extra_labels_add": [
+            "STM32F4",
+            "STM32F401xE"
+        ],
+        "macros_add": [
+            "STM32F401xE"
+        ],
+        "config": {
+            "clock_source": {
+                "help": "Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI",
+                "value": "USE_PLL_HSE_EXTC|USE_PLL_HSI",
+                "macro_name": "CLOCK_SOURCE"
+            }
+        },
+        "detect_code": [
+            "0720"
+        ],
+        "device_has_add": [
+            "SERIAL_ASYNCH",
+            "FLASH",
+            "MPU"
+        ],
+        "device_name": "STM32F401RE"
+      }
     }
 
 Secondly, you need to add code specific to your target to the ``src`` folder of your project.
@@ -173,8 +222,8 @@ After these steps, your project structure should look like this:
     └── platformio.ini
 
 More information about adding custom targets can be found on the official page
- `Adding and configuring targets <https://os.mbed.com/docs/mbed-os/v5.12/reference/adding-and-configuring-targets.html>`_.
+ `Adding and configuring targets <https://os.mbed.com/docs/mbed-os/v6.2/porting/porting-custom-boards.html>`_.
 
 See full examples with a custom board:
 
-- https://github.com/platformio/platform-nxplpc/tree/develop/examples/mbed-custom-target
+- https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-rtos-custom-target
