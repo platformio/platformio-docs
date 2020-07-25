@@ -262,8 +262,8 @@ Example:
 
     "frameworks": ["espidf", "freertos"]
 
-If the library is compatible with the all frameworks, then you can use ``*``
-symbol:
+If the library is compatible with the all frameworks, then do not declare this field or
+you use ``*`` symbol:
 
 .. code-block:: javascript
 
@@ -276,7 +276,8 @@ symbol:
 
 *Optional* | Type: ``String`` or ``Array``
 
-A list with compatible platforms. The available platform name are defined in :ref:`platforms` section.
+A list with compatible development platforms. The available platform name are defined
+in :ref:`platforms` section.
 
 Example:
 
@@ -284,8 +285,8 @@ Example:
 
     "frameworks": ["atmelavr", "espressif8266"]
 
-If the library is compatible with the all platforms, then you can use ``*``
-symbol:
+If the library is compatible with the all platforms, then do not declare this field or
+use ``*`` symbol:
 
 .. code-block:: javascript
 
