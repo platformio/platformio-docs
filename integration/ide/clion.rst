@@ -14,7 +14,7 @@
 CLion
 =====
 
-The `CLion <https://www.jetbrains.com/clion/>`_ is a cross-platform C/C++ IDE for
+`CLion <https://www.jetbrains.com/clion/>`_ is a cross-platform C/C++ IDE for
 Linux, OS X, and Windows. CLion includes such features as a smart editor, code
 generation, code quality assurance, automated refactorings, on-the-fly code analysis,
 project manager, integrated version control systems and debugger.
