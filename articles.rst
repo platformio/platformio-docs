@@ -22,6 +22,8 @@ Here are recent articles/reviews about PlatformIO:
 
 2020
 ^^^^
+
+* Aug 7, 2020 - **Benjamin Cabé** - `Connecting the Wio Terminal to Azure IoT <https://blog.benjamin-cabe.com/2020/08/05/connecting-the-wio-terminal-to-azure-iot>`_
 * Jul 15, 2020 - **Andreas Schmidt** - `IoT für Webentwickler: Unit Testing mit PlatformIO <https://entwickler.de/online/iot/iot-unit-testing-platformio-579863298.html>`_
 * Jun 22, 2020 - **Francesco Azzol** - `Run Tensorflow Lite on ESP32 from scratch: Easy guide (PlatformIO) <https://www.survivingwithandroid.com/run-tensorflow-lite-esp32-platformio/>`_
 * May 15, 2020 - **Francesco Azzol** - `ESP32 Rest API: How to implement an ESP32 API server using PlatformIO <https://www.survivingwithandroid.com/esp32-rest-api-esp32-api-server/>`_
