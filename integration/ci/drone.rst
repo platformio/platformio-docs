@@ -49,7 +49,7 @@ fields for your project in the Drone control panel):
 .. code-block:: bash
 
     pip install -U platformio
-    platformio run /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
+    platformio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
 Using :ref:`cmd_ci` command

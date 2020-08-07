@@ -66,7 +66,7 @@ This variant is default choice for native PlatformIO projects:
             python -m pip install --upgrade pip
             pip install platformio
         - name: Run PlatformIO
-          run: platformio run /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
+          run: platformio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
 Using :ref:`cmd_ci` command
@@ -172,14 +172,14 @@ Integration for USB_Host_Shield_2.0 project. The ``workflow.yml`` configuration 
         - uses: actions/checkout@v1
         - name: Set up Python
           uses: actions/setup-python@v1
-        
+
         - name: Install dependencies
           run: |
             python -m pip install --upgrade pip
             pip install platformio
             wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip
             unzip /tmp/spi4teensy3.zip -d /tmp
-        
+
         - name: Run PlatformIO
           run: platformio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
           env:
