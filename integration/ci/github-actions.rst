@@ -66,7 +66,7 @@ This variant is default choice for native PlatformIO projects:
             python -m pip install --upgrade pip
             pip install platformio
         - name: Run PlatformIO
-          run: platformio run /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
+          run: platformio run -d /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
 
 
 Using :ref:`cmd_ci` command
