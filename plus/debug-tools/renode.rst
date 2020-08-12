@@ -25,48 +25,12 @@ For more information, see `Renode's official website <https://renode.io/?utm_sou
 .. contents:: Contents
     :local:
 
-Configuration
--------------
-
-You can configure Renode as a debugging tool using :ref:`projectconf_debug_tool` option in
-:ref:`projectconf`:
-
-.. code-block:: ini
-
-    [env:myenv]
-    platform = ...
-    board = ...
-    debug_tool = renode
-
-More options:
-
-* :ref:`projectconf_section_env_debug`
+.. include:: renode_extra.rst
 
 Examples
 --------
 
 * `Pre-configured projects for Zephyr RTOS, FreeRTOS, and Arduino <https://github.com/carlosedp/PlatformIO-Renode-Demos/>`__ by Carlos Eduardo
-
-Installation
-------------
-
-We will automatically install for you the latest Renode package using PlatformIO
-package manager. The only requirement is to install Mono/.NET framework.
-
-:Windows:
-  On Windows 7, download and install `.NET Framework 4.7 <https://www.microsoft.com/net/download/dotnet-framework-runtime>`_.
-  Windows 10 ships with .NET by default, so no action is required there.
-
-:Mac:
-  Install `Homebrew <https://brew.sh/>`_ and the ``mono`` package using ``brew install mono``.
-
-:Linux:
-  Install the ``mono-complete`` package as per the installation instructions for
-  various Linux distributions which can be found on `the Mono project website <https://www.mono-project.com/download/stable/#download-lin>`_.
-
-
-Check the `official Renode installation guide <https://github.com/renode/renode/blob/master/README.rst>`_
-for more details.
 
 .. begin_platforms
 
@@ -79,7 +43,7 @@ Platforms
       - Description
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
 Frameworks
 ----------
