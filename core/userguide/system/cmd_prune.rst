@@ -9,25 +9,52 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_system:
+.. _cmd_system_prune:
 
-platformio system
-=================
+platformio system prune
+=======================
 
-Miscellaneous system commands.
+.. versionadded:: 4.4
 
-To print all available commands and options use:
+.. contents::
+
+Usage
+-----
 
 .. code-block:: bash
 
-    platformio system --help
-    platformio system COMMAND --help
-    pio system --help
+    platformio system prune
+    pio system prune
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+Remove unused data:
 
-    completion/index
-    cmd_info
-    cmd_prune
+- cached API requests
+- cached package downloads
+- temporary data.
+
+Options
+-------
+
+.. program:: platformio system prune
+
+.. option::
+    --force, -f
+
+Do not prompt for confirmation.
+
+Examples
+--------
+
+.. code::
+
+    > platformio system prune
+
+    WARNING! This will remove:
+     - cached API requests
+     - cached package downloads
+     - temporary data
+    Do you want to continue? [y/N]: y
+    Total reclaimed space: 36.48KB
