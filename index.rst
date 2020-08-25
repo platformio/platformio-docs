@@ -65,11 +65,11 @@ Contents
     :caption: Professional
     :maxdepth: 1
 
-    plus/pio-account
     Debugging <plus/debugging>
     Unit Testing <plus/unit-testing>
     Static Code Analysis <plus/pio-check>
     Remote Development <plus/pio-remote>
+    plus/pio-account
 
 .. toctree::
     :caption: Integration
