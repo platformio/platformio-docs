@@ -9,16 +9,20 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIOCheck| replace:: **PIO Check**
+.. |PIOCheck| replace:: **Static Code Analysis**
 
 .. _piocheck:
 
-PIO Check
-=========
+Static Code Analysis
+====================
 
 .. versionadded:: 4.1
 
 **Automated code analysis without hassle!**
+
+.. contents:: Contents
+    :local:
+    :depth: 1
 
 Static analysis became an important part of software development cycle. It can
 identify potential bugs, vulnerabilities and security threats by doing an
@@ -53,10 +57,6 @@ Key features
   Before performimg a static analysis check, make sure your project builds
   without errors. For information about how to build a project, see the
   :ref:`cmd_run` command or :ref:`ide_vscode` guide.
-
-.. contents:: Contents
-    :local:
-    :depth: 1
 
 User Interface
 --------------

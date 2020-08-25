@@ -24,7 +24,7 @@ There are 3 options how to find/manage libraries:
 
 * :ref:`piohome`
 * `Web Library Search <https://platformio.org/lib>`__
-* PIO Core :ref:`Command Line Interface <cmd_lib_search>`
+* PlatformIO Core :ref:`Command Line Interface <cmd_lib_search>`
 
 You can manage different library storages using
 :option:`platformio lib --global` or  :option:`platformio lib --storage-dir`

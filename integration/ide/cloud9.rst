@@ -28,7 +28,7 @@ server output, and Run apps easily with the built-in Terminal and Runners.
     2. You need :ref:`pioaccount` if you don't have it. Registration is FREE.
     3. You should have a running :ref:`cmd_remote_agent` on a remote machine
        where hardware devices are connected physically or accessible for the
-       remote operations. See **PIO Remote** :ref:`pio_remote_quickstart` for details.
+       remote operations. See **Remote Development** :ref:`pio_remote_quickstart` for details.
 
 Demo
 ----

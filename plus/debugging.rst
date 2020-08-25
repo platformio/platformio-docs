@@ -9,20 +9,20 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIODebug| replace:: **PIO Unified Debugger**
+.. |PIODebug| replace:: **PlatformIO Debugging Solution**
 
 .. _piodebug:
 
-PIO Unified Debugger
-====================
+Debugging
+=========
 
 **It Simply Works. Easier than ever before!**
 
-.. note::
+.. contents:: Contents
+    :local:
+    :depth: 1
 
-  `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/finally-pio-unified-debugger-comes-to-vscode/4091>`_
-
-PlatformIO offers a unique debugging experience for productive embedded
+|PIODebug| offers a unique debugging experience for productive embedded
 development. Using our multi-board and multi-architecture programming
 experience, we simplified the debugging process in the same way. A zero
 debugging configuration with support for the most popular debugging probes
@@ -46,10 +46,6 @@ file “platformio.ini”, and a project is ready for 1-Click debugging.
 * Built-in into :ref:`ide_atom` and :ref:`ide_vscode`
 * Integration with :ref:`ide_eclipse` and :ref:`ide_sublimetext`
 
-You should have :ref:`pioaccount` to work with |PIODebug|.
-A registration is **FREE**.
-
-
 .. hint::
   In our experience, :ref:`ide_vscode` has the best system performance,
   modern interface for |PIODebug|, and users have found it easier to get started.
@@ -68,10 +64,6 @@ A registration is **FREE**.
 .. image:: ../_static/images/ide/vscode/platformio-ide-vscode.png
   :target: ../ide/vscode.html
 
-.. contents:: Contents
-    :local:
-    :depth: 1
-
 Tutorials
 ---------
 
@@ -88,7 +80,7 @@ Tutorials
 Configuration
 -------------
 
-|PIODebug| can be configured from :ref:`projectconf`:
+|PIODebug| can be configured using :ref:`projectconf`:
 
 .. toctree::
   :maxdepth: 2
@@ -210,7 +202,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -1836,7 +1828,7 @@ Digilent
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB

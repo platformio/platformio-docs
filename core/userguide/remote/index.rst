@@ -24,7 +24,7 @@ To print all available commands and options use:
     platformio remote --help
     platformio remote COMMAND --help
 
-    # run command on the specified PIO Remote Agents
+    # run command on the specified PlatformIO Remote Agents
     platformio remote --agent NAME_1 --agent NAME_N COMMAND
 
 

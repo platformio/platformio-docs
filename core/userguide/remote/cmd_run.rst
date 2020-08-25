@@ -26,7 +26,7 @@ Usage
     platformio remote run [OPTIONS]
     pio remote run [OPTIONS]
 
-    # process environments using specified PIO Remote Agent
+    # process environments using specified PlatformIO Remote Agent
     platformio remote --agent NAME run [OPTIONS]
 
 Description

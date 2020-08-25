@@ -426,7 +426,7 @@ Create a custom ``node`` target (alias) which will print a NodeJS version
             "python --version"
         ],
         title="Core Env",
-        description="Show PIO Core and Python versions"
+        description="Show PlatformIO Core and Python versions"
     )
 
 

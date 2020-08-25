@@ -262,7 +262,7 @@ Each button contains a hint (leave the mouse on it for a moment).
 * Toggle build panel
 * ||
 * Find in Project...
-* PIO Terminal
+* PlatformIO Terminal
 * Serial Monitor
 * ||
 * Atom Settings
@@ -315,7 +315,7 @@ automatically created and preconfigured when you initialize project using
 Install Shell Commands
 ----------------------
 
-Please navigate to PIO Core :ref:`piocore_install_shell_commands`.
+Please navigate to PlatformIO Core :ref:`piocore_install_shell_commands`.
 
 Known issues
 ------------

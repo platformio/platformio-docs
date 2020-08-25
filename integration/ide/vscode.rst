@@ -143,7 +143,7 @@ Each button contains hint (delay mouse on it).
 6. :ref:`unit_testing`
 7. Run a task... (See "Task Runner" below)
 8. :ref:`Serial Port Monitor <cmd_device_monitor>`
-9. PIO Terminal
+9. PlatformIO Terminal
 
 Custom Build Task
 ~~~~~~~~~~~~~~~~~
@@ -397,7 +397,7 @@ You can manually cast watchpoint expressions to display the value as specific po
 Install Shell Commands
 ----------------------
 
-Please refer to PIO Core :ref:`piocore_install_shell_commands`.
+Please refer to PlatformIO Core :ref:`piocore_install_shell_commands`.
 
 Proxy Server Support
 --------------------
@@ -475,11 +475,11 @@ value is ``false``.
 
 ``platformio-ide.disablePIOHomeStartup``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Disable showing PIO Home at startup. The default value is ``false``.
+Disable showing PlatformIO Home at startup. The default value is ``false``.
 
 ``platformio-ide.pioHomeServerHttpPort``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-PIO Home server HTTP port. The default value ``0`` automatically assigns a free port in
+PlatformIO Home server HTTP port. The default value ``0`` automatically assigns a free port in
 the range [8010..8100]).
 
 Known issues

@@ -193,18 +193,18 @@ Troubleshooting
 Installation
 ~~~~~~~~~~~~
 
-Multiple PIO Cores in a system
-''''''''''''''''''''''''''''''
+Multiple PlatformIO Cores in a system
+'''''''''''''''''''''''''''''''''''''
 
 Multiple standalone :ref:`piocore` in a system could lead to the different
-issues. We highly recommend to keep one instance of PIO Core or use built-in
-PIO Core in :ref:`pioide`:
+issues. We highly recommend to keep one instance of PlatformIO Core or use built-in
+PlatformIO Core in :ref:`pioide`:
 
 * :ref:`ide_atom` - ``Menu PlatformIO: Settings > PlatformIO IDE > Use built-in PlatformIO Core``
 * :ref:`ide_vscode` - :ref:`ide_vscode_settings` > Set ``platformio-ide.useBuiltinPIOCore`` to ``true``.
 
 Finally, if you have a standalone :ref:`piocore` in a system, please open system
-Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
+Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PlatformIO Core:
 
 .. code-block:: bash
 
@@ -220,7 +220,7 @@ If you need to have :ref:`piocore` globally in a system, please
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 If you use :ref:`pioide`, please check in PlatformIO IDE Settings that
-"Use built-in PIO Core" is enabled.
+"Use built-in PlatformIO Core" is enabled.
 
 If you modify system environment variable ``PATH`` in your Bash/Fish/ZSH
 profile, please do not override global ``PATH``. This line
@@ -352,7 +352,7 @@ system operations. Another solution is to run :ref:`piocore` from a system termi
        # Change directory to PlatformIO Project where is located "platformio.ini"
        cd path/to/platformio/project
 
-       # Force PlatformIO to install PIO Home dependencies
+       # Force PlatformIO to install PlatformIO Home dependencies
        platformio home
 
        # Force PlatformIO to install toolchains

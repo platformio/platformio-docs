@@ -65,7 +65,7 @@ Process project with a custom :ref:`projectconf`.
 .. option::
     --interface
 
-PIO Debugging Interface. Valid values:
+PlatformIO Debugging Interface. Valid values:
 
 * ``gdb`` - GDB: The GNU Project Debugger
 

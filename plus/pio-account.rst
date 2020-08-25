@@ -11,10 +11,10 @@
 
 .. _pioaccount:
 
-PIO Account
-===========
+PlatformIO Account
+==================
 
-**PIO Account** is required for:
+**PlatformIO Account** is required for:
 
 * `Community Forum <https://community.platformio.org/>`__
 * :ref:`pioremote`
@@ -23,7 +23,7 @@ PIO Account
 PlatformIO IDE
 --------------
 
-:ref:`pioide` has built-in UI in PIO Home to manage PIO Account. You can
+:ref:`pioide` has built-in UI in PlatformIO Home to manage PlatformIO Account. You can
 create a new account, reset your password, update profile, or fetch an authentication
 token.
 

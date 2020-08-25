@@ -9,15 +9,20 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIOUTE| replace:: **PIO Unit Testing Engine**
+.. |PIOUTS| replace:: **PlatformIO Unit Testing Solution**
+.. |PIOUTE| replace:: **PlatformIO Unit Testing Engine**
 
 .. _unit_testing:
 
-PIO Unit Testing
-================
+Unit Testing
+============
 
-PIO Unit Testing allows segregating each part of the firmware/program and testing that
-the individual parts are working correctly. Using |PIOUTE| you can execute the same
+.. contents:: Contents
+    :local:
+    :depth: 1
+
+Unit Testing allows you segregating each part of the firmware/program and testing that
+the individual parts are working correctly. Using |PIOUTS| you can execute the same
 tests on the local host machine (native), on the multiple local embedded devices/boards
 (connected to local host machine), or on both. When testing both, PlatformIO builds
 firmware on the host machine, uploads into a target device, starts tests, and collects
@@ -25,9 +30,6 @@ the test results into test reports. The final information will be shown on the h
 side with informative output and statistic.
 
 Using :ref:`pioremote` you can start unit tests on the **Remote Device** from anywhere in the world or integrate with :ref:`ci` systems.
-
-.. contents:: Contents
-    :local:
 
 Demo
 ----
@@ -70,7 +72,7 @@ For the other examples and source code please follow to
 Configuration
 -------------
 
-|PIOUTE| can be configured from :ref:`projectconf`
+|PIOUTS| can be configured using :ref:`projectconf`
 
 .. toctree::
   :maxdepth: 2
@@ -139,7 +141,7 @@ at each integration stage. See real
 Test Transport
 --------------
 
-|PIOUTE| engine uses different transports to communicate with a
+|PIOUTE| uses different transports to communicate with a
 target device. By default, it uses ``Serial/UART`` transport provided
 by a :ref:`projectconf_env_framework`. For example, when
 ":ref:`projectconf_env_framework` = ``arduino``", the first available
