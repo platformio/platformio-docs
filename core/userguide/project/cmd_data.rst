@@ -9,12 +9,12 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_project_idedata:
+.. _cmd_project_data:
 
-platformio project idedata
-==========================
+platformio project data
+=======================
 
-.. versionadded:: 4.4
+.. versionadded:: 5.0
 
 .. contents::
 
@@ -23,8 +23,8 @@ Usage
 
 .. code-block:: bash
 
-    pio project idedata [OPTIONS]
-    platformio project idedata [OPTIONS]
+    pio project data [OPTIONS]
+    platformio project data [OPTIONS]
 
 
 Description
@@ -41,11 +41,10 @@ Dump data intended for IDE extensions/plugins:
 - Targets by :ref:`platforms` (see :option:`platformio run --list-targets` for details)
 - Extra information.
 
-
 Options
 ~~~~~~~
 
-.. program:: platformio project idedata
+.. program:: platformio project data
 
 .. option::
     -d, --project-dir
