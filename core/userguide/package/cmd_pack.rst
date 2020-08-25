@@ -14,7 +14,7 @@
 platformio package pack
 =======================
 
-.. versionadded:: 4.4
+.. versionadded:: 5.0
 
 .. contents::
 

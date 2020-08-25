@@ -14,7 +14,7 @@
 platformio system prune
 =======================
 
-.. versionadded:: 4.4
+.. versionadded:: 5.0
 
 .. contents::
 

@@ -332,7 +332,7 @@ not be passed to the next middleware in chain.
 Custom Targets
 ~~~~~~~~~~~~~~
 
-.. versionadded:: 4.4
+.. versionadded:: 5.0
 
 PlatformIO allows you to declare unlimited number of the custom targets. There are a
 lot of use cases for them:

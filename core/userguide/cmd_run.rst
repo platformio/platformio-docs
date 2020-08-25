@@ -55,7 +55,7 @@ You can configure default targets per project environment using
 .. option::
     --list-targets
 
-.. versionadded:: 4.4
+.. versionadded:: 5.0
 
 List available project targets. It's also possible to list targets per project
 environment using :option:`platformio run --environment` option.
