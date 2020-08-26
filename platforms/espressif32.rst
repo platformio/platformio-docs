@@ -409,13 +409,11 @@ Packages
     * - `framework-espidf <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/?utm_source=platformio.org&utm_medium=docs>`__
       - Espressif IoT Development Framework. Official development framework for ESP32 chip
 
-    * - framework-pumbaa
-      -
-                
+    * - `framework-pumbaa <https://github.com/eerimoq/pumbaa.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Pumbaa Framework - a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory
 
-    * - framework-simba
-      -
-                
+    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software

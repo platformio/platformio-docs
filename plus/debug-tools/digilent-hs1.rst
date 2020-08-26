@@ -73,6 +73,9 @@ Frameworks
     * - Name
       - Description
 
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+
     * - :ref:`framework_wd-riscv-sdk`
       - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
 

@@ -32,7 +32,10 @@ Examples
 Examples are listed from `CHIPS Alliance development platform repository <https://github.com/platformio/platform-chipsalliance/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
 * `native-blink_asm <https://github.com/platformio/platform-chipsalliance/tree/master/examples/native-blink_asm?utm_source=platformio.org&utm_medium=docs>`_
+* `native-bare_c <https://github.com/platformio/platform-chipsalliance/tree/master/examples/native-bare_c?utm_source=platformio.org&utm_medium=docs>`_
 * `rtosal-freertos <https://github.com/platformio/platform-chipsalliance/tree/master/examples/rtosal-freertos?utm_source=platformio.org&utm_medium=docs>`_
+* `native-asm <https://github.com/platformio/platform-chipsalliance/tree/master/examples/native-asm?utm_source=platformio.org&utm_medium=docs>`_
+* `psp-hello-world <https://github.com/platformio/platform-chipsalliance/tree/master/examples/psp-hello-world?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -128,6 +131,9 @@ Packages
     * - `tool-verilator-swervolf <https://www.veripool.org/wiki/verilator?utm_source=platformio.org&utm_medium=docs>`__
       - Verilator is an open-source SystemVerilog simulator and lint system
 
+    * - `tool-whisper <https://github.com/westerndigitalcorporation/swerv-ISS.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Whisper is a RISCV instruction set simulator (ISS) developed for the verification of the Swerv micro-controller. It allows the user to run RISC-V code without RISC-V hardware
+
     * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
       - GNU toolchain for RISC-V, including GCC
 
@@ -152,6 +158,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
     * - :ref:`framework_wd-riscv-sdk`
       - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features

@@ -3225,7 +3225,7 @@ Platforms
       - Description
 
     * - :ref:`platform_asrmicro650x`
-      - ASR Microelectronics ASR605x series is highly intergrated and ultra low power SOC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
+      - ASR Microelectronics ASR605x series is highly intergrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
 
     * - :ref:`platform_atmelavr`
       - Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming

@@ -547,9 +547,8 @@ Packages
     * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
       - Arm Mbed OS is a platform operating system designed for the internet of things
 
-    * - framework-simba
-      -
-                
+    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
     * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures

@@ -9,16 +9,13 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _debugging_tool_verilator:
+.. _debugging_tool_whisper:
 
-Verilator
-=========
+Whisper
+=======
 
-.. image:: ../../_static/images/debug_probes/verilator.png
-  :target: https://www.veripool.org/wiki/verilator/?utm_source=platformio&utm_medium=docs
-
-Verilator is a free and open-source software tool which converts Verilog to a cycle-accurate behavioral model in C++ or SystemC.
-Official reference can be found `here <https://www.veripool.org/wiki/verilator/?utm_source=platformio&utm_medium=docs>`__.
+Whisper is a RISCV instruction set simulator (ISS) developed for the verification of the Swerv micro-controller. It allows the user to run RISCV code without RISCV hardware. It has an interactive mode where the user can single step the target RISCV code and inspect/modify the RISCV registers or the simulated system memory. It can also run in lock step with a Verilog simulator serving as a "golden model" against which an implementation is checked after each instruction of a test program.
+Official reference can be found `here  <https://github.com/westerndigitalcorporation/swerv-ISS/?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:
@@ -34,7 +31,7 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = verilator
+    debug_tool = whisper
 
 More options:
 

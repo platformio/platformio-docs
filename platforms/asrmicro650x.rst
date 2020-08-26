@@ -17,7 +17,7 @@ ASR Microelectronics ASR605x
 :Configuration:
   :ref:`projectconf_env_platform` = ``asrmicro650x``
 
-ASR Microelectronics ASR605x series is highly intergrated and ultra low power SOC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
+ASR Microelectronics ASR605x series is highly intergrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
 
 For more detailed information please visit `vendor site <http://www.asrmicro.com?utm_source=platformio.org&utm_medium=docs>`_.
 

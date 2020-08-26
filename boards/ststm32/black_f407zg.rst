@@ -11,7 +11,7 @@
 
 .. _board_ststm32_black_f407zg:
 
-Black STM32F407ZE
+Black STM32F407ZG
 =================
 
 .. contents::
@@ -46,7 +46,7 @@ Please use ``black_f407zg`` ID for :ref:`projectconf_env_board` option in :ref:`
   platform = ststm32
   board = black_f407zg
 
-You can override default Black STM32F407ZE settings per build environment using
+You can override default Black STM32F407ZG settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `black_f407zg.json <https://github.com/platformio/platform-ststm32/blob/master/boards/black_f407zg.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `black_f407zg.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-Black STM32F407ZE supports the next uploading protocols:
+Black STM32F407ZG supports the next uploading protocols:
 
 * ``blackmagic``
 * ``jlink``
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Black STM32F407ZE does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Black STM32F407ZG does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -135,3 +135,6 @@ Frameworks
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
+
+    * - :ref:`framework_libopencm3`
+      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others

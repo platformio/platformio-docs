@@ -88,6 +88,12 @@ You do not need to use/buy external debug probe.
       - 320MHz
       - 16MB
       - 16KB
+    * - :ref:`board_chipsalliance_swervolf_nexys`
+      - :ref:`platform_chipsalliance`
+      - 
+      - 320MHz
+      - 16MB
+      - 1.16MB
     * - :ref:`board_sifive_sparkfun_redboard_v`
       - :ref:`platform_sifive`
       - FE310
@@ -105,6 +111,7 @@ You do not need to use/buy external debug probe.
 Examples
 --------
 
+* `FreeRTOS for CHIPS Alliance <https://github.com/platformio/platform-chipsalliance/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `FreeRTOS for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
@@ -114,6 +121,9 @@ Platforms
 
     * - Name
       - Description
+
+    * - :ref:`platform_chipsalliance`
+      - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
 
     * - :ref:`platform_sifive`
       - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
@@ -125,6 +135,27 @@ Boards
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
     * For more detailed ``board`` information please scroll the tables below by horizontally.
+
+Digilent
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_chipsalliance_swervolf_nexys`
+      - :ref:`platform_chipsalliance`
+      - On-board
+      - 
+      - 320MHz
+      - 16MB
+      - 1.16MB
 
 SiFive
 ~~~~~~

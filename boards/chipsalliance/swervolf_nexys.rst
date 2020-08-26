@@ -11,8 +11,8 @@
 
 .. _board_chipsalliance_swervolf_nexys:
 
-Digilent Nexys A7
-=================
+RVfpga: Digilent Nexys A7
+=========================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``swervolf_nexys`` ID for :ref:`projectconf_env_board` option in :ref
   platform = chipsalliance
   board = swervolf_nexys
 
-You can override default Digilent Nexys A7 settings per build environment using
+You can override default RVfpga: Digilent Nexys A7 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `swervolf_nexys.json <https://github.com/platformio/platform-chipsalliance/blob/master/boards/swervolf_nexys.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Digilent Nexys A7 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+RVfpga: Digilent Nexys A7 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -102,6 +102,9 @@ Digilent Nexys A7 has on-board debug probe and **IS READY** for debugging. You d
   * - :ref:`debugging_tool_verilator`
     - Yes
     - 
+  * - :ref:`debugging_tool_whisper`
+    - Yes
+    - 
 
 Frameworks
 ----------
@@ -110,6 +113,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
     * - :ref:`framework_wd-riscv-sdk`
       - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features

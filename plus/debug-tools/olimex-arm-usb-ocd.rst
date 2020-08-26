@@ -225,13 +225,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_chipsalliance_swervolf_nexys`
-      - :ref:`platform_chipsalliance`
-      - On-board
-      - 
-      - 320MHz
-      - 16MB
-      - 1.16MB
     * - :ref:`board_espressif32_pocket_32`
       - :ref:`platform_espressif32`
       - External
@@ -407,6 +400,13 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_chipsalliance_swervolf_nexys`
+      - :ref:`platform_chipsalliance`
+      - On-board
+      - 
+      - 320MHz
+      - 16MB
+      - 1.16MB
     * - :ref:`board_espressif32_sg-o_airMon`
       - :ref:`platform_espressif32`
       - External

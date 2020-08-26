@@ -988,9 +988,8 @@ Packages
     * - `framework-arduino-avr-prusa_rambo <https://github.com/prusa3d/Prusa-Firmware.git?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Prusa Rambo Core)
 
-    * - framework-simba
-      -
-                
+    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
     * - `tool-avrdude <http://savannah.nongnu.org/projects/avrdude?utm_source=platformio.org&utm_medium=docs>`__
       - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers
