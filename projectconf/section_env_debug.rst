@@ -47,8 +47,6 @@ See available tools in :ref:`debugging_tools`.
 ``debug_build_flags``
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 4.2.0
-
 Type: ``String`` | Multiple: ``Yes`` | Default: ``-Og -g2 -ggdb2``
 
 These flags/options affect the preprocessing, compilation, assembly
@@ -177,8 +175,6 @@ for GDB:
 
 ``debug_load_cmds``
 ^^^^^^^^^^^^^^^^^^^
-
-.. versionadded:: 4.0
 
 Type: ``String`` | Multiple: ``Yes`` | Default: ``load``
 

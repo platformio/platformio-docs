@@ -28,8 +28,6 @@ The allowed options are listed under `Options`_.
 Common ``[env]``
 ----------------
 
-.. versionadded:: 4.0
-
 An optional configuration environment with common options that will be
 shared between all ``[env:NAME]`` environments in the platform.ini
 file. It is very useful if the configuration file has a lot of

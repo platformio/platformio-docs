@@ -73,8 +73,6 @@ Examples:
 ``platform_packages``
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 4.0
-
 Type: ``String`` | Multiple: ``Yes``
 
 Configure custom packages per a build environment. You can also override
@@ -169,8 +167,8 @@ overclock a board by specifying a ``board_build.f_cpu`` value other than the def
 
 Type: ``String`` | Multiple: ``No``
 
-Path to the linker script to be used instead of the one defined by a framework. This 
-is useful for specifying a modified linker script, for example, when an application 
+Path to the linker script to be used instead of the one defined by a framework. This
+is useful for specifying a modified linker script, for example, when an application
 requires a special memory section for a bootloader.
 
 .. _projectconf_board_more_options:

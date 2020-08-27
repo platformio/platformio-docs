@@ -250,8 +250,6 @@ The ``extra_script.py`` file is located in the same directory as ``platformio.in
 Build Middlewares
 ~~~~~~~~~~~~~~~~~
 
-.. versionadded:: 4.1
-
 PlatformIO Build System allows you to add middleware functions that can be used for
 Build Node(Object) construction. This is very useful if you need to add custom flags
 for the specific file nodes or exclude them from a build process.

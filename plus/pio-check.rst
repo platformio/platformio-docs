@@ -16,8 +16,6 @@
 Static Code Analysis
 ====================
 
-.. versionadded:: 4.1
-
 **Automated code analysis without hassle!**
 
 .. contents:: Contents

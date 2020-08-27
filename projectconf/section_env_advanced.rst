@@ -19,8 +19,6 @@ Advanced options
 ``extends``
 ^^^^^^^^^^^
 
-.. versionadded:: 4.1
-
 Type: ``String`` | Multiple: ``Yes``
 
 This option allows one to inherit configuration from other sections or build environments

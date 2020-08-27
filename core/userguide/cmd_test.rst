@@ -127,8 +127,6 @@ to current working directory (``CWD``).
 .. option::
     -c, --project-conf
 
-.. versionadded:: 4.0
-
 Process project with a custom :ref:`projectconf`.
 
 .. option::
