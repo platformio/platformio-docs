@@ -9,31 +9,41 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_team_remove:
 
-platformio account
-==================
+platformio team remove
+======================
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
 
-To print all available commands and options use:
+.. contents::
+
+Usage
+-----
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    pio team remove ORGNAME:TEAMNAME USERNAME
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+Remove a member from a team.
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+If you need to destroy an existing team, please use :ref:`cmd_team_destroy` command.
+
+Examples
+--------
+
+Remove Bob from the "dev" team of "platformio" organization:
+
+.. code-block:: bash
+
+    > pio team remove platformio:dev bob
+    The "bob" member has been successfully removed from the "dev" team.
+
+See Also
+--------
+
+* :ref:`cmd_team_add`
+* :ref:`cmd_team_list`

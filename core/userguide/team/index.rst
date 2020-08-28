@@ -9,31 +9,31 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_team:
 
-platformio account
-==================
+platformio team
+===============
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
+
+Manage organization teams and team memberships.
+
+Management of organizations and owners is done with the :ref:`cmd_org` command.
 
 To print all available commands and options use:
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
-
+    pio org --help
+    platformio org --help
+    platformio org COMMAND --help
 
 .. toctree::
     :maxdepth: 2
 
+    cmd_add
+    cmd_create
     cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
+    cmd_list
+    cmd_remove
     cmd_update

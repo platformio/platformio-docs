@@ -54,6 +54,9 @@ Usage
     platformio lib [STORAGE_OPTIONS] install <name>
     platformio lib [STORAGE_OPTIONS] install <name>@<version>
     platformio lib [STORAGE_OPTIONS] install <name>@<version range>
+    platformio lib [STORAGE_OPTIONS] install <ownernme/name>
+    platformio lib [STORAGE_OPTIONS] install <ownernme/name>@<version>
+    platformio lib [STORAGE_OPTIONS] install <ownernme/name>@<version range>
     platformio lib [STORAGE_OPTIONS] install <zip or tarball url>
     platformio lib [STORAGE_OPTIONS] install file://<zip or tarball file>
     platformio lib [STORAGE_OPTIONS] install file://<folder>

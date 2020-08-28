@@ -9,31 +9,50 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_org_list:
 
-platformio account
-==================
+platformio org list
+===================
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
 
-To print all available commands and options use:
+.. contents::
+
+Usage
+-----
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    platformio org list [OPTIONS] [OWNER]
+    pio org list [OPTIONS] [OWNER]
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+List organizations and their owners.
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+Options
+~~~~~~~
+
+.. program:: platformio org list
+
+.. option::
+    --json-output
+
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
+
+Examples
+--------
+
+.. code-block:: bash
+
+    > pio org list
+
+    ...
+
+    platformio
+    ----------
+    Display Name:  PlatformIO
+    Owners:        alice, bob
+
+    ...

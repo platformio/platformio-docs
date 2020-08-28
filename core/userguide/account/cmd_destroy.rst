@@ -9,31 +9,24 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_account_destroy:
 
-platformio account
-==================
+platformio account destroy
+==========================
 
-CLI helper command for :ref:`pioaccount`.
+.. contents::
 
-To print all available commands and options use:
+Usage
+-----
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    platformio account destroy [OPTIONS]
+    pio account destroy [OPTIONS]
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+Permanently remove account and related data (organizations, teams, resources).
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+**WARNING! It can can not be restored.**

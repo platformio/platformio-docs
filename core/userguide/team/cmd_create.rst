@@ -9,31 +9,47 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_team_create:
 
-platformio account
-==================
+platformio team create
+======================
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
 
-To print all available commands and options use:
+.. contents::
+
+Usage
+-----
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    pio team create [OPTIONS] ORGNAME:TEAMNAME
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+Create a new team.
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+Options
+~~~~~~~
+
+.. program:: platformio team create
+
+.. option::
+    --description
+
+A team description.
+
+Examples
+--------
+
+.. code-block:: bash
+
+    > pio team create platformio:dev --description "Developers team"
+    The team "dev" has been successfully created.
+
+See Also
+--------
+
+* :ref:`cmd_team_list`
+* :ref:`cmd_team_remove`

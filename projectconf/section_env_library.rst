@@ -55,17 +55,30 @@ The each line with ``LIBRARY_1... LIBRARY_N`` will be passed automatically to
 :ref:`cmd_lib_install` command. Please follow to :ref:`cmd_lib_install` for
 detailed documentation about possible values.
 
+Please check :ref:`cmd_lib_install` for the valid declaration formats.
+
 Example:
 
 .. code-block:: ini
 
   [env:myenv]
   lib_deps =
-    13
+    ; name-based
     PubSubClient
-    ArduinoJson@~5.6,!=5.4
+
+    ; owner-based declaration
+    knolleary/PubSubClient
+
+    ; SemVer specification
+    ArduinoJson @ ~5.6,!=5.4
+
+    ; external Git resource
     https://github.com/gioblu/PJON.git#v2.0
+
+    ; custom name
     IRremoteESP8266=https://github.com/markszabo/IRremoteESP8266/archive/master.zip
+
+
 
 .. _projectconf_lib_ignore:
 

@@ -9,31 +9,36 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_access:
 
-platformio account
-==================
+platformio access
+=================
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
+
+Set access level on published resources (packages) in the registry.
+
+You must have privileges to set the access of a resource:
+
+* You are an owner of published resources
+* You are a member of the team that owns a resource
+* You have been given "maintainer" privileges for a package, either as a member of a team or directly as an owner.
+
+Management of teams and team memberships is done with the :ref:`cmd_team` command.
 
 To print all available commands and options use:
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
-
+    pio access --help
+    platformio access --help
+    platformio access COMMAND --help
 
 .. toctree::
     :maxdepth: 2
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+    cmd_grant
+    cmd_list
+    cmd_private
+    cmd_public
+    cmd_revoke

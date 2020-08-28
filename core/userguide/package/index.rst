@@ -14,6 +14,8 @@
 platformio package
 ==================
 
+Manage packages in the registry.
+
 To print all available commands and options use:
 
 .. code-block:: bash

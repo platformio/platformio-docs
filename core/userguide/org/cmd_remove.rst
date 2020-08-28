@@ -9,31 +9,41 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_org_remove:
 
-platformio account
-==================
+platformio org remove
+=====================
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
 
-To print all available commands and options use:
+.. contents::
+
+Usage
+-----
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    pio org remove ORGNAME USERNAME
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+Remove a user from an organization.
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+If you need to destroy an existing organization, please use :ref:`cmd_org_destroy` command.
+
+Examples
+--------
+
+Remove Bob from "platformio" organization:
+
+.. code-block:: bash
+
+    > pio org remove platformio bob
+    The `bob` owner has been successfully removed from the `platformio` organization.
+
+See Also
+--------
+
+* :ref:`cmd_org_add`
+* :ref:`cmd_org_list`

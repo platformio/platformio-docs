@@ -9,31 +9,46 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_team_list:
 
-platformio account
-==================
+platformio team list
+====================
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
 
-To print all available commands and options use:
+.. contents::
+
+Usage
+-----
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    platformio team list [OPTIONS] [ORGNAME]
+    pio team list [OPTIONS] [ORGNAME]
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+List teams and their members.
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+Options
+~~~~~~~
+
+.. program:: platformio team list
+
+.. option::
+    --json-output
+
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
+
+Examples
+--------
+
+.. code-block:: bash
+
+    > pio team list
+
+    platformio:dev
+    ------------------------
+    Description:  Developers team
+    Members:      alice, bob

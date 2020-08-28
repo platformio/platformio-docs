@@ -16,9 +16,12 @@ PlatformIO Account
 
 **PlatformIO Account** is required for:
 
-* `Community Forum <https://community.platformio.org/>`__
+* `Community Forum <https://community.platformio.org/>`_
 * :ref:`pioremote`
-* Managing packages in the registry using the :ref:`cmd_package` command.
+* :ref:`Managing organizations and owners of an organization <cmd_org>`
+* :ref:`Managing teams and team memberships <cmd_team>`
+* :ref:`Managing packages in the registry <cmd_package>`
+* :ref:`Managing resource (package) access <cmd_access>`.
 
 PlatformIO IDE
 --------------

@@ -28,8 +28,7 @@ Usage
 Description
 -----------
 
-Process environments which are defined in :ref:`projectconf` file
-
+Run project targets over environments declared in :ref:`projectconf`.
 
 Options
 -------

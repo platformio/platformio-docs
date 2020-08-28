@@ -9,31 +9,52 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_org_create:
 
-platformio account
-==================
+platformio org create
+=====================
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
 
-To print all available commands and options use:
+.. contents::
+
+Usage
+-----
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    pio org create [OPTIONS] ORGNAME
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+Create a new organization.
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+Options
+~~~~~~~
+
+.. program:: platformio org create
+
+.. option::
+    --email
+
+An organization e-mail.
+
+.. option::
+    --displayname
+
+An organization display name (company name).
+
+Examples
+--------
+
+.. code-block:: bash
+
+    > pio org create platformio --email contact@platformio.org --displayname PlatformIO
+    The organization "platformio" has been successfully created.
+
+See Also
+--------
+
+* :ref:`cmd_org_list`
+* :ref:`cmd_org_remove`

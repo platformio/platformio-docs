@@ -9,31 +9,42 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_team_add:
 
-platformio account
-==================
+platformio team add
+===================
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
 
-To print all available commands and options use:
+.. contents::
+
+Usage
+-----
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    pio team add ORGNAME:TEAMNAME USERNAME
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+Add a new member to a team.
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+If you need to create a new team, please use :ref:`cmd_team_create` command.
+
+Examples
+--------
+
+Add Bob to the "developers" team of "platformio" organization
+
+.. code-block:: bash
+
+    > pio team add platformio:developers bob
+    The new member "bob" has been successfully added to the "developers" team.
+
+See Also
+--------
+
+* :ref:`cmd_team_create`
+* :ref:`cmd_team_list`
+* :ref:`cmd_team_remove`

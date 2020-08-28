@@ -327,6 +327,8 @@ not be passed to the next middleware in chain.
     env.AddBuildMiddleware(skip_asm_from_build, "*.S")
 
 
+.. _projectconf_advanced_scripting_custom_targets:
+
 Custom Targets
 ~~~~~~~~~~~~~~
 

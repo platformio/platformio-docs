@@ -9,31 +9,32 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_account:
+.. _cmd_org_destroy:
 
-platformio account
-==================
+platformio org destroy
+======================
 
-CLI helper command for :ref:`pioaccount`.
+.. versionadded:: 5.0
 
-To print all available commands and options use:
+.. contents::
+
+Usage
+-----
 
 .. code-block:: bash
 
-    pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    pio org destroy ORGNAME
 
+Description
+-----------
 
-.. toctree::
-    :maxdepth: 2
+Destroy an organization and its teams.
 
-    cmd_destroy
-    cmd_forgot
-    cmd_login
-    cmd_logout
-    cmd_password
-    cmd_register
-    cmd_show
-    cmd_token
-    cmd_update
+If you need to remove a user from an organization, please use :ref:`cmd_org_remove` command.
+
+See Also
+--------
+
+* :ref:`cmd_org_create`
+* :ref:`cmd_org_list`
+* :ref:`cmd_org_update`
