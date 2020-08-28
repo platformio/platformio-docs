@@ -16,7 +16,7 @@ platformio org
 
 .. versionadded:: 5.0
 
-Manage organizations and owners of an organization.
+Manage organizations and their owners.
 
 Management of teams and team memberships is done with the :ref:`cmd_team` command.
 

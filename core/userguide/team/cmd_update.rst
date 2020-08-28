@@ -28,7 +28,7 @@ Usage
 Description
 -----------
 
-Rename a team or update an existing details.
+Rename a team or update the existing details.
 
 Options
 ~~~~~~~

@@ -28,7 +28,7 @@ Usage
 Description
 -----------
 
-Rename the organization or update an existing details.
+Rename the organization or update the existing details.
 
 Options
 ~~~~~~~

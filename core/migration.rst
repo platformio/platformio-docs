@@ -60,7 +60,7 @@ on open source projects. There are new CLI commands that help you to manage
 organizations, teams, team memberships, and resource access:
 
 * :ref:`cmd_package` – manage packages in the registry
-* :ref:`cmd_org` - manage organizations and owners of an organization
+* :ref:`cmd_org` - manage organizations
 * :ref:`cmd_team` - manage teams and team memberships
 * :ref:`cmd_access` – manage package access for users, teams, and maintainers.
 
@@ -68,7 +68,7 @@ Package Management
 ~~~~~~~~~~~~~~~~~~
 
 The package management infrastructure has been rewritten from scratch.
-It is based now on the new**PlatformIO Trusted Registry**
+It is based now on the new **PlatformIO Trusted Registry**
 that supports a strict dependency declaration using the package owner. This improvement
 resolves the issues when package maintainers publish packages under the same name.
 
@@ -85,7 +85,7 @@ to the registry using :ref:`cmd_package` CLI.
 Library Manager
 ~~~~~~~~~~~~~~~
 
-The biggest improvement for :ref:`librarymanager` is THE owner-based dependency declaration.
+The biggest improvement for :ref:`librarymanager` is the owner-based dependency declaration.
 You can finally forget about conflicts with library names in the registry. Use the new
 syntax ``ownername/pkgname`` to declare an owner-based dependency in :ref:`projectconf`
 via :ref:`projectconf_lib_deps`:
