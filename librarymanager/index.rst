@@ -11,8 +11,8 @@
 
 .. _librarymanager:
 
-Library Manager
-===============
+Library Management
+==================
 
 *PlatformIO Library Manager* is a tool for managing libraries of
 `PlatformIO Registry <https://platformio.org/lib>`__ and VCS repositories (Git,

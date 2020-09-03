@@ -11,15 +11,15 @@
 
 .. _framework_zephyr:
 
-Zephyr
-======
+Zephyr RTOS
+===========
 
 :Configuration:
   :ref:`projectconf_env_framework` = ``zephyr``
 
-The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
-For more detailed information please visit `vendor site <https://www.zephyrproject.org/?utm_source=platformio.org&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -197,6 +197,12 @@ You do not need to use/buy external debug probe.
       - 100MHz
       - 256KB
       - 192KB
+    * - :ref:`board_nxplpc_lpcxpresso55s16`
+      - :ref:`platform_nxplpc`
+      - LPC55S16
+      - 150MHz
+      - 256KB
+      - 96KB
     * - :ref:`board_nxpimxrt_mimxrt1010_evk`
       - :ref:`platform_nxpimxrt`
       - MIMXRT1011DAE5A
@@ -371,6 +377,12 @@ You do not need to use/buy external debug probe.
       - 72MHz
       - 64KB
       - 16KB
+    * - :ref:`board_ststm32_nucleo_f303re`
+      - :ref:`platform_ststm32`
+      - STM32F303RET6
+      - 72MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_ststm32_nucleo_f334r8`
       - :ref:`platform_ststm32`
       - STM32F334R8T6
@@ -431,6 +443,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l053r8`
       - :ref:`platform_ststm32`
       - STM32L053R8T6
@@ -485,7 +503,7 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_disco_h743xi`
+    * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
       - 400MHz
@@ -540,6 +558,12 @@ Please click on board name for the further details.
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_b96b_aerocore2`
+      - :ref:`platform_ststm32`
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_neonkey`
       - :ref:`platform_ststm32`
       - STM32F411CE
@@ -564,6 +588,18 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - :ref:`platform_ststm32`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
       - SAMD21E18A
@@ -576,6 +612,18 @@ Please click on board name for the further details.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_black_f407ve`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_blackpill_f103c8`
       - :ref:`platform_ststm32`
       - STM32F103C8T6
@@ -672,6 +720,12 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_freescalekinetis_segger_ip_switch`
+      - :ref:`platform_freescalekinetis`
+      - MK66FN2M0VMD18
+      - 180MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_steval_fcu001v1`
       - :ref:`platform_ststm32`
       - STM32F401CCU6
@@ -719,15 +773,15 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `Zephyr for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Zephyr for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Zephyr for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Zephyr for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Zephyr for NXP i.MX RT <https://github.com/platformio/platform-nxpimxrt/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Zephyr for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Zephyr for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Zephyr for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Zephyr for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for NXP i.MX RT <https://github.com/platformio/platform-nxpimxrt/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -799,6 +853,13 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_b96b_aerocore2`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_neonkey`
       - :ref:`platform_ststm32`
       - External
@@ -841,6 +902,20 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_adafruit_feather_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -1170,6 +1245,13 @@ NXP
       - 100MHz
       - 256KB
       - 192KB
+    * - :ref:`board_nxplpc_lpcxpresso55s16`
+      - :ref:`platform_nxplpc`
+      - On-board
+      - LPC55S16
+      - 150MHz
+      - 256KB
+      - 96KB
     * - :ref:`board_nxpimxrt_mimxrt1010_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
@@ -1367,6 +1449,27 @@ RedBearLab
       - 512KB
       - 64KB
 
+SEGGER
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_freescalekinetis_segger_ip_switch`
+      - :ref:`platform_freescalekinetis`
+      - External
+      - MK66FN2M0VMD18
+      - 180MHz
+      - 2MB
+      - 256KB
+
 ST
 ~~
 
@@ -1394,6 +1497,20 @@ ST
       - 216MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_black_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_black_f407zg`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - External
@@ -1527,6 +1644,13 @@ ST
       - 72MHz
       - 64KB
       - 16KB
+    * - :ref:`board_ststm32_nucleo_f303re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F303RET6
+      - 72MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_ststm32_nucleo_f334r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -1595,6 +1719,13 @@ ST
       - On-board
       - STM32F767ZIT6
       - 216MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_nucleo_h743zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H743ZIT6
+      - 400MHz
       - 2MB
       - 512KB
     * - :ref:`board_ststm32_nucleo_l053r8`
@@ -1688,7 +1819,7 @@ ST
       - 48MHz
       - 128KB
       - 16KB
-    * - :ref:`board_ststm32_disco_h743xi`
+    * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - On-board
       - STM32H747XIH6

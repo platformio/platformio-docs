@@ -11,467 +11,168 @@
 
 .. _core_migration:
 
-Migrating from 3.x to 4.0
+Migrating from 4.x to 5.0
 =========================
 
-Guidance on how to upgrade from :ref:`piocore` v3.x to v4.x with emphasis on
+Guidance on how to upgrade from :ref:`piocore` v4.x to v5.x with emphasis on
 major changes, what is new, and what has been removed.
 
-Please read :ref:`PlatformIO 4.0 Release Notes <release_notes_4>` before.
+**PlatformIO Core 5.0 is fully backward compatible with PlatformIO 4.0 projects.**
+
+Please read :ref:`PlatformIO 5.0 Release Notes <release_notes_5>` before.
 
 .. contents:: Contents
   :local:
 
-Compatibility
--------------
+Migration Steps
+---------------
 
-**PlatformIO Core 4.0 is fully backward compatible with v3.x**. The only major
-change is a new location for project build artifacts and library dependencies.
-The previous ``.pioenvs`` (:ref:`projectconf_pio_build_dir`) and
-``.piolibdeps`` (:ref:`projectconf_pio_libdeps_dir`) folders were moved to a
-new :ref:`projectconf_pio_workspace_dir`.
-
-.. note::
-  If you manually added library dependencies to old ``.piolibdeps`` folder,
-  please declare them in :ref:`projectconf_lib_deps`. **We do not recommend**
-  modifying any files or folders in :ref:`projectconf_pio_workspace_dir`.
-  This is an internal location for PlatformIO Core artifacts and temporary files.
-  PlatformIO Core 4.0 may delete/cleanup this folder in a service purpose any time.
-
-Infrastructure
---------------
-
-Finally, Python 3 interpreter is officially supported! The minimum requirements
-are Python 2.7 or Python 3.5+.
-
-We also added full support for operating system locales other than UTF-8.
-So, your project path can contain non-ASCII/non-Latin chars now.
-
-If you are :ref:`platforms` maintainer or you need to show a progress bar
-(upload progress, connecting status...), PlatformIO Core 4.0 has re-factored
-target runner where line-buffering was totally removed. Just print any progress
-information in real time and PlatformIO Core will display it instantly on user
-the side. For example, a writing progress from :ref:`platform_atmelavr`
-"avrdude" programmer:
-
-.. code-block:: shell
-
-    ...
-    Looking for upload port...
-    Auto-detected: /dev/cu.usbmodemFA141
-    Uploading build/uno/firmware.hex
-
-    avrdude: AVR device initialized and ready to accept instructions
-
-    Reading | ################################################## | 100% 0.00s
-
-    avrdude: Device signature = 0x1e950f (probably m328p)
-    avrdude: reading input file "build/uno/firmware.hex"
-    avrdude: writing flash (930 bytes):
-
-    Writing | ##########################
+1. Ensure that you do not use a short version of the Github declaration in :ref:`projectconf_lib_deps`.
+   Please use ``https://github.com/username/repo.git`` instead of ``username/repo``.
+2. We recommend updating your project dependency declarations in :ref:`projectconf_lib_deps`
+   using a new owner-based syntax. See  the :ref:`core_migration_libmanager` section for details.
 
 What is new
 -----------
 
 In this section, we are going to highlight the most important changes and
-features introduced in :ref:`piocore` 4.0. Please visit
-:ref:`PlatformIO 4.0 Release Notes <release_notes_4>` for more detailed information.
+features introduced in :ref:`piocore` 5.0. Please visit
+:ref:`PlatformIO 5.0 Release Notes <release_notes_5>` for more detailed information.
 
-:ref:`projectconf`
+PlatformIO Trusted Registry
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PlatformIO Core 5.0 has been switched to the official **PlatformIO Trusted Registry**:
+
+- Enterprise-grade package storage with high availability (multi replicas)
+- Secure, fast, and reliable global content delivery network (CDN)
+- Universal support for all packages:
+
+  * Libraries
+  * Development platforms
+  * Toolchains
+
+- Built-in fine-grained access control (role-based, :ref:`teams <cmd_team>`, :ref:`organizations <cmd_org>`).
+
+The new Web front-end and upgraded :ref:`piohome` are coming soon.
+
+Collaborative Platform
+~~~~~~~~~~~~~~~~~~~~~~
+
+PlatformIO Core 5.0 is fully unlocked for developers and teams. They can now share their
+packages (libraries, :ref:`platforms`, toolchains) with team members or collaborate
+on open source projects. There are new CLI commands that help you to manage
+organizations, teams, team memberships, and resource access:
+
+* :ref:`cmd_package` – manage packages in the registry
+* :ref:`cmd_org` - manage organizations
+* :ref:`cmd_team` - manage teams and team memberships
+* :ref:`cmd_access` – manage package access for users, teams, and maintainers.
+
+Package Management
 ~~~~~~~~~~~~~~~~~~
 
-A project configuration parser was rewritten from scratch. It has strict
-options typing (`API <https://github.com/platformio/platformio-core/blob/develop/platformio/project/options.py>`__)
-and helps to avoid issues when option values are invalid (for example,
-invalid :ref:`ldf_mode` or non-existing :ref:`projectconf_debug_svd_path`).
+The package management infrastructure has been rewritten from scratch.
+It is based now on the new **PlatformIO Trusted Registry**
+that supports a strict dependency declaration using the package owner. This improvement
+resolves the issues when package maintainers publish packages under the same name.
 
-Global scope ``[env]``
-^^^^^^^^^^^^^^^^^^^^^^
+PlatformIO Core 5.0 does not handle packages from unofficial repositories declared via
+``packageRepositories`` in ``platform.json``. There were a lot of security issues and
+reports when PlatformIO Core 4.0 hangs when you manage external dependencies.
 
-One of the most requested features was a "global" or "common" project
-environment (:ref:`projectconf_section_env`) where developers can share common configuration between all declared build environments ``[env:NAME]``.
+PlatformIO Core 5.0 uses THE ONLY official **PlatformIO Trusted Registry** that
+supports not only the libraries but also :ref:`platforms` and toolchains.
 
-The previous solution in PlatformIO Core 3.0 was using :ref:`projectconf_dynamic_vars`.
-As practice has shown, this approach was not good and more advanced :ref:`projectconf`
-looked so complicated and hard for managing (for example, open source
-projects `MarlinFirmware <https://github.com/MarlinFirmware/Marlin/blob/3bf43b6c1e5051ee279a07babffdfb73e3aa812d/platformio.ini>`__,
-`Espurna <https://github.com/xoseperez/espurna/blob/2cd7a8717aff1d277b4777d7f90a3e086ed9e619/code/platformio.ini>`__).
+Package maintainers can publish their libraries, development platforms, and toolchains
+to the registry using :ref:`cmd_package` CLI.
 
-PlatformIO Core 4.0 introduces a new global scope named ``[env]`` which allows
-declaring global options that will be shared between all ``[env:NAME]``
-sections in :ref:`projectconf`. For example,
+.. _core_migration_libmanager:
 
-.. code-block:: ini
+Library Manager
+~~~~~~~~~~~~~~~
 
-    [env]
-    platform = ststm32
-    framework = stm32cube
-    board = nucleo_l152re
-    lib_deps = Dep1, Dep2
-
-    [env:release]
-    build_flags = -D RELEASE
-    lib_deps =
-        ${env.lib_deps}
-        Dep3
-
-    [env:debug]
-    build_type = debug
-    build_flags = -D DEBUG
-    lib_deps = DepCustom
-
-In this example we have 2 build environments ``release`` and ``debug``. This
-is the same if you duplicate all options (PlatformIO Core 3.0 compatible):
+The biggest improvement for :ref:`librarymanager` is the owner-based dependency declaration.
+You can finally forget about conflicts with library names in the registry. Use the new
+syntax ``ownername/pkgname`` to declare an owner-based dependency in :ref:`projectconf`
+via :ref:`projectconf_lib_deps`:
 
 .. code-block:: ini
 
-    [env:release]
-    platform = ststm32
-    framework = stm32cube
-    board = nucleo_l152re
-    build_flags = -D RELEASE
-    lib_deps = Dep1, Dep2, Dep3
+  [env:myenv]
+  platform = ...
+  framework = ...
+  board = ...
+  lib_deps =
+    bblanchon/ArduinoJson @ ^6.16.1
+    knolleary/PubSubClient @ ^2.8
 
-    [env:debug]
-    platform = ststm32
-    framework = stm32cube
-    board = nucleo_l152re
-    build_type = debug
-    build_flags = -D DEBUG
-    lib_deps = DepCustom
-
-External Configuration Files
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To simplify the project configuration process, PlatformIO Core 4.0 adds support
-for external :ref:`projectconf`. Yes! You can finally extend one configuration
-file with another or with a list of them. The cool feature is a support for
-Unix shell-style wildcards. So, you can dynamically generate :ref:`projectconf`
-files or load bunch of them from a folder.
-See :ref:`projectconf_pio_extra_configs` option for details and a simple example
-below:
-
-*Base "platformio.ini"*
-
-.. code-block:: ini
-
-    [platformio]
-    extra_configs =
-      extra_envs.ini
-      extra_debug.ini
-
-    [common]
-    debug_flags = -D RELEASE
-    lib_flags = -lc -lm
-
-    [env:esp-wrover-kit]
-    platform = espressif32
-    framework = espidf
-    board = esp-wrover-kit
-    build_flags = ${common.debug_flags}
-
-
-*"extra_envs.ini"*
-
-.. code-block:: ini
-
-    [env:esp32dev]
-    platform = espressif32
-    framework = espidf
-    board = esp32dev
-    build_flags = ${common.lib_flags} ${common.debug_flags}
-
-    [env:lolin32]
-    platform = espressif32
-    framework = espidf
-    board = lolin32
-    build_flags = ${common.debug_flags}
-
-
-*"extra_debug.ini"*
-
-.. code-block:: ini
-
-    # Override base "common.debug_flags"
-    [common]
-    debug_flags = -D DEBUG=1
-
-    [env:lolin32]
-    build_flags = -Og
-
-After a parsing process, configuration state will be the next:
-
-.. code-block:: ini
-
-    [common]
-    debug_flags = -D DEBUG=1
-    lib_flags = -lc -lm
-
-    [env:esp-wrover-kit]
-    platform = espressif32
-    framework = espidf
-    board = esp-wrover-kit
-    build_flags = ${common.debug_flags}
-
-    [env:esp32dev]
-    platform = espressif32
-    framework = espidf
-    board = esp32dev
-    build_flags = ${common.lib_flags} ${common.debug_flags}
-
-    [env:lolin32]
-    platform = espressif32
-    framework = espidf
-    board = lolin32
-    build_flags = -Og
-
-New Options
-^^^^^^^^^^^
-
-We have added new options and changed some existing ones. Here are the new or
-updated options.
-
-.. list-table::
-    :header-rows:  1
-
-    * - Section
-      - Option
-      - Description
-    * - platformio
-      - :ref:`projectconf_pio_extra_configs`
-      - Extend base configuration with external :ref:`projectconf`
-    * - platformio
-      - :ref:`projectconf_pio_core_dir`
-      - Directory where PlatformIO stores development platform packages
-        (toolchains, frameworks, SDKs, upload and debug tools), global
-        libraries for :ref:`ldf`, and other PlatformIO Core service data
-    * - platformio
-      - :ref:`projectconf_pio_globallib_dir`
-      - Global library storage for PlatfrmIO projects and
-        :ref:`librarymanager` where :ref:`ldf` looks for dependencies
-    * - platformio
-      - :ref:`projectconf_pio_platforms_dir`
-      - Global storage where **PlatformIO Package Manager**
-        installs :ref:`platforms`
-    * - platformio
-      - :ref:`projectconf_pio_packages_dir`
-      - Global storage where **PlatformIO Package Manager** installs
-        :ref:`platforms` dependencies (toolchains, :ref:`frameworks`, SDKs,
-        upload and debug tools)
-    * - platformio
-      - :ref:`projectconf_pio_cache_dir`
-      - :ref:`piocore` uses this folder to store caching information (requests
-        to PlatformIO Registry, downloaded packages and other service information)
-    * - platformio
-      - :ref:`projectconf_pio_workspace_dir`
-      - A path to a project workspace directory where PlatformIO keeps by
-        default compiled objects, static libraries, firmwares, and external
-        library dependencies
-    * - platformio
-      - :ref:`projectconf_pio_shared_dir`
-      - :ref:`pioremote` uses this folder to synchronize extra files between
-        remote machine
-    * - env
-      - :ref:`projectconf_build_type`
-      - See extended documentation for :ref:`build_configurations`
-    * - env
-      - :ref:`projectconf_monitor_flags`
-      - Pass extra flags and options to :ref:`cmd_device_monitor` command
-    * - env
-      - :ref:`projectconf_upload_command`
-      - Override default :ref:`platforms` upload command with a custom one.
-
-Library Management
-~~~~~~~~~~~~~~~~~~
-
-Library management brings a few new changes which resolve historical issues
-presented in PlatformIO 3.0:
-
-1. ``.piolibdeps`` folder was moved to :ref:`projectconf_pio_libdeps_dir`
-   of :ref:`project workspace <projectconf_pio_workspace_dir>`.
-
-   If you manually added library dependencies to old ``.piolibdeps`` folder,
-   please declare them in :ref:`projectconf_lib_deps`. **We do not recommend**
-   modifying any files or folders in :ref:`projectconf_pio_workspace_dir`.
-   This is an internal location for PlatformIO Core artifacts and temporary files.
-   PlatformIO Core 4.0 may delete/cleanup this folder in a service purpose any time.
-
-2. :ref:`ldf` now uses isolated library dependency storage per project build
-   environment. It resolves conflicts when the libraries from different
-   build environments declared via :ref:`projectconf_lib_deps` option
-   were installed into the same ``.piolibdeps`` folder.
-
-See **Library Management** section in :ref:`release_notes_4` release notes
-for more details.
+You can find an owner name of a library in the registry using
+:ref:`piohome` > Libraries > Some Library > Installation tab.
 
 Build System
 ~~~~~~~~~~~~
 
-PlatformIO Core 4.0 uses a new :ref:`projectconf_pio_build_dir` instead of
-``.pioenvs`` for compiled objects, archived libraries, firmware binaries
-and, other artifacts. A new :ref:`projectconf_build_type` option allows you
-to control a build process between "Release" and "Debug" modes
-(see :ref:`build_configurations`).
+SCons 4.0
+'''''''''
 
-See **Build System** section in :ref:`release_notes_4` release notes
+PlatformIO Core 5.0 build engine has been upgraded to the latest `SCons 4.0 - a next-generation software construction tool <https://scons.org/>`__:
+
+* :ref:`Configuration files are Python scripts <projectconf_advanced_scripting>` – use the power of a real programming language to solve build problems
+* Built-in reliable and automatic dependency analysis
+* Improved support for parallel builds
+* Ability to :ref:`share built files in a cache <projectconf_pio_cache_dir>` to speed up multiple builds.
+
+Custom Targets
+''''''''''''''
+
+PlatformIO Core 5.0 gives more freedom to developers and :ref:`platforms` maintainers.
+They can now declare the :ref:`projectconf_advanced_scripting_custom_targets`:
+
+* Pre/Post processing based on dependent sources (another target, source file, etc.)
+* Command launcher with own arguments
+* Launch command with custom options declared in :ref:`projectconf`
+* Python callback as a target (use the power of Python interpreter and PlatformIO Build API)
+* List available project targets (including dev-platform specific and custom targets) with a new :option:`platformio run --list-targets` command
+
+See **Build System** section in :ref:`release_notes_5` release notes
 for more details.
-
-Package Dependencies
-^^^^^^^^^^^^^^^^^^^^^
-
-PlatformIO has decentralized architecture and allows platform maintainers
-to create :ref:`platform_creating` for PlatformIO ecosystem. Each development
-platform depends on a list of packages (toolchains, SDKs, debugging servers,
-etc). PlatformIO Package Manager installs these packages automatically and
-PlatformIO Build System uses them later.
-
-Starting from PlatformIO Core 4.0, developers can see which versions of
-a development platform or its dependent packages will be used. This is a great addition
-to track changes (:ref:`frameworks`, SDKs) between :ref:`platforms` updates.
-See an example with "staging" (Git) version of :ref:`platform_espressif8266`
-development platform:
-
-.. code-block:: shell
-
-  Processing nodemcuv2 (platform: https://github.com/platformio/platform-espressif8266.git#feature/stage; board: nodemcuv2; framework: arduino)
-  -------------------------------------------------------------------------------
-  Verbose mode can be enabled via `-v, --verbose` option
-  CONFIGURATION: https://docs.platformio.org/page/boards/espressif8266/nodemcuv2.html
-  PLATFORM: Espressif 8266 (Stage) 2.3.0-alpha.1 #990141d > NodeMCU 1.0 (ESP-12E Module)
-  HARDWARE: ESP8266 80MHz, 80KB RAM, 4MB Flash
-  PACKAGES: toolchain-xtensa 2.40802.190218 (4.8.2), tool-esptool 1.413.0 (4.13), tool-esptoolpy 1.20600.0 (2.6.0), framework-arduinoespressif8266 78a1a66
-  LDF: Library Dependency Finder -> http://bit.ly/configure-pio-ldf
-  LDF Modes: Finder ~ chain+, Compatibility ~ soft
-  Found 35 compatible libraries
-  Scanning dependencies...
-
-Custom Platform Packages
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Sometimes you need to override default :ref:`platforms` packages or add an
-extra. PlatformIO Core 4.0 introduces a new configuration option
-:ref:`projectconf_env_platform_packages` per a build environment.
-Also, using this option you can install external packages and use them later
-as programmers or upload tools. See a few examples:
-
-.. code-block:: ini
-
-    [env:override_default_toolchain]
-    platform = atmelavr
-    platform_packages =
-      ; use GCC AVR 5.0+
-      toolchain-gccarmnoneeabi@>1.50000.0
-
-    [env:override_framework]
-    platform = espressif8266
-    platform_packages =
-      ; use upstream Git version
-      framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
-
-    [env:external_package]
-    platform = ststm32
-    platform_packages =
-      ; latest openOCD from PlatformIO Package Registry
-      tool-openocd
-
-      ; source code of ST-Link
-      tool-stlink-source @ https://github.com/texane/stlink.git
-
-Custom Upload Command
-^^^^^^^^^^^^^^^^^^^^^
-
-PlatformIO's :ref:`platforms` have pre-configured settings to program boards
-or devices. They depend on a type of bootloader or programming interface.
-PlatformIO Core 4.0 allows you to override default upload command using
-:ref:`projectconf_upload_command` option in :ref:`projectconf`:
-
-.. code-block:: ini
-
-    [env:custom_upload_cmd]
-    platform = ...
-    framework = ...
-    board = ...
-    upload_command = /my/flasher arg1 arg2 --flag1 $SOURCE
-
-See real examples for :ref:`projectconf_upload_command`.
-
-Shared Cache Directory
-^^^^^^^^^^^^^^^^^^^^^^
-
-PlatformIO Core 4.0 allows you to configure a shared folder for the derived
-files (objects, firmwares, ELFs) from a build system using
-:ref:`projectconf_pio_build_cache_dir`. You can use it in multi-environments
-project configuration to avoid multiple compilations of the same source code
-files.
-
-The example of :ref:`projectconf` below instructs PlatformIO Build System to
-check :ref:`projectconf_pio_build_cache_dir` for already compiled objects for
-:ref:`framework_stm32cube` and project source files. The cached object will
-not be used if the original source file was modified or build environment has
-a different configuration (new build flags, etc):
-
-.. code-block:: ini
-
-    [platformio]
-    ; set a path to a cache folder
-    build_cache_dir = /tmp/platformio-shared-cache
-
-    [env:bluepill_f103c6]
-    platform = ststm32
-    framework = stm32cube
-    board = bluepill_f103c6
-
-    [env:nucleo_f411re]
-    platform = ststm32
-    framework = stm32cube
-    board = nucleo_f411re
-
-You can also use the same :ref:`projectconf_pio_build_cache_dir` between
-different projects if they use the same :ref:`platforms` and :ref:`frameworks`.
 
 What is changed or removed
 --------------------------
 
+packageRepositories
+~~~~~~~~~~~~~~~~~~~
+
+PlatformIO Core 5.0 does not support unofficial package repositories declared through
+``packageRepositories`` in ``platform.json`` that was introduced in PlatformIO 3.0.
+
+Please publish your development platforms and toolchains to the **PlatformIO Trusted
+Registry** using :ref:`cmd_package` CLI.
+
 Command Line Interface
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The following commands have been changed in v4.0.
+The following commands have been changed in v5.0.
 
 .. list-table::
     :header-rows:  1
 
     * - Command
       - Description
+    * - :ref:`cmd_access`
+      - **New**. Manage package access for users, teams, and maintainers
+    * - :ref:`cmd_package`
+      - **New**. Manage packages in the registry (publish, unpublish)
+    * - :ref:`cmd_project_data`
+      - **New**. Dump build system data intended for IDE extensions/plugins
+    * - :ref:`cmd_system_info`
+      - **New**. Display system-wide information
+    * - :ref:`cmd_system_prune`
+      - **New**. Remove unused data
+    * - :ref:`cmd_project_init`
+      - Update project configuration for the specific environment using :option:`platformio project init --environment` option
     * - :ref:`cmd_run`
-      - Added :option:`platformio run --jobs` option
-    * - :ref:`cmd_update`
-      - Replaced ``-c, --only-check`` with :option:`platformio update --dry-run`
-    * - :ref:`cmd_lib_update`
-      - Replaced ``-c, --only-check`` with :option:`platformio lib update --dry-run`
-    * - :ref:`cmd_platform_update`
-      - Replaced ``-c, --only-check`` with :option:`platformio platform update --dry-run`
-    * - :ref:`cmd_remote_update`
-      - Replaced ``-c, --only-check`` with :option:`platformio remote update --dry-run`
-
-:ref:`projectconf`
-~~~~~~~~~~~~~~~~~~
-
-The following options have been changed in v4.0.
-
-.. list-table::
-    :header-rows:  1
-
-    * - Section
-      - Option
-      - Description
-    * - platformio
-      - ``env_default``
-      - Renamed to :ref:`projectconf_pio_default_envs`
-    * - platformio
-      - ``home_dir``
-      - Renamed to :ref:`projectconf_pio_core_dir`
-    * - env
-      - ``debug_load_cmd``
-      - Renamed to :ref:`projectconf_debug_load_cmds` and allowed to pass more
-        than one load command
+      - List projects targets with :option:`platformio run --list-targets` option
+    * - :ref:`cmd_account_destroy`
+      - New command to remove permanently :ref:`pioaccount` and related data

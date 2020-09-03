@@ -28,7 +28,7 @@ Usage
 Description
 -----------
 
-Check or update installed PIO Core packages, :ref:`platforms` and global
+Check or update installed PlatformIO Core packages, :ref:`platforms` and global
 :ref:`Libraries <librarymanager>`. This command is combination of 2 sub-commands:
 
 * :ref:`cmd_platform_update`

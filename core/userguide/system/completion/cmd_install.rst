@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_misc_completion_install:
+.. _cmd_system_completion_install:
 
-platformio misc completion install
-==================================
+platformio system completion install
+====================================
 
 .. contents::
 
@@ -21,8 +21,8 @@ Usage
 
 .. code-block:: bash
 
-    platformio misc completion install [OPTIONS]
-    pio misc completion install [OPTIONS]
+    platformio system completion install [OPTIONS]
+    pio system completion install [OPTIONS]
 
 
 Description
@@ -33,7 +33,7 @@ Install shell completion files or code.
 Options
 ~~~~~~~
 
-.. program:: platformio misc completion install
+.. program:: platformio system completion install
 
 .. option::
     --shell
@@ -58,7 +58,7 @@ Examples
 
 .. code::
 
-    > pio misc completion install
+    > pio system completion install
 
     PlatformIO CLI completion has been installed for fish shell to ~/.config/fish/completions/pio.fish
     Please restart a current shell session

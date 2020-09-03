@@ -155,16 +155,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-nuclei-sdk <https://github.com/Nuclei-Software/nuclei-sdk?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-nuclei-sdk <https://github.com/Nuclei-Software/nuclei-sdk.git?utm_source=platformio.org&utm_medium=docs>`__
       - Nuclei N/NX Embedded Software Development Kit
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
-      - SEGGER J-Link Software and Documentation Pack
+      - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-openocd-nuclei <https://github.com/riscv-mcu/riscv-openocd?utm_source=platformio.org&utm_medium=docs>`__
-      - OpenOCD branch with Nuclei RISCV support
+    * - `tool-openocd-nuclei <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Open On-Chip Debugger branch with RISC-V Nuclei support
 
-    * - `toolchain-riscv-gcc-nuclei <https://github.com/riscv-mcu/riscv-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-riscv-gcc-nuclei <https://github.com/riscv-mcu/riscv-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
       - Nuclei RISC-V GCC toolchain
 
 .. warning::

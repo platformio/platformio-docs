@@ -75,4 +75,4 @@ Packages
       - Description
 
     * - `toolchain-gcclinux32 <https://gcc.gnu.org?utm_source=platformio.org&utm_medium=docs>`__
-      - GCC for Linux i686
+      - GCC Toolchain for Linux i686 machines

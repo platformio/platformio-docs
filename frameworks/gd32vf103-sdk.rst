@@ -17,7 +17,7 @@ GigaDevice GD32V SDK
 :Configuration:
   :ref:`projectconf_env_framework` = ``gd32vf103-sdk``
 
-GigaDevice GD32VF103 Firmware Library (SDK)
+GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
 
 For more detailed information please visit `vendor site <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio.org&utm_medium=docs>`_.
 

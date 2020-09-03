@@ -45,12 +45,12 @@ Web-server HTTP port, default is ``8008``.
     --host
 
 Web-server HTTP host, default is ``127.0.0.1``.
-You can open PIO Home for inbound connections using host ``0.0.0.0``.
+You can open PlatformIO Home for inbound connections using host ``0.0.0.0``.
 
 .. option::
     --no-open
 
-Do not automatically open PIO Home in a system Web-browser.
+Do not automatically open PlatformIO Home in a system Web-browser.
 
 .. option::
     --shutdown-timeout
@@ -71,5 +71,5 @@ Examples
     |[]| [] |  http://127.0.0.1:8008
     |__|____|_______________________
 
-    Open PIO Home in your browser by this URL => http://127.0.0.1:8008
-    PIO Home has been started. Press Ctrl+C to shutdown.
+    Open PlatformIO Home in your browser by this URL => http://127.0.0.1:8008
+    PlatformIO Home has been started. Press Ctrl+C to shutdown.

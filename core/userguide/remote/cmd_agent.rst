@@ -11,8 +11,8 @@
 
 .. _cmd_remote_agent:
 
-PIO Remote Agent
-================
+PlatformIO Remote Agent
+=======================
 
 Start :ref:`cmd_remote_agent` on a host machine and work remotely with
 your devices **WITHOUT** extra software, services, SSH, VPN, tunneling or
@@ -105,4 +105,4 @@ The valid value for ``--share`` option is email address that was used for
     -d, --working-dir
 
 A working directory where :ref:`cmd_remote_agent` stores projects data for
-incremental synchronization and embedded programs for PIO Process Supervisor.
+incremental synchronization and embedded programs for PlatformIO Process Supervisor.

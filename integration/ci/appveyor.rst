@@ -58,7 +58,7 @@ This variant is default choice for native PlatformIO projects:
         - cmd: pip install -U platformio
 
     test_script:
-        - cmd: platformio run /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
+        - cmd: platformio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
 Using :ref:`cmd_ci` command

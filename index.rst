@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-PlatformIO is a new generation ecosystem for embedded development
-=================================================================
+Professional collaborative platform for embedded development
+============================================================
 
-**A place where Developers and Teams have true Freedom! No more hardware or software lock-ins!**
+**A place where Developers and Teams have true Freedom! No more vendor lock-in!**
 
 * Open source, maximum permissive Apache 2.0 license
 * Cross-platform IDE and Unified Debugger
@@ -65,11 +65,11 @@ Contents
     :caption: Professional
     :maxdepth: 1
 
+    Debugging <plus/debugging>
+    Unit Testing <plus/unit-testing>
+    Static Code Analysis <plus/pio-check>
+    Remote Development <plus/pio-remote>
     plus/pio-account
-    plus/pio-check
-    plus/pio-remote
-    plus/debugging
-    plus/unit-testing
 
 .. toctree::
     :caption: Integration

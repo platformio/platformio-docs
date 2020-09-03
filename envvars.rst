@@ -86,6 +86,8 @@ Directories
 
 Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_core_dir`.
 
+It may need to re-install :ref:`piocore` (remove default core directory) to take effect.
+
 .. envvar:: PLATFORMIO_GLOBALLIB_DIR
 
 Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_globallib_dir`.

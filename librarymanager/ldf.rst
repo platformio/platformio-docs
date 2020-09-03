@@ -63,7 +63,7 @@ project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
 :``off``:
     "Manual mode", does not process source files of a project and dependencies.
     Builds only the libraries that are specified in manifests
-    (:ref:`library_config`, ``module.json``) or using :ref:`projectconf_lib_deps`
+    (:ref:`library_json`, ``module.json``) or using :ref:`projectconf_lib_deps`
     option.
 
 :``chain``:
@@ -144,7 +144,7 @@ Compatibility Mode
 ------------------
 
 Compatibility mode allows one to control strictness of Library Dependency Finder.
-If library contains one of manifest file (:ref:`library_config`,
+If library contains one of manifest file (:ref:`library_json`,
 ``library.properties``, ``module.json``), then LDF check compatibility of this
 library with real build environment. Available compatibility modes:
 

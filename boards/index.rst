@@ -36,6 +36,21 @@ Aceinna IMU
     aceinna_imu/OpenRTK
     aceinna_imu/OpenRTK330L
 
+ASR Microelectronics ASR605x
+----------------------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    asrmicro650x/cubecell_capsule_solar_sensor
+    asrmicro650x/cubecell_node
+    asrmicro650x/cubecell_board
+    asrmicro650x/cubecell_board_plus
+    asrmicro650x/cubecell_capsule
+    asrmicro650x/cubecell_gps
+    asrmicro650x/cubecell_module
+    asrmicro650x/cubecell_module_plus
+
 Atmel AVR
 ---------
 
@@ -68,6 +83,7 @@ Atmel AVR
     atmelavr/ATmega328P
     atmelavr/ATmega328PB
     atmelavr/ATmega48
+    atmelavr/ATmega48P
     atmelavr/ATmega48PB
     atmelavr/ATmega64
     atmelavr/ATmega640
@@ -79,7 +95,8 @@ Atmel AVR
     atmelavr/ATmega88
     atmelavr/ATmega88P
     atmelavr/ATmega88PB
-    atmelavr/ATmega48P
+    atmelavr/attiny13
+    atmelavr/attiny13a
     atmelavr/bluefruitmicro
     atmelavr/circuitplay_classic
     atmelavr/feather328p
@@ -152,8 +169,6 @@ Atmel AVR
     atmelavr/engduinov3
     atmelavr/mayfly
     atmelavr/fysetc_f6_13
-    atmelavr/attiny13
-    atmelavr/attiny13a
     atmelavr/attiny1634
     atmelavr/attiny167
     atmelavr/attiny2313
@@ -321,14 +336,28 @@ Atmel SAM
     atmelsam/sodaq_sff
     atmelsam/sainSmartDue
     atmelsam/sainSmartDueUSB
+    atmelsam/seeed_femto
     atmelsam/seeeduino_lorawan
+    atmelsam/seeed_wio_lite_mg126
+    atmelsam/seeed_wio_terminal
+    atmelsam/seeed_xiao
+    atmelsam/seeed_zero
     atmelsam/sparkfun_samd21_9dof
     atmelsam/sparkfun_qwiic_micro_samd21e
     atmelsam/sparkfun_redboard_turbo
     atmelsam/sparkfun_samd21_dev_usb
     atmelsam/sparkfun_samd21_mini_usb
     atmelsam/sparkfun_samd21_proRF
+    atmelsam/sparkfun_samd51_thing_plus
     atmelsam/tuinozero96
+
+CHIPS Alliance
+--------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    chipsalliance/swervolf_nexys
 
 Espressif 32
 ------------
@@ -483,6 +512,7 @@ Freescale Kinetis
     freescalekinetis/frdm_kw24d
     freescalekinetis/frdm_kw41z
     freescalekinetis/hexiwear
+    freescalekinetis/segger_ip_switch
 
 GigaDevice GD32V
 ----------------
@@ -670,6 +700,7 @@ Nordic nRF52
         
     nordicnrf52/96b_nitrogen
     nordicnrf52/adafruit_feather_nrf52832
+    nordicnrf52/adafruit_clue_nrf52840
     nordicnrf52/adafruit_feather_nrf52840_sense
     nordicnrf52/adafruit_feather_nrf52840
     nordicnrf52/nano33ble
@@ -748,6 +779,8 @@ NXP LPC
     nxplpc/lpc1549
     nxplpc/lpc54114
     nxplpc/lpc546xx
+    nxplpc/lpcxpresso55s16
+    nxplpc/lpcxpresso55s69
     nxplpc/lpc11u24
     nxplpc/lpc1768
     nxplpc/mbuino
@@ -804,6 +837,7 @@ Silicon Labs EFM32
     siliconlabsefm32/efm32zg_stk3200
     siliconlabsefm32/efm32hg_stk3400
     siliconlabsefm32/efm32pg_stk3401
+    siliconlabsefm32/efm32gg11_stk3701
     siliconlabsefm32/tb_sense_12
 
 ST STM32
@@ -821,6 +855,7 @@ ST STM32
     ststm32/st3dp001_eval
     ststm32/b96b_argonkey
     ststm32/b96b_f446ve
+    ststm32/b96b_aerocore2
     ststm32/b96b_neonkey
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
@@ -841,9 +876,11 @@ ST STM32
     ststm32/bluepill_f103c8_128k
     ststm32/coreboard_f401rc
     ststm32/demo_f030f4
+    ststm32/electrosmith_daisy
     ststm32/elmo_f411re
     ststm32/diymore_f407vgt
     ststm32/fk407m1
+    ststm32/fysetc_s6
     ststm32/rhombio_l476dmw1k
     ststm32/malyanm200_f070cb
     ststm32/malyanm300_f070cb
@@ -869,6 +906,10 @@ ST STM32
     ststm32/olimexino
     ststm32/olimex_p405
     ststm32/nucleo_wb55rg_p
+    ststm32/pybstick26_duino
+    ststm32/pybstick26_pro
+    ststm32/pybstick26_lite
+    ststm32/pybstick26_std
     ststm32/piconomix_px_her0
     ststm32/prntr_v2
     ststm32/rak811_tracker
@@ -936,6 +977,7 @@ ST STM32
     ststm32/disco_f051r8
     ststm32/disco_f303vc
     ststm32/disco_f407vg
+    ststm32/disco_g031j6
     ststm32/eval_l073z
     ststm32/disco_l152rb
     ststm32/disco_f100rb
@@ -946,37 +988,83 @@ ST STM32
     ststm32/eval_f107vc
     ststm32/eval_f373vc
     ststm32/eval_f072vb
+    ststm32/genericSTM32F103C4
+    ststm32/genericSTM32F103C6
     ststm32/genericSTM32F103C8
     ststm32/genericSTM32F103CB
+    ststm32/genericSTM32F103R4
+    ststm32/genericSTM32F103R6
     ststm32/genericSTM32F103R8
     ststm32/genericSTM32F103RB
     ststm32/genericSTM32F103RC
+    ststm32/genericSTM32F103RD
     ststm32/genericSTM32F103RE
+    ststm32/genericSTM32F103RF
+    ststm32/genericSTM32F103RG
+    ststm32/genericSTM32F103T4
+    ststm32/genericSTM32F103T6
     ststm32/genericSTM32F103T8
     ststm32/genericSTM32F103TB
+    ststm32/genericSTM32F103V8
     ststm32/genericSTM32F103VB
     ststm32/genericSTM32F103VC
     ststm32/genericSTM32F103VD
     ststm32/genericSTM32F103VE
+    ststm32/genericSTM32F103VF
+    ststm32/genericSTM32F103VG
     ststm32/genericSTM32F103ZC
     ststm32/genericSTM32F103ZD
     ststm32/genericSTM32F103ZE
+    ststm32/genericSTM32F103ZF
+    ststm32/genericSTM32F103ZG
     ststm32/genericSTM32F303CB
+    ststm32/genericSTM32F401CB
+    ststm32/genericSTM32F401CC
+    ststm32/genericSTM32F401CD
+    ststm32/genericSTM32F401CE
     ststm32/genericSTM32F401RB
     ststm32/genericSTM32F401RC
+    ststm32/genericSTM32F401RD
     ststm32/genericSTM32F401RE
+    ststm32/genericSTM32F405RG
     ststm32/genericSTM32F407VET6
     ststm32/genericSTM32F407VGT6
+    ststm32/genericSTM32F410C8
+    ststm32/genericSTM32F410CB
+    ststm32/genericSTM32F410R8
+    ststm32/genericSTM32F410RB
+    ststm32/genericSTM32F411CC
+    ststm32/genericSTM32F411CE
+    ststm32/genericSTM32F411RC
+    ststm32/genericSTM32F411RE
+    ststm32/genericSTM32F412CE
+    ststm32/genericSTM32F412CG
+    ststm32/genericSTM32F412RE
+    ststm32/genericSTM32F412RG
+    ststm32/genericSTM32F413CG
+    ststm32/genericSTM32F413CH
+    ststm32/genericSTM32F413RG
+    ststm32/genericSTM32F413RH
+    ststm32/genericSTM32F415RG
+    ststm32/genericSTM32F417VE
+    ststm32/genericSTM32F417VG
+    ststm32/genericSTM32F423CH
+    ststm32/genericSTM32F423RH
+    ststm32/genericSTM32F446RC
+    ststm32/genericSTM32F446RE
     ststm32/stm32f4stamp
     ststm32/disco_f750n8
-    ststm32/disco_h743xi
+    ststm32/disco_h747xi
     ststm32/seeedArchMax
     ststm32/wio_3g
     ststm32/steval_mksboxv1
     ststm32/sparky_v1
     ststm32/thunder_pack
+    ststm32/thunder_pack_f411
     ststm32/hy_tinystm103tb
     ststm32/vake_v1
+    ststm32/vccgnd_f103zet6
+    ststm32/blackpill_f411ce
     ststm32/wraith32_v1
     ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211

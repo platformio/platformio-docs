@@ -167,7 +167,7 @@ Force verbose output when processing environments. This setting overrides
 :Default:   ~/Documents/PlatformIO/Projects
 :Values:    Path to folder
 
-Default location for PlatformIO projects (PIO Home)
+Default location for PlatformIO projects (PlatformIO Home)
 
 Examples
 ~~~~~~~~
@@ -189,7 +189,7 @@ Examples
     strict_ssl                      No                Strict SSL for PlatformIO Services
     enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
-    projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PIO Home)
+    projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PlatformIO Home)
 
 
 2. Show specified setting
@@ -267,4 +267,4 @@ Examples
     strict_ssl                      No                Enable SSL for PlatformIO Services
     enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
-    projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PIO Home)
+    projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PlatformIO Home)

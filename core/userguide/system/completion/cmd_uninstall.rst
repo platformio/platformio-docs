@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_misc_completion_uninstall:
+.. _cmd_system_completion_uninstall:
 
-platformio misc completion uninstall
-====================================
+platformio system completion uninstall
+======================================
 
 .. contents::
 
@@ -21,8 +21,8 @@ Usage
 
 .. code-block:: bash
 
-    platformio misc completion uninstall [OPTIONS]
-    pio misc completion uninstall [OPTIONS]
+    platformio system completion uninstall [OPTIONS]
+    pio system completion uninstall [OPTIONS]
 
 
 Description
@@ -33,7 +33,7 @@ Uninstall shell completion files or code.
 Options
 ~~~~~~~
 
-.. program:: platformio misc completion uninstall
+.. program:: platformio system completion uninstall
 
 .. option::
     --shell
@@ -58,7 +58,7 @@ Examples
 
 .. code::
 
-    > pio misc completion uninstall
+    > pio system completion uninstall
 
     PlatformIO CLI completion has been uninstalled for fish shell from ~/.config/fish/completions/pio.fish
     Please restart a current shell session.

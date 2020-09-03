@@ -17,7 +17,7 @@ Simba
 :Configuration:
   :ref:`projectconf_env_framework` = ``simba``
 
-Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
 For more detailed information please visit `vendor site <http://simba-os.readthedocs.org?utm_source=platformio.org&utm_medium=docs>`_.
 

@@ -19,7 +19,7 @@ Atmel SAM
 
 Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
-For more detailed information please visit `vendor site <http://www.atmel.com/products/microcontrollers/arm/default.aspx?utm_source=platformio.org&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.microchip.com/design-centers/32-bit?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -34,12 +34,12 @@ Examples are listed from `Atmel SAM development platform repository <https://git
 * `mbed-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `zephyr-drivers-i2c-scanner <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-drivers-i2c-scanner?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-subsys-logger <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-subsys-logger?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `simba-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/simba-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
+* `zephyr-drivers-lcd-hd44780 <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-drivers-lcd-hd44780?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-external-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-external-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-web-thing-led <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-web-thing-led?utm_source=platformio.org&utm_medium=docs>`_
@@ -395,7 +395,32 @@ Please click on board name for the further details.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_atmelsam_seeed_femto`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_lite_mg126`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_terminal`
+      - SAMD51P19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_zero`
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -430,6 +455,11 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_tuinozero96`
       - SAMD21G18A
       - 48MHz
@@ -479,124 +509,136 @@ Packages
       - Description
 
     * - `framework-arduino-mbcwb <https://briki.org?utm_source=platformio.org&utm_medium=docs>`__
-      - Fork of Arduino framework for briki MBC-WB boards
+      - Fork of Arduino Framework for briki MBC-WB boards
 
-    * - `framework-arduino-sam <https://github.com/arduino/ArduinoCore-sam?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (SAM Core)
+    * - `framework-arduino-sam <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+      - The official Arduino Wiring-based Framework for ATSAM3 microcontrollers
 
-    * - `framework-arduino-samd <https://github.com/arduino/ArduinoCore-samd?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (SAMD Core)
+    * - `framework-arduino-samd <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+      - The official Arduino Wiring-based Framework for Microchip SAM D microcontrollers
 
-    * - `framework-arduino-samd-adafruit <https://github.com/adafruit/ArduinoCore-samd?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Adafruit SAMD Core)
+    * - `framework-arduino-samd-adafruit <https://github.com/adafruit/ArduinoCore-samd.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (Adafruit SAMD Core)
 
-    * - `framework-arduino-samd-moteino <https://github.com/LowPowerLab/Arduino?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Moteino SAMD Core)
+    * - `framework-arduino-samd-moteino <https://github.com/LowPowerLab/Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (Moteino SAMD Core)
 
-    * - `framework-arduino-samd-reprap <https://github.com/brupje/ArduinoCore-samd?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (RepRap SAMD Core)
+    * - `framework-arduino-samd-reprap <https://github.com/brupje/ArduinoCore-samd.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (RepRap SAMD Core)
 
-    * - `framework-arduino-samd-sodaq <https://github.com/SodaqMoja/SodaqCore-samd?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (SODAQ SAMD Core)
+    * - `framework-arduino-samd-seeed <https://github.com/Seeed-Studio/ArduinoCore-samd.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (Seeed SAMD Core)
 
-    * - `framework-arduino-samd-sparkfun <https://github.com/sparkfun/Arduino_Boards/tree/master/sparkfun/samd?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (SparkFun SAMD Core)
+    * - `framework-arduino-samd-sodaq <https://github.com/SodaqMoja/SodaqCore-samd.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (SODAQ SAMD Core)
 
-    * - `framework-arduino-samd-tuino0 <https://github.com/gimasi/TUINO_ZERO_96/tree/master/arduino_ide?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Tuino0 SAMD Core)
+    * - `framework-arduino-samd-sparkfun <https://github.com/sparkfun/Arduino_Boards/tree/master/sparkfun/samd.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (SparkFun SAMD Core)
+
+    * - `framework-arduino-samd-tuino0 <https://github.com/gimasi/TUINO_ZERO_96/tree/master/arduino_ide.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (Tuino0 SAMD Core)
 
     * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&utm_medium=docs>`__
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
-    * - `framework-cmsis-atmel <https://github.com/arduino/ArduinoModule-CMSIS-Atmel?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-cmsis-atmel <https://github.com/arduino/ArduinoModule-CMSIS-Atmel.git?utm_source=platformio.org&utm_medium=docs>`__
       - Atmel Smart ARM devices CMSIS module
 
     * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
-      - mbed Framework
+      - Arm Mbed OS is a platform operating system designed for the internet of things
 
-    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio.org&utm_medium=docs>`__
-      - Simba Framework
+    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
-    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio.org&utm_medium=docs>`__
-      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+    * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for CANopenNode - a free and open source CANopen Stack
 
-    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module CivetWeb Embedded C/C++ web server
+    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for CivetWeb Embedded C/C++ web server
 
-    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-cmsis <https://github.com/zephyrproject-rtos/cmsis.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Software Interface Standard for Arm Cortex-based Microcontrollers and Zephyr framework
+
+    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for FATFS filesystem
 
-    * - `framework-zephyr-hal-atmel <https://github.com/zephyrproject-rtos/hal_atmel?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-hal-atmel <https://github.com/zephyrproject-rtos/hal_atmel.git?utm_source=platformio.org&utm_medium=docs>`__
       - Atmel SAM HAL for Zephyr framework
 
-    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for HAL abstraction layer used by open-amp
 
-    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for littlefs filesystem
 
-    * - `framework-zephyr-loramac-node <https://github.com/zephyrproject-rtos/loramac-node?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-loramac-node <https://github.com/zephyrproject-rtos/loramac-node.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for LoRaWAN endpoint stack implementation
 
-    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
 
-    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls.git?utm_source=platformio.org&utm_medium=docs>`__
       - mbedTLS module for Zephyr
 
-    * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs
 
-    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for mcumgr management library for 32-bit MCUs
 
-    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for MIPI System Software Trace
 
-    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
 
-    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread.git?utm_source=platformio.org&utm_medium=docs>`__
       - OpenThread module for Zephyr
 
-    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Segger RTT
 
-    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Concise Binary Object Representation Library
 
-    * - `tool-avrdude <http://www.nongnu.org/avrdude/?utm_source=platformio.org&utm_medium=docs>`__
-      - AVRDUDE
+    * - `framework-zephyr-tinycrypt <https://github.com/zephyrproject-rtos/tinycrypt.git?utm_source=platformio.org&utm_medium=docs>`__
+      - The TinyCrypt Library provides an implementation for constrained devices of a minimal set of standard cryptography primitives for Zephyr framework
 
-    * - `tool-bossac <https://sourceforge.net/projects/b-o-s-s-a/?utm_source=platformio.org&utm_medium=docs>`__
-      - BOSSA CLI
+    * - `framework-zephyr-trusted-firmware-m <https://github.com/zephyrproject-rtos/trusted-firmware-m.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Trusted Firmware M provides a reference implementation of secure world software for ARMv8-M and Zephyr framework
+
+    * - `tool-avrdude <http://savannah.nongnu.org/projects/avrdude?utm_source=platformio.org&utm_medium=docs>`__
+      - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers
+
+    * - `tool-bossac <https://github.com/shumatech/BOSSA.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Basic Open Source SAM-BA Application (BOSSA)
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
 
-    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
       - Device tree compiler
 
     * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio.org&utm_medium=docs>`__
-      - GNU gperf is a perfect hash function generator.
+      - GNU gperf is a perfect hash function generator
 
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
-      - SEGGER J-Link Software and Documentation Pack
+      - Software and Documentation Pack for SEGGER J-Link debug probes
 
     * - `tool-mbctool <https://briki.org?utm_source=platformio.org&utm_medium=docs>`__
       - MBC-WB Uploader Application
 
     * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
-      - Ninja is a small build system with a focus on speed.
+      - Ninja is a small build system with a focus on speed
 
     * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
-      - OpenOCD
+      - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio.org&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
     **Linux Users**:
@@ -621,16 +663,16 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
 Boards
 ------
@@ -1124,7 +1166,37 @@ Seeed
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_seeed_femto`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_lite_mg126`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_terminal`
+      - External
+      - SAMD51P19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_zero`
       - External
       - SAMD21G18A
       - 48MHz
@@ -1179,6 +1251,12 @@ SparkFun
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
 
 meteca
 ~~~~~~

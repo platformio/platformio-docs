@@ -176,8 +176,6 @@ You can also specify which environments should be processed by default using
 Filters
 -------
 
-.. versionadded:: 4.3
-
 A list of filters that can be applied for monitor output using :option:`platformio device monitor --filter` or :ref:`projectconf` and :ref:`projectconf_monitor_filters` options.
 option.
 
@@ -213,8 +211,6 @@ option.
 
 Capture output to a file
 ------------------------
-
-.. versionadded:: 4.3
 
 You need to use a ``log2file`` filter from :ref:`cmd_device_monitor_filters`:
 

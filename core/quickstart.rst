@@ -234,7 +234,7 @@ are a few useful commands:
 * ``platformio run -e uno -t upload``. Build project only for ``uno`` and upload
   firmware.
 
-Please follow to :option:`platformio run --target` documentation for the other
+Please follow to :option:`platformio run --list-targets` documentation for the other
 targets.
 
 Finally, demo which demonstrates building project and uploading firmware to

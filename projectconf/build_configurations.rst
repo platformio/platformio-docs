@@ -14,8 +14,6 @@
 Build Configurations
 ====================
 
-.. versionadded:: 4.0.0
-
 There are 2 types (:ref:`projectconf_build_type`) of build configuration in
 PlatformIO:
 
@@ -31,7 +29,7 @@ PlatformIO:
   instructions is more complex.
 
 .. note::
-  If you need to control build flags that are specific for debug configuration please 
+  If you need to control build flags that are specific for debug configuration please
   refer to :ref:`projectconf_debug_build_flags`.
 
 If you need to build a project in ``debug`` configuration, please use one of

@@ -26,7 +26,7 @@ Usage
     platformio remote test [OPTIONS]
     pio remote test [OPTIONS]
 
-    # run tests on specified PIO Remote Agent
+    # run tests on specified PlatformIO Remote Agent
     platformio remote --agent NAME test [OPTIONS]
 
 Description

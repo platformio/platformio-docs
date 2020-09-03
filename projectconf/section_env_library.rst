@@ -52,8 +52,9 @@ you can use :ref:`projectconf_dynamic_vars` to use common configuration.
     LIBRARY_N
 
 The each line with ``LIBRARY_1... LIBRARY_N`` will be passed automatically to
-:ref:`cmd_lib_install` command. Please follow to :ref:`cmd_lib_install` for
-detailed documentation about possible values.
+:ref:`cmd_lib_install` command.
+
+Please check :ref:`cmd_lib_install` for the valid declaration formats.
 
 Example:
 
@@ -61,12 +62,21 @@ Example:
 
   [env:myenv]
   lib_deps =
-    13
-    PubSubClient
-    ArduinoJson@~5.6,!=5.4
+    ; name-based (built-in library in framework)
+    SPI
+
+    ; owner-based declaration
+    knolleary/PubSubClient
+
+    ; SemVer specification
+    bblanchon/ArduinoJson @ ~5.6,!=5.4
+
+    ; external Git resource
     https://github.com/gioblu/PJON.git#v2.0
-    me-no-dev/ESPAsyncTCP
+
+    ; custom name
     IRremoteESP8266=https://github.com/markszabo/IRremoteESP8266/archive/master.zip
+
 
 .. _projectconf_lib_ignore:
 
@@ -211,12 +221,12 @@ Create an archive (``*.a``, static library) from the object files and link it
 into a firmware (program). This is default behavior of PlatformIO Build System
 (``lib_archive = yes``).
 
-Setting ``lib_archive = no`` will instruct PIO Build System to link object
+Setting ``lib_archive = no`` will instruct PlatformIO Build System to link object
 files directly (in-line). This could be useful if you need to override ``weak``
 symbols defined in framework or other libraries.
 
 You can disable library archiving per a custom library using
-:ref:`libjson_archive` field in :ref:`library_config` manifest.
+:ref:`libjson_archive` field in :ref:`library_json` manifest.
 
 Example:
 

@@ -162,7 +162,6 @@ argument ``target`` can be the name of a target that is passed using the
 (buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or the path
 to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
-
 **Examples**
 
 The ``extra_script.py`` file is located in the same directory as ``platformio.ini``.
@@ -251,8 +250,6 @@ The ``extra_script.py`` file is located in the same directory as ``platformio.in
 Build Middlewares
 ~~~~~~~~~~~~~~~~~
 
-.. versionadded:: 4.1
-
 PlatformIO Build System allows you to add middleware functions that can be used for
 Build Node(Object) construction. This is very useful if you need to add custom flags
 for the specific file nodes or exclude them from a build process.
@@ -330,15 +327,72 @@ not be passed to the next middleware in chain.
     env.AddBuildMiddleware(skip_asm_from_build, "*.S")
 
 
-Custom target
-~~~~~~~~~~~~~
+.. _projectconf_advanced_scripting_custom_targets:
 
-There is a list with built-in targets which could be processed using
-:option:`platformio run --target` option. You can create unlimited number of
-the own targets and declare custom handlers for them.
+Custom Targets
+~~~~~~~~~~~~~~
 
-We will use SCons's `Alias(alias, [targets, [action]]) , env.Alias(alias, [targets, [action]]) <https://scons.org/doc/production/HTML/scons-user/apd.html>`__
-function to declare a custom target/alias.
+.. versionadded:: 5.0
+
+PlatformIO allows you to declare unlimited number of the custom targets. There are a
+lot of use cases for them:
+
+- Pre/Post processing based on a dependent sources (other target, source file, etc.)
+- Command launcher with own arguments
+- Launch command with custom options declared in :ref:`projectconf`
+- Python callback as a target (use the power of Python interpreter and PlatformIO Build API).
+
+A custom target can be processed using :option:`platformio run --target` option and
+you can list them via :option:`platformio run --list-targets` command.
+
+Build System API
+^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    Import("env")
+
+    env.AddCustomTarget(
+        name,
+        dependencies,
+        actions,
+        title=None,
+        description=None,
+        always_build=True
+    )
+
+
+``AddCustomTarget`` arguments:
+
+:name:
+    A name of target. ASCII chars (a-z, 0-9, _, -) are recommended. Good names are
+    "gen_headers", "program_bitstream", etc.
+
+:dependencies:
+    A list of dependencies that should be built BEFORE target will be launched. It is
+    possible pass multiple dependencies as a Python list ``["dep1", dep_target_2]``.
+    If a target does not have dependencies, ``None`` should be passed.
+
+:actions:
+    A list of actions to call on a target. It is possible to pass multiple actions as
+    a Python list ``["python --version", my_calback]``.
+
+:title:
+    A title of a target. It will be printed when using :ref:`piocore` or :ref:`pioide`.
+    We recommend to keep a title very short, 1-2 words.
+
+:description:
+    The same as a ``title`` argument but allows you to provide detailed explanation
+    what target does.
+
+:always_build:
+    If there are declared ``dependencies`` and they are already built, this target
+    will not be called if ``always_build=False``. A default value is
+    ``always_build=True`` and means always building/calling target.
+
+
+Examples
+^^^^^^^^
 
 Command shortcut
 ''''''''''''''''
@@ -359,10 +413,24 @@ Create a custom ``node`` target (alias) which will print a NodeJS version
 .. code-block:: python
 
     Import("env")
-    env.AlwaysBuild(env.Alias("node", None, ["node --version"]))
+
+    # Single action/command per 1 target
+    env.AddCustomTarget("sysenv", None, 'python -c "import os; print(os.environ)"'))
+
+    # Multiple actions
+    env.AddCustomTarget(
+        name="pioenv",
+        dependencies=None,
+        actions=[
+            "pio --version",
+            "python --version"
+        ],
+        title="Core Env",
+        description="Show PlatformIO Core and Python versions"
+    )
 
 
-Now, run ``pio run -t node``.
+Now, run ``pio run --target sysenv`` or ``pio run -t pioenv`` (short version).
 
 Dependent target
 ''''''''''''''''
@@ -387,9 +455,12 @@ will be run.
 .. code-block:: python
 
     Import("env")
-    env.AlwaysBuild(env.Alias("ota",
+
+    env.AddCustomTarget(
+        "ota",
         "$BUILD_DIR/${PROGNAME}.elf",
-        ["ota_script --firmware-path $SOURCE"]))
+        "ota_script --firmware-path $SOURCE"
+    )
 
 
 Now, run ``pio run -t ota``.
@@ -423,23 +494,23 @@ Let's create a simple ``ping`` target and process it with
 
     config = configparser.ConfigParser()
     config.read("platformio.ini")
-    host = config.get("env_custom_target", "custom_ping_host")
+    host = config.get("env:env_custom_target", "custom_ping_host")
 
     def mytarget_callback(*args, **kwargs):
         print("Hello PlatformIO!")
         env.Execute("ping " + host)
 
 
-    env.AlwaysBuild(env.Alias("ping", None, mytarget_callback))
+    env.AddCustomTarget("ping", None, mytarget_callback)
 
-Examples
-~~~~~~~~
+Other Use Cases
+~~~~~~~~~~~~~~~
 
 The best examples are `PlatformIO development platforms <https://github.com/topics/platformio-platform>`__.
 Please check ``builder`` folder for the main and framework scripts.
 
 Custom options in ``platformio.ini``
-''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``platformio.ini``:
 
@@ -468,7 +539,7 @@ Custom options in ``platformio.ini``
     value2 = config.get("my_env", "custom_option2")
 
 Split C/C++ build flags
-'''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^
 
 ``platformio.ini``:
 
@@ -494,7 +565,7 @@ Split C/C++ build flags
     env.Append(CXXFLAGS=["flag1", "flag2"])
 
 Extra Linker Flags without ``-Wl,`` prefix
-''''''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sometimes you need to pass extra flags to GCC linker without ``Wl,``. You could
 use :ref:`projectconf_build_flags` option but it will not work. PlatformIO
@@ -529,7 +600,7 @@ extra script will help:
     )
 
 Custom upload tool
-''''''''''''''''''
+^^^^^^^^^^^^^^^^^^
 
 You can override default upload command of development platform using extra
 script. There is the common environment variable ``UPLOADCMD`` which PlatformIO
@@ -628,12 +699,12 @@ See examples below:
 
 
 Upload to Cloud (OTA)
-'''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^
 
 See project example https://github.com/platformio/bintray-secure-ota
 
 Custom firmware/program name
-''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sometimes is useful to have a different firmware/program name in
 :ref:`projectconf_pio_build_dir`.
@@ -662,7 +733,7 @@ Sometimes is useful to have a different firmware/program name in
     env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
 
 Override package files
-''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^
 
 PlatformIO Package Manager automatically installs pre-built packages
 (:ref:`frameworks`, toolchains, libraries) required by development
@@ -751,7 +822,7 @@ please replace the ``patch`` with a multi-platform
 `python-patch <https://github.com/techtonik/python-patch>`_ script.
 
 Override Board Configuration
-''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PlatformIO allows one to override some basic options (integer or string values)
 using :ref:`projectconf_board_more_options` in :ref:`projectconf`.
@@ -787,7 +858,7 @@ hardware VID/PIDs.
     ])
 
 Custom debug flags
-''''''''''''''''''
+^^^^^^^^^^^^^^^^^^
 
 PlatformIO removes all debug/optimization flags before a debug session or when
 :ref:`build_configurations` is set to ``debug`` and overrides them with

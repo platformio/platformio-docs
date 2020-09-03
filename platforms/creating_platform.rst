@@ -50,16 +50,7 @@ first compiling the tools.
 
 PlatformIO has a registry with pre-built packages for the most popular
 operating systems and you can use them in your platform
-manifest. These packages are stored in the super-fast and reliably CDN
-storage provided by `JFrog Bintray
-<https://bintray.com/platformio/dl-packages>`_.
-
-Each platform definition must define ``packageRepositories`` to link
-to *package manifest files* that lists how PlatformIO can download the
-used packages. To use the pre-built packages, include
-http://dl.platformio.org/packages/manifest.json in the
-``packageRepositories`` list. Platform definitions can also use custom
-packages.
+manifest. Custom packages can be uploaded to the PlatformIO Registry using :ref:`cmd_package_publish` command.
 
 .. _platform_creating_manifest_file:
 
@@ -78,48 +69,14 @@ Here is an example ``platform.json`` for the fictitious platform "myplatform":
       "name": "myplatform",
       "title": "My Platform",
       "description": "My custom development platform",
-      "url": "http://example.com",
-      "homepage": "https://platformio.org/platforms/myplatform",
+      "homepage": "https://mycompany.com",
       "license": "Apache-2.0",
-      "engines": {
-        "platformio": "~3.0.0"
-      },
+      "keywords": ["keyword_1", "keyword_N"],
       "repository": {
         "type": "git",
         "url": "https://github.com/platformio/platform-myplatform.git"
       },
       "version": "0.0.0",
-      "packageRepositories": [
-        "https://dl.bintray.com/platformio/dl-packages/manifest.json",
-        "http://dl.platformio.org/packages/manifest.json",
-        {
-          "my_custom_package": [
-            {
-              "url": "http://dl.example.com/my_custom_package-darwin_x86_64-1.2.3.tar.gz",
-              "sha1": "bb7ddac56a314b5cb1926cc1790ae4de3a03e65c",
-              "version": "1.2.3",
-              "system": [
-                  "darwin_x86_64",
-                  "darwin_i386"
-              ]
-            },
-            {
-              "url": "http://dl.example.com/my_custom_package-linux_aarch64-1.2.3.tar.gz",
-              "sha1": "127ddac56a314b5cb1926cc1790ae4de3a03e65c",
-              "version": "1.2.3",
-              "system": "linux_aarch64"
-            }
-          ],
-          "framework-%FRAMEWORK_NAME_1%": [
-            {
-              "url": "http://dl.example.com/packages/framework-%FRAMEWORK_NAME_1%-1.10607.0.tar.gz",
-              "sha1": "adce2cd30a830d71cb6572575bf08461b7b73c07",
-              "version": "1.10607.0",
-              "system": "*"
-            }
-          ]
-        }
-      ],
       "frameworks": {
         "%FRAMEWORK_NAME_1%": {
           "package": "framework-%FRAMEWORK_NAME_1%",
@@ -133,6 +90,7 @@ Here is an example ``platform.json`` for the fictitious platform "myplatform":
       "packages": {
         "toolchain-gccarmnoneeabi": {
           "type": "toolchain",
+          "owner": "platformio",
           "version": ">=1.40803.0,<1.40805.0"
         },
         "framework-%FRAMEWORK_NAME_1%": {

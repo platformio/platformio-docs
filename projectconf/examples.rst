@@ -24,3 +24,4 @@ Community project examples with ``platformio.ini``:
 - `xoseperez/espurna <https://github.com/xoseperez/espurna/tree/dev/code>`_
 - `esphome/esphome <https://github.com/esphome/esphome>`_
 - `cyberman54/ESP32-Paxcounter <https://github.com/cyberman54/ESP32-Paxcounter>`_
+- `1technophile/OpenMQTTGateway <https://github.com/1technophile/OpenMQTTGateway>`_

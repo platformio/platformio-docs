@@ -18,7 +18,7 @@ Custom
   :ref:`projectconf_debug_tool` = ``custom``
 
 
-PIO Unified Debugger can be configured from :ref:`projectconf`:
+**PLatformIO Debugging Solution** can be configured using :ref:`projectconf`:
 
 .. toctree::
   :maxdepth: 2

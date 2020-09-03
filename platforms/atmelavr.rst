@@ -158,6 +158,11 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_ATmega48P`
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
     * - :ref:`board_atmelavr_ATmega644P`
       - ATMEGA644P
       - 16MHz
@@ -178,11 +183,16 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 7.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATmega48P`
-      - ATMEGA48P
-      - 16MHz
-      - 4KB
-      - 512B
+    * - :ref:`board_atmelavr_attiny13`
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
     * - :ref:`board_atmelavr_bluefruitmicro`
       - ATMEGA32U4
       - 8MHz
@@ -503,16 +513,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 252KB
       - 8KB
-    * - :ref:`board_atmelavr_attiny13`
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny2313`
       - ATTINY2313
       - 8MHz
@@ -946,59 +946,62 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-avr <https://github.com/arduino/ArduinoCore-avr?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (AVR Core)
+    * - `framework-arduino-avr <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+      - The official Arduino Wiring-based Framework for Microchip AVR microcontrollers
 
-    * - `framework-arduino-avr-attiny <https://github.com/SpenceKonde/ATTinyCore?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (ATTiny Core)
+    * - `framework-arduino-avr-attiny <https://github.com/SpenceKonde/ATTinyCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (ATTiny Core)
 
-    * - `framework-arduino-avr-bean <https://github.com/PunchThrough/bean-arduino-core?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Bean Core)
+    * - `framework-arduino-avr-bean <https://github.com/PunchThrough/bean-arduino-core.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Bean Core)
 
     * - `framework-arduino-avr-core13 <https://sourceforge.net/projects/ard-core13/?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Core13)
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Core13)
 
-    * - `framework-arduino-avr-digistump <https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Digistump Core)
+    * - `framework-arduino-avr-digistump <https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Digistump Core)
 
-    * - `framework-arduino-avr-dwenguino <https://github.com/dwengovzw/Dwengo-library/tree/master/dwenguino/Dwenguino?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Dwenguino Core)
+    * - `framework-arduino-avr-dwenguino <https://github.com/dwengovzw/Dwengo-library/tree/master/dwenguino/Dwenguino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Dwenguino Core)
 
-    * - `framework-arduino-avr-majorcore <https://github.com/MCUdude/MajorCore?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Major Core)
+    * - `framework-arduino-avr-majorcore <https://github.com/MCUdude/MajorCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MajorCore)
 
-    * - `framework-arduino-avr-megacore <https://github.com/MCUdude/MegaCore?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (MegaCore)
+    * - `framework-arduino-avr-megacore <https://github.com/MCUdude/MegaCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MegaCore)
 
-    * - `framework-arduino-avr-mightycore <https://github.com/MCUdude/MightyCore?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (MightyCore)
+    * - `framework-arduino-avr-microcore <https://github.com/MCUdude/MicroCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MicroCore)
 
-    * - `framework-arduino-avr-minicore <https://github.com/MCUdude/MiniCore?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (MiniCore)
+    * - `framework-arduino-avr-mightycore <https://github.com/MCUdude/MightyCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MightyCore)
 
-    * - `framework-arduino-avr-nicai <https://github.com/arduino/ArduinoCore-avr?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Nicai Core)
+    * - `framework-arduino-avr-minicore <https://github.com/MCUdude/MiniCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MiniCore)
 
-    * - `framework-arduino-avr-panstamp <https://github.com/panStamp/panstamp?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Panstamp Core)
+    * - `framework-arduino-avr-nicai <http://www.nicai-systems.com/en/?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Nicai Core)
 
-    * - `framework-arduino-avr-prusa_rambo <https://github.com/prusa3d/Prusa-Firmware?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Prusa Rambo Core)
+    * - `framework-arduino-avr-panstamp <https://github.com/panStamp/panstamp.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Panstamp Core)
 
-    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio.org&utm_medium=docs>`__
-      - Simba Framework
+    * - `framework-arduino-avr-prusa_rambo <https://github.com/prusa3d/Prusa-Firmware.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Prusa Rambo Core)
 
-    * - `tool-avrdude <http://www.nongnu.org/avrdude/?utm_source=platformio.org&utm_medium=docs>`__
-      - AVRDUDE
+    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
-    * - `tool-micronucleus <https://github.com/micronucleus/micronucleus?utm_source=platformio.org&utm_medium=docs>`__
-      - Micronucleus
+    * - `tool-avrdude <http://savannah.nongnu.org/projects/avrdude?utm_source=platformio.org&utm_medium=docs>`__
+      - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers
 
-    * - `tool-simavr <https://github.com/buserror/simavr/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-micronucleus <https://github.com/micronucleus/micronucleus.git?utm_source=platformio.org&utm_medium=docs>`__
+      - ATTiny usb bootloader with a strong emphasis on bootloader compactness
+
+    * - `tool-simavr <https://github.com/buserror/simavr.git?utm_source=platformio.org&utm_medium=docs>`__
       - simavr is a lean, mean and hackable AVR simulator
 
     * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&utm_medium=docs>`__
-      - avr-gcc
+      - GCC Toolchain for Microchip AVR microcontrollers
 
 .. warning::
     **Linux Users**:
@@ -1023,10 +1026,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
 Boards
 ------
@@ -1438,18 +1441,6 @@ Atmel
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_atmelavr_attiny13`
-      - On-board
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - On-board
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny1634`
       - No
       - ATTINY1634
@@ -2065,6 +2056,12 @@ Microchip
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_ATmega48P`
+      - On-board
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
     * - :ref:`board_atmelavr_ATmega48PB`
       - No
       - ATMEGA48PB
@@ -2131,12 +2128,18 @@ Microchip
       - 16MHz
       - 7.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATmega48P`
+    * - :ref:`board_atmelavr_attiny13`
       - On-board
-      - ATMEGA48P
-      - 16MHz
-      - 4KB
-      - 512B
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - On-board
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
     * - :ref:`board_atmelavr_at90pwm216`
       - No
       - AT90PWM216

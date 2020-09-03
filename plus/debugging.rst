@@ -9,20 +9,20 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIODebug| replace:: **PIO Unified Debugger**
+.. |PIODebug| replace:: **PlatformIO Debugging Solution**
 
 .. _piodebug:
 
-PIO Unified Debugger
-====================
+Debugging
+=========
 
 **It Simply Works. Easier than ever before!**
 
-.. note::
+.. contents:: Contents
+    :local:
+    :depth: 1
 
-  `Demo, discussions, request a support for new hardware. <https://community.platformio.org/t/finally-pio-unified-debugger-comes-to-vscode/4091>`_
-
-PlatformIO offers a unique debugging experience for productive embedded
+|PIODebug| offers a unique debugging experience for productive embedded
 development. Using our multi-board and multi-architecture programming
 experience, we simplified the debugging process in the same way. A zero
 debugging configuration with support for the most popular debugging probes
@@ -46,10 +46,6 @@ file “platformio.ini”, and a project is ready for 1-Click debugging.
 * Built-in into :ref:`ide_atom` and :ref:`ide_vscode`
 * Integration with :ref:`ide_eclipse` and :ref:`ide_sublimetext`
 
-You should have :ref:`pioaccount` to work with |PIODebug|.
-A registration is **FREE**.
-
-
 .. hint::
   In our experience, :ref:`ide_vscode` has the best system performance,
   modern interface for |PIODebug|, and users have found it easier to get started.
@@ -68,10 +64,6 @@ A registration is **FREE**.
 .. image:: ../_static/images/ide/vscode/platformio-ide-vscode.png
   :target: ../ide/vscode.html
 
-.. contents:: Contents
-    :local:
-    :depth: 1
-
 Tutorials
 ---------
 
@@ -88,7 +80,7 @@ Tutorials
 Configuration
 -------------
 
-|PIODebug| can be configured from :ref:`projectconf`:
+|PIODebug| can be configured using :ref:`projectconf`:
 
 .. toctree::
   :maxdepth: 2
@@ -115,6 +107,7 @@ option.
   debug-tools/atmel-ice
   debug-tools/blackmagic
   debug-tools/cmsis-dap
+  debug-tools/digilent-hs1
   debug-tools/esp-prog
   debug-tools/ftdi
   debug-tools/gd-link
@@ -135,6 +128,8 @@ option.
   debug-tools/ti-icdi
   debug-tools/tumpa
   debug-tools/um232h
+  debug-tools/verilator
+  debug-tools/whisper
   debug-tools/custom
 
 CLI Guide
@@ -164,6 +159,9 @@ Platforms
 
     * - :ref:`platform_atmelsam`
       - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
+
+    * - :ref:`platform_chipsalliance`
+      - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
 
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
@@ -237,52 +235,58 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_cmsis`
-      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices.
+      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
 
     * - :ref:`framework_espidf`
-      - Espressif IoT Development Framework. Official development framework for ESP32.
+      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
+
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
     * - :ref:`framework_gd32vf103-sdk`
-      - GigaDevice GD32VF103 Firmware Library (SDK)
-
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
+      - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
 
     * - :ref:`framework_kendryte-freertos-sdk`
       - Kendryte SDK with FreeRTOS support
 
-    * - :ref:`framework_libopencm3`
-      - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_nuclei-sdk`
       - Open Source Software Development Kit for the Nuclei N/NX processors
 
     * - :ref:`framework_pulp-os`
-      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.
+      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory
+
+    * - :ref:`framework_stm32cube`
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
 
     * - :ref:`framework_shakti-sdk`
       - A software development kit for developing applications on Shakti class of processors
 
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
     * - :ref:`framework_spl`
-      - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 Cortex-M3 family. The idea is to save the user (the new user, in particular) having to deal directly with the registers.
+      - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.
 
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+    * - :ref:`framework_wd-riscv-sdk`
+      - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
+
+    * - :ref:`framework_libopencm3`
+      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
 
 Boards
 ------
@@ -338,6 +342,13 @@ Boards
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_b96b_aerocore2`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F427VIT6
+      - 168MHz
+      - 1.99MB
+      - 256KB
     * - :ref:`board_ststm32_b96b_neonkey`
       - :ref:`platform_ststm32`
       - External
@@ -478,6 +489,13 @@ Adafruit
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_clue_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelavr_circuitplay_classic`
       - :ref:`platform_atmelavr`
       - On-board
@@ -781,7 +799,7 @@ Adafruit
       - 243KB
     * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
       - :ref:`platform_nordicnrf52`
-      - On-board
+      - External
       - NRF52840
       - 64MHz
       - 796KB
@@ -1423,20 +1441,6 @@ Atmel
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelavr_attiny13`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny2313`
       - :ref:`platform_atmelavr`
       - On-board
@@ -1809,6 +1813,27 @@ Delta
       - 256KB
       - 16KB
 
+Digilent
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_chipsalliance_swervolf_nexys`
+      - :ref:`platform_chipsalliance`
+      - On-board
+      - 
+      - 320MHz
+      - 16MB
+      - 1.16MB
+
 Digistump
 ~~~~~~~~~
 
@@ -1977,6 +2002,27 @@ ElectronutLabs
       - 1MB
       - 256KB
 
+Electrosmith
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_electrosmith_daisy`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+
 Elektor Labs
 ~~~~~~~~~~~~
 
@@ -2109,6 +2155,13 @@ Espressif
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_pico32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
       - On-board
@@ -2144,6 +2197,13 @@ FYSETC
       - 16MHz
       - 252KB
       - 8KB
+    * - :ref:`board_ststm32_fysetc_s6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446VET6
+      - 168MHz
+      - 512KB
+      - 128KB
 
 Fred
 ~~~~
@@ -2340,6 +2400,20 @@ Generic
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F103C4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C4
+      - 72MHz
+      - 16KB
+      - 6KB
+    * - :ref:`board_ststm32_genericSTM32F103C6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - External
@@ -2354,6 +2428,20 @@ Generic
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103R4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103R4
+      - 72MHz
+      - 16KB
+      - 6KB
+    * - :ref:`board_ststm32_genericSTM32F103R6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103R6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103R8`
       - :ref:`platform_ststm32`
       - External
@@ -2375,6 +2463,13 @@ Generic
       - 72MHz
       - 256KB
       - 48KB
+    * - :ref:`board_ststm32_genericSTM32F103RD`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RD
+      - 72MHz
+      - 384KB
+      - 64KB
     * - :ref:`board_ststm32_genericSTM32F103RE`
       - :ref:`platform_ststm32`
       - External
@@ -2382,6 +2477,34 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103RF`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RF
+      - 72MHz
+      - 768KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103RG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RG
+      - 72MHz
+      - 1MB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103T4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103T4
+      - 72MHz
+      - 16KB
+      - 6KB
+    * - :ref:`board_ststm32_genericSTM32F103T6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103T6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103T8`
       - :ref:`platform_ststm32`
       - External
@@ -2395,6 +2518,13 @@ Generic
       - STM32F103TBT6
       - 72MHz
       - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_genericSTM32F103V8`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103V8
+      - 72MHz
+      - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103VB`
       - :ref:`platform_ststm32`
@@ -2424,6 +2554,20 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103VF`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103VF
+      - 72MHz
+      - 768KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103VG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103VG
+      - 72MHz
+      - 1MB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F103ZC`
       - :ref:`platform_ststm32`
       - External
@@ -2445,6 +2589,20 @@ Generic
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F103ZF`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103ZF
+      - 72MHz
+      - 768KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F103ZG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103ZG
+      - 72MHz
+      - 1MB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F303CB`
       - :ref:`platform_ststm32`
       - External
@@ -2452,6 +2610,34 @@ Generic
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F401CB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CB
+      - 84MHz
+      - 128KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401CC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CC
+      - 84MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401CD`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CD
+      - 84MHz
+      - 384KB
+      - 96KB
+    * - :ref:`board_ststm32_genericSTM32F401CE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CE
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F401RB`
       - :ref:`platform_ststm32`
       - External
@@ -2466,6 +2652,13 @@ Generic
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_genericSTM32F401RD`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401RD
+      - 84MHz
+      - 384KB
+      - 96KB
     * - :ref:`board_ststm32_genericSTM32F401RE`
       - :ref:`platform_ststm32`
       - External
@@ -2473,6 +2666,13 @@ Generic
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_genericSTM32F405RG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RG
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -2487,6 +2687,167 @@ Generic
       - 168MHz
       - 1MB
       - 192KB
+    * - :ref:`board_ststm32_genericSTM32F410C8`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F410C8
+      - 100MHz
+      - 64KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F410CB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F410CB
+      - 100MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F410R8`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F410R8
+      - 100MHz
+      - 64KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F410RB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F410RB
+      - 100MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F411CC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411CC
+      - 100MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F411CE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411CE
+      - 100MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F411RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411RC
+      - 100MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F411RE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411RE
+      - 100MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F412CE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F412CE
+      - 100MHz
+      - 512KB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F412CG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F412CG
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F412RE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F412RE
+      - 100MHz
+      - 512KB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F412RG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F412RG
+      - 100MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_genericSTM32F413CG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F413CG
+      - 100MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F413CH`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F413CH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F413RG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F413RG
+      - 100MHz
+      - 1MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F413RH`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F413RH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F415RG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F415RG
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F417VE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F417VE
+      - 168MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F417VG`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F417VG
+      - 168MHz
+      - 1MB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F423CH`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F423CH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F423RH`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F423RH
+      - 100MHz
+      - 1.50MB
+      - 320KB
+    * - :ref:`board_ststm32_genericSTM32F446RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RC
+      - 180MHz
+      - 256KB
+      - 128KB
+    * - :ref:`board_ststm32_genericSTM32F446RE`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F446RE
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_stm32f4stamp`
       - :ref:`platform_ststm32`
       - External
@@ -3236,6 +3597,13 @@ Microchip
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelavr_ATmega48P`
+      - :ref:`platform_atmelavr`
+      - On-board
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
     * - :ref:`board_atmelavr_ATmega644P`
       - :ref:`platform_atmelavr`
       - On-board
@@ -3264,13 +3632,20 @@ Microchip
       - 16MHz
       - 7.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATmega48P`
+    * - :ref:`board_atmelavr_attiny13`
       - :ref:`platform_atmelavr`
       - On-board
-      - ATMEGA48P
-      - 16MHz
-      - 4KB
-      - 512B
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - :ref:`platform_atmelavr`
+      - On-board
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
 
 Microduino
 ~~~~~~~~~~
@@ -3565,6 +3940,20 @@ NXP
       - 180MHz
       - 512KB
       - 200KB
+    * - :ref:`board_nxplpc_lpcxpresso55s16`
+      - :ref:`platform_nxplpc`
+      - On-board
+      - LPC55S16
+      - 150MHz
+      - 256KB
+      - 96KB
+    * - :ref:`board_nxplpc_lpcxpresso55s69`
+      - :ref:`platform_nxplpc`
+      - On-board
+      - LPC55S69
+      - 150MHz
+      - 640KB
+      - 320KB
     * - :ref:`board_nxpimxrt_mimxrt1010_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
@@ -3880,6 +4269,48 @@ OpenEnergyMonitor
       - 16MHz
       - 30KB
       - 2KB
+
+PYBStick
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_pybstick26_duino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F072RB
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_ststm32_pybstick26_pro`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F412RE
+      - 100MHz
+      - 512KB
+      - 256KB
+    * - :ref:`board_ststm32_pybstick26_lite`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
+    * - :ref:`board_ststm32_pybstick26_std`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411CEU6
+      - 100MHz
+      - 512KB
+      - 128KB
 
 PanStamp
 ~~~~~~~~
@@ -4349,6 +4780,27 @@ RushUp
       - 80MHz
       - 1MB
       - 128KB
+
+SEGGER
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_freescalekinetis_segger_ip_switch`
+      - :ref:`platform_freescalekinetis`
+      - External
+      - MK66FN2M0VMD18
+      - 180MHz
+      - 2MB
+      - 256KB
 
 SG-O
 ~~~~
@@ -5000,6 +5452,13 @@ ST
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_g031j6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G031J6
+      - 64MHz
+      - 128KB
+      - 8KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - On-board
@@ -5063,7 +5522,7 @@ ST
       - 216MHz
       - 64KB
       - 340KB
-    * - :ref:`board_ststm32_disco_h743xi`
+    * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - On-board
       - STM32H747XIH6
@@ -5175,7 +5634,42 @@ Seeed
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_seeed_femto`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_lite_mg126`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_terminal`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51P19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_zero`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A
@@ -5406,6 +5900,13 @@ Silicon Labs
       - 40MHz
       - 256KB
       - 32KB
+    * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
+      - :ref:`platform_siliconlabsefm32`
+      - On-board
+      - EFM32GG11B820F2048GL192
+      - 48MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_siliconlabsefm32_tb_sense_12`
       - :ref:`platform_siliconlabsefm32`
       - On-board
@@ -5679,6 +6180,13 @@ SparkFun
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelavr_sparkfun_serial7seg`
       - :ref:`platform_atmelavr`
       - On-board
@@ -6085,6 +6593,13 @@ ThunderPack
       - 32MHz
       - 192KB
       - 20KB
+    * - :ref:`board_ststm32_thunder_pack_f411`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411CEU6
+      - 100MHz
+      - 512KB
+      - 128KB
 
 Till Harbaum
 ~~~~~~~~~~~~
@@ -6176,6 +6691,27 @@ VAE
       - 180MHz
       - 512KB
       - 128KB
+
+VCCGND
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_vccgnd_f103zet6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
 
 VNG
 ~~~
@@ -6330,6 +6866,27 @@ Waveshare
       - 32MHz
       - 256KB
       - 32KB
+
+WeAct
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_blackpill_f411ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411CEU6
+      - 100MHz
+      - 512KB
+      - 128KB
 
 Wicked Device
 ~~~~~~~~~~~~~

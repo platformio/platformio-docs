@@ -76,14 +76,14 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Intel ARC Core)
+    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework Intel ARC32 processor
 
-    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools?utm_source=platformio.org&utm_medium=docs>`__
-      - Genuino101 uploader
+    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Genuino101 uploader tool
 
-    * - `toolchain-intelarc32 <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain?utm_source=platformio.org&utm_medium=docs>`__
-      - GCC for Intel ARC
+    * - `toolchain-intelarc32 <https://embarc.org/toolchain/?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC for Intel ARC processor
 
 .. warning::
     **Linux Users**:
@@ -108,7 +108,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
 Boards
 ------

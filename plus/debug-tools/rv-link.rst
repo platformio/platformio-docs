@@ -16,8 +16,8 @@ RV-LINK
 
 RISC-V emulator implemented with RISC-V development board. Unlike other emulators:
 RV-LINK interacts directly with GDB via a USB serial port and does not require an
-intermediary such as OpenOCD. Official reference can be found
-`here <https://gitee.com/zoomdy/RV-LINK/blob/master/README.md>`__.
+intermediary such as OpenOCD.
+Official reference can be found `here <https://gitee.com/zoomdy/RV-LINK/blob/master/README.md>`__.
 
 .. contents:: Contents
     :local:
@@ -76,10 +76,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_gd32vf103-sdk`
-      - GigaDevice GD32VF103 Firmware Library (SDK)
+      - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
 
     * - :ref:`framework_nuclei-sdk`
       - Open Source Software Development Kit for the Nuclei N/NX processors

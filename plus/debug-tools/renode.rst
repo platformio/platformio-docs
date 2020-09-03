@@ -25,43 +25,12 @@ For more information, see `Renode's official website <https://renode.io/?utm_sou
 .. contents:: Contents
     :local:
 
-Configuration
--------------
+.. include:: renode_extra.rst
 
-You can configure Renode as a debugging tool using :ref:`projectconf_debug_tool` option in
-:ref:`projectconf`:
+Examples
+--------
 
-.. code-block:: ini
-
-    [env:myenv]
-    platform = ...
-    board = ...
-    debug_tool = renode
-
-More options:
-
-* :ref:`projectconf_section_env_debug`
-
-Installation
-------------
-
-We will automatically install for you the latest Renode package using PlatformIO
-package manager. The only requirement is to install Mono/.NET framework.
-
-:Windows:
-  On Windows 7, download and install `.NET Framework 4.7 <https://www.microsoft.com/net/download/dotnet-framework-runtime>`_.
-  Windows 10 ships with .NET by default, so no action is required there.
-
-:Mac:
-  Install `Homebrew <https://brew.sh/>`_ and the ``mono`` package using ``brew install mono``.
-
-:Linux:
-  Install the ``mono-complete`` package as per the installation instructions for
-  various Linux distributions which can be found on `the Mono project website <https://www.mono-project.com/download/stable/#download-lin>`_.
-
-
-Check the `official Renode installation guide <https://github.com/renode/renode/blob/master/README.rst>`_
-for more details.
+* `Pre-configured projects for Zephyr RTOS, FreeRTOS, and Arduino <https://github.com/carlosedp/PlatformIO-Renode-Demos/>`__ by Carlos Eduardo
 
 .. begin_platforms
 
@@ -84,11 +53,14 @@ Frameworks
     * - Name
       - Description
 
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
 Boards
 ------

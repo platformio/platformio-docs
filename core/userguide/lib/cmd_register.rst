@@ -14,32 +14,6 @@
 platformio lib register
 =======================
 
-.. contents::
+**DEPRECATED**.
 
-Usage
------
-
-.. code-block:: bash
-
-    platformio lib register [MANIFEST_URL]
-    pio lib register [MANIFEST_URL]
-
-Description
------------
-
-Register new library in `PlatformIO Library Registry <https://platformio.org/lib>`_.
-
-PlatformIO Library Registry supports the next library manifests:
-
-* PlatformIO :ref:`library_config`
-* Arduino `library.properties <https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification>`_
-* ARM mbed yotta `module.json <http://yottadocs.mbed.com/reference/module.html>`_.
-
-Examples
---------
-
-.. code::
-
-    platformio lib register https://raw.githubusercontent.com/bblanchon/ArduinoJson/master/library.json
-    platformio lib register https://raw.githubusercontent.com/adafruit/DHT-sensor-library/master/library.properties
-    platformio lib register https://raw.githubusercontent.com/ARMmbed/ble/master/module.json
+Please use :ref:`cmd_package_publish`.

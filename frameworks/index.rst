@@ -23,6 +23,7 @@ Frameworks
     esp8266-rtos-sdk
     espidf
     freedom-e-sdk
+    freertos
     gd32vf103-sdk
     kendryte-freertos-sdk
     kendryte-standalone-sdk
@@ -35,5 +36,6 @@ Frameworks
     simba
     spl
     stm32cube
+    wd-riscv-sdk
     wiringpi
     zephyr

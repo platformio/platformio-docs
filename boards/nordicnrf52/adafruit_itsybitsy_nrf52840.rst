@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ItsyBitsy nRF52840 Express has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ItsyBitsy nRF52840 Express does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -107,7 +107,7 @@ ItsyBitsy nRF52840 Express has on-board debug probe and **IS READY** for debuggi
     - On-board
     - Default
   * - :ref:`debugging_tool_jlink`
-    - Yes
+    - 
     - Yes
   * - :ref:`debugging_tool_stlink`
     - 
@@ -122,4 +122,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

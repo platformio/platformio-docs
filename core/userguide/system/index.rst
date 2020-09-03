@@ -29,3 +29,5 @@ To print all available commands and options use:
     :maxdepth: 2
 
     completion/index
+    cmd_info
+    cmd_prune

@@ -28,8 +28,7 @@ Usage
 Description
 -----------
 
-Process environments which are defined in :ref:`projectconf` file
-
+Run project targets over environments declared in :ref:`projectconf`.
 
 Options
 -------
@@ -39,48 +38,38 @@ Options
 .. option::
     -e, --environment
 
-Process specified environments.
+Process specified environments. Multiple environments are allowed.
 
 You can also specify which environments should be processed by default using
 :ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
 
-
 .. option::
     -t, --target
 
-Process specified targets.
+Process specified targets. Multiple targets are allowed.
 
-.. note::
-    You can configure default targets per project environment using
-    :ref:`projectconf_targets` option in :ref:`projectconf`.
+You can configure default targets per project environment using
+:ref:`projectconf_targets` option in :ref:`projectconf`.
 
-Built-in targets:
+.. option::
+    --list-targets
 
-* Processing
+.. versionadded:: 5.0
 
-    + ``clean`` delete compiled object files, libraries and firmware/program binaries
-    + ``upload`` firmware "auto-uploading" for embedded platforms
-    + ``debug`` build using :ref:`Debug Configuration <build_configurations>`
-    + ``program`` firmware "auto-uploading" for embedded platforms using external
-      programmer (available only for :ref:`platform_atmelavr`)
-    + ``fuses`` set fuse bits (available only for :ref:`platform_atmelavr`)
-    + ``buildfs`` :ref:`platform_espressif_uploadfs`
-    + ``uploadfs`` :ref:`platform_espressif_uploadfs`
-    + ``size`` print the size of the sections in a firmware/program
-    + ``checkprogsize`` check maximum allowed firmware size for uploading
-    + ``erase`` erase device flash (not available on the all :ref:`platforms`)
-    + ``compiledb`` build :ref:`compilation_db`
+List available project targets. It's also possible to list targets per project
+environment using :option:`platformio run --environment` option.
+
+There are also built-in system targets:
 
 * Device
 
-    + ``monitor`` automatically start :ref:`cmd_device_monitor` after success
+    + ``monitor`` automatically start :ref:`cmd_device_monitor` after successful
       build operation. You can configure monitor using
       :ref:`projectconf_section_env_monitor`.
 
-* Service
+* System
 
     + ``envdump`` dump current build environment
-    + ``idedata`` export build environment for IDE (defines, build flags, CPPPATH, etc.)
 
 .. option::
     --upload-port
@@ -99,14 +88,10 @@ to current working directory (``CWD``).
 .. option::
     -c, --project-conf
 
-.. versionadded:: 4.0
-
 Process project with a custom :ref:`projectconf`.
 
 .. option::
     -j, --jobs
-
-.. versionadded:: 4.0
 
 Control a number of parallel build jobs. Default is a number of CPUs in a system.
 

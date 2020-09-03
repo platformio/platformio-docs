@@ -376,7 +376,7 @@ Using Arduino Framework with Staging version
 PlatformIO will install the latest Arduino Core for ESP32 from
 https://github.com/espressif/arduino-esp32. The `Git <https://git-scm.com>`_
 should be installed in a system. To update Arduino Core to the latest revision,
-please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
+please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Updates``.
 
 1.  Please install :ref:`pioide`
 2.  Initialize a new project, open :ref:`projectconf` and specify the link to the

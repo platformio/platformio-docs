@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_disco_h743xi:
+.. _board_ststm32_pybstick26_duino:
 
-STM32H747I-DISCO
+PYBSTICK26 Duino
 ================
 
 .. contents::
@@ -24,53 +24,54 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32H747XIH6
+    - STM32F072RB
   * - **Frequency**
-    - 400MHz
+    - 48MHz
   * - **Flash**
-    - 2MB
+    - 128KB
   * - **RAM**
-    - 512KB
+    - 16KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/stm32h747i-disco.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `PYBStick <https://shop.mchobby.be/fr/compatibles-arduino/1851-pybstick-duino-arduino-uniquement-3232100018518-garatronic.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``disco_h743xi`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``pybstick26_duino`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:disco_h743xi]
+  [env:pybstick26_duino]
   platform = ststm32
-  board = disco_h743xi
+  board = pybstick26_duino
 
-You can override default STM32H747I-DISCO settings per build environment using
+You can override default PYBSTICK26 Duino settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `disco_h743xi.json <https://github.com/platformio/platform-ststm32/blob/master/boards/disco_h743xi.json>`_. For example,
+board manifest `pybstick26_duino.json <https://github.com/platformio/platform-ststm32/blob/master/boards/pybstick26_duino.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:disco_h743xi]
+  [env:pybstick26_duino]
   platform = ststm32
-  board = disco_h743xi
+  board = pybstick26_duino
 
   ; change microcontroller
-  board_build.mcu = stm32h747xih6
+  board_build.mcu = stm32f072rb
 
   ; change MCU frequency
-  board_build.f_cpu = 400000000L
+  board_build.f_cpu = 48000000L
 
 
 Uploading
 ---------
-STM32H747I-DISCO supports the next uploading protocols:
+PYBSTICK26 Duino supports the next uploading protocols:
 
 * ``blackmagic``
+* ``dfu``
 * ``jlink``
-* ``mbed``
+* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -79,9 +80,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:disco_h743xi]
+  [env:pybstick26_duino]
   platform = ststm32
-  board = disco_h743xi
+  board = pybstick26_duino
 
   upload_protocol = stlink
 
@@ -98,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-STM32H747I-DISCO has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+PYBSTICK26 Duino does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -108,13 +109,13 @@ STM32H747I-DISCO has on-board debug probe and **IS READY** for debugging. You do
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_jlink`
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------
@@ -124,8 +125,14 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+    * - :ref:`framework_cmsis`
+      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
+
+    * - :ref:`framework_stm32cube`
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
+
+    * - :ref:`framework_libopencm3`
+      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others

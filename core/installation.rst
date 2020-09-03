@@ -221,7 +221,7 @@ Creating
 ''''''''
 
 1.  Create a folder which contains all the necessary executables to use the
-    packages that PIO Core would need using ``virtualenv`` command:
+    packages that PlatformIO Core would need using ``virtualenv`` command:
 
     .. code-block:: bash
 
@@ -251,13 +251,13 @@ Creating
         # or
         . /path/to/.platformio/penv/bin/activate
 
-3.  Install PIO Core into virtual environment
+3.  Install PlatformIO Core into virtual environment
 
     .. code-block:: bash
 
         pip install -U platformio
 
-If you plan to use PIO Core commands outside virtual environment, please
+If you plan to use PlatformIO Core commands outside virtual environment, please
 :ref:`piocore_install_shell_commands`.
 
 .. _installation_develop:
@@ -381,17 +381,17 @@ list (please replace ``UserName`` with your account name).
 
 .. _piocore_uninstall:
 
-Uninstall PIO Core and dependent packages
------------------------------------------
+Uninstall PlatformIO Core and dependent packages
+------------------------------------------------
 
-* Uninstall PIO Core tool
+* Uninstall PlatformIO Core tool
 
     .. code-block:: bash
 
-        # uninstall standalone PIO Core installed via `pip`
+        # uninstall standalone PlatformIO Core installed via `pip`
         pip uninstall platformio
 
-        # uninstall Homebrew's PIO Core (only macOS users if you installed it via Homebrew before)
+        # uninstall Homebrew's PlatformIO Core (only macOS users if you installed it via Homebrew before)
         brew uninstall platformio
 
 * Dependent packages, global libraries are installed to :ref:`projectconf_pio_core_dir`

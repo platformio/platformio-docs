@@ -87,8 +87,6 @@ Example:
 ``monitor_filters``
 ^^^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 4.3
-
 Type: ``String`` | Multiple: ``Yes``
 
 Apply filters and text transformation for device output. See available filters at
@@ -125,8 +123,6 @@ A monitor initial ``DTR`` line state. See :option:`platformio device monitor --d
 
 ``monitor_flags``
 ^^^^^^^^^^^^^^^^^
-
-.. versionadded:: 4.0
 
 Type: ``String`` | Multiple: ``Yes``
 

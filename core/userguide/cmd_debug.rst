@@ -58,14 +58,12 @@ to a current working directory (``CWD``).
 .. option::
     -c, --project-conf
 
-.. versionadded:: 4.0
-
 Process project with a custom :ref:`projectconf`.
 
 .. option::
     --interface
 
-PIO Debugging Interface. Valid values:
+PlatformIO Debugging Interface. Valid values:
 
 * ``gdb`` - GDB: The GNU Project Debugger
 

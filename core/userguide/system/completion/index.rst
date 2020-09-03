@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_misc_completion:
+.. _cmd_system_completion:
 
 PlatformIO Shell Completion
 ===========================
@@ -25,9 +25,9 @@ To print all available commands and options use:
 
 .. code-block:: bash
 
-    platformio misc completion --help
-    platformio misc completion COMMAND --help
-    pio misc completion --help
+    platformio system completion --help
+    platformio system completion COMMAND --help
+    pio system completion --help
 
 
 .. toctree::

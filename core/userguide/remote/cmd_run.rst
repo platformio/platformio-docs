@@ -26,7 +26,7 @@ Usage
     platformio remote run [OPTIONS]
     pio remote run [OPTIONS]
 
-    # process environments using specified PIO Remote Agent
+    # process environments using specified PlatformIO Remote Agent
     platformio remote --agent NAME run [OPTIONS]
 
 Description
@@ -59,18 +59,8 @@ You can also specify which environments should be processed by default using
 .. option::
     -t, --target
 
-Process specified targets.
-
-Built-in targets:
-
-* ``clean`` delete compiled object files, libraries and firmware/program binaries
-* ``upload`` firmware "auto-uploading" for embedded platforms
-* ``program`` firmware "auto-uploading" for embedded platforms using external
-  programmer (available only for :ref:`platform_atmelavr`)
-* ``buildfs`` :ref:`platform_espressif_uploadfs`
-* ``uploadfs`` :ref:`platform_espressif_uploadfs`
-* ``envdump`` dump current build environment
-* ``size`` print the size of the sections in a firmware/program
+Process specified targets. See :option:`platformio run --list-targets` documentation
+for available targets.
 
 .. option::
     --upload-port

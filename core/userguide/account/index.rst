@@ -28,6 +28,7 @@ To print all available commands and options use:
 .. toctree::
     :maxdepth: 2
 
+    cmd_destroy
     cmd_forgot
     cmd_login
     cmd_logout

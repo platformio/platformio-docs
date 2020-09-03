@@ -49,9 +49,11 @@ Embedded
     :maxdepth: 1
 
     aceinna_imu
+    asrmicro650x
     atmelavr
     atmelmegaavr
     atmelsam
+    chipsalliance
     espressif32
     espressif8266
     freescalekinetis

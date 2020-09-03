@@ -97,8 +97,6 @@ Example:
 ``extra_configs``
 ^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 4.0
-
 Type: ``String (Pattern)`` | Multiple: ``Yes``
 
 This option allows extending a base :ref:`projectconf` with extra configuration
@@ -219,8 +217,6 @@ Directory options
 ``core_dir``
 ^^^^^^^^^^^^
 
-.. versionadded:: 4.0
-
 Type: ``DirPath`` | Multiple: ``No``
 
 The core_dir variable points out the directory used for all
@@ -249,8 +245,6 @@ Example:
 ``globallib_dir``
 ^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 4.0
-
 Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/lib"
 
 Global library storage for PlatfrmIO projects and :ref:`librarymanager` where
@@ -264,8 +258,6 @@ This option can also be configured by the global environment variable
 ``platforms_dir``
 ^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 4.0
-
 Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/platforms"
 
 Global storage where **PlatformIO Package Manager** installs :ref:`platforms`.
@@ -277,8 +269,6 @@ This option can also be configured by the global environment variable
 
 ``packages_dir``
 ^^^^^^^^^^^^^^^^
-
-.. versionadded:: 4.0
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/packages"
 
@@ -292,8 +282,6 @@ This option can also be configured by the global environment variable
 
 ``cache_dir``
 ^^^^^^^^^^^^^
-
-.. versionadded:: 4.0
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/cache"
 
@@ -309,8 +297,6 @@ This option can also be configured by the global environment variable
 
 ``build_cache_dir``
 ^^^^^^^^^^^^^^^^^^^
-
-.. versionadded:: 4.0
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: None (Disabled)
 
@@ -353,8 +339,6 @@ a different configuration (new build flags, etc):
 
 ``workspace_dir``
 ^^^^^^^^^^^^^^^^^
-
-.. versionadded:: 4.0
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``.pio``"
 
@@ -551,8 +535,6 @@ This option can also be configured by the global environment variable
 
 ``shared_dir``
 ^^^^^^^^^^^^^^
-
-.. versionadded:: 4.0
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``shared``"
 

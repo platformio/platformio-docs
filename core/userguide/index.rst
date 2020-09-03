@@ -62,6 +62,7 @@ Commands
 .. toctree::
     :maxdepth: 2
 
+    access/index
     account/index
     cmd_boards
     cmd_check
@@ -70,12 +71,15 @@ Commands
     platformio device <device/index>
     cmd_home
     platformio lib <lib/index>
-    platformio project <project/index>
+    org/index
+    package/index
     platformio platform <platforms/index>
+    platformio project <project/index>
     platformio remote <remote/index>
     cmd_run
     cmd_settings
     system/index
+    team/index
     cmd_test
     cmd_update
     cmd_upgrade
