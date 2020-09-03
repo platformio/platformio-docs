@@ -24,6 +24,7 @@ Usage
     platformio lib [STORAGE_OPTIONS] install [OPTIONS] [LIBRARY...]
     pio lib [STORAGE_OPTIONS] install [OPTIONS] [LIBRARY...]
 
+    # RECOMMENDED
     # install all project dependencies declared via "lib_deps"
     # (run it from a project root where is located "platformio.ini")
     platformio lib install [OPTIONS]
@@ -37,7 +38,7 @@ Usage
     platformio lib -e myenv install [OPTIONS] [LIBRARY...]
     platformio lib -d /path/to/platformio/project -e myenv install [OPTIONS] [LIBRARY...]
 
-    # install to global storage
+    # install to global storage (NOT RECOMMENDED)
     platformio lib --global install [OPTIONS] [LIBRARY...]
     platformio lib -g install [OPTIONS] [LIBRARY...]
 
@@ -46,17 +47,10 @@ Usage
     platformio lib -d /path/to/dir1 -d /path/to/dir2 install [OPTIONS] [LIBRARY...]
 
     # [LIBRARY...] forms
-    platformio lib [STORAGE_OPTIONS] install (with no args, project dependencies)
-    platformio lib [STORAGE_OPTIONS] install <id>
-    platformio lib [STORAGE_OPTIONS] install id=<id>
-    platformio lib [STORAGE_OPTIONS] install <id>@<version>
-    platformio lib [STORAGE_OPTIONS] install <id>@<version range>
-    platformio lib [STORAGE_OPTIONS] install <name>
-    platformio lib [STORAGE_OPTIONS] install <name>@<version>
-    platformio lib [STORAGE_OPTIONS] install <name>@<version range>
-    platformio lib [STORAGE_OPTIONS] install <ownernme/name>
-    platformio lib [STORAGE_OPTIONS] install <ownernme/name>@<version>
-    platformio lib [STORAGE_OPTIONS] install <ownernme/name>@<version range>
+    platformio lib [STORAGE_OPTIONS] install (with no args, install project dependencies from "lib_deps")
+    platformio lib [STORAGE_OPTIONS] install <ownername/name>
+    platformio lib [STORAGE_OPTIONS] install <ownername/name>@<version>
+    platformio lib [STORAGE_OPTIONS] install <ownername/name>@<version range>
     platformio lib [STORAGE_OPTIONS] install <zip or tarball url>
     platformio lib [STORAGE_OPTIONS] install file://<zip or tarball file>
     platformio lib [STORAGE_OPTIONS] install file://<folder>
@@ -69,8 +63,6 @@ Usage
   If some libraries are not visible in :ref:`pioide` and Code Completion or
   Code Linting does not work properly, please perform
 
-  * **Atom**: "Menu: PlatformIO > Rebuild C/C++ Project Index (Autocomplete,
-    Linter)"
   * **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++
     Project Index"
 
@@ -79,23 +71,23 @@ Description
 
 Install a library, and any libraries that it depends on using:
 
-1. Library ``id`` or ``name`` from `PlatformIO Library Registry <https://platformio.org/lib>`_
+1. `PlatformIO Library Registry <https://platformio.org/lib>`_
 2. Custom folder, repository or archive.
 
 The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
-* ``1.2.3`` - an exact version number. Use only this exact version
-* ``^1.2.3`` - any compatible version (exact version for ``1.x.x`` versions)
+* ``^1.2.3`` - any compatible version (new functionality in a backwards compatible manner and patches are allowed, 1.x.x). **RECOMMENDED**
 * ``~1.2.3`` - any version with the same major and minor versions, and an
   equal or greater patch version
 * ``>1.2.3`` - any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
   are also possible
 * ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
   ``0.2.0`` and less than ``0.3.0``
+* ``1.2.3`` - an exact version number. Use only this exact version.
 
 PlatformIO supports installing from local directory or archive.
-Need to use ``file://`` prefix before local path.
+YOu need to use ``file://`` prefix before local path.
 
 * ``file:///local/path/to/the/platform/dir``
 * ``file:///local/path/to/the/platform.zip``
@@ -152,7 +144,6 @@ Git
 The supported schemes are: ``git``, ``git+https`` and ``git+ssh``. Here are
 the supported forms:
 
-* user/library (short version for GitHub repository)
 * https://github.com/user/library.git
 * git+git://git.server.org/my-library
 * git+https://git.server.org/my-library

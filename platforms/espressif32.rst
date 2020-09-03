@@ -439,6 +439,9 @@ Packages
     * - `tool-openocd-esp32 <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
       - Open On-Chip Debugger for Espressif ESP32
 
+    * - `toolchain-esp32s2ulp <https://github.com/espressif/esp-idf.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Binutils fork with support for the ESP32-S2 ULP co-processor
+
     * - `toolchain-esp32ulp <https://github.com/espressif/binutils-esp32ulp.git?utm_source=platformio.org&utm_medium=docs>`__
       - Binutils fork with support for the Espressif ESP32 ULP co-processor
 

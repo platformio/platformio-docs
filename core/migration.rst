@@ -17,15 +17,20 @@ Migrating from 4.x to 5.0
 Guidance on how to upgrade from :ref:`piocore` v4.x to v5.x with emphasis on
 major changes, what is new, and what has been removed.
 
+**PlatformIO Core 5.0 is fully backward compatible with PlatformIO 4.0 projects.**
+
 Please read :ref:`PlatformIO 5.0 Release Notes <release_notes_5>` before.
 
 .. contents:: Contents
   :local:
 
-Compatibility
--------------
+Migration Steps
+---------------
 
-PlatformIO Core 5.0 is fully backward compatible with PlatformIO 4.0 projects.
+1. Ensure that you do not use a short version of the Github declaration in :ref:`projectconf_lib_deps`.
+   Please use ``https://github.com/username/repo.git`` instead of ``username/repo``.
+2. We recommend updating your project dependency declarations in :ref:`projectconf_lib_deps`
+   using a new owner-based syntax. See  the :ref:`core_migration_libmanager` section for details.
 
 What is new
 -----------
@@ -82,6 +87,8 @@ supports not only the libraries but also :ref:`platforms` and toolchains.
 Package maintainers can publish their libraries, development platforms, and toolchains
 to the registry using :ref:`cmd_package` CLI.
 
+.. _core_migration_libmanager:
+
 Library Manager
 ~~~~~~~~~~~~~~~
 
@@ -93,12 +100,15 @@ via :ref:`projectconf_lib_deps`:
 .. code-block:: ini
 
   [env:myenv]
-  platform = platformio/espressif32
+  platform = ...
   framework = ...
   board = ...
   lib_deps =
     bblanchon/ArduinoJson @ ^6.16.1
     knolleary/PubSubClient @ ^2.8
+
+You can find an owner name of a library in the registry using
+:ref:`piohome` > Libraries > Some Library > Installation tab.
 
 Build System
 ~~~~~~~~~~~~
@@ -135,7 +145,7 @@ packageRepositories
 ~~~~~~~~~~~~~~~~~~~
 
 PlatformIO Core 5.0 does not support unofficial package repositories declared through
-``packageRepositories`` in ``platform.json`` that was introduced in PlatformIO 2.0.
+``packageRepositories`` in ``platform.json`` that was introduced in PlatformIO 3.0.
 
 Please publish your development platforms and toolchains to the **PlatformIO Trusted
 Registry** using :ref:`cmd_package` CLI.

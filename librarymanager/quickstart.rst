@@ -38,8 +38,7 @@ Project dependencies
 *PlatformIO Library Manager* allows one to specify project dependencies
 (:ref:`projectconf_lib_deps`) that will be installed automatically per project
 before environment processing. You do not need to install libraries manually.
-The only one simple step is to define dependencies in :ref:`projectconf`.
-You can use library ID, Name or even repository URL. For example,
+The only one simple step is to define dependencies in :ref:`projectconf`. For example,
 
 .. code-block:: ini
 
@@ -48,9 +47,8 @@ You can use library ID, Name or even repository URL. For example,
   framework = ...
   board = ...
   lib_deps =
-    13
-    PubSubClient
-    ArduinoJson@~5.6,!=5.4
+    knolleary/PubSubClient
+    bblanchon/ArduinoJson @ ~5,!=5.4
     https://github.com/gioblu/PJON.git#v2.0
     https://github.com/me-no-dev/ESPAsyncTCP.git
     https://github.com/adafruit/DHT-sensor-library/archive/master.zip
@@ -63,8 +61,6 @@ possible values.
   If some libraries are not visible in :ref:`pioide` and Code Completion or
   Code Linting does not work properly, please perform
 
-  * **Atom**: "Menu: PlatformIO > Rebuild C/C++ Project Index (Autocomplete,
-    Linter)"
   * **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++
     Project Index"
 

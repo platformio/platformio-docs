@@ -41,12 +41,6 @@ Example:
 
 .. code-block:: ini
 
-    [env]
-    ; Unix
-    lib_extra_dirs = ${sysenv.HOME}/Documents/Arduino/libraries
-    ; Windows
-    lib_extra_dirs = ${sysenv.HOMEDRIVE}${sysenv.HOMEPATH}\Documents\Arduino\libraries
-
     ; You MUST inject these options into [env:] section
     ; using ${extra.***} (see below)
     [extra]
@@ -54,7 +48,8 @@ Example:
     lib_deps_builtin =
       SPI
       Wire
-    lib_deps_external = ArduinoJson@>5.6.0
+    lib_deps_external =
+      bblanchon/ArduinoJson@>5.6.0
 
     [env:uno]
     platform = atmelavr
@@ -73,8 +68,8 @@ Example:
     lib_deps =
       ${extra.lib_deps_builtin}
       ${extra.lib_deps_external}
-      PubSubClient@2.6
-      OneWire
+      knolleary/PubSubClient @ ~2.6
+      paulstoffregen/OneWire @ ^2.3.5
 
     ; Keep sensitive data in environment variables
     ;

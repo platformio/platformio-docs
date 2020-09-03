@@ -50,16 +50,7 @@ first compiling the tools.
 
 PlatformIO has a registry with pre-built packages for the most popular
 operating systems and you can use them in your platform
-manifest. These packages are stored in the super-fast and reliably CDN
-storage provided by `JFrog Bintray
-<https://bintray.com/platformio/dl-packages>`_.
-
-Each platform definition must define ``packageRepositories`` to link
-to *package manifest files* that lists how PlatformIO can download the
-used packages. To use the pre-built packages, include
-http://dl.platformio.org/packages/manifest.json in the
-``packageRepositories`` list. Platform definitions can also use custom
-packages.
+manifest. Custom packages can be uploaded to the PlatformIO Registry using :ref:`cmd_package_publish` command.
 
 .. _platform_creating_manifest_file:
 
@@ -78,8 +69,9 @@ Here is an example ``platform.json`` for the fictitious platform "myplatform":
       "name": "myplatform",
       "title": "My Platform",
       "description": "My custom development platform",
-      "url": "https://example.com",
+      "homepage": "https://mycompany.com",
       "license": "Apache-2.0",
+      "keywords": ["keyword_1", "keyword_N"],
       "repository": {
         "type": "git",
         "url": "https://github.com/platformio/platform-myplatform.git"
@@ -98,6 +90,7 @@ Here is an example ``platform.json`` for the fictitious platform "myplatform":
       "packages": {
         "toolchain-gccarmnoneeabi": {
           "type": "toolchain",
+          "owner": "platformio",
           "version": ">=1.40803.0,<1.40805.0"
         },
         "framework-%FRAMEWORK_NAME_1%": {

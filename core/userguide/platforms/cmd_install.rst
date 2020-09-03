@@ -28,6 +28,8 @@ Usage
     platformio platform install <name>
     platformio platform install <name>@<version>
     platformio platform install <name>@<version range>
+    platformio platform install <ownername>@<version>
+    platformio platform install <ownername>@<version range>
     platformio platform install <zip or tarball url>
     platformio platform install file://<zip or tarball file>
     platformio platform install file://<folder>
@@ -75,14 +77,14 @@ Install :ref:`platforms` and dependent packages.
 The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
-* ``1.2.3`` - an exact version number. Use only this exact version
-* ``^1.2.3`` - any compatible version (exact version for ``1.x.x`` versions)
+* ``^1.2.3`` - any compatible version (new functionality in a backwards compatible manner and patches are allowed, 1.x.x). **RECOMMENDED**
 * ``~1.2.3`` - any version with the same major and minor versions, and an
   equal or greater patch version
 * ``>1.2.3`` - any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
   are also possible
 * ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
   ``0.2.0`` and less than ``0.3.0``
+* ``1.2.3`` - an exact version number. Use only this exact version.
 
 Also, PlatformIO supports installing from local directory or archive. Need to
 use ``file://`` prefix before local path. Also, directory or archive should
@@ -108,7 +110,6 @@ Git
 The supported schemes are: ``git``, ``git+https`` and ``git+ssh``. Here are
 the supported forms:
 
-* platformio/platform-NAME (short version for GitHub repository)
 * https://github.com/platformio/platform-NAME.git
 * git+git://git.server.org/my-platform
 * git+https://git.server.org/my-platform
