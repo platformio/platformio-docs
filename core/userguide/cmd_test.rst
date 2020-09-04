@@ -137,7 +137,12 @@ Skip building stage.
 .. option::
     --without-uploading
 
-Skip uploading stage
+Skip uploading stage.
+
+.. option::
+    --without-testing
+
+Skip testing stage.
 
 .. option::
     --no-reset
