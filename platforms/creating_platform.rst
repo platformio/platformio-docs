@@ -35,6 +35,12 @@ new development platforms.
 
 .. contents::
 
+Examples
+--------
+
+Please take a look at the source code of existing
+`PlatformIO Development Platforms <https://github.com/topics/platformio-platform>`_.
+
 .. _platform_creating_packages:
 
 Packages
@@ -221,8 +227,13 @@ Using the "myplatform" platform example above:
 Now, you can use ``myplatform`` as value for the :ref:`projectconf_env_platform`
 option in :ref:`projectconf`.
 
-Examples
---------
+Publishing
+----------
 
-Please take a look at the source code of existing
-`PlatformIO Development Platforms <https://github.com/topics/platformio-platform>`_.
+You can publish a development platform to the **PlatformIO Trusted Registry**
+using :ref:`cmd_package_publish` command. Other developers will be able to install it.
+Every time when you modify a source code of a development platform you will need to
+increment the "version" field in :ref:`library_json` manifest and re-publish again.
+
+If the published development platform has an issue and you would like to remove it from
+the PlatformIO Trusted Registry, please use :ref:`cmd_package_unpublish` command.
