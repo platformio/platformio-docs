@@ -29,7 +29,7 @@ Usage
 Description
 -----------
 
-Show all of the resources a user or a team can access, along with the access
+Show all of the resources (packages) a user or a team can access, along with the access
 level, except for read-only public resources (it won’t print the whole registry listing).
 
 To list resources by the specified owner, type owner's "username" as an argument to this command.
