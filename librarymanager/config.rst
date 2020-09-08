@@ -297,18 +297,13 @@ use ``*`` symbol:
 ``dependencies``
 ----------------
 
-*Optional* | Type: ``Array`` or ``Object``
+*Optional* | Type: ``Object``
 
 A list of dependent libraries. They will be installed automatically with
 :ref:`cmd_lib_install` command.
 
-Allowed requirements for dependent library:
-
-* ``name`` | Type: ``String``
-* ``version`` | Type: ``String``
-* ``authors`` | Type: ``String`` or ``Array``
-* ``frameworks`` | Type: ``String`` or ``Array``
-* ``platforms`` | Type: ``String`` or ``Array``
+The key of an object is library name or owner-based specification. Value is a library
+version or an external resource.
 
 The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
@@ -330,32 +325,11 @@ Example:
 .. code-block:: javascript
 
     "dependencies":
-    [
-        {
-            "name": "Library-Foo",
-            "authors":
-            [
-                "Jhon Smith",
-                "Andrew Smith"
-            ]
-        },
-        {
-            "name": "Library-Bar",
-            "version": "~1.2.3"
-        },
-        {
-            "name": "lib-from-repo",
-            "version": "https://github.com/user/package.git#1.2.3"
-        }
-    ]
-
-A short definition of dependencies is allowed:
-
-.. code-block:: javascript
-
-    "dependencies": {
-        "mylib": "1.2.3",
-        "lib-from-repo": "https://github.com/user/package.git"
+    {
+        "bblanchon/ArduinoJson": "^6.16.1",
+        "me-no-dev/AsyncTCP": "*",
+        "external-repo": "https://github.com/user/package.git#1.2.3",
+        "external-zip": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
     }
 
 
