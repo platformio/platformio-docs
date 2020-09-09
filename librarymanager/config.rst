@@ -297,13 +297,18 @@ use ``*`` symbol:
 ``dependencies``
 ----------------
 
-*Optional* | Type: ``Object``
+*Optional* | Type: ``Array`` or ``Object``
 
 A list of dependent libraries. They will be installed automatically with
 :ref:`cmd_lib_install` command.
 
-The key of an object is library name or owner-based specification. Value is a library
-version or an external resource.
+Allowed requirements for dependent library:
+
+* ``owner`` | Type: ``String`` – an owner name (username) from the PlatformIO Registry
+* ``name`` | Type: ``String`` – library name
+* ``version`` | Type: ``String`` – version or version range in SemVer format
+* ``frameworks`` | Type: ``String`` or ``Array`` – project compatible :ref:`frameworks`
+* ``platforms`` | Type: ``String`` or ``Array`` – project compatible :ref:`platforms`
 
 The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
@@ -320,7 +325,35 @@ The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 The rest possible values including VCS repository URLs are documented in
 :ref:`cmd_lib_install` command.
 
+
 Example:
+
+.. code-block:: javascript
+
+    "dependencies":
+    [
+        {
+            "owner": "bblanchon",
+            "name": "ArduinoJson",
+            "version": "^6.16.1"
+        },
+        {
+            "owner": "me-no-dev",
+            "name": "AsyncTCP",
+            "version": "*",
+            "platforms": ["espressif32"]
+        },
+        {
+            "name": "external-repo",
+            "version": "https://github.com/user/package.git#1.2.3"
+        },
+        {
+            "name": "external-zip",
+            "version": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
+        }
+    ]
+
+A short definition of dependencies is allowed:
 
 .. code-block:: javascript
 
