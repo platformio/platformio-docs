@@ -233,7 +233,7 @@ Publishing
 You can publish a development platform to the **PlatformIO Trusted Registry**
 using :ref:`cmd_package_publish` command. Other developers will be able to install it.
 Every time when you modify a source code of a development platform you will need to
-increment the "version" field in :ref:`library_json` manifest and re-publish again.
+increment the "version" field in "platform.json" manifest and re-publish again.
 
 If the published development platform has an issue and you would like to remove it from
 the PlatformIO Trusted Registry, please use :ref:`cmd_package_unpublish` command.
