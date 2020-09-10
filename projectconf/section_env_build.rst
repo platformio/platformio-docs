@@ -220,8 +220,12 @@ in the same directory as ``platformio.ini``.
 
     import subprocess
 
-    revision = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip()
-    print("-DPIO_SRC_REV=%s" % revision)
+    revision = (
+        subprocess.check_output(["git", "rev-parse", "HEAD"])
+        .strip()
+        .decode("utf-8")
+    )
+    print("-DGIT_REV='\"%s\"'" % revision)
 
 
 .. _projectconf_src_build_flags:

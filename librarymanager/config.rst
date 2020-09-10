@@ -304,11 +304,11 @@ A list of dependent libraries. They will be installed automatically with
 
 Allowed requirements for dependent library:
 
-* ``name`` | Type: ``String``
-* ``version`` | Type: ``String``
-* ``authors`` | Type: ``String`` or ``Array``
-* ``frameworks`` | Type: ``String`` or ``Array``
-* ``platforms`` | Type: ``String`` or ``Array``
+* ``owner`` | Type: ``String`` – an owner name (username) from the PlatformIO Registry
+* ``name`` | Type: ``String`` – library name
+* ``version`` | Type: ``String`` – version or version range in SemVer format
+* ``frameworks`` | Type: ``String`` or ``Array`` – project compatible :ref:`frameworks`
+* ``platforms`` | Type: ``String`` or ``Array`` – project compatible :ref:`platforms`
 
 The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
@@ -325,6 +325,7 @@ The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 The rest possible values including VCS repository URLs are documented in
 :ref:`cmd_lib_install` command.
 
+
 Example:
 
 .. code-block:: javascript
@@ -332,20 +333,23 @@ Example:
     "dependencies":
     [
         {
-            "name": "Library-Foo",
-            "authors":
-            [
-                "Jhon Smith",
-                "Andrew Smith"
-            ]
+            "owner": "bblanchon",
+            "name": "ArduinoJson",
+            "version": "^6.16.1"
         },
         {
-            "name": "Library-Bar",
-            "version": "~1.2.3"
+            "owner": "me-no-dev",
+            "name": "AsyncTCP",
+            "version": "*",
+            "platforms": ["espressif32"]
         },
         {
-            "name": "lib-from-repo",
+            "name": "external-repo",
             "version": "https://github.com/user/package.git#1.2.3"
+        },
+        {
+            "name": "external-zip",
+            "version": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
         }
     ]
 
@@ -353,9 +357,12 @@ A short definition of dependencies is allowed:
 
 .. code-block:: javascript
 
-    "dependencies": {
-        "mylib": "1.2.3",
-        "lib-from-repo": "https://github.com/user/package.git"
+    "dependencies":
+    {
+        "bblanchon/ArduinoJson": "^6.16.1",
+        "me-no-dev/AsyncTCP": "*",
+        "external-repo": "https://github.com/user/package.git#1.2.3",
+        "external-zip": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
     }
 
 
