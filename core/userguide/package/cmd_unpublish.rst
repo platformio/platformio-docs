@@ -45,8 +45,8 @@ Options
 .. option::
     --type
 
-Set a type of package to unpublish (if you have packages with the same name).
-A possible values are ``lirbary``, ``platform``, or ``tool``. The default is set to ``library``.
+Set the type of a package to unpublish (if you have packages with the same name).
+Possible values are ``library``, ``platform``, or ``tool``. The default is set to ``library``.
 
 .. option::
     --undo
