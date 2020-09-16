@@ -138,12 +138,11 @@ Each button contains hint (delay mouse on it).
 1. :ref:`piohome`
 2. PlatformIO: Build
 3. PlatformIO: Upload
-4. :ref:`pioremote`
-5. PlatformIO: Clean
-6. :ref:`unit_testing`
-7. Run a task... (See "Task Runner" below)
-8. :ref:`Serial Port Monitor <cmd_device_monitor>`
-9. PlatformIO Terminal
+4. PlatformIO: Clean
+5. :ref:`Serial Port Monitor <cmd_device_monitor>`
+6. PlatformIO Terminal
+7. Project environment switcher (if more than one environment is available).
+   See :ref:`projectconf_section_env` of :ref:`projectconf` .
 
 Custom Build Task
 ~~~~~~~~~~~~~~~~~
@@ -153,32 +152,21 @@ is used by "Build" button in PlatformIO Toolbar and
 :ref:`ide_vscode_keybindings`. See ``platformio-ide.buildTask`` setting
 in :ref:`ide_vscode_settings` for more details.
 
-Built-in PlatformIO tasks are available in "Menu > Terminal > Run Task..." list.
-
-.. _ide_vscode_keybindings:
-
-Key Bindings
-------------
-
-* ``ctrl+alt+b`` / ``cmd-shift-b`` / ``ctrl-shift-b`` Build Project
-* ``cmd-shift-d`` / ``ctrl-shift-d`` Debug project
-* ``ctrl+alt+u`` Upload Firmware
-* ``ctrl+alt+s`` Open :ref:`Serial Port Monitor <cmd_device_monitor>`
-
-You can override existing key bindings  or add a new in VSCode. See official
-documentation `Key Bindings for Visual Studio Code <https://code.visualstudio.com/docs/getstarted/keybindings>`_.
-
 Project Tasks
 -------------
 
 Task Explorer
 ~~~~~~~~~~~~~
 
-PlatformIO provides access to "Project Task Explorer" where you can control
+PlatformIO provides access to "Project Task" where you can control
 the build process of the environments declared in :ref:`projectconf`.
 Project Task Explorer is located in the VSCode Activity Bar under the branded
 PlatformIO icon. You can also access it via "VSCode Menu > Open View... >
 PlatformIO".
+
+.. hint::
+  Please note that you can drag/move "Project Task" into to the another view within
+  VSCode, such as "Explorer".
 
 .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-task-explorer.png
 
@@ -410,6 +398,19 @@ There are two options how to configure a proxy server:
    and search for "Proxy". Please set "Http: Proxy" and disable
    "Http: Proxy Strict SSL".
 
+.. _ide_vscode_keybindings:
+
+Key Bindings
+------------
+
+* ``ctrl+alt+b`` / ``cmd-shift-b`` / ``ctrl-shift-b`` Build Project
+* ``cmd-shift-d`` / ``ctrl-shift-d`` Debug project
+* ``ctrl+alt+u`` Upload Firmware
+* ``ctrl+alt+s`` Open :ref:`Serial Port Monitor <cmd_device_monitor>`
+
+You can override existing key bindings  or add a new in VSCode. See official
+documentation `Key Bindings for Visual Studio Code <https://code.visualstudio.com/docs/getstarted/keybindings>`_.
+
 .. _ide_vscode_settings:
 
 Settings
@@ -440,6 +441,10 @@ The build task (label) that is launched by the "Build" button in the
 
 You can create custom :ref:`ide_vscode_custom_task` and assign one of them to ``platformio-ide.buildTask``.
 
+``platformio-ide.autoPreloadEnvTasks``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Automatically preload ALL project environment tasks. The default value is ``false``.
+
 ``platformio-ide.customPATH``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Custom PATH for the ``platformio`` command. Paste here the result of ``echo $PATH``
@@ -462,7 +467,7 @@ The default value is ``0``, which means to reopen instantly.
 
 ``platformio-ide.useBuiltinPython``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Use a built-in Python 3 Interpreter if available. The default value is ``true``.
+Use a portable Python 3 Interpreter if available. The default value is ``true``.
 
 ``platformio-ide.useBuiltinPIOCore``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
