@@ -27,7 +27,7 @@ Type: ``String`` | Multiple: ``No``
 :ref:`platforms` name.
 
 PlatformIO allows one to use specific version of platform using
-`Semantic Versioning <http://semver.org>`_ (X.Y.Z=MAJOR.MINOR.PATCH) or VCS
+`Semantic Versioning <https://devhints.io/semver>`_ (X.Y.Z=MAJOR.MINOR.PATCH) or VCS
 (Git, Mercurial and Subversion).
 
 Version specifications can take any of the following forms:

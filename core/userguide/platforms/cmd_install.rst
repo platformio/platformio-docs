@@ -74,7 +74,7 @@ Description
 
 Install :ref:`platforms` and dependent packages.
 
-The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
+The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
 * ``^1.2.3`` - any compatible version (new functionality in a backwards compatible manner and patches are allowed, 1.x.x). **RECOMMENDED**
