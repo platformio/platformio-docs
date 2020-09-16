@@ -700,10 +700,17 @@ Boards
     * - :ref:`board_ststm32_blackpill_f401cc`
       - :ref:`platform_ststm32`
       - External
-      - STM32F401CCT6
+      - STM32F401CCU6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -767,6 +774,13 @@ Boards
       - 48MHz
       - 64KB
       - 10KB
+    * - :ref:`board_ststm32_cicada_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_nxplpc_elektor_cocorico`
       - :ref:`platform_nxplpc`
       - On-board
@@ -781,6 +795,13 @@ Boards
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_cricket_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -837,6 +858,13 @@ Boards
       - 24MHz
       - 32KB
       - 4KB
+    * - :ref:`board_ststm32_econode_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_nordicnrf52_electronut_blip`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -900,6 +928,20 @@ Boards
       - 48MHz
       - 64KB
       - 16KB
+    * - :ref:`board_ststm32_gnat_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_grasshopper_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_nordicnrf52_holyiot_yj16019`
       - :ref:`platform_nordicnrf52`
       - External

@@ -1946,6 +1946,27 @@ ESP32vn
       - 4MB
       - 320KB
 
+Econode
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_econode_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+
 Electronut Labs
 ~~~~~~~~~~~~~~~
 
@@ -4972,10 +4993,17 @@ ST
     * - :ref:`board_ststm32_blackpill_f401cc`
       - :ref:`platform_ststm32`
       - External
-      - STM32F401CCT6
+      - STM32F401CCU6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -6649,6 +6677,48 @@ TinyCircuits
       - 8MHz
       - 30KB
       - 2KB
+
+Tlera Corporation
+~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_cicada_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_cricket_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_gnat_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_grasshopper_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
 
 Unknown
 ~~~~~~~

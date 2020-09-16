@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_blackpill_f401cc:
+.. _board_ststm32_blackpill_f401ce:
 
-BlackPill F401CC
+BlackPill F401CE
 ================
 
 .. contents::
@@ -24,41 +24,41 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F401CCU6
+    - STM32F401CEU6
   * - **Frequency**
     - 84MHz
   * - **Flash**
-    - 256KB
+    - 512KB
   * - **RAM**
-    - 64KB
+    - 96KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/microcontrollers-microprocessors/stm32f401cc.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/microcontrollers-microprocessors/stm32f401ce.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``blackpill_f401cc`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``blackpill_f401ce`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:blackpill_f401cc]
+  [env:blackpill_f401ce]
   platform = ststm32
-  board = blackpill_f401cc
+  board = blackpill_f401ce
 
-You can override default BlackPill F401CC settings per build environment using
+You can override default BlackPill F401CE settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `blackpill_f401cc.json <https://github.com/platformio/platform-ststm32/blob/master/boards/blackpill_f401cc.json>`_. For example,
+board manifest `blackpill_f401ce.json <https://github.com/platformio/platform-ststm32/blob/master/boards/blackpill_f401ce.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:blackpill_f401cc]
+  [env:blackpill_f401ce]
   platform = ststm32
-  board = blackpill_f401cc
+  board = blackpill_f401ce
 
   ; change microcontroller
-  board_build.mcu = stm32f401ccu6
+  board_build.mcu = stm32f401ceu6
 
   ; change MCU frequency
   board_build.f_cpu = 84000000L
@@ -66,7 +66,7 @@ board manifest `blackpill_f401cc.json <https://github.com/platformio/platform-st
 
 Uploading
 ---------
-BlackPill F401CC supports the next uploading protocols:
+BlackPill F401CE supports the next uploading protocols:
 
 * ``blackmagic``
 * ``dfu``
@@ -80,9 +80,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:blackpill_f401cc]
+  [env:blackpill_f401ce]
   platform = ststm32
-  board = blackpill_f401cc
+  board = blackpill_f401ce
 
   upload_protocol = stlink
 
@@ -99,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-BlackPill F401CC does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+BlackPill F401CE does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

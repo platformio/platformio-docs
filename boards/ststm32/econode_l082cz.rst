@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_blackpill_f401cc:
+.. _board_ststm32_econode_l082cz:
 
-BlackPill F401CC
-================
+Econode-L082CZ
+==============
 
 .. contents::
 
@@ -24,67 +24,66 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F401CCU6
+    - STM32L082CZY6
   * - **Frequency**
-    - 84MHz
+    - 32MHz
   * - **Flash**
-    - 256KB
+    - 192KB
   * - **RAM**
-    - 64KB
+    - 20KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/microcontrollers-microprocessors/stm32f401cc.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Econode <https://www.econode.nz/L082CZ?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``blackpill_f401cc`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``econode_l082cz`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:blackpill_f401cc]
+  [env:econode_l082cz]
   platform = ststm32
-  board = blackpill_f401cc
+  board = econode_l082cz
 
-You can override default BlackPill F401CC settings per build environment using
+You can override default Econode-L082CZ settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `blackpill_f401cc.json <https://github.com/platformio/platform-ststm32/blob/master/boards/blackpill_f401cc.json>`_. For example,
+board manifest `econode_l082cz.json <https://github.com/platformio/platform-ststm32/blob/master/boards/econode_l082cz.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:blackpill_f401cc]
+  [env:econode_l082cz]
   platform = ststm32
-  board = blackpill_f401cc
+  board = econode_l082cz
 
   ; change microcontroller
-  board_build.mcu = stm32f401ccu6
+  board_build.mcu = stm32l082czy6
 
   ; change MCU frequency
-  board_build.f_cpu = 84000000L
+  board_build.f_cpu = 32000000L
 
 
 Uploading
 ---------
-BlackPill F401CC supports the next uploading protocols:
+Econode-L082CZ supports the next uploading protocols:
 
 * ``blackmagic``
 * ``dfu``
 * ``jlink``
-* ``serial``
 * ``stlink``
 
-Default protocol is ``stlink``
+Default protocol is ``dfu``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:blackpill_f401cc]
+  [env:econode_l082cz]
   platform = ststm32
-  board = blackpill_f401cc
+  board = econode_l082cz
 
-  upload_protocol = stlink
+  upload_protocol = dfu
 
 Debugging
 ---------
@@ -99,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-BlackPill F401CC does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Econode-L082CZ does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -128,11 +127,5 @@ Frameworks
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
-    * - :ref:`framework_cmsis`
-      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
-
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
-
-    * - :ref:`framework_libopencm3`
-      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others

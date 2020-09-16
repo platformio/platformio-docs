@@ -870,17 +870,23 @@ ST STM32
     ststm32/blackpill_f103c8_128
     ststm32/robotdyn_blackpill_f303cc
     ststm32/blackpill_f401cc
+    ststm32/blackpill_f401ce
     ststm32/blue_f407ve_mini
     ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
     ststm32/bluepill_f103c8_128k
+    ststm32/cicada_l082cz
     ststm32/coreboard_f401rc
+    ststm32/cricket_l082cz
     ststm32/demo_f030f4
+    ststm32/econode_l082cz
     ststm32/electrosmith_daisy
     ststm32/elmo_f411re
     ststm32/diymore_f407vgt
     ststm32/fk407m1
     ststm32/fysetc_s6
+    ststm32/gnat_l082cz
+    ststm32/grasshopper_l082cz
     ststm32/rhombio_l476dmw1k
     ststm32/malyanm200_f070cb
     ststm32/malyanm300_f070cb

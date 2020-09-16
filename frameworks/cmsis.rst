@@ -661,10 +661,16 @@ Please click on board name for the further details.
       - 40KB
     * - :ref:`board_ststm32_blackpill_f401cc`
       - :ref:`platform_ststm32`
-      - STM32F401CCT6
+      - STM32F401CCU6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -2696,10 +2702,17 @@ ST
     * - :ref:`board_ststm32_blackpill_f401cc`
       - :ref:`platform_ststm32`
       - External
-      - STM32F401CCT6
+      - STM32F401CCU6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
