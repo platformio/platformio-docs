@@ -33,7 +33,7 @@ Usage
     # (run it from a project root where is located "platformio.ini")
     platformio lib install [OPTIONS] [LIBRARY...]
 
-    # install dependencies for the specific project build environment
+    # install dependencies for the specific project environment
     # (run it from a project root where is located "platformio.ini")
     platformio lib -e myenv install [OPTIONS] [LIBRARY...]
     platformio lib -d /path/to/platformio/project -e myenv install [OPTIONS] [LIBRARY...]
@@ -104,10 +104,10 @@ Options
 .. program:: platformio lib install
 
 .. option::
-    --save
+    --save / --no-save
 
 Save installed libraries into the :ref:`projectconf` dependency list
-(:ref:`projectconf_lib_deps`).
+(:ref:`projectconf_lib_deps`). Default value is to save.
 
 You can save libraries for the specific project environment using
 ``-e, --environment`` option from :ref:`platformio lib <cmd_lib>` command. For example,
@@ -116,17 +116,12 @@ You can save libraries for the specific project environment using
 .. option::
     -s, --silent
 
-Suppress progress reporting
-
-.. option::
-    --interactive
-
-Allow one to make a choice for all prompts
+Suppress progress reporting.
 
 .. option::
     -f, --force
 
-Reinstall/redownload library if it exists
+Reinstall library if it is already installed.
 
 Version control
 ---------------

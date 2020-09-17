@@ -28,6 +28,11 @@ Usage
     # (run it from a project root where is located "platformio.ini")
     platformio lib uninstall [LIBRARY...]
 
+    # uninstall dependencies for the specific project environment
+    # (run it from a project root where is located "platformio.ini")
+    platformio lib -e myenv uninstall [OPTIONS] [LIBRARY...]
+    platformio lib -d /path/to/platformio/project -e myenv uninstall [OPTIONS] [LIBRARY...]
+
     # uninstall library from global storage
     platformio lib --global uninstall [LIBRARY...]
     platformio lib -g uninstall [LIBRARY...]
@@ -65,6 +70,28 @@ Storage Options
 ---------------
 
 See base options for :ref:`cmd_lib`.
+
+Options
+-------
+
+.. program:: platformio lib uninstall
+
+.. option::
+    --save / --no-save
+
+Remove libraries from the :ref:`projectconf` dependency list
+(:ref:`projectconf_lib_deps`) and save changes. Default value is to save.
+
+
+.. option::
+    -s, --silent
+
+Suppress progress reporting.
+
+.. option::
+    -f, --force
+
+Reinstall library if it is already installed.
 
 Examples
 --------
