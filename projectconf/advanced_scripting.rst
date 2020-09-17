@@ -889,3 +889,29 @@ custom flags. See example below where we override ``-Og`` with ``-O0``:
           for i, flag in enumerate(env[scope]):
              if flag == "-Og":
                 env[scope][i] = "-O0"
+
+Extra Python packages
+^^^^^^^^^^^^^^^^^^^^^
+
+If your project depends on the extra Python packages, you can use extra script to
+install them into the same virtual environment where :ref:`piocore` is installed.
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:my_env]
+    platform = ...
+    extra_scripts = extra_script.py
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    Import("env")
+
+    # List installed packages
+    env.Execute("$PYTHONEXE -m pip list")
+
+    # Install custom packages from the PyPi registry
+    env.Execute("$PYTHONEXE -m pip install pkg1 pkg2")
