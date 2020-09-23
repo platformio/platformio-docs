@@ -85,6 +85,11 @@ Type: ``String`` | Multiple: ``No``
 A protocol that "uploader" tool uses to talk to a board. Please check
 :ref:`boards` for supported uploading protocols by your board.
 
+.. note::
+    ``upload_protocol = custom`` allows one to use a custom ``upload_command`` - see below.
+    
+    
+
 .. _projectconf_upload_speed:
 
 ``upload_speed``
@@ -145,8 +150,10 @@ development platforms. The only :ref:`platform_espressif8266` supports it.
 
 Type: ``String`` | Multiple: ``No``
 
-Override default :ref:`platforms` upload command with a custom. You can pass a full
+Override default :ref:`platforms` upload command with a custom command. You can pass a full
 upload command with arguments and options or mix with :ref:`projectconf_upload_flags`.
+
+In order to use ``upload_command``, ``upload_protocol = custom`` must be specified.
 
 Default upload commands are declared in ``build/main.py`` script file of
 :ref:`platforms`. See a list with open source
@@ -175,6 +182,7 @@ Default upload commands are declared in ``build/main.py`` script file of
         platform = atmelavr
         framework = arduino
         board = uno
+        upload_protocol = custom
         upload_flags =
             -C
             $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
@@ -196,6 +204,7 @@ Default upload commands are declared in ``build/main.py`` script file of
         platform = atmelavr
         framework = arduino
         board = uno
+        upload_protocol = custom        
         upload_flags =
             -C
             $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
@@ -214,4 +223,5 @@ Default upload commands are declared in ``build/main.py`` script file of
         platform = ststm32
         framework = stm32cube
         board = bluepill_f103c6
+        upload_protocol = custom        
         upload_command = $PROJECT_PACKAGES_DIR/tool-stlink/st-flash write $SOURCE 0x8000000
