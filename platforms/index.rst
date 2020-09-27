@@ -77,6 +77,7 @@ Embedded
     ststm32
     ststm8
     teensy
+    ticc13x0
     timsp430
     titiva
     wiznet7500
