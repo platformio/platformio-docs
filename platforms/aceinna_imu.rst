@@ -19,7 +19,7 @@ Aceinna IMU
 
 Open-source, embedded development platform for Aceinna IMU hardware. Run custom algorithms and navigation code on Aceinna IMU/INS hardware.
 
-For more detailed information please visit `vendor site <https://www.aceinna.com?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.aceinna.com?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,11 +29,12 @@ For more detailed information please visit `vendor site <https://www.aceinna.com
 Examples
 --------
 
-Examples are listed from `Aceinna IMU development platform repository <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Aceinna IMU development platform repository <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `OpenIMU300RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300RI?utm_source=platformio&utm_medium=docs>`_
-* `OpenIMU300ZI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300ZI?utm_source=platformio&utm_medium=docs>`_
-* `OpenIMU330BI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU330BI?utm_source=platformio&utm_medium=docs>`_
+* `OpenIMU300RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300RI?utm_source=platformio.org&utm_medium=docs>`_
+* `OpenIMU330BI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU330BI?utm_source=platformio.org&utm_medium=docs>`_
+* `OpenRTK330LI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenRTK330LI?utm_source=platformio.org&utm_medium=docs>`_
+* `OpenIMU300ZI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300ZI?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -110,6 +111,16 @@ Please click on board name for the further details.
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
 
 
 Stable and upstream versions
@@ -153,14 +164,14 @@ Packages
     * - Name
       - Description
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
-      - SEGGER J-Link Software and Documentation Pack
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+      - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
-      - OpenOCD
+    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
     **Linux Users**:
@@ -182,8 +193,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 Aceinna
 ~~~~~~~
@@ -221,3 +232,15 @@ Aceinna
       - 80MHz
       - 128KB
       - 64KB
+    * - :ref:`board_aceinna_imu_OpenRTK`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB
+    * - :ref:`board_aceinna_imu_OpenRTK330L`
+      - External
+      - STM32F469IG
+      - 180MHz
+      - 1MB
+      - 384KB

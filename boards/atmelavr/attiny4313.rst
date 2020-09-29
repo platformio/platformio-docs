@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 256B
   * - **Vendor**
-    - `Atmel <http://www.microchip.com/wwwproducts/en/ATTINY4313?utm_source=platformio&utm_medium=docs>`__
+    - `Atmel <http://www.microchip.com/wwwproducts/en/ATTINY4313?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -65,7 +65,28 @@ board manifest `attiny4313.json <https://github.com/platformio/platform-atmelavr
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATtiny4313 board.
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further
+    instructions and configuration information.
+
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+Generic ATtiny4313 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Compatible Tools
+    - On-board
+    - Default
+  * - :ref:`debugging_tool_simavr`
+    - Yes
+    - Yes
 
 Frameworks
 ----------
@@ -76,4 +97,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

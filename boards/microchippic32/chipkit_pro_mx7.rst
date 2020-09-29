@@ -32,7 +32,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `Digilent <http://store.digilentinc.com/chipkit-pro-mx7-advanced-peripherals-embedded-systems-trainer-board/?utm_source=platformio&utm_medium=docs>`__
+    - `Digilent <http://store.digilentinc.com/chipkit-pro-mx7-advanced-peripherals-embedded-systems-trainer-board/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -76,4 +76,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

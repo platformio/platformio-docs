@@ -18,23 +18,24 @@ Frameworks
     :maxdepth: 1
 
     arduino
-    artik-sdk
     cmsis
     esp8266-nonos-sdk
     esp8266-rtos-sdk
     espidf
     freedom-e-sdk
+    freertos
     gd32vf103-sdk
     kendryte-freertos-sdk
     kendryte-standalone-sdk
     libopencm3
     mbed
+    nuclei-sdk
     pulp-os
     pumbaa
     shakti-sdk
     simba
     spl
     stm32cube
-    tizenrt
+    wd-riscv-sdk
     wiringpi
     zephyr

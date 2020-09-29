@@ -19,7 +19,7 @@ Kendryte Standalone SDK
 
 Kendryte Standalone SDK without OS support
 
-For more detailed information please visit `vendor site <https://github.com/kendryte/kendryte-standalone-sdk?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/kendryte/kendryte-standalone-sdk?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -106,7 +106,7 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `Kendryte Standalone SDK for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Kendryte Standalone SDK for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -125,7 +125,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 Sipeed
 ~~~~~~

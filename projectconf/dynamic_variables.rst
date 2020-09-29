@@ -41,12 +41,6 @@ Example:
 
 .. code-block:: ini
 
-    [env]
-    ; Unix
-    lib_extra_dirs = ${sysenv.HOME}/Documents/Arduino/libraries
-    ; Windows
-    lib_extra_dirs = ${sysenv.HOMEDRIVE}${sysenv.HOMEPATH}\Documents\Arduino\libraries
-
     ; You MUST inject these options into [env:] section
     ; using ${extra.***} (see below)
     [extra]
@@ -54,7 +48,8 @@ Example:
     lib_deps_builtin =
       SPI
       Wire
-    lib_deps_external = ArduinoJson@>5.6.0
+    lib_deps_external =
+      bblanchon/ArduinoJson@>5.6.0
 
     [env:uno]
     platform = atmelavr
@@ -69,14 +64,38 @@ Example:
     platform = espressif8266
     framework = arduino
     board = nodemcuv2
-    build_flags = ${extra.build_flags} -DSSID_NAME=HELLO -DSSID_PASWORD=WORLD
+    build_flags = ${extra.build_flags} -Wall
     lib_deps =
       ${extra.lib_deps_builtin}
       ${extra.lib_deps_external}
-      PubSubClient@2.6
-      OneWire
+      knolleary/PubSubClient @ ~2.6
+      paulstoffregen/OneWire @ ^2.3.5
+
+    ; Keep sensitive data in environment variables
+    ;
+    ; Unix
+    ; export WIFI_SSID='\"my\ ssid\ name\"'
+    ; export WIFI_PASS='\"my\ password\"'
+    ;
+    ; Windows
+    ; set WIFI_SSID='"my ssid name"'
+    ; set WIFI_PASS='"my password"'
 
     [env:esp32dev]
     extends = env:nodemcuv2
     platform = espressif32
     board = esp32dev
+    build_flags =
+      -DWIFI_SSID=${sysenv.WIFI_SSID}
+      -DWIFI_PASS=${sysenv.WIFI_PASS}
+
+
+.. warning::
+
+    Be careful with special characters in system environment variables on Unix systems,
+    especially when they are used as the value for preprocessor directives.
+    Symbols like ``$``, ``&``, ``~``, etc must be explicitly escaped, for example:
+
+    .. code-block:: bash
+
+      export WIFI_PASS='\"my\~p\&a\\\$\$\$\$word\"'

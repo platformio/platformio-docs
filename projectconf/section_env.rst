@@ -17,18 +17,21 @@ Section ``[env]``
 .. contents::
     :local:
 
-Allows declaring configuration environments for building, programming, debugging,
-unit testing, device monitoring, library dependencies, etc.
+Each project may have multiple *configuration environments* defining
+the available project tasks for building, programming, debugging, unit
+testing, device monitoring, library dependencies, etc. The
+configuration environments are declared using ``[env]`` sections in
+:ref:`projectconf`.
+
+The allowed options are listed under `Options`_.
 
 Common ``[env]``
 ----------------
 
-.. versionadded:: 4.0
-
-Allows declaring a configuration environment with common options that will be shared
-between all ``[env:NAME]`` environments in :ref:`projectconf`. It is very useful if
-the configuration file has a lot of custom environments ``[env:NAME]`` and they have
-common data.
+An optional configuration environment with common options that will be
+shared between all ``[env:NAME]`` environments in the platform.ini
+file. It is very useful if the configuration file has a lot of
+environments ``[env:NAME]`` and they share common settings.
 
 For example:
 
@@ -51,8 +54,8 @@ For example:
     build_flags = -D DEBUG
     lib_deps = DepCustom
 
-In this example we have 2 configuration environments ``release`` and ``debug``. This
-is the same if you duplicate all options:
+In this example we have two configuration environments ``release`` and ``debug``. This
+is equivalent to duplicating all options as shown below:
 
 .. code-block:: ini
 
@@ -75,18 +78,17 @@ is the same if you duplicate all options:
 Environment ``[env:NAME]``
 --------------------------
 
-A section with ``env:`` prefix is used to define **a working environment** for
-:ref:`cmd_run`, :ref:`cmd_test`, :ref:`cmd_check`, :ref:`cmd_debug`, and other commands.
-Project should contain as minimum one working environment.
+A section with an ``env:`` prefix defines a **working environment** for
+:ref:`cmd_run`, :ref:`cmd_test`, :ref:`cmd_check`, :ref:`cmd_debug` and other commands.
+Multiple ``[env:NAME]`` environments with different ``NAME`` are allowed. Every project must define at least one working environment.
 
 Each environment must have a unique ``NAME``. The valid chars for ``NAME`` are
 letters ``a-z``, numbers ``0-9``,  special char ``_`` (underscore).
 For example, ``[env:hello_world]``.
-Multiple ``[env:NAME]`` environments with different ``NAME`` are allowed.
 
-If you have more than one working environment and you need to process only a few
-of them, please check ``-e, --environment`` option for commands mentioned above
-or :ref:`projectconf_pio_default_envs` option.
+If you have multiple working environments and you need to process only a few
+of them, the commands mentioned above accept the ``-e, --environment`` option to select a subset of the working environments to process.
+The [platformio] :ref:`projectconf_pio_default_envs` option can be used to define a default set of working environments for the commands to process.
 
 Options
 -------

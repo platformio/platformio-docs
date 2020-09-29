@@ -89,16 +89,16 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
 Boards
 ------
@@ -197,7 +197,7 @@ Boards
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
       - :ref:`platform_atmelsam`
       - External
-      - SAMD51J19A
+      - SAMD51G19A
       - 120MHz
       - 496KB
       - 192KB
@@ -237,6 +237,13 @@ Boards
       - 512KB
       - 192KB
     * - :ref:`board_atmelsam_adafruit_pyportal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_atmelsam_adafruit_pyportal_m4_titano`
       - :ref:`platform_atmelsam`
       - External
       - SAMD51J20A
@@ -341,6 +348,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_mkrwan1310`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_mkrwifi1010`
       - :ref:`platform_atmelsam`
       - External
@@ -397,6 +411,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_samc21_xpro`
+      - :ref:`platform_atmelsam`
+      - On-board
+      - SAMC21J18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_samd21_xpro`
       - :ref:`platform_atmelsam`
       - On-board
@@ -408,6 +429,20 @@ Boards
       - :ref:`platform_atmelsam`
       - On-board
       - SAML21J18B
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_briki_abc_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
@@ -425,13 +460,6 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_macchina2`
-      - :ref:`platform_atmelsam`
-      - External
-      - AT91SAM3X8E
-      - 84MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_atmelsam_minitronics20`
       - :ref:`platform_atmelsam`
       - External
@@ -502,7 +530,63 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_atmelsam_seeed_femto`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_seeeduino_lorawan`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_lite_mg126`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_wio_terminal`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51P19A
+      - 120MHz
+      - 496KB
+      - 192KB
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_seeed_zero`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_9dof`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_qwiic_micro_samd21e`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_redboard_turbo`
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A
@@ -523,6 +607,20 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd21_proRF`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_tuinozero96`
       - :ref:`platform_atmelsam`
       - External

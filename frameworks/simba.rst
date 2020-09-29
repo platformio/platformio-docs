@@ -17,9 +17,9 @@ Simba
 :Configuration:
   :ref:`projectconf_env_framework` = ``simba``
 
-Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
-For more detailed information please visit `vendor site <http://simba-os.readthedocs.org?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://simba-os.readthedocs.org?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -46,6 +46,54 @@ You can switch between debugging :ref:`debugging_tools` using
 .. warning::
     You will need to install debug tool drivers depending on your system.
     Please click on compatible debug tool below for the further instructions.
+
+
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_megaatmega2560`
+      - :ref:`platform_atmelavr`
+      - ATMEGA2560
+      - 16MHz
+      - 248KB
+      - 8KB
+    * - :ref:`board_atmelavr_nanoatmega328`
+      - :ref:`platform_atmelavr`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_nanoatmega328new`
+      - :ref:`platform_atmelavr`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_uno`
+      - :ref:`platform_atmelavr`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_seeeduino`
+      - :ref:`platform_atmelavr`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
 
 
 External Debug Tools
@@ -82,10 +130,10 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `Simba for Atmel AVR <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Simba for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Simba for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Simba for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Simba for Atmel AVR <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Simba for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Simba for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Simba for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -113,7 +161,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 Adafruit
 ~~~~~~~~
@@ -165,28 +213,28 @@ Arduino
       - 96KB
     * - :ref:`board_atmelavr_megaatmega2560`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_nanoatmega328`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_nanoatmega328new`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_uno`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -312,7 +360,7 @@ SeeedStudio
       - RAM
     * - :ref:`board_atmelavr_seeeduino`
       - :ref:`platform_atmelavr`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB

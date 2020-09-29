@@ -24,7 +24,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 .. list-table::
 
   * - **Microcontroller**
-    - SAMD51J19A
+    - SAMD51G19A
   * - **Frequency**
     - 120MHz
   * - **Flash**
@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 192KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/4343?utm_source=platformio&utm_medium=docs>`__
+    - `Adafruit <https://www.adafruit.com/product/4343?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -58,7 +58,7 @@ board manifest `adafruit_monster_m4sk.json <https://github.com/platformio/platfo
   board = adafruit_monster_m4sk
 
   ; change microcontroller
-  board_build.mcu = samd51j19a
+  board_build.mcu = samd51g19a
 
   ; change MCU frequency
   board_build.f_cpu = 120000000L
@@ -121,4 +121,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

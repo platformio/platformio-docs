@@ -16,53 +16,53 @@ Advanced Scripting
 
 .. warning::
 
-  Advanced Scripting is recommended for Advanced Users and requires Python
-  language knowledge.
+  Advanced Scripting is recommended for Advanced Users and requires
+  knowledge of the Python language.
 
-  We highly recommend to take a look at :ref:`projectconf_dynamic_build_flags`
-  option where you can use any programming language. Also, this option is
-  useful if you need to apply changes to the project before building/uploading
-  process:
+.. warning::
+
+  :ref:`projectconf_dynamic_build_flags` is a highly recommended
+  alternative to advanced scripting, where you can use any programming
+  language. Also, that option is useful if you need to apply changes
+  to the project before the building/uploading process, such as:
 
   * Macro with the latest VCS revision/tag "on-the-fly"
   * Generate dynamic headers (``*.h``)
   * Process media content before generating SPIFFS image
   * Make some changes to source code or related libraries
 
-  More details :ref:`projectconf_dynamic_build_flags`.
-
 .. contents::
 
-PlatformIO Build System allows one to extend build process with the custom
-:ref:`projectconf_extra_scripts` using Python interpreter and
-`SCons <http://www.scons.org>`_ construction tool.
-Build and upload flags, targets, toolchains data, and other information are
-stored in `SCons Construction Environments <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
+The PlatformIO Build System allows the user to extend the build process with
+custom scripts using the Python interpreter and
+the `SCons <http://www.scons.org>`_ construction tool.
+Build flags, upload flags, targets, toolchains data and other information are
+available for modification as `SCons Construction Environments <http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments>`_.
+Custom scripts are included with :ref:`projectconf_extra_scripts`
 
 .. warning::
-  You can not run/debug these scripts directly with Python interpreter. They
-  will be loaded automatically when you processing project environment using
-  :ref:`cmd_run` command.
+  You can not run or debug these scripts manually with a Python
+  interpreter. They will be loaded automatically when the
+  :ref:`cmd_run` command processes the project environment.
 
 Launch types
 ~~~~~~~~~~~~
 
-There are 2 launch type of extra scripts:
+There are two execution orders for extra scripts:
 
-1. **PRE** - executes before a main script of :ref:`platforms`
-2. **POST** - executes after a main script of :ref:`platforms`
-
+1. **PRE** - executes before the main script of :ref:`platforms`
+2. **POST** - executes after the main script of :ref:`platforms`
 
 Multiple extra scripts are allowed. Please split them via  ", "
 (comma + space) in the same line or use multi-line values.
 
-For example, :ref:`projectconf`
+For example, in :ref:`projectconf`:
 
 .. code-block:: ini
 
   [env:my_env_1]
   platform = ...
-  ; without prefix, POST script
+  ; Defaults to POST script since no prefix is used
   extra_scripts = post_extra_script.py
 
   [env:my_env_2]
@@ -72,20 +72,20 @@ For example, :ref:`projectconf`
     post:post_extra_script1.py
     post_extra_script2.py
 
-This option can also be set by global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
+This option can also be set by the global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
 
 Construction Environments
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are 2 built-in construction environments which PlatformIO Build System
-uses to process a project:
+The PlatformIO Build System uses two built-in construction environments
+to process each project:
 
-* ``env``, ``Import("env")`` - global construction environment which is used
-  for :ref:`platforms` and :ref:`frameworks` build scripts, upload tools,
+* ``env``, ``Import("env")`` - the global construction environment used
+  for the :ref:`platforms` and :ref:`frameworks` build scripts, upload tools,
   :ref:`ldf`, and other internal operations
-* ``projenv``, ``Import("projenv")`` - isolated construction environment which
-  is used for processing of a project source code located in :ref:`projectconf_pio_src_dir`.
-  Please note that :ref:`projectconf_src_build_flags` specified in
+* ``projenv``, ``Import("projenv")`` - the isolated construction environment
+  used for processing the project source code in :ref:`projectconf_pio_src_dir`.
+  Please note that any :ref:`projectconf_src_build_flags` specified in
   :ref:`projectconf` will be passed to ``projenv`` and not to ``env``.
 
 
@@ -154,18 +154,17 @@ data or add new.
 Before/Pre and After/Post actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO Build System has a rich API that allows one to attach different pre-/post
+The PlatformIO Build System has a rich API that allows one to attach different pre-/post
 actions (hooks) using ``env.AddPreAction(target, callback)`` or
-``env.AddPreAction(target, [callback1, callback2, ...])`` function. A first
-argument ``target`` can be a name of target that is passed using
-:option:`platformio run --target` command, a name of built-in targets
-(buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or path
-to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
-
+``env.AddPreAction(target, [callback1, callback2, ...])`` function. The first
+argument ``target`` can be the name of a target that is passed using the
+:option:`platformio run --target` command, the name of a built-in target
+(buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or the path
+to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
 **Examples**
 
-``extra_script.py`` file is located on the same level as ``platformio.ini``.
+The ``extra_script.py`` file is located in the same directory as ``platformio.ini``.
 
 ``platformio.ini``:
 
@@ -251,8 +250,6 @@ to file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 Build Middlewares
 ~~~~~~~~~~~~~~~~~
 
-.. versionadded:: 4.1
-
 PlatformIO Build System allows you to add middleware functions that can be used for
 Build Node(Object) construction. This is very useful if you need to add custom flags
 for the specific file nodes or exclude them from a build process.
@@ -330,15 +327,72 @@ not be passed to the next middleware in chain.
     env.AddBuildMiddleware(skip_asm_from_build, "*.S")
 
 
-Custom target
-~~~~~~~~~~~~~
+.. _projectconf_advanced_scripting_custom_targets:
 
-There is a list with built-in targets which could be processed using
-:option:`platformio run --target` option. You can create unlimited number of
-the own targets and declare custom handlers for them.
+Custom Targets
+~~~~~~~~~~~~~~
 
-We will use SCons's `Alias(alias, [targets, [action]]) , env.Alias(alias, [targets, [action]]) <https://scons.org/doc/production/HTML/scons-user/apd.html>`__
-function to declare a custom target/alias.
+.. versionadded:: 5.0
+
+PlatformIO allows you to declare unlimited number of the custom targets. There are a
+lot of use cases for them:
+
+- Pre/Post processing based on a dependent sources (other target, source file, etc.)
+- Command launcher with own arguments
+- Launch command with custom options declared in :ref:`projectconf`
+- Python callback as a target (use the power of Python interpreter and PlatformIO Build API).
+
+A custom target can be processed using :option:`platformio run --target` option and
+you can list them via :option:`platformio run --list-targets` command.
+
+Build System API
+^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    Import("env")
+
+    env.AddCustomTarget(
+        name,
+        dependencies,
+        actions,
+        title=None,
+        description=None,
+        always_build=True
+    )
+
+
+``AddCustomTarget`` arguments:
+
+:name:
+    A name of target. ASCII chars (a-z, 0-9, _, -) are recommended. Good names are
+    "gen_headers", "program_bitstream", etc.
+
+:dependencies:
+    A list of dependencies that should be built BEFORE target will be launched. It is
+    possible pass multiple dependencies as a Python list ``["dep1", dep_target_2]``.
+    If a target does not have dependencies, ``None`` should be passed.
+
+:actions:
+    A list of actions to call on a target. It is possible to pass multiple actions as
+    a Python list ``["python --version", my_calback]``.
+
+:title:
+    A title of a target. It will be printed when using :ref:`piocore` or :ref:`pioide`.
+    We recommend to keep a title very short, 1-2 words.
+
+:description:
+    The same as a ``title`` argument but allows you to provide detailed explanation
+    what target does.
+
+:always_build:
+    If there are declared ``dependencies`` and they are already built, this target
+    will not be called if ``always_build=False``. A default value is
+    ``always_build=True`` and means always building/calling target.
+
+
+Examples
+^^^^^^^^
 
 Command shortcut
 ''''''''''''''''
@@ -359,10 +413,24 @@ Create a custom ``node`` target (alias) which will print a NodeJS version
 .. code-block:: python
 
     Import("env")
-    env.AlwaysBuild(env.Alias("node", None, ["node --version"]))
+
+    # Single action/command per 1 target
+    env.AddCustomTarget("sysenv", None, 'python -c "import os; print(os.environ)"'))
+
+    # Multiple actions
+    env.AddCustomTarget(
+        name="pioenv",
+        dependencies=None,
+        actions=[
+            "pio --version",
+            "python --version"
+        ],
+        title="Core Env",
+        description="Show PlatformIO Core and Python versions"
+    )
 
 
-Now, run ``pio run -t node``.
+Now, run ``pio run --target sysenv`` or ``pio run -t pioenv`` (short version).
 
 Dependent target
 ''''''''''''''''
@@ -387,9 +455,12 @@ will be run.
 .. code-block:: python
 
     Import("env")
-    env.AlwaysBuild(env.Alias("ota",
+
+    env.AddCustomTarget(
+        "ota",
         "$BUILD_DIR/${PROGNAME}.elf",
-        ["ota_script --firmware-path $SOURCE"]))
+        "ota_script --firmware-path $SOURCE"
+    )
 
 
 Now, run ``pio run -t ota``.
@@ -423,23 +494,23 @@ Let's create a simple ``ping`` target and process it with
 
     config = configparser.ConfigParser()
     config.read("platformio.ini")
-    host = config.get("env_custom_target", "custom_ping_host")
+    host = config.get("env:env_custom_target", "custom_ping_host")
 
     def mytarget_callback(*args, **kwargs):
         print("Hello PlatformIO!")
         env.Execute("ping " + host)
 
 
-    env.AlwaysBuild(env.Alias("ping", None, mytarget_callback))
+    env.AddCustomTarget("ping", None, mytarget_callback)
 
-Examples
-~~~~~~~~
+Other Use Cases
+~~~~~~~~~~~~~~~
 
-The beast examples are `PlatformIO development platforms <https://github.com/topics/platformio-platform>`__.
+The best examples are `PlatformIO development platforms <https://github.com/topics/platformio-platform>`__.
 Please check ``builder`` folder for the main and framework scripts.
 
 Custom options in ``platformio.ini``
-''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``platformio.ini``:
 
@@ -468,7 +539,7 @@ Custom options in ``platformio.ini``
     value2 = config.get("my_env", "custom_option2")
 
 Split C/C++ build flags
-'''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^
 
 ``platformio.ini``:
 
@@ -494,7 +565,7 @@ Split C/C++ build flags
     env.Append(CXXFLAGS=["flag1", "flag2"])
 
 Extra Linker Flags without ``-Wl,`` prefix
-''''''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sometimes you need to pass extra flags to GCC linker without ``Wl,``. You could
 use :ref:`projectconf_build_flags` option but it will not work. PlatformIO
@@ -529,7 +600,7 @@ extra script will help:
     )
 
 Custom upload tool
-''''''''''''''''''
+^^^^^^^^^^^^^^^^^^
 
 You can override default upload command of development platform using extra
 script. There is the common environment variable ``UPLOADCMD`` which PlatformIO
@@ -628,12 +699,12 @@ See examples below:
 
 
 Upload to Cloud (OTA)
-'''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^
 
 See project example https://github.com/platformio/bintray-secure-ota
 
 Custom firmware/program name
-''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sometimes is useful to have a different firmware/program name in
 :ref:`projectconf_pio_build_dir`.
@@ -662,7 +733,7 @@ Sometimes is useful to have a different firmware/program name in
     env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
 
 Override package files
-''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^
 
 PlatformIO Package Manager automatically installs pre-built packages
 (:ref:`frameworks`, toolchains, libraries) required by development
@@ -751,13 +822,17 @@ please replace the ``patch`` with a multi-platform
 `python-patch <https://github.com/techtonik/python-patch>`_ script.
 
 Override Board Configuration
-''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PlatformIO allows to override some basic options (integer or string values)
+PlatformIO allows one to override some basic options (integer or string values)
 using :ref:`projectconf_board_more_options` in :ref:`projectconf`.
 Sometimes you need to do complex changes to default board manifest and
 extra PRE scripting work well here. See example below how to override default
-hardware VID/PIDs:
+hardware VID/PIDs.
+
+.. warning::
+    Due to a technical limitation these board changes will not work for
+    :ref:`cmd_device_monitor` command.
 
 ``platformio.ini``:
 
@@ -776,14 +851,14 @@ hardware VID/PIDs:
     Import("env")
 
     board_config = env.BoardConfig()
+    # should be array of VID:PID pairs
     board_config.update("build.hwids", [
-      ["0x2341", "0x0243"],
-      ["0x2A03", "0x0043"]
+      ["0x2341", "0x0243"],  # 1st pair
+      ["0x2A03", "0x0043"].  # 2nd pair, etc.
     ])
 
-
 Custom debug flags
-''''''''''''''''''
+^^^^^^^^^^^^^^^^^^
 
 PlatformIO removes all debug/optimization flags before a debug session or when
 :ref:`build_configurations` is set to ``debug`` and overrides them with
@@ -814,3 +889,29 @@ custom flags. See example below where we override ``-Og`` with ``-O0``:
           for i, flag in enumerate(env[scope]):
              if flag == "-Og":
                 env[scope][i] = "-O0"
+
+Extra Python packages
+^^^^^^^^^^^^^^^^^^^^^
+
+If your project depends on the extra Python packages, you can use extra script to
+install them into the same virtual environment where :ref:`piocore` is installed.
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:my_env]
+    platform = ...
+    extra_scripts = extra_script.py
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    Import("env")
+
+    # List installed packages
+    env.Execute("$PYTHONEXE -m pip list")
+
+    # Install custom packages from the PyPi registry
+    env.Execute("$PYTHONEXE -m pip install pkg1 pkg2")

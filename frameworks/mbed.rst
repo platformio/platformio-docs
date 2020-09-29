@@ -17,9 +17,9 @@ Mbed
 :Configuration:
   :ref:`projectconf_env_framework` = ``mbed``
 
-The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
-For more detailed information please visit `vendor site <https://www.mbed.com?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://os.mbed.com/?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -311,6 +311,18 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 512KB
       - 200KB
+    * - :ref:`board_nxplpc_lpcxpresso55s69`
+      - :ref:`platform_nxplpc`
+      - LPC55S69
+      - 150MHz
+      - 640KB
+      - 320KB
+    * - :ref:`board_nxpimxrt_mimxrt1050_evk`
+      - :ref:`platform_nxpimxrt`
+      - MIMXRT1052DVL6B
+      - 600MHz
+      - 64MB
+      - 512KB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - LPC11U24
@@ -395,6 +407,12 @@ You do not need to use/buy external debug probe.
       - 40MHz
       - 256KB
       - 32KB
+    * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
+      - :ref:`platform_siliconlabsefm32`
+      - EFM32GG11B820F2048GL192
+      - 48MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - STM32F334C8T6
@@ -455,18 +473,18 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - :ref:`platform_ststm32`
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - :ref:`platform_ststm32`
       - STM32L475VGT6
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - :ref:`platform_ststm32`
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - :ref:`platform_ststm32`
       - STM32F072RBT6
@@ -731,6 +749,12 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_h747xi`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_nordicnrf51_seeedArchBLE`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -996,6 +1020,12 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 36KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -1067,17 +1097,18 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `Mbed for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for Maxim 32 <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for RISC-V GAP <https://github.com/pioplus/platform-riscv_gap/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
-* `Mbed for WIZNet W7500 <https://github.com/platformio/platform-wiznet7500/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Mbed for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for Maxim 32 <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for NXP i.MX RT <https://github.com/platformio/platform-nxpimxrt/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for RISC-V GAP <https://github.com/platformio/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Mbed for WIZNet W7500 <https://github.com/platformio/platform-wiznet7500/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -1101,6 +1132,9 @@ Platforms
 
     * - :ref:`platform_nordicnrf52`
       - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
+
+    * - :ref:`platform_nxpimxrt`
+      - The i.MX RT series of crossover processors features the Arm Cortex-M core, real-time functionality and MCU usability at a cost-effective price.
 
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
@@ -1126,7 +1160,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 96Boards
 ~~~~~~~~
@@ -1855,6 +1889,20 @@ NXP
       - 180MHz
       - 512KB
       - 200KB
+    * - :ref:`board_nxplpc_lpcxpresso55s69`
+      - :ref:`platform_nxplpc`
+      - On-board
+      - LPC55S69
+      - 150MHz
+      - 640KB
+      - 320KB
+    * - :ref:`board_nxpimxrt_mimxrt1050_evk`
+      - :ref:`platform_nxpimxrt`
+      - On-board
+      - MIMXRT1052DVL6B
+      - 600MHz
+      - 64MB
+      - 512KB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2044,6 +2092,13 @@ ST
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f334c8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2114,13 +2169,6 @@ ST
       - 80MHz
       - 1MB
       - 320KB
-    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32L072CZ
-      - 32MHz
-      - 192KB
-      - 20KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - :ref:`platform_ststm32`
       - On-board
@@ -2128,6 +2176,13 @@ ST
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_l072cz_lrwan1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L072CZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_disco_f072rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -2429,6 +2484,13 @@ ST
       - 24MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_disco_h747xi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H747XIH6
+      - 400MHz
+      - 2MB
+      - 512KB
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -2611,6 +2673,13 @@ Silicon Labs
       - 40MHz
       - 256KB
       - 32KB
+    * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
+      - :ref:`platform_siliconlabsefm32`
+      - On-board
+      - EFM32GG11B820F2048GL192
+      - 48MHz
+      - 2MB
+      - 512KB
     * - :ref:`board_siliconlabsefm32_tb_sense_12`
       - :ref:`platform_siliconlabsefm32`
       - On-board

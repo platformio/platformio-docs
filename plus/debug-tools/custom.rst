@@ -18,7 +18,7 @@ Custom
   :ref:`projectconf_debug_tool` = ``custom``
 
 
-PIO Unified Debugger can be configured from :ref:`projectconf`:
+**PLatformIO Debugging Solution** can be configured using :ref:`projectconf`:
 
 .. toctree::
   :maxdepth: 2
@@ -30,29 +30,6 @@ Examples
 
 .. contents::
     :local:
-
-Black Magic Probe
-~~~~~~~~~~~~~~~~~
-
-Black Magic Probe with a custom :ref:`projectconf_debug_port` (list ports
-with :ref:`cmd_device_list`)
-
-.. code-block:: ini
-
-  [env:debug]
-  platform = ...
-  board = ...
-  framework = ...
-  debug_tool = custom
-  ; set here a valid port...
-  debug_port = /dev/cu.usbmodem7BB07991
-  debug_init_cmds =
-    target extended-remote $DEBUG_PORT
-    monitor swdp_scan
-    attach 1
-    set mem inaccessible-by-default off
-    $INIT_BREAK
-    $LOAD_CMDS
 
 J-Link and ST Nucleo
 ~~~~~~~~~~~~~~~~~~~~
@@ -77,7 +54,10 @@ Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
     platform = ststm32
     framework = mbed
     board = nucleo_f446re
+
     debug_tool = custom
+    debug_port = :2331
+
     debug_server =
       /full/path/to/JLinkGDBServerCL
       -singlerun
@@ -89,6 +69,23 @@ Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
       2331
       -device
       STM32F446RE
+
+    debug_init_cmds =
+      define pio_reset_halt_target
+          monitor reset
+          monitor halt
+      end
+      define pio_reset_run_target
+          monitor clrbp
+          monitor reset
+          monitor go
+      end
+      target extended-remote $DEBUG_PORT
+      monitor clrbp
+      monitor speed auto
+      pio_reset_halt_target
+      $LOAD_CMDS
+      $INIT_BREAK
 
 J-Link as debugger and uploader
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -108,7 +105,7 @@ to a valid identifier. See supported J-Link devices at :ref:`debugging_tool_jlin
     board = teensy31
     extra_scripts = extra_script.py
     upload_protocol = custom
-    debug_tool = custom
+    debug_tool = jlink
     debug_server =
       /full/path/to/JLinkGDBServerCL
       -singlerun

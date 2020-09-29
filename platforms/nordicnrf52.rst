@@ -19,7 +19,7 @@ Nordic nRF52
 
 The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
-For more detailed information please visit `vendor site <https://www.nordicsemi.com/Products/nRF52-Series-SoC?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.nordicsemi.com/Products/nRF52-Series-SoC?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -30,22 +30,21 @@ For more detailed information please visit `vendor site <https://www.nordicsemi.
 Examples
 --------
 
-Examples are listed from `Nordic nRF52 development platform repository <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Nordic nRF52 development platform repository <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-ble-led <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-ble-led?utm_source=platformio&utm_medium=docs>`_
-* `arduino-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-bluefruit-bleuart <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-bluefruit-bleuart?utm_source=platformio&utm_medium=docs>`_
-* `arduino-nina-b1-generic-example <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-nina-b1-generic-example?utm_source=platformio&utm_medium=docs>`_
-* `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-ble-thermometer?utm_source=platformio&utm_medium=docs>`_
-* `mbed-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-nfc <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-nfc?utm_source=platformio&utm_medium=docs>`_
-* `mbed-rtos <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
-* `zephyr-ble-beacon <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-ble-beacon?utm_source=platformio&utm_medium=docs>`_
-* `zephyr-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-blink?utm_source=platformio&utm_medium=docs>`_
-* `zephyr-subsys-nvs <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-subsys-nvs?utm_source=platformio&utm_medium=docs>`_
+* `zephyr-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `zephyr-net-echo-client <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-net-echo-client?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-ble-led <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-ble-led?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
+* `zephyr-ble-beacon <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-ble-beacon?utm_source=platformio.org&utm_medium=docs>`_
+* `zephyr-subsys-nvs <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-subsys-nvs?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-nfc <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos-nfc?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-legacy-examples <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-nina-b1-generic-example <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-nina-b1-generic-example?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-bluefruit-bleuart <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-bluefruit-bleuart?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-serial-plotter <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-serial-plotter?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-ble-thermometer <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos-ble-thermometer?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -99,11 +98,16 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
+    * - :ref:`board_nordicnrf52_electronut_blip`
       - NRF52840
       - 64MHz
-      - 796KB
-      - 243KB
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_electronut_papyr`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_nrf52832_mdk`
       - NRF52832
       - 64MHz
@@ -177,11 +181,26 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_clue_nrf52840`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840_sense`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - NRF52840
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_nano33ble`
+      - NRF52840
+      - 64MHz
+      - 960KB
+      - 256KB
     * - :ref:`board_nordicnrf52_bluey`
       - NRF52832
       - 64MHz
@@ -192,21 +211,16 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
-    * - :ref:`board_nordicnrf52_electronut_blip`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_electronut_papyr`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
     * - :ref:`board_nordicnrf52_holyiot_yj16019`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
       - NRF52840
       - 64MHz
@@ -290,47 +304,107 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoadafruitnrf52 <https://github.com/adafruit/Adafruit_nRF52_Arduino?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Nordic nRF52 BLE SoC))
+    * - `framework-arduino-nrf52-mbedos <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino framework supporting mbed-enabled boards (nRF52 core)
 
-    * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Nordic NRF5 Core)
+    * - `framework-arduinoadafruitnrf52 <https://github.com/adafruit/Adafruit_nRF52_Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Nordic Semiconductor nRF52 BLE SoC
 
-    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
-      - mbed Framework
+    * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Nordic Semiconductor nRF5 based boards
 
-    * - `framework-zephyr <https://github.com/zephyrproject-rtos/zephyr?utm_source=platformio&utm_medium=docs>`__
-      - Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.
+    * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Arm Mbed OS is a platform operating system designed for the internet of things
 
-    * - `framework-zephyr-hal-nordic <https://github.com/zephyrproject-rtos/hal_nordic?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
+
+    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for CANopenNode - a free and open source CANopen Stack
+
+    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for CivetWeb Embedded C/C++ web server
+
+    * - `framework-zephyr-cmsis <https://github.com/zephyrproject-rtos/cmsis.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Software Interface Standard for Arm Cortex-based Microcontrollers and Zephyr framework
+
+    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for FATFS filesystem
+
+    * - `framework-zephyr-hal-nordic <https://github.com/zephyrproject-rtos/hal_nordic.git?utm_source=platformio.org&utm_medium=docs>`__
       - Nordic nRF5x HAL for Zephyr framework
 
-    * - `tool-cmake <https://cmake.org?utm_source=platformio&utm_medium=docs>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for HAL abstraction layer used by open-amp
 
-    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git/about/?utm_source=platformio&utm_medium=docs>`__
+    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for littlefs filesystem
+
+    * - `framework-zephyr-loramac-node <https://github.com/zephyrproject-rtos/loramac-node.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for LoRaWAN endpoint stack implementation
+
+    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
+
+    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls.git?utm_source=platformio.org&utm_medium=docs>`__
+      - mbedTLS module for Zephyr
+
+    * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs
+
+    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for mcumgr management library for 32-bit MCUs
+
+    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for MIPI System Software Trace
+
+    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
+
+    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread.git?utm_source=platformio.org&utm_medium=docs>`__
+      - OpenThread module for Zephyr
+
+    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for Segger RTT
+
+    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for Concise Binary Object Representation Library
+
+    * - `framework-zephyr-tinycrypt <https://github.com/zephyrproject-rtos/tinycrypt.git?utm_source=platformio.org&utm_medium=docs>`__
+      - The TinyCrypt Library provides an implementation for constrained devices of a minimal set of standard cryptography primitives for Zephyr framework
+
+    * - `framework-zephyr-trusted-firmware-m <https://github.com/zephyrproject-rtos/trusted-firmware-m.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Trusted Firmware M provides a reference implementation of secure world software for ARMv8-M and Zephyr framework
+
+    * - `tool-bossac-nordicnrf52 <https://github.com/shumatech/BOSSA.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Basic Open Source SAM-BA Application (BOSSA) for Nordic nRF52 microcontrollers
+
+    * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
+
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
       - Device tree compiler
 
-    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio&utm_medium=docs>`__
-      - GNU gperf is a perfect hash function generator.
+    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU gperf is a perfect hash function generator
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
-      - SEGGER J-Link Software and Documentation Pack
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+      - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-ninja <https://ninja-build.org?utm_source=platformio&utm_medium=docs>`__
-      - Ninja is a small build system with a focus on speed.
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed
 
-    * - `tool-nrfjprog <https://www.nordicsemi.com?utm_source=platformio&utm_medium=docs>`__
-      - nRF5x command line tool
+    * - `tool-nrfjprog <https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Command-Line-Tools?utm_source=platformio.org&utm_medium=docs>`__
+      - nRFx command line tools
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
-      - OpenOCD
+    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
 
-    * - `tool-sreccat <https://github.com/marcows/SRecord?utm_source=platformio&utm_medium=docs>`__
-      - Merging tool
+    * - `tool-sreccat <http://srecord.sourceforge.net?utm_source=platformio.org&utm_medium=docs>`__
+      - Collection of powerful tools for manipulating EPROM load files
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
     **Linux Users**:
@@ -355,13 +429,13 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
 Boards
 ------
@@ -369,8 +443,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 96Boards
 ~~~~~~~~
@@ -409,6 +483,18 @@ Adafruit
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_clue_nrf52840`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840_sense`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840`
       - External
       - NRF52840
@@ -422,7 +508,7 @@ Adafruit
       - 796KB
       - 243KB
     * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
-      - On-board
+      - External
       - NRF52840
       - 64MHz
       - 796KB
@@ -433,6 +519,25 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
+
+Arduino
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_nano33ble`
+      - External
+      - NRF52840
+      - 64MHz
+      - 960KB
+      - 256KB
 
 Delta
 ~~~~~
@@ -491,13 +596,13 @@ ElectronutLabs
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_electronut_blip`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB
       - 256KB
     * - :ref:`board_nordicnrf52_electronut_papyr`
-      - External
+      - On-board
       - NRF52840
       - 64MHz
       - 1MB

@@ -31,6 +31,8 @@
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
@@ -41,18 +43,22 @@
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>\
-              Products<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>PIO Remote</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>PIO Unified Debugger</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>PIO Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
-              <li role="menuitem"><a href="/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
@@ -80,6 +86,10 @@
 </div>';
 
   (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
     var topBanner = $('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';

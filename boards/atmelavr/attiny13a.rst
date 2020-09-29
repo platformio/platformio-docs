@@ -11,8 +11,8 @@
 
 .. _board_atmelavr_attiny13a:
 
-Generic ATtiny13A
-=================
+ATtiny13A
+=========
 
 .. contents::
 
@@ -26,13 +26,13 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **Microcontroller**
     - ATTINY13A
   * - **Frequency**
-    - 1MHz
+    - 9MHz
   * - **Flash**
     - 1KB
   * - **RAM**
     - 64B
   * - **Vendor**
-    - `Atmel <https://www.microchip.com/wwwproducts/en/ATtiny13A?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATtiny13A?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``attiny13a`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   platform = atmelavr
   board = attiny13a
 
-You can override default Generic ATtiny13A settings per build environment using
+You can override default ATtiny13A settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `attiny13a.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/attiny13a.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -61,11 +61,32 @@ board manifest `attiny13a.json <https://github.com/platformio/platform-atmelavr/
   board_build.mcu = attiny13a
 
   ; change MCU frequency
-  board_build.f_cpu = 1200000L
+  board_build.f_cpu = 9600000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATtiny13A board.
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further
+    instructions and configuration information.
+
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+ATtiny13A has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Compatible Tools
+    - On-board
+    - Default
+  * - :ref:`debugging_tool_simavr`
+    - Yes
+    - Yes
 
 Frameworks
 ----------
@@ -76,4 +97,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

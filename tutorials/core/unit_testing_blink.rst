@@ -25,7 +25,7 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`unit_t
 Setting Up the Project
 ----------------------
 
-1. Please navigate to the :ref:`quickstart` section and create the "Blink Project".
+1. Please navigate to the :ref:`core_quickstart` section and create the "Blink Project".
 2. Create a ``test`` directory in the project (on the same level as ``src``)
    and place a ``test_main.cpp`` file in it (the source code is located below).
 3. Run tests using the :ref:`cmd_test` command.
@@ -136,7 +136,6 @@ Test results
 
     > platformio test -e uno --verbose
 
-    PIO Plus (https://pioplus.com) v1.4.6
     Verbose mode can be enabled via `-v, --verbose` option
     Collected 1 items
 

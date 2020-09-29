@@ -9,16 +9,18 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIOCheck| replace:: **PIO Check**
+.. |PIOCheck| replace:: **Static Code Analysis**
 
 .. _piocheck:
 
-PIO Check
-=========
-
-.. versionadded:: 4.1
+Static Code Analysis
+====================
 
 **Automated code analysis without hassle!**
+
+.. contents:: Contents
+    :local:
+    :depth: 1
 
 Static analysis became an important part of software development cycle. It can
 identify potential bugs, vulnerabilities and security threats by doing an
@@ -30,7 +32,9 @@ precise location of defects and eliminate issues more efficiently and earlier
 in the development cycle. It can also ensure compliance with internal or
 industry coding standards such as MISRA, CERT, etc.
 
-Key features:
+Key features
+------------
+
   - Fully integrated within the PlatformIO ecosystem and easy to execute on the entire project.
   - Straightforward integration with :ref:`ci` services.
   - Possibility to reuse the same setup on other projects.
@@ -52,9 +56,15 @@ Key features:
   without errors. For information about how to build a project, see the
   :ref:`cmd_run` command or :ref:`ide_vscode` guide.
 
-.. contents:: Contents
-    :local:
-    :depth: 1
+User Interface
+--------------
+
+There is the rich and friendly interface for |PIOCheck| in :ref:`piohome`.
+It allows you to filter messages or directly jump to an issue in a source code.
+
+.. image:: ../_static/images/home/pio-home-inspect-stats-check.png
+
+.. image:: ../_static/images/home/pio-home-inspect-code-defects.png
 
 Configuration
 -------------
@@ -92,6 +102,7 @@ process can be found on these pages:
 
   check-tools/cppcheck
   check-tools/clang-tidy
+  check-tools/pvs-studio
 
 .. _check_severity:
 
@@ -127,4 +138,4 @@ of these commands can be found here:
 .. toctree::
   :maxdepth: 3
 
-  platformio check <../userguide/cmd_check>
+  platformio check <../core/userguide/cmd_check>

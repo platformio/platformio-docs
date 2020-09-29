@@ -26,8 +26,8 @@ Custom options for :ref:`cmd_device_monitor` command.
 
 Type: ``String`` | Multiple: ``No``
 
-Port, a number or a device name. See :option:`platformio device monitor --port`.
-To print all available serial ports please use :ref:`cmd_device_list` command.
+Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
+See :option:`platformio device monitor --port`. To print all available serial ports please use :ref:`cmd_device_list` command.
 
 Please note that you can use Unix shell-style wildcards:
 
@@ -61,6 +61,9 @@ Example:
     ; Windows, COM1 or COM3
     monitor_port = COM[13]
 
+    ; Socket
+    monitor_port = socket://localhost:4444
+
 .. _projectconf_monitor_speed:
 
 ``monitor_speed``
@@ -78,6 +81,25 @@ Example:
     [env:custom_monitor_speedrate]
     ...
     monitor_speed = 115200
+
+.. _projectconf_monitor_filters:
+
+``monitor_filters``
+^^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``Yes``
+
+Apply filters and text transformation for device output. See available filters at
+:ref:`cmd_device_monitor_filters`.
+
+Example:
+
+.. code-block:: ini
+
+    [env:log_output_to_file_with_timestamp]
+    ...
+    platform = ...
+    monitor_filters = log2file, time, default
 
 .. _projectconf_monitor_rts:
 
@@ -101,8 +123,6 @@ A monitor initial ``DTR`` line state. See :option:`platformio device monitor --d
 
 ``monitor_flags``
 ^^^^^^^^^^^^^^^^^
-
-.. versionadded:: 4.0
 
 Type: ``String`` | Multiple: ``Yes``
 

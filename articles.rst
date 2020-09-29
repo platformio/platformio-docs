@@ -20,9 +20,29 @@ Articles about us
 
 Here are recent articles/reviews about PlatformIO:
 
+2020
+^^^^
+
+* Aug 7, 2020 - **Benjamin Cabé** - `Connecting the Wio Terminal to Azure IoT <https://blog.benjamin-cabe.com/2020/08/05/connecting-the-wio-terminal-to-azure-iot>`_
+* Jul 15, 2020 - **Andreas Schmidt** - `IoT für Webentwickler: Unit Testing mit PlatformIO <https://entwickler.de/online/iot/iot-unit-testing-platformio-579863298.html>`_
+* Jun 22, 2020 - **Noud van Kruysbergen** - `RISC-V programmeren: met platform IO en microcontrollerboard <https://www.ct.nl/workshops/risc-v-programmeren-platform-io/>`_
+* Jun 22, 2020 - **Francesco Azzola** - `Run Tensorflow Lite on ESP32 from scratch: Easy guide (PlatformIO) <https://www.survivingwithandroid.com/run-tensorflow-lite-esp32-platformio/>`_
+* May 15, 2020 - **Francesco Azzola** - `ESP32 Rest API: How to implement an ESP32 API server using PlatformIO <https://www.survivingwithandroid.com/esp32-rest-api-esp32-api-server/>`_
+* May 10, 2020 - **Michael Schnyder** - `Migrating from Arduino IDE to Visual Studio Code to PlatformIO <https://blog.emtwo.ch/2020/05/migrating-from-ardiuno-ide-to-visual.html>`_
+* Apr 25, 2020 - **Hans-Günther Nusseck** - `ESP WiFi Timeserver Synchronized Wrist Watch <https://www.hackster.io/hague/esp-wifi-timeserver-synchronized-wrist-watch-8940cd>`_
+* Apr 19, 2020 - **Jorge B. Aspiazu** - `How to work with the STM32 Blue Pill in PlatformIO and not die trying <https://medium.com/@jobenas_25464/how-to-work-with-the-stm32-blue-pill-in-platformio-and-not-die-trying-1700250e54e2>`_
+* Mar 28, 2020 - **Brian Lough** - `Use the PlatformIO Debugger on the ESP32 Using an ESP-prog <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
+* Mar 10, 2020 - **James Harton** - `Augie the Hexapod Robot <https://www.hackster.io/james-harton/augie-the-hexapod-robot-8e5125>`_
+* Mar 05, 2020 - **Alex Govorov** - `PVS-Studio Integration in PlatformIO <https://habr.com/en/company/pvs-studio/blog/491220/>`_
+* Feb 2, 2020 - **Tommy Desrochers** - `VS Code et PlatformIO: Mieux que l'IDE Arduino? <https://www.youtube.com/watch?v=-2NhjhzFQsM>`_
+* Jan 15, 2020 - **Ivan Kravets, CEO of PlatformIO** - `Next-generation IDE for your RISC-V Product in 20 Minutes <https://www.youtube.com/watch?v=0eYDKION0Bs>`_
+
 2019
 ^^^^
 
+* Dec 29, 2019 - **Andri Yadi** - `AI-Powered Magic Wand <https://www.hackster.io/andri/ai-powered-magic-wand-ab1c90>`_
+* Dec 2, 2019 - **Wezley Sherman** - `TensorFlow, Meet The ESP32 <https://towardsdatascience.com/tensorflow-meet-the-esp32-3ac36d7f32c7>`_
+* Oct 31, 2019 - **Frank Leon Rose** - `Minimal FreeRTOS with PlatformIO <https://dev.to/frankleonrose/minimal-freertos-with-platformio-2aca>`_
 * Aug 18, 2019 - **Manuel Bleichenbacher** - `Arduino In-circuit Debugging with PlatformIO <https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc>`_
 * Aug 13, 2019 - **Tech Explorations** - `6 reasons why PlatformIO is perhaps the best programming environment for the ESP32 <https://techexplorations.com/guides/esp32/unleashed/tools/>`_
 * Jul 04, 2019 - **Jean-Claude Wippler** - `The PlatformIO command line <https://jeelabs.org/2019/pio-cli/>`_
@@ -33,6 +53,7 @@ Here are recent articles/reviews about PlatformIO:
 
 * Dec 27, 2018 - **Xose Pérez** - `Automated unit testing in the metal <https://tinkerman.cat/automated-unit-testing-metal/>`_
 * Dec 20, 2018 - **Jean-Claude Wippler** - `Getting started with the STM32F407VG and STM32Cube <https://jeelabs.org/2018/getting-started-f407/>`_
+* Dec 14, 2018 - **Alvaro Viebrantz** - `Serverless Continuous Integration and OTA update flow for IoT devices using Google Cloud Build and Arduino <https://medium.com/google-cloud/serverless-continuous-integration-and-ota-update-flow-using-google-cloud-build-and-arduino-d5e1cda504bf>`_
 * Nov 24, 2018 - **Martin Fasani** - `PlatformIO: An alternative to Arduino IDE and a complete ecosystem for IoT <https://fasani.de/2018/11/24/platformio-an-alternative-to-arduino-ide-and-a-complete-ecosystem-for-iot/>`_
 * Sep 27, 2018 - **Lup Yuen Lee** - `Connect STM32 Blue Pill to Sigfox <https://medium.com/coinmonks/connect-stm32-blue-pill-to-sigfox-28c6f91bddc1>`_
 * Aug 27, 2018 - **Lup Yuen Lee** - `Juggling STM32 Blue Pill For Arduino Jugglers <https://medium.com/coinmonks/juggling-stm32-blue-pill-for-arduino-jugglers-edf6820dc808>`_

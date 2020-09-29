@@ -148,25 +148,28 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_espidf`
-      - Espressif IoT Development Framework. Official development framework for ESP32.
+      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
+
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
-
     * - :ref:`framework_kendryte-freertos-sdk`
       - Kendryte SDK with FreeRTOS support
 
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support
+
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
 Boards
 ------
@@ -199,6 +202,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_az-delivery-devkit-v4`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_featheresp32`
       - :ref:`platform_espressif32`
       - External
@@ -213,6 +223,20 @@ Boards
       - 450MHz
       - 16MB
       - 256MB
+    * - :ref:`board_espressif32_briki_abc_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
+    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 3.25MB
+      - 320KB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
       - External
@@ -235,6 +259,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_fm-devkit`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_pico32`
       - :ref:`platform_espressif32`
       - External
       - ESP32
@@ -395,6 +426,13 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - External
@@ -459,6 +497,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
       - :ref:`platform_espressif32`
       - External
       - ESP32

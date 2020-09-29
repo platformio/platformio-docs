@@ -19,7 +19,7 @@ Atmel AVR
 
 Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming
 
-For more detailed information please visit `vendor site <http://www.atmel.com/products/microcontrollers/avr/default.aspx?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.atmel.com/products/microcontrollers/avr/default.aspx?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -30,16 +30,880 @@ For more detailed information please visit `vendor site <http://www.atmel.com/pr
 Examples
 --------
 
-Examples are listed from `Atmel AVR development platform repository <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Atmel AVR development platform repository <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-external-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-own-src_dir <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-own-src_dir?utm_source=platformio&utm_medium=docs>`_
-* `digitstump-mouse <https://github.com/platformio/platform-atmelavr/tree/master/examples/digitstump-mouse?utm_source=platformio&utm_medium=docs>`_
-* `engduino-magnetometer <https://github.com/platformio/platform-atmelavr/tree/master/examples/engduino-magnetometer?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/simba-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-own-src_dir <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-own-src_dir?utm_source=platformio.org&utm_medium=docs>`_
+* `engduino-magnetometer <https://github.com/platformio/platform-atmelavr/tree/master/examples/engduino-magnetometer?utm_source=platformio.org&utm_medium=docs>`_
+* `digitstump-mouse <https://github.com/platformio/platform-atmelavr/tree/master/examples/digitstump-mouse?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-external-libs <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-external-libs?utm_source=platformio.org&utm_medium=docs>`_
+
+Debugging
+---------
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. contents::
+    :local:
+
+
+Tools & Debug Probes
+~~~~~~~~~~~~~~~~~~~~
+
+Supported debugging tools are listed in "Debug" column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further instructions.
+
+
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelavr_ATmega128`
+      - ATMEGA128
+      - 16MHz
+      - 127KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega1280`
+      - ATMEGA1280
+      - 16MHz
+      - 127KB
+      - 8KB
+    * - :ref:`board_atmelavr_ATmega1281`
+      - ATMEGA1281
+      - 16MHz
+      - 127KB
+      - 8KB
+    * - :ref:`board_atmelavr_ATmega1284`
+      - ATMEGA1284
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_ATmega1284P`
+      - ATMEGA1284P
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_ATmega16`
+      - ATMEGA16
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega164P`
+      - ATMEGA164P
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega168`
+      - ATMEGA168
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega168P`
+      - ATMEGA168P
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega2560`
+      - ATMEGA2560
+      - 16MHz
+      - 255KB
+      - 8KB
+    * - :ref:`board_atmelavr_ATmega324A`
+      - ATMEGA324A
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega324P`
+      - ATMEGA324P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega324PA`
+      - ATMEGA324PA
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega328`
+      - ATMEGA328
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega328P`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega48`
+      - ATMEGA48
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelavr_ATmega48P`
+      - ATMEGA48P
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelavr_ATmega644P`
+      - ATMEGA644P
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega8`
+      - ATMEGA8
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega88`
+      - ATMEGA88
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega88P`
+      - ATMEGA88P
+      - 16MHz
+      - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_attiny13`
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_bluefruitmicro`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_circuitplay_classic`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_feather328p`
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_feather32u4`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_flora8`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_gemma`
+      - ATTINY85
+      - 8MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelavr_itsybitsy32u4_3V`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_itsybitsy32u4_5V`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_metro`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_protrinket3ftdi`
+      - ATMEGA328P
+      - 12MHz
+      - 28KB
+      - 2KB
+    * - :ref:`board_atmelavr_protrinket3`
+      - ATMEGA328P
+      - 12MHz
+      - 28KB
+      - 2KB
+    * - :ref:`board_atmelavr_protrinket5ftdi`
+      - ATMEGA328P
+      - 16MHz
+      - 28KB
+      - 2KB
+    * - :ref:`board_atmelavr_protrinket5`
+      - ATMEGA328P
+      - 16MHz
+      - 28KB
+      - 2KB
+    * - :ref:`board_atmelavr_trinket3`
+      - ATTINY85
+      - 8MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelavr_trinket5`
+      - ATTINY85
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelavr_alorium_hinj`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_alorium_sno`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_alorium_xlr8`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_miniwireless`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_arduboy`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_arduboy_devkit`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_btatmega168`
+      - ATMEGA168
+      - 16MHz
+      - 14KB
+      - 1KB
+    * - :ref:`board_atmelavr_btatmega328`
+      - ATMEGA328P
+      - 16MHz
+      - 28KB
+      - 2KB
+    * - :ref:`board_atmelavr_diecimilaatmega168`
+      - ATMEGA168
+      - 16MHz
+      - 14KB
+      - 1KB
+    * - :ref:`board_atmelavr_diecimilaatmega328`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_esplora`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_ethernet`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_fio`
+      - ATMEGA328P
+      - 8MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_chiwawa`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_leonardo`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_leonardoeth`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_lilypadatmega168`
+      - ATMEGA168
+      - 8MHz
+      - 14KB
+      - 1KB
+    * - :ref:`board_atmelavr_lilypadatmega328`
+      - ATMEGA328P
+      - 8MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_LilyPadUSB`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_megaADK`
+      - ATMEGA2560
+      - 16MHz
+      - 248KB
+      - 8KB
+    * - :ref:`board_atmelavr_megaatmega1280`
+      - ATMEGA1280
+      - 16MHz
+      - 124KB
+      - 8KB
+    * - :ref:`board_atmelavr_megaatmega2560`
+      - ATMEGA2560
+      - 16MHz
+      - 248KB
+      - 8KB
+    * - :ref:`board_atmelavr_micro`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_miniatmega168`
+      - ATMEGA168
+      - 16MHz
+      - 14KB
+      - 1KB
+    * - :ref:`board_atmelavr_miniatmega328`
+      - ATMEGA328P
+      - 16MHz
+      - 28KB
+      - 2KB
+    * - :ref:`board_atmelavr_atmegangatmega168`
+      - ATMEGA168
+      - 16MHz
+      - 14KB
+      - 1KB
+    * - :ref:`board_atmelavr_atmegangatmega8`
+      - ATMEGA8
+      - 16MHz
+      - 7KB
+      - 1KB
+    * - :ref:`board_atmelavr_nanoatmega168`
+      - ATMEGA168
+      - 16MHz
+      - 14KB
+      - 1KB
+    * - :ref:`board_atmelavr_nanoatmega328`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_nanoatmega328new`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_pro8MHzatmega168`
+      - ATMEGA168
+      - 8MHz
+      - 14KB
+      - 1KB
+    * - :ref:`board_atmelavr_pro16MHzatmega168`
+      - ATMEGA168
+      - 16MHz
+      - 14KB
+      - 1KB
+    * - :ref:`board_atmelavr_pro8MHzatmega328`
+      - ATMEGA328P
+      - 8MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_pro16MHzatmega328`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_robotControl`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_robotMotor`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_uno`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_yun`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_yunmini`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_zumbt328`
+      - ATMEGA328P
+      - 16MHz
+      - 28KB
+      - 2KB
+    * - :ref:`board_atmelavr_raspduino`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_controllino_maxi`
+      - ATMEGA2560
+      - 16MHz
+      - 248KB
+      - 8KB
+    * - :ref:`board_atmelavr_controllino_maxi_automation`
+      - ATMEGA2560
+      - 16MHz
+      - 248KB
+      - 8KB
+    * - :ref:`board_atmelavr_controllino_mega`
+      - ATMEGA2560
+      - 16MHz
+      - 248KB
+      - 8KB
+    * - :ref:`board_atmelavr_controllino_mini`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_digispark-tiny`
+      - ATTINY85
+      - 16MHz
+      - 5.87KB
+      - 512B
+    * - :ref:`board_atmelavr_engduinov3`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_mayfly`
+      - ATMEGA1284P
+      - 8MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_fysetc_f6_13`
+      - ATMEGA2560
+      - 16MHz
+      - 252KB
+      - 8KB
+    * - :ref:`board_atmelavr_attiny2313`
+      - ATTINY2313
+      - 8MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelavr_attiny24`
+      - ATTINY24
+      - 8MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelavr_attiny25`
+      - ATTINY25
+      - 8MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelavr_attiny4313`
+      - ATTINY4313
+      - 8MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelavr_attiny44`
+      - ATTINY44
+      - 8MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelavr_attiny45`
+      - ATTINY45
+      - 8MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelavr_attiny84`
+      - ATTINY84
+      - 8MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelavr_attiny85`
+      - ATTINY85
+      - 8MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelavr_lightblue-bean`
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_lightblue-beanplus`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_lightup`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_one`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_smart7688`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_lora32u4II`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_mightyhat`
+      - ATMEGA328P
+      - 16MHz
+      - 31KB
+      - 2KB
+    * - :ref:`board_atmelavr_moteino`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_moteino8mhz`
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_moteinomega`
+      - ATMEGA1284P
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_168pa16m`
+      - ATMEGA168P
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_168pa8m`
+      - ATMEGA168P
+      - 8MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_328p16m`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_328p8m`
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_32u416m`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_1284p16m`
+      - ATMEGA1284P
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_1284p8m`
+      - ATMEGA1284P
+      - 8MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_644pa16m`
+      - ATMEGA644P
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_644pa8m`
+      - ATMEGA644P
+      - 8MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_emonpi`
+      - ATMEGA328P
+      - 16MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_prusa_mm_control`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_panStampAVR`
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_a-star32U4`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_prusa_rambo`
+      - ATMEGA2560
+      - 16MHz
+      - 252KB
+      - 8KB
+    * - :ref:`board_atmelavr_quirkbot`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_blend`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_blendmicro16`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_blendmicro8`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_reprap_rambo`
+      - ATMEGA2560
+      - 16MHz
+      - 252KB
+      - 8KB
+    * - :ref:`board_atmelavr_sodaq_galora`
+      - ATMEGA1284P
+      - 8MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_sodaq_mbili`
+      - ATMEGA1284P
+      - 8MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_sodaq_moja`
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_sodaq_ndogo`
+      - ATMEGA1284P
+      - 8MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_sodaq_tatu`
+      - ATMEGA1284P
+      - 8MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_sanguino_atmega1284p`
+      - ATMEGA1284P
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_sanguino_atmega1284_8m`
+      - ATMEGA1284P
+      - 8MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_sanguino_atmega644`
+      - ATMEGA644
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_sanguino_atmega644_8m`
+      - ATMEGA644
+      - 8MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_sanguino_atmega644p`
+      - ATMEGA644P
+      - 16MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_sanguino_atmega644p_8m`
+      - ATMEGA644P
+      - 8MHz
+      - 63KB
+      - 4KB
+    * - :ref:`board_atmelavr_seeeduino`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_sparkfun_satmega128rfa1`
+      - ATMEGA128RFA1
+      - 16MHz
+      - 16KB
+      - 124KB
+    * - :ref:`board_atmelavr_sparkfun_digitalsandbox`
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_sparkfun_fiov3`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_sparkfun_makeymakey`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_sparkfun_megapro8MHz`
+      - ATMEGA2560
+      - 8MHz
+      - 252KB
+      - 8KB
+    * - :ref:`board_atmelavr_sparkfun_megapro16MHz`
+      - ATMEGA2560
+      - 16MHz
+      - 248KB
+      - 8KB
+    * - :ref:`board_atmelavr_sparkfun_megamini`
+      - ATMEGA2560
+      - 8MHz
+      - 252KB
+      - 8KB
+    * - :ref:`board_atmelavr_uview`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_sparkfun_promicro8`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_sparkfun_promicro16`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_sparkfun_qduinomini`
+      - ATMEGA32U4
+      - 8MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_sparkfun_redboard`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_sparkfun_serial7seg`
+      - ATMEGA328P
+      - 8MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_sleepypi`
+      - ATMEGA328P
+      - 8MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_whispernode`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_the_things_uno`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_tinyduino`
+      - ATMEGA328P
+      - 8MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_tinylily`
+      - ATMEGA328P
+      - 8MHz
+      - 30KB
+      - 2KB
+    * - :ref:`board_atmelavr_usbasp`
+      - ATMEGA8
+      - 12MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_atmelavr_wildfirev2`
+      - ATMEGA1284P
+      - 16MHz
+      - 120.00KB
+      - 16KB
+    * - :ref:`board_atmelavr_wildfirev3`
+      - ATMEGA1284P
+      - 16MHz
+      - 127KB
+      - 16KB
+    * - :ref:`board_atmelavr_ftduino`
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
+    * - :ref:`board_atmelavr_bob3`
+      - ATMEGA88
+      - 8MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_atmelavr_nibo2`
+      - ATMEGA128
+      - 16MHz
+      - 128KB
+      - 4KB
+    * - :ref:`board_atmelavr_niboburger`
+      - ATMEGA16
+      - 15MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelavr_niboburger_1284`
+      - ATMEGA1284P
+      - 20MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelavr_nibobee`
+      - ATMEGA16
+      - 15MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelavr_nibobee_1284`
+      - ATMEGA1284P
+      - 20MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelavr_ardhat`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+
 
 Stable and upstream versions
 ----------------------------
@@ -82,53 +946,62 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-avr <https://github.com/arduino/ArduinoCore-avr?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (AVR Core)
+    * - `framework-arduino-avr <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+      - The official Arduino Wiring-based Framework for Microchip AVR microcontrollers
 
-    * - `framework-arduino-avr-attiny <https://github.com/SpenceKonde/ATTinyCore?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (ATTiny Core)
+    * - `framework-arduino-avr-attiny <https://github.com/SpenceKonde/ATTinyCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (ATTiny Core)
 
-    * - `framework-arduino-avr-bean <https://github.com/PunchThrough/bean-arduino-core?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Bean Core)
+    * - `framework-arduino-avr-bean <https://github.com/PunchThrough/bean-arduino-core.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Bean Core)
 
-    * - `framework-arduino-avr-core13 <https://sourceforge.net/projects/ard-core13/?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Core13)
+    * - `framework-arduino-avr-core13 <https://sourceforge.net/projects/ard-core13/?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Core13)
 
-    * - `framework-arduino-avr-digistump <https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Digistump Core)
+    * - `framework-arduino-avr-digistump <https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Digistump Core)
 
-    * - `framework-arduino-avr-dwenguino <https://github.com/dwengovzw/Dwengo-library/tree/master/dwenguino/Dwenguino?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Dwenguino Core)
+    * - `framework-arduino-avr-dwenguino <https://github.com/dwengovzw/Dwengo-library/tree/master/dwenguino/Dwenguino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Dwenguino Core)
 
-    * - `framework-arduino-avr-megacore <https://github.com/MCUdude/MegaCore?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (MegaCore)
+    * - `framework-arduino-avr-majorcore <https://github.com/MCUdude/MajorCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MajorCore)
 
-    * - `framework-arduino-avr-mightycore <https://github.com/MCUdude/MightyCore?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (MightyCore)
+    * - `framework-arduino-avr-megacore <https://github.com/MCUdude/MegaCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MegaCore)
 
-    * - `framework-arduino-avr-minicore <https://github.com/MCUdude/MiniCore?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (MiniCore)
+    * - `framework-arduino-avr-microcore <https://github.com/MCUdude/MicroCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MicroCore)
 
-    * - `framework-arduino-avr-nicai <https://github.com/arduino/ArduinoCore-avr?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Nicai Core)
+    * - `framework-arduino-avr-mightycore <https://github.com/MCUdude/MightyCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MightyCore)
 
-    * - `framework-arduino-avr-panstamp <https://github.com/panStamp/panstamp?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Panstamp Core)
+    * - `framework-arduino-avr-minicore <https://github.com/MCUdude/MiniCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MiniCore)
 
-    * - `framework-arduino-avr-prusa_rambo <https://github.com/prusa3d/Prusa-Firmware?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Prusa Rambo Core)
+    * - `framework-arduino-avr-nicai <http://www.nicai-systems.com/en/?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Nicai Core)
 
-    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
-      - Simba Framework
+    * - `framework-arduino-avr-panstamp <https://github.com/panStamp/panstamp.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Panstamp Core)
 
-    * - `tool-avrdude <http://www.nongnu.org/avrdude/?utm_source=platformio&utm_medium=docs>`__
-      - AVRDUDE
+    * - `framework-arduino-avr-prusa_rambo <https://github.com/prusa3d/Prusa-Firmware.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Prusa Rambo Core)
 
-    * - `tool-micronucleus <https://github.com/micronucleus/micronucleus?utm_source=platformio&utm_medium=docs>`__
-      - Micronucleus
+    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
-    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio&utm_medium=docs>`__
-      - avr-gcc
+    * - `tool-avrdude <http://savannah.nongnu.org/projects/avrdude?utm_source=platformio.org&utm_medium=docs>`__
+      - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers
+
+    * - `tool-micronucleus <https://github.com/micronucleus/micronucleus.git?utm_source=platformio.org&utm_medium=docs>`__
+      - ATTiny usb bootloader with a strong emphasis on bootloader compactness
+
+    * - `tool-simavr <https://github.com/buserror/simavr.git?utm_source=platformio.org&utm_medium=docs>`__
+      - simavr is a lean, mean and hackable AVR simulator
+
+    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Microchip AVR microcontrollers
 
 .. warning::
     **Linux Users**:
@@ -153,10 +1026,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
 Boards
 ------
@@ -164,8 +1037,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 Adafruit
 ~~~~~~~~
@@ -180,91 +1053,91 @@ Adafruit
       - Flash
       - RAM
     * - :ref:`board_atmelavr_bluefruitmicro`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_circuitplay_classic`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_feather328p`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_feather32u4`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_flora8`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_gemma`
-      - No
+      - On-board
       - ATTINY85
       - 8MHz
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_itsybitsy32u4_3V`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_itsybitsy32u4_5V`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_metro`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_protrinket3ftdi`
-      - No
+      - On-board
       - ATMEGA328P
       - 12MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_protrinket3`
-      - No
+      - On-board
       - ATMEGA328P
       - 12MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_protrinket5ftdi`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_protrinket5`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_trinket3`
-      - No
+      - On-board
       - ATTINY85
       - 8MHz
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_trinket5`
-      - No
+      - On-board
       - ATTINY85
       - 16MHz
       - 8KB
@@ -283,19 +1156,19 @@ Alorium Technology
       - Flash
       - RAM
     * - :ref:`board_atmelavr_alorium_hinj`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_alorium_sno`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_alorium_xlr8`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -314,7 +1187,7 @@ Anarduino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_miniwireless`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -333,13 +1206,13 @@ Arduboy
       - Flash
       - RAM
     * - :ref:`board_atmelavr_arduboy`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_arduboy_devkit`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -358,199 +1231,199 @@ Arduino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_btatmega168`
-      - No
+      - On-board
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_btatmega328`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_diecimilaatmega168`
-      - No
+      - On-board
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_diecimilaatmega328`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_esplora`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_ethernet`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_fio`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_chiwawa`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_leonardo`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_leonardoeth`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_lilypadatmega168`
-      - No
+      - On-board
       - ATMEGA168
       - 8MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_lilypadatmega328`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_LilyPadUSB`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_megaADK`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_megaatmega1280`
-      - No
+      - On-board
       - ATMEGA1280
       - 16MHz
       - 124KB
       - 8KB
     * - :ref:`board_atmelavr_megaatmega2560`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_micro`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_miniatmega168`
-      - No
+      - On-board
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_miniatmega328`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_atmegangatmega168`
-      - No
+      - On-board
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_atmegangatmega8`
-      - No
+      - On-board
       - ATMEGA8
       - 16MHz
       - 7KB
       - 1KB
     * - :ref:`board_atmelavr_nanoatmega168`
-      - No
+      - On-board
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_nanoatmega328`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_nanoatmega328new`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_pro8MHzatmega168`
-      - No
+      - On-board
       - ATMEGA168
       - 8MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_pro16MHzatmega168`
-      - No
+      - On-board
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_pro8MHzatmega328`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_pro16MHzatmega328`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_robotControl`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_robotMotor`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_uno`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_yun`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_yunmini`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -568,18 +1441,6 @@ Atmel
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_atmelavr_attiny13`
-      - No
-      - ATTINY13
-      - 1MHz
-      - 1KB
-      - 64B
-    * - :ref:`board_atmelavr_attiny13a`
-      - No
-      - ATTINY13A
-      - 1MHz
-      - 1KB
-      - 64B
     * - :ref:`board_atmelavr_attiny1634`
       - No
       - ATTINY1634
@@ -593,19 +1454,19 @@ Atmel
       - 16KB
       - 512B
     * - :ref:`board_atmelavr_attiny2313`
-      - No
+      - On-board
       - ATTINY2313
       - 8MHz
       - 2KB
       - 128B
     * - :ref:`board_atmelavr_attiny24`
-      - No
+      - On-board
       - ATTINY24
       - 8MHz
       - 2KB
       - 128B
     * - :ref:`board_atmelavr_attiny25`
-      - No
+      - On-board
       - ATTINY25
       - 8MHz
       - 2KB
@@ -617,7 +1478,7 @@ Atmel
       - 2KB
       - 128B
     * - :ref:`board_atmelavr_attiny4313`
-      - No
+      - On-board
       - ATTINY4313
       - 8MHz
       - 4KB
@@ -629,7 +1490,7 @@ Atmel
       - 4KB
       - 256B
     * - :ref:`board_atmelavr_attiny44`
-      - No
+      - On-board
       - ATTINY44
       - 8MHz
       - 4KB
@@ -641,7 +1502,7 @@ Atmel
       - 4KB
       - 256B
     * - :ref:`board_atmelavr_attiny45`
-      - No
+      - On-board
       - ATTINY45
       - 8MHz
       - 4KB
@@ -665,7 +1526,7 @@ Atmel
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_attiny84`
-      - No
+      - On-board
       - ATTINY84
       - 8MHz
       - 8KB
@@ -677,7 +1538,7 @@ Atmel
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_attiny85`
-      - No
+      - On-board
       - ATTINY85
       - 8MHz
       - 8KB
@@ -701,7 +1562,7 @@ Atmel
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_usbasp`
-      - No
+      - On-board
       - ATMEGA8
       - 12MHz
       - 8KB
@@ -720,7 +1581,7 @@ BQ
       - Flash
       - RAM
     * - :ref:`board_atmelavr_zumbt328`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 28KB
@@ -739,7 +1600,7 @@ BSFrance
       - Flash
       - RAM
     * - :ref:`board_atmelavr_lora32u4II`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -758,7 +1619,7 @@ BitWizard
       - Flash
       - RAM
     * - :ref:`board_atmelavr_raspduino`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
@@ -777,25 +1638,25 @@ Controllino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_controllino_maxi`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_controllino_maxi_automation`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_controllino_mega`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_controllino_mini`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -832,7 +1693,7 @@ Digistump
       - 14.50KB
       - 512B
     * - :ref:`board_atmelavr_digispark-tiny`
-      - No
+      - On-board
       - ATTINY85
       - 16MHz
       - 5.87KB
@@ -889,7 +1750,7 @@ Engduino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_engduinov3`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -908,7 +1769,7 @@ EnviroDIY
       - Flash
       - RAM
     * - :ref:`board_atmelavr_mayfly`
-      - No
+      - On-board
       - ATMEGA1284P
       - 8MHz
       - 127KB
@@ -927,7 +1788,7 @@ FYSETC
       - Flash
       - RAM
     * - :ref:`board_atmelavr_fysetc_f6_13`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 252KB
@@ -946,7 +1807,7 @@ LightUp
       - Flash
       - RAM
     * - :ref:`board_atmelavr_lightup`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -965,7 +1826,7 @@ Linino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_one`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -984,25 +1845,25 @@ LowPowerLab
       - Flash
       - RAM
     * - :ref:`board_atmelavr_mightyhat`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31KB
       - 2KB
     * - :ref:`board_atmelavr_moteino`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_moteino8mhz`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_moteinomega`
-      - No
+      - On-board
       - ATMEGA1284P
       - 16MHz
       - 127KB
@@ -1021,7 +1882,7 @@ MediaTek Labs
       - Flash
       - RAM
     * - :ref:`board_atmelavr_smart7688`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -1058,38 +1919,44 @@ Microchip
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega128`
-      - No
+      - On-board
       - ATMEGA128
       - 16MHz
       - 127KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega1280`
-      - No
+      - On-board
       - ATMEGA1280
       - 16MHz
       - 127KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1281`
-      - No
+      - On-board
       - ATMEGA1281
       - 16MHz
       - 127KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1284`
-      - No
+      - On-board
       - ATMEGA1284
       - 16MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega1284P`
-      - No
+      - On-board
       - ATMEGA1284P
       - 16MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega16`
-      - No
+      - On-board
       - ATMEGA16
+      - 16MHz
+      - 15.50KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega162`
+      - No
+      - ATMEGA162
       - 16MHz
       - 15.50KB
       - 1KB
@@ -1100,19 +1967,19 @@ Microchip
       - 15.50KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega164P`
-      - No
+      - On-board
       - ATMEGA164P
       - 16MHz
       - 15.50KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168`
-      - No
+      - On-board
       - ATMEGA168
       - 16MHz
       - 15.50KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168P`
-      - No
+      - On-board
       - ATMEGA168P
       - 16MHz
       - 15.50KB
@@ -1124,7 +1991,7 @@ Microchip
       - 15.50KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega2560`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 255KB
@@ -1142,19 +2009,19 @@ Microchip
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324A`
-      - No
+      - On-board
       - ATMEGA324A
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324P`
-      - No
+      - On-board
       - ATMEGA324P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324PA`
-      - No
+      - On-board
       - ATMEGA324PA
       - 16MHz
       - 31.50KB
@@ -1166,13 +2033,13 @@ Microchip
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328`
-      - No
+      - On-board
       - ATMEGA328
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328P`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -1184,8 +2051,14 @@ Microchip
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega48`
-      - No
+      - On-board
       - ATMEGA48
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelavr_ATmega48P`
+      - On-board
+      - ATMEGA48P
       - 16MHz
       - 4KB
       - 512B
@@ -1214,17 +2087,23 @@ Microchip
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega644P`
-      - No
+      - On-board
       - ATMEGA644P
       - 16MHz
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega8`
-      - No
+      - On-board
       - ATMEGA8
       - 16MHz
       - 7.50KB
       - 1KB
+    * - :ref:`board_atmelavr_ATmega8515`
+      - No
+      - ATMEGA8515
+      - 16MHz
+      - 7.50KB
+      - 512B
     * - :ref:`board_atmelavr_ATmega8535`
       - No
       - ATMEGA8535
@@ -1232,13 +2111,13 @@ Microchip
       - 7.50KB
       - 512B
     * - :ref:`board_atmelavr_ATmega88`
-      - No
+      - On-board
       - ATMEGA88
       - 16MHz
       - 7.50KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88P`
-      - No
+      - On-board
       - ATMEGA88P
       - 16MHz
       - 7.50KB
@@ -1249,12 +2128,18 @@ Microchip
       - 16MHz
       - 7.50KB
       - 1KB
-    * - :ref:`board_atmelavr_ATmega48P`
-      - No
-      - ATMEGA48P
-      - 16MHz
-      - 4KB
-      - 512B
+    * - :ref:`board_atmelavr_attiny13`
+      - On-board
+      - ATTINY13
+      - 9MHz
+      - 1KB
+      - 64B
+    * - :ref:`board_atmelavr_attiny13a`
+      - On-board
+      - ATTINY13A
+      - 9MHz
+      - 1KB
+      - 64B
     * - :ref:`board_atmelavr_at90pwm216`
       - No
       - AT90PWM216
@@ -1281,55 +2166,55 @@ Microduino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_168pa16m`
-      - No
+      - On-board
       - ATMEGA168P
       - 16MHz
       - 15.50KB
       - 1KB
     * - :ref:`board_atmelavr_168pa8m`
-      - No
+      - On-board
       - ATMEGA168P
       - 8MHz
       - 15.50KB
       - 1KB
     * - :ref:`board_atmelavr_328p16m`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_328p8m`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_32u416m`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_1284p16m`
-      - No
+      - On-board
       - ATMEGA1284P
       - 16MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_1284p8m`
-      - No
+      - On-board
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_644pa16m`
-      - No
+      - On-board
       - ATMEGA644P
       - 16MHz
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_644pa8m`
-      - No
+      - On-board
       - ATMEGA644P
       - 8MHz
       - 63KB
@@ -1348,7 +2233,7 @@ OpenEnergyMonitor
       - Flash
       - RAM
     * - :ref:`board_atmelavr_emonpi`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 30KB
@@ -1367,7 +2252,7 @@ PanStamp
       - Flash
       - RAM
     * - :ref:`board_atmelavr_panStampAVR`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 31.50KB
@@ -1405,7 +2290,7 @@ Pololu Corporation
       - Flash
       - RAM
     * - :ref:`board_atmelavr_a-star32U4`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -1423,8 +2308,14 @@ Prusa 3D
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelavr_prusa_mm_control`
+      - On-board
+      - ATMEGA32U4
+      - 16MHz
+      - 28KB
+      - 2.50KB
     * - :ref:`board_atmelavr_prusa_rambo`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 252KB
@@ -1443,13 +2334,13 @@ Punch Through
       - Flash
       - RAM
     * - :ref:`board_atmelavr_lightblue-bean`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_lightblue-beanplus`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -1468,7 +2359,7 @@ Quirkbot
       - Flash
       - RAM
     * - :ref:`board_atmelavr_quirkbot`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -1487,19 +2378,19 @@ RedBearLab
       - Flash
       - RAM
     * - :ref:`board_atmelavr_blend`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_blendmicro16`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_blendmicro8`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -1518,7 +2409,7 @@ RepRap
       - Flash
       - RAM
     * - :ref:`board_atmelavr_reprap_rambo`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 252KB
@@ -1537,31 +2428,31 @@ SODAQ
       - Flash
       - RAM
     * - :ref:`board_atmelavr_sodaq_galora`
-      - No
+      - On-board
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sodaq_mbili`
-      - No
+      - On-board
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sodaq_moja`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_sodaq_ndogo`
-      - No
+      - On-board
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sodaq_tatu`
-      - No
+      - On-board
       - ATMEGA1284P
       - 8MHz
       - 127KB
@@ -1580,37 +2471,37 @@ Sanguino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_sanguino_atmega1284p`
-      - No
+      - On-board
       - ATMEGA1284P
       - 16MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sanguino_atmega1284_8m`
-      - No
+      - On-board
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sanguino_atmega644`
-      - No
+      - On-board
       - ATMEGA644
       - 16MHz
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_sanguino_atmega644_8m`
-      - No
+      - On-board
       - ATMEGA644
       - 8MHz
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_sanguino_atmega644p`
-      - No
+      - On-board
       - ATMEGA644P
       - 16MHz
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_sanguino_atmega644p_8m`
-      - No
+      - On-board
       - ATMEGA644P
       - 8MHz
       - 63KB
@@ -1629,7 +2520,7 @@ SeeedStudio
       - Flash
       - RAM
     * - :ref:`board_atmelavr_seeeduino`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -1648,79 +2539,79 @@ SparkFun
       - Flash
       - RAM
     * - :ref:`board_atmelavr_sparkfun_satmega128rfa1`
-      - No
+      - On-board
       - ATMEGA128RFA1
       - 16MHz
       - 16KB
       - 124KB
     * - :ref:`board_atmelavr_sparkfun_digitalsandbox`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_sparkfun_fiov3`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_makeymakey`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_megapro8MHz`
-      - No
+      - On-board
       - ATMEGA2560
       - 8MHz
       - 252KB
       - 8KB
     * - :ref:`board_atmelavr_sparkfun_megapro16MHz`
-      - No
+      - On-board
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_sparkfun_megamini`
-      - No
+      - On-board
       - ATMEGA2560
       - 8MHz
       - 252KB
       - 8KB
     * - :ref:`board_atmelavr_uview`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_sparkfun_promicro8`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_promicro16`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_qduinomini`
-      - No
+      - On-board
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_redboard`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_sparkfun_serial7seg`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 31.50KB
@@ -1739,7 +2630,7 @@ SpellFoundry
       - Flash
       - RAM
     * - :ref:`board_atmelavr_sleepypi`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 30KB
@@ -1758,7 +2649,7 @@ The Things Network
       - Flash
       - RAM
     * - :ref:`board_atmelavr_the_things_uno`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -1777,7 +2668,7 @@ Till Harbaum
       - Flash
       - RAM
     * - :ref:`board_atmelavr_ftduino`
-      - No
+      - On-board
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -1796,13 +2687,13 @@ TinyCircuits
       - Flash
       - RAM
     * - :ref:`board_atmelavr_tinyduino`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_tinylily`
-      - No
+      - On-board
       - ATMEGA328P
       - 8MHz
       - 30KB
@@ -1821,13 +2712,13 @@ Wicked Device
       - Flash
       - RAM
     * - :ref:`board_atmelavr_wildfirev2`
-      - No
+      - On-board
       - ATMEGA1284P
       - 16MHz
       - 120.00KB
       - 16KB
     * - :ref:`board_atmelavr_wildfirev3`
-      - No
+      - On-board
       - ATMEGA1284P
       - 16MHz
       - 127KB
@@ -1846,7 +2737,7 @@ Wisen
       - Flash
       - RAM
     * - :ref:`board_atmelavr_whispernode`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -1884,37 +2775,37 @@ nicai-systems
       - Flash
       - RAM
     * - :ref:`board_atmelavr_bob3`
-      - No
+      - On-board
       - ATMEGA88
       - 8MHz
       - 8KB
       - 1KB
     * - :ref:`board_atmelavr_nibo2`
-      - No
+      - On-board
       - ATMEGA128
       - 16MHz
       - 128KB
       - 4KB
     * - :ref:`board_atmelavr_niboburger`
-      - No
+      - On-board
       - ATMEGA16
       - 15MHz
       - 16KB
       - 1KB
     * - :ref:`board_atmelavr_niboburger_1284`
-      - No
+      - On-board
       - ATMEGA1284P
       - 20MHz
       - 128KB
       - 16KB
     * - :ref:`board_atmelavr_nibobee`
-      - No
+      - On-board
       - ATMEGA16
       - 15MHz
       - 16KB
       - 1KB
     * - :ref:`board_atmelavr_nibobee_1284`
-      - No
+      - On-board
       - ATMEGA1284P
       - 20MHz
       - 128KB
@@ -1933,7 +2824,7 @@ ubIQio
       - Flash
       - RAM
     * - :ref:`board_atmelavr_ardhat`
-      - No
+      - On-board
       - ATMEGA328P
       - 16MHz
       - 31.50KB

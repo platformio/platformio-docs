@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 243KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/4062?utm_source=platformio&utm_medium=docs>`__
+    - `Adafruit <https://www.adafruit.com/product/4062?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -68,6 +68,7 @@ Uploading
 ---------
 Adafruit Feather nRF52840 Express supports the next uploading protocols:
 
+* ``cmsis-dap``
 * ``jlink``
 * ``nrfjprog``
 * ``nrfutil``
@@ -106,9 +107,12 @@ Adafruit Feather nRF52840 Express does not have on-board debug probe and **IS NO
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_jlink`
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
   * - :ref:`debugging_tool_stlink`
     - 
     - 
@@ -122,4 +126,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

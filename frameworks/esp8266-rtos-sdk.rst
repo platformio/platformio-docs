@@ -19,7 +19,7 @@ ESP8266 RTOS SDK
 
 ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
 
-For more detailed information please visit `vendor site <https://github.com/espressif/ESP8266_RTOS_SDK?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/espressif/ESP8266_RTOS_SDK?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -29,7 +29,7 @@ For more detailed information please visit `vendor site <https://github.com/espr
 Examples
 --------
 
-* `ESP8266 RTOS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `ESP8266 RTOS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -48,7 +48,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 4D Systems
 ~~~~~~~~~~
@@ -419,6 +419,27 @@ Olimex
       - ESP8266
       - 80MHz
       - 2MB
+      - 80KB
+
+Schirmilabs
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_eduinowifi`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
       - 80KB
 
 SeeedStudio

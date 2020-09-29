@@ -11,8 +11,8 @@
 
 .. _debugging_tool_altera-usb-blaster:
 
-Altera / Intel USB-Blaster Download Cable
-=========================================
+Altera / Intel USB-Blaster
+==========================
 
 .. image:: ../../_static/images/debug_probes/altera-usb-blaster.jpg
   :target: https://www.intel.com/content/www/us/en/programmable/products/boards_and_kits/download-cables.html?utm_source=platformio&utm_medium=docs
@@ -103,6 +103,9 @@ Platforms
     * - :ref:`platform_gd32v`
       - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
 
+    * - :ref:`platform_nuclei`
+      - Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.
+
 Frameworks
 ----------
 .. list-table::
@@ -112,10 +115,13 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_gd32vf103-sdk`
-      - GigaDevice GD32VF103 Firmware Library (SDK)
+      - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
+
+    * - :ref:`framework_nuclei-sdk`
+      - Open Source Software Development Kit for the Nuclei N/NX processors
 
 Boards
 ------
@@ -134,6 +140,20 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nuclei_gd32vf103v_eval`
+      - :ref:`platform_nuclei`
+      - External
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_nuclei_gd32vf103v_rvstar`
+      - :ref:`platform_nuclei`
+      - On-board
+      - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_gd32v_gd32vf103v-eval`
       - :ref:`platform_gd32v`
       - External
@@ -148,6 +168,13 @@ Boards
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB
     * - :ref:`board_gd32v_wio_lite_risc-v`
       - :ref:`platform_gd32v`
       - External

@@ -19,7 +19,7 @@ TI TIVA
 
 Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
-For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/c2000_performance/control_automation/tm4c12x/overview.page?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/c2000_performance/control_automation/tm4c12x/overview.page?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,12 +29,13 @@ For more detailed information please visit `vendor site <http://www.ti.com/lsds/
 Examples
 --------
 
-Examples are listed from `TI TIVA development platform repository <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `TI TIVA development platform repository <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `libopencm3-blink <https://github.com/platformio/platform-titiva/tree/master/examples/libopencm3-blink?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-titiva/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
+* `libopencm3-blink <https://github.com/platformio/platform-titiva/tree/master/examples/libopencm3-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `libopencm3-usb-cdcacm <https://github.com/platformio/platform-titiva/tree/master/examples/libopencm3-usb-cdcacm?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-titiva/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-titiva/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -131,17 +132,17 @@ Packages
     * - Name
       - Description
 
-    * - `framework-energiativa <http://energia.nu/reference/?utm_source=platformio&utm_medium=docs>`__
-      - Energia Wiring-based Framework (LM4F Core)
+    * - `framework-energiativa <http://energia.nu/reference/?utm_source=platformio.org&utm_medium=docs>`__
+      - Energia Wiring-based Framework for Texas Instruments TIVA C Series
 
-    * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio&utm_medium=docs>`__
-      - libOpenCM3 Framework
+    * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio.org&utm_medium=docs>`__
+      - Open source ARM Cortex-M microcontroller library
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio&utm_medium=docs>`__
-      - OpenOCD
+    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
     **Linux Users**:
@@ -166,10 +167,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_libopencm3`
-      - The libOpenCM3 framework aims to create a free/libre/open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
+      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
 
 Boards
 ------
@@ -177,8 +178,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 TI
 ~~

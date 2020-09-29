@@ -19,12 +19,13 @@ Freedom E SDK
 
 Open Source Software for Developing on the SiFive Freedom E Platform
 
-For more detailed information please visit `vendor site <https://github.com/sifive/freedom-e-sdk?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/sifive/freedom-e-sdk?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
     :local:
     :depth: 1
+.. include:: freedom-e-sdk_extra.rst
 
 Debugging
 ---------
@@ -88,12 +89,24 @@ You do not need to use/buy external debug probe.
       - 320MHz
       - 16MB
       - 16KB
+    * - :ref:`board_sifive_sparkfun_redboard_v`
+      - :ref:`platform_sifive`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_sparkfun_thing_plus_v`
+      - :ref:`platform_sifive`
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
 
 
 Examples
 --------
 
-* `Freedom E SDK for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Freedom E SDK for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -112,7 +125,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 SiFive
 ~~~~~~
@@ -142,6 +155,34 @@ SiFive
       - 16MB
       - 16KB
     * - :ref:`board_sifive_hifive1-revb`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+
+SparkFun
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_sifive_sparkfun_redboard_v`
+      - :ref:`platform_sifive`
+      - On-board
+      - FE310
+      - 320MHz
+      - 16MB
+      - 16KB
+    * - :ref:`board_sifive_sparkfun_thing_plus_v`
       - :ref:`platform_sifive`
       - On-board
       - FE310

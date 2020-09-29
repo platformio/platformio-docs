@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 256KB
   * - **Vendor**
-    - `Laird Connectivity <https://www.lairdconnect.com/wireless-modules/bluetooth-modules/bluetooth-5-modules/bl654-series-bluetooth-module-nfc?utm_source=platformio&utm_medium=docs>`__
+    - `Laird Connectivity <https://www.lairdconnect.com/wireless-modules/bluetooth-modules/bluetooth-5-modules/bl654-series-bluetooth-module-nfc?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -113,10 +113,10 @@ BL654 Development Kit has on-board debug probe and **IS READY** for debugging. Y
     - 
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
-    - Yes
+    - 
   * - :ref:`debugging_tool_jlink`
     - Yes
-    - 
+    - Yes
   * - :ref:`debugging_tool_stlink`
     - 
     - 
@@ -130,4 +130,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

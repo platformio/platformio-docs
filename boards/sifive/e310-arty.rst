@@ -32,7 +32,7 @@ Platform :ref:`platform_sifive`: SiFive brings the power of open source and soft
   * - **RAM**
     - 256MB
   * - **Vendor**
-    - `Xilinx <https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board-for-makers-and-hobbyists/?utm_source=platformio&utm_medium=docs>`__
+    - `Xilinx <https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board-for-makers-and-hobbyists/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -134,6 +134,9 @@ Arty FPGA Dev Kit has on-board debug probe and **IS READY** for debugging. You d
   * - :ref:`debugging_tool_qemu`
     - Yes
     - 
+  * - :ref:`debugging_tool_renode`
+    - Yes
+    - 
   * - :ref:`debugging_tool_tumpa`
     - 
     - 
@@ -145,6 +148,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform

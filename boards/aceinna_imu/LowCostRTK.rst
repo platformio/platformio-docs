@@ -32,7 +32,7 @@ Platform :ref:`platform_aceinna_imu`: Open-source, embedded development platform
   * - **RAM**
     - 384KB
   * - **Vendor**
-    - `Aceinna <https://www.aceinna.com/inertial-systems/?utm_source=platformio&utm_medium=docs>`__
+    - `Aceinna <https://www.aceinna.com/inertial-systems/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -114,14 +114,3 @@ Aceinna Low Cost RTK has on-board debug probe and **IS READY** for debugging. Yo
   * - :ref:`debugging_tool_stlink`
     - Yes
     - Yes
-
-Frameworks
-----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.

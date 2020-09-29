@@ -97,18 +97,18 @@ https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld
 
 Please open ``eagle.flash.***.ld`` file to check how flash is split.
 
-To override default LD script please use :ref:`projectconf_build_flags` from
-:ref:`projectconf`.
+To override default LD script please use :ref:`projectconf_board_build.ldscript`
+option from :ref:`projectconf`.
 
 .. code-block:: ini
 
     [env:myenv]
-    build_flags = -Wl,-Teagle.flash.4m.ld
+    board_build.ldscript = eagle.flash.4m.ld
 
 Upload Speed
 ~~~~~~~~~~~~
 
-You can set custom upload speed using  :ref:`projectconf_upload_speed` option
+You can set custom upload speed using :ref:`projectconf_upload_speed` option
 from :ref:`projectconf`
 
 .. code-block:: ini
@@ -129,16 +129,40 @@ Available variants (macros):
 * ``-D PIO_FRAMEWORK_ARDUINO_LWIP2_IPV6_HIGHER_BANDWIDTH`` v2 IPv6 Higher Bandwidth
 * ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth
 
-You can change lwIP Variant passing a custom macro using project
+You can change lwIP Variant by passing a custom macro using project
 :ref:`projectconf_build_flags`.
 
-For example, switch to lwIP v1.4
+For example, to switch to lwIP v1.4
 
 .. code-block:: ini
 
     [env:myenv]
     ...
     build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH
+
+SDK Version
+~~~~~~~~~~~
+
+Available versions (macros):
+
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3`` NonOS SDK-pre-3.0 as of Jun 26, 2018
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK221`` NonOS SDK v2.2.1 (legacy) as of Jun 8, 2018
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190313`` NonOS SDK v2.2.x branch as of Mar 13, 2019
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190703`` NonOS SDK v2.2.x branch as of Jul 03, 2019 **(default)**
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191024`` NonOS SDK v2.2.x branch as of Oct 24, 2019
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191105`` NonOS SDK v2.2.x branch as of to Nov 05, 2019
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191122`` NonOS SDK v2.2.x branch as of to Nov 22, 2019
+
+You can change SDK version by passing a custom macro using project
+:ref:`projectconf_build_flags`.
+
+For example, to switch to SDK-pre-3.0:
+
+.. code-block:: ini
+
+    [env:myenv]
+    ...
+    build_flags = -D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3
 
 SSL Support
 ~~~~~~~~~~~
@@ -357,15 +381,45 @@ Exceptions are disabled by default. To enable exceptions, use the following :ref
 
 .. _platform_espressif_uploadfs:
 
-Uploading files to file system SPIFFS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Using Filesystem
+~~~~~~~~~~~~~~~~
+
+Selecting appropriate Filesystem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are two file systems for utilizing the on-board flash on the ESP8266: ``SPIFFS``
+and ``LittleFS``. They provide a compatible API but have incompatible on-flash
+implementations, so it is important to choose one or the per project as attempting to
+mount a SPIFFS volume under LittleFS may result in a format operation and definitely
+will not preserve any files, and vice-versa.
+
+.. warning::
+    SPIFFS is currently deprecated and may be removed in future releases of the core.
+    Please consider moving your code to LittleFS.
+
+The ``SPIFFS`` file system is used by default in order to keep legacy project
+compatible. To choose ``LittleFS`` as the file system, it should be explicitly specified
+using ``board_build.filesystem`` option in :ref:`projectconf`, for example:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = espressif8266
+    framework = arduino
+    board = ...
+    board_build.filesystem = littlefs
+
+More information about pros and cons of each file system can be found in `the official documentation <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#filesystem>`_.
+
+Uploading files to Filesystem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
     Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
     information first.
 
 1. Create new project using :ref:`pioide` or initialize project using
-   :ref:`piocore` and :ref:`cmd_init` (if you have not initialized it yet)
+   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
@@ -373,15 +427,38 @@ Uploading files to file system SPIFFS
    and :option:`platformio run --target` command with ``uploadfs`` target.
 
 
-To upload SPIFFS image using OTA update please specify ``upload_port`` /
+To upload file system image using OTA update please specify ``upload_port`` /
 ``--upload-port`` as IP address or mDNS host name (ending with the ``*.local``).
 For the details please follow to :ref:`platform_espressif_ota`.
 
 By default, will be used default LD Script for the board where is specified
-SPIFFS offsets (start, end, page, block). You can override it using
+file system offsets (start, end, page, block). You can override it using
 :ref:`platform_espressif_customflash`.
 
 Active discussion is located in `issue #382 <https://github.com/platformio/platformio-core/issues/382>`_.
+
+Overriding Filesystem image name
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By default, the image file name is set according to the used file system: ``spiffs.bin``
+or ``littlefs.bin``. You can change the file name using `a PRE extra script <https://docs.platformio.org/en/latest/projectconf/advanced_scripting.html#before-pre-and-after-post-actions>`_, for example:
+
+.. code-block:: ini
+
+    [env:d1]
+    platform = espressif8266
+    framework = arduino
+    board = d1
+    board_build.filesystem = littlefs
+    extra_scripts =
+        pre:extra_script.py
+
+Where a special variable ``ESP8266_FS_IMAGE_NAME`` can be overridden:
+
+.. code-block:: python
+
+    Import("env")
+    env.Replace(ESP8266_FS_IMAGE_NAME="custom_image_name")
 
 .. _platform_espressif_ota:
 
@@ -439,7 +516,9 @@ For the full list with available options please run
 
 .. code-block:: bash
 
-    ~/.platformio/packages/tool-espotapy/espota.py --help
+    ~/.platformio/packages/framework-arduinoespressif8266/tools/espota.py --help
+
+    Usage: espota.py [options]
 
     Transmit image over the air to the esp8266 module with OTA support.
 
@@ -469,8 +548,6 @@ For the full list with available options please run
       Output:
         -d, --debug         Show debug output. And override loglevel with debug.
         -r, --progress      Show progress output. Does not work for ArduinoIDE
-        -t TIMEOUT, --timeout=TIMEOUT
-                            Timeout to wait for the ESP8266 to accept invitation
 
 Demo
 ~~~~
@@ -485,26 +562,27 @@ Using Arduino Framework with Staging version
 PlatformIO will install the latest Arduino Core for ESP8266 from
 https://github.com/esp8266/Arduino. The `Git <https://git-scm.com>`_
 should be installed in a system. To update Arduino Core to the latest revision,
-please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
+please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Updates``.
 
 1.  Please install :ref:`pioide`
-2.  Initialize a new project, open :ref:`projectconf` and set
-    :ref:`projectconf_env_platform` to
-    ``https://github.com/platformio/platform-espressif8266.git#feature/stage``.
+2.  Initialize a new project, open :ref:`projectconf` and specify the link to the
+    framework repository in :ref:`projectconf_env_platform_packages` section.
     For example,
 
     .. code-block:: ini
 
         [env:nodemcuv2]
-        platform = https://github.com/platformio/platform-espressif8266.git#feature/stage
+        platform = espressif8266
         board = nodemcuv2
         framework = arduino
+        platform_packages =
+            framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
 
-3.  Try to build project
+3.  Try to build the project
 4.  If you see build errors, then try to build this project using the same
     ``stage`` with Arduino IDE
 5.  If it works with Arduino IDE but doesn't work with PlatformIO, then please
-    `file new issue <https://github.com/platformio/platform-espressif32/issuess>`_
+    `file a new issue <https://github.com/platformio/platform-espressif8266/issuess>`_
     with attached information:
 
     - test project/files

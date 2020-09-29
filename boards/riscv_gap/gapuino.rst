@@ -32,7 +32,7 @@ Platform :ref:`platform_riscv_gap`: GreenWaves GAP8 IoT application processor en
   * - **RAM**
     - 8MB
   * - **Vendor**
-    - `GreenWaves Technologies <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio&utm_medium=docs>`__
+    - `GreenWaves Technologies <https://greenwaves-technologies.com/product/gapduino/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -48,7 +48,7 @@ Please use ``gapuino`` ID for :ref:`projectconf_env_board` option in :ref:`proje
 
 You can override default GAPuino GAP8 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `gapuino.json <https://github.com/pioplus/platform-riscv_gap/blob/master/boards/gapuino.json>`_. For example,
+board manifest `gapuino.json <https://github.com/platformio/platform-riscv_gap/blob/master/boards/gapuino.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
@@ -97,7 +97,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_pulp-os`
-      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory.
+      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory

@@ -32,7 +32,7 @@ Platform :ref:`platform_sifive`: SiFive brings the power of open source and soft
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `SiFive <https://www.sifive.com/products/hifive1/?utm_source=platformio&utm_medium=docs>`__
+    - `SiFive <https://www.sifive.com/products/hifive1/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -90,6 +90,9 @@ HiFive1 has on-board debug probe and **IS READY** for debugging. You don't need 
   * - :ref:`debugging_tool_qemu`
     - Yes
     - 
+  * - :ref:`debugging_tool_renode`
+    - Yes
+    - 
 
 Frameworks
 ----------
@@ -99,8 +102,11 @@ Frameworks
     * - Name
       - Description
 
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

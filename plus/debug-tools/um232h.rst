@@ -80,9 +80,6 @@ Please read `4. UM232H Pin Out and Signal Descriptions <https://www.ftdichip.com
   * - AD3
     - TMS
     - Test Mode State
-  * - RST#
-    - RESET
-    - Connect this pin to the (active low) reset input of the target CPU (EN for ESP32)
 
 You will also need to connect VIO to V3V and USB to 5V0 of UM232H
 to power the FTDI chip and board. See `UM232H Datasheet <https://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_UM232H.pdf>`_
@@ -109,10 +106,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_gd32vf103-sdk`
-      - GigaDevice GD32VF103 Firmware Library (SDK)
+      - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
 
 Boards
 ------
@@ -145,6 +142,13 @@ Boards
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB
     * - :ref:`board_gd32v_wio_lite_risc-v`
       - :ref:`platform_gd32v`
       - External

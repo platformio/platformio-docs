@@ -19,7 +19,7 @@ Espressif 8266
 
 Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-For more detailed information please visit `vendor site <https://espressif.com/?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://espressif.com/?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -30,15 +30,15 @@ For more detailed information please visit `vendor site <https://espressif.com/?
 Examples
 --------
 
-Examples are listed from `Espressif 8266 development platform repository <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Espressif 8266 development platform repository <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-asyncudp <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-asyncudp?utm_source=platformio&utm_medium=docs>`_
-* `arduino-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-webserver <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio&utm_medium=docs>`_
-* `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio&utm_medium=docs>`_
-* `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
-* `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/simba-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-webserver <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-asyncudp <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-asyncudp?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `simba-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/simba-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -81,29 +81,32 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (ESP8266 Core)
+    * - `framework-arduinoespressif8266 <https://github.com/tasmota/Arduino/tree/2.7.4.1-tasmota?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Tasmota (ESP8266 Core)
 
-    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK?utm_source=platformio&utm_medium=docs>`__
-      - ESP8266 Non-OS SDK
+    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Espressif ESP8266 Non-OS SDK
 
-    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK?utm_source=platformio&utm_medium=docs>`__
-      - ESP8266 SDK based on FreeRTOS
+    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Espressif ESP8266 SDK based on FreeRTOS
 
-    * - `framework-simba <https://github.com/eerimoq/simba?utm_source=platformio&utm_medium=docs>`__
-      - Simba Framework
+    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
-    * - `tool-esptool <https://github.com/igrr/esptool-ck?utm_source=platformio&utm_medium=docs>`__
-      - esptool-ck
+    * - `tool-esptool <https://github.com/igrr/esptool-ck.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Espressif ESP8266 build/flash helper tool
 
-    * - `tool-esptoolpy <https://github.com/espressif/esptool?utm_source=platformio&utm_medium=docs>`__
-      - ESP8266 and ESP32 serial bootloader utility
+    * - `tool-esptoolpy <https://github.com/espressif/esptool.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Espressif ESP8266 and ESP32 serial bootloader utility
 
-    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-mklittlefs <https://github.com/earlephilhower/mklittlefs.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Utility for creating littlefs images for upload on the ESP8266
+
+    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs.git?utm_source=platformio.org&utm_medium=docs>`__
       - Tool to build and unpack SPIFFS images
 
-    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa?utm_source=platformio&utm_medium=docs>`__
-      - xtensa-gcc
+    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa.git?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Xtensa processor
 
 .. warning::
     **Linux Users**:
@@ -128,16 +131,16 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_esp8266-nonos-sdk`
-      - The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions.
+      - The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions
 
     * - :ref:`framework_esp8266-rtos-sdk`
       - ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
 
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
 Boards
 ------
@@ -145,8 +148,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 4D Systems
 ~~~~~~~~~~
@@ -496,6 +499,25 @@ Olimex
       - ESP8266
       - 80MHz
       - 2MB
+      - 80KB
+
+Schirmilabs
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_eduinowifi`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
       - 80KB
 
 SeeedStudio

@@ -10,190 +10,100 @@
     limitations under the License.
 
 .. _library_creating:
-.. |PIOAPICR| replace:: *PlatformIO Library Registry Crawler*
 
 Creating Library
 ================
 
-*PlatformIO* :ref:`librarymanager` doesn't have any requirements to a library
-source code structure. The only one requirement is library's manifest file -
-:ref:`library_config`, `library.properties <https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#library-metadata>`_ or `module.json <http://docs.yottabuild.org/reference/module.html>`_. It can be located inside your library or in the another
-location where |PIOAPICR| will have *HTTP* access.
+Managing components between the projects is a historical issue. A common code
+is duplicated between different projects that lead to project complexity.
+A good practice is to organize interdependent components as the separate libraries
+where other projects can depend on them.
 
-Updates to existing libraries are done every 24 hours. In case a more urgent
-update is required, you can post a request on PlatformIO `community <https://community.platformio.org/>`_.
+PlatformIO has a built-in :ref:`librarymanager` where developers can declare project
+dependencies and PlatformIO will automatically manage them (install, build, update).
+It doesn't have any requirements for a library source code structure.
+The only requirement is a library manifest file -
+:ref:`library_json`, `library.properties <https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#library-metadata>`_, or `module.json <http://docs.yottabuild.org/reference/module.html>`_.
+It must be located in the root of a library.
+
+We highly recommend using :ref:`library_json` for better compatibility and avoiding any issues.
 
 .. contents:: Contents
     :local:
 
-Source Code Location
---------------------
+Structure
+---------
 
-There are a several ways how to share your library with the whole world
-(see `examples <https://github.com/platformio/platformio-libmirror/tree/master/configs>`_).
+We recommend to use ``src`` folder for your C/C++ source files and ``include`` folder
+for your headers. You can also have nested sub-folders in ``src`` or ``include``.
 
-You can hold a lot of libraries (split into separated folders) inside one of
-the repository/archive. In this case, you need to specify ``include`` option of
-:ref:`libjson_export` field to relative path to your library's source code.
+**Example**
 
-At GitHub
-^^^^^^^^^
+.. code::
 
-**Recommended**
+    ├── examples
+    │   └── echo
+    ├── include
+    │   └── HelloWorld.h
+    ├── library.json
+    └── src
+        └── HelloWorld.cpp
 
-If a library source code is located at `GitHub <https://github.com>`_, then
-you **need to specify** only these fields in the :ref:`library_config`:
+Manifest
+--------
 
-* :ref:`libjson_name`
-* :ref:`libjson_version` (is not required, but highly recommended for new :ref:`librarymanager`)
-* :ref:`libjson_keywords`
-* :ref:`libjson_description`
-* :ref:`libjson_repository`
+A library package must contain a manifest. We recommend using :ref:`library_json`.
 
-|PIOAPICR| will populate the rest fields, like :ref:`libjson_authors` with an
-actual information from *GitHub*.
-
-Example, `DallasTemperature <https://platformio.org/lib/show/54/DallasTemperature/manifest>`_:
+**Example**
 
 .. code-block:: javascript
 
     {
-      "name": "DallasTemperature",
-      "keywords": "onewire, 1-wire, bus, sensor, temperature",
-      "description": "Arduino Library for Dallas Temperature ICs (DS18B20, DS18S20, DS1822, DS1820)",
+      "name": "HelloWorld",
+      "version": "1.0.0",
+      "description": "A \"Hello world\" program is a computer program that outputs \"Hello World\" (or some variant) on a display device",
+      "keywords": "planet, happiness, people",
       "repository":
       {
         "type": "git",
-        "url": "https://github.com/milesburton/Arduino-Temperature-Control-Library.git"
+        "url": "https://github.com/username/hello-world.git"
       },
       "authors":
       [
         {
-          "name": "Miles Burton",
-          "email": "miles@mnetcs.com",
-          "url": "http://www.milesburton.com",
+          "name": "John Smith",
+          "email": "me@john-smith.com",
+          "url": "https://www.john-smith/contact"
+        },
+        {
+          "name": "Andrew Smith",
+          "email": "me@andrew-smith.com",
+          "url": "https://www.andrew-smith/contact",
           "maintainer": true
-        },
-        {
-          "name": "Tim Newsome",
-          "email": "nuisance@casualhacker.net"
-        },
-        {
-          "name": "Guil Barros",
-          "email": "gfbarros@bappos.com"
-        },
-        {
-          "name": "Rob Tillaart",
-          "email": "rob.tillaart@gmail.com"
         }
       ],
-      "dependencies":
-      {
-        "name": "OneWire",
-        "authors": "Paul Stoffregen",
-        "frameworks": "arduino"
+      "license": "MIT",
+      "homepage": "https://www.helloworld.org/",
+      "dependencies": {
+        "ownername/print": "~1.3.0"
       },
-      "version": "3.7.7",
-      "frameworks": "arduino",
+      "frameworks": "*",
       "platforms": "*"
     }
 
-Under VCS (SVN/GIT)
-^^^^^^^^^^^^^^^^^^^
 
-|PIOAPICR| can operate with a library source code that is under *VCS* control.
-The list of **required** fields in the :ref:`library_config` will look like:
+Publishing
+----------
 
-* :ref:`libjson_name`
-* :ref:`libjson_keywords`
-* :ref:`libjson_description`
-* :ref:`libjson_authors`
-* :ref:`libjson_repository`
+You can publish a library to the `PlatformIO Registry <https://platformio.org/lib>`__
+using :ref:`cmd_package_publish` command. Every time when you modify a source code of
+a library you will need to increment the "version" field in :ref:`library_json` manifest
+and re-publish again.
 
-Example:
-
-.. code-block:: javascript
-
-    {
-        "name": "XBee",
-        "keywords": "xbee, protocol, radio",
-        "description": "Arduino library for communicating with XBees in API mode",
-        "authors":
-        {
-            "name": "Andrew Rapp",
-            "email": "andrew.rapp@gmail.com",
-            "url": "https://code.google.com/u/andrew.rapp@gmail.com/"
-        },
-        "repository":
-        {
-            "type": "git",
-            "url": "https://code.google.com/p/xbee-arduino/"
-        },
-        "frameworks": "arduino",
-        "platforms": "atmelavr"
-    }
-
-Self-hosted
-^^^^^^^^^^^
-
-You can manually archive (*Zip, Tar.Gz*) your library source code and host it
-in the *Internet*. Then you should specify the additional fields,
-like :ref:`libjson_version` and :ref:`libjson_downloadurl`. The final list
-of **required** fields in the :ref:`library_config` will look like:
-
-* :ref:`libjson_name`
-* :ref:`libjson_keywords`
-* :ref:`libjson_description`
-* :ref:`libjson_authors`
-* :ref:`libjson_version`
-* :ref:`libjson_downloadurl`
-
-.. code-block:: javascript
-
-    {
-        "name": "OneWire",
-        "keywords": "onewire, 1-wire, bus, sensor, temperature, ibutton",
-        "description": "Control devices (from Dallas Semiconductor) that use the One Wire protocol (DS18S20, DS18B20, DS2408 and etc)",
-        "authors":
-        {
-            "name": "Paul Stoffregen",
-            "url": "http://www.pjrc.com/teensy/td_libs_OneWire.html"
-        },
-        "version": "2.2",
-        "downloadUrl": "http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip",
-        "export": {
-            "include": "OneWire"
-        },
-        "frameworks": "arduino",
-        "platforms": "atmelavr"
-    }
-
-
-Register
---------
-
-The registration requirements:
-
-* A library must adhere to the library manifest specification - :ref:`library_config`, `library.properties <https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#library-metadata>`_ or `module.json <http://docs.yottabuild.org/reference/module.html>`_.
-* There must be public *HTTP* access to the library manifest file.
-
-Now, you can :ref:`register <cmd_lib_register>` your library and allow others
-to :ref:`install <cmd_lib_install>` it.
-
-
-.. _library_creating_examples:
+If the published library has an issue and you would like to remove it from the PlatformIO
+Registry, please use :ref:`cmd_package_unpublish` command.
 
 Examples
 --------
 
-Command:
-
-.. code-block:: bash
-
-    $ platformio lib register http://my.example.com/library.json
-    $ platformio lib register http://my.example.com/library.properties
-    $ platformio lib register http://my.example.com/module.json
-
-* `GitHub + detached release <https://platformio.org/lib/show/552/ACNoblex>`_
-* `Dependencies by author and framework <https://platformio.org/lib/show/3/PID-AutoTune>`_
-* `Multiple libraries in the one repository <https://github.com/jrowberg/i2cdevlib/tree/master/Arduino>`_
+See the published libraries in `PlatformIO Registry <https://platformio.org/lib>`__.

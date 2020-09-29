@@ -9,30 +9,24 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIOAPICR| replace:: *PlatformIO Library Registry Crawler*
-.. _library_config:
+.. _library_json:
 
 library.json
 ============
 
-``library.json`` is a manifest file of development library. It allows developers
-to keep project in own structure and define:
+``library.json`` is a manifest file of a library package. It allows developers
+to keep a project in its own structure and define:
 
-* location of source code
-* examples list
 * compatible frameworks and platforms
-* library dependencies
-* advanced build settings
+* external dependencies
+* advanced build settings.
 
-PlatformIO Library Crawler uses ``library.json`` manifest to extract
-source code from developer's location and keeps a cleaned library in own
-Library Registry.
-
-A data in ``library.json`` should be represented
-in `JSON-style <http://en.wikipedia.org/wiki/JSON>`_ via
-`associative array <http://en.wikipedia.org/wiki/Associative_array>`_
+A data in ``library.json`` should be represented in `JSON-style <http://en.wikipedia.org/wiki/JSON>`_
+via `associative array <http://en.wikipedia.org/wiki/Associative_array>`_
 (name/value pairs). An order doesn't matter. The allowable fields
 (names from pairs) are described below.
+
+You can validate ``library.json`` manifest file using :ref:`cmd_package_pack` command.
 
 .. contents:: Fields
     :local:
@@ -44,15 +38,35 @@ in `JSON-style <http://en.wikipedia.org/wiki/JSON>`_ via
 
 **Required** | Type: ``String`` | Max. Length: 50
 
-A name of the library.
+A name of a library.
 
-* Must be unique.
-* Should be slug style for simplicity, consistency and compatibility.
-  Example: *Arduino-SPI*
-* Title Case, Aa-z, can contain digits and dashes (but not start/end
-  with them).
-* Consecutive dashes are not allowed.
+* Must be unique
+* Should be slug style for simplicity, consistency, and compatibility.
+  Example: *HelloWorld*
+* Can contain a-z, digits, and dashes (but not start/end with them)
+* Consecutive dashes and [:;/,@<>] chars are not allowed.
 
+.. _libjson_version:
+
+``version``
+-----------
+
+*Required* | Type: ``String`` | Max. Length: 20
+
+A version of a current library source code. Can contain a-z, digits, dots or
+dash and should be `Semantic Versioning <http://semver.org>`__ compatible.
+
+Example:
+
+.. code-block:: javascript
+
+    "name": "Bar",
+    "version": "1.0.0",
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/foo/bar.git"
+    }
 
 .. _libjson_description:
 
@@ -65,80 +79,26 @@ The field helps users to identify and search for your library with a brief
 description. Describe the hardware devices (sensors, boards and etc.) which
 are suitable with it.
 
-
 .. _libjson_keywords:
 
 ``keywords``
 ------------
 
-**Required** | Type: ``String`` | Max. Length: 255
+**Required** | Type: ``String`` or ``Array`` | Max. Length: 255
 
 Used for search by keyword. Helps to make your library easier to discover
 without people needing to know its name.
 
 The keyword should be lowercased, can contain a-z, digits and dash (but not
 start/end with them). A list from the keywords can be specified with
-separator ``,``
-
-
-.. _libjson_authors:
-
-``authors``
------------
-
-*Required* if :ref:`libjson_repository` field is not defined | Type: ``Object``
-or ``Array``
-
-An author contact information
-
-* ``name`` Full name (**Required**)
-* ``email``
-* ``url`` An author's contact page
-* ``maintainer`` Specify "maintainer" status
-
-Examples:
-
-.. code-block:: javascript
-
-    "authors":
-    {
-        "name": "John Smith",
-        "email": "me@john-smith.com",
-        "url": "http://www.john-smith/contact"
-    }
-
-    ...
-
-    "authors":
-    [
-        {
-            "name": "John Smith",
-            "email": "me@john-smith.com",
-            "url": "http://www.john-smith/contact"
-        },
-        {
-            "name": "Andrew Smith",
-            "email": "me@andrew-smith.com",
-            "url": "http://www.andrew-smith/contact",
-            "maintainer": true
-        }
-    ]
-
-
-.. note::
-    You can omit :ref:`libjson_authors` field and define
-    :ref:`libjson_repository` field. Only *GitHub-based* repository is
-    supported now. In this case
-    |PIOAPICR| will use information from
-    `GitHub API Users <https://developer.github.com/v3/users/>`_.
-
+separator ``,`` or declared as Array.
 
 .. _libjson_repository:
 
 ``repository``
 --------------
 
-*Required* if :ref:`libjson_downloadurl` field is not defined | Type: ``Object``
+*Optional* | Type: ``Object``
 
 The repository in which the source code can be found. The field consists of the
 next items:
@@ -158,118 +118,71 @@ Example:
         "url": "https://github.com/foo/bar.git"
     }
 
-.. _libjson_version:
 
-``version``
+.. _libjson_authors:
+
+``authors``
 -----------
 
-*Required* if :ref:`libjson_repository` field is not defined | Type: ``String``
-| Max. Length: 20
+*Optional* | Type: ``Object`` or ``Array``
 
-A version of the current library source code. Can contain a-z, digits, dots or
-dash. `Semantic Versioning <http://semver.org>`_ IS RECOMMENDED.
+An author contact information
 
-:Case 1:
+* ``name`` Full name (**Required**)
+* ``email``
+* ``url`` An author's contact page
+* ``maintainer`` Specify "maintainer" status
 
-    :ref:`libjson_version` and :ref:`libjson_repository` fields are defined.
-    The :ref:`libjson_repository` is hosted on GitHub or Bitbucket.
-
-    |PIOAPICR| will lookup for release tag named as value of :ref:`libjson_version`
-    or with ``v`` prefix (you do not need to pass this ``v`` prefix to the
-    :ref:`libjson_version` field).
-
-:Case 2:
-
-    :ref:`libjson_version` and :ref:`libjson_repository` fields are defined
-    and :ref:`libjson_repository` does not contain tag/release with value of
-    :ref:`libjson_version`.
-
-    |PIOAPICR| will use the latest source code from :ref:`libjson_repository`
-    and link it with specified :ref:`libjson_version`. If :ref:`libjson_repository`
-    ``branch`` is not specified, then default branch will be used.
-    Also, if you push new commits to :ref:`libjson_repository`
-    and do not update :ref:`libjson_version` field, the library will not be
-    updated until you change the :ref:`libjson_version`.
-
-:Case 3:
-
-    :ref:`libjson_version` field is not defined and :ref:`libjson_repository`
-    field is defined.
-
-    |PIOAPICR| will use the
-    `VCS <http://en.wikipedia.org/wiki/Concurrent_Versions_System>`_ revision from
-    the latest commit as "current version". For example, ``13`` (*SVN*) or first
-    10 chars of *SHA* digest ``e4564b7da4`` (*Git*). If :ref:`libjson_repository`
-    ``branch`` is not specified, then default branch will be used.
-
-    We recommend to use :ref:`libjson_version` field and specify the real release
-    version and make appropriate tag in the :ref:`libjson_repository`. In other
-    case, users will receive updates for library with each new commit to
-    :ref:`libjson_repository`.
-
-.. note::
-    |PIOAPICR| updates library only if:
-        - the :ref:`libjson_version` is changed
-        - ``library.json`` is modified
-
-Example:
+Examples:
 
 .. code-block:: javascript
 
-    "repository":
+    "authors":
     {
-        "type": "git",
-        "url": "https://github.com/foo/bar.git"
-    },
-    "version": "1.0.0"
+        "name": "John Smith",
+        "email": "me@john-smith.com",
+        "url": "https://www.john-smith/contact"
+    }
 
+    ...
+
+    "authors":
+    [
+        {
+            "name": "John Smith",
+            "email": "me@john-smith.com",
+            "url": "https://www.john-smith/contact"
+        },
+        {
+            "name": "Andrew Smith",
+            "email": "me@andrew-smith.com",
+            "url": "https://www.andrew-smith/contact",
+            "maintainer": true
+        }
+    ]
+
+
+.. note::
+    If :ref:`libjson_authors` field is not defined, PlatformIO will try to fetch data
+    from VCS provider (Github, Gitlab, etc) if :ref:`libjson_repository` is declared.
 
 ``license``
 -----------
 
 *Optional* | Type: ``String``
 
-A license of the library. You can check
-`the full list of SPDX license IDs <https://spdx.org/licenses/>`_. Ideally you
-should pick one that is `OSI <https://opensource.org/licenses/alphabetical>`_
-approved.
+A SPDX license ID of the library. You can check `the full list of SPDX license IDs <https://spdx.org/licenses/>`_ (see "Identifier" column).
 
 .. code-block:: javascript
 
     "license": "Apache-2.0"
-
-.. _libjson_downloadurl:
-
-``downloadUrl``
----------------
-
-*Required* if :ref:`libjson_repository` field is not defined | Type: ``String``
-
-It is the *HTTP URL* to the archived source code of library. It should end
-with the type of archive (``.zip`` or ``.tar.gz``).
-
-.. note::
-
-    :ref:`libjson_downloadurl` has higher priority than
-    :ref:`libjson_repository`.
-
-Example with detached release/tag on GitHub:
-
-.. code-block:: javascript
-
-    "version": "1.0.0",
-    "downloadUrl": "https://github.com/foo/bar/archive/v1.0.0.tar.gz",
-    "include": "bar-1.0.0"
-
-See more ``library.json`` :ref:`library_creating_examples`.
 
 ``homepage``
 ------------
 
 *Optional* | Type: ``String`` | Max. Length: 255
 
-Home page of library (if is different from :ref:`libjson_repository` url).
-
+Home page of a library (if is different from :ref:`libjson_repository` url).
 
 .. _libjson_export:
 
@@ -278,10 +191,11 @@ Home page of library (if is different from :ref:`libjson_repository` url).
 
 *Optional* | Type: ``Object``
 
-Explain PlatformIO Library Crawler which content from the repository/archive
-should be exported as "source code" of the library. This option is useful if
-need to exclude extra data (test code, docs, images, PDFs, etc). It allows one to
-reduce size of the final archive.
+This option is useful if you need to exclude extra data (test code, docs, images, PDFs, etc).
+It allows one to reduce the size of the final archive.
+
+To check which files will be included in the final packages, please use
+:ref:`cmd_package_pack` command.
 
 Possible options:
 
@@ -291,38 +205,11 @@ Possible options:
 ``include``
 ~~~~~~~~~~~
 
-*Optional* | Type: ``String`` or ``Array`` |
-`Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
+*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
 
-If ``include`` field is a type of ``String``, then |PIOAPICR| will recognize
-it like a "relative path inside repository/archive to library source code".
-See example below where the only
-source code from the relative directory ``LibrarySourceCodeHere`` will be
-included.
+Export only files that matched declared patterns.
 
-.. code-block:: javascript
-
-    "include": "some/child/dir/LibrarySourceCodeHere"
-
-If ``include`` field is a type of ``Array``, then |PIOAPICR| firstly will
-apply ``exclude`` filter and then include only directories/files
-which match with ``include`` patterns.
-
-Example:
-
-.. code-block:: javascript
-
-    "export": {
-        "include":
-        [
-            "dir/*.[ch]pp",
-            "dir/examples/*",
-            "*/*/*.h"
-        ]
-    }
-
-
-Pattern Meaning
+**Pattern Meaning**
 
 .. list-table::
     :header-rows:  1
@@ -338,14 +225,24 @@ Pattern Meaning
     * - ``[!seq]``
       - matches any character not in seq
 
-See more ``library.json`` :ref:`library_creating_examples`.
+Example:
+
+.. code-block:: javascript
+
+    "export": {
+        "include":
+        [
+            "dir/*.[ch]pp",
+            "dir/examples/*",
+            "*/*/*.h"
+        ]
+    }
 
 
 ``exclude``
 ~~~~~~~~~~~
 
-*Optional* | Type: ``String`` or ``Array`` |
-`Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
+*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
 
 Exclude the directories and files which match with ``exclude`` patterns.
 
@@ -356,11 +253,17 @@ Exclude the directories and files which match with ``exclude`` patterns.
 
 *Optional* | Type: ``String`` or ``Array``
 
-A list with compatible frameworks. The available framework types are defined in
+A list with compatible frameworks. The available framework names are defined in
 the :ref:`frameworks` section.
 
-If the library is compatible with the all frameworks, then you can use ``*``
-symbol:
+Example:
+
+.. code-block:: javascript
+
+    "frameworks": ["espidf", "freertos"]
+
+If the library is compatible with the all frameworks, then do not declare this field or
+you use ``*`` symbol:
 
 .. code-block:: javascript
 
@@ -373,16 +276,21 @@ symbol:
 
 *Optional* | Type: ``String`` or ``Array``
 
-A list with compatible platforms. The available platform types are
-defined in :ref:`platforms` section.
+A list with compatible development platforms. The available platform name are defined
+in :ref:`platforms` section.
 
-If the library is compatible with the all platforms, then you can use ``*``
-symbol:
+Example:
+
+.. code-block:: javascript
+
+    "frameworks": ["atmelavr", "espressif8266"]
+
+If the library is compatible with the all platforms, then do not declare this field or
+use ``*`` symbol:
 
 .. code-block:: javascript
 
     "platforms": "*"
-
 
 .. _libjson_dependencies:
 
@@ -396,13 +304,13 @@ A list of dependent libraries. They will be installed automatically with
 
 Allowed requirements for dependent library:
 
-* ``name`` | Type: ``String``
-* ``version`` | Type: ``String``
-* ``authors`` | Type: ``String`` or ``Array``
-* ``frameworks`` | Type: ``String`` or ``Array``
-* ``platforms`` | Type: ``String`` or ``Array``
+* ``owner`` | Type: ``String`` – an owner name (username) from the PlatformIO Registry
+* ``name`` | Type: ``String`` – library name
+* ``version`` | Type: ``String`` – version or version range in SemVer format
+* ``frameworks`` | Type: ``String`` or ``Array`` – project compatible :ref:`frameworks`
+* ``platforms`` | Type: ``String`` or ``Array`` – project compatible :ref:`platforms`
 
-The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
+The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`__ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
 * ``1.2.3`` - an exact version number. Use only this exact version
@@ -417,6 +325,7 @@ The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
 The rest possible values including VCS repository URLs are documented in
 :ref:`cmd_lib_install` command.
 
+
 Example:
 
 .. code-block:: javascript
@@ -424,20 +333,23 @@ Example:
     "dependencies":
     [
         {
-            "name": "Library-Foo",
-            "authors":
-            [
-                "Jhon Smith",
-                "Andrew Smith"
-            ]
+            "owner": "bblanchon",
+            "name": "ArduinoJson",
+            "version": "^6.16.1"
         },
         {
-            "name": "Library-Bar",
-            "version": "~1.2.3"
+            "owner": "me-no-dev",
+            "name": "AsyncTCP",
+            "version": "*",
+            "platforms": ["espressif32"]
         },
         {
-            "name": "lib-from-repo",
+            "name": "external-repo",
             "version": "https://github.com/user/package.git#1.2.3"
+        },
+        {
+            "name": "external-zip",
+            "version": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
         }
     ]
 
@@ -445,39 +357,43 @@ A short definition of dependencies is allowed:
 
 .. code-block:: javascript
 
-    "dependencies": {
-        "mylib": "1.2.3",
-        "lib-from-repo": "githubuser/package"
+    "dependencies":
+    {
+        "bblanchon/ArduinoJson": "^6.16.1",
+        "me-no-dev/AsyncTCP": "*",
+        "external-repo": "https://github.com/user/package.git#1.2.3",
+        "external-zip": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
     }
 
-
-See more ``library.json`` :ref:`library_creating_examples`.
 
 .. _libjson_examples:
 
 ``examples``
 ------------
 
-*Optional* | Type: ``String`` or ``Array`` |
-`Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
+*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
 
 A list of example patterns. This field is predefined with default value:
 
 .. code-block:: javascript
 
     "examples": [
-        "[Ee]xamples/*.c",
-        "[Ee]xamples/*.cpp",
-        "[Ee]xamples/*.ino",
-        "[Ee]xamples/*.pde",
-        "[Ee]xamples/*/*.c",
-        "[Ee]xamples/*/*.cpp",
-        "[Ee]xamples/*/*.ino",
-        "[Ee]xamples/*/*.pde",
-        "[Ee]xamples/*/*/*.c",
-        "[Ee]xamples/*/*/*.cpp",
-        "[Ee]xamples/*/*/*.ino",
-        "[Ee]xamples/*/*/*.pde"
+        {
+            "name": "Hello",
+            "base": "examples/world",
+            "files": [
+                "platformio.ini",
+                "include/world.h",
+                "src/world.c",
+                "README",
+                "extra.py"
+            ]
+        },
+        {
+            "name": "Blink",
+            "base": "examples/blink",
+            "files": ["blink.cpp", "blink.h"]
+        }
     ]
 
 
@@ -515,8 +431,6 @@ details :ref:`projectconf_build_unflags`.
 
 *Optional* | Type: ``String``
 
-.. versionadded:: 4.0
-
 Custom location of library header files. A default value is ``include`` and
 means that folder is located in the root of a library.
 
@@ -524,8 +438,6 @@ means that folder is located in the root of a library.
 ~~~~~~~~~~
 
 *Optional* | Type: ``String``
-
-.. versionadded:: 4.0
 
 Custom location of library source code. A default value is ``src`` and
 means that folder is located in the root of a library.
@@ -536,7 +448,7 @@ means that folder is located in the root of a library.
 *Optional* | Type: ``String`` or ``Array``
 
 Specify which source files should be included/excluded from build process.
-The path in filter should be **relative from a root** of library.
+The path in filter should be relative to the ``srcDir`` option of a library.
 
 See syntax in :ref:`projectconf_src_filter`.
 
@@ -637,7 +549,7 @@ Create an archive (``*.a``, static library) from the object files and link it
 into a firmware (program). This is default behavior of PlatformIO Build System
 (``"libArchive": true``).
 
-Setting ``"libArchive": false`` will instruct PIO Build System to link object
+Setting ``"libArchive": false`` will instruct PlatformIO Build System to link object
 files directly (in-line). This could be useful if you need to override ``weak``
 symbols defined in framework or other libraries.
 
@@ -654,7 +566,7 @@ Specify Library Dependency Finder Mode. See :ref:`ldf_mode` for details.
 ``libCompatMode``
 ~~~~~~~~~~~~~~~~~
 
-*Optional* | Type: ``Integer``
+*Optional* | Type: ``String``
 
 Specify Library Compatibility Mode. See :ref:`ldf_compat_mode` for details.
 

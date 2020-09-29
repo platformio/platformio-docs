@@ -30,9 +30,9 @@ Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller 
   * - **Flash**
     - 1.94MB
   * - **RAM**
-    - 1MB
+    - 512KB
   * - **Vendor**
-    - `Teensy <https://www.pjrc.com/store/teensy40.html?utm_source=platformio&utm_medium=docs>`__
+    - `Teensy <https://www.pjrc.com/store/teensy40.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -117,4 +117,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

@@ -11,8 +11,8 @@
 
 .. _board_atmelavr_ATmega48P:
 
-ATmega8P/PA
-===========
+ATmega48P/PA
+============
 
 .. contents::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 512B
   * - **Vendor**
-    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega48P?utm_source=platformio&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega48P?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``ATmega48P`` ID for :ref:`projectconf_env_board` option in :ref:`pro
   platform = atmelavr
   board = ATmega48P
 
-You can override default ATmega8P/PA settings per build environment using
+You can override default ATmega48P/PA settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `ATmega48P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega48P.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -65,7 +65,28 @@ board manifest `ATmega48P.json <https://github.com/platformio/platform-atmelavr/
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega8P/PA board.
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further
+    instructions and configuration information.
+
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+ATmega48P/PA has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Compatible Tools
+    - On-board
+    - Default
+  * - :ref:`debugging_tool_simavr`
+    - Yes
+    - Yes
 
 Frameworks
 ----------
@@ -76,4 +97,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

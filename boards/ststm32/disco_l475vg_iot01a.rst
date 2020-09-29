@@ -11,8 +11,8 @@
 
 .. _board_ststm32_disco_l475vg_iot01a:
 
-ST DISCO-L475VG-IOT01A
-======================
+ST B-L475E-IOT01A Discovery kit
+===============================
 
 .. contents::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Discovery-L475E-IOT01A/?utm_source=platformio&utm_medium=docs>`__
+    - `ST <https://developer.mbed.org/platforms/ST-Discovery-L475E-IOT01A/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``disco_l475vg_iot01a`` ID for :ref:`projectconf_env_board` option in
   platform = ststm32
   board = disco_l475vg_iot01a
 
-You can override default ST DISCO-L475VG-IOT01A settings per build environment using
+You can override default ST B-L475E-IOT01A Discovery kit settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `disco_l475vg_iot01a.json <https://github.com/platformio/platform-ststm32/blob/master/boards/disco_l475vg_iot01a.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `disco_l475vg_iot01a.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-ST DISCO-L475VG-IOT01A supports the next uploading protocols:
+ST B-L475E-IOT01A Discovery kit supports the next uploading protocols:
 
 * ``blackmagic``
 * ``jlink``
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST DISCO-L475VG-IOT01A has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ST B-L475E-IOT01A Discovery kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -125,13 +125,19 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+
+    * - :ref:`framework_cmsis`
+      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency.
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
+
+    * - :ref:`framework_libopencm3`
+      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others

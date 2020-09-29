@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `MakerAsia <http://iot-bits.com/nano32-esp32-development-board?utm_source=platformio&utm_medium=docs>`__
+    - `MakerAsia <http://iot-bits.com/nano32-esp32-development-board?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -96,13 +96,13 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_espidf`
-      - Espressif IoT Development Framework. Official development framework for ESP32.
+      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
 
     * - :ref:`framework_pumbaa`
-      - Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory.
+      - Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory
 
     * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework. It aims to make embedded programming easy and portable.
+      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable

@@ -32,7 +32,7 @@ Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, ef
   * - **RAM**
     - 160KB
   * - **Vendor**
-    - `Maxim <https://www.maximintegrated.com/en/products/microcontrollers/MAX32625PICO.html?utm_source=platformio&utm_medium=docs>`__
+    - `Maxim <https://www.maximintegrated.com/en/products/microcontrollers/MAX32625PICO.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -76,4 +76,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices

@@ -19,7 +19,7 @@ TI MSP430
 
 MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 
-For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/msp/overview.page?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/msp/overview.page?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,11 +29,11 @@ For more detailed information please visit `vendor site <http://www.ti.com/lsds/
 Examples
 --------
 
-Examples are listed from `TI MSP430 development platform repository <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `TI MSP430 development platform repository <https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-timsp430/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-timsp430/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-timsp430/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -170,17 +170,17 @@ Packages
     * - Name
       - Description
 
-    * - `framework-energiamsp430 <http://energia.nu/reference/?utm_source=platformio&utm_medium=docs>`__
-      - Energia Wiring-based Framework (MSP430 Core)
+    * - `framework-energiamsp430 <http://energia.nu/reference/?utm_source=platformio.org&utm_medium=docs>`__
+      - Energia Wiring-based Framework for Texas Instruments MSP430 microcontrollers
 
-    * - `tool-dslite <http://www.ti.com/tool/UNIFLASH?utm_source=platformio&utm_medium=docs>`__
+    * - `tool-dslite <http://www.ti.com/tool/UNIFLASH?utm_source=platformio.org&utm_medium=docs>`__
       - Uniflash Standalone Flash Tool for TI Microcontrollers, Sitara Processors & SimpleLink devices
 
-    * - `tool-mspdebug <http://mspdebug.sourceforge.net/?utm_source=platformio&utm_medium=docs>`__
-      - MSPDebug
+    * - `tool-mspdebug <https://dlbeer.co.nz/mspdebug/?utm_source=platformio.org&utm_medium=docs>`__
+      - MSPDebug is a free debugger for use with MSP430 MCUs
 
-    * - `toolchain-timsp430 <http://sourceforge.net/projects/mspgcc/?utm_source=platformio&utm_medium=docs>`__
-      - msp-gcc
+    * - `toolchain-timsp430 <https://sourceforge.net/projects/mspgcc/?utm_source=platformio.org&utm_medium=docs>`__
+      - A port of the GNU C Compiler (GCC) and GNU Binutils (as, ld) for the embedded processor MSP430
 
 .. warning::
     **Linux Users**:
@@ -205,7 +205,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
 Boards
 ------
@@ -213,8 +213,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 TI
 ~~

@@ -32,7 +32,7 @@ Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-co
   * - **RAM**
     - 512MB
   * - **Vendor**
-    - `Raspberry Pi <https://www.raspberrypi.org?utm_source=platformio&utm_medium=docs>`__
+    - `Raspberry Pi <https://www.raspberrypi.org?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -76,4 +76,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_wiringpi`
-      - WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino "wiring" system.
+      - WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino 'wiring' system

@@ -32,7 +32,7 @@ Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dua
   * - **RAM**
     - 6MB
   * - **Vendor**
-    - `Sipeed <https://www.sipeed.com/?utm_source=platformio&utm_medium=docs>`__
+    - `Sipeed <https://www.sipeed.com/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -149,10 +149,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_kendryte-freertos-sdk`
       - Kendryte SDK with FreeRTOS support
+
+    * - :ref:`framework_kendryte-standalone-sdk`
+      - Kendryte Standalone SDK without OS support

@@ -19,7 +19,7 @@ Intel ARC32
 
 ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
-For more detailed information please visit `vendor site <http://www.intel.com/content/www/us/en/wearables/wearable-soc.html?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.intel.com/content/www/us/en/wearables/wearable-soc.html?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,11 +29,11 @@ For more detailed information please visit `vendor site <http://www.intel.com/co
 Examples
 --------
 
-Examples are listed from `Intel ARC32 development platform repository <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Intel ARC32 development platform repository <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-intel_arc32/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-curie-imu <https://github.com/platformio/platform-intel_arc32/tree/master/examples/arduino-curie-imu?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-intel_arc32/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
+* `arduino-curie-imu <https://github.com/platformio/platform-intel_arc32/tree/master/examples/arduino-curie-imu?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-intel_arc32/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-intel_arc32/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -76,14 +76,14 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (Intel ARC Core)
+    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework Intel ARC32 processor
 
-    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools?utm_source=platformio&utm_medium=docs>`__
-      - Genuino101 uploader
+    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Genuino101 uploader tool
 
-    * - `toolchain-intelarc32 <https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain?utm_source=platformio&utm_medium=docs>`__
-      - GCC for Intel ARC
+    * - `toolchain-intelarc32 <https://embarc.org/toolchain/?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC for Intel ARC processor
 
 .. warning::
     **Linux Users**:
@@ -108,7 +108,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
 Boards
 ------
@@ -116,8 +116,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 Intel
 ~~~~~

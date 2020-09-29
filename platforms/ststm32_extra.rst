@@ -20,12 +20,12 @@ Configuration
 Switching between Arduino cores
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are two different Arduino cores for STM32 microcontrollers: 
-STM32Duino and Arduino STM32 (maple). Both of them have been 
-developed independently, therefore, have different functionality and set of internal libraries. 
-By default, official STM32Duino core is used. Some of the boards support both cores. 
-To change the core you can use a ``board_build.core`` option that needs be added to 
-:ref:`projectconf_build_flags`:
+There are three different Arduino cores for STM32 microcontrollers: STM32Duino,
+Arduino STM32 (maple) and STM32L0. All of them have been developed independently,
+therefore, have different functionality and set of internal libraries. By default,
+official STM32Duino core is used (except cases when a board supports only one specific
+core). Some of the boards support all three cores. To change the core you can use a
+``board_build.core`` option that needs be added to :ref:`projectconf_build_flags`:
 
 An example of :ref:`projectconf` with ``maple`` core
 
@@ -66,10 +66,10 @@ configuration flags in :ref:`projectconf_build_flags` section of :ref:`projectco
 
     * - Name
       - Description
-    
+
     * - ``PIO_FRAMEWORK_ARDUINO_SERIAL_WITHOUT_GENERIC``
       - Enabled (no generic Serial)
-    
+
     * - ``PIO_FRAMEWORK_ARDUINO_SERIAL_DISABLED``
       - Disabled (no Serial support)
 
@@ -103,7 +103,7 @@ configuration flags in :ref:`projectconf_build_flags` section of :ref:`projectco
       - High Speed in Full Speed mode
 
 
-Exmaple:
+Example:
 
 .. code-block:: ini
 
@@ -128,10 +128,10 @@ configuration flags in :ref:`projectconf_build_flags` section of :ref:`projectco
 
     * - Name
       - Description
-    
+
     * - ``ENABLE_USB_SERIAL``
       - USB serial (CDC)
-    
+
     * - ``ENABLE_USB_MASS_STORAGE``
       - USB Mass Storage (MSC)
 
@@ -146,3 +146,52 @@ Example:
     board_build.core = maple
     build_flags = -D ENABLE_USB_MASS_STORAGE
 
+
+Arduino STM32L0 configuration system
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Arduino STM32L0 core has several options that can be configured using the next
+configuration flags in :ref:`projectconf_build_flags` section of :ref:`projectconf`:
+
+.. list-table:: USB Configuration
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - ``PIO_FRAMEWORK_ARDUINO_ENABLE_MASS_STORAGE``
+      - Serial + Mass Storage
+
+    * - ``PIO_FRAMEWORK_ARDUINO_ENABLE_HID``
+      - Serial + Keyboard + Mouse
+
+    * - ``PIO_FRAMEWORK_ARDUINO_ENABLE_MASS_STORAGE_HID``
+      - Serial + Mass Storage + Keyboard + Mouse
+
+    * - ``PIO_FRAMEWORK_ARDUINO_NO_USB``
+      - No USB
+
+
+.. list-table:: FS Configuration
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - ``PIO_FRAMEWORK_ARDUINO_FS_SDCARD``
+      - SDCARD (SPI)
+
+    * - ``PIO_FRAMEWORK_ARDUINO_FS_SFLASH``
+      - SFLASH (SPI)
+
+
+Example:
+
+.. code-block:: ini
+
+    [env:cricket_l082cz]
+    platform = ststm32
+    framework = arduino
+    board = cricket_l082cz
+    build_flags =
+      -D PIO_FRAMEWORK_ARDUINO_ENABLE_MASS_STORAGE

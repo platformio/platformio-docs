@@ -13,7 +13,8 @@ Tutorials
 ---------
 
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
-* `Video: Free Inline Debugging for ESP32 and Arduino Sketches <hhttps://www.youtube.com/watch?v=psMqilqlrRQ>`__
+* :ref:`tutorial_espressif32_espidf_debugging_unit_testing_analysis`
+* `Video: Free Inline Debugging for ESP32 and Arduino Sketches <https://www.youtube.com/watch?v=psMqilqlrRQ>`__
 
 Configuration
 -------------
@@ -164,17 +165,9 @@ flash chip (all data replaced with 0xFF bytes):
 
     > pio run -t erase
 
-Enable C++ exceptions
-~~~~~~~~~~~~~~~~~~~~~
-
-Please add ``-D PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS`` to :ref:`projectconf_build_flags`
-of :ref:`projectconf` to enable C++ exceptions for :ref:`framework_espidf`.
-
-See `project example <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-exceptions>`_.
-
 Partition Tables
 ~~~~~~~~~~~~~~~~
-You can create a custom partitions table (CSV) following `ESP32 Partition Tables <https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/storage/nvs_partition_gen.html>`_
+You can create a custom partitions table (CSV) following `ESP32 Partition Tables <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/partition-tables.html>`_
 documentation. PlatformIO uses **default partition tables** depending on a
 :ref:`projectconf_env_framework` type:
 
@@ -211,7 +204,7 @@ Sometimes you have a file with some binary or text data that you’d like to
 make available to your program - but you don’t want to reformat the file as
 C source.
 
-There are two options ``board_build.embed_txtfiles`` and ``board_build.embed_files`` 
+There are two options ``board_build.embed_txtfiles`` and ``board_build.embed_files``
 which can be used for embedding data. The only difference is that files specified
 in ``board_build.embed_txtfiles`` option are null-terminated in the final binary.
 
@@ -220,12 +213,12 @@ in ``board_build.embed_txtfiles`` option are null-terminated in the final binary
     [env:myenv]
     platform = espressif32
     board = ...
-    board_build.embed_txtfiles = 
+    board_build.embed_txtfiles =
       src/private.pem.key
       src/certificate.pem.crt
       src/aws-root-ca.pem
 
-The file’s contents will be added to the ``.rodata`` section in flash, and
+The file contents will be added to the ``.rodata`` section in flash, and
 are available via symbol names as follows:
 
 .. code-block:: c
@@ -241,61 +234,20 @@ The names are generated from the full name of the file. Characters ``/, .``,
 etc. are replaced with underscores. The ``_binary`` + ``_nested_folder`` prefix
 in the symbol name is added by "objcopy" and is the same for both text and binary files.
 
+.. note::
+    With the ESP-IDF framework symbol names should not contain path to the files, for example
+    ``_binary_private_pem_key_start`` instead of ``_binary_src_private_pem_key_start``.
+
 See full example with embedding Amazon AWS certificates:
 
 - https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-aws-iot
 
-ULP coprocessor programming
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you want to take measurements using ADC, internal temperature sensor or external
-I2C sensors, while the main processors are in deep sleep mode you need to use ULP
-coprocessor. At the moment ULP can be used only with the framework :ref:`framework_espidf`.
-
-First of all, to use ULP in your project you need to make sure that it is enabled in your
-``sdkconfig.h`` configuration file. The next two lines must be added:
-
-.. code-block:: cpp
-
-    #define CONFIG_ULP_COPROC_ENABLED 1
-    #define CONFIG_ULP_COPROC_RESERVE_MEM 1024
-
-Usually ``CONFIG_ULP_COPROC_RESERVE_MEM`` is already defined in the default
-``sdkconfig.h`` with value ``0``. You can modify this value to meet your requirements.
-
-
-Secondly, all ULP code, usually written in assembly in files with ``.S`` extension,
-must be placed into a separate directory with the name ``ulp`` in the root folder
-of your project. So your project structure should look like this:
-
-.. code-block:: bash
-
-    project_dir
-    ├── include
-    ├── lib
-    │   └── README
-    ├── test
-    ├── src
-    │    ├── main.c
-    │    └── sdkconfig.h
-    ├── ulp
-    │    └── ulp_code.S
-    └── platformio.ini
-
-
-See full examples with ULP coprocessor programming:
-
-- https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-adc
-- https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-ulp-pulse
-
-More details are located in the official ESP-IDF documentation -
-`ULP coprocessor programming <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable>`_.
 
 Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Create new project using :ref:`pioide` or initialize project using
-   :ref:`piocore` and :ref:`cmd_init` (if you have not initialized it yet)
+   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
@@ -378,7 +330,7 @@ For the full list with available options please run
 
 .. code-block:: bash
 
-    ~/.platformio/packages/tool-espotapy/espota.py -h
+    ~/.platformio/packages/framework-arduinoespressif32/tools/espota.py --help
 
     Usage: espota.py [options]
 
@@ -390,8 +342,12 @@ For the full list with available options please run
       Destination:
         -i ESP_IP, --ip=ESP_IP
                             ESP32 IP Address.
+        -I HOST_IP, --host_ip=HOST_IP
+                            Host IP Address.
         -p ESP_PORT, --port=ESP_PORT
-                            ESP32 ota Port. Default 8266
+                            ESP32 ota Port. Default 3232
+        -P HOST_PORT, --host_port=HOST_PORT
+                            Host server ota Port. Default random 10000-60000
 
       Authentication:
         -a AUTH, --auth=AUTH
@@ -406,6 +362,8 @@ For the full list with available options please run
       Output:
         -d, --debug         Show debug output. And override loglevel with debug.
         -r, --progress      Show progress output. Does not work for ArduinoIDE
+        -t TIMEOUT, --timeout=TIMEOUT
+                            Timeout to wait for the ESP32 to accept invitation
 
 .. warning::
     For windows users. To manage OTA check the ESP wifi network profile isn't checked on public
@@ -418,26 +376,27 @@ Using Arduino Framework with Staging version
 PlatformIO will install the latest Arduino Core for ESP32 from
 https://github.com/espressif/arduino-esp32. The `Git <https://git-scm.com>`_
 should be installed in a system. To update Arduino Core to the latest revision,
-please open :ref:`pioide` and navigate to ``PIO Home > Platforms > Updates``.
+please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Updates``.
 
 1.  Please install :ref:`pioide`
-2.  Initialize a new project, open :ref:`projectconf` and set
-    :ref:`projectconf_env_platform` to
-    ``https://github.com/platformio/platform-espressif32.git#feature/stage``.
+2.  Initialize a new project, open :ref:`projectconf` and specify the link to the
+    framework repository in :ref:`projectconf_env_platform_packages` section.
     For example,
 
     .. code-block:: ini
 
         [env:esp32dev]
-        platform = https://github.com/platformio/platform-espressif32.git#feature/stage
+        platform = espressif32
         board = esp32dev
         framework = arduino
+        platform_packages =
+            framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git
 
-3.  Try to build project
+3.  Try to build the project
 4.  If you see build errors, then try to build this project using the same
     ``stage`` with Arduino IDE
 5.  If it works with Arduino IDE but doesn't work with PlatformIO, then please
-    `file new issue <https://github.com/platformio/platform-espressif32/issuess>`_
+    `file a new issue <https://github.com/platformio/platform-espressif32/issuess>`_
     with attached information:
 
     - test project/files

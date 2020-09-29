@@ -32,7 +32,7 @@ Platform :ref:`platform_sifive`: SiFive brings the power of open source and soft
   * - **RAM**
     - 8GB
   * - **Vendor**
-    - `SiFive <https://www.sifive.com/boards/hifive-unleashed?utm_source=platformio&utm_medium=docs>`__
+    - `SiFive <https://www.sifive.com/boards/hifive-unleashed?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -90,6 +90,9 @@ HiFive Unleashed has on-board debug probe and **IS READY** for debugging. You do
   * - :ref:`debugging_tool_qemu`
     - Yes
     - 
+  * - :ref:`debugging_tool_renode`
+    - Yes
+    - 
 
 Frameworks
 ----------
@@ -98,6 +101,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform

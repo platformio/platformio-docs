@@ -11,24 +11,24 @@
 
 .. _pioaccount:
 
-PIO Account
-===========
+PlatformIO Account
+==================
 
-**PIO Account** is required for using:
+**PlatformIO Account** is required for:
 
+* `Community Forum <https://community.platformio.org/>`_
 * :ref:`pioremote`
-* Integration with :ref:`ide_cloud`
-
-A registration is **FREE**. No Credit Card Required.
+* :ref:`Managing organizations and owners of an organization <cmd_org>`
+* :ref:`Managing teams and team memberships <cmd_team>`
+* :ref:`Managing packages in the registry <cmd_package>`
+* :ref:`Managing resource (package) access <cmd_access>`.
 
 PlatformIO IDE
 --------------
 
-:ref:`pioide` has built-in UI in PIO Home to manage PIO Account. You can
-create a new account, reset your password or fetch an authentication token.
-
-.. image:: ../_static/images/home/pio-home-account-login.png
-
+:ref:`pioide` has built-in UI in PlatformIO Home to manage PlatformIO Account. You can
+create a new account, reset your password, update profile, or fetch an authentication
+token.
 
 CLI Guide
 ---------
@@ -36,4 +36,4 @@ CLI Guide
 .. toctree::
     :maxdepth: 2
 
-    ../userguide/account/index
+    ../core/userguide/account/index

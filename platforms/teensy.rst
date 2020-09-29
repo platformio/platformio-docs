@@ -19,7 +19,7 @@ Teensy
 
 Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
-For more detailed information please visit `vendor site <https://www.pjrc.com/teensy?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.pjrc.com/teensy?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -30,15 +30,15 @@ For more detailed information please visit `vendor site <https://www.pjrc.com/te
 Examples
 --------
 
-Examples are listed from `Teensy development platform repository <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Teensy development platform repository <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-hid-usb-mouse <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-hid-usb-mouse?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `mbed-blink <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-blink?utm_source=platformio&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-dsp?utm_source=platformio&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-events?utm_source=platformio&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-serial?utm_source=platformio&utm_medium=docs>`_
+* `mbed-blink <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-serial <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-events <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-hid-usb-mouse <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-hid-usb-mouse?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-dsp <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -97,7 +97,12 @@ Please click on board name for the further details.
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
+    * - :ref:`board_teensy_teensy41`
+      - IMXRT1062
+      - 600MHz
+      - 7.75MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - MKL26Z64
       - 48MHz
@@ -146,23 +151,23 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoteensy <http://arduino.cc/en/Reference/HomePage?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework
+    * - `framework-arduinoteensy <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Teensy boards
 
-    * - `framework-mbed <http://mbed.org?utm_source=platformio&utm_medium=docs>`__
-      - mbed Framework
+    * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Arm Mbed OS is a platform operating system designed for the internet of things
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio&utm_medium=docs>`__
-      - SEGGER J-Link Software and Documentation Pack
+    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+      - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-teensy <https://www.pjrc.com/teensy/loader.html?utm_source=platformio&utm_medium=docs>`__
-      - Teensy Loader
+    * - `tool-teensy <https://www.pjrc.com/teensy/loader.html?utm_source=platformio.org&utm_medium=docs>`__
+      - Upload tools for Teensy boards
 
-    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio&utm_medium=docs>`__
-      - avr-gcc
+    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Microchip AVR microcontrollers
 
-    * - `toolchain-gccarmnoneeabi <https://launchpad.net/gcc-arm-embedded?utm_source=platformio&utm_medium=docs>`__
-      - gcc-arm-embedded
+    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
     **Linux Users**:
@@ -191,10 +196,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_mbed`
-      - The mbed framework The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community.
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
 Boards
 ------
@@ -202,8 +207,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 Teensy
 ~~~~~~
@@ -252,7 +257,13 @@ Teensy
       - IMXRT1062
       - 600MHz
       - 1.94MB
-      - 1MB
+      - 512KB
+    * - :ref:`board_teensy_teensy41`
+      - External
+      - IMXRT1062
+      - 600MHz
+      - 7.75MB
+      - 512KB
     * - :ref:`board_teensy_teensylc`
       - External
       - MKL26Z64

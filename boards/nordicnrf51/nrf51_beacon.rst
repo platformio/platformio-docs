@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Nordic <https://www.nordicsemi.com/Software-and-Tools/Reference-Designs/nRF51822-Beacon-Kit?utm_source=platformio&utm_medium=docs>`__
+    - `Nordic <https://www.nordicsemi.com/Software-and-Tools/Reference-Designs/nRF51822-Beacon-Kit?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -112,10 +112,10 @@ Nordic Beacon Kit (PCA20006) has on-board debug probe and **IS READY** for debug
     - 
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
-    - Yes
+    - 
   * - :ref:`debugging_tool_jlink`
     - Yes
-    - 
+    - Yes
   * - :ref:`debugging_tool_stlink`
     - 
     - 
@@ -129,4 +129,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

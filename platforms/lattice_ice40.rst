@@ -19,7 +19,7 @@ Lattice iCE40
 
 The iCE40 family of ultra-low power, non-volatile FPGAs has five devices with densities ranging from 384 to 7680 Look-Up Tables (LUTs). In addition to LUT-based,low-cost programmable logic, these devices feature Embedded Block RAM (EBR), Non-volatile Configuration Memory (NVCM) and Phase Locked Loops (PLLs). These features allow the devices to be used in low-cost, high-volume consumer and system applications.
 
-For more detailed information please visit `vendor site <http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,10 +29,10 @@ For more detailed information please visit `vendor site <http://www.latticesemi.
 Examples
 --------
 
-Examples are listed from `Lattice iCE40 development platform repository <https://github.com/platformio/platform-lattice_ice40/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Lattice iCE40 development platform repository <https://github.com/platformio/platform-lattice_ice40/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `counter <https://github.com/platformio/platform-lattice_ice40/tree/master/examples/counter?utm_source=platformio&utm_medium=docs>`_
-* `leds <https://github.com/platformio/platform-lattice_ice40/tree/master/examples/leds?utm_source=platformio&utm_medium=docs>`_
+* `leds <https://github.com/platformio/platform-lattice_ice40/tree/master/examples/leds?utm_source=platformio.org&utm_medium=docs>`_
+* `counter <https://github.com/platformio/platform-lattice_ice40/tree/master/examples/counter?utm_source=platformio.org&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -75,10 +75,10 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-icestorm <http://www.clifford.at/icestorm/?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-icestorm <http://www.clifford.at/icestorm/?utm_source=platformio.org&utm_medium=docs>`__
       - Tools for analyzing and creating bitstream files for FPGA IceStorm
 
-    * - `toolchain-iverilog <http://iverilog.icarus.com?utm_source=platformio&utm_medium=docs>`__
+    * - `toolchain-iverilog <http://iverilog.icarus.com?utm_source=platformio.org&utm_medium=docs>`__
       - Verilog simulation and synthesis tool
 
 .. warning::
@@ -101,8 +101,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 FPGAwars
 ~~~~~~~~

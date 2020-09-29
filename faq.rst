@@ -42,32 +42,7 @@ Please refer to :ref:`projectconf_pio_build_dir`.
 Command completion in Terminal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Bash completion
-'''''''''''''''
-
-Bash completion support will complete subcommands and parameters. To enable
-Bash completion for `platformio` subcommands you need to put into your `.bashrc`:
-
-.. code-block:: bash
-
-    eval "$(_PLATFORMIO_COMPLETE=source platformio)"
-    eval "$(_PIO_COMPLETE=source pio)"
-
-ZSH completion
-''''''''''''''
-
-To enable ``zsh`` completion please run these commands:
-
-.. code-block:: bash
-
-    autoload bashcompinit && bashcompinit
-    eval "$(_PLATFORMIO_COMPLETE=source platformio)"
-    eval "$(_PIO_COMPLETE=source pio)"
-
-.. note::
-
-    For permanent command completion you need to place commands above to
-    ``~/.bashrc`` or ``~/.zshrc`` file.
+Please refer to :ref:`cmd_system_completion`.
 
 .. _faq_install_python:
 
@@ -77,10 +52,21 @@ Install Python Interpreter
 :ref:`piocore` is written in `Python <https://www.python.org/downloads/>`_ that
 is installed by default on the all popular OS except Windows.
 
-**Windows Users**, please `Download the latest Python <https://www.python.org/downloads/>`_
-and install it. **DON'T FORGET** to select ``Add Python to Path`` (see below), otherwise, ``python`` command will not be available.
+Please navigate to official website and `Download the latest Python <https://www.python.org/downloads/>`_
+and install it. Please **READ NOTES BELOW**.
 
-.. image:: _static/images/python-installer-add-path.png
+:macOS:
+  Please read the "Important Information" displayed during installation for information
+  about SSL/TLS certificate validation and the running the **"Install Certificates.command"**.
+
+  If you do not install SSL/TLS certificates, PlatformIO will not be able to download
+  dependent packages, libraries, and toolchains.
+
+:Windows:
+  Please select ``Add Python to Path`` (see below), otherwise, ``python`` command will
+  not be available.
+
+  .. image:: _static/images/python-installer-add-path.png
 
 .. _faq_convert_ino_to_cpp:
 
@@ -207,18 +193,18 @@ Troubleshooting
 Installation
 ~~~~~~~~~~~~
 
-Multiple PIO Cores in a system
-''''''''''''''''''''''''''''''
+Multiple PlatformIO Cores in a system
+'''''''''''''''''''''''''''''''''''''
 
 Multiple standalone :ref:`piocore` in a system could lead to the different
-issues. We highly recommend to keep one instance of PIO Core or use built-in
-PIO Core in :ref:`pioide`:
+issues. We highly recommend to keep one instance of PlatformIO Core or use built-in
+PlatformIO Core in :ref:`pioide`:
 
 * :ref:`ide_atom` - ``Menu PlatformIO: Settings > PlatformIO IDE > Use built-in PlatformIO Core``
 * :ref:`ide_vscode` - :ref:`ide_vscode_settings` > Set ``platformio-ide.useBuiltinPIOCore`` to ``true``.
 
 Finally, if you have a standalone :ref:`piocore` in a system, please open system
-Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PIO Core:
+Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PlatformIO Core:
 
 .. code-block:: bash
 
@@ -234,7 +220,7 @@ If you need to have :ref:`piocore` globally in a system, please
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 If you use :ref:`pioide`, please check in PlatformIO IDE Settings that
-"Use built-in PIO Core" is enabled.
+"Use built-in PlatformIO Core" is enabled.
 
 If you modify system environment variable ``PATH`` in your Bash/Fish/ZSH
 profile, please do not override global ``PATH``. This line
@@ -366,7 +352,7 @@ system operations. Another solution is to run :ref:`piocore` from a system termi
        # Change directory to PlatformIO Project where is located "platformio.ini"
        cd path/to/platformio/project
 
-       # Force PlatformIO to install PIO Home dependencies
+       # Force PlatformIO to install PlatformIO Home dependencies
        platformio home
 
        # Force PlatformIO to install toolchains

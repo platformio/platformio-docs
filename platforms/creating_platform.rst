@@ -11,19 +11,20 @@
 
 .. _platform_creating:
 
-Custom Development Platform
-===========================
+Custom Development Platforms
+============================
 
-*PlatformIO* was developed like a tool that may build the same source code
-for the different development platforms via single command :ref:`cmd_run`
+*PlatformIO* can build the same binary code under
+different host systems via the single command :ref:`cmd_run`
 without any dependent software or requirements.
 
-For this purpose *PlatformIO* uses own pre-configured platforms data:
-build scripts, toolchains, the settings for the most popular embedded
-boards and etc. These data are pre-built and packaged to the different
-``packages``. It allows *PlatformIO* to have multiple development platforms
-which can use the same packages(toolchains, frameworks), but have
-different/own build scripts, uploader and etc.
+A *manifest* describes how to produce binaries for a particular
+platform under one or multiple host systems by a set of build scripts,
+toolchains, the settings for the most popular embedded boards, etc.
+
+This guide explains how to write manifests, to support building for
+new development platforms.
+
 
 **Step-by-Step Manual**
 
@@ -34,25 +35,39 @@ different/own build scripts, uploader and etc.
 
 .. contents::
 
+Examples
+--------
+
+Please take a look at the source code of existing
+`PlatformIO Development Platforms <https://github.com/topics/platformio-platform>`_.
+
 .. _platform_creating_packages:
 
 Packages
 --------
 
-PlatformIO has own registry with pre-built packages for the most popular
-operating systems and you can use them in your manifest. These packages are
-stored in super-fast and reliably CDN storage provided by JFrog Bintray:
+Some tools are the same when compiling for several platforms, for
+example a common compiler. A *package* is some tool or framework that
+can be used when compiling for one or multiple platforms. Even if
+multiple platforms use the same package, the package only needs to be
+downloaded once. Since each package is pre-built for the different
+host systems (Windows, Mac, Linux), developers can get started without
+first compiling the tools.
 
-- https://bintray.com/platformio/dl-packages
+PlatformIO has a registry with pre-built packages for the most popular
+operating systems and you can use them in your platform
+manifest. Custom packages can be uploaded to the PlatformIO Registry using :ref:`cmd_package_publish` command.
 
 .. _platform_creating_manifest_file:
 
 Manifest File ``platform.json``
 -------------------------------
 
-See example with a manifest for packages:
+Each platform definition includes a *manifest file* with a particular
+format that is parsed by PlatformIO when handling projects using that
+platform.
 
-- http://dl.platformio.org/packages/manifest.json
+Here is an example ``platform.json`` for the fictitious platform "myplatform":
 
 .. code-block:: json
 
@@ -60,48 +75,14 @@ See example with a manifest for packages:
       "name": "myplatform",
       "title": "My Platform",
       "description": "My custom development platform",
-      "url": "http://example.com",
-      "homepage": "https://platformio.org/platforms/myplatform",
+      "homepage": "https://mycompany.com",
       "license": "Apache-2.0",
-      "engines": {
-        "platformio": "~3.0.0"
-      },
+      "keywords": ["keyword_1", "keyword_N"],
       "repository": {
         "type": "git",
         "url": "https://github.com/platformio/platform-myplatform.git"
       },
       "version": "0.0.0",
-      "packageRepositories": [
-        "https://dl.bintray.com/platformio/dl-packages/manifest.json",
-        "http://dl.platformio.org/packages/manifest.json",
-        {
-          "my_custom_package": [
-            {
-              "url": "http://dl.example.com/my_custom_package-darwin_x86_64-1.2.3.tar.gz",
-              "sha1": "bb7ddac56a314b5cb1926cc1790ae4de3a03e65c",
-              "version": "1.2.3",
-              "system": [
-                  "darwin_x86_64",
-                  "darwin_i386"
-              ]
-            },
-            {
-              "url": "http://dl.example.com/my_custom_package-linux_aarch64-1.2.3.tar.gz",
-              "sha1": "127ddac56a314b5cb1926cc1790ae4de3a03e65c",
-              "version": "1.2.3",
-              "system": "linux_aarch64"
-            }
-          ],
-          "framework-%FRAMEWORK_NAME_1%": [
-            {
-              "url": "http://dl.example.com/packages/framework-%FRAMEWORK_NAME_1%-1.10607.0.tar.gz",
-              "sha1": "adce2cd30a830d71cb6572575bf08461b7b73c07",
-              "version": "1.10607.0",
-              "system": "*"
-            }
-          ]
-        }
-      ],
       "frameworks": {
         "%FRAMEWORK_NAME_1%": {
           "package": "framework-%FRAMEWORK_NAME_1%",
@@ -115,6 +96,7 @@ See example with a manifest for packages:
       "packages": {
         "toolchain-gccarmnoneeabi": {
           "type": "toolchain",
+          "owner": "platformio",
           "version": ">=1.40803.0,<1.40805.0"
         },
         "framework-%FRAMEWORK_NAME_1%": {
@@ -132,6 +114,10 @@ See example with a manifest for packages:
           "optional": true,
           "version": "https://github.com/user/repo.git"
         }
+      },
+      "pythonPackages": {
+        "pypi-pkg-1": "1.2.3",
+        "pypi-pkg-2": ">=2.3, <3"
       }
     }
 
@@ -140,10 +126,12 @@ See example with a manifest for packages:
 Build Script ``main.py``
 ------------------------
 
-Platform's build script is based on a next-generation build tool named
-`SCons <http://www.scons.org>`_. PlatformIO has own built-in firmware builder
-``env.BuildProgram`` with the deep libraries search. Please look into a
-base template of ``main.py``.
+Each platform definition must include a ``main.py``.
+
+PlatformIO's build script is based on a next-generation build tool
+named `SCons <http://www.scons.org>`_. PlatformIO has its own built-in
+firmware builder ``env.BuildProgram`` with deep library search. Please
+see the following template as start for developing your own ``main.py``.
 
 .. code-block:: python
 
@@ -226,19 +214,26 @@ base template of ``main.py``.
 Installation
 ------------
 
-1. Create ``platforms`` directory in :ref:`projectconf_pio_core_dir` if it
-   doesn't exist.
-2. Create ``myplatform`` directory in ``platforms``
-3. Copy ``platform.json`` and ``builder/main.py`` files to ``myplatform`` directory.
-4. Search available platforms via :ref:`cmd_platform_search` command. You
-   should see ``myplatform`` platform.
-5. Install ``myplatform`` platform via :ref:`cmd_platform_install` command.
+Using the "myplatform" platform example above:
 
-Now, you can use ``myplatform`` for the :ref:`projectconf_env_platform`
+1. Create a ``platforms`` directory in :ref:`projectconf_pio_core_dir` if it
+   doesn't exist.
+2. Create a ``myplatform`` directory in ``platforms``
+3. Copy the ``platform.json`` and ``builder/main.py`` files to the ``myplatform`` directory.
+4. Search the available platforms via the :ref:`cmd_platform_search` command. You
+   should see the new ``myplatform`` platform.
+5. Install the ``myplatform`` platform via the :ref:`cmd_platform_install` command.
+
+Now, you can use ``myplatform`` as value for the :ref:`projectconf_env_platform`
 option in :ref:`projectconf`.
 
-Examples
---------
+Publishing
+----------
 
-Please take a look at the source code of existing
-`PlatformIO Development Platforms <https://github.com/topics/platformio-platform>`_.
+You can publish a development platform to the **PlatformIO Trusted Registry**
+using :ref:`cmd_package_publish` command. Other developers will be able to install it.
+Every time when you modify a source code of a development platform you will need to
+increment the "version" field in "platform.json" manifest and re-publish again.
+
+If the published development platform has an issue and you would like to remove it from
+the PlatformIO Trusted Registry, please use :ref:`cmd_package_unpublish` command.

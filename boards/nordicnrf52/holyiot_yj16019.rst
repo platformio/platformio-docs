@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `Holyiot <http://www.holyiot.com/eacp_view.asp?id=306&utm_source=platformio&utm_medium=docs>`__
+    - `Holyiot <http://www.holyiot.com/eacp_view.asp?id=306&utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -129,4 +129,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 243KB
   * - **Vendor**
-    - `Particle <https://docs.particle.io/boron?utm_source=platformio&utm_medium=docs>`__
+    - `Particle <https://docs.particle.io/boron?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -118,4 +118,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

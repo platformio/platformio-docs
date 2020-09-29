@@ -19,7 +19,7 @@ Atmel megaAVR
 
 8-bit MCUs Built for Real-time Control with Core Independent Peripherals combining intelligent hardware peripherals along with the low-power capability of an AVR core, megaAVR microcontrollers (MCUs) broaden the effectiveness of your real-time control systems.
 
-For more detailed information please visit `vendor site <https://www.microchip.com/design-centers/8-bit/avr-mcus/device-selection/atmega4809?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://www.microchip.com/design-centers/8-bit/avr-mcus/device-selection/atmega4809?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
@@ -29,12 +29,12 @@ For more detailed information please visit `vendor site <https://www.microchip.c
 Examples
 --------
 
-Examples are listed from `Atmel megaAVR development platform repository <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio&utm_medium=docs>`_:
+Examples are listed from `Atmel megaAVR development platform repository <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `arduino-blink <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-blink?utm_source=platformio&utm_medium=docs>`_
-* `arduino-external-libs <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-external-libs?utm_source=platformio&utm_medium=docs>`_
-* `arduino-internal-libs <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-internal-libs?utm_source=platformio&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/native-blink?utm_source=platformio&utm_medium=docs>`_
+* `arduino-blink <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `native-blink <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-internal-libs <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-external-libs <https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-external-libs?utm_source=platformio.org&utm_medium=docs>`_
 
 Stable and upstream versions
 ----------------------------
@@ -77,14 +77,14 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-megaavr <https://github.com/arduino/ArduinoCore-megaavr?utm_source=platformio&utm_medium=docs>`__
-      - Arduino Wiring-based Framework (megaAVR Core)
+    * - `framework-arduino-megaavr <https://github.com/arduino/ArduinoCore-megaavr.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip megaAVR microcontrollers
 
-    * - `tool-avrdude-megaavr <http://www.nongnu.org/avrdude/?utm_source=platformio&utm_medium=docs>`__
-      - AVRDUDE for megaAVR
+    * - `tool-avrdude-megaavr <http://savannah.nongnu.org/projects/avrdude?utm_source=platformio.org&utm_medium=docs>`__
+      - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of megaAVR microcontrollers
 
-    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio&utm_medium=docs>`__
-      - avr-gcc
+    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Microchip AVR microcontrollers
 
 .. warning::
     **Linux Users**:
@@ -109,7 +109,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
 Boards
 ------
@@ -117,8 +117,8 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by
-      horizontal.
+    * For more detailed ``board`` information please scroll the tables below by
+      horizontally.
 
 Arduino
 ~~~~~~~

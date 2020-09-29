@@ -17,9 +17,9 @@ GigaDevice GD32V SDK
 :Configuration:
   :ref:`projectconf_env_framework` = ``gd32vf103-sdk``
 
-GigaDevice GD32VF103 Firmware Library (SDK)
+GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
 
-For more detailed information please visit `vendor site <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
@@ -77,6 +77,12 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - :ref:`platform_gd32v`
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB
     * - :ref:`board_gd32v_wio_lite_risc-v`
       - :ref:`platform_gd32v`
       - GD32VF103CBT6
@@ -88,7 +94,7 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `GigaDevice GD32V SDK for GigaDevice GD32V <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `GigaDevice GD32V SDK for GigaDevice GD32V <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -107,7 +113,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 SeeedStudio
 ~~~~~~~~~~~
@@ -157,3 +163,10 @@ Sipeed
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
+      - :ref:`platform_gd32v`
+      - External
+      - GD32VF103C8T6
+      - 108MHz
+      - 64KB
+      - 20KB

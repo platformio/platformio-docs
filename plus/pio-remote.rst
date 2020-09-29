@@ -9,15 +9,19 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIORemote| replace:: **PIO Remote**
+.. |PIORemote| replace:: **PlatformIO Remote Development Solution**
 .. |PIOCloud| replace:: PlatformIO Cloud
 
 .. _pioremote:
 
-PIO Remote
-==========
+Remote Development
+==================
 
 **Your devices are always with you!**
+
+.. contents:: Contents
+    :local:
+    :depth: 1
 
 |PIORemote| allows you to work remotely with devices from
 *Anywhere In The World*. No matter where are you now! Run a small and
@@ -26,14 +30,13 @@ list active devices (wireless + wired), to upload firmware (program),
 to process remote unit tests, or to start remote debugging session via
 **Remote Serial Port Monitor**.
 
-Using PIO Remote you can share your devices with colleagues across your
+Using |PIORemote| you can share your devices with colleagues across your
 organization or friends. In combination with :ref:`ide_cloud`, you can create
 awesome things at any time when inspiration comes to you.
 
-You should have :ref:`pioaccount` to work with |PIORemote|.
+You should have :ref:`pioaccount` to use |PIORemote|.
 A registration is **FREE**.
 
-.. contents::
 
 Features
 --------
@@ -41,7 +44,7 @@ Features
 * :ref:`Remote Device Manager <cmd_remote_device>`
 * :ref:`Remote Serial Port Monitor <cmd_remote_device_monitor>`
 * :ref:`Remote Firmware Updates <cmd_remote_run>`
-* |PIORemote| Share
+* Share devices with your team members
 * Continuous Deployment
 * Continuous Delivery
 * Remote Unit Testing
@@ -93,7 +96,7 @@ Technology
 
 .. image:: ../_static/images/pio-remote-architecture.png
 
-|PIORemote| is an own `PIO Plus <https://pioplus.com/>`__ technology
+|PIORemote| is an own PlatformIO technology
 for remote solutions without external dependencies to
 operating system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
 The Server component (|PIOCloud|) plays a role of coupling link between
@@ -170,6 +173,6 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    ../userguide/remote/index
+    ../core/userguide/remote/index
 
 

@@ -171,10 +171,10 @@ Custom fuse values and upload flags (based on upload protocol) should be specifi
         -b$UPLOAD_SPEED
         -e
 
-MiniCore, MegaCore and MightyCore
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MiniCore, MegaCore, MightyCore, MajorCore and MicroCore
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``MiniCore``, ``MegaCore`` and ``MightyCore`` support dynamic fuses generation. Generated values are based on the next parameters:
+``MiniCore``, ``MegaCore``, ``MightyCore`, ``MajorCore` and ``MicroCore`` support dynamic fuses generation. Generated values are based on the next parameters:
 
   .. list-table::
     :header-rows:  1
@@ -183,32 +183,44 @@ MiniCore, MegaCore and MightyCore
       - Description
       - Default value
 
-    * - ``f_cpu``
+    * - ``board_build.f_cpu``
       - Specifies the clock frequencies in Hz. Used to determine what oscillator option to choose. A capital L has to be added to the end of the frequency number.
       - ``16000000L``
 
-    * - ``oscillator``
+    * - ``board_hardware.oscillator``
       - Specifies which oscillator is used ``internal`` or ``external``. Internal oscillator only works with ``f_cpu`` values ``8000000L`` and ``1000000L``
       - ``external``
 
-    * - ``uart``
+    * - ``board_hardware.uart``
       - Specifies the hardware UART port used for serial upload. can be ``uart0``, ``uart1``, ``uart2`` or ``uart3`` depending on the target. Use ``no_bootloader`` if you're not using a bootloader for serial upload.
       - ``uart0``
 
-    * - ``bod``
+    * - ``board_hardware.bod``
       - Specifies the hardware brown-out detection. Use ``disabled`` to disable brown-out detection.
       - ``2.7v``
 
-    * - ``eesave``
+    * - ``board_hardware.eesave``
       - Specifies if the EEPROM memory should be retained when uploading using a programmer. Use ``no`` to disable
       - ``yes``
+
+    * - ``board_hardware.ckout``
+      - Enables system clock output on targets that have this feature. The system clock will be output on a dedicated output pin. See the target datasheet for more information. Use ``Yes`` to enable
+      - ``no``
+
+    * - ``board_hardware.jtagen``
+      - Enables the JTAG programming and debugging interface for targets that supports JTAG. Use ``Yes`` to enable
+      - ``no``
+
+    * - ``board_hardware.cfd``
+      - Enables clock failure detection. Note that this feature is only available on ATmega324PB and ATmega328PB. Use ``Yes`` to enable CFD
+      - ``no``
 
 Valid BOD values:
 
   .. list-table::
     :header-rows:  1
 
-    * - ATmega8, ATmega8535/16/32, ATmega64/128
+    * - ATmega8, ATmega8515, ATmega8535/16/32, ATmega64/128
       - AT90CAN32/64/128
       - Other targets
 
@@ -283,23 +295,21 @@ Custom bootloader and corresponding fuses should be specified in :ref:`projectco
     board = uno
 
     board_bootloader.file = /path/to/custom/bootloader.hex
-    board_bootloader.low_fuses = 0xFF
-    board_bootloader.high_fuses = 0xDE
-    board_bootloader.extended_fuses = 0xFD
+    board_bootloader.lfuse = 0xFF
+    board_bootloader.hfuse = 0xDE
+    board_bootloader.efuse = 0xFD
     board_bootloader.lock_bits = 0x0F
     board_bootloader.unlock_bits = 0x3F
 
-
-https://github.com/MCUdude/platformio-docs
-
-``MiniCore``, ``MegaCore`` and ``MightyCore`` have a wide variety of precompiled bootloaders. Bootloader binary is dynamically selected according to the hardware parameters: ``f_cpu``, ``oscillator``, ``upload_speed``:
+``MiniCore``, ``MegaCore``, ``MightyCore`` and ``MajorCore`` have a wide variety of precompiled bootloaders. Bootloader binaries are dynamically selected according to the hardware parameters ``f_cpu``, ``oscillator``, ``uart`` and ``upload_speed``.
+For a complete table with all available baud rates, see the `Optiboot flash repo <https://github.com/MCUdude/optiboot_flash>`_. Here is a table with recommended baud rates for different clock frequencies:
 
   .. list-table::
     :header-rows:  1
 
     * - Frequency
-      - Oscillator
-      - Upload Speed
+      - Oscillator type
+      - Recommended upload speed
 
     * - ``20000000L``
       - external
@@ -333,9 +343,17 @@ https://github.com/MCUdude/platformio-docs
       - external
       - ``115200``
 
+    * - ``4000000L``
+      - external
+      - ``9600``
+
     * - ``3686400L``
       - external
       - ``115200``
+
+    * - ``2000000L``
+      - external
+      - ``9600``
 
     * - ``1843200L``
       - external

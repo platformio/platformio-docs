@@ -11,20 +11,21 @@
 
 .. _framework_espidf:
 
-ESP-IDF
-=======
+Espressif IoT Development Framework
+===================================
 
 :Configuration:
   :ref:`projectconf_env_framework` = ``espidf``
 
-Espressif IoT Development Framework. Official development framework for ESP32.
+ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
 
-For more detailed information please visit `vendor site <https://github.com/espressif/esp-idf?utm_source=platformio&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents
     :local:
     :depth: 1
+.. include:: espidf_extra.rst
 
 Debugging
 ---------
@@ -95,6 +96,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_az-delivery-devkit-v4`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_featheresp32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -120,6 +127,12 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_fm-devkit`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_pico32`
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
@@ -245,6 +258,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -264,6 +283,12 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
@@ -340,7 +365,7 @@ Please click on board name for the further details.
 Examples
 --------
 
-* `ESP-IDF for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio&utm_medium=docs>`_
+* `Espressif IoT Development Framework for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -359,7 +384,7 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
       `PlatformIO Boards Explorer <https://platformio.org/boards>`_
-    * For more detailed ``board`` information please scroll tables below by horizontal.
+    * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 AI Thinker
 ~~~~~~~~~~
@@ -381,6 +406,27 @@ AI Thinker
       - 240MHz
       - 4MB
       - 320KB
+
+AZ-Delivery
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_az-delivery-devkit-v4`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
 
 Adafruit
 ~~~~~~~~
@@ -628,7 +674,7 @@ Espressif
       - RAM
     * - :ref:`board_espressif32_pico32`
       - :ref:`platform_espressif32`
-      - No
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -1089,6 +1135,48 @@ Pycom Ltd.
       - 4MB
       - 1.25MB
 
+Qmobot LLP
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_qchip`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+SG-O
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sg-o_airMon`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Silicognition
 ~~~~~~~~~~~~~
 
@@ -1166,6 +1254,13 @@ TTGO
       - Flash
       - RAM
     * - :ref:`board_espressif32_ttgo-lora32-v1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v2`
       - :ref:`platform_espressif32`
       - External
       - ESP32

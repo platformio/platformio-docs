@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **RAM**
     - 256KB
   * - **Vendor**
-    - `ElectronutLabs <https://docs.electronut.in/papyr?utm_source=platformio&utm_medium=docs>`__
+    - `ElectronutLabs <https://docs.electronut.in/papyr?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -99,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ElectronutLabs Papyr does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+ElectronutLabs Papyr has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -108,7 +108,7 @@ ElectronutLabs Papyr does not have on-board debug probe and **IS NOT READY** for
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
+    - Yes
     - Yes
   * - :ref:`debugging_tool_cmsis-dap`
     - 
@@ -129,4 +129,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind.
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

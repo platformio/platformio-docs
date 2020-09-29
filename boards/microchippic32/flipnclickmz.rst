@@ -32,7 +32,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
   * - **RAM**
     - 512KB
   * - **Vendor**
-    - `MikroElektronika <https://shop.mikroe.com/flipclick-pic32mz?utm_source=platformio&utm_medium=docs>`__
+    - `MikroElektronika <https://shop.mikroe.com/flipclick-pic32mz?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -76,4 +76,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences

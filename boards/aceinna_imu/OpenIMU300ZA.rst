@@ -32,7 +32,7 @@ Platform :ref:`platform_aceinna_imu`: Open-source, embedded development platform
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `Aceinna <https://www.aceinna.com/inertial-systems/?utm_source=platformio&utm_medium=docs>`__
+    - `Aceinna <https://www.aceinna.com/inertial-systems/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

@@ -32,7 +32,7 @@ Platform :ref:`platform_gd32v`: The GigaDevice GD32V device is a 32-bit general-
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Sipeed <https://www.sipeed.com/?utm_source=platformio&utm_medium=docs>`__
+    - `Sipeed <https://www.sipeed.com/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -137,7 +137,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_gd32vf103-sdk`
-      - GigaDevice GD32VF103 Firmware Library (SDK)
+      - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package

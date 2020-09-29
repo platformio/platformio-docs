@@ -11,32 +11,32 @@
 
 .. _board_creating:
 
-Custom Embedded Board
-=====================
+Custom Embedded Boards
+======================
 
-*PlatformIO* has pre-built settings for the most popular embedded boards. This
-list is available:
+*PlatformIO* has pre-built settings for many popular embedded
+boards. The list of these boards is available as a web page at
+`PlatformIO Boards Explorer <https://platformio.org/boards>`_ or
+through the CLI command :ref:`cmd_boards`.
 
-* `Embedded Boards Explorer <https://platformio.org/boards>`_ (Web)
-* :ref:`cmd_boards` (CLI command)
-
-Nevertheless, PlatformIO allows one to create own board or override existing
-board's settings. All data is declared using
-`JSON-style <http://en.wikipedia.org/wiki/JSON>`_ via
-`associative array <http://en.wikipedia.org/wiki/Associative_array>`_
-(name/value pairs).
+Custom boards can also be defined from scratch or by overriding settings
+of existing boards. All data is declared using the `JSON syntax
+<http://en.wikipedia.org/wiki/JSON>`_ via `associative array
+<http://en.wikipedia.org/wiki/Associative_array>`_ name/value pairs.
 
 .. contents::
 
 JSON Structure
 --------------
 
-The key fields:
+The key fields are:
 
-* ``build`` data will be used by :ref:`platforms` and :ref:`frameworks` builders
-* ``frameworks`` is the list with supported :ref:`frameworks`
+* ``build`` data is handed over to the :ref:`platforms` and :ref:`frameworks` builders
+* ``frameworks`` is the list with supported :ref:`frameworks`. Each working environment for each project that uses the board will choose one of the frameworks declared here.
 * ``platform`` name of :ref:`platforms`
 * ``upload`` upload settings which depend on the ``platform``
+
+For details, see existing boards as examples, available under ``.platformio/platforms/*/boards/``.
 
 .. code-block:: json
 
@@ -57,6 +57,7 @@ The key fields:
         "mcu": "%MCU_TYPE_HERE%"
       },
       "frameworks": ["%LIST_WITH_SUPPORTED_FRAMEWORKS%"],
+      "platforms": ["%LIST_WITH_COMPATIBLE_PLATFORMS%"]
       "name": "My Test Board",
       "upload": {
         "maximum_ram_size": 2048,
