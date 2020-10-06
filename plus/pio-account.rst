@@ -28,7 +28,7 @@ PlatformIO IDE
 
 :ref:`pioide` has built-in UI in PlatformIO Home to manage PlatformIO Account. You can
 create a new account, reset your password, update profile, or fetch an authentication
-token.
+token. This UI must be used to login with OAuth.
 
 CLI Guide
 ---------
