@@ -55,7 +55,7 @@ Examples
 
 .. code::
 
-    > pio platformio config
+    > pio project config
     Computed project configuration for Tasmota Project
 
     platformio
