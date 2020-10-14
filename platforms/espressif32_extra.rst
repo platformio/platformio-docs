@@ -390,7 +390,7 @@ please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Update
         board = esp32dev
         framework = arduino
         platform_packages =
-            framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git
+            platformio/framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git
 
 3.  Try to build the project
 4.  If you see build errors, then try to build this project using the same

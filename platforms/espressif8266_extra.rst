@@ -576,7 +576,7 @@ please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Update
         board = nodemcuv2
         framework = arduino
         platform_packages =
-            framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
+            platformio/framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
 
 3.  Try to build the project
 4.  If you see build errors, then try to build this project using the same
