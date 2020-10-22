@@ -20,6 +20,11 @@ Configuration
 .. contents::
     :local:
 
+Articles
+~~~~~~~~
+
+* `Enabling PlatformIO and Zephyr on custom hardware <https://piolabs.com/blog/engineering/platformio-zephyr-custom-hardware.html>`__
+
 Project Structure
 ~~~~~~~~~~~~~~~~~
 
