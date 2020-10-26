@@ -11,8 +11,8 @@
 
 .. _cmd_access_public:
 
-platformio access public
-========================
+pio access public
+=================
 
 .. versionadded:: 5.0
 
@@ -33,7 +33,7 @@ Set a resource to be either publicly accessible.
 Options
 ~~~~~~~
 
-.. program:: platformio access public
+.. program:: pio access public
 
 .. option::
     --urn-type

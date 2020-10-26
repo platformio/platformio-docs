@@ -134,7 +134,7 @@ Test results
 
 .. code::
 
-    > platformio test -e uno --verbose
+    > pio test -e uno --verbose
 
     Verbose mode can be enabled via `-v, --verbose` option
     Collected 1 items

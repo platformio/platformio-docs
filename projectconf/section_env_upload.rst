@@ -87,8 +87,8 @@ A protocol that "uploader" tool uses to talk to a board. Please check
 
 .. note::
     ``upload_protocol = custom`` allows one to use a custom ``upload_command`` - see below.
-    
-    
+
+
 
 .. _projectconf_upload_speed:
 
@@ -163,7 +163,7 @@ Default upload commands are declared in ``build/main.py`` script file of
   Please note that you can use build variables in ``upload_command``, such as
   PlatformIO project folders and other runtime configuration. A list with
   build variables are available by running
-  ``platformio run --target envdump`` command.
+  ``pio run --target envdump`` command.
 
 **Examples**
 
@@ -204,7 +204,7 @@ Default upload commands are declared in ``build/main.py`` script file of
         platform = atmelavr
         framework = arduino
         board = uno
-        upload_protocol = custom        
+        upload_protocol = custom
         upload_flags =
             -C
             $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
@@ -223,5 +223,5 @@ Default upload commands are declared in ``build/main.py`` script file of
         platform = ststm32
         framework = stm32cube
         board = bluepill_f103c6
-        upload_protocol = custom        
+        upload_protocol = custom
         upload_command = $PROJECT_PACKAGES_DIR/tool-stlink/st-flash write $SOURCE 0x8000000

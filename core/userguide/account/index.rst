@@ -11,8 +11,8 @@
 
 .. _cmd_account:
 
-platformio account
-==================
+pio account
+===========
 
 CLI helper command for :ref:`pioaccount`.
 
@@ -21,8 +21,7 @@ To print all available commands and options use:
 .. code-block:: bash
 
     pio account --help
-    platformio account --help
-    platformio account COMMAND --help
+    pio account COMMAND --help
 
 
 .. toctree::

@@ -11,8 +11,8 @@
 
 .. _cmd_system_prune:
 
-platformio system prune
-=======================
+pio system prune
+================
 
 .. versionadded:: 5.0
 
@@ -23,7 +23,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio system prune
     pio system prune
 
 Description
@@ -38,7 +37,7 @@ Remove unused data:
 Options
 -------
 
-.. program:: platformio system prune
+.. program:: pio system prune
 
 .. option::
     --force, -f
@@ -50,7 +49,7 @@ Examples
 
 .. code::
 
-    > platformio system prune
+    > pio system prune
 
     WARNING! This will remove:
      - cached API requests

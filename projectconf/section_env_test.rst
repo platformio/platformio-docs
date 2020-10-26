@@ -30,7 +30,7 @@ Type: ``String (Pattern)`` | Multiple: ``Yes``
 Process only the :ref:`unit_testing` tests where the name matches specified
 patterns.
 
-Also, you can filter some tests using :option:`platformio test --filter` command.
+Also, you can filter some tests using :option:`pio test --filter` command.
 
 .. list-table::
     :header-rows:  1
@@ -66,7 +66,7 @@ Type: ``String (Pattern)`` | Multiple: ``Yes``
 
 Ignore :ref:`unit_testing` tests where the name matches specified patterns.
 
-Also, you can ignore some tests using :option:`platformio test --ignore` command.
+Also, you can ignore some tests using :option:`pio test --ignore` command.
 
 .. list-table::
     :header-rows:  1

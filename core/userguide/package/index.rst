@@ -11,8 +11,8 @@
 
 .. _cmd_package:
 
-platformio package
-==================
+pio package
+===========
 
 Manage packages in the registry.
 
@@ -20,8 +20,8 @@ To print all available commands and options use:
 
 .. code-block:: bash
 
-    platformio package --help
-    platformio package COMMAND --help
+    pio package --help
+    pio package COMMAND --help
 
 
 .. toctree::

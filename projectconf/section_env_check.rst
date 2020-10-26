@@ -54,7 +54,7 @@ included/excluded from the check process. `GLOB Patterns <http://en.wikipedia.or
 :ref:`projectconf_pio_src_dir` and :ref:`projectconf_pio_include_dir` folders are checked
 by default.
 
-Another option for filtering source files is :option:`platformio check --pattern` command.
+Another option for filtering source files is :option:`pio check --pattern` command.
 
 **Example**
 
@@ -81,7 +81,7 @@ when you want to adjust the check process to fit your project requirements.
 By default, the flags are passed to all tools specified in :ref:`projectconf_check_tool`
 section. To set individual flags, define tool name at the beginning of the line.
 
-Another option for adding flags is :option:`platformio check --flags` command.
+Another option for adding flags is :option:`pio check --flags` command.
 
 **Example**
 
@@ -107,7 +107,7 @@ Type: ``String`` | Multiple: ``Yes`` | Default: ``low, medium, high``
 This option allows specifying the :ref:`check_severity` types which will
 be reported by the :ref:`check_tools`.
 
-Another option for filtering source files is :option:`platformio check --severity` command.
+Another option for filtering source files is :option:`pio check --severity` command.
 
 **Example**
 

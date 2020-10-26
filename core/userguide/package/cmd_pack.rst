@@ -11,8 +11,8 @@
 
 .. _cmd_package_pack:
 
-platformio package pack
-=======================
+pio package pack
+================
 
 .. versionadded:: 5.0
 
@@ -24,7 +24,6 @@ Usage
 .. code-block:: bash
 
     pio package pack [<source directory, tar.gz or zip>] [OPTIONS]
-    platformio package pack [<source directory, tar.gz or zip>] [OPTIONS]
 
 Description
 -----------
@@ -51,7 +50,7 @@ See a `manifest validation scheme <https://github.com/platformio/platformio-core
 Options
 ~~~~~~~
 
-.. program:: platformio package pack
+.. program:: pio package pack
 
 .. option::
     -o, --output

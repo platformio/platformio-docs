@@ -11,8 +11,8 @@
 
 .. _cmd_remote_test:
 
-platformio remote test
-======================
+pio remote test
+===============
 
 Helper command for remote :ref:`unit_testing`.
 
@@ -23,11 +23,10 @@ Usage
 
 .. code-block:: bash
 
-    platformio remote test [OPTIONS]
     pio remote test [OPTIONS]
 
     # run tests on specified PlatformIO Remote Agent
-    platformio remote --agent NAME test [OPTIONS]
+    pio remote --agent NAME test [OPTIONS]
 
 Description
 -----------
@@ -41,12 +40,12 @@ in :ref:`projectconf`.
 Options
 -------
 
-.. program:: platformio remote test
+.. program:: pio remote test
 
 .. option::
     -e, --environment
 
-Process specified environments. More details :option:`platformio run --environment`
+Process specified environments. More details :option:`pio run --environment`
 
 .. option::
     -i, --ignore
@@ -74,7 +73,7 @@ environment, please take a look at :ref:`projectconf_test_ignore` option from
     * - ``[!seq]``
       - matches any character not in seq
 
-For example, ``platformio remote test --ignore "mytest*" -i "test[13]"``
+For example, ``pio remote test --ignore "mytest*" -i "test[13]"``
 
 .. option::
     --upload-port
@@ -106,7 +105,7 @@ By default, :ref:`pioremote` processes project on a host machine and deploy
 final testing firmware (program) to remote device (embedded board).
 
 If you need to process project on remote machine, please use
-:option:`platformio remote test --force-remote` option. In this case,
+:option:`pio remote test --force-remote` option. In this case,
 :ref:`pioremote` will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.
 

@@ -162,7 +162,7 @@ You can inject the built-in variables into your build flags, such as:
 
 See the `full list of PlatformIO variables <https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py#L99:L120>`_.
 
-Please use target ``envdump`` for the :option:`platformio run --target`
+Please use target ``envdump`` for the :option:`pio run --target`
 command to see ALL variable values for a build environment.
 
 .. _projectconf_dynamic_build_flags:
@@ -293,7 +293,7 @@ Type: ``String`` | Multiple: ``Yes``
 A list of targets which will be processed by the :ref:`cmd_run` command by
 default. You can enter more than one target, if separated by comma+space **", "**.
 
-Please follow to :option:`platformio run --list-targets` documentation for the other
+Please follow to :option:`pio run --list-targets` documentation for the other
 targets.
 
 **Examples**
@@ -311,14 +311,14 @@ targets.
 
 
 **Tip!** You can use these targets like an option to
-:option:`platformio run --target` command. For example:
+:option:`pio run --target` command. For example:
 
 .. code-block:: bash
 
     # clean project
-    platformio run -t clean
+    pio run -t clean
 
     # dump current build environment
-    platformio run --target envdump
+    pio run --target envdump
 
 When no targets are defined, *PlatformIO* will build only sources by default.

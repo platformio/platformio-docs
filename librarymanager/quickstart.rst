@@ -27,9 +27,9 @@ There are 3 options how to find/manage libraries:
 * PlatformIO Core :ref:`Command Line Interface <cmd_lib_search>`
 
 You can manage different library storages using
-:option:`platformio lib --global` or  :option:`platformio lib --storage-dir`
+:option:`pio lib --global` or  :option:`pio lib --storage-dir`
 options. If you change current working directory in terminal to project folder,
-then :ref:`platformio lib <cmd_lib>` command will manage automatically dependency
+then :ref:`pio lib <cmd_lib>` command will manage automatically dependency
 storage in :ref:`projectconf_pio_libdeps_dir`.
 
 Project dependencies

@@ -11,8 +11,8 @@
 
 .. _cmd_team_destroy:
 
-platformio team destroy
-=======================
+pio team destroy
+================
 
 .. versionadded:: 5.0
 

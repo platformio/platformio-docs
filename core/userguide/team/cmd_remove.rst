@@ -11,8 +11,8 @@
 
 .. _cmd_team_remove:
 
-platformio team remove
-======================
+pio team remove
+===============
 
 .. versionadded:: 5.0
 

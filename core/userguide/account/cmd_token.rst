@@ -11,8 +11,8 @@
 
 .. _cmd_account_token:
 
-platformio account token
-===========================
+pio account token
+=================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio account token
     pio account token
 
 Description
@@ -36,7 +35,7 @@ PlatformIO handles Personal Authentication Token from environment variable
 Options
 ~~~~~~~
 
-.. program:: platformio account token
+.. program:: pio account token
 
 .. option::
     --regenerate

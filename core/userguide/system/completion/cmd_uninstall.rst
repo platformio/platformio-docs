@@ -11,8 +11,8 @@
 
 .. _cmd_system_completion_uninstall:
 
-platformio system completion uninstall
-======================================
+pio system completion uninstall
+===============================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio system completion uninstall [OPTIONS]
     pio system completion uninstall [OPTIONS]
 
 
@@ -33,7 +32,7 @@ Uninstall shell completion files or code.
 Options
 ~~~~~~~
 
-.. program:: platformio system completion uninstall
+.. program:: pio system completion uninstall
 
 .. option::
     --shell

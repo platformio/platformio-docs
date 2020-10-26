@@ -57,7 +57,7 @@ This variant is default choice for native PlatformIO projects:
 
     test:
         override:
-            - platformio run -e <ID_1> -e <ID_2> -e <ID_N>
+            - pio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
 Using :ref:`cmd_ci` command
@@ -76,9 +76,9 @@ and boards from command line interface:
 
     test:
         override:
-            - platformio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
-            - platformio ci examples/file.ino --board=<ID_1> --board=<ID_2> --board=<ID_N>
-            - platformio ci path/to/test/directory --board=<ID_1> --board=<ID_2> --board=<ID_N>
+            - pio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
+            - pio ci examples/file.ino --board=<ID_1> --board=<ID_2> --board=<ID_N>
+            - pio ci path/to/test/directory --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 
 Library dependencies
@@ -97,11 +97,11 @@ Install dependent library using :ref:`librarymanager`
             - sudo pip install -U platformio
 
             # OneWire Library with ID=1 https://platformio.org/lib/show/1/OneWire
-            - platformio lib -g install 1
+            - pio lib -g install 1
 
     test:
         override:
-            - platformio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
+            - pio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Manually download dependent library and include in build process via ``--lib`` option
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -119,7 +119,7 @@ Manually download dependent library and include in build process via ``--lib`` o
 
     test:
         override:
-            - platformio ci path/to/test/file.c --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
+            - pio ci path/to/test/file.c --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Custom Build Flags
 ~~~~~~~~~~~~~~~~~~
@@ -143,13 +143,13 @@ Advanced configuration
 PlatformIO allows one to configure multiple build environments for the single
 source code using :ref:`projectconf`.
 
-Instead of ``--board`` option, please use :option:`platformio ci --project-conf`
+Instead of ``--board`` option, please use :option:`pio ci --project-conf`
 
 .. code-block:: yaml
 
     test:
         override:
-            - platformio ci path/to/test/file.c --project-conf=/path/to/platoformio.ini
+            - pio ci path/to/test/file.c --project-conf=/path/to/platoformio.ini
 
 Examples
 --------
@@ -166,23 +166,23 @@ Examples
             - sudo pip install -U platformio
 
             # pre-install PlatformIO development platforms, they will be cached
-            - platformio platform install atmelavr atmelsam teensy
+            - pio platform install atmelavr atmelsam teensy
 
             #
             # Libraries from PlatformIO Library Registry:
             #
             # https://platformio.org/lib/show/416/TinyGPS
             # https://platformio.org/lib/show/417/SPI4Teensy3
-            - platformio lib -g install 416 417
+            - pio lib -g install 416 417
 
     test:
         override:
-            - platformio ci examples/acm/acm_terminal --board=uno --board=teensy31 --board=due --lib="."
-            - platformio ci examples/adk/adk_barcode --board=uno --board=teensy31 --board=due --lib="."
-            - platformio ci examples/adk/ArduinoBlinkLED --board=uno --board=teensy31 --board=due --lib="."
-            - platformio ci examples/adk/demokit_20 --board=uno --board=teensy31 --board=due --lib="."
+            - pio ci examples/acm/acm_terminal --board=uno --board=teensy31 --board=due --lib="."
+            - pio ci examples/adk/adk_barcode --board=uno --board=teensy31 --board=due --lib="."
+            - pio ci examples/adk/ArduinoBlinkLED --board=uno --board=teensy31 --board=due --lib="."
+            - pio ci examples/adk/demokit_20 --board=uno --board=teensy31 --board=due --lib="."
             # ...
-            - platformio ci examples/Xbox/XBOXUSB --board=uno --board=teensy31 --board=due --lib="."
+            - pio ci examples/Xbox/XBOXUSB --board=uno --board=teensy31 --board=due --lib="."
 
 
 2. Dependency on external libraries
@@ -203,15 +203,15 @@ Examples
 
     test:
         override:
-            -  platformio ci examples/backSoon/backSoon.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  platformio ci examples/etherNode/etherNode.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  platformio ci examples/getDHCPandDNS/getDHCPandDNS.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  platformio ci examples/getStaticIP/getStaticIP.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+            -  pio ci examples/backSoon/backSoon.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+            -  pio ci examples/etherNode/etherNode.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+            -  pio ci examples/getDHCPandDNS/getDHCPandDNS.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+            -  pio ci examples/getStaticIP/getStaticIP.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
             # ...
-            -  platformio ci examples/twitter/twitter.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  platformio ci examples/udpClientSendOnly/udpClientSendOnly.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  platformio ci examples/udpListener/udpListener.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  platformio ci examples/webClient/webClient.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+            -  pio ci examples/twitter/twitter.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+            -  pio ci examples/udpClientSendOnly/udpClientSendOnly.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+            -  pio ci examples/udpListener/udpListener.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+            -  pio ci examples/webClient/webClient.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
 
 * Configuration file: hhttps://github.com/ivankravets/ethercard/blob/master/circle.yaml
 * Build History: https://circleci.com/gh/ivankravets/ethercard/tree/master

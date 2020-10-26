@@ -11,8 +11,8 @@
 
 .. _cmd_system:
 
-platformio system
-=================
+pio system
+==========
 
 Miscellaneous system commands.
 
@@ -20,9 +20,8 @@ To print all available commands and options use:
 
 .. code-block:: bash
 
-    platformio system --help
-    platformio system COMMAND --help
     pio system --help
+    pio system COMMAND --help
 
 
 .. toctree::

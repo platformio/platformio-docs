@@ -11,8 +11,8 @@
 
 .. _cmd_package_unpublish:
 
-platformio package unpublish
-============================
+pio package unpublish
+=====================
 
 .. versionadded:: 5.0
 
@@ -24,7 +24,6 @@ Usage
 .. code-block:: bash
 
     pio package unpublish [<organization>/]<pkgname>[@<version>] [OPTIONS]
-    platformio package unpublish [<organization>/]<pkgname>[@<version>] [OPTIONS]
 
 Description
 -----------
@@ -40,7 +39,7 @@ You can only remove a package version within 72 hours since the published date.
 Options
 ~~~~~~~
 
-.. program:: platformio package unpublish
+.. program:: pio package unpublish
 
 .. option::
     --type

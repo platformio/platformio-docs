@@ -21,11 +21,11 @@ Upload using Programmer
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 To upload firmware using programmer you need to use ``program`` target instead
-of ``upload`` for :option:`platformio run --target` command. For example,
-``platformio run -t program``.
+of ``upload`` for :option:`pio run --target` command. For example,
+``pio run -t program``.
 
 .. warning::
-    Upload options like ``upload_port`` don't work as expected with ``platformio run -t program``. You need to use ``upload_flags`` if you want to specify custom port or speed (see examples below).
+    Upload options like ``upload_port`` don't work as expected with ``pio run -t program``. You need to use ``upload_flags`` if you want to specify custom port or speed (see examples below).
 
 .. note::
     List of avrdude supported programmers are accessible with ``avrdude -c ?``
@@ -139,15 +139,15 @@ Upload EEPROM data
 ~~~~~~~~~~~~~~~~~~
 
 To upload EEPROM data (from EEMEM directive) you need to use ``uploadeep``
-target instead ``upload`` for :option:`platformio run --target` command.
-For example, ``platformio run -t uploadeep``.
+target instead ``upload`` for :option:`pio run --target` command.
+For example, ``pio run -t uploadeep``.
 
 Fuses programming
 ~~~~~~~~~~~~~~~~~
 
 PlatformIO has a built-in target named ``fuses`` for setting fuse bits. The
 default fuse bits are predefined in board manifest file in ``fuses`` section.
-For example, `fuses section for Arduino Uno board <https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json>`_. To set fuse bits you need to use target ``fuses`` with :option:`platformio run --target` command.
+For example, `fuses section for Arduino Uno board <https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json>`_. To set fuse bits you need to use target ``fuses`` with :option:`pio run --target` command.
 
 Custom fuses
 ^^^^^^^^^^^^
@@ -228,7 +228,7 @@ Valid BOD values:
       - 4.1v
       - 4.3v
 
-    * - 2.7v 
+    * - 2.7v
       - 4.0v
       - 2.7v
 
@@ -236,25 +236,25 @@ Valid BOD values:
       - 3.9v
       - 1.8v
 
-    * - 
+    * -
       - 3.8v
       - disabled
 
-    * - 
+    * -
       - 2.7v
-      - 
+      -
 
-    * - 
+    * -
       - 2.6v
-      - 
+      -
 
-    * - 
+    * -
       - 2.5v
-      - 
+      -
 
-    * - 
+    * -
       - disabled
-      - 
+      -
 
 Hardware configuration example:
 
@@ -272,14 +272,14 @@ Hardware configuration example:
     board_hardware.eesave = no
 
     upload_protocol = usbasp
-    upload_flags = 
+    upload_flags =
       -Pusb
 
 Bootloader programming
 ~~~~~~~~~~~~~~~~~~~~~~
 
 PlatformIO has a built-in target named ``bootloader`` for flashing bootloaders. The default bootloader image and corresponding fuse bits are predefined in board manifest file in ``bootloader`` section, for example, `Arduino Uno <https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json>`_. To upload bootloader image you need to use target ``bootloader`` with
-:option:`platformio run --target` command.
+:option:`pio run --target` command.
 
 
 Custom bootloader

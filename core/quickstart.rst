@@ -62,7 +62,7 @@ to find Teensy boards:
 
 .. code-block:: bash
 
-    > platformio boards teensy
+    > pio boards teensy
 
     Platform: teensy
     ---------------------------------------------------------------------------
@@ -103,11 +103,11 @@ pre-installed instruments for the professional development.
 
     .. code-block:: bash
 
-        > platformio project init --board uno --board nodemcuv2 --board teensy31
+        > pio project init --board uno --board nodemcuv2 --board teensy31
 
         The current working directory *** will be used for the new project.
         You can specify another project directory via
-        `platformio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
+        `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
 
         The next files/directories will be created in ***
         platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
@@ -116,9 +116,9 @@ pre-installed instruments for the professional development.
         Do you want to continue? [y/N]: y
         Project has been successfully initialized!
         Useful commands:
-        `platformio run` - process/build project from the current directory
-        `platformio run --target upload` or `platformio run -t upload` - upload firmware to embedded board
-        `platformio run --target clean` - clean project (remove compiled files)
+        `pio run` - process/build project from the current directory
+        `pio run --target upload` or `pio run -t upload` - upload firmware to embedded board
+        `pio run --target clean` - clean project (remove compiled files)
 
 
 Congrats! You have just created the first PlatformIO based Project with the
@@ -225,16 +225,16 @@ you call it without any arguments, PlatformIO Build System will process all
 project environments (which were created per each board specified above). Here
 are a few useful commands:
 
-* ``platformio run``. Process (build) all environments specified in
+* ``pio run``. Process (build) all environments specified in
   :ref:`projectconf`
-* ``platformio run --target upload``. Build project and upload firmware to the
+* ``pio run --target upload``. Build project and upload firmware to the
   all devices specified in :ref:`projectconf`
-* ``platformio run --target clean``. Clean project (delete compiled objects)
-* ``platformio run -e uno``. Process only ``uno`` environment
-* ``platformio run -e uno -t upload``. Build project only for ``uno`` and upload
+* ``pio run --target clean``. Clean project (delete compiled objects)
+* ``pio run -e uno``. Process only ``uno`` environment
+* ``pio run -e uno -t upload``. Build project only for ``uno`` and upload
   firmware.
 
-Please follow to :option:`platformio run --list-targets` documentation for the other
+Please follow to :option:`pio run --list-targets` documentation for the other
 targets.
 
 Finally, demo which demonstrates building project and uploading firmware to

@@ -66,7 +66,7 @@ This variant is default choice for native PlatformIO projects:
             python -m pip install --upgrade pip
             pip install platformio
         - name: Run PlatformIO
-          run: platformio run -e <ID_1> -e <ID_2> -e <ID_N>
+          run: pio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
 Using :ref:`cmd_ci` command
@@ -99,7 +99,7 @@ and boards from command line interface:
             python -m pip install --upgrade pip
             pip install platformio
         - name: Run PlatformIO
-          run: platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+          run: pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
           env:
             PLATFORMIO_CI_SRC: ${{ matrix.example }}
 
@@ -115,10 +115,10 @@ Install dependent library using :ref:`librarymanager`
 .. code-block:: yaml
 
     - name: Install library dependencies
-      run: platformio lib -g install 1
+      run: pio lib -g install 1
 
     - name: Run PlatformIO
-      run: platformio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
+      run: pio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Manually download dependent library and include in build process via ``--lib`` option
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -131,7 +131,7 @@ Manually download dependent library and include in build process via ``--lib`` o
         unzip /tmp/onewire_source.zip -d /tmp/
 
     - name: Run PlatformIO
-      run: platformio ci path/to/test/file.c --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
+      run: pio ci path/to/test/file.c --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Custom Build Flags
 ~~~~~~~~~~~~~~~~~~
@@ -141,7 +141,7 @@ PlatformIO allows one to specify own build flags using :envvar:`PLATFORMIO_BUILD
 .. code-block:: yaml
 
     - name: Run PlatformIO
-      run: platformio ci path/to/test/file.c --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
+      run: pio ci path/to/test/file.c --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
       env:
         PLATFORMIO_BUILD_FLAGS: -D SPECIFIC_MACROS -I/extra/inc
 
@@ -181,7 +181,7 @@ Integration for USB_Host_Shield_2.0 project. The ``workflow.yml`` configuration 
             unzip /tmp/spi4teensy3.zip -d /tmp
 
         - name: Run PlatformIO
-          run: platformio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
+          run: pio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
           env:
             PLATFORMIO_CI_SRC: ${{ matrix.example }}
 

@@ -163,7 +163,7 @@ The rough calculation could be done as:
 * DATA (RAM) = ``.bss`` + ``.data``
 
 If you need to print **all memory sections and addresses**, please use
-:option:`platformio run --verbose` command.
+:option:`pio run --verbose` command.
 
 Recommended for reading:
 
@@ -353,12 +353,12 @@ system operations. Another solution is to run :ref:`piocore` from a system termi
        cd path/to/platformio/project
 
        # Force PlatformIO to install PlatformIO Home dependencies
-       platformio home
+       pio home
 
        # Force PlatformIO to install toolchains
-       platformio run --target upload
+       pio run --target upload
 
-If "platformio" command is not globally available in your environment and you
+If "pio" command is not globally available in your environment and you
 use :ref:`pioide`, please use built-in :ref:`piocore` which is located in:
 
 * Windows: ``C:\Users\{username}\.platformio\penv\Scripts\platformio``

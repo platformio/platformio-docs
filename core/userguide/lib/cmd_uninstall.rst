@@ -11,8 +11,8 @@
 
 .. _cmd_lib_uninstall:
 
-platformio lib uninstall
-========================
+pio lib uninstall
+=================
 
 .. contents::
 
@@ -21,33 +21,32 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib [STORAGE_OPTIONS] uninstall [LIBRARY...]
     pio lib [STORAGE_OPTIONS] uninstall [LIBRARY...]
 
     # uninstall project dependent library
     # (run it from a project root where is located "platformio.ini")
-    platformio lib uninstall [LIBRARY...]
+    pio lib uninstall [LIBRARY...]
 
     # uninstall dependencies for the specific project environment
     # (run it from a project root where is located "platformio.ini")
-    platformio lib -e myenv uninstall [OPTIONS] [LIBRARY...]
-    platformio lib -d /path/to/platformio/project -e myenv uninstall [OPTIONS] [LIBRARY...]
+    pio lib -e myenv uninstall [OPTIONS] [LIBRARY...]
+    pio lib -d /path/to/platformio/project -e myenv uninstall [OPTIONS] [LIBRARY...]
 
     # uninstall library from global storage
-    platformio lib --global uninstall [LIBRARY...]
-    platformio lib -g uninstall [LIBRARY...]
+    pio lib --global uninstall [LIBRARY...]
+    pio lib -g uninstall [LIBRARY...]
 
     # uninstall library from custom storage
-    platformio lib --storage-dir /path/to/dir uninstall [LIBRARY...]
-    platformio lib -d /path/to/dir uninstall [LIBRARY...]
+    pio lib --storage-dir /path/to/dir uninstall [LIBRARY...]
+    pio lib -d /path/to/dir uninstall [LIBRARY...]
 
     # [LIBRARY...] forms
-    platformio lib [STORAGE_OPTIONS] uninstall <id>
-    platformio lib [STORAGE_OPTIONS] uninstall <id>@<version>
-    platformio lib [STORAGE_OPTIONS] uninstall <id>@<version range>
-    platformio lib [STORAGE_OPTIONS] uninstall <name>
-    platformio lib [STORAGE_OPTIONS] uninstall <name>@<version>
-    platformio lib [STORAGE_OPTIONS] uninstall <name>@<version range>
+    pio lib [STORAGE_OPTIONS] uninstall <id>
+    pio lib [STORAGE_OPTIONS] uninstall <id>@<version>
+    pio lib [STORAGE_OPTIONS] uninstall <id>@<version range>
+    pio lib [STORAGE_OPTIONS] uninstall <name>
+    pio lib [STORAGE_OPTIONS] uninstall <name>@<version>
+    pio lib [STORAGE_OPTIONS] uninstall <name>@<version range>
 
 Description
 -----------
@@ -74,7 +73,7 @@ See base options for :ref:`cmd_lib`.
 Options
 -------
 
-.. program:: platformio lib uninstall
+.. program:: pio lib uninstall
 
 .. option::
     --save / --no-save
@@ -98,7 +97,7 @@ Examples
 
 .. code::
 
-    > platformio lib -g uninstall AsyncMqttClient
+    > pio lib -g uninstall AsyncMqttClient
 
     Library Storage: /storage/dir/...
     Uninstalling AsyncMqttClient @ 0.2.0:   [OK]

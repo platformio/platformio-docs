@@ -11,8 +11,8 @@
 
 .. _cmd_account_update:
 
-platformio account update
-=========================
+pio account update
+==================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio account update [OPTIONS]
     pio account update [OPTIONS]
 
 Description
@@ -34,7 +33,7 @@ Options
 
 You can omit these options and enter them later in update Wizard.
 
-.. program:: platformio account register
+.. program:: pio account register
 
 .. option::
     --username, -u

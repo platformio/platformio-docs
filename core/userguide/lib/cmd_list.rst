@@ -11,8 +11,8 @@
 
 .. _cmd_lib_list:
 
-platformio lib list
-===================
+pio lib list
+============
 
 .. contents::
 
@@ -21,20 +21,19 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib [STORAGE_OPTIONS] list [OPTIONS]
     pio lib [STORAGE_OPTIONS] list [OPTIONS]
 
     # list project dependent libraries
     # (run it from a project root where is located "platformio.ini")
-    platformio lib list [OPTIONS]
+    pio lib list [OPTIONS]
 
     # list libraries from global storage
-    platformio lib --global list [OPTIONS]
-    platformio lib -g list [OPTIONS]
+    pio lib --global list [OPTIONS]
+    pio lib -g list [OPTIONS]
 
     # list libraries from custom storage
-    platformio lib --storage-dir /path/to/dir list [OPTIONS]
-    platformio lib -d /path/to/dir list [OPTIONS]
+    pio lib --storage-dir /path/to/dir list [OPTIONS]
+    pio lib -d /path/to/dir list [OPTIONS]
 
 Description
 -----------
@@ -49,7 +48,7 @@ See base options for :ref:`cmd_lib`.
 Options
 -------
 
-.. program:: platformio lib list
+.. program:: pio lib list
 
 .. option::
     --json-output
@@ -61,7 +60,7 @@ Examples
 
 .. code::
 
-    > platformio lib -g list
+    > pio lib -g list
 
     Library Storage: /storage/dir/...
 

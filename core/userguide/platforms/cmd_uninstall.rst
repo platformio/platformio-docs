@@ -11,8 +11,8 @@
 
 .. _cmd_platform_uninstall:
 
-platformio platform uninstall
-=============================
+pio platform uninstall
+======================
 
 .. contents::
 
@@ -21,11 +21,10 @@ Usage
 
 .. code-block:: bash
 
-    platformio platform uninstall [PLATFORM...]
     pio platform uninstall [PLATFORM...]
 
     # uninstall specific platform version using Semantic Versioning
-    platformio platform uninstall PLATFORM@X.Y.Z
+    pio platform uninstall PLATFORM@X.Y.Z
 
 
 Description
@@ -39,7 +38,7 @@ Examples
 
 .. code::
 
-    > platformio platform uninstall atmelavr
+    > pio platform uninstall atmelavr
     Uninstalling platform atmelavr @ 0.0.0:    [OK]
     Uninstalling package tool-scons @ 2.4.1:    [OK]
     Uninstalling package toolchain-atmelavr @ 1.40801.0:    [OK]

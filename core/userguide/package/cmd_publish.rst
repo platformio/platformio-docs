@@ -11,8 +11,8 @@
 
 .. _cmd_package_publish:
 
-platformio package publish
-==========================
+pio package publish
+===================
 
 .. versionadded:: 5.0
 
@@ -24,7 +24,6 @@ Usage
 .. code-block:: bash
 
     pio package publish [<source directory, tar.gz or zip>] [OPTIONS]
-    platformio package publish [<source directory, tar.gz or zip>] [OPTIONS]
 
 
 Description
@@ -58,7 +57,7 @@ To list published packages, please use :ref:`cmd_access_list` command.
 Options
 ~~~~~~~
 
-.. program:: platformio package publish
+.. program:: pio package publish
 
 .. option::
     --owner

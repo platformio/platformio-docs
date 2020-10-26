@@ -27,15 +27,14 @@ network operations Over-The-Air (OTA).
 
 .. _cmd_remote_agent_list:
 
-platformio remote agent list
-----------------------------
+pio remote agent list
+---------------------
 
 Usage
 ~~~~~
 
 .. code::
 
-    platformio remote agent list
     pio remote agent list
 
 
@@ -50,7 +49,7 @@ Example
 
 .. code::
 
-    > platformio remote agent list
+    > pio remote agent list
 
     innomac.local
     -------------
@@ -61,15 +60,14 @@ Example
 
 .. _cmd_remote_agent_start:
 
-platformio remote agent start
------------------------------
+pio remote agent start
+----------------------
 
 Usage
 ~~~~~
 
 .. code-block:: bash
 
-    platformio remote agent start [OPTIONS]
     pio remote agent start [OPTIONS]
 
 
@@ -83,7 +81,7 @@ autostart list of your OS.
 Options
 ~~~~~~~
 
-.. program:: platformio remote agent start
+.. program:: pio remote agent start
 
 .. option::
     -n, --name

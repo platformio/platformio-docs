@@ -11,8 +11,8 @@
 
 .. _cmd_platform_update:
 
-platformio platform update
-==========================
+pio platform update
+===================
 
 .. contents::
 
@@ -21,11 +21,10 @@ Usage
 
 .. code-block:: bash
 
-    platformio platform update [OPTIONS] [PLATFORM...]
     pio platform update [OPTIONS] [PLATFORM...]
 
     # update specific platform version using Semantic Versioning
-    platformio platform update PLATFORM@X.Y.Z
+    pio platform update PLATFORM@X.Y.Z
 
 
 Description
@@ -36,7 +35,7 @@ Check or update installed :ref:`platforms`
 Options
 -------
 
-.. program:: platformio platform update
+.. program:: pio platform update
 
 .. option::
     -p, --only-packages
@@ -65,7 +64,7 @@ Examples
 
 .. code::
 
-    > platformio platform update
+    > pio platform update
 
     Platform atmelavr
     --------

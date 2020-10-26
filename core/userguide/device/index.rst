@@ -19,8 +19,7 @@ To print all available commands and options use:
 .. code-block:: bash
 
     pio device --help
-    platformio device --help
-    platformio device COMMAND --help
+    pio device COMMAND --help
 
 .. toctree::
     :maxdepth: 2

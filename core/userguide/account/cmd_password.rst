@@ -11,8 +11,8 @@
 
 .. _cmd_account_password:
 
-platformio account password
-===========================
+pio account password
+====================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio account password
     pio account password
 
 Description

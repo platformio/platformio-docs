@@ -11,8 +11,8 @@
 
 .. _cmd_access_revoke:
 
-platformio access revoke
-========================
+pio access revoke
+=================
 
 .. versionadded:: 5.0
 
@@ -37,7 +37,7 @@ See the examples below.
 Options
 ~~~~~~~
 
-.. program:: platformio access revoke
+.. program:: pio access revoke
 
 .. option::
     --urn-type

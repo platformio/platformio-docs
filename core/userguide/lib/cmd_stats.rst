@@ -11,8 +11,8 @@
 
 .. _cmd_lib_stats:
 
-platformio lib stats
-====================
+pio lib stats
+=============
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib stats
     pio lib stats
 
 
@@ -45,7 +44,7 @@ This information is the same that is shown on this page:
 Options
 -------
 
-.. program:: platformio lib show
+.. program:: pio lib show
 
 .. option::
     --json-output

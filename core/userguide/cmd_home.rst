@@ -11,8 +11,8 @@
 
 .. _cmd_home:
 
-platformio home
-===============
+pio home
+========
 
 Helper command for :ref:`piohome`.
 
@@ -23,7 +23,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio home
     pio home
 
 Description
@@ -34,7 +33,7 @@ Launch :ref:`piohome` Web-server.
 Options
 -------
 
-.. program:: platformio home
+.. program:: pio home
 
 .. option::
     --port
@@ -63,7 +62,7 @@ Examples
 
 .. code::
 
-    > platformio home
+    > pio home
 
       ___I_
      /\-_--\   PlatformIO Home

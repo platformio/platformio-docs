@@ -11,8 +11,8 @@
 
 .. _cmd_run:
 
-platformio run
-==============
+pio run
+=======
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio run [OPTIONS]
     pio run [OPTIONS]
 
 
@@ -33,7 +32,7 @@ Run project targets over environments declared in :ref:`projectconf`.
 Options
 -------
 
-.. program:: platformio run
+.. program:: pio run
 
 .. option::
     -e, --environment
@@ -57,7 +56,7 @@ You can configure default targets per project environment using
 .. versionadded:: 5.0
 
 List available project targets. It's also possible to list targets per project
-environment using :option:`platformio run --environment` option.
+environment using :option:`pio run --environment` option.
 
 There are also built-in system targets:
 
@@ -121,7 +120,7 @@ Examples
 
 .. code::
 
-    > platformio run
+    > pio run
 
     [Wed Sep  7 15:48:58 2016] Processing uno (platform: atmelavr, board: uno, framework: arduino)
     -----------------------------------------------------------------------------------------------
@@ -221,7 +220,7 @@ Examples
 
 .. code::
 
-    > platformio run -e nodemcu -e teensy31
+    > pio run -e nodemcu -e teensy31
 
     [Wed Sep  7 15:49:01 2016] Processing nodemcu (platform: espressif8266, board: nodemcu, framework: arduino)
     -----------------------------------------------------------------------------------------------
@@ -270,7 +269,7 @@ Examples
 
 .. code:: bash
 
-    > platformio run -t clean
+    > pio run -t clean
     [Wed Sep  7 15:53:26 2016] Processing uno (platform: atmelavr, board: uno, framework: arduino)
     -----------------------------------------------------------------------------------------------------
     Removed .pio/build/uno/firmware.elf
@@ -350,7 +349,7 @@ Examples
 
 .. code::
 
-    > platformio run -e uno -t upload
+    > pio run -e uno -t upload
 
     [Wed Sep  7 15:55:11 2016] Processing uno (platform: atmelavr, board: uno, framework: arduino)
     --------------------------------------------------------------------------------------------------

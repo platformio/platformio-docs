@@ -11,8 +11,8 @@
 
 .. _cmd_org:
 
-platformio org
-==============
+pio org
+=======
 
 .. versionadded:: 5.0
 
@@ -25,8 +25,7 @@ To print all available commands and options use:
 .. code-block:: bash
 
     pio org --help
-    platformio org --help
-    platformio org COMMAND --help
+    pio org COMMAND --help
 
 .. toctree::
     :maxdepth: 2

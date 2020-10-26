@@ -19,16 +19,14 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib [OPTIONS] COMMAND
-
     # To print all available commands and options use
-    platformio lib --help
-    platformio lib COMMAND --help
+    pio lib --help
+    pio lib COMMAND --help
 
 Options
 -------
 
-.. program:: platformio lib
+.. program:: pio lib
 
 .. option::
     -d, --storage-dir

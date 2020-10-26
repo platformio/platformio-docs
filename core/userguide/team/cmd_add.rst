@@ -11,8 +11,8 @@
 
 .. _cmd_team_add:
 
-platformio team add
-===================
+pio team add
+============
 
 .. versionadded:: 5.0
 

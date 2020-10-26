@@ -11,8 +11,8 @@
 
 .. _cmd_lib_builtin:
 
-platformio lib builtin
-======================
+pio lib builtin
+===============
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib builtin [OPTIONS]
     pio lib builtin [OPTIONS]
 
 
@@ -34,7 +33,7 @@ frameworks, SDKs, etc.
 Options
 -------
 
-.. program:: platformio lib builtin
+.. program:: pio lib builtin
 
 .. option::
     --storage
@@ -51,7 +50,7 @@ Examples
 
 .. code::
 
-    > platformio lib builtin
+    > pio lib builtin
 
     framework-arduinoavr
     ********************

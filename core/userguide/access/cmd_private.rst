@@ -11,8 +11,8 @@
 
 .. _cmd_access_private:
 
-platformio access private
-=========================
+pio access private
+==================
 
 .. versionadded:: 5.0
 
@@ -34,7 +34,7 @@ users or team members).
 Options
 ~~~~~~~
 
-.. program:: platformio access private
+.. program:: pio access private
 
 .. option::
     --urn-type

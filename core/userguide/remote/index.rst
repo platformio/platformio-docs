@@ -21,11 +21,10 @@ To print all available commands and options use:
 .. code-block:: bash
 
     pio remote --help
-    platformio remote --help
-    platformio remote COMMAND --help
+    pio remote COMMAND --help
 
     # run command on the specified PlatformIO Remote Agents
-    platformio remote --agent NAME_1 --agent NAME_N COMMAND
+    pio remote --agent NAME_1 --agent NAME_N COMMAND
 
 
 .. toctree::

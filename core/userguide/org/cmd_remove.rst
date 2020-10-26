@@ -11,8 +11,8 @@
 
 .. _cmd_org_remove:
 
-platformio org remove
-=====================
+pio org remove
+==============
 
 .. versionadded:: 5.0
 

@@ -11,8 +11,8 @@
 
 .. _cmd_remote_update:
 
-platformio remote update
-========================
+pio remote update
+=================
 
 .. contents::
 
@@ -21,11 +21,10 @@ Usage
 
 .. code-block:: bash
 
-    platformio remote update [OPTIONS]
     pio remote update [OPTIONS]
 
     # start update process on the specified agents/machines
-    platformio remote --agent NAME update [OPTIONS]
+    pio remote --agent NAME update [OPTIONS]
 
 Description
 -----------
@@ -36,7 +35,7 @@ Check or update installed :ref:`platforms` and global
 Options
 -------
 
-.. program:: platformio remote update
+.. program:: pio remote update
 
 .. option::
     -c, --only-check
@@ -55,7 +54,7 @@ Examples
 
 .. code::
 
-    > platformio remote update
+    > pio remote update
 
     Platform Manager
     ================

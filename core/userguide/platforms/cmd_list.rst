@@ -11,8 +11,8 @@
 
 .. _cmd_platform_list:
 
-platformio platform list
-========================
+pio platform list
+=================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio platform list [OPTIONS]
     pio platform list [OPTIONS]
 
 Description
@@ -32,7 +31,7 @@ List installed :ref:`platforms`
 Options
 ~~~~~~~
 
-.. program:: platformio platform list
+.. program:: pio platform list
 
 .. option::
     --json-output
@@ -44,7 +43,7 @@ Examples
 
 .. code::
 
-    > platformio platform list
+    > pio platform list
 
     atmelavr ~ Atmel AVR
     ====================

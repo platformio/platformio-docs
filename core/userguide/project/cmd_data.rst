@@ -11,8 +11,8 @@
 
 .. _cmd_project_data:
 
-platformio project data
-=======================
+pio project data
+================
 
 .. versionadded:: 5.0
 
@@ -24,7 +24,6 @@ Usage
 .. code-block:: bash
 
     pio project data [OPTIONS]
-    platformio project data [OPTIONS]
 
 
 Description
@@ -38,13 +37,13 @@ Dump data intended for IDE extensions/plugins:
 - CPP Preprocessor includes/paths
 - Program path
 - SVD path if available for :ref:`platforms`
-- Targets by :ref:`platforms` (see :option:`platformio run --list-targets` for details)
+- Targets by :ref:`platforms` (see :option:`pio run --list-targets` for details)
 - Extra information.
 
 Options
 ~~~~~~~
 
-.. program:: platformio project data
+.. program:: pio project data
 
 .. option::
     -d, --project-dir

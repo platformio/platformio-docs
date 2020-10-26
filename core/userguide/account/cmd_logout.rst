@@ -11,8 +11,8 @@
 
 .. _cmd_account_logout:
 
-platformio account logout
-=========================
+pio account logout
+==================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio account logout
     pio account logout
 
 Description

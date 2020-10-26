@@ -78,10 +78,10 @@ This variant is default choice for native PlatformIO projects:
 
     install:
         - pip install -U platformio
-        - platformio update
+        - pio update
 
     script:
-        - platformio run -e <ID_1> -e <ID_2> -e <ID_N>
+        - pio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
 Using :ref:`cmd_ci` command
@@ -110,10 +110,10 @@ and boards from command line interface:
 
     install:
         - pip install -U platformio
-        - platformio update
+        - pio update
 
     script:
-        - platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+        - pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Then perform steps 1, 2 and 4 from http://docs.travis-ci.com/user/getting-started/
 
@@ -134,7 +134,7 @@ Install dependent library using :ref:`librarymanager`
         # Libraries from PlatformIO Library Registry:
         #
         # https://platformio.org/lib/show/1/OneWire
-        - platformio lib -g install 1
+        - pio lib -g install 1
 
 Manually download dependent library and include in build process via ``--lib`` option
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -149,7 +149,7 @@ Manually download dependent library and include in build process via ``--lib`` o
         - unzip /tmp/onewire_source.zip -d /tmp/
 
     script:
-        - platformio ci --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
+        - pio ci --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Custom Build Flags
 ------------------
@@ -178,12 +178,12 @@ Advanced configuration
 PlatformIO allows one to configure multiple build environments for the single
 source code using :ref:`projectconf`.
 
-Instead of ``--board`` option, please use :option:`platformio ci --project-conf`
+Instead of ``--board`` option, please use :option:`pio ci --project-conf`
 
 .. code-block:: yaml
 
     script:
-        - platformio ci --project-conf=/path/to/platoformio.ini
+        - pio ci --project-conf=/path/to/platoformio.ini
 
 Unit Testing
 ------------
@@ -216,17 +216,17 @@ Examples
 
     install:
         - pip install -U platformio
-        - platformio update
+        - pio update
 
         #
         # Libraries from PlatformIO Library Registry:
         #
         # https://platformio.org/lib/show/416/TinyGPS
         # https://platformio.org/lib/show/417/SPI4Teensy3
-        - platformio lib -g install 416 417
+        - pio lib -g install 416 417
 
     script:
-        - platformio ci --board=uno --board=teensy31 --board=due --lib="."
+        - pio ci --board=uno --board=teensy31 --board=due --lib="."
 
 * Configuration file: https://github.com/felis/USB_Host_Shield_2.0/blob/master/.travis.yml
 * Build History: https://travis-ci.org/felis/USB_Host_Shield_2.0
@@ -252,7 +252,7 @@ Examples
 
     install:
         - pip install -U platformio
-        - platformio update
+        - pio update
 
         - wget https://github.com/jcw/jeelib/archive/master.zip -O /tmp/jeelib.zip
         - unzip /tmp/jeelib.zip -d /tmp
@@ -261,7 +261,7 @@ Examples
         - unzip /tmp/gamebuino.zip -d /tmp
 
     script:
-        - platformio ci --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+        - pio ci --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
 
 * Configuration file: https://github.com/jcw/ethercard/blob/master/.travis.yml
 * Build History: https://travis-ci.org/jcw/ethercard
@@ -289,17 +289,17 @@ Examples
 
     install:
         - pip install -U platformio
-        - platformio update
+        - pio update
         - rm -rf ./linux
 
         #
         # Libraries from PlatformIO Library Registry:
         #
         # https://platformio.org/lib/show/416/TinyGPS
-        - platformio lib -g install 416 421 422
+        - pio lib -g install 416 421 422
 
     script:
-        - platformio ci --lib="." --board=uno --board=teensy20pp $PLATFORMIO_CI_EXTRA_ARGS
+        - pio ci --lib="." --board=uno --board=teensy20pp $PLATFORMIO_CI_EXTRA_ARGS
 
 * Configuration file: https://github.com/ivankravets/Time/blob/master/.travis.yml
 * Build History: https://travis-ci.org/ivankravets/Time
@@ -327,7 +327,7 @@ Examples
 
     install:
         - pip install -U platformio
-        - platformio update
+        - pio update
 
         #
         # Libraries from PlatformIO Library Registry:
@@ -346,7 +346,7 @@ Examples
         # https://platformio.org/lib/show/259/BLEPeripheral
         # https://platformio.org/lib/show/177/Adafruit_BluefruitLE_nRF51
 
-        - platformio lib -g install 17 28 91 418 419 420 65 44 19 299 259 177 https://github.com/vshymanskyy/BlynkESP8266.git https://github.com/cmaglie/FlashStorage.git https://github.com/michael71/Timer5.git
+        - pio lib -g install 17 28 91 418 419 420 65 44 19 299 259 177 https://github.com/vshymanskyy/BlynkESP8266.git https://github.com/cmaglie/FlashStorage.git https://github.com/michael71/Timer5.git
 
     script:
         - make travis-build

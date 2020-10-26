@@ -11,8 +11,8 @@
 
 .. _cmd_lib_show:
 
-platformio lib show
-===================
+pio lib show
+============
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib show [LIBRARY]
     pio lib show [LIBRARY]
 
 
@@ -39,7 +38,7 @@ The possible values for ``[LIBRARY]``:
 Options
 -------
 
-.. program:: platformio lib show
+.. program:: pio lib show
 
 .. option::
     --json-output
@@ -51,7 +50,7 @@ Examples
 
 .. code::
 
-    > platformio lib show OneWire
+    > pio lib show OneWire
 
     PubSubClient
     ============

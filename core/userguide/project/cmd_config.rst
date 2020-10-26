@@ -11,8 +11,8 @@
 
 .. _cmd_project_config:
 
-platformio project config
-=========================
+pio project config
+==================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio project config [OPTIONS]
     pio project config [OPTIONS]
 
 
@@ -37,7 +36,7 @@ from :ref:`projectconf`.
 Options
 ~~~~~~~
 
-.. program:: platformio project config
+.. program:: pio project config
 
 .. option::
     -d, --project-dir

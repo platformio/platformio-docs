@@ -29,7 +29,7 @@ Integration process consists of these steps:
 
 1. Open system Terminal and install :ref:`piocore`
 2. Create new folder for your project and change directory (``cd``) to it
-3. Generate a project using PlatformIO Core Project Generator (:option:`platformio project init --ide`)
+3. Generate a project using PlatformIO Core Project Generator (:option:`pio project init --ide`)
 4. Import project in IDE.
 
 "Neomake-PlatformIO" Plugin
@@ -42,11 +42,11 @@ Project Generator
 ^^^^^^^^^^^^^^^^^
 
 Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <https://platformio.org/boards>`_
-command and generate project via :option:`platformio project init --ide` command:
+command and generate project via :option:`pio project init --ide` command:
 
 .. code-block:: shell
 
-    platformio project init --ide vim --board <ID>
+    pio project init --ide vim --board <ID>
 
 Recommended bundles:
 
@@ -64,22 +64,22 @@ Put to the project directory ``Makefile`` wrapper with contents:
     #PATH := /usr/local/bin:$(PATH)
 
     all:
-            platformio -f -c vim run
+            pio -f -c vim run
 
     upload:
-            platformio -f -c vim run --target upload
+            pio -f -c vim run --target upload
 
     clean:
-            platformio -f -c vim run --target clean
+            pio -f -c vim run --target clean
 
     program:
-            platformio -f -c vim run --target program
+            pio -f -c vim run --target program
 
     uploadfs:
-            platformio -f -c vim run --target uploadfs
+            pio -f -c vim run --target uploadfs
 
     update:
-            platformio -f -c vim update
+            pio -f -c vim update
 
 
 Pre-defined targets:

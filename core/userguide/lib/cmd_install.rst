@@ -11,8 +11,8 @@
 
 .. _cmd_lib_install:
 
-platformio lib install
-======================
+pio lib install
+===============
 
 .. contents::
 
@@ -21,42 +21,41 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib [STORAGE_OPTIONS] install [OPTIONS] [LIBRARY...]
     pio lib [STORAGE_OPTIONS] install [OPTIONS] [LIBRARY...]
 
     # RECOMMENDED
     # install all project dependencies declared via "lib_deps"
     # (run it from a project root where is located "platformio.ini")
-    platformio lib install [OPTIONS]
+    pio lib install [OPTIONS]
 
     # install project dependent library
     # (run it from a project root where is located "platformio.ini")
-    platformio lib install [OPTIONS] [LIBRARY...]
+    pio lib install [OPTIONS] [LIBRARY...]
 
     # install dependencies for the specific project environment
     # (run it from a project root where is located "platformio.ini")
-    platformio lib -e myenv install [OPTIONS] [LIBRARY...]
-    platformio lib -d /path/to/platformio/project -e myenv install [OPTIONS] [LIBRARY...]
+    pio lib -e myenv install [OPTIONS] [LIBRARY...]
+    pio lib -d /path/to/platformio/project -e myenv install [OPTIONS] [LIBRARY...]
 
     # install to global storage (NOT RECOMMENDED)
-    platformio lib --global install [OPTIONS] [LIBRARY...]
-    platformio lib -g install [OPTIONS] [LIBRARY...]
+    pio lib --global install [OPTIONS] [LIBRARY...]
+    pio lib -g install [OPTIONS] [LIBRARY...]
 
     # install to custom storage
-    platformio lib --storage-dir /path/to/dir install [OPTIONS] [LIBRARY...]
-    platformio lib -d /path/to/dir1 -d /path/to/dir2 install [OPTIONS] [LIBRARY...]
+    pio lib --storage-dir /path/to/dir install [OPTIONS] [LIBRARY...]
+    pio lib -d /path/to/dir1 -d /path/to/dir2 install [OPTIONS] [LIBRARY...]
 
     # [LIBRARY...] forms
-    platformio lib [STORAGE_OPTIONS] install (with no args, install project dependencies from "lib_deps")
-    platformio lib [STORAGE_OPTIONS] install <ownername/name>
-    platformio lib [STORAGE_OPTIONS] install <ownername/name>@<version>
-    platformio lib [STORAGE_OPTIONS] install <ownername/name>@<version range>
-    platformio lib [STORAGE_OPTIONS] install <zip or tarball url>
-    platformio lib [STORAGE_OPTIONS] install file://<zip or tarball file>
-    platformio lib [STORAGE_OPTIONS] install file://<folder>
-    platformio lib [STORAGE_OPTIONS] install <repository>
-    platformio lib [STORAGE_OPTIONS] install <name>=<repository> (name it should have locally)
-    platformio lib [STORAGE_OPTIONS] install <repository#tag> ("tag" can be commit, branch or tag)
+    pio lib [STORAGE_OPTIONS] install (with no args, install project dependencies from "lib_deps")
+    pio lib [STORAGE_OPTIONS] install <ownername/name>
+    pio lib [STORAGE_OPTIONS] install <ownername/name>@<version>
+    pio lib [STORAGE_OPTIONS] install <ownername/name>@<version range>
+    pio lib [STORAGE_OPTIONS] install <zip or tarball url>
+    pio lib [STORAGE_OPTIONS] install file://<zip or tarball file>
+    pio lib [STORAGE_OPTIONS] install file://<folder>
+    pio lib [STORAGE_OPTIONS] install <repository>
+    pio lib [STORAGE_OPTIONS] install <name>=<repository> (name it should have locally)
+    pio lib [STORAGE_OPTIONS] install <repository#tag> ("tag" can be commit, branch or tag)
 
 .. warning::
 
@@ -101,7 +100,7 @@ See base options for :ref:`cmd_lib`.
 Options
 -------
 
-.. program:: platformio lib install
+.. program:: pio lib install
 
 .. option::
     --save / --no-save
@@ -110,8 +109,8 @@ Save installed libraries into the :ref:`projectconf` dependency list
 (:ref:`projectconf_lib_deps`). Default value is to save.
 
 You can save libraries for the specific project environment using
-``-e, --environment`` option from :ref:`platformio lib <cmd_lib>` command. For example,
-``platformio lib -e myenv install [LIBRARY...]``.
+``-e, --environment`` option from :ref:`pio lib <cmd_lib>` command. For example,
+``pio lib -e myenv install [LIBRARY...]``.
 
 .. option::
     -s, --silent
@@ -192,7 +191,7 @@ Examples
 
 .. code::
 
-    > platformio lib -g install 4
+    > pio lib -g install 4
 
     Library Storage: /storage/dir/...
     LibraryManager: Installing id=4
@@ -201,7 +200,7 @@ Examples
     IRremote @ 2.2.1 has been successfully installed!
 
     # repeat command with name
-    > platformio lib -g install IRRemote
+    > pio lib -g install IRRemote
 
     Library Storage: /storage/dir/...
     Looking for IRRemote library in registry
@@ -214,7 +213,7 @@ Examples
 
 .. code::
 
-    > platformio lib -g install ArduinoJson@5.6.7
+    > pio lib -g install ArduinoJson@5.6.7
 
     Library Storage: /storage/dir/...
     Looking for ArduinoJson library in registry
@@ -229,7 +228,7 @@ Examples
 
 .. code::
 
-    > platformio lib --storage-dir /my/storage/dir install DallasTemperature
+    > pio lib --storage-dir /my/storage/dir install DallasTemperature
 
     Library Storage: /my/storage/dir
     Looking for DallasTemperature library in registry
@@ -250,7 +249,7 @@ Examples
 
 .. code::
 
-    > platformio lib -g install https://developer.mbed.org/users/simon/code/TextLCD/
+    > pio lib -g install https://developer.mbed.org/users/simon/code/TextLCD/
 
     Library Storage: /storage/dir/...
     LibraryManager: Installing TextLCD
@@ -273,7 +272,7 @@ Examples
 
 .. code::
 
-    > platformio lib -g install  https://github.com/adafruit/DHT-sensor-library/archive/master.zip
+    > pio lib -g install  https://github.com/adafruit/DHT-sensor-library/archive/master.zip
 
     Library Storage: /storage/dir/...
     LibraryManager: Installing master
