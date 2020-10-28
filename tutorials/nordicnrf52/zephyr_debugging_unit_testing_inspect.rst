@@ -24,7 +24,7 @@ framework for the ``Nordic nRF52-DK`` board.
 **Requirements:**
   - Downloaded and installed :ref:`ide_vscode`
   - Install drivers for :ref:`debugging_tool_jlink` debug tool
-  - `Nordic nRF52-DK <https://docs.platformio.org/en/latest/boards/nordicnrf52/nrf52_dk.html>`__ development board
+  - :ref:`board_nordicnrf52_nrf52_dk` development board
 
 .. contents:: Contents
     :local:
@@ -130,7 +130,7 @@ Adding Code to the Generated Project
 
       CONFIG_BT=y
       CONFIG_BT_DEBUG_LOG=y
-      CONFIG_BT_DEVICE_NAME="Test beacon" 
+      CONFIG_BT_DEVICE_NAME="Test beacon"
 
 Compiling and Uploading the Firmware
 ------------------------------------
@@ -140,7 +140,7 @@ Compiling and Uploading the Firmware
     - Build option from the ``Project Tasks`` menu
     - Build button in :ref:`ide_vscode_toolbar`
     - Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or in :ref:`ide_vscode_toolbar`
-    - Command Palette ``View: Command Palette > PlatformIO: Build`` 
+    - Command Palette ``View: Command Palette > PlatformIO: Build``
     - Hotkeys ``cmd-alt-b / ctrl-alt-b``:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-3.png
@@ -171,7 +171,7 @@ Compiling and Uploading the Firmware
       framework = zephyr
       monitor_speed = 115200
 
-#. Open Serial Monitor to observe the output from the board: 
+#. Open Serial Monitor to observe the output from the board:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-6.png
 
@@ -212,7 +212,7 @@ For the sake of simplicity, let's create a small library called ``calculator``,
 implement several basic functions ``add``, ``sub``, ``mul``, ``div`` and test them using
 :ref:`unit_testing` engine.
 
-#. PlatformIO uses a unit testing framework called ``Unity``. ``Unity`` is not 
+#. PlatformIO uses a unit testing framework called ``Unity``. ``Unity`` is not
    compatible with C library implemented in the framework. Let's enable standard
    version of newlib C library in ``prj.conf`` file using the following config:
 
