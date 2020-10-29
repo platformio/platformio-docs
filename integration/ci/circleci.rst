@@ -213,5 +213,5 @@ Examples
             -  pio ci examples/udpListener/udpListener.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
             -  pio ci examples/webClient/webClient.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
 
-* Configuration file: hhttps://github.com/ivankravets/ethercard/blob/master/circle.yaml
+* Configuration file: https://github.com/ivankravets/ethercard/blob/master/circle.yml
 * Build History: https://circleci.com/gh/ivankravets/ethercard/tree/master
