@@ -84,9 +84,12 @@ Arduino Mega ADK has on-board debug probe and **IS READY** for debugging. You do
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_avr-stub`
+    - Yes
+    - Yes
   * - :ref:`debugging_tool_simavr`
     - Yes
-    - Yes
+    - 
 
 Frameworks
 ----------

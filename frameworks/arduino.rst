@@ -6919,6 +6919,20 @@ Microchip
       - 16MHz
       - 15.50KB
       - 1KB
+    * - :ref:`board_atmelmegaavr_ATmega1608`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA1608
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATmega1609`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA1609
+      - 16MHz
+      - 16KB
+      - 2KB
     * - :ref:`board_atmelavr_ATmega162`
       - :ref:`platform_atmelavr`
       - No
@@ -6982,6 +6996,20 @@ Microchip
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_atmelmegaavr_ATmega3208`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA3208
+      - 16MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_ATmega3209`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA3209
+      - 16MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_atmelavr_ATmega324A`
       - :ref:`platform_atmelavr`
       - On-board
@@ -7038,6 +7066,20 @@ Microchip
       - 16MHz
       - 4KB
       - 512B
+    * - :ref:`board_atmelmegaavr_ATmega4808`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA4808
+      - 16MHz
+      - 48KB
+      - 6KB
+    * - :ref:`board_atmelmegaavr_ATmega4809`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA4809
+      - 16MHz
+      - 48KB
+      - 6KB
     * - :ref:`board_atmelavr_ATmega48P`
       - :ref:`platform_atmelavr`
       - On-board
@@ -7086,6 +7128,20 @@ Microchip
       - ATMEGA8
       - 16MHz
       - 7.50KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATmega808`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA808
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATmega809`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA809
+      - 16MHz
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega8515`
       - :ref:`platform_atmelavr`

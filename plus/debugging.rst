@@ -105,6 +105,7 @@ option.
 
   debug-tools/altera-usb-blaster
   debug-tools/atmel-ice
+  debug-tools/avr-stub
   debug-tools/blackmagic
   debug-tools/cmsis-dap
   debug-tools/digilent-hs1

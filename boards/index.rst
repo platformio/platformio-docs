@@ -267,6 +267,14 @@ Atmel megaAVR
 .. toctree::
     :maxdepth: 1
         
+    atmelmegaavr/ATmega1608
+    atmelmegaavr/ATmega1609
+    atmelmegaavr/ATmega3208
+    atmelmegaavr/ATmega3209
+    atmelmegaavr/ATmega4808
+    atmelmegaavr/ATmega4809
+    atmelmegaavr/ATmega808
+    atmelmegaavr/ATmega809
     atmelmegaavr/nano_every
     atmelmegaavr/uno_wifi_rev2
 

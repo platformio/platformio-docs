@@ -84,9 +84,12 @@ Arduino Pro or Pro Mini ATmega328 (5V, 16 MHz) has on-board debug probe and **IS
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_avr-stub`
+    - Yes
+    - Yes
   * - :ref:`debugging_tool_simavr`
     - Yes
-    - Yes
+    - 
 
 Frameworks
 ----------
