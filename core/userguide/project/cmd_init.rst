@@ -154,3 +154,12 @@ Examples
     `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
 
     ...
+
+5. Initialize a new project passing working environment name and its options
+
+.. code::
+
+    > pio project init --environment native --project-option="platform=native" --project-option="build_flags=-DRELEASE=1"
+
+    The current working directory *** will be used for the new project.
+    ...
