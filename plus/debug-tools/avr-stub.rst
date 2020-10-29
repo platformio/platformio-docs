@@ -14,28 +14,14 @@
 avr-stub
 ========
 
-avr-stub is a source level debugger for Arduino - GDB stub for Atmega328 microcontroller used in Arduino Uno.
-Official reference can be found `here  <https://github.com/jdolinay/avr_debug/?utm_source=platformio&utm_medium=docs>`__.
+avr-stub is a source level debugger based on GDB stub mechanism. It works with ATmega328
+and Arduino Mega microcontrollers without an external programmer. The official reference
+can be found `here  <https://github.com/jdolinay/avr_debug/?utm_source=platformio&utm_medium=docs>`__.
 
 .. contents:: Contents
     :local:
 
-Configuration
--------------
-
-You can configure debugging tool using :ref:`projectconf_debug_tool` option in
-:ref:`projectconf`:
-
-.. code-block:: ini
-
-    [env:myenv]
-    platform = ...
-    board = ...
-    debug_tool = avr-stub
-
-More options:
-
-* :ref:`projectconf_section_env_debug`
+.. include:: avr-stub_extra.rst
 
 .. begin_platforms
 
