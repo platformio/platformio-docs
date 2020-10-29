@@ -1381,7 +1381,7 @@ Packages
       - Arm Mbed OS is a platform operating system designed for the internet of things
 
     * - `framework-spl <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890?utm_source=platformio.org&utm_medium=docs>`__
-      - Standard Peripheral Library for STM32 and GD32 MCUs
+      - Standard Peripheral Library for ST STM32 microcontrollers
 
     * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?utm_source=platformio.org&utm_medium=docs>`__
       - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform which simplifies and speeds up developers’ work.

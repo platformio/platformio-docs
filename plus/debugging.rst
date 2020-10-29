@@ -204,7 +204,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -1830,7 +1830,7 @@ Digilent
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB

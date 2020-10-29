@@ -81,8 +81,8 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoespressif8266 <https://github.com/tasmota/Arduino/tree/2.7.4.3?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework for Tasmota (ESP8266 Core)
+    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Espressif ESP8266 microcontrollers
 
     * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK.git?utm_source=platformio.org&utm_medium=docs>`__
       - Espressif ESP8266 Non-OS SDK
@@ -93,8 +93,8 @@ Packages
     * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
       - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
-    * - `tool-esptool <https://github.com/volca/esptool-ck?utm_source=platformio.org&utm_medium=docs>`__
-      - esptool-ck
+    * - `tool-esptool <https://github.com/igrr/esptool-ck.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Espressif ESP8266 build/flash helper tool
 
     * - `tool-esptoolpy <https://github.com/espressif/esptool.git?utm_source=platformio.org&utm_medium=docs>`__
       - Espressif ESP8266 and ESP32 serial bootloader utility
