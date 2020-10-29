@@ -68,6 +68,7 @@ Uploading
 ---------
 Arduino Nano 33 BLE supports the next uploading protocols:
 
+* ``blackmagic``
 * ``cmsis-dap``
 * ``jlink``
 * ``nrfjprog``
@@ -107,9 +108,12 @@ Arduino Nano 33 BLE does not have on-board debug probe and **IS NOT READY** for 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_cmsis-dap`
+  * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

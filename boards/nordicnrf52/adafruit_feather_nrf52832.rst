@@ -68,6 +68,8 @@ Uploading
 ---------
 Adafruit Bluefruit nRF52832 Feather supports the next uploading protocols:
 
+* ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``nrfjprog``
 * ``nrfutil``
@@ -106,9 +108,15 @@ Adafruit Bluefruit nRF52832 Feather does not have on-board debug probe and **IS 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_jlink`
+  * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
   * - :ref:`debugging_tool_stlink`
     - 
     - 

@@ -208,3 +208,21 @@ Microchip
       - 16MHz
       - 8KB
       - 1KB
+    * - :ref:`board_atmelmegaavr_avr_iot_wg`
+      - No
+      - ATMEGA4808
+      - 16MHz
+      - 48KB
+      - 6KB
+    * - :ref:`board_atmelmegaavr_curiosity_nano_4809`
+      - No
+      - ATMEGA4809
+      - 16MHz
+      - 48KB
+      - 6KB
+    * - :ref:`board_atmelmegaavr_xplained_pro_4809`
+      - No
+      - ATMEGA4809
+      - 16MHz
+      - 48KB
+      - 6KB

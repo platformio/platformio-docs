@@ -275,8 +275,11 @@ Atmel megaAVR
     atmelmegaavr/ATmega4809
     atmelmegaavr/ATmega808
     atmelmegaavr/ATmega809
+    atmelmegaavr/avr_iot_wg
     atmelmegaavr/nano_every
     atmelmegaavr/uno_wifi_rev2
+    atmelmegaavr/curiosity_nano_4809
+    atmelmegaavr/xplained_pro_4809
 
 Atmel SAM
 ---------

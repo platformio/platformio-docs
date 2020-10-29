@@ -7192,6 +7192,27 @@ Microchip
       - 9MHz
       - 1KB
       - 64B
+    * - :ref:`board_atmelmegaavr_avr_iot_wg`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA4808
+      - 16MHz
+      - 48KB
+      - 6KB
+    * - :ref:`board_atmelmegaavr_curiosity_nano_4809`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA4809
+      - 16MHz
+      - 48KB
+      - 6KB
+    * - :ref:`board_atmelmegaavr_xplained_pro_4809`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATMEGA4809
+      - 16MHz
+      - 48KB
+      - 6KB
 
 Microduino
 ~~~~~~~~~~
