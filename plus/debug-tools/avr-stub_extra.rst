@@ -37,7 +37,7 @@ use avr-stub, the following settings in :ref:`projectconf`:
 Where the value in :ref:`projectconf_debug_port` is a serial port connected to your
 board and ``jdolinay/avr-debugger`` is a special library that implements the GDB stub.
 
-In order to enable the GDB stub in your application, a call to special function
+In order to enable the GDB stub in your application, a call to the special function
 ``debug_init`` must be added at the beginning of your application. For example, with
 the Arduino framework it might look like this:
 
@@ -106,7 +106,7 @@ The avr-stub tool supports the following three breakpoint modes:
       - ``2``
 
 To switch between modes, specify a special macro definition ``AVR8_BREAKPOINT_MODE``
-with appropriate value from the table above, for example:
+with the appropriate value from the table above, for example:
 
 .. code-block:: ini
 
