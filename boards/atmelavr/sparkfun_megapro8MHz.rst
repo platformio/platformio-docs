@@ -84,9 +84,12 @@ SparkFun Mega Pro 3.3V/8MHz has on-board debug probe and **IS READY** for debugg
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_avr-stub`
+    - Yes
+    - Yes
   * - :ref:`debugging_tool_simavr`
     - Yes
-    - Yes
+    - 
 
 Frameworks
 ----------

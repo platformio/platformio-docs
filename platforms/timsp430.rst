@@ -174,7 +174,7 @@ Packages
       - Energia Wiring-based Framework for Texas Instruments MSP430 microcontrollers
 
     * - `tool-dslite <http://www.ti.com/tool/UNIFLASH?utm_source=platformio.org&utm_medium=docs>`__
-      - Uniflash Standalone Flash Tool for TI Microcontrollers, Sitara Processors & SimpleLink devices
+      - Texas Instruments DSLite (UniFlash)
 
     * - `tool-mspdebug <https://dlbeer.co.nz/mspdebug/?utm_source=platformio.org&utm_medium=docs>`__
       - MSPDebug is a free debugger for use with MSP430 MCUs

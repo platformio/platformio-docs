@@ -11,8 +11,8 @@
 
 .. _cmd_org_destroy:
 
-platformio org destroy
-======================
+pio org destroy
+===============
 
 .. versionadded:: 5.0
 

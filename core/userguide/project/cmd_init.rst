@@ -11,8 +11,8 @@
 
 .. _cmd_project_init:
 
-platformio project init
-=======================
+pio project init
+================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio project init [OPTIONS]
     pio project init [OPTIONS]
 
 
@@ -44,7 +43,7 @@ This command will create:
 Options
 -------
 
-.. program:: platformio project init
+.. program:: pio project init
 
 .. option::
     -d, --project-dir
@@ -70,7 +69,7 @@ The full list with pre-configured boards is available here :ref:`platforms`.
 Initialize PlatformIO project for the specified IDE which can be imported later
 via "Import Project" functionality.
 
-A list with supported IDE is available within ``platformio project init --help`` command.
+A list with supported IDE is available within ``pio project init --help`` command.
 Also, please take a look at :ref:`ide` page.
 
 .. option::
@@ -84,7 +83,7 @@ Update project using existing environment.
     -O, --project-option
 
 Initialize project with additional options from :ref:`projectconf`. For example,
-``platformio project init --project-option="lib_deps=ArduinoJSON"``.
+``pio project init --project-option="lib_deps=ArduinoJSON"``.
 Multiple options are allowed.
 
 .. option::
@@ -106,11 +105,11 @@ Examples
 
 .. code::
 
-    > platformio project init
+    > pio project init
 
     The current working directory *** will be used for the new project.
     You can specify another project directory via
-    `platformio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
+    `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
 
     The next files/directories will be created in ***
     platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
@@ -118,16 +117,16 @@ Examples
     lib - Put here project specific (private) libraries
     Project has been successfully initialized!
     Useful commands:
-    `platformio run` - process/build project from the current directory
-    `platformio run --target upload` or `platformio run -t upload` - upload firmware to embedded board
-    `platformio run --target clean` - clean project (remove compiled files)
+    `pio run` - process/build project from the current directory
+    `pio run --target upload` or `pio run -t upload` - upload firmware to embedded board
+    `pio run --target clean` - clean project (remove compiled files)
 
 
 2. Initialize new project in a specified directory
 
 .. code::
 
-    > platformio project init -d %PATH_TO_DIR%
+    > pio project init -d %PATH_TO_DIR%
 
     The next files/directories will be created in ***
      platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
@@ -137,21 +136,30 @@ Examples
 
 .. code::
 
-    > platformio project init --board uno
+    > pio project init --board uno
 
     The current working directory *** will be used for the new project.
     You can specify another project directory via
-    `platformio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
+    `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
     ...
 
 4. Initialize project for Teensy 3.1 board with custom :ref:`framework_mbed`
 
 .. code::
 
-    > platformio project init --board teensy31 --project-option "framework=mbed"
+    > pio project init --board teensy31 --project-option "framework=mbed"
 
     The current working directory *** will be used for the new project.
     You can specify another project directory via
-    `platformio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
+    `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
 
+    ...
+
+5. Initialize a new project passing working environment name and its options
+
+.. code::
+
+    > pio project init --environment native --project-option="platform=native" --project-option="build_flags=-DRELEASE=1"
+
+    The current working directory *** will be used for the new project.
     ...

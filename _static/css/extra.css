@@ -102,7 +102,7 @@ nav {
   position: relative;
   min-height: 50px;
   /*margin-bottom: 20px;*/
-  border: 1px solid transparent;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -556,26 +556,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-weight: 500;
 }
 
-.navbar .github-corner {
-  display: none;
-}
-
-.navbar .github-corner svg {
-  fill: #fff;
-  color: #080808;
-  position: absolute;
-  top: -1px;
-  right: 0;
-  border: 0;
-  width: 50px;
-  height: 50px;
-  transform: scale(1, 1);
-}
 
 @media screen and (min-width: 992px) {
-  .navbar .github-corner {
-    display: block;
-  }
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
@@ -589,16 +571,19 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-right: 5px;
 }
 
-.nav .nav-pio-install {
-  background-color: #398439;
+.nav .nav-pio-tech {
+  background-color: #f5822a;
+  font-weight: bold;
 }
 
-.nav .nav-pio-install:hover {
-  background-color: #449d44
+.nav .nav-pio-tech:hover {
+  background-color: #ee6d0b;
+  font-weight: bold;
 }
 
-.nav .nav-pio-install > a {
+.nav .nav-pio-tech > a {
   color: white !important;
+  font-weight: bold;
 }
 
 /* TOP Banner */

@@ -11,8 +11,8 @@
 
 .. _cmd_account_show:
 
-platformio account show
-=======================
+pio account show
+================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio account show
     pio account show
 
 Description
@@ -35,7 +34,7 @@ Show detailed information about :ref:`pioaccount`:
 Options
 ~~~~~~~
 
-.. program:: platformio account show
+.. program:: pio account show
 
 .. option::
     --json-output

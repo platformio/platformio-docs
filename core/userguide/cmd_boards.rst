@@ -11,8 +11,8 @@
 
 .. _cmd_boards:
 
-platformio boards
-=================
+pio boards
+==========
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio boards [OPTIONS] [FILTER]
     pio boards [OPTIONS] [FILTER]
 
 Description
@@ -32,7 +31,7 @@ List pre-configured Embedded Boards
 Options
 ~~~~~~~
 
-.. program:: platformio boards
+.. program:: pio boards
 
 .. option::
     --installed
@@ -51,7 +50,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio boards
+    > pio boards
 
     Platform: atmelavr
     ---------------------------------------------------------------------------
@@ -69,7 +68,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio boards arduino
+    > pio boards arduino
 
     Platform: atmelavr
     ---------------------------------------------------------------------------
@@ -88,7 +87,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio boards mbed
+    > pio boards mbed
 
     Platform: freescalekinetis
     ---------------------------------------------------------------------------
@@ -127,7 +126,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio boards atmega168
+    > pio boards atmega168
 
     Platform: atmelavr
     ---------------------------------------------------------------------------
@@ -148,7 +147,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio boards timsp430
+    > pio boards timsp430
 
     Platform: timsp430
     ---------------------------------------------------------------------------

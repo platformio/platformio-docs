@@ -114,4 +114,4 @@ or :ref:`cmd_remote_run` commands:
 * ``pio remote run -d project-B -t upload`` remote firmware (program) uploading
     using Project-B
 
-See documentation for :option:`platformio remote run --project-dir` option.
+See documentation for :option:`pio remote run --project-dir` option.

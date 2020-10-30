@@ -84,9 +84,12 @@ Arduino Mega or Mega 2560 ATmega1280 has on-board debug probe and **IS READY** f
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_avr-stub`
+    - Yes
+    - Yes
   * - :ref:`debugging_tool_simavr`
     - Yes
-    - Yes
+    - 
 
 Frameworks
 ----------

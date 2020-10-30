@@ -11,8 +11,8 @@
 
 .. _cmd_remote_run:
 
-platformio remote run
-=====================
+pio remote run
+==============
 
 **Remote Firmware Updates**
 
@@ -23,11 +23,10 @@ Usage
 
 .. code-block:: bash
 
-    platformio remote run [OPTIONS]
     pio remote run [OPTIONS]
 
     # process environments using specified PlatformIO Remote Agent
-    platformio remote --agent NAME run [OPTIONS]
+    pio remote --agent NAME run [OPTIONS]
 
 Description
 -----------
@@ -37,7 +36,7 @@ By default, :ref:`pioremote` builds project on a host machine and deploy
 final firmware (program) to a remote device (embedded board).
 
 If you need to process project on a remote machine, please use
-:option:`platformio remote run --force-remote` option. In this case,
+:option:`pio remote run --force-remote` option. In this case,
 :ref:`pioremote` will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.
 
@@ -45,7 +44,7 @@ install required toolchains, frameworks, SDKs, etc., and process project.
 Options
 -------
 
-.. program:: platformio remote run
+.. program:: pio remote run
 
 .. option::
     -e, --environment
@@ -59,7 +58,7 @@ You can also specify which environments should be processed by default using
 .. option::
     -t, --target
 
-Process specified targets. See :option:`platformio run --list-targets` documentation
+Process specified targets. See :option:`pio run --list-targets` documentation
 for available targets.
 
 .. option::
@@ -97,7 +96,7 @@ By default, :ref:`pioremote` builds project on a host machine and deploy
 final firmware (program) to remote device (embedded board).
 
 If you need to process project on remote machine, please use
-:option:`platformio remote run --force-remote` option. In this case,
+:option:`pio remote run --force-remote` option. In this case,
 :ref:`pioremote` will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.
 
@@ -106,7 +105,7 @@ Example
 
 .. code::
 
-    > platformio remote run --environment uno --target upload
+    > pio remote run --environment uno --target upload
 
     Building project locally
     [Wed Oct 26 16:35:09 2016] Processing uno (platform: atmelavr, board: uno, framework: arduino)

@@ -11,8 +11,8 @@
 
 .. _cmd_platform_search:
 
-platformio platform search
-==========================
+pio platform search
+===================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio platform search QUERY [OPTIONS]
     pio platform search QUERY [OPTIONS]
 
 Description
@@ -32,7 +31,7 @@ Search for development :ref:`platforms`
 Options
 ~~~~~~~
 
-.. program:: platformio platform search
+.. program:: pio platform search
 
 .. option::
     --json-output
@@ -47,7 +46,7 @@ Examples
 
 .. code::
 
-    > platformio platform search
+    > pio platform search
 
     atmelavr ~ Atmel AVR
     ====================
@@ -86,7 +85,7 @@ Examples
 
 .. code::
 
-    > platformio platform search texas
+    > pio platform search texas
 
     timsp430 ~ TI MSP430
     ====================
@@ -104,7 +103,7 @@ Examples
 
 .. code::
 
-    > platformio platform search framework-mbed
+    > pio platform search framework-mbed
 
     atmelsam ~ Atmel SAM
     ====================

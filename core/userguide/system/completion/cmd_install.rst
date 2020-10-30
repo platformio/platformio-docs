@@ -11,8 +11,8 @@
 
 .. _cmd_system_completion_install:
 
-platformio system completion install
-====================================
+pio system completion install
+=============================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio system completion install [OPTIONS]
     pio system completion install [OPTIONS]
 
 
@@ -33,7 +32,7 @@ Install shell completion files or code.
 Options
 ~~~~~~~
 
-.. program:: platformio system completion install
+.. program:: pio system completion install
 
 .. option::
     --shell

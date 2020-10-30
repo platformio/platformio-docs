@@ -11,8 +11,8 @@
 
 .. _cmd_upgrade:
 
-platformio upgrade
-==================
+pio upgrade
+===========
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio upgrade
     pio upgrade
 
 Description
@@ -32,7 +31,7 @@ Check or upgrade PlatformIO to the latest version
 Options
 -------
 
-.. program:: platformio upgrade
+.. program:: pio upgrade
 
 .. option::
     --dev
@@ -44,10 +43,10 @@ Examples
 
 .. code::
 
-    > platformio upgrade
+    > pio upgrade
 
     You are up-to-date!
     PlatformIO x.x.x is currently the newest version available.
 
     # If you have problem with permissions try:
-    > sudo platformio upgrade
+    > sudo pio upgrade

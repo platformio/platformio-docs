@@ -11,8 +11,8 @@
 
 .. _cmd_team_update:
 
-platformio team update
-======================
+pio team update
+===============
 
 .. versionadded:: 5.0
 
@@ -33,7 +33,7 @@ Rename a team or update the existing details.
 Options
 ~~~~~~~
 
-.. program:: platformio team update
+.. program:: pio team update
 
 .. option::
     --name

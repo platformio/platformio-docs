@@ -11,8 +11,8 @@
 
 .. _cmd_device_monitor:
 
-platformio device monitor
-=========================
+pio device monitor
+==================
 
 .. contents::
 
@@ -21,8 +21,7 @@ Usage
 
 .. code-block:: bash
 
-    platformio device monitor [OPTIONS]
-
+    pio device monitor [OPTIONS]
 
 Description
 -----------
@@ -50,7 +49,7 @@ To control *monitor* please use these "hot keys":
 Options
 -------
 
-.. program:: platformio device monitor
+.. program:: pio device monitor
 
 .. option::
     -p, --port
@@ -144,7 +143,7 @@ ASCII code of special character that is used to exit the application,
 default ``3`` (DEC, ``Ctrl+C``).
 
 For example, to use ``Ctrl+]`` run
-``platformio device monitor --exit-char 29``.
+``pio device monitor --exit-char 29``.
 
 .. option::
     --menu-char
@@ -176,7 +175,7 @@ You can also specify which environments should be processed by default using
 Filters
 -------
 
-A list of filters that can be applied for monitor output using :option:`platformio device monitor --filter` or :ref:`projectconf` and :ref:`projectconf_monitor_filters` options.
+A list of filters that can be applied for monitor output using :option:`pio device monitor --filter` or :ref:`projectconf` and :ref:`projectconf_monitor_filters` options.
 option.
 
 .. list-table::
@@ -216,7 +215,7 @@ You need to use a ``log2file`` filter from :ref:`cmd_device_monitor_filters`:
 
 .. code-block:: bash
 
-    $ platformio device monitor -f log2file -f default
+    > pio device monitor -f log2file -f default
 
 
 or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
@@ -245,8 +244,8 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio device monitor --help
-    Usage: platformio device monitor [OPTIONS]
+    > pio device monitor --help
+    Usage: pio device monitor [OPTIONS]
 
     Options:
       -p, --port TEXT       Port, a number or a device name
@@ -273,7 +272,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio device monitor
+    > pio device monitor
 
     --- Available ports:
     --- /dev/cu.Bluetooth-Incoming-Port n/a

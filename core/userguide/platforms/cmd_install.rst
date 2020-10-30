@@ -11,8 +11,8 @@
 
 .. _cmd_platform_install:
 
-platformio platform install
-===========================
+pio platform install
+====================
 
 .. contents::
 
@@ -21,26 +21,25 @@ Usage
 
 .. code-block:: bash
 
-    platformio platform install [OPTIONS] [PLATFORM...]
     pio platform install [OPTIONS] [PLATFORM...]
 
     # [PLATFORM...] forms
-    platformio platform install <name>
-    platformio platform install <name>@<version>
-    platformio platform install <name>@<version range>
-    platformio platform install <ownername>@<version>
-    platformio platform install <ownername>@<version range>
-    platformio platform install <zip or tarball url>
-    platformio platform install file://<zip or tarball file>
-    platformio platform install file://<folder>
-    platformio platform install <repository>
-    platformio platform install <name=repository> (name it should have locally)
-    platformio platform install <repository#tag> ("tag" can be commit, branch or tag)
+    pio platform install <name>
+    pio platform install <name>@<version>
+    pio platform install <name>@<version range>
+    pio platform install <ownername>@<version>
+    pio platform install <ownername>@<version range>
+    pio platform install <zip or tarball url>
+    pio platform install file://<zip or tarball file>
+    pio platform install file://<folder>
+    pio platform install <repository>
+    pio platform install <name=repository> (name it should have locally)
+    pio platform install <repository#tag> ("tag" can be commit, branch or tag)
 
 Options
 -------
 
-.. program:: platformio platform install
+.. program:: pio platform install
 
 .. option::
     --with-package
@@ -74,7 +73,7 @@ Description
 
 Install :ref:`platforms` and dependent packages.
 
-The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
+The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
 * ``^1.2.3`` - any compatible version (new functionality in a backwards compatible manner and patches are allowed, 1.x.x). **RECOMMENDED**
@@ -161,7 +160,7 @@ Examples
 
 .. code::
 
-    > platformio platform install atmelavr
+    > pio platform install atmelavr
 
     PlatformManager: Installing atmelavr
     Downloading...
@@ -183,7 +182,7 @@ Examples
 
 .. code::
 
-    > platformio platform install atmelavr --skip-default-package --with-package=uploader
+    > pio platform install atmelavr --skip-default-package --with-package=uploader
 
     PlatformManager: Installing atmelavr
     Downloading  [####################################]  100%
@@ -204,7 +203,7 @@ Examples
 
 .. code::
 
-    > platformio platform install https://github.com/platformio/platform-atmelavr.git
+    > pio platform install https://github.com/platformio/platform-atmelavr.git
 
     PlatformManager: Installing platform-atmelavr
     git version 2.7.4 (Apple Git-66)

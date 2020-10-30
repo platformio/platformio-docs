@@ -22,14 +22,14 @@ Usage
 .. code-block:: bash
 
     pio [OPTIONS] COMMAND
+    # alias of "pio"
     platformio [OPTIONS] COMMAND
 
-    # "pio" is the alias of "platformio" command
 
 Options
 -------
 
-.. program:: platformio
+.. program:: pio
 
 .. option::
     --no-ansi
@@ -52,8 +52,8 @@ Show help for the available options and commands
 
 .. code-block:: bash
 
-    $ platformio --help
-    $ platformio COMMAND --help
+    $ pio --help
+    $ pio COMMAND --help
 
 
 Commands
@@ -68,14 +68,14 @@ Commands
     cmd_check
     cmd_ci
     cmd_debug
-    platformio device <device/index>
+    pio device <device/index>
     cmd_home
-    platformio lib <lib/index>
+    pio lib <lib/index>
     org/index
     package/index
-    platformio platform <platforms/index>
-    platformio project <project/index>
-    platformio remote <remote/index>
+    pio platform <platforms/index>
+    pio project <project/index>
+    pio remote <remote/index>
     cmd_run
     cmd_settings
     system/index

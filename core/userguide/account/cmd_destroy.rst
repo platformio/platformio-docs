@@ -11,8 +11,8 @@
 
 .. _cmd_account_destroy:
 
-platformio account destroy
-==========================
+pio account destroy
+===================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio account destroy [OPTIONS]
     pio account destroy [OPTIONS]
 
 Description

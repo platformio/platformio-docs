@@ -11,8 +11,8 @@
 
 .. _cmd_platform_frameworks:
 
-platformio platform frameworks
-==============================
+pio platform frameworks
+=======================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio platform frameworks QUERY [OPTIONS]
     pio platform frameworks QUERY [OPTIONS]
 
 Description
@@ -32,7 +31,7 @@ List supported :ref:`frameworks` (SDKs, etc).
 Options
 ~~~~~~~
 
-.. program:: platformio platform frameworks
+.. program:: pio platform frameworks
 
 .. option::
     --json-output
@@ -47,7 +46,7 @@ Print all supported frameworks, SDKs, etc.
 
 .. code::
 
-    > platformio platform frameworks
+    > pio platform frameworks
 
     arduino ~ Arduino
     =================

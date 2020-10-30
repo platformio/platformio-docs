@@ -11,8 +11,8 @@
 
 .. _cmd_team_list:
 
-platformio team list
-====================
+pio team list
+=============
 
 .. versionadded:: 5.0
 
@@ -23,7 +23,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio team list [OPTIONS] [ORGNAME]
     pio team list [OPTIONS] [ORGNAME]
 
 Description
@@ -34,7 +33,7 @@ List teams and their members.
 Options
 ~~~~~~~
 
-.. program:: platformio team list
+.. program:: pio team list
 
 .. option::
     --json-output

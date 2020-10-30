@@ -55,7 +55,7 @@ Short description of the project. PlatformIO uses it for
 Type: ``String`` | Multiple: ``Yes``
 
 The :ref:`cmd_run` command processes all environments ``[env:***]`` by default
-if the :option:`platformio run --environment` option is not specified.
+if the :option:`pio run --environment` option is not specified.
 :ref:`projectconf_pio_default_envs` allows one to define which environments that
 should be processed by default.
 
@@ -382,7 +382,7 @@ This option can also be configured by the global environment variable
     If you have any problems with building your project environments which
     are defined in :ref:`projectconf`, then **TRY TO DELETE** this folder. In
     this situation you will remove all cached files without any risk. Also,
-    you can use "clean" target for :option:`platformio run --target` command.
+    you can use "clean" target for :option:`pio run --target` command.
 
 .. _projectconf_pio_libdeps_dir:
 
@@ -542,8 +542,8 @@ Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``shared``"
 machine. For example, you can share :ref:`projectconf_extra_scripts`.
 
 Please note that these folders are automatically shared between remote machine
-with :option:`platformio remote run --force-remote` or
-:option:`platformio remote test --force-remote` commands:
+with :option:`pio remote run --force-remote` or
+:option:`pio remote test --force-remote` commands:
 
 - :ref:`projectconf_pio_lib_dir`
 - :ref:`projectconf_pio_include_dir`

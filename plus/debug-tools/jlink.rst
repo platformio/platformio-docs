@@ -955,10 +955,17 @@ Boards
     * - :ref:`board_ststm32_blackpill_f401cc`
       - :ref:`platform_ststm32`
       - External
-      - STM32F401CCT6
+      - STM32F401CCU6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -1043,6 +1050,13 @@ Boards
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_ststm32_cicada_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
       - :ref:`platform_nordicnrf52`
       - External
@@ -1064,6 +1078,13 @@ Boards
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_cricket_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
       - External
@@ -1183,6 +1204,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_econode_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_nordicnrf52_electronut_blip`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -1393,6 +1421,20 @@ Boards
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_gnat_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_grasshopper_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - :ref:`platform_espressif32`
       - External

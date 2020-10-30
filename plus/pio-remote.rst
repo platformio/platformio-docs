@@ -138,7 +138,7 @@ Quick Start
     (Raspberry Pi, BeagleBoard, etc).
 
     You can share own devices/hardware with friends, team or other developers
-    using :option:`platformio remote agent start --share` option.
+    using :option:`pio remote agent start --share` option.
 
 2.  Using **host machine** (:ref:`cmd_remote`, :ref:`ide_cloud` Terminal in
     a browser, SDKs, etc.), please authorize via :ref:`cmd_account_login`
@@ -164,8 +164,8 @@ Quick Start
     to a remote machine where |PIORemote| Agent is started but supports natively
     Over-the-Air (OTA) updates. For example, :ref:`platform_espressif8266` and
     :ref:`platform_espressif_ota`. In this case, the final command for remote
-    OTA update will look as ``platformio remote run -t upload --upload-port 192.168.0.255``
-    or ``platformio remote run -t upload --upload-port myesp8266.local``.
+    OTA update will look as ``pio remote run -t upload --upload-port 192.168.0.255``
+    or ``pio remote run -t upload --upload-port myesp8266.local``.
 
 CLI Guide
 ---------

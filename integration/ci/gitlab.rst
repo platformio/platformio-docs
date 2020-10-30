@@ -56,7 +56,7 @@ This variant is default choice for native PlatformIO projects:
 
     job:
       stage: test
-      script: "platformio run -e <ID_1> -e <ID_2> -e <ID_N>"
+      script: "pio run -e <ID_1> -e <ID_2> -e <ID_N>"
 
 
 Using :ref:`cmd_ci` command
@@ -78,7 +78,7 @@ and boards from command line interface:
 
     job:
       stage: test
-      script: "platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>"
+      script: "pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>"
       variables: {PLATFORMIO_CI_SRC: "path/to/test/file.c"}
 
 
@@ -97,7 +97,7 @@ Examples
 
     .job_template: &pio_run
       script:
-        - "platformio ci --lib='.' --board=uno --board=teensy31 --board=nodemcuv2 $PLATFORMIO_CI_EXTRA_ARGS"
+        - "pio ci --lib='.' --board=uno --board=teensy31 --board=nodemcuv2 $PLATFORMIO_CI_EXTRA_ARGS"
 
     before_script:
       - "pip install -U platformio"

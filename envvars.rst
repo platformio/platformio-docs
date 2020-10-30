@@ -71,7 +71,7 @@ The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_FORCE_AN
 Do not print ANSI control characters.
 The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_NO_ANSI=false``.
 
-You can also use :option:`platformio --no-ansi` flag for :ref:`piocore`.
+You can also use :option:`pio --no-ansi` flag for :ref:`piocore`.
 
 .. envvar:: PLATFORMIO_DISABLE_PROGRESSBAR
 
@@ -150,7 +150,7 @@ Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_shared_di
 
 .. envvar:: PLATFORMIO_REMOTE_AGENT_DIR
 
-Allows one to override :option:`platformio remote agent start --working-dir`.
+Allows one to override :option:`pio remote agent start --working-dir`.
 
 .. envvar:: PLATFORMIO_LIB_EXTRA_DIRS
 

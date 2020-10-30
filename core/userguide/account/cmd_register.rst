@@ -11,8 +11,8 @@
 
 .. _cmd_account_register:
 
-platformio account register
-===========================
+pio account register
+====================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio account register [OPTIONS]
     pio account register [OPTIONS]
 
 Description
@@ -34,7 +33,7 @@ Options
 
 You can omit these options and enter them later in Register Wizard.
 
-.. program:: platformio account register
+.. program:: pio account register
 
 .. option::
     --username, -u

@@ -68,6 +68,8 @@ Uploading
 ---------
 Nordic nRF52840-DK (Adafruit BSP) supports the next uploading protocols:
 
+* ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``nrfjprog``
 * ``stlink``
@@ -105,6 +107,12 @@ Nordic nRF52840-DK (Adafruit BSP) has on-board debug probe and **IS READY** for 
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes

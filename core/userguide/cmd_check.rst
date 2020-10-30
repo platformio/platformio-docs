@@ -11,8 +11,8 @@
 
 .. _cmd_check:
 
-platformio check
-================
+pio check
+=========
 
 Helper command for :ref:`piocheck`.
 
@@ -23,7 +23,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio check [OPTIONS]
     pio check [OPTIONS]
 
 Description
@@ -36,7 +35,7 @@ More details about PlatformIO :ref:`piocheck`.
 Options
 -------
 
-.. program:: platformio check
+.. program:: pio check
 
 .. option::
     -e, --environment
@@ -51,7 +50,7 @@ process. By default only :ref:`projectconf_pio_src_dir` and :ref:`projectconf_pi
 are checked. Multiple ``--pattern`` options and `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
 
 
-Example: ``platformio check --pattern="tests" --pattern="src/*.cpp"``
+Example: ``pio check --pattern="tests" --pattern="src/*.cpp"``
 
 .. option::
     --flags
@@ -74,7 +73,7 @@ Individual flags for each tool can be added using a special suffix with the tool
 
 Multiple ``--flags`` options are allowed.
 
-Example: ``platformio check --flags "-DDEBUG cppcheck: --std=c++11 --platform=avr8"``
+Example: ``pio check --flags "-DDEBUG cppcheck: --std=c++11 --platform=avr8"``
 
 .. option::
     --severity
@@ -83,7 +82,7 @@ Specify the :ref:`check_severity` types which will be reported by the :ref:`chec
 Possible values described in :ref:`check_severity` section. Multiple ``--severity``
 options are allowed.
 
-Example: ``platformio check --severity=high``
+Example: ``pio check --severity=high``
 
 .. option::
     -d, --project-dir
@@ -105,11 +104,11 @@ Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
     --fail-on-defect
 
 Fail (exit with non-zero code) if there is a defect found with specified
-severity. By default exit code is the same as the exit code returned by 
-a tool selected for performing check. Possible values described in 
+severity. By default exit code is the same as the exit code returned by
+a tool selected for performing check. Possible values described in
 :ref:`check_severity` section. Multiple ``--fail-on-defect`` options are allowed.
 
-Example: ``platformio check --fail-on-defect=low --fail-on-defect=medium``
+Example: ``pio check --fail-on-defect=low --fail-on-defect=medium``
 
 .. option::
     -s, --silent

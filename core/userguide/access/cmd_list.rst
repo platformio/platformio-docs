@@ -11,8 +11,8 @@
 
 .. _cmd_access_list:
 
-platformio access list
-======================
+pio access list
+===============
 
 .. versionadded:: 5.0
 
@@ -23,7 +23,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio access list [OPTIONS] [OWNER]
     pio access list [OPTIONS] [OWNER]
 
 Description
@@ -39,7 +38,7 @@ See the examples below.
 Options
 ~~~~~~~
 
-.. program:: platformio access list
+.. program:: pio access list
 
 .. option::
     --urn-type

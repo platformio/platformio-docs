@@ -613,10 +613,15 @@ Please click on board name for the further details.
       - 256KB
       - 40KB
     * - :ref:`board_ststm32_blackpill_f401cc`
-      - STM32F401CCT6
+      - STM32F401CCU6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - STM32F407VET6
       - 168MHz
@@ -637,16 +642,31 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_cicada_l082cz`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_coreboard_f401rc`
       - STM32F401RCT6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_cricket_l082cz`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_demo_f030f4`
       - STM32F030F4P6
       - 48MHz
       - 16KB
       - 4KB
+    * - :ref:`board_ststm32_econode_l082cz`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_electrosmith_daisy`
       - STM32H750IBK6
       - 400MHz
@@ -672,6 +692,16 @@ Please click on board name for the further details.
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_gnat_l082cz`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_grasshopper_l082cz`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
       - STM32F070CBT6
       - 48MHz
@@ -1299,6 +1329,9 @@ Packages
     * - `framework-arduinoststm32-maple <https://github.com/rogerclarkmelbourne/Arduino_STM32.git?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework for ST STM32 microcontrollers (Maple Core)
 
+    * - `framework-arduinoststm32l0 <https://github.com/GrumpyOldPizza/ArduinoCore-stm32l0.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for ST STM32 microcontrollers (ST STM32L0 Core)
+
     * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&utm_medium=docs>`__
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
@@ -1698,6 +1731,25 @@ Diymore
       - 168MHz
       - 512KB
       - 128KB
+
+Econode
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_econode_l082cz`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
 
 Electrosmith
 ~~~~~~~~~~~~
@@ -2676,10 +2728,16 @@ ST
       - 128KB
     * - :ref:`board_ststm32_blackpill_f401cc`
       - External
-      - STM32F401CCT6
+      - STM32F401CCU6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - External
       - STM32F407VET6
@@ -3242,6 +3300,43 @@ ThunderPack
       - 100MHz
       - 512KB
       - 128KB
+
+Tlera Corporation
+~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_cicada_l082cz`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_cricket_l082cz`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_gnat_l082cz`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_grasshopper_l082cz`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
 
 VAE
 ~~~

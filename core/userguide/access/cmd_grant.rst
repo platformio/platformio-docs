@@ -11,8 +11,8 @@
 
 .. _cmd_access_grant:
 
-platformio access grant
-=======================
+pio access grant
+================
 
 .. versionadded:: 5.0
 
@@ -49,7 +49,7 @@ See the examples below.
 Options
 ~~~~~~~
 
-.. program:: platformio access grant
+.. program:: pio access grant
 
 .. option::
     --urn-type

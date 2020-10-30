@@ -11,8 +11,8 @@
 
 .. _cmd_update:
 
-platformio update
-=================
+pio update
+==========
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio update [OPTIONS]
     pio update [OPTIONS]
 
 
@@ -37,7 +36,7 @@ Check or update installed PlatformIO Core packages, :ref:`platforms` and global
 Options
 -------
 
-.. program:: platformio update
+.. program:: pio update
 
 .. option::
     --core-packages
@@ -61,7 +60,7 @@ Examples
 
 .. code::
 
-    > platformio update
+    > pio update
 
     Platform Manager
     ================

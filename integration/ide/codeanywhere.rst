@@ -78,10 +78,10 @@ Let's create our first PlatformIO-based Codeanywhere Project
 
     .. code-block:: bash
 
-        platformio project init --board <ID>
+        pio project init --board <ID>
 
         # initialize project for Arduino Uno
-        platformio project init --board uno
+        pio project init --board uno
 
     To get board ``ID`` please use :ref:`cmd_boards` command or
     `Embedded Boards Explorer <https://platformio.org/boards>`_.
@@ -230,4 +230,4 @@ or :ref:`cmd_remote_run` commands:
 * ``pio remote run -d project-B -t upload`` remote firmware (program) uploading
     using Project-B
 
-See documentation for :option:`platformio remote run --project-dir` option.
+See documentation for :option:`pio remote run --project-dir` option.

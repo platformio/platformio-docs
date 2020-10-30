@@ -21,7 +21,7 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vs
 
 **Requirements:**
     - Downloaded and installed :ref:`ide_vscode`
-    - `ESP32-DevKitC <https://www.espressif.com/en/products/hardware/esp32-devkitc/overview>`_ development board
+    - :ref:`board_espressif32_esp32dev`
     - :ref:`debugging_tool_olimex-arm-usb-ocd` or :ref:`debugging_tool_olimex-jtag-tiny` adapter for debugging
 
 
@@ -35,7 +35,7 @@ First, we need to create a new project using the PlatformIO Home Page (to open t
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-1.png
 
-Next, we need to select ``ESP32-DevKitC`` as a development board, :ref:`framework_arduino` as a framework and a path to the project location (or use the default one):
+Next, we need to select ``Espressif ESP32 Dev Module`` as a development board, :ref:`framework_arduino` as a framework and a path to the project location (or use the default one):
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-2.png
 

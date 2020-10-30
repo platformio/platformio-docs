@@ -133,7 +133,7 @@ They can now declare the :ref:`projectconf_advanced_scripting_custom_targets`:
 * Command launcher with own arguments
 * Launch command with custom options declared in :ref:`projectconf`
 * Python callback as a target (use the power of Python interpreter and PlatformIO Build API)
-* List available project targets (including dev-platform specific and custom targets) with a new :option:`platformio run --list-targets` command
+* List available project targets (including dev-platform specific and custom targets) with a new :option:`pio run --list-targets` command
 
 See **Build System** section in :ref:`release_notes_5` release notes
 for more details.
@@ -171,8 +171,8 @@ The following commands have been changed in v5.0.
     * - :ref:`cmd_system_prune`
       - **New**. Remove unused data
     * - :ref:`cmd_project_init`
-      - Update project configuration for the specific environment using :option:`platformio project init --environment` option
+      - Update project configuration for the specific environment using :option:`pio project init --environment` option
     * - :ref:`cmd_run`
-      - List projects targets with :option:`platformio run --list-targets` option
+      - List projects targets with :option:`pio run --list-targets` option
     * - :ref:`cmd_account_destroy`
       - New command to remove permanently :ref:`pioaccount` and related data

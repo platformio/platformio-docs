@@ -50,7 +50,7 @@ of the project. This configuration file can be modified via a special target cal
 
 .. code-block:: none
 
-    platformio run -t menuconfig
+    pio run -t menuconfig
 
 .. warning::
     ESP-IDF requires some extra tools to be installed in your system in order to build
@@ -257,12 +257,12 @@ Limitations
 
 At the moment several limitations are present:
 
-* No whitespace characters allowed in project paths. This limitation is imposed by the 
+* No whitespace characters allowed in project paths. This limitation is imposed by the
   `native ESP-IDF build system <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html?highlight=spaces#step-2-get-esp-idf>`_.
   This affects users that have a whitespace in their username or added a whitespace to
   the project name. As a workaround, it's recommended to move :ref:`projectconf_pio_core_dir`
   to a folder without spaces. For example:
-  
+
   .. code-block:: ini
 
         [platformio]
@@ -272,7 +272,7 @@ At the moment several limitations are present:
         platform = espressif32
         framework = espidf
         board = esp32dev
-  
+
 * The ``src_filter`` option cannot be used. It's done to preserve compatibility with
   existing ESP-IDF projects. List of source files is specified in the project
   ``CMakeLists.txt`` file.

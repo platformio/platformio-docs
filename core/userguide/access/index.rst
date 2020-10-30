@@ -11,8 +11,8 @@
 
 .. _cmd_access:
 
-platformio access
-=================
+pio access
+==========
 
 .. versionadded:: 5.0
 
@@ -31,8 +31,7 @@ To print all available commands and options use:
 .. code-block:: bash
 
     pio access --help
-    platformio access --help
-    platformio access COMMAND --help
+    pio access COMMAND --help
 
 .. toctree::
     :maxdepth: 2

@@ -23,7 +23,7 @@ framework for the ``ESP32-DevKitC`` board.
 
 **Requirements:**
     - Downloaded and installed :ref:`ide_vscode`
-    - `ESP32-DevKitC <https://www.espressif.com/en/products/hardware/esp32-devkitc/overview>`_ development board
+    - :ref:`board_espressif32_esp32dev`
     - An external debug adapter (e.g. :ref:`debugging_tool_olimex-arm-usb-ocd`)
 
 .. contents:: Contents
@@ -36,7 +36,7 @@ Setting Up the Project
 
     .. image:: ../../_static/images/tutorials/espressif32/espidf-debugging-unit-testing-analysis-1.png
 
-#. Click on "New Project", select ``ESP32-DevKitC`` as the development board,
+#. Click on "New Project", select ``Espressif ESP32 Dev Module`` as the development board,
    :ref:`framework_espidf` as the framework and a path to the project location
    (or use the default one):
 

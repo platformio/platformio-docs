@@ -11,8 +11,8 @@
 
 .. _cmd_debug:
 
-platformio debug
-================
+pio debug
+=========
 
 Helper command for :ref:`piodebug`.
 
@@ -23,10 +23,9 @@ Usage
 
 .. code-block:: bash
 
-    platformio debug [OPTIONS]
     pio debug [OPTIONS]
 
-    # A binary shortcut for "platformio debug --interface=gdb" command
+    # A binary shortcut for "pio debug --interface=gdb" command
     piodebuggdb [GDB OPTIONS]
 
 
@@ -39,7 +38,7 @@ Prepare PlatformIO project for debugging or launch debug server.
 Options
 -------
 
-.. program:: platformio debug
+.. program:: pio debug
 
 .. option::
     -e, --environment
@@ -82,7 +81,7 @@ Examples
 
 .. code::
 
-    > platformio debug
+    > pio debug
 
     [Sun Apr 30 01:34:01 2017] Processing mzeropro (platform: atmelsam; debug_extra_cmds: b main.cpp:26; board: mzeropro; framework: arduino)
     -----------------------------------------------------------------------------------------------
@@ -114,7 +113,7 @@ Examples
 
 .. code::
 
-    > platformio debug --interface=gdb -x .pioinit
+    > pio debug --interface=gdb -x .pioinit
 
     ...
     Loading section .text, size 0x2c98 lma 0x4000

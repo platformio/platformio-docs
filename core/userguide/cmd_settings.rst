@@ -11,22 +11,21 @@
 
 .. _cmd_settings:
 
-platformio settings
-===================
+pio settings
+============
 
 Manage PlatformIO settings
 
 .. contents::
 
-platformio settings get
------------------------
+pio settings get
+----------------
 
 Usage
 ~~~~~
 
 .. code-block:: bash
 
-    platformio settings get [NAME]
     pio settings get [NAME]
 
 
@@ -155,9 +154,9 @@ Which data do we collect and why?
 
 Force verbose output when processing environments. This setting overrides
 
-* :option:`platformio run --verbose`
-* :option:`platformio ci --verbose`
-* :option:`platformio test --verbose`
+* :option:`pio run --verbose`
+* :option:`pio ci --verbose`
+* :option:`pio test --verbose`
 
 .. _setting_projects_dir:
 
@@ -176,7 +175,7 @@ Examples
 
 .. code::
 
-    > platformio settings get
+    > pio settings get
 
     Name                            Value [Default]   Description
     ------------------------------------------------------------------------------------------
@@ -196,13 +195,13 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio settings get auto_update_platforms
+    > pio settings get auto_update_platforms
     Name                            Value [Default]   Description
     ------------------------------------------------------------------------------------------
     auto_update_platforms           Yes               Automatically update platforms (Yes/No)
 
 
-platformio settings set
+pio settings set
 -----------------------
 
 Usage
@@ -210,7 +209,7 @@ Usage
 
 .. code-block:: bash
 
-    platformio settings set NAME VALUE
+    pio settings set NAME VALUE
 
 
 Description
@@ -225,14 +224,14 @@ Change to check for the new PlatformIO each day
 
 .. code-block:: bash
 
-    $ platformio settings set check_platformio_interval 1
+    > pio settings set check_platformio_interval 1
     The new value for the setting has been set!
     Name                            Value [Default]   Description
     ------------------------------------------------------------------------------------------
     check_platformio_interval       1 [3]             Check for the new PlatformIO interval (days)
 
 
-platformio settings reset
+pio settings reset
 -------------------------
 
 Usage
@@ -240,7 +239,7 @@ Usage
 
 .. code-block:: bash
 
-    platformio settings reset
+    pio settings reset
 
 
 Description
@@ -253,7 +252,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio settings reset
+    > pio settings reset
     The settings have been reset!
 
     Name                            Value [Default]   Description

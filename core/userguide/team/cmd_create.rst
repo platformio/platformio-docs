@@ -11,8 +11,8 @@
 
 .. _cmd_team_create:
 
-platformio team create
-======================
+pio team create
+===============
 
 .. versionadded:: 5.0
 
@@ -33,7 +33,7 @@ Create a new team.
 Options
 ~~~~~~~
 
-.. program:: platformio team create
+.. program:: pio team create
 
 .. option::
     --description

@@ -11,8 +11,8 @@
 
 .. _cmd_org_list:
 
-platformio org list
-===================
+pio org list
+============
 
 .. versionadded:: 5.0
 
@@ -23,7 +23,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio org list [OPTIONS] [OWNER]
     pio org list [OPTIONS] [OWNER]
 
 Description
@@ -34,7 +33,7 @@ List organizations and their owners.
 Options
 ~~~~~~~
 
-.. program:: platformio org list
+.. program:: pio org list
 
 .. option::
     --json-output

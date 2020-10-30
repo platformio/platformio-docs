@@ -20,11 +20,11 @@ a `JSON-formatted <https://www.json.org/>`_ file named ``compile_commands.json``
 contains structured data about every compilation unit in your project.
 
 :ref:`piocore` supports generating of compilation database using
-:option:`platformio run --target` command and ``compiledb`` target. For example,
+:option:`pio run --target` command and ``compiledb`` target. For example,
 
 .. code::
 
-  > platformio run -t compiledb
+  > pio run -t compiledb
 
 
 A default path for ``compile_commands.json`` is ":ref:`projectconf_pio_build_dir`/envname".

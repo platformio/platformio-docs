@@ -64,7 +64,7 @@ Run from RAM
 ^^^^^^^^^^^^
 
 This is a default behavior when you run "Upload" task in :ref:`pioide` or use
-:ref:`piocore` and :option:`platformio run --target` command with ``upload`` target.
+:ref:`piocore` and :option:`pio run --target` command with ``upload`` target.
 
 Run from RAM (without any bridge interaction)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -80,7 +80,7 @@ Run from RAM (without any bridge interaction)
     board_upload.commands = load start
 
 * Run "Upload" task in :ref:`pioide` or use :ref:`piocore` and
-  :option:`platformio run --target` command with ``upload`` target.
+  :option:`pio run --target` command with ``upload`` target.
 
 Flash and run from RAM
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -121,7 +121,7 @@ Run from Flash
     board_upload.commands = reqloop ioloop start wait
 
 * Run "Upload" task in :ref:`pioide` or use :ref:`piocore` and
-  :option:`platformio run --target` command with ``upload`` target.
+  :option:`pio run --target` command with ``upload`` target.
 
 Run from Flash (without any bridge interaction)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -141,7 +141,7 @@ Run from Flash (without any bridge interaction)
     board_upload.commands = start
 
 * Run "Upload" task in :ref:`pioide` or use :ref:`piocore` and
-  :option:`platformio run --target` command with ``upload`` target.
+  :option:`pio run --target` command with ``upload`` target.
 
 .. _platform_riscv_gap_uploadfs:
 
@@ -154,7 +154,7 @@ Uploading files to HyperFlash
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
 3. Run "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
-   and :option:`platformio run --target` command with ``uploadfs`` target.
+   and :option:`pio run --target` command with ``uploadfs`` target.
 
 Examples:
 

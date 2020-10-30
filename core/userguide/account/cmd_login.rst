@@ -11,8 +11,8 @@
 
 .. _cmd_account_login:
 
-platformio account login
-=========================
+pio account login
+=================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio account login [OPTIONS]
     pio account login [OPTIONS]
 
 Description
@@ -34,7 +33,7 @@ very useful for :ref:`ci` systems and :ref:`pioremote` operations.
 Options
 ~~~~~~~
 
-.. program:: platformio account login
+.. program:: pio account login
 
 .. option::
     --username, -u

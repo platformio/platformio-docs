@@ -27,7 +27,7 @@ Custom options for :ref:`cmd_device_monitor` command.
 Type: ``String`` | Multiple: ``No``
 
 Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
-See :option:`platformio device monitor --port`. To print all available serial ports please use :ref:`cmd_device_list` command.
+See :option:`pio device monitor --port`. To print all available serial ports please use :ref:`cmd_device_list` command.
 
 Please note that you can use Unix shell-style wildcards:
 
@@ -72,7 +72,7 @@ Example:
 Type: ``Integer`` | Multiple: ``No`` | Default: ``9600``
 
 A monitor speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_).
-See :option:`platformio device monitor --baud`.
+See :option:`pio device monitor --baud`.
 
 Example:
 
@@ -108,7 +108,7 @@ Example:
 
 Type: ``Integer (0 or 1)`` | Multiple: ``No``
 
-A monitor initial ``RTS`` line state. See :option:`platformio device monitor --rts`.
+A monitor initial ``RTS`` line state. See :option:`pio device monitor --rts`.
 
 .. _projectconf_monitor_dtr:
 
@@ -117,7 +117,7 @@ A monitor initial ``RTS`` line state. See :option:`platformio device monitor --r
 
 Type: ``Integer (0 or 1)`` | Multiple: ``No``
 
-A monitor initial ``DTR`` line state. See :option:`platformio device monitor --dtr`.
+A monitor initial ``DTR`` line state. See :option:`pio device monitor --dtr`.
 
 .. _projectconf_monitor_flags:
 

@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F401CCT6
+    - STM32F401CCU6
   * - **Frequency**
     - 84MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `blackpill_f401cc.json <https://github.com/platformio/platform-st
   board = blackpill_f401cc
 
   ; change microcontroller
-  board_build.mcu = stm32f401cct6
+  board_build.mcu = stm32f401ccu6
 
   ; change MCU frequency
   board_build.f_cpu = 84000000L

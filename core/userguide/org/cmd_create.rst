@@ -11,8 +11,8 @@
 
 .. _cmd_org_create:
 
-platformio org create
-=====================
+pio org create
+==============
 
 .. versionadded:: 5.0
 
@@ -33,7 +33,7 @@ Create a new organization.
 Options
 ~~~~~~~
 
-.. program:: platformio org create
+.. program:: pio org create
 
 .. option::
     --email

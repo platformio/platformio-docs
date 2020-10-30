@@ -58,7 +58,7 @@ This variant is default choice for native PlatformIO projects:
         - cmd: pip install -U platformio
 
     test_script:
-        - cmd: platformio run -e <ID_1> -e <ID_2> -e <ID_N>
+        - cmd: pio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
 Using :ref:`cmd_ci` command
@@ -84,7 +84,7 @@ and boards from command line interface:
         - cmd: pip install -U platformio
 
     test_script:
-        - cmd: platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+        - cmd: pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 
 
@@ -110,4 +110,4 @@ Examples
         - cmd: git clone https://github.com/xxxajk/spi4teensy3.git C:\spi4teensy
 
     test_script:
-        - cmd: platformio ci --lib="." --lib="C:\\spi4teensy" --board=uno --board=teensy31 --board=due
+        - cmd: pio ci --lib="." --lib="C:\\spi4teensy" --board=uno --board=teensy31 --board=due

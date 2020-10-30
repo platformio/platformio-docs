@@ -159,7 +159,21 @@ Boards
       - 48MHz
       - 32KB
       - 8KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_adafruit_clue_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_feather_nrf52840_sense`
       - :ref:`platform_nordicnrf52`
       - External
       - NRF52840
@@ -257,6 +271,13 @@ Boards
       - 204MHz
       - 8MB
       - 264KB
+    * - :ref:`board_nordicnrf52_bluey`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf51_calliope_mini`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -264,6 +285,13 @@ Boards
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nxplpc_elektor_cocorico`
       - :ref:`platform_nxplpc`
       - On-board
@@ -418,6 +446,13 @@ Boards
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_adafruit_itsybitsy_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf51_wallbot_ble`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -481,6 +516,13 @@ Boards
       - 168MHz
       - 2MB
       - 256KB
+    * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_atmelsam_moteino_zero`
       - :ref:`platform_atmelsam`
       - External
@@ -565,6 +607,34 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_nrf52840_dk_adafruit`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_particle_argon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_particle_boron`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_particle_xenon`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -656,6 +726,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf51_vbluno51`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -691,6 +768,13 @@ Boards
       - 48MHz
       - 128KB
       - 48KB
+    * - :ref:`board_nordicnrf52_hackaBLE`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_ststm32_sakuraio_evb_01`
       - :ref:`platform_ststm32`
       - On-board
@@ -719,6 +803,13 @@ Boards
       - 180MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
       - :ref:`platform_nordicnrf51`
       - On-board

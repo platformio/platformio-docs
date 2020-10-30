@@ -11,8 +11,8 @@
 
 .. _cmd_platform_show:
 
-platformio platform show
-========================
+pio platform show
+=================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio platform show PLATFORM
     pio platform show PLATFORM
 
 
@@ -36,7 +35,7 @@ Examples
 
 .. code::
 
-    > platformio platform show atmelavr
+    > pio platform show atmelavr
 
     atmelavr ~ Atmel AVR
     ====================

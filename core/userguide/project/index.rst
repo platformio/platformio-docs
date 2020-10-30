@@ -18,8 +18,8 @@ To print all available commands and options use:
 
 .. code-block:: bash
 
-    platformio project --help
-    platformio project COMMAND --help
+    pio project --help
+    pio project COMMAND --help
 
 
 .. toctree::

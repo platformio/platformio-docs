@@ -36,7 +36,7 @@ If you need to build a project in ``debug`` configuration, please use one of
 these options:
 
 * Add :ref:`projectconf_build_type` with ``debug`` value to :ref:`projectconf`
-* Use target ``debug`` for the :option:`platformio run --target` command.
+* Use target ``debug`` for the :option:`pio run --target` command.
 
 .. note::
   :ref:`piodebug` automatically switches to ``debug`` configuration when you do

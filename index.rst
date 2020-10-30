@@ -20,11 +20,10 @@ Professional collaborative platform for embedded development
 * Multi-platform and Multi-architecture Build System
 * Firmware File Explorer and Memory Inspection.
 
-**Social:** `Twitter <https://twitter.com/PlatformIO_Org>`_ |
-`LinkedIn <https://www.linkedin.com/company/platformio/>`_ |
+**Social:** `LinkedIn <https://www.linkedin.com/company/platformio/>`_ |
+`Twitter <https://twitter.com/PlatformIO_Org>`_ |
 `Facebook <https://www.facebook.com/platformio>`_ |
-`Bintray <https://bintray.com/platformio>`_ |
-`Community <https://community.platformio.org>`_
+`Community Forums <https://community.platformio.org>`_
 
 Contents
 --------

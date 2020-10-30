@@ -54,7 +54,7 @@ A name of a library.
 *Required* | Type: ``String`` | Max. Length: 20
 
 A version of a current library source code. Can contain a-z, digits, dots or
-dash and should be `Semantic Versioning <http://semver.org>`_ compatible.
+dash and should be `Semantic Versioning <http://semver.org>`__ compatible.
 
 Example:
 
@@ -310,7 +310,7 @@ Allowed requirements for dependent library:
 * ``frameworks`` | Type: ``String`` or ``Array`` – project compatible :ref:`frameworks`
 * ``platforms`` | Type: ``String`` or ``Array`` – project compatible :ref:`platforms`
 
-The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
+The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`__ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
 * ``1.2.3`` - an exact version number. Use only this exact version

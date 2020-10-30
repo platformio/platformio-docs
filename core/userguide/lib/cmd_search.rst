@@ -11,7 +11,7 @@
 
 .. _cmd_lib_search:
 
-platformio lib search
+pio lib search
 =====================
 
 .. contents::
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib search [OPTIONS] [QUERY]
     pio lib search [OPTIONS] [QUERY]
 
 Description
@@ -72,7 +71,7 @@ For more detail information please go to
 Options
 -------
 
-.. program:: platformio lib search
+.. program:: pio lib search
 
 .. option::
     --id
@@ -109,7 +108,7 @@ Filter libraries by specified keyword
 
 Filter libraries by header file (include)
 
-For example, ``platformio lib search --header "OneWire.h"``
+For example, ``pio lib search --header "OneWire.h"``
 
 .. option::
     --json-output
@@ -129,7 +128,7 @@ Examples
 
 .. code::
 
-    > platformio lib search
+    > pio lib search
 
     Found N libraries:
 
@@ -182,7 +181,7 @@ Examples
 
 .. code::
 
-    > platformio lib search "1-wire"
+    > pio lib search "1-wire"
 
     Found N libraries:
 
@@ -213,7 +212,7 @@ Examples
 
 .. code::
 
-    > platformio lib search "i2c" --framework="arduino"
+    > pio lib search "i2c" --framework="arduino"
 
     Found N libraries:
 
@@ -254,7 +253,7 @@ Examples
 
 .. code::
 
-    > platformio lib search --keyword="web" --keyword="http"
+    > pio lib search --keyword="web" --keyword="http"
 
     Found N libraries:
 
@@ -305,7 +304,7 @@ Examples
 
 .. code::
 
-    > platformio lib search --author="Adafruit Industries"
+    > pio lib search --author="Adafruit Industries"
 
     Found N libraries:
 
@@ -337,7 +336,7 @@ Examples
 
 .. code::
 
-    > platformio lib search "DS*"
+    > pio lib search "DS*"
 
     Found N libraries:
 
@@ -370,7 +369,7 @@ Examples
 
 .. code::
 
-    > platformio lib search "+(nRF24 HttpClient)" --framework="arduino"
+    > pio lib search "+(nRF24 HttpClient)" --framework="arduino"
 
     Found N libraries:
 
@@ -412,7 +411,7 @@ Examples
 
 .. code::
 
-    > platformio lib search "sensor -temperature"
+    > pio lib search "sensor -temperature"
 
     Found N libraries:
 

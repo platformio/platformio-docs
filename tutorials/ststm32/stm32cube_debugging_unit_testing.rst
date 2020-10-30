@@ -22,7 +22,7 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_at
 **Requirements:**
     - Downloaded and installed :ref:`ide_atom`
     - Install drivers for :ref:`debugging_tool_stlink` debug tool
-    - `Nucleo-F401RE <http://www.st.com/en/evaluation-tools/nucleo-f401re.html>`_ development board
+    - :ref:`board_ststm32_nucleo_f401re` development board
 
 
 .. contents:: Contents
@@ -140,7 +140,7 @@ Writing Unit Tests
 Now let’s write some tests using :ref:`unit_testing` feature that can help us
 test code directly on the target board. :ref:`unit_testing` engine by default
 supports only three frameworks: :ref:`framework_arduino`, :ref:`framework_espidf`,
-:ref:`framework_mbed`, and :ref:`framework_mbed`. Since we decided to use
+:ref:`framework_mbed`. Since we decided to use
 :ref:`framework_stm32cube` we need to implement a custom
 :ref:`projectconf_test_transport` to print testing results and specify that
 condition in :ref:`projectconf`:

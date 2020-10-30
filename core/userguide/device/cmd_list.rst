@@ -11,8 +11,8 @@
 
 .. _cmd_device_list:
 
-platformio device list
-======================
+pio device list
+===============
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio device list [OPTIONS]
     pio device list [OPTIONS]
 
 
@@ -35,7 +34,7 @@ Default is set to ``--serial`` and all available
 Options
 -------
 
-.. program:: platformio device list
+.. program:: pio device list
 
 .. option::
     --serial
@@ -65,7 +64,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio device list
+    > pio device list
     /dev/cu.SLAB_USBtoUART
     ----------
     Hardware ID: USB VID:PID=10c4:ea60 SNR=0001
@@ -81,7 +80,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio device list
+    > pio device list
     COM4
     ----------
     Hardware ID: USB VID:PID=0451:F432
@@ -97,7 +96,7 @@ Examples
 
 .. code-block:: bash
 
-    $ platformio device list --mdns --logical
+    > pio device list --mdns --logical
     Multicast DNS Services
     ======================
 

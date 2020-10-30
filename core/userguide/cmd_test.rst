@@ -11,8 +11,8 @@
 
 .. _cmd_test:
 
-platformio test
-===============
+pio test
+========
 
 Helper command for local :ref:`unit_testing`.
 
@@ -23,7 +23,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio test [OPTIONS]
     pio test [OPTIONS]
 
 Description
@@ -38,12 +37,12 @@ in :ref:`projectconf`.
 Options
 -------
 
-.. program:: platformio test
+.. program:: pio test
 
 .. option::
     -e, --environment
 
-Process specified environments. More details :option:`platformio run --environment`
+Process specified environments. More details :option:`pio run --environment`
 
 .. option::
     -f, --filter
@@ -71,7 +70,7 @@ environment, please take a look at :ref:`projectconf_test_filter` option from
     * - ``[!seq]``
       - matches any character not in seq
 
-For example, ``platformio test --filter "mytest*" -i "test[13]"``
+For example, ``pio test --filter "mytest*" -i "test[13]"``
 
 .. option::
     -i, --ignore
@@ -99,7 +98,7 @@ environment, please take a look at :ref:`projectconf_test_ignore` option from
     * - ``[!seq]``
       - matches any character not in seq
 
-For example, ``platformio test --ignore "mytest*" -i "test[13]"``
+For example, ``pio test --ignore "mytest*" -i "test[13]"``
 
 .. option::
     --upload-port

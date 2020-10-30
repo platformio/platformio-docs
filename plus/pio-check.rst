@@ -138,4 +138,4 @@ of these commands can be found here:
 .. toctree::
   :maxdepth: 3
 
-  platformio check <../core/userguide/cmd_check>
+  pio check <../core/userguide/cmd_check>

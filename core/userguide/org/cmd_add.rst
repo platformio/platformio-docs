@@ -11,8 +11,8 @@
 
 .. _cmd_org_add:
 
-platformio org add
-==================
+pio org add
+===========
 
 .. versionadded:: 5.0
 

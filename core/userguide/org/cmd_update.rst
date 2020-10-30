@@ -11,8 +11,8 @@
 
 .. _cmd_org_update:
 
-platformio org update
-=====================
+pio org update
+==============
 
 .. versionadded:: 5.0
 
@@ -33,7 +33,7 @@ Rename the organization or update the existing details.
 Options
 ~~~~~~~
 
-.. program:: platformio org update
+.. program:: pio org update
 
 .. option::
     --orgname

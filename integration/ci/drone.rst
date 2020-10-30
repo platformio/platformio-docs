@@ -49,7 +49,7 @@ fields for your project in the Drone control panel):
 .. code-block:: bash
 
     pip install -U platformio
-    platformio run -e <ID_1> -e <ID_2> -e <ID_N>
+    pio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
 Using :ref:`cmd_ci` command
@@ -72,7 +72,7 @@ and boards from command line interface:
 .. code-block:: bash
 
     pip install -U platformio
-    platformio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+    pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 .. image:: ../../_static/images/droneci-platformio-integration-1.png
 
@@ -96,6 +96,6 @@ Examples
     pip install -U platformio
     wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip
     unzip /tmp/spi4teensy3.zip -d /tmp
-    platformio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
+    pio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
 
 .. image:: ../../_static/images/droneci-platformio-integration-2.png

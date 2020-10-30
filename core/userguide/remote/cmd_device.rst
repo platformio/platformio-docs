@@ -11,8 +11,8 @@
 
 .. _cmd_remote_device:
 
-platformio remote device
-========================
+pio remote device
+=================
 
 **Remote Device: monitor remote device or list existing.**
 
@@ -20,7 +20,7 @@ platformio remote device
 
 .. _cmd_remote_device_list:
 
-platformio remote device list
+pio remote device list
 -----------------------------
 
 Usage
@@ -28,11 +28,10 @@ Usage
 
 .. code-block:: bash
 
-    platformio remote device list [OPTIONS]
     pio remote device list [OPTIONS]
 
     # List devices from the specified agents. Multiple agents are allowed.
-    platformio remote --agent NAME device list [OPTIONS]
+    pio remote --agent NAME device list [OPTIONS]
 
 Description
 ~~~~~~~~~~~
@@ -42,22 +41,22 @@ machines where :ref:`cmd_remote_agent` is started.
 
 You can list devices from the specified remote machines using ``--agent NAME``
 option between "remote" & "device" sub-commands. For example, you have run
-:option:`platformio remote agent start --name` command with "home" and "office"
+:option:`pio remote agent start --name` command with "home" and "office"
 options:
 
-* ``platformio remote agent start --name home``
-* ``platformio remote agent start --name office``
+* ``pio remote agent start --name home``
+* ``pio remote agent start --name office``
 
 Now, to list devices from office machine please use
-``platformio remote --agent office device list``.
+``pio remote --agent office device list``.
 
 Multiple agents are allowed (
-``platformio remote --agent lab1 --agent lab3 device ...``).
+``pio remote --agent lab1 --agent lab3 device ...``).
 
 Options
 ~~~~~~~
 
-.. program:: platformio remote device list
+.. program:: pio remote device list
 
 .. option::
     --json-output
@@ -70,7 +69,7 @@ Example
 
 .. code::
 
-    > platformio remote device list
+    > pio remote device list
 
     Agent innomac.local
     ===================
@@ -102,7 +101,7 @@ Example
 
 .. _cmd_remote_device_monitor:
 
-platformio remote device monitor
+pio remote device monitor
 --------------------------------
 
 **Remote Serial Port Monitor**
@@ -112,12 +111,11 @@ Usage
 
 .. code-block:: bash
 
-    platformio remote device monitor [OPTIONS]
     pio remote device monitor [OPTIONS]
 
     # Connect to a specified agent
-    platformio remote --agent NAME device monitor [OPTIONS]
-    platformio remote -a NAME device monitor [OPTIONS]
+    pio remote --agent NAME device monitor [OPTIONS]
+    pio remote -a NAME device monitor [OPTIONS]
 
 
 Description
@@ -135,7 +133,7 @@ To control *monitor* please use these "hot keys":
 Options
 ~~~~~~~
 
-.. program:: platformio remote device monitor
+.. program:: pio remote device monitor
 
 .. option::
     -p, --port
@@ -214,7 +212,7 @@ ASCII code of special character that is used to exit the application,
 default ``3`` (DEC, ``Ctrl+C``).
 
 For example, to use ``Ctrl+]`` run
-``platformio remote device monitor --exit-char 29``.
+``pio remote device monitor --exit-char 29``.
 
 .. option::
     --menu-char
@@ -248,9 +246,9 @@ Examples
 
 .. code::
 
-    > platformio remote device monitor --help
+    > pio remote device monitor --help
 
-    Usage: platformio remote device monitor [OPTIONS]
+    Usage: pio remote device monitor [OPTIONS]
 
     Options:
       -p, --port TEXT       Port, a number or a device name
@@ -277,7 +275,7 @@ Examples
 
 .. code::
 
-    > platformio remote device monitor
+    > pio remote device monitor
 
     --- Available ports:
     --- /dev/cu.Bluetooth-Incoming-Port n/a

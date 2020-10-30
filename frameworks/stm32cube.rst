@@ -674,10 +674,16 @@ Please click on board name for the further details.
       - 40KB
     * - :ref:`board_ststm32_blackpill_f401cc`
       - :ref:`platform_ststm32`
-      - STM32F401CCT6
+      - STM32F401CCU6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -702,18 +708,36 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_cicada_l082cz`
+      - :ref:`platform_ststm32`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_coreboard_f401rc`
       - :ref:`platform_ststm32`
       - STM32F401RCT6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_cricket_l082cz`
+      - :ref:`platform_ststm32`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_demo_f030f4`
       - :ref:`platform_ststm32`
       - STM32F030F4P6
       - 48MHz
       - 16KB
       - 4KB
+    * - :ref:`board_ststm32_econode_l082cz`
+      - :ref:`platform_ststm32`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_electrosmith_daisy`
       - :ref:`platform_ststm32`
       - STM32H750IBK6
@@ -744,6 +768,18 @@ Please click on board name for the further details.
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_gnat_l082cz`
+      - :ref:`platform_ststm32`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_grasshopper_l082cz`
+      - :ref:`platform_ststm32`
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
       - :ref:`platform_ststm32`
       - STM32F070CBT6
@@ -1647,6 +1683,27 @@ Diymore
       - 168MHz
       - 512KB
       - 128KB
+
+Econode
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_econode_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
 
 Electrosmith
 ~~~~~~~~~~~~
@@ -2742,10 +2799,17 @@ ST
     * - :ref:`board_ststm32_blackpill_f401cc`
       - :ref:`platform_ststm32`
       - External
-      - STM32F401CCT6
+      - STM32F401CCU6
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -3355,6 +3419,48 @@ ThunderPack
       - 100MHz
       - 512KB
       - 128KB
+
+Tlera Corporation
+~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_cicada_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_cricket_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_gnat_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
+    * - :ref:`board_ststm32_grasshopper_l082cz`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L082CZY6
+      - 32MHz
+      - 192KB
+      - 20KB
 
 VAE
 ~~~

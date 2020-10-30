@@ -11,8 +11,8 @@
 
 .. _cmd_account_forgot:
 
-platformio account forgot
-=========================
+pio account forgot
+==================
 
 .. contents::
 
@@ -21,7 +21,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio account forgot [OPTIONS]
     pio account forgot [OPTIONS]
 
 Description
@@ -33,7 +32,7 @@ were specified for registration.
 Options
 ~~~~~~~
 
-.. program:: platformio account forgot
+.. program:: pio account forgot
 
 .. option::
     --username, -u

@@ -11,8 +11,8 @@
 
 .. _cmd_system_info:
 
-platformio system info
-======================
+pio system info
+===============
 
 .. versionadded:: 5.0
 
@@ -24,7 +24,6 @@ Usage
 
 .. code-block:: bash
 
-    platformio system info
     pio system info
 
 Description
@@ -35,7 +34,7 @@ Display PlatformIO system-wide information
 Options
 -------
 
-.. program:: platformio system info
+.. program:: pio system info
 
 .. option::
     --json-output

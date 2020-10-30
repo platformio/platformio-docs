@@ -226,7 +226,7 @@ and run :ref:`cmd_home` command:
 
 .. code-block:: shell
 
-    platformio -c clion home
+    pio -c clion home
 
 .. image:: ../../_static/images/ide/clion/ide-platformio-clion-piohome-terminal.png
 

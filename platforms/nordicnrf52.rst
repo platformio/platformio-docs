@@ -305,7 +305,7 @@ Packages
       - Description
 
     * - `framework-arduino-nrf52-mbedos <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino framework supporting mbed-enabled boards (nRF52 core)
+      - Arduino framework supporting mbed-enabled boards
 
     * - `framework-arduinoadafruitnrf52 <https://github.com/adafruit/Adafruit_nRF52_Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework for Nordic Semiconductor nRF52 BLE SoC

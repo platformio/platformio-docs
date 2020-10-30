@@ -84,9 +84,12 @@ OpenEnergyMonitor emonPi has on-board debug probe and **IS READY** for debugging
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_avr-stub`
+    - Yes
+    - Yes
   * - :ref:`debugging_tool_simavr`
     - Yes
-    - Yes
+    - 
 
 Frameworks
 ----------

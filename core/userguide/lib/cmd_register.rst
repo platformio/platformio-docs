@@ -11,8 +11,8 @@
 
 .. _cmd_lib_register:
 
-platformio lib register
-=======================
+pio lib register
+================
 
 **DEPRECATED**.
 

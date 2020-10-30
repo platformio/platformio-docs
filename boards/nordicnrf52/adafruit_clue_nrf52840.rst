@@ -68,6 +68,7 @@ Uploading
 ---------
 Adafruit CLUE nRF52840 supports the next uploading protocols:
 
+* ``blackmagic``
 * ``cmsis-dap``
 * ``jlink``
 * ``nrfjprog``
@@ -107,9 +108,12 @@ Adafruit CLUE nRF52840 does not have on-board debug probe and **IS NOT READY** f
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_cmsis-dap`
+  * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

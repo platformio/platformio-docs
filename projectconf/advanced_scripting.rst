@@ -158,7 +158,7 @@ The PlatformIO Build System has a rich API that allows one to attach different p
 actions (hooks) using ``env.AddPreAction(target, callback)`` or
 ``env.AddPreAction(target, [callback1, callback2, ...])`` function. The first
 argument ``target`` can be the name of a target that is passed using the
-:option:`platformio run --target` command, the name of a built-in target
+:option:`pio run --target` command, the name of a built-in target
 (buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or the path
 to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
@@ -342,8 +342,8 @@ lot of use cases for them:
 - Launch command with custom options declared in :ref:`projectconf`
 - Python callback as a target (use the power of Python interpreter and PlatformIO Build API).
 
-A custom target can be processed using :option:`platformio run --target` option and
-you can list them via :option:`platformio run --list-targets` command.
+A custom target can be processed using :option:`pio run --target` option and
+you can list them via :option:`pio run --list-targets` command.
 
 Build System API
 ^^^^^^^^^^^^^^^^
@@ -469,7 +469,7 @@ Target with options
 '''''''''''''''''''
 
 Let's create a simple ``ping`` target and process it with
-``platformio run --target ping`` command:
+``pio run --target ping`` command:
 
 ``platformio.ini``:
 
@@ -604,7 +604,7 @@ Custom upload tool
 
 You can override default upload command of development platform using extra
 script. There is the common environment variable ``UPLOADCMD`` which PlatformIO
-Build System will handle when you :ref:`platformio run -t upload <cmd_run>`.
+Build System will handle when you :ref:`pio run -t upload <cmd_run>`.
 
 Please note that some development platforms can have more than 1 upload command.
 For example, :ref:`platform_atmelavr` has ``UPLOADHEXCMD``
@@ -889,3 +889,29 @@ custom flags. See example below where we override ``-Og`` with ``-O0``:
           for i, flag in enumerate(env[scope]):
              if flag == "-Og":
                 env[scope][i] = "-O0"
+
+Extra Python packages
+^^^^^^^^^^^^^^^^^^^^^
+
+If your project depends on the extra Python packages, you can use extra script to
+install them into the same virtual environment where :ref:`piocore` is installed.
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:my_env]
+    platform = ...
+    extra_scripts = extra_script.py
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    Import("env")
+
+    # List installed packages
+    env.Execute("$PYTHONEXE -m pip list")
+
+    # Install custom packages from the PyPi registry
+    env.Execute("$PYTHONEXE -m pip install pkg1 pkg2")

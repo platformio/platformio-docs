@@ -25,9 +25,8 @@ To print all available commands and options use:
 
 .. code-block:: bash
 
-    platformio system completion --help
-    platformio system completion COMMAND --help
     pio system completion --help
+    pio system completion COMMAND --help
 
 
 .. toctree::

@@ -11,8 +11,8 @@
 
 .. _cmd_lib_update:
 
-platformio lib update
-=====================
+pio lib update
+==============
 
 .. contents::
 
@@ -21,31 +21,30 @@ Usage
 
 .. code-block:: bash
 
-    platformio lib [STORAGE_OPTIONS] update [OPTIONS]
     pio lib [STORAGE_OPTIONS] update [OPTIONS]
 
     # update all project libraries
     # (run it from a project root where is located "platformio.ini")
-    platformio lib update [OPTIONS]
+    pio lib update [OPTIONS]
 
     # update project dependent library
-    platformio lib [STORAGE_OPTIONS] update [OPTIONS] [LIBRARY...]
+    pio lib [STORAGE_OPTIONS] update [OPTIONS] [LIBRARY...]
 
     # update library in global storage
-    platformio lib --global update [OPTIONS] [LIBRARY...]
-    platformio lib -g update [OPTIONS] [LIBRARY...]
+    pio lib --global update [OPTIONS] [LIBRARY...]
+    pio lib -g update [OPTIONS] [LIBRARY...]
 
     # update library in custom storage
-    platformio lib --storage-dir /path/to/dir update [OPTIONS] [LIBRARY...]
-    platformio lib -d /path/to/dir update [OPTIONS] [LIBRARY...]
+    pio lib --storage-dir /path/to/dir update [OPTIONS] [LIBRARY...]
+    pio lib -d /path/to/dir update [OPTIONS] [LIBRARY...]
 
     # [LIBRARY...] forms
-    platformio lib [STORAGE_OPTIONS] update <id>
-    platformio lib [STORAGE_OPTIONS] update <id>@<version>
-    platformio lib [STORAGE_OPTIONS] update <id>@<version range>
-    platformio lib [STORAGE_OPTIONS] update <name>
-    platformio lib [STORAGE_OPTIONS] update <name>@<version>
-    platformio lib [STORAGE_OPTIONS] update <name>@<version range>
+    pio lib [STORAGE_OPTIONS] update <id>
+    pio lib [STORAGE_OPTIONS] update <id>@<version>
+    pio lib [STORAGE_OPTIONS] update <id>@<version range>
+    pio lib [STORAGE_OPTIONS] update <name>
+    pio lib [STORAGE_OPTIONS] update <name>@<version>
+    pio lib [STORAGE_OPTIONS] update <name>@<version range>
 
 
 Description
@@ -53,7 +52,7 @@ Description
 
 Check or update installed libraries.
 
-The ``version`` supports `Semantic Versioning <http://semver.org>`_ (
+The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`_ (
 ``<major>.<minor>.<patch>``) and can take any of the following forms:
 
 * ``1.2.3`` - an exact version number. Use only this exact version
@@ -73,7 +72,7 @@ See base options for :ref:`cmd_lib`.
 Options
 -------
 
-.. program:: platformio lib update
+.. program:: pio lib update
 
 .. option::
     -c, --only-check
@@ -98,7 +97,7 @@ Examples
 
 .. code::
 
-    > platformio lib -g update
+    > pio lib -g update
 
     Library Storage: /storage/dir/...
     Updating ESP8266_SSD1306 @ 3.2.3:   [Up-to-date]
@@ -127,7 +126,7 @@ Examples
 
 .. code::
 
-    > platformio lib -g update Json 4
+    > pio lib -g update Json 4
 
     Library Storage: /storage/dir/...
     Updating Json @ 5.6.4:  [Up-to-date]

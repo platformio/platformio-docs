@@ -424,7 +424,7 @@ Uploading files to Filesystem
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
 3. Run "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
-   and :option:`platformio run --target` command with ``uploadfs`` target.
+   and :option:`pio run --target` command with ``uploadfs`` target.
 
 
 To upload file system image using OTA update please specify ``upload_port`` /
@@ -469,11 +469,11 @@ Firstly, please read `What is OTA? How to use it? <https://arduino-esp8266.readt
 
 There are 2 options:
 
-* Directly specify :option:`platformio run --upload-port` in command line
+* Directly specify :option:`pio run --upload-port` in command line
 
 .. code-block:: bash
 
-    platformio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
+    pio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
 
 * Specify ``upload_port`` option in :ref:`projectconf`
 
@@ -488,8 +488,8 @@ You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
 
 For example,
 
-* ``platformio run -t upload --upload-port 192.168.0.255``
-* ``platformio run -t upload --upload-port myesp8266.local``
+* ``pio run -t upload --upload-port 192.168.0.255``
+* ``pio run -t upload --upload-port myesp8266.local``
 
 Authentication and upload options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -576,7 +576,7 @@ please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Update
         board = nodemcuv2
         framework = arduino
         platform_packages =
-            framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
+            platformio/framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
 
 3.  Try to build the project
 4.  If you see build errors, then try to build this project using the same
