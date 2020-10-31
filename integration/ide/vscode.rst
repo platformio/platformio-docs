@@ -140,17 +140,20 @@ Each button contains hint (delay mouse on it).
 3. PlatformIO: Upload
 4. PlatformIO: Clean
 5. :ref:`Serial Port Monitor <cmd_device_monitor>`
-6. PlatformIO Terminal
+6. :ref:`piocore`
 7. Project environment switcher (if more than one environment is available).
    See :ref:`projectconf_section_env` of :ref:`projectconf` .
 
-Custom Build Task
-~~~~~~~~~~~~~~~~~
+PlatformIO Core (CLI)
+---------------------
 
-You can override default "PlatformIO: Build" task for "Build" command which
-is used by "Build" button in PlatformIO Toolbar and
-:ref:`ide_vscode_keybindings`. See ``platformio-ide.buildTask`` setting
-in :ref:`ide_vscode_settings` for more details.
+There are 2 ways how to access :ref:`piocore`:
+
+1. "Terminal" icon on the :ref:`ide_vscode_toolbar`
+2. Left Activity Bar > PlatformIO (ant icon) > Quick Access > Miscellaneous > PlatformIO Core CLI
+
+.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-cli-access.png
+
 
 Project Tasks
 -------------
