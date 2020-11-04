@@ -339,6 +339,8 @@ Hardware configuration example:
       -Pusb
 
 
+.. _atmelavr_overriding_fuses_command:
+
 Overriding default fuses command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -510,6 +512,8 @@ Here is a table with recommended baud rates for different clock frequencies:
     * - ``1000000L``
       - external/internal
       - ``9600``
+
+.. _atmelavr_overriding_bootloader_command:
 
 Overriding default bootloader command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

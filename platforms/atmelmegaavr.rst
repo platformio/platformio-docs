@@ -25,6 +25,7 @@ For more detailed information please visit `vendor site <https://www.microchip.c
     :local:
     :depth: 1
 
+.. include:: atmelmegaavr_extra.rst
 
 Examples
 --------
