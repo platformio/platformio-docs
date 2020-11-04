@@ -101,16 +101,6 @@ Check for the platform updates interval.
 
 Enable caching for API requests and Library Manager
 
-.. _setting_strict_ssl:
-
-``strict_ssl``
-^^^^^^^^^^^^^^
-
-:Default:   No
-:Values:    Yes/No
-
-Strict SSL for PlatformIO Services
-
 .. _setting_enable_telemetry:
 
 ``enable_telemetry``
