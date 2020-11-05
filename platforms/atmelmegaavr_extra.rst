@@ -25,6 +25,44 @@ incorrect upload flags. It's highly recommended to use the
 :ref:`projectconf_upload_command` option that gives the full control over flags used
 for uploading. Please read :ref:`atmelavr_upload_via_programmer` for more information.
 
+Upload using pyupdi
+^^^^^^^^^^^^^^^^^^^
+
+``pyupdi`` is a Python-based tool for programming tinyAVR and megaAVR devices with UPDI
+interface via a standard serial port. It can be installed directly in the PlatformIO
+virtual environment using the following command:
+
+.. code-block:: bash
+
+    pip install https://github.com/mraardvark/pyupdi/archive/master.zip
+
+
+Once ``pyupdi`` is installed it can be used as the uploader via a custom
+:ref:`projectconf_upload_command` option, for example:
+
+.. code-block:: ini
+
+    [env:ATmega3209_pyupdi_upload]
+    platform = atmelmegaavr
+    framework = arduino
+    board = ATmega3209
+    upload_speed = 115200
+    upload_flags =
+        -d
+        mega3209
+        -c
+        $UPLOAD_PORT
+        -b
+        $UPLOAD_SPEED
+    upload_command = pyupdi $UPLOAD_FLAGS -f $SOURCE
+
+.. warning::
+
+    Device names used in in ``pyupdi`` differ from MCU names used in the ``atmelmegaavr``
+    platform. Run ``pyupdi --help`` to see the list of supported devices.
+
+More information and a typical circuit diagram can be found in the official
+`pyupdi repository <https://github.com/mraardvark/pyupdi>`_ repository.
 
 Fuses programming
 ~~~~~~~~~~~~~~~~~
