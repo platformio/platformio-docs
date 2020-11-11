@@ -34,6 +34,7 @@ Frameworks
     pumbaa
     shakti-sdk
     simba
+    siwisdk
     spl
     stm32cube
     wd-riscv-sdk
