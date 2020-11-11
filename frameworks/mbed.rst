@@ -1032,6 +1032,12 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - :ref:`platform_ststm32`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_nordicnrf52_sdt52832b`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -1981,6 +1987,13 @@ Olimex
       - Flash
       - RAM
     * - :ref:`board_ststm32_olimexino`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
+    * - :ref:`board_ststm32_olimex_f103`
       - :ref:`platform_ststm32`
       - External
       - STM32F103RBT6

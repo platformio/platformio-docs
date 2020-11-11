@@ -9,81 +9,83 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelsam_nano_33_iot:
+.. _board_nordicnrf52_ruuvitag:
 
-NANO 33 IoT
-===========
+Ruuvi Tag
+=========
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
+Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
 .. list-table::
 
   * - **Microcontroller**
-    - SAMD21G18A
+    - NRF52832
   * - **Frequency**
-    - 48MHz
+    - 64MHz
   * - **Flash**
-    - 256KB
+    - 512KB
   * - **RAM**
-    - 32KB
+    - 64KB
   * - **Vendor**
-    - `Arduino <https://store.arduino.cc/nano-33-iot?utm_source=platformio.org&utm_medium=docs>`__
+    - `Ruuvi <https://ruuvi.com/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nano_33_iot`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ruuvitag`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nano_33_iot]
-  platform = atmelsam
-  board = nano_33_iot
+  [env:ruuvitag]
+  platform = nordicnrf52
+  board = ruuvitag
 
-You can override default NANO 33 IoT settings per build environment using
+You can override default Ruuvi Tag settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nano_33_iot.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/nano_33_iot.json>`_. For example,
+board manifest `ruuvitag.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/ruuvitag.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nano_33_iot]
-  platform = atmelsam
-  board = nano_33_iot
+  [env:ruuvitag]
+  platform = nordicnrf52
+  board = ruuvitag
 
   ; change microcontroller
-  board_build.mcu = samd21g18a
+  board_build.mcu = nrf52832
 
   ; change MCU frequency
-  board_build.f_cpu = 48000000L
+  board_build.f_cpu = 64000000L
 
 
 Uploading
 ---------
-NANO 33 IoT supports the next uploading protocols:
+Ruuvi Tag supports the next uploading protocols:
 
-* ``atmel-ice``
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
-* ``sam-ba``
+* ``mbed``
+* ``nrfjprog``
+* ``stlink``
 
-Default protocol is ``sam-ba``
+Default protocol is ``jlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nano_33_iot]
-  platform = atmelsam
-  board = nano_33_iot
+  [env:ruuvitag]
+  platform = nordicnrf52
+  board = ruuvitag
 
-  upload_protocol = sam-ba
+  upload_protocol = jlink
 
 Debugging
 ---------
@@ -98,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-NANO 33 IoT does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Ruuvi Tag does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -106,13 +108,16 @@ NANO 33 IoT does not have on-board debug probe and **IS NOT READY** for debuggin
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_atmel-ice`
+  * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
-  * - :ref:`debugging_tool_blackmagic`
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`
+    - 
+    - 
+  * - :ref:`debugging_tool_stlink`
     - 
     - 
 
@@ -123,9 +128,6 @@ Frameworks
 
     * - Name
       - Description
-
-    * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

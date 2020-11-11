@@ -179,6 +179,12 @@ You do not need to use/buy external debug probe.
       - 320MHz
       - 16MB
       - 16KB
+    * - :ref:`board_nxplpc_lpc11u68`
+      - :ref:`platform_nxplpc`
+      - LPC11U68
+      - 50MHz
+      - 256KB
+      - 36KB
     * - :ref:`board_nordicnrf52_nrf52832_mdk`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -600,6 +606,12 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51G19A
+      - 120MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
       - SAMD21E18A
@@ -666,6 +678,18 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_atmelsam_nano_33_iot`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf52_thingy_52`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -720,6 +744,12 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_ruuvitag`
+      - :ref:`platform_nordicnrf52`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_freescalekinetis_segger_ip_switch`
       - :ref:`platform_freescalekinetis`
       - MK66FN2M0VMD18
@@ -762,12 +792,24 @@ Please click on board name for the further details.
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - :ref:`platform_atmelsam`
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`
       - NRF51822
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_blackpill_f411ce`
+      - :ref:`platform_ststm32`
+      - STM32F411CEU6
+      - 100MHz
+      - 512KB
+      - 128KB
 
 
 Examples
@@ -916,6 +958,13 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_atmelsam_adafruit_itsybitsy_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51G19A
+      - 120MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -947,6 +996,13 @@ Arduino
     * - :ref:`board_atmelsam_zero`
       - :ref:`platform_atmelsam`
       - On-board
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_nano_33_iot`
+      - :ref:`platform_atmelsam`
+      - External
       - SAMD21G18A
       - 48MHz
       - 256KB
@@ -1175,6 +1231,13 @@ Laird Connectivity
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
 
 Makerdiary
 ~~~~~~~~~~
@@ -1238,6 +1301,13 @@ NXP
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nxplpc_lpc11u68`
+      - :ref:`platform_nxplpc`
+      - On-board
+      - LPC11U68
+      - 50MHz
+      - 256KB
+      - 36KB
     * - :ref:`board_nxplpc_lpc54114`
       - :ref:`platform_nxplpc`
       - On-board
@@ -1444,6 +1514,27 @@ RedBearLab
     * - :ref:`board_nordicnrf52_redbear_blenano2`
       - :ref:`platform_nordicnrf52`
       - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
+Ruuvi
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_ruuvitag`
+      - :ref:`platform_nordicnrf52`
+      - External
       - NRF52832
       - 64MHz
       - 512KB
@@ -1827,6 +1918,27 @@ ST
       - 2MB
       - 512KB
 
+Seeed
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_atmelsam_seeed_xiao`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+
 SiFive
 ~~~~~~
 
@@ -1959,3 +2071,24 @@ Waveshare
       - 32MHz
       - 256KB
       - 32KB
+
+WeAct
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_blackpill_f411ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F411CEU6
+      - 100MHz
+      - 512KB
+      - 128KB

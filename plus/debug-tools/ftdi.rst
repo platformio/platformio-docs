@@ -179,3 +179,24 @@ Boards
       - 320MHz
       - 16MB
       - 16KB
+    * - :ref:`board_shakti_parashu`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_pinaka`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_vajra`
+      - :ref:`platform_shakti`
+      - On-board
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB

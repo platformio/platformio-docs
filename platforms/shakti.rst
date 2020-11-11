@@ -34,6 +34,7 @@ Examples are listed from `Shakti development platform repository <https://github
 * `shakti-sdk_gpio-keypad <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_gpio-keypad?utm_source=platformio.org&utm_medium=docs>`_
 * `shakti-sdk_i2c-lm75 <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_i2c-lm75?utm_source=platformio.org&utm_medium=docs>`_
 * `shakti-sdk_uart-hello <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_uart-hello?utm_source=platformio.org&utm_medium=docs>`_
+* `shakti-sdk_weatherstation <https://github.com/platformio/platform-shakti/tree/master/examples/shakti-sdk_weatherstation?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -78,6 +79,21 @@ You do not need to use/buy external debug probe.
       - 0B
       - 128KB
     * - :ref:`board_shakti_artix7_100t`
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
+    * - :ref:`board_shakti_parashu`
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_pinaka`
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_vajra`
       - C-CLASS
       - 50MHz
       - 0B
@@ -193,6 +209,24 @@ Xilinx
       - 0B
       - 128KB
     * - :ref:`board_shakti_artix7_100t`
+      - On-board
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
+    * - :ref:`board_shakti_parashu`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_pinaka`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_vajra`
       - On-board
       - C-CLASS
       - 50MHz

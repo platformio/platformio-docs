@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_blackpill_f411ce:
+.. _board_ststm32_olimex_f103:
 
-WeAct BlackPill V2.0 (BlackPill F411CE)
-=======================================
+Olimex STM32-H103
+=================
 
 .. contents::
 
@@ -24,54 +24,52 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F411CEU6
+    - STM32F103RBT6
   * - **Frequency**
-    - 100MHz
+    - 72MHz
   * - **Flash**
-    - 512KB
-  * - **RAM**
     - 128KB
+  * - **RAM**
+    - 20KB
   * - **Vendor**
-    - `WeAct <https://github.com/mcauser/WEACT_F411CEU6?utm_source=platformio.org&utm_medium=docs>`__
+    - `Olimex <https://www.olimex.com/Products/ARM/ST/STM32-H103/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``blackpill_f411ce`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``olimex_f103`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:blackpill_f411ce]
+  [env:olimex_f103]
   platform = ststm32
-  board = blackpill_f411ce
+  board = olimex_f103
 
-You can override default WeAct BlackPill V2.0 (BlackPill F411CE) settings per build environment using
+You can override default Olimex STM32-H103 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `blackpill_f411ce.json <https://github.com/platformio/platform-ststm32/blob/master/boards/blackpill_f411ce.json>`_. For example,
+board manifest `olimex_f103.json <https://github.com/platformio/platform-ststm32/blob/master/boards/olimex_f103.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:blackpill_f411ce]
+  [env:olimex_f103]
   platform = ststm32
-  board = blackpill_f411ce
+  board = olimex_f103
 
   ; change microcontroller
-  board_build.mcu = stm32f411ceu6
+  board_build.mcu = stm32f103rbt6
 
   ; change MCU frequency
-  board_build.f_cpu = 100000000L
+  board_build.f_cpu = 72000000L
 
 
 Uploading
 ---------
-WeAct BlackPill V2.0 (BlackPill F411CE) supports the next uploading protocols:
+Olimex STM32-H103 supports the next uploading protocols:
 
 * ``blackmagic``
-* ``dfu``
 * ``jlink``
-* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -80,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:blackpill_f411ce]
+  [env:olimex_f103]
   platform = ststm32
-  board = blackpill_f411ce
+  board = olimex_f103
 
   upload_protocol = stlink
 
@@ -99,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WeAct BlackPill V2.0 (BlackPill F411CE) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Olimex STM32-H103 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -131,11 +129,11 @@ Frameworks
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
 
+    * - :ref:`framework_mbed`
+      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
+
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
-
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others

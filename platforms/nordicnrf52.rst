@@ -221,6 +221,11 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
       - NRF52840
       - 64MHz
@@ -246,6 +251,11 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_ruuvitag`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_sdt52832b`
       - NRF52832
       - 64MHz
@@ -319,8 +329,8 @@ Packages
     * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for CANopenNode - a free and open source CANopen Stack
+    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
+      - canopennode Zephyr module
 
     * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for CivetWeb Embedded C/C++ web server
@@ -333,6 +343,9 @@ Packages
 
     * - `framework-zephyr-hal-nordic <https://github.com/zephyrproject-rtos/hal_nordic.git?utm_source=platformio.org&utm_medium=docs>`__
       - Nordic nRF5x HAL for Zephyr framework
+
+    * - `framework-zephyr-hal-st <https://github.com/zephyrproject-rtos/hal_st.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for the official libraries provided by STMicroelectronics
 
     * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for HAL abstraction layer used by open-amp
@@ -651,6 +664,12 @@ Laird Connectivity
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
 
 Makerdiary
 ~~~~~~~~~~
@@ -765,6 +784,25 @@ RedBearLab
       - 64KB
     * - :ref:`board_nordicnrf52_redbear_blend2`
       - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
+Ruuvi
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_ruuvitag`
+      - External
       - NRF52832
       - 64MHz
       - 512KB

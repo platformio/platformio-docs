@@ -76,6 +76,24 @@ You do not need to use/buy external debug probe.
       - 50MHz
       - 0B
       - 128MB
+    * - :ref:`board_shakti_parashu`
+      - :ref:`platform_shakti`
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_pinaka`
+      - :ref:`platform_shakti`
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_vajra`
+      - :ref:`platform_shakti`
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
 
 
 Examples
@@ -123,6 +141,27 @@ Xilinx
       - 0B
       - 128KB
     * - :ref:`board_shakti_artix7_100t`
+      - :ref:`platform_shakti`
+      - On-board
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
+    * - :ref:`board_shakti_parashu`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_pinaka`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_vajra`
       - :ref:`platform_shakti`
       - On-board
       - C-CLASS

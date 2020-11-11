@@ -724,6 +724,7 @@ Nordic nRF52
     nordicnrf52/electronut_papyr
     nordicnrf52/holyiot_yj16019
     nordicnrf52/adafruit_itsybitsy_nrf52840
+    nordicnrf52/laird_pinnacle_100_dvk
     nordicnrf52/nrf52832_mdk
     nordicnrf52/nrf52840_mdk
     nordicnrf52/adafruit_metro_nrf52840
@@ -736,6 +737,7 @@ Nordic nRF52
     nordicnrf52/particle_xenon
     nordicnrf52/redbear_blenano2
     nordicnrf52/redbear_blend2
+    nordicnrf52/ruuvitag
     nordicnrf52/sdt52832b
     nordicnrf52/stct_nrf52_minidev
     nordicnrf52/vbluno52
@@ -822,6 +824,9 @@ Shakti
         
     shakti/artix7_35t
     shakti/artix7_100t
+    shakti/parashu
+    shakti/pinaka
+    shakti/vajra
 
 SiFive
 ------
@@ -921,6 +926,7 @@ ST STM32
     ststm32/nucleo_g431rb
     ststm32/nucleo_g474re
     ststm32/olimexino
+    ststm32/olimex_f103
     ststm32/olimex_p405
     ststm32/nucleo_wb55rg_p
     ststm32/pybstick26_duino
@@ -1081,6 +1087,7 @@ ST STM32
     ststm32/hy_tinystm103tb
     ststm32/vake_v1
     ststm32/vccgnd_f103zet6
+    ststm32/waveshare_open103z
     ststm32/blackpill_f411ce
     ststm32/wraith32_v1
     ststm32/sakuraio_evb_01

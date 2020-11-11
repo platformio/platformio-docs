@@ -32,7 +32,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
   * - **RAM**
     - 36KB
   * - **Vendor**
-    - `NXP <https://developer.mbed.org/platforms/LPCXpresso11U68/?utm_source=platformio.org&utm_medium=docs>`__
+    - `NXP <https://www.nxp.com/design/microcontrollers-developer-resources/lpc-microcontroller-utilities/lpcxpresso-board-for-lpc11u68:OM13058?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -126,3 +126,6 @@ Frameworks
 
     * - :ref:`framework_mbed`
       - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

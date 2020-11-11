@@ -833,6 +833,12 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - :ref:`platform_ststm32`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_olimex_p405`
       - :ref:`platform_ststm32`
       - STM32F405RGT6
@@ -1362,6 +1368,12 @@ Please click on board name for the further details.
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_vccgnd_f103zet6`
+      - :ref:`platform_ststm32`
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_waveshare_open103z`
       - :ref:`platform_ststm32`
       - STM32F103ZET6
       - 72MHz
@@ -2412,6 +2424,13 @@ Olimex
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_olimex_p405`
       - :ref:`platform_ststm32`
       - External
@@ -3393,6 +3412,27 @@ VCCGND
       - Flash
       - RAM
     * - :ref:`board_ststm32_vccgnd_f103zet6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
+
+Waveshare
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_waveshare_open103z`
       - :ref:`platform_ststm32`
       - External
       - STM32F103ZET6
