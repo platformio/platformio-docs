@@ -86,7 +86,7 @@ To install or upgrade |PIOCore| paste that at a *Terminal* prompt:
 
 .. code-block:: bash
 
-    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
+    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
 
     # or using `curl`
 
