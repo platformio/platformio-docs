@@ -3185,6 +3185,13 @@ Laird Connectivity
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
 
 LeafLabs
 ~~~~~~~~
@@ -4249,6 +4256,13 @@ Olimex
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_olimex_p405`
       - :ref:`platform_ststm32`
       - External
@@ -4802,6 +4816,27 @@ RushUp
       - 80MHz
       - 1MB
       - 128KB
+
+Ruuvi
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_ruuvitag`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 SEGGER
 ~~~~~~
@@ -6937,6 +6972,13 @@ Waveshare
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_waveshare_open103z`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
 
 WeAct
 ~~~~~
@@ -7042,6 +7084,27 @@ Xilinx
       - 450MHz
       - 16MB
       - 256MB
+    * - :ref:`board_shakti_parashu`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_pinaka`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
+    * - :ref:`board_shakti_vajra`
+      - :ref:`platform_shakti`
+      - On-board
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
 
 XinaBox
 ~~~~~~~

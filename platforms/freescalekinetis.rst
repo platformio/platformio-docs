@@ -225,8 +225,8 @@ Packages
     * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for CANopenNode - a free and open source CANopen Stack
+    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
+      - canopennode Zephyr module
 
     * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for CivetWeb Embedded C/C++ web server
@@ -239,6 +239,9 @@ Packages
 
     * - `framework-zephyr-hal-nxp <https://github.com/zephyrproject-rtos/hal_nxp.git?utm_source=platformio.org&utm_medium=docs>`__
       - NXP HAL for Zephyr framework
+
+    * - `framework-zephyr-hal-st <https://github.com/zephyrproject-rtos/hal_st.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for the official libraries provided by STMicroelectronics
 
     * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for HAL abstraction layer used by open-amp

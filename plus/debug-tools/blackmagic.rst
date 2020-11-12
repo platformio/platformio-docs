@@ -1019,6 +1019,13 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
       - :ref:`platform_ststm32`
       - External
@@ -1362,6 +1369,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_olimex_p405`
       - :ref:`platform_ststm32`
       - External
@@ -1502,6 +1516,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_nordicnrf52_ruuvitag`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_sdt52832b`
       - :ref:`platform_nordicnrf52`
       - External
@@ -2755,6 +2776,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_waveshare_open103z`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_ststm32_blackpill_f411ce`
       - :ref:`platform_ststm32`
       - External

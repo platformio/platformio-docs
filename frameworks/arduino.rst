@@ -2352,6 +2352,12 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - :ref:`platform_ststm32`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_olimex_p405`
       - :ref:`platform_ststm32`
       - STM32F405RGT6
@@ -3168,6 +3174,12 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_waveshare_open103z`
+      - :ref:`platform_ststm32`
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_ststm32_blackpill_f411ce`
       - :ref:`platform_ststm32`
       - STM32F411CEU6
@@ -7619,6 +7631,13 @@ Olimex
       - 80MHz
       - 252KB
       - 32KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_olimex_p405`
       - :ref:`platform_ststm32`
       - External
@@ -10048,6 +10067,13 @@ Waveshare
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_waveshare_open103z`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
 
 WeAct
 ~~~~~

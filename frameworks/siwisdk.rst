@@ -9,34 +9,19 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _frameworks:
+.. _framework_siwisdk:
 
-Frameworks
-==========
+SIWI GSM Software Development Kit for MT6261 and MT2503 SoC
+===========================================================
 
-.. toctree::
-    :maxdepth: 1
+:Configuration:
+  :ref:`projectconf_env_framework` = ``siwisdk``
 
-    arduino
-    cmsis
-    esp8266-nonos-sdk
-    esp8266-rtos-sdk
-    espidf
-    freedom-e-sdk
-    freertos
-    gd32vf103-sdk
-    kendryte-freertos-sdk
-    kendryte-standalone-sdk
-    libopencm3
-    mbed
-    nuclei-sdk
-    pulp-os
-    pumbaa
-    shakti-sdk
-    simba
-    siwisdk
-    spl
-    stm32cube
-    wd-riscv-sdk
-    wiringpi
-    zephyr
+Arduino Wiring-based Framework For SiWi and Quectel GSM Modules
+
+For more detailed information please visit `vendor site <https://github.com/siwiembedded/siwisdk?utm_source=platformio.org&utm_medium=docs>`_.
+
+
+.. contents:: Contents
+    :local:
+    :depth: 1

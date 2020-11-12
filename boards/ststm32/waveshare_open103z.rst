@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_blackpill_f411ce:
+.. _board_ststm32_waveshare_open103z:
 
-WeAct BlackPill V2.0 (BlackPill F411CE)
-=======================================
+Waveshare Open103Z
+==================
 
 .. contents::
 
@@ -24,54 +24,52 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F411CEU6
+    - STM32F103ZET6
   * - **Frequency**
-    - 100MHz
+    - 72MHz
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 128KB
+    - 64KB
   * - **Vendor**
-    - `WeAct <https://github.com/mcauser/WEACT_F411CEU6?utm_source=platformio.org&utm_medium=docs>`__
+    - `Waveshare <https://www.waveshare.com/open103z-standard.htm?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``blackpill_f411ce`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``waveshare_open103z`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:blackpill_f411ce]
+  [env:waveshare_open103z]
   platform = ststm32
-  board = blackpill_f411ce
+  board = waveshare_open103z
 
-You can override default WeAct BlackPill V2.0 (BlackPill F411CE) settings per build environment using
+You can override default Waveshare Open103Z settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `blackpill_f411ce.json <https://github.com/platformio/platform-ststm32/blob/master/boards/blackpill_f411ce.json>`_. For example,
+board manifest `waveshare_open103z.json <https://github.com/platformio/platform-ststm32/blob/master/boards/waveshare_open103z.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:blackpill_f411ce]
+  [env:waveshare_open103z]
   platform = ststm32
-  board = blackpill_f411ce
+  board = waveshare_open103z
 
   ; change microcontroller
-  board_build.mcu = stm32f411ceu6
+  board_build.mcu = stm32f103zet6
 
   ; change MCU frequency
-  board_build.f_cpu = 100000000L
+  board_build.f_cpu = 72000000L
 
 
 Uploading
 ---------
-WeAct BlackPill V2.0 (BlackPill F411CE) supports the next uploading protocols:
+Waveshare Open103Z supports the next uploading protocols:
 
 * ``blackmagic``
-* ``dfu``
 * ``jlink``
-* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -80,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:blackpill_f411ce]
+  [env:waveshare_open103z]
   platform = ststm32
-  board = blackpill_f411ce
+  board = waveshare_open103z
 
   upload_protocol = stlink
 
@@ -99,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WeAct BlackPill V2.0 (BlackPill F411CE) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Waveshare Open103Z does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -133,9 +131,6 @@ Frameworks
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
-
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others

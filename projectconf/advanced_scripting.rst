@@ -485,16 +485,9 @@ Let's create a simple ``ping`` target and process it with
 
 .. code-block:: python
 
-    try:
-        import configparser
-    except ImportError:
-        import ConfigParser as configparser
-
     Import("env")
 
-    config = configparser.ConfigParser()
-    config.read("platformio.ini")
-    host = config.get("env:env_custom_target", "custom_ping_host")
+    host = env.GetProjectOption("custom_ping_host")
 
     def mytarget_callback(*args, **kwargs):
         print("Hello PlatformIO!")
@@ -512,9 +505,34 @@ Please check ``builder`` folder for the main and framework scripts.
 Custom options in ``platformio.ini``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+PlatformIO allows you extending project configuration with own data. You can read
+these values later using `ProjectConfig API <https://github.com/platformio/platformio-core/blob/develop/platformio/project/config.py>`__:
+
+:``ProjectConfig::get(section, option, default=None)``:
+    Get an option value for the named section
+
+:``ProjectConfig::options(section)``:
+    Returns a list of the sections available
+
+:``ProjectConfig::items(section, as_dict=False)``:
+    Returns a list of "name", "value" pairs for the options in the given section or a dictionary when ``as_dict=True`` is passed
+
+:``ProjectConfig::has_section(section)``:
+    Indicates whether the named section is present in the configuration
+
+:``ProjectConfig::has_option(section, option)``:
+    If the given section exists, and contains the given option, returns ``True``; otherwise returns ``False``.
+
+PlatformIO's "ProjectConfig" is compatible with a native Python's `ConfigParser <https://docs.python.org/3/library/configparser.html>`__ API.
+
+**Example**
+
 ``platformio.ini``:
 
 .. code-block:: ini
+
+    [universe]
+    hello = world
 
     [env:my_env]
     platform = ...
@@ -527,16 +545,13 @@ Custom options in ``platformio.ini``
 
 .. code-block:: python
 
-    try:
-        import configparser
-    except ImportError:
-        import ConfigParser as configparser
+    # "env.GetProjectOption" shortcut for the active environment
+    value1 = env.GetProjectOption("custom_option1")
+    value2 = env.GetProjectOption("custom_option2")
 
-    config = configparser.ConfigParser()
-    config.read("platformio.ini")
-
-    value1 = config.get("my_env", "custom_option1")
-    value2 = config.get("my_env", "custom_option2")
+    # Read value from other environments
+    config = env.GetProjectConfig()
+    world = config.get("universe", "hello")
 
 Split C/C++ build flags
 ^^^^^^^^^^^^^^^^^^^^^^^

@@ -802,6 +802,11 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_olimex_p405`
       - STM32F405RGT6
       - 168MHz
@@ -1247,6 +1252,11 @@ Please click on board name for the further details.
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_waveshare_open103z`
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_ststm32_blackpill_f411ce`
       - STM32F411CEU6
       - 100MHz
@@ -1389,8 +1399,8 @@ Packages
     * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for CANopenNode - a free and open source CANopen Stack
+    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
+      - canopennode Zephyr module
 
     * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for CivetWeb Embedded C/C++ web server
@@ -2471,6 +2481,12 @@ Olimex
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_olimex_p405`
       - External
       - STM32F405RGT6
@@ -3370,6 +3386,25 @@ VCCGND
       - Flash
       - RAM
     * - :ref:`board_ststm32_vccgnd_f103zet6`
+      - External
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
+
+Waveshare
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_waveshare_open103z`
       - External
       - STM32F103ZET6
       - 72MHz

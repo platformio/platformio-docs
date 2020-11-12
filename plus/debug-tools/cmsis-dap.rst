@@ -481,6 +481,13 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_nrf52832_mdk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -663,6 +670,13 @@ Boards
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_ruuvitag`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_sdt52832b`
       - :ref:`platform_nordicnrf52`
       - External

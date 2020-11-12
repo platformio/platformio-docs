@@ -1526,6 +1526,13 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
       - :ref:`platform_ststm32`
       - External
@@ -1974,6 +1981,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_olimex_f103`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RBT6
+      - 72MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_olimex_p405`
       - :ref:`platform_ststm32`
       - External
@@ -2016,6 +2030,13 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_shakti_parashu`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
     * - :ref:`board_nordicnrf52_particle_argon`
       - :ref:`platform_nordicnrf52`
       - External
@@ -2044,6 +2065,13 @@ Boards
       - 32MHz
       - 128KB
       - 20KB
+    * - :ref:`board_shakti_pinaka`
+      - :ref:`platform_shakti`
+      - On-board
+      - E-CLASS
+      - 50MHz
+      - 0B
+      - 128KB
     * - :ref:`board_ststm32_prntr_v2`
       - :ref:`platform_ststm32`
       - External
@@ -2128,6 +2156,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_nordicnrf52_ruuvitag`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_sdt52832b`
       - :ref:`platform_nordicnrf52`
       - External
@@ -3577,6 +3612,13 @@ Boards
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_shakti_vajra`
+      - :ref:`platform_shakti`
+      - On-board
+      - C-CLASS
+      - 50MHz
+      - 0B
+      - 128MB
     * - :ref:`board_espressif32_vintlabs-devkit-v1`
       - :ref:`platform_espressif32`
       - External
@@ -3633,6 +3675,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_waveshare_open103z`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_ststm32_blackpill_f411ce`
       - :ref:`platform_ststm32`
       - External

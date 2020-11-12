@@ -141,6 +141,15 @@ for more details.
 What is changed or removed
 --------------------------
 
+Introducing Strict SSL/TLS
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The setting ``strict_ssl`` has been removed from :ref:`cmd_settings`. Now, PlatformIO Core 5.0
+communicates over the encrypted SSL/TLS by default with the PlatformIO Registry and
+other services such as :ref:`pioremote`.
+
+At PlatformIO, we are always looking for ways to improve the security of our services.
+
 packageRepositories
 ~~~~~~~~~~~~~~~~~~~
 
