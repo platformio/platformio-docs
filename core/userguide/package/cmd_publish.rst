@@ -31,17 +31,9 @@ Description
 
 Publish a package to the registry so that it can be installed by name.
 All files in the package directory are included if ``export`` field is not declared
-in a package manifest (for example, see :ref:`libjson_export`). The next items are
-automatically excluded:
-
-- ``._*``
-- ``__*``
-- ``.DS_Store``
-- ``.git/``
-- ``.hg/``
-- ``.svn/``
-- ``.pio/``
-- ``**/.pio/``
+in a package manifest (for example, see :ref:`libjson_export`).
+The `next items <https://github.com/platformio/platformio-core/blob/develop/platformio/package/pack.py#L33>`__ are
+automatically excluded.
 
 Please check which files will be included in the final package using the
 :ref:`cmd_package_pack` command.
