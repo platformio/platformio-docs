@@ -32,12 +32,6 @@ Integration process consists of these steps:
 3. Generate a project using PlatformIO Core Project Generator (:option:`pio project init --ide`)
 4. Import project in IDE.
 
-"Neomake-PlatformIO" Plugin
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Please visit `neomake-platformio <https://github.com/coddingtonbear/neomake-platformio>`_
-for the further installation steps and documentation.
-
 Project Generator
 ^^^^^^^^^^^^^^^^^
 
@@ -50,10 +44,9 @@ command and generate project via :option:`pio project init --ide` command:
 
 Recommended bundles:
 
-* C/C++/ language server supporting cross references, hierarchies, completion and semantic highlighting - `CCLS: vim lsp <https://github.com/MaskRay/ccls/wiki/vim-lsp>`_
-* Syntax highlight - `Arduino-syntax-file <https://github.com/vim-scripts/Arduino-syntax-file>`_
-* Code Completion - `YouCompleteMe <https://github.com/Valloric/YouCompleteMe>`_ (see configuration example by **Anthony Ford** `PlatformIO/YouCompleteMe Integration <https://gist.github.com/ajford/f551b2b6fd4d6b6e1ef2>`_)
-* Syntax checking - `Syntastic <https://github.com/scrooloose/syntastic>`_
+* `C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting <https://github.com/MaskRay/ccls>`_
+* `Async language server protocol plugin for vim and neovim <https://github.com/prabirshrestha/vim-lsp>`_
+* `"Neomake-PlatformIO" Plugin <https://github.com/coddingtonbear/neomake-platformio>`_
 
 Put to the project directory ``Makefile`` wrapper with contents:
 

@@ -37,19 +37,6 @@ Integration process consists of these steps:
 3. Generate a project using PlatformIO Core Project Generator (:option:`pio project init --ide`)
 4. Open project in Emacs.
 
-------------
-
-PlatformIO-Mode
-^^^^^^^^^^^^^^^
-
-An Emacs minor mode has been written to facilitate building and uploading from within Emacs.
-It can be installed from the MELPA repository using ``M-x package-install``.
-See the MELPA `Getting Started <https://melpa.org/#/getting-started>`_ page for more information.
-
-Setup instructions and an example config can be found at the `Github page <https://github.com/ZachMassia/platformio-mode>`_.
-
-Code completion can optionally be provided by installing `irony-mode <https://github.com/Sarcasm/irony-mode>`_
-
 
 Project Generator
 ^^^^^^^^^^^^^^^^^
@@ -61,6 +48,20 @@ command and generate project via :option:`pio project init --ide` command:
 
     pio project init --ide emacs --board <ID>
 
+.. warning::
+    The libraries which are added, installed or used in the project
+    after generating process won't be reflected in IDE. To fix it you
+    need to reinitialize project using :ref:`cmd_project_init` (repeat it).
+
+
+PlatformIO-Mode
+^^^^^^^^^^^^^^^
+
+An Emacs minor mode has been written to facilitate building and uploading from within Emacs.
+It can be installed from the MELPA repository using ``M-x package-install``.
+See the MELPA `Getting Started <https://melpa.org/#/getting-started>`_ page for more information.
+
+Setup instructions and an example config can be found at the `Github page <https://github.com/ZachMassia/platformio-mode>`_.
 
 There are 6 predefined targets for building.
 
@@ -71,7 +72,11 @@ There are 6 predefined targets for building.
 * ``platformio_spiffs_upload``  - Upload files to file system SPIFFS (see :ref:`platform_espressif_uploadfs`). (``C-c i s``)
 * ``platformio_update`` - Update installed platforms and libraries.    (``C-c i d``)
 
-.. warning::
-    The libraries which are added, installed or used in the project
-    after generating process won't be reflected in IDE. To fix it you
-    need to reinitialize project using :ref:`cmd_project_init` (repeat it).
+
+Code Completion and Navigation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Please install the next:
+
+* `C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting <https://github.com/MaskRay/ccls>`_
+* `Emacs client for ccls, a C/C++ language server <https://github.com/MaskRay/emacs-ccls>`_.
