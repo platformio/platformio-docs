@@ -75,6 +75,7 @@ This variant is default choice for native PlatformIO projects:
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     install:
         - pip install -U platformio
@@ -102,6 +103,7 @@ and boards from command line interface:
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=path/to/test/file.c
@@ -206,6 +208,7 @@ Examples
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=examples/acm/acm_terminal
@@ -244,6 +247,7 @@ Examples
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=examples/backSoon/backSoon.ino
@@ -279,6 +283,7 @@ Examples
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=examples/TimeArduinoDue PLATFORMIO_CI_EXTRA_ARGS="--board=due"
@@ -317,6 +322,7 @@ Examples
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Adafruit_Bluefruit_LE
