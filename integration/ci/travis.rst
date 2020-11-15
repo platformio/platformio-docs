@@ -68,7 +68,7 @@ This variant is default choice for native PlatformIO projects:
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
@@ -95,7 +95,7 @@ and boards from command line interface:
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
@@ -199,7 +199,7 @@ Examples
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
@@ -237,7 +237,7 @@ Examples
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
@@ -272,7 +272,7 @@ Examples
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
@@ -310,7 +310,7 @@ Examples
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
