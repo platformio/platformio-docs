@@ -58,9 +58,21 @@ This variant is default choice for native PlatformIO projects:
         runs-on: ubuntu-latest
 
         steps:
-        - uses: actions/checkout@v1
+        - uses: actions/checkout@v2
+        - name: Cache pip
+          uses: actions/cache@v2
+          with:
+            path: ~/.cache/pip
+            key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+            restore-keys: |
+              ${{ runner.os }}-pip-
+        - name: Cache PlatformIO
+          uses: actions/cache@v2
+          with:
+            path: ~/.platformio
+            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
         - name: Set up Python
-          uses: actions/setup-python@v1
+          uses: actions/setup-python@v2
         - name: Install dependencies
           run: |
             python -m pip install --upgrade pip
@@ -91,9 +103,20 @@ and boards from command line interface:
             example: [path/to/test/file.c, examples/file.ino, path/to/test/directory]
 
         steps:
-        - uses: actions/checkout@v1
+        - uses: actions/checkout@v2
+        - name: Cache pip
+          uses: actions/cache@v2
+          with:
+            path: ~/.cache/pip
+            key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+            restore-keys: ${{ runner.os }}-pip-
+        - name: Cache PlatformIO
+          uses: actions/cache@v2
+          with:
+            path: ~/.platformio
+            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
         - name: Set up Python
-          uses: actions/setup-python@v1
+          uses: actions/setup-python@v2
         - name: Install dependencies
           run: |
             python -m pip install --upgrade pip
@@ -169,9 +192,22 @@ Integration for USB_Host_Shield_2.0 project. The ``workflow.yml`` configuration 
             example: [examples/Bluetooth/PS3SPP/PS3SPP.ino, examples/pl2303/pl2303_gps/pl2303_gps.ino]
 
         steps:
-        - uses: actions/checkout@v1
+        - uses: actions/checkout@v2
+        - name: Cache pip
+          uses: actions/cache@v2
+          with:
+            path: ~/.cache/pip
+            key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+            restore-keys: |
+              ${{ runner.os }}-pip-
+        - name: Cache PlatformIO
+          uses: actions/cache@v2
+          with:
+            path: ~/.platformio
+            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+
         - name: Set up Python
-          uses: actions/setup-python@v1
+          uses: actions/setup-python@v2
 
         - name: Install dependencies
           run: |
