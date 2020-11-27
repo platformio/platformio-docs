@@ -60,7 +60,7 @@ username of the authorized :ref:`pioaccount`.
 .. option::
     --released-at
 
-Custom release date and time in the next format (UTC): 2014-06-13 17:08:52. 
+Custom release date and time in the next format (UTC): 2014-06-13 17:08:52
 
 .. option::
     --private
