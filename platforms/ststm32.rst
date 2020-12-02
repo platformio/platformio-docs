@@ -36,22 +36,29 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `zephyr-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `stm32cube-hal-usb-host-hid <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-usb-host-hid?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-usb-cdcacm <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-usb-cdcacm?utm_source=platformio.org&utm_medium=docs>`_
 * `cmsis-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/cmsis-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `stm32cube-hal-iap <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-iap?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `stm32cube-hal-extmem-boot <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-extmem-boot?utm_source=platformio.org&utm_medium=docs>`_
 * `spl-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/spl-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `stm32cube-hal-lcd <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-lcd?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-mesh-minimal <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-mesh-minimal?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-mxchip-sensors <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-sensors?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-cpp-synchronization <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-cpp-synchronization?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-net-https-client <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-net-https-client?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-filesystem?utm_source=platformio.org&utm_medium=docs>`_
+* `stm32cube-hal-wifi-client <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-wifi-client?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-usb-keyboard <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-usb-keyboard?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-hal-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-drivers-can <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-drivers-can?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-mxchip-azureiot <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-azureiot?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-mxchip-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-filesystem?utm_source=platformio.org&utm_medium=docs>`_
+* `stm32cube-hal-usb-device-dfu <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-usb-device-dfu?utm_source=platformio.org&utm_medium=docs>`_
+* `stm32cube-hal-blink-clangd <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-blink-clangd?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-external-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-external-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-mxchip-wifiscan <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
@@ -61,6 +68,7 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `zephyr-subsys-usb-hid-mouse <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-subsys-usb-hid-mouse?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-serial <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-serial?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-custom-target <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-custom-target?utm_source=platformio.org&utm_medium=docs>`_
+* `stm32cube-hal-eeprom-emulation <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-eeprom-emulation?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -379,6 +387,11 @@ You do not need to use/buy external debug probe.
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h745zi_q`
+      - STM32H745ZIT6
+      - 480MHz
+      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - STM32L011K4T6
       - 32MHz
@@ -518,6 +531,11 @@ You do not need to use/buy external debug probe.
       - STM32F437VG
       - 180MHz
       - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_mtb_ublox_odin_w2`
+      - STM32F439ZIY6
+      - 168MHz
+      - 2MB
       - 256KB
 
 
@@ -1282,11 +1300,6 @@ Please click on board name for the further details.
       - 168MHz
       - 2MB
       - 256KB
-    * - :ref:`board_ststm32_mtb_ublox_odin_w2`
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
 
 
 Stable and upstream versions
@@ -1393,8 +1406,44 @@ Packages
     * - `framework-spl <http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890?utm_source=platformio.org&utm_medium=docs>`__
       - Standard Peripheral Library for ST STM32 microcontrollers
 
-    * - `framework-stm32cube <http://www.st.com/en/embedded-software/stm32cube-embedded-software.html?utm_source=platformio.org&utm_medium=docs>`__
-      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform which simplifies and speeds up developers’ work.
+    * - `framework-stm32cubef0 <https://github.com/STMicroelectronics/STM32CubeF0?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeF0 MCU Firmware Package)
+
+    * - `framework-stm32cubef1 <https://github.com/STMicroelectronics/STM32CubeF1?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeF1 MCU Firmware Package)
+
+    * - `framework-stm32cubef2 <https://github.com/STMicroelectronics/STM32CubeF2?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeF2 MCU Firmware Package)
+
+    * - `framework-stm32cubef3 <https://github.com/STMicroelectronics/STM32CubeF3?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeF3 MCU Firmware Package)
+
+    * - `framework-stm32cubef4 <https://github.com/STMicroelectronics/STM32CubeF4?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeF4 MCU Firmware Package)
+
+    * - `framework-stm32cubef7 <https://github.com/STMicroelectronics/STM32CubeF7?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeF7 MCU Firmware Package)
+
+    * - `framework-stm32cubeg0 <https://github.com/STMicroelectronics/STM32CubeG0?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeG0 MCU Firmware Package)
+
+    * - `framework-stm32cubeg4 <https://github.com/STMicroelectronics/STM32CubeG4?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeG4 MCU Firmware Package)
+
+    * - `framework-stm32cubeh7 <https://github.com/STMicroelectronics/STM32CubeH7?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeH7 MCU Firmware Package)
+
+    * - `framework-stm32cubel0 <https://github.com/STMicroelectronics/STM32CubeL0?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32Cubel0 MCU Firmware Package)
+
+    * - `framework-stm32cubel1 <https://github.com/STMicroelectronics/STM32CubeL1?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeL1 MCU Firmware Package)
+
+    * - `framework-stm32cubel4 <https://github.com/STMicroelectronics/STM32CubeL4?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeL4 MCU Firmware Package)
+
+    * - `framework-stm32cubel5 <https://github.com/STMicroelectronics/STM32CubeL5?utm_source=platformio.org&utm_medium=docs>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeL5 MCU Firmware Package)
 
     * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
@@ -3054,6 +3103,12 @@ ST
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h745zi_q`
+      - On-board
+      - STM32H745ZIT6
+      - 480MHz
+      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - On-board
       - STM32L011K4T6
@@ -3511,7 +3566,7 @@ u-blox
       - 2MB
       - 256KB
     * - :ref:`board_ststm32_mtb_ublox_odin_w2`
-      - External
+      - On-board
       - STM32F439ZIY6
       - 168MHz
       - 2MB

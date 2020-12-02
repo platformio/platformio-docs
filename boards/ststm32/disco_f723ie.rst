@@ -69,6 +69,7 @@ Uploading
 32F723EDISCOVERY supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``stlink``
 
@@ -106,6 +107,9 @@ You can switch between debugging :ref:`debugging_tools` using
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`

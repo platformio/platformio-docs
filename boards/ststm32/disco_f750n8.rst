@@ -69,6 +69,7 @@ Uploading
 STM32F7508-DK supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``stlink``
 
@@ -106,6 +107,9 @@ STM32F7508-DK has on-board debug probe and **IS READY** for debugging. You don't
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`

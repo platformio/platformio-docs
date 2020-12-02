@@ -69,6 +69,7 @@ Uploading
 Microduino Core STM32 to Flash supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``dfu``
 * ``jlink``
 * ``stlink``
@@ -109,6 +110,9 @@ Microduino Core STM32 to Flash does not have on-board debug probe and **IS NOT R
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

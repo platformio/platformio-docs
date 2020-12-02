@@ -69,6 +69,7 @@ Uploading
 Microsoft Azure IoT Development Kit (MXChip AZ3166) supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``stlink``
 
@@ -106,6 +107,9 @@ Microsoft Azure IoT Development Kit (MXChip AZ3166) has on-board debug probe and
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`

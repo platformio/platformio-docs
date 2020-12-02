@@ -5390,6 +5390,13 @@ ST
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h745zi_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H745ZIT6
+      - 480MHz
+      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -7401,7 +7408,7 @@ u-blox
       - 256KB
     * - :ref:`board_ststm32_mtb_ublox_odin_w2`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F439ZIY6
       - 168MHz
       - 2MB

@@ -69,6 +69,7 @@ Uploading
 ST B-L475E-IOT01A Discovery kit supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``mbed``
 * ``stlink``
@@ -107,6 +108,9 @@ ST B-L475E-IOT01A Discovery kit has on-board debug probe and **IS READY** for de
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`

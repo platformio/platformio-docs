@@ -69,6 +69,7 @@ Uploading
 P-Nucleo WB55RG supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``stlink``
 
@@ -106,6 +107,9 @@ P-Nucleo WB55RG has on-board debug probe and **IS READY** for debugging. You don
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`

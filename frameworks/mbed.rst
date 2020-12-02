@@ -869,6 +869,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_mtb_ublox_odin_w2`
+      - :ref:`platform_ststm32`
+      - STM32F439ZIY6
+      - 168MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -1081,12 +1087,6 @@ Please click on board name for the further details.
       - 1MB
       - 256KB
     * - :ref:`board_ststm32_ublox_evk_odin_w2`
-      - :ref:`platform_ststm32`
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
-    * - :ref:`board_ststm32_mtb_ublox_odin_w2`
       - :ref:`platform_ststm32`
       - STM32F439ZIY6
       - 168MHz
@@ -2975,7 +2975,7 @@ u-blox
       - 256KB
     * - :ref:`board_ststm32_mtb_ublox_odin_w2`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F439ZIY6
       - 168MHz
       - 2MB

@@ -395,6 +395,12 @@ You do not need to use/buy external debug probe.
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h745zi_q`
+      - :ref:`platform_ststm32`
+      - STM32H745ZIT6
+      - 480MHz
+      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - STM32L011K4T6
@@ -562,6 +568,12 @@ You do not need to use/buy external debug probe.
       - STM32F437VG
       - 180MHz
       - 1MB
+      - 256KB
+    * - :ref:`board_ststm32_mtb_ublox_odin_w2`
+      - :ref:`platform_ststm32`
+      - STM32F439ZIY6
+      - 168MHz
+      - 2MB
       - 256KB
 
 
@@ -864,6 +876,30 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - :ref:`platform_ststm32`
+      - STM32G431KBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - STM32G431RBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -935,6 +971,12 @@ Please click on board name for the further details.
       - STM32L051C8T6
       - 32MHz
       - 64KB
+      - 8KB
+    * - :ref:`board_ststm32_disco_g031j6`
+      - :ref:`platform_ststm32`
+      - STM32G031J6
+      - 64MHz
+      - 128KB
       - 8KB
     * - :ref:`board_ststm32_steval_fcu001v1`
       - :ref:`platform_ststm32`
@@ -1435,12 +1477,6 @@ Please click on board name for the further details.
       - 1MB
       - 256KB
     * - :ref:`board_ststm32_ublox_evk_odin_w2`
-      - :ref:`platform_ststm32`
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
-    * - :ref:`board_ststm32_mtb_ublox_odin_w2`
       - :ref:`platform_ststm32`
       - STM32F439ZIY6
       - 168MHz
@@ -2843,6 +2879,34 @@ ST
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431KBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431RBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_rhf76_052`
       - :ref:`platform_ststm32`
       - External
@@ -3144,6 +3208,13 @@ ST
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h745zi_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H745ZIT6
+      - 480MHz
+      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -3270,6 +3341,13 @@ ST
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_g031j6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G031J6
+      - 64MHz
+      - 128KB
+      - 8KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - On-board
@@ -3657,7 +3735,7 @@ u-blox
       - 256KB
     * - :ref:`board_ststm32_mtb_ublox_odin_w2`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F439ZIY6
       - 168MHz
       - 2MB

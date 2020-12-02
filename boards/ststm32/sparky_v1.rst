@@ -69,6 +69,7 @@ Uploading
 Sparky V1 F303 supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``stlink``
 
@@ -108,6 +109,9 @@ Sparky V1 F303 does not have on-board debug probe and **IS NOT READY** for debug
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

@@ -69,6 +69,7 @@ Uploading
 Tiny STM103T supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``dfu``
 * ``jlink``
 * ``serial``
@@ -110,6 +111,9 @@ Tiny STM103T does not have on-board debug probe and **IS NOT READY** for debuggi
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

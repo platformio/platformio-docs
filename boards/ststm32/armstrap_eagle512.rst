@@ -69,6 +69,7 @@ Uploading
 Armstrap Eagle 512 supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``stlink``
 
@@ -108,6 +109,9 @@ Armstrap Eagle 512 has on-board debug probe and **IS READY** for debugging. You 
   * - :ref:`debugging_tool_blackmagic`
     - Yes
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

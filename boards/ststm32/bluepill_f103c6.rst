@@ -69,6 +69,7 @@ Uploading
 BluePill F103C6 supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``serial``
 * ``stlink``
@@ -107,6 +108,9 @@ BluePill F103C6 does not have on-board debug probe and **IS NOT READY** for debu
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`
