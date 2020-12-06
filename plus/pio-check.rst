@@ -52,7 +52,7 @@ Key features
   - Out of scope memory usage
 
 .. warning::
-  Before performimg a static analysis check, make sure your project builds
+  Before performing a static analysis check, make sure your project builds
   without errors. For information about how to build a project, see the
   :ref:`cmd_run` command or :ref:`ide_vscode` guide.
 
