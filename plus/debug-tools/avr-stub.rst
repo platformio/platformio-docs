@@ -72,28 +72,28 @@ Boards
       - On-board
       - ATMEGA1280
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega2560`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA2560
       - 16MHz
-      - 255KB
+      - 256KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega328`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA328
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA328P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_feather328p`
       - :ref:`platform_atmelavr`

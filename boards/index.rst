@@ -275,6 +275,31 @@ Atmel megaAVR
     atmelmegaavr/ATmega4809
     atmelmegaavr/ATmega808
     atmelmegaavr/ATmega809
+    atmelmegaavr/ATtiny1604
+    atmelmegaavr/ATtiny1606
+    atmelmegaavr/ATtiny1607
+    atmelmegaavr/ATtiny1614
+    atmelmegaavr/ATtiny1616
+    atmelmegaavr/ATtiny1617
+    atmelmegaavr/ATtiny202
+    atmelmegaavr/ATtiny204
+    atmelmegaavr/ATtiny212
+    atmelmegaavr/ATtiny214
+    atmelmegaavr/ATtiny3216
+    atmelmegaavr/ATtiny3217
+    atmelmegaavr/ATtiny402
+    atmelmegaavr/ATtiny404
+    atmelmegaavr/ATtiny406
+    atmelmegaavr/ATtiny412
+    atmelmegaavr/ATtiny414
+    atmelmegaavr/ATtiny416
+    atmelmegaavr/ATtiny417
+    atmelmegaavr/ATtiny804
+    atmelmegaavr/ATtiny806
+    atmelmegaavr/ATtiny807
+    atmelmegaavr/ATtiny814
+    atmelmegaavr/ATtiny816
+    atmelmegaavr/ATtiny817
     atmelmegaavr/avr_iot_wg
     atmelmegaavr/nano_every
     atmelmegaavr/uno_wifi_rev2
@@ -449,6 +474,7 @@ Espressif 32
     espressif32/wemosbat
     espressif32/widora-air
     espressif32/xinabox_cw02
+    espressif32/nscreen-32
     espressif32/iotbusio
     espressif32/iotbusproteus
     espressif32/nina_w10
@@ -473,6 +499,7 @@ Espressif 8266
     espressif8266/esp01_1m
     espressif8266/esp01
     espressif8266/esp07
+    espressif8266/esp07s
     espressif8266/esp8285
     espressif8266/heltec_wifi_kit_8
     espressif8266/inventone

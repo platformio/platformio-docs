@@ -11,8 +11,8 @@
 
 .. _board_espressif8266_esp07:
 
-Espressif Generic ESP8266 ESP-07
-================================
+Espressif Generic ESP8266 ESP-07 1MB
+====================================
 
 .. contents::
 
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **Frequency**
     - 80MHz
   * - **Flash**
-    - 4MB
+    - 1MB
   * - **RAM**
     - 80KB
   * - **Vendor**
@@ -46,7 +46,7 @@ Please use ``esp07`` ID for :ref:`projectconf_env_board` option in :ref:`project
   platform = espressif8266
   board = esp07
 
-You can override default Espressif Generic ESP8266 ESP-07 settings per build environment using
+You can override default Espressif Generic ESP8266 ESP-07 1MB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `esp07.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/esp07.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `esp07.json <https://github.com/platformio/platform-espressif8266
 
 Uploading
 ---------
-Espressif Generic ESP8266 ESP-07 supports the next uploading protocols:
+Espressif Generic ESP8266 ESP-07 1MB supports the next uploading protocols:
 
 * ``espota``
 * ``esptool``
@@ -85,7 +85,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Espressif Generic ESP8266 ESP-07 board.
+:ref:`piodebug` currently does not support Espressif Generic ESP8266 ESP-07 1MB board.
 
 Frameworks
 ----------
