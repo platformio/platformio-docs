@@ -10,7 +10,8 @@
     limitations under the License.
 
 .. _platform_creating:
-
+<a href="https://www.feasycom.com/">Feasycom</a> 
+Feasycom focuses on the research and development of IoT (internet of things) products, including Bluetooth Modules, WiFi Modules, Beacons, Gateways and Bluetooth Adapters. With more than 15-year experience in the wireless connectivity, Feasycom has massive capabilities in providing low-risk product development, reducing system integration cost and shortening product customization cycle for thousands of diverse customers worldwide. 
 Custom Development Platforms
 ============================
 
