@@ -770,6 +770,7 @@ Nordic nRF52
     nordicnrf52/vbluno52
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_evk_nina_b1
+    nordicnrf52/reel_board
 
 Nuclei
 ------

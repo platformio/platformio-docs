@@ -4306,6 +4306,27 @@ OpenEnergyMonitor
       - 30KB
       - 2KB
 
+PHYTEC
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_reel_board`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+
 PYBStick
 ~~~~~~~~
 
