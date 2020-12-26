@@ -141,6 +141,29 @@ for more details.
 What is changed or removed
 --------------------------
 
+Drop support for Python 2 and 3.5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python 2.7 is reached the `end of its life on 1 January 2020 <https://en.wikipedia.org/wiki/History_of_Python#Table_of_versions>`_,
+and Python Software Foundation will not provide any security fixes for it. The same
+situation with Python 3.5.
+
+To avoid unrelated issues to the PlatformIO Core, we decided to drop support for
+Python 2 and 3.5. **The minimum supported version for PlatformIO Core 5.0 is Python 3.6.**
+
+If you use :ref:`pioide`, it already comes with the built-in compatible Python 3 interpreter.
+You do not need to do any extra steps. If you see a warning message that your local
+PlatformIO Core installation uses incompatible Python, please do the next steps:
+
+1. Install the latest Python 3 following this guide :ref:`faq_install_python`
+2. Open system terminal and type ``python3 --version`` or ``python.exe --version`` (for Windows).
+   The output should contain a version of Python 3.6 or above (depending on which you installed it).
+3. Remove PlatformIO Core installation "penv" folder that is located by this path
+   ``USER_HOME_DIR/.platformio/penv``. If you use Windows and your user name contains non-ASCII
+   chars the "penv" folder is located in ``C:/.platformio/penv``
+4. Install PlatformIO Core using :ref:`installation_installer_script`
+5. Run the :ref:`cmd_system_info` command and ensure that Python 3 is used.
+
 Introducing Strict SSL/TLS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
