@@ -79,6 +79,9 @@ Frameworks
     * - :ref:`framework_wd-riscv-sdk`
       - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
 
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
+
 Boards
 ------
 

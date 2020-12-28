@@ -83,6 +83,11 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_laird_bl652_dvk`
       - NRF52832
       - 64MHz
@@ -148,6 +153,21 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_dwm1001_dev`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_nordicnrf52_reel_board`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
       - NRF52832
       - 64MHz
@@ -247,6 +267,11 @@ Please click on board name for the further details.
       - 796KB
       - 243KB
     * - :ref:`board_nordicnrf52_particle_xenon`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+    * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
       - NRF52840
       - 64MHz
       - 796KB
@@ -552,6 +577,25 @@ Arduino
       - 960KB
       - 256KB
 
+BBC
+~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 64KB
+
 Delta
 ~~~~~
 
@@ -733,6 +777,31 @@ Nordic
       - 796KB
       - 243KB
 
+PHYTEC
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_reel_board`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+
 Particle
 ~~~~~~~~
 
@@ -758,6 +827,25 @@ Particle
       - 796KB
       - 243KB
     * - :ref:`board_nordicnrf52_particle_xenon`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+
+Raytac
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
       - External
       - NRF52840
       - 64MHz
@@ -859,6 +947,25 @@ VNG
       - Flash
       - RAM
     * - :ref:`board_nordicnrf52_vbluno52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
+decaWave
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_dwm1001_dev`
       - On-board
       - NRF52832
       - 64MHz

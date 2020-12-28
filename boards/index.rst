@@ -312,10 +312,12 @@ Atmel SAM
 .. toctree::
     :maxdepth: 1
         
+    atmelsam/adafruit_blm_badge
     atmelsam/adafruit_circuitplayground_m0
     atmelsam/adafruit_crickit_m0
     atmelsam/adafruit_feather_m0
     atmelsam/adafruit_feather_m0_express
+    atmelsam/adafruit_feather_m4_can
     atmelsam/adafruit_feather_m4
     atmelsam/adafruit_gemma_m0
     atmelsam/adafruit_grandcentral_m4
@@ -324,6 +326,7 @@ Atmel SAM
     atmelsam/adafruit_itsybitsy_m0
     atmelsam/adafruit_itsybitsy_m4
     atmelsam/adafruit_monster_m4sk
+    atmelsam/adafruit_matrix_portal_m4
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
     atmelsam/adafruit_metro_m4_airliftlite
@@ -331,6 +334,7 @@ Atmel SAM
     atmelsam/adafruit_pygamer_m4
     atmelsam/adafruit_pyportal_m4
     atmelsam/adafruit_pyportal_m4_titano
+    atmelsam/adafruit_qt_py_m0
     atmelsam/adafruit_trellis_m4
     atmelsam/adafruit_trinket_m0
     atmelsam/adafruit_pirkey
@@ -742,6 +746,7 @@ Nordic nRF52
     nordicnrf52/adafruit_feather_nrf52840_sense
     nordicnrf52/adafruit_feather_nrf52840
     nordicnrf52/nano33ble
+    nordicnrf52/bbcmicrobit_v2
     nordicnrf52/laird_bl652_dvk
     nordicnrf52/laird_bl654_dvk
     nordicnrf52/bluey
@@ -762,13 +767,17 @@ Nordic nRF52
     nordicnrf52/particle_argon
     nordicnrf52/particle_boron
     nordicnrf52/particle_xenon
+    nordicnrf52/raytac_mdbt50q_rx
     nordicnrf52/redbear_blenano2
     nordicnrf52/redbear_blend2
     nordicnrf52/ruuvitag
     nordicnrf52/sdt52832b
     nordicnrf52/stct_nrf52_minidev
     nordicnrf52/vbluno52
+    nordicnrf52/dwm1001_dev
     nordicnrf52/hackaBLE
+    nordicnrf52/reel_board
+    nordicnrf52/reel_board_v2
     nordicnrf52/ublox_evk_nina_b1
 
 Nuclei
@@ -780,6 +789,7 @@ Nuclei
     nuclei/gd32vf103v_eval
     nuclei/gd32vf103v_rvstar
     nuclei/hbird_eval
+    nuclei/gd32vf103c_longan_nano
 
 NXP i.MX RT
 -----------

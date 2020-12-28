@@ -41,6 +41,8 @@ Examples are listed from `Nuclei development platform repository <https://github
 * `ucosii_demo <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/ucosii_demo?utm_source=platformio.org&utm_medium=docs>`_
 * `coremark <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/coremark?utm_source=platformio.org&utm_medium=docs>`_
 * `demo_timer <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_timer?utm_source=platformio.org&utm_medium=docs>`_
+* `rtthread_msh <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/rtthread_msh?utm_source=platformio.org&utm_medium=docs>`_
+* `demo_nice <https://github.com/Nuclei-Software/platform-nuclei/tree/master/examples/demo_nice?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -109,6 +111,11 @@ Please click on board name for the further details.
       - RAM
     * - :ref:`board_nuclei_gd32vf103v_eval`
       - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_nuclei_gd32vf103c_longan_nano`
+      - GD32VF103CBT6
       - 108MHz
       - 128KB
       - 32KB
@@ -216,6 +223,12 @@ GigaDevice
     * - :ref:`board_nuclei_gd32vf103v_eval`
       - External
       - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_nuclei_gd32vf103c_longan_nano`
+      - External
+      - GD32VF103CBT6
       - 108MHz
       - 128KB
       - 32KB

@@ -409,6 +409,13 @@ Boards
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_laird_bl652_dvk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -955,6 +962,13 @@ Boards
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -2131,6 +2145,13 @@ Boards
       - 48MHz
       - 32KB
       - 7.75KB
+    * - :ref:`board_nordicnrf52_dwm1001_dev`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_hackaBLE`
       - :ref:`platform_nordicnrf52`
       - External
@@ -2145,6 +2166,20 @@ Boards
       - 16MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_reel_board`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_sakuraio_evb_01`
       - :ref:`platform_ststm32`
       - On-board

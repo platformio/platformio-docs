@@ -563,6 +563,12 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
+      - :ref:`platform_nordicnrf52`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_atmelavr_zumbt328`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
@@ -1499,6 +1505,12 @@ You do not need to use/buy external debug probe.
       - 144MHz
       - 2.00MB
       - 1.95MB
+    * - :ref:`board_nordicnrf52_dwm1001_dev`
+      - :ref:`platform_nordicnrf52`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_atmelavr_ftduino`
       - :ref:`platform_atmelavr`
       - ATMEGA32U4
@@ -1602,6 +1614,12 @@ Please click on board name for the further details.
       - 240MHz
       - 16MB
       - 520KB
+    * - :ref:`board_atmelsam_adafruit_blm_badge`
+      - :ref:`platform_atmelsam`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -1650,6 +1668,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_feather_m4_can`
+      - :ref:`platform_atmelsam`
+      - SAME51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - :ref:`platform_atmelsam`
       - SAMD51J19A
@@ -1710,6 +1734,12 @@ Please click on board name for the further details.
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -1752,6 +1782,12 @@ Please click on board name for the further details.
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - :ref:`platform_atmelsam`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - SAMD51J19A
@@ -2436,6 +2472,12 @@ Please click on board name for the further details.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_espressif32_sg-o_airMon`
       - :ref:`platform_espressif32`
       - ESP32
@@ -3417,6 +3459,13 @@ Adafruit
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_adafruit_blm_badge`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelavr_bluefruitmicro`
       - :ref:`platform_atmelavr`
       - On-board
@@ -3501,6 +3550,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_feather_m4_can`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAME51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -3606,6 +3662,13 @@ Adafruit
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelavr_metro`
       - :ref:`platform_atmelavr`
       - On-board
@@ -3690,6 +3753,13 @@ Adafruit
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -4551,6 +4621,13 @@ BBC
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 64KB
 
 BOXTEC
 ~~~~~~
@@ -8304,6 +8381,27 @@ RUMBA
       - 512KB
       - 128KB
 
+Raytac
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
+
 RedBearLab
 ~~~~~~~~~~
 
@@ -10438,6 +10536,27 @@ chipKIT
       - 40MHz
       - 120KB
       - 32KB
+
+decaWave
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_dwm1001_dev`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 element14
 ~~~~~~~~~

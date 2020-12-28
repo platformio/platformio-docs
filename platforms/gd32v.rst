@@ -151,8 +151,8 @@ Packages
     * - `tool-openocd-gd32v <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
       - Open On-Chip Debugger branch with RISC-V GigaDevice GD32V support
 
-    * - `toolchain-gd32v <https://github.com/riscv-mcu/riscv-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
-      - GCC Toolchain for GigaDevice GD32V microcontrollers
+    * - `toolchain-gd32v <https://github.com/riscv-mcu/riscv-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
+      - RISC-V GCC toolchain
 
 .. warning::
     **Linux Users**:

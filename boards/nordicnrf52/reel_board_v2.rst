@@ -9,59 +9,83 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_chipsalliance_swervolf_nexys:
+.. _board_nordicnrf52_reel_board_v2:
 
-RVfpga: Digilent Nexys A7
-=========================
+reel_board_v2
+=============
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_chipsalliance`: The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
+Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
 .. list-table::
 
   * - **Microcontroller**
-    - 
+    - NRF52840
   * - **Frequency**
-    - 320MHz
+    - 64MHz
   * - **Flash**
-    - 16MB
+    - 1MB
   * - **RAM**
-    - 1.16MB
+    - 256KB
   * - **Vendor**
-    - `Digilent <https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/start?utm_source=platformio.org&utm_medium=docs>`__
+    - `PHYTEC <https://www.phytec.eu/reelboard?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``swervolf_nexys`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``reel_board_v2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:swervolf_nexys]
-  platform = chipsalliance
-  board = swervolf_nexys
+  [env:reel_board_v2]
+  platform = nordicnrf52
+  board = reel_board_v2
 
-You can override default RVfpga: Digilent Nexys A7 settings per build environment using
+You can override default reel_board_v2 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `swervolf_nexys.json <https://github.com/platformio/platform-chipsalliance/blob/master/boards/swervolf_nexys.json>`_. For example,
+board manifest `reel_board_v2.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/reel_board_v2.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:swervolf_nexys]
-  platform = chipsalliance
-  board = swervolf_nexys
+  [env:reel_board_v2]
+  platform = nordicnrf52
+  board = reel_board_v2
 
   ; change microcontroller
-  board_build.mcu = 
+  board_build.mcu = nrf52840
 
   ; change MCU frequency
-  board_build.f_cpu = 320000000L
+  board_build.f_cpu = 64000000L
+
+
+Uploading
+---------
+reel_board_v2 supports the next uploading protocols:
+
+* ``blackmagic``
+* ``cmsis-dap``
+* ``jlink``
+* ``mbed``
+* ``nrfjprog``
+* ``stlink``
+
+Default protocol is ``cmsis-dap``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:reel_board_v2]
+  platform = nordicnrf52
+  board = reel_board_v2
+
+  upload_protocol = cmsis-dap
 
 Debugging
 ---------
@@ -76,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-RVfpga: Digilent Nexys A7 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+reel_board_v2 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -84,26 +108,17 @@ RVfpga: Digilent Nexys A7 has on-board debug probe and **IS READY** for debuggin
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_digilent-hs1`
+  * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - Yes
     - Yes
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
+  * - :ref:`debugging_tool_jlink`
     - 
     - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
+  * - :ref:`debugging_tool_stlink`
     - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
-  * - :ref:`debugging_tool_verilator`
-    - Yes
-    - 
-  * - :ref:`debugging_tool_whisper`
-    - Yes
     - 
 
 Frameworks
@@ -113,12 +128,6 @@ Frameworks
 
     * - Name
       - Description
-
-    * - :ref:`framework_freertos`
-      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
-
-    * - :ref:`framework_wd-riscv-sdk`
-      - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
