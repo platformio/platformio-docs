@@ -69,6 +69,7 @@ Uploading
 Electrosmith Daisy supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``mbed``
 * ``stlink``
@@ -109,6 +110,9 @@ Electrosmith Daisy does not have on-board debug probe and **IS NOT READY** for d
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

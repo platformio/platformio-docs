@@ -81,91 +81,91 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_atmelavr`
       - ATMEGA128
       - 16MHz
-      - 127KB
+      - 128KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega1280`
       - :ref:`platform_atmelavr`
       - ATMEGA1280
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1281`
       - :ref:`platform_atmelavr`
       - ATMEGA1281
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1284`
       - :ref:`platform_atmelavr`
       - ATMEGA1284
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega1284P`
       - :ref:`platform_atmelavr`
       - ATMEGA1284P
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega16`
       - :ref:`platform_atmelavr`
       - ATMEGA16
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega164P`
       - :ref:`platform_atmelavr`
       - ATMEGA164P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168`
       - :ref:`platform_atmelavr`
       - ATMEGA168
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168P`
       - :ref:`platform_atmelavr`
       - ATMEGA168P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega2560`
       - :ref:`platform_atmelavr`
       - ATMEGA2560
       - 16MHz
-      - 255KB
+      - 256KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega324A`
       - :ref:`platform_atmelavr`
       - ATMEGA324A
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324P`
       - :ref:`platform_atmelavr`
       - ATMEGA324P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324PA`
       - :ref:`platform_atmelavr`
       - ATMEGA324PA
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328`
       - :ref:`platform_atmelavr`
       - ATMEGA328
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328P`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega48`
       - :ref:`platform_atmelavr`
@@ -183,25 +183,25 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_atmelavr`
       - ATMEGA644P
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega8`
       - :ref:`platform_atmelavr`
       - ATMEGA8
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88`
       - :ref:`platform_atmelavr`
       - ATMEGA88
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88P`
       - :ref:`platform_atmelavr`
       - ATMEGA88P
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_attiny13`
       - :ref:`platform_atmelavr`
@@ -563,6 +563,12 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
+      - :ref:`platform_nordicnrf52`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_atmelavr_zumbt328`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
@@ -1499,6 +1505,12 @@ You do not need to use/buy external debug probe.
       - 144MHz
       - 2.00MB
       - 1.95MB
+    * - :ref:`board_nordicnrf52_dwm1001_dev`
+      - :ref:`platform_nordicnrf52`
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_atmelavr_ftduino`
       - :ref:`platform_atmelavr`
       - ATMEGA32U4
@@ -1602,6 +1614,12 @@ Please click on board name for the further details.
       - 240MHz
       - 16MB
       - 520KB
+    * - :ref:`board_atmelsam_adafruit_blm_badge`
+      - :ref:`platform_atmelsam`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -1650,6 +1668,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_feather_m4_can`
+      - :ref:`platform_atmelsam`
+      - SAME51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - :ref:`platform_atmelsam`
       - SAMD51J19A
@@ -1710,6 +1734,12 @@ Please click on board name for the further details.
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
+      - :ref:`platform_atmelsam`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -1752,6 +1782,12 @@ Please click on board name for the further details.
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - :ref:`platform_atmelsam`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - SAMD51J19A
@@ -2436,6 +2472,12 @@ Please click on board name for the further details.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_espressif32_sg-o_airMon`
       - :ref:`platform_espressif32`
       - ESP32
@@ -3417,6 +3459,13 @@ Adafruit
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_adafruit_blm_badge`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelavr_bluefruitmicro`
       - :ref:`platform_atmelavr`
       - On-board
@@ -3501,6 +3550,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_feather_m4_can`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAME51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -3606,6 +3662,13 @@ Adafruit
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelavr_metro`
       - :ref:`platform_atmelavr`
       - On-board
@@ -3690,6 +3753,13 @@ Adafruit
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -4551,6 +4621,13 @@ BBC
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 64KB
 
 BOXTEC
 ~~~~~~
@@ -5469,6 +5546,13 @@ Espressif
       - 512KB
       - 80KB
     * - :ref:`board_espressif8266_esp07`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_esp07s`
       - :ref:`platform_espressif8266`
       - No
       - ESP8266
@@ -6873,63 +6957,63 @@ Microchip
       - No
       - AT90CAN128
       - 16MHz
-      - 127KB
+      - 128KB
       - 4KB
     * - :ref:`board_atmelavr_AT90CAN32`
       - :ref:`platform_atmelavr`
       - No
       - AT90CAN32
       - 16MHz
-      - 31KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_AT90CAN64`
       - :ref:`platform_atmelavr`
       - No
       - AT90CAN64
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega128`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA128
       - 16MHz
-      - 127KB
+      - 128KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega1280`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA1280
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1281`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA1281
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1284`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA1284
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega1284P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA1284P
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega16`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA16
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelmegaavr_ATmega1608`
       - :ref:`platform_atmelmegaavr`
@@ -6950,63 +7034,63 @@ Microchip
       - No
       - ATMEGA162
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega164A`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA164A
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega164P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA164P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA168
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA168P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168PB`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA168PB
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega2560`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA2560
       - 16MHz
-      - 255KB
+      - 256KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega2561`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA2561
       - 16MHz
-      - 255KB
+      - 256KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega32`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA32
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelmegaavr_ATmega3208`
       - :ref:`platform_atmelmegaavr`
@@ -7027,49 +7111,49 @@ Microchip
       - On-board
       - ATMEGA324A
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA324P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324PA`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA324PA
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324PB`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA324PB
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA328
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA328P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328PB`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA328PB
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega48`
       - :ref:`platform_atmelavr`
@@ -7111,35 +7195,35 @@ Microchip
       - No
       - ATMEGA64
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega640`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA640
       - 16MHz
-      - 63KB
+      - 64KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega644A`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA644A
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega644P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA644P
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega8`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA8
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelmegaavr_ATmega808`
       - :ref:`platform_atmelmegaavr`
@@ -7160,35 +7244,35 @@ Microchip
       - No
       - ATMEGA8515
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 512B
     * - :ref:`board_atmelavr_ATmega8535`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA8535
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 512B
     * - :ref:`board_atmelavr_ATmega88`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA88
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA88P
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88PB`
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA88PB
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_attiny13`
       - :ref:`platform_atmelavr`
@@ -7204,6 +7288,181 @@ Microchip
       - 9MHz
       - 1KB
       - 64B
+    * - :ref:`board_atmelmegaavr_ATtiny1604`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1604
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny1606`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1606
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny1607`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1607
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny1614`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1614
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1616`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1616
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1617`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1617
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny202`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY202
+      - 16MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelmegaavr_ATtiny204`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY204
+      - 16MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelmegaavr_ATtiny212`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY212
+      - 16MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelmegaavr_ATtiny214`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY214
+      - 16MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelmegaavr_ATtiny3216`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY3216
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny3217`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY3217
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny402`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY402
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny404`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY404
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny406`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY406
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny412`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY412
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny414`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY414
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny416`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY416
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny417`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY417
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny804`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY804
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny806`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY806
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny807`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY807
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny814`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY814
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny816`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY816
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny817`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY817
+      - 16MHz
+      - 8KB
+      - 512B
     * - :ref:`board_atmelmegaavr_avr_iot_wg`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8121,6 +8380,27 @@ RUMBA
       - 180MHz
       - 512KB
       - 128KB
+
+Raytac
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 RedBearLab
 ~~~~~~~~~~
@@ -10215,6 +10495,27 @@ XinaBox
       - 4MB
       - 320KB
 
+YeaCreate
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_nscreen-32`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
+
 chipKIT
 ~~~~~~~
 
@@ -10235,6 +10536,27 @@ chipKIT
       - 40MHz
       - 120KB
       - 32KB
+
+decaWave
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_dwm1001_dev`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
 
 element14
 ~~~~~~~~~

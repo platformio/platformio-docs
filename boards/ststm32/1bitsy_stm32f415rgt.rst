@@ -69,6 +69,7 @@ Uploading
 1Bitsy supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``stlink``
 
@@ -108,6 +109,9 @@ You can switch between debugging :ref:`debugging_tools` using
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

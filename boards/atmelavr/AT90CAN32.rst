@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 31KB
+    - 32KB
   * - **RAM**
     - 2KB
   * - **Vendor**

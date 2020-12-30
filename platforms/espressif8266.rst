@@ -355,6 +355,12 @@ Espressif
       - No
       - ESP8266
       - 80MHz
+      - 1MB
+      - 80KB
+    * - :ref:`board_espressif8266_esp07s`
+      - No
+      - ESP8266
+      - 80MHz
       - 4MB
       - 80KB
     * - :ref:`board_espressif8266_esp8285`

@@ -135,6 +135,11 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_adafruit_blm_badge`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - SAMD21G18A
       - 48MHz
@@ -155,6 +160,11 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_feather_m4_can`
+      - SAME51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - SAMD51J19A
       - 120MHz
@@ -195,6 +205,11 @@ Please click on board name for the further details.
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - SAMD21G18A
       - 48MHz
@@ -230,6 +245,11 @@ Please click on board name for the further details.
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - SAMD51J19A
       - 120MHz
@@ -698,6 +718,12 @@ Adafruit
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_adafruit_blm_badge`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - External
       - SAMD21G18A
@@ -722,6 +748,12 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_feather_m4_can`
+      - External
+      - SAME51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - External
       - SAMD51J19A
@@ -770,6 +802,12 @@ Adafruit
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - External
       - SAMD21G18A
@@ -812,6 +850,12 @@ Adafruit
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - External
       - SAMD51J19A

@@ -39,8 +39,7 @@ System requirements
 :Operating System: Windows, macOS, Linux, FreeBSD, Linux ARMv6+
 :Python Interpreter:
 
-    Python 3.5+ (Python 2.7 is not recommended, support for it will be removed in the next releases).
-    See detailed instruction on how to :ref:`faq_install_python` for Windows.
+    **Python 3.6+ or above**. See detailed instruction on how to :ref:`faq_install_python`.
 
 :Terminal Application:
 
@@ -86,7 +85,7 @@ To install or upgrade |PIOCore| paste that at a *Terminal* prompt:
 
 .. code-block:: bash
 
-    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)"
+    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
 
     # or using `curl`
 
@@ -156,109 +155,6 @@ macOS Homebrew Packages Manager (`brew <http://brew.sh/>`_) as follows:
 .. code-block:: bash
 
     brew install platformio
-
-Virtual Environment
-~~~~~~~~~~~~~~~~~~~
-
-PlatformIO Core may be installed into isolated Python environment. This
-method is very good if you don't want to install PlatformIO Core Python's
-dependencies (packages) into your global system scope. :ref:`pioide` uses this
-method to install PlatformIO Core.
-
-Default and recommended environment folder is ":ref:`projectconf_pio_core_dir`/penv".
-You can print **environment folder path** using the next command in your
-system terminal:
-
-.. code-block:: bash
-
-    python -c "import os; print(os.path.join(os.getenv('PLATFORMIO_CORE_DIR', os.path.join(os.path.expanduser('~'), '.platformio')), 'penv'))"
-
-    ######################## Examples
-    # Windows
-    # C:\Users\UserName\.platformio\penv
-
-    # Linux
-    # ~/.platformio/penv
-    # /home/username/.platformio/penv
-
-    # macOS
-    # ~/.platformio/penv
-    # /Users/username/.platformio/penv
-
-Prerequisites
-'''''''''''''
-
-1.  Please remove existing PlatformIO Core **environment folder** if exists.
-    See above command how to get path to environment folder.
-
-2.  Please check that you have a valid Python interpreter running a next
-    command in system terminal. Python 2.7.9+ or Python 3.5+ is recommended.
-
-    .. code-block:: bash
-
-        python --version
-
-        # or, for Unix (Linux, Mac), you can use `python2` or `python3` aliases
-        python2 --version
-        python3 --version
-
-    .. warning::
-        **Windows Users**: If you already tried to install :ref:`pioide` and did
-        not get success, please open system's Control Panel > Installed Programs,
-        and check if PlatformIO IDE tried to install an own isolated Python 2.7
-        version. Please uninstall it. Also is good to uninstall all Python
-        interpreters from a system and install manually the latest Python
-        using :ref:`faq_install_python` guide.
-
-3.  Make sure ``virtualenv --help`` command exists in a system, otherwise,
-    please install it manually using ``pip install virtualenv`` or
-    ``pip2 install virtualenv`` command.
-
-    If ``pip`` (Python Package Manager) does not exists, you have to install it
-    manually. See https://pip.pypa.io/en/stable/installing/
-
-Creating
-''''''''
-
-1.  Create a folder which contains all the necessary executables to use the
-    packages that PlatformIO Core would need using ``virtualenv`` command:
-
-    .. code-block:: bash
-
-        virtualenv /path/to/.platformio/penv
-
-        # If you want to use a custom Python interpreter
-        virtualenv --python=/path/to/custom/python /path/to/.platformio/penv
-
-        # EXAMPLES
-        # Windows
-        virtualenv C:\Users\UserName\.platformio\penv
-        virtualenv --python=C:\Python27\python.exe  C:\Users\UserName\.platformio\penv
-
-        # Unix (Linux, Mac)
-        virtualenv ~/.platformio/penv
-        virtualenv -p python3 ~/.platformio/penv
-
-2.  Activate virtual environment
-
-    .. code-block:: bash
-
-        # Windows
-        C:\Users\UserName\.platformio\penv\Scripts\activate
-
-        # Unix (Linux, Mac)
-        source /path/to/.platformio/penv/bin/activate
-        # or
-        . /path/to/.platformio/penv/bin/activate
-
-3.  Install PlatformIO Core into virtual environment
-
-    .. code-block:: bash
-
-        pip install -U platformio
-
-If you plan to use PlatformIO Core commands outside virtual environment, please
-:ref:`piocore_install_shell_commands`.
 
 .. _installation_develop:
 
@@ -414,7 +310,7 @@ Python Interpreter
 ''''''''''''''''''
 
 PlatformIO Core Installer Script is written in Python and is compatible with Python 2.7+
-and Python 3.5+. **We highly recommend using Python 3**.
+and Python 3.5+. **We highly recommend using the latest Python 3**.
 
 Python is installed by default on the most popular Unix OS (macOS, Linux, FreeBSD).
 If there is no Python on a user machine (you can check running ``python --version``),

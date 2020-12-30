@@ -81,77 +81,77 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_atmelavr_ATmega128`
       - ATMEGA128
       - 16MHz
-      - 127KB
+      - 128KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega1280`
       - ATMEGA1280
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1281`
       - ATMEGA1281
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1284`
       - ATMEGA1284
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega1284P`
       - ATMEGA1284P
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega16`
       - ATMEGA16
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega164P`
       - ATMEGA164P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168`
       - ATMEGA168
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168P`
       - ATMEGA168P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega2560`
       - ATMEGA2560
       - 16MHz
-      - 255KB
+      - 256KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega324A`
       - ATMEGA324A
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324P`
       - ATMEGA324P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324PA`
       - ATMEGA324PA
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328`
       - ATMEGA328
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328P`
       - ATMEGA328P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega48`
       - ATMEGA48
@@ -166,22 +166,22 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_atmelavr_ATmega644P`
       - ATMEGA644P
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega8`
       - ATMEGA8
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88`
       - ATMEGA88
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88P`
       - ATMEGA88P
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_attiny13`
       - ATTINY13
@@ -1904,151 +1904,151 @@ Microchip
       - No
       - AT90CAN128
       - 16MHz
-      - 127KB
+      - 128KB
       - 4KB
     * - :ref:`board_atmelavr_AT90CAN32`
       - No
       - AT90CAN32
       - 16MHz
-      - 31KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_AT90CAN64`
       - No
       - AT90CAN64
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega128`
       - On-board
       - ATMEGA128
       - 16MHz
-      - 127KB
+      - 128KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega1280`
       - On-board
       - ATMEGA1280
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1281`
       - On-board
       - ATMEGA1281
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1284`
       - On-board
       - ATMEGA1284
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega1284P`
       - On-board
       - ATMEGA1284P
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega16`
       - On-board
       - ATMEGA16
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega162`
       - No
       - ATMEGA162
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega164A`
       - No
       - ATMEGA164A
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega164P`
       - On-board
       - ATMEGA164P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168`
       - On-board
       - ATMEGA168
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168P`
       - On-board
       - ATMEGA168P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168PB`
       - No
       - ATMEGA168PB
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega2560`
       - On-board
       - ATMEGA2560
       - 16MHz
-      - 255KB
+      - 256KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega2561`
       - No
       - ATMEGA2561
       - 16MHz
-      - 255KB
+      - 256KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega32`
       - No
       - ATMEGA32
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324A`
       - On-board
       - ATMEGA324A
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324P`
       - On-board
       - ATMEGA324P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324PA`
       - On-board
       - ATMEGA324PA
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324PB`
       - No
       - ATMEGA324PB
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328`
       - On-board
       - ATMEGA328
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328P`
       - On-board
       - ATMEGA328P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328PB`
       - No
       - ATMEGA328PB
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega48`
       - On-board
@@ -2072,61 +2072,61 @@ Microchip
       - No
       - ATMEGA64
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega640`
       - No
       - ATMEGA640
       - 16MHz
-      - 63KB
+      - 64KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega644A`
       - No
       - ATMEGA644A
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega644P`
       - On-board
       - ATMEGA644P
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega8`
       - On-board
       - ATMEGA8
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega8515`
       - No
       - ATMEGA8515
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 512B
     * - :ref:`board_atmelavr_ATmega8535`
       - No
       - ATMEGA8535
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 512B
     * - :ref:`board_atmelavr_ATmega88`
       - On-board
       - ATMEGA88
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88P`
       - On-board
       - ATMEGA88P
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88PB`
       - No
       - ATMEGA88PB
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_attiny13`
       - On-board

@@ -69,6 +69,7 @@ Uploading
 WeAct BlackPill V2.0 (BlackPill F411CE) supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``dfu``
 * ``jlink``
 * ``serial``
@@ -110,6 +111,9 @@ WeAct BlackPill V2.0 (BlackPill F411CE) does not have on-board debug probe and *
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

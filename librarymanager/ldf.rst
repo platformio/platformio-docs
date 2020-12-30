@@ -115,7 +115,7 @@ there are 2 libraries:
     * ``#include <foo.h>`` is located in one of the project source files
 
     Here the nested includes (``project file > foo.h > bar.h``) and LDF
-    will find both libraries "Foo`` and ``Bar``.
+    will find both libraries ``Foo`` and ``Bar``.
 
 :Case 2:
 

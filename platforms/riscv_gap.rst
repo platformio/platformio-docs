@@ -141,8 +141,8 @@ Packages
     * - `tool-pulp_tools <https://github.com/GreenWaves-Technologies/pulp_tools.git?utm_source=platformio.org&utm_medium=docs>`__
       - Top project for building PULP development tools
 
-    * - `toolchain-riscv-pulp <https://github.com/pulp-platform/pulp-riscv-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
-      - RISC-V GCC toolchain for PULP platform
+    * - `toolchain-riscv-pulp <https://www.embecosm.com/resources/tool-chain-downloads/?utm_source=platformio.org&utm_medium=docs#pulp>`__
+      - GNU toolchain for RISC-V (PULP platform)
 
 .. warning::
     **Linux Users**:

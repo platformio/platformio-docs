@@ -84,6 +84,9 @@ Packages
     * - `framework-arduino-megaavr-megacorex <https://github.com/MCUdude/MegaCoreX.git?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework for Microchip megaAVR microcontrollers (MegaCoreX)
 
+    * - `framework-arduino-megaavr-megatinycore <https://github.com/SpenceKonde/megaTinyCore.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for Microchip tinyAVR 0-series and 1-series chips (megaTinyCore)
+
     * - `tool-avrdude-megaavr <http://savannah.nongnu.org/projects/avrdude?utm_source=platformio.org&utm_medium=docs>`__
       - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of megaAVR microcontrollers
 
@@ -209,6 +212,156 @@ Microchip
       - 16MHz
       - 8KB
       - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny1604`
+      - No
+      - ATTINY1604
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny1606`
+      - No
+      - ATTINY1606
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny1607`
+      - No
+      - ATTINY1607
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny1614`
+      - No
+      - ATTINY1614
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1616`
+      - No
+      - ATTINY1616
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1617`
+      - No
+      - ATTINY1617
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny202`
+      - No
+      - ATTINY202
+      - 16MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelmegaavr_ATtiny204`
+      - No
+      - ATTINY204
+      - 16MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelmegaavr_ATtiny212`
+      - No
+      - ATTINY212
+      - 16MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelmegaavr_ATtiny214`
+      - No
+      - ATTINY214
+      - 16MHz
+      - 2KB
+      - 128B
+    * - :ref:`board_atmelmegaavr_ATtiny3216`
+      - No
+      - ATTINY3216
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny3217`
+      - No
+      - ATTINY3217
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny402`
+      - No
+      - ATTINY402
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny404`
+      - No
+      - ATTINY404
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny406`
+      - No
+      - ATTINY406
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny412`
+      - No
+      - ATTINY412
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny414`
+      - No
+      - ATTINY414
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny416`
+      - No
+      - ATTINY416
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny417`
+      - No
+      - ATTINY417
+      - 16MHz
+      - 4KB
+      - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny804`
+      - No
+      - ATTINY804
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny806`
+      - No
+      - ATTINY806
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny807`
+      - No
+      - ATTINY807
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny814`
+      - No
+      - ATTINY814
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny816`
+      - No
+      - ATTINY816
+      - 16MHz
+      - 8KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny817`
+      - No
+      - ATTINY817
+      - 16MHz
+      - 8KB
+      - 512B
     * - :ref:`board_atmelmegaavr_avr_iot_wg`
       - No
       - ATMEGA4808

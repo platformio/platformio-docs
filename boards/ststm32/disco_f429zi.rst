@@ -69,6 +69,7 @@ Uploading
 ST 32F429IDISCOVERY supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``mbed``
 * ``stlink``
@@ -107,6 +108,9 @@ ST 32F429IDISCOVERY has on-board debug probe and **IS READY** for debugging. You
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`

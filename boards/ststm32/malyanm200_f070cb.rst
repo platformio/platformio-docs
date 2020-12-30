@@ -69,6 +69,7 @@ Uploading
 M200 V2 supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``serial``
 * ``stlink``
@@ -109,6 +110,9 @@ M200 V2 does not have on-board debug probe and **IS NOT READY** for debugging. Y
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

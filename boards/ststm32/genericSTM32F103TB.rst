@@ -69,6 +69,7 @@ Uploading
 STM32F103TB (20k RAM. 128k Flash) supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``dfu``
 * ``jlink``
 * ``serial``
@@ -110,6 +111,9 @@ STM32F103TB (20k RAM. 128k Flash) does not have on-board debug probe and **IS NO
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

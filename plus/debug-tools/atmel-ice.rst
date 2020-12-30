@@ -117,6 +117,13 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_adafruit_blm_badge`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_circuitplayground_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -145,6 +152,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_feather_m4_can`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAME51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -201,6 +215,13 @@ Boards
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -250,6 +271,13 @@ Boards
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - External

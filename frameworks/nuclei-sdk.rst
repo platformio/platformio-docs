@@ -101,6 +101,12 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_nuclei_gd32vf103c_longan_nano`
+      - :ref:`platform_nuclei`
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
 
 
 Examples
@@ -144,6 +150,13 @@ GigaDevice
       - :ref:`platform_nuclei`
       - External
       - GD32VF103VBT6
+      - 108MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_nuclei_gd32vf103c_longan_nano`
+      - :ref:`platform_nuclei`
+      - External
+      - GD32VF103CBT6
       - 108MHz
       - 128KB
       - 32KB

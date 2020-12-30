@@ -275,6 +275,31 @@ Atmel megaAVR
     atmelmegaavr/ATmega4809
     atmelmegaavr/ATmega808
     atmelmegaavr/ATmega809
+    atmelmegaavr/ATtiny1604
+    atmelmegaavr/ATtiny1606
+    atmelmegaavr/ATtiny1607
+    atmelmegaavr/ATtiny1614
+    atmelmegaavr/ATtiny1616
+    atmelmegaavr/ATtiny1617
+    atmelmegaavr/ATtiny202
+    atmelmegaavr/ATtiny204
+    atmelmegaavr/ATtiny212
+    atmelmegaavr/ATtiny214
+    atmelmegaavr/ATtiny3216
+    atmelmegaavr/ATtiny3217
+    atmelmegaavr/ATtiny402
+    atmelmegaavr/ATtiny404
+    atmelmegaavr/ATtiny406
+    atmelmegaavr/ATtiny412
+    atmelmegaavr/ATtiny414
+    atmelmegaavr/ATtiny416
+    atmelmegaavr/ATtiny417
+    atmelmegaavr/ATtiny804
+    atmelmegaavr/ATtiny806
+    atmelmegaavr/ATtiny807
+    atmelmegaavr/ATtiny814
+    atmelmegaavr/ATtiny816
+    atmelmegaavr/ATtiny817
     atmelmegaavr/avr_iot_wg
     atmelmegaavr/nano_every
     atmelmegaavr/uno_wifi_rev2
@@ -287,10 +312,12 @@ Atmel SAM
 .. toctree::
     :maxdepth: 1
         
+    atmelsam/adafruit_blm_badge
     atmelsam/adafruit_circuitplayground_m0
     atmelsam/adafruit_crickit_m0
     atmelsam/adafruit_feather_m0
     atmelsam/adafruit_feather_m0_express
+    atmelsam/adafruit_feather_m4_can
     atmelsam/adafruit_feather_m4
     atmelsam/adafruit_gemma_m0
     atmelsam/adafruit_grandcentral_m4
@@ -299,6 +326,7 @@ Atmel SAM
     atmelsam/adafruit_itsybitsy_m0
     atmelsam/adafruit_itsybitsy_m4
     atmelsam/adafruit_monster_m4sk
+    atmelsam/adafruit_matrix_portal_m4
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
     atmelsam/adafruit_metro_m4_airliftlite
@@ -306,6 +334,7 @@ Atmel SAM
     atmelsam/adafruit_pygamer_m4
     atmelsam/adafruit_pyportal_m4
     atmelsam/adafruit_pyportal_m4_titano
+    atmelsam/adafruit_qt_py_m0
     atmelsam/adafruit_trellis_m4
     atmelsam/adafruit_trinket_m0
     atmelsam/adafruit_pirkey
@@ -449,6 +478,7 @@ Espressif 32
     espressif32/wemosbat
     espressif32/widora-air
     espressif32/xinabox_cw02
+    espressif32/nscreen-32
     espressif32/iotbusio
     espressif32/iotbusproteus
     espressif32/nina_w10
@@ -473,6 +503,7 @@ Espressif 8266
     espressif8266/esp01_1m
     espressif8266/esp01
     espressif8266/esp07
+    espressif8266/esp07s
     espressif8266/esp8285
     espressif8266/heltec_wifi_kit_8
     espressif8266/inventone
@@ -715,6 +746,7 @@ Nordic nRF52
     nordicnrf52/adafruit_feather_nrf52840_sense
     nordicnrf52/adafruit_feather_nrf52840
     nordicnrf52/nano33ble
+    nordicnrf52/bbcmicrobit_v2
     nordicnrf52/laird_bl652_dvk
     nordicnrf52/laird_bl654_dvk
     nordicnrf52/bluey
@@ -735,13 +767,17 @@ Nordic nRF52
     nordicnrf52/particle_argon
     nordicnrf52/particle_boron
     nordicnrf52/particle_xenon
+    nordicnrf52/raytac_mdbt50q_rx
     nordicnrf52/redbear_blenano2
     nordicnrf52/redbear_blend2
     nordicnrf52/ruuvitag
     nordicnrf52/sdt52832b
     nordicnrf52/stct_nrf52_minidev
     nordicnrf52/vbluno52
+    nordicnrf52/dwm1001_dev
     nordicnrf52/hackaBLE
+    nordicnrf52/reel_board
+    nordicnrf52/reel_board_v2
     nordicnrf52/ublox_evk_nina_b1
 
 Nuclei
@@ -753,6 +789,7 @@ Nuclei
     nuclei/gd32vf103v_eval
     nuclei/gd32vf103v_rvstar
     nuclei/hbird_eval
+    nuclei/gd32vf103c_longan_nano
 
 NXP i.MX RT
 -----------
@@ -982,6 +1019,7 @@ ST STM32
     ststm32/nucleo_f756zg
     ststm32/nucleo_f767zi
     ststm32/nucleo_h743zi
+    ststm32/nucleo_h745zi_q
     ststm32/nucleo_l011k4
     ststm32/nucleo_l031k6
     ststm32/nucleo_l053r8

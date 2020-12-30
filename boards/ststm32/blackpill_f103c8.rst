@@ -69,6 +69,7 @@ Uploading
 BlackPill F103C8 supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``serial``
 * ``stlink``
@@ -107,6 +108,9 @@ BlackPill F103C8 does not have on-board debug probe and **IS NOT READY** for deb
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`

@@ -462,6 +462,13 @@ Boards
       - 180MHz
       - 1MB
       - 384KB
+    * - :ref:`board_atmelsam_adafruit_blm_badge`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_nordicnrf52_adafruit_feather_nrf52832`
       - :ref:`platform_nordicnrf52`
       - External
@@ -518,6 +525,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_feather_m4_can`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAME51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -588,6 +602,13 @@ Boards
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -637,6 +658,13 @@ Boards
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -882,6 +910,13 @@ Boards
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_laird_bl652_dvk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2114,6 +2149,13 @@ Boards
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -2533,6 +2575,13 @@ Boards
       - STM32H743ZIT6
       - 400MHz
       - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_nucleo_h745zi_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H745ZIT6
+      - 480MHz
+      - 1MB
       - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
@@ -3325,6 +3374,13 @@ Boards
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_nuclei_gd32vf103c_longan_nano`
+      - :ref:`platform_nuclei`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_gd32v_sipeed-longan-nano-lite`
       - :ref:`platform_gd32v`
       - External
@@ -3780,6 +3836,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nordicnrf52_dwm1001_dev`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
     * - :ref:`board_nordicnrf52_hackaBLE`
       - :ref:`platform_nordicnrf52`
       - External
@@ -3808,6 +3871,20 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_nordicnrf52_reel_board`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_sakuraio_evb_01`
       - :ref:`platform_ststm32`
       - On-board
@@ -3859,7 +3936,7 @@ Boards
       - 256KB
     * - :ref:`board_ststm32_mtb_ublox_odin_w2`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F439ZIY6
       - 168MHz
       - 2MB

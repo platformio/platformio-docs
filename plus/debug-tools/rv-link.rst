@@ -136,6 +136,13 @@ Boards
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_nuclei_gd32vf103c_longan_nano`
+      - :ref:`platform_nuclei`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_gd32v_sipeed-longan-nano-lite`
       - :ref:`platform_gd32v`
       - External

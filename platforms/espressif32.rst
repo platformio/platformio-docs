@@ -1518,6 +1518,25 @@ XinaBox
       - 4MB
       - 320KB
 
+YeaCreate
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_nscreen-32`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
+
 meteca
 ~~~~~~
 

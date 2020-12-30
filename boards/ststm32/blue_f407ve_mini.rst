@@ -69,6 +69,7 @@ Uploading
 Blue STM32F407VE Mini supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``serial``
 * ``stlink``
@@ -109,6 +110,9 @@ Blue STM32F407VE Mini does not have on-board debug probe and **IS NOT READY** fo
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

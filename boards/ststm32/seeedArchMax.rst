@@ -69,6 +69,7 @@ Uploading
 Seeed Arch Max supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``mbed``
 * ``stlink``
@@ -107,6 +108,9 @@ Seeed Arch Max has on-board debug probe and **IS READY** for debugging. You don'
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`

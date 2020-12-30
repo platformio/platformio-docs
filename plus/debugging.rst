@@ -476,6 +476,13 @@ Adafruit
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_atmelsam_adafruit_blm_badge`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelavr_bluefruitmicro`
       - :ref:`platform_atmelavr`
       - On-board
@@ -560,6 +567,13 @@ Adafruit
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_adafruit_feather_m4_can`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAME51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_adafruit_feather_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -658,6 +672,13 @@ Adafruit
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J19A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelavr_metro`
       - :ref:`platform_atmelavr`
       - On-board
@@ -742,6 +763,13 @@ Adafruit
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_trellis_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -1547,6 +1575,13 @@ BBC
       - 16MHz
       - 256KB
       - 16KB
+    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 64KB
 
 BQ
 ~~
@@ -2898,6 +2933,13 @@ GigaDevice
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_nuclei_gd32vf103c_longan_nano`
+      - :ref:`platform_nuclei`
+      - External
+      - GD32VF103CBT6
+      - 108MHz
+      - 128KB
+      - 32KB
 
 Gimasi
 ~~~~~~
@@ -3519,105 +3561,105 @@ Microchip
       - On-board
       - ATMEGA128
       - 16MHz
-      - 127KB
+      - 128KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega1280`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA1280
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1281`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA1281
       - 16MHz
-      - 127KB
+      - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1284`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA1284
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega1284P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA1284P
       - 16MHz
-      - 127KB
+      - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega16`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA16
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega164P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA164P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA168
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA168P
       - 16MHz
-      - 15.50KB
+      - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega2560`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA2560
       - 16MHz
-      - 255KB
+      - 256KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega324A`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA324A
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA324P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324PA`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA324PA
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA328
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA328P
       - 16MHz
-      - 31.50KB
+      - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega48`
       - :ref:`platform_atmelavr`
@@ -3638,28 +3680,28 @@ Microchip
       - On-board
       - ATMEGA644P
       - 16MHz
-      - 63KB
+      - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega8`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA8
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA88
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88P`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA88P
       - 16MHz
-      - 7.50KB
+      - 8KB
       - 1KB
     * - :ref:`board_atmelavr_attiny13`
       - :ref:`platform_atmelavr`
@@ -4306,6 +4348,34 @@ OpenEnergyMonitor
       - 30KB
       - 2KB
 
+PHYTEC
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_reel_board`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+
 PYBStick
 ~~~~~~~~
 
@@ -4620,6 +4690,27 @@ RUMBA
       - 180MHz
       - 512KB
       - 128KB
+
+Raytac
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 243KB
 
 RedBearLab
 ~~~~~~~~~~
@@ -5389,6 +5480,13 @@ ST
       - STM32H743ZIT6
       - 400MHz
       - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_nucleo_h745zi_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H745ZIT6
+      - 480MHz
+      - 1MB
       - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
@@ -7127,6 +7225,27 @@ XinaBox
       - 4MB
       - 320KB
 
+decaWave
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_dwm1001_dev`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 512KB
+      - 64KB
+
 meteca
 ~~~~~~
 
@@ -7401,7 +7520,7 @@ u-blox
       - 256KB
     * - :ref:`board_ststm32_mtb_ublox_odin_w2`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32F439ZIY6
       - 168MHz
       - 2MB

@@ -69,6 +69,7 @@ Uploading
 STEVAL-FCU001V1 Flight controller unit evaluation board supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
 * ``stlink``
 
@@ -108,6 +109,9 @@ STEVAL-FCU001V1 Flight controller unit evaluation board does not have on-board d
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

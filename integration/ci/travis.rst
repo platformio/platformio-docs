@@ -68,13 +68,14 @@ This variant is default choice for native PlatformIO projects:
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     install:
         - pip install -U platformio
@@ -95,13 +96,14 @@ and boards from command line interface:
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=path/to/test/file.c
@@ -199,13 +201,14 @@ Examples
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=examples/acm/acm_terminal
@@ -237,13 +240,14 @@ Examples
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=examples/backSoon/backSoon.ino
@@ -272,13 +276,14 @@ Examples
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=examples/TimeArduinoDue PLATFORMIO_CI_EXTRA_ARGS="--board=due"
@@ -310,13 +315,14 @@ Examples
 
     language: python
     python:
-        - "2.7"
+        - "3.7"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
     sudo: false
     cache:
         directories:
             - "~/.platformio"
+            - $HOME/.cache/pip
 
     env:
         - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Adafruit_Bluefruit_LE

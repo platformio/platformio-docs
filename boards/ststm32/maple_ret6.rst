@@ -69,6 +69,7 @@ Uploading
 Maple (RET6) supports the next uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``dfu``
 * ``jlink``
 * ``stlink``
@@ -109,6 +110,9 @@ Maple (RET6) does not have on-board debug probe and **IS NOT READY** for debuggi
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
