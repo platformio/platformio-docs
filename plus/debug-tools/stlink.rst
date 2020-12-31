@@ -71,63 +71,12 @@ Drivers
 Wiring Connections
 ------------------
 
-.. image:: ../../_static/images/debug_probes/generic_jtag_swd_connector.jpg
+Please check a community `Guide: Connecting your ST-Link debugger <https://stm32-base.org/guides/connecting-your-debugger>`__
+that covers the next debugging probes:
 
-JTAG Interface
-~~~~~~~~~~~~~~
-
-.. list-table::
-  :header-rows:  1
-
-  * - ST-Link JTAG 20-Pin Connector
-    - Board JTAG Pin
-    - Description
-  * - 1
-    - VCC
-    - Positive Supply Voltage — Power supply for JTAG interface drivers
-  * - 4
-    - GND
-    - Digital ground
-  * - 5
-    - TDI
-    - Test Data In pin
-  * - 7
-    - TMS
-    - Test Mode State pin
-  * - 9
-    - TCK
-    - JTAG Return Test Clock
-  * - 13
-    - TDO
-    - Test Data Out pin
-  * - 15
-    - RESET
-    - Connect this pin to the (active low) reset input of the target CPU
-
-Serial Wire Mode Interface (SWD)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-  :header-rows:  1
-
-  *  - ST-Link SWD 20-Pin Connector
-     - Board SWD Pin
-     - Description
-  *  - 1
-     - VCC
-     - Positive Supply Voltage — Power supply for JTAG interface drivers
-  *  - 4
-     - GND
-     - Digital ground
-  *  - 7
-     - SWDIO
-     - Data I/O
-  *  - 9
-     - SWCLK
-     - Clock
-  *  - 15
-     - RESET
-     - Connect this pin to the (active low) reset input of the target CPU
+- Official ST-LINK/V2
+- Nucleo ST-LINK/V2
+- ST-LINK/V2 Clone.
 
 .. begin_platforms
 
