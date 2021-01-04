@@ -31,7 +31,7 @@ Usage
 Description
 -----------
 
-Process remotely environments which are defined in :ref:`projectconf` file.
+Process environments which are defined in :ref:`projectconf` file remotely.
 By default, :ref:`pioremote` builds project on a host machine and deploy
 final firmware (program) to a remote device (embedded board).
 
