@@ -20,6 +20,11 @@ Articles about us
 
 Here are recent articles/reviews about PlatformIO:
 
+2021
+^^^^
+
+* Jan 16, 2021 - ** Bill Jamshedji** - `Getting Started with PlatformIO (+video tutorial) <https://dronebotworkshop.com/platformio/>`_
+
 2020
 ^^^^
 

@@ -44,6 +44,7 @@ Community Video Tutorials
 -------------------------
 
 * `PlatformIO Video Collection on YouTube <https://www.youtube.com/playlist?list=PLLnAiBnVrkALvk_IJhDBAQQuDozkj6C34>`_
+* `Getting Started with PlatformIO <https://www.youtube.com/watch?v=JmvMvIphMnY>`_ - **HIGHLY RECOMMENDED FOR BEGINNERS**
 * `Next-generation IDE for your RISC-V Product in 20 Minutes by CEO of PlatformIO <https://www.youtube.com/watch?v=0eYDKION0Bs>`_
 * `Use the PlatformIO Debugger on the ESP32 Using an ESP-prog <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
 * `RISC-V ASM Tutorial <https://www.youtube.com/playlist?list=PL6noQ0vZDAdh_aGvqKvxd0brXImHXMuLY>`_
