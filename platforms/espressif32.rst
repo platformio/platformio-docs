@@ -445,10 +445,10 @@ Packages
     * - `toolchain-esp32ulp <https://github.com/espressif/binutils-esp32ulp.git?utm_source=platformio.org&utm_medium=docs>`__
       - Binutils fork with support for the Espressif ESP32 ULP co-processor
 
-    * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-xtensa32 <https://github.com/espressif/crosstool-NG.git?utm_source=platformio.org&utm_medium=docs>`__
       - GCC Toolchain for Xtensa32 processor
 
-    * - `toolchain-xtensa32s2 <https://github.com/espressif/esp-idf.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-xtensa32s2 <https://github.com/espressif/crosstool-NG.git?utm_source=platformio.org&utm_medium=docs>`__
       - GCC Toolchain for Xtensa32-S2 processor
 
 .. warning::

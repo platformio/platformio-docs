@@ -300,7 +300,7 @@ Packages
     * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
       - Ninja is a small build system with a focus on speed
 
-    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-pyocd <https://github.com/pyocd/pyOCD.git?utm_source=platformio.org&utm_medium=docs>`__
       - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
     * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__

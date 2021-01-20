@@ -2037,6 +2037,20 @@ Boards
       - 64MHz
       - 512KB
       - 192.00KB
+    * - :ref:`board_nordicnrf52_reel_board`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_pybstick26_duino`
       - :ref:`platform_ststm32`
       - External
@@ -2996,6 +3010,13 @@ Boards
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F373RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F373RCT6
+      - 72MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_ststm32_genericSTM32F401CB`
       - :ref:`platform_ststm32`
       - External
@@ -3871,20 +3892,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_nordicnrf52_reel_board`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_reel_board_v2`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
     * - :ref:`board_ststm32_sakuraio_evb_01`
       - :ref:`platform_ststm32`
       - On-board

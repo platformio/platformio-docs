@@ -138,6 +138,16 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_reel_board`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_redbear_blenano2`
       - NRF52832
       - 64MHz
@@ -158,16 +168,6 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf52_reel_board`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_reel_board_v2`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
     * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
       - NRF52832
       - 64MHz

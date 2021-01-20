@@ -269,6 +269,18 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_nordicnrf52_reel_board`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - 
@@ -551,18 +563,6 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf52_reel_board`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_reel_board_v2`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
 
 
 External Debug Tools

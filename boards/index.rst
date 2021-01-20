@@ -36,7 +36,7 @@ Aceinna IMU
     aceinna_imu/OpenRTK
     aceinna_imu/OpenRTK330L
 
-ASR Microelectronics ASR605x
+ASR Microelectronics ASR650x
 ----------------------------
 
 .. toctree::
@@ -764,6 +764,8 @@ Nordic nRF52
     nordicnrf52/nrf52_dk
     nordicnrf52/nrf52840_dk
     nordicnrf52/nrf52840_dk_adafruit
+    nordicnrf52/reel_board
+    nordicnrf52/reel_board_v2
     nordicnrf52/particle_argon
     nordicnrf52/particle_boron
     nordicnrf52/particle_xenon
@@ -776,8 +778,6 @@ Nordic nRF52
     nordicnrf52/vbluno52
     nordicnrf52/dwm1001_dev
     nordicnrf52/hackaBLE
-    nordicnrf52/reel_board
-    nordicnrf52/reel_board_v2
     nordicnrf52/ublox_evk_nina_b1
 
 Nuclei
@@ -1079,6 +1079,7 @@ ST STM32
     ststm32/genericSTM32F103ZF
     ststm32/genericSTM32F103ZG
     ststm32/genericSTM32F303CB
+    ststm32/genericSTM32F373RC
     ststm32/genericSTM32F401CB
     ststm32/genericSTM32F401CC
     ststm32/genericSTM32F401CD

@@ -2667,6 +2667,13 @@ Generic
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F373RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F373RCT6
+      - 72MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_ststm32_genericSTM32F401CB`
       - :ref:`platform_ststm32`
       - External

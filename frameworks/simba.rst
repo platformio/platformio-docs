@@ -76,12 +76,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 30KB
       - 2KB
-    * - :ref:`board_atmelavr_nanoatmega328new`
-      - :ref:`platform_atmelavr`
-      - ATMEGA328P
-      - 16MHz
-      - 30KB
-      - 2KB
     * - :ref:`board_atmelavr_uno`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
@@ -219,13 +213,6 @@ Arduino
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_nanoatmega328`
-      - :ref:`platform_atmelavr`
-      - On-board
-      - ATMEGA328P
-      - 16MHz
-      - 30KB
-      - 2KB
-    * - :ref:`board_atmelavr_nanoatmega328new`
       - :ref:`platform_atmelavr`
       - On-board
       - ATMEGA328P

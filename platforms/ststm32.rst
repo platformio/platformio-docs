@@ -36,7 +36,6 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `zephyr-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `stm32cube-hal-usb-host-hid <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-usb-host-hid?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-usb-cdcacm <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-usb-cdcacm?utm_source=platformio.org&utm_medium=docs>`_
 * `cmsis-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/cmsis-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-hal-iap <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-iap?utm_source=platformio.org&utm_medium=docs>`_
@@ -1059,6 +1058,11 @@ Please click on board name for the further details.
       - STM32F303CBT6
       - 72MHz
       - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F373RC`
+      - STM32F373RCT6
+      - 72MHz
+      - 256KB
       - 32KB
     * - :ref:`board_ststm32_genericSTM32F401CB`
       - STM32F401CB
@@ -2100,6 +2104,12 @@ Generic
       - STM32F303CBT6
       - 72MHz
       - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32F373RC`
+      - External
+      - STM32F373RCT6
+      - 72MHz
+      - 256KB
       - 32KB
     * - :ref:`board_ststm32_genericSTM32F401CB`
       - External

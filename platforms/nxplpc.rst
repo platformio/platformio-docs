@@ -361,7 +361,7 @@ Packages
     * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
       - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
 
-    * - `tool-pyocd <https://github.com/mbedmicro/pyOCD.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-pyocd <https://github.com/pyocd/pyOCD.git?utm_source=platformio.org&utm_medium=docs>`__
       - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
     * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__

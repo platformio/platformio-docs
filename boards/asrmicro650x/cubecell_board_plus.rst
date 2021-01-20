@@ -19,7 +19,7 @@ Heltec CubeCell-Board Plus (HTCC-AB02)
 Hardware
 --------
 
-Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR605x series is highly intergrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
+Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR650x series is highly intergrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
 
 .. list-table::
 

@@ -11,8 +11,8 @@
 
 .. _board_nordicnrf52_reel_board_v2:
 
-reel_board_v2
-=============
+PHYTEC reel board v2
+====================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``reel_board_v2`` ID for :ref:`projectconf_env_board` option in :ref:
   platform = nordicnrf52
   board = reel_board_v2
 
-You can override default reel_board_v2 settings per build environment using
+You can override default PHYTEC reel board v2 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `reel_board_v2.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/reel_board_v2.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `reel_board_v2.json <https://github.com/platformio/platform-nordi
 
 Uploading
 ---------
-reel_board_v2 supports the next uploading protocols:
+PHYTEC reel board v2 supports the next uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -100,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-reel_board_v2 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+PHYTEC reel board v2 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1

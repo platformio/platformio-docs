@@ -11,13 +11,13 @@
 
 .. _platform_asrmicro650x:
 
-ASR Microelectronics ASR605x
+ASR Microelectronics ASR650x
 ============================
 
 :Configuration:
   :ref:`projectconf_env_platform` = ``asrmicro650x``
 
-ASR Microelectronics ASR605x series is highly intergrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
+ASR Microelectronics ASR650x series is highly intergrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
 
 For more detailed information please visit `vendor site <http://www.asrmicro.com?utm_source=platformio.org&utm_medium=docs>`_.
 
@@ -30,7 +30,7 @@ For more detailed information please visit `vendor site <http://www.asrmicro.com
 Examples
 --------
 
-Examples are listed from `ASR Microelectronics ASR605x development platform repository <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
+Examples are listed from `ASR Microelectronics ASR650x development platform repository <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
 * `arduino-blink <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-rgb <https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-rgb?utm_source=platformio.org&utm_medium=docs>`_
@@ -42,7 +42,7 @@ Stable and upstream versions
 ----------------------------
 
 You can switch between `stable releases <https://github.com/HelTecAutomation/platform-asrmicro650x/releases>`__
-of ASR Microelectronics ASR605x development platform and the latest upstream version using
+of ASR Microelectronics ASR650x development platform and the latest upstream version using
 :ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
 
 Stable
