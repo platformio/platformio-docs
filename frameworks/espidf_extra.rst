@@ -66,6 +66,16 @@ of the project. This configuration file can be modified via a special target cal
     More details about required packages can be found in the official ESP-IDF documentation -
     `Standard Setup of Toolchain for Linux <https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html>`_.
 
+.. hint::
+  If menuconfig is not showed properly in the integrated VS Code terminal try changing
+  the default terminal shell by clicking the dropdown menu on the top-right of the
+  terminal panel and selectiing the ``Select Default Shell`` option.
+
+.. hint::
+  In case the ``UP`` and ``DOWN`` arrows don't work in menuconfig try using the ``J``
+  key to move the cursor down and ``K`` to move the cursor up. Another option is to use
+  ``-`` and ``+`` keys on the numeric keypad.
+
 Project Structure
 ^^^^^^^^^^^^^^^^^
 
