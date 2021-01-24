@@ -21,12 +21,12 @@ to keep a project in its own structure and define:
 * external dependencies
 * advanced build settings.
 
-A data in ``library.json`` should be represented in `JSON-style <http://en.wikipedia.org/wiki/JSON>`_
+Information in ``library.json`` should be represented in `JSON-style <http://en.wikipedia.org/wiki/JSON>`_
 via `associative array <http://en.wikipedia.org/wiki/Associative_array>`_
-(name/value pairs). An order doesn't matter. The allowable fields
+(name/value pairs). The order doesn't matter. The allowable fields
 (names from pairs) are described below.
 
-You can validate ``library.json`` manifest file using :ref:`cmd_package_pack` command.
+You can validate ``library.json`` manifest file using the :ref:`cmd_package_pack` command.
 
 .. contents:: Fields
     :local:
@@ -525,7 +525,7 @@ Project structure
     for item in env.get("CPPDEFINES", []):
         if isinstance(item, tuple) and item[0] == "HAL":
             env.Append(CPPPATH=[realpath(join("hal", item[1]))])
-            env.Replace(SRC_FILTER=["+<*>", "-<hal>", "+<%s>" % join("hal", item[1])])
+            env.Replace(SRC_FILTER=["+<*>", "-<hal*>", "+<hal%s>" % item[1]])
             break
 
     # pass flags to a global build environment (for all libraries, etc)
