@@ -18,6 +18,8 @@ Manage PlatformIO settings
 
 .. contents::
 
+.. _cmd_settings_get:
+
 pio settings get
 ----------------
 
@@ -102,6 +104,9 @@ Check for the platform updates interval.
 Check for pruning unnecessary data threshold (megabytes). You can list unnecessary
 PlatformIO system data using :option:`pio system prune --dry-run` command. See
 :ref:`cmd_system_prune` for the other options.
+
+Do disable checking for unnecessary data, please set threshold to ``0`` using
+:ref:`cmd_settings_set` command.
 
 .. _setting_enable_cache:
 
@@ -203,9 +208,10 @@ Examples
     ------------------------------------------------------------------------------------------
     auto_update_platforms           Yes               Automatically update platforms (Yes/No)
 
+.. _cmd_settings_set:
 
 pio settings set
------------------------
+----------------
 
 Usage
 ~~~~~
@@ -234,8 +240,10 @@ Change to check for the new PlatformIO each day
     check_platformio_interval       1 [3]             Check for the new PlatformIO interval (days)
 
 
+.. _cmd_settings_reset:
+
 pio settings reset
--------------------------
+------------------
 
 Usage
 ~~~~~
