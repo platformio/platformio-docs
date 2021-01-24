@@ -292,6 +292,11 @@ use ``*`` symbol:
 
     "platforms": "*"
 
+.. note::
+    PlatformIO does not check platforms for compatibility in default mode.
+    See :ref:`ldf_compat_mode` for details. If you need a strict checking for compatible
+    platforms for a library, please set :ref:`libjons_compatmode` to ``strict``.
+
 .. _libjson_dependencies:
 
 ``dependencies``
@@ -562,6 +567,8 @@ option in :ref:`projectconf`.
 *Optional* | Type: ``String``
 
 Specify Library Dependency Finder Mode. See :ref:`ldf_mode` for details.
+
+.. _libjons_compatmode:
 
 ``libCompatMode``
 ~~~~~~~~~~~~~~~~~
