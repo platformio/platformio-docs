@@ -57,6 +57,16 @@ Do not automatically open PlatformIO Home in a system Web-browser.
 Automatically shutdown server on timeout (in seconds) when no clients are connected.
 Default is ``0`` which means never auto shutdown.
 
+.. option::
+    --session-id
+
+A unique session identifier to keep PlatformIO Home isolated from other instances and
+protect from 3rd party access.
+
+.. warning::
+    If a unique session ID is not specified (default mode), PlatformIO Home will be
+    accessible by any user from your machine using if he knows ``--host`` and ``--port``.
+
 Examples
 --------
 
