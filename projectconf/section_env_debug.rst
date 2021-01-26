@@ -267,6 +267,34 @@ For example:
 * ``COM3`` - Windows OS
 * ``localhost:3333``
 
+.. _projectconf_debug_speed:
+
+``debug_speed``
+^^^^^^^^^^^^^^^
+
+Type: ``Number | String`` | Multiple: ``No``
+
+The debug adapter speed. The value format depends on the type of :ref:`debugging_tools`.
+
+.. note::
+  Please note that this option takes effect only if :ref:`platforms` implement it.
+
+Examples:
+
+.. code-block:: ini
+
+    [env:custom_debug_speed_examples]
+    ...
+
+    ; fixed speed in kHz
+    debug_speed = 500
+
+    ; automatic speed (only J-Link)
+    debug_speed = auto
+
+    ; adaptive clocking instead of fixed JTAG speed (only J-Link)
+    debug_speed = adaptive
+
 .. _projectconf_debug_svd_path:
 
 ``debug_svd_path``
