@@ -69,7 +69,7 @@ Example:
 ``monitor_speed``
 ^^^^^^^^^^^^^^^^^
 
-Type: ``Integer`` | Multiple: ``No`` | Default: ``9600``
+Type: ``Number`` | Multiple: ``No`` | Default: ``9600``
 
 A monitor speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_).
 See :option:`pio device monitor --baud`.
@@ -106,7 +106,7 @@ Example:
 ``monitor_rts``
 ^^^^^^^^^^^^^^^
 
-Type: ``Integer (0 or 1)`` | Multiple: ``No``
+Type: ``Number (0 or 1)`` | Multiple: ``No``
 
 A monitor initial ``RTS`` line state. See :option:`pio device monitor --rts`.
 
@@ -115,7 +115,7 @@ A monitor initial ``RTS`` line state. See :option:`pio device monitor --rts`.
 ``monitor_dtr``
 ^^^^^^^^^^^^^^^
 
-Type: ``Integer (0 or 1)`` | Multiple: ``No``
+Type: ``Number (0 or 1)`` | Multiple: ``No``
 
 A monitor initial ``DTR`` line state. See :option:`pio device monitor --dtr`.
 
