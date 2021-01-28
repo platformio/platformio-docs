@@ -16,17 +16,15 @@
 PlatformIO Home
 ===============
 
-|PIOHOME| allows you to interact with PlatformIO's professional collaborative platform
-using modern and cross-platform GUI:
+|PIOHOME| is a powerful, modern, and interactive user interface (UI) for PlatformIO
+collaborative platform. It's powered by `PlatformIO Labs's Modern UI Toolkit <https://piolabs.com/technology/modern-ui-toolkit.html>`_
+and contains the following key instruments:
 
-* Project Manager
 * :ref:`pioaccount`
+* Project Management
 * :ref:`librarymanager`
-* :ref:`platforms`
-* Library and development platform updates
-* :ref:`frameworks`
-* :ref:`boards`
-* :ref:`Device Manager <cmd_device>`: serial, logical, and multicast DNS services
+* :ref:`platforms`, :ref:`frameworks`, and :ref:`boards` Management
+* :ref:`Device Management <cmd_device>` (serial, logical, and multicast DNS services)
 * Static Code Analysis
 * Firmware File Explorer
 * Firmware Memory Inspection
