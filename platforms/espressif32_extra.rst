@@ -218,6 +218,10 @@ in ``board_build.embed_txtfiles`` option are null-terminated in the final binary
       src/certificate.pem.crt
       src/aws-root-ca.pem
 
+.. note::
+    In case with ESP-IDF, these files also need to be specified in ``CMakeLists.txt``
+    using the ``target_add_binary_data`` function.
+
 The file contents will be added to the ``.rodata`` section in flash, and
 are available via symbol names as follows:
 
