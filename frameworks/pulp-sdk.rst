@@ -9,35 +9,19 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _frameworks:
+.. _framework_pulp-sdk:
 
-Frameworks
-==========
+PULP SDK
+========
 
-.. toctree::
-    :maxdepth: 1
+:Configuration:
+  :ref:`projectconf_env_framework` = ``pulp-sdk``
 
-    arduino
-    cmsis
-    esp8266-nonos-sdk
-    esp8266-rtos-sdk
-    espidf
-    freedom-e-sdk
-    freertos
-    gd32vf103-sdk
-    kendryte-freertos-sdk
-    kendryte-standalone-sdk
-    libopencm3
-    mbed
-    nuclei-sdk
-    pulp-os
-    pulp-sdk
-    pumbaa
-    shakti-sdk
-    simba
-    siwisdk
-    spl
-    stm32cube
-    wd-riscv-sdk
-    wiringpi
-    zephyr
+Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
+
+For more detailed information please visit `vendor site <https://github.com/pulp-platform/pulp-sdk?utm_source=platformio.org&utm_medium=docs>`_.
+
+
+.. contents:: Contents
+    :local:
+    :depth: 1

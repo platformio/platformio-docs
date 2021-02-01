@@ -409,6 +409,7 @@ Espressif 32
     espressif32/alksesp32
     espressif32/az-delivery-devkit-v4
     espressif32/featheresp32
+    espressif32/featheresp32-s2
     espressif32/espea32
     espressif32/bpi-bit
     espressif32/briki_abc_esp32
@@ -424,6 +425,8 @@ Espressif 32
     espressif32/esp320
     espressif32/esp-wrover-kit
     espressif32/esp32dev
+    espressif32/esp32-s2-kaluga-1
+    espressif32/esp32-s2-saola-1
     espressif32/firebeetle32
     espressif32/frogboard
     espressif32/heltec_wifi_kit_32
