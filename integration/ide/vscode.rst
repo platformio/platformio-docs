@@ -490,6 +490,10 @@ Disable showing PlatformIO Home at startup. The default value is ``false``.
 PlatformIO Home server HTTP port. The default value ``0`` automatically assigns a free port in
 the range [8010..8100]).
 
+``platformio-ide.customPyPiIndexUrl``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Custom base URL of the Python Package Index (default ``https://pypi.org/simple``).
+
 Known issues
 ------------
 
