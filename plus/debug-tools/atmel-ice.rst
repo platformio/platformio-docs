@@ -35,7 +35,7 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = atmel-ice
+    debug_tool = simavr ; atmelice and atmelice_dw options not supported (yet)
 
 If you would like to use this tool for firmware uploading, please change
 upload protocol:
@@ -45,8 +45,10 @@ upload protocol:
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = atmel-ice
-    upload_protocol = atmel-ice
+    ; for JTAG use atmelice, for debugWire user atmelice_dw
+    upload_protocol = atmelice_isp
+    upload_flags = -e
+    upload_port = usb
 
 More options:
 
@@ -59,6 +61,9 @@ Drivers
 :Windows:
   When installing the Atmel-ICE on a computer running Microsoft Windows,
   the USB driver is loaded when the Atmel-ICE is first plugged in.
+  WARNING: In case you have/had Atmel Studio or Microchip Studio installed, 
+  you first have to install libusb drivers before you are able to use Atme-ICE.
+  See here for a how-to: https://cyansensors.wordpress.com/portfolio/setting-up-atmel-ice-with-platformio-using-atmega328p/
 
 :Mac:
   Not required.
