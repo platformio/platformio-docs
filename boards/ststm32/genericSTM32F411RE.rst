@@ -11,7 +11,7 @@
 
 .. _board_ststm32_genericSTM32F411RE:
 
-STM32F411RE (128k RAM. 256k Flash)
+STM32F411RE (128k RAM. 512k Flash)
 ==================================
 
 .. contents::
@@ -28,7 +28,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Frequency**
     - 100MHz
   * - **Flash**
-    - 256KB
+    - 512KB
   * - **RAM**
     - 128KB
   * - **Vendor**
@@ -46,7 +46,7 @@ Please use ``genericSTM32F411RE`` ID for :ref:`projectconf_env_board` option in 
   platform = ststm32
   board = genericSTM32F411RE
 
-You can override default STM32F411RE (128k RAM. 256k Flash) settings per build environment using
+You can override default STM32F411RE (128k RAM. 512k Flash) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `genericSTM32F411RE.json <https://github.com/platformio/platform-ststm32/blob/master/boards/genericSTM32F411RE.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `genericSTM32F411RE.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F411RE (128k RAM. 256k Flash) supports the next uploading protocols:
+STM32F411RE (128k RAM. 512k Flash) supports the next uploading protocols:
 
 * ``blackmagic``
 * ``dfu``
@@ -99,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-STM32F411RE (128k RAM. 256k Flash) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+STM32F411RE (128k RAM. 512k Flash) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
