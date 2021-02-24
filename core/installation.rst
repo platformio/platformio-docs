@@ -271,7 +271,7 @@ Windows
 Please read one of these instructions `How do I set or change the PATH system variable? <https://www.google.com.ua/search?q=how+do+i+set+or+change+the+path+system+variable>`_
 
 You need to edit system environment variable called ``Path`` and append
-``C:\Users\UserName\.platformio\penv\Scripts;`` path in the beginning of a
+``C:\Users\UserName\.platformio\penv\Scripts`` path in the beginning of a
 list (please replace ``UserName`` with your account name).
 
 
