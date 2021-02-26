@@ -92,6 +92,11 @@ You do not need to use/buy external debug probe.
       - 8MHz
       - 15KB
       - 4KB
+    * - :ref:`board_timsp430_lpmsp430g2476`
+      - MSP430G2476
+      - 16MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_timsp430_lpmsp430fr4133`
       - MSP430FR4133
       - 8MHz
@@ -174,7 +179,7 @@ Packages
       - Energia Wiring-based Framework for Texas Instruments MSP430 microcontrollers
 
     * - `tool-dslite <http://www.ti.com/tool/UNIFLASH?utm_source=platformio.org&utm_medium=docs>`__
-      - Texas Instruments DSLite (UniFlash)
+      - Uniflash Standalone Flash Tool for TI Microcontrollers, Sitara Processors & SimpleLink devices
 
     * - `tool-mspdebug <https://dlbeer.co.nz/mspdebug/?utm_source=platformio.org&utm_medium=docs>`__
       - MSPDebug is a free debugger for use with MSP430 MCUs
@@ -252,6 +257,12 @@ TI
       - 8MHz
       - 15KB
       - 4KB
+    * - :ref:`board_timsp430_lpmsp430g2476`
+      - On-board
+      - MSP430G2476
+      - 16MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_timsp430_lpmsp430fr4133`
       - On-board
       - MSP430FR4133

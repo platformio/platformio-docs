@@ -1772,6 +1772,13 @@ Boards
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407IGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407IGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -1840,7 +1847,7 @@ Boards
       - External
       - STM32F411RE
       - 100MHz
-      - 256KB
+      - 512KB
       - 128KB
     * - :ref:`board_ststm32_genericSTM32F412CE`
       - :ref:`platform_ststm32`

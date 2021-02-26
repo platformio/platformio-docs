@@ -28,9 +28,9 @@ Platform :ref:`platform_nxpimxrt`: The i.MX RT series of crossover processors fe
   * - **Frequency**
     - 600MHz
   * - **Flash**
-    - 64MB
+    - 8MB
   * - **RAM**
-    - 512KB
+    - 32MB
   * - **Vendor**
     - `NXP <https://www.nxp.com/design/development-boards/i.mx-evaluation-and-development-boards/i.mx-rt1050-evaluation-kit:MIMXRT1050-EVK?utm_source=platformio.org&utm_medium=docs>`__
 

@@ -321,8 +321,8 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_nxpimxrt`
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - LPC11U24
@@ -1907,8 +1907,8 @@ NXP
       - On-board
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - On-board

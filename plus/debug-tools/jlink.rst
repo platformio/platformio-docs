@@ -1158,6 +1158,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32doit-espduino`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -1508,6 +1515,13 @@ Boards
       - 32MHz
       - 192KB
       - 20KB
+    * - :ref:`board_espressif32_honeylemon`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - :ref:`platform_espressif32`
       - External
@@ -1585,6 +1599,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_espressif32_sensesiot_weizen`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nxplpc_lpc11u68`
       - :ref:`platform_nxplpc`
       - On-board
@@ -1891,29 +1912,29 @@ Boards
       - On-board
       - MIMXRT1021DAG5A
       - 500MHz
-      - 64MB
-      - 256MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1060_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1062DVL6A
       - 600MHz
-      - 64MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1064_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1064DVL6A
       - 600MHz
-      - 4MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - On-board
@@ -3118,6 +3139,13 @@ Boards
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407IGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407IGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -3186,7 +3214,7 @@ Boards
       - External
       - STM32F411RE
       - 100MHz
-      - 256KB
+      - 512KB
       - 128KB
     * - :ref:`board_ststm32_genericSTM32F412CE`
       - :ref:`platform_ststm32`
@@ -3510,6 +3538,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32thing_plus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
       - :ref:`platform_espressif32`
       - External
@@ -3608,6 +3643,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v21`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t-beam`
       - :ref:`platform_espressif32`
       - External
@@ -3622,6 +3664,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-t7-v14-mini32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
       - :ref:`platform_nordicnrf52`
       - External

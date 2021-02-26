@@ -225,26 +225,26 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_nxpimxrt`
       - MIMXRT1021DAG5A
       - 500MHz
-      - 64MB
-      - 256MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - :ref:`platform_nxpimxrt`
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1060_evk`
       - :ref:`platform_nxpimxrt`
       - MIMXRT1062DVL6A
       - 600MHz
-      - 64MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1064_evk`
       - :ref:`platform_nxpimxrt`
       - MIMXRT1064DVL6A
       - 600MHz
-      - 4MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -1390,29 +1390,29 @@ NXP
       - On-board
       - MIMXRT1021DAG5A
       - 500MHz
-      - 64MB
-      - 256MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1060_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1062DVL6A
       - 600MHz
-      - 64MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1064_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1064DVL6A
       - 600MHz
-      - 4MB
-      - 1MB
+      - 8MB
+      - 32MB
 
 Nordic
 ~~~~~~

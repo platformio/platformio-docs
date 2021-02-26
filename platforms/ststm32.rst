@@ -1110,6 +1110,11 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407IGT6`
+      - STM32F407IGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - STM32F407VET6
       - 168MHz
@@ -1158,7 +1163,7 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_genericSTM32F411RE`
       - STM32F411RE
       - 100MHz
-      - 256KB
+      - 512KB
       - 128KB
     * - :ref:`board_ststm32_genericSTM32F412CE`
       - STM32F412CE
@@ -1460,10 +1465,10 @@ Packages
       - Zephyr module for CivetWeb Embedded C/C++ web server
 
     * - `framework-zephyr-cmsis <https://github.com/zephyrproject-rtos/cmsis.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Software Interface Standard for Arm Cortex-based Microcontrollers and Zephyr framework
+      - Zephyr module for Software Interface Standard for Arm Cortex-based Microcontrollers
 
     * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for FATFS filesystem
+      - Zephyr module for FatFS filesystem
 
     * - `framework-zephyr-hal-st <https://github.com/zephyrproject-rtos/hal_st.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for the official libraries provided by STMicroelectronics
@@ -1472,7 +1477,7 @@ Packages
       - ST STM32 HAL for Zephyr framework
 
     * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for HAL abstraction layer used by open-amp
+      - Zephyr module for an abstraction layer across user-space Linux, baremetal, and RTOS environments
 
     * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for littlefs filesystem
@@ -1484,7 +1489,7 @@ Packages
       - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
 
     * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls.git?utm_source=platformio.org&utm_medium=docs>`__
-      - mbedTLS module for Zephyr
+      - Zephyr module for the mbed TLS library
 
     * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs
@@ -1499,10 +1504,10 @@ Packages
       - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
 
     * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread.git?utm_source=platformio.org&utm_medium=docs>`__
-      - OpenThread module for Zephyr
+      - Zephyr module for OpenThread - an open-source implementation of the Thread networking protocol
 
     * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Segger RTT
+      - Zephyr module for the Segger RTT library
 
     * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Concise Binary Object Representation Library
@@ -1511,7 +1516,7 @@ Packages
       - The TinyCrypt Library provides an implementation for constrained devices of a minimal set of standard cryptography primitives for Zephyr framework
 
     * - `framework-zephyr-trusted-firmware-m <https://github.com/zephyrproject-rtos/trusted-firmware-m.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Trusted Firmware M provides a reference implementation of secure world software for ARMv8-M and Zephyr framework
+      - Zephyr module for Trusted Firmware M - a reference implementation of secure world software for ARMv8-M
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software
@@ -2166,6 +2171,12 @@ Generic
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407IGT6`
+      - External
+      - STM32F407IGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - External
       - STM32F407VET6
@@ -2224,7 +2235,7 @@ Generic
       - External
       - STM32F411RE
       - 100MHz
-      - 256KB
+      - 512KB
       - 128KB
     * - :ref:`board_ststm32_genericSTM32F412CE`
       - External

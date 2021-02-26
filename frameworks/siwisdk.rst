@@ -11,13 +11,13 @@
 
 .. _framework_siwisdk:
 
-SIWI GSM Software Development Kit for MT6261 and MT2503 SoC
-===========================================================
+SIWI GSM & NBIoT SDK
+====================
 
 :Configuration:
   :ref:`projectconf_env_framework` = ``siwisdk``
 
-Arduino Wiring-based Framework For SiWi and Quectel GSM Modules
+SIWI Software Development Kit for GSM & NBIoT SoCs (MT6261, MT2503 and MT2625)
 
 For more detailed information please visit `vendor site <https://github.com/siwiembedded/siwisdk?utm_source=platformio.org&utm_medium=docs>`_.
 

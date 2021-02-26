@@ -87,23 +87,23 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_nxpimxrt_mimxrt1020_evk`
       - MIMXRT1021DAG5A
       - 500MHz
-      - 64MB
-      - 256MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1060_evk`
       - MIMXRT1062DVL6A
       - 600MHz
-      - 64MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1064_evk`
       - MIMXRT1064DVL6A
       - 600MHz
-      - 4MB
-      - 1MB
+      - 8MB
+      - 32MB
 
 
 Stable and upstream versions
@@ -160,10 +160,10 @@ Packages
       - Zephyr module for CivetWeb Embedded C/C++ web server
 
     * - `framework-zephyr-cmsis <https://github.com/zephyrproject-rtos/cmsis.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Software Interface Standard for Arm Cortex-based Microcontrollers and Zephyr framework
+      - Zephyr module for Software Interface Standard for Arm Cortex-based Microcontrollers
 
     * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for FATFS filesystem
+      - Zephyr module for FatFS filesystem
 
     * - `framework-zephyr-hal-nxp <https://github.com/zephyrproject-rtos/hal_nxp.git?utm_source=platformio.org&utm_medium=docs>`__
       - NXP HAL for Zephyr framework
@@ -172,7 +172,7 @@ Packages
       - Zephyr module for the official libraries provided by STMicroelectronics
 
     * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for HAL abstraction layer used by open-amp
+      - Zephyr module for an abstraction layer across user-space Linux, baremetal, and RTOS environments
 
     * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for littlefs filesystem
@@ -184,7 +184,7 @@ Packages
       - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
 
     * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls.git?utm_source=platformio.org&utm_medium=docs>`__
-      - mbedTLS module for Zephyr
+      - Zephyr module for the mbed TLS library
 
     * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs
@@ -199,10 +199,16 @@ Packages
       - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
 
     * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread.git?utm_source=platformio.org&utm_medium=docs>`__
-      - OpenThread module for Zephyr
+      - Zephyr module for OpenThread - an open-source implementation of the Thread networking protocol
 
     * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Segger RTT
+      - Zephyr module for the Segger RTT library
+
+    * - `framework-zephyr-sof <https://github.com/zephyrproject-rtos/sof.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for Sound Open Firmware
+
+    * - `framework-zephyr-tfm-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs (TFM Dependency)
 
     * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Concise Binary Object Representation Library
@@ -211,7 +217,7 @@ Packages
       - The TinyCrypt Library provides an implementation for constrained devices of a minimal set of standard cryptography primitives for Zephyr framework
 
     * - `framework-zephyr-trusted-firmware-m <https://github.com/zephyrproject-rtos/trusted-firmware-m.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Trusted Firmware M provides a reference implementation of secure world software for ARMv8-M and Zephyr framework
+      - Zephyr module for Trusted Firmware M - a reference implementation of secure world software for ARMv8-M
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software
@@ -302,23 +308,23 @@ NXP
       - On-board
       - MIMXRT1021DAG5A
       - 500MHz
-      - 64MB
-      - 256MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - On-board
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1060_evk`
       - On-board
       - MIMXRT1062DVL6A
       - 600MHz
-      - 64MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1064_evk`
       - On-board
       - MIMXRT1064DVL6A
       - 600MHz
-      - 4MB
-      - 1MB
+      - 8MB
+      - 32MB

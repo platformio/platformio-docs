@@ -159,6 +159,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32doit-espduino`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_pocket_32`
       - ESP32
       - 240MHz
@@ -214,6 +219,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_honeylemon`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - ESP32
       - 240MHz
@@ -240,6 +250,11 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_iotaap_magnolia`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_sensesiot_weizen`
       - ESP32
       - 240MHz
       - 4MB
@@ -304,6 +319,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32thing_plus`
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
       - ESP32
       - 240MHz
@@ -319,6 +339,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v21`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t-beam`
       - ESP32
       - 240MHz
@@ -329,6 +354,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-t7-v14-mini32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
     * - :ref:`board_espressif32_vintlabs-devkit-v1`
       - ESP32
       - 240MHz
@@ -462,7 +492,7 @@ Packages
     * - `toolchain-esp32ulp <https://github.com/espressif/binutils-esp32ulp.git?utm_source=platformio.org&utm_medium=docs>`__
       - Binutils fork with support for the Espressif ESP32 ULP co-processor
 
-    * - `toolchain-xtensa32 <https://github.com/espressif/crosstool-NG.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf.git?utm_source=platformio.org&utm_medium=docs>`__
       - GCC Toolchain for Xtensa32 processor
 
     * - `toolchain-xtensa32s2 <https://github.com/espressif/crosstool-NG.git?utm_source=platformio.org&utm_medium=docs>`__
@@ -631,6 +661,25 @@ BPI Tech
       - 4MB
       - 320KB
 
+Blinker
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_wifiduino32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 DFRobot
 ~~~~~~~
 
@@ -663,6 +712,12 @@ DOIT
       - Flash
       - RAM
     * - :ref:`board_espressif32_esp32doit-devkit-v1`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32doit-espduino`
       - External
       - ESP32
       - 240MHz
@@ -745,6 +800,25 @@ ESP32vn
       - 4MB
       - 320KB
 
+ETBoard
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_etboard`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Electronic SweetPeas
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -807,6 +881,25 @@ Espressif
       - 4MB
       - 320KB
 
+Fishino
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_piranha_esp32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Fred
 ~~~~
 
@@ -820,6 +913,25 @@ Fred
       - Flash
       - RAM
     * - :ref:`board_espressif32_frogboard`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+HONEYLemon
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_honeylemon`
       - External
       - ESP32
       - 240MHz
@@ -881,6 +993,12 @@ Heltec Automation
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_heltec_wireless_stick_lite`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Hornbill
 ~~~~~~~~
@@ -902,6 +1020,44 @@ Hornbill
       - 320KB
     * - :ref:`board_espressif32_hornbill32minima`
       - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+INEX
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_inex_openkb`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Imbrios
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_imbrios-logsens-v1p1`
+      - No
       - ESP32
       - 240MHz
       - 4MB
@@ -945,6 +1101,63 @@ IoTaaP
       - 4MB
       - 320KB
 
+KITS
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_kits-edu`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+LOGISENSES
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sensesiot_weizen`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Labplus
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_labplus_mpython`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 M5Stack
 ~~~~~~~
 
@@ -963,6 +1176,12 @@ M5Stack
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_m5stack-core2`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 6.25MB
     * - :ref:`board_espressif32_m5stack-fire`
       - No
       - ESP32
@@ -975,7 +1194,50 @@ M5Stack
       - 240MHz
       - 16MB
       - 520KB
+    * - :ref:`board_espressif32_m5stack-timer-cam`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stack-atom`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_m5stick-c`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stack-coreink`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+MGBOT
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_mgbot-iotik32a`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_mgbot-iotik32b`
       - No
       - ESP32
       - 240MHz
@@ -1189,6 +1451,25 @@ Onehorse
       - 4MB
       - 320KB
 
+ProtoCentral
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_healthypi4`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Pycom Ltd.
 ~~~~~~~~~~
 
@@ -1253,6 +1534,25 @@ RoboticsBrno
       - RAM
     * - :ref:`board_espressif32_alksesp32`
       - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+S.ODI
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_s_odi_ultra`
+      - No
       - ESP32
       - 240MHz
       - 4MB
@@ -1333,6 +1633,12 @@ SparkFun Electronics
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32thing_plus`
+      - External
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
 
 TTGO
 ~~~~
@@ -1358,6 +1664,12 @@ TTGO
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v21`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t-beam`
       - External
       - ESP32
@@ -1376,6 +1688,18 @@ TTGO
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-t7-v13-mini32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
+    * - :ref:`board_espressif32_ttgo-t7-v14-mini32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
 
 ThaiEasyElec
 ~~~~~~~~~~~~
@@ -1498,6 +1822,12 @@ WEMOS
       - 320KB
     * - :ref:`board_espressif32_lolin32`
       - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin32_lite`
+      - No
       - ESP32
       - 240MHz
       - 4MB
