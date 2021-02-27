@@ -1440,6 +1440,13 @@ Boards
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board

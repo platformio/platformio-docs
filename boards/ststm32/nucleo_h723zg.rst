@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_l031k6:
+.. _board_ststm32_nucleo_h723zg:
 
-ST Nucleo L031K6
+ST Nucleo H723ZG
 ================
 
 .. contents::
@@ -24,49 +24,49 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L031K6T6
+    - STM32H723ZGT6
   * - **Frequency**
-    - 32MHz
+    - 550MHz
   * - **Flash**
-    - 32KB
+    - 1MB
   * - **RAM**
-    - 8KB
+    - 432KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-L031K6/?utm_source=platformio.org&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-h723zg.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_l031k6`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_h723zg`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_l031k6]
+  [env:nucleo_h723zg]
   platform = ststm32
-  board = nucleo_l031k6
+  board = nucleo_h723zg
 
-You can override default ST Nucleo L031K6 settings per build environment using
+You can override default ST Nucleo H723ZG settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_l031k6.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l031k6.json>`_. For example,
+board manifest `nucleo_h723zg.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_h723zg.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_l031k6]
+  [env:nucleo_h723zg]
   platform = ststm32
-  board = nucleo_l031k6
+  board = nucleo_h723zg
 
   ; change microcontroller
-  board_build.mcu = stm32l031k6t6
+  board_build.mcu = stm32h723zgt6
 
   ; change MCU frequency
-  board_build.f_cpu = 32000000L
+  board_build.f_cpu = 550000000L
 
 
 Uploading
 ---------
-ST Nucleo L031K6 supports the next uploading protocols:
+ST Nucleo H723ZG supports the next uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -80,9 +80,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_l031k6]
+  [env:nucleo_h723zg]
   platform = ststm32
-  board = nucleo_l031k6
+  board = nucleo_h723zg
 
   upload_protocol = stlink
 
@@ -99,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L031K6 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ST Nucleo H723ZG has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -128,20 +128,11 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
-
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
-
-    * - :ref:`framework_libopencm3`
-      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others

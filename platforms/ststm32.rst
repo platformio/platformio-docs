@@ -382,6 +382,11 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - STM32H743ZIT6
       - 400MHz
@@ -1508,6 +1513,12 @@ Packages
 
     * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for the Segger RTT library
+
+    * - `framework-zephyr-sof <https://github.com/zephyrproject-rtos/sof.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for Sound Open Firmware
+
+    * - `framework-zephyr-tfm-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs (TFM Dependency)
 
     * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for Concise Binary Object Representation Library
@@ -3119,6 +3130,12 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - On-board
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - On-board
       - STM32H743ZIT6

@@ -1045,6 +1045,7 @@ ST STM32
     ststm32/nucleo_f746zg
     ststm32/nucleo_f756zg
     ststm32/nucleo_f767zi
+    ststm32/nucleo_h723zg
     ststm32/nucleo_h743zi
     ststm32/nucleo_h745zi_q
     ststm32/nucleo_l011k4
