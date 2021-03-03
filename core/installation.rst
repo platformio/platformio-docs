@@ -317,7 +317,7 @@ If there is no Python on a user machine (you can check running ``python --versio
 we have 2 options:
 
 1. Ask the user to install Python 3 using our guide :ref:`faq_install_python`
-2. You can automatically `Download Portable Python 3 <https://bintray.com/beta/#/platformio/dl-misc/python-portable?tab=files>`_
+2. You can automatically `Download Portable Python 3 (API) <https://api.registry.platformio.org/v3/packages/platformio/tool/python-portable>`_
    and unpack it in a cache folder of your application. Later, you can use
    ``unpacked_protable_python_dir/python.exe``  for the installer script.
 
