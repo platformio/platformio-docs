@@ -46,6 +46,12 @@ Installation
 
 .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-pkg-installer.png
 
+.. note::
+
+    Please note that you need to install `a Git client <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_
+    if you are going to use Git for installing upstream development platforms, cloning
+    external projects, installing library dependencies from a repository, etc.
+
 Quick Start
 -----------
 
