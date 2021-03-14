@@ -283,7 +283,7 @@ Example:
 
 .. code-block:: javascript
 
-    "frameworks": ["atmelavr", "espressif8266"]
+    "platforms": ["atmelavr", "espressif8266"]
 
 If the library is compatible with the all platforms, then do not declare this field or
 use ``*`` symbol:
