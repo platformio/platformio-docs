@@ -338,7 +338,7 @@ implement several basic functions ``addition``, ``subtraction``, ``multiplicatio
           TEST_ASSERT_EQUAL(32, division(100, 3));
       }
 
-      void main() {
+      void app_main() {
           UNITY_BEGIN();
 
           RUN_TEST(test_function_calculator_addition);
