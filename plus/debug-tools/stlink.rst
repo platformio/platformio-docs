@@ -71,63 +71,12 @@ Drivers
 Wiring Connections
 ------------------
 
-.. image:: ../../_static/images/debug_probes/generic_jtag_swd_connector.jpg
+Please check a community `Guide: Connecting your ST-Link debugger <https://stm32-base.org/guides/connecting-your-debugger>`__
+that covers the next debugging probes:
 
-JTAG Interface
-~~~~~~~~~~~~~~
-
-.. list-table::
-  :header-rows:  1
-
-  * - ST-Link JTAG 20-Pin Connector
-    - Board JTAG Pin
-    - Description
-  * - 1
-    - VCC
-    - Positive Supply Voltage — Power supply for JTAG interface drivers
-  * - 4
-    - GND
-    - Digital ground
-  * - 5
-    - TDI
-    - Test Data In pin
-  * - 7
-    - TMS
-    - Test Mode State pin
-  * - 9
-    - TCK
-    - JTAG Return Test Clock
-  * - 13
-    - TDO
-    - Test Data Out pin
-  * - 15
-    - RESET
-    - Connect this pin to the (active low) reset input of the target CPU
-
-Serial Wire Mode Interface (SWD)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-  :header-rows:  1
-
-  *  - ST-Link SWD 20-Pin Connector
-     - Board SWD Pin
-     - Description
-  *  - 1
-     - VCC
-     - Positive Supply Voltage — Power supply for JTAG interface drivers
-  *  - 4
-     - GND
-     - Digital ground
-  *  - 7
-     - SWDIO
-     - Data I/O
-  *  - 9
-     - SWCLK
-     - Clock
-  *  - 15
-     - RESET
-     - Connect this pin to the (active low) reset input of the target CPU
+- Official ST-LINK/V2
+- Nucleo ST-LINK/V2
+- ST-LINK/V2 Clone.
 
 .. begin_platforms
 
@@ -892,6 +841,20 @@ Boards
       - 64MHz
       - 512KB
       - 192.00KB
+    * - :ref:`board_nordicnrf52_reel_board`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_pybstick26_duino`
       - :ref:`platform_ststm32`
       - External
@@ -1312,6 +1275,13 @@ Boards
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -1739,6 +1709,13 @@ Boards
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F373RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F373RCT6
+      - 72MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_ststm32_genericSTM32F401CB`
       - :ref:`platform_ststm32`
       - External
@@ -1802,6 +1779,13 @@ Boards
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407IGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407IGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -1870,7 +1854,7 @@ Boards
       - External
       - STM32F411RE
       - 100MHz
-      - 256KB
+      - 512KB
       - 128KB
     * - :ref:`board_ststm32_genericSTM32F412CE`
       - :ref:`platform_ststm32`
@@ -2166,20 +2150,6 @@ Boards
       - 16MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nordicnrf52_reel_board`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_reel_board_v2`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
     * - :ref:`board_ststm32_sakuraio_evb_01`
       - :ref:`platform_ststm32`
       - On-board

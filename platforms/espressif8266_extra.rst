@@ -365,18 +365,16 @@ Please use one of the next :ref:`projectconf_build_flags`:
 Exceptions
 ~~~~~~~~~~
 
-Exceptions are disabled by default. To enable exceptions, use the following :ref:`projectconf_build_flags` and :ref:`projectconf_build_unflags`:
+Exceptions are disabled by default. To enable exceptions, use the ``PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS`` macro in :ref:`projectconf_build_flags`.
+That macro will add the ``-fexceptions`` flag and will link the final firmware against the ``stdc++-exc`` library with enabled exceptions. For example:
 
 .. code-block:: ini
 
     [env:myenv]
     ...
 
-    ; Remove default exceptions disabled flag
-    build_unflags = -fno-exceptions
-
     ; Enable exceptions
-    build_flags = -fexceptions
+    build_flags = -D PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS
 
 
 .. _platform_espressif_uploadfs:

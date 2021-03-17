@@ -89,13 +89,12 @@ A protocol that "uploader" tool uses to talk to a board. Please check
     ``upload_protocol = custom`` allows one to use a custom ``upload_command`` - see below.
 
 
-
 .. _projectconf_upload_speed:
 
 ``upload_speed``
 ^^^^^^^^^^^^^^^^
 
-Type: ``Integer`` | Multiple: ``No``
+Type: ``Number`` | Multiple: ``No``
 
 A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
 which "uploader" tool uses when sending firmware to board.

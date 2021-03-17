@@ -235,6 +235,10 @@ Allows one to override setting :ref:`setting_check_platformio_interval`.
 
 Allows one to override setting :ref:`setting_check_platforms_interval`.
 
+.. envvar:: PLATFORMIO_SETTING_CHECK_PRUNE_SYSTEM_THRESHOLD
+
+Allows one to override setting :ref:`setting_check_prune_system_threshold`.
+
 .. envvar:: PLATFORMIO_SETTING_ENABLE_CACHE
 
 Allows one to override setting :ref:`setting_enable_cache`.

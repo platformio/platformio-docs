@@ -91,6 +91,23 @@ Custom Server
       -device
       STM32F446RE
 
+Multiple debug probes
+~~~~~~~~~~~~~~~~~~~~~
+
+In case there are several J-Link probes connected to the same host machine, it's
+possible to specify the precise serial number of the desired probe to avoid erroneous
+device selection.
+
+.. code-block:: ini
+
+    [env:nrf52_dk]
+    platform = nordicnrf52
+    framework = arduino
+    board = nrf52_dk
+    upload_flags =
+        -SelectEmuBySN
+        123456789
+
 Drivers
 -------
 
@@ -501,6 +518,13 @@ Boards
       - :ref:`platform_espressif32`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_featheresp32-s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB
@@ -1134,6 +1158,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32doit-espduino`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -1299,6 +1330,20 @@ Boards
       - :ref:`platform_espressif32`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-s2-kaluga-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-s2-saola-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB
@@ -1470,6 +1515,13 @@ Boards
       - 32MHz
       - 192KB
       - 20KB
+    * - :ref:`board_espressif32_honeylemon`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - :ref:`platform_espressif32`
       - External
@@ -1547,6 +1599,13 @@ Boards
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_espressif32_sensesiot_weizen`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nxplpc_lpc11u68`
       - :ref:`platform_nxplpc`
       - On-board
@@ -1853,29 +1912,29 @@ Boards
       - On-board
       - MIMXRT1021DAG5A
       - 500MHz
-      - 64MB
-      - 256MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1060_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1062DVL6A
       - 600MHz
-      - 64MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1064_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1064DVL6A
       - 600MHz
-      - 4MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxplpc_lpc11u24`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2037,6 +2096,20 @@ Boards
       - 64MHz
       - 512KB
       - 192.00KB
+    * - :ref:`board_nordicnrf52_reel_board`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_ststm32_pybstick26_duino`
       - :ref:`platform_ststm32`
       - External
@@ -2569,6 +2642,13 @@ Boards
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2996,6 +3076,13 @@ Boards
       - 72MHz
       - 128KB
       - 32KB
+    * - :ref:`board_ststm32_genericSTM32F373RC`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F373RCT6
+      - 72MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_ststm32_genericSTM32F401CB`
       - :ref:`platform_ststm32`
       - External
@@ -3059,6 +3146,13 @@ Boards
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407IGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407IGT6
+      - 168MHz
+      - 1MB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -3127,7 +3221,7 @@ Boards
       - External
       - STM32F411RE
       - 100MHz
-      - 256KB
+      - 512KB
       - 128KB
     * - :ref:`board_ststm32_genericSTM32F412CE`
       - :ref:`platform_ststm32`
@@ -3451,6 +3545,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32thing_plus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
       - :ref:`platform_espressif32`
       - External
@@ -3549,6 +3650,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-lora32-v21`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t-beam`
       - :ref:`platform_espressif32`
       - External
@@ -3563,6 +3671,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_ttgo-t7-v14-mini32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
     * - :ref:`board_nordicnrf52_stct_nrf52_minidev`
       - :ref:`platform_nordicnrf52`
       - External
@@ -3871,20 +3986,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_nordicnrf52_reel_board`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_reel_board_v2`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
     * - :ref:`board_ststm32_sakuraio_evb_01`
       - :ref:`platform_ststm32`
       - On-board

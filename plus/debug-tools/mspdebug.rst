@@ -137,6 +137,13 @@ Boards
       - 8MHz
       - 15KB
       - 4KB
+    * - :ref:`board_timsp430_lpmsp430g2476`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430G2476
+      - 16MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_timsp430_lpmsp430fr4133`
       - :ref:`platform_timsp430`
       - On-board

@@ -31,6 +31,7 @@ Frameworks
     mbed
     nuclei-sdk
     pulp-os
+    pulp-sdk
     pumbaa
     shakti-sdk
     simba

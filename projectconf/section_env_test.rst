@@ -119,7 +119,7 @@ To print all available serial ports use :ref:`cmd_device_list` command.
 ``test_speed``
 ^^^^^^^^^^^^^^
 
-Type: ``Integer`` | Multiple: ``No`` | Default: ``115200``
+Type: ``Number`` | Multiple: ``No`` | Default: ``115200``
 
 A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
 to communicate with a target device.

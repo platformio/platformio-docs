@@ -949,8 +949,8 @@ Packages
     * - `framework-arduino-avr <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
       - The official Arduino Wiring-based Framework for Microchip AVR microcontrollers
 
-    * - `framework-arduino-avr-attiny <https://github.com/SpenceKonde/ATTinyCore.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework for Microchip AVR microcontrollers (ATTiny Core)
+    * - `framework-arduino-avr-attiny <https://github.com/SpenceKonde/ATTinyCore?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework (ATtinyCore)
 
     * - `framework-arduino-avr-bean <https://github.com/PunchThrough/bean-arduino-core.git?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Bean Core)
@@ -958,7 +958,7 @@ Packages
     * - `framework-arduino-avr-core13 <https://sourceforge.net/projects/ard-core13/?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Core13)
 
-    * - `framework-arduino-avr-digistump <https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-digistump <https://github.com/ArminJo/DigistumpArduino/tree/master/digistump-avr.git?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Digistump Core)
 
     * - `framework-arduino-avr-dwenguino <https://github.com/dwengovzw/Dwengo-library/tree/master/dwenguino/Dwenguino.git?utm_source=platformio.org&utm_medium=docs>`__

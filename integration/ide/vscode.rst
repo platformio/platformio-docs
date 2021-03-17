@@ -46,6 +46,12 @@ Installation
 
 .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-pkg-installer.png
 
+.. note::
+
+    Please note that you need to install `a Git client <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_
+    if you are going to use Git for installing upstream development platforms, cloning
+    external projects, installing library dependencies from a repository, etc.
+
 Quick Start
 -----------
 
@@ -489,6 +495,10 @@ Disable showing PlatformIO Home at startup. The default value is ``false``.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PlatformIO Home server HTTP port. The default value ``0`` automatically assigns a free port in
 the range [8010..8100]).
+
+``platformio-ide.customPyPiIndexUrl``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Custom base URL of the Python Package Index (default ``https://pypi.org/simple``).
 
 Known issues
 ------------

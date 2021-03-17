@@ -225,26 +225,26 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_nxpimxrt`
       - MIMXRT1021DAG5A
       - 500MHz
-      - 64MB
-      - 256MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - :ref:`platform_nxpimxrt`
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1060_evk`
       - :ref:`platform_nxpimxrt`
       - MIMXRT1062DVL6A
       - 600MHz
-      - 64MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1064_evk`
       - :ref:`platform_nxpimxrt`
       - MIMXRT1064DVL6A
       - 600MHz
-      - 4MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nordicnrf51_nrf51_dongle`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -264,6 +264,18 @@ You do not need to use/buy external debug probe.
       - 512KB
       - 64KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_reel_board_v2`
       - :ref:`platform_nordicnrf52`
       - NRF52840
       - 64MHz
@@ -389,6 +401,12 @@ You do not need to use/buy external debug probe.
       - 72MHz
       - 64KB
       - 16KB
+    * - :ref:`board_ststm32_nucleo_f303k8`
+      - :ref:`platform_ststm32`
+      - STM32F303K8T6
+      - 72MHz
+      - 64KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - STM32F303RET6
@@ -407,6 +425,12 @@ You do not need to use/buy external debug probe.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_nucleo_f410rb`
+      - :ref:`platform_ststm32`
+      - STM32F410RBT6
+      - 100MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_nucleo_f411re`
       - :ref:`platform_ststm32`
       - STM32F411RET6
@@ -455,6 +479,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - STM32H743ZIT6
@@ -467,6 +497,18 @@ You do not need to use/buy external debug probe.
       - 480MHz
       - 1MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_l011k4`
+      - :ref:`platform_ststm32`
+      - STM32L011K4T6
+      - 32MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_ststm32_nucleo_l031k6`
+      - :ref:`platform_ststm32`
+      - STM32L031K6T6
+      - 32MHz
+      - 32KB
+      - 8KB
     * - :ref:`board_ststm32_nucleo_l053r8`
       - :ref:`platform_ststm32`
       - STM32L053R8T6
@@ -482,6 +524,12 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_nucleo_l432kc`
       - :ref:`platform_ststm32`
       - STM32L432KCU6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_nucleo_l433rc_p`
+      - :ref:`platform_ststm32`
+      - STM32L433RC
       - 80MHz
       - 256KB
       - 64KB
@@ -551,18 +599,6 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf52_reel_board`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_reel_board_v2`
-      - :ref:`platform_nordicnrf52`
-      - NRF52840
-      - 64MHz
-      - 1MB
-      - 256KB
 
 
 External Debug Tools
@@ -1390,29 +1426,29 @@ NXP
       - On-board
       - MIMXRT1021DAG5A
       - 500MHz
-      - 64MB
-      - 256MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1050_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1052DVL6B
       - 600MHz
-      - 64MB
-      - 512KB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1060_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1062DVL6A
       - 600MHz
-      - 64MB
-      - 1MB
+      - 8MB
+      - 32MB
     * - :ref:`board_nxpimxrt_mimxrt1064_evk`
       - :ref:`platform_nxpimxrt`
       - On-board
       - MIMXRT1064DVL6A
       - 600MHz
-      - 4MB
-      - 1MB
+      - 8MB
+      - 32MB
 
 Nordic
 ~~~~~~
@@ -1812,6 +1848,13 @@ ST
       - 72MHz
       - 64KB
       - 16KB
+    * - :ref:`board_ststm32_nucleo_f303k8`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F303K8T6
+      - 72MHz
+      - 64KB
+      - 12KB
     * - :ref:`board_ststm32_nucleo_f303re`
       - :ref:`platform_ststm32`
       - On-board
@@ -1833,6 +1876,13 @@ ST
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_nucleo_f410rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F410RBT6
+      - 100MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_nucleo_f411re`
       - :ref:`platform_ststm32`
       - On-board
@@ -1889,6 +1939,13 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -1903,6 +1960,20 @@ ST
       - 480MHz
       - 1MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_l011k4`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L011K4T6
+      - 32MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_ststm32_nucleo_l031k6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L031K6T6
+      - 32MHz
+      - 32KB
+      - 8KB
     * - :ref:`board_ststm32_nucleo_l053r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -1921,6 +1992,13 @@ ST
       - :ref:`platform_ststm32`
       - On-board
       - STM32L432KCU6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_nucleo_l433rc_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L433RC
       - 80MHz
       - 256KB
       - 64KB

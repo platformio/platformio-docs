@@ -21,6 +21,10 @@ The ST Standard Peripheral Library provides a set of functions for handling the 
 
 For more detailed information please visit `vendor site <https://www.st.com/en/embedded-software/stsw-stm8069.html?utm_source=platformio.org&utm_medium=docs>`_.
 
+.. warning::
+    The ST Standard Peripheral Library framework has been superceded by the ST :ref:`framework_stm32cube` framework.
+    Support for this framework is limited to existing projects.
+
 
 .. contents:: Contents
     :local:

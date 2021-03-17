@@ -69,6 +69,7 @@ Uploading
 Teensy 4.0 supports the next uploading protocols:
 
 * ``jlink``
+* ``teensy-cli``
 * ``teensy-gui``
 
 Default protocol is ``teensy-gui``

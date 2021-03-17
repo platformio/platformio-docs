@@ -370,16 +370,6 @@ use :ref:`pioide`, please use built-in :ref:`piocore` which is located in:
     You can add ``platformio`` and ``pio`` commands to your system environment.
     See :ref:`piocore_install_shell_commands`.
 
-Solution 4: Manual
-^^^^^^^^^^^^^^^^^^
-
-If none of the solutions above do work for you, you can download and unpack
-all packages manually to ":ref:`projectconf_pio_core_dir`/packages".
-
-Please visit `PlatformIO Package Storage <https://bintray.com/platformio/dl-packages>`_
-and download a package for your platform.
-A correct package path is ":ref:`projectconf_pio_core_dir`/packages/{package_name}/package.json".
-
 Building
 ~~~~~~~~
 

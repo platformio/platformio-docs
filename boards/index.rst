@@ -36,7 +36,7 @@ Aceinna IMU
     aceinna_imu/OpenRTK
     aceinna_imu/OpenRTK330L
 
-ASR Microelectronics ASR605x
+ASR Microelectronics ASR650x
 ----------------------------
 
 .. toctree::
@@ -409,35 +409,55 @@ Espressif 32
     espressif32/alksesp32
     espressif32/az-delivery-devkit-v4
     espressif32/featheresp32
+    espressif32/featheresp32-s2
     espressif32/espea32
     espressif32/bpi-bit
+    espressif32/wifiduino32
     espressif32/briki_abc_esp32
     espressif32/briki_mbc-wb_esp32
     espressif32/d-duino-32
     espressif32/esp32doit-devkit-v1
+    espressif32/esp32doit-espduino
     espressif32/pocket_32
     espressif32/fm-devkit
     espressif32/pico32
     espressif32/esp32vn-iot-uno
     espressif32/espectro32
     espressif32/espino32
+    espressif32/etboard
     espressif32/esp320
     espressif32/esp-wrover-kit
     espressif32/esp32dev
+    espressif32/esp32-s2-kaluga-1
+    espressif32/esp32-s2-saola-1
     espressif32/firebeetle32
+    espressif32/piranha_esp32
     espressif32/frogboard
+    espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
     espressif32/heltec_wifi_lora_32
     espressif32/heltec_wifi_lora_32_V2
     espressif32/heltec_wireless_stick
+    espressif32/heltec_wireless_stick_lite
     espressif32/hornbill32dev
     espressif32/hornbill32minima
+    espressif32/inex_openkb
+    espressif32/imbrios-logsens-v1p1
     espressif32/intorobot
     espressif32/iotaap_magnolia
+    espressif32/kits-edu
+    espressif32/sensesiot_weizen
+    espressif32/labplus_mpython
     espressif32/m5stack-core-esp32
+    espressif32/m5stack-core2
     espressif32/m5stack-fire
     espressif32/m5stack-grey
+    espressif32/m5stack-timer-cam
+    espressif32/m5stack-atom
     espressif32/m5stick-c
+    espressif32/m5stack-coreink
+    espressif32/mgbot-iotik32a
+    espressif32/mgbot-iotik32b
     espressif32/mhetesp32devkit
     espressif32/mhetesp32minikit
     espressif32/magicbit
@@ -455,25 +475,32 @@ Espressif 32
     espressif32/esp32-poe-iso
     espressif32/oroca_edubot
     espressif32/onehorse32dev
+    espressif32/healthypi4
     espressif32/pycom_gpy
     espressif32/lopy
     espressif32/lopy4
     espressif32/qchip
+    espressif32/s_odi_ultra
     espressif32/sg-o_airMon
     espressif32/wesp32
     espressif32/esp32thing
+    espressif32/esp32thing_plus
     espressif32/sparkfun_lora_gateway_1-channel
     espressif32/ttgo-lora32-v1
     espressif32/ttgo-lora32-v2
+    espressif32/ttgo-lora32-v21
     espressif32/ttgo-t-beam
     espressif32/ttgo-t-watch
     espressif32/ttgo-t1
+    espressif32/ttgo-t7-v13-mini32
+    espressif32/ttgo-t7-v14-mini32
     espressif32/tinypico
     espressif32/turta_iot_node
     espressif32/vintlabs-devkit-v1
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
     espressif32/lolin32
+    espressif32/lolin32_lite
     espressif32/wemos_d1_mini32
     espressif32/wemosbat
     espressif32/widora-air
@@ -764,6 +791,8 @@ Nordic nRF52
     nordicnrf52/nrf52_dk
     nordicnrf52/nrf52840_dk
     nordicnrf52/nrf52840_dk_adafruit
+    nordicnrf52/reel_board
+    nordicnrf52/reel_board_v2
     nordicnrf52/particle_argon
     nordicnrf52/particle_boron
     nordicnrf52/particle_xenon
@@ -776,8 +805,6 @@ Nordic nRF52
     nordicnrf52/vbluno52
     nordicnrf52/dwm1001_dev
     nordicnrf52/hackaBLE
-    nordicnrf52/reel_board
-    nordicnrf52/reel_board_v2
     nordicnrf52/ublox_evk_nina_b1
 
 Nuclei
@@ -1018,6 +1045,7 @@ ST STM32
     ststm32/nucleo_f746zg
     ststm32/nucleo_f756zg
     ststm32/nucleo_f767zi
+    ststm32/nucleo_h723zg
     ststm32/nucleo_h743zi
     ststm32/nucleo_h745zi_q
     ststm32/nucleo_l011k4
@@ -1079,6 +1107,7 @@ ST STM32
     ststm32/genericSTM32F103ZF
     ststm32/genericSTM32F103ZG
     ststm32/genericSTM32F303CB
+    ststm32/genericSTM32F373RC
     ststm32/genericSTM32F401CB
     ststm32/genericSTM32F401CC
     ststm32/genericSTM32F401CD
@@ -1088,6 +1117,7 @@ ST STM32
     ststm32/genericSTM32F401RD
     ststm32/genericSTM32F401RE
     ststm32/genericSTM32F405RG
+    ststm32/genericSTM32F407IGT6
     ststm32/genericSTM32F407VET6
     ststm32/genericSTM32F407VGT6
     ststm32/genericSTM32F410C8
@@ -1173,6 +1203,7 @@ TI MSP430
     timsp430/lpmsp430f5529
     timsp430/lpmsp430fr2311
     timsp430/lpmsp430fr2433
+    timsp430/lpmsp430g2476
     timsp430/lpmsp430fr4133
     timsp430/lpmsp430fr5969
     timsp430/lpmsp430fr5994

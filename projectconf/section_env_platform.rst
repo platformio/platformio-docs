@@ -150,7 +150,7 @@ in *Boards* section of :ref:`platforms`. See "Microcontroller" column.
 ``board_build.f_cpu``
 ^^^^^^^^^^^^^^^^^^^^^
 
-Type: ``Integer`` | Multiple: ``No``
+Type: ``Number`` | Multiple: ``No``
 
 The option ``board_build.f_cpu`` is used to define MCU frequency (Hertz, Clock). A
 format of this option is ``C-like long integer`` value with ``L`` suffix. The

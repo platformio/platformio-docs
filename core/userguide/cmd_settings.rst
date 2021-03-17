@@ -18,6 +18,8 @@ Manage PlatformIO settings
 
 .. contents::
 
+.. _cmd_settings_get:
+
 pio settings get
 ----------------
 
@@ -90,6 +92,21 @@ Check for the new PlatformIO interval.
 :Values:    Days (Number)
 
 Check for the platform updates interval.
+
+.. _setting_check_prune_system_threshold:
+
+``check_prune_system_threshold``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:Default:   1024
+:Values:    Megabytes (Number)
+
+Check for pruning unnecessary data threshold (megabytes). You can list unnecessary
+PlatformIO system data using :option:`pio system prune --dry-run` command. See
+:ref:`cmd_system_prune` for the other options.
+
+Do disable checking for unnecessary data, please set threshold to ``0`` using
+:ref:`cmd_settings_set` command.
 
 .. _setting_enable_cache:
 
@@ -174,6 +191,7 @@ Examples
     check_libraries_interval        7                 Check for the library updates interval (days)
     check_platformio_interval       3                 Check for the new PlatformIO interval (days)
     check_platforms_interval        7                 Check for the platform updates interval (days)
+    check_prune_system_threshold    1024              Check for pruning unnecessary data threshold (megabytes)
     enable_cache                    Yes               Enable caching for API requests and Library Manager
     strict_ssl                      No                Strict SSL for PlatformIO Services
     enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
@@ -190,9 +208,10 @@ Examples
     ------------------------------------------------------------------------------------------
     auto_update_platforms           Yes               Automatically update platforms (Yes/No)
 
+.. _cmd_settings_set:
 
 pio settings set
------------------------
+----------------
 
 Usage
 ~~~~~
@@ -221,8 +240,10 @@ Change to check for the new PlatformIO each day
     check_platformio_interval       1 [3]             Check for the new PlatformIO interval (days)
 
 
+.. _cmd_settings_reset:
+
 pio settings reset
--------------------------
+------------------
 
 Usage
 ~~~~~
@@ -252,6 +273,7 @@ Examples
     check_libraries_interval        7                 Check for the library updates interval (days)
     check_platformio_interval       3                 Check for the new PlatformIO interval (days)
     check_platforms_interval        7                 Check for the platform updates interval (days)
+    check_prune_system_threshold    1024              Check for pruning unnecessary data threshold (megabytes)
     enable_cache                    Yes               Enable caching for API requests and Library Manager
     strict_ssl                      No                Enable SSL for PlatformIO Services
     enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
