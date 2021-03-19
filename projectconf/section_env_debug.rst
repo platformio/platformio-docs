@@ -329,3 +329,24 @@ Examples:
 
     ; match by regular expression
     debug_server_ready_pattern = ^.*Listening on port \d+ for gdb connections
+
+.. _projectconf_debug_test:
+
+``debug_test``
+^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No``
+
+A name of a unit test to be debugged. See :ref:`unit_testing` for further details.
+
+If a source file of a test is located in the root of :ref:`projectconf_pio_test_dir`,
+the ``debug_test`` option should be set to ``*``.
+
+Examples:
+
+.. code-block:: ini
+
+    [env:debug_a_test]
+    ...
+
+    debug_test = test_calcualtor
