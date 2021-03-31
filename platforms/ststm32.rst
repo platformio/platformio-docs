@@ -36,6 +36,8 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `zephyr-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-mbed-doom <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mbed-doom?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-mbed-rpc <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mbed-rpc?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-usb-cdcacm <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-usb-cdcacm?utm_source=platformio.org&utm_medium=docs>`_
 * `cmsis-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/cmsis-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-hal-iap <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-iap?utm_source=platformio.org&utm_medium=docs>`_
@@ -162,6 +164,26 @@ You do not need to use/buy external debug probe.
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - STM32G431KBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - STM32G431RBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - STM32WB55RG
       - 64MHz
@@ -600,6 +622,16 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_portenta_h7_m4`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_portenta_h7_m7`
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_black_f407ve`
       - STM32F407VET6
       - 168MHz
@@ -800,26 +832,6 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_ststm32_nucleo_g071rb`
-      - STM32G071RBT6
-      - 64MHz
-      - 128KB
-      - 36KB
-    * - :ref:`board_ststm32_nucleo_g431kb`
-      - STM32G431KBT6
-      - 170MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_ststm32_nucleo_g431rb`
-      - STM32G431RBT6
-      - 170MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_ststm32_nucleo_g474re`
-      - STM32G474RET6
-      - 170MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_ststm32_olimexino`
       - STM32F103RBT6
       - 72MHz
@@ -1129,7 +1141,7 @@ Please click on board name for the further details.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - STM32F410C8
       - 100MHz
@@ -1357,6 +1369,9 @@ Packages
 
     * - Name
       - Description
+
+    * - `framework-arduino-mbed <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino framework supporting mbed-enabled boards
 
     * - `framework-arduinostm32mxchip <https://microsoft.github.io/azure-iot-developer-kit/?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework for the Azure MXChip IoT DevKit
@@ -1723,6 +1738,31 @@ Airbot
       - 48MHz
       - 32KB
       - 7.75KB
+
+Arduino
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_portenta_h7_m4`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_portenta_h7_m7`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
 
 Armed
 ~~~~~
@@ -2199,7 +2239,7 @@ Generic
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - External
       - STM32F410C8
@@ -2849,25 +2889,25 @@ ST
       - 256KB
       - 64KB
     * - :ref:`board_ststm32_nucleo_g071rb`
-      - External
+      - On-board
       - STM32G071RBT6
       - 64MHz
       - 128KB
       - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
-      - External
+      - On-board
       - STM32G431KBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
-      - External
+      - On-board
       - STM32G431RBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
-      - External
+      - On-board
       - STM32G474RET6
       - 170MHz
       - 512KB

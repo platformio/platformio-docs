@@ -365,6 +365,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -1026,12 +1032,6 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 36KB
-    * - :ref:`board_ststm32_nucleo_g474re`
-      - :ref:`platform_ststm32`
-      - STM32G474RET6
-      - 170MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -2107,7 +2107,7 @@ ST
       - 256KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32G474RET6
       - 170MHz
       - 512KB

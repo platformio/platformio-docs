@@ -568,7 +568,7 @@ You do not need to use/buy external debug probe.
       - NRF52833
       - 64MHz
       - 512KB
-      - 64KB
+      - 128KB
     * - :ref:`board_atmelavr_zumbt328`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
@@ -851,6 +851,30 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - :ref:`platform_ststm32`
+      - STM32G431KBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - STM32G431RBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_atmelavr_emonpi`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
@@ -1908,6 +1932,18 @@ Please click on board name for the further details.
       - 64MHz
       - 960KB
       - 256KB
+    * - :ref:`board_ststm32_portenta_h7_m4`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_portenta_h7_m7`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_atmelsam_tian`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -2358,30 +2394,6 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_ststm32_nucleo_g071rb`
-      - :ref:`platform_ststm32`
-      - STM32G071RBT6
-      - 64MHz
-      - 128KB
-      - 36KB
-    * - :ref:`board_ststm32_nucleo_g431kb`
-      - :ref:`platform_ststm32`
-      - STM32G431KBT6
-      - 170MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_ststm32_nucleo_g431rb`
-      - :ref:`platform_ststm32`
-      - STM32G431RBT6
-      - 170MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_ststm32_nucleo_g474re`
-      - :ref:`platform_ststm32`
-      - STM32G474RET6
-      - 170MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_espressif32_esp32-devkitlipo`
       - :ref:`platform_espressif32`
       - ESP32
@@ -2544,6 +2556,24 @@ Please click on board name for the further details.
       - 64MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm8_stm8s003f3`
+      - :ref:`platform_ststm8`
+      - STM8S003F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_ststm8_stm8sblue`
+      - :ref:`platform_ststm8`
+      - STM8S103F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_ststm8_stm8sblack`
+      - :ref:`platform_ststm8`
+      - STM8S105K4T6
+      - 16MHz
+      - 16KB
+      - 2KB
     * - :ref:`board_ststm32_olimex_e407`
       - :ref:`platform_ststm32`
       - STM32F407ZGT6
@@ -2795,7 +2825,7 @@ Please click on board name for the further details.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - :ref:`platform_ststm32`
       - STM32F410C8
@@ -3324,6 +3354,18 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm8_mb208`
+      - :ref:`platform_ststm8`
+      - STM8S208MBT6
+      - 16MHz
+      - 128KB
+      - 6KB
+    * - :ref:`board_ststm8_s8uno`
+      - :ref:`platform_ststm8`
+      - STM8S105K6T6
+      - 16MHz
+      - 32KB
+      - 2KB
 
 
 Examples
@@ -4348,6 +4390,20 @@ Arduino
       - 16MHz
       - 47.50KB
       - 6KB
+    * - :ref:`board_ststm32_portenta_h7_m4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_portenta_h7_m7`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_atmelavr_pro8MHzatmega168`
       - :ref:`platform_atmelavr`
       - On-board
@@ -4669,7 +4725,7 @@ BBC
       - NRF52833
       - 64MHz
       - 512KB
-      - 64KB
+      - 128KB
 
 BOXTEC
 ~~~~~~
@@ -6125,7 +6181,7 @@ Generic
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - :ref:`platform_ststm32`
       - External
@@ -6475,6 +6531,13 @@ Heltec Automation
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_kit_32_v2`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - :ref:`platform_espressif32`
@@ -9096,28 +9159,28 @@ ST
       - 64KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32G071RBT6
       - 64MHz
       - 128KB
       - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32G431KBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32G431RBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32G474RET6
       - 170MHz
       - 512KB
@@ -9409,16 +9472,23 @@ ST
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_ststm8_stm8s003f3`
+      - :ref:`platform_ststm8`
+      - External
+      - STM8S003F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
     * - :ref:`board_ststm8_stm8sblue`
       - :ref:`platform_ststm8`
-      - No
+      - External
       - STM8S103F3P6
       - 16MHz
       - 8KB
       - 1KB
     * - :ref:`board_ststm8_stm8sblack`
       - :ref:`platform_ststm8`
-      - No
+      - External
       - STM8S105K4T6
       - 16MHz
       - 16KB
@@ -11147,14 +11217,14 @@ sduino
       - RAM
     * - :ref:`board_ststm8_mb208`
       - :ref:`platform_ststm8`
-      - No
+      - External
       - STM8S208MBT6
       - 16MHz
       - 128KB
       - 6KB
     * - :ref:`board_ststm8_s8uno`
       - :ref:`platform_ststm8`
-      - No
+      - External
       - STM8S105K6T6
       - 16MHz
       - 32KB

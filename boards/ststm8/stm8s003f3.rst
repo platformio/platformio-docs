@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm8_s8uno:
+.. _board_ststm8_stm8s003f3:
 
-sduino UNO (STM8S105K6)
-=======================
+ST STM8S003F3 chip
+==================
 
 .. contents::
 
@@ -24,41 +24,41 @@ Platform :ref:`platform_ststm8`: The STM8 is an 8-bit microcontroller family by 
 .. list-table::
 
   * - **Microcontroller**
-    - STM8S105K6T6
+    - STM8S003F3P6
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 32KB
+    - 8KB
   * - **RAM**
-    - 2KB
+    - 1KB
   * - **Vendor**
-    - `sduino <https://github.com/roybaer/sduino_uno?utm_source=platformio.org&utm_medium=docs>`__
+    - `ST <https://www.st.com/resource/en/datasheet/stm8s003f3.pdf?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``s8uno`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``stm8s003f3`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:s8uno]
+  [env:stm8s003f3]
   platform = ststm8
-  board = s8uno
+  board = stm8s003f3
 
-You can override default sduino UNO (STM8S105K6) settings per build environment using
+You can override default ST STM8S003F3 chip settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `s8uno.json <https://github.com/platformio/platform-ststm8/blob/master/boards/s8uno.json>`_. For example,
+board manifest `stm8s003f3.json <https://github.com/platformio/platform-ststm8/blob/master/boards/stm8s003f3.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:s8uno]
+  [env:stm8s003f3]
   platform = ststm8
-  board = s8uno
+  board = stm8s003f3
 
   ; change microcontroller
-  board_build.mcu = stm8s105k6t6
+  board_build.mcu = stm8s003f3p6
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
@@ -66,22 +66,22 @@ board manifest `s8uno.json <https://github.com/platformio/platform-ststm8/blob/m
 
 Uploading
 ---------
-sduino UNO (STM8S105K6) supports the next uploading protocols:
+ST STM8S003F3 chip supports the next uploading protocols:
 
 * ``serial``
 * ``stlinkv2``
 
-Default protocol is ``serial``
+Default protocol is ``stlinkv2``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:s8uno]
+  [env:stm8s003f3]
   platform = ststm8
-  board = s8uno
+  board = stm8s003f3
 
-  upload_protocol = serial
+  upload_protocol = stlinkv2
 
 Debugging
 ---------
@@ -96,7 +96,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-sduino UNO (STM8S105K6) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+ST STM8S003F3 chip does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

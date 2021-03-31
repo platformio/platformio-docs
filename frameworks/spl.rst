@@ -21,10 +21,6 @@ The ST Standard Peripheral Library provides a set of functions for handling the 
 
 For more detailed information please visit `vendor site <https://www.st.com/en/embedded-software/stsw-stm8069.html?utm_source=platformio.org&utm_medium=docs>`_.
 
-.. warning::
-    The ST Standard Peripheral Library framework has been superceded by the ST :ref:`framework_stm32cube` framework.
-    Support for this framework is limited to existing projects.
-
 
 .. contents:: Contents
     :local:
@@ -87,6 +83,18 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm8_nucleo_8s207k8`
+      - :ref:`platform_ststm8`
+      - STM8S207K8T6
+      - 16MHz
+      - 64KB
+      - 6KB
+    * - :ref:`board_ststm8_nucleo_8s208rb`
+      - :ref:`platform_ststm8`
+      - STM8S208RBT6
+      - 16MHz
+      - 128KB
+      - 6KB
     * - :ref:`board_ststm32_cloud_jam`
       - :ref:`platform_ststm32`
       - STM32F401RET6
@@ -148,6 +156,24 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm8_stm8s003f3`
+      - :ref:`platform_ststm8`
+      - STM8S003F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_ststm8_stm8sblue`
+      - :ref:`platform_ststm8`
+      - STM8S103F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_ststm8_stm8sblack`
+      - :ref:`platform_ststm8`
+      - STM8S105K4T6
+      - 16MHz
+      - 16KB
+      - 2KB
     * - :ref:`board_ststm32_genericSTM32F401RB`
       - :ref:`platform_ststm32`
       - STM32F401RB
@@ -166,6 +192,18 @@ Please click on board name for the further details.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm8_mb208`
+      - :ref:`platform_ststm8`
+      - STM8S208MBT6
+      - 16MHz
+      - 128KB
+      - 6KB
+    * - :ref:`board_ststm8_s8uno`
+      - :ref:`platform_ststm8`
+      - STM8S105K6T6
+      - 16MHz
+      - 32KB
+      - 2KB
 
 
 Examples
@@ -356,20 +394,55 @@ ST
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_ststm8_stm8s003f3`
+      - :ref:`platform_ststm8`
+      - External
+      - STM8S003F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
     * - :ref:`board_ststm8_stm8sblue`
       - :ref:`platform_ststm8`
-      - No
+      - External
       - STM8S103F3P6
       - 16MHz
       - 8KB
       - 1KB
     * - :ref:`board_ststm8_stm8sblack`
       - :ref:`platform_ststm8`
-      - No
+      - External
       - STM8S105K4T6
       - 16MHz
       - 16KB
       - 2KB
+
+STMicroelectronics
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm8_nucleo_8s207k8`
+      - :ref:`platform_ststm8`
+      - On-board
+      - STM8S207K8T6
+      - 16MHz
+      - 64KB
+      - 6KB
+    * - :ref:`board_ststm8_nucleo_8s208rb`
+      - :ref:`platform_ststm8`
+      - On-board
+      - STM8S208RBT6
+      - 16MHz
+      - 128KB
+      - 6KB
 
 sduino
 ~~~~~~
@@ -386,14 +459,14 @@ sduino
       - RAM
     * - :ref:`board_ststm8_mb208`
       - :ref:`platform_ststm8`
-      - No
+      - External
       - STM8S208MBT6
       - 16MHz
       - 128KB
       - 6KB
     * - :ref:`board_ststm8_s8uno`
       - :ref:`platform_ststm8`
-      - No
+      - External
       - STM8S105K6T6
       - 16MHz
       - 32KB

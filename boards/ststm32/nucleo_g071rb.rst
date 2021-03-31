@@ -72,8 +72,9 @@ Nucleo G071RB supports the next uploading protocols:
 * ``cmsis-dap``
 * ``jlink``
 * ``mbed``
+* ``stlink``
 
-Default protocol is ``mbed``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
@@ -83,7 +84,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
   platform = ststm32
   board = nucleo_g071rb
 
-  upload_protocol = mbed
+  upload_protocol = stlink
 
 Debugging
 ---------
@@ -98,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Nucleo G071RB does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Nucleo G071RB has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -108,13 +109,16 @@ Nucleo G071RB does not have on-board debug probe and **IS NOT READY** for debugg
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - Yes
+    - 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
+  * - :ref:`debugging_tool_stlink`
+    - Yes
+    - Yes
 
 Frameworks
 ----------

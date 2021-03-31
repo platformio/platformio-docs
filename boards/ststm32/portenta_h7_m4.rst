@@ -9,83 +9,82 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_nordicnrf52_bbcmicrobit_v2:
+.. _board_ststm32_portenta_h7_m4:
 
-BBC micro:bit V2
-================
+Arduino Portenta H7 (M4 core)
+=============================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
-    - NRF52833
+    - STM32H747XIH6
   * - **Frequency**
-    - 64MHz
+    - 480MHz
   * - **Flash**
-    - 512KB
+    - 1MB
   * - **RAM**
-    - 128KB
+    - 287.35KB
   * - **Vendor**
-    - `BBC <https://microbit.org/new-microbit/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Arduino <https://www.arduino.cc/pro/hardware/product/portenta-h7?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``bbcmicrobit_v2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``portenta_h7_m4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:bbcmicrobit_v2]
-  platform = nordicnrf52
-  board = bbcmicrobit_v2
+  [env:portenta_h7_m4]
+  platform = ststm32
+  board = portenta_h7_m4
 
-You can override default BBC micro:bit V2 settings per build environment using
+You can override default Arduino Portenta H7 (M4 core) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `bbcmicrobit_v2.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/bbcmicrobit_v2.json>`_. For example,
+board manifest `portenta_h7_m4.json <https://github.com/platformio/platform-ststm32/blob/master/boards/portenta_h7_m4.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:bbcmicrobit_v2]
-  platform = nordicnrf52
-  board = bbcmicrobit_v2
+  [env:portenta_h7_m4]
+  platform = ststm32
+  board = portenta_h7_m4
 
   ; change microcontroller
-  board_build.mcu = nrf52833
+  board_build.mcu = stm32h747xih6
 
   ; change MCU frequency
-  board_build.f_cpu = 64000000L
+  board_build.f_cpu = 480000000L
 
 
 Uploading
 ---------
-BBC micro:bit V2 supports the next uploading protocols:
+Arduino Portenta H7 (M4 core) supports the next uploading protocols:
 
-* ``blackmagic``
 * ``cmsis-dap``
+* ``dfu``
 * ``jlink``
 * ``mbed``
-* ``nrfjprog``
 * ``stlink``
 
-Default protocol is ``cmsis-dap``
+Default protocol is ``dfu``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:bbcmicrobit_v2]
-  platform = nordicnrf52
-  board = bbcmicrobit_v2
+  [env:portenta_h7_m4]
+  platform = ststm32
+  board = portenta_h7_m4
 
-  upload_protocol = cmsis-dap
+  upload_protocol = dfu
 
 Debugging
 ---------
@@ -100,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-BBC micro:bit V2 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Arduino Portenta H7 (M4 core) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -108,11 +107,8 @@ BBC micro:bit V2 has on-board debug probe and **IS READY** for debugging. You do
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
   * - :ref:`debugging_tool_cmsis-dap`
-    - Yes
+    - 
     - Yes
   * - :ref:`debugging_tool_jlink`
     - 
@@ -131,6 +127,3 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
-
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

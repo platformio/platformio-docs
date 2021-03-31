@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm8_s8uno:
+.. _board_ststm8_nucleo_8s208rb:
 
-sduino UNO (STM8S105K6)
-=======================
+NUCLEO-8S208RB
+==============
 
 .. contents::
 
@@ -24,41 +24,41 @@ Platform :ref:`platform_ststm8`: The STM8 is an 8-bit microcontroller family by 
 .. list-table::
 
   * - **Microcontroller**
-    - STM8S105K6T6
+    - STM8S208RBT6
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 32KB
+    - 128KB
   * - **RAM**
-    - 2KB
+    - 6KB
   * - **Vendor**
-    - `sduino <https://github.com/roybaer/sduino_uno?utm_source=platformio.org&utm_medium=docs>`__
+    - `STMicroelectronics <https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``s8uno`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_8s208rb`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:s8uno]
+  [env:nucleo_8s208rb]
   platform = ststm8
-  board = s8uno
+  board = nucleo_8s208rb
 
-You can override default sduino UNO (STM8S105K6) settings per build environment using
+You can override default NUCLEO-8S208RB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `s8uno.json <https://github.com/platformio/platform-ststm8/blob/master/boards/s8uno.json>`_. For example,
+board manifest `nucleo_8s208rb.json <https://github.com/platformio/platform-ststm8/blob/master/boards/nucleo_8s208rb.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:s8uno]
+  [env:nucleo_8s208rb]
   platform = ststm8
-  board = s8uno
+  board = nucleo_8s208rb
 
   ; change microcontroller
-  board_build.mcu = stm8s105k6t6
+  board_build.mcu = stm8s208rbt6
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
@@ -66,22 +66,22 @@ board manifest `s8uno.json <https://github.com/platformio/platform-ststm8/blob/m
 
 Uploading
 ---------
-sduino UNO (STM8S105K6) supports the next uploading protocols:
+NUCLEO-8S208RB supports the next uploading protocols:
 
 * ``serial``
-* ``stlinkv2``
+* ``stlinkv21``
 
-Default protocol is ``serial``
+Default protocol is ``stlinkv21``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:s8uno]
+  [env:nucleo_8s208rb]
   platform = ststm8
-  board = s8uno
+  board = nucleo_8s208rb
 
-  upload_protocol = serial
+  upload_protocol = stlinkv21
 
 Debugging
 ---------
@@ -96,7 +96,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-sduino UNO (STM8S105K6) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+NUCLEO-8S208RB has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -105,7 +105,7 @@ sduino UNO (STM8S105K6) does not have on-board debug probe and **IS NOT READY** 
     - On-board
     - Default
   * - :ref:`debugging_tool_stlink`
-    - 
+    - Yes
     - Yes
 
 Frameworks
@@ -115,9 +115,6 @@ Frameworks
 
     * - Name
       - Description
-
-    * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_spl`
       - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.

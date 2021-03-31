@@ -212,7 +212,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -1282,6 +1282,20 @@ Arduino
       - 16MHz
       - 30KB
       - 2KB
+    * - :ref:`board_ststm32_portenta_h7_m4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_portenta_h7_m7`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_atmelavr_pro8MHzatmega168`
       - :ref:`platform_atmelavr`
       - On-board
@@ -1596,7 +1610,7 @@ BBC
       - NRF52833
       - 64MHz
       - 512KB
-      - 64KB
+      - 128KB
 
 BQ
 ~~
@@ -1887,7 +1901,7 @@ Digilent
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB
@@ -2793,7 +2807,7 @@ Generic
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - :ref:`platform_ststm32`
       - External
@@ -5239,28 +5253,28 @@ ST
       - 64KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32G071RBT6
       - 64MHz
       - 128KB
       - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32G431KBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32G431RBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
-      - External
+      - On-board
       - STM32G474RET6
       - 170MHz
       - 512KB
@@ -5748,6 +5762,27 @@ ST
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_ststm8_stm8s003f3`
+      - :ref:`platform_ststm8`
+      - External
+      - STM8S003F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_ststm8_stm8sblue`
+      - :ref:`platform_ststm8`
+      - External
+      - STM8S103F3P6
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_ststm8_stm8sblack`
+      - :ref:`platform_ststm8`
+      - External
+      - STM8S105K4T6
+      - 16MHz
+      - 16KB
+      - 2KB
     * - :ref:`board_ststm32_steval_fcu001v1`
       - :ref:`platform_ststm32`
       - External
@@ -5797,6 +5832,34 @@ ST
       - 120MHz
       - 2MB
       - 640KB
+
+STMicroelectronics
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm8_nucleo_8s207k8`
+      - :ref:`platform_ststm8`
+      - On-board
+      - STM8S207K8T6
+      - 16MHz
+      - 64KB
+      - 6KB
+    * - :ref:`board_ststm8_nucleo_8s208rb`
+      - :ref:`platform_ststm8`
+      - On-board
+      - STM8S208RBT6
+      - 16MHz
+      - 128KB
+      - 6KB
 
 SainSmart
 ~~~~~~~~~
@@ -7561,6 +7624,34 @@ sakura.io
       - 100MHz
       - 1MB
       - 128KB
+
+sduino
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm8_mb208`
+      - :ref:`platform_ststm8`
+      - External
+      - STM8S208MBT6
+      - 16MHz
+      - 128KB
+      - 6KB
+    * - :ref:`board_ststm8_s8uno`
+      - :ref:`platform_ststm8`
+      - External
+      - STM8S105K6T6
+      - 16MHz
+      - 32KB
+      - 2KB
 
 sino:bit
 ~~~~~~~~
