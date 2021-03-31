@@ -117,7 +117,7 @@ automatically delete it after the first time a program stops there.
 ``debug_init_cmds``
 ^^^^^^^^^^^^^^^^^^^
 
-Type: ``String`` | Multiple: ``Yes`` | Default: `See details... <https://github.com/platformio/platformio-core/blob/develop/platformio/commands/debug/initcfgs.py>`__
+Type: ``String`` | Multiple: ``Yes`` | Default: `See details... <https://github.com/platformio/platformio-core/tree/develop/platformio/debug/config>`__
 
 Initial commands that will be passed to back-end debugger.
 
