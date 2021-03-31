@@ -203,6 +203,12 @@ PlatformIO Core in :ref:`pioide`:
 * :ref:`ide_atom` - ``Menu PlatformIO: Settings > PlatformIO IDE > Use built-in PlatformIO Core``
 * :ref:`ide_vscode` - :ref:`ide_vscode_settings` > Set ``platformio-ide.useBuiltinPIOCore`` to ``true``.
 
+You may see an ``Obsolete PIO Core`` error message if the version of the core
+platformIO has an upgrade available. To upgrade:
+
+* :ref:`ide_vscode` - ``Menu PlatformIO: Quick Access > Miscellaneous > Upgrade PlatformIO Core``
+* Terminal - ``pio upgrade``
+
 Finally, if you have a standalone :ref:`piocore` in a system, please open system
 Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PlatformIO Core:
 
