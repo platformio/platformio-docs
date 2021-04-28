@@ -21,7 +21,7 @@ REDIRECT_TEMPLATE = Template(
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Redirecting&hellip;</title>
+  <title>Redirecting...</title>
   <script>
     var redirect_url = "$redirect_url";
     if (window.location.search) {
@@ -38,12 +38,18 @@ REDIRECT_TEMPLATE = Template(
   <meta name="robots" content="noindex" />
 </head>
 <body>
-  <h1>Redirecting&hellip;</h1>
+  <h1>Redirecting...</h1>
   <p><a href="$redirect_url">Click here if you are not redirected.</a></p>
 </body>
 </html>
 """
 )
+
+
+def build_redirect_page(html_path, redirect_url):
+    os.makedirs(os.path.dirname(html_path), exist_ok=True)
+    with open(html_path, "w") as fp:
+        fp.write(REDIRECT_TEMPLATE.substitute(redirect_url=redirect_url).strip())
 
 
 def load_redirects(src_dir):
@@ -78,18 +84,16 @@ def build_redirect_pages(app, exception):
         out_dir = app.outdir
         if os.path.dirname(from_path) != "/":
             out_dir = os.path.join(out_dir, os.path.dirname(from_path)[1:])
-        os.makedirs(out_dir, exist_ok=True)
-        with open(os.path.join(out_dir, os.path.basename(from_path)), "w") as fp:
-            fp.write(
-                REDIRECT_TEMPLATE.substitute(
-                    redirect_url="%s/en/%s%s"
-                    % (
-                        app.config.html_baseurl,
-                        ("latest" if is_latest else "stable"),
-                        to_path,
-                    )
-                ).strip()
-            )
+        build_redirect_page(
+            os.path.join(out_dir, os.path.basename(from_path)),
+            "%s/en/%s%s"
+            % (
+                app.config.html_baseurl,
+                ("latest" if is_latest else "stable"),
+                to_path,
+            ),
+        )
+
     print("Built %d redirect pages" % len(redirects))
 
 
@@ -104,18 +108,15 @@ def build_legacy_rtd_pages(app, exception):
             relative_dir = root[len(os.path.commonpath([app.outdir, root])) :] or "/"
             if relative_dir != "/":
                 out_dir = os.path.join(out_dir, relative_dir[1:])
-            os.makedirs(out_dir, exist_ok=True)
-            with open(os.path.join(out_dir, name), "w") as fp:
-                fp.write(
-                    REDIRECT_TEMPLATE.substitute(
-                        redirect_url="%s/en/latest%s%s"
-                        % (
-                            app.config.html_baseurl,
-                            relative_dir,
-                            name,
-                        )
-                    ).strip()
-                )
+            build_redirect_page(
+                os.path.join(out_dir, name),
+                "%s/en/latest%s%s"
+                % (
+                    app.config.html_baseurl,
+                    relative_dir,
+                    name,
+                ),
+            )
 
 
 def setup(app):
