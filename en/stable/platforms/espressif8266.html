@@ -1,0 +1,1987 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Espressif 8266 &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/platforms/espressif8266.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Freescale Kinetis" href="freescalekinetis.html" />
+    <link rel="prev" title="Espressif 32" href="espressif32.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Platforms</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#embedded">Embedded</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="aceinna_imu.html">Aceinna IMU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="asrmicro650x.html">ASR Microelectronics ASR650x</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmelavr.html">Atmel AVR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmelmegaavr.html">Atmel megaAVR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmelsam.html">Atmel SAM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chipsalliance.html">CHIPS Alliance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressif32.html">Espressif 32</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Espressif 8266</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stable-and-upstream-versions">Stable and upstream versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#packages">Packages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frameworks">Frameworks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boards">Boards</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="freescalekinetis.html">Freescale Kinetis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gd32v.html">GigaDevice GD32V</a></li>
+<li class="toctree-l3"><a class="reference internal" href="infineonxmc.html">Infineon XMC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intel_arc32.html">Intel ARC32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intel_mcs51.html">Intel MCS-51 (8051)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kendryte210.html">Kendryte K210</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lattice_ice40.html">Lattice iCE40</a></li>
+<li class="toctree-l3"><a class="reference internal" href="maxim32.html">Maxim 32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="microchippic32.html">Microchip PIC32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nordicnrf51.html">Nordic nRF51</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nordicnrf52.html">Nordic nRF52</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nuclei.html">Nuclei</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nxpimxrt.html">NXP i.MX RT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="riscv_gap.html">RISC-V GAP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shakti.html">Shakti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sifive.html">SiFive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="siliconlabsefm32.html">Silicon Labs EFM32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ststm32.html">ST STM32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ststm8.html">ST STM8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teensy.html">Teensy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="timsp430.html">TI MSP430</a></li>
+<li class="toctree-l3"><a class="reference internal" href="titiva.html">TI TIVA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wiznet7500.html">WIZNet W7500</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#desktop">Desktop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Development Platforms</a> &raquo;</li>
+        
+      <li>Espressif 8266</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/platforms/espressif8266.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="espressif-8266">
+<span id="platform-espressif8266"></span><h1>Espressif 8266<a class="headerlink" href="#espressif-8266" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Configuration</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">espressif8266</span></code></p>
+</dd>
+</dl>
+<p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p>
+<p>For more detailed information please visit <a class="reference external" href="https://espressif.com/?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#configuration" id="id3">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id4">Examples</a></p></li>
+<li><p><a class="reference internal" href="#stable-and-upstream-versions" id="id5">Stable and upstream versions</a></p></li>
+<li><p><a class="reference internal" href="#packages" id="id6">Packages</a></p></li>
+<li><p><a class="reference internal" href="#frameworks" id="id7">Frameworks</a></p></li>
+<li><p><a class="reference internal" href="#boards" id="id8">Boards</a></p></li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#cpu-frequency" id="id9">CPU Frequency</a></p></li>
+<li><p><a class="reference internal" href="#flash-frequency" id="id10">FLASH Frequency</a></p></li>
+<li><p><a class="reference internal" href="#flash-mode" id="id11">FLASH Mode</a></p></li>
+<li><p><a class="reference internal" href="#reset-method" id="id12">Reset Method</a></p></li>
+<li><p><a class="reference internal" href="#flash-size" id="id13">Flash Size</a></p></li>
+<li><p><a class="reference internal" href="#upload-speed" id="id14">Upload Speed</a></p></li>
+<li><p><a class="reference internal" href="#lwip-variant" id="id15">lwIP Variant</a></p></li>
+<li><p><a class="reference internal" href="#sdk-version" id="id16">SDK Version</a></p></li>
+<li><p><a class="reference internal" href="#ssl-support" id="id17">SSL Support</a></p></li>
+<li><p><a class="reference internal" href="#serial-debug" id="id18">Serial Debug</a></p></li>
+<li><p><a class="reference internal" href="#debug-level" id="id19">Debug Level</a></p></li>
+<li><p><a class="reference internal" href="#vtables" id="id20">VTables</a></p></li>
+<li><p><a class="reference internal" href="#exceptions" id="id21">Exceptions</a></p></li>
+<li><p><a class="reference internal" href="#using-filesystem" id="id22">Using Filesystem</a></p>
+<ul>
+<li><p><a class="reference internal" href="#selecting-appropriate-filesystem" id="id23">Selecting appropriate Filesystem</a></p></li>
+<li><p><a class="reference internal" href="#uploading-files-to-filesystem" id="id24">Uploading files to Filesystem</a></p></li>
+<li><p><a class="reference internal" href="#overriding-filesystem-image-name" id="id25">Overriding Filesystem image name</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#over-the-air-ota-update" id="id26">Over-the-Air (OTA) update</a></p>
+<ul>
+<li><p><a class="reference internal" href="#authentication-and-upload-options" id="id27">Authentication and upload options</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#demo" id="id28">Demo</a></p></li>
+<li><p><a class="reference internal" href="#using-arduino-framework-with-staging-version" id="id29">Using Arduino Framework with Staging version</a></p></li>
+</ul>
+</div>
+<div class="section" id="cpu-frequency">
+<h3><a class="toc-backref" href="#id9">CPU Frequency</a><a class="headerlink" href="#cpu-frequency" title="Permalink to this headline">¶</a></h3>
+<p>See <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-board-build-f-cpu"><span class="std std-ref">board_build.f_cpu</span></a> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="c1">; set frequency to 160MHz</span>
+<span class="na">board_build.f_cpu</span> <span class="o">=</span> <span class="s">160000000L</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="flash-frequency">
+<h3><a class="toc-backref" href="#id10">FLASH Frequency</a><a class="headerlink" href="#flash-frequency" title="Permalink to this headline">¶</a></h3>
+<p>Please use <code class="docutils literal notranslate"><span class="pre">board_build.f_flash</span></code> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> to change
+a value. Possible values:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">20000000L</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">26000000L</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">40000000L</span></code> (default)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">80000000L</span></code></p></li>
+</ul>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="c1">; set frequency to 80MHz</span>
+<span class="na">board_build.f_flash</span> <span class="o">=</span> <span class="s">80000000L</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="flash-mode">
+<h3><a class="toc-backref" href="#id11">FLASH Mode</a><a class="headerlink" href="#flash-mode" title="Permalink to this headline">¶</a></h3>
+<p>Flash chip interface mode. This parameter is stored in the binary image
+header, along with the flash size and flash frequency. The ROM bootloader
+in the ESP chip uses the value of these parameters in order to know how to
+talk to the flash chip.</p>
+<p>Please use <code class="docutils literal notranslate"><span class="pre">board_build.flash_mode</span></code> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> to change
+a value. Possible values:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">qio</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">qout</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dio</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dout</span></code></p></li>
+</ul>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">board_build.flash_mode</span> <span class="o">=</span> <span class="s">qio</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="reset-method">
+<h3><a class="toc-backref" href="#id12">Reset Method</a><a class="headerlink" href="#reset-method" title="Permalink to this headline">¶</a></h3>
+<p>You can set custom reset method using <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-resetmethod"><span class="std std-ref">upload_resetmethod</span></a>
+option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<p>The <a class="reference external" href="https://github.com/igrr/esptool-ck#supported-boards">possible values</a> are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ck</span></code> - RTS controls RESET or CH_PD, DTR controls GPIO0</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">wifio</span></code> - TXD controls GPIO0 via PNP transistor and DTR controls RESET via a capacitor</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nodemcu</span></code> - GPIO0 and RESET controlled using two NPN transistors as in NodeMCU devkit.</p></li>
+</ul>
+<p>See <a class="reference external" href="https://github.com/platformio/platform-espressif8266/search?p=1&amp;q=resetmethod">default reset methods per board</a>.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">upload_resetmethod</span> <span class="o">=</span> <span class="s">ck</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="flash-size">
+<span id="platform-espressif-customflash"></span><h3><a class="toc-backref" href="#id13">Flash Size</a><a class="headerlink" href="#flash-size" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please make sure to read <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout">ESP8266 Flash layout</a>
+information first.</p>
+</div>
+<p>Available LD-scripts:
+<a class="reference external" href="https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld">https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld</a></p>
+<p>Please open <code class="docutils literal notranslate"><span class="pre">eagle.flash.***.ld</span></code> file to check how flash is split.</p>
+<p>To override default LD script please use <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-board-build-ldscript"><span class="std std-ref">board_build.ldscript</span></a>
+option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">board_build.ldscript</span> <span class="o">=</span> <span class="s">eagle.flash.4m.ld</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="upload-speed">
+<h3><a class="toc-backref" href="#id14">Upload Speed</a><a class="headerlink" href="#upload-speed" title="Permalink to this headline">¶</a></h3>
+<p>You can set custom upload speed using <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-speed"><span class="std std-ref">upload_speed</span></a> option
+from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">upload_speed</span> <span class="o">=</span> <span class="s">9600</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lwip-variant">
+<h3><a class="toc-backref" href="#id15">lwIP Variant</a><a class="headerlink" href="#lwip-variant" title="Permalink to this headline">¶</a></h3>
+<p>Available variants (macros):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY</span></code> v2 Lower Memory <strong>(default)</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH</span></code> v2 Higher Bandwidth</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY_LOW_FLASH</span></code> v2 Lower Memory (no features)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_LWIP2_HIGHER_BANDWIDTH_LOW_FLASH</span></code> v2 Higher Bandwidth (no features)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_LWIP2_IPV6_LOW_MEMORY</span></code> v2 IPv6 Lower Memory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_LWIP2_IPV6_HIGHER_BANDWIDTH</span></code> v2 IPv6 Higher Bandwidth</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH</span></code> v1.4 Higher Bandwidth</p></li>
+</ul>
+<p>You can change lwIP Variant by passing a custom macro using project
+<a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
+<p>For example, to switch to lwIP v1.4</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">...</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sdk-version">
+<h3><a class="toc-backref" href="#id16">SDK Version</a><a class="headerlink" href="#sdk-version" title="Permalink to this headline">¶</a></h3>
+<p>Available versions (macros):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3</span></code> NonOS SDK-pre-3.0 as of Jun 26, 2018</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK221</span></code> NonOS SDK v2.2.1 (legacy) as of Jun 8, 2018</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190313</span></code> NonOS SDK v2.2.x branch as of Mar 13, 2019</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190703</span></code> NonOS SDK v2.2.x branch as of Jul 03, 2019 <strong>(default)</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191024</span></code> NonOS SDK v2.2.x branch as of Oct 24, 2019</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191105</span></code> NonOS SDK v2.2.x branch as of to Nov 05, 2019</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191122</span></code> NonOS SDK v2.2.x branch as of to Nov 22, 2019</p></li>
+</ul>
+<p>You can change SDK version by passing a custom macro using project
+<a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
+<p>For example, to switch to SDK-pre-3.0:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">...</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ssl-support">
+<h3><a class="toc-backref" href="#id17">SSL Support</a><a class="headerlink" href="#ssl-support" title="Permalink to this headline">¶</a></h3>
+<p>By default, all SSL ciphers (most compatible) are supported.</p>
+<p>You can control SSL support passing a custom macro using project
+<a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
+<p>For example, use basic SSL ciphers (lower ROM use):</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">...</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D BEARSSL_SSL_BASIC</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="serial-debug">
+<span id="platform-espressif8266-serial-debug"></span><h3><a class="toc-backref" href="#id18">Serial Debug</a><a class="headerlink" href="#serial-debug" title="Permalink to this headline">¶</a></h3>
+<p>Please use the next <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> to enable Serial debug:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">...</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_PORT=Serial</span>
+
+<span class="c1">; or for Serial1</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_PORT=Serial1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug-level">
+<h3><a class="toc-backref" href="#id19">Debug Level</a><a class="headerlink" href="#debug-level" title="Permalink to this headline">¶</a></h3>
+<p>Please use one of the next <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> to change debug level.
+A <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option could be used only the one time per
+build environment. If you need to specify more flags, please separate them
+with a new line or space.</p>
+<p>Also, please note that you will need to extend <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>
+with <a class="reference internal" href="#platform-espressif8266-serial-debug"><span class="std std-ref">Serial Debug</span></a> macro. For example,
+<code class="docutils literal notranslate"><span class="pre">build_flags</span> <span class="pre">=</span> <span class="pre">-DDEBUG_ESP_PORT=Serial</span> <span class="pre">-DDEBUG_ESP_SSL</span> <span class="pre">...</span></code>.</p>
+<p>Actual information is available in <a class="reference external" href="https://github.com/esp8266/Arduino/blob/master/boards.txt#L286">Arduino for ESP8266 Board Manifest</a>.
+Please scroll to <code class="docutils literal notranslate"><span class="pre">generic.menu.lvl</span></code> section.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+
+<span class="c1">;;;;; Possible options ;;;;;;</span>
+
+<span class="c1">; SSL</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_SSL</span>
+
+<span class="c1">; TLS_MEM</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_TLS_MEM</span>
+
+<span class="c1">; HTTP_CLIENT</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_HTTP_CLIENT</span>
+
+<span class="c1">; HTTP_SERVER</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_HTTP_SERVER</span>
+
+<span class="c1">; SSL+TLS_MEM</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_SSL</span>
+  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
+
+<span class="c1">; SSL+HTTP_CLIENT</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_SSL</span>
+  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+
+<span class="c1">; SSL+HTTP_SERVER</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_SSL</span>
+  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+
+<span class="c1">; TLS_MEM+HTTP_CLIENT</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
+  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+
+<span class="c1">; TLS_MEM+HTTP_SERVER</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
+  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+
+<span class="c1">; HTTP_CLIENT+HTTP_SERVER</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+
+<span class="c1">; SSL+TLS_MEM+HTTP_CLIENT</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_SSL</span>
+  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
+  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+
+<span class="c1">; SSL+TLS_MEM+HTTP_SERVER</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_SSL</span>
+  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
+  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+
+<span class="c1">; SSL+HTTP_CLIENT+HTTP_SERVER</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_SSL</span>
+  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+
+<span class="c1">; TLS_MEM+HTTP_CLIENT+HTTP_SERVER</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
+  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+
+<span class="c1">; SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_SSL</span>
+  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
+  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+
+<span class="c1">; CORE</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_CORE</span>
+
+<span class="c1">; WIFI</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_WIFI</span>
+
+<span class="c1">; HTTP_UPDATE</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_HTTP_UPDATE</span>
+
+<span class="c1">; UPDATER</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_UPDATER</span>
+
+<span class="c1">; OTA</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_OTA</span>
+
+<span class="c1">; OOM</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_OOM</span>
+  <span class="na">-include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span>
+
+<span class="c1">; CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_CORE</span>
+  <span class="na">-DDEBUG_ESP_WIFI</span>
+  <span class="na">-DDEBUG_ESP_HTTP_UPDATE</span>
+  <span class="na">-DDEBUG_ESP_UPDATER</span>
+  <span class="na">-DDEBUG_ESP_OTA</span>
+  <span class="na">-DDEBUG_ESP_OOM -include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span>
+
+<span class="c1">; SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER+CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM</span>
+<span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">-DDEBUG_ESP_SSL</span>
+  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
+  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+  <span class="na">-DDEBUG_ESP_CORE</span>
+  <span class="na">-DDEBUG_ESP_WIFI</span>
+  <span class="na">-DDEBUG_ESP_HTTP_UPDATE</span>
+  <span class="na">-DDEBUG_ESP_UPDATER</span>
+  <span class="na">-DDEBUG_ESP_OTA</span>
+  <span class="na">-DDEBUG_ESP_OOM -include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span>
+
+<span class="c1">; NoAssert-NDEBUG</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DNDEBUG</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vtables">
+<h3><a class="toc-backref" href="#id20">VTables</a><a class="headerlink" href="#vtables" title="Permalink to this headline">¶</a></h3>
+<p>Please use one of the next <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">...</span>
+
+<span class="c1">; Flash (default)</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DVTABLES_IN_FLASH</span>
+
+<span class="c1">; Heap</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DVTABLES_IN_DRAM</span>
+
+<span class="c1">; IRAM</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DVTABLES_IN_IRAM</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exceptions">
+<h3><a class="toc-backref" href="#id21">Exceptions</a><a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h3>
+<p>Exceptions are disabled by default. To enable exceptions, use the <code class="docutils literal notranslate"><span class="pre">PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS</span></code> macro in <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.
+That macro will add the <code class="docutils literal notranslate"><span class="pre">-fexceptions</span></code> flag and will link the final firmware against the <code class="docutils literal notranslate"><span class="pre">stdc++-exc</span></code> library with enabled exceptions. For example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">...</span>
+
+<span class="c1">; Enable exceptions</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="using-filesystem">
+<span id="platform-espressif-uploadfs"></span><h3><a class="toc-backref" href="#id22">Using Filesystem</a><a class="headerlink" href="#using-filesystem" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="selecting-appropriate-filesystem">
+<h4><a class="toc-backref" href="#id23">Selecting appropriate Filesystem</a><a class="headerlink" href="#selecting-appropriate-filesystem" title="Permalink to this headline">¶</a></h4>
+<p>There are two file systems for utilizing the on-board flash on the ESP8266: <code class="docutils literal notranslate"><span class="pre">SPIFFS</span></code>
+and <code class="docutils literal notranslate"><span class="pre">LittleFS</span></code>. They provide a compatible API but have incompatible on-flash
+implementations, so it is important to choose one or the per project as attempting to
+mount a SPIFFS volume under LittleFS may result in a format operation and definitely
+will not preserve any files, and vice-versa.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>SPIFFS is currently deprecated and may be removed in future releases of the core.
+Please consider moving your code to LittleFS.</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">SPIFFS</span></code> file system is used by default in order to keep legacy project
+compatible. To choose <code class="docutils literal notranslate"><span class="pre">LittleFS</span></code> as the file system, it should be explicitly specified
+using <code class="docutils literal notranslate"><span class="pre">board_build.filesystem</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, for example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board_build.filesystem</span> <span class="o">=</span> <span class="s">littlefs</span>
+</pre></div>
+</div>
+<p>More information about pros and cons of each file system can be found in <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#filesystem">the official documentation</a>.</p>
+</div>
+<div class="section" id="uploading-files-to-filesystem">
+<h4><a class="toc-backref" href="#id24">Uploading files to Filesystem</a><a class="headerlink" href="#uploading-files-to-filesystem" title="Permalink to this headline">¶</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please make sure to read <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout">ESP8266 Flash layout</a>
+information first.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Create new project using <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or initialize project using
+<a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (if you have not initialized it yet)</p></li>
+<li><p>Create <code class="docutils literal notranslate"><span class="pre">data</span></code> folder (it should be on the same level as <code class="docutils literal notranslate"><span class="pre">src</span></code> folder)
+and put files here. Also, you can specify own location for
+<a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-data-dir"><span class="std std-ref">data_dir</span></a></p></li>
+<li><p>Run “Upload File System image” task in <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or use <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a>
+and <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command with <code class="docutils literal notranslate"><span class="pre">uploadfs</span></code> target.</p></li>
+</ol>
+<p>To upload file system image using OTA update please specify <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> /
+<code class="docutils literal notranslate"><span class="pre">--upload-port</span></code> as IP address or mDNS host name (ending with the <code class="docutils literal notranslate"><span class="pre">*.local</span></code>).
+For the details please follow to <a class="reference internal" href="#platform-espressif-ota"><span class="std std-ref">Over-the-Air (OTA) update</span></a>.</p>
+<p>By default, will be used default LD Script for the board where is specified
+file system offsets (start, end, page, block). You can override it using
+<a class="reference internal" href="#platform-espressif-customflash"><span class="std std-ref">Flash Size</span></a>.</p>
+<p>Active discussion is located in <a class="reference external" href="https://github.com/platformio/platformio-core/issues/382">issue #382</a>.</p>
+</div>
+<div class="section" id="overriding-filesystem-image-name">
+<h4><a class="toc-backref" href="#id25">Overriding Filesystem image name</a><a class="headerlink" href="#overriding-filesystem-image-name" title="Permalink to this headline">¶</a></h4>
+<p>By default, the image file name is set according to the used file system: <code class="docutils literal notranslate"><span class="pre">spiffs.bin</span></code>
+or <code class="docutils literal notranslate"><span class="pre">littlefs.bin</span></code>. You can change the file name using <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/advanced_scripting.html#before-pre-and-after-post-actions">a PRE extra script</a>, for example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:d1]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">d1</span>
+<span class="na">board_build.filesystem</span> <span class="o">=</span> <span class="s">littlefs</span>
+<span class="na">extra_scripts</span> <span class="o">=</span>
+    <span class="na">pre:extra_script.py</span>
+</pre></div>
+</div>
+<p>Where a special variable <code class="docutils literal notranslate"><span class="pre">ESP8266_FS_IMAGE_NAME</span></code> can be overridden:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">ESP8266_FS_IMAGE_NAME</span><span class="o">=</span><span class="s2">&quot;custom_image_name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="over-the-air-ota-update">
+<span id="platform-espressif-ota"></span><h3><a class="toc-backref" href="#id26">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Permalink to this headline">¶</a></h3>
+<p>Firstly, please read <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html">What is OTA? How to use it?</a></p>
+<p>There are 2 options:</p>
+<ul class="simple">
+<li><p>Directly specify <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-upload-port"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--upload-port</span></code></a> in command line</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Specify <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
+</ul>
+<p>You also need to set <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> to <code class="docutils literal notranslate"><span class="pre">espota</span></code>.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">espota</span>
+<span class="na">upload_port</span> <span class="o">=</span> <span class="s">IP_ADDRESS_HERE or mDNS_NAME.local</span>
+</pre></div>
+</div>
+<p>For example,</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">upload</span> <span class="pre">--upload-port</span> <span class="pre">192.168.0.255</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">upload</span> <span class="pre">--upload-port</span> <span class="pre">myesp8266.local</span></code></p></li>
+</ul>
+<div class="section" id="authentication-and-upload-options">
+<h4><a class="toc-backref" href="#id27">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Permalink to this headline">¶</a></h4>
+<p>You can pass additional options/flags to OTA uploader using
+<code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">espota</span>
+<span class="c1">; each flag in a new line</span>
+<span class="na">upload_flags</span> <span class="o">=</span>
+  <span class="na">--port</span><span class="o">=</span><span class="s">8266</span>
+</pre></div>
+</div>
+<p>Available flags</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--port=ESP_PORT</span></code> ESP8266 OTA Port. Default 8266</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--auth=AUTH</span></code> Set authentication password</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--spiffs</span></code> Use this option to transmit a SPIFFS image and do not flash
+the module</p></li>
+</ul>
+<p>For the full list with available options please run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~/.platformio/packages/framework-arduinoespressif8266/tools/espota.py --help
+
+Usage: espota.py <span class="o">[</span>options<span class="o">]</span>
+
+Transmit image over the air to the esp8266 module with OTA support.
+
+Options:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+
+  Destination:
+    -i ESP_IP, --ip<span class="o">=</span>ESP_IP
+                        ESP8266 IP Address.
+    -I HOST_IP, --host_ip<span class="o">=</span>HOST_IP
+                        Host IP Address.
+    -p ESP_PORT, --port<span class="o">=</span>ESP_PORT
+                        ESP8266 ota Port. Default <span class="m">8266</span>
+    -P HOST_PORT, --host_port<span class="o">=</span>HOST_PORT
+                        Host server ota Port. Default random <span class="m">10000</span>-60000
+
+  Authentication:
+    -a AUTH, --auth<span class="o">=</span>AUTH
+                        Set authentication password.
+
+  Image:
+    -f FILE, --file<span class="o">=</span>FILE
+                        Image file.
+    -s, --spiffs        Use this option to transmit a SPIFFS image and <span class="k">do</span> not
+                        flash the module.
+
+  Output:
+    -d, --debug         Show debug output. And override loglevel with debug.
+    -r, --progress      Show progress output. Does not work <span class="k">for</span> ArduinoIDE
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="demo">
+<h3><a class="toc-backref" href="#id28">Demo</a><a class="headerlink" href="#demo" title="Permalink to this headline">¶</a></h3>
+<a class="reference external image-reference" href="https://www.youtube.com/watch?v=lXchL3hpDO4"><img alt="../_images/platformio-demo-ota-esp8266.jpg" src="../_images/platformio-demo-ota-esp8266.jpg" /></a>
+</div>
+<div class="section" id="using-arduino-framework-with-staging-version">
+<h3><a class="toc-backref" href="#id29">Using Arduino Framework with Staging version</a><a class="headerlink" href="#using-arduino-framework-with-staging-version" title="Permalink to this headline">¶</a></h3>
+<p>PlatformIO will install the latest Arduino Core for ESP8266 from
+<a class="reference external" href="https://github.com/esp8266/Arduino">https://github.com/esp8266/Arduino</a>. The <a class="reference external" href="https://git-scm.com">Git</a>
+should be installed in a system. To update Arduino Core to the latest revision,
+please open <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> and navigate to <code class="docutils literal notranslate"><span class="pre">PlatformIO</span> <span class="pre">Home</span> <span class="pre">&gt;</span> <span class="pre">Platforms</span> <span class="pre">&gt;</span> <span class="pre">Updates</span></code>.</p>
+<ol class="arabic">
+<li><p>Please install <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a></p></li>
+<li><p>Initialize a new project, open <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> and specify the link to the
+framework repository in <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a> section.
+For example,</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nodemcuv2]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">platform_packages</span> <span class="o">=</span>
+    <span class="na">platformio/framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git</span>
+</pre></div>
+</div>
+</li>
+<li><p>Try to build the project</p></li>
+<li><p>If you see build errors, then try to build this project using the same
+<code class="docutils literal notranslate"><span class="pre">stage</span></code> with Arduino IDE</p></li>
+<li><p>If it works with Arduino IDE but doesn’t work with PlatformIO, then please
+<a class="reference external" href="https://github.com/platformio/platform-espressif8266/issuess">file a new issue</a>
+with attached information:</p>
+<ul class="simple">
+<li><p>test project/files</p></li>
+<li><p>detailed log of build process from Arduino IDE (please copy it from
+console to <a class="reference external" href="https://hastebin.com">https://hastebin.com</a>)</p></li>
+<li><p>detailed log of build process from PlatformIO Build System (please copy
+it from console to <a class="reference external" href="https://hastebin.com">https://hastebin.com</a>)</p></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id4">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Espressif 8266 development platform repository</a>:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio.org&amp;utm_medium=docs">arduino-webserver</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-asyncudp?utm_source=platformio.org&amp;utm_medium=docs">arduino-asyncudp</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-blink?utm_source=platformio.org&amp;utm_medium=docs">arduino-blink</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/simba-blink?utm_source=platformio.org&amp;utm_medium=docs">simba-blink</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio.org&amp;utm_medium=docs">esp8266-rtos-sdk-blink</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio.org&amp;utm_medium=docs">esp8266-nonos-sdk-blink</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio.org&amp;utm_medium=docs">arduino-wifiscan</a></p></li>
+</ul>
+</div>
+<div class="section" id="stable-and-upstream-versions">
+<h2><a class="toc-backref" href="#id5">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this headline">¶</a></h2>
+<p>You can switch between <a class="reference external" href="https://github.com/platformio/platform-espressif8266/releases">stable releases</a>
+of Espressif 8266 development platform and the latest upstream version using
+<a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
+<div class="section" id="stable">
+<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
+<span class="k">[env:latest_stable]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+
+<span class="c1">; Custom stable version</span>
+<span class="k">[env:custom_stable]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266@x.y.z</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="upstream">
+<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-espressif8266.git</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="packages">
+<h2><a class="toc-backref" href="#id6">Packages</a><a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/esp8266/Arduino.git?utm_source=platformio.org&amp;utm_medium=docs">framework-arduinoespressif8266</a></p></td>
+<td><p>Arduino Wiring-based Framework for Espressif ESP8266 microcontrollers</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/espressif/ESP8266_NONOS_SDK.git?utm_source=platformio.org&amp;utm_medium=docs">framework-esp8266-nonos-sdk</a></p></td>
+<td><p>Espressif ESP8266 Non-OS SDK</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/espressif/ESP8266_RTOS_SDK.git?utm_source=platformio.org&amp;utm_medium=docs">framework-esp8266-rtos-sdk</a></p></td>
+<td><p>Espressif ESP8266 SDK based on FreeRTOS</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/eerimoq/simba.git?utm_source=platformio.org&amp;utm_medium=docs">framework-simba</a></p></td>
+<td><p>Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/igrr/esptool-ck.git?utm_source=platformio.org&amp;utm_medium=docs">tool-esptool</a></p></td>
+<td><p>Espressif ESP8266 build/flash helper tool</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/espressif/esptool.git?utm_source=platformio.org&amp;utm_medium=docs">tool-esptoolpy</a></p></td>
+<td><p>Espressif ESP8266 and ESP32 serial bootloader utility</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/earlephilhower/mklittlefs.git?utm_source=platformio.org&amp;utm_medium=docs">tool-mklittlefs</a></p></td>
+<td><p>Utility for creating littlefs images for upload on the ESP8266</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/igrr/mkspiffs.git?utm_source=platformio.org&amp;utm_medium=docs">tool-mkspiffs</a></p></td>
+<td><p>Tool to build and unpack SPIFFS images</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/jcmvbkbc/gcc-xtensa.git?utm_source=platformio.org&amp;utm_medium=docs">toolchain-xtensa</a></p></td>
+<td><p>GCC Toolchain for Xtensa processor</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Linux Users</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Install “udev” rules <a class="reference internal" href="../faq.html#faq-udev-rules"><span class="std std-ref">99-platformio-udev.rules</span></a></p></li>
+<li><p>Raspberry Pi users, please read this article
+<a class="reference external" href="https://hallard.me/enable-serial-port-on-raspberry-pi/">Enable serial port on Raspberry Pi</a>.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Windows Users:</strong></p>
+<blockquote>
+<div><p>Please check that you have a correctly installed USB driver from board
+manufacturer</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="frameworks">
+<h2><a class="toc-backref" href="#id7">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
+<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/esp8266-nonos-sdk.html#framework-esp8266-nonos-sdk"><span class="std std-ref">ESP8266 Non-OS SDK</span></a></p></td>
+<td><p>The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/esp8266-rtos-sdk.html#framework-esp8266-rtos-sdk"><span class="std std-ref">ESP8266 RTOS SDK</span></a></p></td>
+<td><p>ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/simba.html#framework-simba"><span class="std std-ref">Simba</span></a></p></td>
+<td><p>Simba is an RTOS and build framework with aims to make embedded programming easy and portable</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="boards">
+<h2><a class="toc-backref" href="#id8">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
+<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by
+horizontally.</p></li>
+</ul>
+</div>
+<div class="section" id="d-systems">
+<h3>4D Systems<a class="headerlink" href="#d-systems" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/gen4iod.html#board-espressif8266-gen4iod"><span class="std std-ref">4D Systems gen4 IoD Range</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="adafruit">
+<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/huzzah.html#board-espressif8266-huzzah"><span class="std std-ref">Adafruit HUZZAH ESP8266</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="amperka">
+<h3>Amperka<a class="headerlink" href="#amperka" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/wifi_slot.html#board-espressif8266-wifi-slot"><span class="std std-ref">WiFi Slot</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="digistump">
+<h3>DigiStump<a class="headerlink" href="#digistump" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/oak.html#board-espressif8266-oak"><span class="std std-ref">DigiStump Oak</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="doit">
+<h3>Doit<a class="headerlink" href="#doit" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/espmxdevkit.html#board-espressif8266-espmxdevkit"><span class="std std-ref">ESP-Mx DevKit (ESP8285)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/espduino.html#board-espressif8266-espduino"><span class="std std-ref">ESPDuino (ESP-13 Module)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="dycodex">
+<h3>DycodeX<a class="headerlink" href="#dycodex" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/espectro.html#board-espressif8266-espectro"><span class="std std-ref">ESPectro Core</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="espert">
+<h3>ESPert<a class="headerlink" href="#espert" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/espresso_lite_v1.html#board-espressif8266-espresso-lite-v1"><span class="std std-ref">ESPresso Lite 1.0</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/espresso_lite_v2.html#board-espressif8266-espresso-lite-v2"><span class="std std-ref">ESPresso Lite 2.0</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="espino">
+<h3>ESPino<a class="headerlink" href="#espino" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/espino.html#board-espressif8266-espino"><span class="std std-ref">ESPino</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="espressif">
+<h3>Espressif<a class="headerlink" href="#espressif" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/esp_wroom_02.html#board-espressif8266-esp-wroom-02"><span class="std std-ref">ESP-WROOM-02</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/esp12e.html#board-espressif8266-esp12e"><span class="std std-ref">Espressif ESP8266 ESP-12E</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/esp01_1m.html#board-espressif8266-esp01-1m"><span class="std std-ref">Espressif Generic ESP8266 ESP-01 1M</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/esp01.html#board-espressif8266-esp01"><span class="std std-ref">Espressif Generic ESP8266 ESP-01 512k</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/esp07.html#board-espressif8266-esp07"><span class="std std-ref">Espressif Generic ESP8266 ESP-07 1MB</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/esp07s.html#board-espressif8266-esp07s"><span class="std std-ref">Espressif Generic ESP8266 ESP-07S</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/esp8285.html#board-espressif8266-esp8285"><span class="std std-ref">Generic ESP8285 Module</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/phoenix_v1.html#board-espressif8266-phoenix-v1"><span class="std std-ref">Phoenix 1.0</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/phoenix_v2.html#board-espressif8266-phoenix-v2"><span class="std std-ref">Phoenix 2.0</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/wifinfo.html#board-espressif8266-wifinfo"><span class="std std-ref">WifInfo</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="heltec">
+<h3>Heltec<a class="headerlink" href="#heltec" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/heltec_wifi_kit_8.html#board-espressif8266-heltec-wifi-kit-8"><span class="std std-ref">Heltec Wifi kit 8</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="itead">
+<h3>ITEAD<a class="headerlink" href="#itead" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/sonoff_basic.html#board-espressif8266-sonoff-basic"><span class="std std-ref">Sonoff Basic</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/sonoff_s20.html#board-espressif8266-sonoff-s20"><span class="std std-ref">Sonoff S20</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/sonoff_sv.html#board-espressif8266-sonoff-sv"><span class="std std-ref">Sonoff SV</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/sonoff_th.html#board-espressif8266-sonoff-th"><span class="std std-ref">Sonoff TH</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="invent-one">
+<h3>Invent One<a class="headerlink" href="#invent-one" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/inventone.html#board-espressif8266-inventone"><span class="std std-ref">Invent One</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nodemcu">
+<h3>NodeMCU<a class="headerlink" href="#nodemcu" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/nodemcu.html#board-espressif8266-nodemcu"><span class="std std-ref">NodeMCU 0.9 (ESP-12 Module)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/nodemcuv2.html#board-espressif8266-nodemcuv2"><span class="std std-ref">NodeMCU 1.0 (ESP-12E Module)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="olimex">
+<h3>Olimex<a class="headerlink" href="#olimex" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/modwifi.html#board-espressif8266-modwifi"><span class="std std-ref">Olimex MOD-WIFI-ESP8266(-DEV)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="schirmilabs">
+<h3>Schirmilabs<a class="headerlink" href="#schirmilabs" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/eduinowifi.html#board-espressif8266-eduinowifi"><span class="std std-ref">Schirmilabs Eduino WiFi</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="seeedstudio">
+<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/wio_link.html#board-espressif8266-wio-link"><span class="std std-ref">Wio Link</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/wio_node.html#board-espressif8266-wio-node"><span class="std std-ref">Wio Node</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sparkfun">
+<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/sparkfunBlynk.html#board-espressif8266-sparkfunblynk"><span class="std std-ref">SparkFun Blynk Board</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/thing.html#board-espressif8266-thing"><span class="std std-ref">SparkFun ESP8266 Thing</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/thingdev.html#board-espressif8266-thingdev"><span class="std std-ref">SparkFun ESP8266 Thing Dev</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sweetpea">
+<h3>SweetPea<a class="headerlink" href="#sweetpea" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/esp210.html#board-espressif8266-esp210"><span class="std std-ref">SweetPea ESP-210</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="thaieasyelec">
+<h3>ThaiEasyElec<a class="headerlink" href="#thaieasyelec" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/espinotee.html#board-espressif8266-espinotee"><span class="std std-ref">ThaiEasyElec ESPino</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="wemos">
+<h3>WEMOS<a class="headerlink" href="#wemos" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/d1.html#board-espressif8266-d1"><span class="std std-ref">WEMOS D1 R1</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/d1_mini.html#board-espressif8266-d1-mini"><span class="std std-ref">WeMos D1 R2 and mini</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/d1_mini_lite.html#board-espressif8266-d1-mini-lite"><span class="std std-ref">WeMos D1 mini Lite</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/d1_mini_pro.html#board-espressif8266-d1-mini-pro"><span class="std std-ref">WeMos D1 mini Pro</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="wifiduino">
+<h3>WifiDuino<a class="headerlink" href="#wifiduino" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/wifiduino.html#board-espressif8266-wifiduino"><span class="std std-ref">WiFiduino</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="xinabox">
+<h3>XinaBox<a class="headerlink" href="#xinabox" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/xinabox_cw01.html#board-espressif8266-xinabox-cw01"><span class="std std-ref">XinaBox CW01</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="freescalekinetis.html" class="btn btn-neutral float-right" title="Freescale Kinetis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="espressif32.html" class="btn btn-neutral float-left" title="Espressif 32" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/platforms/espressif8266.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/platforms/espressif8266.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

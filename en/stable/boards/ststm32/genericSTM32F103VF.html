@@ -1,0 +1,849 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>STM32F103VF (96k RAM. 768k Flash) &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/boards/ststm32/genericSTM32F103VF.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="STM32F103VG (96k RAM. 1024k Flash)" href="genericSTM32F103VG.html" />
+    <link rel="prev" title="STM32F103VE (64k RAM. 512k Flash)" href="genericSTM32F103VE.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Boards</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#aceinna-imu">Aceinna IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#asr-microelectronics-asr650x">ASR Microelectronics ASR650x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-avr">Atmel AVR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-megaavr">Atmel megaAVR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-sam">Atmel SAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#chips-alliance">CHIPS Alliance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-32">Espressif 32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-8266">Espressif 8266</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#freescale-kinetis">Freescale Kinetis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#gigadevice-gd32v">GigaDevice GD32V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#infineon-xmc">Infineon XMC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#intel-arc32">Intel ARC32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#intel-mcs-51-8051">Intel MCS-51 (8051)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#kendryte-k210">Kendryte K210</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#lattice-ice40">Lattice iCE40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#linux-arm">Linux ARM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#maxim-32">Maxim 32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#microchip-pic32">Microchip PIC32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nordic-nrf51">Nordic nRF51</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nordic-nrf52">Nordic nRF52</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nuclei">Nuclei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nxp-i-mx-rt">NXP i.MX RT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nxp-lpc">NXP LPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#risc-v-gap">RISC-V GAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#shakti">Shakti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#sifive">SiFive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#silicon-labs-efm32">Silicon Labs EFM32</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#st-stm32">ST STM32</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="1bitsy_stm32f415rgt.html">1Bitsy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f412zg.html">32F412GDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f723ie.html">32F723EDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="armed_v1.html">3D Printer Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rumba32_f446ve.html">3D Printer control board</a></li>
+<li class="toctree-l3"><a class="reference internal" href="remram_v1.html">3D printer controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="st3dp001_eval.html">3DP001V1 Evaluation board for 3D printer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b96b_argonkey.html">96Boards Argonkey (STEVAL-MKI187V1)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b96b_f446ve.html">96Boards B96B-F446VE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b96b_aerocore2.html">96Boards Neonkey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b96b_neonkey.html">96Boards Neonkey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="adafruit_feather_f405.html">Adafruit Feather STM32F405</a></li>
+<li class="toctree-l3"><a class="reference internal" href="afroflight_f103cb.html">AfroFlight Rev5 (8MHz)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="portenta_h7_m4.html">Arduino Portenta H7 (M4 core)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="portenta_h7_m7.html">Arduino Portenta H7 (M7 core)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="armstrap_eagle1024.html">Armstrap Eagle 1024</a></li>
+<li class="toctree-l3"><a class="reference internal" href="armstrap_eagle2048.html">Armstrap Eagle 2048</a></li>
+<li class="toctree-l3"><a class="reference internal" href="armstrap_eagle512.html">Armstrap Eagle 512</a></li>
+<li class="toctree-l3"><a class="reference internal" href="black_f407ve.html">Black STM32F407VE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="black_f407vg.html">Black STM32F407VG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="black_f407ze.html">Black STM32F407ZE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="black_f407zg.html">Black STM32F407ZG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blackpill_f103c8.html">BlackPill F103C8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blackpill_f103c8_128.html">BlackPill F103C8 (128k)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robotdyn_blackpill_f303cc.html">BlackPill F303CC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blackpill_f401cc.html">BlackPill F401CC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blackpill_f401ce.html">BlackPill F401CE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blue_f407ve_mini.html">Blue STM32F407VE Mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bluepill_f103c6.html">BluePill F103C6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bluepill_f103c8.html">BluePill F103C8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bluepill_f103c8_128k.html">BluePill F103C8 (128k)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cicada_l082cz.html">Cicada-L082CZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coreboard_f401rc.html">Core board F401RCT6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cricket_l082cz.html">Cricket-L082CZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="demo_f030f4.html">Demo F030F4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="econode_l082cz.html">Econode-L082CZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrosmith_daisy.html">Electrosmith Daisy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elmo_f411re.html">Espotel LoRa Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="diymore_f407vgt.html">F407VG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fk407m1.html">FK407M1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fysetc_s6.html">FYSETC S6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gnat_l082cz.html">Gnat-L082CZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="grasshopper_l082cz.html">Grasshopper-L082CZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rhombio_l476dmw1k.html">L476DMW1K</a></li>
+<li class="toctree-l3"><a class="reference internal" href="malyanm200_f070cb.html">M200 V2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="malyanm300_f070cb.html">M300</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mkr_sharky.html">MKR Sharky</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mts_dragonfly_f411re.html">MTS Dragonfly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="malyanm200_f103cb.html">Malyan M200 V1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="maple.html">Maple</a></li>
+<li class="toctree-l3"><a class="reference internal" href="maple_ret6.html">Maple (RET6)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="maple_mini_b20.html">Maple Mini Bootloader 2.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="maple_mini_origin.html">Maple Mini Original</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mbed_connect_odin.html">Mbed Connect Cloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="microduino32_flash.html">Microduino Core STM32 to Flash</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mxchip_az3166.html">Microsoft Azure IoT Development Kit (MXChip AZ3166)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mts_mdot_f405rg.html">MultiTech mDot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mts_mdot_f411re.html">MultiTech mDot F411</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xdot_l151cc.html">MultiTech xDot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="netduino2plus.html">N2+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mote_l152rc.html">NAMote72</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_g071rb.html">Nucleo G071RB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_g431kb.html">Nucleo G431KB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_g431rb.html">Nucleo G431RB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_g474re.html">Nucleo G474RE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimexino.html">OLIMEXINO-STM32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex_f103.html">Olimex STM32-H103</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex_p405.html">Olimex STM32-P405</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_wb55rg_p.html">P-Nucleo WB55RG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pybstick26_duino.html">PYBSTICK26 Duino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pybstick26_pro.html">PYBStick 26 Pro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pybstick26_lite.html">PYBStick Lite 26</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pybstick26_std.html">PYBStick Standard 26</a></li>
+<li class="toctree-l3"><a class="reference internal" href="piconomix_px_her0.html">Piconomix PX-HER0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="prntr_v2.html">PrntrBoard V2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rak811_tracker.html">RAK811 LoRa Tracker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rak811_tracker_32.html">RAK811 LoRa Tracker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rhf76_052.html">RHF76 052</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloud_jam.html">RushUp Cloud-JAM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloud_jam_l4.html">RushUp Cloud-JAM L4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f334c8.html">ST 32F3348DISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f401vc.html">ST 32F401CDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f411ve.html">ST 32F411EDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f413zh.html">ST 32F413HDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f429zi.html">ST 32F429IDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f469ni.html">ST 32F469IDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f746ng.html">ST 32F746GDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f769ni.html">ST 32F769IDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_l053c8.html">ST 32L0538DISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_l100rc.html">ST 32L100DISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_l476vg.html">ST 32L476GDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_l496ag.html">ST 32L496GDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_l475vg_iot01a.html">ST B-L475E-IOT01A Discovery kit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_l072cz_lrwan1.html">ST DISCO-L072CZ-LRWAN1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f072rb.html">ST Discovery F072RB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f030r8.html">ST Nucleo F030R8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f031k6.html">ST Nucleo F031K6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f042k6.html">ST Nucleo F042K6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f070rb.html">ST Nucleo F070RB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f072rb.html">ST Nucleo F072RB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f091rc.html">ST Nucleo F091RC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f103rb.html">ST Nucleo F103RB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f207zg.html">ST Nucleo F207ZG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f302r8.html">ST Nucleo F302R8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f303k8.html">ST Nucleo F303K8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f303re.html">ST Nucleo F303RE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f303ze.html">ST Nucleo F303ZE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f334r8.html">ST Nucleo F334R8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f401re.html">ST Nucleo F401RE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f410rb.html">ST Nucleo F410RB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f411re.html">ST Nucleo F411RE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f412zg.html">ST Nucleo F412ZG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f413zh.html">ST Nucleo F413ZH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f429zi.html">ST Nucleo F429ZI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f439zi.html">ST Nucleo F439ZI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f446re.html">ST Nucleo F446RE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f446ze.html">ST Nucleo F446ZE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f722ze.html">ST Nucleo F722ZE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f746zg.html">ST Nucleo F746ZG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f756zg.html">ST Nucleo F756ZG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_f767zi.html">ST Nucleo F767ZI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_h723zg.html">ST Nucleo H723ZG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_h743zi.html">ST Nucleo H743ZI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_h745zi_q.html">ST Nucleo H745ZI-Q</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l011k4.html">ST Nucleo L011K4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l031k6.html">ST Nucleo L031K6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l053r8.html">ST Nucleo L053R8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l073rz.html">ST Nucleo L073RZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l152re.html">ST Nucleo L152RE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l412kb.html">ST Nucleo L412KB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l432kc.html">ST Nucleo L432KC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l433rc_p.html">ST Nucleo L433RC-P</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l452re.html">ST Nucleo L452RE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l476rg.html">ST Nucleo L476RG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l486rg.html">ST Nucleo L486RG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l496zg.html">ST Nucleo L496ZG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l496zg_p.html">ST Nucleo L496ZG-P</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l4r5zi.html">ST Nucleo L4R5ZI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f030r8.html">ST STM32F0308DISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f051r8.html">ST STM32F0DISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f303vc.html">ST STM32F3DISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f407vg.html">ST STM32F4DISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_g031j6.html">ST STM32G0316-DISCO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eval_l073z.html">ST STM32L073Z-EVAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_l152rb.html">ST STM32LDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f100rb.html">ST STM32VLDISCOVERY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="silica_sensor_node.html">ST Sensor Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="steval_fcu001v1.html">STEVAL-FCU001V1 Flight controller unit evaluation board</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex_e407.html">STM32-E407</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex_h407.html">STM32-H407</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eval_f107vc.html">STM3210C-EVAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eval_f373vc.html">STM32373C-EVAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eval_f072vb.html">STM32F072-EVAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103C4.html">STM32F103C4 (6k RAM. 16k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103C6.html">STM32F103C6 (10k RAM. 32k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103C8.html">STM32F103C8 (20k RAM. 64k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103CB.html">STM32F103CB (20k RAM. 128k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103R4.html">STM32F103R4 (6k RAM. 16k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103R6.html">STM32F103R6 (10k RAM. 32k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103R8.html">STM32F103R8 (20k RAM. 64 Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103RB.html">STM32F103RB (20k RAM. 128k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103RC.html">STM32F103RC (48k RAM. 256k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103RD.html">STM32F103RD (64k RAM. 384k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103RE.html">STM32F103RE (64k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103RF.html">STM32F103RF (96k RAM. 768k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103RG.html">STM32F103RG (96k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103T4.html">STM32F103T4 (6k RAM. 16k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103T6.html">STM32F103T6 (10k RAM. 32k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103T8.html">STM32F103T8 (20k RAM. 64k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103TB.html">STM32F103TB (20k RAM. 128k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103V8.html">STM32F103V8 (20k RAM. 64k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103VB.html">STM32F103VB (20k RAM. 128k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103VC.html">STM32F103VC (48k RAM. 256k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103VD.html">STM32F103VD (64k RAM. 384k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103VE.html">STM32F103VE (64k RAM. 512k Flash)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">STM32F103VF (96k RAM. 768k Flash)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uploading">Uploading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging">Debugging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frameworks">Frameworks</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103VG.html">STM32F103VG (96k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103ZC.html">STM32F103ZC (48k RAM. 256k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103ZD.html">STM32F103ZD (64k RAM. 384k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103ZE.html">STM32F103ZE (64k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103ZF.html">STM32F103ZF (96k RAM. 768k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F103ZG.html">STM32F103ZG (96k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F303CB.html">STM32F303CB (32k RAM. 128k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F373RC.html">STM32F373RC (32k RAM. 256k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F401CB.html">STM32F401CB (64k RAM. 128k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F401CC.html">STM32F401CC (64k RAM. 256k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F401CD.html">STM32F401CD (96k RAM. 384k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F401CE.html">STM32F401CE (96k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F401RB.html">STM32F401RB (64k RAM. 128k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F401RC.html">STM32F401RC (64k RAM. 256k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F401RD.html">STM32F401RD (96k RAM. 384k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F401RE.html">STM32F401RE (96k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F405RG.html">STM32F405RG (128k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F407IGT6.html">STM32F407IG (192k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F407VET6.html">STM32F407VE (192k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F407VGT6.html">STM32F407VG (128k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F410C8.html">STM32F410C8 (32k RAM. 64k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F410CB.html">STM32F410CB (32k RAM. 128k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F410R8.html">STM32F410R8 (32k RAM. 64k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F410RB.html">STM32F410RB (32k RAM. 128k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F411CC.html">STM32F411CC (128k RAM. 256k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F411CE.html">STM32F411CE (128k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F411RC.html">STM32F411RC (128k RAM. 256k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F411RE.html">STM32F411RE (128k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F412CE.html">STM32F412CE (256k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F412CG.html">STM32F412CG (256k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F412RE.html">STM32F412RE (256k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F412RG.html">STM32F412RG (256k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F413CG.html">STM32F413CG (320k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F413CH.html">STM32F413CH (320k RAM. 1536k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F413RG.html">STM32F413RG (320k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F413RH.html">STM32F413RH (320k RAM. 1536k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F415RG.html">STM32F415RG (128k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F417VE.html">STM32F417VE (128k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F417VG.html">STM32F417VG (128k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F423CH.html">STM32F423CH (320k RAM. 1536k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F423RH.html">STM32F423RH (320k RAM. 1536k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F446RC.html">STM32F446RC (128k RAM. 256k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F446RE.html">STM32F446RE (128k RAM. 512k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stm32f4stamp.html">STM32F4Stamp F405</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_f750n8.html">STM32F7508-DK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disco_h747xi.html">STM32H747I-DISCO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="seeedArchMax.html">Seeed Arch Max</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wio_3g.html">Seeed Wio 3G</a></li>
+<li class="toctree-l3"><a class="reference internal" href="steval_mksboxv1.html">SensorTile.box</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sparky_v1.html">Sparky V1 F303</a></li>
+<li class="toctree-l3"><a class="reference internal" href="thunder_pack.html">ThunderPack v1.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="thunder_pack_f411.html">ThunderPack v1.1+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hy_tinystm103tb.html">Tiny STM103T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vake_v1.html">VAkE v1.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vccgnd_f103zet6.html">VCCGND F103ZET6 Mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="waveshare_open103z.html">Waveshare Open103Z</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blackpill_f411ce.html">WeAct BlackPill V2.0 (BlackPill F411CE)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wraith32_v1.html">Wraith V1 ESC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sakuraio_evb_01.html">sakura.io Evaluation Board</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ublox_c030_n211.html">u-blox C030-N211 IoT Starter Kit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ublox_c030_r410m.html">u-blox C030-R410M IoT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ublox_c030_u201.html">u-blox C030-U201 IoT Starter Kit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ublox_evk_odin_w2.html">u-blox EVK-ODIN-W2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mtb_ublox_odin_w2.html">u-blox ODIN-W2</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#st-stm8">ST STM8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#teensy">Teensy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#ti-msp430">TI MSP430</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#ti-tiva">TI TIVA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#wiznet-w7500">WIZNet W7500</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Boards</a> &raquo;</li>
+        
+      <li>STM32F103VF (96k RAM. 768k Flash)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/boards/ststm32/genericSTM32F103VF.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="stm32f103vf-96k-ram-768k-flash">
+<span id="board-ststm32-genericstm32f103vf"></span><h1><a class="toc-backref" href="#id1">STM32F103VF (96k RAM. 768k Flash)</a><a class="headerlink" href="#stm32f103vf-96k-ram-768k-flash" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#stm32f103vf-96k-ram-768k-flash" id="id1">STM32F103VF (96k RAM. 768k Flash)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#hardware" id="id2">Hardware</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id3">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#uploading" id="id4">Uploading</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id5">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#frameworks" id="id6">Frameworks</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="hardware">
+<h2><a class="toc-backref" href="#id2">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<p>Platform <a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a>: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Microcontroller</strong></p></td>
+<td><p>STM32F103VF</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Frequency</strong></p></td>
+<td><p>72MHz</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Flash</strong></p></td>
+<td><p>768KB</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>RAM</strong></p></td>
+<td><p>96KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vendor</strong></p></td>
+<td><p><a class="reference external" href="https://www.st.com/en/microcontrollers-microprocessors/stm32f103vf.html?utm_source=platformio.org&amp;utm_medium=docs">Generic</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Please use <code class="docutils literal notranslate"><span class="pre">genericSTM32F103VF</span></code> ID for <a class="reference internal" href="../../projectconf/section_env_platform.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:genericSTM32F103VF]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">genericSTM32F103VF</span>
+</pre></div>
+</div>
+<p>You can override default STM32F103VF (96k RAM. 768k Flash) settings per build environment using
+<code class="docutils literal notranslate"><span class="pre">board_***</span></code> option, where <code class="docutils literal notranslate"><span class="pre">***</span></code> is a JSON object path from
+board manifest <a class="reference external" href="https://github.com/platformio/platform-ststm32/blob/master/boards/genericSTM32F103VF.json">genericSTM32F103VF.json</a>. For example,
+<code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code>, <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code>, etc.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:genericSTM32F103VF]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">genericSTM32F103VF</span>
+
+<span class="c1">; change microcontroller</span>
+<span class="na">board_build.mcu</span> <span class="o">=</span> <span class="s">stm32f103vf</span>
+
+<span class="c1">; change MCU frequency</span>
+<span class="na">board_build.f_cpu</span> <span class="o">=</span> <span class="s">72000000L</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="uploading">
+<h2><a class="toc-backref" href="#id4">Uploading</a><a class="headerlink" href="#uploading" title="Permalink to this headline">¶</a></h2>
+<p>STM32F103VF (96k RAM. 768k Flash) supports the next uploading protocols:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">blackmagic</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dfu</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jlink</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">serial</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stlink</span></code></p></li>
+</ul>
+<p>Default protocol is <code class="docutils literal notranslate"><span class="pre">serial</span></code></p>
+<p>You can change upload protocol using <a class="reference internal" href="../../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> option:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:genericSTM32F103VF]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">genericSTM32F103VF</span>
+
+<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">serial</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debugging">
+<h2><a class="toc-backref" href="#id5">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You will need to install debug tool drivers depending on your system.
+Please click on compatible debug tool below for the further
+instructions and configuration information.</p>
+</div>
+<p>You can switch between debugging <a class="reference internal" href="../../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
+<a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<p>STM32F103VF (96k RAM. 768k Flash) does not have on-board debug probe and <strong>IS NOT READY</strong> for debugging. You will need to use/buy one of external probe listed below.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Compatible Tools</p></th>
+<th class="head"><p>On-board</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/blackmagic.html#debugging-tool-blackmagic"><span class="std std-ref">Black Magic Probe</span></a></p></td>
+<td></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../plus/debug-tools/jlink.html#debugging-tool-jlink"><span class="std std-ref">J-LINK</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/stlink.html#debugging-tool-stlink"><span class="std std-ref">ST-LINK</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="frameworks">
+<h2><a class="toc-backref" href="#id6">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
+<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/cmsis.html#framework-cmsis"><span class="std std-ref">CMSIS</span></a></p></td>
+<td><p>The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a></p></td>
+<td><p>STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/libopencm3.html#framework-libopencm3"><span class="std std-ref">libopencm3</span></a></p></td>
+<td><p>The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="genericSTM32F103VG.html" class="btn btn-neutral float-right" title="STM32F103VG (96k RAM. 1024k Flash)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="genericSTM32F103VE.html" class="btn btn-neutral float-left" title="STM32F103VE (64k RAM. 512k Flash)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/boards/ststm32/genericSTM32F103VF.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/boards/ststm32/genericSTM32F103VF.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

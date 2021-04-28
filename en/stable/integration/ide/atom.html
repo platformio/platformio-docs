@@ -1,0 +1,939 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>PlatformIO IDE for Atom &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/integration/ide/atom.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="CLion" href="clion.html" />
+    <link rel="prev" title="Eclipse Che" href="eclipseche.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Cloud &amp; Desktop IDE</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#native-extensions">Native Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#cloud-ide">Cloud IDE</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#desktop-ide">Desktop IDE</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Atom</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quick-start">Quick Start</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#menu-item-platformio">Menu item <code class="docutils literal notranslate"><span class="pre">PlatformIO</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#platformio-toolbar">PlatformIO Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#building-uploading-targets">Building / Uploading / Targets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#intelligent-code-completion">Intelligent Code Completion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smart-code-linter">Smart Code Linter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-shell-commands">Install Shell Commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uninstall-atom-with-platformio-ide">Uninstall Atom with PlatformIO IDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#articles-manuals">Articles / Manuals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#changelog">Changelog</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="clion.html">CLion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="codeblocks.html">CodeBlocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eclipse.html">Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emacs.html">Emacs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="netbeans.html">NetBeans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qtcreator.html">Qt Creator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sublimetext.html">Sublime Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vim.html">Vim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualstudio.html">Visual Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vscode.html">VSCode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Cloud &amp; Desktop IDE</a> &raquo;</li>
+        
+      <li>PlatformIO IDE for Atom</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/atom.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="platformio-ide-for-atom">
+<span id="ide-atom"></span><h1>PlatformIO IDE for Atom<a class="headerlink" href="#platformio-ide-for-atom" title="Permalink to this headline">¶</a></h1>
+<p><strong>PlatformIO IDE is the next-generation integrated development environment for IoT.</strong></p>
+<ul>
+<li><p>Cross-platform build system without external dependencies to the OS software:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>800+ <a class="reference internal" href="../../boards/index.html#boards"><span class="std std-ref">Boards</span></a></p></li>
+<li><p>35+ <a class="reference internal" href="../../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a></p></li>
+<li><p>20+ <a class="reference internal" href="../../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a></p></li>
+<li><p><a class="reference internal" href="../../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a></p></li>
+<li><p><a class="reference internal" href="../../plus/unit-testing.html#unit-testing"><span class="std std-ref">Unit Testing</span></a></p></li>
+<li><p>C/C++ Intelligent Code Completion</p></li>
+<li><p>C/C++ Smart Code Linter for rapid professional development</p></li>
+<li><p>Library Manager for the hundreds popular libraries</p></li>
+<li><p>Multi-projects workflow with multiple panes</p></li>
+<li><p>Themes support with dark and light colors</p></li>
+<li><p>Serial Port Monitor</p></li>
+<li><p>Built-in Terminal with <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and CLI tool (<code class="docutils literal notranslate"><span class="pre">pio</span></code>, <code class="docutils literal notranslate"><span class="pre">platformio</span></code>)</p></li>
+<li><p>Built-in <a class="reference internal" href="../../home/index.html#piohome"><span class="std std-ref">PlatformIO Home</span></a>.</p></li>
+</ul>
+<hr class="docutils" />
+<p><a class="reference external" href="https://atom.io">Atom</a> is a text editor that’s modern, approachable,
+yet hackable to the core—a tool you can customize to do anything but also use
+productively without ever touching a config file.</p>
+<a class="reference external image-reference" href="../../_images/ide-atom-platformio.png"><img alt="../../_images/ide-atom-platformio.png" src="../../_images/ide-atom-platformio.png" /></a>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#installation" id="id4">Installation</a></p>
+<ul>
+<li><p><a class="reference internal" href="#i-atom" id="id5">I. Atom</a></p></li>
+<li><p><a class="reference internal" href="#ii-clang-for-intelligent-code-completion" id="id6">II. Clang for Intelligent Code Completion</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#quick-start" id="id7">Quick Start</a></p>
+<ul>
+<li><p><a class="reference internal" href="#launch" id="id8">Launch</a></p></li>
+<li><p><a class="reference internal" href="#setting-up-the-project" id="id9">Setting Up the Project</a></p></li>
+<li><p><a class="reference internal" href="#process-project" id="id10">Process Project</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#menu-item-platformio" id="id11">Menu item <code class="docutils literal notranslate"><span class="pre">PlatformIO</span></code></a></p></li>
+<li><p><a class="reference internal" href="#platformio-toolbar" id="id12">PlatformIO Toolbar</a></p></li>
+<li><p><a class="reference internal" href="#building-uploading-targets" id="id13">Building / Uploading / Targets</a></p></li>
+<li><p><a class="reference internal" href="#intelligent-code-completion" id="id14">Intelligent Code Completion</a></p></li>
+<li><p><a class="reference internal" href="#smart-code-linter" id="id15">Smart Code Linter</a></p></li>
+<li><p><a class="reference internal" href="#install-shell-commands" id="id16">Install Shell Commands</a></p></li>
+<li><p><a class="reference internal" href="#known-issues" id="id17">Known issues</a></p>
+<ul>
+<li><p><a class="reference internal" href="#smart-code-linter-is-disabled-for-arduino-files" id="id18">Smart Code Linter is disabled for Arduino files</a></p>
+<ul>
+<li><p><a class="reference internal" href="#convert-arduino-file-to-c-manually" id="id19">Convert Arduino file to C++ manually</a></p></li>
+<li><p><a class="reference internal" href="#force-arduino-file-as-c" id="id20">Force Arduino file as C++</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#arch-linux-platformio-ide-terminal-issue" id="id21">Arch Linux: PlatformIO IDE Terminal issue</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#frequently-asked-questions" id="id22">Frequently Asked Questions</a></p>
+<ul>
+<li><p><a class="reference internal" href="#keep-build-panel-visible" id="id23">Keep build panel visible</a></p></li>
+<li><p><a class="reference internal" href="#automatically-save-on-build" id="id24">Automatically save on build</a></p></li>
+<li><p><a class="reference internal" href="#jump-to-declaration" id="id25">Jump to Declaration</a></p></li>
+<li><p><a class="reference internal" href="#code-formatting" id="id26">Code Formatting</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#uninstall-atom-with-platformio-ide" id="id27">Uninstall Atom with PlatformIO IDE</a></p>
+<ul>
+<li><p><a class="reference internal" href="#windows" id="id28">Windows</a></p></li>
+<li><p><a class="reference internal" href="#macos" id="id29">macOS</a></p></li>
+<li><p><a class="reference internal" href="#linux" id="id30">Linux</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#articles-manuals" id="id31">Articles / Manuals</a></p></li>
+<li><p><a class="reference internal" href="#changelog" id="id32">Changelog</a></p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2><a class="toc-backref" href="#id4">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that you do not need to install <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> separately
+if you are going to use <a class="reference internal" href="#ide-atom"><span class="std std-ref">PlatformIO IDE for Atom</span></a>. <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> is built into
+PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.</p>
+<p>Also, PlatformIO IDE allows one to install <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> Shell Commands
+(<code class="docutils literal notranslate"><span class="pre">pio</span></code>, <code class="docutils literal notranslate"><span class="pre">platformio</span></code>) globally to your system via
+<code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span> <span class="pre">Install</span> <span class="pre">Shell</span> <span class="pre">Commands</span></code>.</p>
+</div>
+<div class="section" id="i-atom">
+<h3><a class="toc-backref" href="#id5">I. Atom</a><a class="headerlink" href="#i-atom" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple" start="0">
+<li><p><a class="reference external" href="https://atom.io">Download</a> and install GitHub’s official Atom text editor. PlatformIO IDE is built on top of it.</p></li>
+<li><p><strong>Open</strong> Atom Package Manager</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>Mac OS X</em>, <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Atom</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Install</span></code></p></li>
+<li><p><em>Windows</em>, <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Install</span></code></p></li>
+<li><p><em>Linux</em>, <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Edit</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Install</span></code></p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Search</strong> for the official <code class="docutils literal notranslate"><span class="pre">platformio-ide</span></code> <a class="reference external" href="https://atom.io/packages/platformio-ide">package</a></p></li>
+<li><p><strong>Install</strong> PlatformIO IDE.</p></li>
+</ol>
+<img alt="../../_images/ide-atom-pkg-installer.png" src="../../_images/ide-atom-pkg-installer.png" />
+</div>
+<div class="section" id="ii-clang-for-intelligent-code-completion">
+<span id="ide-atom-installation-clang"></span><h3><a class="toc-backref" href="#id6">II. Clang for Intelligent Code Completion</a><a class="headerlink" href="#ii-clang-for-intelligent-code-completion" title="Permalink to this headline">¶</a></h3>
+<p>PlatformIO IDE uses <a class="reference external" href="http://clang.llvm.org">Clang</a> for the Intelligent Code
+Completion. To check that <code class="docutils literal notranslate"><span class="pre">clang</span></code> is available in your system, please
+open Terminal and run <code class="docutils literal notranslate"><span class="pre">clang</span> <span class="pre">--version</span></code>. If <code class="docutils literal notranslate"><span class="pre">clang</span></code> is not installed,
+then <strong>install it and restart Atom</strong>:</p>
+<ul>
+<li><p><strong>Mac OS X</strong>: <a class="reference external" href="https://developer.apple.com/xcode/download/">Install the latest Xcode</a>
+along with the latest Command Line Tools
+(they are installed automatically when you run <code class="docutils literal notranslate"><span class="pre">clang</span></code> in Terminal for the
+first time, or manually by running <code class="docutils literal notranslate"><span class="pre">xcode-select</span> <span class="pre">--install</span></code></p></li>
+<li><p><strong>Windows</strong>: Download <a class="reference external" href="http://llvm.org/releases/download.html">Clang 3.9.1 for Windows</a>.
+Please select “Add LLVM to the system PATH” option on the installation step.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://releases.llvm.org/3.9.1/LLVM-3.9.1-win32.exe">Clang 3.9.1 for Windows (32-bit)</a></p></li>
+<li><p><a class="reference external" href="http://releases.llvm.org/3.9.1/LLVM-3.9.1-win64.exe">Clang 3.9.1 for Windows (64-bit)</a></p></li>
+</ul>
+<img alt="../../_images/clang-installer-add-path.png" src="../../_images/clang-installer-add-path.png" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>PLEASE DO NOT INSTALL CLANG 4.0. TEMPORARILY, WE SUPPORT ONLY CLANG 3.9.</p>
+<p>If you see a <code class="docutils literal notranslate"><span class="pre">Failed</span> <span class="pre">to</span> <span class="pre">find</span> <span class="pre">MSBuild</span> <span class="pre">toolsets</span> <span class="pre">directory</span></code> error in
+the installation console, please ignore it and press any key to close
+this window. PlatformIO IDE uses only the Clang completion engine, which
+should work after that without any problems.</p>
+</div>
+</li>
+<li><p><strong>Linux</strong>: Using package managers: <code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">clang</span></code> or <code class="docutils literal notranslate"><span class="pre">yum</span> <span class="pre">install</span> <span class="pre">clang</span></code>.</p></li>
+<li><p><strong>Other Systems</strong>: Download the latest <a class="reference external" href="http://llvm.org/releases/download.html">Clang for the other systems</a>.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If some libraries are not visible in <a class="reference internal" href="#ide-atom"><span class="std std-ref">PlatformIO IDE for Atom</span></a> and Code Completion or
+Code Linting does not work properly, please perform  <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span>
+<span class="pre">Rebuild</span> <span class="pre">C/C++</span> <span class="pre">Project</span> <span class="pre">Index</span> <span class="pre">(Autocomplete,</span> <span class="pre">Linter)</span></code></p>
+</div>
+</div>
+</div>
+<div class="section" id="quick-start">
+<span id="atom-ide-quickstart"></span><h2><a class="toc-backref" href="#id7">Quick Start</a><a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<p>This tutorial introduces you to the basics of PlatformIO IDE workflow and shows
+you the creation process for a simple “Blink” example. After finishing, you will
+have a general understanding of how to work with projects in the IDE.</p>
+<div class="section" id="launch">
+<h3><a class="toc-backref" href="#id8">Launch</a><a class="headerlink" href="#launch" title="Permalink to this headline">¶</a></h3>
+<p>After installation, launch PlatformIO IDE by opening Atom. Once Atom is
+opened, the PlatformIO IDE auto installer will continue to install dependent packages
+and <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a>. Please be patient and let the installation complete. Once finished,
+PlatformIO IDE will ask you to reload the Atom window to apply
+installed components. Please click on <code class="docutils literal notranslate"><span class="pre">Reload</span> <span class="pre">Now</span></code>. After that, PlatformIO IDE is
+ready for use. Happy coding!</p>
+</div>
+<div class="section" id="setting-up-the-project">
+<h3><a class="toc-backref" href="#id9">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click on the “PlatformIO Home” button on the <a class="reference internal" href="#atom-ide-platformio-toolbar"><span class="std std-ref">PlatformIO Toolbar</span></a></p></li>
+</ol>
+<img alt="../../_images/ide-atom-welcome.png" src="../../_images/ide-atom-welcome.png" />
+<ol class="arabic simple" start="2">
+<li><p>Click on “New Project”, select a board and create a new PlatformIO Project</p></li>
+</ol>
+<img alt="../../_images/ide-atom-new-project.png" src="../../_images/ide-atom-new-project.png" />
+<ol class="arabic simple" start="3">
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> file in the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder and replace its contents with
+the following:</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The code below only works with Arduino-based boards. Please
+visit the <a class="reference external" href="https://github.com/platformio/platformio-examples">PlatformIO Project Examples</a> repository for other pre-configured projects.</p>
+</div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * Blink</span>
+<span class="cm"> *</span>
+<span class="cm"> * Turns on an LED on for one second,</span>
+<span class="cm"> * then off for one second, repeatedly.</span>
+<span class="cm"> */</span>
+<span class="cp">#include</span> <span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// Set LED_BUILTIN if it is not defined by Arduino framework</span>
+<span class="c1">// #define LED_BUILTIN 13</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="c1">// initialize LED digital pin as an output.</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="c1">// turn the LED on (HIGH is the voltage level)</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+
+  <span class="c1">// wait for a second</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+  <span class="c1">// turn the LED off by making the voltage LOW</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+
+   <span class="c1">// wait for a second</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<img alt="../../_images/ide-atom-blink-project.png" src="../../_images/ide-atom-blink-project.png" />
+</div>
+<div class="section" id="process-project">
+<h3><a class="toc-backref" href="#id10">Process Project</a><a class="headerlink" href="#process-project" title="Permalink to this headline">¶</a></h3>
+<p>PlatformIO IDE proposes different ways to process the project (build, clean,
+upload firmware, run other targets) using:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#atom-ide-platformio-toolbar"><span class="std std-ref">PlatformIO Toolbar</span></a></p></li>
+<li><p><a class="reference internal" href="#atom-ide-platformio-menu"><span class="std std-ref">Menu item PlatformIO</span></a></p></li>
+<li><p><a class="reference internal" href="#ide-atom-building-targets"><span class="std std-ref">Building / Uploading / Targets</span></a> and hotkeys</p></li>
+</ul>
+</div></blockquote>
+<img alt="../../_images/ide-atom-process-project.png" src="../../_images/ide-atom-process-project.png" />
+<ol class="arabic simple" start="5">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">Build</span></code> and you should see a green “success” result in the build
+panel:</p></li>
+</ol>
+<img alt="../../_images/ide-atom-build-project.png" src="../../_images/ide-atom-build-project.png" />
+<p>To upload firmware to the board, run <code class="docutils literal notranslate"><span class="pre">Upload</span></code>.</p>
+<ol class="arabic simple" start="6">
+<li><p>What is more, you can run specific target or process project environment
+using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span> <span class="pre">Run</span> <span class="pre">other</span> <span class="pre">target...</span></code>
+or call targets list from the status bar (bottom, left corner):</p></li>
+</ol>
+<a class="reference external image-reference" href="../../_images/ide-atom-quick-start-8.png"><img alt="../../_images/ide-atom-quick-start-8.png" src="../../_images/ide-atom-quick-start-8.png" /></a>
+<p>And select desired target:</p>
+<a class="reference external image-reference" href="../../_images/ide-atom-quick-start-9.png"><img alt="../../_images/ide-atom-quick-start-9.png" src="../../_images/ide-atom-quick-start-9.png" /></a>
+<ol class="arabic simple" start="7">
+<li><p>To launch the built-in terminal interface, choose <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span> <span class="pre">Terminal</span></code> or
+press the corresponding icon in the PlatformIO toolbar:</p></li>
+</ol>
+<a class="reference external image-reference" href="../../_images/ide-atom-quick-start-10.png"><img alt="../../_images/ide-atom-quick-start-10.png" src="../../_images/ide-atom-quick-start-10.png" /></a>
+<p>This provides you fast access to a set of powerful <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> CLI commands:</p>
+<a class="reference external image-reference" href="../../_images/ide-atom-quick-start-11.png"><img alt="../../_images/ide-atom-quick-start-11.png" src="../../_images/ide-atom-quick-start-11.png" /></a>
+<ol class="arabic simple" start="8">
+<li><p>To run the built-in “Serial Monitor”, choose <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span> <span class="pre">Serial</span> <span class="pre">Monitor</span></code>
+or press the corresponding icon in the PlatformIO toolbar:</p></li>
+</ol>
+<a class="reference external image-reference" href="../../_images/ide-atom-quick-start-12.png"><img alt="../../_images/ide-atom-quick-start-12.png" src="../../_images/ide-atom-quick-start-12.png" /></a>
+<p>The monitor has several settings to adjust your connection:</p>
+<a class="reference external image-reference" href="../../_images/ide-atom-quick-start-13.png"><img alt="../../_images/ide-atom-quick-start-13.png" src="../../_images/ide-atom-quick-start-13.png" /></a>
+<p>It also allows you to communicate with your board in an easy way:</p>
+<a class="reference external image-reference" href="../../_images/ide-atom-quick-start-14.png"><img alt="../../_images/ide-atom-quick-start-14.png" src="../../_images/ide-atom-quick-start-14.png" /></a>
+</div>
+</div>
+<div class="section" id="menu-item-platformio">
+<span id="atom-ide-platformio-menu"></span><h2><a class="toc-backref" href="#id11">Menu item <code class="docutils literal notranslate"><span class="pre">PlatformIO</span></code></a><a class="headerlink" href="#menu-item-platformio" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://atom.io/packages/platformio-ide">platformio-ide</a> package adds to Atom
+new menu item named <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span></code> (after <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Help</span></code> item).</p>
+<img alt="../../_images/ide-atom-menu-item.png" src="../../_images/ide-atom-menu-item.png" />
+</div>
+<div class="section" id="platformio-toolbar">
+<span id="atom-ide-platformio-toolbar"></span><h2><a class="toc-backref" href="#id12">PlatformIO Toolbar</a><a class="headerlink" href="#platformio-toolbar" title="Permalink to this headline">¶</a></h2>
+<p>PlatformIO IDE Toolbar contains quick access buttons for the popular commands.
+Each button contains a hint (leave the mouse on it for a moment).</p>
+<img alt="../../_images/ide-atom-toolbar.png" src="../../_images/ide-atom-toolbar.png" />
+<ul class="simple">
+<li><p><a class="reference internal" href="../../home/index.html#piohome"><span class="std std-ref">PlatformIO Home</span></a></p></li>
+<li><p>PlatformIO: Build</p></li>
+<li><p>PlatformIO: Upload</p></li>
+<li><p>PlatformIO: Clean</p></li>
+<li><p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a></p></li>
+<li><p>Run other target (Build environments, <a class="reference internal" href="../../plus/unit-testing.html#unit-testing"><span class="std std-ref">Unit Testing</span></a>)</p></li>
+<li><p>Toggle build panel</p></li>
+<li><p>||</p></li>
+<li><p>Find in Project…</p></li>
+<li><p>PlatformIO Terminal</p></li>
+<li><p>Serial Monitor</p></li>
+<li><p>||</p></li>
+<li><p>Atom Settings</p></li>
+</ul>
+</div>
+<div class="section" id="building-uploading-targets">
+<span id="ide-atom-building-targets"></span><h2><a class="toc-backref" href="#id13">Building / Uploading / Targets</a><a class="headerlink" href="#building-uploading-targets" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cmd-alt-b</span></code> / <code class="docutils literal notranslate"><span class="pre">ctrl-alt-b</span></code> / <code class="docutils literal notranslate"><span class="pre">f9</span></code> builds project without auto-uploading.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmd-alt-u</span></code> / <code class="docutils literal notranslate"><span class="pre">ctrl-alt-u</span></code> builds and uploads (if no errors).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmd-alt-c</span></code> / <code class="docutils literal notranslate"><span class="pre">ctrl-alt-c</span></code> cleans compiled objects.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmd-alt-t</span></code> / <code class="docutils literal notranslate"><span class="pre">ctrl-alt-t</span></code> / <code class="docutils literal notranslate"><span class="pre">f7</span></code> run other targets (Upload using Programmer, Upload SPIFFS image, Update platforms and libraries).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmd-alt-g</span></code> / <code class="docutils literal notranslate"><span class="pre">ctrl-alt-g</span></code> / <code class="docutils literal notranslate"><span class="pre">f4</span></code> cycles through causes of build error.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmd-alt-h</span></code> / <code class="docutils literal notranslate"><span class="pre">ctrl-alt-h</span></code> / <code class="docutils literal notranslate"><span class="pre">shift-f4</span></code> goes to the first build error.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmd-alt-v</span></code> / <code class="docutils literal notranslate"><span class="pre">ctrl-alt-v</span></code> / <code class="docutils literal notranslate"><span class="pre">f8</span></code> toggles the build panel.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">escape</span></code> terminates build / closes the build window.</p></li>
+</ul>
+<p>More options: <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span> <span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Build</span></code>.</p>
+</div>
+<div class="section" id="intelligent-code-completion">
+<h2><a class="toc-backref" href="#id14">Intelligent Code Completion</a><a class="headerlink" href="#intelligent-code-completion" title="Permalink to this headline">¶</a></h2>
+<p>PlatformIO IDE uses <a class="reference external" href="http://clang.llvm.org">clang</a> for the Intelligent Code Completion.
+To install it or check if it is already installed, please follow see the step
+<a class="reference internal" href="#ide-atom-installation-clang"><span class="std std-ref">II. Clang for Intelligent Code Completion</span></a> from Installation guide.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The libraries which are added/installed after the initializing process will
+not be reflected in the code linter. You need <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span>
+<span class="pre">Rebuild</span> <span class="pre">C/C++</span> <span class="pre">Project</span> <span class="pre">Index</span> <span class="pre">(Autocomplete,</span> <span class="pre">Linter)</span></code>.</p>
+</div>
+</div>
+<div class="section" id="smart-code-linter">
+<span id="ide-atom-smart-code-linter"></span><h2><a class="toc-backref" href="#id15">Smart Code Linter</a><a class="headerlink" href="#smart-code-linter" title="Permalink to this headline">¶</a></h2>
+<p>PlatformIO IDE uses PlatformIO’s pre-built GCC toolchains for Smart Code Linter
+and rapid professional development.
+The configuration data are located in <code class="docutils literal notranslate"><span class="pre">.gcc-flags.json</span></code>. This file will be
+automatically created and preconfigured when you initialize project using
+<code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span> <span class="pre">Initialize</span> <span class="pre">new</span> <span class="pre">PlatformIO</span> <span class="pre">Project</span> <span class="pre">or</span> <span class="pre">update</span> <span class="pre">existing...</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If some libraries are not visible in <a class="reference internal" href="#ide-atom"><span class="std std-ref">PlatformIO IDE for Atom</span></a> and Code Completion or
+Code Linting does not work properly, please perform  <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span>
+<span class="pre">Rebuild</span> <span class="pre">C/C++</span> <span class="pre">Project</span> <span class="pre">Index</span> <span class="pre">(Autocomplete,</span> <span class="pre">Linter)</span></code></p>
+</div>
+</div>
+<div class="section" id="install-shell-commands">
+<h2><a class="toc-backref" href="#id16">Install Shell Commands</a><a class="headerlink" href="#install-shell-commands" title="Permalink to this headline">¶</a></h2>
+<p>Please navigate to PlatformIO Core <a class="reference internal" href="../../core/installation.html#piocore-install-shell-commands"><span class="std std-ref">Install Shell Commands</span></a>.</p>
+</div>
+<div class="section" id="known-issues">
+<h2><a class="toc-backref" href="#id17">Known issues</a><a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="smart-code-linter-is-disabled-for-arduino-files">
+<h3><a class="toc-backref" href="#id18">Smart Code Linter is disabled for Arduino files</a><a class="headerlink" href="#smart-code-linter-is-disabled-for-arduino-files" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#ide-atom-smart-code-linter"><span class="std std-ref">Smart Code Linter</span></a> is disabled by default for Arduino files
+(<code class="docutils literal notranslate"><span class="pre">*.ino</span></code> and <code class="docutils literal notranslate"><span class="pre">.pde</span></code>) because they  are not valid C/C++ based
+source files:</p>
+<ol class="arabic simple">
+<li><p>Missing includes such as <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;Arduino.h&gt;</span></code></p></li>
+<li><p>Function declarations are omitted.</p></li>
+</ol>
+<p>There are two solutions:</p>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><p><a class="reference internal" href="#convert-arduino-file-to-c-manually" id="id33">Convert Arduino file to C++ manually</a></p></li>
+<li><p><a class="reference internal" href="#force-arduino-file-as-c" id="id34">Force Arduino file as C++</a></p></li>
+</ul>
+</div>
+<div class="section" id="convert-arduino-file-to-c-manually">
+<span id="ide-atom-knownissues-sclarduino-manually"></span><h4><a class="toc-backref" href="#id33">Convert Arduino file to C++ manually</a><a class="headerlink" href="#convert-arduino-file-to-c-manually" title="Permalink to this headline">¶</a></h4>
+<p>Recommended! See <a class="reference internal" href="../../faq.html#faq-convert-ino-to-cpp"><span class="std std-ref">Convert Arduino file to C++ manually</span></a>.</p>
+</div>
+<div class="section" id="force-arduino-file-as-c">
+<h4><a class="toc-backref" href="#id34">Force Arduino file as C++</a><a class="headerlink" href="#force-arduino-file-as-c" title="Permalink to this headline">¶</a></h4>
+<p>To force Smart Code Linter to use Arduino files as C++ please</p>
+<ol class="arabic simple">
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">.gcc-flags.json</span></code> file from the Initialized/Imported project and add
+<code class="docutils literal notranslate"><span class="pre">-x</span> <span class="pre">c++</span></code> flag at the beginning of the value of <code class="docutils literal notranslate"><span class="pre">gccDefaultCppFlags</span></code> field:</p></li>
+</ol>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;execPath&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;gccDefaultCFlags&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;gccDefaultCppFlags&quot;</span><span class="p">:</span> <span class="s2">&quot;-x c++ -fsyntax-only ...&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;gccErrorLimit&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+  <span class="nt">&quot;gccIncludePaths&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;gccSuppressWarnings&quot;</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Perform all steps from <a class="reference internal" href="#ide-atom-knownissues-sclarduino-manually"><span class="std std-ref">Convert Arduino file to C++ manually</span></a>
+(without renaming to <code class="docutils literal notranslate"><span class="pre">.cpp</span></code>).</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please do not modify other flags here. They will be removed on a next
+“Project Rebuild C/C++ Index” stage.
+Please use <a class="reference internal" href="../../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> for <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> instead.</p>
+</div>
+</div>
+</div>
+<div class="section" id="arch-linux-platformio-ide-terminal-issue">
+<h3><a class="toc-backref" href="#id21">Arch Linux: PlatformIO IDE Terminal issue</a><a class="headerlink" href="#arch-linux-platformio-ide-terminal-issue" title="Permalink to this headline">¶</a></h3>
+<p>Please read this article <a class="reference external" href="https://primalcortex.wordpress.com/2016/08/18/platformio/">Installing PlatformIO on Arch Linux</a>.</p>
+</div>
+</div>
+<div class="section" id="frequently-asked-questions">
+<span id="ide-atom-faq"></span><h2><a class="toc-backref" href="#id22">Frequently Asked Questions</a><a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="keep-build-panel-visible">
+<h3><a class="toc-backref" href="#id23">Keep build panel visible</a><a class="headerlink" href="#keep-build-panel-visible" title="Permalink to this headline">¶</a></h3>
+<p>PlatformIO IDE hides build panel on success by default. Nevertheless, you can
+keep it visible all time. Please follow to
+<code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span> <span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Build</span></code> and set <code class="docutils literal notranslate"><span class="pre">Panel</span> <span class="pre">Visibility</span></code> to
+<code class="docutils literal notranslate"><span class="pre">Keep</span> <span class="pre">Visible</span></code>.</p>
+<p>Key-bindings (toggle panel):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cmd+alt+v</span></code> - Mac OS X</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ctrl+alt+v</span></code> - Windows/Linux</p></li>
+</ul>
+</div>
+<div class="section" id="automatically-save-on-build">
+<h3><a class="toc-backref" href="#id24">Automatically save on build</a><a class="headerlink" href="#automatically-save-on-build" title="Permalink to this headline">¶</a></h3>
+<p>If you want automatically save all edited files when triggering a build, please follow to
+<code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">PlatformIO</span> <span class="pre">&gt;</span> <span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Build</span></code> and check <code class="docutils literal notranslate"><span class="pre">Automatically</span> <span class="pre">save</span> <span class="pre">on</span> <span class="pre">build</span></code>.</p>
+</div>
+<div class="section" id="jump-to-declaration">
+<h3><a class="toc-backref" href="#id25">Jump to Declaration</a><a class="headerlink" href="#jump-to-declaration" title="Permalink to this headline">¶</a></h3>
+<p>Click on a function/include, press <code class="docutils literal notranslate"><span class="pre">F3</span></code> and you will be taken directly to
+the declaration for that function.</p>
+</div>
+<div class="section" id="code-formatting">
+<h3><a class="toc-backref" href="#id26">Code Formatting</a><a class="headerlink" href="#code-formatting" title="Permalink to this headline">¶</a></h3>
+<p>You need to install <a class="reference external" href="https://atom.io/packages/atom-beautify">atom-beautify</a>
+package and <a class="reference external" href="http://sourceforge.net/projects/uncrustify/">C/C++ Uncrustify Code Beautifier</a>.</p>
+</div>
+</div>
+<div class="section" id="uninstall-atom-with-platformio-ide">
+<h2><a class="toc-backref" href="#id27">Uninstall Atom with PlatformIO IDE</a><a class="headerlink" href="#uninstall-atom-with-platformio-ide" title="Permalink to this headline">¶</a></h2>
+<p>Here’s how to uninstall the PlatformIO IDE for multiple OS.</p>
+<p>See <a class="reference internal" href="../../core/installation.html#piocore-uninstall"><span class="std std-ref">Uninstall PlatformIO Core and dependent packages</span></a>, if you do not need it in a system.</p>
+<div class="section" id="windows">
+<h3><a class="toc-backref" href="#id28">Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Uninstall Atom using “Start &gt; Control Panel &gt; Programs and Features &gt; Uninstall”</p></li>
+<li><p>Remove <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;user</span> <span class="pre">name&gt;\.atom</span></code> folder (settings, packages, etc…)</p></li>
+<li><p>Remove <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;user</span> <span class="pre">name&gt;\AppData\Local\atom</span></code> folder (application itself)</p></li>
+<li><p>Remove <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;user</span> <span class="pre">name&gt;\AppData\Roaming\Atom</span></code> folder (cache, etc.)</p></li>
+<li><p>Remove registry records using <code class="docutils literal notranslate"><span class="pre">regedit</span></code>:</p>
+<ul class="simple">
+<li><p>HKEY_CLASSES_ROOT\Directory\Background\shell</p></li>
+<li><p>HKEY_CLASSES_ROOT\Directory\shell</p></li>
+<li><p>HKEY_CLASSES_ROOT*\shell</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="macos">
+<h3><a class="toc-backref" href="#id29">macOS</a><a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h3>
+<p>Run these commands in system Terminal</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">~/.</span><span class="n">atom</span>
+<span class="n">rm</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">atom</span>
+<span class="n">rm</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">apm</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="n">Applications</span><span class="o">/</span><span class="n">Atom</span><span class="o">.</span><span class="n">app</span>
+<span class="n">rm</span> <span class="o">~/</span><span class="n">Library</span><span class="o">/</span><span class="n">Preferences</span><span class="o">/</span><span class="n">com</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">atom</span><span class="o">.</span><span class="n">plist</span>
+<span class="n">rm</span> <span class="o">~/</span><span class="n">Library</span><span class="o">/</span><span class="n">Application</span>\ <span class="n">Support</span><span class="o">/</span><span class="n">com</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">atom</span><span class="o">.</span><span class="n">ShipIt</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">~/</span><span class="n">Library</span><span class="o">/</span><span class="n">Application</span>\ <span class="n">Support</span><span class="o">/</span><span class="n">Atom</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">~/</span><span class="n">Library</span><span class="o">/</span><span class="n">Saved</span>\ <span class="n">Application</span>\ <span class="n">State</span><span class="o">/</span><span class="n">com</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">atom</span><span class="o">.</span><span class="n">savedState</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">~/</span><span class="n">Library</span><span class="o">/</span><span class="n">Caches</span><span class="o">/</span><span class="n">com</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">atom</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">~/</span><span class="n">Library</span><span class="o">/</span><span class="n">Caches</span><span class="o">/</span><span class="n">Atom</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="linux">
+<h3><a class="toc-backref" href="#id30">Linux</a><a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h3>
+<p>Run these commands in system Terminal</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rm</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">atom</span>
+<span class="n">rm</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">apm</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">~/</span><span class="n">atom</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">~/.</span><span class="n">atom</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">~/.</span><span class="n">config</span><span class="o">/</span><span class="n">Atom</span><span class="o">-</span><span class="n">Shell</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">atom</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="articles-manuals">
+<h2><a class="toc-backref" href="#id31">Articles / Manuals</a><a class="headerlink" href="#articles-manuals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Mar, 31, 2017 - <strong>Robin Reiter</strong> - <a class="reference external" href="https://www.youtube.com/watch?v=EIkGTwLOD7o">A little guide to PlatformIO. As an Arduino developer, you may want to check that out! (video review)</a></p></li>
+<li><p>Dec 13, 2016 - <strong>Dr. Patrick Mineault</strong> - <a class="reference external" href="https://xcorr.net/2016/12/13/multi-arduino-projects-with-platformio/">Multi-Arduino projects with PlatformIO</a></p></li>
+<li><p>Nov 10, 2016 - <strong>PiGreek</strong> - <a class="reference external" href="https://pigreekblog.wordpress.com/2016/11/10/platformio-the-new-arduino-ide/">PlatformIO the new Arduino IDE ?!</a></p></li>
+<li><p>Aug 18, 2016 - <strong>Primal Cortex</strong> - <a class="reference external" href="https://primalcortex.wordpress.com/2016/08/18/platformio/">Installing PlatformIO on Arch Linux</a></p></li>
+<li><p>Jul 26, 2016 - <strong>Embedded Systems Laboratory</strong> - <a class="reference external" href="http://cpre.kmutnb.ac.th/esl/learning/index.php?article=intro_platformio-ide">แนะนำการใช้งาน PlatformIO IDE สำหรับบอร์ด Arduino และ ESP8266 (Get started with PlatformIO IDE for Arduino board and ESP8266, Thai)</a></p></li>
+<li><p>May 30, 2016 - <strong>Ron Moerman</strong> - <a class="reference external" href="https://electronicsworkbench.io/blog/platformio">IoT Development with PlatformIO</a></p></li>
+<li><p>May 01, 2016 - <strong>Pedro Minatel</strong> - <a class="reference external" href="http://pedrominatel.com.br/ferramentas/platformio-uma-alternativa-ao-arduino-ide/">PlatformIO – Uma alternativa ao Arduino IDE (PlatformIO - An alternative to the Arduino IDE, Portuguese)</a></p></li>
+<li><p>Apr 23, 2016 - <strong>Al Williams</strong> - <a class="reference external" href="http://hackaday.com/2016/04/23/atomic-arduino-and-other-development/">Hackaday: Atomic Arduino (and Other) Development</a></p></li>
+<li><p>Apr 16, 2016 - <strong>Sathittham Sangthong</strong> - <a class="reference external" href="http://www.sathittham.com/platformio/platformio-ide/">[PlatformIO] มาลองเล่น PlatformIO แทน Arduino IDE กัน (Let’s play together with PlatformIO IDE [alternative to Arduino IDE], Thai)</a></p></li>
+<li><p>Apr 11, 2016 - <strong>Matjaz Trcek</strong> - <a class="reference external" href="https://codeandunicorns.com/top-5-arduino-integrated-development-environments-ide/">Top 5 Arduino integrated development environments</a></p></li>
+<li><p>Apr 06, 2016 - <strong>Aleks</strong> - <a class="reference external" href="http://5volt-junkie.net/platformio/">PlatformIO ausprobiert (Tried PlatformIO, German)</a></p></li>
+<li><p>Apr 02, 2016 - <strong>Diego Pinto</strong> - <a class="reference external" href="http://www.clubemaker.com.br/?rota=artigo/81">Você tem coragem de abandonar a IDE do Arduino? PlatformIO + Atom (Do you dare to leave the Arduino IDE? PlatformIO + Atom, Portuguese)</a></p></li>
+<li><p>Mar 30, 2016 - <strong>Brandon Cannaday</strong> - <a class="reference external" href="https://www.losant.com/blog/getting-started-with-platformio-esp8266-nodemcu">Getting Started with PlatformIO and ESP8266 NodeMcu</a></p></li>
+<li><p>Mar 12, 2016 - <strong>Peter Marks</strong> - <a class="reference external" href="http://blog.marxy.org/2016/03/platformio-arduino-ide-for-programmers.html">PlatformIO, the Arduino IDE for programmers</a></p></li>
+<li><p>Mar 05, 2016 - <strong>brichacek.net</strong> - <a class="reference external" href="http://blog.brichacek.net/platformio-otevreny-ekosystem-pro-vyvoj-iot/">PlatformIO – otevřený ekosystém pro vývoj IoT (PlatformIO – an open source ecosystem for IoT development, Czech)</a></p></li>
+<li><p>Mar 04, 2016 - <strong>Ricardo Vega</strong> - <a class="reference external" href="http://ricveal.com/blog/programa-arduino-desde-atom/">Programa tu Arduino desde Atom (Program your Arduino from Atom, Spanish)</a></p></li>
+<li><p>Feb 28, 2016 - <strong>Alex Bloggt</strong> - <a class="reference external" href="https://alexbloggt.com/platformio-vorgestellt/">PlatformIO vorgestellt (Introduction to PlatformIO IDE, German)</a></p></li>
+<li><p>Feb 25, 2016 - <strong>NutDIY</strong> - <a class="reference external" href="http://nutdiy.blogspot.com/2016/02/platformio-blink-on-nodemcu-dev-kit-v10.html">PlatformIO Blink On Nodemcu Dev Kit V1.0 (Thai)</a></p></li>
+</ul>
+<p>See a full list with <a class="reference internal" href="../../articles.html#articles"><span class="std std-ref">Articles about us</span></a>.</p>
+</div>
+<div class="section" id="changelog">
+<h2><a class="toc-backref" href="#id32">Changelog</a><a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
+<p>Please visit <a class="reference external" href="https://github.com/platformio/platformio-atom-ide/releases">releases page</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="clion.html" class="btn btn-neutral float-right" title="CLion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="eclipseche.html" class="btn btn-neutral float-left" title="Eclipse Che" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/atom.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/integration/ide/atom.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

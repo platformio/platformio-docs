@@ -1,0 +1,701 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Renode &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/plus/debug-tools/renode.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="RV-LINK" href="rv-link.html" />
+    <link rel="prev" title="QEMU" href="qemu.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../debugging.html">Debugging</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../debugging.html#tutorials">Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debugging.html#configuration">Configuration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../debugging.html#tools-debug-probes">Tools &amp; Debug Probes</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="altera-usb-blaster.html">Altera / Intel USB-Blaster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmel-ice.html">Atmel-ICE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="avr-stub.html">avr-stub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blackmagic.html">Black Magic Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmsis-dap.html">CMSIS-DAP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="digilent-hs1.html">JTAG-HS1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="esp-prog.html">ESP-Prog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ftdi.html">FTDI Chip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gd-link.html">GD-LINK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="iot-bus-jtag.html">oddWires IOT-Bus JTAG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="jlink.html">J-LINK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="minimodule.html">Mini-Module FT2232H</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mspdebug.html">MSP Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd-h.html">Olimex ARM-USB-OCD-H</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd.html">Olimex ARM-USB-OCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-tiny-h.html">Olimex ARM-USB-TINY-H</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex-jtag-tiny.html">Olimex ARM-USB-TINY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qemu.html">QEMU</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Renode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#custom-settings">Custom Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#platforms">Platforms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frameworks">Frameworks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boards">Boards</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="rv-link.html">RV-LINK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simavr.html">simavr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sipeed-rv-debugger.html">Sipeed RV Debugger</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stlink.html">ST-LINK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ti-icdi.html">TI-ICDI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tumpa.html">TIAO USB Multi-Protocol Adapter (TUMPA)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="um232h.html">UM232H</a></li>
+<li class="toctree-l3"><a class="reference internal" href="verilator.html">Verilator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whisper.html">Whisper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="custom.html">Custom</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../debugging.html#debug-unit-tests">Debug Unit Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debugging.html#cli-guide">CLI Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debugging.html#platforms">Platforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debugging.html#frameworks">Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debugging.html#boards">Boards</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../debugging.html">Debugging</a> &raquo;</li>
+        
+      <li>Renode</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/plus/debug-tools/renode.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="renode">
+<span id="debugging-tool-renode"></span><h1>Renode<a class="headerlink" href="#renode" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://renode.io/?utm_source=platformio&amp;utm_medium=docs"><img alt="../../_images/renode.png" src="../../_images/renode.png" /></a>
+<p>Renode is a development framework which accelerates IoT and embedded systems
+development by letting you simulate physical hardware systems - including both the CPU,
+peripherals, sensors, environment and wired or wireless medium between nodes.
+For more information, see <a class="reference external" href="https://renode.io/?utm_source=platformio&amp;utm_medium=docs">Renode’s official website</a>.</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#configuration" id="id2">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#installation" id="id3">Installation</a></p></li>
+<li><p><a class="reference internal" href="#custom-settings" id="id4">Custom Settings</a></p>
+<ul>
+<li><p><a class="reference internal" href="#additional-analyzers" id="id5">Additional Analyzers</a></p></li>
+<li><p><a class="reference internal" href="#redirecting-peripherals-output" id="id6">Redirecting peripherals output</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#examples" id="id7">Examples</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id8">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#frameworks" id="id9">Frameworks</a></p></li>
+<li><p><a class="reference internal" href="#boards" id="id10">Boards</a></p></li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>You can configure Renode as a debugging tool using <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in
+<a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">renode</span>
+</pre></div>
+</div>
+<p>More options:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-section-env-debug"><span class="std std-ref">Debugging options</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2><a class="toc-backref" href="#id3">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>We will automatically install for you the latest Renode package using PlatformIO
+package manager. The only requirement is to install Mono/.NET framework.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Windows</dt>
+<dd class="field-odd"><p>On Windows 7, download and install <a class="reference external" href="https://www.microsoft.com/net/download/dotnet-framework-runtime">.NET Framework 4.7</a>.
+Windows 10 ships with .NET by default, so no action is required there.</p>
+</dd>
+<dt class="field-even">Mac</dt>
+<dd class="field-even"><p>Install <a class="reference external" href="https://brew.sh/">Homebrew</a> and the <code class="docutils literal notranslate"><span class="pre">mono</span></code> package using <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">mono</span></code>.</p>
+</dd>
+<dt class="field-odd">Linux</dt>
+<dd class="field-odd"><p>Install the <code class="docutils literal notranslate"><span class="pre">mono-complete</span></code> package as per the installation instructions for
+various Linux distributions which can be found on <a class="reference external" href="https://www.mono-project.com/download/stable/#download-lin">the Mono project website</a>.</p>
+</dd>
+</dl>
+<p>Check the <a class="reference external" href="https://github.com/renode/renode/blob/master/README.rst">official Renode installation guide</a>
+for more details.</p>
+</div>
+<div class="section" id="custom-settings">
+<h2><a class="toc-backref" href="#id4">Custom Settings</a><a class="headerlink" href="#custom-settings" title="Permalink to this headline">¶</a></h2>
+<p>If the default Renode configuration is not suitable for your project, it’s possible to
+override the default Renode flags in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. The following sections describe
+typical use cases where custom settings might be useful.</p>
+<div class="section" id="additional-analyzers">
+<h3><a class="toc-backref" href="#id5">Additional Analyzers</a><a class="headerlink" href="#additional-analyzers" title="Permalink to this headline">¶</a></h3>
+<p>Additional analyzers might be handy in cases when an application prints output to a
+peripheral which is not visible by default. For example, to open an additional UART
+window while using Renode as the upload tool, a special command <code class="docutils literal notranslate"><span class="pre">showAnalyzer</span></code> should
+be added to <code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option, e.g.:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hifive1-revb]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">sifive</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">zephyr</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">hifive1-revb</span>
+<span class="c1">; Override the default upload settings</span>
+<span class="na">upload_command</span> <span class="o">=</span> <span class="s">renode $UPLOAD_FLAGS</span>
+<span class="na">upload_flags</span> <span class="o">=</span>
+    <span class="na">-e include @scripts/single-node/sifive_fe310.resc</span>
+    <span class="na">-e showAnalyzer uart1</span>
+    <span class="na">-e sysbus LoadELF @$SOURCE</span>
+    <span class="na">-e start</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="redirecting-peripherals-output">
+<h3><a class="toc-backref" href="#id6">Redirecting peripherals output</a><a class="headerlink" href="#redirecting-peripherals-output" title="Permalink to this headline">¶</a></h3>
+<p>It might be useful to redirect output from device peripherals to a more convenient
+communication channel. A typical example is redirecting UART output to a socket which
+can be opened by <a class="reference internal" href="../../core/userguide/device/cmd_monitor.html#cmd-device-monitor"><span class="std std-ref">pio device monitor</span></a> while using Renode as the debug tool.
+The default debug flags can be overridden using the <code class="docutils literal notranslate"><span class="pre">debug_server</span></code> option. For
+example, the following configuration can be used to redirect output from the <code class="docutils literal notranslate"><span class="pre">UART0</span></code>
+port on the <code class="docutils literal notranslate"><span class="pre">hifive1-revb</span></code> board:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hifive1-revb]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">sifive</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">zephyr</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">hifive1-revb</span>
+<span class="c1">; Override the default debug settings</span>
+<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
+<span class="na">debug_port</span> <span class="o">=</span> <span class="s">localhost:3333</span>
+<span class="na">debug_server</span> <span class="o">=</span> <span class="s">renode</span>
+  <span class="na">--hide-log</span>
+  <span class="na">-e machine StartGdbServer 3333 True</span>
+  <span class="na">-e emulation CreateServerSocketTerminal 4321 &quot;externalUART&quot; false</span>
+  <span class="na">-e connector Connect uart0 externalUART</span>
+<span class="na">debug_extra_cmds</span> <span class="o">=</span>
+    <span class="na">monitor start</span>
+
+<span class="c1"># Monitor port for Renode integration</span>
+<span class="na">monitor_port</span> <span class="o">=</span> <span class="s">socket://localhost:4321</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id7">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/carlosedp/PlatformIO-Renode-Demos/">Pre-configured projects for Zephyr RTOS, FreeRTOS, and Arduino</a> by Carlos Eduardo</p></li>
+</ul>
+</div>
+<div class="section" id="platforms">
+<h2><a class="toc-backref" href="#id8">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="frameworks">
+<h2><a class="toc-backref" href="#id9">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/freertos.html#framework-freertos"><span class="std std-ref">FreeRTOS</span></a></p></td>
+<td><p>FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/freedom-e-sdk.html#framework-freedom-e-sdk"><span class="std std-ref">Freedom E SDK</span></a></p></td>
+<td><p>Open Source Software for Developing on the SiFive Freedom E Platform</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
+<td><p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="boards">
+<h2><a class="toc-backref" href="#id10">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll tables below by horizontal.</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/e310-arty.html#board-sifive-e310-arty"><span class="std std-ref">Arty FPGA Dev Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>450MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>256MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/hifive-unleashed.html#board-sifive-hifive-unleashed"><span class="std std-ref">HiFive Unleashed</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FU540</p></td>
+<td><p>1500MHz</p></td>
+<td><p>32MB</p></td>
+<td><p>8GB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/hifive1.html#board-sifive-hifive1"><span class="std std-ref">HiFive1</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/hifive1-revb.html#board-sifive-hifive1-revb"><span class="std std-ref">HiFive1 Rev B</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="rv-link.html" class="btn btn-neutral float-right" title="RV-LINK" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="qemu.html" class="btn btn-neutral float-left" title="QEMU" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/plus/debug-tools/renode.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/plus/debug-tools/renode.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

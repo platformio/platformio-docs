@@ -1,0 +1,600 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Qt Creator &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/integration/ide/qtcreator.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Sublime Text" href="sublimetext.html" />
+    <link rel="prev" title="NetBeans" href="netbeans.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Cloud &amp; Desktop IDE</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#native-extensions">Native Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#cloud-ide">Cloud IDE</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#desktop-ide">Desktop IDE</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="atom.html">Atom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clion.html">CLion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="codeblocks.html">CodeBlocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eclipse.html">Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emacs.html">Emacs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="netbeans.html">NetBeans</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Qt Creator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#integration">Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sublimetext.html">Sublime Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vim.html">Vim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualstudio.html">Visual Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vscode.html">VSCode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Cloud &amp; Desktop IDE</a> &raquo;</li>
+        
+      <li>Qt Creator</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/qtcreator.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="qt-creator">
+<span id="ide-qtcreator"></span><h1><a class="toc-backref" href="#id2">Qt Creator</a><a class="headerlink" href="#qt-creator" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference external" href="https://github.com/qtproject/qt-creator">Qt Creator</a> is an open source cross-platform integrated development environment. The editor includes such features as syntax highlighting for various languages, project manager, integrated version control systems, rapid code navigation tools and code autocompletion.</p>
+<p>Refer to the <a class="reference external" href="http://doc.qt.io/qtcreator/">Qt-creator Manual</a>
+page for more detailed information.</p>
+<a class="reference external image-reference" href="../../_images/ide-qtcreator-7.png"><img alt="../../_images/ide-qtcreator-7.png" src="../../_images/ide-qtcreator-7.png" /></a>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#qt-creator" id="id2">Qt Creator</a></p>
+<ul>
+<li><p><a class="reference internal" href="#integration" id="id3">Integration</a></p>
+<ul>
+<li><p><a class="reference internal" href="#project-generator" id="id4">Project Generator</a></p></li>
+<li><p><a class="reference internal" href="#manual-integration" id="id5">Manual Integration</a></p>
+<ul>
+<li><p><a class="reference internal" href="#setup-new-project" id="id6">Setup New Project</a></p></li>
+<li><p><a class="reference internal" href="#first-program-in-qt-creator" id="id7">First program in Qt Creator</a></p></li>
+<li><p><a class="reference internal" href="#conclusion" id="id8">Conclusion</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="integration">
+<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
+<p>Integration process consists of these steps:</p>
+<ol class="arabic simple">
+<li><p>Open system Terminal and install <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a></p></li>
+<li><p>Create new folder for your project and change directory (<code class="docutils literal notranslate"><span class="pre">cd</span></code>) to it</p></li>
+<li><p>Generate a project using PlatformIO Core Project Generator (<a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmdoption-pio-project-init-ide"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">project</span> <span class="pre">init</span> <span class="pre">--ide</span></code></a>)</p></li>
+<li><p>Import project in IDE.</p></li>
+</ol>
+<div class="section" id="project-generator">
+<h3><a class="toc-backref" href="#id4">Project Generator</a><a class="headerlink" href="#project-generator" title="Permalink to this headline">¶</a></h3>
+<p>Choose board <code class="docutils literal notranslate"><span class="pre">ID</span></code> using <a class="reference internal" href="../../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> or <a class="reference external" href="https://platformio.org/boards">Embedded Boards Explorer</a>
+command and generate project via <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmdoption-pio-project-init-ide"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">project</span> <span class="pre">init</span> <span class="pre">--ide</span></code></a> command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pio project init --ide qtcreator --board &lt;ID&gt;
+
+<span class="c1"># For example, generate project for Arduino UNO</span>
+pio project init --ide qtcreator --board uno
+</pre></div>
+</div>
+<p>Then:</p>
+<ol class="arabic simple">
+<li><p>Import project via <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">File</span> <span class="pre">or</span> <span class="pre">Project</span></code> and select
+<code class="docutils literal notranslate"><span class="pre">platformio.pro</span></code> from the folder where is located <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
+<li><p>Select default desktop kit and click on <code class="docutils literal notranslate"><span class="pre">Configure</span> <span class="pre">Project</span></code> (<code class="docutils literal notranslate"><span class="pre">Projects</span></code>
+mode, left panel)</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">General</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">directory</span></code> to the project directory where
+is located <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
+<li><p>Remove all items from <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Steps</span></code>, click on
+<code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Steps</span> <span class="pre">&gt;</span> <span class="pre">Add</span> <span class="pre">Build</span> <span class="pre">Step</span> <span class="pre">&gt;</span> <span class="pre">Custom</span> <span class="pre">Process</span> <span class="pre">Step</span></code> and set:</p>
+<ul class="simple">
+<li><p><strong>Command</strong>: <code class="docutils literal notranslate"><span class="pre">platformio</span></code></p></li>
+<li><p><strong>Arguments</strong>: <code class="docutils literal notranslate"><span class="pre">-f</span> <span class="pre">-c</span> <span class="pre">qtcreator</span> <span class="pre">run</span></code></p></li>
+<li><p><strong>Working directory</strong>: <code class="docutils literal notranslate"><span class="pre">%{buildDir}</span></code></p></li>
+</ul>
+</li>
+<li><p>Remove all items from <code class="docutils literal notranslate"><span class="pre">Clean</span> <span class="pre">Steps</span></code>, click on
+<code class="docutils literal notranslate"><span class="pre">Clean</span> <span class="pre">Steps</span> <span class="pre">&gt;</span> <span class="pre">Add</span> <span class="pre">Clean</span> <span class="pre">Step</span> <span class="pre">&gt;</span> <span class="pre">Custom</span> <span class="pre">Process</span> <span class="pre">Step</span></code> and set:</p>
+<ul class="simple">
+<li><p><strong>Command</strong>: <code class="docutils literal notranslate"><span class="pre">platformio</span></code></p></li>
+<li><p><strong>Arguments</strong>: <code class="docutils literal notranslate"><span class="pre">-f</span> <span class="pre">-c</span> <span class="pre">qtcreator</span> <span class="pre">run</span> <span class="pre">--target</span> <span class="pre">clean</span></code></p></li>
+<li><p><strong>Working directory</strong>: <code class="docutils literal notranslate"><span class="pre">%{buildDir}</span></code></p></li>
+</ul>
+</li>
+<li><p>Update <code class="docutils literal notranslate"><span class="pre">PATH</span></code> in <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Environment</span> <span class="pre">&gt;</span> <span class="pre">PATH</span> <span class="pre">&gt;</span> <span class="pre">EDIT</span></code> with the result of
+this command (paste in Terminal):</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Linux, Mac</span>
+<span class="nb">echo</span> <span class="nv">$PATH</span>
+
+<span class="c1"># Windows</span>
+<span class="nb">echo</span> %PATH%
+</pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Switch to <code class="docutils literal notranslate"><span class="pre">Edit</span></code> mode (left panel) and open source file from <code class="docutils literal notranslate"><span class="pre">src</span></code>
+directory (<code class="docutils literal notranslate"><span class="pre">*.c,</span> <span class="pre">*.cpp,</span> <span class="pre">*.ino,</span> <span class="pre">etc.</span></code>)</p></li>
+<li><p>Build project: <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Build</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">All</span></code>.</p></li>
+</ol>
+<a class="reference external image-reference" href="../../_images/ide-qtcreator-3.png"><img alt="../../_images/ide-qtcreator-3.png" src="../../_images/ide-qtcreator-3.png" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The libraries which are added, installed or used in the project
+after generating process won’t be reflected in IDE. To fix it you
+need to reinitialize project using <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (repeat it).</p>
+</div>
+</div>
+<div class="section" id="manual-integration">
+<h3><a class="toc-backref" href="#id5">Manual Integration</a><a class="headerlink" href="#manual-integration" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="setup-new-project">
+<h4><a class="toc-backref" href="#id6">Setup New Project</a><a class="headerlink" href="#setup-new-project" title="Permalink to this headline">¶</a></h4>
+<p>First of all, let’s create new project from Qt Creator Start Page: <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code> or using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">File</span> <span class="pre">or</span> <span class="pre">Project</span></code>, then select project with <code class="docutils literal notranslate"><span class="pre">Empty</span> <span class="pre">Qt</span> <span class="pre">Project</span></code> type (<code class="docutils literal notranslate"><span class="pre">Other</span> <span class="pre">Project</span> <span class="pre">&gt;</span> <span class="pre">Empty</span> <span class="pre">Qt</span> <span class="pre">Project</span></code>), fill <code class="docutils literal notranslate"><span class="pre">Name</span></code>, <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">in</span></code>.</p>
+<a class="reference external image-reference" href="../../_images/ide-qtcreator-1.png"><img alt="../../_images/ide-qtcreator-1.png" src="../../_images/ide-qtcreator-1.png" /></a>
+<p>On the next steps select any available kit and click Finish button.</p>
+<img alt="../../_images/ide-qtcreator-2.png" src="../../_images/ide-qtcreator-2.png" />
+<p>Secondly, we need to delete default build and clean steps and configure project with PlatformIO Build System (click on Projects label on left menu or <code class="docutils literal notranslate"><span class="pre">Ctrl+5</span></code> shortcut):</p>
+<a class="reference external image-reference" href="../../_images/ide-qtcreator-3.png"><img alt="../../_images/ide-qtcreator-3.png" src="../../_images/ide-qtcreator-3.png" /></a>
+<p>Thirdly, change project file by adding path to directories with header files. Please edit project file to match the following contents:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>win32 {
+    HOMEDIR += $$(USERPROFILE)
+}
+else {
+    HOMEDIR += $$(HOME)
+}
+
+INCLUDEPATH += &quot;$${HOMEDIR}/.platformio/packages/framework-arduinoavr/cores/arduino&quot;
+INCLUDEPATH += &quot;$${HOMEDIR}/.platformio/packages/toolchain-atmelavr/avr/include&quot;
+</pre></div>
+</div>
+<a class="reference external image-reference" href="../../_images/ide-qtcreator-4.png"><img alt="../../_images/ide-qtcreator-4.png" src="../../_images/ide-qtcreator-4.png" /></a>
+</div>
+<div class="section" id="first-program-in-qt-creator">
+<h4><a class="toc-backref" href="#id7">First program in Qt Creator</a><a class="headerlink" href="#first-program-in-qt-creator" title="Permalink to this headline">¶</a></h4>
+<p>Simple “Blink” project will consist from two files:
+1. In the console, navigate to the root of your project folder and initialize pio project with <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a>
+2. The main “C” source file named <code class="docutils literal notranslate"><span class="pre">main.c</span></code> must be located in the <code class="docutils literal notranslate"><span class="pre">src</span></code> directory.
+Let’s create new text file named <code class="docutils literal notranslate"><span class="pre">main.c</span></code> using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">New</span> <span class="pre">File</span> <span class="pre">or</span> <span class="pre">Project</span> <span class="pre">&gt;</span> <span class="pre">General</span> <span class="pre">&gt;</span> <span class="pre">Text</span> <span class="pre">File</span></code>:</p>
+<a class="reference external image-reference" href="../../_images/ide-qtcreator-5.png"><img alt="../../_images/ide-qtcreator-5.png" src="../../_images/ide-qtcreator-5.png" /></a>
+<p>Copy the source code which is described below to file <code class="docutils literal notranslate"><span class="pre">main.c</span></code>.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
+<span class="cp">#define WLED    13  </span><span class="c1">// Most Arduino boards already have an LED attached to pin 13 on the board itself</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>  <span class="c1">// set pin as output</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>  <span class="c1">// set the LED on</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>               <span class="c1">// wait for a second</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>   <span class="c1">// set the LED off</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>               <span class="c1">// wait for a second</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Locate the project configuration file named <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> at the root of the project directory and open it.</p></li>
+</ol>
+<a class="reference external image-reference" href="../../_images/ide-qtcreator-6.png"><img alt="../../_images/ide-qtcreator-6.png" src="../../_images/ide-qtcreator-6.png" /></a>
+<p>Edit the content to match the code described below.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; PlatformIO Project Configuration File</span>
+<span class="c1">;</span>
+<span class="c1">;   Build options: build flags, source filter, extra scripting</span>
+<span class="c1">;   Upload options: custom port, speed and extra flags</span>
+<span class="c1">;   Library options: dependencies, extra library storages</span>
+<span class="c1">;</span>
+<span class="c1">; Please visit documentation for the other options and examples</span>
+<span class="c1">; https://docs.platformio.org/page/projectconf.html</span>
+
+<span class="k">[env:arduino_uno]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h4><a class="toc-backref" href="#id8">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h4>
+<p>Taking everything into account, we can build project with shortcut <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+B</span></code> or using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Build</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">All</span></code>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="sublimetext.html" class="btn btn-neutral float-right" title="Sublime Text" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="netbeans.html" class="btn btn-neutral float-left" title="NetBeans" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/qtcreator.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/integration/ide/qtcreator.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

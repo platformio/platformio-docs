@@ -1,0 +1,761 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>ASR Microelectronics ASR650x &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/platforms/asrmicro650x.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Atmel AVR" href="atmelavr.html" />
+    <link rel="prev" title="Aceinna IMU" href="aceinna_imu.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Platforms</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#embedded">Embedded</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="aceinna_imu.html">Aceinna IMU</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ASR Microelectronics ASR650x</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stable-and-upstream-versions">Stable and upstream versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#packages">Packages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frameworks">Frameworks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boards">Boards</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="atmelavr.html">Atmel AVR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmelmegaavr.html">Atmel megaAVR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmelsam.html">Atmel SAM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chipsalliance.html">CHIPS Alliance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressif32.html">Espressif 32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressif8266.html">Espressif 8266</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freescalekinetis.html">Freescale Kinetis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gd32v.html">GigaDevice GD32V</a></li>
+<li class="toctree-l3"><a class="reference internal" href="infineonxmc.html">Infineon XMC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intel_arc32.html">Intel ARC32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intel_mcs51.html">Intel MCS-51 (8051)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kendryte210.html">Kendryte K210</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lattice_ice40.html">Lattice iCE40</a></li>
+<li class="toctree-l3"><a class="reference internal" href="maxim32.html">Maxim 32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="microchippic32.html">Microchip PIC32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nordicnrf51.html">Nordic nRF51</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nordicnrf52.html">Nordic nRF52</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nuclei.html">Nuclei</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nxpimxrt.html">NXP i.MX RT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="riscv_gap.html">RISC-V GAP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shakti.html">Shakti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sifive.html">SiFive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="siliconlabsefm32.html">Silicon Labs EFM32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ststm32.html">ST STM32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ststm8.html">ST STM8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teensy.html">Teensy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="timsp430.html">TI MSP430</a></li>
+<li class="toctree-l3"><a class="reference internal" href="titiva.html">TI TIVA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wiznet7500.html">WIZNet W7500</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#desktop">Desktop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Development Platforms</a> &raquo;</li>
+        
+      <li>ASR Microelectronics ASR650x</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/platforms/asrmicro650x.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="asr-microelectronics-asr650x">
+<span id="platform-asrmicro650x"></span><h1>ASR Microelectronics ASR650x<a class="headerlink" href="#asr-microelectronics-asr650x" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Configuration</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">asrmicro650x</span></code></p>
+</dd>
+</dl>
+<p>ASR Microelectronics ASR650x series is highly intergrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.</p>
+<p>For more detailed information please visit <a class="reference external" href="http://www.asrmicro.com?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#configuration" id="id2">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id3">Examples</a></p></li>
+<li><p><a class="reference internal" href="#stable-and-upstream-versions" id="id4">Stable and upstream versions</a></p></li>
+<li><p><a class="reference internal" href="#packages" id="id5">Packages</a></p></li>
+<li><p><a class="reference internal" href="#frameworks" id="id6">Frameworks</a></p></li>
+<li><p><a class="reference internal" href="#boards" id="id7">Boards</a></p></li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#lorawan" id="id8">LoRaWAN</a></p></li>
+</ul>
+</div>
+<div class="section" id="lorawan">
+<h3><a class="toc-backref" href="#id8">LoRaWAN</a><a class="headerlink" href="#lorawan" title="Permalink to this headline">¶</a></h3>
+<p>LoRaWAN protocol can be configured in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> using the following syntax
+<code class="docutils literal notranslate"><span class="pre">board_build.arduino.lorawan.*</span></code> where <code class="docutils literal notranslate"><span class="pre">*</span></code> is an option from the following list:</p>
+<blockquote>
+<div><table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible values</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">region</span></code></p></td>
+<td><p>Region definition</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">AS923</span></code>, <code class="docutils literal notranslate"><span class="pre">AU915</span></code>, <code class="docutils literal notranslate"><span class="pre">CN470</span></code>, <code class="docutils literal notranslate"><span class="pre">CN779</span></code>, <code class="docutils literal notranslate"><span class="pre">EU433</span></code>, <code class="docutils literal notranslate"><span class="pre">EU868</span></code>,
+<code class="docutils literal notranslate"><span class="pre">KR920</span></code>, <code class="docutils literal notranslate"><span class="pre">IN865</span></code>, <code class="docutils literal notranslate"><span class="pre">US915</span></code>, <code class="docutils literal notranslate"><span class="pre">US915_HYBRID</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">AS923</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">class</span></code></p></td>
+<td><p>Device class</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CLASS_A</span></code>, <code class="docutils literal notranslate"><span class="pre">CLASS_C</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CLASS_A</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">netmode</span></code></p></td>
+<td><p>Activation method</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OTAA</span></code>, <code class="docutils literal notranslate"><span class="pre">ABP</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OTAA</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">adr</span></code></p></td>
+<td><p>Adaptive Data Rate</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code>, <code class="docutils literal notranslate"><span class="pre">OFF</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">uplinkmode</span></code></p></td>
+<td><p>Uplink confirmed/unconfirmed messages</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CONFIRMED</span></code>, <code class="docutils literal notranslate"><span class="pre">UNCONFIRMED</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CONFIRMED</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">net_reserve</span></code></p></td>
+<td><p>Don’t rejoin after reset</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code>, <code class="docutils literal notranslate"><span class="pre">OFF</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OFF</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">at_support</span></code></p></td>
+<td><p>AT commands support</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code>, <code class="docutils literal notranslate"><span class="pre">OFF</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rgb</span></code></p></td>
+<td><p>RGB light for LoRaWAN status</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ACTIVE</span></code>, <code class="docutils literal notranslate"><span class="pre">DEACTIVE</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ACTIVE</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">debug_level</span></code></p></td>
+<td><p>Print LoRaWAN relevant messages print to serial port</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">NONE</span></code>, <code class="docutils literal notranslate"><span class="pre">FREQ</span></code> (Sending/receiving frequency), <code class="docutils literal notranslate"><span class="pre">FREQ_AND_DIO</span></code>
+(Sending/receiving frequency and DIO pin interrupt information)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">NONE</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:cubecell_board]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">asrmicro650x</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">cubecell_board</span>
+<span class="na">board_build.arduino.lorawan.region</span> <span class="o">=</span> <span class="s">EU433</span>
+<span class="na">board_build.arduino.lorawan.adr</span> <span class="o">=</span> <span class="s">OFF</span>
+<span class="na">board_build.arduino.lorawan.debug_level</span> <span class="o">=</span> <span class="s">FREQ_AND_DIO</span>
+</pre></div>
+</div>
+<p>More information about LoRaWAN configuration can be found in
+<a class="reference external" href="https://heltec-automation-docs.readthedocs.io/en/latest/cubecell/index.html">the official CubeCell documentation</a>.</p>
+</div>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id3">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Examples are listed from <a class="reference external" href="https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">ASR Microelectronics ASR650x development platform repository</a>:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-blink?utm_source=platformio.org&amp;utm_medium=docs">arduino-blink</a></p></li>
+<li><p><a class="reference external" href="https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-rgb?utm_source=platformio.org&amp;utm_medium=docs">arduino-rgb</a></p></li>
+<li><p><a class="reference external" href="https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-adc?utm_source=platformio.org&amp;utm_medium=docs">arduino-adc</a></p></li>
+<li><p><a class="reference external" href="https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/LoRa?utm_source=platformio.org&amp;utm_medium=docs">LoRa</a></p></li>
+<li><p><a class="reference external" href="https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples/arduino-lowpower?utm_source=platformio.org&amp;utm_medium=docs">arduino-lowpower</a></p></li>
+</ul>
+</div>
+<div class="section" id="stable-and-upstream-versions">
+<h2><a class="toc-backref" href="#id4">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this headline">¶</a></h2>
+<p>You can switch between <a class="reference external" href="https://github.com/HelTecAutomation/platform-asrmicro650x/releases">stable releases</a>
+of ASR Microelectronics ASR650x development platform and the latest upstream version using
+<a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
+<div class="section" id="stable">
+<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
+<span class="k">[env:latest_stable]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">asrmicro650x</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+
+<span class="c1">; Custom stable version</span>
+<span class="k">[env:custom_stable]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">asrmicro650x@x.y.z</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="upstream">
+<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/HelTecAutomation/platform-asrmicro650x.git</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="packages">
+<h2><a class="toc-backref" href="#id5">Packages</a><a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&amp;utm_medium=docs">framework-arduinoasrmicro650x</a></p></td>
+<td><p>Arduino Wiring-based Framework for ASR Microelectronics ASR650x (Heltec core)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&amp;utm_medium=docs">tool-cubecellelftool</a></p></td>
+<td><p>CubeCell ELF tool</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&amp;utm_medium=docs">tool-cubecellflash</a></p></td>
+<td><p>CubeCell Flash tool</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&amp;utm_medium=docs">toolchain-gccarmnoneeabi</a></p></td>
+<td><p>GNU toolchain for Arm Cortex-M and Cortex-R processors</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Linux Users</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Install “udev” rules <a class="reference internal" href="../faq.html#faq-udev-rules"><span class="std std-ref">99-platformio-udev.rules</span></a></p></li>
+<li><p>Raspberry Pi users, please read this article
+<a class="reference external" href="https://hallard.me/enable-serial-port-on-raspberry-pi/">Enable serial port on Raspberry Pi</a>.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Windows Users:</strong></p>
+<blockquote>
+<div><p>Please check that you have a correctly installed USB driver from board
+manufacturer</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="frameworks">
+<h2><a class="toc-backref" href="#id6">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
+<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="boards">
+<h2><a class="toc-backref" href="#id7">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
+<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by
+horizontally.</p></li>
+</ul>
+</div>
+<div class="section" id="heltec">
+<h3>Heltec<a class="headerlink" href="#heltec" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule_solar_sensor.html#board-asrmicro650x-cubecell-capsule-solar-sensor"><span class="std std-ref">Heltec CubeCell Capsule Solar Sensor (HTCC-AC02)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6502</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_node.html#board-asrmicro650x-cubecell-node"><span class="std std-ref">Heltec CubeCell-1/2AA Node (HTCC-AB02A)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6502</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board.html#board-asrmicro650x-cubecell-board"><span class="std std-ref">Heltec CubeCell-Board (HTCC-AB01)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6501</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_plus.html#board-asrmicro650x-cubecell-board-plus"><span class="std std-ref">Heltec CubeCell-Board Plus (HTCC-AB02)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6502</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule.html#board-asrmicro650x-cubecell-capsule"><span class="std std-ref">Heltec CubeCell-Capsule (HTCC-AC01)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6501</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_gps.html#board-asrmicro650x-cubecell-gps"><span class="std std-ref">Heltec CubeCell-GPS (HTCC-AB02S)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6502</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module.html#board-asrmicro650x-cubecell-module"><span class="std std-ref">Heltec CubeCell-Module (HTCC-AM01)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6501</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module_plus.html#board-asrmicro650x-cubecell-module-plus"><span class="std std-ref">Heltec CubeCell-Module Plus (HTCC-AM02)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6502</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="atmelavr.html" class="btn btn-neutral float-right" title="Atmel AVR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="aceinna_imu.html" class="btn btn-neutral float-left" title="Aceinna IMU" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/platforms/asrmicro650x.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/platforms/asrmicro650x.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>
