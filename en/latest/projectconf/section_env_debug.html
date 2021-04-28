@@ -1,0 +1,718 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Debugging options &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/projectconf/section_env_debug.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Advanced options" href="section_env_advanced.html" />
+    <link rel="prev" title="Test options" href="section_env_test.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">platformio.ini</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="section_env.html#common-env">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="section_env.html#environment-env-name">Environment <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="section_env.html#options">Options</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="section_env_platform.html">Platform options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_build.html">Build options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_library.html">Library options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_upload.html">Upload options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_monitor.html">Monitor options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_check.html">Check options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_test.html">Test options</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Debugging options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_advanced.html">Advanced options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_variables.html">Dynamic variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">“platformio.ini” (Project Configuration File)</a> &raquo;</li>
+        
+          <li><a href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a> &raquo;</li>
+        
+      <li>Debugging options</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/projectconf/section_env_debug.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="debugging-options">
+<span id="projectconf-section-env-debug"></span><h1>Debugging options<a class="headerlink" href="#debugging-options" title="Permalink to this headline">¶</a></h1>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Please make sure to read <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> guide first.</p>
+</div>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#debug-tool" id="id1"><code class="docutils literal notranslate"><span class="pre">debug_tool</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-build-flags" id="id2"><code class="docutils literal notranslate"><span class="pre">debug_build_flags</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-init-break" id="id3"><code class="docutils literal notranslate"><span class="pre">debug_init_break</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-init-cmds" id="id4"><code class="docutils literal notranslate"><span class="pre">debug_init_cmds</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-extra-cmds" id="id5"><code class="docutils literal notranslate"><span class="pre">debug_extra_cmds</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-load-cmds" id="id6"><code class="docutils literal notranslate"><span class="pre">debug_load_cmds</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-load-mode" id="id7"><code class="docutils literal notranslate"><span class="pre">debug_load_mode</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-server" id="id8"><code class="docutils literal notranslate"><span class="pre">debug_server</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-port" id="id9"><code class="docutils literal notranslate"><span class="pre">debug_port</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-speed" id="id10"><code class="docutils literal notranslate"><span class="pre">debug_speed</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-svd-path" id="id11"><code class="docutils literal notranslate"><span class="pre">debug_svd_path</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-server-ready-pattern" id="id12"><code class="docutils literal notranslate"><span class="pre">debug_server_ready_pattern</span></code></a></p></li>
+<li><p><a class="reference internal" href="#debug-test" id="id13"><code class="docutils literal notranslate"><span class="pre">debug_test</span></code></a></p></li>
+</ul>
+</div>
+<div class="section" id="debug-tool">
+<span id="projectconf-debug-tool"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">debug_tool</span></code></a><a class="headerlink" href="#debug-tool" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>A name of debugging tool. This option is useful when board supports more than
+one debugging tool (adapter, probe) or you want to create <a class="reference internal" href="../plus/debug-tools/custom.html#debugging-tool-custom"><span class="std std-ref">Custom</span></a>
+debugging configuration.</p>
+<p>See available tools in <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a>.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug-build-flags">
+<span id="projectconf-debug-build-flags"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">debug_build_flags</span></code></a><a class="headerlink" href="#debug-build-flags" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">-Og</span> <span class="pre">-g2</span> <span class="pre">-ggdb2</span></code></p>
+<p>These flags/options affect the preprocessing, compilation, assembly
+and linking processes for C and C++ code.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option might be helpful to adjust the optimization level if firmware with
+debug information is too big to be uploaded to a target</p>
+</div>
+<p><strong>Example</strong></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+
+<span class="c1">; Set optimization level and amount of debug information generated by the compiler</span>
+<span class="na">debug_build_flags</span> <span class="o">=</span> <span class="s">-O0 -ggdb3 -g3</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html">Other possible flags</a>
+that might be useful for debugging your application.</p>
+</div>
+<div class="section" id="debug-init-break">
+<span id="projectconf-debug-init-break"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">debug_init_break</span></code></a><a class="headerlink" href="#debug-init-break" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">tbreak</span> <span class="pre">main</span></code></p>
+<p>An initial breakpoint that makes your program stop whenever a certain point in
+the program is reached. <strong>Default</strong> value is set to <code class="docutils literal notranslate"><span class="pre">tbreak</span> <span class="pre">main</span></code> and means
+creating a temporary breakpoint at <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">main(...)</span></code> function and
+automatically delete it after the first time a program stops there.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://sourceware.org/gdb/onlinedocs/gdb/Set-Breaks.html#Set-Breaks">GDB Setting Breakpoints</a></p></li>
+<li><p><a class="reference external" href="https://sourceware.org/gdb/onlinedocs/gdb/Specify-Location.html#Specify-Location">GDB Breakpoint Locations</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that each debugging tool (adapter, probe) has limited number of
+hardware breakpoints.</p>
+<p>If you need more <strong>Project Initial Breakpoints</strong>, please place them in <a class="reference internal" href="#projectconf-debug-extra-cmds"><span class="std std-ref">debug_extra_cmds</span></a>.</p>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+
+<span class="c1">; Examples 1: disable initial breakpoint</span>
+<span class="na">debug_init_break</span> <span class="o">=</span>
+
+<span class="c1">; Examples 2: temporary stop at ``void loop()`` function</span>
+<span class="na">debug_init_break</span> <span class="o">=</span> <span class="s">tbreak loop</span>
+
+<span class="c1">; Examples 3: stop in main.cpp at line 13</span>
+<span class="na">debug_init_break</span> <span class="o">=</span> <span class="s">break main.cpp:13</span>
+
+<span class="c1">; Examples 4: temporary stop at ``void Reset_Handler(void)``</span>
+<span class="na">debug_init_break</span> <span class="o">=</span> <span class="s">tbreak Reset_Handler</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug-init-cmds">
+<span id="projectconf-debug-init-cmds"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">debug_init_cmds</span></code></a><a class="headerlink" href="#debug-init-cmds" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <a class="reference external" href="https://github.com/platformio/platformio-core/tree/develop/platformio/debug/config">See details…</a></p>
+<p>Initial commands that will be passed to back-end debugger.</p>
+<p>PlatformIO dynamically configures back-end debugger depending on a debug
+environment. Here is <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/commands/debug/initcfgs.py">a list with default initial commands</a>
+for the popular <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a>.</p>
+<p>For example, the custom initial commands for GDB:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">debug_init_cmds</span> <span class="o">=</span>
+  <span class="na">target extended-remote $DEBUG_PORT</span>
+  <span class="na">$INIT_BREAK</span>
+  <span class="na">monitor reset halt</span>
+  <span class="na">$LOAD_CMDS</span>
+  <span class="na">monitor init</span>
+  <span class="na">monitor reset halt</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug-extra-cmds">
+<span id="projectconf-debug-extra-cmds"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">debug_extra_cmds</span></code></a><a class="headerlink" href="#debug-extra-cmds" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
+<p>Extra commands that will be passed to back-end debugger after <a class="reference internal" href="#projectconf-debug-init-cmds"><span class="std std-ref">debug_init_cmds</span></a>.
+For example, add custom breakpoint and load <code class="docutils literal notranslate"><span class="pre">.gdbinit</span></code> from a project directory
+for GDB:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">debug_extra_cmds</span> <span class="o">=</span>
+  <span class="na">break main.cpp:13</span>
+  <span class="na">break foo.cpp:100</span>
+  <span class="na">source .gdbinit</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Initial Project Breakpoints</strong>: Use <code class="docutils literal notranslate"><span class="pre">break</span> <span class="pre">path/to/file:LINE_NUMBER</span></code> to
+define initial breakpoints for debug environment. Multiple breakpoints are
+allowed.</p>
+<p>To save session breakpoints, please use <code class="docutils literal notranslate"><span class="pre">save</span> <span class="pre">breakpoints</span> <span class="pre">[filename]</span></code>
+command in Debug Console. For example, <code class="docutils literal notranslate"><span class="pre">save</span> <span class="pre">breakpoints</span> <span class="pre">.gdbinit</span></code>. Later,
+this file could be loaded via <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">[filename]</span></code> command. See above.</p>
+</div>
+</div>
+<div class="section" id="debug-load-cmds">
+<span id="projectconf-debug-load-cmds"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">debug_load_cmds</span></code></a><a class="headerlink" href="#debug-load-cmds" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">load</span></code></p>
+<p>Specify a command which will be used to load program/firmware to a target
+device. Possible options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">load</span></code> - <strong>default</strong> option</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">load</span> <span class="pre">[address]</span></code> - load program at specified address, where “[address]”
+should be a valid number</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">preload</span></code> - some embedded devices have locked Flash Memory (a few
+Freescale Kinetis and NXP LPC boards). In this case, firmware loading using
+debugging client is disabled. <code class="docutils literal notranslate"><span class="pre">preload</span></code> command instructs
+<a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> to load program/firmware using development platform “upload”
+method (via bootloader, media disk, etc)</p></li>
+<li><p>(empty value, <code class="docutils literal notranslate"><span class="pre">debug_load_cmds</span> <span class="pre">=</span></code>), disables program loading at all.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">custom</span> <span class="pre">commands</span></code> - pass any debugging client command (GDB, etc.)</p></li>
+</ul>
+<p>Sometimes you need to run extra monitor commands (on debug server side) before
+program/firmware loading, such as flash unlocking or erasing. In this case we
+can combine service commands with loading and run them before. See example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">debug_load_cmds</span> <span class="o">=</span>
+  <span class="na">monitor flash erase_sector 0 0 11</span>
+  <span class="na">load</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug-load-mode">
+<span id="projectconf-debug-load-mode"></span><h2><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">debug_load_mode</span></code></a><a class="headerlink" href="#debug-load-mode" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">always</span></code></p>
+<p>Allows one to control when PlatformIO should load debugging firmware to the end
+target. Possible options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">always</span></code> - load for the each debugging session, <strong>default</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">modified</span></code> - load only when firmware was modified</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">manual</span></code> - do not load firmware automatically. You are responsible to
+pre-flash target with debugging firmware in this case.</p></li>
+</ul>
+</div>
+<div class="section" id="debug-server">
+<span id="projectconf-debug-server"></span><h2><a class="toc-backref" href="#id8"><code class="docutils literal notranslate"><span class="pre">debug_server</span></code></a><a class="headerlink" href="#debug-server" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
+<p>Allows one to setup a custom debugging server. By default, boards are pre-configured
+with a debugging server that is compatible with “on-board” debugging tool
+(adapter, probe). Also, this option is useful for a
+<a class="reference internal" href="../plus/debug-tools/custom.html#debugging-tool-custom"><span class="std std-ref">Custom</span></a> debugging tool.</p>
+<p><strong>Option format (multi-line)</strong>:</p>
+<ul class="simple">
+<li><p>First line is an executable path of debugging server</p></li>
+<li><p>2-nd and the next lines are arguments for executable file</p></li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">debug_server</span> <span class="o">=</span>
+  <span class="na">/path/to/debugging/server</span>
+  <span class="na">arg1</span>
+  <span class="na">arg2</span>
+  <span class="na">...</span>
+  <span class="na">argN</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug-port">
+<span id="projectconf-debug-port"></span><h2><a class="toc-backref" href="#id9"><code class="docutils literal notranslate"><span class="pre">debug_port</span></code></a><a class="headerlink" href="#debug-port" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>A debugging port of a remote target. Could be a serial device or network address.
+PlatformIO detects it automatically if is not specified.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/dev/ttyUSB0</span></code> - Unix-based OS</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">COM3</span></code> - Windows OS</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">localhost:3333</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="debug-speed">
+<span id="projectconf-debug-speed"></span><h2><a class="toc-backref" href="#id10"><code class="docutils literal notranslate"><span class="pre">debug_speed</span></code></a><a class="headerlink" href="#debug-speed" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">Number</span> <span class="pre">|</span> <span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>The debug adapter speed. The value format depends on the type of <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that this option takes effect only if <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> implement it.</p>
+</div>
+<p>Examples:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_debug_speed_examples]</span>
+<span class="na">...</span>
+
+<span class="c1">; fixed speed in kHz</span>
+<span class="na">debug_speed</span> <span class="o">=</span> <span class="s">500</span>
+
+<span class="c1">; automatic speed (only J-Link)</span>
+<span class="na">debug_speed</span> <span class="o">=</span> <span class="s">auto</span>
+
+<span class="c1">; adaptive clocking instead of fixed JTAG speed (only J-Link)</span>
+<span class="na">debug_speed</span> <span class="o">=</span> <span class="s">adaptive</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug-svd-path">
+<span id="projectconf-debug-svd-path"></span><h2><a class="toc-backref" href="#id11"><code class="docutils literal notranslate"><span class="pre">debug_svd_path</span></code></a><a class="headerlink" href="#debug-svd-path" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">FilePath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>A custom path to <a class="reference external" href="https://www.keil.com/pack/doc/CMSIS/SVD/html/svd_Format_pg.html">SVD file</a>
+which contains information about device peripherals.</p>
+</div>
+<div class="section" id="debug-server-ready-pattern">
+<h2><a class="toc-backref" href="#id12"><code class="docutils literal notranslate"><span class="pre">debug_server_ready_pattern</span></code></a><a class="headerlink" href="#debug-server-ready-pattern" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>A pattern to determine when debugging server is ready for an incoming connection.
+The pattern applies tool debugging server process’s STDOUT and STDERR outputs.</p>
+<p>A regular expression (RegExp) is allowed if the pattern starts with <code class="docutils literal notranslate"><span class="pre">^</span></code> character.
+See <a class="reference external" href="https://docs.python.org/3/library/re.html">Python regular expression operations</a>
+for syntax and details.</p>
+<p>Examples:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_debug_server_ready_pattern]</span>
+<span class="na">...</span>
+
+<span class="c1">; match by string</span>
+<span class="na">debug_server_ready_pattern</span> <span class="o">=</span> <span class="s">Waiting for GDB connection</span>
+
+<span class="c1">; match by regular expression</span>
+<span class="na">debug_server_ready_pattern</span> <span class="o">=</span> <span class="s">^.*Listening on port \d+ for gdb connections</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debug-test">
+<span id="projectconf-debug-test"></span><h2><a class="toc-backref" href="#id13"><code class="docutils literal notranslate"><span class="pre">debug_test</span></code></a><a class="headerlink" href="#debug-test" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>A name of a unit test to be debugged. See <a class="reference internal" href="../plus/unit-testing.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> for further details.</p>
+<p>If a source file of a test is located in the root of <a class="reference internal" href="section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>,
+the <code class="docutils literal notranslate"><span class="pre">debug_test</span></code> option should be set to <code class="docutils literal notranslate"><span class="pre">*</span></code>.</p>
+<p>Examples:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug_a_test]</span>
+<span class="na">...</span>
+
+<span class="na">debug_test</span> <span class="o">=</span> <span class="s">test_calcualtor</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="section_env_advanced.html" class="btn btn-neutral float-right" title="Advanced options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="section_env_test.html" class="btn btn-neutral float-left" title="Test options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/projectconf/section_env_debug.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/projectconf/section_env_debug.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

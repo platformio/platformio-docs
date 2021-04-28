@@ -1,0 +1,852 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Installation &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/core/installation.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quick Start" href="quickstart.html" />
+    <link rel="prev" title="Demo" href="userguide/demo.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">PlatformIO Core (CLI)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="userguide/demo.html">Demo</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#system-requirements">System requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-methods">Installation Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#installer-script">Installer Script</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#python-package-manager">Python Package Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#macos-homebrew">macOS Homebrew</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#development-version">Development Version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-shell-commands">Install Shell Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#unix-and-unix-like">Unix and Unix-like</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#uninstall-platformio-core-and-dependent-packages">Uninstall PlatformIO Core and dependent packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#integration-with-custom-applications-extensions-plugins">Integration with custom applications (extensions, plugins)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#prerequisite">Prerequisite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#workflow">Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/index.html">CLI Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">PlatformIO Core (CLI)</a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/core/installation.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<span id="core-installation"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that you do not need to install <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> if you are going
+to use <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>. <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> is built into
+PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.</p>
+<p>If you need <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> outside PlatformIO IDE, please <a class="reference internal" href="#piocore-install-shell-commands"><span class="std std-ref">Install Shell Commands</span></a>.</p>
+</div>
+<p><strong>PlatformIO Core</strong> is written in <a class="reference external" href="https://www.python.org/downloads/">Python</a>
+and works on Windows, macOS, Linux, FreeBSD and <em>ARM</em>-based credit-card sized
+computers (<a class="reference external" href="http://www.raspberrypi.org">Raspberry Pi</a>,
+<a class="reference external" href="http://beagleboard.org">BeagleBone</a>, <a class="reference external" href="http://cubieboard.org">CubieBoard</a>,
+<a class="reference external" href="https://www.artik.io">Samsung ARTIK</a>, etc.).</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#system-requirements" id="id6">System requirements</a></p></li>
+<li><p><a class="reference internal" href="#installation-methods" id="id7">Installation Methods</a></p>
+<ul>
+<li><p><a class="reference internal" href="#installer-script" id="id8">Installer Script</a></p>
+<ul>
+<li><p><a class="reference internal" href="#super-quick-mac-linux" id="id9">Super-Quick (Mac / Linux)</a></p></li>
+<li><p><a class="reference internal" href="#local-download-mac-linux-windows" id="id10">Local Download (Mac / Linux / Windows)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#python-package-manager" id="id11">Python Package Manager</a></p></li>
+<li><p><a class="reference internal" href="#macos-homebrew" id="id12">macOS Homebrew</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#development-version" id="id13">Development Version</a></p></li>
+<li><p><a class="reference internal" href="#install-shell-commands" id="id14">Install Shell Commands</a></p>
+<ul>
+<li><p><a class="reference internal" href="#unix-and-unix-like" id="id15">Unix and Unix-like</a></p>
+<ul>
+<li><p><a class="reference internal" href="#method-1" id="id16">Method 1</a></p></li>
+<li><p><a class="reference internal" href="#method-2" id="id17">Method 2</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#windows" id="id18">Windows</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#uninstall-platformio-core-and-dependent-packages" id="id19">Uninstall PlatformIO Core and dependent packages</a></p></li>
+<li><p><a class="reference internal" href="#integration-with-custom-applications-extensions-plugins" id="id20">Integration with custom applications (extensions, plugins)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#prerequisite" id="id21">Prerequisite</a></p>
+<ul>
+<li><p><a class="reference internal" href="#python-interpreter" id="id22">Python Interpreter</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id23">Installer Script</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#workflow" id="id24">Workflow</a></p>
+<ul>
+<li><p><a class="reference internal" href="#step-1-where-is-platformio-core-installed" id="id25">Step 1. Where is PlatformIO Core installed?</a></p></li>
+<li><p><a class="reference internal" href="#step-2-install-platformio-core" id="id26">Step 2. Install PlatformIO Core</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#troubleshooting" id="id27">Troubleshooting</a></p></li>
+</ul>
+</div>
+<div class="section" id="system-requirements">
+<h2><a class="toc-backref" href="#id6">System requirements</a><a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
+<dl class="field-list">
+<dt class="field-odd">Operating System</dt>
+<dd class="field-odd"><p>Windows, macOS, Linux, FreeBSD, Linux ARMv6+</p>
+</dd>
+<dt class="field-even">Python Interpreter</dt>
+<dd class="field-even"><p><strong>Python 3.6+ or above</strong>. See detailed instruction on how to <a class="reference internal" href="../faq.html#faq-install-python"><span class="std std-ref">Install Python Interpreter</span></a>.</p>
+</dd>
+<dt class="field-odd">Terminal Application</dt>
+<dd class="field-odd"><p>All commands below should be executed in
+<a class="reference external" href="http://en.wikipedia.org/wiki/Command-line_interface">Command-line</a>
+application (Terminal). For macOS and Linux OS - <em>Terminal</em> application,
+for Windows OS – <code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> application.</p>
+</dd>
+<dt class="field-even">Access to Serial Ports (USB/UART)</dt>
+<dd class="field-even"><p><strong>Windows Users:</strong> Please check that you have correctly installed USB
+driver from board manufacturer</p>
+<p><strong>Linux Users</strong>:</p>
+<ul class="simple">
+<li><p>Please install <a class="reference internal" href="../faq.html#faq-udev-rules"><span class="std std-ref">99-platformio-udev.rules</span></a></p></li>
+<li><p>Raspberry Pi users, please read this article
+<a class="reference external" href="https://hallard.me/enable-serial-port-on-raspberry-pi/">Enable serial port on Raspberry Pi</a>.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="installation-methods">
+<h2><a class="toc-backref" href="#id7">Installation Methods</a><a class="headerlink" href="#installation-methods" title="Permalink to this headline">¶</a></h2>
+<p>Please <em>choose ONE of</em> the following methods:</p>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#installer-script" id="id28">Installer Script</a></p>
+<ul>
+<li><p><a class="reference internal" href="#super-quick-mac-linux" id="id29">Super-Quick (Mac / Linux)</a></p></li>
+<li><p><a class="reference internal" href="#local-download-mac-linux-windows" id="id30">Local Download (Mac / Linux / Windows)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#python-package-manager" id="id31">Python Package Manager</a></p></li>
+<li><p><a class="reference internal" href="#macos-homebrew" id="id32">macOS Homebrew</a></p></li>
+</ul>
+</div>
+<div class="section" id="installer-script">
+<span id="installation-installer-script"></span><h3><a class="toc-backref" href="#id28">Installer Script</a><a class="headerlink" href="#installer-script" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>PlatformIO <strong>DOES NOT</strong> require administrative/sudo permissions. Please install using
+default user account <strong>WITHOUT EXTRA PERMISSIONS</strong>.</p>
+</div>
+<div class="section" id="super-quick-mac-linux">
+<h4><a class="toc-backref" href="#id29">Super-Quick (Mac / Linux)</a><a class="headerlink" href="#super-quick-mac-linux" title="Permalink to this headline">¶</a></h4>
+<p>To install or upgrade <strong>PlatformIO Core</strong> paste that at a <em>Terminal</em> prompt:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py<span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="c1"># or using `curl`</span>
+
+curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py -o get-platformio.py
+python3 get-platformio.py
+
+<span class="c1"># or using `wget`</span>
+
+wget https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py -O get-platformio.py
+python3 get-platformio.py
+</pre></div>
+</div>
+</div>
+<div class="section" id="local-download-mac-linux-windows">
+<h4><a class="toc-backref" href="#id30">Local Download (Mac / Linux / Windows)</a><a class="headerlink" href="#local-download-mac-linux-windows" title="Permalink to this headline">¶</a></h4>
+<p>To install or upgrade <em>PlatformIO Core</em>, download (save as…)
+<a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py">get-platformio.py</a>
+script. Then run the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># change directory to folder where is located downloaded &quot;get-platformio.py&quot;</span>
+<span class="nb">cd</span> /path/to/dir/where/is/located/get-platformio.py/script
+
+<span class="c1"># run it</span>
+python get-platformio.py
+</pre></div>
+</div>
+<p>On <em>Windows OS</em> it may look like:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># change directory to folder where is located downloaded &quot;get-platformio.py&quot;</span>
+<span class="nb">cd</span> C:<span class="se">\p</span>ath<span class="se">\t</span>o<span class="se">\d</span>ir<span class="se">\w</span>here<span class="se">\i</span>s<span class="se">\l</span>ocated<span class="se">\s</span>cript<span class="se">\g</span>et-platformio.py
+
+<span class="c1"># run it</span>
+python.exe get-platformio.py
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you need to have access to <code class="docutils literal notranslate"><span class="pre">platformio</span></code> or <code class="docutils literal notranslate"><span class="pre">platformio.exe</span></code> commands from
+other applications or terminal in your OS, please <a class="reference internal" href="#piocore-install-shell-commands"><span class="std std-ref">Install Shell Commands</span></a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="python-package-manager">
+<h3><a class="toc-backref" href="#id31">Python Package Manager</a><a class="headerlink" href="#python-package-manager" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We recommend using this method <strong>ONLY FOR</strong> <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> use cases or where your have
+full permissions to install PlatformIO Core into the global scope of your OS.</p>
+<p>For personal using, and avoiding maintenance and upgrade issues, we
+<strong>HIGHLY RECOMMEND</strong> using <a class="reference internal" href="#installation-installer-script"><span class="std std-ref">Installer Script</span></a> which installs
+<strong>PlatformIO Core</strong> into an isolated virtual environment and does not affect your OS.</p>
+</div>
+<p>The latest stable version of <strong>PlatformIO Core</strong> may be installed or upgraded via
+Python Package Manager (<a class="reference external" href="https://pip.pypa.io">pip</a>) as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -U platformio
+</pre></div>
+</div>
+</div>
+<div class="section" id="macos-homebrew">
+<h3><a class="toc-backref" href="#id32">macOS Homebrew</a><a class="headerlink" href="#macos-homebrew" title="Permalink to this headline">¶</a></h3>
+<p>The latest stable version of PlatformIO may be installed or upgraded via
+macOS Homebrew Packages Manager (<a class="reference external" href="http://brew.sh/">brew</a>) as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install platformio
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="development-version">
+<span id="installation-develop"></span><h2><a class="toc-backref" href="#id13">Development Version</a><a class="headerlink" href="#development-version" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you use <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>, please enable development version:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../integration/ide/atom.html#ide-atom"><span class="std std-ref">PlatformIO IDE for Atom</span></a>: “Menu PlatformIO: Settings &gt; PlatformIO IDE &gt; Use development
+version of PlatformIO Core”</p></li>
+<li><p><a class="reference internal" href="../integration/ide/vscode.html#ide-vscode"><span class="std std-ref">VSCode</span></a>: Set <code class="docutils literal notranslate"><span class="pre">platformio-ide.useDevelopmentPIOCore</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code> in
+<a class="reference internal" href="../integration/ide/vscode.html#ide-vscode-settings"><span class="std std-ref">Settings</span></a>.</p></li>
+</ul>
+</div>
+<p>Install the latest PlatformIO from the <code class="docutils literal notranslate"><span class="pre">develop</span></code> branch:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># uninstall existing version</span>
+pip uninstall platformio
+
+<span class="c1"># install the latest development version of PlatformIO</span>
+pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
+</pre></div>
+</div>
+<p>If you want to be up-to-date with the latest <code class="docutils literal notranslate"><span class="pre">develop</span></code> version of PlatformIO,
+then you need to re-install PlatformIO each time you see a new commits in
+<a class="reference external" href="https://github.com/platformio/platformio-core/commits/develop">PlatformIO GitHub repository (branch: develop)</a> like so:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
+</pre></div>
+</div>
+<p>Or:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio upgrade --dev
+</pre></div>
+</div>
+<p>To revert to the latest stable version:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip uninstall platformio
+pip install -U platformio
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-shell-commands">
+<span id="piocore-install-shell-commands"></span><h2><a class="toc-backref" href="#id14">Install Shell Commands</a><a class="headerlink" href="#install-shell-commands" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> consists of 2 standalone tools in a system:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">platformio</span></code> or <code class="docutils literal notranslate"><span class="pre">pio</span></code> (short alias) - <a class="reference internal" href="userguide/index.html#piocore-userguide"><span class="std std-ref">CLI Guide</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">piodebuggdb</span></code> - alias of <a class="reference internal" href="userguide/cmd_debug.html#cmd-debug"><span class="std std-ref">pio debug</span></a></p></li>
+</ul>
+<p>If you have <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> already installed, you do not need to install
+<a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> separately. Just link these tools with your shell:</p>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><p><a class="reference internal" href="#unix-and-unix-like" id="id33">Unix and Unix-like</a></p>
+<ul>
+<li><p><a class="reference internal" href="#method-1" id="id34">Method 1</a></p></li>
+<li><p><a class="reference internal" href="#method-2" id="id35">Method 2</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#windows" id="id36">Windows</a></p></li>
+</ul>
+</div>
+<div class="section" id="unix-and-unix-like">
+<h3><a class="toc-backref" href="#id33">Unix and Unix-like</a><a class="headerlink" href="#unix-and-unix-like" title="Permalink to this headline">¶</a></h3>
+<p>In Unix and Unix-like systems, there are multiple ways to achieve this.</p>
+<div class="section" id="method-1">
+<h4><a class="toc-backref" href="#id34">Method 1</a><a class="headerlink" href="#method-1" title="Permalink to this headline">¶</a></h4>
+<p>You can export PlatformIO executables’ directory to the PATH environmental
+variable. This method will allow you to execute <code class="docutils literal notranslate"><span class="pre">platformio</span></code> commands from
+any terminal emulator as long as you’re logged in as the user PlatformIO is
+installed and configured for.</p>
+<p>If you use Bash as your default shell, you can do it by editing either
+<code class="docutils literal notranslate"><span class="pre">~/.profile</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> and adding the following line:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/.platformio/penv/bin
+</pre></div>
+</div>
+<p>If you use Zsh, you can either edit <code class="docutils literal notranslate"><span class="pre">~/.zprofile</span></code> and add the code above, or
+for supporting both, Bash and Zsh, you can first edit <code class="docutils literal notranslate"><span class="pre">~/.profile</span></code> and add
+the code above, then edit <code class="docutils literal notranslate"><span class="pre">~/.zprofile</span></code> and add the following line:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>emulate sh -c <span class="s1">&#39;. ~/.profile&#39;</span>
+</pre></div>
+</div>
+<p>After everything’s done, just restart your session (log out and log back in) and you’re good to go.</p>
+<p>If you don’t know the difference between the two, check out <a class="reference external" href="https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc">this page</a>.</p>
+</div>
+<div class="section" id="method-2">
+<h4><a class="toc-backref" href="#id35">Method 2</a><a class="headerlink" href="#method-2" title="Permalink to this headline">¶</a></h4>
+<p>You can create system-wide symlinks. This method is not recommended if you have
+multiple users on your computer because the symlinks will be broken for other users
+and they will get errors while executing PlatformIO commands. If that’s not a problem,
+open your system terminal app and paste these commands
+(<strong>MAY require</strong> administrator access <code class="docutils literal notranslate"><span class="pre">sudo</span></code>):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
+ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
+ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
+</pre></div>
+</div>
+<p>After that, you should be able to run PlatformIO from terminal. No restart is required.</p>
+</div>
+</div>
+<div class="section" id="windows">
+<h3><a class="toc-backref" href="#id36">Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<p>Please read one of these instructions <a class="reference external" href="https://www.google.com.ua/search?q=how+do+i+set+or+change+the+path+system+variable">How do I set or change the PATH system variable?</a></p>
+<p>You need to edit system environment variable called <code class="docutils literal notranslate"><span class="pre">Path</span></code> and append
+<code class="docutils literal notranslate"><span class="pre">C:\Users\UserName\.platformio\penv\Scripts;</span></code> path in the beginning of a
+list (please replace <code class="docutils literal notranslate"><span class="pre">UserName</span></code> with your account name).</p>
+</div>
+</div>
+<div class="section" id="uninstall-platformio-core-and-dependent-packages">
+<span id="piocore-uninstall"></span><h2><a class="toc-backref" href="#id19">Uninstall PlatformIO Core and dependent packages</a><a class="headerlink" href="#uninstall-platformio-core-and-dependent-packages" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Uninstall PlatformIO Core tool</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># uninstall standalone PlatformIO Core installed via `pip`</span>
+pip uninstall platformio
+
+<span class="c1"># uninstall Homebrew&#39;s PlatformIO Core (only macOS users if you installed it via Homebrew before)</span>
+brew uninstall platformio
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Dependent packages, global libraries are installed to <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>
+folder (in user’s HOME directory). Just remove it.</p></li>
+</ul>
+</div>
+<div class="section" id="integration-with-custom-applications-extensions-plugins">
+<h2><a class="toc-backref" href="#id20">Integration with custom applications (extensions, plugins)</a><a class="headerlink" href="#integration-with-custom-applications-extensions-plugins" title="Permalink to this headline">¶</a></h2>
+<p>We recommend using PlatformIO Core <strong>Installer Script</strong> when you integrate PlatformIO Core
+into an application, such as extension or plugin for IDE. Examples that use this installer are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/platformio/platformio-node-helpers">platformio-node-helpers</a>,
+is used by <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide">PlatformIO IDE for VSCode</a>
+and <a class="reference external" href="https://atom.io/packages/platformio-ide">PlatformIO IDE for Atom</a></p></li>
+</ul>
+<div class="section" id="prerequisite">
+<h3><a class="toc-backref" href="#id21">Prerequisite</a><a class="headerlink" href="#prerequisite" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="python-interpreter">
+<h4><a class="toc-backref" href="#id22">Python Interpreter</a><a class="headerlink" href="#python-interpreter" title="Permalink to this headline">¶</a></h4>
+<p>PlatformIO Core Installer Script is written in Python and is compatible with Python 2.7+
+and Python 3.5+. <strong>We highly recommend using the latest Python 3</strong>.</p>
+<p>Python is installed by default on the most popular Unix OS (macOS, Linux, FreeBSD).
+If there is no Python on a user machine (you can check running <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code>),
+we have 2 options:</p>
+<ol class="arabic simple">
+<li><p>Ask the user to install Python 3 using our guide <a class="reference internal" href="../faq.html#faq-install-python"><span class="std std-ref">Install Python Interpreter</span></a></p></li>
+<li><p>You can automatically <a class="reference external" href="https://api.registry.platformio.org/v3/packages/platformio/tool/python-portable">Download Portable Python 3 (API)</a>
+and unpack it in a cache folder of your application. Later, you can use
+<code class="docutils literal notranslate"><span class="pre">unpacked_protable_python_dir/python.exe</span></code>  for the installer script.</p></li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h4><a class="toc-backref" href="#id23">Installer Script</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p>There are 2 options on how to work with PlatformIO Core Installer Script:</p>
+<ol class="arabic simple">
+<li><p>Bundle <a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py">get-platformio.py</a> file into your application</p></li>
+<li><p>Download <a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py">get-platformio.py</a> file on demand.</p></li>
+</ol>
+<p>In both cases, you will need to have <code class="docutils literal notranslate"><span class="pre">get-platformio.py</span></code> script on the end-user machine.
+You can copy or download it to a cache/temporary folder.</p>
+<p>A list of arguments and options for the installer script is available via</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python get-platformio.py --help
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="workflow">
+<h3><a class="toc-backref" href="#id24">Workflow</a><a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h3>
+<p>We will describe a simple workflow on how to automatically install <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> for
+end-user of your application/extension. We assume that <code class="docutils literal notranslate"><span class="pre">get-platformio.py</span></code> script
+is already copied/downloaded and exists on the end-user machine. See above how to get it.</p>
+<div class="section" id="step-1-where-is-platformio-core-installed">
+<h4><a class="toc-backref" href="#id25">Step 1. Where is PlatformIO Core installed?</a><a class="headerlink" href="#step-1-where-is-platformio-core-installed" title="Permalink to this headline">¶</a></h4>
+<p>You should check the PlatformIO Core installation state <strong>each time</strong> when the user
+starts your application. You need to call the Installer Script with <code class="docutils literal notranslate"><span class="pre">check</span> <span class="pre">core</span></code> arguments:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python get-platformio.py check core
+</pre></div>
+</div>
+<p>This command returns <code class="docutils literal notranslate"><span class="pre">0</span></code> “exit code” when PlatformIO Core is already installed
+and is ready for use, otherwise, the non-zero code of subprocess will be returned and
+you need to install PlatformIO Core (see <strong>Step #2</strong> below).</p>
+<p>If you need to have full information about PlatformIO Core installation state,
+please run with <code class="docutils literal notranslate"><span class="pre">--dump-state</span></code> option and specify a folder or a full path where
+to save data in JSON format:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>get-platformio.py check core --dump-state tmpdir/pioinstaller-state.json
+</pre></div>
+</div>
+<p>Now, read JSON file and use <code class="docutils literal notranslate"><span class="pre">platformio_exe</span></code> binary to call PlatforIO Core using CLI
+(see <a class="reference internal" href="userguide/index.html#piocore-userguide"><span class="std std-ref">CLI Guide</span></a>). You can also export <code class="docutils literal notranslate"><span class="pre">penv_bin_dir</span></code> into system
+environment <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable and <code class="docutils literal notranslate"><span class="pre">platformio</span></code> command will be available without
+a full path.</p>
+<p>Example of <code class="docutils literal notranslate"><span class="pre">pioinstaller-state.json</span></code> run on macOS:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;cache_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/.cache&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;core_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;core_version&quot;</span><span class="p">:</span> <span class="s2">&quot;4.3.1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;installer_version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;is_develop_core&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nt">&quot;penv_bin_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/penv/bin&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;penv_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/penv&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;platformio_exe&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/platformio&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;python_exe&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/python&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;system&quot;</span><span class="p">:</span> <span class="s2">&quot;darwin_x86_64&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-2-install-platformio-core">
+<h4><a class="toc-backref" href="#id26">Step 2. Install PlatformIO Core</a><a class="headerlink" href="#step-2-install-platformio-core" title="Permalink to this headline">¶</a></h4>
+<p>To install PlatformIO Core into the virtual environment in an automatic mode, please call
+installer script without any arguments:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python get-platformio.py
+</pre></div>
+</div>
+<p>Available options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--verbose</span></code>, verbose output</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--dev</span></code>, install the latest development version of PlatformIO Core</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--ignore-python</span></code>, a path to Python to be ignored (multiple options and unix wildcards are allowed)</p></li>
+</ul>
+<p>More options are available at <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">get-platformio.py</span> <span class="pre">--help</span></code>.</p>
+<p>Installer Script will return exit code <code class="docutils literal notranslate"><span class="pre">0</span></code> on success, otherwise non-zero code and
+error explanation.</p>
+<p>Next time just use again <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">get-platformio.py</span> <span class="pre">check</span> <span class="pre">core</span></code> as described in Step #1 (see above).</p>
+</div>
+</div>
+</div>
+<div class="section" id="troubleshooting">
+<h2><a class="toc-backref" href="#id27">Troubleshooting</a><a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Linux OS</strong>: Don’t forget to install “udev” rules file
+<a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules">99-platformio-udev.rules</a> (an instruction is located in the file).</p>
+<p><strong>Windows OS</strong>: Please check that you have correctly installed USB driver
+from board manufacturer</p>
+</div>
+<p>For further details, frequently questions, known issues, please
+refer to <a class="reference internal" href="../faq.html#faq"><span class="std std-ref">Frequently Asked Questions</span></a>.</p>
+<p>If you find any issues with PlatformIO Core Installer Script, please report to
+<a class="reference external" href="https://github.com/platformio/platformio-core-installer/issues">https://github.com/platformio/platformio-core-installer/issues</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="quickstart.html" class="btn btn-neutral float-right" title="Quick Start" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="userguide/demo.html" class="btn btn-neutral float-left" title="Demo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/core/installation.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/core/installation.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

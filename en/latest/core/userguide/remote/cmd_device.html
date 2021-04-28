@@ -1,0 +1,749 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pio remote device &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/core/userguide/remote/cmd_device.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="pio remote run" href="cmd_run.html" />
+    <link rel="prev" title="PlatformIO Remote Agent" href="cmd_agent.html" />
+ 
+<link rel="stylesheet" href="../../../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../plus/pio-remote.html">Remote Development</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../plus/pio-remote.html#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../plus/pio-remote.html#use-cases">Use Cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../plus/pio-remote.html#technology">Technology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../plus/pio-remote.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../plus/pio-remote.html#quick-start">Quick Start</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../plus/pio-remote.html#cli-guide">CLI Guide</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">PlatformIO Remote CLI</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="cmd_agent.html">PlatformIO Remote Agent</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">pio remote device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmd_run.html">pio remote run</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmd_test.html">pio remote test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmd_update.html">pio remote update</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">PlatformIO Core (CLI)</a> &raquo;</li>
+        
+          <li><a href="../index.html">CLI Guide</a> &raquo;</li>
+        
+          <li><a href="index.html">PlatformIO Remote CLI</a> &raquo;</li>
+        
+      <li>pio remote device</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/core/userguide/remote/cmd_device.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pio-remote-device">
+<span id="cmd-remote-device"></span><h1><a class="toc-backref" href="#id4">pio remote device</a><a class="headerlink" href="#pio-remote-device" title="Permalink to this headline">¶</a></h1>
+<p><strong>Remote Device: monitor remote device or list existing.</strong></p>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#pio-remote-device" id="id4">pio remote device</a></p>
+<ul>
+<li><p><a class="reference internal" href="#pio-remote-device-list" id="id5">pio remote device list</a></p>
+<ul>
+<li><p><a class="reference internal" href="#usage" id="id6">Usage</a></p></li>
+<li><p><a class="reference internal" href="#description" id="id7">Description</a></p></li>
+<li><p><a class="reference internal" href="#options" id="id8">Options</a></p></li>
+<li><p><a class="reference internal" href="#example" id="id9">Example</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#pio-remote-device-monitor" id="id10">pio remote device monitor</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id1" id="id11">Usage</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id12">Description</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id13">Options</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id14">Examples</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="pio-remote-device-list">
+<span id="cmd-remote-device-list"></span><h2><a class="toc-backref" href="#id5">pio remote device list</a><a class="headerlink" href="#pio-remote-device-list" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="usage">
+<h3><a class="toc-backref" href="#id6">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio remote device list <span class="o">[</span>OPTIONS<span class="o">]</span>
+
+<span class="c1"># List devices from the specified agents. Multiple agents are allowed.</span>
+pio remote --agent NAME device list <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="description">
+<h3><a class="toc-backref" href="#id7">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h3>
+<p>List <a class="reference external" href="http://en.wikipedia.org/wiki/Serial_port">Serial Ports</a> on remote
+machines where <a class="reference internal" href="cmd_agent.html#cmd-remote-agent"><span class="std std-ref">PlatformIO Remote Agent</span></a> is started.</p>
+<p>You can list devices from the specified remote machines using <code class="docutils literal notranslate"><span class="pre">--agent</span> <span class="pre">NAME</span></code>
+option between “remote” &amp; “device” sub-commands. For example, you have run
+<a class="reference internal" href="cmd_agent.html#cmdoption-pio-remote-agent-start-n"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">agent</span> <span class="pre">start</span> <span class="pre">--name</span></code></a> command with “home” and “office”
+options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">agent</span> <span class="pre">start</span> <span class="pre">--name</span> <span class="pre">home</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">agent</span> <span class="pre">start</span> <span class="pre">--name</span> <span class="pre">office</span></code></p></li>
+</ul>
+<p>Now, to list devices from office machine please use
+<code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">--agent</span> <span class="pre">office</span> <span class="pre">device</span> <span class="pre">list</span></code>.</p>
+<p>Multiple agents are allowed (
+<code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">--agent</span> <span class="pre">lab1</span> <span class="pre">--agent</span> <span class="pre">lab3</span> <span class="pre">device</span> <span class="pre">...</span></code>).</p>
+</div>
+<div class="section" id="options">
+<h3><a class="toc-backref" href="#id8">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h3>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-list-json-output">
+<code class="sig-name descname"><span class="pre">--json-output</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-list-json-output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Return the output in <a class="reference external" href="http://en.wikipedia.org/wiki/JSON">JSON</a> format</p>
+</div>
+<div class="section" id="example">
+<h3><a class="toc-backref" href="#id9">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pio</span> <span class="n">remote</span> <span class="n">device</span> <span class="nb">list</span>
+
+<span class="n">Agent</span> <span class="n">innomac</span><span class="o">.</span><span class="n">local</span>
+<span class="o">===================</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">Bluetooth</span><span class="o">-</span><span class="n">Incoming</span><span class="o">-</span><span class="n">Port</span>
+<span class="o">-------------------------------</span>
+<span class="n">Hardware</span> <span class="n">ID</span><span class="p">:</span> <span class="n">n</span><span class="o">/</span><span class="n">a</span>
+<span class="n">Description</span><span class="p">:</span> <span class="n">n</span><span class="o">/</span><span class="n">a</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">obd2ecu</span><span class="o">-</span><span class="n">SPPDev</span>
+<span class="o">----------------------</span>
+<span class="n">Hardware</span> <span class="n">ID</span><span class="p">:</span> <span class="n">n</span><span class="o">/</span><span class="n">a</span>
+<span class="n">Description</span><span class="p">:</span> <span class="n">n</span><span class="o">/</span><span class="n">a</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbmodemFA1431</span>
+<span class="o">----------------------</span>
+<span class="n">Hardware</span> <span class="n">ID</span><span class="p">:</span> <span class="n">USB</span> <span class="n">VID</span><span class="p">:</span><span class="n">PID</span><span class="o">=</span><span class="mi">2</span><span class="n">A03</span><span class="p">:</span><span class="mi">0043</span> <span class="n">SER</span><span class="o">=</span><span class="mi">75435353038351015271</span> <span class="n">LOCATION</span><span class="o">=</span><span class="mi">250</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">3</span>
+<span class="n">Description</span><span class="p">:</span> <span class="n">Arduino</span> <span class="n">Uno</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbserial</span><span class="o">-</span><span class="n">A6004003</span>
+<span class="o">--------------------------</span>
+<span class="n">Hardware</span> <span class="n">ID</span><span class="p">:</span> <span class="n">USB</span> <span class="n">VID</span><span class="p">:</span><span class="n">PID</span><span class="o">=</span><span class="mi">0403</span><span class="p">:</span><span class="mi">6001</span> <span class="n">SER</span><span class="o">=</span><span class="n">A6004003</span> <span class="n">LOCATION</span><span class="o">=</span><span class="mi">253</span><span class="o">-</span><span class="mf">1.3</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">Description</span><span class="p">:</span> <span class="n">FT232R</span> <span class="n">USB</span> <span class="n">UART</span> <span class="o">-</span> <span class="n">FT232R</span> <span class="n">USB</span> <span class="n">UART</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">SLAB_USBtoUART</span>
+<span class="o">----------------------</span>
+<span class="n">Hardware</span> <span class="n">ID</span><span class="p">:</span> <span class="n">USB</span> <span class="n">VID</span><span class="p">:</span><span class="n">PID</span><span class="o">=</span><span class="mi">10</span><span class="n">C4</span><span class="p">:</span><span class="n">EA60</span> <span class="n">SER</span><span class="o">=</span><span class="mi">0001</span> <span class="n">LOCATION</span><span class="o">=</span><span class="mi">253</span><span class="o">-</span><span class="mf">1.3</span><span class="o">.</span><span class="mi">2</span>
+<span class="n">Description</span><span class="p">:</span> <span class="n">CP2102</span> <span class="n">USB</span> <span class="n">to</span> <span class="n">UART</span> <span class="n">Bridge</span> <span class="n">Controller</span> <span class="o">-</span> <span class="n">CP2102</span> <span class="n">USB</span> <span class="n">to</span> <span class="n">UART</span> <span class="n">Bridge</span> <span class="n">Controller</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cu</span><span class="o">.</span><span class="n">usbmodem589561</span>
+<span class="o">----------------------</span>
+<span class="n">Hardware</span> <span class="n">ID</span><span class="p">:</span> <span class="n">USB</span> <span class="n">VID</span><span class="p">:</span><span class="n">PID</span><span class="o">=</span><span class="mi">16</span><span class="n">C0</span><span class="p">:</span><span class="mi">0483</span> <span class="n">SER</span><span class="o">=</span><span class="mi">589560</span> <span class="n">LOCATION</span><span class="o">=</span><span class="mi">250</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">Description</span><span class="p">:</span> <span class="n">USB</span> <span class="n">Serial</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pio-remote-device-monitor">
+<span id="cmd-remote-device-monitor"></span><h2><a class="toc-backref" href="#id10">pio remote device monitor</a><a class="headerlink" href="#pio-remote-device-monitor" title="Permalink to this headline">¶</a></h2>
+<p><strong>Remote Serial Port Monitor</strong></p>
+<div class="section" id="id1">
+<h3><a class="toc-backref" href="#id11">Usage</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio remote device monitor <span class="o">[</span>OPTIONS<span class="o">]</span>
+
+<span class="c1"># Connect to a specified agent</span>
+pio remote --agent NAME device monitor <span class="o">[</span>OPTIONS<span class="o">]</span>
+pio remote -a NAME device monitor <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3><a class="toc-backref" href="#id12">Description</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Connect to Serial Port of remote device and receive or send data in real time.
+<a class="reference internal" href="cmd_agent.html#cmd-remote-agent"><span class="std std-ref">PlatformIO Remote Agent</span></a> should be started before on a remote machine.</p>
+<p>To control <em>monitor</em> please use these “hot keys”:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> Quit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl+T</span></code> Menu</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl+T</span> <span class="pre">followed</span> <span class="pre">by</span> <span class="pre">Ctrl+H</span></code> Help</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3><a class="toc-backref" href="#id13">Options</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-p">
+<span id="cmdoption-pio-remote-device-monitor-port"></span><code class="sig-name descname"><span class="pre">-p</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--port</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-p" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Port, a number or a device name</p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-b">
+<span id="cmdoption-pio-remote-device-monitor-baud"></span><code class="sig-name descname"><span class="pre">-b</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--baud</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-b" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Set baud rate, default <code class="docutils literal notranslate"><span class="pre">9600</span></code></p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-parity">
+<code class="sig-name descname"><span class="pre">--parity</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-parity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Set parity (<em>None, Even, Odd, Space, Mark</em>), one of
+[<code class="docutils literal notranslate"><span class="pre">N</span></code>, <code class="docutils literal notranslate"><span class="pre">E</span></code>, <code class="docutils literal notranslate"><span class="pre">O</span></code>, <code class="docutils literal notranslate"><span class="pre">S</span></code>, <code class="docutils literal notranslate"><span class="pre">M</span></code>], default <code class="docutils literal notranslate"><span class="pre">N</span></code></p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-rtscts">
+<code class="sig-name descname"><span class="pre">--rtscts</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-rtscts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Enable <code class="docutils literal notranslate"><span class="pre">RTS/CTS</span></code> flow control, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-xonxoff">
+<code class="sig-name descname"><span class="pre">--xonxoff</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-xonxoff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Enable software flow control, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-rts">
+<code class="sig-name descname"><span class="pre">--rts</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-rts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Set initial <code class="docutils literal notranslate"><span class="pre">RTS</span></code> line state, default <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-dtr">
+<code class="sig-name descname"><span class="pre">--dtr</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-dtr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Set initial <code class="docutils literal notranslate"><span class="pre">DTR</span></code> line state, default <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-echo">
+<code class="sig-name descname"><span class="pre">--echo</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-echo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Enable local echo, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-encoding">
+<code class="sig-name descname"><span class="pre">--encoding</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-encoding" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Set the encoding for the serial port (e.g. <code class="docutils literal notranslate"><span class="pre">hexlify</span></code>, <code class="docutils literal notranslate"><span class="pre">Latin1</span></code>, <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code>),
+default <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code>.</p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-f">
+<span id="cmdoption-pio-remote-device-monitor-filter"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--filter</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-f" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Add text transformation. Available filters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">colorize</span></code> Apply different colors for received and echo</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">debug</span></code> Print what is sent and received</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">default</span></code> Remove typical terminal control codes from input</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">direct</span></code> Do-nothing: forward all data unchanged</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nocontrol</span></code> Remove all control codes, incl. CR+LF</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">printable</span></code> Show decimal code for all non-ASCII characters and replace
+most control codes</p></li>
+</ul>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-eol">
+<code class="sig-name descname"><span class="pre">--eol</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-eol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>End of line mode (<code class="docutils literal notranslate"><span class="pre">CR</span></code>, <code class="docutils literal notranslate"><span class="pre">LF</span></code> or <code class="docutils literal notranslate"><span class="pre">CRLF</span></code>), default <code class="docutils literal notranslate"><span class="pre">CRLF</span></code></p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-raw">
+<code class="sig-name descname"><span class="pre">--raw</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-raw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Do not apply any encodings/transformations</p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-exit-char">
+<code class="sig-name descname"><span class="pre">--exit-char</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-exit-char" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>ASCII code of special character that is used to exit the application,
+default <code class="docutils literal notranslate"><span class="pre">3</span></code> (DEC, <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code>).</p>
+<p>For example, to use <code class="docutils literal notranslate"><span class="pre">Ctrl+]</span></code> run
+<code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">device</span> <span class="pre">monitor</span> <span class="pre">--exit-char</span> <span class="pre">29</span></code>.</p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-menu-char">
+<code class="sig-name descname"><span class="pre">--menu-char</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-menu-char" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>ASCII code of special character that is used to control miniterm (menu),
+default <code class="docutils literal notranslate"><span class="pre">20</span></code> (DEC)</p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-quiet">
+<code class="sig-name descname"><span class="pre">---quiet</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-quiet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Diagnostics: suppress non-error messages, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-d">
+<span id="cmdoption-pio-remote-device-monitor-project-dir"></span><code class="sig-name descname"><span class="pre">-d</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--project-dir</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Specify the path to project directory. By default, <code class="docutils literal notranslate"><span class="pre">--project-dir</span></code> is equal
+to current working directory (<code class="docutils literal notranslate"><span class="pre">CWD</span></code>).</p>
+<dl class="std option">
+<dt id="cmdoption-pio-remote-device-monitor-e">
+<span id="cmdoption-pio-remote-device-monitor-environment"></span><code class="sig-name descname"><span class="pre">-e</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--environment</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-e" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Process specified environments.</p>
+<p>You can also specify which environments should be processed by default using
+<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option from <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+</div>
+<div class="section" id="examples">
+<h3><a class="toc-backref" href="#id14">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Show available options for <em>monitor</em></p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pio</span> <span class="n">remote</span> <span class="n">device</span> <span class="n">monitor</span> <span class="o">--</span><span class="n">help</span>
+
+<span class="n">Usage</span><span class="p">:</span> <span class="n">pio</span> <span class="n">remote</span> <span class="n">device</span> <span class="n">monitor</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+
+<span class="n">Options</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">p</span><span class="p">,</span> <span class="o">--</span><span class="n">port</span> <span class="n">TEXT</span>       <span class="n">Port</span><span class="p">,</span> <span class="n">a</span> <span class="n">number</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">device</span> <span class="n">name</span>
+  <span class="o">-</span><span class="n">b</span><span class="p">,</span> <span class="o">--</span><span class="n">baud</span> <span class="n">INTEGER</span>    <span class="n">Set</span> <span class="n">baud</span> <span class="n">rate</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">9600</span>
+  <span class="o">--</span><span class="n">parity</span> <span class="p">[</span><span class="n">N</span><span class="o">|</span><span class="n">E</span><span class="o">|</span><span class="n">O</span><span class="o">|</span><span class="n">S</span><span class="o">|</span><span class="n">M</span><span class="p">]</span>  <span class="n">Set</span> <span class="n">parity</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">N</span>
+  <span class="o">--</span><span class="n">rtscts</span>              <span class="n">Enable</span> <span class="n">RTS</span><span class="o">/</span><span class="n">CTS</span> <span class="n">flow</span> <span class="n">control</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">Off</span>
+  <span class="o">--</span><span class="n">xonxoff</span>             <span class="n">Enable</span> <span class="n">software</span> <span class="n">flow</span> <span class="n">control</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">Off</span>
+  <span class="o">--</span><span class="n">rts</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span>           <span class="n">Set</span> <span class="n">initial</span> <span class="n">RTS</span> <span class="n">line</span> <span class="n">state</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">0</span>
+  <span class="o">--</span><span class="n">dtr</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span>           <span class="n">Set</span> <span class="n">initial</span> <span class="n">DTR</span> <span class="n">line</span> <span class="n">state</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">0</span>
+  <span class="o">--</span><span class="n">echo</span>                <span class="n">Enable</span> <span class="n">local</span> <span class="n">echo</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">Off</span>
+  <span class="o">--</span><span class="n">encoding</span> <span class="n">TEXT</span>       <span class="n">Set</span> <span class="n">the</span> <span class="n">encoding</span> <span class="k">for</span> <span class="n">the</span> <span class="n">serial</span> <span class="n">port</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">hexlify</span><span class="p">,</span>
+                        <span class="n">Latin1</span><span class="p">,</span> <span class="n">UTF</span><span class="o">-</span><span class="mi">8</span><span class="p">),</span> <span class="n">default</span><span class="p">:</span> <span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="nb">filter</span> <span class="n">TEXT</span>     <span class="n">Add</span> <span class="n">text</span> <span class="n">transformation</span>
+  <span class="o">--</span><span class="n">eol</span> <span class="p">[</span><span class="n">CR</span><span class="o">|</span><span class="n">LF</span><span class="o">|</span><span class="n">CRLF</span><span class="p">]</span>    <span class="n">End</span> <span class="n">of</span> <span class="n">line</span> <span class="n">mode</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">CRLF</span>
+  <span class="o">--</span><span class="n">raw</span>                 <span class="n">Do</span> <span class="ow">not</span> <span class="n">apply</span> <span class="nb">any</span> <span class="n">encodings</span><span class="o">/</span><span class="n">transformations</span>
+  <span class="o">--</span><span class="n">exit</span><span class="o">-</span><span class="n">char</span> <span class="n">INTEGER</span>   <span class="n">ASCII</span> <span class="n">code</span> <span class="n">of</span> <span class="n">special</span> <span class="n">character</span> <span class="n">that</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">exit</span>
+                        <span class="n">the</span> <span class="n">application</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">29</span> <span class="p">(</span><span class="n">DEC</span><span class="p">)</span>
+  <span class="o">--</span><span class="n">menu</span><span class="o">-</span><span class="n">char</span> <span class="n">INTEGER</span>   <span class="n">ASCII</span> <span class="n">code</span> <span class="n">of</span> <span class="n">special</span> <span class="n">character</span> <span class="n">that</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span>
+                        <span class="n">control</span> <span class="n">miniterm</span> <span class="p">(</span><span class="n">menu</span><span class="p">),</span> <span class="n">default</span><span class="o">=</span><span class="mi">20</span> <span class="p">(</span><span class="n">DEC</span><span class="p">)</span>
+  <span class="o">--</span><span class="n">quiet</span>               <span class="n">Diagnostics</span><span class="p">:</span> <span class="n">suppress</span> <span class="n">non</span><span class="o">-</span><span class="n">error</span> <span class="n">messages</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">Off</span>
+  <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span>            <span class="n">Show</span> <span class="n">this</span> <span class="n">message</span> <span class="ow">and</span> <span class="n">exit</span><span class="o">.</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Communicate with serial device and print help inside terminal</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; pio remote device monitor
+
+--- Available ports:
+--- /dev/cu.Bluetooth-Incoming-Port n/a
+--- /dev/cu.Bluetooth-Modem n/a
+--- /dev/cu.SLAB_USBtoUART CP2102 USB to UART Bridge Controller
+--- /dev/cu.obd2ecu-SPPDev n/a
+Enter port name:/dev/cu.SLAB_USBtoUART
+--- Miniterm on /dev/cu.SLAB_USBtoUART: 9600,8,N,1 ---
+--- Quit: Ctrl+C  |  Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+Hello PlatformIO!
+---
+--- Ctrl+]   Exit program
+--- Ctrl+T   Menu escape key, followed by:
+--- Menu keys:
+---    Ctrl+T  Send the menu character itself to remote
+---    Ctrl+]  Send the exit character itself to remote
+---    Ctrl+I  Show info
+---    Ctrl+U  Upload file (prompt will be shown)
+--- Toggles:
+---    Ctrl+R  RTS          Ctrl+E  local echo
+---    Ctrl+D  DTR          Ctrl+B  BREAK
+---    Ctrl+L  line feed    Ctrl+A  Cycle repr mode
+---
+--- Port settings (Ctrl+T followed by the following):
+---    p          change port
+---    7 8        set data bits
+---    n e o s m  change parity (None, Even, Odd, Space, Mark)
+---    1 2 3      set stop bits (1, 2, 1.5)
+---    b          change baud rate
+---    x X        disable/enable software flow control
+---    r R        disable/enable hardware flow control
+--- exit ---
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="cmd_run.html" class="btn btn-neutral float-right" title="pio remote run" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cmd_agent.html" class="btn btn-neutral float-left" title="PlatformIO Remote Agent" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/core/userguide/remote/cmd_device.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/core/userguide/remote/cmd_device.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

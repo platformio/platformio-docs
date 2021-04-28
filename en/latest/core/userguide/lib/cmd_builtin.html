@@ -1,0 +1,657 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pio lib builtin &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/core/userguide/lib/cmd_builtin.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="pio lib install" href="cmd_install.html" />
+    <link rel="prev" title="Library Manager CLI" href="index.html" />
+ 
+<link rel="stylesheet" href="../../../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../librarymanager/index.html">Library Management</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../librarymanager/quickstart.html">Quick Start</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../librarymanager/quickstart.html#project-dependencies">Project dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../librarymanager/quickstart.html#platformio-ide">PlatformIO IDE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../librarymanager/quickstart.html#platformio-core">PlatformIO Core</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../librarymanager/quickstart.html#cli-guide">CLI Guide</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Library Manager CLI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../librarymanager/ldf.html">Library Dependency Finder (LDF)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_library.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../librarymanager/config.html">library.json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../librarymanager/creating.html">Creating Library</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">PlatformIO Core (CLI)</a> &raquo;</li>
+        
+          <li><a href="../index.html">CLI Guide</a> &raquo;</li>
+        
+          <li><a href="index.html">Library Manager CLI</a> &raquo;</li>
+        
+      <li>pio lib builtin</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/core/userguide/lib/cmd_builtin.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pio-lib-builtin">
+<span id="cmd-lib-builtin"></span><h1><a class="toc-backref" href="#id1">pio lib builtin</a><a class="headerlink" href="#pio-lib-builtin" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#pio-lib-builtin" id="id1">pio lib builtin</a></p>
+<ul>
+<li><p><a class="reference internal" href="#usage" id="id2">Usage</a></p></li>
+<li><p><a class="reference internal" href="#description" id="id3">Description</a></p></li>
+<li><p><a class="reference internal" href="#options" id="id4">Options</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id5">Examples</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="usage">
+<h2><a class="toc-backref" href="#id2">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio lib <span class="nb">builtin</span> <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="description">
+<h2><a class="toc-backref" href="#id3">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>List built-in libraries based on installed <a class="reference internal" href="../../../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> and their
+frameworks, SDKs, etc.</p>
+</div>
+<div class="section" id="options">
+<h2><a class="toc-backref" href="#id4">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<dl class="std option">
+<dt id="cmdoption-pio-lib-builtin-storage">
+<code class="sig-name descname"><span class="pre">--storage</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-lib-builtin-storage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>List libraries from specified storages. For example, <code class="docutils literal notranslate"><span class="pre">framework-arduinoavr</span></code>.</p>
+<dl class="std option">
+<dt id="cmdoption-pio-lib-builtin-json-output">
+<code class="sig-name descname"><span class="pre">--json-output</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-lib-builtin-json-output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Return the output in <a class="reference external" href="http://en.wikipedia.org/wiki/JSON">JSON</a> format</p>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id5">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pio</span> <span class="n">lib</span> <span class="n">builtin</span>
+
+<span class="n">framework</span><span class="o">-</span><span class="n">arduinoavr</span>
+<span class="o">********************</span>
+
+<span class="n">Bridge</span>
+<span class="o">======</span>
+<span class="n">Enables</span> <span class="n">the</span> <span class="n">communication</span> <span class="n">between</span> <span class="n">the</span> <span class="n">Linux</span> <span class="n">processor</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">microcontroller</span><span class="o">.</span> <span class="n">For</span> <span class="n">Arduino</span><span class="o">/</span><span class="n">Genuino</span> <span class="n">Yún</span><span class="p">,</span> <span class="n">Yún</span> <span class="n">Shield</span> <span class="ow">and</span> <span class="n">TRE</span> <span class="n">only</span><span class="o">.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.6</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">Homepage</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">arduino</span><span class="o">.</span><span class="n">cc</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">Reference</span><span class="o">/</span><span class="n">YunBridgeLibrary</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">communication</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="o">*</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Arduino</span>
+
+<span class="n">EEPROM</span>
+<span class="o">======</span>
+<span class="n">Enables</span> <span class="n">reading</span> <span class="ow">and</span> <span class="n">writing</span> <span class="n">to</span> <span class="n">the</span> <span class="n">permanent</span> <span class="n">board</span> <span class="n">storage</span><span class="o">.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">2.0</span>
+<span class="n">Homepage</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">arduino</span><span class="o">.</span><span class="n">cc</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">Reference</span><span class="o">/</span><span class="n">EEPROM</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="n">storage</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="n">atmelavr</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Arduino</span><span class="p">,</span> <span class="n">Christopher</span> <span class="n">Andrews</span>
+
+<span class="o">...</span>
+
+
+<span class="n">framework</span><span class="o">-</span><span class="n">arduinosam</span>
+<span class="o">********************</span>
+
+<span class="n">Audio</span>
+<span class="o">=====</span>
+<span class="n">Allows</span> <span class="n">playing</span> <span class="n">audio</span> <span class="n">files</span> <span class="kn">from</span> <span class="nn">an</span> <span class="n">SD</span> <span class="n">card</span><span class="o">.</span> <span class="n">For</span> <span class="n">Arduino</span> <span class="n">DUE</span> <span class="n">only</span><span class="o">.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.0</span>
+<span class="n">Homepage</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">arduino</span><span class="o">.</span><span class="n">cc</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">Reference</span><span class="o">/</span><span class="n">Audio</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">signal</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">output</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="n">atmelsam</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Arduino</span>
+
+<span class="o">...</span>
+
+
+<span class="n">framework</span><span class="o">-</span><span class="n">arduinoespressif32</span>
+<span class="o">****************************</span>
+
+<span class="n">SPI</span>
+<span class="o">===</span>
+<span class="n">Enables</span> <span class="n">the</span> <span class="n">communication</span> <span class="k">with</span> <span class="n">devices</span> <span class="n">that</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Serial</span> <span class="n">Peripheral</span> <span class="n">Interface</span> <span class="p">(</span><span class="n">SPI</span><span class="p">)</span> <span class="n">Bus</span><span class="o">.</span> <span class="n">For</span> <span class="nb">all</span> <span class="n">Arduino</span> <span class="n">boards</span><span class="p">,</span> <span class="n">BUT</span> <span class="n">Arduino</span> <span class="n">DUE</span><span class="o">.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.0</span>
+<span class="n">Homepage</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">arduino</span><span class="o">.</span><span class="n">cc</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">Reference</span><span class="o">/</span><span class="n">SPI</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">signal</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">output</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Hristo</span> <span class="n">Gochkov</span>
+
+<span class="o">...</span>
+
+<span class="n">framework</span><span class="o">-</span><span class="n">arduinoespressif8266</span>
+<span class="o">******************************</span>
+
+<span class="n">ArduinoOTA</span>
+<span class="o">==========</span>
+<span class="n">Enables</span> <span class="n">Over</span> <span class="n">The</span> <span class="n">Air</span> <span class="n">upgrades</span><span class="p">,</span> <span class="n">via</span> <span class="n">wifi</span> <span class="ow">and</span> <span class="n">espota</span><span class="o">.</span><span class="n">py</span> <span class="n">UDP</span> <span class="n">request</span><span class="o">/</span><span class="n">TCP</span> <span class="n">download</span><span class="o">.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.0</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">communication</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="n">espressif8266</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Ivan</span> <span class="n">Grokhotkov</span> <span class="ow">and</span> <span class="n">Miguel</span> <span class="n">Angel</span> <span class="n">Ajo</span>
+
+<span class="n">DNSServer</span>
+<span class="o">=========</span>
+<span class="n">A</span> <span class="n">simple</span> <span class="n">DNS</span> <span class="n">server</span> <span class="k">for</span> <span class="n">ESP8266</span><span class="o">.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">communication</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="n">espressif8266</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Kristijan</span> <span class="n">Novoselić</span>
+
+<span class="o">...</span>
+
+<span class="n">framework</span><span class="o">-</span><span class="n">arduinointel</span>
+<span class="o">**********************</span>
+
+<span class="n">Adafruit</span> <span class="n">NeoPixel</span>
+<span class="o">=================</span>
+<span class="n">Arduino</span> <span class="n">library</span> <span class="k">for</span> <span class="n">controlling</span> <span class="n">single</span><span class="o">-</span><span class="n">wire</span><span class="o">-</span><span class="n">based</span> <span class="n">LED</span> <span class="n">pixels</span> <span class="ow">and</span> <span class="n">strip</span><span class="o">.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.0</span><span class="o">.</span><span class="mi">3</span>
+<span class="n">Homepage</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">adafruit</span><span class="o">/</span><span class="n">Adafruit_NeoPixel</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">display</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="o">*</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Adafruit</span>
+
+<span class="n">CurieBLE</span>
+<span class="o">========</span>
+<span class="n">Library</span> <span class="n">to</span> <span class="n">manage</span> <span class="n">the</span> <span class="n">Bluetooth</span> <span class="n">Low</span> <span class="n">Energy</span> <span class="n">module</span> <span class="k">with</span> <span class="n">Curie</span> <span class="n">Core</span> <span class="n">boards</span><span class="o">.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.0</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">communication</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="n">intel_arc32</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Emutex</span>
+
+<span class="n">CurieEEPROM</span>
+<span class="o">===========</span>
+<span class="n">Enables</span> <span class="n">reading</span> <span class="ow">and</span> <span class="n">writing</span> <span class="n">to</span> <span class="n">OTP</span> <span class="n">flash</span> <span class="n">area</span> <span class="n">of</span> <span class="n">Curie</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.0</span>
+<span class="n">Homepage</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">arduino</span><span class="o">.</span><span class="n">cc</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">Reference</span><span class="o">/</span><span class="n">EEPROM</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="n">storage</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="n">intel_arc32</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Intel</span>
+
+<span class="o">...</span>
+
+<span class="n">framework</span><span class="o">-</span><span class="n">arduinomicrochippic32</span>
+<span class="o">*******************************</span>
+
+<span class="n">Firmata</span>
+<span class="o">=======</span>
+<span class="n">Enables</span> <span class="n">the</span> <span class="n">communication</span> <span class="k">with</span> <span class="n">computer</span> <span class="n">apps</span> <span class="n">using</span> <span class="n">a</span> <span class="n">standard</span> <span class="n">serial</span> <span class="n">protocol</span><span class="o">.</span> <span class="n">For</span> <span class="nb">all</span> <span class="n">Arduino</span> <span class="n">boards</span><span class="o">.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">2.4</span><span class="o">.</span><span class="mi">4</span>
+<span class="n">Homepage</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">firmata</span><span class="o">/</span><span class="n">arduino</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">device</span><span class="p">,</span> <span class="n">control</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="o">*</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Firmata</span> <span class="n">Developers</span>
+
+<span class="n">framework</span><span class="o">-</span><span class="n">arduinoteensy</span>
+<span class="o">***********************</span>
+
+<span class="n">Adafruit</span> <span class="n">CC3000</span> <span class="n">Library</span>
+<span class="o">=======================</span>
+<span class="n">Library</span> <span class="n">code</span> <span class="k">for</span> <span class="n">Adafruit</span><span class="s1">&#39;s CC3000 WiFi breakouts.</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.0</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">Homepage</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">adafruit</span><span class="o">/</span><span class="n">Adafruit_CC3000_Library</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">communication</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="o">*</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Adafruit</span>
+
+<span class="o">...</span>
+
+<span class="n">framework</span><span class="o">-</span><span class="n">energiamsp430</span>
+<span class="o">***********************</span>
+
+<span class="n">AIR430BoostEuropeETSI</span>
+<span class="o">=====================</span>
+<span class="n">Library</span> <span class="k">for</span> <span class="n">the</span> <span class="n">CC110L</span> <span class="n">Sub</span><span class="o">-</span><span class="mi">1</span><span class="n">GHz</span> <span class="n">radio</span> <span class="n">BoosterPack</span> <span class="k">for</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">Europe</span>
+
+<span class="n">Version</span><span class="p">:</span> <span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">Homepage</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">energia</span><span class="o">.</span><span class="n">nu</span><span class="o">/</span><span class="n">reference</span><span class="o">/</span><span class="n">libraries</span><span class="o">/</span>
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">communication</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span>
+<span class="n">Authors</span><span class="p">:</span> <span class="n">Energia</span>
+
+<span class="o">...</span>
+
+<span class="n">framework</span><span class="o">-</span><span class="n">energiativa</span>
+<span class="o">*********************</span>
+
+<span class="n">aJson</span>
+<span class="o">=====</span>
+<span class="n">An</span> <span class="n">Arduino</span> <span class="n">library</span> <span class="n">to</span> <span class="n">enable</span> <span class="n">JSON</span> <span class="n">processing</span> <span class="k">with</span> <span class="n">Arduino</span>
+
+<span class="n">Keywords</span><span class="p">:</span> <span class="n">json</span><span class="p">,</span> <span class="n">rest</span><span class="p">,</span> <span class="n">http</span><span class="p">,</span> <span class="n">web</span>
+<span class="n">Compatible</span> <span class="n">frameworks</span><span class="p">:</span> <span class="n">arduino</span>
+<span class="n">Compatible</span> <span class="n">platforms</span><span class="p">:</span> <span class="n">atmelavr</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="cmd_install.html" class="btn btn-neutral float-right" title="pio lib install" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Library Manager CLI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/core/userguide/lib/cmd_builtin.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/core/userguide/lib/cmd_builtin.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

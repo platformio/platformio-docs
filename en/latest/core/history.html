@@ -1,0 +1,713 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Release Notes &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/core/history.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Migrating from 4.x to 5.0" href="migration.html" />
+    <link rel="prev" title="Frequently Asked Questions" href="../faq.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#platformio-core-5">PlatformIO Core 5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">5.2.0 (2021-??-??)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">5.1.1 (2021-03-17)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">5.1.0 (2021-01-28)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">5.0.4 (2020-12-30)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">5.0.3 (2020-11-12)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">5.0.2 (2020-10-30)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">5.0.1 (2020-09-10)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">5.0.0 (2020-09-03)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#platformio-core-4">PlatformIO Core 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#platformio-core-3">PlatformIO Core 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#platformio-core-2">PlatformIO Core 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#platformio-core-1">PlatformIO Core 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#platformio-core-preview">PlatformIO Core Preview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Release Notes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/core/history.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="release-notes">
+<h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="platformio-core-5">
+<span id="release-notes-5"></span><h2>PlatformIO Core 5<a class="headerlink" href="#platformio-core-5" title="Permalink to this headline">¶</a></h2>
+<p><strong>A professional collaborative platform for embedded development</strong></p>
+<div class="section" id="id1">
+<h3>5.2.0 (2021-??-??)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>PlatformIO Debugging</strong></p>
+<ul>
+<li><p>Boosted <a class="reference external" href="https://docs.platformio.org/page/plus/debugging.html">PlatformIO Debugging</a>  performance thanks to migrating the codebase to the pure Python 3 Asynchronous I/O stack</p></li>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/debugging.html#debug-unit-tests">Debug unit tests</a> created with <a class="reference external" href="https://docs.platformio.org/page/plus/unit-testing.html">PlatformIO Unit Testing</a> solution  (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/948">issue #948</a>)</p></li>
+<li><p>Debug native (desktop) applications on a host machine (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/980">issue #980</a>)</p></li>
+<li><p>Support debugging on Windows using Windows CMD/CLI (<a class="reference external" href="https://docs.platformio.org/page/core/userguide/cmd_debug.html">pio debug</a>) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3793">issue #3793</a>)</p></li>
+<li><p>Configure a custom pattern to determine when debugging server is started with a new <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_env_debug.html#debug-server-ready-pattern">debug_server_ready_pattern</a> option</p></li>
+<li><p>Fixed an issue with silent hanging when a custom debug server is not found (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3756">issue #3756</a>)</p></li>
+</ul>
+</li>
+<li><p><strong>Static Code Analysis</strong></p>
+<ul>
+<li><p>Updated analysis tools:</p>
+<ul>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/cppcheck.html">Cppcheck</a> v2.4.1 with new checks and MISRA improvements</p></li>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/pvs-studio.html">PVS-Studio</a> v7.12 with new diagnostics and extended capabilities for security and safety standards</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Package Management</strong></p>
+<ul>
+<li><p>Improved a package publishing process:</p>
+<ul>
+<li><p>Show package details</p></li>
+<li><p>Check for conflicting names in the PlatformIO Trusted Registry</p></li>
+<li><p>Check for duplicates and used version</p></li>
+<li><p>Validate package manifest</p></li>
+</ul>
+</li>
+<li><p>Added a new option <code class="docutils literal notranslate"><span class="pre">--non-interactive</span></code> to <a class="reference external" href="https://docs.platformio.org/page/core/userguide/package/cmd_publish.html">pio package publish</a> command</p></li>
+</ul>
+</li>
+<li><p><strong>Miscellaneous</strong></p>
+<ul>
+<li><p>Ensure that a serial port is ready before running unit tests on a remote target (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3742">issue #3742</a>)</p></li>
+<li><p>Fixed an error “Unknown development platform” when running unit tests on a clean machine (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3901">issue #3901</a>)</p></li>
+<li><p>Fixed an issue when “main.cpp” was generated for a new project for 8-bit development platforms (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3872">issue #3872</a>)</p></li>
+<li><p>Fixed an issue with broken binary file extension when a custom <code class="docutils literal notranslate"><span class="pre">PROGNAME</span></code> contains dot symbols (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3906">issue #3906</a>)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h3>5.1.1 (2021-03-17)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a “The command line is too long” issue with a linking process on Windows (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3827">issue #3827</a>)</p></li>
+<li><p>Fixed an issue with <a class="reference external" href="https://docs.platformio.org/page/core/userguide/device/cmd_monitor.html">device monitor</a> when the “send_on_enter” filter didn’t send EOL chars (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3787">issue #3787</a>)</p></li>
+<li><p>Fixed an issue with silent mode when unwanted data is printed to stdout (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3837">issue #3837</a>)</p></li>
+<li><p>Fixed an issue when code inspection fails with “Bad JSON” (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3790">issue #3790</a>)</p></li>
+<li><p>Fixed an issue with overriding user-specified debugging configuration information in VSCode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3824">issue #3824</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>5.1.0 (2021-01-28)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>PlatformIO Home</strong></p>
+<ul>
+<li><p>Boosted <a class="reference external" href="https://docs.platformio.org/page/home/index.html">PlatformIO Home</a>  performance thanks to migrating the codebase to the pure Python 3 Asynchronous I/O stack</p></li>
+<li><p>Added a new <code class="docutils literal notranslate"><span class="pre">--session-id</span></code> option to <a class="reference external" href="https://docs.platformio.org/page/core/userguide/cmd_home.html">pio home</a> command that helps to keep PlatformIO Home isolated from other instances and protect from 3rd party access (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3397">issue #3397</a>)</p></li>
+</ul>
+</li>
+<li><p><strong>Build System</strong></p>
+<ul>
+<li><p>Upgraded build engine to the SCons 4.1 (<a class="reference external" href="https://scons.org/scons-410-is-available.html">release notes</a>)</p></li>
+<li><p>Refactored a workaround for a maximum command line character limitation (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3792">issue #3792</a>)</p></li>
+<li><p>Fixed an issue with Python 3.8+ on Windows when a network drive is used (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3417">issue #3417</a>)</p></li>
+</ul>
+</li>
+<li><p><strong>Package Management</strong></p>
+<ul>
+<li><p>New options for <a class="reference external" href="https://docs.platformio.org/page/core/userguide/system/cmd_prune.html">pio system prune</a> command:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">--dry-run</span></code> option to show data that will be removed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--core-packages</span></code> option to remove unnecessary core packages</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--platform-packages</span></code> option to remove unnecessary development platform packages (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/923">issue #923</a>)</p></li>
+</ul>
+</li>
+<li><p>Added new <a class="reference external" href="https://docs.platformio.org/page/core/userguide/cmd_settings.html#check-prune-system-threshold">check_prune_system_threshold</a> setting</p></li>
+<li><p>Disabled automatic removal of unnecessary development platform packages (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3708">issue #3708</a>, <a class="reference external" href="https://github.com/platformio/platformio-core/issues/3770">issue #3770</a>)</p></li>
+<li><p>Fixed an issue when unnecessary packages were removed in  <code class="docutils literal notranslate"><span class="pre">update</span> <span class="pre">--dry-run</span></code> mode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3809">issue #3809</a>)</p></li>
+<li><p>Fixed a “ValueError: Invalid simple block” when uninstalling a package with a custom name and external source (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3816">issue #3816</a>)</p></li>
+</ul>
+</li>
+<li><p><strong>Debugging</strong></p>
+<ul>
+<li><p>Configure a custom debug adapter speed using a new <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_env_debug.html#debug-speed">debug_speed</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3799">issue #3799</a>)</p></li>
+<li><p>Handle debugging server’s “ready_pattern” in “stderr” output</p></li>
+</ul>
+</li>
+<li><p><strong>Miscellaneous</strong></p>
+<ul>
+<li><p>Improved listing of <a class="reference external" href="https://docs.platformio.org/page/core/userguide/device/cmd_list.html">multicast DNS services</a></p></li>
+<li><p>Fixed a “UnicodeDecodeError: ‘utf-8’ codec can’t decode byte” when using J-Link for firmware uploading on Linux (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3804">issue #3804</a>)</p></li>
+<li><p>Fixed an issue with a compiler driver for “.ccls” language server (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3808">issue #3808</a>)</p></li>
+<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/page/core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-eol">pio device monitor –eol</a> and “send_on_enter” filter do not work properly (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3787">issue #3787</a>)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>5.0.4 (2020-12-30)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Added “Core” suffix when showing PlatformIO Core version using <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">--version</span></code> command</p></li>
+<li><p>Improved “.ccls” configuration file for Emacs, Vim, and Sublime Text integrations</p></li>
+<li><p>Updated analysis tools:</p>
+<ul>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/cppcheck.html">Cppcheck</a> v2.3 with improved C++ parser and several new MISRA rules</p></li>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/pvs-studio.html">PVS-Studio</a> v7.11 with new diagnostics and updated mass suppression mechanism</p></li>
+</ul>
+</li>
+<li><p>Show a warning message about deprecated support for Python 2 and Python 3.5</p></li>
+<li><p>Do not provide “intelliSenseMode” option when generating configuration for VSCode C/C++ extension</p></li>
+<li><p>Fixed a “git-sh-setup: file not found” error when installing project dependencies from Git VCS (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3740">issue #3740</a>)</p></li>
+<li><p>Fixed an issue with package publishing on Windows when Unix permissions are not preserved (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3776">issue #3776</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>5.0.3 (2020-11-12)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Added an error selector for <a class="reference external" href="https://docs.platformio.org/page/integration/ide/sublimetext.html">Sublime Text</a> build runner (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3733">issue #3733</a>)</p></li>
+<li><p>Generate a working “projectEnvName” for PlatformIO IDE’s debugger for VSCode</p></li>
+<li><p>Force VSCode’s intelliSenseMode to “gcc-x64” when GCC toolchain is used</p></li>
+<li><p>Print ignored test suites and environments in the test summary report only in verbose mode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3726">issue #3726</a>)</p></li>
+<li><p>Fixed an issue when the package manager tries to install a built-in library from the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3662">issue #3662</a>)</p></li>
+<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/page/core/userguide/package/cmd_pack.html">pio package pack</a> ignores some folders (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3730">issue #3730</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>5.0.2 (2020-10-30)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Initialize a new project or update the existing passing working environment name and its options (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3686">issue #3686</a>)</p></li>
+<li><p>Automatically build PlatformIO Core extra Python dependencies on a host machine if they are missed in the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3700">issue #3700</a>)</p></li>
+<li><p>Improved “core.call” RPC for PlatformIO Home (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3671">issue #3671</a>)</p></li>
+<li><p>Fixed a “PermissionError: [WinError 5]” on Windows when an external repository is used with <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_env_library.html#lib-deps">lib_deps</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3664">issue #3664</a>)</p></li>
+<li><p>Fixed a “KeyError: ‘versions’” when dependency does not exist in the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3666">issue #3666</a>)</p></li>
+<li><p>Fixed an issue with GCC linker when “native” dev-platform is used in pair with library dependencies (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3669">issue #3669</a>)</p></li>
+<li><p>Fixed an “AssertionError: ensure_dir_exists” when checking library updates from simultaneous subprocesses (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3677">issue #3677</a>)</p></li>
+<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/page/core/userguide/package/cmd_publish.html">pio package publish</a> command removes original archive after submitting to the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3716">issue #3716</a>)</p></li>
+<li><p>Fixed an issue when multiple <a class="reference external" href="https://docs.platformio.org/page/core/userguide/lib/cmd_install.html">pio lib install</a> command with the same local library results in duplicates in <code class="docutils literal notranslate"><span class="pre">lib_deps</span></code> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3715">issue #3715</a>)</p></li>
+<li><p>Fixed an issue with a “wrong” timestamp in device monitor output using <a class="reference external" href="https://docs.platformio.org/page/core/userguide/device/cmd_monitor.html#filters">“time” filter</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3712">issue #3712</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>5.0.1 (2020-09-10)<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Added support for “owner” requirement when declaring <code class="docutils literal notranslate"><span class="pre">dependencies</span></code> using <a class="reference external" href="https://docs.platformio.org/page/librarymanager/config.html#dependencies">library.json</a></p></li>
+<li><p>Fixed an issue when using a custom git/ssh package with <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_env_platform.html#platform-packages">platform_packages</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3624">issue #3624</a>)</p></li>
+<li><p>Fixed an issue with “ImportError: cannot import name ‘_get_backend’ from ‘cryptography.hazmat.backends’” when using <a class="reference external" href="https://docs.platformio.org/page/plus/pio-remote.html">Remote Development</a> on RaspberryPi device (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3652">issue #3652</a>)</p></li>
+<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/page/core/userguide/package/cmd_unpublish.html">pio package unpublish</a> command crashes (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3660">issue #3660</a>)</p></li>
+<li><p>Fixed an issue when the package manager tries to install a built-in library from the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3662">issue #3662</a>)</p></li>
+<li><p>Fixed an issue with incorrect value for C++ language standard in IDE projects when an in-progress language standard is used (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3653">issue #3653</a>)</p></li>
+<li><p>Fixed an issue with “Invalid simple block (semantic_version)” from library dependency that refs to an external source (repository, ZIP/Tar archives) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3658">issue #3658</a>)</p></li>
+<li><p>Fixed an issue when can not remove update or remove external dev-platform using PlatformIO Home (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3663">issue #3663</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3>5.0.0 (2020-09-03)<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Please check <a class="reference external" href="https://docs.platformio.org/page/core/migration.html">Migration guide from 4.x to 5.0</a>.</p>
+<ul class="simple">
+<li><p>Integration with the new <strong>PlatformIO Trusted Registry</strong></p>
+<ul>
+<li><p>Enterprise-grade package storage with high availability (multi replicas)</p></li>
+<li><p>Secure, fast, and reliable global content delivery network (CDN)</p></li>
+<li><p>Universal support for all packages:</p>
+<ul>
+<li><p>Libraries</p></li>
+<li><p>Development platforms</p></li>
+<li><p>Toolchains</p></li>
+</ul>
+</li>
+<li><p>Built-in fine-grained access control (role-based, teams, organizations)</p></li>
+<li><p>New CLI commands:</p>
+<ul>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/core/userguide/package/index.html">pio package</a> – manage packages in the registry</p></li>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/core/userguide/access/index.html">pio access</a> – manage package access for users, teams, and maintainers</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Integration with the new <strong>Account Management System</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/core/userguide/org/index.html">Manage organizations</a></p></li>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/core/userguide/team/index.html">Manage teams and team memberships</a></p></li>
+</ul>
+</li>
+<li><p>New <strong>Package Management System</strong></p>
+<ul>
+<li><p>Integrated PlatformIO Core with the new PlatformIO Registry</p></li>
+<li><p>Support for owner-based dependency declaration (resolves name conflicts) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/1824">issue #1824</a>)</p></li>
+<li><p>Automatically save dependencies to <a class="reference external" href="https://docs.platformio.org/page/projectconf.html">“platformio.ini”</a> when installing using PlatformIO CLI (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/2964">issue #2964</a>)</p></li>
+<li><p>Follow SemVer complaint version constraints when checking library updates <a class="reference external" href="https://github.com/platformio/platformio-core/issues/1281">issue #1281</a>)</p></li>
+<li><p>Dropped support for “packageRepositories” section in “platform.json” manifest (please publish packages directly to the registry)</p></li>
+</ul>
+</li>
+<li><p><strong>Build System</strong></p>
+<ul>
+<li><p>Upgraded build engine to the <a class="reference external" href="https://scons.org/">SCons 4.0 - a next-generation software construction tool</a></p>
+<ul>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/projectconf/advanced_scripting.html">Configuration files are Python scripts</a> – use the power of a real programming language to solve build problems</p></li>
+<li><p>Built-in reliable and automatic dependency analysis</p></li>
+<li><p>Improved support for parallel builds</p></li>
+<li><p>Ability to <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_platformio.html#projectconf-pio-build-cache-dir">share built files in a cache</a> to speed up multiple builds</p></li>
+</ul>
+</li>
+<li><p>New <a class="reference external" href="https://docs.platformio.org/page/projectconf/advanced_scripting.html#custom-targets">Custom Targets</a></p>
+<ul>
+<li><p>Pre/Post processing based on dependent sources (another target, source file, etc.)</p></li>
+<li><p>Command launcher with own arguments</p></li>
+<li><p>Launch command with custom options declared in <a class="reference external" href="https://docs.platformio.org/page/projectconf.html">“platformio.ini”</a></p></li>
+<li><p>Python callback as a target (use the power of Python interpreter and PlatformIO Build API)</p></li>
+<li><p>List available project targets (including dev-platform specific and custom targets) with a new <a class="reference external" href="https://docs.platformio.org/page/core/userguide/cmd_run.html#cmdoption-platformio-run-list-targets">pio run –list-targets</a> command (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3544">issue #3544</a>)</p></li>
+</ul>
+</li>
+<li><p>Enable “cyclic reference” for GCC linker only for the embedded dev-platforms (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3570">issue #3570</a>)</p></li>
+<li><p>Automatically enable LDF dependency <a class="reference external" href="https://docs.platformio.org/page/librarymanager/ldf.html#dependency-finder-mode">chain+ mode (evaluates C/C++ Preprocessor conditional syntax)</a> for Arduino library when “library.property” has “depends” field (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3607">issue #3607</a>)</p></li>
+<li><p>Fixed an issue with improper processing of source files added via multiple Build Middlewares (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3531">issue #3531</a>)</p></li>
+<li><p>Fixed an issue with the <code class="docutils literal notranslate"><span class="pre">clean</span></code> target on Windows when project and build directories are located on different logical drives (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3542">issue #3542</a>)</p></li>
+</ul>
+</li>
+<li><p><strong>Project Management</strong></p>
+<ul>
+<li><p>Added support for “globstar/<cite>**</cite>” (recursive) pattern for the different commands and configuration options (<a class="reference external" href="https://docs.platformio.org/page/core/userguide/cmd_ci.html">pio ci</a>, <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_env_build.html#src-filter">src_filter</a>, <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_env_check.html#check-patterns">check_patterns</a>, <a class="reference external" href="https://docs.platformio.org/page/librarymanager/config.html#srcfilter">library.json &gt; srcFilter</a>). Python 3.5+ is required</p></li>
+<li><p>Added a new <code class="docutils literal notranslate"><span class="pre">-e,</span> <span class="pre">--environment</span></code> option to <a class="reference external" href="https://docs.platformio.org/page/core/userguide/project/cmd_init.html#cmdoption-platformio-project-init-e">pio project init</a> command that helps to update a PlatformIO project using the existing environment</p></li>
+<li><p>Dump build system data intended for IDE extensions/plugins using a new <a class="reference external" href="https://docs.platformio.org/page/core/userguide/project/cmd_data.html">pio project data</a> command</p></li>
+<li><p>Do not generate “.travis.yml” for a new project, let the user have a choice</p></li>
+</ul>
+</li>
+<li><p><strong>Unit Testing</strong></p>
+<ul>
+<li><p>Updated PIO Unit Testing support for Mbed framework and added compatibility with Mbed OS 6</p></li>
+<li><p>Fixed an issue when running multiple test environments (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3523">issue #3523</a>)</p></li>
+<li><p>Fixed an issue when Unit Testing engine fails with a custom project configuration file (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3583">issue #3583</a>)</p></li>
+</ul>
+</li>
+<li><p><strong>Static Code Analysis</strong></p>
+<ul>
+<li><p>Updated analysis tools:</p>
+<ul>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/cppcheck.html">Cppcheck</a> v2.1 with a new “soundy” analysis option and improved code parser</p></li>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/pvs-studio.html">PVS-Studio</a> v7.09 with a new file list analysis mode and an extended list of analysis diagnostics</p></li>
+</ul>
+</li>
+<li><p>Added Cppcheck package for ARM-based single-board computers (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3559">issue #3559</a>)</p></li>
+<li><p>Fixed an issue with PIO Check when a defect with a multiline error message is not reported in verbose mode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3631">issue #3631</a>)</p></li>
+</ul>
+</li>
+<li><p><strong>Miscellaneous</strong></p>
+<ul>
+<li><p>Display system-wide information using a new <a class="reference external" href="https://docs.platformio.org/page/core/userguide/system/cmd_info.html">pio system info</a> command (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3521">issue #3521</a>)</p></li>
+<li><p>Remove unused data using a new <a class="reference external" href="https://docs.platformio.org/page/core/userguide/system/cmd_prune.html">pio system prune</a> command (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3522">issue #3522</a>)</p></li>
+<li><p>Show ignored project environments only in the verbose mode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3641">issue #3641</a>)</p></li>
+<li><p>Do not escape compiler arguments in VSCode template on Windows</p></li>
+<li><p>Drop support for Python 2 and 3.5.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="platformio-core-4">
+<span id="release-notes-4"></span><h2>PlatformIO Core 4<a class="headerlink" href="#platformio-core-4" title="Permalink to this headline">¶</a></h2>
+<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v4.3.4/HISTORY.rst">PlatformIO Core 4.0 history</a>.</p>
+</div>
+<div class="section" id="platformio-core-3">
+<h2>PlatformIO Core 3<a class="headerlink" href="#platformio-core-3" title="Permalink to this headline">¶</a></h2>
+<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v3.6.7/HISTORY.rst">PlatformIO Core 3.0 history</a>.</p>
+</div>
+<div class="section" id="platformio-core-2">
+<h2>PlatformIO Core 2<a class="headerlink" href="#platformio-core-2" title="Permalink to this headline">¶</a></h2>
+<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v2.11.2/HISTORY.rst">PlatformIO Core 2.0 history</a>.</p>
+</div>
+<div class="section" id="platformio-core-1">
+<h2>PlatformIO Core 1<a class="headerlink" href="#platformio-core-1" title="Permalink to this headline">¶</a></h2>
+<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v1.5.0/HISTORY.rst">PlatformIO Core 1.0 history</a>.</p>
+</div>
+<div class="section" id="platformio-core-preview">
+<h2>PlatformIO Core Preview<a class="headerlink" href="#platformio-core-preview" title="Permalink to this headline">¶</a></h2>
+<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v0.10.2/HISTORY.rst">PlatformIO Core Preview history</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="migration.html" class="btn btn-neutral float-right" title="Migrating from 4.x to 5.0" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../faq.html" class="btn btn-neutral float-left" title="Frequently Asked Questions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/core/history.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/core/history.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

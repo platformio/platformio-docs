@@ -1,0 +1,666 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>CLion &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/integration/ide/clion.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="CodeBlocks" href="codeblocks.html" />
+    <link rel="prev" title="PlatformIO IDE for Atom" href="atom.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Cloud &amp; Desktop IDE</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#native-extensions">Native Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#cloud-ide">Cloud IDE</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#desktop-ide">Desktop IDE</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="atom.html">Atom</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">CLion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quick-start">Quick Start</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#device-serial-monitor">Device/Serial Monitor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging">Debugging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#platformio-home">PlatformIO Home</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="codeblocks.html">CodeBlocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eclipse.html">Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emacs.html">Emacs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="netbeans.html">NetBeans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qtcreator.html">Qt Creator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sublimetext.html">Sublime Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vim.html">Vim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualstudio.html">Visual Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vscode.html">VSCode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Cloud &amp; Desktop IDE</a> &raquo;</li>
+        
+      <li>CLion</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/clion.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="clion">
+<span id="ide-clion"></span><h1>CLion<a class="headerlink" href="#clion" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://www.jetbrains.com/clion/">CLion</a> is a cross-platform C/C++ IDE for
+Linux, OS X, and Windows. CLion includes such features as a smart editor, code
+generation, code quality assurance, automated refactorings, on-the-fly code analysis,
+project manager, integrated version control systems and debugger.</p>
+<p>Refer to the <a class="reference external" href="https://www.jetbrains.com/clion/help/">CLion Documentation</a>
+page for more detailed information.</p>
+<img alt="../../_images/ide-platformio-clion.png" src="../../_images/ide-platformio-clion.png" />
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#installation" id="id2">Installation</a></p></li>
+<li><p><a class="reference internal" href="#known-issues" id="id3">Known issues</a></p>
+<ul>
+<li><p><a class="reference internal" href="#project-configuration-and-cmake" id="id4">Project configuration and CMake</a></p></li>
+<li><p><a class="reference internal" href="#clion-does-not-load-project-build-environments-from-platformio-ini" id="id5">CLion does not load project build environments from “platformio.ini”</a></p></li>
+<li><p><a class="reference internal" href="#arduino-ino-files-are-not-supported" id="id6">Arduino <code class="docutils literal notranslate"><span class="pre">.ino</span></code> files are not supported</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#quick-start" id="id7">Quick Start</a></p>
+<ul>
+<li><p><a class="reference internal" href="#setting-up-the-project" id="id8">Setting Up the Project</a></p></li>
+<li><p><a class="reference internal" href="#build-upload" id="id9">Build &amp; Upload</a></p>
+<ul>
+<li><p><a class="reference internal" href="#configuration-options" id="id10">Configuration options</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#device-serial-monitor" id="id11">Device/Serial Monitor</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id12">Debugging</a></p>
+<ul>
+<li><p><a class="reference internal" href="#peripheral-registers" id="id13">Peripheral Registers</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#platformio-home" id="id14">PlatformIO Home</a></p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2><a class="toc-backref" href="#id2">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Install PlatformIO Core (CLI). See <a class="reference internal" href="../../core/installation.html#core-installation"><span class="std std-ref">Installation</span></a> guide</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This a <strong>temporary step</strong> and depends on <a class="reference external" href="https://youtrack.jetbrains.com/issue/CPP-19412">CLion #CPP-19412: Automatically install PlatformIO Core</a></p>
+</div>
+</li>
+<li><p><a class="reference external" href="https://www.jetbrains.com/clion/">Download</a> and install CLion IDE</p></li>
+<li><p>Install official <a class="reference external" href="https://plugins.jetbrains.com/plugin/13922-platformio-for-clion">PlatformIO for CLion</a> plugin.
+Open “Configure &gt; Plugins” window and go to the “Marketplace” tab. Search for
+<code class="docutils literal notranslate"><span class="pre">PlatformIO</span></code> and press the “Install” button.</p>
+<img alt="../../_images/ide-platformio-clion-install-plugin.png" src="../../_images/ide-platformio-clion-install-plugin.png" />
+</li>
+<li><p>Restart CLion IDE.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We also recommend to install <a class="reference external" href="https://plugins.jetbrains.com/plugin/6981-ini">Ini</a>
+plugin that provides syntax highlighting, formatting, code folding, and viewing
+structure for <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+</div>
+</div>
+<div class="section" id="known-issues">
+<h2><a class="toc-backref" href="#id3">Known issues</a><a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="project-configuration-and-cmake">
+<h3><a class="toc-backref" href="#id4">Project configuration and CMake</a><a class="headerlink" href="#project-configuration-and-cmake" title="Permalink to this headline">¶</a></h3>
+<p>PlatformIO does not depend on “CMake” and uses own multi-platform build system.
+Project configuration, such as build flags, library dependencies, etc., should be
+declared in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please note that “PlatformIO for CLion” plugin does not update automatically CLion
+configuration. There is a feature request <a class="reference external" href="https://youtrack.jetbrains.com/issue/CPP-18367">CLion #CPP-18367:  Follow platformio.ini changes and update the project</a>.</p>
+</div>
+<p>Update CLion configuration: “Tools &gt; PlatformIO &gt; Re-Init”</p>
+</div>
+<div class="section" id="clion-does-not-load-project-build-environments-from-platformio-ini">
+<h3><a class="toc-backref" href="#id5">CLion does not load project build environments from “platformio.ini”</a><a class="headerlink" href="#clion-does-not-load-project-build-environments-from-platformio-ini" title="Permalink to this headline">¶</a></h3>
+<p>This is a known issue <a class="reference external" href="https://youtrack.jetbrains.com/issue/CPP-19478">CLion CPP-19478: CLion does not handle “CMAKE_CONFIGURATION_TYPES” from CMakeLists.txt</a>.
+A temporary solution is to manually configure project profiles in CLion.</p>
+<p>Please open CLion Settings and navigate to “Build, Execution, Deployment &gt; CMake”.
+Press “+” button and PlatformIO-based project profiles:</p>
+<img alt="../../_images/ide-platformio-clion-configure-profiles.png" src="../../_images/ide-platformio-clion-configure-profiles.png" />
+</div>
+<div class="section" id="arduino-ino-files-are-not-supported">
+<h3><a class="toc-backref" href="#id6">Arduino <code class="docutils literal notranslate"><span class="pre">.ino</span></code> files are not supported</a><a class="headerlink" href="#arduino-ino-files-are-not-supported" title="Permalink to this headline">¶</a></h3>
+<p>CLion uses “CMake” tool for code completion and code linting. As a result, it
+doesn’t support the Arduino files (<code class="docutils literal notranslate"><span class="pre">*.ino</span></code> and <code class="docutils literal notranslate"><span class="pre">.pde</span></code>) because they are
+not valid C/C++ based source files:</p>
+<ol class="arabic simple">
+<li><p>Missing includes such as <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;Arduino.h&gt;</span></code></p></li>
+<li><p>Function declarations are omitted.</p></li>
+</ol>
+<p>See how to <a class="reference internal" href="../../faq.html#faq-convert-ino-to-cpp"><span class="std std-ref">Convert Arduino file to C++ manually</span></a>.</p>
+</div>
+</div>
+<div class="section" id="quick-start">
+<h2><a class="toc-backref" href="#id7">Quick Start</a><a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<p>This tutorial introduces you to the basics of PlatformIO for CLion workflow and shows
+you a creation process of a simple “Blink” example. After finishing you will
+have a general understanding of how to work with projects in the CLion IDE.</p>
+<div class="section" id="setting-up-the-project">
+<h3><a class="toc-backref" href="#id8">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Please open “New Project” wizard, select board and framework, and create a new
+PlatformIO project. Please <strong>USE ONLY</strong> Latin characters (a-z) in a project name to
+avoid further issues with project compilation. Numbers and some symbols are
+allowed depending on a file system:</p></li>
+</ol>
+<img alt="../../_images/ide-platformio-clion-new-project.png" src="../../_images/ide-platformio-clion-new-project.png" />
+<ol class="arabic simple" start="2">
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">main.c</span></code> file in <code class="docutils literal notranslate"><span class="pre">src</span></code> folder to <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code>  (right click on a file
+<code class="docutils literal notranslate"><span class="pre">main.c</span></code>, Refactor &gt; Rename…) . Paste the next contents:</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The code below works only in pair with Arduino-based boards. Please
+follow to <a class="reference external" href="https://github.com/platformio/platformio-examples">PlatformIO Project Examples</a>
+repository for other pre-configured projects.</p>
+</div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * Blink</span>
+<span class="cm"> *</span>
+<span class="cm"> * Turns on an LED on for one second,</span>
+<span class="cm"> * then off for one second, repeatedly.</span>
+<span class="cm"> */</span>
+<span class="cp">#include</span> <span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// Set LED_BUILTIN if it is not defined by Arduino framework</span>
+<span class="c1">// #define LED_BUILTIN 13</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="c1">// initialize LED digital pin as an output.</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="c1">// turn the LED on (HIGH is the voltage level)</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+
+  <span class="c1">// wait for a second</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+  <span class="c1">// turn the LED off by making the voltage LOW</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+
+   <span class="c1">// wait for a second</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<img alt="../../_images/ide-platformio-clion-blink-project.png" src="../../_images/ide-platformio-clion-blink-project.png" />
+</div>
+<div class="section" id="build-upload">
+<h3><a class="toc-backref" href="#id9">Build &amp; Upload</a><a class="headerlink" href="#build-upload" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Open project configuration wizard and add <code class="docutils literal notranslate"><span class="pre">PlatformIO</span> <span class="pre">Upload</span></code> and
+<code class="docutils literal notranslate"><span class="pre">PlatformIO</span> <span class="pre">Debug</span></code> configurations (you can add the rest configurations if you need them):</p></li>
+</ol>
+<img alt="../../_images/ide-platformio-clion-add-configuration.png" src="../../_images/ide-platformio-clion-add-configuration.png" />
+<ol class="arabic simple" start="2">
+<li><p>Remove pre-task (“Build”) from <code class="docutils literal notranslate"><span class="pre">PlatformIO</span> <span class="pre">Upload</span></code> and <code class="docutils literal notranslate"><span class="pre">PlatformIO</span> <span class="pre">Debug</span></code>
+configurations to avoid double project building. You should see “There are no tasks
+to run before launch”.</p></li>
+</ol>
+<img alt="../../_images/ide-platformio-clion-configuration-remove-pretasks.png" src="../../_images/ide-platformio-clion-configuration-remove-pretasks.png" />
+<ol class="arabic simple" start="3">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">PlatformIO</span> <span class="pre">Upload</span></code> configuration and use the “Build” button for project
+compilation or the “Run” for a firmware uploading:</p></li>
+</ol>
+<img alt="../../_images/ide-platformio-clion-build-upload-project.png" src="../../_images/ide-platformio-clion-build-upload-project.png" />
+<div class="section" id="configuration-options">
+<h4><a class="toc-backref" href="#id10">Configuration options</a><a class="headerlink" href="#configuration-options" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../projectconf/section_env_build.html#projectconf-section-env-build"><span class="std std-ref">Build options</span></a></p></li>
+<li><p><a class="reference internal" href="../../projectconf/section_env_upload.html#projectconf-section-env-upload"><span class="std std-ref">Upload options</span></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="device-serial-monitor">
+<h2><a class="toc-backref" href="#id11">Device/Serial Monitor</a><a class="headerlink" href="#device-serial-monitor" title="Permalink to this headline">¶</a></h2>
+<p>Please open CLion terminal and use <a class="reference internal" href="../../core/userguide/device/index.html#cmd-device"><span class="std std-ref">Device Manager CLI</span></a>. You can also configure
+device monitor per project using <a class="reference internal" href="../../projectconf/section_env_monitor.html#projectconf-section-env-monitor"><span class="std std-ref">Monitor options</span></a>.</p>
+<p>Please note that you need to manually close/stop device monitor before firmware uploading.</p>
+</div>
+<div class="section" id="debugging">
+<h2><a class="toc-backref" href="#id12">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p>“PlatformIO for CLion” supports <a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> which allows you to debug your
+application with 1-Click without extra steps. Please select <code class="docutils literal notranslate"><span class="pre">PlatformIO</span> <span class="pre">Debug</span></code>
+configuration and press the “Debug” button:</p>
+<img alt="../../_images/ide-platformio-clion-debug-project.png" src="../../_images/ide-platformio-clion-debug-project.png" />
+<div class="section" id="peripheral-registers">
+<h3><a class="toc-backref" href="#id13">Peripheral Registers</a><a class="headerlink" href="#peripheral-registers" title="Permalink to this headline">¶</a></h3>
+<p>Please navigate to the “Peripheral” tab in a “Debug” view, press the “Configure” icon
+and select registers to monitor. Close configuration window.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Currently, CLion does not load automatically Peripheral Register Definitions (SVD file)
+provided by PlatformIO. There is a feature request <a class="reference external" href="https://youtrack.jetbrains.com/issue/CPP-18369">CLion #CPP-18369: Support CLION_SVD_FILE_PATH CMake variable to auto-find svd file</a>.</p>
+<p>A temporary solution is to open <code class="docutils literal notranslate"><span class="pre">CMakeListsPrivate.txt</span></code> file from a root of
+PlatformIO project and remember SVD file declared in <code class="docutils literal notranslate"><span class="pre">CLION_SVD_FILE_PATH</span></code>
+“CMake” variable. Now press the “+” button in Peripherals Wizard and select SVD file
+mentioned in <code class="docutils literal notranslate"><span class="pre">CLION_SVD_FILE_PATH</span></code>.</p>
+</div>
+<img alt="../../_images/ide-platformio-clion-debug-peripherals.png" src="../../_images/ide-platformio-clion-debug-peripherals.png" />
+</div>
+</div>
+<div class="section" id="platformio-home">
+<h2><a class="toc-backref" href="#id14">PlatformIO Home</a><a class="headerlink" href="#platformio-home" title="Permalink to this headline">¶</a></h2>
+<p>Currently, <a class="reference internal" href="../../home/index.html#piohome"><span class="std std-ref">PlatformIO Home</span></a> is not integrated into “PlatformIO for CLion”. See related
+feature request <a class="reference external" href="https://youtrack.jetbrains.com/issue/CPP-19493">CLion: CPP-19493 Integrate PlatformIO Home</a>.</p>
+<p>Nevertheless, you can start it manually and open in your browser. Please note that some
+features do not work, such as project opening. Please open CLion terminal
+and run <a class="reference internal" href="../../core/userguide/cmd_home.html#cmd-home"><span class="std std-ref">pio home</span></a> command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pio -c clion home
+</pre></div>
+</div>
+<img alt="../../_images/ide-platformio-clion-piohome-terminal.png" src="../../_images/ide-platformio-clion-piohome-terminal.png" />
+<hr class="docutils" />
+<p>Further for reading:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../tutorials/index.html#tutorials"><span class="std std-ref">Tutorials and Examples</span></a> (step-by-step tutorials with debugging and unit testing)</p></li>
+<li><p><a class="reference external" href="https://www.jetbrains.com/help/clion/working-with-source-code.html">CLion documentation</a>.</p></li>
+</ul>
+<p><strong>Happy coding with PlatformIO!</strong></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="codeblocks.html" class="btn btn-neutral float-right" title="CodeBlocks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="atom.html" class="btn btn-neutral float-left" title="PlatformIO IDE for Atom" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/clion.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/integration/ide/clion.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

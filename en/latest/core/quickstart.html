@@ -1,0 +1,645 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Quick Start &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/core/quickstart.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CLI Guide" href="userguide/index.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">PlatformIO Core (CLI)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="userguide/demo.html">Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setting-up-the-project">Setting Up the Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#board-identifier">Board Identifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#initialize-project">Initialize Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#process-project">Process Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#further-reading">Further Reading</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="userguide/index.html">CLI Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">PlatformIO Core (CLI)</a> &raquo;</li>
+        
+      <li>Quick Start</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/core/quickstart.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quick-start">
+<span id="core-quickstart"></span><h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial introduces you to the basics of <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> Command Line Interface
+(CLI) workflow and shows you a creation process of a simple cross-platform
+“Blink” Project. After finishing you will have a general understanding of how
+to work with the multiple development platforms and embedded boards.</p>
+<div class="section" id="setting-up-the-project">
+<h2>Setting Up the Project<a class="headerlink" href="#setting-up-the-project" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> provides special <a class="reference internal" href="userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> command for configuring your projects.
+It allows one to initialize new empty project or update existing with the new data.</p>
+<p>What is more, <a class="reference internal" href="userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> can be used for <a class="reference internal" href="../integration/ide/index.html#ide"><span class="std std-ref">Cloud &amp; Desktop IDE</span></a>. It means that you will
+be able to import pre-generated PlatformIO project using favorite IDE and
+extend it with the professional instruments for IoT development.</p>
+<p>This tutorial is based on the next popular embedded boards and development
+platforms using <a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Platform</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Framework</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
+<td><p><a class="reference internal" href="../boards/atmelavr/uno.html#board-atmelavr-uno"><span class="std std-ref">Arduino Uno</span></a></p></td>
+<td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a></p></td>
+<td><p><a class="reference internal" href="../boards/espressif8266/nodemcuv2.html#board-espressif8266-nodemcuv2"><span class="std std-ref">NodeMCU 1.0 (ESP-12E Module)</span></a></p></td>
+<td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
+<td><p><a class="reference internal" href="../boards/teensy/teensy31.html#board-teensy-teensy31"><span class="std std-ref">Teensy 3.1 / 3.2</span></a></p></td>
+<td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="board-identifier">
+<h2>Board Identifier<a class="headerlink" href="#board-identifier" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> command requires to specify board identifier ID. It can
+be found using <a class="reference internal" href="../boards/index.html#boards"><span class="std std-ref">Boards</span></a> catalog,
+<a class="reference external" href="https://platformio.org/boards">Boards Explorer</a> or <a class="reference internal" href="userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command. For example, using <a class="reference internal" href="userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> let’s try
+to find Teensy boards:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; pio boards teensy
+
+Platform: teensy
+---------------------------------------------------------------------------
+ID                    MCU            Frequency  Flash   RAM    Name
+---------------------------------------------------------------------------
+teensy20              atmega32u4     16MHz     31K    <span class="m">2</span>.5K  Teensy <span class="m">2</span>.0
+teensy30              mk20dx128      48MHz     128K   16K   Teensy <span class="m">3</span>.0
+teensy31              mk20dx256      72MHz     256K   64K   Teensy <span class="m">3</span>.1 / <span class="m">3</span>.2
+teensylc              mkl26z64       48MHz     62K    8K    Teensy LC
+teensy20pp            at90usb1286    16MHz     127K   8K    Teensy++ <span class="m">2</span>.0
+</pre></div>
+</div>
+<p>According to the table above the ID for <a class="reference internal" href="../boards/teensy/teensy31.html#board-teensy-teensy31"><span class="std std-ref">Teensy 3.1 / 3.2</span></a> is
+<code class="docutils literal notranslate"><span class="pre">teensy31</span></code>. Also, the ID for <a class="reference internal" href="../boards/atmelavr/uno.html#board-atmelavr-uno"><span class="std std-ref">Arduino Uno</span></a> is <code class="docutils literal notranslate"><span class="pre">uno</span></code> and
+for <a class="reference internal" href="../boards/espressif8266/nodemcuv2.html#board-espressif8266-nodemcuv2"><span class="std std-ref">NodeMCU 1.0 (ESP-12E Module)</span></a> is <code class="docutils literal notranslate"><span class="pre">nodemcuv2</span></code>.</p>
+</div>
+<div class="section" id="initialize-project">
+<h2>Initialize Project<a class="headerlink" href="#initialize-project" title="Permalink to this headline">¶</a></h2>
+<p>PlatformIO ecosystem contains big database with pre-configured settings for the
+most popular embedded boards. It helps you to forget about installing
+toolchains, writing build scripts or configuring uploading process. Just tell
+PlatformIO the Board ID and you will receive full working project with
+pre-installed instruments for the professional development.</p>
+<ol class="arabic">
+<li><p>Create empty folder where you are going to initialize new PlatformIO
+project. Then open system Terminal and change directory to it:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># create new directory</span>
+&gt; mkdir path_to_the_new_directory
+
+<span class="c1"># go to it</span>
+&gt; <span class="nb">cd</span> path_to_the_new_directory
+</pre></div>
+</div>
+</li>
+<li><p>Initialize project for the boards mentioned above (you can specify more
+than one board at time):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; pio project init --board uno --board nodemcuv2 --board teensy31
+
+The current working directory *** will be used <span class="k">for</span> the new project.
+You can specify another project directory via
+<span class="sb">`</span>pio project init -d %PATH_TO_THE_PROJECT_DIR%<span class="sb">`</span> command.
+
+The next files/directories will be created <span class="k">in</span> ***
+platformio.ini - Project Configuration File. <span class="p">|</span>-&gt; PLEASE EDIT ME &lt;-<span class="p">|</span>
+src - Put your <span class="nb">source</span> files here
+lib - Put here project specific <span class="o">(</span>private<span class="o">)</span> libraries
+Do you want to <span class="k">continue</span>? <span class="o">[</span>y/N<span class="o">]</span>: y
+Project has been successfully initialized!
+Useful commands:
+<span class="sb">`</span>pio run<span class="sb">`</span> - process/build project from the current directory
+<span class="sb">`</span>pio run --target upload<span class="sb">`</span> or <span class="sb">`</span>pio run -t upload<span class="sb">`</span> - upload firmware to embedded board
+<span class="sb">`</span>pio run --target clean<span class="sb">`</span> - clean project <span class="o">(</span>remove compiled files<span class="o">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Congrats! You have just created the first PlatformIO based Project with the
+next structure:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src</span></code> directory where you should place source code
+(<code class="docutils literal notranslate"><span class="pre">*.h,</span> <span class="pre">*.c,</span> <span class="pre">*.cpp,</span> <span class="pre">*.S,</span> <span class="pre">*.ino,</span> <span class="pre">etc.</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lib</span></code> directory can be used for the project specific (private) libraries.
+More details are located in <code class="docutils literal notranslate"><span class="pre">lib/README</span></code> file.</p></li>
+<li><p>Miscellaneous files for VCS and <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> support.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you need to add new board to the existing project please use
+<a class="reference internal" href="userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> again.</p>
+</div>
+<p>The result of just generated <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; PlatformIO Project Configuration File</span>
+<span class="c1">;</span>
+<span class="c1">;   Build options: build flags, source filter, extra scripting</span>
+<span class="c1">;   Upload options: custom port, speed and extra flags</span>
+<span class="c1">;   Library options: dependencies, extra library storages</span>
+<span class="c1">;</span>
+<span class="c1">; Please visit documentation for the other options and examples</span>
+<span class="c1">; https://docs.platformio.org/page/projectconf.html</span>
+
+<span class="k">[env:uno]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
+
+<span class="k">[env:nodemcuv2]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
+
+<span class="k">[env:teensy31]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">teensy31</span>
+</pre></div>
+</div>
+<p>Now, we need to create <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> file and place it to <code class="docutils literal notranslate"><span class="pre">src</span></code> folder of our
+newly created project. The contents of <code class="docutils literal notranslate"><span class="pre">src/main.cpp</span></code>:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * Blink</span>
+<span class="cm"> *</span>
+<span class="cm"> * Turns on an LED on for one second,</span>
+<span class="cm"> * then off for one second, repeatedly.</span>
+<span class="cm"> */</span>
+<span class="cp">#include</span> <span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#ifndef LED_BUILTIN</span>
+<span class="cp">#define LED_BUILTIN 13</span>
+<span class="cp">#endif</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="c1">// initialize LED digital pin as an output.</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="c1">// turn the LED on (HIGH is the voltage level)</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+
+  <span class="c1">// wait for a second</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+  <span class="c1">// turn the LED off by making the voltage LOW</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+
+   <span class="c1">// wait for a second</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The final Project structure:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>project_dir
+├── lib
+│   └── README
+├── platformio.ini
+└── src
+    └── main.cpp
+</pre></div>
+</div>
+</div>
+<div class="section" id="process-project">
+<h2>Process Project<a class="headerlink" href="#process-project" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> provides special <a class="reference internal" href="userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command to process project. If
+you call it without any arguments, PlatformIO Build System will process all
+project environments (which were created per each board specified above). Here
+are a few useful commands:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span></code>. Process (build) all environments specified in
+<a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span> <span class="pre">upload</span></code>. Build project and upload firmware to the
+all devices specified in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span> <span class="pre">clean</span></code>. Clean project (delete compiled objects)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-e</span> <span class="pre">uno</span></code>. Process only <code class="docutils literal notranslate"><span class="pre">uno</span></code> environment</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-e</span> <span class="pre">uno</span> <span class="pre">-t</span> <span class="pre">upload</span></code>. Build project only for <code class="docutils literal notranslate"><span class="pre">uno</span></code> and upload
+firmware.</p></li>
+</ul>
+<p>Please follow to <a class="reference internal" href="userguide/cmd_run.html#cmdoption-pio-run-list-targets"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--list-targets</span></code></a> documentation for the other
+targets.</p>
+<p>Finally, demo which demonstrates building project and uploading firmware to
+Arduino Uno:</p>
+<img alt="../_images/platformio-demo-wiring.gif" src="../_images/platformio-demo-wiring.gif" />
+</div>
+<div class="section" id="further-reading">
+<h2>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop">Project examples</a></p></li>
+<li><p><a class="reference internal" href="userguide/index.html#piocore-userguide"><span class="std std-ref">CLI Guide</span></a> for <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> commands</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="userguide/index.html" class="btn btn-neutral float-right" title="CLI Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/core/quickstart.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/core/quickstart.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

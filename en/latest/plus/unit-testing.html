@@ -1,0 +1,835 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Unit Testing &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/plus/unit-testing.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Static Code Analysis" href="pio-check.html" />
+    <link rel="prev" title="Custom" href="debug-tools/custom.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Unit Testing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#demo">Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tutorials-and-examples">Tutorials and Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tutorials">Tutorials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-examples">Project Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../projectconf/section_env_test.html">Test options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#test-types">Test Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#desktop">Desktop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#embedded">Embedded</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#test-runner">Test Runner</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#local">Local</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remote">Remote</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#test-transport">Test Transport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#workflow">Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#shared-code">Shared Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#api">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cli-guide">CLI Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/cmd_test.html">pio test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_test.html">pio remote test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Unit Testing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/plus/unit-testing.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unit-testing">
+<span id="id1"></span><h1>Unit Testing<a class="headerlink" href="#unit-testing" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#demo" id="id2">Demo</a></p></li>
+<li><p><a class="reference internal" href="#tutorials-and-examples" id="id3">Tutorials and Examples</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id4">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#test-types" id="id5">Test Types</a></p></li>
+<li><p><a class="reference internal" href="#test-runner" id="id6">Test Runner</a></p></li>
+<li><p><a class="reference internal" href="#test-transport" id="id7">Test Transport</a></p></li>
+<li><p><a class="reference internal" href="#workflow" id="id8">Workflow</a></p></li>
+<li><p><a class="reference internal" href="#api" id="id9">API</a></p></li>
+<li><p><a class="reference internal" href="#cli-guide" id="id10">CLI Guide</a></p></li>
+</ul>
+</div>
+<p>Unit Testing allows you segregating each part of the firmware/program and testing that
+the individual parts are working correctly. Using <strong>PlatformIO Unit Testing Solution</strong> you can execute the same
+tests on the local host machine (native), on the multiple local embedded devices/boards
+(connected to local host machine), or on both. When testing both, PlatformIO builds
+firmware on the host machine, uploads into a target device, starts tests, and collects
+the test results into test reports. The final information will be shown on the host
+side with informative output and statistic.</p>
+<p>Using <a class="reference internal" href="pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a> you can start unit tests on the <strong>Remote Device</strong> from anywhere in the world or integrate with <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> systems.</p>
+<div class="section" id="demo">
+<h2><a class="toc-backref" href="#id2">Demo</a><a class="headerlink" href="#demo" title="Permalink to this headline">¶</a></h2>
+<p>This is a demo of <a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator">Local &amp; Embedded: Calculator</a>, which demonstrates running embedded tests on physical hardware
+(<a class="reference internal" href="../boards/atmelavr/uno.html#board-atmelavr-uno"><span class="std std-ref">Arduino Uno</span></a>) and native tests on host machine (desktop).</p>
+<p>Learn more about <a class="reference internal" href="../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command.</p>
+<a class="reference external image-reference" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator"><img alt="../_images/pioplus-unit-testing-demo.png" src="../_images/pioplus-unit-testing-demo.png" /></a>
+</div>
+<div class="section" id="tutorials-and-examples">
+<h2><a class="toc-backref" href="#id3">Tutorials and Examples</a><a class="headerlink" href="#tutorials-and-examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tutorials">
+<h3>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/core/unit_testing_blink.html#tutorial-unit-testing-blink"><span class="std std-ref">Unit Testing of a “Blink” Project</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/ststm32/stm32cube_debugging_unit_testing.html#tutorial-stm32cube-debugging-unit-testing"><span class="std std-ref">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</span></a></p></li>
+<li><p><a class="reference external" href="http://www.thingforward.io/techblog/2017-07-25-starting-embedded-testing-with-platformio.html">ThingForward: Start Embedded Testing with PlatformIO</a></p></li>
+<li><p><a class="reference external" href="http://www.thingforward.io/techblog/2017-08-08-embedded-testing-with-platformio-part-2.html">ThingForward: Embedded Testing with PlatformIO - Part 2</a></p></li>
+<li><p><a class="reference external" href="http://www.thingforward.io/techblog/2017-09-06-embedded-testing-with-platformio-part-3-remoting.html">ThingForward: Embedded Testing with PlatformIO – Part 3: Remoting</a></p></li>
+<li><p><a class="reference external" href="http://www.thingforward.io/techblog/2017-09-18-embedded-testing-with-platformio-part-4-continuous-integration.html">ThingForward: Embedded Testing with PlatformIO – Part 4: Continuous Integration</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=GJiMdmlBGlk">ThingForward, Webinar: Unit Testing for Embedded with PlatformIO and Qt Creator</a></p></li>
+<li><p><a class="reference external" href="https://tinkerman.cat/automated-unit-testing-metal/">Xose Pérez: Automated unit testing in the metal</a></p></li>
+</ul>
+</div>
+<div class="section" id="project-examples">
+<h3>Project Examples<a class="headerlink" href="#project-examples" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing/wiring-blink">Embedded: Wiring Blink</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator">Local &amp; Embedded: Calculator</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platformio-remote-unit-testing-example">PlatformIO Remote Unit Testing Example</a></p></li>
+</ul>
+<p>For the other examples and source code please follow to
+<a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing">PlatformIO Unit Testing Examples</a> repository.</p>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#id4">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p><strong>PlatformIO Unit Testing Solution</strong> can be configured using <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/section_env_test.html">Test options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_test.html#test-filter"><code class="docutils literal notranslate"><span class="pre">test_filter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_test.html#test-ignore"><code class="docutils literal notranslate"><span class="pre">test_ignore</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_test.html#test-port"><code class="docutils literal notranslate"><span class="pre">test_port</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_test.html#test-speed"><code class="docutils literal notranslate"><span class="pre">test_speed</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_test.html#test-transport"><code class="docutils literal notranslate"><span class="pre">test_transport</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_test.html#test-build-project-src"><code class="docutils literal notranslate"><span class="pre">test_build_project_src</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="test-types">
+<h2><a class="toc-backref" href="#id5">Test Types</a><a class="headerlink" href="#test-types" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="desktop">
+<h3>Desktop<a class="headerlink" href="#desktop" title="Permalink to this headline">¶</a></h3>
+<p><strong>PlatformIO Unit Testing Engine</strong> builds a test program for a host machine using <a class="reference internal" href="../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> development platform. This test could be run only with the desktop or <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> VM instance.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>PlatformIO does not install any toolchains automatically for
+<a class="reference internal" href="../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> and requires <code class="docutils literal notranslate"><span class="pre">GCC</span></code> toolchain to be installed
+on your host machine.
+Please open Terminal and check that the <code class="docutils literal notranslate"><span class="pre">gcc</span></code> command is installed.</p>
+</div>
+</div>
+<div class="section" id="embedded">
+<h3>Embedded<a class="headerlink" href="#embedded" title="Permalink to this headline">¶</a></h3>
+<p><strong>PlatformIO Unit Testing Engine</strong> builds a special firmware for a target device (board) and programs it. Then, it connects to this device using configured Serial <a class="reference internal" href="../projectconf/section_env_test.html#projectconf-test-port"><span class="std std-ref">test_port</span></a> and communicates via <a class="reference internal" href="../projectconf/section_env_test.html#projectconf-test-transport"><span class="std std-ref">test_transport</span></a>. Finally, it runs tests on the embedded side, collects results, analyzes them, and provides a summary on a host machine side (desktop).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that the <strong>PlatformIO Unit Testing Engine</strong> uses the first available <code class="docutils literal notranslate"><span class="pre">Serial/UART</span></code>
+implementation (depending on a <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a>) as a
+communication interface between the <strong>PlatformIO Unit Testing Engine</strong> and target device. If you use
+<code class="docutils literal notranslate"><span class="pre">Serial</span></code> in your project libraries, please wrap/hide Serial-based blocks
+with <code class="docutils literal notranslate"><span class="pre">#ifndef</span> <span class="pre">UNIT_TEST</span></code> macro.</p>
+<p>Also, you can create custom <a class="reference internal" href="../projectconf/section_env_test.html#projectconf-test-transport"><span class="std std-ref">test_transport</span></a> and implement
+the base interface.</p>
+</div>
+</div>
+</div>
+<div class="section" id="test-runner">
+<h2><a class="toc-backref" href="#id6">Test Runner</a><a class="headerlink" href="#test-runner" title="Permalink to this headline">¶</a></h2>
+<p>Test Runner allows you to process specific environments or ignore a test using
+“Glob patterns”. You can also ignore a test for specific environments using a
+<a class="reference internal" href="../projectconf/section_env_test.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<div class="section" id="local">
+<h3>Local<a class="headerlink" href="#local" title="Permalink to this headline">¶</a></h3>
+<p>Allows you to run a test on a host machine or on a target device (board), which
+is directly connected to the host machine. In this case, you need to use the
+<a class="reference internal" href="../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command.</p>
+</div>
+<div class="section" id="remote">
+<span id="unit-testing-remote"></span><h3>Remote<a class="headerlink" href="#remote" title="Permalink to this headline">¶</a></h3>
+<p>Allows you to run test on a remote machine or remote target device (board)
+without having to depend on OS software, extra software, SSH, VPN or opening
+network ports. Remote Unit Testing works in pair with <a class="reference internal" href="pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a>. In this
+case, you need to use the special command <a class="reference internal" href="../core/userguide/remote/cmd_test.html#cmd-remote-test"><span class="std std-ref">pio remote test</span></a>.</p>
+<p>PlatformIO supports multiple <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> systems where you can run unit tests
+at each integration stage. See real
+<a class="reference external" href="https://github.com/platformio/platformio-remote-unit-testing-example">PlatformIO Remote Unit Testing Example</a>.</p>
+</div>
+</div>
+<div class="section" id="test-transport">
+<span id="unit-testing-transport"></span><h2><a class="toc-backref" href="#id7">Test Transport</a><a class="headerlink" href="#test-transport" title="Permalink to this headline">¶</a></h2>
+<p><strong>PlatformIO Unit Testing Engine</strong> uses different transports to communicate with a
+target device. By default, it uses <code class="docutils literal notranslate"><span class="pre">Serial/UART</span></code> transport provided
+by a <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a>. For example, when
+“<a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">arduino</span></code>”, the first available
+<code class="docutils literal notranslate"><span class="pre">Serial</span></code> will be used.
+When <a class="reference internal" href="../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> dev-platform is used a <code class="docutils literal notranslate"><span class="pre">native</span></code> transport will be
+activated automatically. See example below.</p>
+<p>Default baudrate/speed is set to <a class="reference internal" href="../projectconf/section_env_test.html#projectconf-test-speed"><span class="std std-ref">test_speed</span></a>.</p>
+<p>You can also define <code class="docutils literal notranslate"><span class="pre">custom</span></code> transport and implement its interface:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">unittest_uart_begin();</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unittest_uart_putchar(char</span> <span class="pre">c);</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unittest_uart_flush();</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unittest_uart_end();</span></code></p></li>
+</ul>
+<p><strong>Examples</strong></p>
+<ol class="arabic simple">
+<li><p>Custom transport for <a class="reference internal" href="../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> platform</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">test_transport</span> <span class="pre">=</span> <span class="pre">custom</span></code> in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
+</ul>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:mycustomtransport]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">native</span>
+<span class="na">test_transport</span> <span class="o">=</span> <span class="s">custom</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Create <code class="docutils literal notranslate"><span class="pre">unittest_transport.h</span></code> file in <code class="docutils literal notranslate"><span class="pre">project/test</span></code> directory and
+implement prototypes above</p></li>
+</ul>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef UNITTEST_TRANSPORT_H</span>
+<span class="cp">#define UNITTEST_TRANSPORT_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+
+<span class="kt">void</span> <span class="nf">unittest_uart_begin</span><span class="p">()</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">unittest_uart_putchar</span><span class="p">(</span><span class="kt">char</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">putchar</span><span class="p">(</span><span class="n">c</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">unittest_uart_flush</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">fflush</span><span class="p">(</span><span class="n">stdout</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">unittest_uart_end</span><span class="p">()</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><a class="reference internal" href="../tutorials/ststm32/stm32cube_debugging_unit_testing.html#tutorial-stm32cube-debugging-unit-testing"><span class="std std-ref">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</span></a></p></li>
+</ol>
+</div>
+<div class="section" id="workflow">
+<h2><a class="toc-backref" href="#id8">Workflow</a><a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Create PlatformIO project using the <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> command. For Desktop Unit
+Testing (on a host machine), you need to use <a class="reference internal" href="../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a>.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; PlatformIO Project Configuration File</span>
+<span class="c1">;</span>
+<span class="c1">;   Build options: build flags, source filter, extra scripting</span>
+<span class="c1">;   Upload options: custom port, speed and extra flags</span>
+<span class="c1">;   Library options: dependencies, extra library storages</span>
+<span class="c1">;</span>
+<span class="c1">; Please visit documentation for the other options and examples</span>
+<span class="c1">; https://docs.platformio.org/page/projectconf.html</span>
+
+<span class="c1">;</span>
+<span class="c1">; Embedded platforms</span>
+<span class="c1">;</span>
+
+<span class="k">[env:uno]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
+
+<span class="k">[env:nodemcu]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
+
+<span class="c1">;</span>
+<span class="c1">; Desktop platforms (Win, Mac, Linux, Raspberry Pi, etc)</span>
+<span class="c1">; See https://platformio.org/platforms/native</span>
+<span class="c1">;</span>
+
+<span class="k">[env:native]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">native</span>
+</pre></div>
+</div>
+</li>
+<li><p>Create a <code class="docutils literal notranslate"><span class="pre">test</span></code> folder in a root of your project. See <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>.</p></li>
+<li><p>Write a test using <a class="reference internal" href="#unit-testing-api"><span class="std std-ref">API</span></a>. Each test is a small independent
+program/firmware with its own <code class="docutils literal notranslate"><span class="pre">main()</span></code> or <code class="docutils literal notranslate"><span class="pre">setup()/loop()</span></code> functions.
+Test should start with <code class="docutils literal notranslate"><span class="pre">UNITY_BEGIN()</span></code> and finish with <code class="docutils literal notranslate"><span class="pre">UNITY_END()</span></code>
+calls.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If your board does not support software resetting via <code class="docutils literal notranslate"><span class="pre">Serial.DTR/RTS</span></code>,
+you should add at least 2 seconds delay before <code class="docutils literal notranslate"><span class="pre">UNITY_BEGIN()</span></code>.
+That time is needed to establish a <code class="docutils literal notranslate"><span class="pre">Serial</span></code> connection between a host
+machine and a target device.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span> <span class="c1">// for Arduino framework</span>
+<span class="n">wait</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>     <span class="c1">// for ARM mbed framework</span>
+<span class="n">UNITY_BEGIN</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</li>
+<li><p>Place a test in the <code class="docutils literal notranslate"><span class="pre">test</span></code> directory. If you have more than one test,
+split them into sub-folders. For example, <code class="docutils literal notranslate"><span class="pre">test/test_1/*.[c,cpp,h]</span></code>,
+<code class="docutils literal notranslate"><span class="pre">test_N/*.[c,cpp,h]</span></code>, etc. If there is no such directory in the <code class="docutils literal notranslate"><span class="pre">test</span></code> folder,
+then <strong>PlatformIO Unit Testing Engine</strong> will treat the source code of <code class="docutils literal notranslate"><span class="pre">test</span></code> folder as SINGLE test.</p></li>
+<li><p>Run tests using the <a class="reference internal" href="../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command.</p></li>
+</ol>
+<div class="section" id="shared-code">
+<span id="unit-testing-shared-code"></span><h3>Shared Code<a class="headerlink" href="#shared-code" title="Permalink to this headline">¶</a></h3>
+<p><strong>PlatformIO Unit Testing Engine</strong> does not build source code from <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder
+by default. If you have a shared/common code between your “main” and “test”
+programs, you have 2 options:</p>
+<ol class="arabic">
+<li><p><strong>RECOMMENDED</strong>. We recommend splitting the source code into multiple
+components and placing them into <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-lib-dir"><span class="std std-ref">lib_dir</span></a> (project’s
+private libraries and components). <a class="reference internal" href="../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a> will find and include these libraries
+automatically in the build process. You can include any library/component header file
+in your test or program source code via <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;MyComponent.h&gt;</span></code>.</p>
+<p>See <a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator">Local &amp; Embedded: Calculator</a>  for an example, where we have a “calculator”
+component in <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-lib-dir"><span class="std std-ref">lib_dir</span></a> folder and include it in tests
+and the main program using <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;calculator.h&gt;</span></code>.</p>
+</li>
+<li><p>Manually instruct PlatformIO to build source code from <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>
+folder using <a class="reference internal" href="../projectconf/section_env_test.html#projectconf-test-build-project-src"><span class="std std-ref">test_build_project_src</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">test_build_project_src</span> <span class="o">=</span> <span class="s">true</span>
+</pre></div>
+</div>
+<p>This is very useful if you unit test independent libraries where you
+can’t split source code.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please note that you will need to use <code class="docutils literal notranslate"><span class="pre">#ifdef</span> <span class="pre">UNIT_TEST</span></code> and <code class="docutils literal notranslate"><span class="pre">#endif</span></code>
+guard to hide non-test related source code. For example, own <code class="docutils literal notranslate"><span class="pre">main()</span></code>
+or <code class="docutils literal notranslate"><span class="pre">setup()</span> <span class="pre">/</span> <span class="pre">loop()</span></code> functions.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="api">
+<span id="unit-testing-api"></span><h2><a class="toc-backref" href="#id9">API</a><a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<p>Summary of the <a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#unity-test-api">Unity Test API</a>:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#running-tests">Running Tests</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">RUN_TEST(func)</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#ignoring-tests">Ignoring Tests</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_IGNORE()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_IGNORE_MESSAGE</span> <span class="pre">(message)</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#aborting-tests">Aborting Tests</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_PROTECT()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ABORT()</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#basic-validity-tests">Basic Validity Tests</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_TRUE(condition)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_FALSE(condition)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT(condition)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_UNLESS(condition)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_FAIL()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_FAIL_MESSAGE(message)</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#numerical-assertions-integers">Numerical Assertions: Integers</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_INT(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_INT8(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_INT16(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_INT32(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_INT64(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_UINT(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_UINT8(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_UINT16(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_UINT32(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_UINT64(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_HEX(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_HEX8(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_HEX16(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_HEX32(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_HEX64(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_HEX8_ARRAY(expected,</span> <span class="pre">actual,</span> <span class="pre">elements)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_INT_WITHIN(delta,</span> <span class="pre">expected,</span> <span class="pre">actual)</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#numerical-assertions-bitwise">Numerical Assertions: Bitwise</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_BITS(mask,</span> <span class="pre">expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_BITS_HIGH(mask,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_BITS_LOW(mask,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_BIT_HIGH(mask,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_BIT_LOW(mask,</span> <span class="pre">actual)</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#numerical-assertions-floats">Numerical Assertions: Floats</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_FLOAT_WITHIN(delta,</span> <span class="pre">expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_FLOAT(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_DOUBLE(expected,</span> <span class="pre">actual)</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#string-assertions">String Assertions</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_STRING(expected,</span> <span class="pre">actual)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_STRING_LEN(expected,</span> <span class="pre">actual,</span> <span class="pre">len)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_STRING_MESSAGE(expected,</span> <span class="pre">actual,</span> <span class="pre">message)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_STRING_LEN_MESSAGE(expected,</span> <span class="pre">actual,</span> <span class="pre">len,</span> <span class="pre">message)</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#pointer-assertions">Pointer Assertions</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_NULL(pointer)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_NOT_NULL(pointer)</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity#pointer-assertions">Memory Assertions</a></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">TEST_ASSERT_EQUAL_MEMORY(expected,</span> <span class="pre">actual,</span> <span class="pre">len)</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="cli-guide">
+<h2><a class="toc-backref" href="#id10">CLI Guide</a><a class="headerlink" href="#cli-guide" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../core/userguide/cmd_test.html">pio test</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/cmd_test.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/cmd_test.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/cmd_test.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/cmd_test.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../core/userguide/remote/cmd_test.html">pio remote test</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/remote/cmd_test.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/remote/cmd_test.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/remote/cmd_test.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/remote/cmd_test.html#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="pio-check.html" class="btn btn-neutral float-right" title="Static Code Analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="debug-tools/custom.html" class="btn btn-neutral float-left" title="Custom" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/plus/unit-testing.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/plus/unit-testing.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

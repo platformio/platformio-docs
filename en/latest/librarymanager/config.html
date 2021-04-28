@@ -1,0 +1,1012 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>library.json &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/librarymanager/config.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Creating Library" href="creating.html" />
+    <link rel="prev" title="Library Dependency Finder (LDF)" href="ldf.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Library Management</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ldf.html">Library Dependency Finder (LDF)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html">Configuration</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">library.json</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#name"><code class="docutils literal notranslate"><span class="pre">name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version"><code class="docutils literal notranslate"><span class="pre">version</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description"><code class="docutils literal notranslate"><span class="pre">description</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keywords"><code class="docutils literal notranslate"><span class="pre">keywords</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#repository"><code class="docutils literal notranslate"><span class="pre">repository</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#authors"><code class="docutils literal notranslate"><span class="pre">authors</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#license"><code class="docutils literal notranslate"><span class="pre">license</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#homepage"><code class="docutils literal notranslate"><span class="pre">homepage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export"><code class="docutils literal notranslate"><span class="pre">export</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#include"><code class="docutils literal notranslate"><span class="pre">include</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exclude"><code class="docutils literal notranslate"><span class="pre">exclude</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#frameworks"><code class="docutils literal notranslate"><span class="pre">frameworks</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#platforms"><code class="docutils literal notranslate"><span class="pre">platforms</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dependencies"><code class="docutils literal notranslate"><span class="pre">dependencies</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples"><code class="docutils literal notranslate"><span class="pre">examples</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build"><code class="docutils literal notranslate"><span class="pre">build</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#flags"><code class="docutils literal notranslate"><span class="pre">flags</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unflags"><code class="docutils literal notranslate"><span class="pre">unflags</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#includedir"><code class="docutils literal notranslate"><span class="pre">includeDir</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#srcdir"><code class="docutils literal notranslate"><span class="pre">srcDir</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#srcfilter"><code class="docutils literal notranslate"><span class="pre">srcFilter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extrascript"><code class="docutils literal notranslate"><span class="pre">extraScript</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#libarchive"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#libldfmode"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#libcompatmode"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="creating.html">Creating Library</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Library Management</a> &raquo;</li>
+        
+      <li>library.json</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/librarymanager/config.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="library-json">
+<span id="id1"></span><h1>library.json<a class="headerlink" href="#library-json" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">library.json</span></code> is a manifest file of a library package. It allows developers
+to keep a project in its own structure and define:</p>
+<ul class="simple">
+<li><p>compatible frameworks and platforms</p></li>
+<li><p>external dependencies</p></li>
+<li><p>advanced build settings.</p></li>
+</ul>
+<p>Information in <code class="docutils literal notranslate"><span class="pre">library.json</span></code> should be represented in <a class="reference external" href="http://en.wikipedia.org/wiki/JSON">JSON-style</a>
+via <a class="reference external" href="http://en.wikipedia.org/wiki/Associative_array">associative array</a>
+(name/value pairs). The order doesn’t matter. The allowable fields
+(names from pairs) are described below.</p>
+<p>You can validate <code class="docutils literal notranslate"><span class="pre">library.json</span></code> manifest file using the <a class="reference internal" href="../core/userguide/package/cmd_pack.html#cmd-package-pack"><span class="std std-ref">pio package pack</span></a> command.</p>
+<div class="contents local topic" id="fields">
+<p class="topic-title">Fields</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#name" id="id6"><code class="docutils literal notranslate"><span class="pre">name</span></code></a></p></li>
+<li><p><a class="reference internal" href="#version" id="id7"><code class="docutils literal notranslate"><span class="pre">version</span></code></a></p></li>
+<li><p><a class="reference internal" href="#description" id="id8"><code class="docutils literal notranslate"><span class="pre">description</span></code></a></p></li>
+<li><p><a class="reference internal" href="#keywords" id="id9"><code class="docutils literal notranslate"><span class="pre">keywords</span></code></a></p></li>
+<li><p><a class="reference internal" href="#repository" id="id10"><code class="docutils literal notranslate"><span class="pre">repository</span></code></a></p></li>
+<li><p><a class="reference internal" href="#authors" id="id11"><code class="docutils literal notranslate"><span class="pre">authors</span></code></a></p></li>
+<li><p><a class="reference internal" href="#license" id="id12"><code class="docutils literal notranslate"><span class="pre">license</span></code></a></p></li>
+<li><p><a class="reference internal" href="#homepage" id="id13"><code class="docutils literal notranslate"><span class="pre">homepage</span></code></a></p></li>
+<li><p><a class="reference internal" href="#export" id="id14"><code class="docutils literal notranslate"><span class="pre">export</span></code></a></p>
+<ul>
+<li><p><a class="reference internal" href="#include" id="id15"><code class="docutils literal notranslate"><span class="pre">include</span></code></a></p></li>
+<li><p><a class="reference internal" href="#exclude" id="id16"><code class="docutils literal notranslate"><span class="pre">exclude</span></code></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#frameworks" id="id17"><code class="docutils literal notranslate"><span class="pre">frameworks</span></code></a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id18"><code class="docutils literal notranslate"><span class="pre">platforms</span></code></a></p></li>
+<li><p><a class="reference internal" href="#dependencies" id="id19"><code class="docutils literal notranslate"><span class="pre">dependencies</span></code></a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id20"><code class="docutils literal notranslate"><span class="pre">examples</span></code></a></p></li>
+<li><p><a class="reference internal" href="#build" id="id21"><code class="docutils literal notranslate"><span class="pre">build</span></code></a></p>
+<ul>
+<li><p><a class="reference internal" href="#flags" id="id22"><code class="docutils literal notranslate"><span class="pre">flags</span></code></a></p></li>
+<li><p><a class="reference internal" href="#unflags" id="id23"><code class="docutils literal notranslate"><span class="pre">unflags</span></code></a></p></li>
+<li><p><a class="reference internal" href="#includedir" id="id24"><code class="docutils literal notranslate"><span class="pre">includeDir</span></code></a></p></li>
+<li><p><a class="reference internal" href="#srcdir" id="id25"><code class="docutils literal notranslate"><span class="pre">srcDir</span></code></a></p></li>
+<li><p><a class="reference internal" href="#srcfilter" id="id26"><code class="docutils literal notranslate"><span class="pre">srcFilter</span></code></a></p></li>
+<li><p><a class="reference internal" href="#extrascript" id="id27"><code class="docutils literal notranslate"><span class="pre">extraScript</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libarchive" id="id28"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libldfmode" id="id29"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libcompatmode" id="id30"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id5" id="id31">Examples</a></p></li>
+</ul>
+</div>
+<div class="section" id="name">
+<span id="libjson-name"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">name</span></code></a><a class="headerlink" href="#name" title="Permalink to this headline">¶</a></h2>
+<p><strong>Required</strong> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Max. Length: 50</p>
+<p>A name of a library.</p>
+<ul class="simple">
+<li><p>Must be unique</p></li>
+<li><p>Should be slug style for simplicity, consistency, and compatibility.
+Example: <em>HelloWorld</em></p></li>
+<li><p>Can contain a-z, digits, and dashes (but not start/end with them)</p></li>
+<li><p>Consecutive dashes and [:;/,&#64;&lt;&gt;] chars are not allowed.</p></li>
+</ul>
+</div>
+<div class="section" id="version">
+<span id="libjson-version"></span><h2><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">version</span></code></a><a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
+<p><em>Required</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Max. Length: 20</p>
+<p>A version of a current library source code. Can contain a-z, digits, dots or
+dash and should be <a class="reference external" href="http://semver.org">Semantic Versioning</a> compatible.</p>
+<p>Example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Bar&quot;</span><span class="p">,</span>
+<span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;repository&quot;</span><span class="o">:</span>
+<span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;git&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/foo/bar.git&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="description">
+<span id="libjson-description"></span><h2><a class="toc-backref" href="#id8"><code class="docutils literal notranslate"><span class="pre">description</span></code></a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>Required</strong> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Max. Length: 255</p>
+<p>The field helps users to identify and search for your library with a brief
+description. Describe the hardware devices (sensors, boards and etc.) which
+are suitable with it.</p>
+</div>
+<div class="section" id="keywords">
+<span id="libjson-keywords"></span><h2><a class="toc-backref" href="#id9"><code class="docutils literal notranslate"><span class="pre">keywords</span></code></a><a class="headerlink" href="#keywords" title="Permalink to this headline">¶</a></h2>
+<p><strong>Required</strong> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code> | Max. Length: 255</p>
+<p>Used for search by keyword. Helps to make your library easier to discover
+without people needing to know its name.</p>
+<p>The keyword should be lowercased, can contain a-z, digits and dash (but not
+start/end with them). A list from the keywords can be specified with
+separator <code class="docutils literal notranslate"><span class="pre">,</span></code> or declared as Array.</p>
+</div>
+<div class="section" id="repository">
+<span id="libjson-repository"></span><h2><a class="toc-backref" href="#id10"><code class="docutils literal notranslate"><span class="pre">repository</span></code></a><a class="headerlink" href="#repository" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
+<p>The repository in which the source code can be found. The field consists of the
+next items:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">type</span></code> the only “git”, “hg” or “svn” are supported</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">url</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">branch</span></code> if is not specified, default branch will be used. This field will
+be ignored if tag/release exists with the value of <a class="reference internal" href="#libjson-version"><span class="std std-ref">version</span></a>.</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;repository&quot;</span><span class="o">:</span>
+<span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;git&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/foo/bar.git&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="authors">
+<span id="libjson-authors"></span><h2><a class="toc-backref" href="#id11"><code class="docutils literal notranslate"><span class="pre">authors</span></code></a><a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Object</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code></p>
+<p>An author contact information</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> Full name (<strong>Required</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">email</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">url</span></code> An author’s contact page</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">maintainer</span></code> Specify “maintainer” status</p></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;authors&quot;</span><span class="o">:</span>
+<span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;John Smith&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;email&quot;</span><span class="o">:</span> <span class="s2">&quot;me@john-smith.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.john-smith/contact&quot;</span>
+<span class="p">}</span>
+
+<span class="p">...</span>
+
+<span class="s2">&quot;authors&quot;</span><span class="o">:</span>
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;John Smith&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;email&quot;</span><span class="o">:</span> <span class="s2">&quot;me@john-smith.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.john-smith/contact&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Andrew Smith&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;email&quot;</span><span class="o">:</span> <span class="s2">&quot;me@andrew-smith.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.andrew-smith/contact&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;maintainer&quot;</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If <a class="reference internal" href="#libjson-authors"><span class="std std-ref">authors</span></a> field is not defined, PlatformIO will try to fetch data
+from VCS provider (Github, Gitlab, etc) if <a class="reference internal" href="#libjson-repository"><span class="std std-ref">repository</span></a> is declared.</p>
+</div>
+</div>
+<div class="section" id="license">
+<h2><a class="toc-backref" href="#id12"><code class="docutils literal notranslate"><span class="pre">license</span></code></a><a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
+<p>A SPDX license ID of the library. You can check <a class="reference external" href="https://spdx.org/licenses/">the full list of SPDX license IDs</a> (see “Identifier” column).</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;license&quot;</span><span class="o">:</span> <span class="s2">&quot;Apache-2.0&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="homepage">
+<h2><a class="toc-backref" href="#id13"><code class="docutils literal notranslate"><span class="pre">homepage</span></code></a><a class="headerlink" href="#homepage" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Max. Length: 255</p>
+<p>Home page of a library (if is different from <a class="reference internal" href="#libjson-repository"><span class="std std-ref">repository</span></a> url).</p>
+</div>
+<div class="section" id="export">
+<span id="libjson-export"></span><h2><a class="toc-backref" href="#id14"><code class="docutils literal notranslate"><span class="pre">export</span></code></a><a class="headerlink" href="#export" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
+<p>This option is useful if you need to exclude extra data (test code, docs, images, PDFs, etc).
+It allows one to reduce the size of the final archive.</p>
+<p>To check which files will be included in the final packages, please use
+<a class="reference internal" href="../core/userguide/package/cmd_pack.html#cmd-package-pack"><span class="std std-ref">pio package pack</span></a> command.</p>
+<p>Possible options:</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#include" id="id32"><code class="docutils literal notranslate"><span class="pre">include</span></code></a></p></li>
+<li><p><a class="reference internal" href="#exclude" id="id33"><code class="docutils literal notranslate"><span class="pre">exclude</span></code></a></p></li>
+</ul>
+</div>
+<div class="section" id="include">
+<h3><a class="toc-backref" href="#id32"><code class="docutils literal notranslate"><span class="pre">include</span></code></a><a class="headerlink" href="#include" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Array</span></code> | <a class="reference external" href="http://en.wikipedia.org/wiki/Glob_(programming)">Glob Pattern</a></p>
+<p>Export only files that matched declared patterns.</p>
+<p><strong>Pattern Meaning</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pattern</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td><p>matches everything</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">?</span></code></p></td>
+<td><p>matches any single character</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">[seq]</span></code></p></td>
+<td><p>matches any character in seq</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">[!seq]</span></code></p></td>
+<td><p>matches any character not in seq</p></td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;export&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;include&quot;</span><span class="o">:</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;dir/*.[ch]pp&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;dir/examples/*&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;*/*/*.h&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exclude">
+<h3><a class="toc-backref" href="#id33"><code class="docutils literal notranslate"><span class="pre">exclude</span></code></a><a class="headerlink" href="#exclude" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Array</span></code> | <a class="reference external" href="http://en.wikipedia.org/wiki/Glob_(programming)">Glob Pattern</a></p>
+<p>Exclude the directories and files which match with <code class="docutils literal notranslate"><span class="pre">exclude</span></code> patterns.</p>
+</div>
+</div>
+<div class="section" id="frameworks">
+<span id="libjson-frameworks"></span><h2><a class="toc-backref" href="#id17"><code class="docutils literal notranslate"><span class="pre">frameworks</span></code></a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code></p>
+<p>A list with compatible frameworks. The available framework names are defined in
+the <a class="reference internal" href="../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a> section.</p>
+<p>Example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;frameworks&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;espidf&quot;</span><span class="p">,</span> <span class="s2">&quot;freertos&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>If the library is compatible with the all frameworks, then do not declare this field or
+you use <code class="docutils literal notranslate"><span class="pre">*</span></code> symbol:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;frameworks&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="platforms">
+<span id="libjson-platforms"></span><h2><a class="toc-backref" href="#id18"><code class="docutils literal notranslate"><span class="pre">platforms</span></code></a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code></p>
+<p>A list with compatible development platforms. The available platform name are defined
+in <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> section.</p>
+<p>Example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;atmelavr&quot;</span><span class="p">,</span> <span class="s2">&quot;espressif8266&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>If the library is compatible with the all platforms, then do not declare this field or
+use <code class="docutils literal notranslate"><span class="pre">*</span></code> symbol:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>PlatformIO does not check platforms for compatibility in default mode.
+See <a class="reference internal" href="ldf.html#ldf-compat-mode"><span class="std std-ref">Compatibility Mode</span></a> for details. If you need a strict checking for compatible
+platforms for a library, please set <a class="reference internal" href="#libjons-compatmode"><span class="std std-ref">libCompatMode</span></a> to <code class="docutils literal notranslate"><span class="pre">strict</span></code>.</p>
+</div>
+</div>
+<div class="section" id="dependencies">
+<span id="libjson-dependencies"></span><h2><a class="toc-backref" href="#id19"><code class="docutils literal notranslate"><span class="pre">dependencies</span></code></a><a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Array</span></code> or <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
+<p>A list of dependent libraries. They will be installed automatically with
+<a class="reference internal" href="../core/userguide/lib/cmd_install.html#cmd-lib-install"><span class="std std-ref">pio lib install</span></a> command.</p>
+<p>Allowed requirements for dependent library:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">owner</span></code> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> – an owner name (username) from the PlatformIO Registry</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> – library name</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> – version or version range in SemVer format</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">frameworks</span></code> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code> – project compatible <a class="reference internal" href="../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">platforms</span></code> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code> – project compatible <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a></p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">version</span></code> supports <a class="reference external" href="https://devhints.io/semver">Semantic Versioning</a> (
+<code class="docutils literal notranslate"><span class="pre">&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</span></code>) and can take any of the following forms:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">1.2.3</span></code> - an exact version number. Use only this exact version</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">^1.2.3</span></code> - any compatible version (exact version for <code class="docutils literal notranslate"><span class="pre">1.x.x</span></code> versions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">~1.2.3</span></code> - any version with the same major and minor versions, and an
+equal or greater patch version</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&gt;1.2.3</span></code> - any version greater than <code class="docutils literal notranslate"><span class="pre">1.2.3</span></code>. <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, and <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>
+are also possible</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&gt;0.1.0,!=0.2.0,&lt;0.3.0</span></code> - any version greater than <code class="docutils literal notranslate"><span class="pre">0.1.0</span></code>, not equal to
+<code class="docutils literal notranslate"><span class="pre">0.2.0</span></code> and less than <code class="docutils literal notranslate"><span class="pre">0.3.0</span></code></p></li>
+</ul>
+<p>The rest possible values including VCS repository URLs are documented in
+<a class="reference internal" href="../core/userguide/lib/cmd_install.html#cmd-lib-install"><span class="std std-ref">pio lib install</span></a> command.</p>
+<p>Example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;owner&quot;</span><span class="o">:</span> <span class="s2">&quot;bblanchon&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;ArduinoJson&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;^6.16.1&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;owner&quot;</span><span class="o">:</span> <span class="s2">&quot;me-no-dev&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;AsyncTCP&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;platforms&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;espressif32&quot;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;external-repo&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;external-zip&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>A short definition of dependencies is allowed:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
+<span class="p">{</span>
+    <span class="s2">&quot;bblanchon/ArduinoJson&quot;</span><span class="o">:</span> <span class="s2">&quot;^6.16.1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;me-no-dev/AsyncTCP&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;external-repo&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;external-zip&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="examples">
+<span id="libjson-examples"></span><h2><a class="toc-backref" href="#id20"><code class="docutils literal notranslate"><span class="pre">examples</span></code></a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Array</span></code> | <a class="reference external" href="http://en.wikipedia.org/wiki/Glob_(programming)">Glob Pattern</a></p>
+<p>A list of example patterns. This field is predefined with default value:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;examples&quot;</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;base&quot;</span><span class="o">:</span> <span class="s2">&quot;examples/world&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;files&quot;</span><span class="o">:</span> <span class="p">[</span>
+            <span class="s2">&quot;platformio.ini&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;include/world.h&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;src/world.c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;README&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;extra.py&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Blink&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;base&quot;</span><span class="o">:</span> <span class="s2">&quot;examples/blink&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;files&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;blink.cpp&quot;</span><span class="p">,</span> <span class="s2">&quot;blink.h&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="build">
+<span id="libjson-build"></span><h2><a class="toc-backref" href="#id21"><code class="docutils literal notranslate"><span class="pre">build</span></code></a><a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h2>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
+<p>Specify advanced settings, options and flags for the build system. Possible
+options:</p>
+<div class="contents local topic" id="id4">
+<ul class="simple">
+<li><p><a class="reference internal" href="#flags" id="id34"><code class="docutils literal notranslate"><span class="pre">flags</span></code></a></p></li>
+<li><p><a class="reference internal" href="#unflags" id="id35"><code class="docutils literal notranslate"><span class="pre">unflags</span></code></a></p></li>
+<li><p><a class="reference internal" href="#includedir" id="id36"><code class="docutils literal notranslate"><span class="pre">includeDir</span></code></a></p></li>
+<li><p><a class="reference internal" href="#srcdir" id="id37"><code class="docutils literal notranslate"><span class="pre">srcDir</span></code></a></p></li>
+<li><p><a class="reference internal" href="#srcfilter" id="id38"><code class="docutils literal notranslate"><span class="pre">srcFilter</span></code></a></p></li>
+<li><p><a class="reference internal" href="#extrascript" id="id39"><code class="docutils literal notranslate"><span class="pre">extraScript</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libarchive" id="id40"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libldfmode" id="id41"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libcompatmode" id="id42"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a></p></li>
+</ul>
+</div>
+<div class="section" id="flags">
+<h3><a class="toc-backref" href="#id34"><code class="docutils literal notranslate"><span class="pre">flags</span></code></a><a class="headerlink" href="#flags" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code></p>
+<p>Extra flags to control preprocessing, compilation, assembly and linking
+processes. More details <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
+</div>
+<div class="section" id="unflags">
+<h3><a class="toc-backref" href="#id35"><code class="docutils literal notranslate"><span class="pre">unflags</span></code></a><a class="headerlink" href="#unflags" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code></p>
+<p>Remove base/initial flags which were set by development platform. More
+details <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-unflags"><span class="std std-ref">build_unflags</span></a>.</p>
+</div>
+<div class="section" id="includedir">
+<h3><a class="toc-backref" href="#id36"><code class="docutils literal notranslate"><span class="pre">includeDir</span></code></a><a class="headerlink" href="#includedir" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
+<p>Custom location of library header files. A default value is <code class="docutils literal notranslate"><span class="pre">include</span></code> and
+means that folder is located in the root of a library.</p>
+</div>
+<div class="section" id="srcdir">
+<h3><a class="toc-backref" href="#id37"><code class="docutils literal notranslate"><span class="pre">srcDir</span></code></a><a class="headerlink" href="#srcdir" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
+<p>Custom location of library source code. A default value is <code class="docutils literal notranslate"><span class="pre">src</span></code> and
+means that folder is located in the root of a library.</p>
+</div>
+<div class="section" id="srcfilter">
+<h3><a class="toc-backref" href="#id38"><code class="docutils literal notranslate"><span class="pre">srcFilter</span></code></a><a class="headerlink" href="#srcfilter" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code></p>
+<p>Specify which source files should be included/excluded from build process.
+The path in filter should be relative to the <code class="docutils literal notranslate"><span class="pre">srcDir</span></code> option of a library.</p>
+<p>See syntax in <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-src-filter"><span class="std std-ref">src_filter</span></a>.</p>
+<p>Please note that you can generate source filter “on-the-fly” using
+<code class="docutils literal notranslate"><span class="pre">extraScript</span></code> (see below)</p>
+</div>
+<div class="section" id="extrascript">
+<h3><a class="toc-backref" href="#id39"><code class="docutils literal notranslate"><span class="pre">extraScript</span></code></a><a class="headerlink" href="#extrascript" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
+<p>Launch extra script before build process.
+More details <a class="reference internal" href="../projectconf/section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a>.</p>
+<p><strong>Example</strong> (HAL-based library)</p>
+<p>This example demonstrates how to build HAL-dependent source files and
+exclude other source files from a build process.</p>
+<p>Project structure</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── lib
+│   ├── README
+│   └── SomeLib
+│       ├── extra_script.py
+│       ├── hal
+│       │   ├── bar
+│       │   │   ├── hal.c
+│       │   │   └── hal.h
+│       │   ├── foo
+│       │       ├── hal.c
+│       │       └── hal.h
+│       ├── library.json
+│       ├── SomeLib.c
+│       └── SomeLib.h
+├── platformio.ini
+└── src
+    └── test.c
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:foo]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">native</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DHAL=foo</span>
+
+<span class="k">[env:bar]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">native</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DHAL=bar</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">library.json</span></code></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">{</span>
+    <span class="na">&quot;name&quot;: &quot;SomeLib&quot;,</span>
+    <span class="na">&quot;version&quot;: &quot;0.0.0&quot;,</span>
+    <span class="na">&quot;build&quot;: {</span>
+        <span class="na">&quot;extraScript&quot;: &quot;extra_script.py&quot;</span>
+    <span class="na">}</span>
+<span class="na">}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code></p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s1">&#39;env&#39;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">join</span><span class="p">,</span> <span class="n">realpath</span>
+
+<span class="c1"># private library flags</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">env</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;CPPDEFINES&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span> <span class="ow">and</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;HAL&quot;</span><span class="p">:</span>
+        <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="n">realpath</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;hal&quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]))])</span>
+        <span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">SRC_FILTER</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;+&lt;*&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;-&lt;hal*&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;+&lt;hal</span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+        <span class="k">break</span>
+
+<span class="c1"># pass flags to a global build environment (for all libraries, etc)</span>
+<span class="n">global_env</span> <span class="o">=</span> <span class="n">DefaultEnvironment</span><span class="p">()</span>
+<span class="n">global_env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span>
+    <span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;MQTT_MAX_PACKET_SIZE&quot;</span><span class="p">,</span> <span class="mi">512</span><span class="p">),</span>
+        <span class="s2">&quot;ARDUINOJSON_ENABLE_STD_STRING&quot;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s2">&quot;BUFFER_LENGTH&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="libarchive">
+<span id="libjson-archive"></span><h3><a class="toc-backref" href="#id40"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a><a class="headerlink" href="#libarchive" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Boolean</span></code></p>
+<p>Create an archive (<code class="docutils literal notranslate"><span class="pre">*.a</span></code>, static library) from the object files and link it
+into a firmware (program). This is default behavior of PlatformIO Build System
+(<code class="docutils literal notranslate"><span class="pre">&quot;libArchive&quot;:</span> <span class="pre">true</span></code>).</p>
+<p>Setting <code class="docutils literal notranslate"><span class="pre">&quot;libArchive&quot;:</span> <span class="pre">false</span></code> will instruct PlatformIO Build System to link object
+files directly (in-line). This could be useful if you need to override <code class="docutils literal notranslate"><span class="pre">weak</span></code>
+symbols defined in framework or other libraries.</p>
+<p>You can disable library archiving globally using <a class="reference internal" href="../projectconf/section_env_library.html#projectconf-lib-archive"><span class="std std-ref">lib_archive</span></a>
+option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+</div>
+<div class="section" id="libldfmode">
+<h3><a class="toc-backref" href="#id41"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a><a class="headerlink" href="#libldfmode" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
+<p>Specify Library Dependency Finder Mode. See <a class="reference internal" href="ldf.html#ldf-mode"><span class="std std-ref">Dependency Finder Mode</span></a> for details.</p>
+</div>
+<div class="section" id="libcompatmode">
+<span id="libjons-compatmode"></span><h3><a class="toc-backref" href="#id42"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a><a class="headerlink" href="#libcompatmode" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
+<p>Specify Library Compatibility Mode. See <a class="reference internal" href="ldf.html#ldf-compat-mode"><span class="std std-ref">Compatibility Mode</span></a> for details.</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id31">Examples</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Custom macros/defines</p></li>
+</ol>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;flags&quot;</span><span class="o">:</span> <span class="s2">&quot;-D MYLIB_REV=1.2.3 -DRELEASE&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Extra includes for C preprocessor</p></li>
+</ol>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;flags&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;-I inc&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;-I inc/target_x13&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Force to use <code class="docutils literal notranslate"><span class="pre">C99</span></code> standard instead of <code class="docutils literal notranslate"><span class="pre">C11</span></code></p></li>
+</ol>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;unflags&quot;</span><span class="o">:</span> <span class="s2">&quot;-std=gnu++11&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;flags&quot;</span><span class="o">:</span> <span class="s2">&quot;-std=c99&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Build source files (<code class="docutils literal notranslate"><span class="pre">c,</span> <span class="pre">cpp,</span> <span class="pre">h</span></code>) at the top level of the library</p></li>
+</ol>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;srcFilter&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;+&lt;*.c&gt;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;+&lt;*.cpp&gt;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;+&lt;*.h&gt;&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Extend PlatformIO Build System with own extra script</p></li>
+</ol>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;extraScript&quot;</span><span class="o">:</span> <span class="s2">&quot;generate_headers.py&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">generate_headers.py</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s1">&#39;env&#39;</span><span class="p">)</span>
+<span class="c1"># print(env.Dump())</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span>
+    <span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;HELLO=WORLD&quot;</span><span class="p">,</span> <span class="s2">&quot;TAG=1.2.3&quot;</span><span class="p">,</span> <span class="s2">&quot;DEBUG&quot;</span><span class="p">],</span>
+    <span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;inc&quot;</span><span class="p">,</span> <span class="s2">&quot;inc/devices&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># some python code that generates header files &quot;on-the-fly&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="creating.html" class="btn btn-neutral float-right" title="Creating Library" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ldf.html" class="btn btn-neutral float-left" title="Library Dependency Finder (LDF)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/librarymanager/config.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/librarymanager/config.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

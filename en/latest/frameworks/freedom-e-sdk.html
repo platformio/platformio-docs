@@ -1,0 +1,842 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Freedom E SDK &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/frameworks/freedom-e-sdk.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FreeRTOS" href="freertos.html" />
+    <link rel="prev" title="Espressif IoT Development Framework" href="espidf.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Frameworks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="arduino.html">Arduino</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmsis.html">CMSIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esp8266-nonos-sdk.html">ESP8266 Non-OS SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esp8266-rtos-sdk.html">ESP8266 RTOS SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espidf.html">Espressif IoT Development Framework</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Freedom E SDK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-with-freertos">Using with FreeRTOS</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tools-debug-probes">Tools &amp; Debug Probes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#boards">Boards</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sifive">SiFive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sparkfun">SparkFun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#xilinx">Xilinx</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="freertos.html">FreeRTOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gd32vf103-sdk.html">GigaDevice GD32V SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kendryte-freertos-sdk.html">Kendryte FreeRTOS SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kendryte-standalone-sdk.html">Kendryte Standalone SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nuclei-sdk.html">Nuclei SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulp-sdk.html">PULP SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pumbaa.html">Pumbaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shakti-sdk.html">Shakti SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simba.html">Simba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="siwisdk.html">SIWI GSM &amp; NBIoT SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spl.html">Standard Peripheral Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stm32cube.html">STM32Cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wd-riscv-sdk.html">WD-Firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wiringpi.html">WiringPi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zephyr.html">Zephyr RTOS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Frameworks</a> &raquo;</li>
+        
+      <li>Freedom E SDK</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/frameworks/freedom-e-sdk.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="freedom-e-sdk">
+<span id="framework-freedom-e-sdk"></span><h1>Freedom E SDK<a class="headerlink" href="#freedom-e-sdk" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Configuration</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">freedom-e-sdk</span></code></p>
+</dd>
+</dl>
+<p>Open Source Software for Developing on the SiFive Freedom E Platform</p>
+<p>For more detailed information please visit <a class="reference external" href="https://github.com/sifive/freedom-e-sdk?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#configuration" id="id2">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id3">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id4">Examples</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id5">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#boards" id="id6">Boards</a></p></li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="using-with-freertos">
+<h3>Using with FreeRTOS<a class="headerlink" href="#using-with-freertos" title="Permalink to this headline">¶</a></h3>
+<p>In order to add FreeRTOS to your project, it must be explicitly specified as an
+additional framework in the <code class="docutils literal notranslate"><span class="pre">framework</span></code> field of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, for example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:freertos]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">sifive</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">freedom-e-sdk, freertos</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>FreeRTOS RISC-V port for the <a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a> development platform is
+distributed as part of <code class="docutils literal notranslate"><span class="pre">Freedom</span> <span class="pre">E</span> <span class="pre">SDK</span></code> and cannot be used as a standalone
+framework</p>
+</div>
+<p>Most of the application specific configuration is done in a special file called
+<code class="docutils literal notranslate"><span class="pre">FreeRTOSConfig.h</span></code> which must be present in each FreeRTOS-based project. Additional
+settings for build configuration are set in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> using the following
+syntax <code class="docutils literal notranslate"><span class="pre">board_build.freertos.*</span></code> where <code class="docutils literal notranslate"><span class="pre">*</span></code> is an option from the following list:</p>
+<div class="section" id="freertos-settings">
+<h4>FreeRTOS settings<a class="headerlink" href="#freertos-settings" title="Permalink to this headline">¶</a></h4>
+<dl class="field-list simple">
+<dt class="field-odd">heap_model</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Available values: <code class="docutils literal notranslate"><span class="pre">heap_1,</span> <span class="pre">heap_2,</span> <span class="pre">heap_3,</span> <span class="pre">heap_4,</span> <span class="pre">heap_5</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">heap_4</span></code></p>
+<p>FreeRTOS offers several heap management schemes that range in complexity and features:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">heap_1</span></code> – the very simplest, does not permit memory to be freed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">heap_2</span></code> – permits memory to be freed, but does not coalescence adjacent free blocks.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">heap_3</span></code> – simply wraps the standard <code class="docutils literal notranslate"><span class="pre">malloc()</span></code> and <code class="docutils literal notranslate"><span class="pre">free()</span></code> for thread safety.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">heap_4</span></code> – coalescences adjacent free blocks to avoid fragmentation. Includes
+absolute address placement option.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">heap_5</span></code> – as per <code class="docutils literal notranslate"><span class="pre">heap_4</span></code>, with the ability to span the heap across multiple
+non-adjacent memory areas.</p></li>
+</ul>
+<p>More information about FreeRTOS Memory Management can be found in
+<a class="reference external" href="https://www.freertos.org/a00111.html">the official documentation</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">interrupt_handler</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">FreedomMetal_InterruptHandler</span></code></p>
+<p>The name of a function to be called to handle interrupts</p>
+<dl class="field-list simple">
+<dt class="field-odd">exception_handler</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">FreedomMetal_ExceptionHandler</span></code></p>
+<p>The name of a function to be called to handle exceptions</p>
+<dl class="field-list simple">
+<dt class="field-odd">mtime_ctrl_addr</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">0x2000000</span></code></p>
+<p>The address of Machine Timer Register <code class="docutils literal notranslate"><span class="pre">mtime</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">mpu_wrappers</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Available values: <code class="docutils literal notranslate"><span class="pre">enable</span> <span class="pre">|</span> <span class="pre">disable</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">disable</span></code></p>
+<p>Use Memory Protection Unit wrappers</p>
+</div>
+<div class="section" id="segger-systemview-settings">
+<h4>Segger SystemView settings<a class="headerlink" href="#segger-systemview-settings" title="Permalink to this headline">¶</a></h4>
+<p>SystemView is a real-time recording and visualization tool for embedded systems that
+reveals the true runtime behavior of an application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">systemview</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Available values: <code class="docutils literal notranslate"><span class="pre">enable</span> <span class="pre">|</span> <span class="pre">disable</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">disable</span></code></p>
+<p>Compile and link Segger SystemView library</p>
+<dl class="field-list simple">
+<dt class="field-odd">sysview_record_enter_isr</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">SEGGER_SYSVIEW_RecordEnterISR</span></code></p>
+<p>The name of a function to be called to record interrupt execution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">sysview_record_enter_isr</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">SEGGER_SYSVIEW_RecordExitISR</span></code></p>
+<p>The name of a function to be called to record finish of interrupt execution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">sysview_record_exit_isr_to_scheduler</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">SEGGER_SYSVIEW_RecordExitISRToScheduler</span></code></p>
+<p>The name of a function to be called to record finish of interrupt when it’s caused by
+a context switch.</p>
+<p>An example of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> with modified heap settings and enabled SystemView
+feature:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:sifive-hifive1-revb]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">sifive</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">freedom-e-sdk, freertos</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">hifive1-revb</span>
+<span class="na">monitor_speed</span> <span class="o">=</span> <span class="s">115200</span>
+<span class="c1">; Configure stack size</span>
+<span class="na">board_build.freedom-e-sdk.heap_size</span> <span class="o">=</span> <span class="s">0x400</span>
+<span class="c1">; Configure heap model and enable SystemView</span>
+<span class="na">board_build.freertos.heap_model</span> <span class="o">=</span> <span class="s">heap_1</span>
+<span class="na">board_build.freertos.systemview</span> <span class="o">=</span> <span class="s">enable</span>
+</pre></div>
+</div>
+<p>More information about FreeRTOS package for <a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a> development platform
+can be found in <a class="reference external" href="https://github.com/sifive/FreeRTOS-metal">the official repository</a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="debugging">
+<h2><a class="toc-backref" href="#id3">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#tools-debug-probes" id="id7">Tools &amp; Debug Probes</a></p>
+<ul>
+<li><p><a class="reference internal" href="#on-board-debug-tools" id="id8">On-Board Debug Tools</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="tools-debug-probes">
+<h3><a class="toc-backref" href="#id7">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this headline">¶</a></h3>
+<p>Supported debugging tools are listed in “Debug” column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
+<a class="reference internal" href="../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You will need to install debug tool drivers depending on your system.
+Please click on compatible debug tool below for the further instructions.</p>
+</div>
+<div class="section" id="on-board-debug-tools">
+<h4><a class="toc-backref" href="#id8">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this headline">¶</a></h4>
+<p>Boards listed below have on-board debug probe and <strong>ARE READY</strong> for debugging!
+You do not need to use/buy external debug probe.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/e310-arty.html#board-sifive-e310-arty"><span class="std std-ref">Arty FPGA Dev Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FE310</p></td>
+<td><p>450MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>256MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/hifive-unleashed.html#board-sifive-hifive-unleashed"><span class="std std-ref">HiFive Unleashed</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FU540</p></td>
+<td><p>1500MHz</p></td>
+<td><p>32MB</p></td>
+<td><p>8GB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/hifive1.html#board-sifive-hifive1"><span class="std std-ref">HiFive1</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/hifive1-revb.html#board-sifive-hifive1-revb"><span class="std std-ref">HiFive1 Rev B</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id4">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Freedom E SDK for SiFive</a></p></li>
+</ul>
+</div>
+<div class="section" id="platforms">
+<h2><a class="toc-backref" href="#id5">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="boards">
+<h2><a class="toc-backref" href="#id6">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
+<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by horizontally.</p></li>
+</ul>
+</div>
+<div class="section" id="sifive">
+<h3>SiFive<a class="headerlink" href="#sifive" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/hifive-unleashed.html#board-sifive-hifive-unleashed"><span class="std std-ref">HiFive Unleashed</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FU540</p></td>
+<td><p>1500MHz</p></td>
+<td><p>32MB</p></td>
+<td><p>8GB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/hifive1.html#board-sifive-hifive1"><span class="std std-ref">HiFive1</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/hifive1-revb.html#board-sifive-hifive1-revb"><span class="std std-ref">HiFive1 Rev B</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sparkfun">
+<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="xilinx">
+<h3>Xilinx<a class="headerlink" href="#xilinx" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/e310-arty.html#board-sifive-e310-arty"><span class="std std-ref">Arty FPGA Dev Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>450MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>256MB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="freertos.html" class="btn btn-neutral float-right" title="FreeRTOS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="espidf.html" class="btn btn-neutral float-left" title="Espressif IoT Development Framework" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/frameworks/freedom-e-sdk.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/frameworks/freedom-e-sdk.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

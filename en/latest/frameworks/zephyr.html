@@ -1,0 +1,3551 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Zephyr RTOS &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/frameworks/zephyr.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Boards" href="../boards/index.html" />
+    <link rel="prev" title="WiringPi" href="wiringpi.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Frameworks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="arduino.html">Arduino</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmsis.html">CMSIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esp8266-nonos-sdk.html">ESP8266 Non-OS SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esp8266-rtos-sdk.html">ESP8266 RTOS SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espidf.html">Espressif IoT Development Framework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="freedom-e-sdk.html">Freedom E SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="freertos.html">FreeRTOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gd32vf103-sdk.html">GigaDevice GD32V SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kendryte-freertos-sdk.html">Kendryte FreeRTOS SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kendryte-standalone-sdk.html">Kendryte Standalone SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nuclei-sdk.html">Nuclei SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulp-sdk.html">PULP SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pumbaa.html">Pumbaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shakti-sdk.html">Shakti SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simba.html">Simba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="siwisdk.html">SIWI GSM &amp; NBIoT SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spl.html">Standard Peripheral Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stm32cube.html">STM32Cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wd-riscv-sdk.html">WD-Firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wiringpi.html">WiringPi</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Zephyr RTOS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tutorials">Tutorials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#project-structure">Project Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#devicetree-overlays">Devicetree overlays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#embedding-files-at-compile-time">Embedding files at compile time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zephyr-modules">Zephyr modules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tools-debug-probes">Tools &amp; Debug Probes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#boards">Boards</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">96Boards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adafruit">Adafruit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arduino">Arduino</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmel">Atmel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bbc">BBC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#digilent">Digilent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#electronutlabs">ElectronutLabs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#freescale">Freescale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generic">Generic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#holyiot">Holyiot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#laird-connectivity">Laird Connectivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#makerdiary">Makerdiary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mikroelektronika">MikroElektronika</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nxp">NXP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nordic">Nordic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#olimex">Olimex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#phytec">PHYTEC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#particle">Particle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#redbearlab">RedBearLab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ruuvi">Ruuvi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segger">SEGGER</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#st">ST</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#seeed">Seeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sifive">SiFive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#silicon-labs">Silicon Labs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sparkfun">SparkFun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vng">VNG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#waveshare">Waveshare</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weact">WeAct</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Frameworks</a> &raquo;</li>
+        
+      <li>Zephyr RTOS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/frameworks/zephyr.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="zephyr-rtos">
+<span id="framework-zephyr"></span><h1>Zephyr RTOS<a class="headerlink" href="#zephyr-rtos" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Configuration</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">zephyr</span></code></p>
+</dd>
+</dl>
+<p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p>
+<p>For more detailed information please visit <a class="reference external" href="https://www.zephyrproject.org?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#tutorials" id="id4">Tutorials</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id5">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id6">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id7">Examples</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id8">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#boards" id="id9">Boards</a></p></li>
+</ul>
+</div>
+<div class="section" id="tutorials">
+<h2><a class="toc-backref" href="#id4">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/nordicnrf52/zephyr_debugging_unit_testing_inspect.html#tutorial-nordicnrf52-zephyr-debugging-unit-testing-analysis"><span class="std std-ref">Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis</span></a></p></li>
+<li><p><a class="reference external" href="https://piolabs.com/blog/engineering/platformio-zephyr-custom-hardware.html">Enabling PlatformIO and Zephyr on custom hardware</a></p></li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#id5">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#project-structure" id="id10">Project Structure</a></p></li>
+<li><p><a class="reference internal" href="#devicetree-overlays" id="id11">Devicetree overlays</a></p></li>
+<li><p><a class="reference internal" href="#embedding-files-at-compile-time" id="id12">Embedding files at compile time</a></p></li>
+<li><p><a class="reference internal" href="#zephyr-modules" id="id13">Zephyr modules</a></p></li>
+<li><p><a class="reference internal" href="#limitations" id="id14">Limitations</a></p></li>
+</ul>
+</div>
+<div class="section" id="project-structure">
+<h3><a class="toc-backref" href="#id10">Project Structure</a><a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Zephyr framework currently requires Python 3.4 or later.</p>
+</div>
+<p>Zephyr framework requires an unusual project structure because most of the framework
+configuration is performed by the native for Zephyr build system called <code class="docutils literal notranslate"><span class="pre">CMake</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since PlatformIO is able to generate CMake-based projects for certain IDEs, Zephyr-related
+files are moved to a separate folder in order to avoid conflicts between project files.
+That requires users to specify relative paths to source files in <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>.</p>
+</div>
+<p>A typical PlatformIO project for Zephyr framework must have the following structure:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>project_dir
+├── include
+├── src
+│    └── main.c
+├── zephyr
+│    ├── prj.conf
+│    └── CMakeLists.txt
+└── platformio.ini
+</pre></div>
+</div>
+<p>Besides files related to PlatformIO project, there is an additional folder <code class="docutils literal notranslate"><span class="pre">zephyr</span></code>
+that contains Zephyr-specific files <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">prj.conf</span></code>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file enables features supported by Zephyr’s build system, e.g.
+board-specific kernel configuration files. A typical <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file has the
+following content:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Boilerplate code, which pulls in the Zephyr build system.</span>
+cmake_minimum_required<span class="o">(</span>VERSION <span class="m">3</span>.13.1<span class="o">)</span>
+include<span class="o">(</span><span class="nv">$ENV</span><span class="o">{</span>ZEPHYR_BASE<span class="o">}</span>/cmake/app/boilerplate.cmake NO_POLICY_SCOPE<span class="o">)</span>
+project<span class="o">(</span>my_zephyr_app<span class="o">)</span>
+
+<span class="c1"># Add your source file to the &quot;app&quot; target. This must come after the boilerplate</span>
+<span class="c1"># code, which defines the target. Note relative path to source file</span>
+target_sources<span class="o">(</span>app PRIVATE ../src/main.c<span class="o">)</span>
+</pre></div>
+</div>
+<p>The files specified in <code class="docutils literal notranslate"><span class="pre">target_sources</span></code> are used <strong>ONLY</strong> for generating build
+configurations, but it’s highly recommended to specify all application source files in
+order to keep the project compatible with the usual Zephyr workflow.</p>
+<p>Due to the current limitations of CMake file-based API, there is no way to generate build
+configuration for source files written in various programming languages if they are not
+specified in  <code class="docutils literal notranslate"><span class="pre">target_sources</span></code> command. If your project contains libraries written
+in languages that differ from the language used for the main application you need to
+create an empty file with desired extension (e.g. <code class="docutils literal notranslate"><span class="pre">*.cpp</span></code> for <code class="docutils literal notranslate"><span class="pre">C++</span></code>) in order to
+force CMake generate build configuration for this language.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Build configuration generated for source files specified in <code class="docutils literal notranslate"><span class="pre">target_sources</span></code> is
+also used as the base build environment for project sources (including libraries).</p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">prj.conf</span></code> file sets application-specific values for one or more kernel configuration
+options. These application settings are merged with board-specific settings to produce a
+kernel configuration.</p>
+</div>
+<div class="section" id="devicetree-overlays">
+<h3><a class="toc-backref" href="#id11">Devicetree overlays</a><a class="headerlink" href="#devicetree-overlays" title="Permalink to this headline">¶</a></h3>
+<p>Zephyr applications can use overlay files to enable a peripheral that is disabled by
+default, select a sensor on the board for an application specific purpose, etc. This
+makes it possible to reconfigure the kernel and device drivers without modifying source
+code. There are several ways to set <code class="docutils literal notranslate"><span class="pre">.overlay</span></code> files:</p>
+<ul class="simple">
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">DTC_OVERLAY_FILE</span></code> variable in the <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file,
+before including Zephyr’s <code class="docutils literal notranslate"><span class="pre">boilerplate.cmake</span></code> file. (Recommended)</p></li>
+<li><p>Using a <code class="docutils literal notranslate"><span class="pre">boards/&lt;BOARD&gt;.overlay</span></code> file in the <code class="docutils literal notranslate"><span class="pre">zephyr</span></code> folder, for the current
+board</p></li>
+<li><p>Using a <code class="docutils literal notranslate"><span class="pre">&lt;BOARD&gt;.overlay</span></code> file in the  <code class="docutils literal notranslate"><span class="pre">zephyr</span></code> folder.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>PlatformIO board names may differ from Zephyr targets, which means that to help
+the build system automatically pick up <code class="docutils literal notranslate"><span class="pre">.overlay</span></code> file, the <code class="docutils literal notranslate"><span class="pre">&lt;BOARD&gt;</span></code> name in
+<code class="docutils literal notranslate"><span class="pre">&lt;BOARD&gt;.overlay</span></code> file must have the same name as specified in
+<a class="reference external" href="https://docs.zephyrproject.org/latest/boards/index.html">the official Zephyr board list</a>.</p>
+</div>
+</div>
+<div class="section" id="embedding-files-at-compile-time">
+<h3><a class="toc-backref" href="#id12">Embedding files at compile time</a><a class="headerlink" href="#embedding-files-at-compile-time" title="Permalink to this headline">¶</a></h3>
+<p>In case your <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> relies on using <code class="docutils literal notranslate"><span class="pre">generate_inc_*</span></code> functions that are
+used for generating and compressing individual files (for example certificates for secure
+connections) you need to configure your PlatformIO project accordingly using the
+following structure:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">zephyr</span>
+<span class="na">board_build.embed_files</span> <span class="o">=</span>
+    <span class="c1"># files to be embedded</span>
+    <span class="na">src/apps-cert.der</span>
+    <span class="na">src/apps-key.der</span>
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">apps-cert.der</span></code> and <code class="docutils literal notranslate"><span class="pre">apps-key.der</span></code> are the files you want to embed to your
+project at the compile time.</p>
+</div>
+<div class="section" id="zephyr-modules">
+<h3><a class="toc-backref" href="#id13">Zephyr modules</a><a class="headerlink" href="#zephyr-modules" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>PlatformIO automatically installs several default modules used with Zephyr framework
+including modules that implement silicon vendor Hardware Abstraction Layers (HALs).</p>
+</div>
+<p>Zephyr modules are externally maintained packages that allow using well-established
+and mature code created by third party developers.</p>
+<p>These modules contain either a single <code class="docutils literal notranslate"><span class="pre">module.yml</span></code> file or <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Kconfig</span></code> files that describe how to build and configure them. You can specify paths
+to additional directories with source code, Kconfig, etc. using <code class="docutils literal notranslate"><span class="pre">ZEPHYR_EXTRA_MODULES</span></code>
+at the top of your project’s  <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file, for example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Additional modules</span>
+set<span class="o">(</span>ZEPHYR_EXTRA_MODULES <span class="s2">&quot;path/to-zephyr-custom-module&quot;</span>  <span class="o">[</span>...<span class="o">])</span>
+
+<span class="c1"># Boilerplate code, which pulls in the Zephyr build system.</span>
+cmake_minimum_required<span class="o">(</span>VERSION <span class="m">3</span>.13.1<span class="o">)</span>
+include<span class="o">(</span><span class="nv">$ENV</span><span class="o">{</span>ZEPHYR_BASE<span class="o">}</span>/cmake/app/boilerplate.cmake NO_POLICY_SCOPE<span class="o">)</span>
+project<span class="o">(</span>my_zephyr_app<span class="o">)</span>
+
+<span class="c1"># Add your source file to the &quot;app&quot; target. This must come after</span>
+<span class="c1"># the boilerplate code, which defines the target.</span>
+target_sources<span class="o">(</span>app PRIVATE ../src/main.c<span class="o">)</span>
+</pre></div>
+</div>
+<p>Since the build may not work correctly if the full path to sources is greater than 250
+characters (see <code class="docutils literal notranslate"><span class="pre">CMAKE_OBJECT_PATH_MAX</span></code>) it might be a good idea to keep modules close
+to the project configuration files (e.g. in <code class="docutils literal notranslate"><span class="pre">zephyr</span></code> folder) in form of a git submodule.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure the <code class="docutils literal notranslate"><span class="pre">ZEPHYR_EXTRA_MODULES</span></code> variable is set before including the boilerplate
+file, as shown above.</p>
+</div>
+</div>
+<div class="section" id="limitations">
+<h3><a class="toc-backref" href="#id14">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h3>
+<p>At the moment several limitations are present:</p>
+<ul class="simple">
+<li><p>The minimum supported version of Python is <code class="docutils literal notranslate"><span class="pre">3.4</span></code></p></li>
+<li><p>No whitespace characters allowed in project paths.</p></li>
+<li><p>OpenThread module is not supported</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="debugging">
+<h2><a class="toc-backref" href="#id6">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><p><a class="reference internal" href="#tools-debug-probes" id="id15">Tools &amp; Debug Probes</a></p>
+<ul>
+<li><p><a class="reference internal" href="#on-board-debug-tools" id="id16">On-Board Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#external-debug-tools" id="id17">External Debug Tools</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="tools-debug-probes">
+<h3><a class="toc-backref" href="#id15">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this headline">¶</a></h3>
+<p>Supported debugging tools are listed in “Debug” column. For more detailed
+information, please scroll table by horizontal.
+You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
+<a class="reference internal" href="../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You will need to install debug tool drivers depending on your system.
+Please click on compatible debug tool below for the further instructions.</p>
+</div>
+<div class="section" id="on-board-debug-tools">
+<h4><a class="toc-backref" href="#id16">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this headline">¶</a></h4>
+<p>Boards listed below have on-board debug probe and <strong>ARE READY</strong> for debugging!
+You do not need to use/buy external debug probe.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f412zg.html#board-ststm32-disco-f412zg"><span class="std std-ref">32F412GDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F412ZGT6</p></td>
+<td><p>100MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f723ie.html#board-ststm32-disco-f723ie"><span class="std std-ref">32F723EDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F723IEK6</p></td>
+<td><p>216MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>192KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/b96b_f446ve.html#board-ststm32-b96b-f446ve"><span class="std std-ref">96Boards B96B-F446VE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F446VET6</p></td>
+<td><p>168MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/zero.html#board-atmelsam-zero"><span class="std std-ref">Arduino Zero (Programming/Debug Port)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>SAMD21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/samr21_xpro.html#board-atmelsam-samr21-xpro"><span class="std std-ref">Atmel ATSAMR21-XPRO</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>SAMR21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/samd21_xpro.html#board-atmelsam-samd21-xpro"><span class="std std-ref">Atmel SAMD21-XPRO</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>SAMD21J18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/bbcmicrobit.html#board-nordicnrf51-bbcmicrobit"><span class="std std-ref">BBC micro:bit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>NRF51822</p></td>
+<td><p>16MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/bbcmicrobit_v2.html#board-nordicnrf52-bbcmicrobit-v2"><span class="std std-ref">BBC micro:bit V2</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52833</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/laird_bl652_dvk.html#board-nordicnrf52-laird-bl652-dvk"><span class="std std-ref">BL652 Development Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/laird_bl654_dvk.html#board-nordicnrf52-laird-bl654-dvk"><span class="std std-ref">BL654 Development Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32wg_stk3800.html#board-siliconlabsefm32-efm32wg-stk3800"><span class="std std-ref">EFM32WG-STK3800 Wonder Gecko</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/siliconlabsefm32.html#platform-siliconlabsefm32"><span class="std std-ref">Silicon Labs EFM32</span></a></p></td>
+<td><p>EFM32WG990F256</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/electronut_blip.html#board-nordicnrf52-electronut-blip"><span class="std std-ref">ElectronutLabs Blip</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/electronut_papyr.html#board-nordicnrf52-electronut-papyr"><span class="std std-ref">ElectronutLabs Papyr</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_k22f.html#board-freescalekinetis-frdm-k22f"><span class="std std-ref">Freescale Kinetis FRDM-K22F</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>MK22FN512VLH12</p></td>
+<td><p>120MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_k64f.html#board-freescalekinetis-frdm-k64f"><span class="std std-ref">Freescale Kinetis FRDM-K64F</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>MK64FN1M0VLL12</p></td>
+<td><p>120MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_k82f.html#board-freescalekinetis-frdm-k82f"><span class="std std-ref">Freescale Kinetis FRDM-K82F</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>MK82FN256VLL15</p></td>
+<td><p>150MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_kl25z.html#board-freescalekinetis-frdm-kl25z"><span class="std std-ref">Freescale Kinetis FRDM-KL25Z</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>MKL25Z128VLK4</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_kw41z.html#board-freescalekinetis-frdm-kw41z"><span class="std std-ref">Freescale Kinetis FRDM-KW41Z</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>MKW41Z512VHT4</p></td>
+<td><p>48MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/hifive1.html#board-sifive-hifive1"><span class="std std-ref">HiFive1</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/hifive1-revb.html#board-sifive-hifive1-revb"><span class="std std-ref">HiFive1 Rev B</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u68.html#board-nxplpc-lpc11u68"><span class="std std-ref">LPCXpresso11U68</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
+<td><p>LPC11U68</p></td>
+<td><p>50MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>36KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/nrf52832_mdk.html#board-nordicnrf52-nrf52832-mdk"><span class="std std-ref">Makerdiary nRF52832-MDK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/nrf52840_mdk.html#board-nordicnrf52-nrf52840-mdk"><span class="std std-ref">Makerdiary nRF52840-MDK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc54114.html#board-nxplpc-lpc54114"><span class="std std-ref">NXP LPCXpresso54114</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
+<td><p>LPC54114J256BD64</p></td>
+<td><p>100MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>192KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpcxpresso55s16.html#board-nxplpc-lpcxpresso55s16"><span class="std std-ref">NXP LPCXpresso55S16</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
+<td><p>LPC55S16</p></td>
+<td><p>150MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>96KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1010_evk.html#board-nxpimxrt-mimxrt1010-evk"><span class="std std-ref">NXP i.MX RT1010 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>MIMXRT1011DAE5A</p></td>
+<td><p>500MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1015_evk.html#board-nxpimxrt-mimxrt1015-evk"><span class="std std-ref">NXP i.MX RT1015 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>MIMXRT1015DAF5A</p></td>
+<td><p>500MHz</p></td>
+<td><p>96KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1020_evk.html#board-nxpimxrt-mimxrt1020-evk"><span class="std std-ref">NXP i.MX RT1020 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>MIMXRT1021DAG5A</p></td>
+<td><p>500MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>32MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1050_evk.html#board-nxpimxrt-mimxrt1050-evk"><span class="std std-ref">NXP i.MX RT1050 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>MIMXRT1052DVL6B</p></td>
+<td><p>600MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>32MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1060_evk.html#board-nxpimxrt-mimxrt1060-evk"><span class="std std-ref">NXP i.MX RT1060 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>MIMXRT1062DVL6A</p></td>
+<td><p>600MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>32MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1064_evk.html#board-nxpimxrt-mimxrt1064-evk"><span class="std std-ref">NXP i.MX RT1064 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>MIMXRT1064DVL6A</p></td>
+<td><p>600MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>32MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_dongle.html#board-nordicnrf51-nrf51-dongle"><span class="std std-ref">Nordic nRF51 Dongle (PCA10031)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>NRF51822</p></td>
+<td><p>32MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_dk.html#board-nordicnrf51-nrf51-dk"><span class="std std-ref">Nordic nRF51X22 Development Kit(PCA1000X)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>NRF51822</p></td>
+<td><p>32MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/nrf52_dk.html#board-nordicnrf52-nrf52-dk"><span class="std std-ref">Nordic nRF52-DK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/nrf52840_dk.html#board-nordicnrf52-nrf52840-dk"><span class="std std-ref">Nordic nRF52840-DK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g071rb.html#board-ststm32-nucleo-g071rb"><span class="std std-ref">Nucleo G071RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32G071RBT6</p></td>
+<td><p>64MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>36KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g431rb.html#board-ststm32-nucleo-g431rb"><span class="std std-ref">Nucleo G431RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32G431RBT6</p></td>
+<td><p>170MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g474re.html#board-ststm32-nucleo-g474re"><span class="std std-ref">Nucleo G474RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32G474RET6</p></td>
+<td><p>170MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/reel_board.html#board-nordicnrf52-reel-board"><span class="std std-ref">PHYTEC reel board</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/reel_board_v2.html#board-nordicnrf52-reel-board-v2"><span class="std std-ref">PHYTEC reel board v2</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/chipsalliance/swervolf_nexys.html#board-chipsalliance-swervolf-nexys"><span class="std std-ref">RVfpga: Digilent Nexys A7</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/chipsalliance.html#platform-chipsalliance"><span class="std std-ref">CHIPS Alliance</span></a></p></td>
+<td></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>1.16MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/redBearLabBLENano.html#board-nordicnrf51-redbearlabblenano"><span class="std std-ref">RedBearLab BLE Nano 1.5</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>NRF51822</p></td>
+<td><p>16MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/redbear_blenano2.html#board-nordicnrf52-redbear-blenano2"><span class="std std-ref">RedBearLab BLE Nano 2</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32hg_stk3400.html#board-siliconlabsefm32-efm32hg-stk3400"><span class="std std-ref">SLSTK3400A USB-enabled Happy Gecko</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/siliconlabsefm32.html#platform-siliconlabsefm32"><span class="std std-ref">Silicon Labs EFM32</span></a></p></td>
+<td><p>EFM32HG322F64</p></td>
+<td><p>25MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f411ve.html#board-ststm32-disco-f411ve"><span class="std std-ref">ST 32F411EDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F411VET6</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f429zi.html#board-ststm32-disco-f429zi"><span class="std std-ref">ST 32F429IDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F429ZIT6</p></td>
+<td><p>180MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f469ni.html#board-ststm32-disco-f469ni"><span class="std std-ref">ST 32F469IDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F469NIH6</p></td>
+<td><p>180MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>384KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f746ng.html#board-ststm32-disco-f746ng"><span class="std std-ref">ST 32F746GDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F746NGH6</p></td>
+<td><p>216MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f769ni.html#board-ststm32-disco-f769ni"><span class="std std-ref">ST 32F769IDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F769NIH6</p></td>
+<td><p>216MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_l476vg.html#board-ststm32-disco-l476vg"><span class="std std-ref">ST 32L476GDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L476VGT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_l496ag.html#board-ststm32-disco-l496ag"><span class="std std-ref">ST 32L496GDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L496AGI6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_l475vg_iot01a.html#board-ststm32-disco-l475vg-iot01a"><span class="std std-ref">ST B-L475E-IOT01A Discovery kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L475VGT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_l072cz_lrwan1.html#board-ststm32-disco-l072cz-lrwan1"><span class="std std-ref">ST DISCO-L072CZ-LRWAN1</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L072CZ</p></td>
+<td><p>32MHz</p></td>
+<td><p>192KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f072rb.html#board-ststm32-disco-f072rb"><span class="std std-ref">ST Discovery F072RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F072RBT6</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f030r8.html#board-ststm32-nucleo-f030r8"><span class="std std-ref">ST Nucleo F030R8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F030R8T6</p></td>
+<td><p>48MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f070rb.html#board-ststm32-nucleo-f070rb"><span class="std std-ref">ST Nucleo F070RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F070RBT6</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f091rc.html#board-ststm32-nucleo-f091rc"><span class="std std-ref">ST Nucleo F091RC</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F091RCT6</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f103rb.html#board-ststm32-nucleo-f103rb"><span class="std std-ref">ST Nucleo F103RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F103RBT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f207zg.html#board-ststm32-nucleo-f207zg"><span class="std std-ref">ST Nucleo F207ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F207ZGT6</p></td>
+<td><p>120MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f302r8.html#board-ststm32-nucleo-f302r8"><span class="std std-ref">ST Nucleo F302R8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F302R8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f303k8.html#board-ststm32-nucleo-f303k8"><span class="std std-ref">ST Nucleo F303K8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F303K8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>12KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f303re.html#board-ststm32-nucleo-f303re"><span class="std std-ref">ST Nucleo F303RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F303RET6</p></td>
+<td><p>72MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f334r8.html#board-ststm32-nucleo-f334r8"><span class="std std-ref">ST Nucleo F334R8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F334R8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f401re.html#board-ststm32-nucleo-f401re"><span class="std std-ref">ST Nucleo F401RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F401RET6</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f410rb.html#board-ststm32-nucleo-f410rb"><span class="std std-ref">ST Nucleo F410RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F410RBT6</p></td>
+<td><p>100MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f411re.html#board-ststm32-nucleo-f411re"><span class="std std-ref">ST Nucleo F411RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F411RET6</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f412zg.html#board-ststm32-nucleo-f412zg"><span class="std std-ref">ST Nucleo F412ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F412ZGT6</p></td>
+<td><p>100MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f413zh.html#board-ststm32-nucleo-f413zh"><span class="std std-ref">ST Nucleo F413ZH</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F413ZHT6</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f429zi.html#board-ststm32-nucleo-f429zi"><span class="std std-ref">ST Nucleo F429ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F429ZIT6</p></td>
+<td><p>180MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f446re.html#board-ststm32-nucleo-f446re"><span class="std std-ref">ST Nucleo F446RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F446RET6</p></td>
+<td><p>180MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f746zg.html#board-ststm32-nucleo-f746zg"><span class="std std-ref">ST Nucleo F746ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F746ZGT6</p></td>
+<td><p>216MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f756zg.html#board-ststm32-nucleo-f756zg"><span class="std std-ref">ST Nucleo F756ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F756ZG</p></td>
+<td><p>216MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f767zi.html#board-ststm32-nucleo-f767zi"><span class="std std-ref">ST Nucleo F767ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F767ZIT6</p></td>
+<td><p>216MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h723zg.html#board-ststm32-nucleo-h723zg"><span class="std std-ref">ST Nucleo H723ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32H723ZGT6</p></td>
+<td><p>550MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>432KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32H743ZIT6</p></td>
+<td><p>400MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h745zi_q.html#board-ststm32-nucleo-h745zi-q"><span class="std std-ref">ST Nucleo H745ZI-Q</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32H745ZIT6</p></td>
+<td><p>480MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l011k4.html#board-ststm32-nucleo-l011k4"><span class="std std-ref">ST Nucleo L011K4</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L011K4T6</p></td>
+<td><p>32MHz</p></td>
+<td><p>16KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l031k6.html#board-ststm32-nucleo-l031k6"><span class="std std-ref">ST Nucleo L031K6</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L031K6T6</p></td>
+<td><p>32MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l053r8.html#board-ststm32-nucleo-l053r8"><span class="std std-ref">ST Nucleo L053R8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L053R8T6</p></td>
+<td><p>32MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l073rz.html#board-ststm32-nucleo-l073rz"><span class="std std-ref">ST Nucleo L073RZ</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L073RZ</p></td>
+<td><p>32MHz</p></td>
+<td><p>192KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L432KCU6</p></td>
+<td><p>80MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L433RC</p></td>
+<td><p>80MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L476RGT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L496ZGT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L4R5ZIT6</p></td>
+<td><p>120MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>640KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f051r8.html#board-ststm32-disco-f051r8"><span class="std std-ref">ST STM32F0DISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F051R8T6</p></td>
+<td><p>48MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f303vc.html#board-ststm32-disco-f303vc"><span class="std std-ref">ST STM32F3DISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F303VCT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>48KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f407vg.html#board-ststm32-disco-f407vg"><span class="std std-ref">ST STM32F4DISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F407VGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>400MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/vbluno51.html#board-nordicnrf51-vbluno51"><span class="std std-ref">VNG VBLUNO51</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>NRF51822</p></td>
+<td><p>16MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/vbluno52.html#board-nordicnrf52-vbluno52"><span class="std std-ref">VNG VBLUno52</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="external-debug-tools">
+<h4><a class="toc-backref" href="#id17">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this headline">¶</a></h4>
+<p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
+external debug probe. They <strong>ARE NOT READY</strong> for debugging.
+Please click on board name for the further details.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/b96b_argonkey.html#board-ststm32-b96b-argonkey"><span class="std std-ref">96Boards Argonkey (STEVAL-MKI187V1)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F412CG</p></td>
+<td><p>100MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/b96b_aerocore2.html#board-ststm32-b96b-aerocore2"><span class="std std-ref">96Boards Neonkey</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F427VIT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1.99MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/b96b_neonkey.html#board-ststm32-b96b-neonkey"><span class="std std-ref">96Boards Neonkey</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F411CE</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/96b_nitrogen.html#board-nordicnrf52-96b-nitrogen"><span class="std std-ref">96Boards Nitrogen</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_feather_nrf52832.html#board-nordicnrf52-adafruit-feather-nrf52832"><span class="std std-ref">Adafruit Bluefruit nRF52832 Feather</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m0.html#board-atmelsam-adafruit-feather-m0"><span class="std std-ref">Adafruit Feather M0</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>SAMD21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/adafruit_feather_f405.html#board-ststm32-adafruit-feather-f405"><span class="std std-ref">Adafruit Feather STM32F405</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F405RGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_feather_nrf52840.html#board-nordicnrf52-adafruit-feather-nrf52840"><span class="std std-ref">Adafruit Feather nRF52840 Express</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>796KB</p></td>
+<td><p>243KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_itsybitsy_m4.html#board-atmelsam-adafruit-itsybitsy-m4"><span class="std std-ref">Adafruit ItsyBitsy M4</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>SAMD51G19A</p></td>
+<td><p>120MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>192KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_trinket_m0.html#board-atmelsam-adafruit-trinket-m0"><span class="std std-ref">Adafruit Trinket M0</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>SAMD21E18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/due.html#board-atmelsam-due"><span class="std std-ref">Arduino Due (Programming Port)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>AT91SAM3X8E</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/black_f407ve.html#board-ststm32-black-f407ve"><span class="std std-ref">Black STM32F407VE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F407VET6</p></td>
+<td><p>168MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/black_f407zg.html#board-ststm32-black-f407zg"><span class="std std-ref">Black STM32F407ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F407ZGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f103c8.html#board-ststm32-blackpill-f103c8"><span class="std std-ref">BlackPill F103C8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F103C8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f103c8_128.html#board-ststm32-blackpill-f103c8-128"><span class="std std-ref">BlackPill F103C8 (128k)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F103C8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/bluepill_f103c8.html#board-ststm32-bluepill-f103c8"><span class="std std-ref">BluePill F103C8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F103C8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/bluepill_f103c8_128k.html#board-ststm32-bluepill-f103c8-128k"><span class="std std-ref">BluePill F103C8 (128k)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F103C8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_kw24d.html#board-freescalekinetis-frdm-kw24d"><span class="std std-ref">Freescale Kinetis FRDM-KW24D512</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>MKW24D512</p></td>
+<td><p>50MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/freescalekinetis/hexiwear.html#board-freescalekinetis-hexiwear"><span class="std std-ref">Hexiwear</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>MK64FN1M0VDC12</p></td>
+<td><p>120MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/holyiot_yj16019.html#board-nordicnrf52-holyiot-yj16019"><span class="std std-ref">Holyiot YJ-16019</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/laird_pinnacle_100_dvk.html#board-nordicnrf52-laird-pinnacle-100-dvk"><span class="std std-ref">Laird Connectivity Pinnacle 100 DVK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/nano_33_iot.html#board-atmelsam-nano-33-iot"><span class="std std-ref">NANO 33 IoT</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>SAMD21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/thingy_52.html#board-nordicnrf52-thingy-52"><span class="std std-ref">Nordic Thingy:52 (nRF52-PCA20020)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/olimexino.html#board-ststm32-olimexino"><span class="std std-ref">OLIMEXINO-STM32</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F103RBT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/olimex_p405.html#board-ststm32-olimex-p405"><span class="std std-ref">Olimex STM32-P405</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F405RGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>192KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/particle_argon.html#board-nordicnrf52-particle-argon"><span class="std std-ref">Particle Argon</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>796KB</p></td>
+<td><p>243KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/particle_boron.html#board-nordicnrf52-particle-boron"><span class="std std-ref">Particle Boron</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>796KB</p></td>
+<td><p>243KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/particle_xenon.html#board-nordicnrf52-particle-xenon"><span class="std std-ref">Particle Xenon</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>796KB</p></td>
+<td><p>243KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/ruuvitag.html#board-nordicnrf52-ruuvitag"><span class="std std-ref">Ruuvi Tag</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/freescalekinetis/segger_ip_switch.html#board-freescalekinetis-segger-ip-switch"><span class="std std-ref">SEGGER IP Switch Board</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>MK66FN2M0VMD18</p></td>
+<td><p>180MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/steval_fcu001v1.html#board-ststm32-steval-fcu001v1"><span class="std std-ref">STEVAL-FCU001V1 Flight controller unit evaluation board</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F401CCU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/olimex_e407.html#board-ststm32-olimex-e407"><span class="std std-ref">STM32-E407</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F407ZGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/olimex_h407.html#board-ststm32-olimex-h407"><span class="std std-ref">STM32-H407</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F407ZGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/eval_f107vc.html#board-ststm32-eval-f107vc"><span class="std std-ref">STM3210C-EVAL</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F107VCT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/eval_f373vc.html#board-ststm32-eval-f373vc"><span class="std std-ref">STM32373C-EVAL</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F373VCT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/eval_f072vb.html#board-ststm32-eval-f072vb"><span class="std std-ref">STM32F072-EVAL</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F072VBT6</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/seeed_xiao.html#board-atmelsam-seeed-xiao"><span class="std std-ref">Seeeduino XIAO</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>SAMD21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/waveshare_ble400.html#board-nordicnrf51-waveshare-ble400"><span class="std std-ref">Waveshare BLE400</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>NRF51822</p></td>
+<td><p>32MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct BlackPill V2.0 (BlackPill F411CE)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F411CEU6</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id7">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for Atmel SAM</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-chipsalliance/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for CHIPS Alliance</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for Freescale Kinetis</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for Nordic nRF51</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for Nordic nRF52</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-nxpimxrt/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for NXP i.MX RT</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for NXP LPC</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for SiFive</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for Silicon Labs EFM32</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr RTOS for ST STM32</a></p></li>
+</ul>
+</div>
+<div class="section" id="platforms">
+<h2><a class="toc-backref" href="#id8">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/chipsalliance.html#platform-chipsalliance"><span class="std std-ref">CHIPS Alliance</span></a></p></td>
+<td><p>The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>The i.MX RT series of crossover processors features the Arm Cortex-M core, real-time functionality and MCU usability at a cost-effective price.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
+<td><p>The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/siliconlabsefm32.html#platform-siliconlabsefm32"><span class="std std-ref">Silicon Labs EFM32</span></a></p></td>
+<td><p>Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="boards">
+<h2><a class="toc-backref" href="#id9">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
+<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by horizontally.</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>96Boards<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/b96b_argonkey.html#board-ststm32-b96b-argonkey"><span class="std std-ref">96Boards Argonkey (STEVAL-MKI187V1)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F412CG</p></td>
+<td><p>100MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/b96b_f446ve.html#board-ststm32-b96b-f446ve"><span class="std std-ref">96Boards B96B-F446VE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F446VET6</p></td>
+<td><p>168MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/b96b_aerocore2.html#board-ststm32-b96b-aerocore2"><span class="std std-ref">96Boards Neonkey</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F427VIT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1.99MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/b96b_neonkey.html#board-ststm32-b96b-neonkey"><span class="std std-ref">96Boards Neonkey</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F411CE</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/96b_nitrogen.html#board-nordicnrf52-96b-nitrogen"><span class="std std-ref">96Boards Nitrogen</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="adafruit">
+<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_feather_nrf52832.html#board-nordicnrf52-adafruit-feather-nrf52832"><span class="std std-ref">Adafruit Bluefruit nRF52832 Feather</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m0.html#board-atmelsam-adafruit-feather-m0"><span class="std std-ref">Adafruit Feather M0</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>External</p></td>
+<td><p>SAMD21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/adafruit_feather_f405.html#board-ststm32-adafruit-feather-f405"><span class="std std-ref">Adafruit Feather STM32F405</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F405RGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_feather_nrf52840.html#board-nordicnrf52-adafruit-feather-nrf52840"><span class="std std-ref">Adafruit Feather nRF52840 Express</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>796KB</p></td>
+<td><p>243KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_itsybitsy_m4.html#board-atmelsam-adafruit-itsybitsy-m4"><span class="std std-ref">Adafruit ItsyBitsy M4</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>External</p></td>
+<td><p>SAMD51G19A</p></td>
+<td><p>120MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>192KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_trinket_m0.html#board-atmelsam-adafruit-trinket-m0"><span class="std std-ref">Adafruit Trinket M0</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>External</p></td>
+<td><p>SAMD21E18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="arduino">
+<h3>Arduino<a class="headerlink" href="#arduino" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/due.html#board-atmelsam-due"><span class="std std-ref">Arduino Due (Programming Port)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>External</p></td>
+<td><p>AT91SAM3X8E</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/zero.html#board-atmelsam-zero"><span class="std std-ref">Arduino Zero (Programming/Debug Port)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>SAMD21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/nano_33_iot.html#board-atmelsam-nano-33-iot"><span class="std std-ref">NANO 33 IoT</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>External</p></td>
+<td><p>SAMD21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="atmel">
+<h3>Atmel<a class="headerlink" href="#atmel" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/samr21_xpro.html#board-atmelsam-samr21-xpro"><span class="std std-ref">Atmel ATSAMR21-XPRO</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>SAMR21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/samd21_xpro.html#board-atmelsam-samd21-xpro"><span class="std std-ref">Atmel SAMD21-XPRO</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>SAMD21J18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="bbc">
+<h3>BBC<a class="headerlink" href="#bbc" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/bbcmicrobit.html#board-nordicnrf51-bbcmicrobit"><span class="std std-ref">BBC micro:bit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF51822</p></td>
+<td><p>16MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/bbcmicrobit_v2.html#board-nordicnrf52-bbcmicrobit-v2"><span class="std std-ref">BBC micro:bit V2</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52833</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="digilent">
+<h3>Digilent<a class="headerlink" href="#digilent" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/chipsalliance/swervolf_nexys.html#board-chipsalliance-swervolf-nexys"><span class="std std-ref">RVfpga: Digilent Nexys A7</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/chipsalliance.html#platform-chipsalliance"><span class="std std-ref">CHIPS Alliance</span></a></p></td>
+<td><p>On-board</p></td>
+<td></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>1.16MB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="electronutlabs">
+<h3>ElectronutLabs<a class="headerlink" href="#electronutlabs" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/electronut_blip.html#board-nordicnrf52-electronut-blip"><span class="std std-ref">ElectronutLabs Blip</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/electronut_papyr.html#board-nordicnrf52-electronut-papyr"><span class="std std-ref">ElectronutLabs Papyr</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="freescale">
+<h3>Freescale<a class="headerlink" href="#freescale" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_k22f.html#board-freescalekinetis-frdm-k22f"><span class="std std-ref">Freescale Kinetis FRDM-K22F</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MK22FN512VLH12</p></td>
+<td><p>120MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_k64f.html#board-freescalekinetis-frdm-k64f"><span class="std std-ref">Freescale Kinetis FRDM-K64F</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MK64FN1M0VLL12</p></td>
+<td><p>120MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_k82f.html#board-freescalekinetis-frdm-k82f"><span class="std std-ref">Freescale Kinetis FRDM-K82F</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MK82FN256VLL15</p></td>
+<td><p>150MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_kl25z.html#board-freescalekinetis-frdm-kl25z"><span class="std std-ref">Freescale Kinetis FRDM-KL25Z</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MKL25Z128VLK4</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_kw24d.html#board-freescalekinetis-frdm-kw24d"><span class="std std-ref">Freescale Kinetis FRDM-KW24D512</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>External</p></td>
+<td><p>MKW24D512</p></td>
+<td><p>50MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/freescalekinetis/frdm_kw41z.html#board-freescalekinetis-frdm-kw41z"><span class="std std-ref">Freescale Kinetis FRDM-KW41Z</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MKW41Z512VHT4</p></td>
+<td><p>48MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="generic">
+<h3>Generic<a class="headerlink" href="#generic" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f103c8.html#board-ststm32-blackpill-f103c8"><span class="std std-ref">BlackPill F103C8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F103C8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f103c8_128.html#board-ststm32-blackpill-f103c8-128"><span class="std std-ref">BlackPill F103C8 (128k)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F103C8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/bluepill_f103c8.html#board-ststm32-bluepill-f103c8"><span class="std std-ref">BluePill F103C8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F103C8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/bluepill_f103c8_128k.html#board-ststm32-bluepill-f103c8-128k"><span class="std std-ref">BluePill F103C8 (128k)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F103C8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="holyiot">
+<h3>Holyiot<a class="headerlink" href="#holyiot" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/holyiot_yj16019.html#board-nordicnrf52-holyiot-yj16019"><span class="std std-ref">Holyiot YJ-16019</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="laird-connectivity">
+<h3>Laird Connectivity<a class="headerlink" href="#laird-connectivity" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/laird_bl652_dvk.html#board-nordicnrf52-laird-bl652-dvk"><span class="std std-ref">BL652 Development Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/laird_bl654_dvk.html#board-nordicnrf52-laird-bl654-dvk"><span class="std std-ref">BL654 Development Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/laird_pinnacle_100_dvk.html#board-nordicnrf52-laird-pinnacle-100-dvk"><span class="std std-ref">Laird Connectivity Pinnacle 100 DVK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="makerdiary">
+<h3>Makerdiary<a class="headerlink" href="#makerdiary" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/nrf52832_mdk.html#board-nordicnrf52-nrf52832-mdk"><span class="std std-ref">Makerdiary nRF52832-MDK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/nrf52840_mdk.html#board-nordicnrf52-nrf52840-mdk"><span class="std std-ref">Makerdiary nRF52840-MDK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mikroelektronika">
+<h3>MikroElektronika<a class="headerlink" href="#mikroelektronika" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/freescalekinetis/hexiwear.html#board-freescalekinetis-hexiwear"><span class="std std-ref">Hexiwear</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>External</p></td>
+<td><p>MK64FN1M0VDC12</p></td>
+<td><p>120MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nxp">
+<h3>NXP<a class="headerlink" href="#nxp" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u68.html#board-nxplpc-lpc11u68"><span class="std std-ref">LPCXpresso11U68</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>LPC11U68</p></td>
+<td><p>50MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>36KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc54114.html#board-nxplpc-lpc54114"><span class="std std-ref">NXP LPCXpresso54114</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>LPC54114J256BD64</p></td>
+<td><p>100MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>192KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpcxpresso55s16.html#board-nxplpc-lpcxpresso55s16"><span class="std std-ref">NXP LPCXpresso55S16</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>LPC55S16</p></td>
+<td><p>150MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>96KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1010_evk.html#board-nxpimxrt-mimxrt1010-evk"><span class="std std-ref">NXP i.MX RT1010 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MIMXRT1011DAE5A</p></td>
+<td><p>500MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1015_evk.html#board-nxpimxrt-mimxrt1015-evk"><span class="std std-ref">NXP i.MX RT1015 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MIMXRT1015DAF5A</p></td>
+<td><p>500MHz</p></td>
+<td><p>96KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1020_evk.html#board-nxpimxrt-mimxrt1020-evk"><span class="std std-ref">NXP i.MX RT1020 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MIMXRT1021DAG5A</p></td>
+<td><p>500MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>32MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1050_evk.html#board-nxpimxrt-mimxrt1050-evk"><span class="std std-ref">NXP i.MX RT1050 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MIMXRT1052DVL6B</p></td>
+<td><p>600MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>32MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1060_evk.html#board-nxpimxrt-mimxrt1060-evk"><span class="std std-ref">NXP i.MX RT1060 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MIMXRT1062DVL6A</p></td>
+<td><p>600MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>32MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxpimxrt/mimxrt1064_evk.html#board-nxpimxrt-mimxrt1064-evk"><span class="std std-ref">NXP i.MX RT1064 Evaluation Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>MIMXRT1064DVL6A</p></td>
+<td><p>600MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>32MB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nordic">
+<h3>Nordic<a class="headerlink" href="#nordic" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/thingy_52.html#board-nordicnrf52-thingy-52"><span class="std std-ref">Nordic Thingy:52 (nRF52-PCA20020)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_dongle.html#board-nordicnrf51-nrf51-dongle"><span class="std std-ref">Nordic nRF51 Dongle (PCA10031)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF51822</p></td>
+<td><p>32MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_dk.html#board-nordicnrf51-nrf51-dk"><span class="std std-ref">Nordic nRF51X22 Development Kit(PCA1000X)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF51822</p></td>
+<td><p>32MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/nrf52_dk.html#board-nordicnrf52-nrf52-dk"><span class="std std-ref">Nordic nRF52-DK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/nrf52840_dk.html#board-nordicnrf52-nrf52840-dk"><span class="std std-ref">Nordic nRF52840-DK</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="olimex">
+<h3>Olimex<a class="headerlink" href="#olimex" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/olimexino.html#board-ststm32-olimexino"><span class="std std-ref">OLIMEXINO-STM32</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F103RBT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/olimex_p405.html#board-ststm32-olimex-p405"><span class="std std-ref">Olimex STM32-P405</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F405RGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>192KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/olimex_e407.html#board-ststm32-olimex-e407"><span class="std std-ref">STM32-E407</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F407ZGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/olimex_h407.html#board-ststm32-olimex-h407"><span class="std std-ref">STM32-H407</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F407ZGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="phytec">
+<h3>PHYTEC<a class="headerlink" href="#phytec" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/reel_board.html#board-nordicnrf52-reel-board"><span class="std std-ref">PHYTEC reel board</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/reel_board_v2.html#board-nordicnrf52-reel-board-v2"><span class="std std-ref">PHYTEC reel board v2</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="particle">
+<h3>Particle<a class="headerlink" href="#particle" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/particle_argon.html#board-nordicnrf52-particle-argon"><span class="std std-ref">Particle Argon</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>796KB</p></td>
+<td><p>243KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/particle_boron.html#board-nordicnrf52-particle-boron"><span class="std std-ref">Particle Boron</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>796KB</p></td>
+<td><p>243KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/particle_xenon.html#board-nordicnrf52-particle-xenon"><span class="std std-ref">Particle Xenon</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52840</p></td>
+<td><p>64MHz</p></td>
+<td><p>796KB</p></td>
+<td><p>243KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="redbearlab">
+<h3>RedBearLab<a class="headerlink" href="#redbearlab" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/redBearLabBLENano.html#board-nordicnrf51-redbearlabblenano"><span class="std std-ref">RedBearLab BLE Nano 1.5</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF51822</p></td>
+<td><p>16MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/redbear_blenano2.html#board-nordicnrf52-redbear-blenano2"><span class="std std-ref">RedBearLab BLE Nano 2</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ruuvi">
+<h3>Ruuvi<a class="headerlink" href="#ruuvi" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/ruuvitag.html#board-nordicnrf52-ruuvitag"><span class="std std-ref">Ruuvi Tag</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="segger">
+<h3>SEGGER<a class="headerlink" href="#segger" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/freescalekinetis/segger_ip_switch.html#board-freescalekinetis-segger-ip-switch"><span class="std std-ref">SEGGER IP Switch Board</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/freescalekinetis.html#platform-freescalekinetis"><span class="std std-ref">Freescale Kinetis</span></a></p></td>
+<td><p>External</p></td>
+<td><p>MK66FN2M0VMD18</p></td>
+<td><p>180MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="st">
+<h3>ST<a class="headerlink" href="#st" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f412zg.html#board-ststm32-disco-f412zg"><span class="std std-ref">32F412GDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F412ZGT6</p></td>
+<td><p>100MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f723ie.html#board-ststm32-disco-f723ie"><span class="std std-ref">32F723EDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F723IEK6</p></td>
+<td><p>216MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>192KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/black_f407ve.html#board-ststm32-black-f407ve"><span class="std std-ref">Black STM32F407VE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F407VET6</p></td>
+<td><p>168MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/black_f407zg.html#board-ststm32-black-f407zg"><span class="std std-ref">Black STM32F407ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F407ZGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g071rb.html#board-ststm32-nucleo-g071rb"><span class="std std-ref">Nucleo G071RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32G071RBT6</p></td>
+<td><p>64MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>36KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g431rb.html#board-ststm32-nucleo-g431rb"><span class="std std-ref">Nucleo G431RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32G431RBT6</p></td>
+<td><p>170MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g474re.html#board-ststm32-nucleo-g474re"><span class="std std-ref">Nucleo G474RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32G474RET6</p></td>
+<td><p>170MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f411ve.html#board-ststm32-disco-f411ve"><span class="std std-ref">ST 32F411EDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F411VET6</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f429zi.html#board-ststm32-disco-f429zi"><span class="std std-ref">ST 32F429IDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F429ZIT6</p></td>
+<td><p>180MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f469ni.html#board-ststm32-disco-f469ni"><span class="std std-ref">ST 32F469IDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F469NIH6</p></td>
+<td><p>180MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>384KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f746ng.html#board-ststm32-disco-f746ng"><span class="std std-ref">ST 32F746GDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F746NGH6</p></td>
+<td><p>216MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f769ni.html#board-ststm32-disco-f769ni"><span class="std std-ref">ST 32F769IDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F769NIH6</p></td>
+<td><p>216MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_l476vg.html#board-ststm32-disco-l476vg"><span class="std std-ref">ST 32L476GDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L476VGT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_l496ag.html#board-ststm32-disco-l496ag"><span class="std std-ref">ST 32L496GDISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L496AGI6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_l475vg_iot01a.html#board-ststm32-disco-l475vg-iot01a"><span class="std std-ref">ST B-L475E-IOT01A Discovery kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L475VGT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_l072cz_lrwan1.html#board-ststm32-disco-l072cz-lrwan1"><span class="std std-ref">ST DISCO-L072CZ-LRWAN1</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L072CZ</p></td>
+<td><p>32MHz</p></td>
+<td><p>192KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f072rb.html#board-ststm32-disco-f072rb"><span class="std std-ref">ST Discovery F072RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F072RBT6</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f030r8.html#board-ststm32-nucleo-f030r8"><span class="std std-ref">ST Nucleo F030R8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F030R8T6</p></td>
+<td><p>48MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f070rb.html#board-ststm32-nucleo-f070rb"><span class="std std-ref">ST Nucleo F070RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F070RBT6</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f091rc.html#board-ststm32-nucleo-f091rc"><span class="std std-ref">ST Nucleo F091RC</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F091RCT6</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f103rb.html#board-ststm32-nucleo-f103rb"><span class="std std-ref">ST Nucleo F103RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F103RBT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f207zg.html#board-ststm32-nucleo-f207zg"><span class="std std-ref">ST Nucleo F207ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F207ZGT6</p></td>
+<td><p>120MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f302r8.html#board-ststm32-nucleo-f302r8"><span class="std std-ref">ST Nucleo F302R8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F302R8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f303k8.html#board-ststm32-nucleo-f303k8"><span class="std std-ref">ST Nucleo F303K8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F303K8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>12KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f303re.html#board-ststm32-nucleo-f303re"><span class="std std-ref">ST Nucleo F303RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F303RET6</p></td>
+<td><p>72MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f334r8.html#board-ststm32-nucleo-f334r8"><span class="std std-ref">ST Nucleo F334R8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F334R8T6</p></td>
+<td><p>72MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f401re.html#board-ststm32-nucleo-f401re"><span class="std std-ref">ST Nucleo F401RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F401RET6</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f410rb.html#board-ststm32-nucleo-f410rb"><span class="std std-ref">ST Nucleo F410RB</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F410RBT6</p></td>
+<td><p>100MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f411re.html#board-ststm32-nucleo-f411re"><span class="std std-ref">ST Nucleo F411RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F411RET6</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f412zg.html#board-ststm32-nucleo-f412zg"><span class="std std-ref">ST Nucleo F412ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F412ZGT6</p></td>
+<td><p>100MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f413zh.html#board-ststm32-nucleo-f413zh"><span class="std std-ref">ST Nucleo F413ZH</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F413ZHT6</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f429zi.html#board-ststm32-nucleo-f429zi"><span class="std std-ref">ST Nucleo F429ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F429ZIT6</p></td>
+<td><p>180MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f446re.html#board-ststm32-nucleo-f446re"><span class="std std-ref">ST Nucleo F446RE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F446RET6</p></td>
+<td><p>180MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f746zg.html#board-ststm32-nucleo-f746zg"><span class="std std-ref">ST Nucleo F746ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F746ZGT6</p></td>
+<td><p>216MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f756zg.html#board-ststm32-nucleo-f756zg"><span class="std std-ref">ST Nucleo F756ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F756ZG</p></td>
+<td><p>216MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f767zi.html#board-ststm32-nucleo-f767zi"><span class="std std-ref">ST Nucleo F767ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F767ZIT6</p></td>
+<td><p>216MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h723zg.html#board-ststm32-nucleo-h723zg"><span class="std std-ref">ST Nucleo H723ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32H723ZGT6</p></td>
+<td><p>550MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>432KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32H743ZIT6</p></td>
+<td><p>400MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h745zi_q.html#board-ststm32-nucleo-h745zi-q"><span class="std std-ref">ST Nucleo H745ZI-Q</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32H745ZIT6</p></td>
+<td><p>480MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l011k4.html#board-ststm32-nucleo-l011k4"><span class="std std-ref">ST Nucleo L011K4</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L011K4T6</p></td>
+<td><p>32MHz</p></td>
+<td><p>16KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l031k6.html#board-ststm32-nucleo-l031k6"><span class="std std-ref">ST Nucleo L031K6</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L031K6T6</p></td>
+<td><p>32MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l053r8.html#board-ststm32-nucleo-l053r8"><span class="std std-ref">ST Nucleo L053R8</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L053R8T6</p></td>
+<td><p>32MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l073rz.html#board-ststm32-nucleo-l073rz"><span class="std std-ref">ST Nucleo L073RZ</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L073RZ</p></td>
+<td><p>32MHz</p></td>
+<td><p>192KB</p></td>
+<td><p>20KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L432KCU6</p></td>
+<td><p>80MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L433RC</p></td>
+<td><p>80MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L476RGT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L496ZGT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L4R5ZIT6</p></td>
+<td><p>120MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>640KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f051r8.html#board-ststm32-disco-f051r8"><span class="std std-ref">ST STM32F0DISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F051R8T6</p></td>
+<td><p>48MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f303vc.html#board-ststm32-disco-f303vc"><span class="std std-ref">ST STM32F3DISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F303VCT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>48KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f407vg.html#board-ststm32-disco-f407vg"><span class="std std-ref">ST STM32F4DISCOVERY</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F407VGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/steval_fcu001v1.html#board-ststm32-steval-fcu001v1"><span class="std std-ref">STEVAL-FCU001V1 Flight controller unit evaluation board</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F401CCU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/eval_f107vc.html#board-ststm32-eval-f107vc"><span class="std std-ref">STM3210C-EVAL</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F107VCT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/eval_f373vc.html#board-ststm32-eval-f373vc"><span class="std std-ref">STM32373C-EVAL</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F373VCT6</p></td>
+<td><p>72MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/eval_f072vb.html#board-ststm32-eval-f072vb"><span class="std std-ref">STM32F072-EVAL</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F072VBT6</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>400MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="seeed">
+<h3>Seeed<a class="headerlink" href="#seeed" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/seeed_xiao.html#board-atmelsam-seeed-xiao"><span class="std std-ref">Seeeduino XIAO</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>External</p></td>
+<td><p>SAMD21G18A</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sifive">
+<h3>SiFive<a class="headerlink" href="#sifive" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/hifive1.html#board-sifive-hifive1"><span class="std std-ref">HiFive1</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/hifive1-revb.html#board-sifive-hifive1-revb"><span class="std std-ref">HiFive1 Rev B</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="silicon-labs">
+<h3>Silicon Labs<a class="headerlink" href="#silicon-labs" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32wg_stk3800.html#board-siliconlabsefm32-efm32wg-stk3800"><span class="std std-ref">EFM32WG-STK3800 Wonder Gecko</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/siliconlabsefm32.html#platform-siliconlabsefm32"><span class="std std-ref">Silicon Labs EFM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>EFM32WG990F256</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32hg_stk3400.html#board-siliconlabsefm32-efm32hg-stk3400"><span class="std std-ref">SLSTK3400A USB-enabled Happy Gecko</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/siliconlabsefm32.html#platform-siliconlabsefm32"><span class="std std-ref">Silicon Labs EFM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>EFM32HG322F64</p></td>
+<td><p>25MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sparkfun">
+<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>FE310</p></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>16KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vng">
+<h3>VNG<a class="headerlink" href="#vng" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/vbluno51.html#board-nordicnrf51-vbluno51"><span class="std std-ref">VNG VBLUNO51</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF51822</p></td>
+<td><p>16MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/vbluno52.html#board-nordicnrf52-vbluno52"><span class="std std-ref">VNG VBLUno52</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>NRF52832</p></td>
+<td><p>64MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="waveshare">
+<h3>Waveshare<a class="headerlink" href="#waveshare" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/waveshare_ble400.html#board-nordicnrf51-waveshare-ble400"><span class="std std-ref">Waveshare BLE400</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>External</p></td>
+<td><p>NRF51822</p></td>
+<td><p>32MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="weact">
+<h3>WeAct<a class="headerlink" href="#weact" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct BlackPill V2.0 (BlackPill F411CE)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F411CEU6</p></td>
+<td><p>100MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../boards/index.html" class="btn btn-neutral float-right" title="Boards" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="wiringpi.html" class="btn btn-neutral float-left" title="WiringPi" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/frameworks/zephyr.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/frameworks/zephyr.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>

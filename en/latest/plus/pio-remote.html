@@ -1,0 +1,609 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Remote Development &mdash; PlatformIO latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.platformio.org/plus/pio-remote.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PlatformIO Account" href="pio-account.html" />
+    <link rel="prev" title="PVS-Studio" href="check-tools/pvs-studio.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Professional</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Remote Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#technology">Technology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cli-guide">CLI Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/index.html">PlatformIO Remote CLI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PlatformIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Remote Development</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/plus/pio-remote.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="remote-development">
+<span id="pioremote"></span><h1>Remote Development<a class="headerlink" href="#remote-development" title="Permalink to this headline">¶</a></h1>
+<p><strong>Your devices are always with you!</strong></p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#features" id="id1">Features</a></p></li>
+<li><p><a class="reference internal" href="#use-cases" id="id2">Use Cases</a></p></li>
+<li><p><a class="reference internal" href="#technology" id="id3">Technology</a></p></li>
+<li><p><a class="reference internal" href="#installation" id="id4">Installation</a></p></li>
+<li><p><a class="reference internal" href="#quick-start" id="id5">Quick Start</a></p></li>
+<li><p><a class="reference internal" href="#cli-guide" id="id6">CLI Guide</a></p></li>
+</ul>
+</div>
+<p><strong>PlatformIO Remote Development Solution</strong> allows you to work remotely with devices from
+<em>Anywhere In The World</em>. No matter where are you now! Run a small and
+cross-platform <a class="reference internal" href="../core/userguide/remote/cmd_agent.html#cmd-remote-agent"><span class="std std-ref">PlatformIO Remote Agent</span></a> on a remote machine and you are able to
+list active devices (wireless + wired), to upload firmware (program),
+to process remote unit tests, or to start remote debugging session via
+<strong>Remote Serial Port Monitor</strong>.</p>
+<p>Using <strong>PlatformIO Remote Development Solution</strong> you can share your devices with colleagues across your
+organization or friends. In combination with <a class="reference internal" href="../integration/ide/index.html#ide-cloud"><span class="std std-ref">Cloud IDE</span></a>, you can create
+awesome things at any time when inspiration comes to you.</p>
+<p>You should have <a class="reference internal" href="pio-account.html#pioaccount"><span class="std std-ref">PlatformIO Account</span></a> to use <strong>PlatformIO Remote Development Solution</strong>.
+A registration is <strong>FREE</strong>.</p>
+<div class="section" id="features">
+<h2><a class="toc-backref" href="#id1">Features</a><a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../core/userguide/remote/cmd_device.html#cmd-remote-device"><span class="std std-ref">Remote Device Manager</span></a></p></li>
+<li><p><a class="reference internal" href="../core/userguide/remote/cmd_device.html#cmd-remote-device-monitor"><span class="std std-ref">Remote Serial Port Monitor</span></a></p></li>
+<li><p><a class="reference internal" href="../core/userguide/remote/cmd_run.html#cmd-remote-run"><span class="std std-ref">Remote Firmware Updates</span></a></p></li>
+<li><p>Share devices with your team members</p></li>
+<li><p>Continuous Deployment</p></li>
+<li><p>Continuous Delivery</p></li>
+<li><p>Remote Unit Testing</p></li>
+</ul>
+</div>
+<div class="section" id="use-cases">
+<h2><a class="toc-backref" href="#id2">Use Cases</a><a class="headerlink" href="#use-cases" title="Permalink to this headline">¶</a></h2>
+<dl class="field-list">
+<dt class="field-odd">Cloud IDE</dt>
+<dd class="field-odd"><p>Program your devices from anywhere in the world using the most popular
+<a class="reference internal" href="../integration/ide/index.html#ide-cloud"><span class="std std-ref">Cloud IDE</span></a>. You do not need to install any extra software, no need to
+have static IP or open network ports. Everything works out of the box.</p>
+</dd>
+<dt class="field-even">Devices behind card sized PC</dt>
+<dd class="field-even"><p>Work with your favorite development environment and program devices connected
+to card-sized PC (Raspberry Pi, Cubie Board, etc.). You do not need to open
+SSH ports, install any extra Linux packages, toolchains.</p>
+</dd>
+<dt class="field-odd">Remote Unit Testing</dt>
+<dd class="field-odd"><p>Instruct any of <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> services to run remote tests on a physical device.
+See the documentation for <a class="reference internal" href="unit-testing.html#unit-testing-remote"><span class="std std-ref">Remote Test Runner</span></a>.</p>
+<p>How does it work?</p>
+<ul class="simple">
+<li><p>You commit new changes to your source code repository</p></li>
+<li><p><a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> service deploys unit tests to a remote agent</p></li>
+<li><p><a class="reference internal" href="unit-testing.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> engine runs tests on a physical device, process them,
+and send results</p></li>
+<li><p><a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> service prints results in human readable format</p></li>
+<li><p>If one test fails, current CI build will fail too.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Board Farm</dt>
+<dd class="field-even"><p>A similar concept as described in “Remote Unit Testing” above. Let’s imagine
+that you need to test some logic on the unlimited number of target devices.
+Very often it can be the same hardware prototype but with different factory
+revisions.</p>
+<p>You connect these devices via USB hub to PC and instruct <strong>PlatformIO Remote Development Solution</strong> to
+process your test on ALL targets connected to a specific agent. See
+documentation below.</p>
+</dd>
+<dt class="field-odd">Remote Serial Monitor</dt>
+<dd class="field-odd"><p>Sometimes you don’t have physical access to a target device but you need to
+read data from some serial port. <strong>PlatformIO Remote Development Solution</strong> allows you to connect to a
+remote agent and list connected devices with their serial ports. See
+<a class="reference internal" href="../core/userguide/remote/cmd_device.html#cmd-remote-device-monitor"><span class="std std-ref">pio remote device monitor</span></a> command for details.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="technology">
+<h2><a class="toc-backref" href="#id3">Technology</a><a class="headerlink" href="#technology" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/pio-remote-architecture.png" src="../_images/pio-remote-architecture.png" />
+<p><strong>PlatformIO Remote Development Solution</strong> is an own PlatformIO technology
+for remote solutions without external dependencies to
+operating system or its software based on <a class="reference external" href="https://en.wikipedia.org/wiki/Client–server_model">client-server architecture</a>.
+The Server component (PlatformIO Cloud) plays a role of coupling link between
+<a class="reference internal" href="../core/userguide/remote/cmd_agent.html#cmd-remote-agent"><span class="std std-ref">PlatformIO Remote Agent</span></a> and Client (<a class="reference internal" href="../core/userguide/remote/index.html#cmd-remote"><span class="std std-ref">PlatformIO Remote CLI</span></a>, <a class="reference internal" href="../integration/ide/index.html#ide-cloud"><span class="std std-ref">Cloud IDE</span></a>,
+<a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a>, SDKs, etc.).
+When you start <a class="reference internal" href="../core/userguide/remote/cmd_agent.html#cmd-remote-agent"><span class="std std-ref">PlatformIO Remote Agent</span></a>, it connects over the Internet with
+PlatformIO Cloud and listen for the actions/commands which you can send in Client
+role from anywhere in the world.</p>
+<p><strong>PlatformIO Remote Development Solution</strong> is multi-agents and multi-clients system. A single agent can be
+shared with multiple clients, where different clients can use the same agent.
+This approach allows one to work with distributed hardware located in the different
+places, networks, etc.</p>
+<p>This technology allows one to work with remote devices in generic form as you
+do that with local devices using PlatformIO ecosystem. The only one difference
+is a prefix “remote” before each generic PlatformIO command. For example,
+listing of local and remote devices will look like <a class="reference internal" href="../core/userguide/device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a> and
+<a class="reference internal" href="../core/userguide/remote/cmd_device.html#cmd-remote-device-list"><span class="std std-ref">pio remote device list</span></a>.</p>
+</div>
+<div class="section" id="installation">
+<h2><a class="toc-backref" href="#id4">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p><strong>PlatformIO Remote Development Solution</strong> is built into <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>. Please open PlatformIO IDE Terminal
+and run <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">--help</span></code> command for usage (see <a class="reference internal" href="../core/userguide/remote/index.html#cmd-remote"><span class="std std-ref">PlatformIO Remote CLI</span></a>).</p>
+<p>If you do not have <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>, or use <a class="reference internal" href="../integration/ide/index.html#ide-cloud"><span class="std std-ref">Cloud IDE</span></a> or a card-sized PC
+(Raspberry Pi, BeagleBoard, etc.), please install <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a>.</p>
+</div>
+<div class="section" id="quick-start">
+<span id="pio-remote-quickstart"></span><h2><a class="toc-backref" href="#id5">Quick Start</a><a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Start <strong>PlatformIO Remote Development Solution</strong> Agent using <a class="reference internal" href="../core/userguide/remote/cmd_agent.html#cmd-remote-agent-start"><span class="std std-ref">pio remote agent start</span></a> command on a
+<strong>remote machine</strong> where devices are connected physically or are accessible
+via network. <strong>PlatformIO Remote Development Solution</strong> <strong>Agent works on Windows, macOS, Linux and Linux ARMv6+</strong>.
+It means that you can use desktop machine, laptop or credit card sized PC
+(Raspberry Pi, BeagleBoard, etc).</p>
+<p>You can share own devices/hardware with friends, team or other developers
+using <a class="reference internal" href="../core/userguide/remote/cmd_agent.html#cmdoption-pio-remote-agent-start-s"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">agent</span> <span class="pre">start</span> <span class="pre">--share</span></code></a> option.</p>
+</li>
+<li><p>Using <strong>host machine</strong> (<a class="reference internal" href="../core/userguide/remote/index.html#cmd-remote"><span class="std std-ref">PlatformIO Remote CLI</span></a>, <a class="reference internal" href="../integration/ide/index.html#ide-cloud"><span class="std std-ref">Cloud IDE</span></a> Terminal in
+a browser, SDKs, etc.), please authorize via <a class="reference internal" href="../core/userguide/account/cmd_login.html#cmd-account-login"><span class="std std-ref">pio account login</span></a>
+command with the same credentials that you used on the previous step.
+Now, you can use <a class="reference internal" href="../core/userguide/remote/index.html#cmd-remote"><span class="std std-ref">PlatformIO Remote CLI</span></a> commands to work with
+<strong>remote machine</strong> and its devices.</p>
+<p>You don’t need to have networking or other access to <strong>remote machine</strong>
+where <strong>PlatformIO Remote Development Solution</strong> Agent is started.</p>
+<p>If you use <strong>PlatformIO Remote Development Solution</strong> in pair with <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> or want automatically authorize,
+please set <span class="target" id="index-0"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_AUTH_TOKEN"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_AUTH_TOKEN</span></code></a> system environment variable
+instead of using <a class="reference internal" href="../core/userguide/account/cmd_login.html#cmd-account-login"><span class="std std-ref">pio account login</span></a> command.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In case with <a class="reference internal" href="../integration/ide/index.html#ide-cloud"><span class="std std-ref">Cloud IDE</span></a>, your browser with Cloud IDE’s VM is a
+“host machine”. The machine where devices are connected physically (your
+real PC) is called “remote machine” in this case. You should run
+<strong>PlatformIO Remote Development Solution</strong> Agent here (not in Cloud IDE’s Terminal).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please use local IP as “upload port” when device is not connected directly
+to a remote machine where <strong>PlatformIO Remote Development Solution</strong> Agent is started but supports natively
+Over-the-Air (OTA) updates. For example, <a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a> and
+<a class="reference internal" href="../platforms/espressif8266.html#platform-espressif-ota"><span class="std std-ref">Over-the-Air (OTA) update</span></a>. In this case, the final command for remote
+OTA update will look as <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">upload</span> <span class="pre">--upload-port</span> <span class="pre">192.168.0.255</span></code>
+or <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">upload</span> <span class="pre">--upload-port</span> <span class="pre">myesp8266.local</span></code>.</p>
+</div>
+</div>
+<div class="section" id="cli-guide">
+<h2><a class="toc-backref" href="#id6">CLI Guide</a><a class="headerlink" href="#cli-guide" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../core/userguide/remote/index.html">PlatformIO Remote CLI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/remote/cmd_agent.html">PlatformIO Remote Agent</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_agent.html#pio-remote-agent-list">pio remote agent list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_agent.html#pio-remote-agent-start">pio remote agent start</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/remote/cmd_device.html">pio remote device</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_device.html#pio-remote-device-list">pio remote device list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_device.html#pio-remote-device-monitor">pio remote device monitor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/remote/cmd_run.html">pio remote run</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_run.html#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_run.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_run.html#options">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_run.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/remote/cmd_test.html">pio remote test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_test.html#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_test.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_test.html#options">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_test.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../core/userguide/remote/cmd_update.html">pio remote update</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_update.html#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_update.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_update.html#options">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../core/userguide/remote/cmd_update.html#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="pio-account.html" class="btn btn-neutral float-right" title="PlatformIO Account" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="check-tools/pvs-studio.html" class="btn btn-neutral float-left" title="PVS-Studio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v5.2.0a6 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/plus/pio-remote.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/plus/pio-remote.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div>
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
+              Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
+          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
+          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</body>
+</html>
