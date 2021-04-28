@@ -76,9 +76,6 @@ is_latest = not str(platformio.VERSION[2]).isdigit()
 # directories to ignore when looking for source files.
 exclude_patterns = ["_build", "**/*_extra.rst"]
 
-# FIXME:
-exclude_patterns += ["boards", "frameworks", "platforms", "plus"]
-
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
 # default_role = None
