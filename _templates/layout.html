@@ -4,11 +4,22 @@
 {{ super() }}
 <link rel="stylesheet" href="{{ pathto('_static/css/extra.css', 1) }}" type="text/css" />
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
 <!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
 {% endblock %}
 
-{% block footer %}
-{% include "pio-versions.html" %}
+{% block menu %}
 {{ super() }}
-{% include "navigation.html" %}
+<p>
+  <!-- Docs: Side Navigation -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-7398081349378542"
+       data-ad-slot="2509136660"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
 {% endblock %}
