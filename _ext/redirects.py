@@ -25,10 +25,10 @@ REDIRECT_TEMPLATE = Template(
   <script>
     var redirect_url = "$redirect_url";
     if (window.location.search) {
-      redirect_url += "?" + window.location.search;
+      redirect_url += window.location.search;
     }
     if (window.location.hash) {
-      redirect_url += "#" + window.location.hash;
+      redirect_url += window.location.hash;
     }
     window.location.href = redirect_url;
   </script>
