@@ -433,16 +433,6 @@ If true, activate the ``platformio ide`` extension only when a
 PlatformIO-based project (that has a :ref:`projectconf`) is open in the
 workspace. The default value is ``false``.
 
-``platformio-ide.activateProjectOnTextEditorChange``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Automatically activate project depending on an active opened text editor.
-The default value is ``false``.
-
-``platformio-ide.autoOpenPlatformIOIniFile``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Automatically open the :ref:`projectconf` file from a project when no other editors are opened.
-The default value is ``true``.
-
 ``platformio-ide.autoCloseSerialMonitor``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If true, automatically close :ref:`cmd_device_monitor` before uploading/testing.

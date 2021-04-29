@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Custom &mdash; PlatformIO latest documentation</title>
+  <title>Custom &mdash; PlatformIO v5.1 documentation</title>
   
 
   
@@ -154,7 +154,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../debugging.html#debug-unit-tests">Debug Unit Tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../debugging.html#cli-guide">CLI Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../debugging.html#platforms">Platforms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../debugging.html#frameworks">Frameworks</a></li>
@@ -271,8 +270,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../projectconf/section_env_debug.html#debug-port"><code class="docutils literal notranslate"><span class="pre">debug_port</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projectconf/section_env_debug.html#debug-speed"><code class="docutils literal notranslate"><span class="pre">debug_speed</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projectconf/section_env_debug.html#debug-svd-path"><code class="docutils literal notranslate"><span class="pre">debug_svd_path</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../projectconf/section_env_debug.html#debug-server-ready-pattern"><code class="docutils literal notranslate"><span class="pre">debug_server_ready_pattern</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../projectconf/section_env_debug.html#debug-test"><code class="docutils literal notranslate"><span class="pre">debug_test</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -409,18 +406,6 @@ to a valid identifier. See supported J-Link devices at <a class="reference inter
 <span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
 <span class="na">debug_port</span> <span class="o">=</span> <span class="s">:4242</span>
 <span class="na">debug_server</span> <span class="o">=</span> <span class="s">$PLATFORMIO_CORE_DIR/packages/tool-stlink/bin/st-util</span>
-<span class="na">debug_init_cmds</span> <span class="o">=</span>
-  <span class="na">define pio_reset_halt_target</span>
-      <span class="na">monitor reset</span>
-      <span class="na">monitor halt</span>
-  <span class="na">end</span>
-  <span class="na">define pio_reset_run_target</span>
-      <span class="na">monitor reset</span>
-  <span class="na">end</span>
-  <span class="na">target extended-remote $DEBUG_PORT</span>
-  <span class="na">$LOAD_CMDS</span>
-  <span class="na">pio_reset_halt_target</span>
-  <span class="na">$INIT_BREAK</span>
 </pre></div>
 </div>
 </div>
@@ -520,7 +505,7 @@ check that <code class="docutils literal notranslate"><span class="pre">pyocd-gd
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0a6 (latest)
+    v5.1.1 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

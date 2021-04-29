@@ -107,12 +107,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
-      - :ref:`platform_nordicnrf52`
-      - NRF52833
-      - 64MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_nordicnrf52_laird_bl652_dvk`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -275,24 +269,6 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 1MB
       - 256KB
-    * - :ref:`board_ststm32_nucleo_g071rb`
-      - :ref:`platform_ststm32`
-      - STM32G071RBT6
-      - 64MHz
-      - 128KB
-      - 36KB
-    * - :ref:`board_ststm32_nucleo_g431rb`
-      - :ref:`platform_ststm32`
-      - STM32G431RBT6
-      - 170MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_ststm32_nucleo_g474re`
-      - :ref:`platform_ststm32`
-      - STM32G474RET6
-      - 170MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_nordicnrf52_reel_board`
       - :ref:`platform_nordicnrf52`
       - NRF52840
@@ -780,6 +756,24 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - STM32G431RBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -1126,13 +1120,6 @@ BBC
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52833
-      - 64MHz
-      - 512KB
-      - 128KB
 
 Digilent
 ~~~~~~~~
@@ -1730,21 +1717,21 @@ ST
       - 128KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G071RBT6
       - 64MHz
       - 128KB
       - 36KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G431RBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G474RET6
       - 170MHz
       - 512KB

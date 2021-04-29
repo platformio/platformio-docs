@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Release Notes &mdash; PlatformIO latest documentation</title>
+  <title>Release Notes &mdash; PlatformIO v5.1 documentation</title>
   
 
   
@@ -133,14 +133,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#platformio-core-5">PlatformIO Core 5</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">5.2.0 (2021-??-??)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">5.1.1 (2021-03-17)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">5.1.0 (2021-01-28)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">5.0.4 (2020-12-30)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">5.0.3 (2020-11-12)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">5.0.2 (2020-10-30)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id9">5.0.1 (2020-09-10)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">5.0.0 (2020-09-03)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">5.1.1 (2021-03-17)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">5.1.0 (2021-01-28)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">5.0.4 (2020-12-30)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">5.0.3 (2020-11-12)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">5.0.2 (2020-10-30)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">5.0.1 (2020-09-10)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">5.0.0 (2020-09-03)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#platformio-core-4">PlatformIO Core 4</a></li>
@@ -226,53 +225,7 @@
 <span id="release-notes-5"></span><h2>PlatformIO Core 5<a class="headerlink" href="#platformio-core-5" title="Permalink to this headline">¶</a></h2>
 <p><strong>A professional collaborative platform for embedded development</strong></p>
 <div class="section" id="id1">
-<h3>5.2.0 (2021-??-??)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><strong>PlatformIO Debugging</strong></p>
-<ul>
-<li><p>Boosted <a class="reference external" href="https://docs.platformio.org/page/plus/debugging.html">PlatformIO Debugging</a>  performance thanks to migrating the codebase to the pure Python 3 Asynchronous I/O stack</p></li>
-<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/debugging.html#debug-unit-tests">Debug unit tests</a> created with <a class="reference external" href="https://docs.platformio.org/page/plus/unit-testing.html">PlatformIO Unit Testing</a> solution  (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/948">issue #948</a>)</p></li>
-<li><p>Debug native (desktop) applications on a host machine (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/980">issue #980</a>)</p></li>
-<li><p>Support debugging on Windows using Windows CMD/CLI (<a class="reference external" href="https://docs.platformio.org/page/core/userguide/cmd_debug.html">pio debug</a>) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3793">issue #3793</a>)</p></li>
-<li><p>Configure a custom pattern to determine when debugging server is started with a new <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_env_debug.html#debug-server-ready-pattern">debug_server_ready_pattern</a> option</p></li>
-<li><p>Fixed an issue with silent hanging when a custom debug server is not found (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3756">issue #3756</a>)</p></li>
-</ul>
-</li>
-<li><p><strong>Static Code Analysis</strong></p>
-<ul>
-<li><p>Updated analysis tools:</p>
-<ul>
-<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/cppcheck.html">Cppcheck</a> v2.4.1 with new checks and MISRA improvements</p></li>
-<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/pvs-studio.html">PVS-Studio</a> v7.12 with new diagnostics and extended capabilities for security and safety standards</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Package Management</strong></p>
-<ul>
-<li><p>Improved a package publishing process:</p>
-<ul>
-<li><p>Show package details</p></li>
-<li><p>Check for conflicting names in the PlatformIO Trusted Registry</p></li>
-<li><p>Check for duplicates and used version</p></li>
-<li><p>Validate package manifest</p></li>
-</ul>
-</li>
-<li><p>Added a new option <code class="docutils literal notranslate"><span class="pre">--non-interactive</span></code> to <a class="reference external" href="https://docs.platformio.org/page/core/userguide/package/cmd_publish.html">pio package publish</a> command</p></li>
-</ul>
-</li>
-<li><p><strong>Miscellaneous</strong></p>
-<ul>
-<li><p>Ensure that a serial port is ready before running unit tests on a remote target (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3742">issue #3742</a>)</p></li>
-<li><p>Fixed an error “Unknown development platform” when running unit tests on a clean machine (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3901">issue #3901</a>)</p></li>
-<li><p>Fixed an issue when “main.cpp” was generated for a new project for 8-bit development platforms (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3872">issue #3872</a>)</p></li>
-<li><p>Fixed an issue with broken binary file extension when a custom <code class="docutils literal notranslate"><span class="pre">PROGNAME</span></code> contains dot symbols (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3906">issue #3906</a>)</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="id2">
-<h3>5.1.1 (2021-03-17)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3>5.1.1 (2021-03-17)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Fixed a “The command line is too long” issue with a linking process on Windows (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3827">issue #3827</a>)</p></li>
 <li><p>Fixed an issue with <a class="reference external" href="https://docs.platformio.org/page/core/userguide/device/cmd_monitor.html">device monitor</a> when the “send_on_enter” filter didn’t send EOL chars (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3787">issue #3787</a>)</p></li>
@@ -281,8 +234,8 @@
 <li><p>Fixed an issue with overriding user-specified debugging configuration information in VSCode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3824">issue #3824</a>)</p></li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h3>5.1.0 (2021-01-28)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>5.1.0 (2021-01-28)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><strong>PlatformIO Home</strong></p>
 <ul>
@@ -328,8 +281,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h3>5.0.4 (2020-12-30)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3>5.0.4 (2020-12-30)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Added “Core” suffix when showing PlatformIO Core version using <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">--version</span></code> command</p></li>
 <li><p>Improved “.ccls” configuration file for Emacs, Vim, and Sublime Text integrations</p></li>
@@ -345,8 +298,8 @@
 <li><p>Fixed an issue with package publishing on Windows when Unix permissions are not preserved (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3776">issue #3776</a>)</p></li>
 </ul>
 </div>
-<div class="section" id="id7">
-<h3>5.0.3 (2020-11-12)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3>5.0.3 (2020-11-12)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Added an error selector for <a class="reference external" href="https://docs.platformio.org/page/integration/ide/sublimetext.html">Sublime Text</a> build runner (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3733">issue #3733</a>)</p></li>
 <li><p>Generate a working “projectEnvName” for PlatformIO IDE’s debugger for VSCode</p></li>
@@ -356,8 +309,8 @@
 <li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/page/core/userguide/package/cmd_pack.html">pio package pack</a> ignores some folders (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3730">issue #3730</a>)</p></li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h3>5.0.2 (2020-10-30)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>5.0.2 (2020-10-30)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Initialize a new project or update the existing passing working environment name and its options (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3686">issue #3686</a>)</p></li>
 <li><p>Automatically build PlatformIO Core extra Python dependencies on a host machine if they are missed in the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3700">issue #3700</a>)</p></li>
@@ -371,8 +324,8 @@
 <li><p>Fixed an issue with a “wrong” timestamp in device monitor output using <a class="reference external" href="https://docs.platformio.org/page/core/userguide/device/cmd_monitor.html#filters">“time” filter</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3712">issue #3712</a>)</p></li>
 </ul>
 </div>
-<div class="section" id="id9">
-<h3>5.0.1 (2020-09-10)<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3>5.0.1 (2020-09-10)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Added support for “owner” requirement when declaring <code class="docutils literal notranslate"><span class="pre">dependencies</span></code> using <a class="reference external" href="https://docs.platformio.org/page/librarymanager/config.html#dependencies">library.json</a></p></li>
 <li><p>Fixed an issue when using a custom git/ssh package with <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_env_platform.html#platform-packages">platform_packages</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3624">issue #3624</a>)</p></li>
@@ -384,8 +337,8 @@
 <li><p>Fixed an issue when can not remove update or remove external dev-platform using PlatformIO Home (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3663">issue #3663</a>)</p></li>
 </ul>
 </div>
-<div class="section" id="id11">
-<h3>5.0.0 (2020-09-03)<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id10">
+<h3>5.0.0 (2020-09-03)<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>Please check <a class="reference external" href="https://docs.platformio.org/page/core/migration.html">Migration guide from 4.x to 5.0</a>.</p>
 <ul class="simple">
 <li><p>Integration with the new <strong>PlatformIO Trusted Registry</strong></p>
@@ -489,23 +442,23 @@
 </div>
 <div class="section" id="platformio-core-4">
 <span id="release-notes-4"></span><h2>PlatformIO Core 4<a class="headerlink" href="#platformio-core-4" title="Permalink to this headline">¶</a></h2>
-<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v4.3.4/HISTORY.rst">PlatformIO Core 4.0 history</a>.</p>
+<p>See <a class="reference external" href="https://docs.platformio.org/en/v4.3.4/core/history.html#platformio-core-4">PlatformIO Core 4.0 history</a>.</p>
 </div>
 <div class="section" id="platformio-core-3">
 <h2>PlatformIO Core 3<a class="headerlink" href="#platformio-core-3" title="Permalink to this headline">¶</a></h2>
-<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v3.6.7/HISTORY.rst">PlatformIO Core 3.0 history</a>.</p>
+<p>See <a class="reference external" href="https://docs.platformio.org/en/v4.3.4/core/history.html#platformio-core-3">PlatformIO Core 3.0 history</a>.</p>
 </div>
 <div class="section" id="platformio-core-2">
 <h2>PlatformIO Core 2<a class="headerlink" href="#platformio-core-2" title="Permalink to this headline">¶</a></h2>
-<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v2.11.2/HISTORY.rst">PlatformIO Core 2.0 history</a>.</p>
+<p>See <a class="reference external" href="https://docs.platformio.org/en/v4.3.4/core/history.html#platformio-core-2">PlatformIO Core 2.0 history</a>.</p>
 </div>
 <div class="section" id="platformio-core-1">
 <h2>PlatformIO Core 1<a class="headerlink" href="#platformio-core-1" title="Permalink to this headline">¶</a></h2>
-<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v1.5.0/HISTORY.rst">PlatformIO Core 1.0 history</a>.</p>
+<p>See <a class="reference external" href="https://docs.platformio.org/en/v4.3.4/core/history.html#platformio-core-1">PlatformIO Core 1.0 history</a>.</p>
 </div>
 <div class="section" id="platformio-core-preview">
 <h2>PlatformIO Core Preview<a class="headerlink" href="#platformio-core-preview" title="Permalink to this headline">¶</a></h2>
-<p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v0.10.2/HISTORY.rst">PlatformIO Core Preview history</a>.</p>
+<p>See <a class="reference external" href="https://docs.platformio.org/en/v4.3.4/core/history.html#platformio-core-preview">PlatformIO Core Preview history</a>.</p>
 </div>
 </div>
 
@@ -573,7 +526,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0a6 (latest)
+    v5.1.1 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

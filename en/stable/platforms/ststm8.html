@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>ST STM8 &mdash; PlatformIO latest documentation</title>
+  <title>ST STM8 &mdash; PlatformIO v5.1 documentation</title>
   
 
   
@@ -274,11 +274,9 @@
 <h2><a class="toc-backref" href="#id2">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">ST STM8 development platform repository</a>:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart-loopback?utm_source=platformio.org&amp;utm_medium=docs">spl-uart-loopback</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples/spl-blink?utm_source=platformio.org&amp;utm_medium=docs">spl-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-fade-all-pins?utm_source=platformio.org&amp;utm_medium=docs">arduino-fade-all-pins</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples/native-blink?utm_source=platformio.org&amp;utm_medium=docs">native-blink</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart-simple-printf?utm_source=platformio.org&amp;utm_medium=docs">spl-uart-simple-printf</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart?utm_source=platformio.org&amp;utm_medium=docs">spl-uart</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples/spl-flash?utm_source=platformio.org&amp;utm_medium=docs">spl-flash</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-internal-lib?utm_source=platformio.org&amp;utm_medium=docs">arduino-internal-lib</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-ping-hc04?utm_source=platformio.org&amp;utm_medium=docs">arduino-ping-hc04</a></p></li>
@@ -292,7 +290,6 @@
 <li><p><a class="reference internal" href="#tools-debug-probes" id="id8">Tools &amp; Debug Probes</a></p>
 <ul>
 <li><p><a class="reference internal" href="#on-board-debug-tools" id="id9">On-Board Debug Tools</a></p></li>
-<li><p><a class="reference internal" href="#external-debug-tools" id="id10">External Debug Tools</a></p></li>
 </ul>
 </li>
 </ul>
@@ -329,75 +326,8 @@ You do not need to use/buy external debug probe.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/nucleo_8s207k8.html#board-ststm8-nucleo-8s207k8"><span class="std std-ref">NUCLEO-8S207K8</span></a></p></td>
-<td><p>STM8S207K8T6</p></td>
-<td><p>16MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>6KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/nucleo_8s208rb.html#board-ststm8-nucleo-8s208rb"><span class="std std-ref">NUCLEO-8S208RB</span></a></p></td>
-<td><p>STM8S208RBT6</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>6KB</p></td>
-</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sdisco.html#board-ststm8-stm8sdisco"><span class="std std-ref">ST STM8S-DISCOVERY</span></a></p></td>
 <td><p>STM8S105C6T6</p></td>
-<td><p>16MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>2KB</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="external-debug-tools">
-<h4><a class="toc-backref" href="#id10">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this headline">¶</a></h4>
-<p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
-external debug probe. They <strong>ARE NOT READY</strong> for debugging.
-Please click on board name for the further details.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8s003f3.html#board-ststm8-stm8s003f3"><span class="std std-ref">ST STM8S003F3 chip</span></a></p></td>
-<td><p>STM8S003F3P6</p></td>
-<td><p>16MHz</p></td>
-<td><p>8KB</p></td>
-<td><p>1KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblue.html#board-ststm8-stm8sblue"><span class="std std-ref">ST STM8S103F3 Breakout Board</span></a></p></td>
-<td><p>STM8S103F3P6</p></td>
-<td><p>16MHz</p></td>
-<td><p>8KB</p></td>
-<td><p>1KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblack.html#board-ststm8-stm8sblack"><span class="std std-ref">ST STM8S105K4T6 Breakout Board</span></a></p></td>
-<td><p>STM8S105K4T6</p></td>
-<td><p>16MHz</p></td>
-<td><p>16KB</p></td>
-<td><p>2KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/mb208.html#board-ststm8-mb208"><span class="std std-ref">sduino MB (STM8S208MBT6B)</span></a></p></td>
-<td><p>STM8S208MBT6</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>6KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/s8uno.html#board-ststm8-s8uno"><span class="std std-ref">sduino UNO (STM8S105K6)</span></a></p></td>
-<td><p>STM8S105K6T6</p></td>
 <td><p>16MHz</p></td>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
@@ -460,13 +390,10 @@ of ST STM8 development platform and the latest upstream version using
 <tr class="row-odd"><td><p><a class="reference external" href="https://stm8-binutils-gdb.sourceforge.io/?utm_source=platformio.org&amp;utm_medium=docs">tool-stm8binutils</a></p></td>
 <td><p>STM8 toolchain with GDB debugger</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/vdudouyt/stm8flash.git?utm_source=platformio.org&amp;utm_medium=docs">tool-stm8flash</a></p></td>
-<td><p>stm8flash is an application for programing stm8 devices with SWIM/stlinkv(1,2).</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/vdudouyt/stm8flash.git?utm_source=platformio.org&amp;utm_medium=docs">tool-stm8tools</a></p></td>
+<td><p>Upload tools for ST STM8 microcontrollers</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/gicking/stm8gal.git?utm_source=platformio.org&amp;utm_medium=docs">tool-stm8gal</a></p></td>
-<td><p>stm8gal is an application for programming or reading out STM8 memory using the built-in ROM bootloader (BSL) via UART or SPI interface</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference external" href="http://sdcc.sourceforge.net?utm_source=platformio.org&amp;utm_medium=docs">toolchain-sdcc</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="http://sdcc.sourceforge.net?utm_source=platformio.org&amp;utm_medium=docs">toolchain-sdcc</a></p></td>
 <td><p>Small Device C compiler suite</p></td>
 </tr>
 </tbody>
@@ -549,64 +476,19 @@ horizontally.</p></li>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8s003f3.html#board-ststm8-stm8s003f3"><span class="std std-ref">ST STM8S003F3 chip</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM8S003F3P6</p></td>
-<td><p>16MHz</p></td>
-<td><p>8KB</p></td>
-<td><p>1KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblue.html#board-ststm8-stm8sblue"><span class="std std-ref">ST STM8S103F3 Breakout Board</span></a></p></td>
-<td><p>External</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblue.html#board-ststm8-stm8sblue"><span class="std std-ref">ST STM8S103F3 Breakout Board</span></a></p></td>
+<td><p>No</p></td>
 <td><p>STM8S103F3P6</p></td>
 <td><p>16MHz</p></td>
 <td><p>8KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblack.html#board-ststm8-stm8sblack"><span class="std std-ref">ST STM8S105K4T6 Breakout Board</span></a></p></td>
-<td><p>External</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblack.html#board-ststm8-stm8sblack"><span class="std std-ref">ST STM8S105K4T6 Breakout Board</span></a></p></td>
+<td><p>No</p></td>
 <td><p>STM8S105K4T6</p></td>
 <td><p>16MHz</p></td>
 <td><p>16KB</p></td>
 <td><p>2KB</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="stmicroelectronics">
-<h3>STMicroelectronics<a class="headerlink" href="#stmicroelectronics" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/nucleo_8s207k8.html#board-ststm8-nucleo-8s207k8"><span class="std std-ref">NUCLEO-8S207K8</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>STM8S207K8T6</p></td>
-<td><p>16MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>6KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/nucleo_8s208rb.html#board-ststm8-nucleo-8s208rb"><span class="std std-ref">NUCLEO-8S208RB</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>STM8S208RBT6</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>6KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -633,14 +515,14 @@ horizontally.</p></li>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/mb208.html#board-ststm8-mb208"><span class="std std-ref">sduino MB (STM8S208MBT6B)</span></a></p></td>
-<td><p>External</p></td>
+<td><p>No</p></td>
 <td><p>STM8S208MBT6</p></td>
 <td><p>16MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>6KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/s8uno.html#board-ststm8-s8uno"><span class="std std-ref">sduino UNO (STM8S105K6)</span></a></p></td>
-<td><p>External</p></td>
+<td><p>No</p></td>
 <td><p>STM8S105K6T6</p></td>
 <td><p>16MHz</p></td>
 <td><p>32KB</p></td>
@@ -716,7 +598,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0a6 (latest)
+    v5.1.1 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

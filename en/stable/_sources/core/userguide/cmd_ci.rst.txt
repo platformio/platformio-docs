@@ -48,7 +48,12 @@ Systems please follow to :ref:`ci` page.
 
 .. note::
     :ref:`cmd_ci` command is useful for library developers. It allows one to build
-    different examples without creating own project per them.
+    different examples without creating own project per them. Also, is possible
+    to upload firmware to the target device. In this case, you need to pass
+    additional option ``--project-option="targets=upload"``. What is more,
+    you can specify custom upload port using
+    ``--project-option="upload_port=<port>"`` option.
+    See :option:`pio ci --project-option` for details.
 
 Options
 -------

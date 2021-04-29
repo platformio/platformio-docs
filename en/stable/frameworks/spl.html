@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Standard Peripheral Library &mdash; PlatformIO latest documentation</title>
+  <title>Standard Peripheral Library &mdash; PlatformIO v5.1 documentation</title>
   
 
   
@@ -143,7 +143,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#generic">Generic</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rushup">RushUp</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#st">ST</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#stmicroelectronics">STMicroelectronics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sduino">sduino</a></li>
 </ul>
 </li>
@@ -258,6 +257,11 @@
 </dl>
 <p>The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.</p>
 <p>For more detailed information please visit <a class="reference external" href="https://www.st.com/en/embedded-software/stsw-stm8069.html?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The ST Standard Peripheral Library framework has been superceded by the ST <a class="reference internal" href="stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a> framework.
+Support for this framework is limited to existing projects.</p>
+</div>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
@@ -344,20 +348,6 @@ You do not need to use/buy external debug probe.</p>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/nucleo_8s207k8.html#board-ststm8-nucleo-8s207k8"><span class="std std-ref">NUCLEO-8S207K8</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>STM8S207K8T6</p></td>
-<td><p>16MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>6KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/nucleo_8s208rb.html#board-ststm8-nucleo-8s208rb"><span class="std std-ref">NUCLEO-8S208RB</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>STM8S208RBT6</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>6KB</p></td>
-</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/cloud_jam.html#board-ststm32-cloud-jam"><span class="std std-ref">RushUp Cloud-JAM</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F401RET6</p></td>
@@ -434,61 +424,26 @@ Please click on board name for the further details.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8s003f3.html#board-ststm8-stm8s003f3"><span class="std std-ref">ST STM8S003F3 chip</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>STM8S003F3P6</p></td>
-<td><p>16MHz</p></td>
-<td><p>8KB</p></td>
-<td><p>1KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblue.html#board-ststm8-stm8sblue"><span class="std std-ref">ST STM8S103F3 Breakout Board</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>STM8S103F3P6</p></td>
-<td><p>16MHz</p></td>
-<td><p>8KB</p></td>
-<td><p>1KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblack.html#board-ststm8-stm8sblack"><span class="std std-ref">ST STM8S105K4T6 Breakout Board</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>STM8S105K4T6</p></td>
-<td><p>16MHz</p></td>
-<td><p>16KB</p></td>
-<td><p>2KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/genericSTM32F401RB.html#board-ststm32-genericstm32f401rb"><span class="std std-ref">STM32F401RB (64k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/genericSTM32F401RB.html#board-ststm32-genericstm32f401rb"><span class="std std-ref">STM32F401RB (64k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F401RB</p></td>
 <td><p>84MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/genericSTM32F401RC.html#board-ststm32-genericstm32f401rc"><span class="std std-ref">STM32F401RC (64k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/genericSTM32F401RC.html#board-ststm32-genericstm32f401rc"><span class="std std-ref">STM32F401RC (64k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F401RC</p></td>
 <td><p>84MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/genericSTM32F401RE.html#board-ststm32-genericstm32f401re"><span class="std std-ref">STM32F401RE (96k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/genericSTM32F401RE.html#board-ststm32-genericstm32f401re"><span class="std std-ref">STM32F401RE (96k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F401RE</p></td>
 <td><p>84MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/mb208.html#board-ststm8-mb208"><span class="std std-ref">sduino MB (STM8S208MBT6B)</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>STM8S208MBT6</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>6KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/s8uno.html#board-ststm8-s8uno"><span class="std std-ref">sduino UNO (STM8S105K6)</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>STM8S105K6T6</p></td>
-<td><p>16MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>2KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -765,71 +720,21 @@ Please click on board name for the further details.</p>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8s003f3.html#board-ststm8-stm8s003f3"><span class="std std-ref">ST STM8S003F3 chip</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblue.html#board-ststm8-stm8sblue"><span class="std std-ref">ST STM8S103F3 Breakout Board</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM8S003F3P6</p></td>
-<td><p>16MHz</p></td>
-<td><p>8KB</p></td>
-<td><p>1KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblue.html#board-ststm8-stm8sblue"><span class="std std-ref">ST STM8S103F3 Breakout Board</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>External</p></td>
+<td><p>No</p></td>
 <td><p>STM8S103F3P6</p></td>
 <td><p>16MHz</p></td>
 <td><p>8KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblack.html#board-ststm8-stm8sblack"><span class="std std-ref">ST STM8S105K4T6 Breakout Board</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblack.html#board-ststm8-stm8sblack"><span class="std std-ref">ST STM8S105K4T6 Breakout Board</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>External</p></td>
+<td><p>No</p></td>
 <td><p>STM8S105K4T6</p></td>
 <td><p>16MHz</p></td>
 <td><p>16KB</p></td>
 <td><p>2KB</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="stmicroelectronics">
-<h3>STMicroelectronics<a class="headerlink" href="#stmicroelectronics" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Platform</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/nucleo_8s207k8.html#board-ststm8-nucleo-8s207k8"><span class="std std-ref">NUCLEO-8S207K8</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>STM8S207K8T6</p></td>
-<td><p>16MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>6KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/nucleo_8s208rb.html#board-ststm8-nucleo-8s208rb"><span class="std std-ref">NUCLEO-8S208RB</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>STM8S208RBT6</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>6KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -859,7 +764,7 @@ Please click on board name for the further details.</p>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/mb208.html#board-ststm8-mb208"><span class="std std-ref">sduino MB (STM8S208MBT6B)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>External</p></td>
+<td><p>No</p></td>
 <td><p>STM8S208MBT6</p></td>
 <td><p>16MHz</p></td>
 <td><p>128KB</p></td>
@@ -867,7 +772,7 @@ Please click on board name for the further details.</p>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/s8uno.html#board-ststm8-s8uno"><span class="std std-ref">sduino UNO (STM8S105K6)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>External</p></td>
+<td><p>No</p></td>
 <td><p>STM8S105K6T6</p></td>
 <td><p>16MHz</p></td>
 <td><p>32KB</p></td>
@@ -943,7 +848,7 @@ Please click on board name for the further details.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0a6 (latest)
+    v5.1.1 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

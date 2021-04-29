@@ -31,11 +31,9 @@ Examples
 
 Examples are listed from `ST STM8 development platform repository <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `spl-uart-loopback <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart-loopback?utm_source=platformio.org&utm_medium=docs>`_
 * `spl-blink <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-fade-all-pins <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-fade-all-pins?utm_source=platformio.org&utm_medium=docs>`_
-* `native-blink <https://github.com/platformio/platform-ststm8/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `spl-uart-simple-printf <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart-simple-printf?utm_source=platformio.org&utm_medium=docs>`_
+* `spl-uart <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-uart?utm_source=platformio.org&utm_medium=docs>`_
 * `spl-flash <https://github.com/platformio/platform-ststm8/tree/master/examples/spl-flash?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-lib <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-internal-lib?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-ping-hc04 <https://github.com/platformio/platform-ststm8/tree/master/examples/arduino-ping-hc04?utm_source=platformio.org&utm_medium=docs>`_
@@ -77,61 +75,8 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm8_nucleo_8s207k8`
-      - STM8S207K8T6
-      - 16MHz
-      - 64KB
-      - 6KB
-    * - :ref:`board_ststm8_nucleo_8s208rb`
-      - STM8S208RBT6
-      - 16MHz
-      - 128KB
-      - 6KB
     * - :ref:`board_ststm8_stm8sdisco`
       - STM8S105C6T6
-      - 16MHz
-      - 32KB
-      - 2KB
-
-
-External Debug Tools
-^^^^^^^^^^^^^^^^^^^^
-
-Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
-external debug probe. They **ARE NOT READY** for debugging.
-Please click on board name for the further details.
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_ststm8_stm8s003f3`
-      - STM8S003F3P6
-      - 16MHz
-      - 8KB
-      - 1KB
-    * - :ref:`board_ststm8_stm8sblue`
-      - STM8S103F3P6
-      - 16MHz
-      - 8KB
-      - 1KB
-    * - :ref:`board_ststm8_stm8sblack`
-      - STM8S105K4T6
-      - 16MHz
-      - 16KB
-      - 2KB
-    * - :ref:`board_ststm8_mb208`
-      - STM8S208MBT6
-      - 16MHz
-      - 128KB
-      - 6KB
-    * - :ref:`board_ststm8_s8uno`
-      - STM8S105K6T6
       - 16MHz
       - 32KB
       - 2KB
@@ -190,11 +135,8 @@ Packages
     * - `tool-stm8binutils <https://stm8-binutils-gdb.sourceforge.io/?utm_source=platformio.org&utm_medium=docs>`__
       - STM8 toolchain with GDB debugger
 
-    * - `tool-stm8flash <https://github.com/vdudouyt/stm8flash.git?utm_source=platformio.org&utm_medium=docs>`__
-      - stm8flash is an application for programing stm8 devices with SWIM/stlinkv(1,2).
-
-    * - `tool-stm8gal <https://github.com/gicking/stm8gal.git?utm_source=platformio.org&utm_medium=docs>`__
-      - stm8gal is an application for programming or reading out STM8 memory using the built-in ROM bootloader (BSL) via UART or SPI interface
+    * - `tool-stm8tools <https://github.com/vdudouyt/stm8flash.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Upload tools for ST STM8 microcontrollers
 
     * - `toolchain-sdcc <http://sdcc.sourceforge.net?utm_source=platformio.org&utm_medium=docs>`__
       - Small Device C compiler suite
@@ -254,49 +196,18 @@ ST
       - 16MHz
       - 32KB
       - 2KB
-    * - :ref:`board_ststm8_stm8s003f3`
-      - External
-      - STM8S003F3P6
-      - 16MHz
-      - 8KB
-      - 1KB
     * - :ref:`board_ststm8_stm8sblue`
-      - External
+      - No
       - STM8S103F3P6
       - 16MHz
       - 8KB
       - 1KB
     * - :ref:`board_ststm8_stm8sblack`
-      - External
+      - No
       - STM8S105K4T6
       - 16MHz
       - 16KB
       - 2KB
-
-STMicroelectronics
-~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_ststm8_nucleo_8s207k8`
-      - On-board
-      - STM8S207K8T6
-      - 16MHz
-      - 64KB
-      - 6KB
-    * - :ref:`board_ststm8_nucleo_8s208rb`
-      - On-board
-      - STM8S208RBT6
-      - 16MHz
-      - 128KB
-      - 6KB
 
 sduino
 ~~~~~~
@@ -311,13 +222,13 @@ sduino
       - Flash
       - RAM
     * - :ref:`board_ststm8_mb208`
-      - External
+      - No
       - STM8S208MBT6
       - 16MHz
       - 128KB
       - 6KB
     * - :ref:`board_ststm8_s8uno`
-      - External
+      - No
       - STM8S105K6T6
       - 16MHz
       - 32KB

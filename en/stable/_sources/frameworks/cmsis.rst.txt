@@ -124,30 +124,6 @@ You do not need to use/buy external debug probe.
       - 100MHz
       - 1MB
       - 256KB
-    * - :ref:`board_ststm32_nucleo_g071rb`
-      - :ref:`platform_ststm32`
-      - STM32G071RBT6
-      - 64MHz
-      - 128KB
-      - 36KB
-    * - :ref:`board_ststm32_nucleo_g431kb`
-      - :ref:`platform_ststm32`
-      - STM32G431KBT6
-      - 170MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_ststm32_nucleo_g431rb`
-      - :ref:`platform_ststm32`
-      - STM32G431RBT6
-      - 170MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_ststm32_nucleo_g474re`
-      - :ref:`platform_ststm32`
-      - STM32G474RET6
-      - 170MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_ststm32_cloud_jam`
       - :ref:`platform_ststm32`
       - STM32F401RET6
@@ -839,6 +815,30 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_nucleo_g071rb`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
+    * - :ref:`board_ststm32_nucleo_g431kb`
+      - :ref:`platform_ststm32`
+      - STM32G431KBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g431rb`
+      - :ref:`platform_ststm32`
+      - STM32G431RBT6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_nucleo_g474re`
+      - :ref:`platform_ststm32`
+      - STM32G474RET6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -1210,7 +1210,7 @@ Please click on board name for the further details.
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - :ref:`platform_ststm32`
       - STM32F410C8
@@ -2090,7 +2090,7 @@ Generic
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - :ref:`platform_ststm32`
       - External
@@ -2786,28 +2786,28 @@ ST
       - 64KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G071RBT6
       - 64MHz
       - 128KB
       - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G431KBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G431RBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G474RET6
       - 170MHz
       - 512KB

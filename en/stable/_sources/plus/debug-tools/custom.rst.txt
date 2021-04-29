@@ -165,18 +165,6 @@ On-board ST-Link V2/V2-1 in pair with `ST-Util GDB Server <https://github.com/te
     debug_tool = custom
     debug_port = :4242
     debug_server = $PLATFORMIO_CORE_DIR/packages/tool-stlink/bin/st-util
-    debug_init_cmds =
-      define pio_reset_halt_target
-          monitor reset
-          monitor halt
-      end
-      define pio_reset_run_target
-          monitor reset
-      end
-      target extended-remote $DEBUG_PORT
-      $LOAD_CMDS
-      pio_reset_halt_target
-      $INIT_BREAK
 
 OpenOCD and ST-Link
 ~~~~~~~~~~~~~~~~~~~

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>pio ci &mdash; PlatformIO latest documentation</title>
+  <title>pio ci &mdash; PlatformIO v5.1 documentation</title>
   
 
   
@@ -282,7 +282,12 @@ Systems please follow to <a class="reference internal" href="../../integration/c
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><a class="reference internal" href="#cmd-ci"><span class="std std-ref">pio ci</span></a> command is useful for library developers. It allows one to build
-different examples without creating own project per them.</p>
+different examples without creating own project per them. Also, is possible
+to upload firmware to the target device. In this case, you need to pass
+additional option <code class="docutils literal notranslate"><span class="pre">--project-option=&quot;targets=upload&quot;</span></code>. What is more,
+you can specify custom upload port using
+<code class="docutils literal notranslate"><span class="pre">--project-option=&quot;upload_port=&lt;port&gt;&quot;</span></code> option.
+See <a class="reference internal" href="#cmdoption-pio-ci-O"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">ci</span> <span class="pre">--project-option</span></code></a> for details.</p>
 </div>
 </div>
 <div class="section" id="options">
@@ -438,7 +443,7 @@ or by environment variable <span class="target" id="index-0"></span><a class="re
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0a6 (latest)
+    v5.1.1 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

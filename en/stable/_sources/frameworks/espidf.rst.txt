@@ -922,13 +922,6 @@ Heltec Automation
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_espressif32_heltec_wifi_kit_32_v2`
-      - :ref:`platform_espressif32`
-      - No
-      - ESP32
-      - 240MHz
-      - 8MB
-      - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - :ref:`platform_espressif32`
       - External

@@ -435,7 +435,6 @@ Espressif 32
     espressif32/frogboard
     espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
-    espressif32/heltec_wifi_kit_32_v2
     espressif32/heltec_wifi_lora_32
     espressif32/heltec_wifi_lora_32_V2
     espressif32/heltec_wireless_stick
@@ -940,8 +939,6 @@ ST STM32
     ststm32/b96b_neonkey
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
-    ststm32/portenta_h7_m4
-    ststm32/portenta_h7_m7
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
     ststm32/armstrap_eagle512
@@ -1174,10 +1171,7 @@ ST STM8
 .. toctree::
     :maxdepth: 1
         
-    ststm8/nucleo_8s207k8
-    ststm8/nucleo_8s208rb
     ststm8/stm8sdisco
-    ststm8/stm8s003f3
     ststm8/stm8sblue
     ststm8/stm8sblack
     ststm8/mb208

@@ -337,20 +337,6 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
-    * - :ref:`board_ststm32_portenta_h7_m4`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32H747XIH6
-      - 480MHz
-      - 1MB
-      - 287.35KB
-    * - :ref:`board_ststm32_portenta_h7_m7`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32H747XIH6
-      - 480MHz
-      - 768KB
-      - 511.35KB
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
       - On-board
@@ -378,7 +364,7 @@ Boards
       - NRF52833
       - 64MHz
       - 512KB
-      - 128KB
+      - 64KB
     * - :ref:`board_nordicnrf52_laird_bl652_dvk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -778,20 +764,6 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_ststm8_nucleo_8s207k8`
-      - :ref:`platform_ststm8`
-      - On-board
-      - STM8S207K8T6
-      - 16MHz
-      - 64KB
-      - 6KB
-    * - :ref:`board_ststm8_nucleo_8s208rb`
-      - :ref:`platform_ststm8`
-      - On-board
-      - STM8S208RBT6
-      - 16MHz
-      - 128KB
-      - 6KB
     * - :ref:`board_nordicnrf51_nrf51_beacon`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -834,34 +806,6 @@ Boards
       - 64MHz
       - 796KB
       - 243KB
-    * - :ref:`board_ststm32_nucleo_g071rb`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32G071RBT6
-      - 64MHz
-      - 128KB
-      - 36KB
-    * - :ref:`board_ststm32_nucleo_g431kb`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32G431KBT6
-      - 170MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_ststm32_nucleo_g431rb`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32G431RBT6
-      - 170MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_ststm32_nucleo_g474re`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32G474RET6
-      - 170MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - External
@@ -1506,27 +1450,6 @@ Boards
       - 16MHz
       - 32KB
       - 2KB
-    * - :ref:`board_ststm8_stm8s003f3`
-      - :ref:`platform_ststm8`
-      - External
-      - STM8S003F3P6
-      - 16MHz
-      - 8KB
-      - 1KB
-    * - :ref:`board_ststm8_stm8sblue`
-      - :ref:`platform_ststm8`
-      - External
-      - STM8S103F3P6
-      - 16MHz
-      - 8KB
-      - 1KB
-    * - :ref:`board_ststm8_stm8sblack`
-      - :ref:`platform_ststm8`
-      - External
-      - STM8S105K4T6
-      - 16MHz
-      - 16KB
-      - 2KB
     * - :ref:`board_ststm32_silica_sensor_node`
       - :ref:`platform_ststm32`
       - On-board
@@ -1876,7 +1799,7 @@ Boards
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - :ref:`platform_ststm32`
       - External
@@ -2234,20 +2157,6 @@ Boards
       - 100MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm8_mb208`
-      - :ref:`platform_ststm8`
-      - External
-      - STM8S208MBT6
-      - 16MHz
-      - 128KB
-      - 6KB
-    * - :ref:`board_ststm8_s8uno`
-      - :ref:`platform_ststm8`
-      - External
-      - STM8S105K6T6
-      - 16MHz
-      - 32KB
-      - 2KB
     * - :ref:`board_ststm32_ublox_c030_n211`
       - :ref:`platform_ststm32`
       - External

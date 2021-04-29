@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Advanced Scripting &mdash; PlatformIO latest documentation</title>
+  <title>Advanced Scripting &mdash; PlatformIO v5.1 documentation</title>
   
 
   
@@ -428,14 +428,6 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <span class="c1"># Dump build environment (for debug purpose)</span>
 <span class="c1"># print(env.Dump())</span>
 <span class="c1">#</span>
-
-<span class="c1">#</span>
-<span class="c1"># (Optional) Do not run extra script when IDE fetches C/C++ project metadata</span>
-<span class="c1">#</span>
-<span class="kn">from</span> <span class="nn">SCons.Script</span> <span class="kn">import</span> <span class="n">COMMAND_LINE_TARGETS</span>
-
-<span class="k">if</span> <span class="s2">&quot;idedata&quot;</span> <span class="ow">in</span> <span class="n">COMMAND_LINE_TARGETS</span><span class="p">:</span>
-    <span class="n">env</span><span class="o">.</span><span class="n">Exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
 <span class="c1">#</span>
 <span class="c1"># Change build flags in runtime</span>
@@ -1145,7 +1137,7 @@ install them into the same virtual environment where <a class="reference interna
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0a6 (latest)
+    v5.1.1 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

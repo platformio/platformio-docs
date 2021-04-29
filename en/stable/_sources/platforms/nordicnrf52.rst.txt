@@ -87,7 +87,7 @@ You do not need to use/buy external debug probe.
       - NRF52833
       - 64MHz
       - 512KB
-      - 128KB
+      - 64KB
     * - :ref:`board_nordicnrf52_laird_bl652_dvk`
       - NRF52832
       - 64MHz
@@ -339,7 +339,7 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-mbed <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-nrf52-mbedos <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino framework supporting mbed-enabled boards
 
     * - `framework-arduinoadafruitnrf52 <https://github.com/adafruit/Adafruit_nRF52_Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
@@ -600,7 +600,7 @@ BBC
       - NRF52833
       - 64MHz
       - 512KB
-      - 128KB
+      - 64KB
 
 Delta
 ~~~~~

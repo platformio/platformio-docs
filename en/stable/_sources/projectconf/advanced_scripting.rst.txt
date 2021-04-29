@@ -191,14 +191,6 @@ The ``extra_script.py`` file is located in the same directory as ``platformio.in
     #
 
     #
-    # (Optional) Do not run extra script when IDE fetches C/C++ project metadata
-    #
-    from SCons.Script import COMMAND_LINE_TARGETS
-
-    if "idedata" in COMMAND_LINE_TARGETS:
-        env.Exit(0)
-
-    #
     # Change build flags in runtime
     #
     env.ProcessUnFlags("-DVECT_TAB_ADDR")

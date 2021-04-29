@@ -66,7 +66,7 @@ Custom release date and time in the next format (UTC): 2014-06-13 17:08:52
     --private
 
 .. note::
-    The permission to set custom release dates and times is only available to Super Admins.
+    The permission to set custom release dates and times is only available to Super Admins. 
 
 Restrict access to a package (will not be available publicly). The default is to publish
 a package publicly.
@@ -75,11 +75,6 @@ a package publicly.
   --no-notify
 
 Do not notify by email when package is processed. The default behavior is to notify.
-
-.. option::
-  --non-interactive
-
-Do not show interactive prompt.
 
 See Also
 --------

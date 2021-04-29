@@ -829,20 +829,6 @@ Boards
       - 64MHz
       - 960KB
       - 256KB
-    * - :ref:`board_ststm32_portenta_h7_m4`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32H747XIH6
-      - 480MHz
-      - 1MB
-      - 287.35KB
-    * - :ref:`board_ststm32_portenta_h7_m7`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32H747XIH6
-      - 480MHz
-      - 768KB
-      - 511.35KB
     * - :ref:`board_atmelsam_tian`
       - :ref:`platform_atmelsam`
       - External
@@ -954,7 +940,7 @@ Boards
       - NRF52833
       - 64MHz
       - 512KB
-      - 128KB
+      - 64KB
     * - :ref:`board_nordicnrf52_laird_bl652_dvk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2028,28 +2014,28 @@ Boards
       - 243KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G071RBT6
       - 64MHz
       - 128KB
       - 36KB
     * - :ref:`board_ststm32_nucleo_g431kb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G431KBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g431rb`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G431RBT6
       - 170MHz
       - 128KB
       - 32KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
-      - On-board
+      - External
       - STM32G474RET6
       - 170MHz
       - 512KB
@@ -3180,7 +3166,7 @@ Boards
       - STM32F407VGT6
       - 168MHz
       - 1MB
-      - 128KB
+      - 192KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - :ref:`platform_ststm32`
       - External

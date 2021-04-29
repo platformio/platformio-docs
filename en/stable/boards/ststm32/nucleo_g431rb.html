@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Nucleo G431RB &mdash; PlatformIO latest documentation</title>
+  <title>Nucleo G431RB &mdash; PlatformIO v5.1 documentation</title>
   
 
   
@@ -152,8 +152,6 @@
 <li class="toctree-l3"><a class="reference internal" href="b96b_neonkey.html">96Boards Neonkey</a></li>
 <li class="toctree-l3"><a class="reference internal" href="adafruit_feather_f405.html">Adafruit Feather STM32F405</a></li>
 <li class="toctree-l3"><a class="reference internal" href="afroflight_f103cb.html">AfroFlight Rev5 (8MHz)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="portenta_h7_m4.html">Arduino Portenta H7 (M4 core)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="portenta_h7_m7.html">Arduino Portenta H7 (M7 core)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="armstrap_eagle1024.html">Armstrap Eagle 1024</a></li>
 <li class="toctree-l3"><a class="reference internal" href="armstrap_eagle2048.html">Armstrap Eagle 2048</a></li>
 <li class="toctree-l3"><a class="reference internal" href="armstrap_eagle512.html">Armstrap Eagle 512</a></li>
@@ -341,7 +339,7 @@
 <li class="toctree-l3"><a class="reference internal" href="genericSTM32F405RG.html">STM32F405RG (128k RAM. 1024k Flash)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="genericSTM32F407IGT6.html">STM32F407IG (192k RAM. 1024k Flash)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="genericSTM32F407VET6.html">STM32F407VE (192k RAM. 512k Flash)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="genericSTM32F407VGT6.html">STM32F407VG (128k RAM. 1024k Flash)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genericSTM32F407VGT6.html">STM32F407VG (192k RAM. 1024k Flash)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="genericSTM32F410C8.html">STM32F410C8 (32k RAM. 64k Flash)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="genericSTM32F410CB.html">STM32F410CB (32k RAM. 128k Flash)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="genericSTM32F410R8.html">STM32F410R8 (32k RAM. 64k Flash)</a></li>
@@ -563,15 +561,14 @@ board manifest <a class="reference external" href="https://github.com/platformio
 <li><p><code class="docutils literal notranslate"><span class="pre">cmsis-dap</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">jlink</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">mbed</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">stlink</span></code></p></li>
 </ul>
-<p>Default protocol is <code class="docutils literal notranslate"><span class="pre">stlink</span></code></p>
+<p>Default protocol is <code class="docutils literal notranslate"><span class="pre">mbed</span></code></p>
 <p>You can change upload protocol using <a class="reference internal" href="../../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> option:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_g431rb]</span>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_g431rb</span>
 
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">stlink</span>
+<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">mbed</span>
 </pre></div>
 </div>
 </div>
@@ -586,7 +583,7 @@ instructions and configuration information.</p>
 </div>
 <p>You can switch between debugging <a class="reference internal" href="../../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
 <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
-<p>Nucleo G431RB has on-board debug probe and <strong>IS READY</strong> for debugging. You don’t need to use/buy external debug probe.</p>
+<p>Nucleo G431RB does not have on-board debug probe and <strong>IS NOT READY</strong> for debugging. You will need to use/buy one of external probe listed below.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -602,7 +599,7 @@ instructions and configuration information.</p>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/blackmagic.html#debugging-tool-blackmagic"><span class="std std-ref">Black Magic Probe</span></a></p></td>
 <td></td>
-<td></td>
+<td><p>Yes</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../plus/debug-tools/cmsis-dap.html#debugging-tool-cmsis-dap"><span class="std std-ref">CMSIS-DAP</span></a></p></td>
 <td></td>
@@ -611,10 +608,6 @@ instructions and configuration information.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/jlink.html#debugging-tool-jlink"><span class="std std-ref">J-LINK</span></a></p></td>
 <td></td>
 <td></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../plus/debug-tools/stlink.html#debugging-tool-stlink"><span class="std std-ref">ST-LINK</span></a></p></td>
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
 </tr>
 </tbody>
 </table>
@@ -716,7 +709,7 @@ instructions and configuration information.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0a6 (latest)
+    v5.1.1 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
