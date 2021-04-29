@@ -5,10 +5,10 @@
   <script>
     var redirect_url = "https://docs.platformio.org/en/latest/boards/atmelavr/attiny4313.html";
     if (window.location.search) {
-      redirect_url += "?" + window.location.search;
+      redirect_url += window.location.search;
     }
     if (window.location.hash) {
-      redirect_url += "#" + window.location.hash;
+      redirect_url += window.location.hash;
     }
     window.location.href = redirect_url;
   </script>
