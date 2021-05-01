@@ -66,7 +66,7 @@ board manifest `mimxrt1064_evk.json <https://github.com/platformio/platform-nxpi
 
 Uploading
 ---------
-NXP i.MX RT1064 Evaluation Kit supports the next uploading protocols:
+NXP i.MX RT1064 Evaluation Kit supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

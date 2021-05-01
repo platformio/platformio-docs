@@ -66,7 +66,7 @@ board manifest `nano_33_iot.json <https://github.com/platformio/platform-atmelsa
 
 Uploading
 ---------
-NANO 33 IoT supports the next uploading protocols:
+NANO 33 IoT supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

@@ -66,7 +66,7 @@ board manifest `sparkfun_lora_gateway_1-channel.json <https://github.com/platfor
 
 Uploading
 ---------
-SparkFun LoRa Gateway 1-Channel supports the next uploading protocols:
+SparkFun LoRa Gateway 1-Channel supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

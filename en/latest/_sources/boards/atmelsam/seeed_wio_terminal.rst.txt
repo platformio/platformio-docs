@@ -66,7 +66,7 @@ board manifest `seeed_wio_terminal.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Seeeduino Wio Terminal supports the next uploading protocols:
+Seeeduino Wio Terminal supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

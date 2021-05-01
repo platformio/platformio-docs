@@ -66,7 +66,7 @@ board manifest `esp32-pro.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-OLIMEX ESP32-PRO supports the next uploading protocols:
+OLIMEX ESP32-PRO supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

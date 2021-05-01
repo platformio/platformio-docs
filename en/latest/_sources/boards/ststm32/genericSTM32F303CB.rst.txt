@@ -66,7 +66,7 @@ board manifest `genericSTM32F303CB.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F303CB (32k RAM. 128k Flash) supports the next uploading protocols:
+STM32F303CB (32k RAM. 128k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

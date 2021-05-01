@@ -66,7 +66,7 @@ board manifest `particle_argon.json <https://github.com/platformio/platform-nord
 
 Uploading
 ---------
-Particle Argon supports the next uploading protocols:
+Particle Argon supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

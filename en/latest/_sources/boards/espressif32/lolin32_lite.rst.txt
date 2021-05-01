@@ -66,7 +66,7 @@ board manifest `lolin32_lite.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-WEMOS LOLIN32 Lite supports the next uploading protocols:
+WEMOS LOLIN32 Lite supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `artix7_100t.json <https://github.com/platformio/platform-shakti/
 
 Uploading
 ---------
-Arty A7-100: Artix-7 FPGA Development Board supports the next uploading protocols:
+Arty A7-100: Artix-7 FPGA Development Board supports the following uploading protocols:
 
 * ``ftdi``
 * ``ftdi``

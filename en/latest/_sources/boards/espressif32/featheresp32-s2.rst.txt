@@ -66,7 +66,7 @@ board manifest `featheresp32-s2.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-Adafruit ESP32-S2 Feather Development Board supports the next uploading protocols:
+Adafruit ESP32-S2 Feather Development Board supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

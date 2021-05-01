@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Mbed" href="mbed.html" />
+    <link rel="next" title="LOGICROM SDK" href="logicromsdk.html" />
     <link rel="prev" title="Kendryte Standalone SDK" href="kendryte-standalone-sdk.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -167,7 +167,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#vae">VAE</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#vccgnd">VCCGND</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#waveshare">Waveshare</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#weact">WeAct</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weact-studio">WeAct Studio</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rhomb-io">rhomb.io</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sakura-io">sakura.io</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#u-blox">u-blox</a></li>
@@ -175,14 +175,15 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="logicromsdk.html">LOGICROM SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nuclei-sdk.html">Nuclei SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulp-runtime.html">PULP Runtime Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-sdk.html">PULP SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pumbaa.html">Pumbaa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shakti-sdk.html">Shakti SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="simba.html">Simba</a></li>
-<li class="toctree-l2"><a class="reference internal" href="siwisdk.html">SIWI GSM &amp; NBIoT SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spl.html">Standard Peripheral Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32cube.html">STM32Cube</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wd-riscv-sdk.html">WD-Firmware</a></li>
@@ -1089,20 +1090,6 @@ Please click on board name for the further details.</p>
 <td><p>256KB</p></td>
 <td><p>40KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401cc.html#board-ststm32-blackpill-f401cc"><span class="std std-ref">BlackPill F401CC</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>STM32F401CCU6</p></td>
-<td><p>84MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>64KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">BlackPill F401CE</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>STM32F401CEU6</p></td>
-<td><p>84MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>96KB</p></td>
-</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blue_f407ve_mini.html#board-ststm32-blue-f407ve-mini"><span class="std std-ref">Blue STM32F407VE Mini</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F407VET6</p></td>
@@ -1922,12 +1909,26 @@ Please click on board name for the further details.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct BlackPill V2.0 (BlackPill F411CE)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401cc.html#board-ststm32-blackpill-f401cc"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F401CC)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F401CCU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F411CE)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F411CEU6</p></td>
 <td><p>100MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">WeAct Studio BlackPill V3.0 (STM32F401CE)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F401CEU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/wraith32_v1.html#board-ststm32-wraith32-v1"><span class="std std-ref">Wraith V1 ESC</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -3755,22 +3756,6 @@ Please click on board name for the further details.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401cc.html#board-ststm32-blackpill-f401cc"><span class="std std-ref">BlackPill F401CC</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM32F401CCU6</p></td>
-<td><p>84MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>64KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">BlackPill F401CE</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM32F401CEU6</p></td>
-<td><p>84MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>96KB</p></td>
-</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blue_f407ve_mini.html#board-ststm32-blue-f407ve-mini"><span class="std std-ref">Blue STM32F407VE Mini</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
@@ -4678,8 +4663,8 @@ Please click on board name for the further details.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="weact">
-<h3>WeAct<a class="headerlink" href="#weact" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="weact-studio">
+<h3>WeAct Studio<a class="headerlink" href="#weact-studio" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 14%" />
@@ -4701,13 +4686,29 @@ Please click on board name for the further details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct BlackPill V2.0 (BlackPill F411CE)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401cc.html#board-ststm32-blackpill-f401cc"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F401CC)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F401CCU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F411CE)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F411CEU6</p></td>
 <td><p>100MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">WeAct Studio BlackPill V3.0 (STM32F401CE)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F401CEU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -4823,7 +4824,7 @@ Please click on board name for the further details.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="mbed.html" class="btn btn-neutral float-right" title="Mbed" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="logicromsdk.html" class="btn btn-neutral float-right" title="LOGICROM SDK" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="kendryte-standalone-sdk.html" class="btn btn-neutral float-left" title="Kendryte Standalone SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

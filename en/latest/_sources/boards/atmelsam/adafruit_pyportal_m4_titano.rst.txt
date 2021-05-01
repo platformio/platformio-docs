@@ -66,7 +66,7 @@ board manifest `adafruit_pyportal_m4_titano.json <https://github.com/platformio/
 
 Uploading
 ---------
-Adafruit PyPortal M4 Titano supports the next uploading protocols:
+Adafruit PyPortal M4 Titano supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

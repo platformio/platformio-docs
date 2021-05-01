@@ -66,7 +66,7 @@ board manifest `olimex_p405.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-Olimex STM32-P405 supports the next uploading protocols:
+Olimex STM32-P405 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

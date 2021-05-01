@@ -66,7 +66,7 @@ board manifest `nucleo_l452re.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo L452RE supports the next uploading protocols:
+ST Nucleo L452RE supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `genericSTM32F103T4.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F103T4 (6k RAM. 16k Flash) supports the next uploading protocols:
+STM32F103T4 (6k RAM. 16k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

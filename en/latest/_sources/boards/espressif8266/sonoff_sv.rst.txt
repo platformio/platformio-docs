@@ -66,7 +66,7 @@ board manifest `sonoff_sv.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-Sonoff SV supports the next uploading protocols:
+Sonoff SV supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

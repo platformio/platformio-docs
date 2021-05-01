@@ -66,7 +66,7 @@ board manifest `1bitsy_stm32f415rgt.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-1Bitsy supports the next uploading protocols:
+1Bitsy supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

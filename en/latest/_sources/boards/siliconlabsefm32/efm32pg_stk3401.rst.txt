@@ -66,7 +66,7 @@ board manifest `efm32pg_stk3401.json <https://github.com/platformio/platform-sil
 
 Uploading
 ---------
-SLSTK3401A Pearl Gecko PG1 supports the next uploading protocols:
+SLSTK3401A Pearl Gecko PG1 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

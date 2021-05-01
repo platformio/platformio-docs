@@ -136,6 +136,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../index.html#nuclei">Nuclei</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#nxp-i-mx-rt">NXP i.MX RT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#nxp-lpc">NXP LPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#openhw-group">OpenHW Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#raspberry-pi-rp2040">Raspberry Pi RP2040</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#risc-v-gap">RISC-V GAP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#shakti">Shakti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#sifive">SiFive</a></li>
@@ -166,8 +168,6 @@
 <li class="toctree-l3"><a class="reference internal" href="blackpill_f103c8.html">BlackPill F103C8</a></li>
 <li class="toctree-l3"><a class="reference internal" href="blackpill_f103c8_128.html">BlackPill F103C8 (128k)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="robotdyn_blackpill_f303cc.html">BlackPill F303CC</a></li>
-<li class="toctree-l3"><a class="reference internal" href="blackpill_f401cc.html">BlackPill F401CC</a></li>
-<li class="toctree-l3"><a class="reference internal" href="blackpill_f401ce.html">BlackPill F401CE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="blue_f407ve_mini.html">Blue STM32F407VE Mini</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bluepill_f103c6.html">BluePill F103C6</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bluepill_f103c8.html">BluePill F103C8</a></li>
@@ -271,6 +271,7 @@
 <li class="toctree-l3"><a class="reference internal" href="nucleo_l073rz.html">ST Nucleo L073RZ</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nucleo_l152re.html">ST Nucleo L152RE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nucleo_l412kb.html">ST Nucleo L412KB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_l412rb_p.html">ST Nucleo L412RB-P</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nucleo_l432kc.html">ST Nucleo L432KC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nucleo_l433rc_p.html">ST Nucleo L433RC-P</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nucleo_l452re.html">ST Nucleo L452RE</a></li>
@@ -380,7 +381,9 @@
 <li class="toctree-l3"><a class="reference internal" href="vake_v1.html">VAkE v1.0</a></li>
 <li class="toctree-l3"><a class="reference internal" href="vccgnd_f103zet6.html">VCCGND F103ZET6 Mini</a></li>
 <li class="toctree-l3"><a class="reference internal" href="waveshare_open103z.html">Waveshare Open103Z</a></li>
-<li class="toctree-l3"><a class="reference internal" href="blackpill_f411ce.html">WeAct BlackPill V2.0 (BlackPill F411CE)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blackpill_f401cc.html">WeAct Studio BlackPill V2.0 (STM32F401CC)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blackpill_f411ce.html">WeAct Studio BlackPill V2.0 (STM32F411CE)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blackpill_f401ce.html">WeAct Studio BlackPill V3.0 (STM32F401CE)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="wraith32_v1.html">Wraith V1 ESC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sakuraio_evb_01.html">sakura.io Evaluation Board</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ublox_c030_n211.html">u-blox C030-N211 IoT Starter Kit</a></li>
@@ -572,7 +575,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </div>
 <div class="section" id="uploading">
 <h2><a class="toc-backref" href="#id4">Uploading</a><a class="headerlink" href="#uploading" title="Permalink to this headline">¶</a></h2>
-<p>STM32F407VE (192k RAM. 512k Flash) supports the next uploading protocols:</p>
+<p>STM32F407VE (192k RAM. 512k Flash) supports the following uploading protocols:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">dfu</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">jlink</span></code></p></li>

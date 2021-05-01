@@ -66,7 +66,7 @@ board manifest `stm8s003f3.json <https://github.com/platformio/platform-ststm8/b
 
 Uploading
 ---------
-ST STM8S003F3 chip supports the next uploading protocols:
+ST STM8S003F3 chip supports the following uploading protocols:
 
 * ``serial``
 * ``stlinkv2``

@@ -66,7 +66,7 @@ board manifest `nucleo_l073rz.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo L073RZ supports the next uploading protocols:
+ST Nucleo L073RZ supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -123,14 +123,15 @@
 <li class="toctree-l2"><a class="reference internal" href="kendryte-freertos-sdk.html">Kendryte FreeRTOS SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kendryte-standalone-sdk.html">Kendryte Standalone SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logicromsdk.html">LOGICROM SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nuclei-sdk.html">Nuclei SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulp-runtime.html">PULP Runtime Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-sdk.html">PULP SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pumbaa.html">Pumbaa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shakti-sdk.html">Shakti SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="simba.html">Simba</a></li>
-<li class="toctree-l2"><a class="reference internal" href="siwisdk.html">SIWI GSM &amp; NBIoT SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spl.html">Standard Peripheral Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32cube.html">STM32Cube</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wd-riscv-sdk.html">WD-Firmware</a></li>
@@ -180,7 +181,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#sparkfun">SparkFun</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#vng">VNG</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#waveshare">Waveshare</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#weact">WeAct</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weact-studio">WeAct Studio</a></li>
 </ul>
 </li>
 </ul>
@@ -1466,12 +1467,19 @@ Please click on board name for the further details.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct BlackPill V2.0 (BlackPill F411CE)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F411CE)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F411CEU6</p></td>
 <td><p>100MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">WeAct Studio BlackPill V3.0 (STM32F401CE)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F401CEU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -3325,8 +3333,8 @@ Please click on board name for the further details.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="weact">
-<h3>WeAct<a class="headerlink" href="#weact" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="weact-studio">
+<h3>WeAct Studio<a class="headerlink" href="#weact-studio" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 14%" />
@@ -3348,13 +3356,21 @@ Please click on board name for the further details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct BlackPill V2.0 (BlackPill F411CE)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F411CE)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F411CEU6</p></td>
 <td><p>100MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">WeAct Studio BlackPill V3.0 (STM32F401CE)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F401CEU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
 </tr>
 </tbody>
 </table>

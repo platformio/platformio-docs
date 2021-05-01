@@ -66,7 +66,7 @@ board manifest `ublox_evk_nina_b1.json <https://github.com/platformio/platform-n
 
 Uploading
 ---------
-u-blox EVK-NINA-B1 supports the next uploading protocols:
+u-blox EVK-NINA-B1 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

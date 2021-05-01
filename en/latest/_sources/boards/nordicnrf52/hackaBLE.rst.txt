@@ -66,7 +66,7 @@ board manifest `hackaBLE.json <https://github.com/platformio/platform-nordicnrf5
 
 Uploading
 ---------
-hackaBLE supports the next uploading protocols:
+hackaBLE supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

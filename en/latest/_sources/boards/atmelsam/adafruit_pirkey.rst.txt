@@ -66,7 +66,7 @@ board manifest `adafruit_pirkey.json <https://github.com/platformio/platform-atm
 
 Uploading
 ---------
-Adafruit pIRkey supports the next uploading protocols:
+Adafruit pIRkey supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

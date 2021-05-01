@@ -66,7 +66,7 @@ board manifest `az-delivery-devkit-v4.json <https://github.com/platformio/platfo
 
 Uploading
 ---------
-AZ-Delivery ESP-32 Dev Kit C V4 supports the next uploading protocols:
+AZ-Delivery ESP-32 Dev Kit C V4 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

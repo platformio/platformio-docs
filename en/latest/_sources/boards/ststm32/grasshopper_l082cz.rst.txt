@@ -66,7 +66,7 @@ board manifest `grasshopper_l082cz.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Grasshopper-L082CZ supports the next uploading protocols:
+Grasshopper-L082CZ supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

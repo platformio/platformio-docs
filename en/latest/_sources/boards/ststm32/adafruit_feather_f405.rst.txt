@@ -66,7 +66,7 @@ board manifest `adafruit_feather_f405.json <https://github.com/platformio/platfo
 
 Uploading
 ---------
-Adafruit Feather STM32F405 supports the next uploading protocols:
+Adafruit Feather STM32F405 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

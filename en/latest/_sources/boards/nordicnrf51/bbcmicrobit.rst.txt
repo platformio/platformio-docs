@@ -66,7 +66,7 @@ board manifest `bbcmicrobit.json <https://github.com/platformio/platform-nordicn
 
 Uploading
 ---------
-BBC micro:bit supports the next uploading protocols:
+BBC micro:bit supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

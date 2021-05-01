@@ -66,7 +66,7 @@ board manifest `frogboard.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-Frog Board ESP32 supports the next uploading protocols:
+Frog Board ESP32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

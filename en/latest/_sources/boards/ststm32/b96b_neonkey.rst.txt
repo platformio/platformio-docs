@@ -66,7 +66,7 @@ board manifest `b96b_neonkey.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-96Boards Neonkey supports the next uploading protocols:
+96Boards Neonkey supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

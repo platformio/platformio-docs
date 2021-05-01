@@ -66,7 +66,7 @@ board manifest `zero.json <https://github.com/platformio/platform-atmelsam/blob/
 
 Uploading
 ---------
-Arduino Zero (Programming/Debug Port) supports the next uploading protocols:
+Arduino Zero (Programming/Debug Port) supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

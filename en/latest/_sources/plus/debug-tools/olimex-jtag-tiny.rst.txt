@@ -106,6 +106,9 @@ Platforms
     * - :ref:`platform_kendryte210`
       - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
+    * - :ref:`platform_openhw`
+      - OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.
+
     * - :ref:`platform_sifive`
       - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
@@ -134,6 +137,12 @@ Frameworks
 
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
+
+    * - :ref:`framework_pulp-runtime`
+      - Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
+
+    * - :ref:`framework_pulp-sdk`
+      - Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
 
     * - :ref:`framework_simba`
       - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
@@ -238,6 +247,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_openhw_nexys_a7`
+      - :ref:`platform_openhw`
+      - On-board
+      - 
+      - 320MHz
+      - 16MB
+      - 1.16MB
     * - :ref:`board_espressif32_pocket_32`
       - :ref:`platform_espressif32`
       - External

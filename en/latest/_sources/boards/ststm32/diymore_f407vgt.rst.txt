@@ -66,7 +66,7 @@ board manifest `diymore_f407vgt.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-F407VG supports the next uploading protocols:
+F407VG supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

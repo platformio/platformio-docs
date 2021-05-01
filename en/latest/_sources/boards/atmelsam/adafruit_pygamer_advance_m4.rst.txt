@@ -66,7 +66,7 @@ board manifest `adafruit_pygamer_advance_m4.json <https://github.com/platformio/
 
 Uploading
 ---------
-Adafruit PyGamer Advance M4 supports the next uploading protocols:
+Adafruit PyGamer Advance M4 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

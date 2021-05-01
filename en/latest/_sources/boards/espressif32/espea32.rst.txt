@@ -66,7 +66,7 @@ board manifest `espea32.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-April Brother ESPea32 supports the next uploading protocols:
+April Brother ESPea32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

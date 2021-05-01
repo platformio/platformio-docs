@@ -66,7 +66,7 @@ board manifest `esp-wrover-kit.json <https://github.com/platformio/platform-espr
 
 Uploading
 ---------
-Espressif ESP-WROVER-KIT supports the next uploading protocols:
+Espressif ESP-WROVER-KIT supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

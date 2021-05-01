@@ -66,7 +66,7 @@ board manifest `OpenRTK.json <https://github.com/aceinna/platform-aceinna_imu/bl
 
 Uploading
 ---------
-Aceinna OpenIMU 330ZA supports the next uploading protocols:
+Aceinna OpenIMU 330ZA supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

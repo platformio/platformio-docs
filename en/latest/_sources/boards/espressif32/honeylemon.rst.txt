@@ -66,7 +66,7 @@ board manifest `honeylemon.json <https://github.com/platformio/platform-espressi
 
 Uploading
 ---------
-HONEYLemon supports the next uploading protocols:
+HONEYLemon supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

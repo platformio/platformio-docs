@@ -66,7 +66,7 @@ board manifest `blueboard_lpc11u24.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-NGX Technologies BlueBoard-LPC11U24 supports the next uploading protocols:
+NGX Technologies BlueBoard-LPC11U24 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

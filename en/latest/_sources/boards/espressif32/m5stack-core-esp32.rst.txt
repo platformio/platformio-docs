@@ -66,7 +66,7 @@ board manifest `m5stack-core-esp32.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-M5Stack Core ESP32 supports the next uploading protocols:
+M5Stack Core ESP32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `nucleo_l432kc.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo L432KC supports the next uploading protocols:
+ST Nucleo L432KC supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `nano33ble.json <https://github.com/platformio/platform-nordicnrf
 
 Uploading
 ---------
-Arduino Nano 33 BLE supports the next uploading protocols:
+Arduino Nano 33 BLE supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

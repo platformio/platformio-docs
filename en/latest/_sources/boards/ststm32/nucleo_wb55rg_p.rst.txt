@@ -66,7 +66,7 @@ board manifest `nucleo_wb55rg_p.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-P-Nucleo WB55RG supports the next uploading protocols:
+P-Nucleo WB55RG supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

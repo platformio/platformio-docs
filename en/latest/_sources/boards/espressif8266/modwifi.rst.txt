@@ -66,7 +66,7 @@ board manifest `modwifi.json <https://github.com/platformio/platform-espressif82
 
 Uploading
 ---------
-Olimex MOD-WIFI-ESP8266(-DEV) supports the next uploading protocols:
+Olimex MOD-WIFI-ESP8266(-DEV) supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

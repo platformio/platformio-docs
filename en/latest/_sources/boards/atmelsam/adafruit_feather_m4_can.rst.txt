@@ -66,7 +66,7 @@ board manifest `adafruit_feather_m4_can.json <https://github.com/platformio/plat
 
 Uploading
 ---------
-Adafruit Feather M4 CAN supports the next uploading protocols:
+Adafruit Feather M4 CAN supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

@@ -66,7 +66,7 @@ board manifest `espduino.json <https://github.com/platformio/platform-espressif8
 
 Uploading
 ---------
-ESPDuino (ESP-13 Module) supports the next uploading protocols:
+ESPDuino (ESP-13 Module) supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

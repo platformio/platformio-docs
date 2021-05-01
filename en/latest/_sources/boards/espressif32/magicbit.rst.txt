@@ -66,7 +66,7 @@ board manifest `magicbit.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-MagicBit supports the next uploading protocols:
+MagicBit supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

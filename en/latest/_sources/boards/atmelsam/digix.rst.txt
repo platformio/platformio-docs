@@ -66,7 +66,7 @@ board manifest `digix.json <https://github.com/platformio/platform-atmelsam/blob
 
 Uploading
 ---------
-Digistump DigiX supports the next uploading protocols:
+Digistump DigiX supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

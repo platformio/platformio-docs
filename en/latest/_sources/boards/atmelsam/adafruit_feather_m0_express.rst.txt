@@ -66,7 +66,7 @@ board manifest `adafruit_feather_m0_express.json <https://github.com/platformio/
 
 Uploading
 ---------
-Adafruit Feather M0 Express supports the next uploading protocols:
+Adafruit Feather M0 Express supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

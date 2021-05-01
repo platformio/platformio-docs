@@ -66,7 +66,7 @@ board manifest `esp32-poe-iso.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-OLIMEX ESP32-PoE-ISO supports the next uploading protocols:
+OLIMEX ESP32-PoE-ISO supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

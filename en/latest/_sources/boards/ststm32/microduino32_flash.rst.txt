@@ -66,7 +66,7 @@ board manifest `microduino32_flash.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Microduino Core STM32 to Flash supports the next uploading protocols:
+Microduino Core STM32 to Flash supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

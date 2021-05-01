@@ -66,7 +66,7 @@ board manifest `esp32doit-espduino.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-DOIT ESPduino32 supports the next uploading protocols:
+DOIT ESPduino32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

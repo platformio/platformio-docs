@@ -66,7 +66,7 @@ board manifest `frdm_k64f.json <https://github.com/platformio/platform-freescale
 
 Uploading
 ---------
-Freescale Kinetis FRDM-K64F supports the next uploading protocols:
+Freescale Kinetis FRDM-K64F supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

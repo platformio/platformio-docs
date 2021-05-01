@@ -66,7 +66,7 @@ board manifest `efm32wg_stk3800.json <https://github.com/platformio/platform-sil
 
 Uploading
 ---------
-EFM32WG-STK3800 Wonder Gecko supports the next uploading protocols:
+EFM32WG-STK3800 Wonder Gecko supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

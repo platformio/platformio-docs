@@ -66,7 +66,7 @@ board manifest `adafruit_gemma_m0.json <https://github.com/platformio/platform-a
 
 Uploading
 ---------
-Adafruit Gemma M0 supports the next uploading protocols:
+Adafruit Gemma M0 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

@@ -66,7 +66,7 @@ board manifest `malyanm300_f070cb.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-M300 supports the next uploading protocols:
+M300 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

@@ -66,7 +66,7 @@ board manifest `heltec_wifi_kit_32.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Heltec WiFi Kit 32 supports the next uploading protocols:
+Heltec WiFi Kit 32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

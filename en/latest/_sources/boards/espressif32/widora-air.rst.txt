@@ -66,7 +66,7 @@ board manifest `widora-air.json <https://github.com/platformio/platform-espressi
 
 Uploading
 ---------
-Widora AIR supports the next uploading protocols:
+Widora AIR supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

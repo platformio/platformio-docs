@@ -66,7 +66,7 @@ board manifest `espectro32.json <https://github.com/platformio/platform-espressi
 
 Uploading
 ---------
-ESPectro32 supports the next uploading protocols:
+ESPectro32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

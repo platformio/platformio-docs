@@ -66,7 +66,7 @@ board manifest `turta_iot_node.json <https://github.com/platformio/platform-espr
 
 Uploading
 ---------
-Turta IoT Node supports the next uploading protocols:
+Turta IoT Node supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

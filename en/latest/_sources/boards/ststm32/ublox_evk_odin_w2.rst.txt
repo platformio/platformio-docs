@@ -66,7 +66,7 @@ board manifest `ublox_evk_odin_w2.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-u-blox EVK-ODIN-W2 supports the next uploading protocols:
+u-blox EVK-ODIN-W2 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `malyanm200_f103cb.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-Malyan M200 V1 supports the next uploading protocols:
+Malyan M200 V1 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `genericSTM32F410C8.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F410C8 (32k RAM. 64k Flash) supports the next uploading protocols:
+STM32F410C8 (32k RAM. 64k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

@@ -66,7 +66,7 @@ board manifest `steval_fcu001v1.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-STEVAL-FCU001V1 Flight controller unit evaluation board supports the next uploading protocols:
+STEVAL-FCU001V1 Flight controller unit evaluation board supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

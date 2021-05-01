@@ -66,7 +66,7 @@ board manifest `frdm_kl27z.json <https://github.com/platformio/platform-freescal
 
 Uploading
 ---------
-Freescale Kinetis FRDM-KL27Z supports the next uploading protocols:
+Freescale Kinetis FRDM-KL27Z supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

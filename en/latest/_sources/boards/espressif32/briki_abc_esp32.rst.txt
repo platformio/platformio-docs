@@ -66,7 +66,7 @@ board manifest `briki_abc_esp32.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-Briki ABC (MBC-WB) - ESP32 supports the next uploading protocols:
+Briki ABC (MBC-WB) - ESP32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``iot-bus-jtag``

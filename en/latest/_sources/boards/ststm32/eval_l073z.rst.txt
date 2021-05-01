@@ -66,7 +66,7 @@ board manifest `eval_l073z.json <https://github.com/platformio/platform-ststm32/
 
 Uploading
 ---------
-ST STM32L073Z-EVAL supports the next uploading protocols:
+ST STM32L073Z-EVAL supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

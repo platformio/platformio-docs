@@ -66,7 +66,7 @@ board manifest `oak.json <https://github.com/platformio/platform-espressif8266/b
 
 Uploading
 ---------
-DigiStump Oak supports the next uploading protocols:
+DigiStump Oak supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

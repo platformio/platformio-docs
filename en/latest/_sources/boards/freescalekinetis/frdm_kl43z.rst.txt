@@ -66,7 +66,7 @@ board manifest `frdm_kl43z.json <https://github.com/platformio/platform-freescal
 
 Uploading
 ---------
-Freescale Kinetis FRDM-KL43Z supports the next uploading protocols:
+Freescale Kinetis FRDM-KL43Z supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

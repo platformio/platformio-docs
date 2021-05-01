@@ -66,7 +66,7 @@ board manifest `mkrgsm1400.json <https://github.com/platformio/platform-atmelsam
 
 Uploading
 ---------
-Arduino MKR GSM 1400 supports the next uploading protocols:
+Arduino MKR GSM 1400 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

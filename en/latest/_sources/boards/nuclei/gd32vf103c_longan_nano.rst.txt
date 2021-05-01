@@ -66,7 +66,7 @@ board manifest `gd32vf103c_longan_nano.json <https://github.com/Nuclei-Software/
 
 Uploading
 ---------
-Sipeed Longan Nano supports the next uploading protocols:
+Sipeed Longan Nano supports the following uploading protocols:
 
 * ``altera-usb-blaster``
 * ``gd-link``

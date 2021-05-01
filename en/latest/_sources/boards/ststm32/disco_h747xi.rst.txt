@@ -66,7 +66,7 @@ board manifest `disco_h747xi.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-STM32H747I-DISCO supports the next uploading protocols:
+STM32H747I-DISCO supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

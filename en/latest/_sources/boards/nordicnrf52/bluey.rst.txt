@@ -66,7 +66,7 @@ board manifest `bluey.json <https://github.com/platformio/platform-nordicnrf52/b
 
 Uploading
 ---------
-Bluey nRF52832 IoT supports the next uploading protocols:
+Bluey nRF52832 IoT supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

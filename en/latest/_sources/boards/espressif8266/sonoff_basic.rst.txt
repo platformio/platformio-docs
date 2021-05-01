@@ -66,7 +66,7 @@ board manifest `sonoff_basic.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-Sonoff Basic supports the next uploading protocols:
+Sonoff Basic supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `genericSTM32F423RH.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F423RH (320k RAM. 1536k Flash) supports the next uploading protocols:
+STM32F423RH (320k RAM. 1536k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

@@ -131,6 +131,7 @@
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/blackmagic.html">Black Magic Probe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/cmsis-dap.html">CMSIS-DAP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/digilent-hs1.html">JTAG-HS1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug-tools/digilent-hs2.html">JTAG-HS2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/esp-prog.html">ESP-Prog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/ftdi.html">FTDI Chip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/gd-link.html">GD-LINK</a></li>
@@ -142,6 +143,7 @@
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/olimex-arm-usb-ocd.html">Olimex ARM-USB-OCD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/olimex-arm-usb-tiny-h.html">Olimex ARM-USB-TINY-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/olimex-jtag-tiny.html">Olimex ARM-USB-TINY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug-tools/ovpsim.html">OVPsim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/qemu.html">QEMU</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/renode.html">Renode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug-tools/rv-link.html">RV-LINK</a></li>
@@ -265,6 +267,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#quirkbot">Quirkbot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rak">RAK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rumba">RUMBA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#raspberry-pi">Raspberry Pi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#raytac">Raytac</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#redbearlab">RedBearLab</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#remram">RemRam</a></li>
@@ -313,7 +316,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#wemos">WEMOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wiznet">WIZNet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#waveshare">Waveshare</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#weact">WeAct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#weact-studio">WeAct Studio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wicked-device">Wicked Device</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wisen">Wisen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xilinx">Xilinx</a></li>
@@ -544,6 +547,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/blackmagic.html">Black Magic Probe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/cmsis-dap.html">CMSIS-DAP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/digilent-hs1.html">JTAG-HS1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debug-tools/digilent-hs2.html">JTAG-HS2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/esp-prog.html">ESP-Prog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/ftdi.html">FTDI Chip</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/gd-link.html">GD-LINK</a></li>
@@ -555,6 +559,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/olimex-arm-usb-ocd.html">Olimex ARM-USB-OCD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/olimex-arm-usb-tiny-h.html">Olimex ARM-USB-TINY-H</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/olimex-jtag-tiny.html">Olimex ARM-USB-TINY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debug-tools/ovpsim.html">OVPsim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/qemu.html">QEMU</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/renode.html">Renode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug-tools/rv-link.html">RV-LINK</a></li>
@@ -648,6 +653,12 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
 <td><p>The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/openhw.html#platform-openhw"><span class="std std-ref">OpenHW Group</span></a></p></td>
+<td><p>OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
+<td><p>RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.</p></td>
+</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../platforms/riscv_gap.html#platform-riscv-gap"><span class="std std-ref">RISC-V GAP</span></a></p></td>
 <td><p>GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.</p></td>
 </tr>
@@ -726,6 +737,12 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/pulp-os.html#framework-pulp-os"><span class="std std-ref">PULP OS</span></a></p></td>
 <td><p>PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/pulp-runtime.html#framework-pulp-runtime"><span class="std std-ref">PULP Runtime Environment</span></a></p></td>
+<td><p>Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/pulp-sdk.html#framework-pulp-sdk"><span class="std std-ref">PULP SDK</span></a></p></td>
+<td><p>Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a></p></td>
 <td><p>STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency</p></td>
@@ -2004,7 +2021,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/portenta_h7_m4.html#board-ststm32-portenta-h7-m4"><span class="std std-ref">Arduino Portenta H7 (M4 core)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/raspberrypi/nanorp2040connect.html#board-raspberrypi-nanorp2040connect"><span class="std std-ref">Arduino Nano RP2040 Connect</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
+<td><p>External</p></td>
+<td><p>RP2040</p></td>
+<td><p>133MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>264KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/portenta_h7_m4.html#board-ststm32-portenta-h7-m4"><span class="std std-ref">Arduino Portenta H7 (M4 core)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -2012,7 +2037,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>287.35KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/portenta_h7_m7.html#board-ststm32-portenta-h7-m7"><span class="std std-ref">Arduino Portenta H7 (M7 core)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/portenta_h7_m7.html#board-ststm32-portenta-h7-m7"><span class="std std-ref">Arduino Portenta H7 (M7 core)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -2020,7 +2045,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>768KB</p></td>
 <td><p>511.35KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/pro8MHzatmega168.html#board-atmelavr-pro8mhzatmega168"><span class="std std-ref">Arduino Pro or Pro Mini ATmega168 (3.3V, 8 MHz)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/pro8MHzatmega168.html#board-atmelavr-pro8mhzatmega168"><span class="std std-ref">Arduino Pro or Pro Mini ATmega168 (3.3V, 8 MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA168</p></td>
@@ -2028,7 +2053,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>14KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/pro16MHzatmega168.html#board-atmelavr-pro16mhzatmega168"><span class="std std-ref">Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/pro16MHzatmega168.html#board-atmelavr-pro16mhzatmega168"><span class="std std-ref">Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA168</p></td>
@@ -2036,7 +2061,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>14KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/pro8MHzatmega328.html#board-atmelavr-pro8mhzatmega328"><span class="std std-ref">Arduino Pro or Pro Mini ATmega328 (3.3V, 8 MHz)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/pro8MHzatmega328.html#board-atmelavr-pro8mhzatmega328"><span class="std std-ref">Arduino Pro or Pro Mini ATmega328 (3.3V, 8 MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -2044,7 +2069,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/pro16MHzatmega328.html#board-atmelavr-pro16mhzatmega328"><span class="std std-ref">Arduino Pro or Pro Mini ATmega328 (5V, 16 MHz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/pro16MHzatmega328.html#board-atmelavr-pro16mhzatmega328"><span class="std std-ref">Arduino Pro or Pro Mini ATmega328 (5V, 16 MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -2052,7 +2077,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/robotControl.html#board-atmelavr-robotcontrol"><span class="std std-ref">Arduino Robot Control</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/robotControl.html#board-atmelavr-robotcontrol"><span class="std std-ref">Arduino Robot Control</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -2060,7 +2085,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/robotMotor.html#board-atmelavr-robotmotor"><span class="std std-ref">Arduino Robot Motor</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/robotMotor.html#board-atmelavr-robotmotor"><span class="std std-ref">Arduino Robot Motor</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -2068,7 +2093,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/tian.html#board-atmelsam-tian"><span class="std std-ref">Arduino Tian</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/tian.html#board-atmelsam-tian"><span class="std std-ref">Arduino Tian</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -2076,7 +2101,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/uno.html#board-atmelavr-uno"><span class="std std-ref">Arduino Uno</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/uno.html#board-atmelavr-uno"><span class="std std-ref">Arduino Uno</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -2084,7 +2109,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/yun.html#board-atmelavr-yun"><span class="std std-ref">Arduino Yun</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/yun.html#board-atmelavr-yun"><span class="std std-ref">Arduino Yun</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -2092,7 +2117,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/yunmini.html#board-atmelavr-yunmini"><span class="std std-ref">Arduino Yun Mini</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/yunmini.html#board-atmelavr-yunmini"><span class="std std-ref">Arduino Yun Mini</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -2100,7 +2125,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/zero.html#board-atmelsam-zero"><span class="std std-ref">Arduino Zero (Programming/Debug Port)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/zero.html#board-atmelsam-zero"><span class="std std-ref">Arduino Zero (Programming/Debug Port)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -2108,7 +2133,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/zeroUSB.html#board-atmelsam-zerousb"><span class="std std-ref">Arduino Zero (USB Native Port)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/zeroUSB.html#board-atmelsam-zerousb"><span class="std std-ref">Arduino Zero (USB Native Port)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -2116,7 +2141,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/mkrvidor4000.html#board-atmelsam-mkrvidor4000"><span class="std std-ref">MKR Vidor 4000</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/mkrvidor4000.html#board-atmelsam-mkrvidor4000"><span class="std std-ref">MKR Vidor 4000</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -2124,7 +2149,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/nano_33_iot.html#board-atmelsam-nano-33-iot"><span class="std std-ref">NANO 33 IoT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/nano_33_iot.html#board-atmelsam-nano-33-iot"><span class="std std-ref">NANO 33 IoT</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -2878,7 +2903,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/chipsalliance/swervolf_nexys.html#board-chipsalliance-swervolf-nexys"><span class="std std-ref">RVfpga: Digilent Nexys A7</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/openhw/nexys_a7.html#board-openhw-nexys-a7"><span class="std std-ref">Digilent Nexys A7</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/openhw.html#platform-openhw"><span class="std std-ref">OpenHW Group</span></a></p></td>
+<td><p>On-board</p></td>
+<td></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>1.16MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/chipsalliance/swervolf_nexys.html#board-chipsalliance-swervolf-nexys"><span class="std std-ref">RVfpga: Digilent Nexys A7</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/chipsalliance.html#platform-chipsalliance"><span class="std std-ref">CHIPS Alliance</span></a></p></td>
 <td><p>On-board</p></td>
 <td></td>
@@ -6903,6 +6936,40 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </div>
+<div class="section" id="raspberry-pi">
+<h3>Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/raspberrypi/pico.html#board-raspberrypi-pico"><span class="std std-ref">Raspberry Pi Pico</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
+<td><p>External</p></td>
+<td><p>RP2040</p></td>
+<td><p>133MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>264KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="raytac">
 <h3>Raytac<a class="headerlink" href="#raytac" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
@@ -7518,22 +7585,6 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401cc.html#board-ststm32-blackpill-f401cc"><span class="std std-ref">BlackPill F401CC</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM32F401CCU6</p></td>
-<td><p>84MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>64KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">BlackPill F401CE</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM32F401CEU6</p></td>
-<td><p>84MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>96KB</p></td>
-</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blue_f407ve_mini.html#board-ststm32-blue-f407ve-mini"><span class="std std-ref">Blue STM32F407VE Mini</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
@@ -7998,7 +8049,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>128KB</p></td>
 <td><p>40KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l412rb_p.html#board-ststm32-nucleo-l412rb-p"><span class="std std-ref">ST Nucleo L412RB-P</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L412RBT6P</p></td>
+<td><p>80MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>40KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L432KCU6</p></td>
@@ -8006,7 +8065,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L433RC</p></td>
@@ -8014,7 +8073,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l452re.html#board-ststm32-nucleo-l452re"><span class="std std-ref">ST Nucleo L452RE</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l452re.html#board-ststm32-nucleo-l452re"><span class="std std-ref">ST Nucleo L452RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L452RET6</p></td>
@@ -8022,7 +8081,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L476RGT6</p></td>
@@ -8030,7 +8089,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l486rg.html#board-ststm32-nucleo-l486rg"><span class="std std-ref">ST Nucleo L486RG</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l486rg.html#board-ststm32-nucleo-l486rg"><span class="std std-ref">ST Nucleo L486RG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L486RGT6</p></td>
@@ -8038,7 +8097,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L496ZGT6</p></td>
@@ -8046,7 +8105,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg_p.html#board-ststm32-nucleo-l496zg-p"><span class="std std-ref">ST Nucleo L496ZG-P</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg_p.html#board-ststm32-nucleo-l496zg-p"><span class="std std-ref">ST Nucleo L496ZG-P</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L496ZGT6P</p></td>
@@ -8054,7 +8113,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L4R5ZIT6</p></td>
@@ -8062,7 +8121,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>2MB</p></td>
 <td><p>640KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f030r8.html#board-ststm32-disco-f030r8"><span class="std std-ref">ST STM32F0308DISCOVERY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f030r8.html#board-ststm32-disco-f030r8"><span class="std std-ref">ST STM32F0308DISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F030R8T6</p></td>
@@ -8070,7 +8129,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>64KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f051r8.html#board-ststm32-disco-f051r8"><span class="std std-ref">ST STM32F0DISCOVERY</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f051r8.html#board-ststm32-disco-f051r8"><span class="std std-ref">ST STM32F0DISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F051R8T6</p></td>
@@ -8078,7 +8137,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>64KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f303vc.html#board-ststm32-disco-f303vc"><span class="std std-ref">ST STM32F3DISCOVERY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f303vc.html#board-ststm32-disco-f303vc"><span class="std std-ref">ST STM32F3DISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F303VCT6</p></td>
@@ -8086,7 +8145,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>48KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f407vg.html#board-ststm32-disco-f407vg"><span class="std std-ref">ST STM32F4DISCOVERY</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f407vg.html#board-ststm32-disco-f407vg"><span class="std std-ref">ST STM32F4DISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F407VGT6</p></td>
@@ -8094,7 +8153,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_g031j6.html#board-ststm32-disco-g031j6"><span class="std std-ref">ST STM32G0316-DISCO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_g031j6.html#board-ststm32-disco-g031j6"><span class="std std-ref">ST STM32G0316-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32G031J6</p></td>
@@ -8102,7 +8161,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>128KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/eval_l073z.html#board-ststm32-eval-l073z"><span class="std std-ref">ST STM32L073Z-EVAL</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/eval_l073z.html#board-ststm32-eval-l073z"><span class="std std-ref">ST STM32L073Z-EVAL</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L073VZT6</p></td>
@@ -8110,7 +8169,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>192KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_l152rb.html#board-ststm32-disco-l152rb"><span class="std std-ref">ST STM32LDISCOVERY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_l152rb.html#board-ststm32-disco-l152rb"><span class="std std-ref">ST STM32LDISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L152RBT6</p></td>
@@ -8118,7 +8177,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f100rb.html#board-ststm32-disco-f100rb"><span class="std std-ref">ST STM32VLDISCOVERY</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f100rb.html#board-ststm32-disco-f100rb"><span class="std std-ref">ST STM32VLDISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F100RBT6</p></td>
@@ -8126,7 +8185,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>128KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8sdisco.html#board-ststm8-stm8sdisco"><span class="std std-ref">ST STM8S-DISCOVERY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sdisco.html#board-ststm8-stm8sdisco"><span class="std std-ref">ST STM8S-DISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM8S105C6T6</p></td>
@@ -8134,7 +8193,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8s003f3.html#board-ststm8-stm8s003f3"><span class="std std-ref">ST STM8S003F3 chip</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8s003f3.html#board-ststm8-stm8s003f3"><span class="std std-ref">ST STM8S003F3 chip</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM8S003F3P6</p></td>
@@ -8142,7 +8201,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>8KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblue.html#board-ststm8-stm8sblue"><span class="std std-ref">ST STM8S103F3 Breakout Board</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblue.html#board-ststm8-stm8sblue"><span class="std std-ref">ST STM8S103F3 Breakout Board</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM8S103F3P6</p></td>
@@ -8150,7 +8209,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>8KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblack.html#board-ststm8-stm8sblack"><span class="std std-ref">ST STM8S105K4T6 Breakout Board</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8sblack.html#board-ststm8-stm8sblack"><span class="std std-ref">ST STM8S105K4T6 Breakout Board</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM8S105K4T6</p></td>
@@ -8158,7 +8217,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>16KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/steval_fcu001v1.html#board-ststm32-steval-fcu001v1"><span class="std std-ref">STEVAL-FCU001V1 Flight controller unit evaluation board</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/steval_fcu001v1.html#board-ststm32-steval-fcu001v1"><span class="std std-ref">STEVAL-FCU001V1 Flight controller unit evaluation board</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401CCU6</p></td>
@@ -8166,7 +8225,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/eval_f107vc.html#board-ststm32-eval-f107vc"><span class="std std-ref">STM3210C-EVAL</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/eval_f107vc.html#board-ststm32-eval-f107vc"><span class="std std-ref">STM3210C-EVAL</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F107VCT6</p></td>
@@ -8174,7 +8233,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/eval_f373vc.html#board-ststm32-eval-f373vc"><span class="std std-ref">STM32373C-EVAL</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/eval_f373vc.html#board-ststm32-eval-f373vc"><span class="std std-ref">STM32373C-EVAL</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F373VCT6</p></td>
@@ -8182,7 +8241,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/eval_f072vb.html#board-ststm32-eval-f072vb"><span class="std std-ref">STM32F072-EVAL</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/eval_f072vb.html#board-ststm32-eval-f072vb"><span class="std std-ref">STM32F072-EVAL</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F072VBT6</p></td>
@@ -8190,7 +8249,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f750n8.html#board-ststm32-disco-f750n8"><span class="std std-ref">STM32F7508-DK</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f750n8.html#board-ststm32-disco-f750n8"><span class="std std-ref">STM32F7508-DK</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F750N8H6</p></td>
@@ -8198,7 +8257,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>64KB</p></td>
 <td><p>340KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -8206,7 +8265,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/steval_mksboxv1.html#board-ststm32-steval-mksboxv1"><span class="std std-ref">SensorTile.box</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/steval_mksboxv1.html#board-ststm32-steval-mksboxv1"><span class="std std-ref">SensorTile.box</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32L4R9ZI</p></td>
@@ -10207,8 +10266,8 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="weact">
-<h3>WeAct<a class="headerlink" href="#weact" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="weact-studio">
+<h3>WeAct Studio<a class="headerlink" href="#weact-studio" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 14%" />
@@ -10230,13 +10289,29 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct BlackPill V2.0 (BlackPill F411CE)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401cc.html#board-ststm32-blackpill-f401cc"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F401CC)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F401CCU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F411CE)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F411CEU6</p></td>
 <td><p>100MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">WeAct Studio BlackPill V3.0 (STM32F401CE)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F401CEU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
 </tr>
 </tbody>
 </table>

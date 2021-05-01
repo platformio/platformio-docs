@@ -66,7 +66,7 @@ board manifest `coreboard_f401rc.json <https://github.com/platformio/platform-st
 
 Uploading
 ---------
-Core board F401RCT6 supports the next uploading protocols:
+Core board F401RCT6 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

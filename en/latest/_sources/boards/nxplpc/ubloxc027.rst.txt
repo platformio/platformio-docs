@@ -66,7 +66,7 @@ board manifest `ubloxc027.json <https://github.com/platformio/platform-nxplpc/bl
 
 Uploading
 ---------
-u-blox C027 supports the next uploading protocols:
+u-blox C027 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

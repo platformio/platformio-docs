@@ -66,7 +66,7 @@ board manifest `seeed_xiao.json <https://github.com/platformio/platform-atmelsam
 
 Uploading
 ---------
-Seeeduino XIAO supports the next uploading protocols:
+Seeeduino XIAO supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

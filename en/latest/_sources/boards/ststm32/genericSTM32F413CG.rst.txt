@@ -66,7 +66,7 @@ board manifest `genericSTM32F413CG.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F413CG (320k RAM. 1024k Flash) supports the next uploading protocols:
+STM32F413CG (320k RAM. 1024k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

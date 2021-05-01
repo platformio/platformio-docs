@@ -66,7 +66,7 @@ board manifest `mkr1000USB.json <https://github.com/platformio/platform-atmelsam
 
 Uploading
 ---------
-Arduino MKR1000 supports the next uploading protocols:
+Arduino MKR1000 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

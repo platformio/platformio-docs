@@ -66,7 +66,7 @@ board manifest `mzeropro.json <https://github.com/platformio/platform-atmelsam/b
 
 Uploading
 ---------
-Arduino M0 Pro (Programming/Debug Port) supports the next uploading protocols:
+Arduino M0 Pro (Programming/Debug Port) supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

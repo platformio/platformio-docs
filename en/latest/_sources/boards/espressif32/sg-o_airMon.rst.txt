@@ -66,7 +66,7 @@ board manifest `sg-o_airMon.json <https://github.com/platformio/platform-espress
 
 Uploading
 ---------
-SG-O AirMon supports the next uploading protocols:
+SG-O AirMon supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

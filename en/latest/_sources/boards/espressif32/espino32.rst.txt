@@ -66,7 +66,7 @@ board manifest `espino32.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-ESPino32 supports the next uploading protocols:
+ESPino32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

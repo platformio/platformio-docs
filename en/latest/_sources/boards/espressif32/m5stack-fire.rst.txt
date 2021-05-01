@@ -66,7 +66,7 @@ board manifest `m5stack-fire.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-M5Stack FIRE supports the next uploading protocols:
+M5Stack FIRE supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -873,6 +873,23 @@ NXP LPC
     nxplpc/ubloxc027
     nxplpc/lpc11u35_y5_mbug
 
+OpenHW Group
+------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    openhw/nexys_a7
+
+Raspberry Pi RP2040
+-------------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    raspberrypi/nanorp2040connect
+    raspberrypi/pico
+
 RISC-V GAP
 ----------
 
@@ -952,8 +969,6 @@ ST STM32
     ststm32/blackpill_f103c8
     ststm32/blackpill_f103c8_128
     ststm32/robotdyn_blackpill_f303cc
-    ststm32/blackpill_f401cc
-    ststm32/blackpill_f401ce
     ststm32/blue_f407ve_mini
     ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
@@ -1057,6 +1072,7 @@ ST STM32
     ststm32/nucleo_l073rz
     ststm32/nucleo_l152re
     ststm32/nucleo_l412kb
+    ststm32/nucleo_l412rb_p
     ststm32/nucleo_l432kc
     ststm32/nucleo_l433rc_p
     ststm32/nucleo_l452re
@@ -1159,7 +1175,9 @@ ST STM32
     ststm32/vake_v1
     ststm32/vccgnd_f103zet6
     ststm32/waveshare_open103z
+    ststm32/blackpill_f401cc
     ststm32/blackpill_f411ce
+    ststm32/blackpill_f401ce
     ststm32/wraith32_v1
     ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211

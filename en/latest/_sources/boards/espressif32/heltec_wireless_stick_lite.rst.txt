@@ -66,7 +66,7 @@ board manifest `heltec_wireless_stick_lite.json <https://github.com/platformio/p
 
 Uploading
 ---------
-Heltec Wireless Stick Lite supports the next uploading protocols:
+Heltec Wireless Stick Lite supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

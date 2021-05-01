@@ -66,7 +66,7 @@ board manifest `adafruit_clue_nrf52840.json <https://github.com/platformio/platf
 
 Uploading
 ---------
-Adafruit CLUE nRF52840 supports the next uploading protocols:
+Adafruit CLUE nRF52840 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

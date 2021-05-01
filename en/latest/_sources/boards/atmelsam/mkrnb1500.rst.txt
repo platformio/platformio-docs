@@ -66,7 +66,7 @@ board manifest `mkrnb1500.json <https://github.com/platformio/platform-atmelsam/
 
 Uploading
 ---------
-Arduino MKR NB 1500 supports the next uploading protocols:
+Arduino MKR NB 1500 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

@@ -66,7 +66,7 @@ board manifest `olimexino.json <https://github.com/platformio/platform-ststm32/b
 
 Uploading
 ---------
-OLIMEXINO-STM32 supports the next uploading protocols:
+OLIMEXINO-STM32 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

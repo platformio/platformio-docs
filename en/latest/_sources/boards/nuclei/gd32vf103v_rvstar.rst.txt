@@ -66,7 +66,7 @@ board manifest `gd32vf103v_rvstar.json <https://github.com/Nuclei-Software/platf
 
 Uploading
 ---------
-GD32VF103V RVStar Kit supports the next uploading protocols:
+GD32VF103V RVStar Kit supports the following uploading protocols:
 
 * ``altera-usb-blaster``
 * ``gd-link``

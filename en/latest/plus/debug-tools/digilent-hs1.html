@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ESP-Prog" href="esp-prog.html" />
+    <link rel="next" title="JTAG-HS2" href="digilent-hs2.html" />
     <link rel="prev" title="CMSIS-DAP" href="cmsis-dap.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
@@ -133,6 +133,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#boards">Boards</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="digilent-hs2.html">JTAG-HS2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp-prog.html">ESP-Prog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ftdi.html">FTDI Chip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gd-link.html">GD-LINK</a></li>
@@ -144,6 +145,7 @@
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd.html">Olimex ARM-USB-OCD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-tiny-h.html">Olimex ARM-USB-TINY-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-jtag-tiny.html">Olimex ARM-USB-TINY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ovpsim.html">OVPsim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="qemu.html">QEMU</a></li>
 <li class="toctree-l3"><a class="reference internal" href="renode.html">Renode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rv-link.html">RV-LINK</a></li>
@@ -321,6 +323,9 @@ upload protocol:</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../../platforms/chipsalliance.html#platform-chipsalliance"><span class="std std-ref">CHIPS Alliance</span></a></p></td>
 <td><p>The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../platforms/openhw.html#platform-openhw"><span class="std std-ref">OpenHW Group</span></a></p></td>
+<td><p>OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -339,6 +344,12 @@ upload protocol:</p>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/freertos.html#framework-freertos"><span class="std std-ref">FreeRTOS</span></a></p></td>
 <td><p>FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/pulp-runtime.html#framework-pulp-runtime"><span class="std std-ref">PULP Runtime Environment</span></a></p></td>
+<td><p>Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/pulp-sdk.html#framework-pulp-sdk"><span class="std std-ref">PULP SDK</span></a></p></td>
+<td><p>Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/wd-riscv-sdk.html#framework-wd-riscv-sdk"><span class="std std-ref">WD-Firmware</span></a></p></td>
 <td><p>The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features</p></td>
@@ -376,7 +387,15 @@ upload protocol:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/chipsalliance/swervolf_nexys.html#board-chipsalliance-swervolf-nexys"><span class="std std-ref">RVfpga: Digilent Nexys A7</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/openhw/nexys_a7.html#board-openhw-nexys-a7"><span class="std std-ref">Digilent Nexys A7</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/openhw.html#platform-openhw"><span class="std std-ref">OpenHW Group</span></a></p></td>
+<td><p>On-board</p></td>
+<td></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>1.16MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/chipsalliance/swervolf_nexys.html#board-chipsalliance-swervolf-nexys"><span class="std std-ref">RVfpga: Digilent Nexys A7</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/chipsalliance.html#platform-chipsalliance"><span class="std std-ref">CHIPS Alliance</span></a></p></td>
 <td><p>On-board</p></td>
 <td></td>
@@ -395,7 +414,7 @@ upload protocol:</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="esp-prog.html" class="btn btn-neutral float-right" title="ESP-Prog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="digilent-hs2.html" class="btn btn-neutral float-right" title="JTAG-HS2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="cmsis-dap.html" class="btn btn-neutral float-left" title="CMSIS-DAP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

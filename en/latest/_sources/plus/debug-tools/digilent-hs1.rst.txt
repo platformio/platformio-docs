@@ -65,6 +65,9 @@ Platforms
     * - :ref:`platform_chipsalliance`
       - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
 
+    * - :ref:`platform_openhw`
+      - OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.
+
 Frameworks
 ----------
 .. list-table::
@@ -75,6 +78,12 @@ Frameworks
 
     * - :ref:`framework_freertos`
       - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+
+    * - :ref:`framework_pulp-runtime`
+      - Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
+
+    * - :ref:`framework_pulp-sdk`
+      - Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
 
     * - :ref:`framework_wd-riscv-sdk`
       - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
@@ -99,6 +108,13 @@ Boards
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_openhw_nexys_a7`
+      - :ref:`platform_openhw`
+      - On-board
+      - 
+      - 320MHz
+      - 16MB
+      - 1.16MB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board

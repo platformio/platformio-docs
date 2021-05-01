@@ -66,7 +66,7 @@ board manifest `phoenix_v2.json <https://github.com/platformio/platform-espressi
 
 Uploading
 ---------
-Phoenix 2.0 supports the next uploading protocols:
+Phoenix 2.0 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

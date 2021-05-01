@@ -66,7 +66,7 @@ board manifest `OpenIMU300.json <https://github.com/aceinna/platform-aceinna_imu
 
 Uploading
 ---------
-Aceinna OpenIMU 300 supports the next uploading protocols:
+Aceinna OpenIMU 300 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

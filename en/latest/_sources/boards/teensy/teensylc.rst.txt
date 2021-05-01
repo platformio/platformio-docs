@@ -66,7 +66,7 @@ board manifest `teensylc.json <https://github.com/platformio/platform-teensy/blo
 
 Uploading
 ---------
-Teensy LC supports the next uploading protocols:
+Teensy LC supports the following uploading protocols:
 
 * ``jlink``
 * ``teensy-cli``

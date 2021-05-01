@@ -66,7 +66,7 @@ board manifest `moteino_zero.json <https://github.com/platformio/platform-atmels
 
 Uploading
 ---------
-Moteino M0 supports the next uploading protocols:
+Moteino M0 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

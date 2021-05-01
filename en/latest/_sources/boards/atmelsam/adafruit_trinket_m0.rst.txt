@@ -66,7 +66,7 @@ board manifest `adafruit_trinket_m0.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-Adafruit Trinket M0 supports the next uploading protocols:
+Adafruit Trinket M0 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

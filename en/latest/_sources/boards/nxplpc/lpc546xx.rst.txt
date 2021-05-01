@@ -66,7 +66,7 @@ board manifest `lpc546xx.json <https://github.com/platformio/platform-nxplpc/blo
 
 Uploading
 ---------
-NXP LPCXpresso54608 supports the next uploading protocols:
+NXP LPCXpresso54608 supports the following uploading protocols:
 
 * ``jlink``
 * ``mbed``

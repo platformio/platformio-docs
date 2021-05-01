@@ -66,7 +66,7 @@ board manifest `espectro.json <https://github.com/platformio/platform-espressif8
 
 Uploading
 ---------
-ESPectro Core supports the next uploading protocols:
+ESPectro Core supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

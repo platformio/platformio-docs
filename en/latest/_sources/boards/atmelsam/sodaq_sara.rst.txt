@@ -66,7 +66,7 @@ board manifest `sodaq_sara.json <https://github.com/platformio/platform-atmelsam
 
 Uploading
 ---------
-SODAQ SARA supports the next uploading protocols:
+SODAQ SARA supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

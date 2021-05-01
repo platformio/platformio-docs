@@ -66,7 +66,7 @@ board manifest `esp32-gateway.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-OLIMEX ESP32-GATEWAY supports the next uploading protocols:
+OLIMEX ESP32-GATEWAY supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

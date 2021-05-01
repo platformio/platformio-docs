@@ -66,7 +66,7 @@ board manifest `stct_nrf52_minidev.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Taida Century nRF52 mini board supports the next uploading protocols:
+Taida Century nRF52 mini board supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

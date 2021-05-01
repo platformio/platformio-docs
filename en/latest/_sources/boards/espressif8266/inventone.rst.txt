@@ -66,7 +66,7 @@ board manifest `inventone.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-Invent One supports the next uploading protocols:
+Invent One supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

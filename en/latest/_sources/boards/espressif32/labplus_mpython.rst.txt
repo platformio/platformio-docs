@@ -66,7 +66,7 @@ board manifest `labplus_mpython.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-Labplus mPython supports the next uploading protocols:
+Labplus mPython supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

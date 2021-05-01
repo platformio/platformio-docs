@@ -66,7 +66,7 @@ board manifest `waveshare_open103z.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Waveshare Open103Z supports the next uploading protocols:
+Waveshare Open103Z supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

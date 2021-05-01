@@ -66,7 +66,7 @@ board manifest `seeed_wio_lite_mg126.json <https://github.com/platformio/platfor
 
 Uploading
 ---------
-Seeeduino Wio Lite MG126 supports the next uploading protocols:
+Seeeduino Wio Lite MG126 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

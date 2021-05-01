@@ -66,7 +66,7 @@ board manifest `esp07.json <https://github.com/platformio/platform-espressif8266
 
 Uploading
 ---------
-Espressif Generic ESP8266 ESP-07 1MB supports the next uploading protocols:
+Espressif Generic ESP8266 ESP-07 1MB supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

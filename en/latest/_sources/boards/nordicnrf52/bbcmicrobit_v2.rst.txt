@@ -66,7 +66,7 @@ board manifest `bbcmicrobit_v2.json <https://github.com/platformio/platform-nord
 
 Uploading
 ---------
-BBC micro:bit V2 supports the next uploading protocols:
+BBC micro:bit V2 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

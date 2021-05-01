@@ -66,7 +66,7 @@ board manifest `sakuraio_evb_01.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-sakura.io Evaluation Board supports the next uploading protocols:
+sakura.io Evaluation Board supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

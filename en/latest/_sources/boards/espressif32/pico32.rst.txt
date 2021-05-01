@@ -66,7 +66,7 @@ board manifest `pico32.json <https://github.com/platformio/platform-espressif32/
 
 Uploading
 ---------
-ESP32 Pico Kit supports the next uploading protocols:
+ESP32 Pico Kit supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

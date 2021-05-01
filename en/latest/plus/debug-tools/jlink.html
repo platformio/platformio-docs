@@ -127,6 +127,7 @@
 <li class="toctree-l3"><a class="reference internal" href="blackmagic.html">Black Magic Probe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cmsis-dap.html">CMSIS-DAP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="digilent-hs1.html">JTAG-HS1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="digilent-hs2.html">JTAG-HS2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp-prog.html">ESP-Prog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ftdi.html">FTDI Chip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gd-link.html">GD-LINK</a></li>
@@ -146,6 +147,7 @@
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd.html">Olimex ARM-USB-OCD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-tiny-h.html">Olimex ARM-USB-TINY-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-jtag-tiny.html">Olimex ARM-USB-TINY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ovpsim.html">OVPsim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="qemu.html">QEMU</a></li>
 <li class="toctree-l3"><a class="reference internal" href="renode.html">Renode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rv-link.html">RV-LINK</a></li>
@@ -1443,22 +1445,6 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>72MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>40KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/blackpill_f401cc.html#board-ststm32-blackpill-f401cc"><span class="std std-ref">BlackPill F401CC</span></a></p></td>
-<td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM32F401CCU6</p></td>
-<td><p>84MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>64KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">BlackPill F401CE</span></a></p></td>
-<td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM32F401CEU6</p></td>
-<td><p>84MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>96KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/blue_f407ve_mini.html#board-ststm32-blue-f407ve-mini"><span class="std std-ref">Blue STM32F407VE Mini</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -3380,7 +3366,15 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>40KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l412rb_p.html#board-ststm32-nucleo-l412rb-p"><span class="std std-ref">ST Nucleo L412RB-P</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L412RBT6P</p></td>
+<td><p>80MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>40KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L432KCU6</p></td>
@@ -3388,7 +3382,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L433RC</p></td>
@@ -3396,7 +3390,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l452re.html#board-ststm32-nucleo-l452re"><span class="std std-ref">ST Nucleo L452RE</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l452re.html#board-ststm32-nucleo-l452re"><span class="std std-ref">ST Nucleo L452RE</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L452RET6</p></td>
@@ -3404,7 +3398,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L476RGT6</p></td>
@@ -3412,7 +3406,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l486rg.html#board-ststm32-nucleo-l486rg"><span class="std std-ref">ST Nucleo L486RG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l486rg.html#board-ststm32-nucleo-l486rg"><span class="std std-ref">ST Nucleo L486RG</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L486RGT6</p></td>
@@ -3420,7 +3414,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L496ZGT6</p></td>
@@ -3428,7 +3422,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l496zg_p.html#board-ststm32-nucleo-l496zg-p"><span class="std std-ref">ST Nucleo L496ZG-P</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l496zg_p.html#board-ststm32-nucleo-l496zg-p"><span class="std std-ref">ST Nucleo L496ZG-P</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L496ZGT6P</p></td>
@@ -3436,7 +3430,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L4R5ZIT6</p></td>
@@ -3444,7 +3438,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>2MB</p></td>
 <td><p>640KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f030r8.html#board-ststm32-disco-f030r8"><span class="std std-ref">ST STM32F0308DISCOVERY</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f030r8.html#board-ststm32-disco-f030r8"><span class="std std-ref">ST STM32F0308DISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F030R8T6</p></td>
@@ -3452,7 +3446,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f051r8.html#board-ststm32-disco-f051r8"><span class="std std-ref">ST STM32F0DISCOVERY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f051r8.html#board-ststm32-disco-f051r8"><span class="std std-ref">ST STM32F0DISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F051R8T6</p></td>
@@ -3460,7 +3454,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f303vc.html#board-ststm32-disco-f303vc"><span class="std std-ref">ST STM32F3DISCOVERY</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f303vc.html#board-ststm32-disco-f303vc"><span class="std std-ref">ST STM32F3DISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F303VCT6</p></td>
@@ -3468,7 +3462,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>48KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f407vg.html#board-ststm32-disco-f407vg"><span class="std std-ref">ST STM32F4DISCOVERY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f407vg.html#board-ststm32-disco-f407vg"><span class="std std-ref">ST STM32F4DISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F407VGT6</p></td>
@@ -3476,7 +3470,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/disco_g031j6.html#board-ststm32-disco-g031j6"><span class="std std-ref">ST STM32G0316-DISCO</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/disco_g031j6.html#board-ststm32-disco-g031j6"><span class="std std-ref">ST STM32G0316-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32G031J6</p></td>
@@ -3484,7 +3478,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/eval_l073z.html#board-ststm32-eval-l073z"><span class="std std-ref">ST STM32L073Z-EVAL</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/eval_l073z.html#board-ststm32-eval-l073z"><span class="std std-ref">ST STM32L073Z-EVAL</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L073VZT6</p></td>
@@ -3492,7 +3486,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>192KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/disco_l152rb.html#board-ststm32-disco-l152rb"><span class="std std-ref">ST STM32LDISCOVERY</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/disco_l152rb.html#board-ststm32-disco-l152rb"><span class="std std-ref">ST STM32LDISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L152RBT6</p></td>
@@ -3500,7 +3494,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f100rb.html#board-ststm32-disco-f100rb"><span class="std std-ref">ST STM32VLDISCOVERY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f100rb.html#board-ststm32-disco-f100rb"><span class="std std-ref">ST STM32VLDISCOVERY</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F100RBT6</p></td>
@@ -3508,7 +3502,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/silica_sensor_node.html#board-ststm32-silica-sensor-node"><span class="std std-ref">ST Sensor Node</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/silica_sensor_node.html#board-ststm32-silica-sensor-node"><span class="std std-ref">ST Sensor Node</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L476JG</p></td>
@@ -3516,7 +3510,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/steval_fcu001v1.html#board-ststm32-steval-fcu001v1"><span class="std std-ref">STEVAL-FCU001V1 Flight controller unit evaluation board</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/steval_fcu001v1.html#board-ststm32-steval-fcu001v1"><span class="std std-ref">STEVAL-FCU001V1 Flight controller unit evaluation board</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401CCU6</p></td>
@@ -3524,7 +3518,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/olimex_e407.html#board-ststm32-olimex-e407"><span class="std std-ref">STM32-E407</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/olimex_e407.html#board-ststm32-olimex-e407"><span class="std std-ref">STM32-E407</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F407ZGT6</p></td>
@@ -3532,7 +3526,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/olimex_h407.html#board-ststm32-olimex-h407"><span class="std std-ref">STM32-H407</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/olimex_h407.html#board-ststm32-olimex-h407"><span class="std std-ref">STM32-H407</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F407ZGT6</p></td>
@@ -3540,7 +3534,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/eval_f107vc.html#board-ststm32-eval-f107vc"><span class="std std-ref">STM3210C-EVAL</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/eval_f107vc.html#board-ststm32-eval-f107vc"><span class="std std-ref">STM3210C-EVAL</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F107VCT6</p></td>
@@ -3548,7 +3542,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/eval_f373vc.html#board-ststm32-eval-f373vc"><span class="std std-ref">STM32373C-EVAL</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/eval_f373vc.html#board-ststm32-eval-f373vc"><span class="std std-ref">STM32373C-EVAL</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F373VCT6</p></td>
@@ -3556,7 +3550,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/eval_f072vb.html#board-ststm32-eval-f072vb"><span class="std std-ref">STM32F072-EVAL</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/eval_f072vb.html#board-ststm32-eval-f072vb"><span class="std std-ref">STM32F072-EVAL</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F072VBT6</p></td>
@@ -3564,7 +3558,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103C4.html#board-ststm32-genericstm32f103c4"><span class="std std-ref">STM32F103C4 (6k RAM. 16k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103C4.html#board-ststm32-genericstm32f103c4"><span class="std std-ref">STM32F103C4 (6k RAM. 16k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103C4</p></td>
@@ -3572,7 +3566,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16KB</p></td>
 <td><p>6KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103C6.html#board-ststm32-genericstm32f103c6"><span class="std std-ref">STM32F103C6 (10k RAM. 32k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103C6.html#board-ststm32-genericstm32f103c6"><span class="std std-ref">STM32F103C6 (10k RAM. 32k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103C6</p></td>
@@ -3580,7 +3574,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>32KB</p></td>
 <td><p>10KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103C8.html#board-ststm32-genericstm32f103c8"><span class="std std-ref">STM32F103C8 (20k RAM. 64k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103C8.html#board-ststm32-genericstm32f103c8"><span class="std std-ref">STM32F103C8 (20k RAM. 64k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103C8T6</p></td>
@@ -3588,7 +3582,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103CB.html#board-ststm32-genericstm32f103cb"><span class="std std-ref">STM32F103CB (20k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103CB.html#board-ststm32-genericstm32f103cb"><span class="std std-ref">STM32F103CB (20k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103CBT6</p></td>
@@ -3596,7 +3590,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103R4.html#board-ststm32-genericstm32f103r4"><span class="std std-ref">STM32F103R4 (6k RAM. 16k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103R4.html#board-ststm32-genericstm32f103r4"><span class="std std-ref">STM32F103R4 (6k RAM. 16k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103R4</p></td>
@@ -3604,7 +3598,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16KB</p></td>
 <td><p>6KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103R6.html#board-ststm32-genericstm32f103r6"><span class="std std-ref">STM32F103R6 (10k RAM. 32k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103R6.html#board-ststm32-genericstm32f103r6"><span class="std std-ref">STM32F103R6 (10k RAM. 32k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103R6</p></td>
@@ -3612,7 +3606,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>32KB</p></td>
 <td><p>10KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103R8.html#board-ststm32-genericstm32f103r8"><span class="std std-ref">STM32F103R8 (20k RAM. 64 Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103R8.html#board-ststm32-genericstm32f103r8"><span class="std std-ref">STM32F103R8 (20k RAM. 64 Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103R8T6</p></td>
@@ -3620,7 +3614,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RB.html#board-ststm32-genericstm32f103rb"><span class="std std-ref">STM32F103RB (20k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RB.html#board-ststm32-genericstm32f103rb"><span class="std std-ref">STM32F103RB (20k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103RBT6</p></td>
@@ -3628,7 +3622,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RC.html#board-ststm32-genericstm32f103rc"><span class="std std-ref">STM32F103RC (48k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RC.html#board-ststm32-genericstm32f103rc"><span class="std std-ref">STM32F103RC (48k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103RCT6</p></td>
@@ -3636,7 +3630,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>48KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RD.html#board-ststm32-genericstm32f103rd"><span class="std std-ref">STM32F103RD (64k RAM. 384k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RD.html#board-ststm32-genericstm32f103rd"><span class="std std-ref">STM32F103RD (64k RAM. 384k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103RD</p></td>
@@ -3644,7 +3638,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>384KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RE.html#board-ststm32-genericstm32f103re"><span class="std std-ref">STM32F103RE (64k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RE.html#board-ststm32-genericstm32f103re"><span class="std std-ref">STM32F103RE (64k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103RET6</p></td>
@@ -3652,7 +3646,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RF.html#board-ststm32-genericstm32f103rf"><span class="std std-ref">STM32F103RF (96k RAM. 768k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RF.html#board-ststm32-genericstm32f103rf"><span class="std std-ref">STM32F103RF (96k RAM. 768k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103RF</p></td>
@@ -3660,7 +3654,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>768KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RG.html#board-ststm32-genericstm32f103rg"><span class="std std-ref">STM32F103RG (96k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103RG.html#board-ststm32-genericstm32f103rg"><span class="std std-ref">STM32F103RG (96k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103RG</p></td>
@@ -3668,7 +3662,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103T4.html#board-ststm32-genericstm32f103t4"><span class="std std-ref">STM32F103T4 (6k RAM. 16k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103T4.html#board-ststm32-genericstm32f103t4"><span class="std std-ref">STM32F103T4 (6k RAM. 16k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103T4</p></td>
@@ -3676,7 +3670,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16KB</p></td>
 <td><p>6KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103T6.html#board-ststm32-genericstm32f103t6"><span class="std std-ref">STM32F103T6 (10k RAM. 32k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103T6.html#board-ststm32-genericstm32f103t6"><span class="std std-ref">STM32F103T6 (10k RAM. 32k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103T6</p></td>
@@ -3684,7 +3678,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>32KB</p></td>
 <td><p>10KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103T8.html#board-ststm32-genericstm32f103t8"><span class="std std-ref">STM32F103T8 (20k RAM. 64k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103T8.html#board-ststm32-genericstm32f103t8"><span class="std std-ref">STM32F103T8 (20k RAM. 64k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103T8T6</p></td>
@@ -3692,7 +3686,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103TB.html#board-ststm32-genericstm32f103tb"><span class="std std-ref">STM32F103TB (20k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103TB.html#board-ststm32-genericstm32f103tb"><span class="std std-ref">STM32F103TB (20k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103TBT6</p></td>
@@ -3700,7 +3694,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103V8.html#board-ststm32-genericstm32f103v8"><span class="std std-ref">STM32F103V8 (20k RAM. 64k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103V8.html#board-ststm32-genericstm32f103v8"><span class="std std-ref">STM32F103V8 (20k RAM. 64k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103V8</p></td>
@@ -3708,7 +3702,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VB.html#board-ststm32-genericstm32f103vb"><span class="std std-ref">STM32F103VB (20k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VB.html#board-ststm32-genericstm32f103vb"><span class="std std-ref">STM32F103VB (20k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103VBT6</p></td>
@@ -3716,7 +3710,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VC.html#board-ststm32-genericstm32f103vc"><span class="std std-ref">STM32F103VC (48k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VC.html#board-ststm32-genericstm32f103vc"><span class="std std-ref">STM32F103VC (48k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103VCT6</p></td>
@@ -3724,7 +3718,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>48KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VD.html#board-ststm32-genericstm32f103vd"><span class="std std-ref">STM32F103VD (64k RAM. 384k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VD.html#board-ststm32-genericstm32f103vd"><span class="std std-ref">STM32F103VD (64k RAM. 384k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103VDT6</p></td>
@@ -3732,7 +3726,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>384KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VE.html#board-ststm32-genericstm32f103ve"><span class="std std-ref">STM32F103VE (64k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VE.html#board-ststm32-genericstm32f103ve"><span class="std std-ref">STM32F103VE (64k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103VET6</p></td>
@@ -3740,7 +3734,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VF.html#board-ststm32-genericstm32f103vf"><span class="std std-ref">STM32F103VF (96k RAM. 768k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VF.html#board-ststm32-genericstm32f103vf"><span class="std std-ref">STM32F103VF (96k RAM. 768k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103VF</p></td>
@@ -3748,7 +3742,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>768KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VG.html#board-ststm32-genericstm32f103vg"><span class="std std-ref">STM32F103VG (96k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103VG.html#board-ststm32-genericstm32f103vg"><span class="std std-ref">STM32F103VG (96k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103VG</p></td>
@@ -3756,7 +3750,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZC.html#board-ststm32-genericstm32f103zc"><span class="std std-ref">STM32F103ZC (48k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZC.html#board-ststm32-genericstm32f103zc"><span class="std std-ref">STM32F103ZC (48k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103ZCT6</p></td>
@@ -3764,7 +3758,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>48KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZD.html#board-ststm32-genericstm32f103zd"><span class="std std-ref">STM32F103ZD (64k RAM. 384k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZD.html#board-ststm32-genericstm32f103zd"><span class="std std-ref">STM32F103ZD (64k RAM. 384k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103ZDT6</p></td>
@@ -3772,7 +3766,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>384KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZE.html#board-ststm32-genericstm32f103ze"><span class="std std-ref">STM32F103ZE (64k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZE.html#board-ststm32-genericstm32f103ze"><span class="std std-ref">STM32F103ZE (64k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103ZET6</p></td>
@@ -3780,7 +3774,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZF.html#board-ststm32-genericstm32f103zf"><span class="std std-ref">STM32F103ZF (96k RAM. 768k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZF.html#board-ststm32-genericstm32f103zf"><span class="std std-ref">STM32F103ZF (96k RAM. 768k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103ZF</p></td>
@@ -3788,7 +3782,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>768KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZG.html#board-ststm32-genericstm32f103zg"><span class="std std-ref">STM32F103ZG (96k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F103ZG.html#board-ststm32-genericstm32f103zg"><span class="std std-ref">STM32F103ZG (96k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103ZG</p></td>
@@ -3796,7 +3790,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F303CB.html#board-ststm32-genericstm32f303cb"><span class="std std-ref">STM32F303CB (32k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F303CB.html#board-ststm32-genericstm32f303cb"><span class="std std-ref">STM32F303CB (32k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F303CBT6</p></td>
@@ -3804,7 +3798,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F373RC.html#board-ststm32-genericstm32f373rc"><span class="std std-ref">STM32F373RC (32k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F373RC.html#board-ststm32-genericstm32f373rc"><span class="std std-ref">STM32F373RC (32k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F373RCT6</p></td>
@@ -3812,7 +3806,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401CB.html#board-ststm32-genericstm32f401cb"><span class="std std-ref">STM32F401CB (64k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401CB.html#board-ststm32-genericstm32f401cb"><span class="std std-ref">STM32F401CB (64k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401CB</p></td>
@@ -3820,7 +3814,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401CC.html#board-ststm32-genericstm32f401cc"><span class="std std-ref">STM32F401CC (64k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401CC.html#board-ststm32-genericstm32f401cc"><span class="std std-ref">STM32F401CC (64k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401CC</p></td>
@@ -3828,7 +3822,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401CD.html#board-ststm32-genericstm32f401cd"><span class="std std-ref">STM32F401CD (96k RAM. 384k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401CD.html#board-ststm32-genericstm32f401cd"><span class="std std-ref">STM32F401CD (96k RAM. 384k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401CD</p></td>
@@ -3836,7 +3830,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>384KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401CE.html#board-ststm32-genericstm32f401ce"><span class="std std-ref">STM32F401CE (96k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401CE.html#board-ststm32-genericstm32f401ce"><span class="std std-ref">STM32F401CE (96k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401CE</p></td>
@@ -3844,7 +3838,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401RB.html#board-ststm32-genericstm32f401rb"><span class="std std-ref">STM32F401RB (64k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401RB.html#board-ststm32-genericstm32f401rb"><span class="std std-ref">STM32F401RB (64k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401RB</p></td>
@@ -3852,7 +3846,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401RC.html#board-ststm32-genericstm32f401rc"><span class="std std-ref">STM32F401RC (64k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401RC.html#board-ststm32-genericstm32f401rc"><span class="std std-ref">STM32F401RC (64k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401RC</p></td>
@@ -3860,7 +3854,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401RD.html#board-ststm32-genericstm32f401rd"><span class="std std-ref">STM32F401RD (96k RAM. 384k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401RD.html#board-ststm32-genericstm32f401rd"><span class="std std-ref">STM32F401RD (96k RAM. 384k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401RD</p></td>
@@ -3868,7 +3862,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>384KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401RE.html#board-ststm32-genericstm32f401re"><span class="std std-ref">STM32F401RE (96k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F401RE.html#board-ststm32-genericstm32f401re"><span class="std std-ref">STM32F401RE (96k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F401RE</p></td>
@@ -3876,7 +3870,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F405RG.html#board-ststm32-genericstm32f405rg"><span class="std std-ref">STM32F405RG (128k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F405RG.html#board-ststm32-genericstm32f405rg"><span class="std std-ref">STM32F405RG (128k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F405RG</p></td>
@@ -3884,7 +3878,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F407IGT6.html#board-ststm32-genericstm32f407igt6"><span class="std std-ref">STM32F407IG (192k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F407IGT6.html#board-ststm32-genericstm32f407igt6"><span class="std std-ref">STM32F407IG (192k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F407IGT6</p></td>
@@ -3892,7 +3886,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F407VET6.html#board-ststm32-genericstm32f407vet6"><span class="std std-ref">STM32F407VE (192k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F407VET6.html#board-ststm32-genericstm32f407vet6"><span class="std std-ref">STM32F407VE (192k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F407VET6</p></td>
@@ -3900,7 +3894,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>502.23KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F407VGT6.html#board-ststm32-genericstm32f407vgt6"><span class="std std-ref">STM32F407VG (128k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F407VGT6.html#board-ststm32-genericstm32f407vgt6"><span class="std std-ref">STM32F407VG (128k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F407VGT6</p></td>
@@ -3908,7 +3902,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F410C8.html#board-ststm32-genericstm32f410c8"><span class="std std-ref">STM32F410C8 (32k RAM. 64k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F410C8.html#board-ststm32-genericstm32f410c8"><span class="std std-ref">STM32F410C8 (32k RAM. 64k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F410C8</p></td>
@@ -3916,7 +3910,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F410CB.html#board-ststm32-genericstm32f410cb"><span class="std std-ref">STM32F410CB (32k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F410CB.html#board-ststm32-genericstm32f410cb"><span class="std std-ref">STM32F410CB (32k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F410CB</p></td>
@@ -3924,7 +3918,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F410R8.html#board-ststm32-genericstm32f410r8"><span class="std std-ref">STM32F410R8 (32k RAM. 64k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F410R8.html#board-ststm32-genericstm32f410r8"><span class="std std-ref">STM32F410R8 (32k RAM. 64k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F410R8</p></td>
@@ -3932,7 +3926,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F410RB.html#board-ststm32-genericstm32f410rb"><span class="std std-ref">STM32F410RB (32k RAM. 128k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F410RB.html#board-ststm32-genericstm32f410rb"><span class="std std-ref">STM32F410RB (32k RAM. 128k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F410RB</p></td>
@@ -3940,7 +3934,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F411CC.html#board-ststm32-genericstm32f411cc"><span class="std std-ref">STM32F411CC (128k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F411CC.html#board-ststm32-genericstm32f411cc"><span class="std std-ref">STM32F411CC (128k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F411CC</p></td>
@@ -3948,7 +3942,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F411CE.html#board-ststm32-genericstm32f411ce"><span class="std std-ref">STM32F411CE (128k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F411CE.html#board-ststm32-genericstm32f411ce"><span class="std std-ref">STM32F411CE (128k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F411CE</p></td>
@@ -3956,7 +3950,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F411RC.html#board-ststm32-genericstm32f411rc"><span class="std std-ref">STM32F411RC (128k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F411RC.html#board-ststm32-genericstm32f411rc"><span class="std std-ref">STM32F411RC (128k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F411RC</p></td>
@@ -3964,7 +3958,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F411RE.html#board-ststm32-genericstm32f411re"><span class="std std-ref">STM32F411RE (128k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F411RE.html#board-ststm32-genericstm32f411re"><span class="std std-ref">STM32F411RE (128k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F411RE</p></td>
@@ -3972,7 +3966,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F412CE.html#board-ststm32-genericstm32f412ce"><span class="std std-ref">STM32F412CE (256k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F412CE.html#board-ststm32-genericstm32f412ce"><span class="std std-ref">STM32F412CE (256k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F412CE</p></td>
@@ -3980,7 +3974,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F412CG.html#board-ststm32-genericstm32f412cg"><span class="std std-ref">STM32F412CG (256k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F412CG.html#board-ststm32-genericstm32f412cg"><span class="std std-ref">STM32F412CG (256k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F412CG</p></td>
@@ -3988,7 +3982,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F412RE.html#board-ststm32-genericstm32f412re"><span class="std std-ref">STM32F412RE (256k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F412RE.html#board-ststm32-genericstm32f412re"><span class="std std-ref">STM32F412RE (256k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F412RE</p></td>
@@ -3996,7 +3990,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F412RG.html#board-ststm32-genericstm32f412rg"><span class="std std-ref">STM32F412RG (256k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F412RG.html#board-ststm32-genericstm32f412rg"><span class="std std-ref">STM32F412RG (256k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F412RG</p></td>
@@ -4004,7 +3998,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F413CG.html#board-ststm32-genericstm32f413cg"><span class="std std-ref">STM32F413CG (320k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F413CG.html#board-ststm32-genericstm32f413cg"><span class="std std-ref">STM32F413CG (320k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F413CG</p></td>
@@ -4012,7 +4006,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F413CH.html#board-ststm32-genericstm32f413ch"><span class="std std-ref">STM32F413CH (320k RAM. 1536k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F413CH.html#board-ststm32-genericstm32f413ch"><span class="std std-ref">STM32F413CH (320k RAM. 1536k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F413CH</p></td>
@@ -4020,7 +4014,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1.50MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F413RG.html#board-ststm32-genericstm32f413rg"><span class="std std-ref">STM32F413RG (320k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F413RG.html#board-ststm32-genericstm32f413rg"><span class="std std-ref">STM32F413RG (320k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F413RG</p></td>
@@ -4028,7 +4022,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F413RH.html#board-ststm32-genericstm32f413rh"><span class="std std-ref">STM32F413RH (320k RAM. 1536k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F413RH.html#board-ststm32-genericstm32f413rh"><span class="std std-ref">STM32F413RH (320k RAM. 1536k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F413RH</p></td>
@@ -4036,7 +4030,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1.50MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F415RG.html#board-ststm32-genericstm32f415rg"><span class="std std-ref">STM32F415RG (128k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F415RG.html#board-ststm32-genericstm32f415rg"><span class="std std-ref">STM32F415RG (128k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F415RG</p></td>
@@ -4044,7 +4038,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F417VE.html#board-ststm32-genericstm32f417ve"><span class="std std-ref">STM32F417VE (128k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F417VE.html#board-ststm32-genericstm32f417ve"><span class="std std-ref">STM32F417VE (128k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F417VE</p></td>
@@ -4052,7 +4046,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F417VG.html#board-ststm32-genericstm32f417vg"><span class="std std-ref">STM32F417VG (128k RAM. 1024k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F417VG.html#board-ststm32-genericstm32f417vg"><span class="std std-ref">STM32F417VG (128k RAM. 1024k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F417VG</p></td>
@@ -4060,7 +4054,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F423CH.html#board-ststm32-genericstm32f423ch"><span class="std std-ref">STM32F423CH (320k RAM. 1536k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F423CH.html#board-ststm32-genericstm32f423ch"><span class="std std-ref">STM32F423CH (320k RAM. 1536k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F423CH</p></td>
@@ -4068,7 +4062,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1.50MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F423RH.html#board-ststm32-genericstm32f423rh"><span class="std std-ref">STM32F423RH (320k RAM. 1536k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F423RH.html#board-ststm32-genericstm32f423rh"><span class="std std-ref">STM32F423RH (320k RAM. 1536k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F423RH</p></td>
@@ -4076,7 +4070,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1.50MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F446RC.html#board-ststm32-genericstm32f446rc"><span class="std std-ref">STM32F446RC (128k RAM. 256k Flash)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F446RC.html#board-ststm32-genericstm32f446rc"><span class="std std-ref">STM32F446RC (128k RAM. 256k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F446RC</p></td>
@@ -4084,7 +4078,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F446RE.html#board-ststm32-genericstm32f446re"><span class="std std-ref">STM32F446RE (128k RAM. 512k Flash)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/genericSTM32F446RE.html#board-ststm32-genericstm32f446re"><span class="std std-ref">STM32F446RE (128k RAM. 512k Flash)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F446RE</p></td>
@@ -4092,7 +4086,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/stm32f4stamp.html#board-ststm32-stm32f4stamp"><span class="std std-ref">STM32F4Stamp F405</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/stm32f4stamp.html#board-ststm32-stm32f4stamp"><span class="std std-ref">STM32F4Stamp F405</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F405RGT6</p></td>
@@ -4100,7 +4094,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f750n8.html#board-ststm32-disco-f750n8"><span class="std std-ref">STM32F7508-DK</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/disco_f750n8.html#board-ststm32-disco-f750n8"><span class="std std-ref">STM32F7508-DK</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F750N8H6</p></td>
@@ -4108,7 +4102,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>340KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -4116,7 +4110,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sainSmartDue.html#board-atmelsam-sainsmartdue"><span class="std std-ref">SainSmart Due (Programming Port)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sainSmartDue.html#board-atmelsam-sainsmartdue"><span class="std std-ref">SainSmart Due (Programming Port)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>AT91SAM3X8E</p></td>
@@ -4124,7 +4118,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sainSmartDueUSB.html#board-atmelsam-sainsmartdueusb"><span class="std std-ref">SainSmart Due (USB Native Port)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sainSmartDueUSB.html#board-atmelsam-sainsmartdueusb"><span class="std std-ref">SainSmart Due (USB Native Port)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>AT91SAM3X8E</p></td>
@@ -4132,7 +4126,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf51/seeedArchBLE.html#board-nordicnrf51-seeedarchble"><span class="std std-ref">Seeed Arch BLE</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf51/seeedArchBLE.html#board-nordicnrf51-seeedarchble"><span class="std std-ref">Seeed Arch BLE</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF51822</p></td>
@@ -4140,7 +4134,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf51/seeedArchLink.html#board-nordicnrf51-seeedarchlink"><span class="std std-ref">Seeed Arch Link</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf51/seeedArchLink.html#board-nordicnrf51-seeedarchlink"><span class="std std-ref">Seeed Arch Link</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF51822</p></td>
@@ -4148,7 +4142,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/seeedArchMax.html#board-ststm32-seeedarchmax"><span class="std std-ref">Seeed Arch Max</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/seeedArchMax.html#board-ststm32-seeedarchmax"><span class="std std-ref">Seeed Arch Max</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F407VET6</p></td>
@@ -4156,7 +4150,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf51/seeedTinyBLE.html#board-nordicnrf51-seeedtinyble"><span class="std std-ref">Seeed Tiny BLE</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf51/seeedTinyBLE.html#board-nordicnrf51-seeedtinyble"><span class="std std-ref">Seeed Tiny BLE</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF51822</p></td>
@@ -4164,7 +4158,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/wio_3g.html#board-ststm32-wio-3g"><span class="std std-ref">Seeed Wio 3G</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/wio_3g.html#board-ststm32-wio-3g"><span class="std std-ref">Seeed Wio 3G</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F439VI</p></td>
@@ -4172,7 +4166,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>2MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_femto.html#board-atmelsam-seeed-femto"><span class="std std-ref">Seeeduino Femto M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_femto.html#board-atmelsam-seeed-femto"><span class="std std-ref">Seeeduino Femto M0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4180,7 +4174,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeeduino_lorawan.html#board-atmelsam-seeeduino-lorawan"><span class="std std-ref">Seeeduino LoRaWAN</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeeduino_lorawan.html#board-atmelsam-seeeduino-lorawan"><span class="std std-ref">Seeeduino LoRaWAN</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4188,7 +4182,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_wio_lite_mg126.html#board-atmelsam-seeed-wio-lite-mg126"><span class="std std-ref">Seeeduino Wio Lite MG126</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_wio_lite_mg126.html#board-atmelsam-seeed-wio-lite-mg126"><span class="std std-ref">Seeeduino Wio Lite MG126</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4196,7 +4190,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_wio_terminal.html#board-atmelsam-seeed-wio-terminal"><span class="std std-ref">Seeeduino Wio Terminal</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_wio_terminal.html#board-atmelsam-seeed-wio-terminal"><span class="std std-ref">Seeeduino Wio Terminal</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51P19A</p></td>
@@ -4204,7 +4198,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_xiao.html#board-atmelsam-seeed-xiao"><span class="std std-ref">Seeeduino XIAO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_xiao.html#board-atmelsam-seeed-xiao"><span class="std std-ref">Seeeduino XIAO</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4212,7 +4206,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_zero.html#board-atmelsam-seeed-zero"><span class="std std-ref">Seeeduino Zero</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_zero.html#board-atmelsam-seeed-zero"><span class="std std-ref">Seeeduino Zero</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4220,7 +4214,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/steval_mksboxv1.html#board-ststm32-steval-mksboxv1"><span class="std std-ref">SensorTile.box</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/steval_mksboxv1.html#board-ststm32-steval-mksboxv1"><span class="std std-ref">SensorTile.box</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32L4R9ZI</p></td>
@@ -4228,7 +4222,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>2MB</p></td>
 <td><p>640KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/wesp32.html#board-espressif32-wesp32"><span class="std std-ref">Silicognition wESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/wesp32.html#board-espressif32-wesp32"><span class="std std-ref">Silicognition wESP32</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4236,7 +4230,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf51/Sinobit.html#board-nordicnrf51-sinobit"><span class="std std-ref">Sino:Bit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf51/Sinobit.html#board-nordicnrf51-sinobit"><span class="std std-ref">Sino:Bit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF51822</p></td>
@@ -4244,7 +4238,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/gd32v/sipeed-longan-nano.html#board-gd32v-sipeed-longan-nano"><span class="std std-ref">Sipeed Longan Nano</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/gd32v/sipeed-longan-nano.html#board-gd32v-sipeed-longan-nano"><span class="std std-ref">Sipeed Longan Nano</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/gd32v.html#platform-gd32v"><span class="std std-ref">GigaDevice GD32V</span></a></p></td>
 <td><p>External</p></td>
 <td><p>GD32VF103CBT6</p></td>
@@ -4252,7 +4246,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nuclei/gd32vf103c_longan_nano.html#board-nuclei-gd32vf103c-longan-nano"><span class="std std-ref">Sipeed Longan Nano</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nuclei/gd32vf103c_longan_nano.html#board-nuclei-gd32vf103c-longan-nano"><span class="std std-ref">Sipeed Longan Nano</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nuclei.html#platform-nuclei"><span class="std std-ref">Nuclei</span></a></p></td>
 <td><p>External</p></td>
 <td><p>GD32VF103CBT6</p></td>
@@ -4260,7 +4254,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/gd32v/sipeed-longan-nano-lite.html#board-gd32v-sipeed-longan-nano-lite"><span class="std std-ref">Sipeed Longan Nano Lite</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/gd32v/sipeed-longan-nano-lite.html#board-gd32v-sipeed-longan-nano-lite"><span class="std std-ref">Sipeed Longan Nano Lite</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/gd32v.html#platform-gd32v"><span class="std std-ref">GigaDevice GD32V</span></a></p></td>
 <td><p>External</p></td>
 <td><p>GD32VF103C8T6</p></td>
@@ -4268,7 +4262,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-bit.html#board-kendryte210-sipeed-maix-bit"><span class="std std-ref">Sipeed MAIX BiT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-bit.html#board-kendryte210-sipeed-maix-bit"><span class="std std-ref">Sipeed MAIX BiT</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
 <td><p>External</p></td>
 <td><p>K210</p></td>
@@ -4276,7 +4270,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>6MB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-bit-mic.html#board-kendryte210-sipeed-maix-bit-mic"><span class="std std-ref">Sipeed MAIX BiT with Mic</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-bit-mic.html#board-kendryte210-sipeed-maix-bit-mic"><span class="std std-ref">Sipeed MAIX BiT with Mic</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
 <td><p>External</p></td>
 <td><p>K210</p></td>
@@ -4284,7 +4278,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>6MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-go.html#board-kendryte210-sipeed-maix-go"><span class="std std-ref">Sipeed MAIX GO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-go.html#board-kendryte210-sipeed-maix-go"><span class="std std-ref">Sipeed MAIX GO</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
 <td><p>External</p></td>
 <td><p>K210</p></td>
@@ -4292,7 +4286,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>6MB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-one-dock.html#board-kendryte210-sipeed-maix-one-dock"><span class="std std-ref">Sipeed MAIX ONE DOCK</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-one-dock.html#board-kendryte210-sipeed-maix-one-dock"><span class="std std-ref">Sipeed MAIX ONE DOCK</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
 <td><p>External</p></td>
 <td><p>K210</p></td>
@@ -4300,7 +4294,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>6MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maixduino.html#board-kendryte210-sipeed-maixduino"><span class="std std-ref">Sipeed MAIXDUINO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maixduino.html#board-kendryte210-sipeed-maixduino"><span class="std std-ref">Sipeed MAIXDUINO</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
 <td><p>External</p></td>
 <td><p>K210</p></td>
@@ -4308,7 +4302,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>6MB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-MF1.html#board-kendryte210-sipeed-mf1"><span class="std std-ref">Sipeed MF1 MF1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-MF1.html#board-kendryte210-sipeed-mf1"><span class="std std-ref">Sipeed MF1 MF1</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
 <td><p>External</p></td>
 <td><p>K210</p></td>
@@ -4316,7 +4310,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>6MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nxplpc/dipcortexm0.html#board-nxplpc-dipcortexm0"><span class="std std-ref">Solder Splash Labs DipCortex M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nxplpc/dipcortexm0.html#board-nxplpc-dipcortexm0"><span class="std std-ref">Solder Splash Labs DipCortex M0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
 <td><p>External</p></td>
 <td><p>LPC11U24</p></td>
@@ -4324,7 +4318,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>32KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_9dof.html#board-atmelsam-sparkfun-samd21-9dof"><span class="std std-ref">SparkFun 9DoF Razor IMU M0</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_9dof.html#board-atmelsam-sparkfun-samd21-9dof"><span class="std std-ref">SparkFun 9DoF Razor IMU M0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4332,7 +4326,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/esp32thing.html#board-espressif32-esp32thing"><span class="std std-ref">SparkFun ESP32 Thing</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/esp32thing.html#board-espressif32-esp32thing"><span class="std std-ref">SparkFun ESP32 Thing</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4340,7 +4334,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/esp32thing_plus.html#board-espressif32-esp32thing-plus"><span class="std std-ref">SparkFun ESP32 Thing Plus</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/esp32thing_plus.html#board-espressif32-esp32thing-plus"><span class="std std-ref">SparkFun ESP32 Thing Plus</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4348,7 +4342,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/sparkfun_lora_gateway_1-channel.html#board-espressif32-sparkfun-lora-gateway-1-channel"><span class="std std-ref">SparkFun LoRa Gateway 1-Channel</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/sparkfun_lora_gateway_1-channel.html#board-espressif32-sparkfun-lora-gateway-1-channel"><span class="std std-ref">SparkFun LoRa Gateway 1-Channel</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4356,7 +4350,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_qwiic_micro_samd21e.html#board-atmelsam-sparkfun-qwiic-micro-samd21e"><span class="std std-ref">SparkFun Qwiic Micro</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_qwiic_micro_samd21e.html#board-atmelsam-sparkfun-qwiic-micro-samd21e"><span class="std std-ref">SparkFun Qwiic Micro</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21E18A</p></td>
@@ -4364,7 +4358,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>FE310</p></td>
@@ -4372,7 +4366,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>FE310</p></td>
@@ -4380,7 +4374,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_redboard_turbo.html#board-atmelsam-sparkfun-redboard-turbo"><span class="std std-ref">SparkFun RedBoard Turbo</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_redboard_turbo.html#board-atmelsam-sparkfun-redboard-turbo"><span class="std std-ref">SparkFun RedBoard Turbo</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4388,7 +4382,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_dev_usb.html#board-atmelsam-sparkfun-samd21-dev-usb"><span class="std std-ref">SparkFun SAMD21 Dev Breakout</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_dev_usb.html#board-atmelsam-sparkfun-samd21-dev-usb"><span class="std std-ref">SparkFun SAMD21 Dev Breakout</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4396,7 +4390,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_mini_usb.html#board-atmelsam-sparkfun-samd21-mini-usb"><span class="std std-ref">SparkFun SAMD21 Mini Breakout</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_mini_usb.html#board-atmelsam-sparkfun-samd21-mini-usb"><span class="std std-ref">SparkFun SAMD21 Mini Breakout</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4404,7 +4398,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_proRF.html#board-atmelsam-sparkfun-samd21-prorf"><span class="std std-ref">SparkFun SAMD21 Pro RF</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_proRF.html#board-atmelsam-sparkfun-samd21-prorf"><span class="std std-ref">SparkFun SAMD21 Pro RF</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4412,7 +4406,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd51_thing_plus.html#board-atmelsam-sparkfun-samd51-thing-plus"><span class="std std-ref">SparkFun SAMD51 Thing Plus</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd51_thing_plus.html#board-atmelsam-sparkfun-samd51-thing-plus"><span class="std std-ref">SparkFun SAMD51 Thing Plus</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J20A</p></td>
@@ -4420,7 +4414,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/sparky_v1.html#board-ststm32-sparky-v1"><span class="std std-ref">Sparky V1 F303</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/sparky_v1.html#board-ststm32-sparky-v1"><span class="std std-ref">Sparky V1 F303</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F303CCT6</p></td>
@@ -4428,7 +4422,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>40KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nxplpc/lpc1114fn28.html#board-nxplpc-lpc1114fn28"><span class="std std-ref">Switch Science mbed LPC1114FN28</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nxplpc/lpc1114fn28.html#board-nxplpc-lpc1114fn28"><span class="std std-ref">Switch Science mbed LPC1114FN28</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>LPC1114FN28</p></td>
@@ -4436,7 +4430,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>32KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nxplpc/ssci824.html#board-nxplpc-ssci824"><span class="std std-ref">Switch Science mbed LPC824</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nxplpc/ssci824.html#board-nxplpc-ssci824"><span class="std std-ref">Switch Science mbed LPC824</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>LPC824</p></td>
@@ -4444,7 +4438,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>32KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-lora32-v1.html#board-espressif32-ttgo-lora32-v1"><span class="std std-ref">TTGO LoRa32-OLED V1</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-lora32-v1.html#board-espressif32-ttgo-lora32-v1"><span class="std std-ref">TTGO LoRa32-OLED V1</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4452,7 +4446,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-lora32-v2.html#board-espressif32-ttgo-lora32-v2"><span class="std std-ref">TTGO LoRa32-OLED V2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-lora32-v2.html#board-espressif32-ttgo-lora32-v2"><span class="std std-ref">TTGO LoRa32-OLED V2</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4460,7 +4454,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-lora32-v21.html#board-espressif32-ttgo-lora32-v21"><span class="std std-ref">TTGO LoRa32-OLED v2.1.6</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-lora32-v21.html#board-espressif32-ttgo-lora32-v21"><span class="std std-ref">TTGO LoRa32-OLED v2.1.6</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4468,7 +4462,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-t-beam.html#board-espressif32-ttgo-t-beam"><span class="std std-ref">TTGO T-Beam</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-t-beam.html#board-espressif32-ttgo-t-beam"><span class="std std-ref">TTGO T-Beam</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4476,7 +4470,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-t1.html#board-espressif32-ttgo-t1"><span class="std std-ref">TTGO T1</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-t1.html#board-espressif32-ttgo-t1"><span class="std std-ref">TTGO T1</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4484,7 +4478,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-t7-v14-mini32.html#board-espressif32-ttgo-t7-v14-mini32"><span class="std std-ref">TTGO T7 V1.4 Mini32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/ttgo-t7-v14-mini32.html#board-espressif32-ttgo-t7-v14-mini32"><span class="std std-ref">TTGO T7 V1.4 Mini32</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4492,7 +4486,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf52/stct_nrf52_minidev.html#board-nordicnrf52-stct-nrf52-minidev"><span class="std std-ref">Taida Century nRF52 mini board</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf52/stct_nrf52_minidev.html#board-nordicnrf52-stct-nrf52-minidev"><span class="std std-ref">Taida Century nRF52 mini board</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF52832</p></td>
@@ -4500,7 +4494,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/teensy/teensy31.html#board-teensy-teensy31"><span class="std std-ref">Teensy 3.1 / 3.2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/teensy/teensy31.html#board-teensy-teensy31"><span class="std std-ref">Teensy 3.1 / 3.2</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
 <td><p>External</p></td>
 <td><p>MK20DX256</p></td>
@@ -4508,7 +4502,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/teensy/teensy35.html#board-teensy-teensy35"><span class="std std-ref">Teensy 3.5</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/teensy/teensy35.html#board-teensy-teensy35"><span class="std std-ref">Teensy 3.5</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
 <td><p>External</p></td>
 <td><p>MK64FX512</p></td>
@@ -4516,7 +4510,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>255.99KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/teensy/teensy36.html#board-teensy-teensy36"><span class="std std-ref">Teensy 3.6</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/teensy/teensy36.html#board-teensy-teensy36"><span class="std std-ref">Teensy 3.6</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
 <td><p>External</p></td>
 <td><p>MK66FX1M0</p></td>
@@ -4524,7 +4518,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/teensy/teensy40.html#board-teensy-teensy40"><span class="std std-ref">Teensy 4.0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/teensy/teensy40.html#board-teensy-teensy40"><span class="std std-ref">Teensy 4.0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
 <td><p>External</p></td>
 <td><p>IMXRT1062</p></td>
@@ -4532,7 +4526,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1.94MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/teensy/teensy41.html#board-teensy-teensy41"><span class="std std-ref">Teensy 4.1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/teensy/teensy41.html#board-teensy-teensy41"><span class="std std-ref">Teensy 4.1</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
 <td><p>External</p></td>
 <td><p>IMXRT1062</p></td>
@@ -4540,7 +4534,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>7.75MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/teensy/teensylc.html#board-teensy-teensylc"><span class="std std-ref">Teensy LC</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/teensy/teensylc.html#board-teensy-teensylc"><span class="std std-ref">Teensy LC</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
 <td><p>External</p></td>
 <td><p>MKL26Z64</p></td>
@@ -4548,7 +4542,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>62KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/thunder_pack.html#board-ststm32-thunder-pack"><span class="std std-ref">ThunderPack v1.0</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/thunder_pack.html#board-ststm32-thunder-pack"><span class="std std-ref">ThunderPack v1.0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32L072KZ</p></td>
@@ -4556,7 +4550,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>192KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/thunder_pack_f411.html#board-ststm32-thunder-pack-f411"><span class="std std-ref">ThunderPack v1.1+</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/thunder_pack_f411.html#board-ststm32-thunder-pack-f411"><span class="std std-ref">ThunderPack v1.1+</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F411CEU6</p></td>
@@ -4564,7 +4558,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/siliconlabsefm32/tb_sense_12.html#board-siliconlabsefm32-tb-sense-12"><span class="std std-ref">Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/siliconlabsefm32/tb_sense_12.html#board-siliconlabsefm32-tb-sense-12"><span class="std std-ref">Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/siliconlabsefm32.html#platform-siliconlabsefm32"><span class="std std-ref">Silicon Labs EFM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>EFR32MG12P432F1024</p></td>
@@ -4572,7 +4566,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/hy_tinystm103tb.html#board-ststm32-hy-tinystm103tb"><span class="std std-ref">Tiny STM103T</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/hy_tinystm103tb.html#board-ststm32-hy-tinystm103tb"><span class="std std-ref">Tiny STM103T</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103TBU6</p></td>
@@ -4580,7 +4574,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/tuinozero96.html#board-atmelsam-tuinozero96"><span class="std std-ref">Tuino 096</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/tuinozero96.html#board-atmelsam-tuinozero96"><span class="std std-ref">Tuino 096</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -4588,7 +4582,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/vake_v1.html#board-ststm32-vake-v1"><span class="std std-ref">VAkE v1.0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/vake_v1.html#board-ststm32-vake-v1"><span class="std std-ref">VAkE v1.0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F446RET6</p></td>
@@ -4596,7 +4590,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/vccgnd_f103zet6.html#board-ststm32-vccgnd-f103zet6"><span class="std std-ref">VCCGND F103ZET6 Mini</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/vccgnd_f103zet6.html#board-ststm32-vccgnd-f103zet6"><span class="std std-ref">VCCGND F103ZET6 Mini</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103ZET6</p></td>
@@ -4604,7 +4598,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf52/vbluno52.html#board-nordicnrf52-vbluno52"><span class="std std-ref">VNG VBLUno52</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf52/vbluno52.html#board-nordicnrf52-vbluno52"><span class="std std-ref">VNG VBLUno52</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF52832</p></td>
@@ -4612,7 +4606,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/shakti/vajra.html#board-shakti-vajra"><span class="std std-ref">Vajra on Arty A7-100: Artix-7 FPGA Development Board</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/shakti/vajra.html#board-shakti-vajra"><span class="std std-ref">Vajra on Arty A7-100: Artix-7 FPGA Development Board</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/shakti.html#platform-shakti"><span class="std std-ref">Shakti</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>C-CLASS</p></td>
@@ -4620,7 +4614,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>0B</p></td>
 <td><p>128MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/vintlabs-devkit-v1.html#board-espressif32-vintlabs-devkit-v1"><span class="std std-ref">VintLabs ESP32 Devkit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/vintlabs-devkit-v1.html#board-espressif32-vintlabs-devkit-v1"><span class="std std-ref">VintLabs ESP32 Devkit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4628,7 +4622,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/lolin_d32.html#board-espressif32-lolin-d32"><span class="std std-ref">WEMOS LOLIN D32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/lolin_d32.html#board-espressif32-lolin-d32"><span class="std std-ref">WEMOS LOLIN D32</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4636,7 +4630,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/lolin_d32_pro.html#board-espressif32-lolin-d32-pro"><span class="std std-ref">WEMOS LOLIN D32 PRO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/lolin_d32_pro.html#board-espressif32-lolin-d32-pro"><span class="std std-ref">WEMOS LOLIN D32 PRO</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4644,7 +4638,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/lolin32.html#board-espressif32-lolin32"><span class="std std-ref">WEMOS LOLIN32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/lolin32.html#board-espressif32-lolin32"><span class="std std-ref">WEMOS LOLIN32</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4652,7 +4646,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/wiznet7500/wizwiki_w7500.html#board-wiznet7500-wizwiki-w7500"><span class="std std-ref">WIZwiki-W7500</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/wiznet7500/wizwiki_w7500.html#board-wiznet7500-wizwiki-w7500"><span class="std std-ref">WIZwiki-W7500</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/wiznet7500.html#platform-wiznet7500"><span class="std std-ref">WIZNet W7500</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>WIZNET7500</p></td>
@@ -4660,7 +4654,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>48KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/wiznet7500/wizwiki_w7500eco.html#board-wiznet7500-wizwiki-w7500eco"><span class="std std-ref">WIZwiki-W7500ECO</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/wiznet7500/wizwiki_w7500eco.html#board-wiznet7500-wizwiki-w7500eco"><span class="std std-ref">WIZwiki-W7500ECO</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/wiznet7500.html#platform-wiznet7500"><span class="std std-ref">WIZNet W7500</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>WIZNET7500ECO</p></td>
@@ -4668,7 +4662,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>48KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/wiznet7500/wizwiki_w7500p.html#board-wiznet7500-wizwiki-w7500p"><span class="std std-ref">WIZwiki-W7500P</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/wiznet7500/wizwiki_w7500p.html#board-wiznet7500-wizwiki-w7500p"><span class="std std-ref">WIZwiki-W7500P</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/wiznet7500.html#platform-wiznet7500"><span class="std std-ref">WIZNet W7500</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>WIZNET7500P</p></td>
@@ -4676,7 +4670,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>48KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf51/waveshare_ble400.html#board-nordicnrf51-waveshare-ble400"><span class="std std-ref">Waveshare BLE400</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf51/waveshare_ble400.html#board-nordicnrf51-waveshare-ble400"><span class="std std-ref">Waveshare BLE400</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF51822</p></td>
@@ -4684,7 +4678,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/waveshare_open103z.html#board-ststm32-waveshare-open103z"><span class="std std-ref">Waveshare Open103Z</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/waveshare_open103z.html#board-ststm32-waveshare-open103z"><span class="std std-ref">Waveshare Open103Z</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F103ZET6</p></td>
@@ -4692,7 +4686,15 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct BlackPill V2.0 (BlackPill F411CE)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/blackpill_f401cc.html#board-ststm32-blackpill-f401cc"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F401CC)</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F401CCU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/blackpill_f411ce.html#board-ststm32-blackpill-f411ce"><span class="std std-ref">WeAct Studio BlackPill V2.0 (STM32F411CE)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F411CEU6</p></td>
@@ -4700,7 +4702,15 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/wemos_d1_mini32.html#board-espressif32-wemos-d1-mini32"><span class="std std-ref">WeMos D1 MINI ESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/blackpill_f401ce.html#board-ststm32-blackpill-f401ce"><span class="std std-ref">WeAct Studio BlackPill V3.0 (STM32F401CE)</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F401CEU6</p></td>
+<td><p>84MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>96KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/wemos_d1_mini32.html#board-espressif32-wemos-d1-mini32"><span class="std std-ref">WeMos D1 MINI ESP32</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4708,7 +4718,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/wemosbat.html#board-espressif32-wemosbat"><span class="std std-ref">WeMos WiFi and Bluetooth Battery</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/wemosbat.html#board-espressif32-wemosbat"><span class="std std-ref">WeMos WiFi and Bluetooth Battery</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4716,7 +4726,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/gd32v/wio_lite_risc-v.html#board-gd32v-wio-lite-risc-v"><span class="std std-ref">Wio Lite RISC-V</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/gd32v/wio_lite_risc-v.html#board-gd32v-wio-lite-risc-v"><span class="std std-ref">Wio Lite RISC-V</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/gd32v.html#platform-gd32v"><span class="std std-ref">GigaDevice GD32V</span></a></p></td>
 <td><p>External</p></td>
 <td><p>GD32VF103CBT6</p></td>
@@ -4724,7 +4734,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>128KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/wraith32_v1.html#board-ststm32-wraith32-v1"><span class="std std-ref">Wraith V1 ESC</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/wraith32_v1.html#board-ststm32-wraith32-v1"><span class="std std-ref">Wraith V1 ESC</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F051K6</p></td>
@@ -4732,7 +4742,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>32KB</p></td>
 <td><p>7.75KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1100_boot_kit.html#board-infineonxmc-xmc1100-boot-kit"><span class="std std-ref">XMC1100 Boot Kit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1100_boot_kit.html#board-infineonxmc-xmc1100-boot-kit"><span class="std std-ref">XMC1100 Boot Kit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>XMC1100</p></td>
@@ -4740,7 +4750,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1100_h_bridge2go.html#board-infineonxmc-xmc1100-h-bridge2go"><span class="std std-ref">XMC1100 H-Bridge 2Go</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1100_h_bridge2go.html#board-infineonxmc-xmc1100-h-bridge2go"><span class="std std-ref">XMC1100 H-Bridge 2Go</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>XMC1100</p></td>
@@ -4748,7 +4758,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1100_xmc2go.html#board-infineonxmc-xmc1100-xmc2go"><span class="std std-ref">XMC1100 XMC2Go</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1100_xmc2go.html#board-infineonxmc-xmc1100-xmc2go"><span class="std std-ref">XMC1100 XMC2Go</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>XMC1100</p></td>
@@ -4756,7 +4766,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1300_boot_kit.html#board-infineonxmc-xmc1300-boot-kit"><span class="std std-ref">XMC1300 Boot Kit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1300_boot_kit.html#board-infineonxmc-xmc1300-boot-kit"><span class="std std-ref">XMC1300 Boot Kit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>XMC1300</p></td>
@@ -4764,7 +4774,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1300_sense2gol.html#board-infineonxmc-xmc1300-sense2gol"><span class="std std-ref">XMC1300 Sense2GoL</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1300_sense2gol.html#board-infineonxmc-xmc1300-sense2gol"><span class="std std-ref">XMC1300 Sense2GoL</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>XMC1300</p></td>
@@ -4772,7 +4782,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>32KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1400_boot_kit.html#board-infineonxmc-xmc1400-boot-kit"><span class="std std-ref">XMC1400 Boot Kit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc1400_boot_kit.html#board-infineonxmc-xmc1400-boot-kit"><span class="std std-ref">XMC1400 Boot Kit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>XMC1400</p></td>
@@ -4780,7 +4790,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1.95MB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc4200_distance2go.html#board-infineonxmc-xmc4200-distance2go"><span class="std std-ref">XMC4200 Distance2Go</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc4200_distance2go.html#board-infineonxmc-xmc4200-distance2go"><span class="std std-ref">XMC4200 Distance2Go</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>XMC4200</p></td>
@@ -4788,7 +4798,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>40KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc4700_relax_kit.html#board-infineonxmc-xmc4700-relax-kit"><span class="std std-ref">XMC4700 Relax Kit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/infineonxmc/xmc4700_relax_kit.html#board-infineonxmc-xmc4700-relax-kit"><span class="std std-ref">XMC4700 Relax Kit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>XMC4700</p></td>
@@ -4796,7 +4806,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>2.00MB</p></td>
 <td><p>1.95MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/xinabox_cw02.html#board-espressif32-xinabox-cw02"><span class="std std-ref">XinaBox CW02</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/xinabox_cw02.html#board-espressif32-xinabox-cw02"><span class="std std-ref">XinaBox CW02</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4804,7 +4814,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf52/dwm1001_dev.html#board-nordicnrf52-dwm1001-dev"><span class="std std-ref">decaWave DWM1001 Module Development Board</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf52/dwm1001_dev.html#board-nordicnrf52-dwm1001-dev"><span class="std std-ref">decaWave DWM1001 Module Development Board</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF52832</p></td>
@@ -4812,7 +4822,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf52/hackaBLE.html#board-nordicnrf52-hackable"><span class="std std-ref">hackaBLE</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf52/hackaBLE.html#board-nordicnrf52-hackable"><span class="std std-ref">hackaBLE</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF52832</p></td>
@@ -4820,7 +4830,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf51/ng_beacon.html#board-nordicnrf51-ng-beacon"><span class="std std-ref">ng-beacon</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf51/ng_beacon.html#board-nordicnrf51-ng-beacon"><span class="std std-ref">ng-beacon</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF51822</p></td>
@@ -4828,7 +4838,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/iotbusio.html#board-espressif32-iotbusio"><span class="std std-ref">oddWires IoT-Bus Io</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/iotbusio.html#board-espressif32-iotbusio"><span class="std std-ref">oddWires IoT-Bus Io</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4836,7 +4846,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/iotbusproteus.html#board-espressif32-iotbusproteus"><span class="std std-ref">oddWires IoT-Bus Proteus</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/iotbusproteus.html#board-espressif32-iotbusproteus"><span class="std std-ref">oddWires IoT-Bus Proteus</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4844,7 +4854,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/sakuraio_evb_01.html#board-ststm32-sakuraio-evb-01"><span class="std std-ref">sakura.io Evaluation Board</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/sakuraio_evb_01.html#board-ststm32-sakuraio-evb-01"><span class="std std-ref">sakura.io Evaluation Board</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F411RET6</p></td>
@@ -4852,7 +4862,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nxplpc/ubloxc027.html#board-nxplpc-ubloxc027"><span class="std std-ref">u-blox C027</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nxplpc/ubloxc027.html#board-nxplpc-ubloxc027"><span class="std std-ref">u-blox C027</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>LPC1768</p></td>
@@ -4860,7 +4870,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/ublox_c030_n211.html#board-ststm32-ublox-c030-n211"><span class="std std-ref">u-blox C030-N211 IoT Starter Kit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/ublox_c030_n211.html#board-ststm32-ublox-c030-n211"><span class="std std-ref">u-blox C030-N211 IoT Starter Kit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F437VG</p></td>
@@ -4868,7 +4878,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/ublox_c030_r410m.html#board-ststm32-ublox-c030-r410m"><span class="std std-ref">u-blox C030-R410M IoT</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/ublox_c030_r410m.html#board-ststm32-ublox-c030-r410m"><span class="std std-ref">u-blox C030-R410M IoT</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F437VG</p></td>
@@ -4876,7 +4886,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/ublox_c030_u201.html#board-ststm32-ublox-c030-u201"><span class="std std-ref">u-blox C030-U201 IoT Starter Kit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/ublox_c030_u201.html#board-ststm32-ublox-c030-u201"><span class="std std-ref">u-blox C030-U201 IoT Starter Kit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F437VG</p></td>
@@ -4884,7 +4894,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf52/ublox_evk_nina_b1.html#board-nordicnrf52-ublox-evk-nina-b1"><span class="std std-ref">u-blox EVK-NINA-B1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf52/ublox_evk_nina_b1.html#board-nordicnrf52-ublox-evk-nina-b1"><span class="std std-ref">u-blox EVK-NINA-B1</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF52832</p></td>
@@ -4892,7 +4902,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/ublox_evk_odin_w2.html#board-ststm32-ublox-evk-odin-w2"><span class="std std-ref">u-blox EVK-ODIN-W2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/ublox_evk_odin_w2.html#board-ststm32-ublox-evk-odin-w2"><span class="std std-ref">u-blox EVK-ODIN-W2</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F439ZIY6</p></td>
@@ -4900,7 +4910,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>2MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/ststm32/mtb_ublox_odin_w2.html#board-ststm32-mtb-ublox-odin-w2"><span class="std std-ref">u-blox ODIN-W2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/ststm32/mtb_ublox_odin_w2.html#board-ststm32-mtb-ublox-odin-w2"><span class="std std-ref">u-blox ODIN-W2</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F439ZIY6</p></td>
@@ -4908,7 +4918,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>2MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nxplpc/lpc11u35_y5_mbug.html#board-nxplpc-lpc11u35-y5-mbug"><span class="std std-ref">y5 LPC11U35 mbug</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nxplpc/lpc11u35_y5_mbug.html#board-nxplpc-lpc11u35-y5-mbug"><span class="std std-ref">y5 LPC11U35 mbug</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
 <td><p>External</p></td>
 <td><p>LPC11U35</p></td>
@@ -4916,7 +4926,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>64KB</p></td>
 <td><p>10KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/nordicnrf51/nrf51822_y5_mbug.html#board-nordicnrf51-nrf51822-y5-mbug"><span class="std std-ref">y5 nRF51822 mbug</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/nordicnrf51/nrf51822_y5_mbug.html#board-nordicnrf51-nrf51822-y5-mbug"><span class="std std-ref">y5 nRF51822 mbug</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF51822</p></td>

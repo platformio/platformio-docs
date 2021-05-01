@@ -66,7 +66,7 @@ board manifest `esp8285.json <https://github.com/platformio/platform-espressif82
 
 Uploading
 ---------
-Generic ESP8285 Module supports the next uploading protocols:
+Generic ESP8285 Module supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

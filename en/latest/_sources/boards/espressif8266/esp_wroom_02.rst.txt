@@ -66,7 +66,7 @@ board manifest `esp_wroom_02.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-ESP-WROOM-02 supports the next uploading protocols:
+ESP-WROOM-02 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `briki_abc_samd21.json <https://github.com/platformio/platform-at
 
 Uploading
 ---------
-Briki ABC (MBC-WB) - Samd21 supports the next uploading protocols:
+Briki ABC (MBC-WB) - Samd21 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

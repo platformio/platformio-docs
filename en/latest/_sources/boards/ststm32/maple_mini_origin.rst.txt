@@ -66,7 +66,7 @@ board manifest `maple_mini_origin.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-Maple Mini Original supports the next uploading protocols:
+Maple Mini Original supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

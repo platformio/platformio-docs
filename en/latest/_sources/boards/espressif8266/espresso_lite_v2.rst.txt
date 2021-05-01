@@ -66,7 +66,7 @@ board manifest `espresso_lite_v2.json <https://github.com/platformio/platform-es
 
 Uploading
 ---------
-ESPresso Lite 2.0 supports the next uploading protocols:
+ESPresso Lite 2.0 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

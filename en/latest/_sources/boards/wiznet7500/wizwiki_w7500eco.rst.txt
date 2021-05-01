@@ -66,7 +66,7 @@ board manifest `wizwiki_w7500eco.json <https://github.com/platformio/platform-wi
 
 Uploading
 ---------
-WIZwiki-W7500ECO supports the next uploading protocols:
+WIZwiki-W7500ECO supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

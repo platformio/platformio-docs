@@ -66,7 +66,7 @@ board manifest `st3dp001_eval.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-3DP001V1 Evaluation board for 3D printer supports the next uploading protocols:
+3DP001V1 Evaluation board for 3D printer supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

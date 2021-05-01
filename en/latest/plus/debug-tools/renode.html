@@ -127,6 +127,7 @@
 <li class="toctree-l3"><a class="reference internal" href="blackmagic.html">Black Magic Probe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cmsis-dap.html">CMSIS-DAP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="digilent-hs1.html">JTAG-HS1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="digilent-hs2.html">JTAG-HS2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp-prog.html">ESP-Prog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ftdi.html">FTDI Chip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gd-link.html">GD-LINK</a></li>
@@ -138,6 +139,7 @@
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd.html">Olimex ARM-USB-OCD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-tiny-h.html">Olimex ARM-USB-TINY-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-jtag-tiny.html">Olimex ARM-USB-TINY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ovpsim.html">OVPsim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="qemu.html">QEMU</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Renode</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
@@ -401,7 +403,10 @@ port on the <code class="docutils literal notranslate"><span class="pre">hifive1
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../platforms/openhw.html#platform-openhw"><span class="std std-ref">OpenHW Group</span></a></p></td>
+<td><p>OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.</p></td>
 </tr>
 </tbody>
@@ -425,6 +430,12 @@ port on the <code class="docutils literal notranslate"><span class="pre">hifive1
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/freedom-e-sdk.html#framework-freedom-e-sdk"><span class="std std-ref">Freedom E SDK</span></a></p></td>
 <td><p>Open Source Software for Developing on the SiFive Freedom E Platform</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/pulp-runtime.html#framework-pulp-runtime"><span class="std std-ref">PULP Runtime Environment</span></a></p></td>
+<td><p>Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/pulp-sdk.html#framework-pulp-sdk"><span class="std std-ref">PULP SDK</span></a></p></td>
+<td><p>Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
 <td><p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p></td>
@@ -467,7 +478,15 @@ port on the <code class="docutils literal notranslate"><span class="pre">hifive1
 <td><p>16MB</p></td>
 <td><p>256MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/hifive-unleashed.html#board-sifive-hifive-unleashed"><span class="std std-ref">HiFive Unleashed</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/openhw/nexys_a7.html#board-openhw-nexys-a7"><span class="std std-ref">Digilent Nexys A7</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/openhw.html#platform-openhw"><span class="std std-ref">OpenHW Group</span></a></p></td>
+<td><p>On-board</p></td>
+<td></td>
+<td><p>320MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>1.16MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/hifive-unleashed.html#board-sifive-hifive-unleashed"><span class="std std-ref">HiFive Unleashed</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>FU540</p></td>
@@ -475,7 +494,7 @@ port on the <code class="docutils literal notranslate"><span class="pre">hifive1
 <td><p>32MB</p></td>
 <td><p>8GB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/hifive1.html#board-sifive-hifive1"><span class="std std-ref">HiFive1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/hifive1.html#board-sifive-hifive1"><span class="std std-ref">HiFive1</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>FE310</p></td>
@@ -483,7 +502,7 @@ port on the <code class="docutils literal notranslate"><span class="pre">hifive1
 <td><p>16MB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/hifive1-revb.html#board-sifive-hifive1-revb"><span class="std std-ref">HiFive1 Rev B</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/hifive1-revb.html#board-sifive-hifive1-revb"><span class="std std-ref">HiFive1 Rev B</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>FE310</p></td>
@@ -491,7 +510,7 @@ port on the <code class="docutils literal notranslate"><span class="pre">hifive1
 <td><p>16MB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>FE310</p></td>
@@ -499,7 +518,7 @@ port on the <code class="docutils literal notranslate"><span class="pre">hifive1
 <td><p>16MB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>FE310</p></td>

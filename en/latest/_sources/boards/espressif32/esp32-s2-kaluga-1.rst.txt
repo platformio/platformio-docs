@@ -66,7 +66,7 @@ board manifest `esp32-s2-kaluga-1.json <https://github.com/platformio/platform-e
 
 Uploading
 ---------
-Espressif ESP32-S2-Kaluga-1 Kit supports the next uploading protocols:
+Espressif ESP32-S2-Kaluga-1 Kit supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

@@ -66,7 +66,7 @@ board manifest `sparkfunBlynk.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-SparkFun Blynk Board supports the next uploading protocols:
+SparkFun Blynk Board supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

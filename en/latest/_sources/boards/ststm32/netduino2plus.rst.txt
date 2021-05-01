@@ -66,7 +66,7 @@ board manifest `netduino2plus.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-N2+ supports the next uploading protocols:
+N2+ supports the following uploading protocols:
 
 * ``dfu``
 * ``jlink``

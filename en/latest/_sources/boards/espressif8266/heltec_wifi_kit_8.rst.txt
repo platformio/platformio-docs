@@ -66,7 +66,7 @@ board manifest `heltec_wifi_kit_8.json <https://github.com/platformio/platform-e
 
 Uploading
 ---------
-Heltec Wifi kit 8 supports the next uploading protocols:
+Heltec Wifi kit 8 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

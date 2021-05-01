@@ -66,7 +66,7 @@ board manifest `lpc4088_dm.json <https://github.com/platformio/platform-nxplpc/b
 
 Uploading
 ---------
-Embedded Artists LPC4088 Display Module supports the next uploading protocols:
+Embedded Artists LPC4088 Display Module supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

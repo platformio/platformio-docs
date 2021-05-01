@@ -66,7 +66,7 @@ board manifest `genericSTM32F401CD.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F401CD (96k RAM. 384k Flash) supports the next uploading protocols:
+STM32F401CD (96k RAM. 384k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

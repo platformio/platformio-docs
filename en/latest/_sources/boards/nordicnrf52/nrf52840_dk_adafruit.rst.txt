@@ -66,7 +66,7 @@ board manifest `nrf52840_dk_adafruit.json <https://github.com/platformio/platfor
 
 Uploading
 ---------
-Nordic nRF52840-DK (Adafruit BSP) supports the next uploading protocols:
+Nordic nRF52840-DK (Adafruit BSP) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
