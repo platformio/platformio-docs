@@ -66,7 +66,7 @@ board manifest `frdm_kw41z.json <https://github.com/platformio/platform-freescal
 
 Uploading
 ---------
-Freescale Kinetis FRDM-KW41Z supports the next uploading protocols:
+Freescale Kinetis FRDM-KW41Z supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

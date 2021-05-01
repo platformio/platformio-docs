@@ -66,7 +66,7 @@ board manifest `mzeroUSB.json <https://github.com/platformio/platform-atmelsam/b
 
 Uploading
 ---------
-Arduino M0 supports the next uploading protocols:
+Arduino M0 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

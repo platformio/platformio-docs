@@ -66,7 +66,7 @@ board manifest `mbed_connect_odin.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-Mbed Connect Cloud supports the next uploading protocols:
+Mbed Connect Cloud supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

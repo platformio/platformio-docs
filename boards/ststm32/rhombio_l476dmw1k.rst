@@ -66,7 +66,7 @@ board manifest `rhombio_l476dmw1k.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-L476DMW1K supports the next uploading protocols:
+L476DMW1K supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

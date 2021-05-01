@@ -66,7 +66,7 @@ board manifest `wemos_d1_mini32.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-WeMos D1 MINI ESP32 supports the next uploading protocols:
+WeMos D1 MINI ESP32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

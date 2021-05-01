@@ -66,7 +66,7 @@ board manifest `eval_f373vc.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-STM32373C-EVAL supports the next uploading protocols:
+STM32373C-EVAL supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

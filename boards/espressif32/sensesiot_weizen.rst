@@ -66,7 +66,7 @@ board manifest `sensesiot_weizen.json <https://github.com/platformio/platform-es
 
 Uploading
 ---------
-LOGISENSES Senses Weizen supports the next uploading protocols:
+LOGISENSES Senses Weizen supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

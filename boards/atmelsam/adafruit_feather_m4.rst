@@ -66,7 +66,7 @@ board manifest `adafruit_feather_m4.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-Adafruit Feather M4 Express supports the next uploading protocols:
+Adafruit Feather M4 Express supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

@@ -66,7 +66,7 @@ board manifest `holyiot_yj16019.json <https://github.com/platformio/platform-nor
 
 Uploading
 ---------
-Holyiot YJ-16019 supports the next uploading protocols:
+Holyiot YJ-16019 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

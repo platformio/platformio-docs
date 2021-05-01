@@ -66,7 +66,7 @@ board manifest `genericSTM32F103ZF.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F103ZF (96k RAM. 768k Flash) supports the next uploading protocols:
+STM32F103ZF (96k RAM. 768k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

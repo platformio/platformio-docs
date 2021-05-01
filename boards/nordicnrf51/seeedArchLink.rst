@@ -66,7 +66,7 @@ board manifest `seeedArchLink.json <https://github.com/platformio/platform-nordi
 
 Uploading
 ---------
-Seeed Arch Link supports the next uploading protocols:
+Seeed Arch Link supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

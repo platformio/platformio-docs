@@ -66,7 +66,7 @@ board manifest `mkrvidor4000.json <https://github.com/platformio/platform-atmels
 
 Uploading
 ---------
-MKR Vidor 4000 supports the next uploading protocols:
+MKR Vidor 4000 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

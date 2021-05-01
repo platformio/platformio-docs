@@ -66,7 +66,7 @@ board manifest `disco_f723ie.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-32F723EDISCOVERY supports the next uploading protocols:
+32F723EDISCOVERY supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

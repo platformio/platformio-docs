@@ -66,7 +66,7 @@ board manifest `redbear_blend2.json <https://github.com/platformio/platform-nord
 
 Uploading
 ---------
-RedBearLab Blend 2 supports the next uploading protocols:
+RedBearLab Blend 2 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

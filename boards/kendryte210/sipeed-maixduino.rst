@@ -66,7 +66,7 @@ board manifest `sipeed-maixduino.json <https://github.com/sipeed/platform-kendry
 
 Uploading
 ---------
-Sipeed MAIXDUINO supports the next uploading protocols:
+Sipeed MAIXDUINO supports the following uploading protocols:
 
 * ``iot-bus-jtag``
 * ``jlink``

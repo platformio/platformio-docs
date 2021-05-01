@@ -66,7 +66,7 @@ board manifest `adafruit_feather_nrf52832.json <https://github.com/platformio/pl
 
 Uploading
 ---------
-Adafruit Bluefruit nRF52832 Feather supports the next uploading protocols:
+Adafruit Bluefruit nRF52832 Feather supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -28,14 +28,15 @@ Frameworks
     kendryte-freertos-sdk
     kendryte-standalone-sdk
     libopencm3
+    logicromsdk
     mbed
     nuclei-sdk
     pulp-os
+    pulp-runtime
     pulp-sdk
     pumbaa
     shakti-sdk
     simba
-    siwisdk
     spl
     stm32cube
     wd-riscv-sdk

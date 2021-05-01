@@ -66,7 +66,7 @@ board manifest `sodaq_one.json <https://github.com/platformio/platform-atmelsam/
 
 Uploading
 ---------
-SODAQ ONE supports the next uploading protocols:
+SODAQ ONE supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

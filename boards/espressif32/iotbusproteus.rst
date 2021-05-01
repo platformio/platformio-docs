@@ -66,7 +66,7 @@ board manifest `iotbusproteus.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-oddWires IoT-Bus Proteus supports the next uploading protocols:
+oddWires IoT-Bus Proteus supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

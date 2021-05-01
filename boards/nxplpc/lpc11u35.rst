@@ -66,7 +66,7 @@ board manifest `lpc11u35.json <https://github.com/platformio/platform-nxplpc/blo
 
 Uploading
 ---------
-EA LPC11U35 QuickStart Board supports the next uploading protocols:
+EA LPC11U35 QuickStart Board supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

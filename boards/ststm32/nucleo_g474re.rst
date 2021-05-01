@@ -66,7 +66,7 @@ board manifest `nucleo_g474re.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-Nucleo G474RE supports the next uploading protocols:
+Nucleo G474RE supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

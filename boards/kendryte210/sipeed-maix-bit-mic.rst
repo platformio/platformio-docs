@@ -66,7 +66,7 @@ board manifest `sipeed-maix-bit-mic.json <https://github.com/sipeed/platform-ken
 
 Uploading
 ---------
-Sipeed MAIX BiT with Mic supports the next uploading protocols:
+Sipeed MAIX BiT with Mic supports the following uploading protocols:
 
 * ``iot-bus-jtag``
 * ``jlink``

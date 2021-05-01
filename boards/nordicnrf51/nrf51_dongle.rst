@@ -66,7 +66,7 @@ board manifest `nrf51_dongle.json <https://github.com/platformio/platform-nordic
 
 Uploading
 ---------
-Nordic nRF51 Dongle (PCA10031) supports the next uploading protocols:
+Nordic nRF51 Dongle (PCA10031) supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

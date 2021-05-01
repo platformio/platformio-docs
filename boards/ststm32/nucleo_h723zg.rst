@@ -66,7 +66,7 @@ board manifest `nucleo_h723zg.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo H723ZG supports the next uploading protocols:
+ST Nucleo H723ZG supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

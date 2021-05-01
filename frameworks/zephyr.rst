@@ -876,6 +876,12 @@ Please click on board name for the further details.
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
 
 
 Examples
@@ -2247,8 +2253,8 @@ Waveshare
       - 256KB
       - 32KB
 
-WeAct
-~~~~~
+WeAct Studio
+~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -2267,3 +2273,10 @@ WeAct
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB

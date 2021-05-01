@@ -42,6 +42,9 @@ Platforms
     * - Name
       - Description
 
+    * - :ref:`platform_openhw`
+      - OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.
+
     * - :ref:`platform_sifive`
       - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
@@ -58,6 +61,12 @@ Frameworks
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
+
+    * - :ref:`framework_pulp-runtime`
+      - Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
+
+    * - :ref:`framework_pulp-sdk`
+      - Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
@@ -86,6 +95,13 @@ Boards
       - 450MHz
       - 16MB
       - 256MB
+    * - :ref:`board_openhw_nexys_a7`
+      - :ref:`platform_openhw`
+      - On-board
+      - 
+      - 320MHz
+      - 16MB
+      - 1.16MB
     * - :ref:`board_sifive_hifive-unleashed`
       - :ref:`platform_sifive`
       - On-board

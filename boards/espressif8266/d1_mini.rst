@@ -66,7 +66,7 @@ board manifest `d1_mini.json <https://github.com/platformio/platform-espressif82
 
 Uploading
 ---------
-WeMos D1 R2 and mini supports the next uploading protocols:
+WeMos D1 R2 and mini supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

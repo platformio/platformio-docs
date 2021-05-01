@@ -460,6 +460,12 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 128KB
       - 40KB
+    * - :ref:`board_ststm32_nucleo_l412rb_p`
+      - :ref:`platform_ststm32`
+      - STM32L412RBT6P
+      - 80MHz
+      - 128KB
+      - 40KB
     * - :ref:`board_ststm32_nucleo_l432kc`
       - :ref:`platform_ststm32`
       - STM32L432KCU6
@@ -695,18 +701,6 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 40KB
-    * - :ref:`board_ststm32_blackpill_f401cc`
-      - :ref:`platform_ststm32`
-      - STM32F401CCU6
-      - 84MHz
-      - 256KB
-      - 64KB
-    * - :ref:`board_ststm32_blackpill_f401ce`
-      - :ref:`platform_ststm32`
-      - STM32F401CEU6
-      - 84MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -1403,12 +1397,24 @@ Please click on board name for the further details.
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blackpill_f411ce`
       - :ref:`platform_ststm32`
       - STM32F411CEU6
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_ststm32_wraith32_v1`
       - :ref:`platform_ststm32`
       - STM32F051K6
@@ -2756,20 +2762,6 @@ ST
       - 168MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_blackpill_f401cc`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F401CCU6
-      - 84MHz
-      - 256KB
-      - 64KB
-    * - :ref:`board_ststm32_blackpill_f401ce`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F401CEU6
-      - 84MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -3169,6 +3161,13 @@ ST
       - 80MHz
       - 128KB
       - 40KB
+    * - :ref:`board_ststm32_nucleo_l412rb_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L412RBT6P
+      - 80MHz
+      - 128KB
+      - 40KB
     * - :ref:`board_ststm32_nucleo_l432kc`
       - :ref:`platform_ststm32`
       - On-board
@@ -3492,8 +3491,8 @@ Waveshare
       - 512KB
       - 64KB
 
-WeAct
-~~~~~
+WeAct Studio
+~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -3505,6 +3504,13 @@ WeAct
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blackpill_f411ce`
       - :ref:`platform_ststm32`
       - External
@@ -3512,6 +3518,13 @@ WeAct
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
 
 rhomb.io
 ~~~~~~~~

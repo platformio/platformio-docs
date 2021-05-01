@@ -66,7 +66,7 @@ board manifest `wifi_slot.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-WiFi Slot supports the next uploading protocols:
+WiFi Slot supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

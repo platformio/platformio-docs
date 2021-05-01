@@ -66,7 +66,7 @@ board manifest `sodaq_sff.json <https://github.com/platformio/platform-atmelsam/
 
 Uploading
 ---------
-SODAQ SFF supports the next uploading protocols:
+SODAQ SFF supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

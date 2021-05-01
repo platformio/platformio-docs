@@ -66,7 +66,7 @@ board manifest `microduino-core-esp32.json <https://github.com/platformio/platfo
 
 Uploading
 ---------
-Microduino Core ESP32 supports the next uploading protocols:
+Microduino Core ESP32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `quantum.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-Noduino Quantum supports the next uploading protocols:
+Noduino Quantum supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

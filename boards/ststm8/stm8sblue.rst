@@ -66,7 +66,7 @@ board manifest `stm8sblue.json <https://github.com/platformio/platform-ststm8/bl
 
 Uploading
 ---------
-ST STM8S103F3 Breakout Board supports the next uploading protocols:
+ST STM8S103F3 Breakout Board supports the following uploading protocols:
 
 * ``serial``
 * ``stlinkv2``

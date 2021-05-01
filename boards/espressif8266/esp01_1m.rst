@@ -66,7 +66,7 @@ board manifest `esp01_1m.json <https://github.com/platformio/platform-espressif8
 
 Uploading
 ---------
-Espressif Generic ESP8266 ESP-01 1M supports the next uploading protocols:
+Espressif Generic ESP8266 ESP-01 1M supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

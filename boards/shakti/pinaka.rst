@@ -66,7 +66,7 @@ board manifest `pinaka.json <https://github.com/platformio/platform-shakti/blob/
 
 Uploading
 ---------
-Pinaka on Artix-7 35T Arty FPGA Evaluation Kit supports the next uploading protocols:
+Pinaka on Artix-7 35T Arty FPGA Evaluation Kit supports the following uploading protocols:
 
 * ``ftdi``
 * ``ftdi``

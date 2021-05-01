@@ -66,7 +66,7 @@ board manifest `sonoff_th.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-Sonoff TH supports the next uploading protocols:
+Sonoff TH supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

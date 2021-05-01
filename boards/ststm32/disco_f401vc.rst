@@ -66,7 +66,7 @@ board manifest `disco_f401vc.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST 32F401CDISCOVERY supports the next uploading protocols:
+ST 32F401CDISCOVERY supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

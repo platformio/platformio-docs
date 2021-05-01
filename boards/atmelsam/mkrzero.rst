@@ -66,7 +66,7 @@ board manifest `mkrzero.json <https://github.com/platformio/platform-atmelsam/bl
 
 Uploading
 ---------
-Arduino MKRZERO supports the next uploading protocols:
+Arduino MKRZERO supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

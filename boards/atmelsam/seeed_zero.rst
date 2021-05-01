@@ -66,7 +66,7 @@ board manifest `seeed_zero.json <https://github.com/platformio/platform-atmelsam
 
 Uploading
 ---------
-Seeeduino Zero supports the next uploading protocols:
+Seeeduino Zero supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

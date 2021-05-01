@@ -66,7 +66,7 @@ board manifest `wifinfo.json <https://github.com/platformio/platform-espressif82
 
 Uploading
 ---------
-WifInfo supports the next uploading protocols:
+WifInfo supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `adafruit_pybadge_m4.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-Adafruit pyBadge M4 Express supports the next uploading protocols:
+Adafruit pyBadge M4 Express supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

@@ -66,7 +66,7 @@ board manifest `delta_dfbm_nq620.json <https://github.com/platformio/platform-no
 
 Uploading
 ---------
-Delta DFBM-NQ620 supports the next uploading protocols:
+Delta DFBM-NQ620 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

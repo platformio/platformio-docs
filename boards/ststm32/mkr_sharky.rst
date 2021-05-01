@@ -66,7 +66,7 @@ board manifest `mkr_sharky.json <https://github.com/platformio/platform-ststm32/
 
 Uploading
 ---------
-MKR Sharky supports the next uploading protocols:
+MKR Sharky supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

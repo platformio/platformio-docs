@@ -66,7 +66,7 @@ board manifest `lpc11u35_501.json <https://github.com/platformio/platform-nxplpc
 
 Uploading
 ---------
-CQ Publishing TG-LPC11U35-501 supports the next uploading protocols:
+CQ Publishing TG-LPC11U35-501 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

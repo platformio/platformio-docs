@@ -66,7 +66,7 @@ board manifest `laird_bl654_dvk.json <https://github.com/platformio/platform-nor
 
 Uploading
 ---------
-BL654 Development Kit supports the next uploading protocols:
+BL654 Development Kit supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

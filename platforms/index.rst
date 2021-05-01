@@ -70,6 +70,8 @@ Embedded
     nuclei
     nxpimxrt
     nxplpc
+    openhw
+    raspberrypi
     riscv_gap
     shakti
     sifive

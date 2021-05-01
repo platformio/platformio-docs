@@ -66,7 +66,7 @@ board manifest `genericSTM32F411CE.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F411CE (128k RAM. 512k Flash) supports the next uploading protocols:
+STM32F411CE (128k RAM. 512k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

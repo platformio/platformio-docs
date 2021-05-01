@@ -66,7 +66,7 @@ board manifest `sipeed-MF1.json <https://github.com/sipeed/platform-kendryte210/
 
 Uploading
 ---------
-Sipeed MF1 MF1 supports the next uploading protocols:
+Sipeed MF1 MF1 supports the following uploading protocols:
 
 * ``iot-bus-jtag``
 * ``jlink``

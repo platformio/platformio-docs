@@ -66,7 +66,7 @@ board manifest `seeedArchBLE.json <https://github.com/platformio/platform-nordic
 
 Uploading
 ---------
-Seeed Arch BLE supports the next uploading protocols:
+Seeed Arch BLE supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

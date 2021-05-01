@@ -66,7 +66,7 @@ board manifest `piranha_esp32.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-Fishino Piranha ESP-32 supports the next uploading protocols:
+Fishino Piranha ESP-32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

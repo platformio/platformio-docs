@@ -66,7 +66,7 @@ board manifest `vake_v1.json <https://github.com/platformio/platform-ststm32/blo
 
 Uploading
 ---------
-VAkE v1.0 supports the next uploading protocols:
+VAkE v1.0 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

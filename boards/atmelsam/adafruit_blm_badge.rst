@@ -66,7 +66,7 @@ board manifest `adafruit_blm_badge.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Adafruit BLM Badge supports the next uploading protocols:
+Adafruit BLM Badge supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

@@ -66,7 +66,7 @@ board manifest `d1_mini_pro.json <https://github.com/platformio/platform-espress
 
 Uploading
 ---------
-WeMos D1 mini Pro supports the next uploading protocols:
+WeMos D1 mini Pro supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

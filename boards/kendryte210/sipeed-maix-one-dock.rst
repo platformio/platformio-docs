@@ -66,7 +66,7 @@ board manifest `sipeed-maix-one-dock.json <https://github.com/sipeed/platform-ke
 
 Uploading
 ---------
-Sipeed MAIX ONE DOCK supports the next uploading protocols:
+Sipeed MAIX ONE DOCK supports the following uploading protocols:
 
 * ``iot-bus-jtag``
 * ``jlink``

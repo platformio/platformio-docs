@@ -66,7 +66,7 @@ board manifest `max32620fthr.json <https://github.com/platformio/platform-maxim3
 
 Uploading
 ---------
-MAX32620FTHR supports the next uploading protocols:
+MAX32620FTHR supports the following uploading protocols:
 
 * ``jlink``
 * ``mbed``

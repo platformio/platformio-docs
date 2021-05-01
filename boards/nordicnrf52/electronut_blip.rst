@@ -66,7 +66,7 @@ board manifest `electronut_blip.json <https://github.com/platformio/platform-nor
 
 Uploading
 ---------
-ElectronutLabs Blip supports the next uploading protocols:
+ElectronutLabs Blip supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

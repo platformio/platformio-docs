@@ -66,7 +66,7 @@ board manifest `nucleo_f207zg.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo F207ZG supports the next uploading protocols:
+ST Nucleo F207ZG supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

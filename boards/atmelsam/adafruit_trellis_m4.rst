@@ -66,7 +66,7 @@ board manifest `adafruit_trellis_m4.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-Adafruit Trellis M4 supports the next uploading protocols:
+Adafruit Trellis M4 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

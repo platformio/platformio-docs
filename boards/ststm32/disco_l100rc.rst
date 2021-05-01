@@ -66,7 +66,7 @@ board manifest `disco_l100rc.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST 32L100DISCOVERY supports the next uploading protocols:
+ST 32L100DISCOVERY supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

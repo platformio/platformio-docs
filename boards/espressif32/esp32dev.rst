@@ -66,7 +66,7 @@ board manifest `esp32dev.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-Espressif ESP32 Dev Module supports the next uploading protocols:
+Espressif ESP32 Dev Module supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

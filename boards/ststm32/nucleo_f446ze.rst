@@ -66,7 +66,7 @@ board manifest `nucleo_f446ze.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo F446ZE supports the next uploading protocols:
+ST Nucleo F446ZE supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

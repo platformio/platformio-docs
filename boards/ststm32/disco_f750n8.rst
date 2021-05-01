@@ -66,7 +66,7 @@ board manifest `disco_f750n8.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-STM32F7508-DK supports the next uploading protocols:
+STM32F7508-DK supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

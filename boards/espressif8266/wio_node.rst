@@ -66,7 +66,7 @@ board manifest `wio_node.json <https://github.com/platformio/platform-espressif8
 
 Uploading
 ---------
-Wio Node supports the next uploading protocols:
+Wio Node supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

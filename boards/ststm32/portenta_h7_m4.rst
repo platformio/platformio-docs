@@ -66,7 +66,7 @@ board manifest `portenta_h7_m4.json <https://github.com/platformio/platform-stst
 
 Uploading
 ---------
-Arduino Portenta H7 (M4 core) supports the next uploading protocols:
+Arduino Portenta H7 (M4 core) supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``dfu``

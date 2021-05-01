@@ -66,7 +66,7 @@ board manifest `maple.json <https://github.com/platformio/platform-ststm32/blob/
 
 Uploading
 ---------
-Maple supports the next uploading protocols:
+Maple supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

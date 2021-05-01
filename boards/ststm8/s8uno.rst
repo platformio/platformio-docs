@@ -66,7 +66,7 @@ board manifest `s8uno.json <https://github.com/platformio/platform-ststm8/blob/m
 
 Uploading
 ---------
-sduino UNO (STM8S105K6) supports the next uploading protocols:
+sduino UNO (STM8S105K6) supports the following uploading protocols:
 
 * ``serial``
 * ``stlinkv2``

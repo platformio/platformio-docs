@@ -66,7 +66,7 @@ board manifest `m5stack-grey.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-M5Stack GREY ESP32 supports the next uploading protocols:
+M5Stack GREY ESP32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

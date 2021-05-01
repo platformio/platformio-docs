@@ -66,7 +66,7 @@ board manifest `max32600mbed.json <https://github.com/platformio/platform-maxim3
 
 Uploading
 ---------
-Maxim ARM mbed Enabled Development Platform for MAX32600 supports the next uploading protocols:
+Maxim ARM mbed Enabled Development Platform for MAX32600 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``mbed``

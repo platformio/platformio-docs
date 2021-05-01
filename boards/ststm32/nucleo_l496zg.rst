@@ -66,7 +66,7 @@ board manifest `nucleo_l496zg.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo L496ZG supports the next uploading protocols:
+ST Nucleo L496ZG supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

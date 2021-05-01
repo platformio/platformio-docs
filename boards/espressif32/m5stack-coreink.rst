@@ -66,7 +66,7 @@ board manifest `m5stack-coreink.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-M5Stick-Core Ink supports the next uploading protocols:
+M5Stick-Core Ink supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

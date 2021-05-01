@@ -66,7 +66,7 @@ board manifest `huzzah.json <https://github.com/platformio/platform-espressif826
 
 Uploading
 ---------
-Adafruit HUZZAH ESP8266 supports the next uploading protocols:
+Adafruit HUZZAH ESP8266 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

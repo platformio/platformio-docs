@@ -66,7 +66,7 @@ board manifest `genericSTM32F407IGT6.json <https://github.com/platformio/platfor
 
 Uploading
 ---------
-STM32F407IG (192k RAM. 1024k Flash) supports the next uploading protocols:
+STM32F407IG (192k RAM. 1024k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

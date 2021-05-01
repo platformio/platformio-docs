@@ -66,7 +66,7 @@ board manifest `cloud_jam.json <https://github.com/platformio/platform-ststm32/b
 
 Uploading
 ---------
-RushUp Cloud-JAM supports the next uploading protocols:
+RushUp Cloud-JAM supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

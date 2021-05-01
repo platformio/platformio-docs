@@ -66,7 +66,7 @@ board manifest `disco_f072rb.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST Discovery F072RB supports the next uploading protocols:
+ST Discovery F072RB supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `d-duino-32.json <https://github.com/platformio/platform-espressi
 
 Uploading
 ---------
-D-duino-32 supports the next uploading protocols:
+D-duino-32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

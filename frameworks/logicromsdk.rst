@@ -9,17 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _framework_siwisdk:
+.. _framework_logicromsdk:
 
-SIWI GSM & NBIoT SDK
-====================
+LOGICROM SDK
+============
 
 :Configuration:
-  :ref:`projectconf_env_framework` = ``siwisdk``
+  :ref:`projectconf_env_framework` = ``logicromsdk``
 
-SIWI Software Development Kit for GSM & NBIoT SoCs (MT6261, MT2503 and MT2625)
+LOGICROM Software Development Kit for 4G LTE, GSM and NB-IoT Modules
 
-For more detailed information please visit `vendor site <https://github.com/siwiembedded/siwisdk?utm_source=platformio.org&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/waybyte/logicromsdk?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents

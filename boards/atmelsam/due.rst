@@ -66,7 +66,7 @@ board manifest `due.json <https://github.com/platformio/platform-atmelsam/blob/m
 
 Uploading
 ---------
-Arduino Due (Programming Port) supports the next uploading protocols:
+Arduino Due (Programming Port) supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

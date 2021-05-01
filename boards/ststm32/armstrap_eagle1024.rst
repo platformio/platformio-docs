@@ -66,7 +66,7 @@ board manifest `armstrap_eagle1024.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Armstrap Eagle 1024 supports the next uploading protocols:
+Armstrap Eagle 1024 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

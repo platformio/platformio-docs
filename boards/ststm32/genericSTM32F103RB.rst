@@ -66,7 +66,7 @@ board manifest `genericSTM32F103RB.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F103RB (20k RAM. 128k Flash) supports the next uploading protocols:
+STM32F103RB (20k RAM. 128k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

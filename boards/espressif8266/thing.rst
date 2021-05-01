@@ -66,7 +66,7 @@ board manifest `thing.json <https://github.com/platformio/platform-espressif8266
 
 Uploading
 ---------
-SparkFun ESP8266 Thing supports the next uploading protocols:
+SparkFun ESP8266 Thing supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

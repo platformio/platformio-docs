@@ -66,7 +66,7 @@ board manifest `IBMEthernetKit.json <https://github.com/platformio/platform-free
 
 Uploading
 ---------
-Ethernet IoT Starter Kit supports the next uploading protocols:
+Ethernet IoT Starter Kit supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

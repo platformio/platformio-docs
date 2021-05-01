@@ -66,7 +66,7 @@ board manifest `tian.json <https://github.com/platformio/platform-atmelsam/blob/
 
 Uploading
 ---------
-Arduino Tian supports the next uploading protocols:
+Arduino Tian supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

@@ -109,6 +109,7 @@ option.
   debug-tools/blackmagic
   debug-tools/cmsis-dap
   debug-tools/digilent-hs1
+  debug-tools/digilent-hs2
   debug-tools/esp-prog
   debug-tools/ftdi
   debug-tools/gd-link
@@ -120,6 +121,7 @@ option.
   debug-tools/olimex-arm-usb-ocd
   debug-tools/olimex-arm-usb-tiny-h
   debug-tools/olimex-jtag-tiny
+  debug-tools/ovpsim
   debug-tools/qemu
   debug-tools/renode
   debug-tools/rv-link
@@ -205,6 +207,12 @@ Platforms
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
+    * - :ref:`platform_openhw`
+      - OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.
+
+    * - :ref:`platform_raspberrypi`
+      - RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 
@@ -275,6 +283,12 @@ Frameworks
 
     * - :ref:`framework_pulp-os`
       - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory
+
+    * - :ref:`framework_pulp-runtime`
+      - Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
+
+    * - :ref:`framework_pulp-sdk`
+      - Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
@@ -1282,6 +1296,13 @@ Arduino
       - 16MHz
       - 30KB
       - 2KB
+    * - :ref:`board_raspberrypi_nanorp2040connect`
+      - :ref:`platform_raspberrypi`
+      - External
+      - RP2040
+      - 133MHz
+      - 2MB
+      - 264KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -1898,6 +1919,13 @@ Digilent
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_openhw_nexys_a7`
+      - :ref:`platform_openhw`
+      - On-board
+      - 
+      - 320MHz
+      - 16MB
+      - 1.16MB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
@@ -4797,6 +4825,27 @@ RUMBA
       - 512KB
       - 128KB
 
+Raspberry Pi
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_raspberrypi_pico`
+      - :ref:`platform_raspberrypi`
+      - External
+      - RP2040
+      - 133MHz
+      - 2MB
+      - 264KB
+
 Raytac
 ~~~~~~
 
@@ -5223,20 +5272,6 @@ ST
       - 168MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_blackpill_f401cc`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F401CCU6
-      - 84MHz
-      - 256KB
-      - 64KB
-    * - :ref:`board_ststm32_blackpill_f401ce`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F401CEU6
-      - 84MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -5640,6 +5675,13 @@ ST
       - :ref:`platform_ststm32`
       - On-board
       - STM32L412KBU6
+      - 80MHz
+      - 128KB
+      - 40KB
+    * - :ref:`board_ststm32_nucleo_l412rb_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L412RBT6P
       - 80MHz
       - 128KB
       - 40KB
@@ -7268,8 +7310,8 @@ Waveshare
       - 512KB
       - 64KB
 
-WeAct
-~~~~~
+WeAct Studio
+~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -7281,6 +7323,13 @@ WeAct
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blackpill_f411ce`
       - :ref:`platform_ststm32`
       - External
@@ -7288,6 +7337,13 @@ WeAct
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
 
 Wicked Device
 ~~~~~~~~~~~~~

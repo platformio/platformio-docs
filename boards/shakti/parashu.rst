@@ -66,7 +66,7 @@ board manifest `parashu.json <https://github.com/platformio/platform-shakti/blob
 
 Uploading
 ---------
-Parashu on Artix-7 100T Arty FPGA Evaluation Kit supports the next uploading protocols:
+Parashu on Artix-7 100T Arty FPGA Evaluation Kit supports the following uploading protocols:
 
 * ``ftdi``
 * ``ftdi``

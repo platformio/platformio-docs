@@ -66,7 +66,7 @@ board manifest `ttgo-lora32-v21.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-TTGO LoRa32-OLED v2.1.6 supports the next uploading protocols:
+TTGO LoRa32-OLED v2.1.6 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

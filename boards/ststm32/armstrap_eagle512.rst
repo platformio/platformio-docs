@@ -66,7 +66,7 @@ board manifest `armstrap_eagle512.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-Armstrap Eagle 512 supports the next uploading protocols:
+Armstrap Eagle 512 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `nodemcu-32s.json <https://github.com/platformio/platform-espress
 
 Uploading
 ---------
-NodeMCU-32S supports the next uploading protocols:
+NodeMCU-32S supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

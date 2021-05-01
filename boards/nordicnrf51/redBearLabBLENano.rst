@@ -66,7 +66,7 @@ board manifest `redBearLabBLENano.json <https://github.com/platformio/platform-n
 
 Uploading
 ---------
-RedBearLab BLE Nano 1.5 supports the next uploading protocols:
+RedBearLab BLE Nano 1.5 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

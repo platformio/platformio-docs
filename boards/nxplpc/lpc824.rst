@@ -66,7 +66,7 @@ board manifest `lpc824.json <https://github.com/platformio/platform-nxplpc/blob/
 
 Uploading
 ---------
-LPCXpresso824-MAX supports the next uploading protocols:
+LPCXpresso824-MAX supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `stm32f4stamp.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-STM32F4Stamp F405 supports the next uploading protocols:
+STM32F4Stamp F405 supports the following uploading protocols:
 
 * ``dfu``
 * ``jlink``

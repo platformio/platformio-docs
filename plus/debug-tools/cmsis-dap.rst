@@ -97,6 +97,9 @@ Platforms
     * - :ref:`platform_nxplpc`
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
+    * - :ref:`platform_raspberrypi`
+      - RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
@@ -278,6 +281,13 @@ Boards
       - 64MHz
       - 960KB
       - 256KB
+    * - :ref:`board_raspberrypi_nanorp2040connect`
+      - :ref:`platform_raspberrypi`
+      - External
+      - RP2040
+      - 133MHz
+      - 2MB
+      - 264KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -439,20 +449,6 @@ Boards
       - 72MHz
       - 256KB
       - 40KB
-    * - :ref:`board_ststm32_blackpill_f401cc`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F401CCU6
-      - 84MHz
-      - 256KB
-      - 64KB
-    * - :ref:`board_ststm32_blackpill_f401ce`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F401CEU6
-      - 84MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_ststm32_blue_f407ve_mini`
       - :ref:`platform_ststm32`
       - External
@@ -1111,6 +1107,13 @@ Boards
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_raspberrypi_pico`
+      - :ref:`platform_raspberrypi`
+      - External
+      - RP2040
+      - 133MHz
+      - 2MB
+      - 264KB
     * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
       - :ref:`platform_nordicnrf52`
       - External
@@ -1514,6 +1517,13 @@ Boards
       - :ref:`platform_ststm32`
       - On-board
       - STM32L412KBU6
+      - 80MHz
+      - 128KB
+      - 40KB
+    * - :ref:`board_ststm32_nucleo_l412rb_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L412RBT6P
       - 80MHz
       - 128KB
       - 40KB
@@ -1965,6 +1975,13 @@ Boards
       - 72MHz
       - 512KB
       - 64KB
+    * - :ref:`board_ststm32_blackpill_f401cc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CCU6
+      - 84MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_blackpill_f411ce`
       - :ref:`platform_ststm32`
       - External
@@ -1972,6 +1989,13 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_blackpill_f401ce`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F401CEU6
+      - 84MHz
+      - 512KB
+      - 96KB
     * - :ref:`board_nordicnrf52_dwm1001_dev`
       - :ref:`platform_nordicnrf52`
       - On-board

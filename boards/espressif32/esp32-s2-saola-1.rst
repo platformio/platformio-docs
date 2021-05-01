@@ -66,7 +66,7 @@ board manifest `esp32-s2-saola-1.json <https://github.com/platformio/platform-es
 
 Uploading
 ---------
-Espressif ESP32-S2-Saola-1 supports the next uploading protocols:
+Espressif ESP32-S2-Saola-1 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

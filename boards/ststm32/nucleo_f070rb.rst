@@ -66,7 +66,7 @@ board manifest `nucleo_f070rb.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo F070RB supports the next uploading protocols:
+ST Nucleo F070RB supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

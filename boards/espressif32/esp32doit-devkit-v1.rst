@@ -66,7 +66,7 @@ board manifest `esp32doit-devkit-v1.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-DOIT ESP32 DEVKIT V1 supports the next uploading protocols:
+DOIT ESP32 DEVKIT V1 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

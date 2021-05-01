@@ -66,7 +66,7 @@ board manifest `nrf52840_mdk.json <https://github.com/platformio/platform-nordic
 
 Uploading
 ---------
-Makerdiary nRF52840-MDK supports the next uploading protocols:
+Makerdiary nRF52840-MDK supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

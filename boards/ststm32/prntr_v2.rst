@@ -66,7 +66,7 @@ board manifest `prntr_v2.json <https://github.com/platformio/platform-ststm32/bl
 
 Uploading
 ---------
-PrntrBoard V2 supports the next uploading protocols:
+PrntrBoard V2 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

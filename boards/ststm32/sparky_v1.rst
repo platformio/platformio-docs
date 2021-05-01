@@ -66,7 +66,7 @@ board manifest `sparky_v1.json <https://github.com/platformio/platform-ststm32/b
 
 Uploading
 ---------
-Sparky V1 F303 supports the next uploading protocols:
+Sparky V1 F303 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

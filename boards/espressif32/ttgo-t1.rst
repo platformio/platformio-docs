@@ -66,7 +66,7 @@ board manifest `ttgo-t1.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-TTGO T1 supports the next uploading protocols:
+TTGO T1 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

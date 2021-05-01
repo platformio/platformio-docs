@@ -66,7 +66,7 @@ board manifest `ng_beacon.json <https://github.com/platformio/platform-nordicnrf
 
 Uploading
 ---------
-ng-beacon supports the next uploading protocols:
+ng-beacon supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

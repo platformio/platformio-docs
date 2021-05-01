@@ -66,7 +66,7 @@ board manifest `adafruit_metro_m4.json <https://github.com/platformio/platform-a
 
 Uploading
 ---------
-Adafruit Metro M4 supports the next uploading protocols:
+Adafruit Metro M4 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

@@ -66,7 +66,7 @@ board manifest `sparkfun_samd21_proRF.json <https://github.com/platformio/platfo
 
 Uploading
 ---------
-SparkFun SAMD21 Pro RF supports the next uploading protocols:
+SparkFun SAMD21 Pro RF supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

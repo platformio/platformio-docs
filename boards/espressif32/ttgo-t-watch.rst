@@ -66,7 +66,7 @@ board manifest `ttgo-t-watch.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-TTGO T-Watch supports the next uploading protocols:
+TTGO T-Watch supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

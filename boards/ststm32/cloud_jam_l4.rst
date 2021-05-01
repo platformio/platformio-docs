@@ -66,7 +66,7 @@ board manifest `cloud_jam_l4.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-RushUp Cloud-JAM L4 supports the next uploading protocols:
+RushUp Cloud-JAM L4 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

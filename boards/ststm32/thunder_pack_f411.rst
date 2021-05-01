@@ -66,7 +66,7 @@ board manifest `thunder_pack_f411.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-ThunderPack v1.1+ supports the next uploading protocols:
+ThunderPack v1.1+ supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

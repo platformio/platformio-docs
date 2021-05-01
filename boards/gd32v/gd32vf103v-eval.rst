@@ -66,7 +66,7 @@ board manifest `gd32vf103v-eval.json <https://github.com/sipeed/platform-gd32v/b
 
 Uploading
 ---------
-GD32VF103V-EVAL supports the next uploading protocols:
+GD32VF103V-EVAL supports the following uploading protocols:
 
 * ``altera-usb-blaster``
 * ``gd-link``

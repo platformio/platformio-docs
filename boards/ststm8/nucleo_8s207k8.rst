@@ -66,7 +66,7 @@ board manifest `nucleo_8s207k8.json <https://github.com/platformio/platform-stst
 
 Uploading
 ---------
-NUCLEO-8S207K8 supports the next uploading protocols:
+NUCLEO-8S207K8 supports the following uploading protocols:
 
 * ``serial``
 * ``stlinkv21``

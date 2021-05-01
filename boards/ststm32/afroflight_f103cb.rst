@@ -66,7 +66,7 @@ board manifest `afroflight_f103cb.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-AfroFlight Rev5 (8MHz) supports the next uploading protocols:
+AfroFlight Rev5 (8MHz) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

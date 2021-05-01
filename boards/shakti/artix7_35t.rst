@@ -66,7 +66,7 @@ board manifest `artix7_35t.json <https://github.com/platformio/platform-shakti/b
 
 Uploading
 ---------
-Artix-7 35T Arty FPGA Evaluation Kit supports the next uploading protocols:
+Artix-7 35T Arty FPGA Evaluation Kit supports the following uploading protocols:
 
 * ``ftdi``
 * ``ftdi``

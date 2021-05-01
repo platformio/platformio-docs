@@ -66,7 +66,7 @@ board manifest `nrf51_mkit.json <https://github.com/platformio/platform-nordicnr
 
 Uploading
 ---------
-Nordic nRF51822-mKIT supports the next uploading protocols:
+Nordic nRF51822-mKIT supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``mbed``

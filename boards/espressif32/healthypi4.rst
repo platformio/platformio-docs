@@ -66,7 +66,7 @@ board manifest `healthypi4.json <https://github.com/platformio/platform-espressi
 
 Uploading
 ---------
-ProtoCentral HealthyPi 4 supports the next uploading protocols:
+ProtoCentral HealthyPi 4 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `olimex_e407.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-STM32-E407 supports the next uploading protocols:
+STM32-E407 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

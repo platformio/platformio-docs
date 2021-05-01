@@ -66,7 +66,7 @@ board manifest `sonoff_s20.json <https://github.com/platformio/platform-espressi
 
 Uploading
 ---------
-Sonoff S20 supports the next uploading protocols:
+Sonoff S20 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

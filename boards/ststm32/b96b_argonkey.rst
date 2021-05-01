@@ -66,7 +66,7 @@ board manifest `b96b_argonkey.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-96Boards Argonkey (STEVAL-MKI187V1) supports the next uploading protocols:
+96Boards Argonkey (STEVAL-MKI187V1) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

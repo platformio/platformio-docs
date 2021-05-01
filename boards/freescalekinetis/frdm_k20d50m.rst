@@ -66,7 +66,7 @@ board manifest `frdm_k20d50m.json <https://github.com/platformio/platform-freesc
 
 Uploading
 ---------
-Freescale Kinetis FRDM-K20D50M supports the next uploading protocols:
+Freescale Kinetis FRDM-K20D50M supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

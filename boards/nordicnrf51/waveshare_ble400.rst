@@ -66,7 +66,7 @@ board manifest `waveshare_ble400.json <https://github.com/platformio/platform-no
 
 Uploading
 ---------
-Waveshare BLE400 supports the next uploading protocols:
+Waveshare BLE400 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

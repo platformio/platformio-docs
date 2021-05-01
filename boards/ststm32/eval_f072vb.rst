@@ -66,7 +66,7 @@ board manifest `eval_f072vb.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-STM32F072-EVAL supports the next uploading protocols:
+STM32F072-EVAL supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `adafruit_hallowing.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Adafruit Hallowing M0 supports the next uploading protocols:
+Adafruit Hallowing M0 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

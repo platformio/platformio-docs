@@ -66,7 +66,7 @@ board manifest `efm32zg_stk3200.json <https://github.com/platformio/platform-sil
 
 Uploading
 ---------
-EFM32ZG-STK3200 Zero Gecko supports the next uploading protocols:
+EFM32ZG-STK3200 Zero Gecko supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

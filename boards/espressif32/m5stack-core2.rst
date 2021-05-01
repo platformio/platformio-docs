@@ -66,7 +66,7 @@ board manifest `m5stack-core2.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-M5Stack Core2 supports the next uploading protocols:
+M5Stack Core2 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `redBearLab.json <https://github.com/platformio/platform-nordicnr
 
 Uploading
 ---------
-RedBearLab nRF51822 supports the next uploading protocols:
+RedBearLab nRF51822 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

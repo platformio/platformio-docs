@@ -66,7 +66,7 @@ board manifest `wio_link.json <https://github.com/platformio/platform-espressif8
 
 Uploading
 ---------
-Wio Link supports the next uploading protocols:
+Wio Link supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

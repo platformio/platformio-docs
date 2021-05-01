@@ -66,7 +66,7 @@ board manifest `wemosbat.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-WeMos WiFi and Bluetooth Battery supports the next uploading protocols:
+WeMos WiFi and Bluetooth Battery supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

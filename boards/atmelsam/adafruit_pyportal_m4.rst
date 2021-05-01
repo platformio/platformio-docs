@@ -66,7 +66,7 @@ board manifest `adafruit_pyportal_m4.json <https://github.com/platformio/platfor
 
 Uploading
 ---------
-Adafruit PyPortal M4 supports the next uploading protocols:
+Adafruit PyPortal M4 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``
