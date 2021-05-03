@@ -25,6 +25,13 @@ For more detailed information please visit `vendor site <https://www.raspberrypi
     :local:
     :depth: 1
 
+.. warning::
+    Windows OS may not have necessary drivers to properly program Raspberry Pi Pico boards.
+    Please make sure your board is recognized and visible in the Device Managers in both
+    generic and bootloader modes. Usually, if there is only a mass storage device called
+    ``RPI-RP2`` then you need to program your board manually by dragging and dropping the
+    ``firmware.uf2`` file directly to that mass storage device.
+
 
 Examples
 --------

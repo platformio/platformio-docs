@@ -335,7 +335,7 @@ following code:</p>
     <span class="n">BT_DATA</span><span class="p">(</span><span class="n">BT_DATA_NAME_COMPLETE</span><span class="p">,</span> <span class="n">DEVICE_NAME</span><span class="p">,</span> <span class="n">DEVICE_NAME_LEN</span><span class="p">),</span>
 <span class="p">};</span>
 
-<span class="k">static</span> <span class="kt">void</span> <span class="n">bt_ready</span><span class="p">(</span><span class="kt">int</span> <span class="n">err</span><span class="p">)</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">bt_ready</span><span class="p">(</span><span class="kt">int</span> <span class="n">err</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth init failed (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">err</span><span class="p">);</span>
@@ -355,7 +355,7 @@ following code:</p>
     <span class="n">printk</span><span class="p">(</span><span class="s">&quot;Beacon started</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
   <span class="p">}</span>
 
-<span class="kt">void</span> <span class="n">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kt">int</span> <span class="n">err</span><span class="p">;</span>
 

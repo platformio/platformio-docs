@@ -294,32 +294,62 @@ guide first.</p>
 <div class="section" id="using-cmd-run-command">
 <h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this headline">¶</a></h3>
 <p>This variant is default choice for native PlatformIO projects:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">dependencies</span><span class="p">:</span>
-    <span class="nt">pre</span><span class="p">:</span>
-        <span class="c1"># Install the latest stable PlatformIO</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sudo pip install -U platformio</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.1</span>
+<span class="nt">orbs</span><span class="p">:</span>
+  <span class="nt">python</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">circleci/python@1.4.0</span>
 
-<span class="nt">test</span><span class="p">:</span>
-    <span class="nt">override</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio run -e &lt;ID_1&gt; -e &lt;ID_2&gt; -e &lt;ID_N&gt;</span>
+<span class="nt">jobs</span><span class="p">:</span>
+  <span class="nt">build</span><span class="p">:</span>
+    <span class="nt">executor</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python/default</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">checkout</span>  <span class="c1"># checkout source code to working directory</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+          <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install PlatformIO</span>
+          <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pip install --upgrade platformio</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+          <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Compile Project</span>
+          <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pio run</span>
+
+<span class="nt">workflows</span><span class="p">:</span>
+  <span class="nt">main</span><span class="p">:</span>
+    <span class="nt">jobs</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">build</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="using-cmd-ci-command">
 <h3><a class="toc-backref" href="#id5">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this headline">¶</a></h3>
-<p>This variant is more convenient when project is written as a library (when there are
-examples or testing code) as it has additional options for specifying extra libraries
-and boards from command line interface:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">dependencies</span><span class="p">:</span>
-    <span class="nt">pre</span><span class="p">:</span>
-        <span class="c1"># Install the latest stable PlatformIO</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sudo pip install -U platformio</span>
+<p>This variant is more convenient if a project is written as a library (when there are
+several examples or test code available) as it has additional options for specifying
+extra libraries and boards from the command line interface:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.1</span>
+<span class="nt">orbs</span><span class="p">:</span>
+  <span class="nt">python</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">circleci/python@1.4.0</span>
 
-<span class="nt">test</span><span class="p">:</span>
-    <span class="nt">override</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci path/to/test/file.c --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci examples/file.ino --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci path/to/test/directory --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span>
+<span class="nt">jobs</span><span class="p">:</span>
+  <span class="nt">build</span><span class="p">:</span>
+    <span class="nt">parameters</span><span class="p">:</span>
+      <span class="nt">ci_src</span><span class="p">:</span>
+        <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">string</span>
+    <span class="nt">executor</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python/default</span>
+    <span class="nt">environment</span><span class="p">:</span>
+      <span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;&lt; parameters.ci_src &gt;&gt;</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">checkout</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+          <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install PlatformIO</span>
+          <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+          <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Compile &lt;&lt; parameters.ci_src &gt;&gt;</span>
+          <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pio ci --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span>
+
+<span class="nt">workflows</span><span class="p">:</span>
+  <span class="nt">main</span><span class="p">:</span>
+    <span class="nt">jobs</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">build</span><span class="p">:</span>
+          <span class="nt">matrix</span><span class="p">:</span>
+            <span class="nt">parameters</span><span class="p">:</span>
+              <span class="nt">ci_src</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;path/to/test/file.c&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;examples/file.ino&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;path/to/test/directory&quot;</span><span class="p p-Indicator">]</span>
 </pre></div>
 </div>
 <div class="section" id="library-dependencies">
@@ -329,40 +359,30 @@ and boards from command line interface:</p>
 </div>
 <div class="section" id="install-dependent-library-using-librarymanager">
 <h3><a class="toc-backref" href="#id7">Install dependent library using <a class="reference internal" href="../../librarymanager/index.html#librarymanager"><span class="std std-ref">Library Management</span></a></a><a class="headerlink" href="#install-dependent-library-using-librarymanager" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">dependencies</span><span class="p">:</span>
-    <span class="nt">pre</span><span class="p">:</span>
-        <span class="c1"># Install the latest stable PlatformIO</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sudo pip install -U platformio</span>
-
-        <span class="c1"># OneWire Library with ID=1 https://platformio.org/lib/show/1/OneWire</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio lib -g install 1</span>
-
-<span class="nt">test</span><span class="p">:</span>
-    <span class="nt">override</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci path/to/test/file.c --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install library</span>
+  <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pio lib -g install 1</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="manually-download-dependent-library-and-include-in-build-process-via-lib-option">
 <h3><a class="toc-backref" href="#id8">Manually download dependent library and include in build process via <code class="docutils literal notranslate"><span class="pre">--lib</span></code> option</a><a class="headerlink" href="#manually-download-dependent-library-and-include-in-build-process-via-lib-option" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">dependencies</span><span class="p">:</span>
-    <span class="nt">pre</span><span class="p">:</span>
-        <span class="c1"># Install the latest stable PlatformIO</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sudo pip install -U platformio</span>
-
-        <span class="c1"># download library to the temporary directory</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">wget https://github.com/PaulStoffregen/OneWire/archive/master.zip -O /tmp/onewire_source.zip</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">unzip /tmp/onewire_source.zip -d /tmp/</span>
-
-<span class="nt">test</span><span class="p">:</span>
-    <span class="nt">override</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci path/to/test/file.c --lib=&quot;/tmp/OneWire-master&quot; --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install library</span>
+    <span class="nt">command</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+      <span class="no">wget https://github.com/PaulStoffregen/OneWire/archive/master.zip -O /tmp/onewire_source.zip</span>
+      <span class="no">unzip /tmp/onewire_source.zip -d /tmp/</span>
+<span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Compile project</span>
+    <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pio ci --lib=&quot;/tmp/OneWire-master&quot; --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="custom-build-flags">
 <h4><a class="toc-backref" href="#id9">Custom Build Flags</a><a class="headerlink" href="#custom-build-flags" title="Permalink to this headline">¶</a></h4>
-<p>PlatformIO allows one to specify own build flags using <span class="target" id="index-0"></span><a class="reference internal" href="../../envvars.html#envvar-PLATFORMIO_BUILD_FLAGS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_FLAGS</span></code></a> environment</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">machine</span><span class="p">:</span>
+<p>PlatformIO allows you to specify your own build flags using <span class="target" id="index-0"></span><a class="reference internal" href="../../envvars.html#envvar-PLATFORMIO_BUILD_FLAGS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_FLAGS</span></code></a> environment:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobs</span><span class="p">:</span>
+  <span class="nt">build</span><span class="p">:</span>
+    <span class="nt">executor</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python/default</span>
     <span class="nt">environment</span><span class="p">:</span>
         <span class="nt">PLATFORMIO_BUILD_FLAGS</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">-D SPECIFIC_MACROS -I/extra/inc</span>
 </pre></div>
@@ -372,12 +392,12 @@ and boards from command line interface:</p>
 </div>
 <div class="section" id="advanced-configuration">
 <h4><a class="toc-backref" href="#id10">Advanced configuration</a><a class="headerlink" href="#advanced-configuration" title="Permalink to this headline">¶</a></h4>
-<p>PlatformIO allows one to configure multiple build environments for the single
+<p>PlatformIO allows you to configure multiple build environments for the single
 source code using <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
-<p>Instead of <code class="docutils literal notranslate"><span class="pre">--board</span></code> option, please use <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmdoption-pio-ci-c"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">ci</span> <span class="pre">--project-conf</span></code></a></p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">test</span><span class="p">:</span>
-    <span class="nt">override</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci path/to/test/file.c --project-conf=/path/to/platoformio.ini</span>
+<p>Instead of <code class="docutils literal notranslate"><span class="pre">--board</span></code>, please use the <code class="docutils literal notranslate"><span class="pre">--project-conf</span></code> option:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Compile project</span>
+    <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pio ci /path/to/test/file.c --project-conf=/path/to/platoformio.ini</span>
 </pre></div>
 </div>
 </div>
@@ -385,68 +405,45 @@ source code using <a class="reference internal" href="../../projectconf/index.ht
 </div>
 <div class="section" id="examples">
 <h2><a class="toc-backref" href="#id11">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Custom build flags</p></li>
-</ol>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">dependencies</span><span class="p">:</span>
-    <span class="nt">cache_directories</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="s">&quot;~/.platformio&quot;</span>
-
-    <span class="nt">pre</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sudo pip install -U platformio</span>
-
-        <span class="c1"># pre-install PlatformIO development platforms, they will be cached</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio platform install atmelavr atmelsam teensy</span>
-
-        <span class="c1">#</span>
-        <span class="c1"># Libraries from PlatformIO Library Registry:</span>
-        <span class="c1">#</span>
-        <span class="c1"># https://platformio.org/lib/show/416/TinyGPS</span>
-        <span class="c1"># https://platformio.org/lib/show/417/SPI4Teensy3</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio lib -g install 416 417</span>
-
-<span class="nt">test</span><span class="p">:</span>
-    <span class="nt">override</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci examples/acm/acm_terminal --board=uno --board=teensy31 --board=due --lib=&quot;.&quot;</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci examples/adk/adk_barcode --board=uno --board=teensy31 --board=due --lib=&quot;.&quot;</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci examples/adk/ArduinoBlinkLED --board=uno --board=teensy31 --board=due --lib=&quot;.&quot;</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci examples/adk/demokit_20 --board=uno --board=teensy31 --board=due --lib=&quot;.&quot;</span>
-        <span class="c1"># ...</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci examples/Xbox/XBOXUSB --board=uno --board=teensy31 --board=due --lib=&quot;.&quot;</span>
+<p>Integration for USB_Host_Shield_2.0 project. The <code class="docutils literal notranslate"><span class="pre">config.yml</span></code> configuration file:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.1</span>
+<span class="nt">orbs</span><span class="p">:</span>
+  <span class="nt">python</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">circleci/python@1.4.0</span>
+<span class="nt">jobs</span><span class="p">:</span>
+  <span class="nt">build</span><span class="p">:</span>
+    <span class="nt">parameters</span><span class="p">:</span>
+      <span class="nt">example</span><span class="p">:</span>
+        <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">string</span>
+    <span class="nt">executor</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python/default</span>
+    <span class="nt">environment</span><span class="p">:</span>
+          <span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;&lt; parameters.example &gt;&gt;</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">checkout</span>  <span class="c1"># checkout source code to working directory</span>
+      <span class="p p-Indicator">-</span> <span class="nt">save_cache</span><span class="p">:</span>
+          <span class="c1"># Cache PlatformIO packages for current project</span>
+          <span class="nt">key</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">deps9-{{ .Branch }}-{{ arch }}</span>
+          <span class="nt">paths</span><span class="p">:</span>
+            <span class="p p-Indicator">-</span> <span class="s">&quot;~/.platformio&quot;</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+          <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install dependencies</span>
+          <span class="nt">command</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+            <span class="no">pip install --upgrade platformio</span>
+            <span class="no">wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip</span>
+            <span class="no">unzip /tmp/spi4teensy3.zip -d /tmp</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+          <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Run PlatformIO</span>
+          <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pio ci --lib=&quot;.&quot; --lib=&quot;/tmp/spi4teensy3-master&quot; --board=uno --board=teensy31 --board=due</span>
+<span class="nt">workflows</span><span class="p">:</span>
+  <span class="nt">main</span><span class="p">:</span>
+    <span class="nt">jobs</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">build</span><span class="p">:</span>
+          <span class="nt">matrix</span><span class="p">:</span>
+            <span class="nt">parameters</span><span class="p">:</span>
+              <span class="nt">example</span><span class="p">:</span>
+                <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">examples/Bluetooth/PS3SPP/PS3SPP.ino</span>
+                <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">examples/pl2303/pl2303_gps/pl2303_gps.ino</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="2">
-<li><p>Dependency on external libraries</p></li>
-</ol>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">dependencies</span><span class="p">:</span>
-    <span class="nt">pre</span><span class="p">:</span>
-        <span class="c1"># Install the latest stable PlatformIO</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sudo pip install -U platformio</span>
-
-        <span class="c1"># download dependent libraries</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">wget https://github.com/jcw/jeelib/archive/master.zip -O /tmp/jeelib.zip</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">unzip /tmp/jeelib.zip -d /tmp</span>
-
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">wget https://github.com/Rodot/Gamebuino/archive/master.zip  -O /tmp/gamebuino.zip</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">unzip /tmp/gamebuino.zip -d /tmp</span>
-
-<span class="nt">test</span><span class="p">:</span>
-    <span class="nt">override</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span>  <span class="l l-Scalar l-Scalar-Plain">pio ci examples/backSoon/backSoon.ino --lib=&quot;.&quot; --lib=&quot;/tmp/jeelib-master&quot; --lib=&quot;/tmp/Gamebuino-master/libraries/tinyFAT&quot; --board=uno --board=megaatmega2560</span>
-        <span class="p p-Indicator">-</span>  <span class="l l-Scalar l-Scalar-Plain">pio ci examples/etherNode/etherNode.ino --lib=&quot;.&quot; --lib=&quot;/tmp/jeelib-master&quot; --lib=&quot;/tmp/Gamebuino-master/libraries/tinyFAT&quot; --board=uno --board=megaatmega2560</span>
-        <span class="p p-Indicator">-</span>  <span class="l l-Scalar l-Scalar-Plain">pio ci examples/getDHCPandDNS/getDHCPandDNS.ino --lib=&quot;.&quot; --lib=&quot;/tmp/jeelib-master&quot; --lib=&quot;/tmp/Gamebuino-master/libraries/tinyFAT&quot; --board=uno --board=megaatmega2560</span>
-        <span class="p p-Indicator">-</span>  <span class="l l-Scalar l-Scalar-Plain">pio ci examples/getStaticIP/getStaticIP.ino --lib=&quot;.&quot; --lib=&quot;/tmp/jeelib-master&quot; --lib=&quot;/tmp/Gamebuino-master/libraries/tinyFAT&quot; --board=uno --board=megaatmega2560</span>
-        <span class="c1"># ...</span>
-        <span class="p p-Indicator">-</span>  <span class="l l-Scalar l-Scalar-Plain">pio ci examples/twitter/twitter.ino --lib=&quot;.&quot; --lib=&quot;/tmp/jeelib-master&quot; --lib=&quot;/tmp/Gamebuino-master/libraries/tinyFAT&quot; --board=uno --board=megaatmega2560</span>
-        <span class="p p-Indicator">-</span>  <span class="l l-Scalar l-Scalar-Plain">pio ci examples/udpClientSendOnly/udpClientSendOnly.ino --lib=&quot;.&quot; --lib=&quot;/tmp/jeelib-master&quot; --lib=&quot;/tmp/Gamebuino-master/libraries/tinyFAT&quot; --board=uno --board=megaatmega2560</span>
-        <span class="p p-Indicator">-</span>  <span class="l l-Scalar l-Scalar-Plain">pio ci examples/udpListener/udpListener.ino --lib=&quot;.&quot; --lib=&quot;/tmp/jeelib-master&quot; --lib=&quot;/tmp/Gamebuino-master/libraries/tinyFAT&quot; --board=uno --board=megaatmega2560</span>
-        <span class="p p-Indicator">-</span>  <span class="l l-Scalar l-Scalar-Plain">pio ci examples/webClient/webClient.ino --lib=&quot;.&quot; --lib=&quot;/tmp/jeelib-master&quot; --lib=&quot;/tmp/Gamebuino-master/libraries/tinyFAT&quot; --board=uno --board=megaatmega2560</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Configuration file: <a class="reference external" href="https://github.com/ivankravets/ethercard/blob/master/circle.yml">https://github.com/ivankravets/ethercard/blob/master/circle.yml</a></p></li>
-<li><p>Build History: <a class="reference external" href="https://circleci.com/gh/ivankravets/ethercard/tree/master">https://circleci.com/gh/ivankravets/ethercard/tree/master</a></p></li>
-</ul>
 </div>
 </div>
 

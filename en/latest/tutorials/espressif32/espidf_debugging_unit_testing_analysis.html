@@ -323,7 +323,7 @@ following code:</p>
 
 <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">TAG</span> <span class="o">=</span> <span class="s">&quot;wifi softAP&quot;</span><span class="p">;</span>
 
-<span class="k">static</span> <span class="kt">void</span> <span class="n">wifi_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">arg</span><span class="p">,</span> <span class="n">esp_event_base_t</span> <span class="n">event_base</span><span class="p">,</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">wifi_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">arg</span><span class="p">,</span> <span class="n">esp_event_base_t</span> <span class="n">event_base</span><span class="p">,</span>
                                     <span class="kt">int32_t</span> <span class="n">event_id</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">event_data</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">event_id</span> <span class="o">==</span> <span class="n">WIFI_EVENT_AP_STACONNECTED</span><span class="p">)</span> <span class="p">{</span>
@@ -337,7 +337,7 @@ following code:</p>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kt">void</span> <span class="n">wifi_init_softap</span><span class="p">()</span>
+<span class="kt">void</span> <span class="nf">wifi_init_softap</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="n">tcpip_adapter_init</span><span class="p">();</span>
     <span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_loop_create_default</span><span class="p">());</span>
@@ -368,7 +368,7 @@ following code:</p>
              <span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span> <span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="kt">void</span> <span class="n">app_main</span><span class="p">()</span>
+<span class="kt">void</span> <span class="nf">app_main</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="c1">//Initialize NVS</span>
     <span class="n">esp_err_t</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">nvs_flash_init</span><span class="p">();</span>
