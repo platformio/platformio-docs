@@ -50,35 +50,64 @@ This variant is default choice for native PlatformIO projects:
 
 .. code-block:: yaml
 
-    dependencies:
-        pre:
-            # Install the latest stable PlatformIO
-            - sudo pip install -U platformio
+    version: 2.1
+    orbs:
+      python: circleci/python@1.4.0
 
-    test:
-        override:
-            - pio run -e <ID_1> -e <ID_2> -e <ID_N>
+    jobs:
+      build:
+        executor: python/default
+        steps:
+          - checkout  # checkout source code to working directory
+          - run:
+              name: Install PlatformIO
+              command: pip install --upgrade platformio
+          - run:
+              name: Compile Project
+              command: pio run
 
+    workflows:
+      main:
+        jobs:
+          - build
 
 Using :ref:`cmd_ci` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This variant is more convenient when project is written as a library (when there are
-examples or testing code) as it has additional options for specifying extra libraries
-and boards from command line interface:
+This variant is more convenient if a project is written as a library (when there are
+several examples or test code available) as it has additional options for specifying
+extra libraries and boards from the command line interface:
 
 .. code-block:: yaml
 
-    dependencies:
-        pre:
-            # Install the latest stable PlatformIO
-            - sudo pip install -U platformio
+    version: 2.1
+    orbs:
+      python: circleci/python@1.4.0
 
-    test:
-        override:
-            - pio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
-            - pio ci examples/file.ino --board=<ID_1> --board=<ID_2> --board=<ID_N>
-            - pio ci path/to/test/directory --board=<ID_1> --board=<ID_2> --board=<ID_N>
+    jobs:
+      build:
+        parameters:
+          ci_src:
+            type: string
+        executor: python/default
+        environment:
+          PLATFORMIO_CI_SRC: << parameters.ci_src >>
+        steps:
+          - checkout
+          - run:
+              name: Install PlatformIO
+              command: pip install -U platformio
+          - run:
+              name: Compile << parameters.ci_src >>
+              command: pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+
+    workflows:
+      main:
+        jobs:
+          - build:
+              matrix:
+                parameters:
+                  ci_src: ["path/to/test/file.c", "examples/file.ino", "path/to/test/directory"]
 
 
 Library dependencies
@@ -91,47 +120,38 @@ Install dependent library using :ref:`librarymanager`
 
 .. code-block:: yaml
 
-    dependencies:
-        pre:
-            # Install the latest stable PlatformIO
-            - sudo pip install -U platformio
+    - run:
+      name: Install library
+      command: pio lib -g install 1
 
-            # OneWire Library with ID=1 https://platformio.org/lib/show/1/OneWire
-            - pio lib -g install 1
-
-    test:
-        override:
-            - pio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Manually download dependent library and include in build process via ``--lib`` option
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: yaml
 
-    dependencies:
-        pre:
-            # Install the latest stable PlatformIO
-            - sudo pip install -U platformio
+  - run:
+      name: Install library
+      command: |
+        wget https://github.com/PaulStoffregen/OneWire/archive/master.zip -O /tmp/onewire_source.zip
+        unzip /tmp/onewire_source.zip -d /tmp/
+  - run:
+      name: Compile project
+      command: pio ci --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
-            # download library to the temporary directory
-            - wget https://github.com/PaulStoffregen/OneWire/archive/master.zip -O /tmp/onewire_source.zip
-            - unzip /tmp/onewire_source.zip -d /tmp/
-
-    test:
-        override:
-            - pio ci path/to/test/file.c --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Custom Build Flags
 ~~~~~~~~~~~~~~~~~~
 
-PlatformIO allows one to specify own build flags using :envvar:`PLATFORMIO_BUILD_FLAGS` environment
+PlatformIO allows you to specify your own build flags using :envvar:`PLATFORMIO_BUILD_FLAGS` environment:
 
 .. code-block:: yaml
 
-    machine:
+    jobs:
+      build:
+        executor: python/default
         environment:
             PLATFORMIO_BUILD_FLAGS: -D SPECIFIC_MACROS -I/extra/inc
-
 
 For the more details, please follow to
 :ref:`available build flags/options <projectconf_build_flags>`.
@@ -140,78 +160,58 @@ For the more details, please follow to
 Advanced configuration
 ~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO allows one to configure multiple build environments for the single
+PlatformIO allows you to configure multiple build environments for the single
 source code using :ref:`projectconf`.
 
-Instead of ``--board`` option, please use :option:`pio ci --project-conf`
+Instead of ``--board``, please use the ``--project-conf`` option:
 
 .. code-block:: yaml
 
-    test:
-        override:
-            - pio ci path/to/test/file.c --project-conf=/path/to/platoformio.ini
+    - run:
+        name: Compile project
+        command: pio ci /path/to/test/file.c --project-conf=/path/to/platoformio.ini
 
 Examples
 --------
 
-1. Custom build flags
+Integration for USB_Host_Shield_2.0 project. The ``config.yml`` configuration file:
 
 .. code-block:: yaml
 
-    dependencies:
-        cache_directories:
-            - "~/.platformio"
+  version: 2.1
+  orbs:
+    python: circleci/python@1.4.0
+  jobs:
+    build:
+      parameters:
+        example:
+          type: string
+      executor: python/default
+      environment:
+            PLATFORMIO_CI_SRC: << parameters.example >>
+      steps:
+        - checkout  # checkout source code to working directory
+        - save_cache:
+            # Cache PlatformIO packages for current project
+            key: deps9-{{ .Branch }}-{{ arch }}
+            paths:
+              - "~/.platformio"
+        - run:
+            name: Install dependencies
+            command: |
+              pip install --upgrade platformio
+              wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip
+              unzip /tmp/spi4teensy3.zip -d /tmp
+        - run:
+            name: Run PlatformIO
+            command: pio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
+  workflows:
+    main:
+      jobs:
+        - build:
+            matrix:
+              parameters:
+                example:
+                  - examples/Bluetooth/PS3SPP/PS3SPP.ino
+                  - examples/pl2303/pl2303_gps/pl2303_gps.ino
 
-        pre:
-            - sudo pip install -U platformio
-
-            # pre-install PlatformIO development platforms, they will be cached
-            - pio platform install atmelavr atmelsam teensy
-
-            #
-            # Libraries from PlatformIO Library Registry:
-            #
-            # https://platformio.org/lib/show/416/TinyGPS
-            # https://platformio.org/lib/show/417/SPI4Teensy3
-            - pio lib -g install 416 417
-
-    test:
-        override:
-            - pio ci examples/acm/acm_terminal --board=uno --board=teensy31 --board=due --lib="."
-            - pio ci examples/adk/adk_barcode --board=uno --board=teensy31 --board=due --lib="."
-            - pio ci examples/adk/ArduinoBlinkLED --board=uno --board=teensy31 --board=due --lib="."
-            - pio ci examples/adk/demokit_20 --board=uno --board=teensy31 --board=due --lib="."
-            # ...
-            - pio ci examples/Xbox/XBOXUSB --board=uno --board=teensy31 --board=due --lib="."
-
-
-2. Dependency on external libraries
-
-.. code-block:: yaml
-
-    dependencies:
-        pre:
-            # Install the latest stable PlatformIO
-            - sudo pip install -U platformio
-
-            # download dependent libraries
-            - wget https://github.com/jcw/jeelib/archive/master.zip -O /tmp/jeelib.zip
-            - unzip /tmp/jeelib.zip -d /tmp
-
-            - wget https://github.com/Rodot/Gamebuino/archive/master.zip  -O /tmp/gamebuino.zip
-            - unzip /tmp/gamebuino.zip -d /tmp
-
-    test:
-        override:
-            -  pio ci examples/backSoon/backSoon.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  pio ci examples/etherNode/etherNode.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  pio ci examples/getDHCPandDNS/getDHCPandDNS.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  pio ci examples/getStaticIP/getStaticIP.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            # ...
-            -  pio ci examples/twitter/twitter.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  pio ci examples/udpClientSendOnly/udpClientSendOnly.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  pio ci examples/udpListener/udpListener.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-            -  pio ci examples/webClient/webClient.ino --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
-
-* Configuration file: https://github.com/ivankravets/ethercard/blob/master/circle.yml
-* Build History: https://circleci.com/gh/ivankravets/ethercard/tree/master
