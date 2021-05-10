@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
@@ -303,8 +306,8 @@ different examples without creating own project per them.</p>
 <div class="section" id="options">
 <h2><a class="toc-backref" href="#id4">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <dl class="std option">
-<dt id="cmdoption-pio-ci-l">
-<span id="cmdoption-pio-ci-lib"></span><code class="sig-name descname"><span class="pre">-l</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--lib</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-ci-l" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-ci-l">
+<span id="cmdoption-pio-ci-lib"></span><span class="sig-name descname"><span class="pre">-l</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--lib</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-ci-l" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Source code which will be copied to <code class="docutils literal notranslate"><span class="pre">&lt;BUILD_DIR&gt;/lib</span></code> directly.</p>
@@ -312,8 +315,8 @@ different examples without creating own project per them.</p>
 PlatformIO will create temporary directory within <code class="docutils literal notranslate"><span class="pre">&lt;BUILD_DIR&gt;/lib</span></code> and copy
 the rest files into it.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-ci-exclude">
-<code class="sig-name descname"><span class="pre">--exclude</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-ci-exclude" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-ci-exclude">
+<span class="sig-name descname"><span class="pre">--exclude</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-ci-exclude" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Exclude directories and/-or files from <a class="reference internal" href="#cmdoption-pio-ci-build-dir"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">ci</span> <span class="pre">--build-dir</span></code></a>. The
@@ -328,16 +331,16 @@ path must be relative to PlatformIO project within
 </pre></div>
 </div>
 <dl class="std option">
-<dt id="cmdoption-pio-ci-b">
-<span id="cmdoption-pio-ci-board"></span><code class="sig-name descname"><span class="pre">-b</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--board</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-ci-b" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-ci-b">
+<span id="cmdoption-pio-ci-board"></span><span class="sig-name descname"><span class="pre">-b</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--board</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-ci-b" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Build project with automatically pre-generated environments based on board
 settings.</p>
 <p>For more details please look into <a class="reference internal" href="project/cmd_init.html#cmdoption-pio-project-init-b"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">project</span> <span class="pre">init</span> <span class="pre">--board</span></code></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-ci-build-dir">
-<code class="sig-name descname"><span class="pre">--build-dir</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-ci-build-dir" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-ci-build-dir">
+<span class="sig-name descname"><span class="pre">--build-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-ci-build-dir" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Path to directory where PlatformIO will initialise new project. By default it’s
@@ -348,20 +351,20 @@ temporary directory within your operating system.</p>
 keep it, please use <a class="reference internal" href="#cmdoption-pio-ci-keep-build-dir"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">ci</span> <span class="pre">--keep-build-dir</span></code></a>.</p>
 </div>
 <dl class="std option">
-<dt id="cmdoption-pio-ci-keep-build-dir">
-<code class="sig-name descname"><span class="pre">--keep-build-dir</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-ci-keep-build-dir" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-ci-keep-build-dir">
+<span class="sig-name descname"><span class="pre">--keep-build-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-ci-keep-build-dir" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Don’t remove <a class="reference internal" href="#cmdoption-pio-ci-build-dir"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">ci</span> <span class="pre">--build-dir</span></code></a> after build process.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-ci-c">
-<span id="cmdoption-pio-ci-project-conf"></span><code class="sig-name descname"><span class="pre">-c</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--project-conf</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-ci-c" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-ci-c">
+<span id="cmdoption-pio-ci-project-conf"></span><span class="sig-name descname"><span class="pre">-c</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-conf</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-ci-c" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Build project using pre-configured <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-ci-O">
-<span id="cmdoption-pio-ci-o"></span><span id="cmdoption-pio-ci-project-option"></span><code class="sig-name descname"><span class="pre">-O</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--project-option</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-ci-O" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-ci-O">
+<span id="cmdoption-pio-ci-o"></span><span id="cmdoption-pio-ci-project-option"></span><span class="sig-name descname"><span class="pre">-O</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-option</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-ci-O" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Pass additional options from <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> to <a class="reference internal" href="project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> command.
@@ -375,8 +378,8 @@ library <code class="docutils literal notranslate"><span class="pre">pio</span> 
 <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">ci</span> <span class="pre">--project-option=&quot;build_unflags</span> <span class="pre">=</span> <span class="pre">-std=gnu++11&quot;</span> <span class="pre">--project-option=&quot;build_flags</span> <span class="pre">=</span> <span class="pre">-std=c++14&quot;</span></code></p>
 </div>
 <dl class="std option">
-<dt id="cmdoption-pio-ci-v">
-<span id="cmdoption-pio-ci-verbose"></span><code class="sig-name descname"><span class="pre">-v</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--verbose</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-ci-v" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-ci-v">
+<span id="cmdoption-pio-ci-verbose"></span><span class="sig-name descname"><span class="pre">-v</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-ci-v" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Shows detailed information when processing environments.</p>

@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
@@ -268,14 +271,14 @@
 <div class="section" id="options">
 <h2><a class="toc-backref" href="#id4">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <dl class="std option">
-<dt id="cmdoption-pio-check-e">
-<span id="cmdoption-pio-check-environment"></span><code class="sig-name descname"><span class="pre">-e</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--environment</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-e" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-e">
+<span id="cmdoption-pio-check-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-e" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Process specified environments.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-check-pattern">
-<code class="sig-name descname"><span class="pre">--pattern</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-pattern" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-pattern">
+<span class="sig-name descname"><span class="pre">--pattern</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-pattern" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>You can specify which source files or folders should be included/excluded from check
@@ -283,8 +286,8 @@ process. By default only <a class="reference internal" href="../../projectconf/s
 are checked. Multiple <code class="docutils literal notranslate"><span class="pre">--pattern</span></code> options and <a class="reference external" href="http://en.wikipedia.org/wiki/Glob_(programming)">GLOB Patterns</a> are allowed.</p>
 <p>Example: <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--pattern=&quot;tests&quot;</span> <span class="pre">--pattern=&quot;src/*.cpp&quot;</span></code></p>
 <dl class="std option">
-<dt id="cmdoption-pio-check-flags">
-<code class="sig-name descname"><span class="pre">--flags</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-flags" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-flags">
+<span class="sig-name descname"><span class="pre">--flags</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-flags" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Specify additional flags that need to be passed to the analysis tool. If multiple tools
@@ -312,8 +315,8 @@ Individual flags for each tool can be added using a special suffix with the tool
 <p>Multiple <code class="docutils literal notranslate"><span class="pre">--flags</span></code> options are allowed.</p>
 <p>Example: <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--flags</span> <span class="pre">&quot;-DDEBUG</span> <span class="pre">cppcheck:</span> <span class="pre">--std=c++11</span> <span class="pre">--platform=avr8&quot;</span></code></p>
 <dl class="std option">
-<dt id="cmdoption-pio-check-severity">
-<code class="sig-name descname"><span class="pre">--severity</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-severity" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-severity">
+<span class="sig-name descname"><span class="pre">--severity</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-severity" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Specify the <a class="reference internal" href="../../plus/pio-check.html#check-severity"><span class="std std-ref">Defect severity</span></a> types which will be reported by the <a class="reference internal" href="../../plus/pio-check.html#check-tools"><span class="std std-ref">Check tools</span></a>.
@@ -321,27 +324,27 @@ Possible values described in <a class="reference internal" href="../../plus/pio-
 options are allowed.</p>
 <p>Example: <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--severity=high</span></code></p>
 <dl class="std option">
-<dt id="cmdoption-pio-check-d">
-<span id="cmdoption-pio-check-project-dir"></span><code class="sig-name descname"><span class="pre">-d</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--project-dir</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-d" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-d">
+<span id="cmdoption-pio-check-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-d" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Specify the path to project directory. By default, <code class="docutils literal notranslate"><span class="pre">--project-dir</span></code> is equal
 to the current working directory (<code class="docutils literal notranslate"><span class="pre">CWD</span></code>).</p>
 <dl class="std option">
-<dt id="cmdoption-pio-check-c">
-<span id="cmdoption-pio-check-project-conf"></span><code class="sig-name descname"><span class="pre">-c</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--project-conf</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-c" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-c">
+<span id="cmdoption-pio-check-project-conf"></span><span class="sig-name descname"><span class="pre">-c</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-conf</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-c" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Process project with a custom <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-check-json-output">
-<code class="sig-name descname"><span class="pre">--json-output</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-json-output" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-json-output">
+<span class="sig-name descname"><span class="pre">--json-output</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-json-output" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Return the output in <a class="reference external" href="http://en.wikipedia.org/wiki/JSON">JSON</a> format.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-check-fail-on-defect">
-<code class="sig-name descname"><span class="pre">--fail-on-defect</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-fail-on-defect" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-fail-on-defect">
+<span class="sig-name descname"><span class="pre">--fail-on-defect</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-fail-on-defect" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Fail (exit with non-zero code) if there is a defect found with specified
@@ -350,15 +353,15 @@ a tool selected for performing check. Possible values described in
 <a class="reference internal" href="../../plus/pio-check.html#check-severity"><span class="std std-ref">Defect severity</span></a> section. Multiple <code class="docutils literal notranslate"><span class="pre">--fail-on-defect</span></code> options are allowed.</p>
 <p>Example: <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--fail-on-defect=low</span> <span class="pre">--fail-on-defect=medium</span></code></p>
 <dl class="std option">
-<dt id="cmdoption-pio-check-s">
-<span id="cmdoption-pio-check-silent"></span><code class="sig-name descname"><span class="pre">-s</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--silent</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-s" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-s">
+<span id="cmdoption-pio-check-silent"></span><span class="sig-name descname"><span class="pre">-s</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--silent</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-s" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Suppress progress reporting and show only defects with <code class="docutils literal notranslate"><span class="pre">high</span></code> severity.
 See <a class="reference internal" href="../../plus/pio-check.html#check-severity"><span class="std std-ref">Defect severity</span></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-check-v">
-<span id="cmdoption-pio-check-verbose"></span><code class="sig-name descname"><span class="pre">-v</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--verbose</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-check-v" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-check-v">
+<span id="cmdoption-pio-check-verbose"></span><span class="sig-name descname"><span class="pre">-v</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-v" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Show detailed information when processing environments.</p>

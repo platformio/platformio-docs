@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
@@ -283,24 +286,24 @@
 <div class="section" id="options">
 <h2><a class="toc-backref" href="#id4">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <dl class="std option">
-<dt id="cmdoption-pio-run-e">
-<span id="cmdoption-pio-run-environment"></span><code class="sig-name descname"><span class="pre">-e</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--environment</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-e" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-e">
+<span id="cmdoption-pio-run-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-e" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Process specified environments. Multiple environments are allowed.</p>
 <p>You can also specify which environments should be processed by default using
 <a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option from <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-run-t">
-<span id="cmdoption-pio-run-target"></span><code class="sig-name descname"><span class="pre">-t</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--target</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-t" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-t">
+<span id="cmdoption-pio-run-target"></span><span class="sig-name descname"><span class="pre">-t</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--target</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-t" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Process specified targets. Multiple targets are allowed.</p>
 <p>You can configure default targets per project environment using
 <a class="reference internal" href="../../projectconf/section_env_build.html#projectconf-targets"><span class="std std-ref">targets</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-run-list-targets">
-<code class="sig-name descname"><span class="pre">--list-targets</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-list-targets" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-list-targets">
+<span class="sig-name descname"><span class="pre">--list-targets</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-list-targets" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <div class="versionadded">
@@ -328,49 +331,49 @@ build operation. You can configure monitor using
 </li>
 </ul>
 <dl class="std option">
-<dt id="cmdoption-pio-run-upload-port">
-<code class="sig-name descname"><span class="pre">--upload-port</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-upload-port" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-upload-port">
+<span class="sig-name descname"><span class="pre">--upload-port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-upload-port" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Custom upload port of embedded board. To print all available ports use
 <a class="reference internal" href="device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a> command.</p>
 <p>If upload port is not specified, PlatformIO will try to detect it automatically.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-run-d">
-<span id="cmdoption-pio-run-project-dir"></span><code class="sig-name descname"><span class="pre">-d</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--project-dir</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-d" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-d">
+<span id="cmdoption-pio-run-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-d" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Specify the path to project directory. By default, <code class="docutils literal notranslate"><span class="pre">--project-dir</span></code> is equal
 to current working directory (<code class="docutils literal notranslate"><span class="pre">CWD</span></code>).</p>
 <dl class="std option">
-<dt id="cmdoption-pio-run-c">
-<span id="cmdoption-pio-run-project-conf"></span><code class="sig-name descname"><span class="pre">-c</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--project-conf</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-c" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-c">
+<span id="cmdoption-pio-run-project-conf"></span><span class="sig-name descname"><span class="pre">-c</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-conf</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-c" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Process project with a custom <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-run-j">
-<span id="cmdoption-pio-run-jobs"></span><code class="sig-name descname"><span class="pre">-j</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--jobs</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-j" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-j">
+<span id="cmdoption-pio-run-jobs"></span><span class="sig-name descname"><span class="pre">-j</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--jobs</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-j" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Control a number of parallel build jobs. Default is a number of CPUs in a system.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-run-s">
-<span id="cmdoption-pio-run-silent"></span><code class="sig-name descname"><span class="pre">-s</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--silent</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-s" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-s">
+<span id="cmdoption-pio-run-silent"></span><span class="sig-name descname"><span class="pre">-s</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--silent</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-s" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Suppress progress reporting</p>
 <dl class="std option">
-<dt id="cmdoption-pio-run-v">
-<span id="cmdoption-pio-run-verbose"></span><code class="sig-name descname"><span class="pre">-v</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--verbose</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-v" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-v">
+<span id="cmdoption-pio-run-verbose"></span><span class="sig-name descname"><span class="pre">-v</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-v" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Shows detailed information when processing environments.</p>
 <p>This option can also be set globally using <a class="reference internal" href="cmd_settings.html#setting-force-verbose"><span class="std std-ref">force_verbose</span></a> setting
 or by environment variable <span class="target" id="index-0"></span><a class="reference internal" href="../../envvars.html#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_SETTING_FORCE_VERBOSE</span></code></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-run-disable-auto-clean">
-<code class="sig-name descname"><span class="pre">--disable-auto-clean</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-run-disable-auto-clean" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-run-disable-auto-clean">
+<span class="sig-name descname"><span class="pre">--disable-auto-clean</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-disable-auto-clean" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Disable auto-clean of <a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-build-dir"><span class="std std-ref">build_dir</span></a> when <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>

@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
@@ -279,14 +282,14 @@ in <a class="reference internal" href="../../../projectconf/index.html#projectco
 <div class="section" id="options">
 <h2><a class="toc-backref" href="#id4">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-test-e">
-<span id="cmdoption-pio-remote-test-environment"></span><code class="sig-name descname"><span class="pre">-e</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--environment</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-test-e" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-test-e">
+<span id="cmdoption-pio-remote-test-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-test-e" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Process specified environments. More details <a class="reference internal" href="../cmd_run.html#cmdoption-pio-run-e"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--environment</span></code></a></p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-test-i">
-<span id="cmdoption-pio-remote-test-ignore"></span><code class="sig-name descname"><span class="pre">-i</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--ignore</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-test-i" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-test-i">
+<span id="cmdoption-pio-remote-test-ignore"></span><span class="sig-name descname"><span class="pre">-i</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--ignore</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-test-i" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Ignore tests where the name matches specified patterns. More than one
@@ -320,16 +323,16 @@ environment, please take a look at <a class="reference internal" href="../../../
 </table>
 <p>For example, <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">test</span> <span class="pre">--ignore</span> <span class="pre">&quot;mytest*&quot;</span> <span class="pre">-i</span> <span class="pre">&quot;test[13]&quot;</span></code></p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-test-upload-port">
-<code class="sig-name descname"><span class="pre">--upload-port</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-test-upload-port" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-test-upload-port">
+<span class="sig-name descname"><span class="pre">--upload-port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-test-upload-port" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>A port that is intended for firmware uploading. To list available ports
 please use <a class="reference internal" href="../device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a> command.</p>
 <p>If upload port is not specified, PlatformIO will try to detect it automatically.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-test-test-port">
-<code class="sig-name descname"><span class="pre">--test-port</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-test-test-port" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-test-test-port">
+<span class="sig-name descname"><span class="pre">--test-port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-test-test-port" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>A Serial/UART port that PlatformIO uses as communication interface between
@@ -337,15 +340,15 @@ PlatformIO Unit Test Engine and target device. To list available ports
 please use <a class="reference internal" href="../device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a> command.</p>
 <p>If test port is not specified, PlatformIO will try to detect it automatically.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-test-d">
-<span id="cmdoption-pio-remote-test-project-dir"></span><code class="sig-name descname"><span class="pre">-d</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--project-dir</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-test-d" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-test-d">
+<span id="cmdoption-pio-remote-test-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-test-d" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Specify the path to project directory. By default, <code class="docutils literal notranslate"><span class="pre">--project-dir</span></code> is equal
 to current working directory (<code class="docutils literal notranslate"><span class="pre">CWD</span></code>).</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-test-r">
-<span id="cmdoption-pio-remote-test-force-remote"></span><code class="sig-name descname"><span class="pre">-r</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--force-remote</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-test-r" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-test-r">
+<span id="cmdoption-pio-remote-test-force-remote"></span><span class="sig-name descname"><span class="pre">-r</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--force-remote</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-test-r" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>By default, <a class="reference internal" href="../../../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a> processes project on a host machine and deploy
@@ -355,20 +358,20 @@ final testing firmware (program) to remote device (embedded board).</p>
 <a class="reference internal" href="../../../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a> will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-test-without-building">
-<code class="sig-name descname"><span class="pre">--without-building</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-test-without-building" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-test-without-building">
+<span class="sig-name descname"><span class="pre">--without-building</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-test-without-building" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Skip building stage.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-test-without-uploading">
-<code class="sig-name descname"><span class="pre">--without-uploading</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-test-without-uploading" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-test-without-uploading">
+<span class="sig-name descname"><span class="pre">--without-uploading</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-test-without-uploading" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Skip uploading stage</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-test-v">
-<span id="cmdoption-pio-remote-test-verbose"></span><code class="sig-name descname"><span class="pre">-v</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--verbose</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-test-v" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-test-v">
+<span id="cmdoption-pio-remote-test-verbose"></span><span class="sig-name descname"><span class="pre">-v</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-test-v" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Shows detailed information when processing environments.</p>

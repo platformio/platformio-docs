@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
@@ -279,53 +282,53 @@ install required toolchains, frameworks, SDKs, etc., and process project.</p>
 <div class="section" id="options">
 <h2><a class="toc-backref" href="#id4">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-run-e">
-<span id="cmdoption-pio-remote-run-environment"></span><code class="sig-name descname"><span class="pre">-e</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--environment</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-run-e" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-run-e">
+<span id="cmdoption-pio-remote-run-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-e" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Process specified environments.</p>
 <p>You can also specify which environments should be processed by default using
 <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option from <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-run-t">
-<span id="cmdoption-pio-remote-run-target"></span><code class="sig-name descname"><span class="pre">-t</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--target</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-run-t" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-run-t">
+<span id="cmdoption-pio-remote-run-target"></span><span class="sig-name descname"><span class="pre">-t</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--target</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-t" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Process specified targets. See <a class="reference internal" href="../cmd_run.html#cmdoption-pio-run-list-targets"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--list-targets</span></code></a> documentation
 for available targets.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-run-upload-port">
-<code class="sig-name descname"><span class="pre">--upload-port</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-run-upload-port" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-run-upload-port">
+<span class="sig-name descname"><span class="pre">--upload-port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-upload-port" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Custom upload port of embedded board. To print all available ports use
 <a class="reference internal" href="cmd_device.html#cmd-remote-device"><span class="std std-ref">pio remote device</span></a> command.</p>
 <p>If upload port is not specified, PlatformIO will try to detect it automatically.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-run-d">
-<span id="cmdoption-pio-remote-run-project-dir"></span><code class="sig-name descname"><span class="pre">-d</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--project-dir</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-run-d" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-run-d">
+<span id="cmdoption-pio-remote-run-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-d" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Specify the path to project directory. By default, <code class="docutils literal notranslate"><span class="pre">--project-dir</span></code> is equal
 to current working directory (<code class="docutils literal notranslate"><span class="pre">CWD</span></code>).</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-run-v">
-<span id="cmdoption-pio-remote-run-verbose"></span><code class="sig-name descname"><span class="pre">-v</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--verbose</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-run-v" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-run-v">
+<span id="cmdoption-pio-remote-run-verbose"></span><span class="sig-name descname"><span class="pre">-v</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-v" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Shows detailed information when processing environments.</p>
 <p>This option can also be set globally using <a class="reference internal" href="../cmd_settings.html#setting-force-verbose"><span class="std std-ref">force_verbose</span></a> setting
 or by environment variable <span class="target" id="index-0"></span><a class="reference internal" href="../../../envvars.html#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_SETTING_FORCE_VERBOSE</span></code></a>.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-run-disable-auto-clean">
-<code class="sig-name descname"><span class="pre">--disable-auto-clean</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-run-disable-auto-clean" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-run-disable-auto-clean">
+<span class="sig-name descname"><span class="pre">--disable-auto-clean</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-disable-auto-clean" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Disable auto-clean of <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-build-dir"><span class="std std-ref">build_dir</span></a> when <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
 or <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> (project structure) have been modified.</p>
 <dl class="std option">
-<dt id="cmdoption-pio-remote-run-r">
-<span id="cmdoption-pio-remote-run-force-remote"></span><code class="sig-name descname"><span class="pre">-r</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--force-remote</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-pio-remote-run-r" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-remote-run-r">
+<span id="cmdoption-pio-remote-run-force-remote"></span><span class="sig-name descname"><span class="pre">-r</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--force-remote</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-r" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>By default, <a class="reference internal" href="../../../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a> builds project on a host machine and deploy
