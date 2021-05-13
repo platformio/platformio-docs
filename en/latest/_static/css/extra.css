@@ -585,6 +585,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-weight: bold;
 }
 
+/* Banners */
+
 /* TOP Banner */
 .top-banner {
     text-shadow: 0 1px 1px rgba(0, 0, 0, .12);
@@ -648,4 +650,17 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .top-banner .top-banner-close:hover {
     filter: alpha(Opacity=100);
     opacity: 1
+}
+
+/* TOP text banner */
+
+.top-text-banner {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.top-text-banner hr {
+  margin-left: -100px;
+  margin-right: -100px;
+  border: 5px solid #efefef;
 }
