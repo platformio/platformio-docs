@@ -225,6 +225,21 @@ Please click on board name for the further details.
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_neokeytrinkey_m0`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_neotrinkey_m0`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_proxlighttrinkey_m0`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
       - SAMD51J20A
       - 120MHz
@@ -246,6 +261,16 @@ Please click on board name for the further details.
       - 1MB
       - 256KB
     * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_rotarytrinkey_m0`
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_slidetrinkey_m0`
       - SAMD21E18A
       - 48MHz
       - 256KB
@@ -832,6 +857,24 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_atmelsam_adafruit_neokeytrinkey_m0`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_neotrinkey_m0`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_proxlighttrinkey_m0`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_adafruit_pygamer_advance_m4`
       - External
       - SAMD51J20A
@@ -857,6 +900,18 @@ Adafruit
       - 1MB
       - 256KB
     * - :ref:`board_atmelsam_adafruit_qt_py_m0`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_rotarytrinkey_m0`
+      - External
+      - SAMD21E18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_atmelsam_adafruit_slidetrinkey_m0`
       - External
       - SAMD21E18A
       - 48MHz

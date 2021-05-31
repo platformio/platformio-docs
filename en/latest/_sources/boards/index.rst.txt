@@ -330,11 +330,16 @@ Atmel SAM
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
     atmelsam/adafruit_metro_m4_airliftlite
+    atmelsam/adafruit_neokeytrinkey_m0
+    atmelsam/adafruit_neotrinkey_m0
+    atmelsam/adafruit_proxlighttrinkey_m0
     atmelsam/adafruit_pygamer_advance_m4
     atmelsam/adafruit_pygamer_m4
     atmelsam/adafruit_pyportal_m4
     atmelsam/adafruit_pyportal_m4_titano
     atmelsam/adafruit_qt_py_m0
+    atmelsam/adafruit_rotarytrinkey_m0
+    atmelsam/adafruit_slidetrinkey_m0
     atmelsam/adafruit_trellis_m4
     atmelsam/adafruit_trinket_m0
     atmelsam/adafruit_pirkey
@@ -535,6 +540,7 @@ Espressif 8266
     espressif8266/esp8285
     espressif8266/heltec_wifi_kit_8
     espressif8266/inventone
+    espressif8266/agruminolemon
     espressif8266/nodemcu
     espressif8266/nodemcuv2
     espressif8266/modwifi
@@ -979,6 +985,8 @@ ST STM32
     ststm32/demo_f030f4
     ststm32/econode_l082cz
     ststm32/electrosmith_daisy
+    ststm32/elektor_f072cb
+    ststm32/elektor_f072c8
     ststm32/elmo_f411re
     ststm32/diymore_f407vgt
     ststm32/fk407m1
@@ -1008,6 +1016,7 @@ ST STM32
     ststm32/nucleo_g431rb
     ststm32/nucleo_g474re
     ststm32/olimexino
+    ststm32/olimexino_stm32f3
     ststm32/olimex_f103
     ststm32/olimex_p405
     ststm32/nucleo_wb55rg_p
@@ -1034,9 +1043,11 @@ ST STM32
     ststm32/disco_l100rc
     ststm32/disco_l476vg
     ststm32/disco_l496ag
+    ststm32/disco_b_g431b_esc1
     ststm32/disco_l475vg_iot01a
     ststm32/disco_l072cz_lrwan1
     ststm32/disco_f072rb
+    ststm32/nucleo_g031k8
     ststm32/nucleo_f030r8
     ststm32/nucleo_f031k6
     ststm32/nucleo_f042k6
@@ -1081,12 +1092,14 @@ ST STM32
     ststm32/nucleo_l496zg
     ststm32/nucleo_l496zg_p
     ststm32/nucleo_l4r5zi
+    ststm32/nucleo_l552ze_q
     ststm32/disco_f030r8
     ststm32/disco_f051r8
     ststm32/disco_f303vc
     ststm32/disco_f407vg
     ststm32/disco_g031j6
     ststm32/eval_l073z
+    ststm32/disco_l4s5i_iot01a
     ststm32/disco_l152rb
     ststm32/disco_f100rb
     ststm32/silica_sensor_node
@@ -1174,6 +1187,7 @@ ST STM32
     ststm32/hy_tinystm103tb
     ststm32/vake_v1
     ststm32/vccgnd_f103zet6
+    ststm32/vccgnd_f407zg_mini
     ststm32/waveshare_open103z
     ststm32/blackpill_f401cc
     ststm32/blackpill_f411ce

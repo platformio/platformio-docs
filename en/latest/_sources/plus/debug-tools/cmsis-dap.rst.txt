@@ -561,6 +561,20 @@ Boards
       - 400MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_elektor_f072cb`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F072C8T6
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_ststm32_elektor_f072c8`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F072C8T6
+      - 48MHz
+      - 64KB
+      - 16KB
     * - :ref:`board_nxplpc_lpc4088_dm`
       - :ref:`platform_nxplpc`
       - On-board
@@ -1009,6 +1023,13 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_olimexino_stm32f3`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F303RCT6TR
+      - 72MHz
+      - 256KB
+      - 40KB
     * - :ref:`board_ststm32_olimex_f103`
       - :ref:`platform_ststm32`
       - External
@@ -1254,6 +1275,13 @@ Boards
       - 80MHz
       - 1MB
       - 320KB
+    * - :ref:`board_ststm32_disco_b_g431b_esc1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G431CBU6
+      - 170MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_disco_l475vg_iot01a`
       - :ref:`platform_ststm32`
       - On-board
@@ -1275,6 +1303,13 @@ Boards
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_nucleo_g031k8`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G031K8
+      - 64MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -1583,6 +1618,13 @@ Boards
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_nucleo_l552ze_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L552ZET6
+      - 80MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -1625,6 +1667,13 @@ Boards
       - 32MHz
       - 192KB
       - 20KB
+    * - :ref:`board_ststm32_disco_l4s5i_iot01a`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L4S5VIT6
+      - 80MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_l152rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -1733,14 +1782,14 @@ Boards
     * - :ref:`board_ststm32_genericSTM32F103T8`
       - :ref:`platform_ststm32`
       - External
-      - STM32F103T8T6
+      - STM32F103T8U6
       - 72MHz
       - 64KB
       - 20KB
     * - :ref:`board_ststm32_genericSTM32F103TB`
       - :ref:`platform_ststm32`
       - External
-      - STM32F103TBT6
+      - STM32F103TBU6
       - 72MHz
       - 128KB
       - 20KB
@@ -1930,6 +1979,13 @@ Boards
       - :ref:`platform_ststm32`
       - External
       - STM32F103ZET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_vccgnd_f407zg_mini`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407ZGT6
       - 72MHz
       - 512KB
       - 64KB

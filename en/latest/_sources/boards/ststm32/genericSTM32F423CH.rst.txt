@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F423CH
+    - STM32F423CHU6
   * - **Frequency**
     - 100MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `genericSTM32F423CH.json <https://github.com/platformio/platform-
   board = genericSTM32F423CH
 
   ; change microcontroller
-  board_build.mcu = stm32f423ch
+  board_build.mcu = stm32f423chu6
 
   ; change MCU frequency
   board_build.f_cpu = 100000000L
