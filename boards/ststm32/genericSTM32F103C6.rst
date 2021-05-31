@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F103C6
+    - STM32F103C6T6
   * - **Frequency**
     - 72MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `genericSTM32F103C6.json <https://github.com/platformio/platform-
   board = genericSTM32F103C6
 
   ; change microcontroller
-  board_build.mcu = stm32f103c6
+  board_build.mcu = stm32f103c6t6
 
   ; change MCU frequency
   board_build.f_cpu = 72000000L

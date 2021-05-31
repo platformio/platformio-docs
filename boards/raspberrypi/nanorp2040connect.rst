@@ -69,6 +69,7 @@ Uploading
 Arduino Nano RP2040 Connect supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``jlink``
 * ``picotool``
 * ``raspberrypi-swd``
 
@@ -106,8 +107,14 @@ Arduino Nano RP2040 Connect does not have on-board debug probe and **IS NOT READ
     - On-board
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
-    -
+    - 
     - Yes
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
+  * - :ref:`debugging_tool_raspberrypi-swd`
+    - 
+    - 
 
 Frameworks
 ----------

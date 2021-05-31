@@ -176,19 +176,19 @@ Please click on board name for the further details.
       - 2KB
     * - :ref:`board_ststm32_genericSTM32F401RB`
       - :ref:`platform_ststm32`
-      - STM32F401RB
+      - STM32F401RBT6
       - 84MHz
       - 128KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F401RC`
       - :ref:`platform_ststm32`
-      - STM32F401RC
+      - STM32F401RCT6
       - 84MHz
       - 256KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F401RE`
       - :ref:`platform_ststm32`
-      - STM32F401RE
+      - STM32F401RET6
       - 84MHz
       - 512KB
       - 96KB
@@ -306,21 +306,21 @@ Generic
     * - :ref:`board_ststm32_genericSTM32F401RB`
       - :ref:`platform_ststm32`
       - External
-      - STM32F401RB
+      - STM32F401RBT6
       - 84MHz
       - 128KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F401RC`
       - :ref:`platform_ststm32`
       - External
-      - STM32F401RC
+      - STM32F401RCT6
       - 84MHz
       - 256KB
       - 64KB
     * - :ref:`board_ststm32_genericSTM32F401RE`
       - :ref:`platform_ststm32`
       - External
-      - STM32F401RE
+      - STM32F401RET6
       - 84MHz
       - 512KB
       - 96KB
