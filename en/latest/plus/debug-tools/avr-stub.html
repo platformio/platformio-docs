@@ -327,7 +327,7 @@ use avr-stub, the following settings in <a class="reference internal" href="../.
 
 <span class="c1">; GDB stub implementation</span>
 <span class="na">lib_deps</span> <span class="o">=</span>
-    <span class="na">jdolinay/avr-debugger @ ~1.1</span>
+    <span class="na">jdolinay/avr-debugger @ ~1.4</span>
 </pre></div>
 </div>
 <p>Where the value in <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-port"><span class="std std-ref">debug_port</span></a> is a serial port connected to your
@@ -337,6 +337,7 @@ board and <code class="docutils literal notranslate"><span class="pre">jdolinay/
 the Arduino framework it might look like this:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;avr8-stub.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;app_api.h&quot;</span><span class="c1"> // only needed with flash breakpoints</span><span class="cp"></span>
 
 <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
 <span class="p">{</span>
@@ -417,7 +418,7 @@ with the appropriate value from the table above, for example:</p>
 <span class="na">debug_port</span> <span class="o">=</span> <span class="s">SERIAL_PORT</span>
 
 <span class="na">lib_deps</span> <span class="o">=</span>
-    <span class="na">jdolinay/avr-debugger @ ~1.1</span>
+    <span class="na">jdolinay/avr-debugger @ ~1.4</span>
 </pre></div>
 </div>
 </div>
