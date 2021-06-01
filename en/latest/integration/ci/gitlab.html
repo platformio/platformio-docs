@@ -302,7 +302,16 @@ PlatformIO in CI services:</p>
 <div class="section" id="using-cmd-run-command">
 <h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this headline">¶</a></h3>
 <p>This variant is default choice for native PlatformIO projects:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python:2.7</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python:3.9</span>
+
+<span class="nt">variables</span><span class="p">:</span>
+  <span class="nt">PIP_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span>
+  <span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span>
+
+<span class="nt">cache</span><span class="p">:</span>
+  <span class="nt">paths</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span>
 
 <span class="nt">stages</span><span class="p">:</span>
  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
@@ -321,7 +330,16 @@ PlatformIO in CI services:</p>
 <p>This variant is more convenient when project is written as a library (when there are
 examples or testing code) as it has additional options for specifying extra libraries
 and boards from command line interface:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python:2.7</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python:3.9</span>
+
+<span class="nt">variables</span><span class="p">:</span>
+  <span class="nt">PIP_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span>
+  <span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span>
+
+<span class="nt">cache</span><span class="p">:</span>
+  <span class="nt">paths</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span>
 
 <span class="nt">stages</span><span class="p">:</span>
  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
@@ -343,7 +361,16 @@ and boards from command line interface:</p>
 <li><p>Integration for <a class="reference external" href="https://github.com/bblanchon/ArduinoJson/">ArduinoJson</a> library
 project. The <code class="docutils literal notranslate"><span class="pre">.gitlab-ci.yml</span></code> configuration file:</p></li>
 </ol>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python:2.7</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python:3.9</span>
+
+<span class="nt">variables</span><span class="p">:</span>
+  <span class="nt">PIP_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span>
+  <span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span>
+
+<span class="nt">cache</span><span class="p">:</span>
+  <span class="nt">paths</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span>
 
 <span class="nt">stages</span><span class="p">:</span>
  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
