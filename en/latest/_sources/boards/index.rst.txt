@@ -393,6 +393,7 @@ Atmel SAM
     atmelsam/sparkfun_samd21_dev_usb
     atmelsam/sparkfun_samd21_mini_usb
     atmelsam/sparkfun_samd21_proRF
+    atmelsam/sparkfun_samd51_micromod
     atmelsam/sparkfun_samd51_thing_plus
     atmelsam/tuinozero96
 
@@ -433,6 +434,7 @@ Espressif 32
     espressif32/esp320
     espressif32/esp-wrover-kit
     espressif32/esp32dev
+    espressif32/esp32-c3-devkitm-1
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
     espressif32/firebeetle32

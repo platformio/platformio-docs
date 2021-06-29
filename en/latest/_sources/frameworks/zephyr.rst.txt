@@ -376,7 +376,7 @@ You do not need to use/buy external debug probe.
       - STM32L475VGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - :ref:`platform_ststm32`
       - STM32L072CZ
@@ -562,13 +562,13 @@ You do not need to use/buy external debug probe.
       - STM32L476RGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_nucleo_l496zg`
       - :ref:`platform_ststm32`
       - STM32L496ZGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_l4r5zi`
       - :ref:`platform_ststm32`
       - STM32L4R5ZIT6
@@ -1810,7 +1810,7 @@ ST
       - STM32L475VGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - :ref:`platform_ststm32`
       - On-board
@@ -2027,14 +2027,14 @@ ST
       - STM32L476RGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_nucleo_l496zg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L496ZGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_l4r5zi`
       - :ref:`platform_ststm32`
       - On-board

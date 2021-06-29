@@ -174,6 +174,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-c3-devkitm-1`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-s2-kaluga-1`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -801,6 +807,13 @@ Espressif
       - External
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-c3-devkitm-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp32-s2-kaluga-1`

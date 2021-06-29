@@ -1392,6 +1392,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-c3-devkitm-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-s2-kaluga-1`
       - :ref:`platform_espressif32`
       - External
@@ -2525,7 +2532,7 @@ Boards
       - STM32L475VGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - :ref:`platform_ststm32`
       - On-board
@@ -2818,15 +2825,15 @@ Boards
       - On-board
       - STM32L452RET6
       - 80MHz
-      - 256KB
-      - 64KB
+      - 512KB
+      - 160KB
     * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
       - On-board
@@ -2840,7 +2847,7 @@ Boards
       - STM32L496ZGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_l496zg_p`
       - :ref:`platform_ststm32`
       - On-board
@@ -3716,6 +3723,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_micromod`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
       - :ref:`platform_atmelsam`
       - External

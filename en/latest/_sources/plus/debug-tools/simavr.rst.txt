@@ -1038,8 +1038,8 @@ Boards
       - On-board
       - ATMEGA128RFA1
       - 16MHz
-      - 16KB
       - 124KB
+      - 16KB
     * - :ref:`board_atmelavr_sparkfun_digitalsandbox`
       - :ref:`platform_atmelavr`
       - On-board

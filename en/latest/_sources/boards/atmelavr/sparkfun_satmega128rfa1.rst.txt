@@ -28,9 +28,9 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 16KB
-  * - **RAM**
     - 124KB
+  * - **RAM**
+    - 16KB
   * - **Vendor**
     - `SparkFun <https://www.sparkfun.com/products/11197?utm_source=platformio.org&utm_medium=docs>`__
 
