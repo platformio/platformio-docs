@@ -1148,7 +1148,7 @@ Boards
       - STM32L475VGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - :ref:`platform_ststm32`
       - On-board
@@ -1441,15 +1441,15 @@ Boards
       - On-board
       - STM32L452RET6
       - 80MHz
-      - 256KB
-      - 64KB
+      - 512KB
+      - 160KB
     * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_nucleo_l486rg`
       - :ref:`platform_ststm32`
       - On-board
@@ -1463,7 +1463,7 @@ Boards
       - STM32L496ZGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_l496zg_p`
       - :ref:`platform_ststm32`
       - On-board

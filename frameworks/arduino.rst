@@ -1018,7 +1018,7 @@ You do not need to use/buy external debug probe.
       - STM32L475VGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - :ref:`platform_ststm32`
       - STM32L072CZ
@@ -1185,20 +1185,20 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32L452RET6
       - 80MHz
-      - 256KB
-      - 64KB
+      - 512KB
+      - 160KB
     * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - STM32L476RGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_nucleo_l496zg`
       - :ref:`platform_ststm32`
       - STM32L496ZGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_l496zg_p`
       - :ref:`platform_ststm32`
       - STM32L496ZGT6P
@@ -1305,8 +1305,8 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_atmelavr`
       - ATMEGA128RFA1
       - 16MHz
-      - 16KB
       - 124KB
+      - 16KB
     * - :ref:`board_atmelavr_sparkfun_digitalsandbox`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
@@ -3210,6 +3210,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_micromod`
+      - :ref:`platform_atmelsam`
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
       - :ref:`platform_atmelsam`
       - SAMD51J20A
@@ -9417,7 +9423,7 @@ ST
       - STM32L475VGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - :ref:`platform_ststm32`
       - On-board
@@ -9612,22 +9618,22 @@ ST
       - On-board
       - STM32L452RET6
       - 80MHz
-      - 256KB
-      - 64KB
+      - 512KB
+      - 160KB
     * - :ref:`board_ststm32_nucleo_l476rg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L476RGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 96KB
     * - :ref:`board_ststm32_nucleo_l496zg`
       - :ref:`platform_ststm32`
       - On-board
       - STM32L496ZGT6
       - 80MHz
       - 1MB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_l496zg_p`
       - :ref:`platform_ststm32`
       - On-board
@@ -10067,8 +10073,8 @@ SparkFun
       - On-board
       - ATMEGA128RFA1
       - 16MHz
-      - 16KB
       - 124KB
+      - 16KB
     * - :ref:`board_espressif8266_sparkfunBlynk`
       - :ref:`platform_espressif8266`
       - No
@@ -10209,6 +10215,13 @@ SparkFun
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_atmelsam_sparkfun_samd51_micromod`
+      - :ref:`platform_atmelsam`
+      - External
+      - SAMD51J20A
+      - 120MHz
+      - 496KB
+      - 192KB
     * - :ref:`board_atmelsam_sparkfun_samd51_thing_plus`
       - :ref:`platform_atmelsam`
       - External

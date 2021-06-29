@@ -199,6 +199,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-c3-devkitm-1`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-s2-kaluga-1`
       - ESP32S2
       - 240MHz
@@ -491,6 +496,9 @@ Packages
 
     * - `toolchain-esp32ulp <https://github.com/espressif/binutils-esp32ulp.git?utm_source=platformio.org&utm_medium=docs>`__
       - Binutils fork with support for the Espressif ESP32 ULP co-processor
+
+    * - `toolchain-riscv-esp <https://github.com/espressif/crosstool-NG.git?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Espressif 32-bit RISC-V based on GCC
 
     * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf.git?utm_source=platformio.org&utm_medium=docs>`__
       - GCC Toolchain for Xtensa32 processor
@@ -866,6 +874,12 @@ Espressif
       - External
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-c3-devkitm-1`
+      - External
+      - ESP32C3
+      - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp32-s2-kaluga-1`

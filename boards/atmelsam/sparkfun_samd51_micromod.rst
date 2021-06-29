@@ -9,59 +9,80 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelavr_sparkfun_satmega128rfa1:
+.. _board_atmelsam_sparkfun_samd51_micromod:
 
-SparkFun ATmega128RFA1 Dev Board
-================================
+SparkFun SAMD51 MicroMod
+========================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming
+Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
 .. list-table::
 
   * - **Microcontroller**
-    - ATMEGA128RFA1
+    - SAMD51J20A
   * - **Frequency**
-    - 16MHz
+    - 120MHz
   * - **Flash**
-    - 124KB
+    - 496KB
   * - **RAM**
-    - 16KB
+    - 192KB
   * - **Vendor**
-    - `SparkFun <https://www.sparkfun.com/products/11197?utm_source=platformio.org&utm_medium=docs>`__
+    - `SparkFun <https://www.sparkfun.com/products/16791?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``sparkfun_satmega128rfa1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sparkfun_samd51_micromod`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:sparkfun_satmega128rfa1]
-  platform = atmelavr
-  board = sparkfun_satmega128rfa1
+  [env:sparkfun_samd51_micromod]
+  platform = atmelsam
+  board = sparkfun_samd51_micromod
 
-You can override default SparkFun ATmega128RFA1 Dev Board settings per build environment using
+You can override default SparkFun SAMD51 MicroMod settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `sparkfun_satmega128rfa1.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/sparkfun_satmega128rfa1.json>`_. For example,
+board manifest `sparkfun_samd51_micromod.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/sparkfun_samd51_micromod.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:sparkfun_satmega128rfa1]
-  platform = atmelavr
-  board = sparkfun_satmega128rfa1
+  [env:sparkfun_samd51_micromod]
+  platform = atmelsam
+  board = sparkfun_samd51_micromod
 
   ; change microcontroller
-  board_build.mcu = atmega128rfa1
+  board_build.mcu = samd51j20a
 
   ; change MCU frequency
-  board_build.f_cpu = 16000000L
+  board_build.f_cpu = 120000000L
+
+
+Uploading
+---------
+SparkFun SAMD51 MicroMod supports the following uploading protocols:
+
+* ``atmel-ice``
+* ``jlink``
+* ``sam-ba``
+
+Default protocol is ``sam-ba``
+
+You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+
+.. code-block:: ini
+
+  [env:sparkfun_samd51_micromod]
+  platform = atmelsam
+  board = sparkfun_samd51_micromod
+
+  upload_protocol = sam-ba
 
 Debugging
 ---------
@@ -76,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-SparkFun ATmega128RFA1 Dev Board has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+SparkFun SAMD51 MicroMod does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -84,9 +105,12 @@ SparkFun ATmega128RFA1 Dev Board has on-board debug probe and **IS READY** for d
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_simavr`
+  * - :ref:`debugging_tool_atmel-ice`
+    - 
     - Yes
-    - Yes
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
 
 Frameworks
 ----------

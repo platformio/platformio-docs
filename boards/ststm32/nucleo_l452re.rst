@@ -28,9 +28,9 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Frequency**
     - 80MHz
   * - **Flash**
-    - 256KB
+    - 512KB
   * - **RAM**
-    - 64KB
+    - 160KB
   * - **Vendor**
     - `ST <https://www.st.com/en/evaluation-tools/nucleo-l452re.html?utm_source=platformio.org&utm_medium=docs>`__
 
