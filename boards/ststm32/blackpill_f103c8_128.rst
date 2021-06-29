@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_blackpill_f103c8_128:
+.. _board_ststm32_blackpill_f103cb:
 
-BlackPill F103C8 (128k)
+BlackPill F103CB
 =======================
 
 .. contents::
@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F103C8T6
+    - STM32F103CBT6
   * - **Frequency**
     - 72MHz
   * - **Flash**
@@ -32,33 +32,33 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 20KB
   * - **Vendor**
-    - `Generic <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103c8.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Generic <http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f1-series/stm32f103/stm32f103cb.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``blackpill_f103c8_128`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``blackpill_f103cb`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:blackpill_f103c8_128]
+  [env:blackpill_f103cb]
   platform = ststm32
-  board = blackpill_f103c8_128
+  board = blackpill_f103cb
 
-You can override default BlackPill F103C8 (128k) settings per build environment using
+You can override default BlackPill F103CB settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `blackpill_f103c8_128.json <https://github.com/platformio/platform-ststm32/blob/master/boards/blackpill_f103c8_128.json>`_. For example,
+board manifest `blackpill_f103cb.json <https://github.com/platformio/platform-ststm32/blob/master/boards/blackpill_f103c8_128.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:blackpill_f103c8_128]
+  [env:blackpill_f103cb]
   platform = ststm32
-  board = blackpill_f103c8_128
+  board = blackpill_f103cb
 
   ; change microcontroller
-  board_build.mcu = stm32f103c8t6
+  board_build.mcu = stm32f103cbt6
 
   ; change MCU frequency
   board_build.f_cpu = 72000000L
@@ -66,7 +66,7 @@ board manifest `blackpill_f103c8_128.json <https://github.com/platformio/platfor
 
 Uploading
 ---------
-BlackPill F103C8 (128k) supports the following uploading protocols:
+BlackPill F103CB supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -80,9 +80,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:blackpill_f103c8_128]
+  [env:blackpill_f103cb]
   platform = ststm32
-  board = blackpill_f103c8_128
+  board = blackpill_f103cb
 
   upload_protocol = stlink
 
