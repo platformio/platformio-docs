@@ -1,0 +1,26 @@
+{# Keep in sync with https://github.com/readthedocs/sphinx_rtd_theme/blob/master/sphinx_rtd_theme/versions.html #}
+{# Add rst-badge after rst-versions for small badge style. #}
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="{{ _('Versions') }}">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v{{ release }} ({{ "latest" if is_latest else "stable" }})
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>{{ _('Versions') }}</dt>
+      {% for slug, url in versions %}
+        <dd><a href="{{ url }}">{{ slug }}</a></dd>
+      {% endfor %}
+    </dl>
+    <dl>
+      <dt>{{ _('On Github') }}</dt>
+        <dd><a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ page_source_suffix }}"> {{ _('View') }}</a></dd>
+        <dd><a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/edit/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ page_source_suffix }}"> {{ _('Edit') }}</a></dd>
+    </dl>
+    <dl>
+      <dt>{{ _('Search') }}</dt>
+        <dd>{% include "searchbox.html" %}</dd>
+    </dl>
+  </div>
+</div>
