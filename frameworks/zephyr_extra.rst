@@ -175,4 +175,4 @@ At the moment several limitations are present:
 
 * The minimum supported version of Python is ``3.4``
 * No whitespace characters allowed in project paths.
-* OpenThread module is not supported
+* The ``Trusted Firmware M`` module is not supported
