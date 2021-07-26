@@ -30,6 +30,7 @@ Aceinna IMU
     :maxdepth: 1
         
     aceinna_imu/LowCostRTK
+    aceinna_imu/OpenIMU335
     aceinna_imu/OpenIMU300
     aceinna_imu/OpenIMU300ZA
     aceinna_imu/OpenIMU330
@@ -45,6 +46,7 @@ ASR Microelectronics ASR650x
     asrmicro650x/cubecell_capsule_solar_sensor
     asrmicro650x/cubecell_node
     asrmicro650x/cubecell_board
+    asrmicro650x/cubecell_board_pro
     asrmicro650x/cubecell_board_plus
     asrmicro650x/cubecell_capsule
     asrmicro650x/cubecell_gps
@@ -1079,6 +1081,7 @@ ST STM32
     ststm32/nucleo_h723zg
     ststm32/nucleo_h743zi
     ststm32/nucleo_h745zi_q
+    ststm32/nucleo_h753zi
     ststm32/nucleo_l011k4
     ststm32/nucleo_l031k6
     ststm32/nucleo_l053r8
@@ -1100,6 +1103,7 @@ ST STM32
     ststm32/disco_f303vc
     ststm32/disco_f407vg
     ststm32/disco_g031j6
+    ststm32/disco_g071rb
     ststm32/eval_l073z
     ststm32/disco_l4s5i_iot01a
     ststm32/disco_l152rb
@@ -1223,6 +1227,7 @@ Teensy
 .. toctree::
     :maxdepth: 1
         
+    teensy/teensymm
     teensy/teensy2
     teensy/teensy30
     teensy/teensy31

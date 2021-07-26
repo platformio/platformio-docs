@@ -443,6 +443,12 @@ You do not need to use/buy external debug probe.
       - 480MHz
       - 1MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h753zi`
+      - :ref:`platform_ststm32`
+      - STM32H753ZIT6
+      - 400MHz
+      - 2MB
+      - 864KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - STM32L011K4T6
@@ -563,6 +569,12 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_g071rb`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - STM32L073VZT6
@@ -826,7 +838,7 @@ Please click on board name for the further details.
       - :ref:`platform_ststm32`
       - STM32F407VGT6
       - 168MHz
-      - 512KB
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_fk407m1`
       - :ref:`platform_ststm32`
@@ -1801,7 +1813,7 @@ Diymore
       - External
       - STM32F407VGT6
       - 168MHz
-      - 512KB
+      - 1MB
       - 128KB
 
 Econode
@@ -3343,6 +3355,13 @@ ST
       - 480MHz
       - 1MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h753zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H753ZIT6
+      - 400MHz
+      - 2MB
+      - 864KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -3490,6 +3509,13 @@ ST
       - 64MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_disco_g071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_eval_l073z`
       - :ref:`platform_ststm32`
       - On-board

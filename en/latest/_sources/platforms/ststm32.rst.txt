@@ -428,6 +428,11 @@ You do not need to use/buy external debug probe.
       - 480MHz
       - 1MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h753zi`
+      - STM32H753ZIT6
+      - 400MHz
+      - 2MB
+      - 864KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - STM32L011K4T6
       - 32MHz
@@ -528,6 +533,11 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_g071rb`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_eval_l073z`
       - STM32L073VZT6
       - 32MHz
@@ -759,7 +769,7 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_diymore_f407vgt`
       - STM32F407VGT6
       - 168MHz
-      - 512KB
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_fk407m1`
       - STM32F407VET6
@@ -1522,72 +1532,6 @@ Packages
     * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
-      - canopennode Zephyr module
-
-    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for CivetWeb Embedded C/C++ web server
-
-    * - `framework-zephyr-cmsis <https://github.com/zephyrproject-rtos/cmsis.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Software Interface Standard for Arm Cortex-based Microcontrollers
-
-    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for FatFS filesystem
-
-    * - `framework-zephyr-hal-st <https://github.com/zephyrproject-rtos/hal_st.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for the official libraries provided by STMicroelectronics
-
-    * - `framework-zephyr-hal-stm32 <https://github.com/zephyrproject-rtos/hal_stm32.git?utm_source=platformio.org&utm_medium=docs>`__
-      - ST STM32 HAL for Zephyr framework
-
-    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for an abstraction layer across user-space Linux, baremetal, and RTOS environments
-
-    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for littlefs filesystem
-
-    * - `framework-zephyr-loramac-node <https://github.com/zephyrproject-rtos/loramac-node.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for LoRaWAN endpoint stack implementation
-
-    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
-
-    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for the mbed TLS library
-
-    * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs
-
-    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for mcumgr management library for 32-bit MCUs
-
-    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for MIPI System Software Trace
-
-    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
-
-    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for OpenThread - an open-source implementation of the Thread networking protocol
-
-    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for the Segger RTT library
-
-    * - `framework-zephyr-sof <https://github.com/zephyrproject-rtos/sof.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Sound Open Firmware
-
-    * - `framework-zephyr-tfm-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs (TFM Dependency)
-
-    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Concise Binary Object Representation Library
-
-    * - `framework-zephyr-tinycrypt <https://github.com/zephyrproject-rtos/tinycrypt.git?utm_source=platformio.org&utm_medium=docs>`__
-      - The TinyCrypt Library provides an implementation for constrained devices of a minimal set of standard cryptography primitives for Zephyr framework
-
-    * - `framework-zephyr-trusted-firmware-m <https://github.com/zephyrproject-rtos/trusted-firmware-m.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Trusted Firmware M - a reference implementation of secure world software for ARMv8-M
-
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software
 
@@ -1893,7 +1837,7 @@ Diymore
       - External
       - STM32F407VGT6
       - 168MHz
-      - 512KB
+      - 1MB
       - 128KB
 
 Econode
@@ -3263,6 +3207,12 @@ ST
       - 480MHz
       - 1MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h753zi`
+      - On-board
+      - STM32H753ZIT6
+      - 400MHz
+      - 2MB
+      - 864KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - On-board
       - STM32L011K4T6
@@ -3389,6 +3339,12 @@ ST
       - 64MHz
       - 128KB
       - 8KB
+    * - :ref:`board_ststm32_disco_g071rb`
+      - On-board
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_eval_l073z`
       - On-board
       - STM32L073VZT6
