@@ -2248,7 +2248,7 @@ Please click on board name for the further details.
       - :ref:`platform_ststm32`
       - STM32F407VGT6
       - 168MHz
-      - 512KB
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_fk407m1`
       - :ref:`platform_ststm32`
@@ -3180,6 +3180,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_teensy_teensymm`
+      - :ref:`platform_teensy`
+      - IMXRT1062
+      - 600MHz
+      - 7.75MB
+      - 512KB
     * - :ref:`board_atmelsam_sparkfun_qwiic_micro_samd21e`
       - :ref:`platform_atmelsam`
       - SAMD21E18A
@@ -5432,7 +5438,7 @@ Diymore
       - External
       - STM32F407VGT6
       - 168MHz
-      - 512KB
+      - 1MB
       - 128KB
 
 Doit
@@ -6631,6 +6637,13 @@ Heltec
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_asrmicro650x_cubecell_board_pro`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6601
+      - 48MHz
+      - 224KB
+      - 224KB
     * - :ref:`board_asrmicro650x_cubecell_board_plus`
       - :ref:`platform_asrmicro650x`
       - No
@@ -10145,6 +10158,13 @@ SparkFun
       - 8MHz
       - 252KB
       - 8KB
+    * - :ref:`board_teensy_teensymm`
+      - :ref:`platform_teensy`
+      - External
+      - IMXRT1062
+      - 600MHz
+      - 7.75MB
+      - 512KB
     * - :ref:`board_atmelavr_uview`
       - :ref:`platform_atmelavr`
       - On-board

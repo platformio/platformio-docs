@@ -395,6 +395,12 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_f031k6`
+      - :ref:`platform_ststm32`
+      - STM32F031K6T6
+      - 48MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_ststm32_nucleo_f070rb`
       - :ref:`platform_ststm32`
       - STM32F070RBT6
@@ -521,6 +527,12 @@ You do not need to use/buy external debug probe.
       - 480MHz
       - 1MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h753zi`
+      - :ref:`platform_ststm32`
+      - STM32H753ZIT6
+      - 400MHz
+      - 2MB
+      - 864KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - STM32L011K4T6
@@ -545,6 +557,12 @@ You do not need to use/buy external debug probe.
       - 32MHz
       - 192KB
       - 20KB
+    * - :ref:`board_ststm32_nucleo_l412rb_p`
+      - :ref:`platform_ststm32`
+      - STM32L412RBT6P
+      - 80MHz
+      - 128KB
+      - 40KB
     * - :ref:`board_ststm32_nucleo_l432kc`
       - :ref:`platform_ststm32`
       - STM32L432KCU6
@@ -593,6 +611,12 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_g071rb`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -1832,6 +1856,13 @@ ST
       - 48MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_f031k6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F031K6T6
+      - 48MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_ststm32_nucleo_f070rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -1979,6 +2010,13 @@ ST
       - 480MHz
       - 1MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h753zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H753ZIT6
+      - 400MHz
+      - 2MB
+      - 864KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -2007,6 +2045,13 @@ ST
       - 32MHz
       - 192KB
       - 20KB
+    * - :ref:`board_ststm32_nucleo_l412rb_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L412RBT6P
+      - 80MHz
+      - 128KB
+      - 40KB
     * - :ref:`board_ststm32_nucleo_l432kc`
       - :ref:`platform_ststm32`
       - On-board
@@ -2063,6 +2108,13 @@ ST
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_disco_g071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_steval_fcu001v1`
       - :ref:`platform_ststm32`
       - External
