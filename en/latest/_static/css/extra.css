@@ -655,12 +655,16 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /* TOP text banner */
 
 .top-text-banner {
+  padding: 1rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #b6d4fe;
+  border-radius: .25rem;
+  color: #084298;
+  background-color: #cfe2ff;
   text-align: center;
-  padding-bottom: 20px;
 }
 
-.top-text-banner hr {
-  margin-left: -100px;
-  margin-right: -100px;
-  border: 5px solid #efefef;
+.top-text-banner a {
+  color: #0d6efd;
+  border-bottom: 1px solid #0d6efd;
 }
