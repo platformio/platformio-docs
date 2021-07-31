@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 1MB
   * - **RAM**
-    - 192KB
+    - 128KB
   * - **Vendor**
     - `Generic <https://eleccelerator.com/stm32f4stamp-breakout-board/?utm_source=platformio.org&utm_medium=docs>`__
 

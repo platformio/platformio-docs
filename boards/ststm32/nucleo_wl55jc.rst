@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_mkr_sharky:
+.. _board_ststm32_nucleo_wl55jc:
 
-MKR Sharky
-==========
+ST Nucleo WL55JC
+================
 
 .. contents::
 
@@ -24,68 +24,66 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32WB55CG
+    - STM32WL55JC
   * - **Frequency**
-    - 64MHz
+    - 48MHz
   * - **Flash**
-    - 512KB
+    - 256KB
   * - **RAM**
-    - 192KB
+    - 64KB
   * - **Vendor**
-    - `Midatronics <https://midatronics.com/Development_Boards/MKR_Sharky_I?utm_source=platformio.org&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-wl55jc.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``mkr_sharky`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_wl55jc`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:mkr_sharky]
+  [env:nucleo_wl55jc]
   platform = ststm32
-  board = mkr_sharky
+  board = nucleo_wl55jc
 
-You can override default MKR Sharky settings per build environment using
+You can override default ST Nucleo WL55JC settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `mkr_sharky.json <https://github.com/platformio/platform-ststm32/blob/master/boards/mkr_sharky.json>`_. For example,
+board manifest `nucleo_wl55jc.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_wl55jc.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:mkr_sharky]
+  [env:nucleo_wl55jc]
   platform = ststm32
-  board = mkr_sharky
+  board = nucleo_wl55jc
 
   ; change microcontroller
-  board_build.mcu = stm32wb55cg
+  board_build.mcu = stm32wl55jc
 
   ; change MCU frequency
-  board_build.f_cpu = 64000000L
+  board_build.f_cpu = 48000000L
 
 
 Uploading
 ---------
-MKR Sharky supports the following uploading protocols:
+ST Nucleo WL55JC supports the following uploading protocols:
 
-* ``blackmagic``
 * ``cmsis-dap``
-* ``dfu``
 * ``jlink``
 * ``mbed``
-* ``serial``
+* ``stlink``
 
-Default protocol is ``mbed``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:mkr_sharky]
+  [env:nucleo_wl55jc]
   platform = ststm32
-  board = mkr_sharky
+  board = nucleo_wl55jc
 
-  upload_protocol = mbed
+  upload_protocol = stlink
 
 Debugging
 ---------
@@ -100,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-MKR Sharky does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+ST Nucleo WL55JC has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -108,15 +106,15 @@ MKR Sharky does not have on-board debug probe and **IS NOT READY** for debugging
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - Yes
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
+  * - :ref:`debugging_tool_stlink`
+    - Yes
+    - Yes
 
 Frameworks
 ----------
@@ -126,5 +124,5 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

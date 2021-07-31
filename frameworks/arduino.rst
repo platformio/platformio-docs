@@ -892,7 +892,7 @@ You do not need to use/buy external debug probe.
       - STM32WB55RG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
     * - :ref:`board_atmelavr_panStampAVR`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
@@ -1000,7 +1000,7 @@ You do not need to use/buy external debug probe.
       - STM32F413ZHT6
       - 100MHz
       - 512KB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
       - STM32F746NGH6
@@ -1108,7 +1108,7 @@ You do not need to use/buy external debug probe.
       - STM32F429ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - STM32F446RET6
@@ -1228,7 +1228,7 @@ You do not need to use/buy external debug probe.
       - STM32F303VCT6
       - 72MHz
       - 256KB
-      - 48KB
+      - 40KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
       - STM32F407VGT6
@@ -1649,7 +1649,7 @@ Please click on board name for the further details.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_rumba32_f446ve`
       - :ref:`platform_ststm32`
       - STM32F446RET6
@@ -2375,7 +2375,7 @@ Please click on board name for the further details.
       - STM32WB55CG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
     * - :ref:`board_atmelsam_mkrvidor4000`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -2411,7 +2411,7 @@ Please click on board name for the further details.
       - STM32F103CBT6
       - 72MHz
       - 108KB
-      - 17KB
+      - 20KB
     * - :ref:`board_nordicnrf52_adafruit_metro_nrf52840`
       - :ref:`platform_nordicnrf52`
       - NRF52840
@@ -2423,7 +2423,7 @@ Please click on board name for the further details.
       - STM32F103CBT6
       - 72MHz
       - 105.47KB
-      - 16.60KB
+      - 20KB
     * - :ref:`board_atmelsam_minitronics20`
       - :ref:`platform_atmelsam`
       - SAMD21J18A
@@ -2441,7 +2441,7 @@ Please click on board name for the further details.
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_atmelsam_nano_33_iot`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -2507,7 +2507,7 @@ Please click on board name for the further details.
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_pybstick26_duino`
       - :ref:`platform_ststm32`
       - STM32F072RB
@@ -2549,7 +2549,7 @@ Please click on board name for the further details.
       - STM32F407RE
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_espressif32_lopy`
       - :ref:`platform_espressif32`
       - ESP32
@@ -3047,7 +3047,7 @@ Please click on board name for the further details.
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -3353,7 +3353,7 @@ Please click on board name for the further details.
       - STM32F407ZGT6
       - 72MHz
       - 512KB
-      - 64KB
+      - 128KB
     * - :ref:`board_espressif32_vintlabs-devkit-v1`
       - :ref:`platform_espressif32`
       - ESP32
@@ -4683,7 +4683,7 @@ Armed
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Atmel
 ~~~~~
@@ -6517,7 +6517,7 @@ Generic
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
 
 Gimasi
 ~~~~~~
@@ -7112,7 +7112,7 @@ LeafLabs
       - STM32F103CBT6
       - 72MHz
       - 108KB
-      - 17KB
+      - 20KB
 
 Lifely
 ~~~~~~
@@ -8099,7 +8099,7 @@ Microduino
       - STM32F103CBT6
       - 72MHz
       - 105.47KB
-      - 16.60KB
+      - 20KB
     * - :ref:`board_atmelavr_32u416m`
       - :ref:`platform_atmelavr`
       - On-board
@@ -8155,7 +8155,7 @@ Midatronics
       - STM32WB55CG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
 
 MikroElektronika
 ~~~~~~~~~~~~~~~~
@@ -8204,7 +8204,7 @@ Netduino
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
 
 NodeMCU
 ~~~~~~~
@@ -8470,7 +8470,7 @@ Olimex
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_olimex_e407`
       - :ref:`platform_ststm32`
       - External
@@ -8764,7 +8764,7 @@ PrntrBoard
       - STM32F407RE
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 ProtoCentral
 ~~~~~~~~~~~~
@@ -9401,7 +9401,7 @@ ST
       - STM32WB55RG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
     * - :ref:`board_ststm32_rhf76_052`
       - :ref:`platform_ststm32`
       - External
@@ -9415,7 +9415,7 @@ ST
       - STM32F413ZHT6
       - 100MHz
       - 512KB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
       - On-board
@@ -9541,7 +9541,7 @@ ST
       - STM32F429ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - On-board
@@ -9681,7 +9681,7 @@ ST
       - STM32F303VCT6
       - 72MHz
       - 256KB
-      - 48KB
+      - 40KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
       - On-board
@@ -10941,7 +10941,7 @@ VCCGND
       - STM32F407ZGT6
       - 72MHz
       - 512KB
-      - 64KB
+      - 128KB
 
 VintLabs
 ~~~~~~~~

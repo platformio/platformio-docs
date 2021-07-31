@@ -484,7 +484,7 @@ You do not need to use/buy external debug probe.
       - STM32F429ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - STM32F446RET6
@@ -593,6 +593,12 @@ You do not need to use/buy external debug probe.
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_nucleo_wl55jc`
+      - :ref:`platform_ststm32`
+      - STM32WL55JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_disco_f051r8`
       - :ref:`platform_ststm32`
       - STM32F051R8T6
@@ -604,7 +610,7 @@ You do not need to use/buy external debug probe.
       - STM32F303VCT6
       - 72MHz
       - 256KB
-      - 48KB
+      - 40KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
       - STM32F407VGT6
@@ -815,7 +821,7 @@ Please click on board name for the further details.
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_nordicnrf52_particle_argon`
       - :ref:`platform_nordicnrf52`
       - NRF52840
@@ -1568,7 +1574,7 @@ Olimex
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_olimex_e407`
       - :ref:`platform_ststm32`
       - External
@@ -1960,7 +1966,7 @@ ST
       - STM32F429ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - On-board
@@ -2087,6 +2093,13 @@ ST
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_nucleo_wl55jc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32WL55JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_disco_f051r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2100,7 +2113,7 @@ ST
       - STM32F303VCT6
       - 72MHz
       - 256KB
-      - 48KB
+      - 40KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
       - On-board

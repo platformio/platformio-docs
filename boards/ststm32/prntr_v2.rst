@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 192KB
+    - 128KB
   * - **Vendor**
     - `PrntrBoard <https://github.com/ghent360/PrntrBoardV2?utm_source=platformio.org&utm_medium=docs>`__
 

@@ -436,7 +436,7 @@ You do not need to use/buy external debug probe.
       - STM32F413ZHT6
       - 100MHz
       - 512KB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
       - STM32F429ZIT6
@@ -610,7 +610,7 @@ You do not need to use/buy external debug probe.
       - STM32F429ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f439zi`
       - :ref:`platform_ststm32`
       - STM32F439ZIT6
@@ -736,7 +736,7 @@ You do not need to use/buy external debug probe.
       - STM32F303VCT6
       - 72MHz
       - 256KB
-      - 48KB
+      - 40KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
       - STM32F407VGT6
@@ -2132,7 +2132,7 @@ ST
       - STM32F413ZHT6
       - 100MHz
       - 512KB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2335,7 +2335,7 @@ ST
       - STM32F429ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f439zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2482,7 +2482,7 @@ ST
       - STM32F303VCT6
       - 72MHz
       - 256KB
-      - 48KB
+      - 40KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
       - On-board

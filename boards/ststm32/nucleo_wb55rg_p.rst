@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 192.00KB
+    - 192KB
   * - **Vendor**
     - `ST <https://www.st.com/en/evaluation-tools/p-nucleo-wb55.html?utm_source=platformio.org&utm_medium=docs>`__
 

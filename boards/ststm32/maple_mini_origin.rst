@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 108KB
   * - **RAM**
-    - 17KB
+    - 20KB
   * - **Vendor**
     - `LeafLabs <http://www.leaflabs.com/maple/?utm_source=platformio.org&utm_medium=docs>`__
 
