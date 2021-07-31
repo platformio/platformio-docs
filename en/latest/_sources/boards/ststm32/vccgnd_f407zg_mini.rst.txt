@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 64KB
+    - 128KB
   * - **Vendor**
     - `VCCGND <https://stm32-base.org/boards/STM32F407ZGT6-VCC-GND-Large?utm_source=platformio.org&utm_medium=docs>`__
 

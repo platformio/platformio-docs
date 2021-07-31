@@ -1098,6 +1098,7 @@ ST STM32
     ststm32/nucleo_l496zg_p
     ststm32/nucleo_l4r5zi
     ststm32/nucleo_l552ze_q
+    ststm32/nucleo_wl55jc
     ststm32/disco_f030r8
     ststm32/disco_f051r8
     ststm32/disco_f303vc

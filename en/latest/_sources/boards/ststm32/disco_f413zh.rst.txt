@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 128KB
+    - 320KB
   * - **Vendor**
     - `ST <https://os.mbed.com/platforms/ST-Discovery-F413H/?utm_source=platformio.org&utm_medium=docs>`__
 

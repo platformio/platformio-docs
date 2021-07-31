@@ -355,7 +355,7 @@ Boards
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_rumba32_f446ve`
       - :ref:`platform_ststm32`
       - External
@@ -1741,7 +1741,7 @@ Boards
       - STM32WB55CG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
     * - :ref:`board_atmelsam_mkrvidor4000`
       - :ref:`platform_atmelsam`
       - External
@@ -1804,7 +1804,7 @@ Boards
       - STM32F103CBT6
       - 72MHz
       - 108KB
-      - 17KB
+      - 20KB
     * - :ref:`board_maxim32_max32620hsp`
       - :ref:`platform_maxim32`
       - External
@@ -1832,7 +1832,7 @@ Boards
       - STM32F103CBT6
       - 72MHz
       - 105.47KB
-      - 16.60KB
+      - 20KB
     * - :ref:`board_ststm32_mxchip_az3166`
       - :ref:`platform_ststm32`
       - On-board
@@ -1881,7 +1881,7 @@ Boards
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_mote_l152rc`
       - :ref:`platform_ststm32`
       - External
@@ -2168,14 +2168,14 @@ Boards
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - :ref:`platform_ststm32`
       - On-board
       - STM32WB55RG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
     * - :ref:`board_nordicnrf52_reel_board`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2266,7 +2266,7 @@ Boards
       - STM32F407RE
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_espressif32_lopy`
       - :ref:`platform_espressif32`
       - External
@@ -2469,7 +2469,7 @@ Boards
       - STM32F413ZHT6
       - 100MHz
       - 512KB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2693,7 +2693,7 @@ Boards
       - STM32F429ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f439zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2883,6 +2883,13 @@ Boards
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_wl55jc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32WL55JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2903,7 +2910,7 @@ Boards
       - STM32F303VCT6
       - 72MHz
       - 256KB
-      - 48KB
+      - 40KB
     * - :ref:`board_ststm32_disco_f407vg`
       - :ref:`platform_ststm32`
       - On-board
@@ -3470,7 +3477,7 @@ Boards
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_disco_f750n8`
       - :ref:`platform_ststm32`
       - On-board
@@ -3932,7 +3939,7 @@ Boards
       - STM32F407ZGT6
       - 72MHz
       - 512KB
-      - 64KB
+      - 128KB
     * - :ref:`board_nordicnrf52_vbluno52`
       - :ref:`platform_nordicnrf52`
       - On-board

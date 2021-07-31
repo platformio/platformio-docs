@@ -187,7 +187,7 @@ You do not need to use/buy external debug probe.
       - STM32WB55RG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
     * - :ref:`board_ststm32_cloud_jam`
       - STM32F401RET6
       - 84MHz
@@ -217,7 +217,7 @@ You do not need to use/buy external debug probe.
       - STM32F413ZHT6
       - 100MHz
       - 512KB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - STM32F429ZIT6
       - 180MHz
@@ -377,7 +377,7 @@ You do not need to use/buy external debug probe.
       - STM32F429ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f439zi`
       - STM32F439ZIT6
       - 180MHz
@@ -513,6 +513,11 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_wl55jc`
+      - STM32WL55JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_disco_f030r8`
       - STM32F030R8T6
       - 48MHz
@@ -527,7 +532,7 @@ You do not need to use/buy external debug probe.
       - STM32F303VCT6
       - 72MHz
       - 256KB
-      - 48KB
+      - 40KB
     * - :ref:`board_ststm32_disco_f407vg`
       - STM32F407VGT6
       - 168MHz
@@ -625,7 +630,7 @@ Please click on board name for the further details.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_rumba32_f446ve`
       - STM32F446RET6
       - 180MHz
@@ -805,7 +810,7 @@ Please click on board name for the further details.
       - STM32WB55CG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
     * - :ref:`board_ststm32_mts_dragonfly_f411re`
       - STM32F411RET6
       - 100MHz
@@ -835,12 +840,12 @@ Please click on board name for the further details.
       - STM32F103CBT6
       - 72MHz
       - 108KB
-      - 17KB
+      - 20KB
     * - :ref:`board_ststm32_microduino32_flash`
       - STM32F103CBT6
       - 72MHz
       - 105.47KB
-      - 16.60KB
+      - 20KB
     * - :ref:`board_ststm32_mts_mdot_f405rg`
       - STM32F411RET6
       - 100MHz
@@ -860,7 +865,7 @@ Please click on board name for the further details.
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_mote_l152rc`
       - STM32L152RC
       - 32MHz
@@ -885,7 +890,7 @@ Please click on board name for the further details.
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_pybstick26_duino`
       - STM32F072RB
       - 48MHz
@@ -915,7 +920,7 @@ Please click on board name for the further details.
       - STM32F407RE
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_rak811_tracker`
       - STM32L151RBT6
       - 32MHz
@@ -1300,7 +1305,7 @@ Please click on board name for the further details.
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - STM32L4R9ZI
       - 120MHz
@@ -1340,7 +1345,7 @@ Please click on board name for the further details.
       - STM32F407ZGT6
       - 72MHz
       - 512KB
-      - 64KB
+      - 128KB
     * - :ref:`board_ststm32_waveshare_open103z`
       - STM32F103ZET6
       - 72MHz
@@ -1769,7 +1774,7 @@ Armed
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Armstrap
 ~~~~~~~~
@@ -2396,7 +2401,7 @@ Generic
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
 
 HY
 ~~
@@ -2452,7 +2457,7 @@ LeafLabs
       - STM32F103CBT6
       - 72MHz
       - 108KB
-      - 17KB
+      - 20KB
 
 MXChip
 ~~~~~~
@@ -2521,7 +2526,7 @@ Microduino
       - STM32F103CBT6
       - 72MHz
       - 105.47KB
-      - 16.60KB
+      - 20KB
 
 Midatronics
 ~~~~~~~~~~~
@@ -2540,7 +2545,7 @@ Midatronics
       - STM32WB55CG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
 
 MultiTech
 ~~~~~~~~~
@@ -2596,7 +2601,7 @@ Netduino
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
 
 Olimex
 ~~~~~~
@@ -2633,7 +2638,7 @@ Olimex
       - STM32F405RGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_olimex_e407`
       - External
       - STM32F407ZGT6
@@ -2720,7 +2725,7 @@ PrntrBoard
       - STM32F407RE
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 RAK
 ~~~
@@ -2924,7 +2929,7 @@ ST
       - STM32WB55RG
       - 64MHz
       - 512KB
-      - 192.00KB
+      - 192KB
     * - :ref:`board_ststm32_rhf76_052`
       - External
       - STM32L051C8T6
@@ -2954,7 +2959,7 @@ ST
       - STM32F413ZHT6
       - 100MHz
       - 512KB
-      - 128KB
+      - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - On-board
       - STM32F429ZIT6
@@ -3146,7 +3151,7 @@ ST
       - STM32F429ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f439zi`
       - On-board
       - STM32F439ZIT6
@@ -3309,6 +3314,12 @@ ST
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_wl55jc`
+      - On-board
+      - STM32WL55JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_disco_f030r8`
       - On-board
       - STM32F030R8T6
@@ -3326,7 +3337,7 @@ ST
       - STM32F303VCT6
       - 72MHz
       - 256KB
-      - 48KB
+      - 40KB
     * - :ref:`board_ststm32_disco_f407vg`
       - On-board
       - STM32F407VGT6
@@ -3579,7 +3590,7 @@ VCCGND
       - STM32F407ZGT6
       - 72MHz
       - 512KB
-      - 64KB
+      - 128KB
 
 Waveshare
 ~~~~~~~~~
