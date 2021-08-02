@@ -92,3 +92,19 @@ Example:
     build_flags = -D USB_RAWHID
 
 See `Teensy USB Examples <https://www.pjrc.com/teensy/usb_debug_only.html>`_.
+
+Uploading using CLI
+~~~~~~~~~~~~~~~~~~~
+
+By default the Teensy platform uses the graphical version of the Teensy upload tools.
+For cases where the GUI tools cannot be used (e.g. headless OS) the native Teensy
+Loader tool is also available in a command line version which can be enabled directly
+in your project configuration, for example:
+
+.. code-block:: ini
+
+    [env:teensy36]
+    platform = teensy
+    framework = arduino
+    board = teensy36
+    upload_protocol = teensy-cli
