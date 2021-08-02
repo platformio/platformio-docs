@@ -280,16 +280,6 @@
 <li><p>Fixed an issue with silent hanging when a custom debug server is not found (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3756">issue #3756</a>)</p></li>
 </ul>
 </li>
-<li><p><strong>Static Code Analysis</strong></p>
-<ul>
-<li><p>Updated analysis tools:</p>
-<ul>
-<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/cppcheck.html">Cppcheck</a> v2.4.1 with new checks and MISRA improvements</p></li>
-<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/pvs-studio.html">PVS-Studio</a> v7.12 with new diagnostics and extended capabilities for security and safety standards</p></li>
-</ul>
-</li>
-</ul>
-</li>
 <li><p><strong>Package Management</strong></p>
 <ul>
 <li><p>Improved a package publishing process:</p>
@@ -303,12 +293,27 @@
 <li><p>Added a new option <code class="docutils literal notranslate"><span class="pre">--non-interactive</span></code> to <a class="reference external" href="https://docs.platformio.org/page/core/userguide/package/cmd_publish.html">pio package publish</a> command</p></li>
 </ul>
 </li>
+<li><p><strong>Build System</strong></p>
+<ul>
+<li><p>Upgraded build engine to the SCons 4.2 (<a class="reference external" href="https://github.com/SCons/scons/blob/rel_4.2.0/CHANGES.txt">release notes</a>)</p></li>
+<li><p>Fixed an issue with broken binary file extension when a custom <code class="docutils literal notranslate"><span class="pre">PROGNAME</span></code> contains dot symbols (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3906">issue #3906</a>)</p></li>
+</ul>
+</li>
+<li><p><strong>Static Code Analysis</strong></p>
+<ul>
+<li><p>Updated analysis tools:</p>
+<ul>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/cppcheck.html">Cppcheck</a> v2.4.1 with new checks and MISRA improvements</p></li>
+<li><p><a class="reference external" href="https://docs.platformio.org/page/plus/check-tools/pvs-studio.html">PVS-Studio</a> v7.12 with new diagnostics and extended capabilities for security and safety standards</p></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p><strong>Miscellaneous</strong></p>
 <ul>
 <li><p>Ensure that a serial port is ready before running unit tests on a remote target (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3742">issue #3742</a>)</p></li>
 <li><p>Fixed an error “Unknown development platform” when running unit tests on a clean machine (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3901">issue #3901</a>)</p></li>
 <li><p>Fixed an issue when “main.cpp” was generated for a new project for 8-bit development platforms (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3872">issue #3872</a>)</p></li>
-<li><p>Fixed an issue with broken binary file extension when a custom <code class="docutils literal notranslate"><span class="pre">PROGNAME</span></code> contains dot symbols (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3906">issue #3906</a>)</p></li>
 </ul>
 </li>
 </ul>
@@ -702,7 +707,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0a9 (latest)
+    v5.2.0b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

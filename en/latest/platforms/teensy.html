@@ -322,6 +322,7 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="#optimization" id="id11">Optimization</a></p></li>
 <li><p><a class="reference internal" href="#usb-features" id="id12">USB Features</a></p></li>
+<li><p><a class="reference internal" href="#uploading-using-cli" id="id13">Uploading using CLI</a></p></li>
 </ul>
 </div>
 <div class="section" id="optimization">
@@ -393,6 +394,20 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 </div>
 <p>See <a class="reference external" href="https://www.pjrc.com/teensy/usb_debug_only.html">Teensy USB Examples</a>.</p>
 </div>
+<div class="section" id="uploading-using-cli">
+<h3><a class="toc-backref" href="#id13">Uploading using CLI</a><a class="headerlink" href="#uploading-using-cli" title="Permalink to this headline">¶</a></h3>
+<p>By default the Teensy platform uses the graphical version of the Teensy upload tools.
+For cases where the GUI tools cannot be used (e.g. headless OS) the native Teensy
+Loader tool is also available in a command line version which can be enabled directly
+in your project configuration, for example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy36]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">teensy36</span>
+<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">teensy-cli</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="examples">
 <h2><a class="toc-backref" href="#id5">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -412,15 +427,15 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="contents local topic" id="id2">
 <ul class="simple">
-<li><p><a class="reference internal" href="#tools-debug-probes" id="id13">Tools &amp; Debug Probes</a></p>
+<li><p><a class="reference internal" href="#tools-debug-probes" id="id14">Tools &amp; Debug Probes</a></p>
 <ul>
-<li><p><a class="reference internal" href="#external-debug-tools" id="id14">External Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#external-debug-tools" id="id15">External Debug Tools</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id13">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id14">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this headline">¶</a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -431,7 +446,7 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <div class="section" id="external-debug-tools">
-<h4><a class="toc-backref" href="#id14">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id15">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this headline">¶</a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
@@ -885,7 +900,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0a9 (latest)
+    v5.2.0b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
