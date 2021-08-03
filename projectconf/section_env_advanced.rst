@@ -50,6 +50,39 @@ Example:
     build_type = debug
     build_flags = -D DEBUG
 
+.. warning::
+    Please note that the ``extends`` option doesn't merge values from multiple sections
+    or environments. If multiple items specified in the extends field then only values
+    from the latter one will be used in the final configuration. For example:
+
+    .. code-block:: ini
+
+        [base]
+        platform = teensy
+        framework = arduino
+        board = teensy31
+
+        [lib_deps1]
+        lib_deps =
+            monstrenyatko/ArduinoMqtt @ ^1.5.1
+            bblanchon/ArduinoJson @ ^6.18.3
+            knolleary/PubSubClient @ ^2.8
+
+        [lib_deps2]
+        lib_deps =
+            sstaub/Ticker @ ^4.3.0
+            thijse/ArduinoLog @ ^1.1.1
+            adafruit/RTClib @ ^1.14.0
+
+        [env:final]
+        extends = base, lib_deps1, lib_deps2
+        ; The values from `lib_deps2` will override the values from lib_deps1, so
+        ; the final `lib_deps` option will be equivalent to the following:
+        ; lib_deps =
+        ;    sstaub/Ticker @ ^4.3.0
+        ;    thijse/ArduinoLog @ ^1.1.1
+        ;    adafruit/RTClib @ ^1.14.0
+
 
 .. _projectconf_extra_scripts:
 
