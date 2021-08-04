@@ -301,6 +301,39 @@ with a new line.</p>
 <span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D DEBUG</span>
 </pre></div>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please note that the <code class="docutils literal notranslate"><span class="pre">extends</span></code> option doesn’t merge values from multiple sections
+or environments. If multiple items specified in the extends field then only values
+from the latter one will be used in the final configuration. For example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[base]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">teensy31</span>
+
+<span class="k">[lib_deps1]</span>
+<span class="na">lib_deps</span> <span class="o">=</span>
+    <span class="na">monstrenyatko/ArduinoMqtt @ ^1.5.1</span>
+    <span class="na">bblanchon/ArduinoJson @ ^6.18.3</span>
+    <span class="na">knolleary/PubSubClient @ ^2.8</span>
+
+<span class="k">[lib_deps2]</span>
+<span class="na">lib_deps</span> <span class="o">=</span>
+    <span class="na">sstaub/Ticker @ ^4.3.0</span>
+    <span class="na">thijse/ArduinoLog @ ^1.1.1</span>
+    <span class="na">adafruit/RTClib @ ^1.14.0</span>
+
+<span class="k">[env:final]</span>
+<span class="na">extends</span> <span class="o">=</span> <span class="s">base, lib_deps1, lib_deps2</span>
+<span class="c1">; The values from `lib_deps2` will override the values from lib_deps1, so</span>
+<span class="c1">; the final `lib_deps` option will be equivalent to the following:</span>
+<span class="c1">; lib_deps =</span>
+<span class="c1">;    sstaub/Ticker @ ^4.3.0</span>
+<span class="c1">;    thijse/ArduinoLog @ ^1.1.1</span>
+<span class="c1">;    adafruit/RTClib @ ^1.14.0</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="extra-scripts">
 <span id="projectconf-extra-scripts"></span><h2><code class="docutils literal notranslate"><span class="pre">extra_scripts</span></code><a class="headerlink" href="#extra-scripts" title="Permalink to this headline">¶</a></h2>
