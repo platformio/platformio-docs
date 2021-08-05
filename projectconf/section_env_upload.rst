@@ -117,22 +117,6 @@ This option can also be set by global environment variable
 
 Please specify each flag/option in a new line starting with minimum 2 spaces.
 
-Here are a few examples for the ``AVRDUDE`` tool used in Atmel-based platforms:
-
-1.  Enable verbose output and erase chip before uploading
-
-.. code-block:: ini
-
-    [env:atmega4809]
-    platform = atmelmegaavr
-    board = atmega4809
-    framework = arduino
-    upload_flags =
-      -V
-      -e
-
-2.  Configure upload settings and set fuses
-
 .. code-block:: ini
 
     [env:atmega328pb]

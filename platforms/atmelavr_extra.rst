@@ -194,6 +194,24 @@ To upload EEPROM data (from EEMEM directive) you need to use ``uploadeep``
 target instead ``upload`` for :option:`pio run --target` command.
 For example, ``pio run -t uploadeep``.
 
+Erase chip before programming
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In some cases erasing chip memory is a mandatory procedure before uploading bootloader
+or setting fuses. AVRDUDE provides a special flag ``-e`` that causes a chip erase to be
+executed. This will reset the contents of the flash ROM and EEPROM to the value ``0xff``,
+and clear all lock bits. The easiest way to use it is to add this flag via the
+:ref:`projectconf_upload_flags` option:
+
+.. code-block:: ini
+
+    [env:uno]
+    platform = atmelavr
+    framework = arduino
+    board = uno
+    upload_flags =
+      -e
+
 Fuses programming
 ~~~~~~~~~~~~~~~~~
 
