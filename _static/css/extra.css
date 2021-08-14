@@ -662,6 +662,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #084298;
   background-color: #cfe2ff;
   text-align: center;
+  font-weight: bold;
 }
 
 .top-text-banner a {
