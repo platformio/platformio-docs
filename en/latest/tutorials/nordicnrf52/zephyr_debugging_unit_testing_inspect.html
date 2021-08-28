@@ -307,13 +307,13 @@ following code:</p>
 <span class="c1">// SPDX-License-Identifier: Apache-2.0</span>
 <span class="c1">//</span>
 
-<span class="cp">#include</span> <span class="cpf">&lt;zephyr/types.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;stddef.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;sys/printk.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;sys/util.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;zephyr/types.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stddef.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/printk.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/util.h&gt;</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&lt;bluetooth/bluetooth.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;bluetooth/hci.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bluetooth/bluetooth.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bluetooth/hci.h&gt;</span><span class="cp"></span>
 
 <span class="cp">#define DEVICE_NAME CONFIG_BT_DEVICE_NAME</span>
 <span class="cp">#define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)</span>
@@ -323,56 +323,56 @@ following code:</p>
 <span class="c1">// https://github.com/google/eddystone/blob/master/protocol-specification.md</span>
 <span class="c1">// https://github.com/google/eddystone/tree/master/eddystone-url</span>
 
-<span class="k">static</span> <span class="k">const</span> <span class="k">struct</span> <span class="nc">bt_data</span> <span class="n">ad</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="n">BT_DATA_BYTES</span><span class="p">(</span><span class="n">BT_DATA_FLAGS</span><span class="p">,</span> <span class="n">BT_LE_AD_NO_BREDR</span><span class="p">),</span>
-    <span class="n">BT_DATA_BYTES</span><span class="p">(</span><span class="n">BT_DATA_UUID16_ALL</span><span class="p">,</span> <span class="mh">0xaa</span><span class="p">,</span> <span class="mh">0xfe</span><span class="p">),</span>
-    <span class="n">BT_DATA_BYTES</span><span class="p">(</span><span class="n">BT_DATA_SVC_DATA16</span><span class="p">,</span>
-              <span class="mh">0xaa</span><span class="p">,</span> <span class="mh">0xfe</span><span class="p">,</span>
-              <span class="mh">0x10</span><span class="p">,</span> <span class="c1">// Eddystone-URL frame type</span>
-              <span class="mh">0x00</span><span class="p">,</span> <span class="c1">// Calibrated Tx power at 0m</span>
-              <span class="mh">0x00</span><span class="p">,</span> <span class="c1">// URL Scheme Prefix http://www.</span>
-              <span class="sc">&#39;z&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;p&#39;</span><span class="p">,</span> <span class="sc">&#39;h&#39;</span><span class="p">,</span> <span class="sc">&#39;y&#39;</span><span class="p">,</span> <span class="sc">&#39;r&#39;</span><span class="p">,</span>
-              <span class="sc">&#39;p&#39;</span><span class="p">,</span> <span class="sc">&#39;r&#39;</span><span class="p">,</span> <span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;j&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;c&#39;</span><span class="p">,</span> <span class="sc">&#39;t&#39;</span><span class="p">,</span>
-              <span class="mh">0x08</span><span class="p">)</span> <span class="c1">// .org</span>
-<span class="p">};</span>
+<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span> <span class="nc">bt_data</span><span class="w"> </span><span class="n">ad</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">BT_DATA_BYTES</span><span class="p">(</span><span class="n">BT_DATA_FLAGS</span><span class="p">,</span><span class="w"> </span><span class="n">BT_LE_AD_NO_BREDR</span><span class="p">),</span><span class="w"></span>
+<span class="w">    </span><span class="n">BT_DATA_BYTES</span><span class="p">(</span><span class="n">BT_DATA_UUID16_ALL</span><span class="p">,</span><span class="w"> </span><span class="mh">0xaa</span><span class="p">,</span><span class="w"> </span><span class="mh">0xfe</span><span class="p">),</span><span class="w"></span>
+<span class="w">    </span><span class="n">BT_DATA_BYTES</span><span class="p">(</span><span class="n">BT_DATA_SVC_DATA16</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="mh">0xaa</span><span class="p">,</span><span class="w"> </span><span class="mh">0xfe</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="c1">// Eddystone-URL frame type</span>
+<span class="w">              </span><span class="mh">0x00</span><span class="p">,</span><span class="w"> </span><span class="c1">// Calibrated Tx power at 0m</span>
+<span class="w">              </span><span class="mh">0x00</span><span class="p">,</span><span class="w"> </span><span class="c1">// URL Scheme Prefix http://www.</span>
+<span class="w">              </span><span class="sc">&#39;z&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;e&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;p&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;h&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;y&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;r&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="sc">&#39;p&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;r&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;o&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;j&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;e&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;c&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;t&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="mh">0x08</span><span class="p">)</span><span class="w"> </span><span class="c1">// .org</span>
+<span class="p">};</span><span class="w"></span>
 
 <span class="c1">// Set Scan Response data</span>
-<span class="k">static</span> <span class="k">const</span> <span class="k">struct</span> <span class="nc">bt_data</span> <span class="n">sd</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="n">BT_DATA</span><span class="p">(</span><span class="n">BT_DATA_NAME_COMPLETE</span><span class="p">,</span> <span class="n">DEVICE_NAME</span><span class="p">,</span> <span class="n">DEVICE_NAME_LEN</span><span class="p">),</span>
-<span class="p">};</span>
+<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span> <span class="nc">bt_data</span><span class="w"> </span><span class="n">sd</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">BT_DATA</span><span class="p">(</span><span class="n">BT_DATA_NAME_COMPLETE</span><span class="p">,</span><span class="w"> </span><span class="n">DEVICE_NAME</span><span class="p">,</span><span class="w"> </span><span class="n">DEVICE_NAME_LEN</span><span class="p">),</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
 
-<span class="k">static</span> <span class="kt">void</span> <span class="nf">bt_ready</span><span class="p">(</span><span class="kt">int</span> <span class="n">err</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth init failed (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">err</span><span class="p">);</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
+<span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">bt_ready</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">err</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth init failed (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth initialized</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth initialized</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Start advertising</span>
-    <span class="n">err</span> <span class="o">=</span> <span class="n">bt_le_adv_start</span><span class="p">(</span><span class="n">BT_LE_ADV_NCONN</span><span class="p">,</span> <span class="n">ad</span><span class="p">,</span> <span class="n">ARRAY_SIZE</span><span class="p">(</span><span class="n">ad</span><span class="p">),</span>
-                  <span class="n">sd</span><span class="p">,</span> <span class="n">ARRAY_SIZE</span><span class="p">(</span><span class="n">sd</span><span class="p">));</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">printk</span><span class="p">(</span><span class="s">&quot;Advertising failed to start (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">err</span><span class="p">);</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="c1">// Start advertising</span>
+<span class="w">    </span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_le_adv_start</span><span class="p">(</span><span class="n">BT_LE_ADV_NCONN</span><span class="p">,</span><span class="w"> </span><span class="n">ad</span><span class="p">,</span><span class="w"> </span><span class="n">ARRAY_SIZE</span><span class="p">(</span><span class="n">ad</span><span class="p">),</span><span class="w"></span>
+<span class="w">                  </span><span class="n">sd</span><span class="p">,</span><span class="w"> </span><span class="n">ARRAY_SIZE</span><span class="p">(</span><span class="n">sd</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Advertising failed to start (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <span class="n">printk</span><span class="p">(</span><span class="s">&quot;Beacon started</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="p">}</span>
+<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Beacon started</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">err</span><span class="p">;</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">err</span><span class="p">;</span><span class="w"></span>
 
-    <span class="n">printk</span><span class="p">(</span><span class="s">&quot;Starting Beacon Demo</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Starting Beacon Demo</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Initialize the Bluetooth Subsystem</span>
-    <span class="n">err</span> <span class="o">=</span> <span class="n">bt_enable</span><span class="p">(</span><span class="n">bt_ready</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth init failed (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">err</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="c1">// Initialize the Bluetooth Subsystem</span>
+<span class="w">    </span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_enable</span><span class="p">(</span><span class="n">bt_ready</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth init failed (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -500,38 +500,38 @@ version of newlib C library in <code class="docutils literal notranslate"><span 
 <span class="cp">#define _CALCULATOR_H_</span>
 
 <span class="cp">#ifdef __cplusplus</span>
-<span class="k">extern</span> <span class="s">&quot;C&quot;</span> <span class="p">{</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="cp">#endif</span>
 
-<span class="kt">int</span> <span class="nf">add</span> <span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>
-<span class="kt">int</span> <span class="nf">sub</span> <span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>
-<span class="kt">int</span> <span class="nf">mul</span> <span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>
-<span class="kt">int</span> <span class="nf">div</span> <span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">sub</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">mul</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">div</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
 
 <span class="cp">#ifdef __cplusplus</span>
-<span class="p">}</span>
+<span class="p">}</span><span class="w"></span>
 <span class="cp">#endif</span>
 
 <span class="cp">#endif </span><span class="c1">// _CALCULATOR_H_</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">calculator.c</span></code>:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;calculator.h&quot;</span><span class="cp"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;calculator.h&quot;</span><span class="cp"></span>
 
-<span class="kt">int</span> <span class="nf">add</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">int</span> <span class="nf">sub</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">sub</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">int</span> <span class="nf">mul</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">mul</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -539,35 +539,35 @@ version of newlib C library in <code class="docutils literal notranslate"><span 
 <li><p>Create a new file <code class="docutils literal notranslate"><span class="pre">`test_calc.c</span></code> to the folder <code class="docutils literal notranslate"><span class="pre">test</span></code> and add basic tests for
 <code class="docutils literal notranslate"><span class="pre">calculator</span></code> library:</p>
 <blockquote>
-<div><div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;calculator.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;unity.h&gt;</span><span class="cp"></span>
+<div><div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;calculator.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unity.h&gt;</span><span class="cp"></span>
 
-<span class="kt">void</span> <span class="nf">test_function_calculator_addition</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">add</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">7</span><span class="p">));</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_addition</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="n">add</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">test_function_calculator_subtraction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="n">sub</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span> <span class="mi">3</span><span class="p">));</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_subtraction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="n">sub</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">test_function_calculator_multiplication</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="n">mul</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_multiplication</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="n">mul</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">test_function_calculator_division</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">div</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">3</span><span class="p">));</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_division</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="n">div</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">UNITY_BEGIN</span><span class="p">();</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w"></span>
 
-    <span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_addition</span><span class="p">);</span>
-    <span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_subtraction</span><span class="p">);</span>
-    <span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_multiplication</span><span class="p">);</span>
-    <span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_division</span><span class="p">);</span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_addition</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_subtraction</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_multiplication</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_division</span><span class="p">);</span><span class="w"></span>
 
-    <span class="n">UNITY_END</span><span class="p">();</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="n">UNITY_END</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div></blockquote>

@@ -424,12 +424,12 @@ it evaluates <a class="reference external" href="https://gcc.gnu.org/onlinedocs/
 <p><code class="docutils literal notranslate"><span class="pre">mylib.h</span></code></p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifdef MY_PROJECT_VERSION</span>
 <span class="c1">// include common file for the project</span>
-<span class="cp">#include</span> <span class="cpf">&quot;my_common.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;my_common.h&quot;</span><span class="cp"></span>
 <span class="cp">#endif</span>
 
 <span class="cp">#if MY_PROJECT_VERSION &lt; 10</span>
 <span class="c1">// this include will be ignored because does not satisfy condition above</span>
-<span class="cp">#include</span> <span class="cpf">&quot;my_old.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;my_old.h&quot;</span><span class="cp"></span>
 <span class="cp">#endif</span>
 </pre></div>
 </div>

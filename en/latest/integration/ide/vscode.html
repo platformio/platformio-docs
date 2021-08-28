@@ -400,32 +400,32 @@ follow to <a class="reference external" href="https://github.com/platformio/plat
 <span class="cm"> *</span>
 <span class="cm"> * Turns on an LED on for one second,</span>
 <span class="cm"> * then off for one second, repeatedly.</span>
-<span class="cm"> */</span>
-<span class="cp">#include</span> <span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
 
 <span class="c1">// Set LED_BUILTIN if it is not defined by Arduino framework</span>
 <span class="c1">// #define LED_BUILTIN 13</span>
 
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="c1">// initialize LED digital pin as an output.</span>
-  <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// initialize LED digital pin as an output.</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="c1">// turn the LED on (HIGH is the voltage level)</span>
-  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// turn the LED on (HIGH is the voltage level)</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
 
-  <span class="c1">// wait for a second</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// wait for a second</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
 
-  <span class="c1">// turn the LED off by making the voltage LOW</span>
-  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// turn the LED off by making the voltage LOW</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
 
-   <span class="c1">// wait for a second</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="w">   </span><span class="c1">// wait for a second</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <img alt="../../_images/platformio-ide-vscode-blink-project.png" src="../../_images/platformio-ide-vscode-blink-project.png" />

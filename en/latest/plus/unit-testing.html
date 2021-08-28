@@ -417,23 +417,23 @@ implement prototypes above</p></li>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef UNITTEST_TRANSPORT_H</span>
 <span class="cp">#define UNITTEST_TRANSPORT_H</span>
 
-<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
 
-<span class="kt">void</span> <span class="nf">unittest_uart_begin</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_begin</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-<span class="p">}</span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">unittest_uart_putchar</span><span class="p">(</span><span class="kt">char</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">putchar</span><span class="p">(</span><span class="n">c</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_putchar</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">putchar</span><span class="p">(</span><span class="n">c</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">unittest_uart_flush</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">fflush</span><span class="p">(</span><span class="n">stdout</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_flush</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">fflush</span><span class="p">(</span><span class="n">stdout</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">unittest_uart_end</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_end</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-<span class="p">}</span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="cp">#endif</span>
 </pre></div>
@@ -492,9 +492,9 @@ calls.</p>
 you should add at least 2 seconds delay before <code class="docutils literal notranslate"><span class="pre">UNITY_BEGIN()</span></code>.
 That time is needed to establish a <code class="docutils literal notranslate"><span class="pre">Serial</span></code> connection between a host
 machine and a target device.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span> <span class="c1">// for Arduino framework</span>
-<span class="n">wait</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>     <span class="c1">// for ARM mbed framework</span>
-<span class="n">UNITY_BEGIN</span><span class="p">();</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"> </span><span class="c1">// for Arduino framework</span>
+<span class="n">wait</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// for ARM mbed framework</span>
+<span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w"></span>
 </pre></div>
 </div>
 </div>

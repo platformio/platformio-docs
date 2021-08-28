@@ -364,16 +364,16 @@ they are not valid C/C++ based source files:</p>
 <p>In this case, code completion and code linting do not work properly or
 are disabled. To avoid this issue you can manually convert your INO files to CPP.</p>
 <p>For example, we have the next <code class="docutils literal notranslate"><span class="pre">Demo.ino</span></code> file:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Let’s convert it to  <code class="docutils literal notranslate"><span class="pre">Demo.cpp</span></code>:</p>
@@ -383,20 +383,20 @@ are disabled. To avoid this issue you can manually convert your INO files to CPP
 before it will be called.</p></li>
 </ol>
 <p>The final <code class="docutils literal notranslate"><span class="pre">Demo.cpp</span></code>:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
 
-<span class="kt">void</span> <span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">);</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">);</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">setup</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">someFunction</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">someFunction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Finish.</p>
@@ -417,8 +417,8 @@ pre-defined value and can be modified. The values for these variables are
 initially stored within the read-only memory (typically within <code class="docutils literal notranslate"><span class="pre">.text</span></code>)
 and are copied into the <code class="docutils literal notranslate"><span class="pre">.data</span></code> segment during the start-up routine of
 the program. Example,</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="kt">char</span> <span class="n">string</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;Hello World&quot;</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+<span class="kt">char</span><span class="w"> </span><span class="n">string</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World&quot;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 </dd>

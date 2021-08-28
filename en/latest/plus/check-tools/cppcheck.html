@@ -403,16 +403,16 @@ why some functions from in your project might be reported as unused. For example
 you can ignore warnings about <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code> functions from
 Arduino-based projects:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="c1">// cppcheck-suppress unusedFunction</span>
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="c1">// cppcheck-suppress unusedFunction</span>
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>

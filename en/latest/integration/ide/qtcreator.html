@@ -371,21 +371,21 @@ INCLUDEPATH += &quot;$${HOMEDIR}/.platformio/packages/toolchain-atmelavr/avr/inc
 Let’s create new text file named <code class="docutils literal notranslate"><span class="pre">main.c</span></code> using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">New</span> <span class="pre">File</span> <span class="pre">or</span> <span class="pre">Project</span> <span class="pre">&gt;</span> <span class="pre">General</span> <span class="pre">&gt;</span> <span class="pre">Text</span> <span class="pre">File</span></code>:</p>
 <a class="reference external image-reference" href="../../_images/ide-qtcreator-5.png"><img alt="../../_images/ide-qtcreator-5.png" src="../../_images/ide-qtcreator-5.png" /></a>
 <p>Copy the source code which is described below to file <code class="docutils literal notranslate"><span class="pre">main.c</span></code>.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
 <span class="cp">#define WLED    13  </span><span class="c1">// Most Arduino boards already have an LED attached to pin 13 on the board itself</span>
 
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="n">pinMode</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>  <span class="c1">// set pin as output</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">  </span><span class="c1">// set pin as output</span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>  <span class="c1">// set the LED on</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>               <span class="c1">// wait for a second</span>
-  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>   <span class="c1">// set the LED off</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>               <span class="c1">// wait for a second</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">  </span><span class="c1">// set the LED on</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">               </span><span class="c1">// wait for a second</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">   </span><span class="c1">// set the LED off</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">               </span><span class="c1">// wait for a second</span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
