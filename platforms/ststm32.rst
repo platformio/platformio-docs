@@ -1523,7 +1523,7 @@ Packages
       - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeH7 MCU Firmware Package)
 
     * - `framework-stm32cubel0 <https://github.com/STMicroelectronics/STM32CubeL0?utm_source=platformio.org&utm_medium=docs>`__
-      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32Cubel0 MCU Firmware Package)
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeL0 MCU Firmware Package)
 
     * - `framework-stm32cubel1 <https://github.com/STMicroelectronics/STM32CubeL1?utm_source=platformio.org&utm_medium=docs>`__
       - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeL1 MCU Firmware Package)

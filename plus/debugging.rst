@@ -3432,6 +3432,13 @@ Laird Connectivity
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl653_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_laird_bl654_dvk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -4391,6 +4398,13 @@ Nordic
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_nrf52833_dk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -7904,6 +7918,13 @@ u-blox
       - STM32F439ZIY6
       - 168MHz
       - 2MB
+      - 256KB
+    * - :ref:`board_nordicnrf52_ublox_bmd345eval_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
       - 256KB
     * - :ref:`board_nxplpc_ubloxc027`
       - :ref:`platform_nxplpc`

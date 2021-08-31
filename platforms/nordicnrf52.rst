@@ -93,6 +93,11 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl653_dvk`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_laird_bl654_dvk`
       - NRF52840
       - 64MHz
@@ -128,6 +133,11 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_nrf52833_dk`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
       - NRF52840
       - 64MHz
@@ -168,6 +178,11 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_ublox_bmd345eval_nrf52840`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
       - NRF52832
       - 64MHz
@@ -648,6 +663,12 @@ Laird Connectivity
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl653_dvk`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_laird_bl654_dvk`
       - On-board
       - NRF52840
@@ -710,6 +731,12 @@ Nordic
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_nrf52833_dk`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
       - On-board
       - NRF52840
@@ -930,6 +957,12 @@ u-blox
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_ublox_bmd345eval_nrf52840`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
       - On-board
       - NRF52832
