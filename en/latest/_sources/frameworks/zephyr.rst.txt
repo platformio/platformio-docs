@@ -119,6 +119,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl653_dvk`
+      - :ref:`platform_nordicnrf52`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_laird_bl654_dvk`
       - :ref:`platform_nordicnrf52`
       - NRF52840
@@ -269,6 +275,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_nrf52833_dk`
+      - :ref:`platform_nordicnrf52`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
       - :ref:`platform_nordicnrf52`
       - NRF52840
@@ -653,6 +665,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_ublox_bmd345eval_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
 
 
 External Debug Tools
@@ -1358,6 +1376,13 @@ Laird Connectivity
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl653_dvk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_laird_bl654_dvk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -1540,6 +1565,13 @@ Nordic
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_nrf52833_dk`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2345,3 +2377,24 @@ WeAct Studio
       - 84MHz
       - 512KB
       - 96KB
+
+u-blox
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_ublox_bmd345eval_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB

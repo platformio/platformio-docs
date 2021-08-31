@@ -786,6 +786,7 @@ Nordic nRF52
     nordicnrf52/nano33ble
     nordicnrf52/bbcmicrobit_v2
     nordicnrf52/laird_bl652_dvk
+    nordicnrf52/laird_bl653_dvk
     nordicnrf52/laird_bl654_dvk
     nordicnrf52/bluey
     nordicnrf52/adafruit_cplaynrf52840
@@ -800,6 +801,7 @@ Nordic nRF52
     nordicnrf52/adafruit_metro_nrf52840
     nordicnrf52/thingy_52
     nordicnrf52/nrf52_dk
+    nordicnrf52/nrf52833_dk
     nordicnrf52/nrf52840_dk
     nordicnrf52/nrf52840_dk_adafruit
     nordicnrf52/reel_board
@@ -816,6 +818,7 @@ Nordic nRF52
     nordicnrf52/vbluno52
     nordicnrf52/dwm1001_dev
     nordicnrf52/hackaBLE
+    nordicnrf52/ublox_bmd345eval_nrf52840
     nordicnrf52/ublox_evk_nina_b1
 
 Nuclei
