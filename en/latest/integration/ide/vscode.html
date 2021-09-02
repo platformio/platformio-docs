@@ -337,16 +337,17 @@ languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unit
 <li><p><a class="reference internal" href="#platformio-ide-usebuiltinpiocore" id="id31"><code class="docutils literal notranslate"><span class="pre">platformio-ide.useBuiltinPIOCore</span></code></a></p></li>
 <li><p><a class="reference internal" href="#platformio-ide-usedevelopmentpiocore" id="id32"><code class="docutils literal notranslate"><span class="pre">platformio-ide.useDevelopmentPIOCore</span></code></a></p></li>
 <li><p><a class="reference internal" href="#platformio-ide-disablepiohomestartup" id="id33"><code class="docutils literal notranslate"><span class="pre">platformio-ide.disablePIOHomeStartup</span></code></a></p></li>
-<li><p><a class="reference internal" href="#platformio-ide-piohomeserverhttpport" id="id34"><code class="docutils literal notranslate"><span class="pre">platformio-ide.pioHomeServerHttpPort</span></code></a></p></li>
-<li><p><a class="reference internal" href="#platformio-ide-custompypiindexurl" id="id35"><code class="docutils literal notranslate"><span class="pre">platformio-ide.customPyPiIndexUrl</span></code></a></p></li>
+<li><p><a class="reference internal" href="#platformio-ide-piohomeserverhttphost" id="id34"><code class="docutils literal notranslate"><span class="pre">platformio-ide.pioHomeServerHttpHost</span></code></a></p></li>
+<li><p><a class="reference internal" href="#platformio-ide-piohomeserverhttpport" id="id35"><code class="docutils literal notranslate"><span class="pre">platformio-ide.pioHomeServerHttpPort</span></code></a></p></li>
+<li><p><a class="reference internal" href="#platformio-ide-custompypiindexurl" id="id36"><code class="docutils literal notranslate"><span class="pre">platformio-ide.customPyPiIndexUrl</span></code></a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#known-issues" id="id36">Known issues</a></p>
+<li><p><a class="reference internal" href="#known-issues" id="id37">Known issues</a></p>
 <ul>
-<li><p><a class="reference internal" href="#packagemanager-is-unable-to-install-tool" id="id37">PackageManager is unable to install tool</a></p></li>
+<li><p><a class="reference internal" href="#packagemanager-is-unable-to-install-tool" id="id38">PackageManager is unable to install tool</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#changelog" id="id38">Changelog</a></p></li>
+<li><p><a class="reference internal" href="#changelog" id="id39">Changelog</a></p></li>
 </ul>
 </div>
 <div class="section" id="installation">
@@ -782,20 +783,24 @@ value is <code class="docutils literal notranslate"><span class="pre">false</spa
 <h3><a class="toc-backref" href="#id33"><code class="docutils literal notranslate"><span class="pre">platformio-ide.disablePIOHomeStartup</span></code></a><a class="headerlink" href="#platformio-ide-disablepiohomestartup" title="Permalink to this headline">¶</a></h3>
 <p>Disable showing PlatformIO Home at startup. The default value is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 </div>
+<div class="section" id="platformio-ide-piohomeserverhttphost">
+<h3><a class="toc-backref" href="#id34"><code class="docutils literal notranslate"><span class="pre">platformio-ide.pioHomeServerHttpHost</span></code></a><a class="headerlink" href="#platformio-ide-piohomeserverhttphost" title="Permalink to this headline">¶</a></h3>
+<p>PlatformIO Home server HTTP host.The default is <code class="docutils literal notranslate"><span class="pre">127.0.0.1</span></code>, but in case of dockerized environments <code class="docutils literal notranslate"><span class="pre">0.0.0.0</span></code>.</p>
+</div>
 <div class="section" id="platformio-ide-piohomeserverhttpport">
-<h3><a class="toc-backref" href="#id34"><code class="docutils literal notranslate"><span class="pre">platformio-ide.pioHomeServerHttpPort</span></code></a><a class="headerlink" href="#platformio-ide-piohomeserverhttpport" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id35"><code class="docutils literal notranslate"><span class="pre">platformio-ide.pioHomeServerHttpPort</span></code></a><a class="headerlink" href="#platformio-ide-piohomeserverhttpport" title="Permalink to this headline">¶</a></h3>
 <p>PlatformIO Home server HTTP port. The default value <code class="docutils literal notranslate"><span class="pre">0</span></code> automatically assigns a free port in
 the range [8010..8100]).</p>
 </div>
 <div class="section" id="platformio-ide-custompypiindexurl">
-<h3><a class="toc-backref" href="#id35"><code class="docutils literal notranslate"><span class="pre">platformio-ide.customPyPiIndexUrl</span></code></a><a class="headerlink" href="#platformio-ide-custompypiindexurl" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id36"><code class="docutils literal notranslate"><span class="pre">platformio-ide.customPyPiIndexUrl</span></code></a><a class="headerlink" href="#platformio-ide-custompypiindexurl" title="Permalink to this headline">¶</a></h3>
 <p>Custom base URL of the Python Package Index (default <code class="docutils literal notranslate"><span class="pre">https://pypi.org/simple</span></code>).</p>
 </div>
 </div>
 <div class="section" id="known-issues">
-<h2><a class="toc-backref" href="#id36">Known issues</a><a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id37">Known issues</a><a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="packagemanager-is-unable-to-install-tool">
-<h3><a class="toc-backref" href="#id37">PackageManager is unable to install tool</a><a class="headerlink" href="#packagemanager-is-unable-to-install-tool" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id38">PackageManager is unable to install tool</a><a class="headerlink" href="#packagemanager-is-unable-to-install-tool" title="Permalink to this headline">¶</a></h3>
 <p>This is a known bug in VSCode Terminal
 <a class="reference external" href="https://github.com/platformio/platformio-vscode-ide/issues/61">issue #61</a>.</p>
 <p>A temporary solution is to install packages using a system terminal (not VSCode Terminal).
@@ -805,7 +810,7 @@ Afterwards, go back to using the VSCode Terminal.</p>
 </div>
 </div>
 <div class="section" id="changelog">
-<h2><a class="toc-backref" href="#id38">Changelog</a><a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id39">Changelog</a><a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
 <p>Please visit the <a class="reference external" href="https://github.com/platformio/platformio-vscode-ide/releases">releases page</a>.</p>
 </div>
 </div>
