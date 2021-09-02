@@ -501,6 +501,10 @@ value is ``false``.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Disable showing PlatformIO Home at startup. The default value is ``false``.
 
+``platformio-ide.pioHomeServerHttpHost``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PlatformIO Home server HTTP host.The default is ``127.0.0.1``, but in case of dockerized environments ``0.0.0.0``.
+
 ``platformio-ide.pioHomeServerHttpPort``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PlatformIO Home server HTTP port. The default value ``0`` automatically assigns a free port in
