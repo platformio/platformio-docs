@@ -66,7 +66,7 @@ board manifest `lpc11u35_y5_mbug.json <https://github.com/platformio/platform-nx
 
 Uploading
 ---------
-y5 LPC11U35 mbug supports the next uploading protocols:
+y5 LPC11U35 mbug supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

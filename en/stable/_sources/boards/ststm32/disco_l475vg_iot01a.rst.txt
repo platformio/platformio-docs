@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 1MB
   * - **RAM**
-    - 128KB
+    - 96KB
   * - **Vendor**
     - `ST <https://developer.mbed.org/platforms/ST-Discovery-L475E-IOT01A/?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `disco_l475vg_iot01a.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-ST B-L475E-IOT01A Discovery kit supports the next uploading protocols:
+ST B-L475E-IOT01A Discovery kit supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

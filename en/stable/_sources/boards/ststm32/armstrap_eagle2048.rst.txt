@@ -66,7 +66,7 @@ board manifest `armstrap_eagle2048.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Armstrap Eagle 2048 supports the next uploading protocols:
+Armstrap Eagle 2048 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

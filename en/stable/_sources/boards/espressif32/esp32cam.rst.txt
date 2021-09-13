@@ -66,7 +66,7 @@ board manifest `esp32cam.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-AI Thinker ESP32-CAM supports the next uploading protocols:
+AI Thinker ESP32-CAM supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

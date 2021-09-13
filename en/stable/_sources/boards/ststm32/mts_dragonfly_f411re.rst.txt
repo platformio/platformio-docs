@@ -66,7 +66,7 @@ board manifest `mts_dragonfly_f411re.json <https://github.com/platformio/platfor
 
 Uploading
 ---------
-MTS Dragonfly supports the next uploading protocols:
+MTS Dragonfly supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

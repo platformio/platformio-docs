@@ -433,6 +433,16 @@ If true, activate the ``platformio ide`` extension only when a
 PlatformIO-based project (that has a :ref:`projectconf`) is open in the
 workspace. The default value is ``false``.
 
+``platformio-ide.activateProjectOnTextEditorChange``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Automatically activate project depending on an active opened text editor.
+The default value is ``false``.
+
+``platformio-ide.autoOpenPlatformIOIniFile``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Automatically open the :ref:`projectconf` file from a project when no other editors are opened.
+The default value is ``true``.
+
 ``platformio-ide.autoCloseSerialMonitor``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If true, automatically close :ref:`cmd_device_monitor` before uploading/testing.
@@ -490,6 +500,10 @@ value is ``false``.
 ``platformio-ide.disablePIOHomeStartup``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Disable showing PlatformIO Home at startup. The default value is ``false``.
+
+``platformio-ide.pioHomeServerHttpHost``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PlatformIO Home server HTTP host.The default is ``127.0.0.1``, but in case of dockerized environments ``0.0.0.0``.
 
 ``platformio-ide.pioHomeServerHttpPort``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

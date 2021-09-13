@@ -66,7 +66,7 @@ board manifest `maxwsnenv.json <https://github.com/platformio/platform-maxim32/b
 
 Uploading
 ---------
-Maxim Wireless Sensor Node Demonstrator supports the next uploading protocols:
+Maxim Wireless Sensor Node Demonstrator supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``mbed``

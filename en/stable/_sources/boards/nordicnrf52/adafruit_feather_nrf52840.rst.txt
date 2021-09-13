@@ -66,7 +66,7 @@ board manifest `adafruit_feather_nrf52840.json <https://github.com/platformio/pl
 
 Uploading
 ---------
-Adafruit Feather nRF52840 Express supports the next uploading protocols:
+Adafruit Feather nRF52840 Express supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

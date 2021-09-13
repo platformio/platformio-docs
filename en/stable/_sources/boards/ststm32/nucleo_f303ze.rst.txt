@@ -66,7 +66,7 @@ board manifest `nucleo_f303ze.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo F303ZE supports the next uploading protocols:
+ST Nucleo F303ZE supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

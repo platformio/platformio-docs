@@ -46,7 +46,16 @@ This variant is default choice for native PlatformIO projects:
 
 .. code-block:: yaml
 
-    image: python:2.7
+    image: python:3.9
+
+    variables:
+      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
+      PLATFORMIO_CACHE_DIR: "$CI_PROJECT_DIR/.platformio-cache"
+
+    cache:
+      paths:
+        - .pip-cache/
+        - .platformio-cache/
 
     stages:
      - test
@@ -68,7 +77,16 @@ and boards from command line interface:
 
 .. code-block:: yaml
 
-    image: python:2.7
+    image: python:3.9
+
+    variables:
+      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
+      PLATFORMIO_CACHE_DIR: "$CI_PROJECT_DIR/.platformio-cache"
+
+    cache:
+      paths:
+        - .pip-cache/
+        - .platformio-cache/
 
     stages:
      - test
@@ -90,7 +108,16 @@ Examples
 
 .. code-block:: yaml
 
-    image: python:2.7
+    image: python:3.9
+
+    variables:
+      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
+      PLATFORMIO_CACHE_DIR: "$CI_PROJECT_DIR/.platformio-cache"
+
+    cache:
+      paths:
+        - .pip-cache/
+        - .platformio-cache/
 
     stages:
      - test

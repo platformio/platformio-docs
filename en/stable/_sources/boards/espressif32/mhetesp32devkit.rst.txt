@@ -66,7 +66,7 @@ board manifest `mhetesp32devkit.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-MH ET LIVE ESP32DevKIT supports the next uploading protocols:
+MH ET LIVE ESP32DevKIT supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

@@ -66,7 +66,7 @@ board manifest `genericSTM32F373RC.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F373RC (32k RAM. 256k Flash) supports the next uploading protocols:
+STM32F373RC (32k RAM. 256k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

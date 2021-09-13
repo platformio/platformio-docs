@@ -66,7 +66,7 @@ board manifest `wraith32_v1.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-Wraith V1 ESC supports the next uploading protocols:
+Wraith V1 ESC supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

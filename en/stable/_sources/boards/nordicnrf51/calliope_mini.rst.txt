@@ -66,7 +66,7 @@ board manifest `calliope_mini.json <https://github.com/platformio/platform-nordi
 
 Uploading
 ---------
-Calliope mini supports the next uploading protocols:
+Calliope mini supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

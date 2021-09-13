@@ -66,7 +66,7 @@ board manifest `esp32-devkitlipo.json <https://github.com/platformio/platform-es
 
 Uploading
 ---------
-OLIMEX ESP32-DevKit-LiPo supports the next uploading protocols:
+OLIMEX ESP32-DevKit-LiPo supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

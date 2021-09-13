@@ -66,7 +66,7 @@ board manifest `electrosmith_daisy.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Electrosmith Daisy supports the next uploading protocols:
+Electrosmith Daisy supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

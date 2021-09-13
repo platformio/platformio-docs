@@ -66,7 +66,7 @@ board manifest `esp32vn-iot-uno.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-ESP32vn IoT Uno supports the next uploading protocols:
+ESP32vn IoT Uno supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

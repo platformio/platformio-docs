@@ -66,7 +66,7 @@ board manifest `seeedArchPro.json <https://github.com/platformio/platform-nxplpc
 
 Uploading
 ---------
-Seeed Arch Pro supports the next uploading protocols:
+Seeed Arch Pro supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``mbed``

@@ -66,7 +66,7 @@ board manifest `iotbusio.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-oddWires IoT-Bus Io supports the next uploading protocols:
+oddWires IoT-Bus Io supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

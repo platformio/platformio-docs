@@ -66,7 +66,7 @@ board manifest `adafruit_monster_m4sk.json <https://github.com/platformio/platfo
 
 Uploading
 ---------
-Adafruit MONSTER M4SK supports the next uploading protocols:
+Adafruit MONSTER M4SK supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

@@ -66,7 +66,7 @@ board manifest `segger_ip_switch.json <https://github.com/platformio/platform-fr
 
 Uploading
 ---------
-SEGGER IP Switch Board supports the next uploading protocols:
+SEGGER IP Switch Board supports the following uploading protocols:
 
 * ``jlink``
 * ``mbed``

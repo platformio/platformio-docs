@@ -66,7 +66,7 @@ board manifest `maple_ret6.json <https://github.com/platformio/platform-ststm32/
 
 Uploading
 ---------
-Maple (RET6) supports the next uploading protocols:
+Maple (RET6) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

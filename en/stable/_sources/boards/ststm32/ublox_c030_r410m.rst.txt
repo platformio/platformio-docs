@@ -66,7 +66,7 @@ board manifest `ublox_c030_r410m.json <https://github.com/platformio/platform-st
 
 Uploading
 ---------
-u-blox C030-R410M IoT supports the next uploading protocols:
+u-blox C030-R410M IoT supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

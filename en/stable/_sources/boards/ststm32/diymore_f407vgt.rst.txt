@@ -28,7 +28,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Frequency**
     - 168MHz
   * - **Flash**
-    - 512KB
+    - 1MB
   * - **RAM**
     - 128KB
   * - **Vendor**
@@ -66,7 +66,7 @@ board manifest `diymore_f407vgt.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-F407VG supports the next uploading protocols:
+F407VG supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

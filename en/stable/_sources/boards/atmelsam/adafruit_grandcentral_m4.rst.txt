@@ -66,7 +66,7 @@ board manifest `adafruit_grandcentral_m4.json <https://github.com/platformio/pla
 
 Uploading
 ---------
-Adafruit Grand Central M4 supports the next uploading protocols:
+Adafruit Grand Central M4 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

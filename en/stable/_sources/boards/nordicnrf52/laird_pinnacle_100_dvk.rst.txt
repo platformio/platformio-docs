@@ -66,7 +66,7 @@ board manifest `laird_pinnacle_100_dvk.json <https://github.com/platformio/platf
 
 Uploading
 ---------
-Laird Connectivity Pinnacle 100 DVK supports the next uploading protocols:
+Laird Connectivity Pinnacle 100 DVK supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

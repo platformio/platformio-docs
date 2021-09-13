@@ -193,7 +193,6 @@ Examples
     check_platforms_interval        7                 Check for the platform updates interval (days)
     check_prune_system_threshold    1024              Check for pruning unnecessary data threshold (megabytes)
     enable_cache                    Yes               Enable caching for API requests and Library Manager
-    strict_ssl                      No                Strict SSL for PlatformIO Services
     enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
     projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PlatformIO Home)
@@ -275,7 +274,6 @@ Examples
     check_platforms_interval        7                 Check for the platform updates interval (days)
     check_prune_system_threshold    1024              Check for pruning unnecessary data threshold (megabytes)
     enable_cache                    Yes               Enable caching for API requests and Library Manager
-    strict_ssl                      No                Enable SSL for PlatformIO Services
     enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
     projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PlatformIO Home)

@@ -66,7 +66,7 @@ board manifest `nrf51_beacon.json <https://github.com/platformio/platform-nordic
 
 Uploading
 ---------
-Nordic Beacon Kit (PCA20006) supports the next uploading protocols:
+Nordic Beacon Kit (PCA20006) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

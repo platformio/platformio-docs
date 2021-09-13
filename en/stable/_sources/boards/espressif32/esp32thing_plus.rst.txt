@@ -66,7 +66,7 @@ board manifest `esp32thing_plus.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-SparkFun ESP32 Thing Plus supports the next uploading protocols:
+SparkFun ESP32 Thing Plus supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

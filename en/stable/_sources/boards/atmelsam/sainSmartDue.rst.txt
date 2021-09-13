@@ -66,7 +66,7 @@ board manifest `sainSmartDue.json <https://github.com/platformio/platform-atmels
 
 Uploading
 ---------
-SainSmart Due (Programming Port) supports the next uploading protocols:
+SainSmart Due (Programming Port) supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

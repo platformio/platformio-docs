@@ -66,7 +66,7 @@ board manifest `ttgo-t-beam.json <https://github.com/platformio/platform-espress
 
 Uploading
 ---------
-TTGO T-Beam supports the next uploading protocols:
+TTGO T-Beam supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

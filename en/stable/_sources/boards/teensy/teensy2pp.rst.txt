@@ -66,7 +66,7 @@ board manifest `teensy2pp.json <https://github.com/platformio/platform-teensy/bl
 
 Uploading
 ---------
-Teensy++ 2.0 supports the next uploading protocols:
+Teensy++ 2.0 supports the following uploading protocols:
 
 * ``teensy-cli``
 * ``teensy-gui``

@@ -66,7 +66,7 @@ board manifest `ttgo-t7-v13-mini32.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-TTGO T7 V1.3 Mini32 supports the next uploading protocols:
+TTGO T7 V1.3 Mini32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

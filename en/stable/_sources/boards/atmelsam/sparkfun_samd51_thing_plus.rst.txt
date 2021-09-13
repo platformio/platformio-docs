@@ -66,7 +66,7 @@ board manifest `sparkfun_samd51_thing_plus.json <https://github.com/platformio/p
 
 Uploading
 ---------
-SparkFun SAMD51 Thing Plus supports the next uploading protocols:
+SparkFun SAMD51 Thing Plus supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

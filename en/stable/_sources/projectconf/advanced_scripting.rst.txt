@@ -191,6 +191,14 @@ The ``extra_script.py`` file is located in the same directory as ``platformio.in
     #
 
     #
+    # (Optional) Do not run extra script when IDE fetches C/C++ project metadata
+    #
+    from SCons.Script import COMMAND_LINE_TARGETS
+
+    if "idedata" in COMMAND_LINE_TARGETS:
+        env.Exit(0)
+
+    #
     # Change build flags in runtime
     #
     env.ProcessUnFlags("-DVECT_TAB_ADDR")
@@ -930,3 +938,34 @@ install them into the same virtual environment where :ref:`piocore` is installed
 
     # Install custom packages from the PyPi registry
     env.Execute("$PYTHONEXE -m pip install pkg1 pkg2")
+
+Build external sources
+^^^^^^^^^^^^^^^^^^^^^^
+
+If your project depends on some arbitrary source files that are located outside of the
+usual source directory :ref:`projectconf_pio_src_dir` then you can use a preliminary
+extra script to add them to the build process. A typical situation when this approach
+may be useful is when a project depends on pregenerated files in a temporary folder.
+Here is a typical configuration with an extra_script that instructs PlatformIO to build
+all sources in an external folder:
+
+``platformio.ini``:
+
+.. code-block:: ini
+
+    [env:my_env]
+    platform = ...
+    extra_scripts = pre:extra_script.py
+
+``extra_script.py`` (place it near ``platformio.ini``):
+
+.. code-block:: python
+
+    import os
+
+    Import("env")
+
+    env.BuildSources(
+        os.path.join("$BUILD_DIR", "external", "build"),
+        os.path.join("$PROJECT_DIR", "external", "sources")
+    )

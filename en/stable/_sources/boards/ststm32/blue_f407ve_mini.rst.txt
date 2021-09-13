@@ -66,7 +66,7 @@ board manifest `blue_f407ve_mini.json <https://github.com/platformio/platform-st
 
 Uploading
 ---------
-Blue STM32F407VE Mini supports the next uploading protocols:
+Blue STM32F407VE Mini supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

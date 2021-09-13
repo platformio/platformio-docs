@@ -66,7 +66,7 @@ board manifest `fm-devkit.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-ESP32 FM DevKit supports the next uploading protocols:
+ESP32 FM DevKit supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

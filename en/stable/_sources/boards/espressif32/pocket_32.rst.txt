@@ -66,7 +66,7 @@ board manifest `pocket_32.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-Dongsen Tech Pocket 32 supports the next uploading protocols:
+Dongsen Tech Pocket 32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

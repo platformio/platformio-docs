@@ -66,7 +66,7 @@ board manifest `qchip.json <https://github.com/platformio/platform-espressif32/b
 
 Uploading
 ---------
-Qchip supports the next uploading protocols:
+Qchip supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

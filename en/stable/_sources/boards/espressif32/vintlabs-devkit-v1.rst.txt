@@ -66,7 +66,7 @@ board manifest `vintlabs-devkit-v1.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-VintLabs ESP32 Devkit supports the next uploading protocols:
+VintLabs ESP32 Devkit supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

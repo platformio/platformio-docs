@@ -66,7 +66,7 @@ board manifest `dueUSB.json <https://github.com/platformio/platform-atmelsam/blo
 
 Uploading
 ---------
-Arduino Due (USB Native Port) supports the next uploading protocols:
+Arduino Due (USB Native Port) supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

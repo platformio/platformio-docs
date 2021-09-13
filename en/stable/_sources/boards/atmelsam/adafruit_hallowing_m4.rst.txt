@@ -66,7 +66,7 @@ board manifest `adafruit_hallowing_m4.json <https://github.com/platformio/platfo
 
 Uploading
 ---------
-Adafruit Hallowing M4 supports the next uploading protocols:
+Adafruit Hallowing M4 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

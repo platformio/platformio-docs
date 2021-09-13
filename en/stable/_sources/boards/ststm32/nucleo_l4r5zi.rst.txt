@@ -66,7 +66,7 @@ board manifest `nucleo_l4r5zi.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo L4R5ZI supports the next uploading protocols:
+ST Nucleo L4R5ZI supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

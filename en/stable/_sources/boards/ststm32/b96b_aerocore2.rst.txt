@@ -66,7 +66,7 @@ board manifest `b96b_aerocore2.json <https://github.com/platformio/platform-stst
 
 Uploading
 ---------
-96Boards Neonkey supports the next uploading protocols:
+96Boards Neonkey supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

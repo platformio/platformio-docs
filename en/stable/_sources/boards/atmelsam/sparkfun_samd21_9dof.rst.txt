@@ -66,7 +66,7 @@ board manifest `sparkfun_samd21_9dof.json <https://github.com/platformio/platfor
 
 Uploading
 ---------
-SparkFun 9DoF Razor IMU M0 supports the next uploading protocols:
+SparkFun 9DoF Razor IMU M0 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

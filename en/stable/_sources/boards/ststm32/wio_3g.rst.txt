@@ -66,7 +66,7 @@ board manifest `wio_3g.json <https://github.com/platformio/platform-ststm32/blob
 
 Uploading
 ---------
-Seeed Wio 3G supports the next uploading protocols:
+Seeed Wio 3G supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

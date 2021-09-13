@@ -66,7 +66,7 @@ board manifest `disco_f334c8.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST 32F3348DISCOVERY supports the next uploading protocols:
+ST 32F3348DISCOVERY supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

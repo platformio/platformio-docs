@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 2MB
   * - **RAM**
-    - 256KB
+    - 192KB
   * - **Vendor**
     - `ST <https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `nucleo_f429zi.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo F429ZI supports the next uploading protocols:
+ST Nucleo F429ZI supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

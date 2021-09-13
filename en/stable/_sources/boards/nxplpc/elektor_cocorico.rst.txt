@@ -66,7 +66,7 @@ board manifest `elektor_cocorico.json <https://github.com/platformio/platform-nx
 
 Uploading
 ---------
-CoCo-ri-Co! supports the next uploading protocols:
+CoCo-ri-Co! supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

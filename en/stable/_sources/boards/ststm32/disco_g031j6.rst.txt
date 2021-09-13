@@ -66,7 +66,7 @@ board manifest `disco_g031j6.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST STM32G0316-DISCO supports the next uploading protocols:
+ST STM32G0316-DISCO supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

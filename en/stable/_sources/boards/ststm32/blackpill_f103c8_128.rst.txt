@@ -66,7 +66,7 @@ board manifest `blackpill_f103c8_128.json <https://github.com/platformio/platfor
 
 Uploading
 ---------
-BlackPill F103C8 (128k) supports the next uploading protocols:
+BlackPill F103C8 (128k) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

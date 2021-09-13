@@ -66,7 +66,7 @@ board manifest `espinotee.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-ThaiEasyElec ESPino supports the next uploading protocols:
+ThaiEasyElec ESPino supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

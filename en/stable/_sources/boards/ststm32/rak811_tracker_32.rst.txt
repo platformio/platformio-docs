@@ -66,7 +66,7 @@ board manifest `rak811_tracker_32.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-RAK811 LoRa Tracker supports the next uploading protocols:
+RAK811 LoRa Tracker supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

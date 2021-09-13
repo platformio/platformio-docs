@@ -66,7 +66,7 @@ board manifest `mote_l152rc.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-NAMote72 supports the next uploading protocols:
+NAMote72 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

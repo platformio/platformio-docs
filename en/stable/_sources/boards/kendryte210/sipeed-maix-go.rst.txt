@@ -66,7 +66,7 @@ board manifest `sipeed-maix-go.json <https://github.com/sipeed/platform-kendryte
 
 Uploading
 ---------
-Sipeed MAIX GO supports the next uploading protocols:
+Sipeed MAIX GO supports the following uploading protocols:
 
 * ``iot-bus-jtag``
 * ``jlink``

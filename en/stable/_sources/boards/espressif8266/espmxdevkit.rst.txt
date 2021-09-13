@@ -66,7 +66,7 @@ board manifest `espmxdevkit.json <https://github.com/platformio/platform-espress
 
 Uploading
 ---------
-ESP-Mx DevKit (ESP8285) supports the next uploading protocols:
+ESP-Mx DevKit (ESP8285) supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

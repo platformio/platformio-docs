@@ -66,7 +66,7 @@ board manifest `vbluno52.json <https://github.com/platformio/platform-nordicnrf5
 
 Uploading
 ---------
-VNG VBLUno52 supports the next uploading protocols:
+VNG VBLUno52 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

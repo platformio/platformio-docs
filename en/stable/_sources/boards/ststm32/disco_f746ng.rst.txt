@@ -66,7 +66,7 @@ board manifest `disco_f746ng.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST 32F746GDISCOVERY supports the next uploading protocols:
+ST 32F746GDISCOVERY supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

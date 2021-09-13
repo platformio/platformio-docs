@@ -66,7 +66,7 @@ board manifest `nodemcu.json <https://github.com/platformio/platform-espressif82
 
 Uploading
 ---------
-NodeMCU 0.9 (ESP-12 Module) supports the next uploading protocols:
+NodeMCU 0.9 (ESP-12 Module) supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `disco_f412zg.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-32F412GDISCOVERY supports the next uploading protocols:
+32F412GDISCOVERY supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

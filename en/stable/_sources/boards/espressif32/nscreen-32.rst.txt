@@ -66,7 +66,7 @@ board manifest `nscreen-32.json <https://github.com/platformio/platform-espressi
 
 Uploading
 ---------
-YeaCreate NSCREEN-32 supports the next uploading protocols:
+YeaCreate NSCREEN-32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

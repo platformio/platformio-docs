@@ -66,7 +66,7 @@ board manifest `vccgnd_f103zet6.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-VCCGND F103ZET6 Mini supports the next uploading protocols:
+VCCGND F103ZET6 Mini supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

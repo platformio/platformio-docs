@@ -66,7 +66,7 @@ board manifest `thunder_pack.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ThunderPack v1.0 supports the next uploading protocols:
+ThunderPack v1.0 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

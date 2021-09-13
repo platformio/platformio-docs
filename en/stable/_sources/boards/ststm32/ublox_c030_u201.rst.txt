@@ -66,7 +66,7 @@ board manifest `ublox_c030_u201.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-u-blox C030-U201 IoT Starter Kit supports the next uploading protocols:
+u-blox C030-U201 IoT Starter Kit supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

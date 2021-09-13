@@ -66,7 +66,7 @@ board manifest `teensy30.json <https://github.com/platformio/platform-teensy/blo
 
 Uploading
 ---------
-Teensy 3.0 supports the next uploading protocols:
+Teensy 3.0 supports the following uploading protocols:
 
 * ``teensy-cli``
 * ``teensy-gui``

@@ -66,7 +66,7 @@ board manifest `pybstick26_lite.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-PYBStick Lite 26 supports the next uploading protocols:
+PYBStick Lite 26 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

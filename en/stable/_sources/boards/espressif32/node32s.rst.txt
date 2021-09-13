@@ -66,7 +66,7 @@ board manifest `node32s.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-Node32s supports the next uploading protocols:
+Node32s supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

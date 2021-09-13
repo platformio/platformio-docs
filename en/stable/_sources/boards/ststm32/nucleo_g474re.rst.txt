@@ -66,14 +66,15 @@ board manifest `nucleo_g474re.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-Nucleo G474RE supports the next uploading protocols:
+Nucleo G474RE supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
 * ``jlink``
 * ``mbed``
+* ``stlink``
 
-Default protocol is ``mbed``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
@@ -83,7 +84,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
   platform = ststm32
   board = nucleo_g474re
 
-  upload_protocol = mbed
+  upload_protocol = stlink
 
 Debugging
 ---------
@@ -98,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Nucleo G474RE does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Nucleo G474RE has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -108,13 +109,16 @@ Nucleo G474RE does not have on-board debug probe and **IS NOT READY** for debugg
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - Yes
+    - 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
+  * - :ref:`debugging_tool_stlink`
+    - Yes
+    - Yes
 
 Frameworks
 ----------

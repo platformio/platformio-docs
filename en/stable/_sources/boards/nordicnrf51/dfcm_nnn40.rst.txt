@@ -66,7 +66,7 @@ board manifest `dfcm_nnn40.json <https://github.com/platformio/platform-nordicnr
 
 Uploading
 ---------
-Delta DFCM-NNN40 supports the next uploading protocols:
+Delta DFCM-NNN40 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``mbed``

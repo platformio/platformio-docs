@@ -66,7 +66,7 @@ board manifest `hy_tinystm103tb.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-Tiny STM103T supports the next uploading protocols:
+Tiny STM103T supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

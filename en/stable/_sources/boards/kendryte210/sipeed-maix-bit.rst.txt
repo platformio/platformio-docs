@@ -66,7 +66,7 @@ board manifest `sipeed-maix-bit.json <https://github.com/sipeed/platform-kendryt
 
 Uploading
 ---------
-Sipeed MAIX BiT supports the next uploading protocols:
+Sipeed MAIX BiT supports the following uploading protocols:
 
 * ``iot-bus-jtag``
 * ``jlink``

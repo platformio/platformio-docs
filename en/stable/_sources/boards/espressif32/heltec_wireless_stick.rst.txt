@@ -66,7 +66,7 @@ board manifest `heltec_wireless_stick.json <https://github.com/platformio/platfo
 
 Uploading
 ---------
-Heltec Wireless Stick supports the next uploading protocols:
+Heltec Wireless Stick supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

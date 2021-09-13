@@ -66,7 +66,7 @@ board manifest `particle_xenon.json <https://github.com/platformio/platform-nord
 
 Uploading
 ---------
-Particle Xenon supports the next uploading protocols:
+Particle Xenon supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

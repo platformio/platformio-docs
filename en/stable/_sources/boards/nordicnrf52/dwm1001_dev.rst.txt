@@ -66,7 +66,7 @@ board manifest `dwm1001_dev.json <https://github.com/platformio/platform-nordicn
 
 Uploading
 ---------
-decaWave DWM1001 Module Development Board supports the next uploading protocols:
+decaWave DWM1001 Module Development Board supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

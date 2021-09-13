@@ -66,7 +66,7 @@ board manifest `elmo_f411re.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-Espotel LoRa Module supports the next uploading protocols:
+Espotel LoRa Module supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `sipeed-longan-nano.json <https://github.com/sipeed/platform-gd32
 
 Uploading
 ---------
-Sipeed Longan Nano supports the next uploading protocols:
+Sipeed Longan Nano supports the following uploading protocols:
 
 * ``altera-usb-blaster``
 * ``gd-link``

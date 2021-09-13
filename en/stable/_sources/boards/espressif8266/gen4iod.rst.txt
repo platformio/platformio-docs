@@ -66,7 +66,7 @@ board manifest `gen4iod.json <https://github.com/platformio/platform-espressif82
 
 Uploading
 ---------
-4D Systems gen4 IoD Range supports the next uploading protocols:
+4D Systems gen4 IoD Range supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

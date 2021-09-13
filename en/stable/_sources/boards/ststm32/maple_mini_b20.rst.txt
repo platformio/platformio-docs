@@ -66,7 +66,7 @@ board manifest `maple_mini_b20.json <https://github.com/platformio/platform-stst
 
 Uploading
 ---------
-Maple Mini Bootloader 2.0 supports the next uploading protocols:
+Maple Mini Bootloader 2.0 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

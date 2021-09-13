@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 105.47KB
   * - **RAM**
-    - 16.60KB
+    - 20KB
   * - **Vendor**
     - `Microduino <http://wiki.microduinoinc.com/Microduino-Module_CoreSTM32?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `microduino32_flash.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Microduino Core STM32 to Flash supports the next uploading protocols:
+Microduino Core STM32 to Flash supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

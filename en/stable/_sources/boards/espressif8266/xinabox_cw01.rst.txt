@@ -66,7 +66,7 @@ board manifest `xinabox_cw01.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-XinaBox CW01 supports the next uploading protocols:
+XinaBox CW01 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

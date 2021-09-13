@@ -66,7 +66,7 @@ board manifest `mtb_ublox_odin_w2.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-u-blox ODIN-W2 supports the next uploading protocols:
+u-blox ODIN-W2 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

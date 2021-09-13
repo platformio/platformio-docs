@@ -66,7 +66,7 @@ board manifest `seeed_femto.json <https://github.com/platformio/platform-atmelsa
 
 Uploading
 ---------
-Seeeduino Femto M0 supports the next uploading protocols:
+Seeeduino Femto M0 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

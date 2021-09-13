@@ -66,7 +66,7 @@ board manifest `mzeroproUSB.json <https://github.com/platformio/platform-atmelsa
 
 Uploading
 ---------
-Arduino M0 Pro (Native USB Port) supports the next uploading protocols:
+Arduino M0 Pro (Native USB Port) supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

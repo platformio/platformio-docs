@@ -66,7 +66,7 @@ board manifest `hexiwear.json <https://github.com/platformio/platform-freescalek
 
 Uploading
 ---------
-Hexiwear supports the next uploading protocols:
+Hexiwear supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

@@ -66,7 +66,7 @@ board manifest `sparkfun_samd21_mini_usb.json <https://github.com/platformio/pla
 
 Uploading
 ---------
-SparkFun SAMD21 Mini Breakout supports the next uploading protocols:
+SparkFun SAMD21 Mini Breakout supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

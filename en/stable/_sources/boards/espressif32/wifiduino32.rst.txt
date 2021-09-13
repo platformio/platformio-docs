@@ -66,7 +66,7 @@ board manifest `wifiduino32.json <https://github.com/platformio/platform-espress
 
 Uploading
 ---------
-Blinker WiFiduino32 supports the next uploading protocols:
+Blinker WiFiduino32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

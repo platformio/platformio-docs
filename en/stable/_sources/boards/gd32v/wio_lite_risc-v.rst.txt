@@ -66,7 +66,7 @@ board manifest `wio_lite_risc-v.json <https://github.com/sipeed/platform-gd32v/b
 
 Uploading
 ---------
-Wio Lite RISC-V supports the next uploading protocols:
+Wio Lite RISC-V supports the following uploading protocols:
 
 * ``altera-usb-blaster``
 * ``gd-link``

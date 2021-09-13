@@ -66,7 +66,7 @@ board manifest `mkrfox1200.json <https://github.com/platformio/platform-atmelsam
 
 Uploading
 ---------
-Arduino MKR FOX 1200 supports the next uploading protocols:
+Arduino MKR FOX 1200 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

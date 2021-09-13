@@ -66,7 +66,7 @@ board manifest `espino.json <https://github.com/platformio/platform-espressif826
 
 Uploading
 ---------
-ESPino supports the next uploading protocols:
+ESPino supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

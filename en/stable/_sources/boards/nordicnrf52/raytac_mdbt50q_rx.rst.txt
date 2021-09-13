@@ -66,7 +66,7 @@ board manifest `raytac_mdbt50q_rx.json <https://github.com/platformio/platform-n
 
 Uploading
 ---------
-Raytac MDBT50Q-RX Dongle supports the next uploading protocols:
+Raytac MDBT50Q-RX Dongle supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

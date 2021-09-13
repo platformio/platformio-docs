@@ -66,7 +66,7 @@ board manifest `disco_f411ve.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST 32F411EDISCOVERY supports the next uploading protocols:
+ST 32F411EDISCOVERY supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

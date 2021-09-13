@@ -66,7 +66,7 @@ board manifest `wesp32.json <https://github.com/platformio/platform-espressif32/
 
 Uploading
 ---------
-Silicognition wESP32 supports the next uploading protocols:
+Silicognition wESP32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

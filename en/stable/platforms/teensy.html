@@ -7,12 +7,15 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Teensy &mdash; PlatformIO v5.1 documentation</title>
+  <title>Teensy &mdash; PlatformIO v5.2 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
 
   
   
@@ -32,9 +35,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -45,8 +51,7 @@
     <link rel="prev" title="ST STM8" href="ststm8.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+<script src="../_static/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -84,6 +89,7 @@
         
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
+
             
             
               
@@ -92,20 +98,20 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Configuration</span></p>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Instruments</span></p>
+<p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../librarymanager/index.html">Library Management</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Platforms</a><ul class="current">
@@ -132,6 +138,8 @@
 <li class="toctree-l3"><a class="reference internal" href="nuclei.html">Nuclei</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxpimxrt.html">NXP i.MX RT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openhw.html">OpenHW Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="raspberrypi.html">Raspberry Pi RP2040</a></li>
 <li class="toctree-l3"><a class="reference internal" href="riscv_gap.html">RISC-V GAP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="shakti.html">Shakti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sifive.html">SiFive</a></li>
@@ -160,7 +168,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
@@ -168,13 +176,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Integration</span></p>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../integration/ci/index.html">Continuous Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
 </ul>
-<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
@@ -184,6 +192,8 @@
 
             
           
+<ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
         </div>
         
       </div>
@@ -201,6 +211,8 @@
 
 
       <div class="wy-nav-content">
+<ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
         
         <div class="rst-content">
         
@@ -278,6 +290,7 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="#optimization" id="id11">Optimization</a></p></li>
 <li><p><a class="reference internal" href="#usb-features" id="id12">USB Features</a></p></li>
+<li><p><a class="reference internal" href="#uploading-using-cli" id="id13">Uploading using CLI</a></p></li>
 </ul>
 </div>
 <div class="section" id="optimization">
@@ -349,6 +362,20 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 </div>
 <p>See <a class="reference external" href="https://www.pjrc.com/teensy/usb_debug_only.html">Teensy USB Examples</a>.</p>
 </div>
+<div class="section" id="uploading-using-cli">
+<h3><a class="toc-backref" href="#id13">Uploading using CLI</a><a class="headerlink" href="#uploading-using-cli" title="Permalink to this headline">¶</a></h3>
+<p>By default the Teensy platform uses the graphical version of the Teensy upload tools.
+For cases where the GUI tools cannot be used (e.g. headless OS) the native Teensy
+Loader tool is also available in a command line version which can be enabled directly
+in your project configuration, for example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy36]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">teensy36</span>
+<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">teensy-cli</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="examples">
 <h2><a class="toc-backref" href="#id5">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -368,15 +395,15 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="contents local topic" id="id2">
 <ul class="simple">
-<li><p><a class="reference internal" href="#tools-debug-probes" id="id13">Tools &amp; Debug Probes</a></p>
+<li><p><a class="reference internal" href="#tools-debug-probes" id="id14">Tools &amp; Debug Probes</a></p>
 <ul>
-<li><p><a class="reference internal" href="#external-debug-tools" id="id14">External Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#external-debug-tools" id="id15">External Debug Tools</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id13">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id14">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this headline">¶</a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -387,7 +414,7 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <div class="section" id="external-debug-tools">
-<h4><a class="toc-backref" href="#id14">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id15">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this headline">¶</a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
@@ -408,37 +435,43 @@ Please click on board name for the further details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/teensy/teensy31.html#board-teensy-teensy31"><span class="std std-ref">Teensy 3.1 / 3.2</span></a></p></td>
-<td><p>MK20DX256</p></td>
-<td><p>72MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>64KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/teensy/teensy35.html#board-teensy-teensy35"><span class="std std-ref">Teensy 3.5</span></a></p></td>
-<td><p>MK64FX512</p></td>
-<td><p>120MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>255.99KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/teensy/teensy36.html#board-teensy-teensy36"><span class="std std-ref">Teensy 3.6</span></a></p></td>
-<td><p>MK66FX1M0</p></td>
-<td><p>180MHz</p></td>
-<td><p>1MB</p></td>
-<td><p>256KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/teensy/teensy40.html#board-teensy-teensy40"><span class="std std-ref">Teensy 4.0</span></a></p></td>
-<td><p>IMXRT1062</p></td>
-<td><p>600MHz</p></td>
-<td><p>1.94MB</p></td>
-<td><p>512KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/teensy/teensy41.html#board-teensy-teensy41"><span class="std std-ref">Teensy 4.1</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/teensy/teensymm.html#board-teensy-teensymm"><span class="std std-ref">SparkFun MicroMod Teensy</span></a></p></td>
 <td><p>IMXRT1062</p></td>
 <td><p>600MHz</p></td>
 <td><p>7.75MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/teensy/teensylc.html#board-teensy-teensylc"><span class="std std-ref">Teensy LC</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/teensy/teensy31.html#board-teensy-teensy31"><span class="std std-ref">Teensy 3.1 / 3.2</span></a></p></td>
+<td><p>MK20DX256</p></td>
+<td><p>72MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/teensy/teensy35.html#board-teensy-teensy35"><span class="std std-ref">Teensy 3.5</span></a></p></td>
+<td><p>MK64FX512</p></td>
+<td><p>120MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>255.99KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/teensy/teensy36.html#board-teensy-teensy36"><span class="std std-ref">Teensy 3.6</span></a></p></td>
+<td><p>MK66FX1M0</p></td>
+<td><p>180MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/teensy/teensy40.html#board-teensy-teensy40"><span class="std std-ref">Teensy 4.0</span></a></p></td>
+<td><p>IMXRT1062</p></td>
+<td><p>600MHz</p></td>
+<td><p>1.94MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/teensy/teensy41.html#board-teensy-teensy41"><span class="std std-ref">Teensy 4.1</span></a></p></td>
+<td><p>IMXRT1062</p></td>
+<td><p>600MHz</p></td>
+<td><p>7.75MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/teensy/teensylc.html#board-teensy-teensylc"><span class="std std-ref">Teensy LC</span></a></p></td>
 <td><p>MKL26Z64</p></td>
 <td><p>48MHz</p></td>
 <td><p>62KB</p></td>
@@ -563,6 +596,37 @@ installation is necessary on Windows 10.</p>
 horizontally.</p></li>
 </ul>
 </div>
+<div class="section" id="sparkfun">
+<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/teensy/teensymm.html#board-teensy-teensymm"><span class="std std-ref">SparkFun MicroMod Teensy</span></a></p></td>
+<td><p>External</p></td>
+<td><p>IMXRT1062</p></td>
+<td><p>600MHz</p></td>
+<td><p>7.75MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="id3">
 <h3>Teensy<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
@@ -670,18 +734,11 @@ horizontally.</p></li>
         &#169; Copyright 2014-present, PlatformIO.
 
     </p>
-  </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  </div> 
 
 </footer>
         </div>
+
       </div>
 
     </section>
@@ -689,35 +746,10 @@ horizontally.</p></li>
   </div>
   
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-    <!-- Theme Analytics -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-1768265-7', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-  
-
-
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.1.1 (stable)
+    v5.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -747,111 +779,30 @@ horizontally.</p></li>
     </dl>
   </div>
 </div>
- 
-<script>
-  var navBarHTML = '\
-<div>\
-  <div class="container container-fluid">\
-    <div class="navbar-header">\
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
-        <span class="sr-only">Toggle navigation</span>\
-        <span class="icon-bar"></span>\
-        <span class="icon-bar"></span>\
-        <span class="icon-bar"></span>\
-      </button>\
-      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
-    </div>\
-    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
-      <div>\
-        <ul class="nav navbar-nav">\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
-              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
-            </ul>\
-          </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
-            </ul>\
-          </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
-        </ul>\
-        <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
-        </ul>\
-      </div>\
-    </nav>\
-  </div>\
-</div>';
 
-  (function() {
-    if (window.location.href.indexOf('http://') === 0) {
-      location.href = 'https:' + window.location.href.substring(5);
-    }
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
 
-    var topBanner = $('.top-banner');
-    var navBar = document.createElement('header');
-    navBar.className = 'navbar navbar-inverse';
-    navBar.innerHTML = navBarHTML;
-    if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
-    } else {
-      document.body.insertBefore(navBar, document.body.firstChild);
-    }
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    if ($(window).width() <= 768) {
-      return;
-    }
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
 
-    var topOffset = 50;
-    if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
-    }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
-    });
-  })();
-</script>
-
+    
+   
 
 </body>
 </html>

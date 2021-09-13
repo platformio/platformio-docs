@@ -66,7 +66,7 @@ board manifest `teensy40.json <https://github.com/platformio/platform-teensy/blo
 
 Uploading
 ---------
-Teensy 4.0 supports the next uploading protocols:
+Teensy 4.0 supports the following uploading protocols:
 
 * ``jlink``
 * ``teensy-cli``

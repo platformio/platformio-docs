@@ -66,7 +66,7 @@ board manifest `intorobot.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-IntoRobot Fig supports the next uploading protocols:
+IntoRobot Fig supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

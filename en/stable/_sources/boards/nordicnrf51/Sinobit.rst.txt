@@ -66,7 +66,7 @@ board manifest `Sinobit.json <https://github.com/platformio/platform-nordicnrf51
 
 Uploading
 ---------
-Sino:Bit supports the next uploading protocols:
+Sino:Bit supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

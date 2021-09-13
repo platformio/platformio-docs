@@ -66,7 +66,7 @@ board manifest `mxchip_az3166.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-Microsoft Azure IoT Development Kit (MXChip AZ3166) supports the next uploading protocols:
+Microsoft Azure IoT Development Kit (MXChip AZ3166) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

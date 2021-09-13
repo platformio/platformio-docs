@@ -66,7 +66,7 @@ board manifest `adafruit_cplaynrf52840.json <https://github.com/platformio/platf
 
 Uploading
 ---------
-Circuit Playground Bluefruit supports the next uploading protocols:
+Circuit Playground Bluefruit supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

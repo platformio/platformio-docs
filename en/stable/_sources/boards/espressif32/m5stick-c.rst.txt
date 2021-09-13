@@ -66,7 +66,7 @@ board manifest `m5stick-c.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-M5Stick-C supports the next uploading protocols:
+M5Stick-C supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

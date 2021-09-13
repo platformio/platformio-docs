@@ -7,12 +7,15 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>STM32Cube HAL and Nucleo-F401RE: debugging and unit testing &mdash; PlatformIO v5.1 documentation</title>
+  <title>STM32Cube HAL and Nucleo-F401RE: debugging and unit testing &mdash; PlatformIO v5.2 documentation</title>
   
 
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
 
   
   
@@ -32,9 +35,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,8 +51,7 @@
     <link rel="prev" title="Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis" href="../espressif32/espidf_debugging_unit_testing_analysis.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+<script src="../../_static/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -84,6 +89,7 @@
         
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
+
             
             
               
@@ -92,7 +98,7 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
@@ -123,13 +129,13 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">Configuration</span></p>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Instruments</span></p>
+<p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../librarymanager/index.html">Library Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../platforms/index.html">Platforms</a></li>
@@ -137,7 +143,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/unit-testing.html">Unit Testing</a></li>
@@ -145,13 +151,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Integration</span></p>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../integration/ci/index.html">Continuous Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
 </ul>
-<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
@@ -161,6 +167,8 @@
 
             
           
+<ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
         </div>
         
       </div>
@@ -178,6 +186,8 @@
 
 
       <div class="wy-nav-content">
+<ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
         
         <div class="rst-content">
         
@@ -271,7 +281,7 @@
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef MAIN_H</span>
 <span class="cp">#define MAIN_H</span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;stm32f4xx_hal.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;stm32f4xx_hal.h&quot;</span><span class="cp"></span>
 
 <span class="cp">#define LED_PIN                                GPIO_PIN_5</span>
 <span class="cp">#define LED_GPIO_PORT                          GPIOA</span>
@@ -281,34 +291,34 @@
 </pre></div>
 </div>
 <p>Add this code to <code class="docutils literal notranslate"><span class="pre">main.c</span></code>:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;main.h&quot;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;main.h&quot;</span><span class="cp"></span>
 
-<span class="kt">void</span> <span class="nf">LED_Init</span><span class="p">();</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">LED_Init</span><span class="p">();</span><span class="w"></span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">HAL_Init</span><span class="p">();</span>
-  <span class="n">LED_Init</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">HAL_Init</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">LED_Init</span><span class="p">();</span><span class="w"></span>
 
-  <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">HAL_GPIO_TogglePin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span> <span class="n">LED_PIN</span><span class="p">);</span>
-    <span class="n">HAL_Delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">HAL_GPIO_TogglePin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">HAL_Delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">LED_Init</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">LED_GPIO_CLK_ENABLE</span><span class="p">();</span>
-  <span class="n">GPIO_InitTypeDef</span> <span class="n">GPIO_InitStruct</span><span class="p">;</span>
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pin</span> <span class="o">=</span> <span class="n">LED_PIN</span><span class="p">;</span>
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Mode</span> <span class="o">=</span> <span class="n">GPIO_MODE_OUTPUT_PP</span><span class="p">;</span>
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pull</span> <span class="o">=</span> <span class="n">GPIO_PULLUP</span><span class="p">;</span>
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Speed</span> <span class="o">=</span> <span class="n">GPIO_SPEED_HIGH</span><span class="p">;</span>
-  <span class="n">HAL_GPIO_Init</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">GPIO_InitStruct</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">LED_Init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">LED_GPIO_CLK_ENABLE</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitTypeDef</span><span class="w"> </span><span class="n">GPIO_InitStruct</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GPIO_MODE_OUTPUT_PP</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pull</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GPIO_PULLUP</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GPIO_SPEED_HIGH</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">HAL_GPIO_Init</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">GPIO_InitStruct</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">SysTick_Handler</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">HAL_IncTick</span><span class="p">();</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">SysTick_Handler</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">HAL_IncTick</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>After this step, we created a basic blink project that is ready for compiling and uploading.</p>
@@ -353,10 +363,10 @@ condition in <a class="reference internal" href="../../projectconf/index.html#pr
 <p>Also, we need to create a new folder <code class="docutils literal notranslate"><span class="pre">test</span></code> where the tests and custom <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-transport"><span class="std std-ref">test_transport</span></a> implementation (described next) will be located:</p>
 <img alt="../../_images/stm32cube-debugging-unit-testing-10.png" src="../../_images/stm32cube-debugging-unit-testing-10.png" />
 <p>We will use <code class="docutils literal notranslate"><span class="pre">USART2</span></code> on <code class="docutils literal notranslate"><span class="pre">ST</span> <span class="pre">Nucleo-F401RE</span></code> board because it’s directly connected to the STLink debug interface and in OS it can be visible as a Virtual Com Port, so we don’t need any additional USB-UART converter. To implement the custom <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-transport"><span class="std std-ref">test_transport</span></a> we need to create two files <code class="docutils literal notranslate"><span class="pre">unittest_transport.h</span></code> and <code class="docutils literal notranslate"><span class="pre">unittest_transport.c</span></code> and put them in the <a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> in the root folder of our project. In these files we need to implement the next four functions:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">unittest_uart_begin</span><span class="p">();</span>
-<span class="kt">void</span> <span class="nf">unittest_uart_putchar</span><span class="p">(</span><span class="kt">char</span> <span class="n">c</span><span class="p">);</span>
-<span class="kt">void</span> <span class="nf">unittest_uart_flush</span><span class="p">();</span>
-<span class="kt">void</span> <span class="nf">unittest_uart_end</span><span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_begin</span><span class="p">();</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_putchar</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_flush</span><span class="p">();</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_end</span><span class="p">();</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Implementation of unittest_transport.h:</p>
@@ -364,24 +374,24 @@ condition in <a class="reference internal" href="../../projectconf/index.html#pr
 <span class="cp">#define UNITEST_TRANSPORT_H</span>
 
 <span class="cp">#ifdef __cplusplus</span>
-<span class="k">extern</span> <span class="s">&quot;C&quot;</span> <span class="p">{</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="cp">#endif</span>
 
-<span class="kt">void</span> <span class="nf">unittest_uart_begin</span><span class="p">();</span>
-<span class="kt">void</span> <span class="nf">unittest_uart_putchar</span><span class="p">(</span><span class="kt">char</span> <span class="n">c</span><span class="p">);</span>
-<span class="kt">void</span> <span class="nf">unittest_uart_flush</span><span class="p">();</span>
-<span class="kt">void</span> <span class="nf">unittest_uart_end</span><span class="p">();</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_begin</span><span class="p">();</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_putchar</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_flush</span><span class="p">();</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_end</span><span class="p">();</span><span class="w"></span>
 
 <span class="cp">#ifdef __cplusplus</span>
-<span class="p">}</span>
+<span class="p">}</span><span class="w"></span>
 <span class="cp">#endif</span>
 
 <span class="cp">#endif </span><span class="c1">// UNITEST_TRANSPORT_H</span>
 </pre></div>
 </div>
 <p>Implementation of unittest_transport.c:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;unittest_transport.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;stm32f4xx_hal.h&quot;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unittest_transport.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;stm32f4xx_hal.h&quot;</span><span class="cp"></span>
 
 <span class="cp">#define USARTx                           USART2</span>
 <span class="cp">#define USARTx_CLK_ENABLE()              __HAL_RCC_USART2_CLK_ENABLE()</span>
@@ -401,57 +411,57 @@ condition in <a class="reference internal" href="../../projectconf/index.html#pr
 <span class="cp">#define USARTx_RX_GPIO_PORT              GPIOA</span>
 <span class="cp">#define USARTx_RX_AF                     GPIO_AF7_USART2</span>
 
-<span class="k">static</span> <span class="n">UART_HandleTypeDef</span> <span class="n">UartHandle</span><span class="p">;</span>
+<span class="k">static</span><span class="w"> </span><span class="n">UART_HandleTypeDef</span><span class="w"> </span><span class="n">UartHandle</span><span class="p">;</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">unittest_uart_begin</span><span class="p">()</span>
-<span class="p">{</span>
-   <span class="n">GPIO_InitTypeDef</span>  <span class="n">GPIO_InitStruct</span><span class="p">;</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_begin</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="n">GPIO_InitTypeDef</span><span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">;</span><span class="w"></span>
 
-  <span class="n">USARTx_TX_GPIO_CLK_ENABLE</span><span class="p">();</span>
-  <span class="n">USARTx_RX_GPIO_CLK_ENABLE</span><span class="p">();</span>
+<span class="w">  </span><span class="n">USARTx_TX_GPIO_CLK_ENABLE</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">USARTx_RX_GPIO_CLK_ENABLE</span><span class="p">();</span><span class="w"></span>
 
-  <span class="n">USARTx_CLK_ENABLE</span><span class="p">();</span>
+<span class="w">  </span><span class="n">USARTx_CLK_ENABLE</span><span class="p">();</span><span class="w"></span>
 
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pin</span>       <span class="o">=</span> <span class="n">USARTx_TX_PIN</span><span class="p">;</span>
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Mode</span>      <span class="o">=</span> <span class="n">GPIO_MODE_AF_PP</span><span class="p">;</span>
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pull</span>      <span class="o">=</span> <span class="n">GPIO_PULLUP</span><span class="p">;</span>
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Speed</span>     <span class="o">=</span> <span class="n">GPIO_SPEED_FAST</span><span class="p">;</span>
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Alternate</span> <span class="o">=</span> <span class="n">USARTx_TX_AF</span><span class="p">;</span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pin</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">USARTx_TX_PIN</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Mode</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="n">GPIO_MODE_AF_PP</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pull</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="n">GPIO_PULLUP</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Speed</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="n">GPIO_SPEED_FAST</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Alternate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">USARTx_TX_AF</span><span class="p">;</span><span class="w"></span>
 
-  <span class="n">HAL_GPIO_Init</span><span class="p">(</span><span class="n">USARTx_TX_GPIO_PORT</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">GPIO_InitStruct</span><span class="p">);</span>
+<span class="w">  </span><span class="n">HAL_GPIO_Init</span><span class="p">(</span><span class="n">USARTx_TX_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">GPIO_InitStruct</span><span class="p">);</span><span class="w"></span>
 
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pin</span> <span class="o">=</span> <span class="n">USARTx_RX_PIN</span><span class="p">;</span>
-  <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Alternate</span> <span class="o">=</span> <span class="n">USARTx_RX_AF</span><span class="p">;</span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">USARTx_RX_PIN</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Alternate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">USARTx_RX_AF</span><span class="p">;</span><span class="w"></span>
 
-  <span class="n">HAL_GPIO_Init</span><span class="p">(</span><span class="n">USARTx_RX_GPIO_PORT</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">GPIO_InitStruct</span><span class="p">);</span>
-  <span class="n">UartHandle</span><span class="p">.</span><span class="n">Instance</span>          <span class="o">=</span> <span class="n">USARTx</span><span class="p">;</span>
+<span class="w">  </span><span class="n">HAL_GPIO_Init</span><span class="p">(</span><span class="n">USARTx_RX_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">GPIO_InitStruct</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">UartHandle</span><span class="p">.</span><span class="n">Instance</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="n">USARTx</span><span class="p">;</span><span class="w"></span>
 
-  <span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">BaudRate</span>     <span class="o">=</span> <span class="mi">115200</span><span class="p">;</span>
-  <span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">WordLength</span>   <span class="o">=</span> <span class="n">UART_WORDLENGTH_8B</span><span class="p">;</span>
-  <span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">StopBits</span>     <span class="o">=</span> <span class="n">UART_STOPBITS_1</span><span class="p">;</span>
-  <span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">Parity</span>       <span class="o">=</span> <span class="n">UART_PARITY_NONE</span><span class="p">;</span>
-  <span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">HwFlowCtl</span>    <span class="o">=</span> <span class="n">UART_HWCONTROL_NONE</span><span class="p">;</span>
-  <span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">Mode</span>         <span class="o">=</span> <span class="n">UART_MODE_TX_RX</span><span class="p">;</span>
-  <span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">OverSampling</span> <span class="o">=</span> <span class="n">UART_OVERSAMPLING_16</span><span class="p">;</span>
+<span class="w">  </span><span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">BaudRate</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="mi">115200</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">WordLength</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">UART_WORDLENGTH_8B</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">StopBits</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="n">UART_STOPBITS_1</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">Parity</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">UART_PARITY_NONE</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">HwFlowCtl</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">UART_HWCONTROL_NONE</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">Mode</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="n">UART_MODE_TX_RX</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">UartHandle</span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">OverSampling</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UART_OVERSAMPLING_16</span><span class="p">;</span><span class="w"></span>
 
-  <span class="k">if</span><span class="p">(</span><span class="n">HAL_UART_Init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">UartHandle</span><span class="p">)</span> <span class="o">!=</span> <span class="n">HAL_OK</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){}</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">HAL_UART_Init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">UartHandle</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">HAL_OK</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){}</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-<span class="p">}</span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">unittest_uart_putchar</span><span class="p">(</span><span class="kt">char</span> <span class="n">c</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">HAL_UART_Transmit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">UartHandle</span><span class="p">,</span> <span class="p">(</span><span class="kt">uint8_t</span><span class="o">*</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_putchar</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">HAL_UART_Transmit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">UartHandle</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="o">*</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">unittest_uart_flush</span><span class="p">(){}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_flush</span><span class="p">(){}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">unittest_uart_end</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">USARTx_CLK_DISABLE</span><span class="p">();</span>
-  <span class="n">USARTx_RX_GPIO_CLK_DISABLE</span><span class="p">();</span>
-  <span class="n">USARTx_TX_GPIO_CLK_DISABLE</span><span class="p">();</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">unittest_uart_end</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">USARTx_CLK_DISABLE</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">USARTx_RX_GPIO_CLK_DISABLE</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">USARTx_TX_GPIO_CLK_DISABLE</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Now we need to add some test cases. Tests can be added to a single C file that may include multiple tests. First of all, we need to add three default functions: <code class="docutils literal notranslate"><span class="pre">setUp</span></code>, <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> and <code class="docutils literal notranslate"><span class="pre">main</span></code>. <code class="docutils literal notranslate"><span class="pre">setUp</span></code> and <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the <code class="docutils literal notranslate"><span class="pre">setUp</span></code> function and if you need to clean up variables you use <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> function. In our example, we will use these functions to accordingly initialize and deinitialize LED.  <code class="docutils literal notranslate"><span class="pre">main</span></code> function acts as a simple program where we describe our test plan.</p>
@@ -467,59 +477,59 @@ condition in <a class="reference internal" href="../../projectconf/index.html#pr
 <li><p>2 sec delay is required  since the board doesn’t support software resetting  via <code class="docutils literal notranslate"><span class="pre">Serial.DTR/RTS</span></code></p></li>
 </ul>
 </div>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;../src/main.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;unity.h&gt;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../src/main.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unity.h&gt;</span><span class="cp"></span>
 
-<span class="kt">void</span> <span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">LED_GPIO_CLK_ENABLE</span><span class="p">();</span>
-    <span class="n">GPIO_InitTypeDef</span> <span class="n">GPIO_InitStruct</span><span class="p">;</span>
-    <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pin</span> <span class="o">=</span> <span class="n">LED_PIN</span><span class="p">;</span>
-    <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Mode</span> <span class="o">=</span> <span class="n">GPIO_MODE_OUTPUT_PP</span><span class="p">;</span>
-    <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pull</span> <span class="o">=</span> <span class="n">GPIO_PULLUP</span><span class="p">;</span>
-    <span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Speed</span> <span class="o">=</span> <span class="n">GPIO_SPEED_HIGH</span><span class="p">;</span>
-    <span class="n">HAL_GPIO_Init</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">GPIO_InitStruct</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">LED_GPIO_CLK_ENABLE</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">GPIO_InitTypeDef</span><span class="w"> </span><span class="n">GPIO_InitStruct</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GPIO_MODE_OUTPUT_PP</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Pull</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GPIO_PULLUP</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">GPIO_InitStruct</span><span class="p">.</span><span class="n">Speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GPIO_SPEED_HIGH</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">HAL_GPIO_Init</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">GPIO_InitStruct</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">HAL_GPIO_DeInit</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span> <span class="n">LED_PIN</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">HAL_GPIO_DeInit</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">test_led_builtin_pin_number</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">GPIO_PIN_5</span><span class="p">,</span> <span class="n">LED_PIN</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_led_builtin_pin_number</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">GPIO_PIN_5</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">test_led_state_high</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">HAL_GPIO_WritePin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span> <span class="n">LED_PIN</span><span class="p">,</span> <span class="n">GPIO_PIN_SET</span><span class="p">);</span>
-    <span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">GPIO_PIN_SET</span><span class="p">,</span> <span class="n">HAL_GPIO_ReadPin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span> <span class="n">LED_PIN</span><span class="p">));</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_led_state_high</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">HAL_GPIO_WritePin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_PIN_SET</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">GPIO_PIN_SET</span><span class="p">,</span><span class="w"> </span><span class="n">HAL_GPIO_ReadPin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">test_led_state_low</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">HAL_GPIO_WritePin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span> <span class="n">LED_PIN</span><span class="p">,</span> <span class="n">GPIO_PIN_RESET</span><span class="p">);</span>
-    <span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">GPIO_PIN_RESET</span><span class="p">,</span> <span class="n">HAL_GPIO_ReadPin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span> <span class="n">LED_PIN</span><span class="p">));</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_led_state_low</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">HAL_GPIO_WritePin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_PIN_RESET</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">GPIO_PIN_RESET</span><span class="p">,</span><span class="w"> </span><span class="n">HAL_GPIO_ReadPin</span><span class="p">(</span><span class="n">LED_GPIO_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">HAL_Init</span><span class="p">();</span>         <span class="c1">// initialize the HAL library</span>
-    <span class="n">HAL_Delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>    <span class="c1">// service delay</span>
-    <span class="n">UNITY_BEGIN</span><span class="p">();</span>
-    <span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_builtin_pin_number</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">HAL_Init</span><span class="p">();</span><span class="w">         </span><span class="c1">// initialize the HAL library</span>
+<span class="w">    </span><span class="n">HAL_Delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w">    </span><span class="c1">// service delay</span>
+<span class="w">    </span><span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_builtin_pin_number</span><span class="p">);</span><span class="w"></span>
 
-    <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_state_high</span><span class="p">);</span>
-        <span class="n">HAL_Delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-        <span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_state_low</span><span class="p">);</span>
-        <span class="n">HAL_Delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_state_high</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">HAL_Delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_state_low</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">HAL_Delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <span class="n">UNITY_END</span><span class="p">();</span> <span class="c1">// stop unit testing</span>
+<span class="w">    </span><span class="n">UNITY_END</span><span class="p">();</span><span class="w"> </span><span class="c1">// stop unit testing</span>
 
-    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">SysTick_Handler</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">HAL_IncTick</span><span class="p">();</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">SysTick_Handler</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">HAL_IncTick</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Now we are ready to upload tests to the board. To do this we can use <code class="docutils literal notranslate"><span class="pre">Test</span></code> option from the Project Tasks menu, <code class="docutils literal notranslate"><span class="pre">Tasks:</span> <span class="pre">Run</span> <span class="pre">Task...</span> <span class="pre">&gt;</span> <span class="pre">PlatformIO</span> <span class="pre">Test</span></code> option from the top menu or Test button on <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode-toolbar"><span class="std std-ref">PlatformIO Toolbar</span></a>:</p>
@@ -555,18 +565,11 @@ condition in <a class="reference internal" href="../../projectconf/index.html#pr
         &#169; Copyright 2014-present, PlatformIO.
 
     </p>
-  </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  </div> 
 
 </footer>
         </div>
+
       </div>
 
     </section>
@@ -574,35 +577,10 @@ condition in <a class="reference internal" href="../../projectconf/index.html#pr
   </div>
   
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-    <!-- Theme Analytics -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-1768265-7', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-  
-
-
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.1.1 (stable)
+    v5.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -632,111 +610,30 @@ condition in <a class="reference internal" href="../../projectconf/index.html#pr
     </dl>
   </div>
 </div>
- 
-<script>
-  var navBarHTML = '\
-<div>\
-  <div class="container container-fluid">\
-    <div class="navbar-header">\
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
-        <span class="sr-only">Toggle navigation</span>\
-        <span class="icon-bar"></span>\
-        <span class="icon-bar"></span>\
-        <span class="icon-bar"></span>\
-      </button>\
-      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
-    </div>\
-    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
-      <div>\
-        <ul class="nav navbar-nav">\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
-              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
-            </ul>\
-          </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
-            </ul>\
-          </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
-        </ul>\
-        <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
-        </ul>\
-      </div>\
-    </nav>\
-  </div>\
-</div>';
 
-  (function() {
-    if (window.location.href.indexOf('http://') === 0) {
-      location.href = 'https:' + window.location.href.substring(5);
-    }
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
 
-    var topBanner = $('.top-banner');
-    var navBar = document.createElement('header');
-    navBar.className = 'navbar navbar-inverse';
-    navBar.innerHTML = navBarHTML;
-    if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
-    } else {
-      document.body.insertBefore(navBar, document.body.firstChild);
-    }
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    if ($(window).width() <= 768) {
-      return;
-    }
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
 
-    var topOffset = 50;
-    if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
-    }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
-    });
-  })();
-</script>
-
+    
+   
 
 </body>
 </html>

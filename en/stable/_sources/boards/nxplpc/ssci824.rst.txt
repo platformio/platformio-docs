@@ -66,7 +66,7 @@ board manifest `ssci824.json <https://github.com/platformio/platform-nxplpc/blob
 
 Uploading
 ---------
-Switch Science mbed LPC824 supports the next uploading protocols:
+Switch Science mbed LPC824 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

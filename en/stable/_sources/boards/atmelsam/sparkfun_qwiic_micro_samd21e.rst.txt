@@ -66,7 +66,7 @@ board manifest `sparkfun_qwiic_micro_samd21e.json <https://github.com/platformio
 
 Uploading
 ---------
-SparkFun Qwiic Micro supports the next uploading protocols:
+SparkFun Qwiic Micro supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

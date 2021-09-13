@@ -66,7 +66,7 @@ board manifest `reel_board_v2.json <https://github.com/platformio/platform-nordi
 
 Uploading
 ---------
-PHYTEC reel board v2 supports the next uploading protocols:
+PHYTEC reel board v2 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

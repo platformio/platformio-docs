@@ -66,7 +66,7 @@ board manifest `rumba32_f446ve.json <https://github.com/platformio/platform-stst
 
 Uploading
 ---------
-3D Printer control board supports the next uploading protocols:
+3D Printer control board supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

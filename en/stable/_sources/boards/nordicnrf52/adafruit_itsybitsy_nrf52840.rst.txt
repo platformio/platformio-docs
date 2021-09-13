@@ -66,7 +66,7 @@ board manifest `adafruit_itsybitsy_nrf52840.json <https://github.com/platformio/
 
 Uploading
 ---------
-ItsyBitsy nRF52840 Express supports the next uploading protocols:
+ItsyBitsy nRF52840 Express supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

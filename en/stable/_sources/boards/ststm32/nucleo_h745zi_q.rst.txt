@@ -66,7 +66,7 @@ board manifest `nucleo_h745zi_q.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-ST Nucleo H745ZI-Q supports the next uploading protocols:
+ST Nucleo H745ZI-Q supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

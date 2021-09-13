@@ -66,7 +66,7 @@ board manifest `e310-arty.json <https://github.com/platformio/platform-sifive/bl
 
 Uploading
 ---------
-Arty FPGA Dev Kit supports the next uploading protocols:
+Arty FPGA Dev Kit supports the following uploading protocols:
 
 * ``ftdi``
 * ``jlink``

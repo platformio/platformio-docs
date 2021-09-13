@@ -66,7 +66,7 @@ board manifest `etboard.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-ETBoard supports the next uploading protocols:
+ETBoard supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

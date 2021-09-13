@@ -66,7 +66,7 @@ board manifest `max32620hsp.json <https://github.com/platformio/platform-maxim32
 
 Uploading
 ---------
-Maxim Health Sensor Platform supports the next uploading protocols:
+Maxim Health Sensor Platform supports the following uploading protocols:
 
 * ``jlink``
 * ``mbed``

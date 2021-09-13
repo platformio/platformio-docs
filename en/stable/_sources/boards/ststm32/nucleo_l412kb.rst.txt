@@ -66,7 +66,7 @@ board manifest `nucleo_l412kb.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo L412KB supports the next uploading protocols:
+ST Nucleo L412KB supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `heltec_wifi_lora_32.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-Heltec WiFi LoRa 32 supports the next uploading protocols:
+Heltec WiFi LoRa 32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

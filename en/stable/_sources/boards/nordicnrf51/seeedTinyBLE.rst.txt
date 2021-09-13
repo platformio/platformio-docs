@@ -66,7 +66,7 @@ board manifest `seeedTinyBLE.json <https://github.com/platformio/platform-nordic
 
 Uploading
 ---------
-Seeed Tiny BLE supports the next uploading protocols:
+Seeed Tiny BLE supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

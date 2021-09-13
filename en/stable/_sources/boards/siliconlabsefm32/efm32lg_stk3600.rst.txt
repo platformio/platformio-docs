@@ -66,7 +66,7 @@ board manifest `efm32lg_stk3600.json <https://github.com/platformio/platform-sil
 
 Uploading
 ---------
-EFM32LG-STK3600 Leopard Gecko supports the next uploading protocols:
+EFM32LG-STK3600 Leopard Gecko supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

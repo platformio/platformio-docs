@@ -66,7 +66,7 @@ board manifest `mkrwifi1010.json <https://github.com/platformio/platform-atmelsa
 
 Uploading
 ---------
-Arduino MKR WiFi 1010 supports the next uploading protocols:
+Arduino MKR WiFi 1010 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``
