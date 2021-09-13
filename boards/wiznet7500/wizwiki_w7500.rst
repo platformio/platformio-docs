@@ -66,7 +66,7 @@ board manifest `wizwiki_w7500.json <https://github.com/platformio/platform-wizne
 
 Uploading
 ---------
-WIZwiki-W7500 supports the next uploading protocols:
+WIZwiki-W7500 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``

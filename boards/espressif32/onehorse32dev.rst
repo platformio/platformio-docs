@@ -66,7 +66,7 @@ board manifest `onehorse32dev.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-Onehorse ESP32 Dev Module supports the next uploading protocols:
+Onehorse ESP32 Dev Module supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `sipeed-longan-nano-lite.json <https://github.com/sipeed/platform
 
 Uploading
 ---------
-Sipeed Longan Nano Lite supports the next uploading protocols:
+Sipeed Longan Nano Lite supports the following uploading protocols:
 
 * ``altera-usb-blaster``
 * ``gd-link``

@@ -79,14 +79,17 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoasrmicro650x <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework for ASR Microelectronics ASR650x (Heltec core)
+    * - `framework-arduinoasrmicro <https://github.com/HelTecAutomation/CubeCell-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Arduino Wiring-based Framework for ASR Microelectronics (Heltec core)
 
     * - `tool-cubecellelftool <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
       - CubeCell ELF tool
 
     * - `tool-cubecellflash <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
       - CubeCell Flash tool
+
+    * - `tool-cubecellflash6601 <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+      - CubeCell Flash tool for ASR6601
 
     * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
@@ -155,6 +158,12 @@ Heltec
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_asrmicro650x_cubecell_board_pro`
+      - No
+      - ASR6601
+      - 48MHz
+      - 224KB
+      - 224KB
     * - :ref:`board_asrmicro650x_cubecell_board_plus`
       - No
       - ASR6502

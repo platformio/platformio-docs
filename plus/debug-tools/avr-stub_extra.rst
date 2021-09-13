@@ -32,7 +32,7 @@ use avr-stub, the following settings in :ref:`projectconf`:
 
     ; GDB stub implementation
     lib_deps =
-        jdolinay/avr-debugger @ ~1.1
+        jdolinay/avr-debugger @ ~1.4
 
 Where the value in :ref:`projectconf_debug_port` is a serial port connected to your
 board and ``jdolinay/avr-debugger`` is a special library that implements the GDB stub.
@@ -45,6 +45,7 @@ the Arduino framework it might look like this:
 
     #include "Arduino.h"
     #include "avr8-stub.h"
+    #include "app_api.h" // only needed with flash breakpoints
 
     void setup()
     {
@@ -122,7 +123,7 @@ with the appropriate value from the table above, for example:
     debug_port = SERIAL_PORT
 
     lib_deps =
-        jdolinay/avr-debugger @ ~1.1
+        jdolinay/avr-debugger @ ~1.4
 
 
 Debugger limitations

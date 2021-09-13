@@ -66,7 +66,7 @@ board manifest `pybstick26_pro.json <https://github.com/platformio/platform-stst
 
 Uploading
 ---------
-PYBStick 26 Pro supports the next uploading protocols:
+PYBStick 26 Pro supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F401RE
+    - STM32F401RET6
   * - **Frequency**
     - 84MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `genericSTM32F401RE.json <https://github.com/platformio/platform-
   board = genericSTM32F401RE
 
   ; change microcontroller
-  board_build.mcu = stm32f401re
+  board_build.mcu = stm32f401ret6
 
   ; change MCU frequency
   board_build.f_cpu = 84000000L
@@ -66,7 +66,7 @@ board manifest `genericSTM32F401RE.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F401RE (96k RAM. 512k Flash) supports the next uploading protocols:
+STM32F401RE (96k RAM. 512k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

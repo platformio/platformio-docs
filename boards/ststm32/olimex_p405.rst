@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 1MB
   * - **RAM**
-    - 192KB
+    - 128KB
   * - **Vendor**
     - `Olimex <https://docs.zephyrproject.org/latest/boards/arm/olimex_stm32_p405/doc/index.html?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `olimex_p405.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-Olimex STM32-P405 supports the next uploading protocols:
+Olimex STM32-P405 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

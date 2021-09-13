@@ -66,7 +66,7 @@ board manifest `nrf52_dk.json <https://github.com/platformio/platform-nordicnrf5
 
 Uploading
 ---------
-Nordic nRF52-DK supports the next uploading protocols:
+Nordic nRF52-DK supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

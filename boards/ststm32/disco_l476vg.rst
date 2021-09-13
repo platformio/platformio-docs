@@ -66,7 +66,7 @@ board manifest `disco_l476vg.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST 32L476GDISCOVERY supports the next uploading protocols:
+ST 32L476GDISCOVERY supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

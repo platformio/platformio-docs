@@ -66,7 +66,7 @@ board manifest `cricket_l082cz.json <https://github.com/platformio/platform-stst
 
 Uploading
 ---------
-Cricket-L082CZ supports the next uploading protocols:
+Cricket-L082CZ supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

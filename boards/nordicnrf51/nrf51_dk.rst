@@ -66,7 +66,7 @@ board manifest `nrf51_dk.json <https://github.com/platformio/platform-nordicnrf5
 
 Uploading
 ---------
-Nordic nRF51X22 Development Kit(PCA1000X) supports the next uploading protocols:
+Nordic nRF51X22 Development Kit(PCA1000X) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

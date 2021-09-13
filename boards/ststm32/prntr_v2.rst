@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 192KB
+    - 128KB
   * - **Vendor**
     - `PrntrBoard <https://github.com/ghent360/PrntrBoardV2?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `prntr_v2.json <https://github.com/platformio/platform-ststm32/bl
 
 Uploading
 ---------
-PrntrBoard V2 supports the next uploading protocols:
+PrntrBoard V2 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

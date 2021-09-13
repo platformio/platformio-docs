@@ -66,7 +66,7 @@ board manifest `bpi-bit.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-BPI-Bit supports the next uploading protocols:
+BPI-Bit supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

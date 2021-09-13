@@ -66,7 +66,7 @@ board manifest `adafruit_feather_nrf52840_sense.json <https://github.com/platfor
 
 Uploading
 ---------
-Adafruit Feather Bluefruit Sense supports the next uploading protocols:
+Adafruit Feather Bluefruit Sense supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

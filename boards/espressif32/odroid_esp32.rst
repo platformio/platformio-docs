@@ -66,7 +66,7 @@ board manifest `odroid_esp32.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-ODROID-GO supports the next uploading protocols:
+ODROID-GO supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

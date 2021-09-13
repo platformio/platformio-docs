@@ -66,7 +66,7 @@ board manifest `tinypico.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-TinyPICO supports the next uploading protocols:
+TinyPICO supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `disco_l072cz_lrwan1.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-ST DISCO-L072CZ-LRWAN1 supports the next uploading protocols:
+ST DISCO-L072CZ-LRWAN1 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

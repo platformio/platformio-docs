@@ -66,7 +66,7 @@ board manifest `inex_openkb.json <https://github.com/platformio/platform-espress
 
 Uploading
 ---------
-INEX OpenKB supports the next uploading protocols:
+INEX OpenKB supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

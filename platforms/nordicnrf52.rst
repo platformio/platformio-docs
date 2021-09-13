@@ -87,12 +87,17 @@ You do not need to use/buy external debug probe.
       - NRF52833
       - 64MHz
       - 512KB
-      - 64KB
+      - 128KB
     * - :ref:`board_nordicnrf52_laird_bl652_dvk`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl653_dvk`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_laird_bl654_dvk`
       - NRF52840
       - 64MHz
@@ -128,6 +133,11 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_nrf52833_dk`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
       - NRF52840
       - 64MHz
@@ -168,6 +178,11 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_ublox_bmd345eval_nrf52840`
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
       - NRF52832
       - 64MHz
@@ -339,7 +354,7 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-nrf52-mbedos <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-mbed <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino framework supporting mbed-enabled boards
 
     * - `framework-arduinoadafruitnrf52 <https://github.com/adafruit/Adafruit_nRF52_Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
@@ -348,77 +363,17 @@ Packages
     * - `framework-arduinonordicnrf5 <https://github.com/sandeepmistry/arduino-nRF5.git?utm_source=platformio.org&utm_medium=docs>`__
       - Arduino Wiring-based Framework for Nordic Semiconductor nRF5 based boards
 
+    * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&utm_medium=docs>`__
+      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
+
     * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
       - Arm Mbed OS is a platform operating system designed for the internet of things
 
     * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
-      - canopennode Zephyr module
-
-    * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for CivetWeb Embedded C/C++ web server
-
-    * - `framework-zephyr-cmsis <https://github.com/zephyrproject-rtos/cmsis.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Software Interface Standard for Arm Cortex-based Microcontrollers
-
-    * - `framework-zephyr-fatfs <https://github.com/zephyrproject-rtos/fatfs.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for FatFS filesystem
-
-    * - `framework-zephyr-hal-nordic <https://github.com/zephyrproject-rtos/hal_nordic.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Nordic nRF5x HAL for Zephyr framework
-
-    * - `framework-zephyr-hal-st <https://github.com/zephyrproject-rtos/hal_st.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for the official libraries provided by STMicroelectronics
-
-    * - `framework-zephyr-libmetal <https://github.com/zephyrproject-rtos/libmetal.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for an abstraction layer across user-space Linux, baremetal, and RTOS environments
-
-    * - `framework-zephyr-littlefs <https://github.com/zephyrproject-rtos/littlefs.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for littlefs filesystem
-
-    * - `framework-zephyr-loramac-node <https://github.com/zephyrproject-rtos/loramac-node.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for LoRaWAN endpoint stack implementation
-
-    * - `framework-zephyr-lvgl <https://github.com/zephyrproject-rtos/lvgl.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for LittlevGL - an Open-source Embedded GUI Library
-
-    * - `framework-zephyr-mbedtls <https://github.com/zephyrproject-rtos/mbedtls.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for the mbed TLS library
-
-    * - `framework-zephyr-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs
-
-    * - `framework-zephyr-mcumgr <https://github.com/zephyrproject-rtos/mcumgr.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for mcumgr management library for 32-bit MCUs
-
-    * - `framework-zephyr-mipi-sys-t <https://github.com/zephyrproject-rtos/mipi-sys-t.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for MIPI System Software Trace
-
-    * - `framework-zephyr-open-amp <https://github.com/zephyrproject-rtos/open-amp.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Open Asymmetric Multi Processing (OpenAMP) framework
-
-    * - `framework-zephyr-openthread <https://github.com/zephyrproject-rtos/openthread.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for OpenThread - an open-source implementation of the Thread networking protocol
-
-    * - `framework-zephyr-segger <https://github.com/zephyrproject-rtos/segger.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for the Segger RTT library
-
-    * - `framework-zephyr-sof <https://github.com/zephyrproject-rtos/sof.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Sound Open Firmware
-
-    * - `framework-zephyr-tfm-mcuboot <https://github.com/zephyrproject-rtos/mcuboot.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for MCUboot - a secure bootloader for 32-bit MCUs (TFM Dependency)
-
-    * - `framework-zephyr-tinycbor <https://github.com/zephyrproject-rtos/tinycbor.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Concise Binary Object Representation Library
-
-    * - `framework-zephyr-tinycrypt <https://github.com/zephyrproject-rtos/tinycrypt.git?utm_source=platformio.org&utm_medium=docs>`__
-      - The TinyCrypt Library provides an implementation for constrained devices of a minimal set of standard cryptography primitives for Zephyr framework
-
-    * - `framework-zephyr-trusted-firmware-m <https://github.com/zephyrproject-rtos/trusted-firmware-m.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Zephyr module for Trusted Firmware M - a reference implementation of secure world software for ARMv8-M
+    * - `tool-adafruit-nrfutil <https://github.com/adafruit/Adafruit_nRF52_nrfutil.git?utm_source=platformio.org&utm_medium=docs>`__
+      - adafruit-nrfutil is a Python package that includes the adafruit-nrfutil command line utility and the nordicsemi library.
 
     * - `tool-bossac-nordicnrf52 <https://github.com/shumatech/BOSSA.git?utm_source=platformio.org&utm_medium=docs>`__
       - Basic Open Source SAM-BA Application (BOSSA) for Nordic nRF52 microcontrollers
@@ -600,7 +555,7 @@ BBC
       - NRF52833
       - 64MHz
       - 512KB
-      - 64KB
+      - 128KB
 
 Delta
 ~~~~~
@@ -708,6 +663,12 @@ Laird Connectivity
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_laird_bl653_dvk`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_laird_bl654_dvk`
       - On-board
       - NRF52840
@@ -770,6 +731,12 @@ Nordic
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_nrf52833_dk`
+      - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_nrf52840_dk`
       - On-board
       - NRF52840
@@ -990,6 +957,12 @@ u-blox
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_ublox_bmd345eval_nrf52840`
+      - On-board
+      - NRF52840
+      - 64MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
       - On-board
       - NRF52832

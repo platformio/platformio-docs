@@ -66,7 +66,7 @@ board manifest `zeroUSB.json <https://github.com/platformio/platform-atmelsam/bl
 
 Uploading
 ---------
-Arduino Zero (USB Native Port) supports the next uploading protocols:
+Arduino Zero (USB Native Port) supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

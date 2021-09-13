@@ -66,7 +66,7 @@ board manifest `96b_nitrogen.json <https://github.com/platformio/platform-nordic
 
 Uploading
 ---------
-96Boards Nitrogen supports the next uploading protocols:
+96Boards Nitrogen supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

@@ -66,7 +66,7 @@ board manifest `imbrios-logsens-v1p1.json <https://github.com/platformio/platfor
 
 Uploading
 ---------
-Imbrios LogSens V1P1 supports the next uploading protocols:
+Imbrios LogSens V1P1 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

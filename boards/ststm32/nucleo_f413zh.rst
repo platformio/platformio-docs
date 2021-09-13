@@ -66,7 +66,7 @@ board manifest `nucleo_f413zh.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo F413ZH supports the next uploading protocols:
+ST Nucleo F413ZH supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

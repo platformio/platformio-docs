@@ -66,7 +66,7 @@ board manifest `bluz_dk.json <https://github.com/platformio/platform-nordicnrf51
 
 Uploading
 ---------
-BluzDK supports the next uploading protocols:
+BluzDK supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

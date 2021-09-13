@@ -66,7 +66,7 @@ board manifest `stm8sdisco.json <https://github.com/platformio/platform-ststm8/b
 
 Uploading
 ---------
-ST STM8S-DISCOVERY supports the next uploading protocols:
+ST STM8S-DISCOVERY supports the following uploading protocols:
 
 * ``serial``
 * ``stlink``

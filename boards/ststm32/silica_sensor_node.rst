@@ -66,7 +66,7 @@ board manifest `silica_sensor_node.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-ST Sensor Node supports the next uploading protocols:
+ST Sensor Node supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `xdot_l151cc.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-MultiTech xDot supports the next uploading protocols:
+MultiTech xDot supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

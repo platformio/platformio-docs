@@ -66,7 +66,7 @@ board manifest `sodaq_autonomo.json <https://github.com/platformio/platform-atme
 
 Uploading
 ---------
-SODAQ Autonomo supports the next uploading protocols:
+SODAQ Autonomo supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

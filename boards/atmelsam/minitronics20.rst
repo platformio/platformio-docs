@@ -66,7 +66,7 @@ board manifest `minitronics20.json <https://github.com/platformio/platform-atmel
 
 Uploading
 ---------
-Minitronics v2.0 supports the next uploading protocols:
+Minitronics v2.0 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

@@ -362,6 +362,68 @@ Please use one of the next :ref:`projectconf_build_flags`:
     build_flags = -DVTABLES_IN_IRAM
 
 
+MMU - Adjusting ICACHE to IRAM ratio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By default the balanced ratio (32KB cache + 32KB IRAM) configuration is used.
+Alternative configurations can be enabled using the :ref:`projectconf_build_flags`
+option in :ref:`projectconf`:
+
+
+.. list-table:: MMU Configuration Options
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - ``PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM48``
+      -  16KB cache + 48KB IRAM (IRAM)
+
+    * - ``PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM48_SECHEAP_SHARED``
+      - 16KB cache + 48KB IRAM and 2nd Heap (shared)
+
+    * - ``PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM32_SECHEAP_NOTSHARED``
+      - 16KB cache + 32KB IRAM + 16KB 2nd Heap (not shared)
+
+    * - ``PIO_FRAMEWORK_ARDUINO_MMU_EXTERNAL_128K``
+      - 128K External 23LC1024
+
+    * - ``PIO_FRAMEWORK_ARDUINO_MMU_EXTERNAL_1024K``
+      - 1M External 64 MBit PSRAM
+
+    * - ``PIO_FRAMEWORK_ARDUINO_MMU_CUSTOM``
+      - Disables default configuration and expects user-specified flags
+
+Examples:
+
+.. code-block:: ini
+
+    [env:espduino]
+    platform = espressif8266
+    framework = arduino
+    board = espduino
+    build_flags =
+        -D PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM48
+
+    [env:espino]
+    platform = espressif8266
+    framework = arduino
+    board = espino
+    build_flags =
+        -D PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM32_SECHEAP_NOTSHARED
+
+    [env:d1_mini]
+    platform = espressif8266
+    framework = arduino
+    board = d1_mini
+    build_flags =
+        -D PIO_FRAMEWORK_ARDUINO_MMU_CUSTOM
+        -D MMU_IRAM_SIZE=0xC000
+        -D MMU_ICACHE_SIZE=0x4000
+        -D MMU_IRAM_HEAP
+
+More detailed information on this matter can be found in the `official documentation <https://arduino-esp8266.readthedocs.io/en/latest/mmu.html>`_.
+
 Exceptions
 ~~~~~~~~~~
 

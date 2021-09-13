@@ -463,6 +463,25 @@ Invent One
       - 4MB
       - 80KB
 
+Lifely
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_agruminolemon`
+      - No
+      - ESP8266
+      - 80MHz
+      - 4MB
+      - 80KB
+
 NodeMCU
 ~~~~~~~
 

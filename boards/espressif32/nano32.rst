@@ -66,7 +66,7 @@ board manifest `nano32.json <https://github.com/platformio/platform-espressif32/
 
 Uploading
 ---------
-MakerAsia Nano32 supports the next uploading protocols:
+MakerAsia Nano32 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

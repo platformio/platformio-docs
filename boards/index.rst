@@ -30,6 +30,7 @@ Aceinna IMU
     :maxdepth: 1
         
     aceinna_imu/LowCostRTK
+    aceinna_imu/OpenIMU335
     aceinna_imu/OpenIMU300
     aceinna_imu/OpenIMU300ZA
     aceinna_imu/OpenIMU330
@@ -45,6 +46,7 @@ ASR Microelectronics ASR650x
     asrmicro650x/cubecell_capsule_solar_sensor
     asrmicro650x/cubecell_node
     asrmicro650x/cubecell_board
+    asrmicro650x/cubecell_board_pro
     asrmicro650x/cubecell_board_plus
     asrmicro650x/cubecell_capsule
     asrmicro650x/cubecell_gps
@@ -330,11 +332,16 @@ Atmel SAM
     atmelsam/adafruit_metro_m0
     atmelsam/adafruit_metro_m4
     atmelsam/adafruit_metro_m4_airliftlite
+    atmelsam/adafruit_neokeytrinkey_m0
+    atmelsam/adafruit_neotrinkey_m0
+    atmelsam/adafruit_proxlighttrinkey_m0
     atmelsam/adafruit_pygamer_advance_m4
     atmelsam/adafruit_pygamer_m4
     atmelsam/adafruit_pyportal_m4
     atmelsam/adafruit_pyportal_m4_titano
     atmelsam/adafruit_qt_py_m0
+    atmelsam/adafruit_rotarytrinkey_m0
+    atmelsam/adafruit_slidetrinkey_m0
     atmelsam/adafruit_trellis_m4
     atmelsam/adafruit_trinket_m0
     atmelsam/adafruit_pirkey
@@ -388,6 +395,7 @@ Atmel SAM
     atmelsam/sparkfun_samd21_dev_usb
     atmelsam/sparkfun_samd21_mini_usb
     atmelsam/sparkfun_samd21_proRF
+    atmelsam/sparkfun_samd51_micromod
     atmelsam/sparkfun_samd51_thing_plus
     atmelsam/tuinozero96
 
@@ -428,6 +436,7 @@ Espressif 32
     espressif32/esp320
     espressif32/esp-wrover-kit
     espressif32/esp32dev
+    espressif32/esp32-c3-devkitm-1
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
     espressif32/firebeetle32
@@ -435,6 +444,7 @@ Espressif 32
     espressif32/frogboard
     espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
+    espressif32/heltec_wifi_kit_32_v2
     espressif32/heltec_wifi_lora_32
     espressif32/heltec_wifi_lora_32_V2
     espressif32/heltec_wireless_stick
@@ -534,6 +544,7 @@ Espressif 8266
     espressif8266/esp8285
     espressif8266/heltec_wifi_kit_8
     espressif8266/inventone
+    espressif8266/agruminolemon
     espressif8266/nodemcu
     espressif8266/nodemcuv2
     espressif8266/modwifi
@@ -775,6 +786,7 @@ Nordic nRF52
     nordicnrf52/nano33ble
     nordicnrf52/bbcmicrobit_v2
     nordicnrf52/laird_bl652_dvk
+    nordicnrf52/laird_bl653_dvk
     nordicnrf52/laird_bl654_dvk
     nordicnrf52/bluey
     nordicnrf52/adafruit_cplaynrf52840
@@ -789,6 +801,7 @@ Nordic nRF52
     nordicnrf52/adafruit_metro_nrf52840
     nordicnrf52/thingy_52
     nordicnrf52/nrf52_dk
+    nordicnrf52/nrf52833_dk
     nordicnrf52/nrf52840_dk
     nordicnrf52/nrf52840_dk_adafruit
     nordicnrf52/reel_board
@@ -805,6 +818,7 @@ Nordic nRF52
     nordicnrf52/vbluno52
     nordicnrf52/dwm1001_dev
     nordicnrf52/hackaBLE
+    nordicnrf52/ublox_bmd345eval_nrf52840
     nordicnrf52/ublox_evk_nina_b1
 
 Nuclei
@@ -871,6 +885,23 @@ NXP LPC
     nxplpc/oc_mbuino
     nxplpc/ubloxc027
     nxplpc/lpc11u35_y5_mbug
+
+OpenHW Group
+------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    openhw/nexys_a7
+
+Raspberry Pi RP2040
+-------------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    raspberrypi/nanorp2040connect
+    raspberrypi/pico
 
 RISC-V GAP
 ----------
@@ -939,6 +970,8 @@ ST STM32
     ststm32/b96b_neonkey
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
+    ststm32/portenta_h7_m4
+    ststm32/portenta_h7_m7
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
     ststm32/armstrap_eagle512
@@ -949,8 +982,6 @@ ST STM32
     ststm32/blackpill_f103c8
     ststm32/blackpill_f103c8_128
     ststm32/robotdyn_blackpill_f303cc
-    ststm32/blackpill_f401cc
-    ststm32/blackpill_f401ce
     ststm32/blue_f407ve_mini
     ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
@@ -961,6 +992,8 @@ ST STM32
     ststm32/demo_f030f4
     ststm32/econode_l082cz
     ststm32/electrosmith_daisy
+    ststm32/elektor_f072cb
+    ststm32/elektor_f072c8
     ststm32/elmo_f411re
     ststm32/diymore_f407vgt
     ststm32/fk407m1
@@ -990,6 +1023,7 @@ ST STM32
     ststm32/nucleo_g431rb
     ststm32/nucleo_g474re
     ststm32/olimexino
+    ststm32/olimexino_stm32f3
     ststm32/olimex_f103
     ststm32/olimex_p405
     ststm32/nucleo_wb55rg_p
@@ -1016,9 +1050,11 @@ ST STM32
     ststm32/disco_l100rc
     ststm32/disco_l476vg
     ststm32/disco_l496ag
+    ststm32/disco_b_g431b_esc1
     ststm32/disco_l475vg_iot01a
     ststm32/disco_l072cz_lrwan1
     ststm32/disco_f072rb
+    ststm32/nucleo_g031k8
     ststm32/nucleo_f030r8
     ststm32/nucleo_f031k6
     ststm32/nucleo_f042k6
@@ -1048,12 +1084,14 @@ ST STM32
     ststm32/nucleo_h723zg
     ststm32/nucleo_h743zi
     ststm32/nucleo_h745zi_q
+    ststm32/nucleo_h753zi
     ststm32/nucleo_l011k4
     ststm32/nucleo_l031k6
     ststm32/nucleo_l053r8
     ststm32/nucleo_l073rz
     ststm32/nucleo_l152re
     ststm32/nucleo_l412kb
+    ststm32/nucleo_l412rb_p
     ststm32/nucleo_l432kc
     ststm32/nucleo_l433rc_p
     ststm32/nucleo_l452re
@@ -1062,12 +1100,16 @@ ST STM32
     ststm32/nucleo_l496zg
     ststm32/nucleo_l496zg_p
     ststm32/nucleo_l4r5zi
+    ststm32/nucleo_l552ze_q
+    ststm32/nucleo_wl55jc
     ststm32/disco_f030r8
     ststm32/disco_f051r8
     ststm32/disco_f303vc
     ststm32/disco_f407vg
     ststm32/disco_g031j6
+    ststm32/disco_g071rb
     ststm32/eval_l073z
+    ststm32/disco_l4s5i_iot01a
     ststm32/disco_l152rb
     ststm32/disco_f100rb
     ststm32/silica_sensor_node
@@ -1155,8 +1197,11 @@ ST STM32
     ststm32/hy_tinystm103tb
     ststm32/vake_v1
     ststm32/vccgnd_f103zet6
+    ststm32/vccgnd_f407zg_mini
     ststm32/waveshare_open103z
+    ststm32/blackpill_f401cc
     ststm32/blackpill_f411ce
+    ststm32/blackpill_f401ce
     ststm32/wraith32_v1
     ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211
@@ -1171,7 +1216,10 @@ ST STM8
 .. toctree::
     :maxdepth: 1
         
+    ststm8/nucleo_8s207k8
+    ststm8/nucleo_8s208rb
     ststm8/stm8sdisco
+    ststm8/stm8s003f3
     ststm8/stm8sblue
     ststm8/stm8sblack
     ststm8/mb208
@@ -1183,6 +1231,7 @@ Teensy
 .. toctree::
     :maxdepth: 1
         
+    teensy/teensymm
     teensy/teensy2
     teensy/teensy30
     teensy/teensy31

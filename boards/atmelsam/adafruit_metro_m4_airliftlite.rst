@@ -66,7 +66,7 @@ board manifest `adafruit_metro_m4_airliftlite.json <https://github.com/platformi
 
 Uploading
 ---------
-Adafruit Metro M4 AirLift Lite supports the next uploading protocols:
+Adafruit Metro M4 AirLift Lite supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

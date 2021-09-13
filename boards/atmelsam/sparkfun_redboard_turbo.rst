@@ -66,7 +66,7 @@ board manifest `sparkfun_redboard_turbo.json <https://github.com/platformio/plat
 
 Uploading
 ---------
-SparkFun RedBoard Turbo supports the next uploading protocols:
+SparkFun RedBoard Turbo supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

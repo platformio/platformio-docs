@@ -66,7 +66,7 @@ board manifest `mgbot-iotik32a.json <https://github.com/platformio/platform-espr
 
 Uploading
 ---------
-MGBOT IOTIK 32A supports the next uploading protocols:
+MGBOT IOTIK 32A supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

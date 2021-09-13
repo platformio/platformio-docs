@@ -66,7 +66,7 @@ board manifest `econode_l082cz.json <https://github.com/platformio/platform-stst
 
 Uploading
 ---------
-Econode-L082CZ supports the next uploading protocols:
+Econode-L082CZ supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

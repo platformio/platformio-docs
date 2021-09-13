@@ -761,8 +761,8 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_atmelavr_sparkfun_satmega128rfa1`
       - ATMEGA128RFA1
       - 16MHz
-      - 16KB
       - 124KB
+      - 16KB
     * - :ref:`board_atmelavr_sparkfun_digitalsandbox`
       - ATMEGA328P
       - 8MHz
@@ -2542,8 +2542,8 @@ SparkFun
       - On-board
       - ATMEGA128RFA1
       - 16MHz
-      - 16KB
       - 124KB
+      - 16KB
     * - :ref:`board_atmelavr_sparkfun_digitalsandbox`
       - On-board
       - ATMEGA328P

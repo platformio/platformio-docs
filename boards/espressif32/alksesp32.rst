@@ -66,7 +66,7 @@ board manifest `alksesp32.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-ALKS ESP32 supports the next uploading protocols:
+ALKS ESP32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

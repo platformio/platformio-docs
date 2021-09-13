@@ -66,7 +66,7 @@ board manifest `remram_v1.json <https://github.com/platformio/platform-ststm32/b
 
 Uploading
 ---------
-3D printer controller supports the next uploading protocols:
+3D printer controller supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

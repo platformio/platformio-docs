@@ -66,7 +66,7 @@ board manifest `seeedArchMax.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-Seeed Arch Max supports the next uploading protocols:
+Seeed Arch Max supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

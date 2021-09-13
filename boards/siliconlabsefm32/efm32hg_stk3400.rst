@@ -66,7 +66,7 @@ board manifest `efm32hg_stk3400.json <https://github.com/platformio/platform-sil
 
 Uploading
 ---------
-SLSTK3400A USB-enabled Happy Gecko supports the next uploading protocols:
+SLSTK3400A USB-enabled Happy Gecko supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

@@ -32,7 +32,7 @@ sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), "_ext"
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["redirects", "notfound.extension"]
+extensions = ["redirects", "notfound.extension", "sphinx_copybutton"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -176,7 +176,7 @@ html_static_path = ["_static"]
 # html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-html_show_sphinx = True
+html_show_sphinx = False
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 # html_show_copyright = True

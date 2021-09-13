@@ -66,7 +66,7 @@ board manifest `oshchip.json <https://github.com/platformio/platform-nordicnrf51
 
 Uploading
 ---------
-OSHChip supports the next uploading protocols:
+OSHChip supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

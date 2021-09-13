@@ -66,7 +66,7 @@ board manifest `nucleo_l486rg.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo L486RG supports the next uploading protocols:
+ST Nucleo L486RG supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

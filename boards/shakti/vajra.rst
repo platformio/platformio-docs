@@ -66,7 +66,7 @@ board manifest `vajra.json <https://github.com/platformio/platform-shakti/blob/m
 
 Uploading
 ---------
-Vajra on Arty A7-100: Artix-7 FPGA Development Board supports the next uploading protocols:
+Vajra on Arty A7-100: Artix-7 FPGA Development Board supports the following uploading protocols:
 
 * ``ftdi``
 * ``ftdi``

@@ -66,7 +66,7 @@ board manifest `wifiduino.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-WiFiduino supports the next uploading protocols:
+WiFiduino supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `mts_mdot_f411re.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-MultiTech mDot F411 supports the next uploading protocols:
+MultiTech mDot F411 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

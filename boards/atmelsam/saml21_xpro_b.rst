@@ -66,7 +66,7 @@ board manifest `saml21_xpro_b.json <https://github.com/platformio/platform-atmel
 
 Uploading
 ---------
-Atmel SAML21-XPRO-B supports the next uploading protocols:
+Atmel SAML21-XPRO-B supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

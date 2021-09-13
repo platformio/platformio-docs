@@ -66,7 +66,7 @@ board manifest `iotaap_magnolia.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-IoTaaP Magnolia supports the next uploading protocols:
+IoTaaP Magnolia supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

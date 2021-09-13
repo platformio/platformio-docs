@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F103T8T6
+    - STM32F103T8U6
   * - **Frequency**
     - 72MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `genericSTM32F103T8.json <https://github.com/platformio/platform-
   board = genericSTM32F103T8
 
   ; change microcontroller
-  board_build.mcu = stm32f103t8t6
+  board_build.mcu = stm32f103t8u6
 
   ; change MCU frequency
   board_build.f_cpu = 72000000L
@@ -66,7 +66,7 @@ board manifest `genericSTM32F103T8.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F103T8 (20k RAM. 64k Flash) supports the next uploading protocols:
+STM32F103T8 (20k RAM. 64k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -33,6 +33,7 @@ Examples are listed from `Aceinna IMU development platform repository <https://g
 
 * `OpenIMU300RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300RI?utm_source=platformio.org&utm_medium=docs>`_
 * `OpenIMU330BI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU330BI?utm_source=platformio.org&utm_medium=docs>`_
+* `OpenIMU335RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU335RI?utm_source=platformio.org&utm_medium=docs>`_
 * `OpenRTK330LI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenRTK330LI?utm_source=platformio.org&utm_medium=docs>`_
 * `OpenIMU300ZI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300ZI?utm_source=platformio.org&utm_medium=docs>`_
 
@@ -96,6 +97,11 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_aceinna_imu_OpenIMU335`
+      - STM32F405RG
+      - 120MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_aceinna_imu_OpenIMU300`
       - STM32F405RG
       - 120MHz
@@ -214,6 +220,12 @@ Aceinna
       - 180MHz
       - 1MB
       - 384KB
+    * - :ref:`board_aceinna_imu_OpenIMU335`
+      - External
+      - STM32F405RG
+      - 120MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_aceinna_imu_OpenIMU300`
       - External
       - STM32F405RG

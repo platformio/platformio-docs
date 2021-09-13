@@ -66,7 +66,7 @@ board manifest `lpc11u68.json <https://github.com/platformio/platform-nxplpc/blo
 
 Uploading
 ---------
-LPCXpresso11U68 supports the next uploading protocols:
+LPCXpresso11U68 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

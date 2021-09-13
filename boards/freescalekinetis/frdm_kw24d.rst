@@ -66,7 +66,7 @@ board manifest `frdm_kw24d.json <https://github.com/platformio/platform-freescal
 
 Uploading
 ---------
-Freescale Kinetis FRDM-KW24D512 supports the next uploading protocols:
+Freescale Kinetis FRDM-KW24D512 supports the following uploading protocols:
 
 * ``jlink``
 * ``mbed``

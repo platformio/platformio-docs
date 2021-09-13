@@ -11,8 +11,8 @@
 
 .. _board_ststm32_blackpill_f411ce:
 
-WeAct BlackPill V2.0 (BlackPill F411CE)
-=======================================
+WeAct Studio BlackPill V2.0 (STM32F411CE)
+=========================================
 
 .. contents::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 128KB
   * - **Vendor**
-    - `WeAct <https://github.com/mcauser/WEACT_F411CEU6?utm_source=platformio.org&utm_medium=docs>`__
+    - `WeAct Studio <https://github.com/WeActTC/MiniSTM32F4x1?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``blackpill_f411ce`` ID for :ref:`projectconf_env_board` option in :r
   platform = ststm32
   board = blackpill_f411ce
 
-You can override default WeAct BlackPill V2.0 (BlackPill F411CE) settings per build environment using
+You can override default WeAct Studio BlackPill V2.0 (STM32F411CE) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `blackpill_f411ce.json <https://github.com/platformio/platform-ststm32/blob/master/boards/blackpill_f411ce.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `blackpill_f411ce.json <https://github.com/platformio/platform-st
 
 Uploading
 ---------
-WeAct BlackPill V2.0 (BlackPill F411CE) supports the next uploading protocols:
+WeAct Studio BlackPill V2.0 (STM32F411CE) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -100,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WeAct BlackPill V2.0 (BlackPill F411CE) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+WeAct Studio BlackPill V2.0 (STM32F411CE) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

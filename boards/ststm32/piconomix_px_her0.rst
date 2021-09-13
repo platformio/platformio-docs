@@ -66,7 +66,7 @@ board manifest `piconomix_px_her0.json <https://github.com/platformio/platform-s
 
 Uploading
 ---------
-Piconomix PX-HER0 supports the next uploading protocols:
+Piconomix PX-HER0 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

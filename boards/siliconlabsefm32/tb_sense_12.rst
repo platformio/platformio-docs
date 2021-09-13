@@ -66,7 +66,7 @@ board manifest `tb_sense_12.json <https://github.com/platformio/platform-silicon
 
 Uploading
 ---------
-Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT supports the next uploading protocols:
+Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

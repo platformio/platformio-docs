@@ -66,7 +66,7 @@ board manifest `gnat_l082cz.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-Gnat-L082CZ supports the next uploading protocols:
+Gnat-L082CZ supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

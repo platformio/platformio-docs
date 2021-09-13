@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F405RG
+    - STM32F405RGT6
   * - **Frequency**
     - 168MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `genericSTM32F405RG.json <https://github.com/platformio/platform-
   board = genericSTM32F405RG
 
   ; change microcontroller
-  board_build.mcu = stm32f405rg
+  board_build.mcu = stm32f405rgt6
 
   ; change MCU frequency
   board_build.f_cpu = 168000000L
@@ -66,7 +66,7 @@ board manifest `genericSTM32F405RG.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F405RG (128k RAM. 1024k Flash) supports the next uploading protocols:
+STM32F405RG (128k RAM. 1024k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

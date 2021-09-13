@@ -66,7 +66,7 @@ board manifest `nrf51822_y5_mbug.json <https://github.com/platformio/platform-no
 
 Uploading
 ---------
-y5 nRF51822 mbug supports the next uploading protocols:
+y5 nRF51822 mbug supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

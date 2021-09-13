@@ -66,7 +66,7 @@ board manifest `lpcxpresso55s16.json <https://github.com/platformio/platform-nxp
 
 Uploading
 ---------
-NXP LPCXpresso55S16 supports the next uploading protocols:
+NXP LPCXpresso55S16 supports the following uploading protocols:
 
 * ``jlink``
 * ``mbed``

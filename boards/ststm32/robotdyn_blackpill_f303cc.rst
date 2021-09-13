@@ -66,7 +66,7 @@ board manifest `robotdyn_blackpill_f303cc.json <https://github.com/platformio/pl
 
 Uploading
 ---------
-BlackPill F303CC supports the next uploading protocols:
+BlackPill F303CC supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

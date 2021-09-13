@@ -66,7 +66,7 @@ board manifest `seeeduino_lorawan.json <https://github.com/platformio/platform-a
 
 Uploading
 ---------
-Seeeduino LoRaWAN supports the next uploading protocols:
+Seeeduino LoRaWAN supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

@@ -30,7 +30,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 64KB
+    - 128KB
   * - **Vendor**
     - `BBC <https://microbit.org/new-microbit/?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `bbcmicrobit_v2.json <https://github.com/platformio/platform-nord
 
 Uploading
 ---------
-BBC micro:bit V2 supports the next uploading protocols:
+BBC micro:bit V2 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -131,3 +131,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 192KB
+    - 128KB
   * - **Vendor**
     - `Armed <https://github.com/ktand/Armed?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `armed_v1.json <https://github.com/platformio/platform-ststm32/bl
 
 Uploading
 ---------
-3D Printer Controller supports the next uploading protocols:
+3D Printer Controller supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

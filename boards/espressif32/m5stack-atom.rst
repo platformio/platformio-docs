@@ -66,7 +66,7 @@ board manifest `m5stack-atom.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-M5Stack-ATOM supports the next uploading protocols:
+M5Stack-ATOM supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

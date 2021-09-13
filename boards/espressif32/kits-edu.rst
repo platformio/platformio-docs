@@ -66,7 +66,7 @@ board manifest `kits-edu.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-KITS ESP32 EDU supports the next uploading protocols:
+KITS ESP32 EDU supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

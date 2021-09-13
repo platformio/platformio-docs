@@ -66,7 +66,7 @@ board manifest `mkrwan1300.json <https://github.com/platformio/platform-atmelsam
 
 Uploading
 ---------
-Arduino MKR WAN 1300 supports the next uploading protocols:
+Arduino MKR WAN 1300 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

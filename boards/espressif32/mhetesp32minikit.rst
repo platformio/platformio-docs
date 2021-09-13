@@ -66,7 +66,7 @@ board manifest `mhetesp32minikit.json <https://github.com/platformio/platform-es
 
 Uploading
 ---------
-MH ET LIVE ESP32MiniKit supports the next uploading protocols:
+MH ET LIVE ESP32MiniKit supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

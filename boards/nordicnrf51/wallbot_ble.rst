@@ -66,7 +66,7 @@ board manifest `wallbot_ble.json <https://github.com/platformio/platform-nordicn
 
 Uploading
 ---------
-JKSoft Wallbot BLE supports the next uploading protocols:
+JKSoft Wallbot BLE supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``mbed``

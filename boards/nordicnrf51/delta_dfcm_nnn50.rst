@@ -66,7 +66,7 @@ board manifest `delta_dfcm_nnn50.json <https://github.com/platformio/platform-no
 
 Uploading
 ---------
-Delta DFCM-NNN50 supports the next uploading protocols:
+Delta DFCM-NNN50 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``mbed``

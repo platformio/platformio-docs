@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 256KB
   * - **RAM**
-    - 48KB
+    - 40KB
   * - **Vendor**
     - `ST <http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF254044?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `disco_f303vc.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-ST STM32F3DISCOVERY supports the next uploading protocols:
+ST STM32F3DISCOVERY supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -127,6 +127,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices

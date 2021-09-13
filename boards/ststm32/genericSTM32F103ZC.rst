@@ -66,7 +66,7 @@ board manifest `genericSTM32F103ZC.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-STM32F103ZC (48k RAM. 256k Flash) supports the next uploading protocols:
+STM32F103ZC (48k RAM. 256k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

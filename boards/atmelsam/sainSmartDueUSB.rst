@@ -66,7 +66,7 @@ board manifest `sainSmartDueUSB.json <https://github.com/platformio/platform-atm
 
 Uploading
 ---------
-SainSmart Due (USB Native Port) supports the next uploading protocols:
+SainSmart Due (USB Native Port) supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

@@ -66,7 +66,7 @@ board manifest `nucleo_l433rc_p.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-ST Nucleo L433RC-P supports the next uploading protocols:
+ST Nucleo L433RC-P supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `lopy.json <https://github.com/platformio/platform-espressif32/bl
 
 Uploading
 ---------
-Pycom LoPy supports the next uploading protocols:
+Pycom LoPy supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

@@ -66,7 +66,7 @@ board manifest `s_odi_ultra.json <https://github.com/platformio/platform-espress
 
 Uploading
 ---------
-S.ODI Ultra v1 supports the next uploading protocols:
+S.ODI Ultra v1 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

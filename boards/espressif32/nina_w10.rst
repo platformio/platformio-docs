@@ -66,7 +66,7 @@ board manifest `nina_w10.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-u-blox NINA-W10 series supports the next uploading protocols:
+u-blox NINA-W10 series supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `steval_mksboxv1.json <https://github.com/platformio/platform-sts
 
 Uploading
 ---------
-SensorTile.box supports the next uploading protocols:
+SensorTile.box supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

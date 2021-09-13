@@ -66,7 +66,7 @@ board manifest `pybstick26_duino.json <https://github.com/platformio/platform-st
 
 Uploading
 ---------
-PYBSTICK26 Duino supports the next uploading protocols:
+PYBSTICK26 Duino supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

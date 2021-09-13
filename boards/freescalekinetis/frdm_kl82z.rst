@@ -66,7 +66,7 @@ board manifest `frdm_kl82z.json <https://github.com/platformio/platform-freescal
 
 Uploading
 ---------
-Freescale Kinetis FRDM-KL82Z supports the next uploading protocols:
+Freescale Kinetis FRDM-KL82Z supports the following uploading protocols:
 
 * ``jlink``
 * ``mbed``

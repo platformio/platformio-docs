@@ -66,7 +66,7 @@ board manifest `sodaq_explorer.json <https://github.com/platformio/platform-atme
 
 Uploading
 ---------
-SODAQ ExpLoRer supports the next uploading protocols:
+SODAQ ExpLoRer supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

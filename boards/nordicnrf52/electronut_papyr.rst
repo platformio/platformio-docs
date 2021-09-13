@@ -66,7 +66,7 @@ board manifest `electronut_papyr.json <https://github.com/platformio/platform-no
 
 Uploading
 ---------
-ElectronutLabs Papyr supports the next uploading protocols:
+ElectronutLabs Papyr supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `hornbill32dev.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-Hornbill ESP32 Dev supports the next uploading protocols:
+Hornbill ESP32 Dev supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

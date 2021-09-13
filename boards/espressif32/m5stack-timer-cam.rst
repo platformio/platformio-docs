@@ -66,7 +66,7 @@ board manifest `m5stack-timer-cam.json <https://github.com/platformio/platform-e
 
 Uploading
 ---------
-M5Stack Timer CAM supports the next uploading protocols:
+M5Stack Timer CAM supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

@@ -66,7 +66,7 @@ board manifest `dipcortexm0.json <https://github.com/platformio/platform-nxplpc/
 
 Uploading
 ---------
-Solder Splash Labs DipCortex M0 supports the next uploading protocols:
+Solder Splash Labs DipCortex M0 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

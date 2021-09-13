@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 192.00KB
+    - 192KB
   * - **Vendor**
     - `Midatronics <https://midatronics.com/Development_Boards/MKR_Sharky_I?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `mkr_sharky.json <https://github.com/platformio/platform-ststm32/
 
 Uploading
 ---------
-MKR Sharky supports the next uploading protocols:
+MKR Sharky supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

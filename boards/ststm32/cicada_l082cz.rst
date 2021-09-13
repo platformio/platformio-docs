@@ -66,7 +66,7 @@ board manifest `cicada_l082cz.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-Cicada-L082CZ supports the next uploading protocols:
+Cicada-L082CZ supports the following uploading protocols:
 
 * ``blackmagic``
 * ``dfu``

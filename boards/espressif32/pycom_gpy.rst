@@ -66,7 +66,7 @@ board manifest `pycom_gpy.json <https://github.com/platformio/platform-espressif
 
 Uploading
 ---------
-Pycom GPy supports the next uploading protocols:
+Pycom GPy supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

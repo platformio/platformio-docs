@@ -66,7 +66,7 @@ board manifest `adafruit_matrix_portal_m4.json <https://github.com/platformio/pl
 
 Uploading
 ---------
-Adafruit Matrix Portal M4 supports the next uploading protocols:
+Adafruit Matrix Portal M4 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``

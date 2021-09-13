@@ -66,7 +66,7 @@ board manifest `black_f407vg.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-Black STM32F407VG supports the next uploading protocols:
+Black STM32F407VG supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

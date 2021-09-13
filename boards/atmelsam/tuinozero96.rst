@@ -66,7 +66,7 @@ board manifest `tuinozero96.json <https://github.com/platformio/platform-atmelsa
 
 Uploading
 ---------
-Tuino 096 supports the next uploading protocols:
+Tuino 096 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

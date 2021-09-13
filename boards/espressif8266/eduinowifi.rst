@@ -66,7 +66,7 @@ board manifest `eduinowifi.json <https://github.com/platformio/platform-espressi
 
 Uploading
 ---------
-Schirmilabs Eduino WiFi supports the next uploading protocols:
+Schirmilabs Eduino WiFi supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

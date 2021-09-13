@@ -66,7 +66,7 @@ board manifest `demo_f030f4.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-Demo F030F4 supports the next uploading protocols:
+Demo F030F4 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

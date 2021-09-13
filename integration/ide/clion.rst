@@ -89,6 +89,16 @@ not valid C/C++ based source files:
 
 See how to :ref:`faq_convert_ino_to_cpp`.
 
+CLion with ESP-IDF
+~~~~~~~~~~~~~~~~~~
+
+Starting with version 4.0, ESP-IDF uses a build system based on CMake. In order to
+provide more seamless integration, PlatformIO uses the CMake file-based API to extract
+build configurations. Because of this approach, there is a conflict between
+``CMakeLists.txt`` used by ESP-IDF and ``CMakeLists.txt`` which PlatformIO generates
+for CLion. At the moment we're working on better integration with CLion without this
+intermediate ``CMakeLists.txt``, but there is no ETA for this feature.
+
 Quick Start
 -----------
 

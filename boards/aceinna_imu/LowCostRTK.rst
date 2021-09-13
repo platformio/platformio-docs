@@ -66,7 +66,7 @@ board manifest `LowCostRTK.json <https://github.com/aceinna/platform-aceinna_imu
 
 Uploading
 ---------
-Aceinna Low Cost RTK supports the next uploading protocols:
+Aceinna Low Cost RTK supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

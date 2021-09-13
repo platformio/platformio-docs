@@ -30,7 +30,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Flash**
     - 16MB
   * - **RAM**
-    - 6.25MB
+    - 4.31MB
   * - **Vendor**
     - `M5Stack <http://www.m5stack.com?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -66,7 +66,7 @@ board manifest `m5stack-core2.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-M5Stack Core2 supports the next uploading protocols:
+M5Stack Core2 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

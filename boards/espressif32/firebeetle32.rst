@@ -66,7 +66,7 @@ board manifest `firebeetle32.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-FireBeetle-ESP32 supports the next uploading protocols:
+FireBeetle-ESP32 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

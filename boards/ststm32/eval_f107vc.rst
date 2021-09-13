@@ -66,7 +66,7 @@ board manifest `eval_f107vc.json <https://github.com/platformio/platform-ststm32
 
 Uploading
 ---------
-STM3210C-EVAL supports the next uploading protocols:
+STM3210C-EVAL supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

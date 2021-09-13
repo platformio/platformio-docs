@@ -66,7 +66,7 @@ board manifest `ruuvitag.json <https://github.com/platformio/platform-nordicnrf5
 
 Uploading
 ---------
-Ruuvi Tag supports the next uploading protocols:
+Ruuvi Tag supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

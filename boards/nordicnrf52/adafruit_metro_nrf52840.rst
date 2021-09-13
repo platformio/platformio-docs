@@ -66,7 +66,7 @@ board manifest `adafruit_metro_nrf52840.json <https://github.com/platformio/plat
 
 Uploading
 ---------
-Metro nRF52840 Express supports the next uploading protocols:
+Metro nRF52840 Express supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

@@ -66,7 +66,7 @@ board manifest `esp12e.json <https://github.com/platformio/platform-espressif826
 
 Uploading
 ---------
-Espressif ESP8266 ESP-12E supports the next uploading protocols:
+Espressif ESP8266 ESP-12E supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

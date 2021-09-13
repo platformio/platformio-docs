@@ -66,7 +66,7 @@ board manifest `oroca_edubot.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-OROCA EduBot supports the next uploading protocols:
+OROCA EduBot supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``

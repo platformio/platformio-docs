@@ -66,7 +66,7 @@ board manifest `samd21g18a.json <https://github.com/platformio/platform-atmelsam
 
 Uploading
 ---------
-Atmel ATSAMW25-XPRO supports the next uploading protocols:
+Atmel ATSAMW25-XPRO supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

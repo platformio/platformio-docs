@@ -66,7 +66,7 @@ board manifest `thingy_52.json <https://github.com/platformio/platform-nordicnrf
 
 Uploading
 ---------
-Nordic Thingy:52 (nRF52-PCA20020) supports the next uploading protocols:
+Nordic Thingy:52 (nRF52-PCA20020) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

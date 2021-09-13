@@ -66,7 +66,7 @@ board manifest `nucleo_f031k6.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo F031K6 supports the next uploading protocols:
+ST Nucleo F031K6 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -139,6 +139,9 @@ Frameworks
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others

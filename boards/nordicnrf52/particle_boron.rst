@@ -66,7 +66,7 @@ board manifest `particle_boron.json <https://github.com/platformio/platform-nord
 
 Uploading
 ---------
-Particle Boron supports the next uploading protocols:
+Particle Boron supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

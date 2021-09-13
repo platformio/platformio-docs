@@ -66,7 +66,7 @@ board manifest `xinabox_cw02.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-XinaBox CW02 supports the next uploading protocols:
+XinaBox CW02 supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

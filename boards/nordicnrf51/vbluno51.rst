@@ -66,7 +66,7 @@ board manifest `vbluno51.json <https://github.com/platformio/platform-nordicnrf5
 
 Uploading
 ---------
-VNG VBLUNO51 supports the next uploading protocols:
+VNG VBLUNO51 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``mbed``

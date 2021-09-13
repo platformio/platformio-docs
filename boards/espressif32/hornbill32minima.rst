@@ -66,7 +66,7 @@ board manifest `hornbill32minima.json <https://github.com/platformio/platform-es
 
 Uploading
 ---------
-Hornbill ESP32 Minima supports the next uploading protocols:
+Hornbill ESP32 Minima supports the following uploading protocols:
 
 * ``esp-prog``
 * ``espota``

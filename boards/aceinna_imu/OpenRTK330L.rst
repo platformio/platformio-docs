@@ -66,7 +66,7 @@ board manifest `OpenRTK330L.json <https://github.com/aceinna/platform-aceinna_im
 
 Uploading
 ---------
-Aceinna OpenRTK330L supports the next uploading protocols:
+Aceinna OpenRTK330L supports the following uploading protocols:
 
 * ``blackmagic``
 * ``jlink``

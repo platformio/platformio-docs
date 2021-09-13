@@ -3,12 +3,15 @@
 {% block extrahead %}
 {{ super() }}
 <link rel="stylesheet" href="{{ pathto('_static/css/extra.css', 1) }}" type="text/css" />
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+<script src="{{ pathto('_static/js/bootstrap.min.js', 1) }}"></script>
 {% endblock %}
 
-{% block footer %}
-{% include "pio-versions.html" %}
+{% block menu %}
 {{ super() }}
-{% include "navigation.html" %}
+<ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+{% endblock %}
+
+{% block content %}
+<ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+{{ super() }}
 {% endblock %}

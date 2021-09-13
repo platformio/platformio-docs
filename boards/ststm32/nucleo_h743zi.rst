@@ -66,7 +66,7 @@ board manifest `nucleo_h743zi.json <https://github.com/platformio/platform-ststm
 
 Uploading
 ---------
-ST Nucleo H743ZI supports the next uploading protocols:
+ST Nucleo H743ZI supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

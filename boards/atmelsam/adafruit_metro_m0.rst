@@ -66,7 +66,7 @@ board manifest `adafruit_metro_m0.json <https://github.com/platformio/platform-a
 
 Uploading
 ---------
-Adafruit Metro M0 Expresss supports the next uploading protocols:
+Adafruit Metro M0 Expresss supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

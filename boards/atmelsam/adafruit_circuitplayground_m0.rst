@@ -66,7 +66,7 @@ board manifest `adafruit_circuitplayground_m0.json <https://github.com/platformi
 
 Uploading
 ---------
-Adafruit Circuit Playground Express supports the next uploading protocols:
+Adafruit Circuit Playground Express supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``

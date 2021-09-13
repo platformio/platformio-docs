@@ -66,7 +66,7 @@ board manifest `laird_bl652_dvk.json <https://github.com/platformio/platform-nor
 
 Uploading
 ---------
-BL652 Development Kit supports the next uploading protocols:
+BL652 Development Kit supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``

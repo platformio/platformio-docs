@@ -66,7 +66,7 @@ board manifest `teensy31.json <https://github.com/platformio/platform-teensy/blo
 
 Uploading
 ---------
-Teensy 3.1 / 3.2 supports the next uploading protocols:
+Teensy 3.1 / 3.2 supports the following uploading protocols:
 
 * ``jlink``
 * ``teensy-cli``

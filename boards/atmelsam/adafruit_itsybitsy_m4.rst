@@ -66,7 +66,7 @@ board manifest `adafruit_itsybitsy_m4.json <https://github.com/platformio/platfo
 
 Uploading
 ---------
-Adafruit ItsyBitsy M4 supports the next uploading protocols:
+Adafruit ItsyBitsy M4 supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``jlink``
