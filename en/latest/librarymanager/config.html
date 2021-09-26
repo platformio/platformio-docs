@@ -97,6 +97,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#libarchive"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#libldfmode"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#libcompatmode"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#builder"><code class="docutils literal notranslate"><span class="pre">builder</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id5">Examples</a></li>
@@ -207,9 +208,10 @@ via <a class="reference external" href="http://en.wikipedia.org/wiki/Associative
 <li><p><a class="reference internal" href="#libarchive" id="id28"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a></p></li>
 <li><p><a class="reference internal" href="#libldfmode" id="id29"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a></p></li>
 <li><p><a class="reference internal" href="#libcompatmode" id="id30"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a></p></li>
+<li><p><a class="reference internal" href="#builder" id="id31"><code class="docutils literal notranslate"><span class="pre">builder</span></code></a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id5" id="id31">Examples</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id32">Examples</a></p></li>
 </ul>
 </div>
 <section id="name">
@@ -341,12 +343,12 @@ It allows one to reduce the size of the final archive.</p>
 <p>Possible options:</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#include" id="id32"><code class="docutils literal notranslate"><span class="pre">include</span></code></a></p></li>
-<li><p><a class="reference internal" href="#exclude" id="id33"><code class="docutils literal notranslate"><span class="pre">exclude</span></code></a></p></li>
+<li><p><a class="reference internal" href="#include" id="id33"><code class="docutils literal notranslate"><span class="pre">include</span></code></a></p></li>
+<li><p><a class="reference internal" href="#exclude" id="id34"><code class="docutils literal notranslate"><span class="pre">exclude</span></code></a></p></li>
 </ul>
 </div>
 <section id="include">
-<h3><a class="toc-backref" href="#id32"><code class="docutils literal notranslate"><span class="pre">include</span></code></a><a class="headerlink" href="#include" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id33"><code class="docutils literal notranslate"><span class="pre">include</span></code></a><a class="headerlink" href="#include" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Array</span></code> | <a class="reference external" href="http://en.wikipedia.org/wiki/Glob_(programming)">Glob Pattern</a></p>
 <p>Export only files that matched declared patterns.</p>
 <p><strong>Pattern Meaning</strong></p>
@@ -388,7 +390,7 @@ It allows one to reduce the size of the final archive.</p>
 </div>
 </section>
 <section id="exclude">
-<h3><a class="toc-backref" href="#id33"><code class="docutils literal notranslate"><span class="pre">exclude</span></code></a><a class="headerlink" href="#exclude" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id34"><code class="docutils literal notranslate"><span class="pre">exclude</span></code></a><a class="headerlink" href="#exclude" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Array</span></code> | <a class="reference external" href="http://en.wikipedia.org/wiki/Glob_(programming)">Glob Pattern</a></p>
 <p>Exclude the directories and files which match with <code class="docutils literal notranslate"><span class="pre">exclude</span></code> patterns.</p>
 </section>
@@ -524,43 +526,44 @@ are also possible</p></li>
 options:</p>
 <div class="contents local topic" id="id4">
 <ul class="simple">
-<li><p><a class="reference internal" href="#flags" id="id34"><code class="docutils literal notranslate"><span class="pre">flags</span></code></a></p></li>
-<li><p><a class="reference internal" href="#unflags" id="id35"><code class="docutils literal notranslate"><span class="pre">unflags</span></code></a></p></li>
-<li><p><a class="reference internal" href="#includedir" id="id36"><code class="docutils literal notranslate"><span class="pre">includeDir</span></code></a></p></li>
-<li><p><a class="reference internal" href="#srcdir" id="id37"><code class="docutils literal notranslate"><span class="pre">srcDir</span></code></a></p></li>
-<li><p><a class="reference internal" href="#srcfilter" id="id38"><code class="docutils literal notranslate"><span class="pre">srcFilter</span></code></a></p></li>
-<li><p><a class="reference internal" href="#extrascript" id="id39"><code class="docutils literal notranslate"><span class="pre">extraScript</span></code></a></p></li>
-<li><p><a class="reference internal" href="#libarchive" id="id40"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a></p></li>
-<li><p><a class="reference internal" href="#libldfmode" id="id41"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a></p></li>
-<li><p><a class="reference internal" href="#libcompatmode" id="id42"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a></p></li>
+<li><p><a class="reference internal" href="#flags" id="id35"><code class="docutils literal notranslate"><span class="pre">flags</span></code></a></p></li>
+<li><p><a class="reference internal" href="#unflags" id="id36"><code class="docutils literal notranslate"><span class="pre">unflags</span></code></a></p></li>
+<li><p><a class="reference internal" href="#includedir" id="id37"><code class="docutils literal notranslate"><span class="pre">includeDir</span></code></a></p></li>
+<li><p><a class="reference internal" href="#srcdir" id="id38"><code class="docutils literal notranslate"><span class="pre">srcDir</span></code></a></p></li>
+<li><p><a class="reference internal" href="#srcfilter" id="id39"><code class="docutils literal notranslate"><span class="pre">srcFilter</span></code></a></p></li>
+<li><p><a class="reference internal" href="#extrascript" id="id40"><code class="docutils literal notranslate"><span class="pre">extraScript</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libarchive" id="id41"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libldfmode" id="id42"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libcompatmode" id="id43"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a></p></li>
+<li><p><a class="reference internal" href="#builder" id="id44"><code class="docutils literal notranslate"><span class="pre">builder</span></code></a></p></li>
 </ul>
 </div>
 <section id="flags">
-<h3><a class="toc-backref" href="#id34"><code class="docutils literal notranslate"><span class="pre">flags</span></code></a><a class="headerlink" href="#flags" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id35"><code class="docutils literal notranslate"><span class="pre">flags</span></code></a><a class="headerlink" href="#flags" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code></p>
 <p>Extra flags to control preprocessing, compilation, assembly and linking
 processes. More details <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
 </section>
 <section id="unflags">
-<h3><a class="toc-backref" href="#id35"><code class="docutils literal notranslate"><span class="pre">unflags</span></code></a><a class="headerlink" href="#unflags" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id36"><code class="docutils literal notranslate"><span class="pre">unflags</span></code></a><a class="headerlink" href="#unflags" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code></p>
 <p>Remove base/initial flags which were set by development platform. More
 details <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-unflags"><span class="std std-ref">build_unflags</span></a>.</p>
 </section>
 <section id="includedir">
-<h3><a class="toc-backref" href="#id36"><code class="docutils literal notranslate"><span class="pre">includeDir</span></code></a><a class="headerlink" href="#includedir" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id37"><code class="docutils literal notranslate"><span class="pre">includeDir</span></code></a><a class="headerlink" href="#includedir" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
 <p>Custom location of library header files. A default value is <code class="docutils literal notranslate"><span class="pre">include</span></code> and
 means that folder is located in the root of a library.</p>
 </section>
 <section id="srcdir">
-<h3><a class="toc-backref" href="#id37"><code class="docutils literal notranslate"><span class="pre">srcDir</span></code></a><a class="headerlink" href="#srcdir" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id38"><code class="docutils literal notranslate"><span class="pre">srcDir</span></code></a><a class="headerlink" href="#srcdir" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
 <p>Custom location of library source code. A default value is <code class="docutils literal notranslate"><span class="pre">src</span></code> and
 means that folder is located in the root of a library.</p>
 </section>
 <section id="srcfilter">
-<h3><a class="toc-backref" href="#id38"><code class="docutils literal notranslate"><span class="pre">srcFilter</span></code></a><a class="headerlink" href="#srcfilter" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id39"><code class="docutils literal notranslate"><span class="pre">srcFilter</span></code></a><a class="headerlink" href="#srcfilter" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code></p>
 <p>Specify which source files should be included/excluded from build process.
 The path in filter should be relative to the <code class="docutils literal notranslate"><span class="pre">srcDir</span></code> option of a library.</p>
@@ -569,7 +572,7 @@ The path in filter should be relative to the <code class="docutils literal notra
 <code class="docutils literal notranslate"><span class="pre">extraScript</span></code> (see below)</p>
 </section>
 <section id="extrascript">
-<h3><a class="toc-backref" href="#id39"><code class="docutils literal notranslate"><span class="pre">extraScript</span></code></a><a class="headerlink" href="#extrascript" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id40"><code class="docutils literal notranslate"><span class="pre">extraScript</span></code></a><a class="headerlink" href="#extrascript" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
 <p>Launch extra script before build process.
 More details <a class="reference internal" href="../projectconf/section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a>.</p>
@@ -640,7 +643,7 @@ exclude other source files from a build process.</p>
 </div>
 </section>
 <section id="libarchive">
-<span id="libjson-archive"></span><h3><a class="toc-backref" href="#id40"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a><a class="headerlink" href="#libarchive" title="Permalink to this headline">¶</a></h3>
+<span id="libjson-archive"></span><h3><a class="toc-backref" href="#id41"><code class="docutils literal notranslate"><span class="pre">libArchive</span></code></a><a class="headerlink" href="#libarchive" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Boolean</span></code></p>
 <p>Create an archive (<code class="docutils literal notranslate"><span class="pre">*.a</span></code>, static library) from the object files and link it
 into a firmware (program). This is default behavior of PlatformIO Build System
@@ -652,18 +655,29 @@ symbols defined in framework or other libraries.</p>
 option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 </section>
 <section id="libldfmode">
-<h3><a class="toc-backref" href="#id41"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a><a class="headerlink" href="#libldfmode" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id42"><code class="docutils literal notranslate"><span class="pre">libLDFMode</span></code></a><a class="headerlink" href="#libldfmode" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
 <p>Specify Library Dependency Finder Mode. See <a class="reference internal" href="ldf.html#ldf-mode"><span class="std std-ref">Dependency Finder Mode</span></a> for details.</p>
 </section>
 <section id="libcompatmode">
-<span id="libjons-compatmode"></span><h3><a class="toc-backref" href="#id42"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a><a class="headerlink" href="#libcompatmode" title="Permalink to this headline">¶</a></h3>
+<span id="libjons-compatmode"></span><h3><a class="toc-backref" href="#id43"><code class="docutils literal notranslate"><span class="pre">libCompatMode</span></code></a><a class="headerlink" href="#libcompatmode" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
 <p>Specify Library Compatibility Mode. See <a class="reference internal" href="ldf.html#ldf-compat-mode"><span class="std std-ref">Compatibility Mode</span></a> for details.</p>
 </section>
+<section id="builder">
+<h3><a class="toc-backref" href="#id44"><code class="docutils literal notranslate"><span class="pre">builder</span></code></a><a class="headerlink" href="#builder" title="Permalink to this headline">¶</a></h3>
+<p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
+<p>Override default <code class="docutils literal notranslate"><span class="pre">PlatformIOLibBuilder</span></code> with another builder. Currently supported
+builders:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PlatformIOLibBuilder</span></code> (default)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ArduinoLibBuilder</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MbedLibBuilder</span></code></p></li>
+</ul>
+</section>
 </section>
 <section id="id5">
-<h2><a class="toc-backref" href="#id31">Examples</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id32">Examples</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Custom macros/defines</p></li>
 </ol>
