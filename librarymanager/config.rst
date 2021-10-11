@@ -577,6 +577,18 @@ Specify Library Dependency Finder Mode. See :ref:`ldf_mode` for details.
 
 Specify Library Compatibility Mode. See :ref:`ldf_compat_mode` for details.
 
+``builder``
+~~~~~~~~~~~
+
+*Optional* | Type: ``String``
+
+Override default ``PlatformIOLibBuilder`` with another builder. Currently supported
+builders:
+
+* ``PlatformIOLibBuilder`` (default)
+* ``ArduinoLibBuilder``
+* ``MbedLibBuilder``
+
 Examples
 --------
 
