@@ -423,7 +423,7 @@ Create a custom ``node`` target (alias) which will print a NodeJS version
     Import("env")
 
     # Single action/command per 1 target
-    env.AddCustomTarget("sysenv", None, 'python -c "import os; print(os.environ)"'))
+    env.AddCustomTarget("sysenv", None, 'python -c "import os; print(os.environ)"')
 
     # Multiple actions
     env.AddCustomTarget(
