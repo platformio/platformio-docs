@@ -60,6 +60,11 @@ to a current working directory (``CWD``).
 Process project with a custom :ref:`projectconf`.
 
 .. option::
+    --load-mode
+
+Override :ref:`projectconf_debug_load_mode` option.
+
+.. option::
     --interface
 
 PlatformIO Debugging Interface. Valid values:
