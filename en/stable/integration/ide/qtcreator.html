@@ -1,50 +1,26 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Qt Creator &mdash; PlatformIO v5.2 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
     <link rel="canonical" href="https://docs.platformio.org/integration/ide/qtcreator.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Sublime Text" href="sublimetext.html" />
@@ -55,26 +31,13 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../../index.html" class="icon icon-home"> PlatformIO
-          
-
-          
           </a>
-
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -82,19 +45,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-
-            
-            
-              
-            
-            
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
@@ -162,80 +114,36 @@
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
 </ul>
 
-            
-          
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">PlatformIO</a>
-        
       </nav>
-
 
       <div class="wy-nav-content">
 <ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="index.html">Cloud &amp; Desktop IDE</a> &raquo;</li>
-        
       <li>Qt Creator</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/qtcreator.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="qt-creator">
+             
+  <section id="qt-creator">
 <span id="ide-qtcreator"></span><h1><a class="toc-backref" href="#id2">Qt Creator</a><a class="headerlink" href="#qt-creator" title="Permalink to this headline">¶</a></h1>
 <p>The <a class="reference external" href="https://github.com/qtproject/qt-creator">Qt Creator</a> is an open source cross-platform integrated development environment. The editor includes such features as syntax highlighting for various languages, project manager, integrated version control systems, rapid code navigation tools and code autocompletion.</p>
 <p>Refer to the <a class="reference external" href="http://doc.qt.io/qtcreator/">Qt-creator Manual</a>
@@ -262,7 +170,7 @@ page for more detailed information.</p>
 </li>
 </ul>
 </div>
-<div class="section" id="integration">
+<section id="integration">
 <h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
 <p>Integration process consists of these steps:</p>
 <ol class="arabic simple">
@@ -271,7 +179,7 @@ page for more detailed information.</p>
 <li><p>Generate a project using PlatformIO Core Project Generator (<a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmdoption-pio-project-init-ide"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">project</span> <span class="pre">init</span> <span class="pre">--ide</span></code></a>)</p></li>
 <li><p>Import project in IDE.</p></li>
 </ol>
-<div class="section" id="project-generator">
+<section id="project-generator">
 <h3><a class="toc-backref" href="#id4">Project Generator</a><a class="headerlink" href="#project-generator" title="Permalink to this headline">¶</a></h3>
 <p>Choose board <code class="docutils literal notranslate"><span class="pre">ID</span></code> using <a class="reference internal" href="../../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> or <a class="reference external" href="https://platformio.org/boards">Embedded Boards Explorer</a>
 command and generate project via <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmdoption-pio-project-init-ide"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">project</span> <span class="pre">init</span> <span class="pre">--ide</span></code></a> command:</p>
@@ -327,10 +235,10 @@ directory (<code class="docutils literal notranslate"><span class="pre">*.c,</sp
 after generating process won’t be reflected in IDE. To fix it you
 need to reinitialize project using <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (repeat it).</p>
 </div>
-</div>
-<div class="section" id="manual-integration">
+</section>
+<section id="manual-integration">
 <h3><a class="toc-backref" href="#id5">Manual Integration</a><a class="headerlink" href="#manual-integration" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="setup-new-project">
+<section id="setup-new-project">
 <h4><a class="toc-backref" href="#id6">Setup New Project</a><a class="headerlink" href="#setup-new-project" title="Permalink to this headline">¶</a></h4>
 <p>First of all, let’s create new project from Qt Creator Start Page: <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code> or using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">File</span> <span class="pre">or</span> <span class="pre">Project</span></code>, then select project with <code class="docutils literal notranslate"><span class="pre">Empty</span> <span class="pre">Qt</span> <span class="pre">Project</span></code> type (<code class="docutils literal notranslate"><span class="pre">Other</span> <span class="pre">Project</span> <span class="pre">&gt;</span> <span class="pre">Empty</span> <span class="pre">Qt</span> <span class="pre">Project</span></code>), fill <code class="docutils literal notranslate"><span class="pre">Name</span></code>, <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">in</span></code>.</p>
 <a class="reference external image-reference" href="../../_images/ide-qtcreator-1.png"><img alt="../../_images/ide-qtcreator-1.png" src="../../_images/ide-qtcreator-1.png" /></a>
@@ -351,8 +259,8 @@ INCLUDEPATH += &quot;$${HOMEDIR}/.platformio/packages/toolchain-atmelavr/avr/inc
 </pre></div>
 </div>
 <a class="reference external image-reference" href="../../_images/ide-qtcreator-4.png"><img alt="../../_images/ide-qtcreator-4.png" src="../../_images/ide-qtcreator-4.png" /></a>
-</div>
-<div class="section" id="first-program-in-qt-creator">
+</section>
+<section id="first-program-in-qt-creator">
 <h4><a class="toc-backref" href="#id7">First program in Qt Creator</a><a class="headerlink" href="#first-program-in-qt-creator" title="Permalink to this headline">¶</a></h4>
 <p>Simple “Blink” project will consist from two files:
 1. In the console, navigate to the root of your project folder and initialize pio project with <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a>
@@ -397,36 +305,33 @@ Let’s create new text file named <code class="docutils literal notranslate"><s
 <span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="conclusion">
+</section>
+<section id="conclusion">
 <h4><a class="toc-backref" href="#id8">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h4>
 <p>Taking everything into account, we can build project with shortcut <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+B</span></code> or using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Build</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">All</span></code>.</p>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="sublimetext.html" class="btn btn-neutral float-right" title="Sublime Text" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="netbeans.html" class="btn btn-neutral float-left" title="NetBeans" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sublimetext.html" class="btn btn-neutral float-right" title="Sublime Text" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
 
-    <p>
-        &#169; Copyright 2014-present, PlatformIO.
-
-    </p>
+    <p>&#169; Copyright 2014-present, PlatformIO.</p>
 <ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
   </div>
+
+  
  
 <script>
   var navBarHTML = '\
@@ -538,16 +443,14 @@ Let’s create new text file named <code class="docutils literal notranslate"><s
         </div>
 
       </div>
-
     </section>
-
   </div>
   
 
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0 (stable)
+    v5.2.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -576,31 +479,22 @@ Let’s create new text file named <code class="docutils literal notranslate"><s
 </div></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-1768265-7', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-   
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
 
 </body>
 </html>

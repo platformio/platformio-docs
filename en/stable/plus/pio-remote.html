@@ -1,50 +1,26 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Remote Development &mdash; PlatformIO v5.2 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
     <link rel="canonical" href="https://docs.platformio.org/plus/pio-remote.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="PlatformIO Account" href="pio-account.html" />
@@ -55,26 +31,13 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> PlatformIO
-          
-
-          
           </a>
-
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -82,19 +45,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-
-            
-            
-              
-            
-            
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
@@ -152,78 +104,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
 </ul>
 
-            
-          
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">PlatformIO</a>
-        
       </nav>
-
 
       <div class="wy-nav-content">
 <ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Remote Development</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/platformio/platformio-docs/blob/develop/plus/pio-remote.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="remote-development">
+             
+  <section id="remote-development">
 <span id="pioremote"></span><h1>Remote Development<a class="headerlink" href="#remote-development" title="Permalink to this headline">¶</a></h1>
 <p><strong>Your devices are always with you!</strong></p>
 <div class="contents local topic" id="contents">
@@ -248,7 +157,7 @@ organization or friends. In combination with <a class="reference internal" href=
 awesome things at any time when inspiration comes to you.</p>
 <p>You should have <a class="reference internal" href="pio-account.html#pioaccount"><span class="std std-ref">PlatformIO Account</span></a> to use <strong>PlatformIO Remote Development Solution</strong>.
 A registration is <strong>FREE</strong>.</p>
-<div class="section" id="features">
+<section id="features">
 <h2><a class="toc-backref" href="#id1">Features</a><a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../core/userguide/remote/cmd_device.html#cmd-remote-device"><span class="std std-ref">Remote Device Manager</span></a></p></li>
@@ -259,8 +168,8 @@ A registration is <strong>FREE</strong>.</p>
 <li><p>Continuous Delivery</p></li>
 <li><p>Remote Unit Testing</p></li>
 </ul>
-</div>
-<div class="section" id="use-cases">
+</section>
+<section id="use-cases">
 <h2><a class="toc-backref" href="#id2">Use Cases</a><a class="headerlink" href="#use-cases" title="Permalink to this headline">¶</a></h2>
 <dl class="field-list">
 <dt class="field-odd">Cloud IDE</dt>
@@ -302,8 +211,8 @@ remote agent and list connected devices with their serial ports. See
 <a class="reference internal" href="../core/userguide/remote/cmd_device.html#cmd-remote-device-monitor"><span class="std std-ref">pio remote device monitor</span></a> command for details.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="technology">
+</section>
+<section id="technology">
 <h2><a class="toc-backref" href="#id3">Technology</a><a class="headerlink" href="#technology" title="Permalink to this headline">¶</a></h2>
 <img alt="../_images/pio-remote-architecture.png" src="../_images/pio-remote-architecture.png" />
 <p><strong>PlatformIO Remote Development Solution</strong> is an own PlatformIO technology
@@ -324,15 +233,15 @@ do that with local devices using PlatformIO ecosystem. The only one difference
 is a prefix “remote” before each generic PlatformIO command. For example,
 listing of local and remote devices will look like <a class="reference internal" href="../core/userguide/device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a> and
 <a class="reference internal" href="../core/userguide/remote/cmd_device.html#cmd-remote-device-list"><span class="std std-ref">pio remote device list</span></a>.</p>
-</div>
-<div class="section" id="installation">
+</section>
+<section id="installation">
 <h2><a class="toc-backref" href="#id4">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p><strong>PlatformIO Remote Development Solution</strong> is built into <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>. Please open PlatformIO IDE Terminal
 and run <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">--help</span></code> command for usage (see <a class="reference internal" href="../core/userguide/remote/index.html#cmd-remote"><span class="std std-ref">PlatformIO Remote CLI</span></a>).</p>
 <p>If you do not have <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>, or use <a class="reference internal" href="../integration/ide/index.html#ide-cloud"><span class="std std-ref">Cloud IDE</span></a> or a card-sized PC
 (Raspberry Pi, BeagleBoard, etc.), please install <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a>.</p>
-</div>
-<div class="section" id="quick-start">
+</section>
+<section id="quick-start">
 <span id="pio-remote-quickstart"></span><h2><a class="toc-backref" href="#id5">Quick Start</a><a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p>Start <strong>PlatformIO Remote Development Solution</strong> Agent using <a class="reference internal" href="../core/userguide/remote/cmd_agent.html#cmd-remote-agent-start"><span class="std std-ref">pio remote agent start</span></a> command on a
@@ -371,8 +280,8 @@ Over-the-Air (OTA) updates. For example, <a class="reference internal" href="../
 OTA update will look as <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">upload</span> <span class="pre">--upload-port</span> <span class="pre">192.168.0.255</span></code>
 or <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">upload</span> <span class="pre">--upload-port</span> <span class="pre">myesp8266.local</span></code>.</p>
 </div>
-</div>
-<div class="section" id="cli-guide">
+</section>
+<section id="cli-guide">
 <h2><a class="toc-backref" href="#id6">CLI Guide</a><a class="headerlink" href="#cli-guide" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
@@ -412,30 +321,27 @@ or <code class="docutils literal notranslate"><span class="pre">pio</span> <span
 </li>
 </ul>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="pio-account.html" class="btn btn-neutral float-right" title="PlatformIO Account" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="check-tools/pvs-studio.html" class="btn btn-neutral float-left" title="PVS-Studio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pio-account.html" class="btn btn-neutral float-right" title="PlatformIO Account" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
 
-    <p>
-        &#169; Copyright 2014-present, PlatformIO.
-
-    </p>
+    <p>&#169; Copyright 2014-present, PlatformIO.</p>
 <ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
   </div>
+
+  
  
 <script>
   var navBarHTML = '\
@@ -547,16 +453,14 @@ or <code class="docutils literal notranslate"><span class="pre">pio</span> <span
         </div>
 
       </div>
-
     </section>
-
   </div>
   
 
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0 (stable)
+    v5.2.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -585,31 +489,22 @@ or <code class="docutils literal notranslate"><span class="pre">pio</span> <span
 </div></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-1768265-7', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-   
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
 
 </body>
 </html>

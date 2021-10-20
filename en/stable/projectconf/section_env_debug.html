@@ -1,50 +1,26 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Debugging options &mdash; PlatformIO v5.2 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
     <link rel="canonical" href="https://docs.platformio.org/projectconf/section_env_debug.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Advanced options" href="section_env_advanced.html" />
@@ -55,26 +31,13 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> PlatformIO
-          
-
-          
           </a>
-
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -82,19 +45,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-
-            
-            
-              
-            
-            
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
@@ -106,8 +58,31 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">platformio.ini</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">platformio.ini</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="section_env.html#common-env">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="section_env.html#environment-env-name">Environment <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="section_env.html#options">Options</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="section_env_platform.html">Platform options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_build.html">Build options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_library.html">Library options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_upload.html">Upload options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_monitor.html">Monitor options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_check.html">Check options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_test.html">Test options</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Debugging options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="section_env_advanced.html">Advanced options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_variables.html">Dynamic variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="advanced_scripting.html">Advanced Scripting</a></li>
 </ul>
@@ -120,75 +95,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Professional</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../plus/debugging.html">Debugging</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../plus/debugging.html#tutorials">Tutorials</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../plus/debugging.html#configuration">Configuration</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Debugging options</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#debug-tool"><code class="docutils literal notranslate"><span class="pre">debug_tool</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-build-flags"><code class="docutils literal notranslate"><span class="pre">debug_build_flags</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-init-break"><code class="docutils literal notranslate"><span class="pre">debug_init_break</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-init-cmds"><code class="docutils literal notranslate"><span class="pre">debug_init_cmds</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-extra-cmds"><code class="docutils literal notranslate"><span class="pre">debug_extra_cmds</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-load-cmds"><code class="docutils literal notranslate"><span class="pre">debug_load_cmds</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-load-mode"><code class="docutils literal notranslate"><span class="pre">debug_load_mode</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-server"><code class="docutils literal notranslate"><span class="pre">debug_server</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-port"><code class="docutils literal notranslate"><span class="pre">debug_port</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-speed"><code class="docutils literal notranslate"><span class="pre">debug_speed</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-svd-path"><code class="docutils literal notranslate"><span class="pre">debug_svd_path</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-server-ready-pattern"><code class="docutils literal notranslate"><span class="pre">debug_server_ready_pattern</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug-test"><code class="docutils literal notranslate"><span class="pre">debug_test</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2 current"><a class="reference internal" href="../plus/debugging.html#tools-debug-probes">Tools &amp; Debug Probes</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/altera-usb-blaster.html">Altera / Intel USB-Blaster</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/atmel-ice.html">Atmel-ICE</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/avr-stub.html">avr-stub</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/blackmagic.html">Black Magic Probe</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/cmsis-dap.html">CMSIS-DAP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/digilent-hs1.html">JTAG-HS1</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/digilent-hs2.html">JTAG-HS2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/esp-prog.html">ESP-Prog</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/ftdi.html">FTDI Chip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/gd-link.html">GD-LINK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/iot-bus-jtag.html">oddWires IOT-Bus JTAG</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/jlink.html">J-LINK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/minimodule.html">Mini-Module FT2232H</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/mspdebug.html">MSP Debug</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/olimex-arm-usb-ocd-h.html">Olimex ARM-USB-OCD-H</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/olimex-arm-usb-ocd.html">Olimex ARM-USB-OCD</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/olimex-arm-usb-tiny-h.html">Olimex ARM-USB-TINY-H</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/olimex-jtag-tiny.html">Olimex ARM-USB-TINY</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/ovpsim.html">OVPsim</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/qemu.html">QEMU</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/raspberrypi-swd.html">Raspberry Pi SWD</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/renode.html">Renode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/rv-link.html">RV-LINK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/simavr.html">simavr</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/sipeed-rv-debugger.html">Sipeed RV Debugger</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/stlink.html">ST-LINK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/ti-icdi.html">TI-ICDI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/tumpa.html">TIAO USB Multi-Protocol Adapter (TUMPA)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/um232h.html">UM232H</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/verilator.html">Verilator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../plus/debug-tools/whisper.html">Whisper</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../plus/debug-tools/custom.html">Custom</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Debugging options</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../plus/debug-tools/custom.html#examples">Examples</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../plus/debugging.html#debug-unit-tests">Debug Unit Tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../plus/debugging.html#cli-guide">CLI Guide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../plus/debugging.html#platforms">Platforms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../plus/debugging.html#frameworks">Frameworks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../plus/debugging.html#boards">Boards</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
@@ -208,82 +116,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
 </ul>
 
-            
-          
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">PlatformIO</a>
-        
       </nav>
-
 
       <div class="wy-nav-content">
 <ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="index.html">“platformio.ini” (Project Configuration File)</a> &raquo;</li>
-        
           <li><a href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a> &raquo;</li>
-        
       <li>Debugging options</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/platformio/platformio-docs/blob/develop/projectconf/section_env_debug.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="debugging-options">
+             
+  <section id="debugging-options">
 <span id="projectconf-section-env-debug"></span><h1>Debugging options<a class="headerlink" href="#debugging-options" title="Permalink to this headline">¶</a></h1>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -306,7 +169,7 @@
 <li><p><a class="reference internal" href="#debug-test" id="id13"><code class="docutils literal notranslate"><span class="pre">debug_test</span></code></a></p></li>
 </ul>
 </div>
-<div class="section" id="debug-tool">
+<section id="debug-tool">
 <span id="projectconf-debug-tool"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">debug_tool</span></code></a><a class="headerlink" href="#debug-tool" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>A name of debugging tool. This option is useful when board supports more than
@@ -320,8 +183,8 @@ debugging configuration.</p>
 <span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="debug-build-flags">
+</section>
+<section id="debug-build-flags">
 <span id="projectconf-debug-build-flags"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">debug_build_flags</span></code></a><a class="headerlink" href="#debug-build-flags" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">-Og</span> <span class="pre">-g2</span> <span class="pre">-ggdb2</span></code></p>
 <p>These flags/options affect the preprocessing, compilation, assembly
@@ -342,8 +205,8 @@ debug information is too big to be uploaded to a target</p>
 </div>
 <p><a class="reference external" href="https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html">Other possible flags</a>
 that might be useful for debugging your application.</p>
-</div>
-<div class="section" id="debug-init-break">
+</section>
+<section id="debug-init-break">
 <span id="projectconf-debug-init-break"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">debug_init_break</span></code></a><a class="headerlink" href="#debug-init-break" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">tbreak</span> <span class="pre">main</span></code></p>
 <p>An initial breakpoint that makes your program stop whenever a certain point in
@@ -378,8 +241,8 @@ hardware breakpoints.</p>
 <span class="na">debug_init_break</span> <span class="o">=</span> <span class="s">tbreak Reset_Handler</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="debug-init-cmds">
+</section>
+<section id="debug-init-cmds">
 <span id="projectconf-debug-init-cmds"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">debug_init_cmds</span></code></a><a class="headerlink" href="#debug-init-cmds" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <a class="reference external" href="https://github.com/platformio/platformio-core/tree/develop/platformio/debug/config">See details…</a></p>
 <p>Initial commands that will be passed to back-end debugger.</p>
@@ -399,8 +262,8 @@ for the popular <a class="reference internal" href="../plus/debugging.html#debug
   <span class="na">monitor reset halt</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="debug-extra-cmds">
+</section>
+<section id="debug-extra-cmds">
 <span id="projectconf-debug-extra-cmds"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">debug_extra_cmds</span></code></a><a class="headerlink" href="#debug-extra-cmds" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Extra commands that will be passed to back-end debugger after <a class="reference internal" href="#projectconf-debug-init-cmds"><span class="std std-ref">debug_init_cmds</span></a>.
@@ -424,8 +287,8 @@ allowed.</p>
 command in Debug Console. For example, <code class="docutils literal notranslate"><span class="pre">save</span> <span class="pre">breakpoints</span> <span class="pre">.gdbinit</span></code>. Later,
 this file could be loaded via <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">[filename]</span></code> command. See above.</p>
 </div>
-</div>
-<div class="section" id="debug-load-cmds">
+</section>
+<section id="debug-load-cmds">
 <span id="projectconf-debug-load-cmds"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">debug_load_cmds</span></code></a><a class="headerlink" href="#debug-load-cmds" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">load</span></code></p>
 <p>Specify a command which will be used to load program/firmware to a target
@@ -453,8 +316,8 @@ can combine service commands with loading and run them before. See example:</p>
   <span class="na">load</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="debug-load-mode">
+</section>
+<section id="debug-load-mode">
 <span id="projectconf-debug-load-mode"></span><h2><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">debug_load_mode</span></code></a><a class="headerlink" href="#debug-load-mode" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">always</span></code></p>
 <p>Allows one to control when PlatformIO should load debugging firmware to the end
@@ -465,8 +328,8 @@ target. Possible options:</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">manual</span></code> - do not load firmware automatically. You are responsible to
 pre-flash target with debugging firmware in this case.</p></li>
 </ul>
-</div>
-<div class="section" id="debug-server">
+</section>
+<section id="debug-server">
 <span id="projectconf-debug-server"></span><h2><a class="toc-backref" href="#id8"><code class="docutils literal notranslate"><span class="pre">debug_server</span></code></a><a class="headerlink" href="#debug-server" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Allows one to setup a custom debugging server. By default, boards are pre-configured
@@ -490,8 +353,8 @@ with a debugging server that is compatible with “on-board” debugging tool
   <span class="na">argN</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="debug-port">
+</section>
+<section id="debug-port">
 <span id="projectconf-debug-port"></span><h2><a class="toc-backref" href="#id9"><code class="docutils literal notranslate"><span class="pre">debug_port</span></code></a><a class="headerlink" href="#debug-port" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>A debugging port of a remote target. Could be a serial device or network address.
@@ -502,8 +365,8 @@ PlatformIO detects it automatically if is not specified.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">COM3</span></code> - Windows OS</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">localhost:3333</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="debug-speed">
+</section>
+<section id="debug-speed">
 <span id="projectconf-debug-speed"></span><h2><a class="toc-backref" href="#id10"><code class="docutils literal notranslate"><span class="pre">debug_speed</span></code></a><a class="headerlink" href="#debug-speed" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Number</span> <span class="pre">|</span> <span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>The debug adapter speed. The value format depends on the type of <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a>.</p>
@@ -525,14 +388,14 @@ PlatformIO detects it automatically if is not specified.</p>
 <span class="na">debug_speed</span> <span class="o">=</span> <span class="s">adaptive</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="debug-svd-path">
+</section>
+<section id="debug-svd-path">
 <span id="projectconf-debug-svd-path"></span><h2><a class="toc-backref" href="#id11"><code class="docutils literal notranslate"><span class="pre">debug_svd_path</span></code></a><a class="headerlink" href="#debug-svd-path" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">FilePath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>A custom path to <a class="reference external" href="https://www.keil.com/pack/doc/CMSIS/SVD/html/svd_Format_pg.html">SVD file</a>
 which contains information about device peripherals.</p>
-</div>
-<div class="section" id="debug-server-ready-pattern">
+</section>
+<section id="debug-server-ready-pattern">
 <h2><a class="toc-backref" href="#id12"><code class="docutils literal notranslate"><span class="pre">debug_server_ready_pattern</span></code></a><a class="headerlink" href="#debug-server-ready-pattern" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>A pattern to determine when debugging server is ready for an incoming connection.
@@ -551,8 +414,8 @@ for syntax and details.</p>
 <span class="na">debug_server_ready_pattern</span> <span class="o">=</span> <span class="s">^.*Listening on port \d+ for gdb connections</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="debug-test">
+</section>
+<section id="debug-test">
 <span id="projectconf-debug-test"></span><h2><a class="toc-backref" href="#id13"><code class="docutils literal notranslate"><span class="pre">debug_test</span></code></a><a class="headerlink" href="#debug-test" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>A name of a unit test to be debugged. See <a class="reference internal" href="../plus/unit-testing.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> for further details.</p>
@@ -565,30 +428,27 @@ the <code class="docutils literal notranslate"><span class="pre">debug_test</spa
 <span class="na">debug_test</span> <span class="o">=</span> <span class="s">test_calcualtor</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="section_env_advanced.html" class="btn btn-neutral float-right" title="Advanced options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="section_env_test.html" class="btn btn-neutral float-left" title="Test options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="section_env_advanced.html" class="btn btn-neutral float-right" title="Advanced options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
 
-    <p>
-        &#169; Copyright 2014-present, PlatformIO.
-
-    </p>
+    <p>&#169; Copyright 2014-present, PlatformIO.</p>
 <ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
   </div>
+
+  
  
 <script>
   var navBarHTML = '\
@@ -700,16 +560,14 @@ the <code class="docutils literal notranslate"><span class="pre">debug_test</spa
         </div>
 
       </div>
-
     </section>
-
   </div>
   
 
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0 (stable)
+    v5.2.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -738,31 +596,22 @@ the <code class="docutils literal notranslate"><span class="pre">debug_test</spa
 </div></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-1768265-7', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-   
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
 
 </body>
 </html>

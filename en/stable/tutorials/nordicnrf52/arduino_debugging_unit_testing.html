@@ -1,50 +1,26 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Arduino and Nordic nRF52-DK: debugging and unit testing &mdash; PlatformIO v5.2 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
     <link rel="canonical" href="https://docs.platformio.org/tutorials/nordicnrf52/arduino_debugging_unit_testing.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis" href="zephyr_debugging_unit_testing_inspect.html" />
@@ -55,26 +31,13 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../../index.html" class="icon icon-home"> PlatformIO
-          
-
-          
           </a>
-
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -82,19 +45,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-
-            
-            
-              
-            
-            
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
@@ -165,80 +117,36 @@
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
 </ul>
 
-            
-          
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">PlatformIO</a>
-        
       </nav>
-
 
       <div class="wy-nav-content">
 <ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="../index.html">Tutorials and Examples</a> &raquo;</li>
-        
       <li>Arduino and Nordic nRF52-DK: debugging and unit testing</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/platformio/platformio-docs/blob/develop/tutorials/nordicnrf52/arduino_debugging_unit_testing.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="arduino-and-nordic-nrf52-dk-debugging-and-unit-testing">
+             
+  <section id="arduino-and-nordic-nrf52-dk-debugging-and-unit-testing">
 <span id="tutorial-nordicnrf52-arduino-debugging-unit-testing"></span><h1>Arduino and Nordic nRF52-DK: debugging and unit testing<a class="headerlink" href="#arduino-and-nordic-nrf52-dk-debugging-and-unit-testing" title="Permalink to this headline">¶</a></h1>
 <p>The goal of this tutorial is to demonstrate how simple it is to use <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode"><span class="std std-ref">VSCode</span></a> to develop, run and debug a simple project with <a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a> framework for <code class="docutils literal notranslate"><span class="pre">Nordic</span> <span class="pre">nRF52-DK</span></code> board.</p>
 <ul class="simple">
@@ -265,7 +173,7 @@
 <li><p><a class="reference internal" href="#conclusion" id="id7">Conclusion</a></p></li>
 </ul>
 </div>
-<div class="section" id="setting-up-the-project">
+<section id="setting-up-the-project">
 <h2><a class="toc-backref" href="#id1">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this headline">¶</a></h2>
 <p>At first step, we need to create a new project using PlatformIO Home Page (to open this page just press Home icon on the toolbar):</p>
 <img alt="../../_images/arduino-debugging-unit-testing-17.png" src="../../_images/arduino-debugging-unit-testing-17.png" />
@@ -273,8 +181,8 @@
 <img alt="../../_images/arduino-debugging-unit-testing-21.png" src="../../_images/arduino-debugging-unit-testing-21.png" />
 <p>Processing the selected project may take some amount of time (PlatformIO will download and install all required packages)
 and after these steps, we have a fully configured project that is ready for developing code with <a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a> framework.</p>
-</div>
-<div class="section" id="adding-code-to-the-generated-project">
+</section>
+<section id="adding-code-to-the-generated-project">
 <h2><a class="toc-backref" href="#id2">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this headline">¶</a></h2>
 <p>Let’s add some actual code to the project. Firstly, we open a default main file <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> in the <a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder and replace its contents with the following:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
@@ -295,8 +203,8 @@ and after these steps, we have a fully configured project that is ready for deve
 </div>
 <img alt="../../_images/arduino-debugging-unit-testing-31.png" src="../../_images/arduino-debugging-unit-testing-31.png" />
 <p>After this step, we created a basic blink project ready for compiling and uploading.</p>
-</div>
-<div class="section" id="compiling-and-uploading-the-firmware">
+</section>
+<section id="compiling-and-uploading-the-firmware">
 <h2><a class="toc-backref" href="#id3">Compiling and Uploading the Firmware</a><a class="headerlink" href="#compiling-and-uploading-the-firmware" title="Permalink to this headline">¶</a></h2>
 <p>Now we can build the project. To compile firmware we can use next options:
 Build option from the <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Tasks</span></code> menu, Build button in <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode-toolbar"><span class="std std-ref">PlatformIO Toolbar</span></a>, Task Menu <code class="docutils literal notranslate"><span class="pre">Tasks:</span> <span class="pre">Run</span> <span class="pre">Task...</span> <span class="pre">&gt;</span> <span class="pre">PlatformIO:</span> <span class="pre">Build</span></code> or in <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode-toolbar"><span class="std std-ref">PlatformIO Toolbar</span></a>, Command Palette <code class="docutils literal notranslate"><span class="pre">View:</span> <span class="pre">Command</span> <span class="pre">Palette</span> <span class="pre">&gt;</span> <span class="pre">PlatformIO:</span> <span class="pre">Build</span></code> or via hotkeys <code class="docutils literal notranslate"><span class="pre">cmd-alt-b</span> <span class="pre">/</span> <span class="pre">ctrl-alt-b</span></code>:</p>
@@ -307,8 +215,8 @@ Build option from the <code class="docutils literal notranslate"><span class="pr
 Upload option from the <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Tasks</span></code> menu, Upload button in <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode-toolbar"><span class="std std-ref">PlatformIO Toolbar</span></a>, Command Palette <code class="docutils literal notranslate"><span class="pre">View:</span> <span class="pre">Command</span> <span class="pre">Palette</span> <span class="pre">&gt;</span> <span class="pre">PlatformIO:</span> <span class="pre">Upload</span></code>, using Task Menu <code class="docutils literal notranslate"><span class="pre">Tasks:</span> <span class="pre">Run</span> <span class="pre">Task...</span> <span class="pre">&gt;</span> <span class="pre">PlatformIO:</span> <span class="pre">Upload</span></code> or via hotkeys <code class="docutils literal notranslate"><span class="pre">cmd-alt-u</span> <span class="pre">/</span> <span class="pre">ctrl-alt-u</span></code>:</p>
 <img alt="../../_images/arduino-debugging-unit-testing-61.png" src="../../_images/arduino-debugging-unit-testing-61.png" />
 <p>After successful uploading, the green LED1 should start blinking.</p>
-</div>
-<div class="section" id="debugging-the-firmware">
+</section>
+<section id="debugging-the-firmware">
 <h2><a class="toc-backref" href="#id4">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> offers the easiest way to debug the board. Firstly, we need to specify <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Since the board has an on-board <code class="docutils literal notranslate"><span class="pre">JLink</span></code> debug probe we can directly declare it in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nrf52_dk]</span>
@@ -325,8 +233,8 @@ Upload option from the <code class="docutils literal notranslate"><span class="p
 <img alt="../../_images/arduino-debugging-unit-testing-81.png" src="../../_images/arduino-debugging-unit-testing-81.png" />
 <p>We can walk through the code using control buttons, set breakpoints, add variables to <code class="docutils literal notranslate"><span class="pre">Watch</span> <span class="pre">window</span></code>:</p>
 <img alt="../../_images/arduino-debugging-unit-testing-91.png" src="../../_images/arduino-debugging-unit-testing-91.png" />
-</div>
-<div class="section" id="writing-unit-tests">
+</section>
+<section id="writing-unit-tests">
 <h2><a class="toc-backref" href="#id5">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this headline">¶</a></h2>
 <p>Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: <code class="docutils literal notranslate"><span class="pre">setUp</span></code>, <code class="docutils literal notranslate"><span class="pre">tearDown</span></code>, <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code>. Functions <code class="docutils literal notranslate"><span class="pre">setUp</span></code> and <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the <code class="docutils literal notranslate"><span class="pre">setUp</span></code> function and if you need to clean up variables you use <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> function. In our example we will use these functions to accordingly initialize and deinitialize LED.  <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code> functions act as a simple Arduino program where we describe our test plan.</p>
 <p>Let’s create <code class="docutils literal notranslate"><span class="pre">test</span></code> folder in the root of the project and add a new file <code class="docutils literal notranslate"><span class="pre">test_main.cpp</span></code> to this folder. Next basic tests for <code class="docutils literal notranslate"><span class="pre">String</span></code> class will be implemented in this file:</p>
@@ -413,8 +321,8 @@ Test button on <a class="reference internal" href="../../integration/ide/vscode.
 <p>After processing we should see a detailed report about the testing results:</p>
 <img alt="../../_images/arduino-debugging-unit-testing-111.png" src="../../_images/arduino-debugging-unit-testing-111.png" />
 <p>As we can see from the report, all our tests were successful!</p>
-</div>
-<div class="section" id="adding-bluetooth-le-features">
+</section>
+<section id="adding-bluetooth-le-features">
 <h2><a class="toc-backref" href="#id6">Adding Bluetooth LE features</a><a class="headerlink" href="#adding-bluetooth-le-features" title="Permalink to this headline">¶</a></h2>
 <p>To add the basic BLE functionality to our project we need to define the SoftDevice version
 and install a library called <a class="reference external" href="https://platformio.org/lib/show/259/BLEPeripheral">BLEPeripheral</a>.
@@ -479,34 +387,31 @@ After a successful connection to the board, we should see one “Unknown Service
 <img alt="../../_images/arduino-debugging-unit-testing-121.png" src="../../_images/arduino-debugging-unit-testing-121.png" />
 <p>To switch the LED on or off we just need write <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code> as <code class="docutils literal notranslate"><span class="pre">UINT8</span></code> to the BLE characteristic:</p>
 <img alt="../../_images/arduino-debugging-unit-testing-131.png" src="../../_images/arduino-debugging-unit-testing-131.png" />
-</div>
-<div class="section" id="conclusion">
+</section>
+<section id="conclusion">
 <h2><a class="toc-backref" href="#id7">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
 <p>Now we have a project template for Nordic <code class="docutils literal notranslate"><span class="pre">nRF52-DK</span></code> board that we can use as a boilerplate for the next projects.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="zephyr_debugging_unit_testing_inspect.html" class="btn btn-neutral float-right" title="Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../ststm32/stm32cube_debugging_unit_testing.html" class="btn btn-neutral float-left" title="STM32Cube HAL and Nucleo-F401RE: debugging and unit testing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="zephyr_debugging_unit_testing_inspect.html" class="btn btn-neutral float-right" title="Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
 
-    <p>
-        &#169; Copyright 2014-present, PlatformIO.
-
-    </p>
+    <p>&#169; Copyright 2014-present, PlatformIO.</p>
 <ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
   </div>
+
+  
  
 <script>
   var navBarHTML = '\
@@ -618,16 +523,14 @@ After a successful connection to the board, we should see one “Unknown Service
         </div>
 
       </div>
-
     </section>
-
   </div>
   
 
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.0 (stable)
+    v5.2.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -656,31 +559,22 @@ After a successful connection to the board, we should see one “Unknown Service
 </div></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-1768265-7', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-   
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
 
 </body>
 </html>
