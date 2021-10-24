@@ -44,7 +44,7 @@ Configuration for the programmers:
         upload_flags =
             -C
             ; use "tool-avrdude-megaavr" for the atmelmegaavr platform
-            $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
+            ${platformio.packages_dir}/tool-avrdude/avrdude.conf
             -p
             $BOARD_MCU
             -P
@@ -67,7 +67,7 @@ Configuration for the programmers:
         upload_flags =
             -C
             ; use "tool-avrdude-megaavr" for the atmelmegaavr platform
-            $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
+            ${platformio.packages_dir}/tool-avrdude/avrdude.conf
             -p
             $BOARD_MCU
             -P
@@ -92,7 +92,7 @@ Configuration for the programmers:
         upload_flags =
             -C
             ; use "tool-avrdude-megaavr" for the atmelmegaavr platform
-            $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
+            ${platformio.packages_dir}/tool-avrdude/avrdude.conf
             -p
             $BOARD_MCU
             -c
@@ -112,7 +112,7 @@ Configuration for the programmers:
         upload_flags =
             -C
             ; use "tool-avrdude-megaavr" for the atmelmegaavr platform
-            $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
+            ${platformio.packages_dir}/tool-avrdude/avrdude.conf
             -p
             $BOARD_MCU
             -P
@@ -135,7 +135,7 @@ Configuration for the programmers:
         upload_flags =
             -C
             ; use "tool-avrdude-megaavr" for the atmelmegaavr platform
-            $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
+            ${platformio.packages_dir}/tool-avrdude/avrdude.conf
             -p
             $BOARD_MCU
             -P
@@ -155,7 +155,7 @@ Configuration for the programmers:
         upload_flags =
             -C
             ; use "tool-avrdude-megaavr" for the atmelmegaavr platform
-            $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
+            ${platformio.packages_dir}/tool-avrdude/avrdude.conf
             -p
             $BOARD_MCU
             -c
@@ -176,7 +176,7 @@ Configuration for the programmers:
         upload_flags =
             -C
             ; use "tool-avrdude-megaavr" for the atmelmegaavr platform
-            $PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf
+            ${platformio.packages_dir}/tool-avrdude/avrdude.conf
             -p
             $BOARD_MCU
             -P

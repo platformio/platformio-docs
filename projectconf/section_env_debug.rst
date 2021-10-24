@@ -237,7 +237,7 @@ with a debugging server that is compatible with "on-board" debugging tool
 * First line is an executable path of debugging server
 * 2-nd and the next lines are arguments for executable file
 
-**Example:**
+**Examples:**
 
 .. code-block:: ini
 
@@ -250,6 +250,15 @@ with a debugging server that is compatible with "on-board" debugging tool
       arg2
       ...
       argN
+
+    [env:debug_openocd]
+    platform = ...
+    board = ...
+    debug_tool = custom
+    debug_server =
+        ${platformio.packages_dir}/tool-openocd/openocd
+        -f
+        ${platformio.packages_dir}/tool-openocd/scripts/board/stm32f103zet6_warship.cfg
 
 .. _projectconf_debug_port:
 
