@@ -177,7 +177,7 @@ Examples:
 
 .. warning::
 
-    Consider using :ref:`projectconf_dynamic_vars` instead of ``PLATFORMIO_BUILD_FLAGS``
+    Consider using :ref:`projectconf_interpolation` instead of ``PLATFORMIO_BUILD_FLAGS``
     environment variable if additional build flags contain preprocessor directive with
     special characters (``$``, ``&``, ``~``, etc) in its value.
 

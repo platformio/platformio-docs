@@ -78,8 +78,8 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="interpolation.html">Interpolation of Values</a></li>
 <li class="toctree-l2"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamic_variables.html">Dynamic variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
 </li>
@@ -285,7 +285,7 @@ pre-configured upload options will be stored in <code class="docutils literal no
 variable. A classic default upload command for <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> may look as
 <code class="docutils literal notranslate"><span class="pre">some-flash-bin-tool</span> <span class="pre">$UPLOADERFLAGS</span> <span class="pre">$SOURCE</span></code>, where
 <code class="docutils literal notranslate"><span class="pre">$SOURCE</span></code> will be replaced by a real program/firmware binary.</p>
-<p><code class="docutils literal notranslate"><span class="pre">$PROJECT_PACKAGES_DIR</span></code> build variable points to <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> template points to <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a>.</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_AVR_ISP]</span>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
@@ -293,7 +293,7 @@ variable. A classic default upload command for <a class="reference internal" hre
 <span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
 <span class="na">upload_flags</span> <span class="o">=</span>
     <span class="na">-C</span>
-    <span class="na">$PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf</span>
+    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
     <span class="na">-p</span>
     <span class="na">atmega328p</span>
     <span class="na">-P</span>
@@ -314,7 +314,7 @@ variable. A classic default upload command for <a class="reference internal" hre
 <span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
 <span class="na">upload_flags</span> <span class="o">=</span>
     <span class="na">-C</span>
-    <span class="na">$PROJECT_PACKAGES_DIR/tool-avrdude/avrdude.conf</span>
+    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
     <span class="na">-p</span>
     <span class="na">atmega328p</span>
     <span class="na">-Pusb</span>
@@ -331,7 +331,7 @@ variable. A classic default upload command for <a class="reference internal" hre
 <span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">bluepill_f103c6</span>
 <span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">$PROJECT_PACKAGES_DIR/tool-stlink/st-flash write $SOURCE 0x8000000</span>
+<span class="na">upload_command</span> <span class="o">=</span> <span class="s">${platformio.packages_dir}/tool-stlink/st-flash write $SOURCE 0x8000000</span>
 </pre></div>
 </div>
 </li>
