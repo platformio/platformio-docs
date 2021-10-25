@@ -101,7 +101,7 @@ between ``<`` and ``>`` symbols.
 .. code::
 
     ...
-    Library Dependency Finder -> http://bit.ly/configure-pio-ldf
+    Library Dependency Finder -> https://bit.ly/configure-pio-ldf
     LDF MODES: FINDER(chain+) COMPATIBILITY(soft)
     Collected 54 compatible libraries
     Scanning dependencies...
