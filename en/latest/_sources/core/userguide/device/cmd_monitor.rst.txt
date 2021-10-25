@@ -176,7 +176,7 @@ Filters
 -------
 
 PlatformIO allows you to apply multiple filters to the device monitor INPUT & OUTPUT
-streams using :option:`pio device monitor --filter` command or
+streams using the :option:`pio device monitor --filter` command or
 :ref:`projectconf_monitor_filters` option.
 
 Built-in Filters
@@ -211,6 +211,20 @@ Built-in Filters
       - Custom filter for :ref:`platform_espressif32` which decodes crash exception
     * - ``esp8266_exception_decoder``
       - Custom filter for :ref:`platform_espressif8266` which decodes crash exception
+
+Community Filters
+~~~~~~~~~~~~~~~~~
+
+The Community Filters are not a part of PlatformIO Core installation. You need to
+install them manually. Please visit an official filter's documentation on how to use it.
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+    * - `arduplot <https://github.com/yhur/arduplot>`__
+      - **Serial Plotter** compatible with Arduino syntax (output)
 
 .. _cmd_device_monitor_custom_filters:
 
