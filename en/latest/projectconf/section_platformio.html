@@ -83,6 +83,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#data-dir"><code class="docutils literal notranslate"><span class="pre">data_dir</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#test-dir"><code class="docutils literal notranslate"><span class="pre">test_dir</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#boards-dir"><code class="docutils literal notranslate"><span class="pre">boards_dir</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#monitor-dir"><code class="docutils literal notranslate"><span class="pre">monitor_dir</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#shared-dir"><code class="docutils literal notranslate"><span class="pre">shared_dir</span></code></a></li>
 </ul>
 </li>
@@ -184,7 +185,8 @@
 <li><p><a class="reference internal" href="#data-dir" id="id18"><code class="docutils literal notranslate"><span class="pre">data_dir</span></code></a></p></li>
 <li><p><a class="reference internal" href="#test-dir" id="id19"><code class="docutils literal notranslate"><span class="pre">test_dir</span></code></a></p></li>
 <li><p><a class="reference internal" href="#boards-dir" id="id20"><code class="docutils literal notranslate"><span class="pre">boards_dir</span></code></a></p></li>
-<li><p><a class="reference internal" href="#shared-dir" id="id21"><code class="docutils literal notranslate"><span class="pre">shared_dir</span></code></a></p></li>
+<li><p><a class="reference internal" href="#monitor-dir" id="id21"><code class="docutils literal notranslate"><span class="pre">monitor_dir</span></code></a></p></li>
+<li><p><a class="reference internal" href="#shared-dir" id="id22"><code class="docutils literal notranslate"><span class="pre">shared_dir</span></code></a></p></li>
 </ul>
 </li>
 </ul>
@@ -453,7 +455,7 @@ a different configuration (new build flags, etc):</p>
 </section>
 <section id="workspace-dir">
 <span id="projectconf-pio-workspace-dir"></span><h3><a class="toc-backref" href="#id12"><code class="docutils literal notranslate"><span class="pre">workspace_dir</span></code></a><a class="headerlink" href="#workspace-dir" title="Permalink to this headline">¶</a></h3>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “Project/<code class="docutils literal notranslate"><span class="pre">.pio</span></code>”</p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">.pio</span></code>”</p>
 <p>The path to a project workspace directory where PlatformIO keeps by default
 compiled objects, static libraries, firmwares, and external library
 dependencies. It is used by these options:</p>
@@ -501,7 +503,7 @@ you can use “clean” target for <a class="reference internal" href="../core/u
 </section>
 <section id="include-dir">
 <span id="projectconf-pio-include-dir"></span><h3><a class="toc-backref" href="#id15"><code class="docutils literal notranslate"><span class="pre">include_dir</span></code></a><a class="headerlink" href="#include-dir" title="Permalink to this headline">¶</a></h3>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “Project/<code class="docutils literal notranslate"><span class="pre">include</span></code>”</p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">include</span></code>”</p>
 <p>The path to project’s default header files. PlatformIO uses it for the
 <a class="reference internal" href="../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command. The default value is <code class="docutils literal notranslate"><span class="pre">include</span></code> meaning an
 <code class="docutils literal notranslate"><span class="pre">include</span></code> directory located under the root directory of the project. This
@@ -513,7 +515,7 @@ path will be added to <code class="docutils literal notranslate"><span class="pr
 </section>
 <section id="src-dir">
 <span id="projectconf-pio-src-dir"></span><h3><a class="toc-backref" href="#id16"><code class="docutils literal notranslate"><span class="pre">src_dir</span></code></a><a class="headerlink" href="#src-dir" title="Permalink to this headline">¶</a></h3>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “Project/<code class="docutils literal notranslate"><span class="pre">src</span></code>”</p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">src</span></code>”</p>
 <p>The path to the project’s directory with source code. PlatformIO uses
 it for the <a class="reference internal" href="../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command. The default value is <code class="docutils literal notranslate"><span class="pre">src</span></code>
 meaning a <code class="docutils literal notranslate"><span class="pre">src</span></code> directory located in the root directory of the project.</p>
@@ -528,7 +530,7 @@ See <a class="reference external" href="https://github.com/platformio/platform-a
 </section>
 <section id="lib-dir">
 <span id="projectconf-pio-lib-dir"></span><h3><a class="toc-backref" href="#id17"><code class="docutils literal notranslate"><span class="pre">lib_dir</span></code></a><a class="headerlink" href="#lib-dir" title="Permalink to this headline">¶</a></h3>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “Project/<code class="docutils literal notranslate"><span class="pre">lib</span></code>”</p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">lib</span></code>”</p>
 <p>You can put your own/private libraries here. The source code of each library
 should be placed in separate directory, like
 <code class="docutils literal notranslate"><span class="pre">lib/private_lib/[here</span> <span class="pre">are</span> <span class="pre">source</span> <span class="pre">files]</span></code>. This directory has the highest
@@ -565,7 +567,7 @@ preprocessor’s include paths and build them.</p>
 </section>
 <section id="data-dir">
 <span id="projectconf-pio-data-dir"></span><h3><a class="toc-backref" href="#id18"><code class="docutils literal notranslate"><span class="pre">data_dir</span></code></a><a class="headerlink" href="#data-dir" title="Permalink to this headline">¶</a></h3>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “Project/<code class="docutils literal notranslate"><span class="pre">data</span></code>”</p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">data</span></code>”</p>
 <p>Data directory to store contents and <a class="reference internal" href="../platforms/espressif8266.html#platform-espressif-uploadfs"><span class="std std-ref">Using Filesystem</span></a>.
 The default value is <code class="docutils literal notranslate"><span class="pre">data</span></code> that means that folder is located in the root of
 the project.</p>
@@ -574,7 +576,7 @@ the project.</p>
 </section>
 <section id="test-dir">
 <span id="projectconf-pio-test-dir"></span><h3><a class="toc-backref" href="#id19"><code class="docutils literal notranslate"><span class="pre">test_dir</span></code></a><a class="headerlink" href="#test-dir" title="Permalink to this headline">¶</a></h3>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “Project/<code class="docutils literal notranslate"><span class="pre">test</span></code>”</p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">test</span></code>”</p>
 <p>The directory where <a class="reference internal" href="../plus/unit-testing.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> engine will look for the
 tests.  The default value is <code class="docutils literal notranslate"><span class="pre">test</span></code>, meaning a <code class="docutils literal notranslate"><span class="pre">test</span></code> directory
 located in the root of the project.</p>
@@ -583,7 +585,7 @@ located in the root of the project.</p>
 </section>
 <section id="boards-dir">
 <span id="projectconf-pio-boards-dir"></span><h3><a class="toc-backref" href="#id20"><code class="docutils literal notranslate"><span class="pre">boards_dir</span></code></a><a class="headerlink" href="#boards-dir" title="Permalink to this headline">¶</a></h3>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “Project/<code class="docutils literal notranslate"><span class="pre">boards</span></code>”</p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">boards</span></code>”</p>
 <p>The location of project-specific board definitions. Each project may
 choose a suitable directory name.  The default value is <code class="docutils literal notranslate"><span class="pre">boards</span></code>,
 meaning a “boards” directory located in the root of the project.</p>
@@ -596,9 +598,18 @@ meaning a “boards” directory located in the root of the project.</p>
 <p>This option can also be configured by the global environment variable
 <span class="target" id="index-16"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_BOARDS_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BOARDS_DIR</span></code></a>.</p>
 </section>
+<section id="monitor-dir">
+<span id="projectconf-pio-monitor-dir"></span><h3><a class="toc-backref" href="#id21"><code class="docutils literal notranslate"><span class="pre">monitor_dir</span></code></a><a class="headerlink" href="#monitor-dir" title="Permalink to this headline">¶</a></h3>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">monitor</span></code>”</p>
+<p>The directory where <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmd-device-monitor"><span class="std std-ref">pio device monitor</span></a> will look for the
+<a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmd-device-monitor-custom-filters"><span class="std std-ref">Custom Filters</span></a>. The default value is <code class="docutils literal notranslate"><span class="pre">monitor</span></code>,
+meaning a <code class="docutils literal notranslate"><span class="pre">monitor</span></code> directory located in the root of the project.</p>
+<p>This option can also be configured by the global environment variable
+<span class="target" id="index-17"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_MONITOR_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_MONITOR_DIR</span></code></a>.</p>
+</section>
 <section id="shared-dir">
-<span id="projectconf-pio-shared-dir"></span><h3><a class="toc-backref" href="#id21"><code class="docutils literal notranslate"><span class="pre">shared_dir</span></code></a><a class="headerlink" href="#shared-dir" title="Permalink to this headline">¶</a></h3>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “Project/<code class="docutils literal notranslate"><span class="pre">shared</span></code>”</p>
+<span id="projectconf-pio-shared-dir"></span><h3><a class="toc-backref" href="#id22"><code class="docutils literal notranslate"><span class="pre">shared_dir</span></code></a><a class="headerlink" href="#shared-dir" title="Permalink to this headline">¶</a></h3>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">shared</span></code>”</p>
 <p><a class="reference internal" href="../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a> uses this folder to synchronize extra files between remote
 machine. For example, you can share <a class="reference internal" href="section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a>.</p>
 <p>Please note that these folders are automatically shared between remote machine
@@ -615,7 +626,7 @@ with <a class="reference internal" href="../core/userguide/remote/cmd_run.html#c
 <p>The default value is <code class="docutils literal notranslate"><span class="pre">shared</span></code>, meaning a directory named “shared”
 located in the root of the project.</p>
 <p>This option can also be configured by the global environment variable
-<span class="target" id="index-17"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_SHARED_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_SHARED_DIR</span></code></a>.</p>
+<span class="target" id="index-18"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_SHARED_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_SHARED_DIR</span></code></a>.</p>
 </section>
 </section>
 </section>

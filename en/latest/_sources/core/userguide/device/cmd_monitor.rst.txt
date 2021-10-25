@@ -175,8 +175,12 @@ You can also specify which environments should be processed by default using
 Filters
 -------
 
-A list of filters that can be applied for monitor output using :option:`pio device monitor --filter` or :ref:`projectconf` and :ref:`projectconf_monitor_filters` options.
-option.
+PlatformIO allows you to apply multiple filters to the device monitor INPUT & OUTPUT
+streams using :option:`pio device monitor --filter` command or
+:ref:`projectconf_monitor_filters` option.
+
+Built-in Filters
+~~~~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -208,8 +212,46 @@ option.
     * - ``esp8266_exception_decoder``
       - Custom filter for :ref:`platform_espressif8266` which decodes crash exception
 
+.. _cmd_device_monitor_custom_filters:
+
+Custom Filters
+~~~~~~~~~~~~~~
+
+:ref:`piocore` provides an API to extend device monitor with custom filters declared
+in :ref:`projectconf_pio_monitor_dir` or in "monitor" folder of :ref:`platforms`.
+Each filter is a Python-based file and its name should have the ``filter_`` prefix.
+In a Python code, you need to extend ``DeviceMonitorFilter`` class to get access to
+the ``rx()`` and ``tx()`` methods/callbacks. See the base API below:
+
+**filter_demo.py**
+
+.. code-block:: python
+
+  from platformio.commands.device import DeviceMonitorFilter
+
+
+  class Demo(DeviceMonitorFilter):
+      NAME = "demo"
+
+      def __init__(self, *args, **kwargs):
+          super(Demo, self).__init__(*args, **kwargs)
+          print("Demo filter is loaded")
+
+      def rx(self, text):
+          return f"Received: {text}\n"
+
+      def tx(self, text):
+          print(f"Sent: {text}\n")
+          return text
+
+**Examples**
+
+- https://github.com/platformio/platformio-core/tree/develop/platformio/commands/device/filters
+- https://github.com/platformio/platform-espressif32/tree/develop/monitor
+- https://github.com/platformio/platform-espressif8266/tree/develop/monitor
+
 Capture output to a file
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to use a ``log2file`` filter from :ref:`cmd_device_monitor_filters`:
 
@@ -226,16 +268,6 @@ or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
     ...
     platform = ...
     monitor_filters = log2file, default
-
-
-Device Monitor Filter API
--------------------------
-
-:ref:`piocore` provides an API to extend device monitor with a custom filter declared
-in "monitor" folder of :ref:`platforms`. See examples:
-
-- https://github.com/platformio/platform-espressif32/tree/develop/monitor
-- https://github.com/platformio/platform-espressif8266/tree/develop/monitor
 
 Examples
 --------

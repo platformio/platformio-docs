@@ -340,7 +340,7 @@ a different configuration (new build flags, etc):
 ``workspace_dir``
 ^^^^^^^^^^^^^^^^^
 
-Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``.pio``"
+Type: ``DirPath`` | Multiple: ``No`` | Default: "<Project>/``.pio``"
 
 The path to a project workspace directory where PlatformIO keeps by default
 compiled objects, static libraries, firmwares, and external library
@@ -402,7 +402,7 @@ This option can also be configured by the global environment variable
 ``include_dir``
 ^^^^^^^^^^^^^^^
 
-Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``include``"
+Type: ``DirPath`` | Multiple: ``No`` | Default: "<Project>/``include``"
 
 The path to project's default header files. PlatformIO uses it for the
 :ref:`cmd_run` command. The default value is ``include`` meaning an
@@ -420,7 +420,7 @@ This option can also be configured by the global environment variable
 ``src_dir``
 ^^^^^^^^^^^
 
-Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``src``"
+Type: ``DirPath`` | Multiple: ``No`` | Default: "<Project>/``src``"
 
 The path to the project's directory with source code. PlatformIO uses
 it for the :ref:`cmd_run` command. The default value is ``src``
@@ -439,7 +439,7 @@ This option can also be configured by the global environment variable
 ``lib_dir``
 ^^^^^^^^^^^
 
-Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``lib``"
+Type: ``DirPath`` | Multiple: ``No`` | Default: "<Project>/``lib``"
 
 You can put your own/private libraries here. The source code of each library
 should be placed in separate directory, like
@@ -488,7 +488,7 @@ preprocessor's include paths and build them.
 ``data_dir``
 ^^^^^^^^^^^^
 
-Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``data``"
+Type: ``DirPath`` | Multiple: ``No`` | Default: "<Project>/``data``"
 
 Data directory to store contents and :ref:`platform_espressif_uploadfs`.
 The default value is ``data`` that means that folder is located in the root of
@@ -502,7 +502,7 @@ This option can also be configured by the global environment variable
 ``test_dir``
 ^^^^^^^^^^^^
 
-Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``test``"
+Type: ``DirPath`` | Multiple: ``No`` | Default: "<Project>/``test``"
 
 The directory where :ref:`unit_testing` engine will look for the
 tests.  The default value is ``test``, meaning a ``test`` directory
@@ -516,7 +516,7 @@ This option can also be configured by the global environment variable
 ``boards_dir``
 ^^^^^^^^^^^^^^
 
-Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``boards``"
+Type: ``DirPath`` | Multiple: ``No`` | Default: "<Project>/``boards``"
 
 The location of project-specific board definitions. Each project may
 choose a suitable directory name.  The default value is ``boards``,
@@ -531,12 +531,26 @@ By default, PlatformIO looks for boards in this order:
 This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_BOARDS_DIR`.
 
+.. _projectconf_pio_monitor_dir:
+
+``monitor_dir``
+^^^^^^^^^^^^^^^
+
+Type: ``DirPath`` | Multiple: ``No`` | Default: "<Project>/``monitor``"
+
+The directory where :ref:`cmd_device_monitor` will look for the
+:ref:`cmd_device_monitor_custom_filters`. The default value is ``monitor``,
+meaning a ``monitor`` directory located in the root of the project.
+
+This option can also be configured by the global environment variable
+:envvar:`PLATFORMIO_MONITOR_DIR`.
+
 .. _projectconf_pio_shared_dir:
 
 ``shared_dir``
 ^^^^^^^^^^^^^^
 
-Type: ``DirPath`` | Multiple: ``No`` | Default: "Project/``shared``"
+Type: ``DirPath`` | Multiple: ``No`` | Default: "<Project>/``shared``"
 
 :ref:`pioremote` uses this folder to synchronize extra files between remote
 machine. For example, you can share :ref:`projectconf_extra_scripts`.
