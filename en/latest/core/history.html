@@ -152,7 +152,7 @@
 <ul class="simple">
 <li><p>Show human-readable message when infinite recursion is detected while processing <a class="reference external" href="https://docs.platformio.org/page/projectconf/interpolation.html">Interpolation of Values</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3883">issue #3883</a>)</p></li>
 <li><p>Improved directory interpolation (<code class="docutils literal notranslate"><span class="pre">${platformio.***_dir}</span></code>) in <a class="reference external" href="https://docs.platformio.org/page/projectconf.html">“platformio.ini”</a> configuration file (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3934">issue #3934</a>)</p></li>
-<li><p>Ignore resolving of SCons variables (e.g., <code class="docutils literal notranslate"><span class="pre">${SOURCE.get_abspath()}</span></code>) when preprocessing interpolations (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3933">issue #3933</a>)</p></li>
+<li><p>Ignore resolving of SCons variables (e.g., <code class="docutils literal notranslate"><span class="pre">${(SOURCE.get_abspath())}</span></code>) when preprocessing interpolations (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3933">issue #3933</a>)</p></li>
 <li><p>Fixed an issue when the “$PROJECT_DIR” variable was not properly replaced in the <a class="reference external" href="https://docs.platformio.org/page/projectconf/section_env_debug.html#debug-server">debug_server</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4086">issue #4086</a>)</p></li>
 <li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/page/plus/pio-remote.html">PIO Remote</a> device monitor crashes on the first keypress (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3832">issue #3832</a>)</p></li>
 </ul>
@@ -607,7 +607,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3a3 (latest)
+    v5.2.3b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
