@@ -181,10 +181,16 @@ environments, please take a look at <strong>“Global scope”</strong> in
 allows extending of other sections.</p>
 </div>
 <p><strong>Example:</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; You MUST inject these options into [env:] section</span>
-<span class="c1">; using ${extra.***} (see below)</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; COMMON options</span>
+<span class="c1">; Each &quot;[env:***]&quot; extends this &quot;[env]&quot; by default</span>
+<span class="k">[env]</span>
+<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D VERSION=1.2.3</span>
+
+<span class="c1">; CUSTOM options</span>
+<span class="c1">; You need manually inject these options into a section</span>
+<span class="c1">; using ${extra.&lt;name_of_option&gt;} (see below)</span>
 <span class="k">[extra]</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D VERSION=1.2.3 -D DEBUG=1</span>
 <span class="na">lib_deps_builtin</span> <span class="o">=</span>
   <span class="na">SPI</span>
   <span class="na">Wire</span>
@@ -193,18 +199,15 @@ allows extending of other sections.</p>
 
 <span class="k">[env:uno]</span>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${extra.build_flags}</span>
 <span class="na">lib_deps</span> <span class="o">=</span>
   <span class="na">${extra.lib_deps_builtin}</span>
   <span class="na">${extra.lib_deps_external}</span>
 
 <span class="k">[env:nodemcuv2]</span>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${extra.build_flags} -Wall</span>
+<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${env.build_flags} -Wall</span>
 <span class="na">lib_deps</span> <span class="o">=</span>
   <span class="na">${extra.lib_deps_builtin}</span>
   <span class="na">${extra.lib_deps_external}</span>
@@ -226,6 +229,7 @@ allows extending of other sections.</p>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
 <span class="na">build_flags</span> <span class="o">=</span>
+  <span class="na">${env.build_flags}</span>
   <span class="na">-DWIFI_SSID</span><span class="o">=</span><span class="s">${sysenv.WIFI_SSID}</span>
   <span class="na">-DWIFI_PASS</span><span class="o">=</span><span class="s">${sysenv.WIFI_PASS}</span>
 </pre></div>
