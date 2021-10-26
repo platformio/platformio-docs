@@ -60,10 +60,16 @@ first item from pair ``<option> = value``.
 
 .. code-block:: ini
 
-    ; You MUST inject these options into [env:] section
-    ; using ${extra.***} (see below)
+    ; COMMON options
+    ; Each "[env:***]" extends this "[env]" by default
+    [env]
+    framework = arduino
+    build_flags = -D VERSION=1.2.3
+
+    ; CUSTOM options
+    ; You need manually inject these options into a section
+    ; using ${extra.<name_of_option>} (see below)
     [extra]
-    build_flags = -D VERSION=1.2.3 -D DEBUG=1
     lib_deps_builtin =
       SPI
       Wire
@@ -72,18 +78,15 @@ first item from pair ``<option> = value``.
 
     [env:uno]
     platform = atmelavr
-    framework = arduino
     board = uno
-    build_flags = ${extra.build_flags}
     lib_deps =
       ${extra.lib_deps_builtin}
       ${extra.lib_deps_external}
 
     [env:nodemcuv2]
     platform = espressif8266
-    framework = arduino
     board = nodemcuv2
-    build_flags = ${extra.build_flags} -Wall
+    build_flags = ${env.build_flags} -Wall
     lib_deps =
       ${extra.lib_deps_builtin}
       ${extra.lib_deps_external}
@@ -105,6 +108,7 @@ first item from pair ``<option> = value``.
     platform = espressif32
     board = esp32dev
     build_flags =
+      ${env.build_flags}
       -DWIFI_SSID=${sysenv.WIFI_SSID}
       -DWIFI_PASS=${sysenv.WIFI_PASS}
 
