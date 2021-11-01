@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_f042k6:
+.. _board_ststm32_bw_swan_r5:
 
-ST Nucleo F042K6
-================
+BluesWireless Swan R5
+=====================
 
 .. contents::
 
@@ -24,54 +24,56 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F042K6T6
+    - STM32L4R5ZIY6
   * - **Frequency**
-    - 48MHz
+    - 120MHz
   * - **Flash**
-    - 32KB
+    - 2MB
   * - **RAM**
-    - 6KB
+    - 640KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-F042K6/?utm_source=platformio.org&utm_medium=docs>`__
+    - `BluesWireless <https://blues.io/products/swan?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_f042k6`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``bw_swan_r5`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_f042k6]
+  [env:bw_swan_r5]
   platform = ststm32
-  board = nucleo_f042k6
+  board = bw_swan_r5
 
-You can override default ST Nucleo F042K6 settings per build environment using
+You can override default BluesWireless Swan R5 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_f042k6.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_f042k6.json>`_. For example,
+board manifest `bw_swan_r5.json <https://github.com/platformio/platform-ststm32/blob/master/boards/bw_swan_r5.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_f042k6]
+  [env:bw_swan_r5]
   platform = ststm32
-  board = nucleo_f042k6
+  board = bw_swan_r5
 
   ; change microcontroller
-  board_build.mcu = stm32f042k6t6
+  board_build.mcu = stm32l4r5ziy6
 
   ; change MCU frequency
-  board_build.f_cpu = 48000000L
+  board_build.f_cpu = 120000000L
 
 
 Uploading
 ---------
-ST Nucleo F042K6 supports the following uploading protocols:
+BluesWireless Swan R5 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
+* ``dfu``
 * ``jlink``
 * ``mbed``
+* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -80,9 +82,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_f042k6]
+  [env:bw_swan_r5]
   platform = ststm32
-  board = nucleo_f042k6
+  board = bw_swan_r5
 
   upload_protocol = stlink
 
@@ -99,7 +101,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo F042K6 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+BluesWireless Swan R5 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -109,7 +111,7 @@ ST Nucleo F042K6 has on-board debug probe and **IS READY** for debugging. You do
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
@@ -117,8 +119,8 @@ ST Nucleo F042K6 has on-board debug probe and **IS READY** for debugging. You do
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------
@@ -131,14 +133,5 @@ Frameworks
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
-    * - :ref:`framework_cmsis`
-      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
-
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
-
-    * - :ref:`framework_libopencm3`
-      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others

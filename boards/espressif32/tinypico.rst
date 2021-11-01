@@ -11,8 +11,8 @@
 
 .. _board_espressif32_tinypico:
 
-TinyPICO
-========
+Unexpected Maker TinyPICO
+=========================
 
 .. contents::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `TinyPICO <https://www.tinypico.com?utm_source=platformio.org&utm_medium=docs>`__
+    - `Unexpected Maker <https://www.tinypico.com?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``tinypico`` ID for :ref:`projectconf_env_board` option in :ref:`proj
   platform = espressif32
   board = tinypico
 
-You can override default TinyPICO settings per build environment using
+You can override default Unexpected Maker TinyPICO settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `tinypico.json <https://github.com/platformio/platform-espressif32/blob/master/boards/tinypico.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `tinypico.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-TinyPICO supports the following uploading protocols:
+Unexpected Maker TinyPICO supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``
@@ -85,7 +85,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support TinyPICO board.
+:ref:`piodebug` currently does not support Unexpected Maker TinyPICO board.
 
 Frameworks
 ----------

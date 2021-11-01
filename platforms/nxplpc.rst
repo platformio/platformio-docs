@@ -284,7 +284,7 @@ Packages
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
     * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
       - Device tree compiler

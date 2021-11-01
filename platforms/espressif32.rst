@@ -468,7 +468,7 @@ Packages
       - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
     * - `tool-esptoolpy <https://github.com/espressif/esptool.git?utm_source=platformio.org&utm_medium=docs>`__
       - Espressif ESP8266 and ESP32 serial bootloader utility
@@ -1740,25 +1740,6 @@ ThaiEasyElec
       - 4MB
       - 320KB
 
-TinyPICO
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_espressif32_tinypico`
-      - No
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-
 Turta
 ~~~~~
 
@@ -1772,6 +1753,25 @@ Turta
       - Flash
       - RAM
     * - :ref:`board_espressif32_turta_iot_node`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Unexpected Maker
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_tinypico`
       - No
       - ESP32
       - 240MHz

@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_f042k6:
+.. _board_ststm32_storm32_v1_31_rc:
 
-ST Nucleo F042K6
-================
+STorM32 BGC v1.31 RC
+====================
 
 .. contents::
 
@@ -24,54 +24,55 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F042K6T6
+    - STM32F103RCT6
   * - **Frequency**
-    - 48MHz
+    - 72MHz
   * - **Flash**
-    - 32KB
+    - 256KB
   * - **RAM**
-    - 6KB
+    - 48KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-F042K6/?utm_source=platformio.org&utm_medium=docs>`__
+    - `STorM32 <http://www.olliw.eu/storm32bgc-wiki/STorM32_Boards?utm_source=platformio.org&utm_medium=docs#STorM32-BGC_v1.3>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_f042k6`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``storm32_v1_31_rc`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_f042k6]
+  [env:storm32_v1_31_rc]
   platform = ststm32
-  board = nucleo_f042k6
+  board = storm32_v1_31_rc
 
-You can override default ST Nucleo F042K6 settings per build environment using
+You can override default STorM32 BGC v1.31 RC settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_f042k6.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_f042k6.json>`_. For example,
+board manifest `storm32_v1_31_rc.json <https://github.com/platformio/platform-ststm32/blob/master/boards/storm32_v1_31_rc.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_f042k6]
+  [env:storm32_v1_31_rc]
   platform = ststm32
-  board = nucleo_f042k6
+  board = storm32_v1_31_rc
 
   ; change microcontroller
-  board_build.mcu = stm32f042k6t6
+  board_build.mcu = stm32f103rct6
 
   ; change MCU frequency
-  board_build.f_cpu = 48000000L
+  board_build.f_cpu = 72000000L
 
 
 Uploading
 ---------
-ST Nucleo F042K6 supports the following uploading protocols:
+STorM32 BGC v1.31 RC supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
+* ``dfu``
 * ``jlink``
-* ``mbed``
+* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -80,9 +81,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_f042k6]
+  [env:storm32_v1_31_rc]
   platform = ststm32
-  board = nucleo_f042k6
+  board = storm32_v1_31_rc
 
   upload_protocol = stlink
 
@@ -99,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo F042K6 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+STorM32 BGC v1.31 RC does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -109,7 +110,7 @@ ST Nucleo F042K6 has on-board debug probe and **IS READY** for debugging. You do
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
@@ -117,8 +118,8 @@ ST Nucleo F042K6 has on-board debug probe and **IS READY** for debugging. You do
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------
@@ -133,9 +134,6 @@ Frameworks
 
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency

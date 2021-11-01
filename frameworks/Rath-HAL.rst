@@ -9,17 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _framework_logicromsdk:
+.. _framework_Rath-HAL:
 
-LOGICROM SDK
+Rath HAL SDK
 ============
 
 :Configuration:
-  :ref:`projectconf_env_framework` = ``logicromsdk``
+  :ref:`projectconf_env_framework` = ``Rath-HAL``
 
-LOGICROM Software Development Kit is a unified framework for IoT development on 4G LTE (RDA8910), GSM (MT2503/MT6261) and NBIoT (MT2625) chipsets/modules.
+A HAL(Hardware Abstraction Layer) library for Rath Robotics microcontrollers.
 
-For more detailed information please visit `vendor site <https://github.com/waybyte/logicromsdk?utm_source=platformio.org&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://github.com/uncertainty-cc/PlatformIO-Rath-HAL?utm_source=platformio.org&utm_medium=docs>`_.
 
 
 .. contents:: Contents

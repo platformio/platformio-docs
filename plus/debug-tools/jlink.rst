@@ -629,6 +629,13 @@ Boards
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_ledglasses_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 232KB
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
       - :ref:`platform_atmelsam`
       - External
@@ -881,6 +888,13 @@ Boards
       - 133MHz
       - 2MB
       - 264KB
+    * - :ref:`board_nordicnrf52_nicla_sense_me`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 515.25KB
+      - 62.78KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -1112,6 +1126,13 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_bw_swan_r5`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_nordicnrf52_bluey`
       - :ref:`platform_nordicnrf52`
       - External
@@ -2554,6 +2575,13 @@ Boards
       - 80MHz
       - 1MB
       - 96KB
+    * - :ref:`board_ststm32_disco_b_u585i_iot02a`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32U585AII6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - :ref:`platform_ststm32`
       - On-board
@@ -2757,6 +2785,13 @@ Boards
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_g0b1re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G0B1RET6
+      - 64MHz
+      - 256KB
+      - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -2785,6 +2820,13 @@ Boards
       - 400MHz
       - 2MB
       - 864KB
+    * - :ref:`board_ststm32_nucleo_l010rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L010RBT6
+      - 32MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -2897,6 +2939,13 @@ Boards
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_u575zi_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32U575ZIT6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - :ref:`platform_ststm32`
       - On-board
@@ -3499,6 +3548,13 @@ Boards
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h735ig`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H735IGK6U
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - On-board
@@ -3506,6 +3562,13 @@ Boards
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_storm32_v1_31_rc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - External

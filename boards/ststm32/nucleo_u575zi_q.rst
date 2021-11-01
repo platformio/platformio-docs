@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_wl55jc:
+.. _board_ststm32_nucleo_u575zi_q:
 
-ST Nucleo WL55JC
-================
+ST Nucleo U575ZI-Q
+==================
 
 .. contents::
 
@@ -24,50 +24,51 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32WL55JC
+    - STM32U575ZIT6Q
   * - **Frequency**
-    - 48MHz
+    - 160MHz
   * - **Flash**
-    - 256KB
+    - 2MB
   * - **RAM**
-    - 64KB
+    - 256KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-wl55jc.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-u575zi-q.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_wl55jc`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_u575zi_q`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_wl55jc]
+  [env:nucleo_u575zi_q]
   platform = ststm32
-  board = nucleo_wl55jc
+  board = nucleo_u575zi_q
 
-You can override default ST Nucleo WL55JC settings per build environment using
+You can override default ST Nucleo U575ZI-Q settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_wl55jc.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_wl55jc.json>`_. For example,
+board manifest `nucleo_u575zi_q.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_u575zi_q.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_wl55jc]
+  [env:nucleo_u575zi_q]
   platform = ststm32
-  board = nucleo_wl55jc
+  board = nucleo_u575zi_q
 
   ; change microcontroller
-  board_build.mcu = stm32wl55jc
+  board_build.mcu = stm32u575zit6q
 
   ; change MCU frequency
-  board_build.f_cpu = 48000000L
+  board_build.f_cpu = 160000000L
 
 
 Uploading
 ---------
-ST Nucleo WL55JC supports the following uploading protocols:
+ST Nucleo U575ZI-Q supports the following uploading protocols:
 
+* ``blackmagic``
 * ``cmsis-dap``
 * ``jlink``
 * ``mbed``
@@ -79,9 +80,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_wl55jc]
+  [env:nucleo_u575zi_q]
   platform = ststm32
-  board = nucleo_wl55jc
+  board = nucleo_u575zi_q
 
   upload_protocol = stlink
 
@@ -98,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo WL55JC has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ST Nucleo U575ZI-Q has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -106,6 +107,9 @@ ST Nucleo WL55JC has on-board debug probe and **IS READY** for debugging. You do
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
@@ -126,6 +130,3 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
-
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
