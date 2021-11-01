@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TinyPICO &mdash; PlatformIO latest documentation</title>
+  <title>Unexpected Maker TinyPICO &mdash; PlatformIO latest documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -23,8 +23,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Turta IoT Node" href="turta_iot_node.html" />
-    <link rel="prev" title="TTGO T7 V1.4 Mini32" href="ttgo-t7-v14-mini32.html" />
+    <link rel="next" title="VintLabs ESP32 Devkit" href="vintlabs-devkit-v1.html" />
+    <link rel="prev" title="Turta IoT Node" href="turta_iot_node.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
 <script src="../../_static/js/bootstrap.min.js"></script>
@@ -167,7 +167,8 @@
 <li class="toctree-l3"><a class="reference internal" href="ttgo-t1.html">TTGO T1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ttgo-t7-v13-mini32.html">TTGO T7 V1.3 Mini32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ttgo-t7-v14-mini32.html">TTGO T7 V1.4 Mini32</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">TinyPICO</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="turta_iot_node.html">Turta IoT Node</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Unexpected Maker TinyPICO</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#hardware">Hardware</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#uploading">Uploading</a></li>
@@ -175,7 +176,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#frameworks">Frameworks</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="turta_iot_node.html">Turta IoT Node</a></li>
 <li class="toctree-l3"><a class="reference internal" href="vintlabs-devkit-v1.html">VintLabs ESP32 Devkit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lolin_d32.html">WEMOS LOLIN D32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lolin_d32_pro.html">WEMOS LOLIN D32 PRO</a></li>
@@ -264,7 +264,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Boards</a> &raquo;</li>
-      <li>TinyPICO</li>
+      <li>Unexpected Maker TinyPICO</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/boards/espressif32/tinypico.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -274,12 +274,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="tinypico">
-<span id="board-espressif32-tinypico"></span><h1><a class="toc-backref" href="#id1">TinyPICO</a><a class="headerlink" href="#tinypico" title="Permalink to this headline">¶</a></h1>
+  <section id="unexpected-maker-tinypico">
+<span id="board-espressif32-tinypico"></span><h1><a class="toc-backref" href="#id1">Unexpected Maker TinyPICO</a><a class="headerlink" href="#unexpected-maker-tinypico" title="Permalink to this headline">¶</a></h1>
 <div class="contents topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#tinypico" id="id1">TinyPICO</a></p>
+<li><p><a class="reference internal" href="#unexpected-maker-tinypico" id="id1">Unexpected Maker TinyPICO</a></p>
 <ul>
 <li><p><a class="reference internal" href="#hardware" id="id2">Hardware</a></p></li>
 <li><p><a class="reference internal" href="#configuration" id="id3">Configuration</a></p></li>
@@ -312,7 +312,7 @@
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Vendor</strong></p></td>
-<td><p><a class="reference external" href="https://www.tinypico.com?utm_source=platformio.org&amp;utm_medium=docs">TinyPICO</a></p></td>
+<td><p><a class="reference external" href="https://www.tinypico.com?utm_source=platformio.org&amp;utm_medium=docs">Unexpected Maker</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -325,7 +325,7 @@
 <span class="na">board</span> <span class="o">=</span> <span class="s">tinypico</span>
 </pre></div>
 </div>
-<p>You can override default TinyPICO settings per build environment using
+<p>You can override default Unexpected Maker TinyPICO settings per build environment using
 <code class="docutils literal notranslate"><span class="pre">board_***</span></code> option, where <code class="docutils literal notranslate"><span class="pre">***</span></code> is a JSON object path from
 board manifest <a class="reference external" href="https://github.com/platformio/platform-espressif32/blob/master/boards/tinypico.json">tinypico.json</a>. For example,
 <code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code>, <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code>, etc.</p>
@@ -343,7 +343,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </section>
 <section id="uploading">
 <h2><a class="toc-backref" href="#id4">Uploading</a><a class="headerlink" href="#uploading" title="Permalink to this headline">¶</a></h2>
-<p>TinyPICO supports the following uploading protocols:</p>
+<p>Unexpected Maker TinyPICO supports the following uploading protocols:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">espota</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">esptool</span></code></p></li>
@@ -360,7 +360,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </section>
 <section id="debugging">
 <h2><a class="toc-backref" href="#id5">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> currently does not support TinyPICO board.</p>
+<p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> currently does not support Unexpected Maker TinyPICO board.</p>
 </section>
 <section id="frameworks">
 <h2><a class="toc-backref" href="#id6">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
@@ -390,8 +390,8 @@ board manifest <a class="reference external" href="https://github.com/platformio
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ttgo-t7-v14-mini32.html" class="btn btn-neutral float-left" title="TTGO T7 V1.4 Mini32" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="turta_iot_node.html" class="btn btn-neutral float-right" title="Turta IoT Node" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="turta_iot_node.html" class="btn btn-neutral float-left" title="Turta IoT Node" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="vintlabs-devkit-v1.html" class="btn btn-neutral float-right" title="VintLabs ESP32 Devkit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

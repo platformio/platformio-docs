@@ -1734,27 +1734,6 @@ ThaiEasyElec
       - 4MB
       - 320KB
 
-TinyPICO
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_espressif32_tinypico`
-      - :ref:`platform_espressif32`
-      - No
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-
 Turta
 ~~~~~
 
@@ -1769,6 +1748,27 @@ Turta
       - Flash
       - RAM
     * - :ref:`board_espressif32_turta_iot_node`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Unexpected Maker
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_tinypico`
       - :ref:`platform_espressif32`
       - No
       - ESP32

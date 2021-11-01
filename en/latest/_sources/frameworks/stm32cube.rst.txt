@@ -425,6 +425,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_g0b1re`
+      - :ref:`platform_ststm32`
+      - STM32G0B1RET6
+      - 64MHz
+      - 256KB
+      - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
       - STM32H723ZGT6
@@ -449,6 +455,12 @@ You do not need to use/buy external debug probe.
       - 400MHz
       - 2MB
       - 864KB
+    * - :ref:`board_ststm32_nucleo_l010rb`
+      - :ref:`platform_ststm32`
+      - STM32L010RBT6
+      - 32MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - STM32L011K4T6
@@ -611,6 +623,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h735ig`
+      - :ref:`platform_ststm32`
+      - STM32H735IGK6U
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -780,6 +798,12 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_bw_swan_r5`
+      - :ref:`platform_ststm32`
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_cicada_l082cz`
       - :ref:`platform_ststm32`
       - STM32L082CZY6
@@ -1470,6 +1494,12 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_storm32_v1_31_rc`
+      - :ref:`platform_ststm32`
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - :ref:`platform_ststm32`
       - STM32L4R9ZI
@@ -1794,6 +1824,27 @@ Avnet Silica
       - 80MHz
       - 1MB
       - 128KB
+
+BluesWireless
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_bw_swan_r5`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
 
 Diymore
 ~~~~~~~
@@ -3334,6 +3385,13 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_g0b1re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G0B1RET6
+      - 64MHz
+      - 256KB
+      - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -3362,6 +3420,13 @@ ST
       - 400MHz
       - 2MB
       - 864KB
+    * - :ref:`board_ststm32_nucleo_l010rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L010RBT6
+      - 32MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -3579,6 +3644,13 @@ ST
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h735ig`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H735IGK6U
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - On-board
@@ -3593,6 +3665,27 @@ ST
       - 120MHz
       - 2MB
       - 640KB
+
+STorM32
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_storm32_v1_31_rc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
 
 SeeedStudio
 ~~~~~~~~~~~

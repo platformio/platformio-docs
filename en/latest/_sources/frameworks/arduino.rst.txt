@@ -491,6 +491,12 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 30KB
       - 2KB
+    * - :ref:`board_nordicnrf52_nicla_sense_me`
+      - :ref:`platform_nordicnrf52`
+      - NRF52832
+      - 64MHz
+      - 515.25KB
+      - 62.78KB
     * - :ref:`board_atmelavr_pro8MHzatmega168`
       - :ref:`platform_atmelavr`
       - ATMEGA168
@@ -1019,6 +1025,12 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 96KB
+    * - :ref:`board_ststm32_disco_b_u585i_iot02a`
+      - :ref:`platform_ststm32`
+      - STM32U585AII6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - :ref:`platform_ststm32`
       - STM32L072CZ
@@ -1049,6 +1061,12 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 32KB
       - 4KB
+    * - :ref:`board_ststm32_nucleo_f042k6`
+      - :ref:`platform_ststm32`
+      - STM32F042K6T6
+      - 48MHz
+      - 32KB
+      - 6KB
     * - :ref:`board_ststm32_nucleo_f072rb`
       - :ref:`platform_ststm32`
       - STM32F072RBT6
@@ -1133,12 +1151,24 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_g0b1re`
+      - :ref:`platform_ststm32`
+      - STM32G0B1RET6
+      - 64MHz
+      - 256KB
+      - 144KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - STM32H743ZIT6
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_l010rb`
+      - :ref:`platform_ststm32`
+      - STM32L010RBT6
+      - 32MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_nucleo_l031k6`
       - :ref:`platform_ststm32`
       - STM32L031K6T6
@@ -1217,6 +1247,18 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_u575zi_q`
+      - :ref:`platform_ststm32`
+      - STM32U575ZIT6Q
+      - 160MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_ststm32_nucleo_wl55jc`
+      - :ref:`platform_ststm32`
+      - STM32WL55JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - STM32F030R8T6
@@ -1788,6 +1830,12 @@ Please click on board name for the further details.
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_ledglasses_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 232KB
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
       - :ref:`platform_atmelsam`
       - SAMD51G19A
@@ -2088,6 +2136,12 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_bw_swan_r5`
+      - :ref:`platform_ststm32`
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_nordicnrf52_bluey`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -3048,6 +3102,12 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_storm32_v1_31_rc`
+      - :ref:`platform_ststm32`
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
     * - :ref:`board_atmelsam_sainSmartDue`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -3851,6 +3911,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_ledglasses_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 232KB
     * - :ref:`board_atmelsam_adafruit_monster_m4sk`
       - :ref:`platform_atmelsam`
       - External
@@ -4544,6 +4611,13 @@ Arduino
       - 133MHz
       - 2MB
       - 264KB
+    * - :ref:`board_nordicnrf52_nicla_sense_me`
+      - :ref:`platform_nordicnrf52`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 515.25KB
+      - 62.78KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -5041,6 +5115,27 @@ Blinker
       - 240MHz
       - 4MB
       - 320KB
+
+BluesWireless
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_bw_swan_r5`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
 
 BluzDK
 ~~~~~~
@@ -9437,6 +9532,13 @@ ST
       - 80MHz
       - 1MB
       - 96KB
+    * - :ref:`board_ststm32_disco_b_u585i_iot02a`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32U585AII6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - :ref:`platform_ststm32`
       - On-board
@@ -9472,6 +9574,13 @@ ST
       - 48MHz
       - 32KB
       - 4KB
+    * - :ref:`board_ststm32_nucleo_f042k6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F042K6T6
+      - 48MHz
+      - 32KB
+      - 6KB
     * - :ref:`board_ststm32_nucleo_f072rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -9570,6 +9679,13 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_g0b1re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G0B1RET6
+      - 64MHz
+      - 256KB
+      - 144KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -9577,6 +9693,13 @@ ST
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_l010rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L010RBT6
+      - 32MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_nucleo_l031k6`
       - :ref:`platform_ststm32`
       - On-board
@@ -9668,6 +9791,20 @@ ST
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_u575zi_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32U575ZIT6Q
+      - 160MHz
+      - 2MB
+      - 256KB
+    * - :ref:`board_ststm32_nucleo_wl55jc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32WL55JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -9745,6 +9882,27 @@ ST
       - 120MHz
       - 2MB
       - 640KB
+
+STorM32
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_storm32_v1_31_rc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
 
 SainSmart
 ~~~~~~~~~
@@ -10761,27 +10919,6 @@ TinyCircuits
       - 30KB
       - 2KB
 
-TinyPICO
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_espressif32_tinypico`
-      - :ref:`platform_espressif32`
-      - No
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-
 Tlera Corporation
 ~~~~~~~~~~~~~~~~~
 
@@ -10872,6 +11009,27 @@ UBW32
       - 80MHz
       - 508KB
       - 128KB
+
+Unexpected Maker
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_tinypico`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Unknown
 ~~~~~~~
