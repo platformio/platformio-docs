@@ -231,11 +231,18 @@ install them manually. Please visit an official filter's documentation on how to
 Custom Filters
 ~~~~~~~~~~~~~~
 
-:ref:`piocore` provides an API to extend device monitor with custom filters declared
-in :ref:`projectconf_pio_monitor_dir` or in "monitor" folder of :ref:`platforms`.
+:ref:`piocore` provides an API to extend device monitor with custom filters.
 Each filter is a Python-based file and its name should have the ``filter_`` prefix.
 In a Python code, you need to extend ``DeviceMonitorFilter`` class to get access to
-the ``rx()`` and ``tx()`` methods/callbacks. See the base API below:
+the ``rx()`` and ``tx()`` methods/callbacks.
+
+:ref:`piocore` looks for the custom filters in the next locations:
+
+- Project :ref:`projectconf_pio_monitor_dir`
+- :ref:`projectconf_pio_platforms_dir`/<platform>/monitor
+- :ref:`projectconf_pio_packages_dir`/<package>/monitor
+
+See the base API below:
 
 **filter_demo.py**
 
