@@ -26,7 +26,7 @@ in :ref:`projectconf`. Multiple items are allowed, split them with ``,`` or
 with a new line.
 
 If you need to extend only a few options from some section, please take a look at
-:ref:`projectconf_dynamic_vars`.
+:ref:`projectconf_interpolation`.
 
 Example:
 

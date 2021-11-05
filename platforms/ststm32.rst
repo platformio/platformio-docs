@@ -268,6 +268,11 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 96KB
+    * - :ref:`board_ststm32_disco_b_u585i_iot02a`
+      - STM32U585AII6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - STM32L072CZ
       - 32MHz
@@ -413,6 +418,11 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_g0b1re`
+      - STM32G0B1RET6
+      - 64MHz
+      - 256KB
+      - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - STM32H723ZGT6
       - 550MHz
@@ -433,6 +443,11 @@ You do not need to use/buy external debug probe.
       - 400MHz
       - 2MB
       - 864KB
+    * - :ref:`board_ststm32_nucleo_l010rb`
+      - STM32L010RBT6
+      - 32MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - STM32L011K4T6
       - 32MHz
@@ -513,6 +528,11 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_u575zi_q`
+      - STM32U575ZIT6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - STM32WL55JC
       - 48MHz
@@ -573,6 +593,11 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h735ig`
+      - STM32H735IGK6U
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_disco_h747xi`
       - STM32H747XIH6
       - 400MHz
@@ -726,6 +751,11 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_bw_swan_r5`
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_cicada_l082cz`
       - STM32L082CZY6
       - 32MHz
@@ -1306,6 +1336,11 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_storm32_v1_31_rc`
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - STM32L4R9ZI
       - 120MHz
@@ -1538,7 +1573,7 @@ Packages
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
     * - `tool-dfuutil <http://dfu-util.sourceforge.net/?utm_source=platformio.org&utm_medium=docs>`__
       - Device Firmware Upgrade Utilities
@@ -1825,6 +1860,25 @@ Avnet Silica
       - 80MHz
       - 1MB
       - 128KB
+
+BluesWireless
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_bw_swan_r5`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
 
 Diymore
 ~~~~~~~
@@ -3020,6 +3074,12 @@ ST
       - 80MHz
       - 1MB
       - 96KB
+    * - :ref:`board_ststm32_disco_b_u585i_iot02a`
+      - On-board
+      - STM32U585AII6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_disco_l072cz_lrwan1`
       - On-board
       - STM32L072CZ
@@ -3194,6 +3254,12 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_g0b1re`
+      - On-board
+      - STM32G0B1RET6
+      - 64MHz
+      - 256KB
+      - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - On-board
       - STM32H723ZGT6
@@ -3218,6 +3284,12 @@ ST
       - 400MHz
       - 2MB
       - 864KB
+    * - :ref:`board_ststm32_nucleo_l010rb`
+      - On-board
+      - STM32L010RBT6
+      - 32MHz
+      - 128KB
+      - 20KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - On-board
       - STM32L011K4T6
@@ -3314,6 +3386,12 @@ ST
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_u575zi_q`
+      - On-board
+      - STM32U575ZIT6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - On-board
       - STM32WL55JC
@@ -3410,6 +3488,12 @@ ST
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_disco_h735ig`
+      - On-board
+      - STM32H735IGK6U
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_disco_h747xi`
       - On-board
       - STM32H747XIH6
@@ -3422,6 +3506,25 @@ ST
       - 120MHz
       - 2MB
       - 640KB
+
+STorM32
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_storm32_v1_31_rc`
+      - External
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
 
 SeeedStudio
 ~~~~~~~~~~~

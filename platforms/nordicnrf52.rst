@@ -83,6 +83,11 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_nicla_sense_me`
+      - NRF52832
+      - 64MHz
+      - 515.25KB
+      - 62.78KB
     * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
       - NRF52833
       - 64MHz
@@ -231,6 +236,11 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_ledglasses_nrf52840`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 232KB
     * - :ref:`board_nordicnrf52_nano33ble`
       - NRF52840
       - 64MHz
@@ -379,7 +389,7 @@ Packages
       - Basic Open Source SAM-BA Application (BOSSA) for Nordic nRF52 microcontrollers
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
     * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
       - Device tree compiler
@@ -500,6 +510,12 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_nordicnrf52_adafruit_ledglasses_nrf52840`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 232KB
     * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
       - External
       - NRF52840
@@ -537,6 +553,12 @@ Arduino
       - 64MHz
       - 960KB
       - 256KB
+    * - :ref:`board_nordicnrf52_nicla_sense_me`
+      - On-board
+      - NRF52832
+      - 64MHz
+      - 515.25KB
+      - 62.78KB
 
 BBC
 ~~~

@@ -9,24 +9,43 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _projectconf_dynamic_vars:
+.. _projectconf_interpolation:
 
-Dynamic variables
------------------
+Interpolation of Values
+-----------------------
 
-Dynamic variables (interpolations) are useful when you have a custom
-configuration data between build environments. For examples, extra
-:ref:`projectconf_build_flags` or project dependencies :ref:`projectconf_lib_deps`.
+On top of the core functionality, PlatformIO supports interpolation. It enables values
+to contain format strings which refer to other values from foreign sections.
 
-Each variable should have a next format: ``${<section>.<option>}``, where
+Interpolation has the next syntax – ``${<section>.<option>}``, where
 ``<section>`` is a value from ``[<section>]`` group, and ``<option>`` is a
 first item from pair ``<option> = value``.
 
-You can inject system environment variable using ``sysenv`` as a ``section``.
-For example, ``${sysenv.HOME}``.
+.. list-table::
+    :header-rows:  1
 
-* Variable can be applied only for the option's value
-* Multiple variables are allowed
+    * - Syntax
+      - Meaning
+
+    * - ``${sysenv.<name>}``
+      - Embed system environment variable by a name. For example,
+        ``${sysenv.HOME}`` refers to user home directory on Unix machine
+
+    * - ``${platformio.<option>}``
+      - Embed value from :ref:`projectconf_section_platformio`. For example,
+        ``${platformio.packages_dir}`` refers to a path of :ref:`projectconf_pio_packages_dir`
+
+    * - ``${env.<option>}``
+      - Embed default value from :ref:`projectconf_section_env`. For example,
+        ``${env.debug_build_flags}`` refers to the default debugging flags.
+
+    * - ``${<section>.<option>}``
+      - Embed value from another section. For example, ``${extra.lib_deps}`` embeds
+        library dependencies declared in the section named ``extra``.
+
+* Interpolation can span multiple levels
+* Interpolation can be applied only for the option's value
+* Multiple interpolations are allowed
 * The :ref:`projectconf_section_platformio` and :ref:`projectconf_section_env`
   sections are reserved and could not be used as a custom section. Some good
   section names might be ``extra`` or ``custom``.
@@ -37,14 +56,20 @@ For example, ``${sysenv.HOME}``.
     :ref:`projectconf_section_env` or :ref:`projectconf_env_extends` option which
     allows extending of other sections.
 
-Example:
+**Example:**
 
 .. code-block:: ini
 
-    ; You MUST inject these options into [env:] section
-    ; using ${extra.***} (see below)
+    ; COMMON options
+    ; Each "[env:***]" extends this "[env]" by default
+    [env]
+    framework = arduino
+    build_flags = -D VERSION=1.2.3
+
+    ; CUSTOM options
+    ; You need manually inject these options into a section
+    ; using ${extra.<name_of_option>} (see below)
     [extra]
-    build_flags = -D VERSION=1.2.3 -D DEBUG=1
     lib_deps_builtin =
       SPI
       Wire
@@ -53,18 +78,15 @@ Example:
 
     [env:uno]
     platform = atmelavr
-    framework = arduino
     board = uno
-    build_flags = ${extra.build_flags}
     lib_deps =
       ${extra.lib_deps_builtin}
       ${extra.lib_deps_external}
 
     [env:nodemcuv2]
     platform = espressif8266
-    framework = arduino
     board = nodemcuv2
-    build_flags = ${extra.build_flags} -Wall
+    build_flags = ${env.build_flags} -Wall
     lib_deps =
       ${extra.lib_deps_builtin}
       ${extra.lib_deps_external}
@@ -86,6 +108,7 @@ Example:
     platform = espressif32
     board = esp32dev
     build_flags =
+      ${env.build_flags}
       -DWIFI_SSID=${sysenv.WIFI_SSID}
       -DWIFI_PASS=${sysenv.WIFI_PASS}
 

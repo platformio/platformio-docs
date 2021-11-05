@@ -503,6 +503,12 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f446ze`
+      - :ref:`platform_ststm32`
+      - STM32F446ZET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - STM32F746ZGT6
@@ -635,6 +641,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 128KB
       - 36KB
+    * - :ref:`board_ststm32_disco_h735ig`
+      - :ref:`platform_ststm32`
+      - STM32H735IGK6U
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -653,6 +665,12 @@ You do not need to use/buy external debug probe.
       - 320MHz
       - 16MB
       - 16KB
+    * - :ref:`board_siliconlabsefm32_tb_sense_12`
+      - :ref:`platform_siliconlabsefm32`
+      - EFR32MG12P432F1024
+      - 40MHz
+      - 1MB
+      - 256KB
     * - :ref:`board_nordicnrf51_vbluno51`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -744,6 +762,12 @@ Please click on board name for the further details.
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_ledglasses_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 232KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
       - SAMD21E18A
@@ -1089,6 +1113,13 @@ Adafruit
       - 120MHz
       - 512KB
       - 192KB
+    * - :ref:`board_nordicnrf52_adafruit_ledglasses_nrf52840`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52840
+      - 64MHz
+      - 796KB
+      - 232KB
     * - :ref:`board_atmelsam_adafruit_trinket_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -2006,6 +2037,13 @@ ST
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f446ze`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F446ZET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -2188,6 +2226,13 @@ ST
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_disco_h735ig`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H735IGK6U
+      - 550MHz
+      - 1MB
+      - 432KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2272,6 +2317,13 @@ Silicon Labs
       - 25MHz
       - 64KB
       - 8KB
+    * - :ref:`board_siliconlabsefm32_tb_sense_12`
+      - :ref:`platform_siliconlabsefm32`
+      - On-board
+      - EFR32MG12P432F1024
+      - 40MHz
+      - 1MB
+      - 256KB
 
 SparkFun
 ~~~~~~~~

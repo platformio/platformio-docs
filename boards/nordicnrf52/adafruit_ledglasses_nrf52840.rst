@@ -9,81 +9,83 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_wl55jc:
+.. _board_nordicnrf52_adafruit_ledglasses_nrf52840:
 
-ST Nucleo WL55JC
-================
+Adafruit LED Glasses Driver nRF52840
+====================================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
 
 .. list-table::
 
   * - **Microcontroller**
-    - STM32WL55JC
+    - NRF52840
   * - **Frequency**
-    - 48MHz
+    - 64MHz
   * - **Flash**
-    - 256KB
+    - 796KB
   * - **RAM**
-    - 64KB
+    - 232KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-wl55jc.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Adafruit <https://www.adafruit.com/product/5217?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_wl55jc`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``adafruit_ledglasses_nrf52840`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_wl55jc]
-  platform = ststm32
-  board = nucleo_wl55jc
+  [env:adafruit_ledglasses_nrf52840]
+  platform = nordicnrf52
+  board = adafruit_ledglasses_nrf52840
 
-You can override default ST Nucleo WL55JC settings per build environment using
+You can override default Adafruit LED Glasses Driver nRF52840 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_wl55jc.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_wl55jc.json>`_. For example,
+board manifest `adafruit_ledglasses_nrf52840.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/adafruit_ledglasses_nrf52840.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_wl55jc]
-  platform = ststm32
-  board = nucleo_wl55jc
+  [env:adafruit_ledglasses_nrf52840]
+  platform = nordicnrf52
+  board = adafruit_ledglasses_nrf52840
 
   ; change microcontroller
-  board_build.mcu = stm32wl55jc
+  board_build.mcu = nrf52840
 
   ; change MCU frequency
-  board_build.f_cpu = 48000000L
+  board_build.f_cpu = 64000000L
 
 
 Uploading
 ---------
-ST Nucleo WL55JC supports the following uploading protocols:
+Adafruit LED Glasses Driver nRF52840 supports the following uploading protocols:
 
+* ``blackmagic``
 * ``cmsis-dap``
 * ``jlink``
-* ``mbed``
+* ``nrfjprog``
+* ``nrfutil``
 * ``stlink``
 
-Default protocol is ``stlink``
+Default protocol is ``nrfutil``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_wl55jc]
-  platform = ststm32
-  board = nucleo_wl55jc
+  [env:adafruit_ledglasses_nrf52840]
+  platform = nordicnrf52
+  board = adafruit_ledglasses_nrf52840
 
-  upload_protocol = stlink
+  upload_protocol = nrfutil
 
 Debugging
 ---------
@@ -98,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo WL55JC has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Adafruit LED Glasses Driver nRF52840 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -106,6 +108,9 @@ ST Nucleo WL55JC has on-board debug probe and **IS READY** for debugging. You do
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_blackmagic`
+    - 
+    - Yes
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
@@ -113,8 +118,8 @@ ST Nucleo WL55JC has on-board debug probe and **IS READY** for debugging. You do
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------

@@ -129,8 +129,8 @@ Packages
     * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode?utm_source=platformio.org&utm_medium=docs>`__
-      - canopennode Zephyr module
+    * - `framework-zephyr-canopennode <https://github.com/zephyrproject-rtos/canopennode.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr module for CANopenNode - a free and open source CANopen Stack
 
     * - `framework-zephyr-civetweb <https://github.com/zephyrproject-rtos/civetweb.git?utm_source=platformio.org&utm_medium=docs>`__
       - Zephyr module for CivetWeb Embedded C/C++ web server
@@ -184,7 +184,7 @@ Packages
       - Zephyr module for Trusted Firmware M - a reference implementation of secure world software for ARMv8-M
 
     * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
     * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
       - Device tree compiler

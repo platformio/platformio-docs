@@ -40,8 +40,8 @@ sections and their allowed contents:
 
     section_platformio
     section_env
+    interpolation
     build_configurations
-    dynamic_variables
     examples
 
 **Example**
@@ -53,9 +53,8 @@ For more examples, see :ref:`projectconf_examples`.
     [platformio]
     default_envs = nodemcuv2
 
-    ; You MUST inject these options into [env:] section
-    ; using ${common_env_data.***} (see below)
-    [common_env_data]
+    ; Set/override default options for each "[env:***]"
+    [env]
     build_flags =
         -D VERSION=1.2.3
         -D DEBUG=1
@@ -74,14 +73,14 @@ For more examples, see :ref:`projectconf_examples`.
 
     ; Build options
     build_flags =
-        ${common_env_data.build_flags}
+        ${env.build_flags}
         -DSSID_NAME=HELLO
         -DSSID_PASWORD=WORLD
 
     ; Library options
     lib_deps =
-        ${common_env_data.lib_deps_builtin}
-        ${common_env_data.lib_deps_external}
+        ${env.lib_deps_builtin}
+        ${env.lib_deps_external}
         https://github.com/me-no-dev/ESPAsyncTCP.git
         PubSubClient@2.6
         OneWire
@@ -100,17 +99,13 @@ For more examples, see :ref:`projectconf_examples`.
     framework = arduino
     board = bluepill_f103c8
 
-    ; Build options
-    build_flags = ${common_env_data.build_flags}
-
     ; Library options
-    lib_deps =
-        ${common_env_data.lib_deps_external}
+    lib_deps = ${env.lib_deps_external}
 
     ; Debug options
     debug_tool = custom
     debug_server =
-        JLinkGDBServer
+        ${platformio.packages_dir}/tool-jlink/JLinkGDBServer
         -singlerun
         -if
         SWD
