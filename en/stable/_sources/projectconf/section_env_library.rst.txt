@@ -34,7 +34,7 @@ Specify project dependencies that should be installed automatically to
 :ref:`projectconf_pio_libdeps_dir` before environment processing.
 
 If you have multiple build environments that depend on the same libraries,
-you can use :ref:`projectconf_dynamic_vars` to use common configuration.
+you can use :ref:`projectconf_interpolation` to use common configuration.
 
 **Valid forms**
 
@@ -101,7 +101,7 @@ between ``<`` and ``>`` symbols.
 .. code::
 
     ...
-    Library Dependency Finder -> http://bit.ly/configure-pio-ldf
+    Library Dependency Finder -> https://bit.ly/configure-pio-ldf
     LDF MODES: FINDER(chain+) COMPATIBILITY(soft)
     Collected 54 compatible libraries
     Scanning dependencies...

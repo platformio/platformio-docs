@@ -1361,6 +1361,12 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_storm32_v1_31_rc`
+      - :ref:`platform_ststm32`
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - :ref:`platform_ststm32`
       - STM32L4R9ZI
@@ -3337,6 +3343,27 @@ ST
       - 120MHz
       - 2MB
       - 640KB
+
+STorM32
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_storm32_v1_31_rc`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103RCT6
+      - 72MHz
+      - 256KB
+      - 48KB
 
 SeeedStudio
 ~~~~~~~~~~~

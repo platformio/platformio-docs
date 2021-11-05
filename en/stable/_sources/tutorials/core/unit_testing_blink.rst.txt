@@ -145,7 +145,7 @@ Test results
     Verbose mode can be enabled via `-v, --verbose` option
     PLATFORM: Atmel AVR > Arduino Uno
     SYSTEM: ATMEGA328P 16MHz 2KB RAM (31.50KB Flash)
-    Library Dependency Finder -> http://bit.ly/configure-pio-ldf
+    Library Dependency Finder -> https://bit.ly/configure-pio-ldf
     LDF MODES: FINDER(chain) COMPATIBILITY(soft)
     Collected 24 compatible libraries
     Scanning dependencies...
@@ -187,7 +187,7 @@ Test results
     Linking .pio\build\uno\firmware.elf
     Checking size .pio\build\uno\firmware.elf
     Building .pio\build\uno\firmware.hex
-    Memory Usage -> http://bit.ly/pio-memory-usage
+    Memory Usage -> https://bit.ly/pio-memory-usage
     DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
     PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
 
@@ -202,13 +202,13 @@ Test results
     Verbose mode can be enabled via `-v, --verbose` option
     PLATFORM: Atmel AVR > Arduino Uno
     SYSTEM: ATMEGA328P 16MHz 2KB RAM (31.50KB Flash)
-    Library Dependency Finder -> http://bit.ly/configure-pio-ldf
+    Library Dependency Finder -> https://bit.ly/configure-pio-ldf
     LDF MODES: FINDER(chain) COMPATIBILITY(soft)
     Collected 24 compatible libraries
     Scanning dependencies...
     No dependencies
     Checking size .pio\build\uno\firmware.elf
-    Memory Usage -> http://bit.ly/pio-memory-usage
+    Memory Usage -> https://bit.ly/pio-memory-usage
     DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
     PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
     Configuring upload protocol...

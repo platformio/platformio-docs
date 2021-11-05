@@ -300,6 +300,12 @@ The possible values are <code class="docutils literal notranslate"><span class="
 
 <p>Allows one to override <a class="reference internal" href="projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> option <a class="reference internal" href="projectconf/section_platformio.html#projectconf-pio-boards-dir"><span class="std std-ref">boards_dir</span></a>.</p>
 <dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-PLATFORMIO_MONITOR_DIR">
+<span class="sig-name descname"><span class="pre">PLATFORMIO_MONITOR_DIR</span></span><a class="headerlink" href="#envvar-PLATFORMIO_MONITOR_DIR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Allows one to override <a class="reference internal" href="projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> option <a class="reference internal" href="projectconf/section_platformio.html#projectconf-pio-monitor-dir"><span class="std std-ref">monitor_dir</span></a>.</p>
+<dl class="std envvar">
 <dt class="sig sig-object std" id="envvar-PLATFORMIO_SHARED_DIR">
 <span class="sig-name descname"><span class="pre">PLATFORMIO_SHARED_DIR</span></span><a class="headerlink" href="#envvar-PLATFORMIO_SHARED_DIR" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -338,7 +344,7 @@ SET <span class="nv">PLATFORMIO_BUILD_FLAGS</span><span class="o">=</span>-DFOO 
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Consider using <a class="reference internal" href="projectconf/dynamic_variables.html#projectconf-dynamic-vars"><span class="std std-ref">Dynamic variables</span></a> instead of <code class="docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_FLAGS</span></code>
+<p>Consider using <a class="reference internal" href="projectconf/interpolation.html#projectconf-interpolation"><span class="std std-ref">Interpolation of Values</span></a> instead of <code class="docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_FLAGS</span></code>
 environment variable if additional build flags contain preprocessor directive with
 special characters (<code class="docutils literal notranslate"><span class="pre">$</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">~</span></code>, etc) in its value.</p>
 </div>
@@ -585,7 +591,7 @@ special characters (<code class="docutils literal notranslate"><span class="pre"
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.2 (stable)
+    v5.2.3 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -504,8 +504,8 @@ Espressif 32
     espressif32/ttgo-t1
     espressif32/ttgo-t7-v13-mini32
     espressif32/ttgo-t7-v14-mini32
-    espressif32/tinypico
     espressif32/turta_iot_node
+    espressif32/tinypico
     espressif32/vintlabs-devkit-v1
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
@@ -783,7 +783,9 @@ Nordic nRF52
     nordicnrf52/adafruit_clue_nrf52840
     nordicnrf52/adafruit_feather_nrf52840_sense
     nordicnrf52/adafruit_feather_nrf52840
+    nordicnrf52/adafruit_ledglasses_nrf52840
     nordicnrf52/nano33ble
+    nordicnrf52/nicla_sense_me
     nordicnrf52/bbcmicrobit_v2
     nordicnrf52/laird_bl652_dvk
     nordicnrf52/laird_bl653_dvk
@@ -986,6 +988,7 @@ ST STM32
     ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
     ststm32/bluepill_f103c8_128k
+    ststm32/bw_swan_r5
     ststm32/cicada_l082cz
     ststm32/coreboard_f401rc
     ststm32/cricket_l082cz
@@ -1052,6 +1055,7 @@ ST STM32
     ststm32/disco_l496ag
     ststm32/disco_b_g431b_esc1
     ststm32/disco_l475vg_iot01a
+    ststm32/disco_b_u585i_iot02a
     ststm32/disco_l072cz_lrwan1
     ststm32/disco_f072rb
     ststm32/nucleo_g031k8
@@ -1081,10 +1085,12 @@ ST STM32
     ststm32/nucleo_f746zg
     ststm32/nucleo_f756zg
     ststm32/nucleo_f767zi
+    ststm32/nucleo_g0b1re
     ststm32/nucleo_h723zg
     ststm32/nucleo_h743zi
     ststm32/nucleo_h745zi_q
     ststm32/nucleo_h753zi
+    ststm32/nucleo_l010rb
     ststm32/nucleo_l011k4
     ststm32/nucleo_l031k6
     ststm32/nucleo_l053r8
@@ -1101,6 +1107,7 @@ ST STM32
     ststm32/nucleo_l496zg_p
     ststm32/nucleo_l4r5zi
     ststm32/nucleo_l552ze_q
+    ststm32/nucleo_u575zi_q
     ststm32/nucleo_wl55jc
     ststm32/disco_f030r8
     ststm32/disco_f051r8
@@ -1187,7 +1194,9 @@ ST STM32
     ststm32/genericSTM32F446RE
     ststm32/stm32f4stamp
     ststm32/disco_f750n8
+    ststm32/disco_h735ig
     ststm32/disco_h747xi
+    ststm32/storm32_v1_31_rc
     ststm32/seeedArchMax
     ststm32/wio_3g
     ststm32/steval_mksboxv1

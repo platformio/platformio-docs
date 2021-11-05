@@ -78,8 +78,8 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="interpolation.html">Interpolation of Values</a></li>
 <li class="toctree-l2"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamic_variables.html">Dynamic variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
 </li>
@@ -172,7 +172,7 @@
 <p>Specify project dependencies that should be installed automatically to
 <a class="reference internal" href="section_platformio.html#projectconf-pio-libdeps-dir"><span class="std std-ref">libdeps_dir</span></a> before environment processing.</p>
 <p>If you have multiple build environments that depend on the same libraries,
-you can use <a class="reference internal" href="dynamic_variables.html#projectconf-dynamic-vars"><span class="std std-ref">Dynamic variables</span></a> to use common configuration.</p>
+you can use <a class="reference internal" href="interpolation.html#projectconf-interpolation"><span class="std std-ref">Interpolation of Values</span></a> to use common configuration.</p>
 <p><strong>Valid forms</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; one line definition (comma + space)</span>
 <span class="k">[env:myenv]</span>
@@ -223,7 +223,7 @@ between <code class="docutils literal notranslate"><span class="pre">&lt;</span>
 <p><strong>Example:</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">output</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
-<span class="n">Library</span> <span class="n">Dependency</span> <span class="n">Finder</span> <span class="o">-&gt;</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">bit</span><span class="o">.</span><span class="n">ly</span><span class="o">/</span><span class="n">configure</span><span class="o">-</span><span class="n">pio</span><span class="o">-</span><span class="n">ldf</span>
+<span class="n">Library</span> <span class="n">Dependency</span> <span class="n">Finder</span> <span class="o">-&gt;</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">bit</span><span class="o">.</span><span class="n">ly</span><span class="o">/</span><span class="n">configure</span><span class="o">-</span><span class="n">pio</span><span class="o">-</span><span class="n">ldf</span>
 <span class="n">LDF</span> <span class="n">MODES</span><span class="p">:</span> <span class="n">FINDER</span><span class="p">(</span><span class="n">chain</span><span class="o">+</span><span class="p">)</span> <span class="n">COMPATIBILITY</span><span class="p">(</span><span class="n">soft</span><span class="p">)</span>
 <span class="n">Collected</span> <span class="mi">54</span> <span class="n">compatible</span> <span class="n">libraries</span>
 <span class="n">Scanning</span> <span class="n">dependencies</span><span class="o">...</span>
@@ -471,7 +471,7 @@ symbols defined in framework or other libraries.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.2 (stable)
+    v5.2.3 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

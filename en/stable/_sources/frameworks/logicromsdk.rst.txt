@@ -17,7 +17,7 @@ LOGICROM SDK
 :Configuration:
   :ref:`projectconf_env_framework` = ``logicromsdk``
 
-LOGICROM Software Development Kit for 4G LTE, GSM and NB-IoT Modules
+LOGICROM Software Development Kit is a unified framework for IoT development on 4G LTE (RDA8910), GSM (MT2503/MT6261) and NBIoT (MT2625) chipsets/modules.
 
 For more detailed information please visit `vendor site <https://github.com/waybyte/logicromsdk?utm_source=platformio.org&utm_medium=docs>`_.
 

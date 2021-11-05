@@ -78,8 +78,8 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="interpolation.html">Interpolation of Values</a></li>
 <li class="toctree-l2"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamic_variables.html">Dynamic variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
 </li>
@@ -341,7 +341,7 @@ with a debugging server that is compatible with “on-board” debugging tool
 <li><p>First line is an executable path of debugging server</p></li>
 <li><p>2-nd and the next lines are arguments for executable file</p></li>
 </ul>
-<p><strong>Example:</strong></p>
+<p><strong>Examples:</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
@@ -351,6 +351,15 @@ with a debugging server that is compatible with “on-board” debugging tool
   <span class="na">arg2</span>
   <span class="na">...</span>
   <span class="na">argN</span>
+
+<span class="k">[env:debug_openocd]</span>
+<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
+<span class="na">debug_server</span> <span class="o">=</span>
+    <span class="na">${platformio.packages_dir}/tool-openocd/openocd</span>
+    <span class="na">-f</span>
+    <span class="na">${platformio.packages_dir}/tool-openocd/scripts/board/stm32f103zet6_warship.cfg</span>
 </pre></div>
 </div>
 </section>
@@ -567,7 +576,7 @@ the <code class="docutils literal notranslate"><span class="pre">debug_test</spa
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.2 (stable)
+    v5.2.3 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
