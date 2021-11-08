@@ -252,6 +252,18 @@ a tool selected for performing check. Possible values described in
 <a class="reference internal" href="../../plus/pio-check.html#check-severity"><span class="std std-ref">Defect severity</span></a> section. Multiple <code class="docutils literal notranslate"><span class="pre">--fail-on-defect</span></code> options are allowed.</p>
 <p>Example: <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--fail-on-defect=low</span> <span class="pre">--fail-on-defect=medium</span></code></p>
 <dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-pio-check-skip-packages">
+<span class="sig-name descname"><span class="pre">--skip-packages</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-skip-packages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Exclude underlying third-party packages from the checking process. By default, PlatformIO
+passes frameworks and toolchains include paths required by internal analysis tools to
+properly analyze project sources. Some of the supported analysis tools use their own
+preprocessor which may fail to parse perfectly valid code and thus provide empty or
+partial check reports. This option is useful when developers have no control over this
+third-party code and want to perform analysis at least on project sources.</p>
+<p>Example: <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--skip-packages</span></code></p>
+<dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-check-s">
 <span id="cmdoption-pio-check-silent"></span><span class="sig-name descname"><span class="pre">-s</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--silent</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-check-s" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>

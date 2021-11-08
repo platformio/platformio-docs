@@ -111,6 +111,18 @@ a tool selected for performing check. Possible values described in
 Example: ``pio check --fail-on-defect=low --fail-on-defect=medium``
 
 .. option::
+    --skip-packages
+
+Exclude underlying third-party packages from the checking process. By default, PlatformIO
+passes frameworks and toolchains include paths required by internal analysis tools to
+properly analyze project sources. Some of the supported analysis tools use their own
+preprocessor which may fail to parse perfectly valid code and thus provide empty or
+partial check reports. This option is useful when developers have no control over this
+third-party code and want to perform analysis at least on project sources.
+
+Example: ``pio check --skip-packages``
+
+.. option::
     -s, --silent
 
 Suppress progress reporting and show only defects with ``high`` severity.
