@@ -38,7 +38,7 @@ option ``custom_config_header`` set in :ref:`projectconf`, for example:
     platform = ststm32
     framework = stm32cube
     board = nucleo_f401re
-    build.stm32cube.custom_config_header = yes
+    board_build.stm32cube.custom_config_header = yes
 
 Note that the location for the custom configuration header is not strictly limited as
 long as the path to this file is visible to the build system.
@@ -61,7 +61,7 @@ option, for example:
     platform = ststm32
     framework = stm32cube
     board = nucleo_f401re
-    build.stm32cube.custom_system_setup = yes
+    board_build.stm32cube.custom_system_setup = yes
 
 
 Selecting System File
@@ -83,7 +83,7 @@ in :ref:`projectconf`, for example:
     platform = ststm32
     framework = stm32cube
     board = disco_h747xi
-    build.stm32cube.system_file = system_stm32h7xx_dualcore_bootcm7_cm4gated.c
+    board_build.stm32cube.system_file = system_stm32h7xx_dualcore_bootcm7_cm4gated.c
 
 
 Custom Startup File
@@ -105,7 +105,7 @@ startup file, for example:
     platform = ststm32
     framework = stm32cube
     board = custom_board_name
-    build.stm32cube.startup_file = startup_stm32l152xca.s
+    board_build.stm32cube.startup_file = startup_stm32l152xca.s
 
 
 Disabling Bundled Components
@@ -125,7 +125,7 @@ If your project doesn't require this feature, it can be disabled via the
     platform = ststm32
     framework = stm32cube
     board = disco_f303vc
-    build.stm32cube.disable_embedded_libs = yes
+    board_build.stm32cube.disable_embedded_libs = yes
 
 
 Custom Build Variant
@@ -144,7 +144,7 @@ target-specific macros should be used when compiling BSP components, for example
     platform = ststm32
     framework = stm32cube
     board = nucleo_g474re
-    build.stm32cube.variant = STM32G4xx_Nucleo
+    board_build.stm32cube.variant = STM32G4xx_Nucleo
 
 Custom DSP Library
 ~~~~~~~~~~~~~~~~~~
@@ -163,7 +163,7 @@ framework, the ``custom_dsp_library`` can be used:
     platform = ststm32
     framework = stm32cube
     board = nucleo_f401re
-    build.stm32cube.custom_dsp_library = yes
+    board_build.stm32cube.custom_dsp_library = yes
 
 Using with STM32CubeMX
 ----------------------
