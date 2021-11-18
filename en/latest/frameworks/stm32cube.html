@@ -261,7 +261,7 @@ option <code class="docutils literal notranslate"><span class="pre">custom_confi
 <span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">build.stm32cube.custom_config_header</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">board_build.stm32cube.custom_config_header</span> <span class="o">=</span> <span class="s">yes</span>
 </pre></div>
 </div>
 <p>Note that the location for the custom configuration header is not strictly limited as
@@ -280,7 +280,7 @@ option, for example:</p>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">build.stm32cube.custom_system_setup</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">board_build.stm32cube.custom_system_setup</span> <span class="o">=</span> <span class="s">yes</span>
 </pre></div>
 </div>
 </section>
@@ -298,7 +298,7 @@ in <a class="reference internal" href="../projectconf/index.html#projectconf"><s
 <span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">disco_h747xi</span>
-<span class="na">build.stm32cube.system_file</span> <span class="o">=</span> <span class="s">system_stm32h7xx_dualcore_bootcm7_cm4gated.c</span>
+<span class="na">board_build.stm32cube.system_file</span> <span class="o">=</span> <span class="s">system_stm32h7xx_dualcore_bootcm7_cm4gated.c</span>
 </pre></div>
 </div>
 </section>
@@ -316,7 +316,7 @@ startup file, for example:</p>
 <span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">custom_board_name</span>
-<span class="na">build.stm32cube.startup_file</span> <span class="o">=</span> <span class="s">startup_stm32l152xca.s</span>
+<span class="na">board_build.stm32cube.startup_file</span> <span class="o">=</span> <span class="s">startup_stm32l152xca.s</span>
 </pre></div>
 </div>
 </section>
@@ -332,7 +332,7 @@ If your project doesn’t require this feature, it can be disabled via the
 <span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">disco_f303vc</span>
-<span class="na">build.stm32cube.disable_embedded_libs</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">board_build.stm32cube.disable_embedded_libs</span> <span class="o">=</span> <span class="s">yes</span>
 </pre></div>
 </div>
 </section>
@@ -347,7 +347,7 @@ target-specific macros should be used when compiling BSP components, for example
 <span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_g474re</span>
-<span class="na">build.stm32cube.variant</span> <span class="o">=</span> <span class="s">STM32G4xx_Nucleo</span>
+<span class="na">board_build.stm32cube.variant</span> <span class="o">=</span> <span class="s">STM32G4xx_Nucleo</span>
 </pre></div>
 </div>
 </section>
@@ -363,7 +363,7 @@ framework, the <code class="docutils literal notranslate"><span class="pre">cust
 <span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
 <span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
 <span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">build.stm32cube.custom_dsp_library</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">board_build.stm32cube.custom_dsp_library</span> <span class="o">=</span> <span class="s">yes</span>
 </pre></div>
 </div>
 </section>
