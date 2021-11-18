@@ -93,6 +93,13 @@ The keyword should be lowercased, can contain a-z, digits and dash (but not
 start/end with them). A list from the keywords can be specified with
 separator ``,`` or declared as Array.
 
+``homepage``
+------------
+
+*Optional* | Type: ``String`` | Max. Length: 255
+
+Home page of a library (if is different from :ref:`libjson_repository` url).
+
 .. _libjson_repository:
 
 ``repository``
@@ -117,7 +124,6 @@ Example:
         "type": "git",
         "url": "https://github.com/foo/bar.git"
     }
-
 
 .. _libjson_authors:
 
@@ -177,75 +183,6 @@ A SPDX license ID of the library. You can check `the full list of SPDX license I
 
     "license": "Apache-2.0"
 
-``homepage``
-------------
-
-*Optional* | Type: ``String`` | Max. Length: 255
-
-Home page of a library (if is different from :ref:`libjson_repository` url).
-
-.. _libjson_export:
-
-``export``
-----------
-
-*Optional* | Type: ``Object``
-
-This option is useful if you need to exclude extra data (test code, docs, images, PDFs, etc).
-It allows one to reduce the size of the final archive.
-
-To check which files will be included in the final packages, please use
-:ref:`cmd_package_pack` command.
-
-Possible options:
-
-.. contents::
-    :local:
-
-``include``
-~~~~~~~~~~~
-
-*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
-
-Export only files that matched declared patterns.
-
-**Pattern Meaning**
-
-.. list-table::
-    :header-rows:  1
-
-    * - Pattern
-      - Meaning
-    * - ``*``
-      - matches everything
-    * - ``?``
-      - matches any single character
-    * - ``[seq]``
-      - matches any character in seq
-    * - ``[!seq]``
-      - matches any character not in seq
-
-Example:
-
-.. code-block:: javascript
-
-    "export": {
-        "include":
-        [
-            "dir/*.[ch]pp",
-            "dir/examples/*",
-            "*/*/*.h"
-        ]
-    }
-
-
-``exclude``
-~~~~~~~~~~~
-
-*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
-
-Exclude the directories and files which match with ``exclude`` patterns.
-
 .. _libjson_frameworks:
 
 ``frameworks``
@@ -296,6 +233,55 @@ use ``*`` symbol:
     PlatformIO does not check platforms for compatibility in default mode.
     See :ref:`ldf_compat_mode` for details. If you need a strict checking for compatible
     platforms for a library, please set :ref:`libjons_compatmode` to ``strict``.
+
+``headers``
+-----------
+
+*Optional* | Type: ``String`` or ``Array``
+
+A list of header files that can be included in a project source files using
+``#include <...>`` directive.
+
+Examples:
+
+.. code-block:: javascript
+
+    "headers": "MyLibrary.h"
+
+
+.. code-block:: javascript
+
+    "headers": ["FooCore.h", "FooFeature.h"]
+
+.. _libjson_examples:
+
+``examples``
+------------
+
+*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
+
+A list of example patterns. This field is predefined with default value:
+
+.. code-block:: javascript
+
+    "examples": [
+        {
+            "name": "Hello",
+            "base": "examples/world",
+            "files": [
+                "platformio.ini",
+                "include/world.h",
+                "src/world.c",
+                "README",
+                "extra.py"
+            ]
+        },
+        {
+            "name": "Blink",
+            "base": "examples/blink",
+            "files": ["blink.cpp", "blink.h"]
+        }
+    ]
 
 .. _libjson_dependencies:
 
@@ -370,37 +356,67 @@ A short definition of dependencies is allowed:
         "external-zip": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
     }
 
+.. _libjson_export:
 
-.. _libjson_examples:
+``export``
+----------
 
-``examples``
-------------
+*Optional* | Type: ``Object``
+
+This option is useful if you need to exclude extra data (test code, docs, images, PDFs, etc).
+It allows one to reduce the size of the final archive.
+
+To check which files will be included in the final packages, please use
+:ref:`cmd_package_pack` command.
+
+Possible options:
+
+.. contents::
+    :local:
+
+``include``
+~~~~~~~~~~~
 
 *Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
 
-A list of example patterns. This field is predefined with default value:
+Export only files that matched declared patterns.
+
+**Pattern Meaning**
+
+.. list-table::
+    :header-rows:  1
+
+    * - Pattern
+      - Meaning
+    * - ``*``
+      - matches everything
+    * - ``?``
+      - matches any single character
+    * - ``[seq]``
+      - matches any character in seq
+    * - ``[!seq]``
+      - matches any character not in seq
+
+Example:
 
 .. code-block:: javascript
 
-    "examples": [
-        {
-            "name": "Hello",
-            "base": "examples/world",
-            "files": [
-                "platformio.ini",
-                "include/world.h",
-                "src/world.c",
-                "README",
-                "extra.py"
-            ]
-        },
-        {
-            "name": "Blink",
-            "base": "examples/blink",
-            "files": ["blink.cpp", "blink.h"]
-        }
-    ]
+    "export": {
+        "include":
+        [
+            "dir/*.[ch]pp",
+            "dir/examples/*",
+            "*/*/*.h"
+        ]
+    }
 
+
+``exclude``
+~~~~~~~~~~~
+
+*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
+
+Exclude the directories and files which match with ``exclude`` patterns.
 
 .. _libjson_build:
 
