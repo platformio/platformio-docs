@@ -65,9 +65,6 @@ The boolean search capability supports the following operators:
       - A phrase that is enclosed within double quote (``"``) characters matches
         only libraries that contain the phrase literally, as it was typed.
 
-For more detail information please go to
-`MySQL Boolean Full-Text Searches <http://dev.mysql.com/doc/refman/5.6/en/fulltext-boolean.html>`_.
-
 Options
 -------
 
