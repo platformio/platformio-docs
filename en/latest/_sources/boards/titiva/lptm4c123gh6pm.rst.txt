@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_titiva_lptm4c1230c3pm:
+.. _board_titiva_lptm4c123gh6pm:
 
 TI LaunchPad (Tiva C) w/ tm4c123 (80MHz)
 ========================================
@@ -24,7 +24,7 @@ Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the indust
 .. list-table::
 
   * - **Microcontroller**
-    - LPTM4C1230C3PM
+    - LPTM4C123GH6PM
   * - **Frequency**
     - 80MHz
   * - **Flash**
@@ -38,27 +38,27 @@ Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the indust
 Configuration
 -------------
 
-Please use ``lptm4c1230c3pm`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lptm4c123gh6pm`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:lptm4c1230c3pm]
+  [env:lptm4c123gh6pm]
   platform = titiva
-  board = lptm4c1230c3pm
+  board = lptm4c123gh6pm
 
 You can override default TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `lptm4c1230c3pm.json <https://github.com/platformio/platform-titiva/blob/master/boards/lptm4c1230c3pm.json>`_. For example,
+board manifest `lptm4c123gh6pm.json <https://github.com/platformio/platform-titiva/blob/master/boards/lptm4c123gh6pm.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:lptm4c1230c3pm]
+  [env:lptm4c123gh6pm]
   platform = titiva
-  board = lptm4c1230c3pm
+  board = lptm4c123gh6pm
 
   ; change microcontroller
-  board_build.mcu = lptm4c1230c3pm
+  board_build.mcu = lptm4c123gh6pm
 
   ; change MCU frequency
   board_build.f_cpu = 80000000L

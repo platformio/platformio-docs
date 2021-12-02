@@ -1277,7 +1277,7 @@ TI TIVA
     :maxdepth: 1
         
     titiva/lplm4f120h5qr
-    titiva/lptm4c1230c3pm
+    titiva/lptm4c123gh6pm
     titiva/lptm4c1294ncpdt
 
 WIZNet W7500

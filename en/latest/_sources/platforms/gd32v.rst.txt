@@ -152,7 +152,7 @@ Packages
       - Open On-Chip Debugger branch with RISC-V GigaDevice GD32V support
 
     * - `toolchain-gd32v <https://github.com/riscv-mcu/riscv-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
-      - RISC-V GCC toolchain
+      - GCC Toolchain for GigaDevice GD32V microcontrollers
 
 .. warning::
     **Linux Users**:
