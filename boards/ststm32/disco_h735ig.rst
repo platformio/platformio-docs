@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32H735IGK6U
+    - STM32H735IGK6
   * - **Frequency**
     - 550MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `disco_h735ig.json <https://github.com/platformio/platform-ststm3
   board = disco_h735ig
 
   ; change microcontroller
-  board_build.mcu = stm32h735igk6u
+  board_build.mcu = stm32h735igk6
 
   ; change MCU frequency
   board_build.f_cpu = 550000000L

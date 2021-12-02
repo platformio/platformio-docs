@@ -79,8 +79,8 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 256KB
       - 32KB
-    * - :ref:`board_titiva_lptm4c1230c3pm`
-      - LPTM4C1230C3PM
+    * - :ref:`board_titiva_lptm4c123gh6pm`
+      - LPTM4C123GH6PM
       - 80MHz
       - 256KB
       - 32KB
@@ -199,9 +199,9 @@ TI
       - 80MHz
       - 256KB
       - 32KB
-    * - :ref:`board_titiva_lptm4c1230c3pm`
+    * - :ref:`board_titiva_lptm4c123gh6pm`
       - On-board
-      - LPTM4C1230C3PM
+      - LPTM4C123GH6PM
       - 80MHz
       - 256KB
       - 32KB

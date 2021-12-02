@@ -115,10 +115,10 @@ Boards
       - 80MHz
       - 256KB
       - 32KB
-    * - :ref:`board_titiva_lptm4c1230c3pm`
+    * - :ref:`board_titiva_lptm4c123gh6pm`
       - :ref:`platform_titiva`
       - On-board
-      - LPTM4C1230C3PM
+      - LPTM4C123GH6PM
       - 80MHz
       - 256KB
       - 32KB

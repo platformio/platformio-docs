@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F303RCT6TR
+    - STM32F303RCT6
   * - **Frequency**
     - 72MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `olimexino_stm32f3.json <https://github.com/platformio/platform-s
   board = olimexino_stm32f3
 
   ; change microcontroller
-  board_build.mcu = stm32f303rct6tr
+  board_build.mcu = stm32f303rct6
 
   ; change MCU frequency
   board_build.f_cpu = 72000000L

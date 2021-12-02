@@ -562,9 +562,9 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 256KB
       - 32KB
-    * - :ref:`board_titiva_lptm4c1230c3pm`
+    * - :ref:`board_titiva_lptm4c123gh6pm`
       - :ref:`platform_titiva`
-      - LPTM4C1230C3PM
+      - LPTM4C123GH6PM
       - 80MHz
       - 256KB
       - 32KB
@@ -853,7 +853,7 @@ Please click on board name for the further details.
       - 20KB
     * - :ref:`board_ststm32_olimexino_stm32f3`
       - :ref:`platform_ststm32`
-      - STM32F303RCT6TR
+      - STM32F303RCT6
       - 72MHz
       - 256KB
       - 40KB
@@ -901,7 +901,7 @@ Please click on board name for the further details.
       - 20KB
     * - :ref:`board_ststm32_prntr_v2`
       - :ref:`platform_ststm32`
-      - STM32F407RE
+      - STM32F407VET6
       - 168MHz
       - 512KB
       - 128KB
@@ -2520,7 +2520,7 @@ Olimex
     * - :ref:`board_ststm32_olimexino_stm32f3`
       - :ref:`platform_ststm32`
       - External
-      - STM32F303RCT6TR
+      - STM32F303RCT6
       - 72MHz
       - 256KB
       - 40KB
@@ -2632,7 +2632,7 @@ PrntrBoard
     * - :ref:`board_ststm32_prntr_v2`
       - :ref:`platform_ststm32`
       - External
-      - STM32F407RE
+      - STM32F407VET6
       - 168MHz
       - 512KB
       - 128KB
@@ -3434,10 +3434,10 @@ TI
       - 80MHz
       - 256KB
       - 32KB
-    * - :ref:`board_titiva_lptm4c1230c3pm`
+    * - :ref:`board_titiva_lptm4c123gh6pm`
       - :ref:`platform_titiva`
       - On-board
-      - LPTM4C1230C3PM
+      - LPTM4C123GH6PM
       - 80MHz
       - 256KB
       - 32KB
