@@ -82,7 +82,6 @@ Contents
     :caption: Miscellaneous
     :maxdepth: 1
 
-    articles
     FAQ <faq>
     core/history
     core/migration
