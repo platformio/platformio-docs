@@ -271,6 +271,11 @@ Examples:
 Over-the-Air (OTA) update
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. warning::
+    Please make sure to read the theory behind the OTA updates in the
+    `Over The Air Updates (OTA) <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html>`_
+    article.
+
 Using JFrog Bintray (free and secure Cloud solution)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -280,23 +285,30 @@ Using JFrog Bintray (free and secure Cloud solution)
 Using built-in Local solution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Demo code for:
+1. Create a new project using :ref:`piohome` or initialize a project via
+   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
+2. Copy the `basicOTA <https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA/examples/BasicOTA>`_
+   example for Arduino or `Simple OTA <https://github.com/espressif/esp-idf/tree/master/examples/system/ota/simple_ota_example>`_ example for ESP-IDF to :ref:`projectconf_pio_src_dir`
+   and configure your WiFi credentials
+   (SSID and password).
+3. Compile the project to ensure there are no syntax errors in the code.
 
-* `Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA/examples/BasicOTA>`_
-* `ESP-IDF <https://github.com/espressif/esp-idf/tree/master/examples/system/ota>`_
-
-There are 2 options:
-
-* Directly specify :option:`pio run --upload-port` in command line
+To upload the binary you can either specify the upload address directly in the CLI
+command using the :option:`pio run --upload-port` option:
 
 .. code-block:: bash
 
     pio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
 
-* Specify ``upload_port`` option in :ref:`projectconf`
+For example:
 
+.. code-block:: none
 
-You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
+    pio run -t upload --upload-port 192.168.0.255
+    pio run -t upload --upload-port myesp32.local
+
+Or use the ``upload_port`` option in :ref:`projectconf`. Please note that you also
+need to set :ref:`projectconf_upload_protocol` to ``espota``:
 
 .. code-block:: ini
 
@@ -304,10 +316,17 @@ You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
    upload_protocol = espota
    upload_port = IP_ADDRESS_HERE or mDNS_NAME.local
 
-For example,
+For example:
 
-* ``pio run -t upload --upload-port 192.168.0.255``
-* ``pio run -t upload --upload-port myesp8266.local``
+.. code-block:: ini
+
+   [env:myenv]
+   platform = espressif32
+   board = esp32dev
+   framework = arduino
+   upload_protocol = espota
+   upload_port = 192.168.0.255
+
 
 Authentication and upload options
 '''''''''''''''''''''''''''''''''

@@ -524,20 +524,34 @@ Where a special variable ``ESP8266_FS_IMAGE_NAME`` can be overridden:
 Over-the-Air (OTA) update
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Firstly, please read `What is OTA? How to use it? <https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html>`_
+.. warning::
+    Please make sure to read the theory behind the OTA updates in the
+    `What is OTA? How to use it? <https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html>`_
+    article first.
 
-There are 2 options:
+1. Create a new project using :ref:`piohome` or initialize a project via
+   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
+2. Copy the `basicOTA <https://github.com/esp8266/Arduino/blob/master/libraries/ArduinoOTA/examples/BasicOTA/BasicOTA.ino>`_
+   example to :ref:`projectconf_pio_src_dir` and configure your WiFi credentials
+   (SSID and password).
+3. Compile the project to ensure there are no syntax errors in the code.
 
-* Directly specify :option:`pio run --upload-port` in command line
+To upload the binary you can either specify the upload address directly in the CLI
+command using the :option:`pio run --upload-port` option:
 
 .. code-block:: bash
 
     pio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
 
-* Specify ``upload_port`` option in :ref:`projectconf`
+For example:
 
+.. code-block:: none
 
-You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
+    pio run -t upload --upload-port 192.168.0.255
+    pio run -t upload --upload-port myesp8266.local
+
+Or use the ``upload_port`` option in :ref:`projectconf`. Please note that you also
+need to set :ref:`projectconf_upload_protocol` to ``espota``:
 
 .. code-block:: ini
 
@@ -545,10 +559,17 @@ You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
    upload_protocol = espota
    upload_port = IP_ADDRESS_HERE or mDNS_NAME.local
 
-For example,
+For example:
 
-* ``pio run -t upload --upload-port 192.168.0.255``
-* ``pio run -t upload --upload-port myesp8266.local``
+.. code-block:: ini
+
+   [env:myenv]
+   platform = espressif8266
+   board = nodemcuv2
+   framework = arduino
+   upload_protocol = espota
+   upload_port = 192.168.0.255
+
 
 Authentication and upload options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
