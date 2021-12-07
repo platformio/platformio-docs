@@ -478,14 +478,13 @@ Uploading files to Filesystem
     Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
     information first.
 
-1. Create new project using :ref:`pioide` or initialize project using
+1. Create a new project using :ref:`pioide` or initialize project using
    :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
-2. Create ``data`` folder (it should be on the same level as ``src`` folder)
-   and put files here. Also, you can specify own location for
+2. Create the ``data`` folder (it should be on the same level as the ``src`` folder)
+   and put files there. Also, you can specify your own location for
    :ref:`projectconf_pio_data_dir`
-3. Run "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
-   and :option:`pio run --target` command with ``uploadfs`` target.
-
+3. Run the "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
+   and the :option:`pio run --target` command with the ``uploadfs`` target.
 
 To upload file system image using OTA update please specify ``upload_port`` /
 ``--upload-port`` as IP address or mDNS host name (ending with the ``*.local``).
