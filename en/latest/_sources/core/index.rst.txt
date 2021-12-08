@@ -16,7 +16,7 @@
 PlatformIO Core (CLI)
 =====================
 
-|PIOCORE| (CLI tool) is a heart of whole PlatformIO ecosystem and consists of
+|PIOCORE| (CLI tool) is the heart of the entire PlatformIO ecosystem and consists of
 
 * Multi-platform Build System
 * Development platform and package managers
