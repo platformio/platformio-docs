@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Amperka <http://wiki.amperka.ru/wifi-slot?utm_source=platformio.org&utm_medium=docs>`__
+    - `Amperka <https://amperka.ru/product/wifi-slot>`__
 
 
 Configuration
