@@ -76,5 +76,3 @@ Articles / Manuals
 ------------------
 
 * Feb 22, 2016 - **Grzegorz Hołdys** - `How to Integrate PlatformIO with Netbeans <http://www.instructables.com/id/How-to-Integrate-PlatformIO-With-Netbeans/>`_
-
-See the full list with :ref:`articles`.

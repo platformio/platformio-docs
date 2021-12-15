@@ -200,7 +200,7 @@ Boards
     * - :ref:`board_ststm32_st3dp001_eval`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32F401VGT6
+      - STM32F401VET6
       - 84MHz
       - 512KB
       - 96KB
@@ -1061,7 +1061,7 @@ Boards
     * - :ref:`board_ststm32_olimexino_stm32f3`
       - :ref:`platform_ststm32`
       - External
-      - STM32F303RCT6TR
+      - STM32F303RCT6
       - 72MHz
       - 256KB
       - 40KB
@@ -1950,7 +1950,7 @@ Boards
     * - :ref:`board_ststm32_disco_h735ig`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32H735IGK6U
+      - STM32H735IGK6
       - 550MHz
       - 1MB
       - 432KB
@@ -2084,8 +2084,8 @@ Boards
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
-      - 72MHz
-      - 512KB
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_nordicnrf51_vbluno51`
       - :ref:`platform_nordicnrf51`

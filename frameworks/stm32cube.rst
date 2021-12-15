@@ -85,7 +85,7 @@ You do not need to use/buy external debug probe.
       - 512KB
     * - :ref:`board_ststm32_st3dp001_eval`
       - :ref:`platform_ststm32`
-      - STM32F401VGT6
+      - STM32F401VET6
       - 84MHz
       - 512KB
       - 96KB
@@ -625,7 +625,7 @@ You do not need to use/buy external debug probe.
       - 340KB
     * - :ref:`board_ststm32_disco_h735ig`
       - :ref:`platform_ststm32`
-      - STM32H735IGK6U
+      - STM32H735IGK6
       - 550MHz
       - 1MB
       - 432KB
@@ -980,7 +980,7 @@ Please click on board name for the further details.
       - 20KB
     * - :ref:`board_ststm32_olimexino_stm32f3`
       - :ref:`platform_ststm32`
-      - STM32F303RCT6TR
+      - STM32F303RCT6
       - 72MHz
       - 256KB
       - 40KB
@@ -1028,7 +1028,7 @@ Please click on board name for the further details.
       - 20KB
     * - :ref:`board_ststm32_prntr_v2`
       - :ref:`platform_ststm32`
-      - STM32F407RE
+      - STM32F407VET6
       - 168MHz
       - 512KB
       - 128KB
@@ -1545,8 +1545,8 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_vccgnd_f407zg_mini`
       - :ref:`platform_ststm32`
       - STM32F407ZGT6
-      - 72MHz
-      - 512KB
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_waveshare_open103z`
       - :ref:`platform_ststm32`
@@ -2737,7 +2737,7 @@ Olimex
     * - :ref:`board_ststm32_olimexino_stm32f3`
       - :ref:`platform_ststm32`
       - External
-      - STM32F303RCT6TR
+      - STM32F303RCT6
       - 72MHz
       - 256KB
       - 40KB
@@ -2849,7 +2849,7 @@ PrntrBoard
     * - :ref:`board_ststm32_prntr_v2`
       - :ref:`platform_ststm32`
       - External
-      - STM32F407RE
+      - STM32F407VET6
       - 168MHz
       - 512KB
       - 128KB
@@ -3003,7 +3003,7 @@ ST
     * - :ref:`board_ststm32_st3dp001_eval`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32F401VGT6
+      - STM32F401VET6
       - 84MHz
       - 512KB
       - 96KB
@@ -3647,7 +3647,7 @@ ST
     * - :ref:`board_ststm32_disco_h735ig`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32H735IGK6U
+      - STM32H735IGK6
       - 550MHz
       - 1MB
       - 432KB
@@ -3872,8 +3872,8 @@ VCCGND
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
-      - 72MHz
-      - 512KB
+      - 168MHz
+      - 1MB
       - 128KB
 
 Waveshare

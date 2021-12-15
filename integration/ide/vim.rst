@@ -97,5 +97,3 @@ Articles / Manuals
 ------------------
 
 * `コマンドラインでArduino開発 : vim + platformio (Arduino development at the command line: VIM + PlatformIO, Japanese) <http://qiita.com/caad1229/items/7b5fb47f034ae6e0baf2>`_
-
-See a full list with :ref:`articles`.

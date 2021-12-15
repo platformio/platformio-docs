@@ -500,6 +500,15 @@ Packages
     * - `toolchain-riscv-esp <https://github.com/espressif/crosstool-NG.git?utm_source=platformio.org&utm_medium=docs>`__
       - GCC Toolchain for Espressif 32-bit RISC-V based on GCC
 
+    * - `toolchain-riscv32-esp <https://github.com/espressif/crosstool-NG.git?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Espressif 32-bit RISC-V based MCUs
+
+    * - `toolchain-xtensa-esp32 <https://github.com/espressif/crosstool-NG.git?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Espressif ESP32 Xtensa MCUs
+
+    * - `toolchain-xtensa-esp32s2 <https://github.com/espressif/crosstool-NG.git?utm_source=platformio.org&utm_medium=docs>`__
+      - GCC Toolchain for Espressif ESP32-S2 Xtensa MCUs
+
     * - `toolchain-xtensa32 <https://github.com/espressif/esp-idf.git?utm_source=platformio.org&utm_medium=docs>`__
       - GCC Toolchain for Xtensa32 processor
 

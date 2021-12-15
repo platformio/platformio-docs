@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F407RE
+    - STM32F407VET6
   * - **Frequency**
     - 168MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `prntr_v2.json <https://github.com/platformio/platform-ststm32/bl
   board = prntr_v2
 
   ; change microcontroller
-  board_build.mcu = stm32f407re
+  board_build.mcu = stm32f407vet6
 
   ; change MCU frequency
   board_build.f_cpu = 168000000L

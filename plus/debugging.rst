@@ -4562,7 +4562,7 @@ Olimex
     * - :ref:`board_ststm32_olimexino_stm32f3`
       - :ref:`platform_ststm32`
       - External
-      - STM32F303RCT6TR
+      - STM32F303RCT6
       - 72MHz
       - 256KB
       - 40KB
@@ -4800,7 +4800,7 @@ PrntrBoard
     * - :ref:`board_ststm32_prntr_v2`
       - :ref:`platform_ststm32`
       - External
-      - STM32F407RE
+      - STM32F407VET6
       - 168MHz
       - 512KB
       - 128KB
@@ -5374,7 +5374,7 @@ ST
     * - :ref:`board_ststm32_st3dp001_eval`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32F401VGT6
+      - STM32F401VET6
       - 84MHz
       - 512KB
       - 96KB
@@ -6074,7 +6074,7 @@ ST
     * - :ref:`board_ststm32_disco_h735ig`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32H735IGK6U
+      - STM32H735IGK6
       - 550MHz
       - 1MB
       - 432KB
@@ -6932,10 +6932,10 @@ TI
       - 80MHz
       - 256KB
       - 32KB
-    * - :ref:`board_titiva_lptm4c1230c3pm`
+    * - :ref:`board_titiva_lptm4c123gh6pm`
       - :ref:`platform_titiva`
       - On-board
-      - LPTM4C1230C3PM
+      - LPTM4C123GH6PM
       - 80MHz
       - 256KB
       - 32KB
@@ -7405,8 +7405,8 @@ VCCGND
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
-      - 72MHz
-      - 512KB
+      - 168MHz
+      - 1MB
       - 128KB
 
 VNG

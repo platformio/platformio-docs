@@ -317,12 +317,6 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 1MB
       - 256KB
-    * - :ref:`board_chipsalliance_swervolf_nexys`
-      - :ref:`platform_chipsalliance`
-      - 
-      - 320MHz
-      - 16MB
-      - 1.16MB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -643,7 +637,7 @@ You do not need to use/buy external debug probe.
       - 36KB
     * - :ref:`board_ststm32_disco_h735ig`
       - :ref:`platform_ststm32`
-      - STM32H735IGK6U
+      - STM32H735IGK6
       - 550MHz
       - 1MB
       - 432KB
@@ -960,7 +954,6 @@ Examples
 --------
 
 * `Zephyr RTOS for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Zephyr RTOS for CHIPS Alliance <https://github.com/platformio/platform-chipsalliance/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Zephyr RTOS for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Zephyr RTOS for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Zephyr RTOS for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
@@ -980,9 +973,6 @@ Platforms
 
     * - :ref:`platform_atmelsam`
       - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
-
-    * - :ref:`platform_chipsalliance`
-      - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
 
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
@@ -1218,27 +1208,6 @@ BBC
       - 64MHz
       - 512KB
       - 128KB
-
-Digilent
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_chipsalliance_swervolf_nexys`
-      - :ref:`platform_chipsalliance`
-      - On-board
-      - 
-      - 320MHz
-      - 16MB
-      - 1.16MB
 
 ElectronutLabs
 ~~~~~~~~~~~~~~
@@ -2229,7 +2198,7 @@ ST
     * - :ref:`board_ststm32_disco_h735ig`
       - :ref:`platform_ststm32`
       - On-board
-      - STM32H735IGK6U
+      - STM32H735IGK6
       - 550MHz
       - 1MB
       - 432KB
