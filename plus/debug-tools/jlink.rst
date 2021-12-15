@@ -4014,8 +4014,8 @@ Boards
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
-      - 72MHz
-      - 512KB
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_nordicnrf52_vbluno52`
       - :ref:`platform_nordicnrf52`

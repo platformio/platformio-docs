@@ -26,9 +26,9 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Microcontroller**
     - STM32F407ZGT6
   * - **Frequency**
-    - 72MHz
+    - 168MHz
   * - **Flash**
-    - 512KB
+    - 1MB
   * - **RAM**
     - 128KB
   * - **Vendor**
@@ -61,7 +61,7 @@ board manifest `vccgnd_f407zg_mini.json <https://github.com/platformio/platform-
   board_build.mcu = stm32f407zgt6
 
   ; change MCU frequency
-  board_build.f_cpu = 72000000L
+  board_build.f_cpu = 168000000L
 
 
 Uploading
