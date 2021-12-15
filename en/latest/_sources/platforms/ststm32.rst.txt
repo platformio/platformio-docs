@@ -1378,8 +1378,8 @@ Please click on board name for the further details.
       - 64KB
     * - :ref:`board_ststm32_vccgnd_f407zg_mini`
       - STM32F407ZGT6
-      - 72MHz
-      - 512KB
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_ststm32_waveshare_open103z`
       - STM32F103ZET6
@@ -3691,8 +3691,8 @@ VCCGND
     * - :ref:`board_ststm32_vccgnd_f407zg_mini`
       - External
       - STM32F407ZGT6
-      - 72MHz
-      - 512KB
+      - 168MHz
+      - 1MB
       - 128KB
 
 Waveshare

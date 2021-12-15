@@ -3411,8 +3411,8 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_vccgnd_f407zg_mini`
       - :ref:`platform_ststm32`
       - STM32F407ZGT6
-      - 72MHz
-      - 512KB
+      - 168MHz
+      - 1MB
       - 128KB
     * - :ref:`board_espressif32_vintlabs-devkit-v1`
       - :ref:`platform_espressif32`
@@ -11097,8 +11097,8 @@ VCCGND
       - :ref:`platform_ststm32`
       - External
       - STM32F407ZGT6
-      - 72MHz
-      - 512KB
+      - 168MHz
+      - 1MB
       - 128KB
 
 VintLabs
