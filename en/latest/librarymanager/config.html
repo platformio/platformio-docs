@@ -437,6 +437,16 @@ are also possible</p></li>
 <a class="reference internal" href="../core/userguide/lib/cmd_install.html#cmd-lib-install"><span class="std std-ref">pio lib install</span></a> command.</p>
 <p>Example:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
+<span class="p">{</span>
+    <span class="s2">&quot;bblanchon/ArduinoJson&quot;</span><span class="o">:</span> <span class="s2">&quot;^6.16.1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;me-no-dev/AsyncTCP&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;external-repo&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;external-zip&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>More advanced usage:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
 <span class="p">[</span>
     <span class="p">{</span>
         <span class="s2">&quot;owner&quot;</span><span class="o">:</span> <span class="s2">&quot;bblanchon&quot;</span><span class="p">,</span>
@@ -458,16 +468,6 @@ are also possible</p></li>
         <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
     <span class="p">}</span>
 <span class="p">]</span>
-</pre></div>
-</div>
-<p>A short definition of dependencies is allowed:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
-<span class="p">{</span>
-    <span class="s2">&quot;bblanchon/ArduinoJson&quot;</span><span class="o">:</span> <span class="s2">&quot;^6.16.1&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;me-no-dev/AsyncTCP&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;external-repo&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;external-zip&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
-<span class="p">}</span>
 </pre></div>
 </div>
 </section>
