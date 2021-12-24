@@ -322,6 +322,18 @@ Example:
 .. code-block:: javascript
 
     "dependencies":
+    {
+        "bblanchon/ArduinoJson": "^6.16.1",
+        "me-no-dev/AsyncTCP": "*",
+        "external-repo": "https://github.com/user/package.git#1.2.3",
+        "external-zip": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
+    }
+
+More advanced usage:
+
+.. code-block:: javascript
+
+    "dependencies":
     [
         {
             "owner": "bblanchon",
@@ -343,18 +355,6 @@ Example:
             "version": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
         }
     ]
-
-A short definition of dependencies is allowed:
-
-.. code-block:: javascript
-
-    "dependencies":
-    {
-        "bblanchon/ArduinoJson": "^6.16.1",
-        "me-no-dev/AsyncTCP": "*",
-        "external-repo": "https://github.com/user/package.git#1.2.3",
-        "external-zip": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
-    }
 
 .. _libjson_export:
 
