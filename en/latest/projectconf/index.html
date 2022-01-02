@@ -167,74 +167,74 @@ sections and their allowed contents:</p>
 </div>
 <p><strong>Example</strong></p>
 <p>For more examples, see <a class="reference internal" href="examples.html#projectconf-examples"><span class="std std-ref">Examples</span></a>.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
-<span class="na">default_envs</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
+<span class="na">default_envs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
 
-<span class="c1">; Set/override default options for each &quot;[env:***]&quot;</span>
-<span class="k">[env]</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-    <span class="na">-D VERSION</span><span class="o">=</span><span class="s">1.2.3</span>
-    <span class="na">-D DEBUG</span><span class="o">=</span><span class="s">1</span>
-<span class="na">lib_deps_builtin</span> <span class="o">=</span>
-    <span class="na">SPI</span>
-    <span class="na">Wire</span>
-<span class="na">lib_deps_external</span> <span class="o">=</span>
-    <span class="na">bblanchon/ArduinoJson @ ~5.6,!</span><span class="o">=</span><span class="s">5.4</span>
-    <span class="na">https://github.com/gioblu/PJON.git#v2.0</span>
-    <span class="na">IRremoteESP8266</span><span class="o">=</span><span class="s">https://github.com/markszabo/IRremoteESP8266/archive/master.zip</span>
+<span class="c1">; Set/override default options for each &quot;[env:***]&quot;</span><span class="w"></span>
+<span class="k">[env]</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-D VERSION</span><span class="o">=</span><span class="s">1.2.3</span><span class="w"></span>
+<span class="w">    </span><span class="na">-D DEBUG</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
+<span class="na">lib_deps_builtin</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">SPI</span><span class="w"></span>
+<span class="w">    </span><span class="na">Wire</span><span class="w"></span>
+<span class="na">lib_deps_external</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">bblanchon/ArduinoJson @ ~5.6,!</span><span class="o">=</span><span class="s">5.4</span><span class="w"></span>
+<span class="w">    </span><span class="na">https://github.com/gioblu/PJON.git#v2.0</span><span class="w"></span>
+<span class="w">    </span><span class="na">IRremoteESP8266</span><span class="o">=</span><span class="s">https://github.com/markszabo/IRremoteESP8266/archive/master.zip</span><span class="w"></span>
 
-<span class="k">[env:nodemcuv2]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
+<span class="k">[env:nodemcuv2]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
 
-<span class="c1">; Build options</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-    <span class="na">${env.build_flags}</span>
-    <span class="na">-DSSID_NAME</span><span class="o">=</span><span class="s">HELLO</span>
-    <span class="na">-DSSID_PASWORD</span><span class="o">=</span><span class="s">WORLD</span>
+<span class="c1">; Build options</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">${env.build_flags}</span><span class="w"></span>
+<span class="w">    </span><span class="na">-DSSID_NAME</span><span class="o">=</span><span class="s">HELLO</span><span class="w"></span>
+<span class="w">    </span><span class="na">-DSSID_PASWORD</span><span class="o">=</span><span class="s">WORLD</span><span class="w"></span>
 
-<span class="c1">; Library options</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-    <span class="na">${env.lib_deps_builtin}</span>
-    <span class="na">${env.lib_deps_external}</span>
-    <span class="na">https://github.com/me-no-dev/ESPAsyncTCP.git</span>
-    <span class="na">knolleary/PubSubClient@^2.8</span>
-    <span class="na">paulstoffregen/OneWire</span>
+<span class="c1">; Library options</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">${env.lib_deps_builtin}</span><span class="w"></span>
+<span class="w">    </span><span class="na">${env.lib_deps_external}</span><span class="w"></span>
+<span class="w">    </span><span class="na">https://github.com/me-no-dev/ESPAsyncTCP.git</span><span class="w"></span>
+<span class="w">    </span><span class="na">knolleary/PubSubClient@^2.8</span><span class="w"></span>
+<span class="w">    </span><span class="na">paulstoffregen/OneWire</span><span class="w"></span>
 
-<span class="c1">; Serial Monitor options</span>
-<span class="na">monitor_speed</span> <span class="o">=</span> <span class="s">115200</span>
-<span class="na">monitor_flags</span> <span class="o">=</span>
-    <span class="na">--encoding</span>
-    <span class="na">hexlify</span>
+<span class="c1">; Serial Monitor options</span><span class="w"></span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
+<span class="na">monitor_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">--encoding</span><span class="w"></span>
+<span class="w">    </span><span class="na">hexlify</span><span class="w"></span>
 
-<span class="c1">; Unit Testing options</span>
-<span class="na">test_ignore</span> <span class="o">=</span> <span class="s">test_desktop</span>
+<span class="c1">; Unit Testing options</span><span class="w"></span>
+<span class="na">test_ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">test_desktop</span><span class="w"></span>
 
-<span class="k">[env:bluepill_f103c8]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">bluepill_f103c8</span>
+<span class="k">[env:bluepill_f103c8]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">bluepill_f103c8</span><span class="w"></span>
 
-<span class="c1">; Library options</span>
-<span class="na">lib_deps</span> <span class="o">=</span> <span class="s">${env.lib_deps_external}</span>
+<span class="c1">; Library options</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.lib_deps_external}</span><span class="w"></span>
 
-<span class="c1">; Debug options</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">debug_server</span> <span class="o">=</span>
-    <span class="na">${platformio.packages_dir}/tool-jlink/JLinkGDBServer</span>
-    <span class="na">-singlerun</span>
-    <span class="na">-if</span>
-    <span class="na">SWD</span>
-    <span class="na">-select</span>
-    <span class="na">USB</span>
-    <span class="na">-port</span>
-    <span class="na">2331</span>
-    <span class="na">-device</span>
-    <span class="na">STM32F103C8</span>
+<span class="c1">; Debug options</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-jlink/JLinkGDBServer</span><span class="w"></span>
+<span class="w">    </span><span class="na">-singlerun</span><span class="w"></span>
+<span class="w">    </span><span class="na">-if</span><span class="w"></span>
+<span class="w">    </span><span class="na">SWD</span><span class="w"></span>
+<span class="w">    </span><span class="na">-select</span><span class="w"></span>
+<span class="w">    </span><span class="na">USB</span><span class="w"></span>
+<span class="w">    </span><span class="na">-port</span><span class="w"></span>
+<span class="w">    </span><span class="na">2331</span><span class="w"></span>
+<span class="w">    </span><span class="na">-device</span><span class="w"></span>
+<span class="w">    </span><span class="na">STM32F103C8</span><span class="w"></span>
 
-<span class="c1">; Unit Testing options</span>
-<span class="na">test_ignore</span> <span class="o">=</span> <span class="s">test_desktop</span>
+<span class="c1">; Unit Testing options</span><span class="w"></span>
+<span class="na">test_ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">test_desktop</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -309,7 +309,7 @@ sections and their allowed contents:</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

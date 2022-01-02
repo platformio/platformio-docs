@@ -260,11 +260,11 @@ supports only three frameworks: <a class="reference internal" href="../../framew
 <a class="reference internal" href="../../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a> we need to implement a custom
 <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-transport"><span class="std std-ref">test_transport</span></a> to print testing results and specify that
 condition in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">test_transport</span> <span class="o">=</span> <span class="s">custom</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f401re</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">test_transport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Also, we need to create a new folder <code class="docutils literal notranslate"><span class="pre">test</span></code> where the tests and custom <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-transport"><span class="std std-ref">test_transport</span></a> implementation (described next) will be located:</p>
@@ -525,7 +525,7 @@ condition in <a class="reference internal" href="../../projectconf/index.html#pr
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

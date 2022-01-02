@@ -210,11 +210,11 @@ official STM32Duino core is used (except cases when a board supports only one sp
 core). Some of the boards support all three cores. To change the core you can use a
 <code class="docutils literal notranslate"><span class="pre">board_build.core</span></code> option that needs be added to <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>:</p>
 <p>An example of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> with <code class="docutils literal notranslate"><span class="pre">maple</span></code> core</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hy_tinystm103tb]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">hy_tinystm103tb</span>
-<span class="na">board_build.core</span> <span class="o">=</span> <span class="s">maple</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hy_tinystm103tb]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">hy_tinystm103tb</span><span class="w"></span>
+<span class="na">board_build.core</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">maple</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -309,14 +309,14 @@ configuration flags in <a class="reference internal" href="../projectconf/sectio
 </tbody>
 </table>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-D PIO_FRAMEWORK_ARDUINO_ENABLE_CDC</span>
-  <span class="na">-D PIO_FRAMEWORK_ARDUINO_NANOLIB_FLOAT_PRINTF</span>
-  <span class="na">-D PIO_FRAMEWORK_ARDUINO_USB_HIGHSPEED_FULLMODE</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f401re</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-D PIO_FRAMEWORK_ARDUINO_ENABLE_CDC</span><span class="w"></span>
+<span class="w">  </span><span class="na">-D PIO_FRAMEWORK_ARDUINO_NANOLIB_FLOAT_PRINTF</span><span class="w"></span>
+<span class="w">  </span><span class="na">-D PIO_FRAMEWORK_ARDUINO_USB_HIGHSPEED_FULLMODE</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -345,12 +345,12 @@ configuration flags in <a class="reference internal" href="../projectconf/sectio
 </tbody>
 </table>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_f407vg]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">disco_f407vg</span>
-<span class="na">board_build.core</span> <span class="o">=</span> <span class="s">maple</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D ENABLE_USB_MASS_STORAGE</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_f407vg]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">disco_f407vg</span><span class="w"></span>
+<span class="na">board_build.core</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">maple</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D ENABLE_USB_MASS_STORAGE</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -405,12 +405,12 @@ configuration flags in <a class="reference internal" href="../projectconf/sectio
 </tbody>
 </table>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:cricket_l082cz]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">cricket_l082cz</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-D PIO_FRAMEWORK_ARDUINO_ENABLE_MASS_STORAGE</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:cricket_l082cz]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cricket_l082cz</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-D PIO_FRAMEWORK_ARDUINO_ENABLE_MASS_STORAGE</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -2095,23 +2095,23 @@ of ST STM32 development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
-<span class="k">[env:latest_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
+<span class="k">[env:latest_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="c1">; Custom stable version</span>
-<span class="k">[env:custom_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32@x.y.z</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="c1">; Custom stable version</span><span class="w"></span>
+<span class="k">[env:custom_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32@x.y.z</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="upstream">
 <h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-ststm32.git</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-ststm32.git</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -5372,7 +5372,7 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

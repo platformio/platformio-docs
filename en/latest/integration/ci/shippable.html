@@ -183,15 +183,15 @@ ways of running PlatformIO in CI services:</p>
 <section id="using-cmd-run-command">
 <h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this headline">¶</a></h3>
 <p>This variant is default choice for native PlatformIO projects:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
-<span class="nt">python</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="s">&quot;3.9&quot;</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span><span class="w"></span>
+<span class="nt">python</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;3.9&quot;</span><span class="w"></span>
 
-<span class="nt">install</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span>
+<span class="nt">install</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span><span class="w"></span>
 
-<span class="nt">script</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio run -e &lt;ID_1&gt; -e &lt;ID_2&gt; -e &lt;ID_N&gt;</span>
+<span class="nt">script</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pio run -e &lt;ID_1&gt; -e &lt;ID_2&gt; -e &lt;ID_N&gt;</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -200,20 +200,20 @@ ways of running PlatformIO in CI services:</p>
 <p>This variant is more convenient when project is written as a library (when there are
 examples or testing code) as it has additional options for specifying extra libraries
 and boards from command line interface:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
-<span class="nt">python</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="s">&quot;3.9&quot;</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span><span class="w"></span>
+<span class="nt">python</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;3.9&quot;</span><span class="w"></span>
 
-<span class="nt">env</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=path/to/source/file.c</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=path/to/source/file.ino</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=path/to/source/directory</span>
+<span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=path/to/source/file.c</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=path/to/source/file.ino</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=path/to/source/directory</span><span class="w"></span>
 
-<span class="nt">install</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span>
+<span class="nt">install</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span><span class="w"></span>
 
-<span class="nt">script</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span>
+<span class="nt">script</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pio ci --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -224,21 +224,21 @@ and boards from command line interface:</p>
 <li><p>Integration for <a class="reference external" href="https://github.com/felis/USB_Host_Shield_2.0">USB_Host_Shield_2.0</a>
 project. The <code class="docutils literal notranslate"><span class="pre">shippable.yml</span></code> or <code class="docutils literal notranslate"><span class="pre">.travis.yml</span></code> configuration file:</p></li>
 </ol>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
-<span class="nt">python</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="s">&quot;3.9&quot;</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span><span class="w"></span>
+<span class="nt">python</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;3.9&quot;</span><span class="w"></span>
 
-<span class="nt">env</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=examples/Bluetooth/PS3SPP/PS3SPP.ino</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=examples/pl2303/pl2303_gps/pl2303_gps.ino</span>
+<span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=examples/Bluetooth/PS3SPP/PS3SPP.ino</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=examples/pl2303/pl2303_gps/pl2303_gps.ino</span><span class="w"></span>
 
-<span class="nt">install</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">unzip /tmp/spi4teensy3.zip -d /tmp</span>
+<span class="nt">install</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unzip /tmp/spi4teensy3.zip -d /tmp</span><span class="w"></span>
 
-<span class="nt">script</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pio ci --lib=&quot;.&quot; --lib=&quot;/tmp/spi4teensy3-master&quot; --board=uno --board=teensy31 --board=due</span>
+<span class="nt">script</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pio ci --lib=&quot;.&quot; --lib=&quot;/tmp/spi4teensy3-master&quot; --board=uno --board=teensy31 --board=due</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -314,7 +314,7 @@ project. The <code class="docutils literal notranslate"><span class="pre">shippa
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

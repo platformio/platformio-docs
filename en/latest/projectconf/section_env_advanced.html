@@ -156,23 +156,23 @@ with a new line.</p>
 <p>If you need to extend only a few options from some section, please take a look at
 <a class="reference internal" href="interpolation.html#projectconf-interpolation"><span class="std std-ref">Interpolation of Values</span></a>.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[strict_ldf]</span>
-<span class="na">lib_ldf_mode</span> <span class="o">=</span> <span class="s">chain+</span>
-<span class="na">lib_compat_mode</span> <span class="o">=</span> <span class="s">strict</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[strict_ldf]</span><span class="w"></span>
+<span class="na">lib_ldf_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">chain+</span><span class="w"></span>
+<span class="na">lib_compat_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">strict</span><span class="w"></span>
 
-<span class="k">[espressi32_base]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<span class="k">[espressi32_base]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
 
-<span class="k">[env:release]</span>
-<span class="na">extends</span> <span class="o">=</span> <span class="s">espressi32_base, strict_ldf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D RELEASE</span>
+<span class="k">[env:release]</span><span class="w"></span>
+<span class="na">extends</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressi32_base, strict_ldf</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D RELEASE</span><span class="w"></span>
 
-<span class="k">[env:debug]</span>
-<span class="na">extends</span> <span class="o">=</span> <span class="s">env:release</span>
-<span class="na">build_type</span> <span class="o">=</span> <span class="s">debug</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D DEBUG</span>
+<span class="k">[env:debug]</span><span class="w"></span>
+<span class="na">extends</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">env:release</span><span class="w"></span>
+<span class="na">build_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">debug</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D DEBUG</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -180,31 +180,31 @@ with a new line.</p>
 <p>Please note that the <code class="docutils literal notranslate"><span class="pre">extends</span></code> option doesn’t merge values from multiple sections
 or environments. If multiple items specified in the extends field then only values
 from the latter one will be used in the final configuration. For example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[base]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">teensy31</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[base]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy31</span><span class="w"></span>
 
-<span class="k">[lib_deps1]</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-    <span class="na">monstrenyatko/ArduinoMqtt @ ^1.5.1</span>
-    <span class="na">bblanchon/ArduinoJson @ ^6.18.3</span>
-    <span class="na">knolleary/PubSubClient @ ^2.8</span>
+<span class="k">[lib_deps1]</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">monstrenyatko/ArduinoMqtt @ ^1.5.1</span><span class="w"></span>
+<span class="w">    </span><span class="na">bblanchon/ArduinoJson @ ^6.18.3</span><span class="w"></span>
+<span class="w">    </span><span class="na">knolleary/PubSubClient @ ^2.8</span><span class="w"></span>
 
-<span class="k">[lib_deps2]</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-    <span class="na">sstaub/Ticker @ ^4.3.0</span>
-    <span class="na">thijse/ArduinoLog @ ^1.1.1</span>
-    <span class="na">adafruit/RTClib @ ^1.14.0</span>
+<span class="k">[lib_deps2]</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">sstaub/Ticker @ ^4.3.0</span><span class="w"></span>
+<span class="w">    </span><span class="na">thijse/ArduinoLog @ ^1.1.1</span><span class="w"></span>
+<span class="w">    </span><span class="na">adafruit/RTClib @ ^1.14.0</span><span class="w"></span>
 
-<span class="k">[env:final]</span>
-<span class="na">extends</span> <span class="o">=</span> <span class="s">base, lib_deps1, lib_deps2</span>
-<span class="c1">; The values from `lib_deps2` will override the values from lib_deps1, so</span>
-<span class="c1">; the final `lib_deps` option will be equivalent to the following:</span>
-<span class="c1">; lib_deps =</span>
-<span class="c1">;    sstaub/Ticker @ ^4.3.0</span>
-<span class="c1">;    thijse/ArduinoLog @ ^1.1.1</span>
-<span class="c1">;    adafruit/RTClib @ ^1.14.0</span>
+<span class="k">[env:final]</span><span class="w"></span>
+<span class="na">extends</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">base, lib_deps1, lib_deps2</span><span class="w"></span>
+<span class="c1">; The values from `lib_deps2` will override the values from lib_deps1, so</span><span class="w"></span>
+<span class="c1">; the final `lib_deps` option will be equivalent to the following:</span><span class="w"></span>
+<span class="c1">; lib_deps =</span><span class="w"></span>
+<span class="c1">;    sstaub/Ticker @ ^4.3.0</span><span class="w"></span>
+<span class="c1">;    thijse/ArduinoLog @ ^1.1.1</span><span class="w"></span>
+<span class="c1">;    adafruit/RTClib @ ^1.14.0</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -289,7 +289,7 @@ put them to <a class="reference internal" href="section_platformio.html#projectc
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

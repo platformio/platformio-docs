@@ -222,42 +222,42 @@ Nucleo F446RE. In this case, please replace <code class="docutils literal notran
 your own device name in <code class="docutils literal notranslate"><span class="pre">debug_server</span></code> option.</p>
 <p>See full list with <a class="reference external" href="https://www.segger.com/downloads/supported_devices_jlink.php?utm_source=platformio&amp;utm_medium=docs">J-Link Supported Devices</a>.</p>
 </div>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug_jlink]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">mbed</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f446re</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug_jlink]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f446re</span><span class="w"></span>
 
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">debug_port</span> <span class="o">=</span> <span class="s">:2331</span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">debug_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">:2331</span><span class="w"></span>
 
-<span class="na">debug_server</span> <span class="o">=</span>
-  <span class="na">/full/path/to/JLinkGDBServerCL</span>
-  <span class="na">-singlerun</span>
-  <span class="na">-if</span>
-  <span class="na">SWD</span>
-  <span class="na">-select</span>
-  <span class="na">USB</span>
-  <span class="na">-port</span>
-  <span class="na">2331</span>
-  <span class="na">-device</span>
-  <span class="na">STM32F446RE</span>
+<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">/full/path/to/JLinkGDBServerCL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-singlerun</span><span class="w"></span>
+<span class="w">  </span><span class="na">-if</span><span class="w"></span>
+<span class="w">  </span><span class="na">SWD</span><span class="w"></span>
+<span class="w">  </span><span class="na">-select</span><span class="w"></span>
+<span class="w">  </span><span class="na">USB</span><span class="w"></span>
+<span class="w">  </span><span class="na">-port</span><span class="w"></span>
+<span class="w">  </span><span class="na">2331</span><span class="w"></span>
+<span class="w">  </span><span class="na">-device</span><span class="w"></span>
+<span class="w">  </span><span class="na">STM32F446RE</span><span class="w"></span>
 
-<span class="na">debug_init_cmds</span> <span class="o">=</span>
-  <span class="na">define pio_reset_halt_target</span>
-      <span class="na">monitor reset</span>
-      <span class="na">monitor halt</span>
-  <span class="na">end</span>
-  <span class="na">define pio_reset_run_target</span>
-      <span class="na">monitor clrbp</span>
-      <span class="na">monitor reset</span>
-      <span class="na">monitor go</span>
-  <span class="na">end</span>
-  <span class="na">target extended-remote $DEBUG_PORT</span>
-  <span class="na">monitor clrbp</span>
-  <span class="na">monitor speed auto</span>
-  <span class="na">pio_reset_halt_target</span>
-  <span class="na">$LOAD_CMDS</span>
-  <span class="na">$INIT_BREAK</span>
+<span class="na">debug_init_cmds</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">define pio_reset_halt_target</span><span class="w"></span>
+<span class="w">      </span><span class="na">monitor reset</span><span class="w"></span>
+<span class="w">      </span><span class="na">monitor halt</span><span class="w"></span>
+<span class="w">  </span><span class="na">end</span><span class="w"></span>
+<span class="w">  </span><span class="na">define pio_reset_run_target</span><span class="w"></span>
+<span class="w">      </span><span class="na">monitor clrbp</span><span class="w"></span>
+<span class="w">      </span><span class="na">monitor reset</span><span class="w"></span>
+<span class="w">      </span><span class="na">monitor go</span><span class="w"></span>
+<span class="w">  </span><span class="na">end</span><span class="w"></span>
+<span class="w">  </span><span class="na">target extended-remote $DEBUG_PORT</span><span class="w"></span>
+<span class="w">  </span><span class="na">monitor clrbp</span><span class="w"></span>
+<span class="w">  </span><span class="na">monitor speed auto</span><span class="w"></span>
+<span class="w">  </span><span class="na">pio_reset_halt_target</span><span class="w"></span>
+<span class="w">  </span><span class="na">$LOAD_CMDS</span><span class="w"></span>
+<span class="w">  </span><span class="na">$INIT_BREAK</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -269,24 +269,24 @@ to a valid identifier. See supported J-Link devices at <a class="reference inter
 <ul class="simple">
 <li><p>Install <a class="reference external" href="https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/?utm_source=platformio&amp;utm_medium=docs">J-Link GDB Server</a></p></li>
 </ul>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:jlink_debug_and_upload]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">teensy31</span>
-<span class="na">extra_scripts</span> <span class="o">=</span> <span class="s">extra_script.py</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">jlink</span>
-<span class="na">debug_server</span> <span class="o">=</span>
-  <span class="na">/full/path/to/JLinkGDBServerCL</span>
-  <span class="na">-singlerun</span>
-  <span class="na">-if</span>
-  <span class="na">SWD</span>
-  <span class="na">-select</span>
-  <span class="na">USB</span>
-  <span class="na">-port</span>
-  <span class="na">2331</span>
-  <span class="na">-device</span>
-  <span class="na">MK20DX256xxx7</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:jlink_debug_and_upload]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy31</span><span class="w"></span>
+<span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">extra_script.py</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jlink</span><span class="w"></span>
+<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">/full/path/to/JLinkGDBServerCL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-singlerun</span><span class="w"></span>
+<span class="w">  </span><span class="na">-if</span><span class="w"></span>
+<span class="w">  </span><span class="na">SWD</span><span class="w"></span>
+<span class="w">  </span><span class="na">-select</span><span class="w"></span>
+<span class="w">  </span><span class="na">USB</span><span class="w"></span>
+<span class="w">  </span><span class="na">-port</span><span class="w"></span>
+<span class="w">  </span><span class="na">2331</span><span class="w"></span>
+<span class="w">  </span><span class="na">-device</span><span class="w"></span>
+<span class="w">  </span><span class="na">MK20DX256xxx7</span><span class="w"></span>
 </pre></div>
 </div>
 <p><strong>extra_script.py</strong></p>
@@ -322,40 +322,40 @@ to a valid identifier. See supported J-Link devices at <a class="reference inter
 <section id="st-util-and-st-link">
 <h3><a class="toc-backref" href="#id4">ST-Util and ST-Link</a><a class="headerlink" href="#st-util-and-st-link" title="Permalink to this headline">¶</a></h3>
 <p>On-board ST-Link V2/V2-1 in pair with <a class="reference external" href="https://github.com/texane/stlink">ST-Util GDB Server</a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">mbed</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">debug_port</span> <span class="o">=</span> <span class="s">:4242</span>
-<span class="na">debug_server</span> <span class="o">=</span> <span class="s">$PLATFORMIO_CORE_DIR/packages/tool-stlink/bin/st-util</span>
-<span class="na">debug_init_cmds</span> <span class="o">=</span>
-  <span class="na">define pio_reset_halt_target</span>
-      <span class="na">monitor reset</span>
-      <span class="na">monitor halt</span>
-  <span class="na">end</span>
-  <span class="na">define pio_reset_run_target</span>
-      <span class="na">monitor reset</span>
-  <span class="na">end</span>
-  <span class="na">target extended-remote $DEBUG_PORT</span>
-  <span class="na">$LOAD_CMDS</span>
-  <span class="na">pio_reset_halt_target</span>
-  <span class="na">$INIT_BREAK</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">debug_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">:4242</span><span class="w"></span>
+<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">$PLATFORMIO_CORE_DIR/packages/tool-stlink/bin/st-util</span><span class="w"></span>
+<span class="na">debug_init_cmds</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">define pio_reset_halt_target</span><span class="w"></span>
+<span class="w">      </span><span class="na">monitor reset</span><span class="w"></span>
+<span class="w">      </span><span class="na">monitor halt</span><span class="w"></span>
+<span class="w">  </span><span class="na">end</span><span class="w"></span>
+<span class="w">  </span><span class="na">define pio_reset_run_target</span><span class="w"></span>
+<span class="w">      </span><span class="na">monitor reset</span><span class="w"></span>
+<span class="w">  </span><span class="na">end</span><span class="w"></span>
+<span class="w">  </span><span class="na">target extended-remote $DEBUG_PORT</span><span class="w"></span>
+<span class="w">  </span><span class="na">$LOAD_CMDS</span><span class="w"></span>
+<span class="w">  </span><span class="na">pio_reset_halt_target</span><span class="w"></span>
+<span class="w">  </span><span class="na">$INIT_BREAK</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="openocd-and-st-link">
 <h3><a class="toc-backref" href="#id5">OpenOCD and ST-Link</a><a class="headerlink" href="#openocd-and-st-link" title="Permalink to this headline">¶</a></h3>
 <p>On-board ST-Link V2/V2-1 in pair with <a class="reference external" href="http://openocd.org">OpenOCD GDB Server</a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">mbed</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">debug_server</span> <span class="o">=</span>
-  <span class="na">$PLATFORMIO_CORE_DIR/packages/tool-openocd/bin/openocd</span>
-  <span class="na">-f</span>
-  <span class="na">$PLATFORMIO_CORE_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">$PLATFORMIO_CORE_DIR/packages/tool-openocd/bin/openocd</span><span class="w"></span>
+<span class="w">  </span><span class="na">-f</span><span class="w"></span>
+<span class="w">  </span><span class="na">$PLATFORMIO_CORE_DIR/packages/tool-openocd/scripts/board/st_nucleo_f4.cfg</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -364,12 +364,12 @@ to a valid identifier. See supported J-Link devices at <a class="reference inter
 <p>Using pyOCD for CMSIS-DAP based boards</p>
 <p>Firstly, please install <a class="reference external" href="https://github.com/mbedmicro/pyOCD">pyOCD</a> and
 check that <code class="docutils literal notranslate"><span class="pre">pyocd-gdbserver</span> <span class="pre">--version</span></code> command works.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">mbed</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">debug_server</span> <span class="o">=</span> <span class="s">pyocd-gdbserver</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pyocd-gdbserver</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -446,7 +446,7 @@ check that <code class="docutils literal notranslate"><span class="pre">pyocd-gd
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

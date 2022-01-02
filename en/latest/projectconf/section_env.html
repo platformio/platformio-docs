@@ -166,40 +166,40 @@ shared between all <code class="docutils literal notranslate"><span class="pre">
 file. It is very useful if the configuration file has a lot of
 environments <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> and they share common settings.</p>
 <p>For example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_l152re</span>
-<span class="na">lib_deps</span> <span class="o">=</span> <span class="s">Dep1, Dep2</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_l152re</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Dep1, Dep2</span><span class="w"></span>
 
-<span class="k">[env:release]</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D RELEASE</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-    <span class="na">${env.lib_deps}</span>
-    <span class="na">Dep3</span>
+<span class="k">[env:release]</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D RELEASE</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">${env.lib_deps}</span><span class="w"></span>
+<span class="w">    </span><span class="na">Dep3</span><span class="w"></span>
 
-<span class="k">[env:debug]</span>
-<span class="na">build_type</span> <span class="o">=</span> <span class="s">debug</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D DEBUG</span>
-<span class="na">lib_deps</span> <span class="o">=</span> <span class="s">DepCustom</span>
+<span class="k">[env:debug]</span><span class="w"></span>
+<span class="na">build_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">debug</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D DEBUG</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">DepCustom</span><span class="w"></span>
 </pre></div>
 </div>
 <p>In this example we have two configuration environments <code class="docutils literal notranslate"><span class="pre">release</span></code> and <code class="docutils literal notranslate"><span class="pre">debug</span></code>. This
 is equivalent to duplicating all options as shown below:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:release]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_l152re</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D RELEASE</span>
-<span class="na">lib_deps</span> <span class="o">=</span> <span class="s">Dep1, Dep2, Dep3</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:release]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_l152re</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D RELEASE</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Dep1, Dep2, Dep3</span><span class="w"></span>
 
-<span class="k">[env:debug]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_l152re</span>
-<span class="na">build_type</span> <span class="o">=</span> <span class="s">debug</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D DEBUG</span>
-<span class="na">lib_deps</span> <span class="o">=</span> <span class="s">DepCustom</span>
+<span class="k">[env:debug]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_l152re</span><span class="w"></span>
+<span class="na">build_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">debug</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D DEBUG</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">DepCustom</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -379,7 +379,7 @@ The [platformio] <a class="reference internal" href="section_platformio.html#pro
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

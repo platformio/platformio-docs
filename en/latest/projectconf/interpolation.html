@@ -180,57 +180,57 @@ environments, please take a look at <strong>“Global scope”</strong> in
 allows extending of other sections.</p>
 </div>
 <p><strong>Example:</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; COMMON options</span>
-<span class="c1">; Each &quot;[env:***]&quot; extends this &quot;[env]&quot; by default</span>
-<span class="k">[env]</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D VERSION=1.2.3</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; COMMON options</span><span class="w"></span>
+<span class="c1">; Each &quot;[env:***]&quot; extends this &quot;[env]&quot; by default</span><span class="w"></span>
+<span class="k">[env]</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D VERSION=1.2.3</span><span class="w"></span>
 
-<span class="c1">; CUSTOM options</span>
-<span class="c1">; You need manually inject these options into a section</span>
-<span class="c1">; using ${extra.&lt;name_of_option&gt;} (see below)</span>
-<span class="k">[extra]</span>
-<span class="na">lib_deps_builtin</span> <span class="o">=</span>
-  <span class="na">SPI</span>
-  <span class="na">Wire</span>
-<span class="na">lib_deps_external</span> <span class="o">=</span>
-  <span class="na">bblanchon/ArduinoJson@&gt;5.6.0</span>
+<span class="c1">; CUSTOM options</span><span class="w"></span>
+<span class="c1">; You need manually inject these options into a section</span><span class="w"></span>
+<span class="c1">; using ${extra.&lt;name_of_option&gt;} (see below)</span><span class="w"></span>
+<span class="k">[extra]</span><span class="w"></span>
+<span class="na">lib_deps_builtin</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">SPI</span><span class="w"></span>
+<span class="w">  </span><span class="na">Wire</span><span class="w"></span>
+<span class="na">lib_deps_external</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">bblanchon/ArduinoJson@&gt;5.6.0</span><span class="w"></span>
 
-<span class="k">[env:uno]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-  <span class="na">${extra.lib_deps_builtin}</span>
-  <span class="na">${extra.lib_deps_external}</span>
+<span class="k">[env:uno]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
+<span class="w">  </span><span class="na">${extra.lib_deps_external}</span><span class="w"></span>
 
-<span class="k">[env:nodemcuv2]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${env.build_flags} -Wall</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-  <span class="na">${extra.lib_deps_builtin}</span>
-  <span class="na">${extra.lib_deps_external}</span>
-  <span class="na">knolleary/PubSubClient @ ~2.6</span>
-  <span class="na">paulstoffregen/OneWire @ ^2.3.5</span>
+<span class="k">[env:nodemcuv2]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.build_flags} -Wall</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
+<span class="w">  </span><span class="na">${extra.lib_deps_external}</span><span class="w"></span>
+<span class="w">  </span><span class="na">knolleary/PubSubClient @ ~2.6</span><span class="w"></span>
+<span class="w">  </span><span class="na">paulstoffregen/OneWire @ ^2.3.5</span><span class="w"></span>
 
-<span class="c1">; Keep sensitive data in environment variables</span>
-<span class="c1">;</span>
-<span class="c1">; Unix</span>
-<span class="c1">; export WIFI_SSID=&#39;\&quot;my\ ssid\ name\&quot;&#39;</span>
-<span class="c1">; export WIFI_PASS=&#39;\&quot;my\ password\&quot;&#39;</span>
-<span class="c1">;</span>
-<span class="c1">; Windows</span>
-<span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span>
-<span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span>
+<span class="c1">; Keep sensitive data in environment variables</span><span class="w"></span>
+<span class="c1">;</span><span class="w"></span>
+<span class="c1">; Unix</span><span class="w"></span>
+<span class="c1">; export WIFI_SSID=&#39;\&quot;my\ ssid\ name\&quot;&#39;</span><span class="w"></span>
+<span class="c1">; export WIFI_PASS=&#39;\&quot;my\ password\&quot;&#39;</span><span class="w"></span>
+<span class="c1">;</span><span class="w"></span>
+<span class="c1">; Windows</span><span class="w"></span>
+<span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span><span class="w"></span>
+<span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span><span class="w"></span>
 
-<span class="k">[env:esp32dev]</span>
-<span class="na">extends</span> <span class="o">=</span> <span class="s">env:nodemcuv2</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">${env.build_flags}</span>
-  <span class="na">-DWIFI_SSID</span><span class="o">=</span><span class="s">${sysenv.WIFI_SSID}</span>
-  <span class="na">-DWIFI_PASS</span><span class="o">=</span><span class="s">${sysenv.WIFI_PASS}</span>
+<span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">extends</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">env:nodemcuv2</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">${env.build_flags}</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DWIFI_SSID</span><span class="o">=</span><span class="s">${sysenv.WIFI_SSID}</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DWIFI_PASS</span><span class="o">=</span><span class="s">${sysenv.WIFI_PASS}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -314,7 +314,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

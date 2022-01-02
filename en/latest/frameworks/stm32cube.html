@@ -256,11 +256,11 @@ what framework modules (ADC, DMA, etc.) are enabled.</p>
 <code class="docutils literal notranslate"><span class="pre">stm32YYxx_hal_conf_template.h</span></code> and renames it to <code class="docutils literal notranslate"><span class="pre">stm32YYxx_hal_conf.h</span></code> expected by
 the internal framework implementation. This behavior can be disabled via a special
 option <code class="docutils literal notranslate"><span class="pre">custom_config_header</span></code> set in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">board_build.stm32cube.custom_config_header</span> <span class="o">=</span> <span class="s">yes</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f401re</span><span class="w"></span>
+<span class="na">board_build.stm32cube.custom_config_header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Note that the location for the custom configuration header is not strictly limited as
@@ -275,11 +275,11 @@ default implementations shipped with the framework according to the MCU field sp
 in a board manifest. If this functionality is already implemented as part of your project,
 you can force PlatformIO to skip adding default implementations via the <code class="docutils literal notranslate"><span class="pre">custom_system_setup</span></code>
 option, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">board_build.stm32cube.custom_system_setup</span> <span class="o">=</span> <span class="s">yes</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f401re</span><span class="w"></span>
+<span class="na">board_build.stm32cube.custom_system_setup</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -293,11 +293,11 @@ only one default implementation. It’s mostly used with dual-core targets (e.g.
 which can have several implementations for different boot settings of available CPU cores.
 The desired implementation can be selected via a special option <code class="docutils literal notranslate"><span class="pre">system_file</span></code>
 in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_h747xi]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">disco_h747xi</span>
-<span class="na">board_build.stm32cube.system_file</span> <span class="o">=</span> <span class="s">system_stm32h7xx_dualcore_bootcm7_cm4gated.c</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_h747xi]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">disco_h747xi</span><span class="w"></span>
+<span class="na">board_build.stm32cube.system_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">system_stm32h7xx_dualcore_bootcm7_cm4gated.c</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -311,11 +311,11 @@ and program counter, initializes memory, etc. In most cases, PlatformIO is capab
 automatically selecting a proper startup file according to the MCU field specified in a
 board manifest. In case this feature fails, it’s possible to manually specify the desired
 startup file, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_board_name]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">custom_board_name</span>
-<span class="na">board_build.stm32cube.startup_file</span> <span class="o">=</span> <span class="s">startup_stm32l152xca.s</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_board_name]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom_board_name</span><span class="w"></span>
+<span class="na">board_build.stm32cube.startup_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">startup_stm32l152xca.s</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -327,11 +327,11 @@ middleware, etc.), so <a class="reference internal" href="../librarymanager/ldf.
 suitable components will be added to the build process as standalone libraries.
 If your project doesn’t require this feature, it can be disabled via the
 <code class="docutils literal notranslate"><span class="pre">disable_embedded_libs</span></code> option, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_f303vc]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">disco_f303vc</span>
-<span class="na">board_build.stm32cube.disable_embedded_libs</span> <span class="o">=</span> <span class="s">yes</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_f303vc]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">disco_f303vc</span><span class="w"></span>
+<span class="na">board_build.stm32cube.disable_embedded_libs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -342,11 +342,11 @@ If your project doesn’t require this feature, it can be disabled via the
 for various development kits. These BSPs mostly contain drivers for on-board hardware
 modules (displays, sensors, etc.). The <code class="docutils literal notranslate"><span class="pre">variant</span></code> option is used to select what
 target-specific macros should be used when compiling BSP components, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_g474re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_g474re</span>
-<span class="na">board_build.stm32cube.variant</span> <span class="o">=</span> <span class="s">STM32G4xx_Nucleo</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_g474re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_g474re</span><span class="w"></span>
+<span class="na">board_build.stm32cube.variant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">STM32G4xx_Nucleo</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -358,11 +358,11 @@ DSP functions. By default, PlatformIO adds paths to these headers and archives t
 STM32Cube-based project. If a project already has its own implementation of the DSP
 library and to avoid possible conflicts with the default DSP library shipped with the
 framework, the <code class="docutils literal notranslate"><span class="pre">custom_dsp_library</span></code> can be used:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">board_build.stm32cube.custom_dsp_library</span> <span class="o">=</span> <span class="s">yes</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f401re</span><span class="w"></span>
+<span class="na">board_build.stm32cube.custom_dsp_library</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -5539,7 +5539,7 @@ Please click on board name for the further details.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

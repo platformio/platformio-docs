@@ -333,13 +333,13 @@ configuration is performed by the native for the ESP-IDF build system called <co
 <p>It’s also possible to use the default ESP-IDF project structure with <code class="docutils literal notranslate"><span class="pre">main</span></code> folder.
 To specify <code class="docutils literal notranslate"><span class="pre">main</span></code> as the folder with source files use <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>
 option, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
-<span class="na">src_dir</span> <span class="o">=</span> <span class="s">main</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
+<span class="na">src_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">main</span><span class="w"></span>
 
-<span class="k">[env:esp32dev]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
+<span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -351,7 +351,7 @@ ULP configuration, adding extra components, etc. A typical <code class="docutils
 the root folder has the following content:</p>
 <div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="c"># The following lines of boilerplate have to be in your project&#39;s CMakeLists</span>
 <span class="c"># in this exact order for cmake to work correctly</span>
-<span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.16.0</span><span class="p">)</span>
+<span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.16.0</span><span class="p">)</span>
 
 <span class="nb">include</span><span class="p">(</span><span class="o">$ENV{</span><span class="nv">IDF_PATH</span><span class="o">}</span><span class="s">/tools/cmake/project.cmake</span><span class="p">)</span>
 <span class="nb">project</span><span class="p">(</span><span class="s">project-name</span><span class="p">)</span>
@@ -361,7 +361,7 @@ the root folder has the following content:</p>
 controlling the build process of the component and its integration into the overall
 project. The minimal component <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file simply registers the component to
 the build system using <code class="docutils literal notranslate"><span class="pre">idf_component_register</span></code>:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span> <span class="s2">&quot;foo.c&quot;</span> <span class="s2">&quot;bar.c&quot;</span><span class="p">)</span>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span><span class="w"> </span><span class="s2">&quot;foo.c&quot;</span><span class="w"> </span><span class="s2">&quot;bar.c&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The files specified using <code class="docutils literal notranslate"><span class="pre">idf_component_register</span></code> are used <strong>ONLY</strong> for generating
@@ -373,7 +373,7 @@ files in order to keep the project compatible with the usual ESP-IDF workflow.</
 the same time, the default location for source files within the ESP-IDF build system
 is a special folder with the name <code class="docutils literal notranslate"><span class="pre">main</span></code>. Renaming the main component may require
 users to manually specify additional dependencies:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span> <span class="s2">&quot;main.c&quot;</span> <span class="s">REQUIRES</span> <span class="s">idf::mbedtls</span><span class="p">)</span>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span><span class="w"> </span><span class="s2">&quot;main.c&quot;</span><span class="w"> </span><span class="s">REQUIRES</span><span class="w"> </span><span class="s">idf::mbedtls</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>More details in the official ESP-IDF documentation -
@@ -412,10 +412,10 @@ represents a list of extra directories to search for components.</p></li>
 <p>An example of specifying <code class="docutils literal notranslate"><span class="pre">esp-aws-iot</span></code> as an extra component:</p>
 <div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="c"># The following lines of boilerplate have to be in your project&#39;s CMakeLists</span>
 <span class="c"># in this exact order for cmake to work correctly</span>
-<span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.16</span><span class="p">)</span>
+<span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.16</span><span class="p">)</span>
 
 <span class="nb">include</span><span class="p">(</span><span class="o">$ENV{</span><span class="nv">IDF_PATH</span><span class="o">}</span><span class="s">/tools/cmake/project.cmake</span><span class="p">)</span>
-<span class="nb">list</span><span class="p">(</span><span class="s">APPEND</span> <span class="s">EXTRA_COMPONENT_DIRS</span> <span class="s">esp-aws-iot</span><span class="p">)</span>
+<span class="nb">list</span><span class="p">(</span><span class="s">APPEND</span><span class="w"> </span><span class="s">EXTRA_COMPONENT_DIRS</span><span class="w"> </span><span class="s">esp-aws-iot</span><span class="p">)</span>
 <span class="nb">project</span><span class="p">(</span><span class="s">subscribe_publish</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -451,25 +451,25 @@ of your project. So your project structure should look like this:</p>
 <p>Since PlatformIO uses the code model generated by CMake it’s mandatory to specify ULP
 source files in <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> as well. An example of typical <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>
 for ULP:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span> <span class="s2">&quot;ulp_adc_example_main.c&quot;</span><span class="p">)</span>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span><span class="w"> </span><span class="s2">&quot;ulp_adc_example_main.c&quot;</span><span class="p">)</span>
 <span class="c">#</span>
 <span class="c"># ULP support additions to component CMakeLists.txt.</span>
 <span class="c">#</span>
 <span class="c"># 1. The ULP app name must be &quot;ulp_main&quot;</span>
-<span class="nb">set</span><span class="p">(</span><span class="s">ulp_app_name</span> <span class="s">ulp_main</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">ulp_app_name</span><span class="w"> </span><span class="s">ulp_main</span><span class="p">)</span>
 <span class="c">#</span>
 <span class="c"># 2. Specify all assembly source files.</span>
 <span class="c">#    Paths are relative because ULP files are placed into a special directory &quot;ulp&quot;</span>
 <span class="c">#    in the root of the project</span>
-<span class="nb">set</span><span class="p">(</span><span class="s">ulp_s_sources</span> <span class="s2">&quot;../ulp/adc.S&quot;</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">ulp_s_sources</span><span class="w"> </span><span class="s2">&quot;../ulp/adc.S&quot;</span><span class="p">)</span>
 <span class="c">#</span>
 <span class="c"># 3. List all the component source files which include automatically</span>
 <span class="c">#    generated ULP export file, ${ulp_app_name}.h:</span>
-<span class="nb">set</span><span class="p">(</span><span class="s">ulp_exp_dep_srcs</span> <span class="s2">&quot;ulp_adc_example_main.c&quot;</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">ulp_exp_dep_srcs</span><span class="w"> </span><span class="s2">&quot;ulp_adc_example_main.c&quot;</span><span class="p">)</span>
 <span class="c">#</span>
 <span class="c"># 4. Call function to build ULP binary and embed in project using the argument</span>
 <span class="c">#    values above.</span>
-<span class="nb">ulp_embed_binary</span><span class="p">(</span><span class="o">${</span><span class="nv">ulp_app_name</span><span class="o">}</span> <span class="o">${</span><span class="nv">ulp_s_sources</span><span class="o">}</span> <span class="o">${</span><span class="nv">ulp_exp_dep_srcs</span><span class="o">}</span><span class="p">)</span>
+<span class="nb">ulp_embed_binary</span><span class="p">(</span><span class="o">${</span><span class="nv">ulp_app_name</span><span class="o">}</span><span class="w"> </span><span class="o">${</span><span class="nv">ulp_s_sources</span><span class="o">}</span><span class="w"> </span><span class="o">${</span><span class="nv">ulp_exp_dep_srcs</span><span class="o">}</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>See full examples with ULP coprocessor programming:</p>
@@ -489,13 +489,13 @@ for ULP:</p>
 This affects users that have a whitespace in their username or added a whitespace to
 the project name. As a workaround, it’s recommended to move <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>
 to a folder without spaces. For example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
-<span class="na">core_dir</span> <span class="o">=</span> <span class="s">C:/.platformio</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
+<span class="na">core_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">C:/.platformio</span><span class="w"></span>
 
-<span class="k">[env:esp32dev]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
+<span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -512,11 +512,11 @@ platform releases. Please check the <a class="reference external" href="https://
 to figure out what version of the platform should be installed to use required ESP-IDF
 version, for example:</p>
 <blockquote>
-<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
-<span class="c1">; v1.10.0 is the last version that supports ESP-IDF v3.3</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32@1.10.0</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
+<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="c1">; v1.10.0 is the last version that supports ESP-IDF v3.3</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@1.10.0</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -3512,7 +3512,7 @@ Please click on board name for the further details.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

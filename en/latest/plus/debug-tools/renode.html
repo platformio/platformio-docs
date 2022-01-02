@@ -202,10 +202,10 @@ For more information, see <a class="reference external" href="https://renode.io/
 <h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <p>You can configure Renode as a debugging tool using <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in
 <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">renode</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">renode</span><span class="w"></span>
 </pre></div>
 </div>
 <p>More options:</p>
@@ -244,17 +244,17 @@ typical use cases where custom settings might be useful.</p>
 peripheral which is not visible by default. For example, to open an additional UART
 window while using Renode as the upload tool, a special command <code class="docutils literal notranslate"><span class="pre">showAnalyzer</span></code> should
 be added to <code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option, e.g.:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hifive1-revb]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">sifive</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">zephyr</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">hifive1-revb</span>
-<span class="c1">; Override the default upload settings</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">renode $UPLOAD_FLAGS</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-e include @scripts/single-node/sifive_fe310.resc</span>
-    <span class="na">-e showAnalyzer uart1</span>
-    <span class="na">-e sysbus LoadELF @$SOURCE</span>
-    <span class="na">-e start</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hifive1-revb]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">zephyr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">hifive1-revb</span><span class="w"></span>
+<span class="c1">; Override the default upload settings</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">renode $UPLOAD_FLAGS</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-e include @scripts/single-node/sifive_fe310.resc</span><span class="w"></span>
+<span class="w">    </span><span class="na">-e showAnalyzer uart1</span><span class="w"></span>
+<span class="w">    </span><span class="na">-e sysbus LoadELF @$SOURCE</span><span class="w"></span>
+<span class="w">    </span><span class="na">-e start</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -266,23 +266,23 @@ can be opened by <a class="reference internal" href="../../core/userguide/device
 The default debug flags can be overridden using the <code class="docutils literal notranslate"><span class="pre">debug_server</span></code> option. For
 example, the following configuration can be used to redirect output from the <code class="docutils literal notranslate"><span class="pre">UART0</span></code>
 port on the <code class="docutils literal notranslate"><span class="pre">hifive1-revb</span></code> board:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hifive1-revb]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">sifive</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">zephyr</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">hifive1-revb</span>
-<span class="c1">; Override the default debug settings</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">debug_port</span> <span class="o">=</span> <span class="s">localhost:3333</span>
-<span class="na">debug_server</span> <span class="o">=</span> <span class="s">renode</span>
-  <span class="na">--hide-log</span>
-  <span class="na">-e machine StartGdbServer 3333 True</span>
-  <span class="na">-e emulation CreateServerSocketTerminal 4321 &quot;externalUART&quot; false</span>
-  <span class="na">-e connector Connect uart0 externalUART</span>
-<span class="na">debug_extra_cmds</span> <span class="o">=</span>
-    <span class="na">monitor start</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hifive1-revb]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">zephyr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">hifive1-revb</span><span class="w"></span>
+<span class="c1">; Override the default debug settings</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">debug_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">localhost:3333</span><span class="w"></span>
+<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">renode</span><span class="w"></span>
+<span class="w">  </span><span class="na">--hide-log</span><span class="w"></span>
+<span class="w">  </span><span class="na">-e machine StartGdbServer 3333 True</span><span class="w"></span>
+<span class="w">  </span><span class="na">-e emulation CreateServerSocketTerminal 4321 &quot;externalUART&quot; false</span><span class="w"></span>
+<span class="w">  </span><span class="na">-e connector Connect uart0 externalUART</span><span class="w"></span>
+<span class="na">debug_extra_cmds</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">monitor start</span><span class="w"></span>
 
-<span class="c1"># Monitor port for Renode integration</span>
-<span class="na">monitor_port</span> <span class="o">=</span> <span class="s">socket://localhost:4321</span>
+<span class="c1"># Monitor port for Renode integration</span><span class="w"></span>
+<span class="na">monitor_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">socket://localhost:4321</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -504,7 +504,7 @@ port on the <code class="docutils literal notranslate"><span class="pre">hifive1
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

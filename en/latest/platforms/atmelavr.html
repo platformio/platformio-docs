@@ -227,151 +227,151 @@ the <code class="docutils literal notranslate"><span class="pre">avrdude</span> 
 <p>Configuration for the programmers:</p>
 <ul>
 <li><p>AVRISP</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_AVRISP]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">SERIAL_PORT_HERE</span>
-<span class="na">upload_speed</span> <span class="o">=</span> <span class="s">19200</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-C</span>
-    <span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span>
-    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
-    <span class="na">-p</span>
-    <span class="na">$BOARD_MCU</span>
-    <span class="na">-P</span>
-    <span class="na">$UPLOAD_PORT</span>
-    <span class="na">-b</span>
-    <span class="na">$UPLOAD_SPEED</span>
-    <span class="na">-c</span>
-    <span class="na">stk500v1</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_AVRISP]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">SERIAL_PORT_HERE</span><span class="w"></span>
+<span class="na">upload_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">19200</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-C</span><span class="w"></span>
+<span class="w">    </span><span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-p</span><span class="w"></span>
+<span class="w">    </span><span class="na">$BOARD_MCU</span><span class="w"></span>
+<span class="w">    </span><span class="na">-P</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_PORT</span><span class="w"></span>
+<span class="w">    </span><span class="na">-b</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_SPEED</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">stk500v1</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 <li><p>AVRISP mkII</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_AVRISP_mkII]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">usb</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-C</span>
-    <span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span>
-    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
-    <span class="na">-p</span>
-    <span class="na">$BOARD_MCU</span>
-    <span class="na">-P</span>
-    <span class="na">$UPLOAD_PORT</span>
-    <span class="na">-c</span>
-    <span class="na">stk500v2</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_AVRISP_mkII]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">usb</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-C</span><span class="w"></span>
+<span class="w">    </span><span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-p</span><span class="w"></span>
+<span class="w">    </span><span class="na">$BOARD_MCU</span><span class="w"></span>
+<span class="w">    </span><span class="na">-P</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_PORT</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">stk500v2</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 <li><p>USBtinyISP</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">usbtiny</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">usbtiny</span><span class="w"></span>
 
-<span class="k">[env:program_via_USBtinyISP]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-C</span>
-    <span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span>
-    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
-    <span class="na">-p</span>
-    <span class="na">$BOARD_MCU</span>
-    <span class="na">-c</span>
-    <span class="na">usbtiny</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span>
+<span class="k">[env:program_via_USBtinyISP]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-C</span><span class="w"></span>
+<span class="w">    </span><span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-p</span><span class="w"></span>
+<span class="w">    </span><span class="na">$BOARD_MCU</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">usbtiny</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 <li><p>Arduino as ISP</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_ArduinoISP]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">SERIAL_PORT_HERE</span>
-<span class="na">upload_speed</span> <span class="o">=</span> <span class="s">19200</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-C</span>
-    <span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span>
-    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
-    <span class="na">-p</span>
-    <span class="na">$BOARD_MCU</span>
-    <span class="na">-P</span>
-    <span class="na">$UPLOAD_PORT</span>
-    <span class="na">-b</span>
-    <span class="na">$UPLOAD_SPEED</span>
-    <span class="na">-c</span>
-    <span class="na">stk500v1</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_ArduinoISP]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">SERIAL_PORT_HERE</span><span class="w"></span>
+<span class="na">upload_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">19200</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-C</span><span class="w"></span>
+<span class="w">    </span><span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-p</span><span class="w"></span>
+<span class="w">    </span><span class="na">$BOARD_MCU</span><span class="w"></span>
+<span class="w">    </span><span class="na">-P</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_PORT</span><span class="w"></span>
+<span class="w">    </span><span class="na">-b</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_SPEED</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">stk500v1</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 <li><p>USBasp</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_USBasp]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">usb</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-C</span>
-    <span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span>
-    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
-    <span class="na">-p</span>
-    <span class="na">$BOARD_MCU</span>
-    <span class="na">-P</span>
-    <span class="na">$UPLOAD_PORT</span>
-    <span class="na">-c</span>
-    <span class="na">usbasp</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_USBasp]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">usb</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-C</span><span class="w"></span>
+<span class="w">    </span><span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-p</span><span class="w"></span>
+<span class="w">    </span><span class="na">$BOARD_MCU</span><span class="w"></span>
+<span class="w">    </span><span class="na">-P</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_PORT</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">usbasp</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 <li><p>Parallel Programmer</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_PP]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-C</span>
-    <span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span>
-    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
-    <span class="na">-p</span>
-    <span class="na">$BOARD_MCU</span>
-    <span class="na">-c</span>
-    <span class="na">dapa</span>
-    <span class="na">-F</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_PP]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-C</span><span class="w"></span>
+<span class="w">    </span><span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-p</span><span class="w"></span>
+<span class="w">    </span><span class="na">$BOARD_MCU</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">dapa</span><span class="w"></span>
+<span class="w">    </span><span class="na">-F</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 <li><p>Bus Pirate as ISP</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_BP]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">SERIAL_PORT_HERE</span>
-<span class="na">upload_speed</span> <span class="o">=</span> <span class="s">115200</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-C</span>
-    <span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span>
-    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
-    <span class="na">-p</span>
-    <span class="na">$BOARD_MCU</span>
-    <span class="na">-P</span>
-    <span class="na">$UPLOAD_PORT</span>
-    <span class="na">-b</span>
-    <span class="na">$UPLOAD_SPEED</span>
-    <span class="na">-c</span>
-    <span class="na">buspirate</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_BP]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">SERIAL_PORT_HERE</span><span class="w"></span>
+<span class="na">upload_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-C</span><span class="w"></span>
+<span class="w">    </span><span class="c1">; use &quot;tool-avrdude-megaavr&quot; for the atmelmegaavr platform</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-p</span><span class="w"></span>
+<span class="w">    </span><span class="na">$BOARD_MCU</span><span class="w"></span>
+<span class="w">    </span><span class="na">-P</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_PORT</span><span class="w"></span>
+<span class="w">    </span><span class="na">-b</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_SPEED</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">buspirate</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -390,12 +390,12 @@ or setting fuses. AVRDUDE provides a special flag <code class="docutils literal 
 executed. This will reset the contents of the flash ROM and EEPROM to the value <code class="docutils literal notranslate"><span class="pre">0xff</span></code>,
 and clear all lock bits. The easiest way to use it is to add this flag via the
 <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-flags"><span class="std std-ref">upload_flags</span></a> option:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-  <span class="na">-e</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-e</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -410,19 +410,19 @@ To set fuse bits you need to use target <code class="docutils literal notranslat
 <p>Custom fuse values and upload flags (based on upload protocol) should be specified in
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. The <code class="docutils literal notranslate"><span class="pre">lfuse</span></code> and <code class="docutils literal notranslate"><span class="pre">hfuse</span></code> bits are mandatory, <code class="docutils literal notranslate"><span class="pre">efuse</span></code> is optional
 and not supported by all targets. An example of setting custom fuses for <code class="docutils literal notranslate"><span class="pre">uno</span></code> board:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_fuses]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">stk500v1</span>
-<span class="na">upload_speed</span> <span class="o">=</span> <span class="s">19200</span>
-<span class="na">board_fuses.lfuse</span> <span class="o">=</span> <span class="s">0xAA</span>
-<span class="na">board_fuses.hfuse</span> <span class="o">=</span> <span class="s">0xBB</span>
-<span class="na">board_fuses.efuse</span> <span class="o">=</span> <span class="s">0xCC</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-PCOM15</span>
-    <span class="na">-b$UPLOAD_SPEED</span>
-    <span class="na">-e</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_fuses]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stk500v1</span><span class="w"></span>
+<span class="na">upload_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">19200</span><span class="w"></span>
+<span class="na">board_fuses.lfuse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xAA</span><span class="w"></span>
+<span class="na">board_fuses.hfuse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xBB</span><span class="w"></span>
+<span class="na">board_fuses.efuse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xCC</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-PCOM15</span><span class="w"></span>
+<span class="w">    </span><span class="na">-b$UPLOAD_SPEED</span><span class="w"></span>
+<span class="w">    </span><span class="na">-e</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -538,20 +538,20 @@ ATmega324PB and ATmega328PB. Use <code class="docutils literal notranslate"><spa
 </table>
 </div></blockquote>
 <p>Hardware configuration example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_fuses]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">ATmega32</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_fuses]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ATmega32</span><span class="w"></span>
 
-<span class="na">board_build.f_cpu</span> <span class="o">=</span> <span class="s">1000000L</span>
-<span class="na">board_hardware.uart</span> <span class="o">=</span> <span class="s">uart0</span>
-<span class="na">board_hardware.oscillator</span> <span class="o">=</span> <span class="s">internal</span>
-<span class="na">board_hardware.bod</span> <span class="o">=</span> <span class="s">2.7v</span>
-<span class="na">board_hardware.eesave</span> <span class="o">=</span> <span class="s">no</span>
+<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1000000L</span><span class="w"></span>
+<span class="na">board_hardware.uart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uart0</span><span class="w"></span>
+<span class="na">board_hardware.oscillator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">internal</span><span class="w"></span>
+<span class="na">board_hardware.bod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">2.7v</span><span class="w"></span>
+<span class="na">board_hardware.eesave</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">no</span><span class="w"></span>
 
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">usbasp</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-  <span class="na">-Pusb</span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">usbasp</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-Pusb</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -648,17 +648,17 @@ To upload a bootloader image you need to use target <code class="docutils litera
 If <code class="docutils literal notranslate"><span class="pre">lock_bits</span></code> and <code class="docutils literal notranslate"><span class="pre">unlock_bits</span></code> are not set then the default values <code class="docutils literal notranslate"><span class="pre">0x0F</span></code> and
 <code class="docutils literal notranslate"><span class="pre">0x3F</span></code> are used accordingly. An example of setting custom bootloader for <code class="docutils literal notranslate"><span class="pre">uno</span></code>
 board:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
 
-<span class="na">board_bootloader.file</span> <span class="o">=</span> <span class="s">/path/to/custom/bootloader.hex</span>
-<span class="na">board_bootloader.lfuse</span> <span class="o">=</span> <span class="s">0xFF</span>
-<span class="na">board_bootloader.hfuse</span> <span class="o">=</span> <span class="s">0xDE</span>
-<span class="na">board_bootloader.efuse</span> <span class="o">=</span> <span class="s">0xFD</span>
-<span class="na">board_bootloader.lock_bits</span> <span class="o">=</span> <span class="s">0x0F</span>
-<span class="na">board_bootloader.unlock_bits</span> <span class="o">=</span> <span class="s">0x3F</span>
+<span class="na">board_bootloader.file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/path/to/custom/bootloader.hex</span><span class="w"></span>
+<span class="na">board_bootloader.lfuse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xFF</span><span class="w"></span>
+<span class="na">board_bootloader.hfuse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xDE</span><span class="w"></span>
+<span class="na">board_bootloader.efuse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xFD</span><span class="w"></span>
+<span class="na">board_bootloader.lock_bits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0x0F</span><span class="w"></span>
+<span class="na">board_bootloader.unlock_bits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0x3F</span><span class="w"></span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">MiniCore</span></code>, <code class="docutils literal notranslate"><span class="pre">MegaCore</span></code>, <code class="docutils literal notranslate"><span class="pre">MightyCore</span></code> and <code class="docutils literal notranslate"><span class="pre">MajorCore</span></code> have a wide variety of
@@ -1876,23 +1876,23 @@ of Atmel AVR development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
-<span class="k">[env:latest_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
+<span class="k">[env:latest_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="c1">; Custom stable version</span>
-<span class="k">[env:custom_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr@x.y.z</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="c1">; Custom stable version</span><span class="w"></span>
+<span class="k">[env:custom_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@x.y.z</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="upstream">
 <h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-atmelavr.git</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-atmelavr.git</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -4569,7 +4569,7 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

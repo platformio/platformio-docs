@@ -315,11 +315,11 @@ added to <a class="reference internal" href="../projectconf/section_env_build.ht
 </tbody>
 </table>
 <p>An example of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> with enabled <code class="docutils literal notranslate"><span class="pre">rtos</span></code></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:wizwiki_w7500p]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">wiznet7500</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">mbed</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">wizwiki_w7500p</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D PIO_FRAMEWORK_MBED_RTOS_PRESENT</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:wizwiki_w7500p]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wiznet7500</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wizwiki_w7500p</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D PIO_FRAMEWORK_MBED_RTOS_PRESENT</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -360,9 +360,9 @@ time, you can explicitly exclude folders with redundant sources. For example, to
 <code class="docutils literal notranslate"><span class="pre">cellular</span></code>, <code class="docutils literal notranslate"><span class="pre">mbedtls</span></code> and <code class="docutils literal notranslate"><span class="pre">nanostack</span></code> features from the build process, navigate
 to <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a> and create a new file <code class="docutils literal notranslate"><span class="pre">framework-mbed/features/.mbedignore</span></code>
 with the following contents:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">cellular/*</span>
-<span class="na">mbedtls/*</span>
-<span class="na">nanostack/*</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">cellular/*</span><span class="w"></span>
+<span class="na">mbedtls/*</span><span class="w"></span>
+<span class="na">nanostack/*</span><span class="w"></span>
 </pre></div>
 </div>
 <p>If you want to exclude the entire folder, simply create <code class="docutils literal notranslate"><span class="pre">.mbedignore</span></code> file and add
@@ -374,51 +374,51 @@ only one symbol <code class="docutils literal notranslate"><span class="pre">*</
 manually add custom board definitions to your project. First of all, you need to create
 a special file <code class="docutils literal notranslate"><span class="pre">custom_targets.json</span></code> in the root folder of your project where you
 describe your board, for example here is the configuration for <code class="docutils literal notranslate"><span class="pre">NUCLEO-F401RE</span></code> board:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;NUCLEO_F401RE&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;inherits&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;MCU_STM32&quot;</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;supported_form_factors&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;ARDUINO&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;MORPHO&quot;</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;core&quot;</span><span class="p">:</span> <span class="s2">&quot;Cortex-M4F&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;extra_labels_add&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;STM32F4&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;STM32F401xE&quot;</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;macros_add&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;STM32F401xE&quot;</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;config&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;clock_source&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;USE_PLL_HSE_EXTC|USE_PLL_HSI&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;macro_name&quot;</span><span class="p">:</span> <span class="s2">&quot;CLOCK_SOURCE&quot;</span>
-        <span class="p">}</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;detect_code&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;0720&quot;</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;device_has_add&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;SERIAL_ASYNCH&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;FLASH&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;MPU&quot;</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;device_name&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F401RE&quot;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;NUCLEO_F401RE&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;inherits&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;MCU_STM32&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;supported_form_factors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;ARDUINO&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;MORPHO&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;core&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cortex-M4F&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;extra_labels_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;STM32F4&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;STM32F401xE&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;macros_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;STM32F401xE&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;clock_source&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;help&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;USE_PLL_HSE_EXTC|USE_PLL_HSI&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;macro_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLOCK_SOURCE&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;detect_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;0720&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;device_has_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;SERIAL_ASYNCH&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;FLASH&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;MPU&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;device_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;STM32F401RE&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Secondly, you need to add code specific to your target to the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder of your project.
 Usually, it’s a good idea to isolate this code in a separate folder and add the path to this folder
 to <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:my_custom_board]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">nxplpc</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">mbed</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">my_custom_board</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-I$PROJECT_SRC_DIR/MY_CUSTOM_BOARD_TARGET</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:my_custom_board]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nxplpc</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">my_custom_board</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-I$PROJECT_SRC_DIR/MY_CUSTOM_BOARD_TARGET</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Next, you need to inform PlatformIO that there is a new custom board. To do this, you can create
@@ -4376,7 +4376,7 @@ Please click on board name for the further details.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

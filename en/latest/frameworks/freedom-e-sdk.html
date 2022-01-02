@@ -191,10 +191,10 @@
 <h3>Using with FreeRTOS<a class="headerlink" href="#using-with-freertos" title="Permalink to this headline">¶</a></h3>
 <p>In order to add FreeRTOS to your project, it must be explicitly specified as an
 additional framework in the <code class="docutils literal notranslate"><span class="pre">framework</span></code> field of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:freertos]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">sifive</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">freedom-e-sdk, freertos</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:freertos]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">freedom-e-sdk, freertos</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -282,16 +282,16 @@ reveals the true runtime behavior of an application.</p>
 a context switch.</p>
 <p>An example of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> with modified heap settings and enabled SystemView
 feature:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:sifive-hifive1-revb]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">sifive</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">freedom-e-sdk, freertos</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">hifive1-revb</span>
-<span class="na">monitor_speed</span> <span class="o">=</span> <span class="s">115200</span>
-<span class="c1">; Configure stack size</span>
-<span class="na">board_build.freedom-e-sdk.heap_size</span> <span class="o">=</span> <span class="s">0x400</span>
-<span class="c1">; Configure heap model and enable SystemView</span>
-<span class="na">board_build.freertos.heap_model</span> <span class="o">=</span> <span class="s">heap_1</span>
-<span class="na">board_build.freertos.systemview</span> <span class="o">=</span> <span class="s">enable</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:sifive-hifive1-revb]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">freedom-e-sdk, freertos</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">hifive1-revb</span><span class="w"></span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
+<span class="c1">; Configure stack size</span><span class="w"></span>
+<span class="na">board_build.freedom-e-sdk.heap_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0x400</span><span class="w"></span>
+<span class="c1">; Configure heap model and enable SystemView</span><span class="w"></span>
+<span class="na">board_build.freertos.heap_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">heap_1</span><span class="w"></span>
+<span class="na">board_build.freertos.systemview</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">enable</span><span class="w"></span>
 </pre></div>
 </div>
 <p>More information about FreeRTOS package for <a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a> development platform
@@ -626,7 +626,7 @@ You do not need to use/buy external debug probe.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

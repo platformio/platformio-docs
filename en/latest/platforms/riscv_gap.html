@@ -221,11 +221,11 @@
 <p>Put a library somewhere on a disk and add this folder to library path using
 <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. For example,</p>
 <blockquote>
-<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">riscv_gap</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">gapuino</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-L/path/to/libtile/folder</span>
+<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">riscv_gap</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">gapuino</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-L/path/to/libtile/folder</span><span class="w"></span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -260,11 +260,11 @@ Default values are:</p>
 <h4><a class="toc-backref" href="#id14">Run from RAM (without any bridge interaction)</a><a class="headerlink" href="#run-from-ram-without-any-bridge-interaction" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p>Configure build environment using <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">riscv_gap</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">gapuino</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board_upload.commands</span> <span class="o">=</span> <span class="s">load start</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">riscv_gap</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">gapuino</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board_upload.commands</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">load start</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -280,12 +280,12 @@ Default values are:</p>
 <h4><a class="toc-backref" href="#id16">Flash and run from Flash</a><a class="headerlink" href="#flash-and-run-from-flash" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p>Configure build environment using <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">riscv_gap</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">gapuino</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board_upload.boot_mode</span> <span class="o">=</span> <span class="s">jtag_hyper</span>
-<span class="na">board_upload.commands</span> <span class="o">=</span> <span class="s">reqloop ioloop start wait</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">riscv_gap</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">gapuino</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board_upload.boot_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jtag_hyper</span><span class="w"></span>
+<span class="na">board_upload.commands</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">reqloop ioloop start wait</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -300,12 +300,12 @@ Default values are:</p>
 </div>
 <ul>
 <li><p>Configure build environment using <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">riscv_gap</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">gapuino</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board_upload.boot_mode</span> <span class="o">=</span> <span class="s">jtag_hyper</span>
-<span class="na">board_upload.commands</span> <span class="o">=</span> <span class="s">reqloop ioloop start wait</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">riscv_gap</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">gapuino</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board_upload.boot_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jtag_hyper</span><span class="w"></span>
+<span class="na">board_upload.commands</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">reqloop ioloop start wait</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -321,12 +321,12 @@ Default values are:</p>
 </div>
 <ul>
 <li><p>Configure build environment using <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">riscv_gap</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">gapuino</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board_upload.boot_mode</span> <span class="o">=</span> <span class="s">jtag_hyper</span>
-<span class="na">board_upload.commands</span> <span class="o">=</span> <span class="s">start</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gapuino]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">riscv_gap</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">gapuino</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board_upload.boot_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jtag_hyper</span><span class="w"></span>
+<span class="na">board_upload.commands</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">start</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -437,23 +437,23 @@ of RISC-V GAP development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
-<span class="k">[env:latest_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">riscv_gap</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
+<span class="k">[env:latest_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">riscv_gap</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="c1">; Custom stable version</span>
-<span class="k">[env:custom_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">riscv_gap@x.y.z</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="c1">; Custom stable version</span><span class="w"></span>
+<span class="k">[env:custom_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">riscv_gap@x.y.z</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="upstream">
 <h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-riscv_gap.git</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-riscv_gap.git</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -636,7 +636,7 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

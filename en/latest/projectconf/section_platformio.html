@@ -227,29 +227,29 @@ should be processed by default.</p>
 <p>This option can also be configured by the global environment variable
 <span class="target" id="index-1"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_DEFAULT_ENVS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_DEFAULT_ENVS</span></code></a>.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
-<span class="na">default_envs</span> <span class="o">=</span> <span class="s">uno, nodemcu</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
+<span class="na">default_envs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno, nodemcu</span><span class="w"></span>
 
-<span class="k">[env:uno]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
+<span class="k">[env:uno]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
 
-<span class="k">[env:nodemcu]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nodemcu</span>
+<span class="k">[env:nodemcu]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcu</span><span class="w"></span>
 
-<span class="k">[env:teensy31]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">teensy31</span>
+<span class="k">[env:teensy31]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy31</span><span class="w"></span>
 
-<span class="k">[env:lpmsp430g2553]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">timsp430</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">lpmsp430g2553</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D LED_BUILTIN=RED_LED</span>
+<span class="k">[env:lpmsp430g2553]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">timsp430</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">lpmsp430g2553</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D LED_BUILTIN=RED_LED</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -294,70 +294,70 @@ be overwritten with a value from extra configuration.</p>
 </div>
 <p><strong>Example</strong></p>
 <p><em>Base “platformio.ini”</em></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
-<span class="na">extra_configs</span> <span class="o">=</span>
-  <span class="na">extra_envs.ini</span>
-  <span class="na">extra_debug.ini</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
+<span class="na">extra_configs</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">extra_envs.ini</span><span class="w"></span>
+<span class="w">  </span><span class="na">extra_debug.ini</span><span class="w"></span>
 
-<span class="c1">; Global data for all [env:***]</span>
-<span class="k">[env]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
+<span class="c1">; Global data for all [env:***]</span><span class="w"></span>
+<span class="k">[env]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
 
-<span class="c1">; Custom data group</span>
-<span class="c1">; can be use in [env:***] via ${common.***}</span>
-<span class="k">[common]</span>
-<span class="na">debug_flags</span> <span class="o">=</span> <span class="s">-D RELEASE</span>
-<span class="na">lib_flags</span> <span class="o">=</span> <span class="s">-lc -lm</span>
+<span class="c1">; Custom data group</span><span class="w"></span>
+<span class="c1">; can be use in [env:***] via ${common.***}</span><span class="w"></span>
+<span class="k">[common]</span><span class="w"></span>
+<span class="na">debug_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D RELEASE</span><span class="w"></span>
+<span class="na">lib_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-lc -lm</span><span class="w"></span>
 
-<span class="k">[env:esp-wrover-kit]</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp-wrover-kit</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${common.debug_flags}</span>
+<span class="k">[env:esp-wrover-kit]</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp-wrover-kit</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${common.debug_flags}</span><span class="w"></span>
 </pre></div>
 </div>
 <p><em>“extra_envs.ini”</em></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${common.lib_flags} ${common.debug_flags}</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${common.lib_flags} ${common.debug_flags}</span><span class="w"></span>
 
-<span class="k">[env:lolin32]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">lolin32</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${common.debug_flags}</span>
+<span class="k">[env:lolin32]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">lolin32</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${common.debug_flags}</span><span class="w"></span>
 </pre></div>
 </div>
 <p><em>“extra_debug.ini”</em></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1"># Override base &quot;common.debug_flags&quot;</span>
-<span class="k">[common]</span>
-<span class="na">debug_flags</span> <span class="o">=</span> <span class="s">-D DEBUG=1</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1"># Override base &quot;common.debug_flags&quot;</span><span class="w"></span>
+<span class="k">[common]</span><span class="w"></span>
+<span class="na">debug_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D DEBUG=1</span><span class="w"></span>
 
-<span class="k">[env:lolin32]</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-Og</span>
+<span class="k">[env:lolin32]</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-Og</span><span class="w"></span>
 </pre></div>
 </div>
 <p>After a parsing process, configuration state will be the next:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[common]</span>
-<span class="na">debug_flags</span> <span class="o">=</span> <span class="s">-D DEBUG=1</span>
-<span class="na">lib_flags</span> <span class="o">=</span> <span class="s">-lc -lm</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[common]</span><span class="w"></span>
+<span class="na">debug_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D DEBUG=1</span><span class="w"></span>
+<span class="na">lib_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-lc -lm</span><span class="w"></span>
 
-<span class="k">[env:esp-wrover-kit]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp-wrover-kit</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${common.debug_flags}</span>
+<span class="k">[env:esp-wrover-kit]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp-wrover-kit</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${common.debug_flags}</span><span class="w"></span>
 
-<span class="k">[env:esp32dev]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${common.lib_flags} ${common.debug_flags}</span>
+<span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${common.lib_flags} ${common.debug_flags}</span><span class="w"></span>
 
-<span class="k">[env:lolin32]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">lolin32</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-Og</span>
+<span class="k">[env:lolin32]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">lolin32</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-Og</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -380,8 +380,8 @@ the number of installed development platforms.</p>
 <p>This option can also be configured by the global environment variable
 <span class="target" id="index-2"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_CORE_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_CORE_DIR</span></code></a>.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
-<span class="na">core_dir</span> <span class="o">=</span> <span class="s">/path/to/custom/pio-core/storage</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
+<span class="na">core_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/path/to/custom/pio-core/storage</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -432,23 +432,23 @@ check <a class="reference internal" href="#projectconf-pio-build-cache-dir"><spa
 <a class="reference internal" href="../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a> and project source files. The cached object will
 not be used if the original source file was modified or build environment has
 a different configuration (new build flags, etc):</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
-<span class="c1">; Set a path to a cache folder</span>
-<span class="na">build_cache_dir</span> <span class="o">=</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
+<span class="c1">; Set a path to a cache folder</span><span class="w"></span>
+<span class="na">build_cache_dir</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
 
-<span class="c1">; Examples:</span>
-<span class="c1">; (Unix) build_cache_dir = /path/to/cache/folder</span>
-<span class="c1">; (Windows) build_cache_dir = C:/path/to/cache/folder</span>
+<span class="c1">; Examples:</span><span class="w"></span>
+<span class="c1">; (Unix) build_cache_dir = /path/to/cache/folder</span><span class="w"></span>
+<span class="c1">; (Windows) build_cache_dir = C:/path/to/cache/folder</span><span class="w"></span>
 
-<span class="k">[env:bluepill_f103c6]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">bluepill_f103c6</span>
+<span class="k">[env:bluepill_f103c6]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">bluepill_f103c6</span><span class="w"></span>
 
-<span class="k">[env:nucleo_f411re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f411re</span>
+<span class="k">[env:nucleo_f411re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f411re</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -700,7 +700,7 @@ located in the root of the project.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

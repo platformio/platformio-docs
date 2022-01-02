@@ -195,16 +195,16 @@ can be found <a class="reference external" href="https://github.com/jdolinay/avr
 application and communicates with PlatformIO when a debug session is running. It
 requires several additional configuration steps in order to use it as a debug tool. To
 use avr-stub, the following settings in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">avr-stub</span>
-<span class="na">debug_port</span> <span class="o">=</span> <span class="s">SERIAL_PORT</span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avr-stub</span><span class="w"></span>
+<span class="na">debug_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">SERIAL_PORT</span><span class="w"></span>
 
-<span class="c1">; GDB stub implementation</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-    <span class="na">jdolinay/avr-debugger @ ~1.4</span>
+<span class="c1">; GDB stub implementation</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">jdolinay/avr-debugger @ ~1.4</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Where the value in <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-port"><span class="std std-ref">debug_port</span></a> is a serial port connected to your
@@ -283,19 +283,19 @@ bootloader.</p></td>
 </table>
 <p>To switch between modes, specify a special macro definition <code class="docutils literal notranslate"><span class="pre">AVR8_BREAKPOINT_MODE</span></code>
 with the appropriate value from the table above, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
 
-<span class="c1">; Set breakpoint mode</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DAVR8_BREAKPOINT_MODE</span><span class="o">=</span><span class="s">2</span>
+<span class="c1">; Set breakpoint mode</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DAVR8_BREAKPOINT_MODE</span><span class="o">=</span><span class="s">2</span><span class="w"></span>
 
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">avr-stub</span>
-<span class="na">debug_port</span> <span class="o">=</span> <span class="s">SERIAL_PORT</span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avr-stub</span><span class="w"></span>
+<span class="na">debug_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">SERIAL_PORT</span><span class="w"></span>
 
-<span class="na">lib_deps</span> <span class="o">=</span>
-    <span class="na">jdolinay/avr-debugger @ ~1.4</span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">jdolinay/avr-debugger @ ~1.4</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -917,7 +917,7 @@ section in <a class="reference external" href="https://github.com/jdolinay/avr_d
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

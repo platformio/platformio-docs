@@ -179,26 +179,26 @@ PlatformIO in CI services:</p>
 <section id="using-cmd-run-command">
 <h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this headline">¶</a></h3>
 <p>This variant is default choice for native PlatformIO projects:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python:3.9</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.9</span><span class="w"></span>
 
-<span class="nt">variables</span><span class="p">:</span>
-  <span class="nt">PIP_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span>
-  <span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span>
+<span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span><span class="w"></span>
 
-<span class="nt">cache</span><span class="p">:</span>
-  <span class="nt">paths</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span>
+<span class="nt">cache</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">paths</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span><span class="w"></span>
 
-<span class="nt">stages</span><span class="p">:</span>
- <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
+<span class="nt">stages</span><span class="p">:</span><span class="w"></span>
+<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
 
-<span class="nt">before_script</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio&quot;</span>
+<span class="nt">before_script</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio&quot;</span><span class="w"></span>
 
-<span class="nt">job</span><span class="p">:</span>
-  <span class="nt">stage</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
-  <span class="nt">script</span><span class="p">:</span> <span class="s">&quot;pio</span><span class="nv"> </span><span class="s">run</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_1&gt;</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_2&gt;</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_N&gt;&quot;</span>
+<span class="nt">job</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
+<span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pio</span><span class="nv"> </span><span class="s">run</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_1&gt;</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_2&gt;</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_N&gt;&quot;</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -207,27 +207,27 @@ PlatformIO in CI services:</p>
 <p>This variant is more convenient when project is written as a library (when there are
 examples or testing code) as it has additional options for specifying extra libraries
 and boards from command line interface:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python:3.9</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.9</span><span class="w"></span>
 
-<span class="nt">variables</span><span class="p">:</span>
-  <span class="nt">PIP_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span>
-  <span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span>
+<span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span><span class="w"></span>
 
-<span class="nt">cache</span><span class="p">:</span>
-  <span class="nt">paths</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span>
+<span class="nt">cache</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">paths</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span><span class="w"></span>
 
-<span class="nt">stages</span><span class="p">:</span>
- <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
+<span class="nt">stages</span><span class="p">:</span><span class="w"></span>
+<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
 
-<span class="nt">before_script</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio&quot;</span>
+<span class="nt">before_script</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio&quot;</span><span class="w"></span>
 
-<span class="nt">job</span><span class="p">:</span>
-  <span class="nt">stage</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
-  <span class="nt">script</span><span class="p">:</span> <span class="s">&quot;pio</span><span class="nv"> </span><span class="s">ci</span><span class="nv"> </span><span class="s">--board=&lt;ID_1&gt;</span><span class="nv"> </span><span class="s">--board=&lt;ID_2&gt;</span><span class="nv"> </span><span class="s">--board=&lt;ID_N&gt;&quot;</span>
-  <span class="nt">variables</span><span class="p">:</span> <span class="p p-Indicator">{</span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="s">&quot;path/to/test/file.c&quot;</span><span class="p p-Indicator">}</span>
+<span class="nt">job</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
+<span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pio</span><span class="nv"> </span><span class="s">ci</span><span class="nv"> </span><span class="s">--board=&lt;ID_1&gt;</span><span class="nv"> </span><span class="s">--board=&lt;ID_2&gt;</span><span class="nv"> </span><span class="s">--board=&lt;ID_N&gt;&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;path/to/test/file.c&quot;</span><span class="p p-Indicator">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -238,64 +238,64 @@ and boards from command line interface:</p>
 <li><p>Integration for <a class="reference external" href="https://github.com/bblanchon/ArduinoJson/">ArduinoJson</a> library
 project. The <code class="docutils literal notranslate"><span class="pre">.gitlab-ci.yml</span></code> configuration file:</p></li>
 </ol>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python:3.9</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.9</span><span class="w"></span>
 
-<span class="nt">variables</span><span class="p">:</span>
-  <span class="nt">PIP_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span>
-  <span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span> <span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span>
+<span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span><span class="w"></span>
 
-<span class="nt">cache</span><span class="p">:</span>
-  <span class="nt">paths</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span>
+<span class="nt">cache</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">paths</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span><span class="w"></span>
 
-<span class="nt">stages</span><span class="p">:</span>
- <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
+<span class="nt">stages</span><span class="p">:</span><span class="w"></span>
+<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
 
-<span class="nt">.job_template</span><span class="p">:</span> <span class="nl">&amp;pio_run</span>
-  <span class="nt">script</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="s">&quot;pio</span><span class="nv"> </span><span class="s">ci</span><span class="nv"> </span><span class="s">--lib=&#39;.&#39;</span><span class="nv"> </span><span class="s">--board=uno</span><span class="nv"> </span><span class="s">--board=teensy31</span><span class="nv"> </span><span class="s">--board=nodemcuv2</span><span class="nv"> </span><span class="s">$PLATFORMIO_CI_EXTRA_ARGS&quot;</span>
+<span class="nt">.job_template</span><span class="p">:</span><span class="w"> </span><span class="nl">&amp;pio_run</span><span class="w"></span>
+<span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;pio</span><span class="nv"> </span><span class="s">ci</span><span class="nv"> </span><span class="s">--lib=&#39;.&#39;</span><span class="nv"> </span><span class="s">--board=uno</span><span class="nv"> </span><span class="s">--board=teensy31</span><span class="nv"> </span><span class="s">--board=nodemcuv2</span><span class="nv"> </span><span class="s">$PLATFORMIO_CI_EXTRA_ARGS&quot;</span><span class="w"></span>
 
-<span class="nt">before_script</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio&quot;</span>
+<span class="nt">before_script</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio&quot;</span><span class="w"></span>
 
-<span class="nt">JsonGeneratorExample</span><span class="p">:</span>
-  <span class="nt">&lt;&lt;</span><span class="p">:</span> <span class="nv">*pio_run</span>
-  <span class="nt">variables</span><span class="p">:</span>
-    <span class="nt">PLATFORMIO_CI_EXTRA_ARGS</span><span class="p">:</span> <span class="s">&quot;--board=due&quot;</span>
-    <span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examples/JsonGeneratorExample</span>
+<span class="nt">JsonGeneratorExample</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&lt;&lt;</span><span class="p">:</span><span class="w"> </span><span class="nv">*pio_run</span><span class="w"></span>
+<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PLATFORMIO_CI_EXTRA_ARGS</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;--board=due&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examples/JsonGeneratorExample</span><span class="w"></span>
 
-<span class="nt">JsonHttpClient</span><span class="p">:</span>
-  <span class="nt">&lt;&lt;</span><span class="p">:</span> <span class="nv">*pio_run</span>
-  <span class="nt">variables</span><span class="p">:</span>
-    <span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examples/JsonHttpClient</span>
+<span class="nt">JsonHttpClient</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&lt;&lt;</span><span class="p">:</span><span class="w"> </span><span class="nv">*pio_run</span><span class="w"></span>
+<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examples/JsonHttpClient</span><span class="w"></span>
 
-<span class="nt">JsonParserExample</span><span class="p">:</span>
-  <span class="nt">&lt;&lt;</span><span class="p">:</span> <span class="nv">*pio_run</span>
-  <span class="nt">variables</span><span class="p">:</span>
-    <span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examples/JsonParserExample</span>
+<span class="nt">JsonParserExample</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&lt;&lt;</span><span class="p">:</span><span class="w"> </span><span class="nv">*pio_run</span><span class="w"></span>
+<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examples/JsonParserExample</span><span class="w"></span>
 
-<span class="nt">JsonServer</span><span class="p">:</span>
-  <span class="nt">&lt;&lt;</span><span class="p">:</span> <span class="nv">*pio_run</span>
-  <span class="nt">variables</span><span class="p">:</span>
-    <span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examples/JsonServer</span>
+<span class="nt">JsonServer</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&lt;&lt;</span><span class="p">:</span><span class="w"> </span><span class="nv">*pio_run</span><span class="w"></span>
+<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examples/JsonServer</span><span class="w"></span>
 
-<span class="nt">JsonUdpBeacon</span><span class="p">:</span>
-  <span class="nt">&lt;&lt;</span><span class="p">:</span> <span class="nv">*pio_run</span>
-  <span class="nt">variables</span><span class="p">:</span>
-    <span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examples/JsonUdpBeacon</span>
+<span class="nt">JsonUdpBeacon</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&lt;&lt;</span><span class="p">:</span><span class="w"> </span><span class="nv">*pio_run</span><span class="w"></span>
+<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examples/JsonUdpBeacon</span><span class="w"></span>
 
-<span class="nt">ProgmemExample</span><span class="p">:</span>
-  <span class="nt">stage</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
-  <span class="nt">&lt;&lt;</span><span class="p">:</span> <span class="nv">*pio_run</span>
-  <span class="nt">variables</span><span class="p">:</span>
-    <span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examples/ProgmemExample</span>
+<span class="nt">ProgmemExample</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&lt;&lt;</span><span class="p">:</span><span class="w"> </span><span class="nv">*pio_run</span><span class="w"></span>
+<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examples/ProgmemExample</span><span class="w"></span>
 
-<span class="nt">StringExample</span><span class="p">:</span>
-  <span class="nt">stage</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
-  <span class="nt">&lt;&lt;</span><span class="p">:</span> <span class="nv">*pio_run</span>
-  <span class="nt">variables</span><span class="p">:</span>
-    <span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examples/StringExample</span>
+<span class="nt">StringExample</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&lt;&lt;</span><span class="p">:</span><span class="w"> </span><span class="nv">*pio_run</span><span class="w"></span>
+<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examples/StringExample</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -371,7 +371,7 @@ project. The <code class="docutils literal notranslate"><span class="pre">.gitla
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

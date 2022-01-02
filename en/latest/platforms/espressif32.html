@@ -232,9 +232,9 @@
 <section id="cpu-frequency">
 <h3><a class="toc-backref" href="#id11">CPU Frequency</a><a class="headerlink" href="#cpu-frequency" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-board-build-f-cpu"><span class="std std-ref">board_build.f_cpu</span></a> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="c1">; set frequency to 160MHz</span>
-<span class="na">board_build.f_cpu</span> <span class="o">=</span> <span class="s">160000000L</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="c1">; set frequency to 160MHz</span><span class="w"></span>
+<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">160000000L</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -246,9 +246,9 @@ a value. Possible values:</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">40000000L</span></code> (default)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">80000000L</span></code></p></li>
 </ul>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="c1">; set frequency to 80MHz</span>
-<span class="na">board_build.f_flash</span> <span class="o">=</span> <span class="s">80000000L</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="c1">; set frequency to 80MHz</span><span class="w"></span>
+<span class="na">board_build.f_flash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">80000000L</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -266,8 +266,8 @@ a value. Possible values:</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">dio</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">dout</span></code></p></li>
 </ul>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">board_build.flash_mode</span> <span class="o">=</span> <span class="s">qio</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">board_build.flash_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">qio</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -276,22 +276,22 @@ a value. Possible values:</p>
 <p>You can enable external RAM using the next extra <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>
 in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> depending on a framework type.</p>
 <p>Framework <a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-    <span class="na">-DBOARD_HAS_PSRAM</span>
-    <span class="na">-mfix-esp32-psram-cache-issue</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-DBOARD_HAS_PSRAM</span><span class="w"></span>
+<span class="w">    </span><span class="na">-mfix-esp32-psram-cache-issue</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Framework <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-    <span class="na">-DCONFIG_SPIRAM_CACHE_WORKAROUND</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-DCONFIG_SPIRAM_CACHE_WORKAROUND</span><span class="w"></span>
 </pre></div>
 </div>
 <p>More details are located in the official ESP-IDF documentation -
@@ -305,30 +305,30 @@ build environment. If you need to specify more flags, please separate them
 with a new line or space.</p>
 <p>Actual information is available in <a class="reference external" href="https://github.com/espressif/arduino-esp32/blob/master/boards.txt#L80">Arduino for ESP32 Board Manifest</a>.
 Please scroll to <code class="docutils literal notranslate"><span class="pre">esp32.menu.DebugLevel</span></code> section.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
 
-<span class="c1">;;;;; Possible options ;;;;;;</span>
+<span class="c1">;;;;; Possible options ;;;;;;</span><span class="w"></span>
 
-<span class="c1">; None</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DCORE_DEBUG_LEVEL=0</span>
+<span class="c1">; None</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=0</span><span class="w"></span>
 
-<span class="c1">; Error</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DCORE_DEBUG_LEVEL=1</span>
+<span class="c1">; Error</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=1</span><span class="w"></span>
 
-<span class="c1">; Warn</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DCORE_DEBUG_LEVEL=2</span>
+<span class="c1">; Warn</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=2</span><span class="w"></span>
 
-<span class="c1">; Info</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DCORE_DEBUG_LEVEL=3</span>
+<span class="c1">; Info</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=3</span><span class="w"></span>
 
-<span class="c1">; Debug</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DCORE_DEBUG_LEVEL=4</span>
+<span class="c1">; Debug</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=4</span><span class="w"></span>
 
-<span class="c1">; Verbose</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DCORE_DEBUG_LEVEL=5</span>
+<span class="c1">; Verbose</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=5</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -336,8 +336,8 @@ Please scroll to <code class="docutils literal notranslate"><span class="pre">es
 <h3><a class="toc-backref" href="#id16">Upload Speed</a><a class="headerlink" href="#upload-speed" title="Permalink to this headline">¶</a></h3>
 <p>You can set custom upload speed using  <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-speed"><span class="std std-ref">upload_speed</span></a> option
 from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">upload_speed</span> <span class="o">=</span> <span class="s">9600</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">upload_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9600</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -372,15 +372,15 @@ documentation. PlatformIO uses <strong>default partition tables</strong> dependi
 as “spiffs”. For example, <code class="docutils literal notranslate"><span class="pre">spiffs,</span> <span class="pre">data,</span> <span class="pre">spiffs,</span> <span class="pre">0x291000,</span> <span class="pre">1M,</span></code></p>
 </div>
 <p>Examples:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; 1) A &quot;partitions_custom.csv&quot; in the root of project directory</span>
-<span class="k">[env:custom_table]</span>
-<span class="na">board_build.partitions</span> <span class="o">=</span> <span class="s">partitions_custom.csv</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; 1) A &quot;partitions_custom.csv&quot; in the root of project directory</span><span class="w"></span>
+<span class="k">[env:custom_table]</span><span class="w"></span>
+<span class="na">board_build.partitions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">partitions_custom.csv</span><span class="w"></span>
 
-<span class="c1">; 2) Switch between built-in tables</span>
-<span class="c1">; https://github.com/espressif/arduino-esp32/tree/master/tools/partitions</span>
-<span class="c1">; https://github.com/espressif/esp-idf/tree/master/components/partition_table</span>
-<span class="k">[env:custom_builtin_table]</span>
-<span class="na">board_build.partitions</span> <span class="o">=</span> <span class="s">no_ota.csv</span>
+<span class="c1">; 2) Switch between built-in tables</span><span class="w"></span>
+<span class="c1">; https://github.com/espressif/arduino-esp32/tree/master/tools/partitions</span><span class="w"></span>
+<span class="c1">; https://github.com/espressif/esp-idf/tree/master/components/partition_table</span><span class="w"></span>
+<span class="k">[env:custom_builtin_table]</span><span class="w"></span>
+<span class="na">board_build.partitions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">no_ota.csv</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -392,13 +392,13 @@ C source.</p>
 <p>There are two options <code class="docutils literal notranslate"><span class="pre">board_build.embed_txtfiles</span></code> and <code class="docutils literal notranslate"><span class="pre">board_build.embed_files</span></code>
 which can be used for embedding data. The only difference is that files specified
 in <code class="docutils literal notranslate"><span class="pre">board_build.embed_txtfiles</span></code> option are null-terminated in the final binary.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board_build.embed_txtfiles</span> <span class="o">=</span>
-  <span class="na">src/private.pem.key</span>
-  <span class="na">src/certificate.pem.crt</span>
-  <span class="na">src/aws-root-ca.pem</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board_build.embed_txtfiles</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">src/private.pem.key</span><span class="w"></span>
+<span class="w">  </span><span class="na">src/certificate.pem.crt</span><span class="w"></span>
+<span class="w">  </span><span class="na">src/aws-root-ca.pem</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -486,29 +486,29 @@ pio run -t upload --upload-port myesp32.local
 </div>
 <p>Or use the <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Please note that you also
 need to set <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> to <code class="docutils literal notranslate"><span class="pre">espota</span></code>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">espota</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">IP_ADDRESS_HERE or mDNS_NAME.local</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">IP_ADDRESS_HERE or mDNS_NAME.local</span><span class="w"></span>
 </pre></div>
 </div>
 <p>For example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">espota</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">192.168.0.255</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">192.168.0.255</span><span class="w"></span>
 </pre></div>
 </div>
 <section id="authentication-and-upload-options">
 <h5><a class="toc-backref" href="#id24">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Permalink to this headline">¶</a></h5>
 <p>You can pass additional options/flags to OTA uploader using
 <code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">espota</span>
-<span class="c1">; each flag in a new line</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">--port</span><span class="o">=</span><span class="s">3232</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span><span class="w"></span>
+<span class="c1">; each flag in a new line</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">--port</span><span class="o">=</span><span class="s">3232</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Available flags</p>
@@ -574,12 +574,12 @@ please open <a class="reference internal" href="../integration/ide/pioide.html#p
 <li><p>Initialize a new project, open <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> and specify the link to the
 framework repository in <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a> section.
 For example,</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">platform_packages</span> <span class="o">=</span>
-    <span class="na">platformio/framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">platformio/framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -1109,23 +1109,23 @@ of Espressif 32 development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
-<span class="k">[env:latest_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
+<span class="k">[env:latest_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="c1">; Custom stable version</span>
-<span class="k">[env:custom_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32@x.y.z</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="c1">; Custom stable version</span><span class="w"></span>
+<span class="k">[env:custom_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@x.y.z</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="upstream">
 <h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-espressif32.git</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -3567,7 +3567,7 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

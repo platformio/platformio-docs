@@ -190,16 +190,16 @@ See <a class="reference internal" href="../core/userguide/device/cmd_monitor.htm
 </tbody>
 </table>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_monitor_port]</span>
-<span class="na">...</span>
-<span class="c1">; Unix</span>
-<span class="na">monitor_port</span> <span class="o">=</span> <span class="s">/dev/ttyUSB1</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_monitor_port]</span><span class="w"></span>
+<span class="na">...</span><span class="w"></span>
+<span class="c1">; Unix</span><span class="w"></span>
+<span class="na">monitor_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/dev/ttyUSB1</span><span class="w"></span>
 
-<span class="c1">; Windows, COM1 or COM3</span>
-<span class="na">monitor_port</span> <span class="o">=</span> <span class="s">COM[13]</span>
+<span class="c1">; Windows, COM1 or COM3</span><span class="w"></span>
+<span class="na">monitor_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">COM[13]</span><span class="w"></span>
 
-<span class="c1">; Socket</span>
-<span class="na">monitor_port</span> <span class="o">=</span> <span class="s">socket://localhost:4444</span>
+<span class="c1">; Socket</span><span class="w"></span>
+<span class="na">monitor_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">socket://localhost:4444</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -209,9 +209,9 @@ See <a class="reference internal" href="../core/userguide/device/cmd_monitor.htm
 <p>A monitor speed (<a class="reference external" href="http://en.wikipedia.org/wiki/Baud">baud rate</a>).
 See <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-b"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">device</span> <span class="pre">monitor</span> <span class="pre">--baud</span></code></a>.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_monitor_speedrate]</span>
-<span class="na">...</span>
-<span class="na">monitor_speed</span> <span class="o">=</span> <span class="s">115200</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_monitor_speedrate]</span><span class="w"></span>
+<span class="na">...</span><span class="w"></span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -221,10 +221,10 @@ See <a class="reference internal" href="../core/userguide/device/cmd_monitor.htm
 <p>Apply filters and text transformation for device output. See available filters at
 <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmd-device-monitor-filters"><span class="std std-ref">Filters</span></a>.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:log_output_to_file_with_timestamp]</span>
-<span class="na">...</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">monitor_filters</span> <span class="o">=</span> <span class="s">log2file, time, default</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:log_output_to_file_with_timestamp]</span><span class="w"></span>
+<span class="na">...</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">monitor_filters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">log2file, time, default</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -247,14 +247,14 @@ example below.</p>
 <p>Available flags and options are the same which are documented for
 <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmd-device-monitor"><span class="std std-ref">pio device monitor</span></a> command.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_monitor_flags]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">monitor_flags</span><span class="o">=</span>
-    <span class="na">--parity</span>
-    <span class="na">N</span>
-    <span class="na">--encoding</span>
-    <span class="na">hexlify</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_monitor_flags]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">monitor_flags</span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">--parity</span><span class="w"></span>
+<span class="w">    </span><span class="na">N</span><span class="w"></span>
+<span class="w">    </span><span class="na">--encoding</span><span class="w"></span>
+<span class="w">    </span><span class="na">hexlify</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -330,7 +330,7 @@ example below.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

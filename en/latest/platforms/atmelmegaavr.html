@@ -228,19 +228,19 @@ virtual environment using the following command:</p>
 </div>
 <p>Once <code class="docutils literal notranslate"><span class="pre">pyupdi</span></code> is installed it can be used as the uploader via a custom
 <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-command"><span class="std std-ref">upload_command</span></a> option, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:ATmega3209_pyupdi_upload]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelmegaavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">ATmega3209</span>
-<span class="na">upload_speed</span> <span class="o">=</span> <span class="s">115200</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-d</span>
-    <span class="na">mega3209</span>
-    <span class="na">-c</span>
-    <span class="na">$UPLOAD_PORT</span>
-    <span class="na">-b</span>
-    <span class="na">$UPLOAD_SPEED</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">pyupdi $UPLOAD_FLAGS -f $SOURCE</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:ATmega3209_pyupdi_upload]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelmegaavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ATmega3209</span><span class="w"></span>
+<span class="na">upload_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-d</span><span class="w"></span>
+<span class="w">    </span><span class="na">mega3209</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_PORT</span><span class="w"></span>
+<span class="w">    </span><span class="na">-b</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_SPEED</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pyupdi $UPLOAD_FLAGS -f $SOURCE</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -262,14 +262,14 @@ To set fuse bits you need to use target <code class="docutils literal notranslat
 <h4><a class="toc-backref" href="#id11">Custom fuses</a><a class="headerlink" href="#custom-fuses" title="Permalink to this headline">¶</a></h4>
 <p>Custom fuse values and upload flags (based on upload protocol) should be specified in
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. An example of setting custom fuses for <code class="docutils literal notranslate"><span class="pre">ATmega3209</span></code> board:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_fuses]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelmegaavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">ATmega3209</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">xplainedmini_updi</span>
-<span class="na">board_fuses.bootend</span> <span class="o">=</span> <span class="s">0xAA</span>
-<span class="na">board_fuses.syscfg0</span> <span class="o">=</span> <span class="s">0xBB</span>
-<span class="na">board_fuses.osccfg</span> <span class="o">=</span> <span class="s">0xCC</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_fuses]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelmegaavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ATmega3209</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">xplainedmini_updi</span><span class="w"></span>
+<span class="na">board_fuses.bootend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xAA</span><span class="w"></span>
+<span class="na">board_fuses.syscfg0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xBB</span><span class="w"></span>
+<span class="na">board_fuses.osccfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xCC</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -289,16 +289,16 @@ To upload a bootloader image you need to use target <code class="docutils litera
 <h4><a class="toc-backref" href="#id14">Custom bootloader</a><a class="headerlink" href="#custom-bootloader" title="Permalink to this headline">¶</a></h4>
 <p>Custom bootloader and accompanying fuses should be specified in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.
 An example of setting custom bootloader for <code class="docutils literal notranslate"><span class="pre">ATmega4808</span></code> board:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:ATmega4808]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelmegaavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">ATmega4808</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:ATmega4808]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelmegaavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ATmega4808</span><span class="w"></span>
 
-<span class="na">board_bootloader.file</span> <span class="o">=</span> <span class="s">/path/to/custom/bootloader.hex</span>
-<span class="na">board_bootloader.bootend</span> <span class="o">=</span> <span class="s">0xFF</span>
-<span class="na">board_bootloader.syscfg0</span> <span class="o">=</span> <span class="s">0xDE</span>
-<span class="na">board_bootloader.osccfg</span> <span class="o">=</span> <span class="s">0xFD</span>
-<span class="na">board_bootloader.lock_bits</span> <span class="o">=</span> <span class="s">0x0F</span>
+<span class="na">board_bootloader.file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/path/to/custom/bootloader.hex</span><span class="w"></span>
+<span class="na">board_bootloader.bootend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xFF</span><span class="w"></span>
+<span class="na">board_bootloader.syscfg0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xDE</span><span class="w"></span>
+<span class="na">board_bootloader.osccfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0xFD</span><span class="w"></span>
+<span class="na">board_bootloader.lock_bits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0x0F</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -325,23 +325,23 @@ of Atmel megaAVR development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
-<span class="k">[env:latest_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelmegaavr</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
+<span class="k">[env:latest_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelmegaavr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="c1">; Custom stable version</span>
-<span class="k">[env:custom_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelmegaavr@x.y.z</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="c1">; Custom stable version</span><span class="w"></span>
+<span class="k">[env:custom_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelmegaavr@x.y.z</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="upstream">
 <h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-atmelmegaavr.git</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-atmelmegaavr.git</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -810,7 +810,7 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

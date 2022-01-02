@@ -217,24 +217,24 @@
 <section id="configuration">
 <h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <p>Please use <code class="docutils literal notranslate"><span class="pre">gd32vf103v_rvstar</span></code> ID for <a class="reference internal" href="../../projectconf/section_env_platform.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gd32vf103v_rvstar]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">nuclei</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">gd32vf103v_rvstar</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gd32vf103v_rvstar]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nuclei</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">gd32vf103v_rvstar</span><span class="w"></span>
 </pre></div>
 </div>
 <p>You can override default GD32VF103V RVStar Kit settings per build environment using
 <code class="docutils literal notranslate"><span class="pre">board_***</span></code> option, where <code class="docutils literal notranslate"><span class="pre">***</span></code> is a JSON object path from
 board manifest <a class="reference external" href="https://github.com/Nuclei-Software/platform-nuclei/blob/master/boards/gd32vf103v_rvstar.json">gd32vf103v_rvstar.json</a>. For example,
 <code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code>, <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code>, etc.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gd32vf103v_rvstar]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">nuclei</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">gd32vf103v_rvstar</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gd32vf103v_rvstar]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nuclei</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">gd32vf103v_rvstar</span><span class="w"></span>
 
-<span class="c1">; change microcontroller</span>
-<span class="na">board_build.mcu</span> <span class="o">=</span> <span class="s">gd32vf103vbt6</span>
+<span class="c1">; change microcontroller</span><span class="w"></span>
+<span class="na">board_build.mcu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">gd32vf103vbt6</span><span class="w"></span>
 
-<span class="c1">; change MCU frequency</span>
-<span class="na">board_build.f_cpu</span> <span class="o">=</span> <span class="s">108000000L</span>
+<span class="c1">; change MCU frequency</span><span class="w"></span>
+<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">108000000L</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -249,11 +249,11 @@ board manifest <a class="reference external" href="https://github.com/Nuclei-Sof
 </ul>
 <p>Default protocol is <code class="docutils literal notranslate"><span class="pre">rv-link</span></code></p>
 <p>You can change upload protocol using <a class="reference internal" href="../../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> option:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gd32vf103v_rvstar]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">nuclei</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">gd32vf103v_rvstar</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:gd32vf103v_rvstar]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nuclei</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">gd32vf103v_rvstar</span><span class="w"></span>
 
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">rv-link</span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">rv-link</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -392,7 +392,7 @@ instructions and configuration information.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

@@ -223,11 +223,11 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 verbose build using <code class="docutils literal notranslate"><span class="pre">-v,</span> <span class="pre">--verbose</span></code> option for <a class="reference internal" href="../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command.</p>
 <p>Example:</p>
 <p>Let’s set optimization for the smallest code</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy_hid_device]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">teensy36</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D TEENSY_OPT_SMALLEST_CODE</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy_hid_device]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy36</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D TEENSY_OPT_SMALLEST_CODE</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -260,11 +260,11 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 </ul>
 <p>A default macro is set to <code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">USB_SERIAL</span></code> if no one is specified.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy_hid_device]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">teensy20</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D USB_RAWHID</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy_hid_device]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy20</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D USB_RAWHID</span><span class="w"></span>
 </pre></div>
 </div>
 <p>See <a class="reference external" href="https://www.pjrc.com/teensy/usb_debug_only.html">Teensy USB Examples</a>.</p>
@@ -275,11 +275,11 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 For cases where the GUI tools cannot be used (e.g. headless OS) the native Teensy
 Loader tool is also available in a command line version which can be enabled directly
 in your project configuration, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy36]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">teensy36</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">teensy-cli</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy36]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy36</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy-cli</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -396,23 +396,23 @@ of Teensy development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
-<span class="k">[env:latest_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
+<span class="k">[env:latest_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="c1">; Custom stable version</span>
-<span class="k">[env:custom_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy@x.y.z</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="c1">; Custom stable version</span><span class="w"></span>
+<span class="k">[env:custom_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy@x.y.z</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="upstream">
 <h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-teensy.git</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-teensy.git</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -694,7 +694,7 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

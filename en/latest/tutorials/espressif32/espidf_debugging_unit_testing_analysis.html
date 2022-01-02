@@ -289,7 +289,7 @@ following code:</p>
 <p class="admonition-title">Warning</p>
 <p>Make sure this new file <code class="docutils literal notranslate"><span class="pre">main.c</span></code> is registered as source file using
 <code class="docutils literal notranslate"><span class="pre">idf_component_register</span></code> function in <code class="docutils literal notranslate"><span class="pre">src/CMakeLists.txt</span></code> file:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span> <span class="s2">&quot;main.c&quot;</span><span class="p">)</span>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span><span class="w"> </span><span class="s2">&quot;main.c&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -328,11 +328,11 @@ window:</p>
 <li><p>Connect the board to your computer and update the default monitor speed to
 <code class="docutils literal notranslate"><span class="pre">115200</span></code> in <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> file:</p>
 <blockquote>
-<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">monitor_speed</span> <span class="o">=</span> <span class="s">115200</span>
+<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -393,12 +393,12 @@ using the following pins:</p>
 <li><p>Specify <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. In this tutorial,
 <a class="reference internal" href="../../plus/debug-tools/olimex-arm-usb-ocd-h.html#debugging-tool-olimex-arm-usb-ocd-h"><span class="std std-ref">Olimex ARM-USB-OCD-H</span></a> debug probe is used:</p>
 <blockquote>
-<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">espidf</span>
-<span class="na">monitor_speed</span> <span class="o">=</span> <span class="s">115200</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">olimex-arm-usb-ocd-h</span>
+<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">olimex-arm-usb-ocd-h</span><span class="w"></span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -640,7 +640,7 @@ boilerplate for later projects.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

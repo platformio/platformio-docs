@@ -164,18 +164,18 @@ project debugging from <a class="reference internal" href="../integration/ide/pi
 separate build environment that defines <code class="docutils literal notranslate"><span class="pre">build_type</span> <span class="pre">=</span> <span class="pre">debug</span></code>. See
 the example below where the <code class="docutils literal notranslate"><span class="pre">mydebug</span></code> build environment will be used
 automatically by <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">... other common configuration</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">... other common configuration</span><span class="w"></span>
 
-<span class="k">[env:myrelease]</span>
-<span class="na">some_extra_options</span> <span class="o">=</span> <span class="s">...</span>
+<span class="k">[env:myrelease]</span><span class="w"></span>
+<span class="na">some_extra_options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="k">[env:mydebug]</span>
-<span class="na">build_type</span> <span class="o">=</span> <span class="s">debug</span>
-<span class="na">some_extra_options</span> <span class="o">=</span> <span class="s">...</span>
+<span class="k">[env:mydebug]</span><span class="w"></span>
+<span class="na">build_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">debug</span><span class="w"></span>
+<span class="na">some_extra_options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -253,7 +253,7 @@ automatically by <a class="reference internal" href="../plus/debugging.html#piod
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

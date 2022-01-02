@@ -179,26 +179,26 @@ are also possible</p></li>
 </ul>
 <p>Other forms are the same as for the  <a class="reference internal" href="../core/userguide/platforms/cmd_install.html#cmd-platform-install"><span class="std std-ref">pio platform install</span></a> command.</p>
 <p>Examples:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:the_latest_version]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:the_latest_version]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
 
-<span class="k">[env:exact_version]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr@1.2.3</span>
+<span class="k">[env:exact_version]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@1.2.3</span><span class="w"></span>
 
-<span class="k">[env:specific_major_version]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr@^1.2.3</span>
+<span class="k">[env:specific_major_version]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@^1.2.3</span><span class="w"></span>
 
-<span class="k">[env:specific_major_and_minor_version]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr@~1.2.3</span>
+<span class="k">[env:specific_major_and_minor_version]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@~1.2.3</span><span class="w"></span>
 
-<span class="k">[env:development_verion_by_git]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-ststm32.git</span>
+<span class="k">[env:development_verion_by_git]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-ststm32.git</span><span class="w"></span>
 
-<span class="k">[env:custom_git_branch]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-espressif8266.git#feature/stage</span>
+<span class="k">[env:custom_git_branch]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif8266.git#feature/stage</span><span class="w"></span>
 
-<span class="k">[env:specific_git_commit]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-espressif8266.git#921855a9c530082efddb5d48b44c3f4be0e2dfa2</span>
+<span class="k">[env:specific_git_commit]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif8266.git#921855a9c530082efddb5d48b44c3f4be0e2dfa2</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -209,26 +209,26 @@ are also possible</p></li>
 default packages by <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> using the same name. Packages will be
 installed in <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a>.</p>
 <p>Examples:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:override_default_toolchain]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">platform_packages</span> <span class="o">=</span>
-  <span class="c1">; use GCC AVR 5.0+</span>
-  <span class="na">toolchain-gccarmnoneeabi@&gt;1.50000.0</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:override_default_toolchain]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="c1">; use GCC AVR 5.0+</span><span class="w"></span>
+<span class="w">  </span><span class="na">toolchain-gccarmnoneeabi@&gt;1.50000.0</span><span class="w"></span>
 
-<span class="k">[env:override_framework]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">platform_packages</span> <span class="o">=</span>
-  <span class="c1">; use upstream Git version</span>
-  <span class="na">framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git</span>
+<span class="k">[env:override_framework]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="c1">; use upstream Git version</span><span class="w"></span>
+<span class="w">  </span><span class="na">framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git</span><span class="w"></span>
 
-<span class="k">[env:external_package]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">platform_packages</span> <span class="o">=</span>
-  <span class="c1">; latest openOCD from PlatformIO Package Registry</span>
-  <span class="na">tool-openocd</span>
+<span class="k">[env:external_package]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="c1">; latest openOCD from PlatformIO Package Registry</span><span class="w"></span>
+<span class="w">  </span><span class="na">tool-openocd</span><span class="w"></span>
 
-  <span class="c1">; source code of ST-Link</span>
-  <span class="na">tool-stlink-source @ https://github.com/texane/stlink.git</span>
+<span class="w">  </span><span class="c1">; source code of ST-Link</span><span class="w"></span>
+<span class="w">  </span><span class="na">tool-stlink-source @ https://github.com/texane/stlink.git</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -285,21 +285,21 @@ format <code class="docutils literal notranslate"><span class="pre">board_{OBJEC
 JSON manifest. Please navigate to “boards” folder of <a class="reference external" href="https://github.com/topics/platformio-platform">PlatfomIO development platforms</a>
 and open JSON file to list all available options.</p>
 <p>For example, <a class="reference external" href="https://github.com/platformio/platform-espressif32/blob/develop/boards/esp32dev.json">Manifest: Espressif ESP32 Dev Module</a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_board_options]</span>
-<span class="c1">; Custom CPU Frequency</span>
-<span class="na">board_build.f_cpu</span> <span class="o">=</span> <span class="s">160000000L</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_board_options]</span><span class="w"></span>
+<span class="c1">; Custom CPU Frequency</span><span class="w"></span>
+<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">160000000L</span><span class="w"></span>
 
-<span class="c1">; Custom FLASH Frequency</span>
-<span class="na">board_build.f_flash</span> <span class="o">=</span> <span class="s">80000000L</span>
+<span class="c1">; Custom FLASH Frequency</span><span class="w"></span>
+<span class="na">board_build.f_flash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">80000000L</span><span class="w"></span>
 
-<span class="c1">; Custom FLASH Mode</span>
-<span class="na">board_build.flash_mode</span> <span class="o">=</span> <span class="s">qio</span>
+<span class="c1">; Custom FLASH Mode</span><span class="w"></span>
+<span class="na">board_build.flash_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">qio</span><span class="w"></span>
 
-<span class="c1">; Custom linker script</span>
-<span class="na">board_build.ldscript</span> <span class="o">=</span> <span class="s">/path/to/ldscript.ld</span>
+<span class="c1">; Custom linker script</span><span class="w"></span>
+<span class="na">board_build.ldscript</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/path/to/ldscript.ld</span><span class="w"></span>
 
-<span class="c1">; Custom maximum program size</span>
-<span class="na">board_upload.maximum_size</span> <span class="o">=</span> <span class="s">1310720</span>
+<span class="c1">; Custom maximum program size</span><span class="w"></span>
+<span class="na">board_upload.maximum_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1310720</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -375,7 +375,7 @@ and open JSON file to list all available options.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

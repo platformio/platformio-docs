@@ -614,23 +614,23 @@ exclude other source files from a build process.</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:foo]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">native</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DHAL=foo</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:foo]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DHAL=foo</span><span class="w"></span>
 
-<span class="k">[env:bar]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">native</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DHAL=bar</span>
+<span class="k">[env:bar]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DHAL=bar</span><span class="w"></span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">library.json</span></code></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">{</span>
-    <span class="na">&quot;name&quot;: &quot;SomeLib&quot;,</span>
-    <span class="na">&quot;version&quot;: &quot;0.0.0&quot;,</span>
-    <span class="na">&quot;build&quot;: {</span>
-        <span class="na">&quot;extraScript&quot;: &quot;extra_script.py&quot;</span>
-    <span class="na">}</span>
-<span class="na">}</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">{</span><span class="w"></span>
+<span class="w">    </span><span class="na">&quot;name&quot;: &quot;SomeLib&quot;,</span><span class="w"></span>
+<span class="w">    </span><span class="na">&quot;version&quot;: &quot;0.0.0&quot;,</span><span class="w"></span>
+<span class="w">    </span><span class="na">&quot;build&quot;: {</span><span class="w"></span>
+<span class="w">        </span><span class="na">&quot;extraScript&quot;: &quot;extra_script.py&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="na">}</span><span class="w"></span>
+<span class="na">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code></p>
@@ -824,7 +824,7 @@ builders:</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

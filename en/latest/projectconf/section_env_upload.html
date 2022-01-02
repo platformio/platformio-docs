@@ -202,14 +202,14 @@ automatically.</p>
 </tbody>
 </table>
 <p><strong>Example</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="c1">; any port that starts with /dev/ttyUSB</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">/dev/ttyUSB*</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="c1">; any port that starts with /dev/ttyUSB</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/dev/ttyUSB*</span><span class="w"></span>
 
-<span class="c1">; COM1 or COM3</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">COM[13]</span>
+<span class="c1">; COM1 or COM3</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">COM[13]</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -239,18 +239,18 @@ need to override uploader command or base flags please use
 <span class="target" id="index-1"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_UPLOAD_FLAGS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_UPLOAD_FLAGS</span></code></a>.</p>
 <p><strong>Example</strong></p>
 <p>Please specify each flag/option in a new line starting with minimum 2 spaces.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:atmega328pb]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">atmega328pb</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-  <span class="na">-P$UPLOAD_PORT</span>
-  <span class="na">-b$UPLOAD_SPEED</span>
-  <span class="na">-u</span>
-  <span class="na">-Ulock:w:0xCF:m</span>
-  <span class="na">-Uhfuse:w:0xD7:m</span>
-  <span class="na">-Uefuse:w:0xF6:m</span>
-  <span class="na">-Ulfuse:w:0xE2:m</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:atmega328pb]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmega328pb</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-P$UPLOAD_PORT</span><span class="w"></span>
+<span class="w">  </span><span class="na">-b$UPLOAD_SPEED</span><span class="w"></span>
+<span class="w">  </span><span class="na">-u</span><span class="w"></span>
+<span class="w">  </span><span class="na">-Ulock:w:0xCF:m</span><span class="w"></span>
+<span class="w">  </span><span class="na">-Uhfuse:w:0xD7:m</span><span class="w"></span>
+<span class="w">  </span><span class="na">-Uefuse:w:0xF6:m</span><span class="w"></span>
+<span class="w">  </span><span class="na">-Ulfuse:w:0xE2:m</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -285,52 +285,52 @@ variable. A classic default upload command for <a class="reference internal" hre
 <code class="docutils literal notranslate"><span class="pre">some-flash-bin-tool</span> <span class="pre">$UPLOADERFLAGS</span> <span class="pre">$SOURCE</span></code>, where
 <code class="docutils literal notranslate"><span class="pre">$SOURCE</span></code> will be replaced by a real program/firmware binary.</p>
 <p><code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> template points to <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a>.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_AVR_ISP]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-C</span>
-    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
-    <span class="na">-p</span>
-    <span class="na">atmega328p</span>
-    <span class="na">-P</span>
-    <span class="na">$UPLOAD_PORT</span>
-    <span class="na">-b</span>
-    <span class="na">115200</span>
-    <span class="na">-c</span>
-    <span class="na">stk500v1</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_AVR_ISP]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-C</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-p</span><span class="w"></span>
+<span class="w">    </span><span class="na">atmega328p</span><span class="w"></span>
+<span class="w">    </span><span class="na">-P</span><span class="w"></span>
+<span class="w">    </span><span class="na">$UPLOAD_PORT</span><span class="w"></span>
+<span class="w">    </span><span class="na">-b</span><span class="w"></span>
+<span class="w">    </span><span class="na">115200</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">stk500v1</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 <li><p>Override default upload command and skip pre-uploading actions.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_usbasp]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-C</span>
-    <span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span>
-    <span class="na">-p</span>
-    <span class="na">atmega328p</span>
-    <span class="na">-Pusb</span>
-    <span class="na">-c</span>
-    <span class="na">stk500v1</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:program_via_usbasp]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-C</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-avrdude/avrdude.conf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-p</span><span class="w"></span>
+<span class="w">    </span><span class="na">atmega328p</span><span class="w"></span>
+<span class="w">    </span><span class="na">-Pusb</span><span class="w"></span>
+<span class="w">    </span><span class="na">-c</span><span class="w"></span>
+<span class="w">    </span><span class="na">stk500v1</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i</span><span class="w"></span>
 
 
-<span class="c1">; Use ST-util for flashing</span>
-<span class="c1">; https://github.com/texane/stlink</span>
+<span class="c1">; Use ST-util for flashing</span><span class="w"></span>
+<span class="c1">; https://github.com/texane/stlink</span><span class="w"></span>
 
-<span class="k">[env:custom_st_flash]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">bluepill_f103c6</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">custom</span>
-<span class="na">upload_command</span> <span class="o">=</span> <span class="s">${platformio.packages_dir}/tool-stlink/st-flash write $SOURCE 0x8000000</span>
+<span class="k">[env:custom_st_flash]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">bluepill_f103c6</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
+<span class="na">upload_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${platformio.packages_dir}/tool-stlink/st-flash write $SOURCE 0x8000000</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -408,7 +408,7 @@ variable. A classic default upload command for <a class="reference internal" hre
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

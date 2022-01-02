@@ -218,11 +218,11 @@ Upload option from the <code class="docutils literal notranslate"><span class="p
 <section id="debugging-the-firmware">
 <h2><a class="toc-backref" href="#id4">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> offers the easiest way to debug the board. Firstly, we need to specify <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Since the board has an on-board <code class="docutils literal notranslate"><span class="pre">JLink</span></code> debug probe we can directly declare it in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nrf52_dk]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">nordicnrf52</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nrf52_dk</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">jlink</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nrf52_dk]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nordicnrf52</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nrf52_dk</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jlink</span><span class="w"></span>
 </pre></div>
 </div>
 <p>To start the debug session we can use next options:
@@ -326,15 +326,15 @@ Test button on <a class="reference internal" href="../../integration/ide/vscode.
 <p>To add the basic BLE functionality to our project we need to define the SoftDevice version
 and install a library called <a class="reference external" href="https://platformio.org/lib/show/259/BLEPeripheral">BLEPeripheral</a>.
 Both these modifications can be specified in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nrf52_dk]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">nordicnrf52</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nrf52_dk</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">jlink</span>
-<span class="c1">; SoftDevice version</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DNRF52_S132</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-  <span class="na">BLEPeripheral</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nrf52_dk]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nordicnrf52</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nrf52_dk</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jlink</span><span class="w"></span>
+<span class="c1">; SoftDevice version</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DNRF52_S132</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">BLEPeripheral</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Now let’s create a basic application that can interact with other BLE devices (e.g phone)
@@ -463,7 +463,7 @@ After a successful connection to the board, we should see one “Unknown Service
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\

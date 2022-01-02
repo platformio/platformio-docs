@@ -212,24 +212,24 @@ J-Link GDB Server.</p>
 <h2><a class="toc-backref" href="#id1">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <p>You can configure debugging tool using <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in
 <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">jlink</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jlink</span><span class="w"></span>
 </pre></div>
 </div>
 <p>If you would like to use this tool for firmware uploading, please change
 upload protocol:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">jlink</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jlink</span><span class="w"></span>
 
-<span class="c1">; SWD interface</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">jlink</span>
+<span class="c1">; SWD interface</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jlink</span><span class="w"></span>
 
-<span class="c1">; JTAG interface</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">jlink-jtag</span>
+<span class="c1">; JTAG interface</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jlink-jtag</span><span class="w"></span>
 </pre></div>
 </div>
 <p>More options:</p>
@@ -239,25 +239,25 @@ upload protocol:</p>
 </ul>
 <section id="custom-server">
 <h3><a class="toc-backref" href="#id2">Custom Server</a><a class="headerlink" href="#custom-server" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug_jlink]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">mbed</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f446re</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:debug_jlink]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f446re</span><span class="w"></span>
 
-<span class="na">debug_tool</span> <span class="o">=</span> <span class="s">jlink</span>
-<span class="na">debug_port</span> <span class="o">=</span> <span class="s">:2331</span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jlink</span><span class="w"></span>
+<span class="na">debug_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">:2331</span><span class="w"></span>
 
-<span class="na">debug_server</span> <span class="o">=</span>
-  <span class="na">/full/path/to/JLinkGDBServerCL</span>
-  <span class="na">-singlerun</span>
-  <span class="na">-if</span>
-  <span class="na">SWD</span>
-  <span class="na">-select</span>
-  <span class="na">USB</span>
-  <span class="na">-port</span>
-  <span class="na">2331</span>
-  <span class="na">-device</span>
-  <span class="na">STM32F446RE</span>
+<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">/full/path/to/JLinkGDBServerCL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-singlerun</span><span class="w"></span>
+<span class="w">  </span><span class="na">-if</span><span class="w"></span>
+<span class="w">  </span><span class="na">SWD</span><span class="w"></span>
+<span class="w">  </span><span class="na">-select</span><span class="w"></span>
+<span class="w">  </span><span class="na">USB</span><span class="w"></span>
+<span class="w">  </span><span class="na">-port</span><span class="w"></span>
+<span class="w">  </span><span class="na">2331</span><span class="w"></span>
+<span class="w">  </span><span class="na">-device</span><span class="w"></span>
+<span class="w">  </span><span class="na">STM32F446RE</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -266,13 +266,13 @@ upload protocol:</p>
 <p>In case there are several J-Link probes connected to the same host machine, it’s
 possible to specify the precise serial number of the desired probe to avoid erroneous
 device selection.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nrf52_dk]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">nordicnrf52</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nrf52_dk</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-    <span class="na">-SelectEmuBySN</span>
-    <span class="na">123456789</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nrf52_dk]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nordicnrf52</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nrf52_dk</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-SelectEmuBySN</span><span class="w"></span>
+<span class="w">    </span><span class="na">123456789</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -5187,7 +5187,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry</a></li>\
+          <li><a href="https://registry.platformio.org/"><i class="fa fa-code fa-lg"></i>Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
