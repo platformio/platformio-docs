@@ -189,7 +189,7 @@ Use cases:
 
 .. note::
   If you need more advanced control and would like to apply changes to
-  a PlatformIO Build System environment, please refer to :ref:`projectconf_advanced_scripting`.
+  a PlatformIO Build System environment, please refer to :ref:`scripting`.
 
 Example:
 

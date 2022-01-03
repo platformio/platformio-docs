@@ -29,7 +29,7 @@ Common ``[env]``
 ----------------
 
 An optional configuration environment with common options that will be
-shared between all ``[env:NAME]`` environments in the platform.ini
+shared between all ``[env:NAME]`` environments in the platformio.ini
 file. It is very useful if the configuration file has a lot of
 environments ``[env:NAME]`` and they share common settings.
 
