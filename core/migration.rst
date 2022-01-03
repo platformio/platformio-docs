@@ -118,7 +118,7 @@ SCons 4.0
 
 PlatformIO Core 5.0 build engine has been upgraded to the latest `SCons 4.0 - a next-generation software construction tool <https://scons.org/>`__:
 
-* :ref:`Configuration files are Python scripts <projectconf_advanced_scripting>` – use the power of a real programming language to solve build problems
+* :ref:`Configuration files are Python scripts <scripting>` – use the power of a real programming language to solve build problems
 * Built-in reliable and automatic dependency analysis
 * Improved support for parallel builds
 * Ability to :ref:`share built files in a cache <projectconf_pio_cache_dir>` to speed up multiple builds.
@@ -127,7 +127,7 @@ Custom Targets
 ''''''''''''''
 
 PlatformIO Core 5.0 gives more freedom to developers and :ref:`platforms` maintainers.
-They can now declare the :ref:`projectconf_advanced_scripting_custom_targets`:
+They can now declare the :ref:`scripting_custom_targets`:
 
 * Pre/Post processing based on dependent sources (another target, source file, etc.)
 * Command launcher with own arguments

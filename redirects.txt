@@ -30,6 +30,7 @@
 /platforms/espressif.html -> /platforms/espressif8266.html
 /platforms/unit_testing.html -> /plus/unit-testing.html
 /projectconf.html -> projectconf/index.html
+/projectconf/advanced_scripting.html -> /scripting/index.html
 /projectconf/dynamic_variables.html -> /projectconf/interpolation.html
 /projectconf/section_env_board.html -> /projectconf/section_env_platform.html
 /projectconf/section_env_general.html -> /projectconf/section_env_platform.html
