@@ -46,6 +46,7 @@ Recommended bundles:
 
 * `C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting <https://github.com/MaskRay/ccls>`_
 * `Async language server protocol plugin for vim and neovim <https://github.com/prabirshrestha/vim-lsp>`_
+* `"vim-pio" Plugin <https://github.com/normen/vim-pio>`_
 * `"Neomake-PlatformIO" Plugin <https://github.com/coddingtonbear/neomake-platformio>`_
 
 Put to the project directory ``Makefile`` wrapper with contents:
