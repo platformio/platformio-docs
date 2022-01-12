@@ -199,12 +199,13 @@ Examples
 
 .. code-block:: yaml
 
+    os: linux
+    dist: focal
     language: python
     python:
         - "3.9"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
     cache:
         directories:
             - "~/.platformio"
@@ -238,12 +239,13 @@ Examples
 
 .. code-block:: yaml
 
+    os: linux
+    dist: focal
     language: python
     python:
         - "3.9"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
     cache:
         directories:
             - "~/.platformio"
@@ -274,12 +276,13 @@ Examples
 
 .. code-block:: yaml
 
+    os: linux
+    dist: focal
     language: python
     python:
         - "3.9"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
     cache:
         directories:
             - "~/.platformio"
@@ -313,12 +316,13 @@ Examples
 
 .. code-block:: yaml
 
+    os: linux
+    dist: focal
     language: python
     python:
         - "3.9"
 
     # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
     cache:
         directories:
             - "~/.platformio"
