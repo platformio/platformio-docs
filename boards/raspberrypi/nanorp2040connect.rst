@@ -19,7 +19,7 @@ Arduino Nano RP2040 Connect
 Hardware
 --------
 
-Platform :ref:`platform_raspberrypi`: RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+Platform :ref:`platform_raspberrypi`: RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
 .. list-table::
 

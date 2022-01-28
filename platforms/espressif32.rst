@@ -219,6 +219,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-s2-franzininho`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_frogboard`
       - ESP32
       - 240MHz
@@ -260,6 +265,11 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_sensesiot_weizen`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lionbit`
       - ESP32
       - 240MHz
       - 4MB
@@ -923,6 +933,25 @@ Fishino
       - 4MB
       - 320KB
 
+Franzininho
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_esp32-s2-franzininho`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Fred
 ~~~~
 
@@ -1182,6 +1211,25 @@ Labplus
       - RAM
     * - :ref:`board_espressif32_labplus_mpython`
       - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Lion::Bit
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_lionbit`
+      - External
       - ESP32
       - 240MHz
       - 4MB

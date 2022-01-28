@@ -349,6 +349,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-s2-franzininho`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_frogboard`
       - :ref:`platform_espressif32`
       - External
@@ -406,6 +413,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_sensesiot_weizen`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lionbit`
       - :ref:`platform_espressif32`
       - External
       - ESP32

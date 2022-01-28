@@ -34,11 +34,13 @@ Examples are listed from `Teensy development platform repository <https://github
 
 * `mbed-blink <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-serial <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
+* `zephyr-blink <https://github.com/platformio/platform-teensy/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-events <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-hid-usb-mouse <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-hid-usb-mouse?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-dsp <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
+* `zephyr-synchronization <https://github.com/platformio/platform-teensy/tree/master/examples/zephyr-synchronization?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -162,8 +164,23 @@ Packages
     * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
       - Arm Mbed OS is a platform operating system designed for the internet of things
 
+    * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
+
+    * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
+    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
+      - Device tree compiler
+
+    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio.org&utm_medium=docs>`__
+      - GNU gperf is a perfect hash function generator
+
     * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
+
+    * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
+      - Ninja is a small build system with a focus on speed
 
     * - `tool-teensy <https://www.pjrc.com/teensy/loader.html?utm_source=platformio.org&utm_medium=docs>`__
       - Upload tools for Teensy boards
@@ -205,6 +222,9 @@ Frameworks
 
     * - :ref:`framework_mbed`
       - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
+
+    * - :ref:`framework_zephyr`
+      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
 Boards
 ------
