@@ -142,7 +142,7 @@ Heltec
       - RAM
     * - :ref:`board_asrmicro650x_cubecell_capsule_solar_sensor`
       - No
-      - ASR6502
+      - ASR6051
       - 48MHz
       - 128KB
       - 16KB

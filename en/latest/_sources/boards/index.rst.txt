@@ -283,12 +283,18 @@ Atmel megaAVR
     atmelmegaavr/ATtiny1614
     atmelmegaavr/ATtiny1616
     atmelmegaavr/ATtiny1617
+    atmelmegaavr/ATtiny1624
+    atmelmegaavr/ATtiny1626
+    atmelmegaavr/ATtiny1627
     atmelmegaavr/ATtiny202
     atmelmegaavr/ATtiny204
     atmelmegaavr/ATtiny212
     atmelmegaavr/ATtiny214
     atmelmegaavr/ATtiny3216
     atmelmegaavr/ATtiny3217
+    atmelmegaavr/ATtiny3224
+    atmelmegaavr/ATtiny3226
+    atmelmegaavr/ATtiny3227
     atmelmegaavr/ATtiny402
     atmelmegaavr/ATtiny404
     atmelmegaavr/ATtiny406
@@ -296,16 +302,50 @@ Atmel megaAVR
     atmelmegaavr/ATtiny414
     atmelmegaavr/ATtiny416
     atmelmegaavr/ATtiny417
+    atmelmegaavr/ATtiny424
+    atmelmegaavr/ATtiny426
+    atmelmegaavr/ATtiny427
     atmelmegaavr/ATtiny804
     atmelmegaavr/ATtiny806
     atmelmegaavr/ATtiny807
     atmelmegaavr/ATtiny814
     atmelmegaavr/ATtiny816
     atmelmegaavr/ATtiny817
+    atmelmegaavr/ATtiny824
+    atmelmegaavr/ATtiny826
+    atmelmegaavr/ATtiny827
     atmelmegaavr/avr_iot_wg
+    atmelmegaavr/AVR128DA28
+    atmelmegaavr/AVR128DA32
+    atmelmegaavr/AVR128DA48
+    atmelmegaavr/AVR128DA64
+    atmelmegaavr/AVR128DB28
+    atmelmegaavr/AVR128DB32
+    atmelmegaavr/AVR128DB48
+    atmelmegaavr/AVR128DB64
+    atmelmegaavr/AVR32DA28
+    atmelmegaavr/AVR32DA32
+    atmelmegaavr/AVR32DA48
+    atmelmegaavr/AVR32DB28
+    atmelmegaavr/AVR32DB32
+    atmelmegaavr/AVR32DB48
+    atmelmegaavr/AVR64DA28
+    atmelmegaavr/AVR64DA32
+    atmelmegaavr/AVR64DA48
+    atmelmegaavr/AVR64DA64
+    atmelmegaavr/AVR64DB28
+    atmelmegaavr/AVR64DB32
+    atmelmegaavr/AVR64DB48
+    atmelmegaavr/AVR64DB64
+    atmelmegaavr/AVR64DD14
+    atmelmegaavr/AVR64DD20
+    atmelmegaavr/AVR64DD28
+    atmelmegaavr/AVR64DD32
     atmelmegaavr/nano_every
     atmelmegaavr/uno_wifi_rev2
     atmelmegaavr/curiosity_nano_4809
+    atmelmegaavr/curiosity_nano_da
+    atmelmegaavr/curiosity_nano_db
     atmelmegaavr/xplained_pro_4809
 
 Atmel SAM
@@ -441,6 +481,7 @@ Espressif 32
     espressif32/esp32-s2-saola-1
     espressif32/firebeetle32
     espressif32/piranha_esp32
+    espressif32/esp32-s2-franzininho
     espressif32/frogboard
     espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
@@ -458,6 +499,7 @@ Espressif 32
     espressif32/kits-edu
     espressif32/sensesiot_weizen
     espressif32/labplus_mpython
+    espressif32/lionbit
     espressif32/m5stack-core-esp32
     espressif32/m5stack-core2
     espressif32/m5stack-fire

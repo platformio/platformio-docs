@@ -157,8 +157,12 @@ format of this option is ``C-like long integer`` value with ``L`` suffix. The
 1 Hertz is equal to ``1L``, then 16 MHz (Mega Hertz) is equal to ``16000000L``.
 
 The full list of ``board_build.f_cpu`` for the popular embedded platforms you can
-find in *Boards* section of :ref:`platforms`. See "Frequency" column. You can
-overclock a board by specifying a ``board_build.f_cpu`` value other than the default.
+find in *Boards* section of :ref:`platforms`. See "Frequency" column.
+
+.. note::
+    This option doesn't make any changes to real clock settings on hardware. You should
+    specify a ``board_build.f_cpu`` value  if you have changed a target's clock frequency
+    so that the underlying software will be configured accordingly to match the change.
 
 .. _projectconf_board_build.ldscript:
 

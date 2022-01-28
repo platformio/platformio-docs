@@ -290,11 +290,13 @@ in your project configuration, for example:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/mbed-blink?utm_source=platformio.org&amp;utm_medium=docs">mbed-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/mbed-serial?utm_source=platformio.org&amp;utm_medium=docs">mbed-serial</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/zephyr-blink?utm_source=platformio.org&amp;utm_medium=docs">zephyr-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/mbed-events?utm_source=platformio.org&amp;utm_medium=docs">mbed-events</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/arduino-blink?utm_source=platformio.org&amp;utm_medium=docs">arduino-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/arduino-hid-usb-mouse?utm_source=platformio.org&amp;utm_medium=docs">arduino-hid-usb-mouse</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&amp;utm_medium=docs">arduino-internal-libs</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/mbed-dsp?utm_source=platformio.org&amp;utm_medium=docs">mbed-dsp</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/zephyr-synchronization?utm_source=platformio.org&amp;utm_medium=docs">zephyr-synchronization</a></p></li>
 </ul>
 </section>
 <section id="debugging">
@@ -436,16 +438,31 @@ of Teensy development platform and the latest upstream version using
 <tr class="row-odd"><td><p><a class="reference external" href="http://mbed.org?utm_source=platformio.org&amp;utm_medium=docs">framework-mbed</a></p></td>
 <td><p>Arm Mbed OS is a platform operating system designed for the internet of things</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.zephyrproject.org?utm_source=platformio.org&amp;utm_medium=docs">framework-zephyr</a></p></td>
+<td><p>Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://cmake.org?utm_source=platformio.org&amp;utm_medium=docs">tool-cmake</a></p></td>
+<td><p>CMake is an open-source, cross-platform family of tools designed to build, test and package software.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&amp;utm_medium=docs">tool-dtc</a></p></td>
+<td><p>Device tree compiler</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.gnu.org/software/gperf?utm_source=platformio.org&amp;utm_medium=docs">tool-gperf</a></p></td>
+<td><p>GNU gperf is a perfect hash function generator</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://www.segger.com/downloads/jlink/?utm_source=platformio.org&amp;utm_medium=docs">tool-jlink</a></p></td>
 <td><p>Software and Documentation Pack for SEGGER J-Link debug probes</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://www.pjrc.com/teensy/loader.html?utm_source=platformio.org&amp;utm_medium=docs">tool-teensy</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://ninja-build.org?utm_source=platformio.org&amp;utm_medium=docs">tool-ninja</a></p></td>
+<td><p>Ninja is a small build system with a focus on speed</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.pjrc.com/teensy/loader.html?utm_source=platformio.org&amp;utm_medium=docs">tool-teensy</a></p></td>
 <td><p>Upload tools for Teensy boards</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&amp;utm_medium=docs">toolchain-atmelavr</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&amp;utm_medium=docs">toolchain-atmelavr</a></p></td>
 <td><p>GCC Toolchain for Microchip AVR microcontrollers</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&amp;utm_medium=docs">toolchain-gccarmnoneeabi</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&amp;utm_medium=docs">toolchain-gccarmnoneeabi</a></p></td>
 <td><p>GNU toolchain for Arm Cortex-M and Cortex-R processors</p></td>
 </tr>
 </tbody>
@@ -488,6 +505,9 @@ installation is necessary on Windows 10.</p>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
 <td><p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
+<td><p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p></td>
 </tr>
 </tbody>
 </table>

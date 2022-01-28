@@ -268,8 +268,13 @@ in <em>Boards</em> section of <a class="reference internal" href="../platforms/i
 format of this option is <code class="docutils literal notranslate"><span class="pre">C-like</span> <span class="pre">long</span> <span class="pre">integer</span></code> value with <code class="docutils literal notranslate"><span class="pre">L</span></code> suffix. The
 1 Hertz is equal to <code class="docutils literal notranslate"><span class="pre">1L</span></code>, then 16 MHz (Mega Hertz) is equal to <code class="docutils literal notranslate"><span class="pre">16000000L</span></code>.</p>
 <p>The full list of <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code> for the popular embedded platforms you can
-find in <em>Boards</em> section of <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>. See “Frequency” column. You can
-overclock a board by specifying a <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code> value other than the default.</p>
+find in <em>Boards</em> section of <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>. See “Frequency” column.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option doesn’t make any changes to real clock settings on hardware. You should
+specify a <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code> value  if you have changed a target’s clock frequency
+so that the underlying software will be configured accordingly to match the change.</p>
+</div>
 </section>
 <section id="board-build-ldscript">
 <span id="projectconf-board-build-ldscript"></span><h2><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">board_build.ldscript</span></code></a><a class="headerlink" href="#board-build-ldscript" title="Permalink to this headline">¶</a></h2>

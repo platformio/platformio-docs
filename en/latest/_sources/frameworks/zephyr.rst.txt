@@ -930,6 +930,18 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_teensy_teensy40`
+      - :ref:`platform_teensy`
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 512KB
+    * - :ref:`board_teensy_teensy41`
+      - :ref:`platform_teensy`
+      - IMXRT1062
+      - 600MHz
+      - 7.75MB
+      - 512KB
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -962,6 +974,7 @@ Examples
 * `Zephyr RTOS for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Zephyr RTOS for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Zephyr RTOS for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Zephyr RTOS for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Platforms
 ---------
@@ -981,7 +994,7 @@ Platforms
       - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
-      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.
+      - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.
 
     * - :ref:`platform_nxpimxrt`
       - The i.MX RT series of crossover processors features the Arm Cortex-M core, real-time functionality and MCU usability at a cost-effective price.
@@ -997,6 +1010,9 @@ Platforms
 
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+
+    * - :ref:`platform_teensy`
+      - Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
 Boards
 ------
@@ -2321,6 +2337,34 @@ SparkFun
       - 320MHz
       - 16MB
       - 16KB
+
+Teensy
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_teensy_teensy40`
+      - :ref:`platform_teensy`
+      - External
+      - IMXRT1062
+      - 600MHz
+      - 1.94MB
+      - 512KB
+    * - :ref:`board_teensy_teensy41`
+      - :ref:`platform_teensy`
+      - External
+      - IMXRT1062
+      - 600MHz
+      - 7.75MB
+      - 512KB
 
 VNG
 ~~~

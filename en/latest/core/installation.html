@@ -395,7 +395,7 @@ any terminal emulator as long as you’re logged in as the user PlatformIO is
 installed and configured for.</p>
 <p>If you use Bash as your default shell, you can do it by editing either
 <code class="docutils literal notranslate"><span class="pre">~/.profile</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> and adding the following line:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/.platformio/penv/bin
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.platformio/penv/bin
 </pre></div>
 </div>
 <p>If you use Zsh, you can either edit <code class="docutils literal notranslate"><span class="pre">~/.zprofile</span></code> and add the code above, or
