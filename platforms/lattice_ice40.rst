@@ -14,6 +14,8 @@
 Lattice iCE40
 =============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/lattice_ice40 <https://registry.platformio.org/platforms/platformio/lattice_ice40>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``lattice_ice40``
 

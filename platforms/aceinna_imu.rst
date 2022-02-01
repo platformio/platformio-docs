@@ -14,6 +14,8 @@
 Aceinna IMU
 ===========
 
+:Registry:
+  `https://registry.platformio.org/platforms/aceinna/aceinna_imu <https://registry.platformio.org/platforms/aceinna/aceinna_imu>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``aceinna_imu``
 

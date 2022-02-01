@@ -14,6 +14,8 @@
 Intel ARC32
 ===========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/intel_arc32 <https://registry.platformio.org/platforms/platformio/intel_arc32>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``intel_arc32``
 

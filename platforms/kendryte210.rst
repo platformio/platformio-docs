@@ -14,6 +14,8 @@
 Kendryte K210
 =============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/kendryte210 <https://registry.platformio.org/platforms/platformio/kendryte210>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``kendryte210``
 

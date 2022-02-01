@@ -14,6 +14,8 @@
 Maxim 32
 ========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/maxim32 <https://registry.platformio.org/platforms/platformio/maxim32>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``maxim32``
 

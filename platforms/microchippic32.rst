@@ -14,6 +14,8 @@
 Microchip PIC32
 ===============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/microchippic32 <https://registry.platformio.org/platforms/platformio/microchippic32>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``microchippic32``
 

@@ -14,6 +14,8 @@
 Freescale Kinetis
 =================
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/freescalekinetis <https://registry.platformio.org/platforms/platformio/freescalekinetis>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``freescalekinetis``
 

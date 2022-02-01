@@ -14,6 +14,8 @@
 ASR Microelectronics ASR650x
 ============================
 
+:Registry:
+  `https://registry.platformio.org/platforms/heltecautomation/asrmicro650x <https://registry.platformio.org/platforms/heltecautomation/asrmicro650x>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``asrmicro650x``
 

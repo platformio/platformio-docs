@@ -14,6 +14,8 @@
 CHIPS Alliance
 ==============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/chipsalliance <https://registry.platformio.org/platforms/platformio/chipsalliance>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``chipsalliance``
 

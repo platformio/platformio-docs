@@ -14,6 +14,8 @@
 Espressif 8266
 ==============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/espressif8266 <https://registry.platformio.org/platforms/platformio/espressif8266>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``espressif8266``
 

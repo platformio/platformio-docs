@@ -14,6 +14,8 @@
 SiFive
 ======
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/sifive <https://registry.platformio.org/platforms/platformio/sifive>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``sifive``
 

@@ -14,6 +14,8 @@
 Nordic nRF51
 ============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/nordicnrf51 <https://registry.platformio.org/platforms/platformio/nordicnrf51>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``nordicnrf51``
 

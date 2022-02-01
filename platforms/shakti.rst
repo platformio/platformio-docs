@@ -14,6 +14,8 @@
 Shakti
 ======
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/shakti <https://registry.platformio.org/platforms/platformio/shakti>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``shakti``
 

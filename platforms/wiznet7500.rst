@@ -14,6 +14,8 @@
 WIZNet W7500
 ============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/wiznet7500 <https://registry.platformio.org/platforms/platformio/wiznet7500>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``wiznet7500``
 

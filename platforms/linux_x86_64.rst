@@ -14,6 +14,8 @@
 Linux x86_64
 ============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/linux_x86_64 <https://registry.platformio.org/platforms/platformio/linux_x86_64>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``linux_x86_64``
 

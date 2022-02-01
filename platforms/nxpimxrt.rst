@@ -14,6 +14,8 @@
 NXP i.MX RT
 ===========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/nxpimxrt <https://registry.platformio.org/platforms/platformio/nxpimxrt>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``nxpimxrt``
 

@@ -14,6 +14,8 @@
 Teensy
 ======
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/teensy <https://registry.platformio.org/platforms/platformio/teensy>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``teensy``
 

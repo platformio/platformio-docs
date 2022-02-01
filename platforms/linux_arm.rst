@@ -14,6 +14,8 @@
 Linux ARM
 =========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/linux_arm <https://registry.platformio.org/platforms/platformio/linux_arm>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``linux_arm``
 

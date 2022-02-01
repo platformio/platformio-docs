@@ -14,6 +14,8 @@
 Infineon XMC
 ============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/infineonxmc <https://registry.platformio.org/platforms/platformio/infineonxmc>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``infineonxmc``
 

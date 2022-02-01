@@ -14,6 +14,8 @@
 Windows x86
 ===========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/windows_x86 <https://registry.platformio.org/platforms/platformio/windows_x86>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``windows_x86``
 

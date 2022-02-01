@@ -14,6 +14,8 @@
 ST STM8
 =======
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/ststm8 <https://registry.platformio.org/platforms/platformio/ststm8>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``ststm8``
 

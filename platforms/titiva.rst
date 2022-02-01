@@ -14,6 +14,8 @@
 TI TIVA
 =======
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/titiva <https://registry.platformio.org/platforms/platformio/titiva>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``titiva``
 

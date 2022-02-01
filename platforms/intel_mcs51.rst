@@ -14,6 +14,8 @@
 Intel MCS-51 (8051)
 ===================
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/intel_mcs51 <https://registry.platformio.org/platforms/platformio/intel_mcs51>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``intel_mcs51``
 

@@ -14,6 +14,8 @@
 TI MSP430
 =========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/timsp430 <https://registry.platformio.org/platforms/platformio/timsp430>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``timsp430``
 

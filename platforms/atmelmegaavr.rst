@@ -14,6 +14,8 @@
 Atmel megaAVR
 =============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/atmelmegaavr <https://registry.platformio.org/platforms/platformio/atmelmegaavr>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``atmelmegaavr``
 

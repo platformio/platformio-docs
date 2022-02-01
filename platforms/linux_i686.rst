@@ -14,6 +14,8 @@
 Linux i686
 ==========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/linux_i686 <https://registry.platformio.org/platforms/platformio/linux_i686>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``linux_i686``
 

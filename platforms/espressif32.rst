@@ -14,6 +14,8 @@
 Espressif 32
 ============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/espressif32 <https://registry.platformio.org/platforms/platformio/espressif32>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``espressif32``
 

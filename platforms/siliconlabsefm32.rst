@@ -14,6 +14,8 @@
 Silicon Labs EFM32
 ==================
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/siliconlabsefm32 <https://registry.platformio.org/platforms/platformio/siliconlabsefm32>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``siliconlabsefm32``
 

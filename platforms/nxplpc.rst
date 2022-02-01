@@ -14,6 +14,8 @@
 NXP LPC
 =======
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/nxplpc <https://registry.platformio.org/platforms/platformio/nxplpc>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``nxplpc``
 

@@ -14,6 +14,8 @@
 Raspberry Pi RP2040
 ===================
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/raspberrypi <https://registry.platformio.org/platforms/platformio/raspberrypi>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``raspberrypi``
 

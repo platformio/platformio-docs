@@ -14,6 +14,8 @@
 GigaDevice GD32V
 ================
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/gd32v <https://registry.platformio.org/platforms/platformio/gd32v>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``gd32v``
 

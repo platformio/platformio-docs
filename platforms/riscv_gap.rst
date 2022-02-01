@@ -14,6 +14,8 @@
 RISC-V GAP
 ==========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/riscv_gap <https://registry.platformio.org/platforms/platformio/riscv_gap>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``riscv_gap``
 

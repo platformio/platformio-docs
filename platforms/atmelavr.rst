@@ -14,6 +14,8 @@
 Atmel AVR
 =========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/atmelavr <https://registry.platformio.org/platforms/platformio/atmelavr>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``atmelavr``
 

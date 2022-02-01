@@ -14,6 +14,8 @@
 Atmel SAM
 =========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/atmelsam <https://registry.platformio.org/platforms/platformio/atmelsam>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``atmelsam``
 

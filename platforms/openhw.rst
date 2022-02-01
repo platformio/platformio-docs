@@ -14,6 +14,8 @@
 OpenHW Group
 ============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/openhw <https://registry.platformio.org/platforms/platformio/openhw>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``openhw``
 
