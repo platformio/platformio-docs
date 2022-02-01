@@ -23,6 +23,26 @@ FreeRTOS is a real-time operating system kernel for embedded devices that has be
     :local:
     :depth: 1
 
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_chipsalliance`
+      - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
+
+    * - :ref:`platform_sifive`
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+
+Examples
+--------
+
+* `FreeRTOS for CHIPS Alliance <https://github.com/platformio/platform-chipsalliance/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `FreeRTOS for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+
 Debugging
 ---------
 
@@ -104,26 +124,6 @@ You do not need to use/buy external debug probe.
       - 16MB
       - 16KB
 
-
-Examples
---------
-
-* `FreeRTOS for CHIPS Alliance <https://github.com/platformio/platform-chipsalliance/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `FreeRTOS for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_chipsalliance`
-      - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
-
-    * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 Boards
 ------

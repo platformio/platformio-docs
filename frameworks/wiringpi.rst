@@ -23,11 +23,6 @@ WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspb
     :local:
     :depth: 1
 
-Examples
---------
-
-* `WiringPi for Linux ARM <https://github.com/platformio/platform-linux_arm/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
 Platforms
 ---------
 .. list-table::
@@ -38,6 +33,11 @@ Platforms
 
     * - :ref:`platform_linux_arm`
       - Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
+
+Examples
+--------
+
+* `WiringPi for Linux ARM <https://github.com/platformio/platform-linux_arm/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Boards
 ------

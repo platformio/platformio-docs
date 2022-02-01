@@ -23,6 +23,22 @@ The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-i
     :local:
     :depth: 1
 
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_ststm32`
+      - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+
+Examples
+--------
+
+* `CMSIS for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+
 Debugging
 ---------
 
@@ -1485,22 +1501,6 @@ Please click on board name for the further details.
       - 32KB
       - 7.75KB
 
-
-Examples
---------
-
-* `CMSIS for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_ststm32`
-      - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 Boards
 ------

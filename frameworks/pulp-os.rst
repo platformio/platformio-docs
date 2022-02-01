@@ -23,6 +23,22 @@ PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy
     :local:
     :depth: 1
 
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_riscv_gap`
+      - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
+
+Examples
+--------
+
+* `PULP OS for RISC-V GAP <https://github.com/platformio/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+
 Debugging
 ---------
 
@@ -68,22 +84,6 @@ You do not need to use/buy external debug probe.
       - 64MB
       - 8MB
 
-
-Examples
---------
-
-* `PULP OS for RISC-V GAP <https://github.com/platformio/platform-riscv_gap/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_riscv_gap`
-      - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
 
 Boards
 ------

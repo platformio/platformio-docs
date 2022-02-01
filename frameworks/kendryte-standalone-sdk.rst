@@ -23,6 +23,22 @@ Kendryte Standalone SDK without OS support
     :local:
     :depth: 1
 
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_kendryte210`
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
+
+Examples
+--------
+
+* `Kendryte Standalone SDK for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+
 Debugging
 ---------
 
@@ -99,22 +115,6 @@ Please click on board name for the further details.
       - 16MB
       - 6MB
 
-
-Examples
---------
-
-* `Kendryte Standalone SDK for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
 Boards
 ------

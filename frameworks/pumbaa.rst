@@ -23,11 +23,6 @@ Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, d
     :local:
     :depth: 1
 
-Examples
---------
-
-* `Pumbaa for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
 Platforms
 ---------
 .. list-table::
@@ -38,6 +33,11 @@ Platforms
 
     * - :ref:`platform_espressif32`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
+Examples
+--------
+
+* `Pumbaa for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Boards
 ------

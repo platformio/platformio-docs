@@ -23,6 +23,22 @@ Runtime Environment for Parallel Ultra Low Power platform targeting high energy 
     :local:
     :depth: 1
 
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_openhw`
+      - OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.
+
+Examples
+--------
+
+* `PULP Runtime Environment for OpenHW Group <https://github.com/platformio/platform-openhw/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+
 Debugging
 ---------
 
@@ -68,22 +84,6 @@ You do not need to use/buy external debug probe.
       - 16MB
       - 1.16MB
 
-
-Examples
---------
-
-* `PULP Runtime Environment for OpenHW Group <https://github.com/platformio/platform-openhw/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_openhw`
-      - OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.
 
 Boards
 ------

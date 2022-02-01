@@ -23,11 +23,6 @@ ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcon
     :local:
     :depth: 1
 
-Examples
---------
-
-* `ESP8266 RTOS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
 Platforms
 ---------
 .. list-table::
@@ -38,6 +33,11 @@ Platforms
 
     * - :ref:`platform_espressif8266`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
+Examples
+--------
+
+* `ESP8266 RTOS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Boards
 ------

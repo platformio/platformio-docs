@@ -24,6 +24,22 @@ Open Source Software for Developing on the SiFive Freedom E Platform
     :depth: 1
 .. include:: freedom-e-sdk_extra.rst
 
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_sifive`
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+
+Examples
+--------
+
+* `Freedom E SDK for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+
 Debugging
 ---------
 
@@ -99,22 +115,6 @@ You do not need to use/buy external debug probe.
       - 16MB
       - 16KB
 
-
-Examples
---------
-
-* `Freedom E SDK for SiFive <https://github.com/platformio/platform-sifive/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
 Boards
 ------

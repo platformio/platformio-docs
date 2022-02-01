@@ -23,11 +23,6 @@ The non-OS SDK provides a set of application programming interfaces (APIs) for c
     :local:
     :depth: 1
 
-Examples
---------
-
-* `ESP8266 Non-OS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
 Platforms
 ---------
 .. list-table::
@@ -38,6 +33,11 @@ Platforms
 
     * - :ref:`platform_espressif8266`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+
+Examples
+--------
+
+* `ESP8266 Non-OS SDK for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Boards
 ------

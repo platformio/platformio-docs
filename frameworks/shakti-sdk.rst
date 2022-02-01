@@ -23,6 +23,22 @@ A software development kit for developing applications on Shakti class of proces
     :local:
     :depth: 1
 
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_shakti`
+      - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
+
+Examples
+--------
+
+* `Shakti SDK for Shakti <https://github.com/platformio/platform-shakti/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+
 Debugging
 ---------
 
@@ -92,22 +108,6 @@ You do not need to use/buy external debug probe.
       - 0B
       - 128MB
 
-
-Examples
---------
-
-* `Shakti SDK for Shakti <https://github.com/platformio/platform-shakti/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_shakti`
-      - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
 Boards
 ------
