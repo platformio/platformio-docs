@@ -19,9 +19,6 @@ Standard Peripheral Library
 
 The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.
 
-For more detailed information please visit `vendor site <https://www.st.com/en/embedded-software/stsw-stm8069.html?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

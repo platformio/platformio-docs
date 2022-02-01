@@ -19,9 +19,6 @@ WD-Firmware
 
 The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
 
-For more detailed information please visit `vendor site <https://github.com/westerndigitalcorporation/riscv-fw-infrastructure?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

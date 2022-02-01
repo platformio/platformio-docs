@@ -31,7 +31,6 @@ Examples
 
 Examples are listed from `CHIPS Alliance development platform repository <https://github.com/platformio/platform-chipsalliance/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `native-blink_asm <https://github.com/platformio/platform-chipsalliance/tree/master/examples/native-blink_asm?utm_source=platformio.org&utm_medium=docs>`_
 * `native-bare_c <https://github.com/platformio/platform-chipsalliance/tree/master/examples/native-bare_c?utm_source=platformio.org&utm_medium=docs>`_
 * `rtosal-freertos <https://github.com/platformio/platform-chipsalliance/tree/master/examples/rtosal-freertos?utm_source=platformio.org&utm_medium=docs>`_
 * `native-asm <https://github.com/platformio/platform-chipsalliance/tree/master/examples/native-asm?utm_source=platformio.org&utm_medium=docs>`_

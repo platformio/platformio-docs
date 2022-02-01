@@ -19,9 +19,6 @@ Pumbaa
 
 Pumbaa is Python on top of Simba. The implementation is a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory
 
-For more detailed information please visit `vendor site <http://pumbaa.readthedocs.org/?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

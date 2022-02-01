@@ -19,9 +19,6 @@ Kendryte FreeRTOS SDK
 
 Kendryte SDK with FreeRTOS support
 
-For more detailed information please visit `vendor site <https://github.com/kendryte/kendryte-freertos-sdk?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

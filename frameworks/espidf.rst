@@ -19,9 +19,6 @@ Espressif IoT Development Framework
 
 ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
 
-For more detailed information please visit `vendor site <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

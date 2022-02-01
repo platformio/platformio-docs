@@ -19,9 +19,6 @@ Simba
 
 Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
-For more detailed information please visit `vendor site <http://simba-os.readthedocs.org?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

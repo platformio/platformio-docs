@@ -19,9 +19,6 @@ Freedom E SDK
 
 Open Source Software for Developing on the SiFive Freedom E Platform
 
-For more detailed information please visit `vendor site <https://github.com/sifive/freedom-e-sdk?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

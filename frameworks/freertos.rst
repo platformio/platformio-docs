@@ -19,9 +19,6 @@ FreeRTOS
 
 FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
-For more detailed information please visit `vendor site <https://www.freertos.org?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

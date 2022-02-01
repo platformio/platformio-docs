@@ -117,8 +117,8 @@ Boards
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 
-4D Systems
-~~~~~~~~~~
+4DSystems
+~~~~~~~~~
 
 .. list-table::
     :header-rows:  1

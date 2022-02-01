@@ -79,17 +79,14 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoasrmicro <https://registry.platformio.org/tools/heltecautomation/framework-arduinoasrmicro>`__
-      - Arduino Wiring-based Framework for ASR Microelectronics (Heltec core)
+    * - `framework-arduinoasrmicro650x <https://registry.platformio.org/tools/heltecautomation/framework-arduinoasrmicro650x>`__
+      - Arduino Wiring-based Framework for ASR Microelectronics ASR650x (Heltec core)
 
     * - `tool-cubecellelftool <https://registry.platformio.org/tools/heltecautomation/tool-cubecellelftool>`__
       - CubeCell ELF tool
 
     * - `tool-cubecellflash <https://registry.platformio.org/tools/heltecautomation/tool-cubecellflash>`__
       - CubeCell Flash tool
-
-    * - `tool-cubecellflash6601 <https://registry.platformio.org/tools/heltecautomation/tool-cubecellflash6601>`__
-      - CubeCell Flash tool for ASR6601
 
     * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
@@ -141,7 +138,7 @@ Heltec
       - RAM
     * - :ref:`board_asrmicro650x_cubecell_capsule_solar_sensor`
       - No
-      - ASR6051
+      - ASR6502
       - 48MHz
       - 128KB
       - 16KB
@@ -157,12 +154,6 @@ Heltec
       - 48MHz
       - 128KB
       - 16KB
-    * - :ref:`board_asrmicro650x_cubecell_board_pro`
-      - No
-      - ASR6601
-      - 48MHz
-      - 224KB
-      - 224KB
     * - :ref:`board_asrmicro650x_cubecell_board_plus`
       - No
       - ASR6502

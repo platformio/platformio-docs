@@ -19,9 +19,6 @@ Zephyr RTOS
 
 The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
 
-For more detailed information please visit `vendor site <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

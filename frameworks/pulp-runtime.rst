@@ -19,9 +19,6 @@ PULP Runtime Environment
 
 Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
 
-For more detailed information please visit `vendor site <https://github.com/pulp-platform/pulp-runtime?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

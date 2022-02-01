@@ -19,9 +19,6 @@ WiringPi
 
 WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino 'wiring' system
 
-For more detailed information please visit `vendor site <http://wiringpi.com?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

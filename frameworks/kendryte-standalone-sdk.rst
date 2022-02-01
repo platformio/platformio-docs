@@ -19,9 +19,6 @@ Kendryte Standalone SDK
 
 Kendryte Standalone SDK without OS support
 
-For more detailed information please visit `vendor site <https://github.com/kendryte/kendryte-standalone-sdk?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1

@@ -19,9 +19,6 @@ Arduino
 
 Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
-For more detailed information please visit `vendor site <http://arduino.cc/en/Reference/HomePage?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1
@@ -3613,7 +3610,7 @@ Platforms
       - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.
 
     * - :ref:`platform_raspberrypi`
-      - RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+      - RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
@@ -3650,13 +3647,6 @@ Boards
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_microchippic32_picadillo_35t`
-      - :ref:`platform_microchippic32`
-      - No
-      - 32MX795F512L
-      - 80MHz
-      - 508KB
-      - 128KB
     * - :ref:`board_espressif8266_gen4iod`
       - :ref:`platform_espressif8266`
       - No
@@ -3664,6 +3654,27 @@ Boards
       - 80MHz
       - 512KB
       - 80KB
+
+4DSystems
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_microchippic32_picadillo_35t`
+      - :ref:`platform_microchippic32`
+      - No
+      - 32MX795F512L
+      - 80MHz
+      - 508KB
+      - 128KB
 
 AI Thinker
 ~~~~~~~~~~
@@ -6719,7 +6730,7 @@ Heltec
     * - :ref:`board_asrmicro650x_cubecell_capsule_solar_sensor`
       - :ref:`platform_asrmicro650x`
       - No
-      - ASR6051
+      - ASR6502
       - 48MHz
       - 128KB
       - 16KB
@@ -6737,13 +6748,6 @@ Heltec
       - 48MHz
       - 128KB
       - 16KB
-    * - :ref:`board_asrmicro650x_cubecell_board_pro`
-      - :ref:`platform_asrmicro650x`
-      - No
-      - ASR6601
-      - 48MHz
-      - 224KB
-      - 224KB
     * - :ref:`board_asrmicro650x_cubecell_board_plus`
       - :ref:`platform_asrmicro650x`
       - No
@@ -8011,27 +8015,6 @@ Microchip
       - 16MHz
       - 16KB
       - 2KB
-    * - :ref:`board_atmelmegaavr_ATtiny1624`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY1624
-      - 16MHz
-      - 16KB
-      - 2KB
-    * - :ref:`board_atmelmegaavr_ATtiny1626`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY1626
-      - 16MHz
-      - 16KB
-      - 2KB
-    * - :ref:`board_atmelmegaavr_ATtiny1627`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY1627
-      - 16MHz
-      - 16KB
-      - 2KB
     * - :ref:`board_atmelmegaavr_ATtiny202`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8074,27 +8057,6 @@ Microchip
       - 16MHz
       - 32KB
       - 2KB
-    * - :ref:`board_atmelmegaavr_ATtiny3224`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY3224
-      - 16MHz
-      - 32KB
-      - 3KB
-    * - :ref:`board_atmelmegaavr_ATtiny3226`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY3226
-      - 16MHz
-      - 32KB
-      - 3KB
-    * - :ref:`board_atmelmegaavr_ATtiny3227`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY3227
-      - 16MHz
-      - 32KB
-      - 3KB
     * - :ref:`board_atmelmegaavr_ATtiny402`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8144,27 +8106,6 @@ Microchip
       - 16MHz
       - 4KB
       - 256B
-    * - :ref:`board_atmelmegaavr_ATtiny424`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY424
-      - 16MHz
-      - 4KB
-      - 512B
-    * - :ref:`board_atmelmegaavr_ATtiny426`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY426
-      - 16MHz
-      - 4KB
-      - 512B
-    * - :ref:`board_atmelmegaavr_ATtiny427`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY427
-      - 16MHz
-      - 4KB
-      - 512B
     * - :ref:`board_atmelmegaavr_ATtiny804`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8207,27 +8148,6 @@ Microchip
       - 16MHz
       - 8KB
       - 512B
-    * - :ref:`board_atmelmegaavr_ATtiny824`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY824
-      - 16MHz
-      - 8KB
-      - 1KB
-    * - :ref:`board_atmelmegaavr_ATtiny826`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY826
-      - 16MHz
-      - 8KB
-      - 1KB
-    * - :ref:`board_atmelmegaavr_ATtiny827`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - ATTINY827
-      - 16MHz
-      - 8KB
-      - 1KB
     * - :ref:`board_atmelmegaavr_avr_iot_wg`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8235,188 +8155,6 @@ Microchip
       - 16MHz
       - 48KB
       - 6KB
-    * - :ref:`board_atmelmegaavr_AVR128DA28`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DA28
-      - 24MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_atmelmegaavr_AVR128DA32`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DA32
-      - 24MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_atmelmegaavr_AVR128DA48`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DA48
-      - 24MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_atmelmegaavr_AVR128DA64`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DA64
-      - 24MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_atmelmegaavr_AVR128DB28`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DB28
-      - 24MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_atmelmegaavr_AVR128DB32`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DB32
-      - 24MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_atmelmegaavr_AVR128DB48`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DB48
-      - 24MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_atmelmegaavr_AVR128DB64`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DB64
-      - 24MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_atmelmegaavr_AVR32DA28`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR32DA28
-      - 24MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_atmelmegaavr_AVR32DA32`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR32DA32
-      - 24MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_atmelmegaavr_AVR32DA48`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR32DA48
-      - 24MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_atmelmegaavr_AVR32DB28`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR32DB28
-      - 24MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_atmelmegaavr_AVR32DB32`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR32DB32
-      - 24MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_atmelmegaavr_AVR32DB48`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR32DB48
-      - 24MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_atmelmegaavr_AVR64DA28`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DA28
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DA32`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DA32
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DA48`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DA48
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DA64`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DA64
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DB28`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DB28
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DB32`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DB32
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DB48`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DB48
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DB64`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DB64
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DD14`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DD14
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DD20`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DD20
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DD28`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DD28
-      - 24MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_atmelmegaavr_AVR64DD32`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR64DD32
-      - 24MHz
-      - 64KB
-      - 8KB
     * - :ref:`board_atmelmegaavr_curiosity_nano_4809`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8424,20 +8162,6 @@ Microchip
       - 16MHz
       - 48KB
       - 6KB
-    * - :ref:`board_atmelmegaavr_curiosity_nano_da`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DA48
-      - 24MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_atmelmegaavr_curiosity_nano_db`
-      - :ref:`platform_atmelmegaavr`
-      - No
-      - AVR128DB48
-      - 24MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_atmelmegaavr_xplained_pro_4809`
       - :ref:`platform_atmelmegaavr`
       - No
