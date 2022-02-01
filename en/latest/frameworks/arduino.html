@@ -74,14 +74,15 @@
 <li class="toctree-l4"><a class="reference internal" href="#minicore-mightycore-megacore-majorcore-and-microcore">MiniCore, MightyCore, MegaCore, MajorCore and MicroCore</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#tools-debug-probes">Tools &amp; Debug Probes</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#boards">Boards</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#d-systems">4D Systems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dsystems">4DSystems</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ai-thinker">AI Thinker</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#az-delivery">AZ-Delivery</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#adafruit">Adafruit</a></li>
@@ -279,9 +280,7 @@
 <li class="toctree-l2"><a class="reference internal" href="kendryte-freertos-sdk.html">Kendryte FreeRTOS SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kendryte-standalone-sdk.html">Kendryte Standalone SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logicromsdk.html">Logicrom SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nuclei-sdk.html">Nuclei SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-runtime.html">PULP Runtime Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-sdk.html">PULP SDK</a></li>
@@ -356,15 +355,14 @@
 </dd>
 </dl>
 <p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p>
-<p>For more detailed information please visit <a class="reference external" href="http://arduino.cc/en/Reference/HomePage?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#tutorials" id="id8">Tutorials</a></p></li>
 <li><p><a class="reference internal" href="#configuration" id="id9">Configuration</a></p></li>
-<li><p><a class="reference internal" href="#debugging" id="id10">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id10">Platforms</a></p></li>
 <li><p><a class="reference internal" href="#examples" id="id11">Examples</a></p></li>
-<li><p><a class="reference internal" href="#platforms" id="id12">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id12">Debugging</a></p></li>
 <li><p><a class="reference internal" href="#boards" id="id13">Boards</a></p></li>
 </ul>
 </div>
@@ -389,8 +387,105 @@
 </ul>
 </section>
 </section>
+<section id="platforms">
+<h2><a class="toc-backref" href="#id10">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/asrmicro650x.html#platform-asrmicro650x"><span class="std std-ref">ASR Microelectronics ASR650x</span></a></p></td>
+<td><p>ASR Microelectronics ASR650x series is highly intergrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
+<td><p>Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry’s most code-efficient architecture for C and assembly programming</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
+<td><p>8-bit MCUs Built for Real-time Control with Core Independent Peripherals combining intelligent hardware peripherals along with the low-power capability of an AVR core, megaAVR microcontrollers (MCUs) broaden the effectiveness of your real-time control systems.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
+<td><p>Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a></p></td>
+<td><p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/gd32v.html#platform-gd32v"><span class="std std-ref">GigaDevice GD32V</span></a></p></td>
+<td><p>The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
+<td><p>Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/intel_arc32.html#platform-intel-arc32"><span class="std std-ref">Intel ARC32</span></a></p></td>
+<td><p>ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
+<td><p>Kendryte K210 is an AI capable RISCV64 dual core SoC.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/microchippic32.html#platform-microchippic32"><span class="std std-ref">Microchip PIC32</span></a></p></td>
+<td><p>Microchip’s 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<td><p>The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<td><p>The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
+<td><p>RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
+<td><p>The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
+<td><p>Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/timsp430.html#platform-timsp430"><span class="std std-ref">TI MSP430</span></a></p></td>
+<td><p>MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/titiva.html#platform-titiva"><span class="std std-ref">TI TIVA</span></a></p></td>
+<td><p>Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples">
+<h2><a class="toc-backref" href="#id11">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for ASR Microelectronics ASR650x</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Atmel AVR</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Atmel megaAVR</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Atmel SAM</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Espressif 32</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Espressif 8266</a></p></li>
+<li><p><a class="reference external" href="https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for GigaDevice GD32V</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Infineon XMC</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Intel ARC32</a></p></li>
+<li><p><a class="reference external" href="https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Kendryte K210</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Microchip PIC32</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Nordic nRF51</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Nordic nRF52</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-raspberrypi/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Raspberry Pi RP2040</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for ST STM32</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for ST STM8</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Teensy</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for TI MSP430</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for TI TIVA</a></p></li>
+</ul>
+</section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id10">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="contents local topic" id="id1">
 <ul class="simple">
@@ -4500,110 +4595,12 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 </section>
-<section id="examples">
-<h2><a class="toc-backref" href="#id11">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/HelTecAutomation/platform-asrmicro650x/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for ASR Microelectronics ASR650x</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Atmel AVR</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Atmel megaAVR</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Atmel SAM</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Espressif 32</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Espressif 8266</a></p></li>
-<li><p><a class="reference external" href="https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for GigaDevice GD32V</a></p></li>
-<li><p><a class="reference external" href="https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Infineon XMC</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Intel ARC32</a></p></li>
-<li><p><a class="reference external" href="https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Kendryte K210</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Microchip PIC32</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Nordic nRF51</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Nordic nRF52</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-raspberrypi/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Raspberry Pi RP2040</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for ST STM32</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for ST STM8</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Teensy</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-timsp430/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for TI MSP430</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for TI TIVA</a></p></li>
-</ul>
-</section>
-<section id="platforms">
-<h2><a class="toc-backref" href="#id12">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/asrmicro650x.html#platform-asrmicro650x"><span class="std std-ref">ASR Microelectronics ASR650x</span></a></p></td>
-<td><p>ASR Microelectronics ASR650x series is highly intergrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
-<td><p>Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry’s most code-efficient architecture for C and assembly programming</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>8-bit MCUs Built for Real-time Control with Core Independent Peripherals combining intelligent hardware peripherals along with the low-power capability of an AVR core, megaAVR microcontrollers (MCUs) broaden the effectiveness of your real-time control systems.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
-<td><p>Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
-<td><p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a></p></td>
-<td><p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/gd32v.html#platform-gd32v"><span class="std std-ref">GigaDevice GD32V</span></a></p></td>
-<td><p>The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/infineonxmc.html#platform-infineonxmc"><span class="std std-ref">Infineon XMC</span></a></p></td>
-<td><p>Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/intel_arc32.html#platform-intel-arc32"><span class="std std-ref">Intel ARC32</span></a></p></td>
-<td><p>ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
-<td><p>Kendryte K210 is an AI capable RISCV64 dual core SoC.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/microchippic32.html#platform-microchippic32"><span class="std std-ref">Microchip PIC32</span></a></p></td>
-<td><p>Microchip’s 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
-<td><p>The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
-<td><p>The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
-<td><p>RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
-<td><p>The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
-<td><p>Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/timsp430.html#platform-timsp430"><span class="std std-ref">TI MSP430</span></a></p></td>
-<td><p>MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/titiva.html#platform-titiva"><span class="std std-ref">TI TIVA</span></a></p></td>
-<td><p>Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="boards">
 <h2><a class="toc-backref" href="#id13">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
-<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command</p></li>
 <li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by horizontally.</p></li>
 </ul>
 </div>
@@ -4630,21 +4627,47 @@ Please click on board name for the further details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/microchippic32/picadillo_35t.html#board-microchippic32-picadillo-35t"><span class="std std-ref">4D Systems PICadillo 35T</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/microchippic32.html#platform-microchippic32"><span class="std std-ref">Microchip PIC32</span></a></p></td>
-<td><p>No</p></td>
-<td><p>32MX795F512L</p></td>
-<td><p>80MHz</p></td>
-<td><p>508KB</p></td>
-<td><p>128KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/gen4iod.html#board-espressif8266-gen4iod"><span class="std std-ref">4D Systems gen4 IoD Range</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/gen4iod.html#board-espressif8266-gen4iod"><span class="std std-ref">4D Systems gen4 IoD Range</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP8266</p></td>
 <td><p>80MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dsystems">
+<h3>4DSystems<a class="headerlink" href="#dsystems" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/microchippic32/picadillo_35t.html#board-microchippic32-picadillo-35t"><span class="std std-ref">4DSystems PICadillo 35T</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/microchippic32.html#platform-microchippic32"><span class="std std-ref">Microchip PIC32</span></a></p></td>
+<td><p>No</p></td>
+<td><p>32MX795F512L</p></td>
+<td><p>80MHz</p></td>
+<td><p>508KB</p></td>
+<td><p>128KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -8737,7 +8760,7 @@ Please click on board name for the further details.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule_solar_sensor.html#board-asrmicro650x-cubecell-capsule-solar-sensor"><span class="std std-ref">Heltec CubeCell Capsule Solar Sensor (HTCC-AC02)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/asrmicro650x.html#platform-asrmicro650x"><span class="std std-ref">ASR Microelectronics ASR650x</span></a></p></td>
 <td><p>No</p></td>
-<td><p>ASR6051</p></td>
+<td><p>ASR6502</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
@@ -8758,15 +8781,7 @@ Please click on board name for the further details.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_pro.html#board-asrmicro650x-cubecell-board-pro"><span class="std std-ref">Heltec CubeCell-Board PRO (HTCC-AB03)</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/asrmicro650x.html#platform-asrmicro650x"><span class="std std-ref">ASR Microelectronics ASR650x</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ASR6601</p></td>
-<td><p>48MHz</p></td>
-<td><p>224KB</p></td>
-<td><p>224KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_plus.html#board-asrmicro650x-cubecell-board-plus"><span class="std std-ref">Heltec CubeCell-Board Plus (HTCC-AB02)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_plus.html#board-asrmicro650x-cubecell-board-plus"><span class="std std-ref">Heltec CubeCell-Board Plus (HTCC-AB02)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/asrmicro650x.html#platform-asrmicro650x"><span class="std std-ref">ASR Microelectronics ASR650x</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6502</p></td>
@@ -8774,7 +8789,7 @@ Please click on board name for the further details.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule.html#board-asrmicro650x-cubecell-capsule"><span class="std std-ref">Heltec CubeCell-Capsule (HTCC-AC01)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule.html#board-asrmicro650x-cubecell-capsule"><span class="std std-ref">Heltec CubeCell-Capsule (HTCC-AC01)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/asrmicro650x.html#platform-asrmicro650x"><span class="std std-ref">ASR Microelectronics ASR650x</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6501</p></td>
@@ -8782,7 +8797,7 @@ Please click on board name for the further details.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_gps.html#board-asrmicro650x-cubecell-gps"><span class="std std-ref">Heltec CubeCell-GPS (HTCC-AB02S)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_gps.html#board-asrmicro650x-cubecell-gps"><span class="std std-ref">Heltec CubeCell-GPS (HTCC-AB02S)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/asrmicro650x.html#platform-asrmicro650x"><span class="std std-ref">ASR Microelectronics ASR650x</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6502</p></td>
@@ -8790,7 +8805,7 @@ Please click on board name for the further details.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module.html#board-asrmicro650x-cubecell-module"><span class="std std-ref">Heltec CubeCell-Module (HTCC-AM01)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module.html#board-asrmicro650x-cubecell-module"><span class="std std-ref">Heltec CubeCell-Module (HTCC-AM01)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/asrmicro650x.html#platform-asrmicro650x"><span class="std std-ref">ASR Microelectronics ASR650x</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6501</p></td>
@@ -8798,7 +8813,7 @@ Please click on board name for the further details.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module_plus.html#board-asrmicro650x-cubecell-module-plus"><span class="std std-ref">Heltec CubeCell-Module Plus (HTCC-AM02)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module_plus.html#board-asrmicro650x-cubecell-module-plus"><span class="std std-ref">Heltec CubeCell-Module Plus (HTCC-AM02)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/asrmicro650x.html#platform-asrmicro650x"><span class="std std-ref">ASR Microelectronics ASR650x</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6502</p></td>
@@ -8806,7 +8821,7 @@ Please click on board name for the further details.</p>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/heltec_wifi_kit_8.html#board-espressif8266-heltec-wifi-kit-8"><span class="std std-ref">Heltec Wifi kit 8</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/heltec_wifi_kit_8.html#board-espressif8266-heltec-wifi-kit-8"><span class="std std-ref">Heltec Wifi kit 8</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP8266</p></td>
@@ -10504,31 +10519,7 @@ Please click on board name for the further details.</p>
 <td><p>16KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny1624.html#board-atmelmegaavr-attiny1624"><span class="std std-ref">ATtiny1624</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY1624</p></td>
-<td><p>16MHz</p></td>
-<td><p>16KB</p></td>
-<td><p>2KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny1626.html#board-atmelmegaavr-attiny1626"><span class="std std-ref">ATtiny1626</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY1626</p></td>
-<td><p>16MHz</p></td>
-<td><p>16KB</p></td>
-<td><p>2KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny1627.html#board-atmelmegaavr-attiny1627"><span class="std std-ref">ATtiny1627</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY1627</p></td>
-<td><p>16MHz</p></td>
-<td><p>16KB</p></td>
-<td><p>2KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny202.html#board-atmelmegaavr-attiny202"><span class="std std-ref">ATtiny202</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny202.html#board-atmelmegaavr-attiny202"><span class="std std-ref">ATtiny202</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY202</p></td>
@@ -10536,7 +10527,7 @@ Please click on board name for the further details.</p>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny204.html#board-atmelmegaavr-attiny204"><span class="std std-ref">ATtiny204</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny204.html#board-atmelmegaavr-attiny204"><span class="std std-ref">ATtiny204</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY204</p></td>
@@ -10544,7 +10535,7 @@ Please click on board name for the further details.</p>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny212.html#board-atmelmegaavr-attiny212"><span class="std std-ref">ATtiny212</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny212.html#board-atmelmegaavr-attiny212"><span class="std std-ref">ATtiny212</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY212</p></td>
@@ -10552,7 +10543,7 @@ Please click on board name for the further details.</p>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny214.html#board-atmelmegaavr-attiny214"><span class="std std-ref">ATtiny214</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny214.html#board-atmelmegaavr-attiny214"><span class="std std-ref">ATtiny214</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY214</p></td>
@@ -10560,7 +10551,7 @@ Please click on board name for the further details.</p>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny3216.html#board-atmelmegaavr-attiny3216"><span class="std std-ref">ATtiny3216</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny3216.html#board-atmelmegaavr-attiny3216"><span class="std std-ref">ATtiny3216</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY3216</p></td>
@@ -10568,37 +10559,13 @@ Please click on board name for the further details.</p>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny3217.html#board-atmelmegaavr-attiny3217"><span class="std std-ref">ATtiny3217</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny3217.html#board-atmelmegaavr-attiny3217"><span class="std std-ref">ATtiny3217</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY3217</p></td>
 <td><p>16MHz</p></td>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny3224.html#board-atmelmegaavr-attiny3224"><span class="std std-ref">ATtiny3224</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY3224</p></td>
-<td><p>16MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>3KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny3226.html#board-atmelmegaavr-attiny3226"><span class="std std-ref">ATtiny3226</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY3226</p></td>
-<td><p>16MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>3KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny3227.html#board-atmelmegaavr-attiny3227"><span class="std std-ref">ATtiny3227</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY3227</p></td>
-<td><p>16MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>3KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny402.html#board-atmelmegaavr-attiny402"><span class="std std-ref">ATtiny402</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
@@ -10656,31 +10623,7 @@ Please click on board name for the further details.</p>
 <td><p>4KB</p></td>
 <td><p>256B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny424.html#board-atmelmegaavr-attiny424"><span class="std std-ref">ATtiny424</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY424</p></td>
-<td><p>16MHz</p></td>
-<td><p>4KB</p></td>
-<td><p>512B</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny426.html#board-atmelmegaavr-attiny426"><span class="std std-ref">ATtiny426</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY426</p></td>
-<td><p>16MHz</p></td>
-<td><p>4KB</p></td>
-<td><p>512B</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny427.html#board-atmelmegaavr-attiny427"><span class="std std-ref">ATtiny427</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY427</p></td>
-<td><p>16MHz</p></td>
-<td><p>4KB</p></td>
-<td><p>512B</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny804.html#board-atmelmegaavr-attiny804"><span class="std std-ref">ATtiny804</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny804.html#board-atmelmegaavr-attiny804"><span class="std std-ref">ATtiny804</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY804</p></td>
@@ -10688,7 +10631,7 @@ Please click on board name for the further details.</p>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny806.html#board-atmelmegaavr-attiny806"><span class="std std-ref">ATtiny806</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny806.html#board-atmelmegaavr-attiny806"><span class="std std-ref">ATtiny806</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY806</p></td>
@@ -10696,7 +10639,7 @@ Please click on board name for the further details.</p>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny807.html#board-atmelmegaavr-attiny807"><span class="std std-ref">ATtiny807</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny807.html#board-atmelmegaavr-attiny807"><span class="std std-ref">ATtiny807</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY807</p></td>
@@ -10704,7 +10647,7 @@ Please click on board name for the further details.</p>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny814.html#board-atmelmegaavr-attiny814"><span class="std std-ref">ATtiny814</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny814.html#board-atmelmegaavr-attiny814"><span class="std std-ref">ATtiny814</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY814</p></td>
@@ -10712,7 +10655,7 @@ Please click on board name for the further details.</p>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny816.html#board-atmelmegaavr-attiny816"><span class="std std-ref">ATtiny816</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny816.html#board-atmelmegaavr-attiny816"><span class="std std-ref">ATtiny816</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY816</p></td>
@@ -10720,37 +10663,13 @@ Please click on board name for the further details.</p>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny817.html#board-atmelmegaavr-attiny817"><span class="std std-ref">ATtiny817</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny817.html#board-atmelmegaavr-attiny817"><span class="std std-ref">ATtiny817</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATTINY817</p></td>
 <td><p>16MHz</p></td>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny824.html#board-atmelmegaavr-attiny824"><span class="std std-ref">ATtiny824</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY824</p></td>
-<td><p>16MHz</p></td>
-<td><p>8KB</p></td>
-<td><p>1KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny826.html#board-atmelmegaavr-attiny826"><span class="std std-ref">ATtiny826</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY826</p></td>
-<td><p>16MHz</p></td>
-<td><p>8KB</p></td>
-<td><p>1KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/ATtiny827.html#board-atmelmegaavr-attiny827"><span class="std std-ref">ATtiny827</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ATTINY827</p></td>
-<td><p>16MHz</p></td>
-<td><p>8KB</p></td>
-<td><p>1KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/avr_iot_wg.html#board-atmelmegaavr-avr-iot-wg"><span class="std std-ref">AVR-IoT WG Development Board</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
@@ -10760,214 +10679,6 @@ Please click on board name for the further details.</p>
 <td><p>48KB</p></td>
 <td><p>6KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR128DA28.html#board-atmelmegaavr-avr128da28"><span class="std std-ref">AVR128DA28</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DA28</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR128DA32.html#board-atmelmegaavr-avr128da32"><span class="std std-ref">AVR128DA32</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DA32</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR128DA48.html#board-atmelmegaavr-avr128da48"><span class="std std-ref">AVR128DA48</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DA48</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR128DA64.html#board-atmelmegaavr-avr128da64"><span class="std std-ref">AVR128DA64</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DA64</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR128DB28.html#board-atmelmegaavr-avr128db28"><span class="std std-ref">AVR128DB28</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DB28</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR128DB32.html#board-atmelmegaavr-avr128db32"><span class="std std-ref">AVR128DB32</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DB32</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR128DB48.html#board-atmelmegaavr-avr128db48"><span class="std std-ref">AVR128DB48</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DB48</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR128DB64.html#board-atmelmegaavr-avr128db64"><span class="std std-ref">AVR128DB64</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DB64</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR32DA28.html#board-atmelmegaavr-avr32da28"><span class="std std-ref">AVR32DA28</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR32DA28</p></td>
-<td><p>24MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR32DA32.html#board-atmelmegaavr-avr32da32"><span class="std std-ref">AVR32DA32</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR32DA32</p></td>
-<td><p>24MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR32DA48.html#board-atmelmegaavr-avr32da48"><span class="std std-ref">AVR32DA48</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR32DA48</p></td>
-<td><p>24MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR32DB28.html#board-atmelmegaavr-avr32db28"><span class="std std-ref">AVR32DB28</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR32DB28</p></td>
-<td><p>24MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR32DB32.html#board-atmelmegaavr-avr32db32"><span class="std std-ref">AVR32DB32</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR32DB32</p></td>
-<td><p>24MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR32DB48.html#board-atmelmegaavr-avr32db48"><span class="std std-ref">AVR32DB48</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR32DB48</p></td>
-<td><p>24MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DA28.html#board-atmelmegaavr-avr64da28"><span class="std std-ref">AVR64DA28</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DA28</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DA32.html#board-atmelmegaavr-avr64da32"><span class="std std-ref">AVR64DA32</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DA32</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DA48.html#board-atmelmegaavr-avr64da48"><span class="std std-ref">AVR64DA48</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DA48</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DA64.html#board-atmelmegaavr-avr64da64"><span class="std std-ref">AVR64DA64</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DA64</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DB28.html#board-atmelmegaavr-avr64db28"><span class="std std-ref">AVR64DB28</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DB28</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DB32.html#board-atmelmegaavr-avr64db32"><span class="std std-ref">AVR64DB32</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DB32</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DB48.html#board-atmelmegaavr-avr64db48"><span class="std std-ref">AVR64DB48</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DB48</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DB64.html#board-atmelmegaavr-avr64db64"><span class="std std-ref">AVR64DB64</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DB64</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DD14.html#board-atmelmegaavr-avr64dd14"><span class="std std-ref">AVR64DD14</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DD14</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DD20.html#board-atmelmegaavr-avr64dd20"><span class="std std-ref">AVR64DD20</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DD20</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DD28.html#board-atmelmegaavr-avr64dd28"><span class="std std-ref">AVR64DD28</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DD28</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/AVR64DD32.html#board-atmelmegaavr-avr64dd32"><span class="std std-ref">AVR64DD32</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR64DD32</p></td>
-<td><p>24MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>8KB</p></td>
-</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/curiosity_nano_4809.html#board-atmelmegaavr-curiosity-nano-4809"><span class="std std-ref">Curiosity Nano ATmega4809</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
 <td><p>No</p></td>
@@ -10975,22 +10686,6 @@ Please click on board name for the further details.</p>
 <td><p>16MHz</p></td>
 <td><p>48KB</p></td>
 <td><p>6KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/curiosity_nano_da.html#board-atmelmegaavr-curiosity-nano-da"><span class="std std-ref">Curiosity Nano AVR128DA48</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DA48</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelmegaavr/curiosity_nano_db.html#board-atmelmegaavr-curiosity-nano-db"><span class="std std-ref">Curiosity Nano AVR128DB48</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>
-<td><p>No</p></td>
-<td><p>AVR128DB48</p></td>
-<td><p>24MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelmegaavr/xplained_pro_4809.html#board-atmelmegaavr-xplained-pro-4809"><span class="std std-ref">Xplained Pro ATmega4809</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelmegaavr.html#platform-atmelmegaavr"><span class="std std-ref">Atmel megaAVR</span></a></p></td>

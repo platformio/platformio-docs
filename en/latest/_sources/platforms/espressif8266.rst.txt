@@ -14,6 +14,8 @@
 Espressif 8266
 ==============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/espressif8266 <https://registry.platformio.org/platforms/platformio/espressif8266>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``espressif8266``
 
@@ -81,31 +83,31 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoespressif8266 <https://github.com/esp8266/Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduinoespressif8266 <https://registry.platformio.org/tools/platformio/framework-arduinoespressif8266>`__
       - Arduino Wiring-based Framework for Espressif ESP8266 microcontrollers
 
-    * - `framework-esp8266-nonos-sdk <https://github.com/espressif/ESP8266_NONOS_SDK.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-esp8266-nonos-sdk <https://registry.platformio.org/tools/platformio/framework-esp8266-nonos-sdk>`__
       - Espressif ESP8266 Non-OS SDK
 
-    * - `framework-esp8266-rtos-sdk <https://github.com/espressif/ESP8266_RTOS_SDK.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-esp8266-rtos-sdk <https://registry.platformio.org/tools/platformio/framework-esp8266-rtos-sdk>`__
       - Espressif ESP8266 SDK based on FreeRTOS
 
-    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-simba <https://registry.platformio.org/tools/platformio/framework-simba>`__
       - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
-    * - `tool-esptool <https://github.com/igrr/esptool-ck.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-esptool <https://registry.platformio.org/tools/platformio/tool-esptool>`__
       - Espressif ESP8266 build/flash helper tool
 
-    * - `tool-esptoolpy <https://github.com/espressif/esptool.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-esptoolpy <https://registry.platformio.org/tools/platformio/tool-esptoolpy>`__
       - Espressif ESP8266 and ESP32 serial bootloader utility
 
-    * - `tool-mklittlefs <https://github.com/earlephilhower/mklittlefs.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-mklittlefs <https://registry.platformio.org/tools/platformio/tool-mklittlefs>`__
       - Utility for creating littlefs images for upload on the ESP8266
 
-    * - `tool-mkspiffs <https://github.com/igrr/mkspiffs.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-mkspiffs <https://registry.platformio.org/tools/platformio/tool-mkspiffs>`__
       - Tool to build and unpack SPIFFS images
 
-    * - `toolchain-xtensa <https://github.com/jcmvbkbc/gcc-xtensa.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-xtensa <https://registry.platformio.org/tools/platformio/toolchain-xtensa>`__
       - GCC Toolchain for Xtensa processor
 
 .. warning::
@@ -146,8 +148,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

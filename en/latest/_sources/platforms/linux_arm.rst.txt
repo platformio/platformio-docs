@@ -14,6 +14,8 @@
 Linux ARM
 =========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/linux_arm <https://registry.platformio.org/platforms/platformio/linux_arm>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``linux_arm``
 
@@ -75,10 +77,10 @@ Packages
     * - Name
       - Description
 
-    * - `framework-wiringpi <http://wiringpi.com?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-wiringpi <https://registry.platformio.org/tools/platformio/framework-wiringpi>`__
       - WiringPi is a PIN based GPIO access library written in C for the BCM2835, BCM2836 and BCM2837 SoC devices used in all Raspberry Pi
 
-    * - `toolchain-gccarmlinuxgnueabi <https://gcc.gnu.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmlinuxgnueabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmlinuxgnueabi>`__
       - GCC Toolchain for Linux ARM GNU EABI
 
 Frameworks
@@ -96,8 +98,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

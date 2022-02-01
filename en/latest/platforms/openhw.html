@@ -87,7 +87,6 @@
 <li class="toctree-l3"><a class="reference internal" href="microchippic32.html">Microchip PIC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nordicnrf51.html">Nordic nRF51</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nordicnrf52.html">Nordic nRF52</a></li>
-<li class="toctree-l3"><a class="reference internal" href="nuclei.html">Nuclei</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxpimxrt.html">NXP i.MX RT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">OpenHW Group</a><ul>
@@ -172,8 +171,11 @@
   <section id="openhw-group">
 <span id="platform-openhw"></span><h1>OpenHW Group<a class="headerlink" href="#openhw-group" title="Permalink to this headline">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Configuration</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">openhw</span></code></p>
+<dt class="field-odd">Registry</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/openhw">https://registry.platformio.org/platforms/platformio/openhw</a></p>
+</dd>
+<dt class="field-even">Configuration</dt>
+<dd class="field-even"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">openhw</span></code></p>
 </dd>
 </dl>
 <p>OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.</p>
@@ -296,22 +298,22 @@ of OpenHW Group development platform and the latest upstream version using
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/pulp-platform/pulp-runtime.git?utm_source=platformio.org&amp;utm_medium=docs">framework-pulp-runtime</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-pulp-runtime">framework-pulp-runtime</a></p></td>
 <td><p>Runtime Environment for Parallel Ultra Low Power platform</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/pulp-platform/pulp-sdk.git?utm_source=platformio.org&amp;utm_medium=docs">framework-pulp-sdk</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-pulp-sdk">framework-pulp-sdk</a></p></td>
 <td><p>Software Development Kit for Parallel Ultra Low Power platform</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="http://openocd.org?utm_source=platformio.org&amp;utm_medium=docs">tool-openocd-riscv-pulp</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-openocd-riscv-pulp">tool-openocd-riscv-pulp</a></p></td>
 <td><p>Fork of Open On-Chip Debugger that has RISC-V support for PULP platform</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/openhwgroup/riscv-ovpsim-corev.git?utm_source=platformio.org&amp;utm_medium=docs">tool-ovpsim-corev</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-ovpsim-corev">tool-ovpsim-corev</a></p></td>
 <td><p>Imperas RISC-V OVPsim CORE-V simulator provides a reference of the OpenHW Group CORE-V processor cores. The riscvOVPsim familiy of simulators implement the full and complete functionality of the RISC-V Foundation’s public User and Privilege specifications.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://renode.io?utm_source=platformio.org&amp;utm_medium=docs">tool-renode</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-renode">tool-renode</a></p></td>
 <td><p>Renode is a development framework which accelerates IoT and embedded systems development by letting you simulate physical hardware systems</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://www.embecosm.com/resources/tool-chain-downloads/?utm_source=platformio.org&amp;utm_medium=docs#pulp">toolchain-riscv-pulp</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-riscv-pulp">toolchain-riscv-pulp</a></p></td>
 <td><p>GNU toolchain for RISC-V (PULP platform)</p></td>
 </tr>
 </tbody>
@@ -360,8 +362,7 @@ manufacturer</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
-<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command</p></li>
 <li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by
 horizontally.</p></li>
 </ul>

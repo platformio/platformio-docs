@@ -14,6 +14,8 @@
 Linux x86_64
 ============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/linux_x86_64 <https://registry.platformio.org/platforms/platformio/linux_x86_64>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``linux_x86_64``
 
@@ -74,5 +76,5 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-gcclinux64 <https://gcc.gnu.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gcclinux64 <https://registry.platformio.org/tools/platformio/toolchain-gcclinux64>`__
       - GCC Toolchain for Linux x86_64 machines

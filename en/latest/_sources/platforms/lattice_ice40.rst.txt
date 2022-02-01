@@ -14,6 +14,8 @@
 Lattice iCE40
 =============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/lattice_ice40 <https://registry.platformio.org/platforms/platformio/lattice_ice40>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``lattice_ice40``
 
@@ -75,10 +77,10 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-icestorm <http://www.clifford.at/icestorm/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-icestorm <https://registry.platformio.org/tools/platformio/toolchain-icestorm>`__
       - Tools for analyzing and creating bitstream files for FPGA IceStorm
 
-    * - `toolchain-iverilog <http://iverilog.icarus.com?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-iverilog <https://registry.platformio.org/tools/platformio/toolchain-iverilog>`__
       - Verilog simulation and synthesis tool
 
 .. warning::
@@ -99,8 +101,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

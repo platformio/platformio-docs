@@ -76,12 +76,12 @@
 <li class="toctree-l2"><a class="reference internal" href="freedom-e-sdk.html">Freedom E SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="freertos.html">FreeRTOS</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">GigaDevice GD32V SDK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#tools-debug-probes">Tools &amp; Debug Probes</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#boards">Boards</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#seeedstudio">SeeedStudio</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sipeed">Sipeed</a></li>
@@ -92,9 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="kendryte-freertos-sdk.html">Kendryte FreeRTOS SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kendryte-standalone-sdk.html">Kendryte Standalone SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logicromsdk.html">Logicrom SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nuclei-sdk.html">Nuclei SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-runtime.html">PULP Runtime Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-sdk.html">PULP SDK</a></li>
@@ -169,18 +167,42 @@
 </dd>
 </dl>
 <p>GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package</p>
-<p>For more detailed information please visit <a class="reference external" href="https://github.com/riscv-mcu/GD32VF103_Firmware_Library?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#debugging" id="id2">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id2">Platforms</a></p></li>
 <li><p><a class="reference internal" href="#examples" id="id3">Examples</a></p></li>
-<li><p><a class="reference internal" href="#platforms" id="id4">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id4">Debugging</a></p></li>
 <li><p><a class="reference internal" href="#boards" id="id5">Boards</a></p></li>
 </ul>
 </div>
+<section id="platforms">
+<h2><a class="toc-backref" href="#id2">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/gd32v.html#platform-gd32v"><span class="std std-ref">GigaDevice GD32V</span></a></p></td>
+<td><p>The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples">
+<h2><a class="toc-backref" href="#id3">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">GigaDevice GD32V SDK for GigaDevice GD32V</a></p></li>
+</ul>
+</section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id2">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="contents local topic" id="id1">
 <ul class="simple">
@@ -259,38 +281,12 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 </section>
-<section id="examples">
-<h2><a class="toc-backref" href="#id3">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">GigaDevice GD32V SDK for GigaDevice GD32V</a></p></li>
-</ul>
-</section>
-<section id="platforms">
-<h2><a class="toc-backref" href="#id4">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/gd32v.html#platform-gd32v"><span class="std std-ref">GigaDevice GD32V</span></a></p></td>
-<td><p>The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="boards">
 <h2><a class="toc-backref" href="#id5">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
-<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command</p></li>
 <li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by horizontally.</p></li>
 </ul>
 </div>

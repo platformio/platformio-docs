@@ -14,6 +14,8 @@
 Native
 ======
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/native <https://registry.platformio.org/platforms/platformio/native>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``native``
 

@@ -14,6 +14,8 @@
 SiFive
 ======
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/sifive <https://registry.platformio.org/platforms/platformio/sifive>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``sifive``
 
@@ -157,37 +159,37 @@ Packages
     * - Name
       - Description
 
-    * - `framework-freedom-e-sdk <https://github.com/sifive/freedom-e-sdk.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-freedom-e-sdk <https://registry.platformio.org/tools/platformio/framework-freedom-e-sdk>`__
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
-    * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr <https://registry.platformio.org/tools/platformio/framework-zephyr>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cmake <https://registry.platformio.org/tools/platformio/tool-cmake>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
-    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-dtc <https://registry.platformio.org/tools/platformio/tool-dtc>`__
       - Device tree compiler
 
-    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-gperf <https://registry.platformio.org/tools/platformio/tool-gperf>`__
       - GNU gperf is a perfect hash function generator
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-jlink <https://registry.platformio.org/tools/platformio/tool-jlink>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-ninja <https://registry.platformio.org/tools/platformio/tool-ninja>`__
       - Ninja is a small build system with a focus on speed
 
-    * - `tool-openocd-riscv <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd-riscv <https://registry.platformio.org/tools/platformio/tool-openocd-riscv>`__
       - Fork of Open On-Chip Debugger that has RISC-V support
 
-    * - `tool-qemu-riscv <https://www.qemu.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-qemu-riscv <https://registry.platformio.org/tools/platformio/tool-qemu-riscv>`__
       - QEMU is a generic and open source machine emulator and virtualizer
 
-    * - `tool-renode <https://renode.io?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-renode <https://registry.platformio.org/tools/platformio/tool-renode>`__
       - Renode is a development framework which accelerates IoT and embedded systems development by letting you simulate physical hardware systems
 
-    * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-riscv <https://registry.platformio.org/tools/platformio/toolchain-riscv>`__
       - GNU toolchain for RISC-V, including GCC
 
 .. warning::
@@ -212,11 +214,11 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_freertos`
-      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
-
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
+
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
@@ -225,8 +227,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

@@ -14,6 +14,8 @@
 WIZNet W7500
 ============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/wiznet7500 <https://registry.platformio.org/platforms/platformio/wiznet7500>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``wiznet7500``
 
@@ -132,16 +134,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-mbed <https://registry.platformio.org/tools/platformio/framework-mbed>`__
       - Arm Mbed OS is a platform operating system designed for the internet of things
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-jlink <https://registry.platformio.org/tools/platformio/tool-jlink>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-pyocd <https://github.com/pyocd/pyOCD.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-pyocd <https://registry.platformio.org/tools/platformio/tool-pyocd>`__
       - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
-    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
@@ -173,8 +175,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

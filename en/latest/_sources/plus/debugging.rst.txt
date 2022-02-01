@@ -199,9 +199,6 @@ Platforms
     * - :ref:`platform_nordicnrf52`
       - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.
 
-    * - :ref:`platform_nuclei`
-      - Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.
-
     * - :ref:`platform_nxpimxrt`
       - The i.MX RT series of crossover processors features the Arm Cortex-M core, real-time functionality and MCU usability at a cost-effective price.
 
@@ -212,7 +209,7 @@ Platforms
       - OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.
 
     * - :ref:`platform_raspberrypi`
-      - RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+      - RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
@@ -261,11 +258,11 @@ Frameworks
     * - :ref:`framework_espidf`
       - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
 
-    * - :ref:`framework_freertos`
-      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
-
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
+
+    * - :ref:`framework_freertos`
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
 
     * - :ref:`framework_gd32vf103-sdk`
       - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
@@ -276,11 +273,11 @@ Frameworks
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
 
+    * - :ref:`framework_libopencm3`
+      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
+
     * - :ref:`framework_mbed`
       - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
-
-    * - :ref:`framework_nuclei-sdk`
-      - Open Source Software Development Kit for the Nuclei N/NX processors
 
     * - :ref:`framework_pulp-os`
       - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory
@@ -291,9 +288,6 @@ Frameworks
     * - :ref:`framework_pulp-sdk`
       - Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
 
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
-
     * - :ref:`framework_shakti-sdk`
       - A software development kit for developing applications on Shakti class of processors
 
@@ -303,14 +297,14 @@ Frameworks
     * - :ref:`framework_spl`
       - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.
 
+    * - :ref:`framework_stm32cube`
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
+
     * - :ref:`framework_wd-riscv-sdk`
       - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
-
-    * - :ref:`framework_libopencm3`
-      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
 
 Boards
 ------
@@ -3139,34 +3133,6 @@ Generic
       - 1MB
       - 128KB
 
-GigaDevice
-~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nuclei_gd32vf103v_eval`
-      - :ref:`platform_nuclei`
-      - External
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_nuclei_gd32vf103c_longan_nano`
-      - :ref:`platform_nuclei`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-
 Gimasi
 ~~~~~~
 
@@ -4496,34 +4462,6 @@ Nordic
       - 64MHz
       - 796KB
       - 243KB
-
-Nuclei
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nuclei_gd32vf103v_rvstar`
-      - :ref:`platform_nuclei`
-      - On-board
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_nuclei_hbird_eval`
-      - :ref:`platform_nuclei`
-      - On-board
-      - HUMMINGBIRD
-      - 5MHz
-      - 64KB
-      - 64KB
 
 OLIMEX
 ~~~~~~

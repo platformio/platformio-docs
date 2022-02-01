@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Logicrom SDK" href="logicromsdk.html" />
+    <link rel="next" title="Mbed" href="mbed.html" />
     <link rel="prev" title="Kendryte Standalone SDK" href="kendryte-standalone-sdk.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -79,12 +79,12 @@
 <li class="toctree-l2"><a class="reference internal" href="kendryte-freertos-sdk.html">Kendryte FreeRTOS SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kendryte-standalone-sdk.html">Kendryte Standalone SDK</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">libopencm3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#tools-debug-probes">Tools &amp; Debug Probes</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#boards">Boards</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#bitsquared">1BitSquared</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">96Boards</a></li>
@@ -133,9 +133,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="logicromsdk.html">Logicrom SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nuclei-sdk.html">Nuclei SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-runtime.html">PULP Runtime Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-sdk.html">PULP SDK</a></li>
@@ -210,18 +208,46 @@
 </dd>
 </dl>
 <p>The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others</p>
-<p>For more detailed information please visit <a class="reference external" href="http://www.libopencm3.org?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#debugging" id="id3">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id3">Platforms</a></p></li>
 <li><p><a class="reference internal" href="#examples" id="id4">Examples</a></p></li>
-<li><p><a class="reference internal" href="#platforms" id="id5">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id5">Debugging</a></p></li>
 <li><p><a class="reference internal" href="#boards" id="id6">Boards</a></p></li>
 </ul>
 </div>
+<section id="platforms">
+<h2><a class="toc-backref" href="#id3">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/titiva.html#platform-titiva"><span class="std std-ref">TI TIVA</span></a></p></td>
+<td><p>Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples">
+<h2><a class="toc-backref" href="#id4">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">libopencm3 for ST STM32</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">libopencm3 for TI TIVA</a></p></li>
+</ul>
+</section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id3">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="contents local topic" id="id1">
 <ul class="simple">
@@ -1888,42 +1914,12 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 </section>
-<section id="examples">
-<h2><a class="toc-backref" href="#id4">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">libopencm3 for ST STM32</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">libopencm3 for TI TIVA</a></p></li>
-</ul>
-</section>
-<section id="platforms">
-<h2><a class="toc-backref" href="#id5">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/titiva.html#platform-titiva"><span class="std std-ref">TI TIVA</span></a></p></td>
-<td><p>Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="boards">
 <h2><a class="toc-backref" href="#id6">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
-<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command</p></li>
 <li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by horizontally.</p></li>
 </ul>
 </div>
@@ -4869,7 +4865,7 @@ Please click on board name for the further details.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="kendryte-standalone-sdk.html" class="btn btn-neutral float-left" title="Kendryte Standalone SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="logicromsdk.html" class="btn btn-neutral float-right" title="Logicrom SDK" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="mbed.html" class="btn btn-neutral float-right" title="Mbed" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

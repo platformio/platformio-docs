@@ -24,7 +24,7 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR650x series is hi
 .. list-table::
 
   * - **Microcontroller**
-    - ASR6051
+    - ASR6502
   * - **Frequency**
     - 48MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `cubecell_capsule_solar_sensor.json <https://github.com/HelTecAut
   board = cubecell_capsule_solar_sensor
 
   ; change microcontroller
-  board_build.mcu = asr6051
+  board_build.mcu = asr6502
 
   ; change MCU frequency
   board_build.f_cpu = 48000000L

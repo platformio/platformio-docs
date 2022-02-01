@@ -14,6 +14,8 @@
 Windows x86
 ===========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/windows_x86 <https://registry.platformio.org/platforms/platformio/windows_x86>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``windows_x86``
 
@@ -74,5 +76,5 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-gccmingw32 <http://www.mingw.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccmingw32 <https://registry.platformio.org/tools/platformio/toolchain-gccmingw32>`__
       - MinGW - Minimalist GNU for Windows

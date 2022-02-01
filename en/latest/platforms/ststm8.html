@@ -87,7 +87,6 @@
 <li class="toctree-l3"><a class="reference internal" href="microchippic32.html">Microchip PIC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nordicnrf51.html">Nordic nRF51</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nordicnrf52.html">Nordic nRF52</a></li>
-<li class="toctree-l3"><a class="reference internal" href="nuclei.html">Nuclei</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxpimxrt.html">NXP i.MX RT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="openhw.html">OpenHW Group</a></li>
@@ -172,8 +171,11 @@
   <section id="st-stm8">
 <span id="platform-ststm8"></span><h1>ST STM8<a class="headerlink" href="#st-stm8" title="Permalink to this headline">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Configuration</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">ststm8</span></code></p>
+<dt class="field-odd">Registry</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/ststm8">https://registry.platformio.org/platforms/platformio/ststm8</a></p>
+</dd>
+<dt class="field-even">Configuration</dt>
+<dd class="field-even"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">ststm8</span></code></p>
 </dd>
 </dl>
 <p>The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.</p>
@@ -367,25 +369,25 @@ of ST STM8 development platform and the latest upstream version using
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://tenbaht.github.io/sduino/?utm_source=platformio.org&amp;utm_medium=docs">framework-arduinoststm8</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-arduinoststm8">framework-arduinoststm8</a></p></td>
 <td><p>An Arduino-like programming API for the STM8 microcontrollers</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://www.st.com/en/embedded-software/stsw-stm8069.html?utm_source=platformio.org&amp;utm_medium=docs">framework-ststm8spl</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-ststm8spl">framework-ststm8spl</a></p></td>
 <td><p>Standard peripheral library for ST STM8S/A microcontrollers</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="http://openocd.org?utm_source=platformio.org&amp;utm_medium=docs">tool-openocd</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-openocd">tool-openocd</a></p></td>
 <td><p>Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://stm8-binutils-gdb.sourceforge.io/?utm_source=platformio.org&amp;utm_medium=docs">tool-stm8binutils</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-stm8binutils">tool-stm8binutils</a></p></td>
 <td><p>STM8 toolchain with GDB debugger</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/vdudouyt/stm8flash.git?utm_source=platformio.org&amp;utm_medium=docs">tool-stm8flash</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-stm8flash">tool-stm8flash</a></p></td>
 <td><p>stm8flash is an application for programing stm8 devices with SWIM/stlinkv(1,2).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/gicking/stm8gal.git?utm_source=platformio.org&amp;utm_medium=docs">tool-stm8gal</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-stm8gal">tool-stm8gal</a></p></td>
 <td><p>stm8gal is an application for programming or reading out STM8 memory using the built-in ROM bootloader (BSL) via UART or SPI interface</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="http://sdcc.sourceforge.net?utm_source=platformio.org&amp;utm_medium=docs">toolchain-sdcc</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-sdcc">toolchain-sdcc</a></p></td>
 <td><p>Small Device C compiler suite</p></td>
 </tr>
 </tbody>
@@ -434,8 +436,7 @@ manufacturer</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
-<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command</p></li>
 <li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by
 horizontally.</p></li>
 </ul>

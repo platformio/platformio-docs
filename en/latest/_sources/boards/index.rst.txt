@@ -16,11 +16,10 @@ Boards
 
 Rapid Embedded Development, Continuous and IDE integration in a few
 steps with PlatformIO thanks to built-in project generator for the most
-popular embedded boards and IDE.
+popular embedded boards and IDEs.
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
 Aceinna IMU
@@ -46,7 +45,6 @@ ASR Microelectronics ASR650x
     asrmicro650x/cubecell_capsule_solar_sensor
     asrmicro650x/cubecell_node
     asrmicro650x/cubecell_board
-    asrmicro650x/cubecell_board_pro
     asrmicro650x/cubecell_board_plus
     asrmicro650x/cubecell_capsule
     asrmicro650x/cubecell_gps
@@ -283,18 +281,12 @@ Atmel megaAVR
     atmelmegaavr/ATtiny1614
     atmelmegaavr/ATtiny1616
     atmelmegaavr/ATtiny1617
-    atmelmegaavr/ATtiny1624
-    atmelmegaavr/ATtiny1626
-    atmelmegaavr/ATtiny1627
     atmelmegaavr/ATtiny202
     atmelmegaavr/ATtiny204
     atmelmegaavr/ATtiny212
     atmelmegaavr/ATtiny214
     atmelmegaavr/ATtiny3216
     atmelmegaavr/ATtiny3217
-    atmelmegaavr/ATtiny3224
-    atmelmegaavr/ATtiny3226
-    atmelmegaavr/ATtiny3227
     atmelmegaavr/ATtiny402
     atmelmegaavr/ATtiny404
     atmelmegaavr/ATtiny406
@@ -302,50 +294,16 @@ Atmel megaAVR
     atmelmegaavr/ATtiny414
     atmelmegaavr/ATtiny416
     atmelmegaavr/ATtiny417
-    atmelmegaavr/ATtiny424
-    atmelmegaavr/ATtiny426
-    atmelmegaavr/ATtiny427
     atmelmegaavr/ATtiny804
     atmelmegaavr/ATtiny806
     atmelmegaavr/ATtiny807
     atmelmegaavr/ATtiny814
     atmelmegaavr/ATtiny816
     atmelmegaavr/ATtiny817
-    atmelmegaavr/ATtiny824
-    atmelmegaavr/ATtiny826
-    atmelmegaavr/ATtiny827
     atmelmegaavr/avr_iot_wg
-    atmelmegaavr/AVR128DA28
-    atmelmegaavr/AVR128DA32
-    atmelmegaavr/AVR128DA48
-    atmelmegaavr/AVR128DA64
-    atmelmegaavr/AVR128DB28
-    atmelmegaavr/AVR128DB32
-    atmelmegaavr/AVR128DB48
-    atmelmegaavr/AVR128DB64
-    atmelmegaavr/AVR32DA28
-    atmelmegaavr/AVR32DA32
-    atmelmegaavr/AVR32DA48
-    atmelmegaavr/AVR32DB28
-    atmelmegaavr/AVR32DB32
-    atmelmegaavr/AVR32DB48
-    atmelmegaavr/AVR64DA28
-    atmelmegaavr/AVR64DA32
-    atmelmegaavr/AVR64DA48
-    atmelmegaavr/AVR64DA64
-    atmelmegaavr/AVR64DB28
-    atmelmegaavr/AVR64DB32
-    atmelmegaavr/AVR64DB48
-    atmelmegaavr/AVR64DB64
-    atmelmegaavr/AVR64DD14
-    atmelmegaavr/AVR64DD20
-    atmelmegaavr/AVR64DD28
-    atmelmegaavr/AVR64DD32
     atmelmegaavr/nano_every
     atmelmegaavr/uno_wifi_rev2
     atmelmegaavr/curiosity_nano_4809
-    atmelmegaavr/curiosity_nano_da
-    atmelmegaavr/curiosity_nano_db
     atmelmegaavr/xplained_pro_4809
 
 Atmel SAM
@@ -864,17 +822,6 @@ Nordic nRF52
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_bmd345eval_nrf52840
     nordicnrf52/ublox_evk_nina_b1
-
-Nuclei
-------
-
-.. toctree::
-    :maxdepth: 1
-        
-    nuclei/gd32vf103v_eval
-    nuclei/gd32vf103v_rvstar
-    nuclei/hbird_eval
-    nuclei/gd32vf103c_longan_nano
 
 NXP i.MX RT
 -----------
