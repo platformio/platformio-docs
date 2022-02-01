@@ -122,19 +122,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-wd-riscv-sdk <https://github.com/westerndigitalcorporation/riscv-fw-infrastructure.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-wd-riscv-sdk <https://registry.platformio.org/tools/platformio/framework-wd-riscv-sdk>`__
       - The WD Firmware package contains Firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features.
 
-    * - `tool-openocd-riscv-chipsalliance <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd-riscv-chipsalliance <https://registry.platformio.org/tools/platformio/tool-openocd-riscv-chipsalliance>`__
       - Fork of Open On-Chip Debugger that has RISC-V support and enabled VPI JTAG
 
-    * - `tool-verilator-swervolf <https://www.veripool.org/wiki/verilator?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-verilator-swervolf <https://registry.platformio.org/tools/platformio/tool-verilator-swervolf>`__
       - Verilator is an open-source SystemVerilog simulator and lint system
 
-    * - `tool-whisper <https://github.com/chipsalliance/SweRV-ISS.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-whisper <https://registry.platformio.org/tools/platformio/tool-whisper>`__
       - Whisper is a RISCV instruction set simulator (ISS) developed for the verification of the Swerv micro-controller. It allows the user to run RISC-V code without RISC-V hardware
 
-    * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-riscv <https://registry.platformio.org/tools/platformio/toolchain-riscv>`__
       - GNU toolchain for RISC-V, including GCC
 
 .. warning::

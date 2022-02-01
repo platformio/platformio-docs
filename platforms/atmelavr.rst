@@ -946,61 +946,61 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-avr <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr <https://registry.platformio.org/tools/platformio/framework-arduino-avr>`__
       - The official Arduino Wiring-based Framework for Microchip AVR microcontrollers
 
-    * - `framework-arduino-avr-attiny <https://github.com/SpenceKonde/ATTinyCore?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-attiny <https://registry.platformio.org/tools/platformio/framework-arduino-avr-attiny>`__
       - Arduino Wiring-based Framework (ATtinyCore)
 
-    * - `framework-arduino-avr-bean <https://github.com/PunchThrough/bean-arduino-core.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-bean <https://registry.platformio.org/tools/platformio/framework-arduino-avr-bean>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Bean Core)
 
-    * - `framework-arduino-avr-core13 <https://sourceforge.net/projects/ard-core13/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-core13 <https://registry.platformio.org/tools/platformio/framework-arduino-avr-core13>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Core13)
 
-    * - `framework-arduino-avr-digistump <https://github.com/ArminJo/DigistumpArduino/tree/master/digistump-avr.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-digistump <https://registry.platformio.org/tools/platformio/framework-arduino-avr-digistump>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Digistump Core)
 
-    * - `framework-arduino-avr-dwenguino <https://github.com/dwengovzw/Dwengo-library/tree/master/dwenguino/Dwenguino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-dwenguino <https://registry.platformio.org/tools/platformio/framework-arduino-avr-dwenguino>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Dwenguino Core)
 
-    * - `framework-arduino-avr-majorcore <https://github.com/MCUdude/MajorCore.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-majorcore <https://registry.platformio.org/tools/platformio/framework-arduino-avr-majorcore>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MajorCore)
 
-    * - `framework-arduino-avr-megacore <https://github.com/MCUdude/MegaCore.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-megacore <https://registry.platformio.org/tools/platformio/framework-arduino-avr-megacore>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MegaCore)
 
-    * - `framework-arduino-avr-microcore <https://github.com/MCUdude/MicroCore.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-microcore <https://registry.platformio.org/tools/platformio/framework-arduino-avr-microcore>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MicroCore)
 
-    * - `framework-arduino-avr-mightycore <https://github.com/MCUdude/MightyCore.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-mightycore <https://registry.platformio.org/tools/platformio/framework-arduino-avr-mightycore>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MightyCore)
 
-    * - `framework-arduino-avr-minicore <https://github.com/MCUdude/MiniCore.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-minicore <https://registry.platformio.org/tools/platformio/framework-arduino-avr-minicore>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (MiniCore)
 
-    * - `framework-arduino-avr-nicai <http://www.nicai-systems.com/en/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-nicai <https://registry.platformio.org/tools/platformio/framework-arduino-avr-nicai>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Nicai Core)
 
-    * - `framework-arduino-avr-panstamp <https://github.com/panStamp/panstamp.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-panstamp <https://registry.platformio.org/tools/platformio/framework-arduino-avr-panstamp>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Panstamp Core)
 
-    * - `framework-arduino-avr-prusa_rambo <https://github.com/prusa3d/Prusa-Firmware.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-avr-prusa_rambo <https://registry.platformio.org/tools/platformio/framework-arduino-avr-prusa_rambo>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Prusa Rambo Core)
 
-    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-simba <https://registry.platformio.org/tools/platformio/framework-simba>`__
       - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
-    * - `tool-avrdude <http://savannah.nongnu.org/projects/avrdude?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-avrdude <https://registry.platformio.org/tools/platformio/tool-avrdude>`__
       - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers
 
-    * - `tool-micronucleus <https://github.com/micronucleus/micronucleus.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-micronucleus <https://registry.platformio.org/tools/platformio/tool-micronucleus>`__
       - ATTiny usb bootloader with a strong emphasis on bootloader compactness
 
-    * - `tool-simavr <https://github.com/buserror/simavr.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-simavr <https://registry.platformio.org/tools/platformio/tool-simavr>`__
       - simavr is a lean, mean and hackable AVR simulator
 
-    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-atmelavr <https://registry.platformio.org/tools/platformio/toolchain-atmelavr>`__
       - GCC Toolchain for Microchip AVR microcontrollers
 
 .. warning::

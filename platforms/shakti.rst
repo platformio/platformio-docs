@@ -141,19 +141,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-shakti-sdk <https://gitlab.com/shaktiproject/software/shakti-sdk.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-shakti-sdk <https://registry.platformio.org/tools/platformio/framework-shakti-sdk>`__
       - A software development kit for developing applications on Shakti class of processors
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-jlink <https://registry.platformio.org/tools/platformio/tool-jlink>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-openocd-riscv <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd-riscv <https://registry.platformio.org/tools/platformio/tool-openocd-riscv>`__
       - Fork of Open On-Chip Debugger that has RISC-V support
 
-    * - `tool-qemu-riscv <https://www.qemu.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-qemu-riscv <https://registry.platformio.org/tools/platformio/tool-qemu-riscv>`__
       - QEMU is a generic and open source machine emulator and virtualizer
 
-    * - `toolchain-riscv <https://github.com/riscv/riscv-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-riscv <https://registry.platformio.org/tools/platformio/toolchain-riscv>`__
       - GNU toolchain for RISC-V, including GCC
 
 .. warning::

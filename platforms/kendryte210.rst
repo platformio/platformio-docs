@@ -146,22 +146,22 @@ Packages
     * - Name
       - Description
 
-    * - `framework-kendryte-freertos-sdk <https://github.com/kendryte/kendryte-freertos-sdk.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-kendryte-freertos-sdk <https://registry.platformio.org/tools/platformio/framework-kendryte-freertos-sdk>`__
       - Kendryte K210 SDK with FreeRTOS
 
-    * - `framework-kendryte-standalone-sdk <https://github.com/kendryte/kendryte-standalone-sdk.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-kendryte-standalone-sdk <https://registry.platformio.org/tools/platformio/framework-kendryte-standalone-sdk>`__
       - Kendryte K210 standalone SDK without OS support
 
-    * - `framework-maixduino <https://github.com/sipeed/Maixduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-maixduino <https://registry.platformio.org/tools/platformio/framework-maixduino>`__
       - Arduino Сore for Maix Board (K210)
 
-    * - `tool-kflash-kendryte210 <https://github.com/kendryte/kflash.py.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-kflash-kendryte210 <https://registry.platformio.org/tools/platformio/tool-kflash-kendryte210>`__
       - A Python-based Kendryte K210 UART ISP Utility
 
-    * - `tool-openocd-kendryte <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd-kendryte <https://registry.platformio.org/tools/platformio/tool-openocd-kendryte>`__
       - Open On-Chip Debugger branch with RISC-V Kendryte support
 
-    * - `toolchain-kendryte210 <https://github.com/kendryte/kendryte-gnu-toolchain.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-kendryte210 <https://registry.platformio.org/tools/platformio/toolchain-kendryte210>`__
       - RISC-V GCC Toolchain for Kendryte 210
 
 .. warning::

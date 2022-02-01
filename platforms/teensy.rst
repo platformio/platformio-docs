@@ -158,37 +158,37 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoteensy <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduinoteensy <https://registry.platformio.org/tools/platformio/framework-arduinoteensy>`__
       - Arduino Wiring-based Framework for Teensy boards
 
-    * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-mbed <https://registry.platformio.org/tools/platformio/framework-mbed>`__
       - Arm Mbed OS is a platform operating system designed for the internet of things
 
-    * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr <https://registry.platformio.org/tools/platformio/framework-zephyr>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cmake <https://registry.platformio.org/tools/platformio/tool-cmake>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
-    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-dtc <https://registry.platformio.org/tools/platformio/tool-dtc>`__
       - Device tree compiler
 
-    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-gperf <https://registry.platformio.org/tools/platformio/tool-gperf>`__
       - GNU gperf is a perfect hash function generator
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-jlink <https://registry.platformio.org/tools/platformio/tool-jlink>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-ninja <https://registry.platformio.org/tools/platformio/tool-ninja>`__
       - Ninja is a small build system with a focus on speed
 
-    * - `tool-teensy <https://www.pjrc.com/teensy/loader.html?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-teensy <https://registry.platformio.org/tools/platformio/tool-teensy>`__
       - Upload tools for Teensy boards
 
-    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-atmelavr <https://registry.platformio.org/tools/platformio/toolchain-atmelavr>`__
       - GCC Toolchain for Microchip AVR microcontrollers
 
-    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::

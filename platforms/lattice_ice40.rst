@@ -75,10 +75,10 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-icestorm <http://www.clifford.at/icestorm/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-icestorm <https://registry.platformio.org/tools/platformio/toolchain-icestorm>`__
       - Tools for analyzing and creating bitstream files for FPGA IceStorm
 
-    * - `toolchain-iverilog <http://iverilog.icarus.com?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-iverilog <https://registry.platformio.org/tools/platformio/toolchain-iverilog>`__
       - Verilog simulation and synthesis tool
 
 .. warning::

@@ -75,13 +75,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinomicrochippic32 <http://chipkit.net/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduinomicrochippic32 <https://registry.platformio.org/tools/platformio/framework-arduinomicrochippic32>`__
       - Arduino Wiring-based Framework for Microchip PIC32 microcontrollers
 
-    * - `tool-pic32prog <https://github.com/sergev/pic32prog.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-pic32prog <https://registry.platformio.org/tools/platformio/tool-pic32prog>`__
       - Flash programming utility for Microchip PIC32 microcontrollers
 
-    * - `toolchain-microchippic32 <https://github.com/chipKIT32/chipKIT-cxx.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-microchippic32 <https://registry.platformio.org/tools/platformio/toolchain-microchippic32>`__
       - GCC Toolchain for Microchip PIC32
 
 .. warning::

@@ -79,19 +79,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoasrmicro <https://github.com/HelTecAutomation/CubeCell-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduinoasrmicro <https://registry.platformio.org/tools/heltecautomation/framework-arduinoasrmicro>`__
       - Arduino Wiring-based Framework for ASR Microelectronics (Heltec core)
 
-    * - `tool-cubecellelftool <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cubecellelftool <https://registry.platformio.org/tools/heltecautomation/tool-cubecellelftool>`__
       - CubeCell ELF tool
 
-    * - `tool-cubecellflash <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cubecellflash <https://registry.platformio.org/tools/heltecautomation/tool-cubecellflash>`__
       - CubeCell Flash tool
 
-    * - `tool-cubecellflash6601 <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cubecellflash6601 <https://registry.platformio.org/tools/heltecautomation/tool-cubecellflash6601>`__
       - CubeCell Flash tool for ASR6601
 
-    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::

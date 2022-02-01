@@ -76,10 +76,10 @@ Packages
     * - Name
       - Description
 
-    * - `tool-stcgal <https://github.com/grigorig/stcgal.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-stcgal <https://registry.platformio.org/tools/platformio/tool-stcgal>`__
       - Open Source STC MCU ISP flash tool
 
-    * - `toolchain-sdcc <http://sdcc.sourceforge.net?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-sdcc <https://registry.platformio.org/tools/platformio/toolchain-sdcc>`__
       - Small Device C compiler suite
 
 .. warning::

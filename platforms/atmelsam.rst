@@ -558,79 +558,79 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-mbcwb <https://briki.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-mbcwb <https://registry.platformio.org/tools/meteca/framework-arduino-mbcwb>`__
       - Fork of Arduino Framework for briki MBC-WB boards
 
-    * - `framework-arduino-sam <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-sam <https://registry.platformio.org/tools/platformio/framework-arduino-sam>`__
       - The official Arduino Wiring-based Framework for ATSAM3 microcontrollers
 
-    * - `framework-arduino-samd <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-samd <https://registry.platformio.org/tools/platformio/framework-arduino-samd>`__
       - The official Arduino Wiring-based Framework for Microchip SAM D microcontrollers
 
-    * - `framework-arduino-samd-adafruit <https://github.com/adafruit/ArduinoCore-samd.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-samd-adafruit <https://registry.platformio.org/tools/platformio/framework-arduino-samd-adafruit>`__
       - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (Adafruit SAMD Core)
 
-    * - `framework-arduino-samd-moteino <https://github.com/LowPowerLab/Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-samd-moteino <https://registry.platformio.org/tools/platformio/framework-arduino-samd-moteino>`__
       - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (Moteino SAMD Core)
 
-    * - `framework-arduino-samd-reprap <https://github.com/brupje/ArduinoCore-samd.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-samd-reprap <https://registry.platformio.org/tools/platformio/framework-arduino-samd-reprap>`__
       - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (RepRap SAMD Core)
 
-    * - `framework-arduino-samd-seeed <https://github.com/Seeed-Studio/ArduinoCore-samd.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-samd-seeed <https://registry.platformio.org/tools/platformio/framework-arduino-samd-seeed>`__
       - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (Seeed SAMD Core)
 
-    * - `framework-arduino-samd-sodaq <https://github.com/SodaqMoja/SodaqCore-samd.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-samd-sodaq <https://registry.platformio.org/tools/platformio/framework-arduino-samd-sodaq>`__
       - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (SODAQ SAMD Core)
 
-    * - `framework-arduino-samd-sparkfun <https://github.com/sparkfun/Arduino_Boards/tree/master/sparkfun/samd.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-samd-sparkfun <https://registry.platformio.org/tools/platformio/framework-arduino-samd-sparkfun>`__
       - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (SparkFun SAMD Core)
 
-    * - `framework-arduino-samd-tuino0 <https://github.com/gimasi/TUINO_ZERO_96/tree/master/arduino_ide.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-samd-tuino0 <https://registry.platformio.org/tools/platformio/framework-arduino-samd-tuino0>`__
       - Arduino Wiring-based Framework for Microchip SAM D microcontrollers (Tuino0 SAMD Core)
 
-    * - `framework-cmsis <http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-cmsis <https://registry.platformio.org/tools/platformio/framework-cmsis>`__
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
-    * - `framework-cmsis-atmel <https://github.com/arduino/ArduinoModule-CMSIS-Atmel.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-cmsis-atmel <https://registry.platformio.org/tools/platformio/framework-cmsis-atmel>`__
       - Atmel Smart ARM devices CMSIS module
 
-    * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-mbed <https://registry.platformio.org/tools/platformio/framework-mbed>`__
       - Arm Mbed OS is a platform operating system designed for the internet of things
 
-    * - `framework-simba <https://github.com/eerimoq/simba.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-simba <https://registry.platformio.org/tools/platformio/framework-simba>`__
       - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
 
-    * - `framework-zephyr <https://www.zephyrproject.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-zephyr <https://registry.platformio.org/tools/platformio/framework-zephyr>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
-    * - `tool-avrdude <http://savannah.nongnu.org/projects/avrdude?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-avrdude <https://registry.platformio.org/tools/platformio/tool-avrdude>`__
       - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers
 
-    * - `tool-bossac <https://github.com/shumatech/BOSSA.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-bossac <https://registry.platformio.org/tools/platformio/tool-bossac>`__
       - Basic Open Source SAM-BA Application (BOSSA)
 
-    * - `tool-cmake <https://cmake.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cmake <https://registry.platformio.org/tools/platformio/tool-cmake>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
-    * - `tool-dtc <https://git.kernel.org/pub/scm/utils/dtc/dtc.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-dtc <https://registry.platformio.org/tools/platformio/tool-dtc>`__
       - Device tree compiler
 
-    * - `tool-gperf <https://www.gnu.org/software/gperf?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-gperf <https://registry.platformio.org/tools/platformio/tool-gperf>`__
       - GNU gperf is a perfect hash function generator
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-jlink <https://registry.platformio.org/tools/platformio/tool-jlink>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-mbctool <https://briki.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-mbctool <https://registry.platformio.org/tools/meteca/tool-mbctool>`__
       - MBC-WB Uploader Application
 
-    * - `tool-ninja <https://ninja-build.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-ninja <https://registry.platformio.org/tools/platformio/tool-ninja>`__
       - Ninja is a small build system with a focus on speed
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd <https://registry.platformio.org/tools/platformio/tool-openocd>`__
       - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
 
-    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::

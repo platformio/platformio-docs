@@ -74,5 +74,5 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-gcclinux32 <https://gcc.gnu.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gcclinux32 <https://registry.platformio.org/tools/platformio/toolchain-gcclinux32>`__
       - GCC Toolchain for Linux i686 machines

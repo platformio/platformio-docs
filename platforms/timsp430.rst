@@ -175,16 +175,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-energiamsp430 <http://energia.nu/reference/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-energiamsp430 <https://registry.platformio.org/tools/platformio/framework-energiamsp430>`__
       - Energia Wiring-based Framework for Texas Instruments MSP430 microcontrollers
 
-    * - `tool-dslite <http://www.ti.com/tool/UNIFLASH?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-dslite <https://registry.platformio.org/tools/platformio/tool-dslite>`__
       - Uniflash Standalone Flash Tool for TI Microcontrollers, Sitara Processors & SimpleLink devices
 
-    * - `tool-mspdebug <https://dlbeer.co.nz/mspdebug/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-mspdebug <https://registry.platformio.org/tools/platformio/tool-mspdebug>`__
       - MSPDebug is a free debugger for use with MSP430 MCUs
 
-    * - `toolchain-timsp430 <https://sourceforge.net/projects/mspgcc/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-timsp430 <https://registry.platformio.org/tools/platformio/toolchain-timsp430>`__
       - A port of the GNU C Compiler (GCC) and GNU Binutils (as, ld) for the embedded processor MSP430
 
 .. warning::

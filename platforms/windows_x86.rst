@@ -74,5 +74,5 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-gccmingw32 <http://www.mingw.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccmingw32 <https://registry.platformio.org/tools/platformio/toolchain-gccmingw32>`__
       - MinGW - Minimalist GNU for Windows

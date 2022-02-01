@@ -160,13 +160,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoxmc <https://github.com/Infineon/XMC-for-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduinoxmc <https://registry.platformio.org/tools/platformio/framework-arduinoxmc>`__
       - Arduino Wiring-based Framework for Infineon's XMC microcontrollers
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-jlink <https://registry.platformio.org/tools/platformio/tool-jlink>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::

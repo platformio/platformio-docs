@@ -135,13 +135,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-gap_sdk <https://github.com/GreenWaves-Technologies/gap_sdk.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-gap_sdk <https://registry.platformio.org/tools/platformio/framework-gap_sdk>`__
       - SDK for Greenwaves Technologies' GAP8 IoT Application Processor
 
-    * - `tool-pulp_tools <https://github.com/GreenWaves-Technologies/pulp_tools.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-pulp_tools <https://registry.platformio.org/tools/platformio/tool-pulp_tools>`__
       - Top project for building PULP development tools
 
-    * - `toolchain-riscv-pulp <https://www.embecosm.com/resources/tool-chain-downloads/?utm_source=platformio.org&utm_medium=docs#pulp>`__
+    * - `toolchain-riscv-pulp <https://registry.platformio.org/tools/platformio/toolchain-riscv-pulp>`__
       - GNU toolchain for RISC-V (PULP platform)
 
 .. warning::

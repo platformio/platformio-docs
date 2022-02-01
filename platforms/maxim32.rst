@@ -154,16 +154,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-mbed <http://mbed.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-mbed <https://registry.platformio.org/tools/platformio/framework-mbed>`__
       - Arm Mbed OS is a platform operating system designed for the internet of things
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-jlink <https://registry.platformio.org/tools/platformio/tool-jlink>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-pyocd <https://github.com/pyocd/pyOCD.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-pyocd <https://registry.platformio.org/tools/platformio/tool-pyocd>`__
       - Open source python library for programming and debugging ARM Cortex-M microcontrollers using CMSIS-DAP
 
-    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::

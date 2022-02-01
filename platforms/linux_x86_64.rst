@@ -74,5 +74,5 @@ Packages
     * - Name
       - Description
 
-    * - `toolchain-gcclinux64 <https://gcc.gnu.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gcclinux64 <https://registry.platformio.org/tools/platformio/toolchain-gcclinux64>`__
       - GCC Toolchain for Linux x86_64 machines

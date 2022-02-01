@@ -132,16 +132,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-energiativa <http://energia.nu/reference/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-energiativa <https://registry.platformio.org/tools/platformio/framework-energiativa>`__
       - Energia Wiring-based Framework for Texas Instruments TIVA C Series
 
-    * - `framework-libopencm3 <http://www.libopencm3.org/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-libopencm3 <https://registry.platformio.org/tools/platformio/framework-libopencm3>`__
       - Open source ARM Cortex-M microcontroller library
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd <https://registry.platformio.org/tools/platformio/tool-openocd>`__
       - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
 
-    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::

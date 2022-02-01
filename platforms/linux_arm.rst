@@ -75,10 +75,10 @@ Packages
     * - Name
       - Description
 
-    * - `framework-wiringpi <http://wiringpi.com?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-wiringpi <https://registry.platformio.org/tools/platformio/framework-wiringpi>`__
       - WiringPi is a PIN based GPIO access library written in C for the BCM2835, BCM2836 and BCM2837 SoC devices used in all Raspberry Pi
 
-    * - `toolchain-gccarmlinuxgnueabi <https://gcc.gnu.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmlinuxgnueabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmlinuxgnueabi>`__
       - GCC Toolchain for Linux ARM GNU EABI
 
 Frameworks
