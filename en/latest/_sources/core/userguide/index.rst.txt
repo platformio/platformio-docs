@@ -22,9 +22,6 @@ Usage
 .. code-block:: bash
 
     pio [OPTIONS] COMMAND
-    # alias of "pio"
-    platformio [OPTIONS] COMMAND
-
 
 Options
 -------
@@ -69,6 +66,7 @@ Commands
     cmd_ci
     cmd_debug
     pio device <device/index>
+    cmd_exec
     cmd_home
     pio lib <lib/index>
     org/index
