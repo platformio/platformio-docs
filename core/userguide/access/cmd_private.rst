@@ -14,8 +14,6 @@
 pio access private
 ==================
 
-.. versionadded:: 5.0
-
 .. contents::
 
 Usage
