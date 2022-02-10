@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CLI Guide &mdash; PlatformIO v5.2 documentation</title>
+  <title>CLI Guide &mdash; PlatformIO latest documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -68,6 +68,7 @@
 <li class="toctree-l4"><a class="reference internal" href="cmd_ci.html">pio ci</a></li>
 <li class="toctree-l4"><a class="reference internal" href="cmd_debug.html">pio debug</a></li>
 <li class="toctree-l4"><a class="reference internal" href="device/index.html">pio device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmd_exec.html">pio exec</a></li>
 <li class="toctree-l4"><a class="reference internal" href="cmd_home.html">pio home</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lib/index.html">pio lib</a></li>
 <li class="toctree-l4"><a class="reference internal" href="org/index.html">pio org</a></li>
@@ -172,8 +173,6 @@
 <section id="usage">
 <h2><a class="toc-backref" href="#id2">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND
-<span class="c1"># alias of &quot;pio&quot;</span>
-platformio <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND
 </pre></div>
 </div>
 </section>
@@ -258,6 +257,13 @@ $ pio COMMAND --help
 <li class="toctree-l1"><a class="reference internal" href="device/index.html">pio device</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="device/cmd_list.html">pio device list</a></li>
 <li class="toctree-l2"><a class="reference internal" href="device/cmd_monitor.html">pio device monitor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmd_exec.html">pio exec</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmd_exec.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_exec.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_exec.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_exec.html#examples">Examples</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cmd_home.html">pio home</a><ul>
@@ -493,7 +499,7 @@ $ pio COMMAND --help
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.5 (stable)
+    v5.3.0a1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -14,8 +14,6 @@
 pio system info
 ===============
 
-.. versionadded:: 5.0
-
 .. contents::
 
 Usage
