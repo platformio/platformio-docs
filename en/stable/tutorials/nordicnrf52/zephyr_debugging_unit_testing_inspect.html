@@ -85,7 +85,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -111,7 +111,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -220,7 +219,7 @@ following code:</p>
 <span class="c1">// https://github.com/google/eddystone/blob/master/protocol-specification.md</span>
 <span class="c1">// https://github.com/google/eddystone/tree/master/eddystone-url</span>
 
-<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span> <span class="nc">bt_data</span><span class="w"> </span><span class="n">ad</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_data</span><span class="w"> </span><span class="n">ad</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">BT_DATA_BYTES</span><span class="p">(</span><span class="n">BT_DATA_FLAGS</span><span class="p">,</span><span class="w"> </span><span class="n">BT_LE_AD_NO_BREDR</span><span class="p">),</span><span class="w"></span>
 <span class="w">    </span><span class="n">BT_DATA_BYTES</span><span class="p">(</span><span class="n">BT_DATA_UUID16_ALL</span><span class="p">,</span><span class="w"> </span><span class="mh">0xaa</span><span class="p">,</span><span class="w"> </span><span class="mh">0xfe</span><span class="p">),</span><span class="w"></span>
 <span class="w">    </span><span class="n">BT_DATA_BYTES</span><span class="p">(</span><span class="n">BT_DATA_SVC_DATA16</span><span class="p">,</span><span class="w"></span>
@@ -234,7 +233,7 @@ following code:</p>
 <span class="p">};</span><span class="w"></span>
 
 <span class="c1">// Set Scan Response data</span>
-<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span> <span class="nc">bt_data</span><span class="w"> </span><span class="n">sd</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_data</span><span class="w"> </span><span class="n">sd</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">BT_DATA</span><span class="p">(</span><span class="n">BT_DATA_NAME_COMPLETE</span><span class="p">,</span><span class="w"> </span><span class="n">DEVICE_NAME</span><span class="p">,</span><span class="w"> </span><span class="n">DEVICE_NAME_LEN</span><span class="p">),</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 
@@ -322,11 +321,11 @@ window:</p>
 <li><p>Connect the board to your computer and update the default monitor speed to
 <code class="docutils literal notranslate"><span class="pre">115200</span></code> in <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> file:</p>
 <blockquote>
-<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hifive1-revb]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">sifive</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">hifive1-revb</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">zephyr</span>
-<span class="na">monitor_speed</span> <span class="o">=</span> <span class="s">115200</span>
+<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hifive1-revb]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">hifive1-revb</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">zephyr</span><span class="w"></span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -555,7 +554,7 @@ board that we can use as a boilerplate for the next projects.</p>
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -570,8 +569,7 @@ board that we can use as a boilerplate for the next projects.</p>
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -589,23 +587,13 @@ board that we can use as a boilerplate for the next projects.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -641,6 +629,7 @@ board that we can use as a boilerplate for the next projects.</p>
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -655,7 +644,7 @@ board that we can use as a boilerplate for the next projects.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

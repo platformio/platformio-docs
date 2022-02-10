@@ -61,7 +61,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul class="current">
@@ -95,7 +95,6 @@
 <li class="toctree-l3"><a class="reference internal" href="microchippic32.html">Microchip PIC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nordicnrf51.html">Nordic nRF51</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nordicnrf52.html">Nordic nRF52</a></li>
-<li class="toctree-l3"><a class="reference internal" href="nuclei.html">Nuclei</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxpimxrt.html">NXP i.MX RT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="openhw.html">OpenHW Group</a></li>
@@ -135,7 +134,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -173,8 +171,11 @@
   <section id="espressif-8266">
 <span id="platform-espressif8266"></span><h1>Espressif 8266<a class="headerlink" href="#espressif-8266" title="Permalink to this headline">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Configuration</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">espressif8266</span></code></p>
+<dt class="field-odd">Registry</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/espressif8266">https://registry.platformio.org/platforms/platformio/espressif8266</a></p>
+</dd>
+<dt class="field-even">Configuration</dt>
+<dd class="field-even"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">espressif8266</span></code></p>
 </dd>
 </dl>
 <p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p>
@@ -227,9 +228,9 @@
 <section id="cpu-frequency">
 <h3><a class="toc-backref" href="#id10">CPU Frequency</a><a class="headerlink" href="#cpu-frequency" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-board-build-f-cpu"><span class="std std-ref">board_build.f_cpu</span></a> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="c1">; set frequency to 160MHz</span>
-<span class="na">board_build.f_cpu</span> <span class="o">=</span> <span class="s">160000000L</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="c1">; set frequency to 160MHz</span><span class="w"></span>
+<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">160000000L</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -243,9 +244,9 @@ a value. Possible values:</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">40000000L</span></code> (default)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">80000000L</span></code></p></li>
 </ul>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="c1">; set frequency to 80MHz</span>
-<span class="na">board_build.f_flash</span> <span class="o">=</span> <span class="s">80000000L</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="c1">; set frequency to 80MHz</span><span class="w"></span>
+<span class="na">board_build.f_flash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">80000000L</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -263,8 +264,8 @@ a value. Possible values:</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">dio</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">dout</span></code></p></li>
 </ul>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">board_build.flash_mode</span> <span class="o">=</span> <span class="s">qio</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">board_build.flash_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">qio</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -279,8 +280,8 @@ option from <a class="reference internal" href="../projectconf/index.html#projec
 <li><p><code class="docutils literal notranslate"><span class="pre">nodemcu</span></code> - GPIO0 and RESET controlled using two NPN transistors as in NodeMCU devkit.</p></li>
 </ul>
 <p>See <a class="reference external" href="https://github.com/platformio/platform-espressif8266/search?p=1&amp;q=resetmethod">default reset methods per board</a>.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">upload_resetmethod</span> <span class="o">=</span> <span class="s">ck</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">upload_resetmethod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ck</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -296,8 +297,8 @@ information first.</p>
 <p>Please open <code class="docutils literal notranslate"><span class="pre">eagle.flash.***.ld</span></code> file to check how flash is split.</p>
 <p>To override default LD script please use <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-board-build-ldscript"><span class="std std-ref">board_build.ldscript</span></a>
 option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">board_build.ldscript</span> <span class="o">=</span> <span class="s">eagle.flash.4m.ld</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">board_build.ldscript</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">eagle.flash.4m.ld</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -305,8 +306,8 @@ option from <a class="reference internal" href="../projectconf/index.html#projec
 <h3><a class="toc-backref" href="#id15">Upload Speed</a><a class="headerlink" href="#upload-speed" title="Permalink to this headline">¶</a></h3>
 <p>You can set custom upload speed using <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-speed"><span class="std std-ref">upload_speed</span></a> option
 from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">upload_speed</span> <span class="o">=</span> <span class="s">9600</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">upload_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9600</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -325,9 +326,9 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 <p>You can change lwIP Variant by passing a custom macro using project
 <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
 <p>For example, to switch to lwIP v1.4</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">...</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">...</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -346,9 +347,9 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 <p>You can change SDK version by passing a custom macro using project
 <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
 <p>For example, to switch to SDK-pre-3.0:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">...</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">...</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -358,21 +359,21 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 <p>You can control SSL support passing a custom macro using project
 <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
 <p>For example, use basic SSL ciphers (lower ROM use):</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">...</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D BEARSSL_SSL_BASIC</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">...</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D BEARSSL_SSL_BASIC</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="serial-debug">
 <span id="platform-espressif8266-serial-debug"></span><h3><a class="toc-backref" href="#id19">Serial Debug</a><a class="headerlink" href="#serial-debug" title="Permalink to this headline">¶</a></h3>
 <p>Please use the next <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> to enable Serial debug:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">...</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_PORT=Serial</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">...</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_PORT=Serial</span><span class="w"></span>
 
-<span class="c1">; or for Serial1</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_PORT=Serial1</span>
+<span class="c1">; or for Serial1</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_PORT=Serial1</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -387,147 +388,147 @@ with <a class="reference internal" href="#platform-espressif8266-serial-debug"><
 <code class="docutils literal notranslate"><span class="pre">build_flags</span> <span class="pre">=</span> <span class="pre">-DDEBUG_ESP_PORT=Serial</span> <span class="pre">-DDEBUG_ESP_SSL</span> <span class="pre">...</span></code>.</p>
 <p>Actual information is available in <a class="reference external" href="https://github.com/esp8266/Arduino/blob/master/boards.txt#L286">Arduino for ESP8266 Board Manifest</a>.
 Please scroll to <code class="docutils literal notranslate"><span class="pre">generic.menu.lvl</span></code> section.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
 
-<span class="c1">;;;;; Possible options ;;;;;;</span>
+<span class="c1">;;;;; Possible options ;;;;;;</span><span class="w"></span>
 
-<span class="c1">; SSL</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_SSL</span>
+<span class="c1">; SSL</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_SSL</span><span class="w"></span>
 
-<span class="c1">; TLS_MEM</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_TLS_MEM</span>
+<span class="c1">; TLS_MEM</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_TLS_MEM</span><span class="w"></span>
 
-<span class="c1">; HTTP_CLIENT</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_HTTP_CLIENT</span>
+<span class="c1">; HTTP_CLIENT</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_HTTP_CLIENT</span><span class="w"></span>
 
-<span class="c1">; HTTP_SERVER</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_HTTP_SERVER</span>
+<span class="c1">; HTTP_SERVER</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_HTTP_SERVER</span><span class="w"></span>
 
-<span class="c1">; SSL+TLS_MEM</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_SSL</span>
-  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
+<span class="c1">; SSL+TLS_MEM</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_SSL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_TLS_MEM</span><span class="w"></span>
 
-<span class="c1">; SSL+HTTP_CLIENT</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_SSL</span>
-  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+<span class="c1">; SSL+HTTP_CLIENT</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_SSL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_CLIENT</span><span class="w"></span>
 
-<span class="c1">; SSL+HTTP_SERVER</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_SSL</span>
-  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+<span class="c1">; SSL+HTTP_SERVER</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_SSL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_SERVER</span><span class="w"></span>
 
-<span class="c1">; TLS_MEM+HTTP_CLIENT</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
-  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+<span class="c1">; TLS_MEM+HTTP_CLIENT</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_TLS_MEM</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_CLIENT</span><span class="w"></span>
 
-<span class="c1">; TLS_MEM+HTTP_SERVER</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
-  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+<span class="c1">; TLS_MEM+HTTP_SERVER</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_TLS_MEM</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_SERVER</span><span class="w"></span>
 
-<span class="c1">; HTTP_CLIENT+HTTP_SERVER</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
-  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+<span class="c1">; HTTP_CLIENT+HTTP_SERVER</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_CLIENT</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_SERVER</span><span class="w"></span>
 
-<span class="c1">; SSL+TLS_MEM+HTTP_CLIENT</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_SSL</span>
-  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
-  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
+<span class="c1">; SSL+TLS_MEM+HTTP_CLIENT</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_SSL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_TLS_MEM</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_CLIENT</span><span class="w"></span>
 
-<span class="c1">; SSL+TLS_MEM+HTTP_SERVER</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_SSL</span>
-  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
-  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+<span class="c1">; SSL+TLS_MEM+HTTP_SERVER</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_SSL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_TLS_MEM</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_SERVER</span><span class="w"></span>
 
-<span class="c1">; SSL+HTTP_CLIENT+HTTP_SERVER</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_SSL</span>
-  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
-  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+<span class="c1">; SSL+HTTP_CLIENT+HTTP_SERVER</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_SSL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_CLIENT</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_SERVER</span><span class="w"></span>
 
-<span class="c1">; TLS_MEM+HTTP_CLIENT+HTTP_SERVER</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
-  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
-  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+<span class="c1">; TLS_MEM+HTTP_CLIENT+HTTP_SERVER</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_TLS_MEM</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_CLIENT</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_SERVER</span><span class="w"></span>
 
-<span class="c1">; SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_SSL</span>
-  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
-  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
-  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
+<span class="c1">; SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_SSL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_TLS_MEM</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_CLIENT</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_SERVER</span><span class="w"></span>
 
-<span class="c1">; CORE</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_CORE</span>
+<span class="c1">; CORE</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_CORE</span><span class="w"></span>
 
-<span class="c1">; WIFI</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_WIFI</span>
+<span class="c1">; WIFI</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_WIFI</span><span class="w"></span>
 
-<span class="c1">; HTTP_UPDATE</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_HTTP_UPDATE</span>
+<span class="c1">; HTTP_UPDATE</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_HTTP_UPDATE</span><span class="w"></span>
 
-<span class="c1">; UPDATER</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_UPDATER</span>
+<span class="c1">; UPDATER</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_UPDATER</span><span class="w"></span>
 
-<span class="c1">; OTA</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DDEBUG_ESP_OTA</span>
+<span class="c1">; OTA</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DDEBUG_ESP_OTA</span><span class="w"></span>
 
-<span class="c1">; OOM</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_OOM</span>
-  <span class="na">-include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span>
+<span class="c1">; OOM</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_OOM</span><span class="w"></span>
+<span class="w">  </span><span class="na">-include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span><span class="w"></span>
 
-<span class="c1">; CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_CORE</span>
-  <span class="na">-DDEBUG_ESP_WIFI</span>
-  <span class="na">-DDEBUG_ESP_HTTP_UPDATE</span>
-  <span class="na">-DDEBUG_ESP_UPDATER</span>
-  <span class="na">-DDEBUG_ESP_OTA</span>
-  <span class="na">-DDEBUG_ESP_OOM -include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span>
+<span class="c1">; CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_CORE</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_WIFI</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_UPDATE</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_UPDATER</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_OTA</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_OOM -include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span><span class="w"></span>
 
-<span class="c1">; SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER+CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DDEBUG_ESP_SSL</span>
-  <span class="na">-DDEBUG_ESP_TLS_MEM</span>
-  <span class="na">-DDEBUG_ESP_HTTP_CLIENT</span>
-  <span class="na">-DDEBUG_ESP_HTTP_SERVER</span>
-  <span class="na">-DDEBUG_ESP_CORE</span>
-  <span class="na">-DDEBUG_ESP_WIFI</span>
-  <span class="na">-DDEBUG_ESP_HTTP_UPDATE</span>
-  <span class="na">-DDEBUG_ESP_UPDATER</span>
-  <span class="na">-DDEBUG_ESP_OTA</span>
-  <span class="na">-DDEBUG_ESP_OOM -include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span>
+<span class="c1">; SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER+CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_SSL</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_TLS_MEM</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_CLIENT</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_SERVER</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_CORE</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_WIFI</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_UPDATE</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_UPDATER</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_OTA</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_OOM -include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span><span class="w"></span>
 
-<span class="c1">; NoAssert-NDEBUG</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DNDEBUG</span>
+<span class="c1">; NoAssert-NDEBUG</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DNDEBUG</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="vtables">
 <h3><a class="toc-backref" href="#id21">VTables</a><a class="headerlink" href="#vtables" title="Permalink to this headline">¶</a></h3>
 <p>Please use one of the next <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">...</span><span class="w"></span>
 
-<span class="c1">; Flash (default)</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DVTABLES_IN_FLASH</span>
+<span class="c1">; Flash (default)</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DVTABLES_IN_FLASH</span><span class="w"></span>
 
-<span class="c1">; Heap</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DVTABLES_IN_DRAM</span>
+<span class="c1">; Heap</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DVTABLES_IN_DRAM</span><span class="w"></span>
 
-<span class="c1">; IRAM</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DVTABLES_IN_IRAM</span>
+<span class="c1">; IRAM</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DVTABLES_IN_IRAM</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -569,29 +570,29 @@ option in <a class="reference internal" href="../projectconf/index.html#projectc
 </tbody>
 </table>
 <p>Examples:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:espduino]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">espduino</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-    <span class="na">-D PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM48</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:espduino]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espduino</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-D PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM48</span><span class="w"></span>
 
-<span class="k">[env:espino]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">espino</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-    <span class="na">-D PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM32_SECHEAP_NOTSHARED</span>
+<span class="k">[env:espino]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espino</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-D PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM32_SECHEAP_NOTSHARED</span><span class="w"></span>
 
-<span class="k">[env:d1_mini]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">d1_mini</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-    <span class="na">-D PIO_FRAMEWORK_ARDUINO_MMU_CUSTOM</span>
-    <span class="na">-D MMU_IRAM_SIZE</span><span class="o">=</span><span class="s">0xC000</span>
-    <span class="na">-D MMU_ICACHE_SIZE</span><span class="o">=</span><span class="s">0x4000</span>
-    <span class="na">-D MMU_IRAM_HEAP</span>
+<span class="k">[env:d1_mini]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">d1_mini</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-D PIO_FRAMEWORK_ARDUINO_MMU_CUSTOM</span><span class="w"></span>
+<span class="w">    </span><span class="na">-D MMU_IRAM_SIZE</span><span class="o">=</span><span class="s">0xC000</span><span class="w"></span>
+<span class="w">    </span><span class="na">-D MMU_ICACHE_SIZE</span><span class="o">=</span><span class="s">0x4000</span><span class="w"></span>
+<span class="w">    </span><span class="na">-D MMU_IRAM_HEAP</span><span class="w"></span>
 </pre></div>
 </div>
 <p>More detailed information on this matter can be found in the <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/mmu.html">official documentation</a>.</p>
@@ -600,11 +601,11 @@ option in <a class="reference internal" href="../projectconf/index.html#projectc
 <h3><a class="toc-backref" href="#id23">Exceptions</a><a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h3>
 <p>Exceptions are disabled by default. To enable exceptions, use the <code class="docutils literal notranslate"><span class="pre">PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS</span></code> macro in <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.
 That macro will add the <code class="docutils literal notranslate"><span class="pre">-fexceptions</span></code> flag and will link the final firmware against the <code class="docutils literal notranslate"><span class="pre">stdc++-exc</span></code> library with enabled exceptions. For example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">...</span><span class="w"></span>
 
-<span class="c1">; Enable exceptions</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS</span>
+<span class="c1">; Enable exceptions</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -625,11 +626,11 @@ Please consider moving your code to LittleFS.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">SPIFFS</span></code> file system is used by default in order to keep legacy project
 compatible. To choose <code class="docutils literal notranslate"><span class="pre">LittleFS</span></code> as the file system, it should be explicitly specified
 using <code class="docutils literal notranslate"><span class="pre">board_build.filesystem</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board_build.filesystem</span> <span class="o">=</span> <span class="s">littlefs</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board_build.filesystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">littlefs</span><span class="w"></span>
 </pre></div>
 </div>
 <p>More information about pros and cons of each file system can be found in <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#filesystem">the official documentation</a>.</p>
@@ -642,13 +643,13 @@ using <code class="docutils literal notranslate"><span class="pre">board_build.f
 information first.</p>
 </div>
 <ol class="arabic simple">
-<li><p>Create new project using <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or initialize project using
+<li><p>Create a new project using <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or initialize project using
 <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (if you have not initialized it yet)</p></li>
-<li><p>Create <code class="docutils literal notranslate"><span class="pre">data</span></code> folder (it should be on the same level as <code class="docutils literal notranslate"><span class="pre">src</span></code> folder)
-and put files here. Also, you can specify own location for
+<li><p>Create the <code class="docutils literal notranslate"><span class="pre">data</span></code> folder (it should be on the same level as the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder)
+and put files there. Also, you can specify your own location for
 <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-data-dir"><span class="std std-ref">data_dir</span></a></p></li>
-<li><p>Run “Upload File System image” task in <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or use <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a>
-and <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command with <code class="docutils literal notranslate"><span class="pre">uploadfs</span></code> target.</p></li>
+<li><p>Run the “Upload File System image” task in <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or use <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a>
+and the <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command with the <code class="docutils literal notranslate"><span class="pre">uploadfs</span></code> target.</p></li>
 </ol>
 <p>To upload file system image using OTA update please specify <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> /
 <code class="docutils literal notranslate"><span class="pre">--upload-port</span></code> as IP address or mDNS host name (ending with the <code class="docutils literal notranslate"><span class="pre">*.local</span></code>).
@@ -662,13 +663,13 @@ file system offsets (start, end, page, block). You can override it using
 <h4><a class="toc-backref" href="#id27">Overriding Filesystem image name</a><a class="headerlink" href="#overriding-filesystem-image-name" title="Permalink to this headline">¶</a></h4>
 <p>By default, the image file name is set according to the used file system: <code class="docutils literal notranslate"><span class="pre">spiffs.bin</span></code>
 or <code class="docutils literal notranslate"><span class="pre">littlefs.bin</span></code>. You can change the file name using <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/advanced_scripting.html#before-pre-and-after-post-actions">a PRE extra script</a>, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:d1]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">d1</span>
-<span class="na">board_build.filesystem</span> <span class="o">=</span> <span class="s">littlefs</span>
-<span class="na">extra_scripts</span> <span class="o">=</span>
-    <span class="na">pre:extra_script.py</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:d1]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">d1</span><span class="w"></span>
+<span class="na">board_build.filesystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">littlefs</span><span class="w"></span>
+<span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">pre:extra_script.py</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Where a special variable <code class="docutils literal notranslate"><span class="pre">ESP8266_FS_IMAGE_NAME</span></code> can be overridden:</p>
@@ -680,37 +681,55 @@ or <code class="docutils literal notranslate"><span class="pre">littlefs.bin</sp
 </section>
 <section id="over-the-air-ota-update">
 <span id="platform-espressif-ota"></span><h3><a class="toc-backref" href="#id28">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Permalink to this headline">¶</a></h3>
-<p>Firstly, please read <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html">What is OTA? How to use it?</a></p>
-<p>There are 2 options:</p>
-<ul class="simple">
-<li><p>Directly specify <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-upload-port"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--upload-port</span></code></a> in command line</p></li>
-</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please make sure to read the theory behind the OTA updates in the
+<a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html">What is OTA? How to use it?</a>
+article first.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Create a new project using <a class="reference internal" href="../home/index.html#piohome"><span class="std std-ref">PlatformIO Home</span></a> or initialize a project via
+<a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (if you have not initialized it yet)</p></li>
+<li><p>Copy the <a class="reference external" href="https://github.com/esp8266/Arduino/blob/master/libraries/ArduinoOTA/examples/BasicOTA/BasicOTA.ino">basicOTA</a>
+example to <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> and configure your WiFi credentials
+(SSID and password).</p></li>
+<li><p>Compile the project to ensure there are no syntax errors in the code.</p></li>
+</ol>
+<p>To upload the binary you can either specify the upload address directly in the CLI
+command using the <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-upload-port"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--upload-port</span></code></a> option:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Specify <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
-</ul>
-<p>You also need to set <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> to <code class="docutils literal notranslate"><span class="pre">espota</span></code>.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">espota</span>
-<span class="na">upload_port</span> <span class="o">=</span> <span class="s">IP_ADDRESS_HERE or mDNS_NAME.local</span>
+<p>For example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pio run -t upload --upload-port 192.168.0.255
+pio run -t upload --upload-port myesp8266.local
 </pre></div>
 </div>
-<p>For example,</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">upload</span> <span class="pre">--upload-port</span> <span class="pre">192.168.0.255</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">upload</span> <span class="pre">--upload-port</span> <span class="pre">myesp8266.local</span></code></p></li>
-</ul>
+<p>Or use the <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Please note that you also
+need to set <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> to <code class="docutils literal notranslate"><span class="pre">espota</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">IP_ADDRESS_HERE or mDNS_NAME.local</span><span class="w"></span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span><span class="w"></span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">192.168.0.255</span><span class="w"></span>
+</pre></div>
+</div>
 <section id="authentication-and-upload-options">
 <h4><a class="toc-backref" href="#id29">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Permalink to this headline">¶</a></h4>
 <p>You can pass additional options/flags to OTA uploader using
 <code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">espota</span>
-<span class="c1">; each flag in a new line</span>
-<span class="na">upload_flags</span> <span class="o">=</span>
-  <span class="na">--port</span><span class="o">=</span><span class="s">8266</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span><span class="w"></span>
+<span class="c1">; each flag in a new line</span><span class="w"></span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">--port</span><span class="o">=</span><span class="s">8266</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Available flags</p>
@@ -772,12 +791,12 @@ please open <a class="reference internal" href="../integration/ide/pioide.html#p
 <li><p>Initialize a new project, open <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> and specify the link to the
 framework repository in <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a> section.
 For example,</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nodemcuv2]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">platform_packages</span> <span class="o">=</span>
-    <span class="na">platformio/framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nodemcuv2]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">platformio/framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -818,23 +837,23 @@ of Espressif 8266 development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
-<span class="k">[env:latest_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
+<span class="k">[env:latest_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="c1">; Custom stable version</span>
-<span class="k">[env:custom_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266@x.y.z</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="c1">; Custom stable version</span><span class="w"></span>
+<span class="k">[env:custom_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266@x.y.z</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="upstream">
 <h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-espressif8266.git</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif8266.git</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -852,31 +871,31 @@ of Espressif 8266 development platform and the latest upstream version using
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/esp8266/Arduino.git?utm_source=platformio.org&amp;utm_medium=docs">framework-arduinoespressif8266</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-arduinoespressif8266">framework-arduinoespressif8266</a></p></td>
 <td><p>Arduino Wiring-based Framework for Espressif ESP8266 microcontrollers</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/espressif/ESP8266_NONOS_SDK.git?utm_source=platformio.org&amp;utm_medium=docs">framework-esp8266-nonos-sdk</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-esp8266-nonos-sdk">framework-esp8266-nonos-sdk</a></p></td>
 <td><p>Espressif ESP8266 Non-OS SDK</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/espressif/ESP8266_RTOS_SDK.git?utm_source=platformio.org&amp;utm_medium=docs">framework-esp8266-rtos-sdk</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-esp8266-rtos-sdk">framework-esp8266-rtos-sdk</a></p></td>
 <td><p>Espressif ESP8266 SDK based on FreeRTOS</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/eerimoq/simba.git?utm_source=platformio.org&amp;utm_medium=docs">framework-simba</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-simba">framework-simba</a></p></td>
 <td><p>Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/igrr/esptool-ck.git?utm_source=platformio.org&amp;utm_medium=docs">tool-esptool</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-esptool">tool-esptool</a></p></td>
 <td><p>Espressif ESP8266 build/flash helper tool</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/espressif/esptool.git?utm_source=platformio.org&amp;utm_medium=docs">tool-esptoolpy</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-esptoolpy">tool-esptoolpy</a></p></td>
 <td><p>Espressif ESP8266 and ESP32 serial bootloader utility</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/earlephilhower/mklittlefs.git?utm_source=platformio.org&amp;utm_medium=docs">tool-mklittlefs</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-mklittlefs">tool-mklittlefs</a></p></td>
 <td><p>Utility for creating littlefs images for upload on the ESP8266</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/igrr/mkspiffs.git?utm_source=platformio.org&amp;utm_medium=docs">tool-mkspiffs</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-mkspiffs">tool-mkspiffs</a></p></td>
 <td><p>Tool to build and unpack SPIFFS images</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/jcmvbkbc/gcc-xtensa.git?utm_source=platformio.org&amp;utm_medium=docs">toolchain-xtensa</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-xtensa">toolchain-xtensa</a></p></td>
 <td><p>GCC Toolchain for Xtensa processor</p></td>
 </tr>
 </tbody>
@@ -931,8 +950,7 @@ manufacturer</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
-<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command</p></li>
 <li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by
 horizontally.</p></li>
 </ul>
@@ -1836,7 +1854,7 @@ horizontally.</p></li>
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -1851,8 +1869,7 @@ horizontally.</p></li>
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -1870,23 +1887,13 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -1922,6 +1929,7 @@ horizontally.</p></li>
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -1936,7 +1944,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

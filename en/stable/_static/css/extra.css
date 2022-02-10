@@ -522,8 +522,27 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     left: 0;
   }
 }
+.badge {
+   display: inline-block;
+   min-width: 10px;
+   padding: 3px 7px;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 1;
+   color: #fff;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   background-color: #777;
+   border-radius: 10px;
+}
 
 /* Misc */
+
+.nav .badge {
+  background-color: #5cb85c;
+  margin-left: 5px;
+}
 
 .wy-nav-content {
   max-width: 1000px !important;
@@ -555,7 +574,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-weight: 500;
 }
 
-
 @media screen and (min-width: 992px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
@@ -583,71 +601,4 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .nav .nav-pio-tech > a {
   color: white !important;
   font-weight: bold;
-}
-
-/* Banners */
-
-/* TOP Banner */
-.top-banner {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .12);
-    width: 100%;
-    padding: 10px 20px;
-    position: relative;
-    min-height: 46px;
-    background-image: -owg-linear-gradient(0deg, #1991EB 2%, #2DA1F8 98%);
-    background-image: -webkit-linear-gradient(0deg, #1991EB 2%, #2DA1F8 98%);
-    background-image: -moz-linear-gradient(0deg, #1991EB 2%, #2DA1F8 98%);
-    background-image: -o-linear-gradient(0deg, #1991EB 2%, #2DA1F8 98%);
-    background-image: linear-gradient(0deg, #1991EB 2%, #2DA1F8 98%);
-    border-color: #397FD0
-}
-
-.top-banner .top-banner-text {
-  color: #fff;
-  text-align: center;
-  line-height: 1.6;
-}
-
-.top-banner .top-banner-get-link {
-  background-color: #fff;
-  border: 1px solid #1991EB;
-  border-radius: 3px;
-  padding: 5px 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-.top-banner .top-banner-get-link:focus,
-.top-banner .top-banner-get-link:hover {
-  background-color: #e6f5fe;
-}
-
-.top-banner .top-banner-close {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxMCAxMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxwYXRoIGQ9Ik0xLjE4MiA5LjMxOGw3LjcxNC03LjcxNE04Ljg5NiA5LjMxOEwxLjE4MiAxLjYwNCIvPjwvZz48L3N2Zz4=);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-top: -1px;
-    right: 20px;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    filter: alpha(Opacity=75);
-    opacity: .75;
-}
-
-.top-banner .top-banner-close:focus,
-.top-banner .top-banner-close:hover {
-    filter: alpha(Opacity=100);
-    opacity: 1
 }

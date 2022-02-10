@@ -93,6 +93,13 @@ The keyword should be lowercased, can contain a-z, digits and dash (but not
 start/end with them). A list from the keywords can be specified with
 separator ``,`` or declared as Array.
 
+``homepage``
+------------
+
+*Optional* | Type: ``String`` | Max. Length: 255
+
+Home page of a library (if is different from :ref:`libjson_repository` url).
+
 .. _libjson_repository:
 
 ``repository``
@@ -117,7 +124,6 @@ Example:
         "type": "git",
         "url": "https://github.com/foo/bar.git"
     }
-
 
 .. _libjson_authors:
 
@@ -177,12 +183,178 @@ A SPDX license ID of the library. You can check `the full list of SPDX license I
 
     "license": "Apache-2.0"
 
-``homepage``
+.. _libjson_frameworks:
+
+``frameworks``
+--------------
+
+*Optional* | Type: ``String`` or ``Array``
+
+A list with compatible frameworks. The available framework names are defined in
+the :ref:`frameworks` section.
+
+Example:
+
+.. code-block:: javascript
+
+    "frameworks": ["espidf", "freertos"]
+
+If the library is compatible with the all frameworks, then do not declare this field or
+you use ``*`` symbol:
+
+.. code-block:: javascript
+
+    "frameworks": "*"
+
+.. _libjson_platforms:
+
+``platforms``
+-------------
+
+*Optional* | Type: ``String`` or ``Array``
+
+A list with compatible development platforms. The available platform name are defined
+in :ref:`platforms` section.
+
+Example:
+
+.. code-block:: javascript
+
+    "platforms": ["atmelavr", "espressif8266"]
+
+If the library is compatible with the all platforms, then do not declare this field or
+use ``*`` symbol:
+
+.. code-block:: javascript
+
+    "platforms": "*"
+
+.. note::
+    PlatformIO does not check platforms for compatibility in default mode.
+    See :ref:`ldf_compat_mode` for details. If you need a strict checking for compatible
+    platforms for a library, please set :ref:`libjons_compatmode` to ``strict``.
+
+``headers``
+-----------
+
+*Optional* | Type: ``String`` or ``Array``
+
+A list of header files that can be included in a project source files using
+``#include <...>`` directive.
+
+Examples:
+
+.. code-block:: javascript
+
+    "headers": "MyLibrary.h"
+
+
+.. code-block:: javascript
+
+    "headers": ["FooCore.h", "FooFeature.h"]
+
+.. _libjson_examples:
+
+``examples``
 ------------
 
-*Optional* | Type: ``String`` | Max. Length: 255
+*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
 
-Home page of a library (if is different from :ref:`libjson_repository` url).
+A list of example patterns. This field is predefined with default value:
+
+.. code-block:: javascript
+
+    "examples": [
+        {
+            "name": "Hello",
+            "base": "examples/world",
+            "files": [
+                "platformio.ini",
+                "include/world.h",
+                "src/world.c",
+                "README",
+                "extra.py"
+            ]
+        },
+        {
+            "name": "Blink",
+            "base": "examples/blink",
+            "files": ["blink.cpp", "blink.h"]
+        }
+    ]
+
+.. _libjson_dependencies:
+
+``dependencies``
+----------------
+
+*Optional* | Type: ``Array`` or ``Object``
+
+A list of dependent libraries. They will be installed automatically with
+:ref:`cmd_lib_install` command.
+
+Allowed requirements for dependent library:
+
+* ``owner`` | Type: ``String`` – an owner name (username) from the PlatformIO Registry
+* ``name`` | Type: ``String`` – library name
+* ``version`` | Type: ``String`` – version or version range in SemVer format
+* ``frameworks`` | Type: ``String`` or ``Array`` – project compatible :ref:`frameworks`
+* ``platforms`` | Type: ``String`` or ``Array`` – project compatible :ref:`platforms`
+
+The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`__ (
+``<major>.<minor>.<patch>``) and can take any of the following forms:
+
+* ``1.2.3`` - an exact version number. Use only this exact version
+* ``^1.2.3`` - any compatible version (exact version for ``1.x.x`` versions
+* ``~1.2.3`` - any version with the same major and minor versions, and an
+  equal or greater patch version
+* ``>1.2.3`` - any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
+  are also possible
+* ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
+  ``0.2.0`` and less than ``0.3.0``
+
+The rest possible values including VCS repository URLs are documented in
+:ref:`cmd_lib_install` command.
+
+
+Example:
+
+.. code-block:: javascript
+
+    "dependencies":
+    {
+        "bblanchon/ArduinoJson": "^6.16.1",
+        "me-no-dev/AsyncTCP": "*",
+        "external-repo": "https://github.com/user/package.git#1.2.3",
+        "external-zip": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
+    }
+
+More advanced usage:
+
+.. code-block:: javascript
+
+    "dependencies":
+    [
+        {
+            "owner": "bblanchon",
+            "name": "ArduinoJson",
+            "version": "^6.16.1"
+        },
+        {
+            "owner": "me-no-dev",
+            "name": "AsyncTCP",
+            "version": "*",
+            "platforms": ["espressif32"]
+        },
+        {
+            "name": "external-repo",
+            "version": "https://github.com/user/package.git#1.2.3"
+        },
+        {
+            "name": "external-zip",
+            "version": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
+        }
+    ]
 
 .. _libjson_export:
 
@@ -245,162 +417,6 @@ Example:
 *Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
 
 Exclude the directories and files which match with ``exclude`` patterns.
-
-.. _libjson_frameworks:
-
-``frameworks``
---------------
-
-*Optional* | Type: ``String`` or ``Array``
-
-A list with compatible frameworks. The available framework names are defined in
-the :ref:`frameworks` section.
-
-Example:
-
-.. code-block:: javascript
-
-    "frameworks": ["espidf", "freertos"]
-
-If the library is compatible with the all frameworks, then do not declare this field or
-you use ``*`` symbol:
-
-.. code-block:: javascript
-
-    "frameworks": "*"
-
-.. _libjson_platforms:
-
-``platforms``
--------------
-
-*Optional* | Type: ``String`` or ``Array``
-
-A list with compatible development platforms. The available platform name are defined
-in :ref:`platforms` section.
-
-Example:
-
-.. code-block:: javascript
-
-    "platforms": ["atmelavr", "espressif8266"]
-
-If the library is compatible with the all platforms, then do not declare this field or
-use ``*`` symbol:
-
-.. code-block:: javascript
-
-    "platforms": "*"
-
-.. note::
-    PlatformIO does not check platforms for compatibility in default mode.
-    See :ref:`ldf_compat_mode` for details. If you need a strict checking for compatible
-    platforms for a library, please set :ref:`libjons_compatmode` to ``strict``.
-
-.. _libjson_dependencies:
-
-``dependencies``
-----------------
-
-*Optional* | Type: ``Array`` or ``Object``
-
-A list of dependent libraries. They will be installed automatically with
-:ref:`cmd_lib_install` command.
-
-Allowed requirements for dependent library:
-
-* ``owner`` | Type: ``String`` – an owner name (username) from the PlatformIO Registry
-* ``name`` | Type: ``String`` – library name
-* ``version`` | Type: ``String`` – version or version range in SemVer format
-* ``frameworks`` | Type: ``String`` or ``Array`` – project compatible :ref:`frameworks`
-* ``platforms`` | Type: ``String`` or ``Array`` – project compatible :ref:`platforms`
-
-The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`__ (
-``<major>.<minor>.<patch>``) and can take any of the following forms:
-
-* ``1.2.3`` - an exact version number. Use only this exact version
-* ``^1.2.3`` - any compatible version (exact version for ``1.x.x`` versions
-* ``~1.2.3`` - any version with the same major and minor versions, and an
-  equal or greater patch version
-* ``>1.2.3`` - any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
-  are also possible
-* ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
-  ``0.2.0`` and less than ``0.3.0``
-
-The rest possible values including VCS repository URLs are documented in
-:ref:`cmd_lib_install` command.
-
-
-Example:
-
-.. code-block:: javascript
-
-    "dependencies":
-    [
-        {
-            "owner": "bblanchon",
-            "name": "ArduinoJson",
-            "version": "^6.16.1"
-        },
-        {
-            "owner": "me-no-dev",
-            "name": "AsyncTCP",
-            "version": "*",
-            "platforms": ["espressif32"]
-        },
-        {
-            "name": "external-repo",
-            "version": "https://github.com/user/package.git#1.2.3"
-        },
-        {
-            "name": "external-zip",
-            "version": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
-        }
-    ]
-
-A short definition of dependencies is allowed:
-
-.. code-block:: javascript
-
-    "dependencies":
-    {
-        "bblanchon/ArduinoJson": "^6.16.1",
-        "me-no-dev/AsyncTCP": "*",
-        "external-repo": "https://github.com/user/package.git#1.2.3",
-        "external-zip": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
-    }
-
-
-.. _libjson_examples:
-
-``examples``
-------------
-
-*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
-
-A list of example patterns. This field is predefined with default value:
-
-.. code-block:: javascript
-
-    "examples": [
-        {
-            "name": "Hello",
-            "base": "examples/world",
-            "files": [
-                "platformio.ini",
-                "include/world.h",
-                "src/world.c",
-                "README",
-                "extra.py"
-            ]
-        },
-        {
-            "name": "Blink",
-            "base": "examples/blink",
-            "files": ["blink.cpp", "blink.h"]
-        }
-    ]
-
 
 .. _libjson_build:
 
@@ -530,7 +546,7 @@ Project structure
     for item in env.get("CPPDEFINES", []):
         if isinstance(item, tuple) and item[0] == "HAL":
             env.Append(CPPPATH=[realpath(join("hal", item[1]))])
-            env.Replace(SRC_FILTER=["+<*>", "-<hal*>", "+<hal%s>" % item[1]])
+            env.Replace(SRC_FILTER=["+<*>", "-<hal*>", "+<hal/%s>" % item[1]])
             break
 
     # pass flags to a global build environment (for all libraries, etc)

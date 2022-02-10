@@ -234,7 +234,7 @@ If you use Bash as your default shell, you can do it by editing either
 
 .. code-block:: shell
 
-    export PATH=$PATH:~/.platformio/penv/bin
+    export PATH=$PATH:$HOME/.platformio/penv/bin
 
 If you use Zsh, you can either edit ``~/.zprofile`` and add the code above, or
 for supporting both, Bash and Zsh, you can first edit ``~/.profile`` and add

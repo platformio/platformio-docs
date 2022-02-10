@@ -61,7 +61,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul class="current">
@@ -79,9 +79,7 @@
 <li class="toctree-l2"><a class="reference internal" href="kendryte-freertos-sdk.html">Kendryte FreeRTOS SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kendryte-standalone-sdk.html">Kendryte Standalone SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logicromsdk.html">LOGICROM SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nuclei-sdk.html">Nuclei SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-runtime.html">PULP Runtime Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-sdk.html">PULP SDK</a></li>
@@ -102,12 +100,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#using-with-stm32cubemx">Using with STM32CubeMX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#tools-debug-probes">Tools &amp; Debug Probes</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#boards">Boards</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#bitsquared">1BitSquared</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">96Boards</a></li>
@@ -183,7 +181,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -226,16 +223,15 @@
 </dd>
 </dl>
 <p>STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency</p>
-<p>For more detailed information please visit <a class="reference external" href="https://www.st.com/en/ecosystems/stm32cube.html?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#tutorials" id="id3">Tutorials</a></p></li>
 <li><p><a class="reference internal" href="#configuration-options" id="id4">Configuration Options</a></p></li>
 <li><p><a class="reference internal" href="#using-with-stm32cubemx" id="id5">Using with STM32CubeMX</a></p></li>
-<li><p><a class="reference internal" href="#debugging" id="id6">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id6">Platforms</a></p></li>
 <li><p><a class="reference internal" href="#examples" id="id7">Examples</a></p></li>
-<li><p><a class="reference internal" href="#platforms" id="id8">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id8">Debugging</a></p></li>
 <li><p><a class="reference internal" href="#boards" id="id9">Boards</a></p></li>
 </ul>
 </div>
@@ -257,11 +253,11 @@ what framework modules (ADC, DMA, etc.) are enabled.</p>
 <code class="docutils literal notranslate"><span class="pre">stm32YYxx_hal_conf_template.h</span></code> and renames it to <code class="docutils literal notranslate"><span class="pre">stm32YYxx_hal_conf.h</span></code> expected by
 the internal framework implementation. This behavior can be disabled via a special
 option <code class="docutils literal notranslate"><span class="pre">custom_config_header</span></code> set in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">build.stm32cube.custom_config_header</span> <span class="o">=</span> <span class="s">yes</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f401re</span><span class="w"></span>
+<span class="na">board_build.stm32cube.custom_config_header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Note that the location for the custom configuration header is not strictly limited as
@@ -276,11 +272,11 @@ default implementations shipped with the framework according to the MCU field sp
 in a board manifest. If this functionality is already implemented as part of your project,
 you can force PlatformIO to skip adding default implementations via the <code class="docutils literal notranslate"><span class="pre">custom_system_setup</span></code>
 option, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">build.stm32cube.custom_system_setup</span> <span class="o">=</span> <span class="s">yes</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f401re</span><span class="w"></span>
+<span class="na">board_build.stm32cube.custom_system_setup</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -294,11 +290,11 @@ only one default implementation. It’s mostly used with dual-core targets (e.g.
 which can have several implementations for different boot settings of available CPU cores.
 The desired implementation can be selected via a special option <code class="docutils literal notranslate"><span class="pre">system_file</span></code>
 in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_h747xi]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">disco_h747xi</span>
-<span class="na">build.stm32cube.system_file</span> <span class="o">=</span> <span class="s">system_stm32h7xx_dualcore_bootcm7_cm4gated.c</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_h747xi]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">disco_h747xi</span><span class="w"></span>
+<span class="na">board_build.stm32cube.system_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">system_stm32h7xx_dualcore_bootcm7_cm4gated.c</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -312,11 +308,11 @@ and program counter, initializes memory, etc. In most cases, PlatformIO is capab
 automatically selecting a proper startup file according to the MCU field specified in a
 board manifest. In case this feature fails, it’s possible to manually specify the desired
 startup file, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_board_name]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">custom_board_name</span>
-<span class="na">build.stm32cube.startup_file</span> <span class="o">=</span> <span class="s">startup_stm32l152xca.s</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_board_name]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom_board_name</span><span class="w"></span>
+<span class="na">board_build.stm32cube.startup_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">startup_stm32l152xca.s</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -328,11 +324,11 @@ middleware, etc.), so <a class="reference internal" href="../librarymanager/ldf.
 suitable components will be added to the build process as standalone libraries.
 If your project doesn’t require this feature, it can be disabled via the
 <code class="docutils literal notranslate"><span class="pre">disable_embedded_libs</span></code> option, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_f303vc]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">disco_f303vc</span>
-<span class="na">build.stm32cube.disable_embedded_libs</span> <span class="o">=</span> <span class="s">yes</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:disco_f303vc]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">disco_f303vc</span><span class="w"></span>
+<span class="na">board_build.stm32cube.disable_embedded_libs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -343,11 +339,11 @@ If your project doesn’t require this feature, it can be disabled via the
 for various development kits. These BSPs mostly contain drivers for on-board hardware
 modules (displays, sensors, etc.). The <code class="docutils literal notranslate"><span class="pre">variant</span></code> option is used to select what
 target-specific macros should be used when compiling BSP components, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_g474re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_g474re</span>
-<span class="na">build.stm32cube.variant</span> <span class="o">=</span> <span class="s">STM32G4xx_Nucleo</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_g474re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_g474re</span><span class="w"></span>
+<span class="na">board_build.stm32cube.variant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">STM32G4xx_Nucleo</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -359,11 +355,11 @@ DSP functions. By default, PlatformIO adds paths to these headers and archives t
 STM32Cube-based project. If a project already has its own implementation of the DSP
 library and to avoid possible conflicts with the default DSP library shipped with the
 framework, the <code class="docutils literal notranslate"><span class="pre">custom_dsp_library</span></code> can be used:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">ststm32</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">stm32cube</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nucleo_f401re</span>
-<span class="na">build.stm32cube.custom_dsp_library</span> <span class="o">=</span> <span class="s">yes</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:nucleo_f401re]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nucleo_f401re</span><span class="w"></span>
+<span class="na">board_build.stm32cube.custom_dsp_library</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -377,8 +373,33 @@ It uses <em>STM32CubeMX</em> to generate a HAL-framework-based code and alongsid
 PlatformIO project with compatible parameters to stick them both together.</p>
 <p>More details about <code class="docutils literal notranslate"><span class="pre">stm32pio</span></code> tool can be found in <a class="reference external" href="https://github.com/ussserrr/stm32pio">the official repository</a>.</p>
 </section>
+<section id="platforms">
+<h2><a class="toc-backref" href="#id6">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples">
+<h2><a class="toc-backref" href="#id7">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">STM32Cube for ST STM32</a></p></li>
+</ul>
+</section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id6">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="contents local topic" id="id1">
 <ul class="simple">
@@ -447,7 +468,7 @@ You do not need to use/buy external debug probe.</p>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/st3dp001_eval.html#board-ststm32-st3dp001-eval"><span class="std std-ref">3DP001V1 Evaluation board for 3D printer</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>STM32F401VGT6</p></td>
+<td><p>STM32F401VET6</p></td>
 <td><p>84MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
@@ -1077,7 +1098,7 @@ You do not need to use/buy external debug probe.</p>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_h735ig.html#board-ststm32-disco-h735ig"><span class="std std-ref">STM32H735G-DK Discovery kit</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>STM32H735IGK6U</p></td>
+<td><p>STM32H735IGK6</p></td>
 <td><p>550MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>432KB</p></td>
@@ -1496,7 +1517,7 @@ Please click on board name for the further details.</p>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/olimexino_stm32f3.html#board-ststm32-olimexino-stm32f3"><span class="std std-ref">Olimex OLIMEXINO-STM32F3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>STM32F303RCT6TR</p></td>
+<td><p>STM32F303RCT6</p></td>
 <td><p>72MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>40KB</p></td>
@@ -1552,7 +1573,7 @@ Please click on board name for the further details.</p>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/prntr_v2.html#board-ststm32-prntr-v2"><span class="std std-ref">PrntrBoard V2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>STM32F407RE</p></td>
+<td><p>STM32F407VET6</p></td>
 <td><p>168MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
@@ -2155,8 +2176,8 @@ Please click on board name for the further details.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/vccgnd_f407zg_mini.html#board-ststm32-vccgnd-f407zg-mini"><span class="std std-ref">VCCGND F407ZGT6 Mini</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F407ZGT6</p></td>
-<td><p>72MHz</p></td>
-<td><p>512KB</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/waveshare_open103z.html#board-ststm32-waveshare-open103z"><span class="std std-ref">Waveshare Open103Z</span></a></p></td>
@@ -2220,38 +2241,12 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 </section>
-<section id="examples">
-<h2><a class="toc-backref" href="#id7">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">STM32Cube for ST STM32</a></p></li>
-</ul>
-</section>
-<section id="platforms">
-<h2><a class="toc-backref" href="#id8">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="boards">
 <h2><a class="toc-backref" href="#id9">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
-<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command</p></li>
 <li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by horizontally.</p></li>
 </ul>
 </div>
@@ -3767,7 +3762,7 @@ Please click on board name for the further details.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/olimexino_stm32f3.html#board-ststm32-olimexino-stm32f3"><span class="std std-ref">Olimex OLIMEXINO-STM32F3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
-<td><p>STM32F303RCT6TR</p></td>
+<td><p>STM32F303RCT6</p></td>
 <td><p>72MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>40KB</p></td>
@@ -3925,7 +3920,7 @@ Please click on board name for the further details.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/prntr_v2.html#board-ststm32-prntr-v2"><span class="std std-ref">PrntrBoard V2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
-<td><p>STM32F407RE</p></td>
+<td><p>STM32F407VET6</p></td>
 <td><p>168MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
@@ -4161,7 +4156,7 @@ Please click on board name for the further details.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/st3dp001_eval.html#board-ststm32-st3dp001-eval"><span class="std std-ref">3DP001V1 Evaluation board for 3D printer</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
-<td><p>STM32F401VGT6</p></td>
+<td><p>STM32F401VET6</p></td>
 <td><p>84MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
@@ -4897,7 +4892,7 @@ Please click on board name for the further details.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_h735ig.html#board-ststm32-disco-h735ig"><span class="std std-ref">STM32H735G-DK Discovery kit</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
-<td><p>STM32H735IGK6U</p></td>
+<td><p>STM32H735IGK6</p></td>
 <td><p>550MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>432KB</p></td>
@@ -5234,8 +5229,8 @@ Please click on board name for the further details.</p>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F407ZGT6</p></td>
-<td><p>72MHz</p></td>
-<td><p>512KB</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
 </tbody>
@@ -5506,7 +5501,7 @@ Please click on board name for the further details.</p>
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -5521,8 +5516,7 @@ Please click on board name for the further details.</p>
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -5540,23 +5534,13 @@ Please click on board name for the further details.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -5592,6 +5576,7 @@ Please click on board name for the further details.</p>
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -5606,7 +5591,7 @@ Please click on board name for the further details.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

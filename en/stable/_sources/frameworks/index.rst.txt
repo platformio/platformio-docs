@@ -28,9 +28,7 @@ Frameworks
     kendryte-freertos-sdk
     kendryte-standalone-sdk
     libopencm3
-    logicromsdk
     mbed
-    nuclei-sdk
     pulp-os
     pulp-runtime
     pulp-sdk

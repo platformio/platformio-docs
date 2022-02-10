@@ -84,7 +84,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -110,7 +110,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -174,38 +173,38 @@
 <p>If you have multiple build environments that depend on the same libraries,
 you can use <a class="reference internal" href="interpolation.html#projectconf-interpolation"><span class="std std-ref">Interpolation of Values</span></a> to use common configuration.</p>
 <p><strong>Valid forms</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; one line definition (comma + space)</span>
-<span class="k">[env:myenv]</span>
-<span class="na">lib_deps</span> <span class="o">=</span> <span class="s">LIBRARY_1, LIBRARY_2, LIBRARY_N</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; one line definition (comma + space)</span><span class="w"></span>
+<span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">LIBRARY_1, LIBRARY_2, LIBRARY_N</span><span class="w"></span>
 
-<span class="c1">; multi-line definition</span>
-<span class="k">[env:myenv2]</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-  <span class="na">LIBRARY_1</span>
-  <span class="na">LIBRARY_2</span>
-  <span class="na">LIBRARY_N</span>
+<span class="c1">; multi-line definition</span><span class="w"></span>
+<span class="k">[env:myenv2]</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">LIBRARY_1</span><span class="w"></span>
+<span class="w">  </span><span class="na">LIBRARY_2</span><span class="w"></span>
+<span class="w">  </span><span class="na">LIBRARY_N</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The each line with <code class="docutils literal notranslate"><span class="pre">LIBRARY_1...</span> <span class="pre">LIBRARY_N</span></code> will be passed automatically to
 <a class="reference internal" href="../core/userguide/lib/cmd_install.html#cmd-lib-install"><span class="std std-ref">pio lib install</span></a> command.</p>
 <p>Please check <a class="reference internal" href="../core/userguide/lib/cmd_install.html#cmd-lib-install"><span class="std std-ref">pio lib install</span></a> for the valid declaration formats.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-  <span class="c1">; name-based (built-in library in framework)</span>
-  <span class="na">SPI</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="c1">; name-based (built-in library in framework)</span><span class="w"></span>
+<span class="w">  </span><span class="na">SPI</span><span class="w"></span>
 
-  <span class="c1">; owner-based declaration</span>
-  <span class="na">knolleary/PubSubClient</span>
+<span class="w">  </span><span class="c1">; owner-based declaration</span><span class="w"></span>
+<span class="w">  </span><span class="na">knolleary/PubSubClient</span><span class="w"></span>
 
-  <span class="c1">; SemVer specification</span>
-  <span class="na">bblanchon/ArduinoJson @ ~5.6,!</span><span class="o">=</span><span class="s">5.4</span>
+<span class="w">  </span><span class="c1">; SemVer specification</span><span class="w"></span>
+<span class="w">  </span><span class="na">bblanchon/ArduinoJson @ ~5.6,!</span><span class="o">=</span><span class="s">5.4</span><span class="w"></span>
 
-  <span class="c1">; external Git resource</span>
-  <span class="na">https://github.com/gioblu/PJON.git#v2.0</span>
+<span class="w">  </span><span class="c1">; external Git resource</span><span class="w"></span>
+<span class="w">  </span><span class="na">https://github.com/gioblu/PJON.git#v2.0</span><span class="w"></span>
 
-  <span class="c1">; custom name</span>
-  <span class="na">IRremoteESP8266</span><span class="o">=</span><span class="s">https://github.com/markszabo/IRremoteESP8266/archive/master.zip</span>
+<span class="w">  </span><span class="c1">; custom name</span><span class="w"></span>
+<span class="w">  </span><span class="na">IRremoteESP8266</span><span class="o">=</span><span class="s">https://github.com/markszabo/IRremoteESP8266/archive/master.zip</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -245,14 +244,14 @@ between <code class="docutils literal notranslate"><span class="pre">&lt;</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="c1">; Single line</span>
-<span class="na">lib_ignore</span> <span class="o">=</span> <span class="s">AsyncMqttClient, DNSServer</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="c1">; Single line</span><span class="w"></span>
+<span class="na">lib_ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">AsyncMqttClient, DNSServer</span><span class="w"></span>
 
-<span class="c1">; Multi-line</span>
-<span class="na">lib_ignore</span> <span class="o">=</span>
-  <span class="na">AsyncMqttClient</span>
-  <span class="na">ESP Async WebServer</span>
+<span class="c1">; Multi-line</span><span class="w"></span>
+<span class="na">lib_ignore</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">AsyncMqttClient</span><span class="w"></span>
+<span class="w">  </span><span class="na">ESP Async WebServer</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -274,10 +273,10 @@ to storage that contains libraries grouped by folders. For example,
 <code class="docutils literal notranslate"><span class="pre">D:\PlatformIO\extra\libraries</span></code> but not <code class="docutils literal notranslate"><span class="pre">D:\PlatformIO\extra\libraries\FooLibrary</span></code>.</p>
 </div>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">lib_extra_dirs</span> <span class="o">=</span>
-    <span class="na">/common/libraries</span>
-    <span class="na">/iot/libraries</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">lib_extra_dirs</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">/common/libraries</span><span class="w"></span>
+<span class="w">    </span><span class="na">/iot/libraries</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -292,9 +291,9 @@ to storage that contains libraries grouped by folders. For example,
 dependencies (<code class="docutils literal notranslate"><span class="pre">#include</span></code> directives). See <a class="reference internal" href="../librarymanager/ldf.html#ldf-mode"><span class="std std-ref">Dependency Finder Mode</span></a> for details
 and available options.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="c1">; evaluate C/C++ Preprocessor conditional syntax</span>
-<span class="na">lib_ldf_mode</span> <span class="o">=</span> <span class="s">chain+</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="c1">; evaluate C/C++ Preprocessor conditional syntax</span><span class="w"></span>
+<span class="na">lib_ldf_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">chain+</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -310,9 +309,9 @@ Finder. See <a class="reference internal" href="../librarymanager/ldf.html#ldf-c
 <p>By default, this value is set to <code class="docutils literal notranslate"><span class="pre">lib_compat_mode</span> <span class="pre">=</span> <span class="pre">soft</span></code> and means that LDF
 will check only for framework compatibility.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="c1">; Checks for the compatibility with frameworks and dev/platforms</span>
-<span class="na">lib_compat_mode</span> <span class="o">=</span> <span class="s">strict</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="c1">; Checks for the compatibility with frameworks and dev/platforms</span><span class="w"></span>
+<span class="na">lib_compat_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">strict</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -328,8 +327,8 @@ symbols defined in framework or other libraries.</p>
 <p>You can disable library archiving per a custom library using
 <a class="reference internal" href="../librarymanager/config.html#libjson-archive"><span class="std std-ref">libArchive</span></a> field in <a class="reference internal" href="../librarymanager/config.html#library-json"><span class="std std-ref">library.json</span></a> manifest.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">lib_archive</span> <span class="o">=</span> <span class="s">no</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">lib_archive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">no</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -371,7 +370,7 @@ symbols defined in framework or other libraries.</p>
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -386,8 +385,7 @@ symbols defined in framework or other libraries.</p>
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -405,23 +403,13 @@ symbols defined in framework or other libraries.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -457,6 +445,7 @@ symbols defined in framework or other libraries.</p>
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -471,7 +460,7 @@ symbols defined in framework or other libraries.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -84,7 +84,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -110,7 +110,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -158,6 +157,7 @@
 <li><p><a class="reference internal" href="#check-patterns" id="id2"><code class="docutils literal notranslate"><span class="pre">check_patterns</span></code></a></p></li>
 <li><p><a class="reference internal" href="#check-flags" id="id3"><code class="docutils literal notranslate"><span class="pre">check_flags</span></code></a></p></li>
 <li><p><a class="reference internal" href="#check-severity" id="id4"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a></p></li>
+<li><p><a class="reference internal" href="#check-skip-packages" id="id5"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a></p></li>
 </ul>
 </div>
 <section id="check-tool">
@@ -167,10 +167,10 @@
 want to check source code with two or more tools.</p>
 <p>See available tools in <a class="reference internal" href="../plus/pio-check.html#check-tools"><span class="std std-ref">Check tools</span></a>.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">check_tool</span> <span class="o">=</span> <span class="s">cppcheck, clangtidy</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck, clangtidy</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -183,13 +183,13 @@ included/excluded from the check process. <a class="reference external" href="ht
 by default.</p>
 <p>Another option for filtering source files is <a class="reference internal" href="../core/userguide/cmd_check.html#cmdoption-pio-check-pattern"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--pattern</span></code></a> command.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_check_patterns]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">check_tool</span> <span class="o">=</span> <span class="s">clangtidy</span>
-<span class="na">check_patterns</span> <span class="o">=</span>
-  <span class="na">app/sources</span>
-  <span class="na">tests/hardware/*.c</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:custom_check_patterns]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">clangtidy</span><span class="w"></span>
+<span class="na">check_patterns</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">app/sources</span><span class="w"></span>
+<span class="w">  </span><span class="na">tests/hardware/*.c</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -202,14 +202,14 @@ By default, the flags are passed to all tools specified in <a class="reference i
 section. To set individual flags, define tool name at the beginning of the line.</p>
 <p>Another option for adding flags is <a class="reference internal" href="../core/userguide/cmd_check.html#cmdoption-pio-check-flags"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--flags</span></code></a> command.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_check_flags]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">check_tool</span> <span class="o">=</span> <span class="s">cppcheck, clangtidy</span>
-<span class="na">check_flags</span> <span class="o">=</span>
-  <span class="na">--common-flag</span>
-  <span class="na">cppcheck: --enable</span><span class="o">=</span><span class="s">performance --inline-suppr</span>
-  <span class="na">clangtidy: -fix-errors -format-style</span><span class="o">=</span><span class="s">mozilla</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_check_flags]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck, clangtidy</span><span class="w"></span>
+<span class="na">check_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">--common-flag</span><span class="w"></span>
+<span class="w">  </span><span class="na">cppcheck: --enable</span><span class="o">=</span><span class="s">performance --inline-suppr</span><span class="w"></span>
+<span class="w">  </span><span class="na">clangtidy: -fix-errors -format-style</span><span class="o">=</span><span class="s">mozilla</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -220,10 +220,30 @@ section. To set individual flags, define tool name at the beginning of the line.
 be reported by the <a class="reference internal" href="../plus/pio-check.html#check-tools"><span class="std std-ref">Check tools</span></a>.</p>
 <p>Another option for filtering source files is <a class="reference internal" href="../core/userguide/cmd_check.html#cmdoption-pio-check-severity"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--severity</span></code></a> command.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:detect_only_medium_or_high_defects]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">check_severity</span> <span class="o">=</span> <span class="s">medium, high</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:detect_only_medium_or_high_defects]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">check_severity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">medium, high</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="check-skip-packages">
+<span id="projectconf-check-skip-packages"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a><a class="headerlink" href="#check-skip-packages" title="Permalink to this headline">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">Bool</span> <span class="pre">(yes</span> <span class="pre">or</span> <span class="pre">no)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">no</span></code></p>
+<p>Exclude underlying third-party packages from the checking process. By default, PlatformIO
+passes frameworks and toolchains include paths required by internal analysis tools to
+properly analyze project sources. Some of the supported analysis tools use their own
+preprocessor which may fail to parse perfectly valid code and thus provide empty or
+partial check reports. This option is useful when developers have no control over this
+third-party code and want to perform analysis at least on project sources.</p>
+<p>Another option for excluding third-party packages is <a class="reference internal" href="../core/userguide/cmd_check.html#cmdoption-pio-check-skip-packages"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--skip-packages</span></code></a>
+command.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_check_flags]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck, clangtidy</span><span class="w"></span>
+<span class="na">check_skip_packages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -265,7 +285,7 @@ be reported by the <a class="reference internal" href="../plus/pio-check.html#ch
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -280,8 +300,7 @@ be reported by the <a class="reference internal" href="../plus/pio-check.html#ch
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -299,23 +318,13 @@ be reported by the <a class="reference internal" href="../plus/pio-check.html#ch
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -351,6 +360,7 @@ be reported by the <a class="reference internal" href="../plus/pio-check.html#ch
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -365,7 +375,7 @@ be reported by the <a class="reference internal" href="../plus/pio-check.html#ch
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

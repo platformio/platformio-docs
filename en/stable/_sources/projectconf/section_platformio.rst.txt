@@ -17,7 +17,7 @@ Section ``[platformio]``
 .. contents::
     :local:
 
-The platform.ini ``platformio`` section is used for overriding the
+The ``platformio`` section in the platformio.ini file is used for overriding the
 default configuration options for :ref:`piocore`.
 
 .. note::

@@ -24,7 +24,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F401VGT6
+    - STM32F401VET6
   * - **Frequency**
     - 84MHz
   * - **Flash**
@@ -58,7 +58,7 @@ board manifest `st3dp001_eval.json <https://github.com/platformio/platform-ststm
   board = st3dp001_eval
 
   ; change microcontroller
-  board_build.mcu = stm32f401vgt6
+  board_build.mcu = stm32f401vet6
 
   ; change MCU frequency
   board_build.f_cpu = 84000000L

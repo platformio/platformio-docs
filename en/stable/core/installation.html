@@ -89,7 +89,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -115,7 +115,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="migration.html">Migrating from 4.x to 5.0</a></li>
@@ -396,7 +395,7 @@ any terminal emulator as long as you’re logged in as the user PlatformIO is
 installed and configured for.</p>
 <p>If you use Bash as your default shell, you can do it by editing either
 <code class="docutils literal notranslate"><span class="pre">~/.profile</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> and adding the following line:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/.platformio/penv/bin
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.platformio/penv/bin
 </pre></div>
 </div>
 <p>If you use Zsh, you can either edit <code class="docutils literal notranslate"><span class="pre">~/.zprofile</span></code> and add the code above, or
@@ -515,18 +514,18 @@ to save data in JSON format:</p>
 environment <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable and <code class="docutils literal notranslate"><span class="pre">platformio</span></code> command will be available without
 a full path.</p>
 <p>Example of <code class="docutils literal notranslate"><span class="pre">pioinstaller-state.json</span></code> run on macOS:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;cache_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/.cache&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;core_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;core_version&quot;</span><span class="p">:</span> <span class="s2">&quot;4.3.1&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;installer_version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;is_develop_core&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-  <span class="nt">&quot;penv_bin_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/penv/bin&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;penv_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/penv&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;platformio_exe&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/platformio&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;python_exe&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/python&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;system&quot;</span><span class="p">:</span> <span class="s2">&quot;darwin_x86_64&quot;</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;cache_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/.cache&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;core_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;core_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4.3.1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;installer_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;is_develop_core&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;penv_bin_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;penv_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;platformio_exe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/platformio&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;python_exe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/python&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;system&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;darwin_x86_64&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -602,7 +601,7 @@ refer to <a class="reference internal" href="../faq.html#faq"><span class="std s
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -617,8 +616,7 @@ refer to <a class="reference internal" href="../faq.html#faq"><span class="std s
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -636,23 +634,13 @@ refer to <a class="reference internal" href="../faq.html#faq"><span class="std s
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -688,6 +676,7 @@ refer to <a class="reference internal" href="../faq.html#faq"><span class="std s
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -702,7 +691,7 @@ refer to <a class="reference internal" href="../faq.html#faq"><span class="std s
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

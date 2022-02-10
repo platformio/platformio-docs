@@ -14,6 +14,8 @@
 Atmel megaAVR
 =============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/atmelmegaavr <https://registry.platformio.org/platforms/platformio/atmelmegaavr>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``atmelmegaavr``
 
@@ -78,19 +80,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-megaavr <https://github.com/arduino/ArduinoCore-megaavr.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-megaavr <https://registry.platformio.org/tools/platformio/framework-arduino-megaavr>`__
       - Arduino Wiring-based Framework for Microchip megaAVR microcontrollers
 
-    * - `framework-arduino-megaavr-megacorex <https://github.com/MCUdude/MegaCoreX.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-megaavr-megacorex <https://registry.platformio.org/tools/platformio/framework-arduino-megaavr-megacorex>`__
       - Arduino Wiring-based Framework for Microchip megaAVR microcontrollers (MegaCoreX)
 
-    * - `framework-arduino-megaavr-megatinycore <https://github.com/SpenceKonde/megaTinyCore.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-megaavr-megatinycore <https://registry.platformio.org/tools/platformio/framework-arduino-megaavr-megatinycore>`__
       - Arduino Wiring-based Framework for Microchip tinyAVR 0-series and 1-series chips (megaTinyCore)
 
-    * - `tool-avrdude-megaavr <http://savannah.nongnu.org/projects/avrdude?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-avrdude-megaavr <https://registry.platformio.org/tools/platformio/tool-avrdude-megaavr>`__
       - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of megaAVR microcontrollers
 
-    * - `toolchain-atmelavr <https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-atmelavr <https://registry.platformio.org/tools/platformio/toolchain-atmelavr>`__
       - GCC Toolchain for Microchip AVR microcontrollers
 
 .. warning::
@@ -122,8 +124,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

@@ -62,7 +62,7 @@ For more examples, see :ref:`projectconf_examples`.
         SPI
         Wire
     lib_deps_external =
-        ArduinoJson@~5.6,!=5.4
+        bblanchon/ArduinoJson @ ~5.6,!=5.4
         https://github.com/gioblu/PJON.git#v2.0
         IRremoteESP8266=https://github.com/markszabo/IRremoteESP8266/archive/master.zip
 
@@ -82,8 +82,8 @@ For more examples, see :ref:`projectconf_examples`.
         ${env.lib_deps_builtin}
         ${env.lib_deps_external}
         https://github.com/me-no-dev/ESPAsyncTCP.git
-        PubSubClient@2.6
-        OneWire
+        knolleary/PubSubClient@^2.8
+        paulstoffregen/OneWire
 
     ; Serial Monitor options
     monitor_speed = 115200

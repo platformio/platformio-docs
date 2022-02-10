@@ -61,7 +61,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -171,10 +171,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#espotel">Espotel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#espressif">Espressif</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fysetc">FYSETC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#franzininho">Franzininho</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fred">Fred</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#freescale">Freescale</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#generic">Generic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#gigadevice">GigaDevice</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#gimasi">Gimasi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#greenwaves-technologies">GreenWaves Technologies</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#honeylemon">HONEYLemon</a></li>
@@ -190,6 +190,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#leaflabs">LeafLabs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lightup">LightUp</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#linino">Linino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lion-bit">Lion::Bit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lowpowerlab">LowPowerLab</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mh-et-live">MH-ET Live</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mxchip">MXChip</a></li>
@@ -208,7 +209,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#netduino">Netduino</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#nodemcu">NodeMCU</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#nordic">Nordic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#nuclei">Nuclei</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#olimex">OLIMEX</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#oshchip">OSHChip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">Olimex</a></li>
@@ -310,7 +310,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -551,51 +550,48 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
-<td><p>The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor and are the most capable Bluetooth Smart SoCs on the market.</p></td>
+<td><p>The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/nuclei.html#platform-nuclei"><span class="std std-ref">Nuclei</span></a></p></td>
-<td><p>Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/nxpimxrt.html#platform-nxpimxrt"><span class="std std-ref">NXP i.MX RT</span></a></p></td>
 <td><p>The i.MX RT series of crossover processors features the Arm Cortex-M core, real-time functionality and MCU usability at a cost-effective price.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
 <td><p>The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/openhw.html#platform-openhw"><span class="std std-ref">OpenHW Group</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/openhw.html#platform-openhw"><span class="std std-ref">OpenHW Group</span></a></p></td>
 <td><p>OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
 <td><p>RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/riscv_gap.html#platform-riscv-gap"><span class="std std-ref">RISC-V GAP</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/riscv_gap.html#platform-riscv-gap"><span class="std std-ref">RISC-V GAP</span></a></p></td>
 <td><p>GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/shakti.html#platform-shakti"><span class="std std-ref">Shakti</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/shakti.html#platform-shakti"><span class="std std-ref">Shakti</span></a></p></td>
 <td><p>Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/siliconlabsefm32.html#platform-siliconlabsefm32"><span class="std std-ref">Silicon Labs EFM32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/siliconlabsefm32.html#platform-siliconlabsefm32"><span class="std std-ref">Silicon Labs EFM32</span></a></p></td>
 <td><p>Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
 <td><p>The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
 <td><p>Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/timsp430.html#platform-timsp430"><span class="std std-ref">TI MSP430</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/timsp430.html#platform-timsp430"><span class="std std-ref">TI MSP430</span></a></p></td>
 <td><p>MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/titiva.html#platform-titiva"><span class="std std-ref">TI TIVA</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/titiva.html#platform-titiva"><span class="std std-ref">TI TIVA</span></a></p></td>
 <td><p>Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/wiznet7500.html#platform-wiznet7500"><span class="std std-ref">WIZNet W7500</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/wiznet7500.html#platform-wiznet7500"><span class="std std-ref">WIZNet W7500</span></a></p></td>
 <td><p>The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things</p></td>
 </tr>
 </tbody>
@@ -623,11 +619,11 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a></p></td>
 <td><p>ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/freertos.html#framework-freertos"><span class="std std-ref">FreeRTOS</span></a></p></td>
-<td><p>FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/freedom-e-sdk.html#framework-freedom-e-sdk"><span class="std std-ref">Freedom E SDK</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/freedom-e-sdk.html#framework-freedom-e-sdk"><span class="std std-ref">Freedom E SDK</span></a></p></td>
 <td><p>Open Source Software for Developing on the SiFive Freedom E Platform</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/freertos.html#framework-freertos"><span class="std std-ref">FreeRTOS</span></a></p></td>
+<td><p>FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/gd32vf103-sdk.html#framework-gd32vf103-sdk"><span class="std std-ref">GigaDevice GD32V SDK</span></a></p></td>
 <td><p>GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package</p></td>
@@ -638,11 +634,11 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/kendryte-standalone-sdk.html#framework-kendryte-standalone-sdk"><span class="std std-ref">Kendryte Standalone SDK</span></a></p></td>
 <td><p>Kendryte Standalone SDK without OS support</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
-<td><p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/libopencm3.html#framework-libopencm3"><span class="std std-ref">libopencm3</span></a></p></td>
+<td><p>The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/nuclei-sdk.html#framework-nuclei-sdk"><span class="std std-ref">Nuclei SDK</span></a></p></td>
-<td><p>Open Source Software Development Kit for the Nuclei N/NX processors</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
+<td><p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/pulp-os.html#framework-pulp-os"><span class="std std-ref">PULP OS</span></a></p></td>
 <td><p>PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory</p></td>
@@ -653,26 +649,23 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/pulp-sdk.html#framework-pulp-sdk"><span class="std std-ref">PULP SDK</span></a></p></td>
 <td><p>Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a></p></td>
-<td><p>STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/shakti-sdk.html#framework-shakti-sdk"><span class="std std-ref">Shakti SDK</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/shakti-sdk.html#framework-shakti-sdk"><span class="std std-ref">Shakti SDK</span></a></p></td>
 <td><p>A software development kit for developing applications on Shakti class of processors</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/simba.html#framework-simba"><span class="std std-ref">Simba</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/simba.html#framework-simba"><span class="std std-ref">Simba</span></a></p></td>
 <td><p>Simba is an RTOS and build framework with aims to make embedded programming easy and portable</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/spl.html#framework-spl"><span class="std std-ref">Standard Peripheral Library</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/spl.html#framework-spl"><span class="std std-ref">Standard Peripheral Library</span></a></p></td>
 <td><p>The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a></p></td>
+<td><p>STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/wd-riscv-sdk.html#framework-wd-riscv-sdk"><span class="std std-ref">WD-Firmware</span></a></p></td>
 <td><p>The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
 <td><p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/libopencm3.html#framework-libopencm3"><span class="std std-ref">libopencm3</span></a></p></td>
-<td><p>The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others</p></td>
 </tr>
 </tbody>
 </table>
@@ -3603,6 +3596,40 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="franzininho">
+<h3>Franzininho<a class="headerlink" href="#franzininho" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-franzininho.html#board-espressif32-esp32-s2-franzininho"><span class="std std-ref">Franzininho WiFi Board</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="fred">
 <h3>Fred<a class="headerlink" href="#fred" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
@@ -4393,48 +4420,6 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
-<section id="gigadevice">
-<h3>GigaDevice<a class="headerlink" href="#gigadevice" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Platform</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nuclei/gd32vf103v_eval.html#board-nuclei-gd32vf103v-eval"><span class="std std-ref">GD32VF103V Evaluation Kit</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/nuclei.html#platform-nuclei"><span class="std std-ref">Nuclei</span></a></p></td>
-<td><p>External</p></td>
-<td><p>GD32VF103VBT6</p></td>
-<td><p>108MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nuclei/gd32vf103c_longan_nano.html#board-nuclei-gd32vf103c-longan-nano"><span class="std std-ref">Sipeed Longan Nano</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/nuclei.html#platform-nuclei"><span class="std std-ref">Nuclei</span></a></p></td>
-<td><p>External</p></td>
-<td><p>GD32VF103CBT6</p></td>
-<td><p>108MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="gimasi">
 <h3>Gimasi<a class="headerlink" href="#gimasi" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
@@ -5069,6 +5054,40 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lion-bit">
+<h3>Lion::Bit<a class="headerlink" href="#lion-bit" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">LionBit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -6261,48 +6280,6 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
-<section id="nuclei">
-<h3>Nuclei<a class="headerlink" href="#nuclei" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Platform</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nuclei/gd32vf103v_rvstar.html#board-nuclei-gd32vf103v-rvstar"><span class="std std-ref">GD32VF103V RVStar Kit</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/nuclei.html#platform-nuclei"><span class="std std-ref">Nuclei</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>GD32VF103VBT6</p></td>
-<td><p>108MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nuclei/hbird_eval.html#board-nuclei-hbird-eval"><span class="std std-ref">HummingBird Evaluation Kit</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/nuclei.html#platform-nuclei"><span class="std std-ref">Nuclei</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>HUMMINGBIRD</p></td>
-<td><p>5MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>64KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="olimex">
 <h3>OLIMEX<a class="headerlink" href="#olimex" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
@@ -6421,7 +6398,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/olimexino_stm32f3.html#board-ststm32-olimexino-stm32f3"><span class="std std-ref">Olimex OLIMEXINO-STM32F3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
-<td><p>STM32F303RCT6TR</p></td>
+<td><p>STM32F303RCT6</p></td>
 <td><p>72MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>40KB</p></td>
@@ -6773,7 +6750,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/prntr_v2.html#board-ststm32-prntr-v2"><span class="std std-ref">PrntrBoard V2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
-<td><p>STM32F407RE</p></td>
+<td><p>STM32F407VET6</p></td>
 <td><p>168MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
@@ -7629,7 +7606,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/st3dp001_eval.html#board-ststm32-st3dp001-eval"><span class="std std-ref">3DP001V1 Evaluation board for 3D printer</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
-<td><p>STM32F401VGT6</p></td>
+<td><p>STM32F401VET6</p></td>
 <td><p>84MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
@@ -8429,7 +8406,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_h735ig.html#board-ststm32-disco-h735ig"><span class="std std-ref">STM32H735G-DK Discovery kit</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
-<td><p>STM32H735IGK6U</p></td>
+<td><p>STM32H735IGK6</p></td>
 <td><p>550MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>432KB</p></td>
@@ -9590,10 +9567,10 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/titiva/lptm4c1230c3pm.html#board-titiva-lptm4c1230c3pm"><span class="std std-ref">TI LaunchPad (Tiva C) w/ tm4c123 (80MHz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/titiva/lptm4c123gh6pm.html#board-titiva-lptm4c123gh6pm"><span class="std std-ref">TI LaunchPad (Tiva C) w/ tm4c123 (80MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/titiva.html#platform-titiva"><span class="std std-ref">TI TIVA</span></a></p></td>
 <td><p>On-board</p></td>
-<td><p>LPTM4C1230C3PM</p></td>
+<td><p>LPTM4C123GH6PM</p></td>
 <td><p>80MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
@@ -10260,8 +10237,8 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F407ZGT6</p></td>
-<td><p>72MHz</p></td>
-<td><p>512KB</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
 </tbody>
@@ -11334,7 +11311,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -11349,8 +11326,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -11368,23 +11344,13 @@ system. Please check “Drivers” section for debugging tool below.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -11420,6 +11386,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -11434,7 +11401,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

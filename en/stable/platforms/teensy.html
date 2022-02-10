@@ -61,7 +61,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul class="current">
@@ -87,7 +87,6 @@
 <li class="toctree-l3"><a class="reference internal" href="microchippic32.html">Microchip PIC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nordicnrf51.html">Nordic nRF51</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nordicnrf52.html">Nordic nRF52</a></li>
-<li class="toctree-l3"><a class="reference internal" href="nuclei.html">Nuclei</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxpimxrt.html">NXP i.MX RT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="openhw.html">OpenHW Group</a></li>
@@ -136,7 +135,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -174,8 +172,11 @@
   <section id="teensy">
 <span id="platform-teensy"></span><h1>Teensy<a class="headerlink" href="#teensy" title="Permalink to this headline">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Configuration</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">teensy</span></code></p>
+<dt class="field-odd">Registry</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/teensy">https://registry.platformio.org/platforms/platformio/teensy</a></p>
+</dd>
+<dt class="field-even">Configuration</dt>
+<dd class="field-even"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">teensy</span></code></p>
 </dd>
 </dl>
 <p>Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.</p>
@@ -224,11 +225,11 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 verbose build using <code class="docutils literal notranslate"><span class="pre">-v,</span> <span class="pre">--verbose</span></code> option for <a class="reference internal" href="../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command.</p>
 <p>Example:</p>
 <p>Let’s set optimization for the smallest code</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy_hid_device]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">teensy36</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D TEENSY_OPT_SMALLEST_CODE</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy_hid_device]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy36</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D TEENSY_OPT_SMALLEST_CODE</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -261,11 +262,11 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 </ul>
 <p>A default macro is set to <code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">USB_SERIAL</span></code> if no one is specified.</p>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy_hid_device]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">teensy20</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D USB_RAWHID</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy_hid_device]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy20</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D USB_RAWHID</span><span class="w"></span>
 </pre></div>
 </div>
 <p>See <a class="reference external" href="https://www.pjrc.com/teensy/usb_debug_only.html">Teensy USB Examples</a>.</p>
@@ -276,11 +277,11 @@ using <a class="reference internal" href="../projectconf/section_env_build.html#
 For cases where the GUI tools cannot be used (e.g. headless OS) the native Teensy
 Loader tool is also available in a command line version which can be enabled directly
 in your project configuration, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy36]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">teensy36</span>
-<span class="na">upload_protocol</span> <span class="o">=</span> <span class="s">teensy-cli</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:teensy36]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy36</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy-cli</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -291,11 +292,13 @@ in your project configuration, for example:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/mbed-blink?utm_source=platformio.org&amp;utm_medium=docs">mbed-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/mbed-serial?utm_source=platformio.org&amp;utm_medium=docs">mbed-serial</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/zephyr-blink?utm_source=platformio.org&amp;utm_medium=docs">zephyr-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/mbed-events?utm_source=platformio.org&amp;utm_medium=docs">mbed-events</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/arduino-blink?utm_source=platformio.org&amp;utm_medium=docs">arduino-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/arduino-hid-usb-mouse?utm_source=platformio.org&amp;utm_medium=docs">arduino-hid-usb-mouse</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&amp;utm_medium=docs">arduino-internal-libs</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/mbed-dsp?utm_source=platformio.org&amp;utm_medium=docs">mbed-dsp</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-teensy/tree/master/examples/zephyr-synchronization?utm_source=platformio.org&amp;utm_medium=docs">zephyr-synchronization</a></p></li>
 </ul>
 </section>
 <section id="debugging">
@@ -397,23 +400,23 @@ of Teensy development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
-<span class="k">[env:latest_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
+<span class="k">[env:latest_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 
-<span class="c1">; Custom stable version</span>
-<span class="k">[env:custom_stable]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">teensy@x.y.z</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<span class="c1">; Custom stable version</span><span class="w"></span>
+<span class="k">[env:custom_stable]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy@x.y.z</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="upstream">
 <h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/platformio/platform-teensy.git</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">...</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-teensy.git</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -431,22 +434,37 @@ of Teensy development platform and the latest upstream version using
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://www.arduino.cc/reference/en?utm_source=platformio.org&amp;utm_medium=docs">framework-arduinoteensy</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-arduinoteensy">framework-arduinoteensy</a></p></td>
 <td><p>Arduino Wiring-based Framework for Teensy boards</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="http://mbed.org?utm_source=platformio.org&amp;utm_medium=docs">framework-mbed</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-mbed">framework-mbed</a></p></td>
 <td><p>Arm Mbed OS is a platform operating system designed for the internet of things</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://www.segger.com/downloads/jlink/?utm_source=platformio.org&amp;utm_medium=docs">tool-jlink</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-zephyr">framework-zephyr</a></p></td>
+<td><p>Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-cmake">tool-cmake</a></p></td>
+<td><p>CMake is an open-source, cross-platform family of tools designed to build, test and package software.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-dtc">tool-dtc</a></p></td>
+<td><p>Device tree compiler</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-gperf">tool-gperf</a></p></td>
+<td><p>GNU gperf is a perfect hash function generator</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-jlink">tool-jlink</a></p></td>
 <td><p>Software and Documentation Pack for SEGGER J-Link debug probes</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://www.pjrc.com/teensy/loader.html?utm_source=platformio.org&amp;utm_medium=docs">tool-teensy</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-ninja">tool-ninja</a></p></td>
+<td><p>Ninja is a small build system with a focus on speed</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-teensy">tool-teensy</a></p></td>
 <td><p>Upload tools for Teensy boards</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://gcc.gnu.org/wiki/avr-gcc?utm_source=platformio.org&amp;utm_medium=docs">toolchain-atmelavr</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-atmelavr">toolchain-atmelavr</a></p></td>
 <td><p>GCC Toolchain for Microchip AVR microcontrollers</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&amp;utm_medium=docs">toolchain-gccarmnoneeabi</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi">toolchain-gccarmnoneeabi</a></p></td>
 <td><p>GNU toolchain for Arm Cortex-M and Cortex-R processors</p></td>
 </tr>
 </tbody>
@@ -490,6 +508,9 @@ installation is necessary on Windows 10.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
 <td><p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
+<td><p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -498,8 +519,7 @@ installation is necessary on Windows 10.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
-<a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a></p></li>
+<li><p>You can list pre-configured boards by <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command</p></li>
 <li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by
 horizontally.</p></li>
 </ul>
@@ -661,7 +681,7 @@ horizontally.</p></li>
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -676,8 +696,7 @@ horizontally.</p></li>
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -695,23 +714,13 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -747,6 +756,7 @@ horizontally.</p></li>
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -761,7 +771,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

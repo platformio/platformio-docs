@@ -21,30 +21,22 @@ Usage
 
 .. code-block:: bash
 
-    pio system completion install [OPTIONS]
+    pio system completion install [OPTIONS] [SHELL]
 
 
 Description
 -----------
 
-Install shell completion files or code.
+Install tab completion support for:
+
+* `fish <https://fishshell.com/>`__
+* `zsh <http://www.zsh.org/>`__
+* `bash <https://www.gnu.org/software/bash>`__
 
 Options
 ~~~~~~~
 
 .. program:: pio system completion install
-
-.. option::
-    --shell
-
-The shell type, default is ``auto`` and will be detected from a current shell session.
-
-Supported shells are:
-
-* `fish <https://fishshell.com/>`__
-* `zsh <http://www.zsh.org/>`__
-* `bash <https://www.gnu.org/software/bash>`__
-* `powershell <https://msdn.microsoft.com/en-us/powershell/mt173057.aspx>`__
 
 .. option::
     --path

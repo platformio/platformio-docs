@@ -68,7 +68,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -94,7 +94,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -181,57 +180,57 @@ environments, please take a look at <strong>“Global scope”</strong> in
 allows extending of other sections.</p>
 </div>
 <p><strong>Example:</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; COMMON options</span>
-<span class="c1">; Each &quot;[env:***]&quot; extends this &quot;[env]&quot; by default</span>
-<span class="k">[env]</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-D VERSION=1.2.3</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; COMMON options</span><span class="w"></span>
+<span class="c1">; Each &quot;[env:***]&quot; extends this &quot;[env]&quot; by default</span><span class="w"></span>
+<span class="k">[env]</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D VERSION=1.2.3</span><span class="w"></span>
 
-<span class="c1">; CUSTOM options</span>
-<span class="c1">; You need manually inject these options into a section</span>
-<span class="c1">; using ${extra.&lt;name_of_option&gt;} (see below)</span>
-<span class="k">[extra]</span>
-<span class="na">lib_deps_builtin</span> <span class="o">=</span>
-  <span class="na">SPI</span>
-  <span class="na">Wire</span>
-<span class="na">lib_deps_external</span> <span class="o">=</span>
-  <span class="na">bblanchon/ArduinoJson@&gt;5.6.0</span>
+<span class="c1">; CUSTOM options</span><span class="w"></span>
+<span class="c1">; You need manually inject these options into a section</span><span class="w"></span>
+<span class="c1">; using ${extra.&lt;name_of_option&gt;} (see below)</span><span class="w"></span>
+<span class="k">[extra]</span><span class="w"></span>
+<span class="na">lib_deps_builtin</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">SPI</span><span class="w"></span>
+<span class="w">  </span><span class="na">Wire</span><span class="w"></span>
+<span class="na">lib_deps_external</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">bblanchon/ArduinoJson@&gt;5.6.0</span><span class="w"></span>
 
-<span class="k">[env:uno]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-  <span class="na">${extra.lib_deps_builtin}</span>
-  <span class="na">${extra.lib_deps_external}</span>
+<span class="k">[env:uno]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
+<span class="w">  </span><span class="na">${extra.lib_deps_external}</span><span class="w"></span>
 
-<span class="k">[env:nodemcuv2]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">${env.build_flags} -Wall</span>
-<span class="na">lib_deps</span> <span class="o">=</span>
-  <span class="na">${extra.lib_deps_builtin}</span>
-  <span class="na">${extra.lib_deps_external}</span>
-  <span class="na">knolleary/PubSubClient @ ~2.6</span>
-  <span class="na">paulstoffregen/OneWire @ ^2.3.5</span>
+<span class="k">[env:nodemcuv2]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.build_flags} -Wall</span><span class="w"></span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
+<span class="w">  </span><span class="na">${extra.lib_deps_external}</span><span class="w"></span>
+<span class="w">  </span><span class="na">knolleary/PubSubClient @ ~2.6</span><span class="w"></span>
+<span class="w">  </span><span class="na">paulstoffregen/OneWire @ ^2.3.5</span><span class="w"></span>
 
-<span class="c1">; Keep sensitive data in environment variables</span>
-<span class="c1">;</span>
-<span class="c1">; Unix</span>
-<span class="c1">; export WIFI_SSID=&#39;\&quot;my\ ssid\ name\&quot;&#39;</span>
-<span class="c1">; export WIFI_PASS=&#39;\&quot;my\ password\&quot;&#39;</span>
-<span class="c1">;</span>
-<span class="c1">; Windows</span>
-<span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span>
-<span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span>
+<span class="c1">; Keep sensitive data in environment variables</span><span class="w"></span>
+<span class="c1">;</span><span class="w"></span>
+<span class="c1">; Unix</span><span class="w"></span>
+<span class="c1">; export WIFI_SSID=&#39;\&quot;my\ ssid\ name\&quot;&#39;</span><span class="w"></span>
+<span class="c1">; export WIFI_PASS=&#39;\&quot;my\ password\&quot;&#39;</span><span class="w"></span>
+<span class="c1">;</span><span class="w"></span>
+<span class="c1">; Windows</span><span class="w"></span>
+<span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span><span class="w"></span>
+<span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span><span class="w"></span>
 
-<span class="k">[env:esp32dev]</span>
-<span class="na">extends</span> <span class="o">=</span> <span class="s">env:nodemcuv2</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif32</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">esp32dev</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">${env.build_flags}</span>
-  <span class="na">-DWIFI_SSID</span><span class="o">=</span><span class="s">${sysenv.WIFI_SSID}</span>
-  <span class="na">-DWIFI_PASS</span><span class="o">=</span><span class="s">${sysenv.WIFI_PASS}</span>
+<span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">extends</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">env:nodemcuv2</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">${env.build_flags}</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DWIFI_SSID</span><span class="o">=</span><span class="s">${sysenv.WIFI_SSID}</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DWIFI_PASS</span><span class="o">=</span><span class="s">${sysenv.WIFI_PASS}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -281,7 +280,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -296,8 +295,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -315,23 +313,13 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -367,6 +355,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -381,7 +370,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

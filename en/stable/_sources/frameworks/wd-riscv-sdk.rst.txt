@@ -19,12 +19,25 @@ WD-Firmware
 
 The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
 
-For more detailed information please visit `vendor site <https://github.com/westerndigitalcorporation/riscv-fw-infrastructure?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1
+
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_chipsalliance`
+      - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
+
+Examples
+--------
+
+* `WD-Firmware for CHIPS Alliance <https://github.com/platformio/platform-chipsalliance/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -72,28 +85,11 @@ You do not need to use/buy external debug probe.
       - 1.16MB
 
 
-Examples
---------
-
-* `WD-Firmware for CHIPS Alliance <https://github.com/platformio/platform-chipsalliance/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_chipsalliance`
-      - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
-
 Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 Digilent

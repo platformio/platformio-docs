@@ -93,7 +93,7 @@ Type: ``FilePath`` | Multiple: ``Yes``
 
 A list of PRE and POST extra scripts.
 
-See details and examples in :ref:`projectconf_advanced_scripting` section.
+See details and examples in :ref:`scripting` section.
 
 If you plan to share these scripts with :ref:`pioremote` machine, please
 put them to :ref:`projectconf_pio_shared_dir`.

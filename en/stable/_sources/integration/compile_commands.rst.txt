@@ -28,7 +28,7 @@ contains structured data about every compilation unit in your project.
 
 
 A default path for ``compile_commands.json`` is ":ref:`projectconf_pio_build_dir`/envname".
-You can override this path with :ref:`projectconf_advanced_scripting` and
+You can override this path with :ref:`scripting` and
 ``COMPILATIONDB_PATH`` environment variable. For example, generate ``compile_commands.json``
 in a root of project:
 

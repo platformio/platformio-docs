@@ -84,7 +84,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -110,7 +110,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -263,30 +262,30 @@ commas, it is split into multiple options at the commas.</p></td>
 <li><p><a class="reference external" href="https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html">Options for Directory Search</a></p></li>
 </ul>
 <p>Examples:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:specific_defines]</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DFOO -DBAR</span><span class="o">=</span><span class="s">1</span>
-  <span class="na">-D BUILD_ENV_NAME</span><span class="o">=</span><span class="s">$PIOENV</span>
-  <span class="na">-D CURRENT_TIME</span><span class="o">=</span><span class="s">$UNIX_TIME</span>
-  <span class="na">-DFLOAT_VALUE</span><span class="o">=</span><span class="s">1.23457e+07</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:specific_defines]</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DFOO -DBAR</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
+<span class="w">  </span><span class="na">-D BUILD_ENV_NAME</span><span class="o">=</span><span class="s">$PIOENV</span><span class="w"></span>
+<span class="w">  </span><span class="na">-D CURRENT_TIME</span><span class="o">=</span><span class="s">$UNIX_TIME</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DFLOAT_VALUE</span><span class="o">=</span><span class="s">1.23457e+07</span><span class="w"></span>
 
-<span class="k">[env:string_defines]</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-DHELLO</span><span class="o">=</span><span class="s">&quot;World!&quot;</span>
-  <span class="na">&#39;-DWIFI_PASS</span><span class="o">=</span><span class="s">&quot;My password&quot;&#39;</span>
-  <span class="c1">; Password with special chars: My pass&#39;word</span>
-  <span class="na">-DWIFI_PASS</span><span class="o">=</span><span class="s">\&quot;My\ pass\&#39;word\&quot;</span>
+<span class="k">[env:string_defines]</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DHELLO</span><span class="o">=</span><span class="s">&quot;World!&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="na">&#39;-DWIFI_PASS</span><span class="o">=</span><span class="s">&quot;My password&quot;&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">; Password with special chars: My pass&#39;word</span><span class="w"></span>
+<span class="w">  </span><span class="na">-DWIFI_PASS</span><span class="o">=</span><span class="s">\&quot;My\ pass\&#39;word\&quot;</span><span class="w"></span>
 
-<span class="k">[env:specific_inclibs]</span>
-<span class="na">build_flags</span> <span class="o">=</span>
-  <span class="na">-I/opt/include</span>
-  <span class="na">-L/opt/lib</span>
-  <span class="na">-lfoo</span>
+<span class="k">[env:specific_inclibs]</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">-I/opt/include</span><span class="w"></span>
+<span class="w">  </span><span class="na">-L/opt/lib</span><span class="w"></span>
+<span class="w">  </span><span class="na">-lfoo</span><span class="w"></span>
 
-<span class="k">[env:ignore_incremental_builds]</span>
-<span class="c1">; We dynamically change the value of &quot;LAST_BUILD_TIME&quot; macro,</span>
-<span class="c1">; PlatformIO will not cache objects</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-DLAST_BUILD_TIME=$UNIX_TIME</span>
+<span class="k">[env:ignore_incremental_builds]</span><span class="w"></span>
+<span class="c1">; We dynamically change the value of &quot;LAST_BUILD_TIME&quot; macro,</span><span class="w"></span>
+<span class="c1">; PlatformIO will not cache objects</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DLAST_BUILD_TIME=$UNIX_TIME</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -333,22 +332,22 @@ building/uploading process.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you need more advanced control and would like to apply changes to
-a PlatformIO Build System environment, please refer to <a class="reference internal" href="advanced_scripting.html#projectconf-advanced-scripting"><span class="std std-ref">Advanced Scripting</span></a>.</p>
+a PlatformIO Build System environment, please refer to <a class="reference internal" href="../scripting/index.html#scripting"><span class="std std-ref">Advanced Scripting</span></a>.</p>
 </div>
 <p>Example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:generate_flags_with_external_command]</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">!cmd_or_path_to_script</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:generate_flags_with_external_command]</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">!cmd_or_path_to_script</span><span class="w"></span>
 
-<span class="c1">; Unix only, get output from internal command</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">!echo &quot;-DSOME_MACRO=&quot;$(some_cmd arg1 --option1)</span>
+<span class="c1">; Unix only, get output from internal command</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">!echo &quot;-DSOME_MACRO=&quot;$(some_cmd arg1 --option1)</span><span class="w"></span>
 </pre></div>
 </div>
 <p><strong>Use Case: Create a “PIO_SRC_REV” macro with the latest Git revision</strong></p>
 <p>This example includes a separate file named <code class="docutils literal notranslate"><span class="pre">git_rev_macro.py</span></code>, to be placed
 in the same directory as <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:git_revision_macro]</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">!python git_rev_macro.py</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:git_revision_macro]</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">!python git_rev_macro.py</span><span class="w"></span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">git_rev_macro.py</span></code>:</p>
@@ -377,9 +376,9 @@ but will be applied only for project source files in the
 <span id="projectconf-build-unflags"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">build_unflags</span></code></a><a class="headerlink" href="#build-unflags" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Selectively remove base/initial flags that were set by the development platform.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:unflags]</span>
-<span class="na">build_unflags</span> <span class="o">=</span> <span class="s">-Os -std=gnu++11</span>
-<span class="na">build_flags</span> <span class="o">=</span> <span class="s">-O2</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:unflags]</span><span class="w"></span>
+<span class="na">build_unflags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-Os -std=gnu++11</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-O2</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -416,8 +415,8 @@ targets.</p>
 upload the firmware, and start <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmd-device-monitor"><span class="std std-ref">Serial Monitor</span></a>
 automatically:</p>
 <blockquote>
-<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upload_and_monitor]</span>
-<span class="na">targets</span> <span class="o">=</span> <span class="s">upload, monitor</span>
+<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upload_and_monitor]</span><span class="w"></span>
+<span class="na">targets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">upload, monitor</span><span class="w"></span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -473,7 +472,7 @@ pio run --target envdump
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -488,8 +487,7 @@ pio run --target envdump
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -507,23 +505,13 @@ pio run --target envdump
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -559,6 +547,7 @@ pio run --target envdump
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -573,7 +562,7 @@ pio run --target envdump
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

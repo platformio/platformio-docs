@@ -61,7 +61,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projectconf/advanced_scripting.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -120,7 +120,6 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../articles.html">Articles about us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
@@ -303,9 +302,9 @@ activated automatically. See example below.</p>
 <div><ul class="simple">
 <li><p>Set <code class="docutils literal notranslate"><span class="pre">test_transport</span> <span class="pre">=</span> <span class="pre">custom</span></code> in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
 </ul>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:mycustomtransport]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">native</span>
-<span class="na">test_transport</span> <span class="o">=</span> <span class="s">custom</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:mycustomtransport]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
+<span class="na">test_transport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -346,36 +345,36 @@ implement prototypes above</p></li>
 <ol class="arabic">
 <li><p>Create PlatformIO project using the <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> command. For Desktop Unit
 Testing (on a host machine), you need to use <a class="reference internal" href="../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a>.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; PlatformIO Project Configuration File</span>
-<span class="c1">;</span>
-<span class="c1">;   Build options: build flags, source filter, extra scripting</span>
-<span class="c1">;   Upload options: custom port, speed and extra flags</span>
-<span class="c1">;   Library options: dependencies, extra library storages</span>
-<span class="c1">;</span>
-<span class="c1">; Please visit documentation for the other options and examples</span>
-<span class="c1">; https://docs.platformio.org/page/projectconf.html</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; PlatformIO Project Configuration File</span><span class="w"></span>
+<span class="c1">;</span><span class="w"></span>
+<span class="c1">;   Build options: build flags, source filter, extra scripting</span><span class="w"></span>
+<span class="c1">;   Upload options: custom port, speed and extra flags</span><span class="w"></span>
+<span class="c1">;   Library options: dependencies, extra library storages</span><span class="w"></span>
+<span class="c1">;</span><span class="w"></span>
+<span class="c1">; Please visit documentation for the other options and examples</span><span class="w"></span>
+<span class="c1">; https://docs.platformio.org/page/projectconf.html</span><span class="w"></span>
 
-<span class="c1">;</span>
-<span class="c1">; Embedded platforms</span>
-<span class="c1">;</span>
+<span class="c1">;</span><span class="w"></span>
+<span class="c1">; Embedded platforms</span><span class="w"></span>
+<span class="c1">;</span><span class="w"></span>
 
-<span class="k">[env:uno]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">atmelavr</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">uno</span>
+<span class="k">[env:uno]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
 
-<span class="k">[env:nodemcu]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">espressif8266</span>
-<span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
-<span class="na">board</span> <span class="o">=</span> <span class="s">nodemcuv2</span>
+<span class="k">[env:nodemcu]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
 
-<span class="c1">;</span>
-<span class="c1">; Desktop platforms (Win, Mac, Linux, Raspberry Pi, etc)</span>
-<span class="c1">; See https://platformio.org/platforms/native</span>
-<span class="c1">;</span>
+<span class="c1">;</span><span class="w"></span>
+<span class="c1">; Desktop platforms (Win, Mac, Linux, Raspberry Pi, etc)</span><span class="w"></span>
+<span class="c1">; See https://platformio.org/platforms/native</span><span class="w"></span>
+<span class="c1">;</span><span class="w"></span>
 
-<span class="k">[env:native]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">native</span>
+<span class="k">[env:native]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -420,9 +419,9 @@ and the main program using <code class="docutils literal notranslate"><span clas
 </li>
 <li><p>Manually instruct PlatformIO to build source code from <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>
 folder using <a class="reference internal" href="../projectconf/section_env_test.html#projectconf-test-build-project-src"><span class="std std-ref">test_build_project_src</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
-<span class="na">platform</span> <span class="o">=</span> <span class="s">...</span>
-<span class="na">test_build_project_src</span> <span class="o">=</span> <span class="s">true</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">test_build_project_src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span><span class="w"></span>
 </pre></div>
 </div>
 <p>This is very useful if you unit test independent libraries where you
@@ -586,7 +585,7 @@ or <code class="docutils literal notranslate"><span class="pre">setup()</span> <
       <div>\
         <ul class="nav navbar-nav">\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket fa-lg"></i>Get Started<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
@@ -601,8 +600,7 @@ or <code class="docutils literal notranslate"><span class="pre">setup()</span> <
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lightbulb-o fa-lg"></i>\
-              Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
@@ -620,23 +618,13 @@ or <code class="docutils literal notranslate"><span class="pre">setup()</span> <
               <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li class="dropdown">\
-            <a role="button" data-target="#" href="https://platformio.org/lib" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>Registry<span class="caret"></span>\
-            </a>\
-            <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://platformio.org/lib"><i class="fa fa-code"></i>Libraries</a></li>\
-              <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://platformio.org/platforms"><i class="fa fa-laptop"></i>Platforms</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/frameworks"><i class="fa fa-cog"></i>Frameworks</a></li>\
-              <li role="menuitem"><a href="https://platformio.org/boards"><i class="fa fa-microchip"></i>Boards</a></li>\
-            </ul>\
-          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
-          <li class="active"><a href="https://docs.platformio.org"><i class="fa fa-book fa-lg"></i>Docs</a></li>\
-          <li><a href="https://community.platformio.org/"><i class="fa fa-comments-o fa-lg"></i>Community</a></li>\
-          <li><a href="https://platformio.org/support"><i class="fa fa-question-circle fa-lg"></i>Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-heart-o fa-lg"></i>TECHNOLOGY</a></li>\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -672,6 +660,7 @@ or <code class="docutils literal notranslate"><span class="pre">setup()</span> <
     });
   })();
 </script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 <script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
 
 
@@ -686,7 +675,7 @@ or <code class="docutils literal notranslate"><span class="pre">setup()</span> <
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.3 (stable)
+    v5.2.5 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

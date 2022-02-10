@@ -14,6 +14,8 @@
 Raspberry Pi RP2040
 ===================
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/raspberrypi <https://registry.platformio.org/platforms/platformio/raspberrypi>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``raspberrypi``
 
@@ -125,19 +127,19 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-mbed <https://www.arduino.cc/reference/en?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-mbed <https://registry.platformio.org/tools/platformio/framework-arduino-mbed>`__
       - Arduino framework supporting mbed-enabled boards
 
-    * - `tool-jlink <https://www.segger.com/downloads/jlink/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-jlink <https://registry.platformio.org/tools/platformio/tool-jlink>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
 
-    * - `tool-openocd-raspberrypi <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd-raspberrypi <https://registry.platformio.org/tools/platformio/tool-openocd-raspberrypi>`__
       - Open On-Chip Debugger for Raspberry Pi MCUs
 
-    * - `tool-rp2040tools <https://github.com/arduino/ArduinoCore-mbed?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-rp2040tools <https://registry.platformio.org/tools/platformio/tool-rp2040tools>`__
       - Tools for interacting with a RP2040 device in BOOTSEL mode or with a RP2040 binary
 
-    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
@@ -169,8 +171,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 
