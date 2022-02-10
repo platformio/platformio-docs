@@ -14,8 +14,6 @@
 pio access
 ==========
 
-.. versionadded:: 5.0
-
 Set access level on published resources (packages) in the registry.
 
 You must have privileges to set the access of a resource:

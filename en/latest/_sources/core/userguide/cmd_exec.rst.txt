@@ -14,6 +14,8 @@
 pio exec
 ========
 
+.. versionadded:: 5.2.5
+
 .. contents::
 
 Usage
