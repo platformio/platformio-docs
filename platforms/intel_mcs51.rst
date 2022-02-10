@@ -14,6 +14,8 @@
 Intel MCS-51 (8051)
 ===================
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/intel_mcs51 <https://registry.platformio.org/platforms/platformio/intel_mcs51>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``intel_mcs51``
 
@@ -76,10 +78,10 @@ Packages
     * - Name
       - Description
 
-    * - `tool-stcgal <https://github.com/grigorig/stcgal.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-stcgal <https://registry.platformio.org/tools/platformio/tool-stcgal>`__
       - Open Source STC MCU ISP flash tool
 
-    * - `toolchain-sdcc <http://sdcc.sourceforge.net?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-sdcc <https://registry.platformio.org/tools/platformio/toolchain-sdcc>`__
       - Small Device C compiler suite
 
 .. warning::
@@ -100,8 +102,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

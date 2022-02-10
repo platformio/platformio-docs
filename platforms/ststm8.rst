@@ -14,6 +14,8 @@
 ST STM8
 =======
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/ststm8 <https://registry.platformio.org/platforms/platformio/ststm8>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``ststm8``
 
@@ -178,25 +180,25 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoststm8 <https://tenbaht.github.io/sduino/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduinoststm8 <https://registry.platformio.org/tools/platformio/framework-arduinoststm8>`__
       - An Arduino-like programming API for the STM8 microcontrollers
 
-    * - `framework-ststm8spl <https://www.st.com/en/embedded-software/stsw-stm8069.html?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-ststm8spl <https://registry.platformio.org/tools/platformio/framework-ststm8spl>`__
       - Standard peripheral library for ST STM8S/A microcontrollers
 
-    * - `tool-openocd <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd <https://registry.platformio.org/tools/platformio/tool-openocd>`__
       - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
 
-    * - `tool-stm8binutils <https://stm8-binutils-gdb.sourceforge.io/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-stm8binutils <https://registry.platformio.org/tools/platformio/tool-stm8binutils>`__
       - STM8 toolchain with GDB debugger
 
-    * - `tool-stm8flash <https://github.com/vdudouyt/stm8flash.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-stm8flash <https://registry.platformio.org/tools/platformio/tool-stm8flash>`__
       - stm8flash is an application for programing stm8 devices with SWIM/stlinkv(1,2).
 
-    * - `tool-stm8gal <https://github.com/gicking/stm8gal.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-stm8gal <https://registry.platformio.org/tools/platformio/tool-stm8gal>`__
       - stm8gal is an application for programming or reading out STM8 memory using the built-in ROM bootloader (BSL) via UART or SPI interface
 
-    * - `toolchain-sdcc <http://sdcc.sourceforge.net?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-sdcc <https://registry.platformio.org/tools/platformio/toolchain-sdcc>`__
       - Small Device C compiler suite
 
 .. warning::
@@ -231,8 +233,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

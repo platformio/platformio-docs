@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `Controllino <https://www.controllino.com/product/controllino-mini/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Controllino <https://controllino.biz/controllino/mini/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

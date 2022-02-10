@@ -19,12 +19,25 @@ Shakti SDK
 
 A software development kit for developing applications on Shakti class of processors
 
-For more detailed information please visit `vendor site <https://gitlab.com/shaktiproject/software/shakti-sdk?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1
+
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_shakti`
+      - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
+
+Examples
+--------
+
+* `Shakti SDK for Shakti <https://github.com/platformio/platform-shakti/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -96,28 +109,11 @@ You do not need to use/buy external debug probe.
       - 128MB
 
 
-Examples
---------
-
-* `Shakti SDK for Shakti <https://github.com/platformio/platform-shakti/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_shakti`
-      - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
-
 Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 Xilinx

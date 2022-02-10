@@ -14,6 +14,8 @@
 ASR Microelectronics ASR650x
 ============================
 
+:Registry:
+  `https://registry.platformio.org/platforms/heltecautomation/asrmicro650x <https://registry.platformio.org/platforms/heltecautomation/asrmicro650x>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``asrmicro650x``
 
@@ -79,19 +81,16 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinoasrmicro <https://github.com/HelTecAutomation/CubeCell-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
-      - Arduino Wiring-based Framework for ASR Microelectronics (Heltec core)
+    * - `framework-arduinoasrmicro650x <https://registry.platformio.org/tools/heltecautomation/framework-arduinoasrmicro650x>`__
+      - Arduino Wiring-based Framework for ASR Microelectronics ASR650x (Heltec core)
 
-    * - `tool-cubecellelftool <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cubecellelftool <https://registry.platformio.org/tools/heltecautomation/tool-cubecellelftool>`__
       - CubeCell ELF tool
 
-    * - `tool-cubecellflash <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-cubecellflash <https://registry.platformio.org/tools/heltecautomation/tool-cubecellflash>`__
       - CubeCell Flash tool
 
-    * - `tool-cubecellflash6601 <https://github.com/HelTecAutomation/ASR650x-Arduino.git?utm_source=platformio.org&utm_medium=docs>`__
-      - CubeCell Flash tool for ASR6601
-
-    * - `toolchain-gccarmnoneeabi <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
 
 .. warning::
@@ -123,8 +122,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 
@@ -158,12 +156,6 @@ Heltec
       - 48MHz
       - 128KB
       - 16KB
-    * - :ref:`board_asrmicro650x_cubecell_board_pro`
-      - No
-      - ASR6601
-      - 48MHz
-      - 224KB
-      - 224KB
     * - :ref:`board_asrmicro650x_cubecell_board_plus`
       - No
       - ASR6502

@@ -522,8 +522,27 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     left: 0;
   }
 }
+.badge {
+   display: inline-block;
+   min-width: 10px;
+   padding: 3px 7px;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 1;
+   color: #fff;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   background-color: #777;
+   border-radius: 10px;
+}
 
 /* Misc */
+
+.nav .badge {
+  background-color: #5cb85c;
+  margin-left: 5px;
+}
 
 .wy-nav-content {
   max-width: 1000px !important;

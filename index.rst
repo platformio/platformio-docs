@@ -48,7 +48,7 @@ Contents
 
     platformio.ini <projectconf/index>
     envvars
-    projectconf/advanced_scripting
+    scripting/index
 
 .. toctree::
     :caption: Instruments

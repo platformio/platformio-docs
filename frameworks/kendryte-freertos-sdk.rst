@@ -19,12 +19,25 @@ Kendryte FreeRTOS SDK
 
 Kendryte SDK with FreeRTOS support
 
-For more detailed information please visit `vendor site <https://github.com/kendryte/kendryte-freertos-sdk?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1
+
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_kendryte210`
+      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
+
+Examples
+--------
+
+* `Kendryte FreeRTOS SDK for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -103,28 +116,11 @@ Please click on board name for the further details.
       - 6MB
 
 
-Examples
---------
-
-* `Kendryte FreeRTOS SDK for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
-
 Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 Sipeed

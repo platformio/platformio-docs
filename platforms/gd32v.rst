@@ -14,6 +14,8 @@
 GigaDevice GD32V
 ================
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/gd32v <https://registry.platformio.org/platforms/platformio/gd32v>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``gd32v``
 
@@ -136,22 +138,22 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-gd32v <https://github.com/sipeed/Maixduino.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduino-gd32v <https://registry.platformio.org/tools/platformio/framework-arduino-gd32v>`__
       - Arduino Wiring-based Framework for GigaDevice GD32V microcontrollers
 
-    * - `framework-gd32vf103-sdk <https://www.riscv-mcu.com/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-gd32vf103-sdk <https://registry.platformio.org/tools/platformio/framework-gd32vf103-sdk>`__
       - GigaDevice GD32VF103 Firmware Library
 
-    * - `tool-dfuutil <http://dfu-util.sourceforge.net/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-dfuutil <https://registry.platformio.org/tools/platformio/tool-dfuutil>`__
       - Device Firmware Upgrade Utilities
 
-    * - `tool-gd32vflash <https://github.com/riscv-mcu/gd32-dfu-utils.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-gd32vflash <https://registry.platformio.org/tools/platformio/tool-gd32vflash>`__
       - GigaDevice GD32V Flash tools
 
-    * - `tool-openocd-gd32v <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd-gd32v <https://registry.platformio.org/tools/platformio/tool-openocd-gd32v>`__
       - Open On-Chip Debugger branch with RISC-V GigaDevice GD32V support
 
-    * - `toolchain-gd32v <https://github.com/riscv-mcu/riscv-gnu-toolchain?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-gd32v <https://registry.platformio.org/tools/platformio/toolchain-gd32v>`__
       - GCC Toolchain for GigaDevice GD32V microcontrollers
 
 .. warning::
@@ -186,8 +188,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

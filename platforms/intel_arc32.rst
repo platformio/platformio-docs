@@ -14,6 +14,8 @@
 Intel ARC32
 ===========
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/intel_arc32 <https://registry.platformio.org/platforms/platformio/intel_arc32>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``intel_arc32``
 
@@ -76,13 +78,13 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduinointel <https://github.com/01org/corelibs-arduino101.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-arduinointel <https://registry.platformio.org/tools/platformio/framework-arduinointel>`__
       - Arduino Wiring-based Framework Intel ARC32 processor
 
-    * - `tool-arduino101load <https://github.com/01org/intel-arduino-tools.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-arduino101load <https://registry.platformio.org/tools/platformio/tool-arduino101load>`__
       - Genuino101 uploader tool
 
-    * - `toolchain-intelarc32 <https://embarc.org/toolchain/?utm_source=platformio.org&utm_medium=docs>`__
+    * - `toolchain-intelarc32 <https://registry.platformio.org/tools/platformio/toolchain-intelarc32>`__
       - GCC for Intel ARC processor
 
 .. warning::
@@ -114,8 +116,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

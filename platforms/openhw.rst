@@ -14,6 +14,8 @@
 OpenHW Group
 ============
 
+:Registry:
+  `https://registry.platformio.org/platforms/platformio/openhw <https://registry.platformio.org/platforms/platformio/openhw>`__
 :Configuration:
   :ref:`projectconf_env_platform` = ``openhw``
 
@@ -122,22 +124,22 @@ Packages
     * - Name
       - Description
 
-    * - `framework-pulp-runtime <https://github.com/pulp-platform/pulp-runtime.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-pulp-runtime <https://registry.platformio.org/tools/platformio/framework-pulp-runtime>`__
       - Runtime Environment for Parallel Ultra Low Power platform
 
-    * - `framework-pulp-sdk <https://github.com/pulp-platform/pulp-sdk.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `framework-pulp-sdk <https://registry.platformio.org/tools/platformio/framework-pulp-sdk>`__
       - Software Development Kit for Parallel Ultra Low Power platform
 
-    * - `tool-openocd-riscv-pulp <http://openocd.org?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-openocd-riscv-pulp <https://registry.platformio.org/tools/platformio/tool-openocd-riscv-pulp>`__
       - Fork of Open On-Chip Debugger that has RISC-V support for PULP platform
 
-    * - `tool-ovpsim-corev <https://github.com/openhwgroup/riscv-ovpsim-corev.git?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-ovpsim-corev <https://registry.platformio.org/tools/platformio/tool-ovpsim-corev>`__
       - Imperas RISC-V OVPsim CORE-V simulator provides a reference of the OpenHW Group CORE-V processor cores. The riscvOVPsim familiy of simulators implement the full and complete functionality of the RISC-V Foundation's public User and Privilege specifications.
 
-    * - `tool-renode <https://renode.io?utm_source=platformio.org&utm_medium=docs>`__
+    * - `tool-renode <https://registry.platformio.org/tools/platformio/tool-renode>`__
       - Renode is a development framework which accelerates IoT and embedded systems development by letting you simulate physical hardware systems
 
-    * - `toolchain-riscv-pulp <https://www.embecosm.com/resources/tool-chain-downloads/?utm_source=platformio.org&utm_medium=docs#pulp>`__
+    * - `toolchain-riscv-pulp <https://registry.platformio.org/tools/platformio/toolchain-riscv-pulp>`__
       - GNU toolchain for RISC-V (PULP platform)
 
 .. warning::
@@ -172,8 +174,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 

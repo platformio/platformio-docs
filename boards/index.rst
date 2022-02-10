@@ -16,11 +16,10 @@ Boards
 
 Rapid Embedded Development, Continuous and IDE integration in a few
 steps with PlatformIO thanks to built-in project generator for the most
-popular embedded boards and IDE.
+popular embedded boards and IDEs.
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll tables below by horizontal.
 
 Aceinna IMU
@@ -46,7 +45,6 @@ ASR Microelectronics ASR650x
     asrmicro650x/cubecell_capsule_solar_sensor
     asrmicro650x/cubecell_node
     asrmicro650x/cubecell_board
-    asrmicro650x/cubecell_board_pro
     asrmicro650x/cubecell_board_plus
     asrmicro650x/cubecell_capsule
     asrmicro650x/cubecell_gps
@@ -441,6 +439,7 @@ Espressif 32
     espressif32/esp32-s2-saola-1
     espressif32/firebeetle32
     espressif32/piranha_esp32
+    espressif32/esp32-s2-franzininho
     espressif32/frogboard
     espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
@@ -458,6 +457,7 @@ Espressif 32
     espressif32/kits-edu
     espressif32/sensesiot_weizen
     espressif32/labplus_mpython
+    espressif32/lionbit
     espressif32/m5stack-core-esp32
     espressif32/m5stack-core2
     espressif32/m5stack-fire
@@ -822,17 +822,6 @@ Nordic nRF52
     nordicnrf52/hackaBLE
     nordicnrf52/ublox_bmd345eval_nrf52840
     nordicnrf52/ublox_evk_nina_b1
-
-Nuclei
-------
-
-.. toctree::
-    :maxdepth: 1
-        
-    nuclei/gd32vf103v_eval
-    nuclei/gd32vf103v_rvstar
-    nuclei/hbird_eval
-    nuclei/gd32vf103c_longan_nano
 
 NXP i.MX RT
 -----------

@@ -9,19 +9,23 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _framework_logicromsdk:
+Scripting Examples
+------------------
 
-LOGICROM SDK
-============
+The best examples are `PlatformIO development platforms <https://github.com/topics/platformio-platform>`__.
+Please check ``builder`` folder for the main and framework scripts.
 
-:Configuration:
-  :ref:`projectconf_env_framework` = ``logicromsdk``
+.. toctree::
+    :maxdepth: 2
 
-LOGICROM Software Development Kit is a unified framework for IoT development on 4G LTE (RDA8910), GSM (MT2503/MT6261) and NBIoT (MT2625) chipsets/modules.
-
-For more detailed information please visit `vendor site <https://github.com/waybyte/logicromsdk?utm_source=platformio.org&utm_medium=docs>`_.
-
-
-.. contents:: Contents
-    :local:
-    :depth: 1
+    platformio_ini_custom_options
+    split_build_flags
+    extra_linker_flags
+    custom_upload_tool
+    upload_to_cloud
+    custom_program_name
+    override_package_files
+    override_board_configuration
+    custom_debug_flags
+    extra_python_packages
+    external_sources

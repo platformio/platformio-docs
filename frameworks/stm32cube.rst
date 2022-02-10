@@ -19,13 +19,26 @@ STM32Cube
 
 STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
 
-For more detailed information please visit `vendor site <https://www.st.com/en/ecosystems/stm32cube.html?utm_source=platformio.org&utm_medium=docs>`_.
-
-
 .. contents:: Contents
     :local:
     :depth: 1
 .. include:: stm32cube_extra.rst
+
+Platforms
+---------
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Description
+
+    * - :ref:`platform_ststm32`
+      - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+
+Examples
+--------
+
+* `STM32Cube for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -1598,28 +1611,11 @@ Please click on board name for the further details.
       - 256KB
 
 
-Examples
---------
-
-* `STM32Cube for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-
-Platforms
----------
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - :ref:`platform_ststm32`
-      - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
-
 Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+    * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by horizontally.
 
 1BitSquared

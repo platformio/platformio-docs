@@ -138,9 +138,6 @@ Platforms
     * - :ref:`platform_gd32v`
       - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
 
-    * - :ref:`platform_nuclei`
-      - Find professional RISC-V Processor IP in Nuclei, first professional RISC-V IP company in Mainland China, match all your requirements in AIoT Era.
-
 Frameworks
 ----------
 .. list-table::
@@ -154,9 +151,6 @@ Frameworks
 
     * - :ref:`framework_gd32vf103-sdk`
       - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
-
-    * - :ref:`framework_nuclei-sdk`
-      - Open Source Software Development Kit for the Nuclei N/NX processors
 
 Boards
 ------
@@ -175,20 +169,6 @@ Boards
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nuclei_gd32vf103v_eval`
-      - :ref:`platform_nuclei`
-      - External
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_nuclei_gd32vf103v_rvstar`
-      - :ref:`platform_nuclei`
-      - On-board
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_gd32v_gd32vf103v-eval`
       - :ref:`platform_gd32v`
       - External
@@ -198,13 +178,6 @@ Boards
       - 32KB
     * - :ref:`board_gd32v_sipeed-longan-nano`
       - :ref:`platform_gd32v`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_nuclei_gd32vf103c_longan_nano`
-      - :ref:`platform_nuclei`
       - External
       - GD32VF103CBT6
       - 108MHz
