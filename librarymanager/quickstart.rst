@@ -79,11 +79,6 @@ PlatformIO IDE
 .. image:: ../_static/images/home/pio-home-library-search.png
 
 
-PlatformIO Core
----------------
-
-.. image:: ../_static/images/platformio-demo-lib.gif
-
 CLI Guide
 ---------
 

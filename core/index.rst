@@ -48,7 +48,6 @@ such as :ref:`pioide`. In other words, they wrap |PIOCORE| with own GUI.
 .. toctree::
     :maxdepth: 2
 
-    userguide/demo
     installation
     quickstart
     userguide/index

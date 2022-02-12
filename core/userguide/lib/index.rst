@@ -49,11 +49,6 @@ Manage libraries for the specific project build environments declared in
 :ref:`projectconf`. Works for ``--storage-dir`` which is valid PlatformIO
 project.
 
-Demo
-----
-
-.. image:: ../../../_static/images/platformio-demo-lib.gif
-
 Commands
 --------
 

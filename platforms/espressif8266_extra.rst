@@ -629,12 +629,6 @@ For the full list with available options please run
         -d, --debug         Show debug output. And override loglevel with debug.
         -r, --progress      Show progress output. Does not work for ArduinoIDE
 
-Demo
-~~~~
-
-.. image:: ../_static/images/platformio-demo-ota-esp8266.jpg
-    :target: https://www.youtube.com/watch?v=lXchL3hpDO4
-
 
 Using Arduino Framework with Staging version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
