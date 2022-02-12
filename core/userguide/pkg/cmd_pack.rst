@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_package_pack:
+.. _cmd_pkg_pack:
 
-pio package pack
-================
+pio pkg pack
+============
 
 .. contents::
 
@@ -21,7 +21,7 @@ Usage
 
 .. code-block:: bash
 
-    pio package pack [<source directory, tar.gz or zip>] [OPTIONS]
+    pio pkg pack [<source directory, tar.gz or zip>] [OPTIONS]
 
 Description
 -----------
@@ -48,7 +48,7 @@ See a `manifest validation scheme <https://github.com/platformio/platformio-core
 Options
 ~~~~~~~
 
-.. program:: pio package pack
+.. program:: pio pkg pack
 
 .. option::
     -o, --output
@@ -60,4 +60,4 @@ See Also
 --------
 
 * :ref:`library_json`
-* :ref:`cmd_package_publish`
+* :ref:`cmd_pkg_publish`

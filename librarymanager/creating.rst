@@ -96,12 +96,12 @@ Publishing
 ----------
 
 You can publish a library to the `PlatformIO Registry <https://platformio.org/lib>`__
-using :ref:`cmd_package_publish` command. Every time when you modify a source code of
+using :ref:`cmd_pkg_publish` command. Every time when you modify a source code of
 a library you will need to increment the "version" field in :ref:`library_json` manifest
 and re-publish again.
 
 If the published library has an issue and you would like to remove it from the PlatformIO
-Registry, please use :ref:`cmd_package_unpublish` command.
+Registry, please use :ref:`cmd_pkg_unpublish` command.
 
 Examples
 --------

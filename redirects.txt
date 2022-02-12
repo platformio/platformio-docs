@@ -8,6 +8,10 @@
 /ci/shippable.html -> /integration/ci/shippable.html
 /ci/travis.html -> /integration/ci/travis.html
 /core.html -> /core/index.html
+/core/userguide/package/index.html -> /core/userguide/pkg/index.html
+/core/userguide/package/cmd_pack.html -> /core/userguide/pkg/cmd_pack.html
+/core/userguide/package/cmd_publish.html -> /core/userguide/pkg/cmd_publish.html
+/core/userguide/package/cmd_unpublish.html -> /core/userguide/pkg/cmd_unpublish.html
 /history.html -> /core/history.html
 /ide.html -> /integration/ide/index.html
 /ide/atom.html -> /integration/ide/atom.html

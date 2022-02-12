@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_package_unpublish:
+.. _cmd_pkg_unpublish:
 
-pio package unpublish
-=====================
+pio pkg unpublish
+=================
 
 .. contents::
 
@@ -21,7 +21,7 @@ Usage
 
 .. code-block:: bash
 
-    pio package unpublish [<organization>/]<pkgname>[@<version>] [OPTIONS]
+    pio pkg unpublish [<organization>/]<pkgname>[@<version>] [OPTIONS]
 
 Description
 -----------
@@ -37,7 +37,7 @@ You can only remove a package version within 72 hours since the published date.
 Options
 ~~~~~~~
 
-.. program:: pio package unpublish
+.. program:: pio pkg unpublish
 
 .. option::
     --type
@@ -54,5 +54,5 @@ See Also
 --------
 
 * :ref:`library_json`
-* :ref:`cmd_package_pack`
-* :ref:`cmd_package_publish`
+* :ref:`cmd_pkg_pack`
+* :ref:`cmd_pkg_publish`

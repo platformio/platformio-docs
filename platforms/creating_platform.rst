@@ -56,7 +56,7 @@ first compiling the tools.
 
 PlatformIO has a registry with pre-built packages for the most popular
 operating systems and you can use them in your platform
-manifest. Custom packages can be uploaded to the PlatformIO Registry using :ref:`cmd_package_publish` command.
+manifest. Custom packages can be uploaded to the PlatformIO Registry using :ref:`cmd_pkg_publish` command.
 
 .. _platform_creating_manifest_file:
 
@@ -231,9 +231,9 @@ Publishing
 ----------
 
 You can publish a development platform to the **PlatformIO Trusted Registry**
-using :ref:`cmd_package_publish` command. Other developers will be able to install it.
+using :ref:`cmd_pkg_publish` command. Other developers will be able to install it.
 Every time when you modify a source code of a development platform you will need to
 increment the "version" field in "platform.json" manifest and re-publish again.
 
 If the published development platform has an issue and you would like to remove it from
-the PlatformIO Trusted Registry, please use :ref:`cmd_package_unpublish` command.
+the PlatformIO Trusted Registry, please use :ref:`cmd_pkg_unpublish` command.

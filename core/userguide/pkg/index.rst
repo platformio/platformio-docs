@@ -11,17 +11,17 @@
 
 .. _cmd_package:
 
-pio package
-===========
+pio pkg
+=======
 
-Manage packages in the registry.
+Manage packages in the `PlatformIO Registry <https://registry.platformio.org/>`__.
 
 To print all available commands and options use:
 
 .. code-block:: bash
 
-    pio package --help
-    pio package COMMAND --help
+    pio pkg --help
+    pio pkg COMMAND --help
 
 
 .. toctree::

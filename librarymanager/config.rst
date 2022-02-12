@@ -26,7 +26,7 @@ via `associative array <http://en.wikipedia.org/wiki/Associative_array>`_
 (name/value pairs). The order doesn't matter. The allowable fields
 (names from pairs) are described below.
 
-You can validate ``library.json`` manifest file using the :ref:`cmd_package_pack` command.
+You can validate ``library.json`` manifest file using the :ref:`cmd_pkg_pack` command.
 
 .. contents:: Fields
     :local:
@@ -367,7 +367,7 @@ This option is useful if you need to exclude extra data (test code, docs, images
 It allows one to reduce the size of the final archive.
 
 To check which files will be included in the final packages, please use
-:ref:`cmd_package_pack` command.
+:ref:`cmd_pkg_pack` command.
 
 Possible options:
 

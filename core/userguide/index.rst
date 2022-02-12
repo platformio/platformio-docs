@@ -70,7 +70,7 @@ Commands
     cmd_home
     pio lib <lib/index>
     org/index
-    package/index
+    pkg/index
     pio platform <platforms/index>
     pio project <project/index>
     pio remote <remote/index>
