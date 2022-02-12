@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_exec:
+.. _cmd_pkg_exec:
 
-pio exec
-========
+pio pkg exec
+============
 
 .. versionadded:: 5.3
 
@@ -23,10 +23,10 @@ Usage
 
 .. code-block:: bash
 
-    pio exec [OPTIONS] [ARGS]
-    pio exec -- <CMD> [ARGS]
-    pio exec --package <pkg>[@<version>] -- <CMD> [ARGS]
-    pio exec --call '<cmd> [args]'
+    pio pkg exec [OPTIONS] [ARGS]
+    pio pkg exec -- <CMD> [ARGS]
+    pio pkg exec --package <pkg>[@<version>] -- <CMD> [ARGS]
+    pio pkg exec --call '<cmd> [args]'
 
 Description
 -----------
@@ -39,7 +39,7 @@ Run command from a PlatformIO package.
 Options
 -------
 
-.. program:: pio exec
+.. program:: pio pkg exec
 
 .. option::
     -p, --package
@@ -61,7 +61,7 @@ Examples
 
 .. code::
 
-    > pio exec -- openocd --help
+    > pio pkg exec -- openocd --help
 
     OpenOCD x86_64 Open On-Chip Debugger 0.11.0+dev (2021-10-17-00:18)
     Licensed under GNU GPL v2
@@ -82,4 +82,4 @@ Examples
 
 .. code::
 
-    > pio exec -p tool-jlink -- JLinkGDBServer -singlerun -if JTAG -select USB -jtagconf -1,-1 -device EFR32BG22CxxxF512 -port 2331
+    > pio pkg exec -p tool-jlink -- JLinkGDBServer -singlerun -if JTAG -select USB -jtagconf -1,-1 -device EFR32BG22CxxxF512 -port 2331

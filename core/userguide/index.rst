@@ -66,7 +66,6 @@ Commands
     cmd_ci
     cmd_debug
     pio device <device/index>
-    cmd_exec
     cmd_home
     pio lib <lib/index>
     org/index
