@@ -21,8 +21,6 @@ To print all available commands and options use:
     pio platform --help
     pio platform COMMAND --help
 
-.. image:: ../../../_static/images/platformio-demo-platforms.gif
-
 .. toctree::
     :maxdepth: 2
 

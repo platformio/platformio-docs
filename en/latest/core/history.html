@@ -152,7 +152,16 @@
 <section id="id1">
 <h3>5.3.0 (2022-02-??)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Run command from a PlatformIO package with a new <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_exec.html">pio exec</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4163">issue #4163</a>)</p></li>
+<li><p><strong>Package Management</strong></p>
+<ul>
+<li><p>New unified Package Management CLI (<code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">pkg</span></code>):</p>
+<ul>
+<li><p><a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_pack.html">pio pkg outdated</a> - check for project outdated packages</p></li>
+<li><p><a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_exec.html">pio pkg exec</a> - run command from package tool (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4163">issue #4163</a>)</p></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p>Improved PIO Remote setup on credit-card sized computers (Raspberry Pi, BeagleBon, etc) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3865">issue #3865</a>)</p></li>
 </ul>
 </section>
@@ -242,7 +251,7 @@
 <li><p>Validate package manifest</p></li>
 </ul>
 </li>
-<li><p>Added a new option <code class="docutils literal notranslate"><span class="pre">--non-interactive</span></code> to <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/package/cmd_publish.html">pio package publish</a> command</p></li>
+<li><p>Added a new option <code class="docutils literal notranslate"><span class="pre">--non-interactive</span></code> to <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_publish.html">pio package publish</a> command</p></li>
 </ul>
 </li>
 <li><p><strong>Build System</strong></p>
@@ -355,7 +364,7 @@
 <li><p>Force VSCode’s intelliSenseMode to “gcc-x64” when GCC toolchain is used</p></li>
 <li><p>Print ignored test suites and environments in the test summary report only in verbose mode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3726">issue #3726</a>)</p></li>
 <li><p>Fixed an issue when the package manager tries to install a built-in library from the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3662">issue #3662</a>)</p></li>
-<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/package/cmd_pack.html">pio package pack</a> ignores some folders (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3730">issue #3730</a>)</p></li>
+<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_pack.html">pio package pack</a> ignores some folders (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3730">issue #3730</a>)</p></li>
 </ul>
 </section>
 <section id="id15">
@@ -368,7 +377,7 @@
 <li><p>Fixed a “KeyError: ‘versions’” when dependency does not exist in the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3666">issue #3666</a>)</p></li>
 <li><p>Fixed an issue with GCC linker when “native” dev-platform is used in pair with library dependencies (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3669">issue #3669</a>)</p></li>
 <li><p>Fixed an “AssertionError: ensure_dir_exists” when checking library updates from simultaneous subprocesses (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3677">issue #3677</a>)</p></li>
-<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/package/cmd_publish.html">pio package publish</a> command removes original archive after submitting to the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3716">issue #3716</a>)</p></li>
+<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_publish.html">pio package publish</a> command removes original archive after submitting to the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3716">issue #3716</a>)</p></li>
 <li><p>Fixed an issue when multiple <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/lib/cmd_install.html">pio lib install</a> command with the same local library results in duplicates in <code class="docutils literal notranslate"><span class="pre">lib_deps</span></code> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3715">issue #3715</a>)</p></li>
 <li><p>Fixed an issue with a “wrong” timestamp in device monitor output using <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/device/cmd_monitor.html#filters">“time” filter</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3712">issue #3712</a>)</p></li>
 </ul>
@@ -379,7 +388,7 @@
 <li><p>Added support for “owner” requirement when declaring <code class="docutils literal notranslate"><span class="pre">dependencies</span></code> using <a class="reference external" href="https://docs.platformio.org/en/latest/librarymanager/config.html#dependencies">library.json</a></p></li>
 <li><p>Fixed an issue when using a custom git/ssh package with <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/section_env_platform.html#platform-packages">platform_packages</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3624">issue #3624</a>)</p></li>
 <li><p>Fixed an issue with “ImportError: cannot import name ‘_get_backend’ from ‘cryptography.hazmat.backends’” when using <a class="reference external" href="https://docs.platformio.org/en/latest/plus/pio-remote.html">Remote Development</a> on RaspberryPi device (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3652">issue #3652</a>)</p></li>
-<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/package/cmd_unpublish.html">pio package unpublish</a> command crashes (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3660">issue #3660</a>)</p></li>
+<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_unpublish.html">pio package unpublish</a> command crashes (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3660">issue #3660</a>)</p></li>
 <li><p>Fixed an issue when the package manager tries to install a built-in library from the registry (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3662">issue #3662</a>)</p></li>
 <li><p>Fixed an issue with incorrect value for C++ language standard in IDE projects when an in-progress language standard is used (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3653">issue #3653</a>)</p></li>
 <li><p>Fixed an issue with “Invalid simple block (semantic_version)” from library dependency that refs to an external source (repository, ZIP/Tar archives) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3658">issue #3658</a>)</p></li>
@@ -404,7 +413,7 @@
 <li><p>Built-in fine-grained access control (role-based, teams, organizations)</p></li>
 <li><p>New CLI commands:</p>
 <ul>
-<li><p><a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/package/index.html">pio package</a> – manage packages in the registry</p></li>
+<li><p><a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/index.html">pio package</a> – manage packages in the registry</p></li>
 <li><p><a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/access/index.html">pio access</a> – manage package access for users, teams, and maintainers</p></li>
 </ul>
 </li>
@@ -637,7 +646,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0a2 (latest)
+    v5.3.0a3 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

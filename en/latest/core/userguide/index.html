@@ -54,7 +54,6 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">PlatformIO Core (CLI)</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="demo.html">Demo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../installation.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quick Start</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">CLI Guide</a><ul>
@@ -68,11 +67,10 @@
 <li class="toctree-l4"><a class="reference internal" href="cmd_ci.html">pio ci</a></li>
 <li class="toctree-l4"><a class="reference internal" href="cmd_debug.html">pio debug</a></li>
 <li class="toctree-l4"><a class="reference internal" href="device/index.html">pio device</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cmd_exec.html">pio exec</a></li>
 <li class="toctree-l4"><a class="reference internal" href="cmd_home.html">pio home</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lib/index.html">pio lib</a></li>
 <li class="toctree-l4"><a class="reference internal" href="org/index.html">pio org</a></li>
-<li class="toctree-l4"><a class="reference internal" href="package/index.html">pio package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkg/index.html">pio pkg</a></li>
 <li class="toctree-l4"><a class="reference internal" href="platforms/index.html">pio platform</a></li>
 <li class="toctree-l4"><a class="reference internal" href="project/index.html">pio project</a></li>
 <li class="toctree-l4"><a class="reference internal" href="remote/index.html">pio remote</a></li>
@@ -259,13 +257,6 @@ $ pio COMMAND --help
 <li class="toctree-l2"><a class="reference internal" href="device/cmd_monitor.html">pio device monitor</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="cmd_exec.html">pio exec</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cmd_exec.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_exec.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_exec.html#options">Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_exec.html#examples">Examples</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="cmd_home.html">pio home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="cmd_home.html#usage">Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cmd_home.html#description">Description</a></li>
@@ -276,7 +267,6 @@ $ pio COMMAND --help
 <li class="toctree-l1"><a class="reference internal" href="lib/index.html">pio lib</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="lib/index.html#usage">Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lib/index.html#options">Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lib/index.html#demo">Demo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lib/index.html#commands">Commands</a></li>
 </ul>
 </li>
@@ -289,10 +279,12 @@ $ pio COMMAND --help
 <li class="toctree-l2"><a class="reference internal" href="org/cmd_update.html">pio org update</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="package/index.html">pio package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="package/cmd_pack.html">pio package pack</a></li>
-<li class="toctree-l2"><a class="reference internal" href="package/cmd_publish.html">pio package publish</a></li>
-<li class="toctree-l2"><a class="reference internal" href="package/cmd_unpublish.html">pio package unpublish</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pkg/index.html">pio pkg</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkg/cmd_exec.html">pio pkg exec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkg/cmd_outdated.html">pio pkg outdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkg/cmd_pack.html">pio pkg pack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkg/cmd_publish.html">pio pkg publish</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkg/cmd_unpublish.html">pio pkg unpublish</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="platforms/index.html">pio platform</a><ul>
@@ -499,7 +491,7 @@ $ pio COMMAND --help
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0a2 (latest)
+    v5.3.0a3 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
