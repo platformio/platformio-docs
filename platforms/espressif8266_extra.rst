@@ -478,6 +478,8 @@ Uploading files to Filesystem
     Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
     information first.
 
+    Uploading a file system image will overwrite any existing files.
+
 1. Create a new project using :ref:`pioide` or initialize project using
    :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create the ``data`` folder (it should be on the same level as the ``src`` folder)
