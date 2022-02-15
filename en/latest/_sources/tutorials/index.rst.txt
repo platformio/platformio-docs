@@ -35,6 +35,11 @@ Pre-configured projects with source code are located in
 `PlatformIO Examples <https://github.com/platformio/platformio-examples>`_
 repository.
 
+Community Books
+---------------
+
+* `Developing IoT Projects with ESP32: Automate your home or business with inexpensive Wi-Fi devices <https://www.amazon.com/Developing-IoT-Projects-ESP32-inexpensive-ebook-dp-B093CCWGDP/dp/B093CCWGDP/>`_ (using the PlatformIO with :ref:`framework_espidf`)
+
 Community Projects
 ------------------
 
