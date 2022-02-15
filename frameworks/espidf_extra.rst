@@ -13,6 +13,7 @@ Tutorials
 ---------
 
 * :ref:`tutorial_espressif32_espidf_debugging_unit_testing_analysis`
+* Book: `Developing IoT Projects with ESP32: Automate your home or business with inexpensive Wi-Fi devices <https://www.amazon.com/Developing-IoT-Projects-ESP32-inexpensive-ebook-dp-B093CCWGDP/dp/B093CCWGDP/>`_ (using the PlatformIO with ESP-IDF)
 
 Configuration
 -------------
