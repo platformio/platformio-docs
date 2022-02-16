@@ -219,25 +219,9 @@ Settings
 Allows one to override PlatformIO settings. You can manage them via
 :ref:`cmd_settings` command.
 
-.. envvar:: PLATFORMIO_SETTING_AUTO_UPDATE_LIBRARIES
-
-Allows one to override setting :ref:`setting_auto_update_libraries`.
-
-.. envvar:: PLATFORMIO_SETTING_AUTO_UPDATE_PLATFORMS
-
-Allows one to override setting :ref:`setting_auto_update_platforms`.
-
-.. envvar:: PLATFORMIO_SETTING_CHECK_LIBRARIES_INTERVAL
-
-Allows one to override setting :ref:`setting_check_libraries_interval`.
-
 .. envvar:: PLATFORMIO_SETTING_CHECK_PLATFORMIO_INTERVAL
 
 Allows one to override setting :ref:`setting_check_platformio_interval`.
-
-.. envvar:: PLATFORMIO_SETTING_CHECK_PLATFORMS_INTERVAL
-
-Allows one to override setting :ref:`setting_check_platforms_interval`.
 
 .. envvar:: PLATFORMIO_SETTING_CHECK_PRUNE_SYSTEM_THRESHOLD
 
