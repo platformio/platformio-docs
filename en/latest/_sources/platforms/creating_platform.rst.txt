@@ -114,10 +114,6 @@ Here is an example ``platform.json`` for the fictitious platform "myplatform":
           "optional": true,
           "version": "https://github.com/user/repo.git"
         }
-      },
-      "pythonPackages": {
-        "pypi-pkg-1": "1.2.3",
-        "pypi-pkg-2": ">=2.3, <3"
       }
     }
 
