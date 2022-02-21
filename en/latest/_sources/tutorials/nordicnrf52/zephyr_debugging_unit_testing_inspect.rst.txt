@@ -165,9 +165,9 @@ Compiling and Uploading the Firmware
 
     .. code-block:: ini
 
-      [env:hifive1-revb]
-      platform = sifive
-      board = hifive1-revb
+      [env:nrf52_dk]
+      platform = nordicnrf52
+      board = nrf52_dk
       framework = zephyr
       monitor_speed = 115200
 
