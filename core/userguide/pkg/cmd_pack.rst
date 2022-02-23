@@ -26,9 +26,8 @@ Usage
 Description
 -----------
 
-Create a tarball from a package (library, :ref:`platforms`, or tool).
-
-If no arguments are supplied, then platformio packs the current package folder.
+Create a tarball from a package (library, :ref:`platforms`, or tool). If no arguments
+are supplied, then platformio packs the current package folder.
 
 A source of a package must contain a manifest (should be located in a root of a package)
 depending on a package type:
@@ -55,6 +54,18 @@ Options
 
 Specify a destination path (folder or a full path to file) where to store a tarball.
 The default is to create a tarball in the current working directory.
+
+Files included in package
+-------------------------
+
+All files are included by default, with the following exceptions:
+
+* Certain files that are relevant to package installation and distribution are always
+  included. For example, ``library.json``, ``README.md``, ``LICENSE``, etc.
+* If :ref:`libjson_export` field is not declared in the manifest, the `next default filters <https://github.com/platformio/platformio-core/blob/develop/platformio/package/pack.py#L35>`__ will be applied
+* If :ref:`libjson_export` field is not declared in the manifest and there is a
+  ``.gitignore`` file, then ignored files in that and all child directories will be
+  excluded from the package.
 
 See Also
 --------
