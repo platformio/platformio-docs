@@ -123,6 +123,30 @@ Configuration for the programmers:
             stk500v1
         upload_command = avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i
 
+*   Arduino as ISP (ATmega32U4)
+
+    .. code-block:: ini
+
+        [env:program_via_ArduinoISP_ATmega32U4]
+        platform = atmelavr
+        framework = arduino
+        upload_protocol = custom
+        upload_port = SERIAL_PORT_HERE
+        upload_speed = 19200
+        upload_flags =
+            -C
+            ; use "tool-avrdude-megaavr" for the atmelmegaavr platform
+            ${platformio.packages_dir}/tool-avrdude/avrdude.conf
+            -p
+            $BOARD_MCU
+            -P
+            $UPLOAD_PORT
+            -b
+            $UPLOAD_SPEED
+            -c
+            arduino
+        upload_command = avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i
+
 *   USBasp
 
     .. code-block:: ini
