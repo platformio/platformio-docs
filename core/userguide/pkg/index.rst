@@ -28,6 +28,7 @@ To print all available commands and options use:
     :maxdepth: 2
 
     cmd_exec
+    cmd_install
     cmd_outdated
     cmd_pack
     cmd_publish
