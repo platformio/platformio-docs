@@ -45,7 +45,7 @@ depending on a package type:
 See a `manifest validation scheme <https://github.com/platformio/platformio-core/blob/develop/platformio/package/manifest/schema.py>`_.
 
 Options
-~~~~~~~
+-------
 
 .. program:: pio pkg pack
 

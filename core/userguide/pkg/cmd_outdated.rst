@@ -33,7 +33,7 @@ This information includes the currently installed version, the desired version b
 `Semantic Versioning <https://semver.org/>`__, and the latest available version.
 
 Options
-~~~~~~~
+-------
 
 .. program:: pio pkg outdated
 
@@ -47,7 +47,6 @@ to current working directory (``CWD``).
     -e, --environment
 
 Check for outdated packages only for the specified environments. Multiple environments are allowed.
-
 
 Examples
 --------

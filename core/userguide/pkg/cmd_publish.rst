@@ -45,7 +45,7 @@ If no arguments are supplied, then PlatformIO packs the current package folder.
 To list published packages, please use :ref:`cmd_access_list` command.
 
 Options
-~~~~~~~
+-------
 
 .. program:: pio pkg publish
 
