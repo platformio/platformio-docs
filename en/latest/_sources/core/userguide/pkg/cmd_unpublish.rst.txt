@@ -35,7 +35,7 @@ is removed from the registry entirely.
 You can only remove a package version within 72 hours since the published date.
 
 Options
-~~~~~~~
+-------
 
 .. program:: pio pkg unpublish
 
