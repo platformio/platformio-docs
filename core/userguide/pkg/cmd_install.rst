@@ -96,6 +96,11 @@ Install specified library. Multiple items are allowed.
     pio pkg install --library https://github.com/Makuna/NeoPixelBus.git
 
 .. option::
+    --no-save
+
+Prevent saving specified packages to :ref:`projectconf`.
+
+.. option::
     --skip-dependencies
 
 Install a package but skip its dependencies declared in the manifest
@@ -122,7 +127,7 @@ project.
 .. option::
     --storage-dir
 
-Specify a custom package storage directory.
+Specify a custom Package Manager storage for global packages.
 
 .. option::
     -f, --force
