@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_asrmicro650x_cubecell_capsule_solar_sensor:
+.. _board_asrmicro650x_cubecell_board_pro:
 
-Heltec CubeCell Capsule Solar Sensor (HTCC-AC02)
-================================================
+Heltec CubeCell-Board PRO (HTCC-AB03)
+=====================================
 
 .. contents::
 
@@ -24,48 +24,48 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR650x series is hi
 .. list-table::
 
   * - **Microcontroller**
-    - ASR6051
+    - ASR6601
   * - **Frequency**
     - 48MHz
   * - **Flash**
-    - 128KB
+    - 224KB
   * - **RAM**
-    - 16KB
+    - 224KB
   * - **Vendor**
-    - `Heltec <https://heltec.org/project/htcc-ac02/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Heltec <https://heltec.org/proudct_center?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``cubecell_capsule_solar_sensor`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``cubecell_board_pro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:cubecell_capsule_solar_sensor]
+  [env:cubecell_board_pro]
   platform = asrmicro650x
-  board = cubecell_capsule_solar_sensor
+  board = cubecell_board_pro
 
-You can override default Heltec CubeCell Capsule Solar Sensor (HTCC-AC02) settings per build environment using
+You can override default Heltec CubeCell-Board PRO (HTCC-AB03) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `cubecell_capsule_solar_sensor.json <https://github.com/HelTecAutomation/platform-asrmicro650x/blob/master/boards/cubecell_capsule_solar_sensor.json>`_. For example,
+board manifest `cubecell_board_pro.json <https://github.com/HelTecAutomation/platform-asrmicro650x/blob/master/boards/cubecell_board_pro.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:cubecell_capsule_solar_sensor]
+  [env:cubecell_board_pro]
   platform = asrmicro650x
-  board = cubecell_capsule_solar_sensor
+  board = cubecell_board_pro
 
   ; change microcontroller
-  board_build.mcu = asr6051
+  board_build.mcu = asr6601
 
   ; change MCU frequency
   board_build.f_cpu = 48000000L
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Heltec CubeCell Capsule Solar Sensor (HTCC-AC02) board.
+:ref:`piodebug` currently does not support Heltec CubeCell-Board PRO (HTCC-AB03) board.
 
 Frameworks
 ----------

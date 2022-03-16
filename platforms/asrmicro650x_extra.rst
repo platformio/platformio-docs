@@ -71,6 +71,11 @@ LoRaWAN protocol can be configured in :ref:`projectconf` using the following syn
       - ``ACTIVE``, ``DEACTIVE``
       - ``ACTIVE``
 
+    * - ``preamble_length``
+      - Preamble length
+      - ``8``, ``16`` (For M00 and M00L)
+      - ``8``
+
     * - ``debug_level``
       - Print LoRaWAN relevant messages print to serial port
       - ``NONE``, ``FREQ`` (Sending/receiving frequency), ``FREQ_AND_DIO``
