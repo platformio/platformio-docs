@@ -259,7 +259,12 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">ACTIVE</span></code>, <code class="docutils literal notranslate"><span class="pre">DEACTIVE</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">ACTIVE</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">debug_level</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">preamble_length</span></code></p></td>
+<td><p>Preamble length</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code>, <code class="docutils literal notranslate"><span class="pre">16</span></code> (For M00 and M00L)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">debug_level</span></code></p></td>
 <td><p>Print LoRaWAN relevant messages print to serial port</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">NONE</span></code>, <code class="docutils literal notranslate"><span class="pre">FREQ</span></code> (Sending/receiving frequency), <code class="docutils literal notranslate"><span class="pre">FREQ_AND_DIO</span></code>
 (Sending/receiving frequency and DIO pin interrupt information)</p></td>
@@ -334,8 +339,8 @@ of ASR Microelectronics ASR650x development platform and the latest upstream ver
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/framework-arduinoasrmicro650x">framework-arduinoasrmicro650x</a></p></td>
-<td><p>Arduino Wiring-based Framework for ASR Microelectronics ASR650x (Heltec core)</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/framework-arduinoasrmicro">framework-arduinoasrmicro</a></p></td>
+<td><p>Arduino Wiring-based Framework for ASR Microelectronics (Heltec core)</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/tool-cubecellelftool">tool-cubecellelftool</a></p></td>
 <td><p>CubeCell ELF tool</p></td>
@@ -343,7 +348,10 @@ of ASR Microelectronics ASR650x development platform and the latest upstream ver
 <tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/tool-cubecellflash">tool-cubecellflash</a></p></td>
 <td><p>CubeCell Flash tool</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi">toolchain-gccarmnoneeabi</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/tool-cubecellflash6601">tool-cubecellflash6601</a></p></td>
+<td><p>CubeCell Flash tool for ASR6601</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi">toolchain-gccarmnoneeabi</a></p></td>
 <td><p>GNU toolchain for Arm Cortex-M and Cortex-R processors</p></td>
 </tr>
 </tbody>
@@ -417,7 +425,7 @@ horizontally.</p></li>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule_solar_sensor.html#board-asrmicro650x-cubecell-capsule-solar-sensor"><span class="std std-ref">Heltec CubeCell Capsule Solar Sensor (HTCC-AC02)</span></a></p></td>
 <td><p>No</p></td>
-<td><p>ASR6502</p></td>
+<td><p>ASR6051</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
@@ -436,35 +444,42 @@ horizontally.</p></li>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_plus.html#board-asrmicro650x-cubecell-board-plus"><span class="std std-ref">Heltec CubeCell-Board Plus (HTCC-AB02)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_pro.html#board-asrmicro650x-cubecell-board-pro"><span class="std std-ref">Heltec CubeCell-Board PRO (HTCC-AB03)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6601</p></td>
+<td><p>48MHz</p></td>
+<td><p>224KB</p></td>
+<td><p>224KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_plus.html#board-asrmicro650x-cubecell-board-plus"><span class="std std-ref">Heltec CubeCell-Board Plus (HTCC-AB02)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6502</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule.html#board-asrmicro650x-cubecell-capsule"><span class="std std-ref">Heltec CubeCell-Capsule (HTCC-AC01)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule.html#board-asrmicro650x-cubecell-capsule"><span class="std std-ref">Heltec CubeCell-Capsule (HTCC-AC01)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6501</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_gps.html#board-asrmicro650x-cubecell-gps"><span class="std std-ref">Heltec CubeCell-GPS (HTCC-AB02S)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_gps.html#board-asrmicro650x-cubecell-gps"><span class="std std-ref">Heltec CubeCell-GPS (HTCC-AB02S)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6502</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module.html#board-asrmicro650x-cubecell-module"><span class="std std-ref">Heltec CubeCell-Module (HTCC-AM01)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module.html#board-asrmicro650x-cubecell-module"><span class="std std-ref">Heltec CubeCell-Module (HTCC-AM01)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6501</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module_plus.html#board-asrmicro650x-cubecell-module-plus"><span class="std std-ref">Heltec CubeCell-Module Plus (HTCC-AM02)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module_plus.html#board-asrmicro650x-cubecell-module-plus"><span class="std std-ref">Heltec CubeCell-Module Plus (HTCC-AM02)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6502</p></td>
 <td><p>48MHz</p></td>

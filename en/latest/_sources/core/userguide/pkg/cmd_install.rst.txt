@@ -115,7 +115,7 @@ Install a package but skip its dependencies declared in the manifest
     Please use the :ref:`projectconf_lib_deps` option and declare library
     dependencies per project.
 
-Install a package to the global storage:
+Install packages to the global storage:
 
 * :ref:`projectconf_pio_platforms_dir` - development platforms
 * :ref:`projectconf_pio_packages_dir` - tools
@@ -456,5 +456,6 @@ development platform with the next requirements:
 See Also
 --------
 
+* :ref:`cmd_pkg_uninstall`
 * :ref:`cmd_pkg_outdated`
 * :ref:`library_json`

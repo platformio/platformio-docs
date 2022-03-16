@@ -6730,7 +6730,7 @@ Heltec
     * - :ref:`board_asrmicro650x_cubecell_capsule_solar_sensor`
       - :ref:`platform_asrmicro650x`
       - No
-      - ASR6502
+      - ASR6051
       - 48MHz
       - 128KB
       - 16KB
@@ -6748,6 +6748,13 @@ Heltec
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_asrmicro650x_cubecell_board_pro`
+      - :ref:`platform_asrmicro650x`
+      - No
+      - ASR6601
+      - 48MHz
+      - 224KB
+      - 224KB
     * - :ref:`board_asrmicro650x_cubecell_board_plus`
       - :ref:`platform_asrmicro650x`
       - No
