@@ -32,4 +32,5 @@ To print all available commands and options use:
     cmd_outdated
     cmd_pack
     cmd_publish
+    cmd_uninstall
     cmd_unpublish
