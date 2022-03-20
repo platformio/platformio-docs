@@ -34,3 +34,4 @@ To print all available commands and options use:
     cmd_publish
     cmd_uninstall
     cmd_unpublish
+    cmd_update

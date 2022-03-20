@@ -11,10 +11,10 @@
 
 .. |PIOREGISTRY| replace:: `PlatformIO Registry <https://registry.platformio.org>`__
 
-.. _cmd_pkg_uninstall:
+.. _cmd_pkg_update:
 
-pio pkg uninstall
-=================
+pio pkg update
+==============
 
 .. versionadded:: 5.3
 
@@ -25,16 +25,16 @@ Usage
 
 .. code-block:: bash
 
-    pio pkg uninstall [OPTIONS]
+    pio pkg update [OPTIONS]
 
 Description
 -----------
 
-Uninstall the project dependencies or custom packages from the |PIOREGISTRY| or
+Update the project dependencies or custom packages from the |PIOREGISTRY| or
 external sources.
 
 If no custom packages (``--library``, ``--platform``, or ``--tool``) are
-specified, the command will uninstall the following project
+specified, the command will update the following project
 dependencies based on :ref:`projectconf`:
 
 * Library dependencies declared using :ref:`projectconf_lib_deps` option
@@ -47,7 +47,7 @@ See :ref:`cmd_pkg_install` command for package specification.
 Options
 -------
 
-.. program:: pio pkg uninstall
+.. program:: pio pkg update
 
 .. option::
     -d, --project-dir
@@ -58,54 +58,54 @@ to current working directory (``CWD``).
 .. option::
     -e, --environment
 
-Uninstall project dependecies only for the specified environments. Multiple
+Update project dependecies only for the specified environments. Multiple
 environments are allowed.
 
 .. option::
     -p, --platform
 
-Uninstall specified development platform. Multiple items are allowed.
+Update specified development platform. Multiple items are allowed.
 
 **Examples**
 
 .. code:: shell
 
-    pio pkg uninstall -p "aceinna/aceinna_imu@^1.3.8" -p "platformio/atmelavr"
-    pio pkg uninstall --platform "https://github.com/platformio/platform-sifive.git"
+    pio pkg update -p "aceinna/aceinna_imu@^1.3.8" -p "platformio/atmelavr"
+    pio pkg update --platform "https://github.com/platformio/platform-sifive.git"
 
 .. option::
     -t, --tool
 
-Uninstall specified tool. Multiple items are allowed.
+Update specified tool. Multiple items are allowed.
 
 **Examples**
 
 .. code:: shell
 
-    pio pkg uninstall -t "platformio/tool-openocd"
-    pio pkg uninstall --tool https://github.com/platformio/platform-sifive.git
+    pio pkg update -t "platformio/tool-openocd"
+    pio pkg update --tool https://github.com/platformio/platform-sifive.git
 
 .. option::
     -l, --library
 
-Uninstall specified library. Multiple items are allowed.
+Update specified library. Multiple items are allowed.
 
 **Examples**
 
 .. code:: shell
 
-    pio pkg uninstall -l "bblanchon/ArduinoJson@^6.19.2" -l "milesburton/DallasTemperature@^3.9.1"
-    pio pkg uninstall --library https://github.com/Makuna/NeoPixelBus.git
+    pio pkg update -l "bblanchon/ArduinoJson@^6.19.2" -l "milesburton/DallasTemperature@^3.9.1"
+    pio pkg update --library https://github.com/Makuna/NeoPixelBus.git
 
 .. option::
     --no-save
 
-Prevent removing specified packages from :ref:`projectconf`.
+Prevent saving specified packages to :ref:`projectconf`.
 
 .. option::
     --skip-dependencies
 
-Uninstall a package and keep its dependencies declared in the manifest
+Update a package but skip its dependencies declared in the manifest
 :ref:`libjson_dependencies` field.
 
 .. option::
@@ -130,6 +130,7 @@ Suppress progress reporting.
 See Also
 --------
 
-* :ref:`cmd_pkg_install`
 * :ref:`cmd_pkg_outdated`
+* :ref:`cmd_pkg_install`
+* :ref:`cmd_pkg_uninstall`
 * :ref:`library_json`
