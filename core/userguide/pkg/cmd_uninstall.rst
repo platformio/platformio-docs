@@ -37,10 +37,10 @@ If no custom packages (``--library``, ``--platform``, or ``--tool``) are
 specified, the command will uninstall the following project
 dependencies based on :ref:`projectconf`:
 
-* Library dependencies declared using :ref:`projectconf_lib_deps` option
-* Development platform declared using :ref:`projectconf_env_platform` option
+* Library dependencies declared using the :ref:`projectconf_lib_deps` option
+* Development platform declared using the :ref:`projectconf_env_platform` option
   and its dependencies (toolchain, framework, SDKs, debugging server, etc)
-* Custom tools declared using :ref:`projectconf_env_platform_packages` option.
+* Custom tools declared using the :ref:`projectconf_env_platform_packages` option.
 
 See :ref:`cmd_pkg_install` command for package specification.
 
@@ -58,13 +58,14 @@ to current working directory (``CWD``).
 .. option::
     -e, --environment
 
-Uninstall project dependecies only for the specified environments. Multiple
-environments are allowed.
+Uninstall project dependencies only for the specified environments.
+Multiple environments are allowed.
 
 .. option::
     -p, --platform
 
-Uninstall specified development platform. Multiple items are allowed.
+Uninstall specified development platform using :ref:`cmd_pkg_install_specifications`.
+Multiple items are allowed.
 
 **Examples**
 
@@ -76,7 +77,8 @@ Uninstall specified development platform. Multiple items are allowed.
 .. option::
     -t, --tool
 
-Uninstall specified tool. Multiple items are allowed.
+Uninstall specified tool using :ref:`cmd_pkg_install_specifications`.
+Multiple items are allowed.
 
 **Examples**
 
@@ -88,7 +90,8 @@ Uninstall specified tool. Multiple items are allowed.
 .. option::
     -l, --library
 
-Uninstall specified library. Multiple items are allowed.
+Uninstall specified library using :ref:`cmd_pkg_install_specifications`.
+Multiple items are allowed.
 
 **Examples**
 

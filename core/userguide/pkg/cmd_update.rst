@@ -37,10 +37,10 @@ If no custom packages (``--library``, ``--platform``, or ``--tool``) are
 specified, the command will update the following project
 dependencies based on :ref:`projectconf`:
 
-* Library dependencies declared using :ref:`projectconf_lib_deps` option
-* Development platform declared using :ref:`projectconf_env_platform` option
+* Library dependencies declared using the :ref:`projectconf_lib_deps` option
+* Development platform declared using the :ref:`projectconf_env_platform` option
   and its dependencies (toolchain, framework, SDKs, debugging server, etc)
-* Custom tools declared using :ref:`projectconf_env_platform_packages` option.
+* Custom tools declared using the :ref:`projectconf_env_platform_packages` option.
 
 See :ref:`cmd_pkg_install` command for package specification.
 
@@ -58,8 +58,8 @@ to current working directory (``CWD``).
 .. option::
     -e, --environment
 
-Update project dependecies only for the specified environments. Multiple
-environments are allowed.
+Update project dependencies only for the specified environments.
+Multiple environments are allowed.
 
 .. option::
     -p, --platform

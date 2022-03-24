@@ -42,7 +42,7 @@ version combination can never be used again, even if it is removed with the
 
 If no arguments are supplied, then PlatformIO packs the current package folder.
 
-To list published packages, please use :ref:`cmd_access_list` command.
+To list published packages, please use the :ref:`cmd_access_list` command.
 
 Options
 -------
@@ -73,12 +73,12 @@ Please check `PlatformIO Registry Plans <https://registry.platformio.org/pricing
 .. option::
   --no-notify
 
-Do not notify by email when package is processed. The default behavior is to notify.
+Do not notify by email when a package is processed. The default behavior is to notify.
 
 .. option::
   --non-interactive
 
-Do not show interactive prompt.
+Do not show an interactive prompt.
 
 See Also
 --------

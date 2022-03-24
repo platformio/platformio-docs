@@ -37,10 +37,10 @@ If no custom packages (``--library``, ``--platform``, or ``--tool``) are
 specified, the command will install the following project
 dependencies based on :ref:`projectconf`:
 
-* Library dependencies declared using :ref:`projectconf_lib_deps` option
-* Development platform declared using :ref:`projectconf_env_platform` option
+* Library dependencies declared using the :ref:`projectconf_lib_deps` option
+* Development platform declared using the :ref:`projectconf_env_platform` option
   and its dependencies (toolchain, framework, SDKs, debugging server, etc)
-* Custom tools declared using :ref:`projectconf_env_platform_packages` option.
+* Custom tools declared using the :ref:`projectconf_env_platform_packages` option.
 
 Options
 -------
@@ -56,13 +56,14 @@ to current working directory (``CWD``).
 .. option::
     -e, --environment
 
-Install project dependecies only for the specified environments. Multiple
-environments are allowed.
+Install project dependencies only for the specified environments.
+Multiple environments are allowed.
 
 .. option::
     -p, --platform
 
-Install specified development platform. Multiple items are allowed.
+Install specified development platform using :ref:`cmd_pkg_install_specifications`.
+Multiple items are allowed.
 
 **Examples**
 
@@ -74,7 +75,8 @@ Install specified development platform. Multiple items are allowed.
 .. option::
     -t, --tool
 
-Install specified tool. Multiple items are allowed.
+Install specified tool using :ref:`cmd_pkg_install_specifications`.
+Multiple items are allowed.
 
 **Examples**
 
@@ -86,7 +88,8 @@ Install specified tool. Multiple items are allowed.
 .. option::
     -l, --library
 
-Install specified library. Multiple items are allowed.
+Install specified library using :ref:`cmd_pkg_install_specifications`.
+Multiple items are allowed.
 
 **Examples**
 
@@ -157,10 +160,12 @@ PlatformIO supports the next package types:
 
 Browse over 10,000 packages in the |PIOREGISTRY|.
 
-Package Sources
----------------
+.. _cmd_pkg_install_specifications:
 
-:ref:`piocore` supports different packages sources which you can use for
+Package Specifications
+----------------------
+
+:ref:`piocore` supports different package sources which you can specify for
 :ref:`cmd_pkg_install` command or configure project dependencies using
 :ref:`projectconf` options:
 
@@ -179,7 +184,7 @@ e) A <git/hg/svn remote url> that resolves to (a).
 Registry: Latest Version
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Syntax:** ``<owner>/<name>``
+**Specification:** ``<owner>/<name>``
 
 Install the latest package version from the |PIOREGISTRY|.
 
@@ -221,7 +226,7 @@ Install the latest package version from the |PIOREGISTRY|.
 Registry: Specific Version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Syntax:** ``<owner>/<name>@<version>``
+**Specification:** ``<owner>/<name>@<version>``
 
 Install the specified version of a package from the |PIOREGISTRY|.
 This will fail if the version has not been published to the registry.
@@ -235,7 +240,7 @@ This will fail if the version has not been published to the registry.
 Registry: Version Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Syntax:** ``<owner>/<name>@<version requirements>``
+**Specification:** ``<owner>/<name>@<version requirements>``
 
 Install the latest version of a package from the |PIOREGISTRY| matching the
 specified version requirements. See :ref:`cmd_pkg_install_requirements` for details.
@@ -249,7 +254,7 @@ specified version requirements. See :ref:`cmd_pkg_install_requirements` for deta
 Repository (git, hg, svn)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Syntax:** ``[<name>=][<scheme>://][<user>[:<password>]@]<hostname>[:<port>][:][/]<path>[#<commit-ish|branch|tag>]``
+**Specification:** ``[<name>=][<scheme>://][<user>[:<password>]@]<hostname>[:<port>][:][/]<path>[#<commit-ish|branch|tag>]``
 
 Install the package at the specified URL by attempting to clone it.
 If the repository makes use of submodules, those submodules will be cloned as well.
@@ -270,7 +275,7 @@ The supported schemes are:
 * ``svn+ssh``
 
 You can override a package folder name in the Package Manager storage using
-the ``<name>=`` syntax. See example below.
+the ``<name>=`` syntax. See the example below.
 
 **Examples**
 
@@ -290,7 +295,7 @@ the ``<name>=`` syntax. See example below.
 
         git+username@github.com:platformio/platform-espressif32.git
 
-3.  Clone Git repository usgin SSH and custom username
+3.  Clone Git repository using SSH and custom username
 
     .. code:: shell
 
@@ -335,16 +340,16 @@ the ``<name>=`` syntax. See example below.
 Local Folder
 ~~~~~~~~~~~~
 
-**Syntax:** ``[<name>=]file://<folder>``
+**Specification:** ``[<name>=]file://<folder>``
 
 Install a package and its :ref:`libjson_dependencies` from a local folder.
 The source files from a local folder will be copied (not symlinked) to the
-package manager storage. A path should start with ``file://`` prefix and folder
-must contain a manifest file (:ref:`library_json`, ``platform.json`` or ``package.json``)
+package manager storage. A path should start with ``file://`` prefix and the folder
+must contain a manifest file (:ref:`library_json`, ``platform.json``, or ``package.json``)
 with name and version properties.
 
 You can override a package folder name in the Package Manager storage using
-the ``<name>=`` syntax. See example below.
+the ``<name>=`` syntax. See the example below.
 
 **Examples**
 
@@ -362,18 +367,18 @@ the ``<name>=`` syntax. See example below.
 Local TAR or ZIP archive
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Syntax:** ``[<name>=]file://<tar or zip file>``
+**Specification:** ``[<name>=]file://<tar or zip file>``
 
 Install a package and its :ref:`libjson_dependencies` from a local TAR or ZIP archive.
 
 Archive requirements:
 
 * the filename must use ``.tar.gz``, ``.tar``, ``.tgz``, or ``.zip`` as the extension
-* the package must contain a manifest file (:ref:`library_json`, ``platform.json`` or
+* the package must contain a manifest file (:ref:`library_json`, ``platform.json``, or
   ``package.json``) with ``name`` and ``version`` properties.
 
 You can override a package folder name in the Package Manager storage using
-the ``<name>=`` syntax. See example below.
+the ``<name>=`` syntax. See the example below.
 
 **Examples**
 
@@ -391,13 +396,13 @@ the ``<name>=`` syntax. See example below.
 Remote TAR or ZIP archive
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Syntax:** ``[<name>=]<archive url>``
+**Specification:** ``[<name>=]<archive url>``
 
-Fetch the archive url, and then install a package and its :ref:`libjson_dependencies`.
+Fetch the archive URL, and then install a package and its :ref:`libjson_dependencies`.
 The URL must start with ``http://`` or ``https://``.
 
 You can override a package folder name in the Package Manager storage using
-the ``<name>=`` syntax. See example below.
+the ``<name>=`` syntax. See the example below.
 
 **Examples**
 
