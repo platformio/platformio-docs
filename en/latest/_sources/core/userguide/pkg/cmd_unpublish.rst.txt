@@ -32,7 +32,7 @@ tarball.
 If no version is specified, or if all versions are removed then the root package entry
 is removed from the registry entirely.
 
-You can only remove a package version within 72 hours since the published date.
+You can only remove a package version within 72 hours from the published date.
 
 Options
 -------
@@ -43,7 +43,8 @@ Options
     --type
 
 Set the type of a package to unpublish (if you have packages with the same name).
-Possible values are ``library``, ``platform``, or ``tool``. The default is set to ``library``.
+Possible values are ``library``, ``platform``, or ``tool``.
+The default is set to the ``library``.
 
 .. option::
     --undo

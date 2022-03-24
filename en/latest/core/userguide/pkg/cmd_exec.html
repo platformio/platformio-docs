@@ -178,7 +178,7 @@
 <h2><a class="toc-backref" href="#id2">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio pkg <span class="nb">exec</span> <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ARGS<span class="o">]</span>
 pio pkg <span class="nb">exec</span> -- &lt;CMD&gt; <span class="o">[</span>ARGS<span class="o">]</span>
-pio pkg <span class="nb">exec</span> --package &lt;pkg&gt;<span class="o">[</span>@&lt;version&gt;<span class="o">]</span> -- &lt;CMD&gt; <span class="o">[</span>ARGS<span class="o">]</span>
+pio pkg <span class="nb">exec</span> --package &lt;SPECIFICATION&gt; -- &lt;CMD&gt; <span class="o">[</span>ARGS<span class="o">]</span>
 pio pkg <span class="nb">exec</span> --call <span class="s1">&#39;&lt;cmd&gt; [args]&#39;</span>
 </pre></div>
 </div>
@@ -198,7 +198,8 @@ pio pkg <span class="nb">exec</span> --call <span class="s1">&#39;&lt;cmd&gt; [a
 <span id="cmdoption-pio-pkg-exec-package"></span><span class="sig-name descname"><span class="pre">-p</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--package</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-pkg-exec-p" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Run a command from the specified package. If a package has not been installed yet,
+<p>Run a command from the specified package using <a class="reference internal" href="cmd_install.html#cmd-pkg-install-specifications"><span class="std std-ref">Package Specifications</span></a>.
+If a package has not been installed yet,
 PlatformIO will install it from the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a>.</p>
 <p>If a package is not provided, run an arbitrary command from the first matched installed package.</p>
 <dl class="std option">

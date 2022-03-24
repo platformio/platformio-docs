@@ -25,7 +25,7 @@ Usage
 
     pio pkg exec [OPTIONS] [ARGS]
     pio pkg exec -- <CMD> [ARGS]
-    pio pkg exec --package <pkg>[@<version>] -- <CMD> [ARGS]
+    pio pkg exec --package <SPECIFICATION> -- <CMD> [ARGS]
     pio pkg exec --call '<cmd> [args]'
 
 Description
@@ -44,7 +44,8 @@ Options
 .. option::
     -p, --package
 
-Run a command from the specified package. If a package has not been installed yet,
+Run a command from the specified package using :ref:`cmd_pkg_install_specifications`.
+If a package has not been installed yet,
 PlatformIO will install it from the `PlatformIO Registry <https://registry.platformio.org>`__.
 
 If a package is not provided, run an arbitrary command from the first matched installed package.
