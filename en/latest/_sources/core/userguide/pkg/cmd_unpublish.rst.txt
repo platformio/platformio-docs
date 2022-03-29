@@ -43,8 +43,7 @@ Options
     --type
 
 Set the type of a package to unpublish (if you have packages with the same name).
-Possible values are ``library``, ``platform``, or ``tool``.
-The default is set to the ``library``.
+The default is set to the ``library``. See supported :ref:`cmd_pkg_install_types`.
 
 .. option::
     --undo

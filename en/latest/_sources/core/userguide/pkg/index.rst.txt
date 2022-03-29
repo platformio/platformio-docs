@@ -31,6 +31,7 @@ To print all available commands and options use:
     cmd_install
     cmd_list
     cmd_outdated
+    cmd_show
     cmd_pack
     cmd_publish
     cmd_uninstall

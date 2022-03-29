@@ -9,8 +9,6 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. |PIOREGISTRY| replace:: `PlatformIO Registry <https://registry.platformio.org>`__
-
 .. _cmd_pkg_list:
 
 pio pkg list
