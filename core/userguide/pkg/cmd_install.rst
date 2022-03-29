@@ -143,6 +143,8 @@ compatible version will be installed.
 
 Suppress progress reporting.
 
+.. _cmd_pkg_install_types:
+
 Package Types
 -------------
 
