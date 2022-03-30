@@ -134,7 +134,10 @@ your project requirements:
       - Style for formatting code around applied fixes: ``llvm``, ``google``, ``webkit``, ``mozilla``, ``none (default)``
 
     * - ``--system-headers``
-      - Display the errors from system headers.
+      - Display the errors from system headers
+
+    * - ``--config-file=<path>``
+      - Specify the path of ``.clang-tidy`` or custom config file.
 
 
 An example with enabling specific checks and fixing code on the fly:
