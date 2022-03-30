@@ -80,5 +80,6 @@ Show information about `ArduinoJson <https://registry.platformio.org/libraries/b
 See Also
 --------
 
+* :ref:`cmd_pkg_search`
 * :ref:`cmd_pkg_list`
 * :ref:`cmd_pkg_install`
