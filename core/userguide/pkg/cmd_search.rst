@@ -41,7 +41,7 @@ You can use :ref:`cmd_pkg_search_qualifiers` or perform a full-text search over 
 - Development platform boards.
 
 Multiple :ref:`cmd_pkg_search_qualifiers` and full-text search words are allowed if split with space.
-See also :ref:`cmd_pkg_search_syntax` for advanced usage.
+See also :ref:`cmd_pkg_search_operators` for the advanced search.
 
 Options
 -------
@@ -57,48 +57,6 @@ Number of items to skip before starting to collect the result set.
     -s, --sort
 
 Sort method. Available methods are ``relevance``, ``popularity``, ``trending``, ``added``, and ``updated``.
-
-.. _cmd_pkg_search_syntax:
-
-Search Syntax
--------------
-
-|PIOREGISTRY| supports the following operators:
-
-.. list-table::
-    :header-rows:  1
-    :widths: 20 80
-
-    * - Operator
-      - Description
-    * - ``+``
-      - A leading or trailing plus sign indicates that this word must be present
-        in the search result that is returned.
-    * - ``-``
-      - A leading or trailing minus sign indicates that this word must not be
-        present in the search result that is returned.
-    * - ``(no operator)``
-      - By default (when neither ``+`` nor ``-`` is specified), the
-        word is optional, but the packages that contain it are rated higher.
-    * - ``> <``
-      - These two operators are used to change a word's contribution to the
-        relevance value that is assigned to a package. The ``>`` operator
-        increases the contribution and the ``<`` operator decreases it.
-    * - ``( )``
-      - Parentheses group words into subexpressions. Parenthesized groups can
-        be nested.
-    * - ``~``
-      - A leading tilde acts as a negation operator, causing the word's
-        contribution to the package's relevance to be negative. This is useful for
-        marking "noise" words. A package containing such a word is rated lower than
-        others, but is not excluded altogether, as it would be with the ``-`` operator.
-    * - ``*``
-      - The asterisk serves as the truncation (or wildcard) operator. Unlike the
-        other operators, it is appended to the word to be affected. Words match if
-        they begin with the word preceding the ``*`` operator.
-    * - ``"``
-      - A phrase that is enclosed within double quote (``"``) characters matches
-        only packages that contain the phrase literally, as it was typed.
 
 .. _cmd_pkg_search_qualifiers:
 
@@ -220,6 +178,56 @@ You can search for packages that depend on the specified package or for package 
     * - ``dependency:OWNER/NAME``
       - `dependency:"painlessmesh/painlessMesh" <https://registry.platformio.org/search?q=dependency%3A%22painlessmesh%2FpainlessMesh%22>`_
         matches `painlessMesh <https://registry.platformio.org/libraries/painlessmesh/painlessMesh>`__ dependencies
+
+.. _cmd_pkg_search_operators:
+
+Search Operators
+----------------
+
+|PIOREGISTRY| supports the following operators:
+
+.. list-table::
+    :header-rows:  1
+    :widths: 20 80
+
+    * - Operator
+      - Description
+    * - ``+``
+      - A leading or trailing plus sign indicates that this word must be present
+        in the search result that is returned.
+
+        --
+
+        **Example**: `json +arduino <https://registry.platformio.org/search?q=json+%2Barduino>`__
+        matches JSON-related packages that contain the "arduino" word in the package metadata
+
+    * - ``-``
+      - A leading or trailing minus sign indicates that this word must not be
+        present in the search result that is returned.
+
+        --
+
+        **Example**: `json -mbed <https://registry.platformio.org/search?q=json+-mbed>`__
+        matches JSON-related packages that do not contain the "mbed" word in the package metadata
+
+    * - ``*``
+      - The asterisk serves as the truncation (or wildcard) operator. Unlike the
+        other operators, it is appended to the word to be affected. Words match if
+        they begin with the word preceding the ``*`` operator.
+
+        --
+
+        **Example**: `DHT* <https://registry.platformio.org/search?q=DHT*>`__
+        matches packages that contain a word that starts with "DHT"
+
+    * - ``"``
+      - A phrase that is enclosed within double quote (``"``) characters matches
+        only packages that contain the phrase literally, as it was typed.
+
+        --
+
+        **Example**: `"humidity sensor" <https://registry.platformio.org/search?q=%22humidity+sensor%22>`__
+        matches packages that contain the "humidity sensor" phrase.
 
 Examples
 --------
