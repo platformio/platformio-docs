@@ -169,17 +169,17 @@
 <li><p><a class="reference internal" href="#usage" id="id2">Usage</a></p></li>
 <li><p><a class="reference internal" href="#description" id="id3">Description</a></p></li>
 <li><p><a class="reference internal" href="#options" id="id4">Options</a></p></li>
-<li><p><a class="reference internal" href="#search-syntax" id="id5">Search Syntax</a></p></li>
-<li><p><a class="reference internal" href="#search-qualifiers" id="id6">Search Qualifiers</a></p>
+<li><p><a class="reference internal" href="#search-qualifiers" id="id5">Search Qualifiers</a></p>
 <ul>
-<li><p><a class="reference internal" href="#search-by-type-or-tier" id="id7">Search by type or tier</a></p></li>
-<li><p><a class="reference internal" href="#search-by-metadata" id="id8">Search by metadata</a></p></li>
-<li><p><a class="reference internal" href="#search-by-ownership-or-contribution" id="id9">Search by ownership or contribution</a></p></li>
-<li><p><a class="reference internal" href="#filter-by-compatibility" id="id10">Filter by compatibility</a></p></li>
-<li><p><a class="reference internal" href="#search-by-library-header" id="id11">Search by library header</a></p></li>
-<li><p><a class="reference internal" href="#filter-by-dependencies" id="id12">Filter by dependencies</a></p></li>
+<li><p><a class="reference internal" href="#search-by-type-or-tier" id="id6">Search by type or tier</a></p></li>
+<li><p><a class="reference internal" href="#search-by-metadata" id="id7">Search by metadata</a></p></li>
+<li><p><a class="reference internal" href="#search-by-ownership-or-contribution" id="id8">Search by ownership or contribution</a></p></li>
+<li><p><a class="reference internal" href="#filter-by-compatibility" id="id9">Filter by compatibility</a></p></li>
+<li><p><a class="reference internal" href="#search-by-library-header" id="id10">Search by library header</a></p></li>
+<li><p><a class="reference internal" href="#filter-by-dependencies" id="id11">Filter by dependencies</a></p></li>
 </ul>
 </li>
+<li><p><a class="reference internal" href="#search-operators" id="id12">Search Operators</a></p></li>
 <li><p><a class="reference internal" href="#examples" id="id13">Examples</a></p></li>
 <li><p><a class="reference internal" href="#see-also" id="id14">See Also</a></p></li>
 </ul>
@@ -205,7 +205,7 @@ You can use <a class="reference internal" href="#cmd-pkg-search-qualifiers"><spa
 <li><p>Development platform boards.</p></li>
 </ul>
 <p>Multiple <a class="reference internal" href="#cmd-pkg-search-qualifiers"><span class="std std-ref">Search Qualifiers</span></a> and full-text search words are allowed if split with space.
-See also <a class="reference internal" href="#cmd-pkg-search-syntax"><span class="std std-ref">Search Syntax</span></a> for advanced usage.</p>
+See also <a class="reference internal" href="#cmd-pkg-search-operators"><span class="std std-ref">Search Operators</span></a> for the advanced search.</p>
 </section>
 <section id="options">
 <h2><a class="toc-backref" href="#id4">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
@@ -222,65 +222,12 @@ See also <a class="reference internal" href="#cmd-pkg-search-syntax"><span class
 
 <p>Sort method. Available methods are <code class="docutils literal notranslate"><span class="pre">relevance</span></code>, <code class="docutils literal notranslate"><span class="pre">popularity</span></code>, <code class="docutils literal notranslate"><span class="pre">trending</span></code>, <code class="docutils literal notranslate"><span class="pre">added</span></code>, and <code class="docutils literal notranslate"><span class="pre">updated</span></code>.</p>
 </section>
-<section id="search-syntax">
-<span id="cmd-pkg-search-syntax"></span><h2><a class="toc-backref" href="#id5">Search Syntax</a><a class="headerlink" href="#search-syntax" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> supports the following operators:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Operator</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
-<td><p>A leading or trailing plus sign indicates that this word must be present
-in the search result that is returned.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
-<td><p>A leading or trailing minus sign indicates that this word must not be
-present in the search result that is returned.</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(no</span> <span class="pre">operator)</span></code></p></td>
-<td><p>By default (when neither <code class="docutils literal notranslate"><span class="pre">+</span></code> nor <code class="docutils literal notranslate"><span class="pre">-</span></code> is specified), the
-word is optional, but the packages that contain it are rated higher.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">&lt;</span></code></p></td>
-<td><p>These two operators are used to change a word’s contribution to the
-relevance value that is assigned to a package. The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> operator
-increases the contribution and the <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> operator decreases it.</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">)</span></code></p></td>
-<td><p>Parentheses group words into subexpressions. Parenthesized groups can
-be nested.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">~</span></code></p></td>
-<td><p>A leading tilde acts as a negation operator, causing the word’s
-contribution to the package’s relevance to be negative. This is useful for
-marking “noise” words. A package containing such a word is rated lower than
-others, but is not excluded altogether, as it would be with the <code class="docutils literal notranslate"><span class="pre">-</span></code> operator.</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
-<td><p>The asterisk serves as the truncation (or wildcard) operator. Unlike the
-other operators, it is appended to the word to be affected. Words match if
-they begin with the word preceding the <code class="docutils literal notranslate"><span class="pre">*</span></code> operator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&quot;</span></code></p></td>
-<td><p>A phrase that is enclosed within double quote (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) characters matches
-only packages that contain the phrase literally, as it was typed.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="search-qualifiers">
-<span id="cmd-pkg-search-qualifiers"></span><h2><a class="toc-backref" href="#id6">Search Qualifiers</a><a class="headerlink" href="#search-qualifiers" title="Permalink to this headline">¶</a></h2>
+<span id="cmd-pkg-search-qualifiers"></span><h2><a class="toc-backref" href="#id5">Search Qualifiers</a><a class="headerlink" href="#search-qualifiers" title="Permalink to this headline">¶</a></h2>
 <p>You can search for packages on the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> and narrow the results using
 these search qualifiers in any combination.</p>
 <section id="search-by-type-or-tier">
-<h3><a class="toc-backref" href="#id7">Search by type or tier</a><a class="headerlink" href="#search-by-type-or-tier" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Search by type or tier</a><a class="headerlink" href="#search-by-type-or-tier" title="Permalink to this headline">¶</a></h3>
 <p>You can search packages by <code class="docutils literal notranslate"><span class="pre">type</span></code> (see <a class="reference internal" href="cmd_install.html#cmd-pkg-install-types"><span class="std std-ref">Package Types</span></a>)
 or <code class="docutils literal notranslate"><span class="pre">tier</span></code> qualifier.</p>
 <table class="colwidths-given docutils align-default">
@@ -313,7 +260,7 @@ matches community packages.</p></li>
 </table>
 </section>
 <section id="search-by-metadata">
-<h3><a class="toc-backref" href="#id8">Search by metadata</a><a class="headerlink" href="#search-by-metadata" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Search by metadata</a><a class="headerlink" href="#search-by-metadata" title="Permalink to this headline">¶</a></h3>
 <p>Search for packages by their metadata.</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -342,7 +289,7 @@ matches AI and ML compatible packages</p></td>
 </table>
 </section>
 <section id="search-by-ownership-or-contribution">
-<h3><a class="toc-backref" href="#id9">Search by ownership or contribution</a><a class="headerlink" href="#search-by-ownership-or-contribution" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Search by ownership or contribution</a><a class="headerlink" href="#search-by-ownership-or-contribution" title="Permalink to this headline">¶</a></h3>
 <p>Search for packages owned by the <code class="docutils literal notranslate"><span class="pre">owner</span></code> or maintained by the <code class="docutils literal notranslate"><span class="pre">author</span></code>.</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -367,7 +314,7 @@ matches packages with Paul Stoffregen’s contribution</p></td>
 </table>
 </section>
 <section id="filter-by-compatibility">
-<h3><a class="toc-backref" href="#id10">Filter by compatibility</a><a class="headerlink" href="#filter-by-compatibility" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Filter by compatibility</a><a class="headerlink" href="#filter-by-compatibility" title="Permalink to this headline">¶</a></h3>
 <p>You can filter packages by compatibility using <code class="docutils literal notranslate"><span class="pre">framework</span></code> or <code class="docutils literal notranslate"><span class="pre">platform</span></code> qualifier.</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -392,7 +339,7 @@ matches packages compatible with Espressif32 development platform</p></td>
 </table>
 </section>
 <section id="search-by-library-header">
-<h3><a class="toc-backref" href="#id11">Search by library header</a><a class="headerlink" href="#search-by-library-header" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id10">Search by library header</a><a class="headerlink" href="#search-by-library-header" title="Permalink to this headline">¶</a></h3>
 <p>You can search for libraries that contain header file.</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -413,7 +360,7 @@ matches packages that contain <code class="docutils literal notranslate"><span c
 </table>
 </section>
 <section id="filter-by-dependencies">
-<h3><a class="toc-backref" href="#id12">Filter by dependencies</a><a class="headerlink" href="#filter-by-dependencies" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11">Filter by dependencies</a><a class="headerlink" href="#filter-by-dependencies" title="Permalink to this headline">¶</a></h3>
 <p>You can search for packages that depend on the specified package or for package dependencies.</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -437,6 +384,56 @@ matches <a class="reference external" href="https://registry.platformio.org/libr
 </tbody>
 </table>
 </section>
+</section>
+<section id="search-operators">
+<span id="cmd-pkg-search-operators"></span><h2><a class="toc-backref" href="#id12">Search Operators</a><a class="headerlink" href="#search-operators" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> supports the following operators:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
+<td><p>A leading or trailing plus sign indicates that this word must be present
+in the search result that is returned.</p>
+<p>–</p>
+<p><strong>Example</strong>: <a class="reference external" href="https://registry.platformio.org/search?q=json+%2Barduino">json +arduino</a>
+matches JSON-related packages that contain the “arduino” word in the package metadata</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p>A leading or trailing minus sign indicates that this word must not be
+present in the search result that is returned.</p>
+<p>–</p>
+<p><strong>Example</strong>: <a class="reference external" href="https://registry.platformio.org/search?q=json+-mbed">json -mbed</a>
+matches JSON-related packages that do not contain the “mbed” word in the package metadata</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td><p>The asterisk serves as the truncation (or wildcard) operator. Unlike the
+other operators, it is appended to the word to be affected. Words match if
+they begin with the word preceding the <code class="docutils literal notranslate"><span class="pre">*</span></code> operator.</p>
+<p>–</p>
+<p><strong>Example</strong>: <a class="reference external" href="https://registry.platformio.org/search?q=DHT*">DHT*</a>
+matches packages that contain a word that starts with “DHT”</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&quot;</span></code></p></td>
+<td><p>A phrase that is enclosed within double quote (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) characters matches
+only packages that contain the phrase literally, as it was typed.</p>
+<p>–</p>
+<p><strong>Example</strong>: <a class="reference external" href="https://registry.platformio.org/search?q=%22humidity+sensor%22">“humidity sensor”</a>
+matches packages that contain the “humidity sensor” phrase.</p>
+</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="examples">
 <h2><a class="toc-backref" href="#id13">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
