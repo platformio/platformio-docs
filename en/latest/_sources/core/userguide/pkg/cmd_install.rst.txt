@@ -167,7 +167,7 @@ Browse over 10,000 packages in the |PIOREGISTRY|.
 Package Specifications
 ----------------------
 
-:ref:`piocore` supports different package sources which you can specify for
+PlatformIO supports different package sources which you can specify for
 :ref:`cmd_pkg_install` command or configure project dependencies using
 :ref:`projectconf` options:
 
@@ -426,11 +426,17 @@ Version Requirements
 
 .. note::
 
-    :ref:`piocore` uses `python-semanticversion <https://github.com/rbarrois/python-semanticversion>`_
+    PlatformIO uses `python-semanticversion <https://github.com/rbarrois/python-semanticversion>`_
     library to handle SemVer versions and specifications.
 
-The ``@<version requirements>`` specification supports `Semantic Versioning <https://devhints.io/semver>`_ (
-``<major>.<minor>.<patch>``) and can take any of the following forms:
+The ``@<version requirements>`` specification supports `Semantic Versioning <https://semver.org/>`_ (
+``<MAJOR>.<MINOR>.<PATCH>``):
+
+* ``MAJOR`` - incompatible API changes
+* ``MINOR`` - add functionality (backwards-compatible)
+* ``PATCH`` - bug fixes (backwards-compatible).
+
+The version requirements can take any of the following forms (see `Semver cheatsheet <https://devhints.io/semver>`_):
 
 * ``^1.2.3`` - any compatible version (new functionality in a backwards compatible
   manner and patches are allowed, 1.x.x). **RECOMMENDED**

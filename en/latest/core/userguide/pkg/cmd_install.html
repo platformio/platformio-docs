@@ -330,7 +330,7 @@ that are used to build a project, debug it or upload firmware to the target devi
 </section>
 <section id="package-specifications">
 <span id="cmd-pkg-install-specifications"></span><h2><a class="toc-backref" href="#id7">Package Specifications</a><a class="headerlink" href="#package-specifications" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../../index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> supports different package sources which you can specify for
+<p>PlatformIO supports different package sources which you can specify for
 <a class="reference internal" href="#cmd-pkg-install"><span class="std std-ref">pio pkg install</span></a> command or configure project dependencies using
 <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> options:</p>
 <ul class="simple">
@@ -551,11 +551,17 @@ https://github.com/bblanchon/ArduinoJson/archive/refs/heads/6.x.zip
 <span id="cmd-pkg-install-requirements"></span><h2><a class="toc-backref" href="#id15">Version Requirements</a><a class="headerlink" href="#version-requirements" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><a class="reference internal" href="../../index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> uses <a class="reference external" href="https://github.com/rbarrois/python-semanticversion">python-semanticversion</a>
+<p>PlatformIO uses <a class="reference external" href="https://github.com/rbarrois/python-semanticversion">python-semanticversion</a>
 library to handle SemVer versions and specifications.</p>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">&#64;&lt;version</span> <span class="pre">requirements&gt;</span></code> specification supports <a class="reference external" href="https://devhints.io/semver">Semantic Versioning</a> (
-<code class="docutils literal notranslate"><span class="pre">&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</span></code>) and can take any of the following forms:</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">&#64;&lt;version</span> <span class="pre">requirements&gt;</span></code> specification supports <a class="reference external" href="https://semver.org/">Semantic Versioning</a> (
+<code class="docutils literal notranslate"><span class="pre">&lt;MAJOR&gt;.&lt;MINOR&gt;.&lt;PATCH&gt;</span></code>):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">MAJOR</span></code> - incompatible API changes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MINOR</span></code> - add functionality (backwards-compatible)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PATCH</span></code> - bug fixes (backwards-compatible).</p></li>
+</ul>
+<p>The version requirements can take any of the following forms (see <a class="reference external" href="https://devhints.io/semver">Semver cheatsheet</a>):</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">^1.2.3</span></code> - any compatible version (new functionality in a backwards compatible
 manner and patches are allowed, 1.x.x). <strong>RECOMMENDED</strong></p></li>
@@ -719,7 +725,7 @@ platformio/espressif32@^3.5.0,!<span class="o">=</span><span class="m">3</span>.
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0a3 (latest)
+    v5.3.0b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

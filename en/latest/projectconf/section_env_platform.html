@@ -161,53 +161,44 @@
 </div>
 <section id="platform">
 <span id="projectconf-env-platform"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">platform</span></code></a><a class="headerlink" href="#platform" title="Permalink to this headline">¶</a></h2>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
-<p><a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> name.</p>
-<p>PlatformIO allows one to use specific version of platform using
-<a class="reference external" href="https://devhints.io/semver">Semantic Versioning</a> (X.Y.Z=MAJOR.MINOR.PATCH) or VCS
-(Git, Mercurial and Subversion).</p>
-<p>Version specifications can take any of the following forms:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">1.2.3</span></code>: an exact version number. Use only this exact version</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">^1.2.3</span></code>: any compatible version (exact version for <code class="docutils literal notranslate"><span class="pre">1.x.x</span></code> versions)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">~1.2.3</span></code>: any version with the same major and minor versions, and an
-equal or greater patch version</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&gt;1.2.3</span></code>: any version greater than <code class="docutils literal notranslate"><span class="pre">1.2.3</span></code>. <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, and <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>
-are also possible</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&gt;0.1.0,!=0.2.0,&lt;0.3.0</span></code>: any version greater than <code class="docutils literal notranslate"><span class="pre">0.1.0</span></code>, not equal to
-<code class="docutils literal notranslate"><span class="pre">0.2.0</span></code> and less than <code class="docutils literal notranslate"><span class="pre">0.3.0</span></code></p></li>
-</ul>
-<p>Other forms are the same as for the  <a class="reference internal" href="../core/userguide/platforms/cmd_install.html#cmd-platform-install"><span class="std std-ref">pio platform install</span></a> command.</p>
-<p>Examples:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:the_latest_version]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">Package</span> <span class="pre">Specification</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>Specify a development platform that provides integration of vendor-specific
+boards (development kits, MCUs), high-level frameworks, and SDKs.
+See <a class="reference internal" href="../core/userguide/pkg/cmd_install.html#cmd-pkg-install-specifications"><span class="std std-ref">Package Specifications</span></a> for details.</p>
+<p><a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> allows you to explore supported development platforms, boards, frameworks, and toolchains.</p>
+<p>For the advanced platform configuration, please check the <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> documentation.</p>
+<p>Example of using a <a class="reference external" href="https://registry.platformio.org/platforms/platformio/espressif32">Espressif 32 development platform</a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:recommended_specification]</span><span class="w"></span>
+<span class="c1">; allow backwards-compatible new functionality and bug-fixes</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@^3.5.0</span><span class="w"></span>
+
+<span class="k">[env:allow_only_bug_fixes]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@~3.5.0</span><span class="w"></span>
 
 <span class="k">[env:exact_version]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@1.2.3</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@3.5.0</span><span class="w"></span>
 
-<span class="k">[env:specific_major_version]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@^1.2.3</span><span class="w"></span>
-
-<span class="k">[env:specific_major_and_minor_version]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@~1.2.3</span><span class="w"></span>
+<span class="k">[env:latest_version]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
 
 <span class="k">[env:development_verion_by_git]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-ststm32.git</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git</span><span class="w"></span>
 
 <span class="k">[env:custom_git_branch]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif8266.git#feature/stage</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git#master</span><span class="w"></span>
 
 <span class="k">[env:specific_git_commit]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif8266.git#921855a9c530082efddb5d48b44c3f4be0e2dfa2</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git#f8340a2081a31c2ac8ed2b16907f2a21dc8897d4</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="platform-packages">
 <span id="projectconf-env-platform-packages"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">platform_packages</span></code></a><a class="headerlink" href="#platform-packages" title="Permalink to this headline">¶</a></h2>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">Package</span> <span class="pre">Specification</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Configure custom packages per a build environment. You can also override
-default packages by <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> using the same name. Packages will be
-installed in <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a>.</p>
+default packages by <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> using the same name.
+See <a class="reference internal" href="../core/userguide/pkg/cmd_install.html#cmd-pkg-install-specifications"><span class="std std-ref">Package Specifications</span></a> for details.</p>
+<p>Check the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> for the available toolchains, frameworks, SDKs, etc.</p>
 <p>Examples:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:override_default_toolchain]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
@@ -436,7 +427,7 @@ and open JSON file to list all available options.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0a3 (latest)
+    v5.3.0b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

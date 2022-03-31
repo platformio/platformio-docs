@@ -167,28 +167,15 @@
 <p class="admonition-title">See also</p>
 <p>Please make sure to read <a class="reference internal" href="../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a> guide first.</p>
 </div>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
-<p>Specify project dependencies that should be installed automatically to
+<p>Type: <code class="docutils literal notranslate"><span class="pre">Package</span> <span class="pre">Specification</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
+<p>Specify project dependencies using <a class="reference internal" href="../core/userguide/pkg/cmd_install.html#cmd-pkg-install-specifications"><span class="std std-ref">Package Specifications</span></a>
+that should be installed automatically to
 <a class="reference internal" href="section_platformio.html#projectconf-pio-libdeps-dir"><span class="std std-ref">libdeps_dir</span></a> before environment processing.</p>
 <p>If you have multiple build environments that depend on the same libraries,
-you can use <a class="reference internal" href="interpolation.html#projectconf-interpolation"><span class="std std-ref">Interpolation of Values</span></a> to use common configuration.</p>
-<p><strong>Valid forms</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; one line definition (comma + space)</span><span class="w"></span>
-<span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">LIBRARY_1, LIBRARY_2, LIBRARY_N</span><span class="w"></span>
-
-<span class="c1">; multi-line definition</span><span class="w"></span>
-<span class="k">[env:myenv2]</span><span class="w"></span>
-<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">LIBRARY_1</span><span class="w"></span>
-<span class="w">  </span><span class="na">LIBRARY_2</span><span class="w"></span>
-<span class="w">  </span><span class="na">LIBRARY_N</span><span class="w"></span>
-</pre></div>
-</div>
-<p>The each line with <code class="docutils literal notranslate"><span class="pre">LIBRARY_1...</span> <span class="pre">LIBRARY_N</span></code> will be passed automatically to
-<a class="reference internal" href="../core/userguide/lib/cmd_install.html#cmd-lib-install"><span class="std std-ref">pio lib install</span></a> command.</p>
-<p>Please check <a class="reference internal" href="../core/userguide/lib/cmd_install.html#cmd-lib-install"><span class="std std-ref">pio lib install</span></a> for the valid declaration formats.</p>
-<p>Example:</p>
+you can use <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a> or <a class="reference internal" href="interpolation.html#projectconf-interpolation"><span class="std std-ref">Interpolation of Values</span></a>
+to use the common configuration.</p>
+<p>Check the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> for the available libraries and the installation instruction.</p>
+<p><strong>Example</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
 <span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
 <span class="w">  </span><span class="c1">; name-based (built-in library in framework)</span><span class="w"></span>
@@ -460,7 +447,7 @@ symbols defined in framework or other libraries.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0a3 (latest)
+    v5.3.0b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
