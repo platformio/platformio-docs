@@ -9,6 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. |PIOREGISTRY| replace:: `PlatformIO Registry <https://registry.platformio.org>`__
+
 .. _projectconf_section_env_platform:
 
 Platform options
@@ -22,62 +24,54 @@ Platform options
 ``platform``
 ^^^^^^^^^^^^
 
-Type: ``String`` | Multiple: ``No``
+Type: ``Package Specification`` | Multiple: ``No``
 
-:ref:`platforms` name.
+Specify a development platform that provides integration of vendor-specific
+boards (development kits, MCUs), high-level frameworks, and SDKs.
+See :ref:`cmd_pkg_install_specifications` for details.
 
-PlatformIO allows one to use specific version of platform using
-`Semantic Versioning <https://devhints.io/semver>`_ (X.Y.Z=MAJOR.MINOR.PATCH) or VCS
-(Git, Mercurial and Subversion).
+|PIOREGISTRY| allows you to explore supported development platforms, boards, frameworks, and toolchains.
 
-Version specifications can take any of the following forms:
+For the advanced platform configuration, please check the :ref:`platforms` documentation.
 
-* ``1.2.3``: an exact version number. Use only this exact version
-* ``^1.2.3``: any compatible version (exact version for ``1.x.x`` versions)
-* ``~1.2.3``: any version with the same major and minor versions, and an
-  equal or greater patch version
-* ``>1.2.3``: any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
-  are also possible
-* ``>0.1.0,!=0.2.0,<0.3.0``: any version greater than ``0.1.0``, not equal to
-  ``0.2.0`` and less than ``0.3.0``
-
-Other forms are the same as for the  :ref:`cmd_platform_install` command.
-
-Examples:
+Example of using a `Espressif 32 development platform <https://registry.platformio.org/platforms/platformio/espressif32>`_:
 
 .. code-block:: ini
 
-    [env:the_latest_version]
-    platform = atmelavr
+    [env:recommended_specification]
+    ; allow backwards-compatible new functionality and bug-fixes
+    platform = espressif32@^3.5.0
+
+    [env:allow_only_bug_fixes]
+    platform = espressif32@~3.5.0
 
     [env:exact_version]
-    platform = atmelavr@1.2.3
+    platform = espressif32@3.5.0
 
-    [env:specific_major_version]
-    platform = atmelavr@^1.2.3
-
-    [env:specific_major_and_minor_version]
-    platform = atmelavr@~1.2.3
+    [env:latest_version]
+    platform = espressif32
 
     [env:development_verion_by_git]
-    platform = https://github.com/platformio/platform-ststm32.git
+    platform = https://github.com/platformio/platform-espressif32.git
 
     [env:custom_git_branch]
-    platform = https://github.com/platformio/platform-espressif8266.git#feature/stage
+    platform = https://github.com/platformio/platform-espressif32.git#master
 
     [env:specific_git_commit]
-    platform = https://github.com/platformio/platform-espressif8266.git#921855a9c530082efddb5d48b44c3f4be0e2dfa2
+    platform = https://github.com/platformio/platform-espressif32.git#f8340a2081a31c2ac8ed2b16907f2a21dc8897d4
 
 .. _projectconf_env_platform_packages:
 
 ``platform_packages``
 ^^^^^^^^^^^^^^^^^^^^^
 
-Type: ``String`` | Multiple: ``Yes``
+Type: ``Package Specification`` | Multiple: ``Yes``
 
 Configure custom packages per a build environment. You can also override
-default packages by :ref:`platforms` using the same name. Packages will be
-installed in :ref:`projectconf_pio_packages_dir`.
+default packages by :ref:`platforms` using the same name.
+See :ref:`cmd_pkg_install_specifications` for details.
+
+Check the |PIOREGISTRY| for the available toolchains, frameworks, SDKs, etc.
 
 Examples:
 

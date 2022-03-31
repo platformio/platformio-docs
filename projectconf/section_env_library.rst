@@ -9,6 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. |PIOREGISTRY| replace:: `PlatformIO Registry <https://registry.platformio.org>`__
+
 .. _projectconf_section_env_library:
 
 Library options
@@ -28,35 +30,19 @@ Library options
 .. seealso::
     Please make sure to read :ref:`ldf` guide first.
 
-Type: ``String`` | Multiple: ``Yes``
+Type: ``Package Specification`` | Multiple: ``Yes``
 
-Specify project dependencies that should be installed automatically to
+Specify project dependencies using :ref:`cmd_pkg_install_specifications`
+that should be installed automatically to
 :ref:`projectconf_pio_libdeps_dir` before environment processing.
 
 If you have multiple build environments that depend on the same libraries,
-you can use :ref:`projectconf_interpolation` to use common configuration.
+you can use :ref:`projectconf_section_env` or :ref:`projectconf_interpolation`
+to use the common configuration.
 
-**Valid forms**
+Check the |PIOREGISTRY| for the available libraries and the installation instruction.
 
-.. code-block:: ini
-
-  ; one line definition (comma + space)
-  [env:myenv]
-  lib_deps = LIBRARY_1, LIBRARY_2, LIBRARY_N
-
-  ; multi-line definition
-  [env:myenv2]
-  lib_deps =
-    LIBRARY_1
-    LIBRARY_2
-    LIBRARY_N
-
-The each line with ``LIBRARY_1... LIBRARY_N`` will be passed automatically to
-:ref:`cmd_lib_install` command.
-
-Please check :ref:`cmd_lib_install` for the valid declaration formats.
-
-Example:
+**Example**
 
 .. code-block:: ini
 
