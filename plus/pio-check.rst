@@ -78,6 +78,19 @@ from :ref:`projectconf` using the next options:
 
   ../projectconf/section_env_check
 
+Custom tool version can be configured using :ref:`projectconf_env_platform_packages` option.
+Check `PlatformIO Registry <https://registry.platformio.org/>`_ for the available versions.
+
+**Example**
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = ...
+    board = ...
+    check_tool = cppcheck
+    platform_packages = tool-cppcheck@1.260.0
+
 .. _check_tools:
 
 Check tools
