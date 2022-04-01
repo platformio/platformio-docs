@@ -216,6 +216,16 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 </li>
 </ul>
 </div>
+<p>Custom tool version can be configured using <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a> option.
+Check <a class="reference external" href="https://registry.platformio.org/">PlatformIO Registry</a> for the available versions.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck</span><span class="w"></span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">tool-cppcheck@1.260.0</span><span class="w"></span>
+</pre></div>
+</div>
 </section>
 <section id="check-tools">
 <span id="id1"></span><h2><a class="toc-backref" href="#id5">Check tools</a><a class="headerlink" href="#check-tools" title="Permalink to this headline">¶</a></h2>
