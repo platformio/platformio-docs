@@ -232,7 +232,7 @@ Platforms
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
     * - :ref:`platform_raspberrypi`
-      - RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+      - RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
     * - :ref:`platform_shakti`
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
@@ -1253,6 +1253,20 @@ Boards
       - 48MHz
       - 16KB
       - 4KB
+    * - :ref:`board_ststm32_devebox_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_devebox_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_atmelsam_digix`
       - :ref:`platform_atmelsam`
       - External
@@ -1366,6 +1380,20 @@ Boards
       - 1MB
       - 256KB
     * - :ref:`board_ststm32_electrosmith_daisy`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
@@ -4102,6 +4130,20 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_weact_mini_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_weact_mini_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_espressif32_wemos_d1_mini32`
       - :ref:`platform_espressif32`
       - External

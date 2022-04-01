@@ -72,7 +72,7 @@ Platforms
       - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.
 
     * - :ref:`platform_raspberrypi`
-      - RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+      - RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
@@ -2311,6 +2311,18 @@ Please click on board name for the further details.
       - 48MHz
       - 16KB
       - 4KB
+    * - :ref:`board_ststm32_devebox_h743vitx`
+      - :ref:`platform_ststm32`
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_devebox_h750vbtx`
+      - :ref:`platform_ststm32`
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_atmelsam_digix`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -2360,6 +2372,18 @@ Please click on board name for the further details.
       - 192KB
       - 20KB
     * - :ref:`board_ststm32_electrosmith_daisy`
+      - :ref:`platform_ststm32`
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
+      - :ref:`platform_ststm32`
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - :ref:`platform_ststm32`
       - STM32H750IBK6
       - 400MHz
@@ -3559,6 +3583,18 @@ Please click on board name for the further details.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_weact_mini_h743vitx`
+      - :ref:`platform_ststm32`
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_weact_mini_h750vbtx`
+      - :ref:`platform_ststm32`
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_espressif32_wemos_d1_mini32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -5349,6 +5385,34 @@ Delta
       - 512KB
       - 64KB
 
+DevEBox
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_devebox_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_devebox_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
+
 DigiStump
 ~~~~~~~~~
 
@@ -5825,6 +5889,20 @@ Electrosmith
       - Flash
       - RAM
     * - :ref:`board_ststm32_electrosmith_daisy`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
@@ -11305,6 +11383,20 @@ WeAct Studio
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_weact_mini_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_weact_mini_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
 
 Wicked Device
 ~~~~~~~~~~~~~
