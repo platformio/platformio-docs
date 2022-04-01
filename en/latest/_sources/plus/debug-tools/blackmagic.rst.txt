@@ -935,6 +935,20 @@ Boards
       - 48MHz
       - 16KB
       - 4KB
+    * - :ref:`board_ststm32_devebox_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_devebox_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_atmelsam_digix`
       - :ref:`platform_atmelsam`
       - External
@@ -999,6 +1013,20 @@ Boards
       - 1MB
       - 256KB
     * - :ref:`board_ststm32_electrosmith_daisy`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
@@ -3056,6 +3084,20 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_weact_mini_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_weact_mini_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_wraith32_v1`
       - :ref:`platform_ststm32`
       - External

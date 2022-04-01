@@ -778,12 +778,32 @@ Please click on board name for the further details.
       - 48MHz
       - 16KB
       - 4KB
+    * - :ref:`board_ststm32_devebox_h743vitx`
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_devebox_h750vbtx`
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_econode_l082cz`
       - STM32L082CZY6
       - 32MHz
       - 192KB
       - 20KB
     * - :ref:`board_ststm32_electrosmith_daisy`
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - STM32H750IBK6
       - 400MHz
       - 512KB
@@ -1403,6 +1423,16 @@ Please click on board name for the further details.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_weact_mini_h743vitx`
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_weact_mini_h750vbtx`
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_wraith32_v1`
       - STM32F051K6
       - 48MHz
@@ -1881,6 +1911,31 @@ BluesWireless
       - 2MB
       - 640KB
 
+DevEBox
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_devebox_h743vitx`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_devebox_h750vbtx`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
+
 Diymore
 ~~~~~~~
 
@@ -1932,6 +1987,18 @@ Electrosmith
       - Flash
       - RAM
     * - :ref:`board_ststm32_electrosmith_daisy`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - External
       - STM32H750IBK6
       - 400MHz
@@ -3745,6 +3812,18 @@ WeAct Studio
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_weact_mini_h743vitx`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_weact_mini_h750vbtx`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
 
 rhomb.io
 ~~~~~~~~

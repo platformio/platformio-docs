@@ -209,7 +209,7 @@ Platforms
       - OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.
 
     * - :ref:`platform_raspberrypi`
-      - RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+      - RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
@@ -1978,6 +1978,34 @@ Delta
       - 256KB
       - 16KB
 
+DevEBox
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_devebox_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_devebox_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
+
 Digilent
 ~~~~~~~~
 
@@ -2209,6 +2237,20 @@ Electrosmith
       - Flash
       - RAM
     * - :ref:`board_ststm32_electrosmith_daisy`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
@@ -7584,6 +7626,20 @@ WeAct Studio
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_weact_mini_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_weact_mini_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
 
 Wicked Device
 ~~~~~~~~~~~~~

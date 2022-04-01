@@ -983,8 +983,12 @@ ST STM32
     ststm32/coreboard_f401rc
     ststm32/cricket_l082cz
     ststm32/demo_f030f4
+    ststm32/devebox_h743vitx
+    ststm32/devebox_h750vbtx
     ststm32/econode_l082cz
     ststm32/electrosmith_daisy
+    ststm32/electrosmith_daisy_patch_sm
+    ststm32/electrosmith_daisy_petal_sm
     ststm32/elektor_f072cb
     ststm32/elektor_f072c8
     ststm32/elmo_f411re
@@ -1201,6 +1205,8 @@ ST STM32
     ststm32/blackpill_f401cc
     ststm32/blackpill_f411ce
     ststm32/blackpill_f401ce
+    ststm32/weact_mini_h743vitx
+    ststm32/weact_mini_h750vbtx
     ststm32/wraith32_v1
     ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211
