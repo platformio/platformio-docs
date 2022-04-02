@@ -172,6 +172,7 @@
 <li><p>Ignore files according to the patterns declared in “.gitignore” when using the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_pack.html">pio package pack</a> command (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4188">issue #4188</a>)</p></li>
 <li><p>Dropped automatic updates of global libraries and development platforms (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4179">issue #4179</a>)</p></li>
 <li><p>Dropped support for the “pythonPackages” field in “platform.json” manifest in favor of <a class="reference external" href="https://docs.platformio.org/en/latest/scripting/examples/extra_python_packages.html">Extra Python Dependencies</a></p></li>
+<li><p>Fixed an issue when manually removed dependencies from the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file were not uninstalled from the storage (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3076">issue #3076</a>)</p></li>
 </ul>
 </li>
 <li><p><strong>Static Code Analysis</strong></p>
@@ -180,10 +181,13 @@
 <li><p>Added ability to override a tool version using the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/section_env_platform.html#platform-packages">platform_packages</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3798">issue #3798</a>)</p></li>
 </ul>
 </li>
-<li><p><strong>Miscellaneous</strong></p></li>
+<li><p><strong>Miscellaneous</strong></p>
+<ul>
 <li><p>Show project dependency licenses when building in the verbose mode</p></li>
 <li><p>Improved PIO Remote setup on credit-card sized computers (Raspberry Pi, BeagleBon, etc) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3865">issue #3865</a>)</p></li>
 <li><p>Better handling of the failed tests using the <a class="reference external" href="https://docs.platformio.org/en/latest/plus/unit-testing.html">Unit Testing</a> solution.</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="id2">
