@@ -9,6 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. |PIOREGISTRY| replace:: `PlatformIO Registry <https://registry.platformio.org>`__
+
 .. _library_json:
 
 library.json
@@ -40,7 +42,7 @@ You can validate ``library.json`` manifest file using the :ref:`cmd_pkg_pack` co
 
 A name of a library.
 
-* Must be unique
+* Must be unique in the |PIOREGISTRY|
 * Should be slug style for simplicity, consistency, and compatibility.
   Example: *HelloWorld*
 * Can contain a-z, digits, and dashes (but not start/end with them)
@@ -56,7 +58,7 @@ A name of a library.
 A version of a current library source code. Can contain a-z, digits, dots or
 dash and should be `Semantic Versioning <http://semver.org>`__ compatible.
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -115,7 +117,7 @@ next items:
 * ``branch`` if is not specified, default branch will be used. This field will
   be ignored if tag/release exists with the value of :ref:`libjson_version`.
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -139,7 +141,7 @@ An author contact information
 * ``url`` An author's contact page
 * ``maintainer`` Specify "maintainer" status
 
-Examples:
+**Examples**
 
 .. code-block:: javascript
 
@@ -175,13 +177,24 @@ Examples:
 ``license``
 -----------
 
-*Optional* | Type: ``String``
+*Optional* | Type: ``SPDX Expression``
 
-A SPDX license ID of the library. You can check `the full list of SPDX license IDs <https://spdx.org/licenses/>`_ (see "Identifier" column).
+A SPDX license ID or `SPDX Expression <https://spdx.github.io/spdx-spec/SPDX-license-expressions/>`_.
+You can check `the full list of SPDX license IDs <https://spdx.org/licenses/>`_ (see "Identifier" column).
+
+**Examples**
+
+A single license
 
 .. code-block:: javascript
 
     "license": "Apache-2.0"
+
+Multiple license using SPDX Expression
+
+.. code-block:: javascript
+
+    "license": "MIT AND (LGPL-2.1-or-later OR BSD-3-Clause)"
 
 .. _libjson_frameworks:
 
@@ -193,7 +206,7 @@ A SPDX license ID of the library. You can check `the full list of SPDX license I
 A list with compatible frameworks. The available framework names are defined in
 the :ref:`frameworks` section.
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -216,7 +229,7 @@ you use ``*`` symbol:
 A list with compatible development platforms. The available platform name are defined
 in :ref:`platforms` section.
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -242,7 +255,7 @@ use ``*`` symbol:
 A list of header files that can be included in a project source files using
 ``#include <...>`` directive.
 
-Examples:
+**Examples**
 
 .. code-block:: javascript
 
@@ -290,34 +303,17 @@ A list of example patterns. This field is predefined with default value:
 
 *Optional* | Type: ``Array`` or ``Object``
 
-A list of dependent libraries. They will be installed automatically with
-:ref:`cmd_lib_install` command.
+A list of dependent libraries that will be automatically installed.
 
 Allowed requirements for dependent library:
 
-* ``owner`` | Type: ``String`` – an owner name (username) from the PlatformIO Registry
+* ``owner`` | Type: ``String`` – an owner name (username) from the |PIOREGISTRY|
 * ``name`` | Type: ``String`` – library name
-* ``version`` | Type: ``String`` – version or version range in SemVer format
+* ``version`` | Type: ``String`` – :ref:`cmd_pkg_install_requirements` or :ref:`cmd_pkg_install_specifications`
 * ``frameworks`` | Type: ``String`` or ``Array`` – project compatible :ref:`frameworks`
 * ``platforms`` | Type: ``String`` or ``Array`` – project compatible :ref:`platforms`
 
-The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`__ (
-``<major>.<minor>.<patch>``) and can take any of the following forms:
-
-* ``1.2.3`` - an exact version number. Use only this exact version
-* ``^1.2.3`` - any compatible version (exact version for ``1.x.x`` versions
-* ``~1.2.3`` - any version with the same major and minor versions, and an
-  equal or greater patch version
-* ``>1.2.3`` - any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
-  are also possible
-* ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
-  ``0.2.0`` and less than ``0.3.0``
-
-The rest possible values including VCS repository URLs are documented in
-:ref:`cmd_lib_install` command.
-
-
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -397,7 +393,7 @@ Export only files that matched declared patterns.
     * - ``[!seq]``
       - matches any character not in seq
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
