@@ -9,12 +9,12 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_package:
+.. _cmd_pkg:
 
 pio pkg
 =======
 
-Manage packages in the `PlatformIO Registry <https://registry.platformio.org/>`__.
+PlatformIO Package Manager.
 
 To print all available commands and options use:
 
