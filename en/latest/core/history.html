@@ -166,9 +166,10 @@
 <li><p><a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_update.html">pio pkg update</a> - update the project dependencies or custom packages</p></li>
 </ul>
 </li>
-<li><p>Added support for multi-licensed packages in <a class="reference external" href="https://docs.platformio.org/en/latest/librarymanager/config.html#license">library.json</a> using SPDX Expressions (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4037">issue #4037</a>)</p></li>
-<li><p>Automatically install dependencies of the local (private) libraries (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/2910">issue #2910</a>)</p></li>
-<li><p>Added support for dependencies declared in a “tool” type package</p></li>
+<li><p>Added support for <a class="reference external" href="https://docs.platformio.org/en/latest/librarymanager/config.html#scripts">“scripts”</a> in package manifest (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/485">issue #485</a>)</p></li>
+<li><p>Added support for <a class="reference external" href="https://docs.platformio.org/en/latest/librarymanager/config.html#license">multi-licensed</a> packages using SPDX Expressions (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4037">issue #4037</a>)</p></li>
+<li><p>Added support for <a class="reference external" href="https://docs.platformio.org/en/latest/librarymanager/config.html#dependencies">“dependencies”</a> declared in a “tool” package manifest</p></li>
+<li><p>Automatically install dependencies of the local (private) project libraries (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/2910">issue #2910</a>)</p></li>
 <li><p>Ignore files according to the patterns declared in “.gitignore” when using the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_pack.html">pio package pack</a> command (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4188">issue #4188</a>)</p></li>
 <li><p>Dropped automatic updates of global libraries and development platforms (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4179">issue #4179</a>)</p></li>
 <li><p>Dropped support for the “pythonPackages” field in “platform.json” manifest in favor of <a class="reference external" href="https://docs.platformio.org/en/latest/scripting/examples/extra_python_packages.html">Extra Python Dependencies</a></p></li>
@@ -671,7 +672,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0b1 (latest)
+    v5.3.0b2 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

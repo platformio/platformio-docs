@@ -414,6 +414,46 @@ Export only files that matched declared patterns.
 
 Exclude the directories and files which match with ``exclude`` patterns.
 
+``scripts``
+-----------
+
+.. versionadded:: 5.3
+
+*Optional* | Type: ``Object``
+
+Execute custom scripts during the special :ref:`cmd_pkg` life cycle events:
+
+.. list-table::
+    :header-rows:  1
+
+    * - Event
+      - Description
+    * - ``postinstall``
+      - runs a script AFTER the package has been installed
+    * - ``preuninstall``
+      - runs a script BEFORE the package is removed.
+
+**Examples**
+
+1.  Run a custom Python script located in the package "scripts" folder AFTER the package is installed.
+    Please note that you don't need to specify a Python interpreter for Python scripts.
+
+    .. code-block:: javascript
+
+        "scripts": {
+            "postinstall": "scripts/after_install.py"
+        }
+
+2.  Run a custom Bash script BEFORE the package is uninstalled.
+    The script is declared as a list of command arguments
+    and is located at the root of a package:
+
+    .. code-block:: javascript
+
+        "scripts": {
+            "preuninstall": ["maintainance.sh", "--action", "uninstall"]
+        }
+
 .. _libjson_build:
 
 ``build``
