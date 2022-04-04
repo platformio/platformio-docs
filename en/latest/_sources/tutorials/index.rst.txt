@@ -71,6 +71,7 @@ Projects
 
 * `arendst/tasmota <https://github.com/arendst/tasmota/>`_ - an alternative firmware for ESP8266 with easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX
 * `MarlinFirmware/Marlin <https://github.com/MarlinFirmware/Marlin>`_ - an optimized firmware for RepRap 3D printers based on the Arduino platform
+* `scottbez1/smartknob <https://github.com/scottbez1/smartknob>`_ - a haptic input knob with software-defined endstops and virtual detents
 * `esphome/esphome <https://github.com/esphome/esphome>`_ - a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems
 * `xoseperez/espurna <https://github.com/xoseperez/espurna>`_ - a home automation firmware for ESP8266-based devices
 * `1technophile/OpenMQTTGateway <https://github.com/1technophile/OpenMQTTGateway>`_ - MQTT gateway for ESP8266, ESP32, Sonoff RF Bridge or Arduino with bidirectional 433mhz/315mhz/868mhz, Infrared communications, BLE, Bluetooth, beacons detection, mi flora, mi jia, LYWSD02, LYWSD03MMC, Mi Scale, TPMS, BBQ thermometer compatibility, SMS & LORA

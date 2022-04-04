@@ -342,11 +342,21 @@ the ``<name>=`` syntax. See the example below.
 Local Folder
 ~~~~~~~~~~~~
 
-**Specification:** ``[<name>=]file://<folder>``
+.. list-table::
+    :header-rows:  1
+    :widths: 25 75
+
+    * - Specification
+      - Description
+    * - ``[<name>=]file://<folder>``
+      - Copy all files from the local folder to the Package Manager.
+        Making changes in the source folder **WILL NOT** affect the installed package.
+    * - ``[<name>=]symlink://<folder>``
+      - Create a symbolic link pointing the local source folder to the Package Manager.
+        Making changes in the source folder **WILL** affect the installed package.
 
 Install a package and its :ref:`libjson_dependencies` from a local folder.
-The source files from a local folder will be copied (not symlinked) to the
-package manager storage. A path should start with ``file://`` prefix and the folder
+A path should start with ``file://`` or ``symlink://`` prefix and the package folder
 must contain a manifest file (:ref:`library_json`, ``platform.json``, or ``package.json``)
 with name and version properties.
 
@@ -357,11 +367,11 @@ the ``<name>=`` syntax. See the example below.
 
 .. code:: shell
 
-    # Unix
+    # Unix, hard copying
     file:///local/path/to/the/package/dir
 
-    # Windows
-    file://C:/local/path/to/the/package/dir
+    # Windows, symbolic link
+    symlink://C:/local/path/to/the/package/dir
 
     # Custom package folder name "SomeLib" in the storage
     SomeLib=file:///local/path/to/the/package/dir
