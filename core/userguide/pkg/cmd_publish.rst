@@ -56,6 +56,11 @@ Options
 username of the authorized :ref:`pioaccount`.
 
 .. option::
+    --type
+
+Set a custom package type. See supported :ref:`cmd_pkg_install_types`.
+
+.. option::
     --released-at
 
 Custom release date and time in the next format (UTC): 2014-06-13 17:08:52
