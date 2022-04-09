@@ -472,8 +472,13 @@ options:
 
 *Optional* | Type: ``String`` or ``Array``
 
-Extra flags to control preprocessing, compilation, assembly and linking
+Extra flags to control preprocessing, compilation, assembly, and linking
 processes. More details :ref:`projectconf_build_flags`.
+
+.. note::
+    Keep in mind when operating with the ``-I`` flag (directories to be
+    searched for header files). The path should be relative to the
+    root directory where the ``library.json`` manifest is located.
 
 ``unflags``
 ~~~~~~~~~~~
@@ -488,8 +493,14 @@ details :ref:`projectconf_build_unflags`.
 
 *Optional* | Type: ``String``
 
-Custom location of library header files. A default value is ``include`` and
-means that folder is located in the root of a library.
+Custom directory to be searched for header files.
+A default value is ``include`` and means that folder is located at
+the root of a library.
+
+.. note::
+    The :ref:`ldf` will pick a library automatically only when
+    a project or other dependent libraries include any header file
+    located in ``includeDir`` or ``srcDir``.
 
 ``srcDir``
 ~~~~~~~~~~
