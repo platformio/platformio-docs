@@ -26,22 +26,31 @@ first item from pair ``<option> = value``.
 
     * - Syntax
       - Meaning
+      - Example
 
     * - ``${sysenv.<name>}``
-      - Embed system environment variable by a name. For example,
-        ``${sysenv.HOME}`` refers to user home directory on Unix machine
+      - Embed system environment variable by a name
+      - ``${sysenv.HOME}`` refers to user home directory on Unix machine
 
     * - ``${platformio.<option>}``
-      - Embed value from :ref:`projectconf_section_platformio`. For example,
-        ``${platformio.packages_dir}`` refers to a path of :ref:`projectconf_pio_packages_dir`
+      - Embed value from :ref:`projectconf_section_platformio`
+      - ``${platformio.packages_dir}`` refers to a path of :ref:`projectconf_pio_packages_dir`
 
     * - ``${env.<option>}``
-      - Embed default value from :ref:`projectconf_section_env`. For example,
-        ``${env.debug_build_flags}`` refers to the default debugging flags.
+      - Embed default value from :ref:`projectconf_section_env`
+      - ``${env.debug_build_flags}`` refers to the default debugging flags
 
     * - ``${<section>.<option>}``
-      - Embed value from another section. For example, ``${extra.lib_deps}`` embeds
-        library dependencies declared in the section named ``extra``.
+      - Embed value from another section.
+      - ``${extra.lib_deps}`` embeds library dependencies declared in the section named ``extra``
+
+    * - ``${this.<option>}``
+      - Embed value from the current section without declaring a section name
+      - ``${this.board}`` refers to the "board" value of the current section
+
+    * - ``${this.__env__}``
+      - Embed environment name of the current section. The section must start with ``env:`` prefix
+      - ``${this.__name__}`` will embed "foo" value being declared in the "env:foo" section
 
 * Interpolation can span multiple levels
 * Interpolation can be applied only for the option's value
