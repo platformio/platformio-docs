@@ -137,30 +137,40 @@ to contain format strings which refer to other values from foreign sections.</p>
 first item from pair <code class="docutils literal notranslate"><span class="pre">&lt;option&gt;</span> <span class="pre">=</span> <span class="pre">value</span></code>.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Syntax</p></th>
 <th class="head"><p>Meaning</p></th>
+<th class="head"><p>Example</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">${sysenv.&lt;name&gt;}</span></code></p></td>
-<td><p>Embed system environment variable by a name. For example,
-<code class="docutils literal notranslate"><span class="pre">${sysenv.HOME}</span></code> refers to user home directory on Unix machine</p></td>
+<td><p>Embed system environment variable by a name</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${sysenv.HOME}</span></code> refers to user home directory on Unix machine</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${platformio.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed value from <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a>. For example,
-<code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> refers to a path of <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a></p></td>
+<td><p>Embed value from <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> refers to a path of <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">${env.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed default value from <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a>. For example,
-<code class="docutils literal notranslate"><span class="pre">${env.debug_build_flags}</span></code> refers to the default debugging flags.</p></td>
+<td><p>Embed default value from <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${env.debug_build_flags}</span></code> refers to the default debugging flags</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${&lt;section&gt;.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed value from another section. For example, <code class="docutils literal notranslate"><span class="pre">${extra.lib_deps}</span></code> embeds
-library dependencies declared in the section named <code class="docutils literal notranslate"><span class="pre">extra</span></code>.</p></td>
+<td><p>Embed value from another section.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${extra.lib_deps}</span></code> embeds library dependencies declared in the section named <code class="docutils literal notranslate"><span class="pre">extra</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">${this.&lt;option&gt;}</span></code></p></td>
+<td><p>Embed value from the current section without declaring a section name</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${this.board}</span></code> refers to the “board” value of the current section</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${this.__env__}</span></code></p></td>
+<td><p>Embed environment name of the current section. The section must start with <code class="docutils literal notranslate"><span class="pre">env:</span></code> prefix</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${this.__name__}</span></code> will embed “foo” value being declared in the “env:foo” section</p></td>
 </tr>
 </tbody>
 </table>
@@ -370,7 +380,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0b4 (latest)
+    v5.3.0b5 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -200,6 +200,12 @@
 <li><p>Changed default path for compilation database <a class="reference external" href="https://docs.platformio.org/en/latest/integration/compile_commands.html">compile_commands.json</a> to the project root</p></li>
 </ul>
 </li>
+<li><p><strong>Project Configuration</strong></p>
+<ul>
+<li><p>Extended <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/interpolation.html">Interpolation of Values</a>  with <code class="docutils literal notranslate"><span class="pre">${this}</span></code> pattern (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3953">issue #3953</a>)</p></li>
+<li><p>Embed environment name of the current section in the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file using <code class="docutils literal notranslate"><span class="pre">${this.__env__}</span></code> pattern</p></li>
+</ul>
+</li>
 <li><p><strong>Miscellaneous</strong></p>
 <ul>
 <li><p>Improved PIO Remote setup on credit-card sized computers (Raspberry Pi, BeagleBon, etc) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3865">issue #3865</a>)</p></li>
@@ -690,7 +696,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0b4 (latest)
+    v5.3.0b5 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

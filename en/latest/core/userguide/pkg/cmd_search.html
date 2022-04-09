@@ -390,47 +390,41 @@ matches <a class="reference external" href="https://registry.platformio.org/libr
 <p><a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> supports the following operators:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 10%" />
+<col style="width: 45%" />
+<col style="width: 45%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Operator</p></th>
 <th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
 <td><p>A leading or trailing plus sign indicates that this word must be present
-in the search result that is returned.</p>
-<p>–</p>
-<p><strong>Example</strong>: <a class="reference external" href="https://registry.platformio.org/search?q=json+%2Barduino">json +arduino</a>
-matches JSON-related packages that contain the “arduino” word in the package metadata</p>
-</td>
+in the search result that is returned.</p></td>
+<td><p><a class="reference external" href="https://registry.platformio.org/search?q=json+%2Barduino">json +arduino</a>
+matches JSON-related packages that contain the “arduino” word in the package metadata</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
 <td><p>A leading or trailing minus sign indicates that this word must not be
-present in the search result that is returned.</p>
-<p>–</p>
-<p><strong>Example</strong>: <a class="reference external" href="https://registry.platformio.org/search?q=json+-mbed">json -mbed</a>
-matches JSON-related packages that do not contain the “mbed” word in the package metadata</p>
-</td>
+present in the search result that is returned.</p></td>
+<td><p><a class="reference external" href="https://registry.platformio.org/search?q=json+-mbed">json -mbed</a>
+matches JSON-related packages that do not contain the “mbed” word in the package metadata</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
 <td><p>The asterisk serves as the truncation (or wildcard) operator. Unlike the
 other operators, it is appended to the word to be affected. Words match if
-they begin with the word preceding the <code class="docutils literal notranslate"><span class="pre">*</span></code> operator.</p>
-<p>–</p>
-<p><strong>Example</strong>: <a class="reference external" href="https://registry.platformio.org/search?q=DHT*">DHT*</a>
-matches packages that contain a word that starts with “DHT”</p>
-</td>
+they begin with the word preceding the <code class="docutils literal notranslate"><span class="pre">*</span></code> operator.</p></td>
+<td><p><a class="reference external" href="https://registry.platformio.org/search?q=DHT*">DHT*</a>
+matches packages that contain a word that starts with “DHT”</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&quot;</span></code></p></td>
 <td><p>A phrase that is enclosed within double quote (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) characters matches
-only packages that contain the phrase literally, as it was typed.</p>
-<p>–</p>
-<p><strong>Example</strong>: <a class="reference external" href="https://registry.platformio.org/search?q=%22humidity+sensor%22">“humidity sensor”</a>
-matches packages that contain the “humidity sensor” phrase.</p>
-</td>
+only packages that contain the phrase literally, as it was typed.</p></td>
+<td><p><a class="reference external" href="https://registry.platformio.org/search?q=%22humidity+sensor%22">“humidity sensor”</a>
+matches packages that contain the “humidity sensor” phrase.</p></td>
 </tr>
 </tbody>
 </table>
@@ -665,7 +659,7 @@ Open-source, embedded development platform for Aceinna IMU hardware. Run custom 
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0b4 (latest)
+    v5.3.0b5 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
