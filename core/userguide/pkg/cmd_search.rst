@@ -188,45 +188,34 @@ Search Operators
 
 .. list-table::
     :header-rows:  1
-    :widths: 20 80
+    :widths: 10 45 45
 
     * - Operator
       - Description
+      - Example
     * - ``+``
       - A leading or trailing plus sign indicates that this word must be present
         in the search result that is returned.
-
-        --
-
-        **Example**: `json +arduino <https://registry.platformio.org/search?q=json+%2Barduino>`__
+      - `json +arduino <https://registry.platformio.org/search?q=json+%2Barduino>`__
         matches JSON-related packages that contain the "arduino" word in the package metadata
 
     * - ``-``
       - A leading or trailing minus sign indicates that this word must not be
         present in the search result that is returned.
-
-        --
-
-        **Example**: `json -mbed <https://registry.platformio.org/search?q=json+-mbed>`__
+      - `json -mbed <https://registry.platformio.org/search?q=json+-mbed>`__
         matches JSON-related packages that do not contain the "mbed" word in the package metadata
 
     * - ``*``
       - The asterisk serves as the truncation (or wildcard) operator. Unlike the
         other operators, it is appended to the word to be affected. Words match if
         they begin with the word preceding the ``*`` operator.
-
-        --
-
-        **Example**: `DHT* <https://registry.platformio.org/search?q=DHT*>`__
+      - `DHT* <https://registry.platformio.org/search?q=DHT*>`__
         matches packages that contain a word that starts with "DHT"
 
     * - ``"``
       - A phrase that is enclosed within double quote (``"``) characters matches
         only packages that contain the phrase literally, as it was typed.
-
-        --
-
-        **Example**: `"humidity sensor" <https://registry.platformio.org/search?q=%22humidity+sensor%22>`__
+      - `"humidity sensor" <https://registry.platformio.org/search?q=%22humidity+sensor%22>`__
         matches packages that contain the "humidity sensor" phrase.
 
 Examples
