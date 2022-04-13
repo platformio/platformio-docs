@@ -589,22 +589,21 @@ Project structure
     Import('env')
     from os.path import join, realpath
 
-    # private library flags
+    # private flags (only for the current "SomeLib" source files)
     for item in env.get("CPPDEFINES", []):
         if isinstance(item, tuple) and item[0] == "HAL":
             env.Append(CPPPATH=[realpath(join("hal", item[1]))])
             env.Replace(SRC_FILTER=["+<*>", "-<hal*>", "+<hal/%s>" % item[1]])
             break
 
-    # pass flags to the project global scope (make them available for the project source files)
+    # pass flags to the global env (project files, frameworks)
     global_env = DefaultEnvironment()
-    global_env.Append(
-        CPPDEFINES=[
-            ("MQTT_MAX_PACKET_SIZE", 512),
-            "ARDUINOJSON_ENABLE_STD_STRING",
-            ("BUFFER_LENGTH", 32)
-        ]
-    )
+    global_env.Append(CPPDEFINES=[("TEST_GLOBAL", 1)])
+
+    # pass flags to the project dependencies (libraries)
+    for lb in env.GetLibBuilders():
+        lb.env.Append(CPPDEFINES=[("TEST_LIBDEPS", 1)])
+
 
 .. _libjson_archive:
 
