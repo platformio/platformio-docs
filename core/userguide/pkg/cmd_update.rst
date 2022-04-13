@@ -16,7 +16,7 @@
 pio pkg update
 ==============
 
-.. versionadded:: 5.3
+.. versionadded:: 6.0
 
 .. contents::
 
@@ -30,7 +30,7 @@ Usage
 Description
 -----------
 
-Update the project dependencies or custom packages from the |PIOREGISTRY| or
+Update the project dependencies, custom packages from the |PIOREGISTRY|, or
 external sources.
 
 If no custom packages (``--library``, ``--platform``, or ``--tool``) are

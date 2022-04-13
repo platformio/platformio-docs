@@ -11,8 +11,8 @@
 
 .. _cmd_pkg:
 
-pio pkg
-=======
+Package Management CLI
+======================
 
 PlatformIO Package Manager.
 
@@ -31,10 +31,10 @@ To print all available commands and options use:
     cmd_install
     cmd_list
     cmd_outdated
-    cmd_show
     cmd_pack
-    cmd_search
     cmd_publish
+    cmd_search
+    cmd_show
     cmd_uninstall
     cmd_unpublish
     cmd_update
