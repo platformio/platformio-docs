@@ -596,7 +596,7 @@ Project structure
             env.Replace(SRC_FILTER=["+<*>", "-<hal*>", "+<hal/%s>" % item[1]])
             break
 
-    # pass flags to a global build environment (for all libraries, etc)
+    # pass flags to the project global scope (make them available for the project source files)
     global_env = DefaultEnvironment()
     global_env.Append(
         CPPDEFINES=[
