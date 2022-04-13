@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Library Manager CLI &mdash; PlatformIO latest documentation</title>
+  <title>pio lib &mdash; PlatformIO latest documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
@@ -70,7 +70,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../librarymanager/quickstart.html#project-dependencies">Project dependencies</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../librarymanager/quickstart.html#platformio-ide">PlatformIO IDE</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../../../librarymanager/quickstart.html#cli-guide">CLI Guide</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Library Manager CLI</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">pio lib</a></li>
 </ul>
 </li>
 </ul>
@@ -104,7 +104,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -127,7 +127,7 @@
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../index.html">PlatformIO Core (CLI)</a> &raquo;</li>
           <li><a href="../index.html">CLI Guide</a> &raquo;</li>
-      <li>Library Manager CLI</li>
+      <li>pio lib</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/core/userguide/lib/index.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -137,8 +137,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="library-manager-cli">
-<span id="cmd-lib"></span><h1>Library Manager CLI<a class="headerlink" href="#library-manager-cli" title="Permalink to this headline">¶</a></h1>
+  <section id="pio-lib">
+<span id="cmd-lib"></span><h1>pio lib<a class="headerlink" href="#pio-lib" title="Permalink to this headline">¶</a></h1>
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># To print all available commands and options use</span>
@@ -162,9 +162,8 @@ Multiple options are allowed.</p>
 <span id="cmdoption-pio-lib-global"></span><span class="sig-name descname"><span class="pre">-g</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--global</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-lib-g" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Manage global PlatformIO’s library storage (
-“<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/lib”) where <a class="reference internal" href="../../../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a> will look for
-dependencies by default.</p>
+<p>Manage global PlatformIO’s library storage (<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-globallib-dir"><span class="std std-ref">globallib_dir</span></a>)
+where <a class="reference internal" href="../../../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a> will look for dependencies by default.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-lib-e">
 <span id="cmdoption-pio-lib-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-lib-e" title="Permalink to this definition">¶</a></dt>
@@ -371,7 +370,7 @@ project.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0b5 (latest)
+    v6.0.0a1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

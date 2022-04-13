@@ -417,7 +417,7 @@ Exclude the directories and files which match with ``exclude`` patterns.
 ``scripts``
 -----------
 
-.. versionadded:: 5.3
+.. versionadded:: 6.0
 
 *Optional* | Type: ``Object``
 

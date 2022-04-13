@@ -16,7 +16,7 @@
 pio pkg install
 ===============
 
-.. versionadded:: 5.3
+.. versionadded:: 6.0
 
 .. contents::
 
@@ -182,6 +182,9 @@ b) TAR or ZIP archive containing (a)
 c) A URL that resolves to (b)
 d) An ``<owner>/<name>@<version requirements>`` that is published on the |PIOREGISTRY|
 e) A <git/hg/svn remote url> that resolves to (a).
+
+.. contents:: Specifications
+    :local:
 
 Registry: Latest Version
 ~~~~~~~~~~~~~~~~~~~~~~~~

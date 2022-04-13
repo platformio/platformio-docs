@@ -14,7 +14,7 @@
 pio pkg list
 ============
 
-.. versionadded:: 5.3
+.. versionadded:: 6.0
 
 .. contents::
 

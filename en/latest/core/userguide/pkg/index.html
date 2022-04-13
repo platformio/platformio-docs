@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pio pkg &mdash; PlatformIO latest documentation</title>
+  <title>Package Management CLI &mdash; PlatformIO latest documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
@@ -70,7 +70,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../cmd_home.html">pio home</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lib/index.html">pio lib</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../org/index.html">pio org</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">pio pkg</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Package Management CLI</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../platforms/index.html">pio platform</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../project/index.html">pio project</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../remote/index.html">pio remote</a></li>
@@ -122,7 +122,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -145,7 +145,7 @@
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../index.html">PlatformIO Core (CLI)</a> &raquo;</li>
           <li><a href="../index.html">CLI Guide</a> &raquo;</li>
-      <li>pio pkg</li>
+      <li>Package Management CLI</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/core/userguide/pkg/index.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -155,8 +155,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="pio-pkg">
-<span id="cmd-pkg"></span><h1>pio pkg<a class="headerlink" href="#pio-pkg" title="Permalink to this headline">¶</a></h1>
+  <section id="package-management-cli">
+<span id="cmd-pkg"></span><h1>Package Management CLI<a class="headerlink" href="#package-management-cli" title="Permalink to this headline">¶</a></h1>
 <p>PlatformIO Package Manager.</p>
 <p>To print all available commands and options use:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio pkg --help
@@ -196,20 +196,19 @@ pio pkg COMMAND --help
 <li class="toctree-l2"><a class="reference internal" href="cmd_outdated.html#examples">Examples</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="cmd_show.html">pio pkg show</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#options">Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#examples">Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#see-also">See Also</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="cmd_pack.html">pio pkg pack</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="cmd_pack.html#usage">Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cmd_pack.html#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cmd_pack.html#options">Options</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cmd_pack.html#files-included-in-package">Files included in package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cmd_pack.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmd_publish.html">pio pkg publish</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmd_publish.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_publish.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_publish.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_publish.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cmd_search.html">pio pkg search</a><ul>
@@ -222,11 +221,12 @@ pio pkg COMMAND --help
 <li class="toctree-l2"><a class="reference internal" href="cmd_search.html#see-also">See Also</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="cmd_publish.html">pio pkg publish</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cmd_publish.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_publish.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_publish.html#options">Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmd_publish.html#see-also">See Also</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmd_show.html">pio pkg show</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmd_show.html#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cmd_uninstall.html">pio pkg uninstall</a><ul>
@@ -380,7 +380,7 @@ pio pkg COMMAND --help
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.3.0b5 (latest)
+    v6.0.0a1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

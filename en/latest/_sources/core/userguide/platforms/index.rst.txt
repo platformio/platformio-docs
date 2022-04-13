@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _userguide_platform:
+.. _cmd_platform:
 
-Platform Manager CLI
-====================
+pio platform
+============
 
 To print all available commands and options use:
 
