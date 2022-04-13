@@ -258,9 +258,9 @@ TI
       - 8MHz
       - 15KB
       - 4KB
-    * - :ref:`board_timsp430_lpmsp430g2476`
+    * - :ref:`board_timsp430_lpmsp430fr2476`
       - On-board
-      - MSP430G2476
+      - MSP430FR2476
       - 16MHz
       - 64KB
       - 8KB
