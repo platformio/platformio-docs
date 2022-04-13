@@ -47,12 +47,13 @@ taking into account the following steps:
     command. Ensure that the :ref:`projectconf_pio_globallib_dir` folder is empty.
     Please use a declarative approach for the safety-critical embedded development
     and declare project dependencies using the :ref:`projectconf_lib_deps` option
-3.  Ensure that your project dependencies are declared using the :ref:`projectconf_env_platform`,
+3.  Ensure that project dependencies declared using the :ref:`projectconf_env_platform`,
     :ref:`projectconf_env_platform_packages`, and :ref:`projectconf_lib_deps` options
     in :ref:`projectconf`:
 
     a) meet the updated :ref:`cmd_pkg_install_specifications`
     b) use recommended Semantic :ref:`cmd_pkg_install_requirements`
+       (check |PIOREGISTRY| for the available package versions)
 
     **Bad practice** (not recommended)
 
@@ -112,7 +113,7 @@ features introduced in |CORE_6_0|. Please visit
 Unified package management
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-|CORE_6_0| brings powerful a solution to manage different
+|CORE_6_0| brings a powerful solution to manage different
 :ref:`cmd_pkg_install_types` using the unified :ref:`cmd_pkg`:
 
 * :ref:`cmd_pkg_install` - install the project dependencies or custom packages
@@ -147,7 +148,7 @@ package. If you specify package requirements using the :option:`pio pkg exec --p
 option, PlatformIO will ensure that package is installed.
 
 The useful use cases are running debugging servers, upload tools, or
-useful tools from a toolchain. A few examples of how to leverage the
+special tools from a toolchain. A few examples of how to leverage the
 new :ref:`cmd_pkg_exec` command:
 
 .. code:: bash
