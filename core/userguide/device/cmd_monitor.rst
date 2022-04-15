@@ -255,7 +255,7 @@ See the base API below:
       NAME = "demo"
 
       def __init__(self, *args, **kwargs):
-          super(Demo, self).__init__(*args, **kwargs)
+          super().__init__(*args, **kwargs)
           print("Demo filter is loaded")
 
       def rx(self, text):
