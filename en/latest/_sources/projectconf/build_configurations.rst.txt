@@ -14,7 +14,7 @@
 Build Configurations
 ====================
 
-There are 2 types (:ref:`projectconf_build_type`) of build configuration in
+There are 3 types (:ref:`projectconf_build_type`) of build configuration in
 PlatformIO:
 
 :``release``:
@@ -22,10 +22,15 @@ PlatformIO:
   does not contain symbolic debug information and is optimized for the firmware
   size or speed (depending on :ref:`platforms`)
 
+
+:``test``:
+  A "test" configuration extends a build environment with ``PIO_UNIT_TESTING``
+  macro and with extra flags provided by the :ref:`unit_testing` framework
+
 :``debug``:
   A "debug" configuration of your firmware/program is compiled with full
   symbolic debug information and no optimization. Optimization complicates
-  debugging, because the relationship between source code and generated
+  debugging because the relationship between source code and generated
   instructions is more complex.
 
 .. note::

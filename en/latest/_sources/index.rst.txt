@@ -47,6 +47,7 @@ Contents
     :maxdepth: 1
 
     platformio.ini <projectconf/index>
+    projectconf/build_configurations
     envvars
     scripting/index
 

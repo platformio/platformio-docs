@@ -213,9 +213,6 @@ Frameworks
     * - :ref:`framework_mbed`
       - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
-    * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
-
     * - :ref:`framework_spl`
       - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.
 
