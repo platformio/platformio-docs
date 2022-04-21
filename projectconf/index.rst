@@ -41,7 +41,6 @@ sections and their allowed contents:
     section_platformio
     section_env
     interpolation
-    build_configurations
     examples
 
 **Example**

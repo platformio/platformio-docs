@@ -417,6 +417,9 @@ Espressif 32
     espressif32/az-delivery-devkit-v4
     espressif32/featheresp32
     espressif32/featheresp32-s2
+    espressif32/adafruit_funhouse_esp32s2
+    espressif32/adafruit_magtag29_esp32s2
+    espressif32/adafruit_metro_esp32s2
     espressif32/espea32
     espressif32/bpi-bit
     espressif32/wifiduino32
@@ -425,6 +428,10 @@ Espressif 32
     espressif32/d-duino-32
     espressif32/esp32doit-devkit-v1
     espressif32/esp32doit-espduino
+    espressif32/deneyapkart
+    espressif32/deneyapmini
+    espressif32/denky_d4
+    espressif32/denky32
     espressif32/pocket_32
     espressif32/fm-devkit
     espressif32/pico32
@@ -433,6 +440,7 @@ Espressif 32
     espressif32/espino32
     espressif32/etboard
     espressif32/esp320
+    espressif32/atmegazero_esp32s2
     espressif32/esp-wrover-kit
     espressif32/esp32dev
     espressif32/esp32-c3-devkitm-1
@@ -440,7 +448,9 @@ Espressif 32
     espressif32/esp32-s2-saola-1
     espressif32/firebeetle32
     espressif32/piranha_esp32
+    espressif32/franzininho_wifi_esp32s2
     espressif32/esp32-s2-franzininho
+    espressif32/franzininho_wifi_msc_esp32s2
     espressif32/frogboard
     espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
@@ -472,6 +482,7 @@ Espressif 32
     espressif32/mhetesp32devkit
     espressif32/mhetesp32minikit
     espressif32/magicbit
+    espressif32/kb32-ft
     espressif32/nano32
     espressif32/microduino-core-esp32
     espressif32/node32s
@@ -494,19 +505,27 @@ Espressif 32
     espressif32/s_odi_ultra
     espressif32/sg-o_airMon
     espressif32/wesp32
+    espressif32/sparkfun_esp32micromod
     espressif32/esp32thing
     espressif32/esp32thing_plus
+    espressif32/sparkfun_esp32s2_thing_plus
     espressif32/sparkfun_lora_gateway_1-channel
     espressif32/ttgo-lora32-v1
     espressif32/ttgo-lora32-v2
     espressif32/ttgo-lora32-v21
     espressif32/ttgo-t-beam
+    espressif32/ttgo-t-oi-plus
     espressif32/ttgo-t-watch
     espressif32/ttgo-t1
     espressif32/ttgo-t7-v13-mini32
     espressif32/ttgo-t7-v14-mini32
+    espressif32/trueverit-iot-driver
+    espressif32/trueverit-iot-driver-mk2
     espressif32/turta_iot_node
+    espressif32/um_feathers2
+    espressif32/um_feathers2_neo
     espressif32/tinypico
+    espressif32/um_tinys2
     espressif32/vintlabs-devkit-v1
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
@@ -517,9 +536,12 @@ Espressif 32
     espressif32/widora-air
     espressif32/xinabox_cw02
     espressif32/nscreen-32
+    espressif32/micros2
     espressif32/iotbusio
     espressif32/iotbusproteus
     espressif32/nina_w10
+    espressif32/upesy_wroom
+    espressif32/upesy_wrover
 
 Espressif 8266
 --------------

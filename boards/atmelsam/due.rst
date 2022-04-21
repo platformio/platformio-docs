@@ -131,8 +131,5 @@ Frameworks
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
-    * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
-
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

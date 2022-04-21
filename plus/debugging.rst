@@ -291,9 +291,6 @@ Frameworks
     * - :ref:`framework_shakti-sdk`
       - A software development kit for developing applications on Shakti class of processors
 
-    * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
-
     * - :ref:`framework_spl`
       - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.
 
@@ -421,7 +418,7 @@ AZ-Delivery
       - External
       - ESP32
       - 240MHz
-      - 16MB
+      - 4MB
       - 520KB
 
 Aceinna
@@ -633,6 +630,13 @@ Adafruit
       - 8MHz
       - 28KB
       - 2.50KB
+    * - :ref:`board_espressif32_adafruit_funhouse_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelavr_gemma`
       - :ref:`platform_atmelavr`
       - On-board
@@ -710,6 +714,13 @@ Adafruit
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_espressif32_adafruit_magtag29_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -724,6 +735,13 @@ Adafruit
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_espressif32_adafruit_metro_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -1978,6 +1996,34 @@ Delta
       - 256KB
       - 16KB
 
+Deneyap
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_deneyapkart`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapmini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+
 DevEBox
 ~~~~~~~
 
@@ -2384,6 +2430,27 @@ EnviroDIY
       - 127KB
       - 16KB
 
+EspinalLab
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_atmegazero_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 16MB
+      - 320KB
+
 Espotel
 ~~~~~~~
 
@@ -2502,7 +2569,21 @@ Franzininho
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_franzininho_wifi_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-s2-franzininho`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_franzininho_wifi_msc_esp32s2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
@@ -3720,6 +3801,27 @@ MXChip
       - 100MHz
       - 1MB
       - 256KB
+
+MakerAsia
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_kb32-ft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Makerdiary
 ~~~~~~~~~~
@@ -6681,6 +6783,13 @@ SparkFun
       - 8MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_espressif32_sparkfun_esp32s2_thing_plus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelavr_sparkfun_fiov3`
       - :ref:`platform_atmelavr`
       - On-board
@@ -7087,6 +7196,13 @@ TTGO
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_ttgo-t-oi-plus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t1`
       - :ref:`platform_espressif32`
       - External
@@ -7360,6 +7476,69 @@ Tlera Corporation
       - 32MHz
       - 192KB
       - 20KB
+
+Trueverit
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_trueverit-iot-driver`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_trueverit-iot-driver-mk2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Unexpected Maker
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_um_feathers2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_feathers2_neo`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_um_tinys2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Unknown
 ~~~~~~~
@@ -7830,6 +8009,27 @@ meteca
       - 256KB
       - 32KB
 
+microS2
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_micros2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 16MB
+      - 320KB
+
 ng-beacon
 ~~~~~~~~~
 
@@ -8102,6 +8302,34 @@ u-blox
       - 168MHz
       - 2MB
       - 256KB
+
+uPesy
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_upesy_wroom`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_upesy_wrover`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 ubIQio
 ~~~~~~

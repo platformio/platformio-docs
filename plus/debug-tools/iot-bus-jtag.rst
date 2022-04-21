@@ -125,9 +125,6 @@ Frameworks
     * - :ref:`framework_kendryte-standalone-sdk`
       - Kendryte Standalone SDK without OS support
 
-    * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
-
 Boards
 ------
 
@@ -164,7 +161,7 @@ Boards
       - External
       - ESP32
       - 240MHz
-      - 16MB
+      - 4MB
       - 520KB
     * - :ref:`board_espressif32_featheresp32`
       - :ref:`platform_espressif32`
@@ -174,6 +171,27 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_featheresp32-s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_funhouse_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_magtag29_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_metro_esp32s2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
@@ -212,6 +230,20 @@ Boards
       - :ref:`platform_espressif32`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapkart`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapmini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB
@@ -257,6 +289,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_atmegazero_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
       - On-board
@@ -299,7 +338,21 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_franzininho_wifi_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-s2-franzininho`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_franzininho_wifi_msc_esp32s2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
@@ -384,6 +437,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_mhetesp32minikit`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_kb32-ft`
       - :ref:`platform_espressif32`
       - External
       - ESP32
@@ -509,6 +569,13 @@ Boards
       - 240MHz
       - 16MB
       - 320KB
+    * - :ref:`board_espressif32_sparkfun_esp32s2_thing_plus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
       - :ref:`platform_espressif32`
       - External
@@ -544,6 +611,13 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_ttgo-t-oi-plus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t1`
       - :ref:`platform_espressif32`
       - External
@@ -558,6 +632,41 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_trueverit-iot-driver`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_trueverit-iot-driver-mk2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_um_feathers2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_feathers2_neo`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_um_tinys2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_vintlabs-devkit-v1`
       - :ref:`platform_espressif32`
       - External
@@ -607,6 +716,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_micros2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_iotbusio`
       - :ref:`platform_espressif32`
       - External
@@ -615,6 +731,20 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_iotbusproteus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_upesy_wroom`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_upesy_wrover`
       - :ref:`platform_espressif32`
       - External
       - ESP32
