@@ -247,8 +247,8 @@ See full example with embedding Amazon AWS certificates:
 - https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-aws-iot
 
 
-Uploading files to file system SPIFFS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Uploading files to file system
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Create new project using :ref:`pioide` or initialize project using
    :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
@@ -258,6 +258,18 @@ Uploading files to file system SPIFFS
 3. Run "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
    and :option:`pio run --target` command with ``uploadfs`` target.
 
+The ``SPIFFS`` file system is used by default in order to keep legacy project
+compatible. To choose ``LittleFS`` or ``FFat`` as the file system, it should be
+explicitly specified using ``board_build.filesystem`` option in :ref:`projectconf`,
+for example:
+
+.. code-block:: ini
+
+    [env:myenv]
+    platform = espressif32
+    framework = arduino
+    board = ...
+    board_build.filesystem = littlefs
 
 To upload SPIFFS image using OTA update please specify ``upload_port`` /
 ``--upload-port`` as IP address or mDNS host name (ending with the ``*.local``).
@@ -265,6 +277,8 @@ To upload SPIFFS image using OTA update please specify ``upload_port`` /
 Examples:
 
 * `SPIFFS for Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/SPIFFS/examples>`_
+* `LittleFS for Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/LittleFS/examples>`_
+* `FFat for Arduino <https://github.com/espressif/arduino-esp32/tree/master/libraries/FFat/examples>`_
 * `SPIFFS for ESP-IDF <https://github.com/espressif/esp-idf/tree/master/examples/storage/spiffs>`_
 
 
