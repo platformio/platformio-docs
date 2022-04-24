@@ -236,13 +236,13 @@ Example: <em>HelloWorld</em></p></li>
 <p>A version of a current library source code. Can contain a-z, digits, dots or
 dash and should be <a class="reference external" href="http://semver.org">Semantic Versioning</a> compatible.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Bar&quot;</span><span class="p">,</span>
-<span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
-<span class="s2">&quot;repository&quot;</span><span class="o">:</span>
-<span class="p">{</span>
-    <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;git&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/foo/bar.git&quot;</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Bar&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="s2">&quot;repository&quot;</span><span class="o">:</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;git&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/foo/bar.git&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -279,11 +279,11 @@ next items:</p>
 be ignored if tag/release exists with the value of <a class="reference internal" href="#libjson-version"><span class="std std-ref">version</span></a>.</p></li>
 </ul>
 <p><strong>Example</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;repository&quot;</span><span class="o">:</span>
-<span class="p">{</span>
-    <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;git&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/foo/bar.git&quot;</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;repository&quot;</span><span class="o">:</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;git&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/foo/bar.git&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -298,29 +298,29 @@ be ignored if tag/release exists with the value of <a class="reference internal"
 <li><p><code class="docutils literal notranslate"><span class="pre">maintainer</span></code> Specify “maintainer” status</p></li>
 </ul>
 <p><strong>Examples</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;authors&quot;</span><span class="o">:</span>
-<span class="p">{</span>
-    <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;John Smith&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;email&quot;</span><span class="o">:</span> <span class="s2">&quot;me@john-smith.com&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.john-smith/contact&quot;</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;authors&quot;</span><span class="o">:</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John Smith&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;me@john-smith.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://www.john-smith/contact&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="p">...</span>
+<span class="p">...</span><span class="w"></span>
 
-<span class="s2">&quot;authors&quot;</span><span class="o">:</span>
-<span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;John Smith&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;email&quot;</span><span class="o">:</span> <span class="s2">&quot;me@john-smith.com&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.john-smith/contact&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Andrew Smith&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;email&quot;</span><span class="o">:</span> <span class="s2">&quot;me@andrew-smith.com&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.andrew-smith/contact&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;maintainer&quot;</span><span class="o">:</span> <span class="kc">true</span>
-    <span class="p">}</span>
-<span class="p">]</span>
+<span class="s2">&quot;authors&quot;</span><span class="o">:</span><span class="w"></span>
+<span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John Smith&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;me@john-smith.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://www.john-smith/contact&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Andrew Smith&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;me@andrew-smith.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://www.andrew-smith/contact&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;maintainer&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -336,11 +336,11 @@ from VCS provider (Github, Gitlab, etc) if <a class="reference internal" href="#
 You can check <a class="reference external" href="https://spdx.org/licenses/">the full list of SPDX license IDs</a> (see “Identifier” column).</p>
 <p><strong>Examples</strong></p>
 <p>A single license</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;license&quot;</span><span class="o">:</span> <span class="s2">&quot;Apache-2.0&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;license&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Apache-2.0&quot;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Multiple license using SPDX Expression</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;license&quot;</span><span class="o">:</span> <span class="s2">&quot;MIT AND (LGPL-2.1-or-later OR BSD-3-Clause)&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;license&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;MIT AND (LGPL-2.1-or-later OR BSD-3-Clause)&quot;</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -350,12 +350,12 @@ You can check <a class="reference external" href="https://spdx.org/licenses/">th
 <p>A list with compatible frameworks. The available framework names are defined in
 the <a class="reference internal" href="../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a> section.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;frameworks&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;espidf&quot;</span><span class="p">,</span> <span class="s2">&quot;freertos&quot;</span><span class="p">]</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;frameworks&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;espidf&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;freertos&quot;</span><span class="p">]</span><span class="w"></span>
 </pre></div>
 </div>
 <p>If the library is compatible with the all frameworks, then do not declare this field or
 you use <code class="docutils literal notranslate"><span class="pre">*</span></code> symbol:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;frameworks&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;frameworks&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -365,12 +365,12 @@ you use <code class="docutils literal notranslate"><span class="pre">*</span></c
 <p>A list with compatible development platforms. The available platform name are defined
 in <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> section.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;atmelavr&quot;</span><span class="p">,</span> <span class="s2">&quot;espressif8266&quot;</span><span class="p">]</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;atmelavr&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;espressif8266&quot;</span><span class="p">]</span><span class="w"></span>
 </pre></div>
 </div>
 <p>If the library is compatible with the all platforms, then do not declare this field or
 use <code class="docutils literal notranslate"><span class="pre">*</span></code> symbol:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -386,10 +386,10 @@ platforms for a library, please set <a class="reference internal" href="#libjons
 <p>A list of header files that can be included in a project source files using
 <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;...&gt;</span></code> directive.</p>
 <p><strong>Examples</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;headers&quot;</span><span class="o">:</span> <span class="s2">&quot;MyLibrary.h&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;headers&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;MyLibrary.h&quot;</span><span class="w"></span>
 </pre></div>
 </div>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;headers&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;FooCore.h&quot;</span><span class="p">,</span> <span class="s2">&quot;FooFeature.h&quot;</span><span class="p">]</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;headers&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;FooCore.h&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;FooFeature.h&quot;</span><span class="p">]</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -397,24 +397,24 @@ platforms for a library, please set <a class="reference internal" href="#libjons
 <span id="libjson-examples"></span><h2><a class="toc-backref" href="#id17"><code class="docutils literal notranslate"><span class="pre">examples</span></code></a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">Array</span></code> | <a class="reference external" href="http://en.wikipedia.org/wiki/Glob_(programming)">Glob Pattern</a></p>
 <p>A list of example patterns. This field is predefined with default value:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;examples&quot;</span><span class="o">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;base&quot;</span><span class="o">:</span> <span class="s2">&quot;examples/world&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;files&quot;</span><span class="o">:</span> <span class="p">[</span>
-            <span class="s2">&quot;platformio.ini&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;include/world.h&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;src/world.c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;README&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;extra.py&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Blink&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;base&quot;</span><span class="o">:</span> <span class="s2">&quot;examples/blink&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;files&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;blink.cpp&quot;</span><span class="p">,</span> <span class="s2">&quot;blink.h&quot;</span><span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">]</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;examples&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;base&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;examples/world&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;files&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;platformio.ini&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;include/world.h&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;src/world.c&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;README&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;extra.py&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Blink&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;base&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;examples/blink&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;files&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;blink.cpp&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;blink.h&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -431,38 +431,38 @@ platforms for a library, please set <a class="reference internal" href="#libjons
 <li><p><code class="docutils literal notranslate"><span class="pre">platforms</span></code> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code> – project compatible <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a></p></li>
 </ul>
 <p><strong>Example</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
-<span class="p">{</span>
-    <span class="s2">&quot;bblanchon/ArduinoJson&quot;</span><span class="o">:</span> <span class="s2">&quot;^6.16.1&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;me-no-dev/AsyncTCP&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;external-repo&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;external-zip&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;bblanchon/ArduinoJson&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^6.16.1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;me-no-dev/AsyncTCP&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;external-repo&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;external-zip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>More advanced usage:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
-<span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;owner&quot;</span><span class="o">:</span> <span class="s2">&quot;bblanchon&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;ArduinoJson&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;^6.16.1&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;owner&quot;</span><span class="o">:</span> <span class="s2">&quot;me-no-dev&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;AsyncTCP&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;platforms&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;espressif32&quot;</span><span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;external-repo&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;external-zip&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
-    <span class="p">}</span>
-<span class="p">]</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span><span class="w"></span>
+<span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;owner&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;bblanchon&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ArduinoJson&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^6.16.1&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;owner&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;me-no-dev&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AsyncTCP&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;espressif32&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;external-repo&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;external-zip&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -511,14 +511,14 @@ It allows one to reduce the size of the final archive.</p>
 </tbody>
 </table>
 <p><strong>Example</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;export&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;include&quot;</span><span class="o">:</span>
-    <span class="p">[</span>
-        <span class="s2">&quot;dir/*.[ch]pp&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;dir/examples/*&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;*/*/*.h&quot;</span>
-    <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;export&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;include&quot;</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;dir/*.[ch]pp&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;dir/examples/*&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;*/*/*.h&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -558,18 +558,18 @@ It allows one to reduce the size of the final archive.</p>
 <ol class="arabic">
 <li><p>Run a custom Python script located in the package “scripts” folder AFTER the package is installed.
 Please note that you don’t need to specify a Python interpreter for Python scripts.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;scripts&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;postinstall&quot;</span><span class="o">:</span> <span class="s2">&quot;scripts/after_install.py&quot;</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;scripts&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;postinstall&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;scripts/after_install.py&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 <li><p>Run a custom Bash script BEFORE the package is uninstalled.
 The script is declared as a list of command arguments
 and is located at the root of a package:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;scripts&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;preuninstall&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;maintainance.sh&quot;</span><span class="p">,</span> <span class="s2">&quot;--action&quot;</span><span class="p">,</span> <span class="s2">&quot;uninstall&quot;</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;scripts&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;preuninstall&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;maintainance.sh&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--action&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uninstall&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
@@ -748,49 +748,49 @@ builders:</p>
 <ol class="arabic simple">
 <li><p>Custom macros/defines</p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;flags&quot;</span><span class="o">:</span> <span class="s2">&quot;-D MYLIB_REV=1.2.3 -DRELEASE&quot;</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;flags&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;-D MYLIB_REV=1.2.3 -DRELEASE&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Extra includes for C preprocessor</p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;flags&quot;</span><span class="o">:</span> <span class="p">[</span>
-        <span class="s2">&quot;-I inc&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;-I inc/target_x13&quot;</span>
-    <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;flags&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;-I inc&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;-I inc/target_x13&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Force to use <code class="docutils literal notranslate"><span class="pre">C99</span></code> standard instead of <code class="docutils literal notranslate"><span class="pre">C11</span></code></p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;unflags&quot;</span><span class="o">:</span> <span class="s2">&quot;-std=gnu++11&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;flags&quot;</span><span class="o">:</span> <span class="s2">&quot;-std=c99&quot;</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;unflags&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;-std=gnu++11&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;flags&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;-std=c99&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="4">
 <li><p>Build source files (<code class="docutils literal notranslate"><span class="pre">c,</span> <span class="pre">cpp,</span> <span class="pre">h</span></code>) at the top level of the library</p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;srcFilter&quot;</span><span class="o">:</span> <span class="p">[</span>
-        <span class="s2">&quot;+&lt;*.c&gt;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;+&lt;*.cpp&gt;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;+&lt;*.h&gt;&quot;</span>
-    <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;srcFilter&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;+&lt;*.c&gt;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;+&lt;*.cpp&gt;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;+&lt;*.h&gt;&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="5">
 <li><p>Extend PlatformIO Build System with own extra script</p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;extraScript&quot;</span><span class="o">:</span> <span class="s2">&quot;generate_headers.py&quot;</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;extraScript&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;generate_headers.py&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">generate_headers.py</span></code></p>

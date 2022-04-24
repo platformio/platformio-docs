@@ -265,11 +265,11 @@ for PlatformIO and own Runners.</p>
 <p>Let’s create PlatformIO Build System that will be used for C/C++/H/INO/PDE
 files by default. Please click on <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Run</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">System</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">Build</span> <span class="pre">System</span></code>
 and replace all content with the next:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="s2">&quot;cmd&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;pio&quot;</span><span class="p">,</span> <span class="s2">&quot;run&quot;</span><span class="p">,</span> <span class="s2">&quot;-d&quot;</span><span class="p">,</span> <span class="s2">&quot;$file&quot;</span><span class="p">],</span>
-    <span class="s2">&quot;info&quot;</span> <span class="o">:</span> <span class="s2">&quot;Building $project_path/$file_name&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;selector&quot;</span><span class="o">:</span> <span class="s2">&quot;^.*\\.(cpp|c|h|hpp|S|ini|ino|pde)$&quot;</span>
-<span class="p">}</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;cmd&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;pio&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;run&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;-d&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;$file&quot;</span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;info&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Building $project_path/$file_name&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;selector&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^.*\\.(cpp|c|h|hpp|S|ini|ino|pde)$&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Save new Build System and give a name <code class="docutils literal notranslate"><span class="pre">PIOBuilder</span></code>. Now, you can select it
