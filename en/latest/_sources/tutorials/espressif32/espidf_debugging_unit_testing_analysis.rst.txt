@@ -322,6 +322,14 @@ implement several basic functions ``addition``, ``subtraction``, ``multiplicatio
       #include <calculator.h>
       #include <unity.h>
 
+      void setUp(void) {
+          // set stuff up here
+      }
+
+      void tearDown(void) {
+          // clean stuff up here
+      }
+
       void test_function_calculator_addition(void) {
           TEST_ASSERT_EQUAL(32, addition(25, 7));
       }

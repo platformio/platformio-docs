@@ -207,13 +207,13 @@ and place a <code class="docutils literal notranslate"><span class="pre">test_ma
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unity.h&gt;</span><span class="cp"></span>
 
-<span class="c1">// void setUp(void) {</span>
-<span class="c1">// // set stuff up here</span>
-<span class="c1">// }</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// set stuff up here</span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="c1">// void tearDown(void) {</span>
-<span class="c1">// // clean stuff up here</span>
-<span class="c1">// }</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// clean stuff up here</span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_led_builtin_pin_number</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LED_BUILTIN</span><span class="p">);</span><span class="w"></span>
