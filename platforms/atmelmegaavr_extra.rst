@@ -25,6 +25,49 @@ incorrect upload flags. It's highly recommended to use the
 :ref:`projectconf_upload_command` option that gives the full control over flags used
 for uploading. Please read :ref:`atmelavr_upload_via_programmer` for more information.
 
+Upload using pymcuprog serialUPDI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+``pymcuprog`` is a Python-based CLI tool for programming AVR devices with UPDI interface
+using either a Microchip debugger (Atmel-ICE, Power Debugger, PICkit4, Snap, PKOB nano /
+nEDBG / Curiosity Nano debugger) or via a standard serial port. It can be installed
+directly in the PlatformIO virtual environment using the following command:
+
+.. code-block:: bash
+
+    pip install pymcuprog
+
+
+Once ``pymcuprog`` is installed it can be used as the uploader via a custom
+:ref:`projectconf_upload_command` option, for example:
+
+.. code-block:: ini
+
+    [env:ATmega3209_pymcuprog_upload]
+    platform = atmelmegaavr
+    framework = arduino
+    board = ATmega3209
+    upload_speed = 115200
+    upload_flags =
+        --tool
+        uart
+        --device
+        atmega3209
+        --uart
+        $UPLOAD_PORT
+        --clk
+        $UPLOAD_SPEED
+    upload_command = pymcuprog write --erase $UPLOAD_FLAGS --filename $SOURCE
+
+.. note::
+
+    When using a Microchip debugger it must be specified in the --tool argument, and the --uart argument omitted.
+
+More information and a typical circuit diagram can be found in the official
+`pymcuprog repository <https://github.com/microchip-pic-avr-tools/pymcuprog#serial-port-updi-pyupdi>`_.
+
+``pymcuprog`` is maintained by Microchip, and published on `GitHub <https://github.com/microchip-pic-avr-tools/pymcuprog>`_ and `pypi.org <https://pypi.org/project/pymcuprog/>`_.
+
 Upload using pyupdi
 ^^^^^^^^^^^^^^^^^^^
 
