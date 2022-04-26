@@ -57,4 +57,4 @@ Desktop IDE
     sublimetext
     vim
     visualstudio
-    vscode
+    VSCode <vscode>

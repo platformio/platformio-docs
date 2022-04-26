@@ -11,12 +11,8 @@
 
 .. _ide_vscode:
 
-VSCode
-======
-
-.. include:: pioide_features.rst
-
----------
+PlatformIO IDE for VSCode
+=========================
 
 **Visual Studio Code** is a lightweight but
 powerful source code editor which runs on your desktop and is available for
@@ -29,15 +25,20 @@ languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unit
 
 .. contents:: Contents
     :local:
+    :depth: 1
 
 Installation
 ------------
 
 .. note::
-
     Please note that you do not need to install :ref:`piocore` separately if
     you are going to use :ref:`ide_vscode`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
+
+    If you are going to use Git for installing upstream development platforms, cloning
+    external projects, installing library dependencies from a repository, please ensure
+    that ``git --version`` command works from a system terminal. Otherwise, please
+    install a `Git client <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_.
 
 0. `Download <https://code.visualstudio.com>`_ and install official Microsoft Visual Studio Code. PlatformIO IDE is built on top of it
 1. **Open** VSCode Package Manager
@@ -45,12 +46,6 @@ Installation
 3. **Install** PlatformIO IDE.
 
 .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-pkg-installer.png
-
-.. note::
-
-    Please note that you need to install `a Git client <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_
-    if you are going to use Git for installing upstream development platforms, cloning
-    external projects, installing library dependencies from a repository, etc.
 
 Quick Start
 -----------
@@ -122,11 +117,14 @@ Setting Up the Project
 
 ---------------
 
-Further for reading:
+**Further for reading**
 
 * :ref:`tutorials` (step-by-step tutorials with debugging and unit testing)
 * Learn more about :ref:`ide_vscode_toolbar` and other commands (Upload,
-  Clean, Serial Monitor) below.
+  Clean, Serial Monitor) below
+* :ref:`ide_vscode_serial_port_monitor`
+* :ref:`projectconf` (change :ref:`projectconf_upload_port`, configure :ref:`projectconf_build_flags`,
+  add library dependencies :ref:`projectconf_lib_deps`, etc.)
 
 **Happy coding with PlatformIO!**
 
@@ -226,61 +224,10 @@ See more options in the `official VSCode documentation <https://code.visualstudi
 Custom Tasks
 ~~~~~~~~~~~~
 
-Custom tasks can be added to ``tasks.json`` file located in the ``.vscode`` folder
-in the root of project. Please read the official documentation `Tasks in VSCode <https://code.visualstudio.com/docs/editor/tasks#vscode>`_.
+Please declare :ref:`scripting_custom_targets` and refresh Task Explorer:
 
-This simple example demonstrates a custom monitor task which echoes input locally.
-There are a lot of other commands, please read more about :ref:`piocore` and
-its commands (:ref:`piocore_userguide`).
-
-.. code-block:: json
-
-    {
-        "version": "2.0.0",
-        "tasks": [
-            {
-                "type": "shell",
-                "command": "platformio",
-                "args": [
-                    "device",
-                    "monitor",
-                    "--echo"
-                ],
-                "problemMatcher": [
-                    "$platformio"
-                ],
-                "label": "PlatformIO: Monitor (local echo)"
-            }
-        ]
-    }
-
-If the ``platformio`` executable file is not in your system environment "PATH", you
-can provide the full path to the binary folder using the ``options`` field for the task. For example,
-if the ``platformio`` binary is located in the home folder "~/.platformio/penv/bin":
-
-.. code-block:: json
-
-    {
-        "version": "2.0.0",
-        "tasks": [
-            {
-                "type": "shell",
-                "command": "platformio",
-                "args": [
-                    "device",
-                    "monitor",
-                    "--echo"
-                ],
-                "problemMatcher": [
-                    "$platformio"
-                ],
-                "label": "PlatformIO: Monitor (local echo)",
-                "options": {
-                    "env": {"PATH": "${env:HOME}/.platformio/penv/bin"}
-                }
-            }
-        ]
-    }
+.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-task-explorer-refresh.png
+    :width: 50%
 
 Multi-project Workspaces
 ------------------------
@@ -289,6 +236,8 @@ You can work with multiple project folders in Visual Studio Code with
 multi-root workspaces. This can be very helpful when you are working on
 several related projects at the same time. Read more in the documentation
 `Multi-root Workspaces <https://code.visualstudio.com/docs/editor/multi-root-workspaces>`_.
+
+.. _ide_vscode_serial_port_monitor:
 
 Serial Port Monitor
 -------------------

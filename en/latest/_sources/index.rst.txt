@@ -62,7 +62,7 @@ Contents
     platforms/custom_platform_and_board
 
 .. toctree::
-    :caption: Professional
+    :caption: Advanced
     :maxdepth: 1
 
     Debugging <plus/debugging>

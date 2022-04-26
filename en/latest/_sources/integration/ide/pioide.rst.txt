@@ -39,8 +39,8 @@ Go) and runtimes (such as .NET and Unity).
 .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode.png
     :target: vscode.html
 
-PlatformIO for CLion
---------------------
+PlatformIO for CLion (experimental)
+-----------------------------------
 
 The **CLion** is a cross-platform C/C++ IDE for
 Linux, OS X, and Windows. CLion includes such features as a smart editor, code
