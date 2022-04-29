@@ -69,8 +69,6 @@ Tutorials
 
 * `Arduino In-circuit Debugging with PlatformIO <https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc>`__
 * `Use the PlatformIO Debugger on the ESP32 Using an ESP-prog <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
-* `ThingForward: First steps with PlatformIO’s Unified Debugger <https://www.thingforward.io/techblog/2018-07-04-first-steps-with-platformios-unified-debugger.html>`_
-* `[VIDEO] ThingForward - Intro to PIO Unified Debugger using ARM mbed OS and PlatformIO IDE for VSCode <https://www.youtube.com/watch?v=GtlsW3FDN3E>`_
 * :ref:`tutorial_espressif32_arduino_debugging_unit_testing`
 * :ref:`tutorial_espressif32_espidf_debugging_unit_testing_analysis`
 * :ref:`tutorial_nordicnrf52_arduino_debugging_unit_testing`
@@ -581,6 +579,13 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -840,6 +845,13 @@ Adafruit
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_qt_py_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -5012,6 +5024,13 @@ Pycom Ltd.
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_wipy3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
 
 Quirkbot
 ~~~~~~~~
@@ -7036,6 +7055,27 @@ Switch Science
       - 256KB
       - 32KB
 
+TAMC
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_dpu_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+
 TI
 ~~
 
@@ -7847,6 +7887,27 @@ Wicked Device
       - 16MHz
       - 127KB
       - 16KB
+
+Wireless-Tag
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_wt32-eth01`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Wisen
 ~~~~~

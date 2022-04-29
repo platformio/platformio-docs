@@ -68,6 +68,7 @@ Uploading
 ---------
 Trueverit ESP32 Universal IoT Driver MK II supports the following uploading protocols:
 
+* ``cmsis-dap``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -113,9 +114,12 @@ Trueverit ESP32 Universal IoT Driver MK II does not have on-board debug probe an
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_esp-prog`
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - :ref:`debugging_tool_esp-prog`
+    - 
+    - 
   * - :ref:`debugging_tool_iot-bus-jtag`
     - 
     - 

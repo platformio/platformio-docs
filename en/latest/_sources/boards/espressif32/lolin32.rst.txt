@@ -68,6 +68,7 @@ Uploading
 ---------
 WEMOS LOLIN32 supports the following uploading protocols:
 
+* ``cmsis-dap``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -113,9 +114,12 @@ WEMOS LOLIN32 does not have on-board debug probe and **IS NOT READY** for debugg
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_esp-prog`
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - :ref:`debugging_tool_esp-prog`
+    - 
+    - 
   * - :ref:`debugging_tool_iot-bus-jtag`
     - 
     - 

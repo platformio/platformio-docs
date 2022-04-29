@@ -68,6 +68,7 @@ Uploading
 ---------
 MH ET LIVE ESP32MiniKit supports the following uploading protocols:
 
+* ``cmsis-dap``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -113,9 +114,12 @@ MH ET LIVE ESP32MiniKit does not have on-board debug probe and **IS NOT READY** 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_esp-prog`
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - :ref:`debugging_tool_esp-prog`
+    - 
+    - 
   * - :ref:`debugging_tool_iot-bus-jtag`
     - 
     - 

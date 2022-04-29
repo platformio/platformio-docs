@@ -68,6 +68,7 @@ Uploading
 ---------
 MakerAsia KB32-FT supports the following uploading protocols:
 
+* ``cmsis-dap``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -113,9 +114,12 @@ MakerAsia KB32-FT does not have on-board debug probe and **IS NOT READY** for de
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_esp-prog`
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - :ref:`debugging_tool_esp-prog`
+    - 
+    - 
   * - :ref:`debugging_tool_iot-bus-jtag`
     - 
     - 

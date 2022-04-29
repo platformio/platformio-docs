@@ -262,6 +262,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#sparkfun-electronics">SparkFun Electronics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#spellfoundry">SpellFoundry</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#switch-science">Switch Science</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tamc">TAMC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ti">TI</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ttgo">TTGO</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#taida-century">Taida Century</a></li>
@@ -285,6 +286,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#waveshare">Waveshare</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#weact-studio">WeAct Studio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wicked-device">Wicked Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wireless-tag">Wireless-Tag</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wisen">Wisen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xilinx">Xilinx</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xinabox">XinaBox</a></li>
@@ -412,8 +414,6 @@ Key debugging features of <a class="reference internal" href="../integration/ide
 <ul class="simple">
 <li><p><a class="reference external" href="https://medium.com/&#64;manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc">Arduino In-circuit Debugging with PlatformIO</a></p></li>
 <li><p><a class="reference external" href="https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6">Use the PlatformIO Debugger on the ESP32 Using an ESP-prog</a></p></li>
-<li><p><a class="reference external" href="https://www.thingforward.io/techblog/2018-07-04-first-steps-with-platformios-unified-debugger.html">ThingForward: First steps with PlatformIO’s Unified Debugger</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=GtlsW3FDN3E">[VIDEO] ThingForward - Intro to PIO Unified Debugger using ARM mbed OS and PlatformIO IDE for VSCode</a></p></li>
 <li><p><a class="reference internal" href="../tutorials/espressif32/arduino_debugging_unit_testing.html#tutorial-espressif32-arduino-debugging-unit-testing"><span class="std std-ref">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</span></a></p></li>
 <li><p><a class="reference internal" href="../tutorials/espressif32/espidf_debugging_unit_testing_analysis.html#tutorial-espressif32-espidf-debugging-unit-testing-analysis"><span class="std std-ref">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</span></a></p></li>
 <li><p><a class="reference internal" href="../tutorials/nordicnrf52/arduino_debugging_unit_testing.html#tutorial-nordicnrf52-arduino-debugging-unit-testing"><span class="std std-ref">Arduino and Nordic nRF52-DK: debugging and unit testing</span></a></p></li>
@@ -1051,7 +1051,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>796KB</p></td>
 <td><p>243KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m0.html#board-atmelsam-adafruit-feather-m0"><span class="std std-ref">Adafruit Feather M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_tft.html#board-espressif32-adafruit-feather-esp32s2-tft"><span class="std std-ref">Adafruit Feather ESP32-S2 TFT</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m0.html#board-atmelsam-adafruit-feather-m0"><span class="std std-ref">Adafruit Feather M0</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -1059,7 +1067,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m0_express.html#board-atmelsam-adafruit-feather-m0-express"><span class="std std-ref">Adafruit Feather M0 Express</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m0_express.html#board-atmelsam-adafruit-feather-m0-express"><span class="std std-ref">Adafruit Feather M0 Express</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -1067,7 +1075,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m4_can.html#board-atmelsam-adafruit-feather-m4-can"><span class="std std-ref">Adafruit Feather M4 CAN</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m4_can.html#board-atmelsam-adafruit-feather-m4-can"><span class="std std-ref">Adafruit Feather M4 CAN</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAME51J19A</p></td>
@@ -1075,7 +1083,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m4.html#board-atmelsam-adafruit-feather-m4"><span class="std std-ref">Adafruit Feather M4 Express</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_feather_m4.html#board-atmelsam-adafruit-feather-m4"><span class="std std-ref">Adafruit Feather M4 Express</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J19A</p></td>
@@ -1083,7 +1091,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/adafruit_feather_f405.html#board-ststm32-adafruit-feather-f405"><span class="std std-ref">Adafruit Feather STM32F405</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/adafruit_feather_f405.html#board-ststm32-adafruit-feather-f405"><span class="std std-ref">Adafruit Feather STM32F405</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32F405RGT6</p></td>
@@ -1091,7 +1099,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_feather_nrf52840.html#board-nordicnrf52-adafruit-feather-nrf52840"><span class="std std-ref">Adafruit Feather nRF52840 Express</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_feather_nrf52840.html#board-nordicnrf52-adafruit-feather-nrf52840"><span class="std std-ref">Adafruit Feather nRF52840 Express</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF52840</p></td>
@@ -1099,7 +1107,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>796KB</p></td>
 <td><p>243KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/flora8.html#board-atmelavr-flora8"><span class="std std-ref">Adafruit Flora</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/flora8.html#board-atmelavr-flora8"><span class="std std-ref">Adafruit Flora</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -1107,7 +1115,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_funhouse_esp32s2.html#board-espressif32-adafruit-funhouse-esp32s2"><span class="std std-ref">Adafruit FunHouse</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_funhouse_esp32s2.html#board-espressif32-adafruit-funhouse-esp32s2"><span class="std std-ref">Adafruit FunHouse</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -1115,7 +1123,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/gemma.html#board-atmelavr-gemma"><span class="std std-ref">Adafruit Gemma</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/gemma.html#board-atmelavr-gemma"><span class="std std-ref">Adafruit Gemma</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATTINY85</p></td>
@@ -1123,7 +1131,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_gemma_m0.html#board-atmelsam-adafruit-gemma-m0"><span class="std std-ref">Adafruit Gemma M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_gemma_m0.html#board-atmelsam-adafruit-gemma-m0"><span class="std std-ref">Adafruit Gemma M0</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21E18A</p></td>
@@ -1131,7 +1139,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_grandcentral_m4.html#board-atmelsam-adafruit-grandcentral-m4"><span class="std std-ref">Adafruit Grand Central M4</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_grandcentral_m4.html#board-atmelsam-adafruit-grandcentral-m4"><span class="std std-ref">Adafruit Grand Central M4</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51P20A</p></td>
@@ -1139,7 +1147,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_hallowing.html#board-atmelsam-adafruit-hallowing"><span class="std std-ref">Adafruit Hallowing M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_hallowing.html#board-atmelsam-adafruit-hallowing"><span class="std std-ref">Adafruit Hallowing M0</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -1147,7 +1155,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_hallowing_m4.html#board-atmelsam-adafruit-hallowing-m4"><span class="std std-ref">Adafruit Hallowing M4</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_hallowing_m4.html#board-atmelsam-adafruit-hallowing-m4"><span class="std std-ref">Adafruit Hallowing M4</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J19A</p></td>
@@ -1155,7 +1163,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/itsybitsy32u4_3V.html#board-atmelavr-itsybitsy32u4-3v"><span class="std std-ref">Adafruit ItsyBitsy 3V/8MHz</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/itsybitsy32u4_3V.html#board-atmelavr-itsybitsy32u4-3v"><span class="std std-ref">Adafruit ItsyBitsy 3V/8MHz</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -1163,7 +1171,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/itsybitsy32u4_5V.html#board-atmelavr-itsybitsy32u4-5v"><span class="std std-ref">Adafruit ItsyBitsy 5V/16MHz</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/itsybitsy32u4_5V.html#board-atmelavr-itsybitsy32u4-5v"><span class="std std-ref">Adafruit ItsyBitsy 5V/16MHz</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -1171,7 +1179,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_itsybitsy_m0.html#board-atmelsam-adafruit-itsybitsy-m0"><span class="std std-ref">Adafruit ItsyBitsy M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_itsybitsy_m0.html#board-atmelsam-adafruit-itsybitsy-m0"><span class="std std-ref">Adafruit ItsyBitsy M0</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -1179,7 +1187,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_itsybitsy_m4.html#board-atmelsam-adafruit-itsybitsy-m4"><span class="std std-ref">Adafruit ItsyBitsy M4</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_itsybitsy_m4.html#board-atmelsam-adafruit-itsybitsy-m4"><span class="std std-ref">Adafruit ItsyBitsy M4</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51G19A</p></td>
@@ -1187,7 +1195,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_ledglasses_nrf52840.html#board-nordicnrf52-adafruit-ledglasses-nrf52840"><span class="std std-ref">Adafruit LED Glasses Driver nRF52840</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_ledglasses_nrf52840.html#board-nordicnrf52-adafruit-ledglasses-nrf52840"><span class="std std-ref">Adafruit LED Glasses Driver nRF52840</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF52840</p></td>
@@ -1195,7 +1203,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>796KB</p></td>
 <td><p>232KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_monster_m4sk.html#board-atmelsam-adafruit-monster-m4sk"><span class="std std-ref">Adafruit MONSTER M4SK</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_monster_m4sk.html#board-atmelsam-adafruit-monster-m4sk"><span class="std std-ref">Adafruit MONSTER M4SK</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51G19A</p></td>
@@ -1203,7 +1211,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_magtag29_esp32s2.html#board-espressif32-adafruit-magtag29-esp32s2"><span class="std std-ref">Adafruit MagTag 2.9</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_magtag29_esp32s2.html#board-espressif32-adafruit-magtag29-esp32s2"><span class="std std-ref">Adafruit MagTag 2.9</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -1211,7 +1219,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_matrix_portal_m4.html#board-atmelsam-adafruit-matrix-portal-m4"><span class="std std-ref">Adafruit Matrix Portal M4</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_matrix_portal_m4.html#board-atmelsam-adafruit-matrix-portal-m4"><span class="std std-ref">Adafruit Matrix Portal M4</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J19A</p></td>
@@ -1219,7 +1227,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/metro.html#board-atmelavr-metro"><span class="std std-ref">Adafruit Metro</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/metro.html#board-atmelavr-metro"><span class="std std-ref">Adafruit Metro</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -1227,7 +1235,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_metro_esp32s2.html#board-espressif32-adafruit-metro-esp32s2"><span class="std std-ref">Adafruit Metro ESP32-S2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_metro_esp32s2.html#board-espressif32-adafruit-metro-esp32s2"><span class="std std-ref">Adafruit Metro ESP32-S2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -1235,7 +1243,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_metro_m0.html#board-atmelsam-adafruit-metro-m0"><span class="std std-ref">Adafruit Metro M0 Expresss</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_metro_m0.html#board-atmelsam-adafruit-metro-m0"><span class="std std-ref">Adafruit Metro M0 Expresss</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -1243,7 +1251,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_metro_m4.html#board-atmelsam-adafruit-metro-m4"><span class="std std-ref">Adafruit Metro M4</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_metro_m4.html#board-atmelsam-adafruit-metro-m4"><span class="std std-ref">Adafruit Metro M4</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J19A</p></td>
@@ -1251,7 +1259,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_metro_m4_airliftlite.html#board-atmelsam-adafruit-metro-m4-airliftlite"><span class="std std-ref">Adafruit Metro M4 AirLift Lite</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_metro_m4_airliftlite.html#board-atmelsam-adafruit-metro-m4-airliftlite"><span class="std std-ref">Adafruit Metro M4 AirLift Lite</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J19A</p></td>
@@ -1259,7 +1267,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_neokeytrinkey_m0.html#board-atmelsam-adafruit-neokeytrinkey-m0"><span class="std std-ref">Adafruit NeoKey Trinkey</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_neokeytrinkey_m0.html#board-atmelsam-adafruit-neokeytrinkey-m0"><span class="std std-ref">Adafruit NeoKey Trinkey</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21E18A</p></td>
@@ -1267,7 +1275,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_neotrinkey_m0.html#board-atmelsam-adafruit-neotrinkey-m0"><span class="std std-ref">Adafruit NeoPixel Trinkey</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_neotrinkey_m0.html#board-atmelsam-adafruit-neotrinkey-m0"><span class="std std-ref">Adafruit NeoPixel Trinkey</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21E18A</p></td>
@@ -1275,7 +1283,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/protrinket3ftdi.html#board-atmelavr-protrinket3ftdi"><span class="std std-ref">Adafruit Pro Trinket 3V/12MHz (FTDI)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/protrinket3ftdi.html#board-atmelavr-protrinket3ftdi"><span class="std std-ref">Adafruit Pro Trinket 3V/12MHz (FTDI)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -1283,7 +1291,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/protrinket3.html#board-atmelavr-protrinket3"><span class="std std-ref">Adafruit Pro Trinket 3V/12MHz (USB)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/protrinket3.html#board-atmelavr-protrinket3"><span class="std std-ref">Adafruit Pro Trinket 3V/12MHz (USB)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -1291,7 +1299,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/protrinket5ftdi.html#board-atmelavr-protrinket5ftdi"><span class="std std-ref">Adafruit Pro Trinket 5V/16MHz (FTDI)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/protrinket5ftdi.html#board-atmelavr-protrinket5ftdi"><span class="std std-ref">Adafruit Pro Trinket 5V/16MHz (FTDI)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -1299,7 +1307,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/protrinket5.html#board-atmelavr-protrinket5"><span class="std std-ref">Adafruit Pro Trinket 5V/16MHz (USB)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/protrinket5.html#board-atmelavr-protrinket5"><span class="std std-ref">Adafruit Pro Trinket 5V/16MHz (USB)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -1307,7 +1315,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_proxlighttrinkey_m0.html#board-atmelsam-adafruit-proxlighttrinkey-m0"><span class="std std-ref">Adafruit ProxLight Trinkey</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_proxlighttrinkey_m0.html#board-atmelsam-adafruit-proxlighttrinkey-m0"><span class="std std-ref">Adafruit ProxLight Trinkey</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21E18A</p></td>
@@ -1315,7 +1323,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_pygamer_advance_m4.html#board-atmelsam-adafruit-pygamer-advance-m4"><span class="std std-ref">Adafruit PyGamer Advance M4</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_pygamer_advance_m4.html#board-atmelsam-adafruit-pygamer-advance-m4"><span class="std std-ref">Adafruit PyGamer Advance M4</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J20A</p></td>
@@ -1323,7 +1331,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_pygamer_m4.html#board-atmelsam-adafruit-pygamer-m4"><span class="std std-ref">Adafruit PyGamer M4 Express</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_pygamer_m4.html#board-atmelsam-adafruit-pygamer-m4"><span class="std std-ref">Adafruit PyGamer M4 Express</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J19A</p></td>
@@ -1331,7 +1339,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_pyportal_m4.html#board-atmelsam-adafruit-pyportal-m4"><span class="std std-ref">Adafruit PyPortal M4</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_pyportal_m4.html#board-atmelsam-adafruit-pyportal-m4"><span class="std std-ref">Adafruit PyPortal M4</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J20A</p></td>
@@ -1339,13 +1347,21 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_pyportal_m4_titano.html#board-atmelsam-adafruit-pyportal-m4-titano"><span class="std std-ref">Adafruit PyPortal M4 Titano</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_pyportal_m4_titano.html#board-atmelsam-adafruit-pyportal-m4-titano"><span class="std std-ref">Adafruit PyPortal M4 Titano</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J20A</p></td>
 <td><p>120MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s2.html#board-espressif32-adafruit-qtpy-esp32s2"><span class="std std-ref">Adafruit QT Py ESP32-S2</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_qt_py_m0.html#board-atmelsam-adafruit-qt-py-m0"><span class="std std-ref">Adafruit QT Py M0</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
@@ -7095,6 +7111,14 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wipy3.html#board-espressif32-wipy3"><span class="std std-ref">Pycom WiPy3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>1.25MB</p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -9750,6 +9774,40 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="tamc">
+<h3>TAMC<a class="headerlink" href="#tamc" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dpu_esp32.html#board-espressif32-dpu-esp32"><span class="std std-ref">TAMC DPU ESP32</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="ti">
 <h3>TI<a class="headerlink" href="#ti" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
@@ -10904,6 +10962,40 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>16MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="wireless-tag">
+<h3>Wireless-Tag<a class="headerlink" href="#wireless-tag" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wt32-eth01.html#board-espressif32-wt32-eth01"><span class="std std-ref">Wireless-Tag WT32-ETH01 Ethernet Module</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 </tbody>
 </table>

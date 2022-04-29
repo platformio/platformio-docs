@@ -202,6 +202,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_funhouse_esp32s2`
       - :ref:`platform_espressif32`
       - External
@@ -217,6 +224,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_metro_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
@@ -538,6 +552,13 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_wipy3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
@@ -628,6 +649,13 @@ Boards
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dpu_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
       - :ref:`platform_espressif32`
@@ -749,6 +777,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_wemosbat`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wt32-eth01`
       - :ref:`platform_espressif32`
       - External
       - ESP32

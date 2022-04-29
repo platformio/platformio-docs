@@ -141,6 +141,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_funhouse_esp32s2`
       - ESP32S2
       - 240MHz
@@ -152,6 +157,11 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_metro_esp32s2`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
       - ESP32S2
       - 240MHz
       - 4MB
@@ -366,6 +376,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_wipy3`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
     * - :ref:`board_espressif32_sg-o_airMon`
       - ESP32
       - 240MHz
@@ -395,6 +410,11 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dpu_esp32`
+      - ESP32
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
       - ESP32
@@ -482,6 +502,11 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_wemosbat`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wt32-eth01`
       - ESP32
       - 240MHz
       - 4MB
@@ -711,6 +736,12 @@ Adafruit
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_funhouse_esp32s2`
       - External
       - ESP32S2
@@ -724,6 +755,12 @@ Adafruit
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_metro_esp32s2`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
       - External
       - ESP32S2
       - 240MHz
@@ -1763,6 +1800,12 @@ Pycom Ltd.
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_wipy3`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
 
 Qmobot LLP
 ~~~~~~~~~~
@@ -1913,6 +1956,25 @@ SparkFun Electronics
       - ESP32
       - 240MHz
       - 16MB
+      - 320KB
+
+TAMC
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_dpu_esp32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
       - 320KB
 
 TTGO
@@ -2186,6 +2248,25 @@ Widora
       - ESP32
       - 240MHz
       - 16MB
+      - 320KB
+
+Wireless-Tag
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_wt32-eth01`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
       - 320KB
 
 XinaBox

@@ -1849,6 +1849,12 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
+      - :ref:`platform_espressif32`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -2017,6 +2023,12 @@ Please click on board name for the further details.
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
+      - :ref:`platform_espressif32`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_qt_py_m0`
       - :ref:`platform_atmelsam`
       - SAMD21E18A
@@ -2809,6 +2821,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_wipy3`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
     * - :ref:`board_ststm32_rak811_tracker`
       - :ref:`platform_ststm32`
       - STM32L151RBT6
@@ -3493,6 +3511,12 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 40KB
+    * - :ref:`board_espressif32_dpu_esp32`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
       - :ref:`platform_espressif32`
       - ESP32
@@ -3733,6 +3757,12 @@ Please click on board name for the further details.
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_espressif32_wt32-eth01`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_ststm32_wraith32_v1`
       - :ref:`platform_ststm32`
       - STM32F051K6
@@ -3989,6 +4019,13 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -4255,6 +4292,13 @@ Adafruit
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_qt_py_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -9386,6 +9430,13 @@ Pycom Ltd.
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_wipy3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
 
 Qmobot LLP
 ~~~~~~~~~~
@@ -10913,6 +10964,27 @@ SweetPea
       - 4MB
       - 80KB
 
+TAMC
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_dpu_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+
 TI
 ~~
 
@@ -11836,6 +11908,27 @@ WifiDuino
       - 80MHz
       - 4MB
       - 80KB
+
+Wireless-Tag
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_wt32-eth01`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Wisen
 ~~~~~
