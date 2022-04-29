@@ -264,7 +264,7 @@ having the following structure:</p>
    │   │           └── sensor.h
    │   ├── unity_config.cpp
    │   └── unity_config.h
-   └── test_ingradients
+   └── test_ingredients
       ├── include
       │   ├── cheese.h
       │   ├── vegetables.h
@@ -283,18 +283,18 @@ can be tested independently using unit testing.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">embedded/components/sauce/test_tomatos</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">embedded/stove/test_humidity</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">embedded/stove/test_temperature</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">test_ingradients</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test_ingredients</span></code></p></li>
 </ol>
 <p>PlatformIO treats each test as an independent micro project with its own source
 files and subfolders. You can include local header files using the relative paths.
-For example, the <code class="docutils literal notranslate"><span class="pre">test_ingradients/weighing.cpp</span></code> source file includes
+For example, the <code class="docutils literal notranslate"><span class="pre">test_ingredients/weighing.cpp</span></code> source file includes
 <code class="docutils literal notranslate"><span class="pre">cheese.h</span></code> as <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;include/cheese.h&gt;</span></code>.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> and <code class="docutils literal notranslate"><span class="pre">unity_config.cpp</span></code> files are located in the
 <code class="docutils literal notranslate"><span class="pre">embedded</span></code> folder and are common for the <code class="docutils literal notranslate"><span class="pre">embedded/components/sauce/test_tomatos</span></code>,
 <code class="docutils literal notranslate"><span class="pre">embedded/stove/test_humidity</span></code>, and <code class="docutils literal notranslate"><span class="pre">embedded/stove/test_temperature</span></code> tests.
 This allows you to run a group of tests only on the embedded target and route
 a test result output to the custom Serial/UART interface.
-On the other hand, the <code class="docutils literal notranslate"><span class="pre">test_ingradients</span></code> test uses the default Unity configuration
+On the other hand, the <code class="docutils literal notranslate"><span class="pre">test_ingredients</span></code> test uses the default Unity configuration
 provided by PlatformIO. For more details, please check the documentation for the
 <a class="reference internal" href="frameworks/unity.html#unit-testing-frameworks-unity"><span class="std std-ref">Unity</span></a> testing framework.</p>
 </section>

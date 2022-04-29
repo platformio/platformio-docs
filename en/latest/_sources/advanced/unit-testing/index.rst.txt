@@ -14,17 +14,17 @@
 Unit Testing
 ============
 
-Unit Testing is a software testing technique to reduces defects in the
+Unit Testing is a software testing technique that reduces defects in the
 newly developed features or reduces bugs when changing the existing functionality.
 
-**PlatformIO Unit Testing** allows you segregating each part of the firmware/program
-and testing that the individual parts are working correctly. Using PlatformIO you
+**PlatformIO Unit Testing** allows you to segregate each part of the firmware/program
+and test that the individual parts are working correctly. Using PlatformIO you
 can execute the same tests on the local host machine (native), on the multiple
 local embedded devices/boards (connected to local host machine), or on both.
-When testing both, PlatformIO builds firmware on the host machine, uploads into a
-target device, starts tests, and collects the test results into test reports.
+When testing both, PlatformIO builds firmware on the host machine, uploads it into
+a target device, starts tests and collects the test results into test reports.
 The final information will be shown on the host side with informative output
-and statistic.
+and statistics.
 
 Using :ref:`pioremote` you can start unit tests on the **Remote Device** from
 anywhere in the world or integrate with :ref:`ci` systems.

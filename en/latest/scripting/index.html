@@ -130,37 +130,18 @@
            <div itemprop="articleBody">
              
   <section id="advanced-scripting">
-<span id="scripting"></span><h1><a class="toc-backref" href="#id1">Advanced Scripting</a><a class="headerlink" href="#advanced-scripting" title="Permalink to this headline">¶</a></h1>
+<span id="scripting"></span><h1>Advanced Scripting<a class="headerlink" href="#advanced-scripting" title="Permalink to this headline">¶</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Advanced Scripting is recommended for Advanced Users and requires
 knowledge of the Python language.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><a class="reference internal" href="../projectconf/section_env_build.html#projectconf-dynamic-build-flags"><span class="std std-ref">Dynamic build flags</span></a> is a highly recommended
-alternative to advanced scripting, where you can use any programming
-language. Also, that option is useful if you need to apply changes
-to the project before the building/uploading process, such as:</p>
-<ul class="simple">
-<li><p>Macro with the latest VCS revision/tag “on-the-fly”</p></li>
-<li><p>Generate dynamic headers (<code class="docutils literal notranslate"><span class="pre">*.h</span></code>)</p></li>
-<li><p>Process media content before generating SPIFFS image</p></li>
-<li><p>Make some changes to source code or related libraries</p></li>
-</ul>
-</div>
-<div class="contents topic" id="contents">
-<p class="topic-title">Contents</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#advanced-scripting" id="id1">Advanced Scripting</a></p></li>
-</ul>
 </div>
 <p>The PlatformIO Build System allows the user to extend the build process with
 custom scripts using the Python interpreter and
 the <a class="reference external" href="http://www.scons.org">SCons</a> construction tool.
 Build flags, upload flags, targets, toolchains data and other information are
 available for modification as <a class="reference external" href="http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments">SCons Construction Environments</a>.
-Custom scripts are included with <a class="reference internal" href="../projectconf/section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a></p>
+Custom scripts are included with <a class="reference internal" href="../projectconf/section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You can not run or debug these scripts manually with a Python

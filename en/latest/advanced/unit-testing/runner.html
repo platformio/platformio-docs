@@ -149,7 +149,7 @@
 <p><strong>PlatformIO Test Runner</strong> is a powerful unit testing tool. It runs
 your unit tests located in the <a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>, navigates
 through tests, and facilitates the processing of test results. Test Runner
-supports the most popular <a class="reference internal" href="frameworks/index.html#unit-testing-frameworks"><span class="std std-ref">Testing Frameworks</span></a> frameworks.</p>
+supports the most popular <a class="reference internal" href="frameworks/index.html#unit-testing-frameworks"><span class="std std-ref">Testing Frameworks</span></a>.</p>
 <p>Test Runner allows you to run specific project environments or filter
 tests using the “Glob patterns”. Once tests are finished, Test Runner
 provides a rich report with the status of all test suites and test cases
@@ -170,26 +170,26 @@ provides a rich report with the status of all test suites and test cases
 </div>
 <section id="local-test-runner">
 <h2><a class="toc-backref" href="#id1">Local Test Runner</a><a class="headerlink" href="#local-test-runner" title="Permalink to this headline">¶</a></h2>
-<p><strong>Local Test Runner</strong> allows you to run a test on a host machine or on
-the target device (board), which is directly connected to the host machine.
-In this case, you need to use the <a class="reference internal" href="../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command.</p>
+<p><strong>Local Test Runner</strong> allows you to run a test on a local host machine
+or on a local target device (board). In this case, you need to use
+the <a class="reference internal" href="../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command.</p>
 </section>
 <section id="remote-test-runner">
 <span id="unit-testing-runner-remote"></span><h2><a class="toc-backref" href="#id2">Remote Test Runner</a><a class="headerlink" href="#remote-test-runner" title="Permalink to this headline">¶</a></h2>
-<p><strong>Remote Test Runner</strong> allows you to run test on a remote machine or remote
-target device (board) without having to depend on OS software, extra software,
-SSH, VPN or opening network ports. Remote Unit Testing works in pair with
-<a class="reference internal" href="../../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a>. In this case, you need to use the special command
-<a class="reference internal" href="../../core/userguide/remote/cmd_test.html#cmd-remote-test"><span class="std std-ref">pio remote test</span></a>.</p>
+<p><strong>Remote Test Runner</strong> allows you to run test on the remote machine or
+on the remote target device (board) without having to depend on OS software,
+extra software, SSH, VPN or opening network ports. Remote Unit Testing
+works in pair with <a class="reference internal" href="../../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a>. In this case, you need to use the
+special command <a class="reference internal" href="../../core/userguide/remote/cmd_test.html#cmd-remote-test"><span class="std std-ref">pio remote test</span></a>.</p>
 <p>PlatformIO supports multiple <a class="reference internal" href="../../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> systems where you can run unit tests
 at each integration stage.</p>
 </section>
 <section id="test-types">
 <span id="unit-testing-runner-test-types"></span><h2><a class="toc-backref" href="#id3">Test Types</a><a class="headerlink" href="#test-types" title="Permalink to this headline">¶</a></h2>
 <p>Before writing a test, you need to decide where it will be executed later:
-on a host machine or on the target device connected to the host machine.
+on the host machine or on the target device connected to the host machine.
 Tests that are written for the target device typically will not work on
-your host machine due to the missed peripheral and other connectivity.</p>
+your host machine due to the missing peripheral and other connectivity.</p>
 <p>Using the <a class="reference internal" href="structure.html#unit-testing-test-hierarchies"><span class="std std-ref">Test Hierarchies</span></a> allows you to organize tests
 by types and later skip an incompatible group of tests using
 <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a> or <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a> options
@@ -197,10 +197,9 @@ in <a class="reference internal" href="../../projectconf/index.html#projectconf"
 <section id="native">
 <h3><a class="toc-backref" href="#id4">Native</a><a class="headerlink" href="#native" title="Permalink to this headline">¶</a></h3>
 <p>Native tests are intended for the project components that are independent
-of physical hardware. You can also use them in pair with the Mocking testing
-frameworks.</p>
+of physical hardware. You can also use them in pair with Mocking frameworks.</p>
 <p>PlatformIO provides you a <a class="reference internal" href="../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> development platform to
-build and run tests on the host machine or using <a class="reference internal" href="../../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> VM instance.</p>
+build and run tests on the local host machine or using <a class="reference internal" href="../../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> VM instance.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>PlatformIO does not install automatically any toolchains
@@ -243,7 +242,7 @@ host machine</p></li>
 <p>Please check <a class="reference internal" href="frameworks/index.html#unit-testing-frameworks"><span class="std std-ref">Testing Frameworks</span></a> documentation and learn
 how to provide a custom configuration or to get full control of
 PlatformIO Unit Testing Runner using <a class="reference internal" href="frameworks/custom.html#unit-testing-frameworks-custom"><span class="std std-ref">Custom</span></a>
-implementation of unit testing runner.</p>
+implementation.</p>
 </section>
 <section id="hybrid">
 <h3><a class="toc-backref" href="#id6">Hybrid</a><a class="headerlink" href="#hybrid" title="Permalink to this headline">¶</a></h3>
