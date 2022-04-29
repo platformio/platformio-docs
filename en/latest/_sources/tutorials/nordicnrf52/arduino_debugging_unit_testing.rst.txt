@@ -20,9 +20,10 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vs
 * **Platforms:** Windows, Mac OS X, Linux
 
 **Requirements:**
-    - Downloaded and installed :ref:`ide_vscode`
-    - Install drivers for :ref:`debugging_tool_jlink` debug tool
-    - :ref:`board_nordicnrf52_nrf52_dk` development board
+
+- Downloaded and installed :ref:`ide_vscode`
+- Install drivers for :ref:`debugging_tool_jlink` debug tool
+- :ref:`board_nordicnrf52_nrf52_dk` development board
 
 
 .. contents:: Contents
@@ -49,20 +50,20 @@ Let's add some actual code to the project. Firstly, we open a default main file 
 
 .. code-block:: cpp
 
-    #include <Arduino.h>
+  #include <Arduino.h>
 
-    void setup()
-    {
-        pinMode(LED_BUILTIN, OUTPUT);
-    }
+  void setup()
+  {
+    pinMode(LED_BUILTIN, OUTPUT);
+  }
 
-    void loop()
-    {
-        digitalWrite(LED_BUILTIN, HIGH);
-        delay(100);
-        digitalWrite(LED_BUILTIN, LOW);
-        delay(100);
-    }
+  void loop()
+  {
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(100);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(100);
+  }
 
 .. image:: ../../_static/images/tutorials/nordicnrf52/arduino-debugging-unit-testing-3.png
 
@@ -94,11 +95,11 @@ Debugging the Firmware
 
 .. code-block:: ini
 
-    [env:nrf52_dk]
-    platform = nordicnrf52
-    board = nrf52_dk
-    framework = arduino
-    debug_tool = jlink
+  [env:nrf52_dk]
+  platform = nordicnrf52
+  board = nrf52_dk
+  framework = arduino
+  debug_tool = jlink
 
 To start the debug session we can use next options:
 ``Debug: Start debugging`` from the top menu, ``Start Debugging`` option from Quick Access menu or hotkey button ``F5``:
@@ -116,7 +117,7 @@ We can walk through the code using control buttons, set breakpoints, add variabl
 Writing Unit Tests
 ------------------
 
-Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``. Functions ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example we will use these functions to accordingly initialize and deinitialize LED.  ``setup`` and ``loop`` functions act as a simple Arduino program where we describe our test plan.
+:ref:`unit_testing` test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``. Functions ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example we will use these functions to accordingly initialize and deinitialize LED.  ``setup`` and ``loop`` functions act as a simple Arduino program where we describe our test plan.
 
 Let's create ``test`` folder in the root of the project and add a new file ``test_main.cpp`` to this folder. Next basic tests for ``String`` class will be implemented in this file:
 
@@ -132,67 +133,75 @@ Let's create ``test`` folder in the root of the project and add a new file ``tes
 
 .. code-block:: cpp
 
-    #include <Arduino.h>
-    #include <unity.h>
+  #include <Arduino.h>
+  #include <unity.h>
 
-    String STR_TO_TEST;
+  String STR_TO_TEST;
 
-    void setUp(void) {
-        // set stuff up here
-        STR_TO_TEST = "Hello, world!";
-    }
+  void setUp(void)
+  {
+    // set stuff up here
+    STR_TO_TEST = "Hello, world!";
+  }
 
-    void tearDown(void) {
-        // clean stuff up here
-        STR_TO_TEST = "";
-    }
+  void tearDown(void)
+  {
+    // clean stuff up here
+    STR_TO_TEST = "";
+  }
 
-    void test_string_concat(void) {
-        String hello = "Hello, ";
-        String world = "world!";
-        TEST_ASSERT_EQUAL_STRING(STR_TO_TEST.c_str(), (hello + world).c_str());
-    }
+  void test_string_concat(void)
+  {
+    String hello = "Hello, ";
+    String world = "world!";
+    TEST_ASSERT_EQUAL_STRING(STR_TO_TEST.c_str(), (hello + world).c_str());
+  }
 
-    void test_string_substring(void) {
-        TEST_ASSERT_EQUAL_STRING("Hello", STR_TO_TEST.substring(0, 5).c_str());
-    }
+  void test_string_substring(void)
+  {
+    TEST_ASSERT_EQUAL_STRING("Hello", STR_TO_TEST.substring(0, 5).c_str());
+  }
 
-    void test_string_index_of(void) {
-        TEST_ASSERT_EQUAL(7, STR_TO_TEST.indexOf('w'));
-    }
+  void test_string_index_of(void)
+  {
+    TEST_ASSERT_EQUAL(7, STR_TO_TEST.indexOf('w'));
+  }
 
-    void test_string_equal_ignore_case(void) {
-        TEST_ASSERT_TRUE(STR_TO_TEST.equalsIgnoreCase("HELLO, WORLD!"));
-    }
+  void test_string_equal_ignore_case(void)
+  {
+    TEST_ASSERT_TRUE(STR_TO_TEST.equalsIgnoreCase("HELLO, WORLD!"));
+  }
 
-    void test_string_to_upper_case(void) {
-        STR_TO_TEST.toUpperCase();
-        TEST_ASSERT_EQUAL_STRING("HELLO, WORLD!", STR_TO_TEST.c_str());
-    }
+  void test_string_to_upper_case(void)
+  {
+    STR_TO_TEST.toUpperCase();
+    TEST_ASSERT_EQUAL_STRING("HELLO, WORLD!", STR_TO_TEST.c_str());
+  }
 
-    void test_string_replace(void) {
-        STR_TO_TEST.replace('!', '?');
-        TEST_ASSERT_EQUAL_STRING("Hello, world?", STR_TO_TEST.c_str());
-    }
+  void test_string_replace(void)
+  {
+    STR_TO_TEST.replace('!', '?');
+    TEST_ASSERT_EQUAL_STRING("Hello, world?", STR_TO_TEST.c_str());
+  }
 
-    void setup()
-    {
-        delay(2000); // service delay
-        UNITY_BEGIN();
+  void setup()
+  {
+    delay(2000); // service delay
+    UNITY_BEGIN();
 
-        RUN_TEST(test_string_concat);
-        RUN_TEST(test_string_substring);
-        RUN_TEST(test_string_index_of);
-        RUN_TEST(test_string_equal_ignore_case);
-        RUN_TEST(test_string_to_upper_case);
-        RUN_TEST(test_string_replace);
+    RUN_TEST(test_string_concat);
+    RUN_TEST(test_string_substring);
+    RUN_TEST(test_string_index_of);
+    RUN_TEST(test_string_equal_ignore_case);
+    RUN_TEST(test_string_to_upper_case);
+    RUN_TEST(test_string_replace);
 
-        UNITY_END(); // stop unit testing
-    }
+    UNITY_END(); // stop unit testing
+  }
 
-    void loop()
-    {
-    }
+  void loop()
+  {
+  }
 
 
 Now we are ready to upload tests to the board. To do this we can use next options:
@@ -213,62 +222,65 @@ To add the basic BLE functionality to our project we need to define the SoftDevi
 and install a library called `BLEPeripheral <https://platformio.org/lib/show/259/BLEPeripheral>`_.
 Both these modifications can be specified in :ref:`projectconf`:
 
-
 .. code-block:: ini
 
-    [env:nrf52_dk]
-    platform = nordicnrf52
-    board = nrf52_dk
-    framework = arduino
-    debug_tool = jlink
-    ; SoftDevice version
-    build_flags = -DNRF52_S132
-    lib_deps =
-      BLEPeripheral
+  [env:nrf52_dk]
+  platform = nordicnrf52
+  board = nrf52_dk
+  framework = arduino
+  debug_tool = jlink
+  ; SoftDevice version
+  build_flags = -DNRF52_S132
+  lib_deps =
+    BLEPeripheral
 
 Now let's create a basic application that can interact with other BLE devices (e.g phone)
 For example, next code declares a BLE characteristic that controls the state of the LED1.
 
 .. code-block:: cpp
 
-    #include <Arduino.h>
-    #include <SPI.h>
-    #include <BLEPeripheral.h>
+  #include <Arduino.h>
+  #include <SPI.h>
+  #include <BLEPeripheral.h>
 
-    BLEPeripheral ledPeripheral = BLEPeripheral();
+  BLEPeripheral ledPeripheral = BLEPeripheral();
 
-    BLEService ledService = BLEService("19b10000e8f2537e4f6cd104768a1214");
-    BLECharCharacteristic ledCharacteristic = BLECharCharacteristic("19b10001e8f2537e4f6cd104768a1214", BLERead | BLEWrite);
+  BLEService ledService = BLEService("19b10000e8f2537e4f6cd104768a1214");
+  BLECharCharacteristic ledCharacteristic = BLECharCharacteristic("19b10001e8f2537e4f6cd104768a1214", BLERead | BLEWrite);
 
-    void setup()
+  void setup()
+  {
+    pinMode(LED_BUILTIN, OUTPUT);
+
+    ledPeripheral.setAdvertisedServiceUuid(ledService.uuid());
+    ledPeripheral.addAttribute(ledService);
+    ledPeripheral.addAttribute(ledCharacteristic);
+    ledPeripheral.setLocalName("Nordic NRF52 DK");
+    ledPeripheral.begin();
+  }
+
+  void loop()
+  {
+    BLECentral central = ledPeripheral.central();
+
+    if (central)
     {
-      pinMode(LED_BUILTIN, OUTPUT);
-
-      ledPeripheral.setAdvertisedServiceUuid(ledService.uuid());
-      ledPeripheral.addAttribute(ledService);
-      ledPeripheral.addAttribute(ledCharacteristic);
-      ledPeripheral.setLocalName("Nordic NRF52 DK");
-      ledPeripheral.begin();
-    }
-
-    void loop()
-    {
-      BLECentral central = ledPeripheral.central();
-
-      if (central) {
-        while (central.connected()) {
-          if (ledCharacteristic.written()) {
-            if (ledCharacteristic.value()) {
-              digitalWrite(LED_BUILTIN, HIGH);
-            }
-            else{
-              digitalWrite(LED_BUILTIN, LOW);
-            }
+      while (central.connected())
+      {
+        if (ledCharacteristic.written())
+        {
+          if (ledCharacteristic.value())
+          {
+            digitalWrite(LED_BUILTIN, HIGH);
+          }
+          else
+          {
+            digitalWrite(LED_BUILTIN, LOW);
           }
         }
       }
     }
-
+  }
 
 Now we can compile and upload this program to the board as described in previous sections.
 To verify that our application works as expected, we can use any Android smartphone with BLE feature and

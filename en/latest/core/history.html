@@ -75,7 +75,7 @@
 <p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
@@ -174,11 +174,14 @@
 </li>
 <li><p><strong>Unit Testing</strong></p>
 <ul>
+<li><p>New <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html">Unit Testing</a> engine and documentation</p></li>
+<li><p>Added support for <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/structure.html">Test Hierarchies</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4135">issue #4135</a>)</p></li>
 <li><p>Added a new “test” <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/build_configurations.html">build configuration</a></p></li>
-<li><p>Added support for test hierarchies (nested test suites) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4135">issue #4135</a>)</p></li>
 <li><p>Generate reports in JUnit and JSON formats using the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_test.html#cmdoption-pio-test-output-format">pio test –output-format</a> option  (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/2891">issue #2891</a>)</p></li>
 <li><p>Provide more information when the native program crashed on a host (errored with a negative return code) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3429">issue #3429</a>)</p></li>
 <li><p>Fixed an issue when command line parameters (”–ignore”, “–filter”) do not override values defined in the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3845">issue #3845</a>)</p></li>
+<li><p>Renamed the “test_build_project_src” project configuration option to <a class="reference external" href="https://docs.platformio.org/en/latest//projectconf/section_env_test.html#test-build-src">test_build_src</a></p></li>
+<li><p>Removed the “test_transport” option in favor of the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/unity.html">Custom “unity_config.h”</a></p></li>
 </ul>
 </li>
 <li><p><strong>Static Code Analysis</strong></p>
@@ -217,7 +220,6 @@
 <li><p><strong>Miscellaneous</strong></p>
 <ul>
 <li><p>Improved PIO Remote setup on credit-card sized computers (Raspberry Pi, BeagleBon, etc) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3865">issue #3865</a>)</p></li>
-<li><p>Better handling of the failed tests using the <a class="reference external" href="https://docs.platformio.org/en/latest/plus/unit-testing.html">Unit Testing</a> solution</p></li>
 <li><p>Finally removed all tracks to the Python 2.7, the Python 3.6 is the minimum supported version.</p></li>
 </ul>
 </li>
@@ -289,34 +291,34 @@
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\

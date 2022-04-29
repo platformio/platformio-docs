@@ -58,12 +58,12 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Tutorials and Examples</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html#official">Official</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html#id1">Tutorials</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../core/unit_testing_blink.html">Unit Testing of a “Blink” Project</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../espressif32/arduino_debugging_unit_testing.html">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../espressif32/espidf_debugging_unit_testing_analysis.html">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ststm32/stm32cube_debugging_unit_testing.html">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Arduino and Nordic nRF52-DK: debugging and unit testing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="zephyr_debugging_unit_testing_inspect.html">Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../core/unit_testing_blink.html">Unit Testing of a “Blink” Project</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../riscv/riscv_asm_video_tutorial.html">RISC-V ASM Video Tutorial</a></li>
 </ul>
 </li>
@@ -92,7 +92,7 @@
 <p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../plus/unit-testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/unit-testing/index.html">Unit Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/pio-check.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
@@ -146,14 +146,12 @@
 <li><p><strong>Level:</strong> Beginner</p></li>
 <li><p><strong>Platforms:</strong> Windows, Mac OS X, Linux</p></li>
 </ul>
-<dl class="simple">
-<dt><strong>Requirements:</strong></dt><dd><ul class="simple">
+<p><strong>Requirements:</strong></p>
+<ul class="simple">
 <li><p>Downloaded and installed <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode"><span class="std std-ref">PlatformIO IDE for VSCode</span></a></p></li>
 <li><p>Install drivers for <a class="reference internal" href="../../plus/debug-tools/jlink.html#debugging-tool-jlink"><span class="std std-ref">J-LINK</span></a> debug tool</p></li>
 <li><p><a class="reference internal" href="../../boards/nordicnrf52/nrf52_dk.html#board-nordicnrf52-nrf52-dk"><span class="std std-ref">Nordic nRF52-DK</span></a> development board</p></li>
 </ul>
-</dd>
-</dl>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
@@ -182,15 +180,15 @@ and after these steps, we have a fully configured project that is ready for deve
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
@@ -229,7 +227,7 @@ Upload option from the <code class="docutils literal notranslate"><span class="p
 </section>
 <section id="writing-unit-tests">
 <h2><a class="toc-backref" href="#id5">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this headline">¶</a></h2>
-<p>Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: <code class="docutils literal notranslate"><span class="pre">setUp</span></code>, <code class="docutils literal notranslate"><span class="pre">tearDown</span></code>, <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code>. Functions <code class="docutils literal notranslate"><span class="pre">setUp</span></code> and <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the <code class="docutils literal notranslate"><span class="pre">setUp</span></code> function and if you need to clean up variables you use <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> function. In our example we will use these functions to accordingly initialize and deinitialize LED.  <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code> functions act as a simple Arduino program where we describe our test plan.</p>
+<p><a class="reference internal" href="../../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: <code class="docutils literal notranslate"><span class="pre">setUp</span></code>, <code class="docutils literal notranslate"><span class="pre">tearDown</span></code>, <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code>. Functions <code class="docutils literal notranslate"><span class="pre">setUp</span></code> and <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the <code class="docutils literal notranslate"><span class="pre">setUp</span></code> function and if you need to clean up variables you use <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> function. In our example we will use these functions to accordingly initialize and deinitialize LED.  <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code> functions act as a simple Arduino program where we describe our test plan.</p>
 <p>Let’s create <code class="docutils literal notranslate"><span class="pre">test</span></code> folder in the root of the project and add a new file <code class="docutils literal notranslate"><span class="pre">test_main.cpp</span></code> to this folder. Next basic tests for <code class="docutils literal notranslate"><span class="pre">String</span></code> class will be implemented in this file:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">test_string_concat</span></code> tests the concatenation of two strings</p></li>
@@ -250,57 +248,65 @@ Upload option from the <code class="docutils literal notranslate"><span class="p
 
 <span class="n">String</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">;</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// set stuff up here</span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, world!&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// set stuff up here</span>
+<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, world!&quot;</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// clean stuff up here</span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// clean stuff up here</span>
+<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_concat</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world!&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="p">(</span><span class="n">hello</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">world</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_concat</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">String</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">String</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world!&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="p">(</span><span class="n">hello</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">world</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_substring</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_substring</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_index_of</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">&#39;w&#39;</span><span class="p">));</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_index_of</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">&#39;w&#39;</span><span class="p">));</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_equal_ignore_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_TRUE</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">));</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_equal_ignore_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">TEST_ASSERT_TRUE</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">));</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_to_upper_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">toUpperCase</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_to_upper_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">toUpperCase</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_replace</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="sc">&#39;!&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;?&#39;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello, world?&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_replace</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="sc">&#39;!&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;?&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello, world?&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"> </span><span class="c1">// service delay</span>
-<span class="w">    </span><span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"> </span><span class="c1">// service delay</span>
+<span class="w">  </span><span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_concat</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_substring</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_index_of</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_equal_ignore_case</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_to_upper_case</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_replace</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_concat</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_substring</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_index_of</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_equal_ignore_case</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_to_upper_case</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_replace</span><span class="p">);</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">UNITY_END</span><span class="p">();</span><span class="w"> </span><span class="c1">// stop unit testing</span>
+<span class="w">  </span><span class="n">UNITY_END</span><span class="p">();</span><span class="w"> </span><span class="c1">// stop unit testing</span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
@@ -357,13 +363,18 @@ For example, next code declares a BLE characteristic that controls the state of 
 <span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="n">BLECentral</span><span class="w"> </span><span class="n">central</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ledPeripheral</span><span class="p">.</span><span class="n">central</span><span class="p">();</span><span class="w"></span>
 
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">central</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">central</span><span class="p">.</span><span class="n">connected</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ledCharacteristic</span><span class="p">.</span><span class="n">written</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ledCharacteristic</span><span class="p">.</span><span class="n">value</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">central</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">central</span><span class="p">.</span><span class="n">connected</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ledCharacteristic</span><span class="p">.</span><span class="n">written</span><span class="p">())</span><span class="w"></span>
+<span class="w">      </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ledCharacteristic</span><span class="p">.</span><span class="n">value</span><span class="p">())</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
 <span class="w">          </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
 <span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">        </span><span class="k">else</span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">else</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
 <span class="w">          </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
 <span class="w">        </span><span class="p">}</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
@@ -426,34 +437,34 @@ After a successful connection to the board, we should see one “Unknown Service
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\

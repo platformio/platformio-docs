@@ -20,6 +20,16 @@ Test options
 .. contents::
     :local:
 
+.. _projectconf_test_framework:
+
+``test_framework``
+^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No``
+
+A Unit Testing framework name. Please follow to the :ref:`unit_testing_frameworks`
+for the available frameworks.
+
 .. _projectconf_test_filter:
 
 ``test_filter``
@@ -30,7 +40,7 @@ Type: ``String (Pattern)`` | Multiple: ``Yes``
 Process only the :ref:`unit_testing` tests where the name matches specified
 patterns.
 
-Also, you can filter some tests using :option:`pio test --filter` command.
+Also, you can override this option using :option:`pio test --filter` command.
 
 .. list-table::
     :header-rows:  1
@@ -66,7 +76,7 @@ Type: ``String (Pattern)`` | Multiple: ``Yes``
 
 Ignore :ref:`unit_testing` tests where the name matches specified patterns.
 
-Also, you can ignore some tests using :option:`pio test --ignore` command.
+Also, you can override this option using :option:`pio test --ignore` command.
 
 .. list-table::
     :header-rows:  1
@@ -124,26 +134,16 @@ Type: ``Number`` | Multiple: ``No`` | Default: ``115200``
 A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
 to communicate with a target device.
 
-.. _projectconf_test_transport:
+.. _projectconf_test_build_src:
 
-``test_transport``
+``test_build_src``
 ^^^^^^^^^^^^^^^^^^
-
-Type: ``String`` | Multiple: ``No``
-
-A transport type which will be used to read test results from a target device.
-See more details at :ref:`unit_testing_transport`.
-
-.. _projectconf_test_build_project_src:
-
-``test_build_project_src``
-^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Type: ``Bool (yes or no)`` | Multiple: ``No`` | Default: ``no``
 
-Force :ref:`unit_testing` engine to build project source code from
-:ref:`projectconf_pio_src_dir` setting ``test_build_project_src`` to ``yes``.
-More detail about :ref:`unit_testing_shared_code`.
+Setting ``test_build_src`` to ``yes`` will force :ref:`unit_testing` engine
+to build the main source code from :ref:`projectconf_pio_src_dir` in pair
+with a test code. See :ref:`unit_testing_shared_code` for details.
 
 **Example**
 
@@ -151,4 +151,4 @@ More detail about :ref:`unit_testing_shared_code`.
 
   [env:myenv]
   platform = ...
-  test_build_project_src = yes
+  test_build_src = yes
