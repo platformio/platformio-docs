@@ -64,7 +64,7 @@ Use Cases
 
 :Remote Unit Testing:
   Instruct any of :ref:`ci` services to run remote tests on a physical device.
-  See the documentation for :ref:`Remote Test Runner <unit_testing_remote>`.
+  See the documentation for :ref:`unit_testing_runner_remote`.
 
   How does it work?
 

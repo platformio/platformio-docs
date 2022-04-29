@@ -66,7 +66,7 @@ Contents
     :maxdepth: 1
 
     Debugging <plus/debugging>
-    Unit Testing <plus/unit-testing>
+    advanced/unit-testing/index
     Static Code Analysis <plus/pio-check>
     Remote Development <plus/pio-remote>
     plus/pio-account

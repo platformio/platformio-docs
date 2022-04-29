@@ -8,10 +8,10 @@
 /ci/shippable.html -> /integration/ci/shippable.html
 /ci/travis.html -> /integration/ci/travis.html
 /core.html -> /core/index.html
-/core/userguide/package/index.html -> /core/userguide/pkg/index.html
 /core/userguide/package/cmd_pack.html -> /core/userguide/pkg/cmd_pack.html
 /core/userguide/package/cmd_publish.html -> /core/userguide/pkg/cmd_publish.html
 /core/userguide/package/cmd_unpublish.html -> /core/userguide/pkg/cmd_unpublish.html
+/core/userguide/package/index.html -> /core/userguide/pkg/index.html
 /history.html -> /core/history.html
 /ide.html -> /integration/ide/index.html
 /ide/atom.html -> /integration/ide/atom.html
@@ -32,7 +32,8 @@
 /installation.html -> /core/installation.html
 /migration.html -> /core/migration.html
 /platforms/espressif.html -> /platforms/espressif8266.html
-/platforms/unit_testing.html -> /plus/unit-testing.html
+/platforms/unit_testing.html -> /advanced/unit-testing/index.html
+/plus/unit-testing.html -> /advanced/unit-testing/index.html
 /projectconf.html -> projectconf/index.html
 /projectconf/advanced_scripting.html -> /scripting/index.html
 /projectconf/dynamic_variables.html -> /projectconf/interpolation.html

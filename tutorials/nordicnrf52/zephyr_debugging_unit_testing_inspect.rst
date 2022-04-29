@@ -22,9 +22,10 @@ framework for the ``Nordic nRF52-DK`` board.
 * **Platforms:** Windows, Mac OS X, Linux
 
 **Requirements:**
-  - Downloaded and installed :ref:`ide_vscode`
-  - Install drivers for :ref:`debugging_tool_jlink` debug tool
-  - :ref:`board_nordicnrf52_nrf52_dk` development board
+
+- Downloaded and installed :ref:`ide_vscode`
+- Install drivers for :ref:`debugging_tool_jlink` debug tool
+- :ref:`board_nordicnrf52_nrf52_dk` development board
 
 .. contents:: Contents
     :local:
@@ -32,23 +33,23 @@ framework for the ``Nordic nRF52-DK`` board.
 Setting Up the Project
 ----------------------
 
-#. Click on "PlatformIO Home" button on the bottom PlatformIO Toolbar:
+#.  Click on "PlatformIO Home" button on the bottom PlatformIO Toolbar:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-1.png
 
-#. Click on "New Project", select ``Nordic nRF52-DK`` as the development board,
-   :ref:`framework_zephyr` as the framework and a path to the project location
-   (or use the default one):
+#.  Click on "New Project", select ``Nordic nRF52-DK`` as the development board,
+    :ref:`framework_zephyr` as the framework and a path to the project location
+    (or use the default one):
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-2.png
 
 Adding Code to the Generated Project
 ------------------------------------
 
-#. Create a new file ``main.c`` in :ref:`projectconf_pio_src_dir` folder and add the
-   following code:
+#.  Create a new file ``main.c`` in :ref:`projectconf_pio_src_dir` folder and add the
+    following code:
 
-    .. code-block:: c
+    .. code:: c
 
       //
       // Copyright (c) 2015-2016 Intel Corporation
@@ -67,7 +68,6 @@ Adding Code to the Generated Project
       #define DEVICE_NAME CONFIG_BT_DEVICE_NAME
       #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
 
-
       // Set Advertisement data. Based on the Eddystone specification:
       // https://github.com/google/eddystone/blob/master/protocol-specification.md
       // https://github.com/google/eddystone/tree/master/eddystone-url
@@ -76,13 +76,13 @@ Adding Code to the Generated Project
           BT_DATA_BYTES(BT_DATA_FLAGS, BT_LE_AD_NO_BREDR),
           BT_DATA_BYTES(BT_DATA_UUID16_ALL, 0xaa, 0xfe),
           BT_DATA_BYTES(BT_DATA_SVC_DATA16,
-                    0xaa, 0xfe,
-                    0x10, // Eddystone-URL frame type
-                    0x00, // Calibrated Tx power at 0m
-                    0x00, // URL Scheme Prefix http://www.
-                    'z', 'e', 'p', 'h', 'y', 'r',
-                    'p', 'r', 'o', 'j', 'e', 'c', 't',
-                    0x08) // .org
+                        0xaa, 0xfe,
+                        0x10, // Eddystone-URL frame type
+                        0x00, // Calibrated Tx power at 0m
+                        0x00, // URL Scheme Prefix http://www.
+                        'z', 'e', 'p', 'h', 'y', 'r',
+                        'p', 'r', 'o', 'j', 'e', 'c', 't',
+                        0x08) // .org
       };
 
       // Set Scan Response data
@@ -92,41 +92,44 @@ Adding Code to the Generated Project
 
       static void bt_ready(int err)
       {
-          if (err) {
-              printk("Bluetooth init failed (err %d)\n", err);
-              return;
-          }
-
-          printk("Bluetooth initialized\n");
-
-          // Start advertising
-          err = bt_le_adv_start(BT_LE_ADV_NCONN, ad, ARRAY_SIZE(ad),
-                        sd, ARRAY_SIZE(sd));
-          if (err) {
-              printk("Advertising failed to start (err %d)\n", err);
-              return;
-          }
-
-          printk("Beacon started\n");
+        if (err)
+        {
+          printk("Bluetooth init failed (err %d)\n", err);
+          return;
         }
+
+        printk("Bluetooth initialized\n");
+
+        // Start advertising
+        err = bt_le_adv_start(BT_LE_ADV_NCONN, ad, ARRAY_SIZE(ad),
+                              sd, ARRAY_SIZE(sd));
+        if (err)
+        {
+          printk("Advertising failed to start (err %d)\n", err);
+          return;
+        }
+
+        printk("Beacon started\n");
+      }
 
       void main(void)
       {
-          int err;
+        int err;
 
-          printk("Starting Beacon Demo\n");
+        printk("Starting Beacon Demo\n");
 
-          // Initialize the Bluetooth Subsystem
-          err = bt_enable(bt_ready);
-          if (err) {
-              printk("Bluetooth init failed (err %d)\n", err);
-          }
+        // Initialize the Bluetooth Subsystem
+        err = bt_enable(bt_ready);
+        if (err)
+        {
+          printk("Bluetooth init failed (err %d)\n", err);
+        }
       }
 
-#. By default Bluetooth feature is disabled, we can enable it by creating a new file
-   ``prj.conf`` in ``zephyr`` folder and adding the following lines:
+#.  By default Bluetooth feature is disabled, we can enable it by creating a new file
+    ``prj.conf`` in ``zephyr`` folder and adding the following lines:
 
-    .. code-block:: none
+    .. code::
 
       CONFIG_BT=y
       CONFIG_BT_DEBUG_LOG=y
@@ -135,7 +138,7 @@ Adding Code to the Generated Project
 Compiling and Uploading the Firmware
 ------------------------------------
 
-#. To compile the project use one of the following options:
+#.  To compile the project use one of the following options:
 
     - Build option from the ``Project Tasks`` menu
     - Build button in :ref:`ide_vscode_toolbar`
@@ -145,12 +148,12 @@ Compiling and Uploading the Firmware
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-3.png
 
-#. If everything went well, we should see a successful result message in the terminal
-   window:
+#.  If everything went well, we should see a successful result message in the terminal
+    window:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-4.png
 
-#. To upload the firmware to the board we can use the following options:
+#.  To upload the firmware to the board we can use the following options:
 
     - Upload option from the ``Project Tasks`` menu
     - Upload button in :ref:`ide_vscode_toolbar`
@@ -160,10 +163,10 @@ Compiling and Uploading the Firmware
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-5.png
 
-#. Connect the board to your computer and update the default monitor speed to
-   ``115200`` in ``platformio.ini`` file:
+#.  Connect the board to your computer and update the default monitor speed to
+    ``115200`` in ``platformio.ini`` file:
 
-    .. code-block:: ini
+    .. code:: ini
 
       [env:nrf52_dk]
       platform = nordicnrf52
@@ -171,11 +174,11 @@ Compiling and Uploading the Firmware
       framework = zephyr
       monitor_speed = 115200
 
-#. Open Serial Monitor to observe the output from the board:
+#.  Open Serial Monitor to observe the output from the board:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-6.png
 
-#. If everything went well, the board should be visible as a beacon:
+#.  If everything went well, the board should be visible as a beacon:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-7.png
 
@@ -185,7 +188,7 @@ Debugging the Firmware
 Since `Nordic nRF52-DK <https://docs.platformio.org/en/latest/boards/nordicnrf52/nrf52_dk.html>`__
 includes an onboard debug probe we can use :ref:`piodebug` without any configuration.
 
-#. To start a debug session we can use the following options:
+#.  To start a debug session we can use the following options:
 
     - ``Debug: Start debugging`` from the top menu
     - ``Start Debugging`` option from Quick Access menu
@@ -193,8 +196,8 @@ includes an onboard debug probe we can use :ref:`piodebug` without any configura
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-8.png
 
-#. We can walk through the code using control buttons, set breakpoints, add variables
-   to ``Watch window``:
+#.  We can walk through the code using control buttons, set breakpoints, add variables
+    to ``Watch window``:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-9.png
 
@@ -210,22 +213,22 @@ Writing Unit Tests
 
 For the sake of simplicity, let's create a small library called ``calculator``,
 implement several basic functions ``add``, ``sub``, ``mul``, ``div`` and test them using
-:ref:`unit_testing` engine.
+:ref:`unit_testing` solution.
 
-#. PlatformIO uses a unit testing framework called ``Unity``. ``Unity`` is not
-   compatible with C library implemented in the framework. Let's enable standard
-   version of newlib C library in ``prj.conf`` file using the following config:
+#.  PlatformIO uses a unit testing framework called ``Unity``. ``Unity`` is not
+    compatible with C library implemented in the framework. Let's enable standard
+    version of newlib C library in ``prj.conf`` file using the following config:
 
-    .. code-block:: none
+    .. code::
 
       CONFIG_NEWLIB_LIBC=y
 
-#. Create a new folder ``calculator`` in the ``lib`` folder and add two new files
-   ``calculator.h`` and ``calculator.c`` with the following contents:
+#.  Create a new folder ``calculator`` in the ``lib`` folder and add two new files
+    ``calculator.h`` and ``calculator.c`` with the following contents:
 
     ``calculator.h``:
 
-    .. code-block:: c
+    .. code:: c
 
       #ifndef _CALCULATOR_H_
       #define _CALCULATOR_H_
@@ -248,7 +251,7 @@ implement several basic functions ``add``, ``sub``, ``mul``, ``div`` and test th
 
     ``calculator.c``:
 
-    .. code-block:: c
+    .. code:: c
 
       #include "calculator.h"
 
@@ -267,47 +270,54 @@ implement several basic functions ``add``, ``sub``, ``mul``, ``div`` and test th
           return a * b;
       }
 
-#. Create a new file ```test_calc.c`` to the folder ``test`` and add basic tests for
-   ``calculator`` library:
+#.  Create a new file ```test_calc.c`` to the folder ``test`` and add basic tests for
+    ``calculator`` library:
 
-    .. code-block:: c
+    .. code:: c
 
       #include <calculator.h>
       #include <unity.h>
 
-      void setUp(void) {
-          // set stuff up here
+      void setUp(void)
+      {
+        // set stuff up here
       }
 
-      void tearDown(void) {
-          // clean stuff up here
+      void tearDown(void)
+      {
+        // clean stuff up here
       }
 
-      void test_function_calculator_addition(void) {
-          TEST_ASSERT_EQUAL(32, add(25, 7));
+      void test_function_calculator_addition(void)
+      {
+        TEST_ASSERT_EQUAL(32, add(25, 7));
       }
 
-      void test_function_calculator_subtraction(void) {
-          TEST_ASSERT_EQUAL(20, sub(23, 3));
+      void test_function_calculator_subtraction(void)
+      {
+        TEST_ASSERT_EQUAL(20, sub(23, 3));
       }
 
-      void test_function_calculator_multiplication(void) {
-          TEST_ASSERT_EQUAL(50, mul(25, 2));
+      void test_function_calculator_multiplication(void)
+      {
+        TEST_ASSERT_EQUAL(50, mul(25, 2));
       }
 
-      void test_function_calculator_division(void) {
-          TEST_ASSERT_EQUAL(32, div(100, 3));
+      void test_function_calculator_division(void)
+      {
+        TEST_ASSERT_EQUAL(32, div(100, 3));
       }
 
-      void main() {
-          UNITY_BEGIN();
+      void main()
+      {
+        UNITY_BEGIN();
 
-          RUN_TEST(test_function_calculator_addition);
-          RUN_TEST(test_function_calculator_subtraction);
-          RUN_TEST(test_function_calculator_multiplication);
-          RUN_TEST(test_function_calculator_division);
+        RUN_TEST(test_function_calculator_addition);
+        RUN_TEST(test_function_calculator_subtraction);
+        RUN_TEST(test_function_calculator_multiplication);
+        RUN_TEST(test_function_calculator_division);
 
-          UNITY_END();
+        UNITY_END();
       }
 
 #. Let's run tests on the board and check the results. There should be a problem
@@ -327,20 +337,20 @@ For illustrative purposes, let's imagine we need to find a function with the big
 memory footprint. Also, let's introduce a bug to our project so :ref:`piocheck` can
 report it.
 
-#. Open ``PlatformIO Home`` and navigate to ``Inspect`` section, select the current
-   project and press ``Inspect`` button:
+#.  Open ``PlatformIO Home`` and navigate to ``Inspect`` section, select the current
+    project and press ``Inspect`` button:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-12.png
 
-#. Project statistics:
+#.  Project statistics:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-13.png
 
-#. The biggest function:
+#.  The biggest function:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-14.png
 
-#. Possible bugs:
+#.  Possible bugs:
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-15.png
 
