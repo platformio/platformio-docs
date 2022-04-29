@@ -17,7 +17,7 @@ Test Runner
 **PlatformIO Test Runner** is a powerful unit testing tool. It runs
 your unit tests located in the :ref:`projectconf_pio_test_dir`, navigates
 through tests, and facilitates the processing of test results. Test Runner
-supports the most popular :ref:`unit_testing_frameworks` frameworks.
+supports the most popular :ref:`unit_testing_frameworks`.
 
 Test Runner allows you to run specific project environments or filter
 tests using the "Glob patterns". Once tests are finished, Test Runner
@@ -30,20 +30,20 @@ provides a rich report with the status of all test suites and test cases
 Local Test Runner
 ~~~~~~~~~~~~~~~~~
 
-**Local Test Runner** allows you to run a test on a host machine or on
-the target device (board), which is directly connected to the host machine.
-In this case, you need to use the :ref:`cmd_test` command.
+**Local Test Runner** allows you to run a test on a local host machine
+or on a local target device (board). In this case, you need to use
+the :ref:`cmd_test` command.
 
 .. _unit_testing_runner_remote:
 
 Remote Test Runner
 ~~~~~~~~~~~~~~~~~~
 
-**Remote Test Runner** allows you to run test on a remote machine or remote
-target device (board) without having to depend on OS software, extra software,
-SSH, VPN or opening network ports. Remote Unit Testing works in pair with
-:ref:`pioremote`. In this case, you need to use the special command
-:ref:`cmd_remote_test`.
+**Remote Test Runner** allows you to run test on the remote machine or
+on the remote target device (board) without having to depend on OS software,
+extra software, SSH, VPN or opening network ports. Remote Unit Testing
+works in pair with :ref:`pioremote`. In this case, you need to use the
+special command :ref:`cmd_remote_test`.
 
 PlatformIO supports multiple :ref:`ci` systems where you can run unit tests
 at each integration stage.
@@ -54,9 +54,9 @@ Test Types
 ~~~~~~~~~~
 
 Before writing a test, you need to decide where it will be executed later:
-on a host machine or on the target device connected to the host machine.
+on the host machine or on the target device connected to the host machine.
 Tests that are written for the target device typically will not work on
-your host machine due to the missed peripheral and other connectivity.
+your host machine due to the missing peripheral and other connectivity.
 
 Using the :ref:`unit_testing_test_hierarchies` allows you to organize tests
 by types and later skip an incompatible group of tests using
@@ -67,11 +67,10 @@ Native
 ^^^^^^
 
 Native tests are intended for the project components that are independent
-of physical hardware. You can also use them in pair with the Mocking testing
-frameworks.
+of physical hardware. You can also use them in pair with Mocking frameworks.
 
 PlatformIO provides you a :ref:`platform_native` development platform to
-build and run tests on the host machine or using :ref:`ci` VM instance.
+build and run tests on the local host machine or using :ref:`ci` VM instance.
 
 .. note::
 
@@ -117,7 +116,7 @@ How does PlatformIO Unit Testing Runner process embedded tests?
 Please check :ref:`unit_testing_frameworks` documentation and learn
 how to provide a custom configuration or to get full control of
 PlatformIO Unit Testing Runner using :ref:`unit_testing_frameworks_custom`
-implementation of unit testing runner.
+implementation.
 
 Hybrid
 ^^^^^^

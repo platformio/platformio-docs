@@ -150,7 +150,7 @@ having the following structure:
       │   │           └── sensor.h
       │   ├── unity_config.cpp
       │   └── unity_config.h
-      └── test_ingradients
+      └── test_ingredients
          ├── include
          │   ├── cheese.h
          │   ├── vegetables.h
@@ -169,11 +169,11 @@ The Pizza Project consists of 4 independent tests:
 #. ``embedded/components/sauce/test_tomatos``
 #. ``embedded/stove/test_humidity``
 #. ``embedded/stove/test_temperature``
-#. ``test_ingradients``
+#. ``test_ingredients``
 
 PlatformIO treats each test as an independent micro project with its own source
 files and subfolders. You can include local header files using the relative paths.
-For example, the ``test_ingradients/weighing.cpp`` source file includes
+For example, the ``test_ingredients/weighing.cpp`` source file includes
 ``cheese.h`` as ``#include <include/cheese.h>``.
 
 The ``unity_config.h`` and ``unity_config.cpp`` files are located in the
@@ -181,6 +181,6 @@ The ``unity_config.h`` and ``unity_config.cpp`` files are located in the
 ``embedded/stove/test_humidity``, and ``embedded/stove/test_temperature`` tests.
 This allows you to run a group of tests only on the embedded target and route
 a test result output to the custom Serial/UART interface.
-On the other hand, the ``test_ingradients`` test uses the default Unity configuration
+On the other hand, the ``test_ingredients`` test uses the default Unity configuration
 provided by PlatformIO. For more details, please check the documentation for the
 :ref:`unit_testing_frameworks_unity` testing framework.
