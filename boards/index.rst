@@ -417,9 +417,11 @@ Espressif 32
     espressif32/az-delivery-devkit-v4
     espressif32/featheresp32
     espressif32/featheresp32-s2
+    espressif32/adafruit_feather_esp32s2_tft
     espressif32/adafruit_funhouse_esp32s2
     espressif32/adafruit_magtag29_esp32s2
     espressif32/adafruit_metro_esp32s2
+    espressif32/adafruit_qtpy_esp32s2
     espressif32/espea32
     espressif32/bpi-bit
     espressif32/wifiduino32
@@ -501,6 +503,7 @@ Espressif 32
     espressif32/pycom_gpy
     espressif32/lopy
     espressif32/lopy4
+    espressif32/wipy3
     espressif32/qchip
     espressif32/s_odi_ultra
     espressif32/sg-o_airMon
@@ -510,6 +513,7 @@ Espressif 32
     espressif32/esp32thing_plus
     espressif32/sparkfun_esp32s2_thing_plus
     espressif32/sparkfun_lora_gateway_1-channel
+    espressif32/dpu_esp32
     espressif32/ttgo-lora32-v1
     espressif32/ttgo-lora32-v2
     espressif32/ttgo-lora32-v21
@@ -534,6 +538,7 @@ Espressif 32
     espressif32/wemos_d1_mini32
     espressif32/wemosbat
     espressif32/widora-air
+    espressif32/wt32-eth01
     espressif32/xinabox_cw02
     espressif32/nscreen-32
     espressif32/micros2

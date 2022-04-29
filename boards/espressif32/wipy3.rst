@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_franzininho_wifi_msc_esp32s2:
+.. _board_espressif32_wipy3:
 
-Franzininho WiFi MSC
-====================
+Pycom WiPy3
+===========
 
 .. contents::
 
@@ -24,41 +24,41 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32S2
+    - ESP32
   * - **Frequency**
     - 240MHz
   * - **Flash**
     - 4MB
   * - **RAM**
-    - 320KB
+    - 1.25MB
   * - **Vendor**
-    - `Franzininho <https://docs.franzininho.com.br/docs/franzininho-wifi/franzininho-wifi/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Pycom Ltd. <https://pycom.io/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``franzininho_wifi_msc_esp32s2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``wipy3`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:franzininho_wifi_msc_esp32s2]
+  [env:wipy3]
   platform = espressif32
-  board = franzininho_wifi_msc_esp32s2
+  board = wipy3
 
-You can override default Franzininho WiFi MSC settings per build environment using
+You can override default Pycom WiPy3 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `franzininho_wifi_msc_esp32s2.json <https://github.com/platformio/platform-espressif32/blob/master/boards/franzininho_wifi_msc_esp32s2.json>`_. For example,
+board manifest `wipy3.json <https://github.com/platformio/platform-espressif32/blob/master/boards/wipy3.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:franzininho_wifi_msc_esp32s2]
+  [env:wipy3]
   platform = espressif32
-  board = franzininho_wifi_msc_esp32s2
+  board = wipy3
 
   ; change microcontroller
-  board_build.mcu = esp32s2
+  board_build.mcu = esp32
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
@@ -66,7 +66,7 @@ board manifest `franzininho_wifi_msc_esp32s2.json <https://github.com/platformio
 
 Uploading
 ---------
-Franzininho WiFi MSC supports the following uploading protocols:
+Pycom WiPy3 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-prog``
@@ -87,9 +87,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:franzininho_wifi_msc_esp32s2]
+  [env:wipy3]
   platform = espressif32
-  board = franzininho_wifi_msc_esp32s2
+  board = wipy3
 
   upload_protocol = esptool
 
@@ -106,7 +106,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Franzininho WiFi MSC does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Pycom WiPy3 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

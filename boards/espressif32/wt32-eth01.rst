@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_franzininho_wifi_msc_esp32s2:
+.. _board_espressif32_wt32-eth01:
 
-Franzininho WiFi MSC
-====================
+Wireless-Tag WT32-ETH01 Ethernet Module
+=======================================
 
 .. contents::
 
@@ -24,7 +24,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32S2
+    - ESP32
   * - **Frequency**
     - 240MHz
   * - **Flash**
@@ -32,33 +32,33 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Franzininho <https://docs.franzininho.com.br/docs/franzininho-wifi/franzininho-wifi/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Wireless-Tag <http://www.wireless-tag.com/portfolio/wt32-eth01/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``franzininho_wifi_msc_esp32s2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``wt32-eth01`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:franzininho_wifi_msc_esp32s2]
+  [env:wt32-eth01]
   platform = espressif32
-  board = franzininho_wifi_msc_esp32s2
+  board = wt32-eth01
 
-You can override default Franzininho WiFi MSC settings per build environment using
+You can override default Wireless-Tag WT32-ETH01 Ethernet Module settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `franzininho_wifi_msc_esp32s2.json <https://github.com/platformio/platform-espressif32/blob/master/boards/franzininho_wifi_msc_esp32s2.json>`_. For example,
+board manifest `wt32-eth01.json <https://github.com/platformio/platform-espressif32/blob/master/boards/wt32-eth01.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:franzininho_wifi_msc_esp32s2]
+  [env:wt32-eth01]
   platform = espressif32
-  board = franzininho_wifi_msc_esp32s2
+  board = wt32-eth01
 
   ; change microcontroller
-  board_build.mcu = esp32s2
+  board_build.mcu = esp32
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
@@ -66,7 +66,7 @@ board manifest `franzininho_wifi_msc_esp32s2.json <https://github.com/platformio
 
 Uploading
 ---------
-Franzininho WiFi MSC supports the following uploading protocols:
+Wireless-Tag WT32-ETH01 Ethernet Module supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-prog``
@@ -87,9 +87,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:franzininho_wifi_msc_esp32s2]
+  [env:wt32-eth01]
   platform = espressif32
-  board = franzininho_wifi_msc_esp32s2
+  board = wt32-eth01
 
   upload_protocol = esptool
 
@@ -106,7 +106,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Franzininho WiFi MSC does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Wireless-Tag WT32-ETH01 Ethernet Module does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
