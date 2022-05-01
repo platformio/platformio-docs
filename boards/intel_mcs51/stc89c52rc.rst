@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_intel_mcs51_stc89c52rc:
+.. _board_intel_mcs51_STC89C52RC:
 
 Generic STC89C52RC
 ==================
@@ -38,24 +38,24 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
 Configuration
 -------------
 
-Please use ``stc89c52rc`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``STC89C52RC`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:stc89c52rc]
+  [env:STC89C52RC]
   platform = intel_mcs51
-  board = stc89c52rc
+  board = STC89C52RC
 
 You can override default Generic STC89C52RC settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `stc89c52rc.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/stc89c52rc.json>`_. For example,
+board manifest `STC89C52RC.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/STC89C52RC.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:stc89c52rc]
+  [env:STC89C52RC]
   platform = intel_mcs51
-  board = stc89c52rc
+  board = STC89C52RC
 
   ; change microcontroller
   board_build.mcu = stc89c52rc

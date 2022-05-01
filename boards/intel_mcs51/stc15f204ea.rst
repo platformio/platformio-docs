@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_intel_mcs51_stc15f204ea:
+.. _board_intel_mcs51_STC15F204EA:
 
 Generic STC15F204EA
 ===================
@@ -38,24 +38,24 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
 Configuration
 -------------
 
-Please use ``stc15f204ea`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``STC15F204EA`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:stc15f204ea]
+  [env:STC15F204EA]
   platform = intel_mcs51
-  board = stc15f204ea
+  board = STC15F204EA
 
 You can override default Generic STC15F204EA settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `stc15f204ea.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/stc15f204ea.json>`_. For example,
+board manifest `STC15F204EA.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/STC15F204EA.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:stc15f204ea]
+  [env:STC15F204EA]
   platform = intel_mcs51
-  board = stc15f204ea
+  board = STC15F204EA
 
   ; change microcontroller
   board_build.mcu = stc15f204ea

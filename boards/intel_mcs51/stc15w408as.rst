@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_intel_mcs51_stc15w408as:
+.. _board_intel_mcs51_STC15W408AS:
 
 Generic STC15W408AS
 ===================
@@ -38,24 +38,24 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
 Configuration
 -------------
 
-Please use ``stc15w408as`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``STC15W408AS`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:stc15w408as]
+  [env:STC15W408AS]
   platform = intel_mcs51
-  board = stc15w408as
+  board = STC15W408AS
 
 You can override default Generic STC15W408AS settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `stc15w408as.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/stc15w408as.json>`_. For example,
+board manifest `STC15W408AS.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/STC15W408AS.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:stc15w408as]
+  [env:STC15W408AS]
   platform = intel_mcs51
-  board = stc15w408as
+  board = STC15W408AS
 
   ; change microcontroller
   board_build.mcu = stc15w408as

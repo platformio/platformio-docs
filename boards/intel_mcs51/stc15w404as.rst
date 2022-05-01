@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_intel_mcs51_stc15w404as:
+.. _board_intel_mcs51_STC15W404AS:
 
 Generic STC15W404AS
 ===================
@@ -32,30 +32,30 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
   * - **RAM**
     - 512B
   * - **Vendor**
-    - `STC <https://www.stcmicro.com/STC/STC15W404AS.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `STC <https://www.stcmicro.com/STC/STC15W408AS.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``stc15w404as`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``STC15W404AS`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:stc15w404as]
+  [env:STC15W404AS]
   platform = intel_mcs51
-  board = stc15w404as
+  board = STC15W404AS
 
 You can override default Generic STC15W404AS settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `stc15w404as.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/stc15w404as.json>`_. For example,
+board manifest `STC15W404AS.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/STC15W404AS.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:stc15w404as]
+  [env:STC15W404AS]
   platform = intel_mcs51
-  board = stc15w404as
+  board = STC15W404AS
 
   ; change microcontroller
   board_build.mcu = stc15w404as

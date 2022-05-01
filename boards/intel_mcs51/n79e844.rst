@@ -9,7 +9,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_intel_mcs51_n79e844:
+.. _board_intel_mcs51_N79E844:
 
 Generic N79E844
 ===============
@@ -32,30 +32,30 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
   * - **RAM**
     - 512B
   * - **Vendor**
-    - `Nuvoton <http://www.nuvoton.com/hq/products/microcontrollers/8bit-8051-mcus/low-pin-count-8051-series/n79e844/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Nuvoton <https://www.nuvoton.com/products/microcontrollers/8bit-8051-mcus/low-pin-count-8051-series/n79e844/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``n79e844`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``N79E844`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:n79e844]
+  [env:N79E844]
   platform = intel_mcs51
-  board = n79e844
+  board = N79E844
 
 You can override default Generic N79E844 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `n79e844.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/n79e844.json>`_. For example,
+board manifest `N79E844.json <https://github.com/platformio/platform-intel_mcs51/blob/master/boards/N79E844.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:n79e844]
+  [env:N79E844]
   platform = intel_mcs51
-  board = n79e844
+  board = N79E844
 
   ; change microcontroller
   board_build.mcu = n79e844
