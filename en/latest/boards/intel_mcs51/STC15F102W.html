@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generic STC15F102W &mdash; PlatformIO latest documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.platformio.org/boards/intel_mcs51/STC15F102W.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Generic STC15F103" href="STC15F103.html" />
+    <link rel="prev" title="Generic STC15F102E" href="STC15F102E.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="../../_static/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> PlatformIO
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/build_configurations.html">Build Configurations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/index.html">Advanced Scripting</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Boards</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#aceinna-imu">Aceinna IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#asr-microelectronics-asr650x">ASR Microelectronics ASR650x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-avr">Atmel AVR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-megaavr">Atmel megaAVR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-sam">Atmel SAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#chips-alliance">CHIPS Alliance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-32">Espressif 32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-8266">Espressif 8266</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#freescale-kinetis">Freescale Kinetis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#gigadevice-gd32v">GigaDevice GD32V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#infineon-xmc">Infineon XMC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#intel-arc32">Intel ARC32</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#intel-mcs-51-8051">Intel MCS-51 (8051)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="CH559.html">CH559</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Generic8051.html">Generic 8051</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Generic8052.html">Generic 8052</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AT89S51.html">Generic AT89S51</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AT89S52.html">Generic AT89S52</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP12C5A62S2.html">Generic IAP12C5A62S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15F106.html">Generic IAP15F106</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15F206A.html">Generic IAP15F206A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15F2K61S.html">Generic IAP15F2K61S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15F2K61S2.html">Generic IAP15F2K61S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15F413AD.html">Generic IAP15F413AD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15W105.html">Generic IAP15W105</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15W1K29S.html">Generic IAP15W1K29S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15W205S.html">Generic IAP15W205S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15W413AS.html">Generic IAP15W413AS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15W413S.html">Generic IAP15W413S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15W4K58S4.html">Generic IAP15W4K58S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15W4K61S4.html">Generic IAP15W4K61S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IAP15W4K63S4.html">Generic IAP15W4K63S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IRC15F107W.html">Generic IRC15F107W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IRC15F2K63S2.html">Generic IRC15F2K63S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IRC15W107.html">Generic IRC15W107</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IRC15W1K31S.html">Generic IRC15W1K31S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IRC15W207S.html">Generic IRC15W207S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IRC15W415AS.html">Generic IRC15W415AS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="IRC15W415S.html">Generic IRC15W415S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51BB9AE.html">Generic ML51BB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51DB9AE.html">Generic ML51DB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51EB9AE.html">Generic ML51EB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51EC0AE.html">Generic ML51EC0AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51FB9AE.html">Generic ML51FB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51LD1AE.html">Generic ML51LD1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51OB9AE.html">Generic ML51OB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51PB9AE.html">Generic ML51PB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51PC0AE.html">Generic ML51PC0AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51SD1AE.html">Generic ML51SD1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51TB9AE.html">Generic ML51TB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51TC0AE.html">Generic ML51TC0AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51TC1AE.html">Generic ML51TC1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51TD1AE.html">Generic ML51TD1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51UB9AE.html">Generic ML51UB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51UC0AE.html">Generic ML51UC0AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML51XB9AE.html">Generic ML51XB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML54LD1AE.html">Generic ML54LD1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML54MD1AE.html">Generic ML54MD1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML54SD1AE.html">Generic ML54SD1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML56LD1AE.html">Generic ML56LD1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML56MD1AE.html">Generic ML56MD1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ML56SD1AE.html">Generic ML56SD1AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51BA9AE.html">Generic MS51BA9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51DA9AE.html">Generic MS51DA9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51EC0AE.html">Generic MS51EC0AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51FB9AE.html">Generic MS51FB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51FC0AE.html">Generic MS51FC0AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51IA9AE.html">Generic MS51IA9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51PC0AE.html">Generic MS51PC0AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51TC0AE.html">Generic MS51TC0AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51XB9AE.html">Generic MS51XB9AE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51XB9BE.html">Generic MS51XB9BE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MS51XC0BE.html">Generic MS51XC0BE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N76E003.html">Generic N76E003</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N76E616.html">Generic N76E616</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N76E885.html">Generic N76E885</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N78E055.html">Generic N78E055</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N78E059.html">Generic N78E059</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N78E366.html">Generic N78E366</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N78E517.html">Generic N78E517</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E352.html">Generic N79E352</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E715.html">Generic N79E715</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E813.html">Generic N79E813</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E8132.html">Generic N79E8132</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E814.html">Generic N79E814</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E815.html">Generic N79E815</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E822.html">Generic N79E822</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E823.html">Generic N79E823</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E824.html">Generic N79E824</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E825.html">Generic N79E825</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E843.html">Generic N79E843</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E8432.html">Generic N79E8432</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E844.html">Generic N79E844</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E845.html">Generic N79E845</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E854.html">Generic N79E854</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E855.html">Generic N79E855</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N79E875.html">Generic N79E875</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC12C5A08S2.html">Generic STC12C5A08S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC12C5A16S2.html">Generic STC12C5A16S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC12C5A32S2.html">Generic STC12C5A32S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC12C5A40S2.html">Generic STC12C5A40S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC12C5A48S2.html">Generic STC12C5A48S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC12C5A52S2.html">Generic STC12C5A52S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC12C5A56S2.html">Generic STC12C5A56S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC12C5A60S2.html">Generic STC12C5A60S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F100.html">Generic STC15F100</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F100W.html">Generic STC15F100W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F101.html">Generic STC15F101</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F101E.html">Generic STC15F101E</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F101W.html">Generic STC15F101W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F102.html">Generic STC15F102</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F102E.html">Generic STC15F102E</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Generic STC15F102W</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging">Debugging</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F103.html">Generic STC15F103</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F103E.html">Generic STC15F103E</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F103W.html">Generic STC15F103W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F104.html">Generic STC15F104</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F104E.html">Generic STC15F104E</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F104W.html">Generic STC15F104W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F105.html">Generic STC15F105</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F105E.html">Generic STC15F105E</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F105W.html">Generic STC15F105W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F201A.html">Generic STC15F201A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F201EA.html">Generic STC15F201EA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F202A.html">Generic STC15F202A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F202EA.html">Generic STC15F202EA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F203A.html">Generic STC15F203A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F203EA.html">Generic STC15F203EA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F204A.html">Generic STC15F204A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F204EA.html">Generic STC15F204EA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F205A.html">Generic STC15F205A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F205EA.html">Generic STC15F205EA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K08S2.html">Generic STC15F2K08S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K16S2.html">Generic STC15F2K16S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K24AS.html">Generic STC15F2K24AS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K24S2.html">Generic STC15F2K24S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K32S2.html">Generic STC15F2K32S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K40S2.html">Generic STC15F2K40S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K48S2.html">Generic STC15F2K48S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K52S2.html">Generic STC15F2K52S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K56S2.html">Generic STC15F2K56S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F2K60S2.html">Generic STC15F2K60S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15F408AD.html">Generic STC15F408AD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W100.html">Generic STC15W100</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W101.html">Generic STC15W101</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W102.html">Generic STC15W102</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W103.html">Generic STC15W103</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W104.html">Generic STC15W104</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W1K16S.html">Generic STC15W1K16S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W1K20S.html">Generic STC15W1K20S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W1K24S.html">Generic STC15W1K24S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W201S.html">Generic STC15W201S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W202S.html">Generic STC15W202S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W203S.html">Generic STC15W203S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W204S.html">Generic STC15W204S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W401AS.html">Generic STC15W401AS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W402AS.html">Generic STC15W402AS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W404AS.html">Generic STC15W404AS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W404S.html">Generic STC15W404S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W408AS.html">Generic STC15W408AS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W408S.html">Generic STC15W408S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W410S.html">Generic STC15W410S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W4K16S4.html">Generic STC15W4K16S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W4K32S4.html">Generic STC15W4K32S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W4K40S4.html">Generic STC15W4K40S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W4K48S4.html">Generic STC15W4K48S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC15W4K56S4.html">Generic STC15W4K56S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC89C516RD%2B.html">Generic STC89C516RD+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC89C51RC.html">Generic STC89C51RC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC89C52RC.html">Generic STC89C52RC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC89C53RC.html">Generic STC89C53RC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC89C54RD%2B.html">Generic STC89C54RD+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC89C58RD%2B.html">Generic STC89C58RD+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A4K16S2A12.html">Generic STC8A4K16S2A12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A4K32S2A12.html">Generic STC8A4K32S2A12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A4K60S2A12.html">Generic STC8A4K60S2A12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A4K64S2A12.html">Generic STC8A4K64S2A12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A8K16D4.html">Generic STC8A8K16D4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A8K16S4A12.html">Generic STC8A8K16S4A12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A8K32D4.html">Generic STC8A8K32D4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A8K32S4A12.html">Generic STC8A8K32S4A12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A8K60D4.html">Generic STC8A8K60D4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A8K60S4A12.html">Generic STC8A8K60S4A12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A8K64D4.html">Generic STC8A8K64D4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8A8K64S4A12.html">Generic STC8A8K64S4A12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C1K08.html">Generic STC8C1K08</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C1K12.html">Generic STC8C1K12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C2K16S2.html">Generic STC8C2K16S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C2K16S4.html">Generic STC8C2K16S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C2K32S2.html">Generic STC8C2K32S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C2K32S4.html">Generic STC8C2K32S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C2K60S2.html">Generic STC8C2K60S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C2K60S4.html">Generic STC8C2K60S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C2K64S2.html">Generic STC8C2K64S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8C2K64S4.html">Generic STC8C2K64S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F1K08.html">Generic STC8F1K08</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F1K08S.html">Generic STC8F1K08S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F1K08S2.html">Generic STC8F1K08S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F1K08S2A10.html">Generic STC8F1K08S2A10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F1K17.html">Generic STC8F1K17</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F1K17S2.html">Generic STC8F1K17S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F2K08S2.html">Generic STC8F2K08S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F2K16S2.html">Generic STC8F2K16S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F2K16S4.html">Generic STC8F2K16S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F2K32S2.html">Generic STC8F2K32S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F2K32S4.html">Generic STC8F2K32S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F2K60S2.html">Generic STC8F2K60S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F2K60S4.html">Generic STC8F2K60S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F2K64S2.html">Generic STC8F2K64S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8F2K64S4.html">Generic STC8F2K64S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G1K08.html">Generic STC8G1K08</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G1K08A.html">Generic STC8G1K08A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G1K08T.html">Generic STC8G1K08T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G1K12.html">Generic STC8G1K12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G1K12A.html">Generic STC8G1K12A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G1K17.html">Generic STC8G1K17</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G1K17A.html">Generic STC8G1K17A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G1K17T.html">Generic STC8G1K17T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G2K16S2.html">Generic STC8G2K16S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G2K16S4.html">Generic STC8G2K16S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G2K32S2.html">Generic STC8G2K32S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G2K32S4.html">Generic STC8G2K32S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G2K60S2.html">Generic STC8G2K60S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G2K60S4.html">Generic STC8G2K60S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G2K64S2.html">Generic STC8G2K64S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8G2K64S4.html">Generic STC8G2K64S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H04.html">Generic STC8H04</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H04A10.html">Generic STC8H04A10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K08.html">Generic STC8H1K08</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K08S2.html">Generic STC8H1K08S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K08S2A10.html">Generic STC8H1K08S2A10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K12.html">Generic STC8H1K12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K16.html">Generic STC8H1K16</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K16S2.html">Generic STC8H1K16S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K16S2A10.html">Generic STC8H1K16S2A10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K17.html">Generic STC8H1K17</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K24.html">Generic STC8H1K24</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K28.html">Generic STC8H1K28</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K32S2.html">Generic STC8H1K32S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K32S2A10.html">Generic STC8H1K32S2A10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K33.html">Generic STC8H1K33</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H1K64S2A10.html">Generic STC8H1K64S2A10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H2K32T.html">Generic STC8H2K32T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H2K48T.html">Generic STC8H2K48T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H2K60T.html">Generic STC8H2K60T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H2K64T.html">Generic STC8H2K64T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H3K32S2.html">Generic STC8H3K32S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H3K32S4.html">Generic STC8H3K32S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H3K48S2.html">Generic STC8H3K48S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H3K48S4.html">Generic STC8H3K48S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H3K60S2.html">Generic STC8H3K60S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H3K60S4.html">Generic STC8H3K60S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H3K64S2.html">Generic STC8H3K64S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H3K64S4.html">Generic STC8H3K64S4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K32LCD.html">Generic STC8H4K32LCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K32TLCD.html">Generic STC8H4K32TLCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K32TLR.html">Generic STC8H4K32TLR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K48LCD.html">Generic STC8H4K48LCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K48TLCD.html">Generic STC8H4K48TLCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K48TLR.html">Generic STC8H4K48TLR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K60LCD.html">Generic STC8H4K60LCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K60TLCD.html">Generic STC8H4K60TLCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K60TLR.html">Generic STC8H4K60TLR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K64LCD.html">Generic STC8H4K64LCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K64TLCD.html">Generic STC8H4K64TLCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H4K64TLR.html">Generic STC8H4K64TLR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H8K32U.html">Generic STC8H8K32U</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H8K48U.html">Generic STC8H8K48U</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H8K60U.html">Generic STC8H8K60U</a></li>
+<li class="toctree-l3"><a class="reference internal" href="STC8H8K64U.html">Generic STC8H8K64U</a></li>
+<li class="toctree-l3"><a class="reference internal" href="W79E2051.html">Generic W79E2051</a></li>
+<li class="toctree-l3"><a class="reference internal" href="W79E4051.html">Generic W79E4051</a></li>
+<li class="toctree-l3"><a class="reference internal" href="W79E632.html">Generic W79E632</a></li>
+<li class="toctree-l3"><a class="reference internal" href="W79E633.html">Generic W79E633</a></li>
+<li class="toctree-l3"><a class="reference internal" href="W79E658.html">Generic W79E658</a></li>
+<li class="toctree-l3"><a class="reference internal" href="W79E659.html">Generic W79E659</a></li>
+<li class="toctree-l3"><a class="reference internal" href="W79E8213.html">Generic W79E8213</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#kendryte-k210">Kendryte K210</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#lattice-ice40">Lattice iCE40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#linux-arm">Linux ARM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#maxim-32">Maxim 32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#microchip-pic32">Microchip PIC32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nordic-nrf51">Nordic nRF51</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nordic-nrf52">Nordic nRF52</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nxp-i-mx-rt">NXP i.MX RT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nxp-lpc">NXP LPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#openhw-group">OpenHW Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#raspberry-pi-rp2040">Raspberry Pi RP2040</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#risc-v-gap">RISC-V GAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#shakti">Shakti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#sifive">SiFive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#silicon-labs-efm32">Silicon Labs EFM32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#st-stm32">ST STM32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#st-stm8">ST STM8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#teensy">Teensy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#ti-msp430">TI MSP430</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#ti-tiva">TI TIVA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#wiznet-w7500">WIZNet W7500</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
+</ul>
+
+<ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PlatformIO</a>
+      </nav>
+
+      <div class="wy-nav-content">
+<ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Boards</a> &raquo;</li>
+      <li>Generic STC15F102W</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/boards/intel_mcs51/STC15F102W.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="generic-stc15f102w">
+<span id="board-intel-mcs51-stc15f102w"></span><h1><a class="toc-backref" href="#id1">Generic STC15F102W</a><a class="headerlink" href="#generic-stc15f102w" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#generic-stc15f102w" id="id1">Generic STC15F102W</a></p>
+<ul>
+<li><p><a class="reference internal" href="#hardware" id="id2">Hardware</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id3">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id4">Debugging</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="hardware">
+<h2><a class="toc-backref" href="#id2">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<p>Platform <a class="reference internal" href="../../platforms/intel_mcs51.html#platform-intel-mcs51"><span class="std std-ref">Intel MCS-51 (8051)</span></a>: The Intel MCS-51 (commonly termed 8051) is an internally Harvard architecture, complex instruction set computer (CISC) instruction set, single chip microcontroller (uC) series developed by Intel in 1980 for use in embedded systems.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Microcontroller</strong></p></td>
+<td><p>STC15F102W</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Frequency</strong></p></td>
+<td><p>11MHz</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Flash</strong></p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>RAM</strong></p></td>
+<td><p>128B</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vendor</strong></p></td>
+<td><p><a class="reference external" href="https://www.stcmicro.com/STC/STC15F104W.html?utm_source=platformio.org&amp;utm_medium=docs">STC</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="configuration">
+<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Please use <code class="docutils literal notranslate"><span class="pre">STC15F102W</span></code> ID for <a class="reference internal" href="../../projectconf/section_env_platform.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:STC15F102W]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">intel_mcs51</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">STC15F102W</span><span class="w"></span>
+</pre></div>
+</div>
+<p>You can override default Generic STC15F102W settings per build environment using
+<code class="docutils literal notranslate"><span class="pre">board_***</span></code> option, where <code class="docutils literal notranslate"><span class="pre">***</span></code> is a JSON object path from
+board manifest <a class="reference external" href="https://github.com/platformio/platform-intel_mcs51/blob/master/boards/STC15F102W.json">STC15F102W.json</a>. For example,
+<code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code>, <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code>, etc.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:STC15F102W]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">intel_mcs51</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">STC15F102W</span><span class="w"></span>
+
+<span class="c1">; change microcontroller</span><span class="w"></span>
+<span class="na">board_build.mcu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stc15f102w</span><span class="w"></span>
+
+<span class="c1">; change MCU frequency</span><span class="w"></span>
+<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">11059200L</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="debugging">
+<h2><a class="toc-backref" href="#id4">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> currently does not support Generic STC15F102W board.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="STC15F102E.html" class="btn btn-neutral float-left" title="Generic STC15F102E" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="STC15F103.html" class="btn btn-neutral float-right" title="Generic STC15F103" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2014-present, PlatformIO.</p>
+<ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+<script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
+
+
+</footer>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v6.0.0a2 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/boards/intel_mcs51/STC15F102W.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/boards/intel_mcs51/STC15F102W.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
