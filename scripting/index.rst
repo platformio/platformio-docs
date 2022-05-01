@@ -15,7 +15,6 @@ Advanced Scripting
 ==================
 
 .. warning::
-
   Advanced Scripting is recommended for Advanced Users and requires
   knowledge of the Python language.
 
@@ -27,16 +26,16 @@ available for modification as `SCons Construction Environments <http://www.scons
 Custom scripts are included with :ref:`projectconf_extra_scripts`.
 
 .. warning::
-  You can not run or debug these scripts manually with a Python
-  interpreter. They will be loaded automatically when the
+  Please note that you can not run or debug these scripts independently
+  with Python interpreter. They will be loaded automatically when the
   :ref:`cmd_run` command processes the project environment.
 
 .. toctree::
-    :maxdepth: 2
+  :maxdepth: 2
 
-    launch_types
-    construction_environments
-    actions
-    middlewares
-    custom_targets
-    Examples <examples/index>
+  launch_types
+  construction_environments
+  actions
+  middlewares
+  custom_targets
+  Examples <examples/index>
