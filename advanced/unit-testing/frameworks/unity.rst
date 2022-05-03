@@ -184,6 +184,6 @@ use Unity for all :ref:`unit_testing_runner_test_types`, including for constrain
 embedded devices.
 
 If you would like to change the default PlatformIO's :ref:`unit_testing_test_runner`
-for Unity, please implement your :ref:`unit_testing_frameworks_custom` framework
+for Unity, please implement your :ref:`unit_testing_frameworks_custom`
 runner extending `UnityTestRunner <https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py>`_
 class. See :ref:`unit_testing_frameworks_custom` for the examples.
