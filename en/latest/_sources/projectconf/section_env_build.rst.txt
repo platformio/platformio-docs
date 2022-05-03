@@ -228,19 +228,19 @@ in the same directory as ``platformio.ini``.
     print("-DGIT_REV='\"%s\"'" % revision)
 
 
-.. _projectconf_src_build_flags:
+.. _projectconf_build_src_flags:
 
-``src_build_flags``
+``build_src_flags``
 ^^^^^^^^^^^^^^^^^^^
 
 Type: ``String`` | Multiple: ``Yes``
 
-An option ``src_build_flags`` has the same behavior as ``build_flags``
-but will be applied only for project source files in the
+An option ``build_src_flags`` has the same behavior as ``build_flags``
+but will be applied only for the project source files in the
 :ref:`projectconf_pio_src_dir` directory.
 
 This option can also be set by the global environment variable
-:envvar:`PLATFORMIO_SRC_BUILD_FLAGS`.
+:envvar:`PLATFORMIO_BUILD_SRC_FLAGS`.
 
 .. _projectconf_build_unflags:
 
@@ -257,10 +257,10 @@ Selectively remove base/initial flags that were set by the development platform.
    build_unflags = -Os -std=gnu++11
    build_flags = -O2
 
-.. _projectconf_src_filter:
+.. _projectconf_build_src_filter:
 
-``src_filter``
-^^^^^^^^^^^^^^
+``build_src_fliter``
+^^^^^^^^^^^^^^^^^^^^
 
 Type: ``String (Templates)`` | Multiple: ``Yes``
 
@@ -275,13 +275,11 @@ Filter supports two templates:
 be applied in their order of definition.
 `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
 
-By default, ``src_filter`` is predefined to
-``+<*> -<.git/> -<.svn/> -<example/> -<examples/> -<test/> -<tests/>``,
-meaning "include ALL files, then
-exclude the ``.git`` and ``svn`` repository folders and the ``example`` ... folder.
+By default, ``build_src_filter`` is predefined to ``+<*> -<.git/> -<.svn/>``,
+meaning "include ALL files, then exclude the ``.git`` and ``svn`` repository folders.
 
 This option can also be set by the global environment variable
-:envvar:`PLATFORMIO_SRC_FILTER`.
+:envvar:`PLATFORMIO_BUILD_SRC_FILTER`.
 
 .. _projectconf_targets:
 

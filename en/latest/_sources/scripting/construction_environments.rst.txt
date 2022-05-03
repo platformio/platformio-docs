@@ -20,8 +20,8 @@ to process each project:
   :ref:`ldf`, and other internal operations
 * ``projenv``, ``Import("projenv")`` - the isolated construction environment
   used for processing the project source code in :ref:`projectconf_pio_src_dir`.
-  Please note that any :ref:`projectconf_src_build_flags` specified in
-  :ref:`projectconf` will be passed to ``projenv`` and not to ``env``.
+  Please note that any :ref:`projectconf_build_src_flags` specified in
+  :ref:`projectconf` will be passed to the ``projenv`` and not to the ``env``.
 
 
 .. warning::

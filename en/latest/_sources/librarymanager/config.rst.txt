@@ -518,7 +518,7 @@ means that folder is located in the root of a library.
 Specify which source files should be included/excluded from build process.
 The path in filter should be relative to the ``srcDir`` option of a library.
 
-See syntax in :ref:`projectconf_src_filter`.
+See syntax for :ref:`projectconf_build_src_filter`.
 
 Please note that you can generate source filter "on-the-fly" using
 ``extraScript`` (see below)

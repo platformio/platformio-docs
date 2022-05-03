@@ -182,7 +182,7 @@
 <li><p>Generate reports in JUnit and JSON formats using the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_test.html#cmdoption-pio-test-output-format">pio test –output-format</a> option  (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/2891">issue #2891</a>)</p></li>
 <li><p>Provide more information when the native program crashed on a host (errored with a negative return code) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3429">issue #3429</a>)</p></li>
 <li><p>Fixed an issue when command line parameters (<code class="docutils literal notranslate"><span class="pre">--ignore</span></code>, <code class="docutils literal notranslate"><span class="pre">--filter</span></code>) do not override values defined in the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3845">issue #3845</a>)</p></li>
-<li><p>Renamed the “test_build_project_src” project configuration option to <a class="reference external" href="https://docs.platformio.org/en/latest//projectconf/section_env_test.html#test-build-src">test_build_src</a></p></li>
+<li><p>Renamed the “test_build_project_src” project configuration option to the <a class="reference external" href="https://docs.platformio.org/en/latest//projectconf/section_env_test.html#test-build-src">test_build_src</a></p></li>
 <li><p>Removed the “test_transport” option in favor of the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/unity.html">Custom “unity_config.h”</a></p></li>
 </ul>
 </li>
@@ -217,6 +217,8 @@
 <ul>
 <li><p>Extended <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/interpolation.html">Interpolation of Values</a>  with <code class="docutils literal notranslate"><span class="pre">${this}</span></code> pattern (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3953">issue #3953</a>)</p></li>
 <li><p>Embed environment name of the current section in the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file using <code class="docutils literal notranslate"><span class="pre">${this.__env__}</span></code> pattern</p></li>
+<li><p>Renamed the “src_build_flags” project configuration option to the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/section_env_build.html#build-src-flags">build_src_flags</a></p></li>
+<li><p>Renamed the “src_filter” project configuration option to the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/section_env_build.html#build-src-filter">build_src_filter</a></p></li>
 </ul>
 </li>
 <li><p><strong>Miscellaneous</strong></p>
