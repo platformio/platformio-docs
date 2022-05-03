@@ -27,7 +27,7 @@ target embedded device with constrained resources.
 See available testing frameworks:
 
 .. toctree::
-    :maxdepth: 1
+  :maxdepth: 1
 
-    unity
-    custom
+  unity
+  Custom <custom/index>

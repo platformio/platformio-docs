@@ -9,12 +9,12 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _unit_testing_frameworks_custom:
+.. _unit_testing_frameworks_custom_examples:
 
-Custom
-------
+Examples
+--------
 
-:Configuration:
-  :ref:`projectconf_test_framework` = ``custom``
+.. contents::
+  :local:
 
 @TODO

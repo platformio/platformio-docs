@@ -4,30 +4,30 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Testing Frameworks &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
-    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="https://docs.platformio.org/advanced/unit-testing/frameworks/index.html" />
+  <title>Custom Testing Framework &mdash; PlatformIO latest documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.platformio.org/advanced/unit-testing/frameworks/custom/index.html" />
   <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/clipboard.min.js"></script>
-        <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Unity" href="unity.html" />
-    <link rel="prev" title="Configuration" href="../configuration.html" />
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../_static/copybutton.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Custom Test Runner" href="runner.html" />
+    <link rel="prev" title="Unity" href="../unity.html" />
  
-<link rel="stylesheet" href="../../../_static/css/extra.css" type="text/css" />
-<script src="../../../_static/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../../../../_static/css/extra.css" type="text/css" />
+<script src="../../../../_static/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -36,10 +36,10 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> PlatformIO
+            <a href="../../../../index.html" class="icon icon-home"> PlatformIO
           </a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -48,60 +48,65 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../what-is-platformio.html">What is PlatformIO?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../integration/ide/pioide.html">PlatformIO IDE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../core/index.html">PlatformIO Core (CLI)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../home/index.html">PlatformIO Home</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/index.html">platformio.ini</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/build_configurations.html">Build Configurations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../scripting/index.html">Advanced Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../projectconf/build_configurations.html">Build Configurations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../librarymanager/index.html">Library Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../platforms/index.html">Platforms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../frameworks/index.html">Frameworks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../boards/index.html">Boards</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Unit Testing</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../runner.html">Test Runner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../structure.html">Project Structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration.html">Configuration</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Testing Frameworks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="unity.html">Unity</a></li>
-<li class="toctree-l3"><a class="reference internal" href="custom/index.html">Custom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Unit Testing</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../runner.html">Test Runner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../structure.html">Project Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../configuration.html">Configuration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Testing Frameworks</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../unity.html">Unity</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Custom</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="runner.html">Custom Test Runner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api.html">Test Runner API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../plus/pio-check.html">Static Code Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../plus/pio-account.html">PlatformIO Account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../plus/pio-remote.html">Remote Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../integration/ci/index.html">Continuous Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../core/history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../core/migration.html">Migrating from 5.x to 6.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -112,7 +117,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">PlatformIO</a>
+          <a href="../../../../index.html">PlatformIO</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -121,11 +126,12 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Unit Testing</a> &raquo;</li>
-      <li>Testing Frameworks</li>
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Unit Testing</a> &raquo;</li>
+          <li><a href="../index.html">Testing Frameworks</a> &raquo;</li>
+      <li>Custom Testing Framework</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/custom/index.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -133,21 +139,35 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="testing-frameworks">
-<span id="unit-testing-frameworks"></span><h1>Testing Frameworks<a class="headerlink" href="#testing-frameworks" title="Permalink to this headline">¶</a></h1>
-<p>PlatformIO supports the most popular testing frameworks and allows you to
-easily switch between them using the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a>
-option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
-<p>You can mix different frameworks in the same project. For example, use a
-more advanced C++ testing framework with Mocks for the <a class="reference internal" href="../../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a>
-development platform to run desktop tests on a host machine and a lightweight
-framework, such as <a class="reference internal" href="unity.html#unit-testing-frameworks-unity"><span class="std std-ref">Unity</span></a>, for running tests on the
-target embedded device with constrained resources.</p>
-<p>See available testing frameworks:</p>
+  <section id="custom-testing-framework">
+<span id="unit-testing-frameworks-custom"></span><h1>Custom Testing Framework<a class="headerlink" href="#custom-testing-framework" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Configuration</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> = <code class="docutils literal notranslate"><span class="pre">custom</span></code></p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>We welcome you to provide a PR to the
+<a class="reference external" href="https://github.com/platformio/platformio-core/pulls">https://github.com/platformio/platformio-core/pulls</a> with support
+for the missing testing framework or file a new request at
+<a class="reference external" href="https://github.com/platformio/platformio-core/issues">https://github.com/platformio/platformio-core/issues</a></p>
+</div>
+<p>If you found a testing framework that is not supported by PlatformIO
+or the existing runner has limitations, this guide will help you to
+implement a custom Unit Test Runner and get full control of the
+testing process.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="unity.html">Unity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom/index.html">Custom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runner.html">Custom Test Runner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Test Runner API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#teststatus">TestStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#testcase">TestCase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#testcasesource">TestCaseSource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#customtestrunner">CustomTestRunner</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
 </div>
 </section>
@@ -156,8 +176,8 @@ target embedded device with constrained resources.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../configuration.html" class="btn btn-neutral float-left" title="Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="unity.html" class="btn btn-neutral float-right" title="Unity" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../unity.html" class="btn btn-neutral float-left" title="Unity" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="runner.html" class="btn btn-neutral float-right" title="Custom Test Runner" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -292,14 +312,14 @@ target embedded device with constrained resources.</p>
     </dl>
     <dl>
       <dt>On Github</dt>
-        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/index.rst"> View</a></dd>
-        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/advanced/unit-testing/frameworks/index.rst"> Edit</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/custom/index.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/advanced/unit-testing/frameworks/custom/index.rst"> Edit</a></dd>
     </dl>
     <dl>
       <dt>Search</dt>
         <dd>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
