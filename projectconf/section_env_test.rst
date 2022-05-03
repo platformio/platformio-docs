@@ -25,6 +25,8 @@ Test options
 ``test_framework``
 ^^^^^^^^^^^^^^^^^^
 
+.. versionadded:: 6.0
+
 Type: ``String`` | Multiple: ``No``
 
 A Unit Testing framework name. Please follow to the :ref:`unit_testing_frameworks`

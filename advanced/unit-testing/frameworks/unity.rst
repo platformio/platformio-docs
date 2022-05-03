@@ -176,6 +176,11 @@ for the default framework configurations).
 * `STM32Cube Unit Testing <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/stm32cube>`_
   example with the custom ``unity_config.h``.
 
+Custom Unity Library
+^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`unit_testing_frameworks_custom_examples_unity_library` example.
+
 Test Runner
 ~~~~~~~~~~~
 

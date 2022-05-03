@@ -14,7 +14,7 @@
 Examples
 --------
 
-.. contents::
-  :local:
+.. toctree::
+  :maxdepth: 1
 
-@TODO
+  custom_unity_library
