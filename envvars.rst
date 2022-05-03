@@ -185,13 +185,13 @@ Examples:
     environment variable if additional build flags contain preprocessor directive with
     special characters (``$``, ``&``, ``~``, etc) in its value.
 
-.. envvar:: PLATFORMIO_SRC_BUILD_FLAGS
+.. envvar:: PLATFORMIO_BUILD_SRC_FLAGS
 
-Allows one to set :ref:`projectconf` option :ref:`projectconf_src_build_flags`.
+Allows one to set :ref:`projectconf` option :ref:`projectconf_build_src_flags`.
 
-.. envvar:: PLATFORMIO_SRC_FILTER
+.. envvar:: PLATFORMIO_BUILD_SRC_FILTER
 
-Allows one to set :ref:`projectconf` option :ref:`projectconf_src_filter`.
+Allows one to set :ref:`projectconf` option :ref:`projectconf_build_src_filter`.
 
 .. envvar:: PLATFORMIO_EXTRA_SCRIPTS
 
