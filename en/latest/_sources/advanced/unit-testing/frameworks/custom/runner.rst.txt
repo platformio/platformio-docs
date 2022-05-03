@@ -9,24 +9,26 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. _unit_testing_frameworks_custom_runner:
+
 Custom Test Runner
 ------------------
 
 Setting the :ref:`projectconf_test_framework` option to the ``custom``
-will instruct PlatformIO to look for a ``custom_test_runner.py``
+will instruct PlatformIO to look for a ``test_custom_runner.py``
 file located in the current (running) test folder. If the file is
 not found, PlatformIO will check the parent folders
 in a tree until reaches the :ref:`projectconf_pio_test_dir`.
 
 If you plan to use a custom test framework for ALL tests, please
-put the ``custom_test_runner.py`` file at the root of
+put the ``test_custom_runner.py`` file at the root of
 :ref:`projectconf_pio_test_dir`. Otherwise, use
 :ref:`unit_testing_test_hierarchies` and put it to the test folder
 or to the group of tests that depend on it.
 
-The ``custom_test_runner.py`` is a Python-based script. It must
+The ``test_custom_runner.py`` is a Python-based script. It must
 contain the :ref:`unit_testing_frameworks_custom_api_test_runner`
-class. See a base example of ``custom_test_runner.py``:
+class. See a base example of ``test_custom_runner.py``:
 
 .. code:: python
 

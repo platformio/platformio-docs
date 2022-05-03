@@ -85,7 +85,7 @@
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Custom</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Custom Test Runner</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api.html">Test Runner API</a></li>
-<li class="toctree-l4"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/index.html">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -141,20 +141,20 @@
            <div itemprop="articleBody">
              
   <section id="custom-test-runner">
-<h1>Custom Test Runner<a class="headerlink" href="#custom-test-runner" title="Permalink to this headline">¶</a></h1>
+<span id="unit-testing-frameworks-custom-runner"></span><h1>Custom Test Runner<a class="headerlink" href="#custom-test-runner" title="Permalink to this headline">¶</a></h1>
 <p>Setting the <a class="reference internal" href="../../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> option to the <code class="docutils literal notranslate"><span class="pre">custom</span></code>
-will instruct PlatformIO to look for a <code class="docutils literal notranslate"><span class="pre">custom_test_runner.py</span></code>
+will instruct PlatformIO to look for a <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code>
 file located in the current (running) test folder. If the file is
 not found, PlatformIO will check the parent folders
 in a tree until reaches the <a class="reference internal" href="../../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>.</p>
 <p>If you plan to use a custom test framework for ALL tests, please
-put the <code class="docutils literal notranslate"><span class="pre">custom_test_runner.py</span></code> file at the root of
+put the <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code> file at the root of
 <a class="reference internal" href="../../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>. Otherwise, use
 <a class="reference internal" href="../../structure.html#unit-testing-test-hierarchies"><span class="std std-ref">Test Hierarchies</span></a> and put it to the test folder
 or to the group of tests that depend on it.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">custom_test_runner.py</span></code> is a Python-based script. It must
+<p>The <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code> is a Python-based script. It must
 contain the <a class="reference internal" href="api.html#unit-testing-frameworks-custom-api-test-runner"><span class="std std-ref">CustomTestRunner</span></a>
-class. See a base example of <code class="docutils literal notranslate"><span class="pre">custom_test_runner.py</span></code>:</p>
+class. See a base example of <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">platformio.test.runners.base</span> <span class="kn">import</span> <span class="n">TestRunnerBase</span>
 
 <span class="k">class</span> <span class="nc">CustomTestRunner</span><span class="p">(</span><span class="n">TestRunnerBase</span><span class="p">):</span>
@@ -194,7 +194,7 @@ let’s override a “testing” stage for the <a class="reference internal" hre
         <span class="p">))</span>
 </pre></div>
 </div>
-<p>See more custom test runner <a class="reference internal" href="examples.html#unit-testing-frameworks-custom-examples"><span class="std std-ref">Examples</span></a>.</p>
+<p>See more custom test runner <a class="reference internal" href="examples/index.html#unit-testing-frameworks-custom-examples"><span class="std std-ref">Examples</span></a>.</p>
 </section>
 
 

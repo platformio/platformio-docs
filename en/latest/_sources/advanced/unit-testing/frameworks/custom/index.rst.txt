@@ -14,6 +14,8 @@
 Custom Testing Framework
 ------------------------
 
+.. versionadded:: 6.0
+
 :Configuration:
     :ref:`projectconf_test_framework` = ``custom``
 
@@ -29,8 +31,9 @@ implement a custom Unit Test Runner and get full control of the
 testing process.
 
 .. toctree::
+    :maxdepth: 2
 
-  runner
-  api
-  examples
+    runner
+    api
+    examples/index
 
