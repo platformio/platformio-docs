@@ -114,8 +114,6 @@ See the source code of
 
         :Source Code:
             `TestRunnerBase <https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/base.py>`_,
-            `TestRunnerEmbeddedMixin <https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/mixins/embedded.py>`_,
-            `TestRunnerNativeMixin <https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/mixins/native.py>`_
 
     ..  py:method:: setup(self)
 
@@ -158,3 +156,13 @@ See the source code of
         testing framework (macros, includes, dynamic configs).
 
         :Example: See `Unity Test Runner <https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py>`__.
+
+    ..  py:method:: on_test_output(self, data)
+
+        Method called on receiving data when running tests
+        at the ``stage_testing``. ``data`` can be the
+        complete test result output, line, or part of a line.
+        When data are chunked, ``on_test_output`` will be called
+        multiple times until testing is completed.
+
+        :param str data: testing data (output)

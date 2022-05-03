@@ -295,9 +295,7 @@ See the source code of
 <dd><blockquote>
 <div><dl class="field-list simple">
 <dt class="field-odd">Source Code</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/base.py">TestRunnerBase</a>,
-<a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/mixins/embedded.py">TestRunnerEmbeddedMixin</a>,
-<a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/mixins/native.py">TestRunnerNativeMixin</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/base.py">TestRunnerBase</a>,</p>
 </dd>
 </dl>
 </div></blockquote>
@@ -353,6 +351,21 @@ testing framework (macros, includes, dynamic configs).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Example</dt>
 <dd class="field-odd"><p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py">Unity Test Runner</a>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CustomTestRunner.on_test_output">
+<span class="sig-name descname"><span class="pre">on_test_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.on_test_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method called on receiving data when running tests
+at the <code class="docutils literal notranslate"><span class="pre">stage_testing</span></code>. <code class="docutils literal notranslate"><span class="pre">data</span></code> can be the
+complete test result output, line, or part of a line.
+When data are chunked, <code class="docutils literal notranslate"><span class="pre">on_test_output</span></code> will be called
+multiple times until testing is completed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>str</em>) – testing data (output)</p>
 </dd>
 </dl>
 </dd></dl>
