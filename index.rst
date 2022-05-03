@@ -9,8 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-Professional collaborative platform for embedded development
-============================================================
+Professional collaborative platform for safety-critical and declarative embedded development
+============================================================================================
 
 **A place where Developers and Teams have true Freedom! No more vendor lock-in!**
 
