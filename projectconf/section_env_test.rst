@@ -163,3 +163,15 @@ with a test code. See :ref:`unit_testing_shared_code` for details.
   [env:myenv]
   platform = ...
   test_build_src = yes
+
+.. _projectconf_test_testing_command:
+
+``test_testing_command``
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiline Arguments: ``Yes``
+
+A custom testing command that runs test cases and returns results to the
+standard output.
+
+See :ref:`unit_testing_simulators` examples.

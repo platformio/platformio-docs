@@ -37,3 +37,4 @@ anywhere in the world or integrate with :ref:`ci` systems.
     structure
     configuration
     frameworks/index
+    simulators/index
