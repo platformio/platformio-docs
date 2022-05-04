@@ -259,7 +259,7 @@ Selectively remove base/initial flags that were set by the development platform.
 
 .. _projectconf_build_src_filter:
 
-``build_src_fliter``
+``build_src_filter``
 ^^^^^^^^^^^^^^^^^^^^
 
 Type: ``String (Templates)`` | Multiple: ``Yes``
