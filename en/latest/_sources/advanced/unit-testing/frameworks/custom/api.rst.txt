@@ -157,12 +157,20 @@ See the source code of
 
         :Example: See `Unity Test Runner <https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py>`__.
 
-    ..  py:method:: on_test_output(self, data)
+    ..  py:method:: on_testing_data_output(self, data)
 
         Method called on receiving data when running tests
         at the ``stage_testing``. ``data`` can be the
         complete test result output, line, or part of a line.
-        When data are chunked, ``on_test_output`` will be called
+        When data are chunked, ``on_testing_data_output`` will be called
         multiple times until testing is completed.
 
-        :param str data: testing data (output)
+        :param str data: testing output data
+
+    ..  py:method:: on_testing_line_output(self, line)
+
+        Method called on each line split from data received
+        by ``on_testing_data_output`` method.
+
+        :param str line: testing output line
+

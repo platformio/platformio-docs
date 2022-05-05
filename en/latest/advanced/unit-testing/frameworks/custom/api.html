@@ -357,16 +357,28 @@ testing framework (macros, includes, dynamic configs).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="CustomTestRunner.on_test_output">
-<span class="sig-name descname"><span class="pre">on_test_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.on_test_output" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="CustomTestRunner.on_testing_data_output">
+<span class="sig-name descname"><span class="pre">on_testing_data_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.on_testing_data_output" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method called on receiving data when running tests
 at the <code class="docutils literal notranslate"><span class="pre">stage_testing</span></code>. <code class="docutils literal notranslate"><span class="pre">data</span></code> can be the
 complete test result output, line, or part of a line.
-When data are chunked, <code class="docutils literal notranslate"><span class="pre">on_test_output</span></code> will be called
+When data are chunked, <code class="docutils literal notranslate"><span class="pre">on_testing_data_output</span></code> will be called
 multiple times until testing is completed.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>data</strong> (<em>str</em>) – testing data (output)</p>
+<dd class="field-odd"><p><strong>data</strong> (<em>str</em>) – testing output data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CustomTestRunner.on_testing_line_output">
+<span class="sig-name descname"><span class="pre">on_testing_line_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.on_testing_line_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method called on each line split from data received
+by <code class="docutils literal notranslate"><span class="pre">on_testing_data_output</span></code> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>line</strong> (<em>str</em>) – testing output line</p>
 </dd>
 </dl>
 </dd></dl>
