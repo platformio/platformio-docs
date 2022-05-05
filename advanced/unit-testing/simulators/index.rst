@@ -37,4 +37,6 @@ frameworks:
 .. toctree::
   :maxdepth: 1
 
+  qemu
+  renode
   simavr

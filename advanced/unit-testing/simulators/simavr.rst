@@ -17,6 +17,10 @@ SimAVR
 `SimAVR <https://github.com/buserror/simavr/>`_ is a lean, mean and hackable
 AVR simulator.
 
+.. warning::
+  SimAVR does not work on Windows for the Unit Testing due to
+  `issue #489 <https://github.com/buserror/simavr/issues/489>`_.
+
 Configuration
 ~~~~~~~~~~~~~
 
