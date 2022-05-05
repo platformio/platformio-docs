@@ -270,7 +270,7 @@ implement several basic functions ``add``, ``sub``, ``mul``, ``div`` and test th
           return a * b;
       }
 
-#.  Create a new file ```test_calc.c`` to the folder ``test`` and add basic tests for
+#.  Create a new file ``test_calc.c`` to the folder ``test`` and add basic tests for
     ``calculator`` library:
 
     .. code:: c
