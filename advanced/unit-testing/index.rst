@@ -38,3 +38,4 @@ anywhere in the world or integrate with :ref:`ci` systems.
     configuration
     frameworks/index
     simulators/index
+    semihosting
