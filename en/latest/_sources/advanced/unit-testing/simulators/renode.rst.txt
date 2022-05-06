@@ -83,10 +83,7 @@ the :option:`pio test --without-uploading` command option.
   14:56:28.0954 [INFO] cpu: Setting PC value to 0x20010000.
   14:56:28.1041 [INFO] SiFive-FE310: Machine started.
   14:56:28.1662 [INFO] uart0: [+0.28s host +0s virt 0s virt from start] *** Booting Zephyr OS build zephyr-v20701  ***
-  14:56:28.1695 [INFO] uart0: [+3.38ms host +0s virt 0s virt from start]   test/test_dummy/main.c:13:dummy_test	[PASSED]
-  14:56:28.1696 [INFO] uart0: [+0.17ms host +0s virt 0s virt from start]
-  14:56:28.1698 [INFO] uart0: [+0.17ms host +0s virt 0s virt from start]   -----------------------
-  14:56:28.1761 [INFO] uart0: [+6.28ms host +0.1ms virt 0.1ms virt from start]   1 Tests 0 Failures 0 Ignored
+  14:56:28.1695 [INFO] uart0: [+3.38ms host +0s virt 0s virt from start]   test/test_dummy/main.c:13: dummy_test	[PASSED]
   --------------------- hifive1-revb:test_dummy [PASSED] Took 9.98 seconds ---------------------
 
   ================================================== SUMMARY ==================================================

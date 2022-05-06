@@ -64,11 +64,7 @@ the :option:`pio test --without-uploading` command option.
   --------------------------------------------
   Building...
   Testing...
-  test/test_dummy/main.c:18:dummy_test	[PASSED]
-
-  -----------------------
-  1 Tests 0 Failures 0 Ignored
-  OK
+  test/test_dummy/main.c:18: dummy_test	[PASSED]
   ---------------------- hifive1:test_dummy [PASSED] Took 2.05 seconds ----------------------
 
   ======================================= SUMMARY =======================================
