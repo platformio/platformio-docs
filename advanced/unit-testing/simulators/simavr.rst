@@ -69,10 +69,7 @@ the :option:`pio test --without-uploading` command option.
   ----------------------------------------
   Building...
   Testing...
-  test/test_dummy/test_main.cpp:19:dummy_test	[PASSED]
-  .
-  -----------------------.
-  1 Tests 0 Failures 0 Ignored .
+  test/test_dummy/test_main.cpp:19: dummy_test	[PASSED]
   --------------------------- uno:test_dummy [PASSED] Took 0.94 seconds -------------------------
 
   =============================== SUMMARY ===============================

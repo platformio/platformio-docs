@@ -114,7 +114,7 @@ When you're done, your test file will look something like this:
     runUnityTests();
   }
 
-**Useful resources**
+**Useful links**
 
 * `Unity - Getting Started <https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityGettingStartedGuide.md>`_
 * `Unity - Assertions Reference <https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityAssertionsReference.md>`_
@@ -169,7 +169,7 @@ it will be the standard input/output, whereas, on the embedded development platf
 the first available Serial interface will be used (see `UNITY_FRAMEWORK_CONFIG <https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py>`_
 for the default framework configurations).
 
-**Useful resources**
+**Useful links**
 
 * `"unity_config.h" template <https://github.com/ThrowTheSwitch/Unity/blob/master/examples/unity_config.h>`_
 * :ref:`tutorial_stm32cube_debugging_unit_testing`
@@ -188,7 +188,7 @@ Thanks to the minimum system requirements of the Unity testing framework, you ca
 use Unity for all :ref:`unit_testing_runner_test_types`, including for constrained
 embedded devices.
 
-If you would like to change the default PlatformIO's :ref:`unit_testing_test_runner`
-for Unity, please implement your :ref:`unit_testing_frameworks_custom`
+If you would like to change the default PlatformIO's Test Runner
+for the Unity, please implement your :ref:`unit_testing_frameworks_custom`
 runner extending `UnityTestRunner <https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py>`_
 class. See :ref:`unit_testing_frameworks_custom` for the examples.
