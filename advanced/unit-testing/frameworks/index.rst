@@ -26,8 +26,15 @@ target embedded device with constrained resources.
 
 See available testing frameworks:
 
+.. note::
+
+  If you plan to run unit tests on the target device (hardware, board),
+  we highly recommend using the :ref:`unit_testing_frameworks_unity`
+  testing framework.
+
 .. toctree::
   :maxdepth: 1
 
+  doctest
   unity
   Custom <custom/index>
