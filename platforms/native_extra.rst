@@ -34,3 +34,22 @@ manually depending on your operating system:
   .. code:: shell
 
     xcode-select --install
+
+Running of Program
+------------------
+
+To execute a native program, you need to use ``exec`` target for the
+:option:`pio run --target` command. Extra program arguments can be
+passed using the :option:`pio run --program-arg` option.
+
+**Example**
+
+.. code:: shell
+
+    > pio run -t exec
+
+    # extra args
+    > pio run -t exec --program-arg "arg1" --program-arg="--option1=value1"
+
+    # or short format
+    > pio run -t exec -a "arg1" -a "--option1=value1"
