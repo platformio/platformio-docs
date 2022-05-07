@@ -173,11 +173,11 @@ please take a look at the :ref:`projectconf_test_testing_command`.
 
 **Example**
 
-    .. code:: shell
+.. code:: shell
 
-      > pio test --program-arg "--abort-after=1" --program-arg="-s"
-      # or short format
-      > pio test -a "-aa=1" -a "-s"
+    > pio test --program-arg "--abort-after=1" --program-arg="-s"
+    # or short format
+    > pio test -a "-aa=1" -a "-s"
 
 .. option::
     --output-format

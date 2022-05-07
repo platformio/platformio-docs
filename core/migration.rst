@@ -197,11 +197,17 @@ The following commands have been changed in v6.0.
 
 .. list-table::
     :header-rows:  1
+    :widths: 25 75
 
     * - Command
       - Description
     * - :ref:`pio pkg <cmd_pkg>`
       - **NEW** Unified package management solution
+    * - :ref:`cmd_run`
+      - **NEW** :option:`pio run --program-arg` option
+    * - :ref:`cmd_test`
+      - **NEW** :option:`pio test --program-arg`, :option:`pio test --output-format`,
+        and :option:`pio test --output-path` options
     * - :ref:`cmd_lib`
       - **DEPRECATED** in favor :ref:`cmd_pkg`
     * - :ref:`cmd_platform`

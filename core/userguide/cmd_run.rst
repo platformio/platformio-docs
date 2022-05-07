@@ -93,6 +93,26 @@ Process project with a custom :ref:`projectconf`.
 Control a number of parallel build jobs. Default is a number of CPUs in a system.
 
 .. option::
+    --disable-auto-clean
+
+Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`projectconf`
+or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
+
+.. option::
+    -a, --program-arg
+
+Pass an extra argument to the :ref:`platform_native` program.
+Multiple arguments are allowed.
+
+**Example**
+
+.. code:: shell
+
+    > pio run -t exec --program-arg "arg1" --program-arg="--option1=value1"
+    # or short format
+    > pio run -t exec -a "arg1" -a "--option1=value1"
+
+.. option::
     -s, --silent
 
 Suppress progress reporting
@@ -104,12 +124,6 @@ Shows detailed information when processing environments.
 
 This option can also be set globally using :ref:`setting_force_verbose` setting
 or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
-
-.. option::
-    --disable-auto-clean
-
-Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`projectconf`
-or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
 
 Examples
 --------
