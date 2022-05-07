@@ -281,6 +281,10 @@ texinfo_documents = [
 linkcheck_timeout = 10
 linkcheck_anchors = False
 
+# Smart Quotes transform
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-smartquotes_action
+smartquotes_action = "q"
+
 html_context = {
     "display_github": True,
     "github_user": "platformio",
