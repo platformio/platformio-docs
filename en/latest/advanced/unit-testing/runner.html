@@ -202,29 +202,14 @@ in <a class="reference internal" href="../../projectconf/index.html#projectconf"
 of physical hardware. You can also use them in pair with Mocking frameworks.</p>
 <p>PlatformIO provides you a <a class="reference internal" href="../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> development platform to
 build and run tests on the local host machine or using <a class="reference internal" href="../../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> VM instance.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>PlatformIO does not install automatically any toolchains
 for the <a class="reference internal" href="../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> development platform. It depends
 on the system <code class="docutils literal notranslate"><span class="pre">GCC</span></code> toolchain that must be added to the <code class="docutils literal notranslate"><span class="pre">PATH</span></code>
 system environment variable.</p>
-<p>Please open the system terminal and type <code class="docutils literal notranslate"><span class="pre">gcc</span> <span class="pre">--version</span></code>. If the
-<code class="docutils literal notranslate"><span class="pre">gcc</span></code> command is not found, you have to install the GCC toolchain
-manually depending on your operating system:</p>
-<ul>
-<li><p><strong>Windows</strong> - see <a class="reference external" href="https://www.mingw-w64.org/">MinGW</a> project</p></li>
-<li><p><strong>Linux</strong> - open the system terminal and run the following commands:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo apt update
-sudo apt install build-essential
-</pre></div>
-</div>
-</li>
-<li><p><strong>macOS</strong> - open the system terminal and install Xcode Command Line Tools</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>xcode-select --install
-</pre></div>
-</div>
-</li>
-</ul>
+<p>Please check the “Installation” guide for the <a class="reference internal" href="../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a>
+development platform.</p>
 </div>
 </section>
 <section id="embedded">

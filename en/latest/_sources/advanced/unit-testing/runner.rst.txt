@@ -72,30 +72,15 @@ of physical hardware. You can also use them in pair with Mocking frameworks.
 PlatformIO provides you a :ref:`platform_native` development platform to
 build and run tests on the local host machine or using :ref:`ci` VM instance.
 
-.. note::
+.. warning::
 
   PlatformIO does not install automatically any toolchains
   for the :ref:`platform_native` development platform. It depends
   on the system ``GCC`` toolchain that must be added to the ``PATH``
   system environment variable.
 
-  Please open the system terminal and type ``gcc --version``. If the
-  ``gcc`` command is not found, you have to install the GCC toolchain
-  manually depending on your operating system:
-
-  * **Windows** - see `MinGW <https://www.mingw-w64.org/>`_ project
-  * **Linux** - open the system terminal and run the following commands:
-
-    .. code:: shell
-
-      sudo apt update
-      sudo apt install build-essential
-
-  * **macOS** - open the system terminal and install Xcode Command Line Tools
-
-    .. code:: shell
-
-      xcode-select --install
+  Please check the "Installation" guide for the :ref:`platform_native`
+  development platform.
 
 Embedded
 ^^^^^^^^
