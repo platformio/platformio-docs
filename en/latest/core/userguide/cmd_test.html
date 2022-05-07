@@ -189,7 +189,7 @@
 <span id="cmdoption-pio-test-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-e" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Process specified project environments.</p>
+<p>Process specified project environment. Multiple environments are allowed.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-test-f">
 <span id="cmdoption-pio-test-filter"></span><span class="sig-name descname"><span class="pre">-f</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--filter</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-f" title="Permalink to this definition">¶</a></dt>
@@ -336,6 +336,22 @@ default <code class="docutils literal notranslate"><span class="pre">1</span></c
 
 <p>Set initial <code class="docutils literal notranslate"><span class="pre">DTR</span></code> line state for Serial Monitor (<code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code>),
 default <code class="docutils literal notranslate"><span class="pre">1</span></code>. We use it to gather test results via a Serial connection.</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-pio-test-a">
+<span id="cmdoption-pio-test-program-arg"></span><span class="sig-name descname"><span class="pre">-a</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--program-arg</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-a" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Pass an extra argument to the testing program. Multiple arguments are allowed.</p>
+<p>If you need to pass extra arguments permanently per a testing environment,
+please take a look at the <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-testing-command"><span class="std std-ref">test_testing_command</span></a>.</p>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt; pio <span class="nb">test</span> --program-arg <span class="s2">&quot;--abort-after=1&quot;</span> --program-arg<span class="o">=</span><span class="s2">&quot;-s&quot;</span>
+<span class="c1"># or short format</span>
+&gt; pio <span class="nb">test</span> -a <span class="s2">&quot;-aa=1&quot;</span> -a <span class="s2">&quot;-s&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-test-output-format">
 <span class="sig-name descname"><span class="pre">--output-format</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-output-format" title="Permalink to this definition">¶</a></dt>

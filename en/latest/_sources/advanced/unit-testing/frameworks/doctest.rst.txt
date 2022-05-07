@@ -145,6 +145,43 @@ docs for details.
     return context.run();
   }
 
+doctest CLI
+~~~~~~~~~~~
+
+The **doctest** works quite nicely without any command-line options at all -
+but for more control a few of them are available.
+See `doctest CLI guide <https://github.com/doctest/doctest/blob/master/doc/markdown/commandline.md>`_.
+
+There are two options for how to pass extra arguments to the testing program:
+
+1. Using PlatformIO Core CLI and :option:`pio test --program-arg` option
+2. Overriding :ref:`projectconf_test_testing_command` with a custom command.
+
+**Example**
+
+Stop executing test cases after the first error and include  successful
+assertions in the output. We will use ``-aa, --abort-after=<int>`` and
+``-s,--success=<bool>`` doctest's CLI option.
+
+1.  Using CLI and :option:`pio test --program-arg` option:
+
+    .. code:: shell
+
+      > pio test --program-arg "--abort-after=1" --program-arg="-s"
+      # or short format
+      > pio test -a "-aa=1" -a "-s"
+
+2.  Overriding :ref:`projectconf_test_testing_command` with custom command.
+
+    .. code:: ini
+
+      [env:myenv]
+      platform = native
+      test_testing_command =
+        ${platformio.build_dir}/${this.__env__}/program
+        -aa=1
+        -s
+
 Test Runner
 ~~~~~~~~~~~
 
