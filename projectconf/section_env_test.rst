@@ -171,7 +171,32 @@ with a test code. See :ref:`unit_testing_shared_code` for details.
 
 Type: ``String`` | Multiline Arguments: ``Yes``
 
-A custom testing command that runs test cases and returns results to the
-standard output.
+A custom testing command that executes test cases and returns results
+to the standard output.
+
+Typically, a default value for the :ref:`platform_native` is equal
+to:
+
+.. code:: ini
+
+  [env:myenv]
+  platform = native
+  test_testing_command =
+    ${platformio.build_dir}/${this.__env__}/program
+
+You can override the default command and pass extra program arguments:
+
+.. code:: ini
+
+  [env:myenv]
+  platform = native
+  test_testing_command =
+    ${platformio.build_dir}/${this.__env__}/program
+    arg1
+    --option2
+    option2_value
+
+Please note that you can pass extra arguments to the program
+using CLI and :option:`pio test --program-arg` option.
 
 See :ref:`unit_testing_simulators` examples.

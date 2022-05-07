@@ -38,7 +38,7 @@ Options
 .. option::
     -e, --environment
 
-Process specified project environments.
+Process specified project environment. Multiple environments are allowed.
 
 .. option::
     -f, --filter
@@ -162,6 +162,22 @@ default ``1``. We use it to gather test results via a Serial connection.
 
 Set initial ``DTR`` line state for Serial Monitor (``0`` or ``1``),
 default ``1``. We use it to gather test results via a Serial connection.
+
+.. option::
+    -a, --program-arg
+
+Pass an extra argument to the testing program. Multiple arguments are allowed.
+
+If you need to pass extra arguments permanently per a testing environment,
+please take a look at the :ref:`projectconf_test_testing_command`.
+
+**Example**
+
+    .. code:: shell
+
+      > pio test --program-arg "--abort-after=1" --program-arg="-s"
+      # or short format
+      > pio test -a "-aa=1" -a "-s"
 
 .. option::
     --output-format
