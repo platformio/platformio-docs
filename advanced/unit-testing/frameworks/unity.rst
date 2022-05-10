@@ -18,6 +18,12 @@ Unity
   `https://registry.platformio.org/libraries/throwtheswitch/Unity <https://registry.platformio.org/libraries/throwtheswitch/Unity>`_
 :Configuration:
   :ref:`projectconf_test_framework` = ``unity``
+:Native Tests:
+  Yes
+:Embedded Tests:
+  Yes
+:Mocking Support:
+  No
 
 **Unity** is a unit test framework. The goal has been to keep it small and
 functional. Unity was designed to be cross-platform. It works hard to stick
@@ -152,7 +158,7 @@ macro. It looks for a custom ``unity_config.h`` in a current test folder. In cas
 the ``unity_config.h`` is missed, PlatformIO will walk through the test hierarchy
 until to the root (:ref:`projectconf_pio_test_dir`).
 
-Let's take a look at the Pizza Project from the :ref:`unit_testing_test_hierarchies`
+Let's take a look at the Pizza Project from the :ref:`unit_testing_test_hierarchy`
 example. If you run an "embedded/components/sauce/test_tomatos" test, PlatformIO will
 check folders for the ``unity_config.h`` in the following order:
 

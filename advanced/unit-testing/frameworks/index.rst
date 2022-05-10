@@ -24,17 +24,45 @@ development platform to run desktop tests on a host machine and a lightweight
 framework, such as :ref:`unit_testing_frameworks_unity`, for running tests on the
 target embedded device with constrained resources.
 
-See available testing frameworks:
+**Compatibility**
 
-.. note::
+.. list-table::
+  :header-rows:  1
 
-  If you plan to run unit tests on the target device (hardware, board),
-  we highly recommend using the :ref:`unit_testing_frameworks_unity`
-  testing framework.
+  * - Framework
+    - :ref:`unit_testing_runner_test_types`
+    - :ref:`platforms`
+    - Mocking
+
+  * - :ref:`unit_testing_frameworks_doctest`
+    - Native
+    - :ref:`platform_native`
+    - No
+
+  * - :ref:`unit_testing_frameworks_googletest`
+    - Any
+    - :ref:`platform_native`, :ref:`platform_espressif8266`,
+      :ref:`platform_espressif32`
+    - Yes
+
+  * - :ref:`unit_testing_frameworks_unity`
+    - Any
+    - Any
+    - No
+
+.. tip::
+
+  We highly recommend using the :ref:`unit_testing_frameworks_unity` testing
+  framework if you plan to run tests on the target devices with constrained
+  resources. The :ref:`unit_testing_frameworks_unity` has minimal requirements
+  and works even on the 8-bit AVR MCUs.
+
+See supported testing frameworks:
 
 .. toctree::
   :maxdepth: 1
 
   doctest
+  googletest
   unity
   Custom <custom/index>
