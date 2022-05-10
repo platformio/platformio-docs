@@ -351,24 +351,22 @@ please take a look at the <a class="reference internal" href="../../projectconf/
 </pre></div>
 </div>
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-pio-test-output-format">
-<span class="sig-name descname"><span class="pre">--output-format</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-output-format" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-pio-test-output-json">
+<span class="sig-name descname"><span class="pre">--output-json</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-output-json" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Generate unit testing report in the specified format.
-The supported formats are:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">junit</span></code> - <a class="reference external" href="https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format">JUnit XML format</a></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">json</span></code> - <a class="reference external" href="https://en.wikipedia.org/wiki/JSON">JSON format</a>.</p></li>
-</ul>
-<dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-pio-test-output-path">
-<span class="sig-name descname"><span class="pre">--output-path</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-output-path" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<p>Save generated testing report to the specified path. If only a folder
-path is provided, the file name will be generated automatically.
+<p>Generate a unit testing report in the <a class="reference external" href="https://en.wikipedia.org/wiki/JSON">JSON</a>
+format and save it to the specified path. If the only folder path is provided,
+the file name will be generated automatically.
 Please note that the parent folder must exist before.</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-pio-test-output-junit">
+<span class="sig-name descname"><span class="pre">--output-junit</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-output-junit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>The same as <a class="reference internal" href="#cmdoption-pio-test-output-json"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--output-json</span></code></a> but generates a report in the
+<a class="reference external" href="https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format">JUnit XML</a>
+format.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-test-v">
 <span id="cmdoption-pio-test-verbose"></span><span class="sig-name descname"><span class="pre">-v</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-v" title="Permalink to this definition">¶</a></dt>
