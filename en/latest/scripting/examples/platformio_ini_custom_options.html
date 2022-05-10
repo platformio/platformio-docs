@@ -146,8 +146,10 @@
              
   <section id="custom-options-in-platformio-ini">
 <h1>Custom options in <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code><a class="headerlink" href="#custom-options-in-platformio-ini" title="Permalink to this headline">¶</a></h1>
-<p>PlatformIO allows you extending project configuration with own data. You can read
-these values later using <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/project/config.py">ProjectConfig API</a>:</p>
+<p>PlatformIO allows you extending project configuration with own data.
+Custom options have to start with <code class="docutils literal notranslate"><span class="pre">custom_</span></code> or <code class="docutils literal notranslate"><span class="pre">board_</span></code> to not generate a warning that
+the unknown configuration option will be ignored by PlatformIO.
+You can read these values later using <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/project/config.py">ProjectConfig API</a>:</p>
 <dl class="field-list simple">
 <dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">ProjectConfig::get(section,</span> <span class="pre">option,</span> <span class="pre">default=None)</span></code></dt>
 <dd class="field-odd"><p>Get an option value for the named section</p>
