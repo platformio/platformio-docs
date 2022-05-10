@@ -180,6 +180,13 @@ please take a look at the :ref:`projectconf_test_testing_command`.
     > pio test -a "-aa=1" -a "-s"
 
 .. option::
+    --list-tests
+
+List project tests without processing.
+The :option:`pio test --json-output` or :option:`pio test --junit-output`
+options can be used for dumping available test suites.
+
+.. option::
     --json-output
 
 Generate a unit testing report in the `JSON <https://en.wikipedia.org/wiki/JSON>`_
