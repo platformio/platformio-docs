@@ -26,7 +26,7 @@ major changes, what is new, and what has been removed.
   Project compatibility between major PlatformIO Core releases is our main task
   and part of PlatformIO's decentralized architecture.
 
-  We highly recommend to use the latest PlatformIO Core.
+  We highly recommend using the latest PlatformIO Core.
   See :ref:`cmd_upgrade` command.
 
 Please read :ref:`PlatformIO 6.0 Release Notes <release_notes_6>` before.
@@ -41,13 +41,13 @@ Migration Steps
 lives of everyday engineers. To benefit from its improvements, we recommend
 taking into account the following steps:
 
-1.  Replace deprecated :ref:`cmd_lib`, :ref:`cmd_platform`,
+#.  Replace deprecated :ref:`cmd_lib`, :ref:`cmd_platform`,
     and :ref:`cmd_update` commands with the unified :ref:`cmd_pkg`
-2.  Avoid using global libraries previously installed using the :option:`pio lib --global`
+#.  Avoid using global libraries previously installed using the :option:`pio lib --global`
     command. Ensure that the :ref:`projectconf_pio_globallib_dir` folder is empty.
     Please use a declarative approach for the safety-critical embedded development
     and declare project dependencies using the :ref:`projectconf_lib_deps` option
-3.  Ensure that project dependencies declared using the :ref:`projectconf_env_platform`,
+#.  Ensure that project dependencies are declared using the :ref:`projectconf_env_platform`,
     :ref:`projectconf_env_platform_packages`, and :ref:`projectconf_lib_deps` options
     in :ref:`projectconf`:
 
@@ -85,12 +85,12 @@ taking into account the following steps:
       ; Depend on the latest compatible version of development platform
       ; allowing new functionality (backward-compatible), and bug fixes.
       ; No breaking changes
-      ; FYI: ^3 == ^3.0.0 == (>=3.0.0, <4.0.0)
-      platform = espressif32 @ ^3
+      ; FYI: ^4 == ^4.0.0 == (>=4.0.0, <5.0.0)
+      platform = espressif32 @ ^4
 
       lib_deps =
         ; Depend on the latest 6.x stable version of ArduinoJson.
-        ; The minimal required version is 6.19.4.
+        ; The minimum required version is 6.19.4.
         ; New functionality (backward-compatible) and bug-fixed are allowed
         bblanchon/ArduinoJson @ ^6.19.4
 
@@ -102,6 +102,10 @@ taking into account the following steps:
         ; Depend on the particular tag (v2.13) of a Git repository
         https://github.com/username/HelloWorld.git#v2.13
 
+#.  If you use a custom testing transport via the "test_transport" option
+    in :ref:`projectconf`, please align your codebase with
+    :ref:`unit_testing_frameworks_unity_custom_config`. The
+    "test_transport" option has been removed.
 
 What is new
 -----------
@@ -110,8 +114,8 @@ In this section, we are going to highlight the most important changes and
 features introduced in |CORE_6_0|. Please visit
 :ref:`PlatformIO 6.0 Release Notes <release_notes_6>` for more detailed information.
 
-Unified package management
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Package Management
+~~~~~~~~~~~~~~~~~~
 
 |CORE_6_0| brings a powerful solution to manage different
 :ref:`cmd_pkg_install_types` using the unified :ref:`cmd_pkg`:
@@ -140,7 +144,7 @@ There are three color legends to help you easily identify which updates are
 backward-incompatible.
 
 Run package command
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 |PIOREGISTRY| contains a rich set of popular compilers and other useful tools.
 The :ref:`cmd_pkg_exec` command allows you to run a command from the specified
@@ -163,7 +167,7 @@ new :ref:`cmd_pkg_exec` command:
   > pio pkg exec -- avr-objdump -d -m avr2 .pio/build/uno/firmware.elf
 
 Virtual symbolic links
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 The most requested feature from the library maintainers was the ability to link
 the existing package with the project without hard copying (duplicating). As a
@@ -176,6 +180,89 @@ require any specific OS permissions. They are portable between different
 host machines.
 
 See :ref:`cmd_pkg_install_specifications` for "Local Folder".
+
+Unit Testing
+~~~~~~~~~~~~
+
+It's been `six years <https://github.com/platformio/platformio-core/commit/bb22a1297bc2e4c3131530f15a2b4b3914836560>`_
+since we added support for the unit testing, and Unity was the only testing framework.
+We didn't expect that the PlatformIO Unit Testing solution will gain broad popularity,
+especially using it on native (host) machines.
+
+So, time to refresh our view on PlatformIO Unit Testing taking into account
+`your feedback and feature requests <https://github.com/platformio/platformio-core/issues?q=is%3Aissue+label%3A%22unit+testing%22+is%3Aclosed+milestone%3A6.0>`_.
+
+Test-driven development
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The PlatformIO Core 6.0 introduces absolutely a new workflow for
+`test-driven development <https://en.wikipedia.org/wiki/Test-driven_development>`_
+in the embedded systems industry.
+Thanks to the rich set of supported :ref:`unit_testing_frameworks` and the ability
+to organize tests in groups using the :ref:`unit_testing_test_hierarchy`, you
+can create a hybrid project and benefit simultaneously from multiple testing
+frameworks depending on the project requirements. See a simple example of
+a hybrid configuration:
+
+.. code:: ini
+
+  [env:native]
+  platform = native
+  test_framework = googletest
+  test_filter =
+    common/*
+    native/*
+
+  [env:embedded]
+  platform = ...
+  framework = ...
+  test_framework = unity
+  test_filter =
+    common/*
+    embedded/*
+
+Use a more advanced C++ testing framework with Mocking support such as
+:ref:`unit_testing_frameworks_googletest` in pair with the :ref:`platform_native`
+development platform to run desktop tests on a host machine and a lightweight
+framework, such as :ref:`unit_testing_frameworks_unity`, for running tests on
+the target embedded device with constrained resources.
+
+Hardware-less development
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+It's hard to imagine today a next-gen project development workflow that does
+not benefit from :ref:`ci` systems. PlatformIO already provides multiple
+solutions to improve code quality including :ref:`piocheck`. In addition to
+the testing frameworks that allow you to mock objects and simulate the
+behavior of real objects, the PlatformIO Core 6.0 adds support for the
+:ref:`unit_testing_simulators`.
+
+Simulation tools and frameworks allow you to simulate hardware systems
+and run unit tests in virtual environments. Simulators can significantly
+accelerate your project development, especially when used in pair
+with :ref:`ci`.
+
+Integration of any simulator tool to the PlatformIO :ref:`unit_testing`
+is very simple and does not require any extra software or code writing.
+Please take a look at the example below how is easy to integrate
+the :ref:`unit_testing_simulators_renode` simulation framework:
+
+.. code-block:: ini
+
+  [env:hifive1-revb]
+  platform = sifive
+  framework = zephyr
+  board = hifive1-revb
+
+  platform_packages =
+      platformio/tool-renode @ ^1
+  test_testing_command =
+      ${platformio.packages_dir}/tool-renode/renode
+      --disable-xwt
+      -e include @scripts/single-node/sifive_fe310.resc
+      -e showAnalyzer uart1
+      -e sysbus LoadELF @${platformio.build_dir}/${this.__env__}/firmware.elf
+      -e start
 
 What is changed or removed
 --------------------------
@@ -209,8 +296,8 @@ The following commands have been changed in v6.0.
       - **NEW** :option:`pio test --program-arg`, :option:`pio test --json-output`,
         and :option:`pio test --junit-output` options
     * - :ref:`cmd_lib`
-      - **DEPRECATED** in favor :ref:`cmd_pkg`
+      - **DEPRECATED** in favor of :ref:`cmd_pkg`
     * - :ref:`cmd_platform`
-      - **DEPRECATED** in favor :ref:`cmd_pkg`
+      - **DEPRECATED** in favor of :ref:`cmd_pkg`
     * - :ref:`cmd_update`
-      - **DEPRECATED** in favor :ref:`cmd_pkg`
+      - **DEPRECATED** in favor of :ref:`cmd_pkg`
