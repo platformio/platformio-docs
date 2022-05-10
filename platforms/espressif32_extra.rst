@@ -271,6 +271,8 @@ for example:
     board = ...
     board_build.filesystem = littlefs
 
+Possible  values for ``board_build.filesystem`` are ``spiffs`` (default), ``littlefs`` and ``fatfs``.
+
 To upload SPIFFS image using OTA update please specify ``upload_port`` /
 ``--upload-port`` as IP address or mDNS host name (ending with the ``*.local``).
 
